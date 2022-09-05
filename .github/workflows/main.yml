@@ -73,11 +73,14 @@ jobs:
         working-directory: ./main
         run: pnpm run build
 
+      - name: Get Commit Hash
+        working-directory: ./system
+        run: echo "SYSTEM_HASH=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
       - name: Update Repo
         working-directory: ./main
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add .
-          git commit -m "generated"
+          git diff --quiet HEAD || git commit -am "Updated to foundryvtt/pf2e@${{ env.SYSTEM_HASH }}"
           git push
