@@ -23,10 +23,10 @@ async function setupOut() {
 async function handleItem(id: string, label: string, entries: EntryItem[]) {
   const out: Compendium = {
     label,
-    mapping: {
-      name: "name",
-      description: "data.description.value",
-    },
+    // mapping: {
+    //   name: "name",
+    //   description: "system.description.value",
+    // },
     entries: {},
   };
 
@@ -44,21 +44,24 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
       hasSpells = true;
 
       if (entry.system.materials?.value) {
-        el.materials = entry.system.materials?.value;
+        el.spellMaterials = entry.system.materials?.value;
       }
       if (entry.system.target?.value) {
-        el.target = entry.system.target?.value;
+        el.spellTarget = entry.system.target?.value;
+      }
+      if (entry.system.cost?.value) {
+        el.spellCost = entry.system.cost?.value;
       }
       if (entry.system.range?.value) {
         const val = entry.system.range?.value.toLowerCase();
         if (!val.match(rangeRegex)) {
-          el.range = entry.system.range?.value;
+          el.spellRange = entry.system.range?.value;
         }
       }
       if (entry.system.time?.value) {
         const val = entry.system.time?.value.toLowerCase();
         if (!val.match(timeRegex)) {
-          el.time = entry.system.time?.value;
+          el.spellTime = entry.system.time?.value;
         }
       }
     }
@@ -69,41 +72,41 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
       hasFeats = true;
       const prerequisites = entry.system.prerequisites?.value ?? [];
       if (prerequisites.length > 0) {
-        el.prerequisites = Object.fromEntries(
+        el.featPrerequisites = Object.fromEntries(
           entry.system.prerequisites.value.map((v, i) => [i, v.value])
         );
       }
     }
   }
 
-  if (hasAncestry) {
-    out.mapping!.speed = {
-      path: "system.speed",
-      converter: "pfitLength",
-    };
-    out.mapping!.speed = {
-      path: "system.reach",
-      converter: "pfitLength",
-    };
-  }
-  if (hasFeats) {
-    out.mapping!.prerequisites = {
-      path: "system.prerequisites.value",
-      converter: "pfitArray",
-    };
-  }
-  if (hasSpells) {
-    out.mapping!.materials = "system.materials.value";
-    out.mapping!.target = "system.target.value";
-    out.mapping!.range = {
-      path: "system.range.value",
-      converter: "pfitRange",
-    };
-    out.mapping!.time = {
-      path: "system.time.value",
-      converter: "pfitTime",
-    };
-  }
+  // if (hasAncestry) {
+  //   out.mapping!.speed = {
+  //     path: "system.speed",
+  //     converter: "pfitLength",
+  //   };
+  //   out.mapping!.speed = {
+  //     path: "system.reach",
+  //     converter: "pfitLength",
+  //   };
+  // }
+  // if (hasFeats) {
+  //   out.mapping!.prerequisites = {
+  //     path: "system.prerequisites.value",
+  //     converter: "pfitArray",
+  //   };
+  // }
+  // if (hasSpells) {
+  //   out.mapping!.materials = "system.materials.value";
+  //   out.mapping!.target = "system.target.value";
+  //   out.mapping!.range = {
+  //     path: "system.range.value",
+  //     converter: "pfitRange",
+  //   };
+  //   out.mapping!.time = {
+  //     path: "system.time.value",
+  //     converter: "pfitTime",
+  //   };
+  // }
 
   const outData = JSON.stringify(out, null, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
@@ -155,17 +158,17 @@ async function handleActor(
 ) {
   const out: Compendium = {
     label,
-    mapping: {
-      name: "name",
-      items: {
-        path: "items",
-        converter: "fromPack",
-      },
-      tokenName: {
-        path: "token.name",
-        converter: "name",
-      },
-    },
+    // mapping: {
+    //   name: "name",
+    //   items: {
+    //     path: "items",
+    //     converter: "fromPack",
+    //   },
+    //   tokenName: {
+    //     path: "token.name",
+    //     converter: "name",
+    //   },
+    // },
     entries: {},
   };
 
@@ -178,7 +181,7 @@ async function handleActor(
         hasHazards = true;
         const el: any = (out.entries[entry.name] = {
           name: label,
-          hazardDescription: entry.system.details.description,
+          description: entry.system.details.description,
         });
 
         if (entry.system.details.disable) {
@@ -243,19 +246,19 @@ async function handleActor(
     }
   }
 
-  if (hasHazards) {
-    out.mapping!.hazardDescription = "system.details.description";
-    out.mapping!.hazardDisable = "system.details.disable";
-    out.mapping!.hazardReset = "system.details.reset";
-    out.mapping!.hazardRoutine = "system.details.routine";
-  }
-  if (hasMonsters) {
-    out.mapping!.description = "system.details.publicNotes";
-    out.mapping!.speed = {
-      path: "system.attributes.speed",
-      converter: "pfitSpeeds",
-    };
-  }
+  // if (hasHazards) {
+  //   out.mapping!.hazardDescription = "system.details.description";
+  //   out.mapping!.hazardDisable = "system.details.disable";
+  //   out.mapping!.hazardReset = "system.details.reset";
+  //   out.mapping!.hazardRoutine = "system.details.routine";
+  // }
+  // if (hasMonsters) {
+  //   out.mapping!.description = "system.details.publicNotes";
+  //   out.mapping!.speed = {
+  //     path: "system.attributes.speed",
+  //     converter: "pfitSpeeds",
+  //   };
+  // }
 
   const outData = JSON.stringify(out, null, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);

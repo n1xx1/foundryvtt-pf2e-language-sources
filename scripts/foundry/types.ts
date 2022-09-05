@@ -95,15 +95,9 @@ export interface EntryItemAncestry extends BaseEntry {
 export interface EntryItemFeat extends BaseEntry {
   type: "feat";
   system: {
-    description: {
-      value: string;
-    };
-    source: {
-      value: string;
-    };
-    prerequisites: {
-      value: { value: string }[];
-    };
+    description: { value: string };
+    source: { value: string };
+    prerequisites: { value: { value: string }[] };
   };
 }
 
@@ -115,6 +109,7 @@ export interface EntryItemSpell extends BaseEntry {
     target: { value: string };
     range: { value: string };
     time: { value: string };
+    cost: { value: string };
   };
 }
 
