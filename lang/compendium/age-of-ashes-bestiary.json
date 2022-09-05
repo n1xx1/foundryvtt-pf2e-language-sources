@@ -1,25 +1,5 @@
 {
   "label": "Age of Ashes",
-  "mapping": {
-    "name": "name",
-    "items": {
-      "path": "items",
-      "converter": "fromPack"
-    },
-    "tokenName": {
-      "path": "token.name",
-      "converter": "name"
-    },
-    "hazardDescription": "system.details.description",
-    "hazardDisable": "system.details.disable",
-    "hazardReset": "system.details.reset",
-    "hazardRoutine": "system.details.routine",
-    "description": "system.details.publicNotes",
-    "speed": {
-      "path": "system.attributes.speed",
-      "converter": "pfitSpeeds"
-    }
-  },
   "entries": {
     "Bshez \"Sand Claws\" Shak": {
       "name": "Bshez \"Sand Claws\" Shak",
@@ -759,7 +739,7 @@
     },
     "Dahak's Shell": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A ring of eight dragon pillar replicas mark the border of a dome of magical prismatic energy that entirely contains the Fortress of Sorrow.</p>",
+      "description": "<p>A ring of eight dragon pillar replicas mark the border of a dome of magical prismatic energy that entirely contains the Fortress of Sorrow.</p>",
       "hazardDisable": "<p>Each dragon pillar that is destroyed removes the corresponding color's effect from Dahak's shell; as long as even one color remains active, the pillars marking the shell's border cannot be damaged themselves, but a successful @Check[type:thievery|dc:32|name:Disable Color|traits:magical,trap,hazard] (master) check or a successful <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 30) against one of the eight pillars can cause a randomly determined active color in the shell defense (below) to become deactivated for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
     },
     "King Harral": {
@@ -886,13 +866,13 @@
     },
     "Acidic Needle Launcher": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A ceiling-mounted launcher rains resinous needles onto intruders, after which the needles melt into acid.</p>",
+      "description": "<p>A ceiling-mounted launcher rains resinous needles onto intruders, after which the needles melt into acid.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:36|name:Disable Firing Mechanism|traits:mechanical,trap,complex] to disable some firing mechanisms, making three adjacent squares in the trapped area safe to enter.</p>",
       "hazardRoutine": "<p>(3 actions) The acidic needle launcher fires a needle at a random target in the area indicated on the map.</p>"
     },
     "Lesser Dragonstorm": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A small-scale version of a dragonstorm-a churning vortex of wind infused with fire, acid, lightning, poison, and ice-fills Alseta's Ring.</p>",
+      "description": "<p>A small-scale version of a dragonstorm-a churning vortex of wind infused with fire, acid, lightning, poison, and ice-fills Alseta's Ring.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:40|name:Call for Divine Intervention] (legendary) to call out to a non-evil deity for direct intervention to disperse the lesser dragonstorm (prayers to Apsu allow characters who are masters in Religion to attempt the check as if they were legendary instead), @Check[type:thievery|dc:42|name:Deactivate Vengegate|traits:action:disable-a-device] (legendary) to deactivate Vengegate while the manifestation is forcing it open, or a successful <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (10th level; DC 40) to counteract the lesser dragonstorm.</p>",
       "hazardRoutine": "<p>(1 action) On its initiative, the lesser dragonstorm reaches out and blasts all creatures within Alseta's Ring. Affected creatures take [[/r {2d8}[acid] + {2d8}[cold] + {2d8}[fire] + {2d8}[electricity + {2d8}[poison]]]{10d8 damage} (@Check[type:reflex|dc:46|basic:true]), evenly split between acid, cold, fire, electricity, and poison. Creatures that fail their save are pulled 20 feet toward the center of Alseta's Ring (or are knocked prone and pulled 30 feet on a critical failure). After 10 rounds, the lesser dragonstorm is destroyed, but a much greater dragonstorm manifests in the surrounding region-see The Dragonstorm.</p>"
     },
@@ -1108,21 +1088,21 @@
     },
     "Wailing Crystals": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Three clusters of gleaming, colorful crystals are corrupted with necromantic energy that causes them to reflect negative emotions. All three must be disabled or destroyed to negate the hazard.</p>",
+      "description": "<p>Three clusters of gleaming, colorful crystals are corrupted with necromantic energy that causes them to reflect negative emotions. All three must be disabled or destroyed to negate the hazard.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:29|name:Fracture the Crystals|traits:hazard,complex,environmental,magical] (master) to carefully fracture the crystals or @Check[type:crafting|dc:27|name:Stop the Resonance|traits:hazard,complex,environmental,magical] (expert) to place objects to stop the resonance, both disabling one 5-foot patch of crystals.</p>",
       "hazardReset": "<p>The wailing crystals deactivate and reset once no living creatures are within 20 feet.</p>",
       "hazardRoutine": "<p>(3 actions) The hazard uses each action for an Anguished Shriek. The wailing crystals lose 1 action for each 5-foot patch of crystals that is broken or destroyed.</p>"
     },
     "Tree of Dreadful Dreams": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>The statue of the willow tree animates, its branches lashing out to try to grab anyone in area <strong>B2</strong>.</p>",
+      "description": "<p>The statue of the willow tree animates, its branches lashing out to try to grab anyone in area <strong>B2</strong>.</p>",
       "hazardDisable": "<p>@Check[type:athletics|dc:25|name:Force Open a Branch|traits:complex,magical,trap,hazard,action:force-open] or @Check[type:thievery|dc:25|name:Lever Open a Branch|traits:complex,magical,trap,hazard] (trained) to force or lever open a single branch, disabling that branch and freeing any creature trapped within. @Check[type:thievery|dc:29|name:Disrupt the Tree's Magical Animation|traits:complex,magical,trap,hazard] (expert) to disrupt the tree's magical animation, shut it down, and free all trapped creatures. Placing a <em>dreamstone</em> in the tree's trunk takes 2 Interact actions and causes the trap to shut down, freeing all trapped creatures. Placing the cursed <em>dreamstone</em> from area <strong>B4</strong> in the trunk instead increases the tree's actions per turn to 4 and gives it a +2 item bonus to all saving throws and attack rolls.</p>",
       "hazardReset": "<p>The trap deactivates and resets if it has no creatures @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} and no creatures in the room to attack. If an uncursed <em>dreamstone</em> is placed in its trunk, the statue doesn't reactivate.</p>",
       "hazardRoutine": "<p>(3 actions) The statue uses each action to attempt a branch Strike against a random creature in the room that it hasn't @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}. If there are no creatures for it to attack and it has at least one creature grabbed, it instead Constricts. The trap can have up to six creatures grabbed.</p>"
     },
     "Phantom Bells": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>The echo of diabolic bells reverberates with a bone-shaking clamor.</p>",
+      "description": "<p>The echo of diabolic bells reverberates with a bone-shaking clamor.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:27|name:Recite Against the Power of Hell|traits:auditory,complex,haunt,sonic,hazard] (expert) to break the curse with recitations against the power of Hell (2 actions), or @Check[type:performance|dc:22|name:Perform an Opposing Composition|traits:auditory,complex,haunt,sonic,hazard] (expert) to Perform an opposing composition</p>",
       "hazardReset": "<p>The bells cease ringing if there are no living creatures within 30 feet.</p>",
       "hazardRoutine": "<p>(1 action) The bells toll, dealing [[/r {4d6}[sonic]]]{4d6 sonic damage} to each living creature within @Template[type:emanation|distance:30]{30 feet} (@Check[type:fortitude|dc:24|basic:true|name:Phantom Bells Toll|traits:auditory,complex,haunt,sonic,hazard] save).</p>"
@@ -1184,7 +1164,7 @@
     },
     "Mental Scream Trap": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A psychic scream disorients creatures in the area.</p>",
+      "description": "<p>A psychic scream disorients creatures in the area.</p>",
       "hazardDisable": "<p>@Check[type:arcana|dc:41|name:Suppress the Magic|traits:magical,trap] to suppress the magic or @Check[type:thievery|dc:41|name:Scratch Out the Ward|traits:magical,trap] to scratch out the ward</p>"
     },
     "Hellcrown": {
@@ -1746,7 +1726,7 @@
     },
     "Vision of Dahak": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Blasts of fire and smoke pour out of the tunnel walls to coalesce into the burning form of Dahak himself; a PC who succeeds at a @Check[type:religion|dc:20|name:Recognize Depiction of Dahak|traits:hazard,complex,fire,magical,trap,action:recall-knowledge] check to Recall Knowledge notes that the fiery dragon closely resembles classical depictions of the draconic god of destruction.</p>",
+      "description": "<p>Blasts of fire and smoke pour out of the tunnel walls to coalesce into the burning form of Dahak himself; a PC who succeeds at a @Check[type:religion|dc:20|name:Recognize Depiction of Dahak|traits:hazard,complex,fire,magical,trap,action:recall-knowledge] check to Recall Knowledge notes that the fiery dragon closely resembles classical depictions of the draconic god of destruction.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:26|name:Counteract Dahak With Prayers|traits:complex,fire,magical,trap,hazard] (expert) to utter prayers to a non-evil deity to counteract Dahak's presence (prayers to Apsu allow this check to be made if the character is merely trained in Religion), @Check[type:thievery|dc:30|name:Divert the Hazard's Energy Back|traits:complex,fire,magical,trap,hazard] (expert) to divert the hazard's energies back upon themselves, or a successful <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 26).</p>",
       "hazardReset": "<p>The vision of Dahak deactivates and resets automatically once no creatures remain within the Huntergate way station.</p>",
       "hazardRoutine": "<p>(2 actions) The vision of Dahak manifests next to the creature that is closest to the center of the way station, then uses its Breath Weapon in a direction that catches the most possible targets in its area.</p>"
@@ -1797,12 +1777,12 @@
     },
     "Lifeleech Crystal Patches": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Sharp, bloodthirsty crystals make walking through this chamber treacherous.</p>",
+      "description": "<p>Sharp, bloodthirsty crystals make walking through this chamber treacherous.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:30|name:Lifeleech Crystal Patch Disable|traits:environmental,magical] (expert) to utter prayers that quell the crystals' necromantic compulsion to drink blood</p>"
     },
     "Spiked Doorframe": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Spikes lance out of the doorframe to skewer anyone who attempts to open the door.</p>",
+      "description": "<p>Spikes lance out of the doorframe to skewer anyone who attempts to open the door.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:20|name:Deactivate Trigger|traits:hazard,mechanical,trap,action:disable-a-device] (trained) to deactivate a trigger built into the door's handle</p>"
     },
     "Malarunk": {
@@ -2027,14 +2007,14 @@
     },
     "Wrath of the Destroyer": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>These heavy doors, carved with an image of Dahak, echo with a hatred so powerful that it can kill anyone who comes nearby, manifesting a vision of Dahak's head emerging from the doors to strike at a foe.</p>",
+      "description": "<p>These heavy doors, carved with an image of Dahak, echo with a hatred so powerful that it can kill anyone who comes nearby, manifesting a vision of Dahak's head emerging from the doors to strike at a foe.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:29|name:Disrupt the Divine Magic|traits:complex,magical,trap,hazard] (expert) to disrupt the divine magic, @Check[type:religion|dc:29|name:Placate Wrathful Energies|traits:complex,magical,trap,hazard] (expert) to placate the wrathful energies, or <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (5th level; counteract DC 26).</p>",
       "hazardReset": "<p>The trap deactivates and resets if 1 minute passes without any creature being in range.</p>",
       "hazardRoutine": "<p>(1 action) On its initiative, the wrath of the destroyer targets the closest target in area <strong>C6</strong> with Face of the Fatal Divine.</p>"
     },
     "Quarry Sluiceway": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Six sluice gates open to allow thousands of gallons of water to begin flooding the room. The water churns through the room and flows out through three chutes on the south end of the room.</p>",
+      "description": "<p>Six sluice gates open to allow thousands of gallons of water to begin flooding the room. The water churns through the room and flows out through three chutes on the south end of the room.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:28|name:Close a Sluice|traits:complex,mechanical,trap,hazard] (expert) twice to close a sluice (on a critical success, a sluice is closed immediately)</p>",
       "hazardReset": "<p>The trap resets if all six sluices are closed. If all the water has drained when this occurs, the water takes many months to refill.</p>",
       "hazardRoutine": "<p>(6 actions) The trap loses 1 action per disabled or destroyed sluice. On each of its actions, the water rushing from the sluices flows through the room, creating a river of churning water that fills the room to several inches and makes the floor of the chamber into difficult terrain. The water level never rises above this level in the room, as it drains out of the chutes to the south and begins to flood the quarry pit (area <strong>J2</strong>). On the trap's second turn, the water starts filling the four slave pits in area <strong>J2</strong>. Each of the trap's actions fills the pits 4 inches (2 feet per round if all sluices are functional). If the slave pits fill to their total depth of 12 feet and the grates over the slave pits aren't open, the slaves begin to drown, dying if they aren't freed in 5 rounds. Once the slave pits are full, the water continues to slowly fill the central area over the course of an hour until it empties the reservoir and floods area <strong>J2</strong> to a depth of 15 feet.</p>\n<p>Other options beyond disabling or destroying the sluices could prevent the flooding of the quarry pit at your discretion.</p>"
@@ -2604,13 +2584,13 @@
     },
     "Black Powder Bomb": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Three bulky kegs of black powder placed at key locations in the temple are triggered to explode in unison, causing the entire structure to collapse into rubble and slide partially down the cliff face.</p>",
+      "description": "<p>Three bulky kegs of black powder placed at key locations in the temple are triggered to explode in unison, causing the entire structure to collapse into rubble and slide partially down the cliff face.</p>",
       "hazardDisable": "<p>No special skills are required to disable this manually activated trap. As an Interact action, a PC can sweep aside some black powder to interrupt the fuse line, but this doesn't prevent Gerhard from activating a keg via blunderbuss. A keg that is removed from its position (either by being thrown over the cliff or merely carried away) retains its explosive potential, but as long as one of the three kegs are removed they no longer have the precise placement required to trigger a collapse-an explosion at this point merely inflicts fire damage in the appropriate areas but does not particularly damage the temple structure itself.</p>\n<p>A keg's contents can be dispersed by scattering the gunpowder to the wind (most efficiently by pouring it over the cliff side) as a 2-action activity, or rendered permanently inert by pouring a gallon of water into the powder, inhibiting its explosive qualities. The kegs themselves can be destroyed with damage (note that the AC listed below for each keg takes into account the fact that Gerhard has wedged the kegs into nooks in the temple's stone flooring and walls), but note that any fire damage (including incidental fire damage from area effects like a fireball or Gerhard's blunderbuss) causes them to explode. At your option, other actions may be similarly effective at disabling this hazard.</p>",
       "hazardRoutine": "<p>If Gerhard lights the black powder fuse, it burns at a speed of 10 feet each round; when the fuse reaches a keg 6 rounds later, the black powder bomb explodes. The bomb explodes immediately if he shoots a barrel with his blunderbuss.</p>"
     },
     "Caustic Vapor": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>The door slams shut, and poison gas fills the room.</p>",
+      "description": "<p>The door slams shut, and poison gas fills the room.</p>",
       "hazardDisable": "<p>@Check[type:occultism|dc:36|name:Exorcise the Spirits|traits:mechanical,trap] (master) or @Check[type:religion|dc:36|name:Exorcise the Spirits|traits:mechanical,trap] (master) to exorcise the spirits</p>",
       "hazardReset": "<p>The trap resets after 1 day.</p>"
     },
@@ -2808,13 +2788,13 @@
     },
     "Dahak's Skull": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A pair of magical gems inside the dragon skull's eye sockets act as magical sensors with a 30-foot radius.</p>",
+      "description": "<p>A pair of magical gems inside the dragon skull's eye sockets act as magical sensors with a 30-foot radius.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:27|name:Pry Out the Embedded Gems|traits:complex,magical,fire,trap,hazard] (expert) two times to pry the gems embedded deep in the skull's eye sockets without triggering the sensor, or <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level, counteract DC 22) twice to dispel both eyes.</p>",
       "hazardRoutine": "<p>(2 actions) On its initiative, Dahak's skull fires up to two eye beams; it must target a different creature with each attack. The eye beams can't target creatures directly below the skull.</p>"
     },
     "Damurdiel's Vengeance": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>An elven woman wearing a robe stands in the water. She beckons anyone who enters the room to join her in the pool.</p>",
+      "description": "<p>An elven woman wearing a robe stands in the water. She beckons anyone who enters the room to join her in the pool.</p>",
       "hazardDisable": "<p>Deception 45 (legendary) to pretend to be Erveniss and ask for forgiveness, Diplomacy 45 (legendary) to convince Damurdiel to stand down (elves who are masters in Diplomacy can attempt the check as if they were legendary instead), or Religion 40 (legendary) to call upon Calistria to calm Damurdiel's spirit.</p>",
       "hazardReset": "<p>Damurdiel's spirit subsides once she is destroyed or if she manages to reduce a creature to 0 Hit Points. She returns after 1 minute.</p>",
       "hazardRoutine": "<p>(3 actions) The haunt attempts to Strike with the dagger.</p>"
@@ -2891,7 +2871,7 @@
     },
     "Echoes of Betrayal": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Malevolent spirits led by a ghostly image of Ludika rise and begin a deadly brawl. These spirits attempt to overwhelm living creatures, forcing them to join the battle.</p>",
+      "description": "<p>Malevolent spirits led by a ghostly image of Ludika rise and begin a deadly brawl. These spirits attempt to overwhelm living creatures, forcing them to join the battle.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:35|name:Exorcise|traits:haunt,complex] (master) three times to exorcise the spirits or @Check[type:diplomacy|dc:39|name:Talk Down|traits:haunt,complex] (expert) three times to talk them down.</p>",
       "hazardReset": "<p>After 24 hours, the haunt returns. The spirits are permanently put to rest only if a lawfully appointed judge from Saggorak (or Kovlar) comes into the prison, takes damage from the haunt, and survives the attack.</p>",
       "hazardRoutine": "<p>(1 action) As 1 action, the haunt causes a barrage of ghostly fists to lash from the walls, floors, and ceiling. The haunt attempts a spectral fist Strike against each creature in area <strong>H10</strong>.</p>"
@@ -2957,12 +2937,12 @@
     },
     "Dragonstorm": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A massive storm stirs in the skies above Breachill and Citadel Altaerein. As specific events begin during the three waves of the manifestation's retribution, the dragonstorm wreaks localized havoc.</p>",
+      "description": "<p>A massive storm stirs in the skies above Breachill and Citadel Altaerein. As specific events begin during the three waves of the manifestation's retribution, the dragonstorm wreaks localized havoc.</p>",
       "hazardDisable": "<p>The dragonstorm can't be disabled-only endured. It ends only once the attack on Breachill and Citadel Altaerein is over.</p>"
     },
     "Luminous Ward": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A burst of radiance explodes from the door.</p>",
+      "description": "<p>A burst of radiance explodes from the door.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:40|name:|traits:action:disable-a-device] (master) to disable the wards or <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (9th level; counteract DC 38) to counteract the ward</p>",
       "hazardReset": "<p>The trap resets after 1 hour.</p>"
     },
@@ -3221,7 +3201,7 @@
     },
     "Gloomglow Mushrooms": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A field of grass-like fungal filaments amid clusters of softly glowing, long-stalked mushrooms.</p>",
+      "description": "<p>A field of grass-like fungal filaments amid clusters of softly glowing, long-stalked mushrooms.</p>",
       "hazardDisable": "<p>@Check[type:survival|dc:22|name:Clear Patch of Mushrooms|traits:environmental,fungus,hazard] (expert) to remove a 5-foot-patch without triggering the mushrooms.</p>"
     },
     "Belmazog": {
@@ -3359,7 +3339,7 @@
     },
     "Endless Elven Aging": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A haunted mural fascinates characters and swiftly drains their vitality.</p>",
+      "description": "<p>A haunted mural fascinates characters and swiftly drains their vitality.</p>",
       "hazardDisable": "<p>@Check[type:occultism|dc:38|name:Calm the Restless Energies|traits:haunt,magical] (master) or @Check[type:religion|dc:38|name:Calm the Restless Energies|traits:haunt,magical] (master) to calm the restless energies and suppress the haunt for 1 hour; a critical success deactivates the haunt permanently.</p>",
       "hazardReset": "<p>The haunt continues its routine until there are no targets within 30 feet of the room. It then resets over the course of 1 minute and is able to activate again.</p>",
       "hazardRoutine": "<p>(2 actions) The haunt lures creatures into area A2 using Captivate. Any actions it hasn't used to Captivate are used to drain a living creature in the room with Live a Thousand Lives.</p>"
@@ -3519,7 +3499,7 @@
     },
     "Barzillai's Hounds": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Hell hounds invisible to all but their lone target burn their chosen victim.</p>",
+      "description": "<p>Hell hounds invisible to all but their lone target burn their chosen victim.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:24|name:Exorcise the Hounds|traits:complex,haunt,hazard] (expert) to perform an exorcism (with 2 actions)</p>",
       "hazardReset": "<p>If their designated target dies or the hounds can't reach it in a turn, the hounds vanish into noxious smoke, but they manifest again elsewhere in the city after the next sunset.</p>",
       "hazardRoutine": "<p>(2 actions) The haunt uses its first action to Stride (Speed 60 feet), then its second action for a jaws Strike against its designated target if it is in reach. If the target is not in reach, the haunt resets.</p>"
@@ -3570,7 +3550,7 @@
     },
     "Seismic Spears Trap": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>Lines of searing lava lance through the area, causing targets to shake as if caught in an earthquake and potentially become petrified.</p>",
+      "description": "<p>Lines of searing lava lance through the area, causing targets to shake as if caught in an earthquake and potentially become petrified.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:43|name:Disable the Wards|traits:magical,trap] (master) to disable the wards or <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (9th level; counteract DC 38) to counteract the ward.</p>",
       "hazardReset": "<p>The trap resets after 1 minute.</p>"
     },
@@ -3605,7 +3585,7 @@
     },
     "Town Hall Fire": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A fire engulfs the western door and a @Template[type:line|distance:10|width:10]{10-foot-by-10-foot area} immediately east of it, then spreads on each of its turns.</p>",
+      "description": "<p>A fire engulfs the western door and a @Template[type:line|distance:10|width:10]{10-foot-by-10-foot area} immediately east of it, then spreads on each of its turns.</p>",
       "hazardDisable": "<p>Eliminating the hazard requires dousing the flames. Water typically clears a 5-foot square if the amount is small (such as that from <em>@Compendium[pf2e.spells-srd.WzLKjSw6hsBhuklC]{Create Water}</em> or <em>@Compendium[pf2e.spells-srd.jfVCuOpzC6mUrf6f]{Hydraulic Push}</em>). Larger amounts of water, such as a full bucket, typically douse a @Template[type:line|distance:10|width:10]{10-foot-by-10-foot area} (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is usually less effective than water, so a @Compendium[pf2e.equipment-srd.EpxmUtLpCkE8R6KJ]{Frost Vial} typically puts out 1 square of fire, and <em>@Compendium[pf2e.spells-srd.gYjPm7YwGtEa1oxh]{Ray of Frost}</em> is ineffective.</p>\n<p>Fountain Circle, located outside town hall, has several working water pumps. These are far enough away that it's impractical for a PC to bring water back and forth. However, a PC might instruct the more steely nerved spectators to create a bucket brigade. It takes 15 spectators (which can include those rescued by councilors as well as by PCs) to set this up, and 2 rounds for the townspeople to line up and begin pumping water from Fountain Circle. As of the 3rd round, there is a bucket of water available for the PCs to use at the chamber's southern entrance at the beginning of each PC's turn. Members of a bucket brigade are lined up outside the chamber, and don't take damage from smoke inhalation.</p>\n<p>If a PC does want to carry the water, it's 150 feet from the chamber's southern door to a pump, so it 6 actions are usually needed to reach the pumps or return. Filling a bucket requires an Interact action.</p>\n<p>Other methods might also help control the fire, as you determine. For example, the PCs might be able to find something to barricade the fire with to control its path, or use a cloak to beat out some of the fire.</p>",
       "hazardRoutine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies, with a minimum of 1 square. You determine the squares the fire spreads into-typically those with the most flammable materials. Any creature that ends its turn next to the flames takes [[/r {1d6}[fire]]]{1d6 fire damage}, and any creature within the flames takes [[/r {4d6}[fire]]]{4d6 fire damage}. Both of these have a @Check[type:reflex|dc:17|basic:true|traits:complex,environmental,fire,hazard] save. A creature can take damage from flames only once per round. (For simplicity, track damage only for the NPCs and their allies, not for the spectators; Turn 5 and Turn 7 have instructions regarding the spectators' health).</p>\n<p>The fire has an additional effect on each of its turns after the first.</p>\n<p><strong>Turn 2</strong> The chamber's northern door flies open and flames burst through, igniting the @Template[type:line|distance:10|width:10]{10-foot-by-10-foot area} in front of the door. All fires spread on subsequent turns, at the same rate listed above. Any fires that join together become one fire for this purpose.</p>\n<p><strong>Turn 4+</strong> Creatures in the room take [[/r 1d6 #Smoke Inhalation Damage]]{1d6 damage} from smoke inhalation at the ends of their turns. Anyone who uses an Interact action to tie a wet rag around their nose and mouth (or uses another creative solution) halves the damage.</p>\n<p><strong>Turn 5</strong> Spectators still inside the room fall @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} from burns and smoke inhalation.</p>\n<p><strong>Turn 7</strong> Spectators still in the room die.</p>"
     },
@@ -3795,7 +3775,7 @@
     },
     "Ash Web": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>This dangerous sooty black mold readily releases its toxic spores when disturbed. The entire swath of fungus in area <strong>B2</strong> is a single organism. There are nine 10-foot-square patches to remove, but the whole organism dies once it takes enough damage.</p>",
+      "description": "<p>This dangerous sooty black mold readily releases its toxic spores when disturbed. The entire swath of fungus in area <strong>B2</strong> is a single organism. There are nine 10-foot-square patches to remove, but the whole organism dies once it takes enough damage.</p>",
       "hazardDisable": "<p>@Check[type:survival|dc:27|name:Remove Patch|traits:environmental,fungus] (expert) to remove a 10-foot-square patch of ash web without triggering the spores</p>",
       "hazardReset": "<p>This large patch of ash web resets automatically at the start of the round.</p>"
     },
@@ -3818,14 +3798,14 @@
     },
     "Dragon Pillar": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>A 10-foot-tall wooden pole topped by a wooden carving of Dahak's head. Each dragon pillar's head has been treated with something to give it a distinct color, as indicated in the specific encounter, but regardless of color, plumes of smoke waft up from the mouth.</p>",
+      "description": "<p>A 10-foot-tall wooden pole topped by a wooden carving of Dahak's head. Each dragon pillar's head has been treated with something to give it a distinct color, as indicated in the specific encounter, but regardless of color, plumes of smoke waft up from the mouth.</p>",
       "hazardDisable": "<p>@Check[type:athletics|dc:26|name:Push the Pillar Over|traits:complex,magical,trap,hazard] (expert) to push the pillar over, or @Check[type:thievery|dc:26|name:Erase Magic Runes|traits:complex,magical,trap,hazard] (expert) on the pillar to erase the magic runes that power it, or <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 22) to dispel the pillar's magic.</p>",
       "hazardReset": "<p>The dragon pillar deactivates and resets as soon as it perceives no appropriate targets in range.</p>",
       "hazardRoutine": "<p>(1 action) On its initiative, the dragon pillar fires an eye beam at the closest target within 120 feet.</p>"
     },
     "Trapped Lathe": {
       "name": "Age of Ashes",
-      "hazardDescription": "<p>The powered lathe's springs have been critically overwound so that when jostled or triggered, the lathe unwinds violently, hurling blades, gears, and sharp shards of metal around the room.</p>",
+      "description": "<p>The powered lathe's springs have been critically overwound so that when jostled or triggered, the lathe unwinds violently, hurling blades, gears, and sharp shards of metal around the room.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:31|name:Release the Spring Tension|traits:complex,mechanical,trap,hazard] (expert) on the lathe releases the tension on its springs without unleashing its blades and gears.</p>",
       "hazardRoutine": "<p>(4 actions) The lathe attempts four sharpened fragment attacks against creatures in the room, selecting a target randomly from all available targets in area A1. The trap does not take multiple attack penalties for any of its attacks. The trap loses 1 action each turn as its springs wind down, and becomes disabled when it has 0 actions.</p>"
     }
