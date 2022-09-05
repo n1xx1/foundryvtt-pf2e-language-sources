@@ -1,0 +1,529 @@
+{
+  "label": "Fall of Plaguestone",
+  "mapping": {
+    "name": "name",
+    "items": {
+      "path": "items",
+      "converter": "fromPack"
+    },
+    "tokenName": {
+      "path": "token.name",
+      "converter": "name"
+    },
+    "hazardDescription": "system.details.description",
+    "hazardDisable": "system.details.disable",
+    "hazardReset": "system.details.reset",
+    "hazardRoutine": "system.details.routine",
+    "description": "system.details.publicNotes",
+    "speed": {
+      "path": "system.attributes.speed",
+      "converter": "pfitSpeeds"
+    }
+  },
+  "entries": {
+    "Giant Lightning Serpent": {
+      "name": "Giant Lightning Serpent",
+      "description": "",
+      "items": {
+        "Fangs": {
+          "name": "Fangs"
+        },
+        "Scent (Imprecise) 30 feet": {
+          "name": "Scent (Imprecise) 30 feet",
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+        },
+        "Coiled Opportunity": {
+          "name": "Coiled Opportunity",
+          "description": "<p>As Attack of Opportunity, but the serpent can use this reaction only if it's coiled.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+        },
+        "Coil": {
+          "name": "Coil",
+          "description": "<p>The serpent uses an action to coil itself; increasing its reach with its fangs from 5 feet to 10 feet. After the serpent strikes with its fangs, it becomes uncoiled.</p>"
+        },
+        "Lightning Rattle": {
+          "name": "Lightning Rattle",
+          "description": "<p>The serpent rattles its strange metal tail and unleashes a bolt of lightning in a @Template[type:line|distance:60]. The bolt deals [[/r {2d10}[electricity]]]{2d10 electricity damage} (@Check[type:reflex|dc:17|basic:true] save).</p>\n<p>Once the giant lightning serpent uses this ability, it must wait [[/br 1d4 #Recharge Lightning Rattle]]{1d4 rounds} before doing so again.</p>"
+        }
+      }
+    },
+    "Stone Horse": {
+      "name": "Stone Horse",
+      "description": "",
+      "items": {
+        "Hoof": {
+          "name": "Hoof"
+        },
+        "Scent (Imprecise) 30 feet": {
+          "name": "Scent (Imprecise) 30 feet",
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+        },
+        "Shattering Hooves": {
+          "name": "Shattering Hooves",
+          "description": "<p>The hooves of the stone horse are as hard as iron; if the horse makes a Hoof Strike and gets a critical hit, the target's armor is damaged as well, the attack dealing as much damage to the armor as it dealt to the target (Hardness applies as normal). If the target uses shield block against the stone horse's critical hit with a hoof attack, treat the shield's Hardness as 5 points lower (minimum 0).</p>"
+        }
+      }
+    },
+    "Lord Nar": {
+      "name": "Lord Nar",
+      "description": "",
+      "items": {
+        "Bronze Key": {
+          "name": "Bronze Key"
+        },
+        "+1 Greatclub": {
+          "name": "+1 Greatclub"
+        },
+        "Hatchet": {
+          "name": "Hatchet"
+        },
+        "No Escape": {
+          "name": "No Escape",
+          "description": "<p><strong>Trigger</strong> An adjacent foe moves away.</p>\n<hr />\n<p><strong>Effect</strong> Lord Nar may move up to his speed but must end his move as close to the triggering creature as possible without entering the triggering creature's square.</p>"
+        },
+        "Rage": {
+          "name": "Rage",
+          "description": "<p>Lord Nar flies into a rage that lasts 1 minute and grants him 8 temporary Hit Points, 4 additional damage with his listed attacks, and a -1 penalty to AC.</p>\n<p>He cannot use actions that have the concentrate trait while raging, unless they also have the rage trait.</p>\n<p>Once his rage ends, Nar cannot Rage again for 1 minute.</p>\n<hr />\n<p>@Compendium[pf2e.feat-effects.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+        }
+      }
+    },
+    "Fiery Leopard": {
+      "name": "Fiery Leopard",
+      "description": "",
+      "items": {
+        "Jaws": {
+          "name": "Jaws"
+        },
+        "Claw": {
+          "name": "Claw"
+        },
+        "Fiery Pelt": {
+          "name": "Fiery Pelt",
+          "description": "<p>Creatures that start their turn grappled by a fiery leopard take [[/r {1d4}[fire]]]{1d4 fire damage}. Anyone attempting to grapple a fiery leopard takes [[/r {1d4}[fire]]]{1d4 fire damage} for each attempt.</p>"
+        }
+      }
+    },
+    "Drunken Farmer": {
+      "name": "Drunken Farmer",
+      "description": "",
+      "items": {
+        "Durable Farm Clothes": {
+          "name": "Durable Farm Clothes",
+          "description": "<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
+        },
+        "Chair": {
+          "name": "Chair"
+        }
+      }
+    },
+    "Bloodlash Bush": {
+      "name": "Bloodlash Bush",
+      "description": "<p>The bloodlash bush attempts to lacerate its foes, using its weeping wounds to irrigate the ground around itself. The seeds of a bloodlash bush can take root only in soil that has been soaked in blood.</p>\n<hr />\n<p>Often overlooked in light of more obvious threats, some plants can be just as deadly and dangerous as wild beasts.</p>\n<p>What first appears to be a simple shrub suddenly stirs to life.</p>",
+      "items": {
+        "Vine": {
+          "name": "Vine"
+        },
+        "Tremorsense (Imprecise) 30 feet": {
+          "name": "Tremorsense (Imprecise) 30 feet",
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+        },
+        "Blood Siphon": {
+          "name": "Blood Siphon",
+          "description": "<p>The tendrils of the bush reach out to siphon the blood from a victim up to 20 feet away with persistent bleed damage, causing the victim to immediately take that amount of bleed damage (@Check[type:reflex|dc:17|basic:true]).</p>\n<p>The bush regains an amount of Hit Points equal to double the damage dealt.</p>"
+        },
+        "Spinning Strike": {
+          "name": "Spinning Strike",
+          "description": "<p>The bush spins in a circle, lashing out in all directions at once. It makes one attack roll and compares the result to the AC of each creature within its melee reach, rolling damage only once and applying it to each creature hit.</p>"
+        },
+        "Weeping Wounds": {
+          "name": "Weeping Wounds",
+          "description": "<p>A bloodlash bush's vines cause terrible lacerations that continue to bleed. A creature hit with a vine attack takes [[/r {1}[persistent,bleed]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} ([[/r {2}[persistent,bleed]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} on a critical hit).</p>\n<p>Unlike other forms of persistent damage, this damage is cumulative, to a maximum of 5 persistent bleed damage but it can be stopped like any other persistent bleed damage.</p>"
+        }
+      }
+    },
+    "Icy Rat": {
+      "name": "Icy Rat",
+      "description": "",
+      "items": {
+        "Jaws": {
+          "name": "Jaws"
+        },
+        "Scent (Imprecise) 30 feet": {
+          "name": "Scent (Imprecise) 30 feet",
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+        },
+        "Icy Death": {
+          "name": "Icy Death",
+          "description": "<p>When an icy rat is slain, its body explodes in a burst of frozen fur and bone, dealing [[/r {2d4}[cold]]]{2d4 cold damage} to all adjacent creatures (@Check[type:reflex|dc:14|basic:true] save).</p>"
+        }
+      }
+    },
+    "Vilree": {
+      "name": "Vilree",
+      "description": "",
+      "items": {
+        "Acid Flask (Moderate, Infused)": {
+          "name": "Acid Flask (Moderate, Infused)",
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 2d6 persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>"
+        },
+        "Alchemist's Fire (Moderate, Infused)": {
+          "name": "Alchemist's Fire (Moderate, Infused)",
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+        },
+        "Bottled Lightning (Moderate, Infused)": {
+          "name": "Bottled Lightning (Moderate, Infused)",
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 2d6 electricity damage and 2 electricity splash damage. On a hit, the target becomes @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the start of your next turn. You gain a +1 item bonus to attack rolls.</p>"
+        },
+        "Tanglefoot Bag (Lesser, Infused)": {
+          "name": "Tanglefoot Bag (Lesser, Infused)",
+          "description": "<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -10-foot status penalty to its Speeds for 1 minute. The Escape DC is 17.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+        },
+        "Acid Energy Mutagen (Lesser)": {
+          "name": "Acid Energy Mutagen (Lesser)",
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<hr />\n<p>When created, this mutigen is attuned to one of four energy types: acid, cold, electricity, or fire. When consumed, the mutagen suffuses your body with energy that spills out whenever you attack. At higher levels, it can even grant you the ability to unleash the energy in controlled bursts.</p>\n<p><strong>Benefit</strong> You gain resistance 5 to the attuned energy type. Whenever you score a hit with a melee weapon, add 1 damage to the attuned energy type.</p>\n<p><strong>Drawback</strong> You gain weakness 5 to the other three energy types.</p>\n<p><strong>Duration</strong> 1 minute.</p>\n<p>@Compendium[pf2e.equipment-effects.C9Tnl6Q7Z5Sbw5EY]{Effect: Energy Mutagen (Lesser)}</p>"
+        },
+        "Elixir of Life (Lesser, Infused)": {
+          "name": "Elixir of Life (Lesser, Infused)",
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r {3d6+6}[healing]]]{3d6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@Compendium[pf2e.equipment-effects.EpB7yJPEuG6ez4z3]{Effect: Elixir of Life (Lesser)}</p>"
+        },
+        "Key": {
+          "name": "Key"
+        },
+        "Dagger": {
+          "name": "Dagger"
+        },
+        "Alchemical Crossbow": {
+          "name": "Alchemical Crossbow",
+          "description": "<p>Vilree's crossbow can deliver bolts that are alchemically infused. As an action, she can slot an alchemical bomb into the crossbow, and the next 3 attacks she makes with it deal 1d6 damage of the type dealt by the bomb. These attacks never deal splash damage.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.ucAwSIZsGrpBLg6G]{Effect: Alchemical Crossbow}</p>"
+        },
+        "Acid Flask": {
+          "name": "Acid Flask"
+        },
+        "Alchemist's Fire": {
+          "name": "Alchemist's Fire"
+        },
+        "Bottled Lightning": {
+          "name": "Bottled Lightning"
+        },
+        "Tanglefoot Bag": {
+          "name": "Tanglefoot Bag"
+        },
+        "Alchemy": {
+          "name": "Alchemy",
+          "description": "<p>Vilree has used her alchemy ability to create 4 @Compendium[pf2e.equipment-srd.SgtqZxt26BdjUmEB]{Acid Flask (Moderate)}, 6 @Compendium[pf2e.equipment-srd.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)}, 2 @Compendium[pf2e.equipment-srd.97QyNEOAyYLdGaYc]{Bottled Lightning (Moderate)}, 3 lesser elixirs of life @Compendium[pf2e.equipment-srd.TZUskLT7yvP7N2co]{Elixir of Life (Lesser)}, and 2 lesser tanglefoot bags @Compendium[pf2e.equipment-srd.T6Appwwl6nUl56Xj]{Tanglefoot Bag (Lesser)}. These are infusions. She can spend an action to create an additional vial of any one of these items, or any of the items listed as formulas in her book.</p>"
+        },
+        "Far Lob": {
+          "name": "Far Lob",
+          "description": "<p>Vilree's bombs have a range increment of 30 feet.</p>"
+        },
+        "Quick Bomber": {
+          "name": "Quick Bomber",
+          "description": "<p>Vilree can interact to draw a bomb and then make a Strike with it.</p>"
+        }
+      }
+    },
+    "Hallod": {
+      "name": "Hallod",
+      "description": "",
+      "items": {
+        "Key to Strongbox": {
+          "name": "Key to Strongbox"
+        },
+        "Kukri": {
+          "name": "Kukri"
+        },
+        "Heavy Crossbow": {
+          "name": "Heavy Crossbow"
+        },
+        "Dirty Trick": {
+          "name": "Dirty Trick",
+          "description": "<p><strong>Trigger</strong> Hallod scores a critical hit with a melee attack.</p>\n<hr />\n<p><strong>Effect</strong> Hallod can attempt an Athletics check to @Compendium[pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} or @Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} the target of his attack. This uses the same multiple attack penalty as the attack, but it does not count as an additional attack for that penalty</p>"
+        },
+        "One-Two Move": {
+          "name": "One-Two Move",
+          "description": "<p>Hallod makes two Strikes, one with each hand; he usually attacks first with his kukri. If this first attack hits, the target is @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to the second attack (which for Hallod is usually a fist Strike). The multiple attack penalty applies to these attacks as normal</p>"
+        },
+        "Sneak Attack": {
+          "name": "Sneak Attack",
+          "description": "<p>Hallod deals 1d6 extra precision damage precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+        }
+      }
+    },
+    "The Behemoth": {
+      "name": "The Behemoth",
+      "description": "",
+      "items": {
+        "Empathy Link": {
+          "name": "Empathy Link",
+          "description": "<p>The behemoth can't speak, but its mind is linked to its creator. It can share basic emotional information with its creator, such as fear, happiness, or anger. If the behemoth is destroyed, its master automatically knows this. The range of this link is 1,500 feet.</p>"
+        },
+        "Massive Strike": {
+          "name": "Massive Strike",
+          "description": "<p>The behemoth makes a melee Strike and, if the attack hits, it can push the creature back 10 feet (20 feet on a critical hit). The target must succeed at a @Check[type:fortitude|dc:19] save or be knocked @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} by this attack.</p>"
+        },
+        "Stomp": {
+          "name": "Stomp",
+          "description": "<p>The behemoth can stomp on the ground, causing all creatures within 10 feet to fall @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} (@Check[type:reflex|dc:19] save negates).</p>"
+        }
+      }
+    },
+    "Bee Swarm": {
+      "name": "Bee Swarm",
+      "description": "",
+      "items": {
+        "Beestings": {
+          "name": "Beestings",
+          "description": "<p>The creature must attempt a @Check[type:fortitude|dc:16|traits:damaging-effect] save. Those who fail take [[/r {1d4}[poison]]]{1d4 poison damage} and are @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute.</p>"
+        },
+        "Swarming Stings": {
+          "name": "Swarming Stings",
+          "description": "<p>Each enemy in the swarm's space takes [[/r {1d4}[piercing]]]{1d4 piercing damage} (@Check[type:reflex|dc:16|basic:true] save). The first time each round a creature fails the save and takes piercing damage, it also suffers the effect of beestings.</p>\n<p>Whenever the bee swarm uses this ability, the swarm takes 1 damage.</p>"
+        }
+      }
+    },
+    "Caustic Wolf": {
+      "name": "Caustic Wolf",
+      "description": "",
+      "items": {
+        "Jaws": {
+          "name": "Jaws"
+        },
+        "Scent (Imprecise) 30 feet": {
+          "name": "Scent (Imprecise) 30 feet",
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+        },
+        "Acid Breath": {
+          "name": "Acid Breath",
+          "description": "<p>The wolf unleashes a stream of bright green acid from its mouth, coating all creatures in a @Template[type:line|distance:30]. All creatures in the line take [[/r {3d6}[acid]]]{3d6 acid damage} (@Check[type:reflex|dc:16|basic:true] save).</p>\n<p>The caustic wolf cannot use this ability again for 1 minute.</p>"
+        },
+        "Howl": {
+          "name": "Howl",
+          "description": "<p>The wolf unleashes a terrifying howl, allowing it to @Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} all enemies within @Template[type:emanation|distance:30]{30 feet}. Wolves within @Template[type:emanation|distance:100]{100 feet} can spend a reaction to join the howl, causing the effect to emanate from them as well. This affects additional enemies within 30 feet of them and uses the caustic wolf's Intimidation check with a -4 circumstance penalty.</p>\n<p>Enemies cannot be affected by the howl more than once, even if they are near more than one howling wolf. All creatures targeted by this effect are temporarily immune for 24 hours.</p>"
+        }
+      }
+    },
+    "Mutant Wolf": {
+      "name": "Mutant Wolf",
+      "description": "",
+      "items": {
+        "Jaws": {
+          "name": "Jaws"
+        },
+        "Motion Sense (Precise) 30 feet": {
+          "name": "Motion Sense (Precise) 30 feet",
+          "description": "<p>A mutant wolf can sense nearby motion through vibration and air movement.</p>"
+        },
+        "Gore Spray": {
+          "name": "Gore Spray",
+          "description": "<p><strong>Trigger</strong> A creature critically hits a mutant wolf while adjacent to it.</p>\n<hr />\n<p><strong>Effect</strong> The wound causes gore to spray from a ruptured pustule. The triggering creature takes [[/r {3d6}[acid]]]{3d6 acid damage} (@Check[type:reflex|dc:19|basic:true] save). This occurs even if the attack kills the wolf.</p>"
+        },
+        "Tear": {
+          "name": "Tear",
+          "description": "<p><strong>Trigger</strong> The wolf dealt damage to a creature with its jaws during the previous action.</p>\n<hr />\n<p><strong>Effect</strong> The wolf tears at the creature's flesh, dealing [[/r {1d6+2}[slashing]]]{1d6+2 slashing damage} and [[/r {1}[persistent,acid]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}.</p>"
+        }
+      }
+    },
+    "Orc Alchemist": {
+      "name": "Orc Alchemist",
+      "description": "",
+      "items": {
+        "Orc Knuckle Dagger": {
+          "name": "Orc Knuckle Dagger"
+        },
+        "Acid Flask": {
+          "name": "Acid Flask"
+        },
+        "Alchemist's Fire": {
+          "name": "Alchemist's Fire"
+        },
+        "Bottled Lightning": {
+          "name": "Bottled Lightning"
+        }
+      }
+    },
+    "Blood Ooze": {
+      "name": "Blood Ooze",
+      "description": "<p>Swelling like a bubble about to burst, this oozing thing looks like it is made entirely from blood. Its slick, crimson skin is marred only by spots that look like clots formed on the surface.</p>\n<p>Created through the foulest of alchemical rituals, the blood ooze seeks only one thing: to increase its mass by consuming blood from the living. The blood ooze hides within the body of its victims, only bursting out to attack when another meal draws near, leaving the body a husk of its former self.</p>\n<p>The process by which such an ooze is created involves draining the blood of at least four Medium creatures and feeding all of the collected blood to a fifth creature, along with deadly reagents designed to prevent the blood from coagulating. During this time, the host slowly dies while the blood ooze takes form, emerging 2 to 6 hours later. Blood oozes have no loyalty toward those who created them, but some creators have noted that newly formed blood oozes seem to avoid harming other members of the host creature's family.</p>\n<p>It is not widely known that an existing blood ooze can reproduce by splitting itself in half. It undergoes this division only if it has grown so large that splitting in half would create a pair of normal-sized blood oozes, such as the one listed below.</p>",
+      "items": {
+        "Pseudopod": {
+          "name": "Pseudopod",
+          "description": "<p>@Localize[PF2E.PersistentDamage.Bleed1d6.success]</p>"
+        },
+        "Infuse Corpse": {
+          "name": "Infuse Corpse",
+          "description": "<p>A blood ooze can seep into a corpse's wounds, displacing its natural blood. It can burst out of the corpse as a free action.</p>"
+        },
+        "Motion Sense 60 feet": {
+          "name": "Motion Sense 60 feet",
+          "description": "<p>A blood ooze can sense nearby motion through vibration and air movement.</p>"
+        },
+        "Blood Pool": {
+          "name": "Blood Pool",
+          "description": "<p>Whenever a creature adjacent to a blood ooze takes bleed damage, the blood ooze regains an amount of Hit Points equal to the damage dealt.</p>"
+        },
+        "Clot": {
+          "name": "Clot",
+          "description": "<p><strong>Trigger</strong> The blood ooze is damaged by a piercing or slashing attack.</p>\n<hr />\n<p><strong>Effect</strong> The blood ooze forms a clot around the wound, reducing the damage taken by 5 (to a minimum of 0).</p>"
+        },
+        "Siphon Vitality": {
+          "name": "Siphon Vitality",
+          "description": "<p>The blood ooze draws forth blood from nearby creatures, causing their flesh to break open and blood to spill out which replenishes the blood ooze. Each living creature @Template[type:emanation|distance:15]{within 15 feet} takes [[/r {3d6}[slashing]]]{3d6 slashing damage} (@Check[type:fortitude|dc:21|basic:true] save).</p>\n<p>The blood ooze regains an amount of Hit Points equal to half the damage Siphon Vitality dealt to the single creature that took the most damage.</p>"
+        }
+      }
+    },
+    "The Sculptor": {
+      "name": "The Sculptor",
+      "description": "",
+      "items": {
+        "Alchemist's Fire (Moderate, Infused)": {
+          "name": "Alchemist's Fire (Moderate, Infused)",
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+        },
+        "Frost Vial (Moderate, Infused)": {
+          "name": "Frost Vial (Moderate, Infused)",
+          "description": "<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a -10-foot penalty.</p>\n<hr />\n<p>@Compendium[pf2e.equipment-effects.dv0IKm5syOdP759w]{Effect: Frost Vial (Moderate)}</p>"
+        },
+        "Elixir of Life (Lesser, Infused)": {
+          "name": "Elixir of Life (Lesser, Infused)",
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r {3d6+6}[healing]]]{3d6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@Compendium[pf2e.equipment-effects.EpB7yJPEuG6ez4z3]{Effect: Elixir of Life (Lesser)}</p>"
+        },
+        "Orc Knuckle Dagger": {
+          "name": "Orc Knuckle Dagger"
+        },
+        "Alchemist's Fire": {
+          "name": "Alchemist's Fire"
+        },
+        "Frost Vial": {
+          "name": "Frost Vial"
+        },
+        "Acid Flask": {
+          "name": "Acid Flask"
+        },
+        "Bottled Lightning": {
+          "name": "Bottled Lightning"
+        },
+        "Alchemy": {
+          "name": "Alchemy",
+          "description": "<p>The Sculptor has used his alchemy ability to create 4 @Compendium[pf2e.equipment-srd.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)}, 2 @Compendium[pf2e.equipment-srd.TZUskLT7yvP7N2co]{Elixir of Life (Lesser)}, and 4 @Compendium[pf2e.equipment-srd.nVvH1ZcM7OwIVIs8]{Frost Vial (Moderate)}. These are infusions. He can spend an action to create an additional vial of any one of those, @Compendium[pf2e.equipment-srd.AFR01HVd7DcZvkpP]{Bottled Lightning (Lesser)}, or a @Compendium[pf2e.equipment-srd.M1k5QQc1qQLxzyCK]{Acid Flask (Lesser)}</p>"
+        },
+        "Quick Bomber": {
+          "name": "Quick Bomber",
+          "description": "<p>The Sculptor can use Interact to draw a bomb and then Strike with it.</p>"
+        }
+      }
+    },
+    "Ice Fall Trap": {
+      "name": "Fall of Plaguestone",
+      "hazardDescription": "<p>Compartments in the ceiling are rigged to drop a freezing alchemical liquid into the entire room if the door is opened without using the key.</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:20|name:Disable Ice Fall|traits:mechanical,trap] (trained) on the door allows it to be opened without springing the trap.</p>"
+    },
+    "Spear Launcher": {
+      "name": "Fall of Plaguestone",
+      "hazardDescription": "<p>An old heavy crossbow is hidden in a pile of trash, loaded with a wooden spear, and connected to the rope holding the door.</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:18|traits:action:disable-device]{Thievery (trained)} on the rope allows a PC to tie the rope off and open the door without setting off the trap.</p>"
+    },
+    "Mangy Wolf": {
+      "name": "Mangy Wolf",
+      "description": "",
+      "items": {
+        "Jaws": {
+          "name": "Jaws"
+        },
+        "Scent (Imprecise) 30 feet": {
+          "name": "Scent (Imprecise) 30 feet",
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+        },
+        "Fleas": {
+          "name": "Fleas",
+          "description": "<p>Anyone bitten by a mangy wolf is @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} for 1 minute unless they succeed at a @Check[type:fortitude|dc:14] save, but they can spend an Interact action to scratch away the fleas and remove the condition.</p>"
+        }
+      }
+    },
+    "The Amalgam": {
+      "name": "The Amalgam",
+      "description": "",
+      "items": {
+        "Claw": {
+          "name": "Claw"
+        },
+        "Jaws": {
+          "name": "Jaws"
+        },
+        "Tail": {
+          "name": "Tail"
+        },
+        "Scent (Imprecise) 30 feet": {
+          "name": "Scent (Imprecise) 30 feet",
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+        },
+        "Many Minds": {
+          "name": "Many Minds",
+          "description": "<p>The Amalgam has many consciousnesses floating inside its mind, and they are not equally affected by mental magic. The Amalgam always treats its saving throws against mental effects as one degree better.</p>"
+        },
+        "Too Many Limbs": {
+          "name": "Too Many Limbs",
+          "description": "<p>The amalgam can make up to four Strikes, one with each of its listed melee attacks, but no more than two at any one target. It takes a -2 penalty to each attack, but the multiple attack penalty does not increase until all the attacks are made.</p>"
+        }
+      }
+    },
+    "Graytusk": {
+      "name": "Graytusk",
+      "description": "",
+      "items": {
+        "+1 Studded Leather Armor": {
+          "name": "+1 Studded Leather Armor",
+          "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+        },
+        "Shortsword": {
+          "name": "Shortsword"
+        },
+        "Composite Longbow": {
+          "name": "Composite Longbow"
+        },
+        "Double Shot": {
+          "name": "Double Shot",
+          "description": "<p>Graytusk can make two ranged Strikes against two different targets, each at a -2 penalty, Graytusk's multiple attack penalty increases only after both attacks are made.</p>"
+        }
+      }
+    },
+    "Falling Debris": {
+      "name": "Fall of Plaguestone",
+      "hazardDescription": "<p>A pressure-sensitive floorboard connects to a beam holding up debris in the crawlway's ceiling.</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:15|name:Disable Trap|traits:mechanical,trap,hazard] (trained) on the floorboard before the debris falls</p>"
+    },
+    "Vine Lasher": {
+      "name": "Vine Lasher",
+      "description": "<p>The vine lasher attacks in groups, attempting to immobilize prey and slowly tear a creature to pieces.</p>\n<hr />\n<p>What first appears to be a simple shrub suddenly stirs to life.</p>",
+      "items": {
+        "Vine": {
+          "name": "Vine"
+        },
+        "Tremorsense (Imprecise) 30 feet": {
+          "name": "Tremorsense (Imprecise) 30 feet",
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+        },
+        "Light Hold": {
+          "name": "Light Hold",
+          "description": "<p>A creature @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by a vine lasher is not immobilized, but the grabbed creature's space and every adjacent square use the rules for difficult terrain. If the creature moves, the vine lasher moves with it, always keeping the grabbed creature within 10 feet of itself.</p>\n<p>If two or more vine lashers have a creature grabbed in this way, then the target's space and adjacent square instead use the rules for greater difficult terrain.</p>"
+        }
+      }
+    },
+    "Alchemical Drudge": {
+      "name": "Alchemical Drudge",
+      "description": "",
+      "items": {
+        "Empathy Link": {
+          "name": "Empathy Link",
+          "description": "<p>An alchemical drudge can't speak, but its mind is linked to its creator. It can share basic emotional information with its creator, such as fear, happiness, or anger. If the drudge is destroyed, its master automatically knows this. The range of this link is 1,500 feet.</p>"
+        },
+        "Alchemical Strike": {
+          "name": "Alchemical Strike",
+          "description": "<p>An alchemical drudge contains a special reservoir that can be loaded with the contents of one alchemical bomb that deals acid, cold, electricity, or fire damage, allowing the drudge to imbue its fist attacks with this damage. Each hit deals 1d6 points of damage of the same type as that of the bomb loaded into it. Each bomb has enough fluid in it for 10 successful strikes.</p>\n<p>@Compendium[pf2e.bestiary-effects.yrenENpzVgBKsnNi]{Effect: Alchemical Strike}</p>"
+        },
+        "Vomit Alchemy": {
+          "name": "Vomit Alchemy",
+          "description": "<p>An alchemical drudge can vomit forth a pool of caustic alchemical reagents, filling the ground in one square adjacent to the drudge. Creatures in that square when the pool is created take [[/r {2d6}[acid]]]{2d6 acid damage} (@Check[type:reflex|dc:17|basic:true]). Any creature that ends its turn in a square containing a pool takes [[/r {2d6}[acid]]]{2d6 acid damage}. The pool remains for 1 minute before becoming inert.</p>"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,528 @@
+{
+  "label": "Vehicles",
+  "mapping": {
+    "name": "name",
+    "items": {
+      "path": "items",
+      "converter": "fromPack"
+    },
+    "tokenName": {
+      "path": "token.name",
+      "converter": "name"
+    },
+    "description": "system.details.publicNotes",
+    "speed": {
+      "path": "system.attributes.speed",
+      "converter": "pfitSpeeds"
+    }
+  },
+  "entries": {
+    "Sand Barge": {
+      "name": "Sand Barge",
+      "items": {
+        "Sand Skimmer": {
+          "name": "Sand Skimmer",
+          "description": "<p>The sand barge can travel over sand, water, and quicksand equally well, but it can't traverse solid ground.</p>"
+        }
+      }
+    },
+    "Sandsailer": {
+      "name": "Sandsailer"
+    },
+    "Firefly": {
+      "name": "Firefly",
+      "items": {
+        "Flash": {
+          "name": "Flash",
+          "description": "<p>The pilot overcharges the vehicle, causing it to create a brilliant flash of light. All creatures in the bright light from its glow aura must succeed at a @Check[type:fortitude|dc:19|name:Avoid flash] or be @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute. The firefly's light dims for 10 minutes, reducing its glow to 10 feet of dim light, during which time it can't use flash. Flash stops working if the firefly is broken.</p>"
+        },
+        "Glow": {
+          "name": "Glow",
+          "description": "<p>Powered by magical lightning, this vehicle sheds bright light within 20 feet, and dim light for a further 20 feet.</p>"
+        },
+        "Hover": {
+          "name": "Hover",
+          "description": "<p>This vehicle is held aloft by rapidly spinning propellers that enable it to hover 1 foot in the air. It is incapable of flying any higher, and when the pilot stops the magic or the vehicle breaks, it descends 1 foot to the ground.</p>"
+        }
+      }
+    },
+    "Carriage": {
+      "name": "Carriage"
+    },
+    "Sky Chariot, Light": {
+      "name": "Sky Chariot, Light"
+    },
+    "Chariot, Heavy": {
+      "name": "Chariot, Heavy"
+    },
+    "Speedster": {
+      "name": "Speedster",
+      "items": {
+        "Speed Boost": {
+          "name": "Speed Boost",
+          "description": "<p>The pilot releases built up pressure in the speedster's alchemical steam engine in order to temporarily increase its speed. For [[/r 1d4 #rounds]]{1d4 rounds}, the speedster's Speed becomes 80 feet and all move actions the pilot takes gain the reckless trait. When the pilot takes an action that already would have the reckless trait, the pilot uses the degree of success one worse than the one they rolled on the piloting check. The speedster can't use Speed Boost again for 1 hour, as the pressure requires time to rebuild.</p>"
+        },
+        "Streamlined": {
+          "name": "Streamlined",
+          "description": "<p>This lightweight vehicle has no additional storage space for cargo.</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>10 minutes of wind-up, 2 hours of operational time, DC 28, standby</p>"
+        }
+      }
+    },
+    "Steam Cart": {
+      "name": "Steam Cart",
+      "items": {
+        "Steam Cloud": {
+          "name": "Steam Cloud",
+          "description": "<p>Whenever the steam cart takes collision damage, its engine expels a dense cloud of steam in a 5-foot emanation. The steam cart and all creatures in the steam become @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and creatures outside the steam become concealed to creatures within it. The steam dissipates in 1 round.</p>"
+        }
+      }
+    },
+    "Bathysphere": {
+      "name": "Bathysphere",
+      "items": {
+        "Cable": {
+          "name": "Cable",
+          "description": "<p>The bathysphere is raised and lowered from a cable at the surface and can move only vertically.</p>"
+        },
+        "Tether Buoy": {
+          "name": "Tether Buoy",
+          "description": "<p>Crew and passengers can breathe while the vehicle is underwater to a depth of 500 feet or less.</p>"
+        },
+        "Ballast Release": {
+          "name": "Ballast Release",
+          "description": "<p>The pilot releases the bathysphere's ballast. The bathysphere moves 3 times its Speed toward the surface at the end of the pilot's turn.</p>"
+        }
+      }
+    },
+    "Galley": {
+      "name": "Galley",
+      "items": {
+        "Maneuverable": {
+          "name": "Maneuverable",
+          "description": "<p>With a full complement of skilled rowers, a rowed galley can turn swiftly, turn in place, and even row backwards. Each 90-degree turn made in less than a vehicle length costs 5 extra feet of movement. It can row backwards no faster than half its speed, and it can't turn while rowing backwards.</p>"
+        }
+      }
+    },
+    "Clockwork Hopper": {
+      "name": "Clockwork Hopper",
+      "items": {
+        "Hopper": {
+          "name": "Hopper",
+          "description": "<p>This vehicle hops across the terrain as it moves across the ground. The clockwork hopper ignores difficult terrain from earth, rock, rubble, slopes, and underbrush, and greater difficult terrain caused by those features is normal difficult terrain to the clockwork hopper.</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 22, standby</p>"
+        },
+        "massive Jump": {
+          "name": "massive Jump",
+          "description": "<p>The pilot engages a spring-driven mechanism that rockets the clockwork hopper into the air, in a grand leap. The vehicle jumps in a straight line in the direction of its current heading without touching the ground, landing in a space of solid ground up to 70 feet forward and up to 30 feet up. Creatures adjacent to the spaces a hopper lands in take [[/r {4d10}[bludgeoning]]]{4d10 Bludgeoning Damage} with a @Check[type:reflex|dc:22|basic:true|name:Avoid clockwork hopper], and are knocked @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} on a critical failure. The clockwork hopper can't use Massive Jump again for 1 minute. Massive Jump stops working if the clockwork hopper is @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Broken}.</p>"
+        }
+      }
+    },
+    "Strider": {
+      "name": "Strider",
+      "items": {
+        "Long Reach": {
+          "name": "Long Reach",
+          "description": "<p>The strider can bridge a gap as wide as 30 feet by Striding over it.</p>"
+        }
+      }
+    },
+    "Second Kiss": {
+      "name": "Second Kiss",
+      "items": {
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>This vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        }
+      }
+    },
+    "Firework Pogo": {
+      "name": "Firework Pogo",
+      "items": {
+        "Jump Jet": {
+          "name": "Jump Jet",
+          "description": "<p>The firework pgo moves exclusively via @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leaping}. For each action spent to @Compendium[pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{Drive}, the pogo Leaps 20 feet horizontally or 10 feet vertically.</p>"
+        },
+        "Unstable Launch": {
+          "name": "Unstable Launch",
+          "description": "<p>When the pilot uses a 3-action activity to recklessly @Compendium[pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{Drive} the firework pogo, it emits a burst of flames on launch that deals [[/r {3d6}[fire]]]{3d6 fire damage} to the pilot, the pogo itself, and each creature in a 10‑foot radius (@Check[type:reflex|dc:19|basic:true] save).</p>"
+        }
+      }
+    },
+    "Clockwork Wagon": {
+      "name": "Clockwork Wagon",
+      "items": {
+        "Hauler": {
+          "name": "Hauler",
+          "description": "<p>This vehicle is designed to transport heavy cargo over long distances. It can hold 400 Bulk of cargo.</p>"
+        },
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>This vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>1 hour of wind-up, 8 hours of operational time, DC 18, standby</p>"
+        }
+      }
+    },
+    "Shark Diver": {
+      "name": "Shark Diver",
+      "items": {
+        "Electrify": {
+          "name": "Electrify",
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> Two crew members each perform a 2-action activity on their turn to emit an electrical pulse, dealing [[/r {6d6}[electricity]]]{6d6 electricity damage} to all creatures within 10 feet of the shark diver. Crew and passengers of the shark diver are unaffected. Affected creatures must attempt a basic @Check[type:fortitude|dc:28].</p>"
+        },
+        "Submersible": {
+          "name": "Submersible",
+          "description": "<p>The shark diver can travel beneath the surface of the water, carrying an air reservoir suitable to sustain 11 Medium creatures for up to 24 hours. The shark diver can safely reach depths of up to 300 feet. If broken, the shark diver loses air from its reservoir, reducing the stored air by 10 minutes per round. A broken shark diver has its maximum depth reduced by half.</p>"
+        }
+      }
+    },
+    "Cutter": {
+      "name": "Cutter",
+      "items": {
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>This vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        }
+      }
+    },
+    "Sailing Ship": {
+      "name": "Sailing Ship",
+      "items": {
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>This vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        }
+      }
+    },
+    "Clunkerjunker": {
+      "name": "Clunkerjunker",
+      "items": {
+        "Volatile Flamethrower": {
+          "name": "Volatile Flamethrower",
+          "description": "<p>The pilot performs a three-action activity on their turn to vent alchemical fire out the sides of this vehicle. This requires three flasks of minor alchemist's fire, which the pilot loads into the vent as part of the activity. The pilot must then attempt a @Check[type:flat|dc:5]. On a success, creatures adjacent to this vehicle take [[/r {1d8}[fire]]]{1d8 fire damage} (@Check[type:reflex|dc:15|basic:true|name:Avoid Flames]). On a failure, it backfires, dealing [[/r {1d8}[fire]]]{1d8 fire damage} to the pilot and any passengers, with no save.</p>"
+        },
+        "Fall Apart": {
+          "name": "Fall Apart",
+          "description": "<p>When this vehicle takes physical damage the pilot must attempt a @Check[type:flat|dc:11] (or a @Check[type:flat|dc:20] when it takes a critical hit). On a failure, the armored hull fractures and the vehicle loses its Hardness and takes a -4 circumstance penalty to AC.</p>"
+        },
+        "Smog": {
+          "name": "Smog",
+          "description": "<p>@Template[type:emanation|distance:10]{10 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Whenever this vehicle is being piloted, it continually emits a thin haze of smoke and chemicals. Creatures in the aura (including the pilot and passengers) take a -1 circumstance penalty to visual Perception checks.</p>"
+        }
+      }
+    },
+    "Wagon": {
+      "name": "Wagon"
+    },
+    "Hillcross Glider": {
+      "name": "Hillcross Glider",
+      "items": {
+        "Starting Drop": {
+          "name": "Starting Drop",
+          "description": "<p>The only way to launch a Hillcross glider is to jump off a steep incline with favorable wind conditions. The glider is uncontrolled and falls 60 feet each round until the pilot successfully @Compendium[pf2e.actionspf2e.yh9O9BQjwWrAIiuf]{Takes Control}. If the glider hits the ground before the pilot Takes Control, the pilot and the glider both take falling damage.</p>"
+        }
+      }
+    },
+    "Airship": {
+      "name": "Airship",
+      "items": {
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>This vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        }
+      }
+    },
+    "Snail Coach": {
+      "name": "Snail Coach",
+      "items": {
+        "Adhesive Secretions": {
+          "name": "Adhesive Secretions",
+          "description": "<p>This vehicle secretes an alchemical adhesive that allows it to stick to and climb up solid surfaces. Spaces the snail coach moves through become difficult terrain for 1 round. Any creature that ends their turn on the adhesive must succeed at a @Check[type:reflex|dc:23|name:Avoid adhesive] or take a -10-foot status penalty to its Speeds for 1 round. On a critical failure, the creature is also @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round (@Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC 23).</p>"
+        }
+      }
+    },
+    "Chariot, Light": {
+      "name": "Chariot, Light"
+    },
+    "Sleigh": {
+      "name": "Sleigh",
+      "items": {
+        "Ice Traverser": {
+          "name": "Ice Traverser",
+          "description": "<p>Ice and snow are not difficult terrain to a sleigh, but all other terrains are difficult terrain for it.</p>"
+        },
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>This vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        }
+      }
+    },
+    "Armored Carriage": {
+      "name": "Armored Carriage",
+      "items": {
+        "Weapon Mount": {
+          "name": "Weapon Mount",
+          "description": "<p>This vehicle has one rear weapon mount that can be equipped with a ranged weapon. At purchase, this weapon mount is empty. Installing or uninstalling a weapon into this mount requires 10 minutes, a successful @Check[type:crafting|dc:20|name:Attach weapon], as well as an appropriate weapon to install.</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 20, standby</p>"
+        }
+      }
+    },
+    "Velocipede": {
+      "name": "Velocipede",
+      "items": {
+        "Fragile": {
+          "name": "Fragile",
+          "description": "<p>Driving the velocipede over difficult terrain increases the DC by an additional 2 and gains the reckless trait.</p>"
+        },
+        "Portable": {
+          "name": "Portable",
+          "description": "<p>The velocipede can be pulled along the ground on its wheel by a Medium creature. The creature is encumbered when doing so.</p>"
+        }
+      }
+    },
+    "Sky Chariot, Heavy": {
+      "name": "Sky Chariot, Heavy"
+    },
+    "Vonthos's Golden Bridge": {
+      "name": "Vonthos's Golden Bridge",
+      "items": {
+        "Captivating Wealth": {
+          "name": "Captivating Wealth",
+          "description": "<p>@Template[type:emanation|distance:40]{40 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The gold, gems, and other embellishments that adorn this flying sphere emit a sparkling resplendence capable of enthralling creatures. Each creature that begins its turn within the aura must attempt a @Check[type:will|dc:36|traits:magic]; on a failure, the creature is @Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} and @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for as long as it remains within the aura. A creature that succeeds is temporarily immune for 1 hour. Each time Prismatic Defense is activated, the area of Captivating Wealth is reduced by 10 feet for 1 hour, to a minimum of 0 feet.</p>"
+        },
+        "Protective Barrier": {
+          "name": "Protective Barrier",
+          "description": "<p>While the swirling rings of the vehicle don't fully cover the pilot, they offer incredible protection, magically maintaining the temperature within and ablating physical attacks. The pilot is protected from severe cold, severe heat, extreme cold, and extreme heat. The pilot also gains resistance 10 to all physical damage (except adamantine).</p>"
+        },
+        "Prismatic Defense": {
+          "name": "Prismatic Defense",
+          "description": "<p>The pilot harnesses power from the magical gemstones hidden among this vehicle's extravagant embellishments to grant the vehicle additional defenses. This vehicle gains resistance 20 to one of the following energy damage types: acid, cold, electricity, fire, force, or sonic. This immunity lasts until Prismatic Defense is next activated.</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 37, standby</p>"
+        }
+      }
+    },
+    "Clockwork Borer": {
+      "name": "Clockwork Borer",
+      "items": {
+        "Adamantine Drill": {
+          "name": "Adamantine Drill",
+          "description": "<p>While most burrow Speeds only allow a creature or vehicle to move through loose dirt or earth, this vehicle is equipped with an adamantine drill and can burrow through bedrock and stone at a rate of 5 feet per minute.</p>"
+        },
+        "Pivoting Seats": {
+          "name": "Pivoting Seats",
+          "description": "<p>This vehicle's seats are mounted on a weighted platform that pivots as the vehicle moves, automatically adjusting position with gravity. Seated creatures remain upright no matter the position or angle of the vehicle.</p>"
+        },
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>Because it is sluggish, this vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 26, standby</p>"
+        }
+      }
+    },
+    "Clockwork Bumblebee": {
+      "name": "Clockwork Bumblebee",
+      "items": {
+        "Wind Up": {
+          "name": "Wind Up",
+          "description": "<p>(10-minute wind, 10-minute operation, DC 26, standby)</p>\n<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
+        }
+      }
+    },
+    "Apparatus of the Octopus": {
+      "name": "Apparatus of the Octopus",
+      "items": {
+        "Manipulate Hands": {
+          "name": "Manipulate Hands",
+          "description": "<p>A crew member operates a lever set up like a joystick, allowing that crew member to extend and manipulate the apparatus's hands. While the hands can't attack and can't perform fine actions such as @Compendium[pf2e.actionspf2e.cYdz2grcOcRt4jk6]{Disable Device}, @Compendium[pf2e.actionspf2e.RDXXE7wMrSPCLv5k]{Steal} something, or opening the stopper on a potion bottle, but they can grasp and hold up to 50 Bulk.</p>"
+        },
+        "Open Eyes": {
+          "name": "Open Eyes",
+          "description": "<p>A crew member pulls a lever to open the apparatus's eyes, which shine bright light within 20 feet and dim light for the next 20 feet. A crew member can take this action again to close the eyes.</p>"
+        },
+        "Open Portholes": {
+          "name": "Open Portholes",
+          "description": "<p>A crew member pulls a lever to open two portholes, allowing the crew to see outside the apparatus and other creatures to see into it. A crew member can take this action again to close the portholes.</p>"
+        },
+        "Submersible": {
+          "name": "Submersible",
+          "description": "<p>The apparatus of the octopus can protect its crew and passengers from water pressure to a maximum depth of 5,000 feet and contains enough air for 12 hours for a pilot alone or 6 hours for a pilot and passenger or crew member.</p>"
+        }
+      }
+    },
+    "Titanic Stomper": {
+      "name": "Titanic Stomper",
+      "items": {
+        "Bolt Blast": {
+          "name": "Bolt Blast",
+          "description": "<p>Two crew members each perform a three-action activity on their turn to fire a line of lightning at the end of the second character's turn. This line of lightning erupts from the front of the titanic stomper at an angle of the crew members' choice and deals [[/r {5d12}[electricity]]]{5d12 Electricity Damage} to each creature in a 120-foot line (@Check[type:reflex|dc:34|basic:true|name:Avoid the blast]). The Bolt Blast stops working if the titanic stomper is @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Broken}.</p>"
+        },
+        "Electrical Absorption": {
+          "name": "Electrical Absorption",
+          "description": "<p><strong>Trigger</strong> The titanic stomper is targeted by, or in the area of, an effect that deals electricity damage</p>\n<hr />\n<p><strong>Effect</strong> The pilot uses their reaction to activate the Stasian coils, which funnels the electricity into the titanic stomper's electrical engine. The next time Bolt Blast is used within the next minute, the damage it deals increases to [[/r {7d12}[electricity]]]{7d12 Electricity Damage}.</p>"
+        },
+        "Quaking Step": {
+          "name": "Quaking Step",
+          "description": "<p>The ground shakes with every step a titanic stomper takes. Whenever this vehicle moves, creatures on the ground within 20 feet of its movement path must attempt a @Check[type:reflex|dc:32|name:Stay standing]. On a failure, they are @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round, and on a critical failure, they're knocked @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+        }
+      }
+    },
+    "Automated Cycle": {
+      "name": "Automated Cycle",
+      "items": {
+        "Sidecars": {
+          "name": "Sidecars",
+          "description": "<p>Each of the two sidecars can hold 1 passenger or 10 Bulk. The automated cycle's Speed is reduced by 5 feet for each sidecar that contains a passenger or cargo.</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 14, standby</p>"
+        }
+      }
+    },
+    "Clockwork Castle": {
+      "name": "Clockwork Castle",
+      "items": {
+        "Environmental Protections": {
+          "name": "Environmental Protections",
+          "description": "<p>This vehicle's interior temperature is magically maintained. Creatures inside this vehicle are protected from severe cold, severe heat, extreme cold, and extreme heat.</p>"
+        },
+        "Luxurious Accommodations": {
+          "name": "Luxurious Accommodations",
+          "description": "<p>This vehicle contains a bridge, engineering room, private sleeping quarters for up to 13 creatures, and four additional rooms (typically a dining room, kitchen, lavatory, and meeting room).</p>"
+        },
+        "Maneuverable": {
+          "name": "Maneuverable",
+          "description": "<p>This vehicle is mounted on ten spider-like legs that enable it to turn swiftly, turn in place, and even move backward. Each 90-degree turn made in less than a vehicle length costs 5 extra feet of movement; so, for example, it costs 10 feet of movement for the vehicle to turn around and begin moving backward. This vehicle loses these benefits when @Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{Broken}.</p>"
+        },
+        "Weapon Mounts": {
+          "name": "Weapon Mounts",
+          "description": "<p>This vehicle has four rooftop weapon mounts; one mount on each corner of the vehicle. At purchase, these weapon mounts are initially empty. Installing or uninstalling a weapon into a weapon mount requires 10 minutes, a successful @Check[type:crafting|dc:35|name:Attach a weapon], and an appropriate weapon. Three of these weapon mounts can be equipped with ranged weapons, and the fourth can be equipped with a ranged siege weapon of size Large or smaller.</p>"
+        },
+        "Skewering Step": {
+          "name": "Skewering Step",
+          "description": "<p>Two crew members each perform a 3-action activity on their turn to skewer nearby enemies with the clockwork castle's legs. All creatures under or adjacent to the vehicle at the end of the second character's turn take [[/r {7d8}[piercing]]]{7d8 Piercing Damage} (@Check[type:reflex|dc:35|basic:true|name:Avoid leg]).</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 35, standby</p>"
+        }
+      }
+    },
+    "Rowboat": {
+      "name": "Rowboat",
+      "items": {
+        "Portaged": {
+          "name": "Portaged",
+          "description": "<p>The rowboat can be carried overland by 2 Medium creatures or 1 Large creature. Those creatures are encumbered when doing so.</p>"
+        }
+      }
+    },
+    "Cart": {
+      "name": "Cart"
+    },
+    "Cliff Crawler": {
+      "name": "Cliff Crawler",
+      "items": {
+        "Mountain Traverser": {
+          "name": "Mountain Traverser",
+          "description": "<p>Rocks and stones aren't difficult terrain to a cliff crawler, and it can traverse most vertical rock and stone surfaces at up to half its Speed.</p>"
+        }
+      }
+    },
+    "Glider": {
+      "name": "Glider",
+      "items": {
+        "Starting Drop": {
+          "name": "Starting Drop",
+          "description": "<p>The only way to launch a glider is to jump off a steep incline with favorable wind conditions. The glider is uncontrolled and falls 60 feet each round until the pilot successfully Takes Control. If the glider hits the ground before the pilot successfully @Compendium[pf2e.actionspf2e.yh9O9BQjwWrAIiuf]{Takes Control}, the pilot and the glider each take falling damage.</p>"
+        }
+      }
+    },
+    "Steam Trolley": {
+      "name": "Steam Trolley"
+    },
+    "Bone Ship": {
+      "name": "Bone Ship"
+    },
+    "Steam Giant": {
+      "name": "Steam Giant",
+      "items": {
+        "Flame Jet": {
+          "name": "Flame Jet",
+          "description": "<p>Two crew members each perform a 3-action activity on their turn to produce a gout of flames that erupts at the end of the second character's turn from any corner of any space the steam giant occupies. The flames deal [[/r {6d8}[fire]]]{6d8 fire damage} to each creature in a 30-foot cone (@Check[type:reflex|dc:32|basic:true] save). The flame jet stops working if the steam giant is broken.</p>"
+        }
+      }
+    },
+    "Ambling Surveyor": {
+      "name": "Ambling Surveyor",
+      "items": {
+        "Continous Track": {
+          "name": "Continous Track",
+          "description": "<p>This vehicle travels on a continuous band of heavy treads driven by a series of gears and wheels, enabling it to travel over rugged land with ease. Earth, rock, rubble, slopes, and underbrush are not difficult terrain to an ambling surveyor. The ambling surveyor ignores difficult terrain from earth, rock, rubble, slopes, and underbrush, and greater difficult terrain caused by those features is normal difficult terrain to the ambling surveyor.</p>"
+        },
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>This vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        },
+        "Survey": {
+          "name": "Survey",
+          "description": "<p><strong>Requirements</strong> The ambling surveyor is not in motion</p>\n<hr />\n<p><strong>Effect</strong> The pilot and crew release a collection of six clockwork birds, which spend two hours flying over the surrounding area within a 1-mile radius around the ambling surveyor. Everything the birds see is magically transmitted back to the ambling surveyor's crew as illusory images, which the crew must catalogue in real-time if they want to use the information to fully survey the area and create a map. After two hours, the birds return. The birds use the base statistics of a @Compendium[pf2e.pathfinder-bestiary-3.cKZtOsBlN3Qu8Kyq]{Clockwork Spy} if they are attacked, or if their Perception is important to determine what they can see, although they only perform the Survey action and they don't have any of the other abilities of a clockwork spy. Replacement birds cost 250 gp each.</p>"
+        },
+        "Wind-Up": {
+          "name": "Wind-Up",
+          "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 32, standby</p>"
+        }
+      }
+    },
+    "Sky Chariot, Medium": {
+      "name": "Sky Chariot, Medium"
+    },
+    "Sand Diver": {
+      "name": "Sand Diver",
+      "items": {
+        "Shard Trail": {
+          "name": "Shard Trail",
+          "description": "<p>A sand diver can only @Compendium[pf2e.actionspf2e.H6v1VgowHaKHnVlG]{Burrow} through sand, using the heat and flame from its alchemical core to slowly dig its way through. The alchemical fumes left behind become trapped belowground as it Burrows, temporarily catalyzing fragments of sand into a glass-like byproduct. Creatures that Burrow through a space this vehicle has Burrowed through within the last 24 hours take [[/r {1d12}[piercing]]]{1d12 Piercing Damage} from the shards (@Check[type:fortitude|dc:17|basic:true|name:Avoid shards]). A creature that continues Burrowing through a stretch of the same space the sand diver recently Burrowed through must continue to attempt this save the first time each round that it Burrows through the shards.</p>"
+        },
+        "Sluggish": {
+          "name": "Sluggish",
+          "description": "<p>This vehicle must move twice its length for each 90-degree turn it makes.</p>"
+        }
+      }
+    },
+    "Adaptable Paddleboat": {
+      "name": "Adaptable Paddleboat",
+      "items": {
+        "Deploy Wheels": {
+          "name": "Deploy Wheels",
+          "description": "<p>The pilot engages a lever that activates the clockwork components to transform the adaptable paddleboat's waterwheels into wheels for rolling along the ground. This grants the adaptable paddleboat Speed 20 feet and reduces its swim Speed to 5 feet. This transformation lasts until the pilot disengages the wheels by using this activity again.</p>"
+        },
+        "Wind-UP": {
+          "name": "Wind-UP",
+          "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 16, standby</p>"
+        }
+      }
+    },
+    "Mobile Inn": {
+      "name": "Mobile Inn"
+    }
+  }
+}
