@@ -58,7 +58,6 @@ jobs:
           echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
 
       - name: Cache pnpm Deps
-        id: cache-pnpm
         uses: actions/cache@v3
         with:
           path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
@@ -67,7 +66,6 @@ jobs:
             pnpm-store-
 
       - name: Install pnpm Deps
-        if: ${{ steps.cache-pnpm.outputs.cache-hit != 'true' }}
         working-directory: ./main
         run: pnpm install
 
