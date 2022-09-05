@@ -1,0 +1,85 @@
+name: Main
+
+on:
+  workflow_dispatch:
+    branches: [main]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: FVTTPF2E - Checkout
+        uses: actions/checkout@v3
+        with:
+          repository: foundryvtt/pf2e
+          path: system
+
+      - name: FVTTPF2E - Cache NPM Deps
+        id: cache-npm
+        uses: actions/cache@v3
+        with:
+          path: system/node_modules/
+          key: npm-${{ hashFiles('system/package-lock.json') }}
+
+      - name: FVTTPF2E - Install NPM Deps
+        if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        working-directory: ./system
+        run: npm ci
+
+      - name: FVTTPF2E - Cache Packs
+        id: cache-packs
+        uses: actions/cache@v3
+        with:
+          path: system/packs/
+          key: packs-${{ hashFiles('system/packs/**/*') }}
+
+      - name: FVTTPF2E - Build Packs
+        if: ${{ steps.cache-packs.outputs.cache-hit != 'true' }}
+        working-directory: ./system
+        run: npm run build:packs
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          path: main
+
+      - name: Get pnpm Store Directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - name: Cache pnpm Deps
+        id: cache-pnpm
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: pnpm-store-${{ hashFiles('main/pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-store-
+
+      - name: Install pnpm Deps
+        if: ${{ steps.cache-pnpm.outputs.cache-hit != 'true' }}
+        working-directory: ./main
+        run: pnpm install
+
+      - name: Build
+        working-directory: ./main
+        run: pnpm run build
+
+       - name: Update Repo
+         working-directory: ./main
+         run: |
+           git config user.name github-actions
+           git config user.email github-actions@github.com
+           git add .
+           git commit -m "generated"
+           git push
