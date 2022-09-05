@@ -39,8 +39,8 @@ jobs:
         id: cache-packs
         uses: actions/cache@v3
         with:
-          path: system/packs/
-          key: packs-${{ hashFiles('system/packs/**/*') }}
+          path: system/static/packs/
+          key: pf-packs-${{ hashFiles('system/packs/**/*') }}
 
       - name: FVTTPF2E - Build Packs
         if: ${{ steps.cache-packs.outputs.cache-hit != 'true' }}
