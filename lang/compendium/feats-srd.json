@@ -10433,7 +10433,7 @@
     },
     "Ferocious Gust": {
       "name": "Ferocious Gust",
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>With heavy wing beats, you whip up a furious gust and direct it at your opponents. This air blast has the effects of <em>@Compendium[pf2e.spells-srd.g8QqHpv2CWDwmIm1]{Gust of Wind}</em> with a DC equal to your class DC or spell DC, whichever is higher.</p>"
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>With heavy wing beats, you whip up a furious gust and direct it at your opponents. This air blast has the effects of <em>@Compendium[pf2e.spells-srd.g8QqHpv2CWDwmIm1]{Gust of Wind}</em> with a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:air]{fortitude DC} equal to your class DC or spell DC, whichever is higher.</p>"
     },
     "Suspect of Opportunity": {
       "name": "Suspect of Opportunity",
@@ -11424,10 +11424,6 @@
         "2": "lawful evil alignment",
         "3": "member of the Red Mantis assassins"
       }
-    },
-    "Fledgling Flight": {
-      "name": "Fledgling Flight",
-      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>You can fly through the air in short bursts at half your land Speed. If you don't end your movement on solid ground, you fall at the end of your turn.</p>"
     },
     "Goblin Scuttle": {
       "name": "Goblin Scuttle",
@@ -19228,7 +19224,7 @@
     },
     "Juvenile Flight": {
       "name": "Juvenile Flight",
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You unfold your wings for travel and can keep them unfolded for 10 minutes. You gain a fly Speed equal to your land Speed while your wings are unfurled. If you have Fledgling Flight, you gain a +10-foot status bonus to your fly Speed with Juvenile Flight. As normal, since your fly Speed is derived from your land Speed, this status bonus isn't cumulative with a status bonus to your land Speed, if you have one.</p>"
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You unfold your wings for travel and can keep them unfolded for 10 minutes. You gain a fly Speed equal to your land Speed while your wings are unfurled. If you have @UUID[Compendium.pf2e.feats-srd.UuVz1QY7QXD5cnLu]{Fledgling Flight}, you gain a +10-foot status bonus to your fly Speed with Juvenile Flight. As normal, since your fly Speed is derived from your land Speed, this status bonus isn't cumulative with a status bonus to your land Speed, if you have one.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.0JrHvdUgJBl631En]{Effect: Juvenile Flight}</p>"
     },
     "Lich Dedication": {
       "name": "Lich Dedication",
@@ -21769,7 +21765,7 @@
     },
     "Strix Vengeance": {
       "name": "Strix Vengeance",
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> You, or a strix ally you can see, are damaged by an enemy's critical hit.</p>\n<hr />\n<p>You dedicate yourself to destroying those who harm your kin. Until the end of your next turn, you deal an additional +1d6 damage on Strikes against the triggering enemy. The bonus increases to +2d6 if you use a @Compendium[pf2e.equipment-srd.DxCuJKynlnMQZHgp]{Striking} weapon or unarmed attack and +3d6 if you use a @Compendium[pf2e.equipment-srd.woxl2FrrgAcJDu0t]{Striking (Major)} weapon or unarmed attack.</p>"
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> You, or a strix ally you can see, are damaged by an enemy's critical hit.</p>\n<hr />\n<p>You dedicate yourself to destroying those who harm your kin. Until the end of your next turn, you deal an additional [[/r 1d6]]{+1d6 damage} on Strikes against the triggering enemy. The bonus increases to [[/r 2d6]]{+2d6 damage} if you use a Striking weapon or unarmed attack and [[/r 3d6]]{+3d6 damage} if you use a Striking (Major) weapon or unarmed attack.</p>"
     },
     "Aura Of Despair": {
       "name": "Aura Of Despair",
