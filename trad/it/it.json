@@ -1491,7 +1491,16 @@
                     "bomb": "Aumenta il raggio del danno ad area della bomba (se ne ha uno) a 3 metri.",
                     "club": "Scagli il bersaglio lontano da te fino a 3 metri (scegli tu la distanza). Si tratta di un movimento forzato.",
                     "dart": "Il bersaglio subisce @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Ottieni bonus di oggetto per questo Danno da Sanguinamento pari al bonus di oggetto dell'arma ai Tiri per Colpire.",
-                    "knife": "Il bersaglio subisce @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Ottieni bonus di oggetto per questo Danno da Sanguinamento pari al bonus di oggetto dell'arma ai Tiri per Colpire."
+                    "knife": "Il bersaglio subisce @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Ottieni bonus di oggetto per questo Danno da Sanguinamento pari al bonus di oggetto dell'arma ai Tiri per Colpire.",
+                    "shield": "Respingi indietro il bersaglio di 1,5 metri. Si tratta di un movimento forzato.",
+                    "sling": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|basic:true|name:Specializzazione del Critico Fionda|showDC:all] o essere @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 1}.",
+                    "sword": "Il bersaglio viene sbilanciato dal tuo attacco, divenendo @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} fino all'inizio del tuo prossimo turno.",
+                    "brawling": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|basic:true|name:Specializzazione del Critico Rissa|showDC:all] o essere @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno.",
+                    "flail": "Il bersaglio viene scagliato a terra @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{prono}.",
+                    "hammer": "Il bersaglio viene scagliato a terra @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{prono}.",
+                    "pick": "L'arma trafigge brutalmente il bersaglio che subisce 2 danni aggiuntivi per dado di danno dell'arma.",
+                    "polearm": "Il bersaglio, viene mosso di 1,5 metri in una direzione a tua scelta. Si tratta di un movimento forzato.",
+                    "spear": "L'arma perfora il bersaglio, indebolendone gli attacchi. Il bersaglio è @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1} fino all'inizio del tuo prossimo turno."
                 },
                 "GeneratedName": {
                     "PotencyStrikingThreeProperties": "{base} {striking} {property1} {property2} {property3} +{potency}",
@@ -1541,7 +1550,8 @@
                 },
                 "NoRangeMelee": "Nessuno (Mischia)",
                 "RangeIncrementN": {
-                    "Label": "Incremento di Gittata {range}m"
+                    "Label": "Incremento di Gittata {range}m",
+                    "Hint": "Le armi a distanza e da lancio hanno un incremento di gittata. Gli attacchi con queste armi funzionano normalmente fino a tale distanza. I tiri per colpire oltre l'incremento di gittata dell'arma subiscono penalità -2 per ogni multiplo aggiuntivo di tale incremento tra te e il bersaglio. Gli attacchi oltre il sesto incremento di gittata sono impossibili."
                 },
                 "ReloadOneMinute": "1 min",
                 "SpecificMagicWeapon": {
@@ -1681,7 +1691,8 @@
                         "Description": "Controlli elettricità, tuoni e tempeste."
                     },
                     "Luck": {
-                        "Label": "Fortuna"
+                        "Label": "Fortuna",
+                        "Description": "Sei incredibilmente fortunato e scansi ogni pericolo."
                     },
                     "Magic": {
                         "Label": "Magia",
@@ -1869,7 +1880,9 @@
                         "ring": "Anello",
                         "saddle": "Sella",
                         "shoes": "Scarpe",
-                        "wrist": "Ai Polsi"
+                        "wrist": "Ai Polsi",
+                        "clothing": "Vestito",
+                        "crown": "Corona"
                     },
                     "WornParenthetical": "Indossato ({where})"
                 },
@@ -1879,7 +1892,8 @@
                     "Label": "Tratti Aggiuntivi",
                     "Hint": "Questi sono i tratti che indicano classificazioni nelle regole di Seconda Edizione a cui mancano definizioni esplicite ma sono comunque molto usati. Alcuni potrebbero essere aggiunti automaticamente quando altre proprietà sono presenti."
                 },
-                "Broken": "Rotto"
+                "Broken": "Rotto",
+                "Destroyed": "Distrutto"
             },
             "Activation": {
                 "Label": "Attivazione",
@@ -1911,7 +1925,11 @@
                     "StartOfTurn": "All'Inizio del Turno",
                     "EndOfTurn": "Alla Fine del Turno"
                 },
-                "ShowTokenIcon": "Mostra l'icona del token?"
+                "ShowTokenIcon": "Mostra l'icona del token?",
+                "AddBadge": "Aggiungi Contatore",
+                "BadgeType": {
+                    "Counter": "Contatore"
+                }
             },
             "Feat": {
                 "OnlyLevel1": "Deve essere selezionato al 1° livello",
@@ -1926,7 +1944,11 @@
                 "Warning": {
                     "TakenAfterLevel1": "{item} deve essere selezionato al 1° livello, ma {actor} è al {actorLevel}°.",
                     "TakenMoreThanOnce": "{item} può essere selezionato una sola volta, ma {actor} l'ha selezionato una volta aggiuntiva.",
-                    "TakenMoreThanMax": "{item} può essere selezionato {maxTaken} volte, ma {actor} l'ha selezionato {timesTaken} volte."
+                    "TakenMoreThanMax": "{item} può essere selezionato {maxTaken} volte, ma {actor} l'ha selezionato {timesTaken} volte.",
+                    "InvalidCategory": "Impossibile aggiungere talento \"{item}\" a {category}: tipo talento non valido."
+                },
+                "Info": {
+                    "Added": "{item} è stato aggiunto a {category}."
                 }
             },
             "Heritage": {
@@ -1948,6 +1970,9 @@
                     "SelectVariantLabel": "Seleziona Variante",
                     "SelectOtherVariantLabel": "Seleziona Altra Variante",
                     "SheetTitle": "{originalName} (Variante)"
+                },
+                "Warning": {
+                    "InvalidLevel": "Si è provato ad aggiungere l'incantesimo {name} a {targetLevel}, ma l'incantesimo è {baseLevel}."
                 }
             },
             "Rules": {
@@ -5443,7 +5468,8 @@
         },
         "AreaTypeCube": "Cubo",
         "AreaTypeSquare": "Quadretto",
-        "AreaSizeQuarterMile": "400 metri"
+        "AreaSizeQuarterMile": "400 metri",
+        "LevelRange": "Livelli {minLevel} - {level}"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
@@ -5509,5 +5535,9 @@
         "AdjustSceneDarkness": "Aggiusta Oscurità Scena",
         "EffectPanel": "Pannello Effetti",
         "WorldClock": "Orario Mondo"
+    },
+    "DOCUMENT": {
+        "Combat": "Incontro",
+        "Combats": "Incontri"
     }
 }
