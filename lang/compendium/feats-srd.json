@@ -10128,6 +10128,13 @@
         "0": "Predictive Purchase"
       }
     },
+    "Supreme Psychic Center": {
+      "name": "Supreme Psychic Center",
+      "description": "<p><strong>Trigger</strong> Your turn in a psychic duel begins.</p>\n<hr />\n<p>With the merest thought, you realign your mental defenses to your duel's circumstances. You @Compendium[pf2e.actionspf2e.5p2AMqM9bOVnhwPT]{Recenter}.</p>",
+      "featPrerequisites": {
+        "0": "Psychic Duelist Dedication"
+      }
+    },
     "Supernatural Charm": {
       "name": "Supernatural Charm",
       "description": "<p>The elven magic in your blood manifests as a force you can use to become more appealing or alluring. You can cast 1st-level <em>@Compendium[pf2e.spells-srd.vLA0q0WOK2YPuJs6]{Charm}</em> as an arcane innate spell once per day.</p>"
@@ -19968,6 +19975,13 @@
         "1": "Animal Trainer Dedication"
       }
     },
+    "Instigate Psychic Duel": {
+      "name": "Instigate Psychic Duel",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You attempt to enter a psychic duel with a creature within 100 feet. The target can attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against the higher of your spell DC or class DC. If it enters the duel willingly, use the result for a critical failure.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The two of you enter a psychic duel, but it ends automatically at the end of your next turn. As normal for a psychic duel, the duel ends if one participant is knocked out, as well as under any other conditions to which both participants agree. If you're in initiative when you Instigate the Psychic Duel, you keep the same initiative positions. You can each choose a psychic center for any skill in which you're trained, as you would if you were using that skill to roll initiative for the duel.</p>\n<p><strong>Failure</strong> As a success, except instead of ending at the end of your next turn, the target can attempt a new save to end the duel at the end of each of your turns, starting with your next turn.</p>\n<p><strong>Critical Failure</strong> As a success, except the duel doesn't end until it reaches one of the normal end conditions for a psychic duel.</p>",
+      "featPrerequisites": {
+        "0": "Psychic Duelist Dedication"
+      }
+    },
     "Stave off Catastrophe": {
       "name": "Stave off Catastrophe",
       "description": "<p>You fully protect your allies from the worst blows. When you use the Shoulder Catastrophe reaction, you can choose to take the full critical damage and effects from the attack, including effects that apply on a critical hit, and have your ally take no damage and avoid the attack's effects.</p>",
@@ -21429,6 +21443,13 @@
         "0": "Bright Lion Dedication"
       }
     },
+    "Duel Spell Advantage": {
+      "name": "Duel Spell Advantage",
+      "description": "<p>When you start a psychic duel, you gain a third natural psychic spell. You can't choose the same spell twice.</p>\n<p>If you're 9th level or higher, add the following spells to the list of natural psychic spells you can choose:</p>\n<ul>\n<li><em>@Compendium[pf2e.spells-srd.LiGbewa9pO0yjbsY]{Confusion}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.GaRQlC9Yw1BGKHfN]{Crushing Despair}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.U58aQWJ47VrI36yP]{Hallucination}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.qwlh6aDgi86U3Q7H]{Suggestion}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.BilnTGuXrof9Dt9D]{Synaptic Pulse}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.OAt2ZEns1gIOCgrn]{Synesthesia}</em></li>\n</ul>",
+      "featPrerequisites": {
+        "0": "Psychic Duelist Dedication"
+      }
+    },
     "Celestial Wings": {
       "name": "Celestial Wings",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>With effort, you can call forth magical wings from your back, similar in appearance to those of your celestial forebears. These wings remain for 10 minutes. You gain a fly Speed equal to your Speed while you've manifested your wings.</p>\n<p>@Compendium[pf2e.feat-effects.HfXGhXc9D120gvl5]{Effect: Celestial Wings}</p>"
@@ -21958,6 +21979,14 @@
     "High-Speed Regeneration": {
       "name": "High-Speed Regeneration",
       "description": "<p><strong>Trigger</strong> Your turn begins.</p>\n<hr />\n<p>Your wounds knit together with barely a thought. You regain [[{2*@actor.level}[Healing]]]{Hit Points equal to double your level}. When you gain this deviation, the GM secretly selects one type of energy damage or precious material, such as fire or cold iron. When you take damage of that type, your wound smokes until the end of your next turn, preventing you from using High-Speed Regeneration.</p>\n<hr />\n<p><strong>Awakening</strong> Your regeneration can automatically save you from the brink of death. Once per day, you can use High-Speed Regeneration when your Hit Points would be reduced to 0 instead of the usual trigger. You avoid being knocked out and remain at the number of HP you regained.</p>\n<hr />\n<p><strong>Awakening</strong> Regrowth invigorates you. You gain a +10-foot status bonus to your Speed until the end of your turn.</p>"
+    },
+    "Psychic Duelist Dedication": {
+      "name": "Psychic Duelist Dedication",
+      "description": "<p>Through experience and in-depth visualizations of mental battles, you've grown adept at psychic duels. You gain a +2 circumstance bonus to your initiative rolls for psychic duels. Each time you enter a psychic duel, choose one of the following benefits for the duration of that duel.</p>\n<ul>\n<li><strong>Mind Mace</strong> You gain a status bonus to mental damage with spells you cast equal to the spell's level.</li>\n<li><strong>Psychic Fist</strong> You can use your standard ability modifier for Strike damage instead of your highest mental modifier, and you can use your full AC instead of using your Will DC in place of your AC.</li>\n</ul>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the psychic duelist archetype.</p>",
+      "featPrerequisites": {
+        "0": "trained in Occultism",
+        "1": "you have been in a psychic\r\nduel"
+      }
     },
     "Craft Facsimile": {
       "name": "Craft Facsimile",
