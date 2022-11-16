@@ -249,6 +249,10 @@
       "name": "Invoke Celestial Privilege",
       "description": "<p><strong>Trigger</strong> You attempt a saving throw against a divine effect, but you haven't rolled yet.</p>\n<hr />\n<p>You rise above the triggering effect, refusing to be harmed by it. You gain a +1 circumstance bonus to the triggering saving throw and to any other saving throws you attempt against divine effects until the start of your next turn.</p>"
     },
+    "Venom Draw": {
+      "name": "Venom Draw",
+      "description": "<p><strong>Requirements</strong> Your @UUID[Compendium.pf2e.actionspf2e.s4V7JWSMF9JPJAeX]{Envenom} action hasn't been expended.</p>\n<hr />\n<p>You quickly envenom poisonous saliva on your weapon as you draw it. Interact to draw a weapon, and then Envenom it. This uses up your daily use of Envenom.</p>"
+    },
     "Gossip": {
       "name": "Gossip",
       "description": "<p>You seek out rumors about the infiltration's target. Attempt a normal, hard, or very hard Diplomacy check.</p>\n<hr />\n<p><strong>Critical Success</strong> You gain inside information about the location or group you're trying to infiltrate. This grants you a +2 circumstance bonus to future checks you attempt for preparation activities for this infiltration. If you share this information, those you share it with also gain this bonus.</p>\n<p><strong>Success</strong> You gain inside information about the place or group you're attempting to infiltrate that aids your planning.</p>\n<p><strong>Failure</strong> You learn nothing.</p>\n<p><strong>Critical Failure</strong> You hear a few mistaken rumors and take a -2 circumstance penalty to your next check for a preparation activity. Word spreads around that you're asking after that group or individual, increasing your Awareness Points by 1.</p>"
@@ -296,6 +300,10 @@
     "Request": {
       "name": "Request",
       "description": "<p>You can make a request of a creature that's friendly or helpful to you. You must couch the request in terms that the target would accept given their current attitude toward you. The GM sets the DC of the <span data-pf2-action=\"request\" data-pf2-glyph=\"A\">Diplomacy</span> check based on the difficulty of the request. Some requests are unsavory or impossible, and even a helpful NPC would never agree to them.</p>\n<hr />\n<p><strong>Critical Success</strong> The target agrees to your request without qualifications.</p>\n<p><strong>Success</strong> The target agrees to your request, but they might demand added provisions or alterations to the request.</p>\n<p><strong>Failure</strong> The target refuses the request, though they might propose an alternative that is less extreme.</p>\n<p><strong>Critical Failure</strong> Not only does the target refuse the request, but their attitude toward you decreases by one step due to the temerity of the request.</p>"
+    },
+    "Spring the Trap": {
+      "name": "Spring the Trap",
+      "description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<hr />\n<p>You can Interact to draw a combination weapon and set it to melee or ranged mode. On your first turn, your movement and ranged attacks don't trigger reactions that are normally triggered by movement or a ranged attack (such as Attack of Opportunity).</p>"
     },
     "Eldritch Shot": {
       "name": "Eldritch Shot",
@@ -521,6 +529,10 @@
       "name": "Administer First Aid",
       "description": "<p><strong>Requirements</strong> You're wearing or holding @UUID[Compendium.pf2e.equipment-srd.s1vB3HdXjMigYAnY]{Healer's Tools}</p>\n<hr />\n<p>You perform first aid on an adjacent creature that is @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying} or @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Bleeding}. If a creature is both dying and bleeding, choose which ailment you're trying to treat before you roll. You can Administer First Aid again to attempt to remedy the other effect.</p>\n<ul>\n<li><strong>Stabilize</strong> Attempt a Medicine check on a creature that has 0 Hit Points and the dying condition. The DC is equal to 5 + that creature's recovery roll DC (typically 15 + its dying value).</li>\n<li><strong>Stop Bleeding</strong> Attempt a Medicine check on a creature that is taking persistent bleed damage, giving them a chance to make another flat check to remove the persistent damage. The DC is usually the DC of the effect that caused the bleed.</li>\n</ul>\n<hr />\n<p><strong>Success</strong> If you're trying to stabilize, the creature loses the dying condition (but remains @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}). If you're trying to stop bleeding, the creature attempts a flat check to end the bleeding.</p>\n<p><strong>Critical Failure</strong> If you were trying to stabilize, the creature's dying value increases by 1. If you were trying to stop bleeding, it immediately takes an amount of damage equal to its persistent bleed damage.</p>"
     },
+    "Raise Neck": {
+      "name": "Raise Neck",
+      "description": "<p>You raise your head into a striking position. The fangs Strike granted by your nagaji ancestry gains a reach of 10 feet until the end of your turn.</p>"
+    },
     "Gain Contact": {
       "name": "Gain Contact",
       "description": "<p>You try to make contact with an individual who can aid you in the infiltration. Attempt a normal, hard, or very hard DC Diplomacy or Society check, or a check using a Lore skill appropriate to your prospective contact.</p>\n<hr />\n<p><strong>Success</strong> You make contact and gain 1 EP.</p>\n<p><strong>Failure</strong> You fail to make contact.</p>\n<p><strong>Critical Failure</strong> You insult or spook the contact in some way. Future attempts take a -2 circumstance penalty.</p>\n<hr />\n<p><strong>Special</strong> Multiple critical failures might cause the contact to work against the PCs in some way, likely increasing the party's Awareness Points.</p>"
@@ -544,6 +556,10 @@
     "Breath Weapon (Poison) (Cone)": {
       "name": "Breath Weapon (Poison) (Cone)",
       "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[poison]]]{1d6 poison damage} to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[poison]]]{Levelled Damage}</p>"
+    },
+    "Drive Them Down": {
+      "name": "Drive Them Down",
+      "description": "<p>Your foes are but dross from which you carve and shoot your legend. Make a melee Strike and then a ranged Strike with a combination weapon, both against the same enemy; you don't need to change modes to do so. If the melee Strike hits, you gain a +1 circumstance bonus to the attack roll with the ranged Strike. Each attack counts toward your multiple attack penalty, but your multiple attack penalty doesn't increase until you've made both attacks. If both Strikes hit, you deal an additional [[/r {2d6}[persistent,bleed]]]{2d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent bleed Damage} to the enemy, and they're @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} until this persistent bleed damage ends.</p>"
     },
     "Ghost Shot": {
       "name": "Ghost Shot",
@@ -713,6 +729,10 @@
       "name": "Into the Fray",
       "description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<hr />\n<p>You know trouble can lurk around every corner, and your hands never stray far from your holsters. You can Interact to draw a one-handed ranged weapon and can then Interact to draw a one-handed melee weapon. As your first action on your first turn, you can Stride as a free action toward an enemy you can perceive. If you can't perceive any enemies or can't end your movement closer to one, you can't use this Stride.</p>"
     },
+    "Wind Them Up": {
+      "name": "Wind Them Up",
+      "description": "<p>Should foes parry your blade or dodge your bullets? Neither— they should be watching their purse. Make a melee Strike with your combination weapon, and then attempt a Thievery check with a –5 penalty to @UUID[Compendium.pf2e.actionspf2e.RDXXE7wMrSPCLv5k]{Steal} from your target; you can't Steal closely guarded objects or objects that would take a long time to pilfer. You don't need a free hand to attempt to Steal something in this manner. If your Thievery check succeeds, the target is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against your ranged attacks until the start of your next turn, and you don't trigger reactions that are normally triggered by movement or a ranged attack. These effects occur even if your target has no objects to Steal.</p>"
+    },
     "Accept Echo": {
       "name": "Accept Echo",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You allow the echo to inhabit your body, gaining a glowing aura around you, shining pale-green irises, a resonating voice, and the silhouette of the spirit around your own body, all of which can be seen clearly by others. While in this state, you become trained in the weapon you chose and an expert in the skill you chose. Additionally, while you're in this state, the echo can speak and interact with the Material Plane using your body, and you gain a +4 status bonus to all saves against possession effects, as the possessing spirit protects you from other possessions.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.2ca1ZuqQ7VkunAh3]{Effect: Accept Echo}</p>\n<p>This state lasts for 10 minutes, after which the echo disappears completely until the next time you make your daily preparations. You can Dismiss this effect.</p>\n<p>At 7th level you become a master of the skill you chose, at 13th level you become an expert with the weapon you chose, and at 15th level you become legendary with the skill you chose.</p>"
@@ -744,6 +764,10 @@
     "Threatening Approach": {
       "name": "Threatening Approach",
       "description": "<p>You Stride to be adjacent to a foe and @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} that foe. If you succeed, the foe is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} instead of frightened 1.</p>"
+    },
+    "Touch and Go": {
+      "name": "Touch and Go",
+      "description": "<p><strong>Requirements</strong> You're wielding a combination weapon.</p>\n<hr />\n<p>Your body's shadows mask your hands' steel. You can Step toward an enemy, you can Interact to change your weapon between melee or ranged modes, and you then Interact to reload.</p>"
     },
     "Hide": {
       "name": "Hide",
@@ -880,6 +904,10 @@
     "Encouraging Words": {
       "name": "Encouraging Words",
       "description": "<p><strong>Prerequisites</strong> Trained in Diplomacy</p>\n<p><strong>Requirements</strong> The target ally lost Stamina Points within the last round</p>\n<hr />\n<p>You give an ally within 30 feet a quick pep talk, helping them recover. Attempt a Diplomacy check. The DC is usually 15, though the GM might adjust it based on the circumstances. If you have expert proficiency in Diplomacy, you can instead attempt a DC 20 check to increase the Stamina Points recovered by 5; if you have master proficiency, you can attempt a DC 30 check to increase the Stamina Points by 15; if you have legendary proficiency, you can attempt a DC 40 check to increase the Stamina Points by 25. No matter the result, the ally is temporarily immune to Encouraging Words until they either @UUID[Compendium.pf2e.actionspf2e.qc0VsZ0UesnurUUB]{Take a Breather} or rest for the day.</p>\n<hr />\n<p><strong>Critical Success</strong> The ally recovers [[/r {2d8} #Stamina Points]]{2d8 Stamina Points}.</p>\n<p><strong>Success</strong> The ally recovers [[/r {1d8} #Stamina Points]]{1d8 Stamina Points}.</p>\n<p><strong>Critical Failure</strong> The ally takes [[/r {1d8}[mental]]]{1d8 mental damage}, but this can reduce only Stamina Points, never Hit Points.</p>"
+    },
+    "Find Fault": {
+      "name": "Find Fault",
+      "description": "<p><strong>Trigger</strong> You attempt a saving throw against a spell or magic effect but haven't rolled yet</p>\n<hr />\n<p><strong>Effect</strong> You find some kind of fault with the magic, using that flaw to protect yourself from the effect. You gain a +1 circumstance bonus to your saving throw against the triggering effect, which increases to a +2 circumstance bonus if the effect is divine and originates from a worshipper of the deity you chose for your grudge.</p>"
     },
     "Water Transfer": {
       "name": "Water Transfer",
@@ -1061,6 +1089,10 @@
       "name": "Flurry of Blows",
       "description": "<p>Make two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses. Apply your multiple attack penalty to the Strikes normally. As it has the flourish trait, you can use Flurry of Blows only once per turn.</p>"
     },
+    "Wicked Thorns": {
+      "name": "Wicked Thorns",
+      "description": "<p><strong>Trigger</strong> You're hit with an unarmed Strike or a Strike with a non-reach melee weapon.</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Several of your thorns break off and hook into your attacker's body. You deal [[/r {1d8}[piercing]]]{1d8 piercing damage} to the triggering creature. It attempts a basic Reflex save against the higher of your class DC or spell DC. On a critical failure, the creature also takes [[/r {1d4}[persistent,bleed]]]{1d4} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent bleed Damage} as your thorns embed in its flesh.</p>\n<p>At 3rd level, and every 2 levels thereafter, this damage increases by 1d8, and the persistent piercing damage increases by 1.</p>\n<p>[[/r (floor(@actor.level/2)d8)[piercing]]]{Level based piercing damage}</p>"
+    },
     "Barbed Quills": {
       "name": "Barbed Quills",
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are hit with an unarmed strike or a strike with a non-reach melee weapon.</p>\n<hr />\n<p>You break off quills in your attacker's flesh. You deal [[/r {1d8}[piercing]]]{1d8 piercing damage} to the triggering creature (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher.) On a critical failure, the creature also takes @Localize[PF2E.PersistentDamage.Bleed1d4.success] as your quills hook into its flesh. At 3rd level, and every 2 levels thereafter, this damage increases by 1d8 and the persistent piercing damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Levelled} piercing damage</p>\n<p>[[/r {1d4+ceil(@actor.level/2)-1}[persistent,bleed]]]{Levelled} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage}</p>\n<hr />\n<p><em>Note: +1 bonus from Bristle is not added automatically</em></p>"
@@ -1128,6 +1160,10 @@
     "Divert Lightning": {
       "name": "Divert Lightning",
       "description": "<p><strong>Requirements</strong> You aren't immune to electricity</p>\n<p><strong>Trigger</strong> A creature within 30 feet of you is targeted by an electricity effect or is in the area of an electricity effect.</p>\n<hr />\n<p><strong>Effect</strong> You draw the electricity to yourself like a lightning rod in order to shield the target. If the triggering effect was targeted, it targets you instead of the triggering creature. If it was an area effect, it leaps from the triggering creature's space to fill your space instead. This doesn't divert lightning from any other creatures targeted by or in the area of the lightning. You're automatically hit by or automatically fail your save against the effect. You then can't Divert Lightning for [[/r 1d4 #rounds]]{1d4 rounds}.</p>"
+    },
+    "Envenom": {
+      "name": "Envenom",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Through use of either saliva or blood, you use your innate toxins to apply vishkanyan venom to your weapon or a piece of ammunition. To use your blood, you must be injured, or you can deal 1 slashing Damage to yourself as part of the action. The vishkanyan venom remains potent until the end of your next turn, or until you expend it as normal for an injury poison by either hitting a target or critically failing an attack roll.</p>\n<p><strong>Minor Vishkanyan Venom</strong> (injury, poison)</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d4}[poison]]]{1d4 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d4}[poison]]]{1d4 poison damage} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {1d4}[poison]]]{1d4 poison damage} (1 round)</p>"
     },
     "Change Tradition Focus": {
       "name": "Change Tradition Focus",
