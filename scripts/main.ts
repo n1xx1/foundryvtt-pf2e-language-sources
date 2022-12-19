@@ -20,6 +20,10 @@ async function setupOut() {
   );
 }
 
+function fixEntities(x: string) {
+  return x.replace(/\u001e/g, " ");
+}
+
 async function handleItem(id: string, label: string, entries: EntryItem[]) {
   const out: Compendium = {
     label,
@@ -37,7 +41,7 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
   for (const entry of entries) {
     const el: any = (out.entries[entry.name] = {
       name: entry.name,
-      description: entry.system.description.value,
+      description: fixEntities(entry.system.description.value),
     });
 
     if (entry.type === "spell") {
