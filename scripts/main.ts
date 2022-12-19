@@ -134,6 +134,7 @@ async function handleJournalEntry(
 
 const itemTypes = [
   "ancestry",
+  "heritage",
   "action",
   "armor",
   "attack",
@@ -149,7 +150,13 @@ const itemTypes = [
   "treasure",
   "weapon",
 ];
-const ignoredItemTypes = ["ancestry", "condition", "lore", "spellcastingEntry"];
+const ignoredItemTypes = [
+  "ancestry",
+  "heritage",
+  "condition",
+  "lore",
+  "spellcastingEntry",
+];
 
 async function handleActor(
   id: string,
