@@ -114,5 +114,13 @@ export interface EntryItemSpell extends BaseEntry {
 }
 
 export interface EntryJournalEntry extends BaseEntry {
-  content: string;
+  content?: string;
+  pages?: EntryJournalEntryPage[];
+}
+
+export interface EntryJournalEntryPage extends BaseEntry {
+  type: string;
+  text: {
+    content: string;
+  };
 }

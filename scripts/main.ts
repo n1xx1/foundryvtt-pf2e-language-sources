@@ -125,11 +125,28 @@ async function handleJournalEntry(
     label: name,
     entries: {},
   };
-  for (const { name, content } of entries) {
-    out.entries[name] = {
+
+  for (const { name, content, pages } of entries) {
+    const el: any = (out.entries[name] = {
       name: name,
-      description: content,
-    };
+    });
+
+    if (content) {
+      el.description = content;
+    }
+    if (pages) {
+      el.pages = Object.fromEntries(
+        pages
+          .filter((p) => p.type === "text")
+          .map((p) => [
+            p.name,
+            {
+              name: p.name,
+              text: p.text.content,
+            },
+          ])
+      );
+    }
   }
 
   const outData = JSON.stringify(out, null, 2);

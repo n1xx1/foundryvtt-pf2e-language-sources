@@ -141,7 +141,7 @@ const enabledPacks = [
   // "rollable-tables",
   // "criticaldeck",
   // "hero-point-deck",
-  // "journals",
+  "journals",
   "gmg-srd",
   // "action-macros",
   // "pf2e-macros",
