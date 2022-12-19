@@ -138,8 +138,11 @@ const itemTypes = [
   "armor",
   "attack",
   "backpack",
+  "background",
+  "class",
   "condition",
   "consumable",
+  "deity",
   "effect",
   "equipment",
   "feat",
@@ -153,7 +156,10 @@ const itemTypes = [
 ];
 const ignoredItemTypes = [
   "ancestry",
+  "background",
+  "class",
   "condition",
+  "deity",
   "feat",
   "heritage",
   "lore",
