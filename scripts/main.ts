@@ -133,9 +133,8 @@ async function handleJournalEntry(
 }
 
 const itemTypes = [
-  "ancestry",
-  "heritage",
   "action",
+  "ancestry",
   "armor",
   "attack",
   "backpack",
@@ -143,6 +142,8 @@ const itemTypes = [
   "consumable",
   "effect",
   "equipment",
+  "feat",
+  "heritage",
   "lore",
   "melee",
   "spell",
@@ -152,8 +153,9 @@ const itemTypes = [
 ];
 const ignoredItemTypes = [
   "ancestry",
-  "heritage",
   "condition",
+  "feat",
+  "heritage",
   "lore",
   "spellcastingEntry",
 ];
