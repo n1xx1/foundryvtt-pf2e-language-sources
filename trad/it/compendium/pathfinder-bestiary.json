@@ -7,7 +7,7 @@
             "items": {
                 "Obscuring Mist (At Will)": {
                     "name": "Foschia Occultante (A Volontà)",
-                    "description": "<p>Evochi una nube di foschia. Tutte le creature all'interno della foschia sono @UUID[Compendium.pf2e.conditionspf2e.DmAIPqOBomZ7H95W]{occultate}, e tutte le creature all'esterno della foschia diventano @UUID[Compendium.pf2e.conditionspf2e.DmAIPqOBomZ7H95W]{occultate} alle creature all'interno di essa. Puoi Interrompere la nube.</p>"
+                    "description": "<p>Evochi una nube di foschia. Tutte le creature all'interno della foschia sono @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{occultate}, e tutte le creature all'esterno della foschia diventano occultate alle creature all'interno di essa. Puoi Interrompere la nube.</p>"
                 },
                 "Gust of Wind (At Will)": {
                     "name": "Folata di Vento (A Volontà)",
@@ -31,14 +31,16 @@
                     "description": "<p>@Template[type:emanation|distance:1,5]{1,5 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>[[/r {2d6}[cold]]]{2d6 danni da freddo} (@Check[type:reflex|dc:27|basic:true])</p>"
                 },
                 "Freezing Blood": {
-                    "name": "Sangue Congelante"
+                    "name": "Sangue Congelante",
+                    "description": "<p><strong>Innesco</strong> Una creatura adiacente infligge danni perforanti o taglienti al drago.</p>\n<hr />\n<p><strong>Effetto</strong> Il sangue del drago spruzza una creatura, infliggendo [[/r 2d6[cold]]] danni. Una creatura che subisce danni da freddo in questo modo è @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentata 1} per 1 round.</p>"
                 },
                 "Frightful Presence": {
                     "name": "Presenza Terrificante",
                     "description": "<p>@Template[type:emanation|distance:27]{27 metri}, @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura} @Check[type:will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "Breath Weapon": {
-                    "name": "Soffio"
+                    "name": "Soffio",
+                    "description": "<p>Il drago esala una nube di gelo che infligge [[/r 11d6[cold]]] danni in un @Template[type:cone|distance:40]{cono di 12 metri} (TS @Check[type:reflex|dc:29|basic:true]).</p>\n<p>Non può usare di nuovo il Soffio per [[/br 1d4 #Ricarica Soffio]]{1d4 round}.</p>"
                 },
                 "Draconic Frenzy": {
                     "name": "Frenesia Draconica",
@@ -53,10 +55,12 @@
                     "description": "<p>Un drago bianco può scalare sul ghiaccio come se possedesse la Velocità di scalare indicata. Ignora il terreno difficile e il terreno difficile superiore dovuto al ghiaccio e alla neve e non rischia di cadere quando attraversa il ghiaccio.</p>"
                 },
                 "Shape Ice": {
-                    "name": "Plasmare Ghiaccio"
+                    "name": "Plasmare Ghiaccio",
+                    "description": "<p>Il drago rimodella un cubo, di ghiaccio o di neve, da lui toccato con lato fino a 3 metri. Ogni creatura che si trova sul ghiaccio deve superare un TS su @Check[type:reflex|dc:15] o una prova di @Check[type:acrobatics|dc:15].<p>\n<p>ln caso di fallimento, la creatura cade @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} sul ghiaccio; in caso di fallimento critico, cade interamente fuori dal ghiaccio ed è anche prona.</p>"
                 },
                 "Ground Slam": {
-                    "name": "Schianto a Terra"
+                    "name": "Schianto a Terra",
+                    "description": "<p>Il drago si schianta a terra. Può farlo se si trova a terra o se Vola entro 3 metri dal terreno. Ogni creatura sul terreno entro @Template[type:emanation|distance:3]{3 metri} deve superare un TS su @Check[type:reflex|dc:29|traits:damaging-effect], altrimenti cade @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} e subisce [[/r 3d6[bludgeoning]]] danni.</p>\n<p>Poi il drago può effettuare un Passo.</p>"
                 }
             }
         },
@@ -434,7 +438,8 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
                 },
                 "Tighten Coils": {
-                    "name": "Avvolgere le Spire"
+                    "name": "Avvolgere le Spire",
+                    "description": "<p><strong>Innesco</strong> Una creatura @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{afferrata} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{trattenuta} dall'anaconda gigante tenta di @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Sfuggire}.</p>\n<hr />\n<p><strong>Effetto</strong> La CD della prova di Sfuggire aumenta di 2.</p>"
                 },
                 "Greater Constrict": {
                     "name": "Stritolare Superiore",
@@ -449,7 +454,8 @@
                     "description": "<p>Grande, [[/r {1d10+7}[bludgeoning]]]{1d10+7 contundenti}, Rottura 21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "Wrap in Coils": {
-                    "name": "Spire Avvolgenti"
+                    "name": "Spire Avvolgenti",
+                    "description": "<p><strong>Requisiti</strong> Una creatura grande o inferiore è @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{afferrata} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{trattenuta} dalle fauci dell'anaconda gigante.</p>\n<hr />\n<p><strong>Effetto</strong> L'anaconda gigante sposta la creatura tra le sue spire, liberando le fauci per effettuare attacchi, poi usa Stritolare Superiore contro la creatura. Le spire dell'anaconda gigante possono avvolgere un qualsiasi numero di creature che entrino nel suo spazio.</p>"
                 },
                 "Jaws": {
                     "name": "Fauci"
