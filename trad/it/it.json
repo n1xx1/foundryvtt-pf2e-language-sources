@@ -47,7 +47,9 @@
                     "ShieldBlock": "<p><strong>Innesco</strong> Il mostro ha lo scudo alzato e subisce danni da un attacco fisico.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro sposta lo scudo fulmineamente per deviare un colpo. Lo scudo previene un ammontare di danni che il mostro subirebbe pari fino alla propria Durezza. I danni rimanenti vengono subiti sia dal mostro che dallo scudo e potrebbero rompere o distruggere lo scudo.</p>",
                     "AquaticAmbush": "<p><strong>Requisiti</strong> Il mostro si nasconde in acqua e una creatura che non lo ha individuato si trova entro il numero di metri indicato.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro si muove fino alla sua Velocità di nuotare + 3 metri verso la creatura innescante, spostandosi nell'acqua o sulla terra. Una volta che la creatura è entro portata, il mostro effettua un Colpo contro di essa. La creatura è @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparata} contro questo Colpo.</p>",
                     "AttackOfOpportunity": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>",
-                    "Buck": "<hr />\n<p>Molti mostri che fungono da cavalcature possono tentare di disarcionare i cavalieri indesiderati o fastidiosi, ma la maggior parte delle cavalcature non useranno questa reazione contro una creatura fidata, a meno che non venga spaventata o maltrattata.</p>\n<p><strong>Innesco</strong> Una creatura @UUID[Compendium.pf2e.actionspf2e.PM5jvValFkbFH3TV]{Monta} o usa l'azione di @UUID[Compendium.pf2e.actionspf2e.q9nbyIF0PEBqMtYe]{Comandare un Animale} mentre cavalca il mostro.</p>\n<hr />\n<p><strong>Effetto</strong> La creatura innescante deve superare un tiro salvezza su Riflessi contro la CD indicata o cade dalla creatura e atterra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona}. Se il TS è un fallimento critico, la creatura innescante subisce anche [[/roll {1d6}[bludgeoning]]]{1d6 danni contundenti} in aggiunta ai normali danni da caduta.</p>"
+                    "Buck": "<hr />\n<p>Molti mostri che fungono da cavalcature possono tentare di disarcionare i cavalieri indesiderati o fastidiosi, ma la maggior parte delle cavalcature non useranno questa reazione contro una creatura fidata, a meno che non venga spaventata o maltrattata.</p>\n<p><strong>Innesco</strong> Una creatura @UUID[Compendium.pf2e.actionspf2e.PM5jvValFkbFH3TV]{Monta} o usa l'azione di @UUID[Compendium.pf2e.actionspf2e.q9nbyIF0PEBqMtYe]{Comandare un Animale} mentre cavalca il mostro.</p>\n<hr />\n<p><strong>Effetto</strong> La creatura innescante deve superare un tiro salvezza su Riflessi contro la CD indicata o cade dalla creatura e atterra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona}. Se il TS è un fallimento critico, la creatura innescante subisce anche [[/roll {1d6}[bludgeoning]]]{1d6 danni contundenti} in aggiunta ai normali danni da caduta.</p>",
+                    "FormUp": "",
+                    "TroopDefenses": ""
                 }
             },
             "AddTreasure": "Tesoro",
@@ -146,8 +148,16 @@
             },
             "ArcaneSlam": {
                 "Notes": {
-                    "criticalSuccess": ""
-                }
+                    "criticalSuccess": "",
+                    "NoTarget": "",
+                    "success": "",
+                    "failure": "",
+                    "criticalFailure": ""
+                },
+                "Modifier": {
+                    "SizeDifference": ""
+                },
+                "Title": ""
             },
             "Coerce": {
                 "Title": "Costringere",
@@ -611,6 +621,14 @@
                     "TreatWoundsCriticalFailure": "Tiro Danni: Curare Ferite"
                 },
                 "SkillSelect": "Abilità Curare Ferite:"
+            },
+            "Tamper": {
+                "Title": "",
+                "Notes": {
+                    "criticalFailure": "",
+                    "criticalSuccess": "",
+                    "success": ""
+                }
             }
         },
         "SETTINGS": {
@@ -731,6 +749,10 @@
                 "EffectPanel": {
                     "Name": "Mostra il Pannello degli Effetti",
                     "Hint": "Mostra il Pannello degli Effetti quando un token è selezionato."
+                },
+                "MonochromeDarkvision": {
+                    "Name": "",
+                    "Hint": ""
                 }
             },
             "WorldSchemaVersion": {
@@ -803,7 +825,8 @@
                     "Hint": "Imposta se il Livello di Oscurità di questa scena rispecchia l'ora del giorno.",
                     "Enabled": "Abilitato",
                     "Disabled": "Disabilitato",
-                    "Default": "Predefinito del Mondo ({worldDefault})"
+                    "Default": "Predefinito del Mondo ({worldDefault})",
+                    "ManagedBy": ""
                 },
                 "ResetWorldTime": {
                     "Name": "Azzera l'Ora e la Data del Mondo",
@@ -943,7 +966,18 @@
                     "Name": "Modificatore di competenza leggendario",
                     "Hint": "Aggiusta come preferisci per complementare le regole di competenza senza livello. Richiede il ricalcolo aggiornando la pagina o modificando un valore per ogni personaggio."
                 },
-                "Title": "Impostazioni Regole Alternative"
+                "Title": "Impostazioni Regole Alternative",
+                "AbilityScore": {
+                    "Title": "",
+                    "GradualBoosts": {
+                        "Name": "",
+                        "Hint": ""
+                    }
+                }
+            },
+            "TOTMToggles": {
+                "Name": "",
+                "Hint": ""
             }
         },
         "WeaponPropertyRune": {
@@ -968,7 +1002,8 @@
             },
             "wounding": {
                 "Note": {
-                    "success": "<strong>Runa Ferimento</strong> Quando colpisci criticamente una creatura con un'arma con la runa ferimento, infliggi [[/r {1d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti} aggiuntivi."
+                    "success": "<strong>Runa Ferimento</strong> Quando colpisci criticamente una creatura con un'arma con la runa ferimento, infliggi [[/r {1d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti} aggiuntivi.",
+                    "criticalSuccess": ""
                 },
                 "Name": "Ferimento"
             },
@@ -1137,6 +1172,95 @@
                 "Name": "Sacrilega",
                 "Note": {
                     "criticalSuccess": "(<span class='pf2-icon'>R</span> comando; una volta al giorno)<br /><strong>Innesco</strong> Ottieni un successo critico a un tiro per colpire con l'arma contro una creatura buona<br /><strong>Effetto</strong> Il bersaglio subisce @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danno da sanguinamento persistente} pari a 1d8 per dado di danno dell'arma incisa."
+                }
+            },
+            "majorFanged": {
+                "Name": ""
+            },
+            "anchoring": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": ""
+                }
+            },
+            "bane": {
+                "Name": ""
+            },
+            "bloodthirsty": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": ""
+                }
+            },
+            "brilliant": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": ""
+                }
+            },
+            "crushing": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": ""
+                }
+            },
+            "energizing": {
+                "Name": ""
+            },
+            "extending": {
+                "Name": ""
+            },
+            "fanged": {
+                "Name": ""
+            },
+            "greaterAnchoring": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": "",
+                    "success": ""
+                }
+            },
+            "greaterBrilliant": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": "",
+                    "success": ""
+                }
+            },
+            "greaterCrushing": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": ""
+                }
+            },
+            "greaterExtending": {
+                "Name": ""
+            },
+            "greaterFanged": {
+                "Name": ""
+            },
+            "greaterHauling": {
+                "Name": ""
+            },
+            "greaterImpactful": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": ""
+                }
+            },
+            "hauling": {
+                "Name": ""
+            },
+            "hopeful": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": ""
+                }
+            },
+            "impactful": {
+                "Name": "",
+                "Note": {
+                    "criticalSuccess": ""
                 }
             }
         },
@@ -1555,6 +1679,208 @@
                 "Moderate": {
                     "success": "<strong>Effetto</strong> La bomba infligge anche [[/r {2}[splash,positive]]]{2 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del turno successivo."
                 }
+            },
+            "DwarvenDaisy": {
+                "Lesser": {
+                    "success": ""
+                },
+                "Moderate": {
+                    "success": ""
+                }
+            },
+            "JunkBomb": {
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "PerniciousSporeBomb": {
+                "Major": {
+                    "criticalSuccess": "",
+                    "success": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "PressureBomb": {
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "TallowBomb": {
+                "Lesser": {
+                    "criticalSuccess": "",
+                    "success": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "TwigjackSack": {
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "MudBomb": {
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "NecroticBomb": {
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "RedpitchBomb": {
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "SulfurBomb": {
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "VexingVapor": {
+                "Greater": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Lesser": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Major": {
+                    "success": "",
+                    "criticalSuccess": ""
+                },
+                "Moderate": {
+                    "success": "",
+                    "criticalSuccess": ""
+                }
+            },
+            "WaterBomb": {
+                "Greater": {
+                    "success": ""
+                },
+                "Major": {
+                    "success": ""
+                },
+                "Moderate": {
+                    "success": ""
+                },
+                "Lesser": {
+                    "success": ""
+                }
             }
         },
         "Item": {
@@ -1574,7 +1900,8 @@
                     "hammer": "Il bersaglio viene scagliato a terra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prono}.",
                     "pick": "L'arma trafigge brutalmente il bersaglio che subisce 2 danni aggiuntivi per dado di danno dell'arma.",
                     "polearm": "Il bersaglio, viene mosso di 1,5 metri in una direzione a tua scelta. Si tratta di un movimento forzato.",
-                    "spear": "L'arma perfora il bersaglio, indebolendone gli attacchi. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1} fino all'inizio del tuo prossimo turno."
+                    "spear": "L'arma perfora il bersaglio, indebolendone gli attacchi. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1} fino all'inizio del tuo prossimo turno.",
+                    "firearm": ""
                 },
                 "GeneratedName": {
                     "PotencyStrikingThreeProperties": "{base} {striking} {property1} {property2} {property3} +{potency}",
@@ -1620,7 +1947,8 @@
                     "Hint": "Materiali preziosi e rune permettono una personalizzazione approfondita di un arma. Oltre a migliorare la sua abilità di danneggiare i nemici, influenzano anche il livello, la rarità, il prezzo e il nome dell'arma. Per evitare che l'arma sia rinominata, dagli un nome personalizzato o impostala come una <i>arma magica specifica</i>."
                 },
                 "MeleeUsage": {
-                    "Label": "Utilizzo Mischia"
+                    "Label": "Utilizzo Mischia",
+                    "Hint": ""
                 },
                 "NoRangeMelee": "Nessuno (Mischia)",
                 "RangeIncrementN": {
@@ -1883,6 +2211,62 @@
                     "Zeal": {
                         "Label": "Zelo",
                         "Description": "Il tuo ardore interiore potenzia la tua prodezza in combattimento."
+                    },
+                    "ConfidenceApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "IndulgenceApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "KnowledgeApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "MightApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "FateApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "FireApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "SecrecyApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "Abomination": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "AirApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "AmbitionApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "TravelApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "WaterApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "DarknessApocryphal": {
+                        "Label": "",
+                        "Description": ""
+                    },
+                    "DeathApocryphal": {
+                        "Label": "",
+                        "Description": ""
                     }
                 },
                 "Alignment": "Allineamento",
@@ -1923,7 +2307,8 @@
                     "chain-mail": "Cotta di Maglia",
                     "chain-shirt": "Giaco di Maglia",
                     "explorers-clothing": "Vestiario da Esploratore",
-                    "full-plate": "Armatura Completa"
+                    "full-plate": "Armatura Completa",
+                    "armored-coat": ""
                 }
             },
             "Physical": {
@@ -2219,7 +2604,8 @@
             "IncreasedCriticalChance": "Se la creatura colpisce con un attacco e ottiene un 19 naturale al tiro del d20, l'attacco è un colpo critico. Questo non ha effetto se il 19 sarebbe un fallimento.",
             "IncreasedReach5": "Portata aumentata di 1,5 metri",
             "InterruptAction": "Se colpisce, l'azione del bersaglio è interrotta.",
-            "KnockProne": "Se colpisce, il besaglio è buttato a terra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prono}."
+            "KnockProne": "Se colpisce, il besaglio è buttato a terra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prono}.",
+            "DropWeapon": ""
         },
         "ChatRollDetails": {
             "ModifiersEmpty": "Nessun Modificatore",
@@ -2502,6 +2888,26 @@
             "Poison1d12": {
                 "success": "[[/r {1d12}[persistent,poison]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da veleno persistenti}",
                 "criticalSuccess": "[[/r {2*1d12}[persistent,poison]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da veleno persistenti}"
+            },
+            "Cold1d8": {
+                "success": "",
+                "criticalSuccess": ""
+            },
+            "Cold2d8": {
+                "success": "",
+                "criticalSuccess": ""
+            },
+            "Fire1": {
+                "success": "",
+                "criticalSuccess": ""
+            },
+            "Fire1d6": {
+                "success": "",
+                "criticalSuccess": ""
+            },
+            "Fire3d6": {
+                "success": "",
+                "criticalSuccess": ""
             }
         },
         "CraftingTab": {
@@ -2535,7 +2941,11 @@
                 "JiangShi": {
                     "StanceOfDeath": {
                         "SunderedVeins": {
-                            "Note": "Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1}."
+                            "Note": "Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1}.",
+                            "Label": ""
+                        },
+                        "CloudlessVoid": {
+                            "Label": ""
                         }
                     }
                 }
@@ -2543,7 +2953,8 @@
             "BarghestFeed": "Quante volte si è nutrito il barghest?",
             "DemonInfuseWeapons": "Infliggi danni caotici invece che danni da male.",
             "Dramofir": {
-                "BittersweetDreamsCriticalFailure": "Fallimento Critico"
+                "BittersweetDreamsCriticalFailure": "Fallimento Critico",
+                "BittersweetDreamsSuccessFailure": ""
             },
             "DuskwalkerHuntPrey": {
                 "AC": "Preda Designata attacca il Viandante Crepuscolare",
@@ -2569,7 +2980,53 @@
                 "SingleAttackLabel": "Tempesta Telecinetica - Bersaglio Singolo",
                 "SingleAttackEffect": "L'attacco infligge [[/r {1d12}]]{1d12 danni} in caso di fallimento."
             },
-            "TreerazerPlantAttack": "Attacca un Vegetale"
+            "TreerazerPlantAttack": "Attacca un Vegetale",
+            "Calikang": {
+                "SuspendedAnimationEnter": "",
+                "SuspendedAnimationExit": "",
+                "SixfoldFlurry": ""
+            },
+            "SovereignDragon": {
+                "InspireEnvoyEffectAC": "",
+                "InspireEnvoyDragonChoice": "",
+                "InspireEnvoyDragonAdult": "",
+                "InspireEnvoyDragonAncient": "",
+                "InspireEnvoyEffectChoice": "",
+                "InspireEnvoyEffectAttack": "",
+                "InspireEnvoyEffectPercWillCha": ""
+            },
+            "Charge": {
+                "AtLeastTen": ""
+            },
+            "ChyzaeduAlienVestment": "",
+            "ClockworkLostPlates": "",
+            "ClockworkWindUp": "",
+            "ConstructArmor": {
+                "BrokenArmor": "",
+                "CriticalHit": ""
+            },
+            "CustomArmor": {
+                "BrokenArmor": "",
+                "CriticalHit": ""
+            },
+            "Falrok": {
+                "LazuriteTerrainSwitch": ""
+            },
+            "KrampusPunishTheNaughty": "",
+            "LegionArchon": {
+                "FlameOfJustice": ""
+            },
+            "PunishingStrike": {
+                "Note": ""
+            },
+            "SkyDragon": {
+                "DivineLightningGood": "",
+                "DivineLightningPositive": ""
+            },
+            "Zetogeki": {
+                "TiltScalesTilted": "",
+                "TiltScalesChannelEnergy": ""
+            }
         },
         "Encounter": {
             "RevealName": "Rivela Nome",
@@ -4869,7 +5326,10 @@
                     "DragHomebrewItem": "Trascina un oggetto homebrew qua se ne stai usando uno invece delle opzioni sopra",
                     "HomebrewItem": "Oggetto Homebrew",
                     "Prompt": "Seleziona qualcosa.",
-                    "SaveLabel": "Salva"
+                    "SaveLabel": "Salva",
+                    "NoLabel": "",
+                    "SkillLabel": "",
+                    "YesLabel": ""
                 },
                 "EffectTarget": {
                     "Prompt": "Seleziona un bersaglio per quest'effetto."
@@ -4880,6 +5340,10 @@
                 },
                 "GrantItem": {
                     "AlreadyHasItem": "{actor} ha già {item}, quindi non è stato aggiunto nuovamente."
+                },
+                "MarkTarget": {
+                    "TargetToken": "",
+                    "Timeout": ""
                 }
             }
         },
@@ -5039,7 +5503,91 @@
                 "whip-claw": "Whip Claw",
                 "wish-blade": "Wish Blade",
                 "wish-knife": "Wish Knife",
-                "wooden-taws": "Wooden Taws"
+                "wooden-taws": "Wooden Taws",
+                "chakri": "",
+                "clan-pistol": "",
+                "mace-multipistol": "",
+                "mithral-tree": "",
+                "panabas": "",
+                "pepperbox": "",
+                "piercing-wind": "",
+                "piranha-kiss": "",
+                "probing-cane": "",
+                "rapier-pistol": "",
+                "reinforced-wheels": "",
+                "repeating-crossbow": "",
+                "thorn-whip": "",
+                "three-peaked-tree": "",
+                "thundermace": "",
+                "tonfa": "",
+                "tri-bladed-katar": "",
+                "flingflenser": "",
+                "flintlock-musket": "",
+                "air-repeater": "",
+                "arquebus": "",
+                "axe-musket": "",
+                "asp-coil": "",
+                "big-boom-gun": "",
+                "black-powder-knuckle-dusters": "",
+                "bladed-gauntlet": "",
+                "blunderbuss": "",
+                "broadspear": "",
+                "butchering-axe": "",
+                "butterfly-sword": "",
+                "cane-pistol": "",
+                "chakram": "",
+                "coat-pistol": "",
+                "dagger-pistol": "",
+                "dandpatta": "",
+                "donchak": "",
+                "double-barreled-musket": "",
+                "double-barreled-pistol": "",
+                "dragon-mouth-pistol": "",
+                "dueling-pistol": "",
+                "dueling-spear": "",
+                "dwarven-scattergun": "",
+                "elven-branched-spear": "",
+                "explosive-dogslicer": "",
+                "fighting-stick": "",
+                "fire-lance": "",
+                "flintlock-pistol": "",
+                "flying-talon": "",
+                "forked-bipod": "",
+                "hand-cannon": "",
+                "harmona-gun": "",
+                "hook-sword": "",
+                "gada": "",
+                "gnome-amalgam-musket": "",
+                "griffon-cane": "",
+                "gun-sword": "",
+                "hammer-gun": "",
+                "hongali-hornbow": "",
+                "injection-spear": "",
+                "jezail": "",
+                "kalis": "",
+                "karambit": "",
+                "knuckle-duster": "",
+                "kris": "",
+                "kusarigama": "",
+                "leiomano": "",
+                "lion-scythe": "",
+                "long-air-repeater": "",
+                "repeating-heavy-crossbow": "",
+                "shobhad-longrifle": "",
+                "sickle-saber": "",
+                "slide-pistol": "",
+                "spiral-rapier": "",
+                "spoon-gun": "",
+                "sun-sling": "",
+                "switchscythe": "",
+                "talwar": "",
+                "triggerbrand": "",
+                "visap": "",
+                "war-lance": "",
+                "wheel-blades": "",
+                "wheel-spikes": "",
+                "wind-and-fire-wheel": "",
+                "zulfikar": ""
             }
         },
         "WeaponAbilityLabel": "Abilità Arma",
@@ -5421,7 +5969,18 @@
                 "Wing": "Ala",
                 "Spikes": "Spuntoni",
                 "Thorn": "Spine",
-                "Trunk": "Proboscide"
+                "Trunk": "Proboscide",
+                "HolyMace": "",
+                "LavaFist": "",
+                "BoneShard": "",
+                "Sunbeam": "",
+                "TentacleArm": ""
+            },
+            "Note": {
+                "GrabbingTrunk": {
+                    "Title": "",
+                    "Text": ""
+                }
             }
         },
         "RuleElement": {
@@ -5464,7 +6023,8 @@
             "Unrecognized": "Elemento Regola non riconosciuto",
             "SubstituteRoll": "Sostituisci Tiro",
             "TokenName": "Nome Token",
-            "RollTwice": "Tira Due Volte"
+            "RollTwice": "Tira Due Volte",
+            "MarkToken": ""
         },
         "Mutagens": {
             "BestialMutagen": {
@@ -5507,6 +6067,9 @@
             },
             "Life": {
                 "ToggleLabel": "Tutti i bersagli di guarire sono creature viventi"
+            },
+            "Time": {
+                "ACLabel": ""
             }
         },
         "RuleEditor": {
@@ -5530,7 +6093,9 @@
                     "true": "Solo Danni Critici",
                     "false": "1x Danni se Critico"
                 },
-                "Predicate": "Predicato"
+                "Predicate": "Predicato",
+                "Brackets": "",
+                "Range": ""
             },
             "GrantItem": {
                 "ReplaceSelf": "Sostituisce Se Stesso",
@@ -5587,7 +6152,62 @@
             "VsShoveOrTrip": "Contro Sbilanciare o Spintonare",
             "Water": "In Acqua",
             "Weave": "Tessere",
-            "Woodworking": "Falegnameria"
+            "Woodworking": "Falegnameria",
+            "WaterOrMud": "",
+            "AcidicEnvironment": "",
+            "AttemptToFascinateOutdoorsInBrightSun": "",
+            "TripTangle": "",
+            "BloodOrWater": "",
+            "BoundHome": "",
+            "Buried": "",
+            "CanClearlyIdentifyTheStars": "",
+            "CommandReptile": "",
+            "CraftBone": "",
+            "CraftJewelry": "",
+            "CreateForgery": "",
+            "Dance": "",
+            "Darkness": "",
+            "DecayingPlantFungus": "",
+            "DemoralizeThreateningLunge": "",
+            "DimLightOrDarkness": "",
+            "DisarmGrapple": "",
+            "DisarmGrappleAvoidDisarm": "",
+            "DiscernAndPredictWeather": "",
+            "Feint": "",
+            "GatherInformation": "",
+            "HideSneakInscriptions": "",
+            "HideSneakTree": "",
+            "HideInDimOrDark": "",
+            "IceAndSnow": "",
+            "ImpersonateHumanVersion": "",
+            "Jungles": "",
+            "JunglesOrFlowerFields": "",
+            "JunkOrDebris": "",
+            "Lava": "",
+            "Lie": "",
+            "LongJump": "",
+            "MakeAnImpression": "",
+            "ManeuverInFlight": "",
+            "Mountains": "",
+            "Navigate": "",
+            "NearTheOcean": "",
+            "NighttimeWithMoonVisible": "",
+            "OceansForests": "",
+            "Orate": "",
+            "Paint": "",
+            "Rocky": "",
+            "RustyTerrain": "",
+            "SenseMotive": "",
+            "StringedInstruments": "",
+            "Subsist": "",
+            "Swamps": "",
+            "TarPit": "",
+            "TellTheTruth": "",
+            "ThickVegetation": "",
+            "UnderwaterVegetation": "",
+            "VsDarknessLightShadow": "",
+            "VsEmotion": "",
+            "VsPlants": ""
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -5605,21 +6225,33 @@
             "Beastkin": {
                 "Senses": {
                     "TremorsenseImprecise": "Percezione Tellurica (impreciso) 9 metri",
-                    "Scent": "Fiuto (impreciso) 9 metri"
+                    "Scent": "Fiuto (impreciso) 9 metri",
+                    "EcholocationImprecise": "",
+                    "EcholocationPrecise": "",
+                    "TremorsensePrecise": ""
+                },
+                "AnimalSenses": {
+                    "Prompt": ""
                 }
             },
             "ClanWeapon": {
                 "Label": "Arma del Clan",
-                "Prompt": "Seleziona un arma del clan."
+                "Prompt": "Seleziona un arma del clan.",
+                "ClanPistol": ""
             },
             "Cover": {
                 "Prompt": "Seleziona un livello di copertura.",
                 "Lesser": "Inferiore",
                 "Standard": "Standard",
-                "Greater": "Superiore"
+                "Greater": "Superiore",
+                "Prone": ""
             },
             "DedicationCraftingEntry": {
-                "Herbalist": "Erborista"
+                "Herbalist": "Erborista",
+                "FireworkTechnician": "",
+                "Poisoner": "",
+                "Snarecrafter": "",
+                "TalismanDabbler": ""
             },
             "DeityAndCause": {
                 "AllowedDrops": "privilegio di classe di 1° livello del Campione",
@@ -5641,7 +6273,8 @@
                     "shield": "Scudi Avanzati",
                     "sling": "Fionde Avanzate",
                     "spear": "Lance Avanzate",
-                    "sword": "Spade Avanzate"
+                    "sword": "Spade Avanzate",
+                    "firearm": ""
                 },
                 "SimpleMartial": {
                     "axe": "Asce Semplici e Da Guerra",
@@ -5658,7 +6291,8 @@
                     "shield": "Scudi Semplici e Da Guerra",
                     "sling": "Fionde Semplici e Da Guerra",
                     "spear": "Lance Semplici e Da Guerra",
-                    "sword": "Spade Semplici e Da Guerra"
+                    "sword": "Spade Semplici e Da Guerra",
+                    "firearm": ""
                 }
             },
             "GeneralTraining": {
@@ -5668,7 +6302,12 @@
             "Kobold": {
                 "DragonbloodParagon": {
                     "StrongjawKobold": "Coboldo Fauci di Ferro",
-                    "VenomtailKobold": "Coboldo Coda Velenosa"
+                    "VenomtailKobold": "Coboldo Coda Velenosa",
+                    "Dracomancer": "",
+                    "KoboldBreath": ""
+                },
+                "DragonsPresence": {
+                    "Note": ""
                 }
             },
             "MartialProficiency": {
@@ -5693,7 +6332,8 @@
                     "shield": "Scudi Avanzati",
                     "sling": "Fionde Avanzate",
                     "spear": "Lance Avanzate",
-                    "sword": "Spade Avanzate"
+                    "sword": "Spade Avanzate",
+                    "firearm": ""
                 },
                 "AdvancedHalflingWeapons": "Armi Halfling Avanzate",
                 "AdvancedHobgoblinWeapons": "Armi Hobgoblin Avanzate",
@@ -5720,14 +6360,37 @@
                     "shield": "Scudi Da Guerra",
                     "sling": "Fionde Da Guerra",
                     "spear": "Lance Da Guerra",
-                    "sword": "Spade Da Guerra"
+                    "sword": "Spade Da Guerra",
+                    "firearm": ""
                 },
                 "MartialHalflingWeapons": "Armi Halfling Da Guerra",
                 "MartialHobgoblinWeapons": "Armi Hobgoblin Da Guerra",
                 "MartialKoboldWeapons": "Armi Cobolde Da Guerra",
                 "MartialOrcWeapons": "Armi Orchesche Da Guerra",
                 "MartialTenguWeapons": "Armi Tengu Da Guerra",
-                "SimpleMartialBows": "Archi Semplici e Da Guerra"
+                "SimpleMartialBows": "Archi Semplici e Da Guerra",
+                "MartialGnollWeapons": "",
+                "AdvancedAzarketiWeapons": "",
+                "AdvancedConrasuWeapons": "",
+                "AdvancedFirearmsCrossbows": "",
+                "AdvancedGhoranWeapons": "",
+                "AdvancedGnollWeapons": "",
+                "AdvancedGrippliWeapons": "",
+                "AdvancedKoboldWeapons": "",
+                "AdvancedVanaraWeapons": "",
+                "AdvancedVishkanyaWeapons": "",
+                "MartialAzarketiWeapons": "",
+                "MartialBombsFirearms": "",
+                "MartialConrasuWeapons": "",
+                "MartialFirearmsCrossbows": "",
+                "MartialGhoranWeapons": "",
+                "MartialGrippliWeapons": "",
+                "MartialVanaraWeapons": "",
+                "MartialVishkanyaWeapons": "",
+                "MonasticArchery": "",
+                "SimpleBombsFirearms": "",
+                "SimpleFirearmsCrossbows": "",
+                "SimpleMartialTwoHandedMeleeWeapons": ""
             },
             "MountainStance": {
                 "BracersOfArmor": "Posizione della Montagna con Parabracci dell'Armatura",
@@ -5751,7 +6414,21 @@
                 "SkillFeat": "Seleziona un talento di abilità.",
                 "WeaponGroup": "Seleziona un gruppo di armi.",
                 "Weapon": "Seleziona un'arma.",
-                "UnarmedAttack": "Seleziona un attacco senz'arma."
+                "UnarmedAttack": "Seleziona un attacco senz'arma.",
+                "CantripOrNonCantrip": "",
+                "ConsciousMind": "",
+                "DamageType": "",
+                "Element": "",
+                "EnergyType": "",
+                "EvolutionFeat": "",
+                "Feat": "",
+                "FirstImplement": "",
+                "Material": "",
+                "SecondImplement": "",
+                "Shillelagh": "",
+                "SubconsciousMind": "",
+                "ThirdImplement": "",
+                "WildShape": ""
             },
             "SneakAttack": "Attacco Furtivo",
             "SpecialtyCrafting": {
@@ -5783,8 +6460,14 @@
                     "Amulet": "Amuleto",
                     "Mirror": "Specchio",
                     "Wand": "Bacchetta",
-                    "Weapon": "Arma"
-                }
+                    "Weapon": "Arma",
+                    "Bell": "",
+                    "Chalice": "",
+                    "Lantern": "",
+                    "Regalia": "",
+                    "Tome": ""
+                },
+                "TalismanEsoterica": ""
             },
             "TwoHanded": {
                 "BastardSword": "Usa la Spada Bastarda a Due Mani",
@@ -5792,7 +6475,10 @@
                 "Cane": "Usa il Bastone a Due Mani",
                 "Katana": "Usa la Katana a Due Mani",
                 "RhokaSword": "Usa la Spada Rhoka a Due Mani",
-                "Staff": "Usa il Bastone Ferrato a Due Mani"
+                "Staff": "Usa il Bastone Ferrato a Due Mani",
+                "BattleLute": "",
+                "Khakkhara": "",
+                "ReinforcedStock": ""
             },
             "Ranger": {
                 "HuntersEdge": {
@@ -5827,6 +6513,641 @@
                 "Bloodline": {
                     "Prompt": "Seleziona una linea di sangue."
                 }
+            },
+            "Dhampir": {
+                "Adhyabhau": {
+                    "SaveNote": ""
+                },
+                "BloodlettingFangs": {
+                    "AttackNote": ""
+                }
+            },
+            "DragonDisciple": {
+                "DragonChoice": {
+                    "Underworld": "",
+                    "White": "",
+                    "Black": "",
+                    "Blue": "",
+                    "Brass": "",
+                    "Brine": "",
+                    "Bronze": "",
+                    "Cloud": "",
+                    "Copper": "",
+                    "Crystal": "",
+                    "Forest": "",
+                    "Gold": "",
+                    "Green": "",
+                    "Magma": "",
+                    "Red": "",
+                    "Sea": "",
+                    "Silver": "",
+                    "Sky": "",
+                    "Sovereign": "",
+                    "Umbral": ""
+                },
+                "ScalesOfTheDragon": {
+                    "BracersOfArmor": "",
+                    "ExplorersClothing": "",
+                    "MageArmor": ""
+                },
+                "Prompt": ""
+            },
+            "Goblin": {
+                "ExtraSquishy": {
+                    "Note": ""
+                },
+                "RecklessAbandon": {
+                    "Note": ""
+                },
+                "TorchGoblin": {
+                    "Note": ""
+                }
+            },
+            "VirtuosicPerformer": {
+                "Prompt": ""
+            },
+            "WildMorph": {
+                "Prompt": "",
+                "WildJaws": "",
+                "LongVines": "",
+                "ElementalMatter": "",
+                "Wings": "",
+                "WildClaws": ""
+            },
+            "VitalityManipulationStance": {
+                "Note": "",
+                "StrikeLabel": ""
+            },
+            "WellspringMage": {
+                "CriticalSuccess": "",
+                "Failure": "",
+                "Initiative": "",
+                "Success": ""
+            },
+            "Witch": {
+                "Patron": {
+                    "Prompt": ""
+                }
+            },
+            "Wizard": {
+                "ArcaneSchool": {
+                    "Prompt": ""
+                },
+                "ArcaneThesis": {
+                    "Prompt": ""
+                },
+                "Metamagic1": {
+                    "Prompt": ""
+                }
+            },
+            "Zombie": {
+                "Deteriorated": ""
+            },
+            "SterlingDynamo": {
+                "ManualPower": "",
+                "ManualPercussive": "",
+                "AutomaticPercussive": "",
+                "AutomaticPower": "",
+                "Label": ""
+            },
+            "SoulWarden": {
+                "SafeguardSoul": {
+                    "Label": ""
+                },
+                "SpiralSworn": {
+                    "Label": ""
+                },
+                "UndeadNearby": ""
+            },
+            "Dwarf": {
+                "VengefulHatred": {
+                    "Prompt": ""
+                },
+                "DeathWardenDwarf": {
+                    "Note": ""
+                },
+                "ElementalHeart": {
+                    "Prompt": ""
+                },
+                "ForgeBlessedShot": {
+                    "Note": ""
+                },
+                "KneelForNoGod": {
+                    "Note": ""
+                },
+                "RockRunner": {
+                    "Note": ""
+                },
+                "SparkFist": {
+                    "Note": ""
+                },
+                "TombWatchersGlare": {
+                    "Note": ""
+                }
+            },
+            "HarrowDeck": {
+                "Prompt": "",
+                "HarrowSuits": {
+                    "Books": "",
+                    "Crowns": "",
+                    "Hammers": "",
+                    "Keys": "",
+                    "Shields": "",
+                    "Stars": ""
+                }
+            },
+            "Nagaji": {
+                "VenomSpit": {
+                    "HoodedNote": "",
+                    "StrikeLabel": "",
+                    "CriticalNote": ""
+                }
+            },
+            "Oracle": {
+                "Mystery": {
+                    "Prompt": ""
+                }
+            },
+            "Shisk": {
+                "PiercingQuills": {
+                    "Note": ""
+                }
+            },
+            "Shoony": {
+                "EsteemedVisitor": {
+                    "Note": ""
+                },
+                "FishseekerShoony": {
+                    "Note": ""
+                }
+            },
+            "SnipersAim": {
+                "Note": ""
+            },
+            "SnipingDuoDedication": {
+                "Label": ""
+            },
+            "AftermathFeats": {
+                "StoneFistLabel": "",
+                "DormantEruptionToggle": ""
+            },
+            "Aid": {
+                "Prompt": ""
+            },
+            "Alchemist": {
+                "AlchemicalCrossbow": {
+                    "Prompt": ""
+                },
+                "ResearchField": {
+                    "Prompt": ""
+                }
+            },
+            "AllowedDrops": {
+                "DeityOrPantheon": ""
+            },
+            "AnimalSkin": {
+                "BracersOfArmor": "",
+                "ExplorersClothing": "",
+                "MageArmor": ""
+            },
+            "Automaton": {
+                "ArcaneLocomotion": {
+                    "Prompt": ""
+                },
+                "AutomatonArmament": {
+                    "Prompt": ""
+                },
+                "CoreCannon": {
+                    "AttackNote": "",
+                    "CriticalHit": ""
+                },
+                "EnergyBeam": {
+                    "CriticalHit": ""
+                },
+                "MagicalResistance": {
+                    "Prompt": ""
+                }
+            },
+            "Barbarian": {
+                "Animal": {
+                    "Prompt": ""
+                },
+                "Dragon": {
+                    "Prompt": ""
+                },
+                "Instinct": {
+                    "Prompt": ""
+                }
+            },
+            "Bard": {
+                "Muse": {
+                    "Prompt": "",
+                    "Enigma": "",
+                    "Maestro": "",
+                    "Polymath": "",
+                    "Warrior": ""
+                }
+            },
+            "BlessingOfDefiance": {
+                "Prompt": ""
+            },
+            "BonusLabel": {
+                "NegativeOne": "",
+                "PlusOne": "",
+                "PlusTwo": "",
+                "PlusThree": "",
+                "PlusFour": ""
+            },
+            "BountyHunterDedication": {
+                "GatherInfoHuntedPrey": ""
+            },
+            "BrevicNoble": {
+                "Prompt": "",
+                "Garess": "",
+                "Lebeda": "",
+                "Lodovka": "",
+                "Medvyed": "",
+                "Orlovsky": "",
+                "Surtova": ""
+            },
+            "CelestialResistance": {
+                "Prompt": ""
+            },
+            "ChromaticArmor": {
+                "Prompt": "",
+                "Acid": "",
+                "Electricity": "",
+                "Fire": "",
+                "Force": "",
+                "Mental": "",
+                "Poison": "",
+                "Sonic": ""
+            },
+            "Chronoskimmer": {
+                "DestabilizeFailureLabel": "",
+                "DestabilizeSuccessLabel": "",
+                "StabilizeLabel": ""
+            },
+            "Cleric": {
+                "Doctrine": {
+                    "Prompt": ""
+                }
+            },
+            "Conrasu": {
+                "CeremonyEvenedHand": {
+                    "Prompt": ""
+                },
+                "RiteOfPassage": {
+                    "Note": ""
+                }
+            },
+            "DancingShield": {
+                "Prompt": ""
+            },
+            "Defending": {
+                "FireSpell": ""
+            },
+            "Druid": {
+                "DruidicOrder": {
+                    "Prompt": ""
+                }
+            },
+            "Elf": {
+                "BrightnessSeeker": {
+                    "Label": "",
+                    "Prompt": "",
+                    "Weal": "",
+                    "WealAndWoe": "",
+                    "Woe": ""
+                },
+                "DemonbaneWarrior": {
+                    "Note": ""
+                },
+                "UnwaveringMien": {
+                    "Note": ""
+                },
+                "Woodcraft": {
+                    "Note": ""
+                }
+            },
+            "Equipment": {
+                "BravosBrew": {
+                    "Greater": {
+                        "FearLabel": ""
+                    },
+                    "Lesser": {
+                        "FearLabel": ""
+                    },
+                    "Moderate": {
+                        "FearLabel": ""
+                    }
+                },
+                "EagleEyeElixir": {
+                    "Greater": {
+                        "SecretLabel": ""
+                    },
+                    "Lesser": {
+                        "SecretLabel": ""
+                    },
+                    "Major": {
+                        "SecretLabel": ""
+                    },
+                    "Moderate": {
+                        "SecretLabel": ""
+                    }
+                },
+                "NosoiCharm": {
+                    "RequestLabel": "",
+                    "PerformanceLabel": ""
+                },
+                "PhantomShroud": {
+                    "StrikeLabel": ""
+                }
+            },
+            "Fetchling": {
+                "DeepFetchling": {
+                    "Prompt": ""
+                }
+            },
+            "Fleshwarp": {
+                "CoatingOfSlime": {
+                    "CriticalHit": ""
+                },
+                "LivingWeapon": {
+                    "Prompt": ""
+                },
+                "MutateWeapon": {
+                    "Target": "",
+                    "Bonus": "",
+                    "Reach": "",
+                    "Accuracy": ""
+                }
+            },
+            "FollowTheExpert": {
+                "Prompt": ""
+            },
+            "GameHunterDedication": {
+                "TargetHuntedPrey": ""
+            },
+            "Ganzi": {
+                "Irrepressible": {
+                    "SaveNote": ""
+                }
+            },
+            "Ghoul": {
+                "FullySatiated": "",
+                "Satiated": "",
+                "SickeningBite": {
+                    "criticalSuccess": "",
+                    "success": ""
+                }
+            },
+            "Gnome": {
+                "GrimInsight": {
+                    "SaveNote": ""
+                }
+            },
+            "Gunslinger": {
+                "Way": {
+                    "Prompt": ""
+                }
+            },
+            "HalfElf": {
+                "EarnedGlory": {
+                    "Note": ""
+                }
+            },
+            "Halfling": {
+                "Innocuous": {
+                    "Note": ""
+                },
+                "KeenEyes": {
+                    "Label": ""
+                },
+                "SureFeet": {
+                    "BalanceNote": "",
+                    "ClimbNote": ""
+                }
+            },
+            "Hobgoblin": {
+                "AgonizingRebuke": {
+                    "Note": ""
+                },
+                "CantorianReinforcement": {
+                    "Note": ""
+                },
+                "WarConditioning": {
+                    "Prompt": ""
+                }
+            },
+            "HouseOfPerfection": {
+                "Label": "",
+                "Prompt": "",
+                "UnblinkingFlame": "",
+                "UnbreakingWaves": "",
+                "UnfoldingWind": "",
+                "UntwistingIron": ""
+            },
+            "Human": {
+                "SaocAstrology": {
+                    "Prompt": ""
+                },
+                "VikingShieldbearer": {
+                    "Prompt": ""
+                },
+                "WitchWarden": {
+                    "SaveNote": ""
+                }
+            },
+            "HuntPrey": {
+                "TargetHuntedPrey": "",
+                "SeekHuntedPrey": "",
+                "TrackHuntedPrey": "",
+                "FirstHitDamage": "",
+                "FirstHitSwitch": ""
+            },
+            "Inventor": {
+                "Innovation": {
+                    "Prompt": "",
+                    "Armor": {
+                        "AllowedDrops": "",
+                        "Prompt": ""
+                    },
+                    "Construct": {
+                        "Prompt": ""
+                    },
+                    "Weapon": {
+                        "AllowedDrops": "",
+                        "Prompt": ""
+                    }
+                },
+                "Modification": {
+                    "Initial": {
+                        "AllowedDrops": "",
+                        "Prompt": ""
+                    }
+                }
+            },
+            "Investigator": {
+                "Methodology": {
+                    "Prompt": ""
+                }
+            },
+            "Leshy": {
+                "Seedpod": {
+                    "Note": ""
+                },
+                "ThornedSeedpod": {
+                    "Note": ""
+                }
+            },
+            "Lich": {
+                "HandOfTheLich": {
+                    "Note": ""
+                }
+            },
+            "LitTorch": "",
+            "Lizardfolk": {
+                "ParthenogenicHatchling": {
+                    "Note": ""
+                },
+                "GuidedByTheStars": {
+                    "Prompt": ""
+                }
+            },
+            "MagicalExperiment": {
+                "EnhancedSenses": "",
+                "ResistantSkin": "",
+                "TouchTelepathy": ""
+            },
+            "Magus": {
+                "ArcaneCascade": {
+                    "WeaponDamage": ""
+                },
+                "HybridStudy": {
+                    "Prompt": ""
+                },
+                "SparklingTarge": {
+                    "DefendingLabel": ""
+                }
+            },
+            "MarkForDeath": {
+                "TargetMark": "",
+                "SeekMark": "",
+                "DeceiveMark": ""
+            },
+            "Monk": {
+                "SacredKi": {
+                    "Prompt": ""
+                }
+            },
+            "Mummy": {
+                "AccursedTouch": {
+                    "Note": {
+                        "Base": "",
+                        "FourteenthLevel": "",
+                        "TwentiethLevel": ""
+                    }
+                },
+                "Terrain": {
+                    "Arctic": "",
+                    "Desert": "",
+                    "Mountain": "",
+                    "Prompt": "",
+                    "Swamp": ""
+                }
+            },
+            "PackAttack": {
+                "Label": ""
+            },
+            "PreciseStrike": {
+                "Finisher": ""
+            },
+            "Orc": {
+                "HoldMark": {
+                    "Axe": "",
+                    "Shield": "",
+                    "Torch": "",
+                    "Prompt": ""
+                }
+            },
+            "Poppet": {
+                "WashOut": {
+                    "Note": ""
+                }
+            },
+            "Psychic": {
+                "UnleashPsyche": {
+                    "DamageLabel": ""
+                }
+            },
+            "SpellEffectProtection": {
+                "Prompt": ""
+            },
+            "SpellmastersResilience": {
+                "Prompt": ""
+            },
+            "Sprite": {
+                "LuminousSprite": {
+                    "Light": ""
+                },
+                "SpritesSpark": {
+                    "Draxie": "",
+                    "LuminousSprite": "",
+                    "Grig": "",
+                    "Melixie": "",
+                    "Nyktera": "",
+                    "Pixie": ""
+                }
+            },
+            "Swashbuckler": {
+                "Style": {
+                    "Prompt": ""
+                }
+            },
+            "Suli": {
+                "Dualborn": {
+                    "FirstElement": "",
+                    "SecondElement": ""
+                },
+                "ElementalAssault": {
+                    "Prompt": ""
+                }
+            },
+            "Target": {
+                "Necromancer": ""
+            },
+            "ToggleProperty": {
+                "Triangulate": "",
+                "GourdHead": "",
+                "TagTeam": ""
+            },
+            "TOTMToggle": {
+                "FirstRangeIncrement": "",
+                "FlatFooted": "",
+                "Vampire": "",
+                "Undead": ""
+            },
+            "TrinityGeodeLabel": "",
+            "UndeadSlayer": {
+                "SlayersBlessing": {
+                    "Note": ""
+                }
+            },
+            "Vampire": {
+                "ViciousFangs": {
+                    "Note": {
+                        "FourteenthLevel": "",
+                        "TwentiethLevel": "",
+                        "Base": ""
+                    }
+                }
+            },
+            "Vishkanya": {
+                "VenomResistantVishkanya": {
+                    "PoisonSaveNote": "",
+                    "VirulentSaveNote": ""
+                }
             }
         },
         "AreaTypeCube": "Cubo",
@@ -5844,7 +7165,320 @@
             "ForceGhostTouchPositiveDoubleNonMagical": "tranne forza, tocco fantasma o positivi; resistenza doppia contro i non magici",
             "ForceGhostTouchNegativeDoubleNonMagical": "tranne forza, tocco fantasma o negativi; resistenza doppia contro i non magici"
         },
-        "TraitDescriptionFinite": "I piani con questo tratto consistono in un ammontare limitato di spazio."
+        "TraitDescriptionFinite": "I piani con questo tratto consistono in un ammontare limitato di spazio.",
+        "AccessoryPropertyRuneCalled": "",
+        "AccessoryPropertyRuneMajorPaired": "",
+        "AccessoryPropertyRunePaired": "",
+        "AccessoryPropertyRunePresentable": "",
+        "AccessoryPropertyRuneSnagging": "",
+        "AccessoryPropertyRuneSoftLanding": "",
+        "ArmorPropertyRuneBitter": "",
+        "ArmorPropertyRuneGreaterStanching": "",
+        "LanguageAdlet": "",
+        "LanguageAnugobu": "",
+        "PreciousMaterialNoqual": "",
+        "Repost": "",
+        "ResistancesExceptionLabel": "",
+        "ResistancesExceptionPlaceholder": "",
+        "SelectLabel": "",
+        "SpellcastingSettings": {
+            "Title": "",
+            "AutoHeightenLabel": "",
+            "AutoHeightenDefault": ""
+        },
+        "TraitAmp": "",
+        "TraitAsura": "",
+        "TraitCapacity3": "",
+        "TraitCapacity4": "",
+        "TraitDescriptionClass": "",
+        "TraitDescriptionContract": "",
+        "TraitDescriptionKickback": "",
+        "TraitDescriptionPsyche": "",
+        "TraitDescriptionPsychic": "",
+        "TraitDescriptionReflection": "",
+        "TraitDescriptionRepeating": "",
+        "TraitDescriptionShisk": "",
+        "TraitDescriptionSteam": "",
+        "TraitDescriptionThaumaturge": "",
+        "TraitDescriptionTrueName": "",
+        "TraitDescriptionUnstable": "",
+        "TraitDeviant": "",
+        "TraitKaiju": "",
+        "LanguageDrooni": "",
+        "TraitAppliedToBootsCapeCloakOrUmbrella": "",
+        "TraitAppliedToDuelingCapeOrShield": "",
+        "TraitAppliedToBucklerShield": "",
+        "TraitArrowVulnerability": "",
+        "TraitAttached": "",
+        "TraitClockwork": "",
+        "TraitCobbled": "",
+        "TraitCombination": "",
+        "TraitDeadly": "",
+        "TraitDescriptionGadget": "",
+        "TraitDescriptionGhoran": "",
+        "TraitDescriptionGhul": "",
+        "TraitDescriptionGoloma": "",
+        "TraitDescriptionHampering": "",
+        "LanguageXanmba": "",
+        "TraitDescriptionDoubleBarrel": "",
+        "TraitDescriptionEsoterica": "",
+        "TraitScatter10": "",
+        "AccessoryPropertyRuneDragonsBreath": "",
+        "AccessoryPropertyRuneGreaterPaired": "",
+        "ArmorPropertyRuneGreaterDread": "",
+        "LanguageTekritanin": "",
+        "PreciousMaterialDjezet": "",
+        "PreciousMaterialGrisantianPelt": "",
+        "PreciousMaterialGrisantianPeltDescription": "",
+        "PreciousMaterialInubrix": "",
+        "PreciousMaterialNoqualDescription": "",
+        "PreciousMaterialPeachwood": "",
+        "TraitAffixededToFirearmWithTheKickbackTrait": "",
+        "TraitAffixedToHeadgear": "",
+        "TraitAffixedToARangedWeapon": "",
+        "TraitAppliedToAWindPoweredVehicle": "",
+        "TraitAppliedToAnyItemOfLightOrNegligibleBulk": "",
+        "TraitAppliedToAnyVisibleArticleOfClothing": "",
+        "TraitAppliedToBeltCapeCloakOrScarf": "",
+        "TraitAppliedToShield": "",
+        "TraitCapacity": "",
+        "TraitCircus": "",
+        "TraitDescriptionAesir": "",
+        "TraitDescriptionAftermath": "",
+        "TraitDescriptionAgathion": "",
+        "TraitDescriptionAndroid": "",
+        "TraitDescriptionDeviant": "",
+        "TraitDescriptionGrimoire": "",
+        "TraitDescriptionInventor": "",
+        "TraitDescriptionPortable": "",
+        "TraitDescriptionPoppet": "",
+        "TraitDescriptionShoony": "",
+        "TraitDescriptionSkeleton": "",
+        "TraitDescriptionSocial": "",
+        "TraitDescriptionSubjectiveGravity": "",
+        "TraitDescriptionSummoned": "",
+        "TraitDescriptionVanara": "",
+        "TraitDescriptionAdjustment": "",
+        "TraitDescriptionCatalyst": "",
+        "TraitDescriptionSpellheart": "",
+        "TraitFatalAim": "",
+        "TraitFatalAimD10": "",
+        "TraitFatalAimD12": "",
+        "TraitFatal": "",
+        "TraitFormian": "",
+        "TraitFulu": "",
+        "TraitGadget": "",
+        "TraitGrimoire": "",
+        "TraitMagus": "",
+        "TraitMetal": "",
+        "TraitMindshift": "",
+        "TraitMisfortuneEffects": "",
+        "TraitModification": "",
+        "TraitNagaji": "",
+        "TraitPortable": "",
+        "TraitPoppet": "",
+        "TraitSocial": "",
+        "TraitSpellheart": "",
+        "TraitSpellshot": "",
+        "TraitTanggal": "",
+        "TraitTech": "",
+        "TraitTechnological": "",
+        "TraitThaumaturge": "",
+        "TraitTitan": "",
+        "TraitTroop": "",
+        "TraitTrueName": "",
+        "TraitTwoHand": "",
+        "TraitUnstable": "",
+        "TraitVanara": "",
+        "TraitVersatile": "",
+        "TraitVersatileAcid": "",
+        "TraitVersatileChaotic": "",
+        "TraitWayang": "",
+        "TraitWildHunt": "",
+        "TraitWyrwood": "",
+        "TraitDescriptionCapacity": "",
+        "TraitDescriptionClockwork": "",
+        "TraitDescriptionClimbing": "",
+        "TraitDescriptionCobbled": "",
+        "TraitDescriptionCombination": "",
+        "TraitDescriptionMetal": "",
+        "ArmorPropertyRuneDeathless": "",
+        "ArmorPropertyRuneDread": "",
+        "ArmorPropertyRuneImplacable": "",
+        "ArmorPropertyRuneMajorStanching": "",
+        "ArmorPropertyRuneStanching": "",
+        "ArmorPropertyRuneTrueStanching": "",
+        "LanguageArcadian": "",
+        "LanguageCalda": "",
+        "TraitAttachedToAThrownWeapon": "",
+        "TraitAttachedToCrossbowOrFirearmFiringMechanism": "",
+        "TraitAttachedToCrossbowOrFirearmScope": "",
+        "TraitAttachedToFirearm": "",
+        "TraitAttachedToFirearmFiringMechanism": "",
+        "TraitAttachedToFirearmScope": "",
+        "TraitAutomaton": "",
+        "TraitCapacity5": "",
+        "TraitCatalyst": "",
+        "TraitConcussive": "",
+        "TraitCriticalFusion": "",
+        "TraitDarvakka": "",
+        "TraitDescriptionConrasu": "",
+        "TraitDescriptionCriticalFusion": "",
+        "TraitDescriptionDarvakka": "",
+        "TraitDescriptionFatalAim": "",
+        "TraitDescriptionGunslinger": "",
+        "TraitDescriptionMagus": "",
+        "TraitDescriptionPeachwood": "",
+        "TraitDescriptionEidolon": "",
+        "TraitDiv": "",
+        "TraitDoubleBarrel": "",
+        "TraitEachRuneAppliedToASeparateItemThatHasPockets": "",
+        "LanguageFormian": "",
+        "LanguageEkujae": "",
+        "LanguageGirtablilu": "",
+        "LanguageGoloma": "",
+        "LanguageGrioth": "",
+        "LanguageHwan": "",
+        "LanguageIblydan": "",
+        "LanguageIkeshti": "",
+        "TraitDescriptionAutomaton": "",
+        "TraitDescriptionMindshift": "",
+        "TraitDescriptionModification": "",
+        "TraitDescriptionMinion": "",
+        "TraitDescriptionScatter": "",
+        "AccessoryPropertyRuneGreaterWindCatcher": "",
+        "AccessoryPropertyRuneSpellBastion": "",
+        "AccessoryPropertyRuneWindCatcher": "",
+        "ArmorPropertyRuneModerateDread": "",
+        "LanguageAncientOsiriani": "",
+        "LanguageKaava": "",
+        "LanguageKashrishi": "",
+        "LanguageKibwani": "",
+        "LanguageKovintal": "",
+        "LanguageLirgeni": "",
+        "LanguageMahwek": "",
+        "LanguageMiGo": "",
+        "LanguageMinaten": "",
+        "LanguageMunavri": "",
+        "LanguageMzunu": "",
+        "LanguageNagaji": "",
+        "LanguageOcotan": "",
+        "LanguageOkaiyan": "",
+        "LanguageRasu": "",
+        "LanguageRatajin": "",
+        "LanguageRazatlani": "",
+        "LanguageSamsaran": "",
+        "LanguageSasquatch": "",
+        "LanguageSenzar": "",
+        "LanguageShae": "",
+        "LanguageShisk": "",
+        "LanguageVanara": "",
+        "LanguageVishkanyan": "",
+        "LanguageWyrwood": "",
+        "LanguageYithian": "",
+        "MagicTraditionUseSpellLabel": "",
+        "PreciousMaterialAbysium": "",
+        "PreciousMaterialAbysiumDescription": "",
+        "PreciousMaterialSisterstoneDescription": "",
+        "PreciousMaterialSisterstoneDusk": "",
+        "PreciousMaterialSisterstoneScarlet": "",
+        "PreciousMaterialSovereignSteel": "",
+        "PreciousMaterialSovereignSteelDescription": "",
+        "PreparationTypeItems": "",
+        "TraitDescriptionVishkanya": "",
+        "TraitDescriptionWildHunt": "",
+        "TraitFinite": "",
+        "TraitGhoran": "",
+        "TraitGhul": "",
+        "TraitGoloma": "",
+        "TraitGrioth": "",
+        "TraitGunslinger": "",
+        "TraitHantu": "",
+        "TraitIkeshti": "",
+        "TraitIncarnate": "",
+        "TraitInjection": "",
+        "TraitKami": "",
+        "TraitKashrishi": "",
+        "TraitKickback": "",
+        "TraitKovintus": "",
+        "TraitLocathah": "",
+        "TraitMortic": "",
+        "TraitMounted": "",
+        "TraitMunavri": "",
+        "TraitPaaridar": "",
+        "TraitPervasiveMagic": "",
+        "TraitPhantom": "",
+        "TraitPsyche": "",
+        "TraitPsychic": "",
+        "TraitRadiation": "",
+        "TraitRange": "",
+        "TraitRatajin": "",
+        "TraitReflection": "",
+        "TraitReload": "",
+        "TraitRepeating": "",
+        "TraitSamsaran": "",
+        "TraitScatter": "",
+        "TraitScatter5": "",
+        "TraitScatter15": "",
+        "TraitSeugathi": "",
+        "TraitSewnIntoClothing": "",
+        "TraitShabti": "",
+        "TraitShisk": "",
+        "TraitSiktempora": "",
+        "TraitSkelm": "",
+        "TraitSteam": "",
+        "TraitStheno": "",
+        "TraitSummoner": "",
+        "TraitTandem": "",
+        "TraitThrown80": "",
+        "TraitThrown200": "",
+        "TraitVersatileCold": "",
+        "TraitVersatileElectricity": "",
+        "TraitVersatileEvil": "",
+        "TraitVersatileForce": "",
+        "TraitVersatileGood": "",
+        "TraitVersatileLawful": "",
+        "TraitVersatileNegative": "",
+        "TraitVersatileSonic": "",
+        "TraitVishkanya": "",
+        "TraitVolley": "",
+        "TraitTattooedOnTheBody": "",
+        "TraitWornAndAttachedToTwoWeapons": "",
+        "TraitWornOrOneHand": "",
+        "TraitEtchedOntoMedHeavyArmor": "",
+        "WeaponGroupFirearm": "",
+        "SpellNonCantripLabel": "",
+        "ToggleEffectUnidentified": "",
+        "TraitAdjustment": "",
+        "TraitAesir": "",
+        "TraitAffixedToMediumHeavyArmor": "",
+        "TraitAffixedToArmorOrTravelersClothing": "",
+        "TraitAffixededToCrossbowOrFirearm": "",
+        "TraitAffixededToFirearm": "",
+        "TraitAffixededToFirearmWithAReloadOf1": "",
+        "TraitAffixededToATwoHandedFirearmOrCrossbow": "",
+        "TraitAftermath": "",
+        "TraitAgathion": "",
+        "TraitAnugobu": "",
+        "TraitDescriptionConcussive": "",
+        "TraitDescriptionContingency": "",
+        "TraitDescriptionAmp": "",
+        "TraitDescriptionIncarnate": "",
+        "TraitDescriptionInjection": "",
+        "TraitDescriptionJousting": "",
+        "TraitDescriptionKashrishi": "",
+        "TraitDescriptionMounted": "",
+        "TraitDescriptionNagaji": "",
+        "TraitDescriptionSummoner": "",
+        "TraitDescriptionTech": "",
+        "TraitDescriptionFulu": "",
+        "TraitEsoterica": "",
+        "TraitEvolution": "",
+        "PreciousMaterialDjezetDescription": "",
+        "PreciousMaterialInubrixDescription": "",
+        "PreciousMaterialPeachwoodDescription": "",
+        "PreciousMaterialSiccatite": "",
+        "PreciousMaterialSiccatiteDescription": ""
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
