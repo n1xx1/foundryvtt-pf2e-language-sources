@@ -1,5 +1,5 @@
 {
-    "label": "Bestiario 1 (SRD)",
+    "label": "Bestiario 1",
     "entries": {
         "Adult White Dragon": {
             "name": "Drago Bianco Adulto",
@@ -60,7 +60,7 @@
                 },
                 "Ground Slam": {
                     "name": "Schianto a Terra",
-                    "description": "<p>Il drago si schianta a terra. Può farlo se si trova a terra o se Vola entro 3 metri dal terreno. Ogni creatura sul terreno entro @Template[type:emanation|distance:3]{3 metri} deve superare un TS su @Check[type:reflex|dc:29|traits:damaging-effect], altrimenti cade @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} e subisce [[/r 3d6[bludgeoning]]]{danni contundenti}.</p>\n<p>Poi il drago può effettuare un Passo.</p>"
+                    "description": "<p>Il drago si schianta a terra. Può farlo se si trova a terra o se Vola entro 3 metri dal terreno. Ogni creatura sul terreno entro @Template[type:emanation|distance:3]{3 metri} deve superare un TS su @Check[type:reflex|dc:29|traits:damaging-effect], altrimenti cade @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} e subisce [[/r 3d6[bludgeoning]]]{3d6 danni contundenti}.</p>\n<p>Poi il drago può effettuare un Passo.</p>"
                 }
             }
         },
@@ -2317,14 +2317,16 @@
                     "description": "<p>Il drago ricarica il suo Soffio ogni volta che mette a segno un colpo critico con un Colpo.</p>"
                 },
                 "Ground Slam": {
-                    "name": "Schianto a Terra"
+                    "name": "Schianto a Terra",
+                    "description": "<p>Il drago si schianta a terra. Può farlo se si trova a terra o se Vola entro 3 metri dal terreno. Ogni creatura sul terreno entro @Template[type:emanation|distance:3]{3 metri} deve superare un TS su @Check[type:reflex|dc:24|traits:damaging-effect], altrimenti cade @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} e subisce [[/r 2d6[bludgeoning]]]{2d6 danni contundenti}.</p>\n<p>Poi il drago può effettuare un Passo.</p>"
                 },
                 "Ice Climb": {
                     "name": "Scalare sul Ghiaccio",
                     "description": "<p>Un drago bianco può scalare sul ghiaccio come se possedesse la Velocità di scalare indicata. Ignora il terreno difficile e il terreno difficile superiore dovuto al ghiaccio e alla neve e non rischia di cadere quando attraversa il ghiaccio.</p>"
                 },
                 "Shape Ice": {
-                    "name": "Plasmare Ghiaccio"
+                    "name": "Plasmare Ghiaccio",
+                    "description": "<p>Il drago rimodella un cubo, di ghiaccio o di neve, da lui toccato con lato fino a 3 metri. Ogni creatura che si trova sul ghiaccio deve superare un TS su @Check[type:reflex|dc:15] o una prova di @Check[type:acrobatics|dc:15].<p>\n<p>ln caso di fallimento, la creatura cade @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} sul ghiaccio; in caso di fallimento critico, cade interamente fuori dal ghiaccio ed è anche prona.</p>"
                 }
             }
         },
@@ -2352,10 +2354,12 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
                 },
                 "Ambush": {
-                    "name": "Imboscata"
+                    "name": "Imboscata",
+                    "description": "<p><strong>Innesco</strong> Una creatura passa entro 6 metri dal nascondiglio della murena gigante e non ha individuato la murena gigante.</p>\n<hr />\n<p><strong>Effetto</strong> La murena gigante si tuffa fuori dal suo nascondiglio, Nuota direttamente verso la creatura innescante ed effettua un Colpo di fauci contro di essa. La creatura bersaglio è @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparata} contro questo attacco.</p>"
                 },
                 "Pharyngeal Jaws": {
-                    "name": "Mascelle Faringee"
+                    "name": "Mascelle Faringee",
+                    "description": "<p><strong>Requisiti</strong> La murena gigante ha @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Afferrato} una creatura con le sue fauci.</p>\n<hr />\n<p><strong>Effetto</strong> La murena gigante usa la sua seconda coppia di fauci per tirare la preda nel suo gozzo. La murena infligge [[/r (1d6+4)[piercing]]]{1d6+4 danni perforanti} alla creatura Afferrata e ottiene bonus di circostanza +2 ai suoi tentativi di Inghiottire e alla CD per Sfuggire della creatura. Questo effetto termina se il bersaglio Sfugge o se la murena gigante lo Inghiotte.</p>"
                 },
                 "Swallow Whole": {
                     "name": "Inghiottire",
@@ -2382,13 +2386,16 @@
                     "description": "<p>La Velocità di scalare del drago funziona solo quando il drago scala le superfici di pietra.</p>"
                 },
                 "Frightful Presence": {
-                    "name": "Presenza Terrificante"
+                    "name": "Presenza Terrificante",
+                    "description": "<p>@Template[type:emanation|distance:27]{27 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "Twisting Tail": {
-                    "name": "Coda Serpeggiante"
+                    "name": "Coda Serpeggiante",
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata della coda del drago di rame usa un'azione di movimento o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il drago effettua un Colpo con la coda contro la creatura con penalità -2. Se colpisce, il drago interrompe l'azione della creatura.</p>"
                 },
                 "Breath Weapon": {
-                    "name": "Soffio"
+                    "name": "Soffio",
+                    "description": "<p>Il drago di rame soffia in uno dei due modi seguenti.</p>\n<p>Il drago non può usare di nuovo il Soffio per [[/br 1d4 #Ricarica Soffio]]{1d4 round}.</p>\n<ul>\n<li><strong>Acido</strong> Il drago soffia acido in una @Template[type:line|distance:18|traits:acid,arcane,evocation,damaging-effect] che infligge [[/r 8d6[acid]]]{8d6 danni da acido} (TS @Check[type:reflex|dc:26|basic:true]).</li>\n<li><strong>Gas Rallentante</strong> Il drago soffia gas rallentante in una @Template[type:line|distance:18|traits:arcane,transmutation]. Ogni creatura nell'area deve superare un TS su @Check[type:fortitude|dc:26], altrimenti è @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentata 1} per 1 round (o @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentata 2} in caso di fallimento critico).</li>\n</ul>"
                 },
                 "Draconic Frenzy": {
                     "name": "Frenesia Draconica",
@@ -2404,7 +2411,8 @@
                 "Claw": {
                     "name": "Artiglio"
                 }
-            }
+            },
+            "description": "<p>I draghi di rame, esseri volubili e sempre pronti a farsi una bella risata in compagnia, sono anche i più scaltri tra i draghi metallici, ma questi aspetti non interferiscono in alcun modo con la loro missione di diffondere la libertà nelle regioni oppresse dalla tirannia. I draghi di rame sono edonisti che tendono a indulgere nei piaceri più semplici, ma sono anche creature empatiche che non giudicano gli altri ed esaminano le situazioni dal maggior numero possibile di punti di vista. Questa filosofia comporta però anche qualche controindicazione: i draghi di rame sono sensibili alle influenze negative e a volte tendono a giustificare le malefatte meno gravi commesse dai loro cugini cromatici e da altre creature crudeli. I draghi di rame hanno anche qualche difficoltà a tenere a bada il loro temperamento quando qualcosa li fa arrabbiare.</p>\n<p>I draghi di rame tendono a stabilirsi nelle zone collinari calde o temperate, ma a causa della loro natura non restano nella stessa tana per molti anni. A volte vivono in mezzo alla gente, specialmente se esiste una comunità nanica nella loro zona. Alcuni draghi di rame giungono perfino a venerare gli dei generalmente venerati solo dagli umanoidi. Tra questi draghi il culto più diffuso è quello di Cayden Cailean, con cui condividono l'amore per la libertà e la passione per le bevande alcooliche.</p>\n<p>Le tattiche di combattimento dei draghi di rame sono poco ortodosse, come il loro senso dell'umorismo: per vincere gli scontri preferiscono schernire e imbrogliare l'avversario anziché ricorrere alla forza bruta. Invecchiando, i draghi di rame perfezionano la loro arte comica al punto di neutralizzare gli avversari facendoli ridere a crepapelle.</p>\n<hr />\n<p>I draghi metallici, modelli di virtù, nobiltà e grazia, sono creature benevole e rate come esseri leggendari, affini alle divinità per potenza e maestà. Pochi individui hanno visto con i propri occhi un drago metallico, ma le storie che parlano dei loro interventi negli affari dei mortali (e del loro trapasso) hanno sempre un'enorme risonanza. I draghi metallici vengono classificati in base alla somiglianza delle loro splendenti scaglie con i metalli utilizzati dagli umanoidi nel commercio, nella guerra e nell'industria, ma questi possenti esseri, diversi tra loro sia negli interessi che nelle capacità, non sembrano curarsi di questa associazione a tali materiali grezzi. Del resto, paragonare un drago d'oro a una moneta dello stesso materiale è come paragonare un oceano a un bicchier d'acqua: anche se sono fatti della stessa materia, la potenza, la vastità e la maestà del primo surclassa completamente l'altro.</p>\n<p>Oltre ai draghi metallici e ai loro antagonisti cromatici, esistono anche altri tipi di draghi nel mondo e nel resto del multiverso. Le leggendarie terre di Tian Xia, dall'altra parte del globo, sono popolate dai draghi imperiali, esseri serpentiformi che proteggono l'equilibrio cosmico e difendono la loro patria ancestrale. Fuori dal Piano Materiale, i draghi primevi, come il dispotico drago della salsedine e il solitario drago delle nuvole, influenzano la natura e l'evoluzione dei Piani Elementali. Sicuramente esistono innumerevoli altri tipi di draghi, inclusi i draghi che dimorano nei piani d'esistenza più remoti e anche, secondo alcuni, i draghi primigeni che si librano tra le stelle.</p>"
         },
         "Satyr": {
             "name": "Satiro",
@@ -2417,14 +2425,22 @@
                     "name": "Arco Corto"
                 },
                 "Sylvan Wine": {
-                    "name": "Vino Silvano"
+                    "name": "Vino Silvano",
+                    "description": "<p>L'otre di vino di un satiro incanta magicamente l'alcol contenuto al suo interno. Con un'azione Interagire, una creatura vivente può bere l'alcol e ottenere bonus di oggetto +1 ai TS su Volontà e bonus +3 ai TS su Volontà contro gli effetti di paura nell'ora seguente. Quando l'otre viene rimosso dalla persona del satiro, la magia permane solo finché il vino non va a male. L'otre di vino può contenere fino a otto drafts di vino.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.QDs8t1U1IepzYlyi]{Effetto: Vino Silvano}</p>"
                 },
                 "Fleet Performer": {
                     "name": "Intrattenitore Lesto",
                     "description": "<p>Quando il satiro Suona il Flauto per lanciare un incantesimo, può fare un Passo o Avanzare come parte dell'attività.</p>"
                 },
                 "Play the Pipes": {
-                    "name": "Suonare il Flauto"
+                    "name": "Suonare il Flauto",
+                    "description": "<p><strong>Requisiti</strong> Il satiro impugna uno strumento musicale.</p>\n<hr />\n<p><strong>Effetto</strong> Il satiro suona una melodia col suo strumento musicale per lanciare <em>@UUID[Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6]{charme}</em>, <em>@UUID[Compendium.pf2e.spells-srd.4koZzrnMXhhosn0D]{paura}</em>, <em>@UUID[Compendium.pf2e.spells-srd.o4lRVTwSxnOOn5vl]{sonno}</em> o <em>@UUID[Compendium.pf2e.spells-srd.qwlh6aDgi86U3Q7H]{suggestione}</em> senza spendere lo slot incantesimo e usando la sua musica anziché fornire i componenti dell'azione di Lancio di Incantesimo. L'incantesimo ottiene il tratto uditivo e bersaglia tutte le creature in un'@Template[type:emanation|distance:60] invece dei consueti bersagli. Una creatura che supera il suo TS su Volontà contro qualsiasi incantesimo è poi temporaneamente immune agli incantesimi suonati dal flauto di quel satiro per 1 minuto. I satiri sono immuni a questa musica.</p>"
+                },
+                "Wineskin": {
+                    "name": "Otre di Vino"
+                },
+                "Panpipes": {
+                    "name": "Flauto di Pan"
                 }
             }
         },
@@ -2436,16 +2452,20 @@
                     "description": "<p>Il bersaglio può capire il significato delle parole di tutte le lingue e parlare le lingue di altre creature. In un gruppo misto di creature, ogni volta che il bersaglio parla può scegliere una creatura e parlarci in una lingua che la creatura capisce, anche se non sa di quale lingua si tratti.</p>\n<hr />\n<p><strong>Intensificato (7°)</strong> La durata è 8 ore.</p>"
                 },
                 "Invisibility (At Will)": {
-                    "description": "<p>Nascosto da un'illusione, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}. Questo lo rende @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuato} a tutte le creature, anche se queste possono tentare di trovare il bersaglio, rendendolo invece @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto} da esse. Se il bersaglio usa un'azione ostile, l'incantesimo termina dopo che quell'azione ostile viene completata.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> L'incantesimo dura 1 minuto, ma non termina se il bersaglio usa un'azione ostile.</p>"
+                    "description": "<p>Nascosto da un'illusione, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}. Questo lo rende @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuato} a tutte le creature, anche se queste possono tentare di trovare il bersaglio, rendendolo invece @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto} da esse. Se il bersaglio usa un'azione ostile, l'incantesimo termina dopo che quell'azione ostile viene completata.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> L'incantesimo dura 1 minuto, ma non termina se il bersaglio usa un'azione ostile.</p>",
+                    "name": "Invisibilità (A Volontà)"
                 },
                 "Tree Shape (At Will)": {
-                    "description": "<p>Ti trasformi in un albero di taglia Grande. Le prove di Percezione non rivelano la tua vera natura, ma una prova di Natura o Sopravvivenza effettuata con successo contro la CD del tuo incantesimo rivela che l'albero è nuovo nell'area. Mentre sei in forma arborea, puoi osservare qualsiasi cosa attorno a te, ma non puoi agire in alcun modo eccetto che porre fine all'incantesimo e far terminare il tuo turno usando un'azione singola con il tratto concentrazione. Come albero, la tua CA è 20 e su di te hanno effetto soltanto bonus di status, penalità di status, bonus di circostanza e penalità di circostanza. Tutti i successi e i successi critici sui tiri salvezza su Riflessi sono fallimenti.</p>"
+                    "description": "<p>Ti trasformi in un albero di taglia Grande. Le prove di Percezione non rivelano la tua vera natura, ma una prova di Natura o Sopravvivenza effettuata con successo contro la CD del tuo incantesimo rivela che l'albero è nuovo nell'area. Mentre sei in forma arborea, puoi osservare qualsiasi cosa attorno a te, ma non puoi agire in alcun modo eccetto che porre fine all'incantesimo e far terminare il tuo turno usando un'azione singola con il tratto concentrazione. Come albero, la tua CA è 20 e su di te hanno effetto soltanto bonus di status, penalità di status, bonus di circostanza e penalità di circostanza. Tutti i successi e i successi critici sui tiri salvezza su Riflessi sono fallimenti.</p>",
+                    "name": "Forma Arborea (A Volontà)"
                 },
                 "Water Breathing (Constant)": {
-                    "description": "<p>I bersagli possono respirare sott'acqua.</p>\n<hr />\n<p><strong>Intensificato (3°)</strong> La durata aumenta fino a 8 ore.</p>\n<p><strong>Intensificato (4°)</strong> La durata aumenta fino ai tuoi prossimi preparativi giornalieri.</p>"
+                    "description": "<p>I bersagli possono respirare sott'acqua.</p>\n<hr />\n<p><strong>Intensificato (3°)</strong> La durata aumenta fino a 8 ore.</p>\n<p><strong>Intensificato (4°)</strong> La durata aumenta fino ai tuoi prossimi preparativi giornalieri.</p>",
+                    "name": "Respirare Sott'Acqua (Costante)"
                 },
                 "Pass Without Trace (Constant)": {
-                    "description": "<p>Nascondi le tracce che lasci dietro di te, in modo che per gli altri sia più difficile trovarti. La CD necessaria per Tracciarti ottiene bonus di condizione +4 oppure ha un valore pari alla CD dell'incantesimo, quale dei due sia più alto. Puoi beneficiare soltanto di un passare senza tracce alla volta.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> La durata aumenta fino a 8 ore.</p>\n<p><strong>Intensificato (4°)</strong> La durata aumenta fino a 8 ore. L'incantesimo ha un raggio d azione di 6 metri e un'aura di un'emanazione di 6 metri, che colpisce fino a 10 creature a tua scelta all'interno di quell'area.</p>"
+                    "description": "<p>Nascondi le tracce che lasci dietro di te, in modo che per gli altri sia più difficile trovarti. La CD necessaria per Tracciarti ottiene bonus di condizione +4 oppure ha un valore pari alla CD dell'incantesimo, quale dei due sia più alto. Puoi beneficiare soltanto di un passare senza tracce alla volta.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> La durata aumenta fino a 8 ore.</p>\n<p><strong>Intensificato (4°)</strong> La durata aumenta fino a 8 ore. L'incantesimo ha un raggio d azione di 6 metri e un'aura di un'emanazione di 6 metri, che colpisce fino a 10 creature a tua scelta all'interno di quell'area.</p>",
+                    "name": "Passare Senza Tracce (Costante)"
                 },
                 "Claw": {
                     "name": "Artiglio"
@@ -2467,12 +2487,15 @@
                     "description": "<p>La megera verde assume l'aspetto di qualsiasi donna umanoide Media. Questo non cambia la sua Velocità o i suoi bonus di attacco o di danno con i suoi Colpi, ma può cambiare il tipo di danni che i suoi Colpi infliggono (solitamente in contundenti).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Enfeebling Humors": {
-                    "name": "Umori Indebolenti"
+                    "name": "Umori Indebolenti",
+                    "description": "<p>Una creatura danneggiata dall'artiglio della megera deve superare un TS su @Check[type:fortitude|dc:20], altrimenti è @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 1} per 1 giorno. ln caso di fallimento critico, o se viene colpita di nuovo e fallisce il suo TS una seconda volta, è @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 2} per 1 giorno.</p>"
                 },
                 "Exhale Miasma": {
-                    "name": "Esalare Miasma"
+                    "name": "Esalare Miasma",
+                    "description": "<p>La megera verde esala un miasma di vapori verdi. Ogni creatura vivente entro un @Template[type:cone|distance:4,5] è influenzata dai suoi umori indebolenti (tentando un TS come di consueto).</p>\n<p>La megera non può usare di nuovo Esalare Miasma per [[/br 1d4 #round]]{1d4 round}.</p>"
                 }
-            }
+            },
+            "description": "<p>Le megere verdi odiano la bellezza e la purezza, quindi ricorrono a travestimenti e tradimenti per attirare e uccidere gli innocenti, corrompere i puri di cuore e frantumare la mente e la rettitudine delle loro vittime. Le megere verdi formulano piani ingegnosi per rovinare completamente tutti quelli che incrociano il loro cammino, nonché gli individui buoni o giusti la cui stessa esistenza risulti un insulto alla sensibilità contorta della megera. I complicati scandali messi in atto dalle megere verdi prevedono imposture, scambi di identità, seduzioni e atti di tradimento delle persone amate, spesso anche tutto in combinazione.</p>\n<hr />\n<p>Le megere, maligne vegliarde che si nascondono ai confini delle aree civilizzate, usano le loro ingannevoli capacità magiche per depredare, manipolare e corrompere gli umanoidi. Alcuni sostengono che le megere siano nate da quei fatati che sono stati distorti dal loro egoismo interiore. Le megere si riuniscono in congreghe per ottenere un potere maggiore, fabbricare oggetti magici unici noti come <em>@UUID[Compendium.pf2e.equipment-srd.ACa9QlFqdmW4s2Th]{occhi della megera}</em> e sono famose per sostituire i bambini umanoidi con la propria prole: questi bambini sono @UUID[Compendium.pf2e.pathfinder-bestiary.bAjHCeyNcPRqOmLv]{changeling}, creature che racchiudono il potenziale per diventare megere a loro volta.</p>"
         },
         "Elananx": {
             "name": "Elananx",
@@ -2553,19 +2576,28 @@
                     "name": "Becco"
                 },
                 "Altered Weather": {
-                    "name": "Tempo Atmosferico Alterato"
+                    "name": "Tempo Atmosferico Alterato",
+                    "description": "<p>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Un kraken rimodella il tempo atmosferico entro 3 chilometri da sé, con gli effetti del rituale <em>@UUID[Compendium.pf2e.spells-srd.XkDCzMIyc0YOjw05]{controllare tempo atmosferico}</em> centrati su se stesso e basati sul suo stato emotivo, a discrezione del GM. Se il kraken muore, il tempo atmosferico torna immediatamente alla normalità.</p>"
                 },
                 "Constrict": {
-                    "name": "Stritolare"
+                    "name": "Stritolare",
+                    "description": "<p>[[/r (2d10+17)[bludgeoning]]]{2d10+17 danni contundenti} @Check[type:fortitude|dc:40|basic:true]</p>\n<p>In caso di TS fallito, una creatura che trattiene il respiro perde aria per un valore di [[/br 1d4 #Round Persi]]{1d4 round}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Double Attack": {
-                    "name": "Attacco Doppio"
+                    "name": "Attacco Doppio",
+                    "description": "<p>Il kraken effettua due Colpi con due braccia o tentacoli diversi e ogni arto bersaglia una creatura diversa. Un Attacco Doppio conta come due attacchi al fine di determinare la Penalità da Attacchi Multipli del kraken per le ulteriori azioni, ma la penalità aumenta soltanto dopo che entrambi gli attacchi sono stati effettuati. Se il kraken usa successivamente l'azione di @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Afferrare}, Afferra un qualsiasi numero di creature che ha colpito con l'Attacco Doppio.</p>"
                 },
                 "Ink Cloud": {
-                    "name": "Nube di Inchiostro"
+                    "name": "Nube di Inchiostro",
+                    "description": "<p>Il kraken emette una nube di inchiostro velenoso in @Template[type:emanation|distance:24]. Questa nube non ha effetto al di fuori dell'acqua. Le creature all'interno della nube di inchiostro sono esposte al Veleno di Inchiostro del Kraken e sono @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuate} mentre si trovano all'interno della nube.</p>\n<p>Il kraken non può usare di nuovo la Nube di Inchiostro per [[/br 2d6 #Ricarica Nube di Inchiostro]]{2d6 round} e la nube si dissipa dopo 1 minuto.</p>"
                 },
                 "Kraken Ink": {
-                    "name": "Inchiostro del Kraken"
+                    "name": "Inchiostro del Kraken",
+                    "description": "<p>I kraken sono immuni a questo veleno.</p>\n<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:39]</p>\n<hr />\n<p><strong>Durata Massima</strong> 10 round</p>\n<p><strong>Fase 1</strong> [[/r 3d6[poison]]]{3d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 1} (1 round)</p>\n<p><strong>Fase 2</strong> [[/r 4d6[poison]]]{4d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 2} (1 round).</p>"
+                },
+                "Dominate (Animals Only)": {
+                    "name": "Dominare (Solo Animali)",
+                    "description": "<p>Comandi il bersaglio, forzandolo ad obbedire ai tuoi ordini. Se impartisci un ordine palesemente autolesionista, il bersaglio non intraprende alcuna azione finché non gli impartirai un nuovo ordine. Gli effetti si basano sul risultato del suo Tiro Salvezza su Volontà.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p>\n<p><strong>Successo</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 1} come se resistesse ai tuoi comandi.</p>\n<p><strong>Fallimento</strong> Il bersaglio segue i tuoi ordini. Ottiene la condizione @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{controllato} ma effettua un tiro salvezza su Volontà alla fine di ogni suo turno. Con un successo, l'incantesimo termina.</p>\n<p><strong>Fallimento Critico</strong> Come per fallimento, ma il bersaglio riceve un nuovo tiro salvezza soltanto nel momento in cui gli impartisci un nuovo ordine che va contro la sua natura, come uccidere i suoi alleati.</p>\n<hr />\n<p><strong>Intensificato (10°)</strong> La durata è illimitata.</p>"
                 }
             }
         },
@@ -2595,17 +2627,20 @@
                     "description": "<p>Un deva astrale con un messaggio da consegnare è continuamente protetto dall'effetto di <em>@UUID[Compendium.pf2e.spells-srd.8xRzLhwGL7Dgy3EZ]{santuario}</em> (CD 32). Se il deva infrange il <em>@UUID[Compendium.pf2e.spells-srd.8xRzLhwGL7Dgy3EZ]{santuario}</em>, l'effetto ritorna se il deva cessa le ostilità per 10 minuti.</p>"
                 },
                 "Traveler's Aura": {
-                    "name": "Aura del Viaggiatore"
+                    "name": "Aura del Viaggiatore",
+                    "description": "<p>@Template[type:emanation|distance:6]{6 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Le creature nell'aura del deva astrale sono protette dai danni ambientali degli ambienti di qualsiasi piano, inclusi il caldo e il freddo estremi e intensi e altri pericoli più esotici. Il deva astrale non è mai @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} nei confronti delle creature entro la sua aura.</p>"
                 },
                 "Divine Armament": {
                     "name": "Armamento Divino",
                     "description": "<p>Mentre un deva astrale la impugna, ogni arma ottiene l'effetto di una runa di proprietà @UUID[Compendium.pf2e.equipment-srd.DH0kB9Wbr5pDeunX]{sacra}.</p>"
                 },
                 "Stunning Strike": {
-                    "name": "Colpo Stordente"
+                    "name": "Colpo Stordente",
+                    "description": "<p><strong>Requisiti</strong> Il deva astrale ha colpito un avversario precedentemente in questo turno effettuando un Colpo con un'arma.</p>\n<hr />\n<p><strong>Effetto</strong> Il deva astrale effettua un Colpo con un'arma contro l'avversario. Se ha Successo, l'avversario deve superare un TS su @Check[type:fortitude|dc:34], altrimenti diventa @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 1}. In caso di Fallimento Critico, l'avversario è invece @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 2}.</p>"
                 }
             },
-            "name": "Deva Astrale"
+            "name": "Deva Astrale",
+            "description": "<p>I deva astrali sono i messaggeri e gli emissari scelti dei regni celestiali: servono le divinità e gli eserciti celestiali consegnando messaggi, conducendo ricognizioni e fornendo supporto a tutti coloro che hanno bisogno di aiuto. Vegliano sui viaggiatori planari e prendono sotto la loro ala i mortali più potenti per guidarli. Spesso portano con loro pergamene contenenti messaggi importanti e altri segreti celestiali.</p>\n<p>I deva astrali possono formarsi spontaneamente dalle anime di straordinari mortali di allineamento buono, ma a volte vengono anche creati intenzionalmente da tali anime da qualche divinità o semidio. Negli ultimi casi, i deva astrali spesso presentano tratti fisici che li contrassegnano come strettamente associati a quella divinità. Per esempio, un deva astrale creato da Sarenrae potrebbe sfoggiare una chioma infuocata, mentre uno creato da Torag potrebbe assomigliare più a un nano e uno creato da Desna potrebbe avere ali di farfalla invece di ali piumate. Non è raro che i deva astrali creati dalle divinità Legali Buone o Caotiche Buone condividano l'allineamento dei loro creatori.</p>\n<hr />\n<p>Le schiere celestiali degli angeli sono composte da messaggeri e guerrieri, suddivisi in cori in base alle loro capacità e competenze. La maggior parte degli angeli è neutrale buona e vive nel Nirvana, il piano della virtù e dell'illuminazione. Esistono però alcuni angeli, tra cui diverse divinità angeliche, che possiedono allineamenti diversi e che addirittura dimorano su altri piani. A prescindere dall'allineamento, gli angeli restano messaggeri benevoli dotati di aure magiche con cui aiutare i loro alleati.</p>"
         },
         "Adult White Dragon (Spellcaster)": {
             "items": {
@@ -2672,7 +2707,8 @@
                     "name": "Fiamma della Giustizia"
                 },
                 "Menacing Guardian": {
-                    "name": "Guardiano Minaccioso"
+                    "name": "Guardiano Minaccioso",
+                    "description": "<p>@Template[type:emanation|distance:9]{9 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>I nemici che iniziano il loro turno nell'area o vi entrano devono tentare un TS su @Check[type:will|dc:23].</p>\n<p>ln caso di Fallimento, subiscono penalità di status -1 ai Tiri per Colpire, ai Tiri per gli Incantesimi e ai Tiri per i Danni contro qualsiasi altro bersaglio mentre rimangono nell'aura, per le 24 ore successive o finché non danneggiano l'arconte, in base a cosa accade prima. In caso di Fallimento Critico, non possono usare azioni ostili contro qualsiasi altro bersaglio mentre rimangono nell'aura, per le 24 ore successive o finché non danneggiano l'arconte, in base a cosa accade prima.</p>\n<p>A prescindere dal risultato, una creatura diventa poi temporaneamente immune alle ulteriori auree di guardiano minaccioso per 24 ore.</p>"
                 },
                 "Retributive Strike": {
                     "name": "Colpo Punitivo",
@@ -2683,7 +2719,8 @@
                     "description": "<p>Una volta al giorno, se un arconte vede un'altra creatura lanciare <em>@UUID[Compendium.pf2e.spells-srd.VlNcjmYyu95vOUe8]{porta dimensionale}</em>, può lanciare una <em>porta dimensionale</em> innata (intensificata al 5° livello) entro 1 round per tentare di seguire quella creatura fino alla distanza massima della <em>porta dimensionale</em> dell'arconte.</p>\n<p>Se la distanza della <em>porta dimensionale</em> dell'arconte è sufficiente, l'arconte appare alla stessa distanza e direzione della creatura come prima che entrambi usassero <em>porta dimensionale</em>.</p>"
                 },
                 "Flame of Justice": {
-                    "name": "Fiamma della Giustizia"
+                    "name": "Fiamma della Giustizia",
+                    "description": "<p>Lo spirito di rettitudine di un arconte legione si manifesta nelle sue mani come una possente spada a due mani chiamata fiamma della giustizia.</p>\n<p>Un arconte legione può lanciare la sua fiamma della giustizia come arma a distanza. Se disarmata o lanciata, la fiamma della giustizia scompare quando tocca terra o infligge danni e ricompare nelle mani dell'arconte legione istantaneamente.</p>\n<p>ln caso di colpo critico, i danni da fuoco della fiamma della giustizia infliggono il massimo dei danni ([[/r {6}[fire]]]{6} sul d6) prima di essere raddoppiati per il colpo critico e il bersaglio subisce [[/r {1d10}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da fuoco persistenti}.</p>"
                 }
             },
             "name": "Arconte Legione"
@@ -2739,10 +2776,12 @@
                     "name": "Arco Corto"
                 },
                 "Goblin Scuttle": {
-                    "name": "Scatto Goblin"
+                    "name": "Scatto Goblin",
+                    "description": "<p><strong>Innesco</strong> Un goblin alleato termina un'azione di movimento adiacente al combattente.</p>\n<hr />\n<p><strong>Effetto</strong> Il goblin combattente fa un @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Passo}.</p>"
                 },
                 "Goblin Song": {
-                    "name": "Canzone Goblin"
+                    "name": "Canzone Goblin",
+                    "description": "<p>Il cantore di guerra intona fastidiosi canti goblin che distraggono gli avversari con una serie di versi sciocchi e ripetitivi. Il cantore tanta una prova di @Check[type:performance|traits:auditory,concentrate,linguistic] conto le CD di Volontà di un massimo di due nemici entro @Template[type:emanation|distance:9]{9 metri}. Questo prevede i consueti tratti e restrizioni per una prova di Esibizione.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio subisce penalità di status -1 alle prove di Percezione e ai TS su Volontà per 1 minuto. @UUID[Compendium.pf2e.feat-effects.bIRIS6mnynr72RDw]{Canzone Goblin (Successo Critico)}</p>\n<p><strong>Successo</strong> Come il Successo Critico, ma il bersaglio è influenzato solo per 1 round. @UUID[Compendium.pf2e.feat-effects.5veOBmMYQxywTudd]{Canzone Goblin (Successo)}</p>\n<p><strong>Fallimento Critico</strong> Il bersaglio è temporaneamente immune alla Canzone Goblin per 1 ora</p>"
                 }
             },
             "name": "Goblin Cantore di Guerra"
@@ -2750,13 +2789,16 @@
         "Ancient Blue Dragon (Spellcaster)": {
             "items": {
                 "Hallucinatory Terrain (At Will)": {
-                    "description": "<p>Crei un'illusione per la quale un terreno naturale appare, risuona, sembra e odora come un terreno di tipo diverso. Questo non camuffa alcuna struttura o creatura nell'area. Qualsiasi creatura che tocca l'illusione o utilizza l'azione Individuare per esaminarlo può tentare di dubitare della tua illusione.</p>\n<hr />\n<p><strong>Intensificato (5°) </strong>La tua immagine puo anche camuffare strutture o creare strutture illusorie (ma non camuffa le creature).s).</p>"
+                    "description": "<p>Crei un'illusione per la quale un terreno naturale appare, risuona, sembra e odora come un terreno di tipo diverso. Questo non camuffa alcuna struttura o creatura nell'area. Qualsiasi creatura che tocca l'illusione o utilizza l'azione Individuare per esaminarlo può tentare di dubitare della tua illusione.</p>\n<hr />\n<p><strong>Intensificato (5°) </strong>La tua immagine puo anche camuffare strutture o creare strutture illusorie (ma non camuffa le creature).s).</p>",
+                    "name": "Terreno Illusorio (A Volontà)"
                 },
                 "Illusory Creature (At Will)": {
-                    "description": "<p>Crei un'immagine illusoria di una creatura di taglia Grande o inferiore. L'immagine genera i suoni e gli odori appropriati e sembra vera al tocco. Se tu e la tua immagine vi allontanate a una distanza superiore a 150 metri, l'incantesimo termina.</p>\n<p>L'immagine non può parlare, ma puoi usare le tue azioni per parlare attraverso la creatura, con l'incantesimo che camuffa la tua voce in modo appropriato. Potresti dover effettuare una prova di Esibizione o Inganno per comportarti come la creatura in modo convincente, come determinato dal GM. Questo è indicato specialmente se stai tentando di imitare una persona specifica e devi avere a che fare con qualcuno che conosce quella persona.</p>\n<p>In combattimento, l'illusione può usare 2 azioni per turno, che effettua mentre Mantieni l'Incantesimo. L'illusione usa i tuoi Tiri per Colpire con incantesimo per i Tiri per Colpire, e la tua CD di incantesimo per la sua CA. I suoi modificatori per i Tiri Salvezza sono pari alla tua CD di incantesimo - 10. L'illusione ha una consistenza sufficiente da poter Attaccare ai Fianchi altre creature. Se l'immagine viene colpita da un attacco o fallisce un Tiro Salvezza, l'incantesimo termina.</p>\n<p>L'illusione può infliggere danno facendo credere al bersaglio che i suoi attacchi sono reali, ma non può comunque avere effetto direttamente sul mondo fisico. Se la creatura illusoria va a segno con un Colpo, il bersaglio subisce un ammontare di danni mentali pari a 1d4 più il tuo modificatore di caratteristica dell'incantatore. Questo è un effetto mentale. I Colpi dell'illusione sono non letali. Se il danno non corrisponde all'immagine del mostro (per esempio, un drago illusorio di taglia Grande infligge soltanto 5 danni) il GM potrebbe permettere al bersaglio di effettuare una prova di Percezione immediata per dubitare dell'incantesimo. Tuttavia, qualsiasi resistenza o debolezza rilevanti vengono applicate se il bersaglio lo crede, come stabilito dal GM. Per esempio, se l'illusione impugna un martello da guerra ed attacca una creatura resistente ai danni contundenti, la creatura subirebbe un ammontare inferiore di danni mentali. Tuttavia, i danni illusori non impediscono la rigenerazione né innescano altri effetti che richiedono un certo tipo di danno. Il GM deve tracciare i danni illusori inflitti dall'illusione.</p>\n<p>Qualsiasi creatura che tocca l'immagine o usa l'azione di Individuare per esaminarla può tentare di dubitare della tua illusione. Quando una creatura dubita dell'illusione, recupera metà dei danni che aveva subito da essa (se ce ne sono stati) e non subisce ulteriori danni dalla stessa.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> I danni inflitti dai Colpi dell'immagine aumentano di 1d4 e la taglia massima della creatura che puoi creare aumenta di 1 (fino a un massimo di Mastodontica).</p>"
+                    "description": "<p>Crei un'immagine illusoria di una creatura di taglia Grande o inferiore. L'immagine genera i suoni e gli odori appropriati e sembra vera al tocco. Se tu e la tua immagine vi allontanate a una distanza superiore a 150 metri, l'incantesimo termina.</p>\n<p>L'immagine non può parlare, ma puoi usare le tue azioni per parlare attraverso la creatura, con l'incantesimo che camuffa la tua voce in modo appropriato. Potresti dover effettuare una prova di Esibizione o Inganno per comportarti come la creatura in modo convincente, come determinato dal GM. Questo è indicato specialmente se stai tentando di imitare una persona specifica e devi avere a che fare con qualcuno che conosce quella persona.</p>\n<p>In combattimento, l'illusione può usare 2 azioni per turno, che effettua mentre Mantieni l'Incantesimo. L'illusione usa i tuoi Tiri per Colpire con incantesimo per i Tiri per Colpire, e la tua CD di incantesimo per la sua CA. I suoi modificatori per i Tiri Salvezza sono pari alla tua CD di incantesimo - 10. L'illusione ha una consistenza sufficiente da poter Attaccare ai Fianchi altre creature. Se l'immagine viene colpita da un attacco o fallisce un Tiro Salvezza, l'incantesimo termina.</p>\n<p>L'illusione può infliggere danno facendo credere al bersaglio che i suoi attacchi sono reali, ma non può comunque avere effetto direttamente sul mondo fisico. Se la creatura illusoria va a segno con un Colpo, il bersaglio subisce un ammontare di danni mentali pari a 1d4 più il tuo modificatore di caratteristica dell'incantatore. Questo è un effetto mentale. I Colpi dell'illusione sono non letali. Se il danno non corrisponde all'immagine del mostro (per esempio, un drago illusorio di taglia Grande infligge soltanto 5 danni) il GM potrebbe permettere al bersaglio di effettuare una prova di Percezione immediata per dubitare dell'incantesimo. Tuttavia, qualsiasi resistenza o debolezza rilevanti vengono applicate se il bersaglio lo crede, come stabilito dal GM. Per esempio, se l'illusione impugna un martello da guerra ed attacca una creatura resistente ai danni contundenti, la creatura subirebbe un ammontare inferiore di danni mentali. Tuttavia, i danni illusori non impediscono la rigenerazione né innescano altri effetti che richiedono un certo tipo di danno. Il GM deve tracciare i danni illusori inflitti dall'illusione.</p>\n<p>Qualsiasi creatura che tocca l'immagine o usa l'azione di Individuare per esaminarla può tentare di dubitare della tua illusione. Quando una creatura dubita dell'illusione, recupera metà dei danni che aveva subito da essa (se ce ne sono stati) e non subisce ulteriori danni dalla stessa.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> I danni inflitti dai Colpi dell'immagine aumentano di 1d4 e la taglia massima della creatura che puoi creare aumenta di 1 (fino a un massimo di Mastodontica).</p>",
+                    "name": "Creatura Illusoria (A Volontà)"
                 },
                 "Ventriloquism (At Will)": {
-                    "description": "<p>Ogni volta che parli o emetti vocalmente un qualsiasi altro suono, puoi far sembrare che la tua voce provenga da qualcun altro entro 18 metri, e puoi cambiare liberamente quella locazione apparentemente usi la voce. Qualsiasi creatura che ne ode il suono può tentare di dubitare della tua illusione.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> La durata dell'incantesimo aumenta fino a 1 ora, e puoi cambiare anche tonalità, qualità ed altri aspetti della tua voce. Prima di poter dubitare della tua illusione, una creatura deve superare attivamente una prova di Percezione, oppure usare azioni per interagire con quel suono.</p>"
+                    "description": "<p>Ogni volta che parli o emetti vocalmente un qualsiasi altro suono, puoi far sembrare che la tua voce provenga da qualcun altro entro 18 metri, e puoi cambiare liberamente quella locazione apparentemente usi la voce. Qualsiasi creatura che ne ode il suono può tentare di dubitare della tua illusione.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> La durata dell'incantesimo aumenta fino a 1 ora, e puoi cambiare anche tonalità, qualità ed altri aspetti della tua voce. Prima di poter dubitare della tua illusione, una creatura deve superare attivamente una prova di Percezione, oppure usare azioni per interagire con quel suono.</p>",
+                    "name": "Ventriloquio (A Volontà)"
                 },
                 "Jaws": {
                     "name": "Fauci"
@@ -2775,18 +2817,48 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
                 },
                 "Sound Imitation": {
-                    "name": "Imitazione dei Suoni"
+                    "name": "Imitazione dei Suoni",
+                    "description": "<p>Il drago può imitare qualsiasi suono che abbia sentito. Deve effettuare con successo una prova di Inganno con bonus di circostanza +4 per riuscirci.</p>"
                 },
                 "Frightful Presence": {
-                    "name": "Presenza Terrificante"
+                    "name": "Presenza Terrificante",
+                    "description": "<p>@Template[type:emanation|distance:27]{27 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "Breath Weapon": {
-                    "name": "Soffio"
+                    "name": "Soffio",
+                    "description": "<p>Il drago soffia fulmini che infliggono [[/r 12d12[electricity]]]{12d12 danni da elettricità} in una @Template[type:line|distance:36]{linea di 36 metri} (TS @Check[type:reflex|dc:40|basic:true]).</p>\n<p>Non può usare di nuovo il Soffio per [[/br 1d4 #Ricarica Soffio]]{1d4 round}.</p>\n<hr />\n<p>Ogni volta che il drago usa Soffio, una nube tempestosa del @Template[type:burst|distance:20]{raggio di 6 metri} compare a 24 metri di altezza su un punto a scelta del drago lungo il percorso del Soffio. Le nubi durano 10 minuti e consentono al drago di usare Soffio Tempestoso.</p>"
                 },
                 "Create Water (At Will) (See Desert Thirst)": {
-                    "description": "<p>L'acqua comincia. sgorgare dalle tue mani nel momento in cui le unisci a coppa. Crei 8 litri di acqua. Se nessuno la beve, questa evapora dopo 1 giorno.</p>"
+                    "description": "<p>L'acqua comincia. sgorgare dalle tue mani nel momento in cui le unisci a coppa. Crei 8 litri di acqua. Se nessuno la beve, questa evapora dopo 1 giorno.</p>",
+                    "name": "Creare Acqua (A Volontà) (Vedi Sete del Deserto)"
+                },
+                "Wing Deflection": {
+                    "description": "<p><strong>Innesco</strong> Il drago è bersagliato da un attacco.</p>\n<hr />\n<p><strong>Effetto</strong> Il drago alza la sua ala e ottiene bonus di circostanza +2 a CA contro l'attacco innescante. Se il drago sta Volando, scende di 3 metri dopo che l'attacco è stato completato.</p>",
+                    "name": "Deviazione d'Ala"
+                },
+                "Project Image (See Mirage)": {
+                    "name": "Immagine Proiettata (Vedi Miraggio)",
+                    "description": "<p>Proietti un'immagine illusoria su te stesso. Devi rimanere entro il raggio d'azione dell'immagine, e se in un qualasiasi momento non riesci a vedere l'immagine, l'incantesimo termina. Quando Lanci un Incantesimo che non sia un incantesimo con area emanazione, puoi far originare l'effetto dell'incantesimo da te stesso o dall'immagine. Dato che l'immagine è un'illusione, non può realmente benificiare di incantesimi, sebbene appaia in qualsiasi manifestazione visiva dell'incantesimo. L'immagine ha la stessa tua CA e gli stessi tuoi tiri salvezza. Se viene colpita da un attacco o fallisce un tiro salvezza, l'incantesimo svanisce.</p>\n<hr />\n<p><strong>Intensificato (+2) </strong>La durata massima in cui puoi Mantenere l'Incantesimo aumenta di 10 minuti.</p>"
+                },
+                "Illusory Object (At Will)": {
+                    "name": "Oggetto Illusorio (A Volontà)",
+                    "description": "<p>Crei un'immagine visiva illusoria di un oggetto immobile. L'intera immagine deve entrare all'interno dell'area dell'incantesimo. L'oggetto sembra animarsi naturalmente, ma non emette suoni né genera odori. Per esempio, l'acqua potrebbe apparire come se scorresse creando una cascata, ma sarebbe silenziosa.</p>\n<p>Qualsiasi creatura che tocca l'immagine o usa l'azione Individuare per esaminarla può tentare di dubitare della tua illusione.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> La tua immagine emette i suoni appropriati, genera normali odori e sembra vera al tocco. L'incantesimo ottiene il tratto uditivo. La durata aumenta fino a 1 ora.</p>\n<p><strong>Intensificato (5°)</strong> Come per la versione di 2° livello, ma la durata è illimitata.</p>"
+                },
+                "Desert Thirst": {
+                    "name": "Sete del Deserto",
+                    "description": "<p>Quando lancia <em>@UUID[Compendium.pf2e.spells-srd.WzLKjSw6hsBhuklC]{creare acqua}</em>, il drago può tentare di distruggere il liquido invece di crearlo, trasformando un pari ammontare di liquido in sabbia. Questo distrugge le magie liquide o gli oggetti alchemici di livello inferiore a quello del drago (una creatura può tentare un TS su @Check[type:will|dc:37] per proteggere i liquidi in suo possesso). Questo non influenza i liquidi nel corpo di una creatura.</p>"
+                },
+                "Mirage": {
+                    "name": "Miraggio",
+                    "description": "<p>Ogni volta che il drago usa il Soffio mentre l'immagine illusoria del suo incantesimo <em>@UUID[Compendium.pf2e.spells-srd.0873MWM0qKDDv81O]{immagine proiettata}</em> persiste, esso può fare in modo che il Soffio abbia origine da se stesso o dall'immagine.</p>"
+                },
+                "Storm Breath": {
+                    "name": "Soffio Tempestoso",
+                    "description": "<p><strong>Requisiti</strong> Una nube tempestosa creata dal Soffio si trova entro 150 metri e il drago è in grado di vederla.</p>\n<p><strong>Frequenza</strong> Una volta per round.</p>\n<hr />\n<p><strong>Effetto</strong> Il drago invoca un fulmine da una nube tempestosa creata dal suo Soffio. Questo crea una linea verticale di fulmini che scende fino al terreno e infligge [[/r 6d12[electricity]]]{6d12 danni da elettricità} a tutti i nemici sul suo percorso (TS @Check[type:reflex|dc:40|basic:true]).</p>"
                 }
-            }
+            },
+            "name": "Drago Blu Antico (Incantatore)",
+            "description": "<p>I draghi blu sono gli eleganti e controllati cosmopoliti dei draghi cromatici. La loro è una malvagità organizzata, maestosa e manipolatrice. I draghi blu spesso si insediano nei pressi o all'interno delle città e si adoperano per controllarne la popolazione e reclamare orde di servitori. I draghi blu amano tessere intrighi. Un tipico agente di un drago blu spesso non sospetta minimamente di essere al servizio di un drago e crede invece di accumulare il denaro proveniente da estorsioni, tangenti o tasse per conto di un padrone crudele ma legittimo. In un certo senso, i draghi blu considerano i loro servitori come un capitale vivente e come parte del loro tesoro. Sono noti per tentare di manipolare perfino i loro cugini cromatici.</p>\n<p>Non tutti i draghi blu agiscono in clandestinità. Alcuni regnano sulle tribù del deserto o sui popoli delle colline come divinità vendicative, esigendo tributi e venerazione. A prescindere dal trattamento cui sottopongono i loro servitori, l'atteggiamento dei draghi blu rimane sempre regale e le loro tane sono vere e proprie regge; non tollerano l'insubordinazione, l'incompetenza e i tentativi di imbrogliarli e puniscono i colpevoli con mortale efficienza.</p>\n<p>I draghi blu sono famosi anche per l'uso e la padronanza delle magie di illusione. Utilizzano le illusioni per potenziare le loro manipolazioni e disorientare gli avversari in battaglia. I draghi blu esercitano anche un certo potere sull'acqua e utilizzano tale potere per alquanto pericolosa per chi li incontra nelle loro tane in mezzo al deserto.</p>\n<p>La tana ideale di un drago blu è composta da molti passaggi, stanze e camere segrete. In quanto creature sociali, i draghi blu desiderano che i loro ospiti stiano comodi, ma non vogliono che la loro posizione sia nota al punto da permettere a chiunque di avvicinarli. Un esercito di guardie si occupa di tenere a distanza gli intrusi e una serie di illusioni ben studiate protegge l'edificio dagli sguardi indiscreti. Il vero tesoro di un drago blu non consiste in un cumulo di monete o gemme, bensì nello sfarzoso arredamento della sua cittadella: oggetti d'arte, mobilia preziosa e meraviglie architettoniche.</p>\n<hr />\n<p>Anche se esistono molti tipi di draghi, dai potenti draghi planari agli strani draghi esoterici, pochi sono famosi e giustamente temuti come i draghi cromatici. I draghi cromatici si distinguono dal colore delle loro scaglie: ogni colore draconico scatena una forma di crudeltà omicida diversa, tramite gli artigli, le zanne o il soffio. Inoltre, a differenza della maggior parte delle creature, i draghi diventano più potenti invecchiando. La loro brama di tesori, cibo, massacri e potere, é leggendaria. Questi draghi, fisicamente possenti e altrettanto superbi, sono spesso creature moralmente depravate che assumono il ruolo di grandi pianificatori criminali, tiranni crudeli o feroci predoni.</p>"
         },
         "Leukodaemon": {
             "name": "Leukodàimon",
@@ -2829,7 +2901,8 @@
                     "name": "Carica del Cinghiale",
                     "description": "<p>Il cinghiale Avanza due volte e poi effettua un Colpo con la zanna. Purché si sia mosso di almeno 6 metri, ottiene bonus di circostanza +2 al suo tiro per colpire.</p>"
                 }
-            }
+            },
+            "description": "<p>I cinghiali sono mammiferi onnivori che vengono cacciati in lungo e in largo per la prelibatezza della loro carne. I cinghiali tendono ad attaccare gli umanoidi per autodifesa, oppure nel corso della stagione della riproduzione nei mesi invernali, quando i maschi sviluppano qualche centimetro extra di tessuto per proteggersi gli organi mentre combattono con i rivali. Ovviamente, in alcune culture i cinghiali vengono addestrati ad agire in modo molto più aggressivo, per svolgere ruoli da bestie da guerra o da guardiani. Quando questi cinghiali fuggono e tornano nelle terre selvagge, possono diventare i veri terrori di una regione.</p>\n<hr />\n<p>Sebbene i suini addomesticati una presenza comune nelle fattorie, i cinghiali selvatici sono molto più pericolosi. I facoceri dall'indole irascibile sono relativamente comuni, mentre le massicce bestie primeve note come deodonti sono più rare. I cinghiali, creature voraci, possono devastare le campagne in cui vivono. Si riproducono liberamente e una singola coppia di queste bestie può rapidamente dare origine a una famiglia numerosa. I cinghiali sono un particolare fastidio per i contadini, in quanto hanno la tendenza a fare irruzione nei magazzini delle provviste e a grufolare negli orti per saziare la loro fame.</p>"
         },
         "Vrock": {
             "name": "Vrock (Demone dell’Ira)",
@@ -2865,7 +2938,8 @@
                 "Stunning Screech": {
                     "name": "Stridio Stordente"
                 }
-            }
+            },
+            "description": "<p>Quando le porte dell'Abisso si spalancano, spesso i primi a varcarle sono i vrock, creature dalla testa di avvoltoio generate dalla collera che volteggiano sorretti dalle loro ali nere o danzano esaltati dal loro nefando potere. L'odio che nutrono nei confronti dei mortali è pari solo al desiderio di infliggere dolore tramite il loro orrendo stridio o la loro danza devastante. I vrock si formano dalle anime dei mortali carichi di odio, ai quali viene offerta una nuova opportunità di scatenare la loro rabbia contro il mondo.</p>\n<p>I vrock viaggiano spesso in piccoli gruppi, per sfruttare al massimo la loro danza della rovina, ma è raro che compaiano in gruppi superiori ai quattro elementi. Contro i gruppi più piccoli e gli avversari isolati si gettano in picchiata senza timore e giocano con le prede prima di ucciderle. Contro gli avversari di potenza superiore si limitano a volteggiare sopra le loro teste utilizzando la danza della rovina per bersagliarli con una tempesta di fulmini.</p>\n<hr />\n<p>Quando un'anima mortale peccatrice viene giudicata e consegnata all'Abisso, può trasformarsi in un letale nefando: un demone. I demoni sono le incarnazioni del peccato, sia dei peccati più tradizionali come l'ira e la gola, sia di depravazioni più \"specializzate\" come l'ossessione per la tortura o atti come l'infedeltà e il tradimento. Una volta formatosi, il demone persegue un duplice obiettivo: accumulare potere personale e corrompere le anime mortali, inducendole a cadere in tentazione. In questo modo ogni demone assicura un flusso interminabile di nuovi demoni che vanno a ingrossare le schiere in continua crescita dell'Abisso.</p>"
         },
         "Purple Worm": {
             "name": "Verme Purpureo",
