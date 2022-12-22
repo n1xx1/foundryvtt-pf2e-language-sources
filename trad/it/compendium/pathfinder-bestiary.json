@@ -1908,7 +1908,7 @@
                 },
                 "Constrict": {
                     "name": "Stritolare",
-                    "description": "<p>[[/r 3d6 + 18[bludgeoning]]]{3d6 + 18 danni contundenti}, @Check[type:fortitude|dc:44|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>[[/r (3d6+18)[bludgeoning]]]{3d6+18 danni contundenti}, @Check[type:fortitude|dc:44|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Double Bite": {
                     "name": "Doppio Morso",
@@ -2092,7 +2092,7 @@
                 },
                 "Dragon Heat": {
                     "name": "Calore Draconico",
-                    "description": "<p>@Template[type:emanation|distance:3]{3 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>[[/r {4d6}[fire]]]{4d6 danni da fuoco} (@Check[type:reflex|dc:39|basic:true])</p>"
+                    "description": "<p>@Template[type:emanation|distance:3]{3 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>[[/r 4d6[fire]]]{4d6 danni da fuoco} (@Check[type:reflex|dc:39|basic:true])</p>"
                 },
                 "Frightful Presence": {
                     "name": "Presenza Terrificante",
@@ -2326,7 +2326,7 @@
                 },
                 "Shape Ice": {
                     "name": "Plasmare Ghiaccio",
-                    "description": "<p>Il drago rimodella un cubo, di ghiaccio o di neve, da lui toccato con lato fino a 3 metri. Ogni creatura che si trova sul ghiaccio deve superare un TS su @Check[type:reflex|dc:15] o una prova di @Check[type:acrobatics|dc:15].<p>\n<p>ln caso di fallimento, la creatura cade @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} sul ghiaccio; in caso di fallimento critico, cade interamente fuori dal ghiaccio ed è anche prona.</p>"
+                    "description": "<p>Il drago rimodella un cubo, di ghiaccio o di neve, da lui toccato con lato fino a 3 metri. Ogni creatura che si trova sul ghiaccio deve superare un TS su @Check[type:reflex|dc:15] o una prova di @Check[type:acrobatics|dc:15].</p>\n<p>ln caso di fallimento, la creatura cade @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} sul ghiaccio; in caso di fallimento critico, cade interamente fuori dal ghiaccio ed è anche prona.</p>"
                 }
             }
         },
@@ -2598,6 +2598,10 @@
                 "Dominate (Animals Only)": {
                     "name": "Dominare (Solo Animali)",
                     "description": "<p>Comandi il bersaglio, forzandolo ad obbedire ai tuoi ordini. Se impartisci un ordine palesemente autolesionista, il bersaglio non intraprende alcuna azione finché non gli impartirai un nuovo ordine. Gli effetti si basano sul risultato del suo Tiro Salvezza su Volontà.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p>\n<p><strong>Successo</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 1} come se resistesse ai tuoi comandi.</p>\n<p><strong>Fallimento</strong> Il bersaglio segue i tuoi ordini. Ottiene la condizione @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{controllato} ma effettua un tiro salvezza su Volontà alla fine di ogni suo turno. Con un successo, l'incantesimo termina.</p>\n<p><strong>Fallimento Critico</strong> Come per fallimento, ma il bersaglio riceve un nuovo tiro salvezza soltanto nel momento in cui gli impartisci un nuovo ordine che va contro la sua natura, come uccidere i suoi alleati.</p>\n<hr />\n<p><strong>Intensificato (10°)</strong> La durata è illimitata.</p>"
+                },
+                "Jet": {
+                    "name": "Propulsione",
+                    "description": "<p>Il kraken si muove in acqua fino a 84 metri in linea retta senza innescare reazioni.</p>"
                 }
             }
         },
@@ -2914,17 +2918,20 @@
                     "name": "Grinfie"
                 },
                 "Telepathy 100 feet": {
-                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
+                    "name": "Telepatia 30 metri"
                 },
                 "Attack of Opportunity": {
-                    "name": "Attacco di Opportunità"
+                    "name": "Attacco di Opportunità",
+                    "description": "<p>Se il vrock Vola e una creatura innesca un attacco di opportunità, il vrock può effettuare 2 Colpi con le sue grinfie contro quella creatura invece di 1 Colpo.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
                 "Peace Vulnerability": {
                     "name": "Vulnerabilità alla Pace",
-                    "description": "<p>La collera di un vrock è il cuore della sua essenza e imporgli la pace significa dilaniare la sua anima. Se il vrock fallisce un TS contro <em>@UUID[Compendium.pf2e.spells-srd.b515AZlB0sridKSq]{calmare emozioni}</em> o un effetto simile che lo obbliga ad agire pacificamente, il vrock subisce [[/r {4d6}[mental]]]{4d6 danni mentali}."
+                    "description": "<p>La collera di un vrock è il cuore della sua essenza e imporgli la pace significa dilaniare la sua anima. Se il vrock fallisce un TS contro <em>@UUID[Compendium.pf2e.spells-srd.b515AZlB0sridKSq]{calmare emozioni}</em> o un effetto simile che lo obbliga ad agire pacificamente, il vrock subisce [[/r 4d6[mental]]]{4d6 danni mentali}.</p>"
                 },
                 "Dance of Ruin": {
-                    "name": "Danza della Rovina"
+                    "name": "Danza della Rovina",
+                    "description": "<p>Il vrock danza in volo e intona un canto per generare una devastante esplosione di elettricità. Se più vrock entro 9 metri desiderano unirsi alla danza, il vrock può ritardare la danza per attendere gli altri vrock; in quel caso, l'effetto si verifica dopo che l'ultimo vrock ha usato Danza della Rovina o che uno dei vrock ha scelto di completare quel round della danza. Ogni creatura non demone in un'@Template[type:emanation|distance:6] da un qualsiasi vrock danzante subisce [[/r 2d12[electricity]]]{2d12 danni da elettricità} (TS @Check[type:reflex|dc:28|basic:true]). Per ogni vrock aggiuntivo che si unisce alla danza, i danni aumentano di 1d12 e la CD del TS aumenta di 1 (fino a un massimo di quattro vrock che infliggono 5d12 danni con un TS con CD 31). I vrock possono continuare a danzare usando Danza della Rovina ogni round, fino a un massimo di 3 round in totale. La taglia dell'emanazione aumenta di 6 metri ogni round e i danni aumentano di 1d12 per vrock ogni round.</p>\n<hr />\n<ul>\n<li><strong>1 Vrock Danzante</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effetto</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:6] [[/r 2d12[electricity]]]{2d12 danni di elettricità} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:12] [[/r 3d12[electricity]]]{3d12 danni di elettricità} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:18] [[/r 4d12[electricity]]]{4d12 danni di elettricità} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>2 Vrock Danzanti</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effetto</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:6] [[/r 3d12[electricity]]]{3d12 danni di elettricità} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:12] [[/r 5d12[electricity]]]{5d12 danni di elettricità} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:18] [[/r 7d12[electricity]]]{7d12 danni di elettricità} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>3 Vrock Danzanti</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effetto</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:6] [[/r 4d12[electricity]]]{4d12 danni di elettricità} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:12] [[/r 7d12[electricity]]]{7d12 danni di elettricità} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:18] [[/r 10d12[electricity]]]{10d12 danni di elettricità} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>4 Vrock Danzanti</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effetto</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:6] [[/r 5d12[electricity]]]{5d12 danni di elettricità} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:12] [[/r 9d12[electricity]]]{9d12 danni di elettricità} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:18] [[/r 13d12[electricity]]]{13d12 danni di elettricità} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n</ul>"
                 },
                 "Beak": {
                     "name": "Becco"
@@ -2933,10 +2940,12 @@
                     "name": "Artiglio"
                 },
                 "Spore Cloud": {
-                    "name": "Nube di Spore"
+                    "name": "Nube di Spore",
+                    "description": "<p>Il vrock emette dal suo corpo una nube di spore che infligge [[/r 2d8[poison]]]{2d8 danni da veleno} a tutte le creature adiacenti. Ogni creatura danneggiata in questo modo deve superare un TS su @Check[type:fortitude|dc:28|traits:damaging-effect], altrimenti subisce [[/r {2d8}[persistent,piercing]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni perforanti persistenti} a causa delle spore che penetrano nella sua pelle e crescono fino a diventare spessi rampicanti verdastri. I rampicanti smettono di crescere dopo 10 round e avvizziscono nel giro di [[/br 1d4 #Durata Nube di Spore]]{1d4} giorni se non vengono rimossi prima di allora. I rampicanti possono essere distrutti se la creatura è influenzata da un incantesimo buono o se dell'<em>@UUID[Compendium.pf2e.equipment-srd.z9T4c1hXwOotsMCp]{acqua santa}</em> viene applicata sui rampicanti (con un'azione di Interagire).</p>\n<p>Una volta che il vrock ha usato Nube di Spore, la capacità non può più essere usata per [[/br 1d6 #Ricarica Nube di Spore]]{1d6 round}.</p>"
                 },
                 "Stunning Screech": {
-                    "name": "Stridio Stordente"
+                    "name": "Stridio Stordente",
+                    "description": "<p><strong>Frequenza</strong> Una volta per minuto.</p>\n<hr />\n<p><strong>Effetto</strong> Il vrock emette uno stridio acuto. Ogni creatura non demone entro un'@Template[type:burst|distance:30] deve tentare un TS su @Check[type:fortitude|dc:28]. In caso di fallimento, la creatura è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordita 2} e in caso di fallimento critico è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordita 3}.</p>"
                 }
             },
             "description": "<p>Quando le porte dell'Abisso si spalancano, spesso i primi a varcarle sono i vrock, creature dalla testa di avvoltoio generate dalla collera che volteggiano sorretti dalle loro ali nere o danzano esaltati dal loro nefando potere. L'odio che nutrono nei confronti dei mortali è pari solo al desiderio di infliggere dolore tramite il loro orrendo stridio o la loro danza devastante. I vrock si formano dalle anime dei mortali carichi di odio, ai quali viene offerta una nuova opportunità di scatenare la loro rabbia contro il mondo.</p>\n<p>I vrock viaggiano spesso in piccoli gruppi, per sfruttare al massimo la loro danza della rovina, ma è raro che compaiano in gruppi superiori ai quattro elementi. Contro i gruppi più piccoli e gli avversari isolati si gettano in picchiata senza timore e giocano con le prede prima di ucciderle. Contro gli avversari di potenza superiore si limitano a volteggiare sopra le loro teste utilizzando la danza della rovina per bersagliarli con una tempesta di fulmini.</p>\n<hr />\n<p>Quando un'anima mortale peccatrice viene giudicata e consegnata all'Abisso, può trasformarsi in un letale nefando: un demone. I demoni sono le incarnazioni del peccato, sia dei peccati più tradizionali come l'ira e la gola, sia di depravazioni più \"specializzate\" come l'ossessione per la tortura o atti come l'infedeltà e il tradimento. Una volta formatosi, il demone persegue un duplice obiettivo: accumulare potere personale e corrompere le anime mortali, inducendole a cadere in tentazione. In questo modo ogni demone assicura un flusso interminabile di nuovi demoni che vanno a ingrossare le schiere in continua crescita dell'Abisso.</p>"
@@ -2967,7 +2976,8 @@
                     "description": "<p>Il verme purpureo recupera dalle condizioni @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{paralizzato}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato} e @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito} alla fine del suo turno. È inoltre immune alle penalità alle sue Velocità e alla condizione @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{immobilizzato} e ignora il terreno difficile e il terreno difficile duperiore.</p>"
                 },
                 "Shake It Off": {
-                    "name": "Riscuotersi"
+                    "name": "Riscuotersi",
+                    "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<p><strong>Innesco</strong> Il verme purpureo sarebbe influenzato da una condizione o da un effetto avverso (come <em>@UUID[Compendium.pf2e.spells-srd.dN8QBNuTiaBHCKUe]{metamorfosi funesta}</em>).</p>\n<hr />\n<p><strong>Effetto</strong> Il verme purpureo nega la condizione o l'effetto innescante. Gli effetti degli artefatti, delle divinità o di una fonte di analoga potenza non possono essere evitati in questo modo.</p>"
                 },
                 "Rock Tunneler": {
                     "name": "Scavatore nella Roccia",
@@ -2982,10 +2992,12 @@
                     "description": "<p>Il verme effettua un Colpo una volta contro ogni creatura entro la sua portata. Può Colpire fino a una volta con le fauci, fino a una volta con il pungiglione e un qualsiasi numero di volte con il corpo. Ogni attacco conta al fine di determinare la penalità da attacchi multipli del verme, ma la penalità da attacchi multipli non aumenta finché il verme non ha effettuato tutti gli attacchi.</p>"
                 },
                 "Fast Swallow": {
-                    "name": "Inghiottire Rapido"
+                    "name": "Inghiottire Rapido",
+                    "description": "<p><strong>Innesco</strong> Il verme purpureo @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Afferra} una creatura.</p>\n<hr />\n<p><strong>Effetto</strong> Il verme usa Inghiottire.</p>"
                 },
                 "Purple Worm Venom": {
-                    "name": "Veleno del Verme Purpureo"
+                    "name": "Veleno del Verme Purpureo",
+                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:32]</p>\n<hr />\n<p><strong>Durata Massima</strong> 6 round</p>\n<p><strong>Fase 1</strong> [[/r 5d6[poison]]]{5d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 2} (1 round)</p>\n<p><strong>Fase 2</strong> [[/r 6d6[poison]]]{6d6 danni da veleno} e indebolito 2 (1 round)</p>\n<p><strong>Fase 3</strong> [[/r 8d6[poison]]]{8d6 danni da veleno} e indebolito 2 (1 round)</p>"
                 }
             }
         },
@@ -3103,7 +3115,8 @@
                 "Bastard Sword": {
                     "name": "Spada Bastarda"
                 }
-            }
+            },
+            "description": "<p>Il bugbear più comune è il predone, specializzato nell'arte di appostarsi nell'ombra.</p>\n<hr />\n<p>Queste creature goblinoidi furtive e crudeli adorano seminare il terrore e tormentare le proprie vittime. I bugbear sono i mostri che si appostano negli armadi o si nascondono sotto il letto. Quando vanno a caccia nelle fattorie più isolate, i bugbear rivelano la loro presenza con rumori improvvisi nel cuore della notte o facendo scricchiolare le assi del pavimento per instillare il terrore e suscitare sospetti e timori.</p>"
         },
         "Axiomite": {
             "items": {
@@ -3149,7 +3162,8 @@
                     "name": "Scivolare nella Terra",
                     "description": "<p>Lo xorn può Scavare attraverso qualsiasi materia di terra, inclusa la roccia. Quando lo fa, lo xorn si muove alla sua Velocità di scavare completa, senza lasciare tunnel o segni del suo passaggio.</p>"
                 }
-            }
+            },
+            "description": "<p>Questi elementali tozzi e tondeggianti sono dotati di tre zampe, tre braccia, re occhi e di enormi fauci con cui si ingozzano di gemme e metalli che trovano deliziosi.</p>\n<hr />\n<p>Gli elementali della terra sono ottime guardie del corpo per gli avventurieri che si addentrano nel sottosuolo e fungono da protettori ideali delle aree sotterranee più importanti come le cripte e e tesorerie.</p>"
         },
         "Tidal Master": {
             "items": {
