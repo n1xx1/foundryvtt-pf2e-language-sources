@@ -41,6 +41,7 @@ export type EntryActor = EntryHazard | EntryNPC;
 export interface BaseEntry {
   _id: string;
   name: string;
+  flags?: Record<string, unknown>;
 }
 
 export interface EntryHazard extends BaseEntry {

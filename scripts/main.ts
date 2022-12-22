@@ -27,16 +27,8 @@ function fixEntities(x: string) {
 async function handleItem(id: string, label: string, entries: EntryItem[]) {
   const out: Compendium = {
     label,
-    // mapping: {
-    //   name: "name",
-    //   description: "system.description.value",
-    // },
     entries: {},
   };
-
-  let hasFeats = false;
-  let hasSpells = false;
-  let hasAncestry = false;
 
   for (const entry of entries) {
     const el: any = (out.entries[entry.name] = {
@@ -45,8 +37,6 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
     });
 
     if (entry.type === "spell") {
-      hasSpells = true;
-
       if (entry.system.materials?.value) {
         el.spellMaterials = entry.system.materials?.value;
       }
@@ -69,11 +59,7 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
         }
       }
     }
-    if (entry.type === "ancestry") {
-      hasAncestry = true;
-    }
     if (entry.type === "feat") {
-      hasFeats = true;
       const prerequisites = entry.system.prerequisites?.value ?? [];
       if (prerequisites.length > 0) {
         el.featPrerequisites = Object.fromEntries(
@@ -82,35 +68,6 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
       }
     }
   }
-
-  // if (hasAncestry) {
-  //   out.mapping!.speed = {
-  //     path: "system.speed",
-  //     converter: "pfitLength",
-  //   };
-  //   out.mapping!.speed = {
-  //     path: "system.reach",
-  //     converter: "pfitLength",
-  //   };
-  // }
-  // if (hasFeats) {
-  //   out.mapping!.prerequisites = {
-  //     path: "system.prerequisites.value",
-  //     converter: "pfitArray",
-  //   };
-  // }
-  // if (hasSpells) {
-  //   out.mapping!.materials = "system.materials.value";
-  //   out.mapping!.target = "system.target.value";
-  //   out.mapping!.range = {
-  //     path: "system.range.value",
-  //     converter: "pfitRange",
-  //   };
-  //   out.mapping!.time = {
-  //     path: "system.time.value",
-  //     converter: "pfitTime",
-  //   };
-  // }
 
   const outData = JSON.stringify(out, null, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
@@ -186,36 +143,23 @@ const ignoredItemTypes = [
   "lore",
   "spellcastingEntry",
 ];
+const ignoredDescriptionItemTypes = ["spell", "melee", "ranged"];
+const attackType = ["melee", "ranged"];
 
 async function handleActor(
   id: string,
   label: string,
   entries: EntryActor[],
-  itemEntries: Record<string, EntryItem[]>
+  allPacksMap: Map<string, PackData>
 ) {
   const out: Compendium = {
     label,
-    // mapping: {
-    //   name: "name",
-    //   items: {
-    //     path: "items",
-    //     converter: "fromPack",
-    //   },
-    //   tokenName: {
-    //     path: "token.name",
-    //     converter: "name",
-    //   },
-    // },
     entries: {},
   };
-
-  let hasHazards = false;
-  let hasMonsters = false;
 
   for (const entry of entries) {
     try {
       if (entry.type === "hazard") {
-        hasHazards = true;
         const el: any = (out.entries[entry.name] = {
           name: label,
           description: entry.system.details.description,
@@ -230,11 +174,8 @@ async function handleActor(
         if (entry.system.details.routine) {
           el.hazardRoutine = entry.system.details.routine;
         }
-
         continue;
       }
-
-      hasMonsters = true;
 
       const el: any = (out.entries[entry.name] = {
         name: entry.name,
@@ -243,34 +184,89 @@ async function handleActor(
 
       for (const item of entry.items) {
         try {
-          if (!itemTypes.includes(item.type))
+          if (!itemTypes.includes(item.type)) {
             throw new Error(`unknown item type: ${item.type}`);
+          }
 
-          if (
-            ignoredItemTypes.includes(item.type) ||
-            (item.type == "spell" && !item.name.includes("("))
-          )
+          if (ignoredItemTypes.includes(item.type)) {
             continue;
+          }
 
-          const found =
-            itemEntries[item.name.toLowerCase()]?.find(
-              (x) =>
-                (x.system.description.value &&
-                  item.system.description.value.startsWith(
-                    x.system.description.value
-                  )) ||
-                !x.system.description.value
-            ) ?? null;
+          const sourceId: string | undefined = (item.flags?.core as any)
+            ?.sourceId;
 
-          if (!found) {
+          const [compendiumItem, compendiumId, origin] = ((): readonly [
+            EntryItem | null,
+            string,
+            string
+          ] => {
+            const [matchingItem, pack, only] = findByMatchingItem(
+              item,
+              allPacksMap
+            );
+            if (sourceId) {
+              const [sourceItem, compendiumId] = findBySourceId(
+                sourceId,
+                allPacksMap
+              );
+              // if the real source is correct then just respect the source
+              if (
+                sourceItem &&
+                (!matchingItem || sourceItem._id === matchingItem._id)
+              ) {
+                return [sourceItem, compendiumId, "source"] as const;
+              }
+            }
+            if (matchingItem) {
+              return [matchingItem, pack, "matching"] as const;
+            }
+            if (attackType.includes(item.type)) {
+              const equipItem = findByName(
+                item.name,
+                allPacksMap.get("equipment-srd")!
+              );
+              if (equipItem) {
+                return [
+                  equipItem,
+                  `equipment-srd.${equipItem._id}`,
+                  "equip",
+                ] as const;
+              }
+            }
+            return [null, "", ""] as const;
+          })();
+
+          if (!compendiumItem) {
             el.items ??= {};
             const itemEl: any = (el.items[item.name] = {
               name: item.name,
             });
-
             if (item.system.description.value) {
               itemEl.description = item.system.description.value;
             }
+            continue;
+          }
+
+          const sameName = compendiumItem.name === item.name;
+          const sameDesc =
+            !item.system.description.value ||
+            compendiumItem.system.description.value ===
+              item.system.description.value ||
+            ignoredDescriptionItemTypes.includes(item.type);
+
+          if (sameName && sameDesc && origin !== "matching") {
+            continue;
+          }
+
+          const itemEl: any = ((el.items ??= {})[item.name] = {});
+          if (!sameName) {
+            itemEl.name = item.name;
+          }
+          if (!sameDesc) {
+            itemEl.description = item.system.description.value;
+          }
+          if (origin === "matching") {
+            itemEl._source = compendiumId;
           }
         } catch (e) {
           console.warn(`while parsing ${JSON.stringify(item, null, 2)}`);
@@ -283,22 +279,94 @@ async function handleActor(
     }
   }
 
-  // if (hasHazards) {
-  //   out.mapping!.hazardDescription = "system.details.description";
-  //   out.mapping!.hazardDisable = "system.details.disable";
-  //   out.mapping!.hazardReset = "system.details.reset";
-  //   out.mapping!.hazardRoutine = "system.details.routine";
-  // }
-  // if (hasMonsters) {
-  //   out.mapping!.description = "system.details.publicNotes";
-  //   out.mapping!.speed = {
-  //     path: "system.attributes.speed",
-  //     converter: "pfitSpeeds",
-  //   };
-  // }
-
   const outData = JSON.stringify(out, null, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
+}
+
+type PackData = Awaited<ReturnType<typeof readSystemFiles>>[0][number];
+
+function findBySourceId(
+  sourceId: string,
+  allPacksMap: Map<string, PackData>
+): [item: EntryItem | null, compendiumId: string] {
+  const match = sourceId.match(
+    /^Compendium\.pf2e\.([^\.]+).([^\.]+)(?:\.Item\.([^\.]+))?$/
+  );
+  if (!match) {
+    return [null, ""];
+  }
+
+  const origin = sourceId.substring("Compendium.pf2e.".length);
+  const [_, pack, id, itemId] = match;
+
+  let sourceItem =
+    (allPacksMap.get(pack)?.entries.find((x) => x._id === id) as EntryItem) ??
+    null;
+
+  if (!sourceItem || !itemId) {
+    return [sourceItem, origin];
+  }
+
+  return [
+    ((sourceItem.system as any).items as EntryItem[])?.find(
+      (x) => x._id === itemId
+    ) ?? null,
+    origin,
+  ];
+}
+
+function findByMatchingItem(
+  item: EntryItem,
+  allPacksMap: Map<string, PackData>
+): [item: EntryItem | null, pack: string, only: boolean] {
+  const founds: (EntryItem & { _pack: string })[] = [];
+  for (const p of allPacksMap.values()) {
+    if (p.type !== "Item") {
+      continue;
+    }
+    founds.push(
+      ...(p.entries as EntryItem[])
+        .filter((entry) => entry.name === item.name)
+        .map((entry) => ({ ...entry, _pack: p.name }))
+    );
+  }
+  if (
+    founds.length === 1 &&
+    founds[0].type === item.type &&
+    founds[0].system.description.value === item.system.description.value
+  ) {
+    return [founds[0], `${founds[0]._pack}.${founds[0]._id}`, true];
+  }
+
+  const found = founds.find(
+    (entry) =>
+      entry.type === item.type &&
+      entry.system.description.value === item.system.description.value
+  );
+  if (found) {
+    return [found, `${found._pack}.${found._id}`, false];
+  }
+  return [null, "", false];
+}
+
+function findByName(
+  name: string,
+  allPacksMap: Map<string, PackData> | PackData
+) {
+  const iterator =
+    allPacksMap instanceof Map ? allPacksMap.values() : [allPacksMap];
+  for (const p of iterator) {
+    if (p.type !== "Item") {
+      continue;
+    }
+    const found = (p.entries as EntryItem[]).find(
+      (entry) => entry.name === name
+    );
+    if (found) {
+      return found;
+    }
+  }
+  return null;
 }
 
 async function main() {
@@ -309,11 +377,8 @@ async function main() {
   const langData = _.merge({}, ...allLangs);
   await writeFile("lang/en.json", JSON.stringify(langData, null, 2));
 
-  const itemEntries = _.groupBy(
-    allPacks
-      .filter((x) => x.type == "Item")
-      .flatMap((x) => x.entries as EntryItem[]),
-    (x) => x.name.toLowerCase()
+  const allPacksMap = new Map<string, PackData>(
+    allPacks.map((p) => [p.name, p])
   );
 
   for (const pack of allPacks) {
@@ -323,7 +388,7 @@ async function main() {
           pack.name,
           pack.label,
           pack.entries as EntryActor[],
-          itemEntries
+          allPacksMap
         );
       } else if (pack.type === "Item") {
         await handleItem(pack.name, pack.label, pack.entries as EntryItem[]);
