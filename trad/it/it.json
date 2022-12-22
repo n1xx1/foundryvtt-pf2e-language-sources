@@ -1003,7 +1003,7 @@
             "wounding": {
                 "Note": {
                     "success": "<strong>Runa Ferimento</strong> Quando colpisci criticamente una creatura con un'arma con la runa ferimento, infliggi [[/r {1d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti} aggiuntivi.",
-                    "criticalSuccess": ""
+                    "criticalSuccess": "Quando colpisci criticamente una creatura con un'arma con la runa ferimento, infliggi [[/r {1d6*2}[persistent,bleed]]]{1d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti} aggiuntivi."
                 },
                 "Name": "Ferimento"
             },
@@ -1962,7 +1962,11 @@
                 },
                 "ThrownUsage": {
                     "Label": "Utilizzo Lanciato"
-                }
+                },
+                "Damage": {
+                    "DiceNumber": "Numero Dadi"
+                },
+                "FromABP": "Progressione automatica dei bonus ha aggiustato {property} di quest'arma in {value}."
             },
             "CreationDialog": {
                 "Categories": {
@@ -3003,7 +3007,7 @@
             "ClockworkWindUp": "",
             "ConstructArmor": {
                 "BrokenArmor": "",
-                "CriticalHit": ""
+                "CriticalHit": "Armatura dei Costrutti rotta da un Colpo Critico"
             },
             "CustomArmor": {
                 "BrokenArmor": "",
@@ -3014,7 +3018,7 @@
             },
             "KrampusPunishTheNaughty": "",
             "LegionArchon": {
-                "FlameOfJustice": ""
+                "FlameOfJustice": "Fiamma della Giustizia - Colpo Critico"
             },
             "PunishingStrike": {
                 "Note": ""
@@ -3660,7 +3664,7 @@
                 "mental": "mentale",
                 "metal": "metallo",
                 "negative": "negativo",
-                "persistent": "persistente",
+                "persistent": "{damageType} persistente",
                 "piercing": "perforante",
                 "poison": "veleno",
                 "positive": "positivo",
@@ -5909,24 +5913,25 @@
             "PropertyDescriptionCollisionDamage": "Il danno di collisione del veicolo. A meno che non sia specificato diversamente, le collisioni infliggono danni contundenti."
         },
         "DamageButton": {
-            "Full": "Applica tutto il danno alle token selezionate.",
+            "Full": "[Clicca] Applica tutto il danno alle token selezionate.",
             "FullContext": "Applica i Danni",
             "FullShort": "Danno",
-            "Half": "Applica la metà del danno alle token selezionate.",
+            "Half": "[Clicca] Applica la metà del danno alle token selezionate.",
             "HalfContext": "Danno Dimezzato",
             "HalfShort": "Metà",
-            "Double": "Applica un danno raddoppiato alle token selezionate.",
+            "Double": "[Clicca] Applica un danno raddoppiato alle token selezionate.",
             "DoubleContext": "Danno Doppio",
             "DoubleShort": "Doppio",
-            "Triple": "Applica il triplico dei danni ai token selezionati.",
+            "Triple": "[Clicca] Applica il triplico dei danni ai token selezionati.",
             "TripleContext": "Applica il Triplico dei Danni",
             "TripleShort": "Triplo",
-            "ShieldBlock": "Cambia lo stato del blocco con lo scudo delle token selezionate.",
+            "ShieldBlock": "[Clicca] Cambia lo stato del blocco con lo scudo delle token selezionate.",
             "ShieldBlockContext": "Parare con lo Scudo",
             "ShieldBlockShort": "Blocca",
-            "Healing": "Applica una guarigione completa alle token selezionate.",
+            "Healing": "[Clicca] Applica una guarigione completa alle token selezionate.",
             "HealingContext": "Guarisci",
-            "HealingShort": "Guarire"
+            "HealingShort": "Guarire",
+            "Adjust": "[Shift-Click] Aggiusta il valore prima di applicarlo."
         },
         "BattleForm": {
             "Attack": {
