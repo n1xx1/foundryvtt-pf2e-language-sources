@@ -2061,7 +2061,8 @@
                     "description": "<p>Un quetzalcoatlus può muoversi a metà Velocità mentre @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Afferra} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Trattiene} una singola creatura. Entrambe le sue grinfie sono occupate mentre lo fa.</p>"
                 },
                 "Swoop": {
-                    "name": "Planata"
+                    "name": "Planata",
+                    "description": "<p>Il quetzacoaltus Vola fino alla sua Velocità ed effettua un Colpo con il becco o con la grinfia in un qualsiasi punto durante quel movimento.</p>"
                 }
             },
             "description": "<p>I quetzalcoatlus sono i membri più grandi della famiglia degli pterosauri. Spesso vengono scambiati per draghi a causa della loro immensa mole e dell'apertura alare di 12 metri.</p>\n<p>I quetzalcoatlus sono carnivori e si cibano di numerose varietà di rettili, mammiferi, grossi pesci, anfibi e altri invertebrati. Non sono creature aggressive e si cibano volentieri anche di carcasse, ma quando si trovano di fronte una preda viva, attaccano senza esitazioni pressoché qualsiasi creatura di taglia inferiore alla loro.</p>\n<hr />\n<p>Gli pterosauri sono primitive creature volanti. Questi rettili volanti possono essere incontrati in vari tipi di ambienti, ma preferiscono librarsi sulle terre dal clima caldo o temperato.</p>"
@@ -2087,22 +2088,36 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
                 },
                 "Inexorable": {
-                    "name": "Inesorabile"
+                    "name": "Inesorabile",
+                    "description": "<p>Il verme cremisi recupera dalle condizioni @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{paralizzato}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato} e @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito} alla fine del suo turno. È inoltre immune alle penalità alle sue Velocità e alla condizione @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{immobilizzato} e ignora il terreno difficile e il terreno difficile superiore.</p>"
                 },
                 "Shake It Off": {
-                    "name": "Riscuotersi"
+                    "name": "Riscuotersi",
+                    "description": "<p><strong>Innesco</strong> Il verme cremisi sarebbe influenzato da una condizione o da un effetto avverso (come <em>@UUID[Compendium.pf2e.spells-srd.dN8QBNuTiaBHCKUe]{metamorfosi funesta}</em>).</p>\n<p><strong>Frequenza</strong>: Una volta al giorno.</p>\n<hr />\n<p><strong>Effetto</strong> Il verme cremisi nega la condizione o l'effetto innescante. Gli effetti degli artefatti, delle divinità o di una fonte di analoga potenza non possono essere evitati in questo modo.</p>"
                 },
                 "Breath Weapon": {
-                    "name": "Soffio"
+                    "name": "Soffio",
+                    "description": "<p>Il verme cremisi esala una fiammata in un @Template[type:cone|distance:18] che infligge [[/r 18d6[fire]]]{18d6 danni da fuoco} a tutte le creature nell'area (TS @Check[type:reflex|dc:41|basic:true]).</p>\n<p>Non può usare di nuovo il Soffio per [[/br 1d4 #rounds]]{1d4 round}.</p>"
                 },
                 "Fast Swallow": {
-                    "name": "Inghiottire Rapido"
+                    "name": "Inghiottire Rapido",
+                    "description": "<p><strong>Innesco</strong> Il verme cremisi @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Afferra} una creatura.</p>\n<hr />\n<p><strong>Effetto</strong> Il verme usa Inghiottire.</p>"
                 },
                 "Rock Tunneler": {
-                    "name": "Scavatore nella Roccia"
+                    "name": "Scavatore nella Roccia",
+                    "description": "<p>Un verme cremisi può Scavare attraverso la roccia solida a una Velocità di 6 metri. Può lasciare dietro di sé un tunnel se lo desidera, e normalmente lo fa.</p>"
                 },
                 "Swallow Whole": {
-                    "name": "Inghiottire"
+                    "name": "Inghiottire",
+                    "description": "<p>Enorme, [[/r {(3d10+10)[bludgeoning],2d6[fire]}]]{3d10+10 contundenti più 2d6 da fuoco}, Rottura 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "Fire Healing": {
+                    "description": "<p>Fintanto che il verme cremisi è a contatto con un fuoco o una massa di magma grande almeno quanto lui, ottiene @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{guarigione rapida 20}. Quando viene colpito da un effetto di fuoco magico proveniente da una fonte diversa da se stesso, un verme cremisi recupera un ammontare di Punti Ferita pari a metà dei danni da fuoco che l'effetto infliggerebbe.</p>",
+                    "name": "Guarigione di Fuoco"
+                },
+                "Crimson Worm Venom": {
+                    "name": "Veleno del Verme Cremisi",
+                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:41]</p>\n<hr />\n<p><strong>Durata Massima</strong> 6 round</p>\n<p><strong>Fase 1</strong> [[/r 1d6[poison]]]{1d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiato 1} (1 round)</p>\n<p><strong>Fase 2</strong> [[/r 2d6[poison]]]{2d6 danni da veleno} e risucchiato 1 (1 round)</p>\n<p><strong>Fase 3</strong> [[/r 2d6[poison]]]{2d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiato 2} (1 round).</p>"
                 }
             },
             "description": "<p>I fiammeggianti vermi cremisi sono tra i vermi delle caverne più pericolosi. Oltre a essere più grandi dei vermi azzurri o purpurei, i vermi cremisi hanno anche la propensione a scavare nelle regioni vulcaniche, cosa che, con il passare delle generazioni, li ha portati a sviluppare un legame soprannaturale con il Piano Elementale del Fuoco. Il cuore incandescente di un vulcano in attività è una tana invitante per un verme cremisi, come anche i vasti campi di magma ribollente che si trovano nei luoghi più remoti delle Lande Tenebrose. C’è probabilmente un fondo di verità nelle leggende dei popoli antichi, delle società naniche antesignane e dei colonizzatori dei Piani Elementali che parlano di fossati di lava popolati dai vermi cremisi, anche se i metodi che quei popoli antichi impiegavano per arginare questi “vermi del fossato” e per impedire che si facessero strada a morsi attraverso le fondamenta delle fortezze dovevano essere stati notevoli.</p>\n<p>A volte i vermi cremisi si trovano nelle aree di superficie dove il vulcanismo ha dato origine a sorgenti termali o in luoghi caratterizzati da altre caratteristiche geotermiche, ma anche in questi casi preferiscono passare il tempo a scavare il terreno all'incessante ricerca di nutrimento. I territori di superficie rivendicati dai vermi cremisi sono famosi per i monticelli sopra le loro tane che queste creature si lasciano dietro mentre scavano.</p>\n<hr />\n<p>I vermi delle caverne sono giganteschi animali saprofagi che vivono nelle viscere del mondo e si nutrono di tutto ciò che trovano. Così chiamati per la loro particolare colorazione, questi vermi sono famelici e sono in possesso di soverchianti capacità distruttive. Esistono vermi delle caverne di diversi colori e capacità nascosti negli angoli più remoti del mondo: ricordandone solo alcuni, esistono racconti che narrano di vermi bianchi annidati all'interno di enormi ghiacciai o iceberg, di vermi grigi che scavano nei cimiteri di rovine a lungo dimenticate.</p>"
@@ -2321,7 +2336,8 @@
         "Voidworm": {
             "items": {
                 "Detect Alignment (At Will) (Lawful Only)": {
-                    "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>"
+                    "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>",
+                    "name": "Individuazione dell'Allineamento (A Volontà) (Solo Legale)"
                 },
                 "Jaws": {
                     "name": "Fauci"
@@ -2330,23 +2346,35 @@
                     "name": "Coda"
                 },
                 "Fast Healing 1": {
-                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>",
+                    "name": "Guarigione Rapida 1"
                 },
                 "Protean Anatomy": {
                     "name": "Anatomia Protean"
                 },
                 "Change Shape": {
-                    "name": "Cambiare Forma"
+                    "name": "Cambiare Forma",
+                    "description": "<p>Il vermevuoto assume l'aspetto di un animale di taglia Minuscola. Questo non cambia la sua Velocità o i suoi bonus di attacco o di danno con i suoi Colpi, ma può cambiare il tipo di danni che i suoi Colpi infliggono.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Freedom of Movement (Constant)": {
                     "name": "Libertà di Movimento (Costante)",
                     "description": "<p>Respingi gli effetti che ostacolerebbero una creatura o ne rallenterebbero i movimenti. Il bersaglio, mentre è sotto l'effetto di questo incantesimo, ignora tutti gli effetti che potrebbero fornire penalità di circostanza alla Velocità. Quando il bersaglio tenta di @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Sfuggire} da un effetto che lo ha @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Afferrato} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Trattenuto}, il tentativo ha successo automaticamente, a meno che l'effetto sia un effetto magico e di un livello superiore a quello dell'incantesimo libertà di movimento.</p>"
                 },
                 "Blur (Self Only)": {
-                    "description": "<p>La forma del bersaglio appare sfocata ed il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Occultato}. La posizione del bersaglio rimane ovvia, data la natura di questo effetto, perciò il bersaglio non può usare questo occultamento per Muoversi Furtivamente o Nascondersi.</p>"
+                    "description": "<p>La forma del bersaglio appare sfocata ed il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Occultato}. La posizione del bersaglio rimane ovvia, data la natura di questo effetto, perciò il bersaglio non può usare questo occultamento per Muoversi Furtivamente o Nascondersi.</p>",
+                    "name": "Sfocatura (Solo Se Stesso)"
+                },
+                "Entropy Sense (Imprecise) 30 feet": {
+                    "name": "Percezione dell'Entropia (Impreciso) 9 metri",
+                    "description": "<p>Un vermevuoto può prevedere la probabile presenza di una creatura attraverso un'intuizione soprannaturale basata sulle probabilità caotiche e sul caso. Questo gli conferisce la capacità di percepire le creature entro la gittata indicata. Una creatura sotto gli effetti di <em>@UUID[Compendium.pf2e.spells-srd.EoKBlgf6Smt8opaU]{anti-individuazione}</em> o schermata in qualche modo dalle divinazioni e dalle predizioni non può essere notata attraverso la percezione dell'entropia.</p>"
+                },
+                "Confounding Lash": {
+                    "name": "Sferzata Confondente",
+                    "description": "<p>Una creatura colpita dal Colpo con la coda del vermevuoto è @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottita 1} per 1 round (@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottita 2} in caso di Colpo Critico). Un TS su @Check[type:will|dc:16] superato nega questo effetto e conferisce immunità temporanea alla sferzata confondente per 1 minuto.</p>"
                 }
             },
-            "name": "Vermevuoto"
+            "name": "Vermevuoto",
+            "description": "<p>Gli altri protean ritengono che gli esseri volanti e iridescenti noti come vermivuoti non facciano parte in alcun modo della casta dei protean, e che siano invece soltanto un deplorevole effetto collaterale della turbolenta energia del Maelstrom. Definire protean un vermevuoto alla presenza di un protean più potente è un modo sicuro per istigare un combattimento.</p>\n<p>Da parte loro, i vermivuoti sono poco interessati al fatto che gli altri li considerino dei protean o meno. Mantengono una fiorente ecologia all'interno del Maelstrom, formando allegri branchi di un massimo di venti esemplari e giocando nel caos delle realtà in costante mutamento. Altrove (per esempio sul Piano Materiale), i vermivuoti sono affascinati dal principio della permanenza degli oggetti; molti si stabiliscono presso uno specifico elemento geografico una regione (come il fianco di una collina o uno stagno) e gli svolazzano intorno per mesi o anche per anni in attesa che l'oggetto della loro curiosità cambi. I cambiamenti minori (come il cambio di colore di un albero durante l'autunno, il lento decomporsi di un cadavere o il periodico sfiato di vapore di un geyser) affascinano molto i vermivuoti. Un vermevuoto è lungo circa 60 centimetri e pesa 1 chilogrammo.</p>\n<hr />\n<p>Custodi del disordine e originari del piano primordiale del caos noto come Maelstrom, i protean seguono la vocazione di espandere al massimo la confusione e di agevolare i fini dell'entropia. I protean più potenti sono semidei conosciuti collettivamente come signori dei protean sebbene si tratti di entità misteriose i cui culti sul Piano Materiale tendono a essere poco noti e ad agire clandestinamente.</p>\n<p>I protean si dividono in un sistema informale di caste e sono dotati di una frastornante varietà di poteri. Molti protean hanno un corpo serpentino e la testa di una bestia primordiale. Gli studiosi sono stati a lungo affascinati dal fatto che gli eredi della dissoluzione e del disordine potessero condividere così tanti tratti, sottolineando anche nel caos più puro può esistere una parvenza di ordine. Altri fanno notare che la forma serpentina è una delle strutture più primitive, suggerendo che forse, nella realtà dell'alba dei tempi, una conformazione simile fosse l'unica possibile. Gli stessi protean hanno poco da dire sull'argomento, cosa che forse aggiunge ironicamente soltanto ulteriore confusione e dissenso a quelli che già circondano questa specie. Dopotutto, il fatto che nemmeno il caos possa essere considerato totalmente caotico non è forse l'espressione più pura dell'entropia.</p>"
         },
         "Young White Dragon": {
             "name": "Drago Bianco Giovane",
@@ -2412,6 +2440,10 @@
                 },
                 "Talon": {
                     "name": "Grinfie"
+                },
+                "Eagle Dive": {
+                    "name": "Picchiata dell'Aquila",
+                    "description": "<p>L'aquila @UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{Vola} fino al doppio della sua Velocità di Volare in linea retta, scende di almeno 3 metri e poi effettua un Colpo di grinfie.</p>"
                 }
             }
         },
@@ -2581,7 +2613,16 @@
                     "name": "Artiglio"
                 },
                 "Pack Attack": {
-                    "name": "Attacco in Branco"
+                    "name": "Attacco in Branco",
+                    "description": "<p>I Colpi dell'elananx infliggono [[/r {1d6}]]{1d6 danni} extra alle creature entro la portata di almeno due alleati dell'elananx.</p>"
+                },
+                "Cinder Dispersal": {
+                    "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<p><strong>Innesco</strong> L'elananx subisce danni da una fonte ostile.</p>\n<hr />\n<p><strong>Effetto</strong> L'elananx si disperde in una nube di fumo e di ceneri che riempie il suo spazio e un'@Template[type:emanation|distance:20]. Mentre è in questa forma, l'elananx non può essere attaccato o bersagliato e non occupa nessuno spazio. Ogni cosa che si trova in questa nube è @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{occultata} e ogni creatura che termina il proprio turno al suo interno subisce [[/r 2d6[fire]]]{2d6 danni da fuoco}. All'inizio del proprio turno, l'elananx torna alla sua forma normale in un qualsiasi quadretto coperto dalla nube, Se l'elananx Colpisce una creatura usando la sua prima azione dopo essere tornata alla sua forma normale, il bersaglio è @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} e il Colpo infligge [[/r 1d6[fire]]]{1d6 danni da fuoco} extra.</p>",
+                    "name": "Dispersione delle Ceneri"
+                },
+                "Pounce": {
+                    "name": "Balzo",
+                    "description": "<p>L'elananx Aavanza ed effettua un Colpo alla fine di quel movimento. Se l'elananx aveva iniziato questa azione @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto}, rimane nascosto fino a dopo l'attacco.</p>"
                 }
             }
         },
@@ -3310,10 +3351,20 @@
                     "name": "Bastone Ferrato"
                 },
                 "Sneak Attack": {
-                    "name": "Attacco Furtivo"
+                    "name": "Attacco Furtivo",
+                    "description": "<p>Il mago draconico infligge 1d6 danni di precisione aggiuntivi alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "Illusory Retreat": {
+                    "description": "<p><strong>Frequenza</strong> una volta per ora</p>\n<p><strong>Requisiti</strong> Il coboldo mago draconico è adiacente ad almeno un nemico.</p>\n<hr />\n<p><strong>Effetto</strong> Il mago draconico crea un’Illusione di se stesso nel suo quadretto e poi diventa @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile} (con gli effetti di un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{invisibilità}</em> di 2° livello) per [[/br 1d4 #Durata Ritirata Illusoria]]{1d4 round}. Il mago draconico può muoversi fino a metà della sua Velocità, ma deve terminare il suo movimento in uno spazio che non sia adiacente a nessun nemico.</p>\n<p>Questo è un incantesimo di 1° livello che richiede una componente somatica.</p>",
+                    "name": "Ritirata Illusoria"
+                },
+                "Dragonscaled": {
+                    "name": "Scaglie di Drago",
+                    "description": "<p>La resistenza di un coboldo mago draconico dipende dal colore delle sue scaglie:</p>\n<ul>\n<li><strong>Blu</strong> elettricità 5</li>\n</ul>"
                 }
             },
-            "name": "Coboldo Mago Draconico Blu"
+            "name": "Coboldo Mago Draconico Blu",
+            "description": "<p>I coboldi maghi draconici usano la magia per perseguire i loro obiettivi segreti. La presenza di un mago draconico in una tana di coboldi è una delle testimonianze più esplicite del retaggio draconico di cui vanno così fieri.</p>\n<hr />\n<p>I coboldi sono piccoli rettili umanoidi che presentano alcune somiglianze fisiche con i draghi veri e propri. Si nascondono nei luoghi più oscuri, solitamente nei tunnel e nelle miniere sotterranee, in cunicoli che scavano personalmente o in complessi scoperti e colonizzati dopo che gli occupanti originari li hanno abbandonati. I coboldi sono creature molto più pragmatiche che coraggiose e sfruttano tutta la loro astuzia per equilibrare lo scontro con le altre creature più forti. Attaccano nell'oscurità e si mantengono a distanza, affidandosi ai coboldi artefici e ingegneri e alla loro perizia nel creare trappole semplici ma efficaci con cui proteggere le tane. I coboldi sono bravi a lavorare in gruppo in caso di necessità e spesso organizzano imboscate o assalti \"mordi e fuggi\" che permettono loro di infliggere più danni possibile senza essere danneggiati a loro volta.</p>\n<p>I coboldi sono creature diligenti e laboriose, anche se spesso utilizzano queste qualità per fini egoistici. Sebbene alcuni coboldi vivano all'interno di società più vaste mantenendo rapporti neutrali con le creature che li circondano, possono essere facilmente influenzati e costretti a servire una potenza maligna o un capo megalomane. Questo è in parte dovuto al pragmatismo innato dei coboldi, che preferiscono sottostare alla schiavitù piuttosto che rischiare la vita, ma anche dalla loro soggezione nei confronti di quel potere di cui generalmente sentono la mancanza. Provano un timore reverenziale soprattutto nei confronti dei draghi, e appena possono offrono con entusiasmo i loro servizi a creature tanto potenti e gloriose. Anche se i coboldi possono tramare contro chi li comanda, specialmente contro chi li controlla sottomettendoli, continuano a guardare ai draghi con adorazione, per quanto queste creature possano dimostrarsi brutali nei confronti dei loro servitori.</p>"
         },
         "Mukradi": {
             "name": "Mukradi",
