@@ -367,7 +367,7 @@
     },
     "Boom Snare": {
       "name": "Boom Snare",
-      "description": "<p>By combining a @UUID[Compendium.pf2e.equipment-srd.yd3kEK21YknZLlcT]{Alchemist's Fire (Lesser)}, a @UUID[Compendium.pf2e.equipment-srd.Xnqglykl3Cif8rN9]{Thunderstone (Lesser)}, and other catalysts with a pressure sensitive trigger, you create a snare that creates a fiery and thunderous explosion when triggered. The target and all creatures in adjacent squares take [[/r {2d6[fire],2d6[sonic]}]]{2d6 fire damage and 2d6 sonic damage} with a basic @Check[type:reflex|dc:19|traits:mechanicle] save. On a failure, they are @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for [[/r 1d4 #rounds]]{1d4 rounds} and take [[/r {1d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a lesser alchemist's fire and a lesser thunderstone.</p>"
+      "description": "<p>By combining a @UUID[Compendium.pf2e.equipment-srd.yd3kEK21YknZLlcT]{Alchemist's Fire (Lesser)}, a @UUID[Compendium.pf2e.equipment-srd.Xnqglykl3Cif8rN9]{Thunderstone (Lesser)}, and other catalysts with a pressure sensitive trigger, you create a snare that creates a fiery and thunderous explosion when triggered. The target and all creatures in adjacent squares take [[/r {2d6[fire],2d6[sonic]}]]{2d6 fire damage and 2d6 sonic damage} with a @Check[type:reflex|dc:19|traits:mechanicle|basic:true] save. On a failure, they are @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for [[/r 1d4 #rounds]]{1d4 rounds} and take [[/r {1d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a lesser alchemist's fire and a lesser thunderstone.</p>"
     },
     "Sleeves of Storage": {
       "name": "Sleeves of Storage",
@@ -4623,7 +4623,7 @@
     },
     "Frost Worm Snare": {
       "name": "Frost Worm Snare",
-      "description": "<p>The snare takes the form of a Tiny frost worm clockwork toy. When a creature enters its square, the snare activates, causing the worm to let loose a @Template[type:line|distance:30]{30‑foot line} of frost in the direction from which the creature entered the square. For instance, if a creature entered the square coming from the south, the worm would shoot the line south, to hit any allies of the triggering creature. Those within the line must succeed a basic @Check[type:reflex|dc:25] save or take [[/r 10d6[cold]]]{10d6 cold damage}. After spitting its frost, the snare falls apart.</p>"
+      "description": "<p>The snare takes the form of a Tiny frost worm clockwork toy. When a creature enters its square, the snare activates, causing the worm to let loose a @Template[type:line|distance:30]{30‑foot line} of frost in the direction from which the creature entered the square. For instance, if a creature entered the square coming from the south, the worm would shoot the line south, to hit any allies of the triggering creature. Those within the line must succeed a @Check[type:reflex|dc:25|basic:true] save or take [[/r 10d6[cold]]]{10d6 cold damage}. After spitting its frost, the snare falls apart.</p>"
     },
     "Amphibious Chair": {
       "name": "Amphibious Chair",
@@ -6887,7 +6887,7 @@
     },
     "Horn of the Sun Aurochs": {
       "name": "Horn of the Sun Aurochs",
-      "description": "<p>A horn of the sun aurochs grants a +2 item bonus to Performance checks when played as an instrument.</p>\n<hr />\n<p><strong>Activate</strong> Interact <span class=\"pf2-icon\">2</span></p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The horn is clearly audible for hundreds of feet, but within a @Template[type:emanation|distance:20], the sound causes agony in those who wish harm upon the user; the horn also sheds bright light in that area and dim light to the next 20 feet. Enemies of the user in this area take [[/r 7d6[sonic]]] damage and [[/r 7d6[good]]] damage (basic @Check[type:fortitude|dc:30] save). Creatures that are specifically vulnerable to sunlight are also @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} if they fail this save or @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure. This activation also attempts to counteract any darkness or sleep effects in the area ([[/r 1d20+23 #Counteract]]{+23} counteract check).</p>"
+      "description": "<p>A horn of the sun aurochs grants a +2 item bonus to Performance checks when played as an instrument.</p>\n<hr />\n<p><strong>Activate</strong> Interact <span class=\"pf2-icon\">2</span></p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The horn is clearly audible for hundreds of feet, but within a @Template[type:emanation|distance:20], the sound causes agony in those who wish harm upon the user; the horn also sheds bright light in that area and dim light to the next 20 feet. Enemies of the user in this area take [[/r 7d6[sonic]]] damage and [[/r 7d6[good]]] damage (@Check[type:fortitude|dc:30|basic:true] save). Creatures that are specifically vulnerable to sunlight are also @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} if they fail this save or @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure. This activation also attempts to counteract any darkness or sleep effects in the area ([[/r 1d20+23 #Counteract]]{+23} counteract check).</p>"
     },
     "Probing Cane": {
       "name": "Probing Cane",
@@ -9579,7 +9579,7 @@
     },
     "Flame Drake Snare": {
       "name": "Flame Drake Snare",
-      "description": "<p>The snare takes the form of a Tiny, drake‑like clockwork toy. When a creature enters its square the snare activates, causing the drake to spit a gout of fire in a @Template[type:cone|distance:15]{15‑foot cone} in the direction from which the creature entered.</p>\n<p>For instance, if a creature entered the square coming from the east, the cone would point east, to hit any allies behind the triggering creature. Those within the cone must succeed a basic @Check[type:reflex|dc:19] save or take [[/r 6d6[fire]]] damage. After spitting its fire, the snare falls apart.</p>"
+      "description": "<p>The snare takes the form of a Tiny, drake‑like clockwork toy. When a creature enters its square the snare activates, causing the drake to spit a gout of fire in a @Template[type:cone|distance:15]{15‑foot cone} in the direction from which the creature entered.</p>\n<p>For instance, if a creature entered the square coming from the east, the cone would point east, to hit any allies behind the triggering creature. Those within the cone must succeed a @Check[type:reflex|dc:19|basic:true] save or take [[/r 6d6[fire]]] damage. After spitting its fire, the snare falls apart.</p>"
     },
     "Antiplague (Major)": {
       "name": "Antiplague (Major)",
