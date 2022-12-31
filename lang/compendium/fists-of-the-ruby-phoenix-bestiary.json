@@ -221,7 +221,7 @@
         },
         "Magma's Grasp": {
           "name": "Magma's Grasp",
-          "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Jivati's breath ignites a fire in the spirit of each creature within 10 feet of Jivati, dealing [[/r 8d6[fire]]] damage. Each creature in the area must attempt a @Check[type:will|dc:33|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and [[/r {1d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} and loses 1 Focus Point. If it has no Focus Points, the creature instead loses a random prepared spell or spell slot from the highest level it has left (maximum 6th level).</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage and [[/r {2d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>"
+          "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Jivati's breath ignites a fire in the spirit of each creature within 10 feet of Jivati, dealing [[/r 8d6[fire]]] damage. Each creature in the area must attempt a @Check[type:will|dc:33|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and [[/r 1d6[persistent,fire]]] damage and loses 1 Focus Point. If it has no Focus Points, the creature instead loses a random prepared spell or spell slot from the highest level it has left (maximum 6th level).</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage and [[/r 2d6[persistent,fire]]] damage.</p>"
         }
       }
     },
@@ -385,7 +385,7 @@
         },
         "Divine Smite": {
           "name": "Divine Smite",
-          "description": "<p>If Tino hits with his Retributive Strike, the target takes [[/r 3 #persistent good damage]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Good Damage}.</p>"
+          "description": "<p>If Tino hits with his Retributive Strike, the target takes [[/r 3[persistent,good damage]]] damage.</p>"
         },
         "Flurry of Blows": {
           "name": "Flurry of Blows",
@@ -397,7 +397,7 @@
         },
         "Retributive Strike": {
           "name": "Retributive Strike",
-          "description": "<p><strong>Trigger</strong> An enemy damages your ally, and both are within 15 feet of you</p>\n<hr />\n<p>You protect your ally and strike your foe. The ally gains resistance to all damage against the triggering damage equal to 2 + your level. If the foe is within reach, make a melee Strike against it.</p>\n<p>If Tino hits with his Retributive Strike, the target takes [[/r {3}[persistent,good]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Good Damage}.</p>\n<p>If Tino's Retributive Strike against the triggering creature doesn't critically miss, that creature meets the requirements for Tino to use Defiant Shove until the end of his next turn.</p>"
+          "description": "<p><strong>Trigger</strong> An enemy damages your ally, and both are within 15 feet of you</p>\n<hr />\n<p>You protect your ally and strike your foe. The ally gains resistance to all damage against the triggering damage equal to 2 + your level. If the foe is within reach, make a melee Strike against it.</p>\n<p>If Tino hits with his Retributive Strike, the target takes [[/r 3[persistent,good]]] damage.</p>\n<p>If Tino's Retributive Strike against the triggering creature doesn't critically miss, that creature meets the requirements for Tino to use Defiant Shove until the end of his next turn.</p>"
         }
       }
     },
@@ -444,7 +444,7 @@
         },
         "Solar Flare": {
           "name": "Solar Flare",
-          "description": "<p><strong>Trigger</strong> The bul-gae takes damage</p>\n<hr />\n<p><strong>Effect</strong> The bul-gae releases a solar flare in a @Template[type:emanation|distance:30]. Each creature in the area takes [[/r 6d8[fire]]] damage (@Check[type:reflex|dc:34|basic:true] save). On a critical failure, a creature also takes [[/r {2d10}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}. After using this ability, the bul-gae's flames cool and they can't use Solar Flare again until after they have used Lunar Burst.</p>"
+          "description": "<p><strong>Trigger</strong> The bul-gae takes damage</p>\n<hr />\n<p><strong>Effect</strong> The bul-gae releases a solar flare in a @Template[type:emanation|distance:30]. Each creature in the area takes [[/r 6d8[fire]]] damage (@Check[type:reflex|dc:34|basic:true] save). On a critical failure, a creature also takes [[/r 2d10[persistent,fire]]] damage. After using this ability, the bul-gae's flames cool and they can't use Solar Flare again until after they have used Lunar Burst.</p>"
         },
         "Thermal Mastery": {
           "name": "Thermal Mastery",
@@ -587,7 +587,7 @@
       "name": "Fists of the Ruby Phoenix",
       "description": "<p>A floating skull of fire swoops around the arena, rotating as it weaves through the ring and releasing huge gouts of flame in random directions.</p>",
       "hazardDisable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendary) checks or castings of <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
-      "hazardRoutine": "<p>(3 actions) The trap loses 1 action per turn per successful check to disable. The floating flamethrower uses its first action to release a gout of flame in a @Template[type:cone|distance:15] that deals [[/r {4d6+4}[fire]]]{4d6+4 fire damage} (@Check[type:reflex|dc:40|basic:true] save), its second action to fly in a U-shape in a random direction, and its third action to release another gout of flame.</p>"
+      "hazardRoutine": "<p>(3 actions) The trap loses 1 action per turn per successful check to disable. The floating flamethrower uses its first action to release a gout of flame in a @Template[type:cone|distance:15] that deals [[/r (4d6+4)[fire]]] damage (@Check[type:reflex|dc:40|basic:true] save), its second action to fly in a U-shape in a random direction, and its third action to release another gout of flame.</p>"
     },
     "Golarion's Finest (Han)": {
       "name": "Golarion's Finest (Han)",
@@ -661,7 +661,7 @@
       "name": "Fists of the Ruby Phoenix",
       "description": "<p>A portal to the Plane of Air rips open onstage, causing roaring winds to tear through the opera house</p>",
       "hazardDisable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (master) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendary) to open enough windows and doors to reduce its intensity, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 34) to counteract the air rift</p>",
-      "hazardRoutine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a d6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take [[/r {3d8+15}[bludgeoning]]]{3d8+15 bludgeoning damage} on impact.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Failure</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>"
+      "hazardRoutine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a d6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take [[/r (3d8+15)[bludgeoning]]] damage on impact.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Failure</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>"
     },
     "Angoyang": {
       "name": "Angoyang",
@@ -1287,7 +1287,7 @@
       "name": "Fists of the Ruby Phoenix",
       "description": "<p>Four remote sensors at each corner of the arena cause bursts of freezing magic to erupt from random tiles on the arena and stop creatures in their tracks.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 38) to disable one of the sensors</p>",
-      "hazardRoutine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes [[/r {2d6+2}[cold]]]{2d6+2 cold damage} (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>"
+      "hazardRoutine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes [[/r (2d6+2)[cold]]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>"
     },
     "Planar Terra-cotta Soldier": {
       "name": "Planar Terra-cotta Soldier",
@@ -1714,7 +1714,7 @@
         },
         "Chattering Blow": {
           "name": "Chattering Blow",
-          "description": "<p><strong>Requirements</strong> Troff is within reach of a creature that has taken cold damage since the end of Troff's last turn</p>\n<hr />\n<p><strong>Effect</strong> Troff jabs a pressure point on the creature made vulnerable by cold. The creature must attempt a @Check[type:fortitude|dc:31|traits:damaging-effect] save as its skin freezes and its limbs turn sluggish and clammy.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes [[/r {2d4}[persistent,cold]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Cold Damage} and a -5-foot status penalty to its Speeds until the persistent cold damage ends. Dealing fire damage to the creature is an especially effective way to help end the persistent cold damage (allowing a new flat check to end it at DC 10).</p>\n<p><strong>Failure</strong> As success, but the damage is [[/r {4d4}[persistent,cold]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Cold Damage} and the penalty is -15-foot.</p>\n<p><strong>Critical Failure</strong> As success, but the damage is [[/r {6d4}[persistent,cold]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Cold Damage} and the creature is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} instead of taking a Speed penalty.</p>"
+          "description": "<p><strong>Requirements</strong> Troff is within reach of a creature that has taken cold damage since the end of Troff's last turn</p>\n<hr />\n<p><strong>Effect</strong> Troff jabs a pressure point on the creature made vulnerable by cold. The creature must attempt a @Check[type:fortitude|dc:31|traits:damaging-effect] save as its skin freezes and its limbs turn sluggish and clammy.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes [[/r 2d4[persistent,cold]]] damage and a -5-foot status penalty to its Speeds until the persistent cold damage ends. Dealing fire damage to the creature is an especially effective way to help end the persistent cold damage (allowing a new flat check to end it at DC 10).</p>\n<p><strong>Failure</strong> As success, but the damage is [[/r 4d4[persistent,cold]]] damage and the penalty is -15-foot.</p>\n<p><strong>Critical Failure</strong> As success, but the damage is [[/r 6d4[persistent,cold]]] damage and the creature is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} instead of taking a Speed penalty.</p>"
         },
         "Flurry of Blows": {
           "name": "Flurry of Blows",
@@ -1936,7 +1936,7 @@
       "description": "<p>Ghostly attackers knock the tables about, send dishes flying, and pull fleeing creatures into the room.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:34|name:Say an Iroran prayer|traits:haunt] (expert) to say an Iroran prayer and put the haunt temporarily to rest, @Check[type:occultism|dc:38|name:Ward Against Future Hauntings|traits:haunt] (master) to create a ward against future hauntings.</p>",
       "hazardReset": "<p>The haunt deactivates after 1 minute. It re-forms at the same times every day, 7 a.m. and 7 p.m., which is when the monks had their morning and evening meals. If at least two people cook a meal in the kitchen, share a meal in the refectory, and utter a prayer to Irori before the meal, the haunt becomes permanently disabled and doesn't re-form.</p>",
-      "hazardRoutine": "<p>(1 action) The haunt sends a flurry of objects hurtling across the room. All creatures in the room are battered by the ghostly objects, taking [[/r {3d10+14}[force]]]{3d10+14 Force damage} (@Check[type:reflex|dc:36|basic:true] save).</p>"
+      "hazardRoutine": "<p>(1 action) The haunt sends a flurry of objects hurtling across the room. All creatures in the room are battered by the ghostly objects, taking [[/r (3d10+14)[force]]] damage (@Check[type:reflex|dc:36|basic:true] save).</p>"
     },
     "Ran-to (Level 14)": {
       "name": "Ran-to (Level 14)",
@@ -2533,7 +2533,7 @@
         },
         "Frostbite": {
           "name": "Frostbite",
-          "description": "<p>A creature that takes cold damage from a sthira's Strikes or aura must attempt a @Check[type:fortitude|dc:42] save. A creature that already has persistent cold damage from frostbite ignores this effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, and is temporarily immune to this ability for 1 hour.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes [[/r {3d6}[persistent,cold]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Cold Damage}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+          "description": "<p>A creature that takes cold damage from a sthira's Strikes or aura must attempt a @Check[type:fortitude|dc:42] save. A creature that already has persistent cold damage from frostbite ignores this effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, and is temporarily immune to this ability for 1 hour.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes [[/r 3d6[persistent,cold]]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
         }
       }
     },
@@ -3227,7 +3227,7 @@
         },
         "Retributive Strike": {
           "name": "Retributive Strike",
-          "description": "<p><strong>Trigger</strong> An enemy damages Tino's ally, and both are within 15 feet of him</p>\n<hr />\n<p>Tino protects his ally and strikes his foe. The ally gains resistance 11 to all damage against the triggering damage. If the foe is within reach, he makes a melee Strike against it.</p>\n<p>If Tino hits with his Retributive Strike, the target takes [[/r {3}[persistent,good]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Good Damage}.</p>"
+          "description": "<p><strong>Trigger</strong> An enemy damages Tino's ally, and both are within 15 feet of him</p>\n<hr />\n<p>Tino protects his ally and strikes his foe. The ally gains resistance 11 to all damage against the triggering damage. If the foe is within reach, he makes a melee Strike against it.</p>\n<p>If Tino hits with his Retributive Strike, the target takes [[/r 3[persistent,good]]] damage.</p>"
         }
       }
     },
@@ -3267,7 +3267,7 @@
       "description": "<p>Buffeting winds swirl sharp grains of sand about the room.</p>",
       "hazardDisable": "<p>@Check[type:religon|dc:38|name:State an Iroran Koan|traits:haunt]{Religion} (expert) to state an Iroran koan about being complete only upon recognizing one's incompleteness, or @Check[type:occultism|dc:41|name:Ward Against Hauntings|traits:haunt] (master) to create a ward against future hauntings</p>",
       "hazardReset": "<p>The haunt deactivates after 1 minute and re-forms after 1 hour. The haunt is disabled and doesn't re-form if at least two creatures spend 1 minute to create an image with the sand. Creating the image requires a successful @Check[type:crafting|dc:30|name:Create Image in Sand] or @Check[type:thievery|dc:30|name:Create Image in Sand]check.</p>",
-      "hazardRoutine": "<p>(1 action) The haunt's violent winds savagely buffet everyone in the room, dealing[[/r {6d10+30}[bludgeoning]]]{6d10+30 bludgeoning damage} to living creatures (@Check[type:reflex|dc:34|basic:true|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>"
+      "hazardRoutine": "<p>(1 action) The haunt's violent winds savagely buffet everyone in the room, dealing[[/r (6d10+30)[bludgeoning]]] damage to living creatures (@Check[type:reflex|dc:34|basic:true|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>"
     },
     "Muckish Creep": {
       "name": "Muckish Creep",
@@ -3448,7 +3448,7 @@
         },
         "Deploy Countermeasures": {
           "name": "Deploy Countermeasures",
-          "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> Yoh is piloting the Solar Jian II</p>\n<hr />\n<p><strong>Effect</strong> While the Solar Jian II is not a combat vessel, it does have a magically renewing supply of fireworks for victory parades and the like. Yoh fires them at a @Template[type:burst|distance:20] within 60 feet. Creatures in the area take [[/r 3d6[fire]]] damage and [[/r 3d6[sonic]]] damage with a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The target takes full damage and is dazzled for 3 rounds.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, takes [[/r {3d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and is dazzled for 1 minute.</p>"
+          "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> Yoh is piloting the Solar Jian II</p>\n<hr />\n<p><strong>Effect</strong> While the Solar Jian II is not a combat vessel, it does have a magically renewing supply of fireworks for victory parades and the like. Yoh fires them at a @Template[type:burst|distance:20] within 60 feet. Creatures in the area take [[/r 3d6[fire]]] damage and [[/r 3d6[sonic]]] damage with a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The target takes full damage and is dazzled for 3 rounds.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, takes [[/r 3d4[persistent,fire]]] damage, and is dazzled for 1 minute.</p>"
         },
         "I'll Get You into Position!": {
           "name": "I'll Get You into Position!",
@@ -3908,7 +3908,7 @@
       "description": "<p>Mogaru brushes against a structure, severely compromising the building's stability and possibly causing it to collapse.</p>",
       "hazardDisable": "<p>@Check[type:athletics|dc:43|name:Brace the Structure] (master), @Check[type:crafting|dc:43|name:Brace the Structure] (master), or @Check[type:engineering-lore|dc:43|name:Brace the Structure]{Engineering Lore} (master) to brace the structure to reduce the risk of collapse until the end of the creature's next turn. The DC of the flat check for this round (see Routine) is increased by 4 on a success, or by 8 on a critical success. Increasing the flat check DC to 21 or higher stabilizes the structure, ending this hazard.</p>",
       "hazardReset": "<p>The building becomes susceptible to Shake Apart again [[/r 1d6]]{1d6 rounds} after it is stabilized.</p>",
-      "hazardRoutine": "<p>(1 action) The GM rolls a @Check[type:flat|dc:9] to determine if the building collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing [[/r {6d6}[bludgeoning]]]{6d6 bludgeoning damage} to [[/r 1d4]] randomly chosen targets (@Check[type:reflex|dc:35|basic:true] save; on a critically failed save, the creature is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}). On a critical success, the effect is the same, but the debris deals [[/r {12d6}[bludgeoning]]]{12d6 bludgeoning damage} to [[/r 2d4]] randomly chosen targets instead (@Check[type:reflex|dc:35|basic:true] save; on a critically failed Reflex save, the creature is restrained by rubble until freed [Force Open DC 38, Escape DC 35]).</p>"
+      "hazardRoutine": "<p>(1 action) The GM rolls a @Check[type:flat|dc:9] to determine if the building collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing [[/r 6d6[bludgeoning]]] damage to [[/r 12d6[bludgeoning]]] damage to [[/r 2d4]] randomly chosen targets instead (@Check[type:reflex|dc:35|basic:true] save; on a critically failed Reflex save, the creature is restrained by rubble until freed [Force Open DC 38, Escape DC 35]).</p>"
     },
     "Yarrika Mulandez": {
       "name": "Yarrika Mulandez",

@@ -458,7 +458,7 @@
         },
         "Explosive Breath": {
           "name": "Explosive Breath",
-          "description": "<p>When Mengkare uses Breath Weapon, he can expel an explosive orb of flame instead of a cone. When he does, he fires the orb at the corner of a square within 60 feet. The orb immediately detonates and deals [[/r 24d6[fire]]] damage (@Check[type:reflex|dc:48|basic:true|name:Explosive Orb|traits:fire] save) to all creatures within a @Template[type:burst|distance:30]. Creatures that critically fail their save catch on fire and take [[/r {4d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>"
+          "description": "<p>When Mengkare uses Breath Weapon, he can expel an explosive orb of flame instead of a cone. When he does, he fires the orb at the corner of a square within 60 feet. The orb immediately detonates and deals [[/r 24d6[fire]]] damage (@Check[type:reflex|dc:48|basic:true|name:Explosive Orb|traits:fire] save) to all creatures within a @Template[type:burst|distance:30]. Creatures that critically fail their save catch on fire and take [[/r 4d6[persistent,fire]]] damage.</p>"
         }
       }
     },
@@ -783,7 +783,7 @@
       "name": "Age of Ashes",
       "description": "<p>A small-scale version of a dragonstorm-a churning vortex of wind infused with fire, acid, lightning, poison, and ice-fills Alseta's Ring.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:40|name:Call for Divine Intervention] (legendary) to call out to a non-evil deity for direct intervention to disperse the lesser dragonstorm (prayers to Apsu allow characters who are masters in Religion to attempt the check as if they were legendary instead), @Check[type:thievery|dc:42|name:Deactivate Vengegate|traits:action:disable-a-device] (legendary) to deactivate Vengegate while the manifestation is forcing it open, or a successful <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (10th level; DC 40) to counteract the lesser dragonstorm.</p>",
-      "hazardRoutine": "<p>(1 action) On its initiative, the lesser dragonstorm reaches out and blasts all creatures within Alseta's Ring. Affected creatures take [[/r {2d8}[acid] + {2d8}[cold] + {2d8}[fire] + {2d8}[electricity + {2d8}[poison]]]{10d8 damage} (@Check[type:reflex|dc:46|basic:true]), evenly split between acid, cold, fire, electricity, and poison. Creatures that fail their save are pulled 20 feet toward the center of Alseta's Ring (or are knocked prone and pulled 30 feet on a critical failure). After 10 rounds, the lesser dragonstorm is destroyed, but a much greater dragonstorm manifests in the surrounding region-see The Dragonstorm.</p>"
+      "hazardRoutine": "<p>(1 action) On its initiative, the lesser dragonstorm reaches out and blasts all creatures within Alseta's Ring. Affected creatures take [[/r {2d8[acid],2d8[cold],2d8[fire],2d8[poison]}]]{10d8 damage} (@Check[type:reflex|dc:46|basic:true]), evenly split between acid, cold, fire, electricity, and poison. Creatures that fail their save are pulled 20 feet toward the center of Alseta's Ring (or are knocked prone and pulled 30 feet on a critical failure). After 10 rounds, the lesser dragonstorm is destroyed, but a much greater dragonstorm manifests in the surrounding region-see The Dragonstorm.</p>"
     },
     "Vaklish": {
       "name": "Vaklish",
@@ -997,7 +997,7 @@
       "description": "<p>The echo of diabolic bells reverberates with a bone-shaking clamor.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:27|name:Recite Against the Power of Hell|traits:auditory,complex,haunt,sonic,hazard] (expert) to break the curse with recitations against the power of Hell (2 actions), or @Check[type:performance|dc:22|name:Perform an Opposing Composition|traits:auditory,complex,haunt,sonic,hazard] (expert) to Perform an opposing composition</p>",
       "hazardReset": "<p>The bells cease ringing if there are no living creatures within 30 feet.</p>",
-      "hazardRoutine": "<p>(1 action) The bells toll, dealing [[/r {4d6}[sonic]]]{4d6 sonic damage} to each living creature within @Template[type:emanation|distance:30]{30 feet} (@Check[type:fortitude|dc:24|basic:true|name:Phantom Bells Toll|traits:auditory,complex,haunt,sonic,hazard] save).</p>"
+      "hazardRoutine": "<p>(1 action) The bells toll, dealing [[/r 4d6[sonic]]] damage to each living creature within @Template[type:emanation|distance:30]{30 feet} (@Check[type:fortitude|dc:24|basic:true|name:Phantom Bells Toll|traits:auditory,complex,haunt,sonic,hazard] save).</p>"
     },
     "Ingnovim's Assistant": {
       "name": "Ingnovim's Assistant",
@@ -1021,11 +1021,11 @@
       "items": {
         "Jaws": {
           "name": "Jaws",
-          "description": "<p>[[/r {2d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+          "description": "<p>[[/r 2d8[persistent,fire]]] damage</p>"
         },
         "Claw": {
           "name": "Claw",
-          "description": "<p>[[/r {2d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+          "description": "<p>[[/r 2d8[persistent,fire]]] damage</p>"
         },
         "Explosion": {
           "name": "Explosion",
@@ -1036,15 +1036,15 @@
         },
         "Internal Furnace": {
           "name": "Internal Furnace",
-          "description": "<p><strong>Trigger</strong> A creature adjacent to the Xotanispawn touches it or hits it with a physical attack</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature takes [[/r {5d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} (@Check[type:reflex|dc:37|traits:damaging-effect] save to negate).</p>"
+          "description": "<p><strong>Trigger</strong> A creature adjacent to the Xotanispawn touches it or hits it with a physical attack</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature takes [[/r 5d8[persistent,fire]]] damage (@Check[type:reflex|dc:37|traits:damaging-effect] save to negate).</p>"
         },
         "Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>The Xotanispawn sprays a @Template[type:cone|distance:60] of magma that deals [[/r 10d10[fire]]] damage and [[/r {2d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} to all creatures in the area (@Check[type:reflex|dc:39|basic:true] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>The Xotanispawn sprays a @Template[type:cone|distance:60] of magma that deals [[/r 10d10[fire]]] damage and [[/r 2d6[persistent,fire]]] damage to all creatures in the area (@Check[type:reflex|dc:39|basic:true] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "Heat Surge": {
           "name": "Heat Surge",
-          "description": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to [[/r {10d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} until the start of its next turn.</p>"
+          "description": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to [[/r 10d8[persistent,fire]]] damage until the start of its next turn.</p>"
         }
       }
     },
@@ -1062,7 +1062,7 @@
         },
         "Bleeding Nail": {
           "name": "Bleeding Nail",
-          "description": "<p>If the hellcrown hits with a nail Strike, the target must attempt a @Check[type:fortitude|dc:16] save. On a failure, the nail is embedded in the creature, making it @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute and giving it [[/r {1}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} (@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and @Localize[PF2E.PersistentDamage.Bleed1d4.success] on a critical failure). Each additional embedded nail increases the enfeebled value by 1 (to a maximum of enfeebled 4) and the bleed damage by 1. A creature can remove a nail with an Interact action to reduce the enfeeblement and amount of bleed damage. Pulling out the last nail removes both conditions.</p>"
+          "description": "<p>If the hellcrown hits with a nail Strike, the target must attempt a @Check[type:fortitude|dc:16] save. On a failure, the nail is embedded in the creature, making it @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute and giving it [[/r 1[persistent,bleed]]] damage (@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and @Localize[PF2E.PersistentDamage.Bleed1d4.success] on a critical failure). Each additional embedded nail increases the enfeebled value by 1 (to a maximum of enfeebled 4) and the bleed damage by 1. A creature can remove a nail with an Interact action to reduce the enfeeblement and amount of bleed damage. Pulling out the last nail removes both conditions.</p>"
         },
         "Terrifying Stare": {
           "name": "Terrifying Stare",
@@ -1164,7 +1164,7 @@
         },
         "Necrotic Pulse": {
           "name": "Necrotic Pulse",
-          "description": "<p>Each creature in a @Template[type:emanation|distance:10] must succeed at a @Check[type:fortitude|dc:32|name:Necrotic Pulese] save or take [[/r {1d6}[persistent,necrotic]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Necrotic Damage} and be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy.</p>\n<p data-visibility=\"owner\">The golem can't use Necrotic Pulse again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>Each creature in a @Template[type:emanation|distance:10] must succeed at a @Check[type:fortitude|dc:32|name:Necrotic Pulese] save or take [[/r 1d6[persistent,necrotic]]] damage and be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy.</p>\n<p data-visibility=\"owner\">The golem can't use Necrotic Pulse again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
         }
       }
     },
@@ -1370,7 +1370,7 @@
         },
         "Magma Splash": {
           "name": "Magma Splash",
-          "description": "<p>Whenever the dalos takes damage from a melee Strike, magma splashes from its open wound and sticks to nearby creatures. Each creature in a @Template[type:emanation|distance:10] must attempt a @Check[type:reflex|dc:31|traits:damaging-effect] save. On a failure, the creature takes [[/r {3d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} as the superheated rock sticks to them and cools. The DC to end this persistent damage decreases by 5 each turn after the first as the magma cools.</p>"
+          "description": "<p>Whenever the dalos takes damage from a melee Strike, magma splashes from its open wound and sticks to nearby creatures. Each creature in a @Template[type:emanation|distance:10] must attempt a @Check[type:reflex|dc:31|traits:damaging-effect] save. On a failure, the creature takes [[/r 3d6[persistent,fire]]] damage as the superheated rock sticks to them and cools. The DC to end this persistent damage decreases by 5 each turn after the first as the magma cools.</p>"
         },
         "Volcanic Heat": {
           "name": "Volcanic Heat",
@@ -1836,15 +1836,15 @@
       "items": {
         "Jaws": {
           "name": "Jaws",
-          "description": "<p>[[/r {2d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+          "description": "<p>[[/r 2d8[persistent,fire]]] damage</p>"
         },
         "Claw": {
           "name": "Claw",
-          "description": "<p>[[/r {2d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+          "description": "<p>[[/r 2d8[persistent,fire]]] damage</p>"
         },
         "Lava Bomb": {
           "name": "Lava Bomb",
-          "description": "<p>[[/r {2d10}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+          "description": "<p>[[/r 2d10[persistent,fire]]] damage</p>"
         },
         "Blindsight (Precise) 120 feet": {
           "name": "Blindsight (Precise) 120 feet"
@@ -1854,7 +1854,7 @@
         },
         "Firebleed": {
           "name": "Firebleed",
-          "description": "<p><strong>Trigger</strong> Xotani is damaged</p>\n<hr />\n<p><strong>Effect</strong> Xotani's wound erupts with magma in a @Template[type:cone|distance:30], dealing [[/r 6d8[fire]]] damage and [[/r {6d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} (@Check[type:reflex|dc:42|basic:true] save).</p>"
+          "description": "<p><strong>Trigger</strong> Xotani is damaged</p>\n<hr />\n<p><strong>Effect</strong> Xotani's wound erupts with magma in a @Template[type:cone|distance:30], dealing [[/r 6d8[fire]]] damage and [[/r 6d8[persistent,fire]]] damage (@Check[type:reflex|dc:42|basic:true] save).</p>"
         },
         "Frightful Presence": {
           "description": "<p>@Template[type:emanation|distance:300]{300 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:39] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
@@ -1873,7 +1873,7 @@
         },
         "Breath Weapon": {
           "name": "Breath Weapon",
-          "description": "<p>Xotani breathes a blast of flame that deals [[/r 18d6[fire]]] damage plus [[/r {4d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} to all creatures in a @Template[type:cone|distance:70] (@Check[type:reflex|dc:42|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+          "description": "<p>Xotani breathes a blast of flame that deals [[/r 18d6[fire]]] damage plus [[/r 4d6[persistent,fire]]] damage to all creatures in a @Template[type:cone|distance:70] (@Check[type:reflex|dc:42|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
         },
         "Swallow Whole": {
           "description": "<p>Huge, [[/r {8d6+8}[bludgeoning]]]{8d6+8 bludgeoning} plus [[/r {12d6}[fire]]]{12d6 fire}, Rupture 35</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -2405,7 +2405,7 @@
         },
         "Volcanic Purge": {
           "name": "Volcanic Purge",
-          "description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes [[/r {4d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
+          "description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes [[/r 4d6[persistent,fire]]] damage, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
         }
       }
     },
@@ -3193,7 +3193,7 @@
       "name": "Age of Ashes",
       "description": "<p>A fire engulfs the western door and a @Template[type:line|distance:10|width:10]{10-foot-by-10-foot area} immediately east of it, then spreads on each of its turns.</p>",
       "hazardDisable": "<p>Eliminating the hazard requires dousing the flames. Water typically clears a 5-foot square if the amount is small (such as that from <em>@UUID[Compendium.pf2e.spells-srd.WzLKjSw6hsBhuklC]{Create Water}</em> or <em>@UUID[Compendium.pf2e.spells-srd.jfVCuOpzC6mUrf6f]{Hydraulic Push}</em>). Larger amounts of water, such as a full bucket, typically douse a @Template[type:line|distance:10|width:10]{10-foot-by-10-foot area} (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is usually less effective than water, so a @UUID[Compendium.pf2e.equipment-srd.EpxmUtLpCkE8R6KJ]{Frost Vial} typically puts out 1 square of fire, and <em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{Ray of Frost}</em> is ineffective.</p>\n<p>Fountain Circle, located outside town hall, has several working water pumps. These are far enough away that it's impractical for a PC to bring water back and forth. However, a PC might instruct the more steely nerved spectators to create a bucket brigade. It takes 15 spectators (which can include those rescued by councilors as well as by PCs) to set this up, and 2 rounds for the townspeople to line up and begin pumping water from Fountain Circle. As of the 3rd round, there is a bucket of water available for the PCs to use at the chamber's southern entrance at the beginning of each PC's turn. Members of a bucket brigade are lined up outside the chamber, and don't take damage from smoke inhalation.</p>\n<p>If a PC does want to carry the water, it's 150 feet from the chamber's southern door to a pump, so it 6 actions are usually needed to reach the pumps or return. Filling a bucket requires an Interact action.</p>\n<p>Other methods might also help control the fire, as you determine. For example, the PCs might be able to find something to barricade the fire with to control its path, or use a cloak to beat out some of the fire.</p>",
-      "hazardRoutine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies, with a minimum of 1 square. You determine the squares the fire spreads into-typically those with the most flammable materials. Any creature that ends its turn next to the flames takes [[/r {1d6}[fire]]]{1d6 fire damage}, and any creature within the flames takes [[/r {4d6}[fire]]]{4d6 fire damage}. Both of these have a @Check[type:reflex|dc:17|basic:true|traits:complex,environmental,fire,hazard] save. A creature can take damage from flames only once per round. (For simplicity, track damage only for the NPCs and their allies, not for the spectators; Turn 5 and Turn 7 have instructions regarding the spectators' health).</p>\n<p>The fire has an additional effect on each of its turns after the first.</p>\n<p><strong>Turn 2</strong> The chamber's northern door flies open and flames burst through, igniting the @Template[type:line|distance:10|width:10]{10-foot-by-10-foot area} in front of the door. All fires spread on subsequent turns, at the same rate listed above. Any fires that join together become one fire for this purpose.</p>\n<p><strong>Turn 4+</strong> Creatures in the room take [[/r 1d6 #Smoke Inhalation Damage]]{1d6 damage} from smoke inhalation at the ends of their turns. Anyone who uses an Interact action to tie a wet rag around their nose and mouth (or uses another creative solution) halves the damage.</p>\n<p><strong>Turn 5</strong> Spectators still inside the room fall @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} from burns and smoke inhalation.</p>\n<p><strong>Turn 7</strong> Spectators still in the room die.</p>"
+      "hazardRoutine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies, with a minimum of 1 square. You determine the squares the fire spreads into-typically those with the most flammable materials. Any creature that ends its turn next to the flames takes [[/r 1d6[fire]]] damage, and any creature within the flames takes [[/r 4d6[fire]]] damage. Both of these have a @Check[type:reflex|dc:17|basic:true|traits:complex,environmental,fire,hazard] save. A creature can take damage from flames only once per round. (For simplicity, track damage only for the NPCs and their allies, not for the spectators; Turn 5 and Turn 7 have instructions regarding the spectators' health).</p>\n<p>The fire has an additional effect on each of its turns after the first.</p>\n<p><strong>Turn 2</strong> The chamber's northern door flies open and flames burst through, igniting the @Template[type:line|distance:10|width:10]{10-foot-by-10-foot area} in front of the door. All fires spread on subsequent turns, at the same rate listed above. Any fires that join together become one fire for this purpose.</p>\n<p><strong>Turn 4+</strong> Creatures in the room take [[/r 1d6 #Smoke Inhalation Damage]]{1d6 damage} from smoke inhalation at the ends of their turns. Anyone who uses an Interact action to tie a wet rag around their nose and mouth (or uses another creative solution) halves the damage.</p>\n<p><strong>Turn 5</strong> Spectators still inside the room fall @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} from burns and smoke inhalation.</p>\n<p><strong>Turn 7</strong> Spectators still in the room die.</p>"
     },
     "Corrupt Guard": {
       "name": "Corrupt Guard",

@@ -118,11 +118,11 @@
       "description": "<p>The frontline fighters of goblin tribes prefer to fight in large groups-especially when they can outnumber their foes at least three to one.</p>\n<hr />\n<p>These small humanoids have green or gray skin and large heads with wide ears. While some goblins are civilized and have worked hard to be considered upstanding members of humanoid communities, most are impetuous and vicious creatures who delight in wreaking havoc. These goblins think nothing of slaughtering livestock, stealing infants, or burning down a building purely for momentary delight. They revel in playing malicious tricks on taller humanoids, whom they call \"longshanks.\"</p>\n<p>Goblins are superstitious, with an intense awe of magic and a fascination with fire; goblins who master magic or fire earn great respect from their kin. Most other humanoids find it difficult to understand goblins' outlook: they hate canines but eagerly share their lairs with so-called \"goblin dogs,\" they fearlessly attack larger creatures but are terrified of horses, and they despise vegetables yet consider pickles a delicacy. To a goblin, of course, these are all perfectly sensible life choices.</p>",
       "items": {
         "Alchemist's Fire (Lesser)": {
-          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, [[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and 1 fire splash damage.</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, [[/r 1[persistent,fire]]] damage, and 1 fire splash damage.</p>"
         },
         "Lesser Alchemist's Fire": {
           "name": "Lesser Alchemist's Fire",
-          "description": "<p>[[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>\n<p>[[/r {1}[splash,fire]]]{1 fire splash damage}</p>"
+          "description": "<p>[[/r 1[persistent,fire]]] damage</p>\n<p>[[/r {1}[splash,fire]]]{1 fire splash damage}</p>"
         },
         "Goblin Scuttle": {
           "name": "Goblin Scuttle",
@@ -255,7 +255,7 @@
         },
         "Incendiary Spit": {
           "name": "Incendiary Spit",
-          "description": "<p>A creature hit by the eberark's spit becomes coated in a slippery, flammable oil.</p>\n<p>The creature must succeed at a @Check[type:reflex|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as they are coated in incendiary spit.</p>\n<p>Creatures affected by incendiary spit that take fire damage catch fire, taking [[/r {3d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}. Once this persistent fire damage ends, the spit has burned away.</p>"
+          "description": "<p>A creature hit by the eberark's spit becomes coated in a slippery, flammable oil.</p>\n<p>The creature must succeed at a @Check[type:reflex|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as they are coated in incendiary spit.</p>\n<p>Creatures affected by incendiary spit that take fire damage catch fire, taking [[/r 3d6[persistent,fire]]] damage. Once this persistent fire damage ends, the spit has burned away.</p>"
         },
         "Trail of Flame": {
           "name": "Trail of Flame",
@@ -1175,7 +1175,7 @@
         },
         "Flay": {
           "name": "Flay",
-          "description": "<p>The skitterstitch makes a blade Strike against an animal or humanoid. On a success, the skitterstitch slices a long strip of flesh from the target; if the skitterstitch dealt damage, it deals an additional [[/r {1d6+4}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage}.</p>"
+          "description": "<p>The skitterstitch makes a blade Strike against an animal or humanoid. On a success, the skitterstitch slices a long strip of flesh from the target; if the skitterstitch dealt damage, it deals an additional [[/r (1d6+4)[persistent,bleed]]] damage.</p>"
         },
         "Skitterstitch Venom": {
           "name": "Skitterstitch Venom",
@@ -1197,7 +1197,7 @@
       "description": "<p>A magical magnet hidden behind a panel in the corner of the room pulls not metal but living creatures toward it, heedless of any obstacles in the way.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:29|name:Deactivate Panel|traits:action:disable-a-device] (expert) to deactivate the panel, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em>;(4th level; counteract DC 22) to counteract the panel's magic</p>",
       "hazardReset": "<p>The trap deactivates and resets 1 minute after there are no creatures touching the iron bars.</p>",
-      "hazardRoutine": "<p>(1 action) The trap pulls up to four creatures that have already triggered its Magnetize the Living ability toward one of the far corners of the room, possibly pressing them into the iron bars. If all the iron bars between an affected creature and the magnetic panel remain intact, the creature takes [[/r {2d10+10}[bludgeoning]]]{2d10+10 bludgeoning damage} with a @Check[type:fortitude|dc:25]{DC 25 basic Fortitude} save and is restrained on a failure (Escape DC 23).</p>\n<p>If an iron bar has been broken, the creature takes [[/r {1d10+5}[bludgeoning]]]{1d10+5 bludgeoning damage} instead, and if two consecutive bars have been broken the creature takes no damage (but might still be restrained on a failed save).</p>"
+      "hazardRoutine": "<p>(1 action) The trap pulls up to four creatures that have already triggered its Magnetize the Living ability toward one of the far corners of the room, possibly pressing them into the iron bars. If all the iron bars between an affected creature and the magnetic panel remain intact, the creature takes [[/r (2d10+10)[bludgeoning]]] damage with a @Check[type:fortitude|dc:25]{DC 25 basic Fortitude} save and is restrained on a failure (Escape DC 23).</p>\n<p>If an iron bar has been broken, the creature takes [[/r (1d10+5)[bludgeoning]]] damage instead, and if two consecutive bars have been broken the creature takes no damage (but might still be restrained on a failed save).</p>"
     },
     "Lord Guirden": {
       "name": "Lord Guirden",
@@ -1786,7 +1786,7 @@
         },
         "Acid Arrow": {
           "name": "Acid Arrow",
-          "description": "<p>You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus [[/r {1d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>"
+          "description": "<p>You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus [[/r 1d6[persistent,acid]]] damage. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>"
         },
         "Illusory Creature": {
           "name": "Illusory Creature",
@@ -2091,11 +2091,11 @@
         },
         "Bloody Rebel": {
           "name": "Bloody Rebel",
-          "description": "<p>Franca quickly slashes at nearby foes, aiming to maim rather than disable. She makes up to three melee Strikes, each against a different creature within reach.</p>\n<p>These Strikes count toward Franca's multiple attack penalty, but the penalty doesn't increase until after all three Strikes are made.</p>\n<p>On a hit, the Strike deals [[/r {3}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} instead of its normal damage.</p>\n<p>On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the beginning of Franca's next turn or until they spend an action to remove the condition, whichever comes first.</p>"
+          "description": "<p>Franca quickly slashes at nearby foes, aiming to maim rather than disable. She makes up to three melee Strikes, each against a different creature within reach.</p>\n<p>These Strikes count toward Franca's multiple attack penalty, but the penalty doesn't increase until after all three Strikes are made.</p>\n<p>On a hit, the Strike deals [[/r 3[persistent,bleed]]] damage instead of its normal damage.</p>\n<p>On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the beginning of Franca's next turn or until they spend an action to remove the condition, whichever comes first.</p>"
         },
         "Hamstring": {
           "name": "Hamstring",
-          "description": "<p><strong>Requirements</strong> Franca's last action was a melee Strike that dealt sneak attack damage to a @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} target</p>\n<hr />\n<p><strong>Effect</strong> Franca deals [[/r {6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} to the target creature, and the target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+          "description": "<p><strong>Requirements</strong> Franca's last action was a melee Strike that dealt sneak attack damage to a @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} target</p>\n<hr />\n<p><strong>Effect</strong> Franca deals [[/r 6[persistent,bleed]]] damage to the target creature, and the target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
         },
         "Sneak Attack": {
           "description": "<p>Franca's Strikes deal an additional 3d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
@@ -2199,10 +2199,10 @@
       "description": "",
       "items": {
         "Acid Flask (Moderate)": {
-          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, [[/r {2d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, [[/r 2d6[persistent,acid]]] damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>"
         },
         "Alchemist's Fire (Moderate)": {
-          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, [[/r {2}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, [[/r 2[persistent,fire]]] damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
         },
         "+1 Striking Sickle": {
           "name": "+1 Striking Sickle"
@@ -2215,11 +2215,11 @@
         },
         "Moderate Acid Flask": {
           "name": "Moderate Acid Flask",
-          "description": "<p>[[/r {2d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}</p>\n<p>[[/r {2}[splash,acid]]]{2 acid splash damage}</p>"
+          "description": "<p>[[/r 2d6[persistent,acid]]] damage</p>\n<p>[[/r {2}[splash,acid]]]{2 acid splash damage}</p>"
         },
         "Moderate Alchemist's Fire": {
           "name": "Moderate Alchemist's Fire",
-          "description": "<p>[[/r {2}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>\n<p>[[/r {2}[fire]]]{2 fire splash damage}</p>"
+          "description": "<p>[[/r 2[persistent,fire]]] damage</p>\n<p>[[/r {2}[fire]]]{2 fire splash damage}</p>"
         },
         "Dirty Bomb": {
           "name": "Dirty Bomb",
@@ -2814,14 +2814,14 @@
         },
         "Acid Arrow": {
           "name": "Acid Arrow",
-          "description": "<p>You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus [[/r {1d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>"
+          "description": "<p>You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus [[/r 1d6[persistent,acid]]] damage. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>"
         },
         "Water Walk": {
           "_source": "spells-srd.Seaah9amXg70RKw2"
         },
         "Acid Splash": {
           "name": "Acid Splash",
-          "description": "<p>You splash a glob of acid that splatters creatures and objects alike. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes [[/r {1}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 1d6 + your spellcasting ability modifier, and the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage} increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 2d6 + your spellcasting ability modifier, the Persistent Damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 3d6 + your spellcasting ability modifier, the Persistent Damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 4d6 + your spellcasting ability modifier, the Persistent Damage increases to 5, and the splash damage increases to 4.</p>"
+          "description": "<p>You splash a glob of acid that splatters creatures and objects alike. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes [[/r 1[persistent,acid]]] damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 1d6 + your spellcasting ability modifier, and the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage} increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 2d6 + your spellcasting ability modifier, the Persistent Damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 3d6 + your spellcasting ability modifier, the Persistent Damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 4d6 + your spellcasting ability modifier, the Persistent Damage increases to 5, and the splash damage increases to 4.</p>"
         },
         "Detect Magic": {
           "_source": "spells-srd.gpzpAAAJ1Lza2JVl"
@@ -3831,7 +3831,7 @@
       "name": "Agents of Edgewatch",
       "description": "<p>Five nozzles hidden across the apartment's ceiling spew thick clouds of acidic poison from a reinforced tank behind the wall.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:35|name:Block One Nozzle|traits:action:disable-a-device] (expert) to block one of the nozzles or @Check[type:thievery|dc:40|name:Shut Off the Tank|traits:action:disable-a-device] (master) to shut off the tank. The trap deactivates after 5 rounds, once the tank is empty.</p>",
-      "hazardRoutine": "<p>(1 action) When it's triggered, the trap has five active nozzles, but at the end of its turn each round, one random nozzle deactivates. On the trap's turn, the active nozzles emit a cloud of acidic poison gas that expands to fill the apartment. The cloud deals [[/r {1d6}[acid]]]{1d6 acid damage} and [[/r {1d6}[poison]]]{1d6 poison damage} per active nozzle to each creature and object in the room (@Check[type:fortitude|dc:33|basic:true|name:Spew Cloud|traits:poison] save). Unattended objects automatically fail saves to avoid the damage.</p>"
+      "hazardRoutine": "<p>(1 action) When it's triggered, the trap has five active nozzles, but at the end of its turn each round, one random nozzle deactivates. On the trap's turn, the active nozzles emit a cloud of acidic poison gas that expands to fill the apartment. The cloud deals [[/r 1d6[acid]]] damage and [[/r 1d6[poison]]] damage per active nozzle to each creature and object in the room (@Check[type:fortitude|dc:33|basic:true|name:Spew Cloud|traits:poison] save). Unattended objects automatically fail saves to avoid the damage.</p>"
     },
     "Svartalfar Killer": {
       "name": "Svartalfar Killer",
@@ -4352,7 +4352,7 @@
       "description": "<p>A spring slams and locks the room's door before four hidden gas vents begin pumping poison gas into the chamber.</p>",
       "hazardDisable": "<p>Four @Check[type:thievery|dc:20|name:Block Gas Vents|traits:action:disable-a-device] checks to block the gas vents, or a @Check[type:thievery|dc:26|name:Unlock Door|traits:action:pick-a-lock] check to unlock the door and escape</p>",
       "hazardReset": "<p>The trap must be manually rearmed by unblocking the vents or replacing the poison gas tank in area <strong>E30</strong>.</p>",
-      "hazardRoutine": "<p>(1 action) Each round on its initiative count, the trap pumps more toxic gas into the room.</p>\n<p>Any breathing creature in the room takes [[/r {4d6}[poison]]]{4d6 poison damage} (a successful @Check[type:fortitude|dc:22|traits:poison,damaging-effect] save halves the damage taken). If a creature acts before the trap on the first round, it has the option of holding its breath to postpone taking damage from the trap-holding one's breath after the trap's first action has no effect, since the air in the creature's lungs is already tainted. Locating and blocking one of the hidden gas vents reduces the poison damage by 1d6-if all four are blocked, the trap is disabled, though the door remains locked. Otherwise, the trap functions for 1 minute before all the gas is expended and characters in the room cease taking damage, after which the trap ventilates the room for 1 additional minute.</p>"
+      "hazardRoutine": "<p>(1 action) Each round on its initiative count, the trap pumps more toxic gas into the room.</p>\n<p>Any breathing creature in the room takes [[/r 4d6[poison]]] damage (a successful @Check[type:fortitude|dc:22|traits:poison,damaging-effect] save halves the damage taken). If a creature acts before the trap on the first round, it has the option of holding its breath to postpone taking damage from the trap-holding one's breath after the trap's first action has no effect, since the air in the creature's lungs is already tainted. Locating and blocking one of the hidden gas vents reduces the poison damage by 1d6-if all four are blocked, the trap is disabled, though the door remains locked. Otherwise, the trap functions for 1 minute before all the gas is expended and characters in the room cease taking damage, after which the trap ventilates the room for 1 additional minute.</p>"
     },
     "Daemonic Infector": {
       "name": "Daemonic Infector",
@@ -4696,11 +4696,11 @@
       "description": "<p>The frontline fighters of goblin tribes prefer to fight in large groups-especially when they can outnumber their foes at least three to one.</p>\n<hr />\n<p>These small humanoids have green or gray skin and large heads with wide ears. While some goblins are civilized and have worked hard to be considered upstanding members of humanoid communities, most are impetuous and vicious creatures who delight in wreaking havoc. These goblins think nothing of slaughtering livestock, stealing infants, or burning down a building purely for momentary delight. They revel in playing malicious tricks on taller humanoids, whom they call \"longshanks.\"</p>\n<p>Goblins are superstitious, with an intense awe of magic and a fascination with fire; goblins who master magic or fire earn great respect from their kin. Most other humanoids find it difficult to understand goblins' outlook: they hate canines but eagerly share their lairs with so-called \"goblin dogs,\" they fearlessly attack larger creatures but are terrified of horses, and they despise vegetables yet consider pickles a delicacy. To a goblin, of course, these are all perfectly sensible life choices.</p>",
       "items": {
         "Alchemist's Fire (Lesser)": {
-          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, [[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and 1 fire splash damage.</p>"
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, [[/r 1[persistent,fire]]] damage, and 1 fire splash damage.</p>"
         },
         "Lesser Alchemist's Fire": {
           "name": "Lesser Alchemist's Fire",
-          "description": "<p>[[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>\n<p>[[/r {1}[splash,fire]]]{1 fire splash damage}</p>"
+          "description": "<p>[[/r 1[persistent,fire]]] damage</p>\n<p>[[/r {1}[splash,fire]]]{1 fire splash damage}</p>"
         },
         "Goblin Scuttle": {
           "name": "Goblin Scuttle",
@@ -5020,7 +5020,7 @@
         },
         "Lava Bomb": {
           "name": "Lava Bomb",
-          "description": "<p>[[/r {2d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} plus [[/r {8}[splash,fire]]]{8 Fire Splash damage}.</p>"
+          "description": "<p>[[/r 2d6[persistent,fire]]] damage plus [[/r {8}[splash,fire]]]{8 Fire Splash damage}.</p>"
         },
         "Smoke Vision": {
           "name": "Smoke Vision",
