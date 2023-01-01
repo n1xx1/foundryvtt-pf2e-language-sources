@@ -6,7 +6,7 @@
       "description": "<p>Ebeshra brushes against a structure, possibly causing it to collapse.</p>",
       "hazardDisable": "<p>@Check[type:athletics|dc:43|name:Brace Building (Athletics)|traits:complex,environmental,kaiju,hazard] (master), @Check[type:crafting|dc:43|name:Brace Building (Crafting)|traits:complex,environmental,kaiju,hazard] (master), or @Check[type:engineering|dc:43|name:Brace Building (Engineering)|traits:complex,environmental,kaiju,hazard]{Engineering Lore} (master) to brace the structure to reduce the risk of collapse until the end of the creature's next turn. The DC of the flat check for this round (see Routine) is increased by 4 on a success, or by 8 on a critical success. Increasing the flat check DC to 21 or higher stabilizes the structure, ending this hazard.</p>",
       "hazardReset": "<p>The building becomes susceptible to Shake Apart again 1d6 rounds after it's stabilized.</p>",
-      "hazardRoutine": "<p>The GM rolls a @Check[type:flat|dc:9|showDC:owner] to determine if the building partially collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing [[/r 6d6[bludgeoning]]] damage to [[/r 1d4 #Targets]] randomly chosen targets (@Check[type:reflex|dc:35|basic:true|name:Falling Debris|traits:hazard,complex,environmental,kaiju] save; on a critical failure, the creature is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}). On a critical success, the effect is the same, but the debris deals [[/r {12d6}[bludgeoning]]]{12d6 bludgeoning damage} to [[/r 2d4 #Targets]] randomly chosen targets instead (@Check[type:reflex|dc:35|basic:true|name:Falling Debris|traits:hazard,complex,environmental,kaiju] save; on a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} by rubble until freed [@UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{Force Open} DC 38, @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC 35]).</p>"
+      "hazardRoutine": "<p>The GM rolls a @Check[type:flat|dc:9|showDC:owner] to determine if the building partially collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing [[/r 6d6[bludgeoning]]] damage to [[/r 1d4 #Targets]] randomly chosen targets (@Check[type:reflex|dc:35|basic:true|name:Falling Debris|traits:hazard,complex,environmental,kaiju] save; on a critical failure, the creature is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}). On a critical success, the effect is the same, but the debris deals [[/r 12d6[bludgeoning]]] damage to [[/r 2d4 #Targets]] randomly chosen targets instead (@Check[type:reflex|dc:35|basic:true|name:Falling Debris|traits:hazard,complex,environmental,kaiju] save; on a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} by rubble until freed [@UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{Force Open} DC 38, @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC 35]).</p>"
     },
     "Spectral Devil": {
       "name": "Spectral Devil",
@@ -332,7 +332,7 @@
         },
         "Dipteric Dread": {
           "name": "Dipteric Dread",
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6}[piercing] + {2d6}[poison]]]{2d6 piercing and 2d6 poison} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[piercing] + {3d6}[poison]]]{2d6 piercing and 3d6 poison} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d6}[piercing] + {5d6}[poison]]]{2d6 piercing and 5d6 poison}</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6[piercing],2d6[poison]}]]{2d6 piercing and 2d6 poison} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6[piercing],3d6[poison]}]]{2d6 piercing and 3d6 poison} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d6[piercing],5d6[poison]}]]{2d6 piercing and 5d6 poison}</p>"
         },
         "Terror From Within": {
           "name": "Terror From Within",
@@ -447,7 +447,7 @@
         },
         "Swallow Whole": {
           "name": "Swallow Whole",
-          "description": "<p>Small, [[/r {1d6+6}[bludgeoning]]]{1d6 bludgeoning}, Rupture 9</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Small, [[/r (1d6+6)[bludgeoning]]], Rupture 9</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "Voltaic Blow": {
           "name": "Voltaic Blow",
@@ -580,7 +580,7 @@
         },
         "Dipteric Dread": {
           "name": "Dipteric Dread",
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6}[piercing] + {2d6}[poison]]]{2d6 piercing and 2d6 poison} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[piercing] + {3d6}[poison]]]{2d6 piercing and 3d6 poison} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d6}[piercing] + {5d6}[poison]]]{2d6 piercing and 5d6 poison}</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6[piercing],2d6[poison]}]]{2d6 piercing and 2d6 poison} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6[piercing],3d6[poison]}]]{2d6 piercing and 3d6 poison} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d6[piercing],5d6[poison]}]]{2d6 piercing and 5d6 poison}</p>"
         },
         "Terror From Within": {
           "name": "Terror From Within",
@@ -631,7 +631,7 @@
         },
         "Burning Venom": {
           "name": "Burning Venom",
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {4d6}[poison]+{2d10}[fire]]]{4d6 poison plus 2d10 fire}, and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {6d6}[poison]+{3d10}[fire]]]{6d6 poison plus 3d10 fire}, and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {8d6}[poison]+{4d10}[fire]]]{8d6 poison plus 4d10 fire}, and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 round)</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {4d6[poison],2d10[fire]}]]{4d6 poison plus 2d10 fire}, and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {6d6[poison],3d10[fire]}]]{6d6 poison plus 3d10 fire}, and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {8d6[poison],4d10[fire]}]]{8d6 poison plus 4d10 fire}, and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 round)</p>"
         },
         "Constrict": {
           "description": "<p>[[/r {(2d6+8)[bludgeoning],2d10[fire]}]]{2d6+8 bludgeoning damage plus 2d10 fire damage}, @Check[type:fortitude|dc:38|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
@@ -835,7 +835,7 @@
           "description": "<p>The earth festers in Kothogaz's wake. Kothogaz Strides up to its Speed. Squares through which Kothogaz passes are greater difficult terrain until the start of its next turn, and any creature that enters or begins its turn in those squares must succeed at a @Check[type:reflex|dc:44] save or take [[/r {4d10[poison],4d10[acid]}]]{4d10 poison damage and 4d10 acid damage} (on a critical failure, double damage and exposed to many-eyed blight).</p>"
         },
         "Swallow Whole": {
-          "description": "<p>Huge, [[/r {4d10+18}[bludgeoning]+{2d12}[sonic]]]{4d10+18 bludgeoning plus 2d12 sonic} and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} while swallowed, Rupture 40</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Huge, [[/r {(4d10+18)[bludgeoning],2d12[sonic]}]]{4d10+18 bludgeoning plus 2d12 sonic} and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} while swallowed, Rupture 40</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         }
       }
     },
@@ -975,7 +975,7 @@
         },
         "Blasting Breath": {
           "name": "Blasting Breath",
-          "description": "<p>Fafnheir exhales a cataclysmic firestorm laced with lightning and hurricane-strength winds, dealing [[/r 20d6[fire]]] damage in a @Template[type:cone|distance:90] (@Check[type:reflex|dc:48|basic:true] save). Additionally, Fafnheir deals [[/r {10d6}[electricity]]]{10d6} additional electricity damage to one creature within the area of Blasting Breath of Fafnheir's choice, determined by the same basic Reflex save. Creatures in the area must also attempt a @Check[type:fortitude|dc:48|name:Resist Winds|traits:damaging-effect] save to resist the powerful winds and deafening thunderclaps of the breath. Creatures that fail experience the effects of <em>@UUID[Compendium.pf2e.spells-srd.g8QqHpv2CWDwmIm1]{Gust of Wind}</em>, affecting Large or smaller creatures as normal. Finally, creatures that fail their Fortitude save become @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (permanently deafened on a critical failure).</p>"
+          "description": "<p>Fafnheir exhales a cataclysmic firestorm laced with lightning and hurricane-strength winds, dealing [[/r 20d6[fire]]] damage in a @Template[type:cone|distance:90] (@Check[type:reflex|dc:48|basic:true] save). Additionally, Fafnheir deals [[/r 10d6[electricity]]]{10d6} additional electricity damage to one creature within the area of Blasting Breath of Fafnheir's choice, determined by the same basic Reflex save. Creatures in the area must also attempt a @Check[type:fortitude|dc:48|name:Resist Winds|traits:damaging-effect] save to resist the powerful winds and deafening thunderclaps of the breath. Creatures that fail experience the effects of <em>@UUID[Compendium.pf2e.spells-srd.g8QqHpv2CWDwmIm1]{Gust of Wind}</em>, affecting Large or smaller creatures as normal. Finally, creatures that fail their Fortitude save become @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (permanently deafened on a critical failure).</p>"
         },
         "Boiling Blood": {
           "name": "Boiling Blood",
@@ -1314,7 +1314,7 @@
           "description": "<p>30 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
         },
         "Swallow Whole": {
-          "description": "<p>Medium, [[/r {1d12+8}[bludgeoning]]]{1d12+8 bludgeoning}, Rupture 18</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Medium, [[/r (1d12+8)[bludgeoning]]], Rupture 18</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "Unnatural Vengeance": {
           "name": "Unnatural Vengeance",
@@ -1434,7 +1434,7 @@
         },
         "Dipteric Dread": {
           "name": "Dipteric Dread",
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6}[piercing] + {2d6}[poison]]]{2d6 piercing and 2d6 poison} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[piercing] + {3d6}[poison]]]{2d6 piercing and 3d6 poison} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d6}[piercing] + {5d6}[poison]]]{2d6 piercing and 5d6 poison}</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6[piercing],2d6[poison]}]]{2d6 piercing and 2d6 poison} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6[piercing],3d6[poison]}]]{2d6 piercing and 3d6 poison} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d6[piercing],5d6[poison]}]]{2d6 piercing and 5d6 poison}</p>"
         },
         "Terror From Within": {
           "name": "Terror From Within",
@@ -1471,7 +1471,7 @@
         },
         "Dipteric Dread": {
           "name": "Dipteric Dread",
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6}[piercing] + {2d6}[poison]]]{2d6 piercing and 2d6 poison} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[piercing] + {3d6}[poison]]]{2d6 piercing and 3d6 poison} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d6}[piercing] + {5d6}[poison]]]{2d6 piercing and 5d6 poison}</p>"
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6[piercing],2d6[poison]}]]{2d6 piercing and 2d6 poison} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6[piercing],3d6[poison]}]]{2d6 piercing and 3d6 poison} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d6[piercing],5d6[poison]}]]{2d6 piercing and 5d6 poison}</p>"
         },
         "Prophecy in Red": {
           "name": "Prophecy in Red",
