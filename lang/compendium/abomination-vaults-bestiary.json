@@ -247,6 +247,34 @@
         }
       }
     },
+    "Beluthus": {
+      "name": "Beluthus",
+      "description": "<p>When fiends and powerful evil spellcasters are lost beyond the farthest reaches of the multiverse, they sometimes return as horrific undead called devourers that consume the souls of the living to fuel their arcane machinations. Their bodies are ruined and rebuilt, hollow and twisted, even as their minds undergo a spiritual transformation. They gain the ability to bind other souls to their own and drain their essence for magical power, yet can never be sated in their pursuit of it. Seething masses of distorted ghostly shapes surge within their hollow rib cages-manifestations of the devourers' most recently consumed souls.</p>",
+      "items": {
+        "Claw": {
+          "name": "Claw"
+        },
+        "+1 Status to All Saves vs. Magic": {
+          "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
+        },
+        "Spell Deflection": {
+          "name": "Spell Deflection",
+          "description": "<p>A spellcaster who targets a devourer with a mental spell, <em>@UUID[Compendium.pf2e.spells-srd.bay4AfSu2iIozNNW]{Banishment}</em>, <em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{Bind Soul}</em>, <em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{Divine Decree}</em>, <em>@UUID[Compendium.pf2e.spells-srd.hVU9msO9yGkxKZ3J]{Divine Wrath}</em>, <em>@UUID[Compendium.pf2e.spells-srd.wU6hNzK8Yfqdmc8m]{Possession}</em>, <em>@UUID[Compendium.pf2e.spells-srd.PHVHBbdHeQRfjLmE]{Spirit Blast}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Ht35SDf9PDStJfoC]{Spirit Song}</em> can attempt a counteract check to free a soul the devourer has trapped with Devour Soul. If this counteract attempt succeeds, the trapped soul is released (though the creature remains dead), and the devourer can't use any soul charges from that creature.</p>\n<p>Devourers are otherwise immune to these spells.</p>"
+        },
+        "Devour Soul": {
+          "name": "Devour Soul",
+          "description": "<p>The devourer touches a creature within reach, dealing [[/r 8d6[negative]]] damage (@Check[type:fortitude|dc:26|basic:true] save). If a creature is slain by this attack, its soul becomes trapped within the devourer. While its soul is trapped, a creature can't be resurrected except by powerful magic such as a <em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{Wish}</em> spell. Destroying the devourer or successfully counteracting Devour Soul (see spell deflection) releases the soul. The devourer can hold only one soul at a time.</p>\n<p>A soul has 5 soul charges per level of the originating creature (see the soul spells ability below). The devourer can expend these charges to cast spells. If the soul is freed and the creature returns to life, the creature is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} for every 5 soul charges expended. If reduced to 0 soul charges, the soul is consumed and can be restored to life only by powerful magic such as <em>wish</em>.</p>"
+        },
+        "Drain Life": {
+          "name": "Drain Life",
+          "description": "<p>When the devourer damages a living creature with its claw Strike, the devourer gains 10 temporary Hit Points and the creature must succeed at a @Check[type:fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the devourer increases the condition value by 1 on a failed save, to a maximum of drained 4.</p>"
+        },
+        "Soul Spells": {
+          "name": "Soul Spells",
+          "description": "<p>A devourer casts occult innate spells, but to do so it must expend a number of soul charges equal to the spell's level (similar to casting a spell using charges from a staff). It can heighten any spell to a maximum of 6th level by expending more charges as it Casts the Spell. When encountered, a devourer typically has one trapped soul with 10 soul charges.</p>"
+        }
+      }
+    },
     "Sacuishu": {
       "name": "Sacuishu",
       "description": "",
@@ -2794,6 +2822,27 @@
         "Seugathi Venom": {
           "name": "Seugathi Venom",
           "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 2d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
+        }
+      }
+    },
+    "Child of Belcorra": {
+      "name": "Child of Belcorra",
+      "description": "<p>The cultural practice of mummifying the dead is not the only way a body can become preserved, nor is it the only route that gives rise to these disease-spreading undead monstrosities.</p>\n<p>Bog mummies (also called peat mummies or mire mummies) rarely, if ever, leave their marshy realms. Less powerful than their more notorious artificially preserved kin, bog mummies are preserved not by agents introduced during rituals but by the natural elements present in the airless, acidic morass of a peat bog or muddy swamp. While corpses preserved in this manner can certainly rise from the mire as bog mummies as the result of a curse by fell powers or the directed influence of a necromancer, the vast majority of them animate from a seething need for vengeance or to pursue some dire agenda left unfinished at the time of death-often because the creature was slain or otherwise betrayed. The nature of tthis emotional tie to life and the emotional power of the deceased compel unlife beyond death, while the preservative qualities of the bog within which the body was disposed of does the rest.</p>\n<p>Although most bog mummies are motivated by vengeance, many fulfill their dark yearnings with general violence. Filled with wrath and hatred for the living, they mercilessly attack any living creatures that dare to venture into their dismal domains. Their agonized moans echo over their putrid homes, driving away most natural life dwelling therein and often alerting travelers to the potential danger that lies beneath the surface.</p>",
+      "items": {
+        "Tremorsense (Imprecise) 30 feet": {
+          "name": "Tremorsense (Imprecise) 30 feet"
+        },
+        "Breath of the Bog": {
+          "name": "Breath of the Bog",
+          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that begins its turn within the area feels as if its lungs were filling with water and must succeed at a @Check[type:fortitude|dc:19] save or be unable to speak or breathe. The creature can still hold its breath and can attempt a new saving throw at the end of its turn.</p>\n<p>A creature that succeeds is temporarily immune to breath of the bog for 24 hours.</p>"
+        },
+        "Rise Up": {
+          "name": "Rise Up",
+          "description": "<p><strong>Trigger</strong> A creature walks on top of a bog mummy that lies buried in the mud or peat below</p>\n<p><strong>Requirements</strong> Initiative has not yet been rolled</p>\n<hr />\n<p><strong>Effect</strong> The bog mummy automatically notices the creature and Burrows before rolling initiative.</p>"
+        },
+        "Bog Rot": {
+          "name": "Bog Rot",
+          "description": "<p>This affliction can't be reduced below stage 1, nor can the damage from it be healed, until it's successfully treated with <em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{Remove Curse}</em> or a similar effect; the affliction can then be removed as normal for a disease. A creature killed by bog rot melts into a noxious sludge and can't be resurrected except by a 7th‑level <em>@UUID[Compendium.pf2e.spells-srd.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> [[/r 3d6[negative]]] damage and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 day)</p>"
         }
       }
     },
