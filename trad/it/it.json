@@ -664,6 +664,10 @@
                 "LootableNPCs": {
                     "Name": "I PNG sono depredabili",
                     "Hint": "Una volta morti, i PNG diventano depredabili dai PG."
+                },
+                "IWR": {
+                    "Name": "Immunità, Debolezze e Resistenze",
+                    "Hint": "Quando viene applicato il danno a un personaggio, aggiusta il suo valore in base alle immunità, debolezze e resistenze del personaggio."
                 }
             },
             "Metagame": {
@@ -715,7 +719,7 @@
             },
             "critFumbleCardButtons": {
                 "hint": "Show critical hit and fumble card draw buttons on attack rolls.",
-                "name": "Critical Hit and Fumble Card Buttons"
+                "name": "Pulsanti Carte Colpi Critici e Fallimenti"
             },
             "DeathIcon": {
                 "Name": "Icona Morte",
@@ -730,8 +734,8 @@
                 "name": "Status Icon Foundry Set"
             },
             "statusEffectShowCombatMessage": {
-                "hint": "Mostra gli effetti di status dell'attuale combattente in chat ogni turno. Se il tuo gioco ha più di un GM, questa impostazione dovrebbe essere abilitata solo per uno di essi.",
-                "name": "Mostra gli effetti di status in combattimento"
+                "hint": "Ad ogni turno di un incontro, invia un messaggio in chat contenente le condizioni del partecipante del turno.",
+                "name": "Mostra le condizioni durante gli incontri"
             },
             "statusEffectType": {
                 "blackWhite": "Bianco e nero",
@@ -1046,7 +1050,7 @@
             },
             "greaterFrost": {
                 "Note": {
-                    "criticalSuccess": "<strong>Runa Gelida Superiore</strong> Il danno da freddo inflitto da quest'arma ignora la resistenza al freddo del bersaglio. In caso di colpo critico, il bersaglio è anche @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno a meno che non abbia successo su un TS su <span data-pf2-check=\"fortitude\" data-pf2-label=\"CD Runa Gelida Superiore\" data-pf2-dc=\"34\">Tempra</span>.",
+                    "criticalSuccess": "Il danno da freddo inflitto da quest'arma ignora la resistenza al freddo del bersaglio. In caso di colpo critico, il bersaglio è anche @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno a meno che non abbia successo su un TS su @Check[type:fortitude|dc:34|name:Runa Gelida Superiore].",
                     "success": "<strong>Runa Gelida Superiore</strong> Il danno da freddo inflitto da quest'arma ignora la resistenza al freddo del bersaglio."
                 },
                 "Name": "Gelida Superiore"
@@ -1087,7 +1091,7 @@
             "frost": {
                 "Name": "Gelida",
                 "Note": {
-                    "criticalSuccess": "<strong>Runa Gelida</strong> In caso di colpo critico, il bersaglio è anche @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno a meno che non abbia successo su un TS su <span data-pf2-check=\"fortitude\" data-pf2-label=\"CD Runa Gelida\" data-pf2-dc=\"24\">Tempra</span>."
+                    "criticalSuccess": "In caso di colpo critico, il bersaglio è anche @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno a meno che non abbia successo su un TS su @Check[type:fortitude|dc:24|name:Runa Gelida]."
                 }
             },
             "ghostTouch": {
@@ -1121,7 +1125,7 @@
                 "Name": "Tonante Superiore",
                 "Note": {
                     "success": "I danni sonori inflitti da quest'arma ignorano la resistenza al sonoro del bersaglio.",
-                    "criticalSuccess": "<strong>Runa Tonante Superiore</strong> I danni sonori inflitti da quest'arma ignorano la resistenza al sonoro del bersaglio. In caso di colpo critico, il bersaglio deve superare un TS su <span data-pf2-check=\"fortitude\" data-pf2-label=\"CD Runa Tonante Superiore\" data-pf2-dc=\"34\">Tempra</span> o sarà @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{assordato} permanentemente."
+                    "criticalSuccess": "I danni sonori inflitti da quest'arma ignorano la resistenza al sonoro del bersaglio. In caso di colpo critico, il bersaglio deve superare un TS su @Check[type:fortitude|dc:34|name:Runa Tonante Superiore] o sarà @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{assordato} permanentemente."
                 }
             },
             "holy": {
@@ -1165,7 +1169,7 @@
             "thundering": {
                 "Name": "Tonante",
                 "Note": {
-                    "criticalSuccess": "<strong>Runa Tonante</strong> In caso di colpo critico, il bersaglio deve superare un TS su <span data-pf2-check=\"fortitude\" data-pf2-label=\"CD Runa Tonante\" data-pf2-dc=\"24\">Tempra</span> o sarà @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{assordato} per 1 minuto (o 1 ora in caso di fallimento critico)."
+                    "criticalSuccess": "<strong>Runa Tonante</strong> In caso di colpo critico, il bersaglio deve superare un TS su @Check[type:fortitude|dc:24|name:Runa Tonante] o sarà @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{assordato} per 1 minuto (o 1 ora in caso di fallimento critico)."
                 }
             },
             "unholy": {
@@ -1296,7 +1300,7 @@
         "LanguageArboreal": "Arboreo",
         "condition": {
             "confused": {
-                "rules": "<p>Non ti rendi conto appieno di ciò che accade e attacchi alla cieca. Sei impreparato, non consideri nessuno come tuo alleato (anche se gli altri possono considerarti alleato) e non puoi Ritardare, Preparare o usare reazioni.<p></p>\nUsi tutte le tue azioni per Colpire o lanciare trucchetti offensivi, ma il GM può farti usare altre azioni per facilitare gli attacchi, come sguainare un'arma, muoverti in modo da avere il bersaglio in gittata e così via. I tuoi bersagli sono determinati casualmente dal GM. Se non hai altri bersagli disponibili, bersagli te stesso, colpendoti automaticamente ma senza ottenere un colpo critico. Se ti è impossibile attaccare o lanciare incantesimi, farfugli parole incoerenti, sprecando le tue azioni.</p><p>Ogni volta che subisci danni da un attacco o incantesimo, puoi tentare una prova semplice con CD 11 per riprenderti dalla confusione e porre fine alla condizione.</p>",
+                "rules": "<p>Non ti rendi conto appieno di ciò che accade e attacchi alla cieca. Sei impreparato, non consideri nessuno come tuo alleato (anche se gli altri possono considerarti alleato) e non puoi Ritardare, Preparare o usare reazioni.<p></p>\nUsi tutte le tue azioni per Colpire o lanciare trucchetti offensivi, ma il GM può farti usare altre azioni per facilitare gli attacchi, come sguainare un'arma, muoverti in modo da avere il bersaglio in gittata e così via. I tuoi bersagli sono determinati casualmente dal GM. Se non hai altri bersagli disponibili, bersagli te stesso, colpendoti automaticamente ma senza ottenere un colpo critico. Se ti è impossibile attaccare o lanciare incantesimi, farfugli parole incoerenti, sprecando le tue azioni.</p><p>Ogni volta che subisci danni da un attacco o incantesimo, puoi tentare una @Check[type:flat|dc:11] per riprenderti dalla confusione e porre fine alla condizione.</p>",
                 "name": "Confuso",
                 "summary": "Attacchi indiscriminatamente."
             },
@@ -1328,7 +1332,7 @@
             },
             "concealed": {
                 "name": "Nascosto",
-                "rules": "<p>Fintanto che sei occultato nei confronti di una creatura, per esempio se sei avvolto da una nebbia fitta, quella creatura ha difficoltà a vederti. Puoi ancora essere Osservato, ma è arduo prenderti di mira. Se sei occultato nei confronti di una creatura, questa deve superare una prova semplice con CD 5 quando ti bersaglia con un attacco, incantesimo o altro effetto.</p>\n<p>Gli effetti ad area non sono soggetti a questa prova semplice. Se la prova fallisce, l'attacco, incantesimo o effetto non ti influenza.</p>",
+                "rules": "<p>Fintanto che sei occultato nei confronti di una creatura, per esempio se sei avvolto da una nebbia fitta, quella creatura ha difficoltà a vederti. Puoi ancora essere Osservato, ma è arduo prenderti di mira. Se sei occultato nei confronti di una creatura, questa deve superare una @Check[type:flat|dc:5] quando ti bersaglia con un attacco, incantesimo o altro effetto.</p>\n<p>Gli effetti ad area non sono soggetti a questa prova semplice. Se la prova fallisce, l'attacco, incantesimo o effetto non ti influenza.</p>",
                 "summary": "La nebbia o l'oscuramento simile ti rendono difficile vedere e mirare."
             },
             "controlled": {
@@ -1343,7 +1347,7 @@
             },
             "deafened": {
                 "name": "Assordato",
-                "rules": "<p>Non sei in grado di udire nulla. Ottieni un fallimento critico automatico nelle prove di Percezione che richiedono l'uso dell'udito. Subisci penalità di status -2 alle prove di Percezione per l'Iniziativa e alle prove che coinvolgono il suono ma fanno affidamento anche sugli altri sensi. Se compi un'azione con il tratto uditivo, devi superare una prova semplice con CD 5 o l'azione è perduta; tenta la prova dopo aver speso l'azione, ma prima di applicarne gli effetti. Sei immune agli effetti uditivi.</p>",
+                "rules": "<p>Non sei in grado di udire nulla. Ottieni un fallimento critico automatico nelle prove di Percezione che richiedono l'uso dell'udito. Subisci penalità di status -2 alle prove di Percezione per l'Iniziativa e alle prove che coinvolgono il suono ma fanno affidamento anche sugli altri sensi. Se compi un'azione con il tratto uditivo, devi superare una @Check[type:flat|dc:5] o l'azione è perduta; tenta la prova dopo aver speso l'azione, ma prima di applicarne gli effetti. Sei immune agli effetti uditivi.</p>",
                 "summary": "Non riesci a sentire."
             },
             "doomed": {
@@ -1413,7 +1417,7 @@
             },
             "grabbed": {
                 "name": "Afferrato",
-                "rules": "<p>Sei tenuto fermo da un'altra creatura, cosa che ti da le condizioni Immobilizzato e Impreparato. Se tenti un'azione Maneggiare mentre sei afferrato, devi superare una prova semplice con CD 5 o perderla; tenta la prova prima di usare l'azione ma prima di applicare qualsiasi effetto.</p>",
+                "rules": "<p>Sei tenuto fermo da un'altra creatura, cosa che ti da le condizioni Immobilizzato e Impreparato. Se tenti un'azione Maneggiare mentre sei afferrato, devi superare una @Check[type:flat|dc:5] o perderla; tenta la prova prima di usare l'azione ma prima di applicare qualsiasi effetto.</p>",
                 "summary": "Una creatura, un oggetto o una magia ti tengono fermo."
             },
             "helpful": {
@@ -1423,7 +1427,7 @@
             },
             "hidden": {
                 "name": "Nascosto",
-                "rules": "<p>Fintanto che sei nascosto a una creatura, questa sa in quale zona ti trovi ma non sa dire dove con precisione. In genere, diventi nascosto usando Furtività per Nasconderti. Quando Individui una creatura usando solo sensi imprecisi, essa rimane nascosta anziché diventare Osservata. Una creatura per cui sei nascosto è impreparata nei tuoi confronti, e deve superare una prova semplice con CD 11 quando ti bersaglia con un attacco, un incantesimo o un altro effetto, altrimenti non riesce a influenzarti. Gli effetti ad area non sono soggetti a tale prova semplice.</p>\n<p>Una creatura può essere in grado di usare l'azione Individuare per cercare di osservarti.</p>",
+                "rules": "<p>Fintanto che sei nascosto a una creatura, questa sa in quale zona ti trovi ma non sa dire dove con precisione. In genere, diventi nascosto usando Furtività per Nasconderti. Quando Individui una creatura usando solo sensi imprecisi, essa rimane nascosta anziché diventare Osservata. Una creatura per cui sei nascosto è impreparata nei tuoi confronti, e deve superare una @Check[type:flat|dc:11] quando ti bersaglia con un attacco, un incantesimo o un altro effetto, altrimenti non riesce a influenzarti. Gli effetti ad area non sono soggetti a tale prova semplice.</p>\n<p>Una creatura può essere in grado di usare l'azione Individuare per cercare di osservarti.</p>",
                 "summary": "Una creatura da cui sei nascosto conosce la tua posizione ma non può vederti."
             },
             "hostile": {
@@ -1463,7 +1467,7 @@
             },
             "persistent-damage": {
                 "name": "Danno Persistente",
-                "rules": "<p>Il danno persistente deriva da effetti come acido, bruciature o molte altre situazioni ed è indicato come \"X danni da [tipo] persistenti\", dove la \"X\" e la quantità di danni inflitti e \"[tipo]\" è il tipo di danni. Anziché subire il danno persistente immediatamente, lo subisci alla fine di ciascun tuo turno finché hai la condizione, tirando i dadi dei danni ogni volta. Dopo aver subito il danno persistente, fai una prova semplice con CD 15 per determinare se guarisci dal danno persistente. Se la superi, la condizione termina.</p>",
+                "rules": "<p>Il danno persistente deriva da effetti come acido, bruciature o molte altre situazioni ed è indicato come \"X danni da [tipo] persistenti\", dove la \"X\" e la quantità di danni inflitti e \"[tipo]\" è il tipo di danni. Anziché subire il danno persistente immediatamente, lo subisci alla fine di ciascun tuo turno finché hai la condizione, tirando i dadi dei danni ogni volta. Dopo aver subito il danno persistente, fai una @Check[type:flat|dc:15] per determinare se guarisci dal danno persistente. Se la superi, la condizione termina.</p>",
                 "summary": "Continui a subire danni ogni round."
             },
             "petrified": {
@@ -1508,7 +1512,7 @@
             },
             "undetected": {
                 "name": "Non Individuato",
-                "rules": "<p>Quando sei non individuato da una creatura, essa non può vederti, non ha idea di quale quadretto occupi e non può bersagliarti, ma puoi comunque essere influenzato da capacita con effetti ad area. Fintanto che sei non individuato da una creatura, essa e Impreparata nei tuoi confronti.</p>\n<p>Una creatura da cui sei non individuato può cercare di bersagliarti indovinando in quale quadretto ti trovi. Deve scegliere un quadretto e tentare un attacco; ciò funziona come quando si prende di mira una creatura nascosta (cosa che richiede una prova semplice con CD 11), ma la prova semplice e il Tiro per Colpire vengono effettuati in segreto dal GM, che non rivela se l'attacco ha mancato a causa della scelta del quadretto errato o di un fallimento nella prova o nel Tiro per Colpire.</p>\n<p>Una creatura può usare l'azione Individuare per cercare di trovarti</p>",
+                "rules": "<p>Quando sei non individuato da una creatura, essa non può vederti, non ha idea di quale quadretto occupi e non può bersagliarti, ma puoi comunque essere influenzato da capacita con effetti ad area. Fintanto che sei non individuato da una creatura, essa e Impreparata nei tuoi confronti.</p>\n<p>Una creatura da cui sei non individuato può cercare di bersagliarti indovinando in quale quadretto ti trovi. Deve scegliere un quadretto e tentare un attacco; ciò funziona come quando si prende di mira una creatura nascosta (cosa che richiede una @Check[type:flat|dc:11]), ma la prova semplice e il Tiro per Colpire vengono effettuati in segreto dal GM, che non rivela se l'attacco ha mancato a causa della scelta del quadretto errato o di un fallimento nella prova o nel Tiro per Colpire.</p>\n<p>Una creatura può usare l'azione Individuare per cercare di trovarti</p>",
                 "summary": "Una creatura da cui non sei individuato non sa dove ti trovi."
             }
         },
@@ -1570,7 +1574,7 @@
             "BlightBomb": {
                 "Greater": {
                     "success": "<strong>Effetto</strong> La bomba infligge [[/r {3d4}[persistent,poison]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da valeno persistenti} e [[/r {3}[splash,poison]]]{3 danni da spargimento da veleno}",
-                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r {2*3d4}[persistent,[poison]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da valeno persistenti} e [[/r {3}[splash,poison]]]{3 danni da spargimento da veleno}"
+                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r {2*3d4}[persistent,poison]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da valeno persistenti} e [[/r {3}[splash,poison]]]{3 danni da spargimento da veleno}"
                 },
                 "Lesser": {
                     "success": "<strong>Effetto</strong> La bomba infligge [[/r {1d4}[persistent,poison]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da valeno persistenti} e [[/r {1}[splash,poison]]]{1 danno da spargimento da veleno}",
@@ -2384,7 +2388,16 @@
             },
             "CannotAddType": "Gli oggetti {type} non possono essere aggiunti a questo personaggio.",
             "Condition": {
-                "Flanked": "Impreparato (Fiancheggiato)"
+                "Flanked": "Impreparato (Fiancheggiato)",
+                "PersistentDamage": {
+                    "Name": "Danno Persistente ({formula})",
+                    "NameWithDC": "Danno Persistente ({formula} CD {dc})",
+                    "Dialog": {
+                        "Title": "Danno Persistente ({actor})",
+                        "Add": "Aggiungi Danno Persistente",
+                        "Remove": "Rimuovi Danno Persistente"
+                    }
+                }
             },
             "Effect": {
                 "Sustained": "Mantenuto",
@@ -2758,7 +2771,7 @@
                 "criticalSuccess": "[[/r {2*4d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti}"
             },
             "Bleed6d6": {
-                "success": "[[/r {6d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.Persistent Damage]{danni da sanguinamento persistenti}",
+                "success": "[[/r {6d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti}",
                 "criticalSuccess": "[[/r {2*6d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti}"
             },
             "Bleed2d8": {
@@ -4661,7 +4674,7 @@
         "TraitDrow": "Drow",
         "TraitDescriptionArcane": "Questa magia deriva dalla tradizione arcana, che si basa sulla logica e sulla tradizionalità. Qualsiasi cosa possieda questo tratto è magica.",
         "TraitDescriptionArchetype": "Questo talento appartiene ad un archetipo.",
-        "TraitDescriptionAttached": "Un'arma unita deve essere combinata con un altro pezzo di equipaggiamento per essere usata. Il tratto specifica a che tipo di oggetto deve essere unita l'arma. Devi impugnare o indossare l'oggetto a cui l'arma è unita per poter attaccare con essa. Ad esempio, la chiodatura per scudo è unita a uno scudo, permettendoti di attaccare con gli spuntoni anziché con il colpo di scudo, ma solo se stai impugnando lo scudo stesso. Un'arma unita è, di solito, fissata o assemblata assieme all'oggetto a cui è unita e un oggetto può, generalmente, essere unito a una sola arma. Un'arma unita può essere applicata a un oggetto con 10 minuti di lavoro e un successo in una prova di Fabbricare con CD 10; questo include il tempo necessario a rimuovere l'arma da un oggetto precedente, se necessario. Se un oggetto viene distrutto, l'arma unita ad esso può di solito essere recuperata.",
+        "TraitDescriptionAttached": "Un'arma unita deve essere combinata con un altro pezzo di equipaggiamento per essere usata. Il tratto specifica a che tipo di oggetto deve essere unita l'arma. Devi impugnare o indossare l'oggetto a cui l'arma è unita per poter attaccare con essa. Ad esempio, la chiodatura per scudo è unita a uno scudo, permettendoti di attaccare con gli spuntoni anziché con il colpo di scudo, ma solo se stai impugnando lo scudo stesso. Un'arma unita è, di solito, fissata o assemblata assieme all'oggetto a cui è unita e un oggetto può, generalmente, essere unito a una sola arma. Un'arma unita può essere applicata a un oggetto con 10 minuti di lavoro e un successo in una prova di @Check[type:crafting|dc:10]; questo include il tempo necessario a rimuovere l'arma da un oggetto precedente, se necessario. Se un oggetto viene distrutto, l'arma unita ad esso può di solito essere recuperata.",
         "TraitDescriptionAttack": "Una capacità con questo tratto comporta un attacco. Per ogni attacco effettuato oltre il primo del tuo turno, subisci una Penalità da Attacchi Multipli.",
         "TraitDescriptionAuditory": "Le azioni e gli effetti uditivi si basano sul suono. Un'azione con il tratto uditivo può essere eseguita con successo solo se la creatura che usa l'azione può parlare o produrre in altro modo i suoni richiesti. Un incantesimo, o un effetto con il tratto uditivo produce il suo effetto solo se il bersaglio può sentirlo. Questo vale solo per le parti dell'effetto basate sul suono, come stabilito dal GM. Questo è diverso da un effetto sonoro, che influenza comunque i bersagli che non riescono a sentirlo (per esempio i bersagli sordi) a patto che l'effetto stesso emetta un suono.",
         "TraitDescriptionAura": "Un'aura è un'emanazione che fluisce continuamente da te, influenzando le creature entro un certo raggio. L'aura può anche riferirsi alla firma magica di un oggetto o di una creatura con un forte allineamento.",
@@ -4850,7 +4863,7 @@
         "TraitDescriptionStance": "Una posizione è una strategia di combattimento generica che adotti usando un'azione con il tratto posizione, e in cui rimani per un po' di tempo. Una posizione dura fino a quando non sei fuori combattimento, fino a quando i suoi requisiti (se esistono) non vengono violati, fino alla fine dell'incontro o fino a quando non adotti una nuova posizione, a seconda di quale evento si verifichi per primo. Dopo aver usato un'azione con il tratto posizione, non puoi usarne un'altra per 1 round. Puoi adottare o essere in una posizione solo in modalità incontro.",
         "TraitDescriptionStaff": "Questo oggetto magico contiene incantesimi con un tema particolare e consente a un incantatore di lanciare incantesimi aggiuntivi preparando il bastone.",
         "TraitDescriptionStrix": "Umanoidi alati, che per lo più vivono in Cheliax e nei suoi paraggi.",
-        "TraitDescriptionStructure": "Quando un oggetto con il tratto struttura viene attivato prende la forma di un edificio o di un'altra struttura magica. L'oggetto deve essere attivato su un lotto di terra libero da altre strutture. La struttura si adatta al terreno naturale, adottando i requisiti strutturali necessari per essere costruito in quella zona. La struttura si sistema attorno a piccoli elementi del paesaggio, come stagni o guglie di pietra, però non può essere creata sull'acqua o altre superfici non solide. Se l'oggetto è attivato sulla neve, dune di sabbia o altre superfici molli con uno strato sottostante solido, le fondamenta (se presenti) della struttura raggiungeranno il terreno solido. Se un oggetto con questo tratto è attivato su una superficie solida ma instabile, come per esempio una palude o un'area tormentata da scosse, ogni giorno effettua una prova semplice con CD 3: in caso di fallimento la struttura inizia a sprofondare o crollare. Quando appare, la struttura non danneggia le creature all'interno dell'area inoltre non può essere creata all'interno di una folla o in un'area densamente popolata. Qualsiasi creatura che venga involontariamente catturata dentro la struttura, quando l'oggetto è attivato, si ritrova illesa all'interno della struttura completa e ha sempre un percorso libero per fuggire. Una creatura all'interno della struttura, quando termina l'attivazione, non viene ferita e atterra illesa sul terreno se si trovava a un piano più alto della struttura.",
+        "TraitDescriptionStructure": "Quando un oggetto con il tratto struttura viene attivato prende la forma di un edificio o di un'altra struttura magica. L'oggetto deve essere attivato su un lotto di terra libero da altre strutture. La struttura si adatta al terreno naturale, adottando i requisiti strutturali necessari per essere costruito in quella zona. La struttura si sistema attorno a piccoli elementi del paesaggio, come stagni o guglie di pietra, però non può essere creata sull'acqua o altre superfici non solide. Se l'oggetto è attivato sulla neve, dune di sabbia o altre superfici molli con uno strato sottostante solido, le fondamenta (se presenti) della struttura raggiungeranno il terreno solido. Se un oggetto con questo tratto è attivato su una superficie solida ma instabile, come per esempio una palude o un'area tormentata da scosse, ogni giorno effettua una @Check[type:flat|dc:3]: in caso di fallimento la struttura inizia a sprofondare o crollare. Quando appare, la struttura non danneggia le creature all'interno dell'area inoltre non può essere creata all'interno di una folla o in un'area densamente popolata. Qualsiasi creatura che venga involontariamente catturata dentro la struttura, quando l'oggetto è attivato, si ritrova illesa all'interno della struttura completa e ha sempre un percorso libero per fuggire. Una creatura all'interno della struttura, quando termina l'attivazione, non viene ferita e atterra illesa sul terreno se si trovava a un piano più alto della struttura.",
         "TraitDescriptionSuli": "I suli sono eredi planari discendenti dai jann.",
         "TraitDescriptionSwashbuckler": "Questo tratto indica le capacità legate alla classe dello spadaccino.",
         "TraitDescriptionSweep": "Quest'arma effettua ampie spazzate o attacchi rotanti, rendendo più semplice attaccare nemici multipli. Quando attacchi con quest'arma ottieni bonus di circostanza +1 al tuo Tiro per Colpire se hai già tentato di attaccare un bersaglio differente in questo turno usando quest'arma.",
@@ -5380,14 +5393,14 @@
                 "blowgun": "Cerbottana",
                 "bo-staff": "Bastone Bo",
                 "boarding-axe": "Boarding Axe",
-                "boarding-pike": "Boarding Pike",
+                "boarding-pike": "",
                 "bola": "Bola",
                 "buugeng": "Buugeng",
                 "clan-dagger": "Pugnale del Clan",
                 "claw": "Artiglio",
                 "claw-blade": "Lama per Artigli",
                 "club": "Randello",
-                "combat-grapnel": "Combat Grapnel",
+                "combat-grapnel": "",
                 "composite-longbow": "Arco Lungo Composito",
                 "composite-shortbow": "Arco Corto Composito",
                 "crossbow": "Balestra",
@@ -5487,7 +5500,7 @@
                 "spiked-gauntlet": "Guanto d'Arme Chiodato",
                 "staff": "Bastone Ferrato",
                 "starknife": "Astrum",
-                "stiletto-pen": "Stiletto Pen",
+                "stiletto-pen": "",
                 "sword-cane": "Bastone Animato",
                 "tamchal-chakram": "Tamchal Chakram",
                 "taw-launcher": "Taw Launcher",
