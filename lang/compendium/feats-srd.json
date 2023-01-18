@@ -6206,7 +6206,7 @@
     },
     "Fang Sharpener": {
       "name": "Fang Sharpener",
-      "description": "<p>You have filed your teeth into jagged points and have an unusually powerful jaw, making your mouth a dangerous weapon. If you're an irongut goblin, you gain a jaws unarmed attack that deals 1d4 piercing damage, and if you're a razortooth goblin, your jaws unarmed attack deals 1d8 piercing damage and loses the finesse trait. Whenever you score a critical hit with your jaws unarmed attack, your target takes [[/r 1[persistent,bleed]]] damage per weapon damage die.</p>",
+      "description": "<p>You have filed your teeth into jagged points and have an unusually powerful jaw, making your mouth a dangerous weapon. If you're an irongut goblin, you gain a jaws unarmed attack that deals 1d4 piercing damage, and if you're a razortooth goblin, your jaws unarmed attack deals 1d8 piercing damage and loses the finesse trait. Whenever you score a critical hit with your jaws unarmed attack, your target takes [[/r 1[bleed]]] damage per weapon damage die.</p>",
       "featPrerequisites": {
         "0": "irongut goblin or razortooth goblin heritage"
       }
@@ -9270,7 +9270,7 @@
     },
     "Discerning Strike": {
       "name": "Discerning Strike",
-      "description": "<p><strong>Requirements</strong> You have successfully identified the target with Recall Knowledge during this combat.</p>\n<hr />\n<p>Identifying a creature is the first step in finding its weaknesses. Attempt a Strike against the target; if successful, you deal an additional [[/r {1d6}[precision]]]{1d6 precision damage}. If you have succeeded on a Recall Knowledge check against the target during this combat and their creature type was previously recorded using @UUID[Compendium.pf2e.feats-srd.0Dy8RlFqrzCVOTl4]{Thorough Reports}, you also deal [[/r 1[persistent,bleed]]] damage. The creature is then temporarily immune to Discerning Strike for 1 day.</p>",
+      "description": "<p><strong>Requirements</strong> You have successfully identified the target with Recall Knowledge during this combat.</p>\n<hr />\n<p>Identifying a creature is the first step in finding its weaknesses. Attempt a Strike against the target; if successful, you deal an additional [[/r {1d6}[precision]]]{1d6 precision damage}. If you have succeeded on a Recall Knowledge check against the target during this combat and their creature type was previously recorded using @UUID[Compendium.pf2e.feats-srd.0Dy8RlFqrzCVOTl4]{Thorough Reports}, you also deal [[/r 1[bleed]]] damage. The creature is then temporarily immune to Discerning Strike for 1 day.</p>",
       "featPrerequisites": {
         "0": "Pathfinder Agent Dedication",
         "1": "Thorough Reports"
@@ -9951,7 +9951,7 @@
     },
     "Titan Swing": {
       "name": "Titan Swing",
-      "description": "<p>Your limbs tense as you deliver a mighty swing. Make a melee Strike. If it hits, you deal an extra die of weapon damage and push the target back by 5 feet. If you're at least 10th level, increase this to two extra dice and push the target by 10 feet, and if you're at least 18th level, increase it to three extra dice and push the target by 15 feet.</p>\n<hr />\n<p><strong>Awakening</strong> On a critical hit, you push the target back double the normal distance and knock it @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Awakening</strong> On a hit, you deal [[/r 1d6[persistent,bleed]]] damage. This increases to 2d6 at 10th level and 3d6 at 18th level.</p>"
+      "description": "<p>Your limbs tense as you deliver a mighty swing. Make a melee Strike. If it hits, you deal an extra die of weapon damage and push the target back by 5 feet. If you're at least 10th level, increase this to two extra dice and push the target by 10 feet, and if you're at least 18th level, increase it to three extra dice and push the target by 15 feet.</p>\n<hr />\n<p><strong>Awakening</strong> On a critical hit, you push the target back double the normal distance and knock it @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Awakening</strong> On a hit, you deal [[/r 1d6[bleed]]] damage. This increases to 2d6 at 10th level and 3d6 at 18th level.</p>"
     },
     "Laughing Gnoll": {
       "name": "Laughing Gnoll",
@@ -21936,7 +21936,7 @@
     },
     "Quill Spray": {
       "name": "Quill Spray",
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can launch a mass of quills at opponents. You spray quills in a @Template[type:cone|distance:30], dealing [[/r 5d8[piercing]]] damage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. On a critical failure, a creature also takes [[/r 5[persistent,bleed]]] damage. At 11th level and every even level thereafter, the piercing damage increases by 1d8 and the persistent bleed damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Levelled} piercing damage</p>\n<p>[[/r (ceil(@actor.level/2))[persistent,bleed]]]{Levelled} damage</p>\n<hr />\n<p><em><strong>Note</strong> The feat does not specify the type of saving throw required. A reflex saving throw had been added, in line with Barbed Quills.</em></p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can launch a mass of quills at opponents. You spray quills in a @Template[type:cone|distance:30], dealing [[/r 5d8[piercing]]] damage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. On a critical failure, a creature also takes [[/r 5[bleed]]] damage. At 11th level and every even level thereafter, the piercing damage increases by 1d8 and the persistent bleed damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Levelled} piercing damage</p>\n<p>[[/r (ceil(@actor.level/2))[bleed]]]{Levelled} damage</p>\n<hr />\n<p><em><strong>Note</strong> The feat does not specify the type of saving throw required. A reflex saving throw had been added, in line with Barbed Quills.</em></p>",
       "featPrerequisites": {
         "0": "quillcoat shisk or quill unarmed attack"
       }
