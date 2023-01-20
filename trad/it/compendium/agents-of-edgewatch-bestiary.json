@@ -1432,7 +1432,8 @@
                     "description": "<p>A ghaele attempts to Recall Knowledge about a foe they are facing.</p>\n<p>If successful, they can change the elemental damage dealt by their greatsword and light ray to acid, cold, electricity, fire, or sonic, usually to match the foe's weakness.</p>\n<p>They can also change their energy resistance to any of these energy types (this can be a different type than for their attacks).</p>\n<p>The choices remain until they next use.</p>"
                 },
                 "Ghaele's Gaze": {
-                    "name": "Ghaele's Gaze"
+                    "name": "Ghaele's Gaze",
+                    "description": "<p>When a ghaele fixes their gaze upon a non-good creature, the creature is subjected to the effects of <em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{Divine Decree}</em> (@Check[type:will|dc:20|name:Divine Decree|traits:damaging-effect] save).</p>\n<p>If it survives, the creature is temporarily immune to for 1 minute.</p>"
                 }
             },
             "name": "Ghaele Of Kharnas"
@@ -1614,6 +1615,10 @@
                 "Second Chance": {
                     "name": "Second Chance",
                     "description": "<p><strong>Frequency</strong> three times per day</p>\n<p><strong>Trigger</strong> Veksciralenix or a creature that Veksciralenix can see attempts a check and learns the results</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature rerolls the triggering check and takes the second result.</p>"
+                },
+                "Alien Presence": {
+                    "description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A creature that first enters the area must attempt a @Check[type:will|dc:42] save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to the Veksciralenix's Alien Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>",
+                    "name": "Alien Presence"
                 }
             },
             "name": "Veksciralenix"
@@ -1792,7 +1797,15 @@
                     "description": "<p>Lanci un dardo di forza contro una creatura che puoi vedere. Il dardo colpisce automaticamente ed infligge 1d4+1 danni di forza. Per ciascuna azione aggiuntiva che usi quando Lanci questo Incantesimo, il numero di dardi che lanci aumenta di 1, fino a un massimo di 3 dardi per 3 azioni. Scegli il bersaglio individualmente per ciascun dardo che lanci. Se lanci più di un dardo contro lo stesso bersaglio, somma i danni prima di applicare bonus o penalità ai danni, resistenze, debolezze e così via.</p><hr /><p><strong>Intensificato (+2)</strong> Lanci un dardo aggiuntivo per ciascuna azione che spendi.</p>"
                 },
                 "Amplify Spell": {
-                    "description": "<p>The toady wills itself to become a conduit for Blune's next spell, empowering the spell.</p>\n<p>The toady becomes @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} until the beginning of its next turn.</p>\n<p>If Blune Bandersworth is within 30 feet and Casts a Spell before the toady's next turn, the spell travels through the toady before redirecting toward its intended target.</p>\n<p>The spell is heightened by 1 level, to a maximum of 10th level. The toady is then destroyed.</p>"
+                    "description": "<p>The toady wills itself to become a conduit for Blune's next spell, empowering the spell.</p>\n<p>The toady becomes @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} until the beginning of its next turn.</p>\n<p>If Blune Bandersworth is within 30 feet and Casts a Spell before the toady's next turn, the spell travels through the toady before redirecting toward its intended target.</p>\n<p>The spell is heightened by 1 level, to a maximum of 10th level. The toady is then destroyed.</p>",
+                    "name": "Amplify Spell"
+                },
+                "Ferocious Devotion": {
+                    "description": "<p>When an illusory toady is destroyed, it dissolves into a puddle of cerulean quintessence before reforming to quasi-life once more. One round after it is destroyed, the toady starts re-forming. One round after that, the toady is completely healed and begins to fight once more.</p>\n<p>If damaged while it is re-forming but before the process is complete, the toady is destroyed but splits into two cerulean puddles that begin re-forming into two identical toadies 1 round later, each with half the maximum HP of the original toady (this is similar to an @UUID[Compendium.pf2e.pathfinder-bestiary.uQBOJfjtzEXvpLQz]{Ochre Jelly's} Split ability); the toadies begin re-forming 1 round later.</p>\n<p>The toadies are permanently destroyed only by <em>@UUID[Compendium.pf2e.spells-srd.ihbRf964JDXztcy3]{Disjunction}</em> or if @UUID[Compendium.pf2e.agents-of-edgewatch-bestiary.sUrJ7jxzBiJTbwVo]{Blune} falls unconscious.</p>",
+                    "name": "Ferocious Devotion"
+                },
+                "Chaos Hand": {
+                    "name": "Chaos Hand"
                 }
             },
             "name": "Blune's Illusory Toady"
@@ -1801,7 +1814,8 @@
             "name": "Agenti della Vegliarupe",
             "hazardReset": "<p>The trap deactivates and resets one minute after the room is empty.</p>",
             "hazardDisable": "<p>@Check[type:thievery|dc:34|name:Disable Statue Rollers|traits:action:disable-a-device] (master) to disable a specific statue's rollers, or @Check[type:thievery|dc:39|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (master) on the control panel in <strong>A4</strong> deactivates the whole trap. For each statue disabled, the trap loses 1 action from its routine and the DC for its predictive impediment ability decreases by 4. <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level, counteract DC 32) doesn't harm the statues but removes the predictive impediment ability. Breaking the control panel prevents the trap from resetting.</p>",
-            "hazardRoutine": "<p>(6 actions) On the trap's initiative, each functioning statue slides up to 40 feet around the room and makes a statue shortsword Strike against an adjacent creature. The trap doesn't take a multiple attack penalty, and the statues' movements don't trigger reactions.</p>"
+            "hazardRoutine": "<p>(6 actions) On the trap's initiative, each functioning statue slides up to 40 feet around the room and makes a statue shortsword Strike against an adjacent creature. The trap doesn't take a multiple attack penalty, and the statues' movements don't trigger reactions.</p>",
+            "description": "<p>Six statues rapidly slide around the room on rollers, slowing down intruders and striking at them with spring-loaded sword arms.</p>"
         },
         "Ralso": {
             "items": {
@@ -1872,7 +1886,8 @@
         "Water Elemental Vessel (I2)": {
             "items": {
                 "Engulf": {
-                    "name": "Avviluppare"
+                    "name": "Avviluppare",
+                    "description": "<p>@Check[type:reflex|dc:35] save, no damage, @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC 35, Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
                 "Push 10 feet": {
                     "name": "Spintonare 3 metri",
@@ -1883,10 +1898,19 @@
                     "description": "<p>By performing an hour-long ritual, an elemental vessel can form a spell circle with an arcane or primal spellcaster. After the spell circle is formed, other spellcasters can join the spell circle by performing the same hour-long ritual while assisted by at least one spellcaster already in the spell circle. Each member of the spell circle must contribute at least one spell to the elemental vessel. The spellcaster permanently loses access to a spell slot equal to the spell's level and the elemental vessel adds the contributed spell to its list of arcane innate spells (regardless of the spell's original type). An elemental vessel can be imbued with no more than three spells per spell level. If the elemental vessel is destroyed, all members of the spell circle regain the spell slots they contributed to the creature. The arcane innate spells shown below represent a typical spell list for an elemental vessel, but each elemental vessel is likely to have different spells depending on what its spell circle has contributed.</p>"
                 },
                 "Inhabit Vessel": {
-                    "description": "<p>Any member of the elemental vessel's spell circle can spend 3 actions to mentally inhabit the vessel for 1 round. While they inhabit the vessel, the inhabiter controls the vessel's actions, and the vessel uses the inhabiter's Intelligence, Wisdom, and Charisma modifiers for all checks. Only one creature can inhabit an elemental vessel at a time.</p>"
+                    "description": "<p>Any member of the elemental vessel's spell circle can spend 3 actions to mentally inhabit the vessel for 1 round. While they inhabit the vessel, the inhabiter controls the vessel's actions, and the vessel uses the inhabiter's Intelligence, Wisdom, and Charisma modifiers for all checks. Only one creature can inhabit an elemental vessel at a time.</p>",
+                    "name": "Inhabit Vessel"
                 },
                 "Wave": {
                     "name": "Wave"
+                },
+                "Internal Spell Strike": {
+                    "description": "<p>The elemental vessel targets an engulfed creature with one of its spells. The spell must have a range of touch.</p>",
+                    "name": "Internal Spell Strike"
+                },
+                "Dispel Vulnerability": {
+                    "description": "<p>Whenever a creature successfully counteracts one of its spells, the vessel permanently loses access to that spell and takes damage equal to 4 × the spell's level. The spell circle member who contributed that spell regains access to their contributed spell slot.</p>",
+                    "name": "Dispel Vulnerability"
                 }
             },
             "name": "Water Elemental Vessel (I2)",
@@ -1961,6 +1985,25 @@
                 },
                 "Claw": {
                     "name": "Artiglio"
+                },
+                "Opportune Dodge": {
+                    "description": "<p><strong>Trigger</strong> A creature critically fails a Strike against the Daemonic Rumormonger</p>\n<hr />\n<p><strong>Effect</strong> The Rumormonger dodges out of the way and uses his momentum to attack and move out of reach. He Strides up to 20 feet and can Strike at any point during this movement; this Strike counts toward the multiple attack penalty on his next turn.</p>",
+                    "name": "Opportune Dodge"
+                },
+                "Black Ink Delirium": {
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 6d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>",
+                    "name": "Black Ink Delirium"
+                },
+                "Broken Quills": {
+                    "name": "Broken Quills"
+                },
+                "Breath of Lies": {
+                    "name": "Breath of Lies",
+                    "description": "<p>The Daemonic Rumormonger breathes a torrent of acidic sand and poisoned ink in an @Template[type:line|distance:80], dealing [[/r 6d12[acid]]] damage and [[/r 6d12[poison]]] damage and exposing victims to his black ink delirium.</p>\n<p>He can't use Breath of Lies again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+                },
+                "Whirling Slashes": {
+                    "name": "Whirling Slashes",
+                    "description": "<p>The Daemonic Rumormonger Strides up to his Speed. He can make up to three claw Strikes, each against a different target, at any points during this Stride. His multiple attack penalty applies as usual.</p>"
                 }
             },
             "name": "Daemonic Rumormonger"
@@ -1968,7 +2011,8 @@
         "Copper Hand Illusionist": {
             "items": {
                 "+1 Dagger": {
-                    "description": "<p>Questa piccola arma a lama viene tenuta con una mano ed è usata per trafiggere una creatura in combattimento ravvicinato. Può anche essere lanciato.<br style=\"font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;\"><br></p>"
+                    "description": "<p>Questa piccola arma a lama viene tenuta con una mano ed è usata per trafiggere una creatura in combattimento ravvicinato. Può anche essere lanciato.<br style=\"font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;\"><br></p>",
+                    "name": "+1 Dagger"
                 },
                 "Spellbook": {
                     "name": "Incantesimi",
@@ -1981,7 +2025,8 @@
                     "name": "Attacco Furtivo",
                     "description": "<p>The Copper Hand illusionist deals 2d6 additional precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
-            }
+            },
+            "name": "Copper Hand Illusionist"
         },
         "The Winder": {
             "name": "Agenti della Vegliarupe",
@@ -1997,13 +2042,16 @@
                     "description": "<p>Disperdi la magia che si cela dietro un incantesimo o effetto. Effettua una prova di contrasto contro il bersaglio. Se il tentativo ha successo contro un effetto di incantesimo, lo contrasti. Se ha successo contro un oggetto magico, quell'oggetto diventa un oggetto comune del suo tipo per 10 minuti. Le proprietà non magiche dell'oggetto non cambiano. Se il bersaglio è un artefatto o un oggetto simile, fallisci automaticamente.</p>"
                 },
                 "Teleport (At Will) (Self Only)": {
-                    "description": "<p>Tu e i bersagli siete trasportati istantaneamente in un qualsiasi luogo entro il raggio, a patto che tu possa identificare in modo preciso il luogo sia dalla sua relativa posizione dal tuo punto di partenza sia da come appare (o da altri aspetti identificativi). Una conoscenza incorretta dell'aspetto del luogo di solito fa fallire l'incantesimo, ma potrebbe invece teletrasportarvi in un luogo sconosciuto o potreste imbattervi in una disavventura inconsueta determinata dal GM. Teletrasporto non è preciso sulle grandi distanze. I bersagli compaiono a una distanza dalla destinazione programmata pari a circa 11% della distanza di viaggio totale, in una direzione determinata dal GM. Per viaggi brevi, questa mancanza di precisione è irrilevante, ma i viaggi lunghi possono essere fuori destinazione fino a 1,8 km.</p><hr /><p><strong>Intensificato (7°)</strong> Tu e i bersagli potete viaggiare verso un qualsiasi luogo entro 1.800 km.</p><p><strong>Intensificato (8°)</strong> Tu e i bersagli potete viaggiare verso un qualsiasi luogo sullo stesso pianeta. Se viaggiate per più di 1.800 km, arrivate fuori destinazione di 18 km dal luogo programmato.</p><p><strong>Intensificato (9°)</strong> Tu e i bersagli potete viaggiare verso un qualsiasi luogo su un altro pianeta nell'ambito dello stesso sistema solare. Presumendo che tu abbia una conoscenza accurata della posizione del luogo e del suo aspetto, arrivate sul nuovo pianeta a 180 km dal luogo programmato.</p><p><strong>Intensificato (10°)</strong> Come per la versione di 9° livello, ma potete viaggiare verso qualsiasi pianeta nell'ambito della stessa galassia.</p>"
+                    "description": "<p>Tu e i bersagli siete trasportati istantaneamente in un qualsiasi luogo entro il raggio, a patto che tu possa identificare in modo preciso il luogo sia dalla sua relativa posizione dal tuo punto di partenza sia da come appare (o da altri aspetti identificativi). Una conoscenza incorretta dell'aspetto del luogo di solito fa fallire l'incantesimo, ma potrebbe invece teletrasportarvi in un luogo sconosciuto o potreste imbattervi in una disavventura inconsueta determinata dal GM. Teletrasporto non è preciso sulle grandi distanze. I bersagli compaiono a una distanza dalla destinazione programmata pari a circa 11% della distanza di viaggio totale, in una direzione determinata dal GM. Per viaggi brevi, questa mancanza di precisione è irrilevante, ma i viaggi lunghi possono essere fuori destinazione fino a 1,8 km.</p><hr /><p><strong>Intensificato (7°)</strong> Tu e i bersagli potete viaggiare verso un qualsiasi luogo entro 1.800 km.</p><p><strong>Intensificato (8°)</strong> Tu e i bersagli potete viaggiare verso un qualsiasi luogo sullo stesso pianeta. Se viaggiate per più di 1.800 km, arrivate fuori destinazione di 18 km dal luogo programmato.</p><p><strong>Intensificato (9°)</strong> Tu e i bersagli potete viaggiare verso un qualsiasi luogo su un altro pianeta nell'ambito dello stesso sistema solare. Presumendo che tu abbia una conoscenza accurata della posizione del luogo e del suo aspetto, arrivate sul nuovo pianeta a 180 km dal luogo programmato.</p><p><strong>Intensificato (10°)</strong> Come per la versione di 9° livello, ma potete viaggiare verso qualsiasi pianeta nell'ambito della stessa galassia.</p>",
+                    "name": "Teleport (At Will) (Self Only)"
                 },
                 "Creation (At Will)": {
-                    "description": "<p>Evochi un oggetto temporaneo dall'energia spettrale. L'oggetto deve essere composto di materia vegetale (come legno o carta) e non può superare i 150 dm3. Non può essere un oggetto artistico dettagliato o essere composto di parti mobili complesse, non può mai funzionare come un costo o simili e non può essere composto di materiali speciali o materiali con una rarità non comune o superiore. Ovviamente è evocato in modo temporaneo, perciò non può essere venduto né spacciato come un oggetto genuino.</p><hr /><p><strong>Intensificato (5°)</strong> L'oggetto è di metallo e può usare minerali comuni, come feldspato o quarzo.</p>"
+                    "description": "<p>Evochi un oggetto temporaneo dall'energia spettrale. L'oggetto deve essere composto di materia vegetale (come legno o carta) e non può superare i 150 dm3. Non può essere un oggetto artistico dettagliato o essere composto di parti mobili complesse, non può mai funzionare come un costo o simili e non può essere composto di materiali speciali o materiali con una rarità non comune o superiore. Ovviamente è evocato in modo temporaneo, perciò non può essere venduto né spacciato come un oggetto genuino.</p><hr /><p><strong>Intensificato (5°)</strong> L'oggetto è di metallo e può usare minerali comuni, come feldspato o quarzo.</p>",
+                    "name": "Creation (At Will)"
                 },
                 "Hallucinatory Terrain (See Reshape Reality)": {
-                    "description": "<p>Crei un'illusione per la quale un terreno naturale appare, risuona, sembra e odora come un terreno di tipo diverso. Questo non camuffa alcuna struttura o creatura nell'area. Qualsiasi creatura che tocca l'illusione o utilizza l'azione Individuare per esaminarlo può tentare di dubitare della tua illusione.</p><hr /><p><strong>Intensificato (5°) </strong>La tua immagine puo anche camuffare strutture o creare strutture illusorie (ma non camuffa le creature).s).</p>"
+                    "description": "<p>Crei un'illusione per la quale un terreno naturale appare, risuona, sembra e odora come un terreno di tipo diverso. Questo non camuffa alcuna struttura o creatura nell'area. Qualsiasi creatura che tocca l'illusione o utilizza l'azione Individuare per esaminarlo può tentare di dubitare della tua illusione.</p><hr /><p><strong>Intensificato (5°) </strong>La tua immagine puo anche camuffare strutture o creare strutture illusorie (ma non camuffa le creature).s).</p>",
+                    "name": "Hallucinatory Terrain (See Reshape Reality)"
                 },
                 "Tongues (Constant)": {
                     "name": "Linguaggi (Costante)",
@@ -2022,7 +2070,8 @@
                     "description": "<p>Respingi gli effetti che ostacolerebbero una creatura o ne rallenterebbero i movimenti. Il bersaglio, mentre è sotto l'effetto di questo incantesimo, ignora tutti gli effetti che potrebbero fornire penalità di circostanza alla Velocità. Quando il bersaglio tenta di @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Sfuggire} da un effetto che lo ha @Compendium[pf2e.conditionspf2e.eIcWbB5o3pP6OIMe]{Immobilized}, @Compendium[pf2e.conditionspf2e.kWc1fhmv9LBiTuei]{Afferrato} o @Compendium[pf2e.conditionspf2e.VcDeM8A5oI6VqhbM]{Trattenuto}, il tentativo ha successo automaticamente, a meno che l'effetto sia un effetto magico e di un livello superiore a quello dell'incantesimo libertà di movimento.</p>"
                 },
                 "Detect Alignment (At Will) (Self Only)": {
-                    "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>"
+                    "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>",
+                    "name": "Detect Alignment (At Will) (Self Only)"
                 },
                 "Jaws": {
                     "name": "Fauci"
@@ -2034,14 +2083,16 @@
                     "name": "Coda"
                 },
                 "Telepathy 100 feet": {
-                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
+                    "name": "Telepathy 100 feet"
                 },
                 "Fast Healing 15": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>",
                     "name": "Fast Healing 15"
                 },
                 "Protean Anatomy": {
-                    "name": "Anatomia Protean"
+                    "name": "Anatomia Protean",
+                    "description": "<p>Hestriviniaas' vital organs shift and change shape and position constantly. Immediately after the Hestriviniaas takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type.</p>\n<p>This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. The keketar is immune to polymorph effects unless it is a willing target.</p>\n<p>If @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened}, the keketar automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>"
                 },
                 "Change Shape": {
                     "name": "Cambiare Forma",
@@ -2052,7 +2103,8 @@
                     "description": "<p>[[/r (2d12+21)[bludgeoning]]] damage, @Check[type:fortitude|dc:44|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Entropy Sense (Imprecise) 60 feet": {
-                    "description": "<p>Hestriviniaas can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range.</p>\n<p>A creature under the effects of <em>@UUID[Compendium.pf2e.spells-srd.EoKBlgf6Smt8opaU]{Nondetection}</em> or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>"
+                    "description": "<p>Hestriviniaas can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range.</p>\n<p>A creature under the effects of <em>@UUID[Compendium.pf2e.spells-srd.EoKBlgf6Smt8opaU]{Nondetection}</em> or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>",
+                    "name": "Entropy Sense (Imprecise) 60 feet"
                 },
                 "Spatial Riptide": {
                     "name": "Spatial Riptide",
@@ -2068,6 +2120,9 @@
                 },
                 "Divine Wrath (Chaotic Only)": {
                     "name": "Divine Wrath (Chaotic Only)"
+                },
+                "Shatter (At Will)": {
+                    "name": "Shatter (At Will)"
                 }
             },
             "name": "Hestriviniaas"
@@ -2201,10 +2256,12 @@
                     "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you succeed against a spell effect, you counteract it. If you succeed against a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>"
                 },
                 "Lore Master": {
-                    "description": "<p>Ixusoth retains a vast amount of knowledge. She can use her Bardic Lore skill to Recall Knowledge on any topic, and she knows any languages common to an area she has spent a day or more in.</p>"
+                    "description": "<p>Ixusoth retains a vast amount of knowledge. She can use her Bardic Lore skill to Recall Knowledge on any topic, and she knows any languages common to an area she has spent a day or more in.</p>",
+                    "name": "Lore Master"
                 },
                 "Eye Probe": {
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Up to six of Ixusoth's eyes detach from her body. Each eye has AC 26, HP 1, and a fly speed of 40 feet. Ixusoth can see through all of her eye probes. She can move the probes all in separate directions using a single action. Ixusoth can have no more than six eye probes active at a time; using this ability to create more eyes causes the eye or eyes farthest away to shrivel and die.</p>\n<p>Ixusoth can deliver touch spells through her eye probes and make melee spell attacks through them. In addition, she can Steal Memories through an eye probe using a single action by touching the target with the eye.</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Up to six of Ixusoth's eyes detach from her body. Each eye has AC 26, HP 1, and a fly speed of 40 feet. Ixusoth can see through all of her eye probes. She can move the probes all in separate directions using a single action. Ixusoth can have no more than six eye probes active at a time; using this ability to create more eyes causes the eye or eyes farthest away to shrivel and die.</p>\n<p>Ixusoth can deliver touch spells through her eye probes and make melee spell attacks through them. In addition, she can Steal Memories through an eye probe using a single action by touching the target with the eye.</p>",
+                    "name": "Eye Probe"
                 },
                 "Scatterbrain Palm": {
                     "description": "<p>A creature hit by Ixusoth's fist Strike must attempt a @Check[type:will|dc:36] save. The creature is then temporarily immune until the start of its next turn.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is stunned 1.</p>\n<p><strong>Failure</strong> The creature is stunned 2.</p>\n<p><strong>Critical Failure</strong> The creature is stunned 3, and the hyakume can use Steal Memories on the target as part of this action.</p>"
@@ -5141,6 +5198,10 @@
                 },
                 "Golem Antimagic": {
                     "name": "Golem Antimagic"
+                },
+                "Vulnerable to Flesh to Stone": {
+                    "name": "Vulnerable to Flesh to Stone",
+                    "description": "<p>Casting a flesh to stone spell on the flesh golem affects the golem normally.</p>"
                 }
             },
             "description": "<p>Made of odd scraps of skin and muscle, a flesh golem is a grotesque parody of life. Though it has no mind, it can still go into a berserk rage when harmed, giving it a faint semblance of emotion. Flesh golems guard the laboratories and charnel houses of fleshwarpers and necromancers who feel no compunctions about desecrating corpses for their own ends. Though the first flesh golem is believed to have been a misguided attempt to create from simple base elements, these monstrosities are far from human. In isolated cases, echoes of a personality might rise in a flesh golem if the brain used as part of its construction belonged to a particularly powerful personality, but such tragic instances are rare in the extreme.</p>",
