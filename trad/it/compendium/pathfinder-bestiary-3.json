@@ -86,7 +86,8 @@
                     "name": "Betrayal Toxin",
                     "description": "<p>A creature affected by betrayal toxin hears whispers of incessant doubt in their head and can't treat any creature as their ally</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:28]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
                 }
-            }
+            },
+            "name": "Pakalchi"
         },
         "Desert Giant": {
             "items": {
@@ -154,7 +155,8 @@
                     "name": "Pose a Riddle"
                 },
                 "Warding Glyph": {
-                    "name": "Warding Glyph"
+                    "name": "Warding Glyph",
+                    "description": "<p>Once per day, an elder sphinx can create a magical symbol as though casting a heightened <em>@UUID[Compendium.pf2e.spells-srd.o0l57UfBm9ScEUMW]{Glyph of Warding}</em>. The sphinx usually shapes it to the form of a riddle and sets the password to the answer.</p>\n<p>A creature that doesn't speak the password must succeed at a @Check[type:will|dc:37] save or be affected by one of the following spells, chosen by the sphinx when creating the symbol:</p>\n<ul>\n<li><em>@UUID[Compendium.pf2e.spells-srd.jBGAYmR0BkkbpJvG]{Visions of Danger}</em> (7th)</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.PHVHBbdHeQRfjLmE]{Spirit Blast}</em> (6th)</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.BilnTGuXrof9Dt9D]{Synaptic Pulse}</em> (5th)</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6]{Charm}</em> (4th)</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.4koZzrnMXhhosn0D]{Fear}</em> (3rd)</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.R8bqnYiThB6MYTxD]{Phantom Pain}</em> (3rd)</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.o4lRVTwSxnOOn5vl]{Sleep}</em> (3rd)</li>\n</ul>\n<p>The sphinx learns the identity of any creature that answers the riddle and tends to be friendly to them.</p>"
                 },
                 "Tongues (Constant)": {
                     "name": "Tongues (Constant)"
@@ -187,7 +189,8 @@
         "Zetogeki": {
             "items": {
                 "Tilt Scales": {
-                    "name": "Tilt Scales"
+                    "name": "Tilt Scales",
+                    "description": "<p>The zetogeki shifts the scales that cover its body to better absorb kinetic energy from physical blows. The zetogeki gains resistance 10 to physical damage, but its Speeds are reduced to 10 feet. If the zetogeki gets hit for 20 or more physical damage in a single blow while its scales are tilted (before applying resistance), it stores the kinetic energy of the blow. The zetogeki can realign its scales to their regular position by taking this action again. When it does, it channels any stored kinetic energy into the next Strike it makes before the end of its turn. If the Strike hits, it deals an additional [[/r {2d8}]]{2d8 damage}. The energy is expended whether or not the Strike hits.</p>"
                 },
                 "Jaws": {
                     "name": "Jaws"
@@ -196,10 +199,12 @@
                     "name": "Tail"
                 },
                 "Mangle": {
-                    "name": "Mangle"
+                    "name": "Mangle",
+                    "description": "<p><strong>Requirements</strong> The zetogeki has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p>\n<hr />\n<p><strong>Effect</strong> The zetogeki mangles the grabbed creature and slams it about, dealing [[/r 3d8[bludgeoning]]] damage (@Check[type:fortitude|dc:26|basic:true] save).</p>"
                 }
             },
-            "name": "Zetogeki"
+            "name": "Zetogeki",
+            "description": "<p>Basalt comprises the earthen bodies of zetogekis, giant lizards with an innate ability to absorb and redirect kinetic energy. They dwell near active volcanos, particularly at hot springs and geysers, from which they drink copious quantities of steaming, mineral-rich water. Since they have no need for any other sustenance (and in fact can't digest anything else), zetogekis guard these watering holes. The worst fate that can befall the proprietor of a mountain hot spring is the arrival of a zetogeki, which can transform a lucrative business into a public hazard overnight. Mountain dwellers who make use of such hot springs pay monster hunters handsomely to eradicate or chase off zetogekis, but dealing with the stubborn beasts is no mean feat.</p>\n<p>Even in wilder lands, zetogekis prove menacing to mountaineers. The lizards sometimes purposefully throw themselves down mountainsides to absorb the kinetic energy dealt to them during their tumble. They use this accumulated energy to take down predators-though zetogekis see nearly every other type of creature as a predator.</p>\n<p>This marvelous ability to absorb and dole out physical energy come from a zetogeki's unique configuration of shale-like scales, which it can angle at will much like a porcupine extending its quills. Those who encounter a zetogeki hunkered down with its scales in the telltale raised pattern of zig-zagging black and gold would do well to give the lizard a wide berth. This danger has its upsides, however; some alchemists and wizards offer substantial bounties for intact zetogeki hides.</p>"
         },
         "Dretch": {
             "items": {
@@ -214,20 +219,36 @@
                     "name": "Claw"
                 },
                 "Sloth": {
-                    "name": "Sloth"
+                    "name": "Sloth",
+                    "description": "<p>At the start of each of the dretch's turns, roll [[/br 1d4 #Actions Regained]]{1d4}. The result is the number of actions the dretch regains that turn (maximum 3).</p>\n<p>Effects like the @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} condition can further reduce their number of actions.</p>"
+                },
+                "Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "Cower": {
+                    "name": "Cower",
+                    "description": "<p>The dretch makes itself as small as possible, protecting its vital organs with its limbs. It gains a +4 circumstance bonus to AC but takes a -2 penalty to attack rolls. This lasts until the dretch moves from its current space, falls @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}, or ends the effect as a free action.</p>"
+                },
+                "Frenzied Slashes": {
+                    "name": "Frenzied Slashes",
+                    "description": "<p>The dretch makes three claw Strikes, each at a -2 penalty, all targeting the same creature. The dretch's multiple attack penalty doesn't increase until after it has made all three attacks.</p>\n<p>The dretch gains the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} condition until the beginning of its next turn.</p>"
                 }
-            }
+            },
+            "description": "<p>Among the lowest and least powerful of all demons, dretches are just as vicious and cruel as their more powerful brethren. They happily vent their frustrations on anything weaker than themselves.</p>\n<p>Born from the souls of the slothful, these demons appear vaguely humanoid in appearance with awkward limbs and slack lumps of skin hanging from their frames. Supposedly, a single slothful soul of sufficient depravity and strength can spawn an entire horde of these creatures. However, as weaker demons, their lot in life is to suffer at the hands of more powerful Abyssal predators, and only a tiny number of dretches ever manage to become something more. For this reason, dretches are quite accommodating when summoned by mortals. They're usually content to work under conditions few other outsiders would accept, although they'll still gladly turn on even the kindest of masters who show even the slightest hint of weakness.</p>\n<hr />\n<p>Mortal souls that have been twisted and corrupted by sin sometimes arise in the afterlife as demons. These powerful and destructive fiends seek to spread their particular sin to warp more souls, thereby bolstering their numbers and continuing the cycle.</p>",
+            "name": "Dretch"
         },
         "Monkey": {
             "items": {
                 "Grab and Go": {
-                    "name": "Grab and Go"
+                    "name": "Grab and Go",
+                    "description": "<p>The monkey Strides or Climbs up to its Speed. At any point during this movement, it can Interact to take a single unattended item of light Bulk or less that it can see from a square it moves through or is adjacent to. Alternatively, if not in combat, during this movement it can attempt to @UUID[Compendium.pf2e.actionspf2e.RDXXE7wMrSPCLv5k]{Steal} from an adjacent creature.</p>"
                 },
                 "Jaws": {
                     "name": "Jaws"
                 }
             },
-            "name": "Monkey"
+            "name": "Monkey",
+            "description": "<p>When these small, curious primates come in contact with large humanoid populations, they quickly adapt, learning to steal food or small objects before retreating to the nearest tree branch with their prize.</p>\n<hr />\n<p>Monkeys vary greatly in size, color, and behavior. Some are distinguished by bright orange fur, others for black fur in sharp contrast with a white face. Some produce distinct noises, like howls that can be heard from a village away. Others vie for dominance within ever-changing social hierarchies. Their size and aptitude for climbing allow them to quickly escape threats; combined with being a little too clever for their own good, this allows them to get up to all sorts of mischief and usually escape to do it again.</p>"
         },
         "Omox": {
             "name": "Omox",
@@ -236,7 +257,8 @@
                     "name": "Dimension Door (At Will)"
                 },
                 "Liquid Leap": {
-                    "description": "<p><strong>Requirements</strong> The omox is in a space of liquid.</p>\n<hr />\n<p><strong>Effect</strong> The omox teleports from its current space to any unoccupied space of liquid within 120 feet.</p>"
+                    "description": "<p><strong>Requirements</strong> The omox is in a space of liquid.</p>\n<hr />\n<p><strong>Effect</strong> The omox teleports from its current space to any unoccupied space of liquid within 120 feet.</p>",
+                    "name": "Liquid Leap"
                 },
                 "Smother": {
                     "description": "<p><strong>Requirements</strong> The omox has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Effect</strong> The demon flows over the grabbed creature, covering it in oozing acidic slime. The creature must succeed at a @Check[type:fortitude|dc:32] save or else it becomes @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} and must hold its breath or begin suffocating. These effects lasts as long as the omox has the creature grabbed.</p>",
@@ -266,7 +288,8 @@
                     "name": "Slime Trap",
                     "description": "<p>A creature hit by an omox's slime ball must attempt a @Check[type:reflex|dc:32] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes a -10-foot circumstance penalty to its Speeds for 1 minute or until it @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escapes} (DC 35).</p>\n<p><strong>Critical Failure</strong> As failure, but the target is also @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} for the same duration.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.XSAmMuMgMvdjdpHc]{Effect: Slime Trap}</p>"
                 }
-            }
+            },
+            "description": "<p>Seemingly made from living, animated filth, omoxes have no true anatomy, although they generally spend most of their time in roughly humanoid shapes, resembling some grim caricatures of half-melted humanoids. While scholars once believed these foul demons to be a pure, concentrated form of the corruption that suffuses the Abyss and its inhabitants, in truth these demons arise from the souls of those who routinely befouled and polluted their surroundings in life.</p>\n<hr />\n<p>Mortal souls that have been twisted and corrupted by sin sometimes arise in the afterlife as demons. These powerful and destructive fiends seek to spread their particular sin to warp more souls, hereby bolstering their numbers and continuing the cycle.</p>"
         },
         "Ximtal": {
             "items": {
@@ -336,7 +359,8 @@
         "Quintessivore": {
             "items": {
                 "Suspend Soul": {
-                    "description": "<p>The quintessivore suspends the life processes of a dying creature within 15 feet of it. The creature can't decrease or increase its HP or dying value for 10 minutes. The creature can attempt a @Check[type:will|dc:29] save to avoid this effect. If the creature receives magical healing, it can attempt a new save, ending the effect and being healed normally on a success.</p>\n<p>The effect ends if the quintessivore uses Suspend Soul again.</p>"
+                    "description": "<p>The quintessivore suspends the life processes of a dying creature within 15 feet of it. The creature can't decrease or increase its HP or dying value for 10 minutes. The creature can attempt a @Check[type:will|dc:29] save to avoid this effect. If the creature receives magical healing, it can attempt a new save, ending the effect and being healed normally on a success.</p>\n<p>The effect ends if the quintessivore uses Suspend Soul again.</p>",
+                    "name": "Suspend Soul"
                 },
                 "Tattered Soul": {
                     "description": "<p>A creature hit by the quintessivore's blade-leg Strike must succeed at a @Check[type:fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). If the creature is already drained, it's immune to this effect.</p>",
@@ -351,12 +375,38 @@
                 "Instant Suspension": {
                     "name": "Instant Suspension",
                     "description": "<p><strong>Trigger</strong> The quintessivore reduces a creature within 15 feet of it to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The quintessivore uses Suspend Soul, targeting the creature.</p>"
+                },
+                "Feed on Quintessence": {
+                    "description": "<p>Over the course of 1 hour, the quintessivore removes and deconstructs the soul of a creature. The creature must either be captive or have been dead for no more than 2 hours before the start of the process. At the end of the hour, the quintessivore consumes the quintessence of the creature's soul.</p>\n<p>For the next month, it gains a +1 status bonus to its spell DC and spell attack roll, and it adds 6th-level <em>@UUID[Compendium.pf2e.spells-srd.5BbU1V6wGSGbrmRD]{Feeblemind}</em> and <em>@UUID[Compendium.pf2e.spells-srd.fd31tAHSSGXyOxW6]{Vampiric Exsanguination}</em> to its arcane prepared spells.</p>\n<p>Deconstructing a soul maps the unique properties of the creature's soul into the quintessivore's blade-legs. The soul can be reconstructed by binding it to quintessence. A dead quintessivore's soul flees its body as pure quintessence suitable for this purpose.</p>",
+                    "name": "Feed on Quintessence"
                 }
             },
             "description": "<p>Quintessivores are cunning creatures that wield arcane magic and scalpel-sharp spider limbs that can rend one's soul just as easily as flesh. A quintessivore doesn't immediately kill its prey-it drags the creature to its lair and separates the victim's soul from their body with its bladed limbs. The flicking blades then pull out the creature's individuality, reducing the soul down to pure soul-stuff called quintessence, which the quintessivore then consumes.</p>"
         },
         "Skull Peeler": {
-            "name": "Skull Peeler"
+            "name": "Skull Peeler",
+            "items": {
+                "Snatch Skull": {
+                    "description": "<p><strong>Trigger</strong> The skull peeler is using Perfect Camouflage and a creature moves into a space within 15 feet of it</p>\n<hr />\n<p><strong>Effect</strong> The skull peeler Leaps toward the triggering creature and Strikes with its tongue. If this Strike is successful, the skull peeler automatically @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Grabs} the target with its tongue.</p>",
+                    "name": "Snatch Skull"
+                },
+                "Perfect Camouflage": {
+                    "description": "<p><strong>Requirements</strong> The skull peeler is in a treetop or standing on a tree limb</p>\n<hr />\n<p><strong>Effect</strong> Until the next time it acts, the skull peeler hangs perfectly still, blending into the treetop surroundings. It has an automatic result of 36 on Stealth checks and DCs to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide} from any creature more than 10 feet away from it.</p>",
+                    "name": "Perfect Camouflage"
+                },
+                "Tongue": {
+                    "name": "Tongue",
+                    "description": "<p>@Localize[PF2E.PersistentDamage.Bleed1d8.success]</p>"
+                },
+                "Claw": {
+                    "name": "Claw"
+                },
+                "Anticoagulant": {
+                    "name": "Anticoagulant",
+                    "description": "<p>The skull peeler's razor-sharp tongue is coated in an anticoagulant substance that makes wounds it inflicts particularly hard to close.</p>\n<p>The DC of the flat check to end the persistent bleed damage from a skull peeler's tongue is @Check[type:flat|dc:16], or @Check[type:flat|dc:11] with appropriate assistance.</p>"
+                }
+            },
+            "description": "<p>Skull peelers, despite their ferocious and well-deserved moniker, are considered by many to be downright adorable, especially when viewed from a safe distance. Their soft, dappled brown fur helps them hide in forest canopies, and they have shimmering insectile wings and big eyes that draw in the faintest beams of light. At first glance, a skull peeler looks like a cuddly pet or a wizard's familiar. Any illusions of domesticating such a beast are quickly dismissed upon seeing how a skull peeler eats, however.</p>\n<p>Skull peelers have evolved to hang motionlessly in treetop canopies as they wait until appropriate prey appears, usually long-necked dinosaurs but also brachiating primates and large birds. The skull peeler then lashes out with its long tongue, severing the creature's head from its body and pulling the detached cranium back into its hungry paws. It then uses its claws to crack open the cranial cavity-hence its name-before lapping up the tasty insides.</p>\n<p>Despite skull peelers' gruesome eating habits, some enterprises and individuals can't resist the urge to add these beasts to their menageries. Fey and other creatures with ties to the First World, such as gnomes, can occasionally coax a skull peeler into a form of domestication. While the adorable beasts can never be fully tamed due to their hyper-evolved hunting instincts, they can be bribed with food and, if kept satiated, displayed on a perch or indoor terrarium as an example of their master's cunning and deadliness. As often as not, these pseudo-domesticated skull peelers end up devouring a guest, pet, or their would-be owner, but this possibility doesn't stop up-and-coming crime lords from attempting to domesticate the little predators. Skull peelers kept in well-managed zoos fare somewhat better, but these clever creatures don't always stay in their cages, which has led to wild skull peelers in places travelers might not expect.</p>"
         },
         "Brainchild": {
             "description": "<p>A rumor can become so vivid and so persistent that it comes to life, creating a brainchild-a living illusion that hatches from an intense belief in a remorseless and implacable killer. Often, these rumors swirl around the victims of a <em>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em> spell. A brainchild's capabilities grow when they pursue a believer but deflate against skeptics, making them only as bad as one thinks they are. A simple drive to stalk, terrify, and kill propels a brainchild, but the creature might also exhibit other behaviors ascribed to them through gossip.</p>",
@@ -376,7 +426,11 @@
                     "description": "<p>Anything spoken by the brainchild is perceived by the listener in its native language.</p>"
                 },
                 "Persistence of Memory": {
-                    "name": "Persistence of Memory"
+                    "name": "Persistence of Memory",
+                    "description": "<p>When a brainchild is destroyed, it returns if anyone still fully believes it exists, re-forming within 100 feet of any believer after [[/br 2d4 #Persistance of Memory]]{2d4 days}.</p>"
+                },
+                "Phantasmal Killer (Image Resembles the Brainchild)": {
+                    "name": "Phantasmal Killer (Image Resembles the Brainchild)"
                 }
             },
             "name": "Brainchild"
@@ -399,7 +453,8 @@
                     "name": "Powerful Leaper",
                     "description": "<p>The kangaroo doesn't need to Stride while attempting a @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump}, nor does it automatically fail if it doesn't.</p>"
                 }
-            }
+            },
+            "name": "Kangaroo"
         },
         "Wizard Sponge (Underwater)": {
             "items": {
@@ -417,9 +472,14 @@
                 "Weak Acid": {
                     "name": "Weak Acid",
                     "description": "<p>Wizard sponge acid damages only organic material—not metal, stone, or other inorganic substances.</p>"
+                },
+                "Fire Healing": {
+                    "name": "Fire Healing",
+                    "description": "<p>Anytime a wizard sponge would take fire damage, it instead regains [[/r 1d8[healing]]]{1d8 Hit Points} (regardless of the amount of damage the fire effect would have caused).</p>"
                 }
             },
-            "name": "Wizard Sponge (Underwater)"
+            "name": "Wizard Sponge (Underwater)",
+            "description": "<p>This strange type of fungus colony takes its name from its initial purpose: the wizard who first developed it sought a means to keep her tower clean from residue both mundane and magical. Wizard sponge does just that, dutifully cleaning its vicinity by devouring dust, organic debris, and even the decaying bodies of fallen creatures. Its designer intentionally crafted the fungus to not merely resist but be healed by fire, intended as an additional safety feature, and most varieties have a convenient side effect of being edible once slain. Unfortunately, the fungus also developed an unexpected ability to magically mutate over time, which eventually led to its escape and independent propagation.</p>\n<p>Wizard sponge colonies of various sizes and shapes now thrive in dungeons, caverns, sewers, abandoned castles, crypts, and even the basements of some occupied dwellings. They often carry along bits of partially consumed material with them, such as clothing, limbs, and adventuring gear-sometimes even valuable treasures! An individual colony typically takes on distinctive properties based on what it's consumed in its environment; a variety living in a necromancer's crypt might acquire the undead's affinity for negative energy, for example.</p>"
         },
         "Feathered Bear": {
             "items": {
@@ -525,7 +585,8 @@
                     "name": "Swarming Bites",
                     "description": "<p>Each creature in the swarm's space takes [[/r 1d8[piercing]]] damage (@Check[type:reflex|dc:18|basic:true] save).</p>"
                 }
-            }
+            },
+            "description": "<p>A single monkey can cause mischief. A troop of monkeys, emboldened by their numbers, can cause utter chaos, attacking anyone and looting anything in sight before scattering away with whatever they can carry.</p>\n<hr />\n<p>Monkeys vary greatly in size, color, and behavior. Some are distinguished by bright orange fur, others for black fur in sharp contrast with a white face. Some produce distinct noises, like howls that can be heard from a village away. Others vie for dominance within ever-changing social hierarchies. Their size and aptitude for climbing allow them to quickly escape threats; combined with being a little too clever for their own good, this allows them to get up to all sorts of mischief and usually escape to do it again.</p>"
         },
         "Draconal (Black)": {
             "name": "Draconal (Black)",
@@ -624,6 +685,17 @@
                 },
                 "Scent (Imprecise) 30 feet": {
                     "name": "Scent (Imprecise) 30 feet"
+                },
+                "Forest Stride": {
+                    "description": "<p>The sasquatch ignores difficult terrain in forests.</p>"
+                },
+                "Pungent": {
+                    "name": "Pungent",
+                    "description": "<p>The sasquatch's odor is quite powerful and can be detected at twice the normal distance by scent.</p>"
+                },
+                "Threatening Visage": {
+                    "name": "Threatening Visage",
+                    "description": "<p>The sasquatch doesn't take a penalty to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} a creature that doesn't understand their language.</p>"
                 }
             },
             "name": "Sasquatch",
@@ -645,10 +717,12 @@
                     "name": "Speak with Animals (Constant)"
                 },
                 "Breath Weapon": {
-                    "name": "Breath Weapon"
+                    "name": "Breath Weapon",
+                    "description": "<p>The draconal breathes a blast of energy that deals [[/r 21d6[cold]]] damage to creatures they choose to damage in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:44|basic:true] save).</p>\n<p>They can make this effect nonlethal for selected creatures in the area or choose not to damage certain creatures at all.</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
                 },
                 "Dragon's Wisdom": {
-                    "name": "Dragon's Wisdom"
+                    "name": "Dragon's Wisdom",
+                    "description": "<p>Draconals embody the core value of wisdom, but every path to wisdom and enlightenment differs, so draconals' powers vary by temperament and coloration. A draconal's scale color determines their associated energy damage type.</p>\n<p>They gain resistance 15 to that damage type, deal 4d6 extra damage of that type with their Strikes, and deal 21d6 damage of that type with their breath weapon. They gain additional wisdom in the form of the basic and advanced domain spells from one domain, chosen from four domains available to draconals with their scale color.</p>\n<hr />\n<p><em>Note: Choose the domain powers from the available domains according to the Draconal's scale color and add them to the \"Champion Focus Spell\" spellcasting entry.</em></p>\n<ul>\n<li><em><strong>All colors</strong> @UUID[Compendium.pf2e.domains.Ze2hoTyOQHbaQ6jD]{Air Domain} @UUID[Compendium.pf2e.domains.1BU8deh48XZFclWl]{Healing Domain}</em></li>\n<li><em><strong>Green</strong> @UUID[Compendium.pf2e.domains.xYx8UD0JnFyBHGhJ]{Nature Domain} @UUID[Compendium.pf2e.domains.PrFvU65ewfst69Mp]{Water Domain}</em></li>\n</ul>"
                 },
                 "Circle of Protection (Constant)": {
                     "name": "Circle of Protection (Constant)"
@@ -662,7 +736,9 @@
                 "Regeneration 20 (Deactivated by Evil)": {
                     "name": "Regeneration 20 (Deactivated by Evil)"
                 }
-            }
+            },
+            "description": "<p>These celestial outsiders hail from Nirvana, the plane of purest good. Agathions are born from the souls of mortals who attained the enlightenment they sought in life, sometimes even after death. Because they all start out as mortals who were rewarded for their determination, self-awareness, and purity of heart, agathions are more likely than other celestials to intervene in working nonviolently against the spread of evil on the material plane. Agathions have served as moderators between the chaotic azatas and lawful archons, so they know how vital communication with mortals can be to bridge differences and ensure that evil doesn't win out.</p>\n<p>All agathions possess animal-like aspects, some appear more anthropomorphic, while others spend most of their time in forms nearly indistinguishable from true animals. Still others prefer to shapeshift as they see fit, or present as humanoid when in the company of humanoid mortals.</p>\n<p>Each type of agathion serves a specific role in Nirvana. Their duties and forms generally reflect the core values they cultivated in life that led them to their enlightenment. Since agathions receive their animal forms as rewards for their mortal lives, they take great insult with insinuations that they're merely magical talking beasts or-even worse-that their forms are a curse or punishment.</p>\n<hr />\n<p>Dragon agathions, known as draconals, number among the most powerful of their kin, and also the wisest, embodying the wisdom of the benevolent philosopher-king. With their wisdom comes an elevation above material matters, making them the most removed from the troubles and lives of mortals. Draconals serve as the guardians of powerful magic, and they dispense their wisdom in service of the greater good of Nirvana and the celestial planes.</p>\n<p>Draconals appear more draconic than humanoid. They walk on their hind legs and balance on their long, serpent like tails. Sharp claws tip their scaled humanoid hands.</p>\n<p>Similar to true dragons, a draconal's coloration signifies different breath weapons, traits, and resistances. Draconals also choose spells from one of four domains. All have the options of the air and healing domains, but their color determines the other two. Black draconals breathe and are resistant to fire, and their additional domain options are fire and luck. Red draconals have the same fire breath and resistance, but their additional domain options are protection and sun. Green and white draconals breathe and are resistant to cold, but green draconals have the options of nature and water domains while white draconals have the options of freedom and repose. Yellow draconals breathe and are resistant to acid, and their additional domain options are earth and luck.</p>",
+            "name": "Draconal (Green)"
         },
         "Nosferatu Thrall": {
             "items": {
@@ -683,7 +759,8 @@
                     "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The nosferatu thrall's last action was a greatclub Strike that missed</p>\n<hr />\n<p><strong>Effect</strong> The nosferatu thrall makes another greatclub Strike against the same target, using the previous Strike's multiple attack penalty.</p>"
                 }
             },
-            "name": "Nosferatu Thrall"
+            "name": "Nosferatu Thrall",
+            "description": "<p>Nosferatu thralls are mortals bound to a nosferatu's will. While thralls aren't undead, they stay alive through unnatural means: feeding on the blood of their masters.</p>\n<hr />\n<p>Among the most ancient of vampires are the nosferatus, twisted remnants of mortals who died in great plagues of old. Perhaps because of their age, nosferatus can no longer create more of their kind. Yet they still lurk among the living, manipulating the hearts and minds of their prey to either serve them beyond the limits of natural life or to become sustenance for the nosferatu like so many others before.</p>"
         },
         "Ancient Sovereign Dragon (Spellcaster)": {
             "items": {
@@ -733,7 +810,8 @@
         "Living Rune (Divine)": {
             "items": {
                 "Backdrop": {
-                    "name": "Backdrop"
+                    "name": "Backdrop",
+                    "description": "<p>When a creature attempts to Strike a living rune and critically misses, the attacker hits the surface (a canvas, wall, or so on) behind the living rune. This might damage the surface or the attacker's weapon, at the GM's discretion.</p>"
                 },
                 "Glyph of Warding (At Will)": {
                     "name": "Glyph of Warding (At Will)"
@@ -742,18 +820,22 @@
                     "name": "Electrical Blast"
                 },
                 "Surface-Bound": {
-                    "description": "<p>A living rune can move only along flat surfaces. If the surface it's on is destroyed (such as a portrait hit by a <em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{Fireball}</em> spell or a wall being smashed), the rune takes [[/r {7d6}]]{7d6 damage} and is shunted to the nearest flat surface. If there is no flat surface within 5 feet, the rune is destroyed.</p>"
+                    "description": "<p>A living rune can move only along flat surfaces. If the surface it's on is destroyed (such as a portrait hit by a <em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{Fireball}</em> spell or a wall being smashed), the rune takes [[/r {7d6}]]{7d6 damage} and is shunted to the nearest flat surface. If there is no flat surface within 5 feet, the rune is destroyed.</p>",
+                    "name": "Surface-Bound"
                 },
                 "Truescript": {
-                    "name": "Truescript"
+                    "name": "Truescript",
+                    "description": "<p>A living rune can't speak, but it can sculpt its form into complicated scripts and pictographs that can be understood by any creature with the ability to read written language. A living rune can also understand any written or spoken language.</p>"
                 }
             },
-            "description": "<p>The most famous living runes are those of the ancient Runelords of Thassilon, resurging as Thassilon rebuilds in the modern era. Other living runes can be found, however, each with its own particular abilities. Living runes can also be crafted to deal different types of energy damage with their Strikes.</p>\n<p>Divine living runes are crafted by various churches and sects and typically bear the symbol of a deity, archdevil, or other divine force.</p>\n<hr />\n<p>Magic is a complex thing to begin with, and at a certain level of sophistication, the differences between a spell and an autonomous creature become increasingly blurry. Living symbols are constructed creatures of reified and reinforced magic, held together by glyphs, runes, and eldritch formulae.</p>"
+            "description": "<p>The most famous living runes are those of the ancient Runelords of Thassilon, resurging as Thassilon rebuilds in the modern era. Other living runes can be found, however, each with its own particular abilities. Living runes can also be crafted to deal different types of energy damage with their Strikes.</p>\n<p>Divine living runes are crafted by various churches and sects and typically bear the symbol of a deity, archdevil, or other divine force.</p>\n<hr />\n<p>Magic is a complex thing to begin with, and at a certain level of sophistication, the differences between a spell and an autonomous creature become increasingly blurry. Living symbols are constructed creatures of reified and reinforced magic, held together by glyphs, runes, and eldritch formulae.</p>",
+            "name": "Living Rune (Divine)"
         },
         "Adult Sea Dragon": {
             "items": {
                 "Fed by Metal": {
-                    "name": "Fed by Metal"
+                    "name": "Fed by Metal",
+                    "description": "<p>When a sea dragon is struck by a weapon made primarily of metal or affected by a spell that uses metal, many of the dragon's scales transform to mimic the metal. This grants the dragon a +1 item bonus to AC until the start of their next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.OMJnZspk5YHai8yn]{Effect: Fed by Metal}</p>"
                 },
                 "Endure Elements (Self Only)": {
                     "name": "Endure Elements (Self Only)"
@@ -777,7 +859,8 @@
                     "name": "Wavesense (Imprecise) 60 feet"
                 },
                 "Countered by Earth": {
-                    "name": "Countered by Earth"
+                    "name": "Countered by Earth",
+                    "description": "<p>If the sea dragon is targeted with an earth spell or <em>@UUID[Compendium.pf2e.spells-srd.znv4ECL7ZtuiagtA]{Flesh to Stone}</em>, they lose Liquefy until the end of their next turn.</p>"
                 },
                 "Frightful Presence": {
                     "description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
@@ -808,6 +891,9 @@
                 },
                 "Greater Constrict": {
                     "description": "<p>[[/r (3d8+6)[bludgeoning]]], @Check[type:fortitude|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                },
+                "Control Weather (No Secondary Caster Required)": {
+                    "name": "Control Weather (No Secondary Caster Required)"
                 }
             },
             "name": "Adult Sea Dragon",
@@ -5677,13 +5763,16 @@
                     "name": "Sunset Ray"
                 },
                 "Tied to the Land": {
-                    "name": "Tied to the Land"
+                    "name": "Tied to the Land",
+                    "description": "<p>A hesperid queen is intrinsically tied to a isolated region, usually an island or island chain, a remote coast, or secluded valley. As long as the queen is healthy, the environment is exceptionally resilient, allowing the hesperid queen to automatically attempt to counteract spells and rituals such as <em>@UUID[Compendium.pf2e.spells-srd.7yWXx3qC4eFNHhxD]{Blight}</em> that would harm the environment, with a [[/r 1d20+37 #Counteract]]{+37} counteract modifier and a counteract level of 10.</p>\n<p>When the hesperid queen becomes physically or psychologically unhealthy, however, her warded region eventually becomes twisted or unhealthy as well. In that case, restoring the hesperid queen swiftly heals the entire region.</p>"
                 },
                 "Change Shape": {
-                    "name": "Change Shape"
+                    "name": "Change Shape",
+                    "description": "<p>Hesperid queens can transform between their original form, which looks much like a typical nymph of their kind, and any Small or Medium humanoid form, typically choosing a version of their natural form that more closely resembles a humanoid.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Create Golden Apple": {
-                    "name": "Create Golden Apple"
+                    "name": "Create Golden Apple",
+                    "description": "<p>While the hesperid queen is within their bonded location, they can spin golden light around an object they're holding of up to 20 cubic feet in volume and up to 80 Bulk. Doing so condenses the object into a magic apple made of golden light with light Bulk.</p>\n<p>The golden apple reverts back to its original shape after a full day away from the hesperid's bonded location, or when the hesperid queen spends a single action (which has the concentrate trait) to end the effect.</p>"
                 },
                 "Focus Beauty": {
                     "name": "Focus Beauty"
@@ -5692,7 +5781,8 @@
                     "name": "Inspiration"
                 }
             },
-            "name": "Hesperid Queen"
+            "name": "Hesperid Queen",
+            "description": "<p>Hesperid queens rule over isolated regions soaked in the light of sunset. They guard countless treasures and secrets, though for those who approach them with respect and offer an intriguing bargain, they're willing to part with knowledge or items beyond those secrets or valuables they've sworn to keep to themselves.</p>\n<p>Hesperid queens are relatively likely to have powerful objects under their protection, such as ancient relics or artifacts. As such, they're keenly aware of the danger posed by unscrupulous treasure hunters seeking to obtain these items at any cost, and they use their incredible minds to set up devious countermeasures to protect their wards, even in the event of their own deaths.</p>\n<hr />\n<p>Nymphs are fey guardians of nature possessed of great beauty and forms that meld breathtaking humanoid features with the natural elements they guard. Nymph queens are powerful nymphs who rule over and protect a much greater territory of untouched wilderness. For instance, a lampad might guard a beautiful underground cavern, but a lampad queen might call an entire system of caves their domain.</p>"
         },
         "Abandoned Zealot": {
             "name": "Abandoned Zealot",
@@ -7854,20 +7944,42 @@
                     "description": "<p>The jorogumo takes on the appearance of any Small or Medium spider. This doesn't change their Speed or Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Spider Legs": {
-                    "name": "Spider Legs"
+                    "name": "Spider Legs",
+                    "description": "<p><strong>Requirements</strong> The jorogumo is in humanoid form</p>\n<hr />\n<p><strong>Effect</strong> Eight large spider legs sprout from the jorogumo's back, granting them a 40-foot climb Speed and allowing them to use the Darting Legs reaction.</p>"
                 },
                 "Speak with Animals (Constant) (Spiders Only)": {
                     "name": "Speak with Animals (Constant) (Spiders Only)"
                 },
                 "Jorogumo Venom": {
-                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:32]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 4d6[poison]]] damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for [[/br 1d4 #Duration Paralyzed]]{1d4 hours}</p>"
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:32]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 4d6[poison]]] damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for [[/br 1d4 #Duration Paralyzed]]{1d4 hours}</p>",
+                    "name": "Jorogumo Venom"
                 },
                 "Web Trap": {
                     "name": "Web Trap",
                     "description": "<p>A creature hit by the jorogumo's web attack is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface, preventing the creature from moving.</p>\n<p>The DC to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} or @UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{Force Open} the web trap is 32.</p>"
+                },
+                "Summon Animal (Spiders Only)": {
+                    "name": "Summon Animal (Spiders Only)"
+                },
+                "Claw": {
+                    "name": "Claw"
+                },
+                "Web": {
+                    "name": "Web"
+                },
+                "Darting Legs": {
+                    "name": "Darting Legs",
+                    "description": "<p><strong>Requirements</strong> The jorogumo has their spider legs extended or has Changed Shape</p>\n<p><strong>Trigger</strong> The jorogumo is targeted with an attack</p>\n<hr />\n<p><strong>Effect</strong> The jorogumo raises a leg, gaining a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "Tongues (Constant)": {
+                    "name": "Tongues (Constant)"
+                },
+                "Mind Reading (At Will)": {
+                    "name": "Mind Reading (At Will)"
                 }
             },
-            "description": "<p>Appearing as beautiful, well-dressed humans, jorogumo lurk in the high mountains and prey on travelers. These evil creatures can fully change into a giant spider or sprout spider legs from their backs, and they often keep giant spiders as pets. Jorogumo usually eat their prey, but some humanoids meet an even more gruesome fate as living incubators for jorogumo eggs. Though most jorogumos are solitary creatures, some have taken up worship of Norgorber and serve as valuable allies to thieves' guilds following that god's guise as the Gray Master.</p>"
+            "description": "<p>Appearing as beautiful, well-dressed humans, jorogumo lurk in the high mountains and prey on travelers. These evil creatures can fully change into a giant spider or sprout spider legs from their backs, and they often keep giant spiders as pets. Jorogumo usually eat their prey, but some humanoids meet an even more gruesome fate as living incubators for jorogumo eggs. Though most jorogumos are solitary creatures, some have taken up worship of Norgorber and serve as valuable allies to thieves' guilds following that god's guise as the Gray Master.</p>",
+            "name": "Jorogumo"
         },
         "Trilobite Swarm": {
             "items": {
@@ -7886,7 +7998,8 @@
             "name": "Rokurokubi",
             "items": {
                 "Jaws": {
-                    "name": "Jaws"
+                    "name": "Jaws",
+                    "description": "<p>@Localize[PF2E.PersistentDamage.Bleed1d6.success]</p>"
                 },
                 "Extend Neck": {
                     "description": "<p>The rokurokubi extends their neck, increasing the reach of their jaws Strike from 10 feet to 20 feet until the end of their next turn.</p>",
@@ -7906,7 +8019,8 @@
                     "name": "Drink Oil",
                     "description": "<p><strong>Trigger</strong> The rokurokubi is the target of an alchemical bomb Strike</p>\n<p><strong>Requirements</strong> The rokurokubi is aware of the attack, not @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against it, and doesn't have a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} with their jaws</p>\n<hr />\n<p><strong>Effect</strong> The rokurokubi attempts to catch the flung bomb in their mouth. They gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses, they catch the bomb in their mouth and harmlessly drink its contents down, regaining Hit Points equal to the bomb's item level.</p>"
                 }
-            }
+            },
+            "description": "<p>Rokurokubi come into being when mortals are cursed for some misdeed, though often the one who bears the curse is not the one who committed the offense, but instead their child or spouse. The curse slowly transforms the individual into a rokurokubi as they sleep. At first, their neck extends, or even detaches altogether, to let their head roam freely and engage in simple mischief like scaring neighbors or animals. The sleeper may awaken the next morning from a hazy dream of drinking the oil from nearby lanterns, only to find them indeed empty.</p>\n<p>Over time, the bizarre acts progress to increasingly mischievous or even violent crimes. There's only a brief period during which the nascent rokurokubi might still be saved by dispelling the curse, but before long, they are fully consumed, never to sleep again.</p>\n<p>Most rokurokubi despair at their state, seeking to drown their sorrows in drink or simply stay out of sight. A nefarious few rokurokubi embrace their fate and seek to enhance their power by completely giving in to the curse. This grants them the ability to cast potent occult spells but inevitably twists them even more toward evil.</p>"
         },
         "Fortune Eater": {
             "name": "Fortune Eater",
@@ -7919,7 +8033,8 @@
                     "description": "<p>The Fortune Eater speaks languages spoken by the adventurers (typically Common, Dwarven, Elven, and Goblin).</p>"
                 },
                 "Rejuvenation": {
-                    "name": "Rejuvenation"
+                    "name": "Rejuvenation",
+                    "description": "<p>Offering the fortune eater a chance to be instrumental in completing a heroic deed releases their component spirits to move on to the afterlife.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
                 },
                 "Team Attack": {
                     "name": "Team Attack",
@@ -7932,8 +8047,15 @@
                 "Unluck Aura": {
                     "name": "Unluck Aura",
                     "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature entering the area must attempt a @Check[type:will|dc:23] save, rolling the save twice and using the worse result. On a successful save, the creature is temporarily immune to fortune eater unluck auras for 24 hours. On a failure, the creature must roll twice and use the worse result on all checks as long as it is within the aura.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.yxgHWK2rTZKKAzDN]{Effect: Unluck Aura}</p>"
+                },
+                "Ghostly Longsword": {
+                    "name": "Ghostly Longsword"
+                },
+                "Ghostly Light Mace": {
+                    "name": "Ghostly Light Mace"
                 }
-            }
+            },
+            "description": "<p>The fickle finger of fate has quashed hundreds of fledgling adventurers, sometimes in a particularly memorable or ignominious manner. When a number of would-be heroes perish together in such a way, their restless spirits might arise-spurred by jealousy-to become a fortune eater. A fortune eater is a collective entity that might lurk near fortune tellers, taverns, or Pathfinder Society lodges where adventurers are likely to pass through. The spirit then follows the heroes on their quests until the right moment, when the spirit manifests their unfortunate abilities to get the party killed and potentially add them to the collective. Sometimes they linger near the lairs of a powerful monster, waiting for parties of unwary adventurers.</p>\n<p>A fortune eater lingers because of unfinished business: to move on, they must help a hero defeat a great threat or acquire a legendary item. Ironically, their jealousy, rage, and powers of bad luck make this extremely unlikely.</p>"
         },
         "Green Man": {
             "items": {
@@ -7941,13 +8063,16 @@
                     "name": "Vine"
                 },
                 "Green Tongue": {
-                    "name": "Green Tongue"
+                    "name": "Green Tongue",
+                    "description": "<p>A green man can communicate with plants, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.qvwIwJ9QBihy8R0t]{Speak with Plants}</em>, and can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Make an Impression} on plants and @UUID[Compendium.pf2e.actionspf2e.DCb62iCBrJXy0Ik6]{Request} things from plants.</p>"
                 },
                 "Plantsense 60 feet": {
-                    "name": "Plantsense 60 feet"
+                    "name": "Plantsense 60 feet",
+                    "description": "<p>A green man can sense life force via plants. This allows them to observe a living or undead creature's vital essence within 60 feet of the green man, but they can also use this precise sense to observe any living or undead creature within 60 feet of any plant matter within 120 feet of the green man. This allows the green man to see living things through solid plant matter, as well as seeing through other barriers if there are plants on the other side.</p>"
                 },
                 "Axe Vulnerability": {
-                    "name": "Axe Vulnerability"
+                    "name": "Axe Vulnerability",
+                    "description": "<p>A green man takes 20 additional damage from axes.</p>"
                 },
                 "Root In Place": {
                     "name": "Root In Place",
@@ -7974,7 +8099,8 @@
                     "name": "Embed"
                 },
                 "Green Caress": {
-                    "description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Living creatures in the area other than plants slowly transform into non-creature plants. The green man can exclude creatures from this effect, but they must be aware of a creature's presence and location to do so. A non-plant creature in the area must attempt a @Check[type:fortitude|dc:45] save immediately before the start of its turn.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, or if it is slowed by green caress, it reduces its slowed value by 2.</p>\n<p><strong>Success</strong> The creature is unaffected, or if it is slowed by green caress, it reduces its slowed value by 1.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}, or if it was already slowed by green caress, increases the slowed value by 1, as their body transforms more and more into a non-creature plant. If the creature ever becomes slowed to the point they have no actions left for their turn, they become an inanimate plant, a condition that can only be reversed by <em>@UUID[Compendium.pf2e.spells-srd.MLNeD5sAunV0E23j]{Primal Phenomenon}</em> or similarly powerful magic.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} (or increases the condition value by 2).</p>"
+                    "description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Living creatures in the area other than plants slowly transform into non-creature plants. The green man can exclude creatures from this effect, but they must be aware of a creature's presence and location to do so. A non-plant creature in the area must attempt a @Check[type:fortitude|dc:45] save immediately before the start of its turn.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, or if it is slowed by green caress, it reduces its slowed value by 2.</p>\n<p><strong>Success</strong> The creature is unaffected, or if it is slowed by green caress, it reduces its slowed value by 1.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}, or if it was already slowed by green caress, increases the slowed value by 1, as their body transforms more and more into a non-creature plant. If the creature ever becomes slowed to the point they have no actions left for their turn, they become an inanimate plant, a condition that can only be reversed by <em>@UUID[Compendium.pf2e.spells-srd.MLNeD5sAunV0E23j]{Primal Phenomenon}</em> or similarly powerful magic.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} (or increases the condition value by 2).</p>",
+                    "name": "Green Caress"
                 },
                 "Tree Stride (At Will)": {
                     "name": "Tree Stride (At Will)"
@@ -7982,6 +8108,9 @@
                 "Absorb Magic": {
                     "name": "Absorb Magic",
                     "description": "<p>The green man's vines leach away magic and transform it into life essence for the green man. On a successful vine Strike, the green man attempts to counteract one spell active on the target (typically one vexing the green man, or determined randomly if they aren't aware of specific effects), with a counteract level of 10 and a modifier of [[/r 1d20+38 #Counteract]]{+38}.</p>\n<p>If the effect is counteracted, the green man gains [[/r 30 #Temporary Hit Points]]{30 temporary Hit Points} that last for 10 minutes.</p>"
+                },
+                "Thorn": {
+                    "name": "Thorn"
                 }
             },
             "name": "Green Man",
@@ -8499,11 +8628,22 @@
                     "name": "Glyph of Warding (At Will)"
                 },
                 "Backdrop": {
-                    "description": "<p>When a creature attempts to Strike a living rune and critically misses, the attacker hits the surface (a canvas, wall, or so on) behind the living rune. This might damage the surface or the attacker's weapon, at the GM's discretion.</p>"
+                    "description": "<p>When a creature attempts to Strike a living rune and critically misses, the attacker hits the surface (a canvas, wall, or so on) behind the living rune. This might damage the surface or the attacker's weapon, at the GM's discretion.</p>",
+                    "name": "Backdrop"
                 },
                 "Surface-Bound": {
                     "name": "Surface-Bound",
                     "description": "<p>A living rune can move only along flat surfaces. If the surface it's on is destroyed (such as a portrait hit by a <em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{Fireball}</em> spell or a wall being smashed), the rune takes [[/r {7d6}]]{7d6 damage} and is shunted to the nearest flat surface. If there is no flat surface within 5 feet, the rune is destroyed.</p>"
+                },
+                "True Seeing (Constant)": {
+                    "name": "True Seeing (Constant)"
+                },
+                "Electrical Blast": {
+                    "name": "Electrical Blast"
+                },
+                "Truescript": {
+                    "name": "Truescript",
+                    "description": "<p>A living rune can't speak, but it can sculpt its form into complicated scripts and pictographs that can be understood by any creature with the ability to read written language. A living rune can also understand any written or spoken language.</p>"
                 }
             }
         },
@@ -8581,9 +8721,23 @@
                     "description": "<p>A crossroads guardian is bound to the site of its creation, but it can leave so long as it remains within 100 feet of the object it is guarding or individuals under a <em>@UUID[Compendium.pf2e.spells-srd.Q690d3mw3TUrKX7E]{Geas}</em> to fulfill the guardian's need. If it strays farther than 100 feet, it vanishes and reappears within 1 day at the site of its creation.</p>"
                 },
                 "Rituals": {
-                    "name": "Rituals"
+                    "name": "Rituals",
+                    "description": "<p>DC 25; <i>geas</i> (doesn't require secondary casters and can target a willing creature of any level)</p>"
+                },
+                "Geas (Doesn't Require Secondary Casters And Can Target a Willing Creature of Any Level)": {
+                    "name": "Geas (Doesn't Require Secondary Casters And Can Target a Willing Creature of Any Level)"
+                },
+                "Recognize Hero": {
+                    "name": "Recognize Hero",
+                    "description": "<p>A crossroads guardian knows the name, lineage, and significant history of everyone who speaks to it. If that individual has two or more identities, the crossroads guardian knows all those identities and which one is most true.</p>"
+                },
+                "Primal Purpose": {
+                    "name": "Primal Purpose",
+                    "description": "<p>A crossroads guardian can't be permanently destroyed while its need remains unfulfilled. If killed, it reforms within 1 day near the object it guards, near someone under a <em>@UUID[Compendium.pf2e.spells-srd.Q690d3mw3TUrKX7E]{Geas}</em> to fulfill its need, or at the site of its original appearance.</p>\n<p>Once the guardian's need is fulfilled, the crossroads guardian dissipates naturally within a week unless it finds a new quest.</p>"
                 }
-            }
+            },
+            "description": "<p>When a village is threatened by a horde of bandits but there's no one to help, when a monastery's divine relic must be guarded but the last monk is on their deathbed, when the world can be saved only through the use of an artifact no one alive remembers, nature responds by creating a crossroads guardian, a naturally occurring entity of primal magic. Every crossroads guardian exists to satisfy a particular need-usually a quest that must be carried out, helpless individuals who must be saved from harm, or an object or location which must be guarded. Although they often appear at actual crossroads, a crossroads guardian can materialize anywhere there is a community, from a giant metropolis to a lizardfolk village in a remote swamp.</p>\n<p>Some crossroads guardians are martial beings-defending a mystic fountain against all intruders, for example-but most are helpers and assistants, guiding heroes through the wilderness to where they're needed. A guardian is a skilled warrior and can defend a location, but when its purpose involves a quest, or the need is so great that the guardian isn't up to the task alone, the guardian must persuade others to voluntarily accept their quest.</p>\n<p>Once a crossroads guardian has fulfilled its purpose, it either shifts to satisfy a new need or quest-often changing its alignment and abilities as well-or else slowly vanishes, returning to the raw primal magic from which it was formed.</p>",
+            "name": "Crossroads Guardian"
         },
         "Street Skelm": {
             "description": "<p>Street skelms abuse the deference given to elders and the well-to-do in public spaces, appearing as such so they can verbally or physically punish those who dare defy their cruel sensibilities. To excuse his actions or gather allies, a street skelm might rant about a target, building a pretense of some vague threat the target poses to the community's social order. These rantings can rally a mob to carry out the skelm's violence against his target, some of whom even act out of fear against becoming the skelm's next target. Street skelms have little of the magical talents possessed by their more powerful peers, mostly relying on brute force.</p>\n<p>Street skelms typically dress in old-fashioned styles, always including a hat or hood that can cover their distinctive features. They often walk with a cane, walking staff, or other prop suitable for bludgeoning those who offend their delicate egos or challenge their tenuous sense of control.</p>\n<hr />\n<p>Rage-filled skelms are drawn to any settlement with more than a few hundred souls. Using magical disguises and leveraging societal norms to their benefit, these antlered monsters crave fearful respect and brutally punish any who dare disagree with their lofty opinions, even in the slightest degree. Although quite dangerous on their own, skelms are at their deadliest when leading an angry mob. Their cruel and exploitative nature has made their name synonymous with villainy.</p>\n<p>An existing skelm can transform any evil humanoid who's overwhelmed with rage into one of their kind. Skelms heap enraging humiliation on potential new brothers as a form of indoctrination, convincing these recruits that some other person or group is responsible for their misery. This practice ensures skelms begin their new existence with sufficient vitriol to plot their revenge.</p>\n<p>Many newly forged skelms carry on their lives in the roles they held as mortals; and in fact, these roles often shape the type of skelm they become. Skelms can arise among members of nearly any ancestry, though they're more common among cultures with deeply entrenched gender roles, unjust hierarchies, and those that don't offer healthy ways to experience and process anger.</p>",
@@ -8604,13 +8758,15 @@
                     "description": "<p>The street skelm can take on the appearance of any Medium male humanoid. This doesn't change his Speed or his attack and damage bonuses with his Strikes but might change the damage type his Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Frightening Rant": {
-                    "name": "Frightening Rant"
+                    "name": "Frightening Rant",
+                    "description": "<p>The skelm rants angrily, filling nearby creatures with shame, fear, and anger. Each creature within @Template[type:emanation|distance:30]{30 feet} must succeed at a @Check[type:will|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>\n<p>While frightened by this rant, creatures take a -2 status penalty to Strength-based damage rolls against the skelm, but gain a +2 status bonus to those rolls against other creatures.</p>"
                 },
                 "Punishing Strike": {
                     "name": "Punishing Strike",
                     "description": "<p>The skelm unleashes his constant rage in a reckless attack that makes him @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the start of his next turn.</p>\n<p>He Strikes; if he hits, he increases the number of damage dice by one and adds @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl]{Push} to the effect. This counts as two attacks for his multiple attack penalty.</p>"
                 }
-            }
+            },
+            "name": "Street Skelm"
         },
         "Melixie": {
             "items": {
@@ -8672,10 +8828,12 @@
         "Giant Hermit Crab": {
             "items": {
                 "Protective Pinch": {
-                    "name": "Protective Pinch"
+                    "name": "Protective Pinch",
+                    "description": "<p><strong>Trigger</strong> A creature adjacent to the hermit crab attempts to Strike the hermit crab while it is Retracted.</p>\n<hr />\n<p><strong>Effect</strong> The hermit crab makes a big claw Strike against the triggering creature.</p>"
                 },
                 "Retract": {
-                    "name": "Retract"
+                    "name": "Retract",
+                    "description": "<p>The hermit crab curls fully into its shell to protect itself. This gives it a +4 circumstance bonus to AC, removes its weakness to bludgeoning damage, and grants it resistance 5 to piercing and slashing damage.</p>\n<p>The only actions the hermit crab can use while in this state are Protective Pinch and Interact to come out of its shell.</p>"
                 },
                 "Big Claw": {
                     "name": "Big Claw"
@@ -8685,6 +8843,9 @@
                 },
                 "Tremorsense (Imprecise) 15 feet": {
                     "name": "Tremorsense (Imprecise) 15 feet"
+                },
+                "Constrict": {
+                    "description": "<p>[[/r (1d8+6)[bludgeoning]]], @Check[type:fortitude|dc:22|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 }
             },
             "description": "<p>Lucky hermit crabs with plentiful resources can live for decades and grow to tremendous sizes, often with magical help. Too large for most natural shells, giant hermit crabs use a variety of debris instead, including wagons, boats, treasure chests, and even abandoned pieces of giant armor.</p>\n<hr />\n<p>Hermit crabs have hard exoskeletons like other crabs, but with much weaker abdomens. They find and \"wear\" shells as homes and protection, getting around with their front legs and claws. Surprisingly fierce, hermit crabs fight for new shells as they grow bigger, using an assortment of hollow alternatives as substitutes when shells of the right size can't be found.</p>",
@@ -8772,13 +8933,21 @@
             "name": "Terror Bird",
             "items": {
                 "Sprint": {
-                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The terror bird Strides three times in a straight line.</p>"
+                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The terror bird Strides three times in a straight line.</p>",
+                    "name": "Sprint"
                 },
                 "Tearing Clutch": {
                     "name": "Tearing Clutch",
                     "description": "<p>The terror bird's powerful beak can tear through flesh. On a successful beak Strike, the target takes @Localize[PF2E.PersistentDamage.Bleed1.success]. This bleed damage increases to @Localize[PF2E.PersistentDamage.Bleed1d4.success] on a critical hit.</p>"
+                },
+                "Beak": {
+                    "name": "Beak"
+                },
+                "Talon": {
+                    "name": "Talon"
                 }
-            }
+            },
+            "description": "<p>Common terror birds, also known as axe beaks, are notable hunters. On their own, they use their great speed to catch prey unawares. In a flock, they can swarm larger beasts like aurochs and take them down with overwhelming numbers.</p>\n<hr />\n<p>Terror birds aren't one species but rather a family of deadly, flightless avian predators. All terror birds are capable of bursts of great speed and have powerful beaks that can tear apart the flesh of their prey. Most stalk large, open prairies and steppes, competing directly with other sizable predators such as large cats and wolves.</p>"
         },
         "Caulborn": {
             "items": {
@@ -8841,9 +9010,21 @@
                     "description": "<p>The seaweed leshy transforms into a Small patch of seaweed. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Sea Spray": {
-                    "description": "<p>A seaweed leshy's water jet has enough salt in it to temporarily impair their target's vision.</p>\n<p>On a hit, the target must succeed at a @Check[type:fortitude|dc:20] save or be @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute or until it spends 3 Interact actions wiping the salt out of its eyes. On a critical hit, a target that fails its Fortitude save is also @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>"
+                    "description": "<p>A seaweed leshy's water jet has enough salt in it to temporarily impair their target's vision.</p>\n<p>On a hit, the target must succeed at a @Check[type:fortitude|dc:20] save or be @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute or until it spends 3 Interact actions wiping the salt out of its eyes. On a critical hit, a target that fails its Fortitude save is also @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
+                    "name": "Sea Spray"
+                },
+                "Seaweed Strand": {
+                    "name": "Seaweed Strand"
+                },
+                "Water Jet": {
+                    "name": "Water Jet"
+                },
+                "Verdant Burst": {
+                    "name": "Verdant Burst",
+                    "description": "<p>When a seaweed leshy dies, a burst of primal energy explodes from its body, restoring [[/r 3d8[healing]]]{3d8 Hit Points} to each plant creature in a @Template[type:emanation|distance:30]. This area fills with seaweed, becoming difficult terrain. If the terrain is not a viable environment for the seaweed, they wither after 24 hours.</p>"
                 }
-            }
+            },
+            "description": "<p>Calmer than most of their other botanical brethren, seaweed leshys are a tranquil, discerning breed of leshy. They seek to mimic the ocean in their attitudes, moving with the waves of life and accepting what comes and goes while acknowledging the good and the bad.</p>\n<p>Seaweed leshys make their homes in tidal pools surrounded by other sea creatures. They believe their freshwater counterparts to be sheltered and naive, living in their secluded ponds and babbling brooks, though this doesn't stop them from forming friendships with freshwater leshys.</p>\n<p>Seaweed leshys vary in size, shape, and physical makeup. While the majority of seaweed leshys reach about 2 feet in height, some remain as small bundles of strands that stand about 6 to 8 inches tall.</p>\n<hr />\n<p>Often found assisting practitioners of nature magic, leshys are sentient flora that protect the natural world and sacred spaces within forests, fields, and other environments. Leshys are nature spirits inhabiting bodies constructed of plant matter fused together by a primal ritual.</p>"
         },
         "Wizard Sponge": {
             "items": {
@@ -8907,10 +9088,12 @@
                     "description": "<p>Valkyries use ravens as servants and spies. They can speak with ravens, and they can have up to three raven servitors who follow their commands. Valkyries can constantly observe whatever their commanded ravens sense.</p>"
                 },
                 "Recall the Fallen": {
-                    "name": "Recall the Fallen"
+                    "name": "Recall the Fallen",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> An allied creature within 60 feet who isn't a construct or undead is reduced to 0 Hit Points and their @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying} value is 2 or less</p>\n<hr />\n<p><strong>Effect</strong> The valkyrie restores [[/r 5d10[healing]]]{5d10 Hit Points} to the target.</p>"
                 },
                 "Storm of Battle": {
-                    "name": "Storm of Battle"
+                    "name": "Storm of Battle",
+                    "description": "<p>The valkyrie hurls her spear into the air, creating a massive storm in a @Template[type:burst|distance:100]. Spears of lightning rain down upon enemies in the area, dealing [[/r 4d12[electricity]]] damage (@Check[type:reflex|dc:32|basic:true] save).</p>"
                 },
                 "Plane Shift (Self and Mount Only)": {
                     "name": "Plane Shift (Self and Mount Only)"
@@ -9197,15 +9380,30 @@
                     "name": "Spit"
                 },
                 "Material Leap": {
-                    "description": "<p><strong>Requirements</strong> The namorrodor is on the Shadow Plane</p>\n<p><strong>Trigger</strong> A creature the namorrodor can sense with its lifesense on the Material Plane dies</p>\n<hr />\n<p><strong>Effect</strong> The namorrodor leaps between planes, appearing on the Material Plane within 100 feet of the triggering creature. It remains on the Material Plane for 24 hours, after which it is recalled to its original location on the Shadow Plane.</p>"
+                    "description": "<p><strong>Requirements</strong> The namorrodor is on the Shadow Plane</p>\n<p><strong>Trigger</strong> A creature the namorrodor can sense with its lifesense on the Material Plane dies</p>\n<hr />\n<p><strong>Effect</strong> The namorrodor leaps between planes, appearing on the Material Plane within 100 feet of the triggering creature. It remains on the Material Plane for 24 hours, after which it is recalled to its original location on the Shadow Plane.</p>",
+                    "name": "Material Leap"
                 },
                 "Bounding Sprint": {
                     "name": "Bounding Sprint",
                     "description": "<p><strong>Requirements</strong> The namorrodor has nothing in its hands</p>\n<hr />\n<p><strong>Effect</strong> The namorrodor bounds forward, using four limbs for an extra burst of speed. It Strides twice and makes a single melee Strike at the end of its movement.</p>"
+                },
+                "Interplanar Lifesense": {
+                    "description": "<p>While the namorrodor is on the Shadow Plane, its lifesense extends to the Material Plane as a vague sense with a 100-foot range.</p>",
+                    "name": "Interplanar Lifesense"
+                },
+                "Lifesense 30 feet": {
+                    "name": "Lifesense 30 feet"
                 }
             },
             "name": "Namorrodor",
             "description": "<p>Namorrodor stalk the night, craving the flesh of the living. Though they dwell on the Shadow Plane, the shadowy substances of that plane offer them only the barest sustenance, and they forever seek to cross over onto the Material Plane-yet they can make this journey only on the eve of a death, and only in a place where their plane overlaps the Material. When they manage to make the leap between planes, a shooting star marks their passage.</p>\n<p>Attracted by the smell of cooking meat but particularly vulnerable to flame, a namorrodor's most common meal is a traveler who has strayed from their campfire. Unattended babies are a treat so delectable, however, that a namorrodor will risk an encounter with dreaded fire if it spies an opportunity to snatch one.</p>\n<p>A namorrodor's skin is torn and loose over jutting bones, through which the wind whistles with a distinctive, eerie tone. Able to change between a quadrupedal and bipedal stance, the namorrodor is an admirable hunter.</p>"
+        },
+        "Red Fox": {
+            "items": {
+                "Leaping Pounce": {
+                    "description": "<p>The red fox either Strides or Leaps up to its Speed and makes a Strike at the end of that movement.</p>\n<p>If the fox began this action @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after this ability's Strike.</p>"
+                }
+            }
         }
     },
     "label": "Bestiary 3"
