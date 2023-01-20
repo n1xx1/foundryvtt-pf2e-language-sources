@@ -340,7 +340,8 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
                 },
                 "Change Shape": {
-                    "name": "Cambiare Forma"
+                    "name": "Cambiare Forma",
+                    "description": "<p>The hegessik takes the appearance of any Large or smaller creature. This doesn't change its Speed or its attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Constrict": {
                     "name": "Stritolare"
@@ -352,6 +353,21 @@
                 "Maddening Whispers": {
                     "name": "Maddening Whispers",
                     "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A susurrus of distracting whispers and dilations in reality surround a hegessik.</p>\n<p>When a non-protean ends its turn in the aura, it must attempt a @Check[type:will|dc:33] save. If it fails, it becomes @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
+                },
+                "Protean Anatomy 20": {
+                    "description": "<p>A hegessik's vital organs shift and change shape and position constantly. Immediately after the hegessik takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first.</p>\n<p>The hegessik is immune to polymorph effects unless it is a willing target. If @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened}, the hegessik automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>"
+                },
+                "Leaching Glare": {
+                    "name": "Leaching Glare",
+                    "description": "<p>The hegessik briefly opens its third eye.</p>\n<p>Non-protean creatures in a @Template[type:cone|distance:30] must succeed at a @Check[type:will|dc:38] save or become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure).</p>"
+                },
+                "Telekinetic Reach": {
+                    "name": "Telekinetic Reach",
+                    "description": "<p>The hegessik manifests psychic versions of its natural attacks and makes a Strike with each of its jaws, claw, and tail, in any order. These Strikes have a reach of 60 feet.</p>\n<p>These attacks count toward the hegessik's multiple attack penalty, but the penalty doesn't increase until after it makes all the attacks.</p>"
+                },
+                "Warpwave Strike": {
+                    "name": "Warpwave Strike",
+                    "description": "<p>Any creature struck and damaged by a hegessik's jaws Strike must succeed at a @Check[type:fortitude|dc:36] save or be subject to a @UUID[Compendium.pf2e.rollable-tables.yRZwPolTnRdnz42V]{Warpwave}</p>"
                 }
             }
         },
@@ -359,16 +375,30 @@
             "items": {
                 "Dagger": {
                     "name": "Pugnale"
+                },
+                "Standard Skeleton Key": {
+                    "name": "Standard Skeleton Key"
+                },
+                "Scurry": {
+                    "description": "<p><strong>Trigger</strong> A creature ends its movement adjacent to Kolo</p>\n<hr />\n<p><strong>Effect</strong> Kolo Steps.</p>"
+                },
+                "Upward Stab": {
+                    "name": "Upward Stab",
+                    "description": "<p>Kolo's melee Strikes deal an extra 1d6 precision damage to Medium or larger creatures.</p>"
                 }
             }
         },
         "Boiling Fountains": {
-            "name": "Agenti della Vegliarupe"
+            "name": "Agenti della Vegliarupe",
+            "hazardDisable": "<p>@Check[type:thievery|dc:21|name:Disable Pressure Plate|traits:action:disable-a-device] (trained) to disable each pressure plate, @Check[type:thievery|dc:16|name:Jam Fountain|traits:action:disable-a-device] to jam each fountain, or @Check[type:thievery|dc:18|name:Deflect Fountain's Spray|traits:action:disable-a-device] to deflect a fountain's spray</p>",
+            "description": "<p>Four pressure plates beneath the floorboards activate dragon-headed fountains on either side of the room, which spray boiling water across the area between them.</p>",
+            "hazardReset": "<p>Once a pressure plate has been activated, it must be reset manually.</p>"
         },
         "Penqual": {
             "items": {
                 "Mask of Terror (See Crush of Hundreds)": {
-                    "description": "<p>Il bersaglio appare come una creatura orribile e spaventosa. L'effetto è unico per ciascun osservatore, perciò un umano che osserva il bersaglio potrebbe vedere un demone con le zanne insanguinate, mentre un demone che lo osserva potrebbe vedere un viso angelico splendente. Quando una qualsiasi creatura effettua un&rsquo;azione ostile contro il bersaglio, la creatura deve effettuare un tiro salvezza su Volontà. Dopodiché è temporaneamente immune fino alla fine del suo turno successivo.</p>\n<hr /><p><strong>Successo</strong>La creatura non è influenzata.</p><p><strong>Fallimento </strong>La creatura è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Spaventata 2} prima di aver effettuato la sua azione.</p><p><strong>Fallimento Critico</strong> La creatura è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Spaventata 2} e la sua azione fallisce ed è sprecata.</p><hr /><p><strong>Intensificato (8°)</strong> Puoi prendere come bersaglio fino a 5 creature. Se una creatura effettua un'azione ostile che ha effetto su più bersagli simultaneamente, necessita di un solo tiro salvezza contro maschera di terrore.</p>"
+                    "description": "<p>Il bersaglio appare come una creatura orribile e spaventosa. L'effetto è unico per ciascun osservatore, perciò un umano che osserva il bersaglio potrebbe vedere un demone con le zanne insanguinate, mentre un demone che lo osserva potrebbe vedere un viso angelico splendente. Quando una qualsiasi creatura effettua un&rsquo;azione ostile contro il bersaglio, la creatura deve effettuare un tiro salvezza su Volontà. Dopodiché è temporaneamente immune fino alla fine del suo turno successivo.</p>\n<hr /><p><strong>Successo</strong>La creatura non è influenzata.</p><p><strong>Fallimento </strong>La creatura è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Spaventata 2} prima di aver effettuato la sua azione.</p><p><strong>Fallimento Critico</strong> La creatura è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Spaventata 2} e la sua azione fallisce ed è sprecata.</p><hr /><p><strong>Intensificato (8°)</strong> Puoi prendere come bersaglio fino a 5 creature. Se una creatura effettua un'azione ostile che ha effetto su più bersagli simultaneamente, necessita di un solo tiro salvezza contro maschera di terrore.</p>",
+                    "name": "Mask of Terror (See Crush of Hundreds)"
                 },
                 "Fear (At Will)": {
                     "description": "<p>Infondi paura nel bersaglio; questi deve effettuare un tiro salvezza su Volontà.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p><p><strong>Successo </strong>Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Frightened} 1.</p><p><strong>Fallimento </strong>Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Frightened} 2.</p><p><strong>Fallimento Critico</strong> Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Spaventato} 3 e @Compendium[pf2e.conditionspf2e.sDPxOjQ9kx2RZE8D]{In Fuga} per 1 round.</p>"
@@ -378,16 +408,30 @@
                 },
                 "Telepathy 100 feet": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
+                "Frantic Grasp": {
+                    "description": "<p>Each enemy in the penqual's space takes [[/r 4d12[slashing]]] damage (@Check[type:reflex|dc:36|basic:true] save).</p>"
+                },
+                "Mob Rush": {
+                    "name": "Mob Rush",
+                    "description": "<p>The penqual Strides twice, ignoring difficult terrain, and then uses Frantic Grasp. If it moves at least 20 feet away from its starting position, the DC of Frantic Grasp increases by 2.</p>"
+                },
+                "Skip Between": {
+                    "name": "Skip Between",
+                    "description": "<p>The sahkil can move itself between the Ethereal Plane and the Material Plane, as <em>@UUID[Compendium.pf2e.spells-srd.D2nPKbIS67m9199U]{Ethereal Jaunt}</em>, except that this ability has an unlimited duration and can be Dismissed</p>"
                 }
-            }
+            },
+            "name": "Penqual"
         },
         "Twisted Jack": {
             "items": {
                 "+2 Greater Striking War Razor": {
-                    "description": "<p>A war razor is an exaggerated version of the barbers' tool. It is a brittle but extremely sharp weapon that is very easy to slip into a pocket or sleeve.</p>"
+                    "description": "<p>A war razor is an exaggerated version of the barbers' tool. It is a brittle but extremely sharp weapon that is very easy to slip into a pocket or sleeve.</p>",
+                    "name": "+2 Greater Striking War Razor"
                 },
                 "+2 Resilient Studded Leather Armor": {
-                    "description": "<p><span class=\"fontstyle0\">Quest'armatura di cuoio è rinforzata con borchie di metallo e talvolta con piccole placche metalliche, offrendo molta della flessibilità di un'armatura di cuoio con una protezione più solida.</span></p>"
+                    "description": "<p><span class=\"fontstyle0\">Quest'armatura di cuoio è rinforzata con borchie di metallo e talvolta con piccole placche metalliche, offrendo molta della flessibilità di un'armatura di cuoio con una protezione più solida.</span></p>",
+                    "name": "+2 Resilient Studded Leather Armor"
                 },
                 "War Razor": {
                     "name": "Rasoio da Guerra"
@@ -397,8 +441,19 @@
                 },
                 "Sneak Attack": {
                     "name": "Attacco Furtivo"
+                },
+                "Close Cutter": {
+                    "name": "Close Cutter"
+                },
+                "Fan of Daggers": {
+                    "description": "<p>Twisted Jack makes three ranged dagger Strikes, each against a separate target; he ignores the multiple attack penalty until after making all three Strikes. On a critical hit, the target takes 2d10 persistent bleed damage and is blinded for 1 round.</p>"
+                },
+                "Knife Thrower": {
+                    "name": "Knife Thrower",
+                    "description": "<p>Twisted Jack's ranged dagger Strikes have a range increment of 20 feet instead of 10 feet.</p>"
                 }
-            }
+            },
+            "name": "Twisted Jack"
         },
         "Sad Liza": {
             "items": {
@@ -406,7 +461,8 @@
                     "description": "<p>A war razor is an exaggerated version of the barbers' tool. It is a brittle but extremely sharp weapon that is very easy to slip into a pocket or sleeve.</p>"
                 },
                 "+2 Resilient Studded Leather Armor": {
-                    "description": "<p><span class=\"fontstyle0\">Quest'armatura di cuoio è rinforzata con borchie di metallo e talvolta con piccole placche metalliche, offrendo molta della flessibilità di un'armatura di cuoio con una protezione più solida.</span></p>"
+                    "description": "<p><span class=\"fontstyle0\">Quest'armatura di cuoio è rinforzata con borchie di metallo e talvolta con piccole placche metalliche, offrendo molta della flessibilità di un'armatura di cuoio con una protezione più solida.</span></p>",
+                    "name": "+2 Resilient Studded Leather Armor"
                 },
                 "Necklace of Fireballs VI": {
                     "name": "Collana delle Palle di Fuoco VI"
@@ -418,14 +474,29 @@
                     "name": "Pugnale"
                 },
                 "Sneak Attack": {
-                    "name": "Attacco Furtivo"
+                    "name": "Attacco Furtivo",
+                    "description": "<p>Twisted Jack deals an additional [[/r 3d6]] precision damage to flat-footed targets.</p>"
+                },
+                "Bloody Mayhem": {
+                    "description": "<p>Twisted Jack Strides three times. Once per Stride, he can attempt a war razor Strike against a creature in his reach at any point during the Stride; he must make each Strike against a different creature, but he doesn't apply his multiple attack penalty until after making all his Strikes. If any of the Strikes are a critical failure, Bloody Mayhem immediately ends.</p>"
+                },
+                "Close Cutter": {
+                    "name": "Close Cutter"
+                },
+                "Fan of Daggers": {
+                    "description": "<p>Sad Liza makes three ranged dagger Strikes, each against a separate target; she ignores the multiple attack penalty until after making all three Strikes. On a critical hit, the target takes @Localize[PF2E.PersistentDamage.Bleed2d10.success] and is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>"
+                },
+                "Knife Thrower": {
+                    "name": "Knife Thrower",
+                    "description": "<p>Twisted Jack's ranged dagger Strikes have a range increment of 20 feet instead of 10 feet.</p>"
                 }
             }
         },
         "Battle Leader Rekarek": {
             "items": {
                 "+1 Greatpick": {
-                    "description": "<p>Questo piccone ha un'impugnatura più lunga e una testa più larga di un piccone normale. È troppo pesante per essere impugnato con una mano sola.</p>"
+                    "description": "<p>Questo piccone ha un'impugnatura più lunga e una testa più larga di un piccone normale. È troppo pesante per essere impugnato con una mano sola.</p>",
+                    "name": "+1 Greatpick"
                 },
                 "Greatpick": {
                     "name": "Piccone Pesante"
@@ -435,16 +506,23 @@
                 },
                 "Sling": {
                     "name": "Fionda"
+                },
+                "Haphazard Hack": {
+                    "description": "<p><strong>Requirements</strong> Rekarek is adjacent to two or more enemies</p>\n<hr />\n<p><strong>Effect</strong> Rekarek makes three melee weapon Strikes, two of which must be against different enemies.</p>\n<p>These attacks count toward her multiple attack penalty, but only after all three Strikes have been made.</p>\n<p>After taking this activity, Rekarek is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the beginning of her next turn.</p>"
                 }
-            }
+            },
+            "name": "Battle Leader Rekarek"
         },
         "Rigged Cubby": {
-            "name": "Agenti della Vegliarupe"
+            "name": "Agenti della Vegliarupe",
+            "description": "<p>A hidden string connected to precariously stacked bricks causes the cubby to collapse in on itself when the string is pulled.</p>",
+            "hazardDisable": "<p>@Check[type:thievery|dc:20|name:Cut String|traits:action:disable-a-device] to cut the string without setting off the trap</p>"
         },
         "Washboard Dog Tough": {
             "items": {
                 "+1 Morningstar": {
-                    "description": "<p>Quest'arma ha una corta impugnatura sormontata da una palla di metallo costellata di spuntoni.</p>"
+                    "description": "<p>Quest'arma ha una corta impugnatura sormontata da una palla di metallo costellata di spuntoni.</p>",
+                    "name": "+1 Morningstar"
                 },
                 "Morningstar": {
                     "name": "Mazza Chiodata"
@@ -454,11 +532,28 @@
                 },
                 "Heavy Crossbow": {
                     "name": "Balestra Pesante"
+                },
+                "Scraping Clamor": {
+                    "description": "<p>The Washboard Dog scrapes their weapon up and down their washboard shield, making such a clatter that it's hard to hear anything over the din. Until the beginning of the Washboard Dog tough's next turn, all creatures within 30 feet gain a +1 circumstance bonus to any saves to resist auditory spells or abilities.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.wcNGbhwn3AuamtsX]{Effect: Scraping Clamor}</p>",
+                    "name": "Scraping Clamor"
+                },
+                "Bullyrag Beatdown": {
+                    "name": "Bullyrag Beatdown",
+                    "description": "<p>Whenever the gang tough makes a successful melee Strike against a frightened creature, the Strike deals an extra weapon die of damage.</p>"
+                },
+                "Frightening Critical": {
+                    "name": "Frightening Critical",
+                    "description": "<p>When the gang tough's Strike with a bludgeoning weapon is a critical hit and deals damage, the target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
                 }
-            }
+            },
+            "name": "Washboard Dog Tough"
         },
         "Poisoned Dart Statue": {
-            "name": "Agenti della Vegliarupe"
+            "name": "Agenti della Vegliarupe",
+            "description": "<p>Countless poison darts fire from holes in the statues and walls of this hall.</p>",
+            "hazardDisable": "<p>@Check[type:thievery|dc:34|name:Disable Trap|traits:action:disable-a-device] (master) on the control panel deactivates the trap.</p>",
+            "hazardReset": "<p>The trap deactivates and resets after 1 minute.</p>",
+            "hazardRoutine": "<p>(1 action) The trap launches one dart against every creature in the hall as 1 action. Because it launches darts continuously, the trap can also use the Continuous Barrage free action (see below) to launch darts at each creature during that creature's turn. The trap doesn't take a multiple attack penalty.</p>"
         },
         "Kekker": {
             "items": {
@@ -472,11 +567,18 @@
                     "name": "Balestra"
                 },
                 "Quick Stow": {
-                    "description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> Kekker stores one held item of light or negligible Bulk in his cheek pouches.</p>"
+                    "description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> Kekker stores one held item of light or negligible Bulk in his cheek pouches.</p>",
+                    "name": "Quick Stow"
                 },
                 "Swarming": {
                     "name": "Swarming",
                     "description": "<p>A ratfolk can end its movement in the same square as an ally that also has this ability.</p>\n<p>Only two such creatures can share the same space.</p>"
+                },
+                "Cheek Pouches": {
+                    "description": "<p>A ratfolk has stretchy cheek pouches that can store up to 1 cubic foot of objects. The ratfolk can remove or store an item using the Interact action. As long as the ratfolk has at least one object in its cheek pouches, its speech is noticeably difficult to understand.</p>"
+                },
+                "Katar Specialist": {
+                    "description": "<p>Kekker has trained extensively with the katar blade. Any katar he wields gains the finesse trait.</p>"
                 }
             }
         },
@@ -497,7 +599,8 @@
                     "name": "Balestra a Mano"
                 },
                 "Cast Down": {
-                    "name": "Scagliare a Terra"
+                    "name": "Scagliare a Terra",
+                    "description": "<p>When the acolyte casts <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em> to damage one creature, that creature is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} if it takes any damage from the spell. If the creature critically fails its save against the spell, it also takes a -10-foot status penalty to its Speed for 1 minute.</p>"
                 },
                 "Sneak Attack": {
                     "name": "Attacco Furtivo",
@@ -510,7 +613,8 @@
         },
         "Living Paints": {
             "name": "Agenti della Vegliarupe",
-            "hazardDisable": "<p>@Check[type:crafting|dc:41|name:Crafting Disable] (master) to mix the paints into bland, useless colors, @Check[type:thievery|dc:41|name:Thievery Disable] (legendary) to dismantle the animated brushes, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 41) to counteract the magic within the paint.</p>"
+            "hazardDisable": "<p>@Check[type:crafting|dc:41|name:Crafting Disable] (master) to mix the paints into bland, useless colors, @Check[type:thievery|dc:41|name:Thievery Disable] (legendary) to dismantle the animated brushes, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 41) to counteract the magic within the paint.</p>",
+            "description": "<p>A mass of brushes use magical paint to convert creatures into art.</p>"
         },
         "Avarek": {
             "items": {
@@ -542,24 +646,36 @@
                     "name": "Spine"
                 },
                 "Sneak Attack": {
-                    "name": "Attacco Furtivo"
+                    "name": "Attacco Furtivo",
+                    "description": "<p>The avarek's Strikes deal an additional 2d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "Rolling Assault": {
+                    "description": "<p>The avarek curls into a ball and rolls rapidly, impaling enemies with its spines. The avarek Strides twice and makes up to two spine Strikes at any point during its movement, each against a different target within reach.</p>\n<p>These attacks count toward the avarek's multiple attack penalty, but the penalty doesn't increase until after the avarek makes all the attacks.</p>"
+                },
+                "Prickly Defense": {
+                    "description": "<p>The avarek withdraws beneath its spines, presenting a defensive, spiky exterior. It gains a +2 circumstance bonus to spine Strikes and AC. Any adjacent creature that attempts a melee attack against the avarek takes 1d6 piercing damage per attack, regardless of whether the attack hits.</p>\n<p>Prickly Defense lasts until the avarek uses a move action or makes a Strike with any weapon other than its spines.</p>"
                 }
             },
             "name": "Avarek"
         },
         "Clockwork Arms": {
-            "name": "Agenti della Vegliarupe"
+            "name": "Agenti della Vegliarupe",
+            "description": "<p>Four claw-tipped clockwork arms suspended from the ceiling pick up and deposit creatures into a nearby hatch.</p>",
+            "hazardDisable": "<p>@Check[type:thievery|dc:43|name:Deactivate One Arm|traits:action:disable-a-device] (master) to jam and deactivate one of the arms or @Check[type:athletics|dc:46|name:Tear Arm Off Machine] (legendary) to tear an arm off the machine.</p>",
+            "hazardRoutine": "<p>(4 actions) The trap loses 1 action per arm destroyed or disabled. On its turn, the trap makes claw Strikes against creatures other than the Rumormonger or the Inkmaster. If an arm already has a creature grabbed, the trap spends 2 actions to use its Open Hatch ability.</p>"
         },
         "Frefferth": {
             "items": {
                 "Alietta (+1 Striking Bastard Sword)": {
-                    "description": "<p><span class=\"fontstyle0\">Questa spada a lama larga, chiamata talvolta spada a una mano e mezza, ha un'impugnatura più lunga così che possa essere impugnata con una mano o usata con due mani per ottenere maggior potenza di perforazione o di taglio</span></p><p> </p>"
+                    "description": "<p><span class=\"fontstyle0\">Questa spada a lama larga, chiamata talvolta spada a una mano e mezza, ha un'impugnatura più lunga così che possa essere impugnata con una mano o usata con due mani per ottenere maggior potenza di perforazione o di taglio</span></p><p> </p>",
+                    "name": "Alietta (+1 Striking Bastard Sword)"
                 },
                 "+1 Spear": {
                     "description": "<p>Una lunga asta metallica sormontata da uno spuntone anch'esso di metallo, una lancia può essere usata con una mano come arma da mischia oltre a poter essere lanciata.</p>"
                 },
                 "+1 Full Plate": {
-                    "description": "<p>Una corazza di piastre è formata da piastre che si incastrano e che ricoprono quasi tutto il corpo con una corazza d'acciaio. Essa è costosa e pesante, chi la indossa spesso ha bisogno di farsi aiutare per vestirsi, però offre una delle migliori difese che un'armatura possa fornire. Quest'armatura è dotata di uno strato sottostante di armatura imbottita e un paio di guanti d'arme.</p>"
+                    "description": "<p>Una corazza di piastre è formata da piastre che si incastrano e che ricoprono quasi tutto il corpo con una corazza d'acciaio. Essa è costosa e pesante, chi la indossa spesso ha bisogno di farsi aiutare per vestirsi, però offre una delle migliori difese che un'armatura possa fornire. Quest'armatura è dotata di uno strato sottostante di armatura imbottita e un paio di guanti d'arme.</p>",
+                    "name": "+1 Full Plate"
                 },
                 "Spear": {
                     "name": "Lancia"
@@ -572,19 +688,27 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
                 },
                 "Frightful Presence": {
-                    "name": "Presenza Terrificante"
+                    "name": "Presenza Terrificante",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:25]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "Rejuvenation": {
-                    "name": "Rinascita"
+                    "name": "Rinascita",
+                    "description": "<p>When Frefferth is destroyed, his body and items dissipate into shadowy nothingness and the knight re-forms after [[/r 1d4 #days]]{1d4 days} within the sarcophagus in area <strong>D12</strong>, fully healed.</p>\n<p>Frefferth can be trapped only by returning the @UUID[Compendium.pf2e.equipment-srd.6MIBHKMJmD8uQVam]{Chain of the Stilled Spirit} to the sarcophagus (see areas <strong>D12</strong> and <strong>D34</strong>), in which case Frefferth's body dissipates, leaving his items in the spot where he was last slain.</p>"
                 },
                 "Head Hunter": {
-                    "name": "Cacciatore di Teste"
+                    "name": "Cacciatore di Teste",
+                    "description": "<p>Any slashing weapon a dullahan wields becomes @UUID[Compendium.pf2e.equipment-srd.hg3IogR8ue2IWwgS]{Keen}, and any hatchet it wields becomes @UUID[Compendium.pf2e.equipment-srd.qlunQzfnzPQpMG6U]{Returning}.</p>\n<p>If the dullahan kills a creature with a critical hit using a slashing weapon, the target is decapitated as though the dullahan had used Reap on the target.</p>\n<p>These effects remain only while the dullahan holds the weapon.</p>"
                 },
                 "Reap": {
-                    "name": "Decapitare"
+                    "name": "Decapitare",
+                    "description": "<p>Frefferth removes the head of a dead creature within reach.</p>\n<p>Each creature within the area of Frefferth's frightful presence must attempt a new save, even if they are temporarily immune.</p>"
                 },
                 "Summon Steed": {
-                    "name": "Evocare Cavalcatura"
+                    "name": "Evocare Cavalcatura",
+                    "description": "<p>Frefferth summons a @UUID[Compendium.pf2e.pathfinder-bestiary.waPgKbjhijeZ00Zm]{Nightmare}.</p>\n<p>This steed remains until it is slain, Frefferth @UUID[Compendium.pf2e.actionspf2e.AjLSHZSWQ90exdLo]{Dismisses} it, or Frefferth summons another steed.</p>"
+                },
+                "Impaler": {
+                    "description": "<p>Whenever Frefferth damages a creature with a critical hit using a ranged piercing weapon, the weapon remains impaled in the victim's body.</p>\n<p>The victim becomes @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} as long as they are impaled; the impaling weapon can be removed by the affected creature or an adjacent ally as a 2-action activity that has the manipulate trait.</p>"
                 }
             }
         },
@@ -595,6 +719,13 @@
                 },
                 "Morningstar": {
                     "name": "Mazza Chiodata"
+                },
+                "Bullyrag Beatdown": {
+                    "description": "<p>Whenever the gang tough makes a successful melee Strike against a frightened creature, the Strike deals an extra weapon die of damage.</p>"
+                },
+                "Frightening Critical": {
+                    "name": "Frightening Critical",
+                    "description": "<p>When the gang tough's Strike with a bludgeoning weapon is a critical hit and deals damage, the target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
                 }
             }
         },
@@ -604,12 +735,19 @@
                     "name": "Fauci"
                 },
                 "Suffocating Fumes": {
-                    "name": "Suffocating Fumes"
+                    "name": "Suffocating Fumes",
+                    "description": "<p>@Template[type:emanation|distance:5]{5 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that enters or begins its turn within the aura must attempt a @Check[type:fortitude|dc:14] save, or @Check[type:fortitude|dc:17] if the pickled punk is attached to the creature.</p>\n<p>On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, it's also @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute.</p>"
                 },
                 "Attach": {
-                    "name": "Attach"
+                    "name": "Attach",
+                    "description": "<p>When a pickled punk hits a target larger than itself, it uses bizarre excretions to adhere to that creature. This is similar to Grabbing the creature, but the pickled punk is not flat-footed, and it moves with that creature rather than holding it in place.</p>\n<p>Each turn while attached, the pickled punk automatically deals the damage from its jaws Strike to the creature to which it's attached. It also wriggles about, gaining a +2 circumstance bonus to AC as long as it's not also grabbed or restrained.</p>"
+                },
+                "Combustible": {
+                    "name": "Combustible",
+                    "description": "<p>The first time each round that a pickled punk takes fire damage, its fumes combust, dealing [[/r 5[fire]]] damage to all other creatures within the area of its Suffocating Fumes aura.</p>"
                 }
-            }
+            },
+            "name": "Pickled Punk"
         },
         "Agent of the Gray Queen": {
             "items": {
@@ -641,16 +779,27 @@
                 },
                 "Soul Siphon": {
                     "name": "Soul Siphon"
+                },
+                "Overtake Soul": {
+                    "description": "<p><strong>Requirements</strong> The astradaemon hasn't used an action with the attack trait yet this turn.</p>\n<hr />\n<p><strong>Effect</strong> The astradaemon draws out and consumes the soul of a living creature it has @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}. The creature must succeed at a @Check[type:fortitude|dc:39|traits:damaging-effect] save or instantly die. If it dies, the astradaemon gains 10 temporary Hit Points.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.xiOi7btey4AS6jhe]{Effect: Overtake Soul}</p>"
+                },
+                "Essence Drain": {
+                    "description": "<p>When an astradaemon hits with its claw, jaws, or tail, it drains the target's spiritual and vital essences.</p>\n<p>The target takes [[/r 2d10[negative]]] damage and the astradaemon regains an equal number of Hit Points. The target must succeed at a @Check[type:fortitude|dc:37|traits:damaging-effect] save or become @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed 1} and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p>If the target was already drained or doomed, it instead increases both conditions' value by 1, to a maximum of 4.</p>"
+                },
+                "Mortal Shell": {
+                    "name": "Mortal Shell"
                 }
             }
         },
         "Skinsaw Murderer": {
             "items": {
                 "+1 Shortsword": {
-                    "description": "<p>La spada corta presenta in una grande varietà di forme e stili della lama, il cui tratto caratterizzante è però la lunghezza che si attesta sui 60 cm.</p>"
+                    "description": "<p>La spada corta presenta in una grande varietà di forme e stili della lama, il cui tratto caratterizzante è però la lunghezza che si attesta sui 60 cm.</p>",
+                    "name": "+1 Shortsword"
                 },
                 "Religious Symbol (Silver) of Norgorber": {
-                    "description": "<p><span class=\"fontstyle0\">Questo pezzo di legno o d'argento è decorato con un'immagine che rappresenta una divinità. Alcuni incantatori divini, ad esempio i chierici, possono usare un simbolo religioso della loro divinità come focus divino per usare certe capacità e lanciare alcuni incantesimi. Un simbolo religioso deve essere tenuto con una mano per essere usato.</span></p>"
+                    "description": "<p><span class=\"fontstyle0\">Questo pezzo di legno o d'argento è decorato con un'immagine che rappresenta una divinità. Alcuni incantatori divini, ad esempio i chierici, possono usare un simbolo religioso della loro divinità come focus divino per usare certe capacità e lanciare alcuni incantesimi. Un simbolo religioso deve essere tenuto con una mano per essere usato.</span></p>",
+                    "name": "Religious Symbol (Silver) of Norgorber"
                 },
                 "Shortsword": {
                     "name": "Spada Corta"
@@ -662,28 +811,43 @@
                     "name": "Pugnale"
                 },
                 "Sneak Attack": {
-                    "name": "Attacco Furtivo"
+                    "name": "Attacco Furtivo",
+                    "description": "<p>When attacking a @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} creature, the Skinsaw murderer deals [[/r {1d6}[precision]]]{1d6 additional precision damage}.</p>\n<hr />\n<p>When the monster Strikes a creature that has the flat-footed condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
                 },
                 "Twin Takedown": {
-                    "name": "Doppio Assalto"
+                    "name": "Doppio Assalto",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> You are wielding two melee weapons, each in a different hand.</p>\n<hr />\n<p><strong>Effect</strong> You swiftly attack your hunted prey with both weapons. Make two Strikes against a creature, one with each of the required weapons. If both hit the same creature, combine their damage for the purpose of its resistances and weaknesses. Apply your multiple attack penalty to each Strike normally.</p>"
                 }
-            }
+            },
+            "name": "Skinsaw Murderer"
         },
         "Field Of Opposition": {
-            "name": "Agenti della Vegliarupe"
+            "name": "Agenti della Vegliarupe",
+            "description": "<p>A distortion in space spawns an aggressive, malevolent shadow duplicate of any characters who pass between Terimor's faces.</p>",
+            "hazardDisable": "<p>@Check[type:thievery|dc:42|name:Disable Thievery] (legendary) to permanently disable the planar distortion (DC increases by 2 for each duplicate still extant), or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (10th level; counteract DC 42) to destroy the planar distortion</p>"
         },
         "Wynsal Starborn": {
             "items": {
                 "Whisper Briolette": {
-                    "name": "Whisper Briolette"
+                    "name": "Whisper Briolette",
+                    "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> Envision</p>\n<p><strong>Requirements</strong> You are an expert in Stealth</p>\n<hr />\n<p>This teardrop-shaped gemstone has triangular facets and looks suitable for fancy attire, although close inspection shows that it's hollow. When it's activated, you can instantly impart up to 1 minute of speech (roughly 150 words) telepathically to any creatures you choose within 100 feet. You can impart this instantaneous telepathic message to creatures that you perceive and creatures @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to you, but you can't do so to @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} creatures. Once used, the whisper briolette becomes unusable and subtly vanishes within the next few minutes, rather than crumbling to dust.</p>"
                 },
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità"
                 },
                 "Determination": {
                     "name": "Determinazione"
+                },
+                "+2 Greater Striking Longsword": {
+                    "name": "+2 Greater Striking Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "+2 Resilient Full Plate": {
+                    "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of padded armor (see below) and a pair of gauntlets.</p>",
+                    "name": "+2 Resilient Full Plate"
                 }
-            }
+            },
+            "name": "Wynsal Starborn"
         },
         "Teraphant": {
             "items": {
@@ -741,7 +905,12 @@
             }
         },
         "Chalky": {
-            "description": "<p>Questo golem è un incubo alchemico semovente, in grado di infliggere orribili ferite di ogni genere. La capacità di eseguire gli ordini gli è conferita dal cervello, per il resto privo di volontà propria, che galleggia nella sua testa a cupola. In alcuni casi estremamente rari il cervello impiegato nella creazione di questo golem può conservare alcuni ricordi frammentari o perfino una personalità vera e propria. In questi casi il golem alchemico avrà una sua volontà e perseguirà i suoi scopi.</p>"
+            "description": "<p>Questo golem è un incubo alchemico semovente, in grado di infliggere orribili ferite di ogni genere. La capacità di eseguire gli ordini gli è conferita dal cervello, per il resto privo di volontà propria, che galleggia nella sua testa a cupola. In alcuni casi estremamente rari il cervello impiegato nella creazione di questo golem può conservare alcuni ricordi frammentari o perfino una personalità vera e propria. In questi casi il golem alchemico avrà una sua volontà e perseguirà i suoi scopi.</p>",
+            "items": {
+                "Golem Antimagic": {
+                    "description": "<p>harmed by sonic ([[/r 5d8]], [[/r 2d6]] from areas or persistent damage; healed by acid (area [[/r 2d4[healing]]]{2d4 Hit Points}); slowed by cold</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as “cold and water”), either type of spell can affect the golem.</p>\n<p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p>\n<p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p>\n<p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for that round.</p>\n<p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>"
+                }
+            }
         },
         "Skitterstitch": {
             "items": {
@@ -765,7 +934,8 @@
                     "description": "<p>Quando investi queste strisce ricamate di stoffa, devi meditare e avvolgerle lentamente attorno alle tue mani. Queste fasciature portano incise rune d'arma che danno ai tuoi attacchi senz'armi i benefici di tali rune, facendo si che i tuoi attacchi senz'armi funzionino come armi magiche. Ad esempio, le fasciature dei colpi possenti poderose +1 danno bonus di oggetto +1 ai tiri per colpire dei tuoi attacchi senz'armi e incrementano i danni dei tuoi attacchi senz'armi da un dado dell'arma a due (di solito 2d4 anziché 1d4, ma se i tuoi pugni hanno un diverso dado di danno dell'arma o hai altri attacchi senz'armi, usa invece due di quei dadi).</p><p> </p><p>Puoi migliorare, aggiungere e trasferire rune alle fasciature esattamente come faresti per un'arma, oltre a poter applicare talismani alle fasciature stesse. Tratta le fasciature come armi da mischia del gruppo da rissa con Volume leggero per questi scopi specifici. Le rune di proprietà si applicano solo quando sarebbero applicabili agli attacchi senz'armi che stai usando. Ad esempio, una proprietà che deve essere applicata ad un'arma tagliente non può funzionare quando attacchi con un pugno, ma ne ottieni gli effetti se attacchi con artigli o qualche altro tipo di attacco senz'armi tagliente.</p>"
                 },
                 "Attack of Opportunity": {
-                    "name": "Attacco di Opportunità"
+                    "name": "Attacco di Opportunità",
+                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
                 }
             }
         },
@@ -2972,6 +3142,18 @@
             "items": {
                 "Berserk": {
                     "name": "Berserk"
+                }
+            }
+        },
+        "Bone Skipper Swarm": {
+            "name": "Bone Skipper Swarm",
+            "items": {
+                "Bonesense (Imprecise) 30 feet": {
+                    "name": "Bonesense (Imprecise) 30 feet",
+                    "description": "<p>A bone skipper swarm identifies bones and creatures with a skeletal system in the listed range.</p>"
+                },
+                "Swarming Bites": {
+                    "description": "<p>Each enemy in the swarm's space takes [[/r 3d6[piercing]]] damage (@Check[type:reflex|dc:24|basic:true]) save plus exposure to marrow rot.</p>"
                 }
             }
         }
