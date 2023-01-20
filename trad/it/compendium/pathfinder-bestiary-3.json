@@ -17,7 +17,8 @@
                     "name": "Spit"
                 },
                 "Deluge": {
-                    "name": "Deluge"
+                    "name": "Deluge",
+                    "description": "<p>A creature can provoke a waterlogged tiddalik into laughing and releasing its stored water with a successful check to @Check[type:performance|dc:25] a joke or funny story. The tiddalik also disgorges its water automatically if it dies while waterlogged, or can voluntarily Deluge as a three-action activity that has the concentrate trait. The mass of stored water swamps a @Template[type:emanation|distance:10], dealing [[/r 8d6[bludgeoning]]] damage to creatures in the area (@Check[type:reflex|dc:25|basic:true] save) and making the area difficult terrain for 1 day. The tiddalik can't use its spit Strike or Expel Wave until it next Drinks in Abundance.</p>"
                 }
             },
             "name": "Tiddalik",
@@ -4577,7 +4578,8 @@
                     "description": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 }
             },
-            "description": "<p>The diminutive three-toed sloth is a solitary, tree-dwelling creature. Possessing a gentle nature and unassuming countenance, it has little to defend itself with other than its surprisingly fearsome climbing claws. These sloths are sometimes used as lookouts by secretive druid enclaves, as the symbiotic algae in their fur makes them difficult to spot in tree canopies, though their slow speed leaves them vulnerable on the ground.</p>\n<hr />\n<p>Despite their long, hooked claws being one of their most distinctive features, sloths are herbivorous creatures. Smaller sloths use their claws to climb from tree to tree, seeking fruits and young leaves among the canopy. Larger species can reach up to 20 feet tall and weigh more than 10,000 pounds.</p>"
+            "description": "<p>The diminutive three-toed sloth is a solitary, tree-dwelling creature. Possessing a gentle nature and unassuming countenance, it has little to defend itself with other than its surprisingly fearsome climbing claws. These sloths are sometimes used as lookouts by secretive druid enclaves, as the symbiotic algae in their fur makes them difficult to spot in tree canopies, though their slow speed leaves them vulnerable on the ground.</p>\n<hr />\n<p>Despite their long, hooked claws being one of their most distinctive features, sloths are herbivorous creatures. Smaller sloths use their claws to climb from tree to tree, seeking fruits and young leaves among the canopy. Larger species can reach up to 20 feet tall and weigh more than 10,000 pounds.</p>",
+            "name": "Three-Toed Sloth"
         },
         "Hellwasp Swarm": {
             "name": "Hellwasp Swarm",
@@ -7400,9 +7402,30 @@
                     "name": "Jaws"
                 },
                 "Firebolt": {
-                    "name": "Firebolt"
+                    "name": "Firebolt",
+                    "description": "<p><em>Note: Bestiary 3 does not specify a range for this attack. A range of 30 feet has been chosen, in line with the Storm Hag's Wind Blast.</em></p>"
+                },
+                "Bloodsense (Imprecise) 90 feet": {
+                    "description": "<p>A blood hag can sense the presence of blood and creatures with blood. She can tell the difference between spilled blood and the blood within a living creature.</p>",
+                    "name": "Bloodsense (Imprecise) 90 feet"
+                },
+                "Borrowed Skin": {
+                    "name": "Borrowed Skin",
+                    "description": "<p>A blood hag wears a covering of skin stolen from a humanoid creature she has killed, hiding her true form and granting her the effects of a 4th-level <em>@UUID[Compendium.pf2e.spells-srd.c2bTWBNO1BYX4Zfg]{Misdirection}</em>, with herself as the primary target and the creature whose skin she is wearing as the secondary target.</p>\n<p>Spreading coarse salt inside the skin prevents the hag from putting it back on, forcing her to keep her fiery form until she kills another humanoid and spends 1 hour turning it into a new disguise.</p>"
+                },
+                "Coven": {
+                    "description": "<p>A blood hag adds <em>@UUID[Compendium.pf2e.spells-srd.YvXKGlHOt7mdW2jZ]{Death Ward}</em>, <em>@UUID[Compendium.pf2e.spells-srd.XS7Wyh5YC0NWeWyB]{Fiery Body}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Uqj344bezBq3ESdq]{Nightmare}</em> to her coven's spells.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
+                },
+                "Assume Fiery Form": {
+                    "name": "Assume Fiery Form",
+                    "description": "<p>The blood hag removes her borrowed skin and transforms into a brilliant ball of fire.</p>\n<p>She becomes amorphous, gains the fire trait and a fly Speed of 60 feet, becomes immune to fire, and emits light as a torch. She loses her melee Strikes and can't Drain Blood, but she deals [[/r 3d10[fire]]] damage (@Check[type:reflex|dc:26|basic:true] save) to each creature that touches her, as well as to each creature that succeeds at a melee Strike against her with an unarmed attack or from an adjacent space.</p>\n<p>If her skin is intact, she can return to her normal form by spending a single action that has the manipulate trait while adjacent to the skin.</p>\n<p>The hag can instead Assume Fiery Form as a single action, bursting through her skin in a blast of flames. Doing so destroys her borrowed skin and deals [[/r 9d6[fire]]] damage (@Check[type:reflex|dc:26|basic:true] save) in a @Template[type:emanation|distance:20].</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.H99PJXU5cvJ4Oycm]{Effect: Fiery Form}</p>"
+                },
+                "Drain Blood": {
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the blood hag's reach</p>\n<hr />\n<p><strong>Effect</strong> The hag sinks her fangs into the creature to drink its blood. This requires a successful @Check[type:athletics] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim becomes @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. The hag regains [[/r 15[healing]]]{15 Hit Points}, gaining any excess HP as temporary Hit Points that last for 1 hour. Drinking blood from a creature that's already drained doesn't restore any Hit Points to the hag but increases the victim's drained value by 1, killing the victim when it reaches drained 5.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful @Check[type:medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained condition by 1 after 10 minutes.</p>",
+                    "name": "Drain Blood"
                 }
-            }
+            },
+            "description": "<p>Blood hags, also known as soucouyants, infiltrate communities in the guise of young, innocent humanoids. This disguise is more than an illusion, for a blood hag wears the skin of a previous victim to hide her true appearance. During the day, her disguise is almost perfect, especially if the community knows nothing about the person the hag is pretending to be. But after sunset, the creature sheds her skin, hides it in a safe place, and stalks the night to drink the blood that sustains her.</p>\n<p>Able to travel quickly in the form of a ball of fire and to slip through keyholes or the slightest crack in a door or window, blood hags feed on sleeping victims then return home before morning to don their stolen skin.</p>\n<hr />\n<p>Foul creatures who appear as wizened old women, hags share little in common with the humanoids they terrorize. They are hateful entities whose greatest joy lies in the corruption and ultimate destruction of anything good and virtuous. Whatever power created the first hags is lost to time, but numerous hag varieties have arisen over the ages, each with their own powers and abilities to spread pain and suffering.</p>"
         },
         "Triumph Siktempora": {
             "items": {
@@ -7410,29 +7433,64 @@
                     "name": "Dimension Door (At Will)"
                 },
                 "Clinch Victory": {
-                    "name": "Clinch Victory"
+                    "name": "Clinch Victory",
+                    "description": "<p><strong>Trigger</strong> A creature within the triumph siktempora's reach uses an action that would restore Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The triumph siktempora makes a glorious fist Strike against the triggering creature. On a critical success, this Strike also disrupts the triggering action.</p>"
                 },
                 "Temporal Sense": {
-                    "name": "Temporal Sense"
+                    "name": "Temporal Sense",
+                    "description": "<p>A siktempora can always roll Dimension of Time Lore for initiative. When it does, it gains a +2 circumstance bonus to the roll.</p>"
                 },
                 "Uncanny Pounce": {
-                    "name": "Uncanny Pounce"
+                    "name": "Uncanny Pounce",
+                    "description": "<p><strong>Trigger</strong> The triumph siktempora rolls Dimension of Time Lore for initiative</p>\n<hr />\n<p><strong>Effect</strong> The triumph siktempora Strides once and makes a claw Strike, in either order.</p>"
+                },
+                "Vie for Victory": {
+                    "description": "<p>The triumph siktempora pushes themself beyond their limits to secure victory over a chosen foe. They choose one target they can see and reach with a single Stride action. They attempt to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} that target, ignoring the typical limitations on distance and with no penalty for not sharing a language with the target. They then Stride and attempt one Athletics attack action (such as @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} or @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm}) against the target.</p>",
+                    "name": "Vie for Victory"
+                },
+                "Winning Smile": {
+                    "name": "Winning Smile",
+                    "description": "<p>The triumph siktempora flashes their disarming grin at one creature within 15 feet. The target takes [[/r 10d8[mental]]] damage (@Check[type:will|dc:34|basic:true] save). On a failure, the target's attacks against the triumph siktempora also become nonlethal until the end of the target's next turn.</p>"
+                },
+                "Air Walk (Constant)": {
+                    "name": "Air Walk (Constant)"
+                },
+                "Glorious Fist": {
+                    "name": "Glorious Fist"
+                },
+                "Telepathy 200 feet": {
+                    "name": "Telepathy 200 feet"
+                },
+                "Regeneration 40 (Deactivated by Chaotic, Mental or Orichalcum)": {
+                    "name": "Regeneration 40 (Deactivated by Chaotic, Mental or Orichalcum)"
+                },
+                "Cheaters Never Prosper": {
+                    "name": "Cheaters Never Prosper",
+                    "description": "<p>@Template[type:emanation|distance:50]{50 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature within the aura who uses or benefits from an effect with the fortune trait must succeed at a @Check[type:will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure).</p>"
                 }
-            }
+            },
+            "description": "<p>Triumph siktemporas embody the emotional satisfaction of overcoming a task that took up much of a creature's mind, be it taking an apple seed from between one's teeth or winning a war. They exult in every victory they attain; however, they value only those successes won fairly not only abiding by the established rules of a competition but also enforcing those rules mercilessly upon other competitors.</p>\n<p>These siktemporas appear as small humanoids with four muscular arms and digitigrade legs. They take great joy in draping themselves in golden clothes and medals that commemorate the countless victories which spawned them, and their faces bear proud, dazzling smiles and expressions of success-but these features never move.</p>\n<hr />\n<p>In the Dimension of Time, intense emotions are more than just ethereal feelings. They accumulate over time, from things like the critical mass of emotion caused by a historic event or a settlement passing down a powerful sentiment for generations. These accretions eventually give birth to siktemporas. Each siktempora feels, with all their being, a singular intense emotion linked to the circumstances that spawned them. A rare few, however, are created when an emotionally invested creature attempts to travel to the Dimension of Time or interferes with the flow of time, which can create paradoxes or manipulate past events.</p>\n<p>Siktemporas usually isolate themselves on the Dimension of Time in mindscapes infused with the emotion that created them, but some travel to other planes. These wanderers long to indulge in more of their core emotion or to engender more of that feeling, thus perpetuating their own kind.</p>",
+            "name": "Triumph Siktempora"
         },
         "Animated Furnace": {
             "description": "<p>This huge forge or oven is animated to protect a workspace or kitchen, travel alongside its owner, or both.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
             "items": {
                 "Construct Armor (Hardness 10)": {
-                    "name": "Construct Armor (Hardness 10)"
+                    "name": "Construct Armor (Hardness 10)",
+                    "description": "<p>Like normal objects, an animated furnace has Hardness. This Hardness reduces any damage the furnace takes by an amount equal to the Hardness. Once an animated furnace is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 26.</p>"
                 },
                 "Door": {
                     "name": "Door"
                 },
                 "Swallow Whole": {
                     "description": "<p>Large, [[/r (2d8+9)[fire]]], Rupture 15</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "Fan the Flames": {
+                    "name": "Fan the Flames",
+                    "description": "<p>The animated furnace opens its door and fans its flames in a @Template[type:cone|distance:30] that deals [[/r 5d6[fire]]] damage (@Check[type:reflex|dc:28|basic:true|traits:fire] save).</p>"
                 }
-            }
+            },
+            "name": "Animated Furnace"
         },
         "Common Eurypterid": {
             "items": {
@@ -7446,7 +7504,11 @@
                     "name": "Wavesense (Imprecise) 30 feet"
                 },
                 "Eurypterid Venom": {
-                    "name": "Eurypterid Venom"
+                    "name": "Eurypterid Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 1d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>"
+                },
+                "Attack of Opportunity": {
+                    "description": "<p>Stinger only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 }
             },
             "name": "Common Eurypterid",
@@ -7459,9 +7521,21 @@
                     "description": "<p>Like normal objects, an animated trebuchet has Hardness. This Hardness reduces any damage the trebuchet takes by an amount equal to the Hardness. Once an animated trebuchet is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 32.</p>"
                 },
                 "Launch": {
-                    "name": "Launch"
+                    "name": "Launch",
+                    "description": "<p><strong>Requirements</strong> The animated trebuchet has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} in its arm.</p>\n<hr />\n<p><strong>Effect</strong> The animated trebuchet attempts an Athletics check against the grabbed creature's Fortitude DC.</p>\n<p>On a success, it fires the creature up to 40 feet in height and up to 120 feet away. The creature takes [[/r 4d12[bludgeoning]]] damage plus the appropriate falling damage. If the flung creature lands on another creature, the creature it lands on takes the same amount of bludgeoning damage (@Check[type:reflex|dc:33|basic:true] save).</p>\n<p>On a successful Launch, the animated trebuchet must Interact to reposition its arm into the proper position before it can Launch again.</p>"
+                },
+                "Arm": {
+                    "name": "Arm"
+                },
+                "Rock": {
+                    "name": "Rock"
+                },
+                "Trample": {
+                    "description": "<p>Large or smaller, arm, @Check[type:reflex|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 }
-            }
+            },
+            "name": "Animated Trebuchet",
+            "description": "<p>Large armies sometimes pay exorbitant fees to animate their siege weapons.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>"
         },
         "Ovinnik": {
             "name": "Ovinnik",
@@ -7476,19 +7550,57 @@
                     "name": "Purify Food and Drink (At Will)"
                 },
                 "Master of the Granary": {
-                    "name": "Master of the Granary"
+                    "name": "Master of the Granary",
+                    "description": "<p>A home with a friendly ovinnik is blessed, as the ovinnik preserves food from vermin and mold.</p>\n<p>A home so blessed never suffers from random accidents such as fires, and any checks to @UUID[Compendium.pf2e.actionspf2e.rmwa3OyhTZ2i2AHl]{Craft}, @UUID[Compendium.pf2e.actionspf2e.QyzlsLrqM0EEwd7j]{Earn Income}, @UUID[Compendium.pf2e.actionspf2e.bT3skovyLUtP22ME]{Repair}, or @UUID[Compendium.pf2e.actionspf2e.49y9Ec4bDii8pcD3]{Subsist} in the home receive a +2 circumstance bonus. If the ovinnik is unfriendly, such checks take a -2 circumstance penalty instead, as the ovinnik causes devastating fires and infestations</p>\n<p>An ovinnik must spend a week in a place before these benefits occur.</p>"
                 },
                 "Shy": {
-                    "name": "Shy"
+                    "name": "Shy",
+                    "description": "<p>An ovinnik is naturally @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} while within sight of their bound home. The ovinnik can become visible, or even selectively visible-allowing some people to see them.</p>"
                 },
                 "Raise Grain Cloud": {
-                    "description": "<p>While in their bound storeroom or granary, the ovinnik slams a paw against the ground, stirring up a cloud of grain dust in an @Template[type:emanation|distance:20].</p>\n<p>Within this cloud, they gain a +4 status bonus to any fire damage they deal. The ovinnik doubles their fire resistance against this increased damage. The grain cloud dissipates after the first such effect or after 1 minute if no such effects occur.</p>"
+                    "description": "<p>While in their bound storeroom or granary, the ovinnik slams a paw against the ground, stirring up a cloud of grain dust in an @Template[type:emanation|distance:20].</p>\n<p>Within this cloud, they gain a +4 status bonus to any fire damage they deal. The ovinnik doubles their fire resistance against this increased damage. The grain cloud dissipates after the first such effect or after 1 minute if no such effects occur.</p>",
+                    "name": "Raise Grain Cloud"
                 }
-            }
+            },
+            "description": "<p>The ovinnik is the most ferocious of house spirits, and the only one that will kill if sufficiently angered. They live in granaries, storage rooms, and sheds where food-particularly grain-is kept. Ovinniks resemble bipedal cats but bark like a dog to scare away thieves, and they often demand gifts of milk, pancakes, and dead roosters.</p>\n<hr />\n<p>House spirits are shy, often helpful, sometimes wrathful fey that dwell alongside peasants and farmers. They reside in the house, in the yard, in the granary, in the bathhouse-wherever people build and live. Due to this proximity, house spirits often take on the mannerisms or appearance of nearby mortals. Their reclusive nature and tendency to go unseen earned them the moniker of \"spirits,\" though in truth they are fully embodied fey.</p>\n<p>House spirits take an almost parental interest in \"their\" mortals. Given proper respect, these fey work tirelessly for their charges-they chop wood, care for livestock, mend clothes, sweep the floor, and tend to the stove. If offended, though, the house spirit becomes a menace, frightening animals or children and ruining belongings.</p>"
         },
         "Werecrocodile": {
             "name": "Werecrocodile",
-            "description": "<p>The curse of the werecrocodile instills powerful hunger, urges violent displays of dominance, and amplifies greed.</p>\n<hr />\n<p>Werecreatures are humanoids who transform into animals and animal-humanoid hybrids under the light of the full moon. The fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>"
+            "description": "<p>The curse of the werecrocodile instills powerful hunger, urges violent displays of dominance, and amplifies greed.</p>\n<hr />\n<p>Werecreatures are humanoids who transform into animals and animal-humanoid hybrids under the light of the full moon. The fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>",
+            "items": {
+                "Change Shape": {
+                    "description": "<ul>\n<li><strong>Human</strong>\n<ul>\n<li><strong>Melee</strong> fist [[/r 1d20+10 #Fist]]{+10}/[[/r 1d20+5 #Fist]]{+5}/[[/r 1d20 #Fist]]{+0} (agile, nonlethal), <strong>Damage</strong> [[/r (1d4+2)[bludgeoning]]] damage</li>\n</ul>\n</li>\n<li><strong>Crocodile</strong>\n<ul>\n<li><strong>Melee</strong> jaws[[/r 1d20+10 #Jaws]]{+10}/[[/r 1d20+5 #Jaws]]{+5}/[[/r 1d20 #Jaws]]{+0}, <strong>Damage</strong> [[/r (2d6+4)[piercing]]] damage</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+                    "name": "Change Shape"
+                },
+                "Curse of the Werecrocodile": {
+                    "description": "<p>This curse affects only humanoids.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:15]</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a werecrocodile until dawn. The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>"
+                },
+                "Moon Frenzy": {
+                    "description": "<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws Strike (or a similar Strike) by 2. When the moon sets or the sun rises, the werecreature returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} for [[/br 2d4 #Fatigued duration]]{2d4 hours}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.dRe8n1nBWMIXd8jh]{Effect: Moon Frenzy}</p>",
+                    "name": "Moon Frenzy"
+                },
+                "Jaws": {
+                    "name": "Jaws"
+                },
+                "Tail": {
+                    "name": "Tail"
+                },
+                "Crocodile Empathy": {
+                    "name": "Crocodile Empathy",
+                    "description": "<p>A werecrocodile can communicate with alligators, caimans, and crocodiles.</p>"
+                },
+                "Deep Breath": {
+                    "name": "Deep Breath",
+                    "description": "<p>A werecrocodile can hold their breath for about 2 hours.</p>"
+                },
+                "Aquatic Ambush": {
+                    "description": "<p>30 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+                },
+                "Twisting Thrash": {
+                    "name": "Twisting Thrash",
+                    "description": "<p><strong>Requirements</strong> The werecrocodile has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The werecrocodile makes a Jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If this Strike hits, it also knocks the target @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. If it fails, the werecrocodile releases the target.</p>"
+                }
+            }
         },
         "Buso Farmer": {
             "items": {
@@ -7496,7 +7608,9 @@
                     "name": "Resize Plant",
                     "description": "<p><strong>Frequency</strong> twice per day.</p>\n<p><strong>Requirements</strong> The buso touches a Small, Medium, or Large plant.</p>\n<hr />\n<p><strong>Effect</strong> The plant grows or shrinks by one size, remaining that size for the next 5 minutes. If used on a plant creature, this effect has the effects of <em>@UUID[Compendium.pf2e.spells-srd.wzctak6BxOW8xvFV]{Enlarge}</em> or <em>@UUID[Compendium.pf2e.spells-srd.PjhUmyKnq6K5uDby]{Shrink}</em> (buso's choice). Unwilling plant creatures can attempt a @Check[type:fortitude|dc:18] saving throw to resist this effect.</p>"
                 }
-            }
+            },
+            "description": "<p>Busos are tree-dwelling folk with a simmering desire to consume the flesh of others. They to heavily supplement their food with leaves and root crops, possess significant knowledge of agriculture, and boast innate powers over plants and their growth. In regards to meat, however, busos reject the flesh of beasts; they instead consume other humanoids. Not only do they find the taste of other creatures repulsive, but their bodies reject non-humanoid meat since it provides them no nutritional value and consuming it leaves them sickened and weak.</p>\n<p>Busos' unusual dietary needs mean they're almost always at odds with neighboring cultures. They typically maintain decent relations only with goblins, who are as a people less prone to judging others based on diet. Other communities fear busos-with some justification-though aside from the occasional forays to harvest someone for their next meal, busos tend to keep to themselves. In some desperate locations, communities faced with famine or other natural disasters might even seek out busos' aid, offering victims in exchange for knowledge or magical assistance that might save their communities from slow and terrible deaths through starvation.</p>\n<p>A buso's single eye sometimes leads to them being compared to cyclopes. However, both types of creatures deny any common ancestry, and they first appeared independently in entirely different parts of the world with substantially divergent abilities. For their part, busos believe that their ancestors' deeds gave rise to their single eyes. When faced with a famine that threatened their existence, these ancestors each cut out one of their eyes as an offering to the malevolent spirits of the forest, imploring for their salvation. Busos say that these spirits, whom they call the busaw, gave them their knowledge of agriculture, power over plants, and craving for sentient flesh. Henceforth, they revered the busaw as gods and called themselves buso: those who worship the busaw.</p>",
+            "name": "Buso Farmer"
         },
         "Krampus": {
             "items": {
@@ -7514,7 +7628,8 @@
                 "Frightful Presence": {
                     "description": "<p>@Template[type:emanation|distance:120]{120 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:42]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 }
-            }
+            },
+            "name": "Krampus"
         },
         "Kasa-Obake": {
             "items": {
@@ -7564,13 +7679,26 @@
         "Bone Ship": {
             "items": {
                 "Crew's Call": {
-                    "name": "Crew's Call"
+                    "name": "Crew's Call",
+                    "description": "<p>The crew let out an anguished cry in unison. This is a <em>@UUID[Compendium.pf2e.spells-srd.FEsuyf203wTNE2et]{Wail of the Banshee}</em> spell with @Template[type:emanation|distance:100] (@Check[type:fortitude|dc:39|traits:magical,necromancy,auditory,death,negative]). In addition, any creature within 5 feet of the ship is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by the crew.</p>\n<p>The ship can't use Crew's Call again for [[/br 1d4+1 #Recharge Crew's Call]]{1d4+1 rounds}.</p>"
                 },
                 "Keelhaul": {
-                    "name": "Keelhaul"
+                    "name": "Keelhaul",
+                    "description": "<p>As Trample (Huge or smaller, hull, @Check[type:reflex|dc:43|basic:true]), but the bone ship Swims up to double its swim Speed instead of Striding, and each creature that fails its save is also dragged under the ship.</p>\n<p>The GM places each creature dragged along in an underwater space adjacent to the bone ship at the end of the ship's movement.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 },
                 "Chain Shot": {
-                    "name": "Chain Shot"
+                    "name": "Chain Shot",
+                    "description": "<p>The bone ship makes a special bone cannon Strike, firing a chain made of bones. A creature hit by this Strike is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by the chain (@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC 41).</p>\n<p>The bone ship can use Interact actions to reel in a grabbed creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.</p>"
+                },
+                "Blood Wake": {
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The churning water around the bone ship tinges red with seeping blood. A living creature that enters water in the aura sees visions of itself drowning in the blood and must attempt a @Check[type:will|dc:37] save. After attempting this saving throw, the creature is temporarily immune for 1 hour.</p>\n<p>On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure) and @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}, and it takes a -4 status penalty to Athletics checks to Swim.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.oORIapm28xioxPDp]{Effect: Blood Wake}</p>"
+                },
+                "Pressgang Soul": {
+                    "name": "Pressgang Soul",
+                    "description": "<p>The bone ship casts <em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{Bind Soul}</em>. The target must have died due to the bone ship's assault or from drowning. The creature's soul becomes part of the ghostly crew.</p>\n<p>A new soul gem grows on the ship, and the bone ship is @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. It can use the extra action only to Strike or Swim.</p>"
+                },
+                "Cannonade": {
+                    "description": "<p>The bone ship makes four bone cannon Strikes, each targeting a different creature.</p>"
                 }
             }
         },
@@ -7580,9 +7708,15 @@
                     "name": "Defiled Religious Symbol of Pharasma (Wooden)"
                 },
                 "Final Blasphemy": {
-                    "name": "Final Blasphemy"
+                    "name": "Final Blasphemy",
+                    "description": "<p>When the herexen is destroyed, it explodes in a wave of negative energy with the effects of a 3-action <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em> spell (@Check[type:fortitude|dc:20|basic:true]).</p>\n<p>The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>"
+                },
+                "Heretic's Smite": {
+                    "name": "Heretic's Smite",
+                    "description": "<p>While wielding the favored weapon of its former deity (such as a dagger for an ex-Pharasmin herexen), the herexen's Strikes deal an additional [[/r 1d6[evil]]] damage against creatures that can cast divine spells.</p>"
                 }
-            }
+            },
+            "description": "<p>When a cleric rebels against their deity and dies in the grip of blasphemous rage, the heresies they committed in life may fuel their transformation into an undead herexen. Herexens seek vengeance against the deity they once worshipped, defiling temples, slaying the faithful, and rallying lesser undead and death cultists to aid them in their unholy quests. Though a herexen's divine gifts have mostly been corrupted into the vileness of undeath, they stubbornly cling to remnants of their former power, still wielding magic and armaments favored by the deity they so greatly despise.</p>\n<p>Groups of herexens that blasphemed against the same deity sometimes combine to form a mockery of a congregation, conducting blasphemous rites with something approaching euphoria. These congregations are more often formed from a blasphemous cult who practiced their heresy together in life and died together, though some gather independent herexens of the same former faith.</p>"
         },
         "Android Infiltrator": {
             "items": {
@@ -7599,7 +7733,8 @@
                     "name": "Emotionally Unaware",
                     "description": "<p>The android takes a -1 circumstance penalty to Diplomacy and Performance checks, and to Perception checks to @UUID[Compendium.pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{Sense Motive}.</p>"
                 }
-            }
+            },
+            "name": "Android Infiltrator"
         },
         "Ancient Forest Dragon": {
             "name": "Ancient Forest Dragon",
@@ -7631,18 +7766,51 @@
                 },
                 "Tree Shape (See Forest Shape)": {
                     "name": "Tree Shape (See Forest Shape)"
+                },
+                "Woodland Stride": {
+                    "name": "Woodland Stride",
+                    "description": "<p>The forest dragon ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
+                },
+                "Draining Blight": {
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The dragon draws moisture from the living creatures surrounding them, using the energy to heal their own wounds. Each living creature in a @Template[type:emanation|distance:30] takes [[/r 9d10[negative]]] damage (@Check[type:fortitude|dc:41|basic:true] save). Creatures made entirely of water and plant creatures use the outcome one degree of success worse than they rolled. The dragon regains Hit Points equal to half of the highest damage a single creature takes from this effect.</p>\n<p>In addition, all non-creature plant life in the area withers and dies, eliminating non-magical undergrowth and any resulting difficult terrain, cover, and concealment. Water is also consumed in the same way, typically lowering any standing body of water fully within the area by 1 foot.</p>"
+                },
+                "Forest Shape": {
+                    "name": "Forest Shape"
+                },
+                "Lignifying Bite": {
+                    "name": "Lignifying Bite",
+                    "description": "<p>When a creature made of flesh is reduced to 0 Hit Points by the dragon's jaws Strike, that creature must attempt a @Check[type:fortitude|dc:41] save. If it fails, it dies, and its flesh, made of earth in a metaphysical sense, turns to wood.</p>\n<p>The wood is living and might grow into a tree over time, but it can't be used as a body or piece of a body for <em>@UUID[Compendium.pf2e.spells-srd.IkGYwHRLhkuoGReG]{Raise Dead}</em> or other magic that would return the creature to life.</p>"
                 }
             }
         },
         "Skeleton Infantry": {
             "items": {
                 "Hurl Javelins!": {
-                    "name": "Hurl Javelins!"
+                    "name": "Hurl Javelins!",
+                    "description": "<p>The troop's members throw a volley of javelins. Each creature in a @Template[type:burst|distance:10] within 30 feet of the troop takes [[/r (2d6+10)[piercing]]] damage (@Check[type:reflex|dc:26|basic:true] save).</p>\n<p>When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[type:burst|distance:5].</p>"
                 },
                 "Lower Spears!": {
-                    "name": "Lower Spears!"
+                    "name": "Lower Spears!",
+                    "description": "<p><span class=\"pf2-icon\">1</span> to <span class=\"pf2-icon\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The skeletons engage in a coordinated longspear attack against each enemy within @Template[type:emanation|distance:10]{10 feet} (@Check[type:reflex|dc:27|basic:true] save). The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">1</span> [[/r 2d8[piercing]]] damage</p>\n<p><span class=\"pf2-icon\">2</span> [[/r (3d8+8)[piercing]]] damage</p>\n<p><span class=\"pf2-icon\">3</span> [[/r (4d8+8)[piercing]]] damage</p>"
+                },
+                "Form a Phalanx": {
+                    "description": "<p>Many of the skeletons raise their shields to protect others. The infantry gain a +2 circumstance bonus to AC until the start of their next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.l62iAFL3EO7wSsLL]{Effect: Form a Phalanx}</p>",
+                    "name": "Form a Phalanx"
+                },
+                "Troop Defenses": {
+                    "description": "<p><strong>Threshold</strong> 120 (12 squares), 60 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                },
+                "Phalanx Charge": {
+                    "description": "<p><strong>Requirements</strong> The infantry is in a phalanx</p>\n<hr />\n<p><strong>Effect</strong> The skeletons lower their longspears and charge. The troop Strides in a straight line until they're adjacent to an enemy then use Lower Spears!, dealing [[/r (3d8+8)[piercing]]] damage. Any creature that fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>",
+                    "name": "Phalanx Charge"
+                },
+                "Troop Movement": {
+                    "description": "<p>Whenever the skeleton infantry Stride, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the infantry enter difficult terrain, the extra movement cost applies to all the guards.</p>",
+                    "name": "Troop Movement"
                 }
-            }
+            },
+            "name": "Skeleton Infantry",
+            "description": "<p>This troop of skeletons was once a cohort of highly disciplined spear-and-shield infantry from an ancient empire.</p>\n<hr />\n<p>Almost any creature that had bones in life and leaves them behind in death can become a shambling, undead skeleton-humanoids, beasts, aberrations, fey, and more.</p>"
         },
         "Gurgist Mauler": {
             "items": {
@@ -7659,10 +7827,20 @@
                     "description": "<p>An angheuvore in a place of worship dedicated to a non-evil deity or on sacred ground, such as an area blessed by <em>@UUID[Compendium.pf2e.spells-srd.y3jlOfgsQH1JjkJE]{Sanctified Ground}</em>, is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
                 },
                 "Calculated Blow": {
-                    "description": "<p>The gurgist makes a melee Strike, aiming for their target's weak points and taking their time to line up a precise blow. If this Strike hits, the gurgist deals an additional [[/r {1d8}[precision]]]{1d8 precision damage}, and the target must succeed at a @Check[type:fortitude|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} for 1 minute.</p>"
+                    "description": "<p>The gurgist makes a melee Strike, aiming for their target's weak points and taking their time to line up a precise blow. If this Strike hits, the gurgist deals an additional [[/r {1d8}[precision]]]{1d8 precision damage}, and the target must succeed at a @Check[type:fortitude|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} for 1 minute.</p>",
+                    "name": "Calculated Blow"
+                },
+                "Death Gasp": {
+                    "description": "<p>The gurgist draws in a deep breath and holds it, temporarily suspending their biological processes and becoming undead.</p>\n<p>The gurgist gains the undead trait and becomes immune to bleed, death effects, disease, paralyzed, poison, and sleep. Any such effects the gurgist is currently suffering from are suspended, but take effect again once they take a breath.</p>\n<p>Death Gasp lasts as long as the gurgist holds their breath (up to 9 rounds).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.lyeRL7khixdlJsaf]{Effect: Death Gasp}</p>",
+                    "name": "Death Gasp"
+                },
+                "Tackle": {
+                    "name": "Tackle",
+                    "description": "<p>The gurgist Strides twice and then attempts to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} a creature. On a success, the target is also knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
                 }
             },
-            "description": "<p>Humans that become mortics are known as gurgists. They retain their personalities and intelligence, but their bodies rot with every beat of their heart. Gurgists ceaselessly crave raw meat; consuming large quantities can slow, or even reverse, their body's putrefaction for a short time. A gurgist that refuses to consume raw meat rots to death.</p>\n<p>Unlike other mortics, gurgists are capable of sating their hunger without resorting to depravity, making them more likely to be nonevil compared to other mortics. Most gurgists hunt and raise livestock for food-including animals many consider too dangerous to tame. To battle their constant hunger, many take up a single craft, hobby, or performing art to obsess over until the drive to create overcomes the urge to consume. Many study magic or medicine, researching methods to reverse their condition or suspend their putrescence. Others cling to religion, uttering prayers despite the pain and begging the gods to cleanse them of evil.</p>\n<p>Nearly all gurgists are disgusted by their clumsy, rotting bodies. They shroud themselves in fine clothes and cover their faces with elaborate masks. Most consider their mask their true face.</p>\n<hr />\n<p>Mortics are humanoids overwhelmed by negative energy who still cling to life, surviving as twisted amalgams of living and undead. Though they feel unnatural cravings and resemble corpses, mortics live, breathe, eat, sleep, and procreate. However, a mortic can suspend their living functions simply by holding their breath, becoming more like a true undead.</p>\n<p>Mortics are largely new to Golarion, with most created in droves when the Whispering Tyrant destroyed entire cities with his Radiant Fire, a magical explosion fueled by the collision of negative and positive energy. From among the corpses of these tragedies rose mortics, living survivors mistaken for corpses and left behind as a result. They found themselves in a twilight state-neither fully alive or undead. The necrotic pollutants of the Gravelands and the Isle of Terror continue to create mortics, seeping into neighboring lands through the air, earth, and water to infect the populace. Though most of the living in these lands fear becoming transformed, some believe becoming a mortic is their best chance of survival in the face of the encroaching hordes of the dead.</p>\n<p>A mortic's powers differ by ancestry, though they do have a few commonalities. Reading or hearing scripture induces headaches, and they experience great discomfort when treading upon sacred ground. For those who were religious in life, these new changes can be devastating.</p>"
+            "description": "<p>Humans that become mortics are known as gurgists. They retain their personalities and intelligence, but their bodies rot with every beat of their heart. Gurgists ceaselessly crave raw meat; consuming large quantities can slow, or even reverse, their body's putrefaction for a short time. A gurgist that refuses to consume raw meat rots to death.</p>\n<p>Unlike other mortics, gurgists are capable of sating their hunger without resorting to depravity, making them more likely to be nonevil compared to other mortics. Most gurgists hunt and raise livestock for food-including animals many consider too dangerous to tame. To battle their constant hunger, many take up a single craft, hobby, or performing art to obsess over until the drive to create overcomes the urge to consume. Many study magic or medicine, researching methods to reverse their condition or suspend their putrescence. Others cling to religion, uttering prayers despite the pain and begging the gods to cleanse them of evil.</p>\n<p>Nearly all gurgists are disgusted by their clumsy, rotting bodies. They shroud themselves in fine clothes and cover their faces with elaborate masks. Most consider their mask their true face.</p>\n<hr />\n<p>Mortics are humanoids overwhelmed by negative energy who still cling to life, surviving as twisted amalgams of living and undead. Though they feel unnatural cravings and resemble corpses, mortics live, breathe, eat, sleep, and procreate. However, a mortic can suspend their living functions simply by holding their breath, becoming more like a true undead.</p>\n<p>Mortics are largely new to Golarion, with most created in droves when the Whispering Tyrant destroyed entire cities with his Radiant Fire, a magical explosion fueled by the collision of negative and positive energy. From among the corpses of these tragedies rose mortics, living survivors mistaken for corpses and left behind as a result. They found themselves in a twilight state-neither fully alive or undead. The necrotic pollutants of the Gravelands and the Isle of Terror continue to create mortics, seeping into neighboring lands through the air, earth, and water to infect the populace. Though most of the living in these lands fear becoming transformed, some believe becoming a mortic is their best chance of survival in the face of the encroaching hordes of the dead.</p>\n<p>A mortic's powers differ by ancestry, though they do have a few commonalities. Reading or hearing scripture induces headaches, and they experience great discomfort when treading upon sacred ground. For those who were religious in life, these new changes can be devastating.</p>",
+            "name": "Gurgist Mauler"
         },
         "Jorogumo": {
             "items": {
@@ -7935,7 +8113,16 @@
                     "description": "<p>An elder wyrmwraith's claws rend divine magic. Whenever an elder wyrmwraith hits a creature with a spectral claws Strike, the elder wyrmwraith can attempt a @Check[type:religion] check to counteract an ongoing divine spell effect on the creature.</p>"
                 },
                 "Ectoplasmic Form": {
-                    "description": "<p>An elder wyrmwraith can push through the ectoplasmic veil to temporarily assume a physical form made of ectoplasm. The elder wyrmwraith loses the incorporeal trait for [[/br 1d4 #Duration Physical Form]]{1d4 rounds}, though they can return to their incorporeal form as a free action before then. Once this ability ends, the elder wyrmwraith can't use this ability again for [[/br 1d4 #Recharge Ectoplasmatic Form]]{1d4 rounds}. While in their ectoplasmic form, the elder wyrmwraith's AC increases to 52 and they gain [[/r 125 #Temporary Hit Points]]{100 temporary Hit Points}. They lose their immunity to precision damage and all of their resistances. Their melee Strikes deal slashing and piercing damage, respectively, instead of negative damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.QMcmhifNQOPguv2t]{Effect: Ectoplasmic Form (Physical)}</p>"
+                    "description": "<p>An elder wyrmwraith can push through the ectoplasmic veil to temporarily assume a physical form made of ectoplasm. The elder wyrmwraith loses the incorporeal trait for [[/br 1d4 #Duration Physical Form]]{1d4 rounds}, though they can return to their incorporeal form as a free action before then. Once this ability ends, the elder wyrmwraith can't use this ability again for [[/br 1d4 #Recharge Ectoplasmatic Form]]{1d4 rounds}. While in their ectoplasmic form, the elder wyrmwraith's AC increases to 52 and they gain [[/r 125 #Temporary Hit Points]]{100 temporary Hit Points}. They lose their immunity to precision damage and all of their resistances. Their melee Strikes deal slashing and piercing damage, respectively, instead of negative damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.QMcmhifNQOPguv2t]{Effect: Ectoplasmic Form (Physical)}</p>",
+                    "name": "Ectoplasmic Form"
+                },
+                "Draconic Frenzy": {
+                    "name": "Draconic Frenzy",
+                    "description": "<p>The elder wyrmwraith makes two claw Strikes and one jaws Strike in any order.</p>"
+                },
+                "Drain Life": {
+                    "name": "Drain Life",
+                    "description": "<p>When an elder wyrmwraith deals damage to a living creature with a spectral jaws or spectral claw Strike, the elder wyrmwraith gains [[/r 24 #Temporary Hit Points]]{18 temporary Hit Points}, and the creature must succeed at a @Check[type:fortitude|dc:46] save or become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2}. Further damage dealt by the elder wyrmwraith's spectral jaws or spectral claws Strikes increases the value of the drained condition by 2 on a failed save, to a maximum of drained 4.</p>"
                 }
             },
             "name": "Elder Wyrmwraith",
@@ -8032,6 +8219,21 @@
                 },
                 "Dragon's Salvation": {
                     "name": "Dragon's Salvation"
+                },
+                "True Seeing (Constant)": {
+                    "name": "True Seeing (Constant)"
+                },
+                "Tongues (Constant)": {
+                    "name": "Tongues (Constant)"
+                },
+                "Circle of Protection (Constant)": {
+                    "name": "Circle of Protection (Constant)"
+                },
+                "Speak with Animals (Constant)": {
+                    "name": "Speak with Animals (Constant)"
+                },
+                "Dragon's Wisdom": {
+                    "description": "<p>Draconals embody the core value of wisdom, but every path to wisdom and enlightenment differs, so draconals' powers vary by temperament and coloration. A draconal's scale color determines their associated energy damage type.</p>\n<p>They gain resistance 15 to that damage type, deal 4d6 extra damage of that type with their Strikes, and deal 21d6 damage of that type with their breath weapon. They gain additional wisdom in the form of the basic and advanced domain spells from one domain, chosen from four domains available to draconals with their scale color. This red draconal has the protection and sun domains.</p>\n<hr />\n<p><em>Note: Choose the domain powers from the available domains according to the Draconal's scale color and add them to the \"Champion Focus Spell\" spellcasting entry.</em></p>\n<ul>\n<li><em><strong>All colors</strong> @UUID[Compendium.pf2e.domains.Ze2hoTyOQHbaQ6jD]{Air Domain} @UUID[Compendium.pf2e.domains.1BU8deh48XZFclWl]{Healing Domain}</em></li>\n<li><em><strong>Red</strong> @UUID[Compendium.pf2e.domains.jWmGQxJvKh5y5zfB]{Protection Domain} @UUID[Compendium.pf2e.domains.fqr2OnTww3bAq0ae]{Sun Domain}</em></li>\n</ul>"
                 }
             }
         },
@@ -8068,7 +8270,8 @@
                     "description": "<p>The locathah hunter ignores difficult terrain caused by aquatic terrain features.</p>"
                 },
                 "Pack Attack": {
-                    "description": "<p>The hunter's Strikes deal an additional [[/r {1d8}]]{1d8 damage} to creatures within reach of at least two of the hunter's allies.</p>"
+                    "description": "<p>The hunter's Strikes deal an additional [[/r {1d8}]]{1d8 damage} to creatures within reach of at least two of the hunter's allies.</p>",
+                    "name": "Pack Attack"
                 },
                 "Cooperative Hunting": {
                     "name": "Cooperative Hunting",
@@ -8079,7 +8282,8 @@
                     "description": "<p>The hunter prepares their hooked crossbow bolts with carefully woven seaweed.</p>\n<p>On a successful crossbow Strike, the bolt embeds and the seaweed fan deploys. The target takes a -10-foot status penalty to its swim Speed. A creature can Interact to attempt a @Check[type:athletics|dc:18] check, removing the bolt on a success.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.seWuw1GMSm3kzCWV]{Effect: Fan Bolt}</p>"
                 },
                 "Hunt Prey": {
-                    "name": "Hunt Prey"
+                    "name": "Hunt Prey",
+                    "description": "<p>The locathah hunter designates a single creature they can see and hear, or one they're Tracking, as their prey. The hunter gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the locathah hits their designated prey in a round, they deal an additional [[/r {1d8}[precision]]]{1d8 precision damage}. These effects last until the hunter uses Hunt Prey again.</p>"
                 }
             },
             "description": "<p>Deep in the sea, schools of locathah-piscine humanoids armed with spears and specialized crossbows-stalk sharks, sea serpents, and giant squid from the backs of their @UUID[Compendium.pf2e.pathfinder-bestiary.3VsQFEdIN5e1uWle]{Giant Moray Eel} mounts. The first hunters to strike are armed with barbed harpoons that deploy large fans of seaweed, slowing and exhausting their prey. A daring few locathahs use the embedded harpoon as a handle to ride prey for a short time. Once the creature is tired, remaining hunters finish it with longspears. Locathahs developed this hunting tradition to forge skilled warriors and deter potential attackers, partially in response to centuries of oppression and mistreatment from other aquatic cultures.</p>\n<p>Locathahs rarely hunt land-dwellers, instead offering to trade their services as guides in exchange for metal and ceramic items they can't build underwater-and for tubers, which they consider earthy delicacies. They render aid to damaged sailing ships and rescue shipwrecked sailors, providing food and guidance.</p>\n<p>Locathah communities-usually villages of 200 individuals or fewer-are matriarchal. The ruler is also as its primary egg-layer, providing each generation with powerful familial bonds. The communities are tight-knit and loyal. Matriarchs are advised and assisted by primal spellcasters and healers, who are often accompanied by octopus companions.</p>"
@@ -8483,7 +8687,8 @@
                     "name": "Tremorsense (Imprecise) 15 feet"
                 }
             },
-            "description": "<p>Lucky hermit crabs with plentiful resources can live for decades and grow to tremendous sizes, often with magical help. Too large for most natural shells, giant hermit crabs use a variety of debris instead, including wagons, boats, treasure chests, and even abandoned pieces of giant armor.</p>\n<hr />\n<p>Hermit crabs have hard exoskeletons like other crabs, but with much weaker abdomens. They find and \"wear\" shells as homes and protection, getting around with their front legs and claws. Surprisingly fierce, hermit crabs fight for new shells as they grow bigger, using an assortment of hollow alternatives as substitutes when shells of the right size can't be found.</p>"
+            "description": "<p>Lucky hermit crabs with plentiful resources can live for decades and grow to tremendous sizes, often with magical help. Too large for most natural shells, giant hermit crabs use a variety of debris instead, including wagons, boats, treasure chests, and even abandoned pieces of giant armor.</p>\n<hr />\n<p>Hermit crabs have hard exoskeletons like other crabs, but with much weaker abdomens. They find and \"wear\" shells as homes and protection, getting around with their front legs and claws. Surprisingly fierce, hermit crabs fight for new shells as they grow bigger, using an assortment of hollow alternatives as substitutes when shells of the right size can't be found.</p>",
+            "name": "Giant Hermit Crab"
         },
         "Piranha Swarm": {
             "name": "Piranha Swarm",
@@ -8954,10 +9159,23 @@
         "Feral Sea Skull Swarm": {
             "items": {
                 "Frightening Howl": {
-                    "description": "<p>The feral skull swarm emits a terrifying howl. Each creature within @Template[type:emanation|distance:60]{60 feet} must succeed at a @Check[type:will|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round on a critical failure).</p>\n<p>Whether it succeeds or fails its save, a creature is temporarily immune to Frightening Howl for 24 hours.</p>"
+                    "description": "<p>The feral skull swarm emits a terrifying howl. Each creature within @Template[type:emanation|distance:60]{60 feet} must succeed at a @Check[type:will|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round on a critical failure).</p>\n<p>Whether it succeeds or fails its save, a creature is temporarily immune to Frightening Howl for 24 hours.</p>",
+                    "name": "Frightening Howl"
                 },
                 "Scent (Imprecise) 30 feet": {
                     "name": "Scent (Imprecise) 30 feet"
+                },
+                "Feral Trackers": {
+                    "name": "Feral Trackers",
+                    "description": "<p>A feral skull swarm gains a +2 circumstance bonus to Perception checks to Seek and to Survival checks to Track, both against any creature that has taken damage from the swarm's Feral Gnaw within the previous 24 hours.</p>"
+                },
+                "Boneshard Burst": {
+                    "name": "Boneshard Burst",
+                    "description": "<p>When a feral skull swarm is reduced to 0 Hit Points, it erupts in an explosion of foul energy and bone fragments in a @Template[type:burst|distance:30], dealing [[/r {3d12[piercing],2d12[negative]}]]{3d12 piercing damage and 2d12 negative damage} (@Check[type:reflex|dc:32|basic:true] save).</p>"
+                },
+                "Feral Gnaw": {
+                    "name": "Feral Gnaw",
+                    "description": "<p>Each enemy in the swarm's space takes [[/r {2d6[bludgeoning],2d6[piercing],2d6[slashing]}]]{2d6 bludgeoning damage, 2d6 piercing damage, and 2d6 slashing damage} (@Check[type:reflex|dc:32|basic:true] save).</p>\n<p>A creature that fails its saving throw also takes @Localize[PF2E.PersistentDamage.Bleed1d10.success].</p>"
                 }
             },
             "name": "Feral Sea Skull Swarm",
