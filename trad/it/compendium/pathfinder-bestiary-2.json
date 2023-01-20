@@ -6287,44 +6287,65 @@
         "Ice Golem": {
             "items": {
                 "Breath Weapon": {
-                    "name": "Soffio"
+                    "name": "Soffio",
+                    "description": "<p>The ice golem exhales a blast of freezing mist that deals [[/r 6d6[cold]]] damage in a @Template[type:cone|distance:30] (@Check[type:reflex|dc:22|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "Golem Antimagic": {
-                    "name": "Golem Antimagic"
+                    "name": "Golem Antimagic",
+                    "description": "<p>harmed by fire ([[/r 4d6]], [[/r 1d10]] from areas or persistent damage); healed by cold (area [[/r 1d6]] HP); slowed by water</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as “cold and water”), either type of spell can affect the golem.</p>\n<p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p>\n<p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p>\n<p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for that round.</p>\n<p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>"
                 },
                 "Icy Demise": {
                     "name": "Icy Demise",
                     "description": "<p>When an ice golem is destroyed, its body explodes in a blast of frigid air and razor-sharp ice, dealing [[/r 2d6[slashing]]] damage and [[/r 2d6[cold]]] damage to creatures in a @Template[type:emanation|distance:20], with a @Check[type:reflex|dc:19|basic:true] save.</p>"
                 },
                 "Creeping Cold": {
-                    "description": "<p>When the ice golem gets a critical hit with a fist Strike, the target also takes [[/r 2d6[persistent,cold]]] damage and is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+                    "description": "<p>When the ice golem gets a critical hit with a fist Strike, the target also takes [[/r 2d6[persistent,cold]]] damage and is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>",
+                    "name": "Creeping Cold"
+                },
+                "Vulnerable to Endure Elements": {
+                    "name": "Vulnerable to Endure Elements",
+                    "description": "<p>An ice golem can be targeted with <em>@UUID[Compendium.pf2e.spells-srd.5esP2GVzvxWsMgaX]{Endure Elements}</em> even if it's not willing. If it is targeted, for 1 round it can't use Breath Weapon or benefit from creeping cold, and its fist attack doesn't deal cold damage.</p>"
                 }
             },
-            "name": "Ice Golem"
+            "name": "Ice Golem",
+            "description": "<p>Ice golems are either carved from massive blocks of ice, or pieced together from individual components that are then fused together through heat and refreezing. In most cases, the resulting shape is little more than a crude approximation of a humanoid form, but given the right talent, an ice golem could be an exquisitely carved statue of a mythical creature, famous persona, or even a deity.</p>\n<p>While ice golems most frequently serve as guardians in freezing climates, the magic that holds an ice golem together keeps it from melting in warmer temperatures. This, combined with the fact that ice golems lie on the lower end of the scale as far as cost and difficulty to create, gives these constructs unusual features that puts them in great demand. The rich and powerful in hot, arid regions often commission ice golems not only as guardians for their estates and vaults, but for comfort-the presence of an ice golem standing quietly sentinel in the corner of a room can help to keep the chamber at a comfortable temperature. The truly decadent use ice golems as servants to keep drinks cold.</p>"
         },
         "Marut": {
             "items": {
                 "Regeneration 15 (deactivated by chaotic)": {
-                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>"
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>",
+                    "name": "Regeneration 15 (deactivated by chaotic)"
                 },
                 "Air Walk (Constant)": {
-                    "description": "<p>Il bersaglio può camminare nell'aria come se camminasse su terreno solido. Può salire e scendere in questo modo con un'angolazione massima di 45 gradi.</p>"
+                    "description": "<p>Il bersaglio può camminare nell'aria come se camminasse su terreno solido. Può salire e scendere in questo modo con un'angolazione massima di 45 gradi.</p>",
+                    "name": "Air Walk (Constant)"
                 },
                 "True Seeing (Constant)": {
                     "name": "Visione del Vero (Costante)",
                     "description": "<p>Puoi vedere le cose entro 18 metri per quello che sono veramente. Il GM tira in segreto una prova di contrasto contro tutte le illusioni o trasmutazioni all'interno dell'area, ma soltanto allo scopo di determinare se vedi attraverso di esse (per esempio, se la prova ha successo contro un incantesimo metamorfosi, puoi vedere la vera forma della creatura, ma non poni fine all'incantesimo metamorfosi).</p>"
                 },
                 "Dimension Door (At will)": {
-                    "description": "<p>Aprendo una porta che oltrepassa lo spazio normale, ti teletrasporti istantaneamente insieme a qualsiasi oggetto che indossi e trasporti dalla tua posizione attuale in uno spazio vuoto che puoi vedere entro il raggio d'azione. Se con questo incantesimo porti con te un'altra creatura (anche se la stai trasportando in un contenitore extradimensionale), l'incantesimo è perduto.</p>\n<hr />\n<p><strong>Intensificato (5°)</strong> Il raggio d'azione aumenta fino a 1,8 km. Non è necessario che tu sia in grado di vedere la tua destinazione, a patto che tu sia già stato in quel luogo in passato e che tu ne conosca relativamente la locazione e la distanza dalla tua posizione. Sei temporaneamente immune per 1 ora.</p>"
+                    "description": "<p>Aprendo una porta che oltrepassa lo spazio normale, ti teletrasporti istantaneamente insieme a qualsiasi oggetto che indossi e trasporti dalla tua posizione attuale in uno spazio vuoto che puoi vedere entro il raggio d'azione. Se con questo incantesimo porti con te un'altra creatura (anche se la stai trasportando in un contenitore extradimensionale), l'incantesimo è perduto.</p>\n<hr />\n<p><strong>Intensificato (5°)</strong> Il raggio d'azione aumenta fino a 1,8 km. Non è necessario che tu sia in grado di vedere la tua destinazione, a patto che tu sia già stato in quel luogo in passato e che tu ne conosca relativamente la locazione e la distanza dalla tua posizione. Sei temporaneamente immune per 1 ora.</p>",
+                    "name": "Dimension Door (At will)"
                 },
                 "Final End": {
                     "name": "Final End",
                     "description": "<p>The marut is anathema to beings that unnaturally extend their existence, including undead. Its fists bypass such creatures' resistances to damage and apply the creatures' highest weakness to damage. If a marut kills a creature that rejuvenates, like a lich or ghost, it always knows that the creature isn't fully defeated.</p>"
                 },
                 "Fists of Thunder and Lightning": {
-                    "name": "Fists of Thunder and Lightning"
+                    "name": "Fists of Thunder and Lightning",
+                    "description": "<p>Each time the marut makes a fist Strike, it chooses either lightning or thunder.</p>\n<ul>\n<li>If it chooses lightning, the attack deals an additional [[/r 2d12[electricity]]] damage and the target must succeed at a @Check[type:fortitude|dc:33] save or be @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</li>\n<li>If it chooses thunder, the attack deals an additional [[/r 3d8[sonic]]] damage and the target must succeed at a @Check[type:fortitude|dc:36] save or be @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.</li>\n</ul>"
+                },
+                "Truespeech": {
+                    "name": "Truespeech",
+                    "description": "<p>A marut can speak with and understand any creature with a language.</p>"
+                },
+                "+2 Status to All Saves vs. Magic": {
+                    "name": "+2 Status to All Saves vs. Magic"
                 }
-            }
+            },
+            "name": "Marut",
+            "description": "<p>A marut is tasked with hunting mortals who cheat death by artificially extending their lifespans. This includes those who seek undeath, such as liches and vampires, but also includes those who use powerful magic to cling to their youth, use divination to discover and avoid an appointed death, or call too often on the power of resurrection. Once the marut has selected its target, the inevitable pursues its quarry without surcease or deviation until either it or the target is dead.</p>\n<p>Maruts seem to be carved from stone and clad in golden armor, yet they move with the deliberate grace of a creature made of flesh and bone. A marut never rushes, but its thunderous footfalls are relentless as it pursues its target. Though able to speak any language, the marut is taciturn even among inevitables.</p>"
         },
         "Skulk": {
             "name": "Skulk",
@@ -6344,7 +6365,8 @@
                     "description": "<p>The skulk gains the benefit of the @UUID[Compendium.pf2e.actionspf2e.SB7cMECVtE06kByk]{Cover Tracks} action in forests and subterranean settings without moving at half Speed.</p>"
                 },
                 "Chameleon Skin": {
-                    "description": "<p>The skulk's skin shifts and changes to match the surroundings. As long as most of their body is not covered by clothing or armor, the skulk gains a +2 circumstance bonus to Stealth checks to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide}.</p>"
+                    "description": "<p>The skulk's skin shifts and changes to match the surroundings. As long as most of their body is not covered by clothing or armor, the skulk gains a +2 circumstance bonus to Stealth checks to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide}.</p>",
+                    "name": "Chameleon Skin"
                 }
             },
             "description": "<p>The cowardly and lazy skulks live on the fringes of organized societies and steal from others without a second thought. Even murder is merely another necessity, and they think nothing of creeping into a house, dispatching the residents, and taking what they want.</p>\n<p>Their chameleon-like ability to blend into their surroundings makes skulks difficult to detect, so their ever-present populations around the periphery of large settlements are nearly impossible to dislodge permanently. They typically travel in small groups of no more than 16 individuals, since groups larger than that tend to break into violence directed at one other. While skulks see themselves as sharing a common history of being cast out and hated, this is not a strong enough bond to hold large groups of the creatures together with a shared purpose for very long.</p>\n<p>Entrances and exits from cities, especially less-guarded access ways around sewers and the like, are skulks' favorite stomping grounds. These sites allow them to closely observe who comes and goes from the city while also affording them swift escape options, should the authorities uncover their presence. On rare occasions, a well-disciplined skulk can rise to prominence within the local thieves' guild and become sought after for difficult jobs. Their repugnant personalities and overwhelming selfishness, however, usually means they are unable to secure long-lasting leadership roles.</p>\n<p>A typical skulk is 6 feet tall with similar body structure to a gangly human. Skulks mature quickly and can live up to 50 years, although most meet a violent end long before then. The rare skulk who manages to escape their society of violence and craven bitterness can be of any alignment, but those skulks who remain bound by their traditions always see these self-imposed exiles as the worst kind of traitors, and the exiles are often targeted for eradication to the exclusion of all other victims. More than one band of skulks has accidentally engineered its own doom after throwing caution to the wind and exposing its existence to the authorities in an ill-planned but violently passionate attempt to track down such an exile.</p>"
@@ -6365,22 +6387,42 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
                 },
                 "Plane Shift (Self Only)": {
-                    "description": "<p>Tu e i tuoi alleati attraversate le barriere tra i piani dell'esistenza. I bersagli si trasportano in un altro piano, come il Piano del Fuoco, il Piano delle Ombre o l'Abisso. Devi avere una conoscenza approfondita del piano di destinazione e devi usare un diapason magico creato con materiali provenienti da quel piano come focus per l'incantesimo. Mentre i diapason per la maggior parte dei piani più conosciuti sono non comuni, proprio come l'incantesimo spostamento planare, i diapason per i piani e semipiani più oscuri sono rari. L'incantesimo è molto impreciso, e appari a 1d20x45 km di distanza dall'ultimo posto in cui si trovava uno dei bersagli (a tua scelta) l'ultima volta che è stato in quel piano. Se per tutti i bersagli si tratta del primo viaggio in quel particolare piano, appari in un posto a caso nel nuovo piano. Spostamento planare non fornisce un mezzo di trasporto per un viaggio di ritorno, anche se un nuovo lancio di spostamento planare ti consente di tornare nel tuo piano precedente a meno che ci siano circostanze impedenti.</p>"
+                    "description": "<p>Tu e i tuoi alleati attraversate le barriere tra i piani dell'esistenza. I bersagli si trasportano in un altro piano, come il Piano del Fuoco, il Piano delle Ombre o l'Abisso. Devi avere una conoscenza approfondita del piano di destinazione e devi usare un diapason magico creato con materiali provenienti da quel piano come focus per l'incantesimo. Mentre i diapason per la maggior parte dei piani più conosciuti sono non comuni, proprio come l'incantesimo spostamento planare, i diapason per i piani e semipiani più oscuri sono rari. L'incantesimo è molto impreciso, e appari a 1d20x45 km di distanza dall'ultimo posto in cui si trovava uno dei bersagli (a tua scelta) l'ultima volta che è stato in quel piano. Se per tutti i bersagli si tratta del primo viaggio in quel particolare piano, appari in un posto a caso nel nuovo piano. Spostamento planare non fornisce un mezzo di trasporto per un viaggio di ritorno, anche se un nuovo lancio di spostamento planare ti consente di tornare nel tuo piano precedente a meno che ci siano circostanze impedenti.</p>",
+                    "name": "Plane Shift (Self Only)"
                 },
                 "Telepathy 100 feet": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
                     "name": "Telepathy 100 feet"
+                },
+                "Scent Demons 60 feet": {
+                    "name": "Scent Demons 60 feet",
+                    "description": "<p>A bebilith can smell demons as a precise sense.</p>"
+                },
+                "Abyssal Rot": {
+                    "name": "Abyssal Rot",
+                    "description": "<p>The drained condition from Abyssal rot is cumulative, to a maximum of drained 4.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 3d6[negative]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 3d6[negative]]] damage and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 3d6[negative]]] damage and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} (1 round)</p>"
+                },
+                "Dimensional Tether": {
+                    "name": "Dimensional Tether",
+                    "description": "<p>A creature hit by the bebilith's web Strike is @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} and tethered to the bebilith, preventing it from moving further away from the bebilith. The restrained creature is also under the effects of a <em>@UUID[Compendium.pf2e.spells-srd.ksLCg62cLOojw3gN]{Dimensional Anchor}</em> spell (DC 29) with a duration that lasts as long as the creature remains tethered. The bebilith can have only one creature tethered at a time.</p>\n<p>The DC to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} or @UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{Force Open} the tether is 29. The tether can be severed with a Strike (AC 20, Hardness 2, HP 20); this ends the dimensional anchor effect but does not free the restrained creature.</p>"
+                },
+                "Penetrating Strike": {
+                    "name": "Penetrating Strike",
+                    "description": "<p>Against demons, a bebilith's Strikes count as cold iron and good.</p>"
                 }
             },
-            "description": "<p>While demons control much of the Abyss, even they are hunted in the wilder regions of this horrific plane. The most notorious of these predators-though not the deadliest-is the bebilith. These fiends resemble elephant-sized spiders with glowing eyes, barbed chitin, and a fanged maw dripping caustic fluid.</p>\n<p>Many demons and planar travelers have underestimated bebiliths' devious intellects, believing them to be little more than oversized vermin. Bebiliths take advantage of this, ambushing foes with unexpected tactics. While they lash out at any creatures they encounter, they take great pleasure in chewing on demonic flesh. Qlippoth are the only creatures bebiliths never consume.</p>"
+            "description": "<p>While demons control much of the Abyss, even they are hunted in the wilder regions of this horrific plane. The most notorious of these predators-though not the deadliest-is the bebilith. These fiends resemble elephant-sized spiders with glowing eyes, barbed chitin, and a fanged maw dripping caustic fluid.</p>\n<p>Many demons and planar travelers have underestimated bebiliths' devious intellects, believing them to be little more than oversized vermin. Bebiliths take advantage of this, ambushing foes with unexpected tactics. While they lash out at any creatures they encounter, they take great pleasure in chewing on demonic flesh. Qlippoth are the only creatures bebiliths never consume.</p>",
+            "name": "Bebilith"
         },
         "Wereboar": {
             "items": {
                 "Change Shape": {
-                    "name": "Cambiare Forma"
+                    "name": "Cambiare Forma",
+                    "description": "<p>The werecreature changes into their humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is their hybrid shape. In humanoid shape, the werecreature uses their original humanoid size, loses their jaws and claw Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by their claw. In animal shape, their Speed and size change to that of the animal, they gain any special Strike effects of the animal that they didn't already have (such as @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Grab}), and they lose their weapon Strikes.</p>\n<p>Human with fist +10 for [[/r (1d4+2)[bludgeoning]]] damage, or @UUID[Compendium.pf2e.pathfinder-bestiary.4MwjCsa5O9aAjxSm]{Boar} with Speed 40 feet and tusk for [[/r (2d6+4)[piercing]]] damage.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Moon Frenzy": {
-                    "name": "Frenesia Lunare"
+                    "name": "Frenesia Lunare",
+                    "description": "<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases their reach by 5 feet, and increases the damage of their jaws Strike (or a similar Strike) by 2. When the moon sets or the sun rises, the werecreature returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} for [[/br 2d4 #hours]]{2d4 hours}.</p>"
                 },
                 "Dagger": {
                     "name": "Pugnale"
@@ -6396,9 +6438,16 @@
                     "description": "<p>The wereboar Strides twice and then makes a melee Strike. As long as they moved at least 20 feet, they gain a +2 circumstance bonus to their attack roll.</p>"
                 },
                 "Curse of the Wereboar": {
-                    "name": "Curse of the Wereboar"
+                    "name": "Curse of the Wereboar",
+                    "description": "<p>This curse affects only humanoids</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:15].</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a wearboar until dawn. The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>"
+                },
+                "Boar Empathy": {
+                    "name": "Boar Empathy",
+                    "description": "<p>The wereboar can communicate with boars and pigs.</p>"
                 }
-            }
+            },
+            "name": "Wereboar",
+            "description": "<p>Wereboars tend to be aggressive and stubborn, and often live with their own kind in small, remote communities. Even when they're inclined to interact with others, wereboars' short tempers and hostile nature lead other creatures to avoid them. Lone wereboars who settle down-often on remote farms-are extremely territorial, though others are content to roam and explore lands far from home. Their other habits also vary widely from individual to individual, right down to diet: some wereboars might feast on human flesh, while others are mostly vegetarian.</p>"
         },
         "Ice Yai": {
             "items": {
@@ -6410,7 +6459,8 @@
                     "description": "<p>The frost yai takes on the appearance of a @UUID[Compendium.pf2e.pathfinder-bestiary.oSvWsqFnQLS5wlvg]{Frost Giant}. This doesn't change their Speed or Strike attack and damage.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Invisibility (At will) (Self only)": {
-                    "description": "<p>Nascosto da un'illusione, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}. Questo lo rende @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuato} a tutte le creature, anche se queste possono tentare di trovare il bersaglio, rendendolo invece @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto} da esse. Se il bersaglio usa un'azione ostile, l'incantesimo termina dopo che quell'azione ostile viene completata.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> L'incantesimo dura 1 minuto, ma non termina se il bersaglio usa un'azione ostile.</p>"
+                    "description": "<p>Nascosto da un'illusione, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}. Questo lo rende @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuato} a tutte le creature, anche se queste possono tentare di trovare il bersaglio, rendendolo invece @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto} da esse. Se il bersaglio usa un'azione ostile, l'incantesimo termina dopo che quell'azione ostile viene completata.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> L'incantesimo dura 1 minuto, ma non termina se il bersaglio usa un'azione ostile.</p>",
+                    "name": "Invisibility (At will) (Self only)"
                 },
                 "Ice Missile": {
                     "name": "Ice Missile"
@@ -6420,16 +6470,19 @@
                     "description": "<p><strong>Trigger</strong> The ice yai is targeted by a ranged Strike or spell attack roll that doesn't have the fire trait</p>\n<hr />\n<p><strong>Effect</strong> The ice yai creates a reflective blockade of ice, gaining a +4 circumstance bonus to AC against the triggering attack roll. If the attack misses, the ice yai redirects the attack to another creature within 20 feet of the yai. The attacker rerolls the attack roll against the new target.</p>"
                 },
                 "Double Punch": {
-                    "name": "Double Punch"
+                    "name": "Double Punch",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The ice yai makes two fist Strikes.</p>"
                 },
                 "Frozen Strike": {
-                    "name": "Frozen Strike"
+                    "name": "Frozen Strike",
+                    "description": "<p>On a critical hit with a fist Strike or a hit with an ice missile Strike, the target creature must attempt a @Check[type:fortitude|dc:33] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 3} for 1 round.</p>"
                 },
                 "Regeneration 15 (Deactivated by Acid or Fire)": {
                     "name": "Regeneration 15 (Deactivated by Acid or Fire)"
                 }
             },
-            "name": "Ice Yai"
+            "name": "Ice Yai",
+            "description": "<p>Ice yai combine the brutality of frost giants with the grace of martial artists. More than any other oni, ice yai delight not in the pleasures of the flesh, but in flesh itself-rather than indulging in oft-destructive mortal vices like drink or lust, ice yai pursue physical perfection, reveling in the process of turning their bodies into powerful fighting machines.</p>"
         },
         "Zebub": {
             "items": {
@@ -6449,17 +6502,20 @@
                     "description": "<p>Nascosto da un'illusione, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}. Questo lo rende @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuato} a tutte le creature, anche se queste possono tentare di trovare il bersaglio, rendendolo invece @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto} da esse. Se il bersaglio usa un'azione ostile, l'incantesimo termina dopo che quell'azione ostile viene completata.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> L'incantesimo dura 1 minuto, ma non termina se il bersaglio usa un'azione ostile.</p>"
                 },
                 "Summon Animal (Swarm creatures only)": {
-                    "description": "<p>Evochi un animale che combatta per te. Evochi una creatura comune con il tratto animale e il cui livello è -1. Intensificare l'incantesimo aumenta il livello massimo della creatura che puoi evocare.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Livello 1</p>\n<p><strong>Intensificato (3°)</strong> Livello 2</p>\n<p><strong>Intensificato (4°)</strong> Livello 3</p>\n<p><strong>Intensificato (5°)</strong> Livello 5</p>\n<p><strong>Intensificato (6°)</strong> Livello 7</p>\n<p><strong>Intensificato (7°)</strong> Livello 9</p>\n<p><strong>Intensificato (8°)</strong> Livello 11</p>\n<p><strong>Intensificato (9°)</strong> Livello 13</p>\n<p><strong>Intensificato (10°)</strong> Livello 15</p>"
+                    "description": "<p>Evochi un animale che combatta per te. Evochi una creatura comune con il tratto animale e il cui livello è -1. Intensificare l'incantesimo aumenta il livello massimo della creatura che puoi evocare.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Livello 1</p>\n<p><strong>Intensificato (3°)</strong> Livello 2</p>\n<p><strong>Intensificato (4°)</strong> Livello 3</p>\n<p><strong>Intensificato (5°)</strong> Livello 5</p>\n<p><strong>Intensificato (6°)</strong> Livello 7</p>\n<p><strong>Intensificato (7°)</strong> Livello 9</p>\n<p><strong>Intensificato (8°)</strong> Livello 11</p>\n<p><strong>Intensificato (9°)</strong> Livello 13</p>\n<p><strong>Intensificato (10°)</strong> Livello 15</p>",
+                    "name": "Summon Animal (Swarm creatures only)"
                 },
                 "Telepathy 100 feet": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
                     "name": "Telepathy 100 feet"
                 },
                 "Cocytan Filth": {
-                    "name": "Cocytan Filth"
+                    "name": "Cocytan Filth",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Onset</strong> [[/r 1d4 #days]]{1d4 days}</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 day)</p>"
                 },
                 "Infernal Eye": {
-                    "name": "Infernal Eye"
+                    "name": "Infernal Eye",
+                    "description": "<p>The zebub records everything they see, and though they don't remember all observations, they can pass them along to another creature.</p>\n<p>The zebub replays 10 minutes of witnessed events to a touched willing creature, which receives the memories in a flash of information. By remaining in contact, the zebub can spend additional 3-action activities to replay more information.</p>\n<p>After relaying their visions to another, the zebub can't ever recall those events again.</p>"
                 }
             },
             "name": "Zebub",
@@ -6471,9 +6527,12 @@
                     "name": "Fauci"
                 },
                 "Planar Incarnation - Abyss": {
-                    "name": "Planar Incarnation - Abyss"
+                    "name": "Planar Incarnation - Abyss",
+                    "description": "<p>All petitioners are formed from and personify the nature of the plane on which they manifest, and their statistics are adjusted as summarized below. They also gain any trait associated with creatures from their plane.</p>\n<p><strong>Abyss</strong> The larvae appear as maggot-like grubs with the face the petitioners had in life</p>\n<ul>\n<li><strong>Alignment</strong> CE;</li>\n<li><strong>Language</strong> Abyssal;</li>\n<li><strong>Additional Ability</strong> immune to disease and poison;</li>\n<li><strong>Melee</strong> jaws +7, <strong>Damage</strong> 1d8+2 piercing </li>\n</ul>"
                 }
-            }
+            },
+            "name": "Petitioner (Abyss)",
+            "description": "<p>When a mortal dies, their soul travels to the Boneyard in the Outer Planes where they are judged by Pharasma, the goddess of the dead. Once they have been judged, their soul is sent on to their final reward or punishment in the afterlife, and in the process is transformed into a creature known as a petitioner. This process grants the soul a new body, one whose shape is the result of the prevailing philosophical forces of the plane to which it is sent. The petitioner's memories from their life are typically wiped nearly clean, allowing them to retain only a few hazy fragments akin to half-remembered dreams. Regardless of the petitioner's size, power, or nature in life, they're a Medium creature in their afterlife.</p>\n<p>Existence as a petitioner can last for eons, but this state is not necessarily eternal. Deities, powerful denizens of the Great Beyond, or even the outer planes themselves can further change the petitioner's nature by transforming them into raw quintessence, spiritual essence that is then used to expand a plane's physical manifestation, or by transforming the petitioner into a new form of supernatural life such as a celestial, monitor, or fiend. Should a petitioner die, their body breaks down in a process akin to decay, their nature reverting back to the quintessence or elements that make up their plane. This represents the true end of a soul's journey: their associated life essence travels back to the heart of the Great Beyond to be recycled into the Positive Energy plane, fueling the creation of entirely new souls.</p>\n<p>The larvae appear as maggot-like grubs with the face the petitioners had in life.</p>"
         },
         "Hezrou": {
             "items": {
@@ -6492,11 +6551,16 @@
                     "name": "Dimension Door (At will)"
                 },
                 "Divine Wrath (At will)": {
-                    "description": "<p>Puoi canalizzare la rabbia nutrita dalla tua divinit&agrave; contro i nemici di allineamento opposto. Scegli un allineamento che appartiene alla tua divinit&agrave; (caotico, malvagio, buono o legale). Non puoi lanciare questo incantesimo se non hai una divinit&agrave; o se la tua divinit&agrave; &egrave; neutrale pura. Questo incantesimo ottiene il tratto dell&rsquo;allineamento scelto. Infliggi 4d10 danni di quell&rsquo;allineamento; ciascuna creatura all&rsquo;interno dell&rsquo;area deve effettuare un tiro salvezza su Tempra. Le creature che hanno un allineamento corrispondente non sono colpire. Tratta il risultato di quelle che non hanno un allineamento corrispondente n&eacute; opposto come aumentato di un grado.</p><hr /><p><strong>Successo Critico</strong> La creatura non &egrave; influenzata.</p><p><strong>Successo </strong>La creatura subisce met&agrave; dei danni.</p><p><strong>Fallimento </strong>La creatura subisce danni per intero ed &egrave; @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Nauseata} 1.</p><p><strong>Fallimento Critico</strong> La creatura subisce danni per intero ed &egrave; @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Nauseata} 2; mentre &egrave; @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Nauseata}, &egrave; anche @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Rallentata} 1.</p><hr /><p><strong>Intensificato (+1)</strong> Il danno aumenta di 1d10</p>"
+                    "description": "<p>Puoi canalizzare la rabbia nutrita dalla tua divinit&agrave; contro i nemici di allineamento opposto. Scegli un allineamento che appartiene alla tua divinit&agrave; (caotico, malvagio, buono o legale). Non puoi lanciare questo incantesimo se non hai una divinit&agrave; o se la tua divinit&agrave; &egrave; neutrale pura. Questo incantesimo ottiene il tratto dell&rsquo;allineamento scelto. Infliggi 4d10 danni di quell&rsquo;allineamento; ciascuna creatura all&rsquo;interno dell&rsquo;area deve effettuare un tiro salvezza su Tempra. Le creature che hanno un allineamento corrispondente non sono colpire. Tratta il risultato di quelle che non hanno un allineamento corrispondente n&eacute; opposto come aumentato di un grado.</p><hr /><p><strong>Successo Critico</strong> La creatura non &egrave; influenzata.</p><p><strong>Successo </strong>La creatura subisce met&agrave; dei danni.</p><p><strong>Fallimento </strong>La creatura subisce danni per intero ed &egrave; @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Nauseata} 1.</p><p><strong>Fallimento Critico</strong> La creatura subisce danni per intero ed &egrave; @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Nauseata} 2; mentre &egrave; @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Nauseata}, &egrave; anche @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Rallentata} 1.</p><hr /><p><strong>Intensificato (+1)</strong> Il danno aumenta di 1d10</p>",
+                    "name": "Divine Wrath (At will)"
                 },
                 "Purity Vulnerability": {
                     "description": "<p>A hezrou revels in the foulness it exudes and becomes distraught when contaminations are purified. The first time in a round when a contamination is purified (such as via purify food and drink) or a toxin is neutralized (such as via neutralize poison) within 30 feet of a hezrou, the demon takes [[/r 6d6[mental]]] damage.</p>",
                     "name": "Purity Vulnerability"
+                },
+                "Poisonous Pustules": {
+                    "name": "Poisonous Pustules",
+                    "description": "<p><strong>Requirements</strong> The hezrou is grappling a creature</p>\n<hr />\n<p><strong>Effect</strong> Toxic fluids spurt from burst boils and weeping wens on the hezrou's body. A creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} by the hezrou takes [[/r (2d12+6)[poison]]] damage (@Check[type:fortitude|dc:30|basic:true] save).</p>"
                 }
             },
             "name": "Hezrou",
@@ -6519,13 +6583,20 @@
                     "name": "Root"
                 },
                 "Light Pulse": {
-                    "name": "Light Pulse"
+                    "name": "Light Pulse",
+                    "description": "<p>@Template[type:emanation|distance:50]{50 feet}</p>\n<p>The moonflower releases a pulse of bright light. Each non-moonflower creature in the emanation must attempt a @Check[type:fortitude|dc:23] save.</p>\n<p>The moonflower can't use Light Pulse again for [[/br 1d4 #Recharge Light Pulse]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for [[/br 1d4 #Duration Dazzled]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for [[/br 1d4 #Duration Blinded]]{1d4 rounds}.</p>"
                 },
                 "Pod Prison": {
                     "name": "Pod Prison",
                     "description": "<p><strong>Trigger</strong> The moonflower has swallowed a creature</p>\n<hr />\n<p><strong>Effect</strong> The swallowed creature is wrapped in a tight cocoon and extruded from the moonflower's body into an adjacent square. The creature continues to be Swallowed Whole. It can't use Acrobatics to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} a pod, but other creatures can attempt to Rupture the pod. The cocooned creature takes half damage from any damage dealt to the cocoon. Once the cocoon is Ruptured, it deflates and decays.</p>"
+                },
+                "Pod Spawn": {
+                    "description": "<p>Should a Small or larger creature die within a pod prison, the pod transforms into an adult moonflower with full Hit Points after [[/br 1d4 #Moonflower Transformation]]{1d4 hours} of growth.</p>\n<p>The newly formed moonflower has its own consciousness, but some aspect of its trunk or blossoms resembles the creature that died within. The dead creature's equipment remains inside the new moonflower and can be retrieved if the moonflower is slain.</p>",
+                    "name": "Pod Spawn"
                 }
-            }
+            },
+            "name": "Moonflower",
+            "description": "<p>These enormous plants have thick, knotted trunks festooned with fanged blossoms. A gaping mouth sits at the top of the trunk, capable of swallowing most creatures smaller than the moonflower whole. Moonflowers can move slowly on their powerful roots or use them to attack, but usually they dig them deeply into the surrounding ground and remain stationary to await prey.</p>\n<p>Though moonflowers can't speak in the conventional sense, they communicate telepathically with other moonflowers. Explorers who encounter a single moonflower can thus be assured that any other moonflowers in the vicinity will be prepared for them. Those who manage to intercept a moonflower's telepathic communications are assaulted by visions of dreadful, primeval jungles ruled over by titanic plant life. Whether this is some vision of the past or a dream of the future shared by all moonflowers is unknown.</p>\n<p>Moonflowers are alien life-forms from a long-dead planet, but their proliferation throughout the galaxy has been ensured through the machinations of the Dominion of the Black, a sinister, alien organization from the dark places between the stars.</p>"
         },
         "Ancient Crystal Dragon": {
             "items": {
@@ -6534,7 +6605,8 @@
                     "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's tail uses a move action or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The dragon makes a tail Strike at the creature with a -2 penalty. If it hits, the dragon disrupts the creature's action.</p>"
                 },
                 "Breath Weapon": {
-                    "name": "Soffio"
+                    "name": "Soffio",
+                    "description": "<p>The dragon breathes a flurry of piercing crystals that deals [[/r 17d6[piercing]]] damage in a @Template[type:cone|distance:50] (@Check[type:reflex|dc:38|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "Draconic Frenzy": {
                     "name": "Frenesia Draconica",
@@ -6566,20 +6638,24 @@
                     "description": "<p>@Template[type:emanation|distance:27]{27 metri}, @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura} @Check[type:will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "Reflect Spell": {
-                    "name": "Riflettere Incantesimo"
+                    "name": "Riflettere Incantesimo",
+                    "description": "<p><strong>Trigger</strong> The crystal dragon is targeted by a ranged spell attack roll</p>\n<hr />\n<p><strong>Effect</strong> The crystal dragon adjusts a wing to try to reflect the spell and gains a +4 circumstance bonus to AC against the triggering attack. If the attack misses, the spell is reflected back at the caster, who must roll a second ranged spell attack roll against their own AC to determine if the spell hits them instead.</p>"
                 },
                 "Draconic Momentum": {
-                    "name": "Impeto Draconico"
+                    "name": "Impeto Draconico",
+                    "description": "<p>The dragon recharges their Breath Weapon whenever they critically hit with a Strike.</p>"
                 },
                 "Extra Reaction": {
                     "name": "Extra Reaction",
                     "description": "<p>The dragon gains 2 reactions at the start of each of their turns.</p>"
                 },
                 "Scintillating Aura": {
-                    "name": "Scintillating Aura"
+                    "name": "Scintillating Aura",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A swirling vortex of reflected color and light shimmers around the crystal dragon. Creatures in this aura's emanation are @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled}. Each creature that ends its turn in the emanation must succeed at a @Check[type:will|dc:34] saving throw or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). Once a creature succeeds at this save, it is temporarily immune to the stunning effect for 1 minute. The crystal dragon can turn this aura on or off using a single action, which has the concentrate trait, and it can choose not to affect allies.</p>"
                 },
                 "Crystallize Flesh": {
-                    "name": "Crystallize Flesh"
+                    "name": "Crystallize Flesh",
+                    "description": "<p><strong>Trigger</strong> The crystal dragon damages a creature made of flesh with a jaws Strike</p>\n<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The dragon embeds transformative crystals in the creature's flesh. The creature must attempt a @Check[type:fortitude|dc:37] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as portions of its flesh turn crystalline.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition value increases by 1 (or by 2 on a critical failure). A successful save reduces the slowed condition value by 1. A creature unable to act due to the slowed condition from Crystallize Flesh is @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} permanently, transforming into a crystalline statue. The effect ends if the creature is petrified or the slowed condition is removed.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
                 },
                 "Tremorsense (Imprecise) 60 feet": {
                     "name": "Tremorsense (Imprecise) 60 feet"
@@ -6588,7 +6664,8 @@
                     "name": "Scent (Imprecise) 60 feet"
                 }
             },
-            "name": "Ancient Crystal Dragon"
+            "name": "Ancient Crystal Dragon",
+            "description": "<p>Good-natured but vain, crystal dragons are beautiful creatures with brilliant hides made of multicolored crystal and gemstone. Their beauty is a source of great pride but is also something of a weakness, as crystal dragons are easily angered by insults about their appearance. Despite their relatively benign natures when compared to other true dragons, crystal dragons can be short tempered and prone to finding insults where none were intended. Although their opinions are changeable, crystal dragons prefer orderly environments and are not fond of sudden interruptions or distractions.</p>\n<p>Crystal dragons build their lairs in underground grottoes, where they cultivate environments of great beauty. Their exacting standards and vivid imaginations mean that they are always working to improve the appearance or layout of some part of their lair. These lairs are unique to each individual crystal dragon, but there are always plenty of reflective surfaces that allow the dragon to observe their own appearance. These range from crystals to reflecting pools to finely crafted mirrors, which are arranged throughout the lair in a pleasing array. Gifts of well-crafted or magical mirrors are an excellent way to curry favor with a crystal dragon.</p>\n<p>Although crystal dragons are easily distracted by their sparkling collections or their vanity, they remain good-hearted creatures at the core and make friends quickly. While a crystal dragon tends to find evil creatures uncouth and unpleasant, any other nearby denizen or inhabitant of their home could become fast friends or beloved pets, depending upon the creature's capacity for conversation (and for providing the frequent praise and compliments that crystal dragons hunger for).</p>"
         },
         "Korred": {
             "items": {
@@ -6597,7 +6674,8 @@
                     "name": "Shatter (At will)"
                 },
                 "Shape Stone (At will)": {
-                    "description": "<p>Scolpisci la pietra in una forma grezza a tua scelta. Il procedimento di scultura è troppo grezzo per produrre parti complesse, dettagli precisi, parti mobili o simili. Qualsiasi creatura che si trova sulla sommità della pietra quando la rimodelli deve effettuare un tiro salvezza su Riflessi o una prova di Acrobazia.</p><hr /><p><strong>Successo</strong> La creatura non è influenzata.</p><p><strong>Fallimento</strong> La creatura cade prona sulla sommità della pietra.</p><p><strong>Fallimento Critico</strong> La creatura cade dalla pietra (se applicabile) ed atterra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona}.</p>"
+                    "description": "<p>Scolpisci la pietra in una forma grezza a tua scelta. Il procedimento di scultura è troppo grezzo per produrre parti complesse, dettagli precisi, parti mobili o simili. Qualsiasi creatura che si trova sulla sommità della pietra quando la rimodelli deve effettuare un tiro salvezza su Riflessi o una prova di Acrobazia.</p><hr /><p><strong>Successo</strong> La creatura non è influenzata.</p><p><strong>Fallimento</strong> La creatura cade prona sulla sommità della pietra.</p><p><strong>Fallimento Critico</strong> La creatura cade dalla pietra (se applicabile) ed atterra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona}.</p>",
+                    "name": "Shape Stone (At will)"
                 },
                 "Rock": {
                     "name": "Roccia"
@@ -6614,15 +6692,20 @@
                     "description": "<p>@Template[type:emanation|distance:5]{5 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>The korred's long, animated hair reaches out and interferes with creatures in the area. The korred can select which targets are affected by their animated hair. An affected creature that ends its turn in the emanation must succeed at a @Check[type:reflex|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical failure) as long as it remains in the aura.</p>"
                 },
                 "Hair Snare": {
-                    "name": "Hair Snare"
+                    "name": "Hair Snare",
+                    "description": "<p>The korred causes a long, tangled length of their hair to detach from their body and snake out to coil around an adjacent creature. The creature must attempt a @Check[type:reflex|dc:21] save.</p>\n<p>The korred cannot use Hair Snare again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The hair wraps around the creature. The creature takes a -10-foot circumstance penalty to all of its Speeds until it Escapes (DC 21) or until the korred uses Hair Snare again (at which point the previous snare drops to the ground, no longer animated).</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} until it Escapes (DC 21) or the korred uses Hair Snare again.</p>"
                 },
                 "Otherworldly Laugh": {
-                    "name": "Otherworldly Laugh"
+                    "name": "Otherworldly Laugh",
+                    "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The korred unleashes an otherworldly laugh. Each non-fey creature within a @Template[type:burst|distance:30] must attempt a @Check[type:fortitude|dc:21] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round (or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} on a critical failure).</p>"
                 },
                 "Stone Stride": {
-                    "name": "Stone Stride"
+                    "name": "Stone Stride",
+                    "description": "<p>The korred steps into a block of stone large enough for them to fit inside and instantly teleports to any other stone within 30 feet that has the same minimum size. Once the korred enters the stone, they instantly know the rough locations of other sufficiently large stones within 30 feet. They can exit from the original stone, if they prefer. They can't carry extradimensional spaces with them when they Stone Stride; if the korred attempts to do so, Stone Stride fails.</p>"
                 }
-            }
+            },
+            "name": "Korred",
+            "description": "<p>Korreds are reclusive fey in the form of small, hirsute individuals with long, animated manes of hair. While korreds have a natural affinity and admiration for stones and boulders, they prefer to dwell aboveground in areas of rocky forest or wooded hills rather than in caves. Korreds are a private people who don't take kindly to intruders, and they invariably work to drive off or kill any non-fey who stumble into their territory. Staunchly proud of their hair, korreds choose their minimal attire so as to allow their body hair to flow freely, often wearing only a belt with a pouch for throwing rocks and trimming shears-though this belt and pouch are rarely visible under their wild manes.</p>"
         },
         "Destrachan": {
             "items": {
@@ -6633,26 +6716,49 @@
                     "name": "Fauci"
                 },
                 "Echolocation 120 feet": {
-                    "name": "Echolocation 120 feet"
+                    "name": "Echolocation 120 feet",
+                    "description": "<p>A destrachan can use its hearing as a precise sense at the listed range.</p>"
                 },
                 "Destructive Harmonics": {
-                    "name": "Destructive Harmonics"
+                    "name": "Destructive Harmonics",
+                    "description": "<p>The destrachan emits a harsh sonic cry that deals [[/r 9d6[sonic]]] damage (@Check[type:reflex|dc:26|basic:true] save) in either a @Template[type:cone|distance:60] or a @Template[type:burst|distance:30].</p>\n<p>It can't use Destructive Harmonics again for [[/br 1d4 #Recharge Destructive Harmonics]]{1d4 rounds}.</p>"
+                },
+                "+4 Status to All Saves vs. Sonic": {
+                    "name": "+4 Status to All Saves vs. Sonic"
+                },
+                "Painful Harmonics": {
+                    "name": "Painful Harmonics",
+                    "description": "<p>The destrachan emits a sonic cry in either a @Template[type:cone|distance:60] or a @Template[type:burst|distance:30]. This discordant ululation resonates along the nerves and bones of living creatures in the area, manifesting as waves of incapacitating pain washing over the victims. Each living creature in the area must attempt a @Check[type:fortitude|dc:26] save.</p>\n<p>The destrachan can't use Painful Harmonics again for [[/br 1d4 #Recharge Painful Harmonics]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 3 rounds and @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The creature is deafened for 1 minute and @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3}.</p>"
+                },
+                "Shattering Harmonics": {
+                    "name": "Shattering Harmonics",
+                    "description": "<p>The destrachan focuses its harmonics against a single item within 60 feet that is made of crystal, metal, stone, or wood. The target object takes [[/r 7d8[sonic]]] damage. If the item is attended, its bearer can attempt a @Check[type:reflex|dc:26|basic:true] save for the item.</p>\n<p>The destrachan can't use Shattering Harmonics again for [[/br 1d4 #Recharge Shattering Harmonics]]{1d4 rounds}.</p>"
                 }
             },
-            "name": "Destrachan"
+            "name": "Destrachan",
+            "description": "<p>This underground reptilian horror walks on two powerful hind legs. Its forelimbs are armed with sharp curving claws, and its toothy, eyeless, tubular head has three hypersensitive frilled ears that turn toward any sound made in its vicinity. This cruel monster's true weapon, however, is an amplified version of the sonic cry that it uses to navigate, communicate, and hunt. It communicates with others of its kind through a complex series of clicks, shrieks, and whistles, but it is intelligent enough to understand other languages. Most destrachans understand at least one other language-usually Undercommon-and can often be reasoned with.</p>\n<p>An obligate carnivore, the destrachan relishes fresh meat but won't hesitate to make a meal of carrion it finds in its path. When traveling in packs, the creatures take great delight in stalking travelers through miles of tunnels before attacking and subduing them, then devouring them alive.</p>"
         },
         "Giant Dragonfly Nymph": {
             "items": {
                 "Mandibles": {
                     "name": "Mandibole"
+                },
+                "Wavesense (Imprecise) 30 feet": {
+                    "name": "Wavesense (Imprecise) 30 feet"
+                },
+                "Extend Mandibles": {
+                    "name": "Extend Mandibles",
+                    "description": "<p>The giant dragonfly nymph extends its jaws to a surprising distance. The dragonfly nymph makes a mandibles Strike with a reach of 10 feet, but the mandibles lose the agile trait for this Strike.</p>"
                 }
             },
-            "description": "<p>The aquatic, wingless offspring of dragonflies are called dragonfly nymphs. Giant dragonfly nymphs can be several feet in length and mostly hunt in shallow waters, eating carrion and ambushing living creatures with their fully grown counterparts. They are not daunted by larger creatures, compelled by their instinct to eat as much as possible to sustain their growth.</p>"
+            "description": "<p>The aquatic, wingless offspring of dragonflies are called dragonfly nymphs. Giant dragonfly nymphs can be several feet in length and mostly hunt in shallow waters, eating carrion and ambushing living creatures with their fully grown counterparts. They are not daunted by larger creatures, compelled by their instinct to eat as much as possible to sustain their growth.</p>",
+            "name": "Giant Dragonfly Nymph"
         },
         "Ghonhatine": {
             "items": {
                 "Jaws": {
-                    "name": "Fauci"
+                    "name": "Fauci",
+                    "description": "<p>@Localize[PF2E.PersistentDamage.Acid1d6.success]</p>"
                 },
                 "Claw": {
                     "name": "Artiglio"
@@ -6662,15 +6768,23 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
                 },
                 "Stench": {
-                    "name": "Fetore"
+                    "name": "Fetore",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it's sickened on a critical failure).</p>\n<p>While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.wX9L6fbqVMLP05hn]{Effect: Stench}</p>"
                 },
                 "Feed": {
-                    "name": "Feed"
+                    "name": "Feed",
+                    "description": "<p><strong>Requirements</strong> The ghonhatine is adjacent to the corpse of a creature that died within the last hour</p>\n<hr />\n<p><strong>Effect</strong> The ghonhatine devours a chunk of the corpse. For 1 minute, the ghonhatine gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{Fast Healing 5} and a +2 status bonus to damage rolls. It can gain these benefits from any given corpse only once.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.wPW6kVscJgBLPVKZ]{Effect: Ghonhatine Feed}</p>"
                 },
                 "Fleshgout": {
-                    "name": "Fleshgout"
+                    "name": "Fleshgout",
+                    "description": "<p>A ghonhatine's vomit carries an awful disease that, over time, can cause a suffering creature's flesh to develop painful boils that eventually slough away, leaving gaping wounds</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:28]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/r 1d4 #Incubation]]{1d4 hours})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>\n<p><strong>Stage 4</strong> enfeebled 2 and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 3} (1 day)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 4}, enfeebled 2, and @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 6</strong> dead</p>"
+                },
+                "Vomit": {
+                    "name": "Vomit"
                 }
-            }
+            },
+            "name": "Ghonhatine",
+            "description": "<p>In transforming xulgaths, drow fleshwarpers sought not to create a new type of creature but to recapture a form of xulgath predecessor believed entirely vanished from Golarion. Ghonhatines are the result-hulking reptilian beasts who prefer to crawl on all fours and tear at their foes with bestial fury.</p>\n<hr />\n<p>Horrid abominations reshaped by vile alchemical magic, the two fleshwarps presented here were created by drow, who transform captured elves or xulgaths into twisted monstrosities that can then be loosed to cause havoc and terror.</p>"
         },
         "Lerritan": {
             "items": {
@@ -6700,9 +6814,13 @@
                 "Tenacious Flames": {
                     "name": "Tenacious Flames",
                     "description": "<p>@Template[type:emanation|distance:100]{100 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Creatures in the emanation cannot recover from persistent fire damage.</p>"
+                },
+                "Throw Rock": {
+                    "description": "<p>A lerritan can break stony scales off its body to throw; these scales reform at the end of each round, so the lerritan is never without a supply of rocks to hurl.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ThrowRock]</p>"
                 }
             },
-            "name": "Lerritan"
+            "name": "Lerritan",
+            "description": "<p>Lerritans are unstoppable giants with skin of volcanic glass and blood of roiling lava. These malicious arsonists would see the world burned to a cinder. They pay homage to Ymeri, the evil elemental demigod of fire, and they bully other fiery creatures. When the urge to immolate grows too great to ignore, lerritans burn forests, destroy villages, and boil rivers, but they avoid large bodies of water.</p>"
         },
         "Osyluth": {
             "items": {
@@ -6737,19 +6855,35 @@
                 "Stygian Inquisitor": {
                     "name": "Stygian Inquisitor",
                     "description": "<p>The osyluth telepathically questions a creature affected by <em>@UUID[Compendium.pf2e.spells-srd.aewxsale5xWEPKLk]{Zone of Truth}</em>. After 1 round, if the creature intentionally refuses to answer the question, it takes [[/r 2d6[mental]]] damage.</p>"
+                },
+                "Osyluth Venom": {
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 2d6[poison]]] damage, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 3d6[poison]]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round). Once a creature reaches stage 3, it takes a -4 status penalty to Will saves against attempts to @UUID[Compendium.pf2e.actionspf2e.tHCqgwjtQtzNqVvd]{Coerce} it for 1 hour (this is a mental effect)</p>",
+                    "name": "Osyluth Venom"
+                },
+                "Quick Invisibility": {
+                    "name": "Quick Invisibility",
+                    "description": "<p>The osyluth can cast innate <em>@UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility}</em> using only 1 action.</p>"
+                },
+                "Sadistic Strike": {
+                    "name": "Sadistic Strike",
+                    "description": "<p>An osyluth deals an extra [[/r {2d6}]]{2d6 damage} whenever they Strike an @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened}, or @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} creature.</p>"
                 }
-            }
+            },
+            "name": "Osyluth",
+            "description": "<p>An osyluth is an unparalleled inquisitor that revels in the sadism and torture for which Hell is so well known. These devils' charge is to seek out heresies, both among mortals and among other fiends-a commandment they uphold with unwavering fervor. They spawn within the Styx-fed swamps of Hell's fifth layer, Stygia; where heresies and the souls of heretics stagnate, osyluths eventually rise. In the remote corners of that same layer of Hell, they build massive, calcified hives where they perform their vile interrogations and perfect their torturous arts upon lesser devils and petitioners alike.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others</p>"
         },
         "Oread Guard": {
             "items": {
                 "Bastard Sword": {
-                    "name": "Spada Bastarda"
+                    "name": "Spada Bastarda",
+                    "description": "<p>This broad‑bladed sword, sometimes called the hand‑and‑a‑half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra piercing or slashing power.</p>"
                 },
                 "Light Hammer": {
                     "name": "Martello Leggero"
                 }
             },
-            "name": "Oread Guard"
+            "name": "Oread Guard",
+            "description": "<p>Elemental earth laces through the bones of oreads, who appear similar to stone statues of their mortal ancestry, with delicate crystals in place of hair, fur, or scales. Oreads are stoic and slow to plan but are of steadfast resolve and unwavering in their convictions.</p>\n<p>The typical oread cherishes quiet seclusion. Yet as they age, many oreads find themselves inexplicably drawn to some far-flung location with a pull like that exerted on the needle of a compass-intangible, constant, and ultimately irresistible. The destination of this mysterious pilgrimage is unique to each oread, though it usually ends in some place of great mystical power, natural splendor, or esoteric learning. Most oreads are drawn to a place with which they are somewhat familiar, but a rare few feel drawn to travel in a seemingly random direction, departing with only their hope that they'll discover whatever mystery lies at the end of their invisible path.</p>\n<p>Many oreads find that the role of a guard suits their personality well, for in such a role they can feel as if they are helping to promote order but also find time to stand vigil as lone sentinels over a specific portion of a fortification or a remote location on a wilderness trail.</p>"
         },
         "Black Bear": {
             "items": {
@@ -6764,7 +6898,8 @@
                     "description": "<p>The black bear gains a +1 circumstance bonus to damage rolls against creatures it has grabbed.</p>"
                 }
             },
-            "name": "Black Bear"
+            "name": "Black Bear",
+            "description": "<p>Contrary to the name, black bears can be cinnamon or even blond in coloration, depending on which hue is most beneficial for surviving in their local environment. Regardless of their coloration, they are opportunistic eaters who gain sustenance from berries and nuts just as often as from fish and smaller mammals. They steal food when they find it, including from humanoid camps. Although they are predators, black bears are more timid than other bears. Unless defending themselves or their young, black bears often avoid conflict or fight only until they can retreat.</p>"
         },
         "Gylou": {
             "items": {
@@ -6776,7 +6911,8 @@
                     "name": "Artiglio"
                 },
                 "Change Shape": {
-                    "name": "Cambiare Forma"
+                    "name": "Cambiare Forma",
+                    "description": "<p>The gylou adopts the appearance of any Small or Medium humanoid. This doesn't change their Speed or the attack and damage modifiers of their Strikes, but it might change the damage type their Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Illusory Object (At will)": {
                     "description": "<p>Crei un'immagine visiva illusoria di un oggetto immobile. L'intera immagine deve entrare all'interno dell'area dell'incantesimo. L'oggetto sembra animarsi naturalmente, ma non emette suoni né genera odori. Per esempio, l'acqua potrebbe apparire come se scorresse creando una cascata, ma sarebbe silenziosa.</p>\n<p>Qualsiasi creatura che tocca l'immagine o usa l'azione Individuare per esaminarla può tentare di dubitare della tua illusione.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> La tua immagine emette i suoni appropriati, genera normali odori e sembra vera al tocco. L'incantesimo ottiene il tratto uditivo. La durata aumenta fino a 1 ora.</p>\n<p><strong>Intensificato (5°)</strong> Come per la versione di 2° livello, ma la durata è illimitata.</p>",
@@ -6794,13 +6930,20 @@
                     "name": "Tentacolo"
                 },
                 "Indispensable Savvy": {
-                    "name": "Indispensable Savvy"
+                    "name": "Indispensable Savvy",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The gylou attempts a skill check but hasn't rolled yet</p>\n<hr />\n<p><strong>Effect</strong> The gylou demonstrates a preternatural ability for the task at hand. They use their Deception modifier for the triggering check and for all skill checks using the same skill thereafter until the next time the gylou uses this ability or until 24 hours have passed, whichever happens first.</p>"
                 },
                 "Tentacle Encage": {
-                    "name": "Tentacle Encage"
+                    "name": "Tentacle Encage",
+                    "description": "<p><strong>Requirements</strong> The gylou has a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The gylou transfers the grabbed creature into their lower body's net of encaging tentacles, freeing their limbs and tentacles to make Strikes. This has the same effects as @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.uJSseLa57HZYSMUu]{Swallow Whole} (Medium, [[/r (2d12+12)[bludgeoning]]] damage, Rupture 30), except the encaged creature is not at risk of suffocation, and the gylou can bring the encaged creature with them when they cast <em>@UUID[Compendium.pf2e.spells-srd.VlNcjmYyu95vOUe8]{Dimension Door}</em>. A gylou can have only one creature encaged at a time.</p>"
+                },
+                "Reflexive Grab": {
+                    "description": "<p><strong>Trigger</strong> A creature leaves a square within the gylou's reach using a move action or attempts a melee Strike against the gylou</p>\n<hr />\n<p><strong>Effect</strong> The gylou lashes out with a tentacle, attempting to Grapple the triggering creature. If the triggering Strike was with a melee weapon, the attacking creature can @UUID[Compendium.pf2e.actionspf2e.wQYmDStjdjn0I26t]{Release} the weapon to cause the gylou to automatically fail the Athletics check.</p>",
+                    "name": "Reflexive Grab"
                 }
             },
-            "name": "Gylou"
+            "name": "Gylou",
+            "description": "<p>Though gylous are deeply entrenched in the expansive and complex machinations of Hell, they are highly skilled agents capable of nuanced diplomacy, masterful deception, physical finesse, and nearly any other tasks they set their minds to. This versatility has led to gylous becoming widespread throughout all layers of Hell, enabling them to filter key information to their masters regarding other devils' plots and schemes. Their allegiance is no secret, but their skills are so great that powerful devils employ one or more gylous regardless. While most gylous have a feminine form (combined with their role, this is the source of their common moniker of \"handmaiden\"), some have other gender presentations, and nearly all gylous take on carefully cultivated illusions to best suit the roles they fill. More often than not, gylous arise when lesser devils who have demonstrated exceptional utility and invaluable skills are uplifted into a new form, though on rare occasions they are shaped from the souls of evil mortals who showed unparalleled savvy within bureaucratic enterprises.</p>"
         },
         "Young Cloud Dragon": {
             "items": {
@@ -6890,6 +7033,12 @@
                 },
                 "Pounce": {
                     "name": "Pounce"
+                },
+                "Spirit Touch": {
+                    "description": "<p>An esobok's Strikes affect incorporeal creatures with the effects of a @UUID[Compendium.pf2e.equipment-srd.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal [[/r 1d6[negative]]] damage to living creatures and [[/r 1d6[positive]]] damage to undead.</p>"
+                },
+                "Wrench Spirit": {
+                    "name": "Wrench Spirit"
                 }
             },
             "name": "Esobok",
@@ -6976,6 +7125,9 @@
                 },
                 "Sleep Gas": {
                     "name": "Sleep Gas"
+                },
+                "Enliven Foliage": {
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>The verdurous ooze constantly emits supernatural vapors that cause nearby plants to grow rapidly and writhe and grasp at anything and everything within the emanation. This area becomes difficult terrain for non-verdurous ooze creatures. When a creature starts its turn in this aura, it must succeed at a @Check[type:reflex|dc:21] save or take a -10-foot circumstance penalty to its Speeds until it leaves the emanation.</p>"
                 }
             },
             "name": "Verdurous Ooze"
@@ -10267,7 +10419,8 @@
                     "description": "<p>The hamatula makes a barb Strike, then Strides up to half its Speed without triggering reactions. If the Strike hits, the hamatula impales the target with one of its barbs and snaps the barb free as it moves away from the target. This deals an additional [[/r 2d8[piercing]]] damage to the target and pins it to an adjacent surface, rendering it @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} (Escape DC 29).</p>"
                 },
                 "Warden of Erebus": {
-                    "name": "Warden of Erebus"
+                    "name": "Warden of Erebus",
+                    "description": "<p>A hamatula's <em>@UUID[Compendium.pf2e.spells-srd.o0l57UfBm9ScEUMW]{Glyph of Warding}</em> innate spell can contain any common spell from the Core Rulebook that meets the criteria in glyph of warding; the hamatula doesn't need to provide the spell.</p>"
                 }
             },
             "description": "<p>Hamatulas are forged in Erebus to protect infernal vaults from those foolish enough to try to rob the archdevil Mammon. In case the vicious spines protruding from their bodies and ability to teleport weren't deadly enough, they are also clever wielders of warding glyphs. They are effective conjured guardians, though they resent being pulled away from their duties in Hell. Unlike most fiends, hamatulas are formed from several souls that lack any features distinctive enough to merit another role.</p>",
@@ -10290,13 +10443,28 @@
                     "description": "<p>The sea drake makes one jaws Strike and two tail Strikes in any order.</p>"
                 },
                 "Electrified Blood": {
-                    "name": "Electrified Blood"
+                    "name": "Electrified Blood",
+                    "description": "<p><strong>Trigger</strong> An adjacent creature deals piercing or slashing damage to the sea drake</p>\n<hr />\n<p><strong>Effect</strong> An arc of electricity courses through the sea drake's blood. The triggering creature takes [[/r 1d6[electricity]]] damage.</p>"
                 },
                 "Speed Surge": {
                     "name": "Speed Surge",
                     "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The sea drake Strides, Flies, or Swims twice.</p>"
+                },
+                "Ball Lightning Breath": {
+                    "description": "<p>The sea drake spews a ball of electricity that strikes a primary target within 100 feet, dealing [[/r 7d6[electricity]]] damage (@Check[type:reflex|dc:24|basic:true] save). The lightning then arcs to up to three secondary targets within 30 feet of the primary target, striking the closest available targets first. The secondary bolts each strike one secondary target and deal the same rolled damage value as the primary bolt (@Check[type:reflex|dc:22|basic:true] save).</p>\n<p>The sea drake can't use Ball Lightning Breath again for [[/br 1d6 #rounds]]{1d6 rounds}.</p>",
+                    "name": "Ball Lightning Breath"
+                },
+                "Briny Wound": {
+                    "name": "Briny Wound",
+                    "description": "<p>A sea drake's saliva carries a large quantity of salt, making its bite wounds even more painful. When a creature takes damage from a sea drake's jaws Strike, the creature must attempt a @Check[type:fortitude|dc:24] save; the creature is then temporarily immune to briny wound for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2 and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened.</p>"
+                },
+                "Capsize": {
+                    "name": "Capsize",
+                    "description": "<p>The drake tries to capsize an adjacent aquatic vessel of its size or smaller. The drake must succeed at an Athletics check with a DC of 25 (reduced by 5 for each size smaller the vessel is than the drake) or the pilot's Sailing Lore DC, whichever is higher.</p>"
                 }
-            }
+            },
+            "description": "<p>Long and slender, sea drakes have fins down the length of their backs and webbing between their talons, making them just as adapted for gliding through ocean waves as the skies above. More solitary than most drakes, they hunt and live alone. Although most sea drakes make their roosts high on ocean-facing cliffs, it isn't unheard of for them to dwell in underwater caves, living entirely aquatic lives.</p>\n<hr />\n<p>Distant cousins to dragons, drakes menace and terrorize settlements.</p>",
+            "name": "Sea Drake"
         },
         "Denizen of Leng": {
             "items": {
@@ -10315,10 +10483,16 @@
                     "description": "<p>Denizens of Leng don't need to breathe.</p>"
                 },
                 "Debilitating Bite": {
-                    "name": "Debilitating Bite"
+                    "name": "Debilitating Bite",
+                    "description": "<p>A creature that takes damage from a denizen's bite must succeed at a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}. Each time a target fails an additional save against this ability, the condition value increases by 1 (to a maximum of Clumsy 4). This condition value decreases by 1 every 24 hours.</p>"
                 },
                 "Planar Fast Healing 5": {
-                    "description": "<p>A denizen of Leng maintains a connection to Leng at all times, and when away from Leng, they have @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{Fast Healing 5}. They lose this ability on Leng or in areas where planar connections do not function. If killed, their body dissolves into nothingness in [[/br 1d4 #Dissolve Body]]{1d4 rounds}, leaving behind their equipment. A slain denizen reforms in Leng; they can be permanently killed only when their planar fast healing doesn't function.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
+                    "description": "<p>A denizen of Leng maintains a connection to Leng at all times, and when away from Leng, they have @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{Fast Healing 5}. They lose this ability on Leng or in areas where planar connections do not function. If killed, their body dissolves into nothingness in [[/br 1d4 #Dissolve Body]]{1d4 rounds}, leaving behind their equipment. A slain denizen reforms in Leng; they can be permanently killed only when their planar fast healing doesn't function.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>",
+                    "name": "Planar Fast Healing 5"
+                },
+                "Leng Ruby": {
+                    "name": "Leng Ruby",
+                    "description": "<p>Many denizens of Leng carry strange rubies mined from quarries in Leng. As long as a creature holds a Leng ruby that it willingly accepted as a gift or payment from a denizen of Leng, any denizen of Leng can target that creature with <em>@UUID[Compendium.pf2e.spells-srd.KSAEhNfZyXMO7Z7V]{Outcast's Curse}</em>, <em>@UUID[Compendium.pf2e.spells-srd.R8bqnYiThB6MYTxD]{Phantom Pain}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.KHnhPHL4x1AQHfbC]{Mind Reading}</em> at a range of 1 mile, and the bearer uses an outcome one degree of success worse than the result of its saving throw against <em>Outcast's Curse</em>.</p>"
                 }
             },
             "name": "Denizen of Leng",
@@ -10334,15 +10508,29 @@
                     "description": "<p>A stygira in an area of bright light is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 },
                 "Gemsight": {
-                    "name": "Gemsight"
+                    "name": "Gemsight",
+                    "description": "<p>As long as the stygira holds a gemstone, they can see through the gem with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6]{Darkvision} and the effects of <em>@UUID[Compendium.pf2e.spells-srd.uqlxMQQeSGWEVjki]{True Seeing}</em>. The stygira is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} when they are not holding a gem in a hand.</p>"
+                },
+                "Gem Gaze": {
+                    "name": "Gem Gaze",
+                    "description": "<p>The stygira holds aloft a gem and gazes into the mind of a creature within 30 feet, infusing the creature's thoughts with visions of the creature's own dead body slowly petrifying.</p>\n<p>The creature must succeed at a @Check[type:will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+                },
+                "Stone Curse": {
+                    "name": "Stone Curse",
+                    "description": "<p>Wounds dealt by the stygira's claws leave the flesh bleached of color and turn the blood that runs from them dark gray. Each time a creature is damaged by the stygira's claw Strike, it must succeed at a @Check[type:fortitude|dc:25] save or become permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (slowed 2 on a critical failure) as its flesh stiffens like stone. If a creature is reduced to 0 Hit Points from the stygira's claw Strike and fails the saving throw against stone curse, it is @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified}. A creature that spends 8 hours in direct sunlight can attempt a new saving throw to remove the effects of stone curse, even if it has been petrified.</p>"
+                },
+                "Gemstone": {
+                    "name": "Gemstone"
                 }
             },
-            "name": "Stygira"
+            "name": "Stygira",
+            "description": "<p>Withered hermits wrapped in tattered rags, these scarred, eyeless creatures command strange secrets of the earth and interpret the fateful energies of the subterranean depths. In some regions, stygiras are worshipped as seers or even gods, although they lack the ability to grant spells to clerics and are often not aware of their worshippers at all. In other areas, they have strange ties to the ancient empires of the cyclopes, often dwelling in the oversized ruins those creatures left behind long ago. To many stygiras, gemstones harvested from ancient cyclopean mosaics have even greater magical properties than other crystals.</p>\n<p>Although technically blind, stygiras do have vestigial eyes hidden beneath the stony, scarred flesh of their faces. Capable of sensing bright lights even through their scars, stygiras are sickened and distracted by these flashing glimpses, so they keep to their caves during the day and wander into the world above only after nightfall. Far from benevolent, they seek out unwary travelers or explorers to capture and reduce them down to the base chemicals and supernatural humors the stygiras require to infuse gemstones with the capacity to give them sight and magical power.</p>"
         },
         "Carbuncle": {
             "items": {
                 "Levitate (At will) (Self only)": {
-                    "description": "<p>You defy gravity and levitate the target 5 feet off the ground. For the duration of the spell, you can move the target up or down 10 feet with a single action, which has the concentrate trait. A creature floating in the air from levitate takes a -2 circumstance penalty to attack rolls. A floating creature can spend an Interact action to stabilize itself and negate this penalty for the remainder of its turn. If the target is adjacent to a fixed object or terrain of suitable stability, it can move across the surface by climbing (if the surface is vertical, like a wall) or crawling (if the surface is horizontal, such as a ceiling). The GM determines which surfaces can be climbed or crawled across.</p>"
+                    "description": "<p>You defy gravity and levitate the target 5 feet off the ground. For the duration of the spell, you can move the target up or down 10 feet with a single action, which has the concentrate trait. A creature floating in the air from levitate takes a -2 circumstance penalty to attack rolls. A floating creature can spend an Interact action to stabilize itself and negate this penalty for the remainder of its turn. If the target is adjacent to a fixed object or terrain of suitable stability, it can move across the surface by climbing (if the surface is vertical, like a wall) or crawling (if the surface is horizontal, such as a ceiling). The GM determines which surfaces can be climbed or crawled across.</p>",
+                    "name": "Levitate (At will) (Self only)"
                 },
                 "Jump (At will)": {
                     "description": "<p>Le tue gambe acquistano forza, pronte per saltare in alto e lontano. Salti 9 metri in qualsiasi direzione senza toccare il terreno. Devi atterrare su uno spazio di terreno solido entro 9 metri da te, o altrimenti cadi dopo aver effettuato la tua azione successiva.</p><hr /><p><strong>Intensificato (3°)</strong> Il raggio d'azione diventa contatto, il bersaglio cambia in una creatura toccata e la durata diventa 1 minuto, permettendo al bersaglio di saltare come descritto quando compie l'azione Saltare.</p>",
@@ -10360,9 +10548,16 @@
                     "description": "<p>Any mental spell can affect a carbuncle, regardless of creature type limitations. Against a <em>@UUID[Compendium.pf2e.spells-srd.qwlh6aDgi86U3Q7H]{Suggestion}</em> spell, a carbuncle always gets an outcome one degree of success worse than it rolled on its saving throw.</p>"
                 },
                 "Fatal Faker": {
-                    "name": "Fatal Faker"
+                    "name": "Fatal Faker",
+                    "description": "<p><strong>Trigger</strong> The carbuncle takes damage</p>\n<hr />\n<p><strong>Effect</strong> The carbuncle feigns death by teleporting away and leaving a replica of its corpse behind, creating a colorful flash of light and a croaking sound. The real carbuncle transports to a clear space within 30 feet that it can see, and a hollow shell remains behind. The fake body appears solid until it is touched, at which point it crumbles to dust.</p>"
+                },
+                "Specious Suggestion": {
+                    "name": "Specious Suggestion",
+                    "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The carbuncle concentrates on a creature it can see and tries to manipulate that creature. The target must attempt a @Check[type:will|dc:18] save. The target then becomes temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The attempt backfires and bolsters the target's mind instead, granting it a +1 status bonus to Will saving throws for 1 hour.</p>\n<p><strong>Success</strong> The target briefly experiences an unusual but harmless sensation like an unexpected flavor or scent, an urge to eat something strange, or an amusing half-forgotten memory.</p>\n<p><strong>Failure</strong> The target is compelled to spend all of its actions on its next turn performing harmless, pointless, and usually embarrassing actions.</p>\n<p><strong>Critical Failure</strong> As failure, but the compulsion persists for 1 minute. The target can attempt a new save at the end of its turn each round to end the effect.</p>"
                 }
-            }
+            },
+            "name": "Carbuncle",
+            "description": "<p>Never have legend and misinformation met upon a more inauspicious brow than that of the lowly carbuncle. At first glance, carbuncles appear to be little more than ungainly reptiles. What sets them apart is their strange magical abilities and the gemstone-like horn protruding from between their goggling eyes. Although rumors suggest various uses for carbuncle horns, ranging from miracle cure-alls to potent magical components, the truth is much more mundane: a carbuncle's horn is merely a highly reflective growth, not unlike a fingernail.</p>"
         },
         "Young Brine Dragon (Spellcaster)": {
             "items": {
@@ -10379,7 +10574,8 @@
                     "name": "Ala"
                 },
                 "Frightful Presence": {
-                    "name": "Presenza Terrificante"
+                    "name": "Presenza Terrificante",
+                    "description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:24]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "Breath Weapon": {
                     "name": "Soffio",
@@ -10389,32 +10585,48 @@
                     "name": "Brine Spit",
                     "description": "<p><strong>Trigger</strong> A creature the brine dragon observes within 30 feet uses a concentrate action</p>\n<hr />\n<p><strong>Effect</strong> The dragon spits a glob of caustic salt water at the creature. The creature takes [[/r 3d6[acid]]] damage (@Check[type:reflex|dc:26|basic:true] save). On a failure, the concentrate action is disrupted.</p>"
                 }
-            }
+            },
+            "name": "Young Brine Dragon (Spellcaster)",
+            "description": "<p>Brine dragons are usually blue-green in color, with shiny scales, crests that help them glide through the water, and sweeping neck frills. They care little for either good or evil. As they are both opinionated and willing to impose their sense of order on others, many brine dragons eventually seek to rule over a meticulously crafted community. These communities are orderly and well-planned, with rigid standards of courtesy and unchanging laws set down by the dragon themself. A settlement seeded by a brine dragon can be made of members of almost any ancestry, but the most common inhabitants are humans, merfolk, tengus, or sahuagin.</p>\n<p>Depending on the dragon's personality, their community members might view their brine dragon ruler as anything from a benevolent force of order to a fearful tyrant. Regardless, the typical brine dragon has little patience for kindness or philanthropy, and the strength and health of their settlement as a whole are of greater concern than individuals' well-being. A notable exception to this dispassion rises when an outside force encroaches on their lands. In these cases, the brine dragon is quick to step in and aid in the defense of their community.</p>\n<p>Although brine dragons enjoy cultivating settlements, they rarely make their lairs within the city limits, instead preferring to dwell in sea caves or cliffside grottoes overlooking the coastline. Here they can retreat for privacy as needed, or can accumulate and display their gathered wealth in a place where they feel safe spreading out their treasures. Brine dragon hoards often consist of a mix of offerings and taxes paid by those they rule over and strange discoveries salvaged from sunken ships.</p>"
         },
         "Quickling": {
             "items": {
                 "Lethargy Poison": {
-                    "name": "Lethargy Poison"
+                    "name": "Lethargy Poison",
+                    "description": "<p>Lethargy poison is commonly used in hit-and-run tactics by drow and others who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 18 Fortitude</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> slowed 1 (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/br 1d4 #hours]]{1d4 hours}).</p>"
                 },
                 "Shortsword": {
                     "name": "Spada Corta"
                 },
                 "Sneak Attack": {
-                    "name": "Attacco Furtivo"
+                    "name": "Attacco Furtivo",
+                    "description": "<p>The quickling's Strikes deal an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 },
                 "Slow Susceptibility": {
-                    "name": "Slow Susceptibility"
+                    "name": "Slow Susceptibility",
+                    "description": "<p>The quickling takes a -2 status penalty to saving throws against effects that cause the @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} condition. If the quickling ever becomes slowed, they lose their supernatural speed, can't Fade from View, and become @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} for the duration of the slow. They also can't reduce this sickened condition for the duration of the slowed effect.</p>"
                 },
                 "Fade from View": {
-                    "name": "Fade from View"
+                    "name": "Fade from View",
+                    "description": "<p><strong>Requirements</strong> The quickling used no attack, manipulate, or move actions in the previous round</p>\n<hr />\n<p><strong>Effect</strong> The quickling becomes @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} until it uses an attack, manipulate, or move action.</p>\n<p>The quickling can't use Fade from View again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+                },
+                "Supernatural Speed": {
+                    "name": "Supernatural Speed",
+                    "description": "<p>The quickling's speed, combined with nearly instantaneous acceleration and deceleration, enables them to move in astonishing ways. As long as they have a firm surface to travel across, they can Stride their full movement vertically or horizontally. They can even run across unstable surfaces, such as water, in the same way, although dangerous surfaces (acid, lava, etc.) harm them as normal. They must end their movement on a horizontal surface capable of bearing their weight or else they fall.</p>"
+                },
+                "Can't Catch Me": {
+                    "name": "Can't Catch Me",
+                    "description": "<p><strong>Trigger</strong> The quickling is targeted by a Strike</p>\n<hr />\n<p><strong>Effect</strong> The quickling darts aside, gaining a +2 circumstance bonus to AC, then Strides up to half their Speed after the Strike resolves.</p>"
                 }
             },
-            "name": "Quickling"
+            "name": "Quickling",
+            "description": "<p>Few creatures can match a quickling's speed. These malicious fey creatures delight in striking with blinding speed and accuracy, racing in to stab and slash at foes before scampering away for cover with maddening- even frightening-swiftness. Stories of people simply doubling over, bleeding from what appear to be spontaneously opening wounds, are often eyewitness accounts of quickling attacks.</p>\n<p>Quicklings actively hate the \"slow-paced dullards\" they encounter every day, delighting in inflicting suffering and pain on creatures they deem too sluggish to matter. While they are related to kinder fey such as brownies and pixies, quicklings care only for their own merriment. They see their own cruel pranks as the height of humor and have full confidence that their speed and invisibility will keep them safe from harm. They occasionally form gangs of up to a dozen individuals, although the group usually devolves very quickly into mayhem, as they inevitably perform increasingly deadly pranks against each other.</p>"
         },
         "Vanth": {
             "items": {
                 "Dimension Door (At will)": {
-                    "description": "<p>Aprendo una porta che oltrepassa lo spazio normale, ti teletrasporti istantaneamente insieme a qualsiasi oggetto che indossi e trasporti dalla tua posizione attuale in uno spazio vuoto che puoi vedere entro il raggio d'azione. Se con questo incantesimo porti con te un'altra creatura (anche se la stai trasportando in un contenitore extradimensionale), l'incantesimo è perduto.</p>\n<hr />\n<p><strong>Intensificato (5°)</strong> Il raggio d'azione aumenta fino a 1,8 km. Non è necessario che tu sia in grado di vedere la tua destinazione, a patto che tu sia già stato in quel luogo in passato e che tu ne conosca relativamente la locazione e la distanza dalla tua posizione. Sei temporaneamente immune per 1 ora.</p>"
+                    "description": "<p>Aprendo una porta che oltrepassa lo spazio normale, ti teletrasporti istantaneamente insieme a qualsiasi oggetto che indossi e trasporti dalla tua posizione attuale in uno spazio vuoto che puoi vedere entro il raggio d'azione. Se con questo incantesimo porti con te un'altra creatura (anche se la stai trasportando in un contenitore extradimensionale), l'incantesimo è perduto.</p>\n<hr />\n<p><strong>Intensificato (5°)</strong> Il raggio d'azione aumenta fino a 1,8 km. Non è necessario che tu sia in grado di vedere la tua destinazione, a patto che tu sia già stato in quel luogo in passato e che tu ne conosca relativamente la locazione e la distanza dalla tua posizione. Sei temporaneamente immune per 1 ora.</p>",
+                    "name": "Dimension Door (At will)"
                 },
                 "Invisibility (At will) (Self only)": {
                     "description": "<p>Nascosto da un'illusione, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}. Questo lo rende @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuato} a tutte le creature, anche se queste possono tentare di trovare il bersaglio, rendendolo invece @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto} da esse. Se il bersaglio usa un'azione ostile, l'incantesimo termina dopo che quell'azione ostile viene completata.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> L'incantesimo dura 1 minuto, ma non termina se il bersaglio usa un'azione ostile.</p>",
@@ -10435,33 +10647,51 @@
                     "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:22]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "Infuse Weapon": {
-                    "name": "Infuse Weapon"
+                    "name": "Infuse Weapon",
+                    "description": "<p>A vanth's scythe is its symbol of office and gains a measure of its personal power. This scythe becomes a <i>+1 scythe</i> and is treated as if it were adamantine while the vanth wields it. A vanth whose scythe is taken or destroyed can infuse a new one with an hour of work.</p>"
                 },
                 "Spirit Touch": {
                     "name": "Spirit Touch",
                     "description": "<p>An vanth's Strikes affect incorporeal creatures with the effects of a @UUID[Compendium.pf2e.equipment-srd.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal [[/r 2d6[negative]]] damage to living creatures and [[/r 2d6[positive]]] damage to undead.</p>"
                 },
                 "Vanth's Curse": {
-                    "name": "Vanth's Curse"
+                    "name": "Vanth's Curse",
+                    "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The vanth bestows a curse on a creature by touching it with its scythe. The creature must attempt a @Check[type:will|dc:25] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to Vanth's Curse for 24 hours.</p>\n<p><strong>Success</strong> The target feels a momentary shudder of doom and is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute by the distracting sensation.</p>\n<p><strong>Failure</strong> The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2}. Each time the target gains the @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying} condition, the stupefied condition value increases by 1, to a maximum value of stupefied 4.</p>\n<p><strong>Critical Failure</strong> As failure, but the effect is permanent.</p>"
                 }
-            }
+            },
+            "name": "Vanth",
+            "description": "<p>Protecting the Boneyard are the stern and resolute guardians of the dead known as vanths, psychopomps who resemble skeletons with raven-like wings and a mask resembling a vulture's skull. Vanths carry black scythes to fight against those who would disturb the natural progression of souls, and they consider any visitor to the Boneyard a potential troublemaker. When the psychopomp armies go to war, vanths serve as front-line soldiers. They rarely speak and even more rarely show any emotion other than a grim adherence to duty.</p>"
         },
         "Flytrap Leshy": {
             "items": {
                 "Change Shape": {
-                    "name": "Cambiare Forma"
+                    "name": "Cambiare Forma",
+                    "description": "<p>The flytrap leshy transforms into a Small flytrap. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Amalgam": {
                     "name": "Amalgam",
                     "description": "<p>A flytrap leshy can combine itself with an adjacent and willing flytrap leshy that is not currently affected by Amalgam. The leshy using Amalgam physically merges with the target, restoring [[/r 3d8[healing]]]{3d8 Hit Points} to the target.</p>\n<p>The leshy can Sustain a Spell to continue Amalgam, but once they stop, the target leshy takes [[/r {3d8}]]{3d8 damage}. If the target leshy dies, Amalgam ends at once and the original leshy gains the @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying} condition or increases their dying condition value by 1 if they were already dying.</p>\n<p>As long as Amalgam is sustained, the target leshy gains a +1 status bonus to attack rolls and saving throws, its AC increases to 21, and it gains an additional reaction at the start of each turn.</p>"
                 },
                 "Flytrap Toxin": {
-                    "name": "Flytrap Toxin"
+                    "name": "Flytrap Toxin",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 round),</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} (1 round)</p>"
                 },
                 "Verdant Burst": {
-                    "description": "<p>When a flytrap leshy dies, a burst of primal energy explodes from its body, restoring [[/r 3d6[healing]]]{3d6 Hit Points} to each plant creature in a @Template[type:emanation|distance:30].</p>\n<p>This area immediately fills with flytraps, becoming difficult terrain. If the terrain is not a viable environment for these flytraps, they wither after 24 hours.</p>"
+                    "description": "<p>When a flytrap leshy dies, a burst of primal energy explodes from its body, restoring [[/r 3d6[healing]]]{3d6 Hit Points} to each plant creature in a @Template[type:emanation|distance:30].</p>\n<p>This area immediately fills with flytraps, becoming difficult terrain. If the terrain is not a viable environment for these flytraps, they wither after 24 hours.</p>",
+                    "name": "Verdant Burst"
+                },
+                "Flytrap Mouth": {
+                    "name": "Flytrap Mouth"
+                },
+                "Flytrap Hand": {
+                    "name": "Flytrap Hand"
+                },
+                "Spittle": {
+                    "name": "Spittle"
                 }
-            }
+            },
+            "description": "<p>While often seen as unfriendly by non-leshys, flytrap leshys get along well with other leshys. Nonetheless, they're among the most aggressive leshys, often guarding the most vulnerable places in the natural world with their flytrap mouths and hands.</p>\n<p>When a large threat emerges, pairs of flytrap leshys band together to create amalgams capable of driving back powerful foes. This unusual form of communal defense suffuses flytrap leshy society, and they often form relationships between multiple individuals that would confuse or even scandalize more uptight humanoids-to a flytrap leshy, though, there's nothing strange about sharing your innermost secrets with people you literally merged together with to defend your home from an enemy.</p>",
+            "name": "Flytrap Leshy"
         },
         "Mist Stalker": {
             "items": {
@@ -10469,23 +10699,38 @@
                     "name": "Tentacolo"
                 },
                 "Constrict": {
-                    "name": "Stritolare"
+                    "name": "Stritolare",
+                    "description": "<p>[[/r (1d8+4)[bludgeoning]]] damage, @Check[type:fortitude|dc:21|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Mist Vision": {
-                    "name": "Mist Vision"
+                    "name": "Mist Vision",
+                    "description": "<p>The mist stalker ignores the @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} condition from mist and fog.</p>"
                 },
                 "Mist Cloud": {
-                    "description": "<p>@Template[type:emanation|distance:15]{15 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The mist stalker is surrounded by mist. Creatures in the aura are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}. If wind disperses the aura, it returns automatically at the start of the mist stalker's turn. This cloud is suppressed in water.</p>"
+                    "description": "<p>@Template[type:emanation|distance:15]{15 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The mist stalker is surrounded by mist. Creatures in the aura are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}. If wind disperses the aura, it returns automatically at the start of the mist stalker's turn. This cloud is suppressed in water.</p>",
+                    "name": "Mist Cloud"
+                },
+                "Solidify Mist": {
+                    "name": "Solidify Mist",
+                    "description": "<p>The mist stalker makes its mist cloud congeal, causing the aura to be difficult terrain until the start of the mist stalker's next turn.</p>\n<p>In addition, the mist stalker can make the mist even thicker around a single Medium or smaller creature within the cloud. The creature must succeed at a @Check[type:reflex|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} until it @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escapes} or it is no longer in the mist cloud's emanation.</p>"
                 }
-            }
+            },
+            "description": "<p>The tentacled mist stalker shrouds itself in a cloak of mist through which its single, never-blinking eye can see with clarity, allowing it an advantage when stalking its prey.</p>\n<hr />\n<p>Water elementals that become infused with cold or mist have increased mobility in regions outside of bodies of water.</p>",
+            "name": "Mist Stalker"
         },
         "Icicle Snake": {
             "items": {
                 "Jaws": {
                     "name": "Fauci",
                     "description": "<p>[[/r 1d6[persistent,cold]]] damage</p>"
+                },
+                "Icicle": {
+                    "description": "<p>Until the next time it acts, the icicle snake appears to be an unassuming icicle. It has an automatic result of 27 on Deception checks and DCs to pass as an icicle.</p>",
+                    "name": "Icicle"
                 }
-            }
+            },
+            "description": "<p>Translucent and capable of hanging suspended and near motionless, icicle snakes sense the heat of living creatures as a threat and attempt to use their camouflage and chilling bite against foes.</p>",
+            "name": "Icicle Snake"
         },
         "Shoggti": {
             "items": {
@@ -10493,25 +10738,29 @@
                     "name": "Chela"
                 },
                 "Constrict": {
-                    "name": "Stritolare"
+                    "name": "Stritolare",
+                    "description": "<p>[[/r (1d10+8)[bludgeoning]]] damage, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Bite": {
                     "name": "Bite"
                 },
                 "Braincloud": {
-                    "name": "Braincloud"
+                    "name": "Braincloud",
+                    "description": "<p>The shoggti caresses a creature with a tentacle and supernaturally erodes the creature's capability for thought as it does so. The target must succeed at a @Check[type:will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2}, with an unlimited duration. The target can attempt the save to remove the stupefied condition again once per day when it makes its daily preparations.</p>"
                 },
                 "Fascinating Display": {
                     "name": "Fascinating Display",
                     "description": "<p>The shoggti writhes its tentacles and shifts its coloration to put on an unnaturally fascinating hypnotic display. Creatures in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:25] save, after which they are temporarily immune to further Fascinating Displays for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} for 1 minute. Once the fascination effect ends, the creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated for 1 minute, can't use reactions while fascinated, and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} once the fascination ends.</p>"
                 }
             },
-            "name": "Shoggti"
+            "name": "Shoggti",
+            "description": "<p>Shoggti travel to other planes in roving bands to capture and charm victims, bringing them back to the Abyss where they are enslaved for unknown-but no doubt insidiously evil-purposes. These squid-like qlippoth have slick, blue skin and four suckered tentacles that end in dexterous pincers. In addition to a lamprey-like mouth at the base of its body, each has a secondary maw in the middle of its forehead that stretches from between its two bulging eyes to the back of its head.</p>"
         },
         "Neothelid": {
             "items": {
                 "Suggestion (At will)": {
-                    "description": "<p>Le creature resistono con difficoltà alle tue piacevoli parole. Suggerisci una linea di azione al bersaglio, la quale deve essere articolata in modo che sia una linea di azione logica per il bersaglio e non può essere autodistruttiva o palesemente contro gli interessi del bersaglio. Il bersaglio deve effettuare un tiro salvezza su Volontà.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio non è influenzato e sa che hai tentato di controllarlo.</p><p><strong>Successo</strong> Il bersaglio non è influenzato e crede che tu gli stia parlando normalmente, non che tu gli stia lanciando un incantesimo.</p><p><strong>Fallimento</strong> Il bersaglio segue immediatamente la tua suggestione. L'incantesimo ha una durata di 1 minuto, o finché il bersaglio ha completato una suggestione completa o la suggestione diventa autodistruttiva o ha effetti negativi palesi.</p><p><strong>Fallimento Critico</strong> Come per fallimento, ma la durata è di 1 ora</p><hr /><p><strong>Intensificato (8°)</strong> Puoi prendere come bersaglio fino a 10 creature.</p>"
+                    "description": "<p>Le creature resistono con difficoltà alle tue piacevoli parole. Suggerisci una linea di azione al bersaglio, la quale deve essere articolata in modo che sia una linea di azione logica per il bersaglio e non può essere autodistruttiva o palesemente contro gli interessi del bersaglio. Il bersaglio deve effettuare un tiro salvezza su Volontà.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio non è influenzato e sa che hai tentato di controllarlo.</p><p><strong>Successo</strong> Il bersaglio non è influenzato e crede che tu gli stia parlando normalmente, non che tu gli stia lanciando un incantesimo.</p><p><strong>Fallimento</strong> Il bersaglio segue immediatamente la tua suggestione. L'incantesimo ha una durata di 1 minuto, o finché il bersaglio ha completato una suggestione completa o la suggestione diventa autodistruttiva o ha effetti negativi palesi.</p><p><strong>Fallimento Critico</strong> Come per fallimento, ma la durata è di 1 ora</p><hr /><p><strong>Intensificato (8°)</strong> Puoi prendere come bersaglio fino a 10 creature.</p>",
+                    "name": "Suggestion (At will)"
                 },
                 "Mind Probe (At will)": {
                     "description": "<p>Fai penetrare i tuoi pensieri attraverso la mente di una creatura per estrarre informazioni. Accedi alle memorie ed alle conoscenze del bersaglio a meno che non ti respinga con un tiro salvezza su Volontà.</p><hr /><p><strong>Successo </strong>Il bersaglio non è influenzato.</p><p><strong>Fallimento </strong>Ad ogni round della durata dell'incantesimo, puoi Mantenere l'Incantesimo per porre una domanda diversa e tenti di scoprire la risposta. Per ciascuna domanda, il bersaglio può effettuare una prova di Inganno contro la tua CD di incantesimo; se il bersaglio la supera, non vieni a conoscenza della risposta, e con un successo critico il bersaglio ti dà una risposta falsa che tu credi sia vera. Dopo aver fatto una data domanda al bersaglio, se gliela poni di nuovo, anche con un lancio separato di sonda mentale, si produce lo stesso risultato.</p><p><strong>Fallimento Critico</strong> Come per fallimento, ma il bersaglio subisce penalità di circostanza -4 alle prove di Inganno contro le tue domande.</p>",
@@ -10529,7 +10778,8 @@
                     "description": "<p>The neothelid breathes a spray of acid that deals [[/r 16d6[acid]]] damage in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:38|basic:true] save).</p>\n<p>The neothelid can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "Swallow Whole": {
-                    "name": "Inghiottire"
+                    "name": "Inghiottire",
+                    "description": "<p>Large, [[/r 2d12[bludgeoning]]] damage plus [[/r 2d12[acid]]] damage, Rupture 27</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "Instant Suggestion": {
                     "name": "Instant Suggestion",
@@ -10545,8 +10795,14 @@
                 "Dimensional Wormhole": {
                     "name": "Dimensional Wormhole",
                     "description": "<p><strong>Trigger</strong> A creature the neothelid is aware of uses a teleportation effect</p>\n<hr />\n<p><strong>Effect</strong> The neothelid creates an extradimensional wormhole at the triggering creature's initial location that persists for up to 1 minute. If the neothelid moves into the wormhole's space, the neothelid teleports to the same destination as the triggering creature.</p>"
+                },
+                "Lashing Tongues": {
+                    "name": "Lashing Tongues",
+                    "description": "<p>The neothelid's four tongues lash out in a frenzy at several targets. It makes up to four rasping tongue Strikes, each against a different target. These attacks count toward the neothelid's multiple attack penalty, but the multiple attack penalty doesn't increase until after the neothelid makes all of its attacks.</p>"
                 }
-            }
+            },
+            "name": "Neothelid",
+            "description": "<p>This gigantic, mauve worm has a hooked mouth with multiple circular bands of teeth and four barbed tongues. A wielder of terrible occult powers and a vast alien intellect, the neothelid serves the ageless horrors that dwell in strange dimensions beyond known reality-the Outer Gods and Great Old Ones of the Elder Mythos. Neothelids pass down these mysteries to the eerie wormlike creatures they spawn and create in preparation for a future where the worms below shall rule-a time when all other life is nothing more than food.</p>"
         },
         "Necrophidius": {
             "items": {
@@ -10554,10 +10810,16 @@
                     "name": "Fauci"
                 },
                 "Necrophidic Paralysis": {
-                    "name": "Necrophidic Paralysis"
+                    "name": "Necrophidic Paralysis",
+                    "description": "<p>A living creature bitten by a necrophidius must succeed at a @Check[type:fortitude|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 for each save attempted. A creature that succeeds at this save is temporarily immune to necrophidic paralysis for 24 hours.</p>"
+                },
+                "Dance of Death": {
+                    "description": "<p>The necrophidius sways, its serpentine form undulating and clattering in a hypnotic rhythm. Each creature that witnesses the dance must attempt a @Check[type:will|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> The creature is unnerved by the swaying and becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the end of the necrophidius's next turn.</p>\n<p><strong>Failure</strong> The creature is distracted by the swaying, becoming @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}. After it recovers, it is flat-footed until the end of the necrophidius's next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
+                    "name": "Dance of Death"
                 }
             },
-            "name": "Necrophidius"
+            "name": "Necrophidius",
+            "description": "<p>Although the necrophidius is a mindless construct with no particular ability to comprehend the complexities of good or evil, these sinister-looking constructs are often crafted by evil or macabre creators seeking to imbue their guardians with a frightening aesthetic.</p>\n<p>Constructed from bones harvested from serpents and humans, a necrophidius is animated by occult magic, not unlife. Each necrophidius is built from the skeleton of a large snake, but its skull has been replaced by that of a humanoid creature. Some death cults or particularly cruel crafters seek out the skulls of specific individuals against whom they bear grudges to provide the head for their necrophidius. The final step of the construction is the alteration of the teeth and jaws to give the creature a more serpentine visage, complete with fangs.</p>\n<p>If a necrophidius's creator dies, the construct follows the last series of commands it was given. If it cannot do so, the necrophidius aimlessly wanders the area near where it last served its creator and attacks any creatures it encounters. Some believe that those who know the secrets of a necrophidius's origins can command it, provided its original creator no longer exists and no one else currently commands it. There are also a number of reports concerning strangely aware and intelligent necrophidiuses that roam with a purpose and track down or hunt specific living creatures they interpret as the targets of former assassination missions.</p>"
         },
         "Giant Maggot": {
             "items": {
@@ -10569,10 +10831,16 @@
                     "name": "Tremorsense 30 feet"
                 },
                 "Gnaw Flesh": {
-                    "description": "<p><strong>Requirements</strong> The giant maggot has @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} a creature</p>\n<hr />\n<p><strong>Effect</strong> The giant maggot deals [[/r (1d8+2)[slashing]]] damage to the grabbed creature as it chews the creature's flesh (@Check[type:reflex|dc:19|basic:true] save).</p>"
+                    "description": "<p><strong>Requirements</strong> The giant maggot has @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} a creature</p>\n<hr />\n<p><strong>Effect</strong> The giant maggot deals [[/r (1d8+2)[slashing]]] damage to the grabbed creature as it chews the creature's flesh (@Check[type:reflex|dc:19|basic:true] save).</p>",
+                    "name": "Gnaw Flesh"
+                },
+                "Regurgitation": {
+                    "description": "<p><strong>Trigger</strong> The giant maggot takes damage</p>\n<hr />\n<p><strong>Effect</strong> The giant maggot regurgitates its rancid, foul meal. All creatures in a @Template[type:emanation|distance:5] must succeed at a @Check[type:fortitude|dc:16] save or become @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>The giant maggot can't use Regurgitation again until it spends at least an hour feeding on a corpse.</p>",
+                    "name": "Regurgitation"
                 }
             },
-            "name": "Giant Maggot"
+            "name": "Giant Maggot",
+            "description": "<p>Giant flies lay their eggs on the bodies of larger monsters or livestock. When they hatch, these eggs release squirming maggots the size of human children, ravenous young who voraciously consume any flesh in the immediate vicinity-typically starting with the body upon which they were born.</p>\n<hr />\n<p>Giant flies are pony-sized insects that have massive compound eyes and bodies bristling with short, stiff hairs. Their lairs are notorious for the rotting meat they stockpile to lay their eggs into. Their maggot-dens are also prime breeding grounds for virulent diseases.</p>"
         },
         "Tendriculos": {
             "items": {
@@ -10588,16 +10856,19 @@
                     "description": "<p>Large, [[/r (2d10+7)[acid]]] damage plus tendriculos venom, Rupture 14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "Tendriculos Venom": {
-                    "name": "Tendriculos Venom"
+                    "name": "Tendriculos Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
                 },
                 "Bite": {
                     "name": "Bite"
                 },
                 "Rampant Growth": {
-                    "description": "<p><strong>Requirements</strong> A creature the tendriculos has Swallowed Whole has taken damage since the end of the tendriculos's last turn, and the tendriculos hasn't used any other actions this turn</p>\n<hr />\n<p><strong>Effect</strong> The tendriculos regains [[/r 3d8[healing]]]{3d8 Hit Points} and recovers from the @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} conditions. It reduces any @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled} value it has by 2.</p>"
+                    "description": "<p><strong>Requirements</strong> A creature the tendriculos has Swallowed Whole has taken damage since the end of the tendriculos's last turn, and the tendriculos hasn't used any other actions this turn</p>\n<hr />\n<p><strong>Effect</strong> The tendriculos regains [[/r 3d8[healing]]]{3d8 Hit Points} and recovers from the @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} conditions. It reduces any @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled} value it has by 2.</p>",
+                    "name": "Rampant Growth"
                 }
             },
-            "name": "Tendriculos"
+            "name": "Tendriculos",
+            "description": "<p>These strange amalgams of plant and fungus with animal tendencies form where the natural world is corrupted by foul magic or frayed planar boundaries. Tendriculoses are instinctive ambush predators who seek out lightly traveled forest paths and lie in wait in the undergrowth. A tendriculos swallows its prey as quickly as possible and lets its paralytic digestive juices finish the meal, while swiftly restoring itself with the nourishment provided by the trapped creature. When collected, neutralized, and refined, the digestive fluids of a tendriculos form a lacquer that retains some of the tendriculos's acid resistance.</p>\n<p>A tendriculos comes into being with a rudimentary understanding of the Sylvan language, but in some cases it might manifest knowing a different tongue, such as Aklo, Draconic, or even Necril. Regardless, tendriculoses have little patience for chattering from potential meals, though some determined fey and primal spellcasters have been known to form alliances or even closer bonds with tendriculoses. Befriending a tendriculos requires great patience and plentiful food-and these the gifts of food must be alive when handed over.</p>\n<p>When it has finished feeding and is out of combat, a tendriculos slips into a quiescent state for a full day, one of the few times it is safe to approach. Upon rousing, it seeks the deep forest to regurgitate the less digestible portions of its meal. These remains may contain valuables that survived digestion and indicate that a tendriculos's hunting grounds lie nearby.</p>\n<p>Tendriculoses dwell in deep woods and jungles. Those too near populated areas soon draw unwanted attention with their ravenous appetites. Well-fed tendriculoses develop fruiting bodies that cast forth millions of spores. Spores that happen to alight on carrion grow into new tendriculoses.</p>"
         },
         "Living Boulder": {
             "items": {
@@ -10918,9 +11189,11 @@
             "name": "Petitioner (Material Plane)",
             "items": {
                 "Planar Incarnation - Material Plane": {
-                    "name": "Planar Incarnation - Material Plane"
+                    "name": "Planar Incarnation - Material Plane",
+                    "description": "<p>All petitioners are formed from and personify the nature of the plane on which they manifest, and their statistics are adjusted as summarized below. They also gain any trait associated with creatures from their plane.</p>\n<p><strong>Material Plane</strong> The remnants are among the rarest of petitioners; they appear as plain, bland versions of the ancestry of their mortal lives</p>\n<ul>\n<li><strong>Alignment</strong> any;</li>\n<li><strong>Language</strong> any one spoken in life (such as Common);</li>\n<li><strong>Additional Ability</strong> @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.N1kstYbHScxgUQtN]{Ferocity};</li>\n<li><strong>Melee</strong> fist +7, <strong>Damage</strong> 1d8+2 bludgeoning</li>\n</ul>"
                 }
-            }
+            },
+            "description": "<p>When a mortal dies, their soul travels to the Boneyard in the Outer Planes where they are judged by Pharasma, the goddess of the dead. Once they have been judged, their soul is sent on to their final reward or punishment in the afterlife, and in the process is transformed into a creature known as a petitioner. This process grants the soul a new body, one whose shape is the result of the prevailing philosophical forces of the plane to which it is sent. The petitioner's memories from their life are typically wiped nearly clean, allowing them to retain only a few hazy fragments akin to half-remembered dreams. Regardless of the petitioner's size, power, or nature in life, they're a Medium creature in their afterlife.</p>\n<p>Existence as a petitioner can last for eons, but this state is not necessarily eternal. Deities, powerful denizens of the Great Beyond, or even the outer planes themselves can further change the petitioner's nature by transforming them into raw quintessence, spiritual essence that is then used to expand a plane's physical manifestation, or by transforming the petitioner into a new form of supernatural life such as a celestial, monitor, or fiend. Should a petitioner die, their body breaks down in a process akin to decay, their nature reverting back to the quintessence or elements that make up their plane. This represents the true end of a soul's journey: their associated life essence travels back to the heart of the Great Beyond to be recycled into the Positive Energy plane, fueling the creation of entirely new souls.</p>\n<p>The remnants are among the rarest of petitioners; they appear as plain, bland versions of the ancestry of their mortal lives.</p>"
         },
         "Petitioner (Astral Plane)": {
             "items": {
@@ -10928,7 +11201,9 @@
                     "name": "Planar Incarnation - Astral Plane",
                     "description": "<p>All petitioners are formed from and personify the nature of the plane on which they manifest, and their statistics are adjusted as summarized below. They also gain any trait associated with creatures from their plane.</p>\n<p><strong>Astral Plane</strong> The untethered appear as astrally projected versions of their mortal forms, yet they lack a silver cord</p>\n<ul>\n<li><strong>Alignment</strong> any;</li>\n<li><strong>Language</strong> any one spoken in life (such as Common);</li>\n<li><strong>Additional Ability</strong> fly Speed 20 feet;</li>\n<li><strong>Melee</strong> fist +7, <strong>Damage</strong> 1d8+2 bludgeoning </li>\n</ul>"
                 }
-            }
+            },
+            "description": "<p>When a mortal dies, their soul travels to the Boneyard in the Outer Planes where they are judged by Pharasma, the goddess of the dead. Once they have been judged, their soul is sent on to their final reward or punishment in the afterlife, and in the process is transformed into a creature known as a petitioner. This process grants the soul a new body, one whose shape is the result of the prevailing philosophical forces of the plane to which it is sent. The petitioner's memories from their life are typically wiped nearly clean, allowing them to retain only a few hazy fragments akin to half-remembered dreams. Regardless of the petitioner's size, power, or nature in life, they're a Medium creature in their afterlife.</p>\n<p>Existence as a petitioner can last for eons, but this state is not necessarily eternal. Deities, powerful denizens of the Great Beyond, or even the outer planes themselves can further change the petitioner's nature by transforming them into raw quintessence, spiritual essence that is then used to expand a plane's physical manifestation, or by transforming the petitioner into a new form of supernatural life such as a celestial, monitor, or fiend. Should a petitioner die, their body breaks down in a process akin to decay, their nature reverting back to the quintessence or elements that make up their plane. This represents the true end of a soul's journey: their associated life essence travels back to the heart of the Great Beyond to be recycled into the Positive Energy plane, fueling the creation of entirely new souls.</p>\n<p>The untethered appear as astrally projected versions of their mortal forms, yet they lack a silver cord.</p>",
+            "name": "Petitioner (Astral Plane)"
         },
         "Petitioner (Elysium)": {
             "items": {
@@ -10945,18 +11220,31 @@
                 "Swarming Beaks": {
                     "name": "Swarming Beaks",
                     "description": "<p>The ravens' angry pecking deals [[/r 1d8[piercing]]] damage to each enemy in the swarm's space (@Check[type:reflex|dc:20|basic:true] save). A creature that critically fails its save is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for [[/br 1d4 #Duration Blinded]]{1d4 rounds} as the ravens focus their attacks on the target's vulnerable face.</p>"
+                },
+                "Enraged Cunning": {
+                    "description": "<p>There are few things as dangerously persistent in the natural world as an angry unkindness of ravens. A raven swarm can hound its prey through most barriers. Simple latches, unsecured chimney flues, loosely shuttered windows, and similar obstacles rarely keep an unkindness away. A raven swarm attempts a Thievery check to bypass many of these simple obstructions, typically against DC 20.</p>",
+                    "name": "Enraged Cunning"
                 }
-            }
+            },
+            "description": "<p>A flock of ravens is known as an unkindness. Certainly the name lives up to its meaning when a swarm of ravens decides to work together. In most cases, a raven swarm like the one presented here won't attack larger foes, but when manipulated by supernatural forces or simple desperation born from hunger, an unkindness of ravens can be a surprisingly dangerous foe.</p>\n<hr />\n<p>Few birds are as cunning and social as the raven.</p>",
+            "name": "Raven Swarm"
         },
         "Giant Mosquito": {
             "items": {
                 "Septic Malaria": {
-                    "description": "<p>The victim can't reduce its @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} condition while it's affected by septic malaria</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:24|traits:disease]</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>"
+                    "description": "<p>The victim can't reduce its @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} condition while it's affected by septic malaria</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:24|traits:disease]</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>",
+                    "name": "Septic Malaria"
                 },
                 "Blood Drain": {
-                    "name": "Blood Drain"
+                    "name": "Blood Drain",
+                    "description": "<p><strong>Requirements</strong> The giant mosquito has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The giant mosquito uses its proboscis to drain blood from the grabbed creature. This deals [[/r 3d6]] damage, and the giant mosquito gains temporary Hit Points equal to the damage dealt. A creature that has its blood drained by a giant mosquito is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing of any kind or amount.</p>"
+                },
+                "Proboscis": {
+                    "name": "Proboscis"
                 }
-            }
+            },
+            "name": "Giant Mosquito",
+            "description": "<p>These horrifically enlarged versions of the common mosquito often prey upon megafauna like dinosaurs and other large creatures, but they won't turn down a chance to drink the blood of a smaller target-such as a humanoid.</p>"
         },
         "Woolly Rhinoceros": {
             "items": {
