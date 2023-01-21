@@ -1000,7 +1000,7 @@
                     "Bow": "<strong>Runa Atroce</strong> La prova di Atletica per liberare il proiettile ha CD 20.",
                     "Brawling": "<strong>Runa Atroce</strong> Il bersaglio subisce penalità di circostanza -4 ai suoi TS.",
                     "Club": "<strong>Runa Atroce</strong> Puoi scagliare il bersaglio lontano fino a 4,5 metri.",
-                    "Dart": "<strong>Grievous Rune</strong> Il danno base persistente da sanguinamento aumenta a [[/r {2d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni persistenti da sanguinamento}.",
+                    "Dart": "<strong>Grievous Rune</strong> Il danno base persistente da sanguinamento aumenta a [[/r 2d6[bleed]]].",
                     "Flail": "<strong>Runa Atroce</strong> Sposti il bersaglio dì 1,5 metri. Non puoi allontanarlo da te, ma puoi spostarlo in un'altra direzione a tua scelta.",
                     "Hammer": "<strong>Runa Atroce</strong> Puoi scagliare il bersaglio lontano da te di 1,5 metri.",
                     "Pick": "<strong>Runa Atroce</strong> Il danno extra dell'effetto di specializzazione del critico aumenta a 4 per dado di danno dell'arma.",
@@ -1039,7 +1039,7 @@
             },
             "flaming": {
                 "Note": {
-                    "criticalSuccess": "<strong>Runa Infuocata</strong> Quando ottieni un successo critico con un Colpo con quest'arma, infliggi [[/r {1d10}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da fuoco persistenti} addizionali."
+                    "criticalSuccess": "Quando ottieni un successo critico, infliggi [[/r 1d10[persistent,fire]]]{1d10 danni da fuoco persistenti} addizionali."
                 },
                 "Name": "Infuocata"
             },
@@ -1051,7 +1051,7 @@
             },
             "greaterFlaming": {
                 "Note": {
-                    "criticalSuccess": "<strong>Runa Infuocata Superiore</strong> Il danno da fuoco inflitto da questa arma (inclusi i danni persistenti da fuoco) ignora la resistenza al fuoco del bersaglio. Quando ottieni un successo critico con un Colpo con quest'arma, infliggi [[/r {2d10}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da fuoco persistenti} addizionali.",
+                    "criticalSuccess": "Il danno da fuoco inflitto da questa arma (inclusi i danni persistenti da fuoco) ignora la resistenza al fuoco del bersaglio. Quando ottieni un successo critico con un Colpo con quest'arma, infliggi [[/r 2d10[persistent,fire]]]{2d10 danni da fuoco persistenti} addizionali.",
                     "success": "Il danno da fuoco inflitto da questa arma ignora la resistenza al fuoco del bersaglio."
                 },
                 "Name": "Infuocata Superiore"
@@ -1545,12 +1545,12 @@
             },
             "AcidFlask": {
                 "Greater": {
-                    "success": "<strong>Effetto</strong> La bomba infligge [[/r {3d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da acido persistenti} e [[/r {3}[splash,acid]]]{3 danni da spargimento da acido}",
-                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r {2*3d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da acido persistenti} e [[/r {3}[splash,acid]]]{3 danni da spargimento da acido}"
+                    "success": "<strong>Effetto</strong> La bomba infligge [[/r 3d6[persistent,acid]]]{3d6 danni da acido persistenti} e [[/r (3[splash])[acid]]]{3 danni da spargimento da acido}.",
+                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r (2*3d6)[persistent,acid]]]{2*3d6 danni da acido persistenti} e [[/r (3[splash])[acid]]]{3 danni da spargimento da acido}."
                 },
                 "Lesser": {
-                    "success": "<strong>Effetto</strong> La bomba infligge [[/r {1d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da acido persistenti} e [[/r {1}[splash,acid]]]{1 danno da spargimento da acido}",
-                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r {2*1d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da acido persistenti} e [[/r {1}[splash,acid]]]{1 danno da spargimento da acido}"
+                    "success": "<strong>Effetto</strong> La bomba infligge [[/r 1d6[persistent,acid]]]{1d6 danni da acido persistenti} e [[/r (1[splash])[acid]]]{1 danno da spargimento da acido}",
+                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r (2*1d6)[persistent,acid]]]{2*1d6 danni da acido persistenti} e [[/r (1[splash])[acid]]]{1 danno da spargimento da acido}"
                 },
                 "Major": {
                     "success": "<strong>Effetto</strong> La bomba infligge [[/r {4d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da acido persistenti} e [[/r {4}[splash,acid]]]{4 danni da spargimento da acido}",
