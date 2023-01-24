@@ -2,14 +2,7 @@ import { createWriteStream } from "fs";
 import { readFile } from "fs/promises";
 import fetch from "node-fetch";
 import { join } from "path/posix";
-import { Open as unzipperOpen } from "unzipper";
-import { Entry, FoundrySystemManifest } from "./types";
-
-const manifestUrl =
-  "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json";
-
-const systemZip =
-  "https://github.com/foundryvtt/pf2e/archive/refs/heads/master.zip";
+import { Entry, FoundrySystemManifest } from "./foundry-types";
 
 export async function readManifest(
   path: string

@@ -4,21 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild --bundle --platform=node --sourcemap --outdir=tmp scripts/main.ts && node --enable-source-maps tmp/main",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild --bundle --platform=node --sourcemap --outdir=tmp --log-level=error scripts/main.ts",
+    "exec": "npm run build && node --enable-source-maps tmp/main"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/lodash": "^4.14.184",
-    "@types/node": "^18.7.15",
-    "@types/unzipper": "^0.10.5",
-    "esbuild": "^0.15.7"
-  },
-  "dependencies": {
-    "commander": "^10.0.0",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.18",
+    "@types/yargs": "^17.0.20",
+    "dotenv": "^16.0.3",
+    "esbuild": "^0.17.4",
     "lodash": "^4.17.21",
-    "node-fetch": "^3.2.10"
+    "node-fetch": "^3.3.0",
+    "yargs": "^17.6.2"
   }
 }
