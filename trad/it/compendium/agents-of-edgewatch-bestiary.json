@@ -18,6 +18,9 @@
                 "Mother Venom Poison": {
                     "name": "Veleno di Madre Veleno",
                     "description": "<p>CD 38</p>\n<p><strong>Durata Massima</strong> 6 round</p>\n<p><strong>Fase 1</strong> [[/r {2d6}[poison]]]{2d6 danni da veleno} e @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 round)</p>\n<p><strong>Fase 2</strong> [[/r {3d6}[poison]]]{3d6 danni da veleno} e @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 2} (1 round)</p>\n<p><strong>Fase 3</strong> [[/r {4d6}[poison]]]{4d6 danni da veleno} e @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 3} (1 round).</p>"
+                },
+                "Ooze Lore": {
+                    "name": "Ooze Lore"
                 }
             }
         },
@@ -64,7 +67,8 @@
                 }
             },
             "name": "Baatamidar",
-            "description": "<p>Baatamidars are drawn to destroy planar communities on the fringes where the Outer Planes touch the chaos of the Maelstrom. They resemble floating blobs of undulating, prismatic ooze with four quivering tentacles and dribbles of oily slime that always drip upwards.</p>"
+            "description": "<p>Baatamidars are drawn to destroy planar communities on the fringes where the Outer Planes touch the chaos of the Maelstrom. They resemble floating blobs of undulating, prismatic ooze with four quivering tentacles and dribbles of oily slime that always drip upwards.</p>",
+            "npcHp": "regeneration 30 (deactivated by lawful)"
         },
         "Casino Bouncer": {
             "items": {
@@ -118,7 +122,8 @@
                     "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[type:fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}.</p>\n<p>It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
                 }
             },
-            "name": "Barnacle Ghoul"
+            "name": "Barnacle Ghoul",
+            "npcHp": "negative healing"
         },
         "Grunka": {
             "description": "<p>I guerrieri che costituiscono la prima linea delle tribù goblin preferiscono combattere in gruppi numerosi, specialmente se sono almeno il triplo degli avversari.</p>\n<hr />\n<p>Questi piccoli umanoidi hanno la pelle verde o grigia e una grossa testa dalle lunghe orecchie. Alcuni goblin sono civilizzati e hanno lavorato sodo per diventare membri rispettati nelle comunità umanoidi di appartenenza, ma per buona parte rimangono creature istintive e violente che godono solo nel seminare il caos. Questi goblin pensano solamente a uccidere il bestiame, a rapire neonati o ad appiccare il fuoco agli edifici solo per il gusto di farlo. Adorano giocare scherzi crudeli agli umanoidi più alti, che loro chiamano \"gambelunghe\".</p>\n<p>I goblin sono creature superstiziose, terrorizzate dalla magia e affascinate dal fuoco; i goblin in grado di padroneggiare la magia o il fuoco godono di grande rispetto presso i loro simili. La mentalità dei goblin risulta alquanto incomprensibile per la maggior parte degli altri umanoidi: odiano i canidi, ma dividono le loro tane con i cosiddetti \"cani goblin\"; attaccano creature più grosse di loro senza battere ciglio, ma sono terrorizzati dai cavalli; inoltre odiano i vegetali ma considerano i sottaceti una prelibatezza. Per un goblin, ovviamente, queste sono tutte opinioni perfettamente coerenti.</p>",
@@ -212,9 +217,14 @@
                 },
                 "Bloody Spew": {
                     "name": "Bloody Spew"
+                },
+                "Attack of Opportunity (Trip Only)": {
+                    "name": "Attack of Opportunity (Trip Only)",
+                    "description": "<p>@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} only</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 }
             },
-            "name": "Excorion Paragon"
+            "name": "Excorion Paragon",
+            "npcHp": "negative healing"
         },
         "Obrousian": {
             "items": {
@@ -242,7 +252,8 @@
                     "description": "<p>When a creature is grabbed by the obrousian, its lungs magically fill with water. A creature that can't breathe water is suffocating while it is grabbed.</p>"
                 }
             },
-            "name": "Obrousian"
+            "name": "Obrousian",
+            "npcHp": "negative healing"
         },
         "Eberark": {
             "items": {
@@ -482,7 +493,9 @@
                     "name": "Divine Wrath (Chaotic Only)"
                 }
             },
-            "name": "Hegessik"
+            "name": "Hegessik",
+            "npcAllSaves": "+1 status to all saves vs. divine magic",
+            "npcHp": "fast healing 10"
         },
         "Kolo Harvan": {
             "items": {
@@ -553,9 +566,13 @@
                 },
                 "+1 Status to All Saves vs. Magic": {
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
+                },
+                "Dream Lore": {
+                    "name": "Dream Lore"
                 }
             },
-            "name": "Penqual"
+            "name": "Penqual",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Twisted Jack": {
             "items": {
@@ -694,6 +711,9 @@
                 "Frightening Critical": {
                     "name": "Frightening Critical",
                     "description": "<p>When the gang tough's Strike with a bludgeoning weapon is a critical hit and deals damage, the target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
+                },
+                "Gang Lore": {
+                    "name": "Gang Lore"
                 }
             },
             "name": "Washboard Dog Tough"
@@ -764,6 +784,9 @@
                 "Bolts (Poisoned with Giant Scorpion Venom)": {
                     "name": "Bolts (Poisoned with Giant Scorpion Venom)",
                     "description": "<p>@UUID[Compendium.pf2e.equipment-srd.QGXNqpP5KvSldoZz]{Giant Scorpion Venom}</p>\n<hr />\n<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
+                "Norgorber Lore": {
+                    "name": "Norgorber Lore"
                 }
             },
             "name": "Blackfingers Acolyte"
@@ -820,6 +843,9 @@
                 },
                 "Hydraulic Push (At Will)": {
                     "name": "Hydraulic Push (At Will)"
+                },
+                "Sailing Lore": {
+                    "name": "Sailing Lore"
                 }
             },
             "name": "Avarek"
@@ -883,7 +909,8 @@
                     "name": "Alietta"
                 }
             },
-            "name": "Frefferth"
+            "name": "Frefferth",
+            "npcHp": "fast healing 8"
         },
         "Gang Tough": {
             "items": {
@@ -901,6 +928,9 @@
                 "Frightening Critical": {
                     "name": "Frightening Critical",
                     "description": "<p>When the gang tough's Strike with a bludgeoning weapon is a critical hit and deals damage, the target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
+                },
+                "Gang Lore": {
+                    "name": "Gang Lore"
                 }
             },
             "name": "Gang Tough"
@@ -980,7 +1010,8 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Agent of the Gray Queen"
+            "name": "Agent of the Gray Queen",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Skinsaw Murderer": {
             "items": {
@@ -1057,6 +1088,12 @@
                 },
                 "Ring of Sustenance": {
                     "_source": "equipment-srd.14rbefsoClgClRQ8"
+                },
+                "Absalom Lore": {
+                    "name": "Absalom Lore"
+                },
+                "Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             },
             "name": "Wynsal Starborn"
@@ -1181,7 +1218,8 @@
                     "_source": "spells-srd.uqlxMQQeSGWEVjki"
                 }
             },
-            "name": "Lie-Master"
+            "name": "Lie-Master",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Copper Hand Rogue": {
             "items": {
@@ -1303,6 +1341,9 @@
                 "Double Punch": {
                     "name": "Double Punch",
                     "description": "<p>Lord Guirden makes two fist Strikes, ignoring the multiple attack penalty until after both Strikes.</p>"
+                },
+                "Legal Lore": {
+                    "name": "Legal Lore"
                 }
             },
             "name": "Lord Guirden"
@@ -1431,7 +1472,8 @@
                     "_source": "equipment-srd.uiJAR3jQbQHhiP3Q"
                 }
             },
-            "name": "Secret-Keeper"
+            "name": "Secret-Keeper",
+            "npcAllSaves": "+1 status to all saves vs. mental"
         },
         "Black Whale Guard": {
             "items": {
@@ -1474,6 +1516,9 @@
                 },
                 "Arrows": {
                     "_source": "equipment-srd.w2ENw2VMPcsbif8g"
+                },
+                "Games Lore": {
+                    "name": "Games Lore"
                 }
             },
             "name": "Black Whale Guard"
@@ -1538,9 +1583,13 @@
                 },
                 "Attack of Opportunity (Stinger Only)": {
                     "name": "Attack of Opportunity (Stinger Only)"
+                },
+                "Norgorber Lore": {
+                    "name": "Norgorber Lore"
                 }
             },
-            "name": "The Stabbing Beast"
+            "name": "The Stabbing Beast",
+            "npcAllSaves": "+2 to all saves vs. mental"
         },
         "Reginald Vancaskerkin": {
             "items": {
@@ -1585,6 +1634,12 @@
                 "Poison Ink": {
                     "name": "Poison Ink",
                     "description": "<p>Reginald is immune to the toxic ink that flows through his veins</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> 3d6 poison and sickened 1 (1 round)</p>\n<p><strong>Stage 2</strong> 4d6 poison sickened 2 (1 round).</p>"
+                },
+                "Engineering Lore": {
+                    "name": "Engineering Lore"
+                },
+                "Absalom Lore": {
+                    "name": "Absalom Lore"
                 }
             },
             "name": "Reginald Vancaskerkin"
@@ -1742,6 +1797,9 @@
                 "Ghaele's Gaze": {
                     "name": "Ghaele's Gaze",
                     "description": "<p>When a ghaele fixes their gaze upon a non-good creature, the creature is subjected to the effects of <em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{Divine Decree}</em> (@Check[type:will|dc:20|name:Divine Decree|traits:damaging-effect] save).</p>\n<p>If it survives, the creature is temporarily immune to for 1 minute.</p>"
+                },
+                "Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             },
             "name": "Ghaele Of Kharnas"
@@ -1903,6 +1961,9 @@
                 },
                 "Message": {
                     "_source": "spells-srd.vLzFcIaSXs7YTIqJ"
+                },
+                "Legal Lore": {
+                    "name": "Legal Lore"
                 }
             },
             "name": "Kapral"
@@ -1991,9 +2052,14 @@
                 },
                 "+1 Status to All Saves vs. Magic": {
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
+                },
+                "Attack of Opportunity (Jaws Only)": {
+                    "name": "Attack of Opportunity (Jaws Only)",
+                    "description": "<p>Jaws only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 }
             },
-            "name": "Veksciralenix"
+            "name": "Veksciralenix",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Miriel Grayleaf": {
             "items": {
@@ -2002,6 +2068,9 @@
                 },
                 "Crossbow": {
                     "name": "Balestra"
+                },
+                "Library Lore": {
+                    "name": "Library Lore"
                 }
             },
             "name": "Miriel Grayleaf"
@@ -2121,9 +2190,13 @@
                 "Poison Conversion": {
                     "name": "Poison Conversion",
                     "description": "<p><strong>Frequency</strong> 3 times per day</p>\n<hr />\n<p><strong>Effect</strong> If Grabble's next action is to cast a cantrip or a spell that is 6th level or lower and deals acid, cold, electricity, or fire damage, the spell deals poison damage rather than its normal damage type and gains the poison trait.</p>"
+                },
+                "Poison Lore": {
+                    "name": "Poison Lore"
                 }
             },
-            "name": "Grabble Forden"
+            "name": "Grabble Forden",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Franca Laurentz": {
             "items": {
@@ -2181,9 +2254,13 @@
                 "Splash Poison": {
                     "name": "Splash Poison",
                     "description": "<p>Franca uncorks and flings a dose of poison at a bleeding foe.</p>\n<p>She retrieves a poison from her inventory, then splashes it at a creature within 10 feet that is currently taking @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage}.</p>\n<p>The creature must succeed at a @Check[type:reflex|dc:32] save or be exposed to the poison.</p>"
+                },
+                "Absalom Lore": {
+                    "name": "Absalom Lore"
                 }
             },
-            "name": "Franca Laurentz"
+            "name": "Franca Laurentz",
+            "npcAllSaves": "+2 circumstance bonus to saves vs. poison"
         },
         "Summoning Rune (Barbazu Devil)": {
             "name": "Agenti della Vegliarupe",
@@ -2280,6 +2357,9 @@
                 "Moderate Alchemist's Fire": {
                     "name": "Moderate Alchemist's Fire",
                     "description": "<p>[[/r 2[persistent,fire]]] damage</p>\n<p>[[/r {2}[fire]]]{2 fire splash damage}</p>"
+                },
+                "Alchemy Lore": {
+                    "name": "Alchemy Lore"
                 }
             },
             "name": "Diobel Sweeper Chemist"
@@ -2417,6 +2497,9 @@
                 "Whirling Slashes": {
                     "name": "Whirling Slashes",
                     "description": "<p>The Daemonic Rumormonger Strides up to his Speed. He can make up to three claw Strikes, each against a different target, at any points during this Stride. His multiple attack penalty applies as usual.</p>"
+                },
+                "Engineering Lore": {
+                    "name": "Engineering Lore"
                 }
             },
             "name": "Daemonic Rumormonger"
@@ -2439,7 +2522,8 @@
                     "description": "<p>The Copper Hand illusionist deals 2d6 additional precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
             },
-            "name": "Copper Hand Illusionist"
+            "name": "Copper Hand Illusionist",
+            "npcAc": "(with mage armor)"
         },
         "The Winder": {
             "name": "Agenti della Vegliarupe",
@@ -2541,7 +2625,9 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Hestriviniaas"
+            "name": "Hestriviniaas",
+            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcHp": "fast healing 15"
         },
         "Explosive Barrels": {
             "name": "Agenti della Vegliarupe",
@@ -2667,6 +2753,9 @@
                 },
                 "Arrows": {
                     "_source": "equipment-srd.w2ENw2VMPcsbif8g"
+                },
+                "Norgorber Lore": {
+                    "name": "Norgorber Lore"
                 }
             },
             "name": "Priest of Blackfingers"
@@ -2732,9 +2821,14 @@
                 },
                 "Read Aura": {
                     "_source": "spells-srd.OhD2Z6rIGGD5ocZA"
+                },
+                "Bardic Lore": {
+                    "name": "Bardic Lore"
                 }
             },
-            "name": "Ixusoth"
+            "name": "Ixusoth",
+            "npcAc": "all-around vision",
+            "npcAllSaves": "+2 status to all saves vs. magic"
         },
         "Antaro Boldblade": {
             "items": {
@@ -2782,7 +2876,8 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Sordesdaemon"
+            "name": "Sordesdaemon",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Prospecti Statue": {
             "items": {
@@ -2806,7 +2901,9 @@
                 }
             },
             "description": "<p>As with any humanoid animated statues of Medium size, giant animated statues are used to guard locations of importance, but their increased size and power make them most useful in large vaults, spacious chambers, or outdoor locations. Animated objects of this strength and size are ideal for tasks and responsibilities usually performed by golems, and more powerful animated objects are thus all but unheard of.</p>",
-            "name": "Prospecti Statue"
+            "name": "Prospecti Statue",
+            "npcAc": "(22 when broken); construct armor",
+            "npcHp": "Hardness 10"
         },
         "Slithering Rift": {
             "items": {
@@ -2838,7 +2935,8 @@
                     "name": "Out You Go"
                 }
             },
-            "name": "Slithering Rift"
+            "name": "Slithering Rift",
+            "npcAc": "(27 from inside the Dimensional Pit)"
         },
         "Zrukbat": {
             "items": {
@@ -2965,9 +3063,14 @@
                 },
                 "+1 Status to All Saves vs. Magic": {
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
+                },
+                "Maelstrom Lore": {
+                    "name": "Maelstrom Lore"
                 }
             },
-            "name": "Izfiitar"
+            "name": "Izfiitar",
+            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcHp": "fast healing 20"
         },
         "Camarach": {
             "items": {
@@ -3036,6 +3139,9 @@
                 "Rallying Call": {
                     "name": "Rallying Call",
                     "description": "<p>When Tyrroicese subsumed Corporal Quordein, it gained a perverted form of the commander's ability to rally allies.</p>\n<p>The first time Tyrroicese uses this ability, it summons an @UUID[Compendium.pf2e.pathfinder-bestiary.uQBOJfjtzEXvpLQz]{Ochre Jelly}, which leaks out of the ceiling of area D13 and drops to the floor to join the fight, siding with Tyrroicese.</p>\n<p>Thereafter, when Tyrroicese uses this ability, any oozes within 60 feet become @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} for 1 round (the oozes can use their extra action only to Stride) and, if they're not allied with the agents, the oozes ally themselves with Tyrroicese.</p>"
+                },
+                "Dark Tapestry Lore": {
+                    "name": "Dark Tapestry Lore"
                 }
             },
             "name": "Tyrroicese"
@@ -3117,9 +3223,13 @@
                 },
                 "+2 Status to All Saves vs. Magic": {
                     "name": "+2 Status to All Saves vs. Magic"
+                },
+                "Dream Lore": {
+                    "name": "Dream Lore"
                 }
             },
-            "name": "Nenchuuj"
+            "name": "Nenchuuj",
+            "npcAllSaves": "+2 status to all saves vs. magic"
         },
         "Poison Eater": {
             "items": {
@@ -3178,9 +3288,14 @@
                 },
                 "+1 Status to Will Saves vs. Mental": {
                     "name": "+1 Status to Will Saves vs. Mental"
+                },
+                "Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             },
-            "name": "Miogimo"
+            "name": "Miogimo",
+            "npcAllSaves": "+1 status bonus to Will saves vs. mental effects",
+            "npcHp": "rejuvenation"
         },
         "Hands Of The Forgotten": {
             "name": "Agenti della Vegliarupe",
@@ -3229,6 +3344,9 @@
                 "Final Blow": {
                     "name": "Final Blow",
                     "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Berleth is reduced to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> Berleth makes a final shovel Strike before dying.</p>"
+                },
+                "Gang Lore": {
+                    "name": "Gang Lore"
                 }
             },
             "name": "Bloody Berleth"
@@ -3323,7 +3441,8 @@
                     "_source": "spells-srd.HBJPsonQnWcC3qdX"
                 }
             },
-            "name": "Myrucarx"
+            "name": "Myrucarx",
+            "npcSpeed": "freedom of movement"
         },
         "Bregdi": {
             "items": {
@@ -3461,9 +3580,13 @@
                 },
                 "Synesthesia": {
                     "_source": "spells-srd.OAt2ZEns1gIOCgrn"
+                },
+                "Harrow Lore": {
+                    "name": "Harrow Lore"
                 }
             },
-            "name": "The Rabbit Prince"
+            "name": "The Rabbit Prince",
+            "npcSpeed": "freedom of movement, quick movements"
         },
         "Siege Shard": {
             "items": {
@@ -3494,7 +3617,9 @@
                     "description": "<p>While a siege shard is embedded within a structure while using <em>@UUID[Compendium.pf2e.spells-srd.vh1RpbWfqdNC4L3P]{Meld into Stone}</em>, the structure and all objects within it take twice as long to repair.</p>"
                 }
             },
-            "name": "Siege Shard"
+            "name": "Siege Shard",
+            "npcAc": "(15 when broken)",
+            "npcHp": "Hardness 5"
         },
         "Arcane Feedback Trap": {
             "name": "Agenti della Vegliarupe",
@@ -3582,7 +3707,9 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Avsheros the Betrayer"
+            "name": "Avsheros the Betrayer",
+            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcHp": "regeneration 20 (deactivated by evil)"
         },
         "Dreadsong Dancer": {
             "items": {
@@ -3611,7 +3738,8 @@
                     "description": "<p>Songblade</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 }
             },
-            "name": "Dreadsong Dancer"
+            "name": "Dreadsong Dancer",
+            "npcAllSaves": "+2 status to all saves vs. composition spells"
         },
         "Mobana": {
             "items": {
@@ -3675,6 +3803,9 @@
                 },
                 "Sleep Poison": {
                     "name": "Sleep Poison"
+                },
+                "Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             },
             "name": "Mobana"
@@ -3716,6 +3847,12 @@
                 },
                 "Shield Block": {
                     "_source": "bestiary-ability-glossary-srd.m4HQ2o5aPxjXf2kY"
+                },
+                "Hell Lore": {
+                    "name": "Hell Lore"
+                },
+                "Legal Lore": {
+                    "name": "Legal Lore"
                 }
             },
             "name": "Calennia"
@@ -3752,7 +3889,8 @@
                     "description": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 }
             },
-            "name": "Ravenile Rager"
+            "name": "Ravenile Rager",
+            "npcHp": "regeneration 20 (deactivated by fire or acid)"
         },
         "Acidic Poison Cloud Trap": {
             "name": "Agenti della Vegliarupe",
@@ -3881,7 +4019,8 @@
                     "name": "Protean Anatomy 10"
                 }
             },
-            "name": "Il'setsya Wyrmtouched"
+            "name": "Il'setsya Wyrmtouched",
+            "npcHp": "fast healing 5"
         },
         "Norgorberite Poisoner": {
             "items": {
@@ -3931,6 +4070,9 @@
                 },
                 "Leather Armor": {
                     "_source": "equipment-srd.4tIVTg9wj56RrveA"
+                },
+                "Poison Lore": {
+                    "name": "Poison Lore"
                 }
             },
             "name": "Norgorberite Poisoner"
@@ -3982,6 +4124,9 @@
                 },
                 "Arrows": {
                     "_source": "equipment-srd.w2ENw2VMPcsbif8g"
+                },
+                "Games Lore": {
+                    "name": "Games Lore"
                 }
             },
             "name": "Black Whale Guard (F3, Nightmare Cudgel)"
@@ -4051,6 +4196,9 @@
                 "Smooth Operator": {
                     "name": "Smooth Operator",
                     "description": "<p>When Gage meets a group of up to five people, he can immediately attempt a Diplomacy check to @UUID[Compendium.pf2e.action-macros.1Sj2Pz3VI2SFWqZw]{Make an Impression}, comparing the result to the Will DC of each target.</p>\n<p>He takes a -3 penalty on this check, and it is possible to get different degrees of success for each target. If he fails or critically fails, he can engage in 1 minute of conversation and attempt a new check at the end of that time rather than accepting the failure or critical failure result.</p>"
+                },
+                "Games Lore": {
+                    "name": "Games Lore"
                 }
             },
             "name": "Gage Carlyle"
@@ -4116,7 +4264,8 @@
                     "description": "<p>The binumir makes four Strikes; no more than two can be against the same target.</p>\n<p>These attacks count toward the binumir's multiple attack penalty, but the penalty doesn't increase until after all the attacks have been made.</p>"
                 }
             },
-            "name": "Binumir"
+            "name": "Binumir",
+            "npcHp": "negative healing"
         },
         "Inky Tendrils": {
             "name": "Agenti della Vegliarupe",
@@ -4256,9 +4405,13 @@
                 },
                 "Darkness": {
                     "_source": "spells-srd.4GE2ZdODgIQtg51c"
+                },
+                "Norgorber Lore": {
+                    "name": "Norgorber Lore"
                 }
             },
-            "name": "Jonis Flakfatter"
+            "name": "Jonis Flakfatter",
+            "npcAllSaves": "+2 status to all saves vs. disease and poison"
         },
         "Grospek Lavarsus": {
             "items": {
@@ -4279,6 +4432,12 @@
                 },
                 "Lawkeeper": {
                     "name": "Lawkeeper"
+                },
+                "Absalom Lore": {
+                    "name": "Absalom Lore"
+                },
+                "Legal Lore": {
+                    "name": "Legal Lore"
                 }
             },
             "name": "Grospek Lavarsus"
@@ -4322,6 +4481,9 @@
                 "Infector": {
                     "name": "Infector",
                     "description": "<p>The Daemonic targets a creature within 30 feet that's currently subject to a poison affliction. The poison affliction progresses to the next stage.</p>"
+                },
+                "Norgorber Lore": {
+                    "name": "Norgorber Lore"
                 }
             },
             "name": "Daemonic Infector"
@@ -4344,7 +4506,8 @@
                     "name": "Magic Horn"
                 }
             },
-            "name": "Almiraj"
+            "name": "Almiraj",
+            "npcAllSaves": "-2 status to saves vs. occult"
         },
         "Clockwork Poison Bomb": {
             "name": "Agenti della Vegliarupe",
@@ -4455,7 +4618,8 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Rhevanna"
+            "name": "Rhevanna",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "The Laughing Fiend's Greeting": {
             "name": "Agenti della Vegliarupe",
@@ -4725,7 +4889,8 @@
                     "description": "<p>The Iroran skeleton makes a single Strike and compares the result to the AC of all creatures within its reach, dealing damage to each creature hit.</p>"
                 }
             },
-            "name": "Iroran Skeleton"
+            "name": "Iroran Skeleton",
+            "npcHp": "negative healing"
         },
         "Minchgorm": {
             "items": {
@@ -4862,6 +5027,9 @@
                 },
                 "Wyvern Poison (Applied to Rapier)": {
                     "name": "Wyvern Poison (Applied to Rapier)"
+                },
+                "Poison Lore": {
+                    "name": "Poison Lore"
                 }
             },
             "name": "Alchemist Aspirant"
@@ -4906,7 +5074,8 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Ulressia The Blessed"
+            "name": "Ulressia The Blessed",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Overdrive Imentesh": {
             "items": {
@@ -4974,7 +5143,9 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Overdrive Imentesh"
+            "name": "Overdrive Imentesh",
+            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcHp": "fast healing 10"
         },
         "Agradaemon": {
             "items": {
@@ -5016,7 +5187,8 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Agradaemon"
+            "name": "Agradaemon",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Bolar Of Stonemoor": {
             "items": {
@@ -5066,6 +5238,9 @@
                 },
                 "Bolts": {
                     "_source": "equipment-srd.AITVZmakiu3RgfKo"
+                },
+                "Legal Lore": {
+                    "name": "Legal Lore"
                 }
             },
             "name": "Grimwold"
@@ -5121,9 +5296,13 @@
                 },
                 "Greater Flaming Greataxe": {
                     "name": "Greater Flaming Greataxe"
+                },
+                "Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             },
-            "name": "Graveknight Of Kharnas"
+            "name": "Graveknight Of Kharnas",
+            "npcHp": "(negative healing, rejuvenation)"
         },
         "Fayati Alummur": {
             "items": {
@@ -5306,6 +5485,9 @@
                 },
                 "Bolts": {
                     "_source": "equipment-srd.AITVZmakiu3RgfKo"
+                },
+                "Legal Lore": {
+                    "name": "Legal Lore"
                 }
             },
             "name": "Starwatch Commando"
@@ -5334,6 +5516,9 @@
                 "Illusory Copies": {
                     "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Blune calls into existence [[/r 1d4+2 #illusory copies]] illusory copies of himself, which dance around him and copy his every movement, making it almost impossible to pinpoint the true Blune.</p>\n<p>Any attack that would hit Blune has a random chance of hitting an illusory copy instead. This effect lasts for up to 1 minute or until all the copies are destroyed or Blune is incapacitated.</p>\n<p>Once a copy is hit, it's destroyed. If an attack roll fails to hit Blune's AC but doesn't critically fail, it destroys a copy but has no additional effect (even if the attack would normally have an effect on a failure). If an attack roll is a critical success and would hit a copy, the copy is destroyed and the attack roll becomes a success against Blune.</p>\n<p>Once all the copies are destroyed, this ability ends.</p>",
                     "name": "Illusory Copies"
+                },
+                "Architecture Lore": {
+                    "name": "Architecture Lore"
                 }
             },
             "name": "Blune Bandersworth"
@@ -5346,6 +5531,9 @@
                 },
                 "Dagger": {
                     "name": "Pugnale"
+                },
+                "Farming Lore": {
+                    "name": "Farming Lore"
                 }
             },
             "name": "Eunice"
@@ -5422,9 +5610,16 @@
                 },
                 "+2 Status Bonus on Saves vs. Trip": {
                     "name": "+2 Status Bonus on Saves vs. Trip"
+                },
+                "Gang Lore": {
+                    "name": "Gang Lore"
+                },
+                "Sports Lore": {
+                    "name": "Sports Lore"
                 }
             },
-            "name": "Maurrisa Jonne"
+            "name": "Maurrisa Jonne",
+            "npcAllSaves": "+1 status bonus to saves vs. incapacitation effects, +2 status bonus to saves vs. Shove and Trip"
         },
         "Vaultbreaker Ooze": {
             "items": {
@@ -5534,7 +5729,8 @@
                     "_source": "spells-srd.Ek5XI0aEdZhBgm21"
                 }
             },
-            "name": "The Inkmaster"
+            "name": "The Inkmaster",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "False Door Trap": {
             "name": "Agenti della Vegliarupe",
@@ -5719,7 +5915,8 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Hundun Chaos Mage"
+            "name": "Hundun Chaos Mage",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Clockwork Injector": {
             "items": {
@@ -5795,7 +5992,8 @@
                     "name": "Split"
                 }
             },
-            "name": "Child Of Venom"
+            "name": "Child Of Venom",
+            "npcSpeed": "suction"
         },
         "Sleepless Sun Veteran": {
             "items": {
@@ -5836,6 +6034,9 @@
                 },
                 "Arrows": {
                     "_source": "equipment-srd.w2ENw2VMPcsbif8g"
+                },
+                "Law Lore": {
+                    "name": "Law Lore"
                 }
             },
             "name": "Sleepless Sun Veteran"
@@ -5887,6 +6088,9 @@
                 "Spellstrike Ammunition (Type I) (Magic Missile)": {
                     "description": "<p>Mystic patterns create a magic reservoir within this ammunition. You activate <em>spellstrike ammunition</em> by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated <em>spellstrike ammunition</em> is targeted by the spell. If the creature isn't a valid target for the spell, the spell is lost.</p>\n<p>The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.</p>\n<p>The maximum level of spell the ammunition can hold determines its item level and Price.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Cast a Spell</p>\n<p><em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</em> 1st</p>",
                     "name": "Spellstrike Ammunition (Type I) (Magic Missile)"
+                },
+                "Gang Lore": {
+                    "name": "Gang Lore"
                 }
             },
             "name": "Diobel Sweeper Tough"
@@ -5969,6 +6173,9 @@
                 "Wire Catch": {
                     "name": "Wire Catch",
                     "description": "<p>Every Skinsaw seamer keeps a sewing needle attached to a loop of thick silk, wrapped loosely around their hand not holding a weapon, which they can use in combat to snag or disarm attackers</p>\n<p><strong>Trigger</strong> A creature hits the seamer with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The seamer attempts an Athletics check to either @UUID[Compendium.pf2e.action-macros.i95kcGLIQKOTsnv6]{Grapple} or @UUID[Compendium.pf2e.action-macros.ooiO59Ch2QaebOmc]{Disarm} the triggering creature.</p>"
+                },
+                "Norgorber Lore": {
+                    "name": "Norgorber Lore"
                 }
             },
             "name": "Skinsaw Seamer"
@@ -5980,7 +6187,8 @@
                     "description": "<p>You can use clever workarounds to replicate the arcane essence of certain materials. When you @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} that requires material components, you can provide these material components without a spell component pouch by drawing intricate replacement sigils in the air.</p>\n<p>Unlike when providing somatic components, you still must have a hand completely free. This doesn't remove the need for any materials listed in the spell's cost entry.</p>"
                 }
             },
-            "name": "Kemeneles"
+            "name": "Kemeneles",
+            "npcAc": "(14 without mage armor)"
         },
         "Ofalth Zombie": {
             "items": {
@@ -6008,7 +6216,8 @@
                     "name": "Fling Offal"
                 }
             },
-            "name": "Ofalth Zombie"
+            "name": "Ofalth Zombie",
+            "npcHp": "negative healing"
         },
         "Najra Lizard": {
             "items": {
@@ -6128,7 +6337,8 @@
                     "description": "<p>The excorion plants a magical handprint on the target, marking them as chosen for death. The excorion makes a fist Strike against an adjacent creature; this does not count toward the excorion's multiple attack penalty. On a hit, the attack does no damage, but the creature becomes observed to every excorion within 60 feet, even if an excorion's line of sight would be blocked by a wall or other obstacle. This effect lasts until the handprint is washed off, which requires water and spending 3 actions to fully clean off.</p>"
                 }
             },
-            "name": "Excorion"
+            "name": "Excorion",
+            "npcHp": "negative healing"
         },
         "Carvey": {
             "items": {
@@ -6278,9 +6488,16 @@
                 },
                 "Grease": {
                     "_source": "spells-srd.Wu0xFpewMKRK3HG8"
+                },
+                "Aquatic Lore": {
+                    "name": "Aquatic Lore"
+                },
+                "Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             },
-            "name": "Tiderunner Aquamancer"
+            "name": "Tiderunner Aquamancer",
+            "npcAllSaves": "+1 status to all saves vs. enchantments, -2 to all saves vs. aboleth effects"
         },
         "Zeal-damned Ghoul": {
             "items": {
