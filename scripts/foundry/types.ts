@@ -125,8 +125,23 @@ export interface EntryItemSpell extends BaseEntry {
     range: { value: string };
     time: { value: string };
     cost: { value: string };
+    area: { details: string };
+    heightening?: SpellHeighteningFixed | SpellHeighteningInterval;
   };
 }
+
+export type SpellHeighteningFixed = {
+  type: "fixed";
+  levels: Record<
+    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+    Partial<EntryItemSpell["system"]>
+  >;
+};
+
+export type SpellHeighteningInterval = {
+  type: "interval";
+  interval: number;
+};
 
 export interface EntryJournalEntry extends BaseEntry {
   content?: string;

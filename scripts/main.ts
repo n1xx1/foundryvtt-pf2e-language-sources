@@ -4,7 +4,12 @@ import _ from "lodash";
 import path from "path";
 import { join } from "path/posix";
 import { readManifest, readSystemFiles } from "./foundry/system";
-import { EntryActor, EntryItem, EntryJournalEntry } from "./foundry/types";
+import {
+  EntryActor,
+  EntryItem,
+  EntryItemSpell,
+  EntryJournalEntry,
+} from "./foundry/types";
 
 interface Compendium {
   label: string;
@@ -39,25 +44,16 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
     });
 
     if (entry.type === "spell") {
-      if (entry.system.materials?.value) {
-        el.spellMaterials = entry.system.materials?.value;
-      }
-      if (entry.system.target?.value) {
-        el.spellTarget = entry.system.target?.value;
-      }
-      if (entry.system.cost?.value) {
-        el.spellCost = entry.system.cost?.value;
-      }
-      if (entry.system.range?.value) {
-        const val = entry.system.range?.value.toLowerCase();
-        if (!val.match(rangeRegex)) {
-          el.spellRange = entry.system.range?.value;
-        }
-      }
-      if (entry.system.time?.value) {
-        const val = entry.system.time?.value.toLowerCase();
-        if (!val.match(timeRegex)) {
-          el.spellTime = entry.system.time?.value;
+      Object.assign(el, mapSpellData(entry.system) ?? {});
+
+      if (entry.system.heightening?.type === "fixed") {
+        for (const [level, overrides] of Object.entries(
+          entry.system.heightening.levels
+        )) {
+          const el1 = mapSpellData(overrides);
+          if (el1) {
+            (el.spellHeightening ??= {})[`${level}`] = el1;
+          }
         }
       }
     }
@@ -73,6 +69,35 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
 
   const outData = JSON.stringify(out, null, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
+}
+
+function mapSpellData(system: Partial<EntryItemSpell["system"]>) {
+  let el: any = null;
+  if (system.materials?.value) {
+    (el ??= {}).spellMaterials = system.materials?.value;
+  }
+  if (system.target?.value) {
+    (el ??= {}).spellTarget = system.target?.value;
+  }
+  if (system.cost?.value) {
+    (el ??= {}).spellCost = system.cost?.value;
+  }
+  if (system.range?.value) {
+    const val = system.range?.value.toLowerCase();
+    if (!val.match(rangeRegex)) {
+      (el ??= {}).spellRange = system.range?.value;
+    }
+  }
+  if (system.time?.value) {
+    const val = system.time?.value.toLowerCase();
+    if (!val.match(timeRegex)) {
+      (el ??= {}).spellTime = system.time?.value;
+    }
+  }
+  if (system.area?.details) {
+    (el ??= {}).spellArea = system.area.details;
+  }
+  return el;
 }
 
 async function handleJournalEntry(
