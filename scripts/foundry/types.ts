@@ -65,6 +65,20 @@ export interface EntryNPC extends BaseEntry {
       publicNotes: string;
       source: { value: string };
     };
+    attributes: {
+      ac: { details: string };
+      allSaves: { value: string };
+      hp: { details: string };
+      speed: {
+        details: string;
+        otherSpeeds: { label: string; type: string }[];
+      };
+    };
+    saves: {
+      fortitude: { saveDetail: string }; // saveDetail doesn't seem to be used
+      reflex: { saveDetail: string }; // saveDetail doesn't seem to be used
+      will: { saveDetail: string }; // saveDetail doesn't seem to be used
+    };
   };
 }
 

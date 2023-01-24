@@ -1,5 +1,7 @@
+import { Command } from "commander";
 import { mkdir, writeFile } from "fs/promises";
 import _ from "lodash";
+import path from "path";
 import { join } from "path/posix";
 import { readManifest, readSystemFiles } from "./foundry/system";
 import { EntryActor, EntryItem, EntryJournalEntry } from "./foundry/types";
@@ -140,11 +142,28 @@ const ignoredItemTypes = [
   "deity",
   "feat",
   "heritage",
-  "lore",
   "spellcastingEntry",
 ];
 const ignoredDescriptionItemTypes = ["spell", "melee", "ranged"];
 const attackType = ["melee", "ranged"];
+const skillNames = [
+  "acrobatics",
+  "arcana",
+  "athletics",
+  "crafting",
+  "deception",
+  "diplomacy",
+  "intimidation",
+  "medicine",
+  "nature",
+  "occultism",
+  "performance",
+  "religion",
+  "society",
+  "stealth",
+  "survival",
+  "thievery",
+];
 
 async function handleActor(
   id: string,
@@ -182,6 +201,26 @@ async function handleActor(
         description: entry.system.details.publicNotes,
       });
 
+      if (entry.type === "npc") {
+        if (entry.system.attributes.ac.details) {
+          el.npcAc = entry.system.attributes.ac.details;
+        }
+        if (entry.system.attributes.allSaves.value) {
+          el.npcAllSaves = entry.system.attributes.allSaves.value;
+        }
+        if (entry.system.attributes.hp.details) {
+          el.npcHp = entry.system.attributes.hp.details;
+        }
+        if (entry.system.attributes.speed.details) {
+          el.npcSpeed = entry.system.attributes.speed.details;
+        }
+        for (const speed of entry.system.attributes.speed.otherSpeeds) {
+          if (speed.label) {
+            (el.npcOtherSpeeds ??= {})[speed.type] = speed.label;
+          }
+        }
+      }
+
       for (const item of entry.items) {
         try {
           if (!itemTypes.includes(item.type)) {
@@ -189,6 +228,13 @@ async function handleActor(
           }
 
           if (ignoredItemTypes.includes(item.type)) {
+            continue;
+          }
+
+          if (
+            item.type === "lore" &&
+            skillNames.includes(item.name.toLowerCase())
+          ) {
             continue;
           }
 
@@ -369,10 +415,10 @@ function findByName(
   return null;
 }
 
-async function main() {
+async function main(systemDir = "../system") {
   await setupOut();
-  const manifest = await readManifest("../system/system.json");
-  const [allPacks, allLangs] = await readSystemFiles("../system", manifest);
+  const manifest = await readManifest(path.join(systemDir, "system.json"));
+  const [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
 
   const langData = _.merge({}, ...allLangs);
   await writeFile("lang/en.json", JSON.stringify(langData, null, 2));
@@ -408,4 +454,10 @@ async function main() {
   }
 }
 
-main().then(console.log);
+const program = new Command();
+const opts = program
+  .option("-d, --directory <dir>", "pf2e system dir", "../system")
+  .parse(process.argv)
+  .opts<{ directory: string }>();
+
+main(opts.directory).then(console.log);
