@@ -18,8 +18,12 @@
                 "Bog Rot": {
                     "name": "Bog Rot",
                     "description": "<p>This affliction can't be reduced below stage 1, nor can the damage from it be healed, until it's successfully treated with remove curse or a similar effect; the affliction can then be removed as normal for a disease. A creature killed by bog rot melts into a noxious sludge and can't be resurrected except by a 7th-level resurrect ritual or similar magic</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> [[/r 3d6[negative]]] damage and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 day)</p>"
+                },
+                "Stealth (+21 while buried in a bog)": {
+                    "name": "Stealth (+21 while buried in a bog)"
                 }
-            }
+            },
+            "npcHp": "negative healing"
         },
         "Murschen": {
             "items": {
@@ -87,7 +91,8 @@
                     "description": "<p>A dread wisp is immune to all spells except <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{Faerie Fire}</em>, <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{Maze}</em>, <em>@UUID[Compendium.pf2e.spells-srd.DyiD239dNS7RIxZE]{Searing Light}</em>, and spells with the positive trait.</p>",
                     "name": "Magic Immunity"
                 }
-            }
+            },
+            "npcHp": "negative healing"
         },
         "Chandriu Invisar": {
             "name": "Chandriu Invisar",
@@ -106,8 +111,12 @@
                 "Rejuvenation": {
                     "description": "<p>To put Chandriu to rest permanently, a hero must convince her to stop pining over Volluk with a successful @Check[type:diplomacy|dc:21|name:Convince Chandriu|overrideTraits:true] check.</p>\n<p>Regardless of the result of this check, Chandriu flies into a rage and attacks, but if the Diplomacy check is successful, she is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 10 rounds while she fights. If defeated while she is slowed, she is put to rest.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>",
                     "name": "Rejuvenation"
+                },
+                "Scriptorium Lore": {
+                    "name": "Scriptorium Lore"
                 }
-            }
+            },
+            "npcHp": "negative healing, rejuvenation"
         },
         "Gibtas Spawn Swarm": {
             "items": {
@@ -155,7 +164,8 @@
                     "description": "<p><strong>Trigger</strong> A dazzled or blinded creature, or a creature with light blindness, ends its move adjacent to Galudu</p>\n<hr />\n<p><strong>Effect</strong> Galudu Steps.</p>"
                 }
             },
-            "name": "Galudu"
+            "name": "Galudu",
+            "npcHp": "death motes"
         },
         "Afflicted Irnakurse": {
             "items": {
@@ -263,7 +273,8 @@
                 }
             },
             "description": "<p>Most often found below ground, these oozes scour caves for objects to dissolve with their corrosive secretions. This caustic acid is particularly dangerous to creatures that attack a pudding, as it can quickly damage and destroy gear.</p>\n<hr />\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
-            "name": "Viscous Black Pudding"
+            "name": "Viscous Black Pudding",
+            "npcSpeed": "suction"
         },
         "Spike Launcher": {
             "name": "Abomination Vaults",
@@ -296,7 +307,8 @@
                     "name": "Tentacle"
                 }
             },
-            "description": "<p>The typical dhuthorex is a dumb and hungry beast, chasing prey through the depths and venturing onto land only to pursue easy prey.</p>\n<hr />\n<p>Strange things swim in sunless seas, but few as fierce as the shark-like dhuthorexes. These beasts chase prey fearlessly and tenaciously.</p>"
+            "description": "<p>The typical dhuthorex is a dumb and hungry beast, chasing prey through the depths and venturing onto land only to pursue easy prey.</p>\n<hr />\n<p>Strange things swim in sunless seas, but few as fierce as the shark-like dhuthorexes. These beasts chase prey fearlessly and tenaciously.</p>",
+            "npcAc": "all-around vision"
         },
         "Ysondkhelir": {
             "name": "Ysondkhelir",
@@ -325,9 +337,13 @@
                 },
                 "Jaws": {
                     "name": "Jaws"
+                },
+                "Sailing Lore": {
+                    "name": "Sailing Lore"
                 }
             },
-            "description": "<p>Slavers and raiders from the cold, windswept dimension of Leng, these malevolent humanoids range across reality in ominous black ships capable of sailing beyond the borders of dimensions and planes. Although most denizens of Leng seek slaves and plunder like any pirate, others operate as self-styled ambassadors and merchants, sowing discord with far-ranging plots. While the inscrutable denizens dress themselves in flowing robes, veils, and broad turbans to appear human, their aberrant physiology, when glimpsed, is evident from their crown of stubby horns and tentacled jaws to their furry, goat-like legs.</p>\n<p>Above the fierce captains who command the infamous black ships are an even higher caste of denizens of Leng. These cultists and musicians serve as high priests, laboring to appease the frightening gods who look down upon the Nightmare Realm with cold malice.</p>"
+            "description": "<p>Slavers and raiders from the cold, windswept dimension of Leng, these malevolent humanoids range across reality in ominous black ships capable of sailing beyond the borders of dimensions and planes. Although most denizens of Leng seek slaves and plunder like any pirate, others operate as self-styled ambassadors and merchants, sowing discord with far-ranging plots. While the inscrutable denizens dress themselves in flowing robes, veils, and broad turbans to appear human, their aberrant physiology, when glimpsed, is evident from their crown of stubby horns and tentacled jaws to their furry, goat-like legs.</p>\n<p>Above the fierce captains who command the infamous black ships are an even higher caste of denizens of Leng. These cultists and musicians serve as high priests, laboring to appease the frightening gods who look down upon the Nightmare Realm with cold malice.</p>",
+            "npcHp": "planar fast healing 5"
         },
         "Barcumbuk": {
             "items": {
@@ -373,7 +389,8 @@
                 }
             },
             "description": "<p>Erinyes exact vengeance and bloody justice for a creature's crimes, torturing and punishing their victims in ironic fashion before allowing them the escape of death. While an erinys appears as a fallen angel and the first erinyes shared that origin, erinyes now originate in myriad ways, some promoted from lesser devils and others shaped from lemures themselves forged from the souls of torturers and persecutors. The erinyes' origin is entwined with Eiseth, herself a fallen angel and one of Hell's most powerful demigods. The first erinyes were all considered to be Eiseth's metaphorical daughters, but erinyes formed since that time are no longer limited to a single gender.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-            "name": "Barcumbuk"
+            "name": "Barcumbuk",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Stonescale Spirits": {
             "description": "<p>A half-dozen ghostly kobolds rise from the rubble in a howling vortex.</p>",
@@ -421,9 +438,14 @@
                 },
                 "Regeneration 10 (Deactivated by Good or Silver)": {
                     "name": "Regeneration 10 (Deactivated by Good or Silver)"
+                },
+                "Torture Lore": {
+                    "name": "Torture Lore"
                 }
             },
-            "description": "<p>Evangelists, the velstracs' unofficial ambassadors, roam the farthest reaches of the planes to spread the word of their kind's abhorrent belief in perfection through pain. They are therefore the most frequently encountered velstracs on the Material Plane, leading covens of hedonistic mortal flesh-sculptors or serving as wardens of horrific dungeons. In regions ruled by infernal powers, evangelists may serve as lieutenants or advisors, whispering secret paths to power in exchange for mortal's souls or choice mortal flesh. Evangelists are the same size as humans, although with the heavy chains that always drape their forms, they often weigh 350 pounds or more.</p>\n<hr />\n<p>The search for ultimate sensation through self-mutilation is the horrifying preoccupation of the shadow-dwelling fiends known as velstracs. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of torture, or when turning their agonizing practices back on themselves. Velstracs consider themselves enlightened beings, transcending such limitations as morality or mortal taboos, but their victims know them as emotionless tormentors who inflict sadistic suffering. These fiends claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of the most extreme masochistic or sadistic mortals who are judged and sent on to the Shadow Plane. They take on forms that suit their vile predilections, ranging from the low-ranking augurs to the maestros of suffering and mutilation called eremites. The process of transformation warps the soul step by step, with other velstracs conveying their new members through untold chambers of pain among the dark reaches of the Shadow Plane.</p>"
+            "description": "<p>Evangelists, the velstracs' unofficial ambassadors, roam the farthest reaches of the planes to spread the word of their kind's abhorrent belief in perfection through pain. They are therefore the most frequently encountered velstracs on the Material Plane, leading covens of hedonistic mortal flesh-sculptors or serving as wardens of horrific dungeons. In regions ruled by infernal powers, evangelists may serve as lieutenants or advisors, whispering secret paths to power in exchange for mortal's souls or choice mortal flesh. Evangelists are the same size as humans, although with the heavy chains that always drape their forms, they often weigh 350 pounds or more.</p>\n<hr />\n<p>The search for ultimate sensation through self-mutilation is the horrifying preoccupation of the shadow-dwelling fiends known as velstracs. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of torture, or when turning their agonizing practices back on themselves. Velstracs consider themselves enlightened beings, transcending such limitations as morality or mortal taboos, but their victims know them as emotionless tormentors who inflict sadistic suffering. These fiends claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of the most extreme masochistic or sadistic mortals who are judged and sent on to the Shadow Plane. They take on forms that suit their vile predilections, ranging from the low-ranking augurs to the maestros of suffering and mutilation called eremites. The process of transformation warps the soul step by step, with other velstracs conveying their new members through untold chambers of pain among the dark reaches of the Shadow Plane.</p>",
+            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcHp": "regeneration 10 (deactivated by good or silver)"
         },
         "Gibtas Bounder": {
             "items": {
@@ -484,7 +506,9 @@
                 }
             },
             "description": "<p>Those who encounter calignis quickly learn that their deaths involve burning out instead of bleeding out. At times, this dramatic immolation is denied to a caligni, so they arise as a bright walker. Tied to caligni society, these creatures don't understand that their glow damages and repels living calignis. Despite their name, these undead don't walk; they instead float a few inches above the ground.</p>",
-            "name": "Bright Walker"
+            "name": "Bright Walker",
+            "npcHp": "negative healing",
+            "npcSpeed": "landbound"
         },
         "Belcorra Haruvex": {
             "items": {
@@ -520,7 +544,9 @@
                     "description": "<p><strong>Frequency</strong> once every 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> Belcorra extends her presence throughout the lowest three levels of Gauntlight until the end of her next turn. She can see with the benefits of @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.9qV49KjZujZnSp6w]{All-Around Vision} and can make ghostly hand attacks or use special abilities originating from any surface in this area.</p>"
                 }
             },
-            "name": "Belcorra Haruvex"
+            "name": "Belcorra Haruvex",
+            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcHp": "negative healing, rejuvenation"
         },
         "Drow Warden": {
             "items": {
@@ -542,7 +568,8 @@
                 }
             },
             "description": "<p>Wardens watch over drow encampments and often work in small groups.</p>\n<hr />\n<p>Drow have a reputation for evil due to demon worship in their major settlements. However, like members of any ancestry, drow can have any alignment, especially when removed from the demon lords' sinister influence.</p>",
-            "name": "Drow Warden"
+            "name": "Drow Warden",
+            "npcAllSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental"
         },
         "Dreshkan": {
             "items": {
@@ -573,7 +600,8 @@
                 }
             },
             "description": "<p>Because morlocks are descended from distant human ancestors, clumsily or hastily fleshwarping a morlock simply produces a @UUID[Compendium.pf2e.pathfinder-bestiary.K9Hw43co8fhwmKkM]{Grothlut}. Skilled fleshwarpers, however, can tease out a morlock's genetic differences to make an entirely different creature. Creating a dreshkan involves replacing the morlock's bones with a metal skeleton. This new skeleton is often heavily augmented, such as with spiderlike limbs protruding from the spine or magazines of tiny, deadly needles. Arcane electricity courses through the dreshkan thereafter, making it jumpy and irritable.</p>\n<p>Morlocks view dreshkans as impressive fusions of flesh and technology and gladly fight alongside these creatures, whom they view as paragons of morlock potential.</p>\n<hr />\n<p>Although twisting victims into horrid shapes is a well-known pastime of evil drow, other subterranean monsters have stolen these practices or developed them independently. The worm-like seugathis sometimes warp other creatures whose territories abut their lightless lands; the fleshwarps below result from morlocks and urdefhans, respectively.</p>",
-            "name": "Dreshkan"
+            "name": "Dreshkan",
+            "npcAllSaves": "+2 status to all saves vs. bleed, death effects, disease, doomed, fatigued, paralyzed, poison, and sickened"
         },
         "Paralyzing Light Trap": {
             "description": "<p>When any creature other than a devil enters the light, the magic interwoven in the light holds the creature in place and rings an alarm.</p>",
@@ -621,7 +649,8 @@
                     "description": "<p>This curse affects only humanoids.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a werewolf until dawn.</p>\n<p>The creature is under the GM's control and goes on a rampage for half the night before falling unconscious at dawn.</p>",
                     "name": "Curse of the Werewolf"
                 }
-            }
+            },
+            "npcAllSaves": "+1 status vs. poison"
         },
         "Corpselight": {
             "items": {
@@ -653,7 +682,8 @@
                 }
             },
             "description": "<p>A will-o'-wisp that starves to death might rise as a cold, blue, glowing sphere of spongy wetness-a corpselight. A corpselight instinctively seeks out a host corpse to dwell within, as its physical form quickly deteriorates if not hidden within a dead creature.</p>",
-            "name": "Corpselight"
+            "name": "Corpselight",
+            "npcHp": "negative healing"
         },
         "Nox": {
             "name": "Nox",
@@ -678,7 +708,8 @@
                 "Sneak Attack": {
                     "description": "<p>Nox deals an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
-            }
+            },
+            "npcHp": "death flame"
         },
         "Quara Orshendiel": {
             "items": {
@@ -738,7 +769,8 @@
                 }
             },
             "name": "Quara Orshendiel",
-            "description": "<p>Quara will likely become an ally of the heroes, as she knows useful partners when she sees them. She's interested in avenging her father and sister, but she knows that whatever goal her father was pursuing with the Ochre Fulcrum Lens could prove critical in freeing Yldaris from Belcorra's control forever. She has learned that the ochre lens was only one of three lenses that Belcorra entrusted to allies in the region centuries ago, and she sets the heroes on the trail of recovering them and finding out more. The most important lead Quara provides to the heroes is that her father was headed toward an ancient vault at the edge of the lake, so the heroes can find out more at that location.</p>\n<p>The heroes might see drow as enemies and assault Yldaris. In this case, Quara does her best to protect her people, relying on the shootist training that still lingers in her quick fingers. She likely won't trust the heroes with any information after such aggressions, but they might find some clues in her quarters.</p>"
+            "description": "<p>Quara will likely become an ally of the heroes, as she knows useful partners when she sees them. She's interested in avenging her father and sister, but she knows that whatever goal her father was pursuing with the Ochre Fulcrum Lens could prove critical in freeing Yldaris from Belcorra's control forever. She has learned that the ochre lens was only one of three lenses that Belcorra entrusted to allies in the region centuries ago, and she sets the heroes on the trail of recovering them and finding out more. The most important lead Quara provides to the heroes is that her father was headed toward an ancient vault at the edge of the lake, so the heroes can find out more at that location.</p>\n<p>The heroes might see drow as enemies and assault Yldaris. In this case, Quara does her best to protect her people, relying on the shootist training that still lingers in her quick fingers. She likely won't trust the heroes with any information after such aggressions, but they might find some clues in her quarters.</p>",
+            "npcAllSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental"
         },
         "Morlock Scavenger": {
             "name": "Morlock Scavenger",
@@ -761,7 +793,8 @@
                     "name": "+2 Status to All Saves vs. Disease and Poison"
                 }
             },
-            "description": "<p>The morlock scavenger is a lankier, smaller version of a typical morlock. Their stature allows them to wriggle into areas other morlocks can't access.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>"
+            "description": "<p>The morlock scavenger is a lankier, smaller version of a typical morlock. Their stature allows them to wriggle into areas other morlocks can't access.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>",
+            "npcAllSaves": "+2 status to all saves vs. disease and poison"
         },
         "Urevian": {
             "name": "Urevian",
@@ -809,8 +842,12 @@
                 "Infernal Wound": {
                     "name": "Infernal Wound",
                     "description": "<p>Urevian's Strikes also deal @Localize[PF2E.PersistentDamage.Bleed2d6.success] that resists attempts to heal them.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 28 counteract check or the magic fails to heal the creature.</p>"
+                },
+                "Legal Lore": {
+                    "name": "Legal Lore"
                 }
-            }
+            },
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Spellvoid": {
             "items": {
@@ -887,7 +924,8 @@
                 }
             },
             "name": "Khurfel",
-            "description": "<p>Khurfel leads the largest and most active group of adversaries the heroes face in the Abomination Vaults. His fated confrontation with the heroes is necessary because he holds the Emerald Fulcrum Lens and refuses to give it up as long as he lives, as it symbolizes the leadership of his cult. Khurfel's vision of falling at the heroes' hands doesn't inspire fear-it inspires fury, and he fights against his prophesized enemies as long as breath remains in his body.</p>"
+            "description": "<p>Khurfel leads the largest and most active group of adversaries the heroes face in the Abomination Vaults. His fated confrontation with the heroes is necessary because he holds the Emerald Fulcrum Lens and refuses to give it up as long as he lives, as it symbolizes the leadership of his cult. Khurfel's vision of falling at the heroes' hands doesn't inspire fear-it inspires fury, and he fights against his prophesized enemies as long as breath remains in his body.</p>",
+            "npcHp": "negative healing"
         },
         "Siora Fallowglade": {
             "name": "Siora Fallowglade",
@@ -943,7 +981,8 @@
                 }
             },
             "description": "<p>Hardened masters of occult power, urdefhan blood mages trade their blood for magical might. A heavily scarred blood mage is held in esteem by their fellow urdefhans, as it shows they have survived many bargains with eerie occult patrons.</p>\n<hr />\n<p>Translucent-skinned scourges of the Darklands, urdefhans are remorseless killers and foot soldiers of the world's end.</p>",
-            "name": "Urdefhan Blood Mage"
+            "name": "Urdefhan Blood Mage",
+            "npcHp": "negative healing"
         },
         "Caligni Defender": {
             "items": {
@@ -970,7 +1009,8 @@
                     "name": "Darkness (At Will)"
                 }
             },
-            "name": "Caligni Defender"
+            "name": "Caligni Defender",
+            "npcHp": "death flame"
         },
         "Drow Hunter": {
             "items": {
@@ -997,7 +1037,8 @@
                 }
             },
             "name": "Drow Hunter",
-            "description": "<p>Hunters seek out game to keep drow communities fed and functioning.</p>\n<hr />\n<p>Drow have a reputation for evil due to demon worship in their major settlements. However, like members of any ancestry, drow can have any alignment, especially when removed from the demon lords' sinister influence.</p>"
+            "description": "<p>Hunters seek out game to keep drow communities fed and functioning.</p>\n<hr />\n<p>Drow have a reputation for evil due to demon worship in their major settlements. However, like members of any ancestry, drow can have any alignment, especially when removed from the demon lords' sinister influence.</p>",
+            "npcAllSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental"
         },
         "Otari Ilvashti": {
             "name": "Otari Ilvashti",
@@ -1024,7 +1065,8 @@
                     "description": "<p>Otari fades away, momentarily emerges from the shadow of another creature within 30 feet, and makes a ghostly hand Strike against a single target within reach of this creature (but not against the creature whose shadow he infests).</p>\n<p>On a successful Strike, the target is also @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the start of Otari's next turn. Otari then reappears at his starting point.</p>\n<p>The creature whose shadow Otari infests is exposed to filth fever.</p>",
                     "name": "Infested Shadow"
                 }
-            }
+            },
+            "npcHp": "negative healing, rejuvenation"
         },
         "Urdefhan Lasher": {
             "name": "Urdefhan Lasher",
@@ -1051,7 +1093,8 @@
                     "description": "<p>[[/r (1d8+7)[slashing]]] damage, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 }
             },
-            "description": "<p>Trained from a young age with the strange and powerful shauth lashes, urdefhan lashers would rather die than retreat from combat.</p>\n<hr />\n<p>Translucent-skinned scourges of the Darklands, urdefhans are remorseless killers and foot soldiers of the world's end.</p>"
+            "description": "<p>Trained from a young age with the strange and powerful shauth lashes, urdefhan lashers would rather die than retreat from combat.</p>\n<hr />\n<p>Translucent-skinned scourges of the Darklands, urdefhans are remorseless killers and foot soldiers of the world's end.</p>",
+            "npcHp": "negative healing"
         },
         "Gibtanius": {
             "name": "Gibtanius",
@@ -1113,7 +1156,8 @@
                     "description": "<p>A morlock can share the same space as another morlock, but no more than two morlocks can occupy the same space. When morlocks share the same space, they gain a +1 circumstance bonus to attack rolls.</p>"
                 }
             },
-            "description": "<p>Most morlocks have little talent for crafting, but a rare few have an uncanny knack for tinkering.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>"
+            "description": "<p>Most morlocks have little talent for crafting, but a rare few have an uncanny knack for tinkering.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>",
+            "npcAllSaves": "+2 status to all saves vs. disease and poison"
         },
         "Kragala": {
             "name": "Kragala",
@@ -1142,7 +1186,8 @@
                     "name": "Percussive Reverberation",
                     "description": "<p>Kragala deals an additional [[/r {1d6}]]{1d6 damage} with hammers, including drumsticks (already included in the Strikes' damage).</p>"
                 }
-            }
+            },
+            "npcAllSaves": "+2 status to all saves vs. magic"
         },
         "Ryta": {
             "name": "Ryta",
@@ -1211,7 +1256,8 @@
                     "description": "<p>Large, [[/r {(3d6+8)[bludgeoning],2d6[acid]}]]{3d6+8 bludgeoning plus 2d6 acid damage}, Rupture 23</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             },
-            "description": "<p>More intelligent than their lesser kin, dread dhuthorexes possess eerie, enchanting powers.</p>\n<hr />\n<p>Strange things swim in sunless seas, but few as fierce as the shark-like dhuthorexes. These beasts chase prey fearlessly and tenaciously.</p>"
+            "description": "<p>More intelligent than their lesser kin, dread dhuthorexes possess eerie, enchanting powers.</p>\n<hr />\n<p>Strange things swim in sunless seas, but few as fierce as the shark-like dhuthorexes. These beasts chase prey fearlessly and tenaciously.</p>",
+            "npcAc": "all-around vision"
         },
         "Will-o'-the-Deep": {
             "items": {
@@ -1273,7 +1319,9 @@
                     "name": "Swarm Shape",
                     "description": "<p>Volluk collapses into a shapeless swarm of leeches. He drops all held, worn, and carried items. While discorporated, he can't use attack actions and can't cast spells, but he can move through areas small enough for his individual leeches to fit without having to @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeeze}. He can use the same action to coalesce back into his normal form.</p>"
                 }
-            }
+            },
+            "npcAc": "all-around vision",
+            "npcHp": "fast healing 7"
         },
         "Witchfire Warden": {
             "name": "Witchfire Warden",
@@ -1310,7 +1358,8 @@
                     "description": "<p>The witchfire adds <em>@UUID[Compendium.pf2e.spells-srd.Uqj344bezBq3ESdq]{Nightmare}</em>, <em>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em>, <em>@UUID[Compendium.pf2e.spells-srd.0XP2XOxT9VSiXFDr]{Phantasmal Calamity}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.i1TvBID5QLyXrUCa]{Summon Entity}</em> to their coven's spells.</p>\n<p>A coven can contain one or more witchfires, but it must also include at least one living creature capable of forming a coven; three witchfires cannot form a coven.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
                 }
             },
-            "description": "<p>Manifesting as a sinuous form wreathed in sickly green flames, this incorporeal undead forms when a powerful hag or witch dies in agony or rage. The body at the center of the flames usually resembles the witch's idealized self-image, regardless of their age and appearance at the time of their death.</p>\n<p>A witchfire often resides in a bog or swamp, which slowly blackens and decays around them. These regions are often plagued by will-o'-wisps, which seem to have an uncanny relationship with the resident witchfire. A witchfire might visit villages on the edge of their home terrain to lure away villagers, but always attack victims within earshot to make sure that other villagers hear the screams. A witchfire might also ally with other hags or witches and even join their covens, but a witchfire is incapable of forming covens entirely on their own.</p>"
+            "description": "<p>Manifesting as a sinuous form wreathed in sickly green flames, this incorporeal undead forms when a powerful hag or witch dies in agony or rage. The body at the center of the flames usually resembles the witch's idealized self-image, regardless of their age and appearance at the time of their death.</p>\n<p>A witchfire often resides in a bog or swamp, which slowly blackens and decays around them. These regions are often plagued by will-o'-wisps, which seem to have an uncanny relationship with the resident witchfire. A witchfire might visit villages on the edge of their home terrain to lure away villagers, but always attack victims within earshot to make sure that other villagers hear the screams. A witchfire might also ally with other hags or witches and even join their covens, but a witchfire is incapable of forming covens entirely on their own.</p>",
+            "npcHp": "negative healing"
         },
         "Groetan Candle": {
             "name": "Groetan Candle",
@@ -1371,7 +1420,8 @@
                 "+1 Status to All Saves vs. Magic": {
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
-            }
+            },
+            "npcAllSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental"
         },
         "Seugathi Researcher": {
             "name": "Seugathi Researcher",
@@ -1413,7 +1463,8 @@
                     "name": "Telepathy 100 feet"
                 }
             },
-            "description": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>"
+            "description": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Voidglutton": {
             "items": {
@@ -1492,7 +1543,9 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Lady's Whisper"
+            "name": "Lady's Whisper",
+            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcHp": "negative healing"
         },
         "Nhimbaloth's Cutter": {
             "items": {
@@ -1576,7 +1629,8 @@
                     "description": "<p>Dulac deals an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
             },
-            "name": "Dulac"
+            "name": "Dulac",
+            "npcHp": "death shadows"
         },
         "Jarelle Kaldrian": {
             "name": "Jarelle Kaldrian",
@@ -1599,8 +1653,15 @@
                 },
                 "Ghostly Hand": {
                     "name": "Ghostly Hand"
+                },
+                "Library lore": {
+                    "name": "Library lore"
+                },
+                "Library Lore": {
+                    "name": "Library Lore"
                 }
-            }
+            },
+            "npcHp": "negative healing, rejuvenation"
         },
         "Jafaki": {
             "items": {
@@ -1686,7 +1747,8 @@
                     "description": "<p><strong>Trigger</strong> A creature fails its save against Jafaki's mindfog aura</p>\n<hr />\n<p><strong>Effect</strong> Jafaki determines who the @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} creature attacks for that round, instead of the target being randomly determined by the GM.</p>\n<p>If the chosen target is the confused creature's ally, the creature can immediately attempt a @Check[type:will|dc:21] save; on a success, its target is determined randomly as normal, and on a critical success the target is no longer confused.</p>"
                 }
             },
-            "name": "Jafaki"
+            "name": "Jafaki",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Bloodsiphon": {
             "items": {
@@ -1708,7 +1770,8 @@
                     "name": "Death Burst"
                 }
             },
-            "name": "Bloodsiphon"
+            "name": "Bloodsiphon",
+            "npcHp": "negative healing"
         },
         "Painful Suggestion Trap": {
             "hazardDisable": "<p>@Check[type:thievery|dc:28|name:Remove Rune|traits:magical,trap] (expert) to remove the rune without triggering it, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 26) to dispel the rune</p>",
@@ -1742,8 +1805,12 @@
                 },
                 "+1 Status to All Saves vs. Magic": {
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
+                },
+                "Occultism (+20 underground)": {
+                    "name": "Occultism (+20 underground)"
                 }
-            }
+            },
+            "npcAllSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental"
         },
         "Mister Beak": {
             "name": "Mister Beak",
@@ -1776,7 +1843,8 @@
                     "description": "<p>The morlock deals an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
             },
-            "description": "<p>Morlocks who serve as priests in their conclaves usually dabble in eerie occult magic.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>"
+            "description": "<p>Morlocks who serve as priests in their conclaves usually dabble in eerie occult magic.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>",
+            "npcAllSaves": "+2 status to all saves vs. disease and poison"
         },
         "Canker Cultist": {
             "name": "Canker Cultist",
@@ -1806,7 +1874,8 @@
                     "name": "Swift Leap",
                     "description": "<p>The cultist jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 }
-            }
+            },
+            "npcHp": "negative healing"
         },
         "Shanrigol Behemoth": {
             "name": "Shanrigol Behemoth",
@@ -1844,7 +1913,9 @@
                     "name": "Tremorsense (Imprecise) 30 feet"
                 }
             },
-            "description": "<p>Shanrigols that grow with the additions of many living victims can become truly enormous in size and pose a greater danger in their expanding hunting territories. Subterranean communities have collapsed entire tunnels to prevent the creatures from reaching their settlements.</p>\n<p>Many shanrigol behemoths absorb enough brain matter to form crude intelligences and take a serpentine or humanoid shape. They're more varied in their abilities than shanrigol heaps, as they often gain abilities from their constituent creatures. The shanrigol behemoth presented below contains flesh from driders and urdefhans, giving it a web attack and necrotic decay ability. Not all shanrigol behemoths have these two abilities, but should have other abilities to replace them.</p>\n<hr />\n<p>Fleshwarpers, regardless of their origin or training, create a shocking amount of waste. When the discarded remnants of aberrant flesh are heaped together with an accidental mixture of alchemical compounds or odious energy, the mass can quicken and regain life. Without the guidance of a fleshwarper, these aberrant body parts form into a shanrigol, a mess of bone, muscle, and sinew.</p>"
+            "description": "<p>Shanrigols that grow with the additions of many living victims can become truly enormous in size and pose a greater danger in their expanding hunting territories. Subterranean communities have collapsed entire tunnels to prevent the creatures from reaching their settlements.</p>\n<p>Many shanrigol behemoths absorb enough brain matter to form crude intelligences and take a serpentine or humanoid shape. They're more varied in their abilities than shanrigol heaps, as they often gain abilities from their constituent creatures. The shanrigol behemoth presented below contains flesh from driders and urdefhans, giving it a web attack and necrotic decay ability. Not all shanrigol behemoths have these two abilities, but should have other abilities to replace them.</p>\n<hr />\n<p>Fleshwarpers, regardless of their origin or training, create a shocking amount of waste. When the discarded remnants of aberrant flesh are heaped together with an accidental mixture of alchemical compounds or odious energy, the mass can quicken and regain life. Without the guidance of a fleshwarper, these aberrant body parts form into a shanrigol, a mess of bone, muscle, and sinew.</p>",
+            "npcAc": "all-around vision",
+            "npcHp": "negative healing"
         },
         "Blast Tumbler": {
             "name": "Abomination Vaults",
@@ -1889,7 +1960,8 @@
                 }
             },
             "name": "Seugathi Guard",
-            "description": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>"
+            "description": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Shanrigol Heap": {
             "name": "Shanrigol Heap",
@@ -1916,7 +1988,9 @@
                     "description": "<p>A shanrigol rips flesh away from targets in great chunks. Creatures critically hit by the shanrigol's fleshy slap Strike take an additional @Localize[PF2E.PersistentDamage.Bleed1d6.success] and are @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for as long as they are bleeding.</p>"
                 }
             },
-            "description": "<p>The most basic and common type of shanrigol is called, based on its general shape, a shanrigol heap. These amalgamations of warped flesh and shattered bone establish hunting grounds by accident rather than design, remaining where prey has been plentiful in the past so they can grow larger and larger as they add to their jumbled forms. Only rare fleshwarpers create these abominations willingly, as they ignore all commands and containment to seek out prey.</p>\n<hr />\n<p>Fleshwarpers, regardless of their origin or training, create a shocking amount of waste. When the discarded remnants of aberrant flesh are heaped together with an accidental mixture of alchemical compounds or odious energy, the mass can quicken and regain life. Without the guidance of a fleshwarper, these aberrant body parts form into a shanrigol, a mess of bone, muscle, and sinew.</p>"
+            "description": "<p>The most basic and common type of shanrigol is called, based on its general shape, a shanrigol heap. These amalgamations of warped flesh and shattered bone establish hunting grounds by accident rather than design, remaining where prey has been plentiful in the past so they can grow larger and larger as they add to their jumbled forms. Only rare fleshwarpers create these abominations willingly, as they ignore all commands and containment to seek out prey.</p>\n<hr />\n<p>Fleshwarpers, regardless of their origin or training, create a shocking amount of waste. When the discarded remnants of aberrant flesh are heaped together with an accidental mixture of alchemical compounds or odious energy, the mass can quicken and regain life. Without the guidance of a fleshwarper, these aberrant body parts form into a shanrigol, a mess of bone, muscle, and sinew.</p>",
+            "npcAc": "all-around vision",
+            "npcHp": "negative healing"
         },
         "Doom of Tomorrow": {
             "hazardDisable": "<p>@Check[type:thievery|dc:20|name:Deactivate Model of Gauntlight|traits:magical,trap] (trained) to quickly deactivate the model of Gauntlight before it triggers, or @Check[type:stealth|dc:23|name:Creep by Trap|traits:magical,trap] (trained) to creep by a trap without triggering it.</p>",
@@ -1945,7 +2019,8 @@
                     "name": "Wicked Bite",
                     "description": "<p><strong>Requirements</strong> Vischari damaged a creature with a jaws Strike on her last action</p>\n<hr />\n<p><strong>Effect</strong> Vischari maintains contact, turning the creature's flesh translucent around the site of the injury. Vischari chooses one of two options, each of which requires the target to attempt a @Check[type:fortitude|dc:25] save. If her jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> Vischari drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} and Vischari regains [[/r 10[healing]]]{10 HP} (on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} and Vischari regains [[/r 20[healing]]]{20 HP}).</li>\n<li><strong>Drain Vitality</strong> Vischari draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
                 }
-            }
+            },
+            "npcHp": "negative healing"
         },
         "Padli": {
             "name": "Padli",
@@ -1974,7 +2049,8 @@
                 "Padli's Key": {
                     "name": "Padli's Key"
                 }
-            }
+            },
+            "npcHp": "death flame"
         },
         "Drow Shootist": {
             "name": "Drow Shootist",
@@ -2008,7 +2084,8 @@
                     "description": "<p>The shootist deals an extra 2d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
             },
-            "description": "<p>The rare few drow who specialize in the repeating hand crossbow command respect not only for their skills but for their luck and swagger.</p>\n<hr />\n<p>Drow have a reputation for evil due to demon worship in their major settlements. However, like members of any ancestry, drow can have any alignment, especially when removed from the demon lords' sinister influence.</p>"
+            "description": "<p>The rare few drow who specialize in the repeating hand crossbow command respect not only for their skills but for their luck and swagger.</p>\n<hr />\n<p>Drow have a reputation for evil due to demon worship in their major settlements. However, like members of any ancestry, drow can have any alignment, especially when removed from the demon lords' sinister influence.</p>",
+            "npcAllSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental"
         },
         "Bone Gladiator": {
             "items": {
@@ -2028,7 +2105,8 @@
                     "description": "<p>The skeleton Strides and makes a claw Strike with a +4 circumstance bonus to damage. If the Strike hits, it attempts to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} the target.</p>"
                 }
             },
-            "name": "Bone Gladiator"
+            "name": "Bone Gladiator",
+            "npcHp": "negative healing"
         },
         "Daemonic Fog": {
             "name": "Abomination Vaults",
@@ -2064,7 +2142,8 @@
                     "name": "Ghoul Fever",
                     "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r 2d6[negative]]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> [[/r 2d6[negative]]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
                 }
-            }
+            },
+            "npcHp": "negative healing"
         },
         "Aller Rosk": {
             "items": {
@@ -2091,7 +2170,8 @@
                     "name": "Claw"
                 }
             },
-            "name": "Aller Rosk"
+            "name": "Aller Rosk",
+            "npcHp": "negative healing"
         },
         "Carman Rajani": {
             "name": "Carman Rajani",
@@ -2151,7 +2231,8 @@
                     "name": "Jaws"
                 }
             },
-            "description": "<p>Death scouts train as spies and assassins for their cult. Other urdefhans scorn their stealthy methods, but none can argue with their results.</p>\n<hr />\n<p>Translucent-skinned scourges of the Darklands, urdefhans are remorseless killers and foot soldiers of the world's end.</p>"
+            "description": "<p>Death scouts train as spies and assassins for their cult. Other urdefhans scorn their stealthy methods, but none can argue with their results.</p>\n<hr />\n<p>Translucent-skinned scourges of the Darklands, urdefhans are remorseless killers and foot soldiers of the world's end.</p>",
+            "npcHp": "negative healing"
         },
         "Azvalvigander": {
             "items": {
@@ -2189,7 +2270,8 @@
                 }
             },
             "description": "<p>Zebubs serve as Hell's messengers and spies. Their ability to share what they've seen with other creatures makes them especially useful-not only to other devils, but also to mortal conjurers. Some infernal lords unleash them in enormous, horrid swarms upon unsuspecting lands to debase flesh and land alike while collecting secrets the infernal host might later put to use. Zebubs use any opportunity to manipulate weak-willed or easily tempted mortals into serving the zebubs' whims. While arrogant and deceitful, zebubs lack the cunning and confidence of most devils, and thus their schemes often focus on satisfying self-serving or self-destructive ambitions. Zebubs form from the souls of childish and craven mortals, reshaped by the archdevil Baalzebul in the frozen, filthy wastes of Hell's seventh layer, Cocytus.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
-            "name": "Azvalvigander"
+            "name": "Azvalvigander",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Seugathi Servant": {
             "items": {
@@ -2224,7 +2306,8 @@
                 }
             },
             "description": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
-            "name": "Seugathi Servant"
+            "name": "Seugathi Servant",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Seugathi Reality Warper": {
             "name": "Seugathi Reality Warper",
@@ -2263,7 +2346,8 @@
                     "description": "<p>The seugathi bends reality in their choice of a @Template[type:emanation|distance:10] or a @Template[type:line|distance:60], altering the terrain of the area. The terrain becomes a different type of terrain (such as aquatic, arctic, or desert) and becomes normal or difficult terrain, as the seugathi chooses. Structures, general geographic features, and creatures in the area aren't transformed, but creatures in the area take [[/r 5d6[chaotic]]] damage (@Check[type:fortitude|dc:28|basic:true] save) as reality tries to bend them along with the terrain.</p>\n<p>Though changes to the area are permanent, the natural environment might eventually revert the land back to its original state (aquatic areas drain, arctic areas thaw, and so on).</p>"
                 }
             },
-            "description": "<p>Seugathi reality warpers create and destroy inhospitable environments on a small scale by manipulating the forces of raw chaos. A neothelid might spawn such a seugathi to create habitats for unique slaves or guests, or to destroy the ecosystem of a troublesome species. Darklands scholars refer to reality warpers as veterans in the seugathi ranks, but they're more accurately compared to aggressive landscape architects.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>"
+            "description": "<p>Seugathi reality warpers create and destroy inhospitable environments on a small scale by manipulating the forces of raw chaos. A neothelid might spawn such a seugathi to create habitats for unique slaves or guests, or to destroy the ecosystem of a troublesome species. Darklands scholars refer to reality warpers as veterans in the seugathi ranks, but they're more accurately compared to aggressive landscape architects.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Nhakazarin": {
             "items": {
@@ -2294,7 +2378,8 @@
                     "name": "Ghoul Fever"
                 }
             },
-            "name": "Nhakazarin"
+            "name": "Nhakazarin",
+            "npcHp": "negative healing"
         },
         "Chafkhem": {
             "items": {
@@ -2318,7 +2403,9 @@
                     "description": "<p><strong>Trigger</strong> A creature Chafkhem can see makes a melee Strike against Chafkhem</p>\n<hr />\n<p><strong>Effect</strong> Chafkhem traces a magical glyph in the air that glows and fades. The triggering creature must attempt a @Check[type:fortitude|dc:25] save.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> The target is blinded for 1 minute.</p>"
                 }
             },
-            "name": "Chafkhem"
+            "name": "Chafkhem",
+            "npcAllSaves": "+1 status to all saves vs. positive",
+            "npcHp": "negative healing"
         },
         "Flickerwisp": {
             "name": "Flickerwisp",
@@ -2417,7 +2504,8 @@
                     "description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 }
             },
-            "description": "<p>More intelligent than their lesser kin, dread dhuthorexes possess eerie, enchanting powers.</p>\n<hr />\n<p>Strange things swim in sunless seas, but few as fierce as the shark-like dhuthorexes. These beasts chase prey fearlessly and tenaciously.</p>"
+            "description": "<p>More intelligent than their lesser kin, dread dhuthorexes possess eerie, enchanting powers.</p>\n<hr />\n<p>Strange things swim in sunless seas, but few as fierce as the shark-like dhuthorexes. These beasts chase prey fearlessly and tenaciously.</p>",
+            "npcAc": "all-around vision"
         },
         "Mulventok": {
             "name": "Mulventok",
@@ -2441,9 +2529,14 @@
                 "Psychokinetic Honing": {
                     "name": "Psychokinetic Honing",
                     "description": "<p>A thrown weapon gains the effects of a <em>@UUID[Compendium.pf2e.equipment-srd.qlunQzfnzPQpMG6U]{Returning}</em> rune when a mulventok throws it. Thrown weapons the mulventok uses deal an additional [[/r 1d6[mental]]] damage, whether used in melee or thrown.</p>"
+                },
+                "Purpose Lore": {
+                    "name": "Purpose Lore"
                 }
             },
-            "description": "<p>Sinister fleshwarpers reshape captive urdefhans into these juggernauts of war. Their clear skin is hardened into a thick, mirror-like carapace, creating an intimidating exoskeleton. Mulventoks don't live long; within weeks-or, at most, months-their hyperdeveloped muscles split open their toughened skin, and they erupt in a shower of gore. A mulventok's creator shapes its mind just as much as its body, directing its aggression toward a single purpose, such as to raze a fortress or murder a specific individual.</p>\n<hr />\n<p>Although twisting victims into horrid shapes is a well-known pastime of evil drow, other subterranean monsters have stolen these practices or developed them independently. The worm-like seugathis sometimes warp other creatures whose territories abut their lightless lands; the fleshwarps below result from morlocks and urdefhans, respectively.</p>"
+            "description": "<p>Sinister fleshwarpers reshape captive urdefhans into these juggernauts of war. Their clear skin is hardened into a thick, mirror-like carapace, creating an intimidating exoskeleton. Mulventoks don't live long; within weeks-or, at most, months-their hyperdeveloped muscles split open their toughened skin, and they erupt in a shower of gore. A mulventok's creator shapes its mind just as much as its body, directing its aggression toward a single purpose, such as to raze a fortress or murder a specific individual.</p>\n<hr />\n<p>Although twisting victims into horrid shapes is a well-known pastime of evil drow, other subterranean monsters have stolen these practices or developed them independently. The worm-like seugathis sometimes warp other creatures whose territories abut their lightless lands; the fleshwarps below result from morlocks and urdefhans, respectively.</p>",
+            "npcAc": "(26 with shield raised)",
+            "npcHp": "negative healing"
         },
         "Child of Belcorra": {
             "items": {
@@ -2464,7 +2557,8 @@
                 }
             },
             "description": "<p>The cultural practice of mummifying the dead is not the only way a body can become preserved, nor is it the only route that gives rise to these disease-spreading undead monstrosities.</p>\n<p>Bog mummies (also called peat mummies or mire mummies) rarely, if ever, leave their marshy realms. Less powerful than their more notorious artificially preserved kin, bog mummies are preserved not by agents introduced during rituals but by the natural elements present in the airless, acidic morass of a peat bog or muddy swamp. While corpses preserved in this manner can certainly rise from the mire as bog mummies as the result of a curse by fell powers or the directed influence of a necromancer, the vast majority of them animate from a seething need for vengeance or to pursue some dire agenda left unfinished at the time of death-often because the creature was slain or otherwise betrayed. The nature of tthis emotional tie to life and the emotional power of the deceased compel unlife beyond death, while the preservative qualities of the bog within which the body was disposed of does the rest.</p>\n<p>Although most bog mummies are motivated by vengeance, many fulfill their dark yearnings with general violence. Filled with wrath and hatred for the living, they mercilessly attack any living creatures that dare to venture into their dismal domains. Their agonized moans echo over their putrid homes, driving away most natural life dwelling therein and often alerting travelers to the potential danger that lies beneath the surface.</p>",
-            "name": "Child of Belcorra"
+            "name": "Child of Belcorra",
+            "npcHp": "negative healing"
         },
         "Hellforge Barbazu": {
             "name": "Hellforge Barbazu",
@@ -2504,7 +2598,8 @@
                     "name": "Wriggling Beard",
                     "description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The barbazu makes a beard Strike. This Strike ignores their multiple attack penalty and doesn't count toward that penalty.</p>"
                 }
-            }
+            },
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Rusty Grate Pit": {
             "name": "Abomination Vaults",
@@ -2545,6 +2640,12 @@
                 "Claustrophobia": {
                     "name": "Claustrophobia",
                     "description": "<p>Wrin becomes overwhelmed when she's underground, or when she's in an indoor space that's smaller than 10 feet in diameter.</p>\n<p>At these times, she is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} and can't reduce her sickened condition until she's outside of the enclosed area.</p>"
+                },
+                "Astrology Lore": {
+                    "name": "Astrology Lore"
+                },
+                "Spirit Lore": {
+                    "name": "Spirit Lore"
                 }
             }
         },
@@ -2638,7 +2739,8 @@
                 }
             },
             "name": "Drill Field Barbazu",
-            "description": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>"
+            "description": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Poisoning Room Specter": {
             "description": "<p>When an evil mortal creature dies, it sometimes returns to haunt the area of its death as a specter, a hateful remnant, always seeking to slay others-particularly humanoids-in an attempt to distribute its pain among as many souls as it can. A specter maintains a strange semblance of its prior identity, but with a corrupted sense of purpose. It cannot be reasoned with.</p>\n<p>A specter denied the opportunity to harm living humanoids grows increasingly agonized and irrational, akin to the mindset of a starving person forever denied a release from agony through death.</p>",
@@ -2668,7 +2770,8 @@
                     "description": "<p>A specter caught in sunlight is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} for as long as it remains in the sunlight.</p>"
                 }
             },
-            "name": "Poisoning Room Specter"
+            "name": "Poisoning Room Specter",
+            "npcHp": "negative healing"
         },
         "Images of Powerlessness": {
             "description": "<p>Psychically-enhanced illusions flood the minds of creatures in the 95-foot-long, 15-foot-wide hallway (the white dotted box on the map) with visions of their failures yet to come.</p>",
@@ -2727,7 +2830,8 @@
                     "name": "Dimension Door (At Will)"
                 }
             },
-            "name": "Summoning Chamber Erinys"
+            "name": "Summoning Chamber Erinys",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Caliddo Haruvex": {
             "name": "Caliddo Haruvex",
@@ -2767,8 +2871,12 @@
                 "Phantom Mount": {
                     "name": "Phantom Mount",
                     "description": "<p>HP 58; AC 27, Fort +17, Ref +15, Will +14</p>\n<hr />\n<p>The graveknight summons a supernatural mount as per <em>@UUID[Compendium.pf2e.spells-srd.WPKJOhEihhcIm2uQ]{Phantom Steed}</em>, heightened to a level equal to half the graveknight's level.</p>\n<p>Unlike <em>phantom steed</em>, the steed's AC and saving throw bonuses are all 4 lower than the graveknight's, and the steed has one-third the graveknight's Hit Points (rounded down).</p>\n<p>If the steed is destroyed, the graveknight must wait 1 hour before using this ability again.</p>"
+                },
+                "Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
-            }
+            },
+            "npcHp": "negative healing, rejuvenation"
         },
         "Observation Deck Seugathi Researcher": {
             "description": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
@@ -2816,7 +2924,8 @@
                     "name": "Tremorsense (Imprecise) 30 feet"
                 }
             },
-            "name": "Observation Deck Seugathi Researcher"
+            "name": "Observation Deck Seugathi Researcher",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Deep End Sarglagon": {
             "description": "<p>Sarglagons dwell in Hell's myriad waterways, lakes, and oceans. They serve as guardians of the Academy of Lies-the repository of secrets in Stygia, the fifth layer of Hell. Sarglagons breathe water and air with equal ease, and can move through water, land, and even air with uncanny swiftness. Few fiends travel the waterways of the multiverse, but where a river crosses the planes, odds are sarglagons have traveled it to further their infernal machinations. The only body of water they avoid is the River Styx, as the fiends have yet to develop any defense against that waterway's memory-sapping qualities. Mortal spellcasters sometimes bind sarglagons as guardians of precious secrets or treasures, particularly in aquatic areas. Most strangely, sarglagons sometimes act as unnerving caretakers to mortals who have no idea what they did to earn their unwanted protectors' attention. The constant uninvited vigilance of these devils is often disturbing and stifling to their wards.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
@@ -2856,7 +2965,8 @@
                     "name": "Dimension Door (At Will)"
                 }
             },
-            "name": "Deep End Sarglagon"
+            "name": "Deep End Sarglagon",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Reaper Skull Puffball": {
             "items": {
@@ -2918,7 +3028,8 @@
                 }
             },
             "description": "<p>Originating from humans long lost from the world of light, morlocks are brutal monsters that dwell in the tangled tunnels of the upper reaches of the Darklands. Their wiry frames mask the strength of their limbs and their swift reactions, and their arms are long enough that they can drop into an uncanny, four-limbed shuffle for speed or stealth. They no longer remember the lives their ancestors led on the surface, although many morlocks still dwell in the shattered ruins of their ancient homes. Some morlocks worship the statues of humans from these bygone eras as gods, but others now worship Lamashtu, Rovagug, or other violent deities.</p>\n<p>Morlock young are insatiable and clamor for even the slightest morsel of food, even consuming their siblings if no other meal presents itself. Most morlocks encourage the practice to ensure their ancestral group as a whole grows stronger.</p>\n<p>A typical morlock stands just over 5 feet tall and weighs roughly 150 pounds.</p>",
-            "name": "Warped Brew Morlock"
+            "name": "Warped Brew Morlock",
+            "npcAllSaves": "+2 status to all saves vs. disease and poison"
         },
         "Beluthus": {
             "description": "<p>When fiends and powerful evil spellcasters are lost beyond the farthest reaches of the multiverse, they sometimes return as horrific undead called devourers that consume the souls of the living to fuel their arcane machinations. Their bodies are ruined and rebuilt, hollow and twisted, even as their minds undergo a spiritual transformation. They gain the ability to bind other souls to their own and drain their essence for magical power, yet can never be sated in their pursuit of it. Seething masses of distorted ghostly shapes surge within their hollow rib cages-manifestations of the devourers' most recently consumed souls.</p>",
@@ -2946,7 +3057,9 @@
                     "_source": "bestiary-ability-glossary-srd.kquBnQ0kObZztnBc"
                 }
             },
-            "name": "Beluthus"
+            "name": "Beluthus",
+            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcHp": "(negative healing)"
         },
         "Urthagul": {
             "items": {
@@ -3006,7 +3119,8 @@
                     "description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The barbazu makes a beard Strike. This Strike ignores their multiple attack penalty and doesn't count toward that penalty.</p>"
                 }
             },
-            "name": "Torture Chamber Barbazu"
+            "name": "Torture Chamber Barbazu",
+            "npcAllSaves": "+1 status to all saves vs. magic"
         },
         "Murmur": {
             "items": {
@@ -3027,7 +3141,8 @@
                 }
             },
             "name": "Murmur",
-            "description": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that-if lingered upon-can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divination magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek-for a price. Of course, if wit and deception proves insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing the monster's life.</p>"
+            "description": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that-if lingered upon-can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divination magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek-for a price. Of course, if wit and deception proves insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing the monster's life.</p>",
+            "npcAc": "all-around vision"
         },
         "Deadtide Skeleton Guard": {
             "name": "Deadtide Skeleton Guard",
@@ -3036,7 +3151,8 @@
                 "Claw": {
                     "name": "Claw"
                 }
-            }
+            },
+            "npcHp": "negative healing"
         },
         "Nyzuros": {
             "name": "Nyzuros",
@@ -3066,7 +3182,8 @@
                     "name": "Skirmish Strike",
                     "description": "<p>The hunter can Step and then Strike, or Strike and then Step.</p>"
                 }
-            }
+            },
+            "npcAllSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental"
         },
         "Watching Wall": {
             "name": "Abomination Vaults",
