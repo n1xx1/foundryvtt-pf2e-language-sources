@@ -36,6 +36,7 @@
     "Dismemberment Table": {
       "name": "Dismemberment Table",
       "description": "",
+      "npcAc": "18 when broken",
       "items": {
         "Blade": {
           "name": "Blade"
@@ -73,6 +74,7 @@
     "Drazmorg The Damned": {
       "name": "Drazmorg The Damned",
       "description": "",
+      "npcHp": "negative healing",
       "items": {
         "Drazmorg's Staff of All-Sight": {
           "description": "<p>This long, gnarled staff looks like several bones fused together, then wrapped tightly with strips of desiccated, gray skin. At the top of the staff, a clump of sinew clasps a small stone orb resembling a large human eye. When the staff is activated, this eye twitches and glances around randomly. When wielding this staff, you gain a +1 item bonus to visual Perception checks.</p>\n<p><strong>Activate</strong>@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell}</p>\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong>@UUID[Compendium.pf2e.spells-srd.OhD2Z6rIGGD5ocZA]{Read Aura}</li>\n<li><strong>1st</strong>@UUID[Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh]{True Strike}</li>\n<li><strong>2nd</strong>@UUID[Compendium.pf2e.spells-srd.pZTqGY1MLRjgKasV]{Darkvision}, <em>@UUID[Compendium.pf2e.spells-srd.2ZdHjnpEQJuqOYSG]{Flaming Sphere}</em> (creates what appears to be a large eye made of fire), <em>@UUID[Compendium.pf2e.spells-srd.jwK43yKsHTkJQvQ9]{See Invisibility}</em></li>\n<li><strong>3rd</strong>@UUID[Compendium.pf2e.spells-srd.bH9cH9aDByY91l1d]{Organsight}, <em>@UUID[Compendium.pf2e.spells-srd.XQSPJHOf3TyfqvgS]{Web of Eyes}</em></li>\n<li><strong>4th</strong>@UUID[Compendium.pf2e.spells-srd.zvKWclOZ7A53DObE]{Clairvoyance}, <em>@UUID[Compendium.pf2e.spells-srd.ykyKclKTCMp2SFXa]{Countless Eyes}</em>, <em>@UUID[Compendium.pf2e.spells-srd.AnWCohzPgK4L9GVl]{Detect Scrying}</em><hr /></li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
@@ -91,6 +93,9 @@
         "Raise Bone Wall": {
           "name": "Raise Bone Wall",
           "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Drazmorg is in the Lower Vault of Droskar's Crucible</p>\n<hr />\n<p><strong>Effect</strong> Drazmorg draws upon the necromantic energy that infuses the area and causes a tangled wall of bones to rise from the ground. The wall is 5 feet thick, 10 feet wide, and 10 feet tall; once created, it's permanent until Drazmorg uses this ability again, whereupon a previously created bone wall (such as the one at area <strong>G2</strong>) crumbles. The bone wall has AC 10, Hardness 10, and 25 Hit Points. It's immune to critical hits and precision damage, and it heals damage to itself at a rate of [[/r {2d6}]]{2d6 Hit Points} at the end of a round. Everything on each side of the wall has greater cover from creatures on the opposite side, and the wall can't be moved through. A destroyed section of the wall of bones can be moved through freely and no longer heals damage. A creature caught in a space when a bone wall is created must attempt a @Check[type:reflex|dc:25|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, and the bone wall fails to form in any square occupied by that creature.</p>\n<p><strong>Success</strong> The creature is forced into an adjacent square of its choice as the bone wall forms in its previous space.</p>\n<p><strong>Failure</strong> As success, but the creature is also knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature also takes [[/r {4d6[piercing],4d6[bludgeoning]}]]{4d6 piercing damage 4d6 bludgeoning damage} from the force of being struck by the bone wall.</p>"
+        },
+        "Lore (Academia)": {
+          "name": "Lore (Academia)"
         }
       }
     },
@@ -175,6 +180,7 @@
     "The Disciples": {
       "name": "The Disciples",
       "description": "<p>An unrisen is a mangled conglomeration of splintered bones, decaying organs, and rotting flesh, created when a ritual such as resurrect goes catastrophically wrong. Immense care must be taken, for if the ritual is a critical failure, an unrisen can be the result—as many a ritualist has learned to their horror.</p>\n<p>Unrisen are barely intelligent, aware only of the agony constantly inflicted by their flawed creation and their resentment for the living. They tend to attack the casters involved in the botched ritual first before lashing out at everyone else around them. Though an unrisen's twisted form is unrecognizable as the intended target of the resurrection, its wordless howls are often disturbingly similar to the deceased's voice. If an unrisen is destroyed before it can rise again, it's reduced to a handful of metallic blue-green salts referred to as essential salts.</p>",
+      "npcHp": "negative healing",
       "items": {
         "Jaws": {
           "name": "Jaws"
@@ -256,8 +262,7 @@
           "name": "Dirty Clothes"
         },
         "Bardic Lore": {
-          "name": "Bardic Lore",
-          "description": "<p>Edgrin can Recall Knowledge on any subject with a +7 modifier.</p>"
+          "name": "Bardic Lore"
         }
       }
     },
@@ -289,12 +294,16 @@
         "False Retreat": {
           "name": "False Retreat",
           "description": "<p><strong>Requirements</strong> Lekmek is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> Lekmek Strides, as if he were attempting to run away but is actually attempting to open a foe up for an attack. If Lekmek's Stride triggers a reaction, he can attempt a greatpick Strike (using his highest attack modifier) on the creature that takes this reaction. If he does so, Lekmek gains a +1 circumstance bonus on his attack roll.</p>"
+        },
+        "Mining Lore": {
+          "name": "Mining Lore"
         }
       }
     },
     "Cilios": {
       "name": "Cilios",
       "description": "<p>The majority of mummies were created by cruel and selfish masters to serve as guardians to protect their tombs from intruders. The traditional method of creating a mummy guardian is a laborious and sadistic process that begins well before the poor soul to be transformed is dead, during which the victim is ritualistically starved of nourishing food and instead fed strange spices, preservative agents, and toxins intended to quicken the desiccation of the flesh. The victim remains immobile but painfully aware during the final stages, where its now-useless entrails are extracted before it's shrouded in funerary wrappings and entombed within a necromantically ensorcelled sarcophagus to await intrusions in the potentially distant future. While it's certainly possible to use other methods to create a mummy guardian from an already-deceased body, those who seek to create these foul undead as their guardians in the afterlife often feel that such methods result in inferior undead-the pain and agony of death by mummification being an essential step in the process.</p>\n<p>Regardless of the method of their creation, mummy guardians are more than just physical shells of flesh and bone-they retain fragmented, distorted versions of their minds, with only enough memories of their living personality remaining to fuel their undead anger and jealousy of those who yet live. This burning rage only intensifies over the centuries of waiting within a crypt for the chance to actually act, and thus when most mummy guardians are awoken by tomb robbers or adventurers, they stop at nothing in pursuit of glorious slaughter.</p>\n<hr />\n<p>While many cultures practice mummification of the dead for benign reasons, undead mummies are created through foul rituals, typically to provide eternally vigilant guardians.</p>",
+      "npcHp": "negative healing",
       "items": {
         "Despair": {
           "name": "Despair",
@@ -358,6 +367,7 @@
     "Ulizmila's Cauldron": {
       "name": "Ulizmila's Cauldron",
       "description": "<p>While Ulizmila is long gone, her animated cauldron remains a dangerous guardian of the hut. The mindless construct lurches to life and attacks anyone who dares to enter, pursuing intruders all the way to the clearing's edge before returning to its place inside the hut. When the cauldron attacks, it \"bites\" at enemies by snapping at them with its hinged lid while its inner surfaces swiftly heat up to cook anything Small it can \"gulp\" down.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+      "npcAc": "(13 when broken); construct armor",
       "items": {
         "Lid": {
           "name": "Lid"
@@ -374,6 +384,7 @@
     "Grimbal": {
       "name": "Grimbal",
       "description": "",
+      "npcHp": "negative healing, rejuvenation",
       "items": {
         "Ghostly Hand": {
           "name": "Ghostly Hand"
@@ -407,6 +418,9 @@
         "Slightly Drunk": {
           "name": "Slightly Drunk",
           "description": "<p>When first encountered, the hunters are slightly drunk and take a -1 penalty to all checks until they sober up.</p>"
+        },
+        "Lore (Hunting)": {
+          "name": "Lore (Hunting)"
         }
       }
     },
@@ -459,6 +473,7 @@
     "Hymmir Urath": {
       "name": "Hymmir Urath",
       "description": "",
+      "npcHp": "negative healing",
       "items": {
         "Jaws": {
           "name": "Jaws"
@@ -510,6 +525,7 @@
     "Kieragan Skross": {
       "name": "Kieragan Skross",
       "description": "",
+      "npcHp": "negative healing",
       "items": {
         "Defiled Religions Symbol of Droskar": {
           "name": "Defiled Religions Symbol of Droskar"
@@ -604,6 +620,9 @@
         },
         "Sneak Attack": {
           "description": "<p>King Merlokrep deals an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+        },
+        "Lore (Mining)": {
+          "name": "Lore (Mining)"
         }
       }
     },
