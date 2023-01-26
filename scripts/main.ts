@@ -3,6 +3,7 @@ import "dotenv/config";
 import { resolve } from "path";
 import { hideBin } from "yargs/helpers";
 import yargs from "yargs/yargs";
+import { commandFindMostCommon } from "./command-find-most-common";
 import { commandUpdate } from "./command-update";
 import { commandUpdateSource } from "./command-update-source";
 import { commandWeblateQuery } from "./command-weblate-query";
@@ -59,6 +60,17 @@ yargs(hideBin(process.argv))
     (yargs) => yargs.positional("lang", { type: "string", demandOption: true }),
     async (argv) => {
       await commandWeblateQuery([], argv.lang);
+    }
+  )
+  .command(
+    "find-most-common [lang] [compendium]",
+    "find the most common untranslated strings in a translation compendium",
+    (yargs) =>
+      yargs
+        .positional("lang", { type: "string", demandOption: true })
+        .positional("compendium", { type: "string", demandOption: true }),
+    async (argv) => {
+      await commandFindMostCommon(argv.lang, argv.compendium);
     }
   )
   .strictCommands()
