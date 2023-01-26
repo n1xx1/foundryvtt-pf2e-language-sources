@@ -23,6 +23,7 @@ export async function commandUpdateSource(
     ["compendium-backgrounds", "backgrounds.db"],
     ["compendium-deities", "deities.db"],
     ["compendium-classes", "classes.db"],
+    ["compendium-class-features", "classfeatures.db"],
     ["compendium-heritages", "heritages.db"],
     ["compendium-spells", "spells.db"],
     ["compendium-feats", "feats.db"],
