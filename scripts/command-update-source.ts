@@ -28,6 +28,18 @@ export async function commandUpdateSource(
     ["compendium-spells", "spells.db"],
     ["compendium-feats", "feats.db"],
     ["compendium-equipment", "equipment.db"],
+    [
+      "compendium-abomination-vaults-bestiary",
+      "abomination-vaults-bestiary.db",
+    ],
+    // ["compendium-age-of-ashes-bestiary", "age-of-ashes-bestiary.db"],
+    [
+      "compendium-agents-of-edgewatch-bestiary",
+      "agents-of-edgewatch-bestiary.db",
+    ],
+    ["compendium-bestiary", "pathfinder-bestiary.db"],
+    ["compendium-bestiary-2", "pathfinder-bestiary-2.db"],
+    ["compendium-bestiary-3", "pathfinder-bestiary-3.db"],
   ];
 
   for (const [name, packName] of toTranslate) {

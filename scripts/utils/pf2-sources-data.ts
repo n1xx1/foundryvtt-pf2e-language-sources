@@ -2,32 +2,49 @@ export function getRealTag(source: string) {
   return sourceStateMap.get(source) ?? null;
 }
 
-export const sourceState: Record<
-  string,
-  { source: string[]; language: string[] }
-> = {
+type SourceState = {
+  name: string;
+  type: "core" | "lost-omens" | "adventure-path" | "adventure" | "other";
+  source: string[];
+  language: string[];
+  compendiums?: string[];
+};
+
+export const sourceState: Record<string, SourceState> = {
   // Core
   "core-rulebook": {
+    name: "Core Rulebook",
+    type: "core",
     source: ["Core Rulebook", "Pathfinder Core Rulebook"],
     language: ["it"],
   },
   bestiary1: {
+    name: "Bestiary",
+    type: "core",
     source: ["Bestiary", "Pathfinder Bestiary"],
     language: ["it"],
   },
   "gamemastery-guide": {
+    name: "Gamemastery Guide",
+    type: "core",
     source: ["Gamemastery Guide", "Pathfinder Gamemastery Guide"],
     language: ["it"],
   },
   bestiary2: {
+    name: "Bestiary 2",
+    type: "core",
     source: ["Bestiary 2", "Pathfinder Bestiary 2"],
     language: ["it"],
   },
   "advanced-players-guide": {
+    name: "Advanced Player's Guide",
+    type: "core",
     source: ["Advanced Player's Guide", "Pathfinder Advanced Player's Guide"],
     language: ["it"],
   },
   "beginner-box": {
+    name: "Beginner Box",
+    type: "core",
     source: [
       "Pathfinder Beginner Box: Hero's Handbook",
       "Pathfinder Beginner Box",
@@ -36,14 +53,20 @@ export const sourceState: Record<
     language: ["it"],
   },
   bestiary3: {
+    name: "Bestiary 3",
+    type: "core",
     source: ["Bestiary 3", "Pathfinder Bestiary 3"],
     language: ["it"],
   },
   "secrets-of-magic": {
+    name: "Secrets of Magic",
+    type: "core",
     source: ["Secrets of Magic", "Pathfinder Secrets of Magic"],
     language: [],
   },
   "guns-and-gears": {
+    name: "Guns & Gears",
+    type: "core",
     source: [
       "Guns & Gears",
       "Pathfinder Guns and Gears",
@@ -52,27 +75,39 @@ export const sourceState: Record<
     language: [],
   },
   "book-of-the-dead": {
+    name: "Book of the Dead",
+    type: "core",
     source: ["Pathfinder Book of the Dead", "Book of the Dead"],
     language: [],
   },
   "dark-archive": {
+    name: "Dark Archive",
+    type: "core",
     source: ["Pathfinder Dark Archive", "Dark Archive", "Tomorrow's Feast"],
     language: [],
   },
   "treasure-vault": {
+    name: "Treasure Vault",
+    type: "core",
     source: [],
     language: [],
   },
   "rage-of-elements": {
+    name: "Rage of Elements",
+    type: "core",
     source: [],
     language: [],
   },
   // Lost Omens
   "character-guide": {
+    name: "Lost Omens: Character Guide",
+    type: "lost-omens",
     source: ["Character Guide", "Pathfinder Lost Omens: Character Guide"],
     language: ["it"],
   },
   "world-guide": {
+    name: "Lost Omens: World Guide",
+    type: "lost-omens",
     source: [
       "World Guide",
       "Pathfinder Lost Omens: World Guide",
@@ -81,14 +116,20 @@ export const sourceState: Record<
     language: ["it"],
   },
   "gods-and-magic": {
+    name: "Lost Omens: Gods & Magic",
+    type: "lost-omens",
     source: ["Gods & Magic", "Pathfinder Lost Omens: Gods & Magic"],
     language: ["it"],
   },
   legends: {
+    name: "Lost Omens: Legends",
+    type: "lost-omens",
     source: ["Legends", "Pathfinder Lost Omens: Legends"],
     language: [],
   },
   "pfs-guide": {
+    name: "Lost Omens: Pathfinder Society Guide",
+    type: "lost-omens",
     source: [
       "PFS Guide",
       "Pathfinder Lost Omens: PFS Guide",
@@ -97,14 +138,20 @@ export const sourceState: Record<
     language: ["it"],
   },
   "ancestry-guide": {
+    name: "Lost Omens: Ancestry Guide",
+    type: "lost-omens",
     source: ["Ancestry Guide", "Pathfinder Lost Omens: Ancestry Guide"],
     language: ["it"],
   },
   "the-mwangi-expanse": {
+    name: "Lost Omens: The Mwangi Expanse",
+    type: "lost-omens",
     source: ["The Mwangi Expanse", "Pathfinder Lost Omens: The Mwangi Expanse"],
     language: [],
   },
   "grand-bazaar": {
+    name: "Lost Omens: Grand Bazaar",
+    type: "lost-omens",
     source: [
       "Grand Bazaar",
       "Pathfinder Lost Omens: The Grand Bazaar",
@@ -113,14 +160,20 @@ export const sourceState: Record<
     language: [],
   },
   absalom: {
+    name: "Lost Omens: Absalom, City of Lost Omens",
+    type: "lost-omens",
     source: ["Pathfinder Lost Omens: Absalom, City of Lost Omens"],
     language: [],
   },
   "monsters-of-myth": {
+    name: "Lost Omens: Monsters of Myth",
+    type: "lost-omens",
     source: ["Pathfinder Lost Omens: Monsters of Myth"],
     language: [],
   },
   "knights-of-lastwall": {
+    name: "Lost Omens: Knights of Lastwall",
+    type: "lost-omens",
     source: [
       "Pathfinder Lost Omens: Knights of Lastwall",
       "Knights of Lastwall",
@@ -128,24 +181,34 @@ export const sourceState: Record<
     language: [],
   },
   "travel-guide": {
+    name: "Lost Omens: Travel Guide",
+    type: "lost-omens",
     source: ["Pathfinder Lost Omens: Travel Guide"],
     language: [],
   },
   "impossible-lands": {
+    name: "Lost Omens: Impossible Lands",
+    type: "lost-omens",
     source: ["Pathfinder Lost Omens: Impossible Lands", "Impossible Lands"],
     language: [],
   },
   firebrands: {
+    name: "Lost Omens: Firebrands",
+    type: "lost-omens",
     source: [],
     language: [],
   },
   highhelm: {
+    name: "Lost Omens: Highhelm",
+    type: "lost-omens",
     source: [],
     language: [],
   },
 
   // Adventure Paths
   "age-of-ashes1": {
+    name: "Age of Ashes",
+    type: "adventure-path",
     source: [
       "Pathfinder: Age of Ashes Player's Guide",
       "Age of Ashes Player's Guide",
@@ -155,26 +218,38 @@ export const sourceState: Record<
     language: ["it"],
   },
   "age-of-ashes2": {
+    name: "Age of Ashes",
+    type: "adventure-path",
     source: ["Pathfinder #146", "Pathfinder #146: Cult of Cinders"],
     language: ["it"],
   },
   "age-of-ashes3": {
+    name: "Age of Ashes",
+    type: "adventure-path",
     source: ["Pathfinder #147", "Pathfinder #147: Tomorrow Must Burn"],
     language: ["it"],
   },
   "age-of-ashes4": {
+    name: "Age of Ashes",
+    type: "adventure-path",
     source: ["Pathfinder #148", "Pathfinder #148: Fires of the Haunted City"],
     language: ["it"],
   },
   "age-of-ashes5": {
+    name: "Age of Ashes",
+    type: "adventure-path",
     source: ["Pathfinder #149", "Pathfinder #149: Against the Scarlet Triad"],
     language: ["it"],
   },
   "age-of-ashes6": {
+    name: "Age of Ashes",
+    type: "adventure-path",
     source: ["Pathfinder #150", "Pathfinder #150: Broken Promises"],
     language: ["it"],
   },
   "extinction-curse1": {
+    name: "Extinction Curse",
+    type: "adventure-path",
     source: [
       "Pathfinder: Extinction Curse Player's Guide",
       "Pathfinder #151",
@@ -183,10 +258,14 @@ export const sourceState: Record<
     language: [],
   },
   "extinction-curse2": {
+    name: "Extinction Curse",
+    type: "adventure-path",
     source: ["Pathfinder #152", "Pathfinder #152: Legacy of the Lost God"],
     language: [],
   },
   "extinction-curse3": {
+    name: "Extinction Curse",
+    type: "adventure-path",
     source: [
       "Pathfinder #153",
       "Pathfinder #153: Life's Long Shadows",
@@ -195,18 +274,26 @@ export const sourceState: Record<
     language: [],
   },
   "extinction-curse4": {
+    name: "Extinction Curse",
+    type: "adventure-path",
     source: ["Pathfinder #154", "Pathfinder #154: Siege of the Dinosaurs"],
     language: [],
   },
   "extinction-curse5": {
+    name: "Extinction Curse",
+    type: "adventure-path",
     source: ["Pathfinder #155", "Pathfinder #155: Lord of the Black Sands"],
     language: [],
   },
   "extinction-curse6": {
+    name: "Extinction Curse",
+    type: "adventure-path",
     source: ["Pathfinder #156", "Pathfinder #156: The Apocalypse Prophet"],
     language: [],
   },
   "agents-of-edgewatch1": {
+    name: "Agents of Edgewatch",
+    type: "adventure-path",
     source: [
       "Pathfinder: Agents of Edgewatch Player's Guide",
       "Agents of Edgewatch Player's Guide",
@@ -216,14 +303,20 @@ export const sourceState: Record<
     language: ["it"],
   },
   "agents-of-edgewatch2": {
+    name: "Agents of Edgewatch",
+    type: "adventure-path",
     source: ["Pathfinder #158", "Pathfinder #158: Sixty Feet Under"],
     language: ["it"],
   },
   "agents-of-edgewatch3": {
+    name: "Agents of Edgewatch",
+    type: "adventure-path",
     source: ["Pathfinder #159", "Pathfinder #159: All or Nothing"],
     language: ["it"],
   },
   "agents-of-edgewatch4": {
+    name: "Agents of Edgewatch",
+    type: "adventure-path",
     source: [
       "Pathfinder #160",
       "Pathfinder #160: Assault on Hunting Lodge Seven",
@@ -231,27 +324,38 @@ export const sourceState: Record<
     language: ["it"],
   },
   "agents-of-edgewatch5": {
+    name: "Agents of Edgewatch",
+    type: "adventure-path",
     source: ["Pathfinder #161", "Pathfinder #161: Belly of the Black Whale"],
     language: ["it"],
   },
   "agents-of-edgewatch6": {
+    name: "Agents of Edgewatch",
+    type: "adventure-path",
     source: ["Pathfinder #162", "Pathfinder #162: Ruins of the Radiant Siege"],
     language: ["it"],
   },
   "abomination-vaults1": {
+    name: "Abomination Vaults",
+    type: "adventure-path",
     source: [
       "Abomination Vaults Player's Guide",
       "Pathfinder: Abomination Vaults Player's Guide",
       "Pathfinder #163",
       "Pathfinder #163: Ruins of Gauntlight",
+      "Pathfinder Abomination Vaults Hardcover Compilation",
     ],
     language: ["it"],
   },
   "abomination-vaults2": {
+    name: "Abomination Vaults",
+    type: "adventure-path",
     source: ["Pathfinder #164", "Pathfinder #164: Hands of the Devil"],
     language: ["it"],
   },
   "abomination-vaults3": {
+    name: "Abomination Vaults",
+    type: "adventure-path",
     source: [
       "Pathfinder #165",
       "Patfinder #165: Eyes of Empty Death",
@@ -260,10 +364,14 @@ export const sourceState: Record<
     language: ["it"],
   },
   "abomination-vaults-hc": {
+    name: "Abomination Vaults",
+    type: "adventure-path",
     source: ["Pathfinder Abomination Vaults Compilation Hardcover"],
     language: ["it"],
   },
   "fists-of-the-ruby-phoenix1": {
+    name: "Fists of the Ruby Phoenix",
+    type: "adventure-path",
     source: [
       "Pathfinder: Fists of the Ruby Phoenix Player's Guide",
       "Pathfinder #166",
@@ -272,10 +380,14 @@ export const sourceState: Record<
     language: [],
   },
   "fists-of-the-ruby-phoenix2": {
+    name: "Fists of the Ruby Phoenix",
+    type: "adventure-path",
     source: ["Pathfinder #167", "Pathfinder #167: Ready? Fight!"],
     language: [],
   },
   "fists-of-the-ruby-phoenix3": {
+    name: "Fists of the Ruby Phoenix",
+    type: "adventure-path",
     source: [
       "Pathfinder #168",
       "Patfinder #168: King of the Mountain",
@@ -284,6 +396,8 @@ export const sourceState: Record<
     language: [],
   },
   "strength-of-thousands1": {
+    name: "Strength of Thousands",
+    type: "adventure-path",
     source: [
       "Strength of Thousands Player's Guide",
       "Pathfinder #169",
@@ -292,14 +406,20 @@ export const sourceState: Record<
     language: [],
   },
   "strength-of-thousands2": {
+    name: "Strength of Thousands",
+    type: "adventure-path",
     source: ["Pathfinder #170", "Pathfinder #170: Spoken on the Song Wind"],
     language: [],
   },
   "strength-of-thousands3": {
+    name: "Strength of Thousands",
+    type: "adventure-path",
     source: ["Pathfinder #171", "Pathfinder #171: Hurricane's Howl"],
     language: [],
   },
   "strength-of-thousands4": {
+    name: "Strength of Thousands",
+    type: "adventure-path",
     source: [
       "Pathfinder #172",
       "Pathfinder #172: Secrets of the Temple-City",
@@ -308,14 +428,20 @@ export const sourceState: Record<
     language: [],
   },
   "strength-of-thousands5": {
+    name: "Strength of Thousands",
+    type: "adventure-path",
     source: ["Pathfinder #173: Doorway to the Red Star"],
     language: [],
   },
   "strength-of-thousands6": {
+    name: "Strength of Thousands",
+    type: "adventure-path",
     source: ["Pathfinder #174: Shadows of the Ancients"],
     language: [],
   },
   "quest-for-the-frozen-flame1": {
+    name: "Quest for the Frozen Flame",
+    type: "adventure-path",
     source: [
       "Pathfinder: Quest for the Frozen Flame Player's Guide",
       "Pathfinder #175: Broken Tusk Moon",
@@ -323,14 +449,20 @@ export const sourceState: Record<
     language: [],
   },
   "quest-for-the-frozen-flame2": {
+    name: "Quest for the Frozen Flame",
+    type: "adventure-path",
     source: ["Pathfinder #176: Lost Mammoth Valley"],
     language: [],
   },
   "quest-for-the-frozen-flame3": {
+    name: "Quest for the Frozen Flame",
+    type: "adventure-path",
     source: ["Pathfinder #177: Burning Tundra"],
     language: [],
   },
   "outlaws-of-alkenstar1": {
+    name: "Outlaws of Alkenstar",
+    type: "adventure-path",
     source: [
       "Pathfinder: Outlaws of Alkenstar Player's Guide",
       "Pathfinder #178: Punks in a Powder Keg",
@@ -338,14 +470,20 @@ export const sourceState: Record<
     language: [],
   },
   "outlaws-of-alkenstar2": {
+    name: "Outlaws of Alkenstar",
+    type: "adventure-path",
     source: ["Pathfinder #179: Cradle of Quartz"],
     language: [],
   },
   "outlaws-of-alkenstar3": {
+    name: "Outlaws of Alkenstar",
+    type: "adventure-path",
     source: ["Pathfinder #180: The Smoking Gun"],
     language: [],
   },
   "blood-lords1": {
+    name: "Blood Lords",
+    type: "adventure-path",
     source: [
       "Pathfinder: Blood Lords Player's Guide",
       "Pathfinder #181: Zombie Feast",
@@ -353,26 +491,38 @@ export const sourceState: Record<
     language: [],
   },
   "blood-lords2": {
+    name: "Blood Lords",
+    type: "adventure-path",
     source: ["Pathfinder #182: Graveclaw"],
     language: [],
   },
   "blood-lords3": {
+    name: "Blood Lords",
+    type: "adventure-path",
     source: ["Pathfinder #183: Field of Maidens"],
     language: [],
   },
   "blood-lords4": {
+    name: "Blood Lords",
+    type: "adventure-path",
     source: ["Pathfinder #184: The Ghouls Hunger"],
     language: [],
   },
   "blood-lords5": {
+    name: "Blood Lords",
+    type: "adventure-path",
     source: ["Pathfinder #185: A Taste of Ashes"],
     language: [],
   },
   "blood-lords6": {
+    name: "Blood Lords",
+    type: "adventure-path",
     source: ["Pathfinder #186: Ghost King's Rage"],
     language: [],
   },
   gatewalkers1: {
+    name: "Gatewalkers",
+    type: "adventure-path",
     source: [
       "Pathfinder Gatewalkers Player's Guide",
       "Pathfinder #187: The Seventh Arch",
@@ -380,14 +530,20 @@ export const sourceState: Record<
     language: [],
   },
   gatewalkers2: {
+    name: "Gatewalkers",
+    type: "adventure-path",
     source: [],
     language: [],
   },
   gatewalkers3: {
+    name: "Gatewalkers",
+    type: "adventure-path",
     source: [],
     language: [],
   },
   kingmaker: {
+    name: "Kingmaker",
+    type: "adventure-path",
     source: [
       "Pathfinder Kingmaker Player's Guide",
       "Pathfinder Kingmaker",
@@ -397,6 +553,8 @@ export const sourceState: Record<
   },
   // Adventures
   "the-fall-of-plaguestone": {
+    name: "The Fall of Plaguestone",
+    type: "adventure",
     source: [
       "The Fall of Plaguestone",
       "Pathfinder Adventure: The Fall of Plaguestone",
@@ -404,22 +562,32 @@ export const sourceState: Record<
     language: ["it"],
   },
   "little-trouble-in-big-absalom": {
+    name: "Little Trouble in Big Absalom",
+    type: "adventure",
     source: ["Pathfinder Adventure: Little Trouble in Big Absalom"],
     language: [],
   },
   "the-slithering": {
+    name: "The Slithering",
+    type: "adventure",
     source: ["The Slithering", "Pathfinder Adventure: The Slithering"],
     language: [],
   },
   "troubles-in-otari": {
+    name: "Troubles in Otari",
+    type: "adventure",
     source: ["Troubles in Otari", "Pathfinder Adventure: Troubles in Otari"],
     language: ["it"],
   },
   malevolence: {
+    name: "Malevolence",
+    type: "adventure",
     source: ["Malevolence", "Pathfinder Adventure: Malevolence"],
     language: [],
   },
   "night-of-the-gray-death": {
+    name: "Night of the Gray Death",
+    type: "adventure",
     source: [
       "Night of the Gray Death",
       "Pathfinder Adventure: Night of the Gray Death",
@@ -427,18 +595,26 @@ export const sourceState: Record<
     language: [],
   },
   "threshold-of-knowledge": {
+    name: "Threshold of Knowledge",
+    type: "adventure",
     source: ["Pathfinder Adventure: Threshold of Knowledge"],
     language: [],
   },
   "shadows-at-sundown": {
+    name: "Shadows at Sundown",
+    type: "adventure",
     source: ["Pathfinder Adventure: Shadows at Sundown"],
     language: [],
   },
   "a-fistful-of-flowers": {
+    name: "A Fistful of Flowers",
+    type: "adventure",
     source: ["Pathfinder Adventure: A Fistful of Flowers"],
     language: [],
   },
   "crown-of-the-kobold-king": {
+    name: "Crown of the Kobold King",
+    type: "adventure",
     source: [
       "Pathfinder Adventure: Crown of the Kobold King",
       "Crown of the Kobold King",
@@ -446,32 +622,46 @@ export const sourceState: Record<
     language: [],
   },
   "the-enmity-cycle": {
+    name: "The Enmity Cycle",
+    type: "adventure",
     source: [],
     language: [],
   },
   "the-dead-gods-hand": {
+    name: "The Dead Gods Hand",
+    type: "adventure",
     source: [],
     language: [],
   },
   // One-Shots
   "dinner-at-lionlodge": {
+    name: "Dinner at Lionlodge",
+    type: "adventure",
     source: ["Pathfinder One-Shot #2: Dinner at Lionlodge"],
     language: [],
   },
   "sundered-waves": {
+    name: "Sundered Waves",
+    type: "adventure",
     source: [],
     language: [],
   },
   "head-shot-the-rot": {
+    name: "Head Shot The Rot",
+    type: "adventure",
     source: [],
     language: [],
   },
   "mark-of-the-mantis": {
+    name: "Mark Of The Mantis",
+    type: "adventure",
     source: [],
     language: [],
   },
   // Other Random Stuff
   "random-sources": {
+    name: "Random Sources",
+    type: "other",
     source: [
       "Pathfinder Blog",
       "Pathfinder Special: Fumbus!",
@@ -485,6 +675,8 @@ export const sourceState: Record<
     language: [],
   },
   "random-society": {
+    name: "Random Society",
+    type: "other",
     source: [
       "Organized Play Foundation",
       "Pathfinder Blog: Pathfinder Society Year 4 Rule Updates",
