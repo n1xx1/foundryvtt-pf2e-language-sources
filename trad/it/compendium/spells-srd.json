@@ -45,7 +45,12 @@
         "Negate Aroma": {
             "name": "Negare Odore",
             "description": "<p>Il bersaglio perde il proprio odore, impedendo alle creature di accorgersi passivamente della sua presenza utilizzando solo il fiuto, anche nel caso in cui le creature siano dotate di fiuto preciso o impreciso. Una creatura che effettua una prova di Percezione con fiuto ed altri sensi potrebbe essere in grado di notare l'assenza di odore naturale. Se il bersaglio ha una qualsiasi capacità derivante dal suo odore, come un odore opprimente, anche quella capacità viene negata.</p>\n<hr />\n<p><strong>Intensificato (5°)</strong> Il raggio d'azione aumenta fino a 9 metri, e puoi prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura consenziente"
+            "spellTarget": "1 creatura consenziente",
+            "spellHeightening": {
+                "5": {
+                    "spellTarget": "10 creature consenzienti"
+                }
+            }
         },
         "Dragon Breath (Blue or Bronze)": {
             "name": "Soffio del Drago (Blu o Bronzo)",
@@ -157,7 +162,12 @@
         "Disrupting Weapons": {
             "name": "Arma Distruttiva",
             "description": "<p>Infondi le armi di energia positiva. Gli attacchi con queste armi infliggono 1d4 danni di tipo positivo aggiuntivi ai non morti.</p>\n<hr />\n<p><strong>Intensificato (3°)</strong> Il danno aumenta fino a 2d4.</p>\n<p><strong>Intensificato (5°)</strong> Prendi come bersaglio fino a 3 armi, e il danno aumenta fino a 3d4.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.X7RD0JRxhJV9u2LC]{Effetto Incantesimo: Arma Distruttiva}</p>",
-            "spellTarget": "fino a 2 armi, ciascuna delle quali deve essere impugnata da te o da un alleato consenziente, oppure incustodita"
+            "spellTarget": "fino a 2 armi, ciascuna delle quali deve essere impugnata da te o da un alleato consenziente, oppure incustodita",
+            "spellHeightening": {
+                "5": {
+                    "spellTarget": "fino a tre armi, ciascuna delle quali deve essere impugnata da te o da un alleato consenziente, oppure incustodita"
+                }
+            }
         },
         "Word of Freedom": {
             "name": "Parola di Libertà",
@@ -179,7 +189,8 @@
         },
         "Black Tentacles": {
             "name": "Tentacoli Neri",
-            "description": "<p><strong>Area</strong> Esplosione di 6 metri adiacente a una superficie piana</p>\n<hr />\n<p>Compaiono dei viscidi tentacoli neri che provano a Lottare con qualsiasi creatura all’interno dell’area. Effettua tiri per colpire con incantesimo contro la CD di Tempra di ciascuna creatura. Qualsiasi creatura contro la quale superi il tiro è @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{afferrata} e subisce 3d6 danni contundenti. Quando una creatura termina il proprio turno nell’area, i tentacoli tentano di afferrarla se ancora non lo hanno fatto, ed infliggono [[/r 1d6[bludgeoning]]]{1d6 danni contundenti} a qualsiasi creatura già afferrata.</p>\n<p>La CD di Sfuggire dei tentacoli è pari alla tua CD di incantesimo. Una creatura può attaccare un tentacolo in un tentativo di liberarsi dalla sua presa. Il tentacolo ha CA pari alla tua CD di incantesimo e viene distrutto se subisce 12 o più danni. Anche se vengono distrutti, altri tentacoli continuano a svilupparsi nell’area fino al termine della durata. Puoi Interrompere l’incantesimo.</p>"
+            "description": "<p><strong>Area</strong> Esplosione di 6 metri adiacente a una superficie piana</p>\n<hr />\n<p>Compaiono dei viscidi tentacoli neri che provano a Lottare con qualsiasi creatura all’interno dell’area. Effettua tiri per colpire con incantesimo contro la CD di Tempra di ciascuna creatura. Qualsiasi creatura contro la quale superi il tiro è @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{afferrata} e subisce 3d6 danni contundenti. Quando una creatura termina il proprio turno nell’area, i tentacoli tentano di afferrarla se ancora non lo hanno fatto, ed infliggono [[/r 1d6[bludgeoning]]]{1d6 danni contundenti} a qualsiasi creatura già afferrata.</p>\n<p>La CD di Sfuggire dei tentacoli è pari alla tua CD di incantesimo. Una creatura può attaccare un tentacolo in un tentativo di liberarsi dalla sua presa. Il tentacolo ha CA pari alla tua CD di incantesimo e viene distrutto se subisce 12 o più danni. Anche se vengono distrutti, altri tentacoli continuano a svilupparsi nell’area fino al termine della durata. Puoi Interrompere l’incantesimo.</p>",
+            "spellArea": "esplosione di 6 metri adiacente a una superficie liscia"
         },
         "Planar Binding": {
             "name": "Legame Planare",
@@ -297,7 +308,12 @@
         "Fear": {
             "name": "Paura",
             "description": "<p>Infondi paura nel bersaglio; questi deve effettuare un tiro salvezza su Volontà.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p>\n<p><strong>Successo </strong>Il bersaglio è @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato 1}.</p>\n<p><strong>Fallimento </strong>Il bersaglio è @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato 2}.</p>\n<p><strong>Fallimento Critico</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato 3} e @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{in fuga} per 1 round.</p>\n<hr />\n<p><strong>Intensificato (3°)</strong> Puoi prendere come bersaglio fino a 5 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "3": {
+                    "spellTarget": "5 creature"
+                }
+            }
         },
         "Rebuke Death": {
             "name": "Allontanare la Morte",
@@ -629,7 +645,12 @@
         "Remove Paralysis": {
             "name": "Rimuovi Paralisi",
             "description": "<p>Un'ondata di energia libera una creatura @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{paralizzata}. Puoi tentare di contrastare un singolo effetto che infligge la condizione paralizzato sul bersaglio. Questo incantesimo non cura chi è afflitto da paralisi derivante da qualche stato o effetto naturale, come ad esempio se la paralisi è causata da ferite o tossine non magiche.</p>\n<hr />\n<p><strong>Intensificato (6°) </strong>Il raggio d'azione dell'incantesimo aumenta fino a 9 metri, e puoi prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "6": {
+                    "spellTarget": "10 creature"
+                }
+            }
         },
         "Call of the Grave": {
             "name": "Chiamata dalla Tomba",
@@ -685,7 +706,12 @@
         },
         "Ethereal Jaunt": {
             "name": "Transizione Eterea",
-            "description": "<p>Viaggi verso il Piano Etereo, il quale si sovrappone al Piano Materiale. Le creature sul Piano Materiale non ti possono vedere e puoi muoverti attraverso le cose sul Piano Materiale. Ti muovi alla metà delle tue normali Velocità, ma puoi muoverti in qualsiasi direzione (incluso verso l'alto e verso il basso). Puoi vedere nel Piano Materiale entro un raggio di 18 metri; è grigio, nebbioso e @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Occultato} a te. Non puoi influire sul Piano Materiale, e non puoi subire effetti dal Piano Materiale eccetto per effetti di forza e abiurazioni che hanno origine dal Piano Materiale. Quando l'incantesimo termina, ritorni sul Piano Materiale. Se sei in aria, cadi (a meno che tu non possa volare), e se sei all'interno di un oggetto vieni spinto nello spazio aperto più vicino e subisci 1d6 danni per ogni 1,5 metri in cui sei stato spinto. Se lanci questo incantesimo quando non sei sul Piano Materiale, l'incantesimo è perduto.</p>\n<hr />\n<p><strong>Intensificato (9°)</strong> Puoi prendere come bersaglio fino a 5 creature consenzienti aggiuntive in un raggio di 9 metri. La durata massima è di 10 minuti.</p>"
+            "description": "<p>Viaggi verso il Piano Etereo, il quale si sovrappone al Piano Materiale. Le creature sul Piano Materiale non ti possono vedere e puoi muoverti attraverso le cose sul Piano Materiale. Ti muovi alla metà delle tue normali Velocità, ma puoi muoverti in qualsiasi direzione (incluso verso l'alto e verso il basso). Puoi vedere nel Piano Materiale entro un raggio di 18 metri; è grigio, nebbioso e @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Occultato} a te. Non puoi influire sul Piano Materiale, e non puoi subire effetti dal Piano Materiale eccetto per effetti di forza e abiurazioni che hanno origine dal Piano Materiale. Quando l'incantesimo termina, ritorni sul Piano Materiale. Se sei in aria, cadi (a meno che tu non possa volare), e se sei all'interno di un oggetto vieni spinto nello spazio aperto più vicino e subisci 1d6 danni per ogni 1,5 metri in cui sei stato spinto. Se lanci questo incantesimo quando non sei sul Piano Materiale, l'incantesimo è perduto.</p>\n<hr />\n<p><strong>Intensificato (9°)</strong> Puoi prendere come bersaglio fino a 5 creature consenzienti aggiuntive in un raggio di 9 metri. La durata massima è di 10 minuti.</p>",
+            "spellHeightening": {
+                "9": {
+                    "spellTarget": "te stesso e fino a 5 creature consenzienti aggiuntive"
+                }
+            }
         },
         "Mindlink": {
             "name": "Connessione Mentale",
@@ -701,7 +727,12 @@
         "Paralyze": {
             "name": "Paralizzare",
             "description": "<p>Blocchi gli impulsi motori del bersaglio prima che possano lasciare la sua mente, potenzialmente arrestandolo sul posto. Il bersaglio deve effettuare un tiro salvezza su Volontà.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p>\n<p><strong>Successo </strong>Il bersaglio è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stordito} 1.</p>\n<p><strong>Fallimento </strong>Il bersaglio è @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralizzato} per 1 round.</p>\n<p><strong>Fallimento Critico</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralizzato} per 4 round. Alla fine di ogni suo turno, il bersaglio può effettuare un nuovo tiro salvezza su Volontà per ridurre la durata rimanente di 1 round o ponendo fine interamente ad essa con un successo critico.</p>\n<hr />\n<p><strong>Intensificato (7°)</strong> Puoi prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "7": {
+                    "spellTarget": "10 creature"
+                }
+            }
         },
         "Protector's Sphere": {
             "name": "Sfera del Protettore",
@@ -730,7 +761,8 @@
         "Fey Glamour": {
             "name": "Magia Inusuale",
             "description": "<p>Evochi magie fatate per avvolgere l'area o i bersagli di illusione. Questo ha l'effetto di <em>@UUID[Compendium.pf2e.spells-srd.Ucf8eynbZMfUucjE]{Scena Illusoria}</em> sull'area o <em>@UUID[Compendium.pf2e.spells-srd.hkfH9Z53hPzcOwNB]{Velo}</em> sulle creature, come se fosse intensificato a un livello di 1 livello inferiore a quello di magia inusuale, usando il raggio e la durata di magia inusuale.</p>",
-            "spellTarget": "fino a 10 creature"
+            "spellTarget": "fino a 10 creature",
+            "spellArea": "esplosione di 9 metri o Bersaglio"
         },
         "Winter Bolt": {
             "spellTarget": "1 creatura"
@@ -747,7 +779,8 @@
         },
         "Flame Strike": {
             "name": "Colpo Infuocato",
-            "description": "<p><strong>Area</strong> cilindro del raggio di 3 metri e alto 12 metri</p>\n<hr />\n<p>Evochi una pioggia di fuoco divino che precipita dall'alto, infliggendo 8d6 danni da fuoco. Dato che la fiamma è infusa di energia divina, le creature all'interno dell'area applicano soltanto metà della loro normale resistenza al fuoco. Le creature che sono immuni al fuoco trattano il loro risultato sul tiro salvezza come di un grado di successo superiore invece di ottenere i normali benefici o immunità.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> Il danno aumenta di 2d6.</p>"
+            "description": "<p><strong>Area</strong> cilindro del raggio di 3 metri e alto 12 metri</p>\n<hr />\n<p>Evochi una pioggia di fuoco divino che precipita dall'alto, infliggendo 8d6 danni da fuoco. Dato che la fiamma è infusa di energia divina, le creature all'interno dell'area applicano soltanto metà della loro normale resistenza al fuoco. Le creature che sono immuni al fuoco trattano il loro risultato sul tiro salvezza come di un grado di successo superiore invece di ottenere i normali benefici o immunità.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> Il danno aumenta di 2d6.</p>",
+            "spellArea": "cilindro del raggio di 3 metri e alto 12 metri"
         },
         "Stone Lance": {
             "spellTarget": "1 creatura"
@@ -774,7 +807,12 @@
         "Remove Fear": {
             "name": "Rimuovi Paura",
             "description": "<p>Con un tocco, lenisci le paure di una creatura. Puoi tentare di contrastare un singolo effetto di paura che affligge il bersaglio. Questo libera soltanto il bersaglio e nessun'altra creatura sotto l'effetto di paura.</p>\n<hr />\n<p><strong>Intensificato (6°)</strong> Il raggio d'azione dell'incantesimo aumenta fino a 9 metri, e puoi prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "6": {
+                    "spellTarget": "10 creature"
+                }
+            }
         },
         "Prying Eye": {
             "name": "Occhio Indagatore",
@@ -789,7 +827,12 @@
         "Restore Senses": {
             "name": "Ripristinare Sensi",
             "description": "<p>Tenti di contrastare un singolo effetto che impone la condizione @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{accecato} o @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{assordato} sul bersaglio, ripristinando la sua vista o udito. Questo incantesimo può contrastare sia la magia temporanea sia le conseguenze permanenti della magia, ma non cura chi non possiede quel senso a causa di qualche stato o effetto naturale, come ad esempio se manca dalla nascita o se ne è privo a causa di ferite o tossine non magiche.</p>\n<hr />\n<p><strong>Intensificato (6°)</strong> Il raggio d'azione dell'incantesimo aumenta fino a 9 metri, e puoi prendere come bersaglio fino a 10 creature. Puoi scegliere l'effetto da contrastare separatamente per ciascuna creatura selezionata.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "6": {
+                    "spellTarget": "10 creature"
+                }
+            }
         },
         "Tempest Touch": {
             "spellTarget": "1 creatura"
@@ -845,7 +888,15 @@
         "Resist Energy": {
             "name": "Resistere all'Energia",
             "description": "<p>Uno scudo di energia elementale protegge una creatura contro un tipo di danno da energia. Scegli tra danno da acido, elettricità, freddo, fuoco o sonoro. Il bersaglio e il suo equipaggiamento ottengono resistenza 5 al tipo di danno scelto.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.con2Hzt47JjpuUej]{Effetto Incantesimo: Resistere all'Energia}</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> La resistenza aumenta fino a 10, e puoi prendere come bersaglio fino a due creature.</p>\n<p><strong>Intensificato (7°)</strong> La resistenza aumenta fino a 15, e puoi prendere come bersaglio fino a cinque creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "4": {
+                    "spellTarget": "2 creature"
+                },
+                "7": {
+                    "spellTarget": "5 creature"
+                }
+            }
         },
         "Undetectable Alignment": {
             "name": "Allineamento Imperscrutabile",
@@ -866,7 +917,12 @@
         "Subconscious Suggestion": {
             "name": "Suggestione Inconscia",
             "description": "<p>Insinui una suggestione inconscia nel profondo della mente del bersaglio che deve essere seguita quando si attiva un innesco da te specificato. Suggerisciuna linea di azione al bersaglio. Le tue direttive devono essere articolate in modo che sia una linea di azione logica per il bersaglio e non può essere autodistruttiva o palesemente contro gli interessi del bersaglio. Il bersaglio deve effettuare un tiro salvezza su Volontà.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato e sa che hai tentato di controllarlo.</p>\n<p><strong>Successo</strong> Il bersaglio non è influenzato e crede che tu gli stia parlando normalmente, non che tu gli stia lanciando un incantesimo.</p>\n<p><strong>Fallimento</strong> La suggestione rimane nel subconscio del bersaglio fino ai tuoi preparativi successivi. Se l'innesco si attiva prima di ciò, il bersaglio segue immediatamente la tua suggestione. L'incantesimo ha una durata di 1 minuto, o finchè il bersaglio ha completato una suggestione completa o la suggestione diventa autodistruttiva o ha effetti negativi palesi.</p>\n<p><strong>Fallimento Critico</strong> Come per fallimento, ma la durata è di 1 ora.</p>\n<hr />\n<p><strong>Intensificato (9°)</strong> Puoi prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "9": {
+                    "spellTarget": "fino a 10 creature"
+                }
+            }
         },
         "Perfect Strike": {
             "name": "Colpo Perfetto",
@@ -943,7 +999,12 @@
         "Status": {
             "name": "Status",
             "description": "<p>Fintanto che tu e il bersaglio siete sullo stesso piano di esistenza ed entrambi vivi, rimani a conoscenza del suo stato attuale. Conosci la direzione e la distanza del bersaglio da te, e qualsiasi condizione subisca.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> Il raggio d'azione dell'incantesimo aumenta a 9 metri e puoi prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura vivente consenziente"
+            "spellTarget": "1 creatura vivente consenziente",
+            "spellHeightening": {
+                "4": {
+                    "spellTarget": "10 creature viventi consenzienti"
+                }
+            }
         },
         "Dragon Wings": {
             "name": "Ali del Drago",
@@ -1033,7 +1094,8 @@
         "Faerie Dust": {
             "name": "Polvere Fatata",
             "description": "<p>Cospargi l'area dell'incantesimo di una scintillante polvere magica, rendendo coloro che si trovano all'interno dell'area più facili da ingannare. Ciascuna creatura nell'area deve effettuare un tiro salvezza su Volontà. Per ciascuna azione aggiuntiva che usi Lanciando l'Incantesimo, il raggio dell'esplosione aumenta di 1,5 metri.</p>\n<hr />\n<p><strong>Successo</strong> La creatura non è influenzata.</p>\n<p><strong>Fallimento</strong> La creatura non può usare reazioni e subisce pe nalità di status -2 alle prove di Percezione e ai tiri salvezza su Volontà.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.LHREWCGPkWsc4GGJ]{Effetto Incantesimo: Polvere Fatata (Fallimento)}</p>\n<p><strong>Fallimento Critico</strong> Come per fallimento, e il bersaglio subisce anche penalità di status -1 alle prove di Percezione e ai Tiri Salvezza su Volontà per 1 minuto.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.pcK88HqL6LjBNH2h]{Effetto Incantesimo: Polvere Fatata (Fallimento Critico)}</p>\n<hr />\n<p><strong>Intensificato (+3)</strong> II raggio iniziale aumenta di 1,5 metri.</p>",
-            "spellTime": "da 1 a 3"
+            "spellTime": "da 1 a 3",
+            "spellArea": "esplosione di 1,5 metri o più"
         },
         "Wyvern Sting": {
             "spellTarget": "1 creatura"
@@ -1057,7 +1119,8 @@
         },
         "Entangle": {
             "name": "Intralciare",
-            "description": "<p><strong>Area</strong> tutti i quadretti in un'esplosione di 6 metri che contengono piante</p>\n<p>Le piante all'interno dell'area intralciano le creature. L'area conta come terreno difficile. Ad ogni round in cui una creatura inizia il proprio turno nell'area, quella creatura deve effettuare un tiro salvezza su Riflessi. Con un fallimento, essa subisce penalità di circostanza -3 metri alle sue Velocità finché non esce dall'area, e con un fallimento critico è anche @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilizzato} per 1 round. Le creature possono tentare di Sfuggire con la stessa CD di intralciare per rimuovere questi effetti.</p>"
+            "description": "<p><strong>Area</strong> tutti i quadretti in un'esplosione di 6 metri che contengono piante</p>\n<p>Le piante all'interno dell'area intralciano le creature. L'area conta come terreno difficile. Ad ogni round in cui una creatura inizia il proprio turno nell'area, quella creatura deve effettuare un tiro salvezza su Riflessi. Con un fallimento, essa subisce penalità di circostanza -3 metri alle sue Velocità finché non esce dall'area, e con un fallimento critico è anche @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilizzato} per 1 round. Le creature possono tentare di Sfuggire con la stessa CD di intralciare per rimuovere questi effetti.</p>",
+            "spellArea": "tutti i quadretti in un'esplosione di 6 metri che contengono piante"
         },
         "Ray of Enfeeblement": {
             "name": "Raggio di Indebolimento",
@@ -1145,7 +1208,8 @@
         },
         "Dread Aura": {
             "name": "Aura di Terrore",
-            "description": "<p>Emetti un'aura di terrore. I nemici all'interno dell'area sono @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Spaventati} 1 e non sono in grado di ridurre la condizione.</p>"
+            "description": "<p>Emetti un'aura di terrore. I nemici all'interno dell'area sono @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Spaventati} 1 e non sono in grado di ridurre la condizione.</p>",
+            "spellArea": "aura di 9 metri centrata su te stesso"
         },
         "Outcast's Curse": {
             "name": "Maledizione del Reietto",
@@ -1187,7 +1251,12 @@
         "Locate": {
             "name": "Localizzare",
             "description": "<p>Apprendi la direzione verso il bersaglio (se hai scelto un oggetto specifico come \"la spada di mia madre\") o verso il bersaglio più vicino (se hai scelto un tipo di oggetto, come \"spade\"). Se il bersaglio è un oggetto specifico, devi averlo osservato direttamente con i tuoi sensi. Se è un tipo di oggetto, devi comunque avere un'immagine mentale accurata del tipo di oggetto. Se tra te e il bersaglio c'è piombo o acqua corrente, non puoi localizzare l'oggetto. Ciò significa che potresti scoprire un tipo di oggetto più lontano se quello più vicino è dietro a piombo o acqua corrente.</p>\n<hr />\n<p><strong>Intensificato (5°)</strong> Puoi prendere come bersaglio una creatura o una stirpe specifica invece di un oggetto, ma devi aver incontrato da vicino la creatura o una creatura di quella stirpe che vuoi prendere come bersaglio.</p>",
-            "spellTarget": "1 oggetto o tipo di oggetto specifico"
+            "spellTarget": "1 oggetto o tipo di oggetto specifico",
+            "spellHeightening": {
+                "5": {
+                    "spellTarget": "1 oggetto o tipo di oggetto specifico o una creatura o una stirpe specifica"
+                }
+            }
         },
         "Aromatic Lure": {
             "spellTarget": "1 creatura"
@@ -1195,7 +1264,12 @@
         "Confusion": {
             "name": "Confusione",
             "description": "<p>Disorienti il bersaglio con strani impulsi, facendolo agire a caso. Gli effetti si basano sul tiro salvezza su Volontà del bersaglio. Puoi Interrompere l'incantesimo.</p>\n<hr />\n<p><strong>Successo Critico </strong>Il bersaglio non è influenzato.</p>\n<p><strong>Successo</strong> Il bersaglio balbetta in modo incoerente ed è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stordito} 1.</p>\n<p><strong>Fallimento </strong>Il bersaglio è @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confuso} per 1 minuto. Può effettuare un nuovo tiro salvezza alla fine di ogni suo turno per porre fine all'effetto.</p>\n<p><strong>Fallimento Critico </strong>Il bersaglio è @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confuso} per 1 minuto, senza nessun tiro salvezza per porre fine all'effetto anticipatamente.</p>\n<hr />\n<p><strong>Intensificato (8°) </strong>Puoi prendere come bersaglio fino a 8 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "8": {
+                    "spellTarget": "10 creature"
+                }
+            }
         },
         "Energy Absorption": {
             "name": "Assorbimento di Energia",
@@ -1255,7 +1329,12 @@
         "Paranoia": {
             "name": "Paranoia",
             "description": "<p>Induci il bersaglio a vedere tutte le creature come una preoccupante minaccia. Il bersaglio è in preda ad un'intensa paranoia nei confronti di tutte le creature che lo circondano e deve effettuare un Tiro Salvezza su Volontà.</p>\n<hr /><strong>Successo Critico</strong> Il bersaglio non è influenzato.\n<p><strong>Successo</strong> Il bersaglio è convinto che chiunque veda costituisca una minaccia. Diventa @UUID[Compendium.pf2e.conditionitems.I1ffBVISxLr2gC4u]{Maldisposto} nei confronti di tutte quelle creature verso le quali non era ancora ostile, anche quelle che prima erano alleati. Non tratta nessuno come alleato. L'incantesimo termina dopo 1 round.</p>\n<p><strong>Fallimento</strong> Come per successo, ma l'effetto dura 1 minuto.</p>\n<p><strong>Fallimento Critico</strong> Come per fallimento, ma il bersaglio è convinto che chiunque veda sia un nemico mortale. Usa le sue reazioni e azioni gratuite contro questi nemici anche se prima erano suoi alleati, come determinato dal GM. Altrimenti agisce razionalmente come di norma e preferirà attaccare le creature che lo stanno attaccando od ostacolando attivamente piuttosto che quelle che lo lasciano in pace.</p>\n<hr /><strong>Intensificato (6°)</strong> Puoi prendere come bersaglio fino a 5 creature.",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "6": {
+                    "spellTarget": "5 creature"
+                }
+            }
         },
         "Cloudkill": {
             "name": "Nube Mortale",
@@ -1279,7 +1358,8 @@
         },
         "Antimagic Field": {
             "name": "Campo AntiMagia",
-            "description": "<p><span id=\"ctl00_MainContent_DetailedOutput\">Respingi tutti i tipi di magia dall'area bersaglio, impedendo agli incantesimi e ad altri tipi di magia di funzionare. Gli incantesimi non possono penetrare nell'area, gli oggetti magici cessano di funzionare e nessuno all'interno dell'area pu&ograve; lanciare incantesimi o usare capacit&agrave; magiche. Allo stesso modo, incantesimi come <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dissolvi Magie}</em> non possono avere effetto nel campo stesso a meno che non siano di livello superiore. Gli effetti magici riprendono nel momento in cui escono dal campo. Per esempio, un raggio emanato da un lato del campo pu&ograve; prendere a bersaglio una creatura sull'altro lato (a patto che chi lo lancia e il bersaglio siano entrambi fuori dal campo). Una creatura evocata svanisce, ma riappare se il campo si muove o se l'incantesimo termina. Gli oggetti magici investiti cessano di funzionare, ma restano investiti e ricominciano a funzionare quando escono dal campo; l'aumento di caratteristica di un oggetto apex non è soppresso all'interno del campo. Gli incantesimi di livello superiore al <em>campo antimagia</em> superano i suoi effetti, e possono anche essere lanciati da una creatura all'interno del campo. </p>\n<p>Il campo cancella soltanto la magia, perciò una <em>spada d'arme +3</em> funziona sempre come una spada d'arme. Le creature create magicamente (come i golem) funzionano normalmente all'interno di un <em>campo antimagia</em>.</p>"
+            "description": "<p><span id=\"ctl00_MainContent_DetailedOutput\">Respingi tutti i tipi di magia dall'area bersaglio, impedendo agli incantesimi e ad altri tipi di magia di funzionare. Gli incantesimi non possono penetrare nell'area, gli oggetti magici cessano di funzionare e nessuno all'interno dell'area pu&ograve; lanciare incantesimi o usare capacit&agrave; magiche. Allo stesso modo, incantesimi come <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dissolvi Magie}</em> non possono avere effetto nel campo stesso a meno che non siano di livello superiore. Gli effetti magici riprendono nel momento in cui escono dal campo. Per esempio, un raggio emanato da un lato del campo pu&ograve; prendere a bersaglio una creatura sull'altro lato (a patto che chi lo lancia e il bersaglio siano entrambi fuori dal campo). Una creatura evocata svanisce, ma riappare se il campo si muove o se l'incantesimo termina. Gli oggetti magici investiti cessano di funzionare, ma restano investiti e ricominciano a funzionare quando escono dal campo; l'aumento di caratteristica di un oggetto apex non è soppresso all'interno del campo. Gli incantesimi di livello superiore al <em>campo antimagia</em> superano i suoi effetti, e possono anche essere lanciati da una creatura all'interno del campo. </p>\n<p>Il campo cancella soltanto la magia, perciò una <em>spada d'arme +3</em> funziona sempre come una spada d'arme. Le creature create magicamente (come i golem) funzionano normalmente all'interno di un <em>campo antimagia</em>.</p>",
+            "spellArea": "emanazione di 3 metri, che coinvolge anche te."
         },
         "Dragon Breath (Brass)": {
             "name": "Soffio del Drago (Ottone)",
@@ -1335,7 +1415,12 @@
         "Synesthesia": {
             "name": "Sinestesia",
             "description": "<p>I sensi del bersaglio vengono drasticamente riprogrammati in modi inaspettati, cosicché percepirà i rumori come esplosioni di colori, odori come suoni e così via. Questo incantesimo produce tre effetti e il bersaglio deve effettuare un Tiro Salvezza su Volontà. A causa della distrazione, il bersaglio deve superare una prova semplice con CD 5 ogni volta che usa un'azione di concentrazione, o quell'azione fallisce ed è sprecata. La difficoltà del bersaglio a processare gli impulsi visivi rende tutte le creature e gli oggetti @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Occultati} a quel bersaglio. La creatura ha problemi a muoversi in modo efficace, rendendola @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Maldestra 3} e fornendo penalità di status -3 metri alle sue Velocità.</p>\n<hr /><strong>Successo Critico</strong> Il bersaglio non è influenzato.\n<p><strong>Successo</strong> Il bersaglio subisce gli effetti per 1 round.</p>\n<p><strong>Fallimento</strong> Il bersaglio subisce gli effetti per 1 minuto.</p>\n<p><strong>Fallimento Critico</strong> Come per fallimento, e il bersaglio è  @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stordito 2} quando cerca di gestire i sensi.</p>\n<hr />\n<p><strong>Intensificato (9°)</strong> Puoi prendere come bersaglio fino a 5 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "9": {
+                    "spellTarget": "5 creature"
+                }
+            }
         },
         "Spell Turning": {
             "name": "Riflettere Incantesimo",
@@ -1347,7 +1432,15 @@
         "Read Aura": {
             "name": "Leggere Aura",
             "description": "<p>Ti focalizzi sull'oggetto bersaglio, aprendo la tua mente per percepire aure magiche. Quando il lancio è completato, vieni a sapere se quell'oggetto è magico o no e, se lo è, apprendi la scuola di magia (vedi pagg. 297-298).</p>\n<p>Se l'oggetto è illusorio, ne vieni a conoscenza soltanto se l'effetto ha un livello inferiore al livello del tuo incantesimo leggere aura.</p>\n<hr />\n<p><strong>Intensificato (3°) </strong>Puoi prendere come bersaglio fino a 10 oggetti.</p>\n<p><strong>Intensificato (6°)</strong> Puoi prendere come bersaglio un numero qualsiasi di oggetti.</p>",
-            "spellTarget": "1 oggetto"
+            "spellTarget": "1 oggetto",
+            "spellHeightening": {
+                "3": {
+                    "spellTarget": "10 oggetti"
+                },
+                "6": {
+                    "spellTarget": "un qualsiasi numero di oggetti"
+                }
+            }
         },
         "Maze": {
             "name": "Labirinto",
@@ -1392,7 +1485,12 @@
         "Magic Aura": {
             "name": "Aura Magica",
             "description": "<p>Alteri l'aspetto dell'aura magica di un oggetto. Puoi scegliere di far apparire l'aura bersaglio come quella di un oggetto magico comune del doppio del livello di aura magica o inferiore, oppure di catalogarlo come fosse sotto gli effetti di un incantesimo a tua scelta del doppio del livello di aura magica o inferiore. Se il bersaglio è magico, puoi decidere invece di farlo apparire come non assolutamente magico. Un incantatore che usa <em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{individuazione del magico}</em> o <em>@UUID[Compendium.pf2e.spells-srd.OhD2Z6rIGGD5ocZA]{leggere aura}</em> a un livello dell'incantesimo pari o superiore può tentare di dubitare dell'illusione di un'aura magica. Aura magica non maschera aure di incantesimi di 9° livello o superiori o di oggetti di 19° livello o superiori.</p>\n<hr />\n<p><strong>Intensificato (3°) </strong>Puoi prendere come bersaglio una creatura invece di un oggetto. Quando lo fai, puoi occultare le aure di tutti gli oggetti magici che possiede oppure puoi far apparire quella creatura come fosse sotto l'effetto di un incantesimo che conosci.</p>",
-            "spellTarget": "1 oggetto di 3 Volumi o inferiore"
+            "spellTarget": "1 oggetto di 3 Volumi o inferiore",
+            "spellHeightening": {
+                "3": {
+                    "spellTarget": "1 oggetto di 3 Volumi o inferiore o una creatura"
+                }
+            }
         },
         "Heart's Desire": {
             "spellTarget": "1 creatura"
@@ -1410,7 +1508,12 @@
         "Shrink": {
             "name": "Restringere",
             "description": "<p>Distorci lo spazio per rendere una creatura più piccola. Il bersaglio si restringe fino alla taglia Minuscola. Il suo equipaggiamento si restringe con esso, ma ritorna alla sua taglia originaria se viene rimosso. La portata della creatura cambia a 0 metri. L'incantesimo non ha effetto su una creatura di taglia Minuscola.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.LXf1Cqi1zyo4DaLv]{Effetto Incantesimo: Restringere}</p>\n<hr />\n<p><strong>Intensificato (6°)</strong> L'incantesimo può prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura consenziente"
+            "spellTarget": "1 creatura consenziente",
+            "spellHeightening": {
+                "6": {
+                    "spellTarget": "10 creature consenzienti"
+                }
+            }
         },
         "Prismatic Sphere": {
             "name": "Sfera Prismatica",
@@ -1440,7 +1543,12 @@
         },
         "Jump": {
             "name": "Saltare",
-            "description": "<p>Le tue gambe acquistano forza, pronte per saltare in alto e lontano. Salti 9 metri in qualsiasi direzione senza toccare il terreno. Devi atterrare su uno spazio di terreno solido entro 9 metri da te, o altrimenti cadi dopo aver effettuato la tua azione successiva.</p>\n<hr />\n<p><strong>Intensificato (3°)</strong> Il raggio d'azione diventa contatto, il bersaglio cambia in una creatura toccata e la durata diventa 1 minuto, permettendo al bersaglio di saltare come descritto quando compie l'azione Saltare.</p>"
+            "description": "<p>Le tue gambe acquistano forza, pronte per saltare in alto e lontano. Salti 9 metri in qualsiasi direzione senza toccare il terreno. Devi atterrare su uno spazio di terreno solido entro 9 metri da te, o altrimenti cadi dopo aver effettuato la tua azione successiva.</p>\n<hr />\n<p><strong>Intensificato (3°)</strong> Il raggio d'azione diventa contatto, il bersaglio cambia in una creatura toccata e la durata diventa 1 minuto, permettendo al bersaglio di saltare come descritto quando compie l'azione Saltare.</p>",
+            "spellHeightening": {
+                "3": {
+                    "spellTarget": "1 creatura"
+                }
+            }
         },
         "Ectoplasmic Interstice": {
             "name": "Ectoplasmic Interstice",
@@ -1557,7 +1665,12 @@
         "Water Walk": {
             "name": "Camminare sull'Acqua",
             "description": "<p>Il bersaglio può camminare sulla superficie dell'acqua e di altri liquidi senza cadervi dentro. Può andare sott'acqua se lo desidera, ma in questo caso deve Nuotare normalmente. Questo incantesimo non fornisce la capacità di respirare sott'acqua.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> Il raggio d'azione dell'incantesimo aumenta fino a 9 metri, la durata aumenta fino a 1 ora e puoi prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "4": {
+                    "spellTarget": "10 creature"
+                }
+            }
         },
         "Moonburst": {
             "description": "<p>Un potente globo di luce lunare gelata esplode nell'area, infliggendo 8d10 danni da freddo a creature e oggetti all'interno dell'area, più [[/r {8d10}[positive]]]{8d10 danni di tipo positivo aggiuntivi} alle creature non morte.</p>\n<p>il danno freddo dell'Esplosione Lunare è danno d'argento ai fini di debolezze, resistenze e simili. Tutte le creature e gli oggetti all'interno dell'area devono effettuare un tiro salvezza su Riflessi.</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura od oggetto non è influenzata.</p>\n<p><strong>Successo</strong> La creatura od oggetto subisce metà dei danni.</p>\n<p><strong>Fallimento</strong> La creatura od oggetto subisce danni per intero.</p>\n<p><strong>Fallimento Critico</strong> La creatura od oggetto subisce danni per intero. Se è una creatura, diventa @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{accecata} fpermanentemente. Se il globo si sovrappone a un'area di oscurità magica, esplosione lunare tenta di contrastare l'effetto di oscurità.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> Il danno da freddo aumenta di 1d10 e il danno di tipo positivo contro i non morti aumenta di [[/r 1d10[positive]]]{1d10 danno positivo}.</p>"
@@ -1652,7 +1765,15 @@
         "Hallucination": {
             "name": "Allucinazione",
             "description": "<p>Il bersaglio vede costantemente una cosa per un'altra, non può individuare qualcosa che si trova in quel posto, oppure vede qualcosa che in realtà non c'è, anche se ciò non altera le sue convinzioni. Scegli quale di questi effetti applicare e determina le caratteristiche dell'allucinazione. Per esempio, puoi far credere al bersaglio che tutti gli elfi sono umani, puoi renderlo incapace di individuare la presenza di suo fratello, fargli pensare che ha sempre indosso il suo amato orologio da taschino anche quando non ce l'ha, o fargli credere che ci sia una torre nel centro della città. Il bersaglio può effettuare un tiro salvezza iniziale su Volontà, con effetti riportati di seguito. Riceve anche un tiro salvezza su Volontà per dubitare dell'allucinazione ogni volta che Individua o interagisce direttamente con l'allucinazione. Per esempio, il bersaglio può tentare di dubitare dell'allucinazione ogni volta che ha interagito con un elfo, si è imbattuto accidentalmente in suo fratello, ha provato a controllare il suo orologio da taschino o ha studiato la torre per individuarne le vulnerabilità. Il bersaglio può tentare di dubitare con bonus di circostanza alto in circostanze determinate dal GM, ad esempio se il bersaglio ha provato a scalare la torre inesistente.</p>\n<hr /><strong>Successo Critico</strong> La creatura non è influenzata\n<p><strong>Successo </strong>La creatura percepisce ciò che hai scelto fino al momento in cui ne dubita, ma sa che cosa è l'allucinazione.</p>\n<p><strong>Fallimento </strong>La creatura percepisce ciò che hai scelto fino al momento in cui ne dubita.</p>\n<p><strong>Fallimento Critico</strong> La creatura percepisce ciò che hai scelto fino al momento in cui ne dubita e crede nei suoi sensi falsati, subendo penalità di circostanza -4 ai tiri salvezza per dubitare.</p>\n<hr /><strong>Intensificato (6°)</strong> Scegli di prendere come bersaglio fino a 10 creature oppure di cambiare la durata dell'incantesimo in fino ai tuoi prossimi preparativi giornalieri.\n<p><strong>Intensificato (8°)</strong> Scegli di prendere come bersaglio un numero qualsiasi di creature oppure di cambiare la durata dell'incantesimo in illimitata.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "6": {
+                    "spellTarget": "1 o 10 creature"
+                },
+                "7": {
+                    "spellTarget": "1 o un numero qualsiasi di creature"
+                }
+            }
         },
         "Indestructibility": {
             "name": "Indestructibility",
@@ -1781,7 +1902,12 @@
         "Slow": {
             "name": "Lentezza",
             "description": "<p>Dilati lo scorrere del tempo attorno al bersaglio, rendendo le sue azioni più lente.</p>\n<hr />\n<p><strong>Successo Critico</strong> II bersaglio non è influenzato.</p>\n<p><strong>Successo</strong> II bersaglio è @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Rallentato 1} per 1 round.</p>\n<p><strong>Fallimento</strong> II bersaglio è @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Rallentato 1} per 1 minuto.</p>\n<p><strong>Critical Failure</strong> II bersaglio è @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Rallentato 2} per 1 minuto.</p>\n<hr />\n<p><strong>Intensificato (6°)</strong> Puoi prendere come bersaglio fino a 10 creature.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "6": {
+                    "spellTarget": "10 creature"
+                }
+            }
         },
         "Grease": {
             "name": "Unto",
