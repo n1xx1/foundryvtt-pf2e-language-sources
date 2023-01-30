@@ -629,6 +629,26 @@
                     "criticalSuccess": "<strong>Critical Success</strong> Your tampering is incredibly effective. If you tampered with a weapon, the enemy takes a -2 circumstance penalty to attack rolls and damage rolls with that weapon. If you tampered with armor, the armor hampers the enemy's movement, making the enemy flat-footed and inflicting a -10-foot penalty to its Speeds. The effect lasts until the enemy Interacts to remove it, regardless of which one you used. @UUID[Compendium.pf2e.feat-effects.rzcpTJU9MvW1x1gz]{Effect: Armor Tampered With (Critical Success)} @UUID[Compendium.pf2e.feat-effects.o7qm13OmaYOMwgib]{Effect: Weapon Tampered With (Critical Success)}",
                     "success": "<strong>Success</strong> Your tampering is temporarily effective. As critical success, but the effect ends at the start of your next turn, even if the enemy doesn't Interact to end it. @UUID[Compendium.pf2e.feat-effects.IfRkgjyh0JzGalIy]{Effect: Armor Tampered With (Success)} @UUID[Compendium.pf2e.feat-effects.4QWayYR3JSL9bk2T]{Effect: Weapon Tampered With (Success)}"
                 }
+            },
+            "DisableDevice": {
+                "Notes": {
+                    "criticalSuccess": "<strong>Successo Critico</strong> Disattivi il congegno, oppure totalizzi due successi ai fini di disattivare un congegno complesso. Non lasci tracce dei tuoi armeggiamenti, e in seguito puoi riattivare il congegno (se si tratta di un tipo di congegno che può essere riattivato).",
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Attivi il congegno.",
+                    "success": "<strong>Successo</strong> Disattivi il congegno, oppure totalizzi un successo ai fini di disattivare un congegno complesso."
+                },
+                "Title": "Disattivare un Congegno"
+            },
+            "DecipherWriting": {
+                "Warning": {
+                    "NoSkill": "L'azione Decifrare Scritti può essere usata con diverse abilità ma non è stata specificata alcuna abilità. Solitamente si usa Arcano per testi che riguardano scienza o magia, Occultismo per testi esoterici riguardanti misteri e filosofia, Religione per i testi sacri e Società per messaggi in codice o documenti arcaici."
+                },
+                "Title": "Decifrare Scritti",
+                "Notes": {
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Pensi di aver compreso il testo sulla pagina, ma in realtà lo hai frainteso.",
+                    "failure": "<strong>Fallimento</strong> Non comprendi il testo e subisci penalità di circostanza -2 a ulteriori prove per decifrarlo.",
+                    "success": "<strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice ne comprendi il significato generale, ma non puoi fornirne una traduzione parola per parola.",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Comprendi il vero significato del testo."
+                }
             }
         },
         "SETTINGS": {
@@ -2406,7 +2426,8 @@
                     "Chat": {
                         "Recover": "Tira Prova per il Recupero",
                         "RecoverLabel": "Recupero: {name}"
-                    }
+                    },
+                    "RollDamage": "Tira Danno"
                 }
             },
             "Effect": {
@@ -2418,7 +2439,17 @@
                 },
                 "ShowTokenIcon": "Mostra l'icona del token?",
                 "AddBadge": "Aggiungi Contatore",
-                "Unidentified": "Non Identificato?"
+                "Unidentified": "Non Identificato?",
+                "ExtraSelections": {
+                    "Labels": "Contatore (Con Etichetta)"
+                },
+                "BadgeType": {
+                    "value": "Valore Fisso",
+                    "formula": "Formula",
+                    "counter": "Contatore"
+                },
+                "LabelPlaceholder": "Etichetta Fase",
+                "AddLabel": "Aggiungi Etichetta"
             },
             "Feat": {
                 "OnlyLevel1": "Deve essere selezionato al 1° livello",
@@ -3012,7 +3043,6 @@
                 "Fetch": "Asservimento - Riportare",
                 "Kill": "Asservimento - Uccidere"
             },
-            "MarilithFocusedAssault": "Quante spade d'arme impugna il Marilith?",
             "MinotaurHuntedFear": {
                 "Demoralize": "Il bersaglio si trova in un labirinto o in una struttura analoga dove è difficile orientarsi",
                 "Survival": "Per Evitare di Smarrirsi"
@@ -3088,6 +3118,15 @@
             },
             "KallasDevil": {
                 "DisguisedAsChild": "Disguised as a Child"
+            },
+            "MarilithFocusedAssault": {
+                "One": "1 Spada d'Arme",
+                "Two": "2 Spade d'Arme",
+                "Three": "3 Spade d'Arme",
+                "Four": "4 Spade d'Arme",
+                "Five": "5 Spade d'Arme",
+                "Six": "6 Spade d'Arme",
+                "Prompt": "Quante spade d'arme sta impugnando il Marilith?"
             }
         },
         "Encounter": {
@@ -3859,7 +3898,8 @@
                     "fatigued": "affaticato",
                     "salt": "sale",
                     "silver": "argento",
-                    "water": "acqua"
+                    "water": "acqua",
+                    "damage-from-spells": "danni da incantesimi"
                 },
                 "ActorIsImmune": "{actor} è immune a {effect}.",
                 "ActorIsUnaffected": "{actor} non è influenzato da {effect}."
@@ -7355,7 +7395,8 @@
             "DivineAlly": {
                 "AllowedDrops": "privilegio di classe del campione",
                 "Prompt": "Seleziona un alleato divino."
-            }
+            },
+            "LitCandle": "La candela è accesa"
         },
         "AreaTypeCube": "Cubo",
         "AreaTypeSquare": "Quadretto",
