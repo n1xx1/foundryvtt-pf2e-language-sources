@@ -757,7 +757,9 @@
         "Anticipate Ambush": {
             "featPrerequisites": {
                 "0": "esperto in Furtività"
-            }
+            },
+            "name": "Prevedere Imboscata",
+            "description": "<p>Usando la tua vasta conoscenza delle tattiche di imboscata, tieni d'occhio qualsiasi creatura nascosta o luogo pericoloso, muovendoti a metà della tua velocità di viaggio.</p>\n<p>Se stai Prevedendo un'Imboscata all'inizio di un incontro, tiri una prova di Percezione per l'iniziativa e tutti i nemici che tirano Furtività per l'iniziativa subiscono penalità di circostanza -2 alle loro prove di Furtività.</p>"
         },
         "Master Cathartic Spellcasting": {
             "description": "<p>Ottieni i benefici del talento da incantatore maestro.</p>"
@@ -830,7 +832,9 @@
             "featPrerequisites": {
                 "1": "Richiamo del Compagno",
                 "0": "Dedizione del Signore delle Bestie"
-            }
+            },
+            "name": "Richiamo del Signore delle Bestie",
+            "description": "<p><strong>Frequenza</strong> una volta per turno</p>\n<hr />\n<p>Richiami rapidamente una proiezione primeva di un compagno non attivo che fornisca il beneficio del supportare del compagno. La proiezione arriva in un quadretto non occupato a tua scelta entro 9 metri da te, ti conferisce il suo beneficio del supportare e poi scompare al tuo turno successivo. La proiezione ha gli stessi modificatori di CA e tiri salvezza del compagno reale, e se subisce danni prima del tuo turno successivo scompare e il beneficio del supportare termina immediatamente.</p>"
         },
         "Bargain Hunter": {
             "name": "Cacciatore di Affari",
@@ -865,8 +869,11 @@
         },
         "Triangle Shot": {
             "featPrerequisites": {
-                "1": "Colpo Stordente"
-            }
+                "1": "Colpo Stordente",
+                "0": "Posizione dell'Arciere Monastico"
+            },
+            "name": "Tiro Triangolare",
+            "description": "<p><strong>Requisiti</strong> Sei in @UUID[Compendium.pf2e.feats-srd.YG2RxXE9SMfwo6wP]{Posizione dell'Arciere Monastico} e impugni un arco utilizzabile con quella posizione.</p>\n<hr />\n<p>Incocchi tre frecce nel tuo arco e le scocchi tutte in una volta. Effettua tre Colpi a distanza contro un singolo bersaglio con l'arma richiesta; ognuno di essi utilizza la tua attuale penalità da attacchi multipli e subisci un'ulteriore penalità di -2. Questo conta come due attacchi nel calcolo della tua penalità da attacchi multipli; combini i danni degli attacchi al fine di calcolare le resistenze e le debolezze.</p>\n<p>Applichi il tuo beneficio di @UUID[Compendium.pf2e.feats-srd.8bMmGBO6gsMfWZk3]{Colpo Stordente} a Tiro Triangolare, anche se non si tratta di una @UUID[Compendium.pf2e.actionspf2e.nbfNETdpee8CVM17]{Raffica di Colpi}. Se tutti e tre i colpi vanno a segno, il bersaglio subisce @Localize[PF2E.PersistentDamage.Bleed3d6.success].</p>"
         },
         "Hellknight Signifer Dedication": {
             "featPrerequisites": {
@@ -881,7 +888,9 @@
         "Elucidating Mercy": {
             "featPrerequisites": {
                 "0": "Indulgenza"
-            }
+            },
+            "name": "Indulgenza Delucidante",
+            "description": "<p>La tua indulgenza conferisce chiarezza a chi ti circonda, proprio quando ne ha più bisogno.</p>\n<p>Quando usi @UUID[Compendium.pf2e.feats-srd.zilwynzk8lIujgZo]{Indulgenza}, in alternativa puoi tentare una prova di contrasto per rimuovere la condizione @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{confuso} o @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottito}, usando la fonte di tale condizione per determinare il livello e la CD di contrasto.</p>\n<p>Se la condizione è stata causata da un effetto in corso e non rimuovi tale effetto, alla fine del tuo turno successivo la condizione ritorna.</p>"
         },
         "Abundant Step": {
             "name": "Movimento Veloce",
@@ -937,7 +946,8 @@
         "No Cause For Alarm": {
             "featPrerequisites": {
                 "0": "addestrato in Diplomazia"
-            }
+            },
+            "name": "Non C'è Motivo di Allarmarsi"
         },
         "Sniping Duo Dedication": {
             "featPrerequisites": {
@@ -969,7 +979,9 @@
         "Shooting Stars Stance": {
             "featPrerequisites": {
                 "0": "Armi Monastiche"
-            }
+            },
+            "name": "Posizione delle Stelle Cadenti",
+            "description": "<p>Entri in una posizione che ti permette di lanciare shuriken con velocità fulminea.</p>\n<p>Mentre sei in questa posizione, puoi usare con gli shuriken i tuoi talenti o le capacità da monaco che normalmente richiedono attacchi senz'armi.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.RXbfq6oqzVnW6xOV]{Posizione: Posizione delle Stelle Cadenti}</p>"
         },
         "Necrotic Infusion": {
             "name": "Infusione Necrotica",
@@ -997,10 +1009,16 @@
         "Align Ki": {
             "featPrerequisites": {
                 "0": "incantesimi ki"
-            }
+            },
+            "name": "Allineare il Ki",
+            "description": "<p><strong>Frequenza</strong> una volta all'ora</p>\n<p><strong>Innesco</strong> @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanci un Incantesimo} che ha il tratto monaco.</p>\n<hr />\n<p>Il potere del ki lenisce le tue ferite e ti dà energia per la battaglia. Recuperi Punti Ferita pari al tuo livello più il tuo modificatore di Saggezza.</p>"
         },
         "Master Eldritch Archer Spellcasting": {
-            "description": "<p>Ottieni i benefici del talento da incantatore maestro.</p>"
+            "description": "<p>Ottieni i benefici del talento da incantatore maestro.</p>",
+            "name": "Maestro di Incantesimi da Arciere Mistico",
+            "featPrerequisites": {
+                "0": "Esperto di Incantesimi da Arciere Mistico"
+            }
         },
         "Lasting Coercion": {
             "name": "Coercizione Durevole",
@@ -3134,7 +3152,8 @@
         },
         "Return Fire": {
             "featPrerequisites": {
-                "0": "Deviare Frecce"
+                "0": "Deviare Frecce",
+                "1": "Posizione dell'Arciere Monastico"
             }
         },
         "Heal Animal": {
@@ -6104,7 +6123,10 @@
             }
         },
         "Lucky Break": {
-            "name": "Colpo Di Fortuna"
+            "name": "Colpo Di Fortuna",
+            "featPrerequisites": {
+                "0": "Fortuna Felina"
+            }
         },
         "Virtuosic Performer": {
             "name": "Intrattenitore Virtuoso",
@@ -7418,7 +7440,8 @@
         },
         "Steel Skin": {
             "featPrerequisites": {
-                "0": "addestrato in Sopravvivenza"
+                "0": "addestrato in Sopravvivenza",
+                "1": "Dedizione della Sentinella"
             }
         },
         "Quick Change": {
@@ -8129,7 +8152,8 @@
         },
         "Selfless Parry": {
             "featPrerequisites": {
-                "0": "Parata del Duellante"
+                "0": "Parata del Duellante",
+                "1": "Dedizione del Duellante"
             }
         },
         "Thoughtsense": {
@@ -8284,8 +8308,11 @@
         },
         "Graceful Leaper": {
             "featPrerequisites": {
-                "0": "Dedizione dell'Acrobata"
-            }
+                "0": "Dedizione dell'Acrobata",
+                "1": "maestro in Acrobazia"
+            },
+            "name": "Salto Aggraziato",
+            "description": "<p>La massa e i muscoli non hanno significato quando si salta: contano solo la grazia e l'equilibrio.</p>\n<p>Puoi effettuare una prova di Acrobazia al posto di una di Atletica quando effettui un @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{Salto in Alto} o un @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Salto in Lungo}.</p>"
         },
         "Tiller's Aid": {
             "featPrerequisites": {
@@ -9040,7 +9067,9 @@
         "Arrow of Death": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Arciere Mistico"
-            }
+            },
+            "name": "Freccia di Morte",
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p>Modifichi una freccia o un dardo per uccidere il tuo bersaglio con un unico colpo potente. Esegui un Colpo con l'arco. Se vai a segno, infliggi altri [[/r 10d10]] danni di precisione. Con un colpo critico, il bersaglio deve anche superare un tiro salvezza su Tempra contro la tua CD di classe o CD di incantesimo, a seconda di quale sia la più alta, o essere immediatamente ucciso, questo tiro salvezza ha tratti incapacitazione e morte.</p>"
         },
         "Advanced Bow Training": {
             "featPrerequisites": {
@@ -9065,7 +9094,9 @@
         "Expert Eldritch Archer Spellcasting": {
             "featPrerequisites": {
                 "0": "Novizio di Incantesimi da Arciere Mistico"
-            }
+            },
+            "name": "Esperto di Incantesimi da Arciere Mistico",
+            "description": "<p>Impari magia dell'arciere mistico aggiuntiva. Ottieni benefico del talento da incantatore esperto.</p>"
         },
         "Staggering Fire": {
             "featPrerequisites": {
@@ -9154,7 +9185,8 @@
             "description": "<p>Esegui un attacco prevedibile per conoscere meglio il tuo avversario.</p>\n<p>Effettua un Colpo in mischia. Se vai a segno, puoi immediatamente tentare una prova di @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Ricordare Conoscenze} sul bersaglio. In caso di colpo critico, ottieni bonus di circostanza +2 alla prova per Ricordare Conoscenze.</p>\n<p>Il bersaglio è temporaneamente immune alla Valutazione di Battaglia per 1 giorno.</p>"
         },
         "Fiendish Lore": {
-            "description": "<p>Sei stato cresciuto da un tiefling o da un genitore nefando, oppure hai dedicato la tua vita a esplorare i misteri dei regni nefandi.</p>\n<p>Ottieni il grado di competenza addestrato in Intimidazione e Religione. Se diventi automaticamente addestrato in una di quelle abilità (per esempio grazie al tuo background o alla tua classe), diventi invece addestrato in un'abilità a tua scelta.</p>\n<p>Diventi anche addestrato in un'abilità di Sapienza relativa al piano nefando da cui erediti il tuo retaggio (di solito Sapienza su Abaddon, Sapienza sull'Abisso o Sapienza sull'Inferno).</p>\n<hr />\n<p><em>Nota: Se sei già addestrato nella abilità fornita da questo talento, devi selezionare l'abilità alternativa manulamente. Devi anche inserire manualmente l'abilità di Sapienza concessa.</em></p>"
+            "description": "<p>Sei stato cresciuto da un tiefling o da un genitore nefando, oppure hai dedicato la tua vita a esplorare i misteri dei regni nefandi.</p>\n<p>Ottieni il grado di competenza addestrato in Intimidazione e Religione. Se diventi automaticamente addestrato in una di quelle abilità (per esempio grazie al tuo background o alla tua classe), diventi invece addestrato in un'abilità a tua scelta.</p>\n<p>Diventi anche addestrato in un'abilità di Sapienza relativa al piano nefando da cui erediti il tuo retaggio (di solito Sapienza su Abaddon, Sapienza sull'Abisso o Sapienza sull'Inferno).</p>\n<hr />\n<p><em>Nota: Se sei già addestrato nella abilità fornita da questo talento, devi selezionare l'abilità alternativa manulamente. Devi anche inserire manualmente l'abilità di Sapienza concessa.</em></p>",
+            "name": "Sapienza Nefanda"
         },
         "Well-Met Traveler": {
             "description": "<p>Hai visto persone di così tanti ceti sociali nei tuoi viaggi che adotti naturalmente un comportamento piacevole e affabile quando incontri gli altri. Sei addestrato in Diplomazia. Se diventi automaticamente addestrato in Diplomazia (per esempio grazie al tuo background o alla tua classe), diventi invece addestrato in un'abilità a tua scelta.</p>\n<p>Inoltre, ottieni il talento di abilità @UUID[Compendium.pf2e.feats-srd.4RjDxgvNXNl5GG9d]{Socievole}.</p>\n<hr />\n<p><em>Nota: Se sei già addestrato nella abilità fornita da questo talento, devi selezionare l'abilità alternativa manulamente.</em></p>"
@@ -9315,6 +9347,180 @@
         "Cavalier's Charge": {
             "featPrerequisites": {
                 "0": "Dedizione del Cavaliere"
+            }
+        },
+        "Mighty Bulwark": {
+            "name": "Baluardo Possente",
+            "featPrerequisites": {
+                "0": "Dedizione della Sentinella"
+            },
+            "description": "<p>Grazie al tuo incredibile legame con l'armatura, puoi usarla per scrollarti di dosso una serie incredibile di pericoli. II tuo bonus dovuto al tratto dell'armatura baluardo aumenta da +3 a +4 e si applica a tutti i tiri salvezza su Riflessi, non solo a quell' dannosi.</p>"
+        },
+        "Caravan Leader": {
+            "description": "<p>Sai come ottenere il massimo sforzo dai tuoi alleati sulla strada.</p>\n<p>Quando ti @UUID[Compendium.pf2e.actionspf2e.JuqmIAnkL9hVGai8]{Affretti} in un gruppo durante la modalità esplorazione, il tuo gruppo può Affrettarsi per un tempo pari a quello del membro che potrebbe Affrettarsi più a lungo da solo, più altri 20 minuti aggiuntivi.</p>",
+            "name": "Capo Carovana",
+            "featPrerequisites": {
+                "1": "Dettare il Passo",
+                "0": "Costituzione 18"
+            }
+        },
+        "Orthographic Mastery": {
+            "name": "Padronanza Ortografica",
+            "featPrerequisites": {
+                "0": "Dedizione del Maestro di Sapienza"
+            },
+            "description": "<p>Comprendi i principi che stanno alla base di tutte le parole scritte, riuscendo cosi a leggere quasi ogni testo. Puoi tentare di @UUID[Compendium.pf2e.actionspf2e.d9gbpiQjChYDYA2L]{Decifrare Scritti} usando Sapienza del Maestro di Sapienza al posto dell'abilità richiesta.</p>"
+        },
+        "Expanded Luck": {
+            "name": "Fortuna Ampliata",
+            "description": "<p>Sei più fortunato persino della maggior parte dei felinidi. Puoi attivare @UUID[Compendium.pf2e.feats-srd.7qBuzHY8kEG8SdEP]{Fortuna Felina} quando ottieni un fallimento o un fallimento critico in un tiro salvezza su Tempra o Volontà, oltre ai tiri salvezza su Riflessi.</p>\n<p>Puoi comunque usare Fortuna Felina solo una volta al giorno.</p>",
+            "featPrerequisites": {
+                "0": "Fortuna Felina"
+            }
+        },
+        "Scout's Charge": {
+            "name": "Carica dell'Esploratore",
+            "description": "<p>Ti aggiri in modo imprevedibile e poi fai un'imboscata ai tuoi avversari senza preavviso.</p>\n<p>Scegli un nemico. Avanzi, @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Finti} contro quell'avversario e poi effettui un Colpo contro di lui. Per la tua Finta puoi tentare una prova di Furtività invece della prova di Inganno che è solitamente richiesta, perché usi il terreno intorno a te per prendere alla sprovvista il nemico.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione dell'Esploratore"
+            }
+        },
+        "Safeguarded Spell": {
+            "name": "Incantesimo Tutelante",
+            "description": "<p>Sincronizzi le lunghezze d'onda magiche del tuo incantesimo con quelle prodotte dal tuo stesso corpo. Se la tua prossima azione è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} ad area, non sei influenzato dall'incantesimo anche se ti trovi all'interno dell'area.</p>"
+        },
+        "Nonlethal Spell": {
+            "name": "Incantesimi Non Letali",
+            "description": "<p>Puoi modificare gli incantesimi offensivi per renderli meno letali. Se la tua prossima azione è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} che infligge danni e non ha il tratto morte o negativo, quell'incantesimo ottiene il tratto non letale.</p>"
+        },
+        "Cut From The Air": {
+            "name": "Deviazione in Volo",
+            "description": "<p><strong>Innesco</strong> Sei il bersaglio di un Colpo a distanza fisico.</p>\n<p><strong>Requisiti</strong> Sei consapevole dell'attacco, non sei @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} contro di esso e hai una mano libera oppure impugni un'arma da mischia.</p>\n<hr />\n<p>Puoi respingere gli attacchi a distanza.</p>\n<p>Ottieni bonus di circostanza +4 alla CA contro l'attacco innescante. Se l'attacco va a vuoto lo abbatti o devii in volo.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.gWwG7MNAesJgpmRW]{Effetto: Deviazione in Volo}</p>"
+        },
+        "Rallying Cry": {
+            "name": "Urlo di Battaglia",
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p>Richiami i tuoi alleati e li spingi a dare il massimo in combattimento. Tutti gli alleati entro 9 metri che possono sentirti ottengono un numero di Punti Ferita temporanei pari al tuo livello. Inoltre, questi alleati diventano @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{accelerati} per 1 minuto ma possono usare l'azione extra solo per fare un Passo, Avanzare o Colpire.</p>"
+        },
+        "Reliable Luck": {
+            "featPrerequisites": {
+                "0": "Fortuna Felina"
+            }
+        },
+        "Shared Luck (Catfolk)": {
+            "featPrerequisites": {
+                "0": "Fortuna Felina"
+            }
+        },
+        "Focused Shot": {
+            "featPrerequisites": {
+                "0": "Posizione dell'Arciere Monastico"
+            }
+        },
+        "Fleeting Shadow": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Esploratore"
+            }
+        },
+        "Loremaster Dedication": {
+            "featPrerequisites": {
+                "0": "addestrato in almeno un'abilità per Decifrare Scritti"
+            },
+            "name": "Dedizione del Maestro di Sapienza",
+            "description": "<p>Hai compilato un vasto archivio di informazioni che tocca quasi ogni argomento. Sei addestrato in Sapienza del Maestro di Sapienza, un'abilità speciale di Sapienza che può essere usata solo per @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Ricordare Conoscenze}, ma su qualsiasi argomento.</p>\n<p>Se hai il grado leggendario in un'abilità usata per @UUID[Compendium.pf2e.actionspf2e.d9gbpiQjChYDYA2L]{Decifrare Scritti}, diventi esperto in Sapienza del Maestro di Sapienza, ma non puoi aumentare il tuo grado di competenza in quest'abilità in altri altro modo.</p>\n<p>Puoi prendere i talenti della voce talenti aggiuntivi del maestro di sapienza anche se non soddisfi il prerequisito @UUID[Compendium.pf2e.classfeatures.4ripp6EfdVpS0d60]{musa enigmatica}.</p>\n<p>Se hai il talento di classe @UUID[Compendium.pf2e.feats-srd.uVXEZblPRuCyPRua]{Sapienza dei Bardi}, ottieni bonus di circostanza +1 alle prove di abilità con Sapienza dei Bardi.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo del @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.ackdHdIAmSb0AiVL]{maestro di sapienza}.</p>"
+        },
+        "Verdant Weapon": {
+            "name": "Arma Verdeggiante",
+            "description": "<p>Coltivi un seme che può germogliare e diventare un bastone di legno, una frusta di rampicanti o un'altra arma.</p>\n<p>Spendi 10 minuti per concentrare l'energia primeva in un seme, imprimendogli il potenziale di una singola arma di livello 0 con cui sei Addestrato e che non abbia parti meccaniche o componenti metalliche.</p>\n<p>Quando tieni in mano il seme cosi impregnato, puoi spendere una azione singola Interagire per farlo diventare immediatamente quell'arma; una seconda azione di @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interagire} lo riporta alla forma di seme. La tua arma verdeggiante funziona come l'arma impregnata e può essere normalmente incisa con delle rune o le si possono applicare dei talismani, che vengono soppressi quando l'arma è in forma di seme. Diventa anche un focus primevo.</p>\n<p>Puoi avere un solo seme verdeggiante alla volta. Se ne prepari un secondo, il tuo primo seme verdeggiante diventa immediatamente un esemplare non magico; tutte le rune del seme precedente che sono valide per il nuovo seme si trasferiscono senza alcun costo, ma perdi tutte le rune inapplicabili a meno che tu non le trasferisca su una @UUID[Compendium.pf2e.equipment-srd.ev3F9qlMNlNdCOAI]{pietra runica} o su un'altra arma. </p>"
+        },
+        "Duelist Dedication": {
+            "featPrerequisites": {
+                "0": "addestrato con le armature leggere e le armi semplici"
+            },
+            "description": "<p>Sei sempre pronto a estrarre la tua arma e iniziare un duello, indipendentemente dalle circostanze. Ottieni il talento da ranger @UUID[Compendium.pf2e.feats-srd.qFt6zyWVX1njJf1l]{Estrazione Rapida}, che ti permette di estrarre e attaccare con un'arma in 1 azione. Questo vale come Estrazione Rapida ai fini del raggiungimento dei prerequisiti.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non ottieni altri due talenti di archetipo del @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.BwPUY2X7TSmlJj5c]{duellante}.</p>",
+            "name": "Dedizione del Duellante"
+        },
+        "Duelist's Challenge": {
+            "featPrerequisites": {
+                "0": "Dedizione del Duellante"
+            },
+            "name": "Sfida del Duellante",
+            "description": "<p>Scegli un nemico che puoi vedere e proclama una sfida. Quel nemico è il tuo avversario in duello finché non viene sconfitto, non fugge o l'incontro non finisce.</p>\n<p>Ogni volta che colpisci quel nemico usando una singola arma da mischia a una mano mentre l'altra mano (o le altre mani) è libera, ottieni bonus di circostanza al danno del @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Colpo} pari al numero di dadi di danno che la tua arma infligge.</p>\n<p>Se attacchi una creatura diversa dal tuo avversario in duello, subisci penalità di circostanza ai danni pari al numero di danni di dado che la tua arma infligge.</p>"
+        },
+        "Armor Specialist": {
+            "featPrerequisites": {
+                "0": "Dedizione della Sentinella"
+            }
+        },
+        "Terrain Scout": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Esploratore"
+            }
+        },
+        "Pristine Weapon": {
+            "featPrerequisites": {
+                "0": "Arma Verdeggiante"
+            }
+        },
+        "Monastic Archer Stance": {
+            "name": "Posizione dell'Arciere Monastico",
+            "description": "<p><strong>Requisiti</strong> Sei senz'armatura e impugni un arco lungo, un arco corto o un arco con il tratto monaco.</p>\n<hr />\n<p>Entri in una posizione dedicata a un'arte marziale unica, incentrata sull'uso dell'arco. Mentre sei in questa posizione, gli unici Colpi che puoi effettuare sono quelli che utilizzano archi lunghi, archi corti o archi con il tratto monaco.</p>\n<p>Puoi usare @UUID[Compendium.pf2e.actionspf2e.nbfNETdpee8CVM17]{Raffica di Colpi} con questi archi. Con questi archi puoi usare altri talenti o capacità da monaco che normalmente richiedano attacchi senz'armi, quando attacchi entro metà del primo Incremento di gittata (di solito 15 metri per un arco lungo e 9 metri per un arco corto), a patto che il talento o la capacità non richieda un singolo e specifico Colpo.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.1dxD3xsTzak6GNj5]{Posizione: Posizione dell'Arciere Monastico}</p>\n<hr />\n<p><strong>Speciale</strong> Quando selezioni questo talento, diventi addestrato nell'arco lungo, nell'arco corto e in qualsiasi arco semplice e da guerra con il tratto monaco. Se ottieni il privilegio di classe colpitore esperto, il tuo grado di competenza per queste armi aumenta a esperto, e se ottieni il privilegio di classe colpitore magistrale il tuo grado di competenza per queste armi aumenta a maestro.</p>"
+        },
+        "Scout Dedication": {
+            "name": "Dedizione dell'Esploratore",
+            "featPrerequisites": {
+                "0": "addestrato in Furtività e Sopravvivenza"
+            },
+            "description": "<p>Sei un esploratore molto abile, capace di avvisare tempestivamente i tuoi alleati di qualsiasi pericolo. Ottieni il talento da ranger @UUID[Compendium.pf2e.feats-srd.Tpcq3Lk7qEOZ3LDP]{Avvertimento dell'Esploratore}.</p>\n<p>Quando usi l'attività @UUID[Compendium.pf2e.actionspf2e.kV3XM0YJeS2KCSOb]{Perlustrare}, conferisci ai tuoi alleati bonus di circostanza +2 ai loro tiri di iniziativa anziché bonus di circostanza +1.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo dell'@UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.bApp2BZEMuYQCTDM]{esploratore}.</p>"
+        },
+        "Scout's Speed": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Esploratore"
+            }
+        },
+        "Student Of The Dueling Arts": {
+            "featPrerequisites": {
+                "0": "Dedizione del Duellante"
+            }
+        },
+        "Armored Rebuff": {
+            "featPrerequisites": {
+                "0": "Dedizione della Sentinella"
+            }
+        },
+        "Rebounding Toss": {
+            "name": "Lancio Rimbalzante",
+            "description": "<p><strong>Requisiti</strong> Impugni un'arma da lancio.</p>\n<hr />\n<p>Fai rimbalzare la tua arma su un nemico per colpirne un altro. Effettua un Colpo a distanza con un'arma da lancio. Se questo Colpo va a segno, l'arma rimbalza verso un nemico entro 3 metri dal bersaglio originale. Effettua un Colpo aggiuntivo contro questo secondo bersaglio.</p>\n<p>Entrambi gli attacchi contano per la tua penalità da attacchi multipli, ma la penalità non aumenta fino a quando non hai effettuato entrambi gli attacchi.</p>"
+        },
+        "Voice Of The Night": {
+            "name": "Voce della Notte",
+            "description": "<p>Ascolti e comprendi le parole delle creature che vivono nell'oscurità come te. Puoi fare domande, ricevere risposte e usare Diplomazia con pipistrelli, ratti e lupi. Ottieni anche bonus di circostanza +1 per @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Impressionare} tali animali.</p>"
+        },
+        "Cat's Luck": {
+            "name": "Fortuna Felina",
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<p><strong>Innesco</strong> Fallisci un tiro salvezza su Riflessi.</p>\n<hr />\n<p>Ti avviti su te stesso, allontanando il pericolo. Puoi ripetere il tiro salvezza innescante e utilizzare il risultato migliore.</p>"
+        },
+        "Sentinel Dedication": {
+            "name": "Dedizione della Sentinella",
+            "description": "<p>Ti sei allenato tanto per massimizzare le qualità protettive della tua armatura.</p>\n<p>Diventi addestrato con le armature leggere e medie. Se eri già addestrato con entrambe, diventi addestrato anche con le armature pesanti.</p>\n<p>Ogni volta che ottieni un privilegio di classe che ti garantisce competenza esperto o superiore con qualsiasi tipo di armatura (ma non nella difesa senz'armatura) ottieni anche quella competenza con tipi di armatura che ti vengono conferiti da questo talento. Se sei almeno al 13° livello e hai un privilegio di classe che ti conferisce competenza esperto in difesa senz'armatura, diventi anche esperto nei tipi di armatura che ti vengono conferiti da questo talento.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo della @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.TnD2hTWTyjGKlw9b]{sentinella}.</p>"
+        },
+        "Sense For Trouble": {
+            "featPrerequisites": {
+                "0": "Fortuna Felina"
+            }
+        },
+        "Quick Study": {
+            "featPrerequisites": {
+                "0": "Dedizione del Maestro di Sapienza"
+            }
+        },
+        "Magical Edification": {
+            "featPrerequisites": {
+                "0": "Dedizione del Maestro di Sapienza"
+            }
+        },
+        "Scout's Pounce": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Esploratore"
             }
         }
     }
