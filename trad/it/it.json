@@ -56,10 +56,10 @@
             "AddWeapon": "Arma",
             "Adjustment": {
                 "EliteLabel": "Elite",
-                "EliteNameFormat": "Elite {name}",
+                "EliteNameFormat": "{name} Elite",
                 "NormalLabel": "Normale",
                 "WeakLabel": "Debole",
-                "WeakNameFormat": "Debole {name}"
+                "WeakNameFormat": "{name} Debole"
             },
             "ArmorExtraInfoLabelPlaceholder": "Dettagli CA...",
             "Attacks": "Attacchi",
@@ -76,7 +76,7 @@
                 "Traits": "Tratti"
             },
             "AddAction": "Aggiungi Azione",
-            "AddArmor": "rmatura",
+            "AddArmor": "Armatura",
             "AddConsumable": "Monouso",
             "AddEquipment": "Equipaggiamento",
             "AddItem": "Aggiungi Oggetto",
@@ -95,7 +95,7 @@
             "EffectsTab": "Effetti",
             "MainTab": "Principale",
             "NotesTab": "Note",
-            "PassivesLabel": "Passivi",
+            "PassivesLabel": "Passive",
             "PublicNotes": "Note Pubbliche",
             "PrivateNotes": "Note Private",
             "Remove": "Rimuovi",
@@ -671,6 +671,19 @@
                 "Warning": {
                     "UnknownVariant": "Variante sconosciuta '{variant}' usata per Esibirsi, usa uno tra cantare, danzare, esibizione comica, recitare, suonare strumenti a tastiera, suonare percussioni, suonare strumenti a corda, suonare strumenti a fiato o tenere un discorso."
                 }
+            },
+            "Subsist": {
+                "Notes": {
+                    "criticalSuccess": "<strong>Successo Critico</strong> Puoi fornire a te e a un'altra creatura uno stile di vita di sussistenza, oppure puoi migliorare il tuo cibo e il tuo riparo, concedendoti uno stile di vita confortevole.",
+                    "failure": "<strong>Fallimento</strong> Sei esposto agli elementi e non hai abbastanza cibo, e sei affaticato finché non hai cibo a sufficienza e un riparo.",
+                    "success": "<strong>Successo</strong> Trovi cibo a sufficienza e un rifugio che ti protegge dagli elementi, concedendoti uno stile di vita di sussistenza.",
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Attiri problemi, mangi qualcosa che non avresti dovuto o peggiori in qualche altro modo la situazione. Subisci penalità di circostanza -2 alle prove di Sopravvivere per 1 settimana. Non trovi cibo e, se non hai delle scorte e continui a fallire la prova, rischi di morire di fame o di sete. @UUID[Compendium.pf2e.other-effects.wHWWHkjDXmJl4Ia6]{Effetto: Situazione Avversa di Sopravvivenza}"
+                },
+                "AfterExplorationPenalty": "Dopo l'Esplorazione",
+                "Warning": {
+                    "NoSkill": "L'azione Sopravvivere può essere usata con abilità diverse, ma non ne è stata specificata nessuna. Questa abilità è solitamente Società se sei in un insediamento o Sopravvivenza se sei in mezzo alla natura."
+                },
+                "Title": "Sopravvivere"
             }
         },
         "SETTINGS": {
@@ -752,7 +765,7 @@
                 "name": "Carte Colpi Critici e Fallimenti"
             },
             "critFumbleCardButtons": {
-                "hint": "Show critical hit and fumble card draw buttons on attack rolls.",
+                "hint": "Mostra i tasti per pescare carte colpo critico e fumble nei tiri per colpire.",
                 "name": "Pulsanti Carte Colpi Critici e Fallimenti"
             },
             "DeathIcon": {
@@ -1438,7 +1451,7 @@
             "friendly": {
                 "name": "Amichevole",
                 "rules": "<p>Questa condizione riflette l'atteggiamento di una creatura nei confronti di un personaggio in particolare; solo gli effetti sovrannaturali (come gli Incantesimi) possono imporla ai personaggi giocanti. Una creatura amichevole verso un personaggio lo trova piacevole. Quel personaggio può tentare un'azione Richiedere verso una creatura amichevole, e la creatura amichevole probabilmente accetterà una richiesta semplice e sicura il cui compimento non risulti gravoso. Se il personaggio o un suo alleato usa azioni ostili contro la creatura, questa guadagna una condizione di atteggiamento peggiore a seconda della gravita dell'azione ostile, a discrezione del GM.</p>",
-                "summary": "An NPC with this condition has a good attitude toward you."
+                "summary": "Un PNG con questa condizione ti trova piacevole."
             },
             "frightened": {
                 "name": "Spaventato",
@@ -1925,7 +1938,7 @@
                 "success": "<strong>Effect</strong> On a hit, the creature takes a penalty to its Speeds from the clinging goo. @UUID[Compendium.pf2e.equipment-effects.5JYchreCttBg7RcD]{Effect: Goo Grenade}"
             },
             "BioluminescenceBomb": {
-                "success": "<p>Each creature within @Template[type:emanation|distance:10]{10 feet} of where the bomb exploded must succeed at a @Check[type:reflex|dc:17] save or be marked with dye that continues to glow for 24 hours. An affected creature must also attempt a @Check[type:fortitude|dc:17] saving throw against the overwhelming burst of light.</p><p><strong>Success</strong> The creature is unaffected.</p><p><strong>Failure</strong> The creature is @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p><p><strong>Critical Failure</strong> The creature is @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, then dazzled for 1 round.</p>"
+                "success": ""
             }
         },
         "Item": {
@@ -2365,7 +2378,7 @@
                         "amulet": "Amuleto",
                         "anklets": "Cavigliere",
                         "armbands": "Braccialetti",
-                        "armor": "rmatura",
+                        "armor": "Armatura",
                         "backpack": "Zaino",
                         "barding": "Bardatura",
                         "belt": "Cintura",
@@ -2600,16 +2613,17 @@
             },
             "Dead": "Morto",
             "ApplyDamage": {
-                "AtFullHealth": "{actor} è già al massimo della vita.",
-                "DamagedForN": "{actor} subisce {hpDamage} danni.",
-                "ShieldAbsorbsAll": "{actor} è illeso, il suo scudo assorbe completamente {absorbedDamage} danni.",
-                "DamagedForNShield": "Lo scudo di {actor} assorbe {absorbedDamage} danni, ma {hpDamage} danni vanno comunque a segno.",
-                "HealedForN": "{actor} viene guarito di {hpDamage} danni.",
+                "AtFullHealth": "<actor>{actor}</actor> è già al massimo della vita.",
+                "DamagedForN": "<actor>{actor}</actor> subisce {hpDamage} danni.",
+                "ShieldAbsorbsAll": "<actor>{actor}</actor> è illeso, il suo scudo assorbe completamente {absorbedDamage} danni.",
+                "DamagedForNShield": "Lo scudo di <actor>{actor}</actor> assorbe {absorbedDamage} danni, ma {hpDamage} danni vanno comunque a segno.",
+                "HealedForN": "<actor>{actor}</actor> viene guarito di {hpDamage} danni.",
                 "ShieldDamagedForN": "Il suo scudo subisce {shieldDamage} danni.",
                 "ShieldDamagedForNBroken": "Il suo scudo subisce {shieldDamage} danni, rompendosi.",
                 "ShieldDamagedForNDestroyed": "Il suo scudo subisce {shieldDamage} danni, distruggendosi.",
                 "ShieldNotRaised": "{actor} non ha alzato il suo scudo.",
-                "TakesNoDamage": "{actor} non subisce danni."
+                "TakesNoDamage": "<actor>{actor}</actor> non subisce danni.",
+                "TheTarget": "Il bersaglio"
             },
             "Character": {
                 "AbilityBuilder": {
@@ -3097,7 +3111,7 @@
             "ClockworkLostPlates": "Quante piastre sono perdute?",
             "ClockworkWindUp": "Modalità Stand-by",
             "ConstructArmor": {
-                "BrokenArmor": "Broken Construct Armor",
+                "BrokenArmor": "",
                 "CriticalHit": "Armatura dei Costrutti rotta da un Colpo Critico"
             },
             "CustomArmor": {
@@ -3105,7 +3119,7 @@
                 "CriticalHit": "Custom Armor Broken by a Critical Hit"
             },
             "Falrok": {
-                "LazuriteTerrainSwitch": "In lazurite infused terrain"
+                "LazuriteTerrainSwitch": ""
             },
             "KrampusPunishTheNaughty": "Krampus rolls checks against Naughty Target",
             "LegionArchon": {
@@ -3379,7 +3393,7 @@
         "RemoveModifierTitle": "Togli Modificatore",
         "AddShortLabel": "Aggiungi",
         "AddSpellTitle": "Aggiungi Incant.",
-        "AddSpellcastingEntryTitle": "Aggiungi la voce Lancio di incantesimi",
+        "AddSpellcastingEntryTitle": "Aggiungi Voce Lancio di incantesimi",
         "AdditionalSkills": "Abilità Aggiunte",
         "AdditionalLanguagePlusInt": "(più Intelligenza)",
         "Age": "Età",
@@ -3928,7 +3942,16 @@
             },
             "IncreasedFrom": "Aumentato da {original} al minimo di 1",
             "PersistentTooltip": "{damageType} Persistente",
-            "Precision": "Precisione"
+            "Precision": "Precisione",
+            "Dialog": {
+                "Splash": "Da Spargimento {damageType}",
+                "None": "Nessuno",
+                "Label": "Etichetta",
+                "DamageRoll": "Tiro per i Danni",
+                "CriticalDamageRoll": "Tiro per i Danni Critici",
+                "BonusDice": "Dadi Bonus",
+                "Bonus": "{dice} Bonus"
+            }
         },
         "DamageCategoriesLabel": "Categorie Danni",
         "DamageDieD12": "d12",
@@ -4056,7 +4079,7 @@
         "InitiativeLabel": "Iniziativa",
         "InitiativeWithSkill": "Iniziativa: {skillName}",
         "InlineCheck": {
-            "BasicWithSave": "{save} Base",
+            "BasicWithSave": "base su {save}",
             "DCWithName": "CD di {name}",
             "Errors": {
                 "TypeMissing": "Errore in @Check: il parametro type è obbgliatorio"
@@ -4069,7 +4092,7 @@
             "DistanceNoNumber": "Errore in @Template: la distanza {distance} non è un numero",
             "WidthNoNumber": "Errore in @Template: la larghezza {width} non è un numero"
         },
-        "InventoryArmorHeader": "rmatura",
+        "InventoryArmorHeader": "Armatura",
         "InventoryBackpackHeader": "Contenitori",
         "InventoryConsumablesHeader": "Monouso",
         "InventoryEquipmentHeader": "Equipaggiamento",
@@ -4157,9 +4180,9 @@
         "LanguageTengu": "Tengu",
         "LanguageTerran": "Terran",
         "LanguageThassilonian": "Thassiloniano",
-        "LanguageTien": "Tien",
+        "LanguageTien": "Tienese",
         "LanguageUndercommon": "Sottocomune",
-        "LanguageUtopian": "Utopian",
+        "LanguageUtopian": "Utopiano",
         "LanguageVarisian": "Varisiano",
         "LanguageVarki": "Varki",
         "LanguageVudrani": "Vudrano",
@@ -4303,7 +4326,7 @@
         "NPCAttackRanged": "A Distanza",
         "NPCNotesLabel": "Note/Condizioni",
         "NPCNotesTitle": "Scrivi qui le note per questo NPC.",
-        "NPCWeaponAddDamage": "Add Damage Part",
+        "NPCWeaponAddDamage": "Aggiungi Parte di Danni",
         "NPCWeaponAttackEffect": "Effetti di Attacco addizionali",
         "NPCWeaponAttackLabel": "Modificatore di Attacco",
         "NPCWeaponDamageLabel": "Formula di Danno",
@@ -4327,7 +4350,7 @@
             "other": "°",
             "many": "°"
         },
-        "OrphanedSpellsHeader": "Orphaned Spells (move to spellcasting entry above)",
+        "OrphanedSpellsHeader": "Incantesimi Orfani (muovi nelle voci lancio incantesimi superiori)",
         "OverridesTitle": "Sostituzioni",
         "PenaltyLabel": {
             "ability": "Penalità di Caratteristica",
@@ -4347,22 +4370,22 @@
             "OrganizedPlayNumber": "Gioco Organizzato #",
             "Reputation": "Reputazione",
             "Factions": {
-                "EA": "Envoy's Alliance",
-                "GA": "Grand Archive",
-                "HH": "Horizon Hunters",
-                "VS": "Vigilant Seal",
-                "RO": "Radiant Oath",
-                "VW": "Verdant Wheel"
+                "EA": "Alleanza degli Emissari",
+                "GA": "Grande Archivio",
+                "HH": "Cacciatori di Orizzonti",
+                "VS": "Sigillo della Vigilanza",
+                "RO": "Giuramento Radioso",
+                "VW": "Ruota Verdeggiante"
             },
             "School": {
-                "None": "Field-Commissioned Agent",
+                "None": "Agente Assegnato sul Campo",
                 "Scrolls": "Pergamene",
                 "Spells": "Incantesimi",
                 "Swords": "Spade"
             }
         },
         "Playlist": {
-            "Plural": "Playlists"
+            "Plural": "Playlist"
         },
         "PotencyRuneLabel": "Runa di Potenziamento",
         "PreciousMaterialAdamantine": "Adamantio",
@@ -4482,7 +4505,7 @@
             "Plural": "Tabbelle"
         },
         "RollBonusPlaceholder": "e.g. +3 or +1d4",
-        "RollModeLabel": "Roll Mode",
+        "RollModeLabel": "Modalità di Tiro",
         "Scene": {
             "Plural": "Scene"
         },
@@ -4531,8 +4554,8 @@
         "SizeLabel": "Taglia",
         "SkillAcr": "Acrobazia",
         "SkillAcrobatics": "Acrobazia",
-        "SkillArc": "Arcana",
-        "SkillArcana": "Arcana",
+        "SkillArc": "Arcano",
+        "SkillArcana": "Arcano",
         "SkillAth": "Atletica",
         "SkillAthletics": "Atletica",
         "SkillCheckWithName": "Prova di Abilità: {skillName}",
@@ -4654,7 +4677,7 @@
             "Selection": "Intensificato ({level})",
             "Add": "Aggiungi Intensificazione (Fisso)"
         },
-        "SpellScalingLabel": "Scaling",
+        "SpellScalingLabel": "Incremento",
         "SpellSchoolLabel": "Scuola",
         "SpellTargetLabel": "Bersagli",
         "SpellTimeLabel": "Tempo di lancio",
@@ -4687,7 +4710,7 @@
         "StackGroupRations": "Razioni",
         "StackGroupSacks": "Sacchi",
         "StackGroupSlingBullets": "Proiettili per Fionda",
-        "StackGroupWoodenTaws": "Wooden Taws",
+        "StackGroupWoodenTaws": "Biglie di Legno",
         "StaminaPointsHeader": "Punti Tenacia",
         "StaminaPointsShortLabel": "Tenacia",
         "StatusBonusShortLabel": "Status",
@@ -4826,7 +4849,7 @@
         "TraitBoggard": "boggard",
         "TraitBomb": "Bomba",
         "TraitBrutal": "Brutale",
-        "TraitBulwark": "Bulwark",
+        "TraitBulwark": "Baluardo",
         "TraitCaligni": "caligni",
         "TraitCantrip": "Trucchetto",
         "TraitCatfolk": "Felinide",
@@ -4839,9 +4862,9 @@
         "TraitClimbing": "Scalare",
         "TraitCold": "Freddo",
         "TraitColdiron": "Ferro Freddo",
-        "TraitComfort": "Comfort",
+        "TraitComfort": "Confortevole",
         "TraitCommon": "Comune",
-        "TraitComplex": "Complex",
+        "TraitComplex": "Complesso",
         "TraitCompanion": "Compagno",
         "TraitComposition": "Composizione",
         "TraitConcealable": "Occultabile",
@@ -4858,7 +4881,7 @@
         "TraitCouatl": "Couatl",
         "TraitCurse": "Maledizione",
         "TraitCursed": "Maledetto",
-        "TraitCursebound": "Cursebound",
+        "TraitCursebound": "Infausto",
         "TraitDaemon": "Dàimon",
         "TraitDarkness": "Oscurità",
         "TraitDeadlyD10": "Micidiale d10",
@@ -4929,7 +4952,7 @@
         "TraitDescriptionContact": "Questo veleno viene rilasciato al contatto con la pelle.",
         "TraitDescriptionCurse": "Una maledizione è un effetto che provoca un'afflizione a lungo termine su una creatura. Le maledizioni sono sempre magiche e in genere sono il risultato di un incantesimo o una trappola. Gli effetti con questo tratto possono essere rimossi solo da effetti che prendono di mira specificamente le maledizioni.",
         "TraitDescriptionCursed": "Un oggetto con questo tratto è maledetto causando problemi al suo proprietario. Una maledizione non viene individuata quando l'oggetto è identificato, sebbene un successo critico riveli sia la presenza che l'esatta natura della maledizione. Gli oggetti maledetti non possono essere scartati una volta che sono stati innescati o investiti per la prima volta. L'oggetto può essere rimosso solo se viene rimossa anche la maledizione.",
-        "TraitDescriptionCursebound": "Spells with this trait increase the severity of your oracular curse when cast. Usually, only revelation spells have this trait. You can't cast a cursebound spell if you don't have an oracular curse.",
+        "TraitDescriptionCursebound": "Gli incantesimi con questo tratto aumentano la gravità della tua maledizione oracolare quando vengono lanciati. Di solito solo gli incantesimi di rivelazione hanno questo tratto. Non puoi lanciare un incantesimo infausto se non hai una maledizione oracolare.",
         "TraitDescriptionDarkness": "Gli effetti di oscurità spengono la luce non magica nell'area e possono contrastare la luce magica meno potente. Di solito devi prendere direttamente come bersaglio la magia di luce con la tua magia di oscurità per contrastare la luce, ma alcuni incantesimi di oscurità tentano automaticamente di contrastare la luce.",
         "TraitDescriptionDeadly": "Quando effettua un colpo critico, l'arma aggiunge un dado di danno dell'arma del valore indicato. Lancia questo dado dopo aver raddoppiato il danno dell'arma. Questo effetto aumenta a due dadi se l'arma ha una runa poderosa superiore e a tre dadi se l'arma ha una runa poderosa maggiore. Ad esempio, una spada da lato con una runa poderosa superiore infligge 2d8 danni perforanti extra quando effettua un colpo critico. Una capacità che cambia il valore del normale dado di danno dell'arma non cambia il valore del suo dado micidiale.",
         "TraitDescriptionDeath": "Un effetto con il tratto morte ti uccide immediatamente se ti riduce a 0 PF. Alcuni effetti di morte possono avvicinarti alla morte o ucciderti direttamente, pur senza ridurti a 0 PF.",
@@ -4987,7 +5010,7 @@
         "TraitDescriptionHalfling": "Una creature con questo tratto è un membro della stirpe Halfling. Questo piccolo popolo è composto da vagabondi amichevoli che vengono considerati fortunati. Una capacità con questo tratto può essere usata o selezionata solo dagli Halfling. Un'arma con questo tratto viene creata e utilizzata dagli Halfling.",
         "TraitDescriptionHaunt": "Un pericolo con questo tratto è un'eco spirituale, spesso di qualcuno che ha subito una morte tragica. Mettere a riposo un'infestazione spesso comporta la risoluzione delle questioni incompiute dell'infestazione. Un'infestazione che non è stata correttamente messa a riposo ritorna sempre dopo un po' di tempo.",
         "TraitDescriptionHealing": "Un effetto di guarigione ripristina il corpo di una creatura, in genere restituendole Punti Ferita, ma a volte rimuovendo malattie o altri effetti debilitanti.",
-        "TraitDescriptionHex": "A hex is a type of focus spell a witch can cast.",
+        "TraitDescriptionHex": "Una fattura è un tipo di incantesimo focalizzato che può essere lanciato da un fattucchiere.",
         "TraitDescriptionHobgolin": "Gli hobgoblin sono un popolo robusto ed intelligente con una propensione per l’ordine militaristico.",
         "TraitDescriptionHuman": "Una creatura con questo tratto è un membro della stirpe umana. Gli umani sono una vasta gamma di popoli conosciuti per il loro spirito di adattamento. Una capacità con questo tratto può essere usata o selezionata solo dagli umani.",
         "TraitDescriptionHumanoid": "Le creature umanoidi ragionano e si comportano in modo molto simile agli umani. In genere camminano eretti e hanno due braccia e due gambe.",
@@ -5107,7 +5130,7 @@
         "TraitDivine": "Divino",
         "TraitDowntime": "Pausa",
         "TraitDragon": "Drago",
-        "TraitDream": "Dream",
+        "TraitDream": "Sogno",
         "TraitDescriptionVersatile": "Un'arma versatile può essere usata per infliggere un tipo di danno diverso da quello riportato alla voce Danno. Questo tratto indica il tipo di danno alternativo. Ad esempio, un'arma perforante con Versatile T può essere usata per infliggere danno perforante o tagliente. Scegli il tipo di danno ogni volta che effettui un attacco.",
         "TraitDescriptionVirulent": "Le afflizioni con il tratto virulento sono più difficili da rimuovere. Devi avere successo in due Tiri Salvezza consecutivi per ridurre la fase di un'afflizione virulenta di 1. Un successo critico riduce la fase di un'afflizione virulenta solo di 1 anziché di 2.",
         "TraitDescriptionVisual": "Un effetto visivo può influenzare solo le creature che possono vederlo. Questo vale solo per le parti visibili dell'effetto, come stabilito dal GM.",
@@ -5124,7 +5147,7 @@
         "TraitDescriptionScroll": "Una pergamena contiene un singolo incantesimo che puoi lanciare senza uno slot incantesimo.",
         "TraitDescriptionSnare": "I calappi, trappole tipicamente costruite dai ranger, seguono regole speciali che consentono di costruirli rapidamente e utilizzarli sul campo di battaglia.",
         "TraitDescriptionTalisman": "Un talismano è un piccolo oggetto applicato a un'armatura, uno scudo o un'arma (chiamato oggetto applicato). Devi impugnare o indossare un oggetto per attivare un talismano applicato ad esso. Una volta attivato, un talismano si consuma permanentemente.",
-        "TraitEidolon": "Eidolon",
+        "TraitEidolon": "",
         "TraitElectricity": "Elettricità",
         "TraitElemental": "Elementale",
         "TraitElf": "Elfo",
@@ -5147,7 +5170,7 @@
         "TraitFiend": "Nefando",
         "TraitFighter": "Guerriero",
         "TraitFinesse": "Accurata",
-        "TraitFinisher": "Finisher",
+        "TraitFinisher": "Mossa Finale",
         "TraitFire": "Fuoco",
         "TraitFleshwarp": "Carnideforme",
         "TraitFlexible": "Flessibile",
@@ -5245,9 +5268,9 @@
         "TraitOpen": "Apertura",
         "TraitOracle": "Oracolo",
         "TraitOrc": "Orco",
-        "TraitOread": "Oread",
+        "TraitOread": "Oreade",
         "TraitParry": "Parata",
-        "TraitPetitioner": "Petitioner",
+        "TraitPetitioner": "Supplicante",
         "TraitPhysical": "Fisico",
         "TraitPiercing": "Perforante",
         "TraitPlant": "Vegetale",
@@ -5351,10 +5374,10 @@
         "TraitScrying": "Scrutare",
         "TraitSeaDevil": "Diavolo Marino",
         "TraitSecret": "Segreto",
-        "TraitSerpentfolk": "Serpentfolk",
+        "TraitSerpentfolk": "Uomo Serpente",
         "TraitShadow": "Ombra",
-        "TraitShobhad": "Shobhad",
-        "TraitShoony": "Shoony",
+        "TraitShobhad": "",
+        "TraitShoony": "",
         "TraitShove": "Spingere",
         "TraitSkeleton": "Scheletro",
         "TraitSkill": "Abilità",
@@ -5381,7 +5404,7 @@
         "TraitSwashbuckler": "Spadaccino",
         "TraitSwarm": "Sciame",
         "TraitSweep": "Spazzare",
-        "TraitSylph": "Sylph",
+        "TraitSylph": "Silfide",
         "TraitTalisman": "Talismano",
         "TraitTane": "Tane",
         "TraitTattoo": "Tatuaggio",
@@ -5411,7 +5434,7 @@
         "TraitUnarmed": "Disarmato",
         "TraitUncommon": "Non Comune",
         "TraitUndead": "Non Morto",
-        "TraitUndine": "Undine",
+        "TraitUndine": "Ondina",
         "TraitUnique": "Unico",
         "TraitUntyped": "Senza Tipo",
         "TraitUrdefhan": "Urdefhan",
@@ -5422,7 +5445,7 @@
         "TraitVersatileHeritage": "Lignaggio Versatile",
         "TraitVersatileP": "Versatile P",
         "TraitVersatilePositive": "Versatile Positiva",
-        "TraitVersatileS": "Versatile S",
+        "TraitVersatileS": "Versatile T",
         "TraitVigilante": "Vigilante",
         "TraitVirulent": "Virulento",
         "TraitVisual": "Visivo",
@@ -5577,21 +5600,21 @@
         "WeaknessesLabel": "Debolezze",
         "Weapon": {
             "Base": {
-                "adze": "Adze",
+                "adze": "Azza",
                 "aklys": "Aklys",
                 "alchemical-bomb": "Bomba Alchemica",
                 "alchemical-crossbow": "balestra alchemica",
-                "aldori-dueling-sword": "Aldori Dueling Sword",
+                "aldori-dueling-sword": "Spada da Duello Aldori",
                 "bastard-sword": "Spada Bastarda",
                 "battle-axe": "Ascia da Battaglia",
                 "battle-lute": "Liuto da Battaglia",
-                "bladed-diabolo": "Bladed Diabolo",
-                "bladed-hoop": "Bladed Hoop",
+                "bladed-diabolo": "",
+                "bladed-hoop": "",
                 "bladed-scarf": "Sciarpa con Lame",
                 "blowgun-darts": "Dardi per Cerbottana",
                 "blowgun": "Cerbottana",
                 "bo-staff": "Bastone Bo",
-                "boarding-axe": "Boarding Axe",
+                "boarding-axe": "",
                 "boarding-pike": "Picca da Arrembaggio",
                 "bola": "Bola",
                 "buugeng": "Buugeng",
@@ -5612,7 +5635,7 @@
                 "exquisite-sword-cane-sheath": "Fodero del Bastone Animato Pregiato",
                 "exquisite-sword-cane": "Bastone Animato Pregiato",
                 "falchion": "Falcione",
-                "fangwire": "Fangwire",
+                "fangwire": "Fil di Zanne",
                 "fauchard": "Roncone",
                 "fighting-fan": "Ventaglio da Combattimento",
                 "filchers-fork": "Forca del Boscaiolo",
@@ -5632,7 +5655,7 @@
                 "guisarme": "Guisarma",
                 "halberd": "Alabarda",
                 "halfling-sling-staff": "Bastone Fionda Halfling",
-                "hand-adze": "Hand Adze",
+                "hand-adze": "Azza a Mano",
                 "hand-crossbow": "Balestra a Mano",
                 "hatchet": "accetta",
                 "heavy-crossbow": "Balestra Pesante",
@@ -5657,7 +5680,7 @@
                 "machete": "Machete",
                 "main-gauche": "Manosinistra",
                 "mambele": "Mambele",
-                "maul": "Maul",
+                "maul": "Maglio",
                 "meteor-hammer": "Martello Meteora",
                 "monkeys-fist": "Pugno di Scimmia",
                 "morningstar": "Mazza Chiodata",
@@ -5665,15 +5688,15 @@
                 "nightstick": "Manganello Telescopico",
                 "nine-ring-sword": "Spada a Nove Anelli",
                 "nunchaku": "Nunchaku",
-                "ogre-hook": "Ogre Hook",
+                "ogre-hook": "Uncino dell'Ogre",
                 "orc-knuckle-dagger": "Pugnale Tirapugni Orchesco",
-                "orc-necksplitter": "Orc Necksplitter",
+                "orc-necksplitter": "Spezzacolli Orchesco",
                 "pick": "Piccone",
-                "poi": "Poi",
+                "poi": "",
                 "polytool": "Polistrumento",
                 "ranseur": "Corsesca",
                 "rapier": "Spada da Lato",
-                "repeating-hand-crossbow": "Repeating Hand Crossbow",
+                "repeating-hand-crossbow": "",
                 "rhoka-sword": "Spada Rhoka",
                 "rungu": "Rungu",
                 "sai": "Sai",
@@ -5702,13 +5725,13 @@
                 "stiletto-pen": "Penna Stiletto",
                 "sword-cane": "Bastone Animato",
                 "tamchal-chakram": "Chakram Tamchal",
-                "taw-launcher": "Taw Launcher",
+                "taw-launcher": "Lanciabiglie",
                 "tekko-kagi": "Tekko-kagi",
                 "temple-sword": "Spada del Tempio",
                 "tengu-gale-blade": "Lama Burrascosa Tengu",
-                "throwing-knife": "Throwing Knife",
-                "thunder-sling": "Thunder Sling",
-                "tricky-pick": "Tricky Pick",
+                "throwing-knife": "",
+                "thunder-sling": "Fionda Tonante",
+                "tricky-pick": "Piccone Ingegnoso",
                 "trident": "Tridente",
                 "urumi": "Urumi",
                 "wakizashi": "Wakizashi",
@@ -5716,10 +5739,10 @@
                 "war-razor": "Rasoio da Guerra",
                 "warhammer": "Martello da Guerra",
                 "whip": "Frusta",
-                "whip-claw": "Whip Claw",
-                "wish-blade": "Wish Blade",
-                "wish-knife": "Wish Knife",
-                "wooden-taws": "Wooden Taws",
+                "whip-claw": "Frusta Artiglio",
+                "wish-blade": "Lama dei Desideri",
+                "wish-knife": "Coltello dei Desideri",
+                "wooden-taws": "Biglie di Legno",
                 "chakri": "Chakri",
                 "clan-pistol": "Clan Pistol",
                 "mace-multipistol": "Mace Multipistol",
@@ -6133,7 +6156,7 @@
                 "Pincer": "Chela",
                 "Pseudopod": "Pseudopode",
                 "Rock": "Roccia",
-                "Spine": "Spine",
+                "Spine": "",
                 "Stinger": "Pungiglione",
                 "Tail": "Coda",
                 "Talon": "Grinfie",
@@ -6393,7 +6416,8 @@
             "VsMagic": "vs. Magical effects",
             "VsMental": "vs. Mental effects",
             "Raining": "Raining",
-            "Underwater": "Sott'Acqua"
+            "Underwater": "Sott'Acqua",
+            "AgainstDemons": "Contro i Demoni"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -6757,7 +6781,16 @@
                 }
             },
             "VirtuosicPerformer": {
-                "Prompt": "Seleziona un Tipo di Esibizione"
+                "Prompt": "Seleziona un Tipo di Esibizione",
+                "Acting": "Recitazione",
+                "Strings": "Corde",
+                "Singing": "Canto",
+                "Winds": "Fiati",
+                "Percussion": "Percussioni",
+                "Oratory": "Oratoria",
+                "Keyboards": "Tastiere",
+                "Dance": "Danza",
+                "Comedy": "Commedia"
             },
             "WildMorph": {
                 "Prompt": "Seleziona una morfosi.",
@@ -7414,7 +7447,7 @@
                 "CriticalHit": "Critically hit with Overwhelming Blow"
             },
             "TerrainExpertise": {
-                "Prompt": "Seleziona un terreno per il quale guadagnare conoscenza"
+                "Prompt": "Seleziona un terreno"
             },
             "Fighter": {
                 "DoubleSlice": {
@@ -7437,10 +7470,10 @@
         "LanguageMinkaian": "Minkaian",
         "TraitJousting": "Giostra",
         "TraitDescriptionFinite": "I piani con questo tratto consistono in un ammontare limitato di spazio.",
-        "AccessoryPropertyRuneMajorPaired": "Major Paired",
-        "AccessoryPropertyRunePaired": "Paired",
-        "AccessoryPropertyRunePresentable": "Presentable",
-        "AccessoryPropertyRuneSnagging": "Snagging",
+        "AccessoryPropertyRuneMajorPaired": "",
+        "AccessoryPropertyRunePaired": "",
+        "AccessoryPropertyRunePresentable": "",
+        "AccessoryPropertyRuneSnagging": "",
         "AccessoryPropertyRuneSoftLanding": "Soft-Landing",
         "ArmorPropertyRuneBitter": "Bitter",
         "ArmorPropertyRuneGreaterStanching": "Greater Stanching",
@@ -7492,8 +7525,8 @@
         "TraitDescriptionDoubleBarrel": "This weapon has two barrels that are each loaded separately. You can fire both barrels of a double barrel weapon in a single Strike to increase the weapon damage die by one step. If the weapon has the fatal trait, this increases the fatal die by one step.",
         "TraitDescriptionEsoterica": "The esoterica trait is present in many thaumaturge feats and class features that incorporate the various talismans, supernatural trinkets, and other objects you carry with you. Abilities that have the esoterica trait require you to be in possession of your esoterica to use them. Normally, you're assumed to always have your esoterica with you, but in some rare circumstances, you might either not have them on hand or have your gear stripped from you.",
         "TraitScatter10": "Scatter 10",
-        "AccessoryPropertyRuneDragonsBreath": "Dragon's Breath",
-        "AccessoryPropertyRuneGreaterPaired": "Greater Paired",
+        "AccessoryPropertyRuneDragonsBreath": "",
+        "AccessoryPropertyRuneGreaterPaired": "",
         "ArmorPropertyRuneGreaterDread": "Greater Dread",
         "LanguageTekritanin": "Tekritanin",
         "PreciousMaterialDjezet": "Djezet",
@@ -7614,7 +7647,7 @@
         "TraitDescriptionModification": "A feat with this trait alters the construction of your innovation. If you have the reconfigure class feature, you can retrain such a feat more easily.",
         "TraitDescriptionMinion": "I servitori sono creature che servono direttamente un'altra creatura. Una creatura con questo tratto può usare solo 2 azioni per turno, non ha reazioni e non può agire quando non è il tuo turno. Il tuo servitore agisce nel tuo turno in combattimento, una volta per turno, quando spendi un'azione per impartirgli dei comandi. Per un compagno animale usi Comandare un Animale; per un servitore che è effetto di un incantesimo o di un oggetto magico, come per esempio un servitore evocato, Mantieni un Incantesimo o Mantieni un'Attivazione; se non diversamente specificato, emetti un comando verbale come una singola azione con i tratti Uditivi e di Concentrazione. Se non viene dato alcun comando, i servitori non usano azioni se non per difendersi o per sfuggire a danni evidenti. Se lasciati incustoditi abbastanza a lungo, in genere 1 minuto, i servitori con il tratto Privo di Intelletto di solito non agiscono, gli Animali seguono il loro istinto e i servitori intelligenti agiscono come vogliono. Un servitore non può controllare altre creature.",
         "TraitDescriptionScatter": "This weapon fires a cluster of pellets in a wide spray. Scatter always has an area listed with it, indicating the radius of the spray. On a hit, the primary target of attacks with a scatter weapon take the listed damage, and the target and all other creatures within the listed radius around it take 1 point of splash damage per weapon damage die.",
-        "AccessoryPropertyRuneGreaterWindCatcher": "Greater Wind-Catcher",
+        "AccessoryPropertyRuneGreaterWindCatcher": "",
         "AccessoryPropertyRuneSpellBastion": "Spell-Bastion",
         "AccessoryPropertyRuneWindCatcher": "Wind-Catcher",
         "ArmorPropertyRuneModerateDread": "Moderate Dread",
@@ -7828,7 +7861,7 @@
     "ITEM": {
         "TypeAction": "Azione",
         "TypeAncestry": "Stirpe",
-        "TypeArmor": "rmatura",
+        "TypeArmor": "Armatura",
         "TypeBackground": "Background",
         "TypeBackpack": "Contenitore",
         "TypeBook": "Libro",
