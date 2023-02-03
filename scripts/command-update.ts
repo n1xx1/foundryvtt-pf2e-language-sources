@@ -245,7 +245,8 @@ async function handleActor(
         }
         if (
           entry.system.traits?.senses &&
-          "value" in entry.system.traits?.senses
+          "value" in entry.system.traits.senses &&
+          entry.system.traits.senses.value
         ) {
           el.npcSenses = entry.system.traits.senses.value;
         }
