@@ -74,6 +74,9 @@ export interface EntryNPC extends BaseEntry {
         otherSpeeds: { label: string; type: string }[];
       };
     };
+    traits: {
+      senses: { value: string } | EntryNPCSense[];
+    };
     saves: {
       fortitude: { saveDetail: string }; // saveDetail doesn't seem to be used
       reflex: { saveDetail: string }; // saveDetail doesn't seem to be used
@@ -81,6 +84,13 @@ export interface EntryNPC extends BaseEntry {
     };
   };
 }
+
+export type EntryNPCSense = {
+  type: string;
+  acuity?: string;
+  value?: string;
+  source?: string;
+};
 
 export type EntryItem =
   | EntryItemGeneric

@@ -40,6 +40,8 @@ export async function commandUpdateSource(
     ["compendium-bestiary", "pathfinder-bestiary.db"],
     ["compendium-bestiary-2", "pathfinder-bestiary-2.db"],
     ["compendium-bestiary-3", "pathfinder-bestiary-3.db"],
+    ["compendium-feat-effects", "feat-effects.db"],
+    ["compendium-spell-effects", "spell-effects.db"],
   ];
 
   for (const [name, packName] of toTranslate) {
@@ -75,31 +77,63 @@ async function translateSource(
     }
   );
 
-  for (const u of res) {
-    const match = u.context.match(/^entries\.([^\.]*)\..*$/);
+  for (const unit of res) {
+    const match = unit.context.match(/^entries\.([^\.]*)\.(.*)$/);
     if (!match) continue;
-    const [, name] = match;
+    const [, name, part] = match;
 
-    const id = u.id;
-    const origin: any = dataMap.get(name)?.system ?? {};
-    const source: string =
-      origin.source?.value ?? origin?.details?.source?.value ?? "";
-    const tag = getRealTag(source);
+    const origin: any = dataMap.get(name) ?? {};
 
-    if (!tag) {
-      if (source) {
-        console.log(`Unknown source: ${source} (item: ${name})`);
+    if (part.startsWith("items.")) {
+      const itemMatch = part.match(/^items\.(.+)\.(name|description)$/)!;
+      if (itemMatch) {
+        const [, itemName] = itemMatch;
+        const item =
+          origin.items?.find((item: any) => item.name === itemName) ?? {};
+
+        const itemSource: string =
+          item.system?.source?.value ??
+          item.system?.details?.source?.value ??
+          "";
+
+        if (itemSource) {
+          await applySourceTag(itemSource, unit, weblate);
+          continue;
+        }
       }
-      continue;
     }
-    if (u.labels?.includes(tag)) {
-      continue;
+
+    console.log(name, origin);
+    const source: string =
+      origin.system?.source?.value ??
+      origin.system?.details?.source?.value ??
+      "";
+    if (source) {
+      await applySourceTag(source, unit, weblate);
     }
-    try {
-      await weblate.patch(`/units/${id}/`, { labels: [tag] });
-      console.log(`Set label ${tag} on ${id} (${u.context})`);
-    } catch (e) {
-      console.log(`Failed to set label ${tag} on ${id} (${u.context})`);
-    }
+  }
+}
+
+async function applySourceTag(
+  source: string,
+  unit: WeblateUnit,
+  weblate: WeblateApi
+) {
+  const tag = getRealTag(source);
+
+  if (!tag) {
+    console.log(`Unknown source: ${source} (item: ${name})`);
+    return;
+  }
+
+  if (!unit.labels?.includes(tag)) {
+    return;
+  }
+
+  try {
+    await weblate.patch(`/units/${unit.id}/`, { labels: [tag] });
+    console.log(`Set label ${tag} on ${unit.id} (${unit.context})`);
+  } catch (e) {
+    console.log(`Failed to set label ${tag} on ${unit.id} (${unit.context})`);
   }
 }

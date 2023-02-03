@@ -238,6 +238,12 @@ async function handleActor(
         if (entry.system.attributes.speed.details) {
           el.npcSpeed = entry.system.attributes.speed.details;
         }
+        if (
+          entry.system.traits?.senses &&
+          "value" in entry.system.traits?.senses
+        ) {
+          el.npcSenses = entry.system.traits.senses.value;
+        }
         for (const speed of entry.system.attributes.speed.otherSpeeds) {
           if (speed.label) {
             (el.npcOtherSpeeds ??= {})[speed.type] = speed.label;
@@ -251,60 +257,14 @@ async function handleActor(
             throw new Error(`unknown item type: ${item.type}`);
           }
 
-          if (ignoredItemTypes.includes(item.type)) {
+          if (isIgnoredItem(item)) {
             continue;
           }
 
-          if (
-            item.type === "lore" &&
-            skillNames.includes(item.name.toLowerCase())
-          ) {
-            continue;
-          }
-
-          const sourceId: string | undefined = (item.flags?.core as any)
-            ?.sourceId;
-
-          const [compendiumItem, compendiumId, origin] = ((): readonly [
-            EntryItem | null,
-            string,
-            string
-          ] => {
-            const [matchingItem, pack, only] = findByMatchingItem(
-              item,
-              allPacksMap
-            );
-            if (sourceId) {
-              const [sourceItem, compendiumId] = findBySourceId(
-                sourceId,
-                allPacksMap
-              );
-              // if the real source is correct then just respect the source
-              if (
-                sourceItem &&
-                (!matchingItem || sourceItem._id === matchingItem._id)
-              ) {
-                return [sourceItem, compendiumId, "source"] as const;
-              }
-            }
-            if (matchingItem) {
-              return [matchingItem, pack, "matching"] as const;
-            }
-            if (attackType.includes(item.type)) {
-              const equipItem = findByName(
-                item.name,
-                allPacksMap.get("equipment-srd")!
-              );
-              if (equipItem) {
-                return [
-                  equipItem,
-                  `equipment-srd.${equipItem._id}`,
-                  "equip",
-                ] as const;
-              }
-            }
-            return [null, "", ""] as const;
-          })();
+          const [compendiumItem, compendiumId, origin] = findItemInCompendium(
+            item,
+            allPacksMap
+          );
 
           if (!compendiumItem) {
             el.items ??= {};
@@ -332,7 +292,7 @@ async function handleActor(
           if (!sameName) {
             itemEl.name = item.name;
           }
-          if (!sameDesc) {
+          if (!sameDesc && item.system.description.value) {
             itemEl.description = item.system.description.value;
           }
           if (origin === "matching") {
@@ -354,6 +314,44 @@ async function handleActor(
 }
 
 type PackData = Awaited<ReturnType<typeof readSystemFiles>>[0][number];
+
+function isIgnoredItem(item: EntryItem) {
+  if (ignoredItemTypes.includes(item.type)) {
+    return true;
+  }
+
+  if (item.type === "lore" && skillNames.includes(item.name.toLowerCase())) {
+    return true;
+  }
+
+  return false;
+}
+
+export function findItemInCompendium(
+  item: EntryItem,
+  allPacksMap: Map<string, PackData>
+): [EntryItem | null, string, string] {
+  const sourceId: string | undefined = (item.flags?.core as any)?.sourceId;
+
+  const [matchingItem, pack, only] = findByMatchingItem(item, allPacksMap);
+  if (sourceId) {
+    const [sourceItem, compendiumId] = findBySourceId(sourceId, allPacksMap);
+    // if the real source is correct then just respect the source
+    if (sourceItem && (!matchingItem || sourceItem._id === matchingItem._id)) {
+      return [sourceItem, compendiumId, "source"];
+    }
+  }
+  if (matchingItem) {
+    return [matchingItem, pack, "matching"];
+  }
+  if (attackType.includes(item.type)) {
+    const equipItem = findByName(item.name, allPacksMap.get("equipment-srd")!);
+    if (equipItem) {
+      return [equipItem, `equipment-srd.${equipItem._id}`, "equip"];
+    }
+  }
+  return [null, "", ""];
+}
 
 function findBySourceId(
   sourceId: string,
