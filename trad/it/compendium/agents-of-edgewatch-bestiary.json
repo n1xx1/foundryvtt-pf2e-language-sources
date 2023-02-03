@@ -106,7 +106,7 @@
                 },
                 "Consume Flesh": {
                     "description": "<p><strong>Requirements</strong> The barnacle ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The barnacle ghoul devours a chunk of the corpse and regains [[/r 5d6[healing]]]{5d6 Hit Points}.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>",
-                    "name": "Consume Flesh"
+                    "name": "Necrofagia"
                 },
                 "Fill Lungs": {
                     "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 3} (1 round)</p>\n<p><strong>Stage 4</strong> drowning and cannot reduce below stage 4 until the water is purged; purging the water requires a successful @Check[type:medicine|dc:26|name:Purge Water|traits:manipulate,action:administer-first-aid] check to @UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} (which stops the creature from drowning and returns the creature to stage 3; stage 2 on a critical success) or a magical effect that removes curses or the sickened condition (which stops the creature from drowning and ends the curse).</p>\n<p>If the creature dies from drowning, it rises as a barnacle ghoul the next midnight.</p>",
@@ -120,7 +120,7 @@
                     "description": "<p><strong>Trigger</strong> A creature grabbed by the barnacle ghoul critically fails a skill check to Escape</p>\n<hr />\n<p><strong>Effect</strong> The barnacle ghoul makes a claw Strike against the triggering creature.</p>"
                 },
                 "Paralysis": {
-                    "name": "Paralysis",
+                    "name": "Paralisi",
                     "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[type:fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}.</p>\n<p>It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
                 }
             },
@@ -172,7 +172,7 @@
                     "description": "<p>The chemist Interacts to draw a bomb then Strikes with it.</p>"
                 },
                 "Alchemist's Tools": {
-                    "name": "Alchemist's Tools",
+                    "name": "Strumenti da Alchimista",
                     "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>"
                 },
                 "Infused Items": {
@@ -242,11 +242,11 @@
                     "description": "<p>The obrousian can take on the appearance of any Small or Medium humanoid. This increases their Speed to 25 feet. It doesn't change their attack and damage modifiers with their Strikes, but it might change the damage type their Strikes deal (typically to bludgeoning).</p>"
                 },
                 "Warp Mind": {
-                    "name": "Warp Mind",
+                    "name": "Distorcere Mente",
                     "description": "<p>You scramble a creature's mental faculties and sensory input. The target must attempt a Will saving throw. Regardless of the result of that save, the target is then temporarily immune for 10 minutes. Warp mind's effects happen instantly, so dispel magic and other effects that counteract spells can't counteract them. However, alter reality, miracle, primal phenomenon, restoration, or wish can still counteract the effects.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target spends the first action on its next turn with the @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} condition.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} permanently.</p>"
                 },
                 "Claw": {
-                    "name": "Claw"
+                    "name": "Artiglio"
                 },
                 "Waves of Sorrow": {
                     "name": "Waves of Sorrow",
@@ -258,7 +258,7 @@
                 }
             },
             "name": "Obrousian",
-            "npcHp": "negative healing",
+            "npcHp": "guarigione negativa",
             "npcSenses": "scurovisione"
         },
         "Eberark": {
@@ -290,13 +290,13 @@
                 }
             },
             "name": "Eberark",
-            "npcSenses": "low-light vision, scent (imprecise) 30 feet"
+            "npcSenses": "fiuto (impreciso) 9 metri, visione crepuscolare"
         },
         "Shatterling": {
             "items": {
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Blood-Fueled Titter": {
                     "description": "<p>If the shatterling attempts an Intimidation check to Demoralize a target within 30 feet of a creature with persistent bleed damage, the shatterling has +4 circumstance bonus to the Intimidation check. In addition, the shatterling takes no penalty to the check for not speaking a language the target can hear, and the target isn't temporarily immune to the shatterling's attempts to Demoralize it unless the shatterling critically fails its Intimidation check.</p>",
@@ -346,7 +346,7 @@
                 },
                 "Golem Antimagic": {
                     "description": "<p>harmed by acid (6d10+4, 2d8+4 from areas and persistent damage); healed by fire (area 2d8+4 HP); slowed by electricity</p>\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem. <strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical. <strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical. <strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be slowed 1 for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round. <strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>",
-                    "name": "Golem Antimagic"
+                    "name": "Anti-Magia dei Golem"
                 },
                 "Vulnerable to Rust": {
                     "description": "<p>Magical rusting effects, like a rust monster's antennae, affect the iron golem normally.</p>",
@@ -391,7 +391,7 @@
                     "name": "Lightning Bolt (Coven)"
                 },
                 "Claw": {
-                    "name": "Claw"
+                    "name": "Artiglio"
                 },
                 "Dread Gaze": {
                     "name": "Dread Gaze",
@@ -541,7 +541,7 @@
                 },
                 "Fear (At Will)": {
                     "description": "<p>Infondi paura nel bersaglio; questi deve effettuare un tiro salvezza su Volontà.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p><p><strong>Successo </strong>Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Frightened} 1.</p><p><strong>Fallimento </strong>Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Frightened} 2.</p><p><strong>Fallimento Critico</strong> Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Spaventato} 3 e @Compendium[pf2e.conditionspf2e.sDPxOjQ9kx2RZE8D]{In Fuga} per 1 round.</p>",
-                    "name": "Fear (At Will)"
+                    "name": "Paura (A Volontà)"
                 },
                 "Nightmare (At Will)": {
                     "description": "<p>Mandi degli incubi inquietanti al bersaglio. La prossima volta che il bersaglio si addormenta, deve effettuare un tiro salvezza su Volontà. Se conosci il bersaglio soltanto per nome e non lo hai mai incontrato, il bersaglio ottiene un bonus di circostanza +4 al tiro salvezza su Volontà.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio non subisce effetti avversi all'incubo ed è temporaneamente immune per 1 settimana.</p><p><strong>Successo </strong>Il bersaglio ha gli incubi, ma non subisce effetti avversi oltre a ricordi inquietanti.</p><p><strong>Fallimento </strong>Il bersaglio ha gli incubi e si sveglia @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Affaticato}.</p><p><strong>Fallimento Critico</strong> Il bersaglio ha gli incubi, si sveglia @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Affaticato} ed è @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Risucchiato} 2 finchè rimane @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Affaticato}.</p>",
@@ -816,15 +816,15 @@
             "items": {
                 "Speak with Animals (Constant)": {
                     "description": "<p>Puoi porre domande, ricevere risposte ed usare prove di Diplomazia con gli animali. L'incantesimo non li rende più amichevoli del normale. Gli animali abili tendono ad essere bruschi ed evasivi; quelli meno intelligenti fanno spesso commenti inutili.</p>",
-                    "name": "Speak with Animals (Constant)"
+                    "name": "Parlare con gli Animali (Costante)"
                 },
                 "Invisibility (Self Only)": {
                     "description": "<p>Nascosto da un'illusione, il bersaglio diventa @Compendium[pf2e.conditionspf2e.zJxUflt9np0q4yML]{invisibile}. Questo lo rende @Compendium[pf2e.conditionspf2e.VRSef5y1LmL2Hkjf]{non individuato} a tutte le creature, anche se queste possono tentare di trovare il bersaglio, rendendolo invece @Compendium[pf2e.conditionspf2e.iU0fEDdBp3rXpTMC]{nascosto} da esse. Se il bersaglio usa un'azione ostile, l'incantesimo termina dopo che quell'azione ostile viene completata.</p>\n<hr />\n<p><strong>Intensificato (4°)</strong> L'incantesimo dura 1 minuto, ma non termina se il bersaglio usa un'azione ostile.</p>",
-                    "name": "Invisibility (Self Only)"
+                    "name": "Invisibilità (Solo Se Stesso)"
                 },
                 "Ventriloquism (At Will)": {
                     "description": "<p>Ogni volta che parli o emetti vocalmente un qualsiasi altro suono, puoi far sembrare che la tua voce provenga da qualcun altro entro 18 metri, e puoi cambiare liberamente quella locazione apparentemente usi la voce. Qualsiasi creatura che ne ode il suono può tentare di dubitare della tua illusione.</p><hr /><p><strong>Intensificato (2°)</strong> La durata dell'incantesimo aumenta fino a 1 ora, e puoi cambiare anche tonalità, qualità ed altri aspetti della tua voce. Prima di poter dubitare della tua illusione, una creatura deve superare attivamente una prova di Percezione, oppure usare azioni per interagire con quel suono.</p>",
-                    "name": "Ventriloquism (At Will)"
+                    "name": "Ventriloquio (A Volontà)"
                 },
                 "Grease (At Will)": {
                     "name": "Unto (A Volontà)",
@@ -963,7 +963,7 @@
                     "description": "<p>@Template[type:emanation|distance:5]{5 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that enters or begins its turn within the aura must attempt a @Check[type:fortitude|dc:14] save, or @Check[type:fortitude|dc:17] if the pickled punk is attached to the creature.</p>\n<p>On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, it's also @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute.</p>"
                 },
                 "Attach": {
-                    "name": "Attach",
+                    "name": "Agganciarsi",
                     "description": "<p>When a pickled punk hits a target larger than itself, it uses bizarre excretions to adhere to that creature. This is similar to Grabbing the creature, but the pickled punk is not flat-footed, and it moves with that creature rather than holding it in place.</p>\n<p>Each turn while attached, the pickled punk automatically deals the damage from its jaws Strike to the creature to which it's attached. It also wriggles about, gaining a +2 circumstance bonus to AC as long as it's not also grabbed or restrained.</p>"
                 },
                 "Combustible": {
@@ -986,7 +986,7 @@
                 },
                 "Detect Alignment (At Will) (Good Only)": {
                     "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>",
-                    "name": "Detect Alignment (At Will) (Good Only)"
+                    "name": "Individuazione dell'Allineamento (A Volontà) (Solo Buono)"
                 },
                 "Jaws": {
                     "name": "Fauci"
@@ -1076,7 +1076,7 @@
                 },
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Determination": {
                     "name": "Determinazione",
@@ -1150,7 +1150,7 @@
                     "description": "<p><strong>Requirement</strong> The teraphant has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The teraphant slams the creature onto one of its horns. The target must attempt a @Check[type:reflex|dc:27|basic:true] save or suffer [[/r (3d6+9)[piercing]]] damage and @Localize[PF2E.PersistentDamage.Bleed1d6.success] ([[/r (6d6+18)[piercing]]] damage on a critical failure).</p>"
                 },
                 "Grabbing Trunk": {
-                    "name": "Grabbing Trunk",
+                    "name": "Proboscide Afferrante",
                     "description": "<p>A Medium or smaller creature hit by the teraphant's trunk is grabbed. If the teraphant moves, it can bring the grabbed creature along with it.</p>"
                 }
             },
@@ -1179,55 +1179,55 @@
                 },
                 "Captive Rake": {
                     "description": "<p><strong>Requirements</strong> A creature is grabbed in the glabrezu's pincer.</p>\n<hr />\n<p><strong>Effect</strong> The glabrezu pulls the grabbed creature up to 5 feet closer, then makes two claw Strikes against it. Those Strikes count as one attack when determining a treachery demon's multiple attack penalty, and the penalty doesn't increase until after both Strikes.</p>",
-                    "name": "Captive Rake"
+                    "name": "Dilaniare Prigioniero"
                 },
                 "Treacherous Veil": {
-                    "name": "Treacherous Veil",
-                    "description": "<p>A glabrezu's <em>@UUID[Compendium.pf2e.spells-srd.i35dpZFI7jZcRoBo]{Illusory Disguise}</em> can allow it to appear as a creature of any size.</p>"
+                    "name": "Velo Subdolo",
+                    "description": "<p>Il <em>@UUID[Compendium.pf2e.spells-srd.i35dpZFI7jZcRoBo]{camuffamento illusorio}</em> di un glabrezu può permettergli di apparire come una creatura di qualsiasi taglia.</p>"
                 },
                 "Twisted Desires": {
-                    "name": "Twisted Desires",
+                    "name": "Desideri Distorti",
                     "description": "<p>Once per month, a glabrezu can grant a mortal humanoid the effects of a <em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{Miracle}</em> spell granted by an Abyssal patron, though the glabrezu always perverts the <em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{Miracle}</em> according to their own treacherous nature.</p>"
                 },
                 "Illusory Disguise": {
                     "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened</strong> The spell also disguises your voice and scent, and it gains the auditory trait.</p>\n<p><strong>Heightened</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory trait.</p>",
-                    "name": "Illusory Disguise"
+                    "name": "Camuffamento Illusorio"
                 },
                 "Dimension Door": {
                     "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
-                    "name": "Dimension Door"
+                    "name": "Porta Dimensionale"
                 },
                 "Confusion": {
                     "description": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 minute, with no save to end early.</p>\n<hr /><strong>Heightened</strong> You can target up to 10 creatures.",
-                    "name": "Confusion"
+                    "name": "Confusione"
                 },
                 "Abyssal Pact": {
                     "description": "<p>You call in a favor from another demon whose level is no more than double<em>Abyssal pact's</em>spell level, two demons whose levels are each at least 2 less than double the spell level, or three demons whose levels are each at least 3 less than double the spell level.</p>\n<hr />\n<p><strong>Critical Success</strong> You conjure the demon or demons. They are eager to pursue the task, so they don't ask for a favor.</p>\n<p><strong>Success</strong> You conjure the demon or demons. They are not eager to pursue the task, so they require a favor in return.</p>\n<p><strong>Failure</strong> You don't conjure any demons.</p>\n<p><strong>Critical Failure</strong> The demon or demons are angry that you disturbed them. They appear before you, but they immediately attack you.</p>",
-                    "name": "Abyssal Pact"
+                    "name": "Patto Abissale"
                 },
                 "Tentacle Trip": {
                     "description": "<p><strong>Trigger</strong> A creature within 15 feet of the lie-master uses a manipulate or move action, makes a ranged attack, or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The creature must succeed at a @Check[type:reflex|dc:34] save or be knocked prone by the lie-master's clockwork tentacles.</p>",
                     "name": "Tentacle Trip"
                 },
                 "Dispel Magic": {
-                    "name": "Dispel Magic",
+                    "name": "Dissolvi Magie",
                     "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you succeed against a spell effect, you counteract it. If you succeed against a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>"
                 },
                 "Tongues": {
-                    "name": "Tongues",
+                    "name": "Linguaggi",
                     "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened</strong> The duration is 8 hours.</p>"
                 },
                 "Telekinetic Projectile": {
-                    "name": "Telekinetic Projectile",
+                    "name": "Proiettile Telecinetico",
                     "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack attack against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr /><strong>Critical Success</strong> You deal double damage.\n<p><strong>Success</strong> You deal full damage.</p>\n<hr /><strong>Heightened</strong> The damage increases by 1d6."
                 },
                 "Truth Vulnerability": {
-                    "name": "Truth Vulnerability",
+                    "name": "Vulnerabilità alla Verità",
                     "description": "<p>A glabrezu's lies sustain them, and the truth can destroy them. Whenever a revelation effect counteracts or reveals the glabrezu's illusions or the glabrezu fails a save against an effect that would prevent them from lying (such as zone of truth), the demon takes [[/r (3d6+4)[mental]]] damage. They take this damage only once per effect, even if the effect reveals multiple illusions or prevents multiple lies.</p>"
                 },
                 "Sudden Betrayal": {
-                    "name": "Sudden Betrayal",
-                    "description": "<p>A glabrezu can always use Deception when rolling initiative as long as they're aware of at least one opponent before initiative is rolled. When using Deception for initiative, the demon gains a +2 circumstance bonus to Deception.</p>"
+                    "name": "Tradimento Improvviso",
+                    "description": "<p>Un glabrezu può sempre usare Inganno quando tira per l'Iniziativa, purché sia consapevole di almeno un avversario prima che l'Iniziativa sia tirata. Quando usa Inganno per l'Iniziativa, il demone ottiene bonus di circostanza +2 a Inganno.</p>"
                 },
                 "Reverse Gravity": {
                     "_source": "spells-srd.37ESlJzUvVbOudOT"
@@ -1352,7 +1352,7 @@
                 },
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Hurl": {
                     "description": "<p><strong>Requirements</strong> Lord Guirden has a Medium or smaller creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> Lord Guirden hurls the grabbed creature into a target adjacent to him. He makes a fist Strike against the adjacent target. On a success, the target and hurled creature both take 3d10+14 bludgeoning damage and are knocked prone. On a failure, only the thrown creature takes the damage and is knocked prone.</p>",
@@ -1367,7 +1367,7 @@
                     "description": "<p>Lord Guirden makes two fist Strikes, ignoring the multiple attack penalty until after both Strikes.</p>"
                 },
                 "Legal Lore": {
-                    "name": "Legal Lore"
+                    "name": "Sapienza Legale"
                 }
             },
             "name": "Lord Guirden"
@@ -1391,18 +1391,18 @@
                 },
                 "See Invisibility": {
                     "description": "<p>You can see @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} creatures and objects. They appear to you as translucent shapes, and they are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} to you.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell has a duration of 8 hours.</p>",
-                    "name": "See Invisibility"
+                    "name": "Vedere Invisibilità"
                 },
                 "Silence": {
                     "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing or other senses alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell effect emanates from the touched creature, silencing all sound in or passing through a 10- foot radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
-                    "name": "Silence"
+                    "name": "Silenzio"
                 },
                 "Flame Strike": {
-                    "name": "Flame Strike",
+                    "name": "Colpo Infuocato",
                     "description": "<p>You call a rain of divine fire that plummets down from above, dealing 8d6 fire damage. Because the flame is infused with divine energy, creatures in the area apply only half their usual fire resistance. Creatures that are immune to fire, instead of gaining the usual benefit of immunity, treat the results of their saving throws as one degree of success better.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "Phantasmal Killer": {
-                    "name": "Phantasmal Killer",
+                    "name": "Allucinazione Mortale",
                     "description": "<p>You create a phantasmal image of the most fearsome creature imaginable to the target. Only the spell's target can see the killer, though you can see the vague shape of the illusion as it races forth to attack. The effect of the killer is based on the outcome of the target's Will save.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target takes 4d6 mental damage and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target takes 8d6 mental damage and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is so afraid it might die. It must attempt a Fortitude save; if the target fails, it dies. On a successful Fortitude save, the target takes 12d6 mental damage, is @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn, and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 4}. This effect has the incapacitation trait.</p>\n<hr /><strong>Heightened (+1)</strong> The damage increases by 2d6 on a failure and by 3d6 on a critical failure."
                 },
                 "Designate Apostate": {
@@ -1411,22 +1411,22 @@
                 },
                 "Harm": {
                     "description": "<p>You channel negative energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 negative damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><strong>1 Action</strong> (somatic) The spell has a range of touch.</p>\n<p><strong>2 Actions</strong> (verbal, somatic) The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><strong>3 Actions</strong> (material, verbal, somatic) You disperse negative energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-                    "name": "Harm"
+                    "name": "Ferire"
                 },
                 "Illusory Disguise": {
                     "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory trait.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory trait.</p>",
-                    "name": "Illusory Disguise"
+                    "name": "Camuffamento Illusorio"
                 },
                 "Undetectable Alignment": {
-                    "name": "Undetectable Alignment",
+                    "name": "Allineamento Imperscrutabile",
                     "description": "<p>You shroud a creature in wards that hide its alignment. The target appears to be neutral to all effects that would detect its alignment.</p>"
                 },
                 "Guidance": {
-                    "name": "Guidance",
+                    "name": "Guida",
                     "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>"
                 },
                 "Heal": {
-                    "name": "Heal",
+                    "name": "Guarire",
                     "description": "<p>You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><strong>1 Action</strong> (somatic) The spell has a range of touch.</p>\n<p><strong>2 Actions</strong> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><strong>3 Actions</strong> (material, somatic, verbal) You disperse positive energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "Finger of Death": {
@@ -1603,7 +1603,7 @@
                     "name": "Venom Stream"
                 },
                 "+2 Status to All Saves vs. Mental": {
-                    "name": "+2 Status to All Saves vs. Mental"
+                    "name": "Status +2 a Tutti i TS Contro Mentale"
                 },
                 "Attack of Opportunity (Stinger Only)": {
                     "name": "Attack of Opportunity (Stinger Only)"
@@ -1730,7 +1730,7 @@
             "items": {
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Smoke Vision": {
                     "name": "Fumovisione",
@@ -1808,21 +1808,21 @@
                 },
                 "Free Blade": {
                     "description": "<p><strong>Trigger</strong> The ghaele ends its turn while unable to act or attempts a greatsword Strike that would take a circumstance or status penalty.</p>\n<hr />\n<p><strong>Effect</strong> A ghaele's blade is implacable in the pursuit of freedom, and its energies can overpower any effect that would interfere with its swordplay.</p>\n<p>The ghaele attempts to counteract each effect that prevents it from making a greatsword Strike, gives it a penalty to its greatsword Strike, or prevents it from acting.</p>\n<p>The ghaele can use this ability even if it's otherwise unable to act.</p>",
-                    "name": "Free Blade"
+                    "name": "Lama Libera"
                 },
                 "Light Form": {
                     "description": "<p>A ghaele's body is partially corporeal and partially composed of light, with a color corresponding to the elemental energy currently residing in its blade (see Choose Weakness).</p>\n<p>It can move through solid objects but can't end its action within a solid object.</p>",
-                    "name": "Light Form"
+                    "name": "Forma Luminosa"
                 },
                 "Holy Greatsword": {
                     "name": "Holy Greatsword"
                 },
                 "Choose Weakness": {
-                    "name": "Choose Weakness",
+                    "name": "Scegliere Debolezza",
                     "description": "<p>A ghaele attempts to Recall Knowledge about a foe they are facing.</p>\n<p>If successful, they can change the elemental damage dealt by their greatsword and light ray to acid, cold, electricity, fire, or sonic, usually to match the foe's weakness.</p>\n<p>They can also change their energy resistance to any of these energy types (this can be a different type than for their attacks).</p>\n<p>The choices remain until they next use.</p>"
                 },
                 "Ghaele's Gaze": {
-                    "name": "Ghaele's Gaze",
+                    "name": "Sguardo del Ghaele",
                     "description": "<p>When a ghaele fixes their gaze upon a non-good creature, the creature is subjected to the effects of <em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{Divine Decree}</em> (@Check[type:will|dc:20|name:Divine Decree|traits:damaging-effect] save).</p>\n<p>If it survives, the creature is temporarily immune to for 1 minute.</p>"
                 },
                 "Warfare Lore": {
@@ -1897,30 +1897,30 @@
                 },
                 "Mage Armor": {
                     "description": "<p>You ward yourself with shimmering magical energy, gaining a +1 item bonus to AC and a maximum Dexterity modifier of +5. While wearing mage armor, you use your unarmored proficiency to calculate your AC.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You gain a +1 item bonus to saving throws.</p>\n<p><strong>Heightened (6th)</strong> The item bonus to AC increases to +2, and you gain a +1 item bonus to saving throws.</p>\n<p><strong>Heightened (8th)</strong> The item bonus to AC increases to +2, and you gain a +2 item bonus to saving throws.</p>\n<p><strong>Heightened (10th)</strong> The item bonus to AC increases to +3, and you gain a +3 item bonus to saving throws.</p>",
-                    "name": "Mage Armor"
+                    "name": "Armatura Magica"
                 },
                 "Shield": {
                     "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the magic missile spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
-                    "name": "Shield"
+                    "name": "Scudo"
                 },
                 "Feeblemind": {
-                    "name": "Feeblemind",
+                    "name": "Regressione Mentale",
                     "description": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>\n<p><strong>Failure</strong> The target is Stupefied 4 with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as -5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>"
                 },
                 "Black Tentacles": {
-                    "name": "Black Tentacles",
+                    "name": "Tentacoli Neri",
                     "description": "<p>Oily black tentacles rise up and attempt to Grapple each creature in the area. Make spell attack rolls against the Fortitude DC of each creature. Any creature you succeed against is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} and takes 3d6 bludgeoning damage. Whenever a creature ends its turn in the area, the tentacles attempt to grab that creature if they haven't already, and they deal 1d6 bludgeoning damage to any creature already Grabbed.</p>\n<p>The tentacles' Escape DC is equal to your spell DC. A creature can attack a tentacle in an attempt to release its grip. Its AC is equal to your spell DC, and it is destroyed if it takes 12 or more damage. Even if destroyed, additional tentacles continue to grow in the area until the duration ends. You can Dismiss the spell.</p>"
                 },
                 "Acid Arrow": {
-                    "name": "Acid Arrow",
+                    "name": "Freccia Acida",
                     "description": "<p>You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus [[/r 1d6[persistent,acid]]] damage. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>"
                 },
                 "Illusory Creature": {
-                    "name": "Illusory Creature",
+                    "name": "Creatura Illusoria",
                     "description": "<p>You create an illusory image of a Large or smaller creature. It generates the appropriate sounds, smells, and feels believable to the touch. If you and the image are ever farther than 500 feet apart, the spell ends.</p>\n<p>The image can't speak, but you can use your actions to speak through the creature, with the spell disguising your voice as appropriate. You might need to attempt a Deception or Performance check to mimic the creature, as determined by the GM. This is especially likely if you're trying to imitate a specific person and engage with someone that person knows.</p>\n<p>In combat, the illusion can use 2 actions per turn, which it uses when you Sustain the Spell. It uses your spell attack roll for attack rolls and your spell DC for its AC. Its saving throw modifiers are equal to your spell DC - 10. It is substantial enough that it can flank other creatures. If the image is hit by an attack or fails a save, the spell ends.</p>\n<p>The illusion can cause damage by making the target believe the illusion's attacks are real, but it cannot otherwise directly affect the physical world. If the illusory creature hits with a Strike, the target takes mental damage equal to 1d4 plus your spellcasting ability modifier. This is a mental effect. The illusion's Strikes are nonlethal. If the damage doesn't correspond to the image of the monster-for example, if an illusory Large dragon deals only 5 damage-the GM might allow the target to attempt a Perception check to disbelieve the spell as a free action. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not deactivate regeneration or trigger other effects that require a certain damage type. The GM should track illusory damage dealt by the illusion.</p>\n<p>Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn't take any further damage from it.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage of the image's Strikes increases by 1d4, and the maximum size of creature you can create increases by one (to a maximum of Gargantuan).</p>"
                 },
                 "Telekinetic Projectile": {
-                    "name": "Telekinetic Projectile",
+                    "name": "Proiettile Telecinetico",
                     "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack attack against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr /><strong>Critical Success</strong> You deal double damage.\n<p><strong>Success</strong> You deal full damage.</p>\n<hr /><strong>Heightened (+1)</strong> The damage increases by 1d6."
                 },
                 "Tinted Goggles": {
@@ -1959,7 +1959,7 @@
                 },
                 "Fly": {
                     "_source": "spells-srd.A2JfEKe6BZcTG1S8",
-                    "name": "Fly",
+                    "name": "Volare",
                     "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>"
                 },
                 "Invisibility Sphere": {
@@ -1993,7 +1993,7 @@
                     "_source": "spells-srd.vLzFcIaSXs7YTIqJ"
                 },
                 "Legal Lore": {
-                    "name": "Legal Lore"
+                    "name": "Sapienza Legale"
                 }
             },
             "name": "Kapral"
@@ -2039,7 +2039,7 @@
             "items": {
                 "Locate (At Will)": {
                     "description": "<p>Apprendi la direzione verso il bersaglio (se hai scelto un oggetto specifico come \"la spada di mia madre\") o verso il bersaglio più vicino (se hai scelto un tipo di oggetto, come \"spade\"). Se il bersaglio è un oggetto specifico, devi averlo osservato direttamente con i tuoi sensi. Se è un tipo di oggetto, devi comunque avere un'immagine mentale accurata del tipo di oggetto. Se tra te e il bersaglio c'è piombo o acqua corrente, non puoi localizzare l'oggetto. Ciò significa che potresti scoprire un tipo di oggetto più lontano se quello più vicino è dietro a piombo o acqua corrente.</p><hr /><p><strong>Intensificato (5°)</strong> Puoi prendere come bersaglio una creatura o una stirpe specifica invece di un oggetto, ma devi aver incontrato da vicino la creatura o una creatura di quella stirpe che vuoi prendere come bersaglio.</p>",
-                    "name": "Locate (At Will)"
+                    "name": "Localizzare (A Volontà)"
                 },
                 "Jaws": {
                     "name": "Fauci"
@@ -2086,7 +2086,7 @@
                 },
                 "Attack of Opportunity (Jaws Only)": {
                     "name": "Attack of Opportunity (Jaws Only)",
-                    "description": "<p>Jaws only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                    "description": "<p>Solo fauci</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 }
             },
             "name": "Veksciralenix",
@@ -2106,7 +2106,7 @@
                 }
             },
             "name": "Miriel Grayleaf",
-            "npcSenses": "low-light vision"
+            "npcSenses": "visione crepuscolare"
         },
         "Venom Mage": {
             "items": {
@@ -2127,14 +2127,14 @@
                 },
                 "Summon Animal": {
                     "description": "<p>You conjure an animal to fight for you. You summon a common creature that has the animal trait and whose level is -1. Heightening the spell increases the maximum level of creature you can summon.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> Level 1</p>\n<p><strong>Heightened (3rd)</strong> Level 2</p>\n<p><strong>Heightened (4th)</strong> Level 3</p>\n<p><strong>Heightened (5th)</strong> Level 5</p>\n<p><strong>Heightened (6th)</strong> Level 7</p>\n<p><strong>Heightened (7th)</strong> Level 9</p>\n<p><strong>Heightened (8th)</strong> Level 11</p>\n<p><strong>Heightened (9th)</strong> Level 13</p>\n<p><strong>Heightened (10th)</strong> Level 15</p>",
-                    "name": "Summon Animal"
+                    "name": "Evoca Animale"
                 },
                 "Ray of Frost": {
                     "description": "<p>You blast an icy ray. Make a spell attack roll. The ray deals cold damage equal to 1d4 + your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
-                    "name": "Ray of Frost"
+                    "name": "Raggio di Gelo"
                 },
                 "Heal": {
-                    "name": "Heal",
+                    "name": "Guarire",
                     "description": "<p>You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><strong>1 Action</strong> (somatic) The spell has a range of touch.</p>\n<p><strong>2 Actions</strong> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><strong>3 Actions</strong> (material, somatic, verbal) You disperse positive energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "Swarming Wasp Stings": {
@@ -2142,15 +2142,15 @@
                     "description": "<p>You duplicate the venomous sting of a wyvern. You deal [[/r 3d4[piercing]]] damage to the touched creature and afflict it with wyvern venom. If the target takes piercing damage, they must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes [[/r 5d6[poison]]] damage.</p>\n<p><strong>Failure</strong> The target is afflicted with Wyvern Venom at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with wyvern venom at stage 2.</p><hr /><p><strong>Wyvern Venom</strong> (poison) <strong>Level</strong> 9</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 5d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 6d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 8d6[poison]]] damage (1 round)</p>"
                 },
                 "Blindness": {
-                    "name": "Blindness",
+                    "name": "Cecità",
                     "description": "<p>You blind the target. The effect is determined by the target's Fortitude save. The target then becomes temporarily immune for 1 minute.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} until its next turn begins.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} permanently.</p>"
                 },
                 "Animal Messenger": {
-                    "name": "Animal Messenger",
+                    "name": "Animale Messaggero",
                     "description": "<p>You offer a gift of food, and an ordinary Tiny wild animal within range approaches to eat it. You imprint the image, direction, and distance of an obvious place or landmark well known to you within the animal. Optionally, you can attach a small object or note up to light Bulk to it. The animal does its best to reach the destination; if it makes it there, it waits nearby until the duration expires, allowing other nonhostile creatures to approach it and remove the attached object. The spell ends after 24 hours or when a creature removes the attached object, whichever happens first.</p>\n<p>If there are no Tiny wild animals in range, the spell is lost.</p>"
                 },
                 "Faerie Fire": {
-                    "name": "Faerie Fire",
+                    "name": "Luminescenza",
                     "description": "<p>All creatures in the area when you cast the spell are limned in colorful, heatless fire of a color of your choice for the duration. Visible creatures can't be @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} while affected by faerie fire. If the creatures are @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}, they are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} while affected by faerie fire, rather than being @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}.</p>"
                 },
                 "Imp Sting": {
@@ -2158,23 +2158,23 @@
                     "description": "<p>You reproduce an imp's evil, poisonous sting, stabbing at an enemy and possibly affecting them with the devil's benumbing venom. You deal [[/r 1d4[piercing]]] damage to the touched creature and afflict the creature with imp venom. If the target takes piercing damage, they also take [[/r 1d6[evil]]] damage and must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes [[/r 1d6[poison]]] damage.</p>\n<p><strong>Failure</strong> The target is afflicted with Imp Venom at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with imp venom at stage 2.</p>\n<hr />\n<p><strong>Imp Venom</strong> (poison) <strong>Level 3</strong></p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d6[poison]]] and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}</p>\n<p><strong>Stage 2</strong> [[/r 1d6[poison]]], clumsy 1, and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round).</p>"
                 },
                 "Fleet Step": {
-                    "name": "Fleet Step",
+                    "name": "Passo Rapido",
                     "description": "<p>You gain a +30-foot status bonus to your Speed.</p>"
                 },
                 "Guidance": {
-                    "name": "Guidance",
+                    "name": "Guida",
                     "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>"
                 },
                 "Gust of Wind": {
-                    "name": "Gust of Wind",
+                    "name": "Folata di Vento",
                     "description": "<p>A violent wind issues forth from your palm, blowing from the point where you are when you cast the spell to the line's opposite end. The wind extinguishes small non-magical fires, disperses fog and mist, blows objects of light Bulk or less around, and pushes larger objects. Large or smaller creatures in the area must attempt a Fortitude save. Large or smaller creatures that later move into the gust must attempt the save on entering.</p>\n<hr /><strong>Critical Success</strong> The creature is unaffected.\n<p><strong>Success</strong> The creature can't move against the wind.</p>\n<p><strong>Failure</strong> The creature is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. If it was flying, it suffers the effects of critical failure instead.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 30 feet in the wind's direction, knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}, and takes 2d6 bludgeoning damage.</p>"
                 },
                 "Light": {
                     "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
-                    "name": "Light"
+                    "name": "Luce"
                 },
                 "Spider Sting": {
-                    "name": "Spider Sting",
+                    "name": "Morso del Ragno",
                     "description": "<p>You magically duplicate a spider's venomous sting. You deal 1d4 piercing damage to the touched creature and afflict it with spider venom. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Spider Venom</strong> (poison)</p>\n<p><strong>Level 1</strong> ; Maximum Duration 4 rounds.</p>\n<p><strong>Stage 1</strong> 1d4 poison damage and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> 1d4 poison damage and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round).</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes 1d4 poison damage.</p>\n<p><strong>Failure</strong> The target is afflicted with spider venom at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with spider venom at stage 2.</p>"
                 },
                 "Venom Explosion": {
@@ -2229,7 +2229,7 @@
                 }
             },
             "name": "Grabble Forden",
-            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
             "npcSenses": "scurovisione"
         },
         "Franca Laurentz": {
@@ -2370,7 +2370,7 @@
                 },
                 "Formula Book": {
                     "description": "<p><span class=\"fontstyle0\">Un formulario contiene le formule necessarie per creare ulteriori oggetti rispetto all'equipaggiamento comune presente in questo capitolo; gli alchimisti di solito ne ottengono uno gratuitamente. Ogni formulario può contenere fino a 100 formule di oggetti diversi. Le formule possono essere presenti anche su fogli di pergamena, su tavolette e praticamente su qualsiasi altro supporto; non c'è bisogno che copi le formule su un libro specifico finché le hai a portata di mano per consultarle.</span></p>",
-                    "name": "Formula Book"
+                    "name": "Formulario"
                 },
                 "Sickle": {
                     "name": "Falcetto"
@@ -2419,7 +2419,7 @@
                     "name": "Inhabit Vessel"
                 },
                 "Wave": {
-                    "name": "Wave"
+                    "name": "Onda"
                 },
                 "Internal Spell Strike": {
                     "description": "<p>The elemental vessel targets an engulfed creature with one of its spells. The spell must have a range of touch.</p>",
@@ -2456,22 +2456,22 @@
                 },
                 "Dominate": {
                     "description": "<p>You take command of the target, forcing it to obey your orders. If you issue an obviously self-destructive order, the target doesn't act until you issue a new order. The effect depends on its Will save.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} as it fights off your commands.</p>\n<p><strong>Failure</strong> The target follows your orders but can attempt a Will save at the end of each of its turns. On a success, the spell ends.</p>\n<p><strong>Critical Failure</strong> As a failure, but the target receives a new save only if you give it a new order that is against its nature, such as killing its allies.</p>\n<hr /><strong>Heightened (10th)</strong> The duration is unlimited.",
-                    "name": "Dominate"
+                    "name": "Dominare"
                 },
                 "Veil": {
                     "description": "<p>You disguise the targets as other creatures of the same body shape and roughly similar height (within 6 inches) and weight (within 50 pounds). The disguise can hide the targets' identities or let them appear to be of another ancestry, but it's not precise enough to impersonate specific individuals. The spell doesn't change voice, scent, or mannerisms. You choose the disguise for each target; for example, you could make one target appear to be a dwarf and another an elf. Casting veil counts as setting up a disguise for the purpose of the Impersonate action. It allows the target to ignore any circumstance penalties they might take for being disguised as dissimilar creatures, and it gives the targets a +4 status bonus to Deception checks to prevent others from seeing through their disguises, and add their level even if untrained. You can Dismiss any or all of these disguises.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell also disguises the targets' voices and scents; it gains the auditory trait.</p>\n<p><strong>Heightened (7th)</strong> The targets can appear as any creature of the same size, even specific individuals. You must have seen an individual to reproduce their appearance. The spell also disguises the targets' voices and scents; it gains the auditory trait.</p>",
-                    "name": "Veil"
+                    "name": "Velo"
                 },
                 "Zealous Restoration": {
                     "description": "<p>A zealborn can't regain Hit Points through resting or negative healing; they feed only on the idealism of their supporters, regaining 10 Hit Points per day for each creature under the effects of a <em>geas</em> cast by the zealborn. Creatures under a zealborn's <em>geas</em> have their maximum HP reduced by 10 each day until they are burned away to a husk and perish. After 24 hours, such creatures rise as zeal-damned ghouls under the zealborn's control. Zeal-damned ghouls eat only the flesh of evil or chaotic creatures and deal an additional 1d6 chaotic and 1d6 negative damage with their attacks.</p>",
                     "name": "Zealous Restoration"
                 },
                 "Zealous Conviction": {
-                    "name": "Zealous Conviction",
+                    "name": "Convincimento Zelante",
                     "description": "<p>You bypass your targets' rational minds, instilling them with unshakable conviction and zeal. The targets each gain 12 temporary Hit Points and a +2 status bonus to Will saves against mental effects, as their faith overrides the signals from their own bodies and minds. If you tell a target to do something, it must comply with your request, though if it would normally find the task repugnant, it can attempt a Will save at the end of its turn each round due to the cognitive dissonance. On a success, it ends the spell's effects on itself entirely.</p>"
                 },
                 "Subconscious Suggestion": {
-                    "name": "Subconscious Suggestion",
+                    "name": "Suggestione Inconscia",
                     "description": "<p>You implant a subconscious suggestion deep within the target's mind for them to follow when a trigger you specify occurs. You suggest a course of action to the target. Your directive must be phrased in such a way as to seem like a logical course of action to the target, and it can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The suggestion remains in the target's subconscious until the next time you prepare. If the trigger occurs before then, the target immediately follows your suggestion. The effect has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the duration is 1 hour.</p>\n<hr /><strong>Heightened (9th)</strong> You can target up to 10 creatures."
                 },
                 "Geas (Ritual)": {
@@ -2479,7 +2479,7 @@
                     "description": "<p>You enforce a magic rule on a willing target, forcing it to either perform or refrain from carrying out a certain act. A <em>geas</em> to perform an act is usually conditional, such as, \"Always offer hospitality to strangers seeking a place to stay.\" An unconditional <em>geas</em> to perform a certain act doesn't require the target to perform that act exclusively, though it must prioritize the task above all leisurely pursuits. The most common <em>geas</em> to refrain from carrying out an act is a specification to avoid violating a contract. In those cases, the secondary caster usually takes charge of making sure the wording of the contract is attuned correctly with the ritual's magic. Because the target is willing, <em>geas</em> can have a duration that lasts for as long as the target agrees to. If the target is unable to fulfill the <em>geas</em>, it becomes @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}, and the sickened condition increases by 1 for each consecutive day it is prevented from following the <em>geas</em>, to a maximum of sickened 4. The sickened condition ends immediately when it follows the <em>geas</em> again; it can't remove the sickened condition in any other way. Only powerful magic such as a <em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{Wish}</em> spell can remove the effects of <em>geas</em> from a willing target.</p>\n<hr />\n<p><strong>Critical Success</strong> The<em>geas</em>succeeds, and the target receives a +1 status bonus to skill checks that directly uphold the<em>geas</em>(at the GM's discretion).</p>\n<p><strong>Success</strong> The<em>geas</em>succeeds.</p>\n<p><strong>Failure</strong> The<em>geas</em>fails.</p>\n<p><strong>Critical Failure</strong> The<em>geas</em>fails, and you are instead affected by the<em>geas</em>you were attempting to place on the target. You are considered an unwilling target, so the<em>geas</em>can be counteracted with a <em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{Remove Curse}</em> spell.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can use <em>geas</em> on an unwilling creature; it can attempt a Will save to negate the effect. If the target fails this Will save, the <em>geas</em> lasts up to 1 week. A <em>remove curse</em> spell can counteract a <em>geas</em> on an unwilling creature, in addition to powerful magic such as a <em>wish</em> spell. A clever unwilling creature can subvert the <em>geas</em> by contriving situations that prevent it from complying, but in that case it becomes @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} (as described above).</p>\n<p><strong>Heightened (7th)</strong> As 5th level, but the <em>geas</em> lasts for up to 1 year on an unwilling creature.</p>\n<p><strong>Heightened (9th)</strong> As 5th level, but the <em>geas</em> lasts for a duration you choose (even unlimited) on an unwilling creature.</p>"
                 },
                 "Illusory Creature": {
-                    "name": "Illusory Creature",
+                    "name": "Creatura Illusoria",
                     "description": "<p>You create an illusory image of a Large or smaller creature. It generates the appropriate sounds, smells, and feels believable to the touch. If you and the image are ever farther than 500 feet apart, the spell ends.</p>\n<p>The image can't speak, but you can use your actions to speak through the creature, with the spell disguising your voice as appropriate. You might need to attempt a Deception or Performance check to mimic the creature, as determined by the GM. This is especially likely if you're trying to imitate a specific person and engage with someone that person knows.</p>\n<p>In combat, the illusion can use 2 actions per turn, which it uses when you Sustain the Spell. It uses your spell attack roll for attack rolls and your spell DC for its AC. Its saving throw modifiers are equal to your spell DC - 10. It is substantial enough that it can flank other creatures. If the image is hit by an attack or fails a save, the spell ends.</p>\n<p>The illusion can cause damage by making the target believe the illusion's attacks are real, but it cannot otherwise directly affect the physical world. If the illusory creature hits with a Strike, the target takes mental damage equal to 1d4 plus your spellcasting ability modifier. This is a mental effect. The illusion's Strikes are nonlethal. If the damage doesn't correspond to the image of the monster-for example, if an illusory Large dragon deals only 5 damage-the GM might allow the target to attempt a Perception check to disbelieve the spell as a free action. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not deactivate regeneration or trigger other effects that require a certain damage type. The GM should track illusory damage dealt by the illusion.</p>\n<p>Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn't take any further damage from it.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage of the image's Strikes increases by 1d4, and the maximum size of creature you can create increases by one (to a maximum of Gargantuan).</p>"
                 },
                 "Little Favors": {
@@ -2594,7 +2594,7 @@
                 },
                 "Confusion (At Will)": {
                     "description": "<p>Disorienti il bersaglio con strani impulsi, facendolo agire a caso. Gli effetti si basano sul tiro salvezza su Volontà del bersaglio. Puoi Interrompere l'incantesimo.</p><hr /><p><strong>Successo Critico </strong>Il bersaglio non è influenzato.</p><p><strong>Successo</strong> Il bersaglio balbetta in modo incoerente ed è @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stordito} 1.</p><p><strong>Fallimento </strong>Il bersaglio è @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confuso} per 1 minuto. Può effettuare un nuovo tiro salvezza alla fine di ogni suo turno per porre fine all'effetto.</p><p><strong>Fallimento Critico </strong>Il bersaglio è @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confuso} per 1 minuto, senza nessun tiro salvezza per porre fine all'effetto anticipatamente.</p><hr /><p><strong>Intensificato (8°) </strong>Puoi prendere come bersaglio fino a 8 creature.</p>",
-                    "name": "Confusion (At Will)"
+                    "name": "Confusione (A Volontà)"
                 },
                 "Dimension Door (At Will)": {
                     "name": "Porta Dimensionale (A Volontà)",
@@ -2695,58 +2695,58 @@
                 },
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Flame Strike": {
                     "description": "<p>You call a rain of divine fire that plummets down from above, dealing 8d6 fire damage. Because the flame is infused with divine energy, creatures in the area apply only half their usual fire resistance. Creatures that are immune to fire, instead of gaining the usual benefit of immunity, treat the results of their saving throws as one degree of success better.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
-                    "name": "Flame Strike"
+                    "name": "Colpo Infuocato"
                 },
                 "Phantasmal Killer": {
                     "description": "<p>You create a phantasmal image of the most fearsome creature imaginable to the target. Only the spell's target can see the killer, though you can see the vague shape of the illusion as it races forth to attack. The effect of the killer is based on the outcome of the target's Will save.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target takes 4d6 mental damage and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target takes 8d6 mental damage and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is so afraid it might die. It must attempt a Fortitude save; if the target fails, it dies. On a successful Fortitude save, the target takes 12d6 mental damage, is @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn, and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 4}. This effect has the incapacitation trait.</p>\n<hr /><strong>Heightened (+1)</strong> The damage increases by 2d6 on a failure and by 3d6 on a critical failure.",
-                    "name": "Phantasmal Killer"
+                    "name": "Allucinazione Mortale"
                 },
                 "Safeguard Secret": {
                     "description": "<p>You ensure a secret remains safe from prying spies. Choose one piece of information that at least some of the targets know; you can target a creature only if it remains within range for the full minute during which you Cast the Spell. The spell grants those who know the piece of knowledge you have chosen a +4 status bonus to skill checks (typically Deception checks) to conceal this knowledge and to saving throws against spells that specifically attempt to obtain this knowledge from them and effects that would force them to reveal it.</p>\n<p>If you Cast this Spell again, any previous safeguard secret you had cast ends.</p>",
-                    "name": "Safeguard Secret"
+                    "name": "Segreto Protetto"
                 },
                 "Silence": {
                     "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing or other senses alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell effect emanates from the touched creature, silencing all sound in or passing through a 10- foot radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
-                    "name": "Silence"
+                    "name": "Silenzio"
                 },
                 "Harm": {
                     "description": "<p>You channel negative energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 negative damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><strong>1 Action</strong> (somatic) The spell has a range of touch.</p>\n<p><strong>2 Actions</strong> (verbal, somatic) The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><strong>3 Actions</strong> (material, verbal, somatic) You disperse negative energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-                    "name": "Harm"
+                    "name": "Ferire"
                 },
                 "Illusory Disguise": {
                     "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory trait.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory trait.</p>",
-                    "name": "Illusory Disguise"
+                    "name": "Camuffamento Illusorio"
                 },
                 "Death Ward": {
-                    "name": "Death Ward",
+                    "name": "Interdizione alla Morte",
                     "description": "<p>You shield a creature from the ravages of negative energy. It receives a +4 status bonus to saves against death and negative effects, gains negative resistance 10, and suppresses the effects of the @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed} condition.</p>"
                 },
                 "Shadow Blast": {
-                    "name": "Shadow Blast",
+                    "name": "Esplosione d’Ombra",
                     "description": "<p>You shape the quasi-real substance of the Shadow Plane into a blast. Choose acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, or sonic damage, and choose a 30-foot cone, a 15-foot burst within 120 feet, or a 50-foot line. The blast deals 5d8 damage of the type you chose to each creature in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
                 },
                 "Blindness": {
                     "description": "<p>You blind the target. The effect is determined by the target's Fortitude save. The target then becomes temporarily immune for 1 minute.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} until its next turn begins.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} permanently.</p>",
-                    "name": "Blindness"
+                    "name": "Cecità"
                 },
                 "Fear": {
-                    "name": "Fear",
+                    "name": "Paura",
                     "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>\n<hr /><strong>Heightened (3rd)</strong> You can target up to five creatures."
                 },
                 "Guidance": {
-                    "name": "Guidance",
+                    "name": "Guida",
                     "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>"
                 },
                 "Heal": {
-                    "name": "Heal",
+                    "name": "Guarire",
                     "description": "<p>You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><strong>1 Action</strong> (somatic) The spell has a range of touch.</p>\n<p><strong>2 Actions</strong> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><strong>3 Actions</strong> (material, somatic, verbal) You disperse positive energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "Light": {
-                    "name": "Light",
+                    "name": "Luce",
                     "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>"
                 },
                 "Arrows With Shadow Essence": {
@@ -2815,7 +2815,7 @@
                 },
                 "Zone of Truth (At Will)": {
                     "description": "<p>Designi un'area all'interno della quale le creature sono obbligate a dire soltanto la verità. Le creature all'interno dell'area o quelle che vi entrano hanno difficoltà a mentire. Qualsiasi creatura potenzialmente colpita deve effettuare un tiro salvezza su Volontà quando l'incantesimo viene lanciato o quando la creatura entra per la prima volta all'interno dell'area. Tiene il risultato del suo tiro salvezza iniziale se esce e rientra nell'area. Le creature colpite sono consapevoli di questo ammaliamento; di conseguenza, possono evitare di rispondere a domande alle quali normalmente risponderebbero con una bugia, o potrebbero essere evasive per tutto il tempo in cui rimangono entro i confini della verità.</p><p> </p><p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p><p><strong>Successo</strong> II bersaglio subisce penalita di status -2 alle prove di Inganno.</p><p><strong>Fallimento</strong> Il bersaglio non può pronunciare bugie deliberate e intenzionali e subisce penalità di status -2 alle prove di Inganno.</p><p><strong>Fallimento Critico</strong> Il bersaglio non può pronunciare bugie deliberate e intenzionali e subisce penalità di status -4 alle prove di Inganno.</p>",
-                    "name": "Zone of Truth (At Will)"
+                    "name": "Zona di Verità (A Volontà)"
                 },
                 "Robe of Eyes": {
                     "name": "Tunica degli Occhi",
@@ -2823,18 +2823,18 @@
                 },
                 "Charm": {
                     "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes @UUID[Compendium.pf2e.conditionitems.v66R7FdOf11l94im]{Friendly} toward you. If it was Friendly, it becomes @UUID[Compendium.pf2e.conditionitems.v44P3WUcU1j0115l]{Helpful}. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (+4)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (+8)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
-                    "name": "Charm"
+                    "name": "Charme"
                 },
                 "Steal Memories": {
                     "description": "<p>Ixusoth reaches out with her mind and attempts to steal memories from a creature within 30 feet. The target must succeed at a @Check[type:will|dc:40] saving throw or become stupefied 2 and have some of its memories stolen. When Ixusoth steals memories, she learns some of the creature's memories (chosen by the GM). These memories are then lost to that creature.</p>",
                     "name": "Steal Memories"
                 },
                 "Mind Blank": {
-                    "name": "Mind Blank",
+                    "name": "Vuoto Mentale",
                     "description": "<p>Powerful wards hide a creature from divination magic. The target gains a +4 status bonus to saves against mental effects. Mind blank attempts to counteract any detection, revelation, and scrying effects as if its spell level were 1 higher than its actual level. On a success, the divination effect functions normally except that it detects nothing about the target and its possessions. For instance, detect magic would still detect other magic in the area, but not any magic on the target.</p>"
                 },
                 "Dispel Magic": {
-                    "name": "Dispel Magic",
+                    "name": "Dissolvi Magie",
                     "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you succeed against a spell effect, you counteract it. If you succeed against a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>"
                 },
                 "Lore Master": {
@@ -2862,12 +2862,12 @@
                     "_source": "spells-srd.OhD2Z6rIGGD5ocZA"
                 },
                 "Bardic Lore": {
-                    "name": "Bardic Lore"
+                    "name": "Sapienza dei Bardi"
                 }
             },
             "name": "Ixusoth",
-            "npcAc": "all-around vision",
-            "npcAllSaves": "+2 status to all saves vs. magic",
+            "npcAc": "visione a 360°",
+            "npcAllSaves": "status +2 a tutti i TS contro la magia",
             "npcSenses": "darkvision, light blindness"
         },
         "Antaro Boldblade": {
@@ -2894,7 +2894,7 @@
                 },
                 "Detect Alignment (At Will) (Good Only)": {
                     "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>",
-                    "name": "Detect Alignment (At Will) (Good Only)"
+                    "name": "Individuazione dell'Allineamento (A Volontà) (Solo Buono)"
                 },
                 "Telepathy 100 feet": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
@@ -3011,7 +3011,7 @@
             "items": {
                 "Confusion (At Will)": {
                     "description": "<p>Disorienti il bersaglio con strani impulsi, facendolo agire a caso. Gli effetti si basano sul tiro salvezza su Volontà del bersaglio. Puoi Interrompere l'incantesimo.</p><hr /><p><strong>Successo Critico </strong>Il bersaglio non è influenzato.</p><p><strong>Successo</strong> Il bersaglio balbetta in modo incoerente ed è @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stordito} 1.</p><p><strong>Fallimento </strong>Il bersaglio è @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confuso} per 1 minuto. Può effettuare un nuovo tiro salvezza alla fine di ogni suo turno per porre fine all'effetto.</p><p><strong>Fallimento Critico </strong>Il bersaglio è @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confuso} per 1 minuto, senza nessun tiro salvezza per porre fine all'effetto anticipatamente.</p><hr /><p><strong>Intensificato (8°) </strong>Puoi prendere come bersaglio fino a 8 creature.</p>",
-                    "name": "Confusion (At Will)"
+                    "name": "Confusione (A Volontà)"
                 },
                 "Dispel Magic (At Will)": {
                     "name": "Dissolvi Magie (A Volontà)",
@@ -3047,7 +3047,7 @@
                 },
                 "Detect Alignment (At Will) (Lawful Only)": {
                     "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>",
-                    "name": "Detect Alignment (At Will) (Lawful Only)"
+                    "name": "Individuazione dell'Allineamento (A Volontà) (Solo Legale)"
                 },
                 "Jaws": {
                     "name": "Fauci"
@@ -3113,7 +3113,7 @@
                 }
             },
             "name": "Izfiitar",
-            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
             "npcHp": "fast healing 20",
             "npcSenses": "darkvision, entropy sense (imprecise) 120 feet"
         },
@@ -3132,7 +3132,7 @@
                 },
                 "Telepathy 100 feet": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
-                    "name": "Telepathy 100 feet"
+                    "name": "Telepatia 30 metri"
                 },
                 "Fast Swallow": {
                     "name": "Inghiottire Rapido",
@@ -3236,7 +3236,7 @@
                 },
                 "Fear (At Will)": {
                     "description": "<p>Infondi paura nel bersaglio; questi deve effettuare un tiro salvezza su Volontà.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p><p><strong>Successo </strong>Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Frightened} 1.</p><p><strong>Fallimento </strong>Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Frightened} 2.</p><p><strong>Fallimento Critico</strong> Il bersaglio è @Compendium[pf2e.conditionspf2e.TBSHQspnbcqxsmjL]{Spaventato} 3 e @Compendium[pf2e.conditionspf2e.sDPxOjQ9kx2RZE8D]{In Fuga} per 1 round.</p>",
-                    "name": "Fear (At Will)"
+                    "name": "Paura (A Volontà)"
                 },
                 "Nightmare (At Will)": {
                     "description": "<p>Mandi degli incubi inquietanti al bersaglio. La prossima volta che il bersaglio si addormenta, deve effettuare un tiro salvezza su Volontà. Se conosci il bersaglio soltanto per nome e non lo hai mai incontrato, il bersaglio ottiene un bonus di circostanza +4 al tiro salvezza su Volontà.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio non subisce effetti avversi all'incubo ed è temporaneamente immune per 1 settimana.</p><p><strong>Successo </strong>Il bersaglio ha gli incubi, ma non subisce effetti avversi oltre a ricordi inquietanti.</p><p><strong>Fallimento </strong>Il bersaglio ha gli incubi e si sveglia @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Affaticato}.</p><p><strong>Fallimento Critico</strong> Il bersaglio ha gli incubi, si sveglia @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Affaticato} ed è @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Risucchiato} 2 finchè rimane @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Affaticato}.</p>",
@@ -3244,7 +3244,7 @@
                 },
                 "Detect Magic (Constant)": {
                     "description": "<p>Emetti un impulso che registra la presenza di magia. Non ricevi altre informazioni oltre alla presenza o all assenza di magia. Puoi scegliere di ignorare una magia della quale sei pienamente consapevole, come gli oggetti magici e i tuoi incantesimi in corso o dei tuoi alleatis.</p>\n<p>Individui la magia di illusione soltanto se l'effetto di quella magia ha un livello inferiore al livello del tuo incantesimo individuazione del magico. Tuttavia, gli oggetti che hanno un'aura di illusione, ma non sono ingannevoli all'apparenza (come una pozione di invisibilità) di solito vengono individuati normalmente.</p>\n<hr />\n<p><strong>Intensificato (3°)</strong> Apprendi la scuola di magia dell'effetto magico di livello più alto individuato dall'incantesimo entro il raggio d'azione. Se più effetti hanno lo stesso livello, il GM determina quale apprendi.</p>\n<p><strong>Intensificato (4°)</strong> Come per il 3° livello, ma individui anche la fonte della magia di livello più alto. Come per sensi imprecisi, non apprendi la locazione esatta, ma puoi restringere la fonte a un cubo con spigolo di 1,5 metri (o il più vicino a te se ha dimensioni maggiori).</p>",
-                    "name": "Detect Magic (Constant)"
+                    "name": "Individuazione del Magico (Costante)"
                 },
                 "Telepathy 100 feet": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
@@ -3270,7 +3270,7 @@
                     "name": "Mindtwisting Utterance"
                 },
                 "+2 Status to All Saves vs. Magic": {
-                    "name": "+2 Status to All Saves vs. Magic"
+                    "name": "Status +2 a tutti i TS contro Magia"
                 },
                 "Dream Lore": {
                     "name": "Dream Lore"
@@ -3307,7 +3307,7 @@
             "items": {
                 "Illusory Creature (At Will)": {
                     "description": "<p>Crei un'immagine illusoria di una creatura di taglia Grande o inferiore. L'immagine genera i suoni e gli odori appropriati e sembra vera al tocco. Se tu e la tua immagine vi allontanate a una distanza superiore a 150 metri, l'incantesimo termina.</p>\n<p>L'immagine non può parlare, ma puoi usare le tue azioni per parlare attraverso la creatura, con l'incantesimo che camuffa la tua voce in modo appropriato. Potresti dover effettuare una prova di Esibizione o Inganno per comportarti come la creatura in modo convincente, come determinato dal GM. Questo è indicato specialmente se stai tentando di imitare una persona specifica e devi avere a che fare con qualcuno che conosce quella persona.</p>\n<p>In combattimento, l'illusione può usare 2 azioni per turno, che effettua mentre Mantieni l'Incantesimo. L'illusione usa i tuoi Tiri per Colpire con incantesimo per i Tiri per Colpire, e la tua CD di incantesimo per la sua CA. I suoi modificatori per i Tiri Salvezza sono pari alla tua CD di incantesimo - 10. L'illusione ha una consistenza sufficiente da poter Attaccare ai Fianchi altre creature. Se l'immagine viene colpita da un attacco o fallisce un Tiro Salvezza, l'incantesimo termina.</p>\n<p>L'illusione può infliggere danno facendo credere al bersaglio che i suoi attacchi sono reali, ma non può comunque avere effetto direttamente sul mondo fisico. Se la creatura illusoria va a segno con un Colpo, il bersaglio subisce un ammontare di danni mentali pari a 1d4 più il tuo modificatore di caratteristica dell'incantatore. Questo è un effetto mentale. I Colpi dell'illusione sono non letali. Se il danno non corrisponde all'immagine del mostro (per esempio, un drago illusorio di taglia Grande infligge soltanto 5 danni) il GM potrebbe permettere al bersaglio di effettuare una prova di Percezione immediata per dubitare dell'incantesimo. Tuttavia, qualsiasi resistenza o debolezza rilevanti vengono applicate se il bersaglio lo crede, come stabilito dal GM. Per esempio, se l'illusione impugna un martello da guerra ed attacca una creatura resistente ai danni contundenti, la creatura subirebbe un ammontare inferiore di danni mentali. Tuttavia, i danni illusori non impediscono la rigenerazione né innescano altri effetti che richiedono un certo tipo di danno. Il GM deve tracciare i danni illusori inflitti dall'illusione.</p>\n<p>Qualsiasi creatura che tocca l'immagine o usa l'azione di Individuare per esaminarla può tentare di dubitare della tua illusione. Quando una creatura dubita dell'illusione, recupera metà dei danni che aveva subito da essa (se ce ne sono stati) e non subisce ulteriori danni dalla stessa.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> I danni inflitti dai Colpi dell'immagine aumentano di 1d4 e la taglia massima della creatura che puoi creare aumenta di 1 (fino a un massimo di Mastodontica).</p>",
-                    "name": "Illusory Creature (At Will)"
+                    "name": "Creatura Illusoria (A Volontà)"
                 },
                 "+2 Resilient Studded Leather Armor": {
                     "description": "<p><span class=\"fontstyle0\">Quest'armatura di cuoio è rinforzata con borchie di metallo e talvolta con piccole placche metalliche, offrendo molta della flessibilità di un'armatura di cuoio con una protezione più solida.</span></p>",
@@ -3400,7 +3400,7 @@
                 }
             },
             "name": "Bloody Berleth",
-            "npcSenses": "low-light vision"
+            "npcSenses": "visione crepuscolare"
         },
         "Giant Joro Spiders": {
             "items": {
@@ -3477,10 +3477,10 @@
                 },
                 "Eclipse Burst": {
                     "description": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures and objects in the area, plus 8d4 additional negative damage to living creatures. Creatures and objects in the area must attempt a Reflex save. If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr /><strong>Critical Success</strong> The creature or object is unaffected.\n<p><strong>Success</strong> The creature or object takes half damage.</p>\n<p><strong>Failure</strong> The creature or object takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature or object takes double damage. If it's a creature, it becomes @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} by the darkness for an unlimited duration.</p>\n<hr /><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the negative damage against the living increases by 1d4.",
-                    "name": "Eclipse Burst"
+                    "name": "Esplosione Oscurante"
                 },
                 "Jaws": {
-                    "name": "Jaws"
+                    "name": "Fauci"
                 },
                 "Odorless": {
                     "name": "Odorless",
@@ -3494,7 +3494,7 @@
                 }
             },
             "name": "Myrucarx",
-            "npcSpeed": "freedom of movement",
+            "npcSpeed": "libertà di movimento",
             "npcSenses": "darkvision, tremorsense (imprecise) 60 feet"
         },
         "Bregdi": {
@@ -3526,7 +3526,7 @@
                 }
             },
             "name": "Bregdi",
-            "npcSenses": "low-light vision, scent (imprecise) 30 feet"
+            "npcSenses": "fiuto (impreciso) 9 metri, visione crepuscolare"
         },
         "Mr. Snips": {
             "description": "<p>I golem di ferro, tradizionalmente costruiti a forma di gigantesche armature complete o di potenti animali, sono frutto di grande arte e perizia tecnica. Le loro giunture articolate e i corpi corazzati devono essere progettati e fabbricati con grande attenzione e precisione matematica. Questi costrutti vanno inoltre puliti e oliati regolarmente affinché non arrugginiscano con il passare degli anni. Sottoposti a un’adeguata manutenzione, i golem di ferro possono restare efficienti per migliaia di anni ed essere tramandati di generazione in generazione, almeno finché non vengono distrutti dall’intervento di qualche avventuriero. Oltre alla loro incredibile forza, i golem di ferro dispongono anche di un potente soffio tossico, spesso più che sufficiente a eliminare intere squadre di avversari.</p>",
@@ -3590,18 +3590,18 @@
                 },
                 "Phantasmal Calamity": {
                     "description": "<p>A vision of apocalyptic destruction fills the mind of each creature in the area. The vision deals 11d6 mental damage (basic Will save). On a critical failure, the creature must also succeed at a Reflex save or believe it's trapped (stuck in a fissure, adrift at sea, or some other fate in keeping with its vision). If it fails the second save, it's also @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} for 1 minute. It can attempt a new Will save at the end of each of its turns, and on a success, it disbelieves the illusion and recovers from the @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} condition.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
-                    "name": "Phantasmal Calamity"
+                    "name": "Allucinazione Catastrofica"
                 },
                 "Baleful Polymorph (At Will)": {
                     "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}. When it recovers from the @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a Will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
                     "name": "Baleful Polymorph (At Will)"
                 },
                 "Imprisonment": {
-                    "name": "Imprisonment",
+                    "name": "Imprigionare",
                     "description": "<p>You perform a ritual to imprison a creature in one of several forms. While some versions of this ritual offer all of the forms, others include only a single form or only a few of them. Whichever form you use, the effect can't be counteracted, though it can be ended by <em>@UUID[Compendium.pf2e.spells-srd.4ddJSjC9Zz5DX0oG]{Freedom}</em>. Some forms of <em>imprisonment</em> can be ended by other means. Because the ritual requires the target to remain within 10 feet at all times, it typically requires you to subdue the target first.</p>\n<ul>\n<li><strong>Chains</strong> You bind the creature with chains, rendering it unable to use any actions other than to speak. Other creatures that attempt to approach, harm the chains, or free the trapped creature in any way must succeed at a Will save or be unable to do so forever. The chains have Hardness equal to 5 × the <em>imprisonment</em> ritual's spell level, and double that many Hit Points. Destroying the chains frees the target.</li>\n<li><strong>Object (9th level or higher)</strong> You either shrink the creature to an inch in height or transform it into an insubstantial form whose body trails away into wisps below its head. Either way, you trap it inside a gem, jar, bottle, lamp, or similar container. The creature ceases aging and doesn't require food or drink. The creature is still aware of its surroundings and can move within the container and speak, but it can't use any other actions. Destroying the container kills the target rather than freeing it. This form of <em>imprisonment</em> is also transmutation magic.</li>\n<li><strong>Oubliette (10th level only)</strong> You entomb the target in a state of suspended animation deep beneath the surface of the ground and out of tune with reality so that it can't be reached by any means. You also prevent divinations from revealing the location where the <em>imprisonment</em> occurred. Powerful magic such as <em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{Wish}</em> can reveal the location of the imprisonment, but even such magic can't free the target from the oubliette; only a 10th-level <em>@UUID[Compendium.pf2e.spells-srd.4ddJSjC9Zz5DX0oG]{Freedom}</em> ritual can do so.</li>\n<li><strong>Prison</strong> You render the creature completely unable to leave a particular confined area or structure of your choice, such as a jail cell or sealed cave. The magic also prevents the creature from damaging its prison, either directly or indirectly, to break free. If the creature's prison is entirely destroyed by some external force, the creature is freed, though for some larger or natural prisons, this might be unfeasible.</li>\n<li><strong>Slumber (sleep effect)</strong> You put the creature into an eternal sleep. It ceases aging and doesn't require food or drink. A single sincere physical display of affection from a creature who genuinely loves the target-whether romantically, filially, or otherwise-frees it from the slumber. This form of <em>imprisonment</em> is also enchantment magic.</li>\n<li><strong>Temporal Stasis</strong> You send the creature into a state of suspended animation outside the flow of time. The creature doesn't grow older and can't be affected by any effect from within the normal timestream. While casting this ritual, you can optionally name any amount of time for the stasis; after this duration elapses, the stasis ends. Unlike other forms of <em>imprisonment</em>, temporal stasis can be counteracted by a <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> or <em>@UUID[Compendium.pf2e.spells-srd.o6YCGx4lycsYpww4]{Haste}</em> spell. This form of <em>imprisonment</em> is also transmutation magic.</li>\n</ul>\n<p><strong>Critical Success</strong> You imprison the target. You can either use a form of <em>imprisonment</em> that usually requires 1 additional spell level, or give any creatures trying to use a <em>freedom</em> ritual to rescue the target a -2 circumstance penalty to checks associated with that ritual.</p>\n<p><strong>Success</strong> You imprison the target.</p>\n<p><strong>Failure</strong> You fail to imprison the target.</p>\n<p><strong>Critical Failure</strong> You imprison yourself and the secondary casters in the same way you intended to imprison the target.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can use the object form of <em>imprisonment</em> in addition to the other options, and you can target a creature of up to 18th level. The base cost increases to 2,000 gp.</p>\n<p><strong>Heightened (10th)</strong> You can use the object and oubliette forms of <em>imprisonment</em> in addition to the other options, and you can target a creature of up to 20th level. The base cost increases to 6,000 gp.</p>"
                 },
                 "Resist Energy": {
-                    "name": "Resist Energy",
+                    "name": "Resistere all'Energia",
                     "description": "<p>A shield of elemental energy protects a creature against one type of energy damage. Choose acid, cold, electricity, fire, or sonic damage. The target and its gear gain resistance 5 against the damage type you chose.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The resistance increases to 10, and you can target up to two creatures.</p>\n<p><strong>Heightened (7th)</strong> The resistance increases to 15, and you can target up to five creatures.</p>"
                 },
                 "Superior Senses": {
@@ -3693,7 +3693,7 @@
                     "description": "<p>A giant bone skipper identifies bones and creatures with a skeletal system in the listed range.</p>"
                 },
                 "Leaping Charge": {
-                    "name": "Leaping Charge",
+                    "name": "Carica con Balzo",
                     "description": "<p>The giant bone skipper @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Leaps} up to 20 feet. It then makes a mandibles Strike, gaining a +1 circumstance bonus to its attack roll.</p>"
                 },
                 "Marrow Rot": {
@@ -3766,7 +3766,7 @@
                 }
             },
             "name": "Avsheros the Betrayer",
-            "npcAllSaves": "+1 status to all saves vs. magic",
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
             "npcHp": "regeneration 20 (deactivated by evil)",
             "npcSenses": "darkvision, true seeing"
         },
@@ -3847,10 +3847,10 @@
                 },
                 "Deny Advantage": {
                     "description": "<p>Mobana isn't @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to creatures of 8th level or lower that are @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}, flanking or using @UUID[Compendium.pf2e.classfeatures.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>",
-                    "name": "Deny Advantage"
+                    "name": "Negare Vantaggio"
                 },
                 "Quick Draw": {
-                    "name": "Quick Draw",
+                    "name": "Estrazione Rapida",
                     "description": "<p>Mobana Interacts to draw a weapon, then Strikes with that weapon.</p>"
                 },
                 "Surprise Attack": {
@@ -3912,7 +3912,7 @@
                     "name": "Hell Lore"
                 },
                 "Legal Lore": {
-                    "name": "Legal Lore"
+                    "name": "Sapienza Legale"
                 }
             },
             "name": "Calennia"
@@ -3938,7 +3938,7 @@
                     "description": "<p>A ravenile can hold their breath for 20 minutes.</p>"
                 },
                 "Forced Regeneration": {
-                    "name": "Forced Regeneration",
+                    "name": "Rigenerazione Obbligata",
                     "description": "<p><strong>Requirements</strong> The ravenile's regeneration is currently active</p>\n<hr />\n<p>The ravenile regains [[/r 20[healing]]] HP.</p>"
                 },
                 "Furious Wallop": {
@@ -4082,7 +4082,7 @@
                 }
             },
             "name": "Il'setsya Wyrmtouched",
-            "npcHp": "fast healing 5",
+            "npcHp": "guarigione rapida 5",
             "npcSenses": "darkvision, entropy sense (imprecise) 60 feet"
         },
         "Norgorberite Poisoner": {
@@ -4121,7 +4121,7 @@
                     "description": "<p>Creatures the poisoner hits with a critical hit are flat-footed against their attacks until the end of their next turn.</p>"
                 },
                 "Deny Advantage": {
-                    "name": "Deny Advantage",
+                    "name": "Negare Vantaggio",
                     "description": "<p>The poisoner isn't flat-footed to creatures of 11th level or lower that are hidden, undetected, flanking, or using surprise attack.</p>"
                 },
                 "Impromptu Toxin": {
@@ -4271,7 +4271,7 @@
             "items": {
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Smoke Vision": {
                     "name": "Fumovisione",
@@ -4358,50 +4358,50 @@
                 },
                 "Spiritual Epidemic": {
                     "description": "<p>You curse the target, sapping its spirit and leaving a contagious trap in its essence. The target must attempt a Will save. Any creature that casts a divine or occult spell on the target while it's affected is targeted by spiritual epidemic and must also attempt a Will save. The curse continues to spread in this way.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} permanently.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 3} for 1 minute and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} permanently.</p>",
-                    "name": "Spiritual Epidemic"
+                    "name": "Epidemia dello Spirito"
                 },
                 "Regenerate": {
                     "description": "<p>An infusion of positive energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying} value can't exceed 3, though if its @UUID[Compendium.pf2e.conditionitems.Yl48xTdMh3aeQYL2]{Wounded} value becomes 4 or higher, it stays @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
-                    "name": "Regenerate"
+                    "name": "Rigenerazione"
                 },
                 "Abyssal Plague": {
                     "description": "<p>Your touch afflicts the target with Abyssal plague, which siphons fragments of their soul away to empower the Abyss. The effect is based on the target's Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes 2 evil damage per spell level, and takes a -2 status penalty to saves against Abyssal plague for 1 day or until the target contracts it, whichever comes first.</p>\n<p><strong>Failure</strong> The target is afflicted with Abyssal plague at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with Abyssal plague at stage 2.</p>\n<hr />\n<p><strong>Abyssal Plague</strong> (disease) <strong>Level 9</strong>. The target can't recover from the drained condition from Abyssal plague until the disease is cured</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained} increases by 2 (1 day).</p>",
-                    "name": "Abyssal Plague"
+                    "name": "Piaga Abissale"
                 },
                 "Divine Wrath": {
                     "description": "<p>You can channel the fury of your deity against foes of opposed alignment. Choose an alignment your deity has (chaotic, evil, good, or lawful). You can't cast this spell if you don't have a deity or your deity is true neutral. This spell gains the trait of the alignment you chose. You deal 4d10 damage of the alignment you chose; each creature in the area must attempt a Fortitude save. Creatures that match the alignment you chose are unaffected. Those that neither match nor oppose it treat the result of their saving throw as one degree better.</p>\n<hr /><strong>Critical Success</strong> The creature is unaffected.\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}; while it is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened}, it is also @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<hr /><strong>Heightened (+1)</strong> The damage increases by 1d10.",
-                    "name": "Divine Wrath"
+                    "name": "Collera Divina"
                 },
                 "Silence": {
                     "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing or other senses alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell effect emanates from the touched creature, silencing all sound in or passing through a 10- foot radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
-                    "name": "Silence"
+                    "name": "Silenzio"
                 },
                 "Harm": {
                     "description": "<p>You channel negative energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 negative damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><strong>1 Action</strong> (somatic) The spell has a range of touch.</p>\n<p><strong>2 Actions</strong> (verbal, somatic) The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><strong>3 Actions</strong> (material, verbal, somatic) You disperse negative energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-                    "name": "Harm"
+                    "name": "Ferire"
                 },
                 "Shield": {
                     "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the magic missile spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
-                    "name": "Shield"
+                    "name": "Scudo"
                 },
                 "Energy Aegis": {
-                    "name": "Energy Aegis",
+                    "name": "Egidia di Energia",
                     "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, negative, positive, and sonic damage.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>"
                 },
                 "Heroism": {
-                    "name": "Heroism",
+                    "name": "Eroismo",
                     "description": "<p>You tap into the target's inner heroism, granting it a +1 status bonus to attack rolls, Perception checks, saving throws, and skill checks.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +3.</p>"
                 },
                 "Spiritual Weapon": {
-                    "name": "Spiritual Weapon",
+                    "name": "Arma Spirituale",
                     "description": "<p>A weapon made of pure magical force materializes and attacks foes you designate within range. This weapon has a ghostly appearance and manifests as your deity's favored weapon.</p>\n<p>When you cast the spell, the weapon appears next to a foe you choose within range and makes a Strike against it. Each time you Sustain the Spell, you can move the weapon to a new target within range (if needed) and Strike with it. The spiritual weapon uses and contributes to your multiple attack penalty.</p>\n<p>The weapon's Strikes are melee spell attacks. Regardless of its appearance, the weapon deals force damage equal to 1d8 plus your spellcasting ability modifier. You can deal damage of the type normally dealt by the weapon instead of force damage (or any of the available damage types for a versatile weapon). No other statistics or traits of the weapon apply, and even a ranged weapon attacks adjacent creatures only. Despite making a spell attack, the spiritual weapon is a weapon for purposes of triggers, resistances, and so forth.</p>\n<p>The weapon doesn't take up space, grant flanking, or have any other attributes a creature would. The weapon can't make any attack other than its Strike, and feats or spells that affect weapons do not apply to it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The weapon's damage increases by 1d8.</p>"
                 },
                 "Guidance": {
-                    "name": "Guidance",
+                    "name": "Guida",
                     "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>"
                 },
                 "Heal": {
-                    "name": "Heal",
+                    "name": "Guarire",
                     "description": "<p>You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><strong>1 Action</strong> (somatic) The spell has a range of touch.</p>\n<p><strong>2 Actions</strong> (verbal, somatic) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><strong>3 Actions</strong> (material, somatic, verbal) You disperse positive energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
                 },
                 "Call Toxins": {
@@ -4503,7 +4503,7 @@
                     "name": "Absalom Lore"
                 },
                 "Legal Lore": {
-                    "name": "Legal Lore"
+                    "name": "Sapienza Legale"
                 }
             },
             "name": "Grospek Lavarsus"
@@ -4523,7 +4523,7 @@
                 },
                 "Fly (Constant)": {
                     "description": "<p>Il bersaglio può librarsi nell'aria, ottenendo una Velocità di volare pari alla sua Velocità, oppure di 9 metri, quale dei due valori sia più alto.</p><hr /><p><strong>Intensificato (7°) </strong>La durata aumenta fino a 1 ora.</p>",
-                    "name": "Fly (Constant)"
+                    "name": "Volare (Costante)"
                 },
                 "Claw": {
                     "name": "Artiglio"
@@ -4613,7 +4613,7 @@
                 }
             },
             "name": "Hendrid Pratchett",
-            "npcSenses": "low-light vision"
+            "npcSenses": "visione crepuscolare"
         },
         "Waxworks Onslaught Trap": {
             "name": "Agenti della Vegliarupe",
@@ -4673,7 +4673,7 @@
                     "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> The rhevanna hits a creature with a weapon Strike</p>\n<hr />\n<p><strong>Effect</strong> The rhevanna casts an innate <em>@UUID[Compendium.pf2e.spells-srd.ksLCg62cLOojw3gN]{Dimensional Anchor}</em> spell on the creature.</p>"
                 },
                 "Lifedrinker": {
-                    "name": "Lifedrinker",
+                    "name": "Bere Vita",
                     "description": "<p><strong>Trigger</strong> The rhevanna kills a living creature of at least 16th level</p>\n<hr />\n<p><strong>Effect</strong> The rhevanna drinks the triggering creature's life force and regains [[/r 40[healing]]]{40 Hit Points}. If the triggering creature is a celestial, the rhevanna instead regains [[/r 80[healing]]]{80 Hit Points}.</p>"
                 },
                 "Malefic Binding": {
@@ -4754,7 +4754,7 @@
                 }
             },
             "name": "Lyrma Swampwalker",
-            "npcSenses": "low-light vision"
+            "npcSenses": "visione crepuscolare"
         },
         "Skebs": {
             "items": {
@@ -4783,7 +4783,7 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Push]</p>"
                 },
                 "Wave": {
-                    "name": "Wave"
+                    "name": "Onda"
                 },
                 "Spell Circle": {
                     "description": "<p>By performing an hour-long ritual, an elemental vessel can form a spell circle with an arcane or primal spellcaster. After the spell circle is formed, other spellcasters can join the spell circle by performing the same hour-long ritual while assisted by at least one spellcaster already in the spell circle. Each member of the spell circle must contribute at least one spell to the elemental vessel. The spellcaster permanently loses access to a spell slot equal to the spell's level and the elemental vessel adds the contributed spell to its list of arcane innate spells (regardless of the spell's original type). An elemental vessel can be imbued with no more than three spells per spell level. If the elemental vessel is destroyed, all members of the spell circle regain the spell slots they contributed to the creature. The arcane innate spells shown below represent a typical spell list for an elemental vessel, but each elemental vessel is likely to have different spells depending on what its spell circle has contributed.</p>",
@@ -4816,10 +4816,10 @@
                     "description": "<p>Huge, [[/r (4d12+9)[bludgeoning]]], Rupture 38</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "Jaws": {
-                    "name": "Jaws"
+                    "name": "Fauci"
                 },
                 "Tentacle": {
-                    "name": "Tentacle"
+                    "name": "Tentacolo"
                 },
                 "Blood Scent": {
                     "name": "Blood Scent",
@@ -4830,7 +4830,7 @@
                     "description": "<p>When the lusca is near the surface for more than 1 hour, clouds appear and deliver a thunderstorm with a 2-mile radius centered on its location. The weather returns to normal 1 hour after the lusca departs.</p>"
                 },
                 "Capsize": {
-                    "name": "Capsize",
+                    "name": "Capovolgere",
                     "description": "<p>The lusca tries to capsize an adjacent aquatic vessel of its size or smaller. It must succeed at an Athletics check with a DC of 35 (reduced by 5 for each size smaller the vessel is than the lusca) or the pilot's Sailing Lore DC, whichever is higher.</p>"
                 },
                 "Lusca Venom": {
@@ -4857,7 +4857,7 @@
             },
             "name": "Lusca",
             "description": "<p>A lusca is a predatory sea monster that resembles a three-headed shark with the body of an octopus. Ferocious electrical storms usually herald a lusca's arrival; such violent bursts of electricity result from the creature's superconductive flesh, which allows the lusca to store energy from lightning strikes that it can then discharge at foes.</p>",
-            "npcSenses": "blood scent, darkvision, scent (imprecise) 100 feet"
+            "npcSenses": "fiutare il sangue, fiuto (impreciso) 30 metri, scurovisione"
         },
         "Shristi Melipdra": {
             "items": {
@@ -4965,7 +4965,7 @@
                 }
             },
             "name": "Iroran Skeleton",
-            "npcHp": "negative healing"
+            "npcHp": "guarigione negativa"
         },
         "Minchgorm": {
             "items": {
@@ -4983,14 +4983,14 @@
                 },
                 "Hydraulic Torrent": {
                     "description": "<p>A swirling torrent of water manifests along a straight line, battering those that are its path and possibly pushing them away from you. The torrent deals 8d6 bludgeoning damage. Each creature in the area must attempt a basic Fortitude save. Creatures that fail the save are also knocked back 5 feet (10 feet on a critical failure).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
-                    "name": "Hydraulic Torrent"
+                    "name": "Torrente Impetuoso"
                 },
                 "Control Water": {
-                    "name": "Control Water",
+                    "name": "Controllare Acqua",
                     "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Water creatures in the area are subjected to the effects of <em>@UUID[Compendium.pf2e.spells-srd.WsUwpfmhKrKwoIe3]{Slow}</em>.</p>"
                 },
                 "Jaws": {
-                    "name": "Jaws"
+                    "name": "Fauci"
                 },
                 "Riptide": {
                     "description": "<p>Tentacles of water rise up and attempt to Grapple all enemies within 15 feet of the minchgorm. The minchgorm attempts an Athletics check against the Fortitude DC of each creature in the area. On a success, the creature is grabbed (Escape DC 40). On a critical success, or a success against a creature that is already grabbed, the target begins to drown.</p>",
@@ -5037,7 +5037,7 @@
                     "description": "<p><strong>Requirements</strong> The master assassin used Study Target during the previous round and must have a <em>garrote bolt</em></p>\n<hr />\n<p><strong>Effect</strong> The master assassin makes a crossbow Strike against the target she previously studied. If she rolls a success on her attack roll, she gets a critical success instead. The target must attempt a @Check[type:fortitude|dc:36|traits:damaging-effect] save.</p>\n<p><strong>Success</strong> No additional effect.</p>\n<p><strong>Failure</strong> The target takes an additional [[/r {3d12}[precision]]]{3d12 precision damage}.</p>\n<p><strong>Critical Failure</strong> The target is decapitated and instantly dies unless it doesn't require a head to live.</p>"
                 },
                 "Running Reload": {
-                    "name": "Running Reload",
+                    "name": "Ricarica in Corsa",
                     "description": "<p>The master assassin Strides, Steps, or Sneaks, then Interacts to reload her crossbow.</p>"
                 },
                 "Study Target": {
@@ -5080,14 +5080,14 @@
                 },
                 "Alchemist Goggles": {
                     "description": "<p>These brass goggles are engraved with flame patterns and have thick, heavy lenses.</p>\n<p>While worn, they give you a +1 item bonus to Crafting checks to Craft alchemical items and a +1 item bonus to attack rolls with alchemical bombs.</p>\n<p>You can also ignore lesser cover when making Strikes with alchemical bombs.</p>",
-                    "name": "Alchemist Goggles"
+                    "name": "Occhiali dell'Alchimista"
                 },
                 "Alchemist's Tools": {
-                    "name": "Alchemist's Tools",
+                    "name": "Strumenti da Alchimista",
                     "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>"
                 },
                 "Alchemical Bomb": {
-                    "name": "Alchemical Bomb"
+                    "name": "Bomba Alchemica"
                 },
                 "Infused Items": {
                     "description": "<p>Japu carries the following infused items, which last 24 hours or until the next time he makes his daily preparations: infused moderate acid flasks (2), infused moderate alchemist's fires (2), moderate elixirs of life (2), infused reagents (6), infused moderate tanglefoot bags (2).</p>",
@@ -5098,7 +5098,7 @@
                     "name": "Alchemical Formulas (10th)"
                 },
                 "Formula Book": {
-                    "name": "Formula Book",
+                    "name": "Formulario",
                     "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>\n<p>Contains formulas for the following:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.equipment-srd.SgtqZxt26BdjUmEB]{Acid Flask (Moderate)}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.XWkeL34yJK6t5qUE]{Antidote (Greater)}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.oCuwJ9IUDAuzsUwa]{Bravo's Brew (Moderate)}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.c21stU5rhN4F2fZl]{Elixir of Life (Moderate)}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.evBPzM1VsuYcoenn]{Tanglefoot Bag (Moderate)}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.WL4O32qFifxnMj0H]{Wyvern Poison}</li>\n</ul>"
                 },
                 "Wyvern Poison (Applied to Rapier)": {
@@ -5170,7 +5170,7 @@
                 },
                 "Detect Alignment (At Will) (Lawful Only)": {
                     "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>",
-                    "name": "Detect Alignment (At Will) (Lawful Only)"
+                    "name": "Individuazione dell'Allineamento (A Volontà) (Solo Legale)"
                 },
                 "Jaws": {
                     "name": "Fauci"
@@ -5183,7 +5183,7 @@
                 },
                 "Fast Healing 10": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>",
-                    "name": "Fast Healing 10"
+                    "name": "Guarigione Rapida 10"
                 },
                 "Protean Anatomy": {
                     "name": "Anatomia Protean",
@@ -5222,7 +5222,7 @@
             },
             "name": "Overdrive Imentesh",
             "npcAllSaves": "+1 status to all saves vs. magic",
-            "npcHp": "fast healing 10",
+            "npcHp": "guarigione rapida 10",
             "npcSenses": "darkvision, entropy sense (imprecise) 60 feet"
         },
         "Agradaemon": {
@@ -5233,7 +5233,7 @@
                 },
                 "Detect Alignment (At Will) (Good Only)": {
                     "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>",
-                    "name": "Detect Alignment (At Will) (Good Only)"
+                    "name": "Individuazione dell'Allineamento (A Volontà) (Solo Buono)"
                 },
                 "Claw": {
                     "name": "Artiglio"
@@ -5319,7 +5319,7 @@
                     "_source": "equipment-srd.AITVZmakiu3RgfKo"
                 },
                 "Legal Lore": {
-                    "name": "Legal Lore"
+                    "name": "Sapienza Legale"
                 }
             },
             "name": "Grimwold"
@@ -5367,7 +5367,7 @@
                 },
                 "Sacrilegious Aura": {
                     "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>When a creature in the aura uses a positive spell or ability, the graveknight automatically attempts to counteract it, with a +27 counteract modifier.</p>",
-                    "name": "Sacrilegious Aura"
+                    "name": "Aura Sacrilega"
                 },
                 "Kharnas's Blessing": {
                     "name": "Kharnas's Blessing",
@@ -5457,7 +5457,7 @@
                     "name": "Lightning Bolt (Coven)"
                 },
                 "Claw": {
-                    "name": "Claw"
+                    "name": "Artiglio"
                 },
                 "Pull Under": {
                     "description": "<p><strong>Requirements</strong> A creature within 60 feet of Graem or Grinlowe is in contact with the waters of Stormholt</p>\n<hr />\n<p><strong>Effect</strong> The hag casts <i>maze</i> (DC 37) on the creature, magically pulling the creature beneath the water (regardless of its actual depth) into an extradimensional underwater maze of shipwrecks. Between the two of them, Graem and Grinlowe can have only one creature trapped in the maze, but either hag can use the Sustain a Spell action to sustain the effect.</p>",
@@ -5491,7 +5491,7 @@
                 },
                 "Spider Climb (Constant)": {
                     "description": "<p>Sulle mani e sui piedi della creatura spunta una sottile peluria appiccicosa che permette di restare aggrappata su quasi tutte le superfici. Il bersaglio ottiene Velocità di scalare pari alla sua normale Velocità.</p><hr /><p><strong>Intensificato (5°) </strong>La durata aumenta fino a 1 ora.</p>",
-                    "name": "Spider Climb (Constant)"
+                    "name": "Movimenti del Ragno (Costante)"
                 },
                 "Freedom of Movement (Constant)": {
                     "name": "Libertà di Movimento (Costante)",
@@ -5569,7 +5569,7 @@
                     "_source": "equipment-srd.AITVZmakiu3RgfKo"
                 },
                 "Legal Lore": {
-                    "name": "Legal Lore"
+                    "name": "Sapienza Legale"
                 }
             },
             "name": "Starwatch Commando"
@@ -5604,7 +5604,7 @@
                 }
             },
             "name": "Blune Bandersworth",
-            "npcSenses": "low-light vision"
+            "npcSenses": "visione crepuscolare"
         },
         "Eunice": {
             "items": {
@@ -5754,26 +5754,26 @@
                 },
                 "Rend": {
                     "description": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>",
-                    "name": "Rend"
+                    "name": "Squartare"
                 },
                 "Divine Decree": {
-                    "name": "Divine Decree",
+                    "name": "Sentenza DIvina",
                     "description": "<p>You utter a potent litany from your faith, a mandate that harms those who oppose your ideals. Choose an alignment your deity has (chaotic, evil, good, or lawful). You can't cast this spell if you don't have a deity or your deity is true neutral. This spell gains the trait of the alignment you chose. You deal 7d10 damage to creatures in the area; each creature must attempt a Fortitude save. Creatures with an alignment that matches the one you chose are unaffected by the spell. Those that neither match nor oppose it treat the result of their saving throw as one degree better and don't suffer effects other than damage.</p>\n<hr /><strong>Critical Success</strong> The creature is unaffected.\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute. On your home plane, a creature that critically fails is banished with the effect of a failed banishment save. A 10th-level creature or lower must attempt a Will save. On a failure, it's @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for 1 minute; on a critical failure, it dies.</p>"
                 },
                 "Fly": {
-                    "name": "Fly",
+                    "name": "Volare",
                     "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<hr />\n<p><strong>Heightened</strong> The duration increases to 1 hour.</p>"
                 },
                 "Invisibility": {
-                    "name": "Invisibility",
+                    "name": "Invisibilita'",
                     "description": "<p>Cloaked in illusion, the target becomes @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}. This makes it @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} to all creatures, though the creatures can attempt to find the target, making it @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>"
                 },
                 "Abyssal Pact": {
-                    "name": "Abyssal Pact",
+                    "name": "Patto Abissale",
                     "description": "<p>You call in a favor from another demon whose level is no more than double<em>Abyssal pact's</em>spell level, two demons whose levels are each at least 2 less than double the spell level, or three demons whose levels are each at least 3 less than double the spell level.</p>\n<hr />\n<p><strong>Critical Success</strong> You conjure the demon or demons. They are eager to pursue the task, so they don't ask for a favor.</p>\n<p><strong>Success</strong> You conjure the demon or demons. They are not eager to pursue the task, so they require a favor in return.</p>\n<p><strong>Failure</strong> You don't conjure any demons.</p>\n<p><strong>Critical Failure</strong> The demon or demons are angry that you disturbed them. They appear before you, but they immediately attack you.</p>"
                 },
                 "Gearblade": {
-                    "name": "Gearblade"
+                    "name": "Meccanolama"
                 },
                 "Clockwork Brain": {
                     "name": "Clockwork Brain",
@@ -5800,7 +5800,7 @@
                     "description": "<p>The shemhazian focuses their gaze on a non-evil creature they can see within 30 feet. If that creature isn't already slowed by the shemhazian's paralyzing gaze, it must attempt a save against the shemhazian's paralyzing gaze. If that creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed}, it must succeed at a @Check[type:fortitude|dc:35] save or be @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. A shemhazian can't use this ability against the same creature more than once per round.</p>"
                 },
                 "Dimension Door": {
-                    "name": "Dimension Door",
+                    "name": "Porta Dimensionale",
                     "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>"
                 },
                 "True Seeing": {
@@ -5917,7 +5917,7 @@
                     "description": "<p>The night hag can take on the appearance of any Medium female humanoid. This doesn't change her Speed or her attack and damage bonuses with her Strikes, but might change the damage type her Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Shadow Blast": {
-                    "name": "Shadow Blast",
+                    "name": "Esplosione d’Ombra",
                     "description": "<p>You shape the quasi-real substance of the Shadow Plane into a blast. Choose acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, or sonic damage, and choose a 30-foot cone, a 15-foot burst within 120 feet, or a 50-foot line. The blast deals 5d8 damage of the type you chose to each creature in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
                 },
                 "Ray of Enfeeblement (at will)": {
@@ -5941,7 +5941,7 @@
                     "description": "<p>A creature @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to the night hag takes a -2 circumstance penalty to checks and DCs to defend against her spells.</p>"
                 },
                 "Cloak of the Bat (Greater)": {
-                    "name": "Cloak of the Bat (Greater)",
+                    "name": "Mantello del Pipistrello (Superiore)",
                     "description": "<p>Sewn from several long strips of luxurious brown and black silk, this cloak grants you a +3 item bonus to Stealth checks as well as to Acrobatics checks to Maneuver in Flight. You can also use your feet to hang from any surface that can support your weight, without requiring any check, though you still must attempt Athletics checks to Climb in order to move around while inverted.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> command, Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> You can either transform the cloak into bat-like wings that grant you a fly Speed of 30 feet for 10 minutes, or have the cloak turn you into a bat by casting a 4th-level <em>@UUID[Compendium.pf2e.spells-srd.gfPjmG6Fe6D3MFjl]{Pest Form}</em> spell on you.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.ioGzmVSmMGXWWBYb]{Effect: Cloak of the Bat}</p>"
                 },
                 "Dream Council": {
@@ -5973,7 +5973,7 @@
                 },
                 "Detect Alignment (At Will) (Lawful Only)": {
                     "description": "<p>I tuoi occhi risplendono nel percepire aure allineate. Scegli tra caotico, malvagio, buono o legale. Individui le aure di quell'allineamento. Non ricevi altre informazioni oltre alla presenza o all'assenza. Puoi scegliere di non individuare creature o effetti dei quali sei consapevole che abbiano quell'allineamento.</p>\n<p>Soltanto gli incantatori di 6° livello o superiore, eccetto gli incantatori divini, i non morti e gli esseri della Sfera Esterna, hanno un'aura di allineamento.</p>\n<hr />\n<p><strong>Intensificato (2°)</strong> Individui anche la locazione e la forza di ciascuna aura.</p>",
-                    "name": "Detect Alignment (At Will) (Lawful Only)"
+                    "name": "Individuazione dell'Allineamento (A Volontà) (Solo Legale)"
                 },
                 "Telepathy 100 feet": {
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
@@ -6010,7 +6010,7 @@
             "items": {
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Smoke Vision": {
                     "name": "Fumovisione",
@@ -6074,7 +6074,7 @@
                     "description": "<p>The child of venom can climb on ceilings and other inverted surfaces, though such surfaces are difficult terrain for them.</p>"
                 },
                 "Pseudopod": {
-                    "name": "Pseudopod"
+                    "name": "Pseudopode"
                 },
                 "Split": {
                     "description": "<p>When a child of venom is hit by an attack that would deal slashing or piercing damage and the child of venom has at least 20 HP, the creature splits into two identical children of venom with half the original's HP. One child of venom is in the same space as the original, and the other appears in an adjacent unoccupied space. If no adjacent space is unoccupied, they automatically push creatures and objects out of the way to fill a space.</p>",
@@ -6092,7 +6092,7 @@
                 },
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Power Attack": {
                     "name": "Attacco Poderoso",
@@ -6207,7 +6207,7 @@
                 },
                 "Attack of Opportunity": {
                     "name": "Attacco di Opportunità",
-                    "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                    "description": "<p><strong>Innesco</strong> Una creatura entro la portata del mostro usa un'azione di maneggiare o un'azione di movimento, effettua un attacco a distanza o esce da un quadretto durante un'azione di movimento che sta usando.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro tenta un Colpo in mischia contro la creatura innescante. Se l'attacco è un colpo critico e l'innesco era un'azione di maneggiare, il mostro interrompe quell'azione. Questo Colpo non conta al fine di determinare la penalità da attacchi multipli del mostro e la sua penalità da attacchi multipli non si applica a questo Colpo.</p>"
                 },
                 "Brutish Shove": {
                     "name": "Spinta Brutale",
@@ -6383,7 +6383,7 @@
                     "name": "Blowtorch"
                 },
                 "Claw": {
-                    "name": "Claw"
+                    "name": "Artiglio"
                 },
                 "Hose": {
                     "name": "Hose"
@@ -6431,7 +6431,7 @@
                 }
             },
             "name": "Excorion",
-            "npcHp": "negative healing",
+            "npcHp": "guarigione negativa",
             "npcSenses": "scurovisione"
         },
         "Carvey": {
@@ -6449,7 +6449,7 @@
                     "name": "Electric Reflexes"
                 },
                 "Golem Antimagic": {
-                    "name": "Golem Antimagic",
+                    "name": "Anti-Magia dei Golem",
                     "description": "<p>harmed by fire ([[/r 5d8]], [[/r 3d4]] from areas or persistent damage); healed by electricity (area [[/r 2d4[healing]]]{2d4 Hit Points}); slowed by cold</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p>\n<p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p>\n<p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for that round.</p>\n<p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>"
                 },
                 "Vulnerable to Flesh to Stone": {
@@ -6509,51 +6509,51 @@
             "items": {
                 "Disintegrate": {
                     "description": "<p>You fire a green ray at your target. Make a spell attack. You deal 12d10 damage, and the target must attempt a basic Fortitude save. On a critical hit, treat the save result as one degree worse. A creature reduced to 0 HP is reduced to fine powder; its gear remains. An object you hit is destroyed (no save), regardless of Hardness, unless it's an artifact or similarly hard to destroy. A single casting can destroy no more than a 10-foot cube of matter. This automatically destroys any force construct, such as a wall of force.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d10.</p>",
-                    "name": "Disintegrate"
+                    "name": "Disintegrazione"
                 },
                 "Wall of Ice": {
                     "description": "<p>You sculpt a barrier of ice that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>",
-                    "name": "Wall of Ice"
+                    "name": "Muro di Ghiaccio"
                 },
                 "Acid Arrow": {
-                    "name": "Acid Arrow",
+                    "name": "Freccia Acida",
                     "description": "<p>You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus [[/r 1d6[persistent,acid]]] damage. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>"
                 },
                 "Mage Armor": {
                     "description": "<p>You ward yourself with shimmering magical energy, gaining a +1 item bonus to AC and a maximum Dexterity modifier of +5. While wearing mage armor, you use your unarmored proficiency to calculate your AC.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You gain a +1 item bonus to saving throws.</p>\n<p><strong>Heightened (6th)</strong> The item bonus to AC increases to +2, and you gain a +1 item bonus to saving throws.</p>\n<p><strong>Heightened (8th)</strong> The item bonus to AC increases to +2, and you gain a +2 item bonus to saving throws.</p>\n<p><strong>Heightened (10th)</strong> The item bonus to AC increases to +3, and you gain a +3 item bonus to saving throws.</p>",
-                    "name": "Mage Armor"
+                    "name": "Armatura Magica"
                 },
                 "Ray of Frost": {
                     "description": "<p>You blast an icy ray. Make a spell attack roll. The ray deals cold damage equal to 1d4 + your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
-                    "name": "Ray of Frost"
+                    "name": "Raggio di Gelo"
                 },
                 "Shield": {
                     "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the magic missile spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
-                    "name": "Shield"
+                    "name": "Scudo"
                 },
                 "Water Shield": {
                     "description": "<p>The aquamancer is surrounded by a bubble of water that buffers attacks. Each round, the shield absorbs the first 25 damage that would be dealt to the aquamancer. The shield can absorb only bludgeoning, piercing, slashing, acid, cold, and fire damage types. The aquamancer can dismiss or raise their shield by spending a single action.</p>",
                     "name": "Water Shield"
                 },
                 "Hydraulic Torrent": {
-                    "name": "Hydraulic Torrent",
+                    "name": "Torrente Impetuoso",
                     "description": "<p>A swirling torrent of water manifests along a straight line, battering those that are its path and possibly pushing them away from you. The torrent deals 8d6 bludgeoning damage. Each creature in the area must attempt a basic Fortitude save. Creatures that fail the save are also knocked back 5 feet (10 feet on a critical failure).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
                 },
                 "Slow": {
-                    "name": "Slow",
+                    "name": "Lentezza",
                     "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr /><strong>Critical Success</strong> The target is unaffected.\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 minute.</p>\n<hr /><strong>Heightened (6th)</strong> You can target up to 10 creatures."
                 },
                 "Acid Splash": {
-                    "name": "Acid Splash",
+                    "name": "Fiotto Acido",
                     "description": "<p>You splash a glob of acid that splatters creatures and objects alike. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes [[/r 1[persistent,acid]]] damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 1d6 + your spellcasting ability modifier, and the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage} increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 2d6 + your spellcasting ability modifier, the Persistent Damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 3d6 + your spellcasting ability modifier, the Persistent Damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 4d6 + your spellcasting ability modifier, the Persistent Damage increases to 5, and the splash damage increases to 4.</p>"
                 },
                 "Hydraulic Push": {
-                    "name": "Hydraulic Push",
+                    "name": "Spinta Idraulica",
                     "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr /><strong>Critical Success</strong> The target takes 6d6 bludgeoning damage and is knocked back 10 feet.\n<p><strong>Success</strong> The target takes 3d6 bludgeoning damage and is knocked back 5 feet.</p>\n<hr /><strong>Heightened (+1)</strong> The damage increases by 2d6."
                 },
                 "Light": {
                     "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
-                    "name": "Light"
+                    "name": "Luce"
                 },
                 "+2 Striking Spear": {
                     "name": "+2 Striking Spear",
@@ -6567,7 +6567,7 @@
                 },
                 "Fly": {
                     "_source": "spells-srd.A2JfEKe6BZcTG1S8",
-                    "name": "Fly",
+                    "name": "Volare",
                     "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>"
                 },
                 "Solid Fog": {
@@ -6592,7 +6592,7 @@
                     "name": "Aquatic Lore"
                 },
                 "Warfare Lore": {
-                    "name": "Warfare Lore"
+                    "name": "Sapienza Bellica"
                 }
             },
             "name": "Tiderunner Aquamancer",
@@ -6602,24 +6602,24 @@
             "items": {
                 "Ghoul Fever": {
                     "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r 2d6[negative]]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> [[/r 2d6[negative]]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a zeal-damned ghoul the next midnight.</p>",
-                    "name": "Ghoul Fever"
+                    "name": "Febbre del Ghoul"
                 },
                 "Jaws": {
-                    "name": "Jaws"
+                    "name": "Fauci"
                 },
                 "Claws": {
-                    "name": "Claws"
+                    "name": "Artigli"
                 },
                 "Consume Flesh": {
-                    "name": "Consume Flesh",
+                    "name": "Necrofagia",
                     "description": "<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of an evil or chaotic creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains [[/r 6d6]] Hit Points. It can regain Hit Points from any given corpse only once.</p>"
                 },
                 "Paralysis": {
-                    "name": "Paralysis",
+                    "name": "Paralisi",
                     "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
                 },
                 "Swift Leap": {
-                    "name": "Swift Leap",
+                    "name": "Balzo Rapido",
                     "description": "<p>The ghoul jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 }
             },
