@@ -39,8 +39,10 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
   for (const entry of entries) {
     const el: any = (out.entries[entry.name] = {
       name: entry.name,
-      description: fixEntities(entry.system.description.value),
     });
+    if (entry.system.description.value) {
+      el.description = fixEntities(entry.system.description.value);
+    }
 
     if (entry.type === "spell") {
       Object.assign(el, mapSpellData(entry.system) ?? {});
@@ -205,9 +207,10 @@ async function handleActor(
       if (entry.type === "hazard") {
         const el: any = (out.entries[entry.name] = {
           name: label,
-          description: entry.system.details.description,
         });
-
+        if (entry.system.details.description) {
+          el.description = entry.system.details.description;
+        }
         if (entry.system.details.disable) {
           el.hazardDisable = entry.system.details.disable;
         }
@@ -222,8 +225,10 @@ async function handleActor(
 
       const el: any = (out.entries[entry.name] = {
         name: entry.name,
-        description: entry.system.details.publicNotes,
       });
+      if (entry.system.details.publicNotes) {
+        el.description = entry.system.details.publicNotes;
+      }
 
       if (entry.type === "npc") {
         if (entry.system.attributes.ac.details) {
