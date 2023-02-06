@@ -7367,6 +7367,13 @@
       "name": "Magic Sense (Magus)",
       "description": "<p>You have a literal sixth sense for ambient magic in your vicinity.</p>\n<p>You can sense the presence of magic auras as though you were always using a 1st-level <em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{Detect Magic}</em> spell. This detects magic in your field of vision only.</p>\n<p>When you @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek}, you gain the benefits of a 3rd-level <em>detect magic</em> spell on things you see (in addition to the normal benefits of Seeking). You can turn this sense off and on with a free action at the start or the end of your turn.</p>"
     },
+    "Dominion Aura": {
+      "name": "Dominion Aura",
+      "description": "<p>For a short time, you fully manifest the expectations of the god destroyer within you. All creatures within a @Template[type:emanation|distance:10] take [[/r 8d6[force]]] damage with a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. A creature that fails this save is also knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. For 1 minute, any creature who ends its turn within the 10-foot emanation takes [[/r 5d6[force]]] damage with a basic Fortitude save. If you aren't drained, you can choose to become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} when you use Dominion Aura to increase the radius of the emanation from 10 feet to 20 feet.</p>",
+      "featPrerequisites": {
+        "0": "Faultspawn"
+      }
+    },
     "Words of Unraveling": {
       "name": "Words of Unraveling",
       "description": "<p>You have unlocked abstruse methods to tangle with reality itself, altering the fate of a single individual. Once per day as an occult innate spell, you can cast <em>@UUID[Compendium.pf2e.spells-srd.dARE6VfJ3Uoq5M53]{Daydreamer's Curse}</em>, <em>@UUID[Compendium.pf2e.spells-srd.KSAEhNfZyXMO7Z7V]{Outcast's Curse}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.APDrC83QljsyHenB]{Savant's Curse}</em>. At the GM's discretion, you can substitute or add additional occult curse spells of 4th level or lower to this list. You can choose a different spell from the list each time you use this ability. If you couldn't already cast occult spells, these spells use Intelligence as your spellcasting ability, and you become trained in spell attack rolls and spell DCs for occult spells; if you could already cast occult spells, your proficiency in spell attack rolls and spell DCs for occult spells increases to expert.</p>",
@@ -9718,6 +9725,13 @@
       "name": "Opportune Backstab",
       "description": "<p><strong>Trigger</strong> A creature within your melee reach is hit by a melee attack from one of your allies</p>\n<hr />\n<p>When your enemy is hit by your ally, you capitalize upon the distraction. Make a Strike against the triggering creature.</p>"
     },
+    "Idol Threat": {
+      "name": "Idol Threat",
+      "description": "<p><strong>Requirements</strong> You're holding something sacred or precious to a creature, such as a relic or personal depiction of their deity or a precious personal memento.</p>\n<hr />\n<p>You brandish the precious object you're holding menacingly, at once mocking it and threatening its safety. Attempt to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} the creature whose precious item you threaten. You gain a +2 circumstance bonus to the Intimidation check to Demoralize, and on a success, the creature is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round out of distraction for the object's safety and is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (or stupefied 2 on a critical success). These conditions are both in addition to the normal effects of Demoralize. The creature is then temporarily immune to any Idol Threat using that specific object for 1 day.</p>",
+      "featPrerequisites": {
+        "0": "Beastbrood"
+      }
+    },
     "Double Shot": {
       "name": "Double Shot",
       "description": "<p><strong>Requirements</strong> You are wielding a ranged weapon with reload 0</p>\n<hr />\n<p>You shoot twice in blindingly fast succession. Make two Strikes, each against a separate target and with a -2 penalty. Both attacks count toward your multiple attack penalty, but the penalty doesn't increase until after you've made both of them.</p>"
@@ -10324,6 +10338,13 @@
       "featPrerequisites": {
         "0": "Swordmaster Dedication",
         "1": "expert in Crafting"
+      }
+    },
+    "Asura Magic": {
+      "name": "Asura Magic",
+      "description": "<p>You can cast <em>@UUID[Compendium.pf2e.spells-srd.TaaMEYdZXQXF0Sks]{Blood Vendetta}</em> and <em>@UUID[Compendium.pf2e.spells-srd.dLdRqT6UxTKlsPgp]{Death Knell}</em> once per day each as 2nd-level divine innate spells.</p>",
+      "featPrerequisites": {
+        "0": "Faultspawn"
       }
     },
     "Siphon Life": {
@@ -13677,7 +13698,7 @@
     },
     "Reveal Hidden Self": {
       "name": "Reveal Hidden Self",
-      "description": "<p><strong>Requirements</strong> You're @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to at least one enemy.</p>\n<p>While hidden, you manifest a version of your animalistic nature. You create an illusion of a Large or smaller creature within 60 feet of your location with the effects of the <em>illusory creature</em> spell. The creature shares your animalistic beastbrood features. Unlike most actions taken while hidden, using Reveal Hidden Self and Sustaining the Spell don't automatically end your hidden condition. Use the higher of your class DC or spell DC against attempts to disbelieve the illusion. If a creature observes you, it automatically disbelieves the illusion, and if you're no longer hidden to at least one enemy, the effect ends.</p>",
+      "description": "<p><strong>Requirements</strong> You're @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to at least one enemy.</p>\n<p>While hidden, you manifest a version of your animalistic nature. You create an illusion of a Large or smaller creature within 60 feet of your location with the effects of the <em>@UUID[Compendium.pf2e.spells-srd.f8SBoXiXQjlCKqly]{Illusory Creature}</em> spell. The creature shares your animalistic beastbrood features. Unlike most actions taken while hidden, using Reveal Hidden Self and Sustaining the Spell don't automatically end your hidden condition. Use the higher of your class DC or spell DC against attempts to disbelieve the illusion. If a creature observes you, it automatically disbelieves the illusion, and if you're no longer hidden to at least one enemy, the effect ends.</p>",
       "featPrerequisites": {
         "0": "Beastbrood"
       }
@@ -21788,6 +21809,13 @@
     "Savage Critical": {
       "name": "Savage Critical",
       "description": "<p>The wounds you inflict are grievous. When you Strike with a weapon or unarmed attack for which you have legendary proficiency, you critically succeed if you roll a 19 on the die as long as that result is a success. This has no effect on a 19 if the result would be a failure.</p>"
+    },
+    "Jalmeri Rakshasa Magic": {
+      "name": "Jalmeri Rakshasa Magic",
+      "description": "<p>You can cast <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> and <em>@UUID[Compendium.pf2e.spells-srd.dxOF7d5kAWusLKWF]{Reaper's Lantern}</em> once per day each as 2nd-level divine innate spells. Reaper's lantern manifests as a lantern shaped like the head of your rakshasa incarnation.</p>",
+      "featPrerequisites": {
+        "0": "Beastbrood"
+      }
     },
     "Cranial Detonation": {
       "name": "Cranial Detonation",
