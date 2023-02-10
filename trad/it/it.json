@@ -690,7 +690,9 @@
                 "Notes": {
                     "failure": "<strong>Fallimento</strong> Il portatore nota il tuo tentativo prima che tu possa rubare l'oggetto, oppure un osservatore ti vede prendere o cercare di prendere l'oggetto. Il GM determina le reazioni di ciascuna creatura che nota il tuo furto.",
                     "success": "<strong>Successo</strong> Rubi l'oggetto senza che il portatore se ne accorga, oppure un osservatore non ti vede prendere o cercare di prendere l'oggetto."
-                }
+                },
+                "Title": "Rubare",
+                "Pocketed": "Oggetto in una tasca o protetto"
             }
         },
         "SETTINGS": {
@@ -853,7 +855,7 @@
                 "DateTheme": {
                     "Name": "Data Tema",
                     "Hint": "Imposta il tema dell'applicazion Orario Mondo.",
-                    "AR": "Golarion (Absalom Reckoning)",
+                    "AR": "Golarion (Calendario di Absalom)",
                     "IC": "Golarion (Calendario Imperiale)",
                     "AD": "Terra (Calendario Gregoriano)",
                     "CE": "Senza Tema (Calendario Gregoriano)"
@@ -6854,7 +6856,7 @@
                     "Note": "Quando usi l'abilità Acrobazia per Bilanciarti su superfici strette o terreno irregolare composto da terra o pietra non risulti impreparato e quando ottieni un successo in una di queste prove di Acrobazia ottieni al suo posto un successo critico."
                 },
                 "SparkFist": {
-                    "Note": "Each time you succeed on a fist Strike, you take [[/r (1+@weapon.data.data.runes.striking)[fire]]]{fire damage}."
+                    "Note": "Each time you succeed on a fist Strike, you take [[/r (1+@weapon.system.runes.striking)[fire]]]{fire damage}."
                 },
                 "TombWatchersGlare": {
                     "Note": "Quando colpisci in modo critico una creatura non morta, egli è @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} per 1 round"
@@ -6934,7 +6936,7 @@
                 },
                 "CoreCannon": {
                     "AttackNote": "You need to manually apply your highest Potency rune to this attack roll.",
-                    "CriticalHit": "On a critical hit, the target takes [[/r {10}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}. Your core cannon does not add critical specialization effects.</p>"
+                    "CriticalHit": "On a critical hit, the target takes [[/r 10[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}. Your core cannon does not add critical specialization effects.</p>"
                 },
                 "EnergyBeam": {
                     "CriticalHit": "On a critical hit, the target takes persistent fire damage equal to the number of weapon damage dice. Your eye beam does not add critical specialization effects."
@@ -7298,6 +7300,9 @@
                 "OneInchPunch": {
                     "ThreeActionLabel": "Pugno al Centimetro (Tre Azioni)",
                     "TwoActionLabel": "Pugno al Centimetro (Due Azioni)"
+                },
+                "StunningFist": {
+                    "Note": "Il bersaglio deve superare un tiro salvezza su @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|traits:incapacitation|overrideTraits:true] contro la tua CD di classe, altrimenti diventa @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 1} (o @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 3} in caso di fallimento critico)."
                 }
             },
             "Mummy": {
@@ -7381,7 +7386,10 @@
                 }
             },
             "Target": {
-                "Necromancer": "Target is a necromancer"
+                "Necromancer": "Target is a necromancer",
+                "AgainstDevils": "Contro i Diavoli",
+                "AgainstDemons": "Contro i Demoni",
+                "AgainstHumanoids": "Contro gli Umanoidi"
             },
             "ToggleProperty": {
                 "Triangulate": "Spotter can see target",
@@ -7447,7 +7455,17 @@
                 "AllowedDrops": "privilegio di classe del campione",
                 "Prompt": "Seleziona un alleato divino."
             },
-            "LitCandle": "La candela è accesa"
+            "LitCandle": "La candela è accesa",
+            "Champion": {
+                "BladeAllyRune": "Seleziona una runa di proprietà per il tuo alleato della lama.",
+                "DivineSmite": {
+                    "Label": "Punizione Divina"
+                }
+            },
+            "TrapFinder": {
+                "SearchLabel": "Scova Trappole (cercando trappole)",
+                "DefendingLabel": "Scova Trappole (difendersi dalle trappole)"
+            }
         },
         "AreaTypeCube": "Cubo",
         "AreaTypeSquare": "Quadretto",
