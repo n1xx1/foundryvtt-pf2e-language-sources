@@ -95,6 +95,12 @@ function mapSpellData(system: Partial<EntryItemSpell["system"]>) {
       (el ??= {}).spellTime = system.time?.value;
     }
   }
+  if (system.duration?.value) {
+    const val = system.duration?.value.toLowerCase();
+    if (!val.match(timeRegex)) {
+      (el ??= {}).spellDuration = system.duration?.value;
+    }
+  }
   if (system.area?.details) {
     (el ??= {}).spellArea = system.area.details;
   }

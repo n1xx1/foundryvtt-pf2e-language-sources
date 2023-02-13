@@ -134,6 +134,7 @@ export interface EntryItemSpell extends BaseEntry {
     target: { value: string };
     range: { value: string };
     time: { value: string };
+    duration: { value: string };
     cost: { value: string };
     area: { details: string };
     heightening?: SpellHeighteningFixed | SpellHeighteningInterval;
