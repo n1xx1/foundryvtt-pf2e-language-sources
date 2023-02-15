@@ -47,6 +47,12 @@ jobs:
         working-directory: ./system
         run: npm run build:packs
 
+      - name: FVTTPF2E - Get System Version
+        working-directory: ./system
+        run: |
+          SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' system.json | tr -d '\n')
+          echo "systemVersion=$SYSTEM_VERSION" >> $GITHUB_ENV
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -72,6 +78,10 @@ jobs:
       - name: Build
         working-directory: ./main
         run: pnpm run exec update
+
+      - name: Update Version
+        working-directory: ./main
+        run: echo "${{ env.systemVersion }}" > version.txt
 
       - name: Get Commit Hash
         working-directory: ./system
