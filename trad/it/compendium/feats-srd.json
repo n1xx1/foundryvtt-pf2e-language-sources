@@ -3117,7 +3117,9 @@
         "Tactical Entry": {
             "featPrerequisites": {
                 "0": "maestro in Furtività"
-            }
+            },
+            "name": "Entrata Tattica",
+            "description": "<p><strong>Requisiti</strong> Hai tirato Furtività per l'iniziativa in questo incontro, e ne tu ne alcun nemico avete ancora agito.</p>\n<hr />\n<p>Avanzi. Questo movimento non innesca reazioni.</p>"
         },
         "Stand Still": {
             "name": "Immobile",
@@ -8537,12 +8539,18 @@
             }
         },
         "Weapon Improviser Dedication": {
-            "name": "Dedizione dell'Improvvisatore Armato"
+            "name": "Dedizione dell'Improvvisatore Armato",
+            "description": "<p>Non subisci la normale penalità -2 ai tiri per colpire con le armi improvvisate. Inoltre, ogni volta che ottieni un privilegio di classe che ti conferisce competenza esperto o superiore con qualsiasi arma, ottieni quella competenza anche con le armi Improvvisate.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo dell'@UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.HDTW0vr8QL20M5ND]{improvvisatore armato}.</p>",
+            "featPrerequisites": {
+                "0": "addestrato con tutte le armi da guerra"
+            }
         },
         "Shadow Sneak Attack": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Ombra Danzante"
-            }
+            },
+            "name": "Attacco Furtivo d'Ombra",
+            "description": "<p>Ottieni il privilegio di classe @UUID[Compendium.pf2e.classfeatures.j1JE61quDxdge4mg]{attacco furtivo}, tranne per il fatto che infliggi 1d6 danni di precisione a prescindere dal tuo livello.</p>\n<p>L'attacco furtivo derivante da più fonti non è cumulativo. Se hai un attacco furtivo proveniente da più di una fonte, usa solo il numero più alto di dadi quando colpisci, anziché sommare le quantità.</p>"
         },
         "Drow Shootist Dedication": {
             "name": "Dedizione del Drow Tiratore"
@@ -8975,7 +8983,10 @@
         },
         "Marshal Dedication": {
             "description": "<p>Hai combinato le tue abilità sociali e l'addestramento al combattimento per diventare un leader di talento. Scegli Diplomazia o Intimidazione. Diventi addestrato in quell'abilità, o esperto se eri già addestrato.</p>\n<p>Inoltre, sei circondato da un'aura del maresciallo in una @Template[type:emanation|distance:3]. La tua aura ha i tratti emozione, mentale e visivo e conferisce a te e agli alleati all'interno dell'aura bonus di status +1 ai tiri salvezza contro paura.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo del @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.1F84oh5hoG86mZIw]{maresciallo}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Ru4BNABCZ0hUbX7S]{Effetto: Aura del Maresciallo}</p>",
-            "name": "Dedizione del Maresciallo"
+            "name": "Dedizione del Maresciallo",
+            "featPrerequisites": {
+                "0": "addestrato con armi da guerra e in Diplomazia o Intimidazione"
+            }
         },
         "Draconic Scent": {
             "description": "<p>Il tuo olfatto è straordinario, molto simile a quello di un drago. Ottieni un fiuto impreciso con una gittata di 9 metri.</p>\n<p>Il GM può raddoppiare la gittata se sei sottovento alla creatura o dimezzarla se sei sopravento, a sua discrezione.</p>",
@@ -9545,7 +9556,9 @@
         "Precious Arrow": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Arciere Mistico"
-            }
+            },
+            "description": "<p>Incanti una munizione con l'essenza magica di un materiale prezioso, per sfruttare le debolezze di certe creature.</p>\n<p>Scegli tra ferro freddo e argento; se scocchi la freccia prima della fine del tuo turno, questa conta come quel materiale. Al 14° livello, aggiungi l'adamantio alla lista dei materiali tra cui puoi scegliere.</p>",
+            "name": "Freccia Preziosa"
         },
         "Triumphant Inspiration": {
             "featPrerequisites": {
@@ -10192,7 +10205,9 @@
         "Command Attention": {
             "featPrerequisites": {
                 "0": "Dedizione del Divo"
-            }
+            },
+            "name": "Conquistare l'Attenzione",
+            "description": "<p>Conquisti con stile l'attenzione di tutti coloro che ti circondano, assicurandoti che si concentrino solo su di te fino alla fine del tuo turno successivo.</p>\n<p>Quando una creatura entro 9 metri da te tenta dei Tiri Salvezza contro altri effetti visivi, utilizza il risultato di un grado di successo migliore del risultato che ha tirato.</p>\n<p>Un nemico all'interno dell'area che tenti di usare un effetto visivo che implichi di concentrare la sua attenzione su una particolare creatura (come lo Sguardo Focalizzato di una medusa) deve superare un tiro salvezza su Volontà contro la tua CD di classe o CD di incantesimo, a seconda di quale sia la più alta, per poter bersagliare qualsiasi creatura tranne te.</p>\n<p>Gli alleati nell'area possono tentare di @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{nascondersi} anche se non hanno copertura fornisci continuamente una distrazione.</p>"
         },
         "Stalwart Standard": {
             "featPrerequisites": {
@@ -10708,6 +10723,21 @@
             "featPrerequisites": {
                 "0": "Guancegonfie"
             }
+        },
+        "Energy Fusion": {
+            "description": "<p>Fondi insieme due incantesimi, combinando i loro tipi di energia.</p>\n<p>Se la prossima azione che usi è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} che infligge danni da acido, da elettricità, da freddo, da fuoco o sonori, seleziona un incantesimo che non sia un trucchetto nel tuo repertorio degli incantesimi e che infligga un diverso tipo di danno da energia da quella lista, e spendi uno slot incantesimo aggiuntivo dello stesso livello di questo incantesimo secondario. L'incantesimo che lanci infligge danni aggiuntivi pari al livello dello slot incantesimo secondario speso.</p>\n<p>Il danno totale dell'Incantesimo è diviso equamente tra il tipo di energia dell'incantesimo che hai lanciato e il tipo di energia dell'incantesimo secondario.</p>",
+            "name": "Fusione Energetica"
+        },
+        "Perpetual Breadth": {
+            "name": "Apertura Perpetua",
+            "featPrerequisites": {
+                "0": "infusioni perpetue"
+            },
+            "description": "<p>Hai ampliato le tue scorte quasi infinite di oggetti. Scegli un Campo di Ricerca. Aggiungi un oggetto dalla lista delle opzioni disponibili per quel campo grazie alle Infusioni Perpetue o due oggetti se scegli il tuo campo.</p>\n<p>Se hai @UUID[Compendium.pf2e.classfeatures.JOdbVu14phvdjhaY]{Potenza Perpetua} o @UUID[Compendium.pf2e.classfeatures.3R19zS7gERhEX87F]{Perfezione Perpetua}, ottieni un oggetto aggiuntivo (o oggetti se hai scelto il tuo campo) appropriato al campo che hai scelto, per esempio una versione di livello superiore della bomba che hai scelto o un nuovo veleno.</p>"
+        },
+        "Posse": {
+            "name": "Battuta di Caccia",
+            "description": "<p><strong>Requisiti</strong> Hai designato una preda con @UUID[Compendium.pf2e.actionspf2e.JYi4MnsdFu618hPm]{Cacciare la Preda}.</p>\n<hr />\n<p>Spendendo 1 minuto a dare indicazioni per cacciare la tua preda, istruisci fino a cinque creature consenzienti ad assisterti. Queste ottengono bonus di circostanza +1 per @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Individuare} la tua preda, per @UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Seguirne le Tracce} e per @UUID[Compendium.pf2e.actionspf2e.plBGdZhqq5JBl1D8]{Raccogliere Informazioni} su di lei. Tu e le creature che ti assistono ottenete bonus di circostanza +1 ai tiri di iniziativa quando entrate in combattimento con la preda.</p>\n<p>Questo beneficio dura fino a quando non designi una nuova preda o la tua preda non muore, a seconda di cosa accade prima. Una creatura che ti assiste perde questa beneficio se rimane lontana dalla tua presenza troppo a lungo per poter seguire le tue istruzioni (in genere 1 ora, ma a scelta del GM).</p>"
         }
     }
 }
