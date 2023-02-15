@@ -92,6 +92,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add lang
+          git add lang version.txt
           git diff --quiet HEAD || git commit -am "Updated to foundryvtt/pf2e@${{ env.SYSTEM_HASH }}"
           git push
