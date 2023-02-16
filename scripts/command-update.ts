@@ -280,7 +280,7 @@ async function handleActor(
 
           if (!compendiumItem) {
             el.items ??= {};
-            const itemEl: any = (el.items[item.name] = {
+            const itemEl: any = (el.items[item._id] = {
               name: item.name,
             });
             if (item.system.description.value) {
@@ -300,7 +300,7 @@ async function handleActor(
             continue;
           }
 
-          const itemEl: any = ((el.items ??= {})[item.name] = {});
+          const itemEl: any = ((el.items ??= {})[item._id] = {});
           if (!sameName) {
             itemEl.name = item.name;
           }

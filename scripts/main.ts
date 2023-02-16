@@ -4,6 +4,7 @@ import { resolve } from "path";
 import { hideBin } from "yargs/helpers";
 import yargs from "yargs/yargs";
 import { commandFindMostCommon } from "./command-find-most-common";
+import { commandFixItemIds } from "./command-fix-item-ids";
 import { commandUpdate } from "./command-update";
 import { commandUpdateSource } from "./command-update-source";
 import { commandWeblateQuery } from "./command-weblate-query";
@@ -71,6 +72,14 @@ yargs(hideBin(process.argv))
         .positional("compendium", { type: "string", demandOption: true }),
     async (argv) => {
       await commandFindMostCommon(argv.lang, argv.compendium);
+    }
+  )
+  .command(
+    "fix-item-ids [lang]",
+    "fix item names to item ids for the specified language",
+    (yargs) => yargs.positional("lang", { type: "string", demandOption: true }),
+    async (argv) => {
+      await commandFixItemIds(argv.lang, argv.directory);
     }
   )
   .strictCommands()
