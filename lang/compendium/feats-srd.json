@@ -710,7 +710,7 @@
     },
     "Heart of the Kaiju": {
       "name": "Heart of the Kaiju",
-      "description": "<p>Witnessing the might of the kaiju King Mogaru, Alru, and Toraloa up close awoke a new ferocity within you. When you transform using Monstrosity Shape, you can take on a kaiju form. When you take this feat, choose acid, cold, electricity, fire, or sonic damage; this is the damage your breath weapon deals. You can't change this later. The battle form is Gargantuan size with the following specific abilities; the damage values already include the extra die from being a 9th-level spell.</p>\n<p><strong>Kaiju</strong> Speed 40 feet; physical resistance 5; <strong>Melee <span class=\"pf2-icon\">1</span></strong> jaws (reach 20 feet), <strong>Damage</strong> [[/r (3d12+20)[piercing]]] damage; <strong>Melee <span class=\"pf2-icon\">1</span></strong> claws (agile, reach 20 feet), <strong>Damage</strong> [[/r (3d8+20)[slashing]]] damage</p>\n<p><strong>Breath Weapon</strong><span class=\"pf2-icon\">2</span> (evocation, primal) Each creature in a @Template[type:cone|distance:60] takes [[/r {15d6}]]{15d6 damage} (of your chosen damage type), with a basic Reflex save against your spell DC. Once activated, your breath weapon can't be used again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+      "description": "<p>Witnessing the might of the kaiju King Mogaru, Alru, and Toraloa up close awoke a new ferocity within you. When you transform using @UUID[Compendium.pf2e.feats-srd.54JzsYCx3uoj7Wlz]{Monstrosity Shape}, you can take on a kaiju form. When you take this feat, choose acid, cold, electricity, fire, or sonic damage; this is the damage your breath weapon deals. You can't change this later. The battle form is Gargantuan size with the following specific abilities; the damage values already include the extra die from being a 9th-level spell.</p>\n<p><strong>Kaiju</strong> Speed 40 feet; physical resistance 5;</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> jaws (reach 20 feet), <strong>Damage</strong> [[/r (3d12+20)[piercing]]] damage;</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> claws (agile, reach 20 feet), <strong>Damage</strong> [[/r (3d8+20)[slashing]]] damage</p>\n<p><strong>Breath Weapon</strong> <span class=\"pf2-icon\">2</span> (evocation, primal) Each creature in a @Template[type:cone|distance:60] takes [[/r {15d6}]]{15d6 damage} (of your chosen damage type), with a basic @Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)|basic:true] save against your spell DC. Once activated, your breath weapon can't be used again for [[/r 1d4 #Breath Weapon Recharge]]{1d4 rounds}.</p>",
       "featPrerequisites": {
         "0": "Monstrosity Shape"
       }
@@ -870,7 +870,7 @@
     },
     "Invoke Disaster": {
       "name": "Invoke Disaster",
-      "description": "<p>You can invoke nature's fury upon your foes. You gain the storm lord order spell. Increase the number of Focus Points in your focus pool by 1.</p>",
+      "description": "<p>You can invoke nature's fury upon your foes. You gain the <em>@UUID[Compendium.pf2e.spells-srd.XYhU3Wi94n1RKxTa]{Storm Lord}</em> order spell. Increase the number of Focus Points in your focus pool by 1.</p>",
       "featPrerequisites": {
         "0": "Wind Caller"
       }
@@ -1782,7 +1782,7 @@
     },
     "Monstrosity Shape": {
       "name": "Monstrosity Shape",
-      "description": "<p>You can transform into a powerful magical creature. Add the purple worm and sea serpent forms listed in monstrosity form to your wild shape list. If you have Soaring Shape, also add the phoenix form to your wild shape list.</p>",
+      "description": "<p>You can transform into a powerful magical creature. Add the purple worm and sea serpent forms listed in <em>@UUID[Compendium.pf2e.spells-srd.8AMvNVOUEtxBCDvJ]{Monstrosity Form}</em> to your wild shape list. If you have @UUID[Compendium.pf2e.feats-srd.wNHUryoRzlfDCFAd]{Soaring Shape}, also add the phoenix form to your wild shape list.</p>",
       "featPrerequisites": {
         "0": "Wild Shape"
       }
@@ -4119,7 +4119,7 @@
     },
     "Primal Aegis": {
       "name": "Primal Aegis",
-      "description": "<p>You surround yourself with a thick field of protective primal energy. You and allies within 30 feet of you gain resistance equal to your Wisdom modifier to acid, cold, electricity, fire, negative, and positive damage.</p>"
+      "description": "<p>You surround yourself with a thick field of protective primal energy. You and allies within 30 feet of you gain resistance equal to your Wisdom modifier to acid, cold, electricity, fire, negative, and positive damage.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.5PIaLkys5ZqP2BUv]{Effect: Primal Aegis}</p>"
     },
     "Inspiring Resilience": {
       "name": "Inspiring Resilience",
@@ -6837,7 +6837,7 @@
     },
     "Primal Summons": {
       "name": "Primal Summons",
-      "description": "<p>Whenever you summon an ally, you can empower it with the elemental power of air, earth, fire, or water. You gain the primal summons order spell.</p>",
+      "description": "<p>Whenever you summon an ally, you can empower it with the elemental power of air, earth, fire, or water. You gain the @UUID[Compendium.pf2e.feats-srd.I00uuseTfPypVgLQ]{Primal Summons} order spell.</p>",
       "featPrerequisites": {
         "0": "Call of the Wild"
       }
@@ -11404,7 +11404,7 @@
     },
     "Sow Spell": {
       "name": "Sow Spell",
-      "description": "<p>You fold your spell into a seed. If your next action is to @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} using 1 action or 2 actions, the spell instead plants itself in an adjacent square. You must make all decisions regarding the spell at the time you cast it.</p>\n<p>Within the next 10 minutes, you can direct your sown spell to sprout and produce the spell's effects as a reaction, which is triggered when a creature enters the sown spell's space or a square adjacent to it.</p>\n<p>You can have only one sown spell at a time, and if you don't trigger the spell within 10 minutes, it dissipates and the spell is lost. A creature can notice the sown spell with a successful Perception check against your spell DC.</p>"
+      "description": "<p>You fold your spell into a seed. If your next action is to @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} using 1 action or 2 actions, the spell instead plants itself in an adjacent square. You must make all decisions regarding the spell at the time you cast it.</p>\n<p>Within the next 10 minutes, you can direct your sown spell to sprout and produce the spell's effects as a reaction, which is triggered when a creature enters the sown spell's space or a square adjacent to it.</p>\n<p>You can have only one sown spell at a time, and if you don't trigger the spell within 10 minutes, it dissipates and the spell is lost. A creature can notice the sown spell with a successful @Check[type:perception|dc:resolve(@actor.attributes.spellDC.value)] check against your spell DC.</p>"
     },
     "Signifer's Sight": {
       "name": "Signifer's Sight",
@@ -18527,7 +18527,7 @@
     },
     "True Shapeshifter": {
       "name": "True Shapeshifter",
-      "description": "<p>You transcend the limitations of form. While under the effects of wild shape, you can change into any other form on your wild shape list; if the durations of the forms would vary, use the shorter of the two durations. Once per day, you can transform into a kaiju, with the effects of nature incarnate; if you have Plant Shape, you can instead transform into a green man.</p>",
+      "description": "<p>You transcend the limitations of form. While under the effects of wild shape, you can change into any other form on your wild shape list; if the durations of the forms would vary, use the shorter of the two durations. Once per day, you can transform into a kaiju, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.ZXwxs5tRjEGrjAJT]{Nature Incarnate}</em>; if you have @UUID[Compendium.pf2e.feats-srd.I9rSWQyueWHQyNxe]{Plant Shape}, you can instead transform into a green man.</p>",
       "featPrerequisites": {
         "0": "Dragon Shape",
         "1": "Wild Shape"
@@ -19533,7 +19533,7 @@
     },
     "Verdant Metamorphosis": {
       "name": "Verdant Metamorphosis",
-      "description": "<p>You transform into a plant version of yourself. You gain the plant trait and lose any trait that's inappropriate for your new form (typically humanoid for a PC, but also possibly animal or fungus). You can change from a form that looks mostly like your old self into a tree or any other non-creature plant as a single action, which has the concentrate trait. This has the same effect as tree shape, except you can turn into any kind of non-creature plant and your AC is 30. If you rest for 10 minutes while transformed into a non-creature plant during daylight hours under direct sunlight, you recover half your maximum Hit Points. If you take your daily rest in this way, the rest restores you to maximum Hit Points and removes all non-permanent drained, enfeebled, clumsy, and stupefied conditions, as well as all poisons and diseases of 19th level or lower.</p>",
+      "description": "<p>You transform into a plant version of yourself. You gain the plant trait and lose any trait that's inappropriate for your new form (typically humanoid for a PC, but also possibly animal or fungus). You can change from a form that looks mostly like your old self into a tree or any other non-creature plant as a single action, which has the concentrate trait. This has the same effect as tree shape, except you can turn into any kind of non-creature plant and your AC is 30. If you rest for 10 minutes while transformed into a non-creature plant during daylight hours under direct sunlight, you recover half your maximum Hit Points. If you take your daily rest in this way, the rest restores you to maximum Hit Points and removes all non-permanent @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy}, and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied} conditions, as well as all poisons and diseases of 19th level or lower.</p>",
       "featPrerequisites": {
         "0": "leaf order"
       }
@@ -21737,7 +21737,7 @@
     },
     "Impaling Briars": {
       "name": "Impaling Briars",
-      "description": "<p>You can fill an area with devastating briars that impale and impede your foes. You gain the impaling briars order spell. Increase the number of Focus Points in your focus pool by 1.</p>",
+      "description": "<p>You can fill an area with devastating briars that impale and impede your foes. You gain the <em>@UUID[Compendium.pf2e.feats-srd.urYHB6VHhqvPMSy7]{Impaling Briars}</em> order spell. Increase the number of Focus Points in your focus pool by 1.</p>",
       "featPrerequisites": {
         "0": "leaf order"
       }
@@ -22633,7 +22633,7 @@
     },
     "Perfect Form Control": {
       "name": "Perfect Form Control",
-      "description": "<p>Thanks to magic and muscle memory, you can stay in your alternate forms indefinitely; you may have even forgotten your original form. When you use Form Control, instead of lasting 1 hour, wild shape is permanent until you Dismiss it.</p>",
+      "description": "<p>Thanks to magic and muscle memory, you can stay in your alternate forms indefinitely; you may have even forgotten your original form. When you use @UUID[Compendium.pf2e.feats-srd.RsluSLtSWq1vN8Hc]{Form Control}, instead of lasting 1 hour, wild shape is permanent until you Dismiss it.</p>",
       "featPrerequisites": {
         "0": "Form Control",
         "1": "Strength 18"
