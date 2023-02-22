@@ -672,6 +672,29 @@
                 },
                 "Title": "Rubare",
                 "Pocketed": "Oggetto in una tasca o protetto"
+            },
+            "AdministerFirstAid": {
+                "StopBleeding": {
+                    "Notes": {
+                        "success": "<strong>Successo</strong> La creatura effettua una prova semplice per porre fine al sanguinamento.",
+                        "criticalFailure": "<strong>Fallimento Critico</strong> La creatura subisce immediatamente un ammontare di danni pari al suo danno persistente da sanguinamento."
+                    },
+                    "Title": "Prestare Primo Soccorso - Fermare Sanguinamento"
+                },
+                "Stabilize": {
+                    "Title": "Prestare Primo Soccorso - Stabilizzare",
+                    "Notes": {
+                        "success": "<strong>Successo</strong> La creatura perde la condizione morente, ma rimane priva di sensi.",
+                        "criticalFailure": "<strong>Fallimento Critico</strong> Il valore di morente della creatura incrementa di 1."
+                    },
+                    "DifficultyClass": {
+                        "Label": "CD Prestare Primo Soccorso"
+                    }
+                },
+                "Warning": {
+                    "UnknownVariant": "Alternativa sconosciuta '{variant}' usata per Prestare Primo Soccorso, usa stabilize o stopBleeding.",
+                    "TargetNotDying": "La creatura bersagliata non è morente."
+                }
             }
         },
         "SETTINGS": {
@@ -2215,6 +2238,10 @@
                 "StageLabel": "Fase",
                 "Stage": "Fase {stage}",
                 "OnsetLabel": "Latenza"
+            },
+            "GMNotes": {
+                "Title": "Note del GM",
+                "Add": "Aggiungi Note del GM"
             }
         },
         "Actor": {
@@ -5364,7 +5391,8 @@
                 "whip-claw": "Frusta Artiglio",
                 "wish-blade": "Lama dei Desideri",
                 "wish-knife": "Coltello dei Desideri",
-                "wooden-taws": "Biglie di Legno"
+                "wooden-taws": "Biglie di Legno",
+                "khakkhara": "Khakkhara"
             }
         },
         "WeaponAbilityLabel": "Abilità Arma",
@@ -6243,6 +6271,10 @@
                 },
                 "TorchGoblin": {
                     "Note": "Fintanto che subisci danno da fuoco persistente, tutti i tuoi attacchi in mischia contro creature adiacenti infliggono [[/r 1[fire]]]{1 danno da fuoco} aggiuntivo per dado di danno dell'arma."
+                },
+                "ChosenOfLamashtu": {
+                    "AllowedDrops": "lignaggio goblin",
+                    "Prompt": "Seleziona un lignaggio goblin."
                 }
             },
             "VirtuosicPerformer": {
@@ -6404,6 +6436,10 @@
                 },
                 "Woodcraft": {
                     "Note": "Quando ti trovi in un ambiente della foresta o della giungla, se ottieni un fallimento critico in una prova di abilità di Sopravvivenza per Trovare la Direzione, Sopravvivere o Coprire Tracce, consideralo invece un fallimento, e se ottieni un successo, consideralo invece un successo critico."
+                },
+                "Atavism": {
+                    "Prompt": "Seleziona un lignaggio elfico.",
+                    "AllowedDrops": "lignaggio elfico"
                 }
             },
             "Equipment": {
@@ -6607,7 +6643,8 @@
             "Swashbuckler": {
                 "Style": {
                     "Prompt": "Seleziona uno stile."
-                }
+                },
+                "Panache": "Ottieni @UUID[Compendium.pf2e.feat-effects.uBJsxCzNhje8m8jj]{spavalderia}."
             },
             "Suli": {
                 "Dualborn": {
@@ -6834,6 +6871,11 @@
         "UUID": {
             "Label": "UUID",
             "SourceId": "ID Origine"
+        },
+        "ItemDescriptionHeader": "Descrizione",
+        "BrowserFilterConjunction": {
+            "OrLabel": "Una qualsiasi delle precedenti",
+            "AndLabel": "Tutte le precedenti"
         }
     },
     "COMBAT": {
