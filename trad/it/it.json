@@ -695,6 +695,23 @@
                     "UnknownVariant": "Alternativa sconosciuta '{variant}' usata per Prestare Primo Soccorso, usa stabilize o stopBleeding.",
                     "TargetNotDying": "La creatura bersagliata non è morente."
                 }
+            },
+            "CreateForgery": {
+                "ForgedDocument": {
+                    "FailureGmNote": "<p>Il documento ha dei particolari che lo identificano come un falso, quindi il GM compara il tuo risultato di {total} con la CD di Percezione o Società (la più alta tra le due) di ciascun osservatore passivo, usando i risultati successo e fallimento qui sotto. Dopo che il GM ha effettuato la tua prova per un documento, quel risultato viene usato contro le CD di tutti gli osservatori passivi. a prescindere da quanti siano.</p>\n<p>{success}</p>\n<p>{failure}</p>",
+                    "Description": "<p>Un osservatore ingannato da un'occhiata passiva può comunque scegliere di analizzare in dettaglio il documento alla ricerca di segni di falsificazione usando metodi di analisi e tecniche che vadano oltre gli elementi superficiali che hai falsificato con successo con la tua prova. In questo caso l'osservatore può effettuare una prova di @Check[type:perception|dc:{societyDC}] o @Check[type:society|dc:{societyDC}] contro la tua CD di Società (se a supera, riconosce il documento come un falso).</p>",
+                    "Name": "Documento Falso",
+                    "SuccessGmNote": "<p>Il falso è di qualità abbastanza alta, e gli osservatori passivi lo scambiano per un originale. Solo gli individui che esaminano attentamente il documento ed effettuano una prova di @Check[type:perception|dc:{societyDC}|showDC:gm] o @Check[type:society|dc:{societyDC}|showDC:gm] contro la tua CD di Società si accorgono che è un falso.</p>"
+                },
+                "Notes": {
+                    "success": "<strong>Successo</strong> L'osservatore non si accorge della falsificazione.",
+                    "criticalSuccess": "<strong>Successo</strong> L'osservatore non si accorge della falsificazione.",
+                    "criticalFailure": "<strong>Fallimento</strong> L'osservatore sa che il documento è un falso.",
+                    "failure": "<strong>Fallimento</strong> L'osservatore sa che il documento è un falso."
+                },
+                "ForgedDocumentCreatedNotification": "Un documento falso è stato aggiunto all'inventario di {name}.",
+                "UnspecificHandwriting": "Grafica Non Specifica",
+                "Title": "Falsificare"
             }
         },
         "SETTINGS": {
