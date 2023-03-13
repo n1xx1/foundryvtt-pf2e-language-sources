@@ -418,7 +418,10 @@
                     "success": "<strong>Successo</strong> Diventi @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto} nei confronti di tutte le creature la cui CD di Percezione è pari o inferiore al tuo risultato. (La condizione nascosto ti permette di allontanarti @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Muovendoti Furtivamente}). La condizione dura fino alla fine del tuo turno o finché continui solo a fare Passi o usare le azioni @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Muoversi Furtivamente} e @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Nascondersi} dell'abilità Furtività. Se Colpisci una creatura, essa è @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparata} nei confronti dell'attacco, dopodiché diventi @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{osservato}. Se fai qualsiasi altra cosa diventi @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{osservato} appena prima di agire, a meno che il GM non decida diversamente.",
                     "failure": "<strong>Fallimento</strong> Non distogli l'attenzione delle creature che hanno una CD di Percezione superiore al tuo risultato, le quali sono consapevoli del fatto che stavi cercando di fregarle."
                 },
-                "Trick": "Creare un Diversivo - Trucco"
+                "Trick": "Creare un Diversivo - Trucco",
+                "Warning": {
+                    "UnknownVariant": "Alternativa sconosciuta {variant} usata per Creare un Diversivo, usa uno tra {variants}."
+                }
             },
             "Disarm": {
                 "EffectLabel": "Usando un arma con impugnatura debole",
@@ -692,7 +695,7 @@
                     }
                 },
                 "Warning": {
-                    "UnknownVariant": "Alternativa sconosciuta '{variant}' usata per Prestare Primo Soccorso, usa stabilize o stopBleeding.",
+                    "UnknownVariant": "Alternativa sconosciuta {variant} usata per Prestare Primo Soccorso, usa uno tra {variants}.",
                     "TargetNotDying": "La creatura bersagliata non è morente."
                 }
             },
@@ -712,6 +715,14 @@
                 "ForgedDocumentCreatedNotification": "Un documento falso è stato aggiunto all'inventario di {name}.",
                 "UnspecificHandwriting": "Grafica Non Specifica",
                 "Title": "Falsificare"
+            },
+            "Escape": {
+                "Title": "Sfuggire",
+                "Notes": {
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Non ti liberi e non puoi tentare di Sfuggire di nuovo fino al tuo prossimo turno.",
+                    "success": "<strong>Successo</strong> Ti liberi e rimuovi la condizione afferrato, immobilizzato e trattenuto imposta dal bersaglio che hai scelto.",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Ti liberi e rimuovi la condizione afferrato, immobilizzato e trattenuto imposta dal bersaglio che hai scelto. Puoi poi Avanzare fino a 1,5 metri."
+                }
             }
         },
         "SETTINGS": {
@@ -857,8 +868,8 @@
                 "Hint": "Parametri per escludere il caricamento pacchetti"
             },
             "EnabledRulesUI": {
-                "Name": "Rule Element UI Avanzato",
-                "Hint": "Quando attivo, il rule element UI appare sugli oggetti. Sii molto prudente con questa opzione, perché potrebbe danneggiare personaggi ed oggetti se non sei sicuro di quel che fai oppure nel caso che fai un errore per caso."
+                "Name": "Accesso Rule Element dei Giocatori",
+                "Hint": "Quando attivo, i giocatori possono vedere e utilizzare il pannello dei rule element nelle schede degli oggetti."
             },
             "ResetChanges": "Reimposta Modifiche",
             "WorldClock": {
@@ -1264,7 +1275,8 @@
                     "SpellSlots": "Tutti gli slot incantesimo ripristinati.",
                     "StaminaPoints": "Punti tenacia ripristinati.",
                     "TemporaryItems": "Oggetti temporanei rimossi.",
-                    "WandsCharges": "Bacchette ripristinate."
+                    "WandsCharges": "Bacchette ripristinate.",
+                    "HitPointsSingle": "{hitPoints} punto ferita ripristinato."
                 },
                 "Label": "Riposa per la Notte",
                 "Prompt": "Riposa per la Notte?"
@@ -2311,7 +2323,8 @@
                         "All": "Tutti gli Oggetti Magici",
                         "Scroll": "Solo Pergamene"
                     },
-                    "TraditionSpellcasting": "Lancio di Incantesimi {tradition}"
+                    "TraditionSpellcasting": "Lancio di Incantesimi {tradition}",
+                    "Rituals": "Rituali"
                 },
                 "SpellPreparation": {
                     "Title": "{actor}: Preparazione Incantesimi",
@@ -2753,7 +2766,11 @@
             "ToggleQuickAlchemy": "Alchimia Rapida",
             "UndeletableTooltip": "Questa formula è parte di un altro oggetto e non può essere rimossa individualmente.",
             "QuickAddTitle": "Aggiungi questa formula a una o più voci di fabbricazione",
-            "NoEligibleEntry": "Nessuna voce di fabbricazione valida è stata trovata."
+            "NoEligibleEntry": "Nessuna voce di fabbricazione valida è stata trovata.",
+            "RemoveFormulaDialogTitle": "Rimuovi Formula",
+            "RemoveFormulaDialogQuestion": "Sei sicuro che vuoi rimuovere la formula per {name}?",
+            "UnprepareFormulaDialogTitle": "Annulla Preparazione Formula",
+            "UnprepareFormulaDialogQuestion": "Sei sicuro di voler annullare la preparazione della formula per {name}?"
         },
         "DamageDieD10": "d10",
         "NPCAbility": {
@@ -3053,11 +3070,13 @@
             "society": "Prova di Società",
             "stealth": "Prova di Furtività",
             "survival": "Prova di Sopravvivenza",
-            "thievery": "Prova di Furto"
+            "thievery": "Prova di Furto",
+            "unarmed": "Tiro Attacco Senz'Armi"
         },
         "LanguageKitsune": "Kitsune",
         "ActionsWarning": {
-            "NoActor": "Seleziona almeno un token prima di tirare, o assegna un personaggio predefinito."
+            "NoActor": "Seleziona almeno un token prima di tirare, o assegna un personaggio predefinito.",
+            "NoStatistic": "Il personaggio {name} ({id}) non ha una statistica per {statistic}."
         },
         "ActionsActionsHeader": "Azioni",
         "ActionsFreeActionsHeader": "Azioni Gratuite",
@@ -4309,8 +4328,8 @@
         "SpellComponentShortV": "V",
         "SpellComponentsLabel": "Componenti",
         "SpellSlotEmpty": "Vuoto (trascina incantesimo)",
-        "SpellSlotNotEnoughError": "Non puoi lanciare {name} a livello {level}, non hai abbastanza slot",
-        "SpellSlotExpendedError": "Non puoi lanciare {name}, l'incantesimo è già stato lanciato",
+        "SpellSlotNotEnoughError": "Non puoi lanciare {name} a livello {level}: non hai abbastanza slot",
+        "SpellSlotExpendedError": "Non puoi lanciare {name}: l'incantesimo è già stato lanciato",
         "SpellPrimaryCheckLabel": "Prove Primarie",
         "SpellSecondaryChecksLabel": "Prove Secondarie",
         "SpellSecondaryCasters": "Lanciatori Secondari",
@@ -4613,7 +4632,7 @@
         "TraitDescriptionCatfolk": "Una creatura con questo tratto è un membro della razza Catfolk.",
         "TraitDescriptionChampion": "Questo tratto indica le capacità legate alla classe del campione.",
         "TraitDescriptionChangeling": "Una creatura con questo tratto è un membro della razza Changeling.",
-        "TraitDescriptionChaotic": "Gli effetti caotici spesso manipolano l'energia proveniente da Piani Esterni di allineamento caotico e sono un anatema per i servitori divini legali o per i servitori divini di divinità legali. Una creatura con questo tratto e di allineamento caotico. Una capacità con questo tratto può essere selezionata o usata solo da creature caotiche.",
+        "TraitDescriptionChaotic": "Gli effetti caotici spesso manipolano l'energia proveniente da Piani Esterni di allineamento caotico e sono un anatema per i servitori divini legali o per i servitori divini di divinità legali. Una creatura con questo tratto e di allineamento caotico.",
         "TraitDescriptionCleric": "Questo tratto indica le capacità legate alla classe del chierico.",
         "TraitDescriptionCold": "Gli effetti con questo tratto infliggono danni da freddo. Le creature con questo tratto hanno una connessione con il freddo magico.",
         "TraitDescriptionComfort": "L'Armatura è talmente comoda che puoi riposare normalmente mentre la stai indossando.",
@@ -4652,7 +4671,7 @@
         "TraitDescriptionEnchantment": "Gli effetti e gli oggetti magici con questo tratto sono associati alla scuola di magia di Ammaliamento, che in genere implica controllo mentale, alterazione delle emozioni e altri effetti mentali.",
         "TraitDrug": "Droga",
         "TraitDescriptionEnvironment": "Un pericolo con questo tratto è qualcosa di pericoloso che fa parte del mondo naturale, come sabbie mobili o muffe dannose.",
-        "TraitDescriptionEvil": "Gli effetti di male spesso manipolano l'energia proveniente da Piani Esterni di allineamento malvagio e sono antitetici ai servitori divini buoni o ai servitori divini di divinità buone. Una creatura con questo tratto è di allineamento malvagio. Una capacità con questo tratto può essere selezionata o usata solo da creature malvagie.",
+        "TraitDescriptionEvil": "Gli effetti di male spesso manipolano l'energia proveniente da Piani Esterni di allineamento malvagio e sono antitetici ai servitori divini buoni o ai servitori divini di divinità buone. Una creatura con questo tratto è di allineamento malvagio.",
         "TraitDescriptionEvocation": "Gli effetti e gli oggetti magici con questo tratto sono associati alla scuola di magia di invocazione, che generalmente coinvolge energie e forze elementali.",
         "TraitDescriptionExploration": "Un'attività con questo tratto richiede più di un turno per essere usata e di solito può essere utilizzata solo durante la Modalità Esplorazione.",
         "TraitDescriptionExtradimensional": "Questo effetto o oggetto crea uno spazio extradimensionale. Un effetto extradimensionale posto all'interno di un altro spazio extradimensionale cessa di funzionare fino a quando non viene rimosso.",
@@ -4681,7 +4700,7 @@
         "TraitDescriptionGoblin": "Una creatura con questo tratto può provenire da varie specie di creature, tra cui goblin, hobgoblin e bugbear. I goblin tendono ad avere Scurovisione. Una capacità con questo tratto può essere usata o selezionata solo dai goblin. Un'arma con questo tratto viene creata e utilizzata dai goblin.",
         "TraitDescriptionKobold": "Una creatura con questo tratto è un membro della stirpe Coboldo.",
         "TraitDuergar": "Duergar",
-        "TraitDescriptionGood": "Gli effetti da bene spesso manipolano l'energia proveniente da Piani Esterni di allineamento buono e sono antitetici ai servi divini malvagi o ai servi divini delle divinità malvagie. Una creatura con questo tratto ha allineamento buono. Una capacità con questo tratto può essere selezionata o usata solo da creature buone.",
+        "TraitDescriptionGood": "Gli effetti da bene spesso manipolano l'energia proveniente da Piani Esterni di allineamento buono e sono antitetici ai servi divini malvagi o ai servi divini delle divinità malvagie. Una creatura con questo tratto ha allineamento buono.",
         "TraitDescriptionGrapple": "Puoi usare quest'arma per Lottare usando l'abilità Atletica anche se non hai una mano libera. Questo tratto usa la portata dell'arma (se diversa dalla tua) e aggiunge il bonus di oggetto dell'arma ai Tiri per Colpire come bonus di oggetto alle prove di Atletica. Se realizzi un fallimento critico ad una prova di Lottare usando l'arma, puoi lasciar andare l'arma per ottenere gli effetti di un fallimento anziché quelli di un fallimento critico.",
         "TraitDescriptionGrippli": "I grippli sono una famiglia di creature umanoidi simili a una rana",
         "TraitDescriptionHalfElf": "Una creatura con questo tratto è in parte umano e in parte Elfo. Una capacità con questo tratto può essere usata o selezionata solo dai Mezzelfi.",
@@ -4696,7 +4715,7 @@
         "TraitDescriptionIllusion": "Gli effetti magici con questo tratto sono associati alla scuola di magia di Illusione, che in genere comporta falsi stimoli sensoriali.",
         "TraitDescriptionIfrit": "Gli ifrit sono eredi planari che discendono dagli efreet.",
         "TraitDescriptionKitsune": "Umanoidi mutaforma il cui aspetto originario ricorda le volpi.",
-        "TraitDescriptionLawful": "Gli effetti legali spesso manipolano l'energia proveniente da Piani Esterni di allineamento legale e sono antitetici ai servitori divini caotici o ai servitori divini di divinità caotiche. Una creatura con questo tratto è di allineamento legale. Una capacità con questo tratto può essere selezionata o usata solo da creature legali.",
+        "TraitDescriptionLawful": "Gli effetti legali spesso manipolano l'energia proveniente da Piani Esterni di allineamento legale e sono antitetici ai servitori divini caotici o ai servitori divini di divinità caotiche. Una creatura con questo tratto è di allineamento legale.",
         "TraitDuskwalker": "Viandante Crepuscolare",
         "TraitDescriptionIncapacitation": "Una capacità con questo tratto. Può eliminare completamente un personaggio dal combattimento o addirittura ucciderlo: ed è più difficile da usare su un personaggio più potente. Se un incantesimo ha il tratto incapacitazione, qualsiasi creatura con più del doppio del livello dell'incantesimo tratta il risultato della sua prova per evitare di essere incapacitato dall'incantesimo come un grado di successo migliore. O il risultato di qualsiasi prova fatta dall'incantatore per renderlo incapacitato come un grado di successo peggiore. Se qualsiasi altro effetto ha il tratto incapacitazione, una creatura di livello superiore rispetto all'oggetto, alla creatura o al pericolo che genera l'effetto ottiene gli stessi benefici.",
         "TraitDescriptionIncorporeal": "Una creatura o un oggetto incorporeo non possiede alcuna forma fisica. Può passare attraverso gli oggetti solidi, incluse le pareti. Quando si trova all'interno di un oggetto, una creatura incorporea non può percepire, attaccare o interagire con nulla che si trovi all’esterno dell'oggetto, e se inizia il suo turno in un oggetto è rallentata 1. Le creature corporee possono passare attraverso una creatura incorporea, ma non possono terminare il loro movimento nel suo spazio. Una creatura incorporea non può tentare prove basate sulla Forza contro le creature o gli oggetti fisici (può farlo solo contro quelli incorporei) a meno che tali oggetti non possiedano la runa di proprietà tocco fantasma. Analogamente, una creatura corporea non può tentare prove basate sulla Forza contro creature o oggetti incorporei. Le creature incorporee solitamente sono dotate di immunità agli effetti o alle condizioni che richiedono un corpo fisico, come le malattie, i veleni e i danni di precisione. Solitamente sono dotate di resistenza contro tutti i danni (tranne i danni da forza e i danni dei Colpi con la runa di proprietà tocco fantasma) e doppia resistenza contro i danni non magici.",
@@ -5264,7 +5283,7 @@
             }
         },
         "UnitPriceLabel": "Prezzo unità",
-        "UnprepareItemTitle": "Annulla preparazione oggetto",
+        "UnprepareItemTitle": "Annulla Preparazione Oggetto",
         "UpdateActorLabel": "Aggiorna Personaggio",
         "UpdateLabelUniversal": "Aggiorna",
         "UserSettings": {
@@ -5802,7 +5821,8 @@
             "SubstituteRoll": "Sostituisci Tiro",
             "TokenName": "Nome Token",
             "RollTwice": "Tira Due Volte",
-            "MarkToken": "Contrassegna Token"
+            "MarkToken": "Contrassegna Token",
+            "EphemeralEffect": "Effetto Effimero"
         },
         "Mutagens": {
             "BestialMutagen": {
@@ -6013,7 +6033,7 @@
                 "TalismanDabbler": "Collezionista di Talismani"
             },
             "DeityAndCause": {
-                "AllowedDrops": "privilegio di classe di 1° livello del Campione",
+                "AllowedDrops": "privilegio di classe di 1° livello del campione",
                 "Prompt": "Seleziona una causa del campione"
             },
             "FighterWeaponMasteryLegend": {
@@ -6383,17 +6403,32 @@
             },
             "Barbarian": {
                 "Animal": {
-                    "Prompt": "Seleziona un animale."
+                    "Prompt": "Seleziona un animale.",
+                    "Deer": "Cervo",
+                    "Cat": "Felino",
+                    "Bull": "Toro",
+                    "Bear": "Orso",
+                    "Ape": "Scimmia",
+                    "Wolf": "Lupo",
+                    "Snake": "Serpente",
+                    "Shark": "Squalo",
+                    "Frog": "Rana"
                 },
                 "Dragon": {
                     "Prompt": "Seleziona un drago.",
                     "NormalRageDamage": "Infliggi il danno di furia normale"
                 },
                 "Instinct": {
-                    "Prompt": "Seleziona un istinto."
+                    "Prompt": "Seleziona un istinto.",
+                    "Drops": "Privilegio di classe di 1° livello del barbaro"
                 },
                 "Giant": {
                     "Prompt": "Seleziona un tipo di energia per Resistenza Furiosa."
+                },
+                "Spirit": {
+                    "NegativeDamage": "Infliggi Danni Negativi",
+                    "ToggleLabel": "Furia dell'Istinto Spirituale",
+                    "PositiveDamage": "Infliggi Danni Positivi"
                 }
             },
             "Bard": {
@@ -6423,7 +6458,8 @@
             },
             "Cleric": {
                 "Doctrine": {
-                    "Prompt": "Seleziona una dottrina."
+                    "Prompt": "Seleziona una dottrina.",
+                    "AllowedDrops": "privilegio di classe di 1° livello del chierico"
                 }
             },
             "Conrasu": {
@@ -6898,7 +6934,8 @@
         "TraitAdditive0": "Additivo 0",
         "TraitMisfortuneEffects": "Effetti di Sfortuna",
         "TraitEtchedOntoHeavyArmor": "Incisa su un'Armatura Pesante",
-        "WeaponRange200": "60m"
+        "WeaponRange200": "60m",
+        "TraitDescriptionArtifact": "Gli oggetti con questo tratto sono artefatti. Questi oggetti magici non possono essere fabbricati con mezzi normali e non possono essere danneggiati da mezzi normali. Gli artefatti sono sempre rari o unici."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
