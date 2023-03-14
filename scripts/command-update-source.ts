@@ -85,11 +85,11 @@ async function translateSource(
     const origin: any = dataMap.get(name) ?? {};
 
     if (part.startsWith("items.")) {
-      const itemMatch = part.match(/^items\.(.+)\.(name|description)$/)!;
+      const itemMatch = part.match(/^items\.([^\.])+\.(.*)$/)!;
       if (itemMatch) {
-        const [, itemName] = itemMatch;
+        const [, itemId, field] = itemMatch;
         const item =
-          origin.items?.find((item: any) => item.name === itemName) ?? {};
+          origin.items?.find((item: any) => item._id === itemId) ?? {};
 
         const itemSource: string =
           item.system?.source?.value ??
