@@ -1061,7 +1061,7 @@
         },
         "u5QLFlQIhlSxoxNI": {
           "name": "Blood Draw",
-          "description": "<p>If the fly's last action was a successful proboscis Strike, it sucks its target's blood. The target takes @Localize[PF2E.PersistentDamage.Bleed1d4.success] (or @Localize[PF2E.PersistentDamage.Bleed1d6.success] if the target is an animal).</p>"
+          "description": "<p>If the fly's last action was a successful proboscis Strike, it sucks its target's blood. The target takes [[/r 1d4[bleed]]] (or [[/r 1d6[bleed]]] if the target is an animal).</p>"
         },
         "zWoey4iac1a0BELq": {
           "name": "Sleeping Sickness",
@@ -1807,7 +1807,7 @@
         },
         "e12xgoitz86e6tmn": {
           "name": "Impaling Strike",
-          "description": "<p><strong>Frequency</strong> once per round</p><hr />\n<p><strong>Effect</strong> The Jackal Guard lunges forward with their spear and delivers a piercing blow. The Jackal Guard Steps and then makes a melee spear Strike. On a hit, the target also takes @Localize[PF2E.PersistentDamage.Bleed1d6.success].</p>"
+          "description": "<p><strong>Frequency</strong> once per round</p><hr />\n<p><strong>Effect</strong> The Jackal Guard lunges forward with their spear and delivers a piercing blow. The Jackal Guard Steps and then makes a melee spear Strike. On a hit, the target also takes [[/r 1d6[bleed]]].</p>"
         },
         "juntvowtsn9qcqkr": {
           "name": "Knocking Sweep",
@@ -2227,7 +2227,7 @@
         },
         "6ewj2qi6aut2zvfv": {
           "name": "Venom Pool",
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The venom caller conjures a @Template[type:burst|distance:10] of liquid poison within 60 feet. Each creature that begins its turn in the area takes [[/r 4d6[poison]]]{4d6 poison damage }(@Check[type:fortitude|dc:25|basic:true] save). On a critical failure, creatures also take @Localize[PF2E.PersistentDamage.Poison1d6.success]. Once per turn, starting the turn after the venom caller uses Venom Pool, the venom caller can use a single action, which has the concentrate trait, to increase the radius of the burst by 5 feet. The pool of venom lasts for 1 minute, at which time it evaporates without a trace.</p>"
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The venom caller conjures a @Template[type:burst|distance:10] of liquid poison within 60 feet. Each creature that begins its turn in the area takes [[/r 4d6[poison]]]{4d6 poison damage }(@Check[type:fortitude|dc:25|basic:true] save). On a critical failure, creatures also take [[/r 1d6[persistent,poison]]]. Once per turn, starting the turn after the venom caller uses Venom Pool, the venom caller can use a single action, which has the concentrate trait, to increase the radius of the burst by 5 feet. The pool of venom lasts for 1 minute, at which time it evaporates without a trace.</p>"
         }
       }
     },
@@ -2942,7 +2942,7 @@
         },
         "jx5bqzn2y2c4u481": {
           "name": "Telepathic Feedback",
-          "description": "<p>The formian queen unleashes a blast of debilitating telepathic feedback, targeting as many creatures as she wishes within range of her telepathy and to whom she has a line of effect. Targeted creatures must attempt a @Check[type:will|dc:38] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Telepathic Feedback for 24 hours.</p>\n<p><strong>Success</strong> The creature takes [[/r 3d6[mental]]] damage, @Localize[PF2E.PersistentDamage.Mental1d6.success], and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature takes [[/r 6d6[mental]]] damage, 1d6 persistent mental damage, and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r 12d6[mental]]] damage, 1d6 persistent mental damage, and is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3}. Upon recovering from the stunned condition, the creature becomes sickened 2.</p>"
+          "description": "<p>The formian queen unleashes a blast of debilitating telepathic feedback, targeting as many creatures as she wishes within range of her telepathy and to whom she has a line of effect. Targeted creatures must attempt a @Check[type:will|dc:38] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Telepathic Feedback for 24 hours.</p>\n<p><strong>Success</strong> The creature takes [[/r 3d6[mental]]] damage, [[/r 1d6[persistent,mental]]], and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature takes [[/r 6d6[mental]]] damage, 1d6 persistent mental damage, and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r 12d6[mental]]] damage, 1d6 persistent mental damage, and is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3}. Upon recovering from the stunned condition, the creature becomes sickened 2.</p>"
         }
       }
     },
@@ -3574,7 +3574,7 @@
         },
         "upaegtrqpc4cwa5k": {
           "name": "Oviposit",
-          "description": "<p><strong>Requirements</strong> The ironclad annihilator beetle has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}</p><hr />\n<p><strong>Effect</strong> The ironclad annihilator injects its ovipositor under the grabbed creature's skin. The creature takes [[/r (4d6+20)[bludgeoning]]] damage (@Check[type:fortitude|dc:44|basic:true]). On a failed save, the beetle implants an egg, and the target creature takes @Localize[PF2E.PersistentDamage.Bleed4d6.success] that is unusually tenacious. The DC to stop the bleeding using Administer First Aid is @Check[type:medicine|dc:40|name:Administer First Aid|traits:action:administer-first-aid], and healing the creature to full Hit Points doesn't automatically stop the bleeding. If the target creature dies from this bleed damage, its body is destroyed and unrecoverable except with powerful magic such as <em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{Miracle}</em> or <em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{Wish}</em>, and an immature ironclad annihilator beetle (with statistics as a @UUID[Compendium.pf2e.pathfinder-bestiary.bIw7czN0E3rENrVd]{Giant Stag Beetle}) bursts forth.</p>"
+          "description": "<p><strong>Requirements</strong> The ironclad annihilator beetle has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}</p><hr />\n<p><strong>Effect</strong> The ironclad annihilator injects its ovipositor under the grabbed creature's skin. The creature takes [[/r (4d6+20)[bludgeoning]]] damage (@Check[type:fortitude|dc:44|basic:true]). On a failed save, the beetle implants an egg, and the target creature takes [[/r 4d6[bleed]]] that is unusually tenacious. The DC to stop the bleeding using Administer First Aid is @Check[type:medicine|dc:40|name:Administer First Aid|traits:action:administer-first-aid], and healing the creature to full Hit Points doesn't automatically stop the bleeding. If the target creature dies from this bleed damage, its body is destroyed and unrecoverable except with powerful magic such as <em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{Miracle}</em> or <em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{Wish}</em>, and an immature ironclad annihilator beetle (with statistics as a @UUID[Compendium.pf2e.pathfinder-bestiary.bIw7czN0E3rENrVd]{Giant Stag Beetle}) bursts forth.</p>"
         },
         "esk4sj88f3v3cv4o": {
           "name": "Sunder Objects",
@@ -3812,7 +3812,7 @@
         },
         "8nh48znq0ytxo14q": {
           "name": "Envenomed Weapons",
-          "description": "<p>Weapons the wereant poisoner holds deal an additional @Localize[PF2E.PersistentDamage.Poison2d6.success] as poison seeps from the wereant's hands onto the weapon. Weapons cease to deal this persistent poison damage once the wereant lets them go. The kukri Strikes above include this persistent poison damage.</p>"
+          "description": "<p>Weapons the wereant poisoner holds deal an additional [[/r 2d6[persistent,poison]]] as poison seeps from the wereant's hands onto the weapon. Weapons cease to deal this persistent poison damage once the wereant lets them go. The kukri Strikes above include this persistent poison damage.</p>"
         },
         "c1Uo44lQWgOcY82g": {
           "name": "Moon Frenzy",
@@ -4392,7 +4392,7 @@
         },
         "sfko8ztlbbitvfik": {
           "name": "Retaliate",
-          "description": "<p><strong>Trigger</strong> A creature within the thorn guardian's reach attacks the guardian's ward</p>\n<hr />\n<p><strong>Effect</strong> The thorn guardian makes a briar Strike against the triggering creature. If it hits, it deals an additional @Localize[PF2E.PersistentDamage.Bleed2d6.success].</p>"
+          "description": "<p><strong>Trigger</strong> A creature within the thorn guardian's reach attacks the guardian's ward</p>\n<hr />\n<p><strong>Effect</strong> The thorn guardian makes a briar Strike against the triggering creature. If it hits, it deals an additional [[/r 2d6[bleed]]].</p>"
         },
         "q5q18a8pjacvh8kh": {
           "name": "Bond with Ward",
