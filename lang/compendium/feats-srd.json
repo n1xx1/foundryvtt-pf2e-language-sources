@@ -316,7 +316,7 @@
     },
     "Vengeful Strike": {
       "name": "Vengeful Strike",
-      "description": "<p><strong>Trigger</strong> A creature within your reach succeeds or critically succeeds at an attack against you.</p>\n<p><strong>Requirements</strong> You're under the effect of Come and Get Me</p>\n<hr />\n<p>When struck by an enemy, you respond in turn. Make a melee Strike against the triggering creature. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>",
+      "description": "<p><strong>Trigger</strong> A creature within your reach succeeds or critically succeeds at an attack against you.</p>\n<p><strong>Requirements</strong> You're under the effect of @UUID[Compendium.pf2e.feats-srd.Z9gzWFk3qom2z904]{Come and Get Me}</p>\n<hr />\n<p>When struck by an enemy, you respond in turn. Make a melee Strike against the triggering creature. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>",
       "featPrerequisites": {
         "0": "Come and Get Me"
       }
@@ -2753,7 +2753,7 @@
     },
     "Furious Grab": {
       "name": "Furious Grab",
-      "description": "<p><strong>Requirements</strong> Your last action was a successful Strike, and either you have a hand free or your Strike used a grapple weapon.</p>\n<hr />\n<p>You grab your foe while it's distracted by your attack. The foe you hit becomes grabbed, as if you had succeeded at an Athletics check to Grapple the foe.</p>"
+      "description": "<p><strong>Requirements</strong> Your last action was a successful Strike, and either you have a hand free or your Strike used a grapple weapon.</p>\n<hr />\n<p>You grab your foe while it's distracted by your attack. The foe you hit becomes @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, as if you had succeeded at an Athletics check to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} the foe.</p>"
     },
     "Gear Gnash": {
       "name": "Gear Gnash",
@@ -3168,7 +3168,7 @@
     },
     "Sunder Spell": {
       "name": "Sunder Spell",
-      "description": "<p>You draw upon your superstitious fury to destroy a spell. Make a Strike with a melee weapon or an unarmed attack against a creature, object, or a spell manifestation (such as the wall created by <em>@UUID[Compendium.pf2e.spells-srd.IarZrgCeaiUqOuRu]{Wall of Fire}</em> or the guardian from <em>@UUID[Compendium.pf2e.spells-srd.jQdm301h6e8hIY4U]{Spiritual Guardian}</em>). If you're targeting something that doesn't have an AC listed, its AC is usually 10 against this Strike for targets that are very easy to hit, like a wall, or a different AC determined by the GM.</p>\n<p>If your Strike hits, you can attempt to counteract a single spell or magical effect on the target. Your counteract level for this attempt is equal to half your level rounded up, and you use the result of your attack roll for the counteract check.</p>\n<p>Whether or not you succeed at your Strike, the target becomes temporarily immune to your Sunder Spell for 24 hours.</p>",
+      "description": "<p>You draw upon your superstitious fury to destroy a spell. Make a Strike with a melee weapon or an unarmed attack against a creature, object, or a spell manifestation (such as the wall created by <em>@UUID[Compendium.pf2e.spells-srd.IarZrgCeaiUqOuRu]{Wall of Fire}</em> or the guardian from <em>@UUID[Compendium.pf2e.spells-srd.jQdm301h6e8hIY4U]{Spiritual Guardian}</em>). If you're targeting something that doesn't have an AC listed, its AC is usually 10 against this Strike for targets that are very easy to hit, like a wall, or a different AC determined by the GM. If your Strike hits, you can attempt to counteract a single spell or magical effect on the target. Your counteract level for this attempt is equal to half your level rounded up, and you use the result of your attack roll for the counteract check.</p>\n<p>Whether or not you succeed at your Strike, the target becomes temporarily immune to your Sunder Spell for 24 hours.</p>",
       "featPrerequisites": {
         "0": "superstition instinct"
       }
@@ -4777,7 +4777,7 @@
     },
     "Overpowering Charge": {
       "name": "Overpowering Charge",
-      "description": "<p>You trample your foes as you charge past them.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.to6s7QanfhHukW5r]{Barreling Charge} and successfully move through a creature's space, that creature takes bludgeoning damage equal to your Strength modifier. If you critically succeed, the creature takes twice this amount of damage and becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the end of your next turn.</p>",
+      "description": "<p>You trample your foes as you charge past them. When you use @UUID[Compendium.pf2e.feats-srd.to6s7QanfhHukW5r]{Barreling Charge} and successfully move through a creature's space, that creature takes [[/r @actor.abilties.str.mod[bludgeoning]]]{bludgeoning damage} equal to your Strength modifier. If you critically succeed, the creature takes [[/r 2*@actor.abilties.str.mod[bludgeoning]]]{twice this amount of damage} and becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the end of your next turn.</p>",
       "featPrerequisites": {
         "0": "Barreling Charge"
       }
@@ -5713,7 +5713,7 @@
     },
     "Reckless Abandon (Barbarian)": {
       "name": "Reckless Abandon (Barbarian)",
-      "description": "<p><strong>Trigger</strong> Your turn begins, and you are at half or fewer Hit Points.</p>\n<hr />\n<p>Your blood boils when you take a beating, and you throw caution to the wind to finish the fight. You gain a +2 circumstance bonus to attack rolls, a -2 penalty to AC, and a -1 penalty to saves. These bonuses and penalties last until your Rage ends or until you are above half Hit Points, whichever comes first.</p>"
+      "description": "<p><strong>Trigger</strong> Your turn begins, and you are at half or fewer Hit Points.</p>\n<hr />\n<p>Your blood boils when you take a beating, and you throw caution to the wind to finish the fight. You gain a +2 circumstance bonus to attack rolls, a -2 penalty to AC, and a -1 penalty to saves. These bonuses and penalties last until your Rage ends or until you are above half Hit Points, whichever comes first.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.sfUsodcGb4atcSyN]{Effect: Reckless Abandon (Barbarian)}</p>"
     },
     "Hellspawn": {
       "name": "Hellspawn",
@@ -6748,7 +6748,7 @@
     },
     "Terrifying Howl": {
       "name": "Terrifying Howl",
-      "description": "<p>You unleash a terrifying howl. Attempt <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"A\">Intimidation</span> checks to Demoralize each enemy within 30 feet. Regardless of the results of your checks, each enemy is then temporarily immune to Terrifying Howl for 1 minute.</p>",
+      "description": "<p>You unleash a terrifying howl. Attempt Intimidation checks to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} each enemy within 30 feet. Regardless of the results of your checks, each enemy is then temporarily immune to Terrifying Howl for 1 minute.</p>",
       "featPrerequisites": {
         "0": "Intimidating Glare"
       }
@@ -8354,7 +8354,7 @@
     },
     "Giant's Lunge": {
       "name": "Giant's Lunge",
-      "description": "<p>You extend your body and prepare to attack foes outside your normal reach. Until your rage ends, all your melee weapons and unarmed attacks gain reach 10. This doesn't increase the reach of any weapon or unarmed attack that already has the reach trait, but it does combine with abilities that increase your reach due to increased size, such as Giant's Stature.</p>",
+      "description": "<p>You extend your body and prepare to attack foes outside your normal reach. Until your rage ends, all your melee weapons and unarmed attacks gain reach 10. This doesn't increase the reach of any weapon or unarmed attack that already has the reach trait, but it does combine with abilities that increase your reach due to increased size, such as Giant's Stature.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.N2CSGvtPXloOEPrK]{Effect: Giant's Lunge}</p>",
       "featPrerequisites": {
         "0": "giant instinct"
       }
@@ -10307,7 +10307,7 @@
     },
     "Shattering Blows": {
       "name": "Shattering Blows",
-      "description": "<p>Your forceful blows shatter objects with ease. While you are raging, your melee @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Strikes} ignore 5 points of an object's Hardness. If you have the devastator class feature, you instead ignore 10 points of an object's Hardness.</p>"
+      "description": "<p>Your forceful blows shatter objects with ease. While you are raging, your melee @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Strikes} ignore 5 points of an object's Hardness. If you have the @UUID[Compendium.pf2e.classfeatures.VLiT503OLOM3vaDx]{Devastator} class feature, you instead ignore 10 points of an object's Hardness.</p>"
     },
     "Wary Disarmament": {
       "name": "Wary Disarmament",
@@ -10512,7 +10512,7 @@
     },
     "Sunder Enchantment": {
       "name": "Sunder Enchantment",
-      "description": "<p>You can focus your superstition to break the magic of an item, in addition to destroying freestanding spells and those active on creatures.</p>\n<p>When you Sunder a Spell, you can instead attempt to counteract either an unattended magic item or one of your target's magic items. If your counteract attempt succeeds, the item becomes a mundane item of its type for 10 minutes. If you target an artifact, an intelligent item, or a particularly powerful item, your counteract attempt automatically fails.</p>",
+      "description": "<p>You can focus your superstition to break the magic of an item, in addition to destroying freestanding spells and those active on creatures. When you @UUID[Compendium.pf2e.feats-srd.8INrcMUv5vzWMG3X]{Sunder a Spell}, you can instead attempt to counteract either an unattended magic item or one of your target's magic items. If your counteract attempt succeeds, the item becomes a mundane item of its type for 10 minutes. If you target an artifact, an intelligent item, or a particularly powerful item, your counteract attempt automatically fails.</p>",
       "featPrerequisites": {
         "0": "Sunder Spell"
       }
@@ -12505,7 +12505,7 @@
     },
     "Collateral Thrash": {
       "name": "Collateral Thrash",
-      "description": "<p>When you Thrash a grabbed foe, you smack that foe into another nearby. Another foe adjacent to the grabbed foe also takes your Thrash damage, with a basic Reflex save against your class DC.</p>",
+      "description": "<p>When you @UUID[Compendium.pf2e.feats-srd.rMPL11JRcmlutvRi]{Thrash} a @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} foe, you smack that foe into another nearby. Another foe adjacent to the grabbed foe also takes your Thrash damage, with a @Check[type:reflex|dc:resolve(@actor.classDCs.barbarian.dc.value)|basic:true] save against your class DC.</p>",
       "featPrerequisites": {
         "0": "Thrash"
       }
@@ -12958,7 +12958,7 @@
     },
     "Whirlwind Toss": {
       "name": "Whirlwind Toss",
-      "description": "<p><strong>Requirements</strong> You have a foe grabbed.</p>\n<p>You whirl a foe to smash into all nearby creatures before throwing them far away in imitation of the techniques of your rival, Ran-To. You Thrash. During this Thrash, your @UUID[Compendium.pf2e.feats-srd.WY7CjISdz6uwXwIb]{Collateral Thrash} feat applies to all foes adjacent to you. You can then throw the grabbed creature 10 feet, where they fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p>If the foe you choose for Collateral Thrash is also adjacent to you, they attempt only one save and take the damage only once.</p>",
+      "description": "<p><strong>Requirements</strong> You have a foe @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p>You whirl a foe to smash into all nearby creatures before throwing them far away in imitation of the techniques of your rival, Ran-To. You @UUID[Compendium.pf2e.feats-srd.rMPL11JRcmlutvRi]{Thrash}. During this Thrash, your @UUID[Compendium.pf2e.feats-srd.WY7CjISdz6uwXwIb]{Collateral Thrash} feat applies to all foes adjacent to you. You can then throw the grabbed creature 10 feet, where they fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p>If the foe you choose for Collateral Thrash is also adjacent to you, they attempt only one save and take the damage only once.</p>",
       "featPrerequisites": {
         "0": "Collateral Thrash"
       }
@@ -13434,7 +13434,7 @@
     },
     "Silencing Strike": {
       "name": "Silencing Strike",
-      "description": "<p>A quick strike to the face or mouth silences your opponent. Make a melee Strike against a foe. The foe must succeed at a Fortitude save against your class DC.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is dazed and can barely vocalize. It's @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} and its speech is raspy and hard to understand. It must succeed at a @Check[type:flat|dc:11] to use linguistic actions or supply verbal spellcasting components until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is stunned 3 instead of stunned 1.</p>"
+      "description": "<p>A quick strike to the face or mouth silences your opponent. Make a melee Strike against a foe. The foe must succeed at a @Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)] save against your class DC.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is dazed and can barely vocalize. It's @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} and its speech is raspy and hard to understand. It must succeed at a @Check[type:flat|dc:11] to use linguistic actions or supply verbal spellcasting components until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} instead of stunned 1.</p>"
     },
     "Point-Blank Shot": {
       "name": "Point-Blank Shot",
@@ -15011,7 +15011,7 @@
     },
     "Great Cleave": {
       "name": "Great Cleave",
-      "description": "<p>Your fury carries your weapon through multiple foes. When you Cleave, if your Strike also kills or knocks the target unconscious, you can continue to make melee Strikes until you make a Strike that doesn't kill or knock a creature unconscious, or until there are no creatures adjacent to the most recent creature you attacked while Cleaving, whichever comes first.</p>",
+      "description": "<p>Your fury carries your weapon through multiple foes. When you @UUID[Compendium.pf2e.feats-srd.GE96a0UGPYM74qjI]{Cleave}, if your Strike also kills or knocks the target unconscious, you can continue to make melee Strikes until you make a Strike that doesn't kill or knock a creature unconscious, or until there are no creatures adjacent to the most recent creature you attacked while Cleaving, whichever comes first.</p>",
       "featPrerequisites": {
         "0": "Cleave"
       }
@@ -16217,7 +16217,7 @@
     },
     "Corpse-Killer's Defiance": {
       "name": "Corpse-Killer's Defiance",
-      "description": "<p><strong>Trigger</strong> You destroy an undead foe.</p>\n<hr />\n<p>You defy Tar-Baphon with every undead you destroy, using your victory to rally your allies. Allies that can see you gain a +1 status bonus to attack and damage rolls against undead for 1 round, or a +2 status bonus to attack and damage rolls against undead for 2 rounds if the undead foe destroyed was a creature of your level or higher.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.ctiTtuRWFjAnWdYQ]{Effect: Corpse-Killer's Defiance (Lower Level)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3WzaQKb10AYLdTsQ]{Effect: Corpse-Killer's Defiance}</p>"
+      "description": "<p><strong>Trigger</strong> You destroy an undead foe.</p>\n<hr />\n<p>You defy Tar-Baphon with every undead you destroy, using your victory to rally your allies. Allies that can see you gain a +1 status bonus to attack and damage rolls against undead for 1 round, or a +2 status bonus to attack and damage rolls against undead for 2 rounds if the undead foe destroyed was a creature of your level or higher.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3WzaQKb10AYLdTsQ]{Effect: Corpse-Killer's Defiance}</p>"
     },
     "Fighting Horn": {
       "name": "Fighting Horn",
@@ -16355,7 +16355,7 @@
     },
     "Spirit's Wrath": {
       "name": "Spirit's Wrath",
-      "description": "<p>You call forth an ephemeral apparition, typically the ghost of an ancestor or a nature spirit, which takes the form of a wisp. The spirit wisp makes a melee wisp rush unarmed attack against an enemy within 120 feet of you. The wisp's attack modifier is equal to your proficiency bonus for martial weapons plus your Strength modifier plus a +2 item bonus, and it applies the same circumstance and status bonuses and penalties that you have. On a hit, the wisp deals damage equal to 4d8 plus your Constitution modifier. The damage is your choice of negative or positive damage; don't apply your Rage damage or your weapon specialization damage, but circumstance and status bonuses and penalties that would also affect the wisp's damage apply. If your wisp's Strike is a critical hit, the target becomes frightened 1. This attack uses and counts toward your multiple attack penalty as if you were the one attacking.</p>",
+      "description": "<p>You call forth an ephemeral apparition, typically the ghost of an ancestor or a nature spirit, which takes the form of a wisp. The spirit wisp makes a melee wisp rush unarmed attack against an enemy within 120 feet of you. The wisp's attack modifier is equal to your proficiency bonus for martial weapons plus your Strength modifier plus a +2 item bonus, and it applies the same circumstance and status bonuses and penalties that you have. On a hit, the wisp deals damage equal to 4d8 plus your Constitution modifier. The damage is your choice of [[/r (4d8+@actor.abilities.con.mod)[negative]]]{negative} or [[/r (4d8+@actor.abilities.con.mod)[positive]]]{positive} damage; don't apply your Rage damage or your weapon specialization damage, but circumstance and status bonuses and penalties that would also affect the wisp's damage apply. If your wisp's Strike is a critical hit, the target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}. This attack uses and counts toward your multiple attack penalty as if you were the one attacking.</p>",
       "featPrerequisites": {
         "0": "spirit instinct"
       }
@@ -16577,7 +16577,7 @@
     },
     "Impaling Thrust": {
       "name": "Impaling Thrust",
-      "description": "<p><strong>Requirements</strong> You are wielding a melee weapon that deals piercing damage.</p>\n<hr />\n<p>You impale your enemy and hold them in place with your weapon.</p>\n<p>Make a melee Strike with the required weapon. If the Strike hits and deals damage, your target is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} until they successfully @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape}, you attack with the required weapon, or you @UUID[Compendium.pf2e.actionspf2e.wQYmDStjdjn0I26t]{Release} the required weapon, whichever comes first.</p>\n<p>When the target is no longer grabbed, they take @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} equal to the number of weapon damage dice.</p>"
+      "description": "<p><strong>Requirements</strong> You are wielding a melee weapon that deals piercing damage.</p>\n<hr />\n<p>You impale your enemy and hold them in place with your weapon. Make a melee Strike with the required weapon. If the Strike hits and deals damage, your target is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} until they successfully @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape}, you attack with the required weapon, or you Release the required weapon, whichever comes first. When the target is no longer grabbed, they take persistent bleed damage equal to the number of weapon damage dice.</p>"
     },
     "Shielded Tome": {
       "name": "Shielded Tome",
@@ -19063,7 +19063,7 @@
     },
     "Titan's Stature": {
       "name": "Titan's Stature",
-      "description": "<p>You grow to even greater size. When using Giant's Stature, you can instead become Huge (increasing your reach by 10 feet if you were Medium or smaller) while you are raging. You have the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} condition as long as you are Huge.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.RcxDIOa68SUGyMun]{Effect: Titan's Stature}</p>",
+      "description": "<p>You grow to even greater size. When using @UUID[Compendium.pf2e.feats-srd.W21jKAcG0GtEtBiK]{Giant's Stature}, you can instead become Huge (increasing your reach by 10 feet if you were Medium or smaller) while you are raging. You have the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} condition as long as you are Huge.</p>",
       "featPrerequisites": {
         "0": "giant instinct",
         "1": "Giant's Stature"
@@ -19082,7 +19082,7 @@
     },
     "Contagious Rage": {
       "name": "Contagious Rage",
-      "description": "<p>You can drive your allies into a frenzy, granting them incredible benefits. You can ignore the requirements on Share Rage, using it multiple times in a Rage. Allies affected by Share Rage who accept your anathema for the duration of the Rage gain your instinct ability and the specialization ability it gains from weapon specialization, but not greater weapon specialization.</p>",
+      "description": "<p>You can drive your allies into a frenzy, granting them incredible benefits. You can ignore the requirements on @UUID[Compendium.pf2e.feats-srd.vayNZR1bTzU1oUa3]{Share Rage}, using it multiple times in a Rage. Allies affected by Share Rage who accept your anathema for the duration of the Rage gain your instinct ability and the specialization ability it gains from weapon specialization, but not greater weapon specialization.</p>",
       "featPrerequisites": {
         "0": "Share Rage"
       }
@@ -19895,7 +19895,7 @@
     },
     "Knockback": {
       "name": "Knockback",
-      "description": "<p><strong>Requirements</strong> Your last action was a successful Strike</p>\n<hr />\n<p>The weight of your swing drives your enemy back. You push the foe back 5 feet, with the effects of a successful Shove. You can follow the foe as normal for a successful Shove.</p>"
+      "description": "<p><strong>Requirements</strong> Your last action was a successful Strike</p>\n<hr />\n<p>The weight of your swing drives your enemy back. You push the foe back 5 feet, with the effects of a successful @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}. You can follow the foe as normal for a successful Shove.</p>"
     },
     "Black Powder Embodiment": {
       "name": "Black Powder Embodiment",
@@ -20032,7 +20032,7 @@
     },
     "Unbalancing Sweep": {
       "name": "Unbalancing Sweep",
-      "description": "<p>You make a great sweep about yourself, knocking creatures off their feet and away from you. Choose up to three adjacent foes and choose whether to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} all three of them.</p>\n<p>Whichever of the two options you choose, roll a separate Athletics check against each foe, performing the same action against each foe. Each attempt counts toward your multiple attack penalty, but don't increase your penalty until you have made all the attempts.</p>"
+      "description": "<p>You make a great sweep about yourself, knocking creatures off their feet and away from you. Choose up to three adjacent foes and choose whether to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} all three of them. Whichever of the two options you choose, roll a separate Athletics check against each foe, performing the same action against each foe. Each attempt counts toward your multiple attack penalty, but don't increase your penalty until you have made all the attempts.</p>"
     },
     "Eerie Environs": {
       "name": "Eerie Environs",
@@ -20544,7 +20544,7 @@
     },
     "Awesome Blow": {
       "name": "Awesome Blow",
-      "description": "<p>Your attacks are so powerful, they can flatten your opponents. When you use Knockback, you can attempt an Athletics check against your target's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> You gain the critical success effect of a Shove, then the critical success effect of a Trip against the target.</p>\n<p><strong>Success</strong> You gain the success effect of a Shove, then the success effect of a Trip against the target.</p>\n<p><strong>Failure</strong> You gain the normal effect of Knockback.</p>",
+      "description": "<p>Your attacks are so powerful, they can flatten your opponents. When you use @UUID[Compendium.pf2e.feats-srd.pVLdMOqYwul745k3]{Knockback}, you can attempt an Athletics check against your target's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> You gain the critical success effect of a @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}, then the critical success effect of a @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} against the target.</p>\n<p><strong>Success</strong> You gain the success effect of a Shove, then the success effect of a Trip against the target.</p>\n<p><strong>Failure</strong> You gain the normal effect of Knockback.</p>",
       "featPrerequisites": {
         "0": "Knockback"
       }
@@ -21245,7 +21245,7 @@
     },
     "Penetrating Projectile": {
       "name": "Penetrating Projectile",
-      "description": "<p><strong>Requirements</strong> You are wielding a ranged or thrown weapon that deals piercing damage.</p>\n<hr />\n<p>Your projectiles are unhindered by flesh and bone. Make a ranged Strike against each creature in a @Template[type:line|distance:30]. These attacks ignore lesser cover, cover, and greater cover granted by creatures. Roll damage only once and apply it to each creature you hit.</p>\n<p>Each attack counts toward your multiple attack penalty, but don't increase your penalty until you have made all your attacks.</p>"
+      "description": "<p><strong>Requirements</strong> You are wielding a ranged or thrown weapon that deals piercing damage.</p>\n<hr />\n<p>Your projectiles are unhindered by flesh and bone. Make a ranged Strike against each creature in a @Template[type:line|distance:30]. These attacks ignore lesser cover, cover, and greater cover granted by creatures. Roll damage only once and apply it to each creature you hit. Each attack counts toward your multiple attack penalty, but don't increase your penalty until you have made all your attacks.</p>"
     },
     "Scapegoat Parallel Self": {
       "name": "Scapegoat Parallel Self",
