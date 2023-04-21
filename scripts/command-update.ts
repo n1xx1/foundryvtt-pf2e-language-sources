@@ -451,7 +451,9 @@ function findByName(
 
 export async function commandUpdate(systemDir = "../system") {
   await setupOut();
-  const manifest = await readManifest(path.join(systemDir, "system.json"));
+  const manifest = await readManifest(
+    path.join(systemDir, "static", "system.json")
+  );
   const [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
 
   const langData = _.merge({}, ...allLangs);

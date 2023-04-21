@@ -4,7 +4,9 @@ import { readFileJson } from "./utils";
 import { readManifest, readSystemFiles } from "./utils/foundry-system";
 
 export async function commandFixItemIds(lang: string, systemDir: string) {
-  const manifest = await readManifest(path.join(systemDir, "system.json"));
+  const manifest = await readManifest(
+    path.join(systemDir, "static", "system.json")
+  );
   const [allPacks] = await readSystemFiles(systemDir, manifest);
 
   for (const pack of allPacks) {

@@ -50,7 +50,7 @@ jobs:
       - name: FVTTPF2E - Get System Version
         working-directory: ./system
         run: |
-          SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' system.json | tr -d '\n')
+          SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' static/system.json | tr -d '\n')
           echo "systemVersion=$SYSTEM_VERSION" >> $GITHUB_ENV
 
       - name: Checkout
