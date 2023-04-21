@@ -7,7 +7,7 @@
     },
     "Fling Magic": {
       "name": "Fling Magic",
-      "description": "<p><strong>Requirements</strong> You are holding your wand implement.</p>\n<hr />\n<p>You fling magical energy at a target within 60 feet, dealing damage equal to [[/r (1d4+@actor.abilities.cha.mod)]]{1d4 + your Charisma modifier} to the target, with a basic Reflex save against your class DC. The damage is of the type you selected when you gained your wand implement. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]]{Leveled damage}</p>\n<p>You can expend more energy than usual to boost the effect of Fling Magic, dealing d6s of damage instead of d4s. After you do so, the wand takes [[/r 1d4 #Wand recharge]]{1d4 rounds} to recharge, during which you can't boost the wand's damage but can continue to Fling Magic normally. If you critically hit with a Strike, your wand recharges immediately as it draws in power from the clash.</p>\n<p>[[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]]{Leveled boosted damage}</p>\n<hr />\n<p><strong>Special</strong> This activity has the trait corresponding to the damage type you selected.</p>"
+      "description": "<p><strong>Requirements</strong> You are holding your wand implement.</p>\n<hr />\n<p>You fling magical energy at a target within 60 feet, dealing damage equal to 1d4 + your Charisma modifier to the target, with a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true] save against your class DC. The damage is of the type you selected when you gained your wand implement. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]]{Leveled damage}</p>\n<p>You can expend more energy than usual to boost the effect of Fling Magic, dealing d6s of damage instead of d4s. After you do so, the wand takes [[/r 1d4 #Wand recharge]]{1d4 rounds} to recharge, during which you can't boost the wand's damage but can continue to Fling Magic normally. If you critically hit with a Strike, your wand recharges immediately as it draws in power from the clash.</p>\n<p>[[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]]{Leveled boosted damage}</p>\n<hr />\n<p><strong>Special</strong> This activity has the trait corresponding to the damage type you selected.</p>"
     },
     "Furious Strike": {
       "name": "Furious Strike",
@@ -271,7 +271,11 @@
     },
     "Conduct Energy": {
       "name": "Conduct Energy",
-      "description": "<p><strong>Requirements</strong> Your last action or spell this turn had the acid, cold, electricity, fire, or sonic trait.</p>\n<hr />\n<p>You channel energy into your weapon. The weapon deals 1 additional damage per weapon damage die until the start of your next turn. This damage type matches the trait of the triggering action or spell. If your triggering action or spell had multiple eligible traits, you select one of those traits.</p>"
+      "description": "<p><strong>Requirements</strong> Your last action or spell this turn had the acid, cold, electricity, fire, or sonic trait.</p>\n<hr />\n<p>You channel energy into your weapon. The weapon deals 1 additional damage per weapon damage die until the start of your next turn. This damage type matches the trait of the triggering action or spell. If your triggering action or spell had multiple eligible traits, you select one of those traits.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.lU8IO9FIGK1DXVMy]{Effect: Conduct Energy}</p>"
+    },
+    "A Quick Glimpse Beyond": {
+      "name": "A Quick Glimpse Beyond",
+      "description": "<p><strong>Trigger</strong> You attempt a secret check</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can roll the secret check yourself rather than have the GM roll it. As you roll, draw a harrow card. If the card drawn is from the suit of Stars, the next secret check you make during the next 24 hours can also be rolled by you. Each time you roll your own additional secret check in this way, draw a new harrow card, and each time you draw a card from the suit of Stars, your next secret check in the next 24 hours can also be rolled by you. If you ever critically fail a secret check that you roll yourself as a result of this ability, fate turns away from you, and your Pilgrim's Token no longer functions until the next time you make your daily preparations.</p>"
     },
     "Map the Area": {
       "name": "Map the Area",
@@ -284,6 +288,10 @@
     "Seek": {
       "name": "Seek",
       "description": "<p>You scan an area for signs of creatures or objects. If you're looking for creatures, choose an area you're scanning. If precision is necessary, the GM can have you select a @Template[type:cone|distance:30] or a @Template[type:burst|distance:15] within line of sight. You might take a penalty if you choose an area that's far away.</p>\n<p>If you're using Seek to search for objects (including secret doors and hazards), you search up to a 10-foot square adjacent to you. The GM might determine you need to Seek as an activity, taking more actions or even minutes or hours if you're searching a particularly cluttered area.</p>\n<p>The GM attempts a single secret <span data-pf2-action=\"seek\" data-pf2-glyph=\"A\">Perception</span> check for you and compares the result to the Stealth DCs of any @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} or @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} creatures in the area or the DC to detect each object in the area (as determined by the GM or by someone @UUID[Compendium.pf2e.actionspf2e.qVNVSmsgpKFGk9hV]{Concealing the Object}). A creature you detect might remain hidden, rather than becoming @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed}, if you're using an imprecise sense or if an effect (such as <em>@UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility}</em>) prevents the subject from being observed.</p>\n<hr />\n<p><strong>Critical Success</strong> If you were searching for creatures, any undetected or hidden creature you critically succeeded against becomes observed by you. If you were searching for an object, you learn its location.</p>\n<p><strong>Success</strong> If you were searching for creatures, any undetected creature you succeeded against becomes hidden from you instead of undetected, and any hidden creature you succeeded against becomes observed by you. If you were searching for an object, you learn its location or get a clue to its whereabouts, as determined by the GM.</p>"
+    },
+    "Bestial Clarity": {
+      "name": "Bestial Clarity",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail a saving throw against an enchantment effect</p>\n<hr />\n<p><strong>Effect</strong> Your bestial manifestation becomes more pronounced, and your mind gains a flash of clarity as your instincts take over. You can reroll the triggering saving throw with a +2 circumstance bonus, but you must use the new result. This is a fortune effect.</p>"
     },
     "Practical Research": {
       "name": "Practical Research",
@@ -372,6 +380,10 @@
     "Breath Weapon (Negative) (Line)": {
       "name": "Breath Weapon (Negative) (Line)",
       "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[negative]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[negative]]]{Leveled Damage}</p>"
+    },
+    "Harrow the Fiend": {
+      "name": "Harrow the Fiend",
+      "description": "<p><strong>Trigger</strong> You start your turn in combat against a foe or foes you recognize to be fiends</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You gain a +1 status bonus on all Strikes or spell attack rolls against fiends for the duration of combat. Once during combat, you can draw a harrow card after you determine if a Strike or spell attack on a fiend hits but before you determine damage or effects caused to the fiend. If you draw a card from the suit of Hammers, increase the degree of success of your Strike or spell attack by one.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.MSkspeBsbXm6LQ19]{Effect: Harrow the Fiend}</p>"
     },
     "Investigate": {
       "name": "Investigate",
@@ -673,6 +685,10 @@
       "name": "Master Strike",
       "description": "<p><strong>Trigger</strong> Your Strike hits a @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} creature and deals damage</p>\n<hr />\n<p>The target attempts a Fortitude save at your class DC. It then becomes temporarily immune to your Master Strike for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of your next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for 4 rounds.</p>\n<p><strong>Critical Failure</strong> The target is paralyzed for 4 rounds, knocked @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} for 2 hours, or killed (your choice).</p>"
     },
+    "Lucky Break": {
+      "name": "Lucky Break",
+      "description": "<p><strong>Trigger</strong> You attempt a skill check during Exploration or Downtime</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Draw a harrow card, then reroll the skill check. If you draw a card from the suit of Keys, add a +4 status bonus to the original roll and your reroll, then take the result you prefer as your actual result. If you drew any other card, you gain no bonus and must take the result of the rerolled skill check.</p>"
+    },
     "Absorb into the Aegis": {
       "name": "Absorb into the Aegis",
       "description": "<p><strong>Trigger</strong> An enemy casts a spell that targets you or an ally within 15 feet of you</p>\n<hr />\n<p>You interpose your shield's ward against the spell. Attempt a counteract check, using your Religion modifier as your counteract modifier. On a success, the spell is counteracted and your shield takes damage equal to four times the spell level as it absorbs and disperses the magical energy. On a failure, the shield takes damage equal to twice the spell's level.</p>"
@@ -801,6 +817,10 @@
       "name": "Sustain an Activation",
       "description": "<p><strong>Requirements</strong> You have at least one magic item activation that you can sustain and you are not @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued}</p>\n<hr />\n<p>Choose one magic item activation with a sustained duration you have in effect. The duration of that activation continues until the end of your next turn. Some activations may have slightly different or expanded effects if you sustain them. Sustaining an Activation for more than 10 minutes (100 rounds) ends the activation and makes you fatigued unless the item's description states a different maximum duration (such as \"up to 1 minute\" or \"up to 1 hour\").</p>\n<p>If your Sustain an Activation action is disrupted, the item's effect immediately ends.</p>"
     },
+    "Indomitable Act": {
+      "name": "Indomitable Act",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are about to attempt a check</p>\n<p><strong>Requirements</strong> You are @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened}</p>\n<hr />\n<p><strong>Effect</strong> You lean into your fear, using it to embolden you. You can roll the triggering check twice and take the higher result. This is a fortune effect.</p>"
+    },
     "Resist Magic": {
       "name": "Resist Magic",
       "description": "<p><strong>Trigger</strong> You attempt a saving throw against a harmful magical effect but haven't rolled yet.</p>\n<hr />\n<p>Your innate magic protects you. You gain a +1 circumstance bonus to the triggering saving throw. Additionally, if the triggering effect is arcane, if you roll a success, you get a critical success instead.</p>"
@@ -824,6 +844,10 @@
     "Glimpse Vulnerability": {
       "name": "Glimpse Vulnerability",
       "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> You are holding your implement;</p>\n<hr />\n<p><strong>Effect</strong> You glimpse a hidden vulnerability and then strengthen it to aid you. Select a creature you can see. Until you Glimpse Vulnerability again, that target gains weakness 2 against your unarmed and weapon Strikes.</p>"
+    },
+    "Chaotic Destiny": {
+      "name": "Chaotic Destiny",
+      "description": "<p><strong>Trigger</strong> You fail a saving throw during a combat</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Chaos intervenes on your behalf at the last instant as you fail a saving throw. Draw a harrow card and reroll the saving throw you failed. You must take the result of the reroll, but if you drew a card from the suit of Crowns, improve the result by one degree of success.</p>"
     },
     "Tendril Strike": {
       "name": "Tendril Strike",
@@ -945,6 +969,10 @@
       "name": "Water Transfer",
       "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> You're on land and adjacent to a body of water</p>\n<hr />\n<p><strong>Effect</strong> You sink into the water and emerge back onto land in another space within 120 feet that's adjacent to the same body of water. You can transport yourself, any items you're wearing and holding, and up to one other willing creature.</p>"
     },
+    "Avoid Dire Fate": {
+      "name": "Avoid Dire Fate",
+      "description": "<p><strong>Requirements</strong> you have an active harrow omen</p>\n<p><strong>Trigger</strong> you fail or critically fail a check associated with your harrow omen's suit</p>\n<hr />\n<p><strong>Effect</strong> Treat the failure as a success or a critical failure as a failure. You no longer have an active harrow omen.</p>"
+    },
     "Identify Magic": {
       "name": "Identify Magic",
       "description": "<p>Once you discover that an item, location, or ongoing effect is magical, you can spend 10 minutes to try to identify the particulars of its magic. If your attempt is interrupted, you must start over. The GM sets the DC for your check. Cursed or esoteric subjects usually have higher DCs or might even be impossible to identify using this activity alone. Heightening a spell doesn't increase the DC to identify it.</p>\n<hr />\n<p><strong>Critical Success</strong> You learn all the attributes of the magic, including its name (for an effect), what it does, any means of activating it (for an item or location), and whether it is cursed.</p>\n<p><strong>Success</strong> For an item or location, you get a sense of what it does and learn any means of activating it. For an ongoing effect (such as a spell with a duration), you learn the effect's name and what it does. You can't try again in hopes of getting a critical success.</p>\n<p><strong>Failure</strong> You fail to identify the magic and can't try again for 1 day.</p>\n<p><strong>Critical Failure</strong> You misidentify the magic as something else of the GM's choice.</p>"
@@ -980,6 +1008,10 @@
     "Covered Reload": {
       "name": "Covered Reload",
       "description": "<p>You duck into a safe position or minimize your profile while reloading to make your next attack. Either @UUID[Compendium.pf2e.actionspf2e.ust1jJSCZQUhBZIz]{Take Cover} or attempt to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide}, then Interact to reload. As normal, you must meet the requirements to Take Cover or Hide; you must be @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}, benefiting from cover, or near a feature that allows you to Take Cover, and you need to be benefiting from cover or @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} to a creature to Hide from that creature.</p>"
+    },
+    "Fated Note to Die": {
+      "name": "Fated Note to Die",
+      "description": "<p><strong>Trigger</strong> You are dying</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Draw a harrow card, and you automatically lose the dying condition, though you remain @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} at 0 Hit Points. If the card you drew was from the suit of Shields, you awaken and have an amount of Hit Points restored to you equal to [[/r (1d6+@actor.level)[healing]]]{1d6 + your level}.</p>"
     },
     "Trip": {
       "name": "Trip",
@@ -1067,7 +1099,7 @@
     },
     "Recall the Teachings": {
       "name": "Recall the Teachings",
-      "description": "<p>The heightened power of your psyche lets you recall every lesson you've ever learned. You search your mind for the right teaching, which at first seems cryptic but comes into clarity when it's most relevant. Until the start of your next turn, you count as having prepared to @UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{Aid} all allies within 30 feet of you. If you use the Aid reaction to help one of them during that time, you roll an @Check[type:occultism|dc:20|traits:aid]{Occultism check} for Aid as you recall a lesson to help them. Most lessons take the form of short axioms, parables, or sayings, meaning that conveying them to your ally usually grants your Aid reaction the auditory and linguistic traits.</p>"
+      "description": "<p>The heightened power of your psyche lets you recall every lesson you've ever learned. You search your mind for the right teaching, which at first seems cryptic but comes into clarity when it's most relevant. Until the start of your next turn, you count as having prepared to @UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{Aid} all allies within 30 feet of you. If you use the Aid reaction to help one of them during that time, you roll an @Check[type:occultism|dc:20|traits:action:aid]{Occultism check} for Aid as you recall a lesson to help them. Most lessons take the form of short axioms, parables, or sayings, meaning that conveying them to your ally usually grants your Aid reaction the auditory and linguistic traits.</p>"
     },
     "That's My Number": {
       "name": "That's My Number",
@@ -1084,6 +1116,10 @@
     "Assume a Role": {
       "name": "Assume a Role",
       "description": "<p><strong>Requirements</strong> You've spent at least 1 hour studying a creature whose role you intend to copy and have done so within the last 3 days. This could include meeting and learning from someone in that role, tailing and spying on someone, using magic to observe them at work, or some other method, as long as you have a visual source of information</p>\n<hr />\n<p><strong>Effect</strong> You quickly and accurately learn how to do mundane jobs or at least copy the movements enough to appear as if you do. A chosen role can take many forms-from cook, cleaner, or librarian to cult member, priest, or duke-but it's always a role and never a specific individual.</p>\n<p>You perform the @UUID[Compendium.pf2e.actionspf2e.AJstokjdG6iDjVjE]{Impersonate} activity to pass as a member of the role you observed and gain a +1 circumstance bonus to any Deception checks you attempt in your impersonation. This takes the normal amount of time it takes you to Impersonate. You also choose one Lore skill relevant to that role (such as Farming Lore for a farmer). While in your role, you gain a +1 circumstance bonus to checks for that Lore skill, and if you're untrained in it, you can use your level as your proficiency bonus. You stop assuming the role after 24 hours, if you start studying for a new role, or if you choose to.</p>"
+    },
+    "Recall Under Pressure": {
+      "name": "Recall Under Pressure",
+      "description": "<p><strong>Trigger</strong> You attempt to Recall Knowledge during a combat</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Rather than roll a different skill to Recall Knowledge during the fight, your memory flashes back to something you read in some old book. You instead attempt this Recall Knowledge check with an Academia Lore check. If the information you recall ends up being helpful and positive in an obvious way before you take your next turn, draw a random harrow card. You gain a +1 status bonus to saving throws for the remainder of the combat encounter as your morale soars or a +2 status bonus if the card you drew was from the suit of Books.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.CW4zphOOpeaLJIWc]{Effect: Recall Under Pressure}</p>"
     },
     "Run Over": {
       "name": "Run Over",
@@ -1199,7 +1235,7 @@
     },
     "Envenom": {
       "name": "Envenom",
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Through use of either saliva or blood, you use your innate toxins to apply vishkanyan venom to your weapon or a piece of ammunition. To use your blood, you must be injured, or you can deal 1 slashing Damage to yourself as part of the action. The vishkanyan venom remains potent until the end of your next turn, or until you expend it as normal for an injury poison by either hitting a target or critically failing an attack roll.</p>\n<p><strong>Minor Vishkanyan Venom</strong> (injury, poison)</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 1d4[poison]]] damage (1 round)</p>"
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Through use of either saliva or blood, you use your innate toxins to apply vishkanyan venom to your weapon or a piece of ammunition. To use your blood, you must be injured, or you can deal [[/r 1[slashing]]] damage to yourself as part of the action. The vishkanyan venom remains potent until the end of your next turn, or until you expend it as normal for an injury poison by either hitting a target or critically failing an attack roll.</p>\n<p><strong>Minor Vishkanyan Venom</strong> (injury, poison)</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 1d4[poison]]] damage (1 round)</p>"
     },
     "Change Tradition Focus": {
       "name": "Change Tradition Focus",

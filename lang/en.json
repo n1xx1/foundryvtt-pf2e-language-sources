@@ -219,6 +219,7 @@
         }
       },
       "Creature": {
+        "AbilityModifiers": "Ability Modifiers",
         "Alliance": {
           "Default": "Ownership Default ({alliance})",
           "Neutral": "Neutral",
@@ -314,7 +315,30 @@
           },
           "Label": "Generate Attack",
           "Notification": "Generated NPC attack: {attack}"
+        },
+        "Identification": {
+          "Skills": {
+            "Label": "{skills}: DC {dc} ({adjustment})",
+            "Tooltip": "\"The skill used to identify a creature usually depends on that creature’s trait, as shown on Table 10–7, but you have leeway on which skills apply.\" – CRB pg. 506"
+          },
+          "Lore": {
+            "Label": "Applicable Lore: DC {dc1} ({adjustment1}) or DC {dc2} ({adjustment2})",
+            "Tooltip": "\"Using the applicable Lore usually has an easy or very easy DC (before adjusting for rarity).\" – CRB pg. 506"
+          }
         }
+      },
+      "Party": {
+        "BlankSlate": "This party doesn't have any members. Drag a creature from the actor sidebar to get started. ",
+        "Coin": "Coin",
+        "Languages": "Party Languages",
+        "MembersLabel": "Members: ",
+        "NoSpecialSenses": "No Special Senses",
+        "Tabs": {
+          "Overview": "Overview",
+          "Inventory": "Inventory"
+        },
+        "Total": "Party Total",
+        "Wealth": "Wealth"
       },
       "Plural": "Actors"
     },
@@ -842,7 +866,7 @@
     "DCAdjustmentHard": "hard",
     "DCAdjustmentIncrediblyEasy": "incredibly easy",
     "DCAdjustmentIncrediblyHard": "incredibly hard",
-    "DCAdjustmentNormal": "normal",
+    "DCAdjustmentNormal": "baseline",
     "DCAdjustmentVeryEasy": "very easy",
     "DCAdjustmentVeryHard": "very hard",
     "DCBase": "Base DC 10",
@@ -1364,6 +1388,7 @@
       },
       "Armor": {
         "Base": {
+          "armored-cloak": "Armored Cloak",
           "armored-coat": "Armored Coat",
           "bastion-plate": "Bastion Plate",
           "breastplate": "Breastplate",
@@ -1586,6 +1611,10 @@
           "IndulgenceApocryphal": {
             "Description": "You feast mightily and can shake off the effects of overindulging. Not all clerical traditions are taught among the orthodoxy. Some are whispered in secret, passed down from a priest to trusted acolytes or scribed in tomes left behind by splinter factions.",
             "Label": "Indulgence (apocryphal)"
+          },
+          "Introspection": {
+            "Description": "You guide others in examining their lives, emotions, and motivations to ultimately become a truer version of themselves—a difficult and often painful process.",
+            "Label": "Introspection"
           },
           "Knowledge": {
             "Description": "You receive divine insights.",
@@ -1858,7 +1887,7 @@
             "horseshoes": "Horseshoes",
             "mask": "Mask",
             "necklace": "Necklace",
-            "onbelt": "OnBelt",
+            "onbelt": "On Belt",
             "ring": "Ring",
             "saddle": "Saddle",
             "shoes": "Shoes",
@@ -1971,7 +2000,10 @@
           "Hint": "Ranged and thrown weapons have a range increment. Attacks with these weapons work normally up to that distance. Attack rolls beyond a weapon's range increment take a -2 penalty for each additional multiple of that increment between you and the target. Attacks beyond the sixth range increment are impossible.",
           "Label": "Range Increment {range} ft."
         },
-        "ReloadOneMinute": "1 min",
+        "Reload": {
+          "LabelN": "Reload {value}",
+          "OneMinute": "1 min"
+        },
         "SpecificMagicWeapon": {
           "Hint": "Marking this weapon as a <i>specific magic weapon</i> indicates that it does more than what its material composition and runes allow. The name, level, rarity, and price will no longer be overridden from a precious material or runes at the time of marking. Those material and runes will, however, serve as a baseline for level, rarity, and price adjustments from later upgrades.",
           "Label": "Specific Magic Weapon"
@@ -2168,7 +2200,6 @@
     },
     "Lore": "Lore",
     "LoreProficiencyDisclaimer": "Informational only. Will not change the skill modifier.",
-    "LoreSkillFormat": "{name} Lore",
     "LoreSkillsHeader": "Lore Skills",
     "MAPAbbreviationLabel": "MAP {penalty}",
     "Macro": {
@@ -2534,12 +2565,12 @@
       "FourthAttempt": "4th DC",
       "Help": "You can attempt repeated Recall Knowledge actions to recall more information about a creature. These checks increase in difficulty as shown in the chart below. However, if you fail, or if no DC is listed, you can not attempt further Recall Knowledge checks against this creature.",
       "Label": "Recall Knowledge",
+      "LoreEasy": "Applicable Lore (Easy)",
+      "LoreVeryEasy": "Applicable Lore (Very Easy)",
       "SecondAttempt": "2nd DC",
       "SixthAttempt": "6th DC",
       "Skill": "Skill",
-      "SpecificLore": "Specific Lore",
-      "ThirdAttempt": "3rd DC",
-      "UnspecificLore": "Unspecific Lore"
+      "ThirdAttempt": "3rd DC"
     },
     "Recovery": {
       "critFailure": "Increase your dying value by 2.",
@@ -3307,6 +3338,7 @@
     "TraitAphorite": "Aphorite",
     "TraitAppliedToANoninjectionMeleePiercingWeapon": "Applied to a non-injection melee weapon that deals piercing damage",
     "TraitAppliedToAWindPoweredVehicle": "Applied to a wind-powered vehicle",
+    "TraitAppliedToAWeapon": "Applied to a weapon",
     "TraitAppliedToAnyItemOfLightOrNegligibleBulk": "Applied to any item of light or negligible Bulk",
     "TraitAppliedToAnyVisibleArticleOfClothing": "Applied to any visible article of clothing",
     "TraitAppliedToArmor": "Applied to armor",
@@ -3365,6 +3397,7 @@
     "TraitCapacity3": "Capacity 3",
     "TraitCapacity4": "Capacity 4",
     "TraitCapacity5": "Capacity 5",
+    "TraitCarried": "Carried",
     "TraitCatalyst": "Catalyst",
     "TraitCatfolk": "Catfolk",
     "TraitCelestial": "Celestial",
@@ -3418,6 +3451,7 @@
     "TraitDeadly4D8": "Deadly 4d8",
     "TraitDeadlyD10": "Deadly d10",
     "TraitDeadlyD12": "Deadly d12",
+    "TraitDeadlyD4": "Deadly d4",
     "TraitDeadlyD6": "Deadly d6",
     "TraitDeadlyD8": "Deadly d8",
     "TraitDeath": "Death",
@@ -3534,6 +3568,7 @@
     "TraitDescriptionEsoterica": "The esoterica trait is present in many thaumaturge feats and class features that incorporate the various talismans, supernatural trinkets, and other objects you carry with you. Abilities that have the esoterica trait require you to be in possession of your esoterica to use them. Normally, you're assumed to always have your esoterica with you, but in some rare circumstances, you might either not have them on hand or have your gear stripped from you.",
     "TraitDescriptionEvil": "Evil effects often manipulate energy from evil-aligned Outer Planes and are antithetical to good divine servants or divine servants of good deities. A creature with this trait is evil in alignment.",
     "TraitDescriptionEvocation": "Effects and magic items with this trait are associated with the evocation school of magic, typically involving energy and elemental forces.",
+    "TraitDescriptionEvolution": "Feats with this trait affect your eidolon instead of you, typically by granting it additional physical capabilities.",
     "TraitDescriptionExpandable": "An item with the expandable trait increases to a specific size when activated. Unless otherwise noted, this space must be adjacent to you and on the ground, and the item needs to have enough open space to expand into or else the activation has no effect. When the effect ends, the expanded item disintegrates if it's a consumable or shrinks back to its normal size if it's not a consumable.",
     "TraitDescriptionExploration": "An activity with this trait takes more than a turn to use, and can usually be used only during exploration mode.",
     "TraitDescriptionExtradimensional": "This effect or item creates an extradimensional space. An extradimensional effect placed inside another extradimensional space ceases to function until it is removed.",
@@ -3721,6 +3756,7 @@
     "TraitDescriptionSweep": "This weapon makes wide sweeping or spinning attacks, making it easier to attack multiple enemies. When you attack with this weapon, you gain a +1 circumstance bonus to your attack roll if you already attempted to attack a different target this turn using this weapon.",
     "TraitDescriptionSylph": "A type of geniekin descended from a being from the Plane of Air.",
     "TraitDescriptionTalisman": "A talisman is a small object affixed to armor, a shield, or a weapon (called the affixed item). You must be wielding or wearing an item to activate a talisman attached to it. Once activated, a talisman burns out permanently.",
+    "TraitDescriptionTandem": "Actions with this trait involve you and your eidolon acting in concert. You can't use a tandem action if either you or your eidolon can't act, if you haven't Manifested your Eidolon, or if you've Manifested your Eidolon in a way where it isn't a separate entity (such as with the Meld into Eidolon feat). Tandem actions often let both you and your eidolon take separate actions, but these must be actions taken separately by you and your eidolon; you can't use a tandem action to take another tandem action.",
     "TraitDescriptionTattoo": "A tattoo is a type of item that is drawn or cut into a creature's skin and usually takes the form of images or symbols.",
     "TraitDescriptionTech": "Items with this trait are associated with the technology of Numeria.",
     "TraitDescriptionTelepathy": "A creature with telepathy can communicate mentally with creatures. This doesn't give any special access to their thoughts, and communicates no more information than normal speech would.",
@@ -3870,6 +3906,7 @@
     "TraitHampering": "Hampering",
     "TraitHantu": "Hantu",
     "TraitHarnessed": "Harnessed",
+    "TraitHarrowCourt": "Harrow Court",
     "TraitHaunt": "Haunt",
     "TraitHealing": "Healing",
     "TraitHefty14": "Hefty 14",
@@ -3919,6 +3956,7 @@
     "TraitLawful": "Lawful",
     "TraitLeshy": "Leshy",
     "TraitLight": "Light",
+    "TraitLilu": "Lilu",
     "TraitLineage": "Lineage",
     "TraitLinguistic": "Linguistic",
     "TraitLitany": "Litany",
@@ -4606,6 +4644,7 @@
         "shield-bash": "Shield Bash",
         "shield-boss": "Shield Boss",
         "shield-bow": "Shield Bow",
+        "shield-pistol": "Shield Pistol",
         "shield-spikes": "Shield Spikes",
         "shobhad-longrifle": "Shobhad Longrifle",
         "shortbow": "Shortbow",
@@ -4662,6 +4701,7 @@
         "wish-knife": "Wish Knife",
         "wooden-taws": "Wooden Taws",
         "wrecker": "Wrecker",
+        "wrist-launcher": "Wrist Launcher",
         "zulfikar": "Zulfikar"
       }
     },
@@ -5427,7 +5467,9 @@
     },
     "Actions": {
       "AdministerFirstAid": {
+        "Description": "<p>You perform first aid on an adjacent creature that is dying or bleeding. If a creature is both dying and bleeding, choose which ailment you're trying to treat before you roll. You can Administer First Aid again to attempt to remedy the other effect.</p><ol><li><strong>Stabilize</strong> Attempt a Medicine check on a creature that has 0 Hit Points and the dying condition. The DC is equal to 5 + that creature's recovery roll DC (typically 15 + its dying value).</li><li><strong>Stop Bleeding</strong> Attempt a Medicine check on a creature that is taking persistent bleed damage, giving them a chance to make another flat check to remove the persistent damage. The DC is usually the DC of the effect that caused the bleed.</li></ol><p><strong>Success</strong> If you're trying to stabilize, the creature loses the dying condition (but remains unconscious). If you're trying to stop bleeding, the creature attempts a flat check to end the bleeding.<br><strong>Critical Failure</strong> If you were trying to stabilize, the creature's dying value increases by 1. If you were trying to stop bleeding, it immediately takes an amount of damage equal to its persistent bleed damage.</p>",
         "Stabilize": {
+          "Description": "<p>You perform first aid on an adjacent creature that is dying. Attempt a Medicine check on a creature that has 0 Hit Points and the dying condition. The DC is equal to 5 + that creature's recovery roll DC (typically 15 + its dying value).</p><p><strong>Success</strong> The creature loses the dying condition (but remains unconscious).<br><strong>Critical Failure</strong> The creature's dying value increases by 1.</p>",
           "DifficultyClass": {
             "Label": "Administer First Aid DC"
           },
@@ -5435,15 +5477,17 @@
             "criticalFailure": "<strong>Critical Failure</strong> The creature's dying value increases by 1.",
             "success": "<strong>Success</strong> The creature loses the dying condition (but remains unconscious)."
           },
-          "Title": "Administer First Aid - Stabilize"
+          "Title": "Stabilize"
         },
         "StopBleeding": {
+          "Description": "<p>You perform first aid on an adjacent creature that is bleeding. Attempt a Medicine check on a creature that is taking persistent bleed damage, giving them a chance to make another flat check to remove the persistent damage. The DC is usually the DC of the effect that caused the bleed.</p><p><strong>Success</strong> The creature attempts a flat check to end the bleeding.<br><strong>Critical Failure</strong> The creature immediately takes an amount of damage equal to its persistent bleed damage.</p>",
           "Notes": {
             "criticalFailure": "<strong>Critical Failure</strong> The creature immediately takes an amount of damage equal to its persistent bleed damage.",
             "success": "<strong>Success</strong> The creature attempts a flat check to end the bleeding."
           },
-          "Title": "Administer First Aid - Stop Bleeding"
+          "Title": "Stop Bleeding"
         },
+        "Title": "Administer First Aid",
         "Warning": {
           "TargetNotDying": "Targeted creature is not dying.",
           "UnknownVariant": "Unknown variant {variant} used for Administer First Aid, use one of {variants}."
@@ -5470,6 +5514,7 @@
         "Title": "Avoid Notice"
       },
       "Balance": {
+        "Description": "<p>You move across a narrow surface or uneven ground, attempting an Acrobatics check against its Balance DC. You are flat-footed while on a narrow surface or uneven ground.</p><p><strong>Critical Success</strong> You move up to your Speed.<br><strong>Success</strong> You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).<br><strong>Failure</strong> You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.<br><strong>Critical Failure</strong> You fall and your turn ends.</p><section class=\"sample-tasks\"><h2>Sample Balance Tasks</h2><p><strong>Untrained</strong> tangled roots, uneven cobblestones</p><p><strong>Trained</strong> wooden beam</p><p><strong>Expert</strong> deep, loose gravel</p><p><strong>Master</strong> tightrope, smooth sheet of ice</p><p><strong>Legendary</strong> razor's edge, chunks of floor falling in midair</p></section>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You fall and your turn ends.",
           "criticalSuccess": "<strong>Critical Success</strong> You move up to your Speed.",
@@ -5495,6 +5540,7 @@
         "Title": "Climb"
       },
       "Coerce": {
+        "Description": "<p>With threats either veiled or overt, you attempt to bully a creature into doing what you want. You must spend at least 1 minute of conversation with a creature you can see and that can either see or sense you. At the end of the conversation, attempt an Intimidation check against the target's Will DC, modified by any circumstances the GM determines. The attitudes referenced in the effects below are summarized in the Changing Attitudes sidebar and described in full in the Conditions Appendix.</p><p><strong>Critical Success</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate - at least in the short term.<br><strong>Success</strong> As critical success, but once the target becomes unfriendly, they might decide to act against you — for example, by reporting you to the authorities or assisting your enemies.<br><strong>Failure</strong> The target doesn't do what you say, and if they were not already unfriendly or hostile, they become unfriendly.<br><strong>Critical Failure</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> The target refuses to comply, becomes hostile if they weren't already, and can't be Coerced by you for at least 1 week.",
           "criticalSuccess": "<strong>Critical Success</strong> The target gives you the information you seek or agrees to follow your directives so long as they aren't likely to harm the target in any way. The target continues to comply for an amount of time determined by the GM but not exceeding 1 day, at which point the target becomes unfriendly (if they weren't already unfriendly or hostile). However, the target is too scared of you to retaliate—at least in the short term.",
@@ -5504,6 +5550,7 @@
         "Title": "Coerce"
       },
       "CommandAnAnimal": {
+        "Description": "<p>You issue an order to an animal. Attempt a Nature check against the animal's Will DC. The GM might adjust the DC if the animal has a good attitude toward you, you suggest a course of action it was predisposed toward, or you offer it a treat.</p><p>You automatically fail if the animal is hostile or unfriendly to you. If the animal is helpful to you, increase your degree of success by one step. You might be able to Command an Animal more easily with a feat like Ride.</p><p>Most animals know the Drop Prone, Leap, Seek, Stand, Stride, and Strike basic actions. If an animal knows an activity, such as a horse's Gallop, you can Command the Animal to perform the activity, but you must spend as many actions on Command an Animal as the activity's number of actions. You can also spend multiple actions to Command the Animal to perform that number of basic actions on its next turn; for instance, you could spend 3 actions to Command an Animal to Stride three times or to Stride twice and then Strike.</p><p><strong>Success</strong> The animal does as you command on its next turn.<br><strong>Failure</strong> The animal is hesitant or resistant, and it does nothing.<br><strong>Critical Failure</strong> The animal misbehaves or misunderstands, and it takes some other action determined by the GM.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> The animal misbehaves or misunderstands, and it takes some other action determined by the GM.",
           "failure": "<strong>Failure</strong> The animal is hesitant or resistant, and it does nothing.",
@@ -5512,6 +5559,7 @@
         "Title": "Command an Animal"
       },
       "ConcealAnObject": {
+        "Description": "<p>You hide a small object on your person (such as a weapon of light Bulk). When you try to sneak a concealed object past someone who might notice it, the GM rolls your Stealth check and compares it to this passive observer's Perception DC. Once the GM rolls your check for a concealed object, that same result is used no matter how many passive observers you try to sneak it past. If a creature is specifically searching you for an item, it can attempt a Perception check against your Stealth DC (finding the object on success).</p><p>You can also conceal an object somewhere other than your person, such as among undergrowth or in a secret compartment within a piece of furniture. In this case, characters Seeking in an area compare their Perception check results to your Stealth DC to determine whether they find the object.</p><p><strong>Success</strong> The object remains undetected.<br><strong>Failure</strong> The searcher finds the object.</p>",
         "Notes": {
           "failure": "<strong>Failure</strong> The searcher finds the object.",
           "success": "<strong>Success</strong> The object remains undetected."
@@ -5559,6 +5607,10 @@
           "NotPhysicalItem": "Specified item {item} is not a physical item."
         }
       },
+      "Crawl": {
+        "Description": "<p>You move 5 feet by crawling and continue to stay prone.</p>",
+        "Title": "Crawl"
+      },
       "CreateADiversion": {
         "DistractingWords": {
           "Title": "Create a Diversion - Distracting Words"
@@ -5579,6 +5631,7 @@
         }
       },
       "CreateForgery": {
+        "Description": "<p>You create a forged document, usually over the course of a day or a week. You must have the proper writing material to create a forgery. When you Create a Forgery, the GM rolls a secret DC 20 Society check. If you succeed, the forgery is of good enough quality that passive observers can't notice the fake. Only those who carefully examine the document and attempt a Perception or Society check against your Society DC can do so.</p><p>If the document's handwriting doesn't need to be specific to a person, you need only to have seen a similar document before, and you gain up to a +4 circumstance bonus to your check, as well as to your DC (the GM determines the bonus). To forge a specific person's handwriting, you need a sample of that person's handwriting.</p><p>If your check result was below 20, the forgery has some obvious signs of being a fake, so the GM compares your result to each passive observer's Perception DC or Society DC, whichever is higher, using the success or failure results below. Once the GM rolls your check for a document, that same result is used against all passive observers' DCs no matter how many creatures passively observe that document.</p><p>An observer who was fooled on a passive glance can still choose to closely scrutinize the documents on the lookout for a forgery, using different techniques and analysis methods beyond the surface elements you successfully forged with your original check. In that case, the observer can attempt a Perception or Society check against your Society DC (if they succeed, they know your document is a forgery).</p><p><strong>Success</strong> The observer does not detect the forgery.<br><strong>Failure</strong> The observer knows your document is a forgery.</p>",
         "ForgedDocument": {
           "Description": "<p>An observer who was fooled on a passive glance can still choose to closely scrutinize the documents on the lookout for a forgery, using different techniques and analysis methods beyond the surface elements you successfully forged with your original check. In that case, the observer can attempt a @Check[type:perception|dc:{societyDC}] or @Check[type:society|dc:{societyDC}] check against your Society DC (if they succeed, they know your document is a forgery).</p>",
           "FailureGmNote": "<p>The forgery has some obvious signs of being a fake, so the GM compares the result of {total} to each passive observer's Perception DC or Society DC, whichever is higher, using the success or failure results below. The same result is used against all passive observers' DCs no matter how many creatures passively observe that document.</p>\n<p>{success}</p>\n<p>{failure}</p>",
@@ -5596,6 +5649,7 @@
         "UnspecificHandwriting": "Unspecific Handwriting"
       },
       "DecipherWriting": {
+        "Description": "<p>You attempt to decipher complicated writing or literature on an obscure topic. This usually takes 1 minute per page of text, but might take longer (typically an hour per page for decrypting ciphers or the like). The text must be in a language you can read, though the GM might allow you to attempt to decipher text written in an unfamiliar language using Society instead.</p><p>The DC is determined by the GM based on the state or complexity of the document. The GM might have you roll one check for a short text or a check for each section of a larger text.</p><p><strong>Critical Success</strong> You understand the true meaning of the text.<br><strong>Success</strong> You understand the true meaning of the text. If it was a coded document, you know the general meaning but might not have a word-for-word translation.<br><strong>Failure</strong> You can't understand the text and take a –2 circumstance penalty to further checks to decipher it.<br><strong>Critical Failure</strong> You believe you understand the text on that page, but you have in fact misconstrued its message.</p><section class=\"sample-tasks\"><h2>Sample Decipher Tasks</h2><p><strong>Trained</strong> entry-level philosophy treatise</p><p><strong>Expert</strong> complex code, such as a cipher</p><p><strong>Master</strong> spymaster's code or advanced research notes</p><p><strong>Legendary</strong> esoteric planar text written in metaphor by an ancient celestial</p></section>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You believe you understand the text on that page, but you have in fact misconstrued its message.",
           "criticalSuccess": "<strong>Critical Success</strong> You understand the true meaning of the text.",
@@ -5607,14 +5661,21 @@
           "NoSkill": "The Decipher Writing action can be used with different skills, and no skill was specified. Arcana is typically used for writing about magic or science, Occultism for esoteric texts about mysteries and philosophy, Religion for scripture, and Society for coded messages or archaic documents."
         }
       },
+      "Delay": {
+        "Description": "<p>You wait for the right moment to act. The rest of your turn doesn't happen yet. Instead, you're removed from the initiative order. You can return to the initiative order as a free action triggered by the end of any other creature's turn. This permanently changes your initiative to the new position. You can't use reactions until you return to the initiative order. If you Delay an entire round without returning to the initiative order, the actions from the Delayed turn are lost, your initiative doesn't change, and your next turn occurs at your original position in the initiative order.</p><p>When you Delay, any persistent damage or other negative effects that normally occur at the start or end of your turn occur immediately when you use the Delay action. Any beneficial effects that would end at any point during your turn also end. The GM might determine that other effects end when you Delay as well. Essentially, you can't Delay to avoid negative consequences that would happen on your turn or to extend beneficial effects that would end on your turn.</p>",
+        "Title": "Delay"
+      },
       "Demoralize": {
+        "Description": "<p>With a sudden shout, a well-timed taunt, or a cutting put-down, you can shake an enemy's resolve. Choose a creature within 30 feet of you who you're aware of. Attempt an Intimidation check against that target's Will DC. If the target does not understand the language you are speaking, you're not speaking a language, or they can't hear you, you take a –4 circumstance penalty to the check. Regardless of your result, the target is temporarily immune to your attempts to Demoralize it for 10 minutes.</p><p><strong>Critical Success</strong> The target becomes frightened 2.<br><strong>Success</strong> The target becomes frightened 1.</p>",
         "Notes": {
           "criticalSuccess": "<strong>Critical Success</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.",
           "success": "<strong>Success</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}."
         },
-        "Title": "Demoralize"
+        "Title": "Demoralize",
+        "Unintelligible": "Unintelligible"
       },
       "DisableDevice": {
+        "Description": "<p>This action allows you to disarm a trap or another complex device. Often, a device requires numerous successes before becoming disabled, depending on its construction and complexity. Thieves' tools are helpful and sometimes even required to Disable a Device, as determined by the GM, and sometimes a device requires a higher proficiency rank in Thievery to disable it.</p><p>Your Thievery check result determines how much progress you make.</p><p><strong>Critical Success</strong> You disable the device, or you achieve two successes toward disabling a complex device. You leave no trace of your tampering, and you can rearm the device later, if that type of device can be rearmed.<br><strong>Success</strong> You disable the device, or you achieve one success toward disabling a complex device.<br><strong>Critical Failure</strong> You trigger the device.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You trigger the device.",
           "criticalSuccess": "<strong>Critical Success</strong> You disable the device, or you achieve two successes toward disabling a complex device. You leave no trace of your tampering, and you can rearm the device later, if that type of device can be rearmed.",
@@ -5630,6 +5691,10 @@
           "success": "<strong>Success</strong> You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item. @UUID[Compendium.pf2e.equipment-effects.z3ATL8DcRVrT0Uzt]{Effect: Disarm (Success)}"
         },
         "Title": "Disarm"
+      },
+      "DropProne": {
+        "Description": "<p>You fall prone.</p>",
+        "Title": "Drop Prone"
       },
       "EncouragingWords": {
         "BadArgs": "This action must be performed with exactly one character or NPC.",
@@ -5652,6 +5717,7 @@
         "Title": "Encouraging Words"
       },
       "Escape": {
+        "Description": "<p>You attempt to escape from being grabbed, immobilized, or restrained. Choose one creature, object, spell effect, hazard, or other impediment imposing any of those conditions on you. Attempt a check using your unarmed attack modifier against the DC of the effect. This is typically the Athletics DC of a creature grabbing you, the Thievery DC of a creature who tied you up, the spell DC for a spell effect, or the listed Escape DC of an object, hazard, or other impediment. You can attempt an Acrobatics or Athletics check instead of using your attack modifier if you choose (but this action still has the attack trait).</p><p><strong>Critical Success</strong> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target. You can then Stride up to 5 feet.<br><strong>Success</strong> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target.<br><strong>Critical Failure</strong> You don't get free, and you can't attempt to Escape again until your next turn.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You don't get free, and you can't attempt to Escape again until your next turn.",
           "criticalSuccess": "<strong>Critical Success</strong> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target. You can then Stride up to 5 feet.",
@@ -5717,6 +5783,7 @@
         "Title": "Impersonate"
       },
       "Interact": {
+        "Description": "<p>You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a skill check to determine if your Interact action was successful.</p>",
         "Draw1H": {
           "Description": "{actor} draws their {weapon}.",
           "Title": "Draw (1H)"
@@ -5752,6 +5819,10 @@
         },
         "Title": "Interact"
       },
+      "Leap": {
+        "Description": "<p>You take a careful, short jump. You can Leap up to 10 feet horizontally if your Speed is at least 15 feet, or up to 15 feet horizontally if your Speed is at least 30 feet. You land in the space where your Leap ends (meaning you can typically clear a 5-foot gap, or a 10-foot gap if your Speed is 30 feet or more).</p><p>If you Leap vertically, you can move up to 3 feet vertically and 5 feet horizontally onto an elevated surface.</p><p>Jumping a greater distance requires using the Athletics skill.</p>",
+        "Title": "Leap"
+      },
       "Lie": {
         "Notes": {
           "failure": "<strong>Failure</strong> The target doesn't believe your lie and gains a +4 circumstance bonus against your attempts to Lie for the duration of your conversation. The target is also more likely to be suspicious of you in the future.",
@@ -5776,6 +5847,7 @@
         "Title": "Make an Impression"
       },
       "ManeuverInFlight": {
+        "Description": "<p>You try a difficult maneuver while flying. Attempt an Acrobatics check. The GM determines what maneuvers are possible, but they rarely allow you to move farther than your fly Speed.</p><p><strong>Success</strong> You succeed at the maneuver.<br><strong>Failure</strong> Your maneuver fails. The GM chooses if you simply can't move or if some other detrimental effect happens. The outcome should be appropriate for the maneuver you attempted (for instance, being blown off course if you were trying to fly against a strong wind).<br><strong>Critical Failure</strong> As failure, but the consequence is more dire.</p><section class=\"sample-tasks\"><h2>Sample Maneuver in Flight Tasks</h2><p><p><strong>Trained</strong> steep ascent or descent</p><p><strong>Expert</strong> fly against the wind, hover midair</p><p><strong>Master</strong> reverse direction</p><p><strong>Legendary</strong> fly through gale force winds</p></section>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> As failure, but the consequence is more dire.",
           "failure": "<strong>Failure</strong> Your maneuver fails. The GM chooses if you simply can't move or if some other detrimental effect happens. The outcome should be appropriate for the maneuver you attempted (for instance, being blown off course if you were trying to fly against a strong wind).",
@@ -5784,6 +5856,7 @@
         "Title": "Maneuver in Flight"
       },
       "PalmAnObject": {
+        "Description": "<p>Palming a small, unattended object without being noticed requires you to roll a single Thievery check against the Perception DCs of all creatures who are currently observing you. You take the object whether or not you successfully conceal that you did so. You can typically only Palm Objects of negligible Bulk, though the GM might determine otherwise depending on the situation.</p><p><strong>Success</strong> The creature does not notice you Palming the Object.<br><strong>Failure</strong> The creature notices you Palming the Object, and the GM determines the creature's response.</p>",
         "Notes": {
           "failure": "<strong>Failure</strong> The creature notices you Palming the Object, and the GM determines the creature's response.",
           "success": "<strong>Success</strong> The creature does not notice you Palming the Object."
@@ -5830,6 +5903,7 @@
         }
       },
       "PickALock": {
+        "Description": "<p>Opening a lock without a key is very similar to Disabling a Device, but the DC of the check is determined by the complexity and construction of the lock you are attempting to pick. Locks of higher qualities might require multiple successes to unlock, since otherwise even an unskilled burglar could easily crack the lock by attempting the check until they rolled a natural 20. If you lack the proper tools, the GM might let you used improvised picks, which are treated as shoddy tools, depending on the specifics of the lock.</p><p><strong>Critical Success</strong> You unlock the lock, or you achieve two successes toward opening a complex lock. You leave no trace of your tampering.<br><strong>Success</strong> You open the lock, or you achieve one success toward opening a complex lock.<br><strong>Critical Failure</strong> You break your tools. Fixing them requires using Crafting to Repair them or else swapping in replacement picks (costing 3 sp, or 3 gp for infiltrator thieves' tools).</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You break your tools. Fixing them requires using Crafting to @UUID[Compendium.pf2e.actionspf2e.bT3skovyLUtP22ME]{Repair} them or else swapping in replacement picks (costing 3 sp, or 3 gp for infiltrator thieves' tools).",
           "criticalSuccess": "<strong>Critical Success</strong> You unlock the lock, or you achieve two successes toward opening a complex lock. You leave no trace of your tampering.",
@@ -5846,7 +5920,12 @@
         "ShieldIsDestroyed": "{actor}'s {shield} is destroyed.",
         "SingleActionTitle": "Raise a Shield"
       },
+      "Ready": {
+        "Description": "<p>You prepare to use an action that will occur outside your turn. Choose a single action or free action you can use, and designate a trigger. Your turn then ends. If the trigger you designated occurs before the start of your next turn, you can use the chosen action as a reaction (provided you still meet the requirements to use it). You can't Ready a free action that already has a trigger.</p><p>If you have a multiple attack penalty and your readied action is an attack action, your readied attack takes the multiple attack penalty you had at the time you used Ready. This is one of the few times the multiple attack penalty applies when it's not your turn.</p>",
+        "Title": "Ready"
+      },
       "Release": {
+        "Description": "<p>You release something you're holding in your hand or hands. This might mean dropping an item, removing one hand from your weapon while continuing to hold it in another hand, releasing a rope suspending a chandelier, or performing a similar action. Unlike most manipulate actions, Release does not trigger reactions that can be triggered by actions with the manipulate trait (such as Attack of Opportunity).</p><p>If you want to prepare to Release something outside of your turn, use the Ready activity.</p>",
         "Drop": {
           "Description": "{actor} drops their {weapon} onto the ground.",
           "Title": "Drop"
@@ -5899,6 +5978,7 @@
         "Title": "Request"
       },
       "Seek": {
+        "Description": "<p>You scan an area for signs of creatures or objects. If you're looking for creatures, choose an area you're scanning. If precision is necessary, the GM can have you select a 30-foot cone or a 15-foot burst within line of sight. You might take a penalty if you choose an area that's far away.</p><p>If you're using Seek to search for objects (including secret doors and hazards), you search up to a 10-foot square adjacent to you. The GM might determine you need to Seek as an activity, taking more actions or even minutes or hours if you're searching a particularly cluttered area.</p><p>The GM attempts a single secret Perception check for you and compares the result to the Stealth DCs of any undetected or hidden creatures in the area or the DC to detect each object in the area (as determined by the GM or by someone Concealing the Object). A creature you detect might remain hidden, rather than becoming observed, if you're using an imprecise sense or if an effect (such as invisibility) prevents the subject from being observed.</p><p><strong>Critical Success</strong> If you were searching for creatures, any undetected or hidden creature you critically succeeded against becomes observed by you. If you were searching for an object, you learn its location.<br><strong>Success</strong> If you were searching for creatures, any undetected creature you succeeded against becomes hidden from you instead of undetected, and any hidden creature you succeeded against becomes observed by you. If you were searching for an object, you learn its location or get a clue to its whereabouts, as determined by the GM.</p>",
         "Notes": {
           "criticalSuccess": "<strong>Critical Success</strong> If you were searching for creatures, any @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} or @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} creature you critically succeeded against becomes @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} by you. If you were searching for an object, you learn its location.",
           "success": "<strong>Success</strong> If you were searching for creatures, any @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} creature you succeeded against becomes @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from you instead of @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}, and any @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} creature you succeeded against becomes @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} by you. If you were searching for an object, you learn its location or get a clue to its whereabouts, as determined by the GM."
@@ -5916,6 +5996,7 @@
         "Title": "Sense Direction"
       },
       "SenseMotive": {
+        "Description": "<p>You try to tell whether a creature's behavior is abnormal. Choose one creature, and assess it for odd body language, signs of nervousness, and other indicators that it might be trying to deceive someone. The GM attempts a single secret Perception check for you and compares the result to the Deception DC of the creature, the DC of a spell affecting the creature's mental state, or another appropriate DC determined by the GM. You typically can't try to Sense the Motive of the same creature again until the situation changes significantly.</p><p><strong>Critical Success</strong> You determine the creature's true intentions and get a solid idea of any mental magic affecting it.<br><strong>Success</strong> You can tell whether the creature is behaving normally, but you don't know its exact intentions or what magic might be affecting it.<br><strong>Failure</strong> You detect what a deceptive creature wants you to believe. If they're not being deceptive, you believe they're behaving normally.<br><strong>Critical Failure</strong> You get a false sense of the creature's intentions.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You get a false sense of the creature's intentions.",
           "criticalSuccess": "<strong>Critical Success</strong> You determine the creature's true intentions and get a solid idea of any mental magic affecting it.",
@@ -5945,6 +6026,7 @@
         "Title": "Sneak"
       },
       "Squeeze": {
+        "Description": "<p>You contort yourself to squeeze through a space so small you can barely fit through. This action is for exceptionally small spaces; many tight spaces are difficult terrain that you can move through more quickly and without a check.</p><p><strong>Critical Success</strong> You squeeze through the tight space in 1 minute per 10 feet of squeezing.<br><strong>Success</strong> You squeeze through in 1 minute per 5 feet.<br><strong>Critical Failure</strong> You become stuck in the tight space. While you're stuck, you can spend 1 minute attempting another Acrobatics check at the same DC. Any result on that check other than a critical failure causes you to become unstuck.</p><section class=\"sample-tasks\"><h2>Sample Squeeze Tasks</h2><p><p><strong>Trained</strong> space barely fitting your shoulders</p><p><strong>Master</strong> space barely fitting your head</p></section>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You become stuck in the tight space. While you're stuck, you can spend 1 minute attempting another Acrobatics check at the same DC. Any result on that check other than a critical failure causes you to become unstuck.",
           "criticalSuccess": "<strong>Critical Success</strong> You squeeze through the tight space in 1 minute per 10 feet of squeezing.",
@@ -5952,7 +6034,12 @@
         },
         "Title": "Squeeze"
       },
+      "Stand": {
+        "Description": "<p>You stand up from prone.</p>",
+        "Title": "Stand"
+      },
       "Steal": {
+        "Description": "<p>You try to take a small object from another creature without being noticed. Typically, you can Steal only an object of negligible Bulk, and you automatically fail if the creature who has the object is in combat or on guard.</p><p>Attempt a Thievery check to determine if you successfully Steal the object. The DC to Steal is usually the Perception DC of the creature wearing the object. This assumes the object is worn but not closely guarded (like a loosely carried pouch filled with coins, or an object within such a pouch). If the object is in a pocket or similarly protected, you take a –5 penalty to your Thievery check. The GM might increase the DC of your check if the nature of the object makes it harder to steal (such as a very small item in a large pack, or a sheet of parchment mixed in with other documents).</p><p>You might also need to compare your Thievery check result against the Perception DCs of observers other than the person wearing the object. The GM may increase the Perception DCs of these observers if they're distracted.</p><p><strong>Success</strong> You steal the item without the bearer noticing, or an observer doesn't see you take or attempt to take the item.<br><strong>Failure</strong> The item's bearer notices your attempt before you can take the object, or an observer sees you take or attempt to take the item. The GM determines the response of any creature that notices your theft.</p>",
         "Notes": {
           "failure": "<strong>Failure</strong> The item's bearer notices your attempt before you can take the object, or an observer sees you take or attempt to take the item. The GM determines the response of any creature that notices your theft.",
           "success": "<strong>Success</strong> You steal the item without the bearer noticing, or an observer doesn't see you take or attempt to take the item."
@@ -5968,8 +6055,17 @@
         "StaminaNotEnabled": "The Stamina variant is not enabled.",
         "Title": "Steel Your Resolve"
       },
+      "Step": {
+        "Description": "<p>You carefully move 5 feet. Unlike most types of movement, Stepping doesn't trigger reactions, such as Attacks of Opportunity, that can be triggered by move actions or upon leaving or entering a square.</p><p>You can't Step into difficult terrain, and you can't Step using a Speed other than your land Speed.</p>",
+        "Title": "Step"
+      },
+      "Stride": {
+        "Description": "<p>You move up to your Speed.</p>",
+        "Title": "Stride"
+      },
       "Subsist": {
         "AfterExplorationPenalty": "After Exploration",
+        "Description": "<p>You try to provide food and shelter for yourself, and possibly others as well, with a standard of living depending on your degree of success. The GM determines the DC based on the nature of the place where you're trying to Subsist. You might need a minimum proficiency rank to Subsist in particularly strange environments. Unlike most downtime activities, you can Subsist after 8 hours or less of exploration, but if you do, you take a –5 penalty.</p><p><strong>Critical Success</strong> You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.<br><strong>Success</strong> You find enough food and shelter with basic protection from the elements to provide you a subsistence living.<br><strong>Failure</strong> You're exposed to the elements and don't get enough food, becoming fatigued until you attain sufficient food and shelter.<br><strong>Critical Failure</strong> You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing.</p><section class=\"sample-tasks\"><h2>Sample Subsist Tasks</h2><p><strong>Untrained</strong> lush forest with calm weather or large city with plentiful resources</p><p><strong>Trained</strong> typical hillside or village</p><p><strong>Expert</strong> typical mountains or insular hamlet</p><p><strong>Master</strong> typical desert or city under siege</p><p><strong>Legendary</strong> barren wasteland or city of undead</p></section>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing. @UUID[Compendium.pf2e.other-effects.wHWWHkjDXmJl4Ia6]{Effect: Adverse Subsist Situation}",
           "criticalSuccess": "<strong>Critical Success</strong> You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.",
@@ -5989,6 +6085,10 @@
         },
         "Title": "Swim"
       },
+      "TakeCover": {
+        "Description": "<p>You press yourself against a wall or duck behind an obstacle to take better advantage of cover. If you would have standard cover, you instead gain greater cover, which provides a +4 circumstance bonus to AC; to Reflex saves against area effects; and to Stealth checks to Hide, Sneak, or otherwise avoid detection. Otherwise, you gain the benefits of standard cover (a +2 circumstance bonus instead). This lasts until you move from your current space, use an attack action, become unconscious, or end this effect as a free action.</p>",
+        "Title": "Take Cover"
+      },
       "Tamper": {
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> Your tampering backfires dramatically, creating a small explosion from your own tools or gear. You take [[/r (@actor.level)[fire] #Tamper Backfire]]{fire damage equal to your level}.",
@@ -6007,6 +6107,7 @@
         "Title": "Track"
       },
       "TreatDisease": {
+        "Description": "<p>You spend at least 8 hours caring for a diseased creature. Attempt a Medicine check against the disease's DC. After you attempt to Treat a Disease for a creature, you can't try again until after that creature's next save against the disease.</p><p><strong>Critical Success</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the disease.<br><strong>Success</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the disease.<br><strong>Critical Failure</strong> Your efforts cause the creature to take a –2 circumstance penalty to its next save against the disease.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> Your efforts cause the creature to take a -2 circumstance penalty to its next save against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.5oYKYXAexr0vhx84]{Effect: Treat Disease (Critical Failure)}",
           "criticalSuccess": "<strong>Critical Success</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the disease.<br/>@UUID[Compendium.pf2e.equipment-effects.id20P4pj7zDKeLmy]{Effect: Treat Disease (Critical Success)}",
@@ -6015,6 +6116,7 @@
         "Title": "Treat Disease"
       },
       "TreatPoison": {
+        "Description": "<p>You treat a patient to prevent the spread of poison. Attempt a Medicine check against the poison's DC. After you attempt to Treat a Poison for a creature, you can't try again until after the next time that creature attempts a save against the poison.</p><p><strong>Critical Success</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the poison.<br><strong>Success</strong> You grant the creature a +2 circumstance bonus to its next saving throw against the poison.<br><strong>Critical Failure</strong> Your efforts cause the creature to take a –2 circumstance penalty to its next save against the poison.</p>",
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> Your efforts cause the creature to take a -2 circumstance penalty to its next save against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.ESuBosh3t1pXEcBj]{Effect: Treat Poison (Critical Failure)}",
           "criticalSuccess": "<strong>Critical Success</strong> You grant the creature a +4 circumstance bonus to its next saving throw against the poison.<br/>@UUID[Compendium.pf2e.equipment-effects.XwCBalKJf3CiEiFa]{Effect: Treat Poison (Critical Success)}",
@@ -6054,6 +6156,7 @@
         "Title": "Trip"
       },
       "TumbleThrough": {
+        "Description": "<p>You Stride up to your Speed. During this movement, you can try to move through the space of one enemy. Attempt an Acrobatics check against the enemy's Reflex DC as soon as you try to enter its space. You can Tumble Through using Climb, Fly, Swim, or another action instead of Stride in the appropriate environment.</p><p><strong>Success</strong> You move through the enemy's space, treating the squares in its space as difficult terrain (every 5 feet costs 10 feet of movement). If you don't have enough Speed to move all the way through its space, you get the same effect as a failure.<br><strong>Failure</strong> Your movement ends, and you trigger reactions as if you had moved out of the square you started in.</p>",
         "Notes": {
           "failure": "<strong>Failure</strong> Your movement ends, and you trigger reactions as if you had moved out of the square you started in.",
           "success": "<strong>Success</strong> You move through the enemy's space, treating the squares in its space as difficult terrain (every 5 feet costs 10 feet of movement). If you don't have enough Speed to move all the way through its space, you get the same effect as a failure."
@@ -6129,6 +6232,10 @@
           "Title": "Exsanguinating Ammunition"
         }
       },
+      "FreezingAmmunition": {
+        "Text": "The target must succeed at a @Check[type:fortitude|dc:19] save or be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round by the intense cold (slowed 1 for 1 minute on a critical failure).",
+        "Title": "Freezing Ammunition"
+      },
       "MeteorShot": {
         "CriticalFailureText": "On a critical failure, the weapon misfires.",
         "Greater": {
@@ -6159,8 +6266,15 @@
       "KnockProne": "On a hit, the target is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
     },
     "BattleForm": {
+      "AberrantForm": {
+        "GugSqueezeNote": "Your multiple joints allow you to fit through tight spaces as if you were a Medium creature."
+      },
+      "AngelForm": {
+        "DeafenedNote": "@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 round on a critical hit"
+      },
       "Attack": {
         "Antler": "Antler",
+        "AqueousFist": "Aqueous Fist",
         "Beak": "Beak",
         "Beard": "Beard",
         "Bite": "Bite",
@@ -6182,7 +6296,7 @@
         "LavaFist": "Lava Fist",
         "Leaf": "Leaf",
         "Leg": "Leg",
-        "LightingLash": "Lightning Lash",
+        "LightningLash": "Lightning Lash",
         "Mandibles": "Mandibles",
         "Moonbeam": "Moonbeam",
         "PiercingHymn": "Piercing Hymn",
@@ -6205,13 +6319,36 @@
         "Vine": "Vine",
         "WaterSpout": "Water Spout",
         "Wave": "Wave",
+        "Web": "Web",
         "Wing": "Wing"
       },
+      "CosmicForm": {
+        "MoonNote": "The target is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.",
+        "SunNote": "The target is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round."
+      },
+      "DaemonForm": {
+        "CeustodaemonDamageNote": "Any successful jaws or claw Strike deals an additional [[/r {1d6}]]{1d6 damage}, and you take the same amount of damage"
+      },
+      "ElementEmbodied": {
+        "AirPushNote": "Plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl]{Push} 10 feet",
+        "WaterPushPullNote": "Plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl]{Push} or Pull 10 feet"
+      },
+      "InsectForm": {
+        "SpiderWebNote": "A successful Web attack entangles the target for 1 round, but deals no damage"
+      },
+      "MonstrosityForm": {
+        "ShroudOfFlame": "Shroud of Flame"
+      },
       "Note": {
+        "Grab": "You can spend an action immediately after a hit to @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Grab} the target",
         "GrabbingTrunk": {
           "Text": "A creature up to two sizes smaller that's hit by your trunk is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}. If you succeed at your @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} check against a creature grabbed by your trunk, you can reposition the creature to another space within your trunk's reach.",
           "Title": "Grabbing Trunk"
-        }
+        },
+        "Shove": "You can spend an action immediately after a hit to push the target 5 feet with the effects of a successful @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}"
+      },
+      "OozeForm": {
+        "GelatinousCubeNote": "A creature hit by your cube face Strike must succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] save against your spell DC or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round on a critical failure); this save has the incapacitation trait."
       }
     },
     "BombNotes": {
@@ -7135,8 +7272,11 @@
       "DisarmStoneMetal": "To Disarm Stone or Metal Objects",
       "DiscernAndPredictWeather": "Discern Weather Patterns and Predict Upcoming Weather Conditions",
       "Escape": "To Escape",
+      "EscapeForceOpenOrLift": "To Escape, Force Open, or Lift Heavy Objects",
       "Feint": "To Feint",
+      "ForceOpenGrappleShoveOrTrip": "To Force Open, Grapple, Shove, or Trip",
       "Forests": "In Forests",
+      "ForestsOrJungles": "In Forests or Jungles",
       "ForestsOrSnow": "In Forests or Snow",
       "ForestsOrSwamps": "In Forests or Swamps",
       "GatherInformation": "to Gather Information",
@@ -7170,6 +7310,7 @@
       "Orate": "To Orate",
       "Paint": "To Paint",
       "Raining": "Raining",
+      "RecallKnowledgeDeadSubject": "To Recall Knowledge about a deceased subject",
       "Rocky": "In Rocky Terrain",
       "RunningWater": "In Running Water",
       "RustyTerrain": "In Areas of Rusty Objects",
@@ -7329,6 +7470,12 @@
           "Drops": "Level 1 barbarian class feature",
           "Prompt": "Select an instinct."
         },
+        "InuredToAlchemy": {
+          "CriticalSuccess": "Each critical success reduces the stage by 3 for an alchemical poison, drug, or addiction.",
+          "CriticalSuccessVirulent": "Each critical success reduces the stage by 2 for a virulent alchemical poison, drug, or addiction.",
+          "Success": "Each of your successful saving throws against an alchemical poison, a drug, or an addiction reduces the stage by 2",
+          "SuccessVirulent": "Each of your successful saving throws against a virulent alchemical poison, a drug, or an addiction reduces the stage by 1"
+        },
         "Spirit": {
           "NegativeDamage": "Negative Damage",
           "PositiveDamage": "Positive Damage",
@@ -7437,6 +7584,10 @@
       },
       "Convergent": {
         "Tactics": "An ally with Convergent Tactics is within reach of the target."
+      },
+      "CorrosiveBody": {
+        "Note": "The first time each round that you deal acid damage to a creature in this way, you gain [[/r 3d6 #Temporary Hit Points]]{3d6 temporary Hit Points}",
+        "Note9th": "The first time each round that you deal acid damage to a creature in this way, you gain [[/r 5d6 #Temporary Hit Points]]{5d6 temporary Hit Points}"
       },
       "Cover": {
         "Greater": "Greater",
@@ -7745,6 +7896,9 @@
         },
         "TorchGoblin": {
           "Note": "As long as you are suffering persistent fire damage, all your melee attacks against adjacent creatures deal an additional [[/r 1[fire]]]{1 Fire Damage} per weapon damage die."
+        },
+        "ScaldingSpit": {
+          "BoilingSpit": "Boiling Spit"
         }
       },
       "Gunslinger": {
@@ -7769,6 +7923,12 @@
           "BalanceNote": "If you roll a success on an Acrobatics check to Balance, you get a critical success instead. You're not flat-footed when you attempt to Balance.",
           "ClimbNote": "If you roll a success on an Athletics check to Climb, you get a critical success instead. You're not flat-footed when you attempt to Climb."
         }
+      },
+      "HarrowCourt": {
+        "Fiend": {
+          "ToggleLabel": "Repeating a non-strike action"
+        },
+        "BooksSuitPrompt": "Was the drawn card from Books?"
       },
       "HarrowDeck": {
         "HarrowSuits": {
@@ -7817,6 +7977,12 @@
         "SeekHuntedPrey": "To Seek hunted prey",
         "TargetHuntedPrey": "Target is your Hunted Prey",
         "TrackHuntedPrey": "To Track hunted prey"
+      },
+      "Ifrit": {
+        "Lavasoul": {
+          "MagmaSpike": "Magma Spike",
+          "MagmaSpikeCriticalSpecialization": "Instead of the normal critical specialization effect, the target takes [[/r 1d6[persistent,fire]]] damage; you gain a bonus on this persistent damage equal to your item bonus to attack rolls on unarmed attacks."
+        }
       },
       "Inventor": {
         "Innovation": {
@@ -7869,7 +8035,7 @@
       },
       "Leshy": {
         "Seedpod": {
-          "Note": "On a critical hit, a seedpod bursts, issuing forth a tangle of vegetation that imposes a -10-foot circumstance penalty on the target's Speed for 1 round."
+          "Note": "On a critical hit, a seedpod bursts, issuing forth a tangle of vegetation that imposes a -10-foot circumstance penalty on the target's Speed for 1 round. @UUID[Compendium.pf2e.feat-effects.wQDHpOKY3GZqvS2v]{Effect: Seedpod}"
         },
         "ThornedSeedpod": {
           "Note": "When you critically succeed at a seedpod Strike, vines twist and stab your foe, dealing [[/r 1d4[persistent,piercing]]]"
@@ -7881,6 +8047,8 @@
         }
       },
       "LitCandle": "Candle is lit",
+      "LitCandlecap": "Candlecap is lit",
+      "LitFirePoi": "Fire Poi is lit",
       "LitTorch": "Torch is lit",
       "Lizardfolk": {
         "GuidedByTheStars": {
@@ -8000,8 +8168,9 @@
         "SimpleMartialTwoHandedMeleeWeapons": "Simple & Martial Two-Handed Melee Weapons"
       },
       "MechanicalTorch": {
-        "LitCone": "Mechanical torch is lit (cone)",
-        "LitRadius": "Mechanical torch is lit (radius)"
+        "Label": "Mechanical Torch is lit",
+        "LitCone": "Cone",
+        "LitRadius": "Radius"
       },
       "Mindmoppet": {
         "BrokenShell": "Shell is Broken"
@@ -8016,6 +8185,9 @@
         },
         "StunningFist": {
           "Note": "The target must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|traits:incapacitation|overrideTraits:true] save against your class DC or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure)."
+        },
+        "WolfDrag": {
+          "Note": "If the attack succeeds, you knock the target @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}."
         }
       },
       "MountainStance": {
@@ -8095,6 +8267,7 @@
         "ConsciousMind": "Select a Conscious Mind.",
         "CreatureSize": "Select a creature size.",
         "DamageType": "Select a damage type.",
+        "DegreeOfSuccess": "Select the degree of success",
         "Deity": "Select a deity.",
         "DeitysDomain": "Select a deity's domain.",
         "DragonBreathWeapon": "Select a dragon's Breath Weapon.",
@@ -8155,6 +8328,11 @@
           "Prompt": "Select a skill to become trained in."
         }
       },
+      "SaveSuccessToCriticalSuccess": {
+        "Fortitude": "When you roll a success on a Fortitude save, you get a critical success instead.",
+        "Reflex": "When you roll a success on a Reflex save, you get a critical success instead.",
+        "Will": "When you roll a success on a Will save, you get a critical success instead."
+      },
       "ScionOfDomora": {
         "GuardiansEmbrace": {
           "PhysicalAttackLabel": "Guarding Against a Physical Attack",
@@ -8165,7 +8343,8 @@
       "Shisk": {
         "PiercingQuills": {
           "Note": "Your quills unarmed attack deals @Localize[PF2E.PersistentDamage.Bleed1d4.success] on a critical hit."
-        }
+        },
+        "Quills": "Quills"
       },
       "Shoony": {
         "EsteemedVisitor": {
@@ -8264,6 +8443,9 @@
           "WolfJaws": "Wolf Jaws"
         }
       },
+      "SteadyBalance": {
+        "Note": "If you roll a success using the Balance action, you get a critical success instead."
+      },
       "SterlingDynamo": {
         "AutomaticPercussive": "Automatic Percussive Striker Dynamo",
         "AutomaticPower": "Automatic Power Driver Dynamo",
@@ -8302,6 +8484,19 @@
         "AgainstDevils": "Against Devils",
         "AgainstHumanoids": "Against Humanoids",
         "Necromancer": "Target is a necromancer"
+      },
+      "Tattoo": {
+        "WildwoodInk": {
+          "Greater": {
+            "InForestLabel": "Wildwood Ink (Greater) (In Forest)"
+          },
+          "Major": {
+            "InForestLabel": "Wildwood Ink (Major) (In Forest)"
+          },
+          "Normal": {
+            "InForestLabel": "Wildwood Ink (In Forest)"
+          }
+        }
       },
       "TerrainExpertise": {
         "Prompt": "Select a terrain"
