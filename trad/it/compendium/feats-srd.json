@@ -493,7 +493,7 @@
         },
         "Dragon's Rage Breath": {
             "name": "Soffio della Furia Draconica",
-            "description": "<p><strong>Requisiti: </strong>Non hai utilizzato questa capacità dall'ultima volta che ti sei Infuriato.</p>\n<hr />\n<p>Inspiri profondamente ed esali una potente energia in un @Template[type:cone|distance:9] o in una @Template[type:line|distance:18], infliggendo [[/r (@actor.level)d6#Soffio della Furia Draconica]]{1d6 danni per livello}. Area e tipo di danno corrispondono a quelli del tuo drago (vedi @UUID[Compendium.pf2e.classfeatures.VDot7CDcXElxmkkz]{Tabella 3-4}).</p>\n<p>Se hai utilizzato questa capacità nell'ora precedente, area e danni sono dimezzati (cono di 4,5 metri o @Template[type:line|distance:9]; [[/r (floor(@actor.level/2))d6#Soffio della Furia Draconica]]{1d6 danni ogni 2 livelli}).</p>\n<p>Ogni creatura nell'area deve effettuare un tiro salvezza @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true].</p>",
+            "description": "<p><strong>Requisiti: </strong>Non hai utilizzato questa capacità dall'ultima volta che ti sei Infuriato.</p>\n<hr />\n<p>Inspiri profondamente ed esali una potente energia in un @Template[type:cone|distance:30] o in una @Template[type:line|distance:60], infliggendo [[/r (@actor.level)d6#Soffio della Furia Draconica]]{1d6 danni per livello}. Area e tipo di danno corrispondono a quelli del tuo drago (vedi @UUID[Compendium.pf2e.classfeatures.VDot7CDcXElxmkkz]{Tabella 3-4}).</p>\n<p>Se hai utilizzato questa capacità nell'ora precedente, area e danni sono dimezzati (cono di 4,5 metri o @Template[type:line|distance:30]; [[/r (floor(@actor.level/2))d6#Soffio della Furia Draconica]]{1d6 danni ogni 2 livelli}).</p>\n<p>Ogni creatura nell'area deve effettuare un tiro salvezza @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true].</p>",
             "featPrerequisites": {
                 "0": "istinto draconico"
             }
@@ -667,8 +667,8 @@
         },
         "Defensive Coordination": {
             "featPrerequisites": {
-                "1": "Ispirare Difesa",
-                "0": "musa del combattente"
+                "0": "musa del combattente",
+                "1": "Ispirare Difesa"
             },
             "name": "Coordinazione Difensiva",
             "description": "<p>Come gli eroi leggendari che perseverano a fronte di difficoltà insormontabili, tu e i tuoi alleati resisterete in ogni caso.</p>\n<p>Se la tua prossima azione è quella di lanciare il trucchetto di composizione <em>@UUID[Compendium.pf2e.spells-srd.bH0kPuf7UKxRvi2P]{ispirare difesa}</em>, puoi @UUID[Compendium.pf2e.actionspf2e.xjGwis0uaC2305pm]{Alzare uno Scudo} e un singolo alleato che ottiene un bonus di status grazie all'incantesimo può usare immediatamente una reazione per Alzare uno Scudo.</p>"
@@ -830,8 +830,8 @@
         },
         "Beastmaster's Call": {
             "featPrerequisites": {
-                "1": "Richiamo del Compagno",
-                "0": "Dedizione del Signore delle Bestie"
+                "0": "Dedizione del Signore delle Bestie",
+                "1": "Richiamo del Compagno"
             },
             "name": "Richiamo del Signore delle Bestie",
             "description": "<p><strong>Frequenza</strong> una volta per turno</p>\n<hr />\n<p>Richiami rapidamente una proiezione primeva di un compagno non attivo che fornisca il beneficio del supportare del compagno. La proiezione arriva in un quadretto non occupato a tua scelta entro 9 metri da te, ti conferisce il suo beneficio del supportare e poi scompare al tuo turno successivo. La proiezione ha gli stessi modificatori di CA e tiri salvezza del compagno reale, e se subisce danni prima del tuo turno successivo scompare e il beneficio del supportare termina immediatamente.</p>"
@@ -869,8 +869,8 @@
         },
         "Triangle Shot": {
             "featPrerequisites": {
-                "1": "Colpo Stordente",
-                "0": "Posizione dell'Arciere Monastico"
+                "0": "Posizione dell'Arciere Monastico",
+                "1": "Colpo Stordente"
             },
             "name": "Tiro Triangolare",
             "description": "<p><strong>Requisiti</strong> Sei in @UUID[Compendium.pf2e.feats-srd.YG2RxXE9SMfwo6wP]{Posizione dell'Arciere Monastico} e impugni un arco utilizzabile con quella posizione.</p>\n<hr />\n<p>Incocchi tre frecce nel tuo arco e le scocchi tutte in una volta. Effettua tre Colpi a distanza contro un singolo bersaglio con l'arma richiesta; ognuno di essi utilizza la tua attuale penalità da attacchi multipli e subisci un'ulteriore penalità di -2. Questo conta come due attacchi nel calcolo della tua penalità da attacchi multipli; combini i danni degli attacchi al fine di calcolare le resistenze e le debolezze.</p>\n<p>Applichi il tuo beneficio di @UUID[Compendium.pf2e.feats-srd.8bMmGBO6gsMfWZk3]{Colpo Stordente} a Tiro Triangolare, anche se non si tratta di una @UUID[Compendium.pf2e.actionspf2e.nbfNETdpee8CVM17]{Raffica di Colpi}. Se tutti e tre i colpi vanno a segno, il bersaglio subisce @Localize[PF2E.PersistentDamage.Bleed3d6.success].</p>"
@@ -1145,8 +1145,8 @@
         },
         "Topple Foe": {
             "featPrerequisites": {
-                "1": "addestrato in Atletica",
-                "0": "Dedizione del Maresciallo"
+                "0": "Dedizione del Maresciallo",
+                "1": "addestrato in Atletica"
             },
             "name": "Abbattere Avversario",
             "description": "<p><strong>Innesco</strong> Un alleato va a segno con un Colpo in mischia contro un avversario a cui siete entrambi adiacenti.</p>\n<hr />\n<p>Approfitti dell'apertura creata dal tuo alleato per buttare a terra il tuo nemico. Tenta una prova di Atletica per @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Sbilanciare} il bersaglio dell'attacco innescante.</p>"
@@ -1214,9 +1214,9 @@
         },
         "Physical Training": {
             "featPrerequisites": {
+                "0": "Dedizione del Padrone delle Spade",
                 "1": "esperto in Atletica",
-                "2": "esperto in Acrobazia",
-                "0": "Dedizione del Padrone delle Spade"
+                "2": "esperto in Acrobazia"
             }
         },
         "Nocturnal Kindred": {
@@ -1579,8 +1579,8 @@
         },
         "Multilingual Cipher": {
             "featPrerequisites": {
-                "1": "esperto in Società",
-                "0": "Dedizione del Linguista"
+                "0": "Dedizione del Linguista",
+                "1": "esperto in Società"
             },
             "name": "Codice Poliglotta",
             "description": "<p>Utilizzi più lingue per creare e decifrare codici. Ottieni bonus di circostanza +1 a @UUID[Compendium.pf2e.actionspf2e.d9gbpiQjChYDYA2L]{Decifrare Scritti}.</p>\n<p>Se un'altra creatura tenta di Decifrare gli Scritti che hai cifrato, subisce penalità di circostanza -2, a meno che non parli tutte le lingue che hai usato quando hai creato lo scritto.</p>"
@@ -1622,8 +1622,8 @@
         "Evasiveness (Swashbuckler)": {
             "description": "<p>Il tuo grado di competenza per i tiri salvezza su Riflessi aumenta fino a maestro.</p>",
             "featPrerequisites": {
-                "1": "esperto nei tiri salvezza su Riflessi",
-                "0": "Dedizione dello Spadaccino"
+                "0": "Dedizione dello Spadaccino",
+                "1": "esperto nei tiri salvezza su Riflessi"
             },
             "name": "Elusione (Spadaccino)"
         },
@@ -1642,8 +1642,8 @@
         },
         "Endemic Herbs": {
             "featPrerequisites": {
-                "1": "addestrato in Sopravvivenza",
-                "0": "Dedizione dell'Erborista"
+                "0": "Dedizione dell'Erborista",
+                "1": "addestrato in Sopravvivenza"
             },
             "name": "Erbe Endemiche",
             "description": "<p>Durante i tuoi preparativi giornalieri, trovi delle piante medicinali endemiche del luogo. Fino ai tuoi preparativi successivi, puoi spendere una partita aggiuntiva di erbe per aggiungere un beneficio a un oggetto che crei con la tua erboristeria.</p>\n<p>Il beneficio delle erbe speciali ha effetto sulla creatura a cui viene applicato l'oggetto; se il beneficio non è immediato, dura per 1 minuto, a meno che non sia indicato altrimenti. Questo aggiustamento conta come additivo, quindi non puoi includere un altro additivo senza rovinare l'oggetto.</p>\n<ul>\n<li><strong>Acquatico</strong> Ottieni bonus di circostanza +1 ai TS su Tempra.</li>\n<li><strong>Artico</strong> Per 1 ora, considera gli effetti ambientali di freddo come se fossero meno estremi di un grado.</li>\n<li><strong>Deserto</strong> Per 1 ora, considera gli effetti ambientali di caldo come se fossero meno estremi di un grado.</li>\n<li><strong>Foresta</strong> Ottieni bonus di circostanza +2 ai TS contro effetti di malattia e veleno.</li>\n<li><strong>Montagna</strong> Ottieni bonus di circostanza +1 ai TS su Riflessi.</li>\n<li><strong>Palude</strong> Rimuovi una fonte di danno da sanguinamento persistente.</li>\n<li><strong>Pianura</strong> Ottieni bonus di circostanza +1 ai TS su Volontà.</li>\n<li><strong>Sottosuolo</strong> Ottieni bonus di circostanza +1 a Percezione.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.NviQYIVZbPCSWLqT]{Effetto: Erbe Endemiche Acquatiche}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.2RwhJ9fbJtcQjW6s]{Effetto: Erbe Endemiche Artiche}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.jZYRxGHyArCci6AF]{Effetto: Erbe Endemiche Desertiche}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.bliWctLi7jlKUTUe]{Effetto: Erbe Endemiche della Foresta}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.QTG73gxKSNkiEWdY]{Effetto: Erbe Endemiche della Montagna}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.HjCXHDZT6GkCyiuG]{Effetto: Erbe Endemiche della Pianura}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.AJlunjfAIOq2Sg0p]{Effetto: Erbe Endemiche del Sottosuolo}</p>"
@@ -1875,8 +1875,8 @@
         },
         "Methodical Debilitations": {
             "featPrerequisites": {
-                "1": "Colpo Debilitante",
-                "0": "racket dello stratega"
+                "0": "racket dello stratega",
+                "1": "Colpo Debilitante"
             },
             "name": "Debilitazioni Metodiche",
             "description": "<p>Escogiti strategicamente le tue debilitazioni per ridurre o annua lare i vantaggi tattici del nemico. Aggiungi le seguenti debilitazioni alla lista da cui puoi scegliere quando usi @UUID[Compendium.pf2e.actionspf2e.bp0Up04x3dzGK5bB]{Colpo Debilitante}.</p>\n<ul>\n<li><strong>Debilitazione</strong> Il bersaglio non può attaccare ai fianchi un altra creatura e i suoi alleati non possono attaccare ai fianchi insieme a lui.</li>\n<li><strong>Debilitazione</strong> Il bersaglio non ottiene bonus di circostanza alla CA se @UUID[Compendium.pf2e.actionspf2e.xjGwis0uaC2305pm]{Alza lo Scudo} o se ha copertura inferiore o standard; ottiene solo bonus di circostanza +2 alla CA se ha copertura superiore o se usa @UUID[Compendium.pf2e.actionspf2e.ust1jJSCZQUhBZIz]{Andare in Copertura}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.emSh1VxHVtTmt925]{Effetto: Debilitazioni Metodiche}</p>"
@@ -1921,8 +1921,8 @@
         },
         "Strident Command": {
             "featPrerequisites": {
-                "2": "maestro in Intimidazione",
-                "0": "Dedizione del Vigilante"
+                "0": "Dedizione del Vigilante",
+                "2": "maestro in Intimidazione"
             }
         },
         "Felicitous Riposte": {
@@ -2324,8 +2324,8 @@
         "Expert Oracle Spellcasting": {
             "description": "<p>Ottieni i benefici del talento da incantatore esperto.</p>",
             "featPrerequisites": {
-                "1": "maestro in Religione",
-                "0": "Novizio di Incantesimi da Oracolo"
+                "0": "Novizio di Incantesimi da Oracolo",
+                "1": "maestro in Religione"
             },
             "name": "Esperto di Incantesimi da Oracolo"
         },
@@ -2338,8 +2338,8 @@
         },
         "Quick Mount": {
             "featPrerequisites": {
-                "1": "esperto in Natura",
-                "0": "Dedizione del Cavaliere"
+                "0": "Dedizione del Cavaliere",
+                "1": "esperto in Natura"
             },
             "description": "<p><strong>Requisiti</strong> Sei adiacente a una creatura che e più grande di te almeno di una taglia e che è disposta a essere la tua cavalcatura.</p>\n<hr />\n<p>Tu e la tua cavalcatura potete entrare in azione in un attimo. @UUID[Compendium.pf2e.actionspf2e.PM5jvValFkbFH3TV]{Monti} la creatura e @UUID[Compendium.pf2e.actionspf2e.q9nbyIF0PEBqMtYe]{Comandi un Animale} per impartirgli un ordine a tua scelta.</p>",
             "name": "Cavalcatura Rapida"
@@ -2507,9 +2507,9 @@
         },
         "Sure Foot": {
             "featPrerequisites": {
+                "0": "Dedizione del Viandante dell'Orizzonte",
                 "1": "esperto in Acrobazia",
-                "2": "esperto in Atletica",
-                "0": "Dedizione del Viandante dell'Orizzonte"
+                "2": "esperto in Atletica"
             },
             "description": "<p>Conosci i segreti per muoverti nel tuo @UUID[Compendium.pf2e.feats-srd.sgo7J9BVofBqwlsF]{Terreno Prescelto}. Ottieni bonus di circostanza +2 alle prove di abilità per muoverti sul tuo terreno prescelto, come le prove di Acrobazia per @UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{Bilanciarsi} sul ghiaccio, di Atletica per @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Nuotare} in acque agitate, di Acrobazia per @UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{Volare} in condizioni ventose e così via.</p>",
             "name": "Passo Sicuro"
@@ -2537,8 +2537,8 @@
         },
         "Lethargy Poisoner": {
             "featPrerequisites": {
-                "1": "addestrato in Artigianato",
-                "0": "Dedizione del Drow Tiratore"
+                "0": "Dedizione del Drow Tiratore",
+                "1": "addestrato in Artigianato"
             },
             "name": "Avvelenatore di Letargia",
             "description": "<p>Dal sapere drow hai imparato ben più del semplice uso delle @UUID[Compendium.pf2e.equipment-srd.XyA6PKV46aNlLXOd]{balestre a mano}. Durante i tuoi preparativi giornalieri, puoi usare una dose di @UUID[Compendium.pf2e.equipment-srd.zo0ophqfKunJFxZN]{veleno letargico} usando materiali comuni di aree selvagge o urbane. Se sei esperto in Artigianato, puoi invece creare una dose di @UUID[Compendium.pf2e.equipment-srd.nn2HAN1XKkKHfVnM]{veleno intorpidente}. Puoi preparare due dosi (di qualsiasi dei due veleni) se sei maestro in Artigianato e tre dosi se sei leggendario in Artigianato. La CD del TS per questo veleno è pari alla tua CD di classe. Solo tu puoi usare questi veleni ed essi scadono la volta successiva in cui svolgi i tuoi preparativi giornalieri. II GM potrebbe decidere che l'area in cui ti trovi è troppo spoglia per offrire i materiali di cui hai bisogno per questo talento.</p>"
@@ -2854,8 +2854,8 @@
         },
         "Tense Negotiator": {
             "featPrerequisites": {
-                "1": "maestro in Diplomazia",
-                "0": "Dedizione del Padrone delle Spade"
+                "0": "Dedizione del Padrone delle Spade",
+                "1": "maestro in Diplomazia"
             }
         },
         "Shameless Request": {
@@ -3335,8 +3335,8 @@
         },
         "Eerie Proclamation": {
             "featPrerequisites": {
-                "1": "esperto in Sopravvivenza",
-                "0": "esperto in Occultismo"
+                "0": "esperto in Occultismo",
+                "1": "esperto in Sopravvivenza"
             }
         },
         "Discerning Strike": {
@@ -3661,8 +3661,8 @@
         },
         "Dread Marshal Stance": {
             "featPrerequisites": {
-                "1": "addestrato in Intimidazione",
-                "0": "Dedizione del Maresciallo"
+                "0": "Dedizione del Maresciallo",
+                "1": "addestrato in Intimidazione"
             }
         },
         "Mobility": {
@@ -3729,8 +3729,8 @@
         },
         "Improvised Crafting": {
             "featPrerequisites": {
-                "1": "esperto in Artigianato",
-                "0": "Dedizione del Padrone delle Spade"
+                "0": "Dedizione del Padrone delle Spade",
+                "1": "esperto in Artigianato"
             }
         },
         "Natural Skill": {
@@ -3822,7 +3822,7 @@
         },
         "Dragon Roar": {
             "name": "Ruggito del Drago",
-            "description": "<p><strong>Requisiti</strong> Sei nella @UUID[Compendium.pf2e.feats-srd.8sy3sHwOHS4ImwvJ]{Posizione del Drago}</p>\n<hr />\n<p>Il tuo grido instilla paura negli avversari. I nemici entro un'@Template[type:emanation|distance:4.5] devono superare un tiro salvezza su Volontà contro la tua CD di Intimidazione o diventano @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventati 1} (o @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventati 2} in caso di fallimento critico). Quando una creatura spaventata dal ruggito inizia il suo turno adiacente a te, non può ridurre il valore di condizione sotto l'1 in quel turno.</p>\n<p>Il primo attacco con cui vai a segno contro una creatura spaventata dal ruggito, ma prima della fine del tuo turno successivo, ottiene bonus di circostanza +4 ai danni.</p>\n<p>Dopo aver utilizzato Ruggito del Drago, non puoi impiegarlo di nuovo per [[/r 1d4 #round]]{1d4 round}. I suoi effetti cessano immediatamente se abbandoni la Posizione del Drago. ln aggiunta, le creature nell'area del ruggito diventano temporaneamente immuni a esso per 1 minuto.</p>",
+            "description": "<p><strong>Requisiti</strong> Sei nella @UUID[Compendium.pf2e.feats-srd.8sy3sHwOHS4ImwvJ]{Posizione del Drago}</p>\n<hr />\n<p>Il tuo grido instilla paura negli avversari. I nemici entro un'@Template[type:emanation|distance:15] devono superare un tiro salvezza su Volontà contro la tua CD di Intimidazione o diventano @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventati 1} (o @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventati 2} in caso di fallimento critico). Quando una creatura spaventata dal ruggito inizia il suo turno adiacente a te, non può ridurre il valore di condizione sotto l'1 in quel turno.</p>\n<p>Il primo attacco con cui vai a segno contro una creatura spaventata dal ruggito, ma prima della fine del tuo turno successivo, ottiene bonus di circostanza +4 ai danni.</p>\n<p>Dopo aver utilizzato Ruggito del Drago, non puoi impiegarlo di nuovo per [[/r 1d4 #round]]{1d4 round}. I suoi effetti cessano immediatamente se abbandoni la Posizione del Drago. ln aggiunta, le creature nell'area del ruggito diventano temporaneamente immuni a esso per 1 minuto.</p>",
             "featPrerequisites": {
                 "0": "Posizione del Drago"
             }
@@ -3999,9 +3999,9 @@
         },
         "Analyze Idiolect": {
             "featPrerequisites": {
+                "0": "Dedizione del Linguista",
                 "1": "esperto in Inganno",
-                "2": "esperto in Società",
-                "0": "Dedizione del Linguista"
+                "2": "esperto in Società"
             }
         },
         "Legendary Survivalist": {
@@ -4170,8 +4170,8 @@
         },
         "Voice of Authority": {
             "featPrerequisites": {
-                "2": "esperto in Intimidazione",
-                "0": "Dedizione del Vigilante"
+                "0": "Dedizione del Vigilante",
+                "2": "esperto in Intimidazione"
             }
         },
         "Goblin Scuttle": {
@@ -4438,8 +4438,8 @@
         },
         "Phonetic Training": {
             "featPrerequisites": {
-                "1": "esperto in Società",
-                "0": "Dedizione del Linguista"
+                "0": "Dedizione del Linguista",
+                "1": "esperto in Società"
             }
         },
         "Antagonize": {
@@ -4771,8 +4771,8 @@
         "Master Oracle Spellcasting": {
             "description": "<p>Ottieni i benefici del talento da incantatore maestro.</p>",
             "featPrerequisites": {
-                "1": "leggendario in Religione",
-                "0": "Esperto di Incantesimi da Oracolo"
+                "0": "Esperto di Incantesimi da Oracolo",
+                "1": "leggendario in Religione"
             }
         },
         "Runic Impression": {
@@ -5073,8 +5073,8 @@
         },
         "Inspiring Marshal Stance": {
             "featPrerequisites": {
-                "1": "addestrato in Diplomazia",
-                "0": "Dedizione del Maresciallo"
+                "0": "Dedizione del Maresciallo",
+                "1": "addestrato in Diplomazia"
             }
         },
         "Esoteric Oath (Paladin)": {
@@ -5169,8 +5169,8 @@
         },
         "Fresh Ingredients": {
             "featPrerequisites": {
-                "1": "esperto in Natura",
-                "0": "Dedizione dell'Erborista"
+                "0": "Dedizione dell'Erborista",
+                "1": "esperto in Natura"
             }
         },
         "Saoc Astrology": {
@@ -5234,8 +5234,8 @@
         },
         "Reminder of the Greater Fear": {
             "featPrerequisites": {
-                "1": "maestro in Intimidazione",
-                "0": "Dedizione del Vigilante"
+                "0": "Dedizione del Vigilante",
+                "1": "maestro in Intimidazione"
             }
         },
         "Reflexive Shield": {
@@ -5265,8 +5265,8 @@
         },
         "Disarming Block": {
             "featPrerequisites": {
-                "1": "addestrato in Atletica",
-                "0": "Dedizione del Baluardo"
+                "0": "Dedizione del Baluardo",
+                "1": "addestrato in Atletica"
             }
         },
         "Arrow Snatching": {
@@ -5358,8 +5358,8 @@
         },
         "Fabricated Connections": {
             "featPrerequisites": {
-                "1": "maestro in Inganno",
-                "0": "Dedizione del Damerino"
+                "0": "Dedizione del Damerino",
+                "1": "maestro in Inganno"
             }
         },
         "Deadly Grace": {
@@ -5821,7 +5821,7 @@
             "featPrerequisites": {
                 "0": "Roccaforte della Montagna"
             },
-            "description": "<p><strong>Requisiti</strong> Sei nella @UUID[Compendium.pf2e.feats-srd.ZL5UU9quCTvcWzfY]{Posizione della Montagna}</p>\n<hr />\n<p>Batti il piede contro il suolo e fai tremare la terra. Le creature sul terreno entro un'@Template[type:emanation|distance:6] subiscono danni pari al tuo modificatore di Forza (minimo 0), a cui possono resistere superando un tiro salvezza @Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)|basic:true] contro la tua CD di classe. Inoltre, se lo falliscono, cadono a terra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prone}.</p>\n<p>Una volta effettuata questa azione, non puoi riutilizzarla per [[/r 1d4 #round]]{1d4 round}.</p>\n<hr />\n<p><strong>Speciale</strong> Se possiedi questo talento, il modificatore massimo di Destrezza alla tua CA mentre utilizzi Posizione della Montagna aumenta da +1 a +2.</p>"
+            "description": "<p><strong>Requisiti</strong> Sei nella @UUID[Compendium.pf2e.feats-srd.ZL5UU9quCTvcWzfY]{Posizione della Montagna}</p>\n<hr />\n<p>Batti il piede contro il suolo e fai tremare la terra. Le creature sul terreno entro un'@Template[type:emanation|distance:20] subiscono danni pari al tuo modificatore di Forza (minimo 0), a cui possono resistere superando un tiro salvezza @Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)|basic:true] contro la tua CD di classe. Inoltre, se lo falliscono, cadono a terra @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prone}.</p>\n<p>Una volta effettuata questa azione, non puoi riutilizzarla per [[/r 1d4 #round]]{1d4 round}.</p>\n<hr />\n<p><strong>Speciale</strong> Se possiedi questo talento, il modificatore massimo di Destrezza alla tua CA mentre utilizzi Posizione della Montagna aumenta da +1 a +2.</p>"
         },
         "Paragon's Guard": {
             "name": "Guardia Ineguagliabile",
@@ -5979,7 +5979,7 @@
         },
         "Directed Channel": {
             "name": "Incanalare Direzionale",
-            "description": "<p>Riesci a proiettare l'energia che incanali in una singola direzione, così da coprire una distanza maggiore e indirizzarla più precisamente. Quando lanci una versione di <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{ferire}</em> o <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{guarire}</em> che influenza un'area, puoi rendere quest'ultima un @Template[type:cone|distance:18] anziché un'@Template[type:emanation|distance:9].</p>"
+            "description": "<p>Riesci a proiettare l'energia che incanali in una singola direzione, così da coprire una distanza maggiore e indirizzarla più precisamente. Quando lanci una versione di <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{ferire}</em> o <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{guarire}</em> che influenza un'area, puoi rendere quest'ultima un @Template[type:cone|distance:60] anziché un'@Template[type:emanation|distance:30].</p>"
         },
         "Reflexive Catch": {
             "featPrerequisites": {
@@ -6141,8 +6141,8 @@
         },
         "Distracting Flattery": {
             "featPrerequisites": {
-                "1": "esperto in Inganno",
-                "0": "Dedizione del Damerino"
+                "0": "Dedizione del Damerino",
+                "1": "esperto in Inganno"
             }
         },
         "Guiding Luck": {
@@ -6377,8 +6377,8 @@
         },
         "Resuscitate": {
             "featPrerequisites": {
-                "1": "leggendario in Medicina",
-                "0": "Dedizione del Medico"
+                "0": "Dedizione del Medico",
+                "1": "leggendario in Medicina"
             }
         },
         "Alchemical Familiar": {
@@ -6418,8 +6418,8 @@
         },
         "Rugged Survivalist": {
             "featPrerequisites": {
-                "1": "maestro in Sopravvivenza",
-                "0": "Dedizione del Padrone delle Spade"
+                "0": "Dedizione del Padrone delle Spade",
+                "1": "maestro in Sopravvivenza"
             }
         },
         "Ancestral Paragon": {
@@ -6804,13 +6804,13 @@
         },
         "Expert Herbalism": {
             "featPrerequisites": {
-                "1": "esperto in Natura",
-                "0": "Dedizione dell'Erborista"
+                "0": "Dedizione dell'Erborista",
+                "1": "esperto in Natura"
             }
         },
         "Directional Bombs": {
             "name": "Bombe Direzionabili",
-            "description": "<p>Scagli le bombe con grande forza e precisione, riuscendo ad angolare lo spargimento in un cono che si propaga in un'unica direzione. Quando lanci una bomba alchemica con il tratto spargimento, anziché investire tutti i quadretti adiacenti al bersaglio puoi considerare lo spazio di quest'ultimo come il primo quadretto influenzato di un @Template[type:cone|distance:4.5] che si allontana da te: così puoi evitare gli alleati e penetrare più in profondità nelle linee nemiche. Se il bersaglio occupa più di un singolo quadretto, il suo quadretto più vicino a te è il primo a essere influenzato dal cono.</p>"
+            "description": "<p>Scagli le bombe con grande forza e precisione, riuscendo ad angolare lo spargimento in un cono che si propaga in un'unica direzione. Quando lanci una bomba alchemica con il tratto spargimento, anziché investire tutti i quadretti adiacenti al bersaglio puoi considerare lo spazio di quest'ultimo come il primo quadretto influenzato di un @Template[type:cone|distance:15] che si allontana da te: così puoi evitare gli alleati e penetrare più in profondità nelle linee nemiche. Se il bersaglio occupa più di un singolo quadretto, il suo quadretto più vicino a te è il primo a essere influenzato dal cono.</p>"
         },
         "Dragon Shape": {
             "name": "Forma di Drago",
@@ -7318,8 +7318,8 @@
         "Master Spotter (Investigator)": {
             "description": "<p>Il tuo grado di competenza in Percezione aumenta fino a maestro.</p>",
             "featPrerequisites": {
-                "1": "esperto in Percezione",
-                "0": "Dedizione dell'Investigatore"
+                "0": "Dedizione dell'Investigatore",
+                "1": "esperto in Percezione"
             }
         },
         "Resilient Touch": {
@@ -7624,8 +7624,8 @@
         "Skill Mastery (Investigator)": {
             "description": "<p>Aumenta il tuo grado di competenza in una delle tue abilità da esperto a maestro e in un'altra delle tue abilità da addestrato a esperto. Ottieni un talento di abilità associato a una delle abilità che hai scelto.</p>\n<hr />\n<p><strong>Speciale</strong> Puoi selezionare questo talento fino ad un massimo di cinque volte.</p>",
             "featPrerequisites": {
-                "1": "addestrato in almeno un'abilità ed esperto in almeno un'abilità",
-                "0": "Dedizione dell'Investigatore"
+                "0": "Dedizione dell'Investigatore",
+                "1": "addestrato in almeno un'abilità ed esperto in almeno un'abilità"
             }
         },
         "Craft Anything": {
@@ -7808,7 +7808,7 @@
         },
         "Wild Winds Gust": {
             "name": "Folata dei Venti Impetuosi",
-            "description": "<p><strong>Requisiti</strong> Sei nella <em>@UUID[Compendium.pf2e.spells-srd.SkarN4VlNxSJSJNw]{posizione dei venti impetuosi}</em>.</p>\n<hr />\n<p>Accumuli energia e la sprigioni in un'enorme raffica di vento travolgente. Effettui un Colpo schianto del vento contro ogni creatura entro un @Template[type:cone|distance:9] o una linea di 18 metri, a tua scelta. Ognuno di questi attacchi conta ai fini della penalità da attacchi multipli, ma quest'ultima non aumenta finché non li hai effettuati tutti.</p>",
+            "description": "<p><strong>Requisiti</strong> Sei nella <em>@UUID[Compendium.pf2e.spells-srd.SkarN4VlNxSJSJNw]{posizione dei venti impetuosi}</em>.</p>\n<hr />\n<p>Accumuli energia e la sprigioni in un'enorme raffica di vento travolgente. Effettui un Colpo schianto del vento contro ogni creatura entro un @Template[type:cone|distance:30] o una linea di 18 metri, a tua scelta. Ognuno di questi attacchi conta ai fini della penalità da attacchi multipli, ma quest'ultima non aumenta finché non li hai effettuati tutti.</p>",
             "featPrerequisites": {
                 "0": "Iniziato dei Venti Impetuosi"
             }
@@ -8534,8 +8534,8 @@
         },
         "Preventative Treatment": {
             "featPrerequisites": {
-                "1": "Curare Condizione",
-                "0": "Dedizione del Medico"
+                "0": "Dedizione del Medico",
+                "1": "Curare Condizione"
             }
         },
         "Weapon Improviser Dedication": {
@@ -8603,8 +8603,8 @@
         },
         "Emergency Medical Assistance": {
             "featPrerequisites": {
-                "1": "maestro in Medicina",
-                "0": "Dedizione del Padrone delle Spade"
+                "0": "Dedizione del Padrone delle Spade",
+                "1": "maestro in Medicina"
             }
         },
         "Emberkin": {
@@ -8699,8 +8699,8 @@
         },
         "Fancy Moves": {
             "featPrerequisites": {
-                "1": "esperto in Esibizione",
-                "0": "Dedizione del Gladiatore"
+                "0": "Dedizione del Gladiatore",
+                "1": "esperto in Esibizione"
             }
         },
         "Snap Out Of It! (Pathfinder Agent)": {
@@ -8730,8 +8730,8 @@
         },
         "Tail Spin": {
             "featPrerequisites": {
-                "1": "Coda Possente",
-                "0": "lignaggio goblin con la coda"
+                "0": "lignaggio goblin con la coda",
+                "1": "Coda Possente"
             }
         },
         "Peri Magic": {
@@ -8852,7 +8852,7 @@
                 "0": "Soffio del Coboldo"
             },
             "name": "Soffio del Drago",
-            "description": "<p>Puoi accrescere il tuo Soffio del Coboldo per incanalare un potere draconico maggiore, anche se è più faticoso. Quando usi Soffio del Coboldo, puoi aumentare il dado del danno a d8 e aumentare l'area a @Template[type:line|distance:18]{18 metri} per un soffio lineare o @Template[type:cone|distance:9]{9 metri} per cono. Se lo fai, non puoi usare di nuovo Soffio del Coboldo per 1 ora.</p>\n<p>[[/r (ceil(@actor.level/2))d8]]{Danno Livellato}</p>"
+            "description": "<p>Puoi accrescere il tuo Soffio del Coboldo per incanalare un potere draconico maggiore, anche se è più faticoso. Quando usi Soffio del Coboldo, puoi aumentare il dado del danno a d8 e aumentare l'area a @Template[type:line|distance:60]{18 metri} per un soffio lineare o @Template[type:cone|distance:30]{9 metri} per cono. Se lo fai, non puoi usare di nuovo Soffio del Coboldo per 1 ora.</p>\n<p>[[/r (ceil(@actor.level/2))d8]]{Danno Livellato}</p>"
         },
         "Blood Frenzy": {
             "name": "Frenesia di Sangue"
@@ -8982,7 +8982,7 @@
             }
         },
         "Marshal Dedication": {
-            "description": "<p>Hai combinato le tue abilità sociali e l'addestramento al combattimento per diventare un leader di talento. Scegli Diplomazia o Intimidazione. Diventi addestrato in quell'abilità, o esperto se eri già addestrato.</p>\n<p>Inoltre, sei circondato da un'aura del maresciallo in una @Template[type:emanation|distance:3]. La tua aura ha i tratti emozione, mentale e visivo e conferisce a te e agli alleati all'interno dell'aura bonus di status +1 ai tiri salvezza contro paura.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo del @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.1F84oh5hoG86mZIw]{maresciallo}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Ru4BNABCZ0hUbX7S]{Effetto: Aura del Maresciallo}</p>",
+            "description": "<p>Hai combinato le tue abilità sociali e l'addestramento al combattimento per diventare un leader di talento. Scegli Diplomazia o Intimidazione. Diventi addestrato in quell'abilità, o esperto se eri già addestrato.</p>\n<p>Inoltre, sei circondato da un'aura del maresciallo in una @Template[type:emanation|distance:10]. La tua aura ha i tratti emozione, mentale e visivo e conferisce a te e agli alleati all'interno dell'aura bonus di status +1 ai tiri salvezza contro paura.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo del @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.1F84oh5hoG86mZIw]{maresciallo}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Ru4BNABCZ0hUbX7S]{Effetto: Aura del Maresciallo}</p>",
             "name": "Dedizione del Maresciallo",
             "featPrerequisites": {
                 "0": "addestrato con armi da guerra e in Diplomazia o Intimidazione"
@@ -9583,8 +9583,8 @@
             "description": "<p>Sai come ottenere il massimo sforzo dai tuoi alleati sulla strada.</p>\n<p>Quando ti @UUID[Compendium.pf2e.actionspf2e.JuqmIAnkL9hVGai8]{Affretti} in un gruppo durante la modalità esplorazione, il tuo gruppo può Affrettarsi per un tempo pari a quello del membro che potrebbe Affrettarsi più a lungo da solo, più altri 20 minuti aggiuntivi.</p>",
             "name": "Capo Carovana",
             "featPrerequisites": {
-                "1": "Dettare il Passo",
-                "0": "Costituzione 18"
+                "0": "Costituzione 18",
+                "1": "Dettare il Passo"
             }
         },
         "Orthographic Mastery": {
@@ -10032,7 +10032,7 @@
                 "0": "capacità di lanciare almeno un incantesimo con il tratto oscurità"
             },
             "name": "Scivolare nelle Ombre",
-            "description": "<p>La tua magia d'ombra si diffonde nello spazio intorno a te. Ogni volta che lanci un incantesimo con il tratto oscurità, un'aura persistente di ombre riduce la luce intensa entro un'@Template[type:emanation|distance:1.5] intorno a te a luce fioca fino alla fine del tuo turno. Come nella luce fioca naturale, puoi usare queste ombre per Nasconderti, ma l'aura rende comunque evidente la tua posizione, quindi non puoi diventare @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuato} attraverso il solo uso di queste ombre.</p>"
+            "description": "<p>La tua magia d'ombra si diffonde nello spazio intorno a te. Ogni volta che lanci un incantesimo con il tratto oscurità, un'aura persistente di ombre riduce la luce intensa entro un'@Template[type:emanation|distance:5] intorno a te a luce fioca fino alla fine del tuo turno. Come nella luce fioca naturale, puoi usare queste ombre per Nasconderti, ma l'aura rende comunque evidente la tua posizione, quindi non puoi diventare @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{non individuato} attraverso il solo uso di queste ombre.</p>"
         },
         "Educate Allies": {
             "name": "Educare Alleati",
@@ -10422,7 +10422,7 @@
         },
         "Spell Shroud": {
             "name": "Incantesimo Velato",
-            "description": "<p>Il tuo incantesimo ti avvolge in una nuvola fluttuante. Se la tua prossima azione è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} il cui bersaglio sei tu, ti circondi di una @Template[type:emanation|distance:4.5] di densa nebbia magica che dura fino all'inizio del tuo turno successivo.</p>\n<p>Tutte le creature all'interno della nuvola diventano @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{occultate}, e tutte le creature all'esterno della nuvola sono occultate alle creature al suo interno.</p>"
+            "description": "<p>Il tuo incantesimo ti avvolge in una nuvola fluttuante. Se la tua prossima azione è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} il cui bersaglio sei tu, ti circondi di una @Template[type:emanation|distance:15] di densa nebbia magica che dura fino all'inizio del tuo turno successivo.</p>\n<p>Tutte le creature all'interno della nuvola diventano @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{occultate}, e tutte le creature all'esterno della nuvola sono occultate alle creature al suo interno.</p>"
         },
         "Occult Resistance": {
             "featPrerequisites": {
