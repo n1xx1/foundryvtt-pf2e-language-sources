@@ -8,6 +8,7 @@ import { commandFixItemIds } from "./command-fix-item-ids";
 import { commandUpdate } from "./command-update";
 import { commandUpdateSource } from "./command-update-source";
 import { commandWeblateQuery } from "./command-weblate-query";
+import { commandFixTemplate } from "./command-fix-template";
 
 yargs(hideBin(process.argv))
   .option("directory", {
@@ -80,6 +81,17 @@ yargs(hideBin(process.argv))
     (yargs) => yargs.positional("lang", { type: "string", demandOption: true }),
     async (argv) => {
       await commandFixItemIds(argv.lang, argv.directory);
+    }
+  )
+  .command(
+    "fix-template [lang] [compendium]",
+    "",
+    (yargs) =>
+      yargs
+        .positional("lang", { type: "string", demandOption: true })
+        .positional("compendium", { type: "string", demandOption: true }),
+    async (argv) => {
+      await commandFixTemplate(argv.lang, argv.compendium, argv.directory);
     }
   )
   .strictCommands()
