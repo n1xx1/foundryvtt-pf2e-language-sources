@@ -2569,7 +2569,7 @@
     },
     "Fiery Retort": {
       "name": "Fiery Retort",
-      "description": "<p><strong>Trigger</strong> An opponent adjacent to you hits you with a melee weapon or a melee unarmed attack.</p>\n<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p>Ignoring your pain, you sear your attacker with a wave of flame. The triggering opponent takes fire damage equal to your [[/r @actor.level #fire]]{level}.</p>",
+      "description": "<p><strong>Trigger</strong> An opponent adjacent to you hits you with a melee weapon or a melee unarmed attack.</p>\n<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p>Ignoring your pain, you sear your attacker with a wave of flame. The triggering opponent takes [[/r @actor.level[fire]]]{fire damage} equal to your level.</p>",
       "featPrerequisites": {
         "0": "flame order"
       }
@@ -21325,7 +21325,7 @@
     },
     "Constricting Hold": {
       "name": "Constricting Hold",
-      "description": "<p><strong>Requirements</strong> Your eidolon has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<p>Your eidolon constricts the creature, dealing [[/r @actor.level+@actor.abilities.str.mod #bludgeoning]]{bludgeoning damage} equal to your eidolon's level plus its Strength modifier, with a basic Fortitude save against your spell DC.</p>"
+      "description": "<p><strong>Requirements</strong> Your eidolon has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<p>Your eidolon constricts the creature, dealing [[/r (@actor.level+@actor.abilities.str.mod)[bludgeoning]]]{bludgeoning damage} equal to your eidolon's level plus its Strength modifier, with a basic Fortitude save against your spell DC.</p>"
     },
     "Denier of Destruction": {
       "name": "Denier of Destruction",
@@ -22180,7 +22180,7 @@
     },
     "Quill Spray": {
       "name": "Quill Spray",
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can launch a mass of quills at opponents. You spray quills in a @Template[type:cone|distance:30], dealing [[/r 5d8[piercing]]] damage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. On a critical failure, a creature also takes [[/r 5[bleed]]] damage. At 11th level and every even level thereafter, the piercing damage increases by 1d8 and the persistent bleed damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Leveled} piercing damage</p>\n<p>[[/r (ceil(@actor.level/2))[bleed]]]{Leveled} damage</p>\n<hr />\n<p><em><strong>Note</strong> The feat does not specify the type of saving throw required. A reflex saving throw had been added, in line with Barbed Quills.</em></p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can launch a mass of quills at opponents. You spray quills in a @Template[type:cone|distance:30], dealing 5d8 piercing damage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. On a critical failure, a creature also takes 5 persistent bleed damage. At 11th level and every even level thereafter, the piercing damage increases by 1d8 and the persistent bleed damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{Leveled Piercing Damage}</p>\n<p>[[/r (ceil(@actor.level/2))[bleed]]]{Leveled Bleed Damage}</p>\n<hr />\n<p><em><strong>Note</strong> The feat does not specify the type of saving throw required. A reflex saving throw has been added, in line with Barbed Quills.</em></p>",
       "featPrerequisites": {
         "0": "quillcoat shisk or quill unarmed attack"
       }

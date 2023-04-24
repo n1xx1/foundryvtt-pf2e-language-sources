@@ -175,7 +175,7 @@
     },
     "Anadi Venom": {
       "name": "Anadi Venom",
-      "description": "<p><strong>Frequency</strong> a number of times per day equal to your level</p>\n<hr />\n<p>You envenom your fangs. If the next fangs Strike you make before the end of your turn hits and deals damage, the Strike deals an additional [[/r 1d6[poison]]] damage. On a critical failure, the poison is wasted as normal. At 12th level, this poison damage increases to 2d6.</p>\n<p>[[/r (1+(floor(@actor.level/12)))d6 #poison]]{Leveled} poison damage</p>"
+      "description": "<p><strong>Frequency</strong> a number of times per day equal to your level</p>\n<hr />\n<p>You envenom your fangs. If the next fangs Strike you make before the end of your turn hits and deals damage, the Strike deals an additional 1d6 poison damage. On a critical failure, the poison is wasted as normal. At 12th level, this poison damage increases to 2d6.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.gN1LbKYQgi8Fx98V]{Effect: Anadi Venom}</p>"
     },
     "Armor Up!": {
       "name": "Armor Up!",
@@ -1091,7 +1091,7 @@
     },
     "Toxic Skin": {
       "name": "Toxic Skin",
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature touches you, such as by Grappling you, successfully hitting you with an unarmed attack, or using a touch-range spell against you.</p>\n<hr />\n<p>You exude a deadly toxin. The triggering creature takes [[/r 1d4[poison]]] damage (@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison] using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r ceil(@actor.level/2)d4 #poison]]{Leveled} poison damage</p>"
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature touches you, such as by Grappling you, successfully hitting you with an unarmed attack, or using a touch-range spell against you.</p>\n<hr />\n<p>You exude a deadly toxin. The triggering creature takes 1d4 poison damage (@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison] using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r ceil(@actor.level/2)d4[poison]]]{Leveled Poison Damage}</p>"
     },
     "Squeeze": {
       "name": "Squeeze",
