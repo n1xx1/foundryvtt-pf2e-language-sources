@@ -5945,12 +5945,43 @@
                 "BoneShard": "Scheggia d'osso",
                 "TentacleArm": "Braccio con tentacolo",
                 "LavaFist": "Pugno di lava",
-                "Sunbeam": "Raggio solare"
+                "Sunbeam": "Raggio solare",
+                "AqueousFist": "Pugno Acqueo",
+                "LightningLash": "Sferzata Folgorante",
+                "Web": "Ragnatela"
             },
             "Note": {
                 "GrabbingTrunk": {
                     "Title": "Proboscide Afferrante"
-                }
+                },
+                "Grab": "Puoi spendere un'azione immediatamente dopo un colpo per @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Afferrare} il bersaglio",
+                "Shove": "Puoi spendere un'azione immediatamente dopo un colpo per spintonare il bersaglio di 1,5 metri con gli effetti di @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Spintonare}"
+            },
+            "InsectForm": {
+                "SpiderWebNote": "Un successo di un attacco di Ragnatela intralcia il bersaglio per 1 round, ma non infligge danni"
+            },
+            "OozeForm": {
+                "GelatinousCubeNote": "Una creatura colpita da un Colpo della tua faccia del cubo deve superare un tiro salvezza su @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation] contro la tua CD di incantesimo o essere @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordita 1} (o @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{paralizzata} per 1 round con un fallimento critico); questo tiro salvezza ha il tratto incapacitazione."
+            },
+            "AberrantForm": {
+                "GugSqueezeNote": "Le tue articolazioni multiple ti consentono di insinuarti negli spazi stretti come se fossi una creatura Media."
+            },
+            "AngelForm": {
+                "DeafenedNote": "@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Assordato} per 1 round con un colpo critico"
+            },
+            "CosmicForm": {
+                "MoonNote": "Il bersaglio è @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottito 2} per 1 round.",
+                "SunNote": "Il bersaglio è @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round."
+            },
+            "DaemonForm": {
+                "CeustodaemonDamageNote": "Qualsiasi Colpo riuscito con fauci o artiglio infligge [[/r {1d6}]]{1d6 danni} addizionali, e tu subisci lo stesso ammontare di danni"
+            },
+            "ElementEmbodied": {
+                "WaterPushPullNote": "Più @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl]{Spintonare} o Tirare 3 metri",
+                "AirPushNote": "Più @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl]{Spintonare} 3 metri"
+            },
+            "MonstrosityForm": {
+                "ShroudOfFlame": "Strato di Fiamme"
             }
         },
         "RuleElement": {
@@ -6161,7 +6192,10 @@
             "VsMagic": "Contro gli Effetti Magici",
             "VsMental": "Contro gli Effetti Mentali",
             "Underwater": "Sott'Acqua",
-            "AgainstDemons": "Contro i Demoni"
+            "AgainstDemons": "Contro i Demoni",
+            "DisableADevice": "A Disattivare un Congegno",
+            "EscapeForceOpenOrLift": "Per Sollevare Oggetti Pesanti, Forzare e Sfuggire",
+            "ForceOpenGrappleShoveOrTrip": "Ad Afferrare, Forzare, Sbilanciare e Spintonare"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -6522,7 +6556,9 @@
                 "LongVines": "Lunghi Rampicanti",
                 "ElementalMatter": "Materia Elementale",
                 "Wings": "Ali",
-                "WildClaws": "Artigli Feroci"
+                "WildClaws": "Artigli Feroci",
+                "PromptTwo": "Seleziona una seconda morfosi.",
+                "PromptThree": "Seleziona una terza morfosi."
             },
             "Witch": {
                 "Patron": {
@@ -7242,6 +7278,10 @@
             "FreezingAmmunition": {
                 "Text": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:19] o essere @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} per 1 round a causa del freddo intenso (rallentato 1 per 1 minuto in caso di fallimento critico).",
                 "Title": "Munizione Congelante"
+            },
+            "ShiningAmmunition": {
+                "Text": "La munizione fa luce intensa in un raggio di 6 metri (e luce fioca nei successivi 6 metri) per 10 minuti. Se colpisce un bersaglio, essa vi si attacca facendo in modo che il bersaglio stesso emetta luce nello stesso raggio. @UUID[Compendium.pf2e.equipment-effects.Sf6UO6vgCeicggOK]{Effetto: Munizione Luminescente}",
+                "Title": "Munizione Luminescente"
             }
         }
     },
