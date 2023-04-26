@@ -697,7 +697,7 @@
                     "NoSkill": "L'azione Sopravvivere può essere usata con abilità diverse, ma non ne è stata specificata nessuna. Questa abilità è solitamente Società se sei in un insediamento o Sopravvivenza se sei in mezzo alla natura."
                 },
                 "Title": "Sopravvivere",
-                "Description": "<p>Cerchi di trovare cibo e riparo, per te stesso e per altri. Di solito si usa Società se sei in un insediamento o Sopravvivenza se sei nella natura selvaggia. Il GM determina la CD in base alla natura del posto dove stai cercando di Sopravvivere. In ambienti particolarmente strani potresti aver bisogno di un grado di competenza minima. Diversamente dalla maggior parte delle altre attività di pausa, puoi Sopravvivere dopo 8 ore o meno di esplorazione, ma, se lo fai, subisci penalità -5.</p><p><strong>Successo Critico</strong> Puoi fornire a te e a un'altra creatura uno stile di vita di sussistenza, oppure puoi migliorare il tuo cibo e il tuo riparo, concedendoti uno stile di vita confortevole.<br><strong>Successo</strong> Trovi cibo a sufficienza e un rifugio che ti protegge dagli elementi, concedendoti uno stile di vita di sussistenza.<br><strong>Fallimento</strong> Sei esposto agli elementi e non hai abbastanza cibo, e sei @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{affaticato} finché non hai cibo a sufficienza e un riparo.<br><strong>Fallimento Critico</strong> Attiri problemi, mangi qualcosa che non avresti dovuto o peggiori in qualche altro modo la situazione. Subisci penalità di circostanza -2 alle prove di Sopravvivere per 1 settimana. Non trovi cibo e, se non hai delle scorte e continui a fallire la prova, rischi di morire di fame o di sete.</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Sopravvivere</h2><p><strong>Senza addestramento </strong>foresta rigogliosa con clima temperato o grande città con molte risorse</p><p><strong>Addestrato</strong> collina tipica o paese</p>\n<p><strong>Esperto</strong> montagna tipica o villaggio isolato</p><p><strong>Maestro</strong> deserto tipico o città sotto assedio</p><p><strong>Leggendario</strong> desolazione arida o città di non morti</p>"
+                "Description": "<p>Cerchi di trovare cibo e riparo, per te stesso e per altri. Di solito si usa Società se sei in un insediamento o Sopravvivenza se sei nella natura selvaggia. Il GM determina la CD in base alla natura del posto dove stai cercando di Sopravvivere. In ambienti particolarmente strani potresti aver bisogno di un grado di competenza minima. Diversamente dalla maggior parte delle altre attività di pausa, puoi Sopravvivere dopo 8 ore o meno di esplorazione, ma, se lo fai, subisci penalità -5.</p><p><strong>Successo Critico</strong> Puoi fornire a te e a un'altra creatura uno stile di vita di sussistenza, oppure puoi migliorare il tuo cibo e il tuo riparo, concedendoti uno stile di vita confortevole.<br><strong>Successo</strong> Trovi cibo a sufficienza e un rifugio che ti protegge dagli elementi, concedendoti uno stile di vita di sussistenza.<br><strong>Fallimento</strong> Sei esposto agli elementi e non hai abbastanza cibo, e sei affaticato finché non hai cibo a sufficienza e un riparo.<br><strong>Fallimento Critico</strong> Attiri problemi, mangi qualcosa che non avresti dovuto o peggiori in qualche altro modo la situazione. Subisci penalità di circostanza -2 alle prove di Sopravvivere per 1 settimana. Non trovi cibo e, se non hai delle scorte e continui a fallire la prova, rischi di morire di fame o di sete.</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Sopravvivere</h2><p><strong>Senza addestramento </strong>foresta rigogliosa con clima temperato o grande città con molte risorse</p><p><strong>Addestrato</strong> collina tipica o paese</p><p><strong>Esperto</strong> montagna tipica o villaggio isolato</p><p><strong>Maestro</strong> deserto tipico o città sotto assedio</p><p><strong>Leggendario</strong> desolazione arida o città di non morti</p>"
             },
             "ConcealAnObject": {
                 "Title": "Nascondere un Oggetto",
@@ -6537,6 +6537,9 @@
                 "ChosenOfLamashtu": {
                     "AllowedDrops": "lignaggio goblin",
                     "Prompt": "Seleziona un lignaggio goblin."
+                },
+                "ScaldingSpit": {
+                    "BoilingSpit": "Sputo Bollente"
                 }
             },
             "VirtuosicPerformer": {
@@ -6889,6 +6892,9 @@
                 },
                 "StunningFist": {
                     "Note": "Il bersaglio deve superare un tiro salvezza su @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|traits:incapacitation|overrideTraits:true] contro la tua CD di classe, altrimenti diventa @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 1} (o @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 3} in caso di fallimento critico)."
+                },
+                "WolfDrag": {
+                    "Note": "Se l'attacco ha successo getti a terra il bersaglio, che finisce @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prono}."
                 }
             },
             "PackAttack": {
@@ -7053,11 +7059,25 @@
             },
             "Marshal": {
                 "DreadMarshalStance": {
-                    "Note": "Quando ottieni un successo critico contro un nemico con un Colpo, quel nemico è @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato 1}."
+                    "Note": "Quando ottieni un successo critico contro un nemico con un Colpo, quel nemico è @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato 1}.",
+                    "Title": "Aura del Maresciallo Terrificante"
                 }
             },
             "SteadyBalance": {
                 "Note": "I successi ottenuti usando l'azione Bilanciarsi diventano successi critici."
+            },
+            "CorrosiveBody": {
+                "Note9th": "La prima volta ogni round che infliggi danni da acido a una creatura in tal modo, ottieni [[/r 5d6 #Punti Ferita Temporanei]]{3d6 PF temporanei}",
+                "Note": "La prima volta ogni round che infliggi danni da acido a una creatura in tal modo, ottieni [[/r 3d6 #Punti Ferita Temporanei]]{3d6 PF temporanei}"
+            },
+            "Ifrit": {
+                "Lavasoul": {
+                    "MagmaSpikeCriticalSpecialization": "Invece del normale Effetto di Specializzazione del Critico, il bersaglio subisce [[/r 1d6[persistent,fire]]]{1d6 danni da fuoco persistenti}; ottieni un bonus a questi danni persistenti pari al tuo bonus di oggetto ai tiri per colpire con gli attacchi senz'armi.",
+                    "MagmaSpike": "Spuntoni Magmatici"
+                }
+            },
+            "FanesFourberie": {
+                "Prompt": "Tratta le Carte come pugnali o dardi?"
             }
         },
         "AreaTypeCube": "Cubo",
