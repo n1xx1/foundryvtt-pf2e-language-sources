@@ -5440,7 +5440,8 @@
                     "description": "<p>Ogni volta che il krooth è danneggiato da un colpo critico, ottiene bonus di status +2 ai tiri per colpire e ai tiri per i danni fino alla fine del suo turno successivo. Finché questa frenesia dura, il krooth non può usare reazioni.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.tJx9B2e3AET6PbJD]{Effetto: Frenesia del Dolore}</p>"
                 },
                 "QRArjmTp1QFxOrMG": {
-                    "name": "Dente Avvelenato"
+                    "name": "Dente Avvelenato",
+                    "description": "<p><strong>Requisiti</strong> Il krooth ha danneggiato una creatura con le sue fauci nella sua azione più recente in questo turno.</p>\n<hr />\n<p><strong>Effetto</strong> Il krooth spezza uno dei suoi denti, che rimane nella creatura che ha colpito. La creatura subisce [[/r 1d6[bleed]]]{1d6 danni da sanguinamento persistenti} ed è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 1}. Nessuno di questi effetti può essere curato finché il dente rimane. Per rimuovere il dente senza rischi è necessario superare una prova per @UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Prestare Primo Soccorso} con CD 26. Invece di terminare il sanguinamento o stabilizzare, questa prova rimuove la condizione risucchiato, ma non termina automaticamente i danni da sanguinamento.</p>"
                 },
                 "dmZlzmRsiydMPknc": {
                     "name": "Attacco di Opportunità (Solo Coda)",
@@ -5574,7 +5575,8 @@
                     "name": "Artiglio"
                 },
                 "9RDkmFyfywWSOj2V": {
-                    "name": "Soffio"
+                    "name": "Soffio",
+                    "description": "<p>La chimera soffia un @Template[type:cone|distance:30]{cono di veleno di 9 metri} che infligge [[/r 9d6[poison]]]{9d6 danni} a tutte le creature nell'area (TS @Check[type:fortitude|dc:26|basic:true]).</p>\n<p>La chimera non può usare di nuovo il Soffio per [[/br 1d4 #Ricarica Soffio]]{1d4 round}.</p>"
                 },
                 "7CQGpLGBAg2Jbtjv": {
                     "name": "Tre Teste",
@@ -5585,7 +5587,8 @@
                     "description": "<p>Una chimera ottiene ogni round 2 reazioni extra che può usare soltanto per effettuare Attacchi di Opportunità. Deve usare una testa diversa per ogni reazione e non può usarne più una nella stessa azione innescante. Se perde una delle sue teste, perde anche una di queste reazioni extra.</p>"
                 },
                 "8PkUYYXKF3YdJiBM": {
-                    "name": "Morso Draconico"
+                    "name": "Morso Draconico",
+                    "description": "<p>Una testa di drago verde di una chimera infligge [[/r 2d6[poison]]]{danni da veleno} aggiuntivi <em>(già inclusi)</em>.</p>"
                 },
                 "p4gHmixTKN3Gb87J": {
                     "name": "Fauci del Drago"
@@ -5614,7 +5617,16 @@
                     "name": "Mandibole"
                 },
                 "nmSxnKrk324bG1w4": {
-                    "name": "Colpo Improvviso"
+                    "name": "Colpo Improvviso",
+                    "description": "<p>Nel primo round di combattimento, le creature che non hanno agito sono @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparate} nei confronti della mantide gigante.</p>"
+                },
+                "c8cI240EHdwf8MM1": {
+                    "description": "<p><strong>Innesco</strong> La mantide gigante @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Afferra} una creatura con la sua zampa.</p>\n<hr />\n<p><strong>Effetto</strong> La mantide tira la creatura adiacente a sé, poi effettua un Colpo con le mandibole contro di essa.</p>",
+                    "name": "Mandibole Letali"
+                },
+                "yEhFyHlybvFRrc0k": {
+                    "name": "Colpo con Affondo",
+                    "description": "<p>La mantide gigante affonda in avanti ed effettua un Colpo con la zampa con una portata estesa di 6 metri.</p>"
                 }
             },
             "name": "Mantide Gigante",
@@ -7026,7 +7038,7 @@
             "description": "<p>L’abbondanza di cibo, l’improvvisa schiusa di una nidiata di uova o un’influenza magica possono indurre i ragni più piccoli a formare ammassi letali e terrificanti.</p>\n<hr />\n<p>Pochi parassiti comuni ispirano terrore quanto i famigerati ragni.</p>",
             "items": {
                 "NIgj8uAlgosxMdVf": {
-                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:14]</p>\n<p><strong>Durata Massima</strong> 4 round</p>\n<p><strong>Fase 1</strong> [[/r 1 #poison]]{1 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 round)</p>\n<p><strong>Fase 2</strong> [[/r 1d4[poison]]]{1d4 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 round).</p>",
+                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:14]</p>\n<p><strong>Durata Massima</strong> 4 round</p>\n<p><strong>Fase 1</strong> [[/r 1[poison]]]{1 danno da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 round)</p>\n<p><strong>Fase 2</strong> [[/r 1d4[poison]]]{1d4 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 round).</p>",
                     "name": "Veleno dello Sciame di Ragni"
                 },
                 "bmmCoxENGAgHtWP1": {
@@ -8006,10 +8018,12 @@
                     "name": "Bomba"
                 },
                 "TpEz65tv1dwJ91cy": {
-                    "name": "Camere Alchemiche"
+                    "name": "Camere Alchemiche",
+                    "description": "<p>Il corpo di un golem alchemico contiene sei camere alchemiche piene di sostanze diverse. Quando una capacità del golem alchemico richiede un effetto alchemico da determinare casualmente, si tira 1d6 e si consulta la tabella seguente: (se si ottiene il risultato di una camera già infranta, non c'è nessun effetto alchemico):</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br 1d6 #Camere Alchemiche]]{1d6}</th>\n<th>Effetto Alchemico</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>Danni da Acido</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Danni da Freddo</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Danni da Elettricità</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Danni da Fuoco</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Danni da Veleno</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nauseato: TS @Check[type:fortitude|dc:26|name:Nausea Alchemica|traits:disease] o @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 2} in caso di fallimento critico)</td>\n</tr>\n</tbody>\n</table>"
                 },
                 "N0g5xdIF3LC3JDxP": {
-                    "name": "Rottura Alchemica"
+                    "name": "Rottura Alchemica",
+                    "description": "<p>Quando un golem alchemico subisce danni fisici da un colpo critico o è influenzato da un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{frantumare}</em>, una camera di vetro all'interno del suo corpo si infrange e riversa liquido alchemico in un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri}.</p>\n<p>Si tira sulla lista delle camere alchemiche per determinare quale si infrange: con un risultato di 1-5, le creature nell'area subiscono [[/r {10d6}]]{10d6 danni} del tipo appropriato (@Check[type:reflex|dc:28|basic:true]). Con un risultato di 6, le creature devono invece effettuare un TS contro l'effetto di nausea.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br 1d6 #Rottura Alchemica]]{1d6}</th>\n<th>Effetto Alchemico</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>[[/r 10d6[acid]]]{10d6 danni da acido} @Check[type:reflex|dc:28|basic:true|traits:acid]</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>[[/r 10d6[cold]]]{10d6 danni da freddo} @Check[type:reflex|dc:28|basic:true|traits:cold]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>[[/r 10d6[electricity]]]{10d6 danni da elettricità} @Check[type:reflex|dc:28|basic:true|traits:electricity]</td>\n</tr>\n<tr>\n<td>4</td>\n<td>[[/r 10d6[fire]]]{10d6 danni da fuoco} @Check[type:reflex|dc:28|basic:true|traits:fire]</td>\n</tr>\n<tr>\n<td>5</td>\n<td>[[/r 10d6[poison]]]{10d6 danni da veleno} @Check[type:reflex|dc:28|basic:true|traits:poison]</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nauseato: TS @Check[type:fortitude|dc:26|name:Nausea Alchemica|traits:disease] o @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 2} in caso di fallimento critico)</td>\n</tr>\n</tbody>\n</table>"
                 },
                 "pOtIHukgdOyL8rMp": {
                     "name": "Anti-Magia dei Golem",
@@ -8023,7 +8037,8 @@
                     "name": "Generare Bomba"
                 },
                 "ahtVNJjKjna3LTc1": {
-                    "name": "Iniezione Alchemica"
+                    "name": "Iniezione Alchemica",
+                    "description": "<p>Quando un golem alchemico colpisce una creatura con un Colpo con la siringa, si tira 1d6 sulla lista delle camere alchemiche per determinare l'effetto aggiuntivo dell'attacco. La siringa infligge [[/r {2d6}]]{2d6 danni} aggiuntivi del tipo appropriato (o espone il bersaglio all'effetto di nausea, come appropriato).</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br 1d6 #Iniezione Alchemica]]{1d6}</th>\n<th>Effetto Alchemico</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>[[/r 2d6[acid]]]{2d6 danni da acido}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>[[/r 2d6[cold]]]{2d6 danni da freddo}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>[[/r 2d6[electricity]]]{2d6 danni da elettricità}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>[[/r 2d6[fire]]]{2d6 danni da fuoco}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>[[/r 2d6[poison]]]{2d6 danni da veleno}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Nauseato: TS @Check[type:fortitude|dc:26|name:Nausea Alchemica|traits:disease] o @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 2} in caso di fallimento critico)</td>\n</tr>\n</tbody>\n</table>"
                 },
                 "deSS0MPuciBz6LLK": {
                     "name": "Siringa"
@@ -8574,16 +8589,24 @@
                     "name": "Fiuto (impreciso) 9 metri"
                 },
                 "y03xyojSlEvE4nQh": {
-                    "name": "Frenesia Draconica"
+                    "name": "Frenesia Draconica",
+                    "description": "<p>Il draco di deserto effettua due Colpi con le zanne e un Colpo con la coda in qualsiasi ordine.</p>"
                 },
                 "63a8hHsiAUlNCTdu": {
-                    "name": "Attaccante Improvviso"
+                    "name": "Attaccante Improvviso",
+                    "description": "<p>Nel primo round di combattimento, le creature che ancora non hanno agito sono @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparate} nei confronti del draco di deserto.</p>"
                 },
                 "W1EiRfnWuUIq6KoC": {
-                    "name": "Impeto di Velocità"
+                    "name": "Impeto di Velocità",
+                    "description": "<p>Il draco di deserto si muove fino al doppio della sua Velocità. Può farlo per tre volte al giorno.</p>"
                 },
                 "KddvbFPsHJAfqGAc": {
-                    "name": "Deviazione d'Ala"
+                    "name": "Deviazione d'Ala",
+                    "description": "<p><strong>Innesco</strong> Il draco di deserto è bersagliato da un attacco.</p>\n<hr />\n<p><strong>Effetto</strong> Il drago alza la sua ala e ottiene bonus di circostanza +2 a CA contro l'attacco innescante. Se il drago sta volando, scende di 3 metri dopo che l'attacco è stato completato.</p>"
+                },
+                "AzIejcCA4nY9zlmB": {
+                    "name": "Soffio di Tempesta di Sabbia",
+                    "description": "<p>Il draco di deserto sputa una palla di sabbia elettrificata fino a una gittata di 18 metri che genera un'@Template[type:burst|distance:15]{esplosione del raggio di 4,5 metri}, diffondendo una nube. Le creature nell'area subiscono [[/r 9d6[electricity]]]{9d6 danni da elettricità} (TS @Check[type:reflex|dc:27|basic:true]). La nube rimane per [[/br 1d4 #Durata Tempesta di Sabbia]]{1d4 round} e conferisce @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{occultamento} a tutto ciò che si trova al suo interno.</p>\n<p>Il draco di deserto non può usare di nuovo soffio di tempesta di sabbia per [[/br 1d6 #Ricarica Soffio di Tempesta di Sabbia]]{1d6 round}.</p>"
                 }
             },
             "description": "<p>I drachi di deserto, lontani cugini dei Draghi Blu, non possiedono le capacità magiche e l'intelligenza dei loro parenti maggiori, ma restano comunque dei predatori pericolosi che attaccano i viaggiatori e gli avamposti più isolati per ottenere cibo e rifornimenti. Hanno conservato la resistenza all'elettricità e l'affinità con gli ambienti sabbiosi dei loro antenati purosangue. I colori delle scaglie dei drachi di deserto replicano quelli del loro ambiente naturale e variano dal marrone-ruggine al beige e all'ocra.</p>\n<p>Quelli di deserto sono tra i drachi più leggeri e compatti, ma sarebbe un errore considerarli creature fragili. Hanno sviluppato loro corna ripiegate all'indietro e le loro ali sottili come piume per scavare cunicoli con più facilità. Grazie al suo potente collo, per un draco di deserto serpeggiare sotto la sabbia o altri materiali friabili è semplice quanto camminare.</p>\n<hr />\n<p>Famelici, bestiali e guidati dall'istinto: i drachi sono primitivi mostri draconici dotati di una frazione del terrificante potere dei loro cugini maggiori, ma di una parte pressoché nulla della loro astuzia. Anche se sono più deboli, più lenti e meno inclini al ragionamento dei draghi, i drachi rappresentano comunque una minaccia per le creature e gli insediamenti che si trovano nelle loro vicinanze. La loro propensione a formare dei gruppi d'assalto (piccole compagini sociali chiamate appunto \"furie\") li rende molto più pericolosi; una singola furia di drachi di fiume è in grado di distruggere un intero villaggio nel giro di poco tempo e le furie vaganti dei drachi di deserto sono un flagello per tutte le carovane di mercanti.</p>\n<p>I drachi condividono numerose caratteristiche fisiche che li accomunano in un'unica specie, nonostante la grande varietà di territori e di capacità che li caratterizza. Per esempio, i drachi sono privi di zampe anteriori e per attaccare a distanza ravvicinata possono contare solo sulle loro formidabili mandibole e su una possente coda scagliosa. La maggior parte dei drachi cerca di evitare i combattimenti ravvicinati e preferisce usare il soffio in volo, per seminare scompiglio in una zona più ampia da una distanza più sicura. Infine, tutti i drachi possiedono una piccola riserva del loro potere draconico ancestrale, a cui possono attingere per agire a velocità straordinaria.</p>",
@@ -8626,7 +8649,8 @@
                     "description": "<p>@Check[type:reflex|dc:15] @Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
                 },
                 "CyJqBVfPXX4Fp283": {
-                    "name": "Galoppo"
+                    "name": "Galoppo",
+                    "description": "<p>Il pony da sella Avanza due volte. Ottiene bonus di circostanza +3 metri alla sua Velocità durante queste Avanzate.</p>"
                 }
             },
             "description": "<p>I cavalli fungono da cavalcature e bestie da soma in molte società. Sono creature fedeli e solitamente gentili e sono una risorsa preziosa per chi deve percorrere lunghe distanze. Le razze più piccole, come gli gnomi e gli halfling, usano spesso i pony come cavalcature, mentre i cavalli sono i destrieri preferiti degli umani e gli altri umanoidi Medi. La maggior parte dei cavalli che gli umanoidi comuni incontrano sono addomesticati, ma è possibile trovare anche grandi mandrie di questi potenti animali allo stato brado.</p>",
