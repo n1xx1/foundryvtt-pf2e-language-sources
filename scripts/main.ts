@@ -41,6 +41,10 @@ yargs(hideBin(process.argv))
           description: "only filter some compendiums to update",
           alias: "f",
           type: "array",
+        })
+        .option("dry", {
+          description: "dry run",
+          type: "boolean",
         }),
     async (argv) => {
       const token = argv.token ?? process.env.WEBLATE_TOKEN ?? "";
@@ -52,6 +56,7 @@ yargs(hideBin(process.argv))
       await commandUpdateSource(
         argv.directory,
         token,
+        argv.dry ?? false,
         argv.filter?.map((x) => x.toString()) ?? []
       );
     }

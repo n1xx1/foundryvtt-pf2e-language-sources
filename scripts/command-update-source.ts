@@ -9,11 +9,12 @@ type EntriesWithSource = (EntryHazard | EntryNPC | EntryItem)[];
 export async function commandUpdateSource(
   systemDir: string,
   weblateToken: string,
+  dry: boolean,
   filter: string[]
 ) {
   const api = createWeblateApi(weblateToken, "https://weblate.n1xx1.me/api");
 
-  const manifest = await readManifest(join(systemDir, "system.json"));
+  const manifest = await readManifest(join(systemDir, "static", "system.json"));
   const [allPacks] = await readSystemFiles(systemDir, manifest);
 
   const toTranslate: [name: string, pack: string][] = [
@@ -54,7 +55,8 @@ export async function commandUpdateSource(
       name,
       packName,
       pack.entries as EntriesWithSource,
-      api
+      api,
+      dry
     );
   }
 }
@@ -63,7 +65,8 @@ async function translateSource(
   weblateName: string,
   packName: string,
   data: EntriesWithSource,
-  weblate: WeblateApi
+  weblate: WeblateApi,
+  dry: boolean
 ) {
   console.log(`Processing pack ${packName} into component ${weblateName}`);
 
@@ -84,32 +87,33 @@ async function translateSource(
 
     const origin: any = dataMap.get(name) ?? {};
 
-    if (part.startsWith("items.")) {
-      const itemMatch = part.match(/^items\.([^\.])+\.(.*)$/)!;
-      if (itemMatch) {
-        const [, itemId, field] = itemMatch;
-        const item =
-          origin.items?.find((item: any) => item._id === itemId) ?? {};
+    // if (part.startsWith("items.")) {
+    //   const itemMatch = part.match(/^items\.([^\.])+\.(.*)$/)!;
+    //   if (itemMatch) {
+    //     const [, itemId, field] = itemMatch;
+    //     const item =
+    //       origin.items?.find((item: any) => item._id === itemId) ?? {};
 
-        const itemSource: string =
-          item.system?.source?.value ??
-          item.system?.details?.source?.value ??
-          "";
+    //     const itemSource: string =
+    //       item.system?.source?.value ??
+    //       item.system?.details?.source?.value ??
+    //       "";
 
-        if (itemSource) {
-          await applySourceTag(itemSource, unit, weblate);
-          continue;
-        }
-      }
-    }
+    //     if (itemSource) {
+    //       await applySourceTag(itemSource, unit, weblate, dry);
+    //       continue;
+    //     }
+    //   }
+    // }
 
-    console.log(name, origin);
+    // console.log(name, origin);
+
     const source: string =
       origin.system?.source?.value ??
       origin.system?.details?.source?.value ??
       "";
     if (source) {
-      await applySourceTag(source, unit, weblate);
+      await applySourceTag(source, unit, name, weblate, dry);
     }
   }
 }
@@ -117,7 +121,9 @@ async function translateSource(
 async function applySourceTag(
   source: string,
   unit: WeblateUnit,
-  weblate: WeblateApi
+  name: string,
+  weblate: WeblateApi,
+  dry: boolean
 ) {
   const tag = getRealTag(source);
 
@@ -131,7 +137,9 @@ async function applySourceTag(
   }
 
   try {
-    await weblate.patch(`/units/${unit.id}/`, { labels: [tag] });
+    if (!dry) {
+      await weblate.patch(`/units/${unit.id}/`, { labels: [tag] });
+    }
     console.log(`Set label ${tag} on ${unit.id} (${unit.context})`);
   } catch (e) {
     console.log(`Failed to set label ${tag} on ${unit.id} (${unit.context})`);

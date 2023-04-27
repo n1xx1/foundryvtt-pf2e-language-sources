@@ -62,7 +62,7 @@ export const sourceState: Record<string, SourceState> = {
     name: "Secrets of Magic",
     type: "core",
     source: ["Secrets of Magic", "Pathfinder Secrets of Magic"],
-    language: [],
+    language: ["it"],
   },
   "guns-and-gears": {
     name: "Guns & Gears",
@@ -89,7 +89,7 @@ export const sourceState: Record<string, SourceState> = {
   "treasure-vault": {
     name: "Treasure Vault",
     type: "core",
-    source: [],
+    source: ["Pathfinder Treasure Vault"],
     language: [],
   },
   "rage-of-elements": {
@@ -195,7 +195,7 @@ export const sourceState: Record<string, SourceState> = {
   firebrands: {
     name: "Lost Omens: Firebrands",
     type: "lost-omens",
-    source: [],
+    source: ["Pathfinder Lost Omens: Firebrands"],
     language: [],
   },
   highhelm: {
@@ -532,13 +532,13 @@ export const sourceState: Record<string, SourceState> = {
   gatewalkers2: {
     name: "Gatewalkers",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #188: They Watched the Stars"],
     language: [],
   },
   gatewalkers3: {
     name: "Gatewalkers",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #189: Dreamers of the Nameless Spires"],
     language: [],
   },
   kingmaker: {
@@ -548,6 +548,15 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder Kingmaker Player's Guide",
       "Pathfinder Kingmaker",
       "Kingmaker Adventure Path",
+    ],
+    language: [],
+  },
+  "stolen-fate1": {
+    name: "Stolen Fate",
+    type: "adventure-path",
+    source: [
+      "Pathfinder: Stolen Fate Player's Guide",
+      "Pathfinder #190: The Choosing",
     ],
     language: [],
   },
@@ -687,6 +696,7 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder Society Scenario #1-23: The Star-Crossed Court",
       "Pathfinder Society Scenario #1-24: Lightning Strikes, Stars Fall",
       "Pathfinder Society Scenario #2-22: Breaking the Storm: Excising Ruination",
+      "Pathfinder Society Scenario #4-11: Prisoners of the Electric Castle",
       "PFS Quest #5: The Dragon Who Stole Evoking Day",
       "Pathfinder Society Quest #5: The Dragon Who Stole Evoking Day",
       "Pathfinder Society Quest #10: The Broken Scales",
