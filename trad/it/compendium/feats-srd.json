@@ -885,7 +885,8 @@
         },
         "Hallowed Necromancer Dedication": {
             "featPrerequisites": {
-                "0": "allineamento buono"
+                "0": "allineamento buono",
+                "3": "esperto in Religione"
             }
         },
         "Elucidating Mercy": {
@@ -3437,12 +3438,18 @@
         },
         "Gruesome Strike": {
             "featPrerequisites": {
-                "0": "precetti del male"
-            }
+                "0": "precetti del male",
+                "1": "reazione del campione che conferisce danni extra con i tuoi Colpi"
+            },
+            "name": "Colpo Raccapricciante",
+            "description": "<p><strong>Requisiti</strong> I tuoi Colpi attualmente infliggono danni extra a causa della tua reazione del campione.</p>\n<hr />\n<p>Effettua un Colpo contro la creatura che ha innescato la tua reazione del campione. Se vai a segno, il bersaglio subisce il doppio dei danni extra causati dalla tua reazione e deve superare un tiro salvezza su Tempra contro la tua CD di classe o essere @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiato 1}.</p>\n<p>A prescindere dal risultato, la creatura è temporaneamente immune al tuo Colpo Raccapricciante per 24 ore.</p>"
         },
         "Oracular Providence": {
             "name": "Provvidenza Oracolare",
-            "description": "<p>Il tuo mistero ti concede l'accesso a profonde riserve di potere divino davvero miracoloso. Ottieni un ulteriore slot incantesimo di 10° livello.</p>"
+            "description": "<p>Il tuo mistero ti concede l'accesso a profonde riserve di potere divino davvero miracoloso. Ottieni un ulteriore slot incantesimo di 10° livello.</p>",
+            "featPrerequisites": {
+                "0": "lucidità oracolare"
+            }
         },
         "Pistol Phenom Dedication": {
             "featPrerequisites": {
@@ -3526,7 +3533,9 @@
         "Vile Desecration": {
             "featPrerequisites": {
                 "0": "allineamento malvagio"
-            }
+            },
+            "name": "Profanazione Ignobile",
+            "description": "<p>Combini un potere empio con l'energia negativa per danneggiare gli angeli, gli arconti e gli altri presuntuosi abitanti dei Piani Esterni. Quando lanci un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Ferire}</em>, puoi cambiare i danni che infliggi alle creature celestiali in danni da male invece che danni negativi.</p>"
         },
         "Opportune Backstab": {
             "name": "Colpo a Tradimento",
@@ -3571,7 +3580,9 @@
             "featPrerequisites": {
                 "0": "precetti del bene",
                 "1": "causa del redentore"
-            }
+            },
+            "description": "<p>Hai fatto un giuramento in cui hai promesso di uccidere gli abomini alieni che si nascondono negli angoli più remoti di Golarion. Aggiungi il seguente precetto al tuo codice del campione, dopo gli altri: \"Devi uccidere le aberrazioni malvagie che incontri, purché tu abbia ragionevoli probabilità di vittoria\".</p>\n<p>La resistenza che ottieni da @UUID[Compendium.pf2e.actionspf2e.tuZnRWHixLArvaIf]{Barlume di Redenzione} contro i danni di un'aberrazione malvagia è pari a 7 + il tuo livello.</p>\n<p>Non consideri le aberrazioni malvagie come autorità legittime, anche nelle nazioni che esse governano.</p>",
+            "name": "Giuramento Esoterico (Redentore)"
         },
         "Studious Capacity": {
             "name": "Vantaggio dell'Erudito",
@@ -3596,7 +3607,9 @@
         "Ultimate Polymath": {
             "featPrerequisites": {
                 "0": "musa dell'eclettismo"
-            }
+            },
+            "description": "<p>Puoi lanciare in modo flessibile tutti i tuoi incantesimi, assicurandoti una serie incredibile di opzioni possibili. Tutti gli incantesimi del tuo repertorio sono incantesimi distintivi per te.</p>",
+            "name": "Supremo Eclettismo"
         },
         "Stitch Flesh": {
             "featPrerequisites": {
@@ -3643,7 +3656,9 @@
         "Clinging Shadows Initiate": {
             "featPrerequisites": {
                 "0": "incantesimi ki"
-            }
+            },
+            "description": "<p>Impari una posizione mistica che trasforma il tuo ki in un fumo appiccicoso che avvolge le tue membra, aggrappandosi a tutto ciò che tocchi.</p>\n<p>Ottieni l'incantesimo ki <em>@UUID[Compendium.pf2e.spells-srd.uJXs4M6IeixfPBLc]{posizione delle ombre avvinghianti}</em>. Aumenta il numero di Punti Focalizzazione nella tua riserva di 1. Anche se entrare nella posizione utilizza un incantesimo ki, gli attacchi stretta delle ombre che ne scaturiscono non sono incantesimi, per cui puoi usarli tutte le volte che vuoi mentre sei nella posizione.</p>",
+            "name": "Iniziato delle Ombre Avvinghianti"
         },
         "Cantrip Expansion (Spontaneous Caster)": {
             "name": "Trucchetti Aggiuntivi (Lanciatore Spontaneo)",
@@ -3679,7 +3694,9 @@
             "featPrerequisites": {
                 "0": "Dedizione del Maresciallo",
                 "1": "addestrato in Intimidazione"
-            }
+            },
+            "description": "<p>Assumendo un aspetto torvo per la battaglia in arrivo, incoraggi i tuoi alleati a incutere paura nei loro nemici con attacchi feroci.</p>\n<p>Quando usi questa azione, tenta una prova di @Check[type:intimidation|dc:@self.level]{Intimidazione}. La CD è solitamente una CD di difficoltà standard del tuo livello, ma il GM può assegnare una CD diversa in base alle circostanze. L'effetto dipende dal risultato della tua prova.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.qX62wJzDYtNxDbFv]{Posizione: Posizione del Maresciallo Terrificante}</p>\n<hr />\n<p><strong>Successo Critico</strong> La tua aura del maresciallo aumenta fino a un'@Template[type:emanation|distance:20]{emanazione di 6 metri} e conferisce a te e agli alleati bonus di status ai tiri per i danni pari al numero di dadi di danno dell'attacco senz'armi o dell'arma che impugni e che ha più dadi di danno dell'arma. Quando tu o un alleato nell'aura ottenete un successo critico contro un nemico con un Colpo, quel nemico è @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato 1}.</p>\n<p><strong>Successo</strong> Come successo critico, ma la dimensione della tua aura non aumenta.</p>\n<p><strong>Fallimento</strong> Non riesci a entrare nella posizione.</p>\n<p><strong>Fallimento Critico</strong> Non riesci a entrare nella posizione e non puoi intraprendere nuovamente questa azione per 1 minuto.</p>",
+            "name": "Posizione del Maresciallo Terrificante"
         },
         "Mobility": {
             "name": "Mobilità",
@@ -5665,7 +5682,8 @@
         },
         "Ashen Veil": {
             "featPrerequisites": {
-                "2": "maestro in Furtività"
+                "2": "maestro in Furtività",
+                "1": "esperto in Religione"
             }
         },
         "Sacred Defense": {
@@ -8808,7 +8826,8 @@
             }
         },
         "Kobold Breath": {
-            "name": "Soffio del Coboldo"
+            "name": "Soffio del Coboldo",
+            "description": "<p>Incanali il potere del tuo modello draconico in un coagulo di energia che si manifesta come una @Template[type:line|distance:30]{linea di 9 metri} o un @Template[type:cone|distance:15]{cono di 4,5 metri} e infligge 1d4 danni. Ogni creatura nell'area deve tentare un tiro salvezza base contro la CD più alta tra quella di classe o quella di incantesimo. Non puoi usare di nuovo questa capacità per [[/r 1d4 #round]]{1d4 round}.</p>\n<p>Al 3° livello e successivamente ogni 2 livelli successivi, il danno aumenta di 1d4. La forma del soffio, il tipo di danno e il tiro salvezza corrispondono a quelli del tuo @UUID[Compendium.pf2e.ancestryfeatures.egpiSWBrNBb1Fmig]{modello draconico}. Questa capacità ha il tratto associato al tipo di danno che infligge.</p>\n<hr />\n<p>@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]</p>\n<p>[[/r ceil(@actor.level/2)d4[acid]]]{Acido per Livello} [[/r ceil(@actor.level/2)d4[cold]]]{Freddo per Livello} [[/r ceil(@actor.level/2)d4[electricity]]]{Elettricità per Livello} [[/r ceil(@actor.level/2)d4[fire]]]{Fuoco per Livello} [[/r ceil(@actor.level/2)d4[poison]]]{Veleno per Livello}</p>"
         },
         "Predict Weather": {
             "featPrerequisites": {
@@ -9081,7 +9100,9 @@
         "Deeper Dabbler": {
             "featPrerequisites": {
                 "0": "Dedizione del Collezionista di Talismani"
-            }
+            },
+            "description": "<p>Impostando un po' meglio il tuo processo e con una collezione più ampia di materiali per talismani, puoi creare un numero maggiore di talismani al giorno. Puoi creare due talismani aggiuntivi durante i tuoi preparativi giornalieri.</p>\n<p><strong>Speciale</strong> Puoi selezionare questo talento una seconda volta se sei almeno al 14° livello.</p>",
+            "name": "Collezionista Esperto"
         },
         "Mighty Wings": {
             "featPrerequisites": {
@@ -9589,7 +9610,9 @@
         "Triumphant Inspiration": {
             "featPrerequisites": {
                 "0": "musa del combattente"
-            }
+            },
+            "name": "Ispirazione Trionfante",
+            "description": "<p><strong>Innesco</strong> II tuo Colpo con un'arma da mischia o un attacco senz'armi in mischia contro un nemico ottiene un successo critico.</p>\n<hr />\n<p>Con un urlo trionfale, ispiri i tuoi alleati. Lanci un trucchetto di composizione che conosci e che normalmente richiede un'azione singola per essere lanciato.</p>"
         },
         "Cavalier's Charge": {
             "featPrerequisites": {
@@ -9651,7 +9674,9 @@
         "Reliable Luck": {
             "featPrerequisites": {
                 "0": "Fortuna Felina"
-            }
+            },
+            "name": "Fortuna Affidabile",
+            "description": "<p>Hai superato le proverbiali nove vite e sopravvivi al pericolo con sorprendente regolarità. Puoi usare @UUID[Compendium.pf2e.feats-srd.7qBuzHY8kEG8SdEP]{Fortuna Felina} una volta all'ora, anziché una volta al giorno.</p>"
         },
         "Shared Luck (Catfolk)": {
             "featPrerequisites": {
@@ -10250,7 +10275,9 @@
         "Settlement Scholastics": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Archeologo"
-            }
+            },
+            "description": "<p>I tuoi studi aprono nuovi orizzonti. Diventi esperto in un'abilità Sapienza su un insediamento specifico; se eri già addestrato in quell'abilità Sapienza, diventi anche addestrato nell'abilità Sapienza su un altro insediamento a tua scelta. Scegli una singola lingua comune o non comune prevalente in quell'insediamento e la impari.</p>\n<p><strong>Speciale</strong> Puoi selezionare questo talento più di una volta. Ogni volta che lo selezioni, scegli un insediamento diverso.</p>",
+            "name": "Erudizione sugli Insediamenti"
         },
         "Finishing Precision": {
             "featPrerequisites": {
@@ -11133,10 +11160,93 @@
         "Advanced Mysteries": {
             "featPrerequisites": {
                 "0": "Misteri Base"
-            }
+            },
+            "name": "Misteri Avanzati",
+            "description": "<p>Ottieni un talento da oracolo. Al fine di rispettare i suoi prerequisiti, il tuo livello da oracolo è pari a metà del tuo livello del personaggio.</p>\n<hr />\n<p><strong>Speciale</strong> Puoi selezionare questo talento più di una volta. Ogni volta che lo selezioni, ottieni un altro talento da oracolo.</p>"
         },
         "Vampire Lore": {
             "name": "Sapienza sui Vampiri"
+        },
+        "Duskwalker Magic": {
+            "description": "<p>Il tuo legame con gli psicopompi ti dà il potere di intravedere il futuro prossimo e proteggere i cadaveri dalle devastazioni della non morte. Puoi lanciare <em>@UUID[Compendium.pf2e.spells-srd.41TZEjhO6D1nWw2X]{presagio}</em> e <em>@UUID[Compendium.pf2e.spells-srd.xRgU9rrhmGAgG4Rc]{riposo inviolato}</em>, una volta al giorno per ciascuno, come incantesimi innati divini di 2° livello.</p>",
+            "name": "Magia dei Viandanti Crepuscolari"
+        },
+        "Hag Claws": {
+            "name": "Artigli della Megera",
+            "description": "<p>Crescendo, le tue unghie sono diventate lunghe e affilate. Ottieni un attacco senz'armi con l'artiglio che infligge [[/r 1d4[slashing]]]{1d4 danni taglienti}. I tuoi artigli sono nel gruppo rissa e hanno i tratti accurata, agile e disarmato.</p>\n<p><strong>Speciale</strong> Gli artigli della megera possono svilupparsi in qualsiasi momento della vita di un changeling, per cui puoi selezionare questo talento ogni volta che ottieni un talento di stirpe, ma una volta selezionato non puoi riaddestrarlo.</p>"
+        },
+        "Unhampered Passage": {
+            "description": "<p>Non permetti agli altri di trattenerti. Puoi lanciare <em>@UUID[Compendium.pf2e.spells-srd.aqRYNoSvxsVfqglH]{libertà di movimento}</em> su te stesso come incantesimo innato primevo una volta al giorno.</p>",
+            "name": "Passaggio Senza Ostacoli"
+        },
+        "Shattering Blows": {
+            "description": "<p>I tuoi colpi vigorosi mandano in frantumi gli oggetti con facilità. Mentre sei infuriato, i tuoi @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Colpi} in mischia ignorano 5 punti della Durezza di un oggetto. Se hai il privilegio di classe @UUID[Compendium.pf2e.classfeatures.VLiT503OLOM3vaDx]{devastatore}, invece, ignori 10 punti di Durezza di un oggetto.</p>",
+            "name": "Colpi Frantumanti"
+        },
+        "Celestial Strikes": {
+            "name": "Colpi Celestiali",
+            "description": "<p>Il tuo legame con il bene rafforza tutti i tuoi attacchi contro le forze del male. Tutti i tuoi Colpi con le armi e senz'armi infliggono [[/r 1[good]]]{1 danno da bene} aggiuntivo e hanno i tratti bene e magico.</p>"
+        },
+        "Furious Vengeance": {
+            "featPrerequisites": {
+                "0": "istinto dell'ira"
+            },
+            "name": "Vendetta Iraconda",
+            "description": "<p><strong>Innesco</strong> Un nemico entro la tua portata in mischia ottiene un critico con un Colpo in mischia contro di te.</p>\n<hr />\n<p>Il colpo del tuo nemico alimenta la tua ira e provoca la tua immediata rappresaglia. Effettua un Colpo in mischia contro il nemico innescante.</p>"
+        },
+        "Magic Rider": {
+            "name": "Solcamagie",
+            "description": "<p>Il tuo popolo ha usato una potente magia per viaggiare tra mondi lontani, e i residui di quella magia ti agevolano nel teletrasporto.</p>\n<p>Quando sei il bersaglio di un incantesimo di teletrasporto che trasporta più di una persona, l'incantesimo può influenzare una persona in più del limite normale, a scelta dell'incantatore.</p>\n<p>Inoltre, quando sei il bersaglio di un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.69L70wKfGDY66Mk9]{teletrasporto}</em>, insieme agli altri bersagli non arrivate a una distanza maggiore di 1,8 chilometri dall'obiettivo, a prescindere dalla distanza percorsa.</p>"
+        },
+        "Svetocher": {
+            "description": "<p>Sei nato da uno dei moroi, i vampiri più comuni, con la loro forza d'animo soprannaturale e il potere di persuasione.</p>\n<p>Quando hai la condizione @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiato}, calcola la penalità ai tuoi tiri salvezza su Tempra e la riduzione dei tuoi Punti Ferita come se il valore della condizione fosse inferiore di 1.</p>\n<p>Sei addestrato in Diplomazia. Se sei automaticamente addestrato in Diplomazia, diventi invece addestrato in un'abilità a tua scelta.</p>",
+            "name": "Svetocher"
+        },
+        "Annotate Composition": {
+            "description": "<p>Mettendo su carta la tua composizione, puoi creare uno spartito con parole o musiche emozionanti che gli altri possano leggere e comprendere.</p>\n<p>Spendi 10 minuti e 1 Punto Focalizzazione per trasporre un incantesimo di composizione su una pergamena speciale che tu o un'altra creatura potrete poi attivare. Questo incantesimo di composizione deve poter essere lanciato con un'azione singola. Se l'incantesimo di composizione scelto richiede una prova di Esibizione come parte del lancio, il GM tira questa prova come prova segreta quando scrivi il tuo spartito.</p>\n<p>Se possiedi <em>@UUID[Compendium.pf2e.spells-srd.irTdhxTixU9u9YUm]{composizione prolungata}</em> o <em>@UUID[Compendium.pf2e.spells-srd.kF0rs9mCPvJGfAZE]{ispirare eroismo}</em> e l'incantesimo di composizione scelto lo consente, puoi anche usare uno di questi incantesimi per modificare la composizione trascritta, e il GM tirerà la prova segreta di Esibizione. In questo caso, spendi un Punto Focalizzazione aggiuntivo, anche se la prova segreta fallisce.</p>\n<p>Qualsiasi creatura in grado di leggere la lingua che hai usato quando hai annotato la tua composizione può Attivare l'Oggetto spendendo un'azione singola, che ha il tratto concentrazione. Questo produce gli effetti della composizione come se la creatura attivante avesse @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciato l'Incantesimo}.</p>\n<p>Una composizione creata in questo modo perde il suo potere la prossima volta che effettui i tuoi preparativi giornalieri. Mentre la composizione è in tuo possesso, puoi renderla inerte usando un'azione singola che ha il tratto concentrazione. Non puoi riguadagnare i Punti Focalizzazione che hai speso per creare la composizione trascritta finché questa non viene attivata o non perde la sua magia.</p>",
+            "name": "Trascrivere Composizione"
+        },
+        "Straveika": {
+            "description": "<p>Discendi da uno dei vampiri più antichi, un nosferatu con la maledizione della vita eterna ma non dell'eterna giovinezza. La gente ti chiama straveika o antico. Le tracce delle doti di dominio del tuo progenitore ti hanno fatto comprendere come le intenzioni di una creatura cambino i suoi comportamenti. Ottieni bonus di circostanza +1 alle prove di Percezione per @UUID[Compendium.pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{Intuire} e alle CD di Percezione contro i tentativi di @UUID[Compendium.pf2e.actionspf2e.ewwCglB7XOPLUz72]{Mentirti}.</p>",
+            "name": "Straveika"
+        },
+        "Diverting Vortex": {
+            "description": "<p><strong>Requisiti</strong> Con la tua azione più recente hai lanciato un incantesimo diverso da un trucchetto.</p>\n<hr />\n<p>Trasferisci le tracce di energia magica nell'aria intorno a te, creando un vortice che devia gli attacchi a distanza. Fino all'inizio dei tue turno successivo, ottieni bonus di status +1 alla CA contro gli attacchi con armi a distanza e gli attacchi senz'armi fisici a distanza.</p>",
+            "name": "Vortice Dirottante"
+        },
+        "Impressive Landing": {
+            "description": "<p><strong>Innesco</strong> Cadi per almeno 3 metri e atterri su una superficie solida.</p>\n<hr />\n<p>Ti schianti al suolo, frantumando tutto intorno a te. Considera la caduta come se fosse più corta di 3 metri. atterri in piedi. Tutti gli spazi adiacenti diventano terreno difficile, e le creature che si trovano in quegli spazi quando atterri subiscono 5 danni contundenti quando i detriti le colpiscono e sono @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparate} fino all'inizio del loro prossimo turno.</p>",
+            "name": "Atterraggio Impressionante"
+        },
+        "Subtle Delivery": {
+            "description": "<p>Sei in grado di iniettare tossine attraverso una @UUID[Compendium.pf2e.equipment-srd.FPwsiGqMCNPLHmjX]{cerbottana}. I tuoi @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Colpi} con la cerbottana possono applicare veleni da ferimento anche se non infliggono danni a causa della resistenza di una creatura.</p>\n<p>Se ottieni un successo critico in un tiro per colpire usando una cerbottana caricata con un dardo che hai avvelenato, il bersaglio, se fallisce il tiro salvezza iniziale del veleno, lo considera un fallimento critico.</p>",
+            "name": "Iniezione Impercettibile"
+        },
+        "Exhort The Faithful": {
+            "description": "<p>La tua conoscenza dei principi religiosi ti dà un'idea dei modi migliori per convincere gli altri membri della tua fede ad aiutarti o a seguire le tue indicazioni.</p>\n<p>Quando @UUID[Compendium.pf2e.actionspf2e.DCb62iCBrJXy0Ik6]{Richiedi} qualcosa o @UUID[Compendium.pf2e.actionspf2e.tHCqgwjtQtzNqVvd]{Costringi} i membri della tua stessa fede, puoi tentare una prova di Religione invece di Diplomazia o Intimidazione e ottieni bonus di circostanza +2 alla prova. In caso di fallimento critico nel tentativo di Richiedere, l'atteggiamento del bersaglio nei tuoi confronti non peggiora.</p>",
+            "featPrerequisites": {
+                "0": "esperto in Religione",
+                "1": "seguace di una specifica religione"
+            },
+            "name": "Esortare i Fedeli"
+        },
+        "Lab Rat": {
+            "name": "Topo da Laboratorio",
+            "description": "<p>Hai trascorso un bel po' di tempo in un laboratorio alchemico. Potresti essere tu stesso un alchimista o un assistente, o magari anche una cavia. In ogni caso, sei stato esposto a un'ampia varietà di veleni ed elisir alchemici, che ti hanno donato una maggiore tolleranza ai loro effetti.</p>\n<p>Hai bonus di circostanza +1 ai tiri salvezza contro veleno ed effetti dannosi degli elisir. Se ottieni un successo nel tiro salvezza contro un elisir o veleno, lo consideri un successo critico.</p>"
+        },
+        "Skeleton Commander": {
+            "featPrerequisites": {
+                "0": "esperto in Religione"
+            }
+        },
+        "Divine Healing": {
+            "featPrerequisites": {
+                "1": "esperto in Religione"
+            }
+        },
+        "Halo": {
+            "description": "<p>Sei sempre circondato da un'aureola di luce e bontà.</p>\n<p>La tua aureola emette luce e ha gli effetti di un trucchetto <em>@UUID[Compendium.pf2e.spells-srd.WBmvzNDfpwka3qT4]{luce}</em> divino. Un trucchetto viene intensificato a un livello dell'incantesimo pari a metà del tuo livello, arrotondato per eccesso.</p>\n<p>Puoi sopprimere o riattivare l'aureola con una azione singola, che ha il tratto concentrazione.</p>",
+            "name": "Aureola"
         }
     }
 }
