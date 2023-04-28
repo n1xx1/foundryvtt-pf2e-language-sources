@@ -20,7 +20,11 @@ type TranslationSource = {
   >;
 };
 
-export async function commandFixItemIds(lang: string, systemDir: string) {
+export async function commandRemoveSameTranslation(
+  lang: string,
+  compendium: string | undefined | null,
+  systemDir: string
+) {
   const manifest = await readManifest(
     path.join(systemDir, "static", "system.json")
   );
@@ -28,6 +32,13 @@ export async function commandFixItemIds(lang: string, systemDir: string) {
 
   for (const pack of allPacks) {
     if (pack.type !== "Actor") {
+      continue;
+    }
+    if (
+      compendium !== undefined &&
+      compendium !== null &&
+      pack.name !== compendium
+    ) {
       continue;
     }
 
@@ -57,26 +68,28 @@ export async function commandFixItemIds(lang: string, systemDir: string) {
     console.log("");
     console.log(`FIXING ${pack.name}`);
 
-    for (const [entryName, entry] of Object.entries(original.entries)) {
-      const translatedEntry = translated.entries[entryName];
-      if (!translatedPath) {
-        continue;
-      }
-
-      if (!entry.items) {
-        continue;
-      }
-
-      for (const [itemId, item] of Object.entries(entry.items)) {
-        const translatedItem = translatedEntry.items?.[itemId];
-        if (!translatedItem) {
+    function walkObject(a: any, b: any) {
+      for (const k of Object.keys(a)) {
+        if (!(k in b)) {
           continue;
         }
-        if (translatedItem.description === item.description) {
-          delete translatedItem.name;
+        if (typeof a[k] === "object" && typeof b[k] === "object") {
+          walkObject(a[k], b[k]);
+
+          if (Object.keys(a[k]).length === 0) {
+            delete a[k];
+          }
+
+          continue;
+        }
+
+        if (a[k] === b[k]) {
+          delete a[k];
         }
       }
     }
+
+    walkObject(translated, original);
 
     await writeFile(translatedPath, JSON.stringify(translated, null, 4));
   }

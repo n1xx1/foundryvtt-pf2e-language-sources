@@ -9,6 +9,7 @@ import { commandUpdate } from "./command-update";
 import { commandUpdateSource } from "./command-update-source";
 import { commandWeblateQuery } from "./command-weblate-query";
 import { commandFixTemplate } from "./command-fix-template";
+import { commandRemoveSameTranslation } from "./command-fix-same-translation";
 
 yargs(hideBin(process.argv))
   .option("directory", {
@@ -62,7 +63,7 @@ yargs(hideBin(process.argv))
     }
   )
   .command(
-    "weblate-query [lang]",
+    "weblate-query <lang>",
     "print out some weblate queries",
     (yargs) => yargs.positional("lang", { type: "string", demandOption: true }),
     async (argv) => {
@@ -70,7 +71,7 @@ yargs(hideBin(process.argv))
     }
   )
   .command(
-    "find-most-common [lang] [compendium]",
+    "find-most-common <lang> [compendium]",
     "find the most common untranslated strings in a translation compendium",
     (yargs) =>
       yargs
@@ -81,7 +82,7 @@ yargs(hideBin(process.argv))
     }
   )
   .command(
-    "fix-item-ids [lang]",
+    "fix-item-ids <lang>",
     "fix item names to item ids for the specified language",
     (yargs) => yargs.positional("lang", { type: "string", demandOption: true }),
     async (argv) => {
@@ -89,7 +90,22 @@ yargs(hideBin(process.argv))
     }
   )
   .command(
-    "fix-template [lang] [compendium]",
+    "remove-same-translation <lang> [compendium]",
+    "remove strings with the same translation",
+    (yargs) =>
+      yargs
+        .positional("lang", { type: "string", demandOption: true })
+        .positional("compendium", { type: "string" }),
+    async (argv) => {
+      await commandRemoveSameTranslation(
+        argv.lang,
+        argv.compendium,
+        argv.directory
+      );
+    }
+  )
+  .command(
+    "fix-template <lang> [compendium]",
     "",
     (yargs) =>
       yargs
