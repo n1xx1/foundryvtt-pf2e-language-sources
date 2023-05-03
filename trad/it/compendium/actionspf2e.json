@@ -496,7 +496,8 @@
             "description": "<p><strong>Requisiti</strong> Impugni uno scudo.</p>\n<hr />\n<p>Posizioni lo scudo in modo da proteggerti. Quando hai Alzato lo Scudo, ottieni il bonus di circostanza indicato alla CA. Lo scudo rimane alzato fino all'inizio del tuo prossimo turno.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.2YgXoHvJfrDHucMr]{Effetto: Alzare lo Scudo}</p>"
         },
         "Anchor": {
-            "name": "Ancora"
+            "name": "Ancoraggio",
+            "description": "<p>Mandi le tue radici più in profondità nel terreno, e questo ti rende più difficile inciampare. Fintantoché non ti muovi ottieni bonus di circostanza +2 alla tua CD di Tempra o Riflessi contro i tentativi di Spingere o Sbilanciare (o bonus di circostanza +4 se sei un leshy radice). Questo bonus si applica anche ai tiri salvezza contro incantesimi o effetti che tentano di spostarti buttarti a terra.</p>\n<p>Se un effetto ti costringe a muoverti, ti muovi solo di metà della distanza normale, poiché parte dello sforzo va a strappare le radici. A discrezione del GM, questa capacità potrebbe non funzionare su un terreno più resistente della pietra, come una pavimentazione metallica o una muratura rinforzata magicamente.</p>"
         },
         "Take Control": {
             "name": "Prendere il Controllo",
@@ -662,7 +663,56 @@
             "description": "<p><strong>Frequenza</strong> Una volta al giorno</p>\n<p><strong>Innesco</strong> Una creatura ti bersaglia con un attacco o un altro effetto con bersaglio e tu sei in grado di vedere l'attaccante.</p>\n<hr />\n<p>Crei una coltre di nebbia in un'esplosione di 1,5 metri centrata su un angolo del tuo spazio. Tutte le creature all'interno di quell'area sono occultate, e tutti gli altri sono Occultati a loro. Questo occultamento si applica all'effetto innescante e la nebbia dura 1 minuto o finché non viene dispersa da un vento forte. Dopo aver risolto l'effetto innescante, fai un Passo. Se un effetto ti impedisce di fare un Passo, puoi tentare di @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Sfuggire} all'effetto e fare un Passo se ci riesci.</p>"
         },
         "Soaring Flight": {
-            "name": "Volo in Quota"
+            "name": "Volo in Quota",
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p>Essere un tengu significa non recare il peso delle preoccupazioni del mondo sottostante. Fai spuntare due ali magiche o dispieghi quelle esistenti. Per 5 minuti, ottieni Velocità di @UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{volo} pari alla tua Velocità sul terreno o a 6 metri, a seconda di quale sia più alta.</p>"
+        },
+        "Jinx": {
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p>Puoi maledire un'altra creatura, rendendola Maldestra. Questa maledizione ha una gittata di 9 metri, e devi essere in grado di vedere il tuo obiettivo. Il bersaglio ottiene un tiro salvezza su @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] per resistere a questa iattura, usando la tua CD di classe o CD di incantesimo, a seconda di quale sia più alta.</p>\n<hr />\n<p><strong>Successo</strong> II bersaglio non è influenzato ed è temporaneamente immune per 24 ore.</p>\n<p><strong>Fallimento</strong> II bersaglio è @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1} per 1 minuto.</p>\n<p><strong>Fallimento Critico</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 2} per 1 minuto.</p>",
+            "name": "Iattura"
+        },
+        "Mark for Death": {
+            "description": "<p><strong>Requisiti</strong> Sei in grado di vedere e sentire la creatura che intendi bersagliare</p>\n<hr />\n<p><strong>Effetto</strong> Designi una singola creatura come tuo bersaglio. Questo dura finché il bersaglio non muore o non usi di nuovo Marchio di Morte. Ottieni bonus di circostanza +2 alle prove di Percezione per @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Individuare} il tuo bersaglio e alle prove di Inganno per @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Fintare} contro il tuo bersaglio.</p>\n<p>Le tue arrmi e i tuoi attacchi senz'armi accurati e agili ottengono i tratti micidiale d6 e vile quando attacchi il tuo bersaglio.</p>\n<p>Se l'arma o l'attacco senz'armi ha già il tratto micidiale, aumenta di un grado la categoria del dado di danno micidiale invece di usare micidiale d6.</p>",
+            "name": "Marchio di Morte"
+        },
+        "Destructive Vengeance": {
+            "description": "<p><strong>Innesco</strong> Un nemico entro 4,5 metri ti danneggia.</p>\n<hr />\n<p>Il sangue versato genera altro sangue, mentre trascini il tuo nemico verso l'oblio.</p>\n<p>Aumenti la quantità di danni che subisci di [[/r {1d6}]]{1d6}, e infliggi [[/r {1d6}]]{1d6 danni} al nemico innescante, scegliendo se infliggere al nemico danni da male o negativi ogni volta che usi questa reazione. Inoltre, fino alla fine del tuo turno successivo i tuoi Colpi contro la creatura innescante infliggono 2 danni extra del tipo che hai scelto.</p>\n<p>II danno che subisci e infliggi quando usi questa reazione aumenta a [[/r {2d6}]]{2d6} al 5° livello, [[/r {3d6}]]{3d6} al 9° livello, [[/r {4d6}]]{4d6} al 12° livello, [[/r {5d6}]]{5d6} al 16° livello e [[/r {6d6}]]{6d6} al 19° livello.</p>\n<p>Il danno extra dei tuoi Colpi aumenta a 4 al 9° livello e a 6 al 16° livello.</p>",
+            "name": "Vendetta Distruttiva"
+        },
+        "Instinctive Obfuscation": {
+            "name": "Offuscamento Istintivo",
+            "description": "<p><strong>Prerequisiti</strong> Almeno un incantesimo innato arcano od occulto ottenuto grazie a un lignaggio da gnomo o un talento di stirpe</p>\n<p><strong>Frequenza</strong> Una volta al giorno</p>\n<p><strong>Innesco</strong> Vieni attaccato da un avversario.</p>\n<hr />\n<p>La magia dentro di te si manifesta come naturale reazione alle minacce. Ottieni gli effetti di <em>@UUID[Compendium.pf2e.spells-srd.j8vIoIEWElvpwkcI]{immagine speculare}</em> ma con due immagini anziché tre. La tradizione di questa azione corrisponde alla tradizione delle tue opzioni di stirpe da gnomo.</p>"
+        },
+        "Selfish Shield": {
+            "name": "Scudo Egoista",
+            "description": "<p><strong>Innesco</strong> Un nemico entro 4,5 metri ti danneggia.</p>\n<hr />\n<p>Il tuo interesse personale ti tiene al sicuro. Ottieni resistenza al danno innescante pari a 2 + metà del tuo livello, a prescindere dal tipo di danno.</p>\n<p>Inoltre, i tuoi Colpi contro la creatura innescante infliggono [[/r {1}]]{1 danno} extra fino alla fine del tuo turno successivo. Scegli se il tipo di danno è da male o negativo ogni volta che usi questa reazione. Questo danno extra aumenta a [[/r {2}]]{2} al 9° livello e a [[/r {3}]]{3} al 16° livello.</p>"
+        },
+        "Tail Toxin": {
+            "name": "Tossina Caudale",
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<p><strong>Requisiti</strong> Impugni un'arma perforante o tagliente.</p>\n<hr />\n<p>Applichi il veleno della tua coda a un'arma perforante o tagliente. Se il tuo prossimo con quell'arma prima della fine del tuo prossimo turno colpisce e infligge danni, infliggi al bersaglio danni da veleno persistenti pari al tuo livello.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Q0DKJRnDuuUnLpvn]{Effetto: Tossina Caudale}</p>"
+        },
+        "Secure Disguises": {
+            "description": "<p>Cerchi di procurarti o di fabbricare dei travestimenti. Tenta una prova normale, difficile o molto difficile di Artigianato, Esibizione, Inganno o Società.</p>\n<hr />\n<p><strong>Successo</strong> Ti procuri o crei dei travestimenti e ottieni 1 PV clic può essere usato solo per mantenere un'identità fittizia.</p>\n<p><strong>Fallimento</strong> I tuoi sforzi producono solo dei travestimenti inutilizzabili.</p>",
+            "name": "Procurare Travestimenti"
+        },
+        "Change Tradition Focus": {
+            "name": "Cambiare Fulcro della Tradizione",
+            "description": "<p><strong>Requisiti</strong> Partecipi a un duello e sei addestrato nell'abilità per la tradizione in cui cambi il tuo fulcro (Arcano per quella arcana, Occultismo per quella occulta, Natura per quella primeva o Religione per quella divina).</p>\n<hr />\n<p>Cambi il tuo fulcro della tradizione in un'altra tradizione magica.</p>"
+        },
+        "Research": {
+            "description": "<p>Passi al setaccio informazioni di vario tipo per scoprire qualcosa in più su un argomento specifico. Scegli il tuo argomento di ricerca, sezione della biblioteca o altra ripartizione attinente alla forma di ricerca e tenta una prova di abilità. Le abilità da usare e la CD della prova dipendono dalla scelta che hai fatto.</p>\n<hr />\n<p><strong>Successo Critico</strong> Ottieni 2 PR.</p>\n<p><strong>Successo</strong> Ottieni 1 PR.</p>\n<p><strong>Fallimento Critico</strong> Fai una scoperta fasulla e perdi 1 PR.</p>",
+            "name": "Ricercare"
+        },
+        "Boarding Assault": {
+            "name": "Abbordaggio",
+            "description": "<p>O Avanzi due volte o tenti una prova di Acrobazia (CD determinata dal GM, ma di solito 20) per oscillare su una corda fino al doppio della tua Velocità.</p>\n<p>Se sei salito o sbarcato da una nave o da un mezzo simile durante questo movimento, puoi effettuare un Colpo in mischia che infligge un dado di danno dell'arma aggiuntivo.</p>"
+        },
+        "Sense Weakness": {
+            "name": "Percepire Debolezza",
+            "description": "<p><strong>Innesco</strong> Tenti un Colpo in mischia contro il tuo avversario, ma non hai ancora tirato.</p>\n<p><strong>Requisiti</strong> Partecipi a un duello, sei addestrato in Percezione e hai effettuato una prova di Percezione per l'iniziativa in questo round.</p>\n<hr />\n<p>Scegli un momento preciso per attaccare, assicurandoti un vantaggio. II tuo avversario è @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} contro l'attacco. Se il tuo avversario usa Inganno per l'iniziativa quando questa capacità viene usata, è invece impreparato fino all'inizio del suo turno successivo.</p>"
+        },
+        "Dueling Counter": {
+            "name": "Contrastare in Duello",
+            "description": "<p><strong>Innesco</strong> Il tuo avversario Lancia un Incantesimo della stessa tradizione del tuo fulcro della tradizione.</p>\n<p><strong>Requisiti</strong> Partecipi a un duello e possiedi un fulcro della tradizione.</p>\n<hr />\n<p>Spendi un incantesimo preparato o uno slot incantesimo. Poi tenti di contrastare l'incantesimo innescante con l'incantesimo speso.</p>"
         }
     }
 }
