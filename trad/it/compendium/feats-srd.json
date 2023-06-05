@@ -8896,7 +8896,10 @@
             "description": "<p>Puoi accrescere il tuo Soffio del Coboldo per incanalare un potere draconico maggiore, anche se è più faticoso. Quando usi Soffio del Coboldo, puoi aumentare il dado del danno a d8 e aumentare l'area a @Template[type:line|distance:60]{18 metri} per un soffio lineare o @Template[type:cone|distance:30]{9 metri} per cono. Se lo fai, non puoi usare di nuovo Soffio del Coboldo per 1 ora.</p>\n<p>[[/r (ceil(@actor.level/2))d8]]{Danno Livellato}</p>"
         },
         "Blood Frenzy": {
-            "name": "Frenesia di Sangue"
+            "name": "Frenesia di Sangue",
+            "featPrerequisites": {
+                "0": "Artigli Dissanguanti"
+            }
         },
         "Elite Dracomancer": {
             "featPrerequisites": {
@@ -11251,6 +11254,34 @@
         "Advanced Weaponry": {
             "description": "<p>Gli attacchi del tuo eidolon evolvono.</p>\n<p>Scegli uno dei suoi attacchi in mischia senz'armi iniziali. Questo ottiene uno dei seguenti tratti, scelto quando ottieni il talento: disarmare, lotta, non letale, sbilanciare, spingere o versatile contundente, perforante o tagliente.</p>",
             "name": "Arsenale Avanzato"
+        },
+        "Energy Heart": {
+            "name": "Cuore a Energia",
+            "description": "<p>Il cuore del tuo eidolon pulsa di energia.</p>\n<p>Scegli un tipo di danni da energia diverso da forza. Uno dei suoi attacchi senz'armi cambia il suo tipo di danni nel tipo scelto, ed esso ottiene resistenza a quel tipo di danni pari a metà del tuo livello (minimo 1).</p>"
+        },
+        "Dual Studies": {
+            "name": "Studi Duplici",
+            "description": "<p>Tu e il tuo eidolon avete abilità che allenate da soli.</p>\n<p>Scegli due abilità: il tuo eidolon diventa addestrato in una di esse e tu diventi addestrato nell'altra.</p>\n<p>Al 7° livello diventate ciascuno esperto nell'abilità scelta. Queste competenze di abilità non vengono condivise fra te e il tuo eidolon.</p>"
+        },
+        "Unfetter Eidolon": {
+            "name": "Sguinzagliare Eidolon",
+            "description": "<p>Puoi consentire al tuo eidolon di allontanarsi da te.</p>\n<p>Apprendi l'incantesimo a legame <em>sguinzagliare eidolon</em>. Aumenta di 1 il numero di Punti Focalizzazione nella tua riserva di focalizzazione.</p>"
+        },
+        "Reactive Dismissal": {
+            "name": "Interruzione Improvvisa",
+            "description": "<p><strong>Innesco</strong> L'eidolon subisce danni.</p>\n<p>Interrompi all'improvviso la manifestazione dell'eidolon per ridurre i danni che subisce, anche se ciò rende più difficile convocarlo. Riduci i danni innescanti all'eidolon del doppio del tuo livello, e l'eidolon si demanifesta. Non puoi più Manifestare l'Eidolon fino a dopo la fine del tuo prossimo turno.</p>"
+        },
+        "Glider Form": {
+            "name": "Planata Naturale",
+            "description": "<p>L'eidolon sviluppa delle ali, un corpo membranoso o altri mezzi per controllare la caduta.</p>\n<p>Esso plana verso il suolo, percorrendo nell'aria 1,5 metri verso il basso e fino a 7,5 metri in avanti.</p>\n<p>Fintanto che usa almeno 1 azione per planare a ogni round e non ha ancora toccato il suolo, rimane in aria alla fine del tuo turno.</p>"
+        },
+        "Ostentatious Arrival": {
+            "description": "<p>Se la tua prossima azione è Manifestare il tuo Eidolon come attività da tre azioni, o Lanciare un Incantesimo di convocazione da tre azioni, la creatura appare con un'esplosione.</p>\n<p>Tutte le creature in un'@Template[type:emanation|distance:10]{emanazione di 3 metri} attorno alla creatura convocata o manifestata subiscono [[/r 1d4[fire]]]{1d4 danni da fuoco per livello dell'incantesimo} per un incantesimo di convocazione, o [[/r ((floor(@actor.level/2))d4)[fire]]]{1d4 danni ogni 2 livelli} se Manifesti il tuo Eidolon.</p>\n<p>Se la creatura convocata o manifestata ha il tratto acido, acqua, elettricità, freddo, fuoco o sonoro, il danno è invece di quel tipo (o danni da freddo per il tratto acqua). Se la creatura ha più di uno di tali tratti, scegli che tipo di danni infligge.</p>",
+            "name": "Entrata Ostentata"
+        },
+        "Reinforce Eidolon": {
+            "description": "<p>Potenzi il tuo eidolon. Ottieni il trucchetto a legame <em>rinforzare eidolon</em></p>",
+            "name": "Rinforzare Eidolon"
         }
     }
 }
