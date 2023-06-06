@@ -26,11 +26,37 @@ async function setupOut() {
   );
 }
 
-function fixEntities(x: string) {
-  return x.replace(/\u001e/g, " ");
+// @UUID[Compendium.pf2e.spells-srd.4GE2ZdODgIQtg51c]{Darkness}
+const uuidWithoutLabelRegex =
+  /@UUID\[Compendium\.pf2e\.([^\.]+?)\.([^\.]+?)\]([^{]|$)/g;
+
+function resolveDescription(
+  description: string,
+  allPacksMap: Map<string, PackData>
+) {
+  description = description.replace(/\u001e/g, " ");
+  description = description.replace(
+    uuidWithoutLabelRegex,
+    (original, compendium: string, id: string, tail) => {
+      const entry = allPacksMap
+        .get(compendium)
+        ?.entries.find((e) => e._id === id);
+      if (entry) {
+        tail ??= "";
+        return `@UUID[Compendium.pf2e.${compendium}.${id}]{${entry.name}}${tail}`;
+      }
+      return original;
+    }
+  );
+  return description;
 }
 
-async function handleItem(id: string, label: string, entries: EntryItem[]) {
+async function handleItem(
+  id: string,
+  label: string,
+  entries: EntryItem[],
+  allPacksMap: Map<string, PackData>
+) {
   const out: Compendium = {
     label,
     entries: {},
@@ -41,7 +67,10 @@ async function handleItem(id: string, label: string, entries: EntryItem[]) {
       name: entry.name,
     });
     if (entry.system.description.value) {
-      el.description = fixEntities(entry.system.description.value);
+      el.description = resolveDescription(
+        entry.system.description.value,
+        allPacksMap
+      );
     }
 
     if (entry.type === "spell") {
@@ -110,7 +139,8 @@ function mapSpellData(system: Partial<EntryItemSpell["system"]>) {
 async function handleJournalEntry(
   id: string,
   name: string,
-  entries: EntryJournalEntry[]
+  entries: EntryJournalEntry[],
+  allPacksMap: Map<string, PackData>
 ) {
   const out: Compendium = {
     label: name,
@@ -123,7 +153,7 @@ async function handleJournalEntry(
     });
 
     if (content) {
-      el.description = content;
+      el.description = resolveDescription(content, allPacksMap);
     }
     if (pages) {
       el.pages = Object.fromEntries(
@@ -215,7 +245,10 @@ async function handleActor(
           name: label,
         });
         if (entry.system.details.description) {
-          el.description = entry.system.details.description;
+          el.description = resolveDescription(
+            entry.system.details.description,
+            allPacksMap
+          );
         }
         if (entry.system.details.disable) {
           el.hazardDisable = entry.system.details.disable;
@@ -233,7 +266,10 @@ async function handleActor(
         name: entry.name,
       });
       if (entry.system.details.publicNotes) {
-        el.description = entry.system.details.publicNotes;
+        el.description = resolveDescription(
+          entry.system.details.publicNotes,
+          allPacksMap
+        );
       }
 
       if (entry.type === "npc") {
@@ -284,7 +320,10 @@ async function handleActor(
               name: item.name,
             });
             if (item.system.description.value) {
-              itemEl.description = item.system.description.value;
+              itemEl.description = resolveDescription(
+                item.system.description.value,
+                allPacksMap
+              );
             }
             continue;
           }
@@ -305,7 +344,10 @@ async function handleActor(
             itemEl.name = item.name;
           }
           if (!sameDesc && item.system.description.value) {
-            itemEl.description = item.system.description.value;
+            itemEl.description = resolveDescription(
+              item.system.description.value,
+              allPacksMap
+            );
           }
           if (origin === "matching") {
             itemEl._source = compendiumId;
@@ -473,12 +515,18 @@ export async function commandUpdate(systemDir = "../system") {
           allPacksMap
         );
       } else if (pack.type === "Item") {
-        await handleItem(pack.name, pack.label, pack.entries as EntryItem[]);
+        await handleItem(
+          pack.name,
+          pack.label,
+          pack.entries as EntryItem[],
+          allPacksMap
+        );
       } else if (pack.type === "JournalEntry") {
         await handleJournalEntry(
           pack.name,
           pack.label,
-          pack.entries as EntryJournalEntry[]
+          pack.entries as EntryJournalEntry[],
+          allPacksMap
         );
       } else {
         throw new Error(`not implemented: ${pack.type}`);
