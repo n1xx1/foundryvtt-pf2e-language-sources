@@ -320,7 +320,8 @@
                 "Notes": {
                     "success": "<strong>Successo</strong> Trovi la pista o continui a seguire quella che stavi già seguendo.",
                     "failure": "<strong>Fallimento</strong> Perdi la pista, ma puoi riprovare dopo un ritardo di 1 ora.",
-                    "criticalFailure": "<strong>Fallimento Critico</strong> Perdi la pista e non puoi riprovare per 24 ore."
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Perdi la pista e non puoi riprovare per 24 ore.",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Trovi la pista o continui a seguire quella che stavi già seguendo."
                 },
                 "Title": "Seguire Tracce"
             },
@@ -1161,6 +1162,17 @@
             "TOTMToggles": {
                 "Name": "Interruttori Teatro della Mente",
                 "Hint": "Include interruttori aggiunti nelle schede dei personaggi per facilitare il gioco con il Teatro della Mente. Questi interruttori permetteranno di fare certe abilità senza selezionare bersagli in Foundry."
+            },
+            "CompendiumBrowserSources": {
+                "DeleteAllInfo": "Tutti i documenti dei compendi diventeranno navigabili, inclusi con origini vuote.",
+                "DeleteAllQuestion": "Sei sicuro di voler ripristinare tutte le impostazioni per le origini incluse?",
+                "DeleteAllTitle": "Ripristina Impostazioni",
+                "Hint": "Impostazioni per mostrare solo le voci con origini specifiche nel browser del compendio.",
+                "ShowEmptySources": "Non filtrare le voci con origine vuota.",
+                "Name": "Origini Incluse",
+                "IgnoreAsGM": "Permette ai GM di ignorare i filtri e vedere tutte le voci.",
+                "ShowUnknownSources": "Non filtrare le voci con origine sconosciuta.",
+                "SourcesListHeader": "Origini Specificate"
             }
         },
         "WeaponPropertyRune": {
@@ -1412,9 +1424,6 @@
                 "OutOfRange": "Il bersaglio non è in gittata.",
                 "MeleeLabel": "Colpo in Mischia: {weapon}",
                 "RangedLabel": "Colpo a Distanza: {weapon}"
-            },
-            "Type": {
-                "Reaction": "Reazione"
             }
         },
         "ActionActionTypeLabel": "Tipo di Azione",
@@ -1644,7 +1653,7 @@
             "TanglefootBag": {
                 "Greater": {
                     "success": "<strong>Effetto</strong> Se colpisce, @UUID[Compendium.pf2e.equipment-effects.csA4UAD2tQq7RjT8]{penalità di -4,5 metri a Velocità} per 1 minuto.<hr /><i>Le borse dell'impedimento non fanno danni</i>.",
-                    "criticalSuccess": "<strong>Effetto</strong> Se colpisce, @UUID[Compendium.pf2e.equipment-effects.csA4UAD2tQq7RjT8]{penalità di -4,5 metri a Velocità} per 1 minuto. In caso di colpo critico @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{immobilizzata} per 1 round.<hr /><i>Le borse dell'impedimento non fanno danni</i>."
+                    "criticalSuccess": "Se colpisce, @UUID[Compendium.pf2e.equipment-effects.csA4UAD2tQq7RjT8]{penalità di -4,5 metri a Velocità} per 1 minuto. In caso di colpo critico @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{immobilizzata} per 1 round."
                 },
                 "Lesser": {
                     "success": "<strong>Effetto</strong> Se colpisce, @UUID[Compendium.pf2e.equipment-effects.fYZIanbYu0Vc4JEL]{penalità di -3 metri a Velocità} per 1 minuto.<hr /><i>Le borse dell'impedimento non fanno danni</i>.",
@@ -3205,7 +3214,6 @@
         "AbilityWis": "Saggezza",
         "ActionActionsLabel": "Azioni",
         "ActionBrowserSearchHint": "Puoi cercare per nome o attributo personalizzato. I possibili attributi personalizzati sono:<br> provenienza, Tipo incantesimo, livello, scuola, componenti, materiali, bersaglio, raggio, tempo, durata, danno, Tipo di danno, tiro, concentrazione, rituale, abilità e classi. <br>Esempio: 'fuoco, danno:d6' per vedere tutti gli incantesimi che hanno fuoco nel loro nome e un d6 nel danno",
-        "ActionCategoryOffensive": "Offensiva",
         "ActionDeathNoteLabel": "Nota Morte",
         "ActionNumber1": "Uno",
         "ActionNumber2": "Due",
@@ -3527,7 +3535,7 @@
             "TabFeat": "Talenti/Privilegi",
             "TabHazard": "Pericoli",
             "TabSpell": "Incantesimi",
-            "TabSettings": "Carica Pacchetti",
+            "TabSettings": "Impostazioni",
             "TakeLabel": "Prendi Oggetto",
             "BuyLabel": "Acquista Oggetto",
             "Title": "Browser del Compendio"
@@ -7107,6 +7115,10 @@
                 "Squeeze": {
                     "CriticalFailureSuccessBetter": "Quando ottieni un fallimento critico mentre ti Stringi lo consideri un fallimento e quando ottieni un successo lo consideri un successo critico."
                 }
+            },
+            "AdoptedAncestry": {
+                "Prompt": "Seleziona una stirpe comune.",
+                "AllowedDrops": "una stirpe che non sia la tua"
             }
         },
         "AreaTypeCube": "Cubo",
@@ -7341,7 +7353,13 @@
                 "Text": "La munizione fa luce intensa in un raggio di 6 metri (e luce fioca nei successivi 6 metri) per 10 minuti. Se colpisce un bersaglio, essa vi si attacca facendo in modo che il bersaglio stesso emetta luce nello stesso raggio. @UUID[Compendium.pf2e.equipment-effects.Sf6UO6vgCeicggOK]{Effetto: Munizione Luminescente}",
                 "Title": "Munizione Luminescente"
             }
-        }
+        },
+        "RevertDamage": {
+            "HealingMessage": "La guarigione applicata a {actor} è stata annullata",
+            "DamageMessage": "Il danno applicato a {actor} è stato annullato",
+            "ButtonTooltip": "Annulla"
+        },
+        "TraitReach200": "Portata 60m"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
@@ -7371,7 +7389,12 @@
         "TypeCharacter": "Personaggio Giocante",
         "TypeFamiliar": "Famiglio",
         "TypeLoot": "Bottino",
-        "TypeVehicle": "Veicolo"
+        "TypeVehicle": "Veicolo",
+        "TypeAnimalCompanion": "Compagno Animale",
+        "TypeEidolon": "Eidolon",
+        "TypeHazard": "Pericolo",
+        "TypeNpc": "PNG",
+        "TypeParty": "Gruppo"
     },
     "ITEM": {
         "TypeAction": "Azione",
@@ -7384,7 +7407,18 @@
         "TypeKit": "Kit",
         "TypeMelee": "Colpo PNG",
         "TypeSpellcastingentry": "Voce Lancio Incantesimi",
-        "TypeWeapon": "Arma"
+        "TypeWeapon": "Arma",
+        "TypeHeritage": "Lignaggio",
+        "TypeSpell": "Incantesimo",
+        "TypeTreasure": "Tesoro",
+        "TypeAffliction": "Afflizione",
+        "TypeAncestry": "Stirpe",
+        "TypeBackground": "Background",
+        "TypeBook": "Libro",
+        "TypeCondition": "Condizione",
+        "TypeDeity": "Divinità",
+        "TypeEquipment": "Equipaggiamento",
+        "TypeLore": "Abilità di Sapienza"
     },
     "COMPENDIUM": {
         "Search": "Cerca nei Compendi",
