@@ -6,7 +6,9 @@
             "description": "<p>Crei una sfera di gravità alterata. Tutte le creature e gli oggetti non fissati nell'area si muovono verso il centro, in base ai loro Tiri salvezza su Riflessi. Si seguono le regole per il Movimento Forzato. Se non c'è abbastanza spazio vicino al centro della sfera, le creature e gli oggetti più vicini al centro si muovono per primi, e gli altri si muovono fintanto che possono senza essere bloccati, fino all'ammontare determinato dall'esito dei loro Tiri Salvezza.</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non viene influenzata.</p>\n<p><strong>Successo</strong> La creatura si muove di 1,5 metri verso il centro.</p>\n<p><strong>Fallimento</strong> La creatura si muove di 4,5 metri verso il centro.</p>\n<p><strong>Fallimento Critico</strong> La creatura si muove di 9 metri verso il centro.</p>"
         },
         "Vampiric Maiden": {
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "name": "Vergine Vampirica",
+            "description": "<p>Una vergine di ferro spettrale si chiude sul bersaglio e drena la sua vitalità a tuo vantaggio. In questo modo infligge [[/r 4d4[piercing]]]{4d4 danni perforanti} e [[/r 4d4[negative]]]{4d4 danni negativi}, e il bersaglio deve tentare un TS su Tempra. Tu ottieni PF Temporanei pari ai danni negativi subiti dal bersaglio (dopo aver applicato resistenze, debolezze e simili). Perdi tutti i PF Temporanei rimanenti dopo 1 minuto.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non viene influenzato.</p>\n<p><strong>Successo</strong> Il bersaglio subisce metà dei danni.</p>\n<p><strong>Fallimento</strong> II bersaglio è temporaneamente intrappolato nella vergine vampirica. Subisce danni per intero ed è @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{immobilizzato} dalla vergine di ferro per 1 round o fino a quando non usa un'azione @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interagire} per liberarsi, a seconda di cosa succeda prima.</p>\n<p><strong>Fallimento Critico</strong> II bersaglio subisce danni doppi ed è immobilizzato dalla vergine di ferro per 1 round o fino a quando non @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{sfugge} (la CD è la tua CD di incantesimo), a seconda di cosa succeda prima.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> I danni perforanti e negativi aumentano ciascuno di [[/r 1d4]].</p>"
         },
         "Project Image": {
             "name": "Immagine Proiettata",
@@ -42,7 +44,9 @@
         },
         "Steal Shadow": {
             "spellTarget": "1 creatura",
-            "spellDuration": "mantenuto fino a 1 minuto"
+            "spellDuration": "mantenuto fino a 1 minuto",
+            "description": "<p>Rubi l'ombra di una creatura, lasciandola indebolita e vulnerabile. il bersaglio deve tentare un Tiro Salvezza su Tempra.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non viene influenzato.</p>\n<p><strong>Successo</strong> il bersaglio è @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} per 1 round.</p>\n<p><strong>Fallimento</strong> il bersaglio subisce [[/r 3d4[negative]]]{3d4 danni negativi} ed è @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} per la durata dell'incantesimo, poiché tu strappi via la sua ombra, raccogliendola nella tua mano. Nei round successivi, quando @UUID[Compendium.pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{Mantieni l'Incantesimo}, puoi strozzare l'ombra per infliggere [[/r 3d4[negative]]]{3d4 danni negativi} al bersaglio (TS base su Tempra). Il bersaglio non proietta un'ombra fino al termine dell'incantesimo.</p>\n<p><strong>Fallimento Critico</strong> Come fallimento, ma il bersaglio è @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 2}.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> Il danno quando l'incantesimo è Lanciato e Mantenuto aumenta di [[/r 1d4[negative]]]{1d4 danni negativi}.</p>",
+            "name": "Rubare Ombra"
         },
         "Negate Aroma": {
             "name": "Negare Odore",
@@ -4431,7 +4435,9 @@
             "spellDuration": "mantenuto fino a 1 minuto"
         },
         "Quench": {
-            "spellDuration": "mantenuto"
+            "spellDuration": "mantenuto",
+            "name": "Estinguere Fuoco",
+            "description": "<p>Fai in modo che all'interno dell'area, l'aria si saturi di vapore acqueo. I fuochi non magici vengono automaticamente spenti. Le creature di fuoco all'interno dell'area subiscono [[/r 4d8]] danni (TS base su Tempra). Scegli un fuoco magico, un incantesimo di fuoco o un oggetto di fuoco nell'area e tenta di contrastarlo. Se hai successo contro un oggetto, questo perde le sue proprietà di fuoco per 10 minuti (ad esempio, una <em>spada d'arme infuocata +1</em> diventerebbe una <em>spada d'arme +1</em>). Se il bersaglio è un artefatto o un oggetto altrettanto potente, fallisci automaticamente nel contrastarlo.</p>\n<p>Quando Mantieni questo incantesimo, puoi spostare l'area di vapore ovunque nel raggio d'azione, ma l'unico effetto quando lo fai è quello di estinguere automaticamente i fuochi non magici.</p>\n<p>Se hai la reazione Controincantesimo, puoi usare <em>estinguere fuoco</em> per contrastare qulsiasi incantesimo col tratto fuoco invece di dover avere l'incantesimo di fuoco innescante preparato nel tuo repertorio.</p>\n<hr />\n<p><strong>Intensificato (+1)</strong> Aumenta il danno alle creature di fuoco di [[/r 2d8]].</p>"
         },
         "Time Pocket": {
             "spellDuration": "fino ai tuoi prossimi preparativi giornalieri"
