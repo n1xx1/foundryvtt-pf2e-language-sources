@@ -2,7 +2,10 @@
     "label": "Cripte degli Abomini",
     "entries": {
         "Dread Wisp": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "name": "Fatuo del Terrore",
+            "npcHp": "guarigione negativa",
+            "description": "<p>I fuochi fatui nativi delle Lande Tenebrose sono più minacciosi e malevoli di quelli che fluttuano nelle solitarie paludi del mondo di superficie. Questi fatui del terrore instillano orrore con sinistri cambi di luce e consumano la paura da loro creata, traendo nel processo energia vitale dalle loro vittime. Per quanto possano sopravvivere ovunque nelle Lande Tenebrose, i fatui del terrore preferiscono aree umide come caverne sommerse, sponde di fiumi sotterranei e torreggianti giardini di funghi.</p>\n<p>I fatui del terrore non brillano intensamente come i fuochi fatui di superficie perché anche la più tenue luce attrae attenzione sottoterra. Creature piene d'odio e longeve, conservano vividi dettagli sulle loro vite, su loro viaggi e sulle prede più gustose. Anche se i fatui del terrore potrebbero condividere un esteso sapere ed esperienze uniche, non lo fanno, poiché dilettano nell'ignoranza altrui.</p>"
         },
         "Chandriu Invisar": {
             "npcSenses": "scurovisione"
@@ -218,7 +221,8 @@
             "npcSenses": "scurovisione"
         },
         "Urthagul": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "name": "Urthagul"
         },
         "Murmur": {
             "npcSenses": "scurovisione"
@@ -233,6 +237,34 @@
                 }
             },
             "npcSenses": "scurovisione"
+        },
+        "Elder Child Of Belcorra": {
+            "npcHp": "guarigione negativa",
+            "name": "Figlio di Belcorra Anziano",
+            "items": {
+                "BBdrCuAIiJoPRLOJ": {
+                    "name": "Soffio dell'Acquitrino",
+                    "description": "<p>@Template[type:emanation|distance:30]{9 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}</p>\n<hr />\n<p>Una creatura che inizia il suo turno entro l'area ha la sensazione che i suoi polmoni si riempiano d'acqua e deve superare un TS su @Check[type:fortitude|dc:28], altrimenti non sarà in grado di parlare o respirare. La creatura può comunque trattenere il respiro ed effettuare un nuovo TS alla fine del suo turno. Se la creatura ha successo è temporaneamente immune per 24 ore.</p>"
+                },
+                "hNe75I8nMGqBfaaP": {
+                    "name": "Emersione",
+                    "description": "<p><strong>Innesco</strong> Una creatura cammina sopra una mummia degli acquitrini che giace sepolta nel fango o nella torba sottostante.</p>\n<p><strong>Requisiti</strong> Non si è ancora tirato per l'iniziativa</p>\n<hr />\n<p><strong>Effetto</strong> La mummia degli acquitrini nota automaticamente la creatura e Scava prima di tirare l'iniziativa.</p>"
+                },
+                "V0Zof9p6jaQUrOl0": {
+                    "name": "Percezione Tellurica (impreciso) 9 metri"
+                },
+                "g2QS3ryiZhgirGmj": {
+                    "name": "Putrefazione dell'Acquitrino",
+                    "description": "<p>Questa afflizione non può essere ridotta al di sotto della fase 1 e i suoi danni non possono essere curati finché essa non viene trattata con successo con rimuovi maledizione o un effetto simile; l'afflizione può poi essere rimossa normalmente come una malattia. Una creatura uccisa dalla putrefazione dell'acquitrino si scioglie in una poltiglia tossica e non può essere resuscitata se non tramite un rituale di resuscitare di 7° livello o da una magia simile.</p>\n<hr />\n<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Fase 1</strong> portatore senza effetti nocivi (1 minuto)</p>\n<p><strong>Fase 2</strong> [[/r 3d6[negative]]]{3d6 danni negativi} e @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1} (1 giorno)</p>"
+                }
+            },
+            "npcSenses": "percezione tellurica (impreciso) 9 metri, scurovisione"
+        },
+        "Stonescale Spirits": {
+            "description": "<p>Una mezza dozzina di coboldi spettrali sorgono dalle macerie in un vortice urlante</p>",
+            "hazardDisable": "<p>@Check[type:intimidation|dc:18|name:Spaventare gli Spiriti] (addestrato) per spaventare gli spiriti con uno sfoggio di minacciosità, o @Check[type:religion|dc:21|name:Esorcizzare gli Spiriti] (addestrato) per esorcizzare gli spiriti</p>",
+            "hazardReset": "<p>L'infestazione si disattiva se all'inizio del suo turno non ci sono creature spaventate nell'area <strong>A7</strong>. I coboldi spettrali ritornano nel cumulo di macerie.</p>\n<p>L'infestazione non può riattivarsi per 1 ora.</p>",
+            "hazardRoutine": "<p>(1 azione) Gli spiriti piombano insieme su una creatura @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventata} nell'area <strong>A7</strong>, instillando sentimenti di tradimento e confusione. Il bersaglio subisce [[/r (1d10+4)[mental]]]{1d10+4 danni mentali} (TS @Check[type:will|dc:18|basic:true]).</p>"
         }
     }
 }
