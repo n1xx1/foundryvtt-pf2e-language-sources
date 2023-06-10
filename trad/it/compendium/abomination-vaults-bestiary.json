@@ -5,37 +5,245 @@
             "npcSenses": "scurovisione",
             "name": "Fatuo del Terrore",
             "npcHp": "guarigione negativa",
-            "description": "<p>I fuochi fatui nativi delle Lande Tenebrose sono più minacciosi e malevoli di quelli che fluttuano nelle solitarie paludi del mondo di superficie. Questi fatui del terrore instillano orrore con sinistri cambi di luce e consumano la paura da loro creata, traendo nel processo energia vitale dalle loro vittime. Per quanto possano sopravvivere ovunque nelle Lande Tenebrose, i fatui del terrore preferiscono aree umide come caverne sommerse, sponde di fiumi sotterranei e torreggianti giardini di funghi.</p>\n<p>I fatui del terrore non brillano intensamente come i fuochi fatui di superficie perché anche la più tenue luce attrae attenzione sottoterra. Creature piene d'odio e longeve, conservano vividi dettagli sulle loro vite, su loro viaggi e sulle prede più gustose. Anche se i fatui del terrore potrebbero condividere un esteso sapere ed esperienze uniche, non lo fanno, poiché dilettano nell'ignoranza altrui.</p>"
+            "description": "<p>I fuochi fatui nativi delle Lande Tenebrose sono più minacciosi e malevoli di quelli che fluttuano nelle solitarie paludi del mondo di superficie. Questi fatui del terrore instillano orrore con sinistri cambi di luce e consumano la paura da loro creata, traendo nel processo energia vitale dalle loro vittime. Per quanto possano sopravvivere ovunque nelle Lande Tenebrose, i fatui del terrore preferiscono aree umide come caverne sommerse, sponde di fiumi sotterranei e torreggianti giardini di funghi.</p>\n<p>I fatui del terrore non brillano intensamente come i fuochi fatui di superficie perché anche la più tenue luce attrae attenzione sottoterra. Creature piene d'odio e longeve, conservano vividi dettagli sulle loro vite, su loro viaggi e sulle prede più gustose. Anche se i fatui del terrore potrebbero condividere un esteso sapere ed esperienze uniche, non lo fanno, poiché dilettano nell'ignoranza altrui.</p>",
+            "items": {
+                "I4ZxiQRjcJ5rCCvp": {
+                    "name": "Immunità alla Magia",
+                    "description": "<p>Un fatuo del terrore è immune a tutti gli incantesimi tranne <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{dardo incantato}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{labirinto}</em>, <em>@UUID[Compendium.pf2e.spells-srd.DyiD239dNS7RIxZE]{luce incandescente}</em>, <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{luminescenza}</em> e incantesimi con il tratto positivo.</p>"
+                },
+                "YuDlX3Kr7cepFAW4": {
+                    "name": "Nutrirsi di Disperazione",
+                    "description": "<p><strong>Frequenza</strong> una volta per round.</p>\n<p><strong>Requisito</strong> un nemico entro 4,5 metri dal fatuo del terrore è sotto un effetto di paura, @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiato} o @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{morente}</p>\n<hr />\n<p><strong>Effetto</strong> Il fatuo del terrore si nutre della disperazione della creatura, recuperando [[/r 2d8[healing]]]{2d8 Punti Ferita} e infliggendo [[/r 3d8[negative]]]{3d8 danni negativi alla creatura} (TS @Check[type:fortitude|dc:25|basic:true]), e se il fatuo del terrore si è Oscurato, il suo Baluginio Terrificante si riaccende.</p>"
+                },
+                "eRq3BYWv8B8rLpXL": {
+                    "name": "Frullio d'Ombra",
+                    "description": "<p>Il fatuo del terrore si teletrasporta in un quadretto che è in grado di vedere entro 9 metri che non sia in un'area di luce intensa. Il fatuo del terrore non può usare di nuovo Frullio d'Ombra per [[/br 1d4 #Ricarica Frullio d'Ombra]]{1d4 round}.</p>"
+                },
+                "mEGMPmEBPm6Apx3y": {
+                    "description": "<p>Se il fatuo del terrore ottiene un colpo critico con il suo Colpo di tocco prociugante, il bersaglio è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiato 1}.</p>",
+                    "name": "Tocco Stancante"
+                },
+                "OHEkKMalMOyLMyRM": {
+                    "name": "Tocco Prosciugante"
+                },
+                "JfQnN4zwkzfUcPK4": {
+                    "name": "Baluginio Terrificante",
+                    "description": "<p>@Template[type:emanation|distance:20]{6 metrii} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}</p>\n<hr />\n<p>Un fatuo del terrore, benché naturalmente invisibile, brilla di un'illuminazione grigiastra, proiettando luce fioca nell'aura e risultando visibile. Le creature viventi che terminano il loro turno nell'aura devono superare un TS su @Check[type:will|dc:25] o diventano @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventate 1} (o @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventate 2} con un fallimento critico).</p>\n<p> Chi ottiene un successo critico è immune per 10 minuti.</p>"
+                },
+                "8g0Gpku3xbzwpSTx": {
+                    "name": "Oscurarsi",
+                    "description": "<p>Il fatuo del terrore estingue il suo Baluginio Terrificante, diventando @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}. Può porre fine a questo effetto con un altro uso di quest'azione. Se il fatuo del terrore usa il suo Colpo di tocco prosciugante mentre è invisibile, l'arco di pallida energia fa sì che un osservatore ne determini la posizione, rendendolo @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosto} a tutti gli osservatori fino al momento in cui il fatuo del terrore si muove.</p>"
+                }
+            }
         },
         "Chandriu Invisar": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcHp": "guarigione negativa, rinascita",
+            "items": {
+                "Pgdez88Zqu0dqgGI": {
+                    "name": "Urlo Disperato",
+                    "description": "<p>Chandriu urla di disperazione per il suo lutto e il tradimento subito, costringendo ogni creatura vivente entro 9 metri a effettuare un TS su @Check[type:will|dc:24].</p>\n<p>Con un fallimento, una creatura diventa @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentata 1} (@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentata 2} con un fallimento critico) per 1 round mentre viene sopraffatta dalla tristezza per le proprie occasioni perse. Con un successo, una creatura è temporaneamente immune all'Urlo Disperato di Chandriu per 1 minuto.</p>"
+                },
+                "41bzyFqCaaL6LCZF": {
+                    "name": "Sapienza sullo Scriptorium"
+                },
+                "a08Gf29QPITHX7mo": {
+                    "name": "Sapienza sullo Scriptorium"
+                },
+                "WersQyXKosWIiXXl": {
+                    "name": "Mano Spettrale"
+                },
+                "yJdnNORoa1KtMM7W": {
+                    "name": "Vincolato al Luogo",
+                    "description": "<p>Area <strong>C36</strong> and <strong>C37</strong>.</p>\n<hr />\n<p>Un tipico fantasma può allontanarsi soltanto per poca distanza dal luogo in cui è stato ucciso o che infesta. Il tipico limite è di 36 metri. Alcuni fantasmi sono invece vincolati a una stanza, un edificio, o un oggetto che aveva per loro un significato speciale, anziché a un luogo.</p>"
+                },
+                "rGX35xgDAZROYYQF": {
+                    "name": "Rinascita",
+                    "description": "<p>Per far riposare Chandriu, un eroe deve convincerla di smetterla di struggersi per Volluk superando una prova di @Check[type:diplomacy|dc:21|name:Convincere Chandriu|overrideTraits:true]. </p>\n<p>A prescindere dal risultato della prova, Chandriu si infuria e attacca, ma se la prova di Diplomazia è stata superata, lei è @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentata 1} per 10 round mentre combatte. Se confitta mentre è rallentata, viene messa a riposo.</p>\n<hr />\n<p>Quando un fantasma è distrutto, si riforma dopo [[/br 2d4 #giorni]]{2d4 giorni} all'interno nel luogo a cui il fantasma è vincolato, interamente guarito. Un fantasma può essere distrutto permanentemente solo se qualcuno determina la ragione della sua esistenza e mette a posto ciò che impedisce allo spirito di riposare.</p>"
+                }
+            }
         },
         "Afflicted Irnakurse": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "items": {
+                "gH06P6rp2bswuGya": {
+                    "name": "Fauci"
+                },
+                "3AqKPdexSndZxd5X": {
+                    "description": "<p>Tentacolo</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+                },
+                "jr6lRjG0ZeZgW116": {
+                    "name": "Urlo dell'Anima",
+                    "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p><strong>Effetto</strong> L'irnakurse scatena un grido alieno denso di orrore e dolore allucinante. Tutte le creature non malvagie entro un'@Template[type:emanation|distance:10]{emanazione di 3 metri} devono effettuare un TS su @Check[type:will|dc:28]. L'irnakurse può Mantenere l'Urlo dell'Anima per un massimo di 6 round; ogni volta che lo fa, l'effetto si ripete.</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata ed è temporaneamente immune all'Urlo dell'Anima per 24 ore.</p>\n<p><strong>Successo</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottita 1} per 1 round.</p>\n<p><strong>Fallimento</strong> La creatura è sbigottita 1. Ulteriori tiri salvezza falliti contro l'Urlo dell'Anima aumentano il valore della condizione di 1, fino a un massimo di sbigottita 4. A ogni notte piena di riposo del personaggio, la condizione sbigottita ottenuta da l'Urlo dell'Anima diminuisce di 1.</p>\n<p><strong>Fallimento Critico</strong> Come fallimento, eccetto che il valore sbigottita aumenta di 2 invece che di 1.</p>"
+                },
+                "kJAxB9HM1zsPkPDC": {
+                    "name": "Tentacolo"
+                },
+                "ml69ZMPwkVsbCTC7": {
+                    "name": "Tempesta di Tentacoli",
+                    "description": "<p>L'irnakurse effettua fino a quattro Colpi con i tentacoli, ciascuno contro un bersaglio diverso. Questi attacchi contano ai fini della penalità per gli attacchi multipli dell'irnakurse, ma la penalità per gli attacchi multipli non aumenta finché non ha effettuato tutti i suoi attacchi.</p>"
+                },
+                "o40ddeHAtx8cJ0uY": {
+                    "name": "Sferzata Mentale",
+                    "description": "<p>Una creatura non malvagia colpita dal tentacolo di un irnakurse è sopraffatta dalle visioni corrotte di una vita rovinata e deve superare un TS su @Check[type:will|dc:28], altrimenti è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordita 2} (o @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordita 4} in caso di fallimento critico).</p>\n<p>Dopo avere tentato questo TS, una creatura è temporaneamente immune alla Sferzata Mentale per 24 ore.</p>"
+                },
+                "PXA2uFcT0VRiQkBO": {
+                    "name": "Maledizione Spaventosa",
+                    "description": "<p>L'irnakurse è permanentemente @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato 2}, il che abbassa il suo livello efettivo di 1.</p>"
+                }
+            },
+            "description": "<p>Gli irnakurse sono elfi di superficie che i drow hanno sottoposto a pratiche di carnideformazione particolarmente crudeli e umilianti. I drow provano particolare piacere nel tormentare i loro simili di superficie. La procedura di creazione di un irnakurse prevede la deformazione di un elfo sventurato in una massa deforme di arti malformi e sporgenze ossee: quelle parti del corpo che dovrebbero essere interne spesso restano invece esposte agli occhi del mondo. Gli irnakurse sono soggetti a un condizionamento che li spinge a odiare le loro forme precedenti e queste creature preferiscono attaccare gli elfi di superficie più di qualsiasi altro bersaglio.</p>\n<hr />\n<p>Orribili abomini rimodellati dalla vile magia alchemica, i due carnideformi qui presentati sono stati creati dai drow, che trasformano gli elfi o gli xulgath catturati in mostruosità contorte che possono poi essere liberate per causare scompiglio e terrore.</p>",
+            "name": "Irnakurse Maledetto"
         },
         "Sacuishu": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "items": {
+                "JMc7RSkWQTx1DQOo": {
+                    "name": "Immunità alla Magia",
+                    "description": "<p>Sacuishu è immune a tutti gli incantesimi eccetto <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{dardo incantato}</em>,<em>@UUID[Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{labirinto}</em>, <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{luminescenza}</em> e <em>@UUID[Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE]{polvere luccicante}</em>.</p>"
+                },
+                "5dcaJKOKohQRyeQx": {
+                    "description": "<p>@Template[type:emanation|distance:20]{6 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}.</p>\n<hr />\n<p>Sacuishu è di per sé naturalmente @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}, ma risplende di una luce colorata, proiettando luce intensa nell'aura e rendendosi visibile.</p>",
+                    "name": "Bagliore"
+                },
+                "MDttImPA5a6D9APk": {
+                    "name": "Magifagia",
+                    "description": "<p><strong>Requisiti</strong> Una creatura che può lanciare incantesimi si trova entro 4,5 metri da Sacuishu</p>\n<hr />\n<p><strong>Effetto</strong> Sacuishu si nutre della magia della creatura. Sacuishu recupera [[/r 2d8[healing]]]{2d8 Punti Ferita} e il bersaglio deve tentare un TS su @Check[type:will|dc:28]. II bersaglio è quindi temporaneamente immune per un'ora.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p>\n<p><strong>Successo</strong> La prima volta che il bersaglio Lancia un Incantesimo prima dell'inizio del prossimo turno di Sacuishu, l'incantesimo è interrotto a meno che il bersaglio non superi una @Check[type:flat|dc:15]{prova semplice}.</p>\n<p><strong>Fallimento</strong> Come successo, ma l'effetto si applica la prima volta che il bersaglio Lancia un Incantesimo entro il prossimo minuto.</p>\n<p><strong>Fallimento Critico</strong> Come successo, ma l'effetto si applica ogni volta che il bersaglio Lancia un Incantesimo entro il prossimo minuto. Inoltre, Sacuishu raddoppia i Punti Ferita recuperati.</p>"
+                },
+                "y8rBowLYE52m6Vb7": {
+                    "name": "Oscurarsi",
+                    "description": "<p>Sacuishu estingue il suo bagliore e diventa @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{invisibile}. Può terminare questo effetto con un altro uso di questa azione. Se usa il suo attacco di folgore mentre è invisibile, la scarica di elettricità consente a un qualsiasi osservatore di determinare la sua posizione, rendendo Sacuishu solo @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{nascosta} a tutti gli osservatori finché non si muove.</p>"
+                }
+            }
         },
         "Viscous Black Pudding": {
             "items": {
                 "iIggw0JAX98xzjTY": {
-                    "description": "<p>Il protoplasma può arrampicarsi sui soffitti e sulle altre superfici invertite, sebbene consideri tali superfici terreno difficile.</p>"
+                    "description": "<p>Il protoplasma può arrampicarsi sui soffitti e sulle altre superfici invertite, sebbene consideri tali superfici terreno difficile.</p>",
+                    "name": "Aderire"
+                },
+                "n2BHwPEdFYp07VvG": {
+                    "name": "Pseudopode"
+                },
+                "kaDLtkZWXkQssjdZ": {
+                    "name": "Modifica Forma",
+                    "description": "<p>Un protoplasma nero viscoso è più denso della maggioranza dei protoplasmi neri e può ripiegare il suo corpo su sé stesso o distenderlo a piacimento. Il protoplasma cambia la sua taglia in Media, Grande o Enorme. Se il protoplasma è di taglia Media, la sua densità riduce le sue Velocità a 3 metri, ma per il resto questa capacità non cambia i suoi Colpi o la sua Velocità. Se il protoplasma nero viscoso si Scinde, entrambi i nuovi protoplasmi hanno la stessa taglia che avevano al momento della scissione, finché non Modificano la loro Forma.</p>"
+                },
+                "pRRtkR99srCWUO1j": {
+                    "name": "Massa Corrosiva",
+                    "description": "<p>Una creatura che colpisce il protoplasma con un'arma di metallo o di legno deve superare un TS su @Check[type:reflex|dc:22], altrimenti l'arma subisce [[/r 2d6[acid]]]{2d6 danni da acido} (dopo avere inflitto danni al protoplasma nero normalmente). Le armi da lancio e le munizioni subiscono questi danni automaticamente, senza alcun TS.</p>"
+                },
+                "SeJXe222cuooTJUx": {
+                    "name": "Scindersi",
+                    "description": "<p>Ogni volta che un protoplasma nero è colpito da un attacco o da un effetto che infliggerebbe danni taglienti, perforanti o da elettricità e possiede almeno 10 PF, si scinde in due protoplasmi identici con la metà dei PF del protoplasma originale.</p>\n<p>Un protoplasma si trova nello stesso spazio dell'originale e l'altro compare in uno spazio non occupato adiacente. Se non c'è nessuno spazio non occupato adiacente, spinge automaticamente le creature e gli oggetti fuori da uno spazio per occuparne uno (il GM decide se un oggetto o una creatura sono troppo grossi o resistenti per essere Spinti).</p>"
+                },
+                "dH7eKw8pDJQDkR3P": {
+                    "description": "<p>[[/r {(1d8+7)[bludgeoning],1d6[acid]}]]{1d8+7 danni contundenti più 1d6 da acido}, TS @Check[type:fortitude|dc:26|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "DI6Nw0XKEZZJLY8D": {
+                    "name": "Percezione del Movimento 18 metri",
+                    "description": "<p>Un protoplasma nero può percepire i movimenti vicini attraverso le vibrazioni e i movimenti nell'aria.</p>"
+                },
+                "x3yCpybINerCQY3Q": {
+                    "name": "Tocco Corrosivo",
+                    "description": "<p>Quando il protoplasma colpisce una creatura con il suo pseudopode, gli eventuali danni da acido vengono inflitti anche all'armatura o agli abiti della creatura, oltre che alla creatura stessa.</p>"
                 }
-            }
+            },
+            "name": "Protoplasma Nero Viscoso",
+            "description": "<p>Queste melme, diffuse soprattutto sottoterra, esplorano le caverne in cerca di oggetti da dissolvere tramite le loro secrezioni corrosive. Il loro potente acido è particolarmente pericoloso per le creature che attaccano il protoplasma, in quanto esso è in grado di danneggiare e distruggere rapidamente l'equipaggiamento.</p>\n<hr />\n<p>Le fanghiglie, le muffe e le altre melme infestano i dungeon più umidi e le foreste più buie. Benché non siano necessariamente malvagie, alcune crescono fino a raggiungere dimensioni enormi e il loro appetito è insaziabile.</p>",
+            "npcSpeed": "aderire",
+            "npcSenses": "percezione del movimento 18 metri, privo di vista"
         },
         "Ysondkhelir": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcHp": "guarigione planare rapida 5",
+            "items": {
+                "VDa8nmlZXUFf1Y7z": {
+                    "name": "Fauci"
+                },
+                "2dHPDZu3BYN1GauB": {
+                    "name": "Senza Respiro",
+                    "description": "<p>Gli abitanti di Leng non hanno bisogno di respirare</p>"
+                },
+                "MJktJ33e2ejK5I1o": {
+                    "name": "Morso Debilitante",
+                    "description": "<p>Una creatura che subisce danni dal morso di un abitante deve superare un TS su @Check[type:fortitude|dc:27], altrimenti diventa @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1}. Ogni volta che un bersaglio fallisce un TS aggiuntivo contro questa capacità il valore di condizione aumenta di 1 (fino a un massimo di maldestro 4). Questo valore di condizione si riduce di 1 ogni 24 ore</p>"
+                },
+                "C91ggah5Ye65LrMH": {
+                    "name": "Rubino di Leng",
+                    "description": "<p>Molti abitanti di Leng portano con loro degli strani rubini estratti dalle miniere di quel luogo. Fintanto che una creatura impugna un rubino di Leng che ha accettato volontaria mente come dono o pagamento da un abitante di Leng, qualsiasi abitante di Leng può bersagliare quella creatura con <em>@UUID[Compendium.pf2e.spells-srd.R8bqnYiThB6MYTxD]{dolore fantasma}</em>, <em>@UUID[Compendium.pf2e.spells-srd.KHnhPHL4x1AQHfbC]{leggere nella mente}</em> o <em>@UUID[Compendium.pf2e.spells-srd.KSAEhNfZyXMO7Z7V]{maledizione del reietto}</em> a una gittata di 1,5 chilometri e il portatore usa un esito di successo peggiore di un grado rispetto al risultato del suo TS contro <em>maledizione del reietto</em>.</p>"
+                },
+                "hr8UQcvJzWfTNGoH": {
+                    "name": "Guarigione Rapida Planare",
+                    "description": "<p>Un abitante di Leng mantiene costantemente un legame con Leng e quando è lontano da Leng possiede guarigione rapida 5. Perde questa capacità su Leng o nelle aree in cui i legami planari non funzionano. Se ucciso, il suo corpo si dissolve nel nulla in [[/br 1d4 #Corpo Dissolto]]{1d4 round}, lasciando il suo equipaggiamento dietro di sé. Un abitante ucciso si riforma a Leng; può essere ucciso permanentemente solo quando la sua guarigione planare rapida non funziona.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
+                },
+                "aV7tH63nZZOcXqzb": {
+                    "name": "Linguaggi (Costante)"
+                },
+                "2wByf3NmPbP0YRzy": {
+                    "name": "Rubino di Leng"
+                },
+                "AO9HakVAxS0tqRrU": {
+                    "name": "Frammento del ciondolo di Urevian"
+                },
+                "LUdvij5KTX4oc3yH": {
+                    "name": "Sapienza Nautica"
+                }
+            },
+            "description": "<p>Questi malevoli umanoidi, schiavisti e razziatori della gelida e ventosa dimensione di Leng, viaggiano per le realtà a bordo di sinistre navi nere in grado di oltrepassare i confini dei piani e delle dimensioni. Sebbene molti abitanti di Leng vadano in cerca di schiavi e di saccheggi come tutti i pirati, altri agiscono come sedicenti ambasciatori e mercanti, seminando discordia e tessendo piani a lungo termine. Sebbene questi imperscrutabili abitanti indossino vesti fluenti, veli e ampi turbanti per apparire umani, la loro fisiologia aberrante, se intravista, risulta palese dalla loro corona di piccole corna, dalle mascelle tentacolari e dalle zampe pelose simili a quelle di una capra.</p>\n<p>Al di sopra dei fieri capitani al comando delle famigerate navi nere si colloca una casta di cittadini di Leng ad essi superiore. Questi cultisti e musicisti prestano servizio come sommi sacerdoti, sforzandosi di compiacere le spaventose divinità che scrutano il Reame degli Incubi dall'alto in basso con gelida malizia.</p>"
         },
         "Drow Warden": {
             "items": {
                 "iOvO0dFhneixzLvw": {
                     "name": "Status +2 a Tutti i TS Contro Mentale"
+                },
+                "GMWiXA8zpcvJD4Fp": {
+                    "name": "Oscurità (A Volontà)"
+                },
+                "Jf35tOxuG3lkWtlq": {
+                    "description": "<p>Il guardiano infligge 1d6 danni di precisione aggiuntivi alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "Qc2AY3uXl9fGeDBe": {
+                    "description": "<p>Un bersaglio danneggiato dal Colpo in mischia di un guardiano deve superare un TS su @Check[type:fortitude|dc:21] o resta @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del turno successivo del guardiano</p>",
+                    "name": "Fendente Ostacolante"
+                },
+                "c0PlxHB3aGqwm9qD": {
+                    "name": "Luminescenza (A Volontà)"
                 }
             },
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcAllSaves": "status +1 a tutti i TS contro magia, status +2 a tutti i TS contro mentale",
+            "description": "<p>I guardiani sorvegliano gli accampamenti drow e spesso lavorano in piccoli gruppi</p>\n<hr />\n<p>I drow hanno la reputazione di essere malvagi a causa del la venerazione dei demoni nei loro insediamenti maggiori. Tuttavia, come i membri di qualsiasi stirpe, i drow possono avere qualsiasi allineamento. specie quando sottratti dalla sinistra influenza dei signori dei demoni.</p>",
+            "name": "Drow Guardiano"
         },
         "Dreshkan": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "items": {
+                "ch9nYPl6I99TJLu9": {
+                    "name": "Postura Sciamante",
+                    "description": "<p>Un dreshkan può occupare lo stesso spazio di un morlock o di un altro dreshkan, ma non più di due creature del genere possono occupare lo stesso spazio. Quando queste creature condividono lo stesso spazio, ottengono bonus di circostanza +1 ai tiri per colpire.</p>"
+                },
+                "tjRomYaatwAgMUvv": {
+                    "description": "<p>Un dreshkan è in parte tecnologico. Gli effetti di guarigione positiva curano un dreshkan solo della metà del normale.</p>",
+                    "name": "Parzialmente Tecnologico"
+                },
+                "C2yMhpgqYU1HM1NR": {
+                    "name": "Artiglio"
+                },
+                "94yfc2eSiwRZfq49": {
+                    "name": "Ago"
+                },
+                "gyyRt5jyTNORzIpr": {
+                    "name": "Ago Difensivo",
+                    "description": "<p><strong>Innesco</strong> Una creatura ottiene un fallimento critico Colpendo il dreshkan in mischia.</p>\n<hr />\n<p><strong>Effetto</strong>Il dreshkan un Colpo di ago contro quella creatura.</p>"
+                },
+                "BPvAPhpd3Nzs8pvv": {
+                    "name": "Spruzzo d'Aghi",
+                    "description": "<p>Il dreshkan si solleva su tutti e quattro gli arti e spruzza aghi contro quante creature desidera in un @Template[type:cone|distance:30]{cono di 9 metri}, infliggendo [[/r {2d4[piercing],2d8[electricity]}]]{2d4 danni perforanti più 2d8 danni da elettricità} (TS @Check[type:reflex|dc:21|basic:true]).</p>"
+                }
+            },
+            "description": "<p>Poiché i morlock discendono da lontani antenati umani, sottoporre un morlock a una deformazione della carne maldestra o frettolosa produce semplicemente un @UUID[Compendium.pf2e.pathfinder-bestiary.K9Hw43co8fhwmKkM]{grothlut}. I carnideformatori più abili, tuttavia, possono estrarre le differenze genetiche da un morlock per creare una creatura del tutto diversa. Creare un dreshkan implica la sostituzione delle ossa del morlock con uno scheletro di metallo. Il nuovo scheletro è spesso molto potenziato, ad esempio con arti aracnoidi che spuntano dalla spina dorsale o scomparti di minuscoli aghi letali. Dalla sua creazione in avanti, dell'elettricità arcana scorre attraverso il dreshkan, rendendolo nervoso e irritabile.</p>\n<p>I morlock vedono i dreshkan come impressionanti fusioni di carne e tecnologia e combattono volentieri al fianco di queste creature, da loro viste come massima realizzazione del potenziale morlock.</p>\n<hr />\n<p>Sebbene deformare le vittime in forme orrende sia un ben noto passatempo dei drow malvagi, altri mostri sotterranei hanno rubato queste pratiche o le hanno sviluppate indipendentemente. I vermiformi seugathi a volte deformano altre creature i cui territori confinano con le loro terre senza luce; i carnideformi che seguono derivano rispettivamente da morlock e urdefhan.</p>",
+            "npcAllSaves": "status +2 a tutti i TS contro affaticato, condannato, effetti di morte, malattia, nauseato, paralizzato, sanguinamento e veleno"
         },
         "Nox": {
             "items": {
@@ -43,18 +251,85 @@
                     "name": "Suono Dirompente (A Volontà)"
                 },
                 "SC9Vfc2U7mtfdimN": {
-                    "name": "Fiamma di Morte"
+                    "name": "Fiamma di Morte",
+                    "description": "<p>Quando Nox muore, il suo corpo brucia in un lampo di ardenti fiamme bianche che infligge [[/r 5d6[fire]]]{5d6 danni da fuoco} alle creature in un'@Template[type:burst|distance:20]{esplosione di 6 metri} (TS @Check[type:reflex|dc:21|basic:true]). L'equipaggiamento e il tesoro di Nox non vengono influenzati dalle fiamme e vengono lasciati in un cumulo dove è morto.</p>"
+                },
+                "kqpPg4HkBr9iLaWM": {
+                    "name": "Strumento Musicale Maneggevole da Virtuoso (Tiorba)"
+                },
+                "5yALvKiWzaN3usex": {
+                    "name": "Oscurità (A Volontà)"
+                },
+                "fDft2vRYcFM3JXBe": {
+                    "name": "Esibizione Intensa",
+                    "description": "<p>Quando Nox ha uno strumento musicale in mano, può usare Esibizione per @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Fintare} o @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralizzare}.</p>"
+                },
+                "gAui54rDueAP4nNh": {
+                    "description": "<p>Nox infligge 1d6 danni da precisione addizionali alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
             },
-            "npcHp": "fiamma di morte"
+            "npcHp": "fiamma di morte",
+            "npcSenses": "scurovisione superiore"
         },
         "Quara Orshendiel": {
             "items": {
                 "e2TItLJ7Ia5jTsir": {
                     "name": "Status +2 a Tutti i TS Contro Mentale"
+                },
+                "5ghMpQ8FJkhKBa0c": {
+                    "name": "Oscurità (A Volontà)"
+                },
+                "94npIYAEHcak0YRt": {
+                    "name": "Kukri Poderoso +1"
+                },
+                "wNrNVfIbe0JDWhOu": {
+                    "name": "Luminescenza (A Volontà)"
+                },
+                "GpoVeh1bdg8JH2SG": {
+                    "name": "Negare Vantaggio",
+                    "description": "<p>Quara non è impreparata nei confronti delle creature nascoste, non individuate o che la attaccano ai fianchi di 11° livello o inferiore, o nei confronti delle creature di 11° livello o inferiore che usano Attacco Improvviso.</p>"
+                },
+                "f50ST8T8gY3pQJfx": {
+                    "name": "Eludere",
+                    "description": "<p>Quando Quara ottiene un successo in un tiro salvezza su Riflessi, ottiene invece un successo critico.</p>"
+                },
+                "x13RVTp5gtE3XOTa": {
+                    "name": "Tiro sulla Difensiva",
+                    "description": "<p>Gli attacchi a distanza di Quara non innescano reazioni.</p>"
+                },
+                "4mS9YqseWjLaRiQq": {
+                    "name": "Schermaglia Scattante",
+                    "description": "<p>Quara Avanza o fa un Passo, poi Colpisce. II Colpo infligge [[/r {3d6}]]{3d6 danni aggiuntivi}.</p>"
+                },
+                "hw9SLn99zC7mqeTR": {
+                    "name": "Veleno Intorpidente",
+                    "description": "<p>Il veleno intorpidente e un distillato più potente del @UUID[Compendium.pf2e.equipment-srd.zo0ophqfKunJFxZN]{veleno letargico}. Un bersaglio esposto più volte al veleno intorpidente non deve effettuare tiri salvezza aggiuntivi; solo fallire un tiro salvezza contro un'esposizione in corso può farne progredire le fasi.</p>\n<hr />\n<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:20|traits:alchemical,incapacitation,injury,poison,sleep]</p>\n<p><strong>Durata Massima</strong> 6 ore</p>\n<p><strong>Fase 1</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} e @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} (1 round)</p>\n<p><strong>Fase 2</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 2} e impreparato (1 round)</p>\n<p><strong>Fase 3</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{privo di sensi} senza prova di Percezione per svegliarsi (1 round)</p>\n<p><strong>Fase 4</strong> privo di sensi senza prova di Percezione per svegliarsi ([[/r 1d6 #ore]]{1d6 ore})</p>"
+                },
+                "ckEhVhjZnjMqhSjZ": {
+                    "name": "Estrazione del Tiratore",
+                    "description": "<p><strong>Frequenza</strong> una volta per round</p>\n<hr />\n<p><strong>Effetto</strong> Quara Interagisce per estrarre una balestra a mano a ripetizione e Colpisce con essa, oppure Colpisce con una balestra a mano a ripetizione carica che impugna e poi Interagisce per riporla.</p>"
+                },
+                "hvENSxQhO8lwlD1Y": {
+                    "name": "Aura di Comando",
+                    "description": "<p>@Template[type:emanation|distance:30]{9 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}.</p>\n<hr />\n<p>I drow attorno a Quara sono rincuorati dalla sua presenza: i suoi alleati drow all'interno dell'area ottengono bonus di status +1 a tiri per colpire e prove di abilità.</p>"
+                },
+                "od2Tpdqgyx5vuTIw": {
+                    "name": "Avvelenare Arma",
+                    "description": "<p><strong>Requisiti</strong> Quara sta impugnando un'arma perforante o tagliente e ha una mano libera</p>\n<hr />\n<p><strong>Effetto</strong> Quara applica del veleno all'arma.</p>"
+                },
+                "vdPooFytAas2OzRw": {
+                    "name": "Trucchetto di Ricarica",
+                    "description": "<p><strong>Requisiti</strong> Quara sta impugnando una balestra a mano a ripetizione non carica</p>\n<hr />\n<p><strong>Effetto</strong> Quara Interagisce per ricaricare la balestra a mano a ripetizione poi Colpisce con essa.</p>"
+                },
+                "sHEWmioIhOpSrSzb": {
+                    "name": "Chiave di Quara"
+                },
+                "iVTeyuWxtumKvgfY": {
+                    "description": "<p><strong>Attivazione</strong> <span class=\"pf2-icon\">2</span> Interagire</p>\n<p>Il veleno intorpidente e un distillato più potente del @UUID[Compendium.pf2e.equipment-srd.zo0ophqfKunJFxZN]{veleno letargico}. Un bersaglio esposto più volte al veleno intorpidente non deve effettuare tiri salvezza aggiuntivi; solo fallire un tiro salvezza contro un'esposizione in corso può farne progredire le fasi.</p>\n<hr />\n<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Durata Massima</strong> 6 ore</p>\n<p><strong>Fase 1</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} e @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} (1 round)</p>\n<p><strong>Fase 2</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 2} e impreparato (1 round)</p>\n<p><strong>Fase 3</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{privo di sensi} senza prova di Percezione per svegliarsi (1 round)</p>\n<p><strong>Fase 4</strong> privo di sensi senza prova di Percezione per svegliarsi ([[/r 1d6 #ore]]{1d6 ore})</p>"
                 }
             },
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcAllSaves": "status +1 a tutti i TS contro magia, status +2 a tutti i TS contro mentale"
         },
         "Morlock Scavenger": {
             "npcSenses": "scurovisione"
@@ -209,20 +484,125 @@
             "npcSenses": "scurovisione"
         },
         "Poisoning Room Specter": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "name": "Spettro della Stanza dell'Avvelenamento",
+            "items": {
+                "zjVbARImBBAx6EKv": {
+                    "name": "Tocco Abietto"
+                },
+                "qh8LFXVLWjILfZZx": {
+                    "name": "Incapacità alla Luce Solare",
+                    "description": "<p>Uno spettro esposto alla luce solare è @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 2} e @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 2} finché rimane esposto.</p>"
+                },
+                "OSiq1CXChzTT7udW": {
+                    "name": "Corruzione Spettrale",
+                    "description": "<p>Lo spettro effettua un Colpo con tocco abietto. Se danneggia una creatura vivente, lo spettro guadagna 5 Punti Ferita temporanei e la creatura bersaglio deve effettuare un TS su @Check[type:will|dc:24] per evitare di venire corrotta.</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata e è temporaneamente immune alla corruzione spettrale per 1 minuto.</p>\n<p><strong>Successo</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottita 2} per 1 ora.</p>\n<p><strong>Fallimento</strong> La creatura soccombe alla corruzione e diventa uno schiavo spettrale. La creatura è @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{controllata} dallo spettro e ubbidisce ai suoi ordini, telepatici o verbali, ad eccezione di quelli che prevedono comportamenti palesemente autodistruttivi. Questo effetto dura fino alla fine del prossimo turno dello schiavo, dopo il quale non è più controllato ma diventa @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottito 2} per 1 ora.</p>\n<p><strong>Fallimento Critico</strong> Come nel fallimento, ma la durata è illimitata. Lo schiavo può tentare un nuovo TS su Volontà alla fine di ogni suo turno; in caso di successo non è più controllato dallo spettro, ma diventa @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottito 2} per 1 ora.</p>"
+                },
+                "C46qe4d4dQ5DqKp4": {
+                    "name": "Cerbottana Vile"
+                },
+                "9yk5MBYML8Z0OmtD": {
+                    "name": "Telepatia (solo con gli schiavi spettrali)"
+                },
+                "BPJS4QzIXUC3Zmwf": {
+                    "description": "<p>@Template[type:emanation|distance:30]{9 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura} @Check[type:will|dc:22]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "RGaUdIjwMpgnNYGg": {
+                    "name": "Fame di Dolore",
+                    "description": "<p>Uno spettro che non infligge danni negativi a un umanoide vivente da più di un mese diventa disperato e quasi animalesco. Perde il controllo di tutti gli schiavi corrotti eventualmente posseduti, diventa @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{accelerato} e il suo allineamento passa da legale malvagio a caotico malvagio. Può usare la sua azione aggiuntiva soltanto per sferrare Colpi con tocco abietto contro bersagli umanoidi. Alla fine del turno in cui infligge un qualsiasi numero di danni negativi a un umanoide vivente, ritorna legale malvagio e non è più accelerato, ma tutti gli schiavi di cui ha perso il controllo restano liberi.</p>"
+                }
+            },
+            "npcHp": "guarigione negativa",
+            "description": "<p>Quando una creatura mortale malvagia muore, a volte torna a perseguitare l'area della sua morte come uno spettro, un odioso residuo spinto dal desiderio di uccidere gli altri, specialmente gli umanoidi, e di dispensare dolore al maggior numero possibile di anime. Uno spettro conserva una vaga parvenza della sua identità precedente, ma gli obiettivi che persegue sono sempre corrotti. Non è possibile ragionare con uno spettro.</p>\n<p>Se a uno spettro viene negata l'opportunità di danneggiare gli umanoidi viventi, si fa sempre più agonizzante e irrazionale, adottando un comportamento simile a quello di un individuo affamato a cui sia costantemente negata la liberazione dall'agonia attraverso la morte.</p>"
         },
         "Caliddo Haruvex": {
             "npcSenses": "scurovisione"
         },
         "Warped Brew Morlock": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcAllSaves": "status +2 a tutti i TS contro malattia e veleno",
+            "items": {
+                "sdsJsKNzbvVK8R4I": {
+                    "name": "Sedia di Legno"
+                },
+                "HaYQ8Cd4C0hYSFdc": {
+                    "name": "Attacco con Balzo",
+                    "description": "<p>Il morlock Avanza fino al doppio della sua Velocità e durante questa avanzata può tentare un @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{Salto in Alto} o un @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Salto in Lungo}. In un qualsiasi punto durante il suo movimento, il morlock può effettuare un Colpo in mischia contro un nemico nella sua Portata.</p>\n<p>Poi il morlock non può usare l'Attacco con Balzo per 1 round.</p>"
+                },
+                "Y6Rqq2ahFM07WKRm": {
+                    "name": "Postura Sciamante",
+                    "description": "<p>Un morlock può condividere la stessa casella di un altro morlock, ma non più di due morlock possono occupare la stessa casella. Quando i morlock condividono la stessa casella, ottengono bonus di circostanza +1 ai tiri per colpire.</p>"
+                },
+                "3vycv9ThXOQbgNBf": {
+                    "name": "Inventore Istintivo",
+                    "description": "<p>Il morlock armeggia con un costrutto o un pericolo meccanico adiacente. Tenta una prova di @Check[type:crafting]{Artigianato} contro la CD di Tempra del costrutto o del pericolo. Il morlock non può avere successo se il livello del bersaglio è superiore al doppio del livello del morlock.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio ottiene [[/r 4d6[healing]]]{4d6 PF} e bonus di circostanza +1 ai tiri per colpire per 1 minuto.</p>\n<p><strong>Successo</strong> Il bersaglio ottiene [[/r 2d6[healing]]]{2d6 PF}.</p>\n<p><strong>Fallimento Critico</strong> Il morlock si ferisce e subisce [[/r {2d6}]]{2d6 danni} (solitamente contundenti, perforanti, taglienti, ma potenzialmente di un tipo diverso, a discrezione del GM).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.TEzLEXBZzNCp6flg]{Effetto: Inventore Istintivo (Successo Critico)}</p>"
+                },
+                "7Y7vl4vBRBKsb6wB": {
+                    "name": "Fauci"
+                },
+                "W2nnShEx9f5pWTjq": {
+                    "name": "Boccale di Peltro"
+                },
+                "G412UtVloe7PIpa4": {
+                    "name": "status +2 a tutti i TS contro malattia e veleno"
+                },
+                "NXk6QjCfO8eW6Txp": {
+                    "description": "<p>Quando il morlock Colpisce una creatura che possiede la condizione impreparato infligge anche 1d6 danni di precisione.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                }
+            },
+            "name": "Morlock della Birrideformazione",
+            "description": "<p>I morlock, generati da quegli umani allontanati da tempo dal mondo della luce, sono mostri brutali che vivono nei tunnel labirintici delle propaggini superiori delle Lande Tenebrose. La loro corporatura snella può trarre in inganno, ma i loro arti sono forti e le reazioni fulminee. Hanno braccia abbastanza lunghe da potersi accucciare e avanzare a quattro zampe con straordinaria agilità quando devono muoversi velocemente o furtivamente. Non ricordano più le vite che i loro antenati conducevano in superficie, anche se molti morlock vivono ancora tra le rovine delle dimore di un tempo. Alcuni morlock venerano le statue degli umani di quelle ere scomparse come se fossero divinità, ma altri ora venerano Lamashtu, Rovagug o altre divinità violente.</p>\n<p>I giovani morlock sono insaziabili e sono pronti a contendersi anche il più piccolo frammento di cibo, fino al punto di divorare i loro fratelli se non hanno altri pasti a disposizione. Molti morlock incoraggiano questa pratica per garantire che il gruppo ancestrale nella sua interezza si rafforzi.</p>\n<p>Un tipico morlock è alto poco più di 1,5 metri e pesa circa 75 chilogrammi.</p>"
         },
         "Beluthus": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
+            "npcHp": "(guarigione negativa)",
+            "items": {
+                "N9qNd1NMgEeyNwcF": {
+                    "name": "Deviare gli Incantesimi",
+                    "description": "<p>Un incantatore che bersaglia un divoratore con un incantesimo mentale, <em>@UUID[Compendium.pf2e.spells-srd.Ht35SDf9PDStJfoC]{canto dello spirito}</em>, <em>@UUID[Compendium.pf2e.spells-srd.hVU9msO9yGkxKZ3J]{collera divina}</em>, <em>@UUID[Compendium.pf2e.spells-srd.bay4AfSu2iIozNNW]{esilio}</em>, <em>@UUID[Compendium.pf2e.spells-srd.PHVHBbdHeQRfjLmE]{esplosione dello spirito}</em>, <em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{legare anima}</em>, <em>@UUID[Compendium.pf2e.spells-srd.wU6hNzK8Yfqdmc8m]{possessione}</em> o <em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{sentenza divina}</em> può tentare una prova di contrastare per liberare un'anima che il divoratore ha intrappolato con Divorare Anima. Se questo tentativo di contrastare ha successo, l'anima intrappolata viene liberata (anche se la creatura rimane morta) e il divoratore non può usare nessuna carica dell'anima di quella creatura.</p>\n<p>Sotto ogni altro aspetto, i divoratori sono immuni a questi incantesimi.</p>"
+                },
+                "bMX8ZvBxeu0Ty5cl": {
+                    "name": "Divorare Anima",
+                    "description": "<p>Il divoratore tocca una creatura entro portata, infliggendo [[/r 8d6[negative]]]{8d6 danni negativi} (TS @Check[type:fortitude|dc:26|basic:true]). Se una creatura è uccisa da questo attacco, la sua anima resta intrappolata nel divoratore. Mentre la sua anima è intrappolata, una creatura non può essere riportata in vita se non tramite una magia potente come un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{desiderio}</em>. Distruggendo il divoratore o Contrastando con successo Divorare Anima (vedi deviare gli incantesimi) l'anima viene liberata. Il divoratore può intrappolare soltanto un'anima alla volta.</p>\n<p>Un'anima possiede 5 cariche dell'anima per ogni livello della creatura originante (vedi Incantesimi dell'Anima). Il divoratore può spendere queste cariche per lanciare incantesimi. Se l'anima viene liberata e la creatura ritorna in vita, essa è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 1} per ogni 5 cariche dell'anima spese. Se la creatura scende a 0 cariche, l'anima è consumata e può essere riportata in vita soltanto da potenti magie come <em>desiderio</em>.</p>"
+                },
+                "2a2eONlkTBanM6W0": {
+                    "name": "Risucchiare Vita",
+                    "description": "<p>Quando il divoratore danneggia una creatura vivente con il suo Colpo con l'artiglio, il divoratore ottiene 10 Punti Ferita Temporanei e la creatura deve superare un TS su @Check[type:fortitude|dc:24], altrimenti diventa @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 1}. Gli ulteriori danni inflitti dal divoratore aumentano il valore di condizione di 1 in caso di tiro salvezza fallito, fino a un massimo di Risucchiato 4.</p>"
+                },
+                "Hu1SdyNVG4WJmNcx": {
+                    "name": "Incantesimi dell'Anima",
+                    "description": "<p>Un divoratore lancia incantesimi occulti innati ma, per farlo, deve spendere un numero di cariche dell'anima pari al livello dell'incantesimo (come se lanciasse un incantesimo usando le cariche di un bastone). Può intensificare qualsiasi incantesimo fino a un massimo del 6° livello spendendo più cariche mentre Lancia l'Incantesimo. Quando viene incontrato, un divoratore solitamente possiede un'anima intrappolata con 10 cariche dell'anima.</p>"
+                },
+                "L8z6SDNKm57PB639": {
+                    "name": "Artiglio"
+                }
+            },
+            "description": "<p>Quando i nefandi e gli incantatori malvagi più potenti si smarriscono nelle profondità più remote del multiverso, a volte fanno ritorno come orrendi Non Morti chiamati divoratori, che assimilano la anime dei viventi per alimentare le loro macchinazioni arcane. I loro corpi vengono devastati e ricostruiti, svuotati e deformati, mentre le loro menti sono sottoposte a una trasformazione spirituale. Ottengono le capacità di vincolare le altre anime alla propria e di risucchiare le loro essenze per trarne potere magico, anche se quello che assorbono non li sazia mai. All'interno delle loro casse toraciche si agita un ammasso di figure spettrali deformi, le manifestazioni delle anime assorbite più recentemente dai divoratori.</p>"
         },
         "Urthagul": {
             "npcSenses": "scurovisione",
-            "name": "Urthagul"
+            "name": "Urthagul",
+            "items": {
+                "VgEW660oBhpCgGPZ": {
+                    "name": "Artiglio"
+                },
+                "iwppReF9hEA7igPO": {
+                    "name": "Fauci"
+                },
+                "fIssfjOuDo0yfwLc": {
+                    "name": "Flessibilità Inquietante",
+                    "description": "<p>Nonostante la sua taglia, il gug può attraversare gli spazi stretti come se fosse una creatura Media grazie alle sue giunture multiple. Mentre si @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Stringe}, può muoversi alla sua velocità completa.</p>"
+                },
+                "yTXiHzmRavI1BmKJ": {
+                    "description": "<p>Artiglio</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+                },
+                "b1w5wps2XBnNPOls": {
+                    "description": "<p>Il gug effettua fino a quattro Colpi con l'artiglio, ognuno contro un bersaglio diverso. Tutti questi attacchi contano al fine di determinare la penalità da attacchi multipli del gug, ma la penalità aumenta soltanto dopo che il gug ha effettuato tutti i suoi attacchi.</p>",
+                    "name": "Artigli Furiosi"
+                }
+            },
+            "description": "<p>La caratteristica più orribile di un gug è la sua testa cilindrica, che si apre verticalmente per rivelare numerose file di zanne gialle e affilate e una gola spalancata. Gli occhi ai lati della mascella sono piccoli, ma acuti. Alcune placche ossee proteggono gli occhi dalle prede che si agitano, in quanto un gug preferisce i pasti a base di carne cruda e viva rispetto ai funghi e alle muffe. Un gug afferra le suddette prede con le sue possenti braccia, che si dividono in due avambracci all’altezza del gomito: questi bruti mostruosi possono quindi contare su quattro zampe artigliate. I gug sono ricoperti di pelo nero e ispido, spesso incrostato di sangue fresco e rappreso.</p>\n<p>Sebbene i gug abbiano un aspetto bestiale, sono dotati di un intelletto acuto e malvagio. Si nascondono sottoterra, ma a volte si spingono in superficie per andare a caccia durante le notti più buie, da soli o in piccoli gruppi. I gug sono spinti da un appetito vorace e quasi sempre divorano immediatamente le creature che catturano, ma ce ne sono alcuni che rapiscono le loro vittime e si rifugiano sottoterra, lasciando dietro di sé solo una puzza persistente e strane impronte di artigli. Le vittime vengono portate in fetide tane decorate con strane rune, dove vengono sacrificate a crudeli divinità del sangue, dell’oscurità e degli incubi. Alcune voci preoccupanti parlano di città senza luce fatte di titanici blocchi di pietra ed erette nei più profondi meandri sotterranei, dove i più potenti capi gug predicano le loro infami dottrine a intere folle di gug urlanti.</p>\n<p>I gug hanno uno strano rapporto con i ghoul, che sembra risalire alla loro origine comune in un lontano mondo sotterraneo. I gug vivono nel timore dei ghoul, sebbene li sovrastino fisicamente; questa strana paura non si applica invece ai ghast, che i gug divorano avidamente come fanno con tutte le altre creature.</p>\n<p>Un gug è alto 4,8 metri e pesa una tonnellata, anche se la loro andatura insolita e aggraziata smentisce le loro dimensioni immense. Il loro passo leggero e la capacità di insinuarsi nei passaggi più stretti fa dei gug gli uomini neri per eccellenza nelle storie relative a strane sparizioni o sanguinosi massacri.</p>\n<p>Alcuni gug particolarmente assetati di sangue ottengono terribili poteri in dono dai loro mecenati ultraterreni. Questi mostri sono conosciuti come saggi, non sono mai inferiori al 12° livello in termini di potere e ottengono diversi incantesimi innati occulti, Sebbene la precisa composizione degli incantesimi di ogni saggio possa variare, normalmente questi incantesimi garantiscono l’invisibilità, conferiscono il potere di manipolare e plasmare la roccia o scatenano terribili energie distruttive sulla carne dei viventi.</p>"
         },
         "Murmur": {
             "npcSenses": "scurovisione"
@@ -264,7 +644,514 @@
             "description": "<p>Una mezza dozzina di coboldi spettrali sorgono dalle macerie in un vortice urlante</p>",
             "hazardDisable": "<p>@Check[type:intimidation|dc:18|name:Spaventare gli Spiriti] (addestrato) per spaventare gli spiriti con uno sfoggio di minacciosità, o @Check[type:religion|dc:21|name:Esorcizzare gli Spiriti] (addestrato) per esorcizzare gli spiriti</p>",
             "hazardReset": "<p>L'infestazione si disattiva se all'inizio del suo turno non ci sono creature spaventate nell'area <strong>A7</strong>. I coboldi spettrali ritornano nel cumulo di macerie.</p>\n<p>L'infestazione non può riattivarsi per 1 ora.</p>",
-            "hazardRoutine": "<p>(1 azione) Gli spiriti piombano insieme su una creatura @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventata} nell'area <strong>A7</strong>, instillando sentimenti di tradimento e confusione. Il bersaglio subisce [[/r (1d10+4)[mental]]]{1d10+4 danni mentali} (TS @Check[type:will|dc:18|basic:true]).</p>"
+            "hazardRoutine": "<p>(1 azione) Gli spiriti piombano insieme su una creatura @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventata} nell'area <strong>A7</strong>, instillando sentimenti di tradimento e confusione. Il bersaglio subisce [[/r (1d10+4)[mental]]]{1d10+4 danni mentali} (TS @Check[type:will|dc:18|basic:true]).</p>",
+            "name": "Spiriti degli Scagliedipietra"
+        },
+        "Spike Launcher": {
+            "name": "Sparachiodi",
+            "description": "<p>Un acuminato chiodo di metallo viene sparato da un lanciatore nascosto.</p>",
+            "hazardDisable": "<p>@Check[type:thievery|dc:16|name:Disattivare Lanciatore|traits:mechanical,trap] per disattivare uno dei quattro lanciatori o @Check[type:acrobatics|dc:12|name:Evitare Filo di Innesco|traits:mechanical,trap] per passare sopra un filo d'innesco (questo non disarma la trappola, ma evita di innescarla)</p>"
+        },
+        "Galudu": {
+            "npcHp": "pulviscolo di morte",
+            "items": {
+                "S9nPU36oRplQB6mn": {
+                    "name": "Passo di Opportunità",
+                    "description": "<p><strong>Innesco</strong> Una creatura abbagliata o accecata, o una creatura con cecità alla luce, termina il suo movimento adiacente a Galudu</p>\n<hr />\n<p><strong>Effetto</strong> Galudu fa un Passo.</p>"
+                },
+                "re67Wr8G5ybq0iEY": {
+                    "name": "Nutrimento del Sopravvissuto",
+                    "description": "<p>Una creatura che mangia il cibo evocato dall'incantesimo creare cibo di Galudu riguadagna [[/r 4d4[healing]]]{4d4 Punti Ferita}. Una creatura può beneficiare di questa guarigione solo una volta alla settimana.</p>"
+                },
+                "iZFB4xCQhaumJQTC": {
+                    "name": "Pulviscolo di Morte",
+                    "description": "<p>Quando Galudu muore, il suo corpo esplode in un brillante pulviscolo di energia magica. Tutte le creature in un'@Template[type:burst|distance:20]{esplosione di 6 metri} subiscono [[/r 12d6[force]]]{12d6 danni da forza} (TS @Check[type:reflex|dc:30|basic:true]). L'equipaggiamento di Galudu non viene influenzato dall'esplosione e rimane in una pila nel punto in cui è morta.</p>"
+                },
+                "ediMsqeJ8TKtfzcR": {
+                    "name": "Oscurità (A Volontà)"
+                },
+                "H44u0Lp3c8QPlUiB": {
+                    "name": "Foschia Occultante (A Volontà)"
+                },
+                "3gFefPT1vPEUJqTj": {
+                    "description": "<p>Galudu infligge 3d6 danni da precisione aggiuntivi alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                }
+            },
+            "npcSenses": "scurovisione superiore"
+        },
+        "Torture Chamber Barbazu": {
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
+            "items": {
+                "j5nOoy2JdxGbg96d": {
+                    "name": "Porta Dimensionale (A Volontà)"
+                },
+                "99jBJtnLmD48VOSS": {
+                    "name": "Artiglio"
+                },
+                "kwMV2uj1jCdvIm7J": {
+                    "name": "Barba"
+                },
+                "fDmw9feXNMKuAci4": {
+                    "name": "Telepatia 30 metri"
+                },
+                "SNJ0RSCREyP9YYKY": {
+                    "name": "Ferita Infernale",
+                    "description": "<p>Il Colpi con il falcione di un diavolo barbuto infligge anche [[/r 1d6[bleed]]]{1d6 danni da sanguinamento persistenti} che resistono ai tentativi di guarigione.</p>\n<p>La prova semplice per fermare il sanguinamento parte a @Check[type:flat|dc:20]{CD 20}. La CD è ridotta a @Check[type:flat|dc:15]{15} solo se la creatura sanguinante o un alleata assiste con successo al recupero. La CD per @UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Prestare Primo Soccorso} a una creatura con una ferita infernale aumenta di 5.</p>\n<p>Un incantatore o un oggetto che tenta di usare magia di guarigione su una creatura che subisce una ferita infernale deve superare una prova di contrasto con CD 21, altrimenti la magia non riesce a guarire la creatura.</p>"
+                },
+                "zQUhdB7kvudfGv5Z": {
+                    "name": "Riposizionamento",
+                    "description": "<p><strong>Innesco</strong> Il diavolo colpisce una creatura con un Colpo con il falcione.</p>\n<hr />\n<p><strong>Effetto</strong> Il diavolo muove la creatura di 1,5 metri in una qualsiasi direzione. Il quadretto di destinazione deve trovarsi entro portata del falcione del diavolo.</p>\n<p>Questo movimento non innesca reazioni.</p>"
+                },
+                "6zbiPHhWaAV5pJd6": {
+                    "description": "<p><strong>Frequenza</strong> una volta per round.</p>\n<hr />\n<p><strong>Effetto</strong> Il barbazu effettua un Colpo con la barba. Questo Colpo ignora la sua penalità da attacchi multipli e non conta al fine di determinare tale penalità.</p>",
+                    "name": "Barba Brulicante"
+                },
+                "jiUi7cG1ldGKfHsM": {
+                    "name": "Falcione Infernale"
+                },
+                "DzJcNWKMqkWqtgAX": {
+                    "name": "Falcione Infernale"
+                },
+                "GZ55vWFhwaHyhnfM": {
+                    "name": "Febbre dell'Averno",
+                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Fase 1</strong> portatore sano (1 giorno)</p>\n<p><strong>Fase 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 giorno)</p>\n<p><strong>Fase 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 2} (1 giorno)</p>"
+                }
+            },
+            "description": "<p>Un barbazu, noto anche come diavolo barbuto o diavolo di fanteria, è un nefando omicida che sazia la sua brama di annientamento prestando servizio come fante negli eserciti dell'Inferno, spesso guidando in battaglia orde di diavoli minori come Imp e Lemuri. I diavoli barbuti brandiscono falcioni seghettati con cui infliggere squarci che resistono alla magia curativa, provocando una tremenda emorragia. Quando i nemici si avvicinano troppo, i diavoli barbuti colpiscono con le spine delle loro barbe brulicanti per diffondere un'odiosa malattia chiamata febbre dell'Averno, che permette loro di gustarsi la scena della forza della loro vittima che lentamente divorata dall'interno.</p>\n<p>I barbazu sono presenti in tutti gli strati dell'Inferno: assecondano con voluttà ogni capriccio dei malvagi signori infernali ed esultano nel seminare morte, disperazione e angoscia a piacimento.</p>\n<hr />\n<p>I diavoli, maestri della corruzione e architetti della conquista, cercano sia di tentare le forme di vita mortali a unirsi a loro nella conquista di tutto ciò che è profano, sia di diffondere la tirannia in tutti i mondi. Le tentazioni che offrono ai mortali vanno dai grandi poteri concessi dalla firma di un contratto infernale ai favori manipolati in seguito a una promessa sussurrata a un diabolico patrono, fino a un qualsiasi numero di accordi ancora più discreti. Coloro che soccombono a queste tentazioni vengono consegnati a una vita ultraterrena di infinito tormento nelle fosse infernali, dove l'unica speranza di fuga risiede nella possibilità di essere promosso e diventare un diavolo nei ranghi infernali. Ogni diavolo svolge un ruolo specifico nel mantenimento dell'inflessibile macchina burocratica che è l'Inferno; da soldati e studiosi a inquisitori, passando per avvocati, giudici e carnefici.</p>",
+            "npcSenses": "scurovisione superiore",
+            "name": "Barbazu della Camera delle Torture"
+        },
+        "Dragon's Blood Puffball": {
+            "name": "Vescia Sangue di Drago",
+            "description": "<p>Questo fungo bulboso di un rosso profondo assomiglia a un'enorme rosa marcescente.</p>\n<hr />\n<p>Molte vesce benigne si aggrappano ai detriti del sottobosco nelle caverne delle Lande Tenebrose. Le versioni giganti di questi funghi sono più mobili e pericolose.</p>",
+            "items": {
+                "xCCM8tyhLkWqYUpL": {
+                    "name": "Percezione del Movimento 18 metri",
+                    "description": "<p>La vescia percepisce il movimento attraverso vibrazioni e spostamenti d'aria.</p>"
+                },
+                "xk8dbRocKTe3GSWC": {
+                    "name": "Esplosione di Spore",
+                    "description": "<p>Quando la vescia sangue di drago muore, esplode infliggendo [[/r 7d8[poison]]]{7d8 danni da veleno} a tute le creature in un'@Template[type:emanation|distance:20]{emanazione di 6 metri} (TS @Check[type:fortitude|dc:26|basic:true])</p>"
+                },
+                "MZkr0UEdl93FQyzP": {
+                    "name": "Fiore"
+                },
+                "cZSuVe7TToENdQod": {
+                    "name": "Getto di Spore"
+                }
+            },
+            "npcSenses": "percezione del movimento 18 metri, privo di vista"
+        },
+        "Deepwater Dhuthorex": {
+            "name": "Dhuthorex del Profondo",
+            "npcAc": "visione a 360°",
+            "npcSenses": "percezione delle onde (impreciso) 18 metri, scurovisione",
+            "items": {
+                "uKvKe5cNgTA0yIxl": {
+                    "name": "Fauci Soverchianti",
+                    "description": "<p>Un dhuthorex del profondo infligge [[/r 7[piercing]]]{7 danni perforanti} al suo bersaglio se il suo Colpo di fauci risulta in un fallimento (ma non un fallimento critico).</p>"
+                },
+                "COyeCB6tCf47WbAu": {
+                    "name": "Fauci"
+                },
+                "H6sBL4aimiKQcdtJ": {
+                    "name": "Muso"
+                },
+                "LLnHvtR9xniSgkOM": {
+                    "name": "Tentacolo"
+                },
+                "0dO1DU5gt5v8bFwc": {
+                    "description": "<p>Media, [[/r {(2d6+7)[bludgeoning],2d6[acid]}]]{2d6+7 contundenti più 2d6 da acido}, Rottura 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "cdTaJad7jDM2QE73": {
+                    "name": "Percezione delle Onde (Impreciso) 18 metri"
+                },
+                "iWHE4a4vmetksWd7": {
+                    "description": "<p>15 metri</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+                }
+            },
+            "description": "<p>Il tipico dhuthorex è una bestia stupida e vorace, che insegue le prede nelle profondità e avventurandosi a terra per inseguire facili prede.</p>\n<hr />\n<p>Strane cose nuotano nei mari senza sole, ma poche sono feroci quanto gli squaliformi dhuthorex. Queste bestie inseguono le prede senza paura e con tenacia.</p>"
+        },
+        "Bright Walker": {
+            "npcHp": "guarigione negativa",
+            "npcSpeed": "vincolato a terra",
+            "items": {
+                "LBtHMsDMDaIqyB7z": {
+                    "name": "Tocco Radioso"
+                },
+                "eZxgYfIRD41tf3F9": {
+                    "name": "Raggio Radioso"
+                },
+                "1SovHiGHboDM9yGe": {
+                    "name": "Aura Luminosa",
+                    "description": "<p>@Template[type:emanation|distance:30]{9 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}</p>\n<hr />\n<p> Il luminoso emette luce intensa. Qualsiasi creatura inizi il suo turno in quest'aura deve effettuare un TS su @Check[type:fortitude|dc:24].</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura è temporaneamente immune per 24 ore.</p>\n<p><strong>Successo</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{abbagliata} per 1 round.</p>\n<p><strong>Fallimento</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{accecata} per 1 round.</p>\n<p><strong>Fallimento Critico</strong> La creatura è accecata per 1 ora.</p>"
+                },
+                "cb5fpVrLbNcM4VUi": {
+                    "name": "Sopprimere Aura",
+                    "description": "<p>Il luminoso sopprime la sua aura luminosa per 1 round, riducendola a un tenue bagliore spettrale di Luce Fioca.</p>"
+                },
+                "hwqvhAAeZ5lZGags": {
+                    "name": "Vincolato a Terra",
+                    "description": "<p>Un luminoso non può volare a più di 30 centimetri dal suolo. Se vola più in alto di questa distanza, cade senza subire danni da caduta.</p>"
+                },
+                "GA3sOIQc3gtd1dyN": {
+                    "name": "Salto nell'Ombra",
+                    "description": "<p><strong>Requisito</strong> L'Aura Luminosa del luminoso è soppressa.</p>\n<hr />\n<p><strong>Effetto</strong> Il luminoso si teletrasporta in un quadretto che è in grado di vedere entro 18 metri che non sia in un'area di luce intensa. Il luminoso non può usare di nuovo Salto nell'Ombra per [[/br 1d4 #Ricarica Salto nell'Ombra]]{1d4 round}.</p>"
+                },
+                "06lGWrOe3DOYvTgV": {
+                    "name": "Deflagrazione Luminosa",
+                    "description": "<p>Quando un luminoso viene ridotto a 0 Punti Ferita, esplode in un lampo di luce, ottenendo la fine ardente che gli era stata negata nella morte. Questa esplosione infligge [[/r 10d6[fire]]]{10d6 danni da fuoco} (TS @Check[type:reflex|dc:25|basic:true]) alle creature entro @Template[type:emanation|distance:20]{6 metri}.</p>\n<p>Le creature che falliscono questo TS sono anche @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{abbagliate} per 1 minuto (@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{accecate} per 1 minuto in caso di fallimento critico).</p>"
+                },
+                "6pIoss4a281w0Fed": {
+                    "name": "Vampa Luminosa",
+                    "description": "<p><strong>Requisito</strong> L'Aura Luminosa del luminoso è soppressa.</p>\n<hr />\n<p><strong>Effetto</strong> Il luminoso riaccende la sua Aura Luminosa con uno scoppio di luce che infligge [[/r 5d6[fire]]]{5d6 danni da fuoco} (TS @Check[type:reflex|dc:25|basic:true]) alle creature in un'@Template[type:burst|distance:20]{esplosione di 6 metri}.</p>\n<p>Questa vampa è particolarmente dolorosa per le creature @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{abbagliate} o con @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.I0HYG0ctCLP5JRsW]{cecità alla luce}: il risultato del TS di creature di questo tipo è peggiore di un grado rispetto al risultato ottenuto.</p>"
+                }
+            },
+            "description": "<p>Chi incontra i caligni presto impara che le loro morti comportano un'esplosione anziché il dissanguamento. A volte, a un caligni viene negata questa drammatica immolazione e così esso si anima come luminoso. Legate alla società caligni, queste creature non comprendono che il loro bagliore danneggia e respinge i caligni viventi. Questi non morti non camminano, bensì fluttuano a qualche centimetro dal suolo.</p>",
+            "name": "Luminoso",
+            "npcSenses": "scurovisione superiore"
+        },
+        "Gibtas Spawn Swarm": {
+            "items": {
+                "2l5Df8352WwEuAXJ": {
+                    "description": "<p>Ogni nemico nello spazio dello sciame subisce [[/r {2d8[piercing],1d6[acid]}]]{2d8 danni perforanti e 1d6 danni da acido} (TS @Check[type:reflex|dc:22|basic:true]}). Una creatura che fallisce il suo tiro salvezza contro Morsi Sciamanti subisce anche [[/r 1d4[persistent,acid]]]{1d4 danni da acido persistenti}.</p>",
+                    "name": "Morsi Sciamanti"
+                },
+                "ufvpAL31F9ZaHsEo": {
+                    "name": "Sciame Salterino",
+                    "description": "<p>Lo sciame di cuccioli di gibtas si muove a grandi balzi. Lo sciame ignora il terreno difficile.</p>"
+                },
+                "eAyilI89Ya4AzPjX": {
+                    "name": "Rimbalzare",
+                    "description": "<p><strong>Innesco</strong> Una creatura che lo sciame di cuccioli di gibtas è in grado di vedere bersaglia lo sciame con un attacco</p>\n<hr />\n<p><strong>Effetto</strong> Lo sciame rimbalza di lato e ottiene un bonus di circostanza di +2 alla CA contro l'attacco innescante. Dopo l'attacco lo sciame può Avanzare fino alla sua velocità in linea retta come parte della reazione.</p>"
+                },
+                "Eb8EhrTUrXxsrLz3": {
+                    "name": "Fiuto (impreciso) 9 metri"
+                }
+            },
+            "name": "Sciame di Cuccioli di Gibtas",
+            "description": "<p>Quando un gibtas si abbuffa di un'incredibile quantità di carne, vomita una pozza d'acido piena di minuscole sacche di uova rosa, che esplodono immediatamente. I nuovi cuccioli cacciano immediatamente. I nuovi cuccioli cacciano come un branco crescendo di dimensioni finché non prendono strade diverse o si divorano a vicenda.</p>\n<hr />\n<p>Questo saprofago gommoso e sferoide è quasi tutto bocca, con cinque neri occhi bulbosi e due potenti gambe allampanate. Spesso un gibtas forma un legame con una singola creatura (solitamente, un'aberrazione più potente) e serve tale padrone fedelmente, per quanto in modo imprevedibile. Le creature che tengono un gibtas come creatura domestica o da guardia imparano presto a tenerlo lontano da qualsiasi oggetto importante che non vogliono venga spruzzato d'acido.</p>",
+            "npcSenses": "fiuto (impreciso) 9 metri, scurovisione"
+        },
+        "Barcumbuk": {
+            "items": {
+                "vKdhNyXTKHDMUfAc": {
+                    "name": "Fiamme della Furia",
+                    "description": "<p>Qualsiasi arma impugnata da un'erinni ottiene gli effetti di una runa <em>@UUID[Compendium.pf2e.equipment-srd.XszNvxnymWYRaoTp]{infuocata}</em> mentre l'erinni la impugna.</p>"
+                },
+                "PVrWJHEarOi9LFbD": {
+                    "name": "Corda Accalappiante",
+                    "description": "<p>Un'erinni porta un rotolo di corda ricavato dai suoi capelli intrecciati (si usano le statistiche della @UUID[Compendium.pf2e.equipment-srd.fyYnQf1NAx9fWFaS]{corda}) che si anima nelle sue mani.</p>\n<p>Quando una creatura viene colpita dalla corda dell'erinni, un segmento della corda si stacca e si avviluppa attorno alla creatura, imponendole penalità di circostanza di 3 metri alla Velocità. Il pezzo che si stacca è di 3 metri per una creatura Media o più piccola e raddoppia di lunghezza per ogni taglia superiore alla Media.</p>\n<p>Quando una creatura @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Sfugge} all'effetto (CD 26) il segmento staccato della corda avvizzisce e si sfalda in un'inutile poltiglia grigia.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.o0zqsH5kYopRanav]{Effetto: Corda Accalappiante}</p>"
+                },
+                "lntTBnW0tn7XEMPJ": {
+                    "name": "Porta Dimensionale (A Volontà)"
+                },
+                "pKPJ4u9g0HQyU7b6": {
+                    "name": "Raffica Furibonda",
+                    "description": "<p>L'erinni fluttua sul posto se sta volando e scaglia una freccia contro un qualsiasi numero di creature in un @Template[type:cone|distance:30]. Ogni attacco viene tirato separatamente. Questo conta come un attacco al fine di determinare la penalità da attacchi multipli dell'erinni.</p>"
+                },
+                "mqqrqczmNE7FLbro": {
+                    "name": "Paura (A Volontà)"
+                },
+                "Ir7VUc4vTn1TT3EX": {
+                    "name": "30 metri di Corda di Capelli dell'Erinni",
+                    "description": "<p>Una corda di 30 metri.</p>"
+                },
+                "nhdPKzoIkY6tfcLb": {
+                    "name": "Frammento del ciondolo di Urevian"
+                },
+                "upJaEvHTKGpsW57H": {
+                    "name": "Martello da Guerra Infuocato"
+                },
+                "Hor4EOQfUGAkFak1": {
+                    "name": "Martello Leggero Infuocato"
+                },
+                "LGBzL3vv4QNzTFJ1": {
+                    "name": "Telepatia 30 metri"
+                },
+                "fpyaGQ7nPlsCH1nc": {
+                    "name": "Visione del Vero (Costante)"
+                },
+                "ZZcgAENc8VCfxb7e": {
+                    "name": "Camuffamento Illusorio (A Volontà)"
+                }
+            },
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
+            "description": "<p>Le erinni esigono vendetta e giustizia sanguinaria per i crimini di una creatura, torturando e punendo sadicamente le loro vittime prima di concedere loro l'oblio della morte. Anche se un'erinni ha l'aspetto di un angelo caduto e le prime erinni condividevano quell'origine, ora questi diavoli possono formarsi in una miriade di modi diversi: alcune vengono promosse a questo rango dallo stato di diavoli minori, altre vengono modellate dai lemuri e altre ancora sono forgiate dalle anime dei torturatori e dei persecutori. L'origine delle erinni è legata alla figura femminile di Eiseth, un angelo caduto e uno dei semidei più potenti dell'Inferno. Le prime erinni erano tutte considerate figlie metaforiche di Eiseth, ma le erinni formati da quel momento non si limitano più a un solo genere.</p>\n<hr />\n<p>I diavoli, maestri della corruzione e architetti della conquista, cercano sia di tentare le forme di vita mortali a unirsi a loro nella conquista di tutto ciò che è profano, sia di diffondere la tirannia in tutti i mondi. Le tentazioni che offrono ai mortali vanno dai grandi poteri concessi dalla firma di un contratto infernale ai favori manipolati in seguito a una promessa sussurrata a un diabolico patrono, fino a un qualsiasi numero di accordi ancora più discreti. Coloro che soccombono a queste tentazioni vengono consegnati a una vita ultraterrena di infinito tormento nelle fosse infernali, dove l'unica speranza di fuga risiede nella possibilità di essere promosso e diventare un diavolo nei ranghi infernali. Ogni diavolo svolge un ruolo specifico nel mantenimento dell'inflessibile macchina burocratica che è l'Inferno; da soldati e studiosi a inquisitori, passando per avvocati, giudici e carnefici. Gli umili lemuri e gli imp faticano agli ordini dei diavoli più potenti e specializzati, come i diavoli del contratto e le erinni, mentre i potenti diavoli della fossa comandano interi eserciti infernali.</p>",
+            "npcSenses": "scurovisione superiore, visione del vero"
+        },
+        "Cratonys": {
+            "npcHp": "rigenerazione 10 (disattivata da argento o bene)",
+            "items": {
+                "F40AJYqQ0BCC2TF0": {
+                    "name": "Catena"
+                },
+                "x97vWevUTEMqeOCJ": {
+                    "name": "Visione del Dolore",
+                    "description": "<p>Un velstrac sa automaticamente se una creatura che può vedere ha le condizioni @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{condannato}, @UUID[Compendium.pf2e.conditionitems.Yl48xTdMh3aeQYL2]{ferito} e @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{morente}, oltre al valore di quelle condizioni.</p>"
+                },
+                "VH3uvuMCquGbT6Wx": {
+                    "name": "Rigenerazione 10 (disattivata da argento o bene)"
+                },
+                "TM2S9CZ5bTyxKkXp": {
+                    "name": "Sguardo Snervante",
+                    "description": "<p>@Template[type:emanation|distance:30]{9 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}.</p>\n<hr />\n<p>Quando una creatura termina il suo turno nell'aura, al posto del volto dell'evangelista vede quello di una persona cara scomparsa. La creatura deve superare un TS su @Check[type:will|dc:21] per non diventare @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventata 2} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventata 3} in caso di fallimento critico).</p>"
+                },
+                "pJ6eBDUVUixzX9UL": {
+                    "name": "Catene Animate",
+                    "description": "<p>Sulle catene presenti nei pressi dell'evangelista sviluppano uncini acuminati e ondeggiano minacciosamente. L'evangelista può effettuare Colpi con la catena contro qualsiasi creatura adiacente a una catena incustodita presente entro 6 metri, oltre alle creature presenti entro la normale portata del Colpo con la catena dell'evangelista.</p>"
+                },
+                "EHjIsHVK3BSAzKZW": {
+                    "name": "Sguardo Focalizzato",
+                    "description": "<p>L'evangelista fissa lo sguardo su una creatura che è in grado di vedere entro 9 metri. Il bersaglio deve tentare subito un Tiro Salvezza su @Check[type:will|dc:21] contro lo Sguardo Snervante. Inoltre, se la creatura era già @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventata} e fallisce il Tiro Salvezza, l'evangelista diventa @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{occultato} rispetto alla creatura finché questa resta spaventata.</p>\n<p>Dopo avere tentato questo Tiro Salvezza, la creatura è temporaneamente immune fino all'inizio del turno successivo dell'evangelista.</p>"
+                },
+                "qtqSaGbHHzYr1Zvx": {
+                    "name": "Catene Arruginite",
+                    "description": "<p>Quando Cratonys danneggia una creatura con le sue catene, inclusi i danni da sanguinamento provocati dall'essere impalati da una catena, la creatura deve superare un TS su @Check[type:fortitude|dc:21|traits:disease,virulent] o contrae una grave forma di tetano chiamata tetano velstrac.</p>\n<hr /><p>A volte i velstrac infettano intenzionalmente le loro catene di pericolose malattie, come questa aggressiva forma di tetano. II tetano può produrre rigidità, spasmi muscolari sufficientemente forti da spezzare le ossa e, alla fine, la morte.</p>\n<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:21|traits:disease,virulent]</p>\n<hr />\n<p><strong>Latenza</strong> [[/br 1d4 #Latenza Tetano Velstrac]]{1d4 giorni}</p>\n<p><strong>Fase 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1} (1 settimana)</p>\n<p><strong>Fase 2</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 2} e non può parlare (1 giorno)</p>\n<p><strong>Fase 3</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{paralizzato} (1 giorno)</p>\n<p><strong>Fase 4</strong> morte</p>"
+                },
+                "5e5FND78feSKXP99": {
+                    "name": "Catena Acuminata",
+                    "description": "<p>Quando l'evangelista mette a segno un colpo critico con la catena, il bersaglio viene impalato e bloccato sul posto, diventando @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{afferrato} dalla catena. Finché non si libera, la creatura non può recuperare i @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti} (Sfuggire CD 25).</p>"
+                },
+                "ujbUCBlQf3V81dRB": {
+                    "name": "Sapienza sulla Tortura"
+                }
+            },
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
+            "description": "<p>Gli evangelisti, gli ambasciatori ufficiosi dei velstrac, vagano per i confini più remoti dei piani per diffondere il verbo della loro orrenda incentrata sulla perfezione attraverso il dolore. Sono quindi i velstrac che è possibile incontrare più frequentemente sul Piano Materiale, a capo di congreghe di scultori della carne mortali ed edonistici, o come guardiani di orribili dungeon. Nelle regioni governate dalle potenze infernali, gli evangelisti possono fungere da luogotenenti o consiglieri, sussurrando percorsi segreti verso il potere in cambio delle anime dei mortali o della carne mortale più prelibata. Gli evangelisti hanno la stessa taglia di un umano, anche se con le pesanti catene che avvolgono sempre le loro forme spesso pesano 175 chilogrammi o più. </p>\n<hr />\n<p>La ricerca della sensazione ultima attraverso l'auto-mutilazione è l'orripilante preoccupazione dei demoni che abitano nell'ombra conosciuti come velstrac. Essi trascendono il loro imperturbabile distacco solo quando infliggono dolore e paura alle loro vittime, mettendo in pratica forme sempre nuove di degradazione e tortura prima di rivolgere le lame dei coltelli verso loro stessi. Per quanto i velstrac si considerino oltre limitazioni simili alla moralità e ai tabù dei mortali, le loro vittime li conoscono come aguzzini apatici capaci di infliggere sofferenze umilianti e sadiche. Sostengono di essere in cerca della perfezione in ogni loro gesto, tanto del pensiero quanto della forma, e non riconoscono alcun progresso che non richieda strazianti amputazioni del corpo o dello spirito.</p>\n<p>Questi nefandi si manifestano dalle anime di mortali masochisti o sadici che sono state giudicate e dirottate verso il Piano delle Ombre. Assumono forme adatte alle loro vili predilezioni, spaziando dai profeti dei ranghi più bassi ai maestri della sofferenza e della mutilazione chiamati eremiti. Il processo di trasformazione deforma l'anima passo dopo passo, con altri velstrac che guidano i nuovi membri attraverso innumerevoli stanze di dolore tra le oscure regioni del Piano delle Ombre.</p>",
+            "npcSenses": "scurovisione superiore, visione del dolore"
+        },
+        "Images of Failure": {
+            "name": "Immagini di Fallimento",
+            "description": "<p>Illusioni psichicamente potenziate inondano le menti delle creature nel corridoio lungo 12 metri e largo 4,5 metri (l'area tratteggiata di bianco sulla mappa) con ricordi dei loro fallimenti passati.</p>",
+            "hazardDisable": "<p>@Check[type:occultism|dc:32|name:Indebolire le immagini] o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{dissolvi magie}</em> (5° livello; contrastare CD 26) per indebolire le immagini; per disattivare la trappola servono tre successi</p>",
+            "hazardReset": "<p>La trappola si ripristina immediatamente e può influenzare la stessa creatura più volte nel turno della creatura</p>"
+        },
+        "Drill Field Barbazu": {
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
+            "items": {
+                "SNJ0RSCREyP9YYKY": {
+                    "name": "Ferita Infernale",
+                    "description": "<p>Il Colpi con il falcione di un diavolo barbuto infligge anche [[/r 1d6[bleed]]]{1d6 danni da sanguinamento persistenti} che resistono ai tentativi di guarigione.</p>\n<p>La prova semplice per fermare il sanguinamento parte a @Check[type:flat|dc:20]{CD 20}. La CD è ridotta a @Check[type:flat|dc:15]{15} solo se la creatura sanguinante o un alleata assiste con successo al recupero. La CD per @UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Prestare Primo Soccorso} a una creatura con una ferita infernale aumenta di 5.</p>\n<p>Un incantatore o un oggetto che tenta di usare magia di guarigione su una creatura che subisce una ferita infernale deve superare una prova di contrasto con CD 21, altrimenti la magia non riesce a guarire la creatura.</p>"
+                },
+                "zQUhdB7kvudfGv5Z": {
+                    "name": "Riposizionamento",
+                    "description": "<p><strong>Innesco</strong> Il diavolo colpisce una creatura con un Colpo con il falcione.</p>\n<hr />\n<p><strong>Effetto</strong> Il diavolo muove la creatura di 1,5 metri in una qualsiasi direzione. Il quadretto di destinazione deve trovarsi entro portata del falcione del diavolo.</p>\n<p>Questo movimento non innesca reazioni.</p>"
+                },
+                "6zbiPHhWaAV5pJd6": {
+                    "description": "<p><strong>Frequenza</strong> una volta per round.</p>\n<hr />\n<p><strong>Effetto</strong> Il barbazu effettua un Colpo con la barba. Questo Colpo ignora la sua penalità da attacchi multipli e non conta al fine di determinare tale penalità.</p>",
+                    "name": "Barba Brulicante"
+                },
+                "j5nOoy2JdxGbg96d": {
+                    "name": "Porta Dimensionale (A Volontà)"
+                },
+                "99jBJtnLmD48VOSS": {
+                    "name": "Artiglio"
+                },
+                "kwMV2uj1jCdvIm7J": {
+                    "name": "Barba"
+                },
+                "fDmw9feXNMKuAci4": {
+                    "name": "Telepatia 30 metri"
+                },
+                "GZ55vWFhwaHyhnfM": {
+                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Fase 1</strong> portatore sano (1 giorno)</p>\n<p><strong>Fase 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 giorno)</p>\n<p><strong>Fase 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 2} (1 giorno)</p>",
+                    "name": "Febbre dell'Averno"
+                },
+                "Vo6AHVWsAnxqkwLW": {
+                    "name": "Polsiera del Mandriano",
+                    "description": "<p><strong>Attivazione</strong> comando</p>\n<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p><strong>Effetto</strong> Il barbzau esercita il suo volere su una creatura priva di intelletto entro 9 metri. Se il bersaglio è una creatura priva di intelletto di 3° livello o inferiore, deve effettuare un TS su @Check[type:will|dc:20] e usare un grado di successo inferiore rispetto al risultato del suo tiro salvezza.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non viene influenzato.</p>\n<p><strong>Successo</strong> II bersaglio è @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} per 1 round per via delle sue risposte confuse dai comandi del Barbazu.</p>\n<p><strong>Fallimento</strong> La creatura viene @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{controllata} dal barbazu per 1 ora, sebbene non segua comandi palesemente autodistruttivi.</p>\n<p><strong>Fallimento Critico</strong> Come fallimento, ma la durata è 1 giorno.</p>"
+                }
+            },
+            "description": "<p>Un barbazu, noto anche come diavolo barbuto o diavolo di fanteria, è un nefando omicida che sazia la sua brama di annientamento prestando servizio come fante negli eserciti dell'Inferno, spesso guidando in battaglia orde di diavoli minori come Imp e Lemuri. I diavoli barbuti brandiscono falcioni seghettati con cui infliggere squarci che resistono alla magia curativa, provocando una tremenda emorragia. Quando i nemici si avvicinano troppo, i diavoli barbuti colpiscono con le spine delle loro barbe brulicanti per diffondere un'odiosa malattia chiamata febbre dell'Averno, che permette loro di gustarsi la scena della forza della loro vittima che lentamente divorata dall'interno.</p>\n<p>I barbazu sono presenti in tutti gli strati dell'Inferno: assecondano con voluttà ogni capriccio dei malvagi signori infernali ed esultano nel seminare morte, disperazione e angoscia a piacimento.</p>\n<hr />\n<p>I diavoli, maestri della corruzione e architetti della conquista, cercano sia di tentare le forme di vita mortali a unirsi a loro nella conquista di tutto ciò che è profano, sia di diffondere la tirannia in tutti i mondi. Le tentazioni che offrono ai mortali vanno dai grandi poteri concessi dalla firma di un contratto infernale ai favori manipolati in seguito a una promessa sussurrata a un diabolico patrono, fino a un qualsiasi numero di accordi ancora più discreti. Coloro che soccombono a queste tentazioni vengono consegnati a una vita ultraterrena di infinito tormento nelle fosse infernali, dove l'unica speranza di fuga risiede nella possibilità di essere promosso e diventare un diavolo nei ranghi infernali. Ogni diavolo svolge un ruolo specifico nel mantenimento dell'inflessibile macchina burocratica che è l'Inferno; da soldati e studiosi a inquisitori, passando per avvocati, giudici e carnefici.</p>",
+            "npcSenses": "scurovisione superiore",
+            "name": "Barbazu del Campo d'Addestramento"
+        },
+        "Gibtas Bounder": {
+            "items": {
+                "dl0aE5MkOn0AmMJs": {
+                    "name": "Fauci"
+                },
+                "Y7vFj13afzJKpHws": {
+                    "name": "Morso Sbilanciante",
+                    "description": "<p><strong>Requisiti</strong> L'ultima azione del gibtas è stata uno Schianto Rimbalzante e il gibtas è riuscito a Spingere il bersaglio.</p>\n<hr />\n<p><strong>Effetto</strong> Il gibtas prova a @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Sbilanciare} il bersaglio del suo Schianto Rimbalzante, poi effettua un Colpo di fauci contro il bersaglio. Lo Sbilanciare e il Colpo contano entrambi ai fini della penalità da attacchi multipli del gibtas, ma questa penalità aumenta solo dopo entrambi gli attacchi.</p>"
+                },
+                "MsljHqXO1LMWSpK4": {
+                    "name": "Sputo"
+                },
+                "t4jPFFTR7Eur2Nml": {
+                    "name": "Fiuto (impreciso) 9 metri"
+                },
+                "lj2wYgitpa7YQNCt": {
+                    "name": "Schianto Rimbalzante",
+                    "description": "<p>Il gibtas Salta verso una creatura di taglia media o inferiore, atterrando nello spazio di quella creatura e @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Spingendola}. Se lo Spingere fallisce, il gibtas rimbalza fuori dal quadretto del bersaglio, in un quadretto adiacente a scelta del bersaglio.</p>"
+                }
+            },
+            "name": "Gibtas Salterino",
+            "npcSenses": "fiuto (impreciso) 9 metri, scurovisione",
+            "description": "<p>Un gibtas maturo usa le sue gambe potenti e il suo corpo gommoso per saltare a grandi distanze. La maggior parte dei gibtas resta solitaria, a meno che non si leghi a una creatura.</p>\n<hr />\n<p>Questo saprofago gommoso e sferoide è quasi tutto bocca, con cinque neri occhi bulbosi e due potenti gambe allampanate. Spesso un gibtas forma un legame con una singola creatura (solitamente, un'aberrazione più potente) e serve tale padrone fedelmente, per quanto in modo imprevedibile. Le creature che tengono un gibtas come creatura domestica o da guardia imparano presto a tenerlo lontano da qualsiasi oggetto importante che non vogliono venga spruzzato d'acido.</p>"
+        },
+        "Belcorra Haruvex": {
+            "npcHp": "guarigione negativa, rinascita",
+            "items": {
+                "sVvkzILqsBCfcw03": {
+                    "name": "Mano Spettrale"
+                },
+                "XETiXceuUZEG0el1": {
+                    "name": "Rinascita",
+                    "description": "<p>Quando Belcorra viene distrutta, si riforma in [[/br 2d4 #Rinascita]]{2d4 giorni} all'interno della Cripta Vuota (benché possa ridurre questo intervallo di tempo potenziandosi con i balugini dell'essenza di Nhimbaloth usando la @UUID[Compendium.pf2e.equipment-srd.CTiLugp5ptSItEqN]{Lente Focale Ebano}).</p>\n<p>Belcorra può essere distrutta permanentemente solo se ottiene pienamente la sua vendetta contro Absalom o se Nhimbaloth divora la sua anima.</p>"
+                },
+                "GDIw4d1nppVwAcDM": {
+                    "name": "Magia del Sangue",
+                    "description": "<p>Ogni volta che Belcorra lancia un incantesimo della linea di sangue dello stregone o un incantesimo concesso dalla linea di sangue aberrante, può conferire a sé stessa o al bersaglio del suo incantesimo bonus di status +2 ai tiri salvezza su Volontà per 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.4GAJHkurmZ1ttKDv]{Efftto: Magia del Sangue}</p>"
+                },
+                "hZ7GydaiKm8Egcxd": {
+                    "name": "Lancio Accelerato",
+                    "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p><strong>Effetto</strong> Se la prossima azione di Belcorra è lanciare un incantesimo da stregone di 4° livello o inferiore, lei riduce il numero di azioni per lanciarlo di 1 (minimo 1 azione).</p>"
+                },
+                "IHcY0GaB5rFEpIJT": {
+                    "description": "<p>ultimi tre livelli delle Cripte degli Abomini</p>\n<hr />\n<p>Un tipico fantasma può allontanarsi soltanto per poca distanza dal luogo in cui è stato ucciso o che infesta. Il tipico limite è di 36 metri. Alcuni fantasmi sono invece vincolati a una stanza, un edificio, o un oggetto che aveva per loro un significato speciale, anziché a un luogo.</p>",
+                    "name": "Vincolato al Luogo"
+                },
+                "tWnV5NxscBllgsSs": {
+                    "description": "<p>Belcorra può percepire la presenza di auree magiche come se stesse sempre usando un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{individuazione del magico}</em> di 1° livello. Quando @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Individua}, ottiene i benefici di un incantesimo <em>individuazione del magico</em> di 3° livello sulle cose che vede.</p>",
+                    "name": "Percepire Magia"
+                },
+                "QSEVW6fObs2AVajU": {
+                    "name": "Sguardo Corruttore",
+                    "description": "<p>Belcorra fissa una creatura entro 9 metri che è in grado di vedere. Il bersaglio subisce [[/r 9d6[mental]]]{9d6 danni mentali} (TS @Check[type:will|dc:33|basic:true]).</p>\n<p>Una creatura che fallisce il suo TS è anche @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottita 1} per 1 minuto.</p>"
+                },
+                "oMcchH9BcuFxkNKA": {
+                    "name": "Faro Infestato",
+                    "description": "<p><strong>Frequenza</strong> una volta ogni 10 minuti</p>\n<hr />\n<p><strong>Effetto</strong> Belcorra estende la sua presenza attraverso gli ultimi tre livelli di Pallidaluce fino alla fine del suo turno successivo. Può vedere con i benefici di @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.9qV49KjZujZnSp6w]{visione a 360°} e può effettuare attacchi con la mano spettrale o usare capacità speciali usando come punto di origine qualsiasi superficie all’interno di quest’area.</p>"
+                }
+            },
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
+            "npcSenses": "oscuramento, senso magico"
+        },
+        "Jaul Mezmin": {
+            "npcAllSaves": "status +1 contro veleni",
+            "items": {
+                "C2q1zvPuwqgQMvwX": {
+                    "name": "Cambiare Forma",
+                    "description": "<ul>\n<li><strong>Umano</strong>\n<ul>\n<li><strong>Mischia</strong> pugno [[/r 1d20+16 #Pugno]]{+16}/[[/r 1d20+11 #Pugno]]{+12}/[[/r 1d20+6 #Pugno]]{+8} (agile, non letale), <strong>Danni</strong> [[/r (1d6+7)[bludgeoning]]]{1d6+7 danni contundenti}</li>\n</ul>\n</li>\n<li><strong>Lupo</strong>\n<ul>\n<li><strong>Velocità</strong> 12 metri</li>\n<li><strong>Mischia</strong> fauci [[/r 1d20+16 #Fauci]]{+16}/[[/r 1d20+11 #Fauci]]{+11}/[[/r 1d20+6 #Fauci]]{+6}, <strong>Danni</strong> [[/r (2d8+7)[piercing]]]{2d8+7 danni perforanti} più @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{Gettare a Terra}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>a creatura mannara assume la sua forma umanoide, ibrida animale. Ogni forma ha un aspetto persistente e specifico. La forma naturale di una creatura mannara pura è la sua forma ibrida.</p>\n<p>In forma umanoide, la creatura mannara usa la sua taglia umanoide originale, perde i suoi Colpi con le fauci e artigli e ottiene un Colpo con il pugno che infligge danni contundenti pari ai danni taglienti inflitti dal suo artiglio.</p>\n<p>ln forma animale, la sua taglia e Velocità cambiano in quelle dell'animale, ottiene inoltre gli eventuali effetti del Colpo dell'animale che già non possedeva (come Afferrare) e perde i suoi Colpi con l'arma.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "txASc5iIQvLV4Nxv": {
+                    "name": "Collana Ingioiellata con Focena",
+                    "description": "<p>Ayla, Mia Amata</p>"
+                },
+                "yJVTcQFJpy86gPDG": {
+                    "name": "Artiglio"
+                },
+                "S0eUokfR9NCiHTkD": {
+                    "name": "Empatia con i Lupi",
+                    "description": "<p>Jaul può comunicare con i canidi lupini.</p>"
+                },
+                "RBjfyeeaXd5gEMNe": {
+                    "name": "Maledizione del Lupo Mannaro",
+                    "description": "<p>Questa maledizione influenza solo gli umanoidi.</p>\n<p><strong>Trio Salvezza</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p>A ogni notte di luna piena, la creatura maledetta deve superare un altro TS su Tempra, altrimenti si trasforma in un lupo mannaro fino all'alba.</p>\n<p>La creatura è sotto il controllo del GM e infuria per metà notte, per poi crollare priva di sensi fino all'alba.</p>"
+                },
+                "5rrKtIIzYEri3htn": {
+                    "name": "Coordinazione col Lupo",
+                    "description": "<p>I Colpi di Jaul infliggono [[/r {1d6}]]{1d6 danni aggiuntivi} alle creature entro la portata del suo lupo.</p>"
+                },
+                "8l05kDJb53W6NV0L": {
+                    "name": "Fauci"
+                },
+                "lIpwTEFoDElIQYqN": {
+                    "name": "Fiuto (impreciso) 9 metri"
+                },
+                "XsfO4kZKUmGSNSI0": {
+                    "name": "Status +1 a Tutti i TS contro Veleno"
+                },
+                "igyVJ2r1r0X9HNP8": {
+                    "name": "Frenesia Lunare",
+                    "description": "<p>Quando la luna piena compare nel cielo notturno, Jaul deve assumere la forma ibrida. Da allora in poi non può Cambiare Forma, diventa più grande di una categoria di taglia, la sua portata aumenta di 1,5 metri e i danni delle sue fauci aumentano di 2.</p>\n<p>Quando la luna tramonta o il sole sorge, Jaul torna alla sua forma umanoide ed è @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{affaticato} per [[/br 2d4 #Durata affaticato]]{2d4 ore}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.dRe8n1nBWMIXd8jh]{Effetto: Frenesia Lunare}</p>"
+                }
+            },
+            "npcSenses": "fiuto (impreciso) 9 metri, visione crepuscolare"
+        },
+        "Corpselight": {
+            "description": "<p>Un fuoco fatuo che muore di fame potrebbe rianimarsi come una fredda sfera blu che riluce di lattiginosa umidità: una luce-cadavere. Dato che la sua forma fisica si deteriora alla svelta se non nascosta all'interno di una creatura morta, una luce-cadavere cerca istintivamente un cadavere ospite per dimorarvi all'interno.</p>",
+            "items": {
+                "wImzz2Ucpz9gqh2J": {
+                    "name": "Artiglio"
+                },
+                "uItSOCTzoCrocBon": {
+                    "name": "Percezione dei Cadaveri (preciso) 9 metri",
+                    "description": "<p>Una luce-cadavere può percepire i corpi morti entro portata. Questo è un senso preciso che funziona attraverso le barriere solide spesse meno di 1,5 metri.</p>"
+                },
+                "mA7HIkvCJVI5uu1m": {
+                    "name": "Luce di Morte",
+                    "description": "<p><strong>Prerequisiti</strong> La luce-cadavere si trova in un cadavere.</p>\n<hr />\n<p><strong>Effetto</strong>La luce-cadavere emette un malsano raggio di luce dalla bocca e dagli occhi in un @Template[type:cone|distance:20]{cono di 6 metri}. Tutte le creature viventi in quest'area devono effettuare un Tiro Salvezza su @Check[type:fortitude|dc:18|traits:damaging-effect]. Se almeno 1 creatura fallisce il suo TS, la luce-cadavere recupera [[/r 2d6[healing]]]{2d6 Punti Ferita}, ottenendo qualsiasi eccedenza rispetto al massimo come Punti Ferita temporanei che durano per 1 minuto.</p>\n<p>La luce-cadavere non può usare di nuovo Luce di Morte per [[/br 1d4 #Ricaricare Luce di Morte]]{1d4 round}.</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata.</p>\n<p><strong>Successo</strong> La creatura subisce [[/r 1d6[negative]]]{1d6 danni negativi}.</p>\n<p><strong>Fallimento</strong> La creatura subisce [[/r 2d6[negative]]]{2d6 danni negativi} ed è @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventata 1}.</p>\n<p><strong>Fallimento Critico</strong> La creatura subisce [[/r 4d6[negative]]]{4d6 danni negativi} ed è @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventata 3}.</p>"
+                },
+                "i68AZkuUsYHLKLWd": {
+                    "name": "Fauci"
+                },
+                "khhjOlnkRw4wzweC": {
+                    "description": "<p>Una luce-cadavere esposta alla luce del sole è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordita 2} e @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestra 2}, e non può Reclamare Cadavere.</p>",
+                    "name": "Incapacità alla Luce Solare"
+                },
+                "NBuJOqDORlJbI3m9": {
+                    "name": "Forma Fatua",
+                    "description": "<p>Quando una luce-cadavere viene ridotta a 0 Punti Ferita mentre è fusa a un cadavere, viene invece ridotta a 1 Punto Ferita e il cadavere crolla per terra, facendo emergere la luce-cadavere nella sua forma fatua.</p>\n<p>Mentre è in forma fatua, una luce-cadavere è Minuscola e non può compiere azioni diverse da Reclamare Cadavere o Volare.</p>\n<p>Una luce-cadavere che inizia il suo turno in forma fatua deve effettuare una @Check[type:flat|dc:16|immutable:true]{prova semplice} alla fine del suo turno; se fallisce, perde 1 Punto Ferita. Una luce-cadavere ridotta a 0 Punti Ferita mentre è in forma fatua viene distrutta.</p>"
+                },
+                "Y0gOm1Uz3dMu6Q4W": {
+                    "name": "Reclamare Cadavere",
+                    "description": "<p><strong>Prerequisiti</strong> La luce-cadavere è in forma fatua ed è adiacente a un cadavere di taglia Media o Piccola che non è stato reclamato da una luce-cadavere nelle ultime 24 ore.</p>\n<hr />\n<p><strong>Effetto</strong> La luce-cadavere si fonde col cadavere, facendolo Alzare e recupera [[/r 3d6[healing]]]{3d6 Punti Ferita}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.auJ02rr1Jr88oD3Z]{Effetto: Reclamare Cadavere - Carnoso}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.3np7EyJ8pyrVlpie]{Effetto: Reclamare Cadavere - Scheletrico}</p>"
+                }
+            },
+            "npcHp": "guarigione negativa",
+            "name": "Luce-cadavere",
+            "npcSenses": "percezione dei cadaveri (preciso) 9 metri, scurovisione"
+        },
+        "Murschen": {
+            "items": {
+                "Cth0VtGbtTcGpsAR": {
+                    "description": "Sole se in Posizione della Rovina Rossa",
+                    "name": "Artiglio Rosso"
+                },
+                "i7f5BgAL5FJKJd7b": {
+                    "name": "medaglia di platino"
+                },
+                "Usk5KyF9A2RQaJt2": {
+                    "name": "Raffica di Colpi",
+                    "description": "<p><strong>Frequenza</strong> una volta per turno</p>\n<hr />\n<p><strong>Effetto</strong> Murschen sferra due Colpi senz'armi. Se colpiscono entrambi la stessa creatura, combina il loro danno ai fine di resistenze e debolezze. La penalità da attacchi multipli di Murschen si applica normalmente a questi Colpi.</p>"
+                },
+                "0gD4v7579cLZZRwx": {
+                    "name": "fasciature dei colpi possenti poderose +1"
+                },
+                "9xQRUNNxUssnoy4j": {
+                    "name": "Pelle di Camaleonte",
+                    "description": "<p>La pelle dello skulk muta e cambia imitando l'ambiente circostante. Se la maggior parte del suo corpo non è coperta da abiti o armature, lo skulk ottiene bonus di circostanza +2 alle prove di Furtività effettuate per @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Nascondersi}.</p>"
+                },
+                "ZfdrndtEZTKXbrq0": {
+                    "name": "Posizione della Rovina Rossa",
+                    "description": "<p><strong>Requisito</strong> Murschen non indossa alcuna armatura</p>\n<hr />\n<p><strong>Effetto</strong> Murschen assume la posizione della rovina rossa, pensata per strappare via brandelli di carne come una bestia feroce. Murschen può effettuare attacchi con l'artiglio rosso. Questi attacchi infliggono [[/r 1d10[slashing]]]{1d10 danni taglienti}; hanno i tratti accurata, disarmato, e spazzare.</p>\n<p>Mentre è in questa posizione, quando Murschen ridurrebbe di 1 il valore della sua condizione @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato}, lo riduce invece di 0.</p>"
+                },
+                "IJTHmP61FLx42vVO": {
+                    "description": "<p>I Colpi di Murschen infliggono 1d6 danni di precisione aggiuntivi alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "W7NJfdI36Wt2pLfo": {
+                    "name": "Passo Mascherato",
+                    "description": "<p>Nelle foreste e negli ambienti sotterranei, lo skulk ottiene i benefici dell'azione @UUID[Compendium.pf2e.actionspf2e.SB7cMECVtE06kByk]{Coprire Tracce} senza dimezzare la propria Velocità.</p>"
+                }
+            },
+            "name": "Murschen",
+            "description": "<p>Gli skulk, creature pigre e codarde, vivono ai margini delle società organizzate e derubano il prossimo senza pensarci due volte. Anche l'omicidio è per loro un'altra necessità, e non esitano a infiltrarsi in una casa, a eliminare gli abitanti e a prendere quello che vogliono.</p>\n<p>La loro capacità camaleontica di mimetizzarsi nei dintorni li rende difficili da individuare, quindi i loro onnipresenti insediamenti alla periferia degli insediamenti più grandi sono pressoché impossibili da estirpare permanentemente. Di solito si spostano in piccoli gruppi di un massimo di 16 individui, dato che i gruppi più grandi tendono a degenerare nella violenza. Sebbene gli skulk ritengano di essere accomunati dal destino di reietti odiati e temuti, il legame non è sufficiente a mantenere grossi gruppi di queste creature uniti in un obiettivo comune per molto tempo.</p>\n<p>Le entrate e le uscite dalle città, specialmente le vie d'accesso meno sorvegliate attorno alle fognature e altre aree simili sono i territori di caccia preferiti degli skulk. Queste aree consentono loro di tenere d'occhio da vicino chi va e chi viene dalla città e offre loro rapide opzioni di fuga, qualora le autorità dovessero scoprire la loro presenza. In alcune rare occasioni, uno skulk particolarmente disciplinato può farsi strada nei ranghi di una gilda di ladri locale e farsi un nome quando c'è da compiere qualche colpo difficile. La loro personalità ripugnante e il loro egoismo soverchiante, tuttavia, raramente consente loro di mantenere a lungo un ruolo di autorità.</p>\n<p>Un tipico skulk è alto 1,8 metri e ha una struttura corporea simile a quella di un umano dinoccolato. Gli skulk maturano rapidamente e possono vivere fino a 50 anni, anche se molti vanno incontro a una fine violenta ben prima di allora. Quei rari skulk che riescono a fuggire dalla loro vita di violenza, amarezza e vigliaccheria possono essere di qualsiasi allineamento, ma quelli che restano vincolati alle loro tradizioni considerano sempre gli esuli autoimposti come il peggior tipo di traditori, e spesso tentano di sterminarli con più accanimento di qualsiasi altra vittima. Varie bande di skulk hanno accidentalmente orchestrato la loro rovina gettando al vento la cautela e rivelando la loro esistenza alle autorità in un appassionato ma mal concepito tentativo di dare la caccia a un esule di questo tipo.</p>",
+            "npcSenses": "visione crepuscolare"
+        },
+        "Rusty Grate Pit": {
+            "hazardDisable": "<p>@Check[type:thievery|dc:18|name:Innescare Innocuamente la Trappola] per innescare innocuamente la trappola dando un colpetto alla grata o all'argano penzolante, o @Check[type:thievery|dc:24|name:Stabilizzare la Grata] per stabilizzare la grata in modo che non crolli.</p>",
+            "description": "<p>La grata arrugginita copre una fossa di 3 metri di diametro e 12 metri di profondità.</p>",
+            "name": "Grata Arrugginita della Fossa"
+        },
+        "Paralyzing Light Trap": {
+            "name": "Trappola della Luce Paralizzante",
+            "description": "<p>Quando qualunque creatura che non sia un diavolo entra nella luce, la magia intessuta in essa trattiene la creatura sul posto e fa suonare un allarme.</p>",
+            "hazardReset": "<p>La magia di stasi nella luce si accumula nel corso di un'ora, dopo la quale la trappola può essere innescata nuovamente.</p>",
+            "hazardRoutine": "<p>(1 azione) Tutte le creature @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordite} e @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{paralizzate} nella stanza subiscono [[/r 1d10[mental]]]{1d10 danni mentali} (TS @Check[type:will|dc:26|basic:true|traits:magical,trap]). Le creature che falliscono diventano anche paralizzate per 1 round e possono usare una reazione per combattere mentalmente questa stasi le creature che lo fanno subiscono [[/r 5d10[mental]]]{5d10 danni mentali} ma non sono più paralizzate.</p>",
+            "hazardDisable": "<p>@Check[type:thievery|dc:26|name:Distorcere o Attenuare la Luce|traits:magical,trap] per distorcere o attenuare la luce, mantenendo intatto il cono di luce ma impedendo alla trappola di attivarsi, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{dissolvi magie}</em> (4° livello; contrastare CD 26) per dissolvere la luce, lasciando la stanza nell'oscurità</p>"
         }
     }
 }
