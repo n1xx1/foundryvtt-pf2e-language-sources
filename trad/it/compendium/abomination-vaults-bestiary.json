@@ -332,13 +332,56 @@
             "npcAllSaves": "status +1 a tutti i TS contro magia, status +2 a tutti i TS contro mentale"
         },
         "Morlock Scavenger": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcAllSaves": "status +2 a tutti i TS contro malattia e veleno",
+            "items": {
+                "LS15ASdQlOSeQgPH": {
+                    "name": "Fauci"
+                },
+                "j9vgTM71zw7kdn4T": {
+                    "name": "status +2 a tutti i TS contro malattia e veleno"
+                },
+                "Nwtd1G94Ikab4Ejf": {
+                    "name": "Attacco Scattante",
+                    "description": "<p>Il rovistatore morlock Avanza due volte, ignorando il terreno difficile causato dalle caratteristiche delle caverne naturali come macerie o stalagmiti. In qualsiasi punto durante il suo movimento, il morlock può effettuare un singolo Colpo contro un nemico entro la sua portata.</p>"
+                },
+                "qwwxBH4SCVdtmTb2": {
+                    "description": "<p>Il morlock infligge 1d6 danni di precisione aggiuntivi alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "QlygOvoO8v1q3qZ1": {
+                    "name": "Postura Sciamante",
+                    "description": "<p>Un morlock può condividere lo stesso spazio di un altro morlock, ma lo stesso spazio non può essere occupato da più di due morlock. Quando i morlock condividono lo stesso spazio, ottengono bonus di circostanza +1 ai tiri per colpire.</p>"
+                }
+            },
+            "name": "Morlock Rovistatore",
+            "description": "<p>Il morlock rovistatore è una versione più smilza e piccola di un tipico morlock. La loro statura gli permette di strisciare in aree in cui altri morlock non riescono a entrare.</p>\n<hr />\n<p>I morlock, discendono da umani che hanno da lungo tempo abbandonato il mondo di superficie. Hanno un'affinità per i macchinari, per il rovistare e per strani comportamenti occulti.</p>"
         },
         "Spellvoid": {
             "npcSenses": "scurovisione"
         },
         "Scalathrax": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "items": {
+                "zuOWrPyeR35yI1r7": {
+                    "name": "Aculeo della Zampa"
+                },
+                "5NK2vxZn4QPORBlo": {
+                    "name": "Veleno Scalathrax",
+                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Durata Massima</strong> 6 round</p>\n<p><strong>Fase 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1} (1 round)</p>\n<p><strong>Fase 2</strong> maldestro 1 e @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} (1 round)</p>\n<p><strong>Fase 3</strong> maldestro 1 e @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 2} (1 round)</p>"
+                },
+                "3Y7de8nXARx61nEk": {
+                    "name": "Spruzzare Olio Tossico",
+                    "description": "<p>Lo scalathrax vomita un fiotto di olio tossico dalla bocca in un @Template[type:cone|distance:15]{cono di 4,5 metri}. Le creature nell'area devono effettuare un TS su @Check[type:reflex|dc:21|traits:damaging-effect].</p>\n<p>Lo scalathrax non può usare Spruzzare Olio Tossico per [[/br 1d4 #Ricaricare Spruzzare Olio Tossicol]]{1d4 round}.</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata</p>\n<p><strong>Successo</strong> La creatura subisce [[/r 1d8[poison]]]{1d8 danni da veleno}</p>\n<p><strong>Fallimento</strong> La creatura subisce [[/r 2d8[poison]]]{2d8 danni da veleno}. Per 1 minuto, la creatura ottiene debolezza al fuoco 5 e ogni volta che la creatura ottiene un fallimento critico a un tiro per colpire con un'arma impugnata, lascia cadere l'arma.</p>\n<p><strong>Fallimento Critico</strong> Come nel fallimento, ma [[/r 4d8[poison]]]{4d8 danni da veleno}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.75B7z49jfQbWcSy9]{Effetto: Spruzzare Olio Tossico}</p>"
+                },
+                "EBgiFSyYf0W5Fxcr": {
+                    "name": "Fauci"
+                },
+                "Q4NBsMEwBKrHlvNK": {
+                    "name": "Scaglie Oleose",
+                    "description": "<p>Uno scalathrax trasuda costantemente un olio scintillante che lo rende eccezionalmente viscido. Considera i risultati delle prove di Acrobazia per @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Stringersi} o qualsiasi prova di abilità per @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Sfuggire} come di un grado di successo migliore rispetto al risultato ottenuto.</p>\n<p>Uno scalathrax perde questo beneficio per 1 minuto dopo aver subito qualsiasi ammontare di danni da fuoco.</p>"
+                }
+            },
+            "description": "<p>Questi viscidi orrori scagliosi dimorano in remote reti di caverne nelle Lande Tenebrose, preferendo annidarsi nelle fessure più anguste. Quando sono a caccia, fanno spuntare dei barbigli dalle loro lunghe zampe o spruzzano i loro nemici con un chiaro olio tossico. Lo stesso olio ricopre il corpo dello scalathrax, tutto quanto molto infiammabile, sia che ricopra una vittima o lo scalathrax stesso.</p>\n<p>Sebbene uno scalathrax sembri ferale, è più intelligente di quanto appaia ed è capace di parlare con un'umida e scivolosa voce. La stragrande maggioranza degli scalathrax ha un pessimo temperamento e sono facili all'ira, e alla maggior parte di loro piace uccidere. Forgiare un'alleanza con uno scalathrax è possibile, ma farlo richiede tributi continui di nuove creature da uccidere o una personalità particolarmente intimidatoria: gli scalathrax spesso rispettano i prepotenti, vendendo il loro uno specchio dei loro crudeli valori.</p>"
         },
         "Siora Fallowglade": {
             "items": {
@@ -360,39 +403,201 @@
                 "VB81WcGgMngyyh3E": {
                     "name": "Sgusciare nelle Ombre",
                     "description": "<p>L'ombra può @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Nascondersi} o terminare il suo @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Muoversi Furtivamente} nell'ombra di un oggetto o di una creatura.</p>"
+                },
+                "OksJxFiBFjS3xboM": {
+                    "description": "<p><strong>Requisiti</strong> Siora è in grado di vedere il bersaglio che intende marchiare</p>\n<hr />\n<p><strong>Effetto</strong> Siora designa un singolo bersaglio come suo marchio. Ottiene un bonus di circostanza +2 alle prove di Percezione per @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Individuare} il suo bersaglio, e i suoi Colpi con mano spettrale ottengono il tratto dell'arma micidiale d8.</p>",
+                    "name": "Marchio di Morte"
+                },
+                "Xj2woyiQHPYlP7Uc": {
+                    "name": "Oscurità (A Will)"
                 }
             },
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "description": "<p>Le ombre che trascorrono lunghi periodi di tempo sul Piano delle Ombre e ne assorbono la magia finiscono per diventare ombre superiori.</p>\n<hr />\n<p>I misteriosi non morti conosciuti come ombre si nascondono nei luoghi più bui e si nutrono di coloro che si allontanano troppo dalla luce. Chi riesce a negoziare con le ombre, generalmente tenendole a bada con un'arma luminosa, può scoprire molti segreti importanti, in quanto queste creature sono spie letali.</p>"
         },
         "Caligni Defender": {
             "items": {
                 "wnV3crCWLBRnytqk": {
-                    "name": "Fiamma di Morte"
+                    "name": "Fiamma di Morte",
+                    "description": "<p>Quando il caligni difensore muore, il suo corpo è consumato da un lampo di fiamme bianche incandescenti. Tutte le creature entro un'@Template[type:burst|distance:20]{esplosione di 6 metri} subiscono [[/r 6d10[fire]]]{6d10 danni da fuoco} (TS @Check[type:reflex|dc:26|basic:true]). Il suo equipaggiamento non viene influenzato dalle fiamme e rimane in un cumulo nel punto in cui è morto.</p>"
+                },
+                "uc4ln8R3AB0uWMGh": {
+                    "name": "Oscurità (A Will)"
+                },
+                "OOpmi6uvkCP25AwD": {
+                    "description": "<p>Quando il caligni difensore ottiene un successo in un TS su Volontà contro un effetto di paura, ottiene invece un successo critico. Inoltre, ogni volta che ottiene la condizione @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato}, riduce il suo valore di 1.</p>",
+                    "name": "Audacia"
+                },
+                "LOeBCSVBauL8spor": {
+                    "name": "Veleno Macchia Nera",
+                    "description": "<p>Molti caligni utilizzano un veleno debilitante ricavato da un fungo sotterraneo.</p>\n<hr />\n<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:16|traits:alchemical,injury,poison]</p>\n<p><strong>Durata Massima</strong> 6 round</p>\n<p><strong>Fase 1</strong> [[/r 1d6[poison]]]{1d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 round)</p>\n<p><strong>Fase 2</strong> Come nella Fase 1</p>\n<p><strong>Fase 3</strong> [[/r 1d6[poison]]]{1d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 2} (1 round)</p>"
+                },
+                "JlHuStw8Ji1vTXMi": {
+                    "name": "Spalla a Spalla",
+                    "description": "<p>Quando è adiacente a uno o più difensori che è in grado di vedere, i Colpi del difensore infliggono [[/r {2d6}]]{2d6 danni aggiuntivi}.</p>"
+                },
+                "RuO5xdjimVRC9EbR": {
+                    "name": "Foschia Occultante (A Volontà)"
+                },
+                "bjPqG4zbgBVYtXCR": {
+                    "description": "<p>Molti caligni utilizzano un veleno debilitante ricavato da un fungo sotterraneo.</p>\n<hr />\n<p><strong>Attivazione</strong> <span class=\"pf2-icon\">T</span> Interagire (Ferimento)</p>\n<p><strong>Tiro Salvezza</strong> Tempra CD 16</p>\n<p><strong>Durata Massima</strong> 6 round</p>\n<p><strong>Fase 1</strong> [[/r 1d6[poison]]]{1d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 1} (1 round)</p>\n<p><strong>Fase 2</strong> Come nella Fase 1</p>\n<p><strong>Fase 3</strong> [[/r 1d6[poison]]]{1d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 2} (1 round)</p>"
                 }
             },
-            "npcHp": "fiamma di morte"
+            "npcHp": "fiamma di morte",
+            "name": "Caligni Difensore",
+            "npcSenses": "scurovisione superiore"
         },
         "Drow Hunter": {
             "items": {
                 "CtYG2Idf6Es4FDCt": {
                     "name": "Status +2 a Tutti i TS Contro Mentale"
+                },
+                "1M3Chy2EO0WvLGrF": {
+                    "name": "Oscurità (A Will)"
+                },
+                "ohL0OcnbucaAroHs": {
+                    "name": "Elusione Lesta",
+                    "description": "<p>Quando il cacciatore supera un TS su Riflessi, ottiene invece un successo critico.</p>"
+                },
+                "Q43gFqCqgbv9y5VO": {
+                    "description": "<p>Il cacciatore può fare un Passo e poi Colpire oppure Colpire e poi fare un Passo.</p>",
+                    "name": "Colpo in Movimento"
+                },
+                "DIqlApNIdzR6Eh6H": {
+                    "name": "Ferita del Cacciatore",
+                    "description": "<p><strong>Frequenza</strong> una volta per round</p>\n<p><strong>Prerequisiti</strong> Il cacciatore sta impugnando un'arma a distanza con ricarica 0</p>\n<hr />\n<p><strong>Effetto</strong> Il cacciatore effettua due Colpi a distanza contro la sua preda. Se entrambi colpiscono e infliggono danni, il bersaglio subisce [[/r 1d8[bleed]]]{1d8 danni da sanguinamento persistenti}.</p>"
+                },
+                "VYGdMMY84xwadkDM": {
+                    "name": "Luminescenza (A Volontà)"
                 }
             },
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcAllSaves": "status +1 a tutti i TS contro magia, status +2 a tutti i TS contro mentale",
+            "name": "Drow Cacciatore",
+            "description": "<p>I cacciatori cercano prede per tenere la comunità drow sazie e funzionanti.</p>\n<hr />\n<p>I drow hanno la reputazione di essere malvagi a causa del la venerazione dei demoni nei loro insediamenti maggiori. Tuttavia, come i membri di qualsiasi stirpe, i drow possono avere qualsiasi allineamento. specie quando sottratti dalla sinistra influenza dei signori dei demoni.</p>"
         },
         "Otari Ilvashti": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "items": {
+                "vH2uvgGZ6JCaWrIl": {
+                    "name": "Mano Spettrale"
+                },
+                "eP5tBspqEqP18oTY": {
+                    "name": "Vincolato al Luogo",
+                    "description": "<p>Area <strong>D18</strong></p>\n<hr />\n<p>Un tipico fantasma può allontanarsi soltanto per poca distanza dal luogo in cui è stato ucciso o che infesta. Il tipico limite è di 36 metri. Alcuni fantasmi sono invece vincolati a una stanza, un edificio, o un oggetto che aveva per loro un significato speciale, anziché a un luogo.</p>"
+                },
+                "oeWKbVvK3lP66J9I": {
+                    "name": "Rinascita",
+                    "description": "<p>Assicurarsi le quattro icone e collocarle sull'altare nell'area <strong>D13</strong> permette a Otari di trapassare nell'aldilà.</p>\n<hr />\n<p>Quando un fantasma è distrutto, si riforma dopo [[/br 2d4 #giorni]]{2d4 giorni} all'interno nel luogo a cui è vincolato, interamente guarito. Un fantasma può essere distrutto permanentemente solo se qualcuno determina la ragione della sua esistenza e mette a posto ciò che impedisce allo spirito di riposare.</p>"
+                },
+                "11ioR4E9tTmB1Wak": {
+                    "name": "Febbre Lurida",
+                    "description": "<p>Le condizioni @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato} e @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{privo di sensi} dovute alla febbre lurida non migliorano da sole finché la malattia non viene curata.</p>\n<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>Fase 1</strong> portatore senza effetti nocivi [[/br 1d4 #Incubazione]](1d4 ore)</p>\n<p><strong>Fase 2</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 1} (1 giorno)</p>\n<p><strong>Fase 3</strong> nauseato 1 e @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} finché rimane nauseato (1 giorno)</p>\n<p><strong>Fase 4</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{privo di sensi} (1 giorno)</p>\n<p><strong>Fase 5</strong> morto</p>"
+                },
+                "tJRkLCUMgqynhzQ9": {
+                    "name": "Ombra Infestata",
+                    "description": "<p>Otari svanisce, emergendo temporaneamente dall'ombra di un'altra creatura entro 9 metri, ed effettua un Colpo di mano spettrale contro un singolo bersaglio entro la portata di questa creatura (ma non contro la creatura la cui ombra lui infesta).</p>\n<p>Se il Colpo va a segno, il bersaglio è anche @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} fino all'inizio del prossimo turno di Otari. Otari poi riappare nel suo punto iniziale.</p>\n<p>La creatura la cui ombra viene infestata da Otari è esposta alla febbre lurida.</p>"
+                },
+                "aUiw4yrSZnbmjXeR": {
+                    "description": "<p>Otari infligge 2d6 danni di precisione aggiuntivi alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                }
+            },
+            "npcHp": "guarigione negativa, rinascita"
         },
         "Morlock Engineer": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "name": "Morlock Ingegnere",
+            "items": {
+                "nksShZpMIUxollKt": {
+                    "name": "Manciate di Scarti"
+                },
+                "wVxlFqCWi3T6bOk1": {
+                    "name": "Lancia Proiettili"
+                },
+                "LfqV1vPTJG0eLpId": {
+                    "name": "status +2 a tutti i TS contro malattia e veleno"
+                },
+                "HSgw6P66g1tETSK5": {
+                    "name": "Proiettile Improvvisato",
+                    "description": "<p>Il morlock ingegnere crea velocemente un proiettile improvvisato usando gli oggetti che ha con sé o che sono prontamente accessibili nei quadretti adiacenti. Laddove siano disponibili materiali insoliti, un proiettile improvvisato potrebbe infliggere danni diversi da contundenti o perforanti; ad esempio, un morlock ingegnere vicino a un fuoco da campo potrebbe costruire un proiettile che infligge danni da fuoco.</p>"
+                },
+                "U0pfy4tbvu2Y9KYj": {
+                    "description": "<p>Il morlock infligge 1d6 danni di precisione aggiuntivi alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "fueyaPehWakc93nh": {
+                    "description": "<p>Un morlock può condividere lo stesso spazio di un altro morlock, ma lo stesso spazio non può essere occupato da più di due morlock. Quando i morlock condividono lo stesso spazio, ottengono bonus di circostanza +1 ai tiri per colpire.</p>",
+                    "name": "Postura Sciamante"
+                },
+                "XzUUZ1FoJXIkVqZu": {
+                    "name": "Armeggio Prodigioso",
+                    "description": "<p>Il morlock ingegnere armeggia con un costrutto o un pericolo meccanico adiacente. Effettua una prova di Artigianato contro la CD di Tempra del costrutto o del pericolo. Il morlock non può ottenere un esito migliore di un fallimento se il livello del bersaglio è maggior del doppio di quello del morlock.</p>\n<p>Questa capacità riflette le frettolose riparazioni sul campo di battaglia; una volta che un Costrutto o un pericolo ottiene Punti Ferita da questa capacità, non può farlo di nuovo finché non viene @UUID[Compendium.pf2e.actionspf2e.bT3skovyLUtP22ME]{Riparato}.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio ottiene [[/r 8d6[healing]]]{8d6 Punti Ferita} e ottiene bonus di circostanza +1 ai tiri per colpire per 1 minuto. In alternativa, il morlock può infliggere [[/r {8d6}]]{8d6 danni} (contundenti, perforanti o taglienti, a scelta del morlock ingegnere) al dostrutto o al pericolo.</p>\n<p><strong>Successo</strong> Come successo critico, ma il bersaglio ottiene [[/r 4d6[healing]]]{4d6 Punti Ferita} oppure il morlock infligge [[/r {4d6}]]{4d6 danni}.</p>\n<p><strong>Fallimento Critico</strong> Il morlock si ferisce da solo, subendo [[/r {3d6}]]{3d6 danni} (solitamente contundenti, perforanti o taglienti, ma potenzialmente un tipo differente a discrezione del GM).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.BTSstQAn4Xlm1PWV]{Effetto: Armeggio Prodigioso}</p>"
+                },
+                "OxVsLGBZ8k9rqQxY": {
+                    "name": "Fauci"
+                },
+                "GzMhkd0CBpUeUX63": {
+                    "name": "Lancia Proiettili"
+                }
+            },
+            "npcAllSaves": "status +2 a tutti i TS contro malattia e veleno",
+            "description": "<p>La maggioranza dei morlock non ha alcun talento per l'artigianato, ma qualche raro individuo ha un intuito prodigioso per l'ingegneria.</p>\n<hr />\n<p>I morlock, discendono da umani che hanno da lungo tempo abbandonato il mondo di superficie. Hanno un'affinità per i macchinari, per il rovistare e per strani comportamenti occulti.</p>"
         },
         "Kragala": {
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "items": {
+                "oAOkRgFO0POryMdo": {
+                    "description": "<p>Kragala infligge [[/r {1d6}]]{1d6 danni} addizionali con i martelli, incluse le bacchette (già inclusi nei danni dei suoi Colpi).</p>",
+                    "name": "Riverbero Percussivo"
+                },
+                "2pz6VpKOe8cRxqUY": {
+                    "name": "Ritmo Guida",
+                    "description": "<p>Quando Kragala lancia <em>@UUID[Compendium.pf2e.spells-srd.izcxFQFwf3woCnFs]{guida}</em> mentre usa uno strumento a percussione, i suoi bersagli non diventano temporaneamente immuni alla sua guida.</p>"
+                },
+                "mL8fUkQ6DtVQj0dy": {
+                    "name": "Ingrandire (Solo Sé Stesso)"
+                },
+                "X9hw08u8m3fLbSva": {
+                    "name": "Invisibilità (Solo Sé Stesso)"
+                },
+                "ZmA1lKUhd2XoWfNY": {
+                    "name": "Bacchetta"
+                },
+                "zSR3MB9KNpQPcxA0": {
+                    "name": "Bacchetta"
+                },
+                "zyawAgjl2eHH085S": {
+                    "name": "Bacchetta"
+                },
+                "RwS0OFipezRfdrZG": {
+                    "name": "Status +2 a tutti i TS contro Magia"
+                },
+                "ygCGxbBzOI9gN0fC": {
+                    "name": "Bacchetta Deflettente",
+                    "description": "<p><strong>Innesco</strong> Kragala impugna una bacchetta e viene bersagliata da un attacco con un'arma a distanza da un attaccante che lei è in grado di vedere</p>\n<hr />\n<p><strong>Effetto</strong> Kragala ottiene bonus di circostanza +2 alla CA contro l'attacco innescante.</p>"
+                }
+            },
+            "npcAllSaves": "status +2 a tutti i TS contro la magia"
         },
         "Ryta": {
             "items": {
                 "NAX30nf7nlVx5vTo": {
-                    "name": "Sacche delle Guance"
+                    "name": "Guancegonfie",
+                    "description": "<p>Ryta ha delle elastiche sacche delle guance che possono contenere fino a 30 centimetri cubi di oggetti (ma non più di quattro oggetti leggeri). Può rimuovere o immagazzinare un oggetto usando l'azione Interagire. Finché ha almeno un oggetto nelle sue sacche delle guance, è molto difficile capirla quando parla.</p>"
+                },
+                "sAuhwgcHiN60xIJT": {
+                    "name": "Sciamante",
+                    "description": "<p>Ryta può terminare il suo movimento nello stesso quadretto di un alleato in possesso di questa stessa capacità. Solo due di queste creature possono condividere lo stesso spazio.</p>"
+                },
+                "mgluD1d7bZoq5JBg": {
+                    "name": "Zanne"
+                },
+                "CH9sJBUN2HtEAgtt": {
+                    "name": "Riscaldamento Vocale",
+                    "description": "<p>Rta emette delle devastanti vibrazioni che echeggiano nella sua gola e nelle sue sacche delle guance. Fino all'inizio del suo turno successivo, i suoi Colpi con le zanne infliggono [[/r 2d8[sonic]]]{2d8 danni sonori} addizionali.</p>\n<p>Ryta non può usare Riscaldamento Vocale se ha un oggetto nelle sue sacche delle guance.</p>"
+                },
+                "BeNcnupTKc7WS9e5": {
+                    "name": "Passo di Danza",
+                    "description": "<p><strong>Innesco</strong> Ryta viene bersagliata da un attacco in mischia o a distanza da un attaccante che lei è in grado di vedere.</p>\n<hr />\n<p><strong>Effetto</strong> Ryta fa un Passo e ottiene bonus di circostanza +2 alla CA contro l'attacco innescante.</p>"
                 }
             },
             "npcSenses": "scurovisione"
@@ -614,9 +819,32 @@
             "items": {
                 "CtYG2Idf6Es4FDCt": {
                     "name": "Status +2 a Tutti i TS Contro Mentale"
+                },
+                "VYGdMMY84xwadkDM": {
+                    "name": "Luminescenza (A Volontà)"
+                },
+                "1M3Chy2EO0WvLGrF": {
+                    "name": "Oscurità (A Will)"
+                },
+                "Q43gFqCqgbv9y5VO": {
+                    "name": "Colpo in Movimento",
+                    "description": "<p>Nyzuros può fare un Passo e poi Colpire oppure Colpire e poi fare un Passo.</p>"
+                },
+                "DIqlApNIdzR6Eh6H": {
+                    "description": "<p><strong>Frequenza</strong> una volta per round</p>\n<p><strong>Prerequisiti</strong> Nyzuros sta impugnando un'arma a distanza con ricarica 0</p>\n<hr />\n<p><strong>Effetto</strong> Nyzuros effettua due Colpi a distanza contro la sua preda. Se entrambi colpiscono e infliggono danni, il bersaglio subisce [[/r 1d8[bleed]]]{1d8 danni da sanguinamento}.</p>",
+                    "name": "Ferita del Cacciatore"
+                },
+                "ohL0OcnbucaAroHs": {
+                    "name": "Elusione Lesta",
+                    "description": "<p>Quando Nyzuros supera un TS su Riflessi, ottiene invece un successo critico.</p>"
+                },
+                "dFwCuZjzgm11pQbh": {
+                    "name": "Chiavi di Nyzuros"
                 }
             },
-            "npcSenses": "scurovisione"
+            "npcSenses": "scurovisione",
+            "npcAllSaves": "status +1 a tutti i TS contro magia, status +2 a tutti i TS contro mentale",
+            "description": "<p>I cacciatori cercano prede per tenere la comunità drow sazie e funzionanti.</p>\n<hr />\n<p>I drow hanno la reputazione di essere malvagi a causa del la venerazione dei demoni nei loro insediamenti maggiori. Tuttavia, come i membri di qualsiasi stirpe, i drow possono avere qualsiasi allineamento. specie quando sottratti dalla sinistra influenza dei signori dei demoni.</p>"
         },
         "Elder Child Of Belcorra": {
             "npcHp": "guarigione negativa",
@@ -1108,7 +1336,7 @@
         "Murschen": {
             "items": {
                 "Cth0VtGbtTcGpsAR": {
-                    "description": "Sole se in Posizione della Rovina Rossa",
+                    "description": "<p>Solo se in posizione della Rovina Rossa</p>",
                     "name": "Artiglio Rosso"
                 },
                 "i7f5BgAL5FJKJd7b": {
@@ -1152,6 +1380,391 @@
             "hazardReset": "<p>La magia di stasi nella luce si accumula nel corso di un'ora, dopo la quale la trappola può essere innescata nuovamente.</p>",
             "hazardRoutine": "<p>(1 azione) Tutte le creature @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordite} e @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{paralizzate} nella stanza subiscono [[/r 1d10[mental]]]{1d10 danni mentali} (TS @Check[type:will|dc:26|basic:true|traits:magical,trap]). Le creature che falliscono diventano anche paralizzate per 1 round e possono usare una reazione per combattere mentalmente questa stasi le creature che lo fanno subiscono [[/r 5d10[mental]]]{5d10 danni mentali} ma non sono più paralizzate.</p>",
             "hazardDisable": "<p>@Check[type:thievery|dc:26|name:Distorcere o Attenuare la Luce|traits:magical,trap] per distorcere o attenuare la luce, mantenendo intatto il cono di luce ma impedendo alla trappola di attivarsi, o <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{dissolvi magie}</em> (4° livello; contrastare CD 26) per dissolvere la luce, lasciando la stanza nell'oscurità</p>"
+        },
+        "Urdefhan Lasher": {
+            "name": "Urdefhan Sferzatore",
+            "npcHp": "guarigione negativa",
+            "items": {
+                "Y8ZISA3GaUO4MtHh": {
+                    "name": "Fauci"
+                },
+                "WfbnKRcDwQ4WCR3g": {
+                    "name": "Caduta Morbida (A Volontà) (Solo Sé Stesso)"
+                },
+                "4pjPyWF2dnob8Tlm": {
+                    "name": "Decadimento Necrotico",
+                    "description": "<p>Quando un urdefhan muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al corpo.</p>\n<p>Questo gas infligge [[/r 7d6[negative]]]{7d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono come quelli dell'urdefhan (TS @Check[type:fortitude|dc:24|basic:true]).</p>"
+                },
+                "ErwsWW6oip6zma6i": {
+                    "description": "<p>Lo sferzatore ottiene la capacità @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Afferrare} con una frusta shauth e può usare il suo Morso Perverso attraverso i Colpi con un'arma shauth magica.</p>",
+                    "name": "Presa Shauth"
+                },
+                "9DkYcHRtL1rgB4Ob": {
+                    "description": "<p>[[/r (1d8+7)[slashing]]]{1d8+7 danni taglienti}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "N1zdZTTLXEp3x5eJ": {
+                    "name": "Morso Perverso",
+                    "description": "<p><strong>Requisiti</strong> Nella sua ultima azione l'urdefhan ha inflitto danni a una creatura con un Colpo con le fauci</p>\n<hr />\n<p><strong>Effetto</strong> L'urdefhan mantiene il contatto, rendendo traslucida la carne della creatura intorno alla ferita. L'urdefhan sceglie una delle due opzioni seguenti, ognuna delle quali richiede un TS su Tempra. Se il Colpo con le fauci è un colpo critico, la creatura subisce entrambi gli effetti, e utilizza il risultato del TS per entrambi.</p>\n<ul>\n<li><strong>Risucchio di Sangue</strong> @Check[type:fortitude|dc:25] L'urdefhan beve parte del sangue della creatura. Se fallisce il TS, la creatura è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 1} e l'urdefhan recupera [[/r 10[healing]]]{10 PF} (in caso di fallimento critico, la creatura è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 2} e l'urdefhan recupera [[/r 20[healing]]]{20 PF}).</li>\n<li><strong>Risucchio di Vitalità</strong> (necromanzia) @Check[type:fortitude|dc:25|traits:necromancy] L'urdefhan risucchia parte dell'essenza vitale della creatura. Se fallisce il TS, la creatura diventa @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 1} per 1 ora (o @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 2} per 1 ora in caso di fallimento critico)</li>.\n</ul>"
+                }
+            },
+            "description": "<p>Addestrati sin dalla giovinezza con le strane e potenti fruste shauth, gli urdefhan sferzatori preferirebbero morire che ritirarsi da un combattimento.</p>\n<hr />\n<p>Flagelli delle Lande Tenebrose dalla pelle traslucida, gli urdefhan sono assassini senza rimorsi e fanti della fine del mondo.</p>",
+            "npcSenses": "scurovisione superiore"
+        },
+        "Shuffling Scythe Blades": {
+            "hazardReset": "<p>La trappola si ripristina quando nell'area <strong>E20</strong> non resta alcuna creatura. Le lame danneggiate o distrutte non vengono riparate quando la trappola si ripristina.</p>",
+            "description": "<p>Sei lunghe lame, nascoste in solchi all'interno delle pareti e del pavimento, zigzagano per diverse parti di questo passaggio quando una qualsiasi piastra a pressione viene premuta; ci sono così tante piastre che è impossibile evitarle quando ci si muove per la stanza. Le lame si ritraggono nel pavimento e si muovono attraverso scanalature nascoste prima di spuntare di nuovo in un punto diverso della parete.</p>",
+            "hazardDisable": "<p>@Check[type:thievery|dc:26|name:Disattivare Ciascuna Lama] (esperto) per disattivare ciascuna lama o pronunciare la parola d'ordine magica (che solo Chafkhem conosce) per disattivare la trappola per 10 minuti</p>",
+            "name": "Lame di Falce Casualizzate",
+            "hazardRoutine": "<p>(7 azioni) La trappola spende 1 azione per ognuna delle sue lame; una lama effettua un Colpo di falce contro ogni creatura nella sua regione. Con la sua azione finale, la trappola usa Mescolamento di Falci. Riduci il numero di azioni che la trappola può effettuare di 1 per ogni lama distrutta.</p>"
+        },
+        "Befuddling Gas Trap": {
+            "name": "Trappola del Gas Annebbiante",
+            "hazardReset": "<p>Dopo un'ora, la trappola si disattiva; il gas si disperde lentamente e le porte possono di nuovo essere aperte. Dopo 24 ore, il gas si accumula di nuovo e la trappola può nuovamente essere innescata.</p>",
+            "hazardDisable": "<p>@Check[type:thievery|dc:33|name:Disattivare Meccanismo Nascosto|traits:action:disable-a-device] per disattivare il meccanismo nascosto sulla parete nord, risucchiando immediatamente il gas nella stanza, o @Check[type:thievery|dc:29|name:Bloccare Un Foro|traits:action:disable-a-device] per bloccare adeguatamente uno dei sette fori. Quando tutti e sette i fori sono stati bloccati o distrutti, la trappola si disattiva.</p>",
+            "hazardRoutine": "<p>(1 azione) Il gas si intensifica. Ogni creatura nella stanza deve effettuare un TS su @Check[type:fortitude|dc:30].</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non viene influenzata e diventa temporaneamente immune al gas per 1 ora, benché se la creatura sia già sbigottita a causa della trappola, quella condizione rimanga per la sua normale durata.</p>\n<p><strong>Successo</strong> La creatura non viene influenzata.</p>\n<p><strong>Fallimento</strong> La creatura diventa @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottita 1} per 24 ore. Se il bersaglio è già sbigottito, il valore della condizione aumenta di 1 (fino a un massimo di sbigottito 4) e il bersaglio subisce [[/r 8d6[mental]]]{8d6 danni mentali}.</p>\n<p><strong>Fallimento Critico</strong> Come fallimento, ma il bersaglio subisce il doppio dei danni mentali.</p>",
+            "description": "<p>Sette bocchette nascoste all'interno di buchi nel soffitto alto 45 metri rilasciano un gas velenoso.</p>"
+        },
+        "Urevian": {
+            "npcSenses": "scurovisione superiore",
+            "items": {
+                "dD1t8c61JZZMf4Qo": {
+                    "name": "Scrutare (A Volontà, vedi Diritto d'Ispezione)"
+                },
+                "owQaoWxiXKdJdh64": {
+                    "name": "Ferita Infernale",
+                    "description": "<p>I Colpi di Urevian infliggono anche [[/r 2d6[bleed]]]{2d6 danni da sanguinamento persistenti} che resistono ai tentativi di curarli.</p>\n<p>La prova semplice per arrestare il sanguinamento inizia con @Check[type:flat|dc:20]. La CD si riduce a @Check[type:flat|dc:15] solo se la creatura sanguinante o un alleato aiutano con successo nel recupero. La CD per @UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Prestare Primo Soccorso} a una creatura con una ferita infernale è aumentata di 5.</p>\n<p>Un incantatore o un oggetto che provano a usare la magia di guarigione su una creatura che sta patendo una ferita infernale deve superare una prova di contrastare con CD 28, altrimenti la magia non riesce a curare la creatura.</p>"
+                },
+                "J9CjxTTQRdZozTW4": {
+                    "name": "Diritto d'Ispezione",
+                    "description": "<p>Urevian può lanciare l'incantesimo <em>@UUID[Compendium.pf2e.spells-srd.r784cIz17eWujtQj]{scrutare}</em> a volontà, ma solo per bersagliare una creatura con cui lui abbia un contratto, una specifica creatura nominata in un contratto in suo possesso o un discendente di creature che rientrano in tali categorie. L'esito del tiro salvezza del bersaglio è peggiore di un grado rispetto al risultato tirato.</p>"
+                },
+                "LjVRW54085z5XE2p": {
+                    "name": "Sapienza Legale"
+                },
+                "TdzSpCHa1QM7Auhy": {
+                    "description": "<p>Urevian tiene pronta qualche parola astuta per distrarre i nemici. Usa sempre Inganno come iniziativa.</p>",
+                    "name": "Dichiarazione Distraente"
+                },
+                "okdtSA4yvXuAw47k": {
+                    "name": "Linguaggi (Costante)"
+                },
+                "A5aJvo6ma9oQG3Hh": {
+                    "name": "Porta Dimensionale (A Volontà)"
+                },
+                "YvcIDxmDZnqrfRBa": {
+                    "name": "Localizzare (A Volontà)"
+                },
+                "Q1GNuBqe5LEkrKBH": {
+                    "name": "Leggere nella Mente (A Volontà)"
+                },
+                "HSib85eXEGK4xoXf": {
+                    "name": "Calamo Infernale"
+                },
+                "ijACdC2w6CsLO9Ks": {
+                    "name": "Telepatia 30 metri"
+                },
+                "azGXpMTZu0Ft4DaJ": {
+                    "name": "Corno"
+                },
+                "ley6LXSrjfxUxe7T": {
+                    "name": "Proteggere Contratto",
+                    "description": "<p>Un contratto firmato e trasportato da Urevian (anche se drappeggiato sulle sue corna) è immune ai danni inflitti da tutte le creature al di fuori di Urevian. Inoltre, Urevian è immune agli effetti mentali che lo obbligherebbero a distruggere, annullare o alterare un contratto.</p>"
+                },
+                "MZelOTUvBCjq2zbz": {
+                    "name": "Stilare Contratto",
+                    "description": "<p>Urevian produce un contratto infernale destinato a un singolo mortale vivente. Questo contratto può conferire una vasta gamma di capacità ed effetti, come un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{desiderio}</em>, ma esaudito alla lettera da Urevian. Per ricevere uno qualsiasi di quei benefici, il mortale deve volontariamente firmare il contratto con il suo vero nome. A quel punto, l'anima del mortale è vincolata a Urevian e all'Inferno.</p>\n<p>Finché il contratto ha effetto, la vittima non può essere riportata in vita se non tramite un desiderio o una magia analoga. Se il mortale viene riportato in vita con questi mezzi, Urevian sa quale mortale è tornato in vita e può localizzare la creatura o le creature che hanno riportato il mortale in vita per 1 anno, ottenendo gli effetti di un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.LQzlKbYjZSMFQawP]{localizzare}</em> con gittata illimitata. Aggirare i termini di un contratto infernale è difficile e spesso pericoloso.</p>"
+                }
+            },
+            "npcAllSaves": "status +1 a tutti i TS contro la magia"
+        },
+        "Urdefhan Blood Mage": {
+            "name": "Urdefhan Mago del Sangue",
+            "npcHp": "guarigione negativa",
+            "items": {
+                "obfPUaVoDmOFchMR": {
+                    "name": "Fauci"
+                },
+                "VwIv1y01lqATWPRT": {
+                    "name": "Decadimento Necrotico",
+                    "description": "<p>Quando un urdefhan muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al corpo.</p>\n<p>Questo gas infligge [[/r 8d6[negative]]]{8d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono come quelli dell'urdefhan (TS @Check[type:fortitude|dc:24|basic:true]).</p>"
+                },
+                "ayqWkUKHp3vU6wiY": {
+                    "name": "Offerta di Sangue",
+                    "description": "<p><strong>Frequenza</strong> una volta per round</p>\n<hr />\n<p><strong>Effetto</strong> Il mago del sangue si infligge un taglio e subisce [[/r 8[slashing]]]{8 danni taglienti}. Se la prossima azione del mago del sangue è Lanciare un Incantesimo, l'azione non può essere interrotta e se l'incantesimo ha un raggio, il mago del sangue può aumentare il raggio dell'incantesimo di 9 metri.</p>"
+                },
+                "JFcLFPpOrpJo01np": {
+                    "name": "Caduta Morbida (A Volontà) (Solo Sé Stesso)"
+                },
+                "dFO4VUU2D6u32L0j": {
+                    "name": "Morso Perverso",
+                    "description": "<p><strong>Requisiti</strong> Nella sua ultima azione l'urdefhan ha inflitto danni a una creatura con un Colpo con le fauci</p>\n<hr />\n<p><strong>Effetto</strong> L'urdefhan mantiene il contatto, rendendo traslucida la carne della creatura intorno alla ferita. L'urdefhan sceglie una delle due opzioni seguenti, ognuna delle quali richiede un TS su @Check[type:fortitude|dc:26]. Se il Colpo con le fauci è un colpo critico, la creatura subisce entrambi gli effetti, e utilizza il risultato del TS per entrambi.</p>\n<ul>\n<li><strong>Risucchio di Sangue</strong> L'urdefhan beve parte del sangue della creatura. Se fallisce il TS, la creatura è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 1} e l'urdefhan recupera [[/r 10[healing]]]{10 PF} (in caso di fallimento critico, la creatura è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 2} e l'urdefhan recupera [[/r 20[healing]]]{20 PF}).</li>\n<li><strong>Risucchio di Vitalità</strong> (necromanzia) L'urdefhan risucchia parte dell'essenza vitale della creatura. Se fallisce il TS, la creatura diventa @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 1} per 1 ora (o @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 2} per 1 ora in caso di fallimento critico)</li>.\n</ul>"
+                }
+            },
+            "description": "<p>Induriti maestri del potere occulto, gli urdefhan maghi del sangue danno il loro sangue in cambio del potere magico. Un mago del sangue con molte cicatrici è molto stimato dagli altri urdefhan, poiché mostra di essere sopravvissuto a molti scambi con sinistri patroni occulti.</p>\n<hr />\n<p>Flagelli delle Lande Tenebrose dalla pelle traslucida, gli urdefhan sono assassini senza rimorsi e fanti della fine del mondo</p>",
+            "npcSenses": "scurovisione superiore"
+        },
+        "Khurfel": {
+            "items": {
+                "O9UgZMqET8EKtovt": {
+                    "name": "Caduta Morbida (A Volontà) (Solo Sé Stesso)"
+                },
+                "x07lPwTJOL6PzSxR": {
+                    "name": "Spada Rhoka Poderosa +1"
+                },
+                "5OrtHpltPsigs3A8": {
+                    "name": "Fauci"
+                },
+                "qykfSUOQXBbtu4gM": {
+                    "name": "Attacco Frenetico",
+                    "description": "<p>Khurfel effettua un Colpo con la spada rhoka e due Colpi con le fauci contro una o due diverse creature (dividendo gli attacchi come preferisce).</p>\n<p>La sua penalità da attacchi multipli aumenta solo dopo tutti e tre gli attacchi.</p>"
+                },
+                "qTIxm70Zd6ETxfgu": {
+                    "name": "Colpo Sagace",
+                    "description": "<p>Khurfel effettua un Colpo con un'arma da mischia. Per questo Colpo, ottiene bonus di circostanza +2 al tiro per colpire e ignora qualsiasi occultamento posseduto dal bersaglio.</p>"
+                },
+                "l18iYVUpNZjCrvzG": {
+                    "name": "Decadimento Necrotico",
+                    "description": "<p>Quando Khurfel muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:10]{emanazione di 3} metri intorno al suo corpo. II gas infligge [[/r 10d6[negative]]]{10d6 danni negativi} alle creature in quest'area, la cui carne si corrompe e marcisce come quella di Khurfel (TS @Check[type:fortitude|dc:28|basic:true]).</p>"
+                },
+                "XrEqDkgs6eaCAzhM": {
+                    "name": "Morso Perverso",
+                    "description": "<p><strong>Requisiti</strong> Khurfel ha danneggiato una creatura con un Colpo con le fauci nella sua ultima azione</p>\n<hr />\n<p><strong>Effetto</strong> Khurfel mantiene il contatto, rendendo traslucida la carne della creatura attorno alla ferita. Khurfel sceglie una delle due opzioni seguenti, ognuna delle quali richiede un TS su @Check[type:fortitude|dc:28]. Se il Colpo con le fauci è un colpo critico, la creatura subisce entrambi gli effetti, usando lo stesso risultato del TS per entrambi.</p>\n<ul>\n<li><strong>Risucchio di Sangue</strong> Khurfel beve parte del sangue della creatura. Se fallisce il TS, la creatura è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 1} e Khurfel recupera 10 PF (in caso di fallimento critico, la creatura è @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{risucchiata 2} e Khurfel recupera 20 PF).</li>\n<li><strong>Risucchio di Vitalità</strong> (necromanzia) Khurfel risucchia parte dell'essenza vitale della creatura. Se fallisce il TS, la creatura diventa @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 1} per 1 ora (o @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 2} per 1 ora in caso di fallimento critico)</li>.\n</ul>"
+                }
+            },
+            "npcHp": "guarigione negativa",
+            "npcSenses": "scurovisione superiore"
+        },
+        "Gibtanius": {
+            "items": {
+                "zm8POWGccsjyfuPN": {
+                    "name": "Schiacciamento Rimbalzante",
+                    "description": "<p>Il gibtanius Balza e può terminare questo Balzo occupando lo stesso spazio di altre creature.</p>\n<p>Infligge [[/r 5d6[bludgeoning]]]{5d6 danni contundenti} a ogni creatura che occupa uno spazio in cui è Balzato (TS @Check[type:reflex|dc:26|basic:true]}), poi Spinge ognuna di quelle creature. Se non riesce a Spingere tutte le creature fuori dal suo spazio, rimbalza nel più vicino spazio disponibile a sua scelta che non contenga alcuna creatura.</p>\n<p>Schiacciamento Rimbalzante conta come un attacco per determinare la penalità da attacchi multipli del gibtanius.</p>"
+                },
+                "1CumgFDHAf5o5Yfs": {
+                    "name": "Soffio",
+                    "description": "<p>Il gibtanius vomita un torrente d'acido che infligge [[/r 9d6[acid]]]{9d6 danni da acido} a tutte le creature in una @Template[type:line|distance:60]{linea di 18 metri} (TS @Check[type:reflex|dc:26|basic:true]).</p>\n<p>Non può usare di nuovo il Soffio per [[/br 1d4 #Ricaricare Soffio]]{1d4 round}.</p>"
+                },
+                "UIrt3wtjXEhvQtEL": {
+                    "description": "<p>@Template[type:emanation|distance:20]{6 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}.</p>\n<hr />\n<p>Una creatura che entra nell'aura deve superare un TS su @Check[type:fortitude|dc:26]. Con un fallimento, la creatura è @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseata 2}; con un fallimento critico, la creatura è anche @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentata 1} fintanto che è nauseata.</p>\n<p>Una creatura che supera il TS è temporaneamente immune per 1 minuto.</p>",
+                    "name": "Fetore Potente"
+                },
+                "6EdSmIm5HogvdHr3": {
+                    "name": "Fauci"
+                },
+                "T8KOcWxiqo3StVBo": {
+                    "name": "Sputo"
+                },
+                "dFe2hAb3rrhlAVsx": {
+                    "name": "Fiuto (impreciso) 9 metri"
+                }
+            },
+            "description": "<p>Quando un gibtas si nutre regolarmente ma non riceve cibo sufficiente a procreare, si sviluppa in un possente gibtanius, trasformandosi in uno scontroso predatore fuori controllo che abbandona il padrone a cui è legato per saziare la sua fame inestinguibile.</p>\n<hr />\n<p>Questo saprofago gommoso e sferoide è quasi tutto bocca, con cinque neri occhi bulbosi e due potenti gambe allampanate. Spesso un gibtas forma un legame con una singola creatura (solitamente, un'aberrazione più potente) e serve tale padrone fedelmente, per quanto in modo imprevedibile. Le creature che tengono un gibtas come creatura domestica o da guardia imparano presto a tenerlo lontano da qualsiasi oggetto importante che non vogliono venga spruzzato d'acido.</p>",
+            "npcSenses": "fiuto (impreciso) 9 metri, scurovisione"
+        },
+        "Observation Deck Seugathi Researcher": {
+            "items": {
+                "8HBlAYPbdVvURrBC": {
+                    "name": "Libro delle Ricerche"
+                },
+                "VK6P3hNaRnT5JPUT": {
+                    "name": "Calamo"
+                },
+                "nzWpj7yo8PguGBFG": {
+                    "name": "Morso"
+                },
+                "7tCu8SPq0TpF1lJX": {
+                    "name": "Aura di Annebbiamento Mentale",
+                    "description": "<p>@Template[type:emanation|distance:20]{6 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}.</p>\n<hr />\n<p>Una creatura che inizia il suo turno nell'aura deve superare un TS su @Check[type:will|dc:21] o diventa @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{confusa} per 1 round; con un successo, la creatura è temporaneamente immune per 1 minuto. Un seugathi può sopprimere o attivare quest'aura con un'azione singola con il tratto concentrazione.</p>"
+                },
+                "tNfhf1JnOxOHfY86": {
+                    "name": "Avvelenare Arma",
+                    "description": "<p>Il seugathi applica il veleno seugathi a un'arma da esso impugnata.</p>"
+                },
+                "MnAW3prtfTZxnv7T": {
+                    "name": "Maestria con gli Oggetti Magici",
+                    "description": "<p>Un seugathi può Lanciare un Incantesimo da un oggetto magico anche se l'incantesimo non è sulla sua lista degli incantesimi. Tutti gli incantesimi di questo tipo sono Incantesimi Innati e usano la CD di incantesimo e il modificatore di attacco degli incantesimi incantesimi innati del seugathi.</p>"
+                },
+                "1tb7DMhGgvu0yKi2": {
+                    "name": "Veleno Seugathi",
+                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Durata Massima</strong> 6 round</p>\n<p><strong>Fase 1</strong> [[/r 1d6[poison]]]{1d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottito 1} (1 round)</p>\n<p><strong>Fase 2</strong> [[/r 2d6[poison]]]{2d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{assordato} e @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{sbigottito 2} (1 round)</p>"
+                },
+                "VkmU3zCSF1tm61N6": {
+                    "name": "Comandare Confusion",
+                    "description": "<p><strong>Innesco</strong> Una creatura fallisce il suo TS contro l'aura di annebbiamento mentale del seugathi.</p>\n<hr />\n<p><strong>Effetto</strong> Anziché essere determinato casualmente del GM, il bersaglio dell'attacco della creatura viene determinato dal seugathi.</p>\n<p>Se il bersaglio scelto è un alleato della creatura @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{confusa}, la creatura può effettuare immediatamente un TS su @Check[type:will|dc:21]; con un successo, il suo bersaglio viene determinato casualmente come di norma per la confusione, e con un successo critico il bersaglio non è più confuso.</p>"
+                },
+                "1lJU8hzSml2TMM3M": {
+                    "name": "Telepatia 30 metri"
+                },
+                "mj7RC0aTfmNbGcIT": {
+                    "name": "Chiave del Seugathi"
+                },
+                "q2sYrbAFzwVFBmAZ": {
+                    "name": "Bacchetta di creatura illusoria (2° livello)",
+                    "description": "<p><em>@UUID[Compendium.pf2e.spells-srd.f8SBoXiXQjlCKqly]{creatura illusoria}</em></p><hr /><p>Questa bacchetta è lunga 30 centimetri, contiene un singolo incantesimo e lo richiama nell'aspetto.</p>\n<p><strong>Attivazione</strong> Lanciare un Incantesimo</p>\n<p><strong>Frequenza</strong> una volta al giorno, più Sovraccarico</p>\n<hr />\n<p><strong>Effetto</strong> Lanci l'Incantesimo di 5° livello.</p>\n<p><strong>Requisiti di Fabbricazione</strong> Fornisci un lancio dell'incantesimo al livello indicato.</p>\n<hr />\n<p><em>Nota: per creare una pergamena o una bacchetta di un incantesimo specifico, trascina l'incantesimo dal compendio o dal browser del compendio nell'inventario di un PG, PNG o bottino.</em></p>"
+                },
+                "cj3wll0YeOYjYWaL": {
+                    "name": "Percezione Tellurica (impreciso) 9 metri"
+                }
+            },
+            "name": "Ricercatore Seugathi del Punto di Osservazione",
+            "description": "<p>I seugathi più comunemente prodotti dai neothelid sono i seugathi servitori. I loro padroni li forniscono degli strumenti utili ai loro scopi (spesso una bacchetta e un'arma), e raramente danno valore ad altre cose materiali diverse dalla loro utilità nel completare la missione in loro impressa.</p>\n<hr />\n<p>I malvagi e alieni @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelid} fecondano sé stessi attraverso rituali magici per generare dei servitori dall'aspetto di vermi chiamati seugathi. Queste creature nascono con un forte impulso psichico a completare qualche incarico a vantaggio degli ambiziosi piani dei neothelid. Tali direttive sono variegate, bizzarre e solitamente crudeli nei confronti della vita umanoide.</p>",
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
+            "npcSenses": "percezione tellurica 9 metri, scurovisione"
+        },
+        "Deep End Sarglagon": {
+            "items": {
+                "mxpkzQTw0tzSwaUL": {
+                    "name": "Porta Dimensionale (A Volontà)"
+                },
+                "oIJY4ycXpaF4IjIM": {
+                    "name": "Vedere Invisibilità (Costante)"
+                },
+                "myXt3SwrT2L8VMW4": {
+                    "name": "Guardiano Stigeo",
+                    "description": "<p><strong>Innesco</strong> Una creatura o un oggetto entro la portata del sarglagon è bersagliata da un attacco.</p>\n<hr />\n<p><strong>Effetto</strong> Il sarglagon si frappone, fornendo @UUID[Compendium.pf2e.other-effects.I9lfZUiCwMiGogVi]{copertura standard} alla creatura o all'oggetto contro l'attacco (bonus di circostanza +2 alla CA) o @UUID[Compendium.pf2e.other-effects.I9lfZUiCwMiGogVi]{copertura superiore} (bonus di circostanza +4 alla CA), se il sarglagon gli conferiva già copertura inferiore.</p>"
+                },
+                "nBbFutvNlcdf1cgZ": {
+                    "name": "Affogare",
+                    "description": "<p>Il sarglagon evoca acqua torbida per riempire i polmoni di una creatura che non è in grado di respirare in acqua situata entro 9 metri. Il bersaglio deve tentare un TS su @Check[type:fortitude|dc:26].</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p>\n<p><strong>Successo</strong> Il bersaglio tossisce acqua ed è @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseato 1}.</p>\n<p><strong>Fallimento</strong> Il bersaglio Trattiene il Respiro. L'unica azione che può effettuare è tentare un TS su Tempra contro Affogare per espellere l'acqua, cosa che gli richiede una singola azione.</p>\n<p><strong>Fallimento Critico</strong> Il bersaglio cade @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{privo di sensi} e inizia a soffocare. Se il bersaglio supera il suo tiro salvezza su Tempra mentre soffoca, tossisce l'acqua e può respirare di nuovo.</p>"
+                },
+                "5Vw9VTB3I1sie1g1": {
+                    "name": "Veleno del Sarglagon",
+                    "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Durata Massima</strong> 6 round</p>\n<p><strong>Fase 1</strong> [[/r 2d6[poison]]]{2d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 1} (1 round)</p>\n<p><strong>Fase 2</strong> [[/r 3d6[poison]]]{3d6 danni da veleno} e @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestro 2} (1 round)</p>"
+                },
+                "7NjsgQKMg0FvxDmJ": {
+                    "name": "Telepatia 30 metri"
+                },
+                "JCCJdKRetmUpfNFn": {
+                    "name": "Frammento del ciondolo di Urevian"
+                },
+                "LbkW4zjvlyreuGX1": {
+                    "name": "Zanne"
+                },
+                "TfHuj8LvtfwsXfXQ": {
+                    "name": "Tentacolo Braccio"
+                },
+                "tqSmdxFVDmY2CLns": {
+                    "name": "Aura di Appesantimento",
+                    "description": "<p>@Template[type:emanation|distance:10]{3 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{aura}.</p>\n<hr />\n<p>Una creatura che entra nell'aura di appesantimento deve tentare un TS su @Check[type:will|dc:23]. Poi è temporaneamente immune per 10 minuti.</p>\n<hr />\n<p><strong>Successo</strong> La creatura non è influenzata.</p>\n<p><strong>Fallimento</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.D5mg6Tc7Jzrj6ro7]{ingombrata} mentre rimane nell'area. Se la creatura è già Ingombrata, è @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{immobilizzata} mentre rimane entro l'aura.</p>\n<p><strong>Fallimento Critico</strong> Come nel fallimento, ma l'effetto persiste per 3 round dopo avere lasciato l'aura.</p>"
+                }
+            },
+            "name": "Sarglagon del Fondo",
+            "description": "<p>I sarglagon dimorano nei mille laghi, oceani e corsi d'acqua dell'Inferno. Fungono da guardiani dell'Accademia delle Menzogne, il ricettacolo dei segreti di Stigia, il quinto strato dell'Inferno. I sarglagon possono respirare in aria e in acqua con la stessa facilità e si muovono in acqua, sulla terra e perfino in aria con straordinaria rapidità. Sono pochi i nefandi che solcano i corsi d'acqua del multiverso, ma là dove un fiume attraversa i confini planari, è probabile che i sarglagon siano presenti per portare avanti le loro macchinazioni infernali. L'unica massa d'acqua che evitano è il Fiume Stige, in quanto i nefandi devono ancora sviluppare una difesa efficace contro l'effetto di oblio che hanno le acque di quel fiume. Gli incantatori mortali a volte vincolano i sarglagon e li obbligano a vegliare su qualche prezioso segreto o tesoro, specialmente nelle aree acquatiche. Stranamente, a volte i sarglagon fungono da snervanti protettori di alcuni mortali che non hanno idea del perché si siano meritati le indesiderate attenzioni di quei guardiani. La vigilanza costante e non richiesta di quei diavoli risulta spesso inquietante e soffocante per i mortali oggetto della protezione.</p>\n<hr />\n<p>Ogni tipo di diavolo svolge un ruolo particolare nella burocrazia e nella gerarchia dell'Inferno, sebbene alcuni abbiano funzioni più specializzate di altri.</p>",
+            "npcAllSaves": "status +1 a tutti i TS contro la magia",
+            "npcSenses": "scurovisione superiore; vedere invisibilità"
+        },
+        "Dread Dhuthorex": {
+            "npcAc": "visione a 360°",
+            "name": "Dhuthorex del Terrore",
+            "items": {
+                "CAWJlqwSDN3w5gWy": {
+                    "name": "Fauci Soverchianti",
+                    "description": "<p>Un dhuthorex del terrore infligge [[/r 8[piercing]]]{8 danni perforanti} al suo bersaglio se il suo Colpo di fauci risulta in un fallimento (ma non un fallimento critico).</p>"
+                },
+                "TKCoF7GXS2ldg658": {
+                    "name": "Fauci"
+                },
+                "3b3sEGxcz23toRTi": {
+                    "name": "Percezione delle Onde (Impreciso) 18 metri"
+                },
+                "TBlIXTNQSQ1e3bEo": {
+                    "name": "Muso"
+                },
+                "deTqYUQHSSEOChwZ": {
+                    "name": "Tentacolo"
+                },
+                "ZrjdCvEH7E5tQb4n": {
+                    "description": "<p>@Template[type:emanation|distance:60]{18 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "xTCkHuwFUsvdVThS": {
+                    "description": "<p>15 metri</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+                },
+                "R2IrxhTRU85GEr92": {
+                    "description": "<p>Grande, [[/r {(3d6+8)[bludgeoning],2d6[acid]}]]{3d6+8 contundenti più 2d6 da acido}, Rottura 23</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                }
+            },
+            "description": "<p>Più intelligenti dei loro simili del profondo, i dhuthorex del terrore possiedono inquietanti poteri ammalianti.</p>\n<hr />\n<p>Strane cose nuotano nei mari senza sole, ma poche sono feroci quanto gli squaliformi dhuthorex. Queste bestie inseguono le prede senza paura e con tenacia.</p>",
+            "npcSenses": "percezione delle onde (impreciso) 18 metri, scurovisione"
+        },
+        "Volluk Azrinae": {
+            "items": {
+                "jTap9wmrEvrgaFTi": {
+                    "name": "Oscurità (A Will)"
+                },
+                "90JhVU3ps4TG9jNw": {
+                    "name": "Luminescenza (A Volontà)"
+                },
+                "Ska9kA0i2bCxOPKc": {
+                    "name": "Ricordi Ripugnanti",
+                    "description": "<p>Se all'inizio del suo turno Volluk è in grado di vedere una raffigurazione accurata del suo aspetto precedente da drow vivente, deve superare un tiro salvezza su @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3] o viene invaso dal disprezzo di sé stesso e diventa @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} per 1 round.</p>"
+                },
+                "UbtJOXzzsAmXD5rI": {
+                    "name": "Aspetto di Sciame",
+                    "description": "<p>Volluk si sfalda in uno sciame informe di sanguisughe. Lascia cadere tutti gli oggetti impugnati, indossati e trasportati. Mentre è discorporato, non può usare azioni di attacco e non può lanciare incantesimi, ma può muoversi attraverso le aree abbastanza piccole da consentire alle singole sanguisughe di passare senza doversi @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Stringere}. Può usare la stessa azione per riassumere la sua forma normale.</p>"
+                },
+                "IiFLZ6cZ0dZBAcee": {
+                    "name": "Abbraccio Brulicante",
+                    "description": "<p>Volluk Avanza, termina il suo movimento condividendo uno spazio con una creatura e infligge a quella creatura [[/r 3d8[piercing]]]{3d8 danni perforanti}. La creatura può effettuare un TS @Check[type:reflex|dc:23|basic:true].</p>"
+                },
+                "dJQlNu9f34qL4mEx": {
+                    "name": "Percezione Tellurica (impreciso) 9 metri"
+                },
+                "c8DR2M4wTFOhiB7j": {
+                    "name": "Guarigione Rapida 7"
+                },
+                "pi0jucwlFYIo5mn8": {
+                    "name": "Discorporare",
+                    "description": "<p>Le sanguisughe più lente danno agli eroi 2 round invece che 1 per eliminare i parassiti in fuga prima che scappino.</p>\n<hr />\n<p>Quando il verme che cammina scende a 0 PF, si discorpora e i vermi che componevano il suo corpo si disperdono in ogni direzione. Se anche un solo verme fugge, il verme che cammina finirà per riformarsi tramite un processo che solitamente richiede [[/br 1d10 #Riformare]]{1d10 giorni}.</p>\n<p>Sebbene siano le circostanze e l'ambiente specifico esatto a determinare fino a che punto gli avversari del verme che cammina possano eliminare i vermi in fuga prima che si dileguino, di solito tali avversari hanno un solo round a disposizione per farlo.</p>\n<p>Generalmente questo richiede l'applicazione di un effetto ad area o di un'arma a spargimento entro 1 round nello spazio in cui il verme che cammina è collassato. Dopo che un qualsiasi ammontare di danni ad area o a spargimento è stato applicato a quello spazio, il personaggio che infligge i danni deve tentare una @Check[type:flat|dc:15]{prova semplice}. Ogni successivo effetto di danni ad area o a spargimento applicalo a quell'area riduce la CD di questa prova semplice di 2, fino a una CD minima di 5. Se una qualsiasi di queste prove semplici ha Successo, nessuno dei vermi fugge e il verme che cammina è distrutto permanentemente.</p>\n<p>A discrezione del GM, alcuni mezzi ingegnosi per intrappolare o contenere i vermi in altri modi potrebbero prolungare il tempo a disposizione per finire il verme che cammina.</p>"
+                },
+                "rV1k0lGcAvoytfnj": {
+                    "name": "Tentacolo"
+                }
+            },
+            "npcHp": "guarigione rapida 7",
+            "npcSenses": "percezione tellurica (impreciso) 9 metri, scurovisione"
+        },
+        "Wrin Sivinxi": {
+            "items": {
+                "VNqQVxfzCgmliiPq": {
+                    "name": "Coda"
+                },
+                "dsBZk8GZYws5VlE1": {
+                    "name": "Claustrofobia",
+                    "description": "<p>Wrin viene sopraffatta quando si trova sottoterra o in uno spazio chiuso con un diametro più piccolo di 3 metri.</p>\n<p>In tali circostanze, è @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{nauseata 2} e non può ridurre la sua condizione nauseato finché non esce dall'area chiusa.</p>"
+                },
+                "Pr87C99kuBwyUE2x": {
+                    "name": "Visione Spiritica (Preciso) 9 metri",
+                    "description": "<p>Visione Spiritica Wrin è in grado di vedere le creature con il tratto spirito entro 9 metri, a prescindere dal loro essere visibili a occhio nudo. Questa capacità talvolta permette a Wrin di notare altre aure soprannaturali, come l'accumulo di energia spirituale in\ncima a Pallidaluce.</p>"
+                },
+                "DejWulVQHxSP4SbB": {
+                    "name": "Sapienza Astrologica"
+                },
+                "h0A9RTrbTZbrFUe8": {
+                    "name": "Sapienza degli Spiriti"
+                },
+                "z7r4p7kLzt2ZbByW": {
+                    "name": "Violino"
+                },
+                "7mOx4vdvxyfHNF71": {
+                    "name": "Magia del Sangue",
+                    "description": "<p> Quando Wrin lancia <em>@UUID[Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6]{charme}</em>, <em>@UUID[Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS]{estasiare}</em>, <em>@UUID[Compendium.pf2e.spells-srd.IkS3lDGUpIOMug7v]{polvere fatata},</em> <em>@UUID[Compendium.pf2e.spells-srd.tlSE7Ly8vi1Dgddv]{risata incontenibile}</em> o <em>@UUID[Compendium.pf2e.spells-srd.atlgGNI1E1Ox3O3a]{suono fantasma}</em>, degli annebbiamenti fatati danzano attorno a Wrin o un bersaglio dell'incantesimo, rendendolo @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{occultato} per 1 round. Questo occultamento palese non può essere usato per @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Nascondersi}.</p>"
+                },
+                "87c42mEQ6XMyoNBu": {
+                    "name": "Leggere le Stelle",
+                    "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p><strong>Effetto</strong> Wrin tenta di leggere il futuro nelle stelle spendendo un'ora a studiare il cielo notturno; non può usare questa capacità durante il giorno, in una notte nuvolosa o quando non riesce a studiare le stelle per altri motivi. Sebbene Wrin di solito effettui questa lettura per una singola persona o per rispondere a una sua domanda pressante, ai fini di questa campagna lei legge le stelle per il gruppo nel suo complesso. Effettua una prova di Sapienza Astrologica, usando la CD appropriata al livello attuale degli eroi.</p>\n<hr />\n<p><strong>Successo Critico</strong> I risultati delle letture astrologiche di Wrin hanno gli effetti di <em>@UUID[Compendium.pf2e.spells-srd.pkcOby5prOausy1k]{leggere premonizioni}</em>, e gli eroi ottengono bonus di circostanza +1 ai tiri salvezza per 24 ore.</p>\n<p><strong>Successo</strong> I risultati delle letture astrologiche di Wrin hanno gli effetti di <em>@UUID[Compendium.pf2e.spells-srd.41TZEjhO6D1nWw2X]{presagio}</em>, ma possono predire risultati fino a 24 ore nel futuro.</p>\n<p><strong>Fallimento</strong> Nessuna lettura.</p>\n<p><strong>Fallimento Critico</strong> Wrin sfiora delle forze spirituali ostili e non può Leggere le Stelle per 1 settimana.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.rbgXQqXbpaQCcNNx]{Effetto: Leggere le Stelle (successo critico)}</p>"
+                },
+                "TwPr4oH0p59YtoDn": {
+                    "name": "Mazzo dell'Apprensura dell'Indovino"
+                }
+            },
+            "npcSenses": "visione crepuscolare, visione spiritica (preciso) 9 metri"
+        },
+        "Blood of Belcorra": {
+            "description": "<p>Un'immagine insanguinata di Belcorra sorge, emette una luce risucchia-anima e poi inala sangue dalle creature viventi nella stanza.</p>",
+            "hazardReset": "<p>Se l'infestazione viene disattivata o distrutta mediante i danni, il fantasma insanguinato di Belcorra zampilla verso l'alto in una spirale, inzuppando la botola che conduce all'area <strong>A25</strong> prima di essere risucchiato verso l'alto attraverso il buco della serratura, il che riduce la CD di Furto per @UUID[Compendium.pf2e.actionspf2e.2EE4aF4SZpYf0R6H]{Scassinare la Serratura} a @Check[type:thievery|dc:20|name:Scassinare Botola|traits:action:pick-a-lock,skill,manipulate].</p>\n<p>Alla prossima alba, il sangue viene di nuovo risucchiato verso il basso di questa stanza e l'infestazione si ripristina. L'infestazione è distrutta permanentemente quando Lasda Venkervale viene salvato dall'area <strong>D9</strong>.</p>",
+            "hazardRoutine": "<p>(1 azione) L'immagine insanguinata apre la bocca e sembra inalare, risucchiando sangue dal corpo di una creatura nella sua línea di vista entro 27 metri dal centro dell'area <strong>A11</strong>. La creatura bersagliata deve effettuare un TS su @Check[type:fortitude|dc:20|traits:damaging-effect].</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata.</p>\n<p><strong>Successo</strong> La creatura subisce [[/r 1d10[bleed]]]{1d10 danni da sanguinamento}.</p>\n<p><strong>Fallimento</strong> La creatura subisce [[/r (1d10+6)[bleed]]]{1d10+6 danni da sanguinamento}.</p>\n<p><strong>Fallimento Critico</strong> La creatura subisce [[/r (2d10+6)[bleed]]]{2d10+6 danni da sanguinamento} ed è @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolita 2} finché è sanguinante.</p>",
+            "name": "Sangue di Belcorra",
+            "hazardDisable": "<p>@Check[type:thievery|dc:22|name:Ripulire Sangue] (addestrato) per ripulire la macchia di sangue a sufficienza da disperdere le energie necromantiche dell'infestazione o @Check[type:religion|dc:20|name:Esorcizzare Infestazione] (addestrato) per esorcizzare l'infestazione</p>"
         }
     }
 }
