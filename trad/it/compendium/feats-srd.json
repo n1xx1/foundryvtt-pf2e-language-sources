@@ -538,7 +538,7 @@
             "description": "<p>Ti sei abituato a usare un'arma particolare, che magari proviene da un'altra stirpe o cultura. Scegli un'arma semplice o da guerra non comune con un tratto che corrisponde a una stirpe (per esempio nano, goblin o orco) o che è comune in un'altra cultura. Ottieni l'accesso a quell'arma e, ai fini di determinare la tua competenza, questa è considerata un'arma semplice. Se sei addestrato nell'uso di tutte le armi da guerra, puoi scegliere un'arma avanzata non comune con questo tratto. Puoi usare quell'arma e, ai fini di determinare la tua competenza, questa è considerata un'arma da guerra.</p>"
         },
         "Shall not Falter, Shall not Rout": {
-            "name": "Shall not Falter, Shall not Rout"
+            "name": ""
         },
         "Uncanny Dodge": {
             "name": "Schivata Prodigiosa",
@@ -548,10 +548,11 @@
             }
         },
         "Song of the Fallen": {
-            "name": "Song of the Fallen",
+            "name": "Canto dei Caduti",
             "featPrerequisites": {
                 "0": "riserva di focalizzazione"
-            }
+            },
+            "description": "<p>Il potere commovente delle tue canzoni può risvegliare l'anima dei morti, e indurli a combattere ancora una volta al tuo fianco. Apprendi l'incantesimo di composizione <em>@UUID[Compendium.pf2e.spells-srd.IGXGs9PlqUCvODcH]{canto dei caduti}</em>. Aumenta di 1 il numero dei Punti nella tua Riserva di Focalizzazione.</p>"
         },
         "Great Boaster": {
             "featPrerequisites": {
@@ -2101,7 +2102,11 @@
             "description": "<p><strong>Innesco</strong> Tenti un tiro salvezza contro un incantesimo o un effetto magico, prima di tirare</p>\n<hr />\n<p>Ti difendi dalla magia affidandoti alle tecniche che derivano dalle superstizioni culturali orchesche. Ottieni bonus di circostanza +1 al tuo tiro salvezza contro l'incantesimo o l'effetto magico di innesco.</p>"
         },
         "Familiar Form": {
-            "name": "Familiar Form"
+            "name": "Forma di Famiglio",
+            "description": "<p> Puoi usare la tua magia per trasfomarti in una piccola creatura di un tipo che comunemente serve da famiglio per un incantatore, permettendoti potenzialmente di perlustrare per il tuo gruppo mentre mantieni un certo grado di capacità di lanciare incantesimi. Ottieni l'incantesimo focallizato <em>@UUID[Compendium.pf2e.spells-srd.CHZQJg7O7991Vl4m]{forma di famiglio}</em>. Aumenta il numero di Punti Focalizzazione nella tua Riserva di Focalizzazione di 1.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione del Padrone degli Incantesimi"
+            }
         },
         "Triple Threat": {
             "name": "Tripla Minaccia",
@@ -2449,7 +2454,7 @@
         },
         "The Tyrant Falls!": {
             "featPrerequisites": {
-                "1": "Invoke the Crimson Oath"
+                "1": "Invocare il Giuramento Cremisi"
             }
         },
         "Knight Reclaimant Dedication": {
@@ -3108,7 +3113,7 @@
         },
         "Heir of the Saoc": {
             "featPrerequisites": {
-                "0": "Saoc Astrology"
+                "0": "Astrologia Saoc"
             }
         },
         "Firework Technician Dedication": {
@@ -3501,7 +3506,8 @@
             "description": "<p><strong>Requisiti</strong> Impugni due armi da mischia, ognuna in una mano diversa.</p>\n<hr />\n<p>YDividi i tuoi attacchi. Effettua due @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Colpi} in mischia, uno per ciascuna delle armi richieste e ciascuno contro un avversario diverso. Se il secondo Colpo viene effettuato con un'arma non agile, subisce penalità -2.</p>\n<p>Aumenta la tua penalità da attacchi multipli solo dopo aver tentato entrambi i Colpi.</p>"
         },
         "Transcribe Moment": {
-            "name": "Transcribe Moment"
+            "name": "Trascrivere il Momento",
+            "description": "<p>Ottieni l'incantesimo focalizzato <em>@UUID[Compendium.pf2e.spells-srd.NxOYiKCqcuAHVRCj]{trascrivere il momento}</em>. Se non ne hai già una, ottieni una Riserva di Focalizzazione di 1 Punto Focalizzazione, che puoi Rifocalizzare spendendo 10 minuti a studiare un testo o registrare appunti sulle tue recenti esperienze.</p>"
         },
         "Otherworldly Magic": {
             "name": "Magia Ultraterrena",
@@ -3938,7 +3944,9 @@
         "Magic Hands": {
             "featPrerequisites": {
                 "0": "Mani Guaritrici"
-            }
+            },
+            "name": "Mani Magiche",
+            "description": "<p>La benedizione della tua divinità accresce la tua capacità di guaritore, facendo sì che le tue guarigioni non magiche funzionino come se fossero magiche.</p>\n<p>Quando hai successo in una prova di Medicina per @UUID[Compendium.pf2e.actionspf2e.1kGNdIIhuglAjIp9]{Curare Ferite}, la tua azione ottiene il tratto divino e guarisci la quantità massima dei 2d8 (o dei 4d8 in caso di successo critico). Se hai una capacità che aggiunge dadi aggiuntivi al tuo Curare Ferite, tiri comunque normalmente quei dadi.</p>"
         },
         "Summoner Dedication": {
             "featPrerequisites": {
@@ -3972,7 +3980,9 @@
             "featPrerequisites": {
                 "0": "alleato divino (lama)",
                 "1": "precetti del male"
-            }
+            },
+            "description": "<p>Anche la tua lama brama il sangue dei benefattori.</p>\n<p>Scegli un nemico che sei in grado di vedere. Fino all'inizio del tuo turno successivo, i Colpi che effettui contro tale nemico con l'arma in cui dimora l'alleato della lama infliggono 4 danni da male aggiuntivi, che aumentano a 6 se il tuo grado di competenza con quell'arma è maestro.</p>\n<p>Se il nemico prescelto ti attacca prima dell'inizio del tuo turno successivo, la durata si estende fino alla fine del turno successivo del nemico in questione. Se il nemico continua ad attaccarti ogni turno, la durata continua a protrarsi di conseguenza.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.2MIn8qyPTmz4ZyO1]{Effetto: Punire il Bene}</p>",
+            "name": "Punire il Bene"
         },
         "Positioning Assault": {
             "name": "Assalto Riposizionante",
@@ -4042,7 +4052,9 @@
                 "0": "Dedizione del Linguista",
                 "1": "esperto in Inganno",
                 "2": "esperto in Società"
-            }
+            },
+            "description": "<p>Scomponi l'idioletto di uno specifico individuo, memorizzando i suoi modi di parlare e le sue abitudini.</p>\n<p>Se interagisci con qualcuno per almeno 10 minuti, quando in seguito tenti di @UUID[Compendium.pf2e.actionspf2e.AJstokjdG6iDjVjE]{Impersonare} quell'individuo ottieni bonus di circostanza +4 alle tue prove e alle CD di Inganno. Dato che occorre studiare attentamente un, persona, non puoi ricordare più di un idioletto alla volta.</p>",
+            "name": "Analizzare Idioletto"
         },
         "Legendary Survivalist": {
             "name": "Sopravvivenza Leggendaria",
@@ -4075,8 +4087,11 @@
         },
         "Quick Contacts": {
             "featPrerequisites": {
-                "0": "esperto in Società"
-            }
+                "0": "esperto in Società",
+                "1": "Contatti o Contatti Criminali"
+            },
+            "description": "<p>Sai dove andare, con chi parlare e come stabilire nuovi contatti rapidamente. Entrando in un nuovo insediamento, passare 1 giorno di pausa ti permette di stabilire abbastanza contatti per fare uso dei talenti @UUID[Compendium.pf2e.feats-srd.iCv8KTZ5PcF4GqeV]{Contatti} o @UUID[Compendium.pf2e.feats-srd.LDUWw2TeEEH0KA6M]{Contatti Criminali}. Se sei leggendario in Società, puoi stabilire i contatti necessari entro l'ora dall'ingresso in un nuovo insediamento.</p>",
+            "name": "Contatti Rapidi"
         },
         "Sap Life": {
             "name": "Prosciugare Vita",
@@ -4086,7 +4101,9 @@
             "featPrerequisites": {
                 "0": "maestro in Artigianato",
                 "1": "Dedizione dell'Aggiustatutto"
-            }
+            },
+            "description": "<p>Puoi applicare le stesse tecniche che usi per l'ingegneria inversa degli oggetti anche per disattivarli. Puoi usare Artigianato anziché Furto per @UUID[Compendium.pf2e.actionspf2e.cYdz2grcOcRt4jk6]{Disattivare un Congegno} o @UUID[Compendium.pf2e.actionspf2e.2EE4aF4SZpYf0R6H]{Scassinare una Serratura}. </p>",
+            "name": "Smontaggio Esperto"
         },
         "Timeless Nature": {
             "name": "Natura Perpetua",
@@ -4099,13 +4116,17 @@
         "Swift Elusion": {
             "featPrerequisites": {
                 "0": "leggendario in Acrobazia"
-            }
+            },
+            "name": "Scappatoia Rapida",
+            "description": "<p><strong>Innesco</strong> Un avversario termina il suo movimento adiacente a te.</p>\n<hr />\n<p>Tenta una prova di Acrobazia contro la CD di Riflessi del nemico. Se hai successo, o Avanzi in un altro spazio adiacente al nemico o sposti il nemico in un altro spazio adiacente a te.</p>"
         },
         "Enlarge Companion": {
             "featPrerequisites": {
                 "0": "un compagno animale",
                 "1": "incantesimi del guardiano"
-            }
+            },
+            "name": "Ingrandire Compagno",
+            "description": "<p>Puoi rendere enorme il tuo compagno. Ottieni l'incantesimo del guardiano <em>@UUID[Compendium.pf2e.spells-srd.8rj45fKzCFcB0fxs]{ingrandire compagno}</em>. Aumenta il numero di Punti Focalizzazione nella tua riserva di 1. </p>"
         },
         "Divine Weapon": {
             "name": "Arma Divina",
@@ -4140,7 +4161,9 @@
         "Deimatic Display": {
             "featPrerequisites": {
                 "0": "addestrato in Intimidazione"
-            }
+            },
+            "name": "Esibizione di Minaccia",
+            "description": "<p>Imitando le esibizioni di minaccia degli animali, ti mostri più grande e imponente.</p>\n<p>Tira una prova di Intimidazione per @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralizzare} e confronta il risultato con la CD di Volontà di ogni creatura animale, fungo e vegetale in un @Template[type:cone|distance:15]{cono di 4,5 metri}. Quando lo fai, Demoralizzare ottiene il tratto visivo e le creature sono influenzate se possono vederti. Non subisci penalità se la creatura non capisce la tua lingua.</p>"
         },
         "Master Spotter": {
             "featPrerequisites": {
@@ -4206,7 +4229,9 @@
         "Stonegate": {
             "featPrerequisites": {
                 "0": "Camminare nella Roccia"
-            }
+            },
+            "name": "Portale nella Roccia",
+            "description": "<p>Le barriere di terra non sono più un ostacolo per te. Ottieni <em>@UUID[Compendium.pf2e.spells-srd.115Xp9E38CJENhNS]{passapareti}</em> come incantesimo innato divino di 7° livello che puoi lanciare una volta al giorno. A differenza dell'incantesimo, tuttavia, questa capacità può essere utilizzata solo per aprire passaggi attraverso barriere di terra o pietra.</p>"
         },
         "Voice of Authority": {
             "featPrerequisites": {
@@ -4230,8 +4255,11 @@
         "Blessed Spell": {
             "featPrerequisites": {
                 "2": "Indulgenza",
-                "0": "Dedizione del Beato"
-            }
+                "0": "Dedizione del Beato",
+                "1": "capacità di lanciare incantesimi da slot incantesimo"
+            },
+            "description": "<p><strong>Frequenza</strong> una volta ogni 10 minuti</p>\n<hr />\n<p>Quando concentri la tua magia su un alleato, puoi rimuovere le condizioni dannose.</p>\n<p>Se la tua prossima azione è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} da uno slot incantesimo, e quell'incantesimo ha come bersaglio un singolo alleato, puoi anche tentare di rimuovere una condizione dannosa da quell'alleato. La condizione dovrebbe poter essere rimossa con il tuo talento Indulgenza, comprese le rimozioni concesse da talenti successivi come @UUID[Compendium.pf2e.feats-srd.kZdcoaTD849QalR9]{Indulgenza Superiore}.</p>\n<p>Tenta una prova di contrasto basata sulla CD dell'incantesimo e sul suo livello. Questo effetto si aggiunge ai normali effetti del tuo incantesimo.</p>",
+            "name": "Incantesimo Beato"
         },
         "Celestial Form": {
             "name": "Forma Celestiale",
@@ -4268,8 +4296,11 @@
         },
         "Ancestral Weaponry": {
             "featPrerequisites": {
-                "0": "Armi Monastiche"
-            }
+                "0": "Armi Monastiche",
+                "1": "un talento che garantisca l'accesso a tutte le armi con un tratto di stirpe (come elfo o orco)"
+            },
+            "name": "Armi Ancestrali",
+            "description": "<p>Fondi le tecniche monastiche con gli stili di combattimento ancestrali del tuo popolo. Scegli una stirpe per la quale hai accesso a tutte le armi con quel tratto. Per te, le armi da mischia con quel tratto di stirpe e con il tratto accurata o agile ottengono il tratto monaco.</p>"
         },
         "Their Master's Call": {
             "featPrerequisites": {
@@ -4291,7 +4322,9 @@
             "featPrerequisites": {
                 "0": "precetti del bene",
                 "1": "causa del liberatore"
-            }
+            },
+            "name": "Giuramento Esoterico (Liberatore)",
+            "description": "<p>Hai fatto un giuramento in cui hai promesso di uccidere gli abomini alieni che si nascondono negli angoli più remoti di Golarion. Aggiungi il seguente precetto al tuo codice del campione, dopo gli altri: \"Devi uccidere le aberrazioni malvagie che incontri, purché tu abbia ragionevoli probabilità di vittoria\".</p>\n<p>Se usi @UUID[Compendium.pf2e.actionspf2e.IX1VlVCL5sFTptEE]{Passo del Liberatore} innescato da un'aberrazione malvagia, il tuo alleato ottiene bonus di circostanza +4 alle prove concesse dal tuo Passo del Liberatore, e in seguito può fare un @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Passo} per due volte.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.tAsFXMzNkpj964X4]{Effetto Passo del Liberatore (vs. Aberrazioni)}</p>\n<p>Non consideri le aberrazioni malvagie come autorità legittime, anche nelle nazioni che esse governano.</p>"
         },
         "Reactive Pursuit": {
             "name": "Inseguimento Reattivo",
@@ -4330,7 +4363,9 @@
         "Legendary Guide": {
             "featPrerequisites": {
                 "0": "leggendario in Sopravvivenza"
-            }
+            },
+            "description": "<p>Conosci le terre selvagge così bene che puoi aiutare il tuo gruppo ad attraversarle con facilità.</p>\n<p>Quando stabilisci il percorso del tuo gruppo attraverso terre selvagge, il gruppo ottiene bonus di circostanza +3 metri alla sua Velocità ai fini del calcolo della velocità di viaggio; questa non diminuisce in terreni difficili, e i terreni difficili superiori la dimezzano invece di ridurla a un terzo.</p>\n<p>Tutto ciò non aumenta la Velocità del tuo gruppo durante un incontro, né gli permette di ignorare il terreno difficile in quelle occasioni.</p>",
+            "name": "Guida Leggendaria"
         },
         "Pervasive Superstition": {
             "name": "Superstizione Pervasiva",
@@ -4341,8 +4376,11 @@
         },
         "Expert Poisoner": {
             "featPrerequisites": {
-                "1": "esperto in Artigianato"
-            }
+                "1": "esperto in Artigianato",
+                "0": "Dedizione dell'Avvelenatore"
+            },
+            "description": "<p>Il tuo livello di @UUID[Compendium.pf2e.classfeatures.Pe0zmIqyTBc2Td0I]{Alchimia Avanzata} per i veleni aumenta al tuo livello - 3.</p>",
+            "name": "Avvelenatore Esperto"
         },
         "Shield of Reckoning": {
             "name": "Scudo della Ritorsione",
@@ -4380,7 +4418,9 @@
         "Hunter's Vision": {
             "featPrerequisites": {
                 "0": "incantesimi del guardiano"
-            }
+            },
+            "name": "Vista del Cacciatore",
+            "description": "<p>Sei cosi concentrato sulla tua preda cacciata che puoi vederla chiaramente anche oltre i limiti dei tuoi sensi. Ottieni l'incantesimo del guardiano <em>@UUID[Compendium.pf2e.spells-srd.tj86Rnq3QuQnDtG3]{vista del cacciatore}</em>. Aumenta il numero di Punti Focalizzazione nella tua riserva di 1.</p>"
         },
         "Synergistic Spell": {
             "featPrerequisites": {
@@ -4398,7 +4438,9 @@
         "Litany Of Depravity": {
             "featPrerequisites": {
                 "0": "precetti del male"
-            }
+            },
+            "name": "Litania della Depravazione",
+            "description": "<p>Infrangi il vano moralismo del tuo nemico, aprendo il suo cuore al male. Puoi lanciare l'incantesimo di devozione <em>@UUID[Compendium.pf2e.spells-srd.tYP8unoR0a5Dq9EA]{litania dello depravazione}</em>. Aumenti di 1 il numero di Punti Focalizzazione nella tua riserva.</p>"
         },
         "Divine Evolution": {
             "name": "Evoluzione Divina",
@@ -4450,7 +4492,9 @@
         "Hireling Manager": {
             "featPrerequisites": {
                 "0": "Carisma 14"
-            }
+            },
+            "description": "<p>Sei in grado di trovare e assicurarti manodopera migliore degli altri. Quando ti procuri un mercenario per un servizio, quel mercenario ottiene bonus di circostanza +2 a tutte le prove di abilità. Questo bonus di circostanza si applica sia ai mercenari addestrati che a quelli senza addestramento e non incide sul costo del servizio o della manodopera fornita.</p>",
+            "name": "Gestore di Mercenari"
         },
         "Dueling Parry (Swashbuckler)": {
             "name": "Parata del Duellante (Spadaccino)",
@@ -4459,7 +4503,9 @@
         "Glean Contents": {
             "featPrerequisites": {
                 "0": "addestrato in Società"
-            }
+            },
+            "description": "<p>Sei abile nell'esaminare rapidamente fogli sparsi e nel discernere attentamente il contenuto di lettere sigillate senza danneggiare il sigillo.</p>\n<p>Puoi tentare prove di Società per @UUID[Compendium.pf2e.actionspf2e.d9gbpiQjChYDYA2L]{Decifrare Scritti} su un messaggio che hai solo intravisto, che è capovolto o invertito rispetto al tuo punto di vista, o persino sigillato. Tuttavia, in caso di fallimento critico il destinatario viene al corrente del tuo tentativo [per esempio danneggi il sigillo o manometti le carte in qualche modo).</p>\n<p>Quando usi questo talento per decifrare lettere sigillate, il tuo tentativo di Decifrare Scritti ottiene il tratto maneggiare.</p>\n<p>Questo talento non impedisce ai testimoni di notare i tuoi tentativi, in particolare con le lettere sigillate che devi manipolare direttamente per poterle leggere; potresti aver bisogno di tentare prove di Inganno o Furtività per evitare di essere notato.</p>",
+            "name": "Intuire Contenuti"
         },
         "Thorough Research": {
             "name": "Ricerca Accurata",
@@ -4475,13 +4521,17 @@
         "Forensic Acumen": {
             "featPrerequisites": {
                 "0": "addestrato in Medicina"
-            }
+            },
+            "name": "Acume Forense",
+            "description": "<p>Comprendi i principi della medicina legale e quindi sei in grado di esaminare meglio un corpo per determinare la causa della morte o del ferimento.</p>\n<p>Puoi eseguire un esame autoptico su un cadavere, come descritto in @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Ricordare Conoscenze} nell'abilità Medicina, in metà del tempo normale (fino a un minimo di 5 minuti).</p>\n<p>Se superi la prova, puoi tentare una prova immediata di Ricordare Conoscenze per indagare su qualcosa che hai trovato, con bonus di circostanza +2.</p>\n<p>Questa prova in genere è legata alla causa del ferimento o della morte, come una prova di Artigianato per identificare un Veleno o un'arma che è stata usata, o una prova aggiuntiva di Medicina per identificare una specifica malattia. Se preferisci, puoi invece tentare di Ricordare Conoscenze sul tipo di creatura di cui stavi esaminando il cadavere, usando l'abilità appropriata e ottenendo lo stesso bonus di circostanza.</p>\n<p>Il bonus di circostanza aumenta a +3 se hai competenza maestro in Medicina e +4 se hai competenza leggendario.</p>"
         },
         "Phonetic Training": {
             "featPrerequisites": {
                 "0": "Dedizione del Linguista",
                 "1": "esperto in Società"
-            }
+            },
+            "description": "<p>Puoi pronunciare e ripetere le parole con una precisione quasi perfetta anche se non ne capisci il significato, e puoi trascriverle in una scrittura fonetica che permette a te o a un'altra creatura con Addestramento Fonetico di leggerle in seguito. Anche se le parole sono in una lingua con suoni che non sai pronunciare, puoi trascriverle fedelmente. Memorizzare lunghe sequenze di parole rimane difficile come lo è normalmente.</p>",
+            "name": "Addestramento Fonetico"
         },
         "Antagonize": {
             "name": "Istigare",
@@ -4578,7 +4628,10 @@
         },
         "Lethal Finisher": {
             "name": "Mossa Finale Letale",
-            "description": "<p>Prerequisiti: colpo preciso 6d6. Trafiggi il tuo avversario in un organo Vitale, magari uccidendolo definitivamente. Effettua un Colpo. In caso di successo, rinunci al danno da colpo preciso della mossa finale.</p>\n<p>In cambio, il tuo bersaglio subisce danni di precisione aggiuntivi in base a un tiro salvezza su Tempra contro la tua CD di classe. Se il tuo Colpo è stato un colpo critico, il risultato del tiro salvezza del bersaglio peggiora di un grado.</p>\n<hr />\n<p><strong>Successo Critico</strong> Infliggi 6 danni di precisione.</p>\n<p><strong>Successo</strong> Infliggi 6d6 danni di precisione.</p>\n<p><strong>Fallimento</strong> Infliggi 12d6 danni di precisione.</p>\n<p><strong>Fallimento Critico</strong> Infliggi 18d6 danni di precisione.</p>"
+            "description": "<p>Prerequisiti: colpo preciso 6d6. Trafiggi il tuo avversario in un organo Vitale, magari uccidendolo definitivamente. Effettua un Colpo. In caso di successo, rinunci al danno da colpo preciso della mossa finale.</p>\n<p>In cambio, il tuo bersaglio subisce danni di precisione aggiuntivi in base a un tiro salvezza su Tempra contro la tua CD di classe. Se il tuo Colpo è stato un colpo critico, il risultato del tiro salvezza del bersaglio peggiora di un grado.</p>\n<hr />\n<p><strong>Successo Critico</strong> Infliggi 6 danni di precisione.</p>\n<p><strong>Successo</strong> Infliggi 6d6 danni di precisione.</p>\n<p><strong>Fallimento</strong> Infliggi 12d6 danni di precisione.</p>\n<p><strong>Fallimento Critico</strong> Infliggi 18d6 danni di precisione.</p>",
+            "featPrerequisites": {
+                "0": "colpo preciso 6d6"
+            }
         },
         "True Hypercognition": {
             "name": "Ipercognizione Pura",
@@ -4590,7 +4643,9 @@
         "Assured Identification": {
             "featPrerequisites": {
                 "0": "esperto in Arcano, Natura, Occultismo o Religione"
-            }
+            },
+            "description": "<p>Raramente sbagli a identificare un oggetto. Quando usi le prove di Arcano, Natura, Occultismo o Religione per Identificare Magia, se ottieni un fallimento critico lo consideri un fallimento. Se dovessi identificare erroneamente un oggetto maledetto perché ottieni un successo ma non un successo critico, semplicemente non puoi identificarlo.</p>",
+            "name": "Identificazione Garantita"
         },
         "Raging Intimidation": {
             "name": "Intimidazione Furiosa",
@@ -4611,7 +4666,8 @@
             }
         },
         "Perfect Strike": {
-            "name": "Perfect Strike"
+            "name": "Colpo Perfetto",
+            "description": "<p>Ottieni l'incantesimo ki <em>@UUID[Compendium.pf2e.spells-srd.GQopUYTuhmtb7WMG]{colpo perfetto}</em>. Aumenta di 1 il numero di Punti Focalizzazione nella tua riserva di focalizzazione.</p>"
         },
         "Meditative Wellspring": {
             "name": "Fonte Meditativa",
@@ -4629,7 +4685,8 @@
             "description": "<p>Quando un nemico è ostacolato nei movimenti, sferri colpi ancor più letali.</p>\n<p>Colpisci in mischia una creatura @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{afferrata}, @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prona} o @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{trattenuta}. Applichi ai danni del Colpo bonus di circostanza pari al numero di dadi di danno dell'arma, o a quel valore +2 se impugni l'arma a due mani. Il Colpo ottiene il seguente effetto in caso di fallimento.</p>\n<p><strong>Fallimento</strong> Infliggi danni al bersaglio pari al numero di dadi di danno dell'arma, o a quel valore +2 se impugni l'arma a due mani. I danni in questione sono dello stesso tipo di quelli inferti dall'arma.</p>"
         },
         "Fangs": {
-            "name": "Zanne"
+            "name": "Zanne",
+            "description": "<p>I tuoi incisivi sono diventati delle vere zanne: lunghe, affilate e capaci di far sanguinare.</p>\n<p>Ottieni un attacco senz'armi con le zanne che infligge [[/r 1d6[piercing]]]{1d6 danni perforanti}. Le zanne sono nel gruppo rissa e hanno i tratti disarmato e lotta.</p>"
         },
         "Arcane Eye": {
             "featPrerequisites": {
@@ -4814,7 +4871,8 @@
             "featPrerequisites": {
                 "0": "Esperto di Incantesimi da Oracolo",
                 "1": "leggendario in Religione"
-            }
+            },
+            "name": "Maestro di Incantesimi da Oracolo"
         },
         "Runic Impression": {
             "featPrerequisites": {
@@ -4864,13 +4922,16 @@
         "Incredible Scout": {
             "featPrerequisites": {
                 "0": "maestro in Percezione"
-            }
+            },
+            "name": "Esploratore Incredibile",
+            "description": "<p>Quando vai in esplorazione sei particolarmente attento al pericolo e dai ai tuoi alleati momenti preziosi per prepararsi a combattere.</p>\n<p>Quando usi l'attività di esplorazione @UUID[Compendium.pf2e.actionspf2e.kV3XM0YJeS2KCSOb]{Perlustrare}, conferisci ai tuoi alleati bonus di circostanza +2 ai loro tiri di Iniziativa, anziché bonus di circostanza +1.</p>\n<p>@UUID[Compendium.pf2e.other-effects.la8rWwUtReElgTS6]{Effetto: Perlustrare (Esploratore Incredibile)}</p>"
         },
         "Acrobat Dedication": {
             "featPrerequisites": {
                 "0": "addestrato in Acrobazia"
             },
-            "name": "Dedizione dell'Acrobata"
+            "name": "Dedizione dell'Acrobata",
+            "description": "<p>Diventi esperto in Acrobazia. Al 7° livello diventi maestro in Acrobazia e al 15° livello diventi leggendario in Acrobazia.</p>\n<p>Ogni volta che ottieni un successo critico in una prova di Acrobazia per @UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{Destreggiarti} nello spazio di un nemico, non consideri quest'ultimo come terreno difficile.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo dell'@UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.rhDvoOHAhAlABiae]{acrobata}.</p>"
         },
         "Elf Step": {
             "name": "Passo Elfico",
@@ -4904,7 +4965,9 @@
         "Conceited Mindset": {
             "featPrerequisites": {
                 "0": "precetti del male"
-            }
+            },
+            "name": "Mentalità Boriosa",
+            "description": "<p>Consapevole della tua superiorità mentale, ti fai beffe di chiunque voglia alterare il tuo stato mentale, ma questa arroganza prende il sopravvento quando ti sbagli.</p>\n<p>Ottieni bonus di circostanza +2 ai tiri salvezza contro gli effetti mentali. Se superi un tiro salvezza contro un effetto mentale, lo consideri un successo critico; allo stesso modo, se fallisci un tiro salvezza contro un effetto mentale lo consideri un fallimento critico.</p>"
         },
         "Wronged Monk's Wrath": {
             "featPrerequisites": {
@@ -4917,12 +4980,16 @@
         "Accelerating Touch": {
             "featPrerequisites": {
                 "0": "incantesimo di devozione (imposizione delle mani)"
-            }
+            },
+            "description": "<p>Le tue energie di guarigione sono intrise di smisurata potenza. Una creatura che recupera Punti Ferita grazie alla tua <em>@UUID[Compendium.pf2e.spells-srd.zNN9212H2FGfM7VS]{imposizione delle mani}</em> ottiene bonus di status +3 metri alla sua Velocità fino alla fine del suo turno successivo.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.alyNtkHLNnt98Ewz]{Effetto Incantesimo: Tocco Accelerante}</p>",
+            "name": "Tocco Accelerante"
         },
         "Celestial Eyes": {
             "featPrerequisites": {
                 "0": "visione crepuscolare"
-            }
+            },
+            "name": "Occhi Celestiali",
+            "description": "<p>Riesci a vedere nell'oscurità. Ottieni @UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{scurovisione}.</p>\n<p><strong>Speciale</strong> Puoi selezionare questo talento solo al 1° livello e non oi riaddestrarti per prendere o togliere questo talento.</p>"
         },
         "Converge": {
             "featPrerequisites": {
@@ -4996,10 +5063,11 @@
             "description": "<p>Ottieni un talento di abilità e il privilegio di classe @UUID[Compendium.pf2e.classfeatures.w6rMqmGzhUahdnA7]{attacco improvviso} della canaglia. Diventi addestrato nelle armature leggere. Inoltre, diventi addestrato in Furtività o Furto più un'abilità a tua scelta; se eri già addestrato sia in Furtività sia in Furto, diventi invece addestrato in un'abilità a tua scelta. Diventi addestrato nella CD di classe della canaglia.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo della @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.kVC4kgYKbhqPsaDt]{canaglia}.</p>"
         },
         "One For All": {
-            "name": "Uno Per Tutti",
+            "name": "Uno per Tutti",
             "featPrerequisites": {
                 "0": "addestrato in Diplomazia"
-            }
+            },
+            "description": "<p>Con le giuste parole di incoraggiamento, sostieni gli sforzi di un alleato.</p>\n<p>Designa un alleato entro 9 metri; questa azione conta come preparazione sufficiente per @UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{Aiutare} quell'alleato. Quando usi la reazione Aiutare per sostenere quell'alleato, puoi tirare Diplomazia al posto della solita prova.</p>\n<p>Se il tuo stile dello spadaccino è arguto e la tua prova @Check[type:diplomacy|dc:@self.level|adjustment:5|traits:action:aid] per Aiutare raggiunge o supera la CD molto difficile per il tuo livello, ottieni @UUID[Compendium.pf2e.classfeatures.LzYi0OuOoypNb6jd]{Spavalderia}.</p>"
         },
         "Quick Swim": {
             "name": "Nuotare Rapido",
@@ -5011,15 +5079,20 @@
         "Sense Good": {
             "featPrerequisites": {
                 "0": "precetti del male"
-            }
+            },
+            "name": "Percepire il Bene",
+            "description": "<p>La vicinanza del bene ti provoca un senso dì nausea per Il suo becero moralismo. Quando sei in presenza di un'aura di bene d'intensità potente o soverchiante riesci a individuarla, sebbene questo possa richiedere tempo e tu non arrivi a stabilirne la posizione esatta. Si ti atta di un senso vago. simile all'olfatto degli umani.</p>\n<p>Una creatura buona che cerchi di utilizzare un camuffamento o tenti in altro modo di celare la sua presenza, deve effettuare una prova di Inganno contro la tua CD di Percezione per impedirti di percepire la sua aura. Se la creatura supera la prova diventa temporaneamente immune al tuo Percepire il Bene per 1 giorno.</p>"
         },
         "Convincing Illusion": {
             "featPrerequisites": {
                 "0": "esperto in Inganno"
-            }
+            },
+            "description": "<p><strong>Innesco</strong> Una creatura ha ottenuto un successo (non critico) in una prova di Percezione o un tiro salvezza su Volontà per dubitare di un'illusione derivante da un incantesimo che hai lanciato.</p>\n<p><strong>Requisiti</strong> Sei entro 9 metri dall'osservatore e dall'illusione.</p>\n<hr />\n<p>Utilizzi le tue abilità ingannatrici per far sembrare ancora più reali le tue illusioni. Tenta una prova di Inganno contro la CD di Percezione del bersaglio. Se hai successo, il bersaglio non riesce a dubitare dell'illusione.</p>",
+            "name": "Illusione Convincente"
         },
         "Speaking Sky": {
-            "name": "Speaking Sky"
+            "name": "Cielo Parlante",
+            "description": "<p>Puoi sentire i movimenti dell'aria come i sussurri più lievi. Ottieni l'incantesimo ki <em>@UUID[Compendium.pf2e.spells-srd.Zvg0FWzClGbzucFd]{cielo parlante}</em>. Aumenta di 1 il numero di Punti Focalizzazione della tua riserva di focalizzazione.</p>"
         },
         "Lastwall Sentry Dedication": {
             "featPrerequisites": {
@@ -5043,7 +5116,9 @@
         "Leshy Familiar Secrets": {
             "featPrerequisites": {
                 "0": "ordine della foglia"
-            }
+            },
+            "name": "Segreti del Famiglio Leshy",
+            "description": "<p>I segreti dell'ordine della foglia consentono al tuo famiglio di trarre vantaggio dalla sua forma leshy. Ogni giorno puoi selezionare una capacità del famiglio aggiuntiva, che deve essere una delle seguenti capacità del famiglio leshy. Non puoi selezionare più di una capacità da famiglio leshy alla volta.</p>\n<ul>\n<li><strong>@UUID[Compendium.pf2e.familiar-abilities.SKIS1xexaOvrecdV]{Esplosione Verdeggiante}</strong> Quando il tuo famiglio muore, rilascia la sua energia primeva per lanciare la versione da 3 azioni di <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{guarire}</em>, intensificata a un livello inferiore di 1 rispetto al tuo slot incantesimo di livello più alto. L'incantesimo <em>guarire</em> ottiene bonus di status pari al doppio del livello dell'incantesimo per i Punti Ferita che ripristina ai vegetali. Devi essere in grado di lanciare incantesimi di 2° livello utilizzando gli slot incantesimo per selezionare questa capacità del famiglio.</li>\n<li><strong>@UUID[Compendium.pf2e.familiar-abilities.43xB5UnexISlfRa5]{Purificare l'Aria}</strong>: II tuo famiglio ricicla l'aria, fornendo abbastanza ossigeno per una creatura Media nelle zone con aria viziata, come una camera sigillata o uno spazio extradimensionale. Se il leshy si trova nell'area di un effetto di veleno inalato o di un effetto che si basa sull'olfatto, le creature entro un'@Template[type:emanation|distance:15]{emanazione di 4,5} metri dal leshy ottengono bonus di circostanza +2 ai loro tiri salvezza contro l'effetto.</li>\n<li><strong>@UUID[Compendium.pf2e.familiar-abilities.LUBS9csNNgRTui4p]{Tentacoli Afferranti}</strong>: II tuo famiglio può allungare rampicanti o simili protuberanze, aumentando la sua portata a 4,5 metri.</li>\n</ul>"
         },
         "Sense Ki": {
             "featPrerequisites": {
@@ -5092,7 +5167,8 @@
             "featPrerequisites": {
                 "0": "addestrato in Medicina"
             },
-            "name": "Chirurgia Rischiosa"
+            "name": "Chirurgia Rischiosa",
+            "description": "<p>Il tuo intervento può rianimare un paziente dall'orlo della morte, ma potrebbe spingerlo oltre la soglia. Quando @UUID[Compendium.pf2e.actionspf2e.1kGNdIIhuglAjIp9]{Curi Ferite}, puoi infliggere [[/r 1d8[slashing]]]{1d8 danni taglienti} al tuo paziente appena prima di applicare gli effetti di Curare Ferite.</p>\n<p>Se lo fai, ottieni bonus di circostanza +2 alla tua prova di Medicina per Curare Ferite, e se ottieni un successo lo consideri un successo critico.</p>"
         },
         "Arcane Sense": {
             "name": "Percezione Arcana",
@@ -5116,13 +5192,17 @@
             "featPrerequisites": {
                 "0": "Dedizione del Maresciallo",
                 "1": "addestrato in Diplomazia"
-            }
+            },
+            "name": "Posizione del Maresciallo Ispiratore",
+            "description": "<p>Diventi un brillante esempio di dedizione e compostezza in battaglia, e incoraggi i tuoi alleati a seguirti.</p>\n<p>Quando usi questa azione, tenta una prova di @Check[type:diplomacy|dc:@self.level]. La CD è solitamente una CD di difficoltà standard del tuo livello, ma il GM può assegnare una CD diversa in base alla circostanze. L'effetto dipende dal risultato della tua prova.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.er5tvDNvpbcnlbHQ]{Posizione: Posizione del Maresciallo Ispiratore}</p>\n<hr />\n<p><strong>Successo Critico</strong> La tua aura del maresciallo aumenta fino a un'@Template[type:emanation|distance:20]{emanazione di 6 metri} e conferisce a te e agli alleati bonus di status +1 ai tiri per colpire e ai tiri salvezza contro effetti mentali.</p>\n<p><strong>Successo</strong> Come successo critico, ma la dimensione della tua aura non aumenta.</p>\n<p><strong>Fallimento</strong> Non riesci a entrare nella posizione.</p>\n<p><strong>Fallimento Critico</strong> Non riesci a entrare nella posizione e non puoi intraprendere nuovamente questa azione per 1 minuto.</p>"
         },
         "Esoteric Oath (Paladin)": {
             "featPrerequisites": {
                 "0": "precetti del bene",
                 "1": "causa del paladino"
-            }
+            },
+            "name": "Giuramento Esoterico (Paladino)",
+            "description": "<p>Hai fatto un giuramento in cui hai promesso di uccidere gli abomini alieni che si nascondono negli angoli più remoti di Golarion. Aggiungi il seguente precetto al tuo codice del campione, dopo gli altri: \"Devi uccidere le aberrazioni malvagie che incontri, purché tu abbia ragionevoli probabilità di vittoria\".</p>\n<p>Il tuo @UUID[Compendium.pf2e.actionspf2e.EAP98XaChJEbgKcK]{Colpo Punitivo} ottiene bonus di circostanza +4 ai danni contro un'aberrazione malvagia o +6 se hai competenza maestro con l'arma che hai usato.</p>\n<p>Non consideri le aberrazioni malvagie come autorità legittime, anche nelle nazioni che esse governano.</p>"
         },
         "Hunted Shot": {
             "name": "Tiro del Cacciatore",
@@ -5184,7 +5264,9 @@
         "Spiritual Guides": {
             "featPrerequisites": {
                 "0": "istinto spirituale"
-            }
+            },
+            "name": "Guide Spirituali",
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<p><strong>Innesco</strong> Ottieni un fallimento (non critico) in una prova di Percezione o di abilità.</p>\n<hr />\n<p>Anche se nessuno li vede e solo tu puoi sentirli, gli spiriti intorno a te chiacchierano costantemente, tranne quando sei Infuriato, e a volte sono persino utili. Puoi seguire le indicazioni degli spiriti per ripetere la prova innescante, usando il secondo risultato anche se è peggiore.</p>"
         },
         "Hideous Ululation": {
             "featPrerequisites": {
@@ -5216,7 +5298,8 @@
             }
         },
         "Saoc Astrology": {
-            "name": "Saoc Astrology"
+            "name": "Astrologia Saoc",
+            "description": "<p><strong>Frequenza</strong> tre volte al giorno</p>\n<p><strong>Accesso</strong> Nazionalità lirgena</p>\n<p><strong>Requisiti</strong> Devi impiegare 10 minuti subito dopo i tuoi preparativi giornalieri per esaminare il cielo o per consultare una mappa celeste oppure non puoi usare questa azione per quel giorno.</p>\n<hr />\n<p>Ricordi le predizioni delle stelle sulla tua situazione attuale. Se la tua prossima azione richiede di tentare una o più prove di Abilità, tira [[/r 1d8]]. Con un risultato di 6, 7 o 8, ottieni bonus di circostanza +2 alla prima prova di abilità di quel tipo che tenti. Con 3, 4 o 5, ottieni bonus di circostanza +1. Con 2, non ottieni nulla. Con 1, subisci penalità di circostanza -1 alla prova di abilità.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.6ACbQIpmmemxmoBJ]{Effetto: Astrologia Saoc}</p>"
         },
         "Tongue of Sun and Moon": {
             "name": "Lingua del Sole e della Luna",
@@ -7393,7 +7476,7 @@
             "description": "<p><strong>Requisiti </strong>Impugni un'arma da mischia con due armi.</p>\n<hr />\n<p>Il tuo colpo finale può avere un impatto anche se dovesse rimbalzare sulle difese del nemico.</p>\n<p>Colpisci con l'arma indicata nei requisiti. Dopodiché, il tuo turno finisce. Il Colpo infligge un dado di danno dell'arma aggiuntivo, o due se sei almeno di 18° livello, e ottiene il seguente effetto in caso di fallimento.</p>\n<p><strong>Fallimento</strong> Infliggi danni pari a un dado di danno dell'arma indicata nei requisiti. Aumenti i danni a due dadi se sei almeno di 18° livello.</p>"
         },
         "Invoke the Crimson Oath": {
-            "name": "Invoke the Crimson Oath",
+            "name": "Invocare il Giuramento Cremisi",
             "description": "<p>Puoi invocare il Giuramento Cremisi per scatenare un'esplosione di energia scarlatta dalla tua arma. Ottieni l'incantesimo focalizzato <em>@UUID[Compendium.pf2e.spells-srd.AsKLseOo8hwv5Jha]{invocare il giuramento cremisi}</em>. Se non ne hai già, ottieni una riserva di focalizzazione di 1 Punto Focalizzazione, che puoi recuperare usando l'attività Rifocalizzare per recitare il giuramento cremisi e meditare sui suoi insegnamenti; se hai già una riserva di focalizzazione, incrementa il numero di Punti Focalizzazione nella tua riserva focalizzazione di 1. I tuoi incantesimi focalizzati da cavaliere della riconquista sono incantesimi divini; quando ottieni questo talento, diventi Addestrato negli attacchi con incantesimi divini e CD di incantesimo. La tua abilità di incantatore chiave per questi incantesimi è il Carisma. </p>"
         },
         "Shielded Stride": {
@@ -7786,7 +7869,7 @@
             }
         },
         "Sun's Fury": {
-            "name": "Sun's Fury"
+            "name": ""
         },
         "Spellmaster Dedication": {
             "featPrerequisites": {
@@ -8614,7 +8697,9 @@
         "Makeshift Strike": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Improvvisatore Armato"
-            }
+            },
+            "description": "<p>Prendi rapidamente qualsiasi cosa si trovi nelle vicinanze e poi attacchi usandolo come arma improvvisata.</p>\n<p>@UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interagisci} per raccogliere un oggetto vicino che potresti usare come arma improvvisata e che deve trovarsi all'altezza del tuo petto (come un boccale su un tavolo) anziché per terra. Poi Colpisci o effettui una @UUID[Compendium.pf2e.feats-srd.FSxugo3zTgRhW7Og]{Botta Improvvisata} con l'arma improvvisata.</p>",
+            "name": "Colpo di Ripiego"
         },
         "Garden Path": {
             "featPrerequisites": {
@@ -8652,12 +8737,16 @@
         "Improvised Critical": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Improvvisatore Armato"
-            }
+            },
+            "name": "Critico Improvvisato",
+            "description": "<p>Puoi applicare gli effetti di specializzazione del critico alle armi improvvisate che impugni. Per qualsiasi arma improvvisata, il GM determina quale effetto di specializzazione del critico è più applicabile, in base al tipo di oggetto.</p>"
         },
         "Tumbling Opportunist": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Acrobata"
-            }
+            },
+            "name": "Opportunista Acrobatico",
+            "description": "<p><strong>Frequenza</strong> una volta al minuto</p>\n<p><strong>Requisiti</strong> La tua azione più recente è stata @UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{Destreggiarsi} o @UUID[Compendium.pf2e.feats-srd.jfsmtOx4QgXB19BL]{Colpo Acrobatico}, e hai attraversato con successo uno spazio nemico.</p>\n<hr />\n<p>Sfrutti una scarica di energia per eseguire un'impresa mozzafiato di Acrobazia mentre sfrecci nello spazio di un nemico, lasciandolo steso per terra. Tenti di @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Sbilanciare} il nemico di cui hai attraversato lo spazio. Puoi usare Acrobazia invece di Atletica per questa prova.</p>"
         },
         "Emergency Medical Assistance": {
             "featPrerequisites": {
@@ -8749,7 +8838,8 @@
             }
         },
         "Dual-Weapon Warrior Dedication": {
-            "name": "Dedizione del Combattente a Due Armi"
+            "name": "Dedizione del Combattente a Due Armi",
+            "description": "<p> Sei abilissimo nell'uso di due armi. Ottieni il talento da guerriero @UUID[Compendium.pf2e.feats-srd.onde0SxLoxLBTnvm]{Doppio Taglio}. Questo vale come Doppio Taglio ai fini del raggiungimento dei prerequisiti.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo del @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.sAFWD8D0RKH4m25n]{Combattente a Due Armi}.</p>"
         },
         "Peer Beyond": {
             "featPrerequisites": {
@@ -8893,7 +8983,7 @@
             }
         },
         "Explosion": {
-            "name": "Explosion"
+            "name": ""
         },
         "The Harder They Fall (Kingmaker)": {
             "featPrerequisites": {
@@ -9050,7 +9140,9 @@
         "Wings Of The Dragon": {
             "featPrerequisites": {
                 "0": "Dedizione del Discepolo dei Draghi"
-            }
+            },
+            "description": "<p>Puoi dispiegare ali draconiche e librarti in aria a gran velocità. Ottieni l'incantesimo della linea di sangue dello stregone <em>@UUID[Compendium.pf2e.spells-srd.HWJODX2zPg5cg34F]{ali del drago}</em> e una riserva di 1 Punto Focalizzazione. Se hai già una riserva di focalizzazione, aumenta di 1 il numero dei tuoi Punti Focalizzazione.</p>",
+            "name": "Ali del Drago"
         },
         "Quick Fix": {
             "featPrerequisites": {
@@ -9087,7 +9179,9 @@
         "Claws Of The Dragon (Draconic Bloodline)": {
             "featPrerequisites": {
                 "0": "Dedizione del Discepolo dei Draghi"
-            }
+            },
+            "name": "Artigli del Drago (Stregone Draconico)",
+            "description": "<p>Le tue unghie diventano artigli affilati come rasoi; su dita, mani e polsi spuntano delle scaglie. I tuoi artigli sono attacchi senz'armi accurati e agili che infliggono [[/r 1d6[slashing]]]{1d6 danni taglienti} e sono nel gruppo delle armi rissa.</p>\n<p>Quando lanci <em>@UUID[Compendium.pf2e.spells-srd.K8vvrOgW4bGakXxm]{artigli del drago}</em> aumenti il dado dei danni taglienti dell'incantesimo da d4 a d6 e la resistenza a 10 al 1° livello, a 15 al 5° livello e 20 al 9° livello.</p>"
         },
         "Scales Of The Dragon": {
             "featPrerequisites": {
@@ -9162,7 +9256,9 @@
         "Breath Of The Dragon": {
             "featPrerequisites": {
                 "0": "Dedizione del Discepolo dei Draghi"
-            }
+            },
+            "name": "Soffio del Drago",
+            "description": "<p>Puoi usare un potente soffio d'aria, proprio come il drago che emuli. Ottieni l'incantesimo della linea di sangue dello stregone <em>@UUID[Compendium.pf2e.spells-srd.JcobNl4iE9HmMYtE]{soffio del drago}</em> e una riserva di 1 Punto Focalizzazione. Se hai già una riserva di focalizzazione, aumenta di 1 il numero dei tuoi Punti Focalizzazione.</p>"
         },
         "Disciple's Breath": {
             "featPrerequisites": {
@@ -9521,7 +9617,9 @@
         "Crossbow Terror": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Arciere"
-            }
+            },
+            "name": "Terrore con la Balestra",
+            "description": "<p>Sei straordinario con la balestra.</p>\n<p>Ottieni bonus di circostanza +2 ai danni con le @UUID[Compendium.pf2e.equipment-srd.62nnVQvGhoVLLl2K]{balestre}.</p>\n<p>Se la balestra è un'arma semplice, aumenti anche la categoria del dado di danno per i tuoi attacchi effettuati con quella balestra di un grado. Come di consueto, questo aumento del dado di danno non può essere combinato con altre capacità che alterano il dado di danno dell'arma (come il talento da ranger @UUID[Compendium.pf2e.feats-srd.CpjN7v1QN8TQFcvI]{Asso con la Balestra}).</p>"
         },
         "Martial Performance": {
             "featPrerequisites": {
@@ -9668,7 +9766,9 @@
         "Cavalier's Charge": {
             "featPrerequisites": {
                 "0": "Dedizione del Cavaliere"
-            }
+            },
+            "description": "<p><strong>Requisiti</strong> Sei in sella alla tua cavalcatura.</p>\n<hr />\n<p>@UUID[Compendium.pf2e.actionspf2e.q9nbyIF0PEBqMtYe]{Comandi un Animale} per ordinare alla tua cavalcatura di Avanzare due volte. In qualsiasi momento durante questo movimento, puoi Colpire un nemico entro portata o entro il primo incremento di gittata di un'arma a distanza. Ottieni bonus di circostanza +1 al tiro per colpire.</p>",
+            "name": "Carica del Cavaliere"
         },
         "Mighty Bulwark": {
             "name": "Baluardo Possente",
@@ -9838,7 +9938,9 @@
         "Quick Study": {
             "featPrerequisites": {
                 "0": "Dedizione del Maestro di Sapienza"
-            }
+            },
+            "description": "<p>Durante i tuoi preparativi giornalieri, puoi studiare un particolare argomento per ottenere il grado di competenza addestrato in un'abilità Sapienza a tua scelta. Devi aver interagito con quell'argomento in qualche modo il giorno precedente, leggendo qualcosa in merito, parlando con qualche esperto o sperimentandolo tu stesso.</p>\n<p>In alternativa, puoi fare riferimento ai tuoi appunti per scegliere invece un'abilità Sapienza che hai preparato prima con Studio Rapido. Questa competenza dura fino ai tuoi successivi preparativi. Poiché questa competenza è temporanea, non puoi usarla come prerequisito per un incremento di abilità o una opzione permanete del personaggio, come un talento.</p>",
+            "name": "Studio Rapido"
         },
         "Magical Edification": {
             "featPrerequisites": {
@@ -9853,7 +9955,9 @@
         "Giant Snare": {
             "featPrerequisites": {
                 "0": "Dedizione dell'Accalappiatore"
-            }
+            },
+            "name": "Calappio Gigante",
+            "description": "<p>Puoi creare calappi più grandi da posizionare rapidamente, rendendo più probabile che una creatura ci cammini di sopra.</p>\n<p>Quando prepari i calappi per il posizionamento rapido, puoi prepararne alcuni come calappi giganti. Un calappio gigante occupa un'area di 3 metri per 3 ma costa due dei tuoi calappi di posizionamento rapido. Un calappio gigante può essere innescato da una creatura che entra in qualsiasi porzione della sua area, e tutti i suoi effetti si applicano all'intera area.</p>"
         },
         "Roll with It": {
             "featPrerequisites": {
@@ -9999,7 +10103,9 @@
         "Tengu Weapon Study": {
             "featPrerequisites": {
                 "0": "Familiarità con le Armi Tengu"
-            }
+            },
+            "description": "<p>Hai appreso delle tecniche di uso delle lame e di altre armi tengu. Ogni volta che ottieni un critico con una delle armi della tua Familiarità con le Armi Tengu, applichi l'effetto di specializzazione del critico dell'arma.</p>",
+            "name": "Studio con le Armi Tengu"
         },
         "Sunder Spell": {
             "name": "Spezzare Incantesimo",
@@ -10242,7 +10348,9 @@
         "Incredible Beastmaster Companion": {
             "featPrerequisites": {
                 "0": "Compagno Adulto del Signore delle Bestie"
-            }
+            },
+            "name": "Compagno Incredibile del Signore delle Bestie",
+            "description": "<p>I tuoi compagni animali adulti continuano a crescere e svilupparsi. Ognuno di essi diventa un compagno animale agile o feroce (a tua scelta; scegli per ogni compagno, compresi quelli che diventano adulti dopo aver preso questo talento), ottenendo capacità aggiuntive determinate dal tipo di compagno.</p>"
         },
         "Wave the Flag": {
             "featPrerequisites": {
@@ -10341,7 +10449,9 @@
         "Finishing Precision": {
             "featPrerequisites": {
                 "0": "Dedizione dello Spadaccino"
-            }
+            },
+            "name": "Precisione Finale",
+            "description": "<p>Hai imparato a sferrare colpi audaci quando hai @UUID[Compendium.pf2e.classfeatures.LzYi0OuOoypNb6jd]{spavalderia}.</p>\n<p>Ottieni il privilegio di classe @UUID[Compendium.pf2e.classfeatures.RQH6vigvhmiYKKjg]{Colpo Preciso} ma infliggi 1 danno aggiuntivo se colpisci e 1d6 danni in caso di Mossa Finale. Questo danno non aumenta man mano che ottieni livelli. Inoltre, ottieni l'azione @UUID[Compendium.pf2e.actionspf2e.dCuvfq3r2K9wXY9g]{Mossa Finale Base}.</p>"
         },
         "Basic Flair": {
             "featPrerequisites": {
@@ -10434,7 +10544,9 @@
         "Wild Strider": {
             "featPrerequisites": {
                 "0": "Dedizione del Viandante dell'Orizzonte"
-            }
+            },
+            "description": "<p>Gli ostacoli naturali non rappresentano un ostacolo per te. Ottieni il privilegio di classe @UUID[Compendium.pf2e.classfeatures.RlwE99yKnhq8FUuy]{Avanzata Selvatica} del Ranger. Questo ti permette di ignorare gli effetti di tutti i terreni difficili non magici, di trattare i terreni difficili superiori come semplici terreni difficili e di ottenere un ulteriore beneficio da @UUID[Compendium.pf2e.feats-srd.sgo7J9BVofBqwlsF]{Terreno Prescelto}, basato sul terreno.</p>",
+            "name": "Passo Selvatico"
         },
         "Ghost Hunter": {
             "name": "Cacciatore di Fantasmi",
@@ -10443,7 +10555,9 @@
         "Biographical Eye": {
             "featPrerequisites": {
                 "0": "maestro in Società"
-            }
+            },
+            "name": "Occhio per le Biografie",
+            "description": "<p>Anche in una breve conversazione o interazione sociale si possono cogliere impercettibili indizi sociali e visivi per imparare molto sull'origine e la storia di una persona. Potresti notare residui verdi sotto le unghie della persona e capire che è un erborista, una spilla che indica la sua appartenenza a una società segreta, o qualcosa di simile. Capti solo i dettagli che hanno a che fare con il ruolo sociale, quindi puoi apprendere il quartiere della città in cui vive un vampiro, ma non le sue debolezze, e nemmeno necessariamente che è un vampiro.</p>\n<p>Spendi 1 minuto in presenza di qualcuno che non hai mai incontrato prima o che non hai incontrato da quando hai ottenuto Occhio per le Biografie, poi tenta una prova di @Check[type:society|dc:30]{Società}. Ottieni bonus di circostanza +1 alla prova se hai intrattenuto una conversazione con la persona durante questo tempo. Se la persona sta cercando di nascondere la propria natura o presentarsi con una falsa identità, analizzi la sua falsa biografia piuttosto che quella vera, a meno che il risultato della tua prova di Società non superi la sua CD di Volontà.</p>\n<hr />\n<p><strong>Successo Critico</strong> Apprendi la professione della creatura, la sua specialità all'interno di quella professione, e un successo o insuccesso importante della sua carriera. Apprendi anche la nazione e l'insediamento in cui vive, così come il quartiere, nel caso di una città abbastanza grande da avere dei quartieri. Inoltre, apprendi la nazione o l'insediamento in cui ha trascorso i suoi anni giovanili.</p>\n<p><strong>Successo</strong> Apprendi la professione della creatura e la sua specialità all'interno di quella professione. Apprendi anche la nazione o l'insediamento in cui vive di solito.</p>\n<p><strong>Fallimento</strong> Apprendi la professione della creatura e la regione del mondo da cui proviene, ma nulla di più.</p>\n<p><strong>Fallimento Critico</strong> Apprendi un'informazione sbagliata sulla creatura.</p>"
         },
         "Fiendish Wings": {
             "name": "Ali Nefande",
@@ -10845,7 +10959,9 @@
         "Big Mouth": {
             "featPrerequisites": {
                 "0": "Guancegonfie"
-            }
+            },
+            "name": "Bocca Larga",
+            "description": "<p>Le sacche delle tue guance sono particolarmente elastiche. Invece di conservare fino a quattro oggetti di Volume Leggero nelle guance, puoi conservare oggetti il cui Volume massimo sia 1. La dimensione massima di un determinato oggetto rimane invariata.</p>"
         },
         "Energy Fusion": {
             "description": "<p>Fondi insieme due incantesimi, combinando i loro tipi di energia.</p>\n<p>Se la prossima azione che usi è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} che infligge danni da acido, da elettricità, da freddo, da fuoco o sonori, seleziona un incantesimo che non sia un trucchetto nel tuo repertorio degli incantesimi e che infligga un diverso tipo di danno da energia da quella lista, e spendi uno slot incantesimo aggiuntivo dello stesso livello di questo incantesimo secondario. L'incantesimo che lanci infligge danni aggiuntivi pari al livello dello slot incantesimo secondario speso.</p>\n<p>Il danno totale dell'Incantesimo è diviso equamente tra il tipo di energia dell'incantesimo che hai lanciato e il tipo di energia dell'incantesimo secondario.</p>",
@@ -11661,7 +11777,9 @@
         "Expert Scroll Cache": {
             "featPrerequisites": {
                 "0": "Novizio Pergamenologo"
-            }
+            },
+            "name": "Esperto Pergamenologo",
+            "description": "<p>La tua collezione di pergamene è più potente.</p>\n<p>Oltre alle tue pergamene giornaliere di Novizio Pergamenologo, aggiungi una pergamena con un incantesimo di 3° livello. Al 14° livello, aggiungi una pergamena con un incantesimo dl 4° livello. Al 16° livello, aggiungi una pergamena con un incantesimo di 5° livello.</p>"
         },
         "Devastating Spellstrike": {
             "featPrerequisites": {
@@ -11687,6 +11805,298 @@
             "featPrerequisites": {
                 "0": "Ordine del Flagello"
             }
+        },
+        "Iron Repercussions": {
+            "description": "<p>Disobbedire al tuo @UUID[Compendium.pf2e.actionspf2e.M8RCbthRhB4bxO9t]{Pugno di Ferro} comporta conseguenze durature. Se un nemico rifiuta di inginocchiarsi a te, puoi infliggere @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{danni mentali persistenti} al posto di quelli mentali normali. Devi decidere se il danno mentale sarà persistente o no prima che il tuo nemico scelga se inginocchiarsi o meno. La quantità di danni rimane invariata.</p>",
+            "name": "Ripercussioni di Ferro",
+            "featPrerequisites": {
+                "0": "causa del tiranno"
+            }
+        },
+        "Dwarven Doughtiness": {
+            "name": "Ardimento Nanico",
+            "description": "<p>Per natura mantieni la calma e l'autocontrollo di fronte al pericolo imminente, oppure sei molto bravo a fingere. Alla fine del tuo turno, riduci la condizione @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{spaventato di 2} anziché di 1.</p>"
+        },
+        "Daemon Magic": {
+            "featPrerequisites": {
+                "0": "Progenie Tetra"
+            },
+            "name": "Magia dei Dàimon",
+            "description": "<p>La magia di Abaddon scorre nelle tue vene, e tu sai brandire questo potere. Puoi lanciare <em>@UUID[Compendium.pf2e.spells-srd.dLdRqT6UxTKlsPgp]{rintocco di morte}</em> e <em>@UUID[Compendium.pf2e.spells-srd.8ViwItUgwT4lOvvb]{vita falsata}</em> una volta al giorno per ciascuno, come incantesimi innati divini di 2° livello.</p>"
+        },
+        "Signature Spell Expansion": {
+            "description": "<p>Il tuo legame innato con la magia ti consente di lanciare più incantesimi con maggiore libertà. Ottieni due Incantesimi Distintivi aggiuntivi, ciascuno dei quali deve avere un livello minimo di 3° o inferiore.</p>",
+            "name": "Incantesimi Distintivi Aggiuntivi"
+        },
+        "Rat Familiar": {
+            "name": "Famiglio Ratto",
+            "description": "<p>Hai un ratto addomesticato che si è magicamente legato a te. Ottieni un famiglio, e questo famiglio deve essere un ratto. Ottiene comunque i benefici delle capacità del famiglio, ma la sua forma base rimane un ratto.</p>"
+        },
+        "Cringe": {
+            "name": "Rincattuciarsi",
+            "description": "<p><strong>Innesco</strong> Una creatura di cui sei consapevole ottiene un successo critico con un Colpo contro di te e dovrebbe infliggerti danni.</p>\n<hr />\n<p>Con atteggiamenti pietosi, induci il tuo nemico a non affondare un colpo letale. La creatura attaccante subisce penalità di circostanza al danno del Colpo innescante pari al tuo [[/r (@actor.level)+2]]{livello + 2}. Questa penalità si applica dopo aver raddoppiato il danno per un colpo critico. L'aggressore quindi è immune al tuo Rincantucciarsi per 24 ore.</p>"
+        },
+        "Climbing Claws": {
+            "description": "<p>Puoi allungare i tuoi artigli per aiutarti nelle arrampicate. Ottieni una Velocità di scalare di 3 metri.</p>",
+            "name": "Artigli da Scalata"
+        },
+        "Sow Spell": {
+            "name": "Seminare Incantesimo",
+            "description": "<p>Riponi il tuo incantesimo in un seme. Se la tua azione successiva è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} usando 1 o 2 azioni, l'incantesimo si impianta in un quadretto adiacente. Devi prendere tutte le decisioni riguardanti l'incantesimo nel momento in cui lo lanci.</p>\n<p>Entro i successivi 10 minuti, puoi far germogliare il tuo incantesimo seminato e produrre gli effetti dell'incantesimo come reazione, che si innesca quando una creatura entra nello spazio dell'incantesimo seminato o in un quadretto adiacente.</p>\n<p>Puoi avere un solo incantesimo seminato alla volta, e se non lo fai innescare entro 10 minuti l'incantesimo si dissolve e si perde. Una creatura può notare l'incantesimo seminato se supera una prova di @Check[type:perception|dc:resolve(@actor.attributes.spellDC.value)]{Percezione} contro la tua CD di incantesimo.</p>"
+        },
+        "Ratspeak": {
+            "description": "<p>Stranamente, per te lo squittio di topi e altri roditori ha un senso.</p>\n<p>Puoi fare domande, ricevere risposte e usare l'abilità Diplomazia con i roditori, inclusi castori, topi, istrici, ratti e scoiattoli, ma non con altri mammiferi, come i cani o i pipistrelli. Il GM stabilisce quali animali contano come roditori.</p>",
+            "name": "Parlare con i Roditori"
+        },
+        "Split Slot": {
+            "name": "Scindere Slot",
+            "description": "<p>Puoi preparare due incantesimi in uno slot, il che ti lascia libero di scegliere l'incantesimo quando lo lanci.</p>\n<p>Quando prepari i tuoi incantesimi giornalieri, puoi scegliere uno slot incantesimo di almeno 1 livello inferiore all'incantesimo di livello più alto che puoi lanciare e preparare due incantesimi in quello slot.</p>\n<p>Quando @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanci un Incantesimo} da quello slot, scegli quale incantesimo lanciare. Una volta scelto, l'incantesimo inutilizzato si dissolve come se non l'avessi affatto preparato: ad esempio, non puoi usarlo con @UUID[Compendium.pf2e.actionspf2e.v82XtjAVN4ffgVVR]{Scaricare Oggetto Legato}.</p>"
+        },
+        "Desperate Prayer": {
+            "description": "<p><strong>Frequenza</strong> Una volta al giorno.</p>\n<p><strong>Innesco</strong> Inizi il tuo turno e non hai Punti Focalizzazione nella tua riserva.</p>\n<hr />\n<p>Invochi la tua divinità con una richiesta di aiuto. Recuperi istantaneamente 1 Punto Focalizzazione. </p>",
+            "name": "Preghiera Disperata"
+        },
+        "Prevailing Position": {
+            "featPrerequisites": {
+                "0": "almeno un talento di posizione"
+            },
+            "description": "<p><strong>Innesco</strong> Sei bersaglio di un attacco o tenti un tiro salvezza su Riflessi contro un effetto dannoso, e sei in una posizione.</p>\n<hr />\n<p>La tua propensione a passare da una posizione all'altra ti permette di sacrificare i loro benefici per proteggerti meglio.</p>\n<p>Lasci la posizione in cui ti trovavi, ottenendo bonus di circostanza +4 al tiro salvezza o alla tua CA contro l'attacco innescante.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.COsdMolZraFRTdP8]{Effetto: Posizione Prevalente}</p>",
+            "name": "Posizione Prevalente"
+        },
+        "Skillful Tail (Tiefling)": {
+            "description": "<p>Hai sempre avuto la coda, ma con la pratica hai imparato a usarla per qualcosa di più utile che indicare il tuo umore.</p>\n<p>Puoi eseguire semplici azioni @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interagire} con la coda, come aprire una porta sbloccata. La tua coda non può eseguire azioni che richiedano dita o una notevole destrezza manuale, compresa qualsiasi azione che richiederebbe una prova per essere eseguita, e non puoi usarla per tenere oggetti.</p>",
+            "name": "Coda Abile"
+        },
+        "Specialized Beastmaster Companion": {
+            "name": "Compagno Specializzato del Signore delle Bestie",
+            "description": "<p>I tuoi compagno animale agile o feroce sono abbastanza scaltri da diventare specializzati. Ogni compagno ottiene una specializzazione a tua scelta (<em>Manuale di Gioco</em> 214, scegli separatamente).</p>\n<p><strong>Speciale</strong> Puoi selezionare questo talento più volte. Ogni volta, aggiungi una diversa specializzazione ai tuoi compagni animale agili o feroci, i quali possono avere fino a tre specializzazioni ciascuno.</p>",
+            "featPrerequisites": {
+                "0": "Compagno Incredibile del Signore delle Bestie"
+            }
+        },
+        "Speedy Rituals": {
+            "name": "Rituali Veloci",
+            "featPrerequisites": {
+                "0": "Rituali Efficienti"
+            },
+            "description": "<p>Puoi eseguire i rituali in molto meno tempo del solito. Se un rituale ha un tempo di lancio misurato in giorni, puoi lanciarlo in un numero uguale di ore. Se il risultato è un rituale più lungo di 8 ore, dividi il rituale in più giorni, come al solito.</p>"
+        },
+        "Walk The Plank": {
+            "name": "Passeggiata sulla Passerella",
+            "featPrerequisites": {
+                "0": "Dedizione del Pirata"
+            },
+            "description": "<p>Spaventi un nemico per farlo muovere dove vuoi tu, di solito imponendogli di camminare sulla passerella. Tenta di @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralizzare} un avversario; questa prova ottiene il tratto incapacitazione.</p>\n<p>In caso di successo, oltre ai normali effetti puoi anche costringere il bersaglio ad Avanzare fino alla sua Velocità. Sei tu a scegliere il percorso che fa il bersaglio, e il suo movimento fa parte della tua azione Passeggiata sulla Passerella. Non puoi costringere il bersaglio a muoversi in uno spazio dannoso (uno in cui prenderà danni, cadrà, provocherà reazioni o simili) a meno che il risultato della tua prova di @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralizzare} non sia un successo critico.</p>\n<p>Il bersaglio diventa poi temporaneamente immune a Passeggiata sulla Passerella per 24 ore.</p>"
+        },
+        "Forcible Energy": {
+            "name": "Energia Violenta",
+            "description": "<p> Esegui complesse manipolazioni per rendere l'energia dei tuoi incantesimi così potente che i tuoi nemici rimangano poi vulnerabili a essa.</p>\n<p>Se la tua prossima azione è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} che infligge danni da acido, da elettricità, da fuoco o sonori, puoi selezionare un bersaglio che è stato danneggiato e fargli ottenere debolezza 5 a quel tipo di danno fino alla fine del tuo turno successivo. Se un incantesimo infligge più tipi di danni da energia, scegli quello a cui il bersaglio ottiene debolezza.</p>\n<p>Questo non ha effetto sulle creature con Resistenza o immunità al tipo di energia che scegli.</p>"
+        },
+        "Homeward Bound": {
+            "name": "Ritorno a Casa",
+            "description": "<p><strong>Frequenza</strong> Due volte a settimana</p>\n<hr />\n<p>La connessione tra te e il Primo Mondo è più forte in te di quanto non sia nella maggior pane degli gnomi, consentendoti di attraversare la soglia tra il Piano Materiale e il Primo Mondo.</p>\n<p>Ottieni <em>@UUID[Compendium.pf2e.spells-srd.5bTt2CvYHPvaR7QQ]{spostamento planare}</em> come incantesimo innato primevo. Puoi lanciarlo due volte a settimana e usarlo solo per viaggiare avanti e indietro tra il Primo Mondo e il Piano Materiale. A causa della risonanza naturale del tuo corpo, puoi fungere da focus per l'incantesimo e non è necessario un diapason.</p>"
+        },
+        "Symphony Of The Unfettered Heart": {
+            "name": "Sinfonia del Cuor Saldo",
+            "description": "<p>Impari l'incantesimo di composizione <em>@UUID[Compendium.pf2e.spells-srd.ZAX0OOcKtYMQlquR]{sinfonia del cuor saldo}</em>, che ti consente di proteggere un alleato da condizioni incapacitanti.</p>"
+        },
+        "Patron's Breadth": {
+            "name": "Apertura del Patrono",
+            "description": "<p>Puoi lanciare più incantesimi al giorno. Aumenta il numero di slot incantesimo che ottieni dai tuoi talenti di archetipo del fattucchiere di 1 per ogni livello di incantesimo, a parte i due più alti livelli di incantesimo da fattucchiere che puoi lanciare.</p>",
+            "featPrerequisites": {
+                "0": "Novizio di Incantesimi da Fattucchiere"
+            }
+        },
+        "Soulsight (Sorcerer)": {
+            "name": "Vista Animica (Stregone)",
+            "description": "<p>L'essenza spirituale del tuo sangue apre i tuoi sensi al mondo dell'aldilà. Ottieni percezione spiritica come senso impreciso con una gittata di 18 metri.</p>\n<p>La percezione spiritica ti consente di percepire gli spiriti delle creature, compresi gli esseri viventi, la maggior parte dei non morti che non siano privi di intelletto e le infestazioni entro la gittata indicata. Come per l'udito e gli altri sensi imprecisi, devi comunque @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Individuare} per localizzare una creatura non individuata.</p>\n<p>Dato che rileva l'essenza spirituale e non i corpi fisici, la percezione spiritica può individuare gli spiriti proiettati da incantesimi come <em>@UUID[Compendium.pf2e.spells-srd.0873MWM0qKDDv81O]{immagine proiettata}</em> o che possiedono oggetti altrimenti inanimati. Non può individuare corpi inanimati, costrutti od oggetti e, come la maggior parte dei sensi, non penetra gli oggetti solidi.</p>",
+            "featPrerequisites": {
+                "0": "una linea di sangue che concede incantesimi divini o occulti"
+            }
+        },
+        "Tumble Behind (Rogue)": {
+            "name": "Capriola alle Spalle (Canaglia)",
+            "description": "<p>Rotoli sotto e dietro il tuo nemico per prende o a a sprovvista. Quando riesci a @UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{Destreggiarti}, il nemico di cui hai attraversato lo spazio è @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} contro il prossimo attacco che effettui prima della fine del tuo turno.</p>"
+        },
+        "Death's Drums": {
+            "name": "Tamburi di Morte",
+            "description": "<p>Hai trascorso la vita a sfidare la morte stessa e avvicinarti a quell'implacabile avversario ti fa soltanto battere più forte il cuore.</p>\n<p>Quando stai subendo danni persistenti o il tuo valore di @UUID[Compendium.pf2e.conditionitems.Yl48xTdMh3aeQYL2]{ferito} è 1 o più, ottieni bonus di circostanza +2 ai tiri salvezza su Tempra.</p>"
+        },
+        "Rampaging Form": {
+            "name": "Forma Furibonda",
+            "description": "<p>Una volta al giorno, quando Cambi Forma per diventare una volpe, puoi ottenere gli effetti sia di una forma di canide di un <em>@UUID[Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp]{forma di animale}</em> di 5° livello sia di <em>@UUID[Compendium.pf2e.spells-srd.XS7Wyh5YC0NWeWyB]{corpo infuocato}</em> di 7° livello, per 1 minuto o finché non ti ritrasformi, a seconda di quale delle due condizioni si verifichi per prima. Puoi lanciare <em>@UUID[Compendium.pf2e.spells-srd.O9w7r4BKgPogYDDe]{produrre fiamma}</em> per l'effetto di <em>corpo infuocato</em> anche se sei in una forma da battaglia.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.DWrsDJte9sez0Ppi]{Effetto: Forma Furibonda}</p>\n<hr />\n<p><strong>Speciale</strong> Se sei un kitsune del vento gelido, la tua forma è di ghiaccio anziché di fuoco. Questo cambia l'immunità e i danni di <em>corpo infuocato</em> in freddo, cambia la debolezza in fuoco e cambia <em>produrre fiamma</em> in <em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{raggio di gelo}</em>.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.WRe8qbemruWxkN8d]{Effetto: Forma Furibonda (Kitsune del Vento Gelido)}</p>"
+        },
+        "Ancestral Blood Magic": {
+            "name": "Magia del Sangue Ancestrale",
+            "description": "<p>La magia della tua linea di sangue si mescola con quella della tua stirpe. Ottieni l'effetto della magia del sangue quando lanci un incantesimo che non sia un trucchetto e che hai ottenuto grazie a un lignaggio o a un talento di stirpe, in aggiunta alle normali circostanze che innescano la tua magia del sangue.</p>"
+        },
+        "Sticky Poison": {
+            "name": "Veleno Appiccicoso",
+            "description": "<p>Una combinazione di viscosità aggiuntiva e un'applicazione attenta mantiene il veleno sulle tue armi anche quando queste subiscono un'usura significativa.</p>\n<p>Se il tuo Colpo con un'arma avvelenata dovesse consumare il suo veleno senza che il tuo bersaglio tenti un tiro salvezza iniziale (per esempio a causa di una resistenza o perché il tuo Colpo è un fallimento critico), tenta una @Check[type:flat|dc:5]. In caso di successo, l'arma rimane avvelenata.</p>\n<p>Se il tuo Colpo con un'arma avvelenata ha successo, tenta una @Check[type:flat|dc:17]. In caso di successo, la tua arma rimane avvelenata fino alla fine del tuo turno successivo.</p>"
+        },
+        "Second Chance Spell": {
+            "description": "<p>Quando il tuo bersaglio si dimostra resistente ai tuoi inganni magici, puoi riprovarli su qualcun altro. Quando lanci un incantesimo di ammaliamento che ha come bersaglio una creatura e quella ottiene un successo critico nel tiro salvezza su Volontà, puoi Lanciare di nuovo l'Incantesimo prima della fine del tuo turno successivo su una creatura diversa senza spendere un ulteriore slot incantesimo. Il secondo lancio non ti concede i benefici che otterresti normalmente per Lanciare un Incantesimo da uno slot incantesimo.</p>",
+            "name": "Seconda Possibilità Magica"
+        },
+        "Undead Slayer": {
+            "description": "<p>La conoscenza dell'anatomia che ti caratterizza, combinata con la tua esperienza in combattimento, ti aiuta a sconfiggere i nemici non morti con facilità. Contro le creature non morte ottieni bonus di circostanza al danno con armi e attacchi senz'armi pari al numero di dadi di danno dell'arma per il Colpo. Questo bonus aumenta al doppio del numero di dadi di danno dell'arma se il tuo bersaglio ha il tratto vampiro.</p>",
+            "name": "Sterminatore di Non Morti"
+        },
+        "Head Stomp": {
+            "name": "Piedi in Testa",
+            "description": "<p>Effettua un attacco senz'armi in mischia contro un bersaglio @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{prono}.</p>\n<p>Se colpisci, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} a tutti gli attacchi fino alla fine del tuo turno successivo.</p>"
+        },
+        "Pinpoint Poisoner": {
+            "name": "Avvelenatore Millimetrico",
+            "description": "<p>I bersagli ignari sono particolarmente vulnerabili ai tuoi veleni. Quando Colpisci con successo una creatura Impreparata con un'arma avvelenata o esponi una creatura Impreparata a un veleno inalato, la condizione @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{impreparato} infligge a quella creatura anche penalità di circostanza -2 al suo tiro salvezza iniziale contro quel veleno.</p>"
+        },
+        "Bloodletting Fangs": {
+            "name": "Zanne del Salasso",
+            "featPrerequisites": {
+                "0": "attacco senz'armi con le zanne"
+            },
+            "description": "<p>Emuli le tecniche del tuo genitore vampiro per dissanguare le vittime. I tuoi Colpi con le zanne infliggono [[/r 1d4[bleed]]]{1d4 danni persistenti da sanguinamento} aggiuntivi con un colpo critico.</p>"
+        },
+        "Enforce Oath": {
+            "featPrerequisites": {
+                "0": "Hai fatto un giuramento contro un tipo specifico di creatura."
+            },
+            "name": "Rispettare il Giuramento",
+            "description": "<p><strong>Frequenza</strong> una volta all'ora</p>\n<hr />\n<p>Fai appello al tuo giuramento per darti coraggio in battaglia. Quando Rispetti il tuo Giuramento, scegli una creatura che sei in grado di vedere e che hai giurato di sconfiggere come parte del tuo giuramento.</p>\n<p>Ottieni bonus di status +1 alla CA e ai tiri salvezza contro gli attacchi e gli effetti della creatura scelta, nonché bonus di status +1 ai tiri per colpire contro la creatura scelta.</p>\n<p>Tuttavia, la tua dedizione a Rispettare il Giuramento ti distrae da tutti gli altri nemici. Mentre stai facendo Rispettare il tuo Giuramento, subisci penalità di status -1 alla CA, ai tiri per colpire e ai Tiri Salvezza contro tutte le altre creature finché non smetti di Rispettare il tuo Giuramento.</p>\n<p>Smetti di Rispettare il tuo Giuramento quando la creatura scelta è ridotta a 0 Punti Ferita o propone una legittima resa a te o ai tuoi alleati. Smetti immediatamente di Rispettare il tuo Giuramento se sei @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{privo di sensi} o se la creatura scelta rimane @UUID[Compendium.pf2e.conditionitems.9evPzg9E6muFcoSk]{inosservata} da te per più di 1 minuto. Puoi anche smettere di Rispettare il tuo Giuramento in qualsiasi momento durante il tuo turno con un'azione gratuita.</p>"
+        },
+        "Cling": {
+            "name": "Aggancio",
+            "description": "<p><strong>Requisiti</strong> La tua ultima azione è stata un Colpo andato a segno.</p>\n<hr />\n<p>Ti agganci a un nemico per farlo arrendere.</p>\n<p>Se il tuo bersaglio si muove mentre ti stai agganciando a lui, puoi scegliere di muoverti con il bersaglio. Lasci andare il bersaglio se scegli di non muoverti con lui, o all'inizio del tuo turno successivo. oppure se il bersaglio @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Sfugge}.</p>\n<p>I tentativi di Sfuggire da un Aggancio seguono le regole di Sfuggire, ma utilizzano la tua CD di Acrobazia e pongono fine all'Aggancio invece che alle condizioni consuete per l'azione di Sfuggire.</p>\n<p><strong>Speciale</strong> Puoi usare questa azione senza una mano libera se il tuo Colpo precedente è stato fatto con le fauci o con un simile attacco senz'armi che puoi usare per agganciarti. Il GM stabilisce quali sono gli attacchi senz'armi validi. Agganciarti in questo modo ti impedisce di usare quell'attacco senz'armi.</p>"
+        },
+        "Deadly Strikes": {
+            "name": "Colpi Micidiali",
+            "description": "<p>Hai affinato il tuo corpo per attaccare con letale concentrazione. I tuoi attacchi senz'armi ottengono il tratto Micidiale d10, oppure aumenti il loro tratto micidiale a d10 se l'attacco senz'armi è già micidiale ma con un dado più piccolo.</p>"
+        },
+        "Pied Piping": {
+            "description": "<p>Impari l'incantesimo di composizione <em>@UUID[Compendium.pf2e.spells-srd.Um0aaJotqMKGmAlR]{pifferaio magico}</em>, che ti consente di controllare le azioni degli individui mentalmente deboli.</p>",
+            "name": "Pifferaio Magico"
+        },
+        "Aasimar's Mercy": {
+            "name": "Compassione dell'Aasimar",
+            "description": "<p>I tuoi poteri celestiali ti consentono di rimuovere facilmente le afflizioni inferiori.</p>\n<p>Ogni giorno puoi lanciare due incantesimi innati divini di 4° livello. Puoi scegliere tra i seguenti incantesimi ogni volta che li lanci: <em>@UUID[Compendium.pf2e.spells-srd.SUKaxVZW2TlM8lu0]{neutralizza veleno}</em>, <em>@UUID[Compendium.pf2e.spells-srd.RneiyehRO6f7LP44]{rimuovi malattia}</em> e <em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{rimuovi maledizione}</em>.</p>"
+        },
+        "Scouring Rage": {
+            "featPrerequisites": {
+                "0": "un Istinto che ti consente di cambiare i tuoi danni aggiuntivi conferiti da Infuriarsi in un tipo di danno diverso"
+            },
+            "description": "<p><strong>Innesco</strong> Ti @UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{Infuri}.</p>\n<hr />\n<p>Quando scateni il tuo potenziale, emani un potente impulso energia istintiva. Ogni creatura adiacente subisce [[/r @actor.level]]{danni pari al tuo livello} (TS @Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)|basic:true] contro la tua CD di classe) dello stesso tipo del tuo danno aggiuntivo durante quella Furia.</p>",
+            "name": "Furia Erosiva"
+        },
+        "Storm's Lash": {
+            "name": "Tempesta Sferzante",
+            "description": "<p>Vento e fulmini ti sono sempre stati amici. Puoi lanciare il trucchetto <em>@UUID[Compendium.pf2e.spells-srd.kBhaPuzLUSwS6vVf]{arco elettrico}</em> come incantesimo innato primevo a volontà. Un trucchetto viene intensificato a un livello dell'incantesimo pari a metà del tuo livello, arrotondato per eccesso.</p>"
+        },
+        "Predictive Purchase (Rogue)": {
+            "description": "<p>Hai la cosa giusta per ogni situazione. Ottieni talenti @UUID[Compendium.pf2e.feats-srd.lHFz4MmebvPqTb0A]{Monouso Preveggente} e @UUID[Compendium.pf2e.feats-srd.bh2jHyyYrkLMsIdX]{Pianificatore Preveggente}.</p>\n<p>Quando usi Pianificatore Preveggente, puoi estrarre l'oggetto come attività da 2 azioni per muovere il tuo zaino (o un contenitore simile) e prendere l'oggetto anziché impiegare 1 minuto.</p>",
+            "name": "Acquisto Profetico (Canaglia)"
+        },
+        "Predictable!": {
+            "name": "Prevedibile!",
+            "description": "<p>Osservando un avversario, puoi farti un'idea della sua prossima mossa e prepararti a contrastarla o resisterle.</p>\n<p>Scegli un bersaglio e tenta una prova di Percezione per @UUID[Compendium.pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{Intuire} contro la CD di Inganno dell'avversario o una CD difficile del livello dell'avversario, a seconda di quale sia più alta.</p>\n<hr />\n<p><strong>Successo Critico</strong> Riesci a discernere con precisione la strategia del bersaglio, ottenendo bonus di circostanza +2 alla CA contro la creatura fino all'inizio del tuo turno successivo e bonus di circostanza +2 al tuo prossimo tiro salvezza contro la creatura prima dell'inizio del tuo turno successivo.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.I4Ozf6mTnd3X0Oax]{Effetto: Prevedibile! (Successo Critico)}</p>\n<p><strong>Successo</strong> Deduci il succo della strategia del bersaglio; come Successo Critico, tranne che il bonus di circostanza è solo +1.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.5v0ndPPMfZwhiVZF]{Effetto: Prevedibile!}</p>\n<p><strong>F</strong><strong>allimento</strong> Non riesci a discernere la strategia del bersaglio e non ottieni alcun beneficio.</p>\n<p><strong>Fallimento Critico</strong> Interpreti male la strategia del bersaglio e subisci penalità di circostanza -1 alla CA contro la creatura fino all'inizio del tuo turno successivo, e penalità di circostanza -1 al tuo prossimo Tiro Salvezza contro la creatura prima dell'inizio del tuo turno successivo.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.KgR1myc4OLzVxfxn]{Effetto: Prevedibile! (Fallimento Critico)}</p>"
+        },
+        "Hardy Traveler": {
+            "name": "Viaggiatore Robusto",
+            "description": "<p>Non c'è viaggio troppo lontano o fardello troppo pesante quando i tuoi amici sono al tuo fianco.</p>\n<p>Aumenta di 1 i tuoi limiti di Volume massimo e ingombrato. Inoltre, ottieni bonus circostanza +3 metri alla tua Velocità durante i viaggi via terra.</p>"
+        },
+        "Cautious Curiosity": {
+            "name": "Curiosità Cauta",
+            "featPrerequisites": {
+                "0": "almeno un incantesimo innato arcano od occulto ottenuto grazie a un lignaggio da gnomo o un talento di stirpe da gnomo"
+            },
+            "description": "<p>Hai imparato alcune tecniche magiche per cacciarti nei guai o tirartene fuori inosservato. Ottieni <em>@UUID[Compendium.pf2e.spells-srd.c2bTWBNO1BYX4Zfg]{dissimulare}</em> e <em>@UUID[Compendium.pf2e.spells-srd.gIdDLrbswTV3OBJy]{silenzio}</em> come incantesimi innati arcani od occulti di 2° livello.</p>\n<p>La tradizione di questi incantesimi deve corrispondere alla tradizione che usi per le tue opzioni di stirpe da gnomo. Puoi lanciare ciascun incantesimo una volta al giorno e puoi selezionare come bersaglio solo te stesso.</p>"
+        },
+        "Enthralling Allure": {
+            "name": "Portamento Ammaliante",
+            "description": "<p>I poteri di dominio impiegati dai tuoi progenitori si sono manifestati anche in te. Una volta al giorno puoi lanciare <em>@UUID[Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6]{charme}</em> come incantesimo innato divino di 1° livello.</p>"
+        },
+        "Counterspell (Sorcerer)": {
+            "name": "Controincantesimo (Stregone)",
+            "description": "<p><strong>Innesco</strong> Una creatura Lancia un Incantesimo presente nel tuo repertorio.</p>\n<p><strong>Requisiti</strong> Hai uno slot incantesimo non utilizzato che puoi usare per lanciare l'incantesimo che ha provocato l'innesco.</p>\n<hr />\n<p>Quando un nemico Lancia un Incantesimo di cui riesci a vedere le manifestazioni, puoi utilizzare la tua magia per contrastarlo. Consumi uno slot incantesimo per contrastare il lancio di un incantesimo che hai nel tuo repertorio da parte della creatura che ha provocato l'innesco. Consumi lo slot incantesimo come se avessi lanciato l'incantesimo di innesco, quindi tenti di Contrastare l'incantesimo lanciato dalla creatura.</p>\n<p><strong>Speciale</strong> Questo talento ha il tratto corrispondente alla tradizione degli incantesimi che hai lanciato (arcano, divino, occulto o primevo).</p>"
+        },
+        "Flexible Ritualist": {
+            "name": "Ritualista Flessibile",
+            "featPrerequisites": {
+                "0": "Dedizione del Ritualista"
+            },
+            "description": "<p>Puoi eseguire tu stesso due aspetti di un rituale.</p>\n<p>Quando lanci un rituale, puoi ridurre il numero di lanciatori secondari di 1.</p>\n<p>In questo caso, devi soddisfare i requisiti del lanciatore secondario e tentare la prova secondaria normalmente eseguita da quel lanciatore secondario. Non puoi sostituire un incantatore secondario che è il bersaglio dell'incantesimo (come nel rituale <em>@UUID[Compendium.pf2e.spells-srd.7Fd4lxozd11MQ55N]{espiare}</em>).</p>"
+        },
+        "Efficient Rituals": {
+            "description": "<p>Puoi eseguire alcuni rituali in meno tempo. Se il rituale richiede normalmente 1 giorno per essere lanciato, puoi lanciarlo in 4 ore. Se richiede più di 1 giorno, lo lanci in metà del numero di giorni, arrotondata per eccesso.</p>",
+            "name": "Rituali Efficienti",
+            "featPrerequisites": {
+                "0": "Dedizione del Ritualista"
+            }
+        },
+        "Anoint Ally": {
+            "name": "Marchiare Alleato",
+            "description": "<p>Forgi una connessione mistica con un alleato usando il tuo corpo come fulcro e permettendogli di beneficiare della tua magia.</p>\n<p>Poni su un alleato adiacente una runa di sangue che dura per 1 minuto. Quando otterresti un effetto di magia del sangue puoi rinunciarvi, concedendolo invece al tuo alleato.</p>\n<p>Puoi marchiare un solo alleato alla volta; se poni un'altra runa, la designazione precedente termina.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.nnF7RSVlC6swbSw8]{Effetto: Marchiare Alleato}</p>"
+        },
+        "Rat Form": {
+            "description": "<p>Puoi trasformarti in un ratto dall'aspetto innocuo per esplorare un'area o scivolare in spazi ristretti. Ottieni gli effetti di un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.gfPjmG6Fe6D3MFjl]{forma minuscola}</em> di 1° livello, tranne per il fatto che devi assumere la forma da battaglia di un ratto Minuscolo.</p>",
+            "name": "Forma di Ratto"
+        },
+        "Far Throw": {
+            "description": "<p>Quando Colpisci con un'arma da lancio, subisci solo una penalità -1 per ogni Incremento di gittata aggiuntivo tra te e il bersaglio, anziché una penalità -2. </p>",
+            "name": "Lancio Lontano"
+        },
+        "Athletic Might": {
+            "name": "Possanza Atletica",
+            "description": "<p>Sopravvivere in un terreno ostile ti ha dato grandi doti di mobilità. Ogni volta che ottieni un successo in una prova di Atletica per @UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{Scalare} o @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Nuotare}, lo consideri un successo critico.</p>"
+        },
+        "Life Leap": {
+            "name": "Salto Vitale",
+            "description": "<p><strong>Requisiti</strong> Devi essere adiacente a una creatura vivente.</p>\n<hr />\n<p>In un lampo attraversi uno spazio occupato da una creatura vivente, apparendo spontaneamente sul suo lato opposto con uno sfoggio vibrante di luce colorata.</p>\n<p>Ti muovi dalla tua posizione attuale a un'altra posizione pur sempre adiacente alla stessa creatura vivente, ma sul lato o sull'angolo opposto dello spazio della creatura.</p>\n<p>Per determinare se una posizione è valida, utilizza le stesse regole di attaccare ai fianchi: una linea tra il centro dei due spazi deve passare attraverso i lati o gli angoli opposti dello spazio della creatura.</p>\n<p>Passi attraverso la forza vitale della creatura, apparendo nella posizione selezionata; questo non innesca reazioni basate sul movimento. Devi essere in grado di vedere la tua destinazione e non puoi muoverti più lontano di quanto consentirebbe la tua Velocità.</p>"
+        },
+        "Sacrifice Armor": {
+            "name": "Sacrificare Armatura",
+            "description": "<p><strong>Innesco</strong> Subisci un Colpo che infligge danni fisici.</p>\n<hr />\n<p>Grazie a una consapevolezza divina, pieghi il tuo corpo per attenuare l'impatto di un attacco. Riduci il danno che subisci di una quantità pari al doppio del livello della tua armatura, che diventa @UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3]{rotta} e riduce i suoi Punti Ferita fino alla sua Soglia di Rottura. Se invece la tua armatura era già danneggiata, viene distrutta.</p>"
+        },
+        "Prescient Planner": {
+            "name": "Pianificatore Preveggente",
+            "description": "<p><strong>Costo</strong> il Prezzo dell'oggetto scelto</p>\n<p><strong>Requisiti</strong> Non hai usato questa capacità dall'ultima volta che hai potuto acquistare beni</p>\n<hr />\n<p>Crei regolarmente piani complessi e di emergenza, usando le tue risorse per metterli in atto. Impieghi 1 minuto per rimuovere il tuo zaino, poi rimuovi con cura un oggetto che non avevi dichiarato di aver acquistato in precedenza: hai intuito che ti sarebbe servito e lo hai acquistato all'ultima occasione. </p>\n<p>L'oggetto deve essere un equipaggiamento da avventura (dalla tabella del <em>Manuale di Gioco</em> o da altre fonti di equipaggiamento da avventura), e non può essere un'arma, un'armatura, un oggetto alchemico, un oggetto magico o un altro tesoro.</p>\n<p>Deve essere comune e di un livello non superiore alla metà del tuo livello, e il suo Volume deve essere abbastanza leggero da averlo potuto portare senza appesantirti.</p>"
+        },
+        "Ricochet Feint": {
+            "description": "<p>Mentre sei in @UUID[Compendium.pf2e.feats-srd.RsNvCSrCN7czHC0G]{Posizione da Rimbalzo}, puoi far rimbalzare un'arma da lancio su un nemico per distrarlo. Puoi tentare una @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Finta} contro una creatura entro il primo Incremento di Gittata di un'arma da lancio che impugni, piuttosto che solo contro una creatura entro la tua portata in mischia.</p>",
+            "name": "Finta Rimbalzante",
+            "featPrerequisites": {
+                "0": "Posizione da Rimbalzo"
+            }
+        },
+        "Ancestral Mage": {
+            "name": "Incantatore Ancestrale",
+            "featPrerequisites": {
+                "0": "Magia del Sangue Ancestrale"
+            },
+            "description": "<p>La magia della tua stirpe e la tua linea di sangue sono la stessa cosa. Aggiungi al tuo repertorio degli incantesimi gli incantesimi innati che ottieni da un lignaggio o da un talento di stirpe, il che significa che puoi lanciarli usando i tuoi slot incantesimo.</p>"
+        },
+        "Silencing Strike": {
+            "description": "<p>Un rapido colpo al viso o alla bocca mette a tacere il tuo avversario. Effettua un Colpo in mischia contro un nemico. Il nemico deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)] contro la tua CD di classe.</p>\n<hr />\n<p><strong>Successo</strong> Il bersaglio non viene influenzato</p>\n<p><strong>Fallimento</strong> Il bersaglio è frastornato e a stento riesce a parlare. È @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordito 1} e parla con voce roca e difficile da capire. Deve superare una @Check[type:flat|dc:11] per usare azioni linguistiche o fornire componenti verbali per gli incantesimi fino alla fine del suo turno successivo.</p>\n<p><strong>Fallimento Critico</strong> Come fallimento, ma la creatura è @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{stordita 3} anziché stordita 1.</p>",
+            "name": "Colpo Silenziante"
+        },
+        "Current Spell": {
+            "name": "Incantesimi Fluenti",
+            "description": "<p>Quando usi la magia per manipolare l'aria o l'acqua, devii alcune delle sue correnti per formare una barriera tutto intorno a te.</p>\n<p>Se la tua azione successiva è @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} con i tratti acqua o aria, fino all'inizio del tuo turno successivo ottieni bonus di circostanza +1 alla CA, o bonus di circostanza +2 contro gli attacchi a distanza. Questo effetto ha il tratto acqua o aria o entrambi, a seconda dei tratti dell'incantesimo che lanci.</p>\n<p>Ottieni inoltre bonus di circostanza +1 a tutti i tiri salvezza contro gli effetti con i tratti acqua, aria o entrambi fino all'inizio del tuo turno successivo, a seconda dei tratti dell'incantesimo.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.DhvSMIFs6xifgQHX]{Effetto: Incantesimo Fluente (Acqua)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.T5rsLTqS274B9Mly]{Effetto: Incantesimo Fluente (Aria)}</p>"
+        },
+        "Friendly Toss": {
+            "name": "Lancio Amichevole",
+            "description": "<p><strong>Requisiti</strong> Sei adiacente a un alleato e hai una o più mani libere.</p>\n<hr />\n<p>Lanci i tuoi amici in giro per il campo di battaglia. Prendi un alleato adiacente della tua taglia o più piccolo e lo lanci in uno spazio non occupato che puoi vedere entro 9 metri. Il suo movimento non innesca reazioni.</p>\n<p>Il tuo alleato termina questo movimento in piedi e non subisce danni dalla caduta. Se il tuo alleato termina questo movimento entro la portata di almeno un nemico, può effettuare un Colpo in mischia contro un nemico entro la sua portata come reazione.</p>"
+        },
+        "Razzle-Dazzle": {
+            "description": "<p><strong>Frequenza</strong> Una volta all'ora</p>\n<p><strong>Innesco</strong> @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{accechi} o {@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{abbagli} una creatura.</p>\n<hr />\n<p>Hai passato molto tempo a praticare la manipolazione della luce, usando il riflesso della tua lama come un'arma o rendendo ancor più luminosamente abbaglianti le tue magie.</p>\n<p>Estendi la durata della condizione accecato o abbagliato che infliggi al bersaglio di 1 round.</p>",
+            "name": "Distrazione Accecante"
+        },
+        "Hag's Sight": {
+            "name": "Vista della Megera",
+            "description": "<p>Hai coltivato le capacità soprannaturali dono di tua madre, in particolare la vista. Ottieni @UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{scurovisione}.</p>"
+        },
+        "Hold Mark": {
+            "name": "Marchio del Possedimento",
+            "description": "<p>Rechi cicatrici o tatuaggi potenziati dal marchio del valore della tua comunità. Quando selezioni questo talento, scegli una delle seguenti opzioni. Quando colpisci in modo critico usando un'arma del gruppo elencato, applichi l'effetto di specializzazione del critico dell'arma.</p>\n<p>Ottieni un grosso marchio o un tatuaggio con la forma dell'emblema scelto o un'immagine simile (per esempio, l'ascia potrebbe essere un orso o un altro simbolo di forza feroce, mentre lo scudo potrebbe essere una tartaruga o un altro simbolo associato a una forte difesa) e ottieni i vantaggi elencati.</p>\n<ul>\n<li><strong>Ascia</strong> ascia o piccone</li>\n<li><strong>Scudo</strong> martello o scudo</li>\n<li><strong>Torcia</strong> bomba o coltello</li>\n</ul>"
         }
     }
 }
