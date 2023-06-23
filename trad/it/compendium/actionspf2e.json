@@ -461,7 +461,8 @@
             "description": "<p><strong>Innesco</strong> Un nemico danneggia un tuo alleato ed entrambi si trovano entro 4,5 metri da te.</p>\n<hr />\n<p>Il tuo nemico esita, schiacciato dal peso del rimorso, mentre con gli occhi della mente contempla visioni di redenzione. Il bersaglio deve scegliere una delle seguenti opzioni:</p>\n<ul>\n<li>L'alleato resta indenne dal danno che ha provocato l'innesco.</li>\n<li>L'alleato acquisisce resistenza a tutti i danni pari a 2 + il tuo livello contro il danno che ha provocato l'innesco.Una volta applicato l'effetto che infligge danno, il nemico diventa @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{indebolito 2} fino alla fine del suo turno successivo.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.DawVHfoPKbPJsz4k]{Effetto: Resistenza del Campione}</p>"
         },
         "Draconic Frenzy": {
-            "name": "Frenesia Draconica"
+            "name": "Frenesia Draconica",
+            "description": "<p>L'eidolon sferra un Colpo con il suo attacco senz'armi primario e due Colpi con il suo attacco senz'armi secondario (in qualsiasi ordine). Se qualunque di questi attacchi ottiene un colpo critico su un nemico, l'eidolon recupera all'istante l'uso del Soffio.</p>"
         },
         "Drive": {
             "name": "Guidare",
@@ -720,10 +721,132 @@
             "name": "Cortina Fumogena"
         },
         "Arcane Cascade": {
-            "name": "Cascata Arcana"
+            "name": "Cascata Arcana",
+            "description": "<p><strong>Requisiti</strong> Hai usato la tua azione più recente per Lanciare un Incantesimo o per un Colpo Incantato.</p>\n<p><strong>Concede</strong> @UUID[Compendium.pf2e.feat-effects.fsjO5oTKttsbpaKl]{Posizione: Cascata Arcana}</p>\n<hr />\n<p>Dirotti una porzione dell'energia dell'incantesimo e la mantieni in circolo nel tuo corpo e arma adottando posture, respiro e giochi di gambe specifici. Fintanto che mantieni la posizione, i tuoi Colpi in mischia infliggono [[/r {1}]]{1 danno addizionale}, che aumenta a 2 se hai specializzazione con le armi e a 3 se hai specializzazione con le armi superiore. Qualsiasi Colpo che benefici di questi danni ottiene il tratto arcano, che lo rende magico.</p>\n<p>Se il tuo incantesimo più recente prima di assumere la posizione poteva infliggere danni, i danni della posizione sono dello stesso tipo di quelli che infligge l'incantesimo (o un singolo tipo a tua scelta se poteva infliggerne di più tipi). Se l'incantesimo non poteva infliggere danni, il danno bonus della posizione dipende dalla scuola.</p>\n<ul>\n<li><strong>Abiurazione</strong> o <strong>Invocazione</strong> forza</li>\n<li><strong>Evocazione</strong> o <strong>Trasmutazione</strong> stesso tipo dell'arma o dell'attacco senz'armi</li>\n<li><strong>Ammaliamento</strong>, <strong>Divinazione</strong> o <strong>Illusione</strong> mentale</li>\n<li><strong>Necromanzia</strong> negativo</li>\n</ul>"
         },
         "Spellstrike": {
-            "name": "Colpo Incantato"
+            "name": "Colpo Incantato",
+            "description": "<p><strong>Frequenza</strong> fino alla ricarica (vedi sotto)</p>\n<hr />\n<p>Incanali un incantesimo in un pugno o in punta di spada per sferrare un attacco combinato. Lanci un incantesimo il cui lancio richiede 1 o 2 azioni e che richiede un tiro per colpire con incantesimo. Gli effetti dell'incantesimo non si verificano subito, ma vengono infusi nell'attacco. Effettua un Colpo in mischia con un'arma o attacco senz'armi. L'incantesimo è accoppiato all'attacco, dunque usi il tuo tiro per colpire sia per gli effetti di questo sia per quelli del Colpo. Ciò conta come due attacchi ai fini della penalità da attacchi multipli, ma non applichi la penalità finché non hai completato il Colpo Incantato. L'energia dell'incantesimo concede al Colpo il tratto arcano, rendendolo magico.</p>\n<p>Una volta usato Colpo Incantato, non puoi più usarlo finché non lo ricarichi come azione singola con il tratto concentrazione. Ricarichi il Colpo Incantato anche quando lanci un incantesimo a conflusso il cui lancio richiede almeno 1 azione; lanciare un incantesimo focalizzato di altro tipo non ricarica il Colpo Incantato.</p>"
+        },
+        "Breath Weapon (Negative) (Cone)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[negative]]]{1d6 danni negativi} a tutte le creature in un @Template[type:cone|distance:30]{cono di 9 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[negative]]]{danno livellato</p>",
+            "name": "Soffio (Negativi) (Cono)"
+        },
+        "Breath Weapon (Piercing) (Cone)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[piercing]]]{1d6 danni perforanti} a tutte le creature in un @Template[type:cone|distance:30]{cono di 9 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[piercing]]]{danno livellato</p>",
+            "name": "Soffio (Perforanti) (Cono)"
+        },
+        "Breath Weapon (Fire) (Line)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[fire]]]{1d6 danni da fuoco} a tutte le creature in un @Template[type:line|distance:60]{linea di 18 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[fire]]]{danno livellato</p>",
+            "name": "Soffio (Fuoco) (Linea)"
+        },
+        "Breath Weapon (Fire) (Cone)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[fire]]]{1d6 danni da fuoco} a tutte le creature in un @Template[type:cone|distance:30]{cono di 9 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[fire]]]{danno livellato</p>",
+            "name": "Soffio (Fuoco) (Cono)"
+        },
+        "Breath Weapon (Electricity) (Cone)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[electricity]]]{1d6 danni da elettricità} a tutte le creature in un @Template[type:cone|distance:30]{cono di 9 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[electricity]]]{danno livellato</p>",
+            "name": "Soffio (Elettricità) (Cono)"
+        },
+        "Breath Weapon (Poison) (Cone)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[poison]]]{1d6 danni da veleno} a tutte le creature in un @Template[type:cone|distance:30]{cono di 9 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[poison]]]{danno livellato</p>",
+            "name": "Soffio (Veleno) (Cono)"
+        },
+        "Overload Vision": {
+            "description": "<p><strong>Innesco</strong> Una creatura entro 18 metri sta per effettuare un tiro per colpire contro di te;</p>\n<hr />\n<p><strong>Effetto</strong> La creatura innescante deve effettuare un tiro salvezza su Tempra.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p>\n<p><strong>Successo</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{abbagliato} fino alla fine del turno in corso.</p>\n<p><strong>Fallimento</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{accecato} fino alla fine del turno in corso.</p>\n<p><strong>Fallimento Critico</strong> Il bersaglio è accecato fino alla fine del turno in corso e abbagliato per 1 minuto.</p>",
+            "name": "Sovraccaricare Vista"
+        },
+        "Breath Weapon (Cold) (Cone)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[cold]]]{1d6 danni da freddo} a tutte le creature in un @Template[type:cone|distance:30]{cono di 9 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[cold]]]{danno livellato</p>",
+            "name": "Soffio (Freddo) (Cono)"
+        },
+        "Field of Roots": {
+            "description": "<p>L'eidolon estende le radici sottoterra per ostacolare e magari danneggiare tutti i nemici vicini. Tutti i nemici entro la portata dell'eidolon subiscono danni dello stesso tipo e ammontare del Colpo più potente del tuo eidolon, a seconda dei loro tiri salvezza su Riflessi. Qualsiasi effetto in corso del tiro salvezza dura finché il nemico Sfugge o esce dalla portata dell'eidolon.</p>\n<p>Dopo aver usato Campo di Radici, l'eidolon è @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{immobilizzato} finché non effettua un'azione singola con il tratto maneggiare per staccarsi dal suolo; ciò termina anche qualsiasi effetto rimanente sui nemici da Campo di Radici.</p>\n<hr />\n<p><strong>Successo Critico</strong>Il nemico non è influenzato.</p>\n<p><strong>Successo</strong> Il nemico non subisce danni, ma subisce penalità di circostanza -3 metri alle sue Velocità.</p>\n<p><strong>Fallimento</strong> Il nemico subisce metà dei danni, subisce penalità di circostanza -3 metri alle sue Velocità e, alla fine di ciascun suo turno, subisce di nuovo metà dei danni.</p>\n<p><strong>Fallimento Critico</strong> Il nemico è immobilizzato, subisce i danni pieni e, alla fine di ciascun suo turno, subisce di nuovo metà dei danni.</p>",
+            "name": "Campo di Radici"
+        },
+        "Wyrm's Breath": {
+            "name": "Soffio del Dragone",
+            "description": "<p><strong>Frequenza</strong> una volta al minuto</p>\n<hr />\n<p>L'eidolon raccoglie a sé il potere dei più potenti dragoni, rendendo il suo soffio magico ancora più spettacolare. Se la prossima azione del tuo eidolon è usare il Soffio, il numero di dadi di danni e l'area del Soffio raddoppiano.</p>"
+        },
+        "Sever Conduit": {
+            "description": "<p><strong>Innesco</strong> Il tuo eidolon subisce danni che ti porterebbero a 0 Punti Ferita con un effetto che non sia un effetto di morte;</p>\n<hr />\n<p><strong>Effetto</strong> Chiudi rapidamente il giunto nel tuo legame con l'eidolon, facendo svanire dall'esistenza il tuo alleato vincolato prima di venire abbattuto. Il tuo eidolon si demanifesta, e non puoi Manifestare il tuo Eidolon per 1 minuto. In cambio, non subisci i danni innescanti, anche se il tuo eidolon subisce comunque eventuali effetti avversi che accompagnavano il danno.</p>",
+            "name": "Recidere Condotto"
+        },
+        "Tendril Strike": {
+            "description": "<p>Estendendo il corpo oltre i suoi limiti, l'eidolon attacca un nemico fuori dalla propria portata. L'eidolon effettua un Colpo da mischia senz'armi, aumentando per esso la sua portata di 1,5 metri.</p>\n<p>Se l'attacco senz'armi ha il tratto Disarmare, Spingere o Sbilanciare, l'eidolon può usare l'azione corrispondente anziché un Colpo.</p>",
+            "name": "Colpo di Viticcio"
+        },
+        "Visions of Sin": {
+            "description": "<p><strong>Frequenza</strong> una volta ogni 10 minuti</p>\n<p>Il tuo eidolon evoca immagini del suo peccato nella mente di una creatura bersaglio entro 9 metri, tormentandola e confondendola. Il bersaglio deve effettuare un tiro salvezza su Volontà contro la tua CD di incantesimo con i seguenti effetti. Gli effetti durano fino alla fine del tuo prossimo turno, ma l'eidolon può usare un'azione singola con il tratto concentrazione per estenderne gli effetti fino alla fine del tuo prossimo turno (come Mantenere un Incantesimo), per una durata massima di 1 minuto.</p>\n<p>Se il bersaglio è malvagio, subisce penalità di circostanza -2 al Tiro Salvezza. A prescindere dal successo, il bersaglio diventa temporaneamente immune per 1 giorno.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non è influenzato.</p>\n<p><strong>Successo</strong> Il bersaglio non può usare reazioni.</p>\n<p><strong>Fallimento</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{rallentato 1} e non può usare reazioni.</p>\n<p><strong>Fallimento Critico</strong> Come per il fallimento, e il bersaglio è anche @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{confuso} per 1 round. La confusione non può essere prolungata, gli altri effetti sì.</p>",
+            "name": "Visioni del Peccato"
+        },
+        "Breath Weapon (Poison) (Line)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[poison]]]{1d6 danni da veleno} a tutte le creature in un @Template[type:line|distance:60]{linea di 18 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[poison]]]{danno livellato</p>",
+            "name": "Soffio (Veleno) (Linea)"
+        },
+        "Breath Weapon (Acid) (Cone)": {
+            "name": "Soffio (Acido) (Cono)",
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[acid]]]{1d6 danni da acido} a tutte le creature in un @Template[type:cone|distance:30]{cono di 9 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[acid]]]{danno livellato</p>"
+        },
+        "Breath Weapon (Piercing) (Line)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[piercing]]]{1d6 danni perforanti} a tutte le creature in un @Template[type:line|distance:60]{linea di 18 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[piercing]]]{danno livellato</p>",
+            "name": "Soffio (Perforanti) (Linea)"
+        },
+        "Breath Weapon (Cold) (Line)": {
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[cold]]]{1d6 danni da freddo} a tutte le creature in un @Template[type:line|distance:60]{linea di 18 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[cold]]]{danno livellato</p>",
+            "name": "Soffio (Freddo) (Linea)"
+        },
+        "Breath Weapon (Acid) (Line)": {
+            "name": "Soffio (Acido) (Linea)",
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[acid]]]{1d6 danni da acido} a tutte le creature in un @Template[type:line|distance:60]{linea di 18 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[acid]]]{danno livellato</p>"
+        },
+        "Whirlwind Maul": {
+            "description": "<p>L'eidolon sferra colpi in ogni direzione. L'eidolon effettua un Colpo in mischia senz'armi contro un massimo di quattro nemici entro portata. Può scegliere differenti attacchi senz'armi per ciascun nemico. Ogni attacco conta ai fini della penalità da attacchi multipli, che però non aumenta finché l'eidolon non ha sferrato tutti i suoi attacchi.</p>",
+            "name": "Turbine di Colpi"
+        },
+        "Breath Weapon (Negative) (Line)": {
+            "name": "Soffio (Negativi) (Linea)",
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[negative]]]{1d6 danni negativi} a tutte le creature in un @Template[type:line|distance:60]{linea di 18 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[negative]]]{danno livellato</p>"
+        },
+        "That's My Number": {
+            "name": "È il Mio Numero!",
+            "description": "<p><strong>Innesco</strong> Ottieni il tuo numero fortunato sul d20 su un tiro per colpire, tiro salvezza o prova di abilità non segreti;</p>\n<hr />\n<p><strong>Effetto</strong> Richiami la fortuna conservata nel tuo numero fortunato e ripeti la prova innescante. Tuttavia, sfidare la fortuna ha un prezzo: se il tuo risultato sulla ripetizione è ancora lo stesso numero, ottieni un fallimento critico, a prescindere dal grado di successo che avresti ottenuto.</p>"
+        },
+        "Primal Roar": {
+            "name": "Ruggito Primevo",
+            "description": "<p>L'eidolon scatena un ruggito primevo o un altro verso terrificante adatto alla sua forma. L'eidolon effettua prove di Intimidazione per @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralizzare} ogni nemico in grado di udirlo; questi tentativi di Demoralizzare non subiscono penalità in caso non si condividano linguaggi.</p>"
+        },
+        "Share Senses": {
+            "name": "Condividere Sensi",
+            "description": "<p><strong>Requisiti</strong> Il tuo eidolon è manifestato.</p>\n<p>Proietti i tuoi sensi nell'eidolon, percependo ciò che esso percepisce. Quando lo fai perdi ogni informazione sensoriale del tuo corpo, ma puoi percepire attraverso il corpo dell'eidolon per un massimo di 1 minuto. Puoi @UUID[Compendium.pf2e.actionspf2e.AjLSHZSWQ90exdLo]{Interrompere} questo effetto.</p>\n<hr />\n<p><strong>Speciale</strong> Questa azione ha il tratto corrispondente alla tradizione dell'eidolon (Arcano, Divina, Occulto o Primevo). Anche l'eidolon può usare questa capacità; quando lo fa, proietta i suoi sensi nel tuo corpo.</p>"
+        },
+        "Breath Weapon (Electricity) (Line)": {
+            "name": "Soffio (Elettricità) (Linea)",
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo [[/r 1d6[electricity]]]{1d6 danni da elettricità} a tutte le creature in un @Template[type:line|distance:60]{linea di 18 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[electricity]]]{danno livellato</p>"
+        },
+        "Defend Life": {
+            "name": "Difendere la Vita",
+            "description": "<p><strong>Innesco</strong> Il bersaglio subisce danni</p>\n<p><strong>Requisiti</strong> Ti trovi entro 1,8 chilometri dal bersaglio</p>\n<hr />\n<p><strong>Effetto</strong> Dopo aver calcolato l'ammontare di danni che il bersaglio subisce (applicando debolezze, resistenze e simili), tu perdi un egual numero di Punti Ferita e il bersaglio non subisce nessun danno. Non puoi ridurre l'ammontare di Punti Ferita che perdi in tal modo. Il bersaglio subisce comunque gli effetti correlati ai danni, come il veleno per il colpo di zanne di una vipera.</p>"
+        },
+        "Dutiful Retaliation": {
+            "description": "<p><strong>Innesco</strong> Un nemico entro 4,5 metri da te ti Colpisce e ti infligge danni.</p>\n<p><strong>Requisiti</strong> Il tuo eidolon è entro 4,5 metri da te.</p>\n<hr />\n<p>Il tuo eidolon si illumina all'improvviso di energia ectoplasmica, scattando per colpire un nemico che ha osato farti del male. L'eidolon effettua un Colpo in mischia senz'armi contro il nemico innescante, anche se questo non si trova nella sua portata.</p>",
+            "name": "Giusta Rappresaglia"
+        },
+        "Act Together": {
+            "name": "Agire Insieme",
+            "description": "<p><strong>Frequenza</strong> una volta per round</p>\n<p>Tu e il tuo eidolon agite come una cosa sola. O tu o il tuo eidolon svolgete un'azione o attività usando lo stesso numero di azioni di Agire Assieme, e l'altro effettua un'azione singola.</p>\n<p>Ad esempio, se hai usato 2 azioni per Agire Assieme, puoi lanciare <em>@UUID[Compendium.pf2e.spells-srd.y6rAdMK6EFlV6U0t]{Mani brucianti}</em> (2 azioni) e il tuo eidolon può Colpire (1 azione), o l'eidolon può usare il suo Soffio (2 azioni) e tu puoi Colpire (1 azione).</p>\n<p>Ciò concede a ciascuno di usare attività per l'esplorazione separate come @UUID[Compendium.pf2e.actionspf2e.IE2nThCmoyhQA0Jn]{Evitare l'Individuazione} durante i viaggi.</p>"
+        },
+        "Seething Frenzy": {
+            "description": "<p>La furia del tuo eidolon ribolle fino a raggiungere una frenesia senza controllo. Fintanto che è in frenesia, il tuo eidolon è influenzato da <em>potenziare eidolon</em> e ottiene Punti Ferita temporanei pari al tuo livello, ma subisce penalità -2 alla CA. L'eidolon non può volontariamente terminare la frenesia o iniziarne un'altra mentre è in frenesia.</p>\n<p>La frenesia dura 1 minuto, dopodiché è @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{affaticato} per 1 minuto e non può iniziare un'altra frenesia per 1 minuto.</p>",
+            "name": "Frenesia Ribollente"
+        },
+        "Beast's Charge": {
+            "name": "Carica della Bestia",
+            "description": "<p>L'eidolon scatta, usando l'impeto per aumentare la potenza del suo attacco. L'eidolon Avanza due volte e poi Colpisce. Se si è mosso di almeno 6 metri di distanza dalla posizione iniziale e interamente in linea retta, ottiene bonus di circostanza +1 a questo tiro per colpire.</p>"
+        },
+        "Manifest Eidolon": {
+            "name": "Manifestare Eidolon",
+            "description": "<p>Il tuo eidolon compare in uno spazio aperto adiacente a te e può poi svolgere una singola azione. Se il tuo eidolon era già manifestato, invece si demanifesta.</p>\n<p>Il condotto che consente al tuo eidolon di manifestarsi è anche un filo che vi lega. L'eidolon deve sempre rimanere entro 30 metri da te e non può superare volontariamente tale limite. Se vi viene costretto o se sei ridotto a 0 Punti Ferita, la sua forma fisica si dissolve: l'eidolon si demanifesta, e devi usare Manifestare Eidolon per manifestarlo di nuovo.</p>\n<hr />\n<p><strong>Speciale</strong> Questa attività ha il tratto corrispondente alla tradizione del tuo eidolon (Arcano, Divino, Occulto o Primevo).</p>"
         }
     }
 }
