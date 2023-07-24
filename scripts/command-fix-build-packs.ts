@@ -19,7 +19,7 @@ const newSaveFunc = `save(): number {
         }
 
         fs.writeFileSync(
-            path.resolve(CompendiumPack.outDir, this.packDir + ".db"),
+            path.resolve(CompendiumPack.outDir, this.packDir),
             this.data
                 .map((datum) => this.#finalize(datum))
                 .join("\\n")
