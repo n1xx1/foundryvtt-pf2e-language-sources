@@ -3,13 +3,14 @@ import "dotenv/config";
 import { resolve } from "path";
 import { hideBin } from "yargs/helpers";
 import yargs from "yargs/yargs";
+import { commandFixBuildPacks } from "./command-fix-build-packs";
 import { commandFindMostCommon } from "./command-find-most-common";
 import { commandFixItemIds } from "./command-fix-item-ids";
+import { commandRemoveSameTranslation } from "./command-fix-same-translation";
+import { commandFixTemplate } from "./command-fix-template";
 import { commandUpdate } from "./command-update";
 import { commandUpdateSource } from "./command-update-source";
 import { commandWeblateQuery } from "./command-weblate-query";
-import { commandFixTemplate } from "./command-fix-template";
-import { commandRemoveSameTranslation } from "./command-fix-same-translation";
 
 yargs(hideBin(process.argv))
   .option("directory", {
@@ -26,6 +27,16 @@ yargs(hideBin(process.argv))
       const dir = resolve(argv.directory);
       console.log(`updating sources using system at ${dir}`);
       await commandUpdate(dir);
+    }
+  )
+  .command(
+    "fix-build-packs",
+    "fix build packs",
+    (yargs) => yargs,
+    async (argv) => {
+      const dir = resolve(argv.directory);
+      console.log(`fixing build:packs for system at ${dir}`);
+      await commandFixBuildPacks(dir);
     }
   )
   .command(

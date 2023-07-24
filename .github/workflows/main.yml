@@ -17,43 +17,6 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
 
-      - name: FVTTPF2E - Checkout
-        uses: actions/checkout@v3
-        with:
-          repository: foundryvtt/pf2e
-          ref: "4.12.7"
-          path: system
-
-      - name: FVTTPF2E - Cache NPM Deps
-        id: cache-npm
-        uses: actions/cache@v3
-        with:
-          path: system/node_modules/
-          key: npm-${{ hashFiles('system/package-lock.json') }}
-
-      - name: FVTTPF2E - Install NPM Deps
-        if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
-        working-directory: ./system
-        run: npm ci
-
-      - name: FVTTPF2E - Cache Packs
-        id: cache-packs
-        uses: actions/cache@v3
-        with:
-          path: system/static/packs/
-          key: pf-packs-${{ hashFiles('system/packs/**/*') }}
-
-      - name: FVTTPF2E - Build Packs
-        if: ${{ steps.cache-packs.outputs.cache-hit != 'true' }}
-        working-directory: ./system
-        run: npm run build:packs
-
-      - name: FVTTPF2E - Get System Version
-        working-directory: ./system
-        run: |
-          SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' static/system.json | tr -d '\n')
-          echo "systemVersion=$SYSTEM_VERSION" >> $GITHUB_ENV
-
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -75,6 +38,48 @@ jobs:
       - name: Install pnpm Deps
         working-directory: ./main
         run: pnpm install
+
+      - name: FVTTPF2E - Checkout
+        uses: actions/checkout@v3
+        with:
+          repository: foundryvtt/pf2e
+          ref: "4.12.8"
+          path: system
+
+      - name: FVTTPF2E - Cache NPM Deps
+        id: cache-npm
+        uses: actions/cache@v3
+        with:
+          path: system/node_modules/
+          key: npm-${{ hashFiles('system/package-lock.json') }}
+
+      - name: FVTTPF2E - Install NPM Deps
+        if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        working-directory: ./system
+        run: npm ci
+
+      - name: FVTTPF2E - Cache Packs
+        id: cache-packs
+        uses: actions/cache@v3
+        with:
+          path: system/static/packs/
+          key: pf-packs-${{ hashFiles('system/packs/**/*') }}
+
+      - name: Patch Build Packs
+        if: ${{ steps.cache-packs.outputs.cache-hit != 'true' }}
+        working-directory: ./main
+        run: pnpm run exec fix-build-packs
+
+      - name: FVTTPF2E - Build Packs
+        if: ${{ steps.cache-packs.outputs.cache-hit != 'true' }}
+        working-directory: ./system
+        run: npm run build:packs
+
+      - name: FVTTPF2E - Get System Version
+        working-directory: ./system
+        run: |
+          SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' static/system.json | tr -d '\n')
+          echo "systemVersion=$SYSTEM_VERSION" >> $GITHUB_ENV
 
       - name: Build
         working-directory: ./main

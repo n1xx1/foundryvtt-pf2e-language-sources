@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild --bundle --platform=node --sourcemap --outdir=tmp --log-level=error scripts/main.ts",
-    "exec": "npm run build && node --enable-source-maps tmp/main"
+    "exec": "esno scripts/main.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +16,7 @@
     "deepdash": "^5.3.9",
     "dotenv": "^16.0.3",
     "esbuild": "^0.17.4",
+    "esno": "^0.17.0",
     "lodash": "^4.17.21",
     "node-fetch": "^3.3.0",
     "yargs": "^17.6.2"
