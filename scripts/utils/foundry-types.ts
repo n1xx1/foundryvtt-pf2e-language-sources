@@ -179,3 +179,7 @@ export interface EntryRollTable extends BaseEntry {
 export interface EntryRollTableResult extends BaseEntry {
   text: string;
 }
+
+export interface EntryMacro extends BaseEntry {
+  command: string;
+}

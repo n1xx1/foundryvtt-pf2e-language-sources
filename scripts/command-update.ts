@@ -8,6 +8,7 @@ import {
   EntryItem,
   EntryItemSpell,
   EntryJournalEntry,
+  EntryMacro,
   EntryRollTable,
 } from "./utils/foundry-types";
 
@@ -156,6 +157,27 @@ async function handleRollTable(
     if (description) {
       el.description = resolveDescription(description, allPacksMap);
     }
+  }
+
+  const outData = JSON.stringify(out, null, 2);
+  await writeFile(join("lang/compendium", id + ".json"), outData);
+}
+
+async function handleMacro(
+  id: string,
+  name: string,
+  entries: EntryMacro[],
+  allPacksMap: Map<string, PackData>
+) {
+  const out: Compendium = {
+    label: name,
+    entries: {},
+  };
+
+  for (const { name } of entries) {
+    const el: any = (out.entries[name] = {
+      name: name,
+    });
   }
 
   const outData = JSON.stringify(out, null, 2);
@@ -568,6 +590,13 @@ export async function commandUpdate(systemDir = "../system") {
           pack.name,
           pack.label,
           pack.entries as EntryRollTable[],
+          allPacksMap
+        );
+      } else if (pack.type === "Macro") {
+        await handleMacro(
+          pack.name,
+          pack.label,
+          pack.entries as EntryMacro[],
           allPacksMap
         );
       } else {
