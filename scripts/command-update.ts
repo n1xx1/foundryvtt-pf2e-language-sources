@@ -251,13 +251,22 @@ async function handleActor(
           );
         }
         if (entry.system.details.disable) {
-          el.hazardDisable = entry.system.details.disable;
+          el.hazardDisable = resolveDescription(
+            entry.system.details.disable,
+            allPacksMap
+          );
         }
         if (entry.system.details.reset) {
-          el.hazardReset = entry.system.details.reset;
+          el.hazardReset = resolveDescription(
+            entry.system.details.reset,
+            allPacksMap
+          );
         }
         if (entry.system.details.routine) {
-          el.hazardRoutine = entry.system.details.routine;
+          el.hazardRoutine = resolveDescription(
+            entry.system.details.routine,
+            allPacksMap
+          );
         }
         continue;
       }
