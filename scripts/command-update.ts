@@ -290,7 +290,7 @@ async function handleActor(
     try {
       if (entry.type === "hazard") {
         const el: any = (out.entries[entry.name] = {
-          name: label,
+          name: entry.name,
         });
         if (entry.system.details.description) {
           el.description = resolveDescription(
