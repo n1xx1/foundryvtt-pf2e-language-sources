@@ -131,7 +131,7 @@ const enabledPacks = [
   "deities",
   // "iconics",
   // "paizo-pregens",
-  // "rollable-tables",
+  "rollable-tables",
   // "criticaldeck",
   // "hero-point-deck",
   "journals",

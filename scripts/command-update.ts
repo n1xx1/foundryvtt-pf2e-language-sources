@@ -8,6 +8,7 @@ import {
   EntryItem,
   EntryItemSpell,
   EntryJournalEntry,
+  EntryRollTable,
 } from "./utils/foundry-types";
 
 interface Compendium {
@@ -134,6 +135,31 @@ function mapSpellData(system: Partial<EntryItemSpell["system"]>) {
     (el ??= {}).spellArea = system.area.details;
   }
   return el;
+}
+
+async function handleRollTable(
+  id: string,
+  name: string,
+  entries: EntryRollTable[],
+  allPacksMap: Map<string, PackData>
+) {
+  const out: Compendium = {
+    label: name,
+    entries: {},
+  };
+
+  for (const { name, description } of entries) {
+    const el: any = (out.entries[name] = {
+      name: name,
+    });
+
+    if (description) {
+      el.description = resolveDescription(description, allPacksMap);
+    }
+  }
+
+  const outData = JSON.stringify(out, null, 2);
+  await writeFile(join("lang/compendium", id + ".json"), outData);
 }
 
 async function handleJournalEntry(
@@ -535,6 +561,13 @@ export async function commandUpdate(systemDir = "../system") {
           pack.name,
           pack.label,
           pack.entries as EntryJournalEntry[],
+          allPacksMap
+        );
+      } else if (pack.type === "RollTable") {
+        await handleRollTable(
+          pack.name,
+          pack.label,
+          pack.entries as EntryRollTable[],
           allPacksMap
         );
       } else {

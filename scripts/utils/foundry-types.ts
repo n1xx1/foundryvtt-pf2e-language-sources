@@ -34,7 +34,12 @@ export interface FoundrySystemManifest {
   download: string;
 }
 
-export type Entry = EntryHazard | EntryNPC | EntryItem | EntryJournalEntry;
+export type Entry =
+  | EntryHazard
+  | EntryNPC
+  | EntryItem
+  | EntryJournalEntry
+  | EntryRollTable;
 
 export type EntryActor = EntryHazard | EntryNPC;
 
@@ -164,4 +169,13 @@ export interface EntryJournalEntryPage extends BaseEntry {
   text: {
     content: string;
   };
+}
+
+export interface EntryRollTable extends BaseEntry {
+  description: string;
+  results: EntryRollTableResult;
+}
+
+export interface EntryRollTableResult extends BaseEntry {
+  text: string;
 }
