@@ -28,7 +28,7 @@ async function setupOut() {
 
 // @UUID[Compendium.pf2e.spells-srd.4GE2ZdODgIQtg51c]{Darkness}
 const uuidWithoutLabelRegex =
-  /@UUID\[Compendium\.pf2e\.([^\.]+?)\.([^\.]+?)\]([^{]|$)/g;
+  /@UUID\[Compendium\.pf2e\.([^\.\]]+?)\.([^\.\]]+?)\]([^{]|$)/g;
 
 function resolveDescription(
   description: string,
