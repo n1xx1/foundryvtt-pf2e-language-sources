@@ -30,7 +30,7 @@ async function setupOut() {
 
 // @UUID[Compendium.pf2e.spells-srd.4GE2ZdODgIQtg51c]{Darkness}
 const uuidWithoutLabelRegex =
-  /@UUID\[Compendium\.pf2e\.([^\.\]]+?)(?:\.(Item|JournalEntry|Actor))?\.([^\.\]]+?)\](\{.*?\})?/g;
+  /@UUID\[Compendium\.pf2e\.([^\.\]]+?)(?:\.(Item|JournalEntry|Actor|RollTable))?\.([^\.\]]+?)\](\{.*?\})?/g;
 
 const foundCompendiumAssociations = new Set<string>();
 
@@ -52,7 +52,7 @@ function resolveDescription(
 
       const entry = allPacksMap
         .get(compendium)
-        ?.entries.find((e) => e._id === id);
+        ?.entries.find((e) => e._id === id || e.name === id);
       if (entry) {
         display ??= "";
         kind = kind ? `${kind}.` : "";
