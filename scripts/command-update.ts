@@ -288,6 +288,12 @@ const skillNames = [
   "thievery",
 ];
 
+function compareStrings(s1: string, s2: string) {
+  s1 = s1.replace(/‑/g, "-").trim()
+  s2 = s2.replace(/‑/g, "-").trim()
+  return s1 === s2;
+}
+
 async function handleActor(
   id: string,
   label: string,
@@ -401,8 +407,7 @@ async function handleActor(
           const sameName = compendiumItem.name === item.name;
           const sameDesc =
             !item.system.description.value ||
-            compendiumItem.system.description.value ===
-              item.system.description.value ||
+            compareStrings(compendiumItem.system.description.value, item.system.description.value) ||
             ignoredDescriptionItemTypes.includes(item.type);
 
           if (sameName && sameDesc && origin !== "matching") {
