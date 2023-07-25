@@ -2329,10 +2329,8 @@
                 "ShowTokenIcon": "Mostra l'icona del token?",
                 "Unidentified": "Non Identificato?",
                 "BadgeType": {
-                    "value": "Valore Fisso",
                     "counter": "Contatore"
-                },
-                "AddLabel": "Aggiungi Etichetta"
+                }
             },
             "Feat": {
                 "OnlyLevel1": "Deve essere selezionato al 1° livello",
@@ -3546,9 +3544,6 @@
             "FailedToBuyItemWithSomeCharacters": "Acquisto non riuscito di {item} con alcuni dei personaggi selezionati.",
             "BestiaryBrowser": "Browser del Bestiario",
             "Hint": "Usa le schede sopra per selezionare un compendium",
-            "ProgressBar": {
-                "LoadingComplete": "Caricamento completato"
-            },
             "TabAction": "Azioni",
             "TabBestiary": "Bestiari",
             "TabEquipment": "Equipaggiamento",
@@ -3651,7 +3646,6 @@
         "Counteractable": "Contrastabile",
         "LanguageNecril": "Necril",
         "CounteractDescription": {
-            "CritSuccess": "Contrasta il bersaglio se il suo livello di contrasto non è maggiore di più di {level} livello rispetto al livello di contrasto del tuo effetto.",
             "Failure": "Contrasta il bersaglio se il suo livello di contrasto è minore {level}."
         },
         "CraftDCTitle": "CD",
@@ -3924,7 +3918,7 @@
         "FeatPrereqLabel": "Prerequisiti",
         "FeatSkillHeader": "Talenti di Abilità",
         "FeatTypeAncestry": "Talenti di Stirpe",
-        "FeatTypeAncestryfeature": "Caratteristiche di Stirpe",
+        "FeatTypeAncestryfeature": "Caratteristica di Stirpe",
         "FeatTypeBonus": "Talento Bonus",
         "FeatTypeClass": "Talento di Classe",
         "FeatTypeClassfeature": "Caratteristica di Classe",
@@ -4162,12 +4156,10 @@
             "reflex": "Riflessi Padrone",
             "will": "Volontà Padrone"
         },
-        "MaxHPTitleNPC": "Punti Ferita Massimi.",
         "MaxHitPointsBaseLabel": "Max PF di Base {base}",
         "MaxHitPointsShortLabel": "PF MAX",
         "MaxStaminaPointsShortLabel": "Max SP",
         "MaxStaminaTitle": "I tuoi Massimi Punti Tenacia",
-        "MetalStrikes": "Colpi di Metallo",
         "Migrations": {
             "Finished": "Migrazione del Sistema PF2E alla versione {version} completata!",
             "Starting": "Applicazione Migrazione del Sistema PF2E alla versione {version}. Per favore pazienta e non chiudere il gioco o spegnere il server.",
@@ -5881,7 +5873,8 @@
             "SplitCoinsPopupHeader": "Scegli i personaggi che ricevono una parte",
             "Stack": "Crea una nuova pila?",
             "PurchaseLoot": "Acquista Oggetti",
-            "PurchaseLootMessage": "Quanti oggetti vuoi acquistare?"
+            "PurchaseLootMessage": "Quanti oggetti vuoi acquistare?",
+            "PartyStash": "la riserva del gruppo"
         },
         "vehicle": {
             "VehicleString": "Veicolo",
@@ -6059,7 +6052,8 @@
             "TokenName": "Nome Token",
             "RollTwice": "Tira Due Volte",
             "MarkToken": "Contrassegna Token",
-            "EphemeralEffect": "Effetto Effimero"
+            "EphemeralEffect": "Effetto Effimero",
+            "ItemAlteration": "Alterazione Oggetto"
         },
         "Mutagens": {
             "BestialMutagen": {
@@ -6080,11 +6074,16 @@
                     "MinorSpellcasting": "Incantatore Minore",
                     "ModerateSpellcasting": "Incantatore Moderata",
                     "MajorSpellcasting": "Incantatore Maggiore",
-                    "ExtremeSpellcasting": "Incantatore Estremo"
+                    "ExtremeSpellcasting": "Incantatore Estremo",
+                    "Spellcasting": "Incantatore",
+                    "Skillful": "Abile",
+                    "Martial": "Combattente"
                 },
                 "MinorFailure": "La tua maledizione interferisce con questa azione e devi fare una @Check[type:flat|dc:4|showDC:owner]{prova semplice}.",
                 "ModerateFailure": "La tua maledizione interferisce con questa azione e devi fare una @Check[type:flat|dc:6|showDC:owner]{prova semplice}.",
-                "MajorFailure": "La tua maledizione interferisce con questa azione e devi fare una @Check[type:flat|dc:8|showDC:owner]{prova semplice}."
+                "MajorFailure": "La tua maledizione interferisce con questa azione e devi fare una @Check[type:flat|dc:8|showDC:owner]{prova semplice}.",
+                "MeddlingAncestor": "Antenato che si Intromette",
+                "AncestralInfluence": "Influenza Ancestrale"
             },
             "Battle": {
                 "MadeAStrike": "Hai effettuato un attacco questo round",
@@ -6422,7 +6421,8 @@
                 "VersatileTrait": "Seleziona un tipo di danno versatile.",
                 "EvolutionFeat": "Seleziona il tuo primo Talento di Evoluzione.",
                 "CantripOrNonCantrip": "Seleziona trucchetti o incantesimi che non siano trucchetti.",
-                "DegreeOfSuccess": "Seleziona un grado di successo"
+                "DegreeOfSuccess": "Seleziona un grado di successo",
+                "Rune": "Seleziona una Runa."
             },
             "SneakAttack": "Attacco Furtivo",
             "SpecialtyCrafting": {
@@ -7135,6 +7135,11 @@
             },
             "SmokingSword": {
                 "StokeFlames": "Attizzare le Fiamme"
+            },
+            "TerrainStalker": {
+                "Underbrush": "Sottobosco",
+                "Snow": "Neve",
+                "Rubble": "Detriti"
             }
         },
         "AreaTypeCube": "Cubo",
@@ -7413,5 +7418,10 @@
     "DOCUMENT": {
         "Combat": "Incontro",
         "Combats": "Incontri"
+    },
+    "TYPES": {
+        "Item": {
+            "campaignFeature": "Caratteristica di Campagna"
+        }
     }
 }
