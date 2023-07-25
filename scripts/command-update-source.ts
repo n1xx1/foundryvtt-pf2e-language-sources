@@ -22,25 +22,25 @@ export async function commandUpdateSource(
     ["compendium-ancestries", "ancestries.db"],
     ["compendium-ancestryfeatures", "ancestryfeatures.db"],
     ["compendium-backgrounds", "backgrounds.db"],
-    ["compendium-deities", "deities.db"],
+    // ["compendium-deities", "deities.db"],
     ["compendium-classes", "classes.db"],
     ["compendium-class-features", "classfeatures.db"],
     ["compendium-heritages", "heritages.db"],
     ["compendium-spells", "spells.db"],
     ["compendium-feats", "feats.db"],
     ["compendium-equipment", "equipment.db"],
-    [
-      "compendium-abomination-vaults-bestiary",
-      "abomination-vaults-bestiary.db",
-    ],
-    // ["compendium-age-of-ashes-bestiary", "age-of-ashes-bestiary.db"],
-    [
-      "compendium-agents-of-edgewatch-bestiary",
-      "agents-of-edgewatch-bestiary.db",
-    ],
-    ["compendium-bestiary", "pathfinder-bestiary.db"],
-    ["compendium-bestiary-2", "pathfinder-bestiary-2.db"],
-    ["compendium-bestiary-3", "pathfinder-bestiary-3.db"],
+    // [
+    //   "compendium-abomination-vaults-bestiary",
+    //   "abomination-vaults-bestiary.db",
+    // ],
+    // // ["compendium-age-of-ashes-bestiary", "age-of-ashes-bestiary.db"],
+    // [
+    //   "compendium-agents-of-edgewatch-bestiary",
+    //   "agents-of-edgewatch-bestiary.db",
+    // ],
+    // ["compendium-bestiary", "pathfinder-bestiary.db"],
+    // ["compendium-bestiary-2", "pathfinder-bestiary-2.db"],
+    // ["compendium-bestiary-3", "pathfinder-bestiary-3.db"],
     ["compendium-feat-effects", "feat-effects.db"],
     ["compendium-spell-effects", "spell-effects.db"],
   ];
@@ -81,11 +81,19 @@ async function translateSource(
   );
 
   for (const unit of res) {
-    const match = unit.context.match(/^entries\.([^\.]*)\.(.*)$/);
+    let ctx = unit.context;
+    ctx = ctx.replace(/Vs\./g, "Vs_");
+    const match = ctx.match(/^entries\.([^\.]*)\.(.*)$/);
     if (!match) continue;
-    const [, name, part] = match;
+    let [, name, part] = match;
+
+    name = name.replace(/Vs_/g, "Vs.");
 
     const origin: any = dataMap.get(name) ?? {};
+
+    if (!origin) {
+      console.log(`not found: ${name}`);
+    }
 
     // if (part.startsWith("items.")) {
     //   const itemMatch = part.match(/^items\.([^\.])+\.(.*)$/)!;
@@ -112,6 +120,7 @@ async function translateSource(
       origin.system?.source?.value ??
       origin.system?.details?.source?.value ??
       "";
+
     if (source) {
       await applySourceTag(source, unit, name, weblate, dry);
     }
@@ -132,7 +141,7 @@ async function applySourceTag(
     return;
   }
 
-  if (!unit.labels?.includes(tag)) {
+  if (unit.labels?.includes(tag)) {
     return;
   }
 

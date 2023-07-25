@@ -30,7 +30,9 @@ async function setupOut() {
 
 // @UUID[Compendium.pf2e.spells-srd.4GE2ZdODgIQtg51c]{Darkness}
 const uuidWithoutLabelRegex =
-  /@UUID\[Compendium\.pf2e\.([^\.\]]+?)\.([^\.\]]+?)\]([^{]|$)/g;
+  /@UUID\[Compendium\.pf2e\.([^\.\]]+?)(?:\.(Item|JournalEntry|Actor))?\.([^\.\]]+?)\](\{.*?\})?/g;
+
+const foundCompendiumAssociations = new Set<string>();
 
 function resolveDescription(
   description: string,
@@ -39,13 +41,24 @@ function resolveDescription(
   description = description.replace(/\u001e/g, " ");
   description = description.replace(
     uuidWithoutLabelRegex,
-    (original, compendium: string, id: string, tail) => {
+    (
+      original,
+      compendium: string,
+      kind: string,
+      id: string,
+      display: string
+    ) => {
+      foundCompendiumAssociations.add(`${compendium}:${kind}`);
+
       const entry = allPacksMap
         .get(compendium)
         ?.entries.find((e) => e._id === id);
       if (entry) {
-        tail ??= "";
-        return `@UUID[Compendium.pf2e.${compendium}.${id}]{${entry.name}}${tail}`;
+        display ??= "";
+        kind = kind ? `${kind}.` : "";
+        id = entry._id;
+        display ??= `{${entry.name}}`;
+        return `@UUID[Compendium.pf2e.${compendium}.${kind}${id}]${display}`;
       }
       return original;
     }
@@ -211,7 +224,7 @@ async function handleJournalEntry(
             p.name,
             {
               name: p.name,
-              text: p.text.content,
+              text: resolveDescription(p.text.content, allPacksMap),
             },
           ])
       );
@@ -469,14 +482,14 @@ function findBySourceId(
   allPacksMap: Map<string, PackData>
 ): [item: EntryItem | null, compendiumId: string] {
   const match = sourceId.match(
-    /^Compendium\.pf2e\.([^\.]+).([^\.]+)(?:\.Item\.([^\.]+))?$/
+    /^Compendium\.pf2e\.([^\.]+).([^\.]+).([^\.]+)(?:\.Item\.([^\.]+))?$/
   );
   if (!match) {
     return [null, ""];
   }
 
   const origin = sourceId.substring("Compendium.pf2e.".length);
-  const [_, pack, id, itemId] = match;
+  const [_, pack, _type, id, itemId] = match;
 
   let sourceItem =
     (allPacksMap.get(pack)?.entries.find((x) => x._id === id) as EntryItem) ??
@@ -607,4 +620,5 @@ export async function commandUpdate(systemDir = "../system") {
       throw e;
     }
   }
+  console.log([...foundCompendiumAssociations.values()].sort().join("\n"));
 }
