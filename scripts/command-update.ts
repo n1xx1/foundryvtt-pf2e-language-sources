@@ -112,7 +112,7 @@ async function handleItem(
     }
   }
 
-  const outData = JSON.stringify(out, null, 2);
+  const outData = JSON.stringify(out, orderKeysReplacer, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
 }
 
@@ -172,7 +172,7 @@ async function handleRollTable(
     }
   }
 
-  const outData = JSON.stringify(out, null, 2);
+  const outData = JSON.stringify(out, orderKeysReplacer, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
 }
 
@@ -193,7 +193,7 @@ async function handleMacro(
     });
   }
 
-  const outData = JSON.stringify(out, null, 2);
+  const outData = JSON.stringify(out, orderKeysReplacer, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
 }
 
@@ -231,7 +231,7 @@ async function handleJournalEntry(
     }
   }
 
-  const outData = JSON.stringify(out, null, 2);
+  const outData = JSON.stringify(out, orderKeysReplacer, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
 }
 
@@ -433,7 +433,7 @@ async function handleActor(
     }
   }
 
-  const outData = JSON.stringify(out, null, 2);
+  const outData = JSON.stringify(out, orderKeysReplacer, 2);
   await writeFile(join("lang/compendium", id + ".json"), outData);
 }
 
@@ -620,5 +620,17 @@ export async function commandUpdate(systemDir = "../system") {
       throw e;
     }
   }
-  console.log([...foundCompendiumAssociations.values()].sort().join("\n"));
+  // console.log([...foundCompendiumAssociations.values()].sort().join("\n"));
+}
+
+function orderKeysReplacer(key: string, value: any) {
+  if (value instanceof Object && !(value instanceof Array)) {
+    return Object.keys(value)
+      .sort()
+      .reduce((sorted, key) => {
+        sorted[key] = value[key];
+        return sorted;
+      }, {} as any);
+  }
+  return value;
 }

@@ -39,8 +39,8 @@ export async function readSystemFiles(
           if (!enabledPacks.includes(pack.name)) {
             return null;
           }
-          const path = join(basePath, "static", pack.path);
-          const entries = await readJsonStreamFile<Entry>(path);
+          const path = join(basePath, "json-assets", pack.path + ".json");
+          const entries = JSON.parse(await readFile(path, "utf-8")) as Entry[];
           return { ...pack, entries } as const;
         })
       )

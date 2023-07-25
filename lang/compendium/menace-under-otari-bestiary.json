@@ -1,162 +1,332 @@
 {
-  "label": "Beginner Box Bestiary",
   "entries": {
-    "Orc Scrapper (BB)": {
-      "name": "Orc Scrapper (BB)",
-      "description": "<p>Orcs are proud, strong humanoids that live by the rule that might makes right. They amass in warbands both large and small, conquering territory and robbing those unlucky enough to cross their path. Countless small settlements, outposts, and forts have fallen at the hands of orc raiders, whose sheer destructiveness leaves an indelible mark on the lands they conquer. The furious and undisciplined rankand-file scrappers make up the bulk of an orc warband.</p>",
-      "npcSenses": "darkvision",
+    "Animated Armor (BB)": {
+      "description": "<p>Objects can be given a semblance of life through the use of rituals or other strange magic, turning them into animated objects. These objects move, work, and fight based on the commands given to them by their creators, who usually set them on guard duty or have them perform menial labor.</p>\n<p>Suits of animated armor might serve as guardians, but sometimes high-end martial academies use them as training partners. They're most often found in wizards' laboratories and ancient dungeons.</p>",
       "items": {
-        "CellesdPVQW5Dk8g": {
-          "description": "<p>When the orc is reduced to 0 Hit Points, they can use their reaction to remain conscious with 1 Hit Point, but they gain the wounded 1 condition (or increases the wounded value by 1 if they already have that condition). The orc can't use this ability at wounded 3.</p>"
+        "GhnXpFtWM1vyvu8V": {
+          "description": "<p>The animated armor reduces all damage it takes by 9. However, after a critical hit that deals damage, or after its HP drops below 10, its construct armor breaks. Its AC drops to 13 and it no longer reduces damage by 9.</p>",
+          "name": "Construct Armor"
+        },
+        "jAZY8WC1BtImPyEF": {
+          "name": "Armored Fist"
         }
-      }
+      },
+      "name": "Animated Armor (BB)",
+      "npcAc": "(13 after construct armor breaks), construct armor",
+      "npcSenses": "darkvision"
     },
-    "Zombie Shambler (BB)": {
-      "name": "Zombie Shambler (BB)",
-      "description": "<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed. A zombie shambler is a slow-moving horror most dangerous in larger groups. Among the living dead, zombies are most often used as fodder, wearing down defenses before more powerful undead arrive to deal the killing blow. Zombies can be commanded by intelligent undead and powerful necromancers.</p>",
-      "npcSenses": "darkvision",
+    "Basilisk (BB)": {
+      "description": "<p>A basilisk is an eight-legged reptile that can turn creatures to stone just by looking at them.</p>",
       "items": {
-        "v90WRjELLiKF57vr": {
-          "name": "Jaws",
-          "description": "<p><strong>Requirements</strong> The zombie has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM].</p>"
+        "L4dKqPtdmyspmZtd": {
+          "name": "Jaws"
         },
-        "eulyI60JHNUYs39w": {
-          "name": "Slow",
-          "description": "<p>A zombie has only 2 actions on its turn, and it can't use reactions.</p>"
+        "Nl15bkRTLq869IPi": {
+          "description": "<p>When a creature the basilisk can see within 30 feet starts its turn, the basilisk can use its reaction to glance at the creature.</p>\n<p>The creature must attempt a @Check[type:fortitude|dc:20] save. If it fails, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition for 1 minute as its body slowly stiffens.</p>",
+          "name": "Petrifying Glance"
         },
-        "Qknp3UNQSMjNTUmL": {
-          "description": "<p>When the zombie hits with its fist Strike, it can use this action to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] condition until the end of its next turn.</p>"
+        "tOCS9mkYR5K1LuOZ": {
+          "description": "<p>The basilisk stares at a creature it can see within 30 feet. If the creature can see the basilisk, that creature must attempt a @Check[type:fortitude|dc:22] save.</p>\n<p>If it fails and hasn't already gained the slowed condition from Petrifying Glance or this ability, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition. If the creature fails this save when it already has the slowed condition from this ability or Petrifying Glance, the creature is permanently turned to @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone}.</p>\n<p>A creature petrified in this manner that is coated with fresh basilisk blood is instantly restored to flesh. A single basilisk contains enough blood to coat up to 2 creatures in this manner.</p>",
+          "name": "Petrifying Gaze"
         }
-      }
+      },
+      "name": "Basilisk (BB)",
+      "npcSenses": "darkvision"
     },
-    "Ghost Commoner (BB)": {
-      "name": "Ghost Commoner (BB)",
-      "npcHp": "rejuvenation",
-      "npcSenses": "darkvision",
+    "Black Kobold Dragon Mage (BB)": {
+      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
       "items": {
-        "nWtiD4ASp2FFsobD": {
-          "name": "Ghostly Hand"
+        "1GBTPnqIIGld3Wu1": {
+          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>Black</strong> acid 5</li>\n</ul>",
+          "name": "Dragonscaled"
         },
-        "CfzB5r8CSHETuXfA": {
-          "name": "Site Bound",
-          "description": "<p>A ghost can stray no more than 120 feet from where it was killed or the place it haunts. Some are bound to items or creatures that were special to them rather than a location.</p>"
+        "8LYUZymM9ZN8WDw9": {
+          "name": "Claw"
         },
-        "soQbbQbVd6xMuJl6": {
-          "name": "Incorporeal",
-          "description": "<p>A ghost has no body and can pass through physical objects, though it can't end its turn inside one. Most checks that use Strength and require a body, such as @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD] and @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731], don't work against a ghost, and a ghost can't attempt such checks.</p>"
+        "KYeYaMrxJZuncqJp": {
+          "name": "Dragon Lore"
         },
-        "HvOzFzF3j47WTzIv": {
-          "name": "Rejuvenation",
-          "description": "<p>Setting right the injustice that led to the ghost's death allows it to move on to the afterlife. Otherwise, when destroyed, the ghost re-forms after [[/br 2d4 #Rejuvenation]]{2d4 days} within the location it's bound to, fully healed.</p>"
-        },
-        "uYQrEbjjw3XIQ1cO": {
-          "name": "Frightful Moan",
-          "description": "<p>Each living creature within @Template[type:emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[type:will|dc:21] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>"
+        "RDDSANqANJv09ktQ": {
+          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
         }
-      }
+      },
+      "name": "Black Kobold Dragon Mage (BB)",
+      "npcSenses": "darkvision"
     },
-    "Kobold Trapmaster (BB)": {
-      "name": "Kobold Trapmaster (BB)",
-      "description": "<p>Kobold trapmasters are the masterminds behind crafting and implementing wily traps in kobold lairs, and are widely respected among their kind.</p>",
-      "npcSenses": "darkvision",
+    "Blue Kobold Dragon Mage (BB)": {
+      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
       "items": {
-        "tsvAQRhznMxKN8gX": {
-          "_source": "equipment-srd.7tKkkF8eZ4iCLJtp"
+        "1GBTPnqIIGld3Wu1": {
+          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>Blue</strong> electricity 5</li>\n</ul>",
+          "name": "Dragonscaled"
         },
-        "JKItbcSj8OKSSJ4H": {
-          "_source": "equipment-srd.tOhoGvmCMw4JpWcS"
+        "8LYUZymM9ZN8WDw9": {
+          "name": "Claw"
         },
-        "OeI9TdZOVyciyh0n": {
-          "_source": "equipment-srd.4tIVTg9wj56RrveA"
+        "KYeYaMrxJZuncqJp": {
+          "name": "Dragon Lore"
         },
-        "fx6MEhp40JvDajQh": {
-          "name": "Spike Trap"
-        },
-        "B1zHLf1i3W3pgrBz": {
-          "name": "Hurried Retreat",
-          "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. They must end this movement in a space that's not adjacent to any enemy.</p>"
-        },
-        "Mcbgf9KdTTBPuio6": {
-          "name": "Quick Trap",
-          "description": "<p>The kobold trapmaster deploys one spike trap in an adjacent square.</p>"
-        },
-        "yDzPXpPBRfYG5UfY": {
-          "description": "<p>The kobold trapmaster deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        },
-        "sXZ80MEcWSNN1Ct0": {
-          "name": "Spike Trap",
-          "description": "<p>Once this trap is deployed in a square, it deals [[/r 2d8[piercing]]] damage to anyone who steps on that square and they must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>"
+        "RDDSANqANJv09ktQ": {
+          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
         }
-      }
+      },
+      "name": "Blue Kobold Dragon Mage (BB)",
+      "npcSenses": "darkvision"
     },
     "Boar (BB)": {
-      "name": "Boar (BB)",
       "description": "<p>Foul-tempered and tough, boars are far more dangerous than domesticated pigs. These omnivorous mammals are hunted heavily because their meat is considered a delicacy. Boars are most likely to attack humanoids in self-defense or during their mating season in the winter months, when the males grow an extra inch of tissue to protect their organs as they fight off rivals. In some cultures, boars are trained to become much more aggressive for use as war beasts and guardians. When such boars escape back into the wild, they can become true terrors of the region.</p>",
-      "npcSenses": "low-light vision",
       "items": {
-        "yfZjkf1LqlK3U7HM": {
-          "name": "Tusk"
-        },
         "Onifi8y9OVLqK3Ea": {
           "description": "<p>When the boar is reduced to 0 Hit Points, it can use its reaction to remain conscious with 1 Hit Point, but it gains the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded 1} condition (or increases its wounded value by 1 if it already has that condition). It can't use this ability at wounded 3.</p>"
         },
         "jmPDVPebOQ3XVOwA": {
-          "name": "Boar Charge",
-          "description": "<p>The boar Strides twice and then makes a tusk Strike. As long as it moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll.</p>"
+          "description": "<p>The boar Strides twice and then makes a tusk Strike. As long as it moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll.</p>",
+          "name": "Boar Charge"
+        },
+        "yfZjkf1LqlK3U7HM": {
+          "name": "Tusk"
         }
-      }
+      },
+      "name": "Boar (BB)",
+      "npcSenses": "low-light vision"
     },
-    "Slamming Door (BB)": {
-      "name": "Slamming Door (BB)",
-      "description": "<p>Pressure-sensitive panels in the floor connect to a stone slab hidden in a hallway's ceiling.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:15|traits:hazard|name:Disable Floor Panels] on the floor panels before the slab falls.</p>"
-    },
-    "Skeleton Guard (BB)": {
-      "name": "Skeleton Guard (BB)",
-      "description": "<p>Made from bones held together by foul necromancy, skeletons can often be found haunting old dungeons and patrolling forgotten cemeteries. Many evil masterminds prefer to keep eternally vigilant undead as minions to avoid the upkeep required to feed and satisfy the psychological needs of living guardians.</p>\n<p>Simple skeleton guards remain the most common skeletal minions. These skeletons are mindless, meaning they can't truly reason but can execute their basic guard duties of watching out for and attacking intruders. A group of several skeletons defending the same location usually consists of melee fighters and archers who shoot arrows from afar.</p>",
-      "npcSenses": "darkvision",
+    "Brine Shark (BB)": {
+      "description": "<p>Water elementals roam the endless oceans of the Plane of Water. They can be brought to the world with summoning magic or through natural disasters like floods or hurricanes. Though water elementals can be very destructive, they aren't always malicious. Just as water can bring life to those in need, its waves can pound shores and its rains flood cities. Water elementals are similarly difficult to predict.</p>\n<p>Brine sharks, fierce but among the weaker water elementals, take forms resembling sharks made entirely of water. When encountered, they're usually on their own or following the commands of a spellcaster who summoned them to this plane.</p>",
       "items": {
-        "EzSKWtWM2tSTtZwA": {
+        "2d3ZGRIXERcjqnmJ": {
+          "description": "<p>When the brine shark succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn.</p>"
+        },
+        "B9C716BDIWeqDrLI": {
+          "name": "Jaws"
+        },
+        "Fc10tuSKXi4OAWw6": {
+          "description": "<p>The brine shark dives straight down into the water, swimming up to 100 feet in a straight vertical line. It can use this ability while @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbing} a creature.</p>",
+          "name": "Deep Plunge"
+        }
+      },
+      "name": "Brine Shark (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Bugbear Marauder (BB)": {
+      "description": "<p>These stealthy and cruel creatures delight in spreading fear and tormenting their victims. Bugbears are the monsters lurking in the closet and hiding under the bed. Preying on remote farmsteads, bugbears reveal their presence with thumps in the night or creaking boards, inspiring dread, suspicion, and fear in those they torment.</p>",
+      "items": {
+        "KMCE5lQxOdNEPkvf": {
+          "description": "<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+        },
+        "e8BUlHLevzRJnHEc": {
+          "description": "<p>The bugbear marauder Strides up to 10 feet and attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature that can't see them and doesn't know where they are. If the bugbear succeeds, they also deal damage from their fist Strike to that creature.</p>",
+          "name": "Bushwhack"
+        },
+        "naotn6A029XPnJc1": {
+          "description": "<p>The bugbear marauder gains a +3 circumstance bonus to damage rolls against creatures they have @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>",
+          "name": "Mauler"
+        }
+      },
+      "name": "Bugbear Marauder (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Central Spears (BB)": {
+      "hazardDisable": "<p>A hero must succeed at a @Check[type:thievery|dc:18|traits:hazard|name:Disable Mechanism] check on the triggering floor tiles or the wall sockets in the western wall.</p>",
+      "hazardReset": "<p>The central spears reset after 1 minute.</p>",
+      "name": "Central Spears (BB)"
+    },
+    "Cinder Rat (BB)": {
+      "description": "<p>Fire elementals are destructive manifestations of the Plane of Fire. They sometimes come to the world in powerful places of heat and flame where elemental vortexes form, such as in volcanoes.</p>\n<p>Cinder rats are oversized rodents made of smoldering charcoal and elemental fire. Noxious fumes continually bellow from their flaming flesh. Much like terrestrial rats, cinder rats seek out secluded dens and can quickly multiply in number if left unchecked.</p>",
+      "items": {
+        "SNb64KWDBMrTorTI": {
+          "name": "Jaws"
+        },
+        "vhcrEIRKkfTwrwDs": {
+          "description": "<p>A cloud of smoke surrounds the cinder rat. All creatures within @Template[type:emanation|distance:5]{5 feet}, including the cinder rat, gain the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from this smoke. A creature that comes within 5 feet of the cinder rat or begins its turn within 5 feet must succeed at a @Check[type:fortitude|dc:22] save or take a -1 status penalty to all checks and DCs for 1 round <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>",
+          "name": "Fetid Fumes"
+        },
+        "wqhHoIIgE3jfAgCx": {
+          "description": "<p>The cinder rat ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>",
+          "name": "Smoke Vision"
+        }
+      },
+      "name": "Cinder Rat (BB)",
+      "npcSenses": "darkvision, smoke vision"
+    },
+    "Doppelganger (BB)": {
+      "description": "<p>Doppelgangers can transform into perfect copies of other creatures but have indeterminate forms in their natural states.</p>",
+      "items": {
+        "0lvwb1cNAaOUc6Be": {
+          "description": "<p>When the doppelganger is transformed with Change Shape and another creature moves adjacent to them or uses a Strike or another hostile action against them, the doppelganger can use its reaction to revert to its natural form and make a Strike against that creature.</p>\n<p>If the creature was unaware the doppelganger was in disguise, that creature has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition against this Strike.</p>",
+          "name": "End the Charade"
+        },
+        "4tRvd9W1xA0JvgPJ": {
           "name": "Claw"
+        },
+        "LJKNy957UOv4LqE5": {
+          "description": "<p>The doppelganger takes on the specific appearance of any Small or Medium humanoid it has seen. This doesn't change the doppelganger's Stride speed or their attack and damage bonuses with their Strikes, but it might change the damage type their Strikes deal (typically to bludgeoning).</p>"
+        },
+        "fIAhNhYo8hJML5xU": {
+          "description": "<p>The doppelganger attempts to read the surface thoughts of one creature within 30 feet. The target resists if it succeeds at a @Check[type:will|dc:21] save.</p>",
+          "name": "Mind Reading"
         }
-      }
+      },
+      "name": "Doppelganger (BB)",
+      "npcSenses": "darkvision"
     },
-    "Skeletal Giant (BB)": {
-      "name": "Skeletal Giant (BB)",
-      "description": "<p>The reanimated bones of giants make excellent necromantic thralls, and the skeletal giants made out of bull-headed minotaurs are no exception. Mindless skeletons use similar tactics, so using a bigger, more durable skeleton is the only way a necromancer can obtain a more powerful thrall.</p>",
-      "npcSenses": "darkvision",
+    "Drow Priestess (BB)": {
       "items": {
-        "l4eldMZrkZle4K3Y": {
-          "name": "Horns"
+        "9IuPTxCvRCR7HHp2": {
+          "description": "<p>When first exposed to bright light, the drow @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Can't See} until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a @Check[type:flat|dc:11]. Light doesn't blind them again for 1 hour.</p>"
         },
-        "4gkC6A8D27Jzv7nH": {
-          "name": "Broad Swipe",
-          "description": "<p>The skeletal giant makes two Strikes with its greatsword against two adjacent foes, both of whom are within its reach. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its horns).</p>"
+        "Eejxi0k01WzbvUUh": {
+          "description": "<p>If she @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raised a Shield} since her last turn, the priestess can spend her reaction to block a Strike. Reduce the Strike's damage by 5, but then she and the shield both take the remaining damage, possibly @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Breaking} or destroying the shield.</p>"
         },
-        "emPcqeSFXdyr6CgV": {
-          "name": "Terrifying Charge",
-          "description": "<p>The giant Strides and makes a horns Strike with a +4 circumstance bonus to damage.</p>\n<p>If the strike hits, the giant attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF] the target.</p>"
+        "TdQYYWwQZNdBaUt2": {
+          "description": "<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block}, but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>",
+          "name": "Shield"
         }
-      }
+      },
+      "name": "Drow Priestess (BB)",
+      "npcAc": "22 with shield raised",
+      "npcSenses": "darkvision"
     },
-    "Orc Commander (BB)": {
-      "name": "Orc Commander (BB)",
-      "description": "<p>When orcs raid, the strongest is chosen as the leader. Bonds of blood are especially strong among orcs, and the mightiest orc holds are typically made up of siblings who have chosen a strong commander to protect their kinfolk.</p>",
-      "npcSenses": "darkvision",
+    "Drow Sneak (BB)": {
+      "description": "<p>Loners at heart, drow sneaks trust no one-least of all fellow drow. These drow rely on awareness and adaptation to survive the cutthroat nature of their society.</p>",
       "items": {
-        "xDUpwWQaZevQOkYQ": {
-          "description": "<p>When the orc is reduced to 0 Hit Points, they can use their reaction to remain conscious with 1 Hit Point, but they gain the wounded 1 condition (or increases the wounded value by 1 if they already have that condition). The orc can't use this ability at wounded 3.</p>"
+        "9nfzrmPzAAStRjAe": {
+          "description": "<p>The drow rogue draws a weapon using the Interact action, then Strikes with that weapon.</p>",
+          "name": "Quick Draw"
         },
-        "yeHohyJSYfiTwghO": {
-          "name": "Battle Cry",
-          "description": "<p>Bellowing mightily, the commander gives themself and all orc allies within @Template[type:emanation|distance:60]{60 feet} who can hear them a +1 status bonus to attack and damage rolls until the start of the orc commander's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yqq4AkZ9lrm4CcID]</p>"
+        "NS7yHszQCqQS0Bfj": {
+          "description": "<p>The drow sneak deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
+        },
+        "ufap97U4FyUOrJZF": {
+          "description": "<p>When first exposed to bright light, the drow @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Can't See} until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a @Check[type:flat|dc:11]. Light doesn't blind them again for 1 hour.</p>"
         }
-      }
+      },
+      "name": "Drow Sneak (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Drow Warrior (BB)": {
+      "description": "<p>Drow are the descendants of elves corrupted by a great evil when they fled deep underground long ago.</p>",
+      "items": {
+        "7ogTgoQe4WAvtdJ7": {
+          "description": "<p>When first exposed to bright light, the drow @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Can't See} until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a @Check[type:flat|dc:11]. Light doesn't blind them again for 1 hour.</p>"
+        },
+        "ix1KQX8Ji2g1e9ID": {
+          "description": "<p>The drow warrior Strikes with their rapier, and they gain a +1 circumstance bonus to the attack roll. If they succeed, the target takes [[/r 1d6[bleed]]].</p>",
+          "name": "Skewer"
+        },
+        "uznmLfSkP5j9qOEA": {
+          "description": "<p>The drow warrior draws a weapon using the Interact action, then Strikes with that weapon.</p>",
+          "name": "Quick Draw"
+        }
+      },
+      "name": "Drow Warrior (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Envenomed Lock (BB)": {
+      "description": "<p>A spring-loaded, poisoned spine is hidden near the keyhole of a lock. @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disabling} or breaking the trap doesn't disable or break the lock.</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:17|traits:hazard|name:Disable the Spring Mechanism] on the spring mechanism</p>",
+      "name": "Envenomed Lock (BB)"
+    },
+    "Falling Ceiling (BB)": {
+      "hazardDisable": "<p>A hero must succeed at a @Check[type:thievery|dc:18|traits:hazard|name:Prevent Blocks from Falling] check on the triggering square or the ceiling to prevent the stone blocks from falling.</p>",
+      "name": "Falling Ceiling (BB)"
+    },
+    "Gargoyle (BB)": {
+      "description": "<p>Gargoyles are monstrous hunters made entirely of stone. They look like decorative statues and use this as camouflage to hide in plain sight in cities during the day and descend upon unlucky pedestrians at night. Their most common form is that of a horned humanoid with batlike wings, but individual gargoyles vary a great deal, with some appearing more or less humanoid and others resembling something else entirely.</p>\n<p>Though most hunt alone, they sometimes form into groups called \"wings.\" All the monstrous statues atop an old building could actually be living gargoyles.</p>",
+      "items": {
+        "9bomxaBEHSLvRrkq": {
+          "description": "<p>Until the next time they use an action, the gargoyle appears to be a statue. A creature must succeed at a @Check[type:perception|dc:32] check to figure out that the statue is really a creature.</p>",
+          "name": "Statue"
+        },
+        "DsvyLX53TeuZHMQ3": {
+          "description": "<p>If the gargoyle is flying and a creature moves into an adjacent square below them, the gargoyle can use their reaction to make a claw Strike against that creature.</p>",
+          "name": "Clawed Feet"
+        },
+        "cprgu1LyMWRqzI0w": {
+          "name": "Claw"
+        },
+        "qhS5ZEJcqNFytqWd": {
+          "name": "Jaws"
+        }
+      },
+      "name": "Gargoyle (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Ghost Commoner (BB)": {
+      "items": {
+        "CfzB5r8CSHETuXfA": {
+          "description": "<p>A ghost can stray no more than 120 feet from where it was killed or the place it haunts. Some are bound to items or creatures that were special to them rather than a location.</p>",
+          "name": "Site Bound"
+        },
+        "HvOzFzF3j47WTzIv": {
+          "description": "<p>Setting right the injustice that led to the ghost's death allows it to move on to the afterlife. Otherwise, when destroyed, the ghost re-forms after [[/br 2d4 #Rejuvenation]]{2d4 days} within the location it's bound to, fully healed.</p>",
+          "name": "Rejuvenation"
+        },
+        "nWtiD4ASp2FFsobD": {
+          "name": "Ghostly Hand"
+        },
+        "soQbbQbVd6xMuJl6": {
+          "description": "<p>A ghost has no body and can pass through physical objects, though it can't end its turn inside one. Most checks that use Strength and require a body, such as @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} and @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, don't work against a ghost, and a ghost can't attempt such checks.</p>",
+          "name": "Incorporeal"
+        },
+        "uYQrEbjjw3XIQ1cO": {
+          "description": "<p>Each living creature within @Template[type:emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[type:will|dc:21] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>",
+          "name": "Frightful Moan"
+        }
+      },
+      "name": "Ghost Commoner (BB)",
+      "npcHp": "rejuvenation",
+      "npcSenses": "darkvision"
+    },
+    "Ghoul (BB)": {
+      "description": "<p>The flesh-eating undead known as ghouls haunt sinister locations such as lonely graveyards and ruined crypts, making meals of corpses. Legends say that even those who survive a ghoul attack risk contracting a fever that eventually transforms them into ghouls.</p>",
+      "items": {
+        "7RTjFlVzsxhjtwX4": {
+          "description": "<p>The ghoul devours a chunk of a creature that died within the last hour and regains [[/r 1d6[healing]]]{1d6 Hit Points}.</p>\n<p>The ghoul can regain Hit Points from a given body only once.</p>",
+          "name": "Consume Flesh"
+        },
+        "9TCF9GcaMoTKkPSj": {
+          "description": "<p>Any living creature (except an elf) that takes damage from the ghoul's Strike must succeed at a @Check[type:fortitude|dc:15] save or gain the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition for 1 round and lose its next turn.</p>\n<p>If the creature is level 3 or higher, this happens only on a critical failure.</p>",
+          "name": "Paralysis"
+        },
+        "A97t9GcQF8k7V7By": {
+          "name": "Claw"
+        },
+        "XJHXZOImLOORwInT": {
+          "name": "Jaws"
+        },
+        "rvraBop9oOSwcjkq": {
+          "name": "Swift Leap"
+        }
+      },
+      "name": "Ghoul (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Giant Centipede (BB)": {
+      "description": "<p>Centipedes are relatively common arthropods that live, hunt, and scavenge amid dung and detritus. Scurrying about with surprising speed on the scores of legs attached to their long, segmented bodies, centipedes strike with poisoned mandibles.</p>\n<p>Most giant centipedes (known as sewer centipedes when found in cities) nest in small groups but hunt alone. Attempts to domesticate giant centipedes to use as guardians or pets generally end poorly, but some goblin and kobold societies have developed effective methods of utilizing these vermin as guardians. Some societies roast and eat centipedes, often with pungent peppers, as a savory delicacy, although care must be taken in preparing the meal to avoid contaminating the flesh with the creature's venom.</p>",
+      "items": {
+        "1U37Lsr3NMgzLqLM": {
+          "name": "Mandibles"
+        },
+        "PIjZTZsbQlriq5X3": {
+          "description": "<p>A target that takes piercing damage from the centipede's mandibles Strike must succeed at a @Check[type:fortitude|dc:14] save or take [[/r 1d10[poison]]] damage.</p>",
+          "name": "Giant Centipede Venom"
+        }
+      },
+      "name": "Giant Centipede (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Giant Rat (BB)": {
+      "description": "<p>Giant rats are enormous versions of the common vermin. They're typically found in abundant numbers, but since they can't fit in the nooks where ordinary rats typically hide, they're much easier to locate and exterminate. In fact, finding and slaying a giant rat is a rite of passage for many an adventurer. Such tasks get tiresome quickly, so many veterans subcontract extermination to new adventurers.</p>\n<p>Giant rats mostly live in sewers where they can scavenge from the streets above, but some families of giant rats live in more remote locations, such as dank caves, forests, or hills. Rats are incredibly adept survivors and can be found nearly anywhere in the world, though they tend to favor temperate or warm climates as opposed to cold regions.</p>\n<p>Although their bite alone isn't lethal except to the very weak, some giant rats carry a dangerous disease common to rodents around the world-a pestilence more than capable of ravaging rural communities. The rats are merely carriers with no risk of succumbing to the disease themselves.</p>",
+      "items": {
+        "yLnwKltbJHYpn8qC": {
+          "name": "Jaws"
+        }
+      },
+      "name": "Giant Rat (BB)",
+      "npcSenses": "low-light vision"
     },
     "Giant Spider (BB)": {
-      "name": "Giant Spider (BB)",
       "description": "<p>Few everyday vermin inspire as much dread as the infamous spider. Giant spiders vary in size. The human-sized versions, sometimes called hunting spiders, are the most common type of giant spider, though not the largest.</p>",
-      "npcSenses": "darkvision",
       "items": {
         "C4dwFfQQc0M5gZBd": {
           "name": "Fangs"
@@ -164,897 +334,733 @@
         "ELWu5zIODys6k1lo": {
           "name": "Web"
         },
+        "KlwGH9hdWl3XpMYw": {
+          "description": "<p>A creature hit by the giant spider's web Strike gets stuck to the nearest surface. It can't move until it successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 17).</p>",
+          "name": "Web Trap"
+        },
         "Odl9UZ1OKOYG044E": {
-          "name": "Descend on a Web",
-          "description": "<p>The giant spider moves straight down up to 40 feet, suspended by a web line. It can hang from the web or drop off. The distance it Descends on a Web doesn't count for falling damage. A creature can Strike the web, which has AC 20 and 8 HP. If the web is reduced to 0 HP, the spider falls.</p>"
+          "description": "<p>The giant spider moves straight down up to 40 feet, suspended by a web line. It can hang from the web or drop off. The distance it Descends on a Web doesn't count for falling damage. A creature can Strike the web, which has AC 20 and 8 HP. If the web is reduced to 0 HP, the spider falls.</p>",
+          "name": "Descend on a Web"
         },
         "vnaySgTDfC0slaHW": {
-          "name": "Giant Spider Venom",
-          "description": "<p>A target damaged by the spider's fangs must succeed at a @Check[type:fortitude|dc:16] save or take [[/r 1d12[poison]]] damage and gain the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition for 1 round.</p>"
-        },
-        "KlwGH9hdWl3XpMYw": {
-          "name": "Web Trap",
-          "description": "<p>A creature hit by the giant spider's web Strike gets stuck to the nearest surface. It can't move until it successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 17).</p>"
+          "description": "<p>A target damaged by the spider's fangs must succeed at a @Check[type:fortitude|dc:16] save or take [[/r 1d12[poison]]] damage and gain the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition for 1 round.</p>",
+          "name": "Giant Spider Venom"
         }
-      }
-    },
-    "Scythe Blades (BB)": {
-      "name": "Scythe Blades (BB)",
-      "description": "<p>Two blades, each hidden in a 15-foot-long ceiling groove, are both connected to a trip wire.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:21|traits:hazard|name:Disable Blade] to disable each blade.</p>"
-    },
-    "Blue Kobold Dragon Mage (BB)": {
-      "name": "Blue Kobold Dragon Mage (BB)",
-      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "8LYUZymM9ZN8WDw9": {
-          "name": "Claw"
-        },
-        "1GBTPnqIIGld3Wu1": {
-          "name": "Dragonscaled",
-          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>Blue</strong> electricity 5</li>\n</ul>"
-        },
-        "RDDSANqANJv09ktQ": {
-          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        },
-        "KYeYaMrxJZuncqJp": {
-          "name": "Dragon Lore"
-        }
-      }
-    },
-    "Brine Shark (BB)": {
-      "name": "Brine Shark (BB)",
-      "description": "<p>Water elementals roam the endless oceans of the Plane of Water. They can be brought to the world with summoning magic or through natural disasters like floods or hurricanes. Though water elementals can be very destructive, they aren't always malicious. Just as water can bring life to those in need, its waves can pound shores and its rains flood cities. Water elementals are similarly difficult to predict.</p>\n<p>Brine sharks, fierce but among the weaker water elementals, take forms resembling sharks made entirely of water. When encountered, they're usually on their own or following the commands of a spellcaster who summoned them to this plane.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "B9C716BDIWeqDrLI": {
-          "name": "Jaws"
-        },
-        "Fc10tuSKXi4OAWw6": {
-          "name": "Deep Plunge",
-          "description": "<p>The brine shark dives straight down into the water, swimming up to 100 feet in a straight vertical line. It can use this ability while @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbing} a creature.</p>"
-        },
-        "2d3ZGRIXERcjqnmJ": {
-          "description": "<p>When the brine shark succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] condition until the end of its next turn.</p>"
-        }
-      }
-    },
-    "Giant Rat (BB)": {
-      "name": "Giant Rat (BB)",
-      "description": "<p>Giant rats are enormous versions of the common vermin. They're typically found in abundant numbers, but since they can't fit in the nooks where ordinary rats typically hide, they're much easier to locate and exterminate. In fact, finding and slaying a giant rat is a rite of passage for many an adventurer. Such tasks get tiresome quickly, so many veterans subcontract extermination to new adventurers.</p>\n<p>Giant rats mostly live in sewers where they can scavenge from the streets above, but some families of giant rats live in more remote locations, such as dank caves, forests, or hills. Rats are incredibly adept survivors and can be found nearly anywhere in the world, though they tend to favor temperate or warm climates as opposed to cold regions.</p>\n<p>Although their bite alone isn't lethal except to the very weak, some giant rats carry a dangerous disease common to rodents around the world-a pestilence more than capable of ravaging rural communities. The rats are merely carriers with no risk of succumbing to the disease themselves.</p>",
-      "npcSenses": "low-light vision",
-      "items": {
-        "yLnwKltbJHYpn8qC": {
-          "name": "Jaws"
-        }
-      }
-    },
-    "Doppelganger (BB)": {
-      "name": "Doppelganger (BB)",
-      "description": "<p>Doppelgangers can transform into perfect copies of other creatures but have indeterminate forms in their natural states.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "4tRvd9W1xA0JvgPJ": {
-          "name": "Claw"
-        },
-        "0lvwb1cNAaOUc6Be": {
-          "name": "End the Charade",
-          "description": "<p>When the doppelganger is transformed with Change Shape and another creature moves adjacent to them or uses a Strike or another hostile action against them, the doppelganger can use its reaction to revert to its natural form and make a Strike against that creature.</p>\n<p>If the creature was unaware the doppelganger was in disguise, that creature has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition against this Strike.</p>"
-        },
-        "LJKNy957UOv4LqE5": {
-          "description": "<p>The doppelganger takes on the specific appearance of any Small or Medium humanoid it has seen. This doesn't change the doppelganger's Stride speed or their attack and damage bonuses with their Strikes, but it might change the damage type their Strikes deal (typically to bludgeoning).</p>"
-        },
-        "fIAhNhYo8hJML5xU": {
-          "name": "Mind Reading",
-          "description": "<p>The doppelganger attempts to read the surface thoughts of one creature within 30 feet. The target resists if it succeeds at a @Check[type:will|dc:21] save.</p>"
-        }
-      }
-    },
-    "Kobold Boss Zolgran (BB)": {
-      "name": "Kobold Boss Zolgran (BB)",
-      "npcSenses": "darkvision",
-      "items": {
-        "To4X6IhIOy6NoSDn": {
-          "_source": "equipment-srd.FVjTuBCIefAgloUU"
-        },
-        "eh06w4tCybKWTx8g": {
-          "name": "Eggshell Necklace"
-        },
-        "FRce1Q7000LFf9Gs": {
-          "name": "Iron Key"
-        },
-        "Zdg1lW7CYLRDYorG": {
-          "name": "Claw"
-        },
-        "SKxww784aC4E2gzW": {
-          "description": "<p>Zolgran deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        },
-        "eU0KcVkea4Q9goDX": {
-          "name": "Dragon Lore"
-        }
-      }
-    },
-    "Harpy (BB)": {
-      "name": "Harpy (BB)",
-      "npcSenses": "darkvision",
-      "items": {
-        "BmhB6hl9Ivt5pnw6": {
-          "name": "Talon"
-        },
-        "NQF0fD75864Ytav1": {
-          "name": "Captivating Song",
-          "description": "<p>The harpy cries out an eerie, compelling melody. Each non-harpy creature within @Template[type:emanation|distance:300]{300 feet} who can hear the song must attempt a @Check[type:will|dc:21] save.</p>\n<p>On a failure, the creature becomes captivated and must spend each of its actions to move closer to the harpy as expediently as possible, while avoiding obvious dangers. If a captivated creature is adjacent to the harpy, it stays still and doesn't act. If attacked by the harpy, the creature is freed from captivation at the end of the harpy's turn.</p>\n<p>The effect lasts for 1 round, but if the harpy uses this ability again on subsequent rounds, it extends the duration by 1 round for all affected creatures.</p>\n<p>Once a creature succeeds at any save against Captivating Song, that creature is temporarily immune to Captivating Songs for 24 hours.</p>"
-        }
-      }
-    },
-    "Hidden Pit (BB)": {
-      "name": "Hidden Pit (BB)",
-      "description": "<p>A wooden trapdoor covers a 10-foot square pit that's 20 feet deep.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:12|traits:hazard|name:Remove the Trapdoor] to remove the trapdoor.</p>"
-    },
-    "Giant Centipede (BB)": {
-      "name": "Giant Centipede (BB)",
-      "description": "<p>Centipedes are relatively common arthropods that live, hunt, and scavenge amid dung and detritus. Scurrying about with surprising speed on the scores of legs attached to their long, segmented bodies, centipedes strike with poisoned mandibles.</p>\n<p>Most giant centipedes (known as sewer centipedes when found in cities) nest in small groups but hunt alone. Attempts to domesticate giant centipedes to use as guardians or pets generally end poorly, but some goblin and kobold societies have developed effective methods of utilizing these vermin as guardians. Some societies roast and eat centipedes, often with pungent peppers, as a savory delicacy, although care must be taken in preparing the meal to avoid contaminating the flesh with the creature's venom.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "1U37Lsr3NMgzLqLM": {
-          "name": "Mandibles"
-        },
-        "PIjZTZsbQlriq5X3": {
-          "name": "Giant Centipede Venom",
-          "description": "<p>A target that takes piercing damage from the centipede's mandibles Strike must succeed at a @Check[type:fortitude|dc:14] save or take [[/r 1d10[poison]]] damage.</p>"
-        }
-      }
-    },
-    "Mimic (BB)": {
-      "name": "Mimic (BB)",
-      "description": "<p>Thought to be the result of a failed experiment meant to animate objects or a sinister alghollthu creation, mimics are clever monsters that can take the form of common manufactured objects. Mimics are ambush predators and voracious eaters, surprising their prey through their uncanny ability to mimic the form of common furniture and miscellany. They remain disguised until unsuspecting adventurers happen by, then they lash out in ambush.</p>\n<p>Mimics possess complex alien minds, and while often cruel and self-serving, they also enjoy conversation with their prey from time to time. For unknown reasons, they are especially interested in humanoids. Mimics have a strong dislike for others of their kind and tend to live alone. A mimic can remain in its alternate form for an extremely long period of time, sometimes remaining disguised in a dungeon chamber for decades. Regardless of how long it waits, the mimic remains vigilant and alert, ready to strike at any moment.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "Af1bf54ub8OEzyPl": {
-          "name": "Pseudopod"
-        },
-        "91iOrkVbzeP7cK2M": {
-          "name": "Adhesive",
-          "description": "<p>Any creature that touches the mimic (usually from a fist Strike, the mimic's pseudopod, or a @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD] or @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]) must succeed at a @Check[type:reflex|dc:23] save or gain the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] condition. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9] is 23. A melee or thrown weapon that hits the mimic sticks to it. A character can spend an action to attempt a @Check[type:athletics|dc:23] check, removing the weapon on a success. The adhesive dissolves 1 minute after the mimic dies.</p>"
-        },
-        "Ns2pok7e6UtuKUd6": {
-          "name": "Object Lesson",
-          "description": "<p>If a creature touches the mimic while the mimic is transformed into an object, the mimic can spend its reaction to use its adhesive with no saving throw. The mimic then makes a pseudopod Strike. Object Lesson can't be used again until the mimic escapes and takes on a new disguise.</p>"
-        },
-        "M3QwWIU2rzRHWndo": {
-          "name": "Mimic Object",
-          "description": "<p>The mimic assumes the shape of any Medium object. This alters its visual appearance but not its size. It takes a @Check[type:perception|dc:28] check to tell the object is a creature.</p>"
-        }
-      }
-    },
-    "Red Kobold Dragon Mage (BB)": {
-      "name": "Red Kobold Dragon Mage (BB)",
-      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "8LYUZymM9ZN8WDw9": {
-          "name": "Claw"
-        },
-        "1GBTPnqIIGld3Wu1": {
-          "name": "Dragonscaled",
-          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>Red</strong> fire 5</li>\n</ul>"
-        },
-        "RDDSANqANJv09ktQ": {
-          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        },
-        "KYeYaMrxJZuncqJp": {
-          "name": "Dragon Lore"
-        }
-      }
-    },
-    "Orc Trooper (BB)": {
-      "name": "Orc Trooper (BB)",
-      "description": "<p>The typical orc trooper is a violent combatant familiar to many adventurers. Orc warriors fight for their holds, for riches, and-perhaps most of all-for glory. Proving their own strength improves their station within their orc hold, so battle is a crucial part of life for any orc who aspires to one day lead or go down in history.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "AtTvfif8mNvTl8HD": {
-          "description": "<p>When the orc is reduced to 0 Hit Points, they can use their reaction to remain conscious with 1 Hit Point, but they gain the wounded 1 condition (or increases the wounded value by 1 if they already have that condition). The orc can't use this ability at wounded 3.</p>"
-        }
-      }
-    },
-    "Drow Priestess (BB)": {
-      "name": "Drow Priestess (BB)",
-      "npcAc": "22 with shield raised",
-      "npcSenses": "darkvision",
-      "items": {
-        "TdQYYWwQZNdBaUt2": {
-          "name": "Shield",
-          "description": "<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm] or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8], but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME] it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>"
-        },
-        "9IuPTxCvRCR7HHp2": {
-          "description": "<p>When first exposed to bright light, the drow @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Can't See} until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a @Check[type:flat|dc:11]. Light doesn't blind them again for 1 hour.</p>"
-        },
-        "Eejxi0k01WzbvUUh": {
-          "description": "<p>If she @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raised a Shield} since her last turn, the priestess can spend her reaction to block a Strike. Reduce the Strike's damage by 5, but then she and the shield both take the remaining damage, possibly @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Breaking} or destroying the shield.</p>"
-        }
-      }
-    },
-    "Sewer Ooze (BB)": {
-      "name": "Sewer Ooze (BB)",
-      "description": "<p>These amorphous masses of sewage and detritus make their way through filthy culverts beneath cities. Some grow to enormous sizes and have insatiable appetites.</p>",
-      "npcSenses": "motion sense 60 feet, no vision",
-      "items": {
-        "YXsM6AcguDWAwVIt": {
-          "name": "Pseudopod"
-        },
-        "VwrlDdZczBGO5Ps4": {
-          "name": "Motion Sense 60 feet",
-          "description": "<p>A sewer ooze can sense nearby motion through vibration and air movement, allowing it to fight as well as if it could see. However, a sewer ooze can't see, so effects that depend on vision or seeing don't work on it.</p>"
-        },
-        "mdqK7RuSjtezVyS8": {
-          "name": "Filth Wave",
-          "description": "<p>The sewer ooze unleashes a wave of filth, covering all creatures within 20 feet of itself. Each creature in the area must succeed at a @Check[type:reflex|dc:17] save or take [[/r 1d4[acid]]] damage and a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls over and gains the @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] condition). A creature can Interact to clean someone off. This decreases the Speed penalty to -5 feet after 1 action, or to no penalty after 2 actions. After using Filth Wave, the ooze can't use it again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]</p>"
-        }
-      }
+      },
+      "name": "Giant Spider (BB)",
+      "npcSenses": "darkvision"
     },
     "Giant Viper (BB)": {
-      "name": "Giant Viper (BB)",
       "description": "<p>Snakes come in an array of forms, from jungle-dwelling constrictors that wrap around their prey to venomous vipers with deadly bites. Regardless, all snakes consume their prey whole by unhinging their jaws and using powerful muscles to move the food down their throats and into their stomachs.</p>\n<p>The giant viper's fangs, nearly as long as daggers, easily inspire fear. The venom injected by a giant viper can cause severe blood clotting and inflict tremendous damage.</p>",
-      "npcSenses": "low-light vision",
       "items": {
+        "1fzwu2J1jldVzBPc": {
+          "description": "<p>The giant viper uses an action to coil itself. While coiled, it can target a creature up to 10 feet away with its fangs Strike. After the giant viper Strikes with its fangs, it becomes uncoiled.</p>",
+          "name": "Coil"
+        },
         "3g9yO52wil4VC4Dz": {
           "name": "Fangs"
         },
         "MEjtnkYdPhtWGyzF": {
-          "name": "Coiled Opportunity",
-          "description": "<p>If the giant viper is coiled and a creature moves into or through a square adjacent to it, the giant viper can use its reaction to make a fangs Strike against that creature.</p>"
-        },
-        "1fzwu2J1jldVzBPc": {
-          "name": "Coil",
-          "description": "<p>The giant viper uses an action to coil itself. While coiled, it can target a creature up to 10 feet away with its fangs Strike. After the giant viper Strikes with its fangs, it becomes uncoiled.</p>"
+          "description": "<p>If the giant viper is coiled and a creature moves into or through a square adjacent to it, the giant viper can use its reaction to make a fangs Strike against that creature.</p>",
+          "name": "Coiled Opportunity"
         },
         "lqMgsu5wZAOsEwK2": {
-          "name": "Giant Viper Venom",
-          "description": "<p>A target damaged by the snake's fangs must succeed at a @Check[type:fortitude|dc:17] save or take [[/r 1d12[poison]]] damage.</p>"
+          "description": "<p>A target damaged by the snake's fangs must succeed at a @Check[type:fortitude|dc:17] save or take [[/r 1d12[poison]]] damage.</p>",
+          "name": "Giant Viper Venom"
         }
-      }
-    },
-    "Ghoul (BB)": {
-      "name": "Ghoul (BB)",
-      "description": "<p>The flesh-eating undead known as ghouls haunt sinister locations such as lonely graveyards and ruined crypts, making meals of corpses. Legends say that even those who survive a ghoul attack risk contracting a fever that eventually transforms them into ghouls.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "XJHXZOImLOORwInT": {
-          "name": "Jaws"
-        },
-        "A97t9GcQF8k7V7By": {
-          "name": "Claw"
-        },
-        "7RTjFlVzsxhjtwX4": {
-          "name": "Consume Flesh",
-          "description": "<p>The ghoul devours a chunk of a creature that died within the last hour and regains [[/r 1d6[healing]]]{1d6 Hit Points}.</p>\n<p>The ghoul can regain Hit Points from a given body only once.</p>"
-        },
-        "9TCF9GcaMoTKkPSj": {
-          "name": "Paralysis",
-          "description": "<p>Any living creature (except an elf) that takes damage from the ghoul's Strike must succeed at a @Check[type:fortitude|dc:15] save or gain the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition for 1 round and lose its next turn.</p>\n<p>If the creature is level 3 or higher, this happens only on a critical failure.</p>"
-        },
-        "rvraBop9oOSwcjkq": {
-          "name": "Swift Leap"
-        }
-      }
-    },
-    "Hobgoblin Warrior (BB)": {
-      "name": "Hobgoblin Warrior (BB)",
-      "description": "<p>Hobgoblins are singularly devoted to war, and their entire civilization is built upon fostering and maintaining conflict while simultaneously proving their superiority in battle. Highly organized, they work efficiently and effectively in groups, whether that group is a small raiding party, a roving war band, or a fully regimented army. Physically, hobgoblins stand about as tall as humans and have gray, ashen skin.</p>",
-      "npcAc": "(20 with shield raised)",
-      "npcSenses": "darkvision",
-      "items": {
-        "pwxZNOfMOm5horoq": {
-          "name": "Shield",
-          "description": "<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm] or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8], but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME] it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>"
-        },
-        "OgkLVLhW0uOMdbGj": {
-          "name": "Formation",
-          "description": "<p>When they're adjacent to at least two other allies, the hobgoblin warrior gains a +1 circumstance bonus to AC and saving throws.</p>"
-        },
-        "xolLzAgsgpzS6Nvn": {
-          "description": "<p>If they @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raised a Shield} since their last turn, the hobgoblin can spend their reaction to block a Strike. Reduce the damage by 5, but the hobgoblin and the shield both take the remaining damage, possibly @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Breaking} or destroying the shield.</p>"
-        }
-      }
-    },
-    "Sod Hound (BB)": {
-      "name": "Sod Hound (BB)",
-      "description": "<p>Earth elementals such as sod hounds make excellent bodyguards for spelunkers and are ideal protectors of important subterranean locations, such as vaults and treasuries. Coming from the Plane of Earth, they can appear in caverns deep underground or in other stony environments.</p>\n<p>Sod hounds take the form of mossy canines made of packed dirt and pebbles. They can band together with other sod hounds, traveling as a pack. They're loyal to a fault, eagerly following their summoners' commands.</p>",
-      "npcSenses": "crystal sense 60 feet, darkvision",
-      "items": {
-        "dp1n1eKrdXWBGI47": {
-          "name": "Jaws"
-        },
-        "hDYxH5VuENin7Q0I": {
-          "name": "Crystal Sense 60 feet",
-          "description": "<p>A sod hound can sense crystals or gems within 60 feet.</p>"
-        },
-        "59wy5xK7MEQmYRxg": {
-          "name": "Earth Glide",
-          "description": "<p>The sod hound burrows through any earthen matter, including rock. It moves up to 20 feet, leaving no tunnels or signs of its passing.</p>"
-        },
-        "3USivzG0qztGd1dK": {
-          "description": "<p>When the sod hound succeeds at its jaws Strike, it can use this action immediately after to automatically knock over the target, giving the target the @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60] condition.</p>"
-        }
-      }
-    },
-    "Wolf (BB)": {
-      "name": "Wolf (BB)",
-      "description": "<p>Wolves live and hunt in packs. Contrary to popular belief, these packs aren't led by the strongest in the group, but typically consist of a mated pair, their pups, and juvenile offspring from previous mating seasons. Offspring generally leave their parents' pack upon reaching maturity, at which point they seek out mates of their own to form their own packs elsewhere. Wolves don't typically view humanoids as prey animals, but extraordinary circumstances can lead wolves to attack people, especially in winter months and other situations where traditional prey (such as deer and elk) are scarce. Some beings, such as powerful vampires, can call upon wolves to aid them in combat.</p>",
-      "npcSenses": "low-light vision",
-      "items": {
-        "NX0owCPUZbsVJ4az": {
-          "name": "Jaws"
-        },
-        "GhRRqxvK6T21zheo": {
-          "name": "Pack Attack",
-          "description": "<p>If the wolf Strikes a target that at least two of the wolf's allies could reach with a melee attack, the wolf deals [[/r {1d4}]]{1d4 extra damage} on that Strike.</p>"
-        }
-      }
-    },
-    "Green Kobold Dragon Mage (BB)": {
-      "name": "Green Kobold Dragon Mage (BB)",
-      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "8LYUZymM9ZN8WDw9": {
-          "name": "Claw"
-        },
-        "1GBTPnqIIGld3Wu1": {
-          "name": "Dragonscaled",
-          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>Green</strong> poison 5</li>\n</ul>"
-        },
-        "RDDSANqANJv09ktQ": {
-          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        },
-        "KYeYaMrxJZuncqJp": {
-          "name": "Dragon Lore"
-        }
-      }
-    },
-    "Black Kobold Dragon Mage (BB)": {
-      "name": "Black Kobold Dragon Mage (BB)",
-      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "8LYUZymM9ZN8WDw9": {
-          "name": "Claw"
-        },
-        "1GBTPnqIIGld3Wu1": {
-          "name": "Dragonscaled",
-          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>Black</strong> acid 5</li>\n</ul>"
-        },
-        "RDDSANqANJv09ktQ": {
-          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        },
-        "KYeYaMrxJZuncqJp": {
-          "name": "Dragon Lore"
-        }
-      }
-    },
-    "Xulgath Warrior (BB)": {
-      "name": "Xulgath Warrior (BB)",
-      "description": "<p>Reptilian humanoids living underground, xulgaths (known as troglodytes to many surface dwellers) attack intruders in their territory on sight. They live in familial communities, battling rival groups and other aggressive underground inhabitants to survive. They occasionally raid surface settlements, usually at the behest of cruel, bloodthirsty leaders. A typical xulgath has dull gray, dark gray, or ashen scales with a long tail and bony protrusions down the length of their spine.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "b2WLYPv43nso3X3U": {
-          "name": "Jaws"
-        },
-        "C77jgOGQyRA9OepX": {
-          "name": "Claw"
-        },
-        "4NqTHQqAkLmiUovi": {
-          "name": "Stench",
-          "description": "<p>A creature that comes within @Template[type:emanation|distance:30] of the xulgath and can smell the xulgath must attempt a @Check[type:fortitude|dc:19] save. On a failure, the creature takes a -1 status penalty to all checks and DCs until it uses an action to retch. A creature that succeeds at its save isn't affected by any xulgaths' stenches for 1 minute <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>"
-        }
-      }
-    },
-    "Bugbear Marauder (BB)": {
-      "name": "Bugbear Marauder (BB)",
-      "description": "<p>These stealthy and cruel creatures delight in spreading fear and tormenting their victims. Bugbears are the monsters lurking in the closet and hiding under the bed. Preying on remote farmsteads, bugbears reveal their presence with thumps in the night or creaking boards, inspiring dread, suspicion, and fear in those they torment.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "e8BUlHLevzRJnHEc": {
-          "name": "Bushwhack",
-          "description": "<p>The bugbear marauder Strides up to 10 feet and attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD] a creature that can't see them and doesn't know where they are. If the bugbear succeeds, they also deal damage from their fist Strike to that creature.</p>"
-        },
-        "naotn6A029XPnJc1": {
-          "name": "Mauler",
-          "description": "<p>The bugbear marauder gains a +3 circumstance bonus to damage rolls against creatures they have @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei].</p>"
-        }
-      }
-    },
-    "Green Dragon Wyrmling (BB)": {
-      "name": "Green Dragon Wyrmling (BB)",
-      "npcSenses": "darkvision",
-      "items": {
-        "HAaABYYDbsq8LbrU": {
-          "name": "Jaws"
-        },
-        "gEfOwadNLpPfyfQ8": {
-          "name": "Claw"
-        },
-        "DW4EvhApIul7gVaU": {
-          "name": "Tail"
-        },
-        "4736AvChlsLG9HVa": {
-          "name": "Horn"
-        },
-        "94P2S8OyxiovGujz": {
-          "name": "Twisting Tail",
-          "description": "<p>When a creature within 10 feet uses a move action or leaves a square during a move action it's using, the dragon can use their reaction to make a tail Strike at the creature with a -2 penalty. If it hits, the creature stops moving in the square it was in when this reaction happened.</p>"
-        },
-        "j90G6J5zvaIVNb1q": {
-          "name": "Breath Weapon",
-          "description": "<p>The dragon breathes a toxic cloud that deals [[/r 5d6[poison]]] damage in a @Template[type:cone|distance:30]. Each creature in the area must attempt a @Check[type:reflex|dc:24|basic:true] save.</p>\n<p>The dragon can't use their Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
-        },
-        "d5UuF56WuHzskPO4": {
-          "name": "Draconic Frenzy",
-          "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>"
-        },
-        "kkKlT3cO51Wj2tz5": {
-          "name": "Draconic Momentum",
-          "description": "<p>When the dragon gets a critical success on a Strike, they recharge their Breath Weapon.</p>"
-        }
-      }
-    },
-    "Owlbear (BB)": {
-      "name": "Owlbear (BB)",
-      "description": "<p>The owlbear is a territorial predator with the body of a brown bear but the head-and resultant keen senses-of an owl.</p>",
-      "npcSenses": "low-light vision",
-      "items": {
-        "sqceAJWlpdKGnHvx": {
-          "name": "Talon"
-        },
-        "LIdmD7VqztundfTh": {
-          "name": "Beak"
-        },
-        "vTXaShzYmcNbRjzk": {
-          "name": "Bloodcurdling Screech",
-          "description": "<p>Each creature within @Template[type:emanation|distance:80]{80 feet} who can hear the owlbear's screech must attempt a @Check[type:will|dc:20] save. The creatures can't be affected by another screech for 1 minute. On a critical success, the creature is unaffected; on a success, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} condition; on a failure, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition; on a critical failure, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} condition and must spend its next turn running away from the owlbear.</p>"
-        },
-        "qCmKPruRObzVL1Dr": {
-          "name": "Screeching Advance",
-          "description": "<p>The owlbear makes a Bloodcurdling Screech and Strides twice. All creatures within @Template[type:emanation|distance:80]{80 feet} of the owlbear at any point during this movement are subjected to the effects of Bloodcurdling Screech.</p>"
-        },
-        "TyHmjC5wvxo29J5L": {
-          "description": "<p>When the owlbear succeeds at its talon Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] condition until the end of its next turn.</p>"
-        }
-      }
-    },
-    "Shadow (BB)": {
-      "name": "Shadow (BB)",
-      "description": "<p>Undead shadows feed on those who stray from the light.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "x47iDfIE9albveGl": {
-          "name": "Shadow Hand"
-        },
-        "tS9Kv6K4kwYFjHCT": {
-          "name": "Incorporeal",
-          "description": "<p>A shadow has no body and can pass through physical objects, though it can't end its turn inside one. Most checks that use Strength and require a body, such as @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD] and @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731], don't work against a shadow, and a shadow can't use them.</p>"
-        },
-        "ACHlnYzXVxizzqPw": {
-          "name": "Light Vulnerability",
-          "description": "<p>A weapon with a <em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]</em> spell cast on it gains the magical trait when used to attack the shadow.</p>"
-        },
-        "0Qt9ULbGzJV8ZG3W": {
-          "name": "Shadow Spawn",
-          "description": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.XrmHgbKgcHDi4OnK]{Shadow Spawn} under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow and is perpetually and incurably @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeeblement}, its shadow returns to it and the shadow spawn is extinguished.</p>"
-        },
-        "0QWVJ7Of8cQNKp0N": {
-          "name": "Slink in Shadows",
-          "description": "<p>The shadow can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa] or end its @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4] in a creature's or object's shadow.</p>"
-        },
-        "Kjifw1jgDvfmrEGU": {
-          "name": "Steal Shadow",
-          "description": "<p>If the shadow hit a living creature with a Strike on its previous action, it can use this action to pull at the target's shadow, imposing a -1 status penalty to Athletics and to attack rolls and damage rolls that use Strength. The penalty increases each time a shadow uses this ability to a maximum of -4. The penalty decreases by 1 every hour.</p>"
-        }
-      }
-    },
-    "Xulgath Boss (BB)": {
-      "name": "Xulgath Boss (BB)",
-      "description": "<p>Xulgath bosses exhibit greater strength and more affinity for violence than other members of a xulgath community.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "p1OayYNJswICCP7g": {
-          "name": "Jaws"
-        },
-        "wEVWlNgGdVwq51Y9": {
-          "name": "Claw"
-        },
-        "gV8plzH46OeVvlNG": {
-          "name": "Stench",
-          "description": "<p>A creature that comes within @Template[type:emanation|distance:30] of the xulgath and can smell the xulgath must attempt a @Check[type:fortitude|dc:19] save. On a failure, the creature takes a -1 status penalty to all checks and DCs until it uses an action to retch. A creature that succeeds at its save isn't affected by any xulgaths' stenches for 1 minute <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>"
-        },
-        "RX6HAClLi39MgLLI": {
-          "name": "Swipe",
-          "description": "<p>The xulgath boss makes two Strikes with their greataxe against two adjacent foes, both of whom are within their reach, with a +1 circumstance bonus. The second attack uses the same multiple attack penalty as the first, but attacks the xulgath boss makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its claw).</p>"
-        }
-      }
-    },
-    "Falling Ceiling (BB)": {
-      "name": "Falling Ceiling (BB)",
-      "hazardDisable": "<p>A hero must succeed at a @Check[type:thievery|dc:18|traits:hazard|name:Prevent Blocks from Falling] check on the triggering square or the ceiling to prevent the stone blocks from falling.</p>"
-    },
-    "Web Lurker (BB)": {
-      "name": "Web Lurker (BB)",
-      "description": "<p>Web lurkers, known also as ettercaps, are ugly monsters that not only dwell within the lairs of spiders and swarms, but actively cultivate and shepherd such vermin. Web lurkers hunt in forests, swamps, or scrubby hill lands. They construct structures from their webs high up in trees or within craggy, high canyons, and they surround their territory with traps constructed of the same webbing and natural material.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "pChhLSd048EpUiL0": {
-          "name": "Fangs"
-        },
-        "aoyjyhv7Dw4gIwd3": {
-          "name": "Claw"
-        },
-        "5HpQse2MIBQbs10B": {
-          "name": "Web"
-        },
-        "Kj1uqisygxPxuaC9": {
-          "name": "Spider Speak",
-          "description": "<p>The web lurker can speak with and understand spiders.</p>"
-        },
-        "P7JMDrm2HB1QPV3N": {
-          "name": "Web Lurker Venom",
-          "description": "<p>A target damaged by the web lurker's fangs must succeed at a @Check[type:fortitude|dc:19] save or take [[/r 1d12[poison]]] damage and gain the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition for 1 round.</p>"
-        },
-        "Re5HgCWQJTyzGewL": {
-          "name": "Web Trap",
-          "description": "<p>A creature hit by the web lurker's web attack gets stuck to the nearest surface. It can't move until it successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 20).</p>"
-        }
-      }
-    },
-    "Wight (BB)": {
-      "name": "Wight (BB)",
-      "description": "<p>Wights are undead humanoids that can drain the life from living creatures with but a touch. They arise as a result of necromantic rituals, especially violent deaths, or the sheer malevolent will of the deceased. Wights lurk in burial grounds, catacombs, or other places of the dead, where few living visitors dare to go.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "u9tY2pkbZxNzmxoe": {
-          "name": "Claw"
-        },
-        "Kpl3lLjfHM0hWhT5": {
-          "name": "Final Spite",
-          "description": "<p>When the wight is reduced to 0 Hit Points, it can use its reaction to make a Strike before being destroyed. It doesn't gain any Hit Points from drain life on this Strike.</p>"
-        },
-        "v2Ifd6tb1IDRFqFO": {
-          "name": "Drain Life",
-          "description": "<p>When the wight deals damage to a living creature with its claw Strike, the wight regains 2 Hit Points and the target must succeed at a @Check[type:fortitude|dc:17] save or take 2 damage that can't be healed. The wight can use drain life multiple times, but a single creature can't take more than 8 unhealable damage.</p>\n<p>Each full night of rest heals 2 of the unhealable damage, and a full day of bed rest increases the recovery to 4 of the unhealable damage.</p>"
-        }
-      }
-    },
-    "Gargoyle (BB)": {
-      "name": "Gargoyle (BB)",
-      "description": "<p>Gargoyles are monstrous hunters made entirely of stone. They look like decorative statues and use this as camouflage to hide in plain sight in cities during the day and descend upon unlucky pedestrians at night. Their most common form is that of a horned humanoid with batlike wings, but individual gargoyles vary a great deal, with some appearing more or less humanoid and others resembling something else entirely.</p>\n<p>Though most hunt alone, they sometimes form into groups called \"wings.\" All the monstrous statues atop an old building could actually be living gargoyles.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "qhS5ZEJcqNFytqWd": {
-          "name": "Jaws"
-        },
-        "cprgu1LyMWRqzI0w": {
-          "name": "Claw"
-        },
-        "DsvyLX53TeuZHMQ3": {
-          "name": "Clawed Feet",
-          "description": "<p>If the gargoyle is flying and a creature moves into an adjacent square below them, the gargoyle can use their reaction to make a claw Strike against that creature.</p>"
-        },
-        "9bomxaBEHSLvRrkq": {
-          "name": "Statue",
-          "description": "<p>Until the next time they use an action, the gargoyle appears to be a statue. A creature must succeed at a @Check[type:perception|dc:32] check to figure out that the statue is really a creature.</p>"
-        }
-      }
-    },
-    "Zephyr Hawk (BB)": {
-      "name": "Zephyr Hawk (BB)",
-      "description": "<p>Air elementals, such as the zephyr hawk, appear in a variety of sizes and shapes. From the Plane of Air, zephyr hawks are often summoned to be used as airborne messengers. Air elementals can also arrive spontaneously during powerful storms and tornadoes where elemental vortexes form.</p>\n<p>Zephyr hawks appear to be made of clouds, with distinct shapes that give them the appearance of having the wings and beaks of birds. When one sees clouds that resemble animals, they're often unknowingly observing air elementals. Zephyr hawks sometimes drift among wind currents in great flocks called casts.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "ANrh02werSO57j4X": {
-          "name": "Wing"
-        },
-        "x8uwJOVGskq8pjOH": {
-          "name": "Circling Attack",
-          "description": "<p>The zephyr hawk flies up to half its Speed, makes two wing Strikes, then flies up to half its Speed again to return to its original location. The second half of this movement doesn't trigger reactions like @UUID[Compendium.pf2e.feats-srd.Item.NMWXHGWUcZGoLDKb]. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -8 multiple attack penalty.</p>"
-        }
-      }
-    },
-    "Animated Armor (BB)": {
-      "name": "Animated Armor (BB)",
-      "description": "<p>Objects can be given a semblance of life through the use of rituals or other strange magic, turning them into animated objects. These objects move, work, and fight based on the commands given to them by their creators, who usually set them on guard duty or have them perform menial labor.</p>\n<p>Suits of animated armor might serve as guardians, but sometimes high-end martial academies use them as training partners. They're most often found in wizards' laboratories and ancient dungeons.</p>",
-      "npcAc": "(13 after construct armor breaks), construct armor",
-      "npcSenses": "darkvision",
-      "items": {
-        "jAZY8WC1BtImPyEF": {
-          "name": "Armored Fist"
-        },
-        "GhnXpFtWM1vyvu8V": {
-          "name": "Construct Armor",
-          "description": "<p>The animated armor reduces all damage it takes by 9. However, after a critical hit that deals damage, or after its HP drops below 10, its construct armor breaks. Its AC drops to 13 and it no longer reduces damage by 9.</p>"
-        }
-      }
-    },
-    "Ogre Warrior (BB)": {
-      "name": "Ogre Warrior (BB)",
-      "description": "<p>Ogres embody cruelty and brutish, amoral violence. Standing 10 feet tall and densely muscled, ogres are as strong as they are cruel. They typically enjoy remorseless violence in all of its forms. Although they prefer to vent their violent urges on smaller humanoids-the smaller, the better-ogres promise a horrifying fate for anyone unlucky enough to fall within their meaty grasp.</p>\n<p>Always eager for mayhem and murder, ogre warriors are quick to turn on their kin when there's a shortage of smaller folk to torment, so those who lead ogres do their best to keep them constantly distracted with new opportunities for raids and ruin. An ogre's deficits in both patience and intelligence make them easy to trick, giving cunning captives many ways to get the better of them.</p>",
-      "npcSenses": "darkvision"
-    },
-    "Troll (BB)": {
-      "name": "Troll (BB)",
-      "description": "<p>Common trolls are dim-witted, gangly giants who stalk the fringes of civilization. They rely on their incredible strength to overpower foes with their vicious claws and toothy maws. A troll's endless hunger drives them to consume all variety of living creatures, and this ravenous eating fuels a troll's legendary regenerative abilities. Trolls stand anywhere from 12 to 16 feet tall, though they prefer to hunch for comfort and to lull foes into a false sense of security.</p>",
-      "npcHp": "regeneration 20 (deactivated by acid or fire)",
-      "npcSenses": "darkvision",
-      "items": {
-        "f4rcDncEwu2OdC1a": {
-          "name": "Jaws"
-        },
-        "bA2QzO0CkyheAgub": {
-          "name": "Claw"
-        },
-        "50Meu5uWTOPYtMu6": {
-          "name": "Regeneration 20 (Deactivated by Acid or Fire)"
-        },
-        "scw9HnbCVwAyFzok": {
-          "description": "<p>If the troll succeeds at two claw Strikes against the same creature in the same turn, they can use this ability to automatically deal claw Strike damage to that creature.</p>"
-        }
-      }
-    },
-    "Cinder Rat (BB)": {
-      "name": "Cinder Rat (BB)",
-      "description": "<p>Fire elementals are destructive manifestations of the Plane of Fire. They sometimes come to the world in powerful places of heat and flame where elemental vortexes form, such as in volcanoes.</p>\n<p>Cinder rats are oversized rodents made of smoldering charcoal and elemental fire. Noxious fumes continually bellow from their flaming flesh. Much like terrestrial rats, cinder rats seek out secluded dens and can quickly multiply in number if left unchecked.</p>",
-      "npcSenses": "darkvision, smoke vision",
-      "items": {
-        "SNb64KWDBMrTorTI": {
-          "name": "Jaws"
-        },
-        "wqhHoIIgE3jfAgCx": {
-          "name": "Smoke Vision",
-          "description": "<p>The cinder rat ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W] condition from smoke.</p>"
-        },
-        "vhcrEIRKkfTwrwDs": {
-          "name": "Fetid Fumes",
-          "description": "<p>A cloud of smoke surrounds the cinder rat. All creatures within @Template[type:emanation|distance:5]{5 feet}, including the cinder rat, gain the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W] condition from this smoke. A creature that comes within 5 feet of the cinder rat or begins its turn within 5 feet must succeed at a @Check[type:fortitude|dc:22] save or take a -1 status penalty to all checks and DCs for 1 round <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>"
-        }
-      }
-    },
-    "Central Spears (BB)": {
-      "name": "Central Spears (BB)",
-      "hazardDisable": "<p>A hero must succeed at a @Check[type:thievery|dc:18|traits:hazard|name:Disable Mechanism] check on the triggering floor tiles or the wall sockets in the western wall.</p>",
-      "hazardReset": "<p>The central spears reset after 1 minute.</p>"
+      },
+      "name": "Giant Viper (BB)",
+      "npcSenses": "low-light vision"
     },
     "Goblin Commando (BB)": {
-      "name": "Goblin Commando (BB)",
       "description": "<p>Most goblin communities teeter in a state of barely controlled disarray-a collective of creatures operating largely on gut instinct rarely follows any clear direction. Even goblin leaders tend to be impulsive, irresponsible, and generally just not that good at actually leading.</p>\n<p>In theory, goblin commandos lead goblin raids. In practice, goblin commandos rarely continue to lead their comrades once a battle has begun. Most shirk their responsibilities in favor of wading into the fray and claiming glory from their kin.</p>",
-      "npcSenses": "darkvision",
       "items": {
         "YdD2kpKW2TNfcupL": {
-          "name": "Goblin Scuttle",
-          "description": "<p>If a goblin ally ends a move action adjacent to the goblin commando, the commando can use their reaction to @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB].</p>"
+          "description": "<p>If a goblin ally ends a move action adjacent to the goblin commando, the commando can use their reaction to @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Step}.</p>",
+          "name": "Goblin Scuttle"
         }
-      }
-    },
-    "Goblin Warrior (BB)": {
-      "name": "Goblin Warrior (BB)",
-      "description": "<p>The frontline fighters of goblin tribes prefer to fight in large groups-especially when they can outnumber their foes at least three to one. One doesn't need intense training or great toughness to become a goblin warrior. Anyone can aspire to this role, or be drafted into it during an emergency.</p>\n<p>Goblin warriors delight in wreaking havoc. They think nothing of slaughtering livestock, stealing infants, or burning down buildings purely for momentary delight. They revel in playing malicious tricks on taller humanoids, whom they call \"longshanks.\" What the goblins lack in consistency, long-term planning, and good sense, they make up for in sheer bravery and commitment.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "czwGWW73rkPW7vBg": {
-          "name": "Goblin Scuttle",
-          "description": "<p>If a goblin ally ends a move action adjacent to the goblin warrior, the warrior can use their reaction to @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB].</p>"
-        }
-      }
-    },
-    "Hell Hound (BB)": {
-      "name": "Hell Hound (BB)",
-      "description": "<p>Temperamental and quick to aggressive behavior, hell hounds are fiendish canines from a hellish plane. They're skilled hunters and can breath supernatural gouts of flame from their maws. A hell hound's appearance leaves no doubts as to its infernal origins-flesh the color of burning pitch, teeth as sharp as any fiend's pitchfork, and a shroud of ever-burning hellfire are all trademark features. Though they can't speak, they understand the Infernal language of Hell.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "IvEp0FjtG1bxA4Xw": {
-          "name": "Jaws"
-        },
-        "GsQeeSV97T6FPvoY": {
-          "name": "Breath Weapon",
-          "description": "<p>The hell hound breathes flames that deal [[/r 4d6[fire]]] damage to all creatures in a @Template[type:cone|distance:15]. Each affected creature must attempt a @Check[type:reflex|dc:19|basic:true] save.</p>\n<p>The hell hound can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}. If the hell hound would take fire damage or is the target of a fire effect, its Breath Weapon recharges.</p>"
-        },
-        "rj9VxT0ANFzZgmXI": {
-          "name": "Evil Damage",
-          "description": "<p>The hell hound's evil damage harms only characters of a good alignment.</p>"
-        }
-      }
-    },
-    "Pugwampi (BB)": {
-      "name": "Pugwampi (BB)",
-      "description": "<p>Gremlins are cruel fey tricksters and saboteurs who enjoy causing inventive destructiveness. Dog-faced pugwampis are craven, and they take great joy in the accidents and missteps caused by the ill fortune they magically project.</p>",
-      "npcSenses": "(-2 to hear things); darkvision",
-      "items": {
-        "IgVFPfZjnGqYSVAI": {
-          "name": "Animal Talker",
-          "description": "<p>Pugwampis can talk to and understand animals.</p>"
-        },
-        "AGjtcz0cAWzBXlEx": {
-          "name": "Unluck Aura",
-          "description": "<p>Creatures other than animals, gremlins, and gnolls within @Template[type:emanation|distance:20]{20 feet} become extremely unlucky. They must attempt a @Check[type:will|dc:16] save, rolling this Will save twice and using the worse result.</p>\n<p>On a successful save, the creature can't be affected by pugwampi unluck auras for 24 hours. On a failure, the creature must roll twice and use the worse result on all checks as long as it's within 20 feet of the pugwampi.</p>\n<p>Multiple pugwampis don't create any increased effect.</p>"
-        }
-      }
-    },
-    "White Kobold Dragon Mage (BB)": {
-      "name": "White Kobold Dragon Mage (BB)",
-      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "8LYUZymM9ZN8WDw9": {
-          "name": "Claw"
-        },
-        "1GBTPnqIIGld3Wu1": {
-          "name": "Dragonscaled",
-          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>White</strong> cold 5</li>\n</ul>"
-        },
-        "RDDSANqANJv09ktQ": {
-          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        },
-        "KYeYaMrxJZuncqJp": {
-          "name": "Dragon Lore"
-        }
-      }
-    },
-    "Viper (BB)": {
-      "name": "Viper (BB)",
-      "description": "<p>Each member of this family of venomous snakes has long, hinged fangs that inject potent venom in their prey. Different vipers inject different types of venom, which might result in paralysis, extreme pain and swelling, blood clotting, or even the sudden stopping of the victim's heart.</p>\n<p>Though far less of an imposing physical threat than a giant viper, a common viper poses far more danger than its size would suggest. A viper mainly hunts small mammals or lizards but will attack a humanoid it perceives as a threat.</p>",
-      "npcSenses": "low-light vision",
-      "items": {
-        "iHa81hIBKMF5eXxi": {
-          "name": "Fangs"
-        },
-        "YIHoSZN2nTp139Dg": {
-          "name": "Slink",
-          "description": "<p>If a creature ends its movement adjacent to the viper or within the viper's space, the viper can use its reaction to Stride, @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy], or @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx] up to 10 feet. It must end its movement in a location that isn't within 5 feet of a foe. This movement doesn't trigger reactions.</p>"
-        },
-        "TnaXi3v3iBDjotwd": {
-          "name": "Viper Venom",
-          "description": "<p>A target damaged by the viper's fangs must succeed at a @Check[type:fortitude|dc:16] save or take [[/r 1d10[poison]]] damage.</p>"
-        }
-      }
-    },
-    "Envenomed Lock (BB)": {
-      "name": "Envenomed Lock (BB)",
-      "description": "<p>A spring-loaded, poisoned spine is hidden near the keyhole of a lock. @UUID[Compendium.pf2e.actionspf2e.Disable Device]{Disabling} or breaking the trap doesn't disable or break the lock.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:17|traits:hazard|name:Disable the Spring Mechanism] on the spring mechanism</p>"
-    },
-    "Kobold Warrior (BB)": {
-      "name": "Kobold Warrior (BB)",
-      "description": "<p>A typical kobold trains with simple weaponry. Kobolds are capable of landing sneaky strikes against unsuspecting foes, but they're just as quick to scamper off to safety if their group wouldn't outnumber their enemies at least two to one.</p>\n<p>Kobolds believe in pragmatism, and a defeated kobold would rather surrender than face death. One might even abandon their kobold kin and concede to serve the victor if the alternative is an untimely demise.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "dF7ibA1On3Nvjxqk": {
-          "name": "Hurried Retreat",
-          "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-        },
-        "D0BJOT03V2FE7mKT": {
-          "description": "<p>The kobold warrior deals an extra [[/r {1d4}]]{1d4 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        }
-      }
-    },
-    "Basilisk (BB)": {
-      "name": "Basilisk (BB)",
-      "description": "<p>A basilisk is an eight-legged reptile that can turn creatures to stone just by looking at them.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "L4dKqPtdmyspmZtd": {
-          "name": "Jaws"
-        },
-        "Nl15bkRTLq869IPi": {
-          "name": "Petrifying Glance",
-          "description": "<p>When a creature the basilisk can see within 30 feet starts its turn, the basilisk can use its reaction to glance at the creature.</p>\n<p>The creature must attempt a @Check[type:fortitude|dc:20] save. If it fails, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition for 1 minute as its body slowly stiffens.</p>"
-        },
-        "tOCS9mkYR5K1LuOZ": {
-          "name": "Petrifying Gaze",
-          "description": "<p>The basilisk stares at a creature it can see within 30 feet. If the creature can see the basilisk, that creature must attempt a @Check[type:fortitude|dc:22] save.</p>\n<p>If it fails and hasn't already gained the slowed condition from Petrifying Glance or this ability, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition. If the creature fails this save when it already has the slowed condition from this ability or Petrifying Glance, the creature is permanently turned to @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone}.</p>\n<p>A creature petrified in this manner that is coated with fresh basilisk blood is instantly restored to flesh. A single basilisk contains enough blood to coat up to 2 creatures in this manner.</p>"
-        }
-      }
-    },
-    "Kobold Scout (BB)": {
-      "name": "Kobold Scout (BB)",
-      "description": "<p>Most kobolds encountered outside of a well-defended warren or lair are kobold scouts, trained for stalking and the hunt. They're charged with bringing back food and valuable goods to the community. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without putting themselves at much risk.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "0qvSsLdTulsncbsi": {
-          "name": "Hurried Retreat",
-          "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to an enemy.</p>"
-        },
-        "MO9W8NpBALoHHtTS": {
-          "description": "<p>The kobold scout deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
-        }
-      }
-    },
-    "Drow Warrior (BB)": {
-      "name": "Drow Warrior (BB)",
-      "description": "<p>Drow are the descendants of elves corrupted by a great evil when they fled deep underground long ago.</p>",
-      "npcSenses": "darkvision",
-      "items": {
-        "7ogTgoQe4WAvtdJ7": {
-          "description": "<p>When first exposed to bright light, the drow @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Can't See} until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a @Check[type:flat|dc:11]. Light doesn't blind them again for 1 hour.</p>"
-        },
-        "uznmLfSkP5j9qOEA": {
-          "name": "Quick Draw",
-          "description": "<p>The drow warrior draws a weapon using the Interact action, then Strikes with that weapon.</p>"
-        },
-        "ix1KQX8Ji2g1e9ID": {
-          "name": "Skewer",
-          "description": "<p>The drow warrior Strikes with their rapier, and they gain a +1 circumstance bonus to the attack roll. If they succeed, the target takes [[/r 1d6[bleed]]].</p>"
-        }
-      }
+      },
+      "name": "Goblin Commando (BB)",
+      "npcSenses": "darkvision"
     },
     "Goblin Igniter (BB)": {
-      "name": "Goblin Igniter (BB)",
       "description": "<p>Goblins find fire totally fascinating. It makes light. It's great for cooking. It's a fun toy! Some goblins take their people's admiration of fire a little bit too far and into the realm of deadly obsession.</p>\n<p>Goblins who turn their attentions to magic so they can learn to make fire from nothing are known as goblin igniters. These flame fanatics can be a great boon to a band of goblin raiders eager to torch their enemies and wreak havoc. More often, however, their presence is a double-edged sword. In the heat of the moment, goblin igniters sometimes lose sight of their goals and simply set fire to anything that will burn-including their own allies!</p>",
-      "npcSenses": "darkvision",
       "items": {
         "SScGd7XGz9e2sOLE": {
           "description": "<p>A torch sheds bright light in a 20‑foot radius (and dim light to the next 20 feet). It can be used as an improvised weapon that deals 1d4 bludgeoning damage plus 1 fire damage.</p>"
         },
         "otqsXx9gjh7rnOpU": {
-          "name": "Goblin Scuttle",
-          "description": "<p>If a goblin ally ends a move action adjacent to the goblin igniter, the igniter can use their reaction to @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB].</p>"
+          "description": "<p>If a goblin ally ends a move action adjacent to the goblin igniter, the igniter can use their reaction to @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Step}.</p>",
+          "name": "Goblin Scuttle"
         },
         "pY7DRATVeNfGLzvD": {
           "name": "Fire Lore"
         }
-      }
+      },
+      "name": "Goblin Igniter (BB)",
+      "npcSenses": "darkvision"
     },
-    "Mermaid Fountain (BB)": {
-      "name": "Mermaid Fountain (BB)",
-      "hazardDisable": "<p>@Check[type:thievery|dc:20|traits:complex,hazard|name:Disable Mechanism] on each corner mechanism (must disable all three working corners to disable the trap)</p>\n<p>Each corner mechanism has hardness 8 and 15 HP</p>",
-      "hazardRoutine": "<p>Each turn, the fountain uses 1 action. Roll a [[/r 1d10]]{1d10} and look up the result on the following list to determine which action it uses that round.</p>\n<ul>\n<li><strong>1-4 Single Target</strong> The statue spins about and sprays water at a single random target in the room. Roll a [[/r 1d4]]{1d4} and count to the number you rolled, starting with the player on your left, to determine which hero gets attacked. The spray is a ranged Strike.</li>\n<li><strong>5-7 Corner Spray</strong> The statue spins about, firing a spray of water at each corner of the room that still has a functioning corner mechanism. This hits any creature adjacent to the corner mechanism, dealing [[/r 2d6[bludgeoning]]] damage. Each hero must attempt a @Check[type:reflex|dc:15|basic:true|traits:hazard], taking no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure.</li>\n<li><strong>8-9 Half Room</strong> The statue spins about, spraying half of the room with water. Roll any die. If the result is even, it sprays the west half; otherwise, it sprays the east half. This deals [[/r 2d6[bludgeoning]]] damage to each creature in that half of the room, and each hero must attempt a @Check[type:reflex|dc:15|basic:true|traits:hazard] save.</li>\n<li><strong>10 Full Room</strong> This works just like the half-room attack, but it targets everyone in the room.</li>\n</ul>"
+    "Goblin Warrior (BB)": {
+      "description": "<p>The frontline fighters of goblin tribes prefer to fight in large groups-especially when they can outnumber their foes at least three to one. One doesn't need intense training or great toughness to become a goblin warrior. Anyone can aspire to this role, or be drafted into it during an emergency.</p>\n<p>Goblin warriors delight in wreaking havoc. They think nothing of slaughtering livestock, stealing infants, or burning down buildings purely for momentary delight. They revel in playing malicious tricks on taller humanoids, whom they call \"longshanks.\" What the goblins lack in consistency, long-term planning, and good sense, they make up for in sheer bravery and commitment.</p>",
+      "items": {
+        "czwGWW73rkPW7vBg": {
+          "description": "<p>If a goblin ally ends a move action adjacent to the goblin warrior, the warrior can use their reaction to @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Step}.</p>",
+          "name": "Goblin Scuttle"
+        }
+      },
+      "name": "Goblin Warrior (BB)",
+      "npcSenses": "darkvision"
     },
-    "Spear Launcher (BB)": {
-      "name": "Spear Launcher (BB)",
-      "description": "<p>A wall socket loaded with a spear connects to a floor tile in one 5-foot square.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:18|traits:hazard|name:Disable Mechanism] on the floor tile or wall socket.</p>"
+    "Green Dragon Wyrmling (BB)": {
+      "items": {
+        "4736AvChlsLG9HVa": {
+          "name": "Horn"
+        },
+        "94P2S8OyxiovGujz": {
+          "description": "<p>When a creature within 10 feet uses a move action or leaves a square during a move action it's using, the dragon can use their reaction to make a tail Strike at the creature with a -2 penalty. If it hits, the creature stops moving in the square it was in when this reaction happened.</p>",
+          "name": "Twisting Tail"
+        },
+        "DW4EvhApIul7gVaU": {
+          "name": "Tail"
+        },
+        "HAaABYYDbsq8LbrU": {
+          "name": "Jaws"
+        },
+        "d5UuF56WuHzskPO4": {
+          "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>",
+          "name": "Draconic Frenzy"
+        },
+        "gEfOwadNLpPfyfQ8": {
+          "name": "Claw"
+        },
+        "j90G6J5zvaIVNb1q": {
+          "description": "<p>The dragon breathes a toxic cloud that deals [[/r 5d6[poison]]] damage in a @Template[type:cone|distance:30]. Each creature in the area must attempt a @Check[type:reflex|dc:24|basic:true] save.</p>\n<p>The dragon can't use their Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
+          "name": "Breath Weapon"
+        },
+        "kkKlT3cO51Wj2tz5": {
+          "description": "<p>When the dragon gets a critical success on a Strike, they recharge their Breath Weapon.</p>",
+          "name": "Draconic Momentum"
+        }
+      },
+      "name": "Green Dragon Wyrmling (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Green Kobold Dragon Mage (BB)": {
+      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
+      "items": {
+        "1GBTPnqIIGld3Wu1": {
+          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>Green</strong> poison 5</li>\n</ul>",
+          "name": "Dragonscaled"
+        },
+        "8LYUZymM9ZN8WDw9": {
+          "name": "Claw"
+        },
+        "KYeYaMrxJZuncqJp": {
+          "name": "Dragon Lore"
+        },
+        "RDDSANqANJv09ktQ": {
+          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
+        }
+      },
+      "name": "Green Kobold Dragon Mage (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Harpy (BB)": {
+      "items": {
+        "BmhB6hl9Ivt5pnw6": {
+          "name": "Talon"
+        },
+        "NQF0fD75864Ytav1": {
+          "description": "<p>The harpy cries out an eerie, compelling melody. Each non-harpy creature within @Template[type:emanation|distance:300]{300 feet} who can hear the song must attempt a @Check[type:will|dc:21] save.</p>\n<p>On a failure, the creature becomes captivated and must spend each of its actions to move closer to the harpy as expediently as possible, while avoiding obvious dangers. If a captivated creature is adjacent to the harpy, it stays still and doesn't act. If attacked by the harpy, the creature is freed from captivation at the end of the harpy's turn.</p>\n<p>The effect lasts for 1 round, but if the harpy uses this ability again on subsequent rounds, it extends the duration by 1 round for all affected creatures.</p>\n<p>Once a creature succeeds at any save against Captivating Song, that creature is temporarily immune to Captivating Songs for 24 hours.</p>",
+          "name": "Captivating Song"
+        }
+      },
+      "name": "Harpy (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Hell Hound (BB)": {
+      "description": "<p>Temperamental and quick to aggressive behavior, hell hounds are fiendish canines from a hellish plane. They're skilled hunters and can breath supernatural gouts of flame from their maws. A hell hound's appearance leaves no doubts as to its infernal origins-flesh the color of burning pitch, teeth as sharp as any fiend's pitchfork, and a shroud of ever-burning hellfire are all trademark features. Though they can't speak, they understand the Infernal language of Hell.</p>",
+      "items": {
+        "GsQeeSV97T6FPvoY": {
+          "description": "<p>The hell hound breathes flames that deal [[/r 4d6[fire]]] damage to all creatures in a @Template[type:cone|distance:15]. Each affected creature must attempt a @Check[type:reflex|dc:19|basic:true] save.</p>\n<p>The hell hound can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}. If the hell hound would take fire damage or is the target of a fire effect, its Breath Weapon recharges.</p>",
+          "name": "Breath Weapon"
+        },
+        "IvEp0FjtG1bxA4Xw": {
+          "name": "Jaws"
+        },
+        "rj9VxT0ANFzZgmXI": {
+          "description": "<p>The hell hound's evil damage harms only characters of a good alignment.</p>",
+          "name": "Evil Damage"
+        }
+      },
+      "name": "Hell Hound (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Hidden Pit (BB)": {
+      "description": "<p>A wooden trapdoor covers a 10-foot square pit that's 20 feet deep.</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:12|traits:hazard|name:Remove the Trapdoor] to remove the trapdoor.</p>",
+      "name": "Hidden Pit (BB)"
+    },
+    "Hobgoblin Warrior (BB)": {
+      "description": "<p>Hobgoblins are singularly devoted to war, and their entire civilization is built upon fostering and maintaining conflict while simultaneously proving their superiority in battle. Highly organized, they work efficiently and effectively in groups, whether that group is a small raiding party, a roving war band, or a fully regimented army. Physically, hobgoblins stand about as tall as humans and have gray, ashen skin.</p>",
+      "items": {
+        "HKe6thyQBV2VB7mx": {
+          "description": "<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+        },
+        "OgkLVLhW0uOMdbGj": {
+          "description": "<p>When they're adjacent to at least two other allies, the hobgoblin warrior gains a +1 circumstance bonus to AC and saving throws.</p>",
+          "name": "Formation"
+        },
+        "pwxZNOfMOm5horoq": {
+          "description": "<p>A shield has 20 Hit Points. If a shield ever takes 10 damage or more, it becomes @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}. A broken shield can't be used for @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} or @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block}, but you can still @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} it. If the shield loses all 20 Hit Points, it is completely destroyed.</p>",
+          "name": "Shield"
+        },
+        "xolLzAgsgpzS6Nvn": {
+          "description": "<p>If they @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raised a Shield} since their last turn, the hobgoblin can spend their reaction to block a Strike. Reduce the damage by 5, but the hobgoblin and the shield both take the remaining damage, possibly @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Breaking} or destroying the shield.</p>"
+        }
+      },
+      "name": "Hobgoblin Warrior (BB)",
+      "npcAc": "(20 with shield raised)",
+      "npcSenses": "darkvision"
+    },
+    "Kobold Boss Zolgran (BB)": {
+      "items": {
+        "FRce1Q7000LFf9Gs": {
+          "name": "Iron Key"
+        },
+        "SKxww784aC4E2gzW": {
+          "description": "<p>Zolgran deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
+        },
+        "To4X6IhIOy6NoSDn": {
+          "_source": "equipment-srd.FVjTuBCIefAgloUU"
+        },
+        "Zdg1lW7CYLRDYorG": {
+          "name": "Claw"
+        },
+        "eU0KcVkea4Q9goDX": {
+          "name": "Dragon Lore"
+        },
+        "eh06w4tCybKWTx8g": {
+          "name": "Eggshell Necklace"
+        }
+      },
+      "name": "Kobold Boss Zolgran (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Kobold Scout (BB)": {
+      "description": "<p>Most kobolds encountered outside of a well-defended warren or lair are kobold scouts, trained for stalking and the hunt. They're charged with bringing back food and valuable goods to the community. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without putting themselves at much risk.</p>",
+      "items": {
+        "0qvSsLdTulsncbsi": {
+          "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to an enemy.</p>",
+          "name": "Hurried Retreat"
+        },
+        "MO9W8NpBALoHHtTS": {
+          "description": "<p>The kobold scout deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
+        }
+      },
+      "name": "Kobold Scout (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Kobold Trapmaster (BB)": {
+      "description": "<p>Kobold trapmasters are the masterminds behind crafting and implementing wily traps in kobold lairs, and are widely respected among their kind.</p>",
+      "items": {
+        "B1zHLf1i3W3pgrBz": {
+          "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. They must end this movement in a space that's not adjacent to any enemy.</p>",
+          "name": "Hurried Retreat"
+        },
+        "JKItbcSj8OKSSJ4H": {
+          "_source": "equipment-srd.tOhoGvmCMw4JpWcS"
+        },
+        "Mcbgf9KdTTBPuio6": {
+          "description": "<p>The kobold trapmaster deploys one spike trap in an adjacent square.</p>",
+          "name": "Quick Trap"
+        },
+        "OeI9TdZOVyciyh0n": {
+          "_source": "equipment-srd.4tIVTg9wj56RrveA"
+        },
+        "fx6MEhp40JvDajQh": {
+          "name": "Spike Trap"
+        },
+        "sXZ80MEcWSNN1Ct0": {
+          "description": "<p>Once this trap is deployed in a square, it deals [[/r 2d8[piercing]]] damage to anyone who steps on that square and they must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>",
+          "name": "Spike Trap"
+        },
+        "tsvAQRhznMxKN8gX": {
+          "_source": "equipment-srd.7tKkkF8eZ4iCLJtp"
+        },
+        "yDzPXpPBRfYG5UfY": {
+          "description": "<p>The kobold trapmaster deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
+        }
+      },
+      "name": "Kobold Trapmaster (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Kobold Warrior (BB)": {
+      "description": "<p>A typical kobold trains with simple weaponry. Kobolds are capable of landing sneaky strikes against unsuspecting foes, but they're just as quick to scamper off to safety if their group wouldn't outnumber their enemies at least two to one.</p>\n<p>Kobolds believe in pragmatism, and a defeated kobold would rather surrender than face death. One might even abandon their kobold kin and concede to serve the victor if the alternative is an untimely demise.</p>",
+      "items": {
+        "D0BJOT03V2FE7mKT": {
+          "description": "<p>The kobold warrior deals an extra [[/r {1d4}]]{1d4 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
+        },
+        "dF7ibA1On3Nvjxqk": {
+          "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>",
+          "name": "Hurried Retreat"
+        }
+      },
+      "name": "Kobold Warrior (BB)",
+      "npcSenses": "darkvision"
     },
     "Leopard (BB)": {
-      "name": "Leopard (BB)",
       "description": "<p>Leopards range from the iconic yellow with black spots to black panthers and white-furred, black-spotted snow leopards.</p>",
-      "npcSenses": "low-light vision",
       "items": {
-        "lOUQcokkfOtGgPNG": {
-          "name": "Jaws"
+        "5o4Qh26axxAvJeUp": {
+          "description": "<p>When the leopard succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn.</p>"
+        },
+        "8Hc25NUrYBwSHQuO": {
+          "description": "<p>The leopard deals an extra [[/r {1d4}]]{1d4 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
         },
         "YZxhBg9R5m8ydWm1": {
           "name": "Claw"
         },
-        "uEjliLhQWBsVYCsE": {
-          "name": "Maul",
-          "description": "<p>The leopard makes two claw Strikes against a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its claws).</p>"
-        },
         "iuFRjKw2PLJl3E3F": {
-          "name": "Pounce",
-          "description": "<p>The leopard Strides and makes a Strike at the end of that movement. If the leopard successfully used @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa] before this action, the target has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition against this Strike.</p>"
+          "description": "<p>The leopard Strides and makes a Strike at the end of that movement. If the leopard successfully used @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} before this action, the target has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition against this Strike.</p>",
+          "name": "Pounce"
         },
-        "8Hc25NUrYBwSHQuO": {
-          "description": "<p>The leopard deals an extra [[/r {1d4}]]{1d4 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
+        "lOUQcokkfOtGgPNG": {
+          "name": "Jaws"
         },
-        "5o4Qh26axxAvJeUp": {
-          "description": "<p>When the leopard succeeds at its jaws Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei] condition until the end of its next turn.</p>"
+        "uEjliLhQWBsVYCsE": {
+          "description": "<p>The leopard makes two claw Strikes against a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its claws).</p>",
+          "name": "Maul"
         }
-      }
+      },
+      "name": "Leopard (BB)",
+      "npcSenses": "low-light vision"
     },
-    "Drow Sneak (BB)": {
-      "name": "Drow Sneak (BB)",
-      "description": "<p>Loners at heart, drow sneaks trust no one-least of all fellow drow. These drow rely on awareness and adaptation to survive the cutthroat nature of their society.</p>",
-      "npcSenses": "darkvision",
+    "Mermaid Fountain (BB)": {
+      "hazardDisable": "<p>@Check[type:thievery|dc:20|traits:complex,hazard|name:Disable Mechanism] on each corner mechanism (must disable all three working corners to disable the trap)</p>\n<p>Each corner mechanism has hardness 8 and 15 HP</p>",
+      "hazardRoutine": "<p>Each turn, the fountain uses 1 action. Roll a [[/r 1d10]]{1d10} and look up the result on the following list to determine which action it uses that round.</p>\n<ul>\n<li><strong>1-4 Single Target</strong> The statue spins about and sprays water at a single random target in the room. Roll a [[/r 1d4]]{1d4} and count to the number you rolled, starting with the player on your left, to determine which hero gets attacked. The spray is a ranged Strike.</li>\n<li><strong>5-7 Corner Spray</strong> The statue spins about, firing a spray of water at each corner of the room that still has a functioning corner mechanism. This hits any creature adjacent to the corner mechanism, dealing [[/r 2d6[bludgeoning]]] damage. Each hero must attempt a @Check[type:reflex|dc:15|basic:true|traits:hazard], taking no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure.</li>\n<li><strong>8-9 Half Room</strong> The statue spins about, spraying half of the room with water. Roll any die. If the result is even, it sprays the west half; otherwise, it sprays the east half. This deals [[/r 2d6[bludgeoning]]] damage to each creature in that half of the room, and each hero must attempt a @Check[type:reflex|dc:15|basic:true|traits:hazard] save.</li>\n<li><strong>10 Full Room</strong> This works just like the half-room attack, but it targets everyone in the room.</li>\n</ul>",
+      "name": "Mermaid Fountain (BB)"
+    },
+    "Mimic (BB)": {
+      "description": "<p>Thought to be the result of a failed experiment meant to animate objects or a sinister alghollthu creation, mimics are clever monsters that can take the form of common manufactured objects. Mimics are ambush predators and voracious eaters, surprising their prey through their uncanny ability to mimic the form of common furniture and miscellany. They remain disguised until unsuspecting adventurers happen by, then they lash out in ambush.</p>\n<p>Mimics possess complex alien minds, and while often cruel and self-serving, they also enjoy conversation with their prey from time to time. For unknown reasons, they are especially interested in humanoids. Mimics have a strong dislike for others of their kind and tend to live alone. A mimic can remain in its alternate form for an extremely long period of time, sometimes remaining disguised in a dungeon chamber for decades. Regardless of how long it waits, the mimic remains vigilant and alert, ready to strike at any moment.</p>",
       "items": {
-        "ufap97U4FyUOrJZF": {
-          "description": "<p>When first exposed to bright light, the drow @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Can't See} until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a @Check[type:flat|dc:11]. Light doesn't blind them again for 1 hour.</p>"
+        "91iOrkVbzeP7cK2M": {
+          "description": "<p>Any creature that touches the mimic (usually from a fist Strike, the mimic's pseudopod, or a @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} or @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}) must succeed at a @Check[type:reflex|dc:23] save or gain the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} is 23. A melee or thrown weapon that hits the mimic sticks to it. A character can spend an action to attempt a @Check[type:athletics|dc:23] check, removing the weapon on a success. The adhesive dissolves 1 minute after the mimic dies.</p>",
+          "name": "Adhesive"
         },
-        "9nfzrmPzAAStRjAe": {
-          "name": "Quick Draw",
-          "description": "<p>The drow rogue draws a weapon using the Interact action, then Strikes with that weapon.</p>"
+        "Af1bf54ub8OEzyPl": {
+          "name": "Pseudopod"
         },
-        "NS7yHszQCqQS0Bfj": {
-          "description": "<p>The drow sneak deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg] condition.</p>"
+        "M3QwWIU2rzRHWndo": {
+          "description": "<p>The mimic assumes the shape of any Medium object. This alters its visual appearance but not its size. It takes a @Check[type:perception|dc:28] check to tell the object is a creature.</p>",
+          "name": "Mimic Object"
+        },
+        "Ns2pok7e6UtuKUd6": {
+          "description": "<p>If a creature touches the mimic while the mimic is transformed into an object, the mimic can spend its reaction to use its adhesive with no saving throw. The mimic then makes a pseudopod Strike. Object Lesson can't be used again until the mimic escapes and takes on a new disguise.</p>",
+          "name": "Object Lesson"
         }
-      }
+      },
+      "name": "Mimic (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Ogre Warrior (BB)": {
+      "description": "<p>Ogres embody cruelty and brutish, amoral violence. Standing 10 feet tall and densely muscled, ogres are as strong as they are cruel. They typically enjoy remorseless violence in all of its forms. Although they prefer to vent their violent urges on smaller humanoids-the smaller, the better-ogres promise a horrifying fate for anyone unlucky enough to fall within their meaty grasp.</p>\n<p>Always eager for mayhem and murder, ogre warriors are quick to turn on their kin when there's a shortage of smaller folk to torment, so those who lead ogres do their best to keep them constantly distracted with new opportunities for raids and ruin. An ogre's deficits in both patience and intelligence make them easy to trick, giving cunning captives many ways to get the better of them.</p>",
+      "name": "Ogre Warrior (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Orc Commander (BB)": {
+      "description": "<p>When orcs raid, the strongest is chosen as the leader. Bonds of blood are especially strong among orcs, and the mightiest orc holds are typically made up of siblings who have chosen a strong commander to protect their kinfolk.</p>",
+      "items": {
+        "xDUpwWQaZevQOkYQ": {
+          "description": "<p>When the orc is reduced to 0 Hit Points, they can use their reaction to remain conscious with 1 Hit Point, but they gain the wounded 1 condition (or increases the wounded value by 1 if they already have that condition). The orc can't use this ability at wounded 3.</p>"
+        },
+        "yeHohyJSYfiTwghO": {
+          "description": "<p>Bellowing mightily, the commander gives themself and all orc allies within @Template[type:emanation|distance:60]{60 feet} who can hear them a +1 status bonus to attack and damage rolls until the start of the orc commander's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yqq4AkZ9lrm4CcID]{Effect: Battle Cry}</p>",
+          "name": "Battle Cry"
+        }
+      },
+      "name": "Orc Commander (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Orc Scrapper (BB)": {
+      "description": "<p>Orcs are proud, strong humanoids that live by the rule that might makes right. They amass in warbands both large and small, conquering territory and robbing those unlucky enough to cross their path. Countless small settlements, outposts, and forts have fallen at the hands of orc raiders, whose sheer destructiveness leaves an indelible mark on the lands they conquer. The furious and undisciplined rankand-file scrappers make up the bulk of an orc warband.</p>",
+      "items": {
+        "CellesdPVQW5Dk8g": {
+          "description": "<p>When the orc is reduced to 0 Hit Points, they can use their reaction to remain conscious with 1 Hit Point, but they gain the wounded 1 condition (or increases the wounded value by 1 if they already have that condition). The orc can't use this ability at wounded 3.</p>"
+        }
+      },
+      "name": "Orc Scrapper (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Orc Trooper (BB)": {
+      "description": "<p>The typical orc trooper is a violent combatant familiar to many adventurers. Orc warriors fight for their holds, for riches, and-perhaps most of all-for glory. Proving their own strength improves their station within their orc hold, so battle is a crucial part of life for any orc who aspires to one day lead or go down in history.</p>",
+      "items": {
+        "AtTvfif8mNvTl8HD": {
+          "description": "<p>When the orc is reduced to 0 Hit Points, they can use their reaction to remain conscious with 1 Hit Point, but they gain the wounded 1 condition (or increases the wounded value by 1 if they already have that condition). The orc can't use this ability at wounded 3.</p>"
+        }
+      },
+      "name": "Orc Trooper (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Owlbear (BB)": {
+      "description": "<p>The owlbear is a territorial predator with the body of a brown bear but the head-and resultant keen senses-of an owl.</p>",
+      "items": {
+        "LIdmD7VqztundfTh": {
+          "name": "Beak"
+        },
+        "TyHmjC5wvxo29J5L": {
+          "description": "<p>When the owlbear succeeds at its talon Strike, it can use this action immediately after to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn.</p>"
+        },
+        "qCmKPruRObzVL1Dr": {
+          "description": "<p>The owlbear makes a Bloodcurdling Screech and Strides twice. All creatures within @Template[type:emanation|distance:80]{80 feet} of the owlbear at any point during this movement are subjected to the effects of Bloodcurdling Screech.</p>",
+          "name": "Screeching Advance"
+        },
+        "sqceAJWlpdKGnHvx": {
+          "name": "Talon"
+        },
+        "vTXaShzYmcNbRjzk": {
+          "description": "<p>Each creature within @Template[type:emanation|distance:80]{80 feet} who can hear the owlbear's screech must attempt a @Check[type:will|dc:20] save. The creatures can't be affected by another screech for 1 minute. On a critical success, the creature is unaffected; on a success, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} condition; on a failure, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition; on a critical failure, the creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} condition and must spend its next turn running away from the owlbear.</p>",
+          "name": "Bloodcurdling Screech"
+        }
+      },
+      "name": "Owlbear (BB)",
+      "npcSenses": "low-light vision"
+    },
+    "Pugwampi (BB)": {
+      "description": "<p>Gremlins are cruel fey tricksters and saboteurs who enjoy causing inventive destructiveness. Dog-faced pugwampis are craven, and they take great joy in the accidents and missteps caused by the ill fortune they magically project.</p>",
+      "items": {
+        "AGjtcz0cAWzBXlEx": {
+          "description": "<p>Creatures other than animals, gremlins, and gnolls within @Template[type:emanation|distance:20]{20 feet} become extremely unlucky. They must attempt a @Check[type:will|dc:16] save, rolling this Will save twice and using the worse result.</p>\n<p>On a successful save, the creature can't be affected by pugwampi unluck auras for 24 hours. On a failure, the creature must roll twice and use the worse result on all checks as long as it's within 20 feet of the pugwampi.</p>\n<p>Multiple pugwampis don't create any increased effect.</p>",
+          "name": "Unluck Aura"
+        },
+        "IgVFPfZjnGqYSVAI": {
+          "description": "<p>Pugwampis can talk to and understand animals.</p>",
+          "name": "Animal Talker"
+        }
+      },
+      "name": "Pugwampi (BB)",
+      "npcSenses": "(-2 to hear things); darkvision"
+    },
+    "Red Kobold Dragon Mage (BB)": {
+      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
+      "items": {
+        "1GBTPnqIIGld3Wu1": {
+          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>Red</strong> fire 5</li>\n</ul>",
+          "name": "Dragonscaled"
+        },
+        "8LYUZymM9ZN8WDw9": {
+          "name": "Claw"
+        },
+        "KYeYaMrxJZuncqJp": {
+          "name": "Dragon Lore"
+        },
+        "RDDSANqANJv09ktQ": {
+          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
+        }
+      },
+      "name": "Red Kobold Dragon Mage (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Scythe Blades (BB)": {
+      "description": "<p>Two blades, each hidden in a 15-foot-long ceiling groove, are both connected to a trip wire.</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:21|traits:hazard|name:Disable Blade] to disable each blade.</p>",
+      "name": "Scythe Blades (BB)"
+    },
+    "Sewer Ooze (BB)": {
+      "description": "<p>These amorphous masses of sewage and detritus make their way through filthy culverts beneath cities. Some grow to enormous sizes and have insatiable appetites.</p>",
+      "items": {
+        "VwrlDdZczBGO5Ps4": {
+          "description": "<p>A sewer ooze can sense nearby motion through vibration and air movement, allowing it to fight as well as if it could see. However, a sewer ooze can't see, so effects that depend on vision or seeing don't work on it.</p>",
+          "name": "Motion Sense 60 feet"
+        },
+        "YXsM6AcguDWAwVIt": {
+          "name": "Pseudopod"
+        },
+        "mdqK7RuSjtezVyS8": {
+          "description": "<p>The sewer ooze unleashes a wave of filth, covering all creatures within 20 feet of itself. Each creature in the area must succeed at a @Check[type:reflex|dc:17] save or take [[/r 1d4[acid]]] damage and a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls over and gains the @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} condition). A creature can Interact to clean someone off. This decreases the Speed penalty to -5 feet after 1 action, or to no penalty after 2 actions. After using Filth Wave, the ooze can't use it again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>",
+          "name": "Filth Wave"
+        }
+      },
+      "name": "Sewer Ooze (BB)",
+      "npcSenses": "motion sense 60 feet, no vision"
+    },
+    "Shadow (BB)": {
+      "description": "<p>Undead shadows feed on those who stray from the light.</p>",
+      "items": {
+        "0QWVJ7Of8cQNKp0N": {
+          "description": "<p>The shadow can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} or end its @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} in a creature's or object's shadow.</p>",
+          "name": "Slink in Shadows"
+        },
+        "0Qt9ULbGzJV8ZG3W": {
+          "description": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.XrmHgbKgcHDi4OnK]{Shadow Spawn} under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow and is perpetually and incurably @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeeblement}, its shadow returns to it and the shadow spawn is extinguished.</p>",
+          "name": "Shadow Spawn"
+        },
+        "ACHlnYzXVxizzqPw": {
+          "description": "<p>A weapon with a <em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light}</em> spell cast on it gains the magical trait when used to attack the shadow.</p>",
+          "name": "Light Vulnerability"
+        },
+        "Kjifw1jgDvfmrEGU": {
+          "description": "<p>If the shadow hit a living creature with a Strike on its previous action, it can use this action to pull at the target's shadow, imposing a -1 status penalty to Athletics and to attack rolls and damage rolls that use Strength. The penalty increases each time a shadow uses this ability to a maximum of -4. The penalty decreases by 1 every hour.</p>",
+          "name": "Steal Shadow"
+        },
+        "tS9Kv6K4kwYFjHCT": {
+          "description": "<p>A shadow has no body and can pass through physical objects, though it can't end its turn inside one. Most checks that use Strength and require a body, such as @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} and @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, don't work against a shadow, and a shadow can't use them.</p>",
+          "name": "Incorporeal"
+        },
+        "x47iDfIE9albveGl": {
+          "name": "Shadow Hand"
+        }
+      },
+      "name": "Shadow (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Skeletal Giant (BB)": {
+      "description": "<p>The reanimated bones of giants make excellent necromantic thralls, and the skeletal giants made out of bull-headed minotaurs are no exception. Mindless skeletons use similar tactics, so using a bigger, more durable skeleton is the only way a necromancer can obtain a more powerful thrall.</p>",
+      "items": {
+        "4gkC6A8D27Jzv7nH": {
+          "description": "<p>The skeletal giant makes two Strikes with its greatsword against two adjacent foes, both of whom are within its reach. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its horns).</p>",
+          "name": "Broad Swipe"
+        },
+        "emPcqeSFXdyr6CgV": {
+          "description": "<p>The giant Strides and makes a horns Strike with a +4 circumstance bonus to damage.</p>\n<p>If the strike hits, the giant attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the target.</p>",
+          "name": "Terrifying Charge"
+        },
+        "l4eldMZrkZle4K3Y": {
+          "name": "Horns"
+        }
+      },
+      "name": "Skeletal Giant (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Skeleton Guard (BB)": {
+      "description": "<p>Made from bones held together by foul necromancy, skeletons can often be found haunting old dungeons and patrolling forgotten cemeteries. Many evil masterminds prefer to keep eternally vigilant undead as minions to avoid the upkeep required to feed and satisfy the psychological needs of living guardians.</p>\n<p>Simple skeleton guards remain the most common skeletal minions. These skeletons are mindless, meaning they can't truly reason but can execute their basic guard duties of watching out for and attacking intruders. A group of several skeletons defending the same location usually consists of melee fighters and archers who shoot arrows from afar.</p>",
+      "items": {
+        "EzSKWtWM2tSTtZwA": {
+          "name": "Claw"
+        }
+      },
+      "name": "Skeleton Guard (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Slamming Door (BB)": {
+      "description": "<p>Pressure-sensitive panels in the floor connect to a stone slab hidden in a hallway's ceiling.</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:15|traits:hazard|name:Disable Floor Panels] on the floor panels before the slab falls.</p>",
+      "name": "Slamming Door (BB)"
+    },
+    "Sod Hound (BB)": {
+      "description": "<p>Earth elementals such as sod hounds make excellent bodyguards for spelunkers and are ideal protectors of important subterranean locations, such as vaults and treasuries. Coming from the Plane of Earth, they can appear in caverns deep underground or in other stony environments.</p>\n<p>Sod hounds take the form of mossy canines made of packed dirt and pebbles. They can band together with other sod hounds, traveling as a pack. They're loyal to a fault, eagerly following their summoners' commands.</p>",
+      "items": {
+        "3USivzG0qztGd1dK": {
+          "description": "<p>When the sod hound succeeds at its jaws Strike, it can use this action immediately after to automatically knock over the target, giving the target the @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} condition.</p>"
+        },
+        "59wy5xK7MEQmYRxg": {
+          "description": "<p>The sod hound burrows through any earthen matter, including rock. It moves up to 20 feet, leaving no tunnels or signs of its passing.</p>",
+          "name": "Earth Glide"
+        },
+        "dp1n1eKrdXWBGI47": {
+          "name": "Jaws"
+        },
+        "hDYxH5VuENin7Q0I": {
+          "description": "<p>A sod hound can sense crystals or gems within 60 feet.</p>",
+          "name": "Crystal Sense 60 feet"
+        }
+      },
+      "name": "Sod Hound (BB)",
+      "npcSenses": "crystal sense 60 feet, darkvision"
+    },
+    "Spear Launcher (BB)": {
+      "description": "<p>A wall socket loaded with a spear connects to a floor tile in one 5-foot square.</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:18|traits:hazard|name:Disable Mechanism] on the floor tile or wall socket.</p>",
+      "name": "Spear Launcher (BB)"
+    },
+    "Troll (BB)": {
+      "description": "<p>Common trolls are dim-witted, gangly giants who stalk the fringes of civilization. They rely on their incredible strength to overpower foes with their vicious claws and toothy maws. A troll's endless hunger drives them to consume all variety of living creatures, and this ravenous eating fuels a troll's legendary regenerative abilities. Trolls stand anywhere from 12 to 16 feet tall, though they prefer to hunch for comfort and to lull foes into a false sense of security.</p>",
+      "items": {
+        "50Meu5uWTOPYtMu6": {
+          "name": "Regeneration 20 (Deactivated by Acid or Fire)"
+        },
+        "bA2QzO0CkyheAgub": {
+          "name": "Claw"
+        },
+        "f4rcDncEwu2OdC1a": {
+          "name": "Jaws"
+        },
+        "scw9HnbCVwAyFzok": {
+          "description": "<p>If the troll succeeds at two claw Strikes against the same creature in the same turn, they can use this ability to automatically deal claw Strike damage to that creature.</p>"
+        }
+      },
+      "name": "Troll (BB)",
+      "npcHp": "regeneration 20 (deactivated by acid or fire)",
+      "npcSenses": "darkvision"
+    },
+    "Viper (BB)": {
+      "description": "<p>Each member of this family of venomous snakes has long, hinged fangs that inject potent venom in their prey. Different vipers inject different types of venom, which might result in paralysis, extreme pain and swelling, blood clotting, or even the sudden stopping of the victim's heart.</p>\n<p>Though far less of an imposing physical threat than a giant viper, a common viper poses far more danger than its size would suggest. A viper mainly hunts small mammals or lizards but will attack a humanoid it perceives as a threat.</p>",
+      "items": {
+        "TnaXi3v3iBDjotwd": {
+          "description": "<p>A target damaged by the viper's fangs must succeed at a @Check[type:fortitude|dc:16] save or take [[/r 1d10[poison]]] damage.</p>",
+          "name": "Viper Venom"
+        },
+        "YIHoSZN2nTp139Dg": {
+          "description": "<p>If a creature ends its movement adjacent to the viper or within the viper's space, the viper can use its reaction to Stride, @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb}, or @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim} up to 10 feet. It must end its movement in a location that isn't within 5 feet of a foe. This movement doesn't trigger reactions.</p>",
+          "name": "Slink"
+        },
+        "iHa81hIBKMF5eXxi": {
+          "name": "Fangs"
+        }
+      },
+      "name": "Viper (BB)",
+      "npcSenses": "low-light vision"
+    },
+    "Web Lurker (BB)": {
+      "description": "<p>Web lurkers, known also as ettercaps, are ugly monsters that not only dwell within the lairs of spiders and swarms, but actively cultivate and shepherd such vermin. Web lurkers hunt in forests, swamps, or scrubby hill lands. They construct structures from their webs high up in trees or within craggy, high canyons, and they surround their territory with traps constructed of the same webbing and natural material.</p>",
+      "items": {
+        "5HpQse2MIBQbs10B": {
+          "name": "Web"
+        },
+        "Kj1uqisygxPxuaC9": {
+          "description": "<p>The web lurker can speak with and understand spiders.</p>",
+          "name": "Spider Speak"
+        },
+        "P7JMDrm2HB1QPV3N": {
+          "description": "<p>A target damaged by the web lurker's fangs must succeed at a @Check[type:fortitude|dc:19] save or take [[/r 1d12[poison]]] damage and gain the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition for 1 round.</p>",
+          "name": "Web Lurker Venom"
+        },
+        "Re5HgCWQJTyzGewL": {
+          "description": "<p>A creature hit by the web lurker's web attack gets stuck to the nearest surface. It can't move until it successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 20).</p>",
+          "name": "Web Trap"
+        },
+        "aoyjyhv7Dw4gIwd3": {
+          "name": "Claw"
+        },
+        "pChhLSd048EpUiL0": {
+          "name": "Fangs"
+        }
+      },
+      "name": "Web Lurker (BB)",
+      "npcSenses": "darkvision"
+    },
+    "White Kobold Dragon Mage (BB)": {
+      "description": "<p>Kobolds are small, reptilian humanoids with physical similarities to dragons. They lurk in dark places, usually tunnels and mines, and use their cunning to even the playing field between themselves and stronger creatures. Kobold dragon mages use magic to carry out their schemes. The presence of one in a kobold warren is powerful evidence for the kobolds' claim to draconic heritage.</p>",
+      "items": {
+        "1GBTPnqIIGld3Wu1": {
+          "description": "<p>A kobold dragon mage's resistance depends on the color of its scales:</p>\n<ul>\n<li><strong>White</strong> cold 5</li>\n</ul>",
+          "name": "Dragonscaled"
+        },
+        "8LYUZymM9ZN8WDw9": {
+          "name": "Claw"
+        },
+        "KYeYaMrxJZuncqJp": {
+          "name": "Dragon Lore"
+        },
+        "RDDSANqANJv09ktQ": {
+          "description": "<p>The dragon mage deals an extra [[/r {1d6}]]{1d6 damage} to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition.</p>"
+        }
+      },
+      "name": "White Kobold Dragon Mage (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Wight (BB)": {
+      "description": "<p>Wights are undead humanoids that can drain the life from living creatures with but a touch. They arise as a result of necromantic rituals, especially violent deaths, or the sheer malevolent will of the deceased. Wights lurk in burial grounds, catacombs, or other places of the dead, where few living visitors dare to go.</p>",
+      "items": {
+        "Kpl3lLjfHM0hWhT5": {
+          "description": "<p>When the wight is reduced to 0 Hit Points, it can use its reaction to make a Strike before being destroyed. It doesn't gain any Hit Points from drain life on this Strike.</p>",
+          "name": "Final Spite"
+        },
+        "u9tY2pkbZxNzmxoe": {
+          "name": "Claw"
+        },
+        "v2Ifd6tb1IDRFqFO": {
+          "description": "<p>When the wight deals damage to a living creature with its claw Strike, the wight regains 2 Hit Points and the target must succeed at a @Check[type:fortitude|dc:17] save or take 2 damage that can't be healed. The wight can use drain life multiple times, but a single creature can't take more than 8 unhealable damage.</p>\n<p>Each full night of rest heals 2 of the unhealable damage, and a full day of bed rest increases the recovery to 4 of the unhealable damage.</p>",
+          "name": "Drain Life"
+        }
+      },
+      "name": "Wight (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Wolf (BB)": {
+      "description": "<p>Wolves live and hunt in packs. Contrary to popular belief, these packs aren't led by the strongest in the group, but typically consist of a mated pair, their pups, and juvenile offspring from previous mating seasons. Offspring generally leave their parents' pack upon reaching maturity, at which point they seek out mates of their own to form their own packs elsewhere. Wolves don't typically view humanoids as prey animals, but extraordinary circumstances can lead wolves to attack people, especially in winter months and other situations where traditional prey (such as deer and elk) are scarce. Some beings, such as powerful vampires, can call upon wolves to aid them in combat.</p>",
+      "items": {
+        "GhRRqxvK6T21zheo": {
+          "description": "<p>If the wolf Strikes a target that at least two of the wolf's allies could reach with a melee attack, the wolf deals [[/r {1d4}]]{1d4 extra damage} on that Strike.</p>",
+          "name": "Pack Attack"
+        },
+        "NX0owCPUZbsVJ4az": {
+          "name": "Jaws"
+        }
+      },
+      "name": "Wolf (BB)",
+      "npcSenses": "low-light vision"
+    },
+    "Xulgath Boss (BB)": {
+      "description": "<p>Xulgath bosses exhibit greater strength and more affinity for violence than other members of a xulgath community.</p>",
+      "items": {
+        "RX6HAClLi39MgLLI": {
+          "description": "<p>The xulgath boss makes two Strikes with their greataxe against two adjacent foes, both of whom are within their reach, with a +1 circumstance bonus. The second attack uses the same multiple attack penalty as the first, but attacks the xulgath boss makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its claw).</p>",
+          "name": "Swipe"
+        },
+        "gV8plzH46OeVvlNG": {
+          "description": "<p>A creature that comes within @Template[type:emanation|distance:30] of the xulgath and can smell the xulgath must attempt a @Check[type:fortitude|dc:19] save. On a failure, the creature takes a -1 status penalty to all checks and DCs until it uses an action to retch. A creature that succeeds at its save isn't affected by any xulgaths' stenches for 1 minute <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>",
+          "name": "Stench"
+        },
+        "p1OayYNJswICCP7g": {
+          "name": "Jaws"
+        },
+        "wEVWlNgGdVwq51Y9": {
+          "name": "Claw"
+        }
+      },
+      "name": "Xulgath Boss (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Xulgath Warrior (BB)": {
+      "description": "<p>Reptilian humanoids living underground, xulgaths (known as troglodytes to many surface dwellers) attack intruders in their territory on sight. They live in familial communities, battling rival groups and other aggressive underground inhabitants to survive. They occasionally raid surface settlements, usually at the behest of cruel, bloodthirsty leaders. A typical xulgath has dull gray, dark gray, or ashen scales with a long tail and bony protrusions down the length of their spine.</p>",
+      "items": {
+        "4NqTHQqAkLmiUovi": {
+          "description": "<p>A creature that comes within @Template[type:emanation|distance:30] of the xulgath and can smell the xulgath must attempt a @Check[type:fortitude|dc:19] save. On a failure, the creature takes a -1 status penalty to all checks and DCs until it uses an action to retch. A creature that succeeds at its save isn't affected by any xulgaths' stenches for 1 minute <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>",
+          "name": "Stench"
+        },
+        "C77jgOGQyRA9OepX": {
+          "name": "Claw"
+        },
+        "b2WLYPv43nso3X3U": {
+          "name": "Jaws"
+        }
+      },
+      "name": "Xulgath Warrior (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Zephyr Hawk (BB)": {
+      "description": "<p>Air elementals, such as the zephyr hawk, appear in a variety of sizes and shapes. From the Plane of Air, zephyr hawks are often summoned to be used as airborne messengers. Air elementals can also arrive spontaneously during powerful storms and tornadoes where elemental vortexes form.</p>\n<p>Zephyr hawks appear to be made of clouds, with distinct shapes that give them the appearance of having the wings and beaks of birds. When one sees clouds that resemble animals, they're often unknowingly observing air elementals. Zephyr hawks sometimes drift among wind currents in great flocks called casts.</p>",
+      "items": {
+        "ANrh02werSO57j4X": {
+          "name": "Wing"
+        },
+        "x8uwJOVGskq8pjOH": {
+          "description": "<p>The zephyr hawk flies up to half its Speed, makes two wing Strikes, then flies up to half its Speed again to return to its original location. The second half of this movement doesn't trigger reactions like @UUID[Compendium.pf2e.feats-srd.Item.NMWXHGWUcZGoLDKb]{Attack of Opportunity}. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -8 multiple attack penalty.</p>",
+          "name": "Circling Attack"
+        }
+      },
+      "name": "Zephyr Hawk (BB)",
+      "npcSenses": "darkvision"
+    },
+    "Zombie Shambler (BB)": {
+      "description": "<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed. A zombie shambler is a slow-moving horror most dangerous in larger groups. Among the living dead, zombies are most often used as fodder, wearing down defenses before more powerful undead arrive to deal the killing blow. Zombies can be commanded by intelligent undead and powerful necromancers.</p>",
+      "items": {
+        "Qknp3UNQSMjNTUmL": {
+          "description": "<p>When the zombie hits with its fist Strike, it can use this action to automatically give the target the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn.</p>"
+        },
+        "eulyI60JHNUYs39w": {
+          "description": "<p>A zombie has only 2 actions on its turn, and it can't use reactions.</p>",
+          "name": "Slow"
+        },
+        "v90WRjELLiKF57vr": {
+          "description": "<p><strong>Requirements</strong> The zombie has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>",
+          "name": "Jaws"
+        }
+      },
+      "name": "Zombie Shambler (BB)",
+      "npcSenses": "darkvision"
     }
-  }
+  },
+  "label": "Menace Under Otari"
 }
