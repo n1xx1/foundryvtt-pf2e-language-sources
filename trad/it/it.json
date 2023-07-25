@@ -816,6 +816,18 @@
             "TakeCover": {
                 "Title": "Andare in Copertura",
                 "Description": "<p>Ti appiattisci contro un muro o ti chini dietro un ostacolo per sfruttare meglio la copertura. Se avevi copertura standard ottieni copertura superiore, che fornisce bonus di circostanza +4 alla CA, ai TS su Riflessi contro effetti ad area e a prove di Furtività per Muoversi Furtivamente, Nascondersi o evitare l'individuazione in altri modi. Altrimenti, ottieni i benefici della copertura standard (bonus di circostanza +2). Ciò dura finché ti muovi dal tuo spazio attuale, usi un'azione attacco, diventi privo di sensi o termini quest'effetto come azione gratuita.</p>"
+            },
+            "Aid": {
+                "Notes": {
+                    "criticalFailure": "Concedi al tuo alleato penalità di circostanza -1 alla prova innescante.",
+                    "criticalSuccess": "Concedi al tuo alleato bonus di circostanza +2 alla prova innescante. Se sei maestro nella prova che hai tentato, il bonus è +3, e se sei leggendario è +4.",
+                    "success": "Concedi al tuo alleato bonus di circostanza +1 alla prova innescante."
+                },
+                "Title": "Aiutare",
+                "Warning": {
+                    "NoStatistic": "L'azione Aiutare può essere usata con statistiche diverse ma non ne è stata selezionata alcuna."
+                },
+                "Description": "<p>Cerchi di aiutare il tuo alleato in un compito. Per usare questa reazione devi per prima cosa prepararti per aiutare, in genere usando un'azione nel tuo turno. Devi spiegare al GM esattamente come cerchi dì aiutare, ed egli determina se puoi aiutare il tuo alleato.</p><p>Quando usi la tua reazione Aiutare, tenta una prova di abilità o un tiro per colpire di un tipo deciso dal GM. La CD tipica è 20, ma il GM può modificarla per compiti particolarmente facili o difficili. Il GM può aggiungere tratti pertinenti alla tua reazione Aiutare o alla tua azione preparatoria, a seconda della, situazione, o anche consentirti di Aiutare in prove che non siano di abilità o tiri per colpire.</p><p><strong>Successo Critico</strong> Concedi al tuo alleato bonus di circostanza +2 alla\nprova innescante. Se sei maestro nella prova che hai tentato, il bonus è +3, e se sei leggendario è +4.</p><p><strong>Successo</strong> Concedi al tuo alleato bonus di circostanza +1 alla prova innescante.</p><p><strong>Fallimento Critico</strong> Concedi al tuo alleato penalità di circostanza -1 alla prova innescante.</p>"
             }
         },
         "SETTINGS": {
@@ -855,6 +867,10 @@
                 "IWR": {
                     "Name": "Immunità, debolezze e resistenze",
                     "Hint": "Quando viene applicato il danno a un personaggio, aggiusta il suo valore in base alle immunità, debolezze e resistenze del personaggio."
+                },
+                "Encumbrance": {
+                    "Name": "Ingombro",
+                    "Hint": "Applica automaticamente la condizione ingombrato alle creature che portano più dei loro rispettivi limiti."
                 }
             },
             "Metagame": {
@@ -884,6 +900,10 @@
                 "ShowResults": {
                     "Name": "Mostra i risultati di attacchi e tiri salvezza",
                     "Hint": "Se abilitato, i giocatori vedranno il grado di successo delle prove fatte contro PNG e altre sorgenti non possedute da un giocatore."
+                },
+                "ShowPartyStats": {
+                    "Hint": "Se abilitato, i giocatori potranno vedere le statistiche per i membri del loro gruppo nella scheda dell'attore gruppo",
+                    "Name": "Mostra Statistiche Membri Gruppo"
                 }
             },
             "Settings": "Impostazioni",
@@ -1172,6 +1192,14 @@
                 "IgnoreAsGM": "Permette ai GM di ignorare i filtri e vedere tutte le voci.",
                 "ShowUnknownSources": "Non filtrare le voci con origine sconosciuta.",
                 "SourcesListHeader": "Origini Specificate"
+            },
+            "CampaignType": {
+                "Name": "Tipo Campagna",
+                "Hint": "Tipo regole di campagna estese per i gruppi",
+                "Choices": {
+                    "none": "Nessuno",
+                    "kingmaker": "Alba dei Re"
+                }
             }
         },
         "WeaponPropertyRune": {
@@ -2456,7 +2484,8 @@
                         "Tremorsense": "Percezione Tellurica",
                         "Wavesense": "Percezione delle Onde",
                         "Spiritsense": "Percezione spiritica",
-                        "Thoughtsense": "Percezione del Pensiero"
+                        "Thoughtsense": "Percezione del Pensiero",
+                        "Heatsight": "Vista Termica"
                     },
                     "WithAcuity": "{sense} ({acuity})",
                     "WithAcuityAndRange": "{sense} ({acuity} {range} metri)"
@@ -2529,7 +2558,9 @@
                     "BackgroundMissingHelp": "Seleziona un background per selezionare gli aumenti.",
                     "ClassMissingHelp": "Seleziona una classe per selezionare gli aumenti.",
                     "NotSelected": "Non Selezionato",
-                    "Complete": "Completo"
+                    "Complete": "Completo",
+                    "LegacyFlaws": "Difetti Legacy",
+                    "AlternateBoostsLabel": "Aumenti Alternativi"
                 },
                 "AncestryClass": "{ancestry} {class}",
                 "Configure": {
@@ -2546,7 +2577,10 @@
                     "Label": "CD di Classe",
                     "Plural": "CD di Classe",
                     "LabelSpecific": "CD di Classe ({class})"
-                }
+                },
+                "ActiveHeader": "Attività Attive",
+                "Active": "Attiva",
+                "Clear": "Rimuovi"
             },
             "Hazard": {
                 "TitleEdit": "{name} (Modifica)",
@@ -2589,7 +2623,8 @@
                         "Tooltip": "\"Quando effettui una prova con una Sapienza appropriata, la CD è facile o molto facile (prima di applicare gli aggiustamenti per la rarità).\" - MdG p. 506",
                         "Label": "Sapienza Appropriata: DC {dc1} ({adjustment1}) o DC {dc2} ({adjustment2})"
                     }
-                }
+                },
+                "SimpleSheet": "Scheda PNG Semplice"
             },
             "Plural": "Personaggi",
             "IWREditor": {
@@ -2607,10 +2642,33 @@
                 "Tabs": {
                     "Overview": "Panoramica",
                     "Inventory": "Inventario",
-                    "Orphaned": "Oggetti Orfani"
+                    "Orphaned": "Oggetti Orfani",
+                    "Exploration": "Esplorazione"
                 },
                 "Total": "Totale del Gruppo",
-                "Wealth": "Ricchezza"
+                "Wealth": "Ricchezza",
+                "InvalidCampaign": {
+                    "Message": {
+                        "mismatch": "Questo gruppo ha dei dati di campagna di tipo {current}, ma la campagna configurata è {campaignType}. Vuoi eliminare i dati di campagna attuali?",
+                        "error": "I dati di campagna di questo gruppo ({current}) sono corretti e la preparazione dei dati è fallita. Vuoi eliminare i dati di campagna esistenti?"
+                    },
+                    "Hint": "I dati di campagna non sono validi",
+                    "Title": "Campagna Non Valida ({party})"
+                },
+                "ClearActivities": {
+                    "Label": "Rimuovi",
+                    "Complete": "Le attività di esplorazione del gruppo sono state rimosse"
+                },
+                "ClownCar": {
+                    "Deposit": "Deposita Token dei PG",
+                    "Retrieve": "Recupera Token dei PG"
+                },
+                "RemoveMember": {
+                    "Title": "Rimuovi Membro",
+                    "Content": "Rimuovere il membro dal gruppo?"
+                },
+                "Rest": "Riposa",
+                "SlotAvailable": "Slot Disponibile"
             },
             "Familiar": {
                 "Master": {
@@ -2619,6 +2677,24 @@
             },
             "Hardness": {
                 "ShortLabel": "DUR"
+            },
+            "HitPoints": {
+                "Unrecoverable": "{value} punti ferita non sono attualmente recuperabili."
+            },
+            "Inventory": {
+                "DistributeCoins": "Distribuisci Monete",
+                "ItemQuantity": {
+                    "Decrease": {
+                        "Click": "[Click] Decrementa di 1",
+                        "ShiftClick": "[Shift-Click] Decrementa di 5",
+                        "ControlClick": "[Ctrl-Click] Decrementa di 10"
+                    },
+                    "Increase": {
+                        "Click": "[Click] Incrementa di 1",
+                        "ShiftClick": "[Shift-Click] Incrementa di 5",
+                        "ControlClick": "[Ctrl-Click] Incrementa di 10"
+                    }
+                }
             }
         },
         "AreaTypeCone": "Cono",
@@ -2682,7 +2758,8 @@
                     "Label": "Prova di Percezione",
                     "Secret": "Prova di Percezione (Segreta)"
                 },
-                "Recovery": "Prova per il Recupero"
+                "Recovery": "Prova per il Recupero",
+                "Counteract": "Prova di Contrasto"
             }
         },
         "PersistentDamage": {
@@ -3554,6 +3631,14 @@
             "Settings": {
                 "PacksLabel": "Pacchetti",
                 "SourcesLabel": "Origini"
+            },
+            "RollTable": {
+                "AddLabel": "Aggiungi alla Tabella di Tiro",
+                "CreateDialogText": "Creare Tabella di Tiro con {count} risultato/i?",
+                "AddDialogText": "Aggiungere {count} risultato/i alla Tabella di Tiro?",
+                "CreateLabel": "Crea Tabella di Tiro",
+                "SelectTableTitle": "Seleziona Tabella di Tiro",
+                "WeightLabel": "Peso"
             }
         },
         "Condition": {
@@ -3979,7 +4064,8 @@
             "DCWithName": "CD di {name}",
             "Errors": {
                 "TypeMissing": "il parametro type è obbgliatorio"
-            }
+            },
+            "Invalid": "Espressione @Check non valida: {message}"
         },
         "InlineTemplateErrors": {
             "TypeMissing": "Errore in @Template: il parametro type è obbligatorio",
@@ -4119,7 +4205,12 @@
         "AddLoreSkill": "Aggiungi abilità sapienza",
         "NewLoreSkill": "Nuova abilità",
         "Macro": {
-            "Plural": "Macro"
+            "Plural": "Macro",
+            "OptionToggle": {
+                "Off": "OFF",
+                "On": "ON",
+                "Notification": "{toggle} è stato impostato a {state}."
+            }
         },
         "MacroActionNoActorError": "Questo personaggio non esiste più!",
         "MacroActionNoActionError": "Questa azione non esiste più!",
@@ -4172,7 +4263,8 @@
                     "Hint": "Qua puoi eseguire una re-migrazione, che proverà a risolvere automaticamente i problemi con i personaggi e gli oggetti."
                 }
             },
-            "Troubleshooting": "Risoluzione dei Problemi"
+            "Troubleshooting": "Risoluzione dei Problemi",
+            "Running": "Migrazione sistema in esecuzione..."
         },
         "NewPlaceholders": {
             "Equipment": "Nuovo Equipaggiamento",
@@ -5424,7 +5516,8 @@
                 "Track": "Seguire Tracce",
                 "None": "Nessuna (Piena Velocità)",
                 "HalfSpeed": "Altro (Velocità Dimezzata)"
-            }
+            },
+            "ActivitiesPerDay": "Attività per Giorno"
         },
         "TrickMagicItemPopup": {
             "Label": "Seleziona una abilità da usare con Ingannare Oggetti Magici.",
@@ -5468,7 +5561,8 @@
                     "TargetToken": "Bersaglia un token premendo T passando il mouse sopra di esso. Premi Esc per annullare.",
                     "Timeout": "Creazione dell'effetto annullata per mancanza di bersaglio."
                 }
-            }
+            },
+            "warnNoActor": "Questo tiro in linea richiede un attore."
         },
         "UnitPriceLabel": "Prezzo unità",
         "UnprepareItemTitle": "Annulla Preparazione Oggetto",
@@ -5813,7 +5907,8 @@
             "Creature": "Creatura",
             "CreatureType": "Tipo Creatura",
             "Perception": "Percezione",
-            "Skills": "Abilità"
+            "Skills": "Abilità",
+            "AbilitiesLabel": "Abilità"
         },
         "ui": {
             "equipmentInvested": "Attiva Impegnare il tuo equipaggiamento",
@@ -7375,7 +7470,13 @@
             "ButtonTooltip": "Annulla"
         },
         "TraitReach200": "Portata 60m",
-        "BrowserSettingsSaved": "Le impostazioni sono state salvate"
+        "BrowserSettingsSaved": "Le impostazioni sono state salvate",
+        "MAPAbbreviationValueLabel": "{value} (PdAM {penalty})",
+        "ProgressBar": {
+            "LoadingComplete": "Caricamento completo",
+            "LoadingPack": "Caricamento {pack}"
+        },
+        "FeatDualClassHeader": "Talenti di Doppia Classe"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
@@ -7415,7 +7516,29 @@
     },
     "TYPES": {
         "Item": {
-            "campaignFeature": "Caratteristica di Campagna"
+            "campaignFeature": "Caratteristica di Campagna",
+            "action": "Azione",
+            "affliction": "Afflizione",
+            "ancestry": "Stirpe",
+            "background": "Background",
+            "backpack": "Contenitore",
+            "book": "Libro",
+            "class": "Classe",
+            "condition": "Condizione",
+            "deity": "Divinità",
+            "effect": "Effetto",
+            "equipment": "Equipaggiamento",
+            "feat": "Talento/Caratteristica",
+            "heritage": "Lignaggio",
+            "kit": "Kit",
+            "spell": "Incantesimo",
+            "treasure": "Tesoro",
+            "weapon": "Arma",
+            "consumable": "Monouso",
+            "lore": "Abilità di Sapienza",
+            "spellcastingEntry": "Voce Lancio Incantesimi",
+            "armor": "Armatura",
+            "melee": "Attacco PNG"
         }
     }
 }
