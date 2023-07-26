@@ -204,7 +204,6 @@ export const sourceState: Record<string, SourceState> = {
     source: [],
     language: [],
   },
-
   // Adventure Paths
   "age-of-ashes1": {
     name: "Age of Ashes",
@@ -558,6 +557,36 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder: Stolen Fate Player's Guide",
       "Pathfinder #190: The Choosing",
     ],
+    language: [],
+  },
+  "stolen-fate2": {
+    name: "Stolen Fate",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "stolen-fate3": {
+    name: "Stolen Fate",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "sky-kings-tomb1": {
+    name: "Sky King's Tomb",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "sky-kings-tomb2": {
+    name: "Sky King's Tomb",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "sky-kings-tomb3": {
+    name: "Sky King's Tomb",
+    type: "adventure-path",
+    source: [],
     language: [],
   },
   // Adventures
