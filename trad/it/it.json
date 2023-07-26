@@ -126,7 +126,8 @@
                 "NameLabel": "Nome Abilità",
                 "SpecialCaseLabel": "Contenitore speciale",
                 "TitleLabel": "Edita Abilità PNG"
-            }
+            },
+            "AddPassive": "Aggiungi Passiva"
         },
         "Actions": {
             "Grapple": {
@@ -1952,6 +1953,10 @@
                 "Reload": {
                     "LabelN": "Ricarica {value}",
                     "OneMinute": "1 min"
+                },
+                "CanBeAmmo": {
+                    "Label": "Usabile come Munizione",
+                    "Hint": "Indica che quest'arma può essere caricata in un'altra come munizione."
                 }
             },
             "CreationDialog": {
@@ -2304,6 +2309,12 @@
                     "Scroll": "Pergamena di {name} ({level}°)",
                     "Wand": "Bacchetta di {name} ({level}°)",
                     "CantripDeck5": "Mazzo dei trucchetti {name} (pacchetto da 5)"
+                },
+                "Bulk": {
+                    "Light": "L",
+                    "Negligible": "—",
+                    "NLight": "{light}L",
+                    "WithLight": "{bulk}, {light}L"
                 }
             },
             "Activation": {
@@ -2355,7 +2366,22 @@
                     "EndOfTurn": "Alla Fine del Turno"
                 },
                 "ShowTokenIcon": "Mostra l'icona del token?",
-                "Unidentified": "Non Identificato?"
+                "Unidentified": "Non Identificato?",
+                "Badge": {
+                    "Add": "Aggiungi Badge",
+                    "Labels": {
+                        "Add": "Aggiungi Etichetta",
+                        "Label": "Etichette",
+                        "Hint": "Possono essere date delle etichette descrittive ai valori di un badge. Dovrebbero essere abbastanza corti per entrare nel pannello dell'effetto. Le etichette servono anche per avere un valore massimo naturale per un badge.",
+                        "Placeholder": "Nuova Etichetta"
+                    },
+                    "ReevaluateFormula": "Rivaluta ogni turno?",
+                    "Type": {
+                        "counter": "Contatore",
+                        "formula": "Formula",
+                        "value": "Valore Fisso"
+                    }
+                }
             },
             "Feat": {
                 "OnlyLevel1": "Deve essere selezionato al 1° livello",
@@ -2407,7 +2433,15 @@
                     "InvalidLevel": "Si è provato ad aggiungere l'incantesimo {name} a {targetLevel}, ma l'incantesimo è {baseLevel}.",
                     "WrongSpellType": "Impossibile aggiungere incantesimo {spellType} a questa voce lancio."
                 },
-                "LevelN": "Incantesimo {level}"
+                "LevelN": "Incantesimo {level}",
+                "Counteract": {
+                    "Hint": "Se stai contrastando un'afflizione, la CD è indicata nel suo blocco statistiche. Se è un incantesimo, usa la CD dell'incantatore. Il GM può inoltre calcolare una CD a seconda del livello dell'effetto del bersaglio.",
+                    "Label": "Contrasto",
+                    "failure": "Contrasta il bersaglio se il suo livello di contrasto è inferiore a {rank}.",
+                    "success": "Contrasta il bersaglio se il suo livello di contrasto è {rank} o inferiore.",
+                    "criticalFailure": "Non riesci a contrastare il bersaglio.",
+                    "criticalSuccess": "Contrasta il bersaglio se il suo livello di contrasto è {rank} o inferiore."
+                }
             },
             "Rules": {
                 "Apply": "Applica",
@@ -2419,7 +2453,8 @@
                 },
                 "RegenerateSlug": "(Ri)genera Slug",
                 "New": "Nuovo Elemento Regola",
-                "Tab": "Regole"
+                "Tab": "Regole",
+                "Remove": "Rimuovi Elemento delle Regole"
             },
             "Backpack": {
                 "StowingLabel": "È un Contenitore di Oggetti Riposti?"
@@ -2449,7 +2484,8 @@
                     "None": "Nessuno",
                     "Defensive": "Difensiva",
                     "Interaction": "Interazione",
-                    "Offensive": "Offensiva"
+                    "Offensive": "Offensiva",
+                    "Familiar": "Abilità Famiglio"
                 },
                 "Type": {
                     "Activity": "Attività",
@@ -2457,6 +2493,9 @@
                     "Single": "Azione Singola",
                     "Reaction": "Reazione"
                 }
+            },
+            "CampaignFeature": {
+                "CampaignLabel": "Campagna"
             }
         },
         "Actor": {
@@ -2712,7 +2751,8 @@
             "ModifiersEmpty": "Nessun Modificatore",
             "Select": "Ispeziona Tiro",
             "Title": "Ispezione Tiro",
-            "RollOptions": "Opzioni Tiro"
+            "RollOptions": "Opzioni Tiro",
+            "FlatCheckNoModifiers": "Le prove semplici non includono mai alcun modificatore, bonus o penalità."
         },
         "Check": {
             "DC": {
@@ -4063,7 +4103,10 @@
             "BasicWithSave": "base su {save}",
             "DCWithName": "CD di {name}",
             "Errors": {
-                "TypeMissing": "il parametro type è obbgliatorio"
+                "TypeMissing": "il parametro type è obbgliatorio",
+                "DCAndDefense": "non è possibile avere sia il parametro dc che il parametro defense",
+                "AdjustmentLengthMismatch": "il numero dei parametri type e adjustment non corrisponde",
+                "NonIntegerAdjustment": "i parametri di adjustments devono essere interi"
             },
             "Invalid": "Espressione @Check non valida: {message}"
         },
