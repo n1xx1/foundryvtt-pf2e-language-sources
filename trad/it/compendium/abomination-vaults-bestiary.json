@@ -1509,7 +1509,7 @@
             "description": "<p>Una mezza dozzina di coboldi spettrali sorgono dalle macerie in un vortice urlante</p>",
             "hazardDisable": "<p>@Check[type:intimidation|dc:18|name:Spaventare gli Spiriti] (addestrato) per spaventare gli spiriti con uno sfoggio di minacciosità, o @Check[type:religion|dc:21|name:Esorcizzare gli Spiriti] (addestrato) per esorcizzare gli spiriti</p>",
             "hazardReset": "<p>L'infestazione si disattiva se all'inizio del suo turno non ci sono creature spaventate nell'area <strong>A7</strong>. I coboldi spettrali ritornano nel cumulo di macerie.</p>\n<p>L'infestazione non può riattivarsi per 1 ora.</p>",
-            "hazardRoutine": "<p>(1 azione) Gli spiriti piombano insieme su una creatura @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata} nell'area <strong>A7</strong>, instillando sentimenti di tradimento e confusione. Il bersaglio subisce [[/r (1d10+4)[mental]]]{1d10+4 danni mentali} (TS @Check[type:will|dc:18|basic:true]).</p>",
+            "hazardRoutine": "<p>(1 azione) Gli spiriti piombano insieme su una creatura @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata} nell'area <strong>A7</strong>, instillando sentimenti di tradimento e confusione. Il bersaglio subisce @Damage[(1d10+4)[mental]]{1d10+4 danni mentali} (TS @Check[type:will|dc:18|basic:true]).</p>",
             "name": "Spiriti degli Scagliedipietra"
         },
         "Spike Launcher": {
@@ -1903,7 +1903,7 @@
             "items": {
                 "C2q1zvPuwqgQMvwX": {
                     "name": "Cambiare Forma",
-                    "description": "<ul>\n<li><strong>Umano</strong>\n<ul>\n<li><strong>Mischia</strong> pugno [[/r 1d20+16 #Pugno]]{+16}/[[/r 1d20+11 #Pugno]]{+12}/[[/r 1d20+6 #Pugno]]{+8} (agile, non letale), <strong>Danni</strong> [[/r (1d6+7)[bludgeoning]]]{1d6+7 danni contundenti}</li>\n</ul>\n</li>\n<li><strong>Lupo</strong>\n<ul>\n<li><strong>Velocità</strong> 12 metri</li>\n<li><strong>Mischia</strong> fauci [[/r 1d20+16 #Fauci]]{+16}/[[/r 1d20+11 #Fauci]]{+11}/[[/r 1d20+6 #Fauci]]{+6}, <strong>Danni</strong> [[/r (2d8+7)[piercing]]]{2d8+7 danni perforanti} più @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Gettare a Terra}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>a creatura mannara assume la sua forma umanoide, ibrida animale. Ogni forma ha un aspetto persistente e specifico. La forma naturale di una creatura mannara pura è la sua forma ibrida.</p>\n<p>In forma umanoide, la creatura mannara usa la sua taglia umanoide originale, perde i suoi Colpi con le fauci e artigli e ottiene un Colpo con il pugno che infligge danni contundenti pari ai danni taglienti inflitti dal suo artiglio.</p>\n<p>ln forma animale, la sua taglia e Velocità cambiano in quelle dell'animale, ottiene inoltre gli eventuali effetti del Colpo dell'animale che già non possedeva (come Afferrare) e perde i suoi Colpi con l'arma.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<ul>\n<li><strong>Umano</strong>\n<ul>\n<li><strong>Mischia</strong> pugno [[/r 1d20+16 #Pugno]]{+16}/[[/r 1d20+11 #Pugno]]{+12}/[[/r 1d20+6 #Pugno]]{+8} (agile, non letale), <strong>Danni</strong> @Damage[(1d6+7)[bludgeoning]]{1d6+7 danni contundenti}</li>\n</ul>\n</li>\n<li><strong>Lupo</strong>\n<ul>\n<li><strong>Velocità</strong> 12 metri</li>\n<li><strong>Mischia</strong> fauci [[/r 1d20+16 #Fauci]]{+16}/[[/r 1d20+11 #Fauci]]{+11}/[[/r 1d20+6 #Fauci]]{+6}, <strong>Danni</strong> @Damage[(2d8+7)[piercing]]{2d8+7 danni perforanti} più @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Gettare a Terra}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>a creatura mannara assume la sua forma umanoide, ibrida animale. Ogni forma ha un aspetto persistente e specifico. La forma naturale di una creatura mannara pura è la sua forma ibrida.</p>\n<p>In forma umanoide, la creatura mannara usa la sua taglia umanoide originale, perde i suoi Colpi con le fauci e artigli e ottiene un Colpo con il pugno che infligge danni contundenti pari ai danni taglienti inflitti dal suo artiglio.</p>\n<p>ln forma animale, la sua taglia e Velocità cambiano in quelle dell'animale, ottiene inoltre gli eventuali effetti del Colpo dell'animale che già non possedeva (come Afferrare) e perde i suoi Colpi con l'arma.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "txASc5iIQvLV4Nxv": {
                     "name": "Collana Ingioiellata con Focena",
@@ -2042,7 +2042,7 @@
                     "name": "Presa Shauth"
                 },
                 "9DkYcHRtL1rgB4Ob": {
-                    "description": "<p>[[/r (1d8+7)[slashing]]]{1d8+7 danni taglienti}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d8+7)[slashing]]{1d8+7 danni taglienti}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "N1zdZTTLXEp3x5eJ": {
                     "name": "Morso Perverso",
@@ -2410,7 +2410,7 @@
         "Blood of Belcorra": {
             "description": "<p>Un'immagine insanguinata di Belcorra sorge, emette una luce risucchia-anima e poi inala sangue dalle creature viventi nella stanza.</p>",
             "hazardReset": "<p>Se l'infestazione viene disattivata o distrutta mediante i danni, il fantasma insanguinato di Belcorra zampilla verso l'alto in una spirale, inzuppando la botola che conduce all'area <strong>A25</strong> prima di essere risucchiato verso l'alto attraverso il buco della serratura, il che riduce la CD di Furto per @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Scassinare la Serratura} a @Check[type:thievery|dc:20|name:Scassinare Botola|traits:action:pick-a-lock,skill,manipulate].</p>\n<p>Alla prossima alba, il sangue viene di nuovo risucchiato verso il basso di questa stanza e l'infestazione si ripristina. L'infestazione è distrutta permanentemente quando Lasda Venkervale viene salvato dall'area <strong>D9</strong>.</p>",
-            "hazardRoutine": "<p>(1 azione) L'immagine insanguinata apre la bocca e sembra inalare, risucchiando sangue dal corpo di una creatura nella sua línea di vista entro 27 metri dal centro dell'area <strong>A11</strong>. La creatura bersagliata deve effettuare un TS su @Check[type:fortitude|dc:20|traits:damaging-effect].</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata.</p>\n<p><strong>Successo</strong> La creatura subisce @Damage[1d10[bleed]]{1d10 danni da sanguinamento}.</p>\n<p><strong>Fallimento</strong> La creatura subisce [[/r (1d10+6)[bleed]]]{1d10+6 danni da sanguinamento}.</p>\n<p><strong>Fallimento Critico</strong> La creatura subisce [[/r (2d10+6)[bleed]]]{2d10+6 danni da sanguinamento} ed è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolita 2} finché è sanguinante.</p>",
+            "hazardRoutine": "<p>(1 azione) L'immagine insanguinata apre la bocca e sembra inalare, risucchiando sangue dal corpo di una creatura nella sua línea di vista entro 27 metri dal centro dell'area <strong>A11</strong>. La creatura bersagliata deve effettuare un TS su @Check[type:fortitude|dc:20|traits:damaging-effect].</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata.</p>\n<p><strong>Successo</strong> La creatura subisce @Damage[1d10[bleed]]{1d10 danni da sanguinamento}.</p>\n<p><strong>Fallimento</strong> La creatura subisce @Damage[(1d10+6)[bleed]]{1d10+6 danni da sanguinamento}.</p>\n<p><strong>Fallimento Critico</strong> La creatura subisce @Damage[(2d10+6)[bleed]]{2d10+6 danni da sanguinamento} ed è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolita 2} finché è sanguinante.</p>",
             "name": "Sangue di Belcorra",
             "hazardDisable": "<p>@Check[type:thievery|dc:22|name:Ripulire Sangue] (addestrato) per ripulire la macchia di sangue a sufficienza da disperdere le energie necromantiche dell'infestazione o @Check[type:religion|dc:20|name:Esorcizzare Infestazione] (addestrato) per esorcizzare l'infestazione</p>"
         },
@@ -3042,7 +3042,7 @@
                 },
                 "QaDq4G70qrufNlS5": {
                     "name": "Spremere Linfa Vitale",
-                    "description": "<p><strong>Requisiti</strong> Lo shanrigol tiene @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} una creatura</p>\n<hr />\n<p><strong>Effetto</strong> Lo shanrigol estrae l'essenza vitale dal suo bersaglio, infliggendo [[/r (1d10+11)[bludgeoning]]]{1d10+11 danni contundenti} e @Damage[1d6[bleed]]{1d6 danni da sanguinamento} (TS @Check[type:fortitude|dc:25|basic:true]).</p>\n<p>Lo shanrigol recupera Punti Ferita temporanei pari all'ammontare di danni contundenti subiti da un singolo bersaglio; questi Punti Ferita temporanei durano 1 minuto.</p>"
+                    "description": "<p><strong>Requisiti</strong> Lo shanrigol tiene @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} una creatura</p>\n<hr />\n<p><strong>Effetto</strong> Lo shanrigol estrae l'essenza vitale dal suo bersaglio, infliggendo @Damage[(1d10+11)[bludgeoning]]{1d10+11 danni contundenti} e @Damage[1d6[bleed]]{1d6 danni da sanguinamento} (TS @Check[type:fortitude|dc:25|basic:true]).</p>\n<p>Lo shanrigol recupera Punti Ferita temporanei pari all'ammontare di danni contundenti subiti da un singolo bersaglio; questi Punti Ferita temporanei durano 1 minuto.</p>"
                 },
                 "nQoYz6B0Wx0OjS4e": {
                     "name": "Passo Ondeggiante",
@@ -3116,7 +3116,7 @@
                 },
                 "taKy6ih4jlHzjBsw": {
                     "name": "Spremere Linfa Vitale",
-                    "description": "<p><strong>Requisiti</strong> Lo shanrigol tiene afferrata una creatura.</p>\n<hr />\n<p><strong>Effetto</strong> Lo shanrigol estrae l'essenza vitale dal suo bersaglio, infliggendo [[/r (1d6+5)[bludgeoning]]]{1d6+5 danni contundenti} e @Damage[1d4[bleed]]{1d4 danni da sanguinamento} (TS @Check[type:fortitude|dc:18|basic:true]).</p>\n<p>Lo shanrigol recupera Punti Ferita temporanei pari all'ammontare di danni contundenti subiti da un singolo bersaglio; questi Punti Ferita temporanei durano 1 minuto.</p>"
+                    "description": "<p><strong>Requisiti</strong> Lo shanrigol tiene afferrata una creatura.</p>\n<hr />\n<p><strong>Effetto</strong> Lo shanrigol estrae l'essenza vitale dal suo bersaglio, infliggendo @Damage[(1d6+5)[bludgeoning]]{1d6+5 danni contundenti} e @Damage[1d4[bleed]]{1d4 danni da sanguinamento} (TS @Check[type:fortitude|dc:18|basic:true]).</p>\n<p>Lo shanrigol recupera Punti Ferita temporanei pari all'ammontare di danni contundenti subiti da un singolo bersaglio; questi Punti Ferita temporanei durano 1 minuto.</p>"
                 },
                 "f7rkC7qodqH9NbVI": {
                     "name": "Percezione Tellurica (impreciso) 9 metri"
@@ -3159,7 +3159,7 @@
                     "name": "Percezione Tellurica (impreciso) 9 metri"
                 },
                 "S31ljAQqgmPf1CMj": {
-                    "description": "<p>[[/r (1d8+12)[bludgeoning]]]{1d8+12 danni}, DC 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>",
+                    "description": "<p>@Damage[(1d8+12)[bludgeoning]]{1d8+12 danni}, DC 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>",
                     "name": "Stritolare (solo Afferrato da Artigli)"
                 },
                 "zb4lD1qa1tSyLe20": {

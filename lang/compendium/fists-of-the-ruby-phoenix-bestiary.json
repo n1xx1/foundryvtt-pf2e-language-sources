@@ -99,7 +99,7 @@
     "Air Rift": {
       "description": "<p>A portal to the Plane of Air rips open onstage, causing roaring winds to tear through the opera house</p>",
       "hazardDisable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (master) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendary) to open enough windows and doors to reduce its intensity, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 34) to counteract the air rift</p>",
-      "hazardRoutine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a d6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take [[/r (3d8+15)[bludgeoning]]] damage on impact.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Failure</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>",
+      "hazardRoutine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a d6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take @Damage[(3d8+15)[bludgeoning]] damage on impact.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Failure</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>",
       "name": "Air Rift"
     },
     "Akila Stormheel": {
@@ -116,7 +116,7 @@
           "name": "Powerful Leap"
         },
         "vbJAvWjij5n27otM": {
-          "description": "<p>Akila's mask melds into her face and she takes on the form of a leopard, or she returns to her halfling form. As a leopard, the only Strikes she can make are a jaws Strike (which deals [[/r (3d6+10)[piercing]]] damage plus Grab) and an agile claws Strike (which deals [[/r (3d4+10)[slashing]]] damage).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<p>Akila's mask melds into her face and she takes on the form of a leopard, or she returns to her halfling form. As a leopard, the only Strikes she can make are a jaws Strike (which deals @Damage[(3d6+10)[piercing]] damage plus Grab) and an agile claws Strike (which deals @Damage[(3d4+10)[slashing]] damage).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "zrjGLDGKhAJ9NXOK": {
           "description": "<p>Akila Strides, then Strikes. If she was @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} at the start of this action, she remains hidden until after the Strike.</p>",
@@ -399,7 +399,7 @@
           "name": "Fear of Crabs"
         },
         "Y5SmF4DMJSoXAvPr": {
-          "description": "<p>[[/r (2d12+12)[bludgeoning]]] damage, @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<p>@Damage[(2d12+12)[bludgeoning]] damage, @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "ai1WRF74rRc8qQq4": {
           "description": "<p><strong>Requirements</strong> The berberoka is waterlogged.</p>\n<hr />\n<p><strong>Effect</strong> The berberoka sprays a blast of water in a @Template[type:line|distance:60]. All creatures in the line take @Damage[6d8[bludgeoning]] damage (@Check[type:reflex|dc:35|basic:true] save). On a failed save, a creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and pushed back 5 feet (10 feet on a critically failed save).</p>",
@@ -419,6 +419,7 @@
           "name": "Bottled Lightning (Greater) (Infused)"
         },
         "A3BJD8j1RQns5h5G": {
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(7d6+18)[healing]]{7d6+18 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Z9oPh462q82IYIZ6]{Effect: Elixir of Life (Greater)}</p>",
           "name": "Elixir of Life (Greater) (Infused)"
         },
         "EfrEtVXaCW3qrooZ": {
@@ -511,6 +512,7 @@
           "name": "Greater Acid Flask"
         },
         "9EsRCYx3AFtCZRrY": {
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(7d6+18)[healing]]{7d6+18 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Z9oPh462q82IYIZ6]{Effect: Elixir of Life (Greater)}</p>",
           "name": "Elixir of Life (Greater) (Infused)"
         },
         "EfrEtVXaCW3qrooZ": {
@@ -662,7 +664,7 @@
       "description": "<p>Ghostly attackers knock the tables about, send dishes flying, and pull fleeing creatures into the room.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:34|name:Say an Iroran prayer|traits:haunt] (expert) to say an Iroran prayer and put the haunt temporarily to rest, @Check[type:occultism|dc:38|name:Ward Against Future Hauntings|traits:haunt] (master) to create a ward against future hauntings.</p>",
       "hazardReset": "<p>The haunt deactivates after 1 minute. It re-forms at the same times every day, 7 a.m. and 7 p.m., which is when the monks had their morning and evening meals. If at least two people cook a meal in the kitchen, share a meal in the refectory, and utter a prayer to Irori before the meal, the haunt becomes permanently disabled and doesn't re-form.</p>",
-      "hazardRoutine": "<p>(1 action) The haunt sends a flurry of objects hurtling across the room. All creatures in the room are battered by the ghostly objects, taking [[/r (3d10+14)[force]]] damage (@Check[type:reflex|dc:36|basic:true] save).</p>",
+      "hazardRoutine": "<p>(1 action) The haunt sends a flurry of objects hurtling across the room. All creatures in the room are battered by the ghostly objects, taking @Damage[(3d10+14)[force]] damage (@Check[type:reflex|dc:36|basic:true] save).</p>",
       "name": "Broken Rebus Attack"
     },
     "Bul-Gae": {
@@ -872,7 +874,7 @@
           "name": "Seiya! Soiya!"
         },
         "ojJLvT8xaDE2ytsM": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The night parade dances with wild abandon, unintentionally striking nearby creatures. It deals damage to each adjacent creature (@Check[type:reflex|dc:41|basic:true] save), and any creature that fails its save is pushed 10 feet in any direction as the night parade bounces it overhead. The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">1</span> [[/r (1d10+7)[bludgeoning]]] damage</p>\n<p><span class=\"pf2-icon\">2</span> [[/r (4d10+14)[bludgeoning]]] damage</p>\n<p><span class=\"pf2-icon\">3</span>[[/r (6d10+14)[bludgeoning]]] damage</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The night parade dances with wild abandon, unintentionally striking nearby creatures. It deals damage to each adjacent creature (@Check[type:reflex|dc:41|basic:true] save), and any creature that fails its save is pushed 10 feet in any direction as the night parade bounces it overhead. The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">1</span> @Damage[(1d10+7)[bludgeoning]] damage</p>\n<p><span class=\"pf2-icon\">2</span> @Damage[(4d10+14)[bludgeoning]] damage</p>\n<p><span class=\"pf2-icon\">3</span>@Damage[(6d10+14)[bludgeoning]] damage</p>",
           "name": "Wasshoi! Wasshoi!"
         },
         "uOPcA79gYqftC9U4": {
@@ -892,7 +894,7 @@
           "name": "Desecration Aura"
         },
         "LH1hblFcxQQkq5Uw": {
-          "description": "<p>Huge, [[/r (3d8+20)[bludgeoning]]] damage, Rupture 45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Huge, @Damage[(3d8+20)[bludgeoning]] damage, Rupture 45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "P20LLTWvlZ4QVjqS": {
           "description": "<p>If the desecrated guardian started its turn hidden, it can Trample and remain hidden until after its attacks.</p>",
@@ -913,7 +915,7 @@
           "name": "Rebuild"
         },
         "nSltrsS1F130TPcJ": {
-          "description": "<p>[[/r (2d8+18)[bludgeoning]]] damage, @Check[type:fortitude|dc:39|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(2d8+18)[bludgeoning]] damage, @Check[type:fortitude|dc:39|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "oFiqbLGLzFyChMOk": {
           "name": "Tail"
@@ -1072,7 +1074,7 @@
     "Floating Flamethrower": {
       "description": "<p>A floating skull of fire swoops around the arena, rotating as it weaves through the ring and releasing huge gouts of flame in random directions.</p>",
       "hazardDisable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendary) checks or castings of <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
-      "hazardRoutine": "<p>(3 actions) The trap loses 1 action per turn per successful check to disable. The floating flamethrower uses its first action to release a gout of flame in a @Template[type:cone|distance:15] that deals [[/r (4d6+4)[fire]]] damage (@Check[type:reflex|dc:40|basic:true] save), its second action to fly in a U-shape in a random direction, and its third action to release another gout of flame.</p>",
+      "hazardRoutine": "<p>(3 actions) The trap loses 1 action per turn per successful check to disable. The floating flamethrower uses its first action to release a gout of flame in a @Template[type:cone|distance:15] that deals @Damage[(4d6+4)[fire]] damage (@Check[type:reflex|dc:40|basic:true] save), its second action to fly in a U-shape in a random direction, and its third action to release another gout of flame.</p>",
       "name": "Floating Flamethrower"
     },
     "Flying Mountain Kaminari": {
@@ -1109,7 +1111,7 @@
     "Freezing Floor Tiles": {
       "description": "<p>Four remote sensors at each corner of the arena cause bursts of freezing magic to erupt from random tiles on the arena and stop creatures in their tracks.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 38) to disable one of the sensors</p>",
-      "hazardRoutine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes [[/r (2d6+2)[cold]]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>",
+      "hazardRoutine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes @Damage[(2d6+2)[cold]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>",
       "name": "Freezing Floor Tiles"
     },
     "Ghost Monk": {
@@ -1440,7 +1442,7 @@
           "name": "Deep Breath"
         },
         "sW9lqWGbyXr7xeXh": {
-          "description": "<p>Medium,[[/r (3d12+12)[bludgeoning]]] damage, Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Medium,@Damage[(3d12+12)[bludgeoning]] damage, Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "t0On0v7gyVoScNyY": {
           "description": "<p><strong>Requirements</strong> The grave spinosaurus is swimming on the surface of water</p>\n<hr />\n<p><strong>Effect</strong> With a powerful lunge to the side, the grave spinosaurus uses its sail to slap the surface of the water, creating a crushing wave of water that deals @Damage[8d6[bludgeoning]] damage in a @Template[type:cone|distance:30]. Each creature in the water in the area must attempt a @Check[type:reflex|dc:36|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
@@ -1608,7 +1610,7 @@
           "name": "Drain Bonded Item"
         },
         "wdjGItceQjeRcTN6": {
-          "description": "<p>The transmuter becomes a Medium air elemental or returns to her gnoll form. As an elemental, she has a fly Speed of 60 feet, her movement doesn't trigger reactions, and the only Strike she can make is an agile gust Strike (which deals [[/r (3d8+5)[bludgeoning]]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}). She can't cast spells in this form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<p>The transmuter becomes a Medium air elemental or returns to her gnoll form. As an elemental, she has a fly Speed of 60 feet, her movement doesn't trigger reactions, and the only Strike she can make is an agile gust Strike (which deals @Damage[(3d8+5)[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}). She can't cast spells in this form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         }
       },
       "name": "Hummingbird",
@@ -2040,7 +2042,7 @@
           "name": "Wavesense 60ft"
         },
         "xm0nQmg2QIXlVTAI": {
-          "description": "<p>Huge, [[/r (3d12+7)[bludgeoning]]] damage, Rupture 30</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Huge, @Damage[(3d12+7)[bludgeoning]] damage, Rupture 30</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         }
       },
       "name": "Kun",
@@ -2093,7 +2095,7 @@
           "name": "Lure Whip"
         },
         "7XD58BQRs2ofz0Pg": {
-          "description": "<p>Gargantuan, [[/r (3d12+10)[bludgeoning]]] damage, Rupture 44 and dimensional swallow</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Gargantuan, @Damage[(3d12+10)[bludgeoning]] damage, Rupture 44 and dimensional swallow</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "7XtPpwR5IACU4ztF": {
           "name": "Tongues (constant)"
@@ -2191,7 +2193,7 @@
           "name": "Deep Breath"
         },
         "LGmgWdigRZKEMwNq": {
-          "description": "<p>Large, [[/r (3d12+10)[bludgeoning]]], Rupture 38</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Large, @Damage[(3d12+10)[bludgeoning]], Rupture 38</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "YRXnBeKMp7iUfdDz": {
           "description": "<p>The mammoth turtle retracts its limbs and head into its shell and ends its turn. This increases its AC to 38, but it can't act except to reemerge, which it can do as a single action.</p>",
@@ -2404,7 +2406,7 @@
           "name": "Tail"
         },
         "dJGicgjzTWlYtGif": {
-          "description": "<p>Huge, [[/r (2d12+18)[bludgeoning]]] damage, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Huge, @Damage[(2d12+18)[bludgeoning]] damage, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "kfhNflMRBlfwIyzd": {
           "description": "<p><strong>HP</strong> 60, multiple heads</p>\n<p><strong>Immunities</strong> area damage</p>\n<p><strong>Weaknesses</strong> cold iron 15</p>\n<p><strong>Resistances</strong> poison 15</p>",
@@ -2519,7 +2521,7 @@
           "name": "Unfurl Realities"
         },
         "Lpp6SrBxyA8cOgeJ": {
-          "description": "<p>Gargantuan, [[/r (17d6+8)[force]]] damage, Rupture 33</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Gargantuan, @Damage[(17d6+8)[force]] damage, Rupture 33</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "Q3P4o3w6fiG3YWe5": {
           "description": "<p><strong>Trigger</strong> A creature Casts a Spell that targets the portal eater</p>\n<hr />\n<p><strong>Effect</strong> The portal eater attempts to counteract the spell (counteract modifier +32, counteract level 9th). If the spell is counteracted, it targets the caster instead.</p>",
@@ -2730,7 +2732,7 @@
           "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a @Template[type:burst|distance:10], dealing [[/r10d6]] fire damage to each creature in the area (including the target). Each creature must attempt a @Check[type:reflex|dc:30|basic:true|name:Greater Explosive Ammunition] save.</p>"
         },
         "jeST2rxuSLuKYxJN": {
-          "description": "<p>[[/r (7d4+5)[bludgeoning]]] damage, @Check[type:fortitude|dc:43|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(7d4+5)[bludgeoning]] damage, @Check[type:fortitude|dc:43|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "nJJ89mDSENmRoenK": {
           "name": "+3 status to all saves vs. evocation"
@@ -2904,7 +2906,7 @@
       "description": "<p>Buffeting winds swirl sharp grains of sand about the room.</p>",
       "hazardDisable": "<p>@Check[type:religon|dc:38|name:State an Iroran Koan|traits:haunt]{Religion} (expert) to state an Iroran koan about being complete only upon recognizing one's incompleteness, or @Check[type:occultism|dc:41|name:Ward Against Hauntings|traits:haunt] (master) to create a ward against future hauntings</p>",
       "hazardReset": "<p>The haunt deactivates after 1 minute and re-forms after 1 hour. The haunt is disabled and doesn't re-form if at least two creatures spend 1 minute to create an image with the sand. Creating the image requires a successful @Check[type:crafting|dc:30|name:Create Image in Sand] or @Check[type:thievery|dc:30|name:Create Image in Sand]check.</p>",
-      "hazardRoutine": "<p>(1 action) The haunt's violent winds savagely buffet everyone in the room, dealing[[/r (6d10+30)[bludgeoning]]] damage to living creatures (@Check[type:reflex|dc:34|basic:true|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
+      "hazardRoutine": "<p>(1 action) The haunt's violent winds savagely buffet everyone in the room, dealing@Damage[(6d10+30)[bludgeoning]] damage to living creatures (@Check[type:reflex|dc:34|basic:true|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
       "name": "Sand Whirlwind"
     },
     "Sanzuwu": {
@@ -3132,7 +3134,7 @@
           "name": "Drain Bonded Item"
         },
         "wdjGItceQjeRcTN6": {
-          "description": "<p>The transmuter becomes a Medium air elemental or returns to her gnoll form. As an elemental, she has a fly Speed of 60 feet, her movement doesn't trigger reactions, and the only Strike she can make is an agile gust Strike (which deals [[/r (3d8+5)[bludgeoning]]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}). She can't cast spells in this form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+          "description": "<p>The transmuter becomes a Medium air elemental or returns to her gnoll form. As an elemental, she has a fly Speed of 60 feet, her movement doesn't trigger reactions, and the only Strike she can make is an agile gust Strike (which deals @Damage[(3d8+5)[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}). She can't cast spells in this form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         }
       },
       "name": "Speakers to the Wind (Gnoll Cascade Bearer)",
@@ -3772,13 +3774,13 @@
           "description": "<p>Huge or smaller, foot, @Check[type:reflex|dc:34|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         },
         "LqiyG9U9vgSjT5du": {
-          "description": "<p>Medium, [[/r (4d6+8)[bludgeoning]]], Rupture 34</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Medium, @Damage[(4d6+8)[bludgeoning]], Rupture 34</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "OTDwVMsK2PJ4wuY6": {
           "name": "Jaws"
         },
         "hCSgZRqIcBMpqV5q": {
-          "description": "<p>The tyrannosaurus sweeps its tail in a @Template[type:cone|distance:15], dealing [[/r (4d8+12)[bludgeoning]]] damage to all creatures in the cone. Creatures in the area must attempt a @Check[type:reflex|dc:34|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is pushed back 10 feet, and falls prone.</p>",
+          "description": "<p>The tyrannosaurus sweeps its tail in a @Template[type:cone|distance:15], dealing @Damage[(4d8+12)[bludgeoning]] damage to all creatures in the cone. Creatures in the area must attempt a @Check[type:reflex|dc:34|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is pushed back 10 feet, and falls prone.</p>",
           "name": "Tail Swipe"
         },
         "orlHVFqe7EEW7ruO": {

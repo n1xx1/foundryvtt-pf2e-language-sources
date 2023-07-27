@@ -11,7 +11,7 @@
           "name": "Foot"
         },
         "6MBpOAXA2v4U8Ojh": {
-          "description": "<p>[[/r (2d8+2)[piercing]]], @Check[type:fortitude|dc:24|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(2d8+2)[piercing]], @Check[type:fortitude|dc:24|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "7wp3tf6myiuh5zf6": {
           "name": "Mandible"
@@ -223,7 +223,7 @@
           "name": "Plant"
         },
         "u35onovz82ogkm7o": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The corpseroot has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The corpseroot buries its roots into the creature, dealing [[/r (1d6+11)[piercing]]] damage and draining the target's life force (@Check[type:fortitude|dc:30|basic:true]). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or increases the value by 1 if already drained), and the corpseroot regains [[/r 10[healing]]]{10 HP}. If this would make a creature drained 5, the creature dies.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The corpseroot has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The corpseroot buries its roots into the creature, dealing @Damage[(1d6+11)[piercing]] damage and draining the target's life force (@Check[type:fortitude|dc:30|basic:true]). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or increases the value by 1 if already drained), and the corpseroot regains [[/r 10[healing]]]{10 HP}. If this would make a creature drained 5, the creature dies.</p>",
           "name": "Take Root"
         },
         "zu5kwhnrxafjmru7": {
@@ -245,7 +245,7 @@
           "name": "Talon"
         },
         "nYA9w4d89kX8zkyS": {
-          "description": "<p>Medium, [[/r (2d8+9)[bludgeoning]]], Rupture 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Medium, @Damage[(2d8+9)[bludgeoning]], Rupture 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "sg28ok3v73dn8dvi": {
           "description": "<p>A daqqanoenyent can Fly at half Speed while they have a Medium or smaller creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} in their talons, carrying that creature along with them.</p>",
@@ -417,7 +417,7 @@
       "description": "<p>The wall bulges out in the shape of a howling humanoid face as it twists and forms tendrils reaching for nearby creatures. This haunt is formed when a murder victim is entombed within a wall before or after their death.</p>",
       "hazardDisable": "<p>@Check[type:occultism|dc:17] (trained) to weaken the spirit, @Check[type:athletics|dc:18] (trained) to force the spirit's face back inside the wall, or @Check[type:diplomacy|dc:19] (trained) to talk down the spirit; two total successes across all skills are required to disable the haunt</p>",
       "hazardReset": "<p>The haunt deactivates 1 minute after all creatures leave the area and resets immediately thereafter. If disabled, the haunt resets after 1 day. The haunt is permanently destroyed if the remains of the deceased are removed from the wall.</p>",
-      "hazardRoutine": "<p>(3 actions) The spirit attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} up to two creatures within 10 feet with a [[/r 1d20+14 #Athletics]]{+14 Athletics modifier}, then squeezes each creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, dealing [[/r (1d10+4)[damage]]] damage. The haunt doesn't apply a multiple attack penalty to the second attempt to Grapple.</p>",
+      "hazardRoutine": "<p>(3 actions) The spirit attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} up to two creatures within 10 feet with a [[/r 1d20+14 #Athletics]]{+14 Athletics modifier}, then squeezes each creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, dealing @Damage[(1d10+4)[damage]] damage. The haunt doesn't apply a multiple attack penalty to the second attempt to Grapple.</p>",
       "name": "Entombed Spirit"
     },
     "Excorion": {
@@ -661,7 +661,7 @@
       "description": "<p>The dreaded gashadokuro is an undead haunter of the night, spawning as a giant skeleton that rises from the earth in the aftermath of a mass starvation event. These enormous creatures then seek to inflict their unending hunger on the living.</p>\n<p>A gashadokuro that comes about due to a poor growing season is more prone to stalk remote village farmlands at night, while a gashadokuro that arose from the victims of a government-instigated food shortage has few compunctions about stomping straight into bustling cities in broad daylight. These latter gashadokuro even seem to target aristocrats and government authorities-whether or not they were the same politicians whose negligence resulted in the famine in the first place-leading many to believe that the gashadokuro seeks to slake its thirst for revenge even more than it seeks to sate its unending hunger.</p>",
       "items": {
         "0VnHFn3wn3nNZ2Tp": {
-          "description": "<p>Large, [[/r (3d6+8)[bludgeoning]]], Rupture 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Large, @Damage[(3d6+8)[bludgeoning]], Rupture 24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "ecn8ua35xgwp7abu": {
           "description": "<p>If the gashadokuro kills a creature with Swallow Whole, it immediately regains Hit Points equal to the swallowed creature's level. As long as the gashadokuro still exists, creatures consumed in this way can't be resurrected except by <em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}</em> or a similarly powerful effect.</p>",
@@ -842,7 +842,7 @@
           "name": "Teleporting Clothesline"
         },
         "ukiq9bqccfjpoc72": {
-          "description": "<p><strong>Requirements</strong> The grappling spirit has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The spirit saps their opponent's strength with a supernatural grip. The grappling spirit attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature they have grabbed or restrained, also adding [[/r (4d10+12)[negative]]] damage, depending on the result.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes double damage. If it's already enfeebled, it falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. If not, it is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of its next turn and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute.</p>\n<p><strong>Success</strong> The creature takes full damage and is enfeebled 1 until the end of its next turn.</p>",
+          "description": "<p><strong>Requirements</strong> The grappling spirit has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The spirit saps their opponent's strength with a supernatural grip. The grappling spirit attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature they have grabbed or restrained, also adding @Damage[(4d10+12)[negative]] damage, depending on the result.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes double damage. If it's already enfeebled, it falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. If not, it is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of its next turn and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute.</p>\n<p><strong>Success</strong> The creature takes full damage and is enfeebled 1 until the end of its next turn.</p>",
           "name": "Submission Lock"
         },
         "vqtr9yyxp561y34u": {
@@ -857,7 +857,7 @@
       "description": "<p>Hands of the buried dead rise from the ground, grabbing and tearing at creatures in the area to drag them underground.</p>",
       "hazardDisable": "<p>@Check[type:religion|dc:22] (trained) to ritually pray for the dead or @Check[type:occultism|dc:24] (trained) to exorcise the spirits' anger; two total successes are required to disable the haunt</p>",
       "hazardReset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
-      "hazardRoutine": "<p>(1 action) The grasping hands batter all creatures in the area, dealing [[/r (2d6+7)[bludgeoning]]] damage (@Check[type:reflex|dc:26|basic:true] save). On a critical failure, a creature is dragged partially into the earth, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 26). If already immobilized, it's fully submerged and must hold its breath to avoid suffocation.</p>",
+      "hazardRoutine": "<p>(1 action) The grasping hands batter all creatures in the area, dealing @Damage[(2d6+7)[bludgeoning]] damage (@Check[type:reflex|dc:26|basic:true] save). On a critical failure, a creature is dragged partially into the earth, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 26). If already immobilized, it's fully submerged and must hold its breath to avoid suffocation.</p>",
       "name": "Grasping Dead"
     },
     "Graveknight Warmaster": {
@@ -949,7 +949,7 @@
           "description": "<p>Medium, @Damage[4d6[negative]] plus @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}, Rupture 32</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "6FVQCXo7u4wEwCcA": {
-          "description": "<p>[[/r (1d10+7)[bludgeoning]]] plus @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}, @Check[type:fortitude|dc:36|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(1d10+7)[bludgeoning]] plus @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}, @Check[type:fortitude|dc:36|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "6leqktn7qesbdoh1": {
           "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A cloud of choking, acrid dust swirls about the hollow serpent, draining moisture from any enemy within. A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/r 1d4 #rounds]]{1d4 rounds} ([[/r 2d4 #rounds]]{2d4 rounds} on a critical failure). A creature that succeeds is temporarily immune for 24 hours.</p>",
@@ -1231,7 +1231,7 @@
           "name": "Consecration Vulnerability"
         },
         "obhnbsaze5pkt16e": {
-          "description": "<p>The jitterbone elongates their bones, causing jagged bone spikes to protrude from their skin. While Osseous Defense is active, the jitterbone can make bone spike and bone dart Strikes and gains resistance 5 to piercing damage and slashing damage. The jitterbone loses Compression while their Osseous Defense is active. The jitterbone can end Osseous Defense as a single action, retracting their bones back into their body.</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> bone spike [[/r 1d20+14 #Bone Spike Attack]]{+14}/[[/r 1d20+14 #Bone Spike Attack]]{+9}/[[/r 1d20+14 #Bone Spike Attack]]{+4} (finesse), <strong>Damage</strong> [[/r (2d8+2)[piercing]]] plus @Damage[1d6[bleed]]</p>\n<p><strong>Ranged</strong> <span class=\"pf2-icon\">1</span> bone dart [[/r 1d20+14 #Bone Dart Attack]]{+14}/[[/r 1d20+14 #Bone Dart Attack]]{+10}/[[/r 1d20+14 #Bone Dart Attack]]{+6} (agile, thrown 20 feet), <strong>Damage</strong> [[/r (2d6+2)[piercing]]]</p>",
+          "description": "<p>The jitterbone elongates their bones, causing jagged bone spikes to protrude from their skin. While Osseous Defense is active, the jitterbone can make bone spike and bone dart Strikes and gains resistance 5 to piercing damage and slashing damage. The jitterbone loses Compression while their Osseous Defense is active. The jitterbone can end Osseous Defense as a single action, retracting their bones back into their body.</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> bone spike [[/r 1d20+14 #Bone Spike Attack]]{+14}/[[/r 1d20+14 #Bone Spike Attack]]{+9}/[[/r 1d20+14 #Bone Spike Attack]]{+4} (finesse), <strong>Damage</strong> @Damage[(2d8+2)[piercing]] plus @Damage[1d6[bleed]]</p>\n<p><strong>Ranged</strong> <span class=\"pf2-icon\">1</span> bone dart [[/r 1d20+14 #Bone Dart Attack]]{+14}/[[/r 1d20+14 #Bone Dart Attack]]{+10}/[[/r 1d20+14 #Bone Dart Attack]]{+6} (agile, thrown 20 feet), <strong>Damage</strong> @Damage[(2d6+2)[piercing]]</p>",
           "name": "Osseous Defense"
         },
         "onsl5qalhafgwyhe": {
@@ -1330,7 +1330,7 @@
           "name": "Voice Imitation"
         },
         "fzpmews5ufzi1k6e": {
-          "description": "<p><strong>Requirements</strong> The little man in the woods has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The little man in the woods tightens his grip around the creature's neck, extending the Grab, dealing [[/r (2d6+3)[bludgeoning]]] damage with a @Check[type:fortitude|dc:24|basic:true], and strangling the creature for as long as it remains grabbed or restrained. A strangled creature can't speak, which prevents it from casting spells with a verbal component or activating items with a command component. The strangled creature must hold its breath or start suffocating.</p>",
+          "description": "<p><strong>Requirements</strong> The little man in the woods has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The little man in the woods tightens his grip around the creature's neck, extending the Grab, dealing @Damage[(2d6+3)[bludgeoning]] damage with a @Check[type:fortitude|dc:24|basic:true], and strangling the creature for as long as it remains grabbed or restrained. A strangled creature can't speak, which prevents it from casting spells with a verbal component or activating items with a command component. The strangled creature must hold its breath or start suffocating.</p>",
           "name": "Strangle"
         },
         "plczq6dno7lmsveb": {
@@ -1349,7 +1349,7 @@
           "name": "Ghostly Hand"
         },
         "D1dtdbWicwawxBM3": {
-          "description": "<p>[[/r (2d6+12)[negative]]] @Check[type:fortitude|dc:31|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(2d6+12)[negative]] @Check[type:fortitude|dc:31|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "ipzqyff0deghe3l9": {
           "description": "<p>A creature touched by a llorona must attempt a @Check[type:fortitude|dc:29] save. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (drained 2 on a critical failure) or increases their drained value by 1 (2 on a critical failure), up to a maximum of drained 4. Every time a creature becomes drained in this way, the llorona gains 10 temporary Hit Points for 1 hour.</p>",
@@ -1493,7 +1493,7 @@
       "description": "<p>Nasurgeths are hungry voids with glowing eyestalks and thousands of teeth. They lurk deep beneath the waves where the sunlight doesn't reach. At night, they ascend to the skies and rain destruction and ruin down on all the living.</p>\n<hr />\n<p>Darvakkas, also called nightshades, are a ravenous evil made up of equal parts darkness and malice. Originally creatures of the Outer Planes who travel to the convergence of the Shadow Plane and the Negative Energy Plane—where the power of nothingness obliterates them—these undead abominations are the physical embodiment of entropy. They burn with an intense hatred for all life, working to bring a final, dark night to the Material Plane where nothing but ash and ice remain.</p>\n<p>As creatures twisted by darkness and shadow, darvakkas have a great aversion to sunlight and all sources of positive energy. On the Material Plane, they spend the hours of daylight hidden below ground, amid ruins, or submerged deep in the ocean's darkest chasms beyond the reach of the sun's rays, emerging when darkness shelters them overhead.</p>\n<p>Darvakkas have an aura of entropy that attracts undead thralls to serve as warriors and heralds. They rarely seek alliances with each other or other creatures, existing in solitude as the heads of individual armies of the dead.</p>",
       "items": {
         "0jGEzNSvC3mj1gAv": {
-          "description": "<p>Huge, [[/r (2d10+9)[bludgeoning]]], Rupture 40</p>\n<p>A living creature that ends its turn swallowed whole by a nasurgeth becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} or increases its drained condition by 1, and the nasurgeth gains 20 temporary Hit Points. A creature whose drained condition increases to 5 in this way dies.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Huge, @Damage[(2d10+9)[bludgeoning]], Rupture 40</p>\n<p>A living creature that ends its turn swallowed whole by a nasurgeth becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} or increases its drained condition by 1, and the nasurgeth gains 20 temporary Hit Points. A creature whose drained condition increases to 5 in this way dies.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "15ji0gz9dw3xxfog": {
           "description": "<p><strong>Trigger</strong> The nasurgeth takes slashing or piercing damage from a critical hit, or a swallowed creature cuts itself free</p>\n<hr />\n<p><strong>Effect</strong> Darkness and negative energy spill out from the nasurgeth's wound, dealing @Damage[8d8[negative]] damage to creatures within 20 feet (@Check[type:fortitude|dc:40|basic:true]).</p>",
@@ -2021,7 +2021,7 @@
       "description": "<p>A phantom conductor appears with a flourish, causing spectral instruments with razor-like strings to appear in the hands of those present. As the conductor gestures for the performance to begin, creatures are compelled to play the instruments.</p>",
       "hazardDisable": "<p>@Check[type:perfomance|dc:18] to perform so well the conductor releases you from your instrument, banishing it voluntarily; @Check[type:occultism|dc:22] (trained) or @Check[type:religion|dc:22] (trained) to banish one instrument; or @Check[type:thievery|dc:25] (trained) to sabotage one instrument; each instrument must be banished, sabotaged, or destroyed to disable the haunt</p>",
       "hazardReset": "<p>The haunt deactivates when all conjured instruments are destroyed or there has been silence for 1 minute. It resets after 1 hour.</p>",
-      "hazardRoutine": "<p>(1 action; enchantment, mental, occult) The conductor urges each creature within 30 feet to play the hazardous instrument it holds. Each creature that is compelled to play its instrument does so, and those who succeeded on their save can choose to do so. Playing the instrument, either from the haunt's routine or of a creature's own volition during an attempt to disable the haunt, deals [[/r (1d6+3)[slashing]]] damage (@Check[type:reflex|dc:21|basic:true|traits:enchantment,mental,occult] save), and the creature must attempt a @Check[type:performance|dc:18|traits:enchantment,mental,occult,damaging-effect] check. On a success, the conductor accepts the performance and dismisses that creature's instrument, and on a critical failure, the discordant sound and conductor's jeers deal an additional [[/r (1d6+3)[sonic]]] damage.</p>",
+      "hazardRoutine": "<p>(1 action; enchantment, mental, occult) The conductor urges each creature within 30 feet to play the hazardous instrument it holds. Each creature that is compelled to play its instrument does so, and those who succeeded on their save can choose to do so. Playing the instrument, either from the haunt's routine or of a creature's own volition during an attempt to disable the haunt, deals @Damage[(1d6+3)[slashing]] damage (@Check[type:reflex|dc:21|basic:true|traits:enchantment,mental,occult] save), and the creature must attempt a @Check[type:performance|dc:18|traits:enchantment,mental,occult,damaging-effect] check. On a success, the conductor accepts the performance and dismisses that creature's instrument, and on a critical failure, the discordant sound and conductor's jeers deal an additional @Damage[(1d6+3)[sonic]] damage.</p>",
       "name": "Sadistic Conductor"
     },
     "Scorned Hound": {
@@ -2117,7 +2117,7 @@
           "name": "Jaws"
         },
         "p7BEvZc5WuJeZIJf": {
-          "description": "<p>[[/r (1d6+2)[bludgeoning]]], @Check[type:fortitude|dc:16|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(1d6+2)[bludgeoning]], @Check[type:fortitude|dc:16|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "sbuu4mk2ssfmalco": {
           "name": "Claw"
@@ -2177,7 +2177,7 @@
           "name": "Implacable Advance"
         },
         "HgX8EdBcuekHoaYB": {
-          "description": "<p>[[/r (3d8+7)[bludgeoning]]], @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(3d8+7)[bludgeoning]], @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "df79dbzoljgbj0mq": {
           "description": "<p>If a silent stalker sees their own reflection or any object important to them in life, they must attempt a @Check[type:will|dc:33] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The pale stranger is unaffected and can no longer be affected by that reflection or object in this way.</p>\n<p><strong>Success</strong> The silent stalker is distracted by self-loathing and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The silent stalker becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the source of their self-loathing and does everything they can to destroy it until the end of their next turn.</p>\n<p><strong>Critical Failure</strong> The silent stalker becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} as long as the source of their self-loathing is apparent, until they're attacked, or until they see their murderer.</p>",
@@ -2203,7 +2203,7 @@
       "description": "<p>A formless spirit drains life from the living, becoming progressively visible as its victims weaken.</p>",
       "hazardDisable": "<p>@Check[type:occultism|dc:48] (expert) or @Check[type:religion|dc:48] (expert) to weaken the spirit; four total successes are required to disable the haunt</p>",
       "hazardReset": "<p>After 1 minute, the spirit is satiated, and the haunt deactivates as it returns to a resting state. Over the course of 1 hour, the spirit's siphoned life energy disperses and the haunt resets.</p>",
-      "hazardRoutine": "<p>(1 action; death, divine, necromancy, negative) The spirit inhales, siphoning the souls of the living and becoming more visible. Each creature within @Template[type:burst|distnace:60]{60 feet} takes [[/r (4d10+20)[negative]]] damage, with a @Check[type:fortitude|dc:41|traits:death,divine,necromancy,negative,damaging-effect] save. If no creatures are within the area, the haunt moves up to 120 feet into the largest concentration of living creatures and then inhales.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and increases its @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} value by 1, to a maximum of drained 4.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and increases its drained value by 2, to a maximum of drained 4. If the creature was already drained 4, it dies.</p>",
+      "hazardRoutine": "<p>(1 action; death, divine, necromancy, negative) The spirit inhales, siphoning the souls of the living and becoming more visible. Each creature within @Template[type:burst|distnace:60]{60 feet} takes @Damage[(4d10+20)[negative]] damage, with a @Check[type:fortitude|dc:41|traits:death,divine,necromancy,negative,damaging-effect] save. If no creatures are within the area, the haunt moves up to 120 feet into the largest concentration of living creatures and then inhales.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and increases its @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} value by 1, to a maximum of drained 4.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and increases its drained value by 2, to a maximum of drained 4. If the creature was already drained 4, it dies.</p>",
       "name": "Siphoning Spirit"
     },
     "Skeletal Mage": {
@@ -2297,7 +2297,7 @@
       "description": "<p>A cyclone of angry spirits surges around the area.</p>",
       "hazardDisable": "<p>@Check[type:occultism|dc:30] (trained) or @Check[type:religion|dc:30] (trained) to weaken the haunt; three total successes in any combination are required to disable the haunt</p>",
       "hazardReset": "<p>The spirit cyclone disperses after 1 minute and resets after 1 day.</p>",
-      "hazardRoutine": "<p>(3 actions) The spirit cyclone uses 3 actions to move, traveling up to 30 feet with each action and dealing [[/r (2d10+13)[negative]]] damage to each creature in its path (@Check[type:reflex|dc:32|basic:true] save). A creature needs to attempt only one save during the cyclone's movement, even if the cyclone moves over its space more than once. On a critical failure, a creature is swept up into the cyclone, becoming @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32). A creature grabbed by the cyclone moves along with the cyclone and takes [[/r (1d10+6)[negative]]] damage at their beginning of its turn, and it must attempt a Reflex save against the cyclone on the cyclone's turn, no matter where the cyclone moves. A creature that successfully Escapes from the cyclone falls from a height of [[/r {1d12*5} #Falling Distance]]{1d12 x 5 feet}.</p>",
+      "hazardRoutine": "<p>(3 actions) The spirit cyclone uses 3 actions to move, traveling up to 30 feet with each action and dealing @Damage[(2d10+13)[negative]] damage to each creature in its path (@Check[type:reflex|dc:32|basic:true] save). A creature needs to attempt only one save during the cyclone's movement, even if the cyclone moves over its space more than once. On a critical failure, a creature is swept up into the cyclone, becoming @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32). A creature grabbed by the cyclone moves along with the cyclone and takes @Damage[(1d10+6)[negative]] damage at their beginning of its turn, and it must attempt a Reflex save against the cyclone on the cyclone's turn, no matter where the cyclone moves. A creature that successfully Escapes from the cyclone falls from a height of [[/r {1d12*5} #Falling Distance]]{1d12 x 5 feet}.</p>",
       "name": "Spirit Cyclone"
     },
     "Sykever": {
@@ -2638,7 +2638,7 @@
           "name": "Darkness (At Will)"
         },
         "dIjjf4Tqor8DWWHu": {
-          "description": "<p>Huge, [[/r (2d10+5)[bludgeoning]]], Rupture 35</p>\n<p>A living creature that ends its turn swallowed whole by an urveth becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} or increases its drained condition by 1, and the urveth gains 10 temporary Hit Points. A creature whose drained condition increases to 5 in this way dies.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+          "description": "<p>Huge, @Damage[(2d10+5)[bludgeoning]], Rupture 35</p>\n<p>A living creature that ends its turn swallowed whole by an urveth becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} or increases its drained condition by 1, and the urveth gains 10 temporary Hit Points. A creature whose drained condition increases to 5 in this way dies.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "dpxt817prps7vv63": {
           "name": "Negative Energy Plane Lore"
@@ -2692,7 +2692,7 @@
           "name": "Wing"
         },
         "dc6VyUkQp6pOJtSn": {
-          "description": "<p>[[/r (3d10+5)[piercing]]] @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(3d10+5)[piercing]] @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "htqhazfmsy64d5iz": {
           "description": "<p>@Template[type:emanation|distance:40]{40 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Vanyvers leak entropy and corruption from their very being. A living creature entering or starting its turn in the aura takes @Damage[3d6[negative]] damage with a @Check[type:fortitude|dc:30|basic:true]. If it fails, it's also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute and pulled 10 feet toward the vanyver.</p>",
@@ -2819,7 +2819,7 @@
           "name": "Woodland Dependent"
         },
         "brzonbw2amez88xj": {
-          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The waldgeist touches a tree to merge with it, possessing it for up to 1 minute. They can end this possession early as a free action at the start of their turn. While the waldgeist possesses a tree, they lose the incorporeal trait, fly Speed, all resistances, their non-constant spells, and their lignifying hand Strike. Additionally, their size increases to Huge, they gain resistance 5 to bludgeoning and piercing damage, weakness 10 to fire, Speed 20 feet, and the following branch Strike.</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> branch (reach 15 feet) [[/r 1d20+20 #Branch Strike]]{+20}, <strong>Damage</strong> [[/r (2d12+9)[bludgeoning]]].</p>\n<p>While a waldgeist possesses a tree, any damage that would be dealt to the waldgeist is instead dealt to the tree. The tree has 60 Hit Points. When the tree is reduced to 0 Hit Points, the waldgeist is immediately ejected, and the tree is destroyed.</p>",
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The waldgeist touches a tree to merge with it, possessing it for up to 1 minute. They can end this possession early as a free action at the start of their turn. While the waldgeist possesses a tree, they lose the incorporeal trait, fly Speed, all resistances, their non-constant spells, and their lignifying hand Strike. Additionally, their size increases to Huge, they gain resistance 5 to bludgeoning and piercing damage, weakness 10 to fire, Speed 20 feet, and the following branch Strike.</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> branch (reach 15 feet) [[/r 1d20+20 #Branch Strike]]{+20}, <strong>Damage</strong> @Damage[(2d12+9)[bludgeoning]].</p>\n<p>While a waldgeist possesses a tree, any damage that would be dealt to the waldgeist is instead dealt to the tree. The tree has 60 Hit Points. When the tree is reduced to 0 Hit Points, the waldgeist is immediately ejected, and the tree is destroyed.</p>",
           "name": "Possess Tree"
         },
         "byft8BkxplVfvQqd": {
@@ -2952,7 +2952,7 @@
           "name": "Tusk"
         },
         "D2cPnadhWWwabreZ": {
-          "description": "<p>[[/r (2d10+7)[bludgeoning]]], @Check[type:fortitude|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<p>@Damage[(2d10+7)[bludgeoning]], @Check[type:fortitude|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "YgBTeOvZE7Aq4UvH": {
           "description": "<p>Large or smaller, foot, @Check[type:reflex|dc:30|basic:true]</p>\n<p>The zombie mammoth Strides up to its Speed instead of double.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>",
@@ -2977,7 +2977,7 @@
       "description": "<p>Zombie owlbears combine an owlbear's ferocity with mindless undead hatred. Once it draws near, it often stands up, unleashing a guttural, wet roar, before charging into combat without thought of self-preservation.</p>\n<hr />\n<p>Simple to create and varied in purpose, these shambling undead are often used for their strength and endless stamina to conduct boring, repetitive tasks.</p>",
       "items": {
         "56vkqrstijfjdh6c": {
-          "description": "<p><strong>Requirements</strong> The zombie owlbear has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} with its talons</p>\n<hr />\n<p><strong>Effect</strong> The zombie owlbear repeatedly slams the creature into the ground. This deals [[/r (1d10+7)[bludgeoning]]] damage (@Check[type:fortitude|dc:20|basic:true]). On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and on a critical success the creature is no longer grabbed or restrained.</p>",
+          "description": "<p><strong>Requirements</strong> The zombie owlbear has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} with its talons</p>\n<hr />\n<p><strong>Effect</strong> The zombie owlbear repeatedly slams the creature into the ground. This deals @Damage[(1d10+7)[bludgeoning]] damage (@Check[type:fortitude|dc:20|basic:true]). On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and on a critical success the creature is no longer grabbed or restrained.</p>",
           "name": "Ground Slam"
         },
         "dkckp2z4bbmspgcy": {

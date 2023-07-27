@@ -602,7 +602,7 @@
     "Forest Fire": {
       "description": "<p>A @Template[type:line|distance:10|width:10]{10‑foot‑by‑10‑foot} bonfire spreads to the surrounding forest on each of its turns.</p>",
       "hazardDisable": "<p>A successful @Check[type:athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], @Check[type:nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], or @Check[type:survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire] check from an adjacent square is sufficient to smother one 5‑foot‑square of fire; each attempt is an Interact action. Dousing the flames automatically extinguishes one or more sections of fire, with no check. Water typically clears a 5‑foot square if the amount is small (such as from a spell like create water or hydraulic push). Larger amounts of water, such as a full bucket, typically douse a 10‑foot‑by‑10‑foot area (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is less effective than water, so a frost vial puts out only 1 square of fire, and a ray of frost is ineffective.</p>",
-      "hazardRoutine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies (minimum 1 square). You determine the squares the fire spreads into. Any creature that ends its turn next to the flames takes [[/r (2d8+5)[fire]]] damage, or [[/r (4d8+10)[fire]]] damage if it ended its turn within the flames (@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true] in either case). A creature can take damage from the forest fire only once per round.</p>",
+      "hazardRoutine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies (minimum 1 square). You determine the squares the fire spreads into. Any creature that ends its turn next to the flames takes @Damage[(2d8+5)[fire]] damage, or @Damage[(4d8+10)[fire]] damage if it ended its turn within the flames (@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true] in either case). A creature can take damage from the forest fire only once per round.</p>",
       "name": "Forest Fire"
     },
     "Gathganara": {
@@ -778,7 +778,7 @@
           "description": "<p>These massive shields can be used to provide cover to nearly the entire body. Due to their size, they are typically made of wood reinforced with metal. AC increases to +4 if you are using the Take Cover action.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>30</td>\n<td>15</td>\n</tr>\n</tbody>\n</table>"
         },
         "coy3oz2zqtlmh4pd": {
-          "description": "<p><strong>Requirements</strong> Another frost giant gatebreaker has Readied to Stride on the frost giant gatebreaker's order</p><hr /><p><strong>Effect</strong> The two frost giants Stride, with a maximum distance equal to the slowest giant's Speed. Every creature whose space they move through takes [[/r (2d8+9)[bludgeoning]]] damage (@Check[type:reflex|dc:23|basic:true]); creatures who fail their save fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. At the end of their movement, the giants make a single Strike with a +20 modifier (reach 15 feet), inflicting 4d6+16 bludgeoning damage on a hit and knocking the target prone. If the giants hit, they can immediately attempt to Shove the creature as a free action.</p>",
+          "description": "<p><strong>Requirements</strong> Another frost giant gatebreaker has Readied to Stride on the frost giant gatebreaker's order</p><hr /><p><strong>Effect</strong> The two frost giants Stride, with a maximum distance equal to the slowest giant's Speed. Every creature whose space they move through takes @Damage[(2d8+9)[bludgeoning]] damage (@Check[type:reflex|dc:23|basic:true]); creatures who fail their save fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. At the end of their movement, the giants make a single Strike with a +20 modifier (reach 15 feet), inflicting 4d6+16 bludgeoning damage on a hit and knocking the target prone. If the giants hit, they can immediately attempt to Shove the creature as a free action.</p>",
           "name": "Trampling Ram"
         },
         "cqwsk2kjhmvo83od": {
@@ -954,6 +954,9 @@
     },
     "Ivarsa": {
       "items": {
+        "1Yy8pDF8ID6hYI46": {
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(6d8+20)[healing]]{6d8+20 Hit Points}.</p>"
+        },
         "5laybpen7nsa7ewq": {
           "name": "Warfare Lore"
         },
@@ -982,6 +985,9 @@
       "items": {
         "7nxs3zcp1kj5yzvf": {
           "name": "Mammoth Lord Lore"
+        },
+        "JObz1tNe9CxNicCD": {
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(3d8+10)[healing]]{3d8+10 Hit Points}.</p>"
         },
         "ao03la936ve3ffr6": {
           "description": "<p>When Jesseri Casts a Spell that deals damage and doesn't have a duration, she deals additional cold damage that's equal to the spell's level and ignores cold resistance 10.</p>",
@@ -1050,7 +1056,7 @@
           "name": "Consuming Fumes"
         },
         "t7j1dxqs40ckaf13": {
-          "description": "<p><strong>Requirements</strong> The lagofir's last action was a successful jaws Strike</p><hr /><p><strong>Effect</strong> The lagofir gnaws on the target, driving its teeth deeper into its prey. The target takes [[/r (1d8+3)[piercing]]] damage.</p>",
+          "description": "<p><strong>Requirements</strong> The lagofir's last action was a successful jaws Strike</p><hr /><p><strong>Effect</strong> The lagofir gnaws on the target, driving its teeth deeper into its prey. The target takes @Damage[(1d8+3)[piercing]] damage.</p>",
           "name": "Gnaw"
         },
         "v4362l7kq2b0v2o9": {
@@ -1346,7 +1352,7 @@
     "Rhino Warriors": {
       "items": {
         "2rvr1xkbk39q0ymf": {
-          "description": "<p><strong>Trigger</strong> A creature Strides within reach of the warrior and critically fails to Strike the warrior with a melee weapon</p><hr /><p><strong>Effect</strong> The rhino warrior knocks the creature to the ground, and the triggering creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes [[/r (2d6+5)[bludgeoning]]] damage. The rhino warrior is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} until the end of their next turn.</p>",
+          "description": "<p><strong>Trigger</strong> A creature Strides within reach of the warrior and critically fails to Strike the warrior with a melee weapon</p><hr /><p><strong>Effect</strong> The rhino warrior knocks the creature to the ground, and the triggering creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes @Damage[(2d6+5)[bludgeoning]] damage. The rhino warrior is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} until the end of their next turn.</p>",
           "name": "Counter-Charge"
         },
         "du3ubukorunmbuft": {
@@ -1437,7 +1443,7 @@
     "Skeletal Woolly Rhinoceros": {
       "items": {
         "21z8g8vz6k7q0wxs": {
-          "description": "<p>The rhino Strides twice, then makes a horn Strike. As long as the rhino moved at least 20 feet, the Strike's damage increases to [[/r (3d12+5)[piercing]]]. A Medium or smaller creature struck by this attack must succeed at a @Check[type:reflex|dc:22] save or be automatically Shoved back 5 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force of the blow.</p>",
+          "description": "<p>The rhino Strides twice, then makes a horn Strike. As long as the rhino moved at least 20 feet, the Strike's damage increases to @Damage[(3d12+5)[piercing]]. A Medium or smaller creature struck by this attack must succeed at a @Check[type:reflex|dc:22] save or be automatically Shoved back 5 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force of the blow.</p>",
           "name": "Rhinoceros Charge"
         },
         "73bwul93j5c9qxil": {
@@ -1709,7 +1715,7 @@
           "name": "Fangs"
         },
         "8y85p15gliaa9e9c": {
-          "description": "<p><strong>Requirements</strong> Turkek's last action was a fang Strike that hit the target</p><hr /><p><strong>Effect</strong> Turkek rips her fangs across one of the target's arteries or veins, dealing an additional [[/r (1d6+5)[slashing]]] damage.</p>",
+          "description": "<p><strong>Requirements</strong> Turkek's last action was a fang Strike that hit the target</p><hr /><p><strong>Effect</strong> Turkek rips her fangs across one of the target's arteries or veins, dealing an additional @Damage[(1d6+5)[slashing]] damage.</p>",
           "name": "Blood Let"
         },
         "BJNi3TO09ZHc5zKI": {
