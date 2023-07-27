@@ -3,7 +3,7 @@
     "Acidic Poison Cloud Trap": {
       "description": "<p>Five nozzles hidden across the apartment's ceiling spew thick clouds of acidic poison from a reinforced tank behind the wall.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:35|name:Block One Nozzle|traits:action:disable-a-device] (expert) to block one of the nozzles or @Check[type:thievery|dc:40|name:Shut Off the Tank|traits:action:disable-a-device] (master) to shut off the tank. The trap deactivates after 5 rounds, once the tank is empty.</p>",
-      "hazardRoutine": "<p>(1 action) When it's triggered, the trap has five active nozzles, but at the end of its turn each round, one random nozzle deactivates. On the trap's turn, the active nozzles emit a cloud of acidic poison gas that expands to fill the apartment. The cloud deals [[/r 1d6[acid]]] damage and [[/r 1d6[poison]]] damage per active nozzle to each creature and object in the room (@Check[type:fortitude|dc:33|basic:true|name:Spew Cloud|traits:poison] save). Unattended objects automatically fail saves to avoid the damage.</p>",
+      "hazardRoutine": "<p>(1 action) When it's triggered, the trap has five active nozzles, but at the end of its turn each round, one random nozzle deactivates. On the trap's turn, the active nozzles emit a cloud of acidic poison gas that expands to fill the apartment. The cloud deals @Damage[1d6[acid]] damage and @Damage[1d6[poison]] damage per active nozzle to each creature and object in the room (@Check[type:fortitude|dc:33|basic:true|name:Spew Cloud|traits:poison] save). Unattended objects automatically fail saves to avoid the damage.</p>",
       "name": "Acidic Poison Cloud Trap"
     },
     "Agent of the Gray Queen": {
@@ -39,7 +39,7 @@
           "name": "Tail"
         },
         "YoEkR6sBza4UBMYy": {
-          "description": "<p>When an astradaemon hits with its claw, jaws, or tail, it drains the target's spiritual and vital essences.</p>\n<p>The target takes [[/r 2d10[negative]]] damage and the astradaemon regains an equal number of Hit Points. The target must succeed at a @Check[type:fortitude|dc:37|traits:damaging-effect] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p>If the target was already drained or doomed, it instead increases both conditions' value by 1, to a maximum of 4.</p>",
+          "description": "<p>When an astradaemon hits with its claw, jaws, or tail, it drains the target's spiritual and vital essences.</p>\n<p>The target takes @Damage[2d10[negative]] damage and the astradaemon regains an equal number of Hit Points. The target must succeed at a @Check[type:fortitude|dc:37|traits:damaging-effect] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p>If the target was already drained or doomed, it instead increases both conditions' value by 1, to a maximum of 4.</p>",
           "name": "Essence Drain"
         },
         "dwuIf4lpimWqI6eV": {
@@ -49,7 +49,7 @@
           "name": "Dimension Door (At Will)"
         },
         "vJdzS91Cmz3WZZXD": {
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>An astradaemon draws power from the souls of the recently slain. If a Small or larger living creature dies within its aura, the astradaemon gains 5 temporary Hit Points and a +1 status bonus to attack and damage rolls for 1 round, unless the creature was slain by an astradaemon's Devour Soul ability.</p>\n<p>Incorporeal undead and living spirits traveling outside the body take [[/r 1d8[force]]] damage each round within the daemon's aura from the spiritual pressure as the astradaemon pulls in fragments of their soul.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.SjrM6XVTLySToS12]{Effect: Soul Siphon}</p>",
+          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>An astradaemon draws power from the souls of the recently slain. If a Small or larger living creature dies within its aura, the astradaemon gains 5 temporary Hit Points and a +1 status bonus to attack and damage rolls for 1 round, unless the creature was slain by an astradaemon's Devour Soul ability.</p>\n<p>Incorporeal undead and living spirits traveling outside the body take @Damage[1d8[force]] damage each round within the daemon's aura from the spiritual pressure as the astradaemon pulls in fragments of their soul.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.SjrM6XVTLySToS12]{Effect: Soul Siphon}</p>",
           "name": "Soul Siphon"
         },
         "yGw5lNOT9ohwQKqD": {
@@ -90,7 +90,7 @@
           "name": "Choking Smog"
         },
         "pnx6alHWYJ3kLnBW": {
-          "description": "<p>The agradaemon regains 15 Hit Points, and a pledged fanatic of the agradaemon's choice that it can see loses 15 Hit Points (no effects apply that would decrease this Hit Point loss).</p>\n<p>A pledged creature that dies in this way explodes and deals [[/r 9d10[fire]]] damage in a @Template[type:emanation|distance:20] (@Check[type:reflex|dc:41|basic:true] save).</p>",
+          "description": "<p>The agradaemon regains 15 Hit Points, and a pledged fanatic of the agradaemon's choice that it can see loses 15 Hit Points (no effects apply that would decrease this Hit Point loss).</p>\n<p>A pledged creature that dies in this way explodes and deals @Damage[9d10[fire]] damage in a @Template[type:emanation|distance:20] (@Check[type:reflex|dc:41|basic:true] save).</p>",
           "name": "Proven Devotion"
         },
         "wFFcTblSQv1w7t5j": {
@@ -106,7 +106,7 @@
           "name": "Jaws"
         },
         "F0wNdQAwukZzTRRS": {
-          "description": "<p>The alchemical horror spews a torrent of alchemical fluids in a @Template[type:cone|distance:30] that deals [[/r 20d6[acid]]] damage to creatures in the area (@Check[type:reflex|dc:43|basic:true] save).</p>\n<p>The alchemical horror can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p>The alchemical horror spews a torrent of alchemical fluids in a @Template[type:cone|distance:30] that deals @Damage[20d6[acid]] damage to creatures in the area (@Check[type:reflex|dc:43|basic:true] save).</p>\n<p>The alchemical horror can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Alchemical Torrent"
         },
         "YEhIEhTt74V6zF2F": {
@@ -148,6 +148,7 @@
           "name": "Expanded Splash"
         },
         "QcinC6e1RLBc6QTh": {
+          "description": "<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage (1 round)</p>",
           "name": "Wyvern Poison (Applied to Rapier)"
         },
         "TFvB8Q4vaggsZeH2": {
@@ -392,7 +393,7 @@
     "Barnacle Ghoul": {
       "items": {
         "5wVIixUHmaim2A4K": {
-          "description": "<p><strong>Requirements</strong> The barnacle ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The barnacle ghoul devours a chunk of the corpse and regains [[/r 5d6[healing]]]{5d6 Hit Points}.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>",
+          "description": "<p><strong>Requirements</strong> The barnacle ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The barnacle ghoul devours a chunk of the corpse and regains @Damage[5d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>",
           "name": "Consume Flesh"
         },
         "AT8OH6P1ZPmkA0CR": {
@@ -439,7 +440,7 @@
           "name": "Unbalancing Blow"
         },
         "McLV2Lx51f0UF1YX": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 4d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 round).</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 round).</p>",
           "name": "Poison Ink"
         },
         "OF6N85WER1HxJgCK": {
@@ -534,6 +535,9 @@
         "kRqWoQAyMeCb3bxn": {
           "_source": "equipment-srd.hIgqLgH3YcLZBeoT"
         },
+        "pm2UDJOO9oyox9Os": {
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>The head of this arrow is made from gleaming copper.</p>\n<p>When an activated <em>storm arrow</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[type:reflex|dc:25] saving throw.</p>\n<p>If this arrow is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a -10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
+        },
         "vMASeC7y1dcAleR5": {
           "name": "Games Lore"
         }
@@ -571,6 +575,9 @@
         },
         "kRqWoQAyMeCb3bxn": {
           "_source": "equipment-srd.hIgqLgH3YcLZBeoT"
+        },
+        "pm2UDJOO9oyox9Os": {
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>The head of this arrow is made from gleaming copper.</p>\n<p>When an activated <em>storm arrow</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[type:reflex|dc:25] saving throw.</p>\n<p>If this arrow is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a -10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
         },
         "vMASeC7y1dcAleR5": {
           "name": "Games Lore"
@@ -754,7 +761,7 @@
           "name": "Bonesense (Imprecise) 30 feet"
         },
         "9LK5ORluncHekkZ5": {
-          "description": "<p>Each enemy in the swarm's space takes [[/r 3d6[piercing]]] damage (@Check[type:reflex|dc:24|basic:true]) save plus exposure to marrow rot.</p>",
+          "description": "<p>Each enemy in the swarm's space takes @Damage[3d6[piercing]] damage (@Check[type:reflex|dc:24|basic:true]) save plus exposure to marrow rot.</p>",
           "name": "Swarming Bites"
         },
         "ofiTdcCz7bSlRXmy": {
@@ -896,11 +903,11 @@
           "name": "Berserk"
         },
         "Hss992fc1sCOcDVo": {
-          "description": "<p><strong>Trigger</strong> The golem takes electricity damage and a creature is adjacent to it.</p>\n<hr />\n<p><strong>Effect</strong> The golem lashes out and tries to grab a nearby creature. The golem attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} an adjacent creature. The creature also takes [[/r 3d6[electricity]]] damage on a success, or [[/r 6d6[electricity]]] damage on a critical success.</p>",
+          "description": "<p><strong>Trigger</strong> The golem takes electricity damage and a creature is adjacent to it.</p>\n<hr />\n<p><strong>Effect</strong> The golem lashes out and tries to grab a nearby creature. The golem attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} an adjacent creature. The creature also takes @Damage[3d6[electricity]] damage on a success, or @Damage[6d6[electricity]] damage on a critical success.</p>",
           "name": "Electric Reflexes"
         },
         "Q4P1CH4AQAlYpZ0X": {
-          "description": "<p>harmed by fire ([[/r 5d8]], [[/r 3d4]] from areas or persistent damage); healed by electricity (area [[/r 2d4[healing]]]{2d4 Hit Points}); slowed by cold</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p>\n<p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p>\n<p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that round.</p>\n<p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>",
+          "description": "<p>harmed by fire ([[/r 5d8]], [[/r 3d4]] from areas or persistent damage); healed by electricity (area @Damage[2d4[healing]] Hit Points); slowed by cold</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p>\n<p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p>\n<p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that round.</p>\n<p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>",
           "name": "Golem Antimagic"
         },
         "X7yV3UIdROaskajA": {
@@ -946,7 +953,7 @@
           "name": "Syringe"
         },
         "8ubCXo0Jx35U5xxc": {
-          "description": "<p>harmed by sonic ([[/r 5d8]], [[/r 2d6]] from areas or persistent damage); healed by acid (area [[/r 2d4[healing]]]{2d4 Hit Points}); slowed by cold</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as “cold and water”), either type of spell can affect the golem.</p>\n<p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p>\n<p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p>\n<p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that round.</p>\n<p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>",
+          "description": "<p>harmed by sonic ([[/r 5d8]], [[/r 2d6]] from areas or persistent damage); healed by acid (area @Damage[2d4[healing]] Hit Points); slowed by cold</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. If an entry lists multiple types (such as “cold and water”), either type of spell can affect the golem.</p>\n<p><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</p>\n<p><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</p>\n<p><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that round.</p>\n<p><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</p>",
           "name": "Golem Antimagic"
         },
         "LPMvePNhEQEvIeA1": {
@@ -1222,11 +1229,11 @@
           "name": "Precise Tremorsense 40 feet"
         },
         "S00gbcUTroHxccVJ": {
-          "description": "<p>Each enemy in the cobbleswarm's space takes [[/r 2d4[bludgeoning]]] damage (@Check[type:reflex|dc:17|basic:true] save).</p>",
+          "description": "<p>Each enemy in the cobbleswarm's space takes @Damage[2d4[bludgeoning]] damage (@Check[type:reflex|dc:17|basic:true] save).</p>",
           "name": "Pummeling Assault"
         },
         "TBb2TTPl5fRKJQJU": {
-          "description": "<p>The cobbleswarm attempts an Athletics check and compares the result to the Fortitude DC of all creatures in its space.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes [[/r 1d6[bludgeoning]]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the cobbleswarm until the end of the cobbleswarm's next turn.</p>\n<p><strong>Success</strong> The creature falls prone, and is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the cobbleswarm until the creature until the end of the cobbleswarm's next turn.</p>",
+          "description": "<p>The cobbleswarm attempts an Athletics check and compares the result to the Fortitude DC of all creatures in its space.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes @Damage[1d6[bludgeoning]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the cobbleswarm until the end of the cobbleswarm's next turn.</p>\n<p><strong>Success</strong> The creature falls prone, and is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the cobbleswarm until the creature until the end of the cobbleswarm's next turn.</p>",
           "name": "Grasping Bites"
         },
         "TLLEMhBLZebrCg2V": {
@@ -1266,7 +1273,7 @@
           "name": "Nimble Dodge"
         },
         "zJEYT9EyVtZRQ3Jx": {
-          "description": "<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d8[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d10[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage (1 round)</p>"
+          "description": "<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage (1 round)</p>"
         }
       },
       "name": "Copper Hand Rogue"
@@ -1298,7 +1305,7 @@
           "name": "Norgorber Lore"
         },
         "uXNPc5LpmbvMlOa5": {
-          "description": "<p>The Daemonic Infector exhales a @Template[type:line|distance:30] of concentrated fumes.</p>\n<p>Each creature in the area takes [[/r 12d10[poison]]] damage (@Check[type:fortitude|dc:44|basic:true] save; on a critical failure the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}).</p>\n<p>The Infector can't Breathe Death again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p>The Daemonic Infector exhales a @Template[type:line|distance:30] of concentrated fumes.</p>\n<p>Each creature in the area takes @Damage[12d10[poison]] damage (@Check[type:fortitude|dc:44|basic:true] save; on a critical failure the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}).</p>\n<p>The Infector can't Breathe Death again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Breathe Death"
         },
         "zchaebxlIBynZinm": {
@@ -1322,7 +1329,7 @@
           "name": "Engineering Lore"
         },
         "a5d4jfdl2s8CiAsa": {
-          "description": "<p>The Daemonic Rumormonger breathes a torrent of acidic sand and poisoned ink in an @Template[type:line|distance:80], dealing [[/r 6d12[acid]]] damage and [[/r 6d12[poison]]] damage and exposing victims to his black ink delirium.</p>\n<p>He can't use Breath of Lies again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p>The Daemonic Rumormonger breathes a torrent of acidic sand and poisoned ink in an @Template[type:line|distance:80], dealing @Damage[6d12[acid]] damage and @Damage[6d12[poison]] damage and exposing victims to his black ink delirium.</p>\n<p>He can't use Breath of Lies again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Breath of Lies"
         },
         "cSFNzQ52byIdvdWb": {
@@ -1335,7 +1342,7 @@
           "name": "Claw"
         },
         "qFILNq2kmX5xF0Dt": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 6d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>",
           "name": "Black Ink Delirium"
         },
         "rZ6LtOq5W7Ef8R1W": {
@@ -1525,7 +1532,7 @@
           "name": "Claw"
         },
         "INFGwX7PUOvEy0iD": {
-          "description": "<p>The eberark Strides twice, leaving a trail of magical fire behind it as it moves. Squares the eberark moves through catch fire, creating a 5-foot-tall wall of flame that burns for 1 round. The wall of flame conceals creatures and objects on the other side of it.</p>\n<p>Any creature that enters or starts its turn in the wall of flame takes [[/r 6d6[fire]]] damage (@Check[type:reflex|dc:27|basic:true] save).</p>",
+          "description": "<p>The eberark Strides twice, leaving a trail of magical fire behind it as it moves. Squares the eberark moves through catch fire, creating a 5-foot-tall wall of flame that burns for 1 round. The wall of flame conceals creatures and objects on the other side of it.</p>\n<p>Any creature that enters or starts its turn in the wall of flame takes @Damage[6d6[fire]] damage (@Check[type:reflex|dc:27|basic:true] save).</p>",
           "name": "Trail of Flame"
         },
         "vvMB5rLp5hejSAmy": {
@@ -1600,7 +1607,7 @@
           "name": "Vomit Blood"
         },
         "s6jGCfKSGTptJo1G": {
-          "description": "<p>The excorion paragon projects a mist of burning blood in a @Template[type:cone|distance:10].</p>\n<p>Creatures in the area take [[/r 10d8[acid]]] damage and [[/r 5d8[bludgeoning]]] damage (@Check[type:reflex|dc:37|basic:true] save).</p>\n<p>On a failed save, an affected creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round (or 2 rounds on a critical failure).</p>\n<p>The excorion can't use Blinding Bile again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p>The excorion paragon projects a mist of burning blood in a @Template[type:cone|distance:10].</p>\n<p>Creatures in the area take @Damage[10d8[acid]] damage and @Damage[5d8[bludgeoning]] damage (@Check[type:reflex|dc:37|basic:true] save).</p>\n<p>On a failed save, an affected creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round (or 2 rounds on a critical failure).</p>\n<p>The excorion can't use Blinding Bile again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Blinding Bile"
         }
       },
@@ -1684,6 +1691,7 @@
     "Franca Laurentz": {
       "items": {
         "6HFLIEIDtd4x3Xku": {
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a @Template[type:burst|distance:10], dealing @Damage[6d6[fire]] damage to each creature in the area (including the target). Each creature must attempt a @Check[type:reflex|dc:25|basic:true] save.</p>",
           "name": "Explosive Bolt"
         },
         "CnynVi7OZhHOIToa": {
@@ -1710,7 +1718,7 @@
           "name": "Shining Bolt"
         },
         "PzYFpkZAo1pAeUoo": {
-          "description": "<p><strong>Activate</strong><span class=\"pf2-icon\">2</span>Interact</p>\n<hr />\n<p>This oily, dark purple powder gives off the distinct odor of boiled leather. When delivered, the poison acts quickly to constrict the victim's blood flow to their extremities and turn their lungs into a soft jelly. A victim of blackfinger blight is recognizable by the pores of their fingertips weeping an inky oil that coats their hands and makes it difficult to hold things. Each round, at the beginning of their turn, a creature affected by blackfinger blight must succeed at a flat DC 5 check or drop one random item they're holding.</p>\n<p><strong>Saving Throw</strong> DC 32 Fortitude</p>\n<p><strong>Onset</strong> 1 round</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 6d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 8d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 10d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}(1 round)</p>"
+          "description": "<p><strong>Activate</strong><span class=\"pf2-icon\">2</span>Interact</p>\n<hr />\n<p>This oily, dark purple powder gives off the distinct odor of boiled leather. When delivered, the poison acts quickly to constrict the victim's blood flow to their extremities and turn their lungs into a soft jelly. A victim of blackfinger blight is recognizable by the pores of their fingertips weeping an inky oil that coats their hands and makes it difficult to hold things. Each round, at the beginning of their turn, a creature affected by blackfinger blight must succeed at a flat DC 5 check or drop one random item they're holding.</p>\n<p><strong>Saving Throw</strong> DC 32 Fortitude</p>\n<p><strong>Onset</strong> 1 round</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[8d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[10d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}(1 round)</p>"
         },
         "XVBhNwitUtia7zY6": {
           "name": "+2 Circumstance Bonus on Saves vs. Poison"
@@ -1885,7 +1893,7 @@
       "description": "<p>A spring slams and locks the room's door before four hidden gas vents begin pumping poison gas into the chamber.</p>",
       "hazardDisable": "<p>Four @Check[type:thievery|dc:20|name:Block Gas Vents|traits:action:disable-a-device] checks to block the gas vents, or a @Check[type:thievery|dc:26|name:Unlock Door|traits:action:pick-a-lock] check to unlock the door and escape</p>",
       "hazardReset": "<p>The trap must be manually rearmed by unblocking the vents or replacing the poison gas tank in area <strong>E30</strong>.</p>",
-      "hazardRoutine": "<p>(1 action) Each round on its initiative count, the trap pumps more toxic gas into the room.</p>\n<p>Any breathing creature in the room takes [[/r 4d6[poison]]] damage (a successful @Check[type:fortitude|dc:22|traits:poison,damaging-effect] save halves the damage taken). If a creature acts before the trap on the first round, it has the option of holding its breath to postpone taking damage from the trap-holding one's breath after the trap's first action has no effect, since the air in the creature's lungs is already tainted. Locating and blocking one of the hidden gas vents reduces the poison damage by 1d6-if all four are blocked, the trap is disabled, though the door remains locked. Otherwise, the trap functions for 1 minute before all the gas is expended and characters in the room cease taking damage, after which the trap ventilates the room for 1 additional minute.</p>",
+      "hazardRoutine": "<p>(1 action) Each round on its initiative count, the trap pumps more toxic gas into the room.</p>\n<p>Any breathing creature in the room takes @Damage[4d6[poison]] damage (a successful @Check[type:fortitude|dc:22|traits:poison,damaging-effect] save halves the damage taken). If a creature acts before the trap on the first round, it has the option of holding its breath to postpone taking damage from the trap-holding one's breath after the trap's first action has no effect, since the air in the creature's lungs is already tainted. Locating and blocking one of the hidden gas vents reduces the poison damage by 1d6-if all four are blocked, the trap is disabled, though the door remains locked. Otherwise, the trap functions for 1 minute before all the gas is expended and characters in the room cease taking damage, after which the trap ventilates the room for 1 additional minute.</p>",
       "name": "Gas Trap"
     },
     "Ghaele Of Kharnas": {
@@ -1962,7 +1970,7 @@
     "Giant Joro Spider": {
       "items": {
         "BofxZCq1wekuufql": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d8[poison]]] (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d8[poison]]] and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 1d8[poison]]] and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>\n<p><strong>Stage 4</strong> [[/r 2d8[poison]]] and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} ([[/br 1d4 #rounds]]{1d4 rounds})</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d8[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>\n<p><strong>Stage 4</strong> @Damage[2d8[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} ([[/br 1d4 #rounds]]{1d4 rounds})</p>",
           "name": "Joro Spider Venom"
         },
         "M9ciwVyPg7uZSM44": {
@@ -1986,7 +1994,7 @@
           "name": "Go Dark"
         },
         "Vy9EtFybJQqo55xn": {
-          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Similar to other will-o'-wisps, a gloaming will-o'-wisp is naturally invisible, but glows with a faint colored light. They cast dim light in the aura, which makes them visible. In addition, any non-aberration creature that ends their turn in the aura and can see the gloaming will-o'-wisp is distracted by the gloaming will-o'-wisp's glow and must attempt a @Check[type:will|dc:31] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round and takes [[/r 3d6[mental]]] damage.</p>",
+          "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Similar to other will-o'-wisps, a gloaming will-o'-wisp is naturally invisible, but glows with a faint colored light. They cast dim light in the aura, which makes them visible. In addition, any non-aberration creature that ends their turn in the aura and can see the gloaming will-o'-wisp is distracted by the gloaming will-o'-wisp's glow and must attempt a @Check[type:will|dc:31] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round and takes @Damage[3d6[mental]] damage.</p>",
           "name": "Hypnotic Glow"
         },
         "Yb2OjQReLk3HgLoc": {
@@ -2077,7 +2085,7 @@
           "name": "Kharnas's Blessing"
         },
         "OqEu80bVGGZXPfVs": {
-          "description": "<p>The graveknight unleashes a @Template[type:cone|distance:30] of energy.</p>\n<p>Creatures in the area take [[/r 10d12[fire]]] damage (@Check[type:reflex|dc:37|basic:true] save).</p>\n<p>The graveknight can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p>The graveknight unleashes a @Template[type:cone|distance:30] of energy.</p>\n<p>Creatures in the area take @Damage[10d12[fire]] damage (@Check[type:reflex|dc:37|basic:true] save).</p>\n<p>The graveknight can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Devastating Blast"
         },
         "WNRDgclsqI4zJ8Zn": {
@@ -2366,7 +2374,7 @@
           "name": "Sword Cane Duelist"
         },
         "VNhWmP9iCwh5JnM0": {
-          "description": "<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21|name:Hunting Spider Venom]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d10[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d12[poison]]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and flat-footed (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and flat-footed (1 round)</p>",
+          "description": "<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21|name:Hunting Spider Venom]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and flat-footed (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and flat-footed (1 round)</p>",
           "name": "Hunting Spider Venom (in Reaper's Lancet)"
         },
         "aLOL7pnhivZ89apC": {
@@ -2490,7 +2498,7 @@
           "name": "Divine Wrath (Chaotic Only)"
         },
         "DOYd8fquer3sIStG": {
-          "description": "<p><strong>Trigger</strong> A creature attempts to target the hundun with a mental effect</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature is subject to the utter chaos of the hundun's mind and must attempt a @Check[type:will|dc:40|name:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes [[/r 10d6[mental]]] damage.</p>\n<p><strong>Failure</strong> The creature takes [[/r 10d6[mental]]] damage, is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}, and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
+          "description": "<p><strong>Trigger</strong> A creature attempts to target the hundun with a mental effect</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature is subject to the utter chaos of the hundun's mind and must attempt a @Check[type:will|dc:40|name:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[10d6[mental]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[10d6[mental]] damage, is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}, and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
           "name": "Entropic Feedback"
         },
         "HLhPjN1be3uh5emL": {
@@ -2872,6 +2880,9 @@
     "Lie-Master": {
       "description": "<p>Glabrezus are looming behemoths who revel in the act of twisting mortal desires into their ultimate ruin, betraying and manipulating as easily as they breathe. Desires granted by a glabrezu always come to fruition in the most destructive way possible, turning a wish or hope into a potent and devastating act of betrayal-although the long-term repercussions are not always immediately apparent. For example, a struggling weapon smith might wish for fame and skill at their craft, only to find that their best patron is a cruel and sadistic murderer who uses the weapons in bloody sprees. Or a lonely widower might have his desire granted in the form of a lost love returned to \"life\" as a vampire. Glabrezus are nothing if not creative in addressing a mortal's needs.</p>\n<p>These massive demons have enormous pincers and a pair of smaller humanoid arms sprouting from their chests, but their size belies their skill at magic, and they possess formidable innate spells. Treachery demons arise from the souls of mortals engaged in treason and deception.</p>",
       "items": {
+        "6XI3M81vEpXJajio": {
+          "description": "<p>This liquid contains blood from a black dragon. For 1 hour after you imbibe the concoction, you can unleash a black dragon's breath weapon. The potency of the breath depends on the potion's type, based on the age of the dragon whose blood was used to make the potion.</p>\n<p>Exhaling dragon breath uses a single action. You create a @Template[type:line|distance:30] of acid which deals @Damage[10d6[acid]] damage. All creatures in the area must attempt a @Check[type:reflex|dc:37|basic:true|name:Wyrm Black Dragon's Breath Potion] save.</p>\n<p>After you use the breath weapon, you can't do so again for [[/r 1d4 #rounds]]{1d4 rounds}.</p>"
+        },
         "8JslG7YLjptMOVC0": {
           "description": "<p>A glabrezu can always use Deception when rolling initiative as long as they're aware of at least one opponent before initiative is rolled. When using Deception for initiative, the demon gains a +2 circumstance bonus to Deception.</p>",
           "name": "Sudden Betrayal"
@@ -3169,14 +3180,14 @@
           "description": "<p>Mobana deals an extra 2d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
         },
         "KtwDvOZ828wbD0jX": {
-          "description": "<p>[[/r 2d4[poison]]] damage.</p>",
+          "description": "<p>@Damage[2d4[poison]] damage.</p>",
           "name": "Simple Injury Poison"
         },
         "Q0NhoV8dgyILx0Gd": {
           "name": "Underworld Lore"
         },
         "XQXyh2fMab1x1Hjh": {
-          "description": "<p>Giant centipede venom causes severe muscle stiffness.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 17 Fortitude</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d8[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 1d12[poison]]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and flat-footed (1 round)</p>"
+          "description": "<p>Giant centipede venom causes severe muscle stiffness.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 17 Fortitude</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and flat-footed (1 round)</p>"
         },
         "cYpzRpaINHeW2XxC": {
           "description": "<p><strong>Requirements</strong> Mobana is wielding a piercing or slashing weapon and has a free hand.</p>\n<hr />\n<p><strong>Effect</strong> Mobana applies a poison to the weapon.</p>",
@@ -3214,7 +3225,7 @@
           "name": "Fangs"
         },
         "FY9YGIGBEeh0FNKi": {
-          "description": "<p>DC 38</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 2d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 4d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 round).</p>",
+          "description": "<p>DC 38</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 round).</p>",
           "name": "Mother Venom Poison"
         },
         "KFdVbNhK30Xo6GCp": {
@@ -3269,7 +3280,7 @@
           "name": "Scissors"
         },
         "yhVKDXeyQEVchPJW": {
-          "description": "<p>Whenever Mr. Snips rolls a critical hit with a scissors Strike, in addition to dealing extra damage, the golem has a chance to dismember its victim. The target must roll a @Check[type:reflex|dc:39|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Success</strong> No additional effect</p>\n<p><strong>Failure</strong> The target takes [[/r 2d10[bleed]]].</p>\n<p><strong>Critical Failure</strong> As failure, and one of the targets extremities is severed (the effects of this are up to the GM's discretion).</p>",
+          "description": "<p>Whenever Mr. Snips rolls a critical hit with a scissors Strike, in addition to dealing extra damage, the golem has a chance to dismember its victim. The target must roll a @Check[type:reflex|dc:39|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Success</strong> No additional effect</p>\n<p><strong>Failure</strong> The target takes @Damage[2d10[bleed]].</p>\n<p><strong>Critical Failure</strong> As failure, and one of the targets extremities is severed (the effects of this are up to the GM's discretion).</p>",
           "name": "Dismember"
         }
       },
@@ -3426,7 +3437,7 @@
           "name": "Venomous Spit"
         },
         "yut11i3oSOwRk5mZ": {
-          "description": "<p>The creature is extremely thirsty and can't quench its thirst while poisoned</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21|traits:poison]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> [[/r 1d4[poison]]] damage, @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, and [[/r {1d4}]]{1d4 damage} that can't be recovered until the creature quenches its thirst (1 round)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 hour)</p>",
+          "description": "<p>The creature is extremely thirsty and can't quench its thirst while poisoned</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21|traits:poison]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, and [[/r {1d4}]]{1d4 damage} that can't be recovered until the creature quenches its thirst (1 round)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 hour)</p>",
           "name": "Najra Lizard Venom"
         }
       },
@@ -3527,11 +3538,11 @@
           "description": "<p>The poisoner deals an additional 3d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
         },
         "sqgbfXYmkJqyZ1xu": {
-          "description": "<p>This long, hollow proboscis is harvested from the notorious bloodseeker beast and drips a trickle of blood.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span> Envision</p>\n<p><strong>Trigger</strong> You hit a flat-footed creature with the affixed weapon</p>\n<p>When you activate the beak, you deal an extra 1d4 precision damage on your damage roll. If you deal sneak attack damage to the creature, you also deal [[/r 1d4[bleed]]].</p>",
+          "description": "<p>This long, hollow proboscis is harvested from the notorious bloodseeker beast and drips a trickle of blood.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span> Envision</p>\n<p><strong>Trigger</strong> You hit a flat-footed creature with the affixed weapon</p>\n<p>When you activate the beak, you deal an extra 1d4 precision damage on your damage roll. If you deal sneak attack damage to the creature, you also deal @Damage[1d4[bleed]].</p>",
           "name": "Bloodseeker Beak"
         },
         "va3CnUqjuHNbajzr": {
-          "description": "<p><strong>Cost</strong> 1 batch of infused reagents</p>\n<hr />\n<p><strong>Effect</strong> The poisoner dribbles a few experimental chemicals over a melee weapon. Until the start of their next turn, Strikes with the weapon deal an additional [[/r 2d8[poison]]] damage, and targets hit by Strikes with the weapon must succeed at a @Check[type:fortitude|dc:27|traits:damaging-effect] save or become enfeebled 1 or clumsy 1 (the poisoner's choice) for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p><strong>Cost</strong> 1 batch of infused reagents</p>\n<hr />\n<p><strong>Effect</strong> The poisoner dribbles a few experimental chemicals over a melee weapon. Until the start of their next turn, Strikes with the weapon deal an additional @Damage[2d8[poison]] damage, and targets hit by Strikes with the weapon must succeed at a @Check[type:fortitude|dc:27|traits:damaging-effect] save or become enfeebled 1 or clumsy 1 (the poisoner's choice) for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Impromptu Toxin"
         }
       },
@@ -3580,7 +3591,7 @@
           "name": "Rotting Aura"
         },
         "lmVllcsiFHe8ybRy": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r 2d8[bleed]]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> [[/r 2d8[bleed]]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d8[bleed]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[2d8[bleed]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>",
           "name": "Wretched Weeps"
         },
         "pxtdz9Cb1KUHXsrM": {
@@ -3602,6 +3613,9 @@
         },
         "2yp2PpkHqWXuA5k0": {
           "description": "<p>Olansa's true form is that of a monstrous spiderlike daemon. Olansa can still take on her former human appearance. This doesn't change her Speed or her attack and damage modifiers with her Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "ARejp5eIeo3pRY9H": {
+          "description": "<p>Tears of death are among the most powerful of alchemical poisons, distilled from extracts of five other deadly poisons in just the right ratios.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:46]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 10 minutes</p>\n<p><strong>Stage 1</strong> @Damage[18d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[25d6[poison]] damage and paralyzed (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[30d6[poison]] damage and paralyzed (1 minute)</p>"
         },
         "O6wQ2EWNzgJGn6Ta": {
           "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> Olansa successfully uses Stealth to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and become hidden from all of her current foes, or she uses Stealth to @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} and become undetected to all her current foes</p>\n<hr />\n<p><strong>Effect</strong> Olansa becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} for 1 minute, even if she uses a hostile action. Not even <em>@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{Glitterdust}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See Invisibility}</em>, or similar effects can reveal her, though creatures can still use the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to locate her.</p>",
@@ -3727,7 +3741,7 @@
           "name": "Mob Rush"
         },
         "EEMf91Mnk5n3dYup": {
-          "description": "<p>Each enemy in the penqual's space takes [[/r 4d12[slashing]]] damage (@Check[type:reflex|dc:36|basic:true] save).</p>",
+          "description": "<p>Each enemy in the penqual's space takes @Damage[4d12[slashing]] damage (@Check[type:reflex|dc:36|basic:true] save).</p>",
           "name": "Frantic Grasp"
         },
         "KkQu3TqvmvRwh5Gx": {
@@ -3797,7 +3811,7 @@
           "name": "Toxin-Inured"
         },
         "h2Gw20WY0zHbwAEX": {
-          "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d10[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 2d10[poison]]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d10[poison]]] damage and enfeebled 2 (1 round)</p>"
+          "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
         }
       },
       "name": "Poison Eater"
@@ -3870,7 +3884,7 @@
       "description": "<p>Traditionally crafted into the forms of giant suits of armor or powerful animals, iron golems are products of exquisite artistry and skill. Their articulated joints and sturdy armored bodies require great care and mathematical precision to craft, and regular cleaning and oiling ensure they don't rust over the ages. With proper care, iron golems can remain in good shape for thousands of years, being passed down for generations, as long as they aren't destroyed by meddlesome adventurers. In addition to their incredible strength, iron golems possess a potent toxic breath weapon that is often more than enough to dispatch entire groups of opponents.</p>",
       "items": {
         "HkUjt1e6CiwdfHoy": {
-          "description": "<p>The pulping golem spills its cauldron stomach to the floor, dealing [[/r 9d12[fire]]] damage to creatures within 10 feet (@Check[type:reflex|dc:33|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p>The pulping golem spills its cauldron stomach to the floor, dealing @Damage[9d12[fire]] damage to creatures within 10 feet (@Check[type:reflex|dc:33|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Breath Weapon"
         },
         "RSzJjCjwpz8jIS3J": {
@@ -3990,14 +4004,14 @@
           "name": "Clockwork Reconstruction"
         },
         "rlZ9VxWPwn9XfGgL": {
-          "description": "<p>Reginald's lungs are equipped with ink canisters, allowing him to spew a @Template[type:line|distance:60] of ink that deals [[/r 9d6[poison]]] damage (@Check[type:reflex|dc:39|basic:true] save; on a failure, the creature is also subjected to Reginald's poison ink).</p>",
+          "description": "<p>Reginald's lungs are equipped with ink canisters, allowing him to spew a @Template[type:line|distance:60] of ink that deals @Damage[9d6[poison]] damage (@Check[type:reflex|dc:39|basic:true] save; on a failure, the creature is also subjected to Reginald's poison ink).</p>",
           "name": "Breath Weapon"
         },
         "rm9LdZwyao3hq2RK": {
           "name": "Absalom Lore"
         },
         "zaQRIy856WuUiHBw": {
-          "description": "<p>[free-action] (clockwork) Reginald is equipped with clockwork organs to power his body</p>\n<p><strong>Requirements</strong> Reginald has 175 Hit Points or fewer</p>\n<hr />\n<p><strong>Effect</strong> Reginald gains 200 temporary Hit Points, a +15-foot status bonus to Speed, and a +2 status bonus to melee attack rolls. His body begins to overheat, spewing steam that deals [[/r 9d6[fire]]] damage at the beginning of his turn to all creatures within 30 feet (@Check[type:reflex|dc:40|basic:true] save). After 2 rounds, Reginald explodes, dealing [[/r 19d6[fire]]] damage to all creatures within 60 feet (@Check[type:reflex|dc:40|basic:true] save). Reginald dies. For the purposes of his Secret of Rebirth ability, the last creature to damage Reginald counts as killing him.</p>",
+          "description": "<p>[free-action] (clockwork) Reginald is equipped with clockwork organs to power his body</p>\n<p><strong>Requirements</strong> Reginald has 175 Hit Points or fewer</p>\n<hr />\n<p><strong>Effect</strong> Reginald gains 200 temporary Hit Points, a +15-foot status bonus to Speed, and a +2 status bonus to melee attack rolls. His body begins to overheat, spewing steam that deals @Damage[9d6[fire]] damage at the beginning of his turn to all creatures within 30 feet (@Check[type:reflex|dc:40|basic:true] save). After 2 rounds, Reginald explodes, dealing @Damage[19d6[fire]] damage to all creatures within 60 feet (@Check[type:reflex|dc:40|basic:true] save). Reginald dies. For the purposes of his Secret of Rebirth ability, the last creature to damage Reginald counts as killing him.</p>",
           "name": "Overdrive Engine"
         }
       },
@@ -4071,7 +4085,7 @@
           "description": "<p>Sad Liza deals an additional 3d6 precision damage to flat-footed targets.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
         },
         "DfCLdl3RYkGdmNgR": {
-          "description": "<p>This string of beads appears to be a hemp string with lustrous red beads of various sizes hanging from it. When activated, it briefly appears in its true form: a golden chain with golden spheres attached by fine threads.</p>\n<p>This necklace has one [[/r 16d6[fire]]] damage, three [[/r 14d6[fire]]] damage and four [[/r 12d6[fire]]] damage beads with a Reflex save DC of 36. When all the beads are gone, the necklace becomes a non-magical hemp string.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> You detach a sphere from the necklace, causing it to glow with orange light. After you activate a sphere, if you or anyone else hurls it (an Interact action with the ranged trait), it detonates as a <em>@UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</em> where it lands. Your toss can place the center of the fireball anywhere within 70 feet, though at the GM's discretion you might need to make an attack roll if the throw is unusually challenging. If no one hurls the sphere by the start of your next turn, it turns into a non-magical red bead.</p>",
+          "description": "<p>This string of beads appears to be a hemp string with lustrous red beads of various sizes hanging from it. When activated, it briefly appears in its true form: a golden chain with golden spheres attached by fine threads.</p>\n<p>This necklace has one @Damage[16d6[fire]] damage, three @Damage[14d6[fire]] damage and four @Damage[12d6[fire]] damage beads with a Reflex save DC of 36. When all the beads are gone, the necklace becomes a non-magical hemp string.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> You detach a sphere from the necklace, causing it to glow with orange light. After you activate a sphere, if you or anyone else hurls it (an Interact action with the ranged trait), it detonates as a <em>@UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</em> where it lands. Your toss can place the center of the fireball anywhere within 70 feet, though at the GM's discretion you might need to make an attack roll if the throw is unusually challenging. If no one hurls the sphere by the start of your next turn, it turns into a non-magical red bead.</p>",
           "name": "Necklace of Fireballs VI"
         },
         "MMlJGTKiXBTLzx4V": {
@@ -4082,7 +4096,7 @@
           "name": "Close Cutter"
         },
         "aV20X0Mp1CqH1tqz": {
-          "description": "<p>Sad Liza makes three ranged dagger Strikes, each against a separate target; she ignores the multiple attack penalty until after making all three Strikes. On a critical hit, the target takes [[/r 2d10[bleed]]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
+          "description": "<p>Sad Liza makes three ranged dagger Strikes, each against a separate target; she ignores the multiple attack penalty until after making all three Strikes. On a critical hit, the target takes @Damage[2d10[bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
           "name": "Fan of Daggers"
         },
         "aZlGemIJeXm9jJEE": {
@@ -4114,7 +4128,7 @@
           "name": "+1 Leather Armor"
         },
         "eIDlmbUtMfTc108y": {
-          "description": "<p><strong>Requirement</strong> Scathka is wielding a dagger</p>\n<hr />\n<p><strong>Effect</strong> Scathka draws a shadowy glyph on the dagger's blade and flings it at a nearby foe. Scathka makes a ranged Strike with the dagger with the range increment to 30 feet.</p>\n<p>If the Strike hits, it deals [[/r 8d6[cold]]] damage (double damage on a critical success) and the target must succeed at a @Check[type:fortitude|dc:32] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn (or [[/br 1d4 #rounds]]{1d4 rounds} on a critical failure).</p>\n<p>The dagger loses its shadowy magic as soon as the attack is resolved.</p>",
+          "description": "<p><strong>Requirement</strong> Scathka is wielding a dagger</p>\n<hr />\n<p><strong>Effect</strong> Scathka draws a shadowy glyph on the dagger's blade and flings it at a nearby foe. Scathka makes a ranged Strike with the dagger with the range increment to 30 feet.</p>\n<p>If the Strike hits, it deals @Damage[8d6[cold]] damage (double damage on a critical success) and the target must succeed at a @Check[type:fortitude|dc:32] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn (or [[/br 1d4 #rounds]]{1d4 rounds} on a critical failure).</p>\n<p>The dagger loses its shadowy magic as soon as the attack is resolved.</p>",
           "name": "Throw Shadow Blade"
         },
         "mUYIbIl6uHRqjdxW": {
@@ -4311,7 +4325,7 @@
           "name": "Hardness 5"
         },
         "g67xAp632gfQapHl": {
-          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The siege shard emits a disorienting psychic blast. All creatures within a 15 feet emanation take [[/r 4d6[mental]]] damage (@Check[type:will|dc:20|basic:true] save).</p>",
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The siege shard emits a disorienting psychic blast. All creatures within a 15 feet emanation take @Damage[4d6[mental]] damage (@Check[type:will|dc:20|basic:true] save).</p>",
           "name": "Overwhelming Anguish"
         },
         "jcfMZ2vEUL2nEfFQ": {
@@ -4368,7 +4382,7 @@
           "name": "+1 Striking Shortsword"
         },
         "MvGg9ZU03PHCDYj9": {
-          "description": "<p><strong>Requirements</strong> The Skinsaw seamer is currently grappling a creature</p>\n<hr />\n<p><strong>Effect</strong> The seamer stitches a piece of cloth to the creature's arm, face, or leg, potentially hindering it. The creature must attempt a @Check[type:reflex|dc:26|traits:damaging-effect] saving throw; if the seamer has already successfully used their Flay ability against the creature within the past minute, the creature's save result is one degree of success worse.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes [[/r 1d4[piercing]]] damage.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}, or @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} (seamer's choice). This effect lasts until the creature spends a single action to tear out the stitching, which deals [[/r 1d6[piercing]]] damage to it.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, or flat-footed (seamer's choice). This effect lasts until the creature spends 2 actions to tear out the stitching, which deals [[/r 2d6[piercing]]] damage to it.</p>",
+          "description": "<p><strong>Requirements</strong> The Skinsaw seamer is currently grappling a creature</p>\n<hr />\n<p><strong>Effect</strong> The seamer stitches a piece of cloth to the creature's arm, face, or leg, potentially hindering it. The creature must attempt a @Check[type:reflex|dc:26|traits:damaging-effect] saving throw; if the seamer has already successfully used their Flay ability against the creature within the past minute, the creature's save result is one degree of success worse.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d4[piercing]] damage.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}, or @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} (seamer's choice). This effect lasts until the creature spends a single action to tear out the stitching, which deals @Damage[1d6[piercing]] damage to it.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, or flat-footed (seamer's choice). This effect lasts until the creature spends 2 actions to tear out the stitching, which deals @Damage[2d6[piercing]] damage to it.</p>",
           "name": "Quick Stitch"
         },
         "Sv86fg09Ov7lNslX": {
@@ -4382,7 +4396,7 @@
           "name": "Wire Catch"
         },
         "p777SbqGil3xrtzd": {
-          "description": "<p><strong>Requirements</strong> The Skinsaw seamer dealt damage with a melee weapon other than its war razor with their last action</p>\n<hr />\n<p><strong>Effect</strong> The seamer makes a war razor Strike against the same creature that they just damaged. On a hit, the seamer slices a strip of flesh from the target and deals [[/r 1d6[bleed]]] in addition to the war razor's usual damage.</p>",
+          "description": "<p><strong>Requirements</strong> The Skinsaw seamer dealt damage with a melee weapon other than its war razor with their last action</p>\n<hr />\n<p><strong>Effect</strong> The seamer makes a war razor Strike against the same creature that they just damaged. On a hit, the seamer slices a strip of flesh from the target and deals @Damage[1d6[bleed]] in addition to the war razor's usual damage.</p>",
           "name": "Flay"
         },
         "tteW7w29vx8cJw1T": {
@@ -4404,7 +4418,7 @@
           "name": "Fangs"
         },
         "EWsYBE6UDRYE7p46": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23|traits:poison]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d10[poison]]] damage, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed}, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d10[poison]]] damage, flat-footed, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23|traits:poison]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed}, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d10[poison]] damage, flat-footed, and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>",
           "name": "Skitterstitch Venom"
         },
         "HHDLYWqh0LHr49Uu": {
@@ -4476,14 +4490,14 @@
     "Slithering Rift": {
       "items": {
         "IH1SiADzFCDakX8w": {
-          "description": "<p>The slithering rift closes all pit spaces it created using Dimensional Pit, ejecting all its occupants onto the ground into random free spaces where the opening of the pit was.</p>\n<p>Each occupant takes [[/r 9d6[bludgeoning]]] damage (@Check[type:reflex|dc:40|basic:true] save).</p>",
+          "description": "<p>The slithering rift closes all pit spaces it created using Dimensional Pit, ejecting all its occupants onto the ground into random free spaces where the opening of the pit was.</p>\n<p>Each occupant takes @Damage[9d6[bludgeoning]] damage (@Check[type:reflex|dc:40|basic:true] save).</p>",
           "name": "Out You Go"
         },
         "KZ4Ixv66QE0EQIct": {
           "name": "Pseudopod"
         },
         "M7E6dxLskMLaX43G": {
-          "description": "<p>The slithering rift opens an extradimensional, 20-foot-deep pit that covers its own space and all adjacent squares unless they are walls or similarly blocking terrain.</p>\n<p>Any other creature occupying spaces in the pit must succeed at a @Check[type:reflex|dc:40|traits:damaging-effect] save or fall into the pit, taking damage from the fall (typically [[/r 10[bludgeoning]]] damage). Any creature grabbed by the ooze is released from the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI]{Grab} and falls in, even if it was outside the pit squares.</p>\n<p>While the pit is open, the slithering rift is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and can't be forced to move. It can make pseudopod Strikes originating from the walls of the pit. A creature that starts its turn at the bottom of the pit takes [[/r 5d6[acid]]] damage.</p>\n<p>Creatures can climb the walls with a @Check[type:athletics|dc:40|name:Climb Out of the Rift|traits:action:climb] check. When the slithering rift dies, the pit closes and creatures inside are ejected, as Out you Go.</p>",
+          "description": "<p>The slithering rift opens an extradimensional, 20-foot-deep pit that covers its own space and all adjacent squares unless they are walls or similarly blocking terrain.</p>\n<p>Any other creature occupying spaces in the pit must succeed at a @Check[type:reflex|dc:40|traits:damaging-effect] save or fall into the pit, taking damage from the fall (typically [[/r 10[bludgeoning]]] damage). Any creature grabbed by the ooze is released from the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI]{Grab} and falls in, even if it was outside the pit squares.</p>\n<p>While the pit is open, the slithering rift is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and can't be forced to move. It can make pseudopod Strikes originating from the walls of the pit. A creature that starts its turn at the bottom of the pit takes @Damage[5d6[acid]] damage.</p>\n<p>Creatures can climb the walls with a @Check[type:athletics|dc:40|name:Climb Out of the Rift|traits:action:climb] check. When the slithering rift dies, the pit closes and creatures inside are ejected, as Out you Go.</p>",
           "name": "Dimensional Pit"
         },
         "igIwGgzOBvjtlLdx": {
@@ -4491,7 +4505,7 @@
           "name": "Transparent"
         },
         "nyahaCV93O7YYyau": {
-          "description": "<p>Ingesting an extradimensional space like that found in a <em>bag of holding</em> deals [[/r 12d8[force]]] damage to the slithering rift and its occupants.</p>\n<p>The slithering rift then immediately uses Out You Go.</p>",
+          "description": "<p>Ingesting an extradimensional space like that found in a <em>bag of holding</em> deals @Damage[12d8[force]] damage to the slithering rift and its occupants.</p>\n<p>The slithering rift then immediately uses Out You Go.</p>",
           "name": "Breach Vulnerability"
         },
         "yyZMl8O8UfRO0cwF": {
@@ -4525,7 +4539,7 @@
           "name": "Detect Alignment (At Will) (Good Only)"
         },
         "wW8lBy7vi5CcDHTN": {
-          "description": "<p>The sordesdaemon exhales a spray of sewage that deals [[/r 8d6[acid]]] damage and [[/r 8d6[poison]]] damage in a @Template[type:cone|distance:30] (@Check[type:fortitude|dc:40|basic:true] save).</p>\n<p>It can't use Retch of Foulness again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p>The sordesdaemon exhales a spray of sewage that deals @Damage[8d6[acid]] damage and @Damage[8d6[poison]] damage in a @Template[type:cone|distance:30] (@Check[type:fortitude|dc:40|basic:true] save).</p>\n<p>It can't use Retch of Foulness again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Retch of Foulness"
         },
         "yLWlmhmOztmNTDmd": {
@@ -4614,7 +4628,7 @@
           "name": "Shadow Step"
         },
         "geGkPY2Pq1GYIJoN": {
-          "description": "<p>The opaque white sap from the graveroot shrub clouds the mind.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d10[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d12[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage and stupefied 2 (1 round)</p>"
+          "description": "<p>The opaque white sap from the graveroot shrub clouds the mind.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage and stupefied 2 (1 round)</p>"
         },
         "z1QK6YTYHTWWeQ9e": {
           "name": "+1 Striking Elven Curve Blade"
@@ -4644,7 +4658,7 @@
           "name": "Claw"
         },
         "zMxrSkK2U9CDEp0u": {
-          "description": "<p><strong>Requirement</strong> The tenome has a creature grabbed or restrained</p>\n<hr />\n<p><strong>Effect</strong> The tenome makes a jaws Strike against the grabbed or restrained creature. If the Strike hits, the creature must succeed at a @Check[type:fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or the value of the creature's drained condition increases by 1 if it already has a drained value, to a maximum of drained 4).</p>\n<p>The tenome regains [[/r 1d8[healing]]]{1d8 Hit Points} each time it uses Bone Drink.</p>",
+          "description": "<p><strong>Requirement</strong> The tenome has a creature grabbed or restrained</p>\n<hr />\n<p><strong>Effect</strong> The tenome makes a jaws Strike against the grabbed or restrained creature. If the Strike hits, the creature must succeed at a @Check[type:fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or the value of the creature's drained condition increases by 1 if it already has a drained value, to a maximum of drained 4).</p>\n<p>The tenome regains @Damage[1d8[healing]] Hit Points each time it uses Bone Drink.</p>",
           "name": "Bone Drink"
         }
       },
@@ -4660,7 +4674,7 @@
           "name": "Horn"
         },
         "8qsC3gMbkSTTQOdY": {
-          "description": "<p><strong>Requirement</strong> The teraphant has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The teraphant slams the creature onto one of its horns. The target must attempt a @Check[type:reflex|dc:27|basic:true] save or suffer [[/r (3d6+9)[piercing]]] damage and [[/r 1d6[bleed]]] ([[/r (6d6+18)[piercing]]] damage on a critical failure).</p>",
+          "description": "<p><strong>Requirement</strong> The teraphant has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The teraphant slams the creature onto one of its horns. The target must attempt a @Check[type:reflex|dc:27|basic:true] save or suffer [[/r (3d6+9)[piercing]]] damage and @Damage[1d6[bleed]] ([[/r (6d6+18)[piercing]]] damage on a critical failure).</p>",
           "name": "Impale"
         },
         "drfXFnc49cl52C2X": {
@@ -4682,7 +4696,7 @@
           "name": "Empathetic Response"
         },
         "wCtIIrUW3W5fxJS5": {
-          "description": "<p>The teraphant lets out a loud trumpet that deals [[/r 8d8[mental]]] damage (@Check[type:will|dc:27|basic:true] save) in a @Template[type:cone|distance:30]. A creature that fails its save is also pushed 15 feet (30 feet on a critical failure).</p>\n<p>If a pushed creatures strikes a solid barrier, it takes [[/r 3d6[bludgeoning]]] damage and stops.</p>\n<p>The teraphant can't use Psychokinetic Trumpet again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+          "description": "<p>The teraphant lets out a loud trumpet that deals @Damage[8d8[mental]] damage (@Check[type:will|dc:27|basic:true] save) in a @Template[type:cone|distance:30]. A creature that fails its save is also pushed 15 feet (30 feet on a critical failure).</p>\n<p>If a pushed creatures strikes a solid barrier, it takes @Damage[3d6[bludgeoning]] damage and stops.</p>\n<p>The teraphant can't use Psychokinetic Trumpet again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
           "name": "Psychokinetic Trumpet"
         }
       },
@@ -4718,7 +4732,7 @@
           "name": "Tail"
         },
         "Tk7abWUpvDDV6Qg0": {
-          "description": "<p>A shemhazian's mutilation is a part of them, and they can't bear to see it reversed. The first time each round that a creature heals from damage the shemhazian dealt on their last turn, the demon takes [[/r 3d6[mental]]] damage.</p>",
+          "description": "<p>A shemhazian's mutilation is a part of them, and they can't bear to see it reversed. The first time each round that a creature heals from damage the shemhazian dealt on their last turn, the demon takes @Damage[3d6[mental]] damage.</p>",
           "name": "Succor Vulnerability"
         },
         "XbpdSS6FXHoqmiIy": {
@@ -4845,7 +4859,7 @@
           "name": "Suggestion (At Will)"
         },
         "pEH5ZGr2J9sZg6ce": {
-          "description": "<p>While a creature is enfeebled from this poison, it is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 3d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 4d6[poison]]] damage and enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 6d6[poison]]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 round)</p>",
+          "description": "<p>While a creature is enfeebled from this poison, it is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 round)</p>",
           "name": "Stabbing Beast Venom"
         },
         "pR42ZYfKNvfvZpV0": {
@@ -4908,7 +4922,7 @@
           "name": "Close Cutter"
         },
         "aV20X0Mp1CqH1tqz": {
-          "description": "<p>Twisted Jack makes three ranged dagger Strikes, each against a separate target; he ignores the multiple attack penalty until after making all three Strikes. On a critical hit, the target takes [[/r 2d10[bleed]]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
+          "description": "<p>Twisted Jack makes three ranged dagger Strikes, each against a separate target; he ignores the multiple attack penalty until after making all three Strikes. On a critical hit, the target takes @Damage[2d10[bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
           "name": "Fan of Daggers"
         },
         "aZlGemIJeXm9jJEE": {
@@ -4972,7 +4986,7 @@
           "name": "Tongues (Constant)"
         },
         "E9Cr9P2L3cp3NzRD": {
-          "description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Any creature that ends its turn in the aura while in possession of any crystals, gemstones, or other precious stones must attempt a @Check[type:fortitude|dc:39|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is immune to the aura for 1 hour.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature's crystals reverberate with Ulressia's vengeful aura, sharpening at every corner and digging, as if powerfully magnetized, into the creature's flesh.</p>\n<p>The creature takes [[/r 4d6[piercing]]] damage, plus [[/r 5[negative]]] damage for every 2,000 gp the crystals are cumulatively worth (maximum 40 damage).</p>\n<p>The creature can't discard the crystals until they leave the aura or roll a successful save against it.</p>\n<p><strong>Critical Failure</strong> As failure, but [[/r 8d6[piercing]]] damage, plus [[/r 10[negative]]] damage for every 2,000 gp of the crystals' value (maximum 80 damage).</p>\n<hr />\n<p>Ulressia can deactivate or activate this aura using a single action, which has the concentrate trait.</p>",
+          "description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Any creature that ends its turn in the aura while in possession of any crystals, gemstones, or other precious stones must attempt a @Check[type:fortitude|dc:39|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is immune to the aura for 1 hour.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature's crystals reverberate with Ulressia's vengeful aura, sharpening at every corner and digging, as if powerfully magnetized, into the creature's flesh.</p>\n<p>The creature takes @Damage[4d6[piercing]] damage, plus [[/r 5[negative]]] damage for every 2,000 gp the crystals are cumulatively worth (maximum 40 damage).</p>\n<p>The creature can't discard the crystals until they leave the aura or roll a successful save against it.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[8d6[piercing]] damage, plus [[/r 10[negative]]] damage for every 2,000 gp of the crystals' value (maximum 80 damage).</p>\n<hr />\n<p>Ulressia can deactivate or activate this aura using a single action, which has the concentrate trait.</p>",
           "name": "Aura of Angry Crystals"
         },
         "JCwAfoQqJDmPTVLF": {
@@ -5060,7 +5074,7 @@
           "name": "Scent (Imprecise) 60 feet"
         },
         "CVTZnv3ZcE4LbDPg": {
-          "description": "<p>The time dragon breathes in one of two ways.</p>\n<p>The dragon can't use again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Storm</strong> The dragon breathes a burst of lightning in a @Template[type:cone|distance:50] that deals [[/r 20d6[electricity]]] damage (@Check[type:reflex|dc:42|basic:true|name:Storm Breath] save).</p>\n<hr />\n<p><strong>Time Displacement</strong> (arcane, transmutation) The dragon breathes a time storm. Each creature within a @Template[type:cone|distance:50] must attempt a @Check[type:fortitude|dc:42|name:Time Displacement Breath|traits:transmutation] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 4}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 6}.</p>",
+          "description": "<p>The time dragon breathes in one of two ways.</p>\n<p>The dragon can't use again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Storm</strong> The dragon breathes a burst of lightning in a @Template[type:cone|distance:50] that deals @Damage[20d6[electricity]] damage (@Check[type:reflex|dc:42|basic:true|name:Storm Breath] save).</p>\n<hr />\n<p><strong>Time Displacement</strong> (arcane, transmutation) The dragon breathes a time storm. Each creature within a @Template[type:cone|distance:50] must attempt a @Check[type:fortitude|dc:42|name:Time Displacement Breath|traits:transmutation] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 4}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 6}.</p>",
           "name": "Breath Weapon"
         },
         "DrsLgW5tbXlYEqJ1": {
@@ -5240,7 +5254,7 @@
           "name": "+1 Striking Cleaver"
         },
         "mIVZhiAlmqc8WWY7": {
-          "description": "<p>Whenever the Skinner makes a successful cleaver Strike against a grabbed creature, she also deals [[/r 1d6[bleed]]] (or [[/r 2d6[bleed]]] on a critical hit).</p>",
+          "description": "<p>Whenever the Skinner makes a successful cleaver Strike against a grabbed creature, she also deals @Damage[1d6[bleed]] (or @Damage[2d6[bleed]] on a critical hit).</p>",
           "name": "Flay"
         },
         "psPKDFy6x0wj7ko0": {
@@ -5331,7 +5345,7 @@
           "name": "Claws"
         },
         "j72OO3UZ0KrTLLO6": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r 2d6[negative]]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> [[/r 2d6[negative]]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a zeal-damned ghoul the next midnight.</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[negative]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[negative]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a zeal-damned ghoul the next midnight.</p>",
           "name": "Ghoul Fever"
         }
       },

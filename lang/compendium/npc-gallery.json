@@ -80,6 +80,9 @@
         },
         "OmOeBNnG1vyNMitv": {
           "name": "Legal Lore"
+        },
+        "ecoV8BNfNvgzOWSl": {
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
         }
       },
       "name": "Advisor"
@@ -88,7 +91,7 @@
       "description": "<p>There is perhaps nothing more anathematic to peace than an antipaladin. Dedicated holy warriors to the darkest and foulest of deities, antipaladins work to fulfill the vile wishes of their evil masters. The zeal with which they implement the plans of dark gods makes them truly fearsome foes for anyone allied with the forces of good.</p>\n<hr />\n<p>Villains pursue selfish and cruel goals, trampling over anyone foolish or purehearted enough to stand in their way.</p>",
       "items": {
         "XFo44PTU8F1rJam8": {
-          "description": "<p><strong>Trigger</strong> An enemy within 15 feet damages the antipaladin</p>\n<hr />\n<p><strong>Effect</strong> The antipaladin increases the amount of damage [[/r {2d6}]]{they take by 2d6} and deals 2d6 to the triggering enemy, choosing [[/r 2d6[evil]]] damage or [[/r 2d6[negative]]] damage. In addition, the antipaladin deals [[/r {2}]]{2 extra damage} of the chosen type with their Strikes against the triggering creature until the end of the antipaladin's next turn.</p>",
+          "description": "<p><strong>Trigger</strong> An enemy within 15 feet damages the antipaladin</p>\n<hr />\n<p><strong>Effect</strong> The antipaladin increases the amount of damage [[/r {2d6}]]{they take by 2d6} and deals 2d6 to the triggering enemy, choosing @Damage[2d6[evil]] damage or @Damage[2d6[negative]] damage. In addition, the antipaladin deals [[/r {2}]]{2 extra damage} of the chosen type with their Strikes against the triggering creature until the end of the antipaladin's next turn.</p>",
           "name": "Destructive Vengeance"
         },
         "iWiQjH6UZGPhap8G": {
@@ -122,6 +125,9 @@
         "r19Dz88pBsPS4lU2": {
           "description": "<p>The apothecary can identify the effect of any alchemical composition or medical ingredient using only their senses. This typically takes 1 minute.</p>",
           "name": "Medical Wisdom"
+        },
+        "uqf8ooby8JyaoZUQ": {
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life (Minor)}</p>"
         }
       },
       "name": "Apothecary",
@@ -169,11 +175,14 @@
           "description": "<p>The assassin can move their full speed when @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneaking}.</p>",
           "name": "Swift Sneak"
         },
+        "DEGpzY7do2NsH0Lc": {
+          "description": "<p>Giant centipede venom causes severe muscle stiffness.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and flat-footed (1 round)</p>"
+        },
         "Q0NhoV8dgyILx0Gd": {
           "name": "Underworld Lore"
         },
         "RlqNIctK3YtpYMow": {
-          "description": "<p>[[/r 2d4[poison]]] damage.</p>",
+          "description": "<p>@Damage[2d4[poison]] damage.</p>",
           "name": "Simple Injury Poison"
         },
         "SJ7vgCLVP54MCqjB": {
@@ -727,7 +736,7 @@
           "name": "Scholarly Robes"
         },
         "xS8f6u8VDcBepVGM": {
-          "description": "<p>The demonologist can cast a 5th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend}</em> arcane spell to summon a demon. To do so, they must sacrifice two 4th-level prepared spells and voluntarily take [[/r 4d12[mental]]] damage that can't be reduced or prevented.</p>\n<p>If the demonologist is unable to @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain} the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[type:flat|dc:10] each round, ending the spell on a failure.</p>",
+          "description": "<p>The demonologist can cast a 5th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend}</em> arcane spell to summon a demon. To do so, they must sacrifice two 4th-level prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented.</p>\n<p>If the demonologist is unable to @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain} the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[type:flat|dc:10] each round, ending the spell on a failure.</p>",
           "name": "Demon Summoning"
         }
       },
@@ -742,6 +751,9 @@
         "BR4ZECJ9kO4oph8g": {
           "description": "<p>When the despot casts a bloodline spell, <em>@UUID[Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS]{Enthrall}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Flaming Sphere}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}</em>, either a target takes [[/r 1[fire]]] damage per spell level, or the despot gains a +1 status bonus to Deception checks for 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.tvybMInVm415jA3p]{Effect: Bloodline Magic}</p>",
           "name": "Bloodline Magic"
+        },
+        "IK2Z5NcMA1gao3rh": {
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
         },
         "R4Ai5HX7MjgLGEyG": {
           "description": "<p>When the despot @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Casts a Spell} from a spell slot, if the spell deals damage and doesn't have a duration, the despot gains a status bonus equal to the spell's level to that spell's damage.</p>",
@@ -771,7 +783,7 @@
           "name": "Empty Bottle"
         },
         "ma0kNlN1eN2YPKXO": {
-          "description": "<p><strong>Requirements</strong> The dockhand is adjacent to a crate</p>\n<hr />\n<p><strong>Effect</strong> The dockhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[type:burst|distance:5]. Each creature within the area takes [[/r 2d6[bludgeoning]]] damage (@Check[type:reflex|dc:13|basic:true] save), and the area becomes difficult terrain until cleared.</p>",
+          "description": "<p><strong>Requirements</strong> The dockhand is adjacent to a crate</p>\n<hr />\n<p><strong>Effect</strong> The dockhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[type:burst|distance:5]. Each creature within the area takes @Damage[2d6[bludgeoning]] damage (@Check[type:reflex|dc:13|basic:true] save), and the area becomes difficult terrain until cleared.</p>",
           "name": "Heft Crate"
         },
         "z1TGYF24OzHmgdjp": {
@@ -937,6 +949,9 @@
         "U1pVgJkNIeXvdXNP": {
           "name": "Underworld Lore"
         },
+        "bDituljDNQ33CED0": {
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
+        },
         "dlhm2yJ4EUGym0CG": {
           "description": "<p>Any enemy is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} against the gang leader's melee attacks due to flanking as long as the enemy is within melee reach of both the gang leader and one of the gang leader's allies.</p>",
           "name": "Gang Up"
@@ -1023,7 +1038,7 @@
           "name": "Shovel"
         },
         "ammC8wH7C165yxrp": {
-          "description": "<p><strong>Requirements</strong> The gravedigger holds a @UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{Lantern (Bull's Eye)} in one hand and their @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]{Religious Symbol} in the other, and the lantern contains @UUID[Compendium.pf2e.equipment-srd.Item.Du05UxCyCM0ZWH8z]{Oil}</p>\n<hr />\n<p><strong>Effect</strong> The gravedigger recites a brief chant to ignite their lantern with positive energy. Each undead creature in a @Template[type:line|distance:15] takes [[/r 3d6[positive]]] damage (@Check[type:fortitude|dc:14|basic:true] save). This action uses all remaining @UUID[Compendium.pf2e.equipment-srd.Item.Du05UxCyCM0ZWH8z]{Oil} in the @UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{Lantern (Bull's Eye)}.</p>",
+          "description": "<p><strong>Requirements</strong> The gravedigger holds a @UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{Lantern (Bull's Eye)} in one hand and their @UUID[Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI]{Religious Symbol} in the other, and the lantern contains @UUID[Compendium.pf2e.equipment-srd.Item.Du05UxCyCM0ZWH8z]{Oil}</p>\n<hr />\n<p><strong>Effect</strong> The gravedigger recites a brief chant to ignite their lantern with positive energy. Each undead creature in a @Template[type:line|distance:15] takes @Damage[3d6[positive]] damage (@Check[type:fortitude|dc:14|basic:true] save). This action uses all remaining @UUID[Compendium.pf2e.equipment-srd.Item.Du05UxCyCM0ZWH8z]{Oil} in the @UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{Lantern (Bull's Eye)}.</p>",
           "name": "Light in the Dark"
         },
         "iCIavuhoO4Uam2Vj": {
@@ -1482,6 +1497,9 @@
         "AYYTZD6D0cHi933z": {
           "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
         },
+        "AjJWZ6DGFvxRB9HP": {
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
+        },
         "LGdgJYiYY4gmLKOx": {
           "description": "<p>On the first round of combat, any creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} to the field agent.</p>",
           "name": "Surprise Attack"
@@ -1556,6 +1574,9 @@
         "BIreghuAVYAZ0WoG": {
           "name": "Medical Textbook"
         },
+        "UvYsCkLfY3VxKPWR": {
+          "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life (Minor)}</p>"
+        },
         "oAhc8baMBkq1f865": {
           "name": "Medical Textbook"
         },
@@ -1609,6 +1630,9 @@
         },
         "jYYHVnXYQ03Skwe9": {
           "description": "<p>This kit of bandages, herbs, and suturing tools is necessary for Medicine checks to Administer First Aid, Treat Disease, Treat Poison, or Treat Wounds.</p>"
+        },
+        "wkoa8cxBhHChPSln": {
+          "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
         }
       },
       "name": "Plague Doctor"
@@ -1796,7 +1820,7 @@
           "name": "Engineering Lore"
         },
         "ziPz3z2a6Db63N9r": {
-          "description": "<p><strong>Requirements</strong> The reckless scientist is holding a bomb or elixir</p>\n<hr />\n<p><strong>Effect</strong> The reckless scientist combines the bomb with another bomb or the elixir with another elixir. They can @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} to draw a second bomb or elixir if necessary as part of this action. They attempt a @Check[type:crafting|dc:28] check, destroying both component items to create one new item.</p>\n<p>If a viable resulting item isn't used by the end of the scientist's next turn, it explodes as described under critical failure.</p>\n<hr />\n<p><strong>Critical Success</strong> The new item has the full effect of both component items when used.</p>\n<p><strong>Success</strong> The new item combines both items, but halves the effect of each. (This halves damage for bombs, the amount of healing of elixirs of life, or the duration for effects that can't have their value halved. Details are determined by the GM.)</p>\n<p><strong>Failure</strong> The new item is inert.</p>\n<p><strong>Critical Failure</strong> The new item immediately explodes, dealing [[/r 3d6[piercing]]] damage to the reckless scientist.</p>",
+          "description": "<p><strong>Requirements</strong> The reckless scientist is holding a bomb or elixir</p>\n<hr />\n<p><strong>Effect</strong> The reckless scientist combines the bomb with another bomb or the elixir with another elixir. They can @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} to draw a second bomb or elixir if necessary as part of this action. They attempt a @Check[type:crafting|dc:28] check, destroying both component items to create one new item.</p>\n<p>If a viable resulting item isn't used by the end of the scientist's next turn, it explodes as described under critical failure.</p>\n<hr />\n<p><strong>Critical Success</strong> The new item has the full effect of both component items when used.</p>\n<p><strong>Success</strong> The new item combines both items, but halves the effect of each. (This halves damage for bombs, the amount of healing of elixirs of life, or the duration for effects that can't have their value halved. Details are determined by the GM.)</p>\n<p><strong>Failure</strong> The new item is inert.</p>\n<p><strong>Critical Failure</strong> The new item immediately explodes, dealing @Damage[3d6[piercing]] damage to the reckless scientist.</p>",
           "name": "Reckless Alchemy"
         }
       },
