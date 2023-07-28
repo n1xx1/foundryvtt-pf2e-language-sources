@@ -31,9 +31,6 @@ export async function commandRemoveSameTranslation(
   const [allPacks] = await readSystemFiles(systemDir, manifest);
 
   for (const pack of allPacks) {
-    if (pack.type !== "Actor") {
-      continue;
-    }
     if (
       compendium !== undefined &&
       compendium !== null &&
