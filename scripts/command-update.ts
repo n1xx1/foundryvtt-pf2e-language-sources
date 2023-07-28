@@ -289,8 +289,8 @@ const skillNames = [
 ];
 
 function compareStrings(s1: string, s2: string) {
-  s1 = s1.replace(/‑/g, "-").trim()
-  s2 = s2.replace(/‑/g, "-").trim()
+  s1 = s1.replace(/‑/g, "-").trim();
+  s2 = s2.replace(/‑/g, "-").trim();
   return s1 === s2;
 }
 
@@ -407,7 +407,10 @@ async function handleActor(
           const sameName = compendiumItem.name === item.name;
           const sameDesc =
             !item.system.description.value ||
-            compareStrings(compendiumItem.system.description.value, item.system.description.value) ||
+            compareStrings(
+              compendiumItem.system.description.value,
+              item.system.description.value
+            ) ||
             ignoredDescriptionItemTypes.includes(item.type);
 
           if (sameName && sameDesc && origin !== "matching") {
@@ -476,7 +479,7 @@ export function findItemInCompendium(
   if (attackType.includes(item.type)) {
     const equipItem = findByName(item.name, allPacksMap.get("equipment-srd")!);
     if (equipItem) {
-      return [equipItem, `equipment-srd.${equipItem._id}`, "equip"];
+      return [equipItem, `pf2e.equipment-srd.Item.${equipItem._id}`, "equip"];
     }
   }
   return [null, "", ""];
