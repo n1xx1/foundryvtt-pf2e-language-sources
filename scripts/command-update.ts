@@ -496,7 +496,7 @@ function findBySourceId(
     return [null, ""];
   }
 
-  const origin = sourceId.substring("Compendium.pf2e.".length);
+  const origin = sourceId.substring("Compendium.".length);
   const [_, pack, _type, id, itemId] = match;
 
   let sourceItem =
@@ -535,7 +535,7 @@ function findByMatchingItem(
     founds[0].type === item.type &&
     founds[0].system.description.value === item.system.description.value
   ) {
-    return [founds[0], `${founds[0]._pack}.${founds[0]._id}`, true];
+    return [founds[0], `pf2e.${founds[0]._pack}.Item.${founds[0]._id}`, true];
   }
 
   const found = founds.find(
@@ -544,7 +544,7 @@ function findByMatchingItem(
       entry.system.description.value === item.system.description.value
   );
   if (found) {
-    return [found, `${found._pack}.${found._id}`, false];
+    return [found, `pf2e.${found._pack}.Item.${found._id}`, false];
   }
   return [null, "", false];
 }
