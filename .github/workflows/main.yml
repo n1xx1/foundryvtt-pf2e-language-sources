@@ -68,7 +68,9 @@ jobs:
       - name: FVTTPF2E - Build Packs
         if: ${{ steps.cache-packs.outputs.cache-hit != 'true' }}
         working-directory: ./system
-        run: npm run build:packs
+        run: |
+          npm run clean
+          npm run build:packs:json
 
       - name: FVTTPF2E - Get System Version
         working-directory: ./system
