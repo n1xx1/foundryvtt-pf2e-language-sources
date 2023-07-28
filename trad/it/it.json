@@ -306,7 +306,8 @@
                 "Notes": {
                     "criticalSuccess": "<strong>Successo Critico</strong> Hai un'ottima idea di dove ti trovi. Se sei in un ambiente con direzioni cardinali, sai esattamente dove sono.",
                     "success": "<strong>Successo</strong> Ti orienti quanto basta per evitare di perderti completamente. Se sei in un ambiente con direzioni cardinali, sai bene o male dove sono."
-                }
+                },
+                "Description": "<p>Usando le stelle, la posizione del sole, elementi geografici o della flora, oppure il comportamento della fauna, puoi orientarti nelle terre selvagge. Solitamente effettui una prova di Sopravvivenza solo una volta al giorno, ma alcuni ambienti o alcuni cambiamenti potrebbero costringerti a effettuarne più spesso. Il GM determina la CD e il tempo impiegato da quest'attività (solitamente circa un minuto). Luoghi molto inusuali o con i quali non sei familiare potrebbero richiedere un grado di competenza minimo per Trovare la Direzione. Senza una bussola subisci penalità -2 alle prove per Trovare la Direzione.</p><p><strong>Successo Critico</strong> Hai un'ottima idea di dove ti trovi. Se sei in un ambiente con direzioni cardinali, sai esattamente dove sono.</p><p><strong>Successo</strong> Ti orienti quanto basta per evitare di perderti completamente. Se sei in un ambiente con direzioni cardinali, sai bene o male dove sono.</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Trovare la Direzione</h2><p><strong>Senza Addestramento</strong> determinare un punto cardinale usando il sole</p><p><strong>Addestrato</strong> trovare un sentiero coperto dalla vegetazione in una foresta</p><p><strong>Esperto</strong> orientarsi in un labirinto di siepi</p><p><strong>Maestro</strong> orientarsi in un labirinto bizantino o un deserto senza punti di riferimento</p><p><strong>Leggendario</strong> orientarsi in un reame di sogno in costante mutamento</p></section>"
             },
             "WhirlingThrow": {
                 "Notes": {
@@ -382,7 +383,8 @@
                     "criticalSuccess": "<strong>Successo Critico</strong> Sei @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{non individuato} dalla creatura durante il tuo movimento e mantieni la stessa condizione alla fine di esso.<br/><br/>Vedi l'azione @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Muoversi Furtivamente} per i dettagli.",
                     "success": "<strong>Successo</strong> Sei @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{non individuato} dalla creatura durante il tuo movimento e mantieni la stessa condizione alla fine di esso.<br/><br/>Vedi l'azione @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Muoversi Furtivamente} per i dettagli."
                 },
-                "Title": "Evitare l'Individuazione"
+                "Title": "Evitare l'Individuazione",
+                "Description": "<p>Tenti una prova di Furtività per evitare di essere individuato mentre viaggi a metà velocità. Se hai il talento Furtività Rapida, puoi muoverti a piena velocità anziché della metà, ma non puoi usare un'altra attività in esplorazione mentre fai ciò. Se hai il talento Furtività Leggendaria, puoi muoverti a piena Velocità e usare una seconda attività in esplorazione. Se stai Evitando l'Individuazione all'inizio di un incontro, di solito effettui una prova di Furtività anziché di Percezione per determinare la tua Iniziativa e per determinare se i nemici ti notano (a seconda della loro CD di Percezione, come di consueto per Furtività, a prescindere dai loro risultati nelle prove per l'Iniziativa).</p>"
             },
             "Balance": {
                 "Notes": {
@@ -2745,7 +2747,8 @@
             "IncreasedReach5": "Portata aumentata di 1,5 metri",
             "InterruptAction": "Se colpisce, l'azione del bersaglio è interrotta.",
             "KnockProne": "Se colpisce, il besaglio è buttato a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}.",
-            "DropWeapon": "La creatura lascia cadere l'arma che impugna."
+            "DropWeapon": "La creatura lascia cadere l'arma che impugna.",
+            "ReduceHiddenCheck": "La CD della prova semplice per prendere a bersaglio una creatura @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosta} è @Check[type:flat|dc:5]."
         },
         "ChatRollDetails": {
             "ModifiersEmpty": "Nessun Modificatore",
@@ -3177,6 +3180,10 @@
             },
             "Falrok": {
                 "LazuriteTerrainSwitch": "In terreno infuso di lazzurrite"
+            },
+            "Bunyip": {
+                "CrocodileLegs": "Zampe da Coccodrillo",
+                "SnakeTail": "Coda da Serpente"
             }
         },
         "Encounter": {
@@ -3380,7 +3387,9 @@
             "stealth": "Prova di Furtività",
             "survival": "Prova di Sopravvivenza",
             "thievery": "Prova di Furto",
-            "unarmed": "Tiro Attacco Senz'Armi"
+            "unarmed": "Tiro Attacco Senz'Armi",
+            "spell": "Attacco Incantesimo {type}",
+            "x": "Prova di {type}"
         },
         "LanguageKitsune": "Kitsune",
         "ActionsWarning": {
@@ -4635,7 +4644,7 @@
         "SpellAbilityLabel": "Abilità Incant.",
         "SpellAbilityModLabel": "+ Mod",
         "SpellArea": "Area: {areaType} di {areaSize} {areaUnit}",
-        "SpellAttackWithTradition": "Attacchi di Incantesimi {tradition}",
+        "SpellAttackWithTradition": "Attacco di Incantesimo {tradition}",
         "SpellAttackLabel": "Attacco Incant.",
         "SpellBasicSaveOption": "basico",
         "SpellBrowserSearchHint": "Puoi cercare per nome o attributo personalizzato. I possibili attributi personalizzati sono:<br> provenienza, Tipo incantesimo, livello, scuola, componenti, materiali, bersaglio, raggio, tempo, durata, danno, Tipo di danno, tiro, concentrazione, rituale, abilità e classi. <br>Esempio: 'fuoco, danno:d6' per vedere tutti gli incantesimi che hanno fuoco nel loro nome e un d6 nel danno",
