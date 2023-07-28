@@ -30,7 +30,7 @@ async function setupOut() {
 
 // @UUID[Compendium.pf2e.spells-srd.4GE2ZdODgIQtg51c]{Darkness}
 const uuidWithoutLabelRegex =
-  /@UUID\[Compendium\.pf2e\.([^\.\]]+?)(?:\.(Item|JournalEntry|Actor|RollTable))?\.([^\.\]]+?)\](\{.*?\})?/g;
+  /@UUID\[Compendium\.pf2e\.([^\.\]]+?)(?:\.(Actor|Item|RollTable|JournalEntry|Macro|Item))?\.([^\.\]]+?)\](\{.*?\})?/g;
 
 const foundCompendiumAssociations = new Set<string>();
 
