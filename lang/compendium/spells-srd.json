@@ -1070,16 +1070,6 @@
       "name": "Competitive Edge",
       "spellDuration": "sustained up to 1 minute"
     },
-    "Comprehend Language": {
-      "description": "<p>The target can understand the meaning of a single language it is hearing or reading when you cast the spell. This doesn't let it understand codes, language couched in metaphor, and the like (subject to GM discretion). If the target can hear multiple languages and knows that, it can choose which language to understand; otherwise, choose one of the languages randomly.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target can also speak the language.</p>\n<p><strong>Heightened (4th)</strong> You can target up to 10 creatures, and targets can also speak the language.</p>",
-      "name": "Comprehend Language",
-      "spellHeightening": {
-        "4": {
-          "spellTarget": "10 creatures"
-        }
-      },
-      "spellTarget": "1 creature"
-    },
     "Concealment's Curtain": {
       "description": "<p>At twilight for 5 days, you line the fruit in front of the mirror, chanting the name of the target, and envisioning its eyes in your mind. At exactly midnight on the last day, you drive the pins through the fruits, miming the action of methodically blinding the target to you and your companions. The target is immediately affected and can't visually detect any of the casters involved in the ritual-provided that the ritual was successful, the target is unaware of the effects. Since the ritual affects the target's ability to see the casters, rather than make the casters @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, effects like true seeing are ineffective against concealment's curtain; instead, the target would need to remove the curse with effects like remove curse. To perform this ritual, you must have been within 5 feet of the target at least once, close enough to get a good look at its eyes. The target is temporarily immune to further castings of concealment's curtain for 1 year.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unable to visually detect the casters for the duration, and the target's detection spells don't detect the targets.</p>\n<p><strong>Success</strong> The target is unable to visually detect the casters for the duration, but it's detection spells function normally.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The ritual backfires and all casters participating in it are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for the next 24 hours.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You aren't satisfied with simply concealing yourself from the target. The cost of the ritual mirror increases to 1,000 gp, and a personal effect of the target is required. After completing the ritual, the target takes 6d6 mental damage and is blinded for 1 week, requiring both a remove curse and a restore senses to end the effect early. The target is aware that the ritual was cast on them; however, it doesn't have any additional information.</p>",
       "name": "Concealment's Curtain",
@@ -2615,6 +2605,11 @@
       "description": "<p>Your <em>gelid shard</em> drinks down nearby heat in a futile attempt to sate itself and achieve a level of frigid cold unheard of on the Material Plane. This allows you to cool a drink, make a hot pot safe to handle, or other, similar minor effects. Once cooled, the object's temperature is subject to its environment as usual. You can also solidify ambient moisture into a solid object; this temporary object is of negligible Bulk, made of non-magical ice. The object looks crude and artificial and is extremely fragile—it can't be used as a tool, weapon, or spell component. Once created, it melts as normal for ice for the ambient conditions.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can create simple objects of ice with up to 1 Bulk and of a level not exceeding 1. Such objects must be rigid. You can only have one such object created at a time; if you create another, the previous object melts instantly.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> Items you create can be up to 4 Bulk and 4th level.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> Items you create can be up to 8 Bulk and 8th level.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> Items you create can be up to 20 Bulk and 12th level.</p>",
       "name": "Frost's Touch",
       "spellTarget": "1 object"
+    },
+    "Frostbite": {
+      "description": "<p>An orb of biting cold coalesces around your target, freezing its body. The target takes 2d4 cold damage with a basic Fortitude save. On a critical failure, the target also gains weakness 1 to bludgeoning until the start of your next turn.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.DdqWMj7cuf4S1bgr]{Spell Effect: Frostbite}</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4 and the weakness on a critical failure increases by 1.</p>",
+      "name": "Frostbite",
+      "spellTarget": "1 creature"
     },
     "Fungal Hyphae": {
       "description": "<p>Thin hyphae grow from your feet and plunge into the earth, creating a symbiotic fungal network that attaches to plants within 30 feet and connects you to their root systems. You gain an imprecise tremorsense allowing you to sense anything directly touching plants within that distance. If you move, the hyphae snap and the spell ends.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can control plants in the area to a small degree, allowing you to make Strikes with tree branches, exposed roots, or similarly solid plants. To do so, you use a Strike action, but you can Strike any creature you can detect with your tremorsense. These are melee spell attacks that deal 2d8 bludgeoning damage plus your spellcasting ability modifier. Unusual plants, such as thorny vines, might deal a different type of damage at the GM's discretion. You can't make any other attacks through these plants, or take any other actions through them, other than these Strikes.</p>\n<p><strong>Heightened (6th)</strong> As 4th level, but you can use other simple manipulate actions through the plants, including having a branch pick an object up or open a door, though more complex actions, such as picking a lock or disabling a trap, remain impossible.</p>",
@@ -6559,6 +6554,16 @@
     "Transcribe Moment": {
       "description": "<p>You instantly create a small, permanent scroll that contains a magically precise written description of your current surroundings in every direction. Any creature who spends 1 minute to read the scroll-written in a language of your choice that you know-immediately sees and experiences your surroundings during the moment that you recorded (including whatever events transpired that round) exactly as you experienced it. This depiction records only what you can sense yourself. For example, if you can't see invisible creatures, the depiction doesn't reveal them even to a reader who could normally see them; a reader can't use their Perception to notice details you missed, but they can attempt a check to Recall Knowledge based on what they just experienced if they have knowledge that you lack. You can have multiple scrolls from transcribe moment in existence at the same time, up to a number equal to your Intelligence modifier. If you Cast the Spell again while already at the maximum number of scrolls, choose one of the current scrolls to lose its magic, then create the new one.</p>",
       "name": "Transcribe Moment"
+    },
+    "Translate": {
+      "description": "<p>The target can understand the meaning of a single language it is hearing or reading when you cast the spell. This doesn't let it understand codes, language couched in metaphor, and the like (subject to GM discretion). If the target can hear multiple languages and knows that, it can choose which language to understand; otherwise, choose one of the languages randomly.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target can also speak the language.</p>\n<p><strong>Heightened (4th)</strong> You can target up to 10 creatures, and targets can also speak the language.</p>",
+      "name": "Translate",
+      "spellHeightening": {
+        "4": {
+          "spellTarget": "10 creatures"
+        }
+      },
+      "spellTarget": "1 creature"
     },
     "Translocate": {
       "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
