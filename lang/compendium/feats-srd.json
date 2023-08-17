@@ -1725,6 +1725,13 @@
       },
       "name": "Azata Magic"
     },
+    "Azure Fins": {
+      "description": "<p>When submerged in water or another liquid, you form small fin-like arms along your body, granting you far greater maneuverability while swimming. You gain a swim Speed equal to your land Speed. Furthermore, while swimming on the surface of a liquid, you can @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} out of the liquid and do not fall until the end of your turn, allowing you to spend the rest of the turn above the surface.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Azure Fins"
+    },
     "Back To Back": {
       "description": "<p>You excel at watching your allies' backs and helping them watch yours. As long as you and an ally are adjacent to each other, neither of you can become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} due to flanking unless both of you are flanked. If you're adjacent to more than one ally, all eligible allies can benefit at a given time.</p>\n<p>The benefit is negated for everyone if at least you and any one eligible ally are flanked, but not if your allies are flanked and you aren't.</p>",
       "featPrerequisites": {
@@ -3083,9 +3090,23 @@
       "description": "<p>You can call forth nearby nature spirits to augment your body. Once per day, you can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.zCcfPS4y5SrZzU2x]{Plant Form}</em> as a 5th-level primal innate spell. When you reach 17th level, this spell can be heightened to 6th level.</p>",
       "name": "Call Of The Green Man"
     },
+    "Call The Worm": {
+      "description": "<p>You gain <em>@UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]{Summon Animal}</em>, heightened to 9th level, as an innate primal spell that you can cast once per day, but can only summon a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.4h9jhODg2NwiYsPg]{Purple Worm}. At 20th level, you can summon an elite purple worm instead.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Call The Worm"
+    },
     "Call Ursine Ally": {
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You can cast a 3rd-level <em>@UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]{Summon Animal}</em> as an innate spell, but only to summon a @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.xxP5FJotshmUQNtY]{Black Bear}. At 10th level, the <em>summon animal</em> spell is heightened to 4th level, and you can summon a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.CJP3GGBXuGgkaj6C]{Grizzly Bear}. At 12th level, your <em>summon animal</em> innate spell is heightened to 5th level, and you can summon a @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.UqFObUjgFAlWrriA]{Polar Bear}. At 14th level, it's heightened to 6th level, and you can summon a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.b8NQkby4QV4uOqFT]{Cave Bear}.</p>",
       "name": "Call Ursine Ally"
+    },
+    "Call Worm Spirit": {
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You call forth a ghostly manifestation of the worm spirit. Choose an intersection on the ground within 60 feet; the ghostly maw of a worm emerges from the ground, attacking all creatures in a @Template[type:burst|distance:10]. Each creature in the area must attempt a @Check[type:reflex|resolve(@actor.system.attributes.classOrSpellDC.value)] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[(1d10+13)[bludgeoning]] damage as it is battered by the worm's body.</p>\n<p><strong>Failure</strong> The target takes @Damage[(3d10+15)[piercing]] damage as it is bitten by the worm. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but the damage increases to @Damage[(6d10+30)[bludgeoning]] and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The button above uses the better of your class or spell DC.</em></p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Call Worm Spirit"
     },
     "Call Your Shot": {
       "description": "<p>When you successfully Play to the Crowd, add the following to the list of benefits you can choose from:</p>\n<ul>\n<li>Choose a creature within 30 feet that can see you to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. This effect has the emotion, fear, mental, and visual traits.</li>\n</ul>",
@@ -4570,6 +4591,13 @@
         "1": "Streetwise"
       },
       "name": "Criminal Connections"
+    },
+    "Crimson Breath": {
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You gain a fire breath weapon similar to that of a crimson worm. You breathe a blast of flame in a @Template[type:cone|distance:30] that deals @Damage[((ceil(max(0,((@actor.level - 13)/2)))*2)+12)d6[fire]] damage to all creatures in the area (@Check[type:reflex|resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save). This damage increases by 2d6 at 14th level and every 2 levels thereafter.</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The button above uses the better of your class or spell DC.</em></p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Crimson Breath"
     },
     "Crimson Oath Devotion": {
       "description": "<p>You've made the Crimson Oath a part of yourself; you mumble it in your sleep and recite it under your breath as you march. You become an expert in divine spell attacks and spell DCs. If you have spent at least 2 Focus Points since the last time you Refocused, you recover 2 Focus Points when you Refocus instead of 1.</p>",
@@ -11702,6 +11730,13 @@
     "Inexhaustible Countermoves": {
       "description": "<p>You can react whenever a foe leaves a gap in their defenses. At the start of each enemy's turn, you gain an extra reaction you can use only during that turn to perform an @UUID[Compendium.pf2e.classfeatures.Item.Jtn7IugykXDlIoZq]{Opportune Riposte}, or an @UUID[Compendium.pf2e.classfeatures.Item.hmShTfPOcTaKgbf4]{Attack of Opportunity} if you have that reaction.</p>",
       "name": "Inexhaustible Countermoves"
+    },
+    "Inexorable": {
+      "description": "<p>You imbue yourself with the resilience of the cave worm. When you gain the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} condition, roll a @Check[type:flat|dc:15]. On a success you ignore the condition.</p>\n<p>When using Worm Form you are immune to penalties to your Speed and the @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} condition, you gain a +2 circumstance bonus to your Fortitude or Reflex DC against attempts to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} you, and you ignore difficult terrain and greater difficult terrain.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Inexorable"
     },
     "Infectious Emotions": {
       "description": "<p>When you use @UUID[Compendium.pf2e.actionspf2e.Item.2424g94rpoiN1IPh]{Catharsis}, one ally within 30 feet gains the catharsis activation benefits in addition to you. If these benefits require an emotional focus, they use your emotional focus as they're experiencing an empathic imprint of your emotions. Depending on the activation benefit, it might be impossible to grant it to an ally; for instance, pride could only have an effect for an ally if both you and the ally critically failed the same saving throw against the same effect.</p>",
@@ -22969,6 +23004,13 @@
       },
       "name": "Tumbling Theft"
     },
+    "Tunnel": {
+      "description": "<p>You gain a burrow speed of 10 feet.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Tunnel"
+    },
     "Tunnel Wall": {
       "description": "<p><strong>Requirements</strong> You are in Tenacious Stance.</p>\n<hr />\n<p>Using your shield, you guard against the movement of foes as surely as if you were a wall of stone. You @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} and become anchored for 1 round. While anchored, you gain a +4 circumstance bonus to the DC to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through} your space.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.R6mx6EfLxSrQlrRa]{Effect: Anchored}</p>",
       "featPrerequisites": {
@@ -23777,6 +23819,13 @@
     "Venom Spit": {
       "description": "<p>You've learned the art of lobbing toxic spittle at vulnerable spots on your foes, especially the eyes. You gain a venomous spit ranged unarmed attack with a range increment of 10 feet that deals 1d4 poison damage. On a critical hit, the target takes persistent poison damage equal to the number of weapon damage dice. Your spit doesn't have a weapon group, nor a critical specialization effect.</p>\n<p><strong>Special</strong> If you have the hooded nagaji heritage, in addition to your venomous spit's normal critical hit effect, the target is also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your next turn.</p>",
       "name": "Venom Spit"
+    },
+    "Venomous Touch": {
+      "description": "<p>You've learned to channel the sting of the worm. You gain <em>@UUID[Compendium.pf2e.spells-srd.Item.ayRXv0wQH00TTNZe]{Purple Worm Sting}</em> as an innate primal spell that you can cast once per day.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Venomous Touch"
     },
     "Verdant Metamorphosis": {
       "description": "<p>You transform into a plant version of yourself. You gain the plant trait and lose any trait that's inappropriate for your new form (typically humanoid for a PC, but also possibly animal or fungus). You can change from a form that looks mostly like your old self into a tree or any other non-creature plant as a single action, which has the concentrate trait. This has the same effect as tree shape, except you can turn into any kind of non-creature plant and your AC is 30. If you rest for 10 minutes while transformed into a non-creature plant during daylight hours under direct sunlight, you recover half your maximum Hit Points. If you take your daily rest in this way, the rest restores you to maximum Hit Points and removes all non-permanent @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} conditions, as well as all poisons and diseases of 19th level or lower.</p>",
@@ -24932,6 +24981,48 @@
     "Worldsphere Gravity": {
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>Though creating demiplanes usually requires lengthy rituals, you know how to establish minor planar effects in imitation of Syndara's masterpieces. If your next action is to Cast a Spell of at least 5th level from your spell slots that affects an area, you can apply one of the following planar effects to a @Template[type:burst|distance:20] centered within the spell's area. The effect persists for 1 minute.</p>\n<p><strong>Gravitational Morass</strong> The pull of gravity is amplified here, creating greater difficult terrain. Flying creatures that pass through the area must succeed at a Reflex save against your spell DC or fall to the ground, taking bludgeoning damage equal to half the distance fallen.</p>\n<p><strong>Flowing Time</strong> Erratic timestreams aid you within this space. A creature that starts its turn in the burst is affected by <em>@UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste}</em> on that turn.</p>",
       "name": "Worldsphere Gravity"
+    },
+    "Worm Caller Dedication": {
+      "description": "<p>You pledge yourself to understanding and emulating one of the most powerful creatures of the Darklands: the mighty cave worm. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.wGTHH6v25CDavO6g]{Shake It Off} reaction.</p>\n<hr />\n<p>@UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.l76UxUsfrsPnP9U9]{Worm Caller Archetype}</p>",
+      "featPrerequisites": {
+        "0": "trained in Nature or Cave Worm Lore"
+      },
+      "name": "Worm Caller Dedication"
+    },
+    "Worm Empathy": {
+      "description": "<p>You can connect with cave worms (and other worm-related creatures, at the GM's discretion) on a rudimentary level. You can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on cave worms and to make simple Requests of them. In most cases, the cave worm's starting attitude is indifferent and they will give you time to establish contact.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Worm Empathy"
+    },
+    "Worm Form": {
+      "description": "<p>You take on the form of a purple worm or transform into a humanoid-worm hybrid, retaining your own head but with a worm's body, transforming into a Huge battle form. You must have enough space to expand into or the ability is lost. While in this form, you gain the animal trait. You can Dismiss the form.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 20 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>40 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +25, and you use the listed damage. Melee attacks are Strength based (for the purpose of the enfeebled condition, for example). If your unarmed attack modifier is higher, you can use it instead.</li>\n<li>Athletics modifier of +30, unless your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of monster you choose:</p>\n<p><strong>Purple Worm</strong> Speed 40 feet, burrow 30 feet, swim 20 feet</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> jaws (deadly 2d10, reach 15 feet), <strong>Damage</strong> 3d10+15 piercing</p>\n<p><strong>Melee</strong><span class=\"pf2-icon\">1</span> stinger (agile, poison, reach 15 feet), <strong>Damage</strong> 2d12+15 piercing plus 2d6 persistent poison</p>\n<p><strong>Melee</strong><span class=\"pf2-icon\">1</span> body (reach 15 feet) <strong>Damage</strong> 1d10+13 bludgeoning</p>\n<p><strong>Hybrid</strong> Speed 40 feet</p>\n<p><strong>Melee</strong><span class=\"pf2-icon\">1 </span>stinger (agile, poison, reach 10 feet), <strong>Damage</strong> 2d12+15 piercing plus 1d6 persistent poison</p>\n<p><strong>Melee</strong><span class=\"pf2-icon\">1</span> body (reach 10 feet), <strong>Damage</strong> 1d10+13 bludgeoning</p>\n<p><strong>Hybrid Caster</strong> You retain the ability to speak, and can cast spells as long as they don't have somatic or material components.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Worm Form"
+    },
+    "Worm Sense": {
+      "description": "<p>You emulate the senses of the cave worm. You gain darkvision and tremorsense as an imprecise sense within 5 feet.</p>\n<p>The range of the tremorsense increases to 10 feet at 8th level and to 15 feet at 12th level.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Worm Sense"
+    },
+    "Worm's Feast": {
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You call forth a brood of infantile cave worms to feast on your enemy's flesh. Choose a creature within 30 feet; the creature must attempt a @Check[type:fortitude|resolve(@actor.system.attributes.classOrSpellDC.value)] save. At 8th level and every 2 levels above that, the persistent piercing damage taken on a failure increases by 1d6.</p>\n<hr />\n<p><strong>Critical Success</strong> The worms writhe away harmlessly.</p>\n<p><strong>Success</strong> The target takes @Damage[2d6[piercing]] damage and @Damage[2d6[persistent, piercing]] damage.</p>\n<p><strong>Failure</strong> The target takes @Damage[6d6[piercing]] damage and @Damage[2d6[persistent, piercing]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, plus the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} as long as it takes persistent piercing damage.</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The button above uses the better of your class or spell DC.</em></p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Worm's Feast"
+    },
+    "Wormskin": {
+      "description": "<p>Your flesh grows thick and bloated, protecting you against harm. You gain resistance equal to half your level versus one of the following types of damage, chosen when you take the feat: fire, cold, or bludgeoning. This choice cannot be changed.</p>\n<p>When you're unarmored, your flesh gives you a +2 item bonus to AC with a Dexterity cap of +3. You can apply with armor potency runes and property runes directly to your flesh, though excruciatingly painful.</p>\n<p><strong>Special</strong> You can take this feat up to three times, each time selecting a new damage type from the list.</p>",
+      "featPrerequisites": {
+        "0": "Worm Caller Dedication"
+      },
+      "name": "Wormskin"
     },
     "Wortwitch": {
       "description": "<p>You have a particular affinity for leafy plants.</p>\n<p>Your patron grants you a leshy familiar. If you already had a familiar, this leshy replaces your previous familiar, as if your previous familiar had been slain.</p>\n<p>In addition, you gain the ability to see through leaves, vines, and other foliage. You don't take circumstance penalties to ranged spell attacks or Perception checks caused by foliage, and your targeted attacks don't require a flat check to succeed against a target @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} only by such vegetation.</p>",
