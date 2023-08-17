@@ -620,7 +620,7 @@
       "description": "<p>Sheets of fire and positive energy blast through the room in waves that obliterate the undead and scorch the living.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:41] (master) to bleed away the trap's energy, or @Check[type:religion|dc:39] (expert) to recite the appropriate prayers to Urgathoa to stop the trap (Pesabnet knows these prayers and automatically succeeds at checks to recite them). Disabling the trap requires three successful checks, in any combination of Thievery and Religion checks.</p>",
       "hazardReset": "<p>The sacred fire disappears 1 minute after no creatures are in the room, and the trap immediately resets</p>",
-      "hazardRoutine": "<p>(1 action) A wall of sacred fire washes back and forth throughout the room, bathing every inch of the space in holy power and dealing [[/r {3d12[fire],3d12[positive]}]]{3d12 fire damage 3d12 positive damage}. Each creature in the trap's area must attempt a @Check[type:reflex|dc:39] save.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes double damage.</p>\n<p><strong>Critical Failure</strong> If the creature has negative healing, it is instantly destroyed. Otherwise, it takes double damage and @Damage[1d12[persistent,fire]] damage.</p>",
+      "hazardRoutine": "<p>(1 action) A wall of sacred fire washes back and forth throughout the room, bathing every inch of the space in holy power and dealing @Damage[3d12[fire],3d12[positive]]{3d12 fire damage 3d12 positive damage}. Each creature in the trap's area must attempt a @Check[type:reflex|dc:39] save.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes double damage.</p>\n<p><strong>Critical Failure</strong> If the creature has negative healing, it is instantly destroyed. Otherwise, it takes double damage and @Damage[1d12[persistent,fire]] damage.</p>",
       "name": "Cleansing Fire"
     },
     "Cleansing Hall": {
@@ -660,7 +660,7 @@
           "name": "Jutting Bones"
         },
         "snTIGb2g7DF1L8wx": {
-          "description": "<p>Each foe in the cobblebone swarm's space takes [[/r {1d6[bludgeoning],1d6[negative]}]]{1d6 bludgeoning damage and 1d6 negative damage} (@Check[type:reflex|dc:17|basic:true]).</p>",
+          "description": "<p>Each foe in the cobblebone swarm's space takes @Damage[1d6[bludgeoning],1d6[negative]]{1d6 bludgeoning damage and 1d6 negative damage} (@Check[type:reflex|dc:17|basic:true]).</p>",
           "name": "Phantasmal Pummeling"
         },
         "zGBrolmCtqnMeB9V": {
@@ -2649,7 +2649,7 @@
     "Perilous Flash Flood": {
       "description": "<p>Whether made up of water rushing through the streets that sweeps up dangerous debris along the way or a less natural substance bursting free of its container, this relentless flood batters everything in its path.</p>",
       "hazardDisable": "<p>Three @Check[type:athletics|dc:35|name:Move Barricade], @Check[type:crafting|dc:35|name:Construct Barricade], or @Check[type:survival|dc:35|name:Construct Barricade] checks to move or construct barricades strong enough to create a shelter from the flood. While this creates a safe place to stand, creatures outside of the barricaded area may still be in danger depending on the nature and the source of the flood.</p>",
-      "hazardRoutine": "<p>(1 action) The flood advances forward 60 feet, crashing into all creatures within its area. Each creature must attempt a @Check[type:fortitude|dc:30] save as the floodwaters pummel them and pull them downstream. The amount and type of damage dealt are based on the nature of the flood, and certain types of floods impose additional effects. The turbulent waters mean creatures within the area of the flood must attempt a @Check[type:athletics|dc:20|name:Swim|traits:action:swim] check to Swim in order to move, and those who do not succeed at a check to Swim each round may drown.</p>\n<p>This caustic flood dissolves flesh as it moves, dealing [[/r {1d12[bludgeoning],(1d12+8)[acid]}]]{1d12 bludgeoning damage and 1d12+8 acid damage}. Additionally, it deals @Damage[2d6[persistent,acid]] damage to creatures who critically fail their Fortitude saves.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is moved 10 feet along with the water.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is moved 20 feet along with the water.</p>",
+      "hazardRoutine": "<p>(1 action) The flood advances forward 60 feet, crashing into all creatures within its area. Each creature must attempt a @Check[type:fortitude|dc:30] save as the floodwaters pummel them and pull them downstream. The amount and type of damage dealt are based on the nature of the flood, and certain types of floods impose additional effects. The turbulent waters mean creatures within the area of the flood must attempt a @Check[type:athletics|dc:20|name:Swim|traits:action:swim] check to Swim in order to move, and those who do not succeed at a check to Swim each round may drown.</p>\n<p>This caustic flood dissolves flesh as it moves, dealing @Damage[1d12[bludgeoning],(1d12+8)[acid]]{1d12 bludgeoning damage and 1d12+8 acid damage}. Additionally, it deals @Damage[2d6[persistent,acid]] damage to creatures who critically fail their Fortitude saves.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is moved 10 feet along with the water.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is moved 20 feet along with the water.</p>",
       "name": "Perilous Flash Flood"
     },
     "Pesgahi the Poisoner": {
@@ -3423,7 +3423,7 @@
           "name": "Thrash"
         },
         "8NaZvJ0qWl2L1Iny": {
-          "description": "<p>The shadow worm exhales a blast of clinging shadow, dealing [[/r {11d6[cold],10d6[negative]}]]{11d6 cold damage and 10d6 negative damage} to creatures in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:42|basic:true]). If the cone passes through an area of magical light or targets a creature affected by magical light, Breath Weapon attempts to counteract the light ([[/br 1d20+34 #Counteract]]{+34} counteract modifier). The shadow worm can't use Breath Weapon again for [[/r 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
+          "description": "<p>The shadow worm exhales a blast of clinging shadow, dealing @Damage[11d6[cold],10d6[negative]]{11d6 cold damage and 10d6 negative damage} to creatures in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:42|basic:true]). If the cone passes through an area of magical light or targets a creature affected by magical light, Breath Weapon attempts to counteract the light ([[/br 1d20+34 #Counteract]]{+34} counteract modifier). The shadow worm can't use Breath Weapon again for [[/r 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
           "name": "Breath Weapon"
         },
         "9vuH8rOTjPJDczqQ": {
@@ -3775,7 +3775,7 @@
           "name": "Ooze Globule"
         },
         "LEXVAisQOLgbK4DA": {
-          "description": "<p><strong>Requirements</strong> The soul slime is using Soul Facsimile to adopt a creature's form</p>\n<hr />\n<p><strong>Effect</strong> The soul slime releases an incoherent wail composed of countless overlapping noises made by the creatures whose souls it has siphoned. This disturbing cacophony deals [[/r {6d10[mental],6d10[sonic]}]]{6d10 mental damage and 6d10 sonic damage} to each creature in a @Template[type:burst|distance:30]{30-foot-radius burst} centered on the soul slime (@Check[type:will|dc:37|basic:true]). On a failed save, a creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}. The soul slime can't use Disturbing Wail again for [[/br 1d4 #Recharge Disturbing Wail]]{1d4 rounds}.</p>",
+          "description": "<p><strong>Requirements</strong> The soul slime is using Soul Facsimile to adopt a creature's form</p>\n<hr />\n<p><strong>Effect</strong> The soul slime releases an incoherent wail composed of countless overlapping noises made by the creatures whose souls it has siphoned. This disturbing cacophony deals @Damage[6d10[mental],6d10[sonic]]{6d10 mental damage and 6d10 sonic damage} to each creature in a @Template[type:burst|distance:30]{30-foot-radius burst} centered on the soul slime (@Check[type:will|dc:37|basic:true]). On a failed save, a creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}. The soul slime can't use Disturbing Wail again for [[/br 1d4 #Recharge Disturbing Wail]]{1d4 rounds}.</p>",
           "name": "Disturbing Wail"
         },
         "NlKYbxNfVBumLBOH": {
@@ -4137,7 +4137,7 @@
       "description": "<p>The Fiendflame Cage is uncontrolled, releasing holy light and hellfire in the area.</p>",
       "hazardDisable": "<p>@Check[type:arcana|dc:48], @Check[type:nature|dc:48], @Check[type:occultism|dc:48], or @Check[type:religion|dc:48] (master) four times on the Fiendflame Cage to calm it through ritual incantations</p>",
       "hazardReset": "<p>The trap resets after 24 hours.</p>",
-      "hazardRoutine": "<p>(2 actions) On its initiative, the Fiendflame Cage uses 1 action to release a wave of hellfire, dealing [[/r {(2d10+12)[evil],(2d10+12)[fire]}]]{2d10+12 evil damage and 2d10+12 fire damage} to all creatures in a @Template[type:burst|distance:15]{15-foot-radius burst} (@Check[type:reflex|dc:47|basic:true]). The Fiendflame Cage uses its second action to release a wave of holy light, dealing [[/r {(2d10+12)[good],(2d10+12)[fire]}]]{2d10+12 good damage and 2d10+12 fire damage} to all creatures in a @Template[type:burst|distance:15]{15-foot-radius burst} (@Check[type:reflex|dc:47|basic:true]).</p>",
+      "hazardRoutine": "<p>(2 actions) On its initiative, the Fiendflame Cage uses 1 action to release a wave of hellfire, dealing @Damage[(2d10+12)[evil],(2d10+12)[fire]]{2d10+12 evil damage and 2d10+12 fire damage} to all creatures in a @Template[type:burst|distance:15]{15-foot-radius burst} (@Check[type:reflex|dc:47|basic:true]). The Fiendflame Cage uses its second action to release a wave of holy light, dealing @Damage[(2d10+12)[good],(2d10+12)[fire]]{2d10+12 good damage and 2d10+12 fire damage} to all creatures in a @Template[type:burst|distance:15]{15-foot-radius burst} (@Check[type:reflex|dc:47|basic:true]).</p>",
       "name": "Unstable Fiendflame Cage"
     },
     "Urbulinex": {
@@ -4617,7 +4617,7 @@
           "name": "All-Knowing Eyes"
         },
         "bQ9KwlZyFYWXB95l": {
-          "description": "<p>The wheel archon spins furiously, emitting a rain of divine fire. All creatures in a @Template[type:emanation|distance:60] take [[/r {12d6[fire],5d6[good]}]]{12d6 fire damage and 5d6 good damage} (@Check[type:reflex|dc:37|basic:true]). The wheel archon can't use Fiery Spokes for [[/br 1d4 #Recharge Fiery Spokes]]{1d4 rounds}.</p>",
+          "description": "<p>The wheel archon spins furiously, emitting a rain of divine fire. All creatures in a @Template[type:emanation|distance:60] take @Damage[12d6[fire],5d6[good]]{12d6 fire damage and 5d6 good damage} (@Check[type:reflex|dc:37|basic:true]). The wheel archon can't use Fiery Spokes for [[/br 1d4 #Recharge Fiery Spokes]]{1d4 rounds}.</p>",
           "name": "Fiery Spokes"
         },
         "fVHRATRLRiaVwvEi": {

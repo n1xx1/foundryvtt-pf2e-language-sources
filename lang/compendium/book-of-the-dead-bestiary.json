@@ -1121,7 +1121,7 @@
           "name": "Great Despair"
         },
         "vgpzwfs5atbe56al": {
-          "description": "<p>This affliction can't be reduced below stage 1, nor can damage from it be healed, until successfully treated with <em>@UUID[Compendium.pf2e.spells-srd.Item.OyFCwQuw8XRazsNr]{Remove Curse}</em> or a similar effect. The affliction can then be removed as normal for a disease. A creature killed by cold rot turns to ice crystals and can't be resurrected except by a 7th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:24]</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round, then carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> [[/r {5d6[negative],2d6[cold]}]]{5d6 negative damage plus 2d6 cold damage} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 day)</p>",
+          "description": "<p>This affliction can't be reduced below stage 1, nor can damage from it be healed, until successfully treated with <em>@UUID[Compendium.pf2e.spells-srd.Item.OyFCwQuw8XRazsNr]{Remove Curse}</em> or a similar effect. The affliction can then be removed as normal for a disease. A creature killed by cold rot turns to ice crystals and can't be resurrected except by a 7th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:24]</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round, then carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[5d6[negative],2d6[cold]]{5d6 negative damage plus 2d6 cold damage} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 day)</p>",
           "name": "Cold Rot"
         },
         "vrbzxalz7mler6oi": {
@@ -1129,7 +1129,7 @@
           "name": "Snow Vision"
         },
         "vvxq8pxshmt9yd29": {
-          "description": "<p>The ice mummy exhales a @Template[type:cone|distance:60] of razor-sharp ice that deals [[/r {5d6[cold],4d6[slashing]}]]{5d6 cold and 4d6 slashing damage} (@Check[type:reflex|dc:26|basic:true]).</p>\n<p>The ice mummy can't use Frozen Breath again for [[/br 1d4 #Recharge Frozen Breath]]{1d4 rounds}.</p>",
+          "description": "<p>The ice mummy exhales a @Template[type:cone|distance:60] of razor-sharp ice that deals @Damage[5d6[cold],4d6[slashing]]{5d6 cold and 4d6 slashing damage} (@Check[type:reflex|dc:26|basic:true]).</p>\n<p>The ice mummy can't use Frozen Breath again for [[/br 1d4 #Recharge Frozen Breath]]{1d4 rounds}.</p>",
           "name": "Frozen Breath"
         }
       },
@@ -1461,11 +1461,11 @@
           "name": "Sand Rot"
         },
         "8dmnhjn5baw0ic6c": {
-          "description": "<p><strong>Requirements</strong> The prophet's Sandstorm is active</p>\n<hr />\n<p><strong>Effect</strong> The prophet inhales its Sandstorm, suppressing the effect until the end of the prophet's next turn. It then exhales a @Template[type:cone|distance:120] of negatively charged sand that deals [[/r {7d6[negative],7d6[slashing]}]]{7d6 negative and 7d6 slashing damage} (@Check[type:reflex|dc:33|basic:true]).</p>",
+          "description": "<p><strong>Requirements</strong> The prophet's Sandstorm is active</p>\n<hr />\n<p><strong>Effect</strong> The prophet inhales its Sandstorm, suppressing the effect until the end of the prophet's next turn. It then exhales a @Template[type:cone|distance:120] of negatively charged sand that deals @Damage[7d6[negative],7d6[slashing]]{7d6 negative and 7d6 slashing damage} (@Check[type:reflex|dc:33|basic:true]).</p>",
           "name": "Breath of Sand"
         },
         "8q0pqsiwe57oc0lw": {
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mummy creates a temporary sandstorm in a @Template[type:emanation|distance:30] that lasts for 1 minute. Creatures within the emanation take a -4 circumstance penalty to Perception checks and must succeed at a @Check[type:fortitude|dc:33] save or be forced to hold their breath or start suffocating. A creature within the sandstorm at the end of its turn takes [[/r {2d6[negative],1d6[slashing]}]]{2d6 negative and 1d6 slashing damage}.</p>",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mummy creates a temporary sandstorm in a @Template[type:emanation|distance:30] that lasts for 1 minute. Creatures within the emanation take a -4 circumstance penalty to Perception checks and must succeed at a @Check[type:fortitude|dc:33] save or be forced to hold their breath or start suffocating. A creature within the sandstorm at the end of its turn takes @Damage[2d6[negative],1d6[slashing]]{2d6 negative and 1d6 slashing damage}.</p>",
           "name": "Sandstorm"
         },
         "da71u2jzo19jfmuf": {
@@ -2072,7 +2072,7 @@
           "name": "Wavesense (Imprecise) 100 feet"
         },
         "wv50pg4p8i3xb12d": {
-          "description": "<p>Each enemy in the seetangeist's space takes [[/r {3d6[slashing],3d6[poison]}]]{3d6 slashing and 3d6 poison damage} (@Check[type:reflex|dc:32|basic:true]). A creature that fails this save also takes @Damage[1d12[persistent,poison]].</p>",
+          "description": "<p>Each enemy in the seetangeist's space takes @Damage[3d6[slashing],3d6[poison]]{3d6 slashing and 3d6 poison damage} (@Check[type:reflex|dc:32|basic:true]). A creature that fails this save also takes @Damage[1d12[persistent,poison]].</p>",
           "name": "Putrid Assault"
         },
         "xcdtl5hp12cdn0au": {
@@ -2640,7 +2640,7 @@
           "name": "Stinger"
         },
         "266u1f6h9sli518d": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {3d6[negative],2d6[poison]}]]{3d6 negative damage and 2d6 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {3d6[negative],2d6[poison]}]]{3d6 negative damage and 2d6 poison damage}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {3d6[negative],2d6[poison]}]]{3d6 negative damage and 2d6 poison damage}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} (1 round)</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:37]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[negative],2d6[poison]]{3d6 negative damage and 2d6 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[negative],2d6[poison]]{3d6 negative damage and 2d6 poison damage}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[negative],2d6[poison]]{3d6 negative damage and 2d6 poison damage}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} (1 round)</p>",
           "name": "Urveth Venom"
         },
         "43rtpaawc0hyjxs2": {
