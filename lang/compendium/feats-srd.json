@@ -12963,7 +12963,7 @@
       "name": "Lesser Enhance Venom"
     },
     "Lethal Finisher": {
-      "description": "<p>You stab your foe in a vital organ, possibly killing them outright. Make a Strike. On a success, you forego your precise strike damage from the finisher.</p>\n<p>Instead, your target takes additional precision damage based on a Fortitude save against your class DC. If your Strike was a critical hit, the target's saving throw outcome is one degree worse.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal 6 precision damage.</p>\n<p><strong>Success</strong> You deal 6d6 precision damage.</p>\n<p><strong>Failure</strong> You deal 12d6 precision damage.</p>\n<p><strong>Critical Failure</strong> You deal 18d6 precision damage.</p>",
+      "description": "<p>You stab your foe in a vital organ, possibly killing them outright. Make a Strike. On a success, you forego your precise strike damage from the finisher.</p>\n<p>Instead, your target takes additional precision damage based on a @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.swashbuckler.dc)] save against your class DC. If your Strike was a critical hit, the target's saving throw outcome is one degree worse.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal 6 precision damage.</p>\n<p><strong>Success</strong> You deal 6d6 precision damage.</p>\n<p><strong>Failure</strong> You deal 12d6 precision damage.</p>\n<p><strong>Critical Failure</strong> You deal 18d6 precision damage.</p>",
       "featPrerequisites": {
         "0": "precise strike 6d6"
       },
@@ -21444,7 +21444,7 @@
       "name": "Stunning Appearance"
     },
     "Stunning Finisher": {
-      "description": "<p>You attempt a dizzying blow. Make a melee Strike. If you hit, your foe must attempt a Fortitude save against your class DC with the following results; the save has the incapacitation trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't use reactions until its next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
+      "description": "<p>You attempt a dizzying blow. Make a melee Strike. If you hit, your foe must attempt a @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.swashbuckler.dc)|traits:incapacitation] save against your class DC with the following results; the save has the incapacitation trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't use reactions until its next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
       "name": "Stunning Finisher"
     },
     "Stunning Fist": {
