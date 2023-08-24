@@ -73,6 +73,11 @@
       "name": "Clockwork Cannoneer",
       "npcSenses": "darkvision"
     },
+    "Cracked Earth": {
+      "description": "<p>This 20-foot-by-20-foot patch of ground is cobwebbed with cracks and fissures that crumble when a creature steps on it.</p>",
+      "hazardDisable": "<p>@Check[type:survival|dc:16] (untrained) to collapse safely; @Check[type:crafting|dc:20] (trained) to shore it up enough to pass over without collapsing it</p>",
+      "name": "Cracked Earth"
+    },
     "Cursed King": {
       "description": "<p>A cursed king is a grotesque mockery of ambition. When treasonous advisors, false prophets, and rebel leaders are captured by evil rulers, they're subjected to all manner of torture and humiliation before their eventual executions. But the cursed king isn't even granted dignity in death, as after their beheading, a desiccated animal head is sewn onto their neck. These horrific mummies are then dressed in fine linens and jewelry befitting royalty—a permanent warning of what happens to those who seek to rise above their station.</p>\n<p>A cursed king is bound in servitude to the ruler against whom they once fought, forced to act as a bodyguard. Even the death of their maker gives no reprieve, as they guard the true monarch's tomb forever.</p>",
       "items": {
@@ -250,6 +255,13 @@
       },
       "name": "Kashrishi Evaluator"
     },
+    "Mana Whorl": {
+      "description": "<p>This 15-foot-wide patch of destabilized sand attempts to submerge creatures who wield magic. A desert tree with dense bright green foliage, pale pink blooms, and at least one carnivorous red-chested magpie is always nearby.</p>",
+      "hazardDisable": "<p>@Check[type:arcana|dc:26] (expert) to feed magic into the whorl and temporarily stabilize it for a few minutes; feed the whorl a number of spellcasters and magic items with a combined 10 levels (for instance, a 4th-level cleric with two 3rd-level magic items) to stabilize it for 1 week; or feed the whorl a number of spellcasters and magic items with a combined 20 levels to stabilize it permanently. Spellcasters and magic items fed to the whorl are devoured whole.</p>",
+      "hazardReset": "<p>The hazard continues to suck in anyone with magic until it is satiated (see Disable above). Magpies leave any satiated whorls.</p>",
+      "hazardRoutine": "<p>(1 action) On its initiative, the whorl pulls down any creature within it that can cast spells or that is wielding a magic item. A creature submerged to the waist becomes submerged to the neck, and a creature submerged to the neck is pulled under and must hold its breath to avoid suffocation. If a creature has no spells or magic items, the mana whorl is merely difficult terrain. A creature caught in a mana whorl can attempt a @Check[type:athletics|dc:23] check to Swim to either raise itself by one step if submerged to the neck or worse, or to move 5 feet if submerged only to the waist. On a critical failure, the creature is pulled down by one step. A creature that Swims out of the whorl escapes the hazard and is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in a space adjacent to the whorl. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own @Check[type:athletics|dc:23] check, with the same results as if the creature attempted the check. If a creature has only magic items and no ability to cast spells, dropping all the items releases that creature, and it can move through the mana whorl as normal difficult terrain.</p>",
+      "name": "Mana Whorl"
+    },
     "Mutant Gnoll Hulk": {
       "description": "<p>Separated from their pack during a prolonged storm of wild magic, the Mana Wastes mutant gnoll hulk transformed into a gigantic, ravenous creature.</p>\n<hr />\n<p>The erratic magical energies of the Mana Wastes can warp and twist creatures foolish or unlucky enough to be trapped in them. The physiological effects of this exposure vary in scope from grotesque full-body transformations to more subtle changes to the skin or senses, and they're frequently accompanied by changes in disposition, motivation, or temperament.</p>",
       "items": {
@@ -378,6 +390,12 @@
       },
       "name": "Skinskitter",
       "npcSenses": "a taste for skin (imprecise) 60 feet"
+    },
+    "Spell Pitchers": {
+      "description": "<p>A large pitcher plant occupying a 5-foot space sits seemingly dormant with its dull petals open.</p>",
+      "hazardDisable": "<p>@Check[type:arcana|dc:15] (trained) to safely trigger the plant's reflexes, causing it to close and become dormant for one day, or @Check[type:nature|dc:17] (trained) to carefully coax the pitcher into quiescence</p>",
+      "hazardReset": "<p>Once the pitcher has eaten a spell, its petals turn dark pink and green before it closes. It goes dormant for one day per spell level of the spell consumed. Once the pitcher finishes digesting, it opens again and slowly wilts. A second pitcher branches into an adjacent square when the first pitcher opens again.</p>",
+      "name": "Spell Pitchers"
     },
     "Spellscar Fext": {
       "description": "<p>Spellscar fexts are spellcasters who were destroyed by wild magic or wellspring surges they tried—and failed—to control. The magical feedback that snuffed out their life warped and animated their flesh, twisting them into shambling undead. Spellscar fexts stand 6 feet tall with disproportionately long arms that end in clusters of waving magical tendrils.</p>\n<p>Almost all who became spellscar fexts entered the Mana Wastes to harness the power of the area's wild magic. Once transformed, the desire for magical power becomes a spellscar fext's singular motivation. The creatures focus their attacks on magic users they encounter, attempting to kill them and strip their magic. Unfortunately for a spellscar fext, their transformation makes their entire being inimical to magic. They're unable to cast even the simplest of spells. They grasp destructively at magic they can never hold.</p>\n<p>Difficult for the unprepared to destroy permanently, spellscar fexts harry trade routes known for shipping magical goods and repeatedly attack arcane workshops on the borders of the Mana Wastes. They're particularly dangerous to spellcasters traveling alone, as battling the creatures might trigger a wellspring surge that could destroy the lone magic user.</p>\n<p>As the fext's vulnerability to glass weapons has become more well known, enterprising gunsmiths in Alkenstar have begun crafting glass ammunition, an uncommon item that costs the same as cold iron ammunition.</p>",
