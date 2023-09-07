@@ -541,6 +541,16 @@
       "name": "Bind Undead",
       "spellTarget": "1 mindless undead creature with a level no greater than bind undead's spell level"
     },
+    "Binding Muzzle": {
+      "description": "<p>A shimmering muzzle of pure magical force clamps the target's mouth shut. The target can attempt a Fortitude save to resist the muzzle. For targets with more than one mouth, the caster must target a single mouth.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the target can't use jaws Strikes, Breath Weapons, or any other attack that originates from the mouth, nor can they imbibe anything, including potions, mutagens, and elixirs.</p>\n<p><strong>Failure</strong> As success, but the effect lasts 1 minute, and they must succeed at a @Check[type:flat|dc:11] to Cast a Spell with verbal components.</p>\n<p><strong>Critical Failure</strong> As success, but the effect lasts 1 minute and the target can't speak.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 5 creatures.</p>",
+      "name": "Binding Muzzle",
+      "spellHeightening": {
+        "5": {
+          "spellTarget": "Up to 5 creatures"
+        }
+      },
+      "spellTarget": "1 creature"
+    },
     "Bit of Luck": {
       "description": "<p>You tilt the scales of luck slightly to protect a creature from disaster. When the target would attempt a saving throw, it can roll twice and use the better result. Once it does this, the spell ends. If you cast bit of luck again, any previous bit of luck you cast that's still in effect ends. After a creature has been targeted with bit of luck, it becomes temporarily immune for 24 hours.</p>",
       "name": "Bit of Luck",
@@ -569,6 +579,10 @@
     "Blanket Of Stars": {
       "description": "<p>A flowing cloak of utter darkness drapes over you, filled with pinpricks of light like distant stars. It imparts the stillness of the cosmos to you, granting you a +2 status bonus to Stealth checks to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}.</p>\n<p>While outside under a starry night sky, you're also @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} as long as you remain still. When moving under a starry night sky, you are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} instead.</p>\n<p>Gazing too closely into the stars is disorienting. Any creature that ends its turn adjacent to you must attempt a Will save; this is a mental, visual effect.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and Dazzled until the end of its next turn.</p>",
       "name": "Blanket Of Stars"
+    },
+    "Blast of the Bellows": {
+      "description": "<p>You create a churning eddy of warm air that makes it difficult to fly within the area. This area is difficult terrain for flying creatures. Each time a flying creature enters the area or ends its turn there, it must attempt an Acrobatics check to @UUID[Compendium.pf2e.actionspf2e.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight}.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature descends 30 feet.</p>\n<p><strong>Critical Failure</strong> The creature descends 60 feet.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration increases to 10 minutes.</p>",
+      "name": "Blast of the Bellows"
     },
     "Blastback": {
       "description": "<p><strong>Trigger</strong> You fall more than 10 feet.</p>\n<hr />\n<p>You hit the ground with a shuddering boom, propelling the force of your fall out in a wave. You take no damage from the fall as the displaced air allows you to land gently, but all other creatures in the spell's area take @Damage[6d4[bludgeoning]] damage. Creatures that fail their save are also pushed back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The emanation increases by 10 feet, and the damage increases by [[/r 1d4]].</p>",
