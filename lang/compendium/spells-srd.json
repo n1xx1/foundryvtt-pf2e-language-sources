@@ -40,12 +40,12 @@
       "spellTarget": "1 Creature"
     },
     "Acid Arrow": {
-      "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus 1d6 persistent acid damage. On a critical hit, double the initial damage, but not the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>\n<p>[[/r floor(@item.level/2)d6[persistent,acid]]]{Leveled Persistent Acid Damage}</p>",
+      "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus [[/r floor(@item.level/2)d6[persistent,acid]]] damage. On a critical hit, double the initial damage, but not the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
       "name": "Acid Arrow",
       "spellTarget": "1 creature"
     },
     "Acid Splash": {
-      "description": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes 1 persistent acid damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 1d6 + your spellcasting ability modifier, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 2d6 + your spellcasting ability modifier, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 3d6 + your spellcasting ability modifier, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 4d6 + your spellcasting ability modifier, the persistent damage increases to 5, and the splash damage increases to 4.</p>\n<p>[[/r (ceil(@item.level/2))[persistent,acid]]]{Leveled Persistent Acid Damage}</p>",
+      "description": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes [[/r (ceil(@item.level/2))[persistent,acid]]] damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 1d6 + your spellcasting ability modifier, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 2d6 + your spellcasting ability modifier, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 3d6 + your spellcasting ability modifier, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 4d6 + your spellcasting ability modifier, the persistent damage increases to 5, and the splash damage increases to 4.</p>",
       "name": "Acid Splash",
       "spellTarget": "1 creature"
     },
@@ -3015,7 +3015,7 @@
       "name": "Glowing Trail"
     },
     "Glutton's Jaw": {
-      "description": "<p>Your mouth transforms into a shadowy maw bristling with pointed teeth. These jaws are an unarmed attack with the forceful trait dealing 1d8 piercing damage. If you hit with your jaws and deal damage, you gain 1d6 temporary Hit Points.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The temporary Hit Points increase by 1d6.</p>\n<p>[[/r ceil(@item.level/2)d6 #Temporary Hit Points]]{Leveled Temporary Hit Points}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.mrSulUdNbwzGSwfu]{Spell Effect: Glutton's Jaw}</p>",
+      "description": "<p>Your mouth transforms into a shadowy maw bristling with pointed teeth. These jaws are an unarmed attack with the forceful trait dealing 1d8 piercing damage. If you hit with your jaws and deal damage, you gain 1d6 temporary Hit Points.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The temporary Hit Points increase by 1d6.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.mrSulUdNbwzGSwfu]{Spell Effect: Glutton's Jaw}</p>",
       "name": "Glutton's Jaw"
     },
     "Glyph of Warding": {
@@ -3035,7 +3035,7 @@
       "spellTarget": "1 ripe berry"
     },
     "Gouging Claw": {
-      "description": "<p>You temporarily morph your limb into a clawed appendage. Make a melee spell attack roll against your target's AC. If you hit, you deal your choice of slashing or piercing damage equal to 1d6 plus your spellcasting ability modifier. On a critical success, you deal double damage plus 1d4 persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and the persistent bleed damage on a critical increases by 1d4.</p>\n<p>[[/r (@item.level)d4[bleed]]]{Leveled Bleed Damage}</p>",
+      "description": "<p>You temporarily morph your limb into a clawed appendage. Make a melee spell attack roll against your target's AC. If you hit, you deal your choice of slashing or piercing damage equal to 1d6 plus your spellcasting ability modifier. On a critical success, you deal double damage plus [[/r (@item.level)d4[bleed]]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and the persistent bleed damage on a critical increases by 1d4.</p>",
       "name": "Gouging Claw",
       "spellTarget": "1 creature"
     },
@@ -3090,7 +3090,7 @@
       "spellTarget": "1 object of Bulk 1 or less"
     },
     "Grim Tendrils": {
-      "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 negative damage and 1 persistent bleed damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the negative damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double negative damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The negative damage increases by 2d4, and the persistent bleed damage increases by 1.</p>\n<p>[[/r (@item.level)[bleed]]]{Leveled Bleed Damage}</p>",
+      "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 negative damage and [[/r (@item.level)[bleed]]] damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the negative damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double negative damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The negative damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
       "name": "Grim Tendrils"
     },
     "Grisly Growths": {
@@ -3310,7 +3310,7 @@
       "name": "Hologram Cage"
     },
     "Holy Cascade": {
-      "description": "<p>You call upon sacred energy to amplify a vial of holy water, tossing it an incredible distance. It explodes in an enormous burst that deals 3d6 bludgeoning damage to creatures in the area from the cascade of water. The water deals an additional 6d6 positive damage to undead and 6d6 good damage to fiends.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 1d6, and the additional positive and good damage each increase by 2d6.</p>\n<p>[[/r ((@item.level*2)-2)d6[positive]]]{Leveled Positive Damage}</p>\n<p>[[/r ((@item.level*2)-2)d6[good]]]{Leveled Good Damage}</p>",
+      "description": "<p>You call upon sacred energy to amplify a vial of holy water, tossing it an incredible distance. It explodes in an enormous burst that deals 3d6 bludgeoning damage to creatures in the area from the cascade of water. The water deals an additional [[/r ((@item.level*2)-2)d6[positive]]] damage to undead and [[/r ((@item.level*2)-2)d6[good]]] damage to fiends.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 1d6, and the additional positive and good damage each increase by 2d6.</p>",
       "name": "Holy Cascade",
       "spellMaterials": "one vial of holy water"
     },
@@ -3412,7 +3412,7 @@
       "spellDuration": "sustained up to 1 minute"
     },
     "Ice Storm": {
-      "description": "<p>You create a gray storm cloud that pelts creatures with an icy deluge. When you Cast the Spell, a burst of magical hail deals 2d8 bludgeoning damage and 2d8 cold damage to each creature in the area below the cloud (basic Reflex save). Snow and sleet continue to rain down in the area for the remainder of the spell's duration, making the area difficult terrain. Any creature that ends its turn in the storm takes 2 cold damage. If you Cast this Spell outdoors, you can create two non-overlapping clouds instead of one. As normal, if a Large or larger creature is in both clouds, it still only takes the initial damage once and the continuing damage once per turn.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial bludgeoning damage and cold damage increase by 1d8 each, and the cold damage creatures take at the end of their turns increases by 1.</p>\n<p>[[/r (floor(@item.level/2))[cold]]]{Leveled Cold Damage}</p>",
+      "description": "<p>You create a gray storm cloud that pelts creatures with an icy deluge. When you Cast the Spell, a burst of magical hail deals 2d8 bludgeoning damage and 2d8 cold damage to each creature in the area below the cloud (basic Reflex save). Snow and sleet continue to rain down in the area for the remainder of the spell's duration, making the area difficult terrain. Any creature that ends its turn in the storm takes [[/r (floor(@item.level/2))[cold]]] damage. If you Cast this Spell outdoors, you can create two non-overlapping clouds instead of one. As normal, if a Large or larger creature is in both clouds, it still only takes the initial damage once and the continuing damage once per turn.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial bludgeoning damage and cold damage increase by 1d8 each, and the cold damage creatures take at the end of their turns increases by 1.</p>",
       "name": "Ice Storm",
       "spellDuration": "sustained up to 1 minute"
     },
@@ -3532,7 +3532,7 @@
       "name": "Incendiary Ashes"
     },
     "Incendiary Aura": {
-      "description": "<p>You surround yourself with a combustible aura. Each time a creature within the emanation takes fire damage, it catches on fire, taking 2d4 persistent fire damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> Increase the persistent damage by 1d4 and the radius of the emanation by 5 feet.</p>\n<p>[[/r (ceil(@item.level/2)+1)d4[persistent,fire]]]{Leveled Persistent Fire Damage}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.pE2TWhG97XbhgAdH]{Spell Effect: Incendiary Aura}</p>",
+      "description": "<p>You surround yourself with a combustible aura. Each time a creature within the emanation takes fire damage, it catches on fire, taking [[/r (ceil(@item.level/2)+1)d4[persistent,fire]]] damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> Increase the persistent damage by 1d4 and the radius of the emanation by 5 feet.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.pE2TWhG97XbhgAdH]{Spell Effect: Incendiary Aura}</p>",
       "name": "Incendiary Aura"
     },
     "Incendiary Fog": {
@@ -4366,7 +4366,7 @@
       "name": "Moonlight Bridge"
     },
     "Moonlight Ray": {
-      "description": "<p>You unleash a holy beam of freezing moonlight. Make a ranged spell attack. The ray deals 5d6 cold damage; if the target is a fiend or undead, you deal an extra 5d6 good damage.</p>\n<p><em>Moonlight ray</em>'s cold damage is silver damage for the purposes of weaknesses, resistances, and the like.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double cold damage, as well as double good damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>moonlight ray</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.</p>\n<p>[[/r ((@item.level*2)-1)d6[good]]]{Leveled Good Damage}</p>",
+      "description": "<p>You unleash a holy beam of freezing moonlight. Make a ranged spell attack. The ray deals 5d6 cold damage; if the target is a fiend or undead, you deal an extra [[/r ((@item.level*2)-1)d6[good]]] damage.</p>\n<p><em>Moonlight ray</em>'s cold damage is silver damage for the purposes of weaknesses, resistances, and the like.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double cold damage, as well as double good damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>moonlight ray</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.</p>",
       "name": "Moonlight Ray",
       "spellTarget": "1 creature"
     },
@@ -4475,7 +4475,7 @@
       "spellTarget": "1 living creature"
     },
     "Needle Darts": {
-      "description": "<p>You shape three needles out of a piece of metal in your possession and send them flying in a tight group toward one target. Make a spell attack roll against your target's AC. The needles deal @Damage[3d4[piercing]] damage and might cause bleeding.</p>\n<p>The needles impart any special properties of the metal that forms them; for instance, cold iron needles deal additional damage to creatures with weakness to cold iron. All the needles are made of the same metal, and the metal returns to you after the attack.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and 1 persistent bleed damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> You send one additional needle, increasing the regular damage by 1d4 and increasing the persistent bleed damage on a critical hit by 1.</p>\n<p>[[/r (@item.level)[bleed]]]{Leveled Bleed Damage}</p>",
+      "description": "<p>You shape three needles out of a piece of metal in your possession and send them flying in a tight group toward one target. Make a spell attack roll against your target's AC. The needles deal 3d4 piercing damage and might cause bleeding.</p>\n<p>The needles impart any special properties of the metal that forms them; for instance, cold iron needles deal additional damage to creatures with weakness to cold iron. All the needles are made of the same metal, and the metal returns to you after the attack.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and [[/r (@item.level)[bleed]]] damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> You send one additional needle, increasing the regular damage by 1d4 and increasing the persistent bleed damage on a critical hit by 1.</p>",
       "name": "Needle Darts",
       "spellTarget": "1 creature"
     },
@@ -4840,7 +4840,7 @@
       "spellDuration": "sustained up to 1 minute"
     },
     "Phantom Pain": {
-      "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>[[/r (@item.level)d4[persistent,mental]]]{Leveled Persistent Mental Damage}</p>",
+      "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and [[/r (@item.level)d4[persistent,mental]]] damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>",
       "name": "Phantom Pain",
       "spellTarget": "1 creature"
     },
@@ -5073,7 +5073,7 @@
       "spellTarget": "1 creature"
     },
     "Produce Flame": {
-      "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 1d4 fire damage plus your spellcasting ability modifier. On a critical success, the target takes double damage and 1d4 persistent fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>\n<p>[[/r (@item.level)d4[persistent,fire]]]{Leveled Persistent Fire Damage}</p>",
+      "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 1d4 fire damage plus your spellcasting ability modifier. On a critical success, the target takes double damage and [[/r (@item.level)d4[persistent,fire]]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
       "name": "Produce Flame",
       "spellTarget": "1 creature"
     },
@@ -5697,7 +5697,7 @@
       "spellTarget": "1 creature"
     },
     "Savor the Sting": {
-      "description": "<p>You inflict pain upon the target and revel in their anguish. This deals 1d4 mental damage and 1d4 persistent mental damage; the target must attempt a Will save. As long as the target is taking persistent damage from this spell, you gain a +1 status bonus to attack rolls and skill checks against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and no Persistent Damage.</p>\n<p><strong>Failure</strong> The target takes full initial and Persistent Damage.</p>\n<p><strong>Critical Failure</strong> The target takes double initial and Persistent Damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and the Persistent Damage increases by 1d4.</p>\n<p>[[/r (@item.level)d4[persistent,mental]]]{Leveled Persistent Mental Damage}</p>",
+      "description": "<p>You inflict pain upon the target and revel in their anguish. This deals 1d4 mental damage and [[/r (@item.level)d4[persistent,mental]]] damage; the target must attempt a Will save. As long as the target is taking persistent damage from this spell, you gain a +1 status bonus to attack rolls and skill checks against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and no Persistent Damage.</p>\n<p><strong>Failure</strong> The target takes full initial and Persistent Damage.</p>\n<p><strong>Critical Failure</strong> The target takes double initial and Persistent Damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and the Persistent Damage increases by 1d4.</p>",
       "name": "Savor the Sting",
       "spellTarget": "1 creature"
     },
@@ -5776,7 +5776,7 @@
       "spellTarget": "1 living creature"
     },
     "Searing Light": {
-      "description": "<p>You shoot a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target is a fiend or undead, you deal an extra 5d6 good damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>searing light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double fire damage, as well as double good damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.</p>\n<p>[[/r ((@item.level*2)-1)d6[good]]]{Leveled Good Damage}</p>",
+      "description": "<p>You shoot a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target is a fiend or undead, you deal an extra [[/r ((@item.level*2)-1)d6[good]]] damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>searing light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double fire damage, as well as double good damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.</p>",
       "name": "Searing Light",
       "spellTarget": "1 creature"
     },
@@ -5989,7 +5989,7 @@
       "spellTarget": "1 living creature or 1 corpse that died within the last round"
     },
     "Shocking Grasp": {
-      "description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes 1d4 persistent electricity damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>\n<p>[[/r (1d4+(@item.level)-1)[persistent,electricity]]]{Leveled Persistent Electricity Damage}</p>",
+      "description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes [[/r (1d4+((@item.level)-1))[persistent,electricity]]] damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>",
       "name": "Shocking Grasp",
       "spellTarget": "1 creature"
     },
