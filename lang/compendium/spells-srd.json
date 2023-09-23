@@ -908,6 +908,10 @@
       "description": "<p><strong>Trigger</strong> A creature on your plane speaks your private or true name</p>\n<p><strong>Requirements</strong> You know your own true name.</p>\n<hr />\n<p>You learn a private name (but not the true name) of the creature who spoke your name, as well as their precise location, unless they succeed at a Will save to negate the effect. You are aware any time the trigger conditions are met as long as you have the spell prepared or in your repertoire. There is no way to distinguish one trigger of this spell from another without actually casting the spell. This can become a nuisance if you are so famous that your name is regularly on others' lips.</p>",
       "name": "Catch Your Name"
     },
+    "Caustic Blast": {
+      "description": "<p>You fling a large glob of acid that immediately detonates, spraying nearby creatures. Creatures in the area take 1d8 acid damage with a basic Reflex save; on a critical failure, the creature also takes @Damage[(floor(@item.level/2)+1)[persistent,acid]] damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 1d8, and the persistent damage on a critical failure increases by 1.</p>",
+      "name": "Caustic Blast"
+    },
     "Cauterize Wounds": {
       "description": "<p>You seal bleeding wounds with fire. Any target that has persistent bleed damage can choose to take @Damage[1[fire]] damage. If it does, it can attempt to recover from its persistent bleed damage, with the lower DC for particularly effective assistance. During the spell's duration, you can use a single action, which has the concentrate trait, to repeat this effect for one target of the spell.</p>",
       "name": "Cauterize Wounds",
@@ -3899,10 +3903,9 @@
       "spellTarget": "creatures in the area"
     },
     "Light": {
-      "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ]{Spell Effect: Light}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+      "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ]{Spell Effect: Light}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
       "name": "Light",
-      "spellDuration": "until the next time you make your daily preparations",
-      "spellTarget": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
+      "spellDuration": "until your next daily preparations"
     },
     "Light of Revelation": {
       "description": "<p>You shed a luminous aura, illuminating a 30-foot radius with bright light. You and all allies in this area gain a +1 status bonus to Perception checks to detect @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures, as well as Hidden objects, doors, and other features.</p>",
@@ -5304,7 +5307,7 @@
       "spellTarget": "1 creature"
     },
     "Read Aura": {
-      "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical, and if it is, you learn the school of magic.</p>\n<p>If the object is illusory, you detect this only if the effect's level is lower than the level of your read aura spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+      "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic} on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
       "name": "Read Aura",
       "spellHeightening": {
         "3": {
@@ -7119,6 +7122,10 @@
       "description": "<p>You add power to your muscles, allowing you to swim or climb walls with ease.</p>\n<p>When you cast this spell, you gain either a climb Speed or a swim Speed. The Speed is equal to your land Speed.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can choose to gain a fly Speed.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.N1EM3jRyT8PCG1Py]{Spell Effect: Traveler's Transit (Climb)}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.0R42NyuEZMVALjQs]{Spell Effect: Traveler's Transit (Swim)}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cTBYHfiXDOA09G4b]{Spell Effect: Traveler's Transit (Fly)}</p>",
       "name": "Traveler's Transit"
     },
+    "Tree of Seasons": {
+      "description": "<p>You cause a Small tree to instantly sprout in an unoccupied space on the ground. Four seedpods grow from the tree, each filled with the magic of a different one of the four seasons. A creature can Interact to pluck one of the pods, and can then either throw it up to 30 feet as part of the same action or do so with a separate Interact action later. When thrown, a pod explodes in a @Template[type:burst|distance:5], dealing 6d6 damage with a basic Reflex save against your spell DC. The damage type depends on the season of the pod: electricity for spring, fire for summer, poison for autumn, or cold for winter. When the spell ends, the tree withers away and any remaining pods rot, leaving behind non-magical seeds.</p>\n<p>@Damage[(@item.level)d6[cold]]</p>\n<p>@Damage[(@item.level)d6[electricity]]</p>\n<p>@Damage[(@item.level)d6[fire]]</p>\n<p>@Damage[(@item.level)d6[poison]]</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The burst's damage increases by 1d6.</p>",
+      "name": "Tree of Seasons"
+    },
     "Tremor Signs": {
       "description": "<p>You send a series of tremors, no longer than a short sentence of speech, toward your target. If the target is within range and connected to the same body of earth as you, the vibrations reach the target through the ground. You need neither line of sight nor line of effect, so a target on another floor of a building is a valid target.</p>\n<p>The target can give a brief, vibrational response as a reaction, or as a free action on their next turn, but they must be within range to do so. If they respond, their response is delivered to you through tremors you feel, as with the original message. The tremors impart a clear meaning only if you and the target know that meaning, such as three tremors for a specific warning, two for another. Neither of you can impart a nuanced or new meaning using this spell.</p>\n<p>A creature that has tremorsense can feel the vibrations from this spell if the creature is within range of the vibrations at any point during their journey to any target.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell can target up to 5 creatures.</p>",
       "name": "Tremor Signs",
@@ -7522,7 +7529,7 @@
       "spellTarget": "1 creature"
     },
     "Waking Nightmare": {
-      "description": "<p>You fill the creature's mind with a terrifying vision out of its nightmares. The target must attempt a Will save. If the target is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} when you Cast this Spell on it, it immediately wakes up before attempting its save, and if it fails its save, it gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition for 1 round in addition to the effects noted above.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
+      "description": "<p>You fill the creature's mind with a terrifying vision. The target must attempt a Will save. A creature frightened by this spell takes 1 additional mental damage each time it's hit by a Strike.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}. If it's asleep, it wakes up and is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The mental damage increases by 1.</p>",
       "name": "Waking Nightmare",
       "spellDuration": "varies",
       "spellTarget": "1 creature"
