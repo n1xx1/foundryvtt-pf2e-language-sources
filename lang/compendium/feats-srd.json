@@ -3156,6 +3156,13 @@
       "description": "<p>You are among the most common of changelings-those born to green hags-and a vibrant green eye signifies that parentage. Your mother's manipulative nature and versatile voice gives you an edge when deceiving others.</p>\n<p>You gain the @UUID[Compendium.pf2e.feats-srd.Item.B6HbYsLBWb1RR6Fx]{Charming Liar} skill feat. If you roll Deception for initiative, foes in that combat encounter that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against you.</p>",
       "name": "Callow May"
     },
+    "Calm and Centered": {
+      "description": "<p>Your occult connection to the world helps you deal with being @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}. When your frightened or stupefied condition values would decrease, decrease the value by 2.</p>",
+      "featPrerequisites": {
+        "0": "master in Occultism"
+      },
+      "name": "Calm and Centered"
+    },
     "Camouflage": {
       "description": "<p>You alter your appearance to blend in to the wilderness. In natural terrain, you can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} even without cover or being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>",
       "featPrerequisites": {
@@ -4029,6 +4036,13 @@
         "0": "Pistolero's Challenge"
       },
       "name": "Come at Me!"
+    },
+    "Comforting Presence": {
+      "description": "<p><strong>Trigger</strong> An adjacent ally becomes frightened or stupefied.</p>\n<hr />\n<p>You use your occult connection to your allies to take on the fear and confusion they feel. Focus on your own calmness and pull in your nearby allies' emotions. Reduce the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition values of adjacent allies by 1, and increase your frightened and stupefied condition values by the same amount.</p>",
+      "featPrerequisites": {
+        "0": "master in Occultism"
+      },
+      "name": "Comforting Presence"
     },
     "Command Attention": {
       "description": "<p>You command the attention of all around you with style, ensuring their gaze falls only upon you until the end of your next turn.</p>\n<p>When creatures within 30 feet of you attempt saving throws against other visual effects, they use the outcome for one degree of success better than the result they rolled.</p>\n<p>An enemy within the area attempting to use a visual effect that involves focusing its attention on a particular creature (such as a medusa's Focus Gaze) must succeed at a Will save against your class DC or spell DC, whichever is higher, in order to target any creature except you.</p>\n<p>Allies in the area can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} even if they don't have cover, as you are continually providing a distraction.</p>",
@@ -9201,7 +9215,7 @@
       "name": "Fresh Ingredients"
     },
     "Fresh Produce": {
-      "description": "<p>You grow a nourishing nut, vegetable, seed, or fruit. Choose a creature in your kinetic aura. The produce grows in their open hand, or at their feet if they have no open hands. The produce has light Bulk. A creature can eat it with an Interact action to regain 1d4+1 HP; this is a healing vitality effect. The creature feels full for 10 minutes, during which it has resistance 2 to void damage and can't eat another piece of produce. Produce not consumed by the start of your next turn withers away.</p>\n<hr />\n<p><strong>Level (+2)</strong> The healing increases by 1d4+5, and the resistance increases by 2.</p>\n<p>[[/r ((floor((max(1,@actor.level)-1)/2)+1)d4+(floor((max(1,@actor.level)-1)/2)*5+1))[healing]]]{Leveled HP}</p>",
+      "description": "<p>You grow a nourishing nut, vegetable, seed, or fruit. Choose a creature in your kinetic aura. The produce grows in their open hand, or at their feet if they have no open hands. The produce has light Bulk. A creature can eat it with an Interact action to regain 1d4+1 HP; this is a healing vitality effect. The creature feels full for 10 minutes, during which it has resistance 2 to void damage and can't eat another piece of produce. Produce not consumed by the start of your next turn withers away.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.2GWZgsvMJF9DN0DO]{Effect: Fresh Produce}</p>\n<hr />\n<p><strong>Level (+2)</strong> The healing increases by 1d4+5, and the resistance increases by 2.</p>\n<p>[[/r ((floor((max(1,@actor.level)-1)/2)+1)d4+(floor((max(1,@actor.level)-1)/2)*5+1))[healing]]]{Leveled HP}</p>",
       "name": "Fresh Produce"
     },
     "Friendform": {
@@ -9795,6 +9809,13 @@
         "0": "Gnome Weapon Familiarity"
       },
       "name": "Gnome Weapon Innovator"
+    },
+    "Go with the Flow": {
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature detects your attempt to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}, and you're within 30 feet of at least one other creature.</p>\n<hr />\n<p>You have an occult connection to the world that helps you blend in with the cacophony of life around you. Attempt an @Check[type:occultism|defense:perception] check against the creature's Perception DC. On a success, the creature mistakenly identifies another creature within 30 feet of you as you instead.</p>",
+      "featPrerequisites": {
+        "0": "master in Occultism"
+      },
+      "name": "Go with the Flow"
     },
     "Goading Feint": {
       "description": "<p>When you trick a foe, you can goad them into overextending their next attack.</p>\n<p>On a @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint}, you can use the following success and critical success effects instead of any other effects you would gain when you Feint; if you do, other abilities that adjust the normal effects of your Feint no longer apply. You can choose whether to use the Goading Feint benefits or the normal benefits each time you Feint a given foe.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes a -2 circumstance penalty to all attack rolls against you before the end of its next turn.</p>\n<p><strong>Success</strong> The target takes a -2 circumstance penalty to its next attack roll against you before the end of its next turn.</p>",
