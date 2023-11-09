@@ -2,7 +2,7 @@
   "entries": {
     "Armageddon Orb": {
       "description": "<p>A roiling red orb, forged from a drop of the god Rovagug's blood, rains fire from the sky when a specified condition is met.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:48|name:Imbue Thieves' Tools|traits:action:disable-a-device] (legendary) to imbue thieves' tools with aspects representing Asmodeus and Sarenrae and use them to drain away the orb's power over 10 minutes; the character attempting this check takes 5 fire damage each round until the orb is depleted</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:48|name:Imbue Thieves' Tools|traits:action:disable-a-device] (legendary) to imbue a thieves' toolkit with aspects representing Asmodeus and Sarenrae and use them to drain away the orb's power over 10 minutes; the character attempting this check takes @Damage[5[fire]] damage each round until the orb is depleted</p>",
       "name": "Armageddon Orb"
     },
     "Banshee's Symphony": {
@@ -20,7 +20,7 @@
     "Bottomless Pit": {
       "description": "<p>An iron trapdoor covers an infinitely deep 10-foot-square pit.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:28|name:Remove Trapdoor|traits:action:disable-a-device] (trained) to remove the trapdoor</p>",
-      "hazardReset": "<p>The trap still causes creatures to fall forever if they fall in, but the trapdoor must be reset manually for the trap to become hidden again.</p>",
+      "hazardReset": "<p>The trap still causes creatures to fall forever if they fall in, but the trapdoor must be reset manually for the trap to become Hidden again.</p>",
       "name": "Bottomless Pit"
     },
     "Brown Mold": {
@@ -33,14 +33,14 @@
       "description": "<p>Allies appear to shed their disguises and reveal themselves to be malevolent monsters.</p>",
       "hazardDisable": "<p>@Check[type:deception|dc:28|name:Confound the Haunt] (expert) twice to confound the haunt with your own deceptions, or @Check[type:occultism|dc:28|name:Create a Ward Against Influence] (trained) twice to create a ward against the haunt's mental influence</p>",
       "hazardReset": "<p>The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.</p>",
-      "hazardRoutine": "<p>(1 action, illusion, incapacitation, occult) The haunt continues to confound victims' senses and inspire them to commit violence against each other. Each creature in the haunt's area must attempt a @Check[type:will|dc:26].</p>\n<p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is confused for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is confused for 1 minute.</p>",
+      "hazardRoutine": "<p>(1 action; illusion, incapacitation, occult) The haunt continues to confound victims' senses and inspire them to commit violence against each other. Each creature in the haunt's area must attempt a @Check[type:will|dc:26] save.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is confused for 1 minute.</p>",
       "name": "Confounding Betrayal"
     },
     "Dance Of Death": {
       "description": "<p>An eerie orchestra compels all who hear it to dance until they collapse from exhaustion.</p>",
       "hazardDisable": "<p>@Check[type:intimidation|dc:42|name:Frighten the Orchestra|traits:action:demoralize] (expert) three times to frighten dancers and spectral musicians alike away from participating in the deadly performance, @Check[type:performance|dc:40|name:Disrupt Compulsion] (master) twice to produce a tune discordant enough to disrupt the compulsion, or @Check[type:religion|dc:42|name:Banish Spirits] (master) three times to banish the spirits with prayers</p>",
       "hazardReset": "<p>The eerie orchestra spends an hour retuning its phantasmal instruments, after which it is ready to begin its routine again.</p>",
-      "hazardRoutine": "<p>(1 action, auditory, enchantment, incapacitation, occult) The orchestra performs a raucous tune, compelling all creatures that can hear it to spend actions dancing. Each round, creature must attempt a @Check[type:will|dc:37]; the results of this save modify the number of actions that the creature must spend dancing each round. If this would cause the creature to spend more actions dancing than it can use on its turn, the creature takes 10d6 damage (or double that on a critical failure) from moving faster than its body can manage.</p>\n<p><strong>Critical Success</strong> The creature decreases the number of actions it must spend dancing by 1.</p>\n<p><strong>Success</strong> No effect.</p>\n<p><strong>Failure</strong> The creature increases the actions it must spend dancing by 1.</p>\n<p><strong>Critical Failure</strong> The creature increases the actions it must spend dancing by 2.</p>",
+      "hazardRoutine": "<p>(1 action; auditory, incapacitation, mental, occult) The orchestra performs a raucous tune, compelling all creatures that can hear it to spend actions dancing. Each round, creature must attempt a @Check[type:will|dc:37] save; the results of this save modify the number of actions that the creature must spend dancing each round. If this would cause the creature to spend more actions dancing than it can use on its turn, the creature takes @Damage[10d6] damage (or double that on a critical failure) from moving faster than its body can manage.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature decreases the number of actions it must spend dancing by 1.</p>\n<p><strong>Success</strong> No effect.</p>\n<p><strong>Failure</strong> The creature increases the actions it must spend dancing by 1.</p>\n<p><strong>Critical Failure</strong> The creature increases the actions it must spend dancing by 2.</p>",
       "name": "Dance Of Death"
     },
     "Darkside Mirror": {
@@ -53,32 +53,32 @@
     "Drowning Pit": {
       "description": "<p>A trapdoor covers a 10-foot-square pit that's 30 feet deep and has 5 feet of water at the bottom. Four water spouts in the walls connect to hidden water tanks. Each water spout extends out of a different wall, 6 inches from the top of the pit.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:18] (trained) to seal each water spout, @Check[type:thievery|dc:22] (trained) to open the trapdoor, or @Check[type:athletics|dc:22] to @UUID[Compendium.pf2e.action-macros.Macro.yMTKMnaYSGtDz4wk]{Force Open: Athletics} the trapdoor</p>",
-      "hazardReset": "<p>The trap can be reset if the door is manually reengaged and the water tanks refilled; it can be reset without draining the pit, but doing so renders it less effective.</p>",
+      "hazardReset": "<p>The trap can be reset if the door is manually reengaged and the water tanks are refilled; it can be reset without draining the pit, but doing so renders the pit less effective.</p>",
       "hazardRoutine": "<p>(4 actions) The trap loses 1 action each turn for each disabled water spout. On each of the trap's actions, a spout pours water, increasing the depth of the water by 5 feet. Once the pit is full of water, the pit stops using actions, but creatures in the pit begin drowning.</p>",
       "name": "Drowning Pit"
     },
     "Electric Latch Rune": {
       "description": "<p>An invisible rune imprinted on a door latch releases a powerful electric discharge.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:20|name:Scratch Out the Rune|traits:action:disable-a-device] (expert) to scratch out the rune without allowing electricity to flow, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level; counteract DC 18) to counteract the rune</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:20|name:Scratch Out the Rune|traits:action:disable-a-device] (expert) to scratch out the rune without allowing electricity to flow, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd rank; counteract DC 18) to counteract the rune</p>",
       "name": "Electric Latch Rune"
     },
     "Eternal Flame": {
       "description": "<p>A raging spectral inferno arises out of thin air, strengthening all undead creatures within its area. This haunt most often arises from the charred remains of a group of three people who burned to death, whether in a terrible accident or a deliberate execution, and their unavenged souls burn with rage.</p>",
       "hazardDisable": "<p>@Check[type:diplomacy|dc:27|name:Calm the Spirit's Rage] (expert) to temporarily calm the rage of one of the three spirits, or @Check[type:religion|dc:30|name:Exorcise Spirit] (trained) to exorcise one of the spirits; three total successes are required to disable the haunt</p>",
       "hazardReset": "<p>The flames cease 1 minute after all living creatures leave the area, but after 1 hour, the anger and pain simmer up and the haunt is ready to trigger again.</p>",
-      "hazardRoutine": "<p>(1 action) Phantom flames rage across the haunted area, dealing 4d6 fire damage to each living creature within the area (@Check[type:will|dc:23|basic:true]). Undead creatures in the area are infused with flames for the following round. They gain the fire trait and immunity to fire, and all their attacks deal an additional 1d6 fire damage. Objects in the area are unaffected.</p>",
+      "hazardRoutine": "<p>(1 action) Phantom flames rage across the haunted area, dealing @Damage[4d6[fire]] damage to each living creature within the area (@Check[type:will|dc:23|basic:true] save). Undead creatures in the area are infused with flames for the following round. They gain the fire trait and immunity to fire, and all their attacks deal an additional @Damage[1d6[fire]] damage. Objects in the area are unaffected.</p>",
       "name": "Eternal Flame"
     },
     "Fireball Rune": {
       "description": "<p>An invisible rune creates an invisible, spherical magical sensor with a 20-foot radius.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:22|name:Erase the Rune] (expert) to erase the rune without triggering the sensor, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd level; counteract DC 20) to counteract the rune</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:22|name:Erase the Rune] (expert) to erase the rune without triggering the sensor, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd rank; counteract DC 20) to counteract the rune</p>",
       "name": "Fireball Rune"
     },
     "Flensing Blades": {
       "description": "<p>A whirling tornado of spectrally propelled glass and steel slices whatever it touches to ribbons.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:35|name:Adjust Blades|traits:action:disable-a-device] (master) to precisely adjust the blades so that they destroy each other, or @Check[type:religion|dc:38|name:Weaken the Haunt] (expert) to weaken the haunt; four successes are required to disable it</p>",
       "hazardReset": "<p>The haunt draws jagged shards back into its area over the course of an hour, after which it can trigger again.</p>",
-      "hazardRoutine": "<p>(3 actions) The tornado of blades uses 3 actions to move, traveling up to 30 feet with each action and dealing 2d10+10 slashing damage. Each creature in its path must attempt a @Check[type:reflex|dc:33].</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage plus @Damage[1d10[bleed]].</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and @Damage[1d10[bleed]]. It also becomes wounded 1 (or increases its wounded value by 1, if it is already wounded).</p>\n<p>Each successful check to disable this hazard reduces the haunt's movement by 30 feet, and the fourth success disables it completely.</p>",
+      "hazardRoutine": "<p>(3 actions) The tornado of blades uses 3 actions to move, traveling up to 30 feet with each action and dealing 2d10+10 slashing damage. Each creature in its path must attempt a @Check[type:reflex|dc:33].</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage plus @Damage[1d10[bleed]].</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and @Damage[1d10[bleed]]. It also becomes @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded 1} (or increases its wounded value by 1, if it is already wounded).</p>\n<p>Each successful check to disable this hazard reduces the haunt's movement by 30 feet, and the fourth success disables it completely.</p>",
       "name": "Flensing Blades"
     },
     "Frozen Moment": {
@@ -165,13 +165,13 @@
     },
     "Pharaoh's Ward": {
       "description": "<p>A curse is imbued on an entryway's threshold.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:27|name:Remove the Lintel] (master) to painstakingly remove the lintel without triggering the magic, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 25) to counteract the rune</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:27|name:Remove the Lintel] (master) to painstakingly remove the lintel without triggering the magic, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th rank; counteract DC 25) to counteract the rune</p>",
       "hazardReset": "<p>The trap resets when the door is shut.</p>",
       "name": "Pharaoh's Ward"
     },
     "Planar Rift": {
       "description": "<p>A rift attempts to draw creatures into another plane (the GM chooses the specific plane).</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:33|name:Assemble a Rift Seal|traits:action:disable-a-device] (master) to assemble a rift seal using objects strongly grounded to your plane, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 31) to counteract the rift</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:33|name:Assemble a Rift Seal|traits:action:disable-a-device] (master) to assemble a rift seal using objects strongly grounded to your plane, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th rank; counteract DC 31) to counteract the rift</p>",
       "name": "Planar Rift"
     },
     "Plummeting Doom": {
@@ -192,16 +192,22 @@
       "hazardDisable": "<p>@Check[type:thievery|dc:17|name:Disarm Lock Trap|traits:mechanical,trap] (trained) on the spring mechanism</p>",
       "name": "Poisoned Lock"
     },
+    "Poisonous Mold": {
+      "description": "<p>This grotesque fungus releases poisonous spores when a creature comes near.</p>",
+      "hazardDisable": "<p>@Check[type:survival|dc:18] (trained) to safely remove the mold</p>",
+      "hazardReset": "<p>Unless entirely eradicated (typically with acid or fire),&nbsp;the mold regrows over the course of 2 weeks.</p>",
+      "name": "Poisonous Mold"
+    },
     "Polymorph Trap": {
       "description": "<p>A Druidic glyph tries to transforms a trespasser into an animal.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:32|name:Drain Glyph's Power|traits:action:disable-a-device] (master) to drain the glyph's power harmlessly, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 30) to counteract the glyph</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:32|name:Drain Glyph's Power|traits:action:disable-a-device] (master) to drain the glyph's power harmlessly, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th rank; counteract DC 30) to counteract the glyph</p>",
       "name": "Polymorph Trap"
     },
     "Quicksand": {
       "description": "<p>A 15-foot-wide patch of water and sand attempts to submerge creatures that step onto it.</p>",
       "hazardDisable": "<p>@Check[type:survival|dc:18|name:Safely Disturb the Surface] (trained) to disturb the surface</p>",
       "hazardReset": "<p>The hazard still submerges anyone who walks in, but the surface doesn't become hidden again until it settles over the course of 24 hours.</p>",
-      "hazardRoutine": "<p>(1 action) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation.</p>\n<p>A creature in the quicksand can attempt a @Check[type:athletics|dc:20|traits:action:swim] check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step.</p>\n<p>A creature that Swims out of the quicksand escapes the hazard and is prone in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own @Check[type:athletics|dc:20|name:Aid Another Creature in Quicksand] check, with the same results as if the creature attempted the check.</p>",
+      "hazardRoutine": "<p>(1 action) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation. A creature in the quicksand can attempt a @Check[type:athletics|dc:20|traits:action:swim] check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step. A creature that Swims out of the quicksand escapes the hazard and is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own @Check[type:athletics|dc:20|name:Aid Another Creature in Quicksand] check, with the same results as if the creature attempted the check.</p>",
       "name": "Quicksand"
     },
     "Scythe Blades": {
@@ -246,7 +252,7 @@
       "description": "<p>A metal pole with three razor-sharp spinning blades is hidden in the floor, connected to trigger plates in up to eight floor tiles and a hidden control panel within 30 feet.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:21|name:Disable Pillar|traits:action:disable-a-device] (trained) twice on the pillar, or @Check[type:thievery|dc:19|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (expert) once on the control panel deactivates the whole trap. Breaking the control panel prevents anyone from disabling the trap using the control panel and prevents the trap from deactivating automatically.</p>",
       "hazardReset": "<p>The trap deactivates and resets after 1 minute.</p>",
-      "hazardRoutine": "<p>(3 actions) The trap uses its first action to make a spinning blade Strike against each adjacent creature, its second action to move straight in a random direction (roll 1d4 to determine the direction), and its third action to make a spinning blade Strike against each adjacent creature. This trap doesn't take a multiple attack penalty.</p>",
+      "hazardRoutine": "<p>(3 actions) The trap uses its first action to make a spinning blade Strike against each adjacent creature, its second action to move straight in a random direction (roll 1d4 to determine the direction), and its third to make a spinning blade Strike against each adjacent creature. This trap doesn't take a multiple attack penalty.</p>",
       "name": "Spinning Blade Pillar"
     },
     "Sportlebore": {
@@ -261,7 +267,7 @@
     },
     "Summoning Rune": {
       "description": "<p>A cloud of invisible magical sensors in a 10-foot radius surrounds an invisible wall or floor rune the size of the creature to be summoned.</p>",
-      "hazardDisable": "<p>@Check[type:acrobatics|dc:15|name:Approach Rune] to approach without triggering the trap followed by @Check[type:thievery|dc:17|name:Erase Rune|traits:action:disable-a-device] (trained) to erase the rune, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (1st level; counteract DC 15) to counteract the rune</p>",
+      "hazardDisable": "<p>@Check[type:acrobatics|dc:15|name:Approach Rune] to approach without triggering the trap followed by @Check[type:thievery|dc:17|name:Erase Rune|traits:action:disable-a-device] (trained) to erase the rune, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (1st rank; counteract DC 15) to counteract the rune</p>",
       "hazardReset": "<p>The trap resets each day at dawn.</p>",
       "name": "Summoning Rune"
     },
@@ -273,7 +279,7 @@
       "name": "Telekinetic Swarm Trap"
     },
     "Titanic Flytrap": {
-      "description": "<p>On the surface, a titanic flytrap appears to be a patch of the more common flytrap plant, but beneath murky waters it hides a far larger set of jaws, reaching 10 feet across and reinforced with woody branches and lined with paralytic hairs.</p>",
+      "description": "<p>On the surface, a titanic flytrap appears to be a patch of the more common flytrap plant, but beneath murky waters it hides a far larger set of jaws, reaching 10 feet across, reinforced with woody branches and lined with paralytic hairs.</p>",
       "hazardDisable": "<p>@Check[type:survival|dc:22|name:Mislead the Flytrap's Senses] (trained) to mislead the flytrap's sense of weight and pressure</p>",
       "hazardReset": "<p>1 hour (or longer, after a large meal)</p>",
       "name": "Titanic Flytrap"
@@ -301,9 +307,9 @@
     },
     "Wheel Of Misery": {
       "description": "<p>An ornate wheel set into a wall-divided into six segments with colored runes on each-is controlled by a magical sensor that detects any creature within 100 feet in front of it.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:26|name:Stop Wheel from Spinning|traits:action:disable-a-device] (expert) on the wheel to stop it from spinning, @Check[type:thievery|dc:22|name:Erase Rune|traits:action:disable-a-device] (master) to erase each rune, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 22) to counteract each rune</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:26|name:Stop Wheel from Spinning|traits:action:disable-a-device] (expert) on the wheel to stop it from spinning, @Check[type:thievery|dc:22|name:Erase Rune|traits:action:disable-a-device] (master) to erase each rune, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th rank; counteract DC 22) to counteract each rune</p>",
       "hazardReset": "<p>The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor.</p>",
-      "hazardRoutine": "<p>(2 actions) On its initiative, the trap uses its first action to spin, then stops. Roll 1d6 to determine which segment is topmost when the wheel stops spinning. The wheel uses its second action to replicate the spell listed for that segment (3rd level, DC 24, spell attack roll +14). This spell's target is centered on or otherwise includes the nearest creature in the area. This increases the spell's range to 100 feet if necessary. Any spell cast by this trap is arcane.</p>\n<p><strong>1</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep}</em></p>\n<p><strong>2</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze}</em></p>\n<p><strong>3</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}</em> (100-foot line)</p>\n<p><strong>4</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{Blindness}</em></p>\n<p><strong>5</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}</em></i></p>\n<p><strong>6</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Ray of Enfeeblement}</em></p>",
+      "hazardRoutine": "<p>(2 actions) On its initiative, the trap uses its first action to spin, then stops. Roll 1d6 to determine which segment is topmost when the wheel stops spinning. The wheel uses its second action to replicate the spell listed for that segment (3rd rank, DC 24, spell attack modifier +14). This spell's target is centered on or otherwise includes the nearest creature in the area. This increases the spell's range to 100 feet if necessary. Any spell cast by this trap is arcane.</p>\n<p><strong>1</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep}</em></p>\n<p><strong>2</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze}</em></p>\n<p><strong>3</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}</em> (100-foot line)</p>\n<p><strong>4</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{Blindness}</em></p>\n<p><strong>5</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.thAHF1zxNplLCJPO]{Caustic Blast}</em></p>\n<p><strong>6</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</em></p>",
       "name": "Wheel Of Misery"
     },
     "Yellow Mold": {
