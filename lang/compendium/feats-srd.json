@@ -9080,7 +9080,7 @@
       "name": "Fresh Ingredients"
     },
     "Fresh Produce": {
-      "description": "<p>You grow a nourishing nut, vegetable, seed, or fruit. Choose a creature in your kinetic aura. The produce grows in their open hand, or at their feet if they have no open hands. The produce has light Bulk. A creature can eat it with an Interact action to regain 1d4+1 HP; this is a healing vitality effect. The creature feels full for 10 minutes, during which it has resistance 2 to void damage and can't eat another piece of produce. Produce not consumed by the start of your next turn withers away.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.2GWZgsvMJF9DN0DO]{Effect: Fresh Produce}</p>\n<hr />\n<p><strong>Level (+2)</strong> The healing increases by 1d4+5, and the resistance increases by 2.</p>\n<p>[[/r ((floor((max(1,@actor.level)-1)/2)+1)d4+(floor((max(1,@actor.level)-1)/2)*5+1))[healing]]]{Leveled HP}</p>",
+      "description": "<p>You grow a nourishing nut, vegetable, seed, or fruit. Choose a creature in your kinetic aura. The produce grows in their open hand, or at their feet if they have no open hands. The produce has light Bulk. A creature can eat it with an Interact action to regain 1d4+1 HP; this is a healing vitality effect. The creature feels full for 10 minutes, during which it has resistance 2 to void damage and can't eat another piece of produce. Produce not consumed by the start of your next turn withers away.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.2GWZgsvMJF9DN0DO]{Effect: Fresh Produce}</p>\n<hr />\n<p><strong>Level (+2)</strong> The healing increases by 1d4+5, and the resistance increases by 2.</p>\n<p>[[/r ((floor((max(1,@actor.level)-1)/2)+1)d4+(floor((max(1,@actor.level)-1)/2)*5+1))[vitality,healing]]]{Leveled HP}</p>",
       "name": "Fresh Produce"
     },
     "Friendform": {
@@ -12021,9 +12021,6 @@
     },
     "Ironblood Stance": {
       "description": "<p><strong>Requirements</strong> You are unarmored</p>\n<hr />\n<p>You enter the stance of impenetrable iron, refusing to yield to any blow. You can make iron sweep unarmed attacks. These deal 1d8 bludgeoning damage; are in the brawling group; and have the nonlethal, parry, sweep, and unarmed traits.</p>\n<p>While in Ironblood Stance, you gain resistance 2 to all damage. The resistance increases to 3 at 12th level, to 4 at 16th level, and to 5 at 20th level.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.tPKXLtDJ3bzJcXlv]{Stance: Ironblood Stance}</p>",
-      "featPrerequisites": {
-        "0": "You are unarmored"
-      },
       "name": "Ironblood Stance"
     },
     "Ironblood Surge": {
@@ -24054,7 +24051,7 @@
       "name": "Vivacious Bravado"
     },
     "Vivacious Conduit": {
-      "description": "<p>Your connection to the First World has grown, and its vital energy flows into you rapidly. If you rest for 10 minutes, you regain Hit Points equal to your [[/r @actor.abilities.con.mod*(ceil(@actor.level/2))[healing]]]{Constitution modifier × half your level}. This is a healing vitality effect and is cumulative with any healing you receive from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p>",
+      "description": "<p>Your connection to the First World has grown, and its vital energy flows into you rapidly. If you rest for 10 minutes, you regain Hit Points equal to your [[/r (@actor.abilities.con.mod*(floor(@actor.level/2)))[vitality,healing] #Vivacious Conduit]]{Constitution modifier × half your level}. This is a healing vitality effect and is cumulative with any healing you receive from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p>",
       "name": "Vivacious Conduit"
     },
     "Voice Cold as Death": {
