@@ -14042,7 +14042,7 @@
       "name": "Mind Projectiles"
     },
     "Mind Shards": {
-      "description": "<p>With a swing and a thought, you detonate your mind weapon into a burst of psychic shards that shred the mind. You concentrate and unleash a @Template[type:cone|distance:15] that deals @Damage[3d6[mental]] damage to all creatures in the area, with a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save against the higher of your class DC or spell DC. After the attack, your mind weapon automatically re-forms, and you can't use this ability again for 1 minute. Mind Shards' damage increases by 1d6 at level 7 and every two levels thereafter.</p>\n<p>[[/r (ceil(@actor.level/2)d6)[Mental]]]{Leveled Mental Damage}</p>",
+      "description": "<p>With a swing and a thought, you detonate your mind weapon into a burst of psychic shards that shred the mind. You concentrate and unleash a @Template[type:cone|distance:15] that deals @Damage[3d6[mental]] damage to all creatures in the area, with a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save against the higher of your class DC or spell DC. After the attack, your mind weapon automatically re-forms, and you can't use this ability again for 1 minute. Mind Shards' damage increases by 1d6 at level 7 and every two levels thereafter.</p>\n<p>[[/r (ceil(@actor.level/2)d6)[mental]]]{Leveled Mental Damage}</p>",
       "featPrerequisites": {
         "0": "Mind Smith Dedication"
       },
@@ -17510,7 +17510,7 @@
       "name": "Repeating Hand Crossbow Training"
     },
     "Replenishing Consumption": {
-      "description": "<p>When you devour corpses and satiate your hunger, you also recover from some of your wounds, your necrotized blue flesh knitting back together almost immediately as soon as you begin shoveling the chunks of dead flesh down your throat. Once every 10 minutes, when you @UUID[Compendium.pf2e.actionspf2e.Item.1If9lLVoZdO8woVg]{Consume Flesh}, you regain 1d6 Hit Points for every 2 levels you have, rounded up. [[/r (ceil(@actor.level/2))d6[Healing]]]{Leveled Healing}</p>",
+      "description": "<p>When you devour corpses and satiate your hunger, you also recover from some of your wounds, your necrotized blue flesh knitting back together almost immediately as soon as you begin shoveling the chunks of dead flesh down your throat. Once every 10 minutes, when you @UUID[Compendium.pf2e.actionspf2e.Item.1If9lLVoZdO8woVg]{Consume Flesh}, you regain 1d6 Hit Points for every 2 levels you have, rounded up. [[/r (ceil(@actor.level/2))d6[healing]]]{Leveled Healing}</p>",
       "featPrerequisites": {
         "0": "Ghoul Dedication"
       },
@@ -20065,7 +20065,7 @@
       "name": "Solar Rejuvenation"
     },
     "Solar Rejuvenation (Ghoran)": {
-      "description": "<p>The warmth and light of the sun gives you life. If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your [[/r (floor(@actor.level/2)*@actor.con.mod)[Healing]]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p>",
+      "description": "<p>The warmth and light of the sun gives you life. If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your [[/r (floor(@actor.level/2)*@actor.con.mod)[healing]]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p>",
       "name": "Solar Rejuvenation (Ghoran)"
     },
     "Solid Lead": {
@@ -21906,7 +21906,7 @@
       "name": "Tangled Forest Stance"
     },
     "Tap Vitality": {
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You tap into the entity's life force to heal your wounds, though at the cost of the entity's personality bleeding into your own. You recover a number of [[/r (4*@actor.level)[Healing]]]{Hit Points equal to four times your level}. Each time you use Tap Vitality, you begin to bleed more and more of the entity's personality and instincts into your own until the next time you spend an hour or more assuaging the entity, bringing your mind back under your own control.</p>\n<hr />\n<p><strong>Special</strong> This action has the tradition trait appropriate to your entity, typically divine for a demon, occult for an aberration or outer entity, or primal for a fey.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You tap into the entity's life force to heal your wounds, though at the cost of the entity's personality bleeding into your own. You recover a number of [[/r (4*@actor.level)[healing]]]{Hit Points equal to four times your level}. Each time you use Tap Vitality, you begin to bleed more and more of the entity's personality and instincts into your own until the next time you spend an hour or more assuaging the entity, bringing your mind back under your own control.</p>\n<hr />\n<p><strong>Special</strong> This action has the tradition trait appropriate to your entity, typically divine for a demon, occult for an aberration or outer entity, or primal for a fey.</p>",
       "featPrerequisites": {
         "0": "Living Vessel Dedication"
       },
@@ -21956,7 +21956,7 @@
       "name": "Tattoo Artist"
     },
     "Tectonic Stomp": {
-      "description": "<p>You cause minor tremors that topple your enemies. All creatures in a @Template[type:emanation|distance:30] who are standing on the ground take [[/r (floor(@actor.level/2)d6)[Bludgeoning]]]{1d6 bludgeoning damage for every 2 levels} you have, with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. A creature that fails its save also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Awakening</strong> Your stomp also ejects large fragments from the ground. You raise up to three stone chunks from the ground in unoccupied squares in the emanation; the stones can't be adjacent to one another. The chunks are 5 feet tall, block movement, and are large enough to @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Take Cover} behind. They have AC 10, Hardness 8, and Hit Points equal to your level. They are immune to critical hits and precision damage. A stone chunk crumbles away when it has 0 Hit Points, and all of them crumble after 1 minute or when you use Tectonic Stomp again.</p>\n<hr />\n<p><strong>Awakening</strong> Your stomp rattles those who fail horribly. A creature that critically fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>",
+      "description": "<p>You cause minor tremors that topple your enemies. All creatures in a @Template[type:emanation|distance:30] who are standing on the ground take [[/r (floor(@actor.level/2)d6)[bludgeoning]]]{1d6 bludgeoning damage for every 2 levels} you have, with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. A creature that fails its save also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Awakening</strong> Your stomp also ejects large fragments from the ground. You raise up to three stone chunks from the ground in unoccupied squares in the emanation; the stones can't be adjacent to one another. The chunks are 5 feet tall, block movement, and are large enough to @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Take Cover} behind. They have AC 10, Hardness 8, and Hit Points equal to your level. They are immune to critical hits and precision damage. A stone chunk crumbles away when it has 0 Hit Points, and all of them crumble after 1 minute or when you use Tectonic Stomp again.</p>\n<hr />\n<p><strong>Awakening</strong> Your stomp rattles those who fail horribly. A creature that critically fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>",
       "name": "Tectonic Stomp"
     },
     "Telekinetic Slip": {
@@ -23862,7 +23862,7 @@
       "name": "Viking Weapon Specialist"
     },
     "Violent Unleash": {
-      "description": "<p><strong>Trigger</strong> You Unleash your Psyche.</p>\n<hr />\n<p>The force of your mind unleashing itself wracks your enemies with a violent shockwave. You deal @Damage[2d6[force]] damage to all creatures in a @Template[type:emanation|distance:20], with a @Check[type:reflex|basic:true]{basic Reflex save}. This explosion is taxing, making you @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At 5th level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>[[/r (ceil(@actor.level/2)d6)[Force]]]{Leveled force damage}</p>",
+      "description": "<p><strong>Trigger</strong> You Unleash your Psyche.</p>\n<hr />\n<p>The force of your mind unleashing itself wracks your enemies with a violent shockwave. You deal @Damage[2d6[force]] damage to all creatures in a @Template[type:emanation|distance:20], with a @Check[type:reflex|basic:true]{basic Reflex save}. This explosion is taxing, making you @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At 5th level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>[[/r (ceil(@actor.level/2)d6)[force]]]{Leveled force damage}</p>",
       "name": "Violent Unleash"
     },
     "Violent Vines": {
@@ -24134,7 +24134,7 @@
       "name": "Warp Space"
     },
     "Warped Constriction": {
-      "description": "<p><strong>Requirements</strong> You have a foe @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<hr />\n<p>The entity inhabiting your body is an aberrant being with unfathomable motivations, and when you hold a foe close, tendrils and tentacles unfurl from your body to crush your foe and pollute it with alien wrongness. Your grabbed or restrained foe takes bludgeoning damage equal to your level and mental damage equal to your highest mental ability modifier. The creature attempts a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save that applies to both types of damage and uses the higher of your class DC or spell DC.</p>\n<p>[[/r (@actor.level)[Bludgeoning]+(max(@actor.abilities.int.mod,@actor.abilities.wis.mod,@actor.abilities.cha.mod))[Mental]]]{Leveled Bludgeoning and Mental Damage}</p>",
+      "description": "<p><strong>Requirements</strong> You have a foe @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<hr />\n<p>The entity inhabiting your body is an aberrant being with unfathomable motivations, and when you hold a foe close, tendrils and tentacles unfurl from your body to crush your foe and pollute it with alien wrongness. Your grabbed or restrained foe takes bludgeoning damage equal to your level and mental damage equal to your highest mental ability modifier. The creature attempts a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save that applies to both types of damage and uses the higher of your class DC or spell DC.</p>\n<p>[[/r (@actor.level)[bludgeoning],(max(@actor.abilities.int.mod,@actor.abilities.wis.mod,@actor.abilities.cha.mod))[mental]]]{Leveled Bludgeoning and Mental Damage}</p>",
       "featPrerequisites": {
         "0": "Living Vessel Dedication",
         "1": "your entity is an aberration or outer entity"
@@ -24806,7 +24806,7 @@
       "name": "Worm Sense"
     },
     "Worm's Feast": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You call forth a brood of infantile cave worms to feast on your enemy's flesh. Choose a creature within 30 feet; the creature must attempt a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save. At 8th level and every 2 levels above that, the persistent piercing damage taken on a failure increases by 1d6.</p>\n<hr />\n<p><strong>Critical Success</strong> The worms writhe away harmlessly.</p>\n<p><strong>Success</strong> The target takes @Damage[2d6[piercing]] damage and @Damage[2d6[persistent, piercing]] damage.</p>\n<p><strong>Failure</strong> The target takes @Damage[6d6[piercing]] damage and @Damage[2d6[persistent, piercing]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, plus the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as it takes persistent piercing damage.</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The button above uses the better of your class or spell DC.</em></p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You call forth a brood of infantile cave worms to feast on your enemy's flesh. Choose a creature within 30 feet; the creature must attempt a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save. At 8th level and every 2 levels above that, the persistent piercing damage taken on a failure increases by 1d6.</p>\n<hr />\n<p><strong>Critical Success</strong> The worms writhe away harmlessly.</p>\n<p><strong>Success</strong> The target takes @Damage[2d6[piercing]] damage and @Damage[2d6[persistent,piercing]] damage.</p>\n<p><strong>Failure</strong> The target takes @Damage[6d6[piercing]] damage and @Damage[2d6[persistent,piercing]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, plus the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as it takes persistent piercing damage.</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The button above uses the better of your class or spell DC.</em></p>",
       "featPrerequisites": {
         "0": "Worm Caller Dedication"
       },
