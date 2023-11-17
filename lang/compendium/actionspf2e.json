@@ -1209,7 +1209,7 @@
       "name": "Shatter Glass"
     },
     "Shed Spirit": {
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> Your familiar's spirit exits its body, leaving its empty shell behind, before flying at an enemy within 20 feet and dealing @Damage[6d6[spirit]] damage, with a basic Will save against your spell DC. If the familiar dealt damage, it then flies to an ally within 30 feet of the enemy, restoring Hit Points equal to half the damage dealt. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.</p>",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> Your familiar's spirit exits its body, leaving its empty shell behind, before flying at an enemy within 20 feet and dealing @Damage[(6+max(0,(ceil((@actor.level -8)/2)*2)))d6[spirit]] damage, with a @Check[type:will|basic:true] save against your spell DC. If the familiar dealt damage, it then flies to an ally within 30 feet of the enemy, restoring Hit Points equal to half the damage dealt. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.</p>",
       "name": "Shed Spirit"
     },
     "Shove": {
@@ -1289,7 +1289,7 @@
       "name": "Step"
     },
     "Stitching Strike": {
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> Your familiar unravels into magical fibers that encompass an enemy within 30 feet and deal @Damage[6d6[slashing]] damage, with a basic Reflex save against your spell DC. On a failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round or until it Escapes against your spell DC. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.</p>",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> Your familiar unravels into magical fibers that encompass an enemy within 30 feet and deal @Damage[(6+max(0,(ceil((@actor.level -8)/2)*2)))d6[slashing]] damage, with a @Check[type:reflex|basic:true] save against your spell DC. On a failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round or until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} against your spell DC. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.</p>",
       "name": "Stitching Strike"
     },
     "Stonestrike Stance": {
