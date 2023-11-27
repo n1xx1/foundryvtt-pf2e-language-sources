@@ -216,6 +216,9 @@
             "Medium": "Medium Armor",
             "Title": "Defenses",
             "Unarmored": "Unarmored Defense"
+          },
+          "Spellcasting": {
+            "AttackDC": "Attack Rolls & DCs"
           }
         },
         "Rest": {
@@ -434,6 +437,7 @@
           "True": "Always"
         },
         "Level": "Hazard {level}",
+        "Plural": "Hazards",
         "Simple": "Simple",
         "TitleEdit": "{name} (Edit Mode)"
       },
@@ -624,8 +628,6 @@
     "AreaTypeLine": "Line",
     "AreaTypeSquare": "Square",
     "ArmorArmorLabel": "AC Bonus",
-    "ArmorArmorTypeLabel": "Category",
-    "ArmorBaseLabel": "Base",
     "ArmorCheckLabel": "Check Penalty",
     "ArmorCheckPenalty": "Armor Check Penalty",
     "ArmorClassBase": "Base Armor Class 10",
@@ -708,7 +710,6 @@
     "ArmorTypeHeavy": "Heavy Armor",
     "ArmorTypeLight": "Light Armor",
     "ArmorTypeMedium": "Medium Armor",
-    "ArmorTypeShield": "Shield",
     "ArmorTypeUnarmored": "Unarmored",
     "AttackEffectConstrict": "Constrict",
     "AttackEffectGrab": "Grab",
@@ -780,7 +781,6 @@
       "AndLabel": "All of above",
       "OrLabel": "Any of above"
     },
-    "BrowserFilterConsumable": "Consumable Type",
     "BrowserFilterInventoryTypes": "Inventory Types",
     "BrowserFilterLevels": "Levels",
     "BrowserFilterProficiencyRequirements": "Proficiency Requirements",
@@ -797,12 +797,7 @@
     "BrowserSettingsSaved": "Settings have been saved",
     "BrowserSortyByLabel": "Sort by",
     "BrowserWarnPackNotLoaded": "Compendium \"{pack}\" could not be loaded.",
-    "BulkCapacityLabel": "Holds Bulk Amount",
-    "BulkLabel": "Carried Bulk",
     "BulkMaxLabel": "Max Bulk",
-    "BulkReductionLabel": "Reduce Bulk By",
-    "BulkShortLabel": "Bulk",
-    "BulkTypeLight": "Light",
     "CapacityBarLabel": "Capacity",
     "CarryType": {
       "dropped": "Dropped",
@@ -887,7 +882,6 @@
     },
     "CircumstanceBonusShortLabel": "Circumstance",
     "CircumstanceBonusTitle": "Circumstance Bonus",
-    "Class": "Class",
     "ClassFeatLevels": "Class Feat Levels",
     "ClassFeatures": "Class Features",
     "ClassHP": "Class HP",
@@ -919,11 +913,7 @@
       "TabAction": "Actions",
       "TabBestiary": "Bestiaries",
       "TabCampaign": "Campaign",
-      "TabEquipment": "Equipment",
       "TabFeat": "Feats/Features",
-      "TabHazard": "Hazards",
-      "TabSettings": "Settings",
-      "TabSpell": "Spells",
       "TakeLabel": "Take Item",
       "Title": "Compendium Browser"
     },
@@ -996,23 +986,14 @@
     "ConditionTypeUnnoticed": "Unnoticed",
     "ConditionTypeWounded": "Wounded",
     "ConditionsLabel": "Conditions",
-    "ConsumableAutoDestroyLabel": "Auto Destroy",
-    "ConsumableAutoUseLabel": "Auto Use",
-    "ConsumableChargesLabel": "Charges",
-    "ConsumableCompatibleLabel": "Compatible",
-    "ConsumableConsumeLabel": "On Consume",
-    "ConsumableHeading": "Consumable",
-    "ConsumableIncompatibleLabel": "Incompatible",
     "ConsumableMessage": {
       "UseExhausted": "Exhausted {name}",
       "UseMulti": "Uses {name}, {current} remain",
       "UseSingle": "Uses {name}"
     },
-    "ConsumableNoChargesLabel": "No Charges",
     "ConsumableTypeAmmo": "Ammunition",
     "ConsumableTypeDrug": "Drug",
     "ConsumableTypeElixir": "Elixir",
-    "ConsumableTypeLabel": "Consumable Type",
     "ConsumableTypeMutagen": "Mutagen",
     "ConsumableTypeOil": "Oil",
     "ConsumableTypeOther": "Other",
@@ -1023,7 +1004,6 @@
     "ConsumableTypeTalisman": "Talisman",
     "ConsumableTypeTool": "Tool",
     "ConsumableTypeWand": "Wand",
-    "ConsumableUseLabel": "Use",
     "CoreSkillsHeader": "Core Skills",
     "Counteractable": "Counteractable",
     "CraftDCTitle": "DC",
@@ -1449,9 +1429,6 @@
       "RevealName": "Reveal Name",
       "XP": "XP"
     },
-    "EquipmentEquippedLabel": "Equipped",
-    "EquippedBulkLabel": "Worn Bulk",
-    "EquippedSameBulkValue": "Same as Carried",
     "ErrorMessage": {
       "CantCreateEffectMacro": "An effect for a toggle macro must come from a compendium or world item.",
       "CantImportTooHighVersion": "Unable to import {sourceName}: its schema version ({sourceSchemaVersion}) is higher than this world's ({worldSchemaVersion}).",
@@ -1532,7 +1509,7 @@
     "Foot": "Foot",
     "FormulaKnownTitle": "Known Formulas",
     "FormulaListEmpty": "Empty (drag formula/item here)",
-    "FormulaPlaceholder": "Formula",
+    "Formula": "Formula",
     "FormulaSheet": {
       "DescriptionUnknown": "This formula is completely filled with drawings of small stick men, stains from some unknown liquid, nonsensical rhymes written in children's letters, and other seemingly random markings. It must have been made by goblins, and makes no sense to you.<hr><strong>Note</strong> This formula is referencing a missing or invalid item.",
       "NameEmpty": "Empty Formula",
@@ -1593,12 +1570,6 @@
       "TypeUnsupported": "Error in @Template: type {type} is not supported",
       "WidthNoNumber": "Error in @Template: width {width} is not a number"
     },
-    "InventoryArmorHeader": "Armor",
-    "InventoryBackpackHeader": "Containers",
-    "InventoryConsumablesHeader": "Consumables",
-    "InventoryEquipmentHeader": "Equipment",
-    "InventoryTreasureHeader": "Treasure",
-    "InventoryWeaponsHeader": "Weapons",
     "InventroyBrowserSearchHint": "You can search for name or custom attributes. Possible searchable attributes are:<br> source, spellType, level, materials, target, range, time, duration, damage, damageType, save, concentration, ritual, ability and classes. <br>Example: 'fire, damage:d6' to show all spells that have fire in their name and a d6 in the damage",
     "InvestedLabel": "Invested",
     "Item": {
@@ -1606,7 +1577,6 @@
         "InvalidDrop": "{badType} cannot be dropped here (must be {goodType})"
       },
       "Action": {
-        "CategoryLabel": "Category",
         "Category": {
           "None": "None",
           "Defensive": "Defensive",
@@ -1614,6 +1584,7 @@
           "Offensive": "Offensive",
           "Familiar": "Familiar Ability"
         },
+        "Plural": "Abilities",
         "SelfAppliedEffect": {
           "Applied": "{effect} was applied.",
           "Delete": "Delete Reference",
@@ -1647,6 +1618,7 @@
           "Title": "If set, prevents the condition from being removed while the affliction lasts"
         },
         "OnsetLabel": "Onset",
+        "OnsetActive": "Onset Active",
         "SaveLabel": "Save DC",
         "Stage": "Stage {stage}",
         "StageLabel": "Stage"
@@ -1705,9 +1677,6 @@
           "Label": "Specific Magic Armor"
         }
       },
-      "Backpack": {
-        "StowingLabel": "Is Stowing Container?"
-      },
       "CampaignFeature": {
         "CampaignLabel": "Campaign"
       },
@@ -1733,6 +1702,21 @@
           "RollDamage": "Roll Damage"
         }
       },
+      "Consumable": {
+        "Plural": "Consumables",
+        "Uses": {
+          "AutoDestroy": "AutoDestroy",
+          "Label": "Uses",
+          "None": "No Uses Remaining",
+          "Use": "Use"
+        }
+      },
+      "Container": {
+        "Capacity": "Bulk Capacity",
+        "Ignored": "Bulk Ignored",
+        "Plural": "Containers",
+        "Stowing": "Is Stowing Container?"
+      },
       "CreationDialog": {
         "Categories": {
           "Character": "Character Building",
@@ -1744,7 +1728,6 @@
         "Alignment": "Alignment",
         "Category": {
           "Hint": "Pantheons of deities and philosophies not associated with any deity can be followed instead of a particular deity. Clerics and Champions must follow a deity or pantheon.",
-          "Label": "Category",
           "Pantheon": "Pantheon",
           "Philosophy": "Philosophy"
         },
@@ -2130,8 +2113,9 @@
         "LevelLabel": "Feat",
         "LevelN": "Feat {level}",
         "OnlyLevel1": "Must be taken at level 1",
+        "Plural": "Feats",
         "TakeMultiple": {
-          "Five": "Up to 5x",
+          "Five": "Up to 5×",
           "Four": "Up to 4×",
           "Label": "Can be taken multiple times",
           "NoLimit": "No limit",
@@ -2166,14 +2150,23 @@
         "Hint": "Additional tags beyond traits to help classify an item"
       },
       "Physical": {
+        "Base": "Base",
         "Broken": "Broken",
         "BrokenThreshold": {
           "Label": "Broken Threshold",
           "ShortLabel": "BT"
         },
         "Bulk": {
-          "Light": "L",
-          "Negligible": "—",
+          "HeldOrStowed": "Bulk (Held/Stowed)",
+          "Label": "Bulk",
+          "Light": {
+            "Label": "Light",
+            "ShortLabel": "L"
+          },
+          "Negligible": {
+            "Label": "Negligible",
+            "ShortLabel": "—"
+          },
           "NLight": "{light}L",
           "WithLight": "{bulk}, {light}L"
         },
@@ -2186,6 +2179,8 @@
         "GeneratedName": {
           "FourProperties": "{property1} {property2} {property3} {property4} {base}",
           "FourPropertiesMaterial": "{property1} {property2} {property3} {property4} {material} {base}",
+          "Fundamental2": "{fundamental2} {base}",
+          "Fundamental2Material": "{fundamental2} {material} {base}",
           "Hint": "This is the name of the base weapon. For most weapons, the base is used to generate a fuller name, taking into account the material composition and/or runes. Giving this weapon a custom name or marking it as \"specific\" will prevent the generated name from appearing.",
           "Material": "{material} {base}",
           "OneProperty": "{property1} {base}",
@@ -2193,9 +2188,6 @@
           "Potency": "+{potency} {base}",
           "PotencyFourProperties": "+{potency} {property1} {property2} {property3} {property4} {base}",
           "PotencyFourPropertiesMaterial": "+{potency} {property1} {property2} {property3} {property4} {material} {base}",
-          "PotencyMaterial": "+{potency} {material} {base}",
-          "PotencyOneProperty": "+{potency} {property1} {base}",
-          "PotencyOnePropertyMaterial": "+{potency} {property1} {material} {base}",
           "PotencyFundamental2": "+{potency} {fundamental2} {base}",
           "PotencyFundamental2FourProperties": "+{potency} {fundamental2} {property1} {property2} {property3} {property4} {base}",
           "PotencyFundamental2FourPropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {property4} {material} {base}",
@@ -2206,12 +2198,15 @@
           "PotencyFundamental2ThreePropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {material} {base}",
           "PotencyFundamental2TwoProperties": "+{potency} {fundamental2} {property1} {property2} {base}",
           "PotencyFundamental2TwoPropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {material} {base}",
+          "PotencyMaterial": "+{potency} {material} {base}",
+          "PotencyOneProperty": "+{potency} {property1} {base}",
+          "PotencyOnePropertyMaterial": "+{potency} {property1} {material} {base}",
           "PotencyThreeProperties": "+{potency} {property1} {property2} {property3} {base}",
           "PotencyThreePropertiesMaterial": "+{potency} {property1} {property2} {property3} {material} {base}",
           "PotencyTwoProperties": "+{potency} {property1} {property2} {base}",
           "PotencyTwoPropertiesMaterial": "+{potency} {property1} {property2} {material} {base}",
-          "Fundamental2": "{fundamental2} {base}",
-          "Fundamental2Material": "{fundamental2} {material} {base}",
+          "Reinforcing": "{reinforcing} {base}",
+          "ReinforcingMaterial": "{reinforcing} {material} {base}",
           "ThreeProperties": "{property1} {property2} {property3} {base}",
           "ThreePropertiesMaterial": "{property1} {property2} {property3} {material} {base}",
           "TwoProperties": "{property1} {property2} {base}",
@@ -2226,6 +2221,9 @@
         "OtherTags": {
           "Hint": "These are tags indicating classifications in Second Edition rules that lack explicit status/definition but are still yet heavily relied upon. Some may be automatically added when other properties are present.",
           "Label": "Other Tags"
+        },
+        "MaterialRunes": {
+          "Label": "Precious Material and Runes"
         },
         "PriceLabel": "Price: {price}",
         "Usage": {
@@ -2266,6 +2264,7 @@
       "Plural": "Items",
       "RefreshFromCompendium": {
         "Label": "Refresh",
+        "SourceNotFound": "The compendium source for \"{item}\" (source ID: {sourceId}) was not found.",
         "Tooltip": {
           "Disabled": "Item cannot be refreshed: contains data stored at time of adding to actor",
           "Enabled": "Refresh this item's data with the latest from its originating compendium."
@@ -2285,6 +2284,41 @@
         "RegenerateSlug": "(Re)generate Slug",
         "Remove": "Remove Rule Element",
         "Tab": "Rules"
+      },
+      "Shield": {
+        "Base": {
+          "buckler": "Buckler",
+          "casters-targe": "Caster's Targe",
+          "dart-shield": "Dart Shield",
+          "fortress-shield": "Fortress Shield",
+          "gauntlet-buckler": "Gauntlet Buckler",
+          "harnessed-shield": "Harness Shield",
+          "heavy-rondache": "Heavy Rondache",
+          "hide-shield": "Hide Shield",
+          "klar": "Klar",
+          "meteor-shield": "Meteor Shield",
+          "razor-disc": "Razor Disc",
+          "salvo-shield": "Salvo Shield",
+          "steel-shield": "Steel Shield",
+          "swordstealer-shield": "Swordstealer Shield",
+          "tower-shield": "Tower Shield",
+          "wooden-shield": "Wooden Shield"
+        },
+        "Rune": {
+          "Reinforcing": {
+            "Greater": "Greater Reinforcing",
+            "Label": "Reinforcing Rune",
+            "Lesser": "Lesser Reinforcing",
+            "Major": "Major Reinforcing",
+            "Minor": "Minor Reinforcing",
+            "Moderate": "Moderate Reinforcing",
+            "Supreme": "Supreme Reinforcing"
+          }
+        },
+        "Specific": {
+          "Hint": "Marking this shield as a <i>specific magic shield</i> indicates that it does more than what its material composition and runes allow. The name, level, rarity, and price will no longer be overridden from precious material or runes at the time of marking. Those material and runes will, however, serve as a baseline for level, rarity, and price adjustments from later upgrades.",
+          "Label": "Specific Magic Shield"
+        }
       },
       "SidebarSummary": "{type} Summary",
       "Spell": {
@@ -2308,6 +2342,7 @@
           "Clear": "Clear Placed Templates",
           "Place": "Place {area}"
         },
+        "Plural": "Spells",
         "Rank": {
           "Label": "Rank",
           "Ordinal": "{rank} Rank",
@@ -2675,7 +2710,6 @@
     "NPCWeaponAttackLabel": "Attack Modifier",
     "NPCWeaponDamageLabel": "Damage Formula",
     "Nationality": "Nationality",
-    "NegligibleOption": "Negligible",
     "NewLabel": "New",
     "NewLoreSkill": "New skill",
     "NewPlaceholders": {
@@ -3359,7 +3393,6 @@
     "SpellFlexibleAvailable": "Flexible: {value} / {max}",
     "SpellFlexibleLabel": "Flexible",
     "SpellFocusLabel": "Focus",
-    "SpellLabelPlural": "Spells",
     "SpellLevelBase": "Base: {level}",
     "SpellLevelHeightened": "Heightened: +{heightened}",
     "SpellLevelLabel": "Spell Rank",
@@ -3449,7 +3482,6 @@
     "TabDescriptionLabel": "Description",
     "TabDetailsLabel": "Details",
     "TabEffectsLabel": "Effects",
-    "TabFeatsLabel": "Feats",
     "TabInventoryLabel": "Inventory",
     "TabManageTabsLabel": "Manage Tabs",
     "TabPathfinderSociety": "Pathfinder Society",
@@ -4142,9 +4174,10 @@
     "TraitHarrowCourt": "Harrow Court",
     "TraitHaunt": "Haunt",
     "TraitHealing": "Healing",
-    "TraitHefty14": "Hefty 14",
+    "TraitHefty2": "Hefty 2",
     "TraitHeldOneHand": "Held in 1 hand",
     "TraitHeldOneHandFreeStanding": "Held in 1 hand or free-standing",
+    "TraitHeldOneTwoHands": "Held in 1 or 2 hands",
     "TraitHeldTwoHands": "Held in 2 hands",
     "TraitHerald": "Herald",
     "TraitHeritage": "Heritage",
@@ -5016,6 +5049,13 @@
           "success": "This ash clouds the senses, causing the creature to become confused for 1 round unless it succeeds at a @Check[type:will|dc:25] save."
         }
       },
+      "astral": {
+        "Name": "Astral",
+        "Note": {
+          "criticalSuccess": "On a critical hit against a creature possessing another creature, the possessing creature must succeed at a @Check[type:will|dc:26] save or be expelled and unable to possess a creature for [[/br 1d4 #rounds]]{1d4 rounds}.",
+          "Note": "The weapon can harm creatures without physical form. An astral weapon is particularly effective against incorporeal creatures, which almost always have a specific vulnerability to astral weapons. Incorporeal creatures can touch, hold, and wield astral weapons (unlike most physical objects)."
+        }
+      },
       "authorized": {
         "Name": "Authorized"
       },
@@ -5130,6 +5170,13 @@
         "Name": "Greater Ashen",
         "Note": {
           "success": "This ash clouds the senses, causing the creature to become confused for 1 round unless it succeeds at a @Check[type:will|dc:35] save. On a critical failure, the effect lasts for 1 minute."
+        }
+      },
+      "greaterAstral": {
+        "Name": "Greater Astral",
+        "Note": {
+          "criticalSuccess": "On a critical hit against a creature possessing another creature, the possessing creature must succeed at a @Check[type:will|dc:36] save or be expelled and unable to possess a creature for [[/br 1d4 #rounds]]{1d4 rounds}.",
+          "Note": "The weapon can harm creatures without physical form. A greater astral weapon is particularly effective against incorporeal creatures, which almost always have a specific vulnerability to greater astral weapons. Incorporeal creatures can touch, hold, and wield greater astral weapons (unlike most physical objects). The spirit damage granted by a greater astral weapon ignores any spirit resistance the target has."
         }
       },
       "greaterBloodbane": {
@@ -5382,7 +5429,6 @@
     "WeaponSplashDamageLabel": "Splash Damage",
     "WeaponStrikeLabel": "Strike",
     "WeaponTypeAdvanced": "Advanced Weapon",
-    "WeaponTypeLabel": "Category",
     "WeaponTypeMartial": "Martial Weapon",
     "WeaponTypeSimple": "Simple Weapon",
     "WeaponTypeSpecial": "Other Weapons",
@@ -6183,6 +6229,11 @@
         },
         "Title": "Long Jump"
       },
+      "LowerShield": {
+        "Content": "{actor} lowers their {shield}.",
+        "ShortTitle": "Lower",
+        "Title": "Lower Shield"
+      },
       "MakeAnImpression": {
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> The target's attitude toward you decreases by one step.",
@@ -6258,12 +6309,14 @@
       },
       "RaiseAShield": {
         "BadArgs": "This action must be performed with exactly one character or NPC.",
-        "Content": "{actor} raises their shield.",
+        "Content": "{actor} raises their {shield}.",
         "NoShieldEquipped": "{actor} must have a shield equipped.",
         "ReactionTitle": "Reactive Shield",
         "ShieldIsBroken": "{actor}'s {shield} is broken.",
         "ShieldIsDestroyed": "{actor}'s {shield} is destroyed.",
-        "SingleActionTitle": "Raise a Shield"
+        "ShortTitle": "Raise",
+        "SingleActionTitle": "Raise a Shield",
+        "Title": "Raise a Shield"
       },
       "Ready": {
         "Description": "<p>You prepare to use an action that will occur outside your turn. Choose a single action or free action you can use, and designate a trigger. Your turn then ends. If the trigger you designated occurs before the start of your next turn, you can use the chosen action as a reaction (provided you still meet the requirements to use it). You can't Ready a free action that already has a trigger.</p><p>If you have a multiple attack penalty and your readied action is an attack action, your readied attack takes the multiple attack penalty you had at the time you used Ready. This is one of the few times the multiple attack penalty applies when it's not your turn.</p>",
@@ -8546,6 +8599,11 @@
       "FanesFourberie": {
         "Prompt": "Treat Cards as darts or daggers?"
       },
+      "Feat": {
+        "Forager": {
+          "Note": "While using Survival to Subsist, if you roll any result worse than a success, you get a success. You can also provide for multiple creatures."
+        }
+      },
       "Fetchling": {
         "DeepFetchling": {
           "Prompt": "Select a type of energy to resist."
@@ -9242,6 +9300,11 @@
         "Reflex": "When you roll a success on a Reflex save, you get a critical success instead.",
         "Will": "When you roll a success on a Will save, you get a critical success instead."
       },
+      "SaveCriticalFailureToFailure": {
+        "FailureHalfDamage": {
+          "Will": "When you roll a critical failure on a Will save, you get a failure instead. When you fail a Will save against an effect that deals damage, you take half damage."
+        }
+      },
       "ScionOfDomora": {
         "GuardiansEmbrace": {
           "PhysicalAttackLabel": "Guarding Against a Physical Attack",
@@ -9663,6 +9726,7 @@
       "kit": "Kit",
       "lore": "Lore Skill",
       "melee": "NPC Attack",
+      "shield": "Shield",
       "spell": "Spell",
       "spellcastingEntry": "Spellcasting Entry",
       "treasure": "Treasure",
@@ -9680,6 +9744,15 @@
     "Army": {
       "Adjustment": "Adjustment",
       "Base": "Base",
+      "Condition": {
+        "concealed": {
+          "name": "Concealed"
+        }
+      },
+      "Description": "Description",
+      "Error": {
+        "InvalidTacticType": "The tactic {name} is not supported by {type} armies"
+      },
       "Gear": {
         "Weapons": {
           "name": "Magic Weapons",
@@ -9726,6 +9799,8 @@
       },
       "NamePlaceholder": "Army Name",
       "Potency": "Potency",
+      "RoutedDescription": "Army's HP is below Rout Threshold!",
+      "RoutThreshold": "Rout Threshold",
       "Save": {
         "maneuver": "Maneuver",
         "morale": "Morale"
@@ -9740,13 +9815,11 @@
       },
       "Tactics": "Tactics",
       "WarActions": "War Actions",
-      "routThreshold": "Rout Threshold",
       "standardDC": "Standard DC",
       "recruitmentDC": "Recruitment DC",
       "ammunition": "Ammunition",
       "ammunitionMax": "Max Ammunition",
       "attributesHeader": "Attributes",
-      "routThresholdExceeded": "Army's HP is below Rout Threshold!",
       "Tooltip": {
         "tooltipPotion": "Potions Info",
         "tooltipRanged": "Ranged Weapons Info",
