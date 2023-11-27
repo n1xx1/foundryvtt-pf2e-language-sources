@@ -252,6 +252,7 @@ const itemTypes = [
   "heritage",
   "lore",
   "melee",
+  "shield",
   "spell",
   "spellcastingEntry",
   "treasure",
