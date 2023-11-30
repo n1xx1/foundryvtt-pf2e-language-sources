@@ -121,12 +121,6 @@
                 "PreparedShortLabel": "Prep."
             },
             "SkillRollFlavor": "{skillName} Prova di Abilità ({rank})",
-            "SkillsEditor": {
-                "BonusLabel": "Bonus",
-                "NameLabel": "Nome Abilità",
-                "SpecialCaseLabel": "Contenitore speciale",
-                "TitleLabel": "Edita Abilità PNG"
-            },
             "AddPassive": "Aggiungi Passiva"
         },
         "Actions": {
@@ -444,7 +438,6 @@
                 }
             },
             "Disarm": {
-                "EffectLabel": "Usando un arma con impugnatura debole",
                 "Notes": {
                     "criticalSuccess": "<strong>Successo Critico</strong> L'avversario perde la presa sull'oggetto, che cade a terra nello spazio dell'avversario.",
                     "success": "<strong>Successo</strong> Indebolisci la presa dell'avversario sull'oggetto. Fino all'inizio del suo turno, i tentativi di Disarmare l'avversario di quell'oggetto ottengono bonus di circostanza +2, e il bersaglio subisce penalità di circostanza -2 agli attacchi con l'oggetto e ad altre prove che richiedono una salda presa su di esso. @UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Effetto: Disarmare (Successo)}",
@@ -860,7 +853,6 @@
                     "Hint": "Appena raggiungono zero Punti Ferita, i PNG sono segnati come morti.",
                     "Neither": "No",
                     "NPCsOnly": "Sì",
-                    "PCsOnly": "Solo i PG",
                     "Both": "PG e PNG"
                 },
                 "LootableNPCs": {
@@ -941,11 +933,6 @@
                 "hint": "Determina quale set di icone viene utilizzato per gli effetti di condizione dei token. Thanks to errational#2007 for inspiration and Ediwir#7664 for the B&W tokens by Lorc@OpenGameArt.",
                 "legacy": "Legacy",
                 "name": "Set Icone Condizioni"
-            },
-            "Player": {
-                "QuickRolls": {
-                    "DialogHint": "Mostra sempre questa finestra prima di effettuare ogni prova."
-                }
             },
             "User": {
                 "EffectPanel": {
@@ -1055,10 +1042,6 @@
                     "Name": "Linguaggi",
                     "Hint": "Linguaggi per personaggi da sapere o imparare (ad es. Draconico, Gnomesco)"
                 },
-                "MagicSchools": {
-                    "Name": "Scuole di Magia",
-                    "Hint": "Le scuole magiche a cui appartengono tutti gli incantesimi (ad es. Evocazione, Invocazione)"
-                },
                 "SpellTraits": {
                     "Name": "Tratti Incantesimi",
                     "Hint": " Tratti che possono essere applicati a qualsiasi incantesimo (es. Guarigione)"
@@ -1084,7 +1067,6 @@
                     "Hint": "Tratti applicabili all'equipaggiamento che non sia un arma"
                 },
                 "DamageTypes": {
-                    "name": "Tipi di Danno Personalizzati",
                     "Hint": "Tipi di danno aggiuntivi da far distinguere al sistema"
                 },
                 "Tabs": {
@@ -1107,31 +1089,14 @@
                 "Label": "Attiva/Disattiva Regole Alternative",
                 "Hint": "Attiva e configura le regole alternative come Competenze Senza Livello o il sistema Tenacia.",
                 "Stamina": {
-                    "Title": "Tenacia",
                     "Name": "Regola Alternativa Tenacia",
-                    "Hint": "Gioca con la regola alternativa tenacia dal manuale Guida del Game Master pag. 200",
-                    "Choices": {
-                        "0": "Non usare la Tenacia",
-                        "1": "Usa la Tenacia"
-                    }
-                },
-                "AncestryParagon": {
-                    "Title": "Paradigma di Stirpe",
-                    "Name": "Regola Alternativa Paradigma di Stirpe",
-                    "Hint": "Fornisci gli slot dei talenti per la regola alternativa paradigma di stirpe dalla Guida del Game Master pag. 199"
+                    "Hint": "Gioca con la regola alternativa tenacia dal manuale Guida del Game Master pag. 200"
                 },
                 "FreeArchetype": {
-                    "Title": "Archetipo Gratuito",
                     "Name": "Regola Alternativa Archetipo Gratuito",
                     "Hint": "Fornisci gli slot dei talenti per la regola alternativa archetipo gratuito dalla Guida del Game Master pag. 198"
                 },
-                "DualClass": {
-                    "Title": "Doppia Classe",
-                    "Name": "Regola Alternativa Doppia Classe",
-                    "Hint": "Fornisci slot talenti aggiuntivi per la regola alternativa doppia classe della Guida del Game Master pag. 197. Questa regola alternativa aggiunge solo slot di talenti e aggiunge sempre uno slot di talento di primo livello."
-                },
                 "AutomaticBonus": {
-                    "Title": "Progressione Automatica dei Bonus",
                     "Name": "Regola Alternativa Progressione Automatica dei Bonus",
                     "Hint": "Reload Richiesto: Supporto per la regola alternativa Progressione Automatica dei Bonus, eccetto abilità/apex.",
                     "Choices": {
@@ -1141,42 +1106,10 @@
                     }
                 },
                 "Proficiency": {
-                    "Title": "Competenza senza Livello",
                     "Name": "Regole Alternative Competenza senza Livello",
-                    "Hint": "Gioca con la regola alternativa competenza senza livello dal manuale Guida del Game Master pag. 194.",
-                    "Choices": {
-                        "ProficiencyWithLevel": "Usa le regole Predefinite",
-                        "ProficiencyWithoutLevel": "Usa le Regole Alternative"
-                    }
+                    "Hint": "Gioca con la regola alternativa competenza senza livello dal manuale Guida del Game Master pag. 194."
                 },
-                "UntrainedModifier": {
-                    "Name": "Modificatore di competenza non addestrato",
-                    "Hint": "Aggiusta come preferisci per complementare le regole di competenza senza livello, il valore raccomandato è -2. Richiede il ricalcolo aggiornando la pagina o modificando un valore per ogni personaggio."
-                },
-                "TrainedModifier": {
-                    "Name": "Modificatore di competenza addestrato",
-                    "Hint": "Aggiusta come preferisci per complementare le regole di competenza senza livello. Richiede il ricalcolo aggiornando la pagina o modificando un valore per ogni personaggio."
-                },
-                "ExpertModifier": {
-                    "Name": "Modificatore di competenza esperto",
-                    "Hint": "Aggiusta come preferisci per complementare le regole di competenza senza livello. Richiede il ricalcolo aggiornando la pagina o modificando un valore per ogni personaggio."
-                },
-                "MasterModifier": {
-                    "Name": "Modificatore di competenza maestro",
-                    "Hint": "Aggiusta come preferisci per complementare le regole di competenza senza livello. Richiede il ricalcolo aggiornando la pagina o modificando un valore per ogni personaggio."
-                },
-                "LegendaryModifier": {
-                    "Name": "Modificatore di competenza leggendario",
-                    "Hint": "Aggiusta come preferisci per complementare le regole di competenza senza livello. Richiede il ricalcolo aggiornando la pagina o modificando un valore per ogni personaggio."
-                },
-                "Title": "Impostazioni Regole Alternative",
-                "AbilityScore": {
-                    "Title": "Alternative per i Punteggi di Caratteristica",
-                    "GradualBoosts": {
-                        "Name": "Aumenti Graduali delle Caratteristiche",
-                        "Hint": "Distribuisci gli aumenti di caratteristica su più livelli. I giocatori ottengono un aumento di caratteristica ad ogni livello tranne 6, 11 e 16."
-                    }
-                }
+                "Title": "Impostazioni Regole Alternative"
             },
             "TOTMToggles": {
                 "Name": "Interruttori Teatro della Mente",
@@ -1269,20 +1202,8 @@
                 },
                 "Name": "Gelida Superiore"
             },
-            "anarchic": {
-                "Name": "Anarchica",
-                "Note": {
-                    "criticalSuccess": "Quando ottieni un successo critico con un Colpo con quest'arma contro una creatura legale, tira [[/r 1d6 #Runa Anarchica]]: in caso di 1 o 2 infliggi il doppio dei danni minimi, di 3 o 4 raddoppi il tuoi danni come al solito e infine in caso di 5 o 6 infliggi il doppio dei danni massimi."
-                }
-            },
             "ancestralEchoing": {
                 "Name": "Eco Ancestrale"
-            },
-            "axiomatic": {
-                "Name": "Assiomatica",
-                "Note": {
-                    "criticalSuccess": "Quando ottieni un successo critico a un Tiro per Colpire con questa arma contro una creatura caotica, invece di tirare, considera ogni dado di danno dell'arma come se fosse il danno medio arrotondato: 3 per il d4, 4 per il d6, 5 per il d8, 6 per il d10, 7 per il d12."
-                }
             },
             "bloodbane": {
                 "Name": "Tormento"
@@ -1349,8 +1270,7 @@
                 }
             },
             "keen": {
-                "Name": "Affilata",
-                "Note": "Gli attacchi con questa arma sono dei colpi critici ottenendo un 19 con il dado finché questo risultato è un successo. Questa proprietà non ha effetto con un 19 se il risultato fosse un fallimento."
+                "Name": "Affilata"
             },
             "kinWarding": {
                 "Name": "Consanguinea"
@@ -1457,7 +1377,6 @@
         "ItemBonusShortLabel": "Oggetto",
         "ArmorPropertyRuneRockBraced": "Granitica",
         "ArmorPropertyRuneSoaring": "Fluttuante",
-        "LanguageArboreal": "Arboreo",
         "condition": {
             "confused": {
                 "rules": "<p>Non ti rendi conto appieno di ciò che accade e attacchi alla cieca. Sei impreparato, non consideri nessuno come tuo alleato (anche se gli altri possono considerarti alleato) e non puoi Ritardare, Preparare o usare reazioni.<p></p>Usi tutte le tue azioni per Colpire o lanciare trucchetti offensivi, ma il GM può farti usare altre azioni per facilitare gli attacchi, come sguainare un'arma, muoverti in modo da avere il bersaglio in gittata e così via. I tuoi bersagli sono determinati casualmente dal GM. Se non hai altri bersagli disponibili, bersagli te stesso, colpendoti automaticamente ma senza ottenere un colpo critico. Se ti è impossibile attaccare o lanciare incantesimi, farfugli parole incoerenti, sprecando le tue azioni.</p>\n<p>Ogni volta che subisci danni da un attacco o incantesimo, puoi tentare una @Check[type:flat|dc:11] per riprenderti dalla confusione e porre fine alla condizione.</p>",
@@ -1876,15 +1795,12 @@
                     "axe": "Effetti di Specializzazione del Critico: Scegli una creatura adiacente al bersaglio iniziale che sia entro portata. Se la sua CA è minore del risultato del tuo Tiro per Colpire che ha prodotto il colpo critico, infliggi a quella creatura danno pari al risultato del dado di danno dell'arma che ha ottenuto (inclusi i danni extra per la runa di potenziamento, se disponibile). Questa quantità di danno non viene raddoppiata e non vengono aggiunti bonus o altri dadi addizionali.",
                     "bomb": "Aumenta il raggio del danno ad area della bomba (se ne ha uno) a 3 metri.",
                     "club": "Scagli il bersaglio lontano da te fino a 3 metri (scegli tu la distanza). Si tratta di un movimento forzato.",
-                    "dart": "Il bersaglio subisce @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Ottieni bonus di oggetto per questo Danno da Sanguinamento pari al bonus di oggetto dell'arma ai Tiri per Colpire.",
-                    "knife": "Il bersaglio subisce @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Ottieni bonus di oggetto per questo Danno da Sanguinamento pari al bonus di oggetto dell'arma ai Tiri per Colpire.",
                     "shield": "Respingi indietro il bersaglio di 1,5 metri. Si tratta di un movimento forzato.",
                     "sling": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Fionda] o essere @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 1}.",
                     "sword": "Il bersaglio viene sbilanciato dal tuo attacco, divenendo @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} fino all'inizio del tuo prossimo turno.",
                     "brawling": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Rissa] o essere @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno.",
                     "flail": "Il bersaglio viene scagliato a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}.",
                     "hammer": "Il bersaglio viene scagliato a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}.",
-                    "pick": "L'arma trafigge brutalmente il bersaglio che subisce 2 danni aggiuntivi per dado di danno dell'arma.",
                     "polearm": "Il bersaglio, viene mosso di 1,5 metri in una direzione a tua scelta. Si tratta di un movimento forzato.",
                     "spear": "L'arma perfora il bersaglio, indebolendone gli attacchi. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} fino all'inizio del tuo prossimo turno."
                 },
@@ -1893,8 +1809,7 @@
                 "MandatoryMelee": "Quest'arma ha un tratto che può essere usato soltanto con le armi da mischia.",
                 "MaterialAndRunes": {
                     "MaterialOption": "{type} ({grade})",
-                    "Title": "Composizione Materiali e Rune",
-                    "Hint": "Materiali preziosi e rune permettono una personalizzazione approfondita di un arma. Oltre a migliorare la sua abilità di danneggiare i nemici, influenzano anche il livello, la rarità, il prezzo e il nome dell'arma. Per evitare che l'arma sia rinominata, dagli un nome personalizzato o impostala come una <i>arma magica specifica</i>."
+                    "Title": "Composizione Materiali e Rune"
                 },
                 "MeleeUsage": {
                     "Label": "Utilizzo Mischia"
@@ -1935,7 +1850,6 @@
                 "Category": {
                     "Pantheon": "Pantheon",
                     "Philosophy": "Filosofia",
-                    "Label": "Categoria",
                     "Hint": "Pantheon di divinità, fedi e filosofie non associate a nessuna divinità posso essere seguite invece di una divinità in particolare. I chierici e i campioni devono seguire una divinità o un pantheon."
                 },
                 "DivineFont": {
@@ -2183,16 +2097,11 @@
                     "Hint": "Per aggiungere un incantesimo, trascinalo sopra questo foglio.",
                     "DropError": "Gli incantesimi da chierico di una divinità non dovrebbero includere trucchetti, incantesimi focalizzati o rituali."
                 },
-                "DivineAbility": {
-                    "Label": "Caratteristica Divina",
-                    "Hint": "Se stai scegliendo il background Cresciuto nella Fede, le opzioni degli aumenti di caratteristica derivano da una divinità."
-                },
                 "DivineSkill": "Abilità Divina",
                 "FavoredWeapons": {
                     "Label": "Arma/i Preferita/e",
                     "Hint": "Quasi tutte le divinità hanno una singola arma preferita, ma alcune hanno sia un'arma preferita che un attacco senz'armi."
                 },
-                "FollowerAlignments": "Allineamenti dei Seguaci",
                 "Domains": {
                     "Primary": "Domini",
                     "Alternate": {
@@ -2276,8 +2185,6 @@
                     "CantripDeck5": "Mazzo dei trucchetti {name} (pacchetto da 5)"
                 },
                 "Bulk": {
-                    "Light": "L",
-                    "Negligible": "—",
                     "NLight": "{light}L",
                     "WithLight": "{bulk}, {light}L"
                 }
@@ -2423,9 +2330,6 @@
                 "Tab": "Regole",
                 "Remove": "Rimuovi Elemento delle Regole"
             },
-            "Backpack": {
-                "StowingLabel": "È un Contenitore di Oggetti Riposti?"
-            },
             "RemovalPrevented": "La rimozione di {item} è prevenuta da {preventer}.",
             "WorldItemWarning": "Questo è un Oggetto del Mondo e non funzionerà se salvato in un compendio",
             "Affliction": {
@@ -2446,7 +2350,6 @@
                 "Add": "Aggiungi Note del GM"
             },
             "Action": {
-                "CategoryLabel": "Categoria",
                 "Category": {
                     "None": "Nessuno",
                     "Defensive": "Difensiva",
@@ -2715,7 +2618,6 @@
             "ReduceHiddenCheck": "La CD della prova semplice per prendere a bersaglio una creatura @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosta} è @Check[type:flat|dc:5]."
         },
         "ChatRollDetails": {
-            "ModifiersEmpty": "Nessun Modificatore",
             "Select": "Ispeziona Tiro",
             "Title": "Ispezione Tiro",
             "RollOptions": "Opzioni Tiro",
@@ -3265,16 +3167,11 @@
         "EffectsLabel": "Effetti",
         "ItemMystification": "Mistificazione",
         "EmptySlot": "Vuoto",
-        "EquipmentEquippedLabel": "Equipaggiato",
-        "EquippedBulkLabel": "Volume Indossato",
-        "EquippedSameBulkValue": "Trasportato",
         "Focus": {
             "label": "Punti Focalizzazione",
             "NotEnoughFocusPointsError": "Non hai punti di focalizzazione sufficienti per lanciare questo incantesimo.",
             "pointLabel": "Punti",
-            "pointTitle": "I tuoi Punti Focalizzazione rianenti",
             "Pool": "Riserva di Focalizzazione",
-            "poolTitle": "La grandezza della tua Riserva di Focalizzazione",
             "Outdated": "Valore precedente della riserva focalizzazione come promemoria. Clicca per eliminare.",
             "Previous": "Precedente",
             "Spells": "Incantesimi Focalizzati"
@@ -3284,7 +3181,6 @@
             "Many": "{value}/{max} Punti Eroe"
         },
         "ItemNamePlaceholder": "Nome",
-        "LanguageJistkan": "Jistkan",
         "HitPointsHeader": "Punti Ferita",
         "HitPointsShortLabel": "PF",
         "HitPointsDetailsLabel": "Dettagli PF",
@@ -3329,9 +3225,6 @@
         "ActionTypePassive": "Passiva",
         "ActionTypeReaction": "Reazione",
         "ActionWeaponLabel": "Arma Associata",
-        "LanguageJotun": "Jotun",
-        "LanguageJyoti": "Jyoti",
-        "LanguageKelish": "Kelishita",
         "ActionsCheck": {
             "acrobatics": "Prova di Acrobazia",
             "arcana": "Prova di Arcana",
@@ -3355,7 +3248,6 @@
             "x": "Prova di {type}",
             "x-attack-roll": "Tiro per Colpire di {type}"
         },
-        "LanguageKitsune": "Kitsune",
         "ActionsWarning": {
             "NoActor": "Seleziona almeno un token prima di tirare, o assegna un personaggio predefinito.",
             "NoStatistic": "Il personaggio {name} ({id}) non ha una statistica per {statistic}.",
@@ -3388,22 +3280,9 @@
         "AdditionalSkills": "Abilità Aggiunte",
         "AdditionalLanguagePlusInt": "(più Intelligenza)",
         "Age": "Età",
-        "AgeTitle": "Età del personaggio",
-        "Alignment": "Allineamento",
-        "AlignmentCE": "Caotico Malvagio",
-        "AlignmentCG": "Caotico Buono",
-        "AlignmentCN": "Caotico Neutrale",
-        "AlignmentLE": "Legale Malvagio",
-        "AlignmentLG": "Legale Buono",
-        "AlignmentLN": "Legale Neutrale",
-        "AlignmentN": "Neutrale",
-        "AlignmentNE": "Neutrale Malvagio",
-        "AlignmentNG": "Neutrale Buono",
-        "AlignmentTitle": "Il tuo allineamento",
         "AllSavesLabel": "Salva Tutto",
         "AncestryFeatures": "Caratteristiche di Stirpe",
         "AncestryHP": "PF Stirpe",
-        "AncestryTitle": "Stirpe del personaggio",
         "AncestryFeatLevels": "Liv. Talenti di Stirpe",
         "AreaLabel": "Area",
         "AreaSize10": "3 metri",
@@ -3429,8 +3308,6 @@
         "AreaTypeEmanation": "Emanazione",
         "AreaTypeLine": "Linea",
         "ArmorArmorLabel": "Bonus CA",
-        "ArmorArmorTypeLabel": "Categoria",
-        "ArmorBaseLabel": "Base",
         "ArmorCheckLabel": "Penalità alle Prove",
         "ArmorCheckPenalty": "Penalità armatura alle Prove",
         "ArmorClassBase": "Classe Armatura Base 10",
@@ -3480,7 +3357,6 @@
         "ArmorTypeHeavy": "Armature Pesanti",
         "ArmorTypeLight": "Armatura Leggera",
         "ArmorTypeMedium": "Armatura Media",
-        "ArmorTypeShield": "Scudo",
         "ArmorTypeUnarmored": "Senza Armatura",
         "AttackEffectConstrict": "Stritolare",
         "AttackEffectGrab": "Afferrare",
@@ -3510,45 +3386,24 @@
         },
         "Background": "Background",
         "BackgroundSkillFeats": "Talenti di Abilità",
-        "BackgroundTitle": "Il background del personaggio",
         "BaseModifier": "Modificatore Base",
         "BaseWeapons": "Armi Base",
         "BestiaryBrowserSearchHint": "Puoi cercare per nome o attributo personalizzato. I possibili attributi personalizzati sono:<br> provenienza, Tipo incantesimo, livello, scuola, componenti, materiali, bersaglio, raggio, tempo, durata, danno, Tipo di danno, tiro, concentrazione, rituale, abilità e classi. <br>Esempio: 'fuoco, danno:d6' per vedere tutti gli incantesimi che hanno fuoco nel loro nome e un d6 nel danno",
         "Biography": "Biografia",
         "BiographyAllies": "Alleati",
-        "BiographyAlliesTitle": "Gli alleati del tuo personaggio",
         "BiographyAppearance": "Aspetto",
-        "LanguageMwangi": "Mwangi",
-        "BiographyAppearanceTitle": "L'aspetto fisico del tuo personaggio",
         "BiographyAttitude": "Carattere",
-        "BiographyAttitudeTitle": "Il comportamento del tuo personaggio",
         "BiographyBackStory": "Retroscena",
-        "BiographyBackStoryTitle": "La storia del tuo personaggio",
         "BiographyBeliefs": "Credenze",
-        "BiographyBeliefsTitle": "In cosa crede il tuo personaggio",
         "BiographyBirthPlace": "Luogo di Nascita",
-        "BiographyBirthPlaceTitle": "Dove è nato il tuo personaggio",
         "BiographyCampaignNotesHeader": "Note di Campagna",
         "BiographyCampaignNotes": "Note",
-        "BiographyCampaignNotesTitle": "Qualsiasi cosa tu voglia",
         "BiographyCatchphrases": "Frasi Tipiche",
-        "BiographyCatchphrasesTitle": "Le frasi tipiche del tuo personaggio",
         "BiographyDislikes": "Antipatie",
-        "BiographyDislikesTitle": "Cosa non piace al tuo personaggio",
         "BiographyEnemies": "Nemici",
-        "BiographyEnemiesTitle": "I nemici del tuo personaggio",
         "BiographyLikes": "Simpatie",
-        "BiographyLikesTitle": "Cosa piace al tuo personaggio",
         "BiographyOrganizations": "Organizzazioni",
-        "BiographyOrganizationsTitle": "Le organizzazioni del tuo personaggio",
         "BiographyPersonalityHeader": "Personalità",
-        "BonusBulk": "Bonus Volume Massimo",
-        "BonusBulkTitle": "Aggiungi o sottrai dal tuo limite del volume",
-        "BonusEncumbranceBulkLabel": "Aggiungi Volume Ingombrato",
-        "BonusLimitBulkLabel": "Aggiungi Limite Volume",
-        "BonusHPLabel": "PF Bonus",
-        "BonusHPperLevel": "PF Bonus per Livello",
-        "BonusHPperLevelTitle": "Applica una volta per ogni livello (il mod COS è aggiunto separatamente)",
         "BonusLabel": {
             "ability": "Bonus di caratteristica",
             "proficiency": "Bonus di competenza",
@@ -3559,7 +3414,6 @@
         },
         "BonusSPLabel": "Bonus PA",
         "BonusSPperLevel": "Bonus PA per Livello",
-        "BonusSPperLevelTitle": "Applica una volta per ogni livello (il mod COS è aggiunto separatamente)",
         "BrowserClearFilter": "Pulisci Filtro",
         "BrowserClearFilters": "Pulisci Tutti i Filtri",
         "BrowserFilterAlignments": "Allineamenti",
@@ -3569,11 +3423,9 @@
         "BrowserFilterCategory": "Categorie",
         "BrowserFilterClass": "Classi",
         "BrowserFilterComplexity": "Complessità Pericolo",
-        "BrowserFilterConsumable": "Categoria Monouso",
         "BrowserFilterInventoryTypes": "Tipo di Inventario",
         "BrowserFilterLevels": "Livelli",
         "BrowserFilterProficiencyRequirements": "Requisiti di Competenza",
-        "BrowserFilterSchools": "Scuole",
         "BrowserFilterRarities": "Filtri di Rarità",
         "BrowserFilterSizes": "Taglie",
         "BrowserFilterSkills": "Abilità",
@@ -3585,15 +3437,7 @@
         "BrowserSearchPlaceholder": "Cerca Testo",
         "BrowserSearchTitle": "Click con tasto destro per la guida",
         "BrowserSortyByLabel": "Ordina per",
-        "BrowserSortyByLevelLabel": "Livello",
-        "BrowserSortyByPriceLabel": "Prezzo",
-        "BrowserSortyByNameLabel": "Nome",
-        "BulkCapacityLabel": "Blocca Q.tà di Volume",
-        "BulkLabel": "Trasportato",
         "BulkMaxLabel": "Volume Massimo",
-        "BulkReductionLabel": "Riduci Volume di",
-        "BulkShortLabel": "Volume",
-        "BulkTypeLight": "Luce",
         "CapacityBarLabel": "Capacità",
         "CarryType": {
             "held1": "Tenuto 1M",
@@ -3611,11 +3455,9 @@
         "CharacterTraitsHeader": "Tratti e Altri Dettagli",
         "CircumstanceBonusShortLabel": "Circostanza",
         "CircumstanceBonusTitle": "Bonus di circostanza",
-        "Class": "Classe",
         "ClassFeatLevels": "Liv. Talenti di Classe",
         "ClassFeatures": "Privilegi di Classe",
         "ClassHP": "PF Classe",
-        "ClassTitle": "Classe del tuo personaggio",
         "ClickToSetInitiative": "Clicca per assegnare l'iniziativa al/ai gettone/i.",
         "ClickToSetInitiativeContext": "Imposta come Iniziativa",
         "ClipboardNotification": "Copiato \"{clipText}\" negli appunti.",
@@ -3630,11 +3472,7 @@
             "Hint": "Usa le schede sopra per selezionare un compendium",
             "TabAction": "Azioni",
             "TabBestiary": "Bestiari",
-            "TabEquipment": "Equipaggiamento",
             "TabFeat": "Talenti/Privilegi",
-            "TabHazard": "Pericoli",
-            "TabSpell": "Incantesimi",
-            "TabSettings": "Impostazioni",
             "TakeLabel": "Prendi Oggetto",
             "BuyLabel": "Acquista Oggetto",
             "Title": "Browser del Compendio",
@@ -3706,16 +3544,9 @@
         "ConditionTypeUnfriendly": "Maldisposto",
         "ConditionTypeUnnoticed": "Inosservato",
         "ConditionTypeWounded": "Ferito",
-        "ConsumableAutoDestroyLabel": "Distruzione automatica",
-        "ConsumableAutoUseLabel": "Utilizzo Automatico",
-        "ConsumableChargesLabel": "Cariche",
-        "ConsumableConsumeLabel": "A Consumo",
-        "ConsumableHeading": "Monouso",
-        "ConsumableNoChargesLabel": "Non Cariche",
         "ConsumableTypeAmmo": "Munizione",
         "ConsumableTypeDrug": "Droga",
         "ConsumableTypeElixir": "Elisir",
-        "ConsumableTypeLabel": "Categoria Monouso",
         "ConsumableTypeMutagen": "Mutageni",
         "ConsumableTypeOil": "Olio",
         "ConsumableTypeOther": "Altro",
@@ -3726,17 +3557,13 @@
         "ConsumableTypeTalisman": "Talismano",
         "ConsumableTypeTool": "Strumento",
         "ConsumableTypeWand": "Bacchetta",
-        "ConsumableUseLabel": "Uso",
         "ConsumableMessage": {
             "UseSingle": "Usa {name}",
             "UseMulti": "Usa {name}, {current} rimanenti",
             "UseExhausted": "Esaurisce {name}"
         },
-        "ConsumableCompatibleLabel": "Compatiblie",
-        "ConsumableIncompatibleLabel": "Incompatiblie",
         "CoreSkillsHeader": "Abilità Principali",
         "Counteractable": "Contrastabile",
-        "LanguageNecril": "Necril",
         "CraftDCTitle": "CD",
         "CraftItemTitle": "Fabbrica",
         "CreateActionTitle": "Crea Azione",
@@ -3762,10 +3589,8 @@
         "CurrencyGP": "Oro",
         "CurrencyPP": "Platino",
         "CurrencySP": "Argento",
-        "CurrentHPTitle": "I tuoi punti ferita",
         "CurrentHitPointsShortLabel": "PF Attuali",
         "CurrentStaminaPointsShortLabel": "PS Attuali",
-        "CurrentStaminaTitle": "Il totale dei punti tenacia che possiedi",
         "Damage": {
             "Base": "Base",
             "NoDamageFormulaLabel": "Nessun danno",
@@ -3774,22 +3599,16 @@
                 "air": "aria",
                 "bleed": "sanguinamento",
                 "bludgeoning": "contundente",
-                "chaotic": "caotico",
                 "cold": "freddo",
                 "earth": "terra",
                 "electricity": "elettricità",
-                "evil": "male",
                 "fire": "fuoco",
                 "force": "forza",
-                "good": "bene",
-                "lawful": "legale",
                 "mental": "mentale",
                 "metal": "metallo",
-                "negative": "negativo",
                 "persistent": "{damageType} persistente",
                 "piercing": "perforante",
                 "poison": "veleno",
-                "positive": "positivo",
                 "precision": "precisione",
                 "slashing": "tagliente",
                 "sonic": "sonoro",
@@ -3833,17 +3652,14 @@
                     "Exceptions3DoubleVs2": "{type} {value} (eccetto {exception1}, {exception2} o {exception3}; resistenza doppia contro {doubleVs1} o {doubleVs2})"
                 },
                 "Type": {
-                    "abjuration": "abiurazione",
                     "critical-hits": "colpi critici",
                     "curse": "maledizione",
                     "darkwood": "legnoscuro",
                     "dazzled": "abbagliato",
                     "death-effects": "effetti di morte",
-                    "divination": "divinazione",
                     "doomed": "condannato",
                     "drained": "risucchiato",
                     "emotion": "emozione",
-                    "enchantment": "ammaliamento",
                     "ghost-touch": "tocco fantasma",
                     "grabbed": "afferrato",
                     "healing": "guarigione",
@@ -3866,7 +3682,6 @@
                     "stupefied": "sbigottito",
                     "swarm-attacks": "attacchi degli sciami",
                     "swarm-mind": "mente dello sciame",
-                    "transmutation": "trasmutazione",
                     "trip": "sbilanciare",
                     "unarmed-attacks": "attacchi senz'armi",
                     "vampire-weaknesses": "debolezze dei vampiri",
@@ -3875,7 +3690,6 @@
                     "vorpal-adamantine": "adamantio vorpal",
                     "vorpal-fear": "paura del vorpal",
                     "vulnerable-to-sunlight": "vulnerabile alla luce del sole",
-                    "warpglass": "vetro distorcente",
                     "all-damage": "tutti i danni",
                     "auditory": "uditivo",
                     "axe-vulnerability": "vulnerabilità alle asce",
@@ -3883,10 +3697,8 @@
                     "clumsy": "maldestro",
                     "cold-iron": "ferro freddo",
                     "confused": "confuso",
-                    "conjuration": "evocazione",
                     "controlled": "controllato",
                     "enfeebled": "indebolito",
-                    "evocation": "invocazione",
                     "fascinated": "affascinato",
                     "fear-effects": "effetti di paura",
                     "fleeing": "in fuga",
@@ -3901,7 +3713,6 @@
                     "magical": "magico",
                     "misfortune-effects": "effetti di sfortuna",
                     "mithral": "mithral",
-                    "necromancy": "necromanzia",
                     "salt-water": "acqua salata",
                     "scrying": "scrutare",
                     "sickened": "nauseato",
@@ -3934,15 +3745,6 @@
             "IncreasedFrom": "Aumentato da {original} al minimo di 1",
             "PersistentTooltip": "{damageType} Persistente",
             "Precision": "Precisione",
-            "Dialog": {
-                "Splash": "Da Spargimento {damageType}",
-                "None": "Nessuno",
-                "Label": "Etichetta",
-                "DamageRoll": "Tiro per i Danni",
-                "CriticalDamageRoll": "Tiro per i Danni Critici",
-                "BonusDice": "Dadi Bonus",
-                "Bonus": "{dice} Bonus"
-            },
             "Hardness": {
                 "Full": "durezza",
                 "Half": "metà durezza"
@@ -3968,10 +3770,7 @@
         "DecrementEffectTitle": "Diminuisci il Livello dell'Effetto",
         "DefensesLabel": "Difese",
         "Deity": "Divinità",
-        "DeityTitle": "La tua divinità",
-        "DeleteConditionQuestion": "Sei sicuro/a che vuoi eliminare {condition}?",
         "DeleteConditionTitle": "Eminina Condizione",
-        "DeleteItemQuestion": "Sicuro di voler rimuovere:",
         "DeleteItemTitle": "Rimuovi Oggetto",
         "DeleteShortLabel": "Elimina",
         "DeleteSpellcastEntryQuestion": "Sicuro di voler rimuovere questa voce di incantesimo?",
@@ -4022,17 +3821,10 @@
         "FeaturesAncestryHeader": "Caratteristiche di Stirpe",
         "FeaturesClassHeader": "Privilegi di Classe",
         "Feet": "metri",
-        "FlatBonusHP": "PF Bonus Semplici",
-        "FlatBonusHPTitle": "Aggiungi un numero statico ai tuoi PF",
-        "FlatBonusHPperLevel": "PF Bonus / Lvl",
-        "FlatBonusSP": "PS Bonus Semplici",
-        "FlatBonusSPTitle": "Aggiungi un numero statico ai tuoi PS",
-        "FlatBonusSPperLevel": "PS Bonus / Lvl",
         "FlatCheck": "Prova Semplice",
         "Foot": "Piede",
         "FormulaKnownTitle": "Formule Conosciute",
         "FormulaListEmpty": "Vuoto (trascina oggetto/formula qua)",
-        "FormulaPlaceholder": "Formula",
         "FormulaSheet": {
             "DescriptionUnknown": "Questa formula è completamente piena di disegni stickman, macchie di qualche liquido sconosciuto, rime insensate scritte in caratteri infantili e altri segni apparentemente casuali. Deve essere stata fatta da dei goblin e non sembra aver alcun senso per te.<hr><strong>Nota</strong> Questa formula fa riferimento a un oggetto mancante o non valido.",
             "NameEmpty": "Formula Vuota",
@@ -4045,31 +3837,22 @@
             "per": "per"
         },
         "GenderPronoun": "Sesso/Pronomi",
-        "GenderPronounTitle": "Il tuo sesso/pronome",
         "GeneralFeatLevels": "Liv. Talenti Generali",
         "GreaterWeaponSpecialization": " Specializzazione con le Armi Superiore",
         "HardnessLabel": "Durezza",
         "HazardDescriptionLabel": "Descrizione",
-        "HazardDescriptionTitle": "Questo spiega come sembra il pericolo e potrebbe includere regole speciali",
         "HazardDisableLabel": "Disattiva",
-        "HazardHardnessLabel": "Durezza",
-        "HazardHardnessTitle": "Il danno del pericolo è ridotto da questa durezza",
         "HazardResetLabel": "Reimposta",
-        "HazardResetTitle": "Se il pericolo può essere reimpostato, quella informazione si trova qui",
         "HazardRoutineLabel": "Routine",
-        "HazardRoutineTitle": "Questa sezione descrive cosa fa un pericolo complesso ad ogni suo turno durante un incontro; il numero tra parentesi dopo la parola \"Routine\" indica quante azioni può usare il pericolo ad ogni turno. Pericoli semplici non hanno questo campo",
         "HealingTypeTemporaryHealing": "Cura (Temporanea)",
         "Height": "Altezza",
-        "HeightTitle": "La tua altezza",
         "Heritage": "Lignaggio",
-        "HeritageTitle": "Il lignaggio del tuo personaggio",
         "HeroPointsLabel": "Punti Eroe",
         "HitPointsDetailsTitle": "Informazioni aggiuntive sui Punti Ferita come Guarigione Rapida e Rigenerazione",
         "ImageLabel": "Immagine",
         "ImmunitiesLabel": "Immunità",
         "IncrementEffectTitle": "Aumenta il Livello dell'Effetto",
         "InitiativeHeader": "Bonus iniziativa",
-        "InitativeIsNow": "L'Iniziativa di {name} è ora {value}!",
         "InitiativeLabel": "Iniziativa",
         "InitiativeWithSkill": "Iniziativa: {skillName}",
         "InlineCheck": {
@@ -4090,15 +3873,8 @@
             "DistanceNoNumber": "Errore in @Template: la distanza {distance} non è un numero",
             "WidthNoNumber": "Errore in @Template: la larghezza {width} non è un numero"
         },
-        "InventoryArmorHeader": "Armatura",
-        "InventoryBackpackHeader": "Contenitori",
-        "InventoryConsumablesHeader": "Monouso",
-        "InventoryEquipmentHeader": "Equipaggiamento",
-        "InventoryTreasureHeader": "Tesoro",
-        "InventoryWeaponsHeader": "Armi",
         "InventroyBrowserSearchHint": "Puoi cercare per nome o attributo personalizzato. I possibili attributi personalizzati sono:<br> provenienza, Tipo incantesimo, livello, scuola, componenti, materiali, bersaglio, raggio, tempo, durata, danno, Tipo di danno, tiro, concentrazione, rituale, abilità e classi. <br>Esempio: 'fuoco, danno:d6' per vedere tutti gli incantesimi che hanno fuoco nel loro nome e un d6 nel danno",
         "InvestedLabel": "Investito",
-        "LanguageOrcish": "Orchesco",
         "ItemBonus0": "0",
         "ItemBonus1": "+1 Potenziamento dell'Arma",
         "ItemBonus2": "+2 Potenziamento dell'Arma",
@@ -4123,57 +3899,6 @@
         "KitItems": "Oggetti",
         "KitWorldItem": "Questo oggetto non si trova in un Compendio e non funzionerà in altri mondi",
         "LackCastConsumableCapability": "{actor} non ha la competenza per usare {spell} e non ha il talento Ingannare Oggetti Magici.",
-        "LanguageAbyssal": "Abissale",
-        "LanguageAkitonian": "Akitoniano",
-        "LanguageAklo": "Aklo",
-        "LanguageAlghollthu": "Alghollthu",
-        "LanguageAmurrun": "Amurrun",
-        "LanguageAnadi": "Anadi",
-        "LanguageAndroffan": "Androffano",
-        "LanguageAzlanti": "Azlanti",
-        "LanguageBoggard": "boggard",
-        "LanguageCaligni": "caligni",
-        "LanguageCelestial": "celestial",
-        "LanguageDestrachan": "Destrachan",
-        "LanguageCommon": "Comune",
-        "LanguageCyclops": "Ciclope",
-        "LanguageDaemonic": "Daimoniaco",
-        "LanguageDraconic": "Draconico",
-        "LanguageDruidic": "Druidico",
-        "LanguageDwarven": "Nanico",
-        "LanguageDziriak": "D'ziriak",
-        "LanguageElven": "Elfico",
-        "LanguageErutaki": "Erutaki",
-        "LanguageGarundi": "Garundi",
-        "LanguageGnoll": "Gnoll",
-        "LanguageGnomish": "Gnomico",
-        "LanguageGoblin": "Goblin",
-        "LanguageGrippli": "Grippli",
-        "LanguageHalfling": "Halfling",
-        "LanguageHallit": "Hallit",
-        "LanguageInfernal": "Infernale",
-        "LanguageIruxi": "Iruxi",
-        "LanguageOsiriani": "Osiriano",
-        "LanguageProtean": "Protean",
-        "LanguageRequian": "Requian",
-        "LanguageRussian": "Russo",
-        "LanguageShadowtongue": "Linguadombra",
-        "LanguageShoanti": "Shoanti",
-        "LanguageShobhad": "Shobhad",
-        "LanguageShoony": "Shoony",
-        "LanguageSkald": "Skald",
-        "LanguageSphinx": "Sfinge",
-        "LanguageStrix": "Strix",
-        "LanguageTaldane": "Taldano",
-        "LanguageTengu": "Tengu",
-        "LanguageThassilonian": "Thassiloniano",
-        "LanguageTien": "Tienese",
-        "LanguageUndercommon": "Sottocomune",
-        "LanguageUtopian": "Utopiano",
-        "LanguageVarisian": "Varisiano",
-        "LanguageVarki": "Varki",
-        "LanguageVudrani": "Vudrano",
-        "LanguageYsoki": "Ysoki",
         "Languages": "Linguaggi",
         "LanguagesAdditional": "Altre Lingue",
         "LevelLabel": "Livello",
@@ -4211,7 +3936,6 @@
         "Lore": "Sapienza",
         "LoreProficiencyDisclaimer": "Solo a scopo informativo. Il modificatore dell'abilità non verrà cambiato.",
         "LoreSkillsHeader": "Abilità di Sapienza",
-        "AddLoreSkill": "Aggiungi abilità sapienza",
         "NewLoreSkill": "Nuova abilità",
         "Macro": {
             "Plural": "Macro",
@@ -4225,15 +3949,6 @@
         "MacroActionNoActionError": "Questa azione non esiste più!",
         "MagicTraditionLabel": "Tradizione Magica",
         "MAPAbbreviationLabel": "PdAM {penalty}",
-        "MartialAdvanced": "Armi Avanzate",
-        "MartialHeavy": "Armature Pesanti",
-        "MartialLight": "Armatura Leggera",
-        "MartialMartial": "Armi da Guerra",
-        "MartialMedium": "Armatura Media",
-        "MartialSimple": "Armi Semplici",
-        "MartialSkillsHeader": "Competenze Armi e Armature",
-        "MartialUnarmed": "Senz'Armi",
-        "MartialUnarmored": "Senza Armatura",
         "MasterAbility": {
             "cha": "Carisma Padrone",
             "con": "Costituzione Padrone",
@@ -4252,7 +3967,6 @@
         "MaxHitPointsBaseLabel": "Max PF di Base {base}",
         "MaxHitPointsShortLabel": "PF MAX",
         "MaxStaminaPointsShortLabel": "Max SP",
-        "MaxStaminaTitle": "I tuoi Massimi Punti Tenacia",
         "Migrations": {
             "Finished": "Migrazione del Sistema PF2E alla versione {version} completata!",
             "Starting": "Applicazione Migrazione del Sistema PF2E alla versione {version}. Per favore pazienta e non chiudere il gioco o spegnere il server.",
@@ -4317,7 +4031,6 @@
         "NPCWeaponAttackEffect": "Effetti di Attacco addizionali",
         "NPCWeaponAttackLabel": "Modificatore di Attacco",
         "NPCWeaponDamageLabel": "Formula di Danno",
-        "NegligibleOption": "Trascurabile",
         "NewLabel": "Nuovo",
         "NoAmmoLabel": "Senza Munizioni",
         "NoStackGroup": "Non si somma",
@@ -4369,9 +4082,6 @@
                 "Spells": "Incantesimi",
                 "Swords": "Spade"
             }
-        },
-        "Playlist": {
-            "Plural": "Playlist"
         },
         "PotencyRuneLabel": "Runa di Potenziamento",
         "PreciousMaterialAdamantine": "Adamantio",
@@ -4485,7 +4195,6 @@
         "ResiliencyRuneLabel": "Runa Resiliente",
         "ResistancesLabel": "Resistenze",
         "ResolvePointsShortLabel": "Risolutezza",
-        "ResolveTitle": "L'ammontare di punti risolutezza che possiedi",
         "RestoreSpellTitle": "Ripristina Incantesimo",
         "RollTable": {
             "Plural": "Tabbelle"
@@ -4506,32 +4215,8 @@
         "SellAllTreasureTitle": "Vedi tutto il tesoro",
         "SellAllTreasureQuestion": "Converti tutto il tesoro in monete",
         "Senses": "Sensi",
-        "SettingsColorBlue": "Blu Grigio",
-        "SettingsColorLabel": "Tema Interfaccia Utente",
-        "SettingsColorNotes": "I temi dell'interfaccia utente sono maggiormente visibili nella barra laterale e nelle schede della chat.",
-        "SettingsColorOriginal": "Originario",
-        "SettingsColorRed": "Rosso Scuro",
-        "SettingsColorFoundry-UI": "Sexy Foundry UI",
-        "SettingsQuickRollsLabel": "Mostra i Pannelli dei Tiri",
-        "SettingsQuickRollsNotes": "Se disabilitato i pannelli per modificare i tiri dei D20 appariranno solo se un tasto per tirare viene cliccato tenendo premuto shift.",
-        "SettingsDataUriHighlightLabel": "Evidenzia le immagini che utilizzano dati: URI",
-        "SettingsDataUriHighlightNotes": "Le immagini che utilizzano dati: URI sono incorporati nella scheda del personaggio. Ciò ha un impatto negativo sulle prestazioni del personaggio. Se abilitata, tali immagini verranno evidenziate con un bordo rosso per facilitarne la ricerca e la rimozione.<br>Questa impostazione è attiva solo per la sessione corrente.",
         "SheetLabel": "{type} Foglio",
-        "SheetLabelDataEntry": "{type} Foglio (nuovo)",
-        "SheetLabelNew": "{type} Foglio (anteprima)",
-        "SheetLabelOld": "{type} Foglio (legacy)",
-        "ShieldACBonusTitle": "Il bonus alla CA del tuo scudo (quando usi l'azione Alzare lo Scudo)",
-        "ShieldBrokenThresholdLabel": "Soglia di rottura",
-        "ShieldBTShortLabel": "SR",
-        "ShieldBTTitle": "Soglia di Rottura del tuo scudo",
-        "ShieldCurrentLabel": "Scudo PF",
-        "ShieldCurrentTitle": "Punti Ferita attuali del tuo scudo",
-        "ShieldHardnessLabel": "Durezza",
-        "ShieldHardnessShortLabel": "D",
-        "ShieldHardnessTitle": "Il danno dello scudo è ridotto dal valore della sua durezza",
         "ShieldLabel": "Scudo",
-        "ShieldMaxLabel": "Massimo",
-        "ShieldMaxTitle": "Punti Ferita massimi del tuo Scudo",
         "SidebarAppearanceLabel": "Aspetto",
         "Size": "Taglia",
         "SizeLabel": "Taglia",
@@ -4574,81 +4259,39 @@
         "SkillPotencyHeader": "Potenziamenti Abilità",
         "SkillFeatLevels": "Liv. Talenti di Abilità",
         "SkillIncreaseLevels": "Livelli di Incremento Abilità",
-        "Source": {
-            "AuthorLabel": "Autore",
-            "AuthorPlaceholder": "Autore",
-            "Label": "Fonte",
-            "SourcePlaceholder": "Libro"
-        },
         "SpecialLabel": "Speciale",
         "SpecialSensesLabel": "Sensi Speciali",
         "Speed": "Velocita'",
         "SpeedFeet": "Velocità (metri)",
         "SpeedBaseLabel": "Velocità di {type} Base",
         "SpeedLabel": "Velocità di {type}",
-        "SpeedTitle": "Velocità del tuo Personaggio",
         "SpeedTypes": "Tipi di velocità",
         "SpeedTypesBurrow": "Scavare",
         "SpeedTypesClimb": "Scalare",
         "SpeedTypesFly": "Volare",
         "SpeedTypesLand": "Terrestre",
         "SpeedTypesSwim": "Nuotare",
-        "SpeedTypesTitle": "Tipi di movimento alternativi",
-        "SpellAbilityLabel": "Caratteristica Chiave",
         "SpellAbilityModLabel": "+ Mod",
         "SpellArea": "Area: {areaType} di {areaSize} {areaUnit}",
         "SpellAttackWithTradition": "Attacco di Incantesimo {tradition}",
         "SpellAttackLabel": "Attacco Incant.",
-        "SpellBasicSaveOption": "basico",
         "SpellBrowserSearchHint": "Puoi cercare per nome o attributo personalizzato. I possibili attributi personalizzati sono:<br> provenienza, Tipo incantesimo, livello, scuola, componenti, materiali, bersaglio, raggio, tempo, durata, danno, Tipo di danno, tiro, concentrazione, rituale, abilità e classi. <br>Esempio: 'fuoco, danno:d6' per vedere tutti gli incantesimi che hanno fuoco nel loro nome e un d6 nel danno",
-        "SpellCantripLabel": "Trucchetto",
         "SpellCastingFormat": "Incantesimo {traditionSpells} {preparationType}",
-        "SpellComponentF": "Focalizzazione",
-        "SpellComponentM": "Materiale",
-        "SpellComponentS": "Somatico",
-        "SpellComponentV": "Verbale",
-        "SpellComponentShortF": "F",
-        "SpellComponentShortM": "M",
-        "SpellComponentShortS": "S",
-        "SpellComponentShortV": "V",
-        "SpellComponentsLabel": "Componenti",
         "SpellSlotEmpty": "Vuoto (trascina incantesimo)",
         "SpellSlotNotEnoughError": "Non puoi lanciare {name} a livello {level}: non hai abbastanza slot",
         "SpellSlotExpendedError": "Non puoi lanciare {name}: l'incantesimo è già stato lanciato",
-        "SpellPrimaryCheckLabel": "Prove Primarie",
-        "SpellSecondaryChecksLabel": "Prove Secondarie",
-        "SpellSecondaryCasters": "Lanciatori Secondari",
-        "SpellConcentrationLabel": "Concentrazione",
-        "SpellCostLabel": "Costo",
-        "SpellDamageLabel": "Danno Incant.",
-        "SpellDCBase": "CD Incantesimo Base 10",
         "SpellDurationLabel": "Durata",
         "SpellFocusLabel": "Focalizzazione",
         "SpellFlexibleLabel": "Flessibile",
         "SpellFlexibleAvailable": "Flessibile: {value} / {max}",
         "SpellCollectionAdd": "Aggiungi l'Incantesimo alla Collezione",
         "SpellCollectionRemove": "Rimuovi l'Incantesimo dalla Collezione",
-        "SpellLabel": "Incantesimo",
-        "SpellLabelPlural": "Incantesimi",
-        "SpellLevel": "Livello {level}",
-        "SpellLevel1": "1° Livello",
-        "SpellLevel10": "10° Livello",
-        "SpellLevel2": "2° Livello",
-        "SpellLevel3": "3° Livello",
-        "SpellLevel4": "4° Livello",
-        "SpellLevel5": "5° Livello",
-        "SpellLevel6": "6° Livello",
-        "SpellLevel7": "7° Livello",
-        "SpellLevel8": "8° Livello",
-        "SpellLevel9": "9° Livello",
         "SpellLevelLabel": "Livello Incantesimo",
         "SpellLevelBase": "Base: {level}",
         "SpellLevelHeightened": "Intensificato: +{heightened}",
         "SpellPreparedLabel": "Preparato",
         "SpellRangeLabel": "Raggio",
         "SpellRequirementsLabel": "Prerequisiti",
-        "SpellRitualLabel": "Rituale",
-        "SpellSaveLabel": "CD Incant.",
         "SpellScalingInterval": {
             "Header": "Aumento (Intervallo)",
             "Label": "Intervallo",
@@ -4656,32 +4299,16 @@
             "Add": "Aggiungi Intensificazione (Intervallo)"
         },
         "SpellScalingOverlay": {
-            "Label": "Livello Intesificato",
             "Selection": "Intensificato ({level})",
             "Add": "Aggiungi Intensificazione (Fisso)"
         },
         "SpellScalingLabel": "Incremento",
-        "SpellSchoolLabel": "Scuola",
         "SpellTargetLabel": "Bersagli",
-        "SpellTimeLabel": "Tempo di lancio",
         "SpellTraditionsLabel": "Tradizioni",
-        "SpellTypeAttack": "Attacco Incant.",
-        "SpellTypeFocus": "Focalizzazione",
-        "SpellTypeHeal": "Guarigione",
-        "SpellTypeRitual": "Rituale",
-        "SpellTypeLabel": "Tipo di Incantesimo",
-        "SpellTypeSave": "Tiro Salvezza",
-        "SpellTypeUtility": "Utilità",
-        "SpellCategorySpell": "Incantesimo",
         "SpellUsesLabel": "Usi",
         "SpellUnlimitedLabel": "Illimitata",
-        "SpellCategoryFocus": "Focalizzazione",
-        "SpellCategoryRitual": "Rituale",
-        "SpellCategoryFocusCantrip": "Trucchetto Focalizzato",
-        "SpellCategoryLabel": "Categoria Incant.",
         "SpellcastingTypeLabel": "Tipo Incant.",
         "SpellsActionHeader": "Azione",
-        "SpellsSchoolHeader": "Scuola",
         "StackGroupArrows": "Frecce",
         "StackGroupRounds5": "Round (5)",
         "StackGroupRounds10": "Round (10)",
@@ -4739,13 +4366,11 @@
         "TabDescriptionLabel": "Descrizione",
         "TabDetailsLabel": "Dettagli",
         "TabEffectsLabel": "Effetti",
-        "TabFeatsLabel": "Talenti",
         "TabInventoryLabel": "Inventario",
         "TabManageTabsLabel": "Gestisci Sezioni",
         "TabPathfinderSociety": "Società di Pathfinder",
         "TabSkillsLabel": "Abilità",
         "TabSpellbookLabel": "Lanciare Incantesimi",
-        "TempHPTitle": "L'ammontare di Punti Ferita temporanei che hai",
         "TempHitPointsShortLabel": "PF TEMP",
         "TemplateLabel": "{shape} di {size} {unit}",
         "TemporaryItemToolTip": "Questo oggetto è temporaneo e scadrà dopo una durata o durante le preparazioni giornaliere. Non ha alcun valore e non può essere venduto.",
@@ -4784,9 +4409,7 @@
         "TotalWealth": "Ricchezza Totale",
         "TrainedSkillsLabel": "Abilità con Addestramento",
         "Traits": "Tratti",
-        "TraitAasimar": "Aasimar",
         "TraitAberration": "Aberrazione",
-        "TraitAbjuration": "Abiurazione",
         "TraitAcid": "Acido",
         "TraitAdditive1": "Additivo 1",
         "TraitAdditive2": "Additivo 2",
@@ -4839,7 +4462,6 @@
         "TraitCelestial": "celestial",
         "TraitChampion": "Campione",
         "TraitChangeling": "Changeling",
-        "TraitChaotic": "Caotico",
         "TraitCharauKa": "charau-ka",
         "TraitCleric": "Chierico",
         "TraitClimbing": "Scalare",
@@ -4853,7 +4475,6 @@
         "TraitConcealable": "Occultabile",
         "TraitConcentrate": "Concentrazione",
         "TraitConfusion": "Confusione",
-        "TraitConjuration": "Evocazione",
         "TraitConrasu": "Conrasu",
         "TraitConstruct": "costrutto",
         "TraitConsecration": "Consacrazione",
@@ -4884,8 +4505,6 @@
         "TraitDedication": "Dedizione",
         "TraitDemon": "Demone",
         "TraitDero": "dero",
-        "TraitDescriptionAasimar": "Una creatura con questo tratto è un membro della razza Aasimar.",
-        "TraitDescriptionAbjuration": "Gli effetti e gli oggetti magici con questo tratto sono associati alla scuola di magia di Abiurazione, che in genere comprende protezioni e difese.",
         "TraitDescriptionAcid": "Gli effetti con questo tratto infliggono danni da acido. Le creature con questo tratto hanno una connessione magica con l'acido.",
         "TraitDescriptionAdditive": "I talenti con questo tratto permettono di utilizzare azioni per aggiungere sostanze speciali a bombe o elisir. Puoi aggiungere un solo additivo a un singolo oggetto alchemico: provare ad aggiungerne un altro compromette l'oggetto. In genere, puoi effettuare azioni con il tratto additivo solo quando crei un oggetto alchemico infuso, e alcune possono essere utilizzate solo con l'azione Alchimia Rapida. Il tratto additivo è sempre seguito da un livello, per esempio additivo 2. Un additivo somma il suo livello a quello dell'oggetto alchemico che stai modificando; il totale rappresenta il nuovo livello di miscela. Il livello dell'oggetto di quest'ultima non può superare il tuo livello di alchimia avanzata",
         "TraitDescriptionAeon": "Questi osservatori sono i sedicenti difensori della realtà. Gli eoni tradizionali hanno forme e nature dualistiche e perseguono una dicotomia di interessi, a differenza degli assiomiti e degli inevitabili. Ad eccezione degli assiomiti e degli inevitabili, gli eoni comunicano attraverso uno strano miscuglio di telepatia e di percezioni sensoriali chiamato previsualizzazione.",
@@ -4917,7 +4536,6 @@
         "TraitDescriptionCatfolk": "Una creatura con questo tratto è un membro della razza Catfolk.",
         "TraitDescriptionChampion": "Questo tratto indica le capacità legate alla classe del campione.",
         "TraitDescriptionChangeling": "Una creatura con questo tratto è un membro della razza Changeling.",
-        "TraitDescriptionChaotic": "Gli effetti caotici spesso manipolano l'energia proveniente da Piani Esterni di allineamento caotico e sono un anatema per i servitori divini legali o per i servitori divini di divinità legali. Una creatura con questo tratto e di allineamento caotico.",
         "TraitDescriptionCleric": "Questo tratto indica le capacità legate alla classe del chierico.",
         "TraitDescriptionCold": "Gli effetti con questo tratto infliggono danni da freddo. Le creature con questo tratto hanno una connessione con il freddo magico.",
         "TraitDescriptionComfort": "L'Armatura è talmente comoda che puoi riposare normalmente mentre la stai indossando.",
@@ -4928,7 +4546,6 @@
         "TraitDescriptionConcealable": "Quest'arma è concepita per non essere appariscente o per essere occultata con facilità. Ottieni bonus di circostanza +2 alle prove di Furtività e alle CD per nascondere un'arma con questo tratto.",
         "TraitDescriptionConcentrate": "Un'azione con questo tratto richiede un certo grado di concentrazione e disciplina mentale.",
         "TraitDescriptionDhampir": "Una creatura con questo tratto è membro della stirpe dhampir. Questi umanoidi sono la progenie immortale dei vampiri e dei membri di altri retaggi.",
-        "TraitDescriptionConjuration": "Gli effetti e gli oggetti magici con questo tratto sono associati alla scuola di magia di evocazione, che generalmente comporta il richiamo, la creazione, il teletrasporto o lo spostamento di cose da un luogo all'altro.",
         "TraitDescriptionConsecration": "Un incantesimo di consacrazione migliora un'area per un lungo periodo di tempo. Una determinata area può avere un solo effetto di consacrazione alla volta. Il nuovo effetto tenta di contrastare qualsiasi esistente in aree di sovrapposizione",
         "TraitDescriptionConsumable": "Un oggetto con questo tratto può essere usato una sola volta. Se non diversamente specificato, viene distrutto dopo l'attivazione. Gli oggetti monouso includono gli oggetti alchemici e quelli magici che si possono usare solo una volta, come pergamene e talismani. Quando un personaggio crea oggetti monouso, può crearli in partite da quattro.",
         "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dalla necromanzia. I costrutti sono spesso privi di intelletto; sono immuni alle malattie, alla condizione paralizzato e al veleno; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
@@ -4942,7 +4559,6 @@
         "TraitDescriptionDedication": "Devi selezionare un talento con questo tratto per applicare un Archetipo al tuo personaggio.",
         "TraitDescriptionDisarm": "Puoi usare quest'arma per Disarmare con l'abilità Atletica anche se non hai una mano libera. Questo effetto usa la portata dell'arma (se differente dalla tua) e aggiunge il bonus di oggetto dell'arma al Tiro per Colpire (se ne ha uno) come bonus di oggetto alla prova di Atletica. Se realizzi un fallimento critico alla prova per Disarmare usando l'arma, puoi lasciar andare l'arma per ottenere gli effetti di un fallimento anziché quelli di un fallimento critico. Con un successo critico hai comunque bisogno di una mano libera se desideri prendere l'oggetto.",
         "TraitDescriptionDisease": "Un effetto con questo tratto applica una o più malattie. Una malattia è in genere un'Afflizione.",
-        "TraitDescriptionDivination": "Gli effetti magici con questo tratto sono associati alla scuola di magia di Divinazione che in genere comporta l'ottenimento o il trasferimento di informazioni o la predizione di eventi.",
         "TraitDescriptionDivine": "Questa magia proviene dalla tradizione divina e attinge potere da divinità o fonti simili. Qualsiasi cosa con questo tratto è magica.",
         "TraitDescriptionDowntime": "Un'attività con questo tratto richiede un giorno o più e può essere utilizzata solo durante i tempi di inattività.",
         "TraitDescriptionDrug": "Un oggetto con questa caratteristica è un farmaco, un veleno che trasmette benefici a breve termine oltre a effetti collaterali dannosi e conseguenze a lungo termine. Ogni volta che una creatura usa una data droga deve anche tentare un tiro salvezza contro la dipendenza da quella droga.",
@@ -4953,11 +4569,8 @@
         "TraitDescriptionElectricity": "Gli effetti con questo tratto infiggono danni da elettricità. Una creatura con questo tratto ha una connessione magica con l'elettricità.",
         "TraitDescriptionElf": "Una creatura con questo tratto è un membro della stirpe elfica. Gli elfi sono un popolo misterioso con ricche tradizioni legate a magia ed erudizione in genere hanno Visione Crepuscolare. Una capacità con questo tratto può essere usata o selezionata solo dagli elfi. Un'arma con questo tratto viene creata e utilizzata dagli elfi.",
         "TraitDescriptionEmotion": "Questo effetto altera le emozioni di una creatura. Gli effetti con questo tratto hanno sempre anche il Tratto Mentale. Le creature con addestramento speciale o con intelligenza meccanica o artificiale sono immuni agli effetti di emozione.",
-        "TraitDescriptionEnchantment": "Gli effetti e gli oggetti magici con questo tratto sono associati alla scuola di magia di Ammaliamento, che in genere implica controllo mentale, alterazione delle emozioni e altri effetti mentali.",
         "TraitDrug": "Droga",
         "TraitDescriptionEnvironment": "Un pericolo con questo tratto è qualcosa di pericoloso che fa parte del mondo naturale, come sabbie mobili o muffe dannose.",
-        "TraitDescriptionEvil": "Gli effetti di male spesso manipolano l'energia proveniente da Piani Esterni di allineamento malvagio e sono antitetici ai servitori divini buoni o ai servitori divini di divinità buone. Una creatura con questo tratto è di allineamento malvagio.",
-        "TraitDescriptionEvocation": "Gli effetti e gli oggetti magici con questo tratto sono associati alla scuola di magia di invocazione, che generalmente coinvolge energie e forze elementali.",
         "TraitDescriptionExploration": "Un'attività con questo tratto richiede più di un turno per essere usata e di solito può essere utilizzata solo durante la Modalità Esplorazione.",
         "TraitDescriptionExtradimensional": "Questo effetto o oggetto crea uno spazio extradimensionale. Un effetto extradimensionale posto all'interno di un altro spazio extradimensionale cessa di funzionare fino a quando non viene rimosso.",
         "TraitDescriptionFatal": "Il tratto fatale include il valore di un dado. Con un colpo critico, il dado di danno dell'arma è incrementato a quel valore di dado al posto del normale valore; inoltre l'arma aggiunge un dado di danno aggiuntivo del valore riportato.",
@@ -4985,11 +4598,8 @@
         "TraitDescriptionGoblin": "Una creatura con questo tratto può provenire da varie specie di creature, tra cui goblin, hobgoblin e bugbear. I goblin tendono ad avere Scurovisione. Una capacità con questo tratto può essere usata o selezionata solo dai goblin. Un'arma con questo tratto viene creata e utilizzata dai goblin.",
         "TraitDescriptionKobold": "Una creatura con questo tratto è un membro della stirpe Coboldo.",
         "TraitDuergar": "Duergar",
-        "TraitDescriptionGood": "Gli effetti da bene spesso manipolano l'energia proveniente da Piani Esterni di allineamento buono e sono antitetici ai servi divini malvagi o ai servi divini delle divinità malvagie. Una creatura con questo tratto ha allineamento buono.",
         "TraitDescriptionGrapple": "Puoi usare quest'arma per Lottare usando l'abilità Atletica anche se non hai una mano libera. Questo tratto usa la portata dell'arma (se diversa dalla tua) e aggiunge il bonus di oggetto dell'arma ai Tiri per Colpire come bonus di oggetto alle prove di Atletica. Se realizzi un fallimento critico ad una prova di Lottare usando l'arma, puoi lasciar andare l'arma per ottenere gli effetti di un fallimento anziché quelli di un fallimento critico.",
         "TraitDescriptionGrippli": "I grippli sono una famiglia di creature umanoidi simili a una rana",
-        "TraitDescriptionHalfElf": "Una creatura con questo tratto è in parte umano e in parte Elfo. Una capacità con questo tratto può essere usata o selezionata solo dai Mezzelfi.",
-        "TraitDescriptionHalfOrc": "Una creatura con questo tratto è in parte umano e in parte Orco. Una capacità con questo tratto può essere usata o selezionata solo dai Mezzorchi.",
         "TraitDescriptionHalfling": "Una creature con questo tratto è un membro della stirpe Halfling. Questo piccolo popolo è composto da vagabondi amichevoli che vengono considerati fortunati. Una capacità con questo tratto può essere usata o selezionata solo dagli Halfling. Un'arma con questo tratto viene creata e utilizzata dagli Halfling.",
         "TraitDescriptionHaunt": "Un pericolo con questo tratto è un'eco spirituale, spesso di qualcuno che ha subito una morte tragica. Mettere a riposo un'infestazione spesso comporta la risoluzione delle questioni incompiute dell'infestazione. Un'infestazione che non è stata correttamente messa a riposo ritorna sempre dopo un po' di tempo.",
         "TraitDescriptionHealing": "Un effetto di guarigione ripristina il corpo di una creatura, in genere restituendole Punti Ferita, ma a volte rimuovendo malattie o altri effetti debilitanti.",
@@ -5000,7 +4610,6 @@
         "TraitDescriptionIllusion": "Gli effetti magici con questo tratto sono associati alla scuola di magia di Illusione, che in genere comporta falsi stimoli sensoriali.",
         "TraitDescriptionIfrit": "Gli ifrit sono eredi planari che discendono dagli efreet.",
         "TraitDescriptionKitsune": "Umanoidi mutaforma il cui aspetto originario ricorda le volpi.",
-        "TraitDescriptionLawful": "Gli effetti legali spesso manipolano l'energia proveniente da Piani Esterni di allineamento legale e sono antitetici ai servitori divini caotici o ai servitori divini di divinità caotiche. Una creatura con questo tratto è di allineamento legale.",
         "TraitDuskwalker": "Viandante Crepuscolare",
         "TraitDescriptionIncapacitation": "Una capacità con questo tratto. Può eliminare completamente un personaggio dal combattimento o addirittura ucciderlo: ed è più difficile da usare su un personaggio più potente. Se un incantesimo ha il tratto incapacitazione, qualsiasi creatura con più del doppio del livello dell'incantesimo tratta il risultato della sua prova per evitare di essere incapacitato dall'incantesimo come un grado di successo migliore. O il risultato di qualsiasi prova fatta dall'incantatore per renderlo incapacitato come un grado di successo peggiore. Se qualsiasi altro effetto ha il tratto incapacitazione, una creatura di livello superiore rispetto all'oggetto, alla creatura o al pericolo che genera l'effetto ottiene gli stessi benefici.",
         "TraitDescriptionIncorporeal": "Una creatura o un oggetto incorporeo non possiede alcuna forma fisica. Può passare attraverso gli oggetti solidi, incluse le pareti. Quando si trova all'interno di un oggetto, una creatura incorporea non può percepire, attaccare o interagire con nulla che si trovi all’esterno dell'oggetto, e se inizia il suo turno in un oggetto è rallentata 1. Le creature corporee possono passare attraverso una creatura incorporea, ma non possono terminare il loro movimento nel suo spazio. Una creatura incorporea non può tentare prove basate sulla Forza contro le creature o gli oggetti fisici (può farlo solo contro quelli incorporei) a meno che tali oggetti non possiedano la runa di proprietà tocco fantasma. Analogamente, una creatura corporea non può tentare prove basate sulla Forza contro creature o oggetti incorporei. Le creature incorporee solitamente sono dotate di immunità agli effetti o alle condizioni che richiedono un corpo fisico, come le malattie, i veleni e i danni di precisione. Solitamente sono dotate di resistenza contro tutti i danni (tranne i danni da forza e i danni dei Colpi con la runa di proprietà tocco fantasma) e doppia resistenza contro i danni non magici.",
@@ -5020,7 +4629,6 @@
         "TraitDescriptionManipulate": "Per usare un'azione con questo tratto devi maneggiare fisicamente un oggetto o fare gesti. Le creature senza appendici adeguate non possono eseguire azioni con questo tratto. Le azioni di maneggiare spesso innescano Reazioni.",
         "TraitDescriptionMechanical": "Un pericolo con questo tratto è un oggetto fisico costruito.",
         "TraitDescriptionMental": "Un effetto mentale può alterare la mente del bersaglio, Non ha alcun effetto su un oggetto o una creatura con il tratto Privo di Intelletto.",
-        "TraitDescriptionMetamagic": "Le azioni con il tratto metamagico, che di solito provengono da talenti metamagici, modificano le proprietà degli incantesimi. Devi usare un'azione metamagica direttamente prima di Lanciare l'Incantesimo che vuoi modificare. Se immediatamente dopo usi qualsiasi azione (incluse le azioni e le reazioni gratuite) a parte lanciare un incantesimo, perdi i benefici dell'azione metamagica. Qualsiasi effetto aggiuntivo dovuto a un'azione matemagica fa parte dell'effetto dell'incantesimo, non dell'azione metamagica stessa.",
         "TraitDescriptionMindless": "Una creatura con il tratto privo di intelletto ha attributi mentali che sono stati programmati o sono rudimentali. La maggior parte, se non tutti, dei modificatori delle loro capacità mentali è -5. Sono immuni a tutti gli effetti mentali.",
         "TraitDescriptionMisfortune": "Un effetto di sfortuna altera in maniera dannosa il modo in cui tiri i dadi. Non puoi mai avere più di un effetto sfortuna che altera un singolo tiro. Se si applicano più effetti di sfortuna, il GM decide qual è il peggiore e lo applica. Se un effetto di fortuna e sfortuna si applicano allo stesso tiro, i due si annullano a vicenda e si tira normalmente.",
         "TraitDescriptionModular": "L'arma ha diverse configurazioni che possono essere alternate usando un'azione Interagire. Solitamente, passare da una configurazione di un'arma modulare all'altra permette di infliggere un tipo di danno diverso (indicato nel tratto, come \"modulare C, P, o T\"), sebbene sia possibile che la descrizione di un'arma modulare elenchi configurazioni più complesse.",
@@ -5030,8 +4638,6 @@
         "TraitDescriptionMorph": "Gli effetti che alterano leggermente la forma di una creatura hanno il tratto morfosi. Tutti i colpi concessi specificamente da un effetto di morfosi sono magici. Puoi subire gli effetti di più incantesimi di morfosi contemporaneamente, ma se trasformi la stessa parte corporea più di una volta, il secondo effetto di morfosi tenta di contrastare il primo (allo stesso modo di due effetti di metamorfosi, come è dichiarato in quel tratto). I tuoi effetti di morfosi potrebbero anche terminare se subisci gli effetti di una metamorfosi e l'effetto di metamorfosi invalida o prende il posto del tuo effetto di morfosi. Il GM determina quali effetti di morfosi possono essere usati insieme e quali no.",
         "TraitDescriptionMove": "Un'azione con questo tratto comporta il passaggio da uno spazio all'altro.",
         "TraitDescriptionMulticlass": "Gli archetipi con il tratto multiclasse rappresentano un addestramento che attinge alle specialità di un'altra classe. Non puoi selezionare un talento di dedizione di un archetipo multiclasse se sei un membro della classe omonima.",
-        "TraitDescriptionNecromancy": "Gli effetti e gli oggetti magici con questo tratto sono associati alla scuola di magia di Necromanzia, che generalmente coinvolge forze della vita e della morte.",
-        "TraitDescriptionNegative": "Gli effetti con questo tratto curano le creature non morte con energia negativa, infliggono danni negativi alle creature viventi o manipolano l'energia negativa.",
         "TraitDescriptionNoisy": "Quest'armatura è rumorosa ed è probabile che allerti gli altri della tua presenza. La penalità alle prove dell'armatura si applica alle prove di Furtività anche se soddisfi il punteggio di Forza richiesto.",
         "TraitDescriptionNone": "Questo tratto non ha nessuna descrizione.",
         "TraitDescriptionNonlethal": "Gli attacchi di quest'arma sono Non Letali e sono usati per far cadere le vittime Prive di Sensi anziché ucciderle. Puoi usare un'arma non letale per effettuare un attacco letale con penalità di circostanza -2.",
@@ -5047,7 +4653,6 @@
         "TraitDescriptionPlant": "Le creature vegetali hanno il tratto vegetale e si distinguono dalle piante normali. Gli effetti magici con questo tratto manipolano o evocano in qualche modo piante o materia vegetale. Quelli che manipolano le piante non hanno alcun effetto in un'area priva di piante.",
         "TraitDescriptionPoison": "Un effetto con questo tratto trasmette veleno o infligge danni da veleno. Un oggetto con questo tratto è velenoso e potrebbe causare un'afflizione.",
         "TraitDescriptionPolymorph": "Questi effetti trasformano il bersaglio, dandogli una nuova forma. Un bersaglio non può subire più di un effetto di metamorfosi alla volta. Se subisce un secondo effetto di metamorfosi, il secondo effetto di metamorfosi tenta di contrastare il primo. Se ha successo, l'incantesimo ha effetto; se fallisce, l'incantesimo non ha effetto su quel bersaglio. Tutti i colpi concessi specificamente da un effetto di metamorfosi sono magici. Salvo indicazione contraria, gli incantesimi di metamorfosi non consentono al bersaglio di assumere l'aspetto di una specifica creatura individuale, ma piuttosto solo di una creatura di stirpe generica o di tipo generico. Se assumi una forma da battaglia con un incantesimo di metamorfosi, le statistiche speciali possono essere modificate solo da bonus di circostanza, bonus di status e penalità. Salvo diversamente specificato, la forma da battaglia ti impedisce di lanciare incantesimi, parlare e usare la maggior parte delle azioni di maneggiare che richiedono mani (se c'è il dubbio se puoi usare un'azione, la decisione spetta al GM). Il tuo equipaggiamento viene assorbito in te; le capacità costanti del tuo equipaggiamento continuano a funzionare, ma non puoi attivare alcun oggetto.",
-        "TraitDescriptionPositive": "Gli effetti di questo tratto curano le creature viventi con energia positiva, infliggono danni da energia positiva ai non morti o manipolano l'energia positiva.",
         "TraitDescriptionPossession": "Gli effetti con questo tratto consentono a una creatura di proiettare mente e spirito in un bersaglio. Una creatura immune agli effetti mentali non può usare un effetto di possessione. Mentre possiede un bersaglio, il vero corpo di un possessore è privo di sensi (e non può svegliarsi normalmente), a meno che l'effetto di possessione non consenta alla creatura di entrare fisicamente nel bersaglio. Ogni volta che il bersaglio subisce danni, il possessore subisce metà di quella quantità di danni come danni mentali. Un possessore perde i benefici di qualsiasi suo incantesimo o capacità attivo che influenzi il suo corpo fisico, ma ottiene i benefici degli incantesimi e delle capacità attivi sul bersaglio che influenzano il corpo di quello. Un possessore può usare qualsiasi capacità del bersaglio che sia puramente fisica e non può usare nessuna delle sue capacità tranne gli incantesimi e le capacità puramente mentali. Il GM decide se una capacità è puramente fisica o puramente mentale. Un possessore usa il modificatore di attacco, la CA, il tiro salvezza su Tempra, il tiro salvezza su Riflessi, la Percezione e le capacità fisiche del bersaglio, e utilizza il proprio tiro salvezza su Volontà, le proprie capacità mentali, i propri Tiri per Colpire con incantesimo e le proprie CD di incantesimo; i benefici degli oggetti investiti si applicano ove pertinenti (gli oggetti investiti del possessore si applicano quando si utilizzano i valori del possessore e gli oggetti investiti del bersaglio si applicano quando si utilizzano i valori del bersaglio). Un possessore non ottiene alcun beneficio dal lancio di incantesimi che normalmente colpiscono solo l'incantatore, poiché non si trova nel suo corpo. Il possessore deve usare le proprie azioni per far agire la creatura posseduta. Se un possessore raggiunge 0 Punti Ferita attraverso qualsiasi combinazione di danno al suo vero corpo e danno mentale dalla possessione, diventa fuori combattimento come di norma e la possessione termina immediatamente. Se il bersaglio raggiunge prima 0 Punti Ferita, il possessore può cadere privo di sensi e continuare la possessione oppure può porre fine all'effetto come azione gratuita e tornare al suo corpo. Se il bersaglio muore, la possessione termina immediatamente e il possessore rimane stordito per 1 minuto.",
         "TraitDescriptionPrecious": "I materiali pregiati con proprietà speciali hanno il tratto prezioso. Possono sostituire i materiali di base quando Fabbrichi oggetti.",
         "TraitDescriptionPrediction": "Gli effetti con questo tratto determinano cosa è probabile che accada nel prossimo futuro. La maggior parte delle predizioni sono divinazioni.",
@@ -5097,11 +4702,8 @@
         "TraitDinosaur": "Dinosauro",
         "TraitDisarm": "Disarmare",
         "TraitDisease": "Malattia",
-        "TraitDivination": "Divinazione",
         "TraitDescriptionTethered": "Quest'arma è attaccata a un pezzo di corda o catena che ti consente di recuperarla dopo che ha lasciato la tua mano. Se hai una mano libera mentre impugna quest'arma, puoi usare un'azione Interagisci per riportare l'arma nella tua presa dopo averla lanciata come attacco a distanza o dopo che è stata disarmata (a meno che non sia tenuta da un'altra creatura).",
         "TraitDescriptionThrown": "Puoi lanciare quest'arma come un attacco a distanza ed è un'arma a distanza una volta lanciata. Un'arma da lancio aggiunge il tuo modificatore di Forza al danno esattamente come un'arma da mischia. Quando questo tratto si presenta per un'arma da mischia, include anche l'incremento di gittata. Le armi a distanza con questo tratto usano l'incremento di gittata specificato alla voce Gittata dell'arma stessa.",
-        "TraitDescriptionTiefling": "Una creatura con questo tratto è membro della stirpe Tiefling.",
-        "TraitDescriptionTransmutation": "Gli effetti e gli oggetti magici con questo tratto sono associati alla scuola di magia di Trasmutazione, che in genere modifica la forma di qualcosa.",
         "TraitDescriptionTrap": "Un pericolo o un oggetto con questo tratto è costruito per ostacolare gli intrusi.",
         "TraitDescriptionTrip": "Puoi usare quest'arma per Sbilanciare con l'abilità Atletica anche se non hai una mano libera. Questo tratto usa la portata dell'arma (se diversa dalla tua) e aggiunge il bonus di oggetto dell'arma ai Tiri per Colpire come bonus di oggetto alle prove di Atletica. Se realizzi un fallimento critico ad una prova di Sbilanciare usandola puoi lasciar andare l'arma per ottenere gli effetti di un fallimento anziché quelli di un fallimento critico.",
         "TraitDescriptionTwin": "Queste armi sono usate come una coppia, completandosi a vicenda. Quando attacchi con un'arma con gemella, aggiungi bonus di circostanza al tiro per i danni pari al numero di dadi di danno dell'arma se hai già attaccato con una diversa arma dello stesso tipo in questo turno. Le armi devono essere dello stesso tipo per ottenere i benefici di questo tratto, ma non è necessario che abbiano le stesse rune.",
@@ -5135,12 +4737,9 @@
         "TraitElf": "Elfo",
         "TraitElixir": "Elisir",
         "TraitEmotion": "Emozione",
-        "TraitEnchantment": "Ammaliamento",
         "TraitEnergy": "Energia",
         "TraitEnvironmental": "Ambientale",
         "TraitEthereal": "Eterea",
-        "TraitEvil": "Male",
-        "TraitEvocation": "Invocazione",
         "TraitExploration": "Esplorazione",
         "TraitExtradimensional": "Extradimensionale",
         "TraitFatalD10": "Fatale d10",
@@ -5174,14 +4773,11 @@
         "TraitGnome": "Gnomo",
         "TraitGoblin": "Goblin",
         "TraitGolem": "Golem",
-        "TraitGood": "Bene",
         "TraitGrapple": "Lottare",
         "TraitGremlin": "Gremlin",
         "TraitGrippli": "Grippli",
         "TraitHag": "Megera",
         "TraitHalcyon": "Halcyon",
-        "TraitHalfElf": "Mezzelfo",
-        "TraitHalfOrc": "Mezzorco",
         "TraitHalfling": "Halfling",
         "TraitHampering": "Intralciante",
         "TraitHaunt": "infestazione",
@@ -5209,7 +4805,6 @@
         "TraitJoustingD6": "Giostra d6",
         "TraitKitsune": "Kitsune",
         "TraitKobold": "Coboldo",
-        "TraitLawful": "Legale",
         "TraitLeshy": "Leshy",
         "TraitLight": "Luce",
         "TraitLineage": "Retaggio",
@@ -5222,7 +4817,6 @@
         "TraitMechanical": "Meccanico",
         "TraitMental": "Mentale",
         "TraitMerfolk": "Tritone",
-        "TraitMetamagic": "Metamagico",
         "TraitMindless": "Privo di Intelletto",
         "TraitMinion": "Servitore",
         "TraitMisfortune": "Sfortuna",
@@ -5236,8 +4830,6 @@
         "TraitMummy": "Mummia",
         "TraitMutagen": "Mutageni",
         "TraitMutant": "Mutante",
-        "TraitNecromancy": "Necromanzia",
-        "TraitNegative": "Negativo",
         "TraitNoisy": "Rumoroso",
         "TraitNonlethal": "Non Letale",
         "TraitNymph": "Ninfa",
@@ -5258,7 +4850,6 @@
         "TraitPlant": "Vegetale",
         "TraitPoison": "Veleno",
         "TraitPolymorph": "Metamorfosi",
-        "TraitPositive": "Positivo",
         "TraitPossession": "Possessione",
         "TraitPotion": "Pozione",
         "TraitPrecious": "Prezioso",
@@ -5400,9 +4991,7 @@
         "TraitThrown40": "Lancio 12m",
         "TraitThrown60": "Lancio 18m",
         "TraitThrown100": "Lancio 30m",
-        "TraitTiefling": "Tiefling",
         "TraitTime": "Tempo",
-        "TraitTransmutation": "Trasmutazione",
         "TraitTrap": "Trappola",
         "TraitTrip": "Sbilanciare",
         "TraitTroll": "Troll",
@@ -5422,9 +5011,7 @@
         "TraitVelstrac": "velstrac",
         "TraitVersatileB": "Versatile C",
         "TraitVersatileFire": "Versatile Fuoco",
-        "TraitVersatileHeritage": "Lignaggio Versatile",
         "TraitVersatileP": "Versatile P",
-        "TraitVersatilePositive": "Versatile Positiva",
         "TraitVersatileS": "Versatile T",
         "TraitVigilante": "Vigilante",
         "TraitVirulent": "Virulento",
@@ -5536,7 +5123,6 @@
                 "shieldActive": "e il loro {shield} ottiene ",
                 "shieldInActive": "ottiene"
             },
-            "errorTargetToken": "Seleziona almeno un token valido.",
             "noDamageInfoForOutcome": "Nessuna informazione sui danni per il risultato {outcome}.",
             "shiftModifyDamageLabel": "Aggiusta Danno/Cure",
             "shiftModifyDamageTitle": "Aggiusta i danni/cure ottenuti",
@@ -5560,10 +5146,6 @@
                 },
                 "GrantItem": {
                     "AlreadyHasItem": "{actor} ha già {item}, quindi non è stato aggiunto nuovamente."
-                },
-                "MarkTarget": {
-                    "TargetToken": "Bersaglia un token premendo T passando il mouse sopra di esso. Premi Esc per annullare.",
-                    "Timeout": "Creazione dell'effetto annullata per mancanza di bersaglio."
                 }
             }
         },
@@ -5768,7 +5350,6 @@
         "WeaponRange70": "21m",
         "WeaponRange80": "24m",
         "WeaponRange90": "27m",
-        "WeaponRangeLabel": "Gittata dell'Arma",
         "WeaponRangeMelee": "Mischia",
         "WeaponRangeN": "{range}m",
         "WeaponRangeReach": "Portata",
@@ -5777,13 +5358,11 @@
         "WeaponSplashDamageLabel": "Danno a Spargimento",
         "WeaponStrikeLabel": "Colpire",
         "WeaponTypeAdvanced": "Arma Avanzata",
-        "WeaponTypeLabel": "Categoria",
         "WeaponTypeMartial": "Armi Marziali",
         "WeaponTypeSimple": "Armi Semplici",
         "WeaponTypeSpecial": "Altre Armi",
         "WeaponTypeUnarmed": "Attacco Senz'Armi",
         "Weight": "Peso",
-        "WeightTitle": "Il tuo peso",
         "WorldClock": {
             "Button": {
                 "AddOneRound": "1 Round",
@@ -6142,7 +5721,6 @@
             "SubstituteRoll": "Sostituisci Tiro",
             "TokenName": "Nome Token",
             "RollTwice": "Tira Due Volte",
-            "MarkToken": "Contrassegna Token",
             "EphemeralEffect": "Effetto Effimero",
             "ItemAlteration": "Alterazione Oggetto"
         },
@@ -6505,7 +6083,6 @@
                 "Feat": "Seleziona un talento.",
                 "Material": "Seleziona un materiale.",
                 "Shillelagh": "Seleziona un randello o bastone ferrato.",
-                "WildShape": "Seleziona l'effetto di una forma.",
                 "ClassDCAbilityScore": "Seleziona il punteggio di caratteristica della CD di classe.",
                 "DragonBreathWeapon": "Seleziona un soffio di un drago.",
                 "WeaponOrUnarmed": "Seleziona un'arma o un colpo senz'armi.",
@@ -6676,16 +6253,6 @@
                 "Dance": "Danza",
                 "Comedy": "Commedia"
             },
-            "WildMorph": {
-                "Prompt": "Seleziona una morfosi.",
-                "WildJaws": "Fauci Feroci",
-                "LongVines": "Lunghi Rampicanti",
-                "ElementalMatter": "Materia Elementale",
-                "Wings": "Ali",
-                "WildClaws": "Artigli Feroci",
-                "PromptTwo": "Seleziona una seconda morfosi.",
-                "PromptThree": "Seleziona una terza morfosi."
-            },
             "Witch": {
                 "Patron": {
                     "Prompt": "Seleziona un patrono."
@@ -6697,9 +6264,6 @@
                 },
                 "ArcaneThesis": {
                     "Prompt": "Seleziona una tesi arcana."
-                },
-                "Metamagic1": {
-                    "Prompt": "Seleziona un talento metamagico da mago di 1° livello."
                 }
             },
             "Dwarf": {
@@ -7007,9 +6571,6 @@
                 "DeceiveMark": "Per usare Inganno per Fintare il tuo Bersaglio"
             },
             "Monk": {
-                "SacredKi": {
-                    "Prompt": "Seleziona il tuo danno di allineamento."
-                },
                 "OneInchPunch": {
                     "ThreeActionLabel": "Pugno al Centimetro (Tre Azioni)",
                     "TwoActionLabel": "Pugno al Centimetro (Due Azioni)"
@@ -7266,10 +6827,8 @@
         "AreaSize65": "19,5 metri",
         "BrowserWarnPackNotLoaded": "Non è stato possibile caricare il compendio \"{pack}\".",
         "DeleteSpellcastEntryTitle": "Elimina Voce Lancio Incantesimi",
-        "LanguageMinkaian": "Minkaian",
         "TraitJousting": "Giostra",
         "TraitDescriptionFinite": "I piani con questo tratto consistono in un ammontare limitato di spazio.",
-        "LanguageAdlet": "Adlet",
         "Repost": "Ricopia in chat",
         "ResistancesExceptionLabel": "Eccetto:",
         "ResistancesExceptionPlaceholder": "ad esempio, tranne l'argento",
@@ -7303,25 +6862,13 @@
         "TraitVanara": "Vanara",
         "TraitVersatile": "Versatile",
         "TraitVersatileAcid": "Versatile Acido",
-        "TraitVersatileChaotic": "Versatile Caotico",
         "TraitWayang": "Wayang",
         "TraitWyrwood": "Wyrwood",
         "TraitDescriptionClockwork": "I meccani sono costrutti intricati e complessi che possono essere programmati per eseguire particolari funzioni. Una creatura meccano deve essere ricaricata regolarmente per poter funzionare.",
         "TraitAttachedToAThrownWeapon": "Unito a un'Arma da Lancio",
         "TraitDescriptionConrasu": "Un popolo fatto di forza cosmica cosciente ospitato all'interno di esoscheletri unici. I conrasu forgiano e usano queste armi.",
         "TraitDiv": "Div",
-        "LanguageGirtablilu": "Girtablilu",
-        "LanguageGrioth": "Grioth",
         "TraitDescriptionMinion": "I servitori sono creature che servono direttamente un'altra creatura. Una creatura con questo tratto può usare solo 2 azioni per turno, non ha reazioni e non può agire quando non è il tuo turno. Il tuo servitore agisce nel tuo turno in combattimento, una volta per turno, quando spendi un'azione per impartirgli dei comandi. Per un compagno animale usi Comandare un Animale; per un servitore che è effetto di un incantesimo o di un oggetto magico, come per esempio un servitore evocato, Mantieni un Incantesimo o Mantieni un'Attivazione; se non diversamente specificato, emetti un comando verbale come una singola azione con i tratti Uditivi e di Concentrazione. Se non viene dato alcun comando, i servitori non usano azioni se non per difendersi o per sfuggire a danni evidenti. Se lasciati incustoditi abbastanza a lungo, in genere 1 minuto, i servitori con il tratto Privo di Intelletto di solito non agiscono, gli Animali seguono il loro istinto e i servitori intelligenti agiscono come vogliono. Un servitore non può controllare altre creature.",
-        "LanguageKovintal": "Kovinto",
-        "LanguageMiGo": "Mi-Go",
-        "LanguageMunavri": "Munavri",
-        "LanguageSamsaran": "Samsaran",
-        "LanguageSasquatch": "Sasquatch",
-        "LanguageShae": "Shae",
-        "LanguageVanara": "Vanara",
-        "LanguageVishkanyan": "Vishkanyano",
-        "LanguageYithian": "Yithian",
         "MagicTraditionUseSpellLabel": "Usa Tradizione Incantesimo",
         "PreparationTypeItems": "Solo Oggetti",
         "TraitDescriptionVishkanya": "Questi umanoidi vagamente serpentiformi hanno sangue e saliva velenosi.",
@@ -7349,18 +6896,13 @@
         "TraitThrown200": "Lancio 60m",
         "TraitVersatileCold": "Versatile Freddo",
         "TraitVersatileElectricity": "Versatile Elettricità",
-        "TraitVersatileEvil": "Versatile Male",
         "TraitVersatileForce": "Versatile Forza",
-        "TraitVersatileGood": "Versatile Bene",
-        "TraitVersatileLawful": "Versatile Legale",
-        "TraitVersatileNegative": "Versatile Negativo",
         "TraitVersatileSonic": "Versatile Sonoro",
         "TraitVishkanya": "Vishkanya",
         "TraitVolley": "Parabola",
         "TraitTattooedOnTheBody": "Tatuaggio",
         "TraitWornOrOneHand": "Indossato o Tenuto con 1 Mano",
         "TraitEtchedOntoMedHeavyArmor": "Incisa su un'Armatura Media o Pesante",
-        "SpellNonCantripLabel": "Non-Trucchetto",
         "ToggleEffectUnidentified": "Alterna La Non Identificazione dell'Effetto",
         "TraitAesir": "Aesir",
         "TraitAffixedToMediumHeavyArmor": "Applicato a un'Armatura Media o Pesante",
@@ -7504,7 +7046,6 @@
             "LoadingComplete": "Caricamento completo",
             "LoadingPack": "Caricamento {pack}"
         },
-        "FeatDualClassHeader": "Talenti di Doppia Classe",
         "TraitWood": "Legno",
         "TraitAffixedToMeleeWeapon": "Applicato a un'Arma da Mischia",
         "TraitEtchedOntoABludgeoningWeapon": "Incisa su un'Arma Contundente",
@@ -7537,9 +7078,6 @@
     },
     "SIDEBAR": {
         "TabCombat": "Tracciatore Incontro"
-    },
-    "COMPENDIUM": {
-        "Migrate": "Migrazione Compendio"
     },
     "CONTROLS": {
         "AdjustSceneDarkness": "Aggiusta Oscurità Scena",
