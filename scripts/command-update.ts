@@ -257,6 +257,7 @@ const itemTypes = [
   "spellcastingEntry",
   "treasure",
   "weapon",
+  "campaignFeature"
 ];
 const ignoredItemTypes = [
   "ancestry",
