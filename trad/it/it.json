@@ -41,7 +41,7 @@
                     "Grab": "<p><strong>Requisiti</strong> L'ultima azione del mostro è stata un Colpo andato a segno con la capacità Afferrare nella sua voce di danno, oppure il mostro ha una creatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuta} usando questa azione.</p><hr /><p><strong>Effetto</strong> Se usata dopo un Colpo, il mostro tenta di @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Lottare} con la creatura usado la parte del corpo con la quale ha attaccato. Questa prova non applica e non conta ai fini della penalità da attacchi multipli.</p><p>Il mostro può invece usare Afferrare e scegliere una creatura che sta afferrando o trattenendo con un'appendice con la capacità Afferrare per estendere automaticamete la condizione fino alla fine del turno successivo del mostro.</p>",
                     "Knockdown": "<p><strong>Requisiti</strong> L'ultima azione del mostro è stata un successo con un Colpo che contiene la capacità Gettare a Terra alla sua voce dei danni.</p><hr /><p><strong>Effetto</strong> Il mostro tenta di @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Sbilanciare} la creatura. Questa prova non applica e non conta ai fini della penalità da attacchi multipli del mostro.</p>",
                     "PowerAttack": "<p><strong>Frequenza</strong> una volta per round</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro effettua un Colpo in mischia. Questo conta come due attacchi per il calcolo della penalità da attacchi multipli. Se il Colpo va a segno, il mostro infligge un dado di danno aggiuntivo dell'arma.</p>",
-                    "Push": "<p><strong>Requisiti</strong> L'ultima azione del mostro è stata un successo con un Colpo che contiene Spintonare nella sua voce dei danni.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro allontana automaticamente il bersaglio da sé. Tranne dove specificato diversamente nella descrizione della capacità, la creatura è spinta di 1,5 metri. Se l'attacco era un colpo critico, questa distanza viene raddoppiata.</p>",
+                    "Push": "<p><strong>Requisiti</strong> L'ultima azione del mostro è stata un successo con un Colpo che contiene Spintonare nella sua voce dei danni.</p><hr /><p><strong>Effetto</strong> Il mostro prova a @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Spingere} la creatura. Questa prova non applica e non conta al fine di determinare la penalità da attacchi multipli del mostro. Se Spintonare specifica una distanza, cambia la distanza alla quale la creatura è spinta a quella distanza.</p>",
                     "Rend": "<p>Una voce Squartare indica un Colpo posseduto dal mostro.</p>\n<p><strong>Requisiti</strong> Il mostro colpisce lo stesso nemico con due Colpi consecutivi del tipo indicato nello stesso round.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro infligge automaticamente i danni di quel Colpo al nemico una seconda volta.</p>",
                     "RetributiveStrike": "<p><strong>Innesco</strong> Un nemico danneggia un alleato del mostro ed entrambi si trovano entro 4,5 metri dal mostro.</p>\n<hr />\n<p><strong>Effetto</strong> L'alleato ottiene resistenza a tutti i danni contro i danni innescanti pari a 2 + il livello del mostro. Se l’avversario si trova entro portata, il mostro effettua un Colpo in mischia contro di esso.</p>",
                     "ShieldBlock": "<p><strong>Innesco</strong> Il mostro ha lo scudo alzato e subisce danni da un attacco fisico.</p>\n<hr />\n<p><strong>Effetto</strong> Il mostro sposta lo scudo fulmineamente per deviare un colpo. Lo scudo previene un ammontare di danni che il mostro subirebbe pari fino alla propria Durezza. I danni rimanenti vengono subiti sia dal mostro che dallo scudo e potrebbero rompere o distruggere lo scudo.</p>",
@@ -849,11 +849,11 @@
                     "Hint": "Le configurazioni di fiancheggiamento e delle abilità che dipendono da esse sono gestite dal sistema."
                 },
                 "ActorsDeadAtZero": {
-                    "Name": "PNG Morti a 0 PF",
-                    "Hint": "Appena raggiungono zero Punti Ferita, i PNG sono segnati come morti.",
+                    "Name": "Attori Morti a 0 PF",
+                    "Hint": "Appena raggiungono zero Punti Ferita, gli attori sono segnati come morti. Per i PG, questo si applica soltanto al danno che li ucciderebbe all'instante.",
                     "Neither": "No",
-                    "NPCsOnly": "Sì",
-                    "Both": "PG e PNG"
+                    "NPCsOnly": "Solo i PNG",
+                    "Both": "Sì"
                 },
                 "LootableNPCs": {
                     "Name": "PNG Depredabili",
@@ -1044,7 +1044,7 @@
                 },
                 "SpellTraits": {
                     "Name": "Tratti Incantesimi",
-                    "Hint": " Tratti che possono essere applicati a qualsiasi incantesimo (es. Guarigione)"
+                    "Hint": "Tratti che possono essere applicati a qualsiasi incantesimo (es. Infausto, Guarigione)"
                 },
                 "WeaponCategories": {
                     "Name": "Categorie Armi",
@@ -1089,27 +1089,27 @@
                 "Label": "Attiva/Disattiva Regole Alternative",
                 "Hint": "Attiva e configura le regole alternative come Competenze Senza Livello o il sistema Tenacia.",
                 "Stamina": {
-                    "Name": "Regola Alternativa Tenacia",
-                    "Hint": "Gioca con la regola alternativa tenacia dal manuale Guida del Game Master pag. 200"
+                    "Name": "Tenacia",
+                    "Hint": "Gioca con la regola alternativa tenacia dal manuale Guida del Game Master pag. 200."
                 },
                 "FreeArchetype": {
-                    "Name": "Regola Alternativa Archetipo Gratuito",
+                    "Name": "Archetipo Gratuito",
                     "Hint": "Fornisci gli slot dei talenti per la regola alternativa archetipo gratuito dalla Guida del Game Master pag. 198"
                 },
                 "AutomaticBonus": {
-                    "Name": "Regola Alternativa Progressione Automatica dei Bonus",
-                    "Hint": "Reload Richiesto: Supporto per la regola alternativa Progressione Automatica dei Bonus, eccetto abilità/apex.",
+                    "Name": "Progressione Automatica dei Bonus",
+                    "Hint": "Abilita il supporto per la regola alternativa Progressione Automatica dei Bonus. Il potenziamento delle abilità deve essere gestito manualmente, al momento.",
                     "Choices": {
                         "noABP": "Non usare PAB",
                         "ABPFundamentalPotency": "PAB: Permetti le Rune di Proprietà",
-                        "ABPRulesAsWritten": "PAB: Non permettere le Rune di Proprietà "
+                        "ABPRulesAsWritten": "PAB: Non permettere le Rune di Proprietà"
                     }
                 },
                 "Proficiency": {
-                    "Name": "Regole Alternative Competenza senza Livello",
+                    "Name": "Competenza senza Livello",
                     "Hint": "Gioca con la regola alternativa competenza senza livello dal manuale Guida del Game Master pag. 194."
                 },
-                "Title": "Impostazioni Regole Alternative"
+                "Title": "Regole Alternative"
             },
             "TOTMToggles": {
                 "Name": "Interruttori Teatro della Mente",
@@ -1334,7 +1334,7 @@
                 "Name": "Fulgida Superiore",
                 "Note": {
                     "criticalSuccess": "Danni inflitti dall’arma ignorano la resistenza al fuoco, al bene o al positivo del bersaglio. Con un colpo critico, il bersaglio deve superare un tiro salvezza su @Check[type:fortitude|dc:41|name:Greater Brilliant Rune] o essere @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecato} per 1 round.",
-                    "success": "<strong>Runa Fulgida Superiore</strong> I danni inflitti dall’arma ignorano la resistenza al fuoco, al bene o al positivo del bersaglio."
+                    "success": "I danni inflitti dall’arma ignorano la resistenza al fuoco, al bene o al positivo del bersaglio."
                 }
             },
             "greaterExtending": {
@@ -4249,7 +4249,7 @@
         "SpellArea": "Area: {area}",
         "SpellAttackWithTradition": "Attacco di Incantesimo {tradition}",
         "SpellAttackLabel": "Attacco Incant.",
-        "SpellBrowserSearchHint": "Puoi cercare per nome o attributo personalizzato. I possibili attributi personalizzati sono:<br> provenienza, Tipo incantesimo, livello, scuola, componenti, materiali, bersaglio, raggio, tempo, durata, danno, Tipo di danno, tiro, concentrazione, rituale, abilità e classi. <br>Esempio: 'fuoco, danno:d6' per vedere tutti gli incantesimi che hanno fuoco nel loro nome e un d6 nel danno",
+        "SpellBrowserSearchHint": "Puoi cercare per nome o attributo personalizzato. I possibili attributi personalizzati sono:<br> provenienza, Tipo incantesimo, livello, materiali, bersaglio, raggio, tempo, durata, danno, Tipo di danno, tiro, concentrazione, rituale, abilità e classi. <br>Esempio: 'fuoco, danno:d6' per vedere tutti gli incantesimi che hanno fuoco nel loro nome e un d6 nel danno",
         "SpellCastingFormat": "Incantesimo {traditionSpells} {preparationType}",
         "SpellSlotEmpty": "Vuoto (trascina incantesimo)",
         "SpellSlotNotEnoughError": "Non puoi lanciare {name} a livello {level}: non hai abbastanza slot",
@@ -4260,7 +4260,7 @@
         "SpellFlexibleAvailable": "Flessibile: {value} / {max}",
         "SpellCollectionAdd": "Aggiungi l'Incantesimo alla Collezione",
         "SpellCollectionRemove": "Rimuovi l'Incantesimo dalla Collezione",
-        "SpellLevelLabel": "Livello Incantesimo",
+        "SpellLevelLabel": "Grado Incantesimo",
         "SpellLevelBase": "Base: {level}",
         "SpellLevelHeightened": "Intensificato: +{heightened}",
         "SpellPreparedLabel": "Preparato",
@@ -4297,7 +4297,7 @@
         "StaminaPointsShortLabel": "Tenacia",
         "StatusBonusShortLabel": "Status",
         "StatusBonusTitle": "Bonus di status",
-        "StatusEffects": "Status effetti di {name}:",
+        "StatusEffects": "Condizioni di {name}",
         "StealthLabel": "Furtività",
         "StrikesLabel": "Colpo",
         "Strike": {
@@ -4360,7 +4360,7 @@
         "TogglesLabel": "On/Off",
         "ToggleSignatureSpellTitle": "Attiva/Disattiva Incantesimi Distintivi",
         "ToggleSpellVisibilityTitle": "Preparazione Incantesimo",
-        "ToggleSlotlessSpellLevelsTitle": "Attiva/disattiva la visibilità dei livelli degli incantesimi senza slot",
+        "ToggleSlotlessSpellLevelsTitle": "Attiva/disattiva la visibilità dei gradi degli incantesimi senza slot",
         "ToggleUnreadyStrikes": "Attaiva/Disattiva armi non equipaggiate",
         "ToggleWithName": "Attiva/Disattiva: {property}",
         "Token": {
@@ -4516,7 +4516,7 @@
         "TraitDescriptionConcealable": "Quest'arma è concepita per non essere appariscente o per essere occultata con facilità. Ottieni bonus di circostanza +2 alle prove di Furtività e alle CD per nascondere un'arma con questo tratto.",
         "TraitDescriptionConcentrate": "Un'azione con questo tratto richiede un certo grado di concentrazione e disciplina mentale.",
         "TraitDescriptionDhampir": "Una creatura con questo tratto è membro della stirpe dhampir. Questi umanoidi sono la progenie immortale dei vampiri e dei membri di altri retaggi.",
-        "TraitDescriptionConsecration": "Un incantesimo di consacrazione migliora un'area per un lungo periodo di tempo. Una determinata area può avere un solo effetto di consacrazione alla volta. Il nuovo effetto tenta di contrastare qualsiasi esistente in aree di sovrapposizione",
+        "TraitDescriptionConsecration": "Un incantesimo di consacrazione migliora un'area per un lungo periodo di tempo. Una determinata area può avere un solo effetto di consacrazione alla volta. Il nuovo effetto tenta di contrastare qualsiasi esistente in aree di sovrapposizione.",
         "TraitDescriptionConsumable": "Un oggetto con questo tratto può essere usato una sola volta. Se non diversamente specificato, viene distrutto dopo l'attivazione. Gli oggetti monouso includono gli oggetti alchemici e quelli magici che si possono usare solo una volta, come pergamene e talismani. Quando un personaggio crea oggetti monouso, può crearli in partite da quattro.",
         "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dalla necromanzia. I costrutti sono spesso privi di intelletto; sono immuni alle malattie, alla condizione paralizzato e al veleno; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
         "TraitDescriptionContact": "Questo veleno viene rilasciato al contatto con la pelle.",
@@ -4548,7 +4548,7 @@
         "TraitDescriptionFetchling": "Una creatura con questo tratto è un membro della stirpe dei ghermiti. I ghermiti un tempo erano umani, ma dopo molte generazioni vissute sul Piano delle Ombre sono stati trasformati.",
         "TraitDescriptionFighter": "Questo tratto indica le capacità legate alla classe del guerriero.",
         "TraitDescriptionFinesse": "Puoi usare il tuo modificatore di Destrezza al posto del tuo modificatore di Forza per i Tiri per Colpire quando attacchi con quest'arma. Usi ancora il modificatore di Forza quando calcoli il danno.",
-        "TraitDescriptionFinisher": " Le mosse finali sono azioni spettacolari che utilizzano la tua spavalderia. Puoi usare una mossa finale solo se hai spavalderia, e perdi la spavalderia immediatamente dopo aver eseguito una mossa finale. Una volta che hai usato una mossa finale, non puoi usare azioni che hanno il tratto attacco per il resto del tuo turno. Alcune azioni con il tratto mossa finale concedono un effetto anche in caso di fallimento, ma tali effetti non si applicano in caso di fallimento critico. Se l'azione di mossa finale ha successo, puoi comunque scegliere di applicare al suo posto l'effetto di fallimento.",
+        "TraitDescriptionFinisher": "Le mosse finali sono azioni spettacolari che utilizzano la tua spavalderia. Puoi usare una mossa finale solo se hai spavalderia, e perdi la spavalderia immediatamente dopo aver eseguito una mossa finale. Una volta che hai usato una mossa finale, non puoi usare azioni che hanno il tratto attacco per il resto del tuo turno. Alcune azioni con il tratto mossa finale concedono un effetto anche in caso di fallimento, ma tali effetti non si applicano in caso di fallimento critico. Se l'azione di mossa finale ha successo, puoi comunque scegliere di applicare al suo posto l'effetto di fallimento.",
         "TraitDescriptionFire": "Gli effetti con il tratto fuoco infliggono danni da fuoco oppure evocano o manipolano il fuoco. Quelli che manipolano il fuoco non hanno effetto in un'area priva di fuoco. Le creature con questo tratto sono fatte principalmente di fuoco o hanno una connessione magica con quell'elemento.",
         "TraitDescriptionFleshwarp": "Un umanoide così completamente trasfigurato da forze esterne da essere ormai parte di una stirpa a sé stante.",
         "TraitDescriptionFlexible": "L'armatura è abbastanza flessibile da non ostacolare la maggior parte delle azioni. Non applichi la sua penalità alle prove per le prove di Acrobazia o Atletica.",
@@ -4577,11 +4577,11 @@
         "TraitDescriptionHobgolin": "Gli hobgoblin sono un popolo robusto ed intelligente con una propensione per l’ordine militaristico.",
         "TraitDescriptionHuman": "Una creatura con questo tratto è un membro della stirpe umana. Gli umani sono una vasta gamma di popoli conosciuti per il loro spirito di adattamento. Una capacità con questo tratto può essere usata o selezionata solo dagli umani.",
         "TraitDescriptionHumanoid": "Le creature umanoidi ragionano e si comportano in modo molto simile agli umani. In genere camminano eretti e hanno due braccia e due gambe.",
-        "TraitDescriptionIllusion": "Gli effetti magici con questo tratto sono associati alla scuola di magia di Illusione, che in genere comporta falsi stimoli sensoriali.",
+        "TraitDescriptionIllusion": "Gli effetti magici con questo tratto comportano falsi stimoli sensoriali.",
         "TraitDescriptionIfrit": "Gli ifrit sono eredi planari che discendono dagli efreet.",
         "TraitDescriptionKitsune": "Umanoidi mutaforma il cui aspetto originario ricorda le volpi.",
         "TraitDuskwalker": "Viandante Crepuscolare",
-        "TraitDescriptionIncapacitation": "Una capacità con questo tratto. Può eliminare completamente un personaggio dal combattimento o addirittura ucciderlo: ed è più difficile da usare su un personaggio più potente. Se un incantesimo ha il tratto incapacitazione, qualsiasi creatura con più del doppio del livello dell'incantesimo tratta il risultato della sua prova per evitare di essere incapacitato dall'incantesimo come un grado di successo migliore. O il risultato di qualsiasi prova fatta dall'incantatore per renderlo incapacitato come un grado di successo peggiore. Se qualsiasi altro effetto ha il tratto incapacitazione, una creatura di livello superiore rispetto all'oggetto, alla creatura o al pericolo che genera l'effetto ottiene gli stessi benefici.",
+        "TraitDescriptionIncapacitation": "Una capacità con questo tratto. Può eliminare completamente un personaggio dal combattimento o addirittura ucciderlo: ed è più difficile da usare su un personaggio più potente. Se un incantesimo ha il tratto incapacitazione, qualsiasi creatura con più del doppio del grado dell'incantesimo tratta il risultato della sua prova per evitare di essere incapacitato dall'incantesimo come un grado di successo migliore. O il risultato di qualsiasi prova fatta dall'incantatore per renderlo incapacitato come un grado di successo peggiore. Se qualsiasi altro effetto ha il tratto incapacitazione, una creatura di livello superiore rispetto all'oggetto, alla creatura o al pericolo che genera l'effetto ottiene gli stessi benefici.",
         "TraitDescriptionIncorporeal": "Una creatura o un oggetto incorporeo non possiede alcuna forma fisica. Può passare attraverso gli oggetti solidi, incluse le pareti. Quando si trova all'interno di un oggetto, una creatura incorporea non può percepire, attaccare o interagire con nulla che si trovi all’esterno dell'oggetto, e se inizia il suo turno in un oggetto è rallentata 1. Le creature corporee possono passare attraverso una creatura incorporea, ma non possono terminare il loro movimento nel suo spazio. Una creatura incorporea non può tentare prove basate sulla Forza contro le creature o gli oggetti fisici (può farlo solo contro quelli incorporei) a meno che tali oggetti non possiedano la runa di proprietà tocco fantasma. Analogamente, una creatura corporea non può tentare prove basate sulla Forza contro creature o oggetti incorporei. Le creature incorporee solitamente sono dotate di immunità agli effetti o alle condizioni che richiedono un corpo fisico, come le malattie, i veleni e i danni di precisione. Solitamente sono dotate di resistenza contro tutti i danni (tranne i danni da forza e i danni dei Colpi con la runa di proprietà tocco fantasma) e doppia resistenza contro i danni non magici.",
         "TraitDescriptionInfused": "Utilizzando i reagenti infusi hai creato un oggetto alchemico con il tratto infuso, che diventa inerte una volta trascorso un tempo limitato. Gli effetti non permanenti prodotti dai tuoi oggetti alchemici infusi, a eccezione di afflizioni quali i veleni ad azione lenta, terminano quando effettui nuovamente i Preparativi Giornalieri.",
         "TraitDescriptionIngested": "Questo veleno viene somministrato quando viene bevuto o mangiato.",
@@ -4595,7 +4595,7 @@
         "TraitDescriptionLinguistic": "Un effetto con questo tratto dipende dalla comprensione della lingua. Un effetto linguistico che prende come bersaglio una creatura funziona solo se il bersaglio comprende la lingua che stai usando.",
         "TraitDescriptionLitany": "Le litanie sono speciali incantesimi di devozione, tipicamente usati dai Campioni e che richiedono una singola azione, che di solito danno un'immunità temporanea a ulteriori litanie.",
         "TraitDescriptionLizardfolk": "I lucertoloidi sono una famiglia di rettili umanoidi.",
-        "TraitDescriptionMagical": "Qualcosa che abbia il tratto magico è intriso di energie magiche non legate a una specifica tradizione magica. Un oggetto magico irradia un'aura magica infusa della sua scuola di magia dominante. Alcuni oggetti o effetti sono strettamente legati a una particolare tradizione magica. In questi casi l'oggetto ha il tratto arcano, divino, occulto o primevo invece del tratto magico. Ognuno di questi tratti indica che l'oggetto è magico.",
+        "TraitDescriptionMagical": "Qualcosa che abbia il tratto magico è intriso di energie magiche non legate a una specifica tradizione magica. Alcuni oggetti o effetti sono strettamente legati a una particolare tradizione magica. In questi casi l'oggetto ha il tratto arcano, divino, occulto o primevo invece del tratto magico. Ognuno di questi tratti indica che l'oggetto è magico.",
         "TraitDescriptionManipulate": "Per usare un'azione con questo tratto devi maneggiare fisicamente un oggetto o fare gesti. Le creature senza appendici adeguate non possono eseguire azioni con questo tratto. Le azioni di maneggiare spesso innescano Reazioni.",
         "TraitDescriptionMechanical": "Un pericolo con questo tratto è un oggetto fisico costruito.",
         "TraitDescriptionMental": "Un effetto mentale può alterare la mente del bersaglio, Non ha alcun effetto su un oggetto o una creatura con il tratto Privo di Intelletto.",
@@ -4847,7 +4847,7 @@
         "TraitRange100": "Gittata 30 metri",
         "TraitRange120": "Gittata 36 metri",
         "TraitRange150": "Gittata 45 metri",
-        "TraitRange180": "Gittata 54m",
+        "TraitRange180": "Gittata 54 metri",
         "TraitRange200": "Gittata 60 metri",
         "TraitRange240": "Gittata 72 metri",
         "TraitRange300": "Gittata 90 metri",
@@ -4892,17 +4892,17 @@
         "TraitRare": "Raro",
         "TraitRatfolk": "Rattoide",
         "TraitReach": "Portata",
-        "TraitReach0": "Portata 0m",
-        "TraitReach10": "Portata 3m",
-        "TraitReach15": "Portata 4,5m",
-        "TraitReach20": "Portata 6m",
-        "TraitReach25": "Portata 7,5m",
-        "TraitReach30": "Portata 9m",
-        "TraitReach40": "Portata 12m",
-        "TraitReach50": "Portata 15m",
-        "TraitReach60": "Portata 18m",
-        "TraitReach100": "Portata 30m",
-        "TraitReach1000": "Portata 300m",
+        "TraitReach0": "Portata 0 metri",
+        "TraitReach10": "Portata 3 metri",
+        "TraitReach15": "Portata 4,5 metri",
+        "TraitReach20": "Portata 6 metri",
+        "TraitReach25": "Portata 7,5 metri",
+        "TraitReach30": "Portata 9 metri",
+        "TraitReach40": "Portata 12 metri",
+        "TraitReach50": "Portata 15 metri",
+        "TraitReach60": "Portata 18 metri",
+        "TraitReach100": "Portata 30 metri",
+        "TraitReach1000": "Portata 300 metri",
         "TraitReckless": "Spericolato",
         "TraitReload0": "Ricarica 0",
         "TraitReload1": "Ricarica 1",
@@ -5094,12 +5094,12 @@
                 "shieldInActive": "ottiene"
             },
             "noDamageInfoForOutcome": "Nessuna informazione sui danni per il risultato {outcome}.",
-            "shiftModifyDamageLabel": "Aggiusta Danno/Cure",
-            "shiftModifyDamageTitle": "Aggiusta i danni/cure ottenuti",
+            "shiftModifyDamageLabel": "Quantità",
+            "shiftModifyDamageTitle": "Aggiusta Danni",
             "RuleElements": {
                 "ChoiceSet": {
                     "Decline": "Declina",
-                    "DragHomebrewItem": "Trascina un oggetto homebrew qua se ne stai usando uno invece delle opzioni sopra",
+                    "DragHomebrewItem": "Trascina un oggetto homebrew qua se ne stai usando uno invece delle opzioni sopra.",
                     "HomebrewItem": "Oggetto Homebrew",
                     "Prompt": "Seleziona qualcosa.",
                     "SaveLabel": "Salva",
@@ -5729,7 +5729,7 @@
             },
             "Bones": {
                 "ModerateUpgrade": "Quando ottieni un successo in un tiro salvezza contro malattie, veleni ed effetti di morte lo consideri come un successo critico.",
-                "MajorUpgrade": " Quando ottieni un fallimento critico in un tiro salvezza contro malattie, veleni ed effetti di morte lo consideri come un fallimento."
+                "MajorUpgrade": "Quando ottieni un fallimento critico in un tiro salvezza contro malattie, veleni ed effetti di morte lo consideri come un fallimento."
             },
             "Label": {
                 "Minor": "Minore",
@@ -6499,7 +6499,7 @@
                     "Prompt": "Seleziona un arma in cui diventare addestrato."
                 },
                 "WitchWarden": {
-                    "SaveNote": " Se ottieni un successo su un tiro salvezza contro una maledizione o un incantesimo lanciato da un fattucchiere o da una megera, consideralo invece un successo critico."
+                    "SaveNote": "Se ottieni un successo su un tiro salvezza contro una maledizione o un incantesimo lanciato da un fattucchiere o da una megera, consideralo invece un successo critico."
                 }
             },
             "HuntPrey": {
@@ -6802,7 +6802,7 @@
         "SelectLabel": "Seleziona",
         "SpellcastingSettings": {
             "Title": "Impostazioni Lancio di Incantesimi",
-            "AutoHeightenLabel": "Intensifica Livello Automaticamente",
+            "AutoHeightenLabel": "Intensifica Grado Automaticamente",
             "AutoHeightenDefault": "Predefinito (Usa il Livello del Personaggio)"
         },
         "TraitAsura": "Asura",
@@ -6818,7 +6818,7 @@
         "TraitDescriptionSkeleton": "Questo non morto viene creato animando lo scheletro di una creatura morta tramite l'energia negativa. Una abilità con questo tratto può essere usata o selezionata solo dagli scheletri.",
         "TraitDescriptionSocial": "Le azioni e capacità con il tratto sociale possono essere usate solo quando un vigilante usa la sua identità sociale.",
         "TraitDescriptionSubjectiveGravity": "In piani con questo tratto, tutti i corpi di massa possono essere centri di gravità con la stessa forza, ma solo se una creatura non priva di intelletto lo vuole.",
-        "TraitDescriptionSummoned": "Una creatura richiamata da un incantesimo o un effetto ottiene il tratto evocato. Una creatura evocata non può evocare altre creature, creare oggetti di valore o lanciare incantesimi che richiedono un costo. Ha il tratto servitore. Se tenta di Lanciare un Incantesimo di livello uguale o superiore all'incantesimo che lo ha evocato, prevale sulla magia di evocazione, facendo fallire il proprio incantesimo e facendo terminare l'incantesimo di evocazione. Per il resto, la creatura evocata usa le capacità standard di una creatura del suo genere. In genere attacca i tuoi nemici al meglio delle sue capacita. Se riesci a comunicare con lei puoi provare a comandarla, ma il GM determina fino a che punto essa esegue i tuoi comandi. Non appena finisci di Lanciare l'Incantesimo, la creatura evocata usa le sue 2 azioni per quel turno. Uno progenie o un'altra creatura generata da una creatura evocata ritorna al suo stato inalterato (di solito un cadavere in caso di progenie) una volta che la creatura evocata se ne è andata. Se non è chiaro quale sarebbe questo stato, decide il GM. Le creature evocate possono essere esiliate da vari incantesimi ed effetti. Vengono automaticamente esiliate se ridotte a 0 Punti Ferita o se termina l'incantesimo che le ha evocate.",
+        "TraitDescriptionSummoned": "Una creatura richiamata da un incantesimo o un effetto ottiene il tratto evocato. Una creatura evocata non può evocare altre creature, creare oggetti di valore o lanciare incantesimi che richiedono un costo. Ha il tratto servitore. Se tenta di Lanciare un Incantesimo di grado uguale o superiore all'incantesimo che lo ha evocato, prevale sulla magia di evocazione, facendo fallire il proprio incantesimo e facendo terminare l'incantesimo di evocazione. Per il resto, la creatura evocata usa le capacità standard di una creatura del suo genere. In genere attacca i tuoi nemici al meglio delle sue capacita. Se riesci a comunicare con lei puoi provare a comandarla, ma il GM determina fino a che punto essa esegue i tuoi comandi. Non appena finisci di Lanciare l'Incantesimo, la creatura evocata usa le sue 2 azioni per quel turno. Uno progenie o un'altra creatura generata da una creatura evocata ritorna al suo stato inalterato (di solito un cadavere in caso di progenie) una volta che la creatura evocata se ne è andata. Se non è chiaro quale sarebbe questo stato, decide il GM. Le creature evocate possono essere esiliate da vari incantesimi ed effetti. Vengono automaticamente esiliate se ridotte a 0 Punti Ferita o se termina l'incantesimo che le ha evocate.",
         "TraitDescriptionVanara": "I vanara sono Umanoidi simili a scimmie con una comune predisposizione all'addestramento da monaco.",
         "TraitFatal": "Fatale",
         "TraitNagaji": "Nagaji",
@@ -6921,10 +6921,10 @@
         "TraitEtchedOntoASlashingMeleeWeapon": "Incisa su un'Arma da Mischia Tagliente",
         "TraitEtchedOntoAWeaponWOAxiomaticRune": "Incisa su un'Arma che Non Possiede una Runa Assiomatica",
         "TraitEtchedOntoAWeaponWOAnarchicRune": "Incisa su un'Arma che Non Possiede una Runa Anarchica",
-        "TraitEtchedOntoAWeaponWOHolyRune": "Incisa su un'Arma che Non Possiede una Runa Sacra",
+        "TraitEtchedOntoAWeaponWOHolyRune": "Incisa su un'Arma che non è Sacra",
         "TraitEtchedOntoLightArmor": "Incisa su un'Armatura Leggera",
         "TraitEtchedOntoAPiercingOrSlashingMeleeWeapon": "Incisa su un'Arma da Mischia Perforante o Tagliente",
-        "TraitEtchedOntoAWeaponWOUnholyRune": "Incisa su un'Arma che Non Possiede una Runa Sacrilega",
+        "TraitEtchedOntoAWeaponWOUnholyRune": "Incisa su un'Arma che non è Sacrilega",
         "Category": "Categoria",
         "Slug": "Slug",
         "UUID": {
@@ -7002,11 +7002,11 @@
             }
         },
         "RevertDamage": {
-            "HealingMessage": "La guarigione applicata a {actor} è stata annullata",
-            "DamageMessage": "Il danno applicato a {actor} è stato annullato",
+            "HealingMessage": "La guarigione applicata a {actor} è stata annullata.",
+            "DamageMessage": "Il danno applicato a {actor} è stato annullato.",
             "ButtonTooltip": "Annulla"
         },
-        "TraitReach200": "Portata 60m",
+        "TraitReach200": "Portata 60 metri",
         "BrowserSettingsSaved": "Le impostazioni sono state salvate",
         "MAPAbbreviationValueLabel": "{value} (PdAM {penalty})",
         "ProgressBar": {
@@ -7017,7 +7017,7 @@
         "TraitAffixedToMeleeWeapon": "Applicato a un'Arma da Mischia",
         "TraitEtchedOntoABludgeoningWeapon": "Incisa su un'Arma Contundente",
         "TraitEtchedOntoAPiercingOrSlashingWeapon": "Incisa su un'Arma Perforante o Tagliente",
-        "TraitReach120": "Portata 36m",
+        "TraitReach120": "Portata 36 metri",
         "ConditionTypeOffGuard": "Impreparato",
         "TraitAffixedToMediumHeavyMetalArmor": "Applicato a un'Armatura di Metallo Media o Pesante",
         "TraitEtchedOntoMediumHeavyMetalArmor": "Inciso su un'Armatura di Metallo Media o Pesante"
