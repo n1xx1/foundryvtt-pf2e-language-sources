@@ -218,8 +218,8 @@
             },
             "LongJump": {
                 "Notes": {
-                    "success": "<strong>Successo</strong> Incrementa dell'ammontare desiderato la distanza orizzontale massima del tuo @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salto}.",
-                    "failure": "<strong>Fallimento</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} normalmente.",
+                    "success": "<strong>Successo</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} di 1,5 metri per ogni 5 nel risultato della tua prova (con un risultato di 23 salti fino a 6 metri). Non puoi saltare più lontano della tua Velocità sul terreno.",
+                    "failure": "<strong>Fallimento</strong> Fai un normale @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salto} orizzontale.",
                     "criticalFailure": "<strong>Fallimento Critico</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} normalmente, ma poi cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}."
                 },
                 "Title": "Salto in Lungo"
@@ -237,7 +237,7 @@
                 "ShieldIsDestroyed": "Lo {shield} di {actor} è distrutto.",
                 "SingleActionTitle": "Alzare lo Scudo",
                 "ReactionTitle": "Reagire con lo Scudo",
-                "Content": "{actor} alza lo scudo.",
+                "Content": "{actor} alza il suo {shield}.",
                 "BadArgs": "Questa azione deve essere eseguita esattamente con un personaggio o PNG.",
                 "NoShieldEquipped": "{actor} deve avere uno scudo equipaggiato.",
                 "ShieldIsBroken": "Lo {shield} di {actor} rotto."
@@ -286,11 +286,11 @@
             "Sneak": {
                 "Notes": {
                     "success": "<strong>Successo</strong> Sei non individuato dalla creatura durante il tuo movimento e mantieni la stessa condizione alla fine di esso.",
-                    "failure": "<strong>Fallimento</strong> Un suono o un segno rivelatore rendono nota la tua posizione, ma rimani comunque inosservato. Sei nascosto dalla creatura per tutto il tuo movimento e mantieni tale condizione alla fine",
+                    "failure": "<strong>Fallimento</strong> Un suono o un segno rivelatore rendono nota la tua posizione, ma rimani comunque inosservato. Sei nascosto dalla creatura per tutto il tuo movimento e mantieni tale condizione alla fine.",
                     "criticalFailure": "<strong>Fallimento Critico</strong> Ti hanno individuato! Sei Osservato dalla creatura per tutto il tuo movimento, e mantieni tale condizione alla sua fine. Se sei Invisibile ed eri nascosto dalla creatura, anziché osservato sei nascosto per tutto il tuo movimento, e mantieni tale condizione alla sua fine."
                 },
                 "Title": "Muoversi Furtivamente",
-                "Description": "<p>Puoi tentare di muoverti verso un altro posto mentre diventi o rimani non individuato. Avanza fino a metà della tua Velocità. (Puoi usare Muoversi Furtivamente mentre Nuoti, Scali, Scavi o Voli anziché mentre Avanzi, se hai il corrispondente tipo di movimento ti muovi comunque fino a un massimo di metà di quella Velocità).</p><p>Se sei non individuato da una creatura ed è impossibile che tu divenga osservato da essa (nel caso di una creatura tipica, ciò può significare che tu sei invisibile, che essa è cieca o che tu sei nell'oscurità ed essa non può vedere nel buio) ogni fallimento critico che ottieni in una prova di Muoversi Furtivamente viene considerato invece un fallimento. Continui, inoltre, a essere non individuato se perdi copertura o copertura maggiore o non sei più occultato nei suoi confronti.</p><p>Alla fine del tuo movimento, il GM effettua la tua prova di Furtività in segreto e ne confronta il risultato con la CD di Percezione di ciascuna delle creature dalle quali eri nascosto o non individuato a inizio del tuo movimento. Se, mentre Avanzi, hai copertura o copertura maggiore da quella creatura ottieni bonus di circostanza +2 per la copertura (o +4 per la copertura maggiore) alla tua prova di Furtività. Poiché ti stai muovendo, l'incremento di bonus dovuto all'Andare in Copertura non si applica. Non devi effettuare una prova contro una creatura se, alla fine del tuo movimento, non sei occultato da essa né hai copertura o copertura maggiore nei suoi confronti: diventi automaticamente osservato da essa.</p><p><strong>Successo</strong> Sei non individuato dalla creatura durante il tuo movimento e mantieni la stessa condizione alla fine di esso.<br>Diventi osservato appena compi un'azione che non sia Nascondersi, Muoversi Furtivamente o Passo. Se cerchi di Colpire una creatura, essa è impreparata contro quell'attacco e poi diventi osservato. Se fai qualsiasi altra cosa diventi osservato appena prima di agire, a meno che il GM non decida diversamente. Il GM potrebbe permetterti di compiere un'azione molto poco appariscente senza essere notato, magari richiedendoti di effettuare un'altra prova di Furtività. Se parli o fai deliberatamente un forte rumore diventi nascosto anziché non individuato.<br>Se una creatura usa Individuare e ciò ti rende nascosto a essa, devi Muoverti Furtivamente se vuoi tornare a essere non individuato da essa.<br><strong>Fallimento</strong> Un suono o un segno rivelatore rendono nota la tua posizione, ma rimani comunque inosservato. Sei nascosto dalla creatura per tutto il tuo movimento e mantieni tale condizione alla fine.<br><strong>Fallimento Critico</strong> Ti hanno individuato! Sei osservato dalla creatura per tutto il tuo movimento, e mantieni tale condizione alla sua fine. Se sei Invisibile ed eri nascosto dalla creatura, anziché osservato sei nascosto per tutto il tuo movimento, e mantieni tale condizione alla sua fine.</p>"
+                "Description": "<p>Tenti di muoverti verso un altro posto mentre diventi o rimani non individuato. Avanza fino a metà della tua Velocità. (Puoi usare Muoversi Furtivamente mentre Nuoti, Scali, Scavi o Voli anziché mentre Avanzi, se hai il corrispondente tipo di movimento ti muovi comunque fino a un massimo di metà di quella Velocità).</p><p>Alla fine del tuo movimento, il GM effettua la tua prova di Furtività in segreto e ne confronta il risultato con la CD di Percezione di ciascuna delle creature dalle quali eri nascosto o non individuato a inizio del tuo movimento. Se, mentre Avanzi, hai copertura o copertura maggiore da quella creatura ottieni bonus di circostanza +2 per la copertura (o +4 per la copertura maggiore) alla tua prova di Furtività. Poiché ti stai muovendo, l'incremento di bonus dovuto all'Andare in Copertura non si applica. Non devi effettuare una prova contro una creatura se, alla fine del tuo movimento, non sei occultato da essa né hai copertura o copertura maggiore nei suoi confronti: diventi automaticamente osservato da essa.</p><p><strong>Successo</strong> Sei non individuato dalla creatura durante il tuo movimento e mantieni la stessa condizione alla fine di esso.</p><p>Diventi osservato appena compi un'azione che non sia Nascondersi, Muoversi Furtivamente o Passo. Se cerchi di Colpire una creatura, essa è impreparata contro quell'attacco e poi diventi osservato. Se fai qualsiasi altra cosa diventi osservato appena prima di agire, a meno che il GM non decida diversamente. Il GM potrebbe permetterti di compiere un'azione molto poco appariscente senza essere notato, magari richiedendoti di effettuare un'altra prova di Furtività. Se parli o fai deliberatamente un forte rumore diventi nascosto anziché non individuato.</p><p>Se una creatura usa Individuare e ciò ti rende nascosto a essa, devi Muoverti Furtivamente se vuoi tornare a essere non individuato da essa.</p><p><strong>Fallimento</strong> Un suono o un segno rivelatore rendono nota la tua posizione, ma rimani comunque inosservato. Sei nascosto dalla creatura per tutto il tuo movimento e mantieni tale condizione alla fine.</p><p><strong>Fallimento Critico</strong> Ti hanno individuato! Sei osservato dalla creatura per tutto il tuo movimento, e mantieni tale condizione alla sua fine. Se sei Invisibile ed eri nascosto dalla creatura, anziché osservato sei nascosto per tutto il tuo movimento, e mantieni tale condizione alla sua fine.</p>"
             },
             "SenseDirection": {
                 "Title": "Trovare la Direzione",
@@ -323,8 +323,8 @@
             "Swim": {
                 "Title": "Nuotare",
                 "Notes": {
-                    "criticalSuccess": "<strong>Successo Critico</strong> Ti muovi attraverso l'acqua di 3 metri, più 1,5 metri per ogni 6 metri totali della tua Velocità sul Terreno (un totale di 4,5 metri per la maggior parte dei PG).",
-                    "success": "<strong>Successo Critico</strong> Ti muovi attraverso l'acqua di 3 metri, più 1,5 metri per ogni 6 metri totali della tua Velocità sul Terreno (un totale di 4,5 metri per la maggior parte dei PG).",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Ti muovi attraverso l'acqua, aumentando la distanza massima di 1,5 metri.",
+                    "success": "<strong>Successo Critico</strong> Ti muovi attraverso l'acqua.",
                     "criticalFailure": "<strong>Fallimento Critico</strong> Non ti muovi, e se stavi trattenendo il respiro perdi 1 round di aria."
                 }
             },
@@ -356,11 +356,11 @@
             },
             "Seek": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Successo Critico</strong> Se stai cercando creature, qualsiasi creatura @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{non individuata} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosta} contro cui hai ottenuto un successo critico diventa @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{osservata} da te. Se stai cercando un oggetto, ne apprendi l'ubicazione.",
-                    "success": "<strong>Successo</strong> Se stai cercando creature, qualsiasi creatura @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{non individuata} contro cui hai ottenuto un successo diventa @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosta} da te invece di @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{non individuata}, e qualsiasi creatura @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosta} contro cui hai ottenuto un successo diventa @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{osservata} da te. Se stai cercando un'oggetto, ne apprendi l'ubicazione o ti fai un'idea di dove si trova, come determinato dal GM."
+                    "criticalSuccess": "<strong>Successo Critico</strong> Qualsiasi creatura @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{non individuata} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosta} contro cui hai ottenuto un successo critico diventa @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{osservata} da te. Apprendi l'ubicazione degli oggetti contro cui hai ottenuto un successo critico.",
+                    "success": "<strong>Successo</strong> Qualsiasi creatura @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{non individuata} contro cui hai ottenuto un successo diventa @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosta} da te, e qualsiasi creatura nascosta contro cui hai ottenuto un successo diventa @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{osservata} da te. Apprendi l'ubicazione di qualsiasi oggetto o ti fai un'idea di dove si trova, come determinato dal GM."
                 },
                 "Title": "Individuare",
-                "Description": "<p>Cerchi segni di creature o oggetti in un'area. Se stai cercando creature, scegli un'area da perlustrare. Se è necessaria una certa precisione, il GM può farti selezionare un cono di 9 metri o un'esplosione di 4,5 metri entro la linea di vista. Potresti incorrere in una penalità se hai scelto un'area lontana.</p><p>Se stai usando Individuare per cercare oggetti (inclusi pericoli e porte segrete), perlustri un massimo di un quadrato di 3 metri di lato adiacente. Il GM può decidere che sia il caso di usare Individuare come attività, cosa che può richiedere più azioni o persino minuti o ore nel caso di un'area particolarmente ingombra.</p><p>Il GM tenta per te una singola prova segreta di Percezione confronta il risultato con la CD di Furtività di qualsiasi creatura non individuata o nascosta nell'area, o con la CD per individuare ciascun oggetto nell'area (determinata dal GM o da qualcuno che Nasconde l'Oggetto). Una creatura individuata può restare nascosta anziché diventare osservata se usi un senso impreciso o se un effetto (come invisibilità) impedisce che il soggetto sia osservato.</p><p><strong>Successo Critico</strong> Se stai cercando creature, qualsiasi creatura non individuata o nascosta contro cui hai ottenuto un successo critico diventa osservata da te. Se stai cercando un oggetto, ne apprendi l'ubicazione.<br><strong>Successo</strong> Se stai cercando creature, qualsiasi creatura non individuata contro cui hai ottenuto un successo diventa nascosta da te, e qualsiasi creatura nascosta contro cui hai ottenuto un successo diventa osservata da te. Se stai cercando un'oggetto, ne apprendi l'ubicazione o ti fai un'idea di dove si trova, come determinato dal GM.</p>"
+                "Description": "<p>Cerchi segni di creature o oggetti in un'area, possibilmente includento porte nascoste o pericoli. Scegli un'area da esaminare. Il GM determina l'area che puoi esaminare con una azione @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Individuare}—quasi sempre 6 metri in qualsiasi dimensione. Il GM può imporre una penalità se cerchi molto lontano da te o modificare il numero di azioni che impiega Individuare un'area particolarmente ingombra.</p><p>Il GM tenta per te una singola prova segreta di Percezione confronta il risultato con la CD di Furtività di qualsiasi creatura non individuata o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosta} nell'area, o con la CD per individuare ciascun oggetto nell'area (determinata dal GM o da qualcuno che Nasconde l'Oggetto). Una creatura individuata può restare nascosta anziché diventare osservata se usi un senso impreciso o se un effetto (come invisibilità) impedisce che il soggetto sia osservato.</p><p><strong>Successo Critico</strong> Qualsiasi creatura non individuata o nascosta contro cui hai ottenuto un successo critico diventa osservata da te. Apprendi l'ubicazione degli oggetti contro cui hai ottenuto un successo critico.</p><p><strong>Successo</strong> Qualsiasi creatura non individuata contro cui hai ottenuto un successo diventa nascosta da te, e qualsiasi creatura nascosta contro cui hai ottenuto un successo diventa osservata da te. Apprendi l'ubicazione di qualsiasi oggetto o ti fai un'idea di dove si trova, come determinato dal GM.</p>"
             },
             "SenseMotive": {
                 "Notes": {
@@ -370,7 +370,7 @@
                     "criticalFailure": "<strong>Fallimento Critico</strong> Ti fai un'idea sbagliata delle intenzioni della creatura."
                 },
                 "Title": "Intuire",
-                "Description": "<p>Cerchi di capire se il comportamento di una creatura è anormale. Scegli una creatura e la esamini in cerca di linguaggio non verbale inconsueto, segni di nervosismo e altri indicatori che potrebbe stare cercando di ingannare qualcuno. Il GM tenta per te una singola prova segreta a di Percezione e confronta il risultato con la CD di Inganno della creatura, la CD di un incantesimo che influenza lo stato mentale di una creatura o un'altra CD appropriata determinata dal GM. In genere non puoi cercare di Intuire le intenzioni della stessa creatura di nuovo, a meno che la situazione non sia drasticamente cambiata.</p><p><strong>Successo Critico</strong> Determini le vere intenzioni della creatura e capisci quali eventuali magie mentali la influenzano.<br><strong>Successo</strong> Sai se la creatura si sta comportando normalmente o meno, ma non sai le sue intenzioni esatte o quale magia può influenzarla a al momento.<br><strong>Fallimento</strong> Capisci ciò che la creatura ingannatrice vuole farti capire. Se non ti sta ingannando, credi si stia comportando normalmente.<br><strong>Fallimento Critico</strong> Ti fai un'idea sbagliata delle intenzioni della creatura.</p>"
+                "Description": "<p>Cerchi di capire se il comportamento di una creatura è anormale. Scegli una creatura e la esamini in cerca di linguaggio non verbale inconsueto, segni di nervosismo e altri indicatori che potrebbe stare cercando di ingannare qualcuno. Il GM tenta per te una singola prova segreta a di Percezione e confronta il risultato con la CD di Inganno della creatura, la CD di un incantesimo che influenza lo stato mentale di una creatura o un'altra CD appropriata determinata dal GM. In genere non puoi cercare di Intuire le intenzioni della stessa creatura di nuovo, a meno che la situazione non sia drasticamente cambiata.</p><p><strong>Successo Critico</strong> Determini le vere intenzioni della creatura e capisci quali eventuali magie mentali la influenzano.</p><p><strong>Successo</strong> Sai se la creatura si sta comportando normalmente o meno, ma non sai le sue intenzioni esatte o quale magia può influenzarla a al momento.</p><p><strong>Fallimento</strong> Capisci ciò che la creatura ingannatrice vuole farti capire. Se non ti sta ingannando, credi si stia comportando normalmente.</p><p><strong>Fallimento Critico</strong> Ti fai un'idea sbagliata delle intenzioni della creatura.</p>"
             },
             "AvoidNotice": {
                 "Notes": {
@@ -440,7 +440,7 @@
             "Disarm": {
                 "Notes": {
                     "criticalSuccess": "<strong>Successo Critico</strong> L'avversario perde la presa sull'oggetto, che cade a terra nello spazio dell'avversario.",
-                    "success": "<strong>Successo</strong> Indebolisci la presa dell'avversario sull'oggetto. Fino all'inizio del suo turno, i tentativi di Disarmare l'avversario di quell'oggetto ottengono bonus di circostanza +2, e il bersaglio subisce penalità di circostanza -2 agli attacchi con l'oggetto e ad altre prove che richiedono una salda presa su di esso. @UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Effetto: Disarmare (Successo)}",
+                    "success": "<strong>Successo</strong> Indebolisci la presa del bersaglio sull'oggetto. I successivi tentativi di Disarmare il bersaglio di quell'oggetto ottengono bonus di circostanza +2, e il bersaglio subisce penalità di circostanza -2 agli attacchi con l'oggetto e ad altre prove che richiedono una salda presa su di esso. La creatura può interrompere l'effetto Interagendo per cambiare la sua presa sull'oggetto; altrimenti dura finché la creatura tiene l'oggetto.<br>@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Effetto: Disarmare (Successo)}",
                     "criticalFailure": "<strong>Fallimento Critico</strong> Perdi l'equilibrio e diventi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} fino all'inizio del tuo prossimo turno."
                 },
                 "Title": "Disarmare"
@@ -531,7 +531,7 @@
                     "Title": "Rinfodera",
                     "Description": "{actor} rinfodera {weapon}."
                 },
-                "Description": "<p>Usi una mano o le mani per manipolare un oggetto o il terreno. Puoi afferrare un oggetto incustodito o riposto, aprire una porta o produrre un effetto simile. Potresti dover tentare una prova per determinare se la tua azione interagire ha successo.</p>",
+                "Description": "<p>Usi una mano o le mani per manipolare un oggetto o il terreno. Puoi afferrare un oggetto incustodito o riposto, impugnare un'arma, scambiare un oggetto tenuto con un altro, aprire una porta o ottenere un effetto simile. In alcune rare occasioni potresti dover tentare una prova per determinare se la tua azione interagire ha successo.</p>",
                 "Modular": {
                     "Description": "{actor} ha configurato {weapon} di sua proprietà per infliggere danni {damageType}.",
                     "Title": "Modulare"
@@ -549,10 +549,10 @@
                 "Notes": {
                     "criticalSuccess": "<strong>Successo Critico</strong> Scassini la serratura, oppure totalizzi due successi ai fini di scassinare una serratura complessa. Non lasci tracce dei tuoi armeggiamenti.",
                     "success": "<strong>Successo</strong> Scassini la serratura, oppure totalizzi un successo ai fini di scassinare una serratura complessa.",
-                    "criticalFailure": "<strong>Fallimento Critico</strong> I tuoi strumenti si rompono. Devi usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararli}, oppure devi sostituirli con dei grimaldelli di ricambio (che costano 3 ma, o 3 mo per gli strumenti da scasso da infiltrato)."
+                    "criticalFailure": "<strong>Fallimento Critico</strong> I tuoi strumenti si rompono. Devi usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararli}, oppure devi sostituirli con dei @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{grimaldelli di ricambio}."
                 },
                 "Title": "Scassinare una Serratura",
-                "Description": "<p>Aprire una serratura o un lucchetto senza averne la chiave è simile a Disattivare un Congegno, ma la CD della prova di Furto dipende da com'è costruita e da quant'è complesso il lucchetto. Le serrature (o lucchetti) di qualità superiore potrebbero richiedere più di un successo per essere scassinate, poiché altrimenti persino un topo d'appartamento senza esperienza potrebbe aprirle continuando a effettuare prove fino a ottenere un 20 naturale col dado. Se non hai gli strumenti adatti, il GM potrebbe permetterti di usare dei grimaldelli improvvisati, che sono considerati come strumenti scadenti, a seconda delle caratteristiche della serratura (o lucchetto).</p><p><strong>Successo Critico</strong> Scassini la serratura, oppure totalizzi due successi ai fini di scassinare una serratura complessa. Non lasci tracce dei tuoi armeggiamenti.<br><strong>Successo</strong> Scassini la serratura, oppure totalizzi un successo ai fini di scassinare una serratura complessa.<br><strong>Fallimento Critico</strong> I tuoi strumenti si rompono. Devi usare Artigianato per Ripararli, oppure devi sostituirli con dei grimaldelli di ricambio (che costano 3 ma, o 3 mo per gli strumenti da scasso da infiltrato).</p>"
+                "Description": "<p>Aprire una serratura o un lucchetto senza averne la chiave è simile a Disattivare un Congegno, ma la CD della prova di Furto dipende da com'è costruita e da quant'è complesso il lucchetto (i lucchetti e le loro CD sono indicati nelle loro descrizioni). Le serrature (o lucchetti) di qualità superiore potrebbero richiedere più di un successo per essere scassinate, poiché altrimenti persino un topo d'appartamento senza esperienza potrebbe aprirle continuando a effettuare prove fino a ottenere un 20 naturale col dado. Se non hai gli strumenti adatti, il GM potrebbe permetterti di usare dei grimaldelli improvvisati, che sono considerati come strumenti scadenti.</p><p><strong>Successo Critico</strong> Scassini la serratura, oppure totalizzi due successi ai fini di scassinare una serratura complessa. Non lasci tracce dei tuoi armeggiamenti.</p><p><strong>Successo</strong> Scassini la serratura, oppure totalizzi un successo ai fini di scassinare una serratura complessa.</p><p><strong>Fallimento Critico</strong> I tuoi strumenti si rompono. Devi usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararli}, oppure devi sostituirli con dei @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{grimaldelli di ricambio}.</p>"
             },
             "Release": {
                 "Title": "Lasciare",
@@ -610,7 +610,7 @@
                     "Master": "Maestro CD 30, +30 Punti Ferita",
                     "Legendary": "Leggendario CD 40, +50 Punti Ferita"
                 },
-                "Error": "Il token {name} non ha l'abilità medicina",
+                "Error": "{name} non ha l'abilità {skill}",
                 "Feats": {
                     "RiskySurgery": "Chirurgia Rischiosa",
                     "MortalHealing": "Guarigione Mortale"
@@ -712,7 +712,7 @@
                     "failure": "<strong>Fallimento</strong> La creatura nota che Nascondi nella Mano l'oggetto, e il GM determina la sua reazione.",
                     "success": "<strong>Successo</strong> La creatura non nota che Nascondi nella Mano l'oggetto."
                 },
-                "Description": "<p>Per nascondere un piccolo oggetto non custodito nella mano senza essere notato devi superare una singola prova di Furto contro le CD di Percezione di tutte le creature che ti stanno osservando. Prendi comunque l'oggetto, che superi o meno la prova. Solitamente puoi Nascondere nella Mano solo oggetti di Volume trascurabile, ma a seconda della situazione il GM potrebbe decidere diversamente.</p><p><strong>Successo</strong> La creatura non nota che Nascondi nella Mano l'oggetto.<br><strong>Fallimento</strong> La creatura nota che Nascondi nella Mano l'oggetto, e il GM determina la sua reazione.</p>"
+                "Description": "<p>Raccogli un piccolo oggetto non custodito e provi a non essere notato. Effettua una singola prova di Furto contro le CD di Percezione di tutte le creature che ti stanno osservando. Solitamente puoi Nascondere nella Mano solo oggetti di Volume trascurabile, ma a seconda della situazione il GM potrebbe decidere diversamente.</p><p><strong>Successo</strong> La creatura non nota che Nascondi nella Mano l'oggetto.</p><p><strong>Fallimento</strong> La creatura nota che Nascondi nella Mano l'oggetto.</p>"
             },
             "Steal": {
                 "Notes": {
@@ -775,7 +775,7 @@
                     "success": "<strong>Successo</strong> Ti liberi e rimuovi la condizione afferrato, immobilizzato e trattenuto imposta dal bersaglio che hai scelto.",
                     "criticalSuccess": "<strong>Successo Critico</strong> Ti liberi e rimuovi la condizione afferrato, immobilizzato e trattenuto imposta dal bersaglio che hai scelto. Puoi poi Avanzare fino a 1,5 metri."
                 },
-                "Description": "<p>Tenti di sfuggire mentre sei afferrato, immobilizzato o trattenuto. Scegli una creatura, oggetto, effetto di incantesimo, pericolo o altro impedimento che ti imponga qualsiasi di queste condizioni. Tenta una prova usando il tuo modificatore di attacco senz'armi contro la CD dell'effetto; in genere si tratta della CD di Atletica di una creatura che ti afferra, la CD di Furto di una creatura che ti ha legato, la CD di incantesimo dell'effetto di un incantesimo oppure la CD di Fuggire di un oggetto, pericolo o altro impedimento. Puoi tentare una prova di Acrobazia o Atletica anziché usare il tuo modificatore di attacco, se lo desideri; l'azione mantiene comunque il tratto attacco.</p><p><strong>Successo Critico</strong> Ti liberi e rimuovi la condizione Afferrato, Immobilizzato e Trattenuto imposta dal bersaglio che hai scelto. Puoi poi Avanzare fino a 1,5 metri.<br><strong>Successo</strong> Ti liberi e rimuovi la condizione Afferrato, Immobilizzato e Trattenuto imposta dal bersaglio che hai scelto.<br><strong>Fallimento Critico</strong> Non ti liberi e non puoi tentare di Fuggire di nuovo fino al tuo prossimo turno.</p>"
+                "Description": "<p>Tenti di sfuggire mentre sei @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto}. Scegli una creatura, oggetto, effetto di incantesimo, pericolo o altro impedimento che ti imponga qualsiasi di queste condizioni. Tenta una prova usando il tuo modificatore di attacco senz'armi contro la CD dell'effetto; in genere si tratta della CD di Atletica di una creatura che ti afferra, la CD di Furto di una creatura che ti ha legato, la CD di incantesimo dell'effetto di un incantesimo oppure la CD di @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Fuggire} di un oggetto, pericolo o altro impedimento. Puoi tentare una prova di Acrobazia o Atletica anziché usare il tuo modificatore di attacco, se lo desideri; l'azione mantiene comunque il tratto attacco.</p><p><strong>Successo Critico</strong> Ti liberi e rimuovi la condizione Afferrato, Immobilizzato e Trattenuto imposta dal bersaglio che hai scelto. Puoi poi Avanzare fino a 1,5 metri.</p><p><strong>Successo</strong> Ti liberi e rimuovi la condizione Afferrato, Immobilizzato e Trattenuto imposta dal bersaglio che hai scelto.</p><p><strong>Fallimento Critico</strong> Non ti liberi e non puoi tentare di Fuggire di nuovo fino al tuo prossimo turno.</p>"
             },
             "Crawl": {
                 "Description": "<p>Ti muovi per 1,5 metri strisciando e continui a rimanere prono.</p>",
@@ -790,7 +790,7 @@
                 "Title": "Cadere a Terra"
             },
             "Leap": {
-                "Description": "<p>Fai un salto cauto e breve. Puoi Saltare fino a 3 metri in orizzontale se la tua Velocità è almeno 4,5 metri, o fino a 4,5 metri in orizzontale se la tua Velocità è almeno 9 metri. Atterri nello spazio dove termina il Salto (quindi in genere puoi coprire una distanza di 1,5 metri, o una distanza di 3 metri se la tua Velocità è 9 metri o più).</p><p>Se Salti in verticale, puoi spostarti su una superficie sopraelevata fino a 0,9 metri in verticale e 1,5 metri in orizzontale.</p><p>Saltare per distanze maggiori richiede l'uso dell'Abilità Atletica.</p>",
+                "Description": "<p>Fai un salto cauto e breve. Puoi Saltare fino a 3 metri in orizzontale se la tua Velocità è almeno 4,5 metri, o fino a 4,5 metri in orizzontale se la tua Velocità è almeno 9 metri. Atterri nello spazio dove termina il @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salto} (quindi in genere puoi coprire una distanza di 1,5 metri, o una distanza di 3 metri se la tua Velocità è 9 metri o più).</p><p>Se Salti in verticale, puoi spostarti su una superficie sopraelevata fino a 0,9 metri in verticale e 1,5 metri in orizzontale.</p><p>Saltare per distanze maggiori richiede l'uso dell'Abilità Atletica.</p>",
                 "Title": "Saltare"
             },
             "Ready": {
@@ -798,7 +798,7 @@
                 "Title": "Preparare"
             },
             "Stand": {
-                "Description": "<p>Ti alzi da prono.</p>",
+                "Description": "<p>Ti alzi da essere prono.</p>",
                 "Title": "Alzarsi"
             },
             "Stride": {
@@ -811,7 +811,7 @@
             },
             "TakeCover": {
                 "Title": "Andare in Copertura",
-                "Description": "<p>Ti appiattisci contro un muro o ti chini dietro un ostacolo per sfruttare meglio la copertura. Se avevi copertura standard ottieni copertura superiore, che fornisce bonus di circostanza +4 alla CA, ai TS su Riflessi contro effetti ad area e a prove di Furtività per Muoversi Furtivamente, Nascondersi o evitare l'individuazione in altri modi. Altrimenti, ottieni i benefici della copertura standard (bonus di circostanza +2). Ciò dura finché ti muovi dal tuo spazio attuale, usi un'azione attacco, diventi privo di sensi o termini quest'effetto come azione gratuita.</p>"
+                "Description": "<p>Ti appiattisci contro un muro o ti chini dietro un ostacolo per sfruttare meglio la copertura. Se avevi copertura standard ottieni copertura superiore, che fornisce bonus di circostanza +4 alla CA, ai TS su Riflessi contro effetti ad area e a prove di Furtività per @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Muoversi Furtivamente}, Nascondersi o evitare l'individuazione in altri modi. Altrimenti, ottieni i benefici della copertura standard (bonus di circostanza +2). Ciò dura finché ti muovi dal tuo spazio attuale, usi un'azione attacco, diventi @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{privo di sensi} o termini quest'effetto come azione gratuita.</p>"
             },
             "Aid": {
                 "Notes": {
@@ -1758,34 +1758,34 @@
             },
             "GhostCharge": {
                 "Greater": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (3[splash])[positive]]]{3 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino all'inizio del turno successivo."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (3[splash])[vitality]]]{3 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino all'inizio del turno successivo."
                 },
                 "Lesser": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (1[splash])[positive]]]{1 danno da spargimento positivo} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del turno successivo."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (1[splash])[vitality]]]{1 danno da spargimento positivo} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del turno successivo."
                 },
                 "Major": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (4[splash])[positive]]]{4 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino all'inizio del turno successivo."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (4[splash])[vitality]]]{4 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino all'inizio del turno successivo."
                 },
                 "Moderate": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (2[splash])[positive]]]{2 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del turno successivo."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (2[splash])[vitality]]]{2 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del turno successivo."
                 }
             },
             "NecroticBomb": {
                 "Greater": {
-                    "success": "<strong>Effect</strong> La bomba infligge anche [[/r (3[splash])[negative]]]{3 danni negativi da spargimento}.",
-                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche [[/r (3[splash])[negative]]]{3 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 3}."
+                    "success": "<strong>Effect</strong> La bomba infligge anche [[/r (3[splash])[void]]]{3 danni negativi da spargimento}.",
+                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche [[/r (3[splash])[void]]]{3 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 3}."
                 },
                 "Lesser": {
-                    "success": "<strong>Effect</strong> La bomba infligge anche [[/r (1[splash])[negative]]]{1 danno negativo da spargimento}.",
-                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche [[/r (1[splash])[negative]]]{1 danno negativo da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 1}."
+                    "success": "<strong>Effect</strong> La bomba infligge anche [[/r (1[splash])[void]]]{1 danno negativo da spargimento}.",
+                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche [[/r (1[splash])[void]]]{1 danno negativo da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 1}."
                 },
                 "Major": {
-                    "success": "<strong>Effect</strong> La bomba infligge anche [[/r (4[splash])[negative]]]{4 danni negativi da spargimento}.",
-                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche [[/r (4[splash])[negative]]]{4 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 4}."
+                    "success": "<strong>Effect</strong> La bomba infligge anche [[/r (4[splash])[void]]]{4 danni negativi da spargimento}.",
+                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche [[/r (4[splash])[void]]]{4 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 4}."
                 },
                 "Moderate": {
-                    "success": "<strong>Effect</strong> La bomba infligge anche [[/r (2[splash])[negative]]]{2 danni negativi da spargimento}.",
-                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche [[/r (2[splash])[negative]]]{2 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 2}."
+                    "success": "<strong>Effect</strong> La bomba infligge anche [[/r (2[splash])[void]]]{2 danni negativi da spargimento}.",
+                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche [[/r (2[splash])[void]]]{2 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 2}."
                 }
             },
             "GooGrenade": {
@@ -2425,14 +2425,40 @@
                         "Scroll": "Solo Pergamene"
                     },
                     "TraditionSpellcasting": "Lancio di Incantesimi {tradition}",
-                    "Rituals": "Rituali"
+                    "Rituals": "Rituali",
+                    "DC": "CD Incantesimo",
+                    "Label": "Modificatori Attacco & CD Incantesimi",
+                    "ShortLabel": "Lanciare Incantesimi"
                 },
                 "SpellPreparation": {
                     "Title": "{actor}: Preparazione Incantesimi",
                     "Hint": "Per preparare un incantesimo, trascinane uno da questa lista in uno slot della scheda del personaggio.",
-                    "HintFlexible": "Per preparare un incantesimo, abilitalo qua. Per preparare un trucchetto, trascinane uno da questa lista in uno slot della scheda del personaggio."
+                    "HintFlexible": "Per preparare un incantesimo, abilitalo qua. Per preparare un trucchetto, trascinane uno da questa lista in uno slot della scheda del personaggio.",
+                    "Search": "Cerca Incantesimi"
                 },
-                "AttributeModifiers": "Modificatori di Caratteristica"
+                "AttributeModifiers": "Modificatori di Caratteristica",
+                "Language": {
+                    "amurrun": "Amurrun",
+                    "ysoki": "Ysoki",
+                    "adlet": "Adlet",
+                    "akitonian": "Akitoniano",
+                    "aklo": "Aklo",
+                    "alghollthu": "Alghollthu",
+                    "anadi": "Anadi",
+                    "russian": "Russo"
+                },
+                "Shield": {
+                    "ACBonus": "Bonus CA Scudo (Quando Alzato)",
+                    "BrokenThreshold": "Soglia di Rottura Scudo",
+                    "Hardness": {
+                        "Hint": "Durezza Scudo",
+                        "Label": "D"
+                    },
+                    "HitPoints": {
+                        "Value": "PF Scudo",
+                        "Max": "PF Massimi Scudo"
+                    }
+                }
             },
             "Dead": "Morto",
             "ApplyDamage": {
@@ -2525,6 +2551,23 @@
                 "Proficiency": {
                     "SavingThrow": {
                         "Title": "Tiri Salvezza"
+                    },
+                    "HigherUpgrade": "{ability} ha migliorato questo grado di competenza a {rank}.",
+                    "Attack": {
+                        "Advanced": "Armi Avanzate",
+                        "Martial": "Armi da Guerra",
+                        "Simple": "Armi Semplici",
+                        "Title": "Attacchi",
+                        "Unarmed": "Attacchi Senz'Armi"
+                    },
+                    "Defense": {
+                        "Heavy": "Armature Pesanti",
+                        "HeavyBarding": "Bardatura Pesante",
+                        "Light": "Armatura Leggera",
+                        "LightBarding": "Bardatura Leggera",
+                        "Medium": "Armatura Media",
+                        "Title": "Difese",
+                        "Unarmored": "Difesa Senz'Armatura"
                     }
                 }
             },
@@ -2538,7 +2581,8 @@
                     "False": "Mai",
                     "Encounter": "Durante gli Incontri"
                 },
-                "Simple": "Semplice"
+                "Simple": "Semplice",
+                "Plural": "Pericoli"
             },
             "NPC": {
                 "Configure": {
@@ -2570,7 +2614,11 @@
                         "Label": "Sapienza Appropriata: DC {dc1} ({adjustment1}) o DC {dc2} ({adjustment2})"
                     }
                 },
-                "SimpleSheet": "Scheda PNG Semplice"
+                "SimpleSheet": "Scheda PNG Semplice",
+                "SkillsEditor": {
+                    "LorePlaceholder": "Sapienza della Carpenteria",
+                    "Title": "Editor Abilità ({actor})"
+                }
             },
             "Plural": "Personaggi",
             "IWREditor": {
@@ -2588,7 +2636,8 @@
                 "Tabs": {
                     "Overview": "Panoramica",
                     "Orphaned": "Oggetti Orfani",
-                    "Exploration": "Esplorazione"
+                    "Exploration": "Esplorazione",
+                    "Stash": "Scorta"
                 },
                 "Total": "Totale del Gruppo",
                 "Wealth": "Ricchezza",
@@ -2613,12 +2662,36 @@
                     "Content": "Rimuovere il membro dal gruppo?"
                 },
                 "Rest": "Riposa",
-                "SlotAvailable": "Slot Disponibile"
+                "SlotAvailable": "Slot Disponibile",
+                "Skills": "Abilità del Gruppo",
+                "CheckPrompt": {
+                    "ChooseLores": "Scegli Sapienze",
+                    "LevelDC": "CD Basata sul Livello",
+                    "SecretCheck": "Prova Segreta",
+                    "SetDC": "Imposta CD",
+                    "SimpleDC": "CD Semplice",
+                    "SkillsPerception": "Abilità/Percezione",
+                    "ChooseSaves": "Scegli Tiri Salvezza",
+                    "ChooseSkills": "Scegli Abilità/Percezione"
+                },
+                "Sidebar": {
+                    "RemoveMember": "Rimuovi Membro",
+                    "OtherParties": "Altri Gruppi",
+                    "ActivateParty": "Attiva Gruppo",
+                    "OpenSheet": "Apri Scheda",
+                    "CreateMember": "Crea un Nuovo Membro",
+                    "CreateParty": "Crea un Nuovo Gruppo"
+                },
+                "NoMembers": "Nessun Membro",
+                "TravelHeader": "Viaggio di Gruppo e Esplorazione degli Esagoni",
+                "DefaultName": "Il Gruppo"
             },
             "Familiar": {
                 "Master": {
-                    "Perception": "Percezione del Padrone"
-                }
+                    "Perception": "Percezione del Padrone",
+                    "ArmorClass": "Classe Armatura Padrone"
+                },
+                "Blurb": "Famiglio di {master}"
             },
             "Hardness": {
                 "ShortLabel": "DUR"
@@ -2639,6 +2712,15 @@
                         "ShiftClick": "[Shift-Click] Incrementa di 5",
                         "ControlClick": "[Ctrl-Click] Incrementa di 10"
                     }
+                },
+                "TotalBulk": "Ingombro Totale: {bulk}",
+                "Encumbrance": "Ingombro",
+                "Section": {
+                    "WeaponsAndShields": "Armi & Scudi"
+                },
+                "UnitTitle": {
+                    "Bulk": "Ingombro Unitario",
+                    "Price": "Prezzo Unitario"
                 }
             },
             "Attacks": "Attacchi"
@@ -2879,20 +2961,20 @@
                 "criticalSuccess": "[[/r (2*1d8)[persistent,mental]]]{1d8 danni mentali persistenti}"
             },
             "Negative1d6": {
-                "criticalSuccess": "[[/r (2*1d6)[persistent,negative]]]{1d6 danni negativi persistenti}",
-                "success": "[[/r 1d6[persistent,negative]]]{1d6 danni negativi persistenti}"
+                "criticalSuccess": "[[/r (2*1d6)[persistent,void]]]{1d6 danni negativi persistenti}",
+                "success": "[[/r 1d6[persistent,void]]]{1d6 danni negativi persistenti}"
             },
             "Negative1d8": {
-                "success": "[[/r 1d8[persistent,negative]]]{1d8 danni negativi persistenti}",
-                "criticalSuccess": "[[/r (2*1d8)[persistent,negative]]]{1d8 danni negativi persistenti}"
+                "success": "[[/r 1d8[persistent,void]]]{1d8 danni negativi persistenti}",
+                "criticalSuccess": "[[/r (2*1d8)[persistent,void]]]{1d8 danni negativi persistenti}"
             },
             "Negative1d10": {
-                "success": "[[/r 1d10[persistent,negative]]]{1d10 danni negativi persistenti}",
-                "criticalSuccess": "[[/r (2*1d10)[persistent,negative]]]{1d10 danni negativi persistenti}"
+                "success": "[[/r 1d10[persistent,void]]]{1d10 danni negativi persistenti}",
+                "criticalSuccess": "[[/r (2*1d10)[persistent,void]]]{1d10 danni negativi persistenti}"
             },
             "Negative2d10": {
-                "criticalSuccess": "[[/r (2*2d10)[persistent,negative]]]{danni negativi persistenti}",
-                "success": "[[/r 2d10[persistent,negative]]]{2d10 danni negativi persistenti}"
+                "criticalSuccess": "[[/r (2*2d10)[persistent,void]]]{danni negativi persistenti}",
+                "success": "[[/r 2d10[persistent,void]]]{2d10 danni negativi persistenti}"
             },
             "Piercing2d8+8": {
                 "criticalSuccess": "[[/r (2*2d8+16)[persistent,piercing]]]{2d8+8 danni perforanti persistenti}",
@@ -5368,8 +5450,8 @@
         "WeaponSplashDamageLabel": "Danno a Spargimento",
         "WeaponStrikeLabel": "Colpire",
         "WeaponTypeAdvanced": "Arma Avanzata",
-        "WeaponTypeMartial": "Armi Marziali",
-        "WeaponTypeSimple": "Armi Semplici",
+        "WeaponTypeMartial": "Arma da Guerra",
+        "WeaponTypeSimple": "Arma Semplice",
         "WeaponTypeSpecial": "Altre Armi",
         "WeaponTypeUnarmed": "Attacco Senz'Armi",
         "Weight": "Peso",
@@ -7072,7 +7154,14 @@
         "AccessoryPropertyRunePresentable": "Presentabile",
         "AccessoryPropertyRuneGreaterPaired": "Abbinata Superiore",
         "AccessoryPropertyRuneSnagging": "Acchiappante",
-        "AccessoryPropertyRuneSpellBastion": "Bastione Incantato"
+        "AccessoryPropertyRuneSpellBastion": "Bastione Incantato",
+        "ArmorPropertyRuneGreaterDread": "Terrorizzante Superiore",
+        "ArmorPropertyRuneDeathless": "Senza Morte",
+        "ArmorPropertyRuneBitter": "Fiele",
+        "ArmorPropertyRuneLesserDread": "Terrorizzante Inferiore",
+        "ArmorPropertyRuneGreaterStanching": "Rimarginante Superiore",
+        "ArmorPropertyRuneImplacable": "Implacabile",
+        "ArmorPropertyRuneMajorStanching": "Rimarginante Maggiore"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
