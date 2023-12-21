@@ -392,8 +392,8 @@
             },
             "Climb": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Successo Critico</strong> Ti muovi attentamente verso l'alto, attraverso o verso il basso per la pendenza per 1,5 metri più 1,5 metri per ogni 6 metri della tua velocità (per un totale di 3 metri per la maggior parte dei PG).",
-                    "success": "<strong>Successo</strong> Ti muovi verso l'alto, in orizzontale, o attentamente verso il basso lungo un pendio di 1,5 metri per ogni 6 metri totali della tua Velocità sul terreno (quindi 1,5 metri per la maggior parte dei PG, con un minimo di 1,5 metri se la tua Velocità è inferiore a 6 metri).",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Ti muovi lungo il piano inclinato, aumentando la distanza massima di 1,5 metri.",
+                    "success": "<strong>Successo</strong> Ti muovi lungo il piano inclinato.",
                     "criticalFailure": "<strong>Successo Critico</strong> Cadi. Se hai iniziato la scalata mentre eri su un terreno stabile, cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}."
                 },
                 "Title": "Scalare"
@@ -625,16 +625,16 @@
             },
             "DisableDevice": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Successo Critico</strong> Disattivi il congegno, oppure totalizzi due successi ai fini di disattivare un congegno complesso. Non lasci tracce dei tuoi armeggiamenti, e in seguito puoi riattivare il congegno (se si tratta di un tipo di congegno che può essere riattivato).",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Disattivi il congegno, oppure totalizzi due successi ai fini di disattivare un congegno che richiede più di un successo. Non lasci tracce dei tuoi armeggiamenti, e in seguito puoi riattivare il congegno (se si tratta di un tipo di congegno che può essere riattivato).",
                     "criticalFailure": "<strong>Fallimento Critico</strong> Attivi il congegno.",
-                    "success": "<strong>Successo</strong> Disattivi il congegno, oppure totalizzi un successo ai fini di disattivare un congegno complesso."
+                    "success": "<strong>Successo</strong> Disattivi il congegno, oppure totalizzi un successo ai fini di disattivare un congegno che richiede più di un successo."
                 },
                 "Title": "Disattivare un Congegno",
-                "Description": "<p>Questa azione ti permette di disarmare una trappola o un altro congegno complesso. Spesso per disattivare un congegno occorrono molti successi, a seconda di com'è costruito e quant'è complesso. Gli Strumenti da Scasso sono utili, e a volte persino necessari, per Disattivare un Congegno, secondo quanto stabilito dal GM. Per disattivare alcuni congegni serve un grado di competenza in Furto superiore.</p><p>Il risultato della tua prova di Furto determina quanti progressi fai.</p><p><strong>Successo Critico</strong> Disattivi il congegno, oppure totalizzi due successi ai fini di disattivare un congegno complesso. Non lasci tracce dei tuoi armeggiamenti, e in seguito puoi riattivare il congegno (se si tratta di un tipo di congegno che può essere riattivato).<br><strong>Successo</strong> Disattivi il congegno, oppure totalizzi un successo ai fini di disattivare un congegno complesso.<br><strong>Fallimento Critico</strong> Attivi il congegno.</p>"
+                "Description": "<p>Questa azione ti permette di disarmare una trappola o un altro congegno complesso. Spesso per disattivare un congegno occorrono molti successi, a seconda di com'è costruito e quant'è complesso. Gli strumenti da scasso sono utili, e a volte persino necessari, per Disattivare un Congegno, secondo quanto stabilito dal GM. Per disattivare alcuni congegni serve un grado di competenza in Furto superiore.</p><p>Il risultato della tua prova di Furto determina i tuoi progressi.</p><p><strong>Successo Critico</strong> Disattivi il congegno, oppure totalizzi due successi ai fini di disattivare un congegno che richiede più di un successo. Non lasci tracce dei tuoi armeggiamenti, e in seguito puoi riattivare il congegno (se si tratta di un tipo di congegno che può essere riattivato).</p><p><strong>Successo</strong> Disattivi il congegno, oppure totalizzi un successo ai fini di disattivare un congegno che richiede più di un successo.</p><p><strong>Fallimento Critico</strong> Attivi il congegno.</p>"
             },
             "DecipherWriting": {
                 "Warning": {
-                    "NoSkill": "L'azione Decifrare Scritti può essere usata con diverse abilità ma non è stata specificata alcuna abilità. Solitamente si usa Arcano per testi che riguardano scienza o magia, Occultismo per testi esoterici riguardanti misteri e filosofia, Religione per i testi sacri e Società per messaggi in codice o documenti arcaici."
+                    "NoSkill": "L'azione Decifrare Scritti può essere usata con diverse abilità ma non è stata specificata alcuna abilità. Le abilità usate per Decifrare Scritti e i tipi di testi che solitamente decifrano sono: Arcano per testi che riguardano scienza o magia, Occultismo per testi esoterici riguardanti misteri e filosofia, Religione per i testi sacri o Società per messaggi in codice o documenti arcaici."
                 },
                 "Title": "Decifrare Scritti",
                 "Notes": {
@@ -643,7 +643,7 @@
                     "success": "<strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice ne comprendi il significato generale, ma non puoi fornirne una traduzione parola per parola.",
                     "criticalSuccess": "<strong>Successo Critico</strong> Comprendi il vero significato del testo."
                 },
-                "Description": "<p>Tenti di decifrare un testo complicato o che tratta di un argomento oscuro. Di solito occorre 1 minuto per pagina, ma potrebbe volerci di più (solitamente un'ora per pagina per decifrare testi cifrati). Il testo dev'essere in una lingua che sai leggere, ma il GM potrebbe permetterti di usare Società per provare a decifrare un testo in una lingua che non ti è familiare.</p><p>La CD viene stabilita dal GM in base allo stato di conservazione o alla complessità del documento; ti potrebbe essere richiesto di effettuare una prova per un breve testo, o una prova per ciascuna sezione di un testo più ampio.</p><p><strong>Successo Critico</strong> Comprendi il vero significato del testo.<br><strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice ne comprendi il significato generale, ma non puoi fornirne una traduzione parola per parola.<br><strong>Fallimento</strong> Non comprendi il testo e subisci penalità di circostanza -2 a ulteriori prove per decifrarlo.<br><strong>Fallimento Critico</strong> Pensi di aver compreso il testo sulla pagina, ma in realtà lo hai frainteso</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Decifrare</h2><p><strong>Addestrato</strong> un trattato base di filosofia</p><p><strong>Esperto</strong> un codice complesso, ad esempio un messaggio cifrato</p><p><strong>Maestro</strong> il cifrario di un maestro delle spie o appunti su ricerche avanzate</p><p><strong>Leggendario</strong> un testo planare esoterico scritto sotto forma di metafore da un antico celestiale</p></section>"
+                "Description": "<p>Tenti di decifrare un testo complicato o che tratta di un argomento oscuro. Di solito occorre 1 minuto per pagina, ma potrebbe volerci di più (solitamente un'ora per pagina per decifrare testi cifrati). Il testo dev'essere in una lingua che sai leggere, ma il GM potrebbe permetterti di usare Società per provare a decifrare un testo in una lingua che non ti è familiare.</p><p>La CD viene stabilita dal GM in base allo stato di conservazione o alla complessità del documento; ti potrebbe essere richiesto di effettuare una prova per un breve testo, o una prova per ciascuna sezione di un testo più ampio.</p><p><strong>Successo Critico</strong> Comprendi il vero significato del testo.</p><p><strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice ne comprendi il significato generale, ma non puoi fornirne una traduzione parola per parola.</p><p><strong>Fallimento</strong> Non comprendi il testo e subisci penalità di circostanza -2 a ulteriori prove per decifrarlo.</p><p><strong>Fallimento Critico</strong> Pensi di aver compreso il testo sulla pagina, ma in realtà lo hai frainteso</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Decifrare</h2><p><strong>Addestrato</strong> un trattato base di filosofia</p><p><strong>Esperto</strong> un codice complesso, ad esempio un messaggio cifrato</p><p><strong>Maestro</strong> il cifrario di un maestro delle spie o appunti su ricerche avanzate</p><p><strong>Leggendario</strong> un testo planare esoterico scritto sotto forma di metafore da un antico celestiale</p></section>"
             },
             "Perform": {
                 "Notes": {
@@ -704,7 +704,7 @@
                     "failure": "<strong>Fallimento</strong> L'oggetto viene trovato.",
                     "success": "<strong>Successo</strong> L'oggetto non viene trovato."
                 },
-                "Description": "<p>Nascondi un piccolo oggetto sulla tua persona (per esempio un'arma con Volume leggero). Quando cerchi di non far notare un oggetto nascosto a qualcuno che potrebbe accorgersene, il GM effettua la tua prova di Furtività e la compara alla CD di Percezione dell'osservatore passivo. Dopo che il GM ha effettuato la tua prova per un oggetto, tale risultato si applica a tutti gli osservatori passivi ai quali stai cercando di nasconderlo: Se una creatura ti sta specificamente perquisendo in cerca di un oggetto, essa può effettuare una prova di Percezione contro la tua CD di Furtività (trovando l'oggetto in caso di successo).</p><p>Puoi anche nascondere un oggetto non su di te: per esempio tra dei cespugli o in uno scomparto segreto di un mobile. In questo caso i personaggi che Individuano in un'area comparano il proprio risultato di Percezione alla tua CD di Furtività per determinare se trovano l'oggetto.</p><p><strong>Successo</strong> L'oggetto non viene trovato.<br><strong>Fallimento</strong> L'oggetto viene trovato.</p>"
+                "Description": "<p>Nascondi un piccolo oggetto sulla tua persona (per esempio un'arma con Volume leggero). Quando cerchi di non far notare un oggetto nascosto a qualcuno che potrebbe accorgersene, il GM effettua la tua prova di Furtività e la compara alla CD di Percezione dell'osservatore passivo. Dopo che il GM ha effettuato la tua prova per un oggetto, tale risultato si applica a tutti gli osservatori passivi ai quali stai cercando di nasconderlo: Se una creatura ti sta specificamente perquisendo in cerca di un oggetto, essa può effettuare una prova di Percezione contro la tua CD di Furtività (trovando l'oggetto in caso di successo).</p><p>Puoi anche nascondere un oggetto non su di te: per esempio tra dei cespugli o in uno scomparto segreto di un mobile. In questo caso i personaggi che Individuano in un'area comparano il proprio risultato di Percezione alla tua CD di Furtività per determinare se trovano l'oggetto.</p><p><strong>Successo</strong> L'oggetto non viene trovato.</p><p><strong>Fallimento</strong> L'oggetto viene trovato.</p>"
             },
             "PalmAnObject": {
                 "Title": "Nascondere nella Mano",
@@ -726,11 +726,11 @@
             "AdministerFirstAid": {
                 "StopBleeding": {
                     "Notes": {
-                        "success": "<strong>Successo</strong> La creatura effettua una prova semplice per porre fine al sanguinamento.",
+                        "success": "<strong>Successo</strong> La creatura riceve i benefici di una guarigione assistita con la CD abbassata per un aiuto particolarmente appropriato.",
                         "criticalFailure": "<strong>Fallimento Critico</strong> La creatura subisce immediatamente un ammontare di danni pari al suo danno persistente da sanguinamento."
                     },
                     "Title": "Fermare Sanguinamento",
-                    "Description": "<p>Presti il primo soccorso a una creatura adiacente sanguinante. Effettua una prova di Medicina su una creatura che sta subendo danni persistenti da sanguinamento, permettendole di effettuare un'altra prova semplice per rimuovere i danni persistenti. La CD è solitamente pari alla CD del l'effetto che ha provocato il sanguinamento.</p><p><strong>Successo</strong> La creatura effettua una prova semplice per porre fine al sanguinamento.<br><strong>Fallimento Critico</strong> La creatura subisce immediatamente un ammontare di danni pari al suo danno persistente da sanguinamento.</p>"
+                    "Description": "<p>Effettua una prova di Medicina su una creatura che sta subendo danni persistenti da sanguinamento. La CD è solitamente pari alla CD del l'effetto che ha provocato il sanguinamento.</p><p><strong>Successo</strong> La creatura riceve i benefici di una guarigione assistita con la CD abbassata per un aiuto particolarmente appropriato.<br><strong>Fallimento Critico</strong> La creatura subisce immediatamente un ammontare di danni pari al suo danno persistente da sanguinamento.</p>"
                 },
                 "Stabilize": {
                     "Title": "Stabilizzare",
@@ -741,7 +741,7 @@
                     "DifficultyClass": {
                         "Label": "CD Prestare Primo Soccorso"
                     },
-                    "Description": "<p>Presti il primo soccorso a una creatura adiacente morente. Effettua una prova di Medicina su una creatura che ha 0 Punti Ferita e la condizione morente. La CD è pari a 5 + la CD della prova per il recupero di quella creatura (solitamente 15 + il suo valore di morente).</p><p><strong>Successo</strong> La creatura perde la condizione morente, ma rimane priva di sensi.<br><strong>Fallimento Critico</strong> Il valore di Morente della creatura incrementa di 1.</p>"
+                    "Description": "<p>Effettua una prova di Medicina su una creatura che ha 0 Punti Ferita e la condizione morente. La CD è pari a 5 + la CD della prova per il recupero di quella creatura (solitamente 15 + il suo valore di morente).</p><p><strong>Successo</strong> La creatura perde la condizione morente, ma rimane priva di sensi.<br><strong>Fallimento Critico</strong> Il valore di Morente della creatura incrementa di 1.</p>"
                 },
                 "Warning": {
                     "UnknownVariant": "Alternativa sconosciuta {variant} usata per Prestare Primo Soccorso, usa uno tra {variants}.",
@@ -823,7 +823,7 @@
                 "Warning": {
                     "NoStatistic": "L'azione Aiutare può essere usata con statistiche diverse ma non ne è stata selezionata alcuna."
                 },
-                "Description": "<p>Cerchi di aiutare il tuo alleato in un compito. Per usare questa reazione devi per prima cosa prepararti per aiutare, in genere usando un'azione nel tuo turno. Devi spiegare al GM esattamente come cerchi dì aiutare, ed egli determina se puoi aiutare il tuo alleato.</p><p>Quando usi la tua reazione Aiutare, tenta una prova di abilità o un tiro per colpire di un tipo deciso dal GM. La CD tipica è 20, ma il GM può modificarla per compiti particolarmente facili o difficili. Il GM può aggiungere tratti pertinenti alla tua reazione Aiutare o alla tua azione preparatoria, a seconda della, situazione, o anche consentirti di Aiutare in prove che non siano di abilità o tiri per colpire.</p><p><strong>Successo Critico</strong> Concedi al tuo alleato bonus di circostanza +2 alla\nprova innescante. Se sei maestro nella prova che hai tentato, il bonus è +3, e se sei leggendario è +4.</p><p><strong>Successo</strong> Concedi al tuo alleato bonus di circostanza +1 alla prova innescante.</p><p><strong>Fallimento Critico</strong> Concedi al tuo alleato penalità di circostanza -1 alla prova innescante.</p>"
+                "Description": "<p>Cerchi di aiutare il tuo alleato in un compito. Per usare questa reazione devi per prima cosa prepararti per aiutare, in genere usando un'azione nel tuo turno. Devi spiegare al GM esattamente come cerchi dì aiutare, ed egli determina se puoi aiutare il tuo alleato.</p><p>Quando usi la tua reazione Aiutare, tenta una prova di abilità o un tiro per colpire di un tipo deciso dal GM. La CD tipica è 20, ma il GM può modificarla per compiti particolarmente facili o difficili. Il GM può aggiungere tratti pertinenti alla tua reazione Aiutare o alla tua azione preparatoria, a seconda della, situazione, o anche consentirti di Aiutare in prove che non siano di abilità o tiri per colpire.</p><p><strong>Successo Critico</strong> Concedi al tuo alleato bonus di circostanza +2 alla prova innescante. Se sei maestro nella prova che hai tentato, il bonus è +3, e se sei leggendario è +4.</p><p><strong>Successo</strong> Concedi al tuo alleato bonus di circostanza +1 alla prova innescante.</p><p><strong>Fallimento Critico</strong> Concedi al tuo alleato penalità di circostanza -1 alla prova innescante.</p>"
             }
         },
         "SETTINGS": {
@@ -1198,7 +1198,7 @@
             "greaterFrost": {
                 "Note": {
                     "criticalSuccess": "Il danno da freddo inflitto da quest'arma ignora la resistenza al freddo del bersaglio. In caso di colpo critico, il bersaglio è anche @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno a meno che non abbia successo su un TS su @Check[type:fortitude|dc:34|name:Runa Gelida Superiore].",
-                    "success": "<strong>Runa Gelida Superiore</strong> Il danno da freddo inflitto da quest'arma ignora la resistenza al freddo del bersaglio."
+                    "success": "Il danno da freddo inflitto da quest'arma ignora la resistenza al freddo del bersaglio."
                 },
                 "Name": "Gelida Superiore"
             },
@@ -1240,7 +1240,7 @@
                 "Name": "Corrosiva Superiore",
                 "Note": {
                     "criticalSuccess": "In caso di colpo critico, l'armatura del bersaglio (se ne ha una) subisce [[/r 6d6[acid] # Runa Corrosiva]]{6d6 danni da acido} (prima di applicare la Durezza); se il bersaglio ha uno scudo alzato, invece è lo scudo che subisce questi danni.",
-                    "success": "<strong>Runa Corrosiva Superiore</strong> Il danno da acido inflitto da questa arma ignora la resistenza all'acido del bersaglio."
+                    "success": "Il danno da acido inflitto da questa arma ignora la resistenza all'acido del bersaglio."
                 }
             },
             "greaterFearsome": {
@@ -1280,7 +1280,7 @@
             },
             "returning": {
                 "Name": "Ritornante",
-                "Note": "<strong>Runa Ritornante</strong> Quando fai un Colpo da lancio con questa arma, essa vola indietro verso la tua mano dopo che il Colpo è completato. Se le tue mani sono piene quando l'arma ritorna, essa cade a terra nel tuo spazio."
+                "Note": "Quando fai un Colpo da lancio con questa arma, essa vola indietro verso la tua mano dopo che il Colpo è completato. Se le tue mani sono piene quando l'arma ritorna, essa cade a terra nel tuo spazio."
             },
             "serrating": {
                 "Name": "Seghettata"
@@ -1371,7 +1371,14 @@
                 "OutOfRange": "Il bersaglio non è in gittata.",
                 "MeleeLabel": "Colpo in Mischia: {weapon}",
                 "RangedLabel": "Colpo a Distanza: {weapon}"
-            }
+            },
+            "Range": {
+                "IncrementN": "Incremento di Gittata {n}m",
+                "MaxN": "Gittata {n}m"
+            },
+            "Use": "Usa",
+            "ApplyEffect": "Applica Effetto",
+            "ExpandDescription": "Espandi Descrizione"
         },
         "ActionActionTypeLabel": "Tipo di Azione",
         "ItemBonusShortLabel": "Oggetto",
@@ -2439,7 +2446,13 @@
                 "ShieldDamagedForNDestroyed": "Il suo scudo subisce {shieldDamage} danni, distruggendosi.",
                 "ShieldNotRaised": "{actor} non ha alzato il suo scudo.",
                 "TakesNoDamage": "<actor>{actor}</actor> non subisce danni.",
-                "TheTarget": "Il bersaglio"
+                "TheTarget": "Il bersaglio",
+                "InstantDeath": {
+                    "DeathEffect": "L'effetto di morte lo uccide immediatamente.",
+                    "Destroyed": "È distrutto.",
+                    "FinePowder": "È ridotto a una polvere fine; il suo equipaggiamento resta.",
+                    "MassiveDamage": "I danni massicci lo uccidono immediatamente."
+                }
             },
             "Character": {
                 "Configure": {
@@ -2485,7 +2498,34 @@
                     "NotSelected": "Non Selezionato",
                     "Partial": "Parziale",
                     "LegacyFlaws": "Difetti Legacy",
-                    "KeyIcon": "Chiave"
+                    "KeyIcon": "Chiave",
+                    "Increase": "Aumenta"
+                },
+                "Blurb": "{class} {ancestry} Livello {level}",
+                "Biography": {
+                    "ToggleVisibility": "Cambia visibilità agli altri giocatori",
+                    "Anathema": {
+                        "Add": "Aggiungi Anatema",
+                        "Delete": "Elimina Anatema"
+                    },
+                    "Edicts": {
+                        "Add": "Aggiungi Editto",
+                        "Delete": "Elimina Editto"
+                    }
+                },
+                "Crafting": {
+                    "Cost": "Costo"
+                },
+                "HandsOccupied": "Mani Occupate",
+                "Attribute": {
+                    "Key": "Caratteristica Chiave",
+                    "Apex": "Attributo Apex",
+                    "Boosts": "Incrementi di Caratteristica"
+                },
+                "Proficiency": {
+                    "SavingThrow": {
+                        "Title": "Tiri Salvezza"
+                    }
                 }
             },
             "Hazard": {
@@ -2600,7 +2640,8 @@
                         "ControlClick": "[Ctrl-Click] Incrementa di 10"
                     }
                 }
-            }
+            },
+            "Attacks": "Attacchi"
         },
         "AreaTypeCone": "Cono",
         "BrowseLabel": "Cerca",
@@ -4290,7 +4331,7 @@
         "StackGroupBolts": "Quadrelli per Balestra",
         "StackGroupCoins": "Monete",
         "StackGroupGems": "Gemme",
-        "StackGroupLabel": "Somma con",
+        "StackGroupLabel": "Gruppo Accumulo",
         "StackGroupSlingBullets": "Proiettili per Fionda",
         "StackGroupWoodenTaws": "Biglie di Legno",
         "StaminaPointsHeader": "Punti Tenacia",
@@ -5439,7 +5480,7 @@
             "Unidentified": "Non Identificato",
             "TraitGMNote": "Nota: questo tratto è nascosto ai giocatori.",
             "UnidentifiedDescription": "La natura di {item} non è chiara.",
-            "UnidentifiedHint": "Cambia i dettagli mostrati base di quest'oggetto quando non identificato.",
+            "UnidentifiedHint": "Cambia i dettagli base mostrati ai giocatori quando quest'oggetto è non identificato.",
             "UnidentifiedItem": "{item} Insolito"
         },
         "Familiar": {
@@ -5461,7 +5502,7 @@
             "AbilitiesLabel": "Abilità"
         },
         "ui": {
-            "equipmentInvested": "Attiva Impegnare il tuo equipaggiamento",
+            "equipmentInvested": "Cambia Investimento",
             "armorEquipped": "Attiva Indossare il tuo equipaggiamento",
             "sell": "Vendere",
             "weaponEquipped": "Attiva/disattiva arma tenuta in mano"
@@ -5479,7 +5520,7 @@
             "LootLabel": "Bottino",
             "LootNamePlaceholder": "Bottino",
             "LootNPCsPopupHeader": "Scegli un token dal quale vuoi prelevare/saccheggiare",
-            "LootNPCsLabel": "Preleva/saccheggia dai token selezionati",
+            "LootNPCsLabel": "Preleva/Saccheggia dai Token Selezionati",
             "MerchantDescription": "Consentire ai giocatori di acquistare oggetti direttamente dalla scheda.",
             "MerchantLabel": "Mercante",
             "MoveLoot": "Sposta Oggetti",
@@ -5490,8 +5531,8 @@
             "TransferSubtitle": "Trasferisci Oggetto",
             "LootSubtitle": "Saccheggia Oggetto",
             "HiddenWhenEmpty": {
-                "Label": "Nascosto se vuoto",
-                "Hint": "Nascondi il token di questo personaggio quando il suo inventario è vuoto"
+                "Label": "Nascosto Se Vuoto",
+                "Hint": "Nascondi il token di questo personaggio quando il suo inventario è vuoto."
             },
             "PlantSubtitle": "Metti Oggetto",
             "BuySubtitle": "Compra oggetto",
@@ -7020,7 +7061,18 @@
         "TraitReach120": "Portata 36 metri",
         "ConditionTypeOffGuard": "Impreparato",
         "TraitAffixedToMediumHeavyMetalArmor": "Applicato a un'Armatura di Metallo Media o Pesante",
-        "TraitEtchedOntoMediumHeavyMetalArmor": "Inciso su un'Armatura di Metallo Media o Pesante"
+        "TraitEtchedOntoMediumHeavyMetalArmor": "Inciso su un'Armatura di Metallo Media o Pesante",
+        "AccessoryPropertyRuneGreaterWindCatcher": "Acchiappavento Superiore",
+        "AccessoryPropertyRuneDragonsBreath": "Respiro del Drago",
+        "AccessoryPropertyRuneCalled": "Richiamabile",
+        "AccessoryPropertyRuneMajorPaired": "Abbinata Maggiore",
+        "AccessoryPropertyRuneWindCatcher": "Acchiappavento",
+        "AccessoryPropertyRuneSoftLanding": "Atterraggio Morbido",
+        "AccessoryPropertyRunePaired": "Abbinata",
+        "AccessoryPropertyRunePresentable": "Presentabile",
+        "AccessoryPropertyRuneGreaterPaired": "Abbinata Superiore",
+        "AccessoryPropertyRuneSnagging": "Acchiappante",
+        "AccessoryPropertyRuneSpellBastion": "Bastione Incantato"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
@@ -7086,5 +7138,8 @@
         "Kingdom": {
             "InvestedBonus": "Bonus di Status a {ability}"
         }
+    },
+    "COMPENDIUM": {
+        "MigrationStatus": "Stato Migrazione"
     }
 }
