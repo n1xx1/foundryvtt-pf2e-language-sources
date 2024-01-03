@@ -97,7 +97,7 @@
             "PassivesLabel": "Passive",
             "PublicNotes": "Descrizione",
             "PrivateNotes": "Note Private",
-            "SendToChat": "Invia sulla chat",
+            "SendToChat": "Invia sulla Chat",
             "SpellsTab": "Incantesimi",
             "HPExtraInfoLabelPlaceholder": "Dettagli PF...",
             "Inventory": {
@@ -123,10 +123,10 @@
         "Actions": {
             "Grapple": {
                 "Notes": {
-                    "criticalFailure": "<strong>Fallimento Critico</strong> L'avversario si libera se lo avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto}. Il bersaglio può @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Afferrarti}, come se avesse compiuto con successo l'azione lottare contro di te, oppure farti cadere e atterrare @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.",
-                    "criticalSuccess": "<strong>Successo Critico</strong> L'avversario è @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} fino alla fine del tuo prossimo turno, a meno che tu non ti muova o lui @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugga}.",
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Il bersaglio si libera se lo avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto}. Il bersaglio può @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Afferrarti}, come se avesse compiuto con successo l'azione lottare contro di te, oppure farti cadere e atterrare @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} fino alla fine del tuo prossimo turno, a meno che tu non ti muova o lui @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugga}.",
                     "success": "<strong>Successo</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} fino alla fine del tuo prossimo turno, a meno che tu non ti muova o lui @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugga}.",
-                    "failure": "<strong>Fallimento</strong> Non riesci ad Afferrare l'avversario. Se avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} l'avversario con Lottare, non è più soggetto a queste condizioni."
+                    "failure": "<strong>Fallimento</strong> Non riesci ad afferrare il bersaglio. Se avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} l'avversario con Lottare, non è più soggetto a queste condizioni."
                 },
                 "Title": "Lottare"
             },
@@ -228,7 +228,13 @@
                     "criticalFailure": "<strong>Fallimento Critico</strong> Come fallimento ma le conseguenze sono peggiori."
                 },
                 "Title": "Manovrare in Volo",
-                "Description": "<p>Provi a compiere una manovra difficile in volo. Effettua una prova di Acrobazia. Il GM determina quali manovre puoi effettuare, ma difficilmente ti permetterà di muoverti più di quanto permesso dalla tua Velocità di volare.</p><p><strong>Successo</strong> Compi la manovra.<br><strong>Fallimento</strong> La manovra fallisce. Il GM sceglie se semplicemente, non puoi muoverti o se accade qualcosa di negativo. Il risultato dovrebbe essere appropriato alla manovra (come finire fuori rotta se cercavi di virare in direzione contraria a un forte vento).<br><strong>Fallimento Critico</strong> Come fallimento ma le conseguenze sono peggiori.</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Manovrare in Volo</h2><p><strong>Addestrato</strong> ascesa ripida o discesa in picchiata</p><p><strong>Esperto</strong> volare controvento, librarsi a mezz'aria</p><p><strong>Maestro</strong> invertire la direzione</p><p><strong>Leggendario</strong> volare con vento di burrasca</p></section>"
+                "Description": "<p>Provi a compiere una manovra difficile in volo. Effettua una prova di Acrobazia. Il GM determina quali manovre puoi effettuare, ma difficilmente ti permetterà di muoverti più di quanto permesso dalla tua Velocità di volare.</p><p><strong>Successo</strong> Compi la manovra.<br><strong>Fallimento</strong> La manovra fallisce. Il GM sceglie se semplicemente, non puoi muoverti o se accade qualcosa di negativo. Il risultato dovrebbe essere appropriato alla manovra (come finire fuori rotta se cercavi di virare in direzione contraria a un forte vento).<br><strong>Fallimento Critico</strong> Come fallimento ma le conseguenze sono peggiori.</p>",
+                "SampleTasks": {
+                    "Master": "invertire la direzione",
+                    "Legendary": "volare con vento di burrasca",
+                    "Trained": "ascesa ripida o discesa in picchiata",
+                    "Expert": "volare controvento, librarsi a mezz'aria"
+                }
             },
             "RaiseAShield": {
                 "ShieldIsDestroyed": "Lo {shield} di {actor} è distrutto.",
@@ -298,7 +304,14 @@
                     "criticalSuccess": "<strong>Successo Critico</strong> Hai un'ottima idea di dove ti trovi. Se sei in un ambiente con direzioni cardinali, sai esattamente dove sono.",
                     "success": "<strong>Successo</strong> Ti orienti quanto basta per evitare di perderti completamente. Se sei in un ambiente con direzioni cardinali, sai bene o male dove sono."
                 },
-                "Description": "<p>Usando le stelle, la posizione del sole, elementi geografici o della flora, oppure il comportamento della fauna, puoi orientarti nelle terre selvagge. Solitamente effettui una prova di Sopravvivenza solo una volta al giorno, ma alcuni ambienti o alcuni cambiamenti potrebbero costringerti a effettuarne più spesso. Il GM determina la CD e il tempo impiegato da quest'attività (solitamente circa un minuto). Luoghi molto inusuali o con i quali non sei familiare potrebbero richiedere un grado di competenza minimo per Trovare la Direzione. Senza una bussola subisci penalità -2 alle prove per Trovare la Direzione.</p><p><strong>Successo Critico</strong> Hai un'ottima idea di dove ti trovi. Se sei in un ambiente con direzioni cardinali, sai esattamente dove sono.</p><p><strong>Successo</strong> Ti orienti quanto basta per evitare di perderti completamente. Se sei in un ambiente con direzioni cardinali, sai bene o male dove sono.</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Trovare la Direzione</h2><p><strong>Senza Addestramento</strong> determinare un punto cardinale usando il sole</p><p><strong>Addestrato</strong> trovare un sentiero coperto dalla vegetazione in una foresta</p><p><strong>Esperto</strong> orientarsi in un labirinto di siepi</p><p><strong>Maestro</strong> orientarsi in un labirinto bizantino o un deserto senza punti di riferimento</p><p><strong>Leggendario</strong> orientarsi in un reame di sogno in costante mutamento</p></section>"
+                "Description": "<p>Usando le stelle, la posizione del sole, elementi geografici o della flora, oppure il comportamento della fauna, puoi orientarti nelle terre selvagge. Solitamente effettui una prova di Sopravvivenza solo una volta al giorno, ma alcuni ambienti o alcuni cambiamenti potrebbero costringerti a effettuarne più spesso. Il GM determina la CD e il tempo impiegato da quest'attività (solitamente circa un minuto). Luoghi molto inusuali o con i quali non sei familiare potrebbero richiedere un grado di competenza minimo per Trovare la Direzione. Senza una bussola subisci penalità -2 alle prove per Trovare la Direzione.</p><p><strong>Successo Critico</strong> Hai un'ottima idea di dove ti trovi. Se sei in un ambiente con direzioni cardinali, sai esattamente dove sono.</p><p><strong>Successo</strong> Ti orienti quanto basta per evitare di perderti completamente. Se sei in un ambiente con direzioni cardinali, sai bene o male dove sono.</p>",
+                "SampleTasks": {
+                    "Untrained": "determinare un punto cardinale usando il sole",
+                    "Expert": "orientarsi in un labirinto di siepi",
+                    "Master": "orientarsi in un labirinto bizantino o un deserto senza punti di riferimento",
+                    "Trained": "trovare un sentiero coperto dalla vegetazione in una foresta",
+                    "Legendary": "orientarsi in un reame di sogno in costante mutamento"
+                }
             },
             "WhirlingThrow": {
                 "Notes": {
@@ -385,7 +398,14 @@
                     "criticalFailure": "<strong>Fallimento Critico</strong> Cadi e il tuo turno finisce."
                 },
                 "Title": "Bilanciarsi",
-                "Description": "<p>Attraversi una superficie stretta o un terreno irregolare, effettuando una prova di Acrobazia contro la sua CD di Bilanciarsi. Mentre sei su una superficie stretta o su terreno irregolare sei impreparato.</p><p><strong>Successo Critico</strong> Ti muovi fino alla tua Velocità.<br><strong>Successo</strong> Ti muovi fino alla tua Velocità come se fossi su terreno difficile (ogni 1,5 metri costano 3 metri di movimento).<br><strong>Fallimento</strong> Devi rimanere fermo per mantenere l'equilibrio (sprecando l'azione) oppure cadi. Se cadi, il tuo turno finisce.<br><strong>Fallimento Critico</strong> Cadi e il tuo turno finisce.</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Bilanciarsi</h2><p><strong>Senza Addestramento</strong> radici intrecciate, ciottoli irregolari</p><p><strong>Addestrato</strong> asse di legno</p><p><strong>Esperto</strong> abisso, ghiaia franabile</p><p><strong>Maestro</strong> corda da funambolo, sottile lastra di ghiaccio</p><p><strong>Leggendario</strong> filo del rasoio, pezzi di pavimento in caduta libera</p></section>"
+                "Description": "<p>Attraversi una superficie stretta o un terreno irregolare, effettuando una prova di Acrobazia contro la sua CD di Bilanciarsi. Mentre sei su una superficie stretta o su terreno irregolare sei impreparato.</p><p><strong>Successo Critico</strong> Ti muovi fino alla tua Velocità.<br><strong>Successo</strong> Ti muovi fino alla tua Velocità come se fossi su terreno difficile (ogni 1,5 metri costano 3 metri di movimento).<br><strong>Fallimento</strong> Devi rimanere fermo per mantenere l'equilibrio (sprecando l'azione) oppure cadi. Se cadi, il tuo turno finisce.<br><strong>Fallimento Critico</strong> Cadi e il tuo turno finisce.</p>",
+                "SampleTasks": {
+                    "Trained": "asse di legno",
+                    "Expert": "abisso, ghiaia franabile",
+                    "Master": "corda da funambolo, sottile lastra di ghiaccio",
+                    "Legendary": "filo del rasoio, pezzi di pavimento in caduta libera",
+                    "Untrained": "radici intrecciate, ciottoli irregolari"
+                }
             },
             "Climb": {
                 "Notes": {
@@ -436,7 +456,7 @@
             },
             "Disarm": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Successo Critico</strong> L'avversario perde la presa sull'oggetto, che cade a terra nello spazio dell'avversario.",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Il bersaglio perde la presa sull'oggetto, che cade a terra nello spazio del bersaglio.",
                     "success": "<strong>Successo</strong> Indebolisci la presa del bersaglio sull'oggetto. I successivi tentativi di Disarmare il bersaglio di quell'oggetto ottengono bonus di circostanza +2, e il bersaglio subisce penalità di circostanza -2 agli attacchi con l'oggetto e ad altre prove che richiedono una salda presa su di esso. La creatura può interrompere l'effetto Interagendo per cambiare la sua presa sull'oggetto; altrimenti dura finché la creatura tiene l'oggetto.<br>@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Effetto: Disarmare (Successo)}",
                     "criticalFailure": "<strong>Fallimento Critico</strong> Perdi l'equilibrio e diventi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} fino all'inizio del tuo prossimo turno."
                 },
@@ -570,7 +590,11 @@
                     "criticalFailure": "<strong>Fallimento Critico</strong> Ti incastri. Mentre sei incastrato puoi spendere 1 minuto per effettuare un'altra prova di Acrobazia con la stessa CD. Qualsiasi risultato che non sia un fallimento critico ti permette di disincastrarti."
                 },
                 "Title": "Stringersi",
-                "Description": "<p>Ti contorci per infilarti in uno spazio così stretto che ci entri a malapena. Questa azione è solo per spazi incredibilmente stretti, mentre la maggior parte degli spazi stretti sono Terreni Difficili che puoi attraversare più rapidamente e senza effettuare prove.</p><p><strong>Successo Critico</strong> Attraversi lo spazio stringendoti, a una velocità di 3 metri al minuto.<br><strong>Successo</strong> Attraversi lo spazio stringendoti, a una velocità di 1,5 metri al minuto.<br><strong>Fallimento Critico</strong> Ti incastri. Mentre sei incastrato puoi spendere 1 minuto per effettuare un'altra prova di Acrobazia con la stessa CD. Qualsiasi risultato che non sia un fallimento critico ti permette di disincastrarti.</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Stringersi</h2><p><strong>Addestrato</strong> spazio largo non più delle tue spalle</p><p><strong>Maestro</strong> spazio largo non più della tua testa</p>"
+                "Description": "<p>Ti contorci per infilarti in uno spazio così stretto che ci entri a malapena. Questa azione è solo per spazi incredibilmente stretti, mentre la maggior parte degli spazi stretti sono Terreni Difficili che puoi attraversare più rapidamente e senza effettuare prove.</p><p><strong>Successo Critico</strong> Attraversi lo spazio stringendoti, a una velocità di 3 metri al minuto.<br><strong>Successo</strong> Attraversi lo spazio stringendoti, a una velocità di 1,5 metri al minuto.<br><strong>Fallimento Critico</strong> Ti incastri. Mentre sei incastrato puoi spendere 1 minuto per effettuare un'altra prova di Acrobazia con la stessa CD. Qualsiasi risultato che non sia un fallimento critico ti permette di disincastrarti.</p>",
+                "SampleTasks": {
+                    "Trained": "spazio largo non più delle tue spalle",
+                    "Master": "spazio largo non più della tua testa"
+                }
             },
             "SteelYourResolve": {
                 "Title": "Risolutezza Ferrea",
@@ -640,7 +664,13 @@
                     "success": "<strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice ne comprendi il significato generale, ma non puoi fornirne una traduzione parola per parola.",
                     "criticalSuccess": "<strong>Successo Critico</strong> Comprendi il vero significato del testo."
                 },
-                "Description": "<p>Tenti di decifrare un testo complicato o che tratta di un argomento oscuro. Di solito occorre 1 minuto per pagina, ma potrebbe volerci di più (solitamente un'ora per pagina per decifrare testi cifrati). Il testo dev'essere in una lingua che sai leggere, ma il GM potrebbe permetterti di usare Società per provare a decifrare un testo in una lingua che non ti è familiare.</p><p>La CD viene stabilita dal GM in base allo stato di conservazione o alla complessità del documento; ti potrebbe essere richiesto di effettuare una prova per un breve testo, o una prova per ciascuna sezione di un testo più ampio.</p><p><strong>Successo Critico</strong> Comprendi il vero significato del testo.</p><p><strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice ne comprendi il significato generale, ma non puoi fornirne una traduzione parola per parola.</p><p><strong>Fallimento</strong> Non comprendi il testo e subisci penalità di circostanza -2 a ulteriori prove per decifrarlo.</p><p><strong>Fallimento Critico</strong> Pensi di aver compreso il testo sulla pagina, ma in realtà lo hai frainteso</p><section class=\"sample-tasks\"><h2>Esempi di Compiti di Decifrare</h2><p><strong>Addestrato</strong> un trattato base di filosofia</p><p><strong>Esperto</strong> un codice complesso, ad esempio un messaggio cifrato</p><p><strong>Maestro</strong> il cifrario di un maestro delle spie o appunti su ricerche avanzate</p><p><strong>Leggendario</strong> un testo planare esoterico scritto sotto forma di metafore da un antico celestiale</p></section>"
+                "Description": "<p>Tenti di decifrare un testo complicato o che tratta di un argomento oscuro. Di solito occorre 1 minuto per pagina, ma potrebbe volerci di più (solitamente un'ora per pagina per decifrare testi cifrati). Il testo dev'essere in una lingua che sai leggere, ma il GM potrebbe permetterti di usare Società per provare a decifrare un testo in una lingua che non ti è familiare.</p><p>La CD viene stabilita dal GM in base allo stato di conservazione o alla complessità del documento; ti potrebbe essere richiesto di effettuare una prova per un breve testo, o una prova per ciascuna sezione di un testo più ampio.</p><p><strong>Successo Critico</strong> Comprendi il vero significato del testo.</p><p><strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice ne comprendi il significato generale, ma non puoi fornirne una traduzione parola per parola.</p><p><strong>Fallimento</strong> Non comprendi il testo e subisci penalità di circostanza -2 a ulteriori prove per decifrarlo.</p><p><strong>Fallimento Critico</strong> Pensi di aver compreso il testo sulla pagina, ma in realtà lo hai frainteso</p>",
+                "SampleTasks": {
+                    "Expert": "un codice complesso, ad esempio un messaggio cifrato",
+                    "Master": "il cifrario di un maestro delle spie o appunti su ricerche avanzate",
+                    "Legendary": "un testo planare esoterico scritto sotto forma di metafore da un antico celestiale",
+                    "Trained": "un trattato base di filosofia"
+                }
             },
             "Perform": {
                 "Notes": {
@@ -744,7 +774,7 @@
                     "UnknownVariant": "Alternativa sconosciuta {variant} usata per Prestare Primo Soccorso, usa uno tra {variants}.",
                     "TargetNotDying": "La creatura bersagliata non è morente."
                 },
-                "Description": "<p>Presti il primo soccorso a una creatura adiacente che sia morente o sanguinante. Se una creatura è morente e sanguinante, scegli quale delle due condizioni curare prima di tirare. In seguito puoi Prestare Primo Soccorso di nuovo per tentare di curare l'altro effetto.</p><ul><li><strong>Stabilizzare</strong> Effettua una prova di Medicina su una creatura che ha 0 Punti Ferita e la condizione morente. La CD è pari a 5 + la CD della prova per il recupero di quella creatura (solitamente 15 + il suo valore di morente).</li><li><strong>Fermare Sanguinamento</strong> Effettua una prova di Medicina su una creatura che sta subendo danni persistenti da sanguinamento. La CD è solitamente pari alla CD del l'effetto che ha provocato il sanguinamento.</li></ul><p><strong>Successo</strong> Se stai cercando di stabilizzare, la creatura perde la condizione morente, ma rimane @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{priva di sensi}. Se stai cercando di fermare il sanguinamento, la creatura ha i benefici di una guarigione assistita con la CD ridotta per un aiuto particolarmente appropriato.<br><strong>Fallimento Critico</strong> Se stavi cercando di stabilizzare, il valore di morente del bersaglio incrementa di 1. Se stavi tentando di fermare il sanguinamento, il bersaglio subisce immediatamente un ammontare di danni pari al suo danno persistente da sanguinamento.</p>",
+                "Description": "<p>Presti il primo soccorso a una creatura adiacente che sia morente o sanguinante. Se una creatura è morente e sanguinante, scegli quale delle due condizioni curare prima di tirare. In seguito puoi Prestare Primo Soccorso di nuovo per tentare di curare l'altro effetto.</p><ul><li><strong>Stabilizzare</strong> Effettua una prova di Medicina su una creatura che ha 0 Punti Ferita e la condizione morente. La CD è pari a 5 + la CD della prova per il recupero di quella creatura (solitamente 15 + il suo valore di morente).</li><li><strong>Fermare Sanguinamento</strong> Effettua una prova di Medicina su una creatura che sta subendo danni persistenti da sanguinamento. La CD è solitamente pari alla CD del l'effetto che ha provocato il sanguinamento.</li></ul><p><strong>Successo</strong> Se stai cercando di stabilizzare, la creatura perde la condizione morente, ma rimane @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{priva di sensi}. Se stai cercando di fermare il sanguinamento, la creatura ha i benefici di una guarigione assistita con la CD ridotta per un aiuto particolarmente appropriato.</p><p><strong>Fallimento Critico</strong> Se stavi cercando di stabilizzare, il valore di morente del bersaglio incrementa di 1. Se stavi tentando di fermare il sanguinamento, il bersaglio subisce immediatamente un ammontare di danni pari al suo danno persistente da sanguinamento.</p>",
                 "Title": "Prestare Primo Soccorso"
             },
             "CreateForgery": {
@@ -2390,7 +2420,7 @@
                         "Thoughtsense": "Percezione del Pensiero"
                     },
                     "WithAcuity": "{sense} ({acuity})",
-                    "WithAcuityAndRange": "{sense} ({acuity} {range} metri)"
+                    "WithAcuityAndRange": "{sense} ({acuity}) {range} metri"
                 },
                 "Alliance": {
                     "Opposition": "Opposizione",
