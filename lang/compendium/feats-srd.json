@@ -6047,7 +6047,7 @@
       "name": "Dragon Transformation"
     },
     "Dragon's Breath": {
-      "description": "<p>You can put more effort into your Kobold Breath to channel greater draconic power, though it takes more out of you. When you use Kobold Breath, you can increase the damage dice to d8s and increase the area to @Template[type:line|distance:60]{60 feet} for a line breath weapon or @Template[type:cone|distance:30]{30 feet} for a cone. If you do, you can't use Kobold Breath again for 1 hour.</p>\n<p>[[/r (ceil(@actor.level/2))d8]]{Leveled damage}</p>",
+      "description": "<p>You can put more effort into your Kobold Breath to channel greater draconic power, though it takes more out of you. When you use Kobold Breath, you can increase the damage dice to d8s and increase the area to @Template[type:line|distance:60]{60 feet} for a line breath weapon or @Template[type:cone|distance:30]{30 feet} for a cone. If you do, you can't use Kobold Breath again for 1 hour.</p>\n<p>@Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]]{Leveled damage}</p>",
       "featPrerequisites": {
         "0": "Kobold Breath"
       },
@@ -6072,7 +6072,7 @@
       "name": "Dragon's Rage Wings"
     },
     "Dragonblood Paragon": {
-      "description": "<p>Your draconic anatomy becomes especially pronounced. You increase the power of one of the following kobold heritages or feats you have.</p>\n<hr />\n<p><strong>Dracomancer</strong> Increase the number of times you can cast each of the granted 1st- and 2nd-rank innate spells by 1.</p>\n<p><strong>Kobold Breath</strong> Creatures that critically fail their save against your Kobold Breath take @Damage[3d4[persistent]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Damage} of the type dealt by your draconic patron.</p>\n<p><strong>Strongjaw Kobold</strong> Your jaws unarmed attack gains the deadly d6 trait.</p>\n<p><strong>Venomtail Kobold</strong> You produce enough venom to use the Tail Toxin action twice per day.</p>",
+      "description": "<p>Your draconic anatomy becomes especially pronounced. You increase the power of one of the following kobold heritages or feats you have.</p>\n<hr />\n<p><strong>Dracomancer</strong> Increase the number of times you can cast each of the granted 1st- and 2nd-rank innate spells by 1.</p>\n<p><strong>Kobold Breath</strong> Creatures that critically fail their save against your Kobold Breath take @Damage[3d4[@actor.flags.pf2e.draconicExemplar.damageType,persistent]] of the type dealt by your draconic patron.</p>\n<p><strong>Strongjaw Kobold</strong> Your jaws unarmed attack gains the deadly d6 trait.</p>\n<p><strong>Venomtail Kobold</strong> You produce enough venom to use the Tail Toxin action twice per day.</p>",
       "featPrerequisites": {
         "0": "strongjaw kobold heritage, venomtail kobold heritage, Dracomancer, or Kobold Breath"
       },
@@ -12378,7 +12378,7 @@
       "name": "Known Weaknesses"
     },
     "Kobold Breath": {
-      "description": "<p>You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[type:line|distance:30] or a @Template[type:cone|distance:15], dealing 1d4 damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d4. The shape of the breath, the damage type, and the saving throw match those of your @UUID[Compendium.pf2e.ancestryfeatures.Item.egpiSWBrNBb1Fmig]{Draconic Exemplar}. This ability has the trait associated with the type of damage it deals.</p>\n<hr />\n<p>@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]</p>\n<p>[[/r ceil(@actor.level/2)d4[acid]]]{Leveled acid} [[/r ceil(@actor.level/2)d4[cold]]]{Leveled cold} [[/r ceil(@actor.level/2)d4[electricity]]]{Leveled electricity} [[/r ceil(@actor.level/2)d4[fire]]]{Leveled fire} [[/r ceil(@actor.level/2)d4[poison]]]{Leveled poison}</p>",
+      "description": "<p>You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[type:line|distance:30] or a @Template[type:cone|distance:15], dealing @Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.draconicExemplar.damageType]] damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d4. The shape of the breath, the damage type, and the saving throw match those of your @UUID[Compendium.pf2e.ancestryfeatures.Item.egpiSWBrNBb1Fmig]{Draconic Exemplar}. This ability has the trait associated with the type of damage it deals.</p>\n<hr />\n<p>@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]</p>",
       "name": "Kobold Breath"
     },
     "Kobold Lore": {
