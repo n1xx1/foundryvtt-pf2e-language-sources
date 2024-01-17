@@ -524,21 +524,9 @@
       "description": "<p><strong>Prerequisites</strong> Trained in Diplomacy</p>\n<p><strong>Requirements</strong> The target ally lost Stamina Points within the last round</p>\n<hr />\n<p>You give an ally within 30 feet a quick pep talk, helping them recover. Attempt a Diplomacy check. The DC is usually 15, though the GM might adjust it based on the circumstances. If you have expert proficiency in Diplomacy, you can instead attempt a DC 20 check to increase the Stamina Points recovered by 5; if you have master proficiency, you can attempt a DC 30 check to increase the Stamina Points by 15; if you have legendary proficiency, you can attempt a DC 40 check to increase the Stamina Points by 25. No matter the result, the ally is temporarily immune to Encouraging Words until they either @UUID[Compendium.pf2e.actionspf2e.Item.qc0VsZ0UesnurUUB]{Take a Breather} or rest for the day.</p>\n<hr />\n<p><strong>Critical Success</strong> The ally recovers [[/r {2d8} #Stamina Points]]{2d8 Stamina Points}.</p>\n<p><strong>Success</strong> The ally recovers [[/r {1d8} #Stamina Points]]{1d8 Stamina Points}.</p>\n<p><strong>Critical Failure</strong> The ally takes @Damage[1d8[mental]] damage, but this can reduce only Stamina Points, never Hit Points.</p>",
       "name": "Encouraging Words"
     },
-    "Energy Emanation (Acid)": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Energy bursts forth from your body. You deal 1d6 acid damage to all adjacent creatures (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher). At 3rd level, and every 2 levels thereafter, this damage increases by 1d6 damage.</p>\n<p>[[/r (ceil(@actor.level/2))d6[acid]]]{Leveled Damage}</p>",
-      "name": "Energy Emanation (Acid)"
-    },
-    "Energy Emanation (Cold)": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Energy bursts forth from your body. You deal 1d6 cold damage to all adjacent creatures (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher). At 3rd level, and every 2 levels thereafter, this damage increases by 1d6 damage.</p>\n<p>[[/r (ceil(@actor.level/2))d6[cold]]]{Leveled Damage}</p>",
-      "name": "Energy Emanation (Cold)"
-    },
-    "Energy Emanation (Electricity)": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Energy bursts forth from your body. You deal 1d6 electricity damage to all adjacent creatures (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher). At 3rd level, and every 2 levels thereafter, this damage increases by 1d6 damage.</p>\n<p>[[/r (ceil(@actor.level/2))d6[electricity]]]{Leveled Damage}</p>",
-      "name": "Energy Emanation (Electricity)"
-    },
-    "Energy Emanation (Fire)": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Energy bursts forth from your body. You deal 1d6 fire damage to all adjacent creatures (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher). At 3rd level, and every 2 levels thereafter, this damage increases by 1d6 damage.</p>\n<p>[[/r (ceil(@actor.level/2))d6[fire]]]{Leveled Damage}</p>",
-      "name": "Energy Emanation (Fire)"
+    "Energy Emanation": {
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Energy bursts forth from your body. You deal @Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.elementalHeartDwarf.damageType]|traits:area-damage] damage to all adjacent creatures (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher). At 3rd level, and every 2 levels thereafter, this damage increases by 1d6 damage.</p>",
+      "name": "Energy Emanation"
     },
     "Energy Shot": {
       "description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<hr />\n<p>You unleash a small surge of magical energy into your weapon, shrouding the bullet with potential energy and granting it the ability to deal energy damage to your foes to exploit their weaknesses. You can Interact to draw a ranged weapon. On your first three Strikes of this encounter with a firearm or crossbow, you deal an additional 1 acid, cold, fire or electricity damage. You choose which damage type to deal as part of making each Strike.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.zocU4IYIlWwRKUuE]{Effect: Energy Shot}</p>",
