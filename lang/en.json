@@ -9368,6 +9368,7 @@
           "Construct": {
             "Prompt": "Select a construct innovation."
           },
+          "MalfunctionDamage": "Malfunctioning Innovation",
           "Prompt": "Select an innovation.",
           "Weapon": {
             "Prompt": "Select a weapon innovation."
@@ -9403,7 +9404,17 @@
           "Vitriol": "Vitriol (Acid)"
         },
         "Overdrive": {
+          "CriticalFailure": "Whoops! Something explodes. You take @Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage] damage, and you can't use Overdrive again for 1 minute as your gizmos cool down and reset.",
           "DamageTypePrompt": "Deal fire damage with overdrive?"
+        },
+        "Unstable": {
+          "FlatCheck": {
+            "CriticalFailure": "The innovation becomes incapable of being used for further unstable actions, and you also take @Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage] damage.",
+            "Failure": "The innovation becomes incapable of being used for further unstable actions.",
+            "Label": "Unstable Check"
+          },
+          "Note": "When you take an unstable action, attempt a @Check[flat|dc:17|options:unstable-flat|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]{flat check} immediately after applying its effects.",
+          "Stable": "Stable"
         }
       },
       "Investigator": {
