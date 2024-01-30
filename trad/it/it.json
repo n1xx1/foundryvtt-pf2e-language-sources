@@ -904,8 +904,8 @@
             },
             "Metagame": {
                 "ShowDC": {
-                    "Name": "Mostra CD di Attacchi e Tiri Salvezza",
-                    "Hint": "Se abilitato, i giocatori vedranno la CD delle provo fatte contro i PNG e altre sorgenti non possedute da un giocatore."
+                    "Name": "Mostra CD delle Prove",
+                    "Hint": "I giocatori possono vedere la CD delle provo fatte contro i PNG e altre sorgenti non possedute da un giocatore."
                 },
                 "Name": "Informazioni Metagame",
                 "Label": "Limita Informazioni Metagame",
@@ -916,22 +916,22 @@
                 },
                 "PartyVision": {
                     "Name": "Visione di Gruppo Condivisa",
-                    "Hint": "Se abilitata, tutti i giocatori condivideranno la visione dei token, ignorando i permessi o la selezione dei token."
+                    "Hint": "Tutti i giocatori condivideranno la visione dei token, ignorando i permessi o la selezione dei token."
                 },
                 "SecretDamage": {
                     "Name": "Nascondi i Messaggi di Danno Preso",
-                    "Hint": "Se abilitato, solo il GM vedrà i messaggi di danno/cure che sono generati dal danno delle schede della chat per i token non di proprietà di un giocatore."
+                    "Hint": "Solo il GM può vedere i messaggi di danno/cure che sono generati dal danno delle schede della chat per i token non di proprietà di un giocatore."
                 },
                 "SecretCondition": {
                     "Name": "Nascondi Messaggio di Aggiornamento Condizione",
-                    "Hint": "Se abilitato, soltanto il GM vedrà i messaggi di aggiornamento e i promemoria delle condizioni che sono generati per i token non di proprietà del giocatore."
+                    "Hint": "Solo il GM può vedere i messaggi di aggiornamento e i promemoria delle condizioni dei PNG e altri attori non di proprietà dei giocatori."
                 },
                 "ShowResults": {
-                    "Name": "Mostra Risultati di Attacchi e Tiri Salvezza",
-                    "Hint": "Se abilitato, i giocatori vedranno il grado di successo delle prove fatte contro PNG e altre sorgenti non possedute da un giocatore."
+                    "Name": "Mostra Risultati Prove",
+                    "Hint": "I giocatori possono vedere il grado di successo delle prove fatte contro PNG e altre sorgenti non possedute da un giocatore."
                 },
                 "ShowPartyStats": {
-                    "Hint": "Se abilitato, i giocatori potranno vedere le statistiche per i membri del loro gruppo nella scheda dell'attore gruppo",
+                    "Hint": "I giocatori potranno vedere le statistiche per i membri del loro gruppo nella scheda dell'attore gruppo",
                     "Name": "Mostra Statistiche Membri Gruppo"
                 }
             },
@@ -1058,7 +1058,7 @@
             "Homebrew": {
                 "Name": "Elementi Homebrew",
                 "Label": "Gestisci Elementi Homebrew",
-                "Hint": "Aggiungi tratti personalizzati, lingue e altri elementi di un mondo homebrew.",
+                "Hint": "Aggiungi tratti personalizzati, tipi di armi e altri elementi di un mondo homebrew.",
                 "Instructions": "Queste impostazioni permettono ai GM di aggiungere tratti, lingue e altri elementi a un mondo homebrew. Per aggiungere questi elementi, basta scrivere il termine desiderato nei campi appropriati, separati da virgole o tab. Poi appariranno nei posti appropriati nelle schede di personaggi e oggetti. Per aggiornare un termine, cliccalo e fai il cambiamento desiderato.",
                 "ConfirmDelete": {
                     "Title": "Elimina Elemento Homebrew?",
@@ -1160,8 +1160,8 @@
                 "SourcesListHeader": "Origini Specificate"
             },
             "CampaignType": {
-                "Name": "Tipo Campagna",
-                "Hint": "Tipo regole di campagna estese per i gruppi",
+                "Name": "Privilegi Specifici per Campagna",
+                "Hint": "Supporto campagna estesa per le campagne come Alba dei Re",
                 "Choices": {
                     "none": "Nessuno",
                     "kingmaker": "Alba dei Re"
@@ -1828,18 +1828,18 @@
         "Item": {
             "Weapon": {
                 "CriticalSpecialization": {
-                    "bow": "Se il bersaglio del colpo critico è adiacente ad una superficie rimane inchiodato a quella superficie dal proiettile. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} e deve usare un azione Interagire per tentare una prova di @Check[type:athletics|dc:10|name:Liberare il Proiettile|showDC:all] per liberare il proiettile e non può muoversi dal suo spazio finché non ha successo nella prova. La creatura non rimane bloccata se è Incorporea, liquida (come un elementale dell'acqua o alcune melme) o potrebbe comunque liberarsi senza sforzo alcuno.",
-                    "axe": "Effetti di Specializzazione del Critico: Scegli una creatura adiacente al bersaglio iniziale che sia entro portata. Se la sua CA è minore del risultato del tuo Tiro per Colpire che ha prodotto il colpo critico, infliggi a quella creatura danno pari al risultato del dado di danno dell'arma che ha ottenuto (inclusi i danni extra per la runa di potenziamento, se disponibile). Questa quantità di danno non viene raddoppiata e non vengono aggiunti bonus o altri dadi addizionali.",
+                    "bow": "Se il bersaglio del colpo critico è adiacente ad una superficie rimane inchiodato a quella superficie dal proiettile. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} e deve usare un azione Interagire per tentare una prova di @Check[type:athletics|dc:10|name:Liberare il Proiettile|showDC:all] per liberare il proiettile e non può muoversi dal suo spazio finché non ha successo nella prova. La creatura non rimane bloccata se è Incorporea, liquida o potrebbe comunque liberarsi senza sforzo alcuno (come essere abbastanza larga che un proiettile non rappresenti un impedimento).",
+                    "axe": "Effetti di Specializzazione del Critico: Scegli una creatura adiacente al bersaglio iniziale che sia entro portata. Se la sua CA è minore del risultato del tuo tiro per colpire che ha prodotto il colpo critico, infliggi a quella creatura danno pari al risultato del dado di danno dell'arma che ha ottenuto (inclusi i danni extra per la <em>runa poderosa</em>, se disponibile). Questa quantità di danno non viene raddoppiata e non vengono aggiunti bonus o altri dadi addizionali.",
                     "bomb": "Aumenta il raggio del danno ad area della bomba (se ne ha uno) a 3 metri.",
-                    "club": "Scagli il bersaglio lontano da te fino a 3 metri (scegli tu la distanza). Si tratta di un movimento forzato.",
+                    "club": "Scagli il bersaglio lontano da te fino a 3 metri in una linea dritta lontano da te, in una direzione a tua scelta. Si tratta di un movimento forzato.",
                     "shield": "Respingi indietro il bersaglio di 1,5 metri. Si tratta di un movimento forzato.",
-                    "sling": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Fionda] o essere @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 1}.",
+                    "sling": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Fionda] contro la tua CD di classe o essere @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 1}.",
                     "sword": "Il bersaglio viene sbilanciato dal tuo attacco, divenendo @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} fino all'inizio del tuo prossimo turno.",
-                    "brawling": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Rissa] o essere @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno.",
+                    "brawling": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Rissa] contro la tua CD di classe o essere @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo prossimo turno.",
                     "flail": "Il bersaglio viene scagliato a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} a meno che non abbia successo a una prova @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Mazzafrusto] contro la tua CD di classe.",
                     "hammer": "Il bersaglio viene scagliato a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} a meno che non abbia successo a una prova @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Martello] contro la tua CD di classe.",
                     "polearm": "Il bersaglio, viene mosso di 1,5 metri in una direzione a tua scelta. Si tratta di un movimento forzato.",
-                    "spear": "L'arma perfora il bersaglio, indebolendone gli attacchi. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} fino all'inizio del tuo prossimo turno."
+                    "spear": "Armi di questo tipo perforano il bersaglio, indebolendone gli attacchi. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} fino all'inizio del tuo prossimo turno."
                 },
                 "FromMaterialAndRunes": "Materiali preziosi e rune in questo oggetto hanno aggiustato {property} a {value}.",
                 "HandsLabel": "Mani",
@@ -2363,7 +2363,7 @@
                 "Remove": "Rimuovi Elemento delle Regole"
             },
             "RemovalPrevented": "La rimozione di {item} è prevenuta da {preventer}.",
-            "WorldItemWarning": "Questo è un Oggetto del Mondo e non funzionerà se salvato in un compendio",
+            "WorldItemWarning": "Questo è un oggetto del mondo e non funzionerà se salvato in un compendio.",
             "Affliction": {
                 "AddStage": "Aggiungi Fase",
                 "Error": {
@@ -4336,7 +4336,7 @@
         "RangePenalty": "Penalità di Gittata",
         "Rarity": "Rarità",
         "Usage": "Utilizzo",
-        "Reach": "Portata (piedi)",
+        "Reach": "Portata (metri)",
         "RecallKnowledge": {
             "Label": "Ricordare Conoscenze",
             "Help": "Puoi tentare Richiama Conoscenza più volte per riportare alla mente maggiori informazioni su una creatura. Queste prove aumentano in difficoltà come mostrato nella tabella sottostante. Tuttavia, se fallisci, o se non è elencata alcuna CD, non puoi fare ulteriori prove di Richiamo Conoscenze contro questa creatura.",
