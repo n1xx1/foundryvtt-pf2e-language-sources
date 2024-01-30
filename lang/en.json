@@ -9823,6 +9823,12 @@
         "WeaponOrUnarmed": "Select a weapon or unarmed strike."
       },
       "Psychic": {
+        "SpellModification": {
+          "DeepRoots": "When you Cast a Spell that imposes the @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} condition or otherwise forces the target to take certain actions (such as @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command}), you can choose one target that critically failed its save. When that target finishes fulfilling any commands issued by your spell, or when the spell is dispelled or counteracted, the target takes @Damage[(@item.level)1d6[mental]] damage.",
+          "PsychicRapport": "After you Cast a Spell with the mental trait, until the start of your next turn, you gain a +1 circumstance bonus to Deception, Diplomacy, and Intimidation checks, and to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive}.",
+          "StrainMind": "You add an amp that costs 1 Focus Point to the spell. Instead of paying the normal Focus Point cost, you lose Hit Points equal to four times the spell rank of the amped psi cantrip as you bleed from your nose or suffer some other visible sign of strain.",
+          "ThoughtformSummoning": "Whenever you summon a creature, you can choose to instead create a psychic construct of that creature. This grants it resistance to physical damage equal to half its level, weakness 5 to force and mental damage, and the ability to pass through enemies' spaces without needing to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through} (though it can't end its turn in an occupied space)."
+        },
         "UnleashPsyche": {
           "DamageLabel": "Casting a spell from Psychic Spellcasting"
         }
@@ -10018,7 +10024,11 @@
             "Nymph": "Nymph grace accentuates your movements and distracts your foes, either granting you a +1 status bonus to Diplomacy checks for 1 round or imposing a -1 status penalty on one target's Will saves for 1 round.",
             "Phoenix": "The primal fire of life and death flows through you or one target. Choose to have either you or a target of the spell gain temporary Hit Points equal to the spell's rank for 1 round, or to have a target of the spell take @Damage[@item.level[fire]] damage (if the spell already deals initial fire damage, combine this with the spell's initial damage before determining weaknesses and resistances).",
             "Psychopomp": "The border between life and death becomes blurred to you. Either you gain a +2 status bonus to Fortitude saving throws for 1 round, or a target takes @Damage[@item.level[void]] if it's alive or @Damage[@item.level[vitality]] if it's undead. If the spell already deals that type of damage, combine it with the spell's initial damage before determining weaknesses and resistances.",
-            "Shadow": "Shadows grow deeper around you or one target, either granting a +1 status bonus to Stealth or imposing a -1 status penalty to Perception for 1 round.",
+            "Shadow": {
+              "Text": "Shadows grow deeper around you or one target, either granting a +1 status bonus to Stealth or imposing a -1 status penalty to Perception for 1 round.",
+              "PerceptionPenalty": "-1 penalty to Perception",
+              "StealthBonus": "+1 bonus to Stealth"
+            },
             "Undead": "Necromantic energy flows through you or one target. Either you gain temporary Hit Points equal to the spell's rank for 1 round, or a target takes @Damage[@item.level[void]] damage (if the spell already deals initial void damage, combine this with the spell's initial damage before determining weaknesses and resistances).",
             "Wyrmblessed": "Draconic might carries in your voice. Either you gain a +1 status bonus to Intimidation checks for 1 round, or a target takes a -1 status penalty to Will saves for 1 round."
           }
