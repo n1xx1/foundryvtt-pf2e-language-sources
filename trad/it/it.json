@@ -1839,7 +1839,8 @@
                     "flail": "Il bersaglio viene scagliato a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} a meno che non abbia successo a una prova @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Mazzafrusto] contro la tua CD di classe.",
                     "hammer": "Il bersaglio viene scagliato a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} a meno che non abbia successo a una prova @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Specializzazione del Critico Martello] contro la tua CD di classe.",
                     "polearm": "Il bersaglio, viene mosso di 1,5 metri in una direzione a tua scelta. Si tratta di un movimento forzato.",
-                    "spear": "Armi di questo tipo perforano il bersaglio, indebolendone gli attacchi. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} fino all'inizio del tuo prossimo turno."
+                    "spear": "Armi di questo tipo perforano il bersaglio, indebolendone gli attacchi. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} fino all'inizio del tuo prossimo turno.",
+                    "firearm": "Il bersaglio deve superare un TS su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Firearm Critical Specialization] contro la tua CD di classe o è @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 1}."
                 },
                 "FromMaterialAndRunes": "Materiali preziosi e rune in questo oggetto hanno aggiustato {property} a {value}.",
                 "HandsLabel": "Mani",
@@ -1849,7 +1850,8 @@
                     "Title": "Composizione Materiali e Rune"
                 },
                 "MeleeUsage": {
-                    "Label": "Utilizzo Mischia"
+                    "Label": "Utilizzo Mischia",
+                    "Hint": "Un’arma combinata ha una forma o uso da arma da fuoco e una forma o un uso da arma da mischia. Passare dall’uso da mischia all’uso da arma da fuoco richiede un’azione Interagire; tuttavia, se la tua ultima azione è stata un Colpo andato a segno contro un nemico usando un’arma combinata, puoi effettuare un Colpo di arma da fuoco con un’arma combinata contro quel nemico senza passare completamente all’uso da arma da fuoco, sparando con l’arma da fuoco subito dopo aver colpito con l’attacco in mischia. In tal caso, l’arma combinata ritorna al suo uso da mischia dopo il Colpo da arma da fuoco."
                 },
                 "NoRangeMelee": "Nessuno (Mischia)",
                 "RangeIncrementN": {
@@ -2126,6 +2128,10 @@
                     "Abomination": {
                         "Label": "Abomini",
                         "Description": "Cerchi di instillare avversione e orrore in coloro che ti circondano."
+                    },
+                    "Introspection": {
+                        "Label": "Introspezione",
+                        "Description": "Guidi gli altri a esaminare la loro vita, le loro emozioni e le loro motivazioni per diventare una versione più vera di sé stessi, un processo difficile e spesso doloroso."
                     }
                 },
                 "Alignment": "Allineamento",
@@ -2547,7 +2553,9 @@
                     "sasquatch": "Sasquatch",
                     "shadowtongue": "Linguadombra",
                     "tien": "Tienese",
-                    "varisian": "Varisiano"
+                    "varisian": "Varisiano",
+                    "Plural": "Lingue",
+                    "CommonLanguage": "Comune ({language})"
                 },
                 "Shield": {
                     "ACBonus": "Bonus CA Scudo (Quando Alzato)",
@@ -2642,7 +2650,15 @@
                     }
                 },
                 "Crafting": {
-                    "Cost": "Costo"
+                    "Cost": "Costo",
+                    "Daily": {
+                        "Complete": {
+                            "OneConsumed": "Fabbricazione giornaliera completa: un reagente è stato consumato.",
+                            "NConsumed": "Fabbricazione giornaliera completa: {quantity} reagenti sono stati consumati.",
+                            "ZeroConsumed": "Fabbricazione giornaliera completa."
+                        },
+                        "Perform": "Esegui Fabbricazione Giornaliera"
+                    }
                 },
                 "HandsOccupied": "Mani Occupate",
                 "Attribute": {
@@ -2670,6 +2686,21 @@
                         "Medium": "Armatura Media",
                         "Title": "Difese",
                         "Unarmored": "Difesa Senz'Armatura"
+                    }
+                },
+                "CreateFeat": "Crea Talento",
+                "Language": {
+                    "Unallocated": {
+                        "Label": "Non allocata",
+                        "Tooltip": "Seleziona una lingua che questo personaggio conosce."
+                    },
+                    "OverLimit": "Questa lingua è in eccesso rispetto al numero di lingue che questo personaggio può conoscere."
+                },
+                "Spellcasting": {
+                    "Tab": {
+                        "Activations": "Attivazioni",
+                        "KnownSpells": "Incantesimi Conosciuti",
+                        "Rituals": "Rituali"
                     }
                 }
             },
@@ -3961,7 +3992,8 @@
             "Hardness": {
                 "Full": "durezza",
                 "Half": "metà durezza"
-            }
+            },
+            "Scatter": "Danno Dispersione"
         },
         "DamageCategoriesLabel": "Categorie Danni",
         "DamageDieD12": "d12",
@@ -7258,7 +7290,41 @@
         "ArmorPropertyRuneTrueStanching": "Rimarginante Pura",
         "ArmorPropertyRuneModerateDread": "Terrorizzante Moderata",
         "BiographyAnathema": "Anatemi",
-        "BiographyEdicts": "Editti"
+        "BiographyEdicts": "Editti",
+        "TraitAppliedToAWindPoweredVehicle": "Applicata a un veicolo con propulsione a vento",
+        "PreciousMaterialInubrixDescription": "La peculiare struttura molecolare di questo metallo pallido e malleabile gli consente di attraversare parzialmente ferro e acciaio senza toccarli. Sebbene tale proprietà sia utile per creare armi che uperano le armature metalliche, l’inubrix è appena più robusto del piombo. Anche in una lega, questo metallo celeste è talmente fragile che risulta molto difficile impiegarlo per fabbricare scudi affidabili e non è certo l’ideale per costruire armature.",
+        "TraitCobbled": "Raffazzonato",
+        "TraitAppliedToDuelingCapeOrShield": "Applicata su una cappa del duellante o uno scudo",
+        "TraitDescriptionAutomaton": "Una creatura con questo tratto è un membro della stirpe automa.",
+        "TraitAttachedToCrossbowOrFirearmFiringMechanism": "Unito a un'Arma da Fuoco o una Balestra (Meccanismo di Sparo)",
+        "TraitAttachedToFirearmFiringMechanism": "Unito a un'Arma da Fuoco (Meccanismo di Sparo)",
+        "TraitAttachedToFirearm": "Unito a un'arma da fuoco",
+        "TraitCapacity": "Capienza",
+        "TraitAttachedToFirearmScope": "Unito a un'Arma da Fuoco (Mirino)",
+        "TraitConcussive": "Concussiva",
+        "TraitAutomaton": "Automata",
+        "TraitAppliedToAnyVisibleArticleOfClothing": "Applicata a qualsiasi capo di vestiario visibile",
+        "TraitCapacity2": "Capienza 2",
+        "TraitAppliedToBootsCapeCloakOrUmbrella": "Applicata a degli stivali, una cappa, un mantello o un ombrello",
+        "TraitCapacity4": "Capienza 4",
+        "TraitCapacity5": "Capienza 5",
+        "PreciousMaterialNoqual": "Noqual",
+        "TraitCriticalFusion": "Fusione del Critico",
+        "PreciousMaterialDjezet": "Djezet",
+        "PreciousMaterialAbysiumDescription": "L’abysium è un metallo luminescente di un colore tra il verde e l’azzurro. Il potere che irradia è ostile alla vita. Un’incauta esposizione a questo materiale può provocare danni a lungo termine al sistema immunitario: l’estrazione dell’abysium è un’attività pericolosa, dato che la presenza di grandi quantità di tale metallo in un luogo può far ammalare tutte le creature nelle vicinanze. Una creatura che porta un oggetto di abysium è nauseata 1 se l’oggetto è di qualità standard e di Volume leggero, nauseata 2 se l’oggetto è di qualità standard e di Volume 1 o superiore oppure se è di qualità alta e di Volume leggero, o nauseata 3 se l’oggetto è di qualità alta e di Volume 1 o superiore. Questo e gli altri effetti nauseanti dell’abysium sono effetti di veleno. Gli artigiani possono usare un pezzo di abysium per creare fino a 6 dosi di polvere di abysium velenosa. Certi fabbri senza scrupoli hanno sfruttato le proprietà tossiche dell’abysium per creare armi nocive e sostanze letali. Tutti gli oggetti fabbricati con l’abysium emettono luce fioca in un raggio di 3 metri.",
+        "PreciousMaterialSiccatiteDescription": "Allo stato grezzo, questo minerale argenteo è rovente o gelido. Per alcuni metallurgisti la siccatite sarebbe composta da due sostanze legate fra loro, secondo altri è un materiale unico la cui temperatura è determinata da un procedimento sconosciuto. A ogni modo, questo metallo deve essere maneggiato con cura a causa delle temperature estreme che raggiunge. La siccatite calda può incendiare facilmente oggetti infiammabili come carta o sterpaglie secche, mentre quella fredda si ricopre di uno spesso strato di ghiaccio se lasciata in zone umide. Se una creatura entra in contatto fisico con una quantità significativa di siccatite subisce 1 danno da energia per ogni round di contatto ininterrotto (danno da fuoco o da freddo rispettivamente per siccatite calda o fredda).",
+        "TraitCombination": "Combinata",
+        "TraitAppliedToShield": "Applicata su uno scudo",
+        "PreciousMaterialInubrix": "Inubrix",
+        "TraitCapacity3": "Capienza 3",
+        "TraitAttachedToCrossbowOrFirearmScope": "Unito a un'arma da fuoco o una balestra (mirino)",
+        "PreciousMaterialAbysium": "Abysium",
+        "TraitAppliedToAnyItemOfLightOrNegligibleBulk": "Applicata su qualsiasi oggetto di Volume leggero o trascurabile",
+        "TraitDescriptionCapacity": "Le armi con il tratto capacità solitamente hanno più canne o camere capaci di contenere un certonumero di proiettili. La capienza è sempre accompagnata da un numero che indica il numero di canne o camere. Dopo aver sparato con un'arma con capienza, puoi selezionare la canna o camera successiva già carica con un'azione Interagire che non richiede una mano libera. Ogni canna o camera può essere ricaricata, dopo aver fatto fuoco con essa, con un'azione Interagire separata.",
+        "TraitAppliedToBeltCapeCloakOrScarf": "Applicata a una cintura, una cappa, un mantello o una sciarpa",
+        "PreciousMaterialSiccatite": "Siccatite",
+        "PreciousMaterialNoqualDescription": "Oltre a essere leggero e robusto, il noqual ha una notevole resistenza alla magia. Un effetto collaterale di tale prerogativa è che la costruzione di armi magiche con questo materiale richiede trattamenti alchemici complessi e costosi. Kevoth-Kul, il Sovrano Nero della Numeria, ha creato una lega di noqual e ferro freddo chiamata acciaio sovrano per mitigare gli effetti di tale limitazione. L’aspetto cristallino di questo metallo verde chiaro potrebbe far pensare che sia fragile, ma viene lavorato in maniera simile al ferro. Gli oggetti di noqual hanno bonus di circostanza +4 ai tiri salvezza contro la magia tentati dall’oggetto e concedono il proprio bonus ai tiri salvezza specificamente effettuati dal padrone per proteggere l’oggetto dalla magia (per esempio contro l’incantesimo stretta corrosiva).",
+        "PreciousMaterialDjezetDescription": "A temperatura ambiente questo metallo rosso come la ruggine rimane liquido. Fabbricarci qualcosa è una sfida anche per i metallurgisti più abili, al punto che in certi luoghi viene chiamato “ferro vivo”. Inoltre il djezet è estremamente reattivo alla magia, anche quando forma una lega ed è quindi solido e lavorabile. Si illumina se è il bersaglio di un incantesimo e gli oggetti in lega di djezet rifulgono di striature scarlatte, tanto che alcuni fabbri lo hanno soprannominato “ferro tigre”. Quando sono bersaglio di incantesimi, gli oggetti in lega di djezet mostrano tali segni rossi luminescenti che durano per 1 ora o per la durata dell’incantesimo, quale delle due sia maggiore. Una massa di djezet contiene abbastanza metallo da poter raffinare due dosi di djezet."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
