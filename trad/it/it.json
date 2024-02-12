@@ -2150,7 +2150,29 @@
                         "Label": "Domini Alternativi",
                         "Hint": "Un chierico può prendere il talento Iniziato del Dominio Ampliato per ottenere accesso a uno dei domini alternativi della sua divinità."
                     }
-                }
+                },
+                "Sanctification": {
+                    "Can": {
+                        "Holy": "può scegliere sacro",
+                        "HolyUnholy": "può scegliere sacro o sacrilego",
+                        "Unholy": "può scegliere sacrilego"
+                    },
+                    "Label": "Santificazione Divina",
+                    "Must": {
+                        "Holy": "deve scegliere sacro",
+                        "Unholy": "deve scegliere sacrilego"
+                    },
+                    "None": "nessuna"
+                },
+                "DivineAttribute": {
+                    "Label": "Caratteristica Divina",
+                    "Hint": "Se stai scegliendo il background Cresciuto nella Fede, le opzioni degli aumenti di caratteristica derivano da una divinità."
+                },
+                "DivineSkill": {
+                    "Label": "Abilità Divina",
+                    "Hint": "La maggior parte delle divinità una sola abilità divina, anche se alcune offrono una scelta tra due."
+                },
+                "Spellcasting": "Lanciare Incantesimi"
             },
             "Armor": {
                 "Base": {
@@ -2291,8 +2313,9 @@
             "Effect": {
                 "Expiry": {
                     "ExpiresOn": "Scade",
-                    "StartOfTurn": "All'Inizio del Turno",
-                    "EndOfTurn": "Alla Fine del Turno"
+                    "StartOfTurn": "Inizio Turno",
+                    "EndOfTurn": "Fine Turno",
+                    "EndOfRound": "Fine del Round"
                 },
                 "ShowTokenIcon": "Mostra l'icona del token?",
                 "Unidentified": "Non Identificato?",
@@ -2308,8 +2331,20 @@
                         "counter": "Contatore",
                         "formula": "Formula",
                         "value": "Valore Fisso"
-                    }
-                }
+                    },
+                    "ReevaluateFormula": {
+                        "TurnStart": "All'Inizio del Turno",
+                        "Label": "Rivalutare?",
+                        "Never": "Mai",
+                        "TurnEnd": "Alla Fine del Turno"
+                    },
+                    "Range": "Raggio"
+                },
+                "Disintegrated": {
+                    "Description": "Forse è una condizione curabile.",
+                    "Name": "Disintegrato"
+                },
+                "Plural": "Effetti"
             },
             "Feat": {
                 "OnlyLevel1": "Deve essere selezionato al 1° livello",
@@ -2331,7 +2366,22 @@
                     "Added": "{item} è stato aggiunto a {category}."
                 },
                 "LevelLabel": "Talento",
-                "LevelN": "Talento {level}"
+                "LevelN": "Talento {level}",
+                "Subfeatures": {
+                    "Languages": {
+                        "OpenSlots": "Slot Disponibili"
+                    },
+                    "Label": "Sottoprivilegi",
+                    "Proficiencies": {
+                        "NoOptionSelected": "Seleziona la statistica per la quale deve essere applicato l'incremento.",
+                        "Label": "Competenze"
+                    },
+                    "KeyAbilityOptions": {
+                        "Label": "Opzioni Caratteristica Chiave",
+                        "Hint": "Opzioni di caratteristica chiave in aggiunta a questa fornita dalla classe"
+                    }
+                },
+                "Plural": "Talenti"
             },
             "Heritage": {
                 "AncestryNotFound": "L'oggetto stirpe di riferimento non è stato trovato.",
@@ -2449,7 +2499,22 @@
                     "Add": "Aggiungi Danno/Guarigione",
                     "Label": "Danno/Guarigione",
                     "Remove": "Rimuovi Danno/Guarigione"
-                }
+                },
+                "Uses": {
+                    "Use": "Utilizza",
+                    "None": "Nessun Utilizzo Rimanente",
+                    "AutoDestroy": "Distruggi Dopo l'Utilizzo",
+                    "Label": "Utilizzi"
+                },
+                "Plural": "Monouso"
+            },
+            "Container": {
+                "Bulk": {
+                    "Capacity": "Limite di Volume",
+                    "Ignored": "Volume Ignorato"
+                },
+                "Plural": "Contenitori",
+                "Stowing": "È un Contenitore di Oggetti Riposti?"
             }
         },
         "Actor": {
@@ -4713,7 +4778,7 @@
         "TabInventoryLabel": "Inventario",
         "TabManageTabsLabel": "Gestisci Sezioni",
         "TabPathfinderSociety": "Società di Pathfinder",
-        "TabSkillsLabel": "Abilità",
+        "TabSkillsLabel": "Competenze",
         "TabSpellbookLabel": "Lanciare Incantesimi",
         "TempHitPointsShortLabel": "PF TEMP",
         "TemplateLabel": "{shape} di {size} {unit}",
@@ -7477,7 +7542,11 @@
         "Formula": "Formula",
         "InitiativeIsNow": "L'iniziativa di {name} è ora {value}!",
         "ConditionTypeMalevolence": "Malevolenza",
-        "DeleteQuestion": "Sei sicuro di voler eliminare {name}?"
+        "DeleteQuestion": "Sei sicuro di voler eliminare {name}?",
+        "TraitDarvakka": "Darvakka",
+        "PreciousMaterialPeachwood": "Pesco",
+        "TraitDescriptionCobbled": "Quest'arma da fuoco è raffazzonata e il suo inceppamento è più probabile. Non importa quanto bene tu effettui la manutenzione, con un tiro per colpire fallito l'attacco manca e devi effettuare una @Check[type:flat|dc:5]. Se fallisci tale prova, l'arma si inceppa.",
+        "PreciousMaterialPeachwoodDescription": "Le armi di Pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legnoscuro ai fini di qualsiasi resistenza o debolezza correlata al legnoscuro delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
