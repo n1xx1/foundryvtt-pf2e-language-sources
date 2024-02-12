@@ -60,7 +60,7 @@
       "name": "Acclimatization"
     },
     "Accompany": {
-      "description": "<p><strong>Trigger</strong> An ally within 30 feet Casts a Spell.</p>\n<hr />\n<p>You use your performance to supplement an ally's spellcasting, providing magical energy for their spell in their stead. Attempt a Performance check, using a very high DC for the ally's level, and either spend a Focus Point (if the triggering spell is a focus spell) or expend a spell slot at least 1 rank higher than the triggering spell. If you succeed at your Performance check, your ally's spell doesn't cost the Focus Point or spell slot that ally would normally need to spend.</p>",
+      "description": "<p><strong>Trigger</strong> An ally within 30 feet Casts a Spell.</p>\n<hr />\n<p>You use your performance to supplement an ally's spellcasting, providing magical energy for their spell in their stead. Attempt a @Check[type:performance] check, using a very high DC for the ally's level, and either spend a Focus Point (if the triggering spell is a focus spell) or expend a spell slot at least 1 rank higher than the triggering spell. If you succeed at your Performance check, your ally's spell doesn't cost the Focus Point or spell slot that ally would normally need to spend.</p>",
       "name": "Accompany"
     },
     "Accurate Flurry": {
@@ -745,7 +745,7 @@
       "name": "All Shall End In Flames"
     },
     "All in Your Head": {
-      "description": "<p><strong>Trigger</strong> You're about to attempt a Fortitude save or a Reflex save.</p>\n<hr />\n<p>Flames scouring at your body, venom coursing through your veins-you refuse to believe they exist, and nothing can affect you if you don't believe in it. You attempt a Will save against the triggering effect, instead of a Reflex or Fortitude save. You don't gain the benefits of fortress of will or walls of will on this save.</p>",
+      "description": "<p><strong>Trigger</strong> You're about to attempt a Fortitude save or a Reflex save.</p>\n<hr />\n<p>Flames scouring at your body, venom coursing through your veins-you refuse to believe they exist, and nothing can affect you if you don't believe in it. You attempt a Will save against the triggering effect, instead of a Reflex or Fortitude save. You don't gain the benefits of @UUID[Compendium.pf2e.classfeatures.Item.Hw6Ji7Fgx0XkVkac]{Fortress of Will} or @UUID[Compendium.pf2e.classfeatures.Item.Kf9lSN6pVS2Hy4KI]{Walls of Will} on this save.</p>",
       "name": "All in Your Head"
     },
     "All of the Animal": {
@@ -768,7 +768,7 @@
       "name": "Alloy Flesh and Steel"
     },
     "Alluring Performance": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You command the attention of those around you with an elegant display. Attempt a Performance check and compare it to the Will DC of each creature in a @Template[type:emanation|distance:15].</p>\n<hr />\n<p><strong>Critical Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you for as long as you perform (unless it breaks from the fascination, as normal for the condition) and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round or as long as it's fascinated, whichever is longer.</p>\n<p><strong>Success</strong> The target is fascinated for 1 round and is dazzled for 1 round.</p>\n<p><strong>Failure</strong> The target is dazzled for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is unaffected.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You command the attention of those around you with an elegant display. Attempt a @Check[type:performance] check and compare it to the Will DC of each creature in a @Template[type:emanation|distance:15].</p>\n<hr />\n<p><strong>Critical Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you for as long as you perform (unless it breaks from the fascination, as normal for the condition) and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round or as long as it's fascinated, whichever is longer.</p>\n<p><strong>Success</strong> The target is fascinated for 1 round and is dazzled for 1 round.</p>\n<p><strong>Failure</strong> The target is dazzled for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is unaffected.</p>",
       "featPrerequisites": {
         "0": "trained in Performance"
       },
@@ -953,7 +953,7 @@
       "name": "Android Lore"
     },
     "Angel Of Death": {
-      "description": "<p>All your @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strikes } against a creature you have @UUID[Compendium.pf2e.actionspf2e.Item.orjJjLdm4XNAcFi8]{Marked for Death} have the death trait, causing the mark to be instantly killed when reduced to 0 Hit Points.</p>\n<p>When killed in this way, attempts to communicate with it, return it to life, turn it into an undead, or otherwise disturb its afterlife fail unless the effect's counteract rank is higher than half your level when you killed the creature (rounded up), or originates from an artifact or a deity.</p>",
+      "description": "<p>All your Strikes against a creature you have @UUID[Compendium.pf2e.actionspf2e.Item.orjJjLdm4XNAcFi8]{Marked for Death} have the death trait, causing the mark to be instantly killed when reduced to 0 Hit Points.</p>\n<p>When killed in this way, attempts to communicate with it, return it to life, turn it into an undead, or otherwise disturb its afterlife fail unless the effect's counteract rank is higher than half your level when you killed the creature (rounded up), or originates from an artifact or a deity.</p>",
       "featPrerequisites": {
         "0": "Assassin Dedication"
       },
@@ -3591,7 +3591,7 @@
       "name": "Channeling Block"
     },
     "Chaotic Spell": {
-      "description": "<p>This is the secret of chaotic magic–your foe can hardly predict and counter your moves if you yourself have no idea what will happen. If the next action you use is to Cast a Spell that deals acid, cold, electricity, fire, or sonic damage, roll a [[/r 1d6]]{d6}. The spell's damage type changes to the type below associated with the result of the roll, and each creature who is damaged by the spell takes the listed additional effect.</p>\n<p><strong>1 (Acid):</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}</p>\n<p><strong>2 (Cold):</strong> –10 ft. penalty to all Speeds until the end of your next turn</p>\n<p><strong>3 (Electricity):</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your next turn</p>\n<p><strong>4 (Fire):</strong> Persistent fire damage equal to the spell's rank</p>\n<p><strong>5 (Force):</strong> No added efect</p>\n<p><strong>6 (Sonic):</strong>@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 2 rounds</p>",
+      "description": "<p>This is the secret of chaotic magic - your foe can hardly predict and counter your moves if you yourself have no idea what will happen. If the next action you use is to Cast a Spell that deals acid, cold, electricity, fire, or sonic damage, roll a [[/r 1d6]]{d6}. The spell's damage type changes to the type below associated with the result of the roll, and each creature who is damaged by the spell takes the listed additional effect.</p>\n<p><strong>1 (Acid):</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}</p>\n<p><strong>2 (Cold):</strong> -10 ft. penalty to all Speeds until the end of your next turn</p>\n<p><strong>3 (Electricity):</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your next turn</p>\n<p><strong>4 (Fire):</strong> Persistent fire damage equal to the spell's rank</p>\n<p><strong>5 (Force):</strong> No added effect</p>\n<p><strong>6 (Sonic):</strong>@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 2 rounds</p>",
       "name": "Chaotic Spell"
     },
     "Charged Creation": {
@@ -13238,7 +13238,7 @@
       "name": "Magic Sense (Magus)"
     },
     "Magic Warrior Aspect": {
-      "description": "<p>You can alter your form to gain an aspect of the animal your mask represents. You gain the magic warrior aspect focus spell.</p>",
+      "description": "<p>You can alter your form to gain an aspect of the animal your mask represents. You gain the @UUID[Compendium.pf2e.spells-srd.Item.b6UnLNikoq2Std1f]{Magic Warrior Aspect} focus spell.</p>",
       "featPrerequisites": {
         "0": "Magic Warrior Dedication"
       },
@@ -24790,7 +24790,7 @@
       "name": "Wolf in Sheep's Clothing"
     },
     "Wonder Worker": {
-      "description": "<p>The thaumaturge's path culminates with the working of wonders. Once per day, you can align your esoterica to cast a spell of 8th level or lower that takes 1, 2, or 3 actions to cast. The spell must be common or one to which you have access. You can choose a spell of any tradition for which you're legendary in the associated skill (Arcana for arcane, Nature for primal, Occultism for occult, or Religion for divine). Use your thaumaturge class DC in place of any necessary spell DC and your thaumaturge class DC - 10 in place of any necessary counteract modifier or spell attack modifier.</p>",
+      "description": "<p>The thaumaturge's path culminates with the working of wonders. Once per day, you can align your esoterica to cast a spell of 8th rank or lower that takes 1, 2, or 3 actions to cast. The spell must be common or one to which you have access. You can choose a spell of any tradition for which you're legendary in the associated skill (Arcana for arcane, Nature for primal, Occultism for occult, or Religion for divine). Use your thaumaturge class DC in place of any necessary spell DC and your thaumaturge class DC - 10 in place of any necessary counteract modifier or spell attack modifier.</p>",
       "featPrerequisites": {
         "0": "legendary in Arcana",
         "1": "Nature",
@@ -24841,7 +24841,7 @@
       "name": "World-Wise Vigilance"
     },
     "Worldsphere Gravity": {
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>Though creating demiplanes usually requires lengthy rituals, you know how to establish minor planar effects in imitation of Syndara's masterpieces. If your next action is to Cast a Spell of at least 5th level from your spell slots that affects an area, you can apply one of the following planar effects to a @Template[type:burst|distance:20] centered within the spell's area. The effect persists for 1 minute.</p>\n<p><strong>Gravitational Morass</strong> The pull of gravity is amplified here, creating greater difficult terrain. Flying creatures that pass through the area must succeed at a Reflex save against your spell DC or fall to the ground, taking bludgeoning damage equal to half the distance fallen.</p>\n<p><strong>Flowing Time</strong> Erratic timestreams aid you within this space. A creature that starts its turn in the burst is affected by @UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste} on that turn.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>Though creating demiplanes usually requires lengthy rituals, you know how to establish minor planar effects in imitation of Syndara's masterpieces. If your next action is to Cast a Spell of at least 5th rank from your spell slots that affects an area, you can apply one of the following planar effects to a @Template[type:burst|distance:20] centered within the spell's area. The effect persists for 1 minute.</p>\n<p><strong>Gravitational Morass</strong> The pull of gravity is amplified here, creating greater difficult terrain. Flying creatures that pass through the area must succeed at a Reflex save against your spell DC or fall to the ground, taking bludgeoning damage equal to half the distance fallen.</p>\n<p><strong>Flowing Time</strong> Erratic timestreams aid you within this space. A creature that starts its turn in the burst is affected by @UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste} on that turn.</p>",
       "name": "Worldsphere Gravity"
     },
     "Worm Caller Dedication": {
