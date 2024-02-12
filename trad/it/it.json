@@ -2171,6 +2171,16 @@
                 "Category": {
                     "light-barding": "Bardatura Leggera",
                     "heavy-barding": "Bardatura Pesante"
+                },
+                "Specific": {
+                    "Label": "Armatura Magica Specifica",
+                    "Hint": "Impostare quest'armatura come una <i>armatura magica specifica</i> indica che fa più di quello che il suo materiale e le rune permettono. Il nome, il livello, la rarità e il prezzo non verranno più sovrascritti da un materiale prezioso o runa una volta impostato. Questi materiali però serviranno come punto di partenza per gli aggiustamenti al livello, alla rarità e al prezzo delle migliorie successive."
+                },
+                "UnequippedHint": "Quest'armatura è più voluminosa perché non è equipaggiata.",
+                "Rune": {
+                    "Resilient": {
+                        "Label": "Runa Resiliente"
+                    }
                 }
             },
             "Physical": {
@@ -2242,13 +2252,15 @@
                 "Cast": "Lanciare un Incantesimo"
             },
             "ABC": {
-                "InvalidDrop": "{badType} non può essere trascinato qui (deve essere {goodType})"
+                "InvalidDrop": "{badType} non può essere trascinato qui (deve essere {goodType})",
+                "Features": "Privilegi"
             },
             "Ancestry": {
                 "Vision": {
                     "Label": "Visione",
                     "Normal": "Visione Normale"
-                }
+                },
+                "DropFeatures": "Rilascia i privilegi di stirpe qua."
             },
             "CannotAddType": "Gli oggetti {type} non possono essere aggiunti a questo personaggio.",
             "Condition": {
@@ -2259,7 +2271,8 @@
                     "Dialog": {
                         "Title": "Danno Persistente ({actor})",
                         "Add": "Aggiungi Danno Persistente",
-                        "Remove": "Rimuovi Danno Persistente"
+                        "Remove": "Rimuovi Danno Persistente",
+                        "Invalid": "La formula non è valida."
                     },
                     "Error": {
                         "DoesNotExist": "Non esiste alcun danno {damageType} persistente in questo personaggio"
@@ -2270,6 +2283,9 @@
                     },
                     "RollDamage": "Tira Danno",
                     "AssistedRecovery": "Tira Recupero Assistito"
+                },
+                "Chat": {
+                    "Current": "Condizioni Attuali"
                 }
             },
             "Effect": {
@@ -2380,7 +2396,8 @@
                 "OnsetLabel": "Latenza",
                 "Linked": {
                     "Title": "Se impostato, impedisce alla condizione di essere rimosse finché dura"
-                }
+                },
+                "OnsetActive": "Latenza Attiva"
             },
             "GMNotes": {
                 "Title": "Note del GM",
@@ -2399,10 +2416,40 @@
                     "Free": "Azione Gratuita",
                     "Single": "Azione Singola",
                     "Reaction": "Reazione"
-                }
+                },
+                "SelfAppliedEffect": {
+                    "Hint": "Un singolo oggetto effetto che deve essere applicato all'attore che usa questa azione",
+                    "Applied": "{effetto} è stato applicato.",
+                    "Delete": "Elimina Riferimento",
+                    "Label": "Effetto Applicato a Se Stesso"
+                },
+                "Plural": "Abilità"
             },
             "CampaignFeature": {
                 "CampaignLabel": "Campagna"
+            },
+            "Consumable": {
+                "Category": {
+                    "oil": "Olio",
+                    "catalyst": "Catalizzatore",
+                    "drug": "Droga",
+                    "potion": "Pozione",
+                    "elixir": "Elisir",
+                    "fulu": "Fulu",
+                    "other": "Altra",
+                    "poison": "Veleno",
+                    "scroll": "Pergamena",
+                    "snare": "Calappio",
+                    "wand": "Bacchetta",
+                    "talisman": "Talismano",
+                    "ammo": "Munizioni",
+                    "mutagen": "Mutageno"
+                },
+                "Damage": {
+                    "Add": "Aggiungi Danno/Guarigione",
+                    "Label": "Danno/Guarigione",
+                    "Remove": "Rimuovi Danno/Guarigione"
+                }
             }
         },
         "Actor": {
@@ -2429,10 +2476,17 @@
                         "Tremorsense": "Percezione Tellurica",
                         "Wavesense": "Percezione delle Onde",
                         "Spiritsense": "Percezione spiritica",
-                        "Thoughtsense": "Percezione del Pensiero"
+                        "Thoughtsense": "Percezione del Pensiero",
+                        "InfraredVision": "Vista a Infrarossi",
+                        "MotionSense": "Percezione del Movimento",
+                        "Truesight": "Visione del Vero",
+                        "Vision": "Visione"
                     },
                     "WithAcuity": "{sense} ({acuity})",
-                    "WithAcuityAndRange": "{sense} ({acuity}) {range} metri"
+                    "WithAcuityAndRange": "{sense} ({acuity}) {range} metri",
+                    "NoVision": "Nessuna Visione",
+                    "WithRange": "{sense} {range} Metri",
+                    "Plural": "Sensi"
                 },
                 "Alliance": {
                     "Opposition": "Opposizione",
@@ -2554,7 +2608,9 @@
                     "tien": "Tienese",
                     "varisian": "Varisiano",
                     "Plural": "Lingue",
-                    "CommonLanguage": "Comune ({language})"
+                    "CommonLanguage": "Comune ({language})",
+                    "DetailsPlaceholder": "Avvertenze, altre specifiche insolite",
+                    "yithian": "Yithian"
                 },
                 "Shield": {
                     "ACBonus": "Bonus CA Scudo (Quando Alzato)",
@@ -2862,9 +2918,26 @@
                 "UnitTitle": {
                     "Bulk": "Ingombro Unitario",
                     "Price": "Prezzo Unitario"
+                },
+                "CarryType": {
+                    "OpenMenu": "Cambia Modalità Trasporto"
                 }
             },
-            "Attacks": "Attacchi"
+            "Attacks": "Attacchi",
+            "Speed": {
+                "BaseLabel": "Velocità di {type} Base",
+                "Plural": "Velocità",
+                "Label": "Velocità",
+                "LabelFeet": "Velocità (Metri)",
+                "Type": {
+                    "Burrow": "Scavare",
+                    "Climb": "Scalare",
+                    "Fly": "Volare",
+                    "Label": "Velocità di {type}",
+                    "Land": "Sul Terreno",
+                    "Swim": "Nuotare"
+                }
+            }
         },
         "AreaTypeCone": "Cono",
         "BrowseLabel": "Cerca",
@@ -3372,7 +3445,21 @@
                 }
             },
             "ExcludingFromInitiative": "Esclude {type} {actor} dall'iniziativa.",
-            "InitiativeSet": "L'iniziativa di {actor} è stata impostata su {initiative}."
+            "InitiativeSet": "L'iniziativa di {actor} è stata impostata su {initiative}.",
+            "Metrics": {
+                "Award": {
+                    "Tooltip": {
+                        "Four": "4 Membri del Party",
+                        "Plural": "{xpPerFour} × 4 / {recipients} Membri del Party",
+                        "Singular": "1 Membro del Party"
+                    },
+                    "Label": "Ricompensa: {xp} PE"
+                },
+                "Budget": "Budget: {spent}/{max} PE (Livello del Party {partyLevel})",
+                "Threat": "Pericolosità: <threat>{threat}</threat>"
+            },
+            "XP": "PE",
+            "AlreadyRolled": "{actor} ha già tirato l'iniziativa."
         },
         "EffectPanel": {
             "AppliedBy": "Applicato da: {condition-list}",
@@ -3415,7 +3502,8 @@
             "NoTokenSelected": "Seleziona almeno un token.",
             "NoPCTokenSelected": "Seleziona almeno un token con un PG associato.",
             "RuleElementSyntax": "Errore di sintassi nella definizione di un elemento regola: {message}",
-            "WeaponNoDamage": "Quest'arma non fa danni."
+            "WeaponNoDamage": "Quest'arma non fa danni.",
+            "ItemNotFoundByUUID": "Oggetto con UUID \"{uuid}\" non trovato."
         },
         "ItemLevel": "{type} {level}",
         "ItemMystified": "Mistificato",
@@ -3704,7 +3792,8 @@
             "worn": "Indossato",
             "worn-in-slot": "Indossato (In Slot)",
             "stowed": "Riposto",
-            "dropped": "Lasciato"
+            "dropped": "Lasciato",
+            "attached": "Unita"
         },
         "CastLabel": "Lancia",
         "CharacterDetails": "Dettagli del Personaggio",
@@ -3858,7 +3947,10 @@
                 "slashing": "tagliente",
                 "sonic": "sonoro",
                 "splash": "spargimento",
-                "untyped": "senza tipo"
+                "untyped": "senza tipo",
+                "vitality": "positivo",
+                "void": "negativo",
+                "spirit": "spirito"
             },
             "IWR": {
                 "ApplicationBreakdown": {
@@ -3980,7 +4072,19 @@
                     "off-guard": "impreparato",
                     "spells": "incantesimi",
                     "wood": "legno",
-                    "metal": "metallo"
+                    "metal": "metallo",
+                    "djezet": "djezet",
+                    "abysium": "abysium",
+                    "inubrix": "inubrix",
+                    "noqual": "noqual",
+                    "unholy": "sacrilego",
+                    "wounded": "ferito",
+                    "holy": "sacro",
+                    "persistent-damage": "danno persistente",
+                    "dawnsilver": "mithral",
+                    "duskwood": "legnoscuro",
+                    "detection": "rilevamento",
+                    "siccatite": "siccatite"
                 },
                 "ActorIsImmune": "{actor} è immune a {effect}.",
                 "ActorIsUnaffected": "{actor} non è influenzato da {effect}."
@@ -3992,7 +4096,31 @@
                 "Full": "durezza",
                 "Half": "metà durezza"
             },
-            "Scatter": "Danno Dispersione"
+            "Scatter": "Danno Dispersione",
+            "Kind": {
+                "Damage": {
+                    "Roll": {
+                        "Verb": "Tira Danni",
+                        "Noun": "Tiro per i Danni"
+                    }
+                },
+                "Healing": {
+                    "Apply": {
+                        "Label": "Applica Guarigione"
+                    },
+                    "Roll": {
+                        "Noun": "Tiro per la Guarigione",
+                        "Verb": "Tira Guarigione"
+                    }
+                },
+                "Both": {
+                    "Roll": {
+                        "Noun": "Tiro Danni/Guarigione",
+                        "Verb": "Tira Danni/Guarigione"
+                    },
+                    "Label": "Entrambi"
+                }
+            }
         },
         "DamageCategoriesLabel": "Categorie Danni",
         "DamageDieD12": "d12",
@@ -5043,7 +5171,7 @@
         "TraitMove": "Movimento",
         "TraitMulticlass": "Multiclasse",
         "TraitMummy": "Mummia",
-        "TraitMutagen": "Mutageni",
+        "TraitMutagen": "Mutageno",
         "TraitMutant": "Mutante",
         "TraitNoisy": "Rumoroso",
         "TraitNonlethal": "Non Letale",
@@ -5169,7 +5297,7 @@
         "TraitSkulk": "Skulk",
         "TraitSlashing": "Tagliente",
         "TraitSleep": "Sonno",
-        "TraitSnare": "Calappi",
+        "TraitSnare": "Calappio",
         "TraitSonic": "Sonoro",
         "TraitSorcerer": "Stregone",
         "TraitSoulbound": "Lega Anima",
@@ -6938,9 +7066,9 @@
             },
             "WellspringMage": {
                 "Initiative": "Quando tiri per l’iniziativa per un incontro di combattimento non banale, o in altre situazioni ad alto stress a scelta del GM, la magia monta dentro di te. Effettua una @Check[type:flat|dc:6|traits:wellspring-magic].",
-                "Failure": "Generi un’ondata di @UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{sorgente}, con livello dell’incantesimo scelto a caso fra i tuoi tre livelli massimi di slot incantesimo (o fra tutti i tuoi livelli se ne hai meno di tre)",
-                "Success": "Recuperi temporaneamente uno slot incantesimo consumato di un livello a tua scelta fra i tuoi tre livelli di incantesimi massimi (o fra tutti i tuoi livelli di incantesimi se ne hai meno di tre). Lo slot dura 3 round anziché 1 minuto, e se non lo usi in questo lasso di tempo, ricevi immediatamente una @UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{magia di sorgente}.",
-                "CriticalSuccess": "Recuperi temporaneamente uno slot incantesimo consumato di un livello a tua scelta. Lo slot incantesimo temporaneo dura 1 minuto; se non lo usi entro tale termine, subisci un’immediata ondata di@UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{magia di sorgente}."
+                "Failure": "Generi un’ondata di @UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{sorgente}, con grado dell'incantesimo scelto a caso fra i tuoi tre gradi massimi di slot incantesimo (o fra tutti i tuoi gradi se ne hai meno di tre)",
+                "Success": "Recuperi temporaneamente uno slot incantesimo consumato di un grado a tua scelta fra i tuoi tre gradi di incantesimi massimi (o fra tutti i tuoi gradi di incantesimi se ne hai meno di tre). Lo slot dura 3 round anziché 1 minuto, e se non lo usi in questo lasso di tempo, ricevi immediatamente una @UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{magia di sorgente}.",
+                "CriticalSuccess": "Recuperi temporaneamente uno slot incantesimo consumato di un grado a tua scelta. Lo slot incantesimo temporaneo dura 1 minuto; se non lo usi entro tale termine, subisci un’immediata ondata di@UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{magia di sorgente}."
             },
             "CatharticMage": {
                 "EmotionalState": {
@@ -7284,7 +7412,14 @@
         "CompendiumMigrationStatus": {
             "Document": "Documento",
             "Foundry": "Foundry",
-            "FoundryOld": "0.7 o più vecchia"
+            "FoundryOld": "0.7 o più vecchia",
+            "LockedTooltip": "Impossibile migrare - il compendio è bloccato",
+            "Invalid": "Non valida",
+            "MigrateCompendium": "Migrazione Compendio",
+            "Schema": "Schema",
+            "Size": "Dimensione",
+            "Title": "Stato Migrazione",
+            "UpToDate": "Aggiornato"
         },
         "ArmorPropertyRuneTrueStanching": "Rimarginante Pura",
         "ArmorPropertyRuneModerateDread": "Terrorizzante Moderata",
@@ -7323,7 +7458,26 @@
         "TraitAppliedToBeltCapeCloakOrScarf": "Applicata a una cintura, una cappa, un mantello o una sciarpa",
         "PreciousMaterialSiccatite": "Siccatite",
         "PreciousMaterialNoqualDescription": "Oltre a essere leggero e robusto, il noqual ha una notevole resistenza alla magia. Un effetto collaterale di tale prerogativa è che la costruzione di armi magiche con questo materiale richiede trattamenti alchemici complessi e costosi. Kevoth-Kul, il Sovrano Nero della Numeria, ha creato una lega di noqual e ferro freddo chiamata acciaio sovrano per mitigare gli effetti di tale limitazione. L’aspetto cristallino di questo metallo verde chiaro potrebbe far pensare che sia fragile, ma viene lavorato in maniera simile al ferro. Gli oggetti di noqual hanno bonus di circostanza +4 ai tiri salvezza contro la magia tentati dall’oggetto e concedono il proprio bonus ai tiri salvezza specificamente effettuati dal padrone per proteggere l’oggetto dalla magia (per esempio contro l’incantesimo stretta corrosiva).",
-        "PreciousMaterialDjezetDescription": "A temperatura ambiente questo metallo rosso come la ruggine rimane liquido. Fabbricarci qualcosa è una sfida anche per i metallurgisti più abili, al punto che in certi luoghi viene chiamato “ferro vivo”. Inoltre il djezet è estremamente reattivo alla magia, anche quando forma una lega ed è quindi solido e lavorabile. Si illumina se è il bersaglio di un incantesimo e gli oggetti in lega di djezet rifulgono di striature scarlatte, tanto che alcuni fabbri lo hanno soprannominato “ferro tigre”. Quando sono bersaglio di incantesimi, gli oggetti in lega di djezet mostrano tali segni rossi luminescenti che durano per 1 ora o per la durata dell’incantesimo, quale delle due sia maggiore. Una massa di djezet contiene abbastanza metallo da poter raffinare due dosi di djezet."
+        "PreciousMaterialDjezetDescription": "A temperatura ambiente questo metallo rosso come la ruggine rimane liquido. Fabbricarci qualcosa è una sfida anche per i metallurgisti più abili, al punto che in certi luoghi viene chiamato “ferro vivo”. Inoltre il djezet è estremamente reattivo alla magia, anche quando forma una lega ed è quindi solido e lavorabile. Si illumina se è il bersaglio di un incantesimo e gli oggetti in lega di djezet rifulgono di striature scarlatte, tanto che alcuni fabbri lo hanno soprannominato “ferro tigre”. Quando sono bersaglio di incantesimi, gli oggetti in lega di djezet mostrano tali segni rossi luminescenti che durano per 1 ora o per la durata dell’incantesimo, quale delle due sia maggiore. Una massa di djezet contiene abbastanza metallo da poter raffinare due dosi di djezet.",
+        "InlineAction": {
+            "Check": {
+                "DC": "CD {dc}",
+                "StatisticVsDefense": "{statistic} contro {defense}",
+                "VsDefense": "contro {defense}"
+            },
+            "Warning": {
+                "InvalidAction": "Azione Non Valida: {slug}",
+                "UnresolvableAction": "Azione Non Risolvibile: {slug}"
+            }
+        },
+        "Details": "Dettagli",
+        "InlineDamage": {
+            "Base": "Base: {formula}"
+        },
+        "Formula": "Formula",
+        "InitiativeIsNow": "L'iniziativa di {name} è ora {value}!",
+        "ConditionTypeMalevolence": "Malevolenza",
+        "DeleteQuestion": "Sei sicuro di voler eliminare {name}?"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
