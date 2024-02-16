@@ -2,7 +2,12 @@ import { join } from "path";
 import { readManifest, readSystemFiles } from "./utils/foundry-system";
 import { EntryHazard, EntryItem, EntryNPC } from "./utils/foundry-types";
 import { getRealTag } from "./utils/pf2-sources-data";
-import { createWeblateApi, WeblateApi, WeblateUnit } from "./utils/weblate-api";
+import {
+  createWeblateApi,
+  WeblateApi,
+  WeblateLabel,
+  WeblateUnit,
+} from "./utils/weblate-api";
 
 type EntriesWithSource = (EntryHazard | EntryNPC | EntryItem)[];
 
@@ -18,32 +23,39 @@ export async function commandUpdateSource(
   const [allPacks] = await readSystemFiles(systemDir, manifest);
 
   const toTranslate: [name: string, pack: string][] = [
-    ["compendium-actions", "actions.db"],
-    ["compendium-ancestries", "ancestries.db"],
-    ["compendium-ancestryfeatures", "ancestryfeatures.db"],
-    ["compendium-backgrounds", "backgrounds.db"],
-    // ["compendium-deities", "deities.db"],
-    ["compendium-classes", "classes.db"],
-    ["compendium-class-features", "classfeatures.db"],
-    ["compendium-heritages", "heritages.db"],
-    ["compendium-spells", "spells.db"],
-    ["compendium-feats", "feats.db"],
-    ["compendium-equipment", "equipment.db"],
+    ["compendium-actions", "actions"],
+    ["compendium-ancestries", "ancestries"],
+    ["compendium-ancestryfeatures", "ancestryfeatures"],
+    ["compendium-backgrounds", "backgrounds"],
+    // ["compendium-deities", "deities"],
+    ["compendium-classes", "classes"],
+    ["compendium-class-features", "classfeatures"],
+    ["compendium-heritages", "heritages"],
+    ["compendium-spells", "spells"],
+    ["compendium-feats", "feats"],
+    ["compendium-equipment", "equipment"],
     // [
     //   "compendium-abomination-vaults-bestiary",
-    //   "abomination-vaults-bestiary.db",
+    //   "abomination-vaults-bestiary",
     // ],
-    // // ["compendium-age-of-ashes-bestiary", "age-of-ashes-bestiary.db"],
+    // // ["compendium-age-of-ashes-bestiary", "age-of-ashes-bestiary"],
     // [
     //   "compendium-agents-of-edgewatch-bestiary",
-    //   "agents-of-edgewatch-bestiary.db",
+    //   "agents-of-edgewatch-bestiary",
     // ],
-    // ["compendium-bestiary", "pathfinder-bestiary.db"],
-    // ["compendium-bestiary-2", "pathfinder-bestiary-2.db"],
-    // ["compendium-bestiary-3", "pathfinder-bestiary-3.db"],
-    ["compendium-feat-effects", "feat-effects.db"],
-    ["compendium-spell-effects", "spell-effects.db"],
+    // ["compendium-bestiary", "pathfinder-bestiary"],
+    // ["compendium-bestiary-2", "pathfinder-bestiary-2"],
+    // ["compendium-bestiary-3", "pathfinder-bestiary-3"],
+    ["compendium-feat-effects", "feat-effects"],
+    ["compendium-spell-effects", "spell-effects"],
   ];
+
+  const labels = await api.getAll<WeblateLabel>(
+    `/projects/foundryvtt-pathfinder-2e/labels/`,
+    { page_size: 500 }
+  );
+
+  const labelsMap = new Map(labels.map((l) => [l.name, l.id]));
 
   for (const [name, packName] of toTranslate) {
     const path = `packs/${packName}`;
@@ -56,6 +68,7 @@ export async function commandUpdateSource(
       packName,
       pack.entries as EntriesWithSource,
       api,
+      labelsMap,
       dry
     );
   }
@@ -66,6 +79,7 @@ async function translateSource(
   packName: string,
   data: EntriesWithSource,
   weblate: WeblateApi,
+  labelsMap: Map<string, number>,
   dry: boolean
 ) {
   console.log(`Processing pack ${packName} into component ${weblateName}`);
@@ -117,12 +131,15 @@ async function translateSource(
     // console.log(name, origin);
 
     const source: string =
+      origin.system?.publication?.title ??
       origin.system?.source?.value ??
       origin.system?.details?.source?.value ??
       "";
 
+    const isRemaster: boolean = origin.system?.publication?.remaster ?? false;
+
     if (source) {
-      await applySourceTag(source, unit, name, weblate, dry);
+      await applySourceTag(source, unit, name, weblate, labelsMap, dry);
     }
   }
 }
@@ -132,22 +149,29 @@ async function applySourceTag(
   unit: WeblateUnit,
   name: string,
   weblate: WeblateApi,
+  labelsMap: Map<string, number>,
   dry: boolean
 ) {
   const tag = getRealTag(source);
 
   if (!tag) {
     console.log(`Unknown source: ${source} (item: ${name})`);
-    return;
+    throw "stop";
   }
 
-  if (unit.labels?.includes(tag)) {
+  const tagId = labelsMap.get(tag);
+  if (!tagId) {
+    console.log(`Label not found: ${source} (item: ${name})`);
+    throw "stop";
+  }
+
+  if (unit.labels?.some((l) => l.id === tagId)) {
     return;
   }
 
   try {
     if (!dry) {
-      await weblate.patch(`/units/${unit.id}/`, { labels: [tag] });
+      await weblate.patch(`/units/${unit.id}/`, { labels: [tagId] });
     }
     console.log(`Set label ${tag} on ${unit.id} (${unit.context})`);
   } catch (e) {

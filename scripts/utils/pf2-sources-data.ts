@@ -95,7 +95,7 @@ export const sourceState: Record<string, SourceState> = {
   "rage-of-elements": {
     name: "Rage of Elements",
     type: "core",
-    source: [],
+    source: ["Pathfinder Rage of Elements"],
     language: [],
   },
   // Lost Omens
@@ -201,7 +201,7 @@ export const sourceState: Record<string, SourceState> = {
   highhelm: {
     name: "Lost Omens: Highhelm",
     type: "lost-omens",
-    source: [],
+    source: ["Pathfinder Lost Omens: Highhelm"],
     language: [],
   },
   // Adventure Paths
@@ -394,6 +394,12 @@ export const sourceState: Record<string, SourceState> = {
     ],
     language: [],
   },
+  "fists-of-the-ruby-phoenix-hc": {
+    name: "Fists of the Ruby Phoenix",
+    type: "adventure-path",
+    source: ["Pathfinder Fists of the Ruby Phoenix Hardcover Compilation"],
+    language: [],
+  },
   "strength-of-thousands1": {
     name: "Strength of Thousands",
     type: "adventure-path",
@@ -562,31 +568,62 @@ export const sourceState: Record<string, SourceState> = {
   "stolen-fate2": {
     name: "Stolen Fate",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #191: The Destiny War"],
     language: [],
   },
   "stolen-fate3": {
     name: "Stolen Fate",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #192: Worst of All Possible Worlds"],
     language: [],
   },
   "sky-kings-tomb1": {
     name: "Sky King's Tomb",
     type: "adventure-path",
-    source: [],
+    source: [
+      "Pathfinder: Sky King's Tomb Player's Guide",
+      "Pathfinder #193: Mantle of Gold",
+    ],
     language: [],
   },
   "sky-kings-tomb2": {
     name: "Sky King's Tomb",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #194: Cult of the Cave Worm"],
     language: [],
   },
   "sky-kings-tomb3": {
     name: "Sky King's Tomb",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #195: Heavy is the Crown"],
+    language: [],
+  },
+  "season-of-ghosts1": {
+    name: "Season of Ghosts",
+    type: "adventure-path",
+    source: [
+      "Pathfinder: Season of Ghosts Player's Guide",
+      "Season of Ghosts Player's Guide",
+      "Pathfinder #196: The Summer That Never Was",
+    ],
+    language: [],
+  },
+  "season-of-ghosts2": {
+    name: "Season of Ghosts",
+    type: "adventure-path",
+    source: ["Pathfinder #197: Let the Leaves Fall"],
+    language: [],
+  },
+  "season-of-ghosts3": {
+    name: "Season of Ghosts",
+    type: "adventure-path",
+    source: ["Pathfinder #198: No Breath to Cry"],
+    language: [],
+  },
+  "season-of-ghosts4": {
+    name: "Season of Ghosts",
+    type: "adventure-path",
+    source: ["Pathfinder #199: To Bloom Below the Web"],
     language: [],
   },
   // Adventures
@@ -662,13 +699,19 @@ export const sourceState: Record<string, SourceState> = {
   "the-enmity-cycle": {
     name: "The Enmity Cycle",
     type: "adventure",
-    source: [],
+    source: ["Pathfinder Adventure: The Enmity Cycle"],
     language: [],
   },
   "the-dead-gods-hand": {
     name: "The Dead Gods Hand",
     type: "adventure",
     source: [],
+    language: [],
+  },
+  "a-few-flowers-more": {
+    name: "A Few Flowers More",
+    type: "adventure",
+    source: ["Pathfinder Adventure: A Few Flowers More"],
     language: [],
   },
   // One-Shots
@@ -696,6 +739,12 @@ export const sourceState: Record<string, SourceState> = {
     source: [],
     language: [],
   },
+  rusthenge: {
+    name: "Rusthenge",
+    type: "adventure",
+    source: ["Pathfinder Adventure: Rusthenge"],
+    language: [],
+  },
   // Other Random Stuff
   "random-sources": {
     name: "Random Sources",
@@ -709,6 +758,9 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder Blog: April Fools",
       "Paizo Blog: Kineticist Playtest Analysis",
       "Azarketi Ancestry Web Supplement",
+      "Pathfinder: Wake the Dead #1",
+      "Pathfinder: Wake the Dead #2",
+      "Pathfinder: Wake the Dead #3",
     ],
     language: [],
   },
@@ -730,6 +782,12 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder Society Quest #5: The Dragon Who Stole Evoking Day",
       "Pathfinder Society Quest #10: The Broken Scales",
     ],
+    language: [],
+  },
+  remaster: {
+    name: "Remaster",
+    type: "other",
+    source: ["Pathfinder Player Core", "Pathfinder GM Core"],
     language: [],
   },
 };

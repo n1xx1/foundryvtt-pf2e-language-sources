@@ -109,7 +109,7 @@ export type WeblateUnit = {
   context: string;
   note: string;
   flags: string;
-  labels: string[];
+  labels: WeblateLabel[];
   state: number;
   fuzzy: false;
   translated: true;
@@ -125,4 +125,10 @@ export type WeblateUnit = {
   extra_flags: string;
   pending: false;
   timestamp: string;
+};
+
+export type WeblateLabel = {
+  id: number;
+  name: string;
+  color: string;
 };
