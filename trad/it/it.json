@@ -858,6 +858,27 @@
                     "NoStatistic": "L'azione Aiutare può essere usata con statistiche diverse ma non ne è stata selezionata alcuna."
                 },
                 "Description": "<p>Cerchi di aiutare il tuo alleato in un compito. Per usare questa reazione devi per prima cosa prepararti per aiutare, in genere usando un'azione nel tuo turno. Devi spiegare al GM esattamente come cerchi dì aiutare, ed egli determina se puoi aiutare il tuo alleato.</p><p>Quando usi la tua reazione Aiutare, tenta una prova di abilità o un tiro per colpire di un tipo deciso dal GM. La CD tipica è 20, ma il GM può modificarla per compiti particolarmente facili o difficili. Il GM può aggiungere tratti pertinenti alla tua reazione Aiutare o alla tua azione preparatoria, a seconda della, situazione, o anche consentirti di Aiutare in prove che non siano di abilità o tiri per colpire.</p><p><strong>Successo Critico</strong> Concedi al tuo alleato bonus di circostanza +2 alla prova innescante. Se sei maestro nella prova che hai tentato, il bonus è +3, e se sei leggendario è +4.</p><p><strong>Successo</strong> Concedi al tuo alleato bonus di circostanza +1 alla prova innescante.</p><p><strong>Fallimento Critico</strong> Concedi al tuo alleato penalità di circostanza -1 alla prova innescante.</p>"
+            },
+            "ArcaneSlam": {
+                "Title": "Schianto Arcano",
+                "Notes": {
+                    "failure": "<strong>Fallimento</strong> Non riesci a sbattere per terra la creatura, ma mantieni la tua presa su di essa.",
+                    "success": "<strong>Successo</strong> Sbatti il nemico a terra. La creatura è @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prona} e subisce danni pari al tuo [[/r @abilities.str.mod # Danno: Schianto Arcano]]{modificatore di Forza}. Il nemico non è più @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} da te.",
+                    "NoTarget": "<strong>Differenza di Taglia</strong> Subisci penalità di circostanza -2 alla prova se il bersaglio è di una taglia più grande di te e penalità di circostanza -4 se è più grande ancora. Ottieni bonus di circostanza +2 alla prova se il bersaglio è più piccolo di una taglia e bonus di circostanza +4 se è ancora più piccolo.",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Sbatti il nemico a terra e l’energia magica lo travolge. La creatura viene gettata a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prona}, è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliata} per 1 round e subisce danni pari a [[/r 2d6 + @abilities.str.mod # Danno: Schianto Arcano]]{2d6 più il tuo modificatore di Forza}. Il nemico non è più @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} da te.",
+                    "criticalFailure": "<strong>Fallimento Critico</strong> La creatura si libera e non è più @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuta} da te."
+                },
+                "Modifier": {
+                    "SizeDifference": "Differenza di Taglia"
+                }
+            },
+            "Tamper": {
+                "Title": "Manomissione",
+                "Notes": {
+                    "criticalSuccess": "<strong>Successo Critico</strong> La manomissione è incredibilmente efficace. Se hai manomesso un'arma, il nemico subisce penalità di circostanza -2 ai tiri per colpire e ai tiri dei danni con quell'arma. Se hai manomesso un'armatura, questa ostacola il movimento del nemico, rendendolo impreparato e infliggendogli penalità -3 metri alle sue Velocità. L'effetto dura finché il nemico non Interagisce per rimuoverlo, indipendentemente da quale tu abbia usato. @UUID[Compendium.pf2e.feat-effects.Item.rzcpTJU9MvW1x1gz]{Effetto: Armatura Manomessa (Successo Critico)} @UUID[Compendium.pf2e.feat-effects.Item.o7qm13OmaYOMwgib]{Effetto: Arma Manomessa (Successo Critico)}",
+                    "criticalFailure": "<strong>Fallimento Critico</strong> La manomissione si ritorce contro di te, creando una piccola esplosione nei tuoi stessi strumenti o marchingegni. Subisci [[/r (@actor.level)[fire] #Ritorsione Manomissione]]{danni da fuoco pari al tuo livello}.",
+                    "success": "<strong>Successo</strong> La tua manomissione è efficace temporaneamente. Come successo critico, ma l'effetto termina all'inizio del tuo turno successivo, anche se il nemico non Interagisce per interromperlo. @UUID[Compendium.pf2e.feat-effects.Item.IfRkgjyh0JzGalIy]{Effetto: Armatura Manomessa (Successo)} @UUID[Compendium.pf2e.feat-effects.Item.4QWayYR3JSL9bk2T]{Effetto: Arma Manomessa (Successo)}"
+                }
             }
         },
         "SETTINGS": {
@@ -2982,7 +3003,7 @@
                 },
                 "UnitTitle": {
                     "Bulk": "Ingombro Unitario",
-                    "Price": "Prezzo Unitario"
+                    "Price": "Prezzo"
                 },
                 "CarryType": {
                     "OpenMenu": "Cambia Modalità Trasporto"
@@ -5697,7 +5718,48 @@
                 "wish-blade": "Lama dei Desideri",
                 "wish-knife": "Coltello dei Desideri",
                 "wooden-taws": "Biglie di Legno",
-                "khakkhara": "Khakkhara"
+                "khakkhara": "Khakkhara",
+                "injection-spear": "Lancia da Iniezione",
+                "air-repeater": "Pistola a Ripetizione ad Aria Compressa",
+                "dragon-mouth-pistol": "Pistola Faucididrago",
+                "gnome-amalgam-musket": "Moschetto Amalgamato Gnomesco",
+                "coat-pistol": "Pistola da Giacca",
+                "clan-pistol": "Pistola del Clan",
+                "flintlock-pistol": "Pistola a Pietra Focaia",
+                "piercing-wind": "Vento Perforante",
+                "gun-sword": "Pistola Spada",
+                "long-air-repeater": "Fucile a Ripetizione ad Aria Compressa",
+                "double-barreled-musket": "Moschetto a Doppia Canna",
+                "forked-bipod": "Bipiede Forcuto",
+                "mithral-tree": "Albero di Mithral",
+                "arquebus": "Archibugio",
+                "big-boom-gun": "Granbotto",
+                "three-peaked-tree": "Albero a Tre Punte",
+                "axe-musket": "Moschetto Ascia",
+                "dwarven-scattergun": "Fucile a Dispersione Nanico",
+                "pepperbox": "Pepaiola",
+                "black-powder-knuckle-dusters": "Tirapugni a Polvere Nera",
+                "slide-pistol": "Pistola ad Armonica",
+                "dagger-pistol": "Pistola Pugnale",
+                "dueling-pistol": "Pistola da Duello",
+                "blunderbuss": "Trombone",
+                "knuckle-duster": "Tirapugni",
+                "spoon-gun": "Pistola Cucchiaio",
+                "cane-pistol": "Pistola Bastone",
+                "flintlock-musket": "Moschetto a Pietra Focaia",
+                "double-barreled-pistol": "Pistola a Doppia Canna",
+                "hammer-gun": "Pistola Martello",
+                "hand-cannon": "Schioppo",
+                "harmona-gun": "Pistola Armona",
+                "mace-multipistol": "Multipistola Mazza",
+                "rapier-pistol": "Pistola Stocco",
+                "repeating-crossbow": "Balestra a Ripetizione",
+                "repeating-heavy-crossbow": "Balestra Pesante a Ripetizione",
+                "jezail": "Jezail",
+                "repeating-hand-crossbow": "Balestra a Mano a Ripetizione",
+                "flingflenser": "Scagliascuoia",
+                "explosive-dogslicer": "Affettacani Esplosiva",
+                "fire-lance": "Lancia da Fuoco"
             }
         },
         "WeaponAbilityLabel": "Abilità Arma",
@@ -6326,7 +6388,8 @@
             },
             "ClanWeapon": {
                 "Label": "Arma del Clan",
-                "Prompt": "Seleziona un arma del clan."
+                "Prompt": "Seleziona un arma del clan.",
+                "ClanPistol": "Pistola del Clan (Talento di Stirpe)"
             },
             "Cover": {
                 "Prompt": "Seleziona un livello di copertura.",
@@ -6339,7 +6402,8 @@
                 "Herbalist": "Erborista",
                 "Poisoner": "Avvelenatore",
                 "Snarecrafter": "Accalappiatore",
-                "TalismanDabbler": "Collezionista di Talismani"
+                "TalismanDabbler": "Collezionista di Talismani",
+                "FireworkTechnician": "Dedizione del Pirotecnico"
             },
             "DeityAndCause": {
                 "AllowedDrops": "privilegio di classe di 1° livello del campione",
@@ -6361,7 +6425,8 @@
                     "shield": "Scudi Avanzati",
                     "sling": "Fionde Avanzate",
                     "spear": "Lance Avanzate",
-                    "sword": "Spade Avanzate"
+                    "sword": "Spade Avanzate",
+                    "firearm": "Armi da Fuoco Avanzate"
                 },
                 "SimpleMartial": {
                     "axe": "Asce Semplici e Da Guerra",
@@ -6378,7 +6443,8 @@
                     "shield": "Scudi Semplici e Da Guerra",
                     "sling": "Fionde Semplici e Da Guerra",
                     "spear": "Lance Semplici e Da Guerra",
-                    "sword": "Spade Semplici e Da Guerra"
+                    "sword": "Spade Semplici e Da Guerra",
+                    "firearm": "Armi da Fuoco Semplici e Da Guerra"
                 }
             },
             "GeneralTraining": {
@@ -6686,6 +6752,12 @@
                 },
                 "TombWatchersGlare": {
                     "Note": "Quando colpisci in modo critico una creatura non morta, egli è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} per 1 round"
+                },
+                "SparkFist": {
+                    "Note": "Ogni volta che metti a segno un Colpo con il pugno, subisci [[/r (1+@weapon.system.runes.striking)[fire]]]{danni da fuoco}."
+                },
+                "ForgeBlessedShot": {
+                    "Note": "Ignori la condizione @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato}, nonché la copertura minore, standard e superiore del tuo bersaglio."
                 }
             },
             "Oracle": {
@@ -6715,6 +6787,49 @@
                 },
                 "AutomatonArmament": {
                     "Prompt": "Seleziona un colpo senz'armi."
+                },
+                "EnhanceableFeats": {
+                    "MagicalResistance": "Resistenza Magica",
+                    "ArcaneEye": "Occhio Arcano",
+                    "AutomatonArmament": "Armamento da Automa",
+                    "AstralBlink": "Intermittenza Astrale",
+                    "ReinforcedChassis": "Telaio Rinforzato",
+                    "RainOfBolts": "Pioggia di Bulloni",
+                    "ArcaneSlam": "Schianto Arcano",
+                    "AutomatonLore": "Sapienza sugli Automi",
+                    "EnlargedChassis": "Telaio Ingrandito",
+                    "IntegratedArmament": "Armamento Integrato",
+                    "ArcanePropulsion": "Propulsione Arcana",
+                    "ArcaneSafeguards": "Protezioni Arcane",
+                    "CoreRejuvenation": "Rinascita Nucleica",
+                    "LesserAugmentation": "Potenziamento Inferiore",
+                    "ArcaneCamouflage": "Mimetizzazione Arcana",
+                    "ArcaneCommunication": "Comunicazione Arcana",
+                    "ArcaneLocomotion": "Locomozione Arcana",
+                    "EnergyBeam": "Raggio di Energia",
+                    "CoreAttunement": "Armonizzazione al Nucleo"
+                },
+                "CoreCannon": {
+                    "CriticalHit": "In caso di colpo critico con un'esplosione di energia, il bersaglio subisce [[/r 10[persistent,fire]]]{10 danni da fuoco persistenti}. L'esplosione di energia non aggiunge effetti di specializzazione del critico.",
+                    "AttackNote": "Devi applicare manualmente la tua runa di Potenziamento più alta a questo tiro per colpire."
+                },
+                "Enhancement": {
+                    "ArcaneLocomotionClimbSpeed": "Ottieni una velocità di scalare",
+                    "MagicalResistanceIncrease": "Potenzia resistenze esistenti",
+                    "EnhancementPrompt": "Seleziona un potenziamento.",
+                    "MagicalResistanceAll": "Ottieni resistenze aggiuntive",
+                    "ArcaneLocomotionIncreaseSpeed": "Aumenta velocità",
+                    "AugmentationPrompt": "Seleziona un talento da potenziare.",
+                    "ArcaneLocomotionSwimSpeed": "Ottieni una velocità di nuotare"
+                },
+                "MagicalResistance": {
+                    "Prompt": "Seleziona un tipo di danno da energia."
+                },
+                "HunterAutomaton": {
+                    "ToggleLabel": "Corsa a quattro zampe"
+                },
+                "EnergyBeam": {
+                    "CriticalHit": "In caso di colpo critico, il bersaglio subisce danni da fuoco persistenti pari al numero di dadi di danno dell'arma. Il raggio di energia non aggiunge effetti di specializzazione del critico."
                 }
             },
             "Barbarian": {
@@ -7220,6 +7335,19 @@
                     "Prompt2": "Seleziona una seconda arma dal gruppo spada.",
                     "Prompt1": "Seleziona un'arma dal gruppo spada."
                 }
+            },
+            "Gunslinger": {
+                "Way": {
+                    "Spellshot": "Via dello Sparamagie (Archetipo)",
+                    "Prompt": "Seleziona una via."
+                }
+            },
+            "Inventor": {
+                "Innovation": {
+                    "Armor": {
+                        "AllowedDrops": "armatura unica di livello zero"
+                    }
+                }
             }
         },
         "AreaTypeCube": "Cubo",
@@ -7431,6 +7559,35 @@
             "ShiningAmmunition": {
                 "Text": "La munizione fa luce intensa in un raggio di 6 metri (e luce fioca nei successivi 6 metri) per 10 minuti. Se colpisce un bersaglio, essa vi si attacca facendo in modo che il bersaglio stesso emetta luce nello stesso raggio. @UUID[Compendium.pf2e.equipment-effects.Item.Sf6UO6vgCeicggOK]{Effetto: Munizione Luminescente}",
                 "Title": "Munizione Luminescente"
+            },
+            "ExsanguinatingAmmunition": {
+                "Normal": {
+                    "Title": "Munizione Dissanguante",
+                    "Text": "Per 1 minuto dopo che hai inflitto danno a una creatura con una munizione dissanguante attivata, quella creatura ottiene la debolezza 1 ai danni da sanguinamento persistenti. Inoltre, la CD di qualsiasi prova semplice per porre fine a danni da sanguinamento persistenti aumenta da 15 a 17 (da 10 a 12 se si sta ricevendo un'assistenza particolarmente efficace) per la durata. @UUID[Compendium.pf2e.equipment-effects.Item.Fz3cSffzDAxhCh2D]{Effetto: Munizione Dissanguante}"
+                },
+                "Major": {
+                    "Title": "Munizione Dissanguante Maggiore",
+                    "Text": "Per 1 minuto dopo che hai inflitto danno a una creatura con una munizione dissanguante attivata, quella creatura ottiene la debolezza 5 ai danni da sanguinamento persistenti. Inoltre, la CD di qualsiasi prova semplice per porre fine a danni da sanguinamento persistenti aumenta da 15 a 17 (da 10 a 12 se si sta ricevendo un'assistenza particolarmente efficace) per la durata. @UUID[Compendium.pf2e.equipment-effects.Item.mrwg2XftLtSLj197]{Effetto: Munizione Dissanguante Maggiore}"
+                },
+                "Greater": {
+                    "Title": "Munizione Dissanguante Superiore",
+                    "Text": "Per 1 minuto dopo che hai inflitto danno a una creatura con una munizione dissanguante attivata, quella creatura ottiene la debolezza 3 ai danni da sanguinamento persistenti. Inoltre, la CD di qualsiasi prova semplice per porre fine a danni da sanguinamento persistenti aumenta da 15 a 17 (da 10 a 12 se si sta ricevendo un'assistenza particolarmente efficace) per la durata. @UUID[Compendium.pf2e.equipment-effects.Item.5lZWAvm0oGxvF4bm]{Effetto: Munizione Dissanguante Superiore}"
+                }
+            },
+            "MeteorShot": {
+                "CriticalFailureText": "In caso di fallimento critico, l'arma si Inceppa.",
+                "Greater": {
+                    "Title": "Colpo Meteoritico Superiore",
+                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge [[/r 6d6[fire]]]{6d6 danni da fuoco} in un'@Template[type:emanation|distance:10] attorno al bersaglio (TS @Check[type:reflex|dc:29|basic:true|name:Colpo Meteoritico])."
+                },
+                "Major": {
+                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge [[/r 9d6[fire]]]{9d6 danni da fuoco} in un'@Template[type:emanation|distance:20] attorno al bersaglio (TS @Check[type:reflex|dc:37|basic:true|name:Colpo Meteoritico]).",
+                    "Title": "Colpo Meteoritico Maggiore"
+                },
+                "Normal": {
+                    "Title": "Colpo Meteoritico",
+                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge [[/r 3d6[fire]]]{3d6 danni da fuoco} in un'@Template[type:emanation|distance:5] attorno al bersaglio (TS @Check[type:reflex|dc:23|basic:true|name:Colpo Meteoritico])."
+                }
             }
         },
         "RevertDamage": {
@@ -7548,7 +7705,41 @@
         "TraitDescriptionCriticalFusion": "Fusione del Critico è un nuovo tratto per le armi combinate che ti fornisce due opzioni aggiuntive per l'effetto di specializzazione del critico quando usi la versione da mischia dell'arma combinata per effettuare un attacco in mischia mentre l'arma è carica. Se scegli di usare una di queste opzioni, esse sostituiscono il normale effetto di specializzazione del critico dell'uso in mischia. Come prima opzione, puoi scaricare l'arma da fuoco per creare un forte botto e una concussione, utilizzando l'effetto di specializzazione del critico delle armi da fuoco invece dell'effetto di specializzazione del critico del gruppo delle armi da mischia. Come seconda opzione, puoi scegliere di scaricare l'arma da fuoco per aumentare lo slancio del colpo critico o sparare al nemico mentre lo attacchi in mischia, infliggendo 2 danni aggiuntivi per ogni dado di danno dell'arma. Entrambe le opzioni scaricano l'arma, il che di solito significa che è necessario ricaricarla prima di sparare di nuovo.",
         "TraitDescriptionCombination": "Questo è un tratto per le armi che combinano la funzionalità di armi da mischia e armi da fuoco in modi unici o inusuali. Un'arma combinata ha una forma o uso da arma da fuoco e una forma o un uso da arma da mischia.",
         "TraitDescriptionDarvakka": "Creature non morte entropiche, corrotte dal Piano delle Ombre e dal Piano dell'Energia Negativa.",
-        "TraitDescriptionConcussive": "Queste armi spaccano oltre a perforare. Quando determini la resistenza o l'Immunità di una creatura ai danni di quest'arma, usa la resistenza o l'immunità più debole della creatura tra danni perforanti e danni contundenti. Per esempio, se la creatura è immune ai danni perforanti e non ha alcuna resistenza o l'immunità ai danni contundenti, subisce danni pieni da un'arma concussiva. La resistenza o l'immunità a tutti i danni fisici, o a tutti i danni, si applica normalmente."
+        "TraitDescriptionConcussive": "Queste armi spaccano oltre a perforare. Quando determini la resistenza o l'Immunità di una creatura ai danni di quest'arma, usa la resistenza o l'immunità più debole della creatura tra danni perforanti e danni contundenti. Per esempio, se la creatura è immune ai danni perforanti e non ha alcuna resistenza o l'immunità ai danni contundenti, subisce danni pieni da un'arma concussiva. La resistenza o l'immunità a tutti i danni fisici, o a tutti i danni, si applica normalmente.",
+        "TraitKickback": "Rinculo",
+        "TraitMounted": "Montata",
+        "TraitSteam": "Vapore",
+        "TraitDescriptionMounted": "Le armi d'assedio montate occupano una certa dimensione e un certo spazio, hanno tipicamente statistiche difensive e sono utilizzate per guerre su larga scala.",
+        "TraitDescriptionGadget": "I gadget sono invenzioni tecnologiche monouso con utilizzi innovativi.",
+        "TraitDescriptionPortable": "Le armi d'assedio portatili, come gli arieti, sono adattabili, possono essere trasportate più facilmente e svolgere un ruolo prezioso nelle guerre su larga scala, nei conflitti minori o persino nell'esplorazione.",
+        "TraitInjection": "Iniezione",
+        "TraitWornAndAttachedToTwoWeapons": "Indossato o Unito a Due Armi",
+        "TraitScatter10": "Dispersione 10",
+        "TraitScatter15": "Dispersione 15",
+        "TraitScatter5": "Dispersione 5",
+        "TraitPortable": "Portatile",
+        "TraitGadget": "Gadget",
+        "TraitDoubleBarrel": "Doppia Canna",
+        "TraitFatalAimD10": "Mira Fatale d10",
+        "TraitDescriptionSteam": "Gli oggetti con questo tratto sono animati da motori che portano l'acqua a ebollizione per produrre vapore e muovere i loro componenti.",
+        "WeaponGroupFirearm": "Arma da Fuoco",
+        "TraitDescriptionDoubleBarrel": "Quest'arma ha due canne, ognuna da caricare separatamente. Puoi sparare da entrambe le canne di un'arma a doppia canna in un singolo Colpo per incrementare di un grado la categoria di dado di danno dell'arma. Se l'arma ha il tratto fatale, ciò incrementa di un grado anche la categoria del dado fatale.",
+        "TraitUnstable": "Instabile",
+        "TraitGunslinger": "Tiratore",
+        "TraitDescriptionGunslinger": "Questo tratto indica le capacità legate alla classe del tiratore.",
+        "TraitDescriptionKickback": "Un'arma con rinculo è più potente, ma anche più difficile da usare. Un'arma con rinculo infligge 1 danno aggiuntivo a ogni attacco. Sparare con un'arma con rinculo infligge penalità di circostanza -2 al tiro per colpire, ma i personaggi con Forza pari o superiore a 14 ignorano questa penalità. Installare degli stabilizzatori su un'arma con rinculo può diminuire o negare questa penalità.",
+        "TraitFatalAimD12": "Mira Fatale d12",
+        "TraitScatter": "Dispersione",
+        "TraitDescriptionHampering": "Un'arma con il tratto intralciante comprende un'estremità o una flangia atta a disturbare il nemico. Puoi usare un'azione Interagire per sferzare l'arma in un quadretto entro la portata dell'arma. Quel quadretto diventa terreno difficile fino a quando non attacchi con l'arma, non ti muovi, non smetti intenzionalmente di sferzare l'arma o non inizia il tuo turno successivo.",
+        "TraitModification": "Modifica",
+        "TraitDescriptionInjection": "Quest'arma può essere riempita con un veleno da ferimento. Subito dopo un attacco riuscito con l'arma, è possibile iniettare al bersaglio il veleno caricato con una singola azione Interagire. Riempire l'arma con una nuova sostanza richiede tre azioni Interagire e richiede entrambe le mani.",
+        "TraitScatter20": "Dispersione 20",
+        "TraitDescriptionUnstable": "Le azioni instabili utilizzano applicazioni sperimentali della tua innovazione che nemmeno tu puoi prevedere completamente. Dopo aver usato un'azione instabile su un'innovazione, è pericoloso usarne un'altra.",
+        "TraitDescriptionFatalAim": "Il calcio di quest'arma può essere tenuto sotto un braccio in modo da poter sparare con una sola mano, fintanto che con l'altra mano non impugni un'arma, uno scudo o qualsiasi altra cosa che avresti bisogno di spostare e posizionare, per assicurarti che l'arma non ti scivoli da sotto il braccio. Tuttavia, se usi entrambe le mani, l'arma può sferrare attacchi fatali. Quando impugni l'arma in due mani, ottiene il tratto fatale con il dado di danno indicato. Tenere l'arma sottobraccio con stabilità sufficiente a sparare è molto più complesso che liberare una mano dall'arma, quindi per passare da una presa all'altra, devi spendere un'azione per Interagire invece che Lasciare o come parte della ricarica.",
+        "TraitFatalAim": "Mira Fatale",
+        "TraitDescriptionInventor": "Questo tratto indica le capacità legate alla classe dell'inventore.",
+        "TraitSpellshot": "Sparamagie",
+        "TraitDescriptionScatter": "Quest'arma spara un grappolo di pallini in un ampio getto. Dispersione si accompagna sempre a un'area che indica il raggio del getto. Con un Colpo a segno, il bersaglio primario di un attacco effettuato con un'arma a dispersione subisce i danni indicati, e il bersaglio e tutte le creature all'interno del raggio indicato subiscono 1 danno da spargimento per dado di danno dell'arma."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
