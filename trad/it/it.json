@@ -2209,7 +2209,9 @@
                     "chain-mail": "Cotta di Maglia",
                     "chain-shirt": "Giaco di Maglia",
                     "explorers-clothing": "Vestiario da Esploratore",
-                    "full-plate": "Armatura Completa"
+                    "full-plate": "Armatura Completa",
+                    "power-suit": "Armatura del Potere",
+                    "subterfuge-suit": "Armatura del Sotterfugio"
                 },
                 "Category": {
                     "light-barding": "Bardatura Leggera",
@@ -2264,8 +2266,8 @@
                 "LevelLabel": "Oggetto {livello}",
                 "PriceLabel": "Prezzo: {price}",
                 "OtherTags": {
-                    "Label": "Tratti Aggiuntivi",
-                    "Hint": "Questi sono i tratti che indicano classificazioni nelle regole di Seconda Edizione a cui mancano definizioni esplicite ma sono comunque molto usati. Alcuni potrebbero essere aggiunti automaticamente quando altre proprietà sono presenti."
+                    "Label": "Altri Tag",
+                    "Hint": "Questi sono i tag che indicano classificazioni nelle regole di Seconda Edizione a cui mancano definizioni esplicite ma sono comunque molto usati. Alcuni potrebbero essere aggiunti automaticamente quando altre proprietà sono presenti."
                 },
                 "Broken": "Rotto",
                 "Destroyed": "Distrutto",
@@ -2281,8 +2283,77 @@
                 },
                 "Bulk": {
                     "NLight": "{light}L",
-                    "WithLight": "{bulk}, {light}L"
-                }
+                    "WithLight": "{bulk}, {light}L",
+                    "Label": "Volume",
+                    "HeldOrStowed": "Volume (tenuto/riposto)",
+                    "Negligible": {
+                        "ShortLabel": "—",
+                        "Label": "Trascurabile"
+                    },
+                    "Light": {
+                        "Label": "Leggero",
+                        "ShortLabel": "L"
+                    }
+                },
+                "GeneratedName": {
+                    "PotencyOneProperty": "{base} {property1} +{potency}",
+                    "PotencyOnePropertyMaterial": "{base} di {material} {property1} +{potency}",
+                    "OneProperty": "{base} {property1}",
+                    "PotencyFundamental2FourProperties": "{base} {fundamental2} {property1} {property2} {property3} {property4} +{potency}",
+                    "FourProperties": "{base} {property1} {property2} {property3} {property4}",
+                    "Material": "{base} di {material}",
+                    "PotencyFundamental2OnePropertyMaterial": "{base} di {material} {fundamental2} {property1} +{potency}",
+                    "ReinforcingMaterial": "{base} di {material} {reinforcing}",
+                    "Reinforcing": "{base} {reinforcing}",
+                    "FourPropertiesMaterial": "{base} di {material} {property1} {property2} {property3} {property4}",
+                    "PotencyFundamental2FourPropertiesMaterial": "{base} di {material} {fundamental2} {property1} {property2} {property3} {property4} +{potency}",
+                    "PotencyFundamental2Material": "{base} di {material} {fundamental2} +{potency}",
+                    "PotencyFundamental2OneProperty": "{base} {fundamental2} {property1} +{potency}",
+                    "PotencyFundamental2TwoProperties": "{base} {fundamental2} {property1} {property2} +{potency}",
+                    "PotencyFundamental2ThreeProperties": "{base} {fundamental2} {property1} {property2} {property3} +{potency}",
+                    "PotencyFundamental2ThreePropertiesMaterial": "{base} di {material} {fundamental2} {property1} {property2} {property3} +{potency}",
+                    "Fundamental2": "{base} {fundamental2}",
+                    "PotencyFundamental2TwoPropertiesMaterial": "{base} di {material} {fundamental2} {property1} {property2} +{potency}",
+                    "PotencyFourProperties": "{base} {property1} {property2} {property3} {property4} +{potency}",
+                    "PotencyTwoProperties": "{base} {property1} {property2} {+potency}",
+                    "Potency": "{base} +{potency}",
+                    "PotencyFundamental2": "{base} {fundamental2} +{potency}",
+                    "PotencyMaterial": "{base} di {material} +{potency}",
+                    "PotencyFourPropertiesMaterial": "{base} di {material} {property1} {property2} {property3} {property4} +{potency}",
+                    "PotencyThreePropertiesMaterial": "{base} di {material} {property1} {property2} {property3} +{potency}",
+                    "Fundamental2Material": "{base} di {material} {fundamental2}",
+                    "Hint": "Questo è il nome dell'arma base. Per la maggior parte delle armi, questa base è usata per generare il nome intero, prendendo in considerazione la composizione dei materiali e/o le rune. Dare a quest'arma un nome personalizzato o impostandola come \"specifica\" farà in modo che il nome generato non appaia.",
+                    "OnePropertyMaterial": "{base} di {material} {property1}",
+                    "PotencyThreeProperties": "{base} {property1} {property2} {property3} +{potency}",
+                    "TwoProperties": "{base} {property1} {property2}",
+                    "PotencyTwoPropertiesMaterial": "{base} di {material} {property1} {property2} +{potency}",
+                    "ThreeProperties": "{base} {property1} {property2} {property3}",
+                    "ThreePropertiesMaterial": "{base} di {material} {property1} {property2} {property3}",
+                    "TwoPropertiesMaterial": "{base} di {material} {property1} {property2}"
+                },
+                "BrokenThreshold": {
+                    "ShortLabel": "SR",
+                    "Label": "Soglia di Rottura"
+                },
+                "MaterialRunes": {
+                    "Label": "Materiale Prezioso e Rune"
+                },
+                "Attach": {
+                    "Detach": {
+                        "Label": "Separa Oggetto",
+                        "Prompt": "Sei sicuro di voler separare {attachable}?"
+                    },
+                    "CraftingCheck": "Prova di Artigianato",
+                    "Outcome": {
+                        "Failure": "Non sei riuscito ad unire {attachable}.",
+                        "Success": "{attachable} è ora unito a {target}."
+                    },
+                    "NoEligibleItem": "Non è stato trovato alcun oggetto che può unirsi a {attachable}.",
+                    "SidebarContextMenuOption": "Unisci all'Oggetto",
+                    "PromptTitle": "Unisci {item}"
+                },
+                "Attachments": "Oggetti Uniti",
+                "Base": "Base"
             },
             "Activation": {
                 "Label": "Attivazione",
@@ -2400,6 +2471,13 @@
                     "KeyAbilityOptions": {
                         "Label": "Opzioni Caratteristica Chiave",
                         "Hint": "Opzioni di caratteristica chiave in aggiunta a questa fornita dalla classe"
+                    },
+                    "Senses": {
+                        "Darkvision": {
+                            "Ancestry": "Concedi se la stirpe del personaggio ha visione crepuscolare.",
+                            "LLV": "Concedi se il personaggio ha visione crepuscolare da qualsiasi fonte precedente.",
+                            "Second": "Concedi se il talento è preso una seconda volta."
+                        }
                     }
                 },
                 "Plural": "Talenti"
@@ -2492,7 +2570,8 @@
                     "Hint": "Un singolo oggetto effetto che deve essere applicato all'attore che usa questa azione",
                     "Applied": "{effetto} è stato applicato.",
                     "Delete": "Elimina Riferimento",
-                    "Label": "Effetto Applicato a Se Stesso"
+                    "Label": "Effetto Applicato a Se Stesso",
+                    "Drop": "Trascina Effetto"
                 },
                 "Plural": "Abilità"
             },
@@ -2514,7 +2593,9 @@
                     "wand": "Bacchetta",
                     "talisman": "Talismano",
                     "ammo": "Munizioni",
-                    "mutagen": "Mutageno"
+                    "mutagen": "Mutageno",
+                    "toolkit": "Kit",
+                    "gadget": "Gadget"
                 },
                 "Damage": {
                     "Add": "Aggiungi Danno/Guarigione",
@@ -2536,6 +2617,14 @@
                 },
                 "Plural": "Contenitori",
                 "Stowing": "È un Contenitore di Oggetti Riposti?"
+            },
+            "OtherTags": {
+                "Label": "Altri Tag",
+                "Hint": "Tag aggiuntivi oltre ai tratti che aiutano a classificare un oggetto"
+            },
+            "MaterialEffects": {
+                "Hint": "Effetti dei danni con i materiali preziosi possono innescare o sorpassare le immunità, debolezze e resistenze (applicati ai tiri dei danni in linea)",
+                "Label": "Effetti Danno Materiali"
             }
         },
         "Actor": {
@@ -4318,7 +4407,8 @@
                 "TypeMissing": "il parametro type è obbgliatorio",
                 "DCAndDefense": "non è possibile avere sia il parametro dc che il parametro defense",
                 "AdjustmentLengthMismatch": "il numero dei parametri type e adjustment non corrisponde",
-                "NonIntegerAdjustment": "i parametri di adjustments devono essere interi"
+                "NonIntegerAdjustment": "i parametri di adjustments devono essere interi",
+                "InvalidDomains": "I domini di {type} devono essere resi slug e devono terminare in -damage"
             },
             "Invalid": "Espressione @Check non valida: {message}"
         },
