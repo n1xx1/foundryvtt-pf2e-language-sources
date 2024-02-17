@@ -16443,7 +16443,7 @@
       "name": "Proximity Alert"
     },
     "Psi Burst": {
-      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>With a passing thought, you direct violent psychic energies at a nearby creature. Target one creature within 30 feet. It takes @Damage[1d4[bludgeoning]] damage with a @Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)|basic:true]. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r (ceil(@actor.level/2)d4)[bludgeoning]]]{Leveled bludgeoning damage}</p>",
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>With a passing thought, you direct violent psychic energies at a nearby creature. Target one creature within 30 feet. It takes @Damage[(ceil(@actor.level/2)d4)[bludgeoning]] damage with a @Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)|basic:true]. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>",
       "name": "Psi Burst"
     },
     "Psi Catastrophe": {
@@ -23917,7 +23917,7 @@
       "name": "Viking Weapon Specialist"
     },
     "Violent Unleash": {
-      "description": "<p><strong>Trigger</strong> You Unleash your Psyche.</p>\n<hr />\n<p>The force of your mind unleashing itself wracks your enemies with a violent shockwave. You deal @Damage[2d6[force]|traits:area-damage] damage to all creatures in a @Template[type:emanation|distance:20], with a @Check[type:reflex|basic:true]{basic Reflex save}. This explosion is taxing, making you @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At 5th level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>@Damage[(ceil(@actor.level/2)d6)[force]|traits:area-damage]{Leveled force damage}</p>",
+      "description": "<p><strong>Trigger</strong> You Unleash your Psyche.</p>\n<hr />\n<p>The force of your mind unleashing itself wracks your enemies with a violent shockwave. You deal @Damage[ceil(@actor.level/2)d6[force]|options:area-damage] damage to all creatures in a @Template[type:emanation|distance:20], with a @Check[type:reflex|basic:true]{basic Reflex save}. This explosion is taxing, making you @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At 5th level and every 2 levels thereafter, the damage increases by 1d6.</p>",
       "name": "Violent Unleash"
     },
     "Violent Vines": {
