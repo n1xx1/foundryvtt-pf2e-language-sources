@@ -1897,6 +1897,18 @@
                 "CanBeAmmo": {
                     "Label": "Usabile come Munizione",
                     "Hint": "Indica che quest'arma può essere caricata in un'altra come munizione."
+                },
+                "Forceful": {
+                    "Third": "Impeto >3° Attacco",
+                    "Second": "Impeto 2° Attacco"
+                },
+                "Rune": {
+                    "Striking": {
+                        "Greater": "Poderosa Superiore",
+                        "Striking": "Poderosa",
+                        "Major": "Poderosa Maggiore"
+                    },
+                    "Potency": "Potenziamento dell'Arma"
                 }
             },
             "CreationDialog": {
@@ -2502,7 +2514,10 @@
                     "SheetTitle": "{originalName} (Variante)"
                 },
                 "Warning": {
-                    "WrongSpellType": "Impossibile aggiungere incantesimo {type} a questa voce lancio."
+                    "WrongSpellType": "Impossibile aggiungere incantesimo {type} a questa voce lancio.",
+                    "NonCantripToCantrips": "{spell} non è un trucchetto e non può essere aggiunto alla lista dei trucchetti.",
+                    "CantripToRankedSlots": "{spell} è un trucchetto e deve essere aggiunto alla lista dei trucchetti.",
+                    "InvalidRank": "{spell} è {spellRank}, ma questi slot sono per {targetRank}."
                 },
                 "LevelN": "Incantesimo {level}",
                 "Counteract": {
@@ -2517,7 +2532,31 @@
                     "Place": "Posiziona {area}",
                     "Clear": "Elimina Template Posizionati"
                 },
-                "Area": "{shape} di {size} {unit}"
+                "Area": "{shape} di {size} {unit}",
+                "Plural": "Incantesimi",
+                "Defense": {
+                    "BasicDefense": "base su {save}",
+                    "Label": "Difesa",
+                    "BasicSave": "Base"
+                },
+                "Sustained": {
+                    "Duration": "Mantenuto fino a {maximum}",
+                    "Label": "Mantenuto"
+                },
+                "Rank": {
+                    "Plural": "Gradi",
+                    "Label": "Grado",
+                    "Ordinal": "Grado {rank}"
+                },
+                "Ritual": {
+                    "Label": "Rituale",
+                    "PrimaryCheck": "Prova Principale",
+                    "SecondaryChecks": "Prove Secondarie",
+                    "SecondaryCasters": "Lanciatori Secondari"
+                },
+                "Cast": "Lancia",
+                "Cost": "Costo",
+                "LineSplit": ";"
             },
             "Rules": {
                 "Apply": "Applica",
@@ -2530,7 +2569,8 @@
                 "RegenerateSlug": "(Ri)genera Slug",
                 "New": "Nuovo Elemento Regola",
                 "Tab": "Regole",
-                "Remove": "Rimuovi Elemento delle Regole"
+                "Remove": "Rimuovi Elemento delle Regole",
+                "Edit": "Modifica JSON"
             },
             "RemovalPrevented": "La rimozione di {item} è prevenuta da {preventer}.",
             "WorldItemWarning": "Questo è un oggetto del mondo e non funzionerà se salvato in un compendio.",
@@ -2631,7 +2671,34 @@
                 "SubitemFailure": "Non è stato possibile aggiornare uno o più sotto-oggetti di {item} ({uuid}).",
                 "Success": "L'oggetto \"{item}\" è stato aggiornato.",
                 "Label": "Aggiorna",
-                "SourceNotFound": "La fonte del compendio per {item} (ID fonte: {sourceId}) non è stata trovata."
+                "SourceNotFound": "La fonte del compendio per {item} (ID fonte: {sourceId}) non è stata trovata.",
+                "Tooltip": {
+                    "Disabled": "L'oggetto non può essere aggiornato: contiene dati salvati al momento dell'aggiunta all'attore",
+                    "Enabled": "Aggiorna quest'oggetto con i più aggiornati dal compendio di origine."
+                }
+            },
+            "Shield": {
+                "Base": {
+                    "buckler": "Brocchiere",
+                    "steel-shield": "Scudo d'Acciaio",
+                    "tower-shield": "Scudo Torre",
+                    "wooden-shield": "Scudo di Legno"
+                },
+                "Rune": {
+                    "Reinforcing": {
+                        "Major": "Rinforzante Maggiore",
+                        "Moderate": "Rinforzante Moderata",
+                        "Supreme": "Rinforzante Suprema",
+                        "Label": "Runa Rinforzante",
+                        "Lesser": "Rinforzante Inferiore",
+                        "Greater": "Rinforzante Superiore",
+                        "Minor": "Rinforzante Minore"
+                    }
+                },
+                "Specific": {
+                    "Label": "Scudo Magico Specifico",
+                    "Hint": "Impostare questo scudo come uno <i>scudo magico specifico</i> indica che fa più di quello che il suo materiale e le rune permettono. Il nome, il livello, la rarità e il prezzo non verranno più sovrascritti da un materiale prezioso o runa una volta impostato. Questi materiali però serviranno come punto di partenza per gli aggiustamenti al livello, alla rarità e al prezzo delle migliorie successive."
+                }
             }
         },
         "Actor": {
@@ -4408,7 +4475,7 @@
         "InitiativeLabel": "Iniziativa",
         "InitiativeWithSkill": "Iniziativa: {skillName}",
         "InlineCheck": {
-            "BasicWithSave": "base su {save}",
+            "BasicWithSave": "Base su {save}",
             "DCWithName": "CD di {name}",
             "Errors": {
                 "TypeMissing": "il parametro type è obbgliatorio",
@@ -4447,6 +4514,10 @@
             "GMVision": {
                 "Label": "Visione del GM",
                 "Hint": "Illumina le scene scure per una maggior facilità di visione."
+            },
+            "TogglePartySheet": {
+                "Label": "Apri/Chiudi Scheda del Party",
+                "Hint": "Apri o chiudi la scheda del party attivo o (se un giocatore) assegnato."
             }
         },
         "KitItems": "Oggetti",
@@ -4495,7 +4566,8 @@
                 "Off": "OFF",
                 "On": "ON",
                 "Notification": "{toggle} è stato impostato a {state}."
-            }
+            },
+            "NoCompendiumItem": "Una macro non può essere creata da un oggetto del compendio che non è un effetto o una condizione."
         },
         "MacroActionNoActorError": "Questo personaggio non esiste più!",
         "MacroActionNoActionError": "Questa azione non esiste più!",
@@ -4707,7 +4779,19 @@
             "Normal": "Normale",
             "CriticalHit": "Colpo Critico",
             "Add": "Aggiungi",
-            "UntypedPenalty": "Senza Tipo (penalità)"
+            "UntypedPenalty": "Senza Tipo (penalità)",
+            "Dialog": {
+                "Damage": {
+                    "DieSizeUpgrade": "Aumenta Dimensione Dado",
+                    "BaseDamage": "Danno Base",
+                    "Dice": "{dice} Dadi",
+                    "DiceHeader": "Dadi"
+                },
+                "Check": {
+                    "Substitution": "Sostituzione",
+                    "Utilize": "Usa?"
+                }
+            }
         },
         "Recovery": {
             "critFailure": "Aumenta il tuo valore di Morente di 2.",
@@ -7895,7 +7979,23 @@
         "TraitDescriptionInventor": "Questo tratto indica le capacità legate alla classe dell'inventore.",
         "TraitSpellshot": "Sparamagie",
         "TraitDescriptionScatter": "Quest'arma spara un grappolo di pallini in un ampio getto. Dispersione si accompagna sempre a un'area che indica il raggio del getto. Con un Colpo a segno, il bersaglio primario di un attacco effettuato con un'arma a dispersione subisce i danni indicati, e il bersaglio e tutte le creature all'interno del raggio indicato subiscono 1 danno da spargimento per dado di danno dell'arma.",
-        "TraitDescriptionModification": "Un talento con questo tratto altera la struttura delle tue innovazioni. Se hai il privilegio di classe riconfigurazione, puoi riaddestrare più facilmente questi talenti."
+        "TraitDescriptionModification": "Un talento con questo tratto altera la struttura delle tue innovazioni. Se hai il privilegio di classe riconfigurazione, puoi riaddestrare più facilmente questi talenti.",
+        "Pathfinder": "Pathfinder",
+        "Publication": {
+            "Label": "Pubblicazione",
+            "License": {
+                "Label": "Licenza",
+                "OGL": "OGL",
+                "ORC": "ORC"
+            },
+            "Title": "Titolo",
+            "Authors": "Autore/i",
+            "Remaster": "Remaster?"
+        },
+        "PreciousMaterialDawnsilverDescription": "Il mithral è rinomato per la sua leggerezza, durevolezza ed efficacia contro una varietà di creature, inclusi diavoli e licantropi. Ha la stessa lucentezza dell'argento ma una sfumatura leggermente più chiara. Le armi e le armature di mithral vengono considerate come se fossero d'argento al fine di danneggiare le creature con debolezza verso l'argento. Un oggetto di metallo fatto di mithral è più leggero di uno uguale fatto d'acciaio o ferro: il Volume dell'oggetto è ridotto di 1 (oppure a Volume Leggero se il suo Volume normale è 1, se l'oggetto ha già Volume Leggero non si applica questo effetto). Il Prezzo di un oggetto fatto di mithral è calcolato sul normale Volume dell'oggetto, non sul Volume ridotto per essere fatto di mithral, ma applica la riduzione di Volume prima di effettuare qualsiasi altro aggiustamento del Volume dell'oggetto in base alle sue dimensioni.",
+        "PreciousMaterialDuskwoodDescription": "Il legnoscuro è un legno molto leggero che si trova principalmente in antiche foreste nell'area centro-sud dell'Avistan; è scuro come l'ebano ma con una leggera sfumatura viola. Il Volume di un oggetto di legnoscuro è ridotto di 1 (oppure a Volume Leggero se il suo Volume normale è 1, se l'oggetto ha già Volume Leggero non si applica questo effetto). Il Prezzo di un oggetto fatto di legnoscuro è calcolato sul normale Volume dell'oggetto, non sul Volume ridotto per essere fatto di legnoscuro, ma applica la riduzione di Volume prima di effettuare qualsiasi altro aggiustamento del Volume dell'oggetto in base alle sue dimensioni.",
+        "PreciousMaterialDawnsilver": "Mithral",
+        "PreciousMaterialDuskwood": "Legnoscuro"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
