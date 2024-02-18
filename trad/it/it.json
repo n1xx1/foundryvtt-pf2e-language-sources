@@ -886,7 +886,8 @@
                 "RulesBasedVision": {
                     "ManagedBy": "Gestito da <rbv>visione basata sulle regole</rbv>.",
                     "Name": "Visione Basata sulle Regole",
-                    "Hint": "Applica le meccaniche di visione che fanno il possibile per replicare le regole di Pathfinder Seconda Edizione. Abilitare questa impostazione rimuove la possibilità di configurare sia la Visione Globale Senza Restrizioni sia il raggio di vista dei Token."
+                    "Hint": "Applica le meccaniche di visione che fanno il possibile per replicare le regole di Pathfinder Seconda Edizione. Abilitare questa impostazione rimuove la possibilità di configurare sia la Visione Globale Senza Restrizioni sia il raggio di vista dei Token.",
+                    "ViewWorldSetting": "Mostra Impostazioni Mondo"
                 },
                 "Name": "Automazione",
                 "Label": "Gestisci le Automazioni",
@@ -954,13 +955,18 @@
                 "ShowPartyStats": {
                     "Hint": "I giocatori potranno vedere le statistiche per i membri del loro gruppo nella scheda dell'attore gruppo",
                     "Name": "Mostra Statistiche Membri Gruppo"
+                },
+                "ShowBreakdowns": {
+                    "Hint": "I giocatori possono vedere i componenti e i modificatori totali dei tiri fatti dai PNG e altri attori non di proprietà dei giocatori.",
+                    "Name": "Mostra Ripartizione Tiri"
                 }
             },
             "Settings": "Impostazioni",
             "Sidebar": {
                 "Wiki": "Wiki",
                 "Changelog": "Changelog",
-                "Discord": "Discord"
+                "Discord": "Discord",
+                "Remaster": "Cambiementi Remaster"
             },
             "critFumbleCards": {
                 "hint": "Pesca automaticamente una carta colpo critico o carta fallimento con i tiri appropriati.",
@@ -1094,7 +1100,22 @@
                     "Hint": "Tratti che possono essere applicati ai talenti (es. Retaggio, Monaco) e alle azioni"
                 },
                 "Languages": {
-                    "Hint": "Linguaggi per personaggi da sapere o imparare (ad es. Draconico, Gnomesco)"
+                    "Hint": "Linguaggi per personaggi da sapere o imparare (ad es. Draconico, Gnomesco)",
+                    "CommonLanguage": {
+                        "Hint": "Selezionare la lingua da chiamare \"Comune\" in questo mondo di gioco.",
+                        "Label": "La Lingua \"Comune\""
+                    },
+                    "Rarities": {
+                        "Name": "Rarità Lingue",
+                        "Common": "Lingue <rarity>Comuni</rarity>",
+                        "Rare": "Lingue <rarity>Rare</rarity>",
+                        "Secret": "Lingue <rarity>Segrete</rarity>",
+                        "Unavailable": {
+                            "Hint": "Le lingue che non sono utilizzabili da nessuna creatura in questo mondo",
+                            "Label": "Lingue Non Disponibili"
+                        },
+                        "Uncommon": "Lingue <rarity>Non Comuni</rarity>"
+                    }
                 },
                 "SpellTraits": {
                     "Name": "Tratti Incantesimi",
@@ -1121,12 +1142,18 @@
                     "Hint": "Tratti applicabili all'equipaggiamento che non sia un arma"
                 },
                 "DamageTypes": {
-                    "Hint": "Tipi di danno aggiuntivi da far distinguere al sistema"
+                    "Hint": "Tipi di danno aggiuntivi da far distinguere al sistema",
+                    "Add": "Aggiungi Tipo Danni",
+                    "Icon": "Icona (Font Awesome)",
+                    "Name": "Tipi di Danno Personalizzati",
+                    "Label": "Etichetta"
                 },
                 "Tabs": {
                     "Traits": "Tratti e Categorie",
-                    "Damage": "Tipi di Danno"
-                }
+                    "Damage": "Tipi di Danno",
+                    "Campaign": "Campagna"
+                },
+                "ReservedTerm": "\"{term}\" è un termine riservato."
             },
             "Tokens": {
                 "Autoscale": {
@@ -1161,9 +1188,14 @@
                 },
                 "Proficiency": {
                     "Name": "Competenza senza Livello",
-                    "Hint": "Gioca con la regola alternativa competenza senza livello dal manuale Guida del Game Master pag. 194."
+                    "Hint": "Gioca con la regola alternativa competenza senza livello dal manuale Guida del Game Master pag. 194.",
+                    "ModifiersHint": "Imposta il valore del modificatore per ogni grado di competenza."
                 },
-                "Title": "Regole Alternative"
+                "Title": "Regole Alternative",
+                "GradualBoosts": {
+                    "Name": "Aumenti Graduali delle Caratteristiche",
+                    "Hint": "Distribuisci gli aumenti di caratteristica su più livelli. I giocatori ottengono gli aumenti a ogni livello accetto 6, 11 e 16."
+                }
             },
             "TOTMToggles": {
                 "Name": "Interruttori Teatro della Mente",
@@ -1187,6 +1219,11 @@
                     "none": "Nessuno",
                     "kingmaker": "Alba dei Re"
                 }
+            },
+            "EnabledDisabled": {
+                "Default": "Predefinito del Mondo ({worldDefault})",
+                "Enabled": "Abilitato",
+                "Disabled": "Disabilitato"
             }
         },
         "WeaponPropertyRune": {
@@ -4788,12 +4825,21 @@
                     "DieSizeUpgrade": "Aumenta Dimensione Dado",
                     "BaseDamage": "Danno Base",
                     "Dice": "{dice} Dadi",
-                    "DiceHeader": "Dadi"
+                    "DiceHeader": "Dadi",
+                    "Title": "Tiro per i Danni",
+                    "ExtraDice": "{dice} Extra",
+                    "Label": "Etichetta",
+                    "None": "Nessuno",
+                    "Override": "Sovrascritto {value}",
+                    "Splash": "{damageType} Da Spargimento",
+                    "TitleCritical": "Tiro per i Danni Critici"
                 },
                 "Check": {
                     "Substitution": "Sostituzione",
                     "Utilize": "Usa?"
-                }
+                },
+                "ShowDefault": "Mostra Sempre Finestra di Dialogo",
+                "ShowDefaultHint": "Se abilitata, questa finestra di dialogo viene sempre visualizzata almeno che tu non tenga premuto il tasto Shift. Se disabilitata, puoi aprire questa finestra tenendo premuto il tasto Shift."
             }
         },
         "Recovery": {
@@ -5015,7 +5061,12 @@
                     "Link": "Collega alla Dimensione del Personaggio",
                     "Unlink": "Scollega dalla Dimensione del Personaggio"
                 }
-            }
+            },
+            "SecretDisposition": {
+                "Label": "Atteggiamento Segreto",
+                "Hint": "Attiva l'atteggiamento \"segreto\", che mostra un bordo viola per i possessori e nessun bordo o modifica al cursore per gli altri."
+            },
+            "Flanking": "Fiancheggiare"
         },
         "TotalTreasure": "Totale Tesoro",
         "TotalCoinage": "Totale Monete",
@@ -7943,7 +7994,7 @@
         "TraitDarvakka": "Darvakka",
         "PreciousMaterialPeachwood": "Pesco",
         "TraitDescriptionCobbled": "Quest'arma da fuoco è raffazzonata e il suo inceppamento è più probabile. Non importa quanto bene tu effettui la manutenzione, con un tiro per colpire fallito l'attacco manca e devi effettuare una @Check[type:flat|dc:5]. Se fallisci tale prova, l'arma si inceppa.",
-        "PreciousMaterialPeachwoodDescription": "Le armi di Pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legnoscuro ai fini di qualsiasi resistenza o debolezza correlata al legnoscuro delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta.",
+        "PreciousMaterialPeachwoodDescription": "Le armi di pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legnoscuro ai fini di qualsiasi resistenza o debolezza correlata al legnoscuro delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta.",
         "TraitDescriptionCriticalFusion": "Fusione del Critico è un nuovo tratto per le armi combinate che ti fornisce due opzioni aggiuntive per l'effetto di specializzazione del critico quando usi la versione da mischia dell'arma combinata per effettuare un attacco in mischia mentre l'arma è carica. Se scegli di usare una di queste opzioni, esse sostituiscono il normale effetto di specializzazione del critico dell'uso in mischia. Come prima opzione, puoi scaricare l'arma da fuoco per creare un forte botto e una concussione, utilizzando l'effetto di specializzazione del critico delle armi da fuoco invece dell'effetto di specializzazione del critico del gruppo delle armi da mischia. Come seconda opzione, puoi scegliere di scaricare l'arma da fuoco per aumentare lo slancio del colpo critico o sparare al nemico mentre lo attacchi in mischia, infliggendo 2 danni aggiuntivi per ogni dado di danno dell'arma. Entrambe le opzioni scaricano l'arma, il che di solito significa che è necessario ricaricarla prima di sparare di nuovo.",
         "TraitDescriptionCombination": "Questo è un tratto per le armi che combinano la funzionalità di armi da mischia e armi da fuoco in modi unici o inusuali. Un'arma combinata ha una forma o uso da arma da fuoco e una forma o un uso da arma da mischia.",
         "TraitDescriptionDarvakka": "Creature non morte entropiche, corrotte dal Piano delle Ombre e dal Piano dell'Energia Negativa.",
@@ -7998,7 +8049,35 @@
         "PreciousMaterialDawnsilverDescription": "Il mithral è rinomato per la sua leggerezza, durevolezza ed efficacia contro una varietà di creature, inclusi diavoli e licantropi. Ha la stessa lucentezza dell'argento ma una sfumatura leggermente più chiara. Le armi e le armature di mithral vengono considerate come se fossero d'argento al fine di danneggiare le creature con debolezza verso l'argento. Un oggetto di metallo fatto di mithral è più leggero di uno uguale fatto d'acciaio o ferro: il Volume dell'oggetto è ridotto di 1 (oppure a Volume Leggero se il suo Volume normale è 1, se l'oggetto ha già Volume Leggero non si applica questo effetto). Il Prezzo di un oggetto fatto di mithral è calcolato sul normale Volume dell'oggetto, non sul Volume ridotto per essere fatto di mithral, ma applica la riduzione di Volume prima di effettuare qualsiasi altro aggiustamento del Volume dell'oggetto in base alle sue dimensioni.",
         "PreciousMaterialDuskwoodDescription": "Il legnoscuro è un legno molto leggero che si trova principalmente in antiche foreste nell'area centro-sud dell'Avistan; è scuro come l'ebano ma con una leggera sfumatura viola. Il Volume di un oggetto di legnoscuro è ridotto di 1 (oppure a Volume Leggero se il suo Volume normale è 1, se l'oggetto ha già Volume Leggero non si applica questo effetto). Il Prezzo di un oggetto fatto di legnoscuro è calcolato sul normale Volume dell'oggetto, non sul Volume ridotto per essere fatto di legnoscuro, ma applica la riduzione di Volume prima di effettuare qualsiasi altro aggiustamento del Volume dell'oggetto in base alle sue dimensioni.",
         "PreciousMaterialDawnsilver": "Mithral",
-        "PreciousMaterialDuskwood": "Legnoscuro"
+        "PreciousMaterialDuskwood": "Legnoscuro",
+        "TraitDescriptionPeachwood": "Le armi di pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legnoscuro ai fini di qualsiasi resistenza o debolezza correlata al legnoscuro delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta.",
+        "TraitDescriptionDromaar": "Una creatura con questo tratto ha il lignaggio versatile mezzorco. I mezzorchi sono di stirpe mista, includono orchi o altri mezzorchi. Una abilità con questo tratto può essere usata o selezionata solo da mezzorchi.",
+        "TraitDescriptionPoppet": "Una creatura con questo tratto è un membro della stirpe bambolina.",
+        "SettingsQuickChecksLabel": "Anteprima Tiri D20",
+        "SettingsQuickChecksNotes": "Se disabilitato, la finestra di dialogo per vedere l'anteprima dei tiri D20 verrà mostrata solo quando il pulsante per tirare è cliccato con shift premuto.",
+        "SavingThrow": "Tiro Salvezza",
+        "SettingsQuickDamageLabel": "Anteprima Tiri per i Danni",
+        "PreciousMaterialSisterstoneDusk": "Pietra Gemella del Crepuscolo",
+        "PreciousMaterialSisterstoneScarlet": "Pietra Gemella Scarlatta",
+        "SettingsQuickDamageNotes": "Se disabilitato, la finestra di dialogo per vedere l'anteprima dei tiri dei danni verrà mostrata solo quando il pulsante per tirare è cliccato con shift premuto.",
+        "TraitDescriptionAiuvarin": "Una creatura con questo tratto ha il lignaggio versatile mezzelfo. I mezzelfi sono di stirpe mista, includono gli elfi o altri mezzelfi. Una abilità con questo tratto può essere usata o selezionata solo da mezzelfi.",
+        "TraitDescriptionHoly": "Effetti con il tratto sacro sono legati e le potenti forze magiche della benevolenza e virtù. Spesso hanno effetti più forti su creature sacrileghe. Creature con questo tratto sono fortamente devote alle cause sacre e spesso hanno debolezze al sacrilego. Se una creatura con una debolezza al sacro usa un oggetto o effetto sacro, subisce danni dalla sua debolezza.",
+        "TraitDescriptionNephilim": "Una creatura con questo tratto ha il lignaggio versatile nephilim. I nephilim sono eredi planari discendenti da esseri immortali di altri piani. Un'abilità con questo tratto può essere usata o selezionata soltanto dai nephilim.",
+        "PreciousMaterialSisterstoneDescription": "Pietra gemella è il termine usato per due minerali strettamente correlati infusi del deflusso spirituale nel Campo delle Fanciulle, la pietra gemella del crepuscolo e la pietra gemella scarlatta. Hanno le stesse proprietà fisiche, eccetto il colore: la pietra gemella del crepuscolo è arancione pallido mentre la pietra gemella scarlatta è rosso-arancio. Quando si avvicinano a un oggetto fatto con l'altro tipo di pietra gemella, entrambi iniziano a emanare energia spirituale che respinge i non morti.",
+        "TraitDescriptionGhul": "Non morti avidi e voraci originati in principio dai geni.",
+        "Scene": {
+            "HearingRange": {
+                "Caveat": "*Per motivi di prestazioni, il raggio è un vero misuramento piuttosto che uno basato su griglia.",
+                "Name": "Raggio Uditivo (m)",
+                "Unlimited": "Illimitato",
+                "Hint": "Limita il raggio* con cui le creature possono sentire in questa scena come una rappresentazione di \"un ambiente che distorce i sensi, come una stanza rumorosa\" (MdG p. 464). Richiede che la visione basata sulle regole sia abilitata."
+            }
+        },
+        "TraitDescriptionSanctified": "Se sei sacro o sacrilego, le tue azioni e incantesimi santificate ottengono lo stesso tratto.",
+        "TabCharacterLabel": "Personaggio",
+        "TraitAiuvarin": "Mezzelfo",
+        "PreciousMaterialSisterstone": "Pietra Gemella",
+        "TraitDescriptionFocus": "Gli incantesimi focalizzati sono un tipo speciale di incantesimi ottenuti direttamente da un ramo di studi, da una Divinità o da un'altra fonte specifica. Puoi apprendere gli incantesimi focalizzati soltanto attraverso privilegi di classe o talenti speciali invece di sceglierli da una lista di incantesimi. Inoltre, puoi lanciare incantesimi focalizzati usando una speciale riserva di Punti Focalizzazione: non puoi preparare un incantesimo focalizzato in uno slot incantesimo o usare il tuo slot incantesimo per lanciare incantesimi focalizzati; allo stesso modo, non puoi spendere i Punti Focalizzazione per lanciare incantesimi che non sono incantesimi focalizzati."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
