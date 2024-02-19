@@ -413,7 +413,15 @@
                     "success": "<strong>Successo</strong> Ti muovi lungo il piano inclinato.",
                     "criticalFailure": "<strong>Successo Critico</strong> Cadi. Se hai iniziato la scalata mentre eri su un terreno stabile, cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}."
                 },
-                "Title": "Scalare"
+                "Title": "Scalare",
+                "SampleTasks": {
+                    "Untrained": "scala, pendio scosceso, albero con rami bassi",
+                    "Trained": "sartiame, corda, albero tipico",
+                    "Expert": "muro con piccoli appigli per mani e piedi",
+                    "Master": "soffitto con appigli per mani e piedi, parete di roccia",
+                    "Legendary": "superficie liscia"
+                },
+                "Description": "<p><strong>Requisiti</strong> Hai entrambe le mani libere.</p><hr><p>Effettui una prova di Atletica per muoverti di massimo 1,5 metri verso l'alto, verso il basso, in orizzontale o in diagonale lungo un pendio. Sei @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} mentre scali a meno che non hai una Velocità di scalare. Il GM determina la CD in base alla natura del pendio e all'ambiente. Potresti ottenere automaticamente un successo critico in un pendio banale da scalare. Se la tua Velocità sul terreno è 12 metri o superiore, aumenti la distanza massima di 1,5 metri per ogni 6 metri di Velocità sopra i 6 metri.</p><p><strong>Successo Critico</strong> Ti muovi lungo la pendenza, aumentando la distanza massima di 1,5 metri.<br><strong>Successo</strong> Ti muovi lungo la pendenza.<br><strong>Fallimento Critico</strong> Cadi. Se hai iniziato la scalata mentre eri su un terreno stabile, cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}.</p>"
             },
             "ShieldBlock": {
                 "SelectAShield": "Seleziona lo scudo"
@@ -452,7 +460,8 @@
                 "Title": "Creare un Diversivo",
                 "Trick": {
                     "Title": "Trucco"
-                }
+                },
+                "Description": "<p>Crei un diversivo con un gesto, un trucco o qualche parola, attirando altrove l'attenzione delle creature. Se usi un gesto o un trucco, questa azione ha il tratto maneggiare. Se usi le parole, guadagna invece i tratti uditivo e linguistico.</p><p>Effettua una singola prova di Inganno e comparala alla CD di Percezione delle creature che stai cercando di distrarre. Che tu la superi o meno, le creature che hai tentato di distrarre ottengono bonus di circostanza +4 alle proprie CD di Percezione contro i tuoi tentativi di Creare un Diversivo per 1 minuto.</p><p><strong>Successo</strong> Diventi @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosto} nei confronti di tutte le creature la cui CD di Percezione è pari o inferiore al tuo risultato. (La condizione nascosto ti permette di allontanarti @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Muovendoti Furtivamente}). La condizione dura fino alla fine del tuo turno o finché continui solo a fare @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Passi} o usare le azioni Muoversi Furtivamente e @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Nascondersi} dell'abilità Furtività. Se @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Colpisci} una creatura, essa è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparata} nei confronti dell'attacco, dopodiché diventi @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{osservato}. Se fai qualsiasi altra cosa diventi osservato appena prima di agire, a meno che il GM non decida diversamente.<br><strong>Fallimento</strong> Non distogli l'attenzione delle creature che hanno una CD di Percezione superiore al tuo risultato, le quali sono consapevoli del fatto che stavi cercando di fregarle.</p>"
             },
             "Disarm": {
                 "Notes": {
@@ -879,6 +888,56 @@
                     "criticalFailure": "<strong>Fallimento Critico</strong> La manomissione si ritorce contro di te, creando una piccola esplosione nei tuoi stessi strumenti o marchingegni. Subisci [[/r (@actor.level)[fire] #Ritorsione Manomissione]]{danni da fuoco pari al tuo livello}.",
                     "success": "<strong>Successo</strong> La tua manomissione è efficace temporaneamente. Come successo critico, ma l'effetto termina all'inizio del tuo turno successivo, anche se il nemico non Interagisce per interromperlo. @UUID[Compendium.pf2e.feat-effects.Item.IfRkgjyh0JzGalIy]{Effetto: Armatura Manomessa (Successo)} @UUID[Compendium.pf2e.feat-effects.Item.4QWayYR3JSL9bk2T]{Effetto: Arma Manomessa (Successo)}"
                 }
+            },
+            "ArrestAFall": {
+                "Description": "<p><strong>Innesco</strong> Cadi.</p><p><strong>Requisiti</strong> Hai una Velocità di Volare.</p><hr><p>Tenti una prova di Acrobazia per rallentare la tua caduta. La CD è in genere 15, ma può aumentare in caso di perturbazioni o altre circostanze.</p><p><strong>Successo</strong> Cadi in modo composto e non subisci danni dalla caduta.</p>",
+                "Notes": {
+                    "success": "<strong>Success</strong> Cadi in modo composto e non subisci danni dalla caduta."
+                },
+                "Title": "Arrestare Una Caduta"
+            },
+            "EndCover": {
+                "Title": "Termina Copertura",
+                "TowerShield": {
+                    "Description": "{actor} viene fuori da dietro il suo {weapon}.",
+                    "Title": "Termina Copertura"
+                },
+                "ShortTitle": "Termina Cupertura"
+            },
+            "AffixATalisman": {
+                "Title": "Applicare un Talismano",
+                "Description": "<p><strong>Requisiti</strong> Devi usare un @UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]{kit da riparazione}.</p><hr><p>Impieghi 10 minuti per applicare un talismano a un oggetto, collocando l'oggetto su una superficie stabile e usando il kit da riparazione con entrambe le mani; puoi usare questa attività anche per rimuovere un talismano. Se più talismani sono applicati a un solo oggetto, essi sono soppressi e nessuno di essi può essere attivato.</p>"
+            },
+            "IdentifyMagic": {
+                "Description": "<p>Dopo aver scoperto che un oggetto, un luogo o un effetto in corso è magico, puoi trascorrere 10 minuti per cercare di identificare i dettagli della sua magia. Se il tuo tentativo viene interrotto devi ricominciare da capo. Il GM stabilisce la CD della prova. Oggetti maledetti o argomenti esoterici hanno solitamente CD superiori, quando non sono addirittura impossibili da identificare usando solo questa attività. Intensificare un incantesimo non incrementa la CD per identificarlo.</p><p><strong>Successo Critico</strong> Apprendi tutti gli attributi della magia, inclusi il suo nome (per un effetto), cosa fa, come può essere attivata (per un oggetto o un luogo) e se è maledetta.</p><p><strong>Successo</strong> Se si tratta di un oggetto o un luogo, sai cosa fa e come attivarlo. Se si tratta di un effetto in corso (come un incantesimo con una durata) ne sai il nome e il funzionamento. Non puoi riprovare sperando di ottenere un successo critico.</p><p><strong>Fallimento</strong> non riesci a identificare la magia e non puoi riprovare per 1 giorno.</p><p><strong>Fallimento Critico</strong> Scambi la magia per un'altra magia a scelta del GM.</p>"
+            },
+            "Fly": {
+                "Description": "<p><strong>Requisiti</strong> Hai una Velocità di volare.</p><hr><p>Ti muovi nell'aria fino alla tua Velocità di volare. Muoversi verso l'alto (in verticale o diagonale) conta come muoversi in terreno difficile. Puoi muoverti in verticale verso il basso di 3 metri per ogni 1,5 metri di movimento che usi. Se voli fino a terra non subisci danni da caduta. Puoi usare un'azione per volare di 0 metri e fluttuare sul posto. Se sei in aria alla fine del tuo turno e non hai usato un'azione volare in questo turno, cadi.</p>",
+                "Title": "Volare"
+            },
+            "GrabAnEdge": {
+                "Title": "Afferrare Un Bordo"
+            },
+            "Burrow": {
+                "Description": "<p><strong>Requisiti</strong> Hai una Velocità di scavare.</p><hr><p>Scavi attraverso terra, sabbia o un simile materiale friabile e ti muovi fino alla tua Velocità di scavare. Non puoi scavare nella roccia o in altre sostanze più dense della terra se non hai una capacità che ti consente di farlo.</p>",
+                "Title": "Scavare"
+            },
+            "CoverTracks": {
+                "Description": "<p>Muovendoti fino a metà della tua Velocità di viaggio copri le tue tracce, usando le regole @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{Velocità di Viaggio}. Non devi effettuare una prova di Sopravvivenza per coprire le tue tracce, ma chiunque le segua deve superare una prova di Sopravvivenza contro la tua CD di Sopravvivenza, se è superiore rispetto alla normale CD di Seguire Tracce.</p><p>A volte potresti Coprire Tracce durante un incontro. In questo caso Coprire Tracce è un'azione singola e non ha il tratto esplorazione.</p>",
+                "Title": "Coprire Tracce"
+            },
+            "AvertGaze": {
+                "Description": "<p>Distogli lo sguardo dal pericolo. Ottieni bonus di circostanza +2 ai tiri salvezza contro capacità visive che ti richiedono di guardare una creatura o oggetto, come lo sguardo pietrificante di una medusa. Distogli lo sguardo fino all'inizio del tuo prossimo turno.</p>",
+                "Title": "Evitare lo Sguardo"
+            },
+            "Dismiss": {
+                "Title": "Interrompere"
+            },
+            "IdentifyAlchemy": {
+                "Title": "Identificare Alchimia"
+            },
+            "EarnIncome": {
+                "Title": "Guadagnare"
             }
         },
         "SETTINGS": {
@@ -1457,7 +1516,11 @@
                 }
             },
             "greaterAnchoring": {
-                "Name": "Ancorante Superiore"
+                "Name": "Ancorante Superiore",
+                "Note": {
+                    "success": "Quando metti a segno un colpo con l'arma contro un bersaglio ma non ottieni un colpo critico, il bersaglio è influenzato da un'<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale}</em> di 4° grado per 1 round senza tiro salvezza (modificatore di contrasto di [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}).",
+                    "criticalSuccess": "Quando metti a segno un colpo critico con un'arma ancorante contro un bersaglio, l'arma lancia su di esso <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale}</em> di 8° grado (@Check[type:will|dc:38|name:Greater Anchoring Rune], modificatore di contrasto [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}), ma se il bersaglio ottiene un successo critico nel TS su Volontà, l'<em>ancora dimensionale</em> dura 1 round anziché non avere effetto."
+                }
             },
             "anchoring": {
                 "Note": {
@@ -1467,6 +1530,33 @@
             },
             "energizing": {
                 "Name": "Energizzante"
+            },
+            "greaterAstral": {
+                "Name": "Astrale Superiore"
+            },
+            "greaterCrushing": {
+                "Name": "Opprimente Superiore",
+                "Note": {
+                    "criticalSuccess": "I tuoi colpi critici fanno diventare il bersaglio @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 2} e @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino alla fine del tuo turno successivo. @UUID[Compendium.pf2e.equipment-effects.Item.czdEHtLsrUcZxSDx]{Effetto: Opprimente Superiore}"
+                }
+            },
+            "greaterHauling": {
+                "Name": "Trascinante Superiore"
+            },
+            "hauling": {
+                "Name": "Trascinante"
+            },
+            "greaterFanged": {
+                "Name": "Zannuta Superiore"
+            },
+            "hopeful": {
+                "Name": "Speranzosa",
+                "Note": {
+                    "criticalSuccess": "Quando metti a segno un colpo critico con quest'arma diventi un esempio per i tuoi compagni, spronandoli a combattere più duramente per la vostra causa. Gli alleati entro 9 metri che condividono con te almeno un componente di allineamento ottengono bonus di status +1 ai tiri per colpire fino alla fine del tuo turno successivo."
+                }
+            },
+            "majorFanged": {
+                "Name": "Zannuta Maggiore"
             }
         },
         "Action": {
@@ -6240,7 +6330,8 @@
             "TraitGMNote": "Nota: questo tratto è nascosto ai giocatori.",
             "UnidentifiedDescription": "La natura di {item} non è chiara.",
             "UnidentifiedHint": "Cambia i dettagli base mostrati ai giocatori quando quest'oggetto è non identificato.",
-            "UnidentifiedItem": "{item} Insolito"
+            "UnidentifiedItem": "{item} Insolito",
+            "DisplayDetails": "Mostra Dettagli"
         },
         "Familiar": {
             "Offenses": "Offensiva",
