@@ -145,7 +145,7 @@
                     "description": "<p>Ogni volta che un protoplasma nero è colpito da un attacco o da un effetto che infliggerebbe danni taglienti, perforanti o da elettricità e possiede almeno 10 PF, si scinde in due protoplasmi identici con la metà dei PF del protoplasma originale.</p>\n<p>Un protoplasma si trova nello stesso spazio dell'originale e l'altro compare in uno spazio non occupato adiacente. Se non c'è nessuno spazio non occupato adiacente, spinge automaticamente le creature e gli oggetti fuori da uno spazio per occuparne uno (il GM decide se un oggetto o una creatura sono troppo grossi o resistenti per essere Spinti).</p>"
                 },
                 "dH7eKw8pDJQDkR3P": {
-                    "description": "<p>[[/r {(1d8+7)[bludgeoning],1d6[acid]}]]{1d8+7 danni contundenti più 1d6 da acido}, TS @Check[type:fortitude|dc:26|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d8+7)[bludgeoning],1d6[acid]]{1d8+7 danni contundenti più 1d6 da acido}, TS @Check[type:fortitude|dc:26|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "DI6Nw0XKEZZJLY8D": {
                     "name": "Percezione del Movimento 18 metri",
@@ -176,7 +176,7 @@
                 },
                 "C91ggah5Ye65LrMH": {
                     "name": "Rubino di Leng",
-                    "description": "<p>Molti abitanti di Leng portano con loro degli strani rubini estratti dalle miniere di quel luogo. Fintanto che una creatura impugna un rubino di Leng che ha accettato volontaria mente come dono o pagamento da un abitante di Leng, qualsiasi abitante di Leng può bersagliare quella creatura con <em>@UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]{dolore fantasma}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]{leggere nella mente}</em> o <em>@UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{maledizione del reietto}</em> a una gittata di 1,5 chilometri e il portatore usa un esito di successo peggiore di un grado rispetto al risultato del suo TS contro <em>maledizione del reietto</em>.</p>"
+                    "description": "<p>Molti abitanti di Leng portano con loro degli strani rubini estratti dalle miniere di quel luogo. Fintanto che una creatura impugna un rubino di Leng che ha accettato volontaria mente come dono o pagamento da un abitante di Leng, qualsiasi abitante di Leng può bersagliare quella creatura con @UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]{dolore fantasma}, @UUID[Compendium.pf2e.spells-srd.Item.KHnhPHL4x1AQHfbC]{leggere nella mente} o @UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{maledizione del reietto} a una gittata di 1,5 chilometri e il portatore usa un esito di successo peggiore di un grado rispetto al risultato del suo TS contro maledizione del reietto.</p>"
                 },
                 "hr8UQcvJzWfTNGoH": {
                     "name": "Guarigione Rapida Planare",
@@ -193,6 +193,15 @@
                 },
                 "LUdvij5KTX4oc3yH": {
                     "name": "Sapienza Nautica"
+                },
+                "iRUsDsthfs8dbjho": {
+                    "name": "Tocco Gelido"
+                },
+                "0FXvx3BSVJXplwT2": {
+                    "name": "Mano Magica"
+                },
+                "nihlPTy2AUBLiZ0e": {
+                    "name": "Trama Ipnotica"
                 }
             },
             "description": "<p>Questi malevoli umanoidi, schiavisti e razziatori della gelida e ventosa dimensione di Leng, viaggiano per le realtà a bordo di sinistre navi nere in grado di oltrepassare i confini dei piani e delle dimensioni. Sebbene molti abitanti di Leng vadano in cerca di schiavi e di saccheggi come tutti i pirati, altri agiscono come sedicenti ambasciatori e mercanti, seminando discordia e tessendo piani a lungo termine. Sebbene questi imperscrutabili abitanti indossino vesti fluenti, veli e ampi turbanti per apparire umani, la loro fisiologia aberrante, se intravista, risulta palese dalla loro corona di piccole corna, dalle mascelle tentacolari e dalle zampe pelose simili a quelle di una capra.</p>\n<p>Al di sopra dei fieri capitani al comando delle famigerate navi nere si colloca una casta di cittadini di Leng ad essi superiore. Questi cultisti e musicisti prestano servizio come sommi sacerdoti, sforzandosi di compiacere le spaventose divinità che scrutano il Reame degli Incubi dall'alto in basso con gelida malizia.</p>",
@@ -315,7 +324,7 @@
                 },
                 "4mS9YqseWjLaRiQq": {
                     "name": "Schermaglia Scattante",
-                    "description": "<p>Quara Avanza o fa un Passo, poi Colpisce. II Colpo infligge [[/r {3d6}]]{3d6 danni aggiuntivi}.</p>"
+                    "description": "<p>Quara Avanza o fa un Passo, poi Colpisce. II Colpo infligge 3d6 danni aggiuntivi.</p>"
                 },
                 "hw9SLn99zC7mqeTR": {
                     "name": "Veleno Intorpidente",
@@ -382,11 +391,11 @@
             "items": {
                 "wChn2PEw9GYziq2n": {
                     "name": "Bagliore",
-                    "description": "<p>@Template[type:emanation|distance:20]{6 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Un fuoco fatuo è di per sé naturalmente invisibile, ma risplende di una luce colorata, proiettando luce intensa nell'aura e rendendosi visibile.</p>"
+                    "description": "<p>6 metri. Un fuoco fatuo è di per sé naturalmente invisibile, ma risplende di una luce colorata, proiettando luce intensa nell'aura e rendendosi visibile.</p>"
                 },
                 "3Eksrmh390T4SrP7": {
                     "name": "Immunità alla Magia",
-                    "description": "<p>Un fuoco fatuo è immune a tutti gli incantesimi eccetto <em>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{dardo incantato}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{labirinto}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{luminescenza}</em> e <em>@UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{polvere luccicante}</em>.</p>"
+                    "description": "<p>Un fuoco fatuo è immune a tutti gli incantesimi eccetto @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{dardo incantato}, @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{labirinto}, @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{luminescenza} e @UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{polvere luccicante}.</p>"
                 },
                 "F8xpT7h5a5ZviXU5": {
                     "name": "Magifagia"
@@ -429,7 +438,7 @@
                 },
                 "kppTcx5TylWkpfF1": {
                     "name": "Vulnerabilità alla Luce",
-                    "description": "<p>Un oggetto che proietta luce magica (per esempio a causa dell'incantesimo <em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{luce}</em>) è considerato magico quando viene usato per attaccare l'ombra.</p>"
+                    "description": "<p>Un oggetto che proietta luce magica (per esempio a causa dell'incantesimo @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{luce}) è considerato magico quando viene usato per attaccare l'ombra.</p>"
                 },
                 "zadQdUq4eeiDSHSq": {
                     "description": "<p>Quando l'ombra di una creatura viene strappata via da Rubare Ombra, diventa una @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.XrmHgbKgcHDi4OnK]{progenie d'ombra} sotto il comando dell'ombra che l'aveva creata. Questa progenie d'ombra non possiede Rubare Ombra. Se la creatura a cui la progenie d'ombra è stata strappata via muore, la progenie d'ombra diventa un'ombra completa e autonoma. Se la creatura si riprende dal suo @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolimento}, la sua ombra torna ad essa e la progenie d'ombra si estingue.</p>",
@@ -666,15 +675,15 @@
                 },
                 "wChn2PEw9GYziq2n": {
                     "name": "Bagliore",
-                    "description": "<p>@Template[type:emanation|distance:20]{6 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Un fuoco fatuo è di per sé naturalmente invisibile, ma risplende di una luce colorata, proiettando luce intensa nell'aura e rendendosi visibile.</p>"
+                    "description": "<p>6 metri. Un fuoco fatuo è di per sé naturalmente invisibile, ma risplende di una luce colorata, proiettando luce intensa nell'aura e rendendosi visibile.</p>"
                 },
                 "3Eksrmh390T4SrP7": {
                     "name": "Immunità alla Magia",
-                    "description": "<p>Un fuoco fatuo è immune a tutti gli incantesimi eccetto <em>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{dardo incantato}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{labirinto}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{luminescenza}</em> e <em>@UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{polvere luccicante}</em>.</p>"
+                    "description": "<p>Un fuoco fatuo è immune a tutti gli incantesimi eccetto @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{dardo incantato}, @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{labirinto}, @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{luminescenza} e @UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{polvere luccicante}.</p>"
                 },
                 "F8xpT7h5a5ZviXU5": {
                     "name": "Nutrirsi di Paura",
-                    "description": "<p><strong>Requisiti</strong> Un nemico è sotto un effetto di paura o è @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{morente} entro 4,5 metri dal fuoco fatuo.</p>\n<hr />\n<p><strong>Effetto</strong> Il fuoco fatuo si nutre del terrore della creatura. Recupera @Damage[2d4[healing]]{2d4 punti ferita} e se si era Oscurato, il suo bagliore si riaccende.</p>\n<p>Un fuoco fatuo può effettuare questa azione soltanto una volta per round.</p>"
+                    "description": "<p><strong>Requisiti</strong> Un nemico è sotto un effetto di paura o è @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{morente} entro 4,5 metri dal fuoco fatuo.</p>\n<hr />\n<p><strong>Effetto</strong> Il fuoco fatuo si nutre del terrore della creatura. Recupera [[/r 2d4[healing]]]{2d4 punti ferita} e se si era Oscurato, il suo bagliore si riaccende.</p>\n<p>Un fuoco fatuo può effettuare questa azione soltanto una volta per round.</p>"
                 }
             }
         },
@@ -683,7 +692,7 @@
             "items": {
                 "tjQCRx8UN4LQPnwJ": {
                     "name": "Attizzare Fiamma Stregata",
-                    "description": "<p><strong>Requisiti</strong> Una creatura entro 9 metri dalla megera ardente brucia con la Fiamma Stregata.</p>\n<hr />\n<p><strong>Effetto</strong> Gli occhi e la bocca della megera ardente brillano intensamente e la Fiamma Stregata posta sulla creatura bersaglio per un momento brucia molto più intensamente, infliggendo [[/r {5d6[fire],5d6[negative]}]]{5d6 danni da fuoco e 5d6 danni negativi} a quella creatura (TS @Check[type:fortitude|dc:28|basic:true]).</p>\n<p>La megera ardente non può usare Attizzare Fiamma Stregata per [[/br 1d4 #Ricaricare Attizzare Fiamma Stregata]]{1d4 round}.</p>"
+                    "description": "<p><strong>Requisiti</strong> Una creatura entro 9 metri dalla megera ardente brucia con la Fiamma Stregata.</p>\n<hr />\n<p><strong>Effetto</strong> Gli occhi e la bocca della megera ardente brillano intensamente e la Fiamma Stregata posta sulla creatura bersaglio per un momento brucia molto più intensamente, infliggendo @Damage[5d6[fire],5d6[void]]{5d6 danni da fuoco e 5d6 danni negativi} a quella creatura (TS @Check[type:fortitude|dc:28|basic:true]).</p>\n<p>La megera ardente non può usare Attizzare Fiamma Stregata per [[/br 1d4 #Ricaricare Attizzare Fiamma Stregata]]{1d4 round}.</p>"
                 },
                 "Loj0LD68R46zC1Tx": {
                     "name": "Rinascita",
@@ -710,7 +719,20 @@
                     "name": "Dardo delle Fiamma Stregata"
                 },
                 "pViUeTjTLhTubzOw": {
-                    "description": "<p>La megera ardente aggiunge <em>@UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{allucinazione catastrofica}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.tlcrVRqW1MSKJ5IC]{allucinazione mortale}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.i1TvBID5QLyXrUCa]{evoca entità}</em> e<em> @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{incubo}</em> agli incantesimi della propria congrega.</p>\n<p>Una congrega può accogliere una o più megere ardenti, ma deve anche includere almeno una creatura vivente capace di formare una congrega; tre megere ardenti non possono formare una congrega.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
+                    "description": "<p>La megera ardente aggiunge @UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{allucinazione catastrofica}, @UUID[Compendium.pf2e.spells-srd.Item.tlcrVRqW1MSKJ5IC]{allucinazione mortale}, @UUID[Compendium.pf2e.spells-srd.Item.i1TvBID5QLyXrUCa]{evoca entità} e @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{incubo} agli incantesimi della propria congrega.</p>\n<p>Una congrega può accogliere una o più megere ardenti, ma deve anche includere almeno una creatura vivente capace di formare una congrega; tre megere ardenti non possono formare una congrega.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
+                },
+                "DwOzRZW31EOG2wOi": {
+                    "name": "Occhio Indagatore"
+                },
+                "9cqGEY3ozwlj5HYl": {
+                    "name": "Metamorfosi Funesta"
+                },
+                "Ucv0azIJ8Z3H2WSh": {
+                    "name": "Disperazione Opprimente"
+                },
+                "HvWOUxZ8udwYw52N": {
+                    "name": "Luci Danzanti",
+                    "description": "<p>Crei fino a quattro luci fluttuanti, le quali devono rimanere entro 3 metri le une dalle altre. Ciascuna luce illumina come una torcia. Quando Mantieni l'Incantesimo, puoi muovere un qualsiasi numero di luci fino a 18 metri. Ciascuna luce deve rimanere entro 36 metri da te ed entro 3 metri dalle altre, altrimenti scompare.</p>"
                 }
             },
             "description": "<p>Questo non morto incorporeo, che si manifesta come una forma sinuosa avvolta da malsane fiamme verdastre, viene a formarsi quando una potente megera o fattucchiera muore in agonia o in preda alla collera. Il corpo al centro delle fiamme di solito assomiglia all'immagine idealizzata che la fattucchiera ha di sé, indipendentemente dall'età e dall'aspetto che aveva al momento della sua morte.</p>\n<p>Una megera ardente risiede spesso in un acquitrino o in una palude, che si annerisce e si decompone lentamente intorno a essa. Queste regioni sono spesso infestate dai fuochi fatui, che sembrano avere un rapporto misterioso con la megera ardente locale. Una megera ardente potrebbe fare visita ai villaggi situati ai margini dei suoi territori d'origine per adescare gli abitanti del villaggio, ma attaccare sempre vittime poco lontane dagli altri abitanti in modo che tutti sentano le urla. Una megera ardente potrebbe anche allearsi con altre megere o fattucchiere e persino unirsi alle loro congreghe, ma non è in grado di formare congreghe composte interamente da suoi simili.</p>",
@@ -795,11 +817,11 @@
                 },
                 "O2CT9C7oM6YOLZNX": {
                     "name": "Bagliore",
-                    "description": "<p>@Template[type:emanation|distance:30]{9 metri} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{aura}.</p>\n<hr />\n<p>Le punte delle dita di un vuotoingordo e i suoi sette occhi brillano, proiettando luce intensa nell'area, rendendolo visibile se era @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{invisibile}.</p>"
+                    "description": "<p>9 metri. Le punte delle dita di un vuotoingordo e i suoi sette occhi brillano, proiettando luce intensa nell'area, rendendolo visibile se era @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{invisibile}.</p>"
                 },
                 "JPj4ayUtkVtkvYCy": {
                     "name": "Consumare Luce",
-                    "description": "<p><strong>Innesco</strong> Il vuotoingordo lancia <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{oscurità}</em></p>\n<hr />\n<p><strong>Effetto</strong> Il vuotoingordo estingue il suo Bagliore come parte del Lanciare l'Incantesimo. Diventa @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{invisibile} finché rimane nell'area di oscurità. Se il vuotoingordo effettua un'azione ostile, la sua invisibilità termina non appena l'azione ostile viene completata.</p>"
+                    "description": "<p><strong>Innesco</strong> Il vuotoingordo lancia @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{oscurità}</p>\n<hr />\n<p><strong>Effetto</strong> Il vuotoingordo estingue il suo Bagliore come parte del Lanciare l'Incantesimo. Diventa @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{invisibile} finché rimane nell'area di oscurità. Se il vuotoingordo effettua un'azione ostile, la sua invisibilità termina non appena l'azione ostile viene completata.</p>"
                 },
                 "gdWSFRbbf21JhOa9": {
                     "description": "<p>Una creatura colpita dalla trappola di ragnatela ectoplasmatica del vuotoingordo è @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzata} e bloccata contro la superficie più vicina finché non supera una prova per @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfuggire} con CD 26. Trappola di Ragnatela Ectoplasmatica può immobilizzare creature Incorporee.</p>",
@@ -810,14 +832,14 @@
                 },
                 "k0izMsqD3Kbrn6oD": {
                     "name": "Immunità alla Magia",
-                    "description": "<p>Un vuotoingordo è immune a tutti gli incantesimi eccetto <em>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{dardo incantato}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{labirinto}</em>, <em>{@UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{luminescenza}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{polvere luccicante}</em> e incantesimi con il tratto luce.</p>"
+                    "description": "<p>Un vuotoingordo è immune a tutti gli incantesimi eccetto @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{dardo incantato}, @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{labirinto}, {@UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{luminescenza}, @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{polvere luccicante} e incantesimi con il tratto luce.</p>"
                 },
                 "WsGIMLD86LgMNUWg": {
                     "name": "Artiglio"
                 },
                 "45yP2nFzQUcp3Zvm": {
                     "name": "Nutrirsi di Paura",
-                    "description": "<p><strong>Frequenza</strong> 1 volta per round</p>\n<p><strong>Requisito</strong> Un nemico è sotto un effetto di paura o ha la condizione spaventato o morente, e si trova entro 7,5 metri dal vuotoingordo.</p>\n<hr />\n<p><strong>Effetto</strong> Il vuotoingordo si nutre del terrore della creatura. Recupera @Damage[3d4[healing]]{3d4 Punti Ferita} e il suo Bagliore si riaccende se si era estinto.</p>\n<p>Non può usare Consumare Luce di nuovo per [[/br 1d4 #Ricaricare Consumare Luce]]{1d4 round}, essendosi troppo ingozzato di paura per sopprimere il suo Bagliore.</p>"
+                    "description": "<p><strong>Frequenza</strong> 1 volta per round</p>\n<p><strong>Requisito</strong> Un nemico è sotto un effetto di paura o ha la condizione spaventato o morente, e si trova entro 7,5 metri dal vuotoingordo.</p>\n<hr />\n<p><strong>Effetto</strong> Il vuotoingordo si nutre del terrore della creatura. Recupera [[/r 3d4[healing]]]{3d4 Punti Ferita} e il suo Bagliore si riaccende se si era estinto.</p>\n<p>Non può usare Consumare Luce di nuovo per [[/br 1d4 #Ricaricare Consumare Luce]]{1d4 round}, essendosi troppo ingozzato di paura per sopprimere il suo Bagliore.</p>"
                 }
             },
             "description": "<p>Un vuotoingordo è un potente tipo di fuoco fatuo che infesta un luogo in cui dimora la miseria, come un cimitero, una prigione o il teatro di una battaglia recente.</p>"
@@ -1468,7 +1490,7 @@
                 },
                 "3vycv9ThXOQbgNBf": {
                     "name": "Inventore Istintivo",
-                    "description": "<p>Il morlock armeggia con un costrutto o un pericolo meccanico adiacente. Tenta una prova di @Check[type:crafting]{Artigianato} contro la CD di Tempra del costrutto o del pericolo. Il morlock non può avere successo se il livello del bersaglio è superiore al doppio del livello del morlock.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio ottiene @Damage[4d6[healing]]{4d6 PF} e bonus di circostanza +1 ai tiri per colpire per 1 minuto.</p>\n<p><strong>Successo</strong> Il bersaglio ottiene @Damage[2d6[healing]]{2d6 PF}.</p>\n<p><strong>Fallimento Critico</strong> Il morlock si ferisce e subisce [[/r {2d6}]]{2d6 danni} (solitamente contundenti, perforanti, taglienti, ma potenzialmente di un tipo diverso, a discrezione del GM).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TEzLEXBZzNCp6flg]{Effetto: Inventore Istintivo (Successo Critico)}</p>"
+                    "description": "<p>Il morlock armeggia con un costrutto o un pericolo meccanico adiacente. Tenta una prova di @Check[type:crafting|defense:fortitude]{Artigianato} contro la CD di Tempra del costrutto o del pericolo. Il morlock non può avere successo se il livello del bersaglio è superiore al doppio del livello del morlock.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio ottiene [[/r 4d6[healing]]]{4d6 PF} e bonus di circostanza +1 ai tiri per colpire per 1 minuto.</p>\n<p><strong>Successo</strong> Il bersaglio ottiene [[/r 2d6[healing]]]{2d6 PF}.</p>\n<p><strong>Fallimento Critico</strong> Il morlock si ferisce e subisce [[/r 2d6]]{2d6 danni} (solitamente contundenti, perforanti, taglienti, ma potenzialmente di un tipo diverso, a discrezione del GM).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TEzLEXBZzNCp6flg]{Effetto: Inventore Istintivo (Successo Critico)}</p>"
                 },
                 "7Y7vl4vBRBKsb6wB": {
                     "name": "Fauci"
@@ -1480,7 +1502,7 @@
                     "name": "status +2 a tutti i TS contro malattia e veleno"
                 },
                 "NXk6QjCfO8eW6Txp": {
-                    "description": "<p>Quando il morlock Colpisce una creatura che possiede la condizione impreparato infligge anche 1d6 danni di precisione.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "description": "<p>Quando il morlock Colpisce una creatura che possiede la condizione @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} infligge anche 1d6 danni di precisione.</p>"
                 }
             },
             "name": "Morlock della Birrideformazione",
@@ -1709,6 +1731,9 @@
                 "GZ55vWFhwaHyhnfM": {
                     "name": "Febbre dell'Averno",
                     "description": "<p><strong>Tiro Salvezza</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Fase 1</strong> portatore sano (1 giorno)</p>\n<p><strong>Fase 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} (1 giorno)</p>\n<p><strong>Fase 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} (1 giorno)</p>"
+                },
+                "Kki4pRY5X5RoDgkd": {
+                    "name": "Porta Dimensionale"
                 }
             },
             "description": "<p>Un barbazu, noto anche come diavolo barbuto o diavolo di fanteria, è un nefando omicida che sazia la sua brama di annientamento prestando servizio come fante negli eserciti dell'Inferno, spesso guidando in battaglia orde di diavoli minori come Imp e Lemuri. I diavoli barbuti brandiscono falcioni seghettati con cui infliggere squarci che resistono alla magia curativa, provocando una tremenda emorragia. Quando i nemici si avvicinano troppo, i diavoli barbuti colpiscono con le spine delle loro barbe brulicanti per diffondere un'odiosa malattia chiamata febbre dell'Averno, che permette loro di gustarsi la scena della forza della loro vittima che lentamente divorata dall'interno.</p>\n<p>I barbazu sono presenti in tutti gli strati dell'Inferno: assecondano con voluttà ogni capriccio dei malvagi signori infernali ed esultano nel seminare morte, disperazione e angoscia a piacimento.</p>\n<hr />\n<p>I diavoli, maestri della corruzione e architetti della conquista, cercano sia di tentare le forme di vita mortali a unirsi a loro nella conquista di tutto ciò che è profano, sia di diffondere la tirannia in tutti i mondi. Le tentazioni che offrono ai mortali vanno dai grandi poteri concessi dalla firma di un contratto infernale ai favori manipolati in seguito a una promessa sussurrata a un diabolico patrono, fino a un qualsiasi numero di accordi ancora più discreti. Coloro che soccombono a queste tentazioni vengono consegnati a una vita ultraterrena di infinito tormento nelle fosse infernali, dove l'unica speranza di fuga risiede nella possibilità di essere promosso e diventare un diavolo nei ranghi infernali. Ogni diavolo svolge un ruolo specifico nel mantenimento dell'inflessibile macchina burocratica che è l'Inferno; da soldati e studiosi a inquisitori, passando per avvocati, giudici e carnefici. Gli umili lemuri e gli imp faticano agli ordini dei diavoli più potenti e specializzati. come i diavoli del contratto e le erinni, mentre i potenti diavoli della fossa comandano interi eserciti infernali.</p>",
@@ -2204,7 +2229,7 @@
                 },
                 "4pjPyWF2dnob8Tlm": {
                     "name": "Decadimento Necrotico",
-                    "description": "<p>Quando un urdefhan muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al corpo.</p>\n<p>Questo gas infligge @Damage[7d6[negative]]{7d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono come quelli dell'urdefhan (TS @Check[type:fortitude|dc:24|basic:true]).</p>"
+                    "description": "<p>Quando un urdefhan muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al corpo.</p>\n<p>Questo gas infligge @Damage[7d6[void]]{7d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono come quelli dell'urdefhan (TS @Check[type:fortitude|dc:24|basic:true]).</p>"
                 },
                 "ErwsWW6oip6zma6i": {
                     "description": "<p>Lo sferzatore ottiene la capacità @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Afferrare} con una frusta shauth e può usare il suo Morso Perverso attraverso i Colpi con un'arma shauth magica.</p>",
@@ -2248,7 +2273,7 @@
                 },
                 "J9CjxTTQRdZozTW4": {
                     "name": "Diritto d'Ispezione",
-                    "description": "<p>Urevian può lanciare l'incantesimo <em>@UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{scrutare}</em> a volontà, ma solo per bersagliare una creatura con cui lui abbia un contratto, una specifica creatura nominata in un contratto in suo possesso o un discendente di creature che rientrano in tali categorie. L'esito del tiro salvezza del bersaglio è peggiore di un grado rispetto al risultato tirato.</p>"
+                    "description": "<p>Urevian può lanciare l'incantesimo @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{scrutare} a volontà, ma solo per bersagliare una creatura con cui lui abbia un contratto, una specifica creatura nominata in un contratto in suo possesso o un discendente di creature che rientrano in tali categorie. L'esito del tiro salvezza del bersaglio è peggiore di un grado rispetto al risultato tirato.</p>"
                 },
                 "LjVRW54085z5XE2p": {
                     "name": "Sapienza Legale"
@@ -2284,7 +2309,13 @@
                 },
                 "MZelOTUvBCjq2zbz": {
                     "name": "Stilare Contratto",
-                    "description": "<p>Urevian produce un contratto infernale destinato a un singolo mortale vivente. Questo contratto può conferire una vasta gamma di capacità ed effetti, come un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{desiderio}</em>, ma esaudito alla lettera da Urevian. Per ricevere uno qualsiasi di quei benefici, il mortale deve volontariamente firmare il contratto con il suo vero nome. A quel punto, l'anima del mortale è vincolata a Urevian e all'Inferno.</p>\n<p>Finché il contratto ha effetto, la vittima non può essere riportata in vita se non tramite un desiderio o una magia analoga. Se il mortale viene riportato in vita con questi mezzi, Urevian sa quale mortale è tornato in vita e può localizzare la creatura o le creature che hanno riportato il mortale in vita per 1 anno, ottenendo gli effetti di un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP]{localizzare}</em> con gittata illimitata. Aggirare i termini di un contratto infernale è difficile e spesso pericoloso.</p>"
+                    "description": "<p>Urevian produce un contratto infernale destinato a un singolo mortale vivente. Questo contratto può conferire una vasta gamma di capacità ed effetti, come un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{desiderio}, ma esaudito alla lettera da Urevian. Per ricevere uno qualsiasi di quei benefici, il mortale deve volontariamente firmare il contratto con il suo vero nome. A quel punto, l'anima del mortale è vincolata a Urevian e all'Inferno.</p>\n<p>Finché il contratto ha effetto, la vittima non può essere riportata in vita se non tramite un desiderio o una magia analoga. Se il mortale viene riportato in vita con questi mezzi, Urevian sa quale mortale è tornato in vita e può localizzare la creatura o le creature che hanno riportato il mortale in vita per 1 anno, ottenendo gli effetti di un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP]{localizzare} con gittata illimitata. Aggirare i termini di un contratto infernale è difficile e spesso pericoloso.</p>"
+                },
+                "5zbYgDI5DoQQ5K9G": {
+                    "name": "Santuario Privato"
+                },
+                "odLRGYeQQuTLRL7K": {
+                    "name": "Porta Dimensionale"
                 }
             },
             "npcAllSaves": "status +1 a tutti i TS contro la magia",
@@ -2299,11 +2330,11 @@
                 },
                 "VwIv1y01lqATWPRT": {
                     "name": "Decadimento Necrotico",
-                    "description": "<p>Quando un urdefhan muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al corpo.</p>\n<p>Questo gas infligge @Damage[8d6[negative]]{8d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono come quelli dell'urdefhan (TS @Check[type:fortitude|dc:24|basic:true]).</p>"
+                    "description": "<p>Quando un urdefhan muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al corpo.</p>\n<p>Questo gas infligge @Damage[8d6[void]]{8d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono come quelli dell'urdefhan (TS @Check[type:fortitude|dc:24|basic:true]).</p>"
                 },
                 "ayqWkUKHp3vU6wiY": {
                     "name": "Offerta di Sangue",
-                    "description": "<p><strong>Frequenza</strong> una volta per round</p>\n<hr />\n<p><strong>Effetto</strong> Il mago del sangue si infligge un taglio e subisce [[/r 8[slashing]]]{8 danni taglienti}. Se la prossima azione del mago del sangue è Lanciare un Incantesimo, l'azione non può essere interrotta e se l'incantesimo ha un raggio, il mago del sangue può aumentare il raggio dell'incantesimo di 9 metri.</p>"
+                    "description": "<p><strong>Frequenza</strong> una volta per round</p>\n<hr />\n<p><strong>Effetto</strong> Il mago del sangue si infligge un taglio e subisce @Damage[8[slashing]]{8 danni taglienti}. Se la prossima azione del mago del sangue è Lanciare un Incantesimo, l'azione non può essere interrotta e se l'incantesimo ha un raggio, il mago del sangue può aumentare il raggio dell'incantesimo di 9 metri.</p>"
                 },
                 "JFcLFPpOrpJo01np": {
                     "name": "Caduta Morbida (A Volontà) (Solo Sé Stesso)"
@@ -2314,6 +2345,18 @@
                 },
                 "vqrwIZVawG1LDOqP": {
                     "name": "Raggio di Indebolimento"
+                },
+                "4DxPvGbmaQ00E6bL": {
+                    "name": "Tocco di Idiozia"
+                },
+                "JwM60DTMcukAq5oL": {
+                    "name": "Tocco Gelido"
+                },
+                "nnnSHi4ALQEa4nMW": {
+                    "name": "Tocco del Vampiro"
+                },
+                "tmW3YfSz6ATAD5i2": {
+                    "name": "Porta Dimensionale"
                 }
             },
             "description": "<p>Induriti maestri del potere occulto, gli urdefhan maghi del sangue danno il loro sangue in cambio del potere magico. Un mago del sangue con molte cicatrici è molto stimato dagli altri urdefhan, poiché mostra di essere sopravvissuto a molti scambi con sinistri patroni occulti.</p>\n<hr />\n<p>Flagelli delle Lande Tenebrose dalla pelle traslucida, gli urdefhan sono assassini senza rimorsi e fanti della fine del mondo</p>"
@@ -2542,6 +2585,22 @@
                 },
                 "rV1k0lGcAvoytfnj": {
                     "name": "Tentacolo"
+                },
+                "4c6NPkLxBJ8OWnVb": {
+                    "name": "Comprensione delle Lingue"
+                },
+                "GXtBlmdWW9LPgXWl": {
+                    "name": "Servitore Inosservato"
+                },
+                "MzIr8DfwcumKfMmr": {
+                    "description": "<p>Crei fino a quattro luci fluttuanti, le quali devono rimanere entro 3 metri le une dalle altre. Ciascuna luce illumina come una torcia. Quando Mantieni l'Incantesimo, puoi muovere un qualsiasi numero di luci fino a 18 metri. Ciascuna luce deve rimanere entro 36 metri da te ed entro 3 metri dalle altre, altrimenti scompare.</p>",
+                    "name": "Luci Danzanti"
+                },
+                "9xJTfrDWnduk32Mb": {
+                    "name": "Mano Magica"
+                },
+                "iraa0ZIFA7ShtJde": {
+                    "name": "Porta Dimensionale"
                 }
             },
             "npcHp": "guarigione rapida 7",
@@ -2572,14 +2631,37 @@
                 },
                 "7mOx4vdvxyfHNF71": {
                     "name": "Magia del Sangue",
-                    "description": "<p> Quando Wrin lancia <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{charme}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS]{estasiare}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.IkS3lDGUpIOMug7v]{polvere fatata},</em> <em>@UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]{risata incontenibile}</em> o <em>@UUID[Compendium.pf2e.spells-srd.Item.atlgGNI1E1Ox3O3a]{suono fantasma}</em>, degli annebbiamenti fatati danzano attorno a Wrin o un bersaglio dell'incantesimo, rendendolo @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato} per 1 round. Questo occultamento palese non può essere usato per @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Nascondersi}.</p>"
+                    "description": "<p>Quando Wrin lancia @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{charme}, @UUID[Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS]{estasiare}, @UUID[Compendium.pf2e.spells-srd.Item.IkS3lDGUpIOMug7v]{polvere fatata}, @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]{risata incontenibile} o @UUID[Compendium.pf2e.spells-srd.Item.atlgGNI1E1Ox3O3a]{suono fantasma}, degli annebbiamenti fatati danzano attorno a Wrin o un bersaglio dell'incantesimo, rendendolo @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato} per 1 round. Questo occultamento palese non può essere usato per @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Nascondersi}.</p>"
                 },
                 "87c42mEQ6XMyoNBu": {
                     "name": "Leggere le Stelle",
-                    "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p><strong>Effetto</strong> Wrin tenta di leggere il futuro nelle stelle spendendo un'ora a studiare il cielo notturno; non può usare questa capacità durante il giorno, in una notte nuvolosa o quando non riesce a studiare le stelle per altri motivi. Sebbene Wrin di solito effettui questa lettura per una singola persona o per rispondere a una sua domanda pressante, ai fini di questa campagna lei legge le stelle per il gruppo nel suo complesso. Effettua una prova di Sapienza Astrologica, usando la CD appropriata al livello attuale degli eroi.</p>\n<hr />\n<p><strong>Successo Critico</strong> I risultati delle letture astrologiche di Wrin hanno gli effetti di <em>@UUID[Compendium.pf2e.spells-srd.Item.pkcOby5prOausy1k]{leggere premonizioni}</em>, e gli eroi ottengono bonus di circostanza +1 ai tiri salvezza per 24 ore.</p>\n<p><strong>Successo</strong> I risultati delle letture astrologiche di Wrin hanno gli effetti di <em>@UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{presagio}</em>, ma possono predire risultati fino a 24 ore nel futuro.</p>\n<p><strong>Fallimento</strong> Nessuna lettura.</p>\n<p><strong>Fallimento Critico</strong> Wrin sfiora delle forze spirituali ostili e non può Leggere le Stelle per 1 settimana.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.rbgXQqXbpaQCcNNx]{Effetto: Leggere le Stelle (successo critico)}</p>"
+                    "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p><strong>Effetto</strong> Wrin tenta di leggere il futuro nelle stelle spendendo un'ora a studiare il cielo notturno; non può usare questa capacità durante il giorno, in una notte nuvolosa o quando non riesce a studiare le stelle per altri motivi. Sebbene Wrin di solito effettui questa lettura per una singola persona o per rispondere a una sua domanda pressante, ai fini di questa campagna lei legge le stelle per il gruppo nel suo complesso. Effettua una prova di Sapienza Astrologica, usando la CD appropriata al livello attuale degli eroi.</p>\n<hr />\n<p><strong>Successo Critico</strong> I risultati delle letture astrologiche di Wrin hanno gli effetti di @UUID[Compendium.pf2e.spells-srd.Item.pkcOby5prOausy1k]{leggere premonizioni}, e gli eroi ottengono bonus di circostanza +1 ai tiri salvezza per 24 ore.</p>\n<p><strong>Successo</strong> I risultati delle letture astrologiche di Wrin hanno gli effetti di @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{presagio}, ma possono predire risultati fino a 24 ore nel futuro.</p>\n<p><strong>Fallimento</strong> Nessuna lettura.</p>\n<p><strong>Fallimento Critico</strong> Wrin sfiora delle forze spirituali ostili e non può Leggere le Stelle per 1 settimana.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.rbgXQqXbpaQCcNNx]{Effetto: Leggere le Stelle (successo critico)}</p>"
                 },
                 "TwPr4oH0p59YtoDn": {
                     "name": "Mazzo dell'Apprensura dell'Indovino"
+                },
+                "4uoqLHiHoRSeJuvj": {
+                    "name": "Polvere Luccicante"
+                },
+                "GprW7eSp73Hx4RQo": {
+                    "description": "<p>La magia di guarigione purifica il corpo di una creatura dalle malattie. Tenti di contrastare una malattia che affligge il bersaglio.</p>",
+                    "name": "Rimuovi Malattia"
+                },
+                "c6IVTGKKOUhZ63P4": {
+                    "name": "Luci Danzanti",
+                    "description": "<p>Crei fino a quattro luci fluttuanti, le quali devono rimanere entro 3 metri le une dalle altre. Ciascuna luce illumina come una torcia. Quando Mantieni l'Incantesimo, puoi muovere un qualsiasi numero di luci fino a 18 metri. Ciascuna luce deve rimanere entro 36 metri da te ed entro 3 metri dalle altre, altrimenti scompare.</p>"
+                },
+                "rbUffbFX3tWHJCZ3": {
+                    "name": "Distruggere Non Morti"
+                },
+                "xBWPLTk97RyTZ4kK": {
+                    "description": "<p>Questo pezzo di legno o d'argento è decorato con un'immagine che rappresenta una divinità. Alcuni incantatori divini, ad esempio i chierici, possono usare un simbolo religioso della loro divinità come focus divino per usare certe capacità e lanciare alcuni incantesimi. Un simbolo religioso deve essere tenuto con una mano per essere usato.</p>"
+                },
+                "MbK7dWhbdBGfTtJT": {
+                    "name": "Risata Incontenibile"
+                },
+                "NOQgXvsCr3O18dGo": {
+                    "name": "Caduta Morbida"
                 }
             },
             "name": "Wrin Sivinxi"
@@ -2784,7 +2866,7 @@
                     "name": "Fauci"
                 },
                 "vMlj7QxxkX61zODC": {
-                    "description": "<p>L'esploratore mortale infligge 2d6 danni di precisione aggiuntivi alle creature impreparate.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "description": "<p>L'esploratore mortale infligge 2d6 danni di precisione aggiuntivi alle creature @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparate}.</p>"
                 },
                 "Q4CQqu46DoUxnpdv": {
                     "name": "Invisibilità (Solo Sé Stesso)"
@@ -2797,7 +2879,7 @@
                 },
                 "6TMEJEZsiK6x4E68": {
                     "name": "Decadimento Necrotico",
-                    "description": "<p>Quando un urdefhan muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al corpo.</p>\n<p>Questo gas infligge @Damage[6d6[negative]]{6d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono come quelli dell'urdefhan (TS @Check[type:fortitude|dc:23|basic:true]).</p>"
+                    "description": "<p>Quando un urdefhan muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al corpo.</p>\n<p>Questo gas infligge @Damage[6d6[void]]{6d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono come quelli dell'urdefhan (TS @Check[type:fortitude|dc:23|basic:true]).</p>"
                 },
                 "CncVGQus926xFSl2": {
                     "name": "Morso Shauth",
@@ -3160,7 +3242,7 @@
                 },
                 "IPH7UJLRufEnfg32": {
                     "name": "Decadimento Necrotico",
-                    "description": "<p>Quando Vischari muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al suo corpo. Questo gas infligge @Damage[7d6[negative]]{7d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono (TS @Check[type:fortitude|dc:24|basic:true]).</p>"
+                    "description": "<p>Quando Vischari muore, la sua carne invisibile marcisce velocemente e si dissolve in un gas maleodorante che riempie un'@Template[type:emanation|distance:5]{emanazione di 1,5 metri} intorno al suo corpo. Questo gas infligge @Damage[7d6[void]]{7d6 danni negativi} alle creature in quest'area, i cui tessuti si corrompono e marciscono (TS @Check[type:fortitude|dc:24|basic:true]).</p>"
                 },
                 "7wW5Mpc0dnnQnoko": {
                     "name": "Morso Perverso",
@@ -3169,6 +3251,12 @@
                 "bIhvOKLmWJLAIfDK": {
                     "name": "Colpo Immobilizzante",
                     "description": "<p>Vischari sferra un Colpo col pugno che arresta il controllo motorio del bersaglio. Il bersaglio deve effettuare un TS su @Check[type:fortitude|dc:25]. Se il Colpo è un colpo critico, considera il risultato del bersaglio al tiro salvezza come peggiore di un grado. II bersaglio è poi temporaneamente immune per 1 ora.</p>\n<hr />\n<p><strong>Successo Critico</strong> Il bersaglio non viene influenzato.</p>\n<p><strong>Successo</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito} 1.</p>\n<p><strong>Fallimento</strong> II bersaglio resta @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzato per 1} round.</p>\n<p><strong>Fallimento Critico</strong> II bersaglio resta paralizzato per 1 minuto. Alla fine di ogni suo turno può effettuare un nuovo TS su Tempra per ridurre la durata rimanente di 1 round o terminarla completamente con un successo critico.</p>"
+                },
+                "4VHS3ZACdoaeE7NM": {
+                    "name": "Raggio di Indebolimento"
+                },
+                "Tq0WVPPxrkpFbZn4": {
+                    "name": "Pugno"
                 }
             }
         },
@@ -3306,6 +3394,15 @@
                 "PVrWJHEarOi9LFbD": {
                     "name": "Corda Accalappiante",
                     "description": "<p>Un'erinni porta un rotolo di corda ricavato dai suoi capelli intrecciati (si usano le statistiche della @UUID[Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS]{corda}) che si anima nelle sue mani.</p>\n<p>Quando una creatura viene colpita dalla corda dell'erinni, un segmento della corda si stacca e si avviluppa attorno alla creatura, imponendole penalità di circostanza di 3 metri alla Velocità. Il pezzo che si stacca è di 3 metri per una creatura Media o più piccola e raddoppia di lunghezza per ogni taglia superiore alla Media.</p>\n<p>Quando una creatura @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugge} all'effetto (CD 26) il segmento staccato della corda avvizzisce e si sfalda in un'inutile poltiglia grigia.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.o0zqsH5kYopRanav]{Effetto: Corda Accalappiante}</p>"
+                },
+                "E6dar3cARRfBL0qZ": {
+                    "name": "Porta Dimensionale"
+                },
+                "qQyKvk6u3S9vDGzo": {
+                    "description": "<p>Le spade d'arme possono essere a singolo o doppio filo. Hanno lame pesanti e oscillano in lunghezza tra i 90 e i 120 cm.</p>"
+                },
+                "d1NLDUJL2CAqdBvW": {
+                    "description": "<p>Sebbene ci si riferisca a essa come corsaletto, questo tipo di armatura consiste in numerose parti di armatura o mezza armatura che proteggono il torso, il torace, il collo e, alcune volte, i fianchi e la parte inferiore delle gambe. Conferisce parte della protezione della corazza mentre permette una flessibilità e velocità superiori.</p>"
                 }
             },
             "description": "<p>Le erinni esigono vendetta e giustizia sanguinaria per i crimini di una creatura, torturando e punendo sadicamente le loro vittime prima di concedere loro l'oblio della morte. Anche se un'erinni ha l'aspetto di un angelo caduto e le prime erinni condividevano quell'origine, ora questi diavoli possono formarsi in una miriade di modi diversi: alcune vengono promosse a questo rango dallo stato di diavoli minori, altre vengono modellate dai lemuri e altre ancora sono forgiate dalle anime dei torturatori e dei persecutori. L'origine delle erinni è legata alla figura femminile di Eiseth, un angelo caduto e uno dei semidei più potenti dell'Inferno. Le prime erinni erano tutte considerate figlie metaforiche di Eiseth, ma le erinni formati da quel momento non si limitano più a un solo genere.</p>\n<hr />\n<p>I diavoli, maestri della corruzione e architetti della conquista, cercano sia di tentare le forme di vita mortali a unirsi a loro nella conquista di tutto ciò che è profano, sia di diffondere la tirannia in tutti i mondi. Le tentazioni che offrono ai mortali vanno dai grandi poteri concessi dalla firma di un contratto infernale ai favori manipolati in seguito a una promessa sussurrata a un diabolico patrono, fino a un qualsiasi numero di accordi ancora più discreti. Coloro che soccombono a queste tentazioni vengono consegnati a una vita ultraterrena di infinito tormento nelle fosse infernali, dove l'unica speranza di fuga risiede nella possibilità di essere promosso e diventare un diavolo nei ranghi infernali. Ogni diavolo svolge un ruolo specifico nel mantenimento dell'inflessibile macchina burocratica che è l'Inferno; da soldati e studiosi a inquisitori, passando per avvocati, giudici e carnefici. Gli umili lemuri e gli imp faticano agli ordini dei diavoli più potenti e specializzati, come i diavoli del contratto e le erinni, mentre i potenti diavoli della fossa comandano interi eserciti infernali.</p>",
@@ -3321,7 +3418,7 @@
                 },
                 "taKy6ih4jlHzjBsw": {
                     "name": "Spremere Linfa Vitale",
-                    "description": "<p><strong>Requisiti</strong> Lo shanrigol tiene afferrata una creatura.</p>\n<hr />\n<p><strong>Effetto</strong> Lo shanrigol estrae l'essenza vitale dal suo bersaglio, infliggendo @Damage[(1d6+5)[bludgeoning]]{1d6+5 danni contundenti} e @Damage[1d4[bleed]]{1d4 danni da sanguinamento} (TS @Check[type:fortitude|dc:18|basic:true]).</p>\n<p>Lo shanrigol recupera Punti Ferita temporanei pari all'ammontare di danni contundenti subiti da un singolo bersaglio; questi Punti Ferita temporanei durano 1 minuto.</p>"
+                    "description": "<p><strong>Requisiti</strong> Lo shanrigol tiene afferrata una creatura.</p>\n<hr />\n<p><strong>Effetto</strong> Lo shanrigol estrae l'essenza vitale dal suo bersaglio, infliggendo @Damage[(1d6+5)[bludgeoning],1d4[bleed]]{1d6+5 danni contundenti e 1d4 danni da sanguinamento persistenti} (TS @Check[type:fortitude|dc:18|basic:true]).</p>\n<p>Lo shanrigol recupera Punti Ferita temporanei pari all'ammontare di danni contundenti subiti da un singolo bersaglio; questi Punti Ferita temporanei durano 1 minuto.</p>"
                 },
                 "f7rkC7qodqH9NbVI": {
                     "name": "Percezione Tellurica (impreciso) 9 metri"
