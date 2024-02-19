@@ -257,7 +257,7 @@ const itemTypes = [
   "spellcastingEntry",
   "treasure",
   "weapon",
-  "campaignFeature"
+  "campaignFeature",
 ];
 const ignoredItemTypes = [
   "ancestry",
@@ -571,6 +571,10 @@ function findByName(
   return null;
 }
 
+interface LangFile {
+  [id: string]: string | LangFile;
+}
+
 export async function commandUpdate(systemDir = "../system") {
   await setupOut();
   const manifest = await readManifest(
@@ -578,7 +582,13 @@ export async function commandUpdate(systemDir = "../system") {
   );
   const [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
 
-  const langData = _.merge({}, ...allLangs);
+  let langData: LangFile = _.merge({}, ...allLangs);
+  langData = _.cloneDeepWith(langData, (v: string | LangFile) => {
+    if (typeof v === "string") {
+      return v.replace(/<(br|hr)>/, "<$1 />");
+    }
+  });
+
   await writeFile("lang/en.json", JSON.stringify(langData, null, 2));
 
   const allPacksMap = new Map<string, PackData>(
