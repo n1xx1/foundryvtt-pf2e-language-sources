@@ -585,7 +585,7 @@ export async function commandUpdate(systemDir = "../system") {
   let langData: LangFile = _.merge({}, ...allLangs);
   langData = _.cloneDeepWith(langData, (v: string | LangFile) => {
     if (typeof v === "string") {
-      return v.replace(/<(br|hr)>/, "<$1 />");
+      return v.replace(/<(br|hr)>/g, "<$1 />");
     }
   });
 
