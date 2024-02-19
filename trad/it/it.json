@@ -1433,6 +1433,40 @@
                     "criticalSuccess": "Con un colpo critico, puoi decidere che il bersaglio debba superare un tiro salvezza su @Check[type:fortitude|dc:27|name:Impactful Rune] o essere spintonato lontano da te di 1,5 metri."
                 },
                 "Name": "A Impatto"
+            },
+            "fanged": {
+                "Name": "Zannuta"
+            },
+            "astral": {
+                "Note": {
+                    "Note": "Quest'arma può ferire creature che non hanno una forma fisica. Un'arma astrale è particolarmente efficace contro creature incorporee, che quasi sempre hanno una vulnerabilità specifica alle armi astrali. Le creature incorporee possono toccare, tenere e impugnare armi astrali (a differenza della maggior parte degli oggetti fisici).",
+                    "criticalSuccess": "In caso di colpo critico contro una creatura che sta possedendo un'altra creatura, la creatura che sta possedendo deve ottenere un successo a un TS su @Check[type:will|dc:26] o essere espulsa e resa incapace di possedere una creatura per [[/br 1d4 #rounds]]{1d5 round}."
+                },
+                "Name": "Astrale"
+            },
+            "bloodthirsty": {
+                "Name": "Sanguinaria",
+                "Note": {
+                    "criticalSuccess": "Quando ottieni un colpo critico contro un bersaglio che sta subendo @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti}, il tuo bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{risucchiato 1}."
+                }
+            },
+            "crushing": {
+                "Name": "Opprimente",
+                "Note": {
+                    "criticalSuccess": "Quando ottieni un colpo critico contro un bersaglio usando quest'arma, il tuo bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} e @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino alla fine del tuo turno successivo. @UUID[Compendium.pf2e.equipment-effects.Item.zNHvhwHsC8ckhKVp]{Effetto: Opprimente}"
+                }
+            },
+            "greaterAnchoring": {
+                "Name": "Ancorante Superiore"
+            },
+            "anchoring": {
+                "Note": {
+                    "criticalSuccess": "Se metti a segno un colpo critico contro un bersaglio con un'arma ancorante, quest’ultima lancia <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale}</em> sul bersaglio (@Check[type:will|dc:27|name:Runa Ancorante], modificatore di contrasto [[/r 1d20+17 # Prova di Contrasto Runa Ancorante]])."
+                },
+                "Name": "Ancorante"
+            },
+            "energizing": {
+                "Name": "Energizzante"
             }
         },
         "Action": {
@@ -5100,7 +5134,7 @@
         "TraitArchon": "archon",
         "TraitAreaDamage": "Danno ad Area",
         "TraitArtifact": "Artefatto",
-        "TraitAstral": "astral",
+        "TraitAstral": "Astrale",
         "TraitAttachedToShield": "Unita allo Scudo",
         "TraitAttachedToCrossbowOrFirearm": "Unita a una Balestra o un'Arma da Fuoco",
         "TraitAttack": "Attacco",
@@ -5769,7 +5803,9 @@
                 "Track": "Seguire Tracce",
                 "None": "Nessuna (Piena Velocità)",
                 "HalfSpeed": "Altro (Velocità Dimezzata)"
-            }
+            },
+            "HexplorationActivities": "Attività di Esplorazione degli Esagoni",
+            "Label": "Velocità di Viaggio"
         },
         "TrickMagicItemPopup": {
             "Label": "Seleziona una abilità da usare con Ingannare Oggetti Magici.",
@@ -5796,7 +5832,11 @@
                     "SaveLabel": "Salva",
                     "NoLabel": "No",
                     "SkillLabel": "Abilità",
-                    "YesLabel": "Sì"
+                    "YesLabel": "Sì",
+                    "ViewItem": {
+                        "Disabled": "La scelta selezionata non ha una scheda oggetto",
+                        "Tooltip": "Visualizza Oggetto"
+                    }
                 },
                 "EffectTarget": {
                     "Prompt": "Seleziona un bersaglio per quest'effetto."
@@ -5807,8 +5847,16 @@
                 },
                 "GrantItem": {
                     "AlreadyHasItem": "{actor} ha già {item}, quindi non è stato aggiunto nuovamente."
+                },
+                "TokenMark": {
+                    "TargetToken": "Bersaglia un token premendo T passando il mouse sopra di esso. Premi Esc per annullare.",
+                    "Timeout": "Creazione dell'effetto annullata per mancanza di bersaglio."
+                },
+                "MultipleAttackPenalty": {
+                    "Breakdown": "PdAM ({label})"
                 }
-            }
+            },
+            "shiftModifyHealingTitle": "Modifica Guarigione"
         },
         "UnprepareItemTitle": "Annulla Preparazione Oggetto",
         "UpdateLabelUniversal": "Aggiorna",
@@ -5994,7 +6042,28 @@
                 "repeating-hand-crossbow": "Balestra a Mano a Ripetizione",
                 "flingflenser": "Scagliascuoia",
                 "explosive-dogslicer": "Affettacani Esplosiva",
-                "fire-lance": "Lancia da Fuoco"
+                "fire-lance": "Lancia da Fuoco",
+                "probing-cane": "Bastone Guida",
+                "griffon-cane": "Bastone del Grifone",
+                "throwing-knife": "Coltello da Lancio",
+                "switchscythe": "Falce a Scatto",
+                "tri-bladed-katar": "Katar a Tre Lame",
+                "wheel-spikes": "Ruote con Spuntoni",
+                "asp-coil": "Spira dell'Aspide",
+                "elven-branched-spear": "Lancia Elfica Ramificata",
+                "reinforced-wheels": "Ruote Rinforzate",
+                "arbalest": "Arbalesta",
+                "piranha-kiss": "Bacio del Piranha",
+                "reinforced-stock": "Calcio Rinforzato",
+                "butchering-axe": "Ascia del Macellaio",
+                "hongali-hornbow": "Arco di Corno Hongaliano",
+                "chakram": "Chakram",
+                "thundermace": "Mazzatonante",
+                "sickle-saber": "Sciabola Falcetto",
+                "spiral-rapier": "Spada da Lato a Spirale",
+                "wheel-blades": "Ruote Taglienti",
+                "dueling-spear": "Lancia da Duello",
+                "tonfa": "Tonfa"
             }
         },
         "WeaponAbilityLabel": "Abilità Arma",
@@ -8060,7 +8129,7 @@
         "PreciousMaterialSisterstoneDusk": "Pietra Gemella del Crepuscolo",
         "PreciousMaterialSisterstoneScarlet": "Pietra Gemella Scarlatta",
         "SettingsQuickDamageNotes": "Se disabilitato, la finestra di dialogo per vedere l'anteprima dei tiri dei danni verrà mostrata solo quando il pulsante per tirare è cliccato con shift premuto.",
-        "TraitDescriptionAiuvarin": "Una creatura con questo tratto ha il lignaggio versatile mezzelfo. I mezzelfi sono di stirpe mista, includono gli elfi o altri mezzelfi. Una abilità con questo tratto può essere usata o selezionata solo da mezzelfi.",
+        "TraitDescriptionAiuvarin": "Una creatura con questo tratto ha il lignaggio versatile aiuvarin. Gli aiuvarin sono di stirpe mista, includono gli elfi o altri aiuvarin. Una abilità con questo tratto può essere usata o selezionata solo da aiuvarin.",
         "TraitDescriptionHoly": "Effetti con il tratto sacro sono legati e le potenti forze magiche della benevolenza e virtù. Spesso hanno effetti più forti su creature sacrileghe. Creature con questo tratto sono fortamente devote alle cause sacre e spesso hanno debolezze al sacrilego. Se una creatura con una debolezza al sacro usa un oggetto o effetto sacro, subisce danni dalla sua debolezza.",
         "TraitDescriptionNephilim": "Una creatura con questo tratto ha il lignaggio versatile nephilim. I nephilim sono eredi planari discendenti da esseri immortali di altri piani. Un'abilità con questo tratto può essere usata o selezionata soltanto dai nephilim.",
         "PreciousMaterialSisterstoneDescription": "Pietra gemella è il termine usato per due minerali strettamente correlati infusi del deflusso spirituale nel Campo delle Fanciulle, la pietra gemella del crepuscolo e la pietra gemella scarlatta. Hanno le stesse proprietà fisiche, eccetto il colore: la pietra gemella del crepuscolo è arancione pallido mentre la pietra gemella scarlatta è rosso-arancio. Quando si avvicinano a un oggetto fatto con l'altro tipo di pietra gemella, entrambi iniziano a emanare energia spirituale che respinge i non morti.",
@@ -8075,10 +8144,38 @@
         },
         "TraitDescriptionSanctified": "Se sei sacro o sacrilego, le tue azioni e incantesimi santificate ottengono lo stesso tratto.",
         "TabCharacterLabel": "Personaggio",
-        "TraitAiuvarin": "Mezzelfo",
+        "TraitAiuvarin": "Aiuvarin",
         "PreciousMaterialSisterstone": "Pietra Gemella",
         "TraitDescriptionFocus": "Gli incantesimi focalizzati sono un tipo speciale di incantesimi ottenuti direttamente da un ramo di studi, da una Divinità o da un'altra fonte specifica. Puoi apprendere gli incantesimi focalizzati soltanto attraverso privilegi di classe o talenti speciali invece di sceglierli da una lista di incantesimi. Inoltre, puoi lanciare incantesimi focalizzati usando una speciale riserva di Punti Focalizzazione: non puoi preparare un incantesimo focalizzato in uno slot incantesimo o usare il tuo slot incantesimo per lanciare incantesimi focalizzati; allo stesso modo, non puoi spendere i Punti Focalizzazione per lanciare incantesimi che non sono incantesimi focalizzati.",
-        "TraitDescriptionSpellshape": "Le azioni con il tratto metamagico, che di solito provengono da talenti metamagici, modificano le proprietà degli incantesimi. Devi usare un'azione metamagica direttamente prima di Lanciare l'Incantesimo che vuoi modificare. Se immediatamente dopo usi qualsiasi azione (incluse le azioni e le reazioni gratuite) a parte lanciare un incantesimo, perdi i benefici dell'azione metamagica. Qualsiasi effetto aggiuntivo dovuto a un'azione matemagica fa parte dell'effetto dell'incantesimo, non dell'azione metamagica stessa."
+        "TraitDescriptionSpellshape": "Le azioni con il tratto metamagico, che di solito provengono da talenti metamagici, modificano le proprietà degli incantesimi. Devi usare un'azione metamagica direttamente prima di Lanciare l'Incantesimo che vuoi modificare. Se immediatamente dopo usi qualsiasi azione (incluse le azioni e le reazioni gratuite) a parte lanciare un incantesimo, perdi i benefici dell'azione metamagica. Qualsiasi effetto aggiuntivo dovuto a un'azione matemagica fa parte dell'effetto dell'incantesimo, non dell'azione metamagica stessa.",
+        "TraitVersatileMental": "Versatile Mentale",
+        "TraitSewnIntoClothing": "Cucito su un Indumento",
+        "TraitDescriptionSubtle": "Un incantesimo con il tratto discreto può essere lanciato senza incantazioni e non ha manifestazioni evidenti.",
+        "TraitVersatilePoison": "Versatile Veleno",
+        "TraitEtchedOntoAShield": "Incisa su uno Scudo",
+        "TraitHoly": "Sacro",
+        "TraitKingdom": "Regno",
+        "TraitNephilim": "Nefilim",
+        "WeaponGroupCrossbow": "Balestra",
+        "TraitHryngar": "Duergar",
+        "TraitDromaar": "Mezzorco",
+        "TraitEachRuneAppliedToASeparateItemThatHasPockets": "Ciascuna runa applicata su un oggetto diverso munito di tasche",
+        "TraitSanctified": "Santificato",
+        "TraitFocus": "Focalizzato",
+        "TraitDescriptionUndead": "Queste creature, che una volta erano viventi, dopo la morte sono state infuse di energia negativa e magia sacrilega che corrompe l'anima. Quando viene ridotta a 0 Punti Ferita, una creatura non morta viene distrutta. Le creature non morte sono danneggiate dall'energia positiva, sono guarite dall'energia negativa e non beneficiano degli effetti di guarigione.",
+        "TraitDescriptionSummon": "Gli incantesimi con il tratto evocare possono evocare creature, tipicamente quelle con un tratto particolare. Queste creature possono essere trovate nel Bestiario o libri simili. A meno che non sia segnato altrimenti, la creatura deve essere comune, ottiene il tratto evocato e deve apparire in uno spazio non occupato abbastanza largo da contenerla. Il livello più alto di creatura che l'incantesimo può evocare dipende dal grado dell'incantesimo, come elencato qua sotto. L'incantesimo può comunque evocare una creatura di un livello inferiore se lo desideri. Queste regole si applicano soltanto a incantesimi che hanno il tratto evocare; altri incantesimi che chiamano o evocano oggetti o esseri che non hanno il tratto, come evoca strumento, funzionano come spiegato nell'incantesimo.",
+        "TraitVersatileVoid": "Versatile Negativo",
+        "TraitVersatileX": "Versatile {x}",
+        "TraitVersatileVitality": "Versatile Positivo",
+        "TraitVersatileSpirit": "Versatile Spirituale",
+        "TraitGhul": "Ghul",
+        "TraitDescriptionUnholy": "Effetti con il tratto sacrilego sono legati alle potenti forze magiche della crudeltà e del peccato. Spesso hanno effetti più forti su creature sacre. Creature con questo tratto sono fortamente devote alle cause sacrileghe e spesso hanno debolezze al sacro. Se una creatura con una debolezza al sacrilego usa un oggetto o effetto sacrilego, subisce danni dalla sua debolezza.",
+        "TraitNaari": "Ifrit",
+        "TraitPoppet": "Bambolina",
+        "TraitSpellshape": "Metamagico",
+        "TraitUnholy": "Sacrilego",
+        "TraitSubtle": "Discreto",
+        "TraitDescriptionSpirit": "Gli effetti con questo tratto possono influenzare creatura con un'essenza spirituale e potrebbero infliggere danni spirituali. Una creatura con questo tratto è definita dalla sua essenza spirituale. Le creature spirituali spesso non hanno una forma materiale."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
