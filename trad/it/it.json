@@ -128,7 +128,8 @@
                     "success": "<strong>Successo</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} fino alla fine del tuo prossimo turno, a meno che tu non ti muova o lui @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugga}.",
                     "failure": "<strong>Fallimento</strong> Non riesci ad afferrare il bersaglio. Se avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} l'avversario con Lottare, non è più soggetto a queste condizioni."
                 },
-                "Title": "Lottare"
+                "Title": "Lottare",
+                "Description": "<p><strong>Requisiti</strong> Hai almeno una mano libera o il tuo bersaglio è Afferrato o Trattenuto. Il tuo bersaglio non può essere più grande di te di più di una taglia.</p><hr /><p>Tenti di afferrare un avversario con la tua mano libera. Effettua una prova di Atletica contro la sua CD di Tempra. Puoi anche Lottare per mantenere la presa su una creatura che hai già afferrato o trattenuto.</p><p><strong>Successo Critico</strong> L'avversario è @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} fino alla fine del tuo prossimo turno, a meno che tu non ti muova o lui @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugga}.<br /><strong>Successo</strong> L'avversario è @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} fino alla fine del tuo prossimo turno, a meno che tu non ti muova o lui @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugga}.<br /><strong>Fallimento</strong> Non riesci ad afferrare l'avversario. Se avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto} l'avversario con Lottare, non è più soggetto a queste condizioni.<br /><strong>Fallimento Critico</strong> L'avversario si libera se lo avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto}. Il bersaglio può afferrarti, come se avesse compiuto con successo l'azione Lottare contro di te, oppure farti cadere e atterrare @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}.</p>"
             },
             "BonMot": {
                 "Title": "Facezia",
@@ -538,7 +539,8 @@
                     "failure": "<strong>Fallimento</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} normalmente.",
                     "criticalFailure": "<strong>Fallimento Crititco</strong> Cadi @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} nel tuo spazio."
                 },
-                "Title": "Salto in Alto"
+                "Title": "Salto in Alto",
+                "Description": "<p>@UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{Avanzi} prima di Saltare in verticale e tentare una prova di Atletica con CD 30 per incrementare l'altezza del balzo. Se non sei Avanzato di almeno 3 metri fallisci automaticamente la prova. Il GM potrebbe incrementare o ridurre la CD della prova a seconda delle circostanze.</p><p><strong>Successo Critico</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} di 2,5 metri verticalmente e 3 metri orizzontalmente.<br /><strong>Successo</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} di 1,5 metri verticalmente e 1,5 metri orizzontalmente.<br /><strong>Fallimento</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]}Salti} normalmente.<br /><strong>Fallimento Critico</strong> Non salti e cadi @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} nel tuo spazio.</p>"
             },
             "Interact": {
                 "Title": "Interagire",
@@ -927,14 +929,30 @@
                 "Description": "<p><strong>Requisiti</strong> Devi usare un @UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]{kit da riparazione}.</p><hr /><p>Impieghi 10 minuti per applicare un talismano a un oggetto, collocando l'oggetto su una superficie stabile e usando il kit da riparazione con entrambe le mani; puoi usare questa attività anche per rimuovere un talismano. Se più talismani sono applicati a un solo oggetto, essi sono soppressi e nessuno di essi può essere attivato.</p>"
             },
             "IdentifyMagic": {
-                "Description": "<p>Dopo aver scoperto che un oggetto, un luogo o un effetto in corso è magico, puoi trascorrere 10 minuti per cercare di identificare i dettagli della sua magia. Se il tuo tentativo viene interrotto devi ricominciare da capo. Il GM stabilisce la CD della prova. Oggetti maledetti o argomenti esoterici hanno solitamente CD superiori, quando non sono addirittura impossibili da identificare usando solo questa attività. Intensificare un incantesimo non incrementa la CD per identificarlo.</p><p><strong>Successo Critico</strong> Apprendi tutti gli attributi della magia, inclusi il suo nome (per un effetto), cosa fa, come può essere attivata (per un oggetto o un luogo) e se è maledetta.</p><p><strong>Successo</strong> Se si tratta di un oggetto o un luogo, sai cosa fa e come attivarlo. Se si tratta di un effetto in corso (come un incantesimo con una durata) ne sai il nome e il funzionamento. Non puoi riprovare sperando di ottenere un successo critico.</p><p><strong>Fallimento</strong> non riesci a identificare la magia e non puoi riprovare per 1 giorno.</p><p><strong>Fallimento Critico</strong> Scambi la magia per un'altra magia a scelta del GM.</p>"
+                "Description": "<p>Dopo aver scoperto che un oggetto, un luogo o un effetto in corso è magico, puoi trascorrere 10 minuti per cercare di identificare i dettagli della sua magia. Se il tuo tentativo viene interrotto devi ricominciare da capo. Il GM stabilisce la CD della prova. Oggetti maledetti o argomenti esoterici hanno solitamente CD superiori, quando non sono addirittura impossibili da identificare usando solo questa attività. Intensificare un incantesimo non incrementa la CD per identificarlo.</p><p><strong>Successo Critico</strong> Apprendi tutti gli attributi della magia, inclusi il suo nome (per un effetto), cosa fa, come può essere attivata (per un oggetto o un luogo) e se è maledetta.</p><p><strong>Successo</strong> Se si tratta di un oggetto o un luogo, sai cosa fa e come attivarlo. Se si tratta di un effetto in corso (come un incantesimo con una durata) ne sai il nome e il funzionamento. Non puoi riprovare sperando di ottenere un successo critico.</p><p><strong>Fallimento</strong> non riesci a identificare la magia e non puoi riprovare per 1 giorno.</p><p><strong>Fallimento Critico</strong> Scambi la magia per un'altra magia a scelta del GM.</p>",
+                "Warning": {
+                    "NoStatistic": "L'azione Identificare Magia può essere usata con diverse statistiche, ma non ne è stata specificata alcuna."
+                },
+                "Notes": {
+                    "success": "<strong>Successo</strong> Se si tratta di un oggetto o un luogo, sai cosa fa e come attivarlo. Se si tratta di un effetto in corso (come un incantesimo con una durata) ne sai il nome e il funzionamento. Non puoi riprovare sperando di ottenere un successo critico.",
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Scambi la magia per un'altra magia a scelta del GM.",
+                    "failure": "<strong>Fallimento</strong> non riesci a identificare la magia e non puoi riprovare per 1 giorno.",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Apprendi tutti gli attributi della magia, inclusi il suo nome (per un effetto), cosa fa, come può essere attivata (per un oggetto o un luogo) e se è maledetta."
+                },
+                "Title": "Identificare Magia"
             },
             "Fly": {
                 "Description": "<p><strong>Requisiti</strong> Hai una Velocità di volare.</p><hr /><p>Ti muovi nell'aria fino alla tua Velocità di volare. Muoversi verso l'alto (in verticale o diagonale) conta come muoversi in terreno difficile. Puoi muoverti in verticale verso il basso di 3 metri per ogni 1,5 metri di movimento che usi. Se voli fino a terra non subisci danni da caduta. Puoi usare un'azione per volare di 0 metri e fluttuare sul posto. Se sei in aria alla fine del tuo turno e non hai usato un'azione volare in questo turno, cadi.</p>",
                 "Title": "Volare"
             },
             "GrabAnEdge": {
-                "Title": "Afferrare Un Bordo"
+                "Title": "Afferrare Un Bordo",
+                "Notes": {
+                    "criticalSuccess": "<strong>Successo Critico</strong> Afferri il bordo o l'appiglio, che tu abbia una mano libera o meno, in genere usando un oggetto tenuto (ad esempio, ti aggrappi a un cornicione con un'ascia). Subisci comunque danni per la distanza di cui sei caduto finora, ma consideri la caduta come inferiore di 9 metri.",
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Continui a cadere e, se sei caduto per 6 metri o più prima di usare questa reazione, subisci @Damage[10[bludgeoning]]{10 danni contundenti} per l'impatto ogni 6 metri percorsi.",
+                    "success": "<strong>Successo</strong> Se hai almeno una mano libera afferri il bordo o l'appiglio, arrestando la caduta. Subisci comunque danni per la distanza di cui sei caduto finora, ma consideri la caduta come inferiore di 6 metri. Se non hai mani libere continui a cadere come se avessi fallito la prova."
+                },
+                "Description": "<p><strong>Innesco</strong> Cadi da un cornicione o durante la caduta superi un appiglio.</p><p><strong>Requisiti</strong> Le tue mani non sono legate dietro la tua schiena o comunque trattenute.</p><hr /><p>Quando cadi da un cornicione o superi un appiglio durante la caduta, puoi tentare di afferrarlo, potenzialmente arrestando la caduta. Devi superare un TS su Riflessi, in genere con la CD di Scalare. Se afferri il bordo o l'appiglio, puoi poi @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Scalare} usando Atletica.</p><hr /><p><strong>Successo Critico</strong> Afferri il bordo o l'appiglio, che tu abbia una mano libera o meno, in genere usando un oggetto tenuto (ad esempio, ti aggrappi a un cornicione con un'ascia). Subisci comunque danni per la distanza di cui sei caduto finora, ma consideri la caduta come inferiore di 9 metri.</p><p><strong>Successo</strong> Se hai almeno una mano libera afferri il bordo o l'appiglio, arrestando la caduta. Subisci comunque danni per la distanza di cui sei caduto finora, ma consideri la caduta come inferiore di 6 metri. Se non hai mani libere continui a cadere come se avessi fallito la prova.</p><p><strong>Fallimento Critico</strong> Continui a cadere e, se sei caduto per 6 metri o più prima di usare questa reazione, subisci @Damage[10[bludgeoning]]{10 danni contundenti} per l'impatto ogni 6 metri percorsi.</p>"
             },
             "Burrow": {
                 "Description": "<p><strong>Requisiti</strong> Hai una Velocità di scavare.</p><hr /><p>Scavi attraverso terra, sabbia o un simile materiale friabile e ti muovi fino alla tua Velocità di scavare. Non puoi scavare nella roccia o in altre sostanze più dense della terra se non hai una capacità che ti consente di farlo.</p>",
@@ -953,7 +971,13 @@
                 "Description": "<p>Termini un effetto che dice che può essere Interrotto. L'interruzione termina l'interezza dell'effetto a meno che non sia indicato diversamente.</p>"
             },
             "IdentifyAlchemy": {
-                "Title": "Identificare Alchimia"
+                "Title": "Identificare Alchimia",
+                "Notes": {
+                    "criticalFailure": "<strong>Fallimento Critico</strong> Sei certo che l'oggetto sia in verità un altro oggetto diverso, a scelta del GM.",
+                    "failure": "<strong>Fallimento</strong> Non riesci a identificare l'oggetto, ma puoi riprovarci.",
+                    "success": "<strong>Successo</strong> Identifichi l'oggetto e il modo di attivarlo."
+                },
+                "Description": "<p><strong>Requisiti</strong> Hai degli strumenti da alchimista.</p><hr /><p>Usando degli strumenti da alchimista, puoi identificare la natura di un oggetto alchemico dopo 10 minuti di esperimenti. Se il tentativo viene interrotto, per qualsiasi motivo, devi ricominciare da capo.</p><p><strong>Successo</strong> Identifichi l'oggetto e il modo di attivarlo.</p><p><strong>Fallimento</strong> Non riesci a identificare l'oggetto, ma puoi riprovarci.</p><p><strong>Fallimento Critico</strong> Sei certo che l'oggetto sia in verità un altro oggetto diverso, a scelta del GM.</p>"
             },
             "EarnIncome": {
                 "Title": "Guadagnare",
