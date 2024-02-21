@@ -4154,13 +4154,13 @@
             "Metrics": {
                 "Award": {
                     "Tooltip": {
-                        "Four": "4 Membri del Party",
-                        "Plural": "{xpPerFour} × 4 / {recipients} Membri del Party",
-                        "Singular": "1 Membro del Party"
+                        "Four": "4 Membri del Gruppo",
+                        "Plural": "{xpPerFour} × 4 / {recipients} Membri del Gruppo",
+                        "Singular": "1 Membro del Gruppo"
                     },
                     "Label": "Ricompensa: {xp} PE"
                 },
-                "Budget": "Budget: {spent}/{max} PE (Livello del Party {partyLevel})",
+                "Budget": "Budget: {spent}/{max} PE (Livello del Gruppo {partyLevel})",
                 "Threat": "Pericolosità: <threat>{threat}</threat>"
             },
             "XP": "PE",
@@ -4976,8 +4976,8 @@
                 "Hint": "Illumina le scene scure per una maggior facilità di visione."
             },
             "TogglePartySheet": {
-                "Label": "Apri/Chiudi Scheda del Party",
-                "Hint": "Apri o chiudi la scheda del party attivo o (se un giocatore) assegnato."
+                "Label": "Apri/Chiudi Scheda del Gruppo",
+                "Hint": "Apri o chiudi la scheda del gruppo attivo o (se un giocatore) assegnato."
             }
         },
         "KitItems": "Oggetti",
@@ -6894,7 +6894,9 @@
             "TokenName": "Nome Token",
             "RollTwice": "Tira Due Volte",
             "EphemeralEffect": "Effetto Effimero",
-            "ItemAlteration": "Alterazione Oggetto"
+            "ItemAlteration": "Alterazione Oggetto",
+            "DamageAlteration": "Alterazione Danni",
+            "SpecialStatistic": "Statistiche Speciali"
         },
         "Mutagens": {
             "BestialMutagen": {
@@ -6942,7 +6944,8 @@
             },
             "Life": {
                 "ToggleLabel": "Tutti i bersagli di guarire sono creature viventi",
-                "DescriptionModerate": "Ogni volta che finisci di lanciare un incantesimo che non sia un trucchetto, ripristini [[/r @item.level[healing]]] Punti Ferita a un bersaglio dell'incantesimo o alla creatura più vicina a te, a tua scelta. Non puoi guarire te stesso in questo modo. Questa guarigione ha i tratti guarigione, necromanzia e positivo, oltre al tratto di tradizione dell'incantesimo."
+                "DescriptionModerate": "Ogni volta che finisci di lanciare un incantesimo che non sia un trucchetto, ripristini [[/r @item.level[healing]]] Punti Ferita a un bersaglio dell'incantesimo o alla creatura più vicina a te, a tua scelta. Non puoi guarire te stesso in questo modo. Questa guarigione ha i tratti guarigione, necromanzia e positivo, oltre al tratto di tradizione dell'incantesimo.",
+                "DescriptionMajor": "Ogni volta che usi uno slot incantesimo per lanciare un incantesimo di 5° grado o superiore che richiede 2 o più azioni per essere lanciato, disperdi energia positiva in un'@Template[type:burst|distance:30] con gli effetti di un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{guarire} da 3 azioni di un livello inferiore di 4 al grado dell'incantesimo che lanci. Questa guarigione avviene immediatamente dopo aver finito di @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare l'Incantesimo} e tu non ne benefici. Invece, al contrario, perdi il doppio dei Punti Ferita che hai tirato per l'incantesimo guarire."
             }
         },
         "RuleEditor": {
@@ -6953,7 +6956,8 @@
                 "Text": "Contenuto Testuale"
             },
             "FlatModifier": {
-                "HideIfDisabled": "Nascondi (Se Disabilitato)"
+                "HideIfDisabled": "Nascondi (Se Disabilitato)",
+                "Force": "Forza?"
             },
             "General": {
                 "DamageType": "Tipo di Danno",
@@ -6968,7 +6972,12 @@
                 },
                 "Predicate": "Predicato",
                 "Brackets": "Intervalli",
-                "Range": "Intervallo"
+                "Range": "Intervallo",
+                "PriorityHint": "La priorità determina l'ordine in cui gli elementi regola sono eseguiti. Gli elementi regola con priorità inferiore sono eseguiti prima.",
+                "Add": "Aggiungi",
+                "Remove": "Rimuovi",
+                "Slug": "Slug",
+                "Opacity": "Opacità"
             },
             "GrantItem": {
                 "ReplaceSelf": "Sostituisce Se Stesso",
@@ -6977,6 +6986,62 @@
             },
             "FastHealing": {
                 "DeactivatedBy": "Disattivato Da"
+            },
+            "Aura": {
+                "Effects": {
+                    "AffectsOptions": {
+                        "Allies": "Alleati",
+                        "Enemies": "Nemici",
+                        "All": "Tutti"
+                    },
+                    "Label": "Effetti",
+                    "IncludesSelf": "Include Se Stesso",
+                    "Events": "Eventi",
+                    "EventsOptions": {
+                        "TurnStart": "Inizio Turno",
+                        "TurnEnd": "Fine Turno",
+                        "Enter": "Entrata"
+                    },
+                    "RemoveOnExit": "Rimuovi all'Uscita",
+                    "DropTooltip": "Un Effetto da includere in quest'aura",
+                    "RemoveEffect": "Rimuovi Effetto",
+                    "Affects": "Influenza",
+                    "DropText": "Trascina Effetto",
+                    "Type": "Tipo"
+                },
+                "Appearance": {
+                    "Label": "Aspetto",
+                    "Color": "Colore",
+                    "Border": "Bordo",
+                    "NotApplicable": "Non Applicabile",
+                    "Texture": "Texture",
+                    "Translation": {
+                        "Hint": "Una traslazione x/y manuale della texture",
+                        "Label": "Traslazione",
+                        "X": "x",
+                        "Y": "y"
+                    },
+                    "PlaybackRate": {
+                        "Label": "Velocità di Riproduzione",
+                        "Hint": "Se il File è un video, la velocità di riproduzione del <em>HTMLVideoElement</em> risultante"
+                    },
+                    "Loop": {
+                        "Label": "Ripeti",
+                        "Hint": "Se il File è un video, se ripeterlo o meno"
+                    }
+                },
+                "Basic": {
+                    "Level": {
+                        "Label": "Livello",
+                        "Hint": "Un livello opzionale per l'aura, da usare per impostare il livello dell'effetto che trasmette"
+                    },
+                    "MergeExisting": {
+                        "Hint": "Se un'altra area con lo stesso slug sta venendo emessa, unisci i dati di quest'aura con l'altra, combinando i tratti e gli effetti insieme a unire i dati <em>colori</em>.",
+                        "Label": "Unisci a Esistente"
+                    },
+                    "Radius": "Raggio",
+                    "Label": "Base"
+                }
             }
         },
         "SkillVariant": {
@@ -7070,7 +7135,13 @@
             "DisableADevice": "A Disattivare un Congegno",
             "EscapeForceOpenOrLift": "Per Sollevare Oggetti Pesanti, Forzare e Sfuggire",
             "ForceOpenGrappleShoveOrTrip": "Ad Afferrare, Forzare, Sbilanciare e Spintonare",
-            "ForestsOrJungles": "Nelle Foreste o nelle Giungle"
+            "ForestsOrJungles": "Nelle Foreste o nelle Giungle",
+            "DarknessOrSmoke": "In Oscurità o Fumo",
+            "CraftAlchemicalOrMedicine": "Per Fabbricare Oggetti Alchimici o Medicazioni",
+            "DimLight": "In Luce Fioca",
+            "Darkness": "Nell'Oscurità",
+            "CraftSnare": "Per Fabbricare Calappi",
+            "DimLightOrDarkness": "In Luce Fioca o Oscurità"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -8677,7 +8748,19 @@
             "lore": "Abilità di Sapienza",
             "spellcastingEntry": "Voce Lancio Incantesimi",
             "armor": "Armatura",
-            "melee": "Attacco PNG"
+            "melee": "Attacco PNG",
+            "shield": "Scudo"
+        },
+        "Actor": {
+            "character": "Personaggio Giocante",
+            "party": "Gruppo",
+            "familiar": "Famiglio",
+            "npc": "PNG",
+            "army": "Esercito",
+            "vehicle": "Veicolo",
+            "eidolon": "Eidolon",
+            "hazard": "Pericolo",
+            "loot": "Bottino"
         }
     },
     "PF2E.Kingmaker": {
