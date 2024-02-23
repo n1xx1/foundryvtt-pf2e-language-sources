@@ -4131,6 +4131,14 @@
                         "Label": "Runa delle Fiamme"
                     }
                 }
+            },
+            "ShockerLizard": {
+                "ShockingBurst": {
+                    "One": "Una Lucertola",
+                    "Three": "Tre Lucertole",
+                    "Four": "Quattro Lucertole",
+                    "Two": "Due Lucertole"
+                }
             }
         },
         "Encounter": {
@@ -7158,7 +7166,10 @@
             "CraftSnare": "Per Fabbricare Calappi",
             "DimLightOrDarkness": "In Luce Fioca o Oscurità",
             "FortuneTelling": "Quando Predice il Futuro",
-            "Lute": "Quando Suona il Liuto"
+            "Lute": "Quando Suona il Liuto",
+            "VsDemons": "Con i Demoni",
+            "HideInDim": "Per Nascondersi in Luce Fioca",
+            "Prophecy": "Per Declamare Profezie"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -7581,6 +7592,9 @@
             "Oracle": {
                 "Mystery": {
                     "Prompt": "Seleziona un mistero."
+                },
+                "MysteryConduit": {
+                    "Note": "Quando lanci un incantesimo di 5° grado o inferiore che non ha durata, invece di spendere uno slot incantesimo puoi far avanzare gli effetti della tua maledizione oracolare come quando lanci un incantesimo di rivelazione. Un incantesimo lanciato in questo modo ottiene il tratto infausto."
                 }
             },
             "Aid": {
@@ -7884,6 +7898,9 @@
                 },
                 "PursueALead": {
                     "Label": "Indagare su un argomento designato da Seguire un Pista"
+                },
+                "SharedStratagem": {
+                    "Note": "La creatura che hai colpito è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparata} per un alleato designato, durante il prossimo attacco che l'alleato designato effettua contro quella creatura prima dell'inizio del tuo turno successivo."
                 }
             },
             "Leshy": {
@@ -8006,7 +8023,8 @@
                 "Vampire": "Abilita le abilità che richiedono un bersaglio con il tratto vampiro",
                 "Undead": "Abilita le abilità che richiedono un bersaglio non morto",
                 "Incorporeal": "Abilita le abilità che richiedono un bersaglio incorporeo",
-                "OffGuard": "Abilita le abilità che richiedono un bersaglio impreparato"
+                "OffGuard": "Abilita le abilità che richiedono un bersaglio impreparato",
+                "Prone": "Abilita abilità che richiedono un bersaglio prono"
             },
             "WardenHuman": {
                 "MediumArmor": "Addestrato in Armature Medie",
@@ -8054,7 +8072,16 @@
                 "RetributiveStrike": "Colpo Punitivo",
                 "RangedReprisal": {
                     "Description": "Puoi utilizzare Colpo Punitivo con un'arma a distanza. Inoltre, se il nemico che ha innescato la tua reazione si trova fuori dalla tua portata di un massimo di 1,5 metri, puoi fare un Passo come parte della reazione per avere il nemico a portata prima di effettuare un Colpo Punitivo in mischia."
-                }
+                },
+                "NegativeDamage": "Danni Negativi",
+                "TargetReaction": "Il bersaglio ha innescato la tua reazione del campione",
+                "OngoingSelfishness": {
+                    "Description": "Dopo aver usato Scudo Egoista ottieni Resistenza a tutti gli ulteriori danni del nemico innescante fino alla fine del turno in cui hai usato la reazione. Questa resistenza è pari alla metà della tua resistenza di Scudo Egoista. @UUID[Compendium.pf2e.feat-effects.Item.seOQfjfjrDyK6rCo]{Effetto: Egoismo Persistente}"
+                },
+                "IronRepercussions": {
+                    "Description": "Disobbedire al tuo Pugno di Ferro comporta conseguenze durature. Se un nemico rifiuta di inginocchiarsi a te, puoi infliggere @Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,9),3,ternary(gte(@actor.level,5),2,1))))))d6[persistent,mental]]{danni mentali persistenti} al posto di quelli mentali normali. Devi decidere se il danno mentale sarà persistente o no prima che il tuo nemico scelga se inginocchiarsi o meno. La quantità di danni rimane invariata."
+                },
+                "EvilDamage": "Danno Spirituale"
             },
             "TrapFinder": {
                 "SearchLabel": "Scova Trappole (cercando trappole)",
@@ -8250,6 +8277,40 @@
                 "Wolf": "Lupo",
                 "Toad": "Rospo",
                 "Bat": "Pipistrello"
+            },
+            "ExemplaryFinisher": {
+                "Braggart": "Se l'avversario era temporaneamente immune al tuo @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, la sua immunità temporanea termina.",
+                "Wit": "L'avversario subisce penalità di circostanza -2 ai tiri per colpire contro di te fino all'inizio del tuo turno successivo.",
+                "Name": "Mossa Finale Esemplare",
+                "Fencer": "L'avversario è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} fino al tuo turno successivo.",
+                "Battledancer": "Dopo la mossa finale, puoi fare immediatamente un Passo come azione gratuita."
+            },
+            "Genie": {
+                "Jaathoom": "Jaathoom",
+                "Ifrit": "Ifrit",
+                "Prompt": "Seleziona un Genio.",
+                "Jabali": "Jabali",
+                "Janni": "Janni",
+                "Faydhaan": "Faydhaan"
+            },
+            "EldritchArcher": {
+                "EnchantingArrow": {
+                    "Note": "In caso di colpo critico, bersaglio diventa anche @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 1}."
+                },
+                "ArrowOfDeath": {
+                    "Note": "Con un colpo critico, il bersaglio deve anche superare un tiro salvezza su @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation], o essere immediatamente ucciso."
+                }
+            },
+            "Feat": {
+                "RiskySurgery": {
+                    "Note": "Quando Curi Ferite, puoi infliggere@Damage[1d8[slashing]]{1d8 danni taglienti} al tuo paziente appena prima di applicare gli effetti di Curare Ferite. Se lo fai, ottieni bonus di circostanza +2 alla tua prova di Medicina per Curare Ferite, e se ottieni un successo lo consideri un successo critico."
+                }
+            },
+            "RelicGift": {
+                "DivineRetribution": {
+                    "Success": "Se il bersaglio è malvagio, è anche @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} sino all'inizio del tuo prossimo turno su un colpo a segno.",
+                    "CriticalSuccess": "Se il bersaglio è malvagio, è anche @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} sino all'inizio del tuo prossimo turno su un colpo critico a segno."
+                }
             }
         },
         "LevelRange": "Livelli {minLevel} - {level}",
