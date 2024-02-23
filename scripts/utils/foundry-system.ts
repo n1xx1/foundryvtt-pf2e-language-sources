@@ -33,18 +33,13 @@ export async function readSystemFiles(
   manifest: FoundrySystemManifest
 ) {
   return [
-    (
-      await Promise.all(
-        manifest.packs.map(async (pack) => {
-          if (!enabledPacks.includes(pack.name)) {
-            return null;
-          }
-          const path = join(basePath, "json-assets", pack.path + ".json");
-          const entries = JSON.parse(await readFile(path, "utf-8")) as Entry[];
-          return { ...pack, entries } as const;
-        })
-      )
-    ).filter((x): x is Exclude<typeof x, null> => !!x),
+    await Promise.all(
+      manifest.packs.map(async (pack) => {
+        const path = join(basePath, "json-assets", pack.path + ".json");
+        const entries = JSON.parse(await readFile(path, "utf-8")) as Entry[];
+        return { ...pack, entries } as const;
+      })
+    ),
     (
       await Promise.all(
         manifest.languages.map(async (lang) => {
@@ -67,78 +62,3 @@ export function parseJsonStream<T>(stream: Buffer) {
     .filter((x) => x)
     .map((p) => JSON.parse(p) as T);
 }
-
-const enabledPacks = [
-  "abomination-vaults-bestiary",
-  "age-of-ashes-bestiary",
-  "agents-of-edgewatch-bestiary",
-  // "april-fools-bestiary",
-  "book-of-the-dead-bestiary",
-  "blood-lords-bestiary",
-  // "blog-bestiary",
-  "extinction-curse-bestiary",
-  "fall-of-plaguestone-bestiary",
-  "fists-of-the-ruby-phoenix-bestiary",
-  "hazards",
-  "lost-omens-impossible-lands-bestiary",
-  "lost-omens-mwangi-expanse-bestiary",
-  "lost-omens-monsters-of-myth-bestiary",
-  "lost-omens-travel-guide-bestiary",
-  "malevolence-bestiary",
-  "menace-under-otari-bestiary",
-  "npc-gallery",
-  "one-shot-bestiary",
-  "outlaws-of-alkenstar-bestiary",
-  "kingmaker-bestiary",
-  "pathfinder-bestiary",
-  "pathfinder-bestiary-2",
-  "pathfinder-bestiary-3",
-  "pathfinder-dark-archive",
-  // "pfs-introductions-bestiary",
-  // "pfs-season-1-bestiary",
-  // "pfs-season-2-bestiary",
-  // "pfs-season-3-bestiary",
-  // "pfs-season-4-bestiary",
-  "quest-for-the-frozen-flame-bestiary",
-  "shadows-at-sundown-bestiary",
-  "strength-of-thousands-bestiary",
-  "the-slithering-bestiary",
-  "troubles-in-otari-bestiary",
-  "night-of-the-gray-death-bestiary",
-  "crown-of-the-kobold-king-bestiary",
-  "vehicles",
-  "actionspf2e",
-  "ancestries",
-  "ancestryfeatures",
-  "backgrounds",
-  "classes",
-  "classfeatures",
-  "familiar-abilities",
-  "feats-srd",
-  "heritages",
-  "spells-srd",
-  "bestiary-effects",
-  "domains",
-  "boons-and-curses",
-  "conditionitems",
-  "campaign-effects",
-  "equipment-effects",
-  "other-effects",
-  "feat-effects",
-  // "pathfinder-society-boons",
-  "spell-effects",
-  "equipment-srd",
-  "deities",
-  // "iconics",
-  // "paizo-pregens",
-  "rollable-tables",
-  // "criticaldeck",
-  // "hero-point-deck",
-  "journals",
-  "gmg-srd",
-  "action-macros",
-  "pf2e-macros",
-  "bestiary-ability-glossary-srd",
-  "bestiary-family-ability-glossary",
-  "adventure-specific-actions",
-];

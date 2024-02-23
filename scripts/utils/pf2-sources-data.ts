@@ -1,11 +1,16 @@
 export function getRealTag(source: string) {
-  return sourceStateMap.get(source) ?? null;
+  for (const { regex, tag } of sourceRegexList) {
+    if (source.match(regex)) {
+      return tag;
+    }
+  }
+  return null;
 }
 
 type SourceState = {
   name: string;
   type: "core" | "lost-omens" | "adventure-path" | "adventure" | "other";
-  source: string[];
+  source: (string | RegExp)[];
   language: string[];
   compendiums?: string[];
 };
@@ -404,6 +409,7 @@ export const sourceState: Record<string, SourceState> = {
     name: "Strength of Thousands",
     type: "adventure-path",
     source: [
+      "Pathfinder: Strength of Thousands Player's Guide",
       "Strength of Thousands Player's Guide",
       "Pathfinder #169",
       "Pathfinder #169: Kindled Magic",
@@ -529,7 +535,9 @@ export const sourceState: Record<string, SourceState> = {
     name: "Gatewalkers",
     type: "adventure-path",
     source: [
+      "Gatewalkers Player's Guide",
       "Pathfinder Gatewalkers Player's Guide",
+      "Pathfinder: Gatewalkers Player's Guide",
       "Pathfinder #187: The Seventh Arch",
     ],
     language: [],
@@ -550,6 +558,7 @@ export const sourceState: Record<string, SourceState> = {
     name: "Kingmaker",
     type: "adventure-path",
     source: [
+      "Pathfinder: Kingmaker Player's Guide",
       "Pathfinder Kingmaker Player's Guide",
       "Pathfinder Kingmaker",
       "Kingmaker Adventure Path",
@@ -724,7 +733,7 @@ export const sourceState: Record<string, SourceState> = {
   "sundered-waves": {
     name: "Sundered Waves",
     type: "adventure",
-    source: [],
+    source: ["Pathfinder One-Shot #1: Sundered Waves"],
     language: [],
   },
   "head-shot-the-rot": {
@@ -736,7 +745,7 @@ export const sourceState: Record<string, SourceState> = {
   "mark-of-the-mantis": {
     name: "Mark Of The Mantis",
     type: "adventure",
-    source: [],
+    source: ["Pathfinder One-Shot #4: Mark of the Mantis"],
     language: [],
   },
   rusthenge: {
@@ -761,6 +770,9 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder: Wake the Dead #1",
       "Pathfinder: Wake the Dead #2",
       "Pathfinder: Wake the Dead #3",
+      "Pathfinder Dark Archive Web Supplement: In Darkness",
+      "Pathfinder Blog: April Fool's Bestiary",
+      "Pathfinder Critical Decks",
     ],
     language: [],
   },
@@ -770,17 +782,14 @@ export const sourceState: Record<string, SourceState> = {
     source: [
       "Organized Play Foundation",
       "Pathfinder Blog: Pathfinder Society Year 4 Rule Updates",
-      "Pathfinder Society Scenario #1-00: Origin of the Open Road",
-      "Pathfinder Society Scenario #1-03: Escaping the Grave",
-      "Pathfinder Society Scenario #1-15: The Blooming Catastrophe",
-      "Pathfinder Society Scenario #1-19: Iolite Squad Alpha",
-      "Pathfinder Society Scenario #1-23: The Star-Crossed Court",
-      "Pathfinder Society Scenario #1-24: Lightning Strikes, Stars Fall",
-      "Pathfinder Society Scenario #2-22: Breaking the Storm: Excising Ruination",
-      "Pathfinder Society Scenario #4-11: Prisoners of the Electric Castle",
       "PFS Quest #5: The Dragon Who Stole Evoking Day",
-      "Pathfinder Society Quest #5: The Dragon Who Stole Evoking Day",
-      "Pathfinder Society Quest #10: The Broken Scales",
+      "Pathfinder Society: Season 1",
+      /Pathfinder Society Quest .+/,
+      /Pathfinder Bounty .+/,
+      /Pathfinder Society Intro .+/,
+      /Pathfinder Society Intro: .+/,
+      /Pathfinder Society Scenario .+/,
+      /Pathfinder Society Special .+/,
     ],
     language: [],
   },
@@ -791,9 +800,24 @@ export const sourceState: Record<string, SourceState> = {
     language: [],
   },
 };
+
 export const sourceStateMap = new Map(
   Object.entries(sourceState).flatMap(([k, v]) => v.source.map((h) => [h, k]))
 );
+
+function escapeRegExp(s: string) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+const sourceRegexList = Object.entries(sourceState).map(([k, v]) => ({
+  regex:
+    "^(" +
+    v.source
+      .map((s) => (s instanceof RegExp ? s.source : escapeRegExp(s)))
+      .join("|") +
+    ")$",
+  tag: k,
+}));
 
 export const weaponPropertyRunes = [
   ["Anarchic", "Core Rulebook"],

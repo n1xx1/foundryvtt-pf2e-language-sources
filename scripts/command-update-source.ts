@@ -5,11 +5,40 @@ import { getRealTag } from "./utils/pf2-sources-data";
 import {
   createWeblateApi,
   WeblateApi,
+  WeblateError,
   WeblateLabel,
   WeblateUnit,
 } from "./utils/weblate-api";
+import _ from "lodash";
 
 type EntriesWithSource = (EntryHazard | EntryNPC | EntryItem)[];
+
+interface LangFile {
+  [id: string]: string | LangFile;
+}
+
+const weblateCompendiumMap: Record<string, string | undefined> = {
+  actions: "compendium-actions",
+  ancestries: "compendium-ancestries",
+  ancestryfeatures: "compendium-ancestryfeatures",
+  backgrounds: "compendium-backgrounds",
+  deities: "compendium-deities",
+  classes: "compendium-classes",
+  classfeatures: "compendium-class-features",
+  heritages: "compendium-heritages",
+  spells: "compendium-spells",
+  feats: "compendium-feats",
+  equipment: "compendium-equipment",
+  "abomination-vaults-bestiary": "compendium-abomination-vaults-bestiary",
+  "agents-of-edgewatch-bestiary": "compendium-agents-of-edgewatch-bestiary",
+  "fall-of-plaguestone": "compendium-fall-of-plaguestone-bestiary",
+  "pathfinder-bestiary": "compendium-bestiary",
+  "pathfinder-bestiary-2": "compendium-bestiary-2",
+  "pathfinder-bestiary-3": "compendium-bestiary-3",
+  "feat-effects": "compendium-feat-effects",
+  "spell-effects": "compendium-spell-effects",
+  "bestiary-ability-glossary-srd": "compendium-bestiary-ability-glossary",
+};
 
 export async function commandUpdateSource(
   systemDir: string,
@@ -17,81 +46,169 @@ export async function commandUpdateSource(
   dry: boolean,
   filter: string[]
 ) {
-  const api = createWeblateApi(weblateToken, "https://weblate.n1xx1.me/api");
+  const weblate = createWeblateApi(
+    weblateToken,
+    "https://weblate.n1xx1.me/api"
+  );
 
   const manifest = await readManifest(join(systemDir, "static", "system.json"));
-  const [allPacks] = await readSystemFiles(systemDir, manifest);
+  const [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
 
-  const toTranslate: [name: string, pack: string][] = [
-    ["compendium-actions", "actions"],
-    ["compendium-ancestries", "ancestries"],
-    ["compendium-ancestryfeatures", "ancestryfeatures"],
-    ["compendium-backgrounds", "backgrounds"],
-    // ["compendium-deities", "deities"],
-    ["compendium-classes", "classes"],
-    ["compendium-class-features", "classfeatures"],
-    ["compendium-heritages", "heritages"],
-    ["compendium-spells", "spells"],
-    ["compendium-feats", "feats"],
-    ["compendium-equipment", "equipment"],
-    // [
-    //   "compendium-abomination-vaults-bestiary",
-    //   "abomination-vaults-bestiary",
-    // ],
-    // // ["compendium-age-of-ashes-bestiary", "age-of-ashes-bestiary"],
-    // [
-    //   "compendium-agents-of-edgewatch-bestiary",
-    //   "agents-of-edgewatch-bestiary",
-    // ],
-    // ["compendium-bestiary", "pathfinder-bestiary"],
-    // ["compendium-bestiary-2", "pathfinder-bestiary-2"],
-    // ["compendium-bestiary-3", "pathfinder-bestiary-3"],
-    ["compendium-feat-effects", "feat-effects"],
-    ["compendium-spell-effects", "spell-effects"],
-  ];
+  const langData: LangFile = _.merge({}, ...allLangs);
 
-  const labels = await api.getAll<WeblateLabel>(
+  const labels = await weblate.getAll<WeblateLabel>(
     `/projects/foundryvtt-pathfinder-2e/labels/`,
     { page_size: 500 }
   );
 
   const labelsMap = new Map(labels.map((l) => [l.name, l.id]));
 
-  for (const [name, packName] of toTranslate) {
-    const path = `packs/${packName}`;
-    const pack = allPacks.find((x) => path === x.path);
-    if (!pack) {
-      throw new Error(`pack not found: ${packName}`);
-    }
+  const langKeys = getObjectKeys(langData).filter((x) => x.match(/^PF2E\..*$/));
+  const langKeysRegex = new RegExp(
+    "(" +
+      langKeys.map((k) => k.replace(".", "\\.")).join("|") +
+      ")([^a-zA-Z0-9\\.]|$)",
+    "g"
+  );
+  const langKeysMap = new Map(
+    langKeys.map((k) => [
+      k,
+      { used: [] as string[], sources: new Set<string>() },
+    ])
+  );
+
+  const c: UpdateSourceContext = {
+    weblate: weblate,
+    dry,
+    labelsMap,
+    langKeysMap,
+    langKeysRegex,
+  };
+
+  console.log(`Processing packs`);
+  for (const pack of allPacks) {
+    const fileName = pack.path.replace("packs/", "");
+    const compendiumName = weblateCompendiumMap[fileName];
+
     await translateSource(
-      name,
-      packName,
+      compendiumName,
+      fileName,
       pack.entries as EntriesWithSource,
-      api,
-      labelsMap,
-      dry
+      c
     );
+  }
+
+  console.log(`Processing Lang`);
+  await translateLang(c);
+}
+
+type UpdateSourceContext = {
+  weblate: WeblateApi;
+  dry: boolean;
+  labelsMap: Map<string, number>;
+  langKeysRegex: RegExp;
+  langKeysMap: Map<
+    string,
+    {
+      used: string[];
+      sources: Set<string>;
+    }
+  >;
+};
+
+async function translateLang(c: UpdateSourceContext) {
+  const res = await c.weblate.getAll<WeblateUnit>(
+    `/translations/foundryvtt-pathfinder-2e/lang/en/units/`,
+    { q: "NOT has:label", page_size: 500 }
+  );
+
+  for (const unit of res) {
+    let ctx = unit.context;
+    const langInfo = c.langKeysMap.get(ctx);
+    if (!langInfo) continue;
+
+    const tags = [...langInfo.sources.values()];
+
+    if (tags.length === 0) {
+      continue;
+    }
+
+    const tagIds = tags
+      .map((tag) => c.labelsMap.get(tag))
+      .filter((x): x is number => !!x)
+      .sort();
+    const oldTagIds = unit.labels?.map((x) => x.id).sort();
+
+    const explaination = `Used by: ${langInfo.used.join(", ")}`;
+
+    if (_.isEqual(tagIds, oldTagIds) && unit.explanation === explaination) {
+      continue;
+    }
+
+    try {
+      if (!c.dry) {
+        await c.weblate.patch(`/units/${unit.id}/`, {
+          explanation: explaination,
+          labels: tagIds,
+        });
+      }
+      console.log(
+        `Set explaination = "${explaination}", labels = "${tags.join(",")}" on ${unit.id} (${unit.context})`
+      );
+    } catch (e) {
+      console.log(
+        `Failed to set explaination = "${explaination}", labels = "${tags.join(", ")}" on ${unit.id} (${unit.context})`
+      );
+    }
   }
 }
 
 async function translateSource(
-  weblateName: string,
+  weblateName: string | undefined,
   packName: string,
   data: EntriesWithSource,
-  weblate: WeblateApi,
-  labelsMap: Map<string, number>,
-  dry: boolean
+  c: UpdateSourceContext
 ) {
-  console.log(`Processing pack ${packName} into component ${weblateName}`);
+  console.log(`Processing pack ${packName}`);
 
   const dataMap = new Map(data.map((f) => [f.name, f]));
 
-  const res = await weblate.getAll<WeblateUnit>(
-    `/translations/foundryvtt-pathfinder-2e/${weblateName}/en/units/`,
-    {
-      q: "NOT has:label",
-      page_size: 500,
+  for (const entry of data) {
+    const origin: any = entry;
+    const source: string =
+      origin.system?.publication?.title ??
+      origin.system?.details?.publication?.title ??
+      origin.system?.source?.value ??
+      origin.system?.details?.source?.value ??
+      "";
+
+    const tag = getRealTag(source);
+
+    if (!tag && source) {
+      console.log(`Unknown source: ${source} (item: ${entry.name})`);
+      throw "stop";
     }
+    if (!tag) {
+      continue;
+    }
+
+    for (const match of JSON.stringify(entry).matchAll(c.langKeysRegex)) {
+      c.langKeysMap.get(match[1])!.used.push(entry.name);
+      if (tag) {
+        c.langKeysMap.get(match[1])!.sources.add(tag);
+      }
+    }
+  }
+
+  if (!weblateName) {
+    return;
+  }
+
+  console.log(`Updating component ${weblateName}`);
+
+  const res = await c.weblate.getAll<WeblateUnit>(
+    `/translations/foundryvtt-pathfinder-2e/${weblateName}/en/units/`,
+    { q: "NOT has:label", page_size: 500 }
   );
 
   for (const unit of res) {
@@ -139,7 +256,7 @@ async function translateSource(
     const isRemaster: boolean = origin.system?.publication?.remaster ?? false;
 
     if (source) {
-      await applySourceTag(source, unit, name, weblate, labelsMap, dry);
+      await applySourceTag(source, unit, name, c);
     }
   }
 }
@@ -148,9 +265,7 @@ async function applySourceTag(
   source: string,
   unit: WeblateUnit,
   name: string,
-  weblate: WeblateApi,
-  labelsMap: Map<string, number>,
-  dry: boolean
+  c: UpdateSourceContext
 ) {
   const tag = getRealTag(source);
 
@@ -159,7 +274,7 @@ async function applySourceTag(
     throw "stop";
   }
 
-  const tagId = labelsMap.get(tag);
+  const tagId = c.labelsMap.get(tag);
   if (!tagId) {
     console.log(`Label not found: ${source} (item: ${name})`);
     throw "stop";
@@ -170,11 +285,41 @@ async function applySourceTag(
   }
 
   try {
-    if (!dry) {
-      await weblate.patch(`/units/${unit.id}/`, { labels: [tagId] });
+    if (!c.dry) {
+      await c.weblate.patch(`/units/${unit.id}/`, { labels: [tagId] });
     }
     console.log(`Set label ${tag} on ${unit.id} (${unit.context})`);
   } catch (e) {
     console.log(`Failed to set label ${tag} on ${unit.id} (${unit.context})`);
   }
+}
+
+function getObjectKeys(lang: LangFile, path?: string): string[] {
+  return Object.entries(lang).flatMap(([k, v]) => {
+    const key = path ? `${path}.${k}` : k;
+    if (typeof v === "string") {
+      return key;
+    }
+    return getObjectKeys(v, key);
+  });
+}
+
+function walkObjectLeaves(
+  o: any,
+  fn: (k: string | number | undefined, v: any) => void,
+  k?: string | number
+) {
+  if (Array.isArray(o)) {
+    for (const [k, v] of o.entries()) {
+      walkObjectLeaves(v, fn, k);
+    }
+    return;
+  }
+  if (o && typeof o === "object") {
+    for (const [k, v] of Object.entries(o)) {
+      walkObjectLeaves(v, fn, k);
+    }
+    return;
+  }
+  fn(k, o);
 }

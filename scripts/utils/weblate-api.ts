@@ -1,5 +1,13 @@
 export type WeblateApi = ReturnType<typeof createWeblateApi>;
 
+export class WeblateError extends Error {
+  status: number;
+  constructor(message: string, status: number) {
+    super(message);
+    this.status = status;
+  }
+}
+
 export function createWeblateApi(weblateToken: string, weblateUrl: string) {
   return {
     getAll,
@@ -79,8 +87,7 @@ export function createWeblateApi(weblateToken: string, weblateUrl: string) {
       console.warn(ex);
     }
     if (resp.status !== 200) {
-      console.log(parsed);
-      throw new Error(`invalid status code: ${resp.status}`);
+      throw new WeblateError(parsed?.detail ?? parsed, resp.status);
     }
     return parsed;
   }
