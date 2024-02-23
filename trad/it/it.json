@@ -7479,7 +7479,15 @@
                         "Undead": "L'energia necromantica fluisce in te o in un bersaglio. Ottieni Punti Ferita temporanei pari al livello dell'incantesimo per 1 round oppure un bersaglio subisce @Damage[@item.level[void]]{1 danno negativo per livello dell'incantesimo} (se l'incantesimo infligge già quel tipo di danni iniziali, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze).",
                         "Imperial": "Un'ondata di ricordi ancestrali conferisce a te o a un bersaglio bonus di status +1 alle prove di abilità per 1 round.",
                         "Fey": "Fate variopinte danzano intorno a te o a un bersaglio, rendendovi @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultati} per 1 round. Un occultamento così evidente non può essere usato per Nascondersi.",
-                        "Elemental": "L'energia elementale circonda te o un bersaglio: tu ottieni bonus di status +1 alle prove di Intimidazione per 1 round oppure un bersaglio subisce @Damage[@item.level[@actor.flags.pf2e.sorcerer.elementalBloodline.damageType]]{1 danno per livello dell'incantesimo}. I danni sono contundenti o da fuoco, in base al tuo tipo di elementale (vedi sotto). Se l'incantesimo infligge già quel tipo di danni, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze."
+                        "Elemental": "L'energia elementale circonda te o un bersaglio: tu ottieni bonus di status +1 alle prove di Intimidazione per 1 round oppure un bersaglio subisce @Damage[@item.level[@actor.flags.pf2e.sorcerer.elementalBloodline.damageType]]{1 danno per livello dell'incantesimo}. I danni sono contundenti o da fuoco, in base al tuo tipo di elementale (vedi sotto). Se l'incantesimo infligge già quel tipo di danni, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze.",
+                        "Nymph": "La grazia della ninfa accentua i tuoi movimenti e distrae i tuoi nemici, concedendoti bonus di status +1 alle prove di Diplomazia per 1 round o imponendo penalità di status -1 ai tiri salvezza su Volontà di un bersaglio per 1 round.",
+                        "Psychopomp": "Ottieni bonus di status +2 ai tiri salvezza su Tempra per 1 round, oppure un bersaglio subisce @Damage[@item.level[void]]{1 danno negativo per livello dell'incantesimo} se il bersaglio è vivente o @Damage[@item.level[vitality]]{1 danno positivo per livello dell'incantesimo}. Se l'incantesimo infligge già quel tipo di danno, combinalo con il danno iniziale dell'incantesimo prima di determinare debolezze e resistenze.",
+                        "Shadow": {
+                            "Text": "Le ombre diventano più profonde intorno a te o a un bersaglio, concedendoti bonus di status +1 a Furtività o imponendo penalità di status -1 a Percezione per 1 round.",
+                            "PerceptionPenalty": "penalità di -1 a Percezione",
+                            "StealthBonus": "bonus di +1 a Furtività"
+                        },
+                        "Genie": "I tuoi incantesimi distorcono la realtà e distraggono i tuoi avversari. Ottieni bonus di status +1 alle prove di Inganno per 1 round, oppure un bersaglio subisce penalità di status -1 a Percezione per 1 round."
                     }
                 }
             },
@@ -7595,6 +7603,14 @@
                 },
                 "MysteryConduit": {
                     "Note": "Quando lanci un incantesimo di 5° grado o inferiore che non ha durata, invece di spendere uno slot incantesimo puoi far avanzare gli effetti della tua maledizione oracolare come quando lanci un incantesimo di rivelazione. Un incantesimo lanciato in questo modo ottiene il tratto infausto."
+                },
+                "CurseSeverity": {
+                    "NoneToMinor": "La tua maledizione passa allo stadio minore la prima volta che finisci di lanciare un incantesimo di rivelazione dopo i tuoi preparativi giornalieri.",
+                    "ModerateToMajor": "Subito dopo aver completato il lancio di un incantesimo di rivelazione mentre sei sotto l'effetto della tua maledizione moderata, la tua maledizione progredisce fino al suo effetto maggiore.",
+                    "MinorToOffGuard": "Diventi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} in aggiunta agli effetti della maledizione minore.",
+                    "MinorToModerate": "Se lanci un incantesimo di rivelazione mentre la tua maledizione minore è in atto, passi all'effetto della maledizione modera subito dopo aver finito di Lanciare l'Incantesimo.",
+                    "Overwhelmed": "Subito dopo aver lanciato un incantesimo di rivelazione vieni sopraffatto. Mentre sei sopraffatto non puoi Lanciare o Mantenere incantesimi di rivelazione",
+                    "MajorToExtreme": "Quando lanci un incantesimo di rivelazione mentre sei affetto dalla tua maledizione maggiore, questa si intensifica fino a raggiungere un effetto estremo invece di sopraffarti. Tutti i misteri condividono gli stessi effetti per la loro maledizione estrema. Quando sei affetto dalla tua maledizione estrema, diventi @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{condannato 2} (o aumenti la tua condizione di condannato di 2, se eri già condannato). Una volta ogni 10 minuti, quando fallisci un tiro per colpire, una prova di abilità o di Percezione o un tiro salvezza, puoi ripetere il tiro e usare il secondo risultato. Ripetere il tiro ha il tratto fortuna e non richiede di spendere un'azione, il che significa che puoi ritirare anche se non puoi agire."
                 }
             },
             "Aid": {
@@ -7997,7 +8013,8 @@
                     "Targeting": "Mirata",
                     "Stunning": "Stordente",
                     "Perfect": "Perfetta",
-                    "Mobile": "Mobile"
+                    "Mobile": "Mobile",
+                    "ConfidentNote": "Infliggi al bersaglio la metà dei @Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{danni del tuo colpo preciso}. Questo tipo di danno è quello dell'arma o dell'attacco senz'armi che hai usato per il Colpo."
                 }
             },
             "Suli": {
@@ -8174,7 +8191,9 @@
             },
             "Actions": {
                 "ThreeActions": "Tre Azioni",
-                "TwoActions": "Due Azioni"
+                "TwoActions": "Due Azioni",
+                "OneAction": "Una Azione",
+                "Prompt": "Seleziona il numero di azioni"
             },
             "AdjustDegreeOfSuccess": {
                 "Squeeze": {
@@ -8263,7 +8282,10 @@
             },
             "Label": {
                 "ResistanceType": "Tipo di Resistenza",
-                "DamageType": "Tipo di Danno"
+                "DamageType": "Tipo di Danno",
+                "Exit": "Esci",
+                "Enter": "Entra",
+                "NonCantrip": "Non-Trucchetto"
             },
             "SpellEffectGluttonsJaw": {
                 "Text": "Se attacchi con le tue fauci ed infliggi danno, ottieni [[/r ceil(@item.level/2)d6 #Temporary Hit Points]]{1d6 Punti Ferita temporanei}."
@@ -8835,7 +8857,8 @@
             "Plural": "metri"
         },
         "TraitVoid": "Negativo",
-        "TraitVitality": "Positivo"
+        "TraitVitality": "Positivo",
+        "TraitMetal": "Metallo"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
