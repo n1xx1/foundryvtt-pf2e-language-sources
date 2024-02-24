@@ -8254,13 +8254,15 @@
                     "Jolt": "Scossa (Elettricità)",
                     "Chill": "Gelo (Freddo)",
                     "Ignition": "Combustione (Fuoco)",
-                    "Momentum": "Slancio (Contundente)"
+                    "Momentum": "Slancio (Contundente)",
+                    "Label": "Potenziamento Offensivo"
                 },
                 "Modification": {
                     "NonlethalBluntShot": "Colpo Smussato Non Letale",
                     "Breakthrough": {
                         "Prompt": "Seleziona una modifica avvenieristica.",
-                        "AllowedDrops": "privilegio di classe inventore di 7° livello o inferiore"
+                        "AllowedDrops": "privilegio di classe inventore di 7° livello o inferiore",
+                        "EnhancedResistancePrompt": "Seleziona una modifica iniziale da potenziare."
                     },
                     "Initial": {
                         "AllowedDrops": "privilegio di classe inventore di 1° livello",
@@ -8275,6 +8277,21 @@
                 },
                 "BoostModulation": {
                     "Prompt": "Scegli un potenziamento offensivo aggiuntivo"
+                },
+                "Unstable": {
+                    "Note": "Quando intraprendi un'azione instabile, tenta una @Check[flat|dc:17|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]{prova semplice} subito dopo averne applicato gli effetti.",
+                    "FlatCheck": {
+                        "Failure": "L'innovazione non può più essere usata per altre azioni instabili.",
+                        "Label": "Prova Instabile",
+                        "CriticalFailure": "L'innovazione non può più essere usata per altre azioni instabili, inoltre subisci anche @Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]{danni da fuoco pari al tuo livello}."
+                    },
+                    "Stable": "Stabile"
+                },
+                "Overdrive": {
+                    "CriticalFailure": "Ops! Qualcosa esplode. Subisci @Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]{danni da fuoco pari al tuo livello} e non puoi usare di nuovo Sovraccarico per 1 minuto, mentre gli aggeggi si raffreddano e si resettano.",
+                    "FireDamage": "Sovraccarico: Danni da Fuoco",
+                    "CriticalSuccess": "I tuoi congegni entrano in uno stato di incredibile efficienza chiamato @UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{sovraccarico} critico, aggiungendo grande potenza ai tuoi attacchi.",
+                    "Success": "I tuoi congegni entrano in @UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{sovraccarico}, aggiungendo potenza ai tuoi attacchi."
                 }
             },
             "SnipersAim": {
@@ -8293,7 +8310,11 @@
                 "AutomaticPower": "Dinamo a Propulsione Automatica",
                 "Label": "Dinamo Sterling",
                 "AutomaticPercussive": "Dinamo a Percussione Automatica",
-                "ManualPower": "Dinamo a Propulsione Manuale"
+                "ManualPower": "Dinamo a Propulsione Manuale",
+                "StasianSmash": {
+                    "CriticalFailureText": "Se ottieni un fallimento critico nel Colpo con la dinamo, subisci @Damage[1d12[electricity]]{1d12 danni da elettricità}.",
+                    "SuccessText": "In caso di successo, il colpo infligge 1d12 danni da Elettricità al bersaglio e @Damage[(ternary(gte(@actor.level,18),2,1))d4[electricity]]{danni da elettricità} a un massimo di altri due nemici nel raggio di 3 metri, con le scintille che guizzano dall’uno all’altro."
+                }
             },
             "Label": {
                 "ResistanceType": "Tipo di Resistenza",
