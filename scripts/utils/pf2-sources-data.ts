@@ -9,7 +9,7 @@ export function getRealTag(source: string) {
 
 type SourceState = {
   name: string;
-  type: "core" | "lost-omens" | "adventure-path" | "adventure" | "other";
+  type: "core" | "lost-omens" | "adventure-path" | "adventure" | "other" | "core-remaster";
   source: (string | RegExp)[];
   language: string[];
   compendiums?: string[];
@@ -795,19 +795,19 @@ export const sourceState: Record<string, SourceState> = {
   },
   "player-core": {
     name: "Player Core",
-    type: "other",
+    type: "core-remaster",
     source: ["Pathfinder Player Core"],
     language: [],
   },
   "gm-core": {
     name: "GM Core",
-    type: "other",
+    type: "core-remaster",
     source: ["Pathfinder GM Core"],
     language: [],
   },
   "monster-core": {
     name: "Monster Core",
-    type: "other",
+    type: "core-remaster",
     source: ["Pathfinder Monster Core"],
     language: [],
   }
