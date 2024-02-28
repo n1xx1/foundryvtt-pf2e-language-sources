@@ -3692,10 +3692,11 @@
                     "armor": "CA"
                 },
                 "Label": {
-                    "AdjustedTarget": "<target>Bersaglio: {target}</target> <dc>({dcType} <preadjusted>{preadjusted}</preadjusted> <adjusted>{adjusted}</adjusted>)</dc>",
-                    "NoChangeTarget": "<target>Bersaglio: {target}</target> <dc>({dcType} <adjusted>{adjusted}</adjusted>)</dc>",
+                    "AdjustedTarget": "<opposer>Bersaglio: {opposer}</opposer> <dc>({dcType} <preadjusted>{preadjusted}</preadjusted> <adjusted>{adjusted}</adjusted>)</dc>",
+                    "NoChangeTarget": "<opposer>Bersaglio: {opposer}</opposer> <dc>({dcType} <adjusted>{adjusted}</adjusted>)</dc>",
                     "NoTarget": "<dc>{dcType} {dc}</dc>",
-                    "WithTarget": "<target>Bersaglio: {target}</target> <dc>({dcType} {dc})</dc>"
+                    "WithTarget": "<opposer>Bersaglio: {opposer}</opposer> <dc>({dcType} {dc})</dc>",
+                    "WithOrigin": "<opposer>Origine: {opposer}</opposer> <dc>({dcType} {dc})</dc>"
                 },
                 "Unspecific": "CD"
             },
@@ -7282,7 +7283,11 @@
             "TarPit": "Nelle Pozze di Catrame",
             "JunkOrDebris": "Tra Spazzatura e Detriti",
             "ShootingGallery": "Nella Galleria di Tiro",
-            "Poison": "Per Fabbricare Veleni"
+            "Poison": "Per Fabbricare Veleni",
+            "Dance": "Per Ballare",
+            "Moist": "In Ambienti Umidi",
+            "Rocky": "Su Terreno Roccioso",
+            "TrackHalfHealth": "A Seguire Tracce di una Creatura Ridotta a Metà o Meno dei Suoi PF"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -7491,7 +7496,8 @@
                 "DegreeOfSuccess": "Seleziona un grado di successo.",
                 "Rune": "Seleziona una Runa.",
                 "Alignment": "Seleziona un allineamento.",
-                "Shield": "Seleziona uno scudo."
+                "Shield": "Seleziona uno scudo.",
+                "Resistance": "Seleziona una resistenza."
             },
             "SneakAttack": "Attacco Furtivo",
             "SpecialtyCrafting": {
@@ -7940,6 +7946,12 @@
                     "BoredLabel": "Il Cacciatore Spaccone è Annoiato",
                     "InsultedLabel": "Il Cacciatore Spaccone è Insultato",
                     "MisfireNote": "Tutti gli attacchi effettuati con un <em>cacciatore spaccone</em> insultato hanno una possibilità di inceppamento (@Check[type:flat|dc:5]) finché l'arma non viene placata."
+                },
+                "PhantomShroud": {
+                    "StrikeLabel": "Mano Spettrale"
+                },
+                "HolyWater": {
+                    "Note": "Può danneggiare soltanto creature con il tratto sacrilego."
                 }
             },
             "Fetchling": {
@@ -8161,7 +8173,8 @@
             "Target": {
                 "AgainstDevils": "Contro i Diavoli",
                 "AgainstDemons": "Contro i Demoni",
-                "AgainstHumanoids": "Contro gli Umanoidi"
+                "AgainstHumanoids": "Contro gli Umanoidi",
+                "Necromancer": "Il bersaglio è un negromante"
             },
             "ToggleProperty": {
                 "GourdHead": "Leshy Zucca: Aumenta CD di percezione",
@@ -9191,7 +9204,9 @@
         },
         "TraitVoid": "Negativo",
         "TraitVitality": "Positivo",
-        "TraitMetal": "Metallo"
+        "TraitMetal": "Metallo",
+        "ArmorPropertyRuneSizeChanging": "Cambia Taglia",
+        "ArmorPropertyRuneRaiment": "Mascheramento"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
