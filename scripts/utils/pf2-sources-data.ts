@@ -793,12 +793,24 @@ export const sourceState: Record<string, SourceState> = {
     ],
     language: [],
   },
-  remaster: {
-    name: "Remaster",
+  "player-core": {
+    name: "Player Core",
     type: "other",
-    source: ["Pathfinder Player Core", "Pathfinder GM Core"],
+    source: ["Pathfinder Player Core"],
     language: [],
   },
+  "gm-core": {
+    name: "GM Core",
+    type: "other",
+    source: ["Pathfinder GM Core"],
+    language: [],
+  },
+  "monster-core": {
+    name: "Monster Core",
+    type: "other",
+    source: ["Pathfinder Monster Core"],
+    language: [],
+  }
 };
 
 export const sourceStateMap = new Map(

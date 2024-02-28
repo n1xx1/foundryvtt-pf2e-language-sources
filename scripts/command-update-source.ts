@@ -119,7 +119,7 @@ type UpdateSourceContext = {
 async function translateLang(c: UpdateSourceContext) {
   const res = await c.weblate.getAll<WeblateUnit>(
     `/translations/foundryvtt-pathfinder-2e/lang/en/units/`,
-    { q: "NOT has:label", page_size: 500 }
+    { page_size: 500 }
   );
 
   for (const unit of res) {
