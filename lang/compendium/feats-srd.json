@@ -2144,7 +2144,7 @@
       "name": "Battle Cry"
     },
     "Battle Medicine": {
-      "description": "<p><strong>Requirements</strong> You're holding or wearing a healer's toolkit.</p>\n<hr />\n<p>You can patch up wounds, even in combat. Attempt a Medicine check with the same DC as for @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} and restore the corresponding amount of HP; this doesn't remove the wounded condition. As with Treat Wounds, you can attempt checks against higher DCs if you have the minimum proficiency rank. The target is then immune to your Battle Medicine for 1 day. This does not make them immune to, or otherwise count as, Treat Wounds.</p>",
+      "description": "<p><strong>Requirements</strong> You're holding or wearing a healer's toolkit.</p>\n<hr />\n<p>You can patch up wounds, even in combat. Attempt a Medicine check with the same DC as for @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} and restore the corresponding amount of HP; this doesn't remove the wounded condition. As with Treat Wounds, you can attempt checks against higher DCs if you have the minimum proficiency rank. The target is then @UUID[Compendium.pf2e.feat-effects.Item.2XEYQNZTCGpdkyR6]{immune} to your Battle Medicine for 1 day. This does not make them immune to, or otherwise count as, Treat Wounds.</p>",
       "featPrerequisites": {
         "0": "trained in Medicine"
       },
@@ -6716,7 +6716,7 @@
       "name": "Elemental Existence"
     },
     "Elemental Explosion": {
-      "description": "<p><strong>Requirements</strong> You're raging, and you haven't used this ability since you last Raged.</p>\n<hr />\n<p>You unleash the energy roiling within you, exploding elemental matter in a @Template[type:emanation|distance:15]. Each creature in the area takes @Damage[floor(@actor.level/2)d8|traits:area-damage]{1d8 damage per level you possess}, with the same type you chose for elemental rage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]. Elemental Explosion gains the trait of your element.</p>",
+      "description": "<p><strong>Requirements</strong> You're raging, and you haven't used this ability since you last Raged.</p>\n<hr />\n<p>You unleash the energy roiling within you, exploding elemental matter in a @Template[type:emanation|distance:15]. Each creature in the area takes @Damage[(@actor.level)d8|traits:area-damage]{1d8 damage per level you possess}, with the same type you chose for elemental rage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]. Elemental Explosion gains the trait of your element.</p>",
       "featPrerequisites": {
         "0": "elemental instinct"
       },
