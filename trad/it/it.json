@@ -2906,7 +2906,8 @@
                     "Description": "Forse è una condizione curabile.",
                     "Name": "Disintegrato"
                 },
-                "Plural": "Effetti"
+                "Plural": "Effetti",
+                "Looping": "Ripeti dall'inizio?"
             },
             "Feat": {
                 "OnlyLevel1": "Deve essere selezionato al 1° livello",
@@ -7287,7 +7288,9 @@
             "Dance": "Per Ballare",
             "Moist": "In Ambienti Umidi",
             "Rocky": "Su Terreno Roccioso",
-            "TrackHalfHealth": "A Seguire Tracce di una Creatura Ridotta a Metà o Meno dei Suoi PF"
+            "TrackHalfHealth": "A Seguire Tracce di una Creatura Ridotta a Metà o Meno dei Suoi PF",
+            "Moonlight": "Al Chiaro di Luna",
+            "FullMoon": "Luna Piena"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -7497,7 +7500,13 @@
                 "Rune": "Seleziona una Runa.",
                 "Alignment": "Seleziona un allineamento.",
                 "Shield": "Seleziona uno scudo.",
-                "Resistance": "Seleziona una resistenza."
+                "Resistance": "Seleziona una resistenza.",
+                "Item": "Seleziona un oggetto.",
+                "UntamedForm": "Seleziona un effetto forma.",
+                "Tradition": "Seleziona una tradizione.",
+                "Form": "Seleziona una forma.",
+                "Sanctification": "Seleziona una santificazione.",
+                "LevelOneAncestryFeat": "Seleziona un talento di stirpe di 1° livello."
             },
             "SneakAttack": "Attacco Furtivo",
             "SpecialtyCrafting": {
@@ -7668,6 +7677,9 @@
                 },
                 "ScaldingSpit": {
                     "BoilingSpit": "Sputo Bollente"
+                },
+                "CityScavenger": {
+                    "EarnIncome": "Rovistatore Urbano - Guadagnare"
                 }
             },
             "VirtuosicPerformer": {
@@ -7719,6 +7731,9 @@
                 },
                 "ForgeBlessedShot": {
                     "Note": "Ignori la condizione @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato}, nonché la copertura minore, standard e superiore del tuo bersaglio."
+                },
+                "StrongBloodedDwarf": {
+                    "Note": "Ogni successo dei tuoi tiri salvezza contro un veleno riduce la sua fase di 2, o di 1 per un veleno virulento. Ogni successo critico riduce la sua fase di 3, o di 2 per un veleno virulento."
                 }
             },
             "Oracle": {
@@ -7845,6 +7860,12 @@
                     "Maestro": "Virtuosismo",
                     "Polymath": "Eclettismo",
                     "Warrior": "Combattente"
+                },
+                "TriumphantInspiration": {
+                    "Note": "Con un urlo trionfale, ispiri i tuoi alleati. Lanci un trucchetto di composizione che conosci e che normalmente richiede un'azione singola per essere lanciato."
+                },
+                "DiscordantVoice": {
+                    "Label": "Voce Discordante"
                 }
             },
             "BonusLabel": {
@@ -7880,6 +7901,32 @@
                 },
                 "ReplenishmentOfWar": {
                     "Note": "Quando danneggi una creatura Colpendo con l'arma preferita della tua divinità, ottieni un numero di Punti Ferita temporanei pari a metà del tuo livello, o pari al tuo livello se metti a segno un colpo critico. @UUID[Compendium.pf2e.feat-effects.Item.BJc494USeyM011p3]{Effetto: Sostegno in Battaglia}"
+                },
+                "DeitysProtection": {
+                    "Description": "Dopo aver lanciato un incantesimo di dominio, acquisisci resistenza a tutti i danni fino all'inizio del tuo turno successivo. L'ammontare della resistenza è pari al livello dell'incantesimo di dominio che lanci."
+                },
+                "DivineInfusion": {
+                    "Note": "Il bersaglio infligge danni aggiuntivi con le sue armi da mischia e gli attacchi senz'armi fino alla fine del suo turno successivo. Il tipo di danno è negativo se hai lanciato <em>ferire</em> e positivo se hai lanciato <em>guarire</em>. @UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{Effetto: Infusione Divina}"
+                },
+                "DivineFont": {
+                    "Harmful": "Ferimento",
+                    "Healing": "Guarigione",
+                    "Prompt": "Seleziona una Sorgente Divina."
+                },
+                "CommunalHealing": {
+                    "Note": "Quando lanci l'incantesimo <em>guarire</em> per curare una singola creatura, scegli un'altra creatura vivente consenziente nel raggio di <em>guarire</em> per farle recuperare @Damage[@item.rank[vitality,healing]|shortLabel] Punti Ferita."
+                },
+                "CremateUndead": {
+                    "Note": "Ogni non morto che subisca danni da un tuo incantesimo <em>guarire</em> subisce anche @Damage[(@item.rank)[persistent,fire]]{danni da fuoco persistenti pari al livello dell'incantesimo}."
+                },
+                "SapLife": {
+                    "Note": "Quando lanci un incantesimo <em>ferire</em> e infliggi danni ad almeno una creatura vivente, recuperi [[/r (@item.rank)[healing]]] Punti Ferita."
+                },
+                "CastigatingWeapon": {
+                    "Note": "Dopo aver inflitto danni spirituali con Castigo Sacro, la tua arma o i tuoi Colpi senz'armi ottengono il tratto sacro o sacrilego e infliggono danni spirituali aggiuntivi fino alla fine del tuo turno. @UUID[Compendium.pf2e.feat-effects.Item.BTI4obxa5UmNltyU]{Effetto: Arma del Castigo}"
+                },
+                "DirectedChannel": {
+                    "ItemAlterationNote": "Puoi rendere l'area un @Template[type:cone|distance:60]{cono di 18 metri} anziché un'emanazione."
                 }
             },
             "Conrasu": {
@@ -7952,6 +7999,12 @@
                 },
                 "HolyWater": {
                     "Note": "Può danneggiare soltanto creature con il tratto sacrilego."
+                },
+                "UnholyWater": {
+                    "Note": "Danneggia soltanto creature con il tratto sacrilego."
+                },
+                "FightersFork": {
+                    "FluidLengthLabel": "Forcone del Guerriero — Lunghezza Liquida"
                 }
             },
             "Fetchling": {
@@ -8013,7 +8066,8 @@
                 "SharedLuck": {
                     "GuidingLuck": "Non puoi utilizzare l'effetto di Guidato dalla Fortuna che si applica ai tiri per colpire e alle prove di Percezione per usare Fortuna Condivisa per conferire benefici a un alleato.",
                     "Base": "Puoi usare Fortuna Halfling quando un alleato entro 9 metri fallisce una prova di abilità o un tiro salvezza per permettere all'alleato di ripetere la prova innescante anziché permetterti di ripetere la tua prova fallita. Come di consueto, il tuo alleato deve usare il nuovo risultato, anche se è peggiore rispetto al suo primo tiro."
-                }
+                },
+                "GuidingLuck": "Puoi utilizzare Fortuna Halfling due volte al giorno: una volta come risposta al suo normale innesco e una volta quando fallisci una prova di Percezione o un tiro per colpire, al posto del normale innesco."
             },
             "Hobgoblin": {
                 "AgonizingRebuke": {
@@ -8111,7 +8165,11 @@
                     "Axe": "Ascia (Ascia o Piccone).",
                     "Shield": "Scudo (Martello o Scudo).",
                     "Torch": "Torcia (Bomba o Coltello).",
-                    "Prompt": "Scegli l'emblema del marchio del possedimento."
+                    "Prompt": "Scegli l'emblema del marchio del possedimento.",
+                    "DeathsHead": "Testa della Morte",
+                    "BurningSun": "Sole Bruciante",
+                    "DefiledCorpse": "Cadavere Profanato",
+                    "EmptyHand": "Mano Vuota"
                 },
                 "OrcWarmask": {
                     "Gods": "Gli Dei",
@@ -8210,6 +8268,9 @@
             "Fighter": {
                 "DoubleSlice": {
                     "SecondAttackLabel": "Secondo Attacco Doppio Taglio"
+                },
+                "DazingBlow": {
+                    "Note": "Se il Colpo va a segno, la creatura deve tentare un tiro salvezza su @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation] contro la tua CD di classe; questo è un effetto di incapacitazione.</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non viene influenzata.</p>\n<p><strong>Successo</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordita 1}.</p>\n<p><strong>Fallimento</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordita 2}.</p>\n<p><strong>Fallimento Critico</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordita 3}."
                 }
             },
             "DivineAlly": {
@@ -8387,7 +8448,8 @@
                     },
                     "Weapon": {
                         "Prompt": "Seleziona un'innovazione arma."
-                    }
+                    },
+                    "MalfunctionDamage": "Innovazione Malfunzionante"
                 },
                 "OffensiveBoost": {
                     "Spike": "Spuntoni (Perforante)",
@@ -8508,6 +8570,12 @@
                 },
                 "PeerBeyond": {
                     "Note": "Puoi tirare Sapienza degli Spiriti o Sapienza sulle Infestazioni come iniziativa se sai che un non morto Incorporeo o un'infestazione sono presenti."
+                },
+                "CharmingLiar": {
+                    "Note": "Quando ottieni un successo critico utilizzando l'azione Mentire, l'atteggiamento del bersaglio nei tuoi confronti migliora di un passo, come se avessi superato una prova di Diplomazia per Impressionare."
+                },
+                "Forager": {
+                    "Note": "Quando utilizzi Sopravvivenza per Sopravvivere, se il risultato del tiro di dado non è tale da costituire un successo, ottieni comunque un successo. Riesci a provvedere al tuo sostentamento e a quello di altre quattro creature."
                 }
             },
             "RelicGift": {
@@ -8610,13 +8678,25 @@
                 },
                 "UneasyRest": {
                     "Description": "Quando lanci sonno, puoi modificare l'incantesimo per aggiungere il seguente effetto a quelli consueti: Chi è soggetto al tuo incantesimo fa brutti sogni. Quando si sveglia, un bersaglio che ha ottenuto un fallimento o fallimento critico nel TS è @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 1}."
+                },
+                "SiphoningHand": {
+                    "Description": "Quando lanci tocco del vampiro, puoi modificarne gli effetti consueti come segue: Anziché ottenere tu i Punti Ferita temporanei, puoi concederli a un alleato entro 9 metri. Quest'ultimo perde qualsiasi Punti Ferita temporanei rimanente dopo 1 minuto."
                 }
             },
             "SpellHeightened": {
                 "HeightenedFourth": "Intensificato (4°)",
                 "HeightenedPlusOne": "Intensificato (+1)",
                 "HeightenedPlusTwo": "Intensificato (+2)",
-                "HeightenedThird": "Intensificato (3°)"
+                "HeightenedThird": "Intensificato (3°)",
+                "HeightenedFifth": "Intensificato (5°)",
+                "HeightenedNinth": "Intensificato (9°)",
+                "HeightenedSecond": "Intensificato (2°)",
+                "HeightenedPlusThree": "Intensificato (+3)",
+                "HeightenedSeventh": "Intensificato (7°)",
+                "HeightenedSixth": "Intensificato (6°)",
+                "HeightenedEighth": "Intensificato (8°)",
+                "HeightenedPlusFour": "Intensificato (+4)",
+                "HeightenedTenth": "Intensificato (10°)"
             },
             "LitItem": "{item} è acceso",
             "SoulWarden": {
@@ -8679,7 +8759,16 @@
                     "Note": "Ogni volta che superi un TS su Tempra contro un veleno in corso, riduci la sua fase di 2, o di 1 per un veleno virulento. Ogni successo critico che ottieni contro un effetto di veleno in corso riduce la sua fase di 3, o di 2 per un veleno virulento."
                 }
             },
-            "ItemStrike": "Colpo {item}"
+            "ItemStrike": "Colpo {item}",
+            "BloodlettingKukri": {
+                "Note": "Se il bersaglio non possedeva già danno da danni da sanguinamento persistenti quando hai ottenuto il colpo critico, ottieni anche [[/r 1d8]] Punti Ferita temporanei."
+            },
+            "ContinualRecovery": {
+                "Note": "Quando Curi Ferite, il tuo paziente ne diviene immune per soli 10 minuti invece di 1 ora. Questo effetto si applica solo alle tue attività per Curare Ferite, e non a quelle degli altri."
+            },
+            "DubiousKnowledge": {
+                "Note": "Quando fallisci (ma che non sia un fallimento critico) una prova per Ricordare Conoscenze, usando un'abilità qualsiasi, apprendi la risposta corretta e una risposta errata, ma non hai modo di distinguere tra l'una e l'altra."
+            }
         },
         "LevelRange": "Livelli {minLevel} - {level}",
         "BrowserWarnPackNotLoaded": "Non è stato possibile caricare il compendio \"{pack}\".",
@@ -9206,7 +9295,13 @@
         "TraitVitality": "Positivo",
         "TraitMetal": "Metallo",
         "ArmorPropertyRuneSizeChanging": "Cambia Taglia",
-        "ArmorPropertyRuneRaiment": "Mascheramento"
+        "ArmorPropertyRuneRaiment": "Mascheramento",
+        "TraitDescriptionClimbing": "La mano che sta impugnando l'arma è disponibile per Scalare.",
+        "TraitAffixedToMetalWeapon": "Applicato a un'Arma in Metallo",
+        "TraitAffixedToAShieldOrWeapon": "Applicato a un'Arma o uno Scudo",
+        "TraitDescriptionVoid": "Gli effetti con questo tratto curano le creature non morte con energia negativa, infliggono danni negativi alle creature viventi o manipolano l'energia negativa.",
+        "TraitSubjectiveGravity": "Gravità Soggettiva",
+        "TraitDescriptionVitality": "Gli effetti di questo tratto curano le creature viventi con energia dalla Forgia della Creazione, infliggono danni da energia positiva ai non morti o manipolano l'energia positiva."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
