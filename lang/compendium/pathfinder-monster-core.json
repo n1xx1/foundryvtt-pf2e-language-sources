@@ -1143,6 +1143,40 @@
       "npcAllSaves": "+1 status to all saves vs. magic",
       "npcHp": "fast healing 15"
     },
+    "Banshee": {
+      "description": "<p>Banshees are the furious, tormented souls of those bound to the world by a betrayal that defined the final hours of their lives. Some banshees arise from those who were slain by trusted friends and allies, or whose loved ones betrayed them on their deathbeds. Others spawn from those whose treacherous deeds shortly before their deaths left a stain upon their souls. Regardless of their origin, banshees despise the living. This hatred of life is all too often a horrific inversion of their personalities in life. Some speculate that the more kind-hearted the person (and the more wrenching the betrayal), the crueler the banshee.</p>\n<p>Banshees rarely stray far from where they perished and typically haunt thick forests and canopied swamps where little light graces the ground. Many banshees are elves and can be found in the elven nation of Kyonin, specifically in Tanglebriar, the sinister domain of the demon Treerazer. Similarly, a large number of banshees can be found lurking in the frozen wastes in northern Avistan, created from a cruel and widespread betrayal that is centuries old.</p>",
+      "items": {
+        "Tph2HlfD7An1YiKs": {
+          "description": "<p>When a banshee Strides at least 10 feet, they're @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} until the start of their next turn.</p>",
+          "name": "Spectral Ripple"
+        },
+        "XF5b5q7FRowlzTG5": {
+          "description": "<p>The banshee unleashes a soul-chilling @UUID[Compendium.pf2e.spells-srd.Item.FEsuyf203wTNE2et]{Wails of the Damned} (@Check[type:will|dc:38|traits:void|options:damaging-effect,item:type:spell], @Damage[8d10[void]]). This Wail overcomes silence and similar effects of 5th rank or lower. The banshee can instead use Wail as a three-action activity to overcome such effects of up to 8th rank.</p>\n<p>The banshee's Wail resonates for 1 round, and any creature that comes within the area during that time must attempt a save against the effect. A creature can't be affected more than once by the same Wail. The banshee can't Wail again for [[/gmr 1d4 #Recharge Wail]] rounds.</p>",
+          "name": "Wail"
+        },
+        "cXH3rtQJHLu0xATa": {
+          "description": "<p>The banshee can hear heartbeats within 60 feet of it as an imprecise sense.</p>",
+          "name": "Hears Heartbeats"
+        },
+        "gqEF4zsvNcNJ7MVP": {
+          "description": "<p>A banshee in sunlight is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>",
+          "name": "Sunlight Powerlessness"
+        },
+        "i86nIQHO0OYhOwn1": {
+          "description": "<p><strong>Trigger</strong> A foe critically hits the banshee, or the banshee critically fails their save against a foe's damaging effect</p>\n<hr />\n<p><strong>Effect</strong> The banshee lashes back at their tormentor, dealing @Damage[(4d10+14)[mental]] damage with a @Check[type:will|dc:38|basic:true] save and applying the effects of terrifying touch based on the results of the same Will save.</p>",
+          "name": "Vengeful Spite"
+        },
+        "n9emNHUVKTSFk58a": {
+          "name": "Hand"
+        },
+        "pGFt8iou5QIqqqnJ": {
+          "description": "<p>A creature damaged by the banshee's touch that isn't already frightened must attempt a @Check[will|dc:38] save (@Check[will|dc:43] if the attack was a critical hit). If the creature fails its save, it's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}; on a critical failure, the creature also cowers with fear and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 4}. If the creature is protected against fear by a spell or magic item, the banshee's touch first attempts to counteract the protection effect, with the effect of a 9th-rank @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} spell.</p>",
+          "name": "Terrifying Touch"
+        }
+      },
+      "name": "Banshee",
+      "npcHp": "void healing"
+    },
     "Barghest": {
       "description": "<p>Barghests are canine beasts that take great joy in the hunt, often lurking near humanoid settlements to find prey that can provide a suitable challenge. Even in the deepest wilderness, barghests choose the most clever or difficult prey, searching endlessly for challenges like giants, nymphs, and unicorns.</p>\n<p>More than victory or even the possibility of a meal at the end, barghests enjoy the thrill of the chase and the fear they create within their prey. Particularly terrified targets of a hunting barghest might even be allowed to escape, spreading the terror and enticing hunters who can become the barghest's next victims. A handful of barghests resort to learning magical methods of causing fear directly, though they find such fear hollow and unsatisfying.</p>\n<p>Although they rarely tolerate the competition of another barghest's presence, these hunters will happily work with anyone who helps them find prey to torment and kill. This often involves enforcing the will of hags or particularly cruel fey, but a bored barghest might also force a family of weaker humanoids to work as scouts and bait.</p>\n<p>Typical barghests often make use of their shapechanging abilities to hide in plain sight, only taking their true forms to frighten their prey and exult in the hunt. However, they are often still exposed by their trail of victims or the curiously unhealing wounds they inflict, even in humanoid form. Tales of powerful barghests with invisible heads are sometimes told in remote and dwindling villages. These barghests generally dispense with hiding as a humanoid or dog, instead terrifying entire communities and openly hunting increasingly dangerous prey. Some also extend this pride to their intellect, insisting on matching wits with their prey or even with those who believe they're hunting the barghest.</p>",
       "items": {
@@ -13492,7 +13526,7 @@
           "name": "Bloodbird"
         },
         "GWKCP70pS87RXrFP": {
-          "description": "<p>30 feet @Check[type:will|dc:35]</p>\n<p>As frightful presence, plus a creature frightened by the aura becomes suspicious; it doesn't count any other creature as its ally and can't Aid or flank. On a critical failure, the creature also can't be a willing target for harmless or helpful magic.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>",
+          "description": "<p>30 feet. @Check[type:will|dc:35]</p>\n<p>As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}, plus a creature frightened by the aura becomes suspicious; it doesn't count any other creature as its ally and can't @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} or flank. On a critical failure, the creature also can't be a willing target for harmless or helpful magic.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3oF2DVXCmJ7VloBb]{Effect: Aura of Disquietude}</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>",
           "name": "Aura of Disquietude"
         },
         "KJRA38LAe9tJK0hJ": {
