@@ -78,7 +78,7 @@
       "description": "<p>A whirling tornado of spectrally propelled glass and steel slices whatever it touches to ribbons.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:35|name:Adjust Blades|traits:action:disable-a-device] (master) to precisely adjust the blades so that they destroy each other, or @Check[type:religion|dc:38|name:Weaken the Haunt] (expert) to weaken the haunt; four successes are required to disable it</p>",
       "hazardReset": "<p>The haunt draws jagged shards back into its area over the course of an hour, after which it can trigger again.</p>",
-      "hazardRoutine": "<p>(3 actions) The tornado of blades uses 3 actions to move, traveling up to 30 feet with each action and dealing 2d10+10 slashing damage. Each creature in its path must attempt a @Check[type:reflex|dc:33].</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage plus @Damage[1d10[bleed]].</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and @Damage[1d10[bleed]]. It also becomes @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded 1} (or increases its wounded value by 1, if it is already wounded).</p>\n<p>Each successful check to disable this hazard reduces the haunt's movement by 30 feet, and the fourth success disables it completely.</p>",
+      "hazardRoutine": "<p>(3 actions) The tornado of blades uses 3 actions to move, traveling up to 30 feet with each action and dealing @Damage[(2d10+10)[slashing]] damage. Each creature in its path must attempt a @Check[type:reflex|dc:33].</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage plus @Damage[1d10[bleed]].</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and @Damage[1d10[bleed]]. It also becomes @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded 1} (or increases its wounded value by 1, if it is already wounded).</p>\n<p>Each successful check to disable this hazard reduces the haunt's movement by 30 feet, and the fourth success disables it completely.</p>",
       "name": "Flensing Blades"
     },
     "Frozen Moment": {
@@ -154,7 +154,7 @@
       "description": "<p>A host of violent spirits possess three clockwork mannequins, and each lashes out at any creatures that dare walk near.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:37|name:Jam a mannequin's clockwork mechanisms|traits:clockwork,haunt,mechanical,hazard]{Thievery (master)} to jam a mannequin's clockwork mechanisms or a @Check[type:religion|dc:35|name:Exorcise a spirit from a mannequin|traits:clockwork,haunt,mechanical,hazard]{Religion (expert)} twice to exorcise a spirit from a mannequin.</p>",
       "hazardReset": "<p>The haunt deactivates after it has no target creatures and resets, usually over the course of 1 round, as the mannequins move to their original positions. If a mannequin is more than 150 feet from its original position, the haunt takes longer to reset, as the mannequin moves back 150 feet each round.</p>",
-      "hazardRoutine": "<p><strong>Routine</strong> (9 actions) Each of the mannequins uses three of the haunt's actions on each turn, and the haunt loses three actions each turn for every disabled or destroyed mannequin. Each mannequin uses its first action to Stride up to 50 feet and its remaining two actions to make clockwork fist Strikes. Each has its own separate multiple attack penalty.</p>",
+      "hazardRoutine": "(9 actions) Each of the mannequins uses three of the haunt's actions on each turn, and the haunt loses three actions each turn for every disabled or destroyed mannequin. Each mannequin uses its first action to Stride up to 50 feet and its remaining two actions to make clockwork fist Strikes. Each has its own separate multiple attack penalty.</p>",
       "name": "Malevolent Mannequins"
     },
     "Perilous Flash Flood": {
@@ -291,7 +291,7 @@
     },
     "Vorpal Executioner": {
       "description": "<p>A wickedly sharp saw blade descends and travels along grooves in a complex path throughout the room, attempting to decapitate everyone within.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:41|name:Jame Saw Blade|traits:action:disable-a-device] (expert) at four different junctions to jam all the saw blade's possible paths, preventing it from traveling through the room</p>",
+      "hazardDisable": "<p>@Check[type:thievery|dc:41|name:Jam Saw Blade|traits:action:disable-a-device] (expert) at four different junctions to jam all the saw blade's possible paths, preventing it from traveling through the room</p>",
       "hazardReset": "<p>The trap resets over the course of the round and can be triggered again 1 round later.</p>",
       "name": "Vorpal Executioner"
     },
