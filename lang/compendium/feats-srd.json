@@ -2752,6 +2752,10 @@
       "description": "<p>Augmenting your eidolon extends to creatures you summon. When you cast <em>boost eidolon</em>, in addition to your eidolon, it also targets your summoned creatures within 60 feet.</p>",
       "name": "Boost Summons"
     },
+    "Born to the Trees": {
+      "description": "<p>You adapt a creature to live among the trees, improving its ability to climb, balance, and leap. Target a willing creature within 30 feet. For 10 minutes, it gains a climb Speed equal to its Speed and a +1 circumstance bonus to Acrobatics checks to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} and Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump} and @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump}. When it Leaps, it increases the distance it can @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} horizontally by 5 feet and vertically by 2 feet. If you use Born to the Trees again, any existing one ends.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.uaWIJU1m2eHgfkDp]{Effect: Born to the Trees}</p>\n<hr />\n<p><strong>Level (6th)</strong> You can target up to 5 willing creatures.</p>",
+      "name": "Born to the Trees"
+    },
     "Borrow Memories": {
       "description": "<p>Knowing how someone thinks makes it much easier to know where they'll be, or even replace them altogether. You can cast @UUID[Compendium.pf2e.spells-srd.Item.9BnhadUO8FMLmeZ3]{Mind Probe} as an innate occult spell once per day, using your class DC or spell DC, whichever is higher.</p>\n<p>If you cast <em>mind probe</em> on a target you're studying for the purpose of Assuming their Role, and the target fails their save, you can delay the spell from coming into effect until you Assume their Role. When you use the spell this way, you can Sustain it up to 10 times during its duration, asking a question each time. The spell lasts until you ask all 10 questions or are no longer Assuming the Role, whichever comes first. You don't need to Sustain the Spell to extend its duration-only when asking a question-nor do you need to be in range or have line of effect to Sustain it.</p>",
       "featPrerequisites": {
@@ -3378,6 +3382,13 @@
     "Cauldron": {
       "description": "<p>You can brew magic in your cauldron, creating useful magical concoctions. You can use the Craft activity to create oils and potions. You immediately gain the formulas for four common 1st-level oils or potions. At 4th level and every 2 levels beyond that, you gain the formula for a common oil or potion of that level or lower (a 4th-level potion if you're 4th level, a 6th-level potion if you're 6th level, and so on). If you have a familiar, you can have your familiar learn these formulas rather than storing them in a formula book. Your familiar can learn new formulas in the same way it learns new spells, and these formulas are transferred from a slain familiar to a new familiar in the same way spells are.</p>\n<p>During your daily preparations, you can create one temporary oil or potion using a formula you know. If you have master proficiency in spell DC, you can create a batch of two temporary oils or potions during your daily preparations, and if you have legendary proficiency, you can create a batch of three. Any items you create this way become inert bottles of liquid the next time you make your daily preparations, and any remaining effects of the temporary items end. A temporary oil or potion has no value.</p>",
       "name": "Cauldron"
+    },
+    "Caustic Nectar": {
+      "description": "<p>You have specialized glands inside your throat, which produce acidic nectar that you can spit long distances. You gain a nectar ranged unarmed attack with a range increment of 20 feet that deals 1d4 acid damage. On a critical hit, the target is additionally @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. Your nectar doesn't add critical specialization effects. You're immune to your own nectar.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "ardande trait, plant trait, or wood trait"
+      },
+      "name": "Caustic Nectar"
     },
     "Cauterize": {
       "description": "<p><strong>Requirements</strong> You're wielding a loaded firearm and you or an adjacent ally are taking persistent bleed damage.</p>\n<hr />\n<p>You use the smoking barrel of your firearm to sear shut a bleeding wound. Make a Strike with your firearm. You then press the heated barrel to the wounds of you or an ally within reach that is taking persistent bleed damage, giving an immediate flat check to end the bleed with the lower DC for particularly effective assistance.</p>",
@@ -5127,6 +5138,10 @@
       },
       "name": "Defensive Coordination"
     },
+    "Defensive Growth": {
+      "description": "<p><strong>Trigger</strong> You're the target of a physical attack.</p>\n<hr />\n<p>You grow a shield of woven flowers and branches, then Raise that Shield to defend yourself from the triggering attack. If you would take damage from the attack, you immediately @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block}. This is a @UUID[Compendium.pf2e.equipment-srd.Item.ezVp13Uw8cWW08Da]{Wooden Shield} (Hardness 3, HP 12, BT 6). The shield remains in your possession for a number of rounds equal to your level, or until it's destroyed.</p>\n<p><strong>Awakening</strong> The shield becomes stronger. It has Hardness 5, HP 40, BT 20.</p>\n<p><strong>Awakening</strong> The shield takes on a mind of its own and lashes out vengefully when destroyed. When the shield is destroyed, is explodes, dealing @Damage[4d6[piercing]] damage to your attacker, with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>",
+      "name": "Defensive Growth"
+    },
     "Defensive Instincts": {
       "description": "<p><strong>Requirements</strong> you are adjacent to at least two enemies</p>\n<hr />\n<p>Your body tenses up when surrounded, putting you on edge just enough to anticipate an attack. You gain a +1 circumstance bonus to AC until the beginning of your next turn and Step.</p>",
       "name": "Defensive Instincts"
@@ -5607,6 +5622,10 @@
         "0": "Spellstrike"
       },
       "name": "Dispelling Spellstrike"
+    },
+    "Disperse Into Petals": {
+      "description": "<p>You merge with the blossoms sprouting from you and disperse, becoming a visible cloud of blossoms and petals. You're amorphous. You lose any item bonus to AC and all other effects and bonuses from armor, and you use your proficiency modifier for unarmored defense. You gain resistance to physical damage equal to half your level and are immune to precision damage. You can't cast spells, activate items, or use actions that have the attack or manipulate trait. You gain a fly Speed of 10 feet. You can remain in this form for up to 1 minute. You can Dismiss this effect.</p>\n<p><strong>Awakening</strong> You can maintain your form for a longer time. You can remain in this form for up to 1 hour.</p>\n<p><strong>Awakening</strong> You've learned to harm others, even while in your blossom state. You can occupy the same space as someone else. While occupying someone else's space, you can spend 1 action to spin around in a vortex of blossoms, dealing @Damage[(floor(@actor.level/5)d4)[slashing]]{1d4 slashing} damage for every 5 levels you have to the creature, with a basic Reflex save.</p>",
+      "name": "Disperse Into Petals"
     },
     "Disrupt Ki": {
       "description": "<p>Make an unarmed Strike. If it deals damage to a living creature, you block that creature's inner life force.</p>\n<p>The creature takes @Damage[2d6[persistent,void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the persistent damage ends.</p>\n<p>If you're 18th level or higher, this deals @Damage[3d6[persistent,void]] damage instead.</p>",
@@ -10135,6 +10154,13 @@
       },
       "name": "Grovel"
     },
+    "Grow Tool": {
+      "description": "<p>You grow a simple tool from your own body, coaxing flowers, vines, roots, and wood to grow and sprout from your flesh into the desired shape. You create a one level 0 common simple tool with no intricate parts or written text, such as a crowbar, rope, or shovel. You can't replicate a tool kit or weapon with this ability. This item lasts for 1 minute, or until you create another tool with this ability, whichever comes first. When duration runs out, the item crumbles to mulch.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "ardande trait, plant trait, or wood trait"
+      },
+      "name": "Grow Tool"
+    },
     "Grown of Oak": {
       "description": "<p>You can make your skin take on the woody endurance of an ancient tree and have your familiar follow suit. You can cast @UUID[Compendium.pf2e.spells-srd.Item.YWrfKetOqDwVFut7]{Oaken Resilience} at will as an innate primal spell with a spell rank one lower than the highest rank of spells you can cast. This spell targets you, as well as your leshy familiar if it's within 30 feet of you.</p>",
       "featPrerequisites": {
@@ -11980,6 +12006,10 @@
       },
       "name": "Ironblood Surge"
     },
+    "Irradiate": {
+      "description": "<p>You exude an aura of radiation, making everyone around you ill. All creatures in a @Template[type:emanation|distance:15] must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. On a critical failure, they're also @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for 1 minute. You're immune to your own radiation. The value of this sickened condition increases by 1 for every 5 levels you have beyond 6th.</p>\n<p><strong>Awakening</strong> You become more efficient at exuding this aura of radiation. The radius of the emanation becomes @Template[type:emanation|distance:60]{60 feet}.</p>\n<p><strong>Awakening</strong> Your radiation becomes more potent. Creatures in the area take an additional @Damage[(floor(@actor.level/2))d4[poison]]{1d4 poison} damage for every 2 levels you have, with a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save (roll this Fortitude save once and apply it to both the damage and the sickened condition).</p>",
+      "name": "Irradiate"
+    },
     "Irrepressible (Ganzi)": {
       "description": "<p>Your contrary nature means you bounce back with prejudice. When you roll a success on a save against an emotion or fear effect, you get a critical success instead.</p>",
       "name": "Irrepressible (Ganzi)"
@@ -11987,6 +12017,13 @@
     "Irrepressible (Halfling)": {
       "description": "<p>You are easily able to ward off attempts to play on your fears and emotions. When you roll a success on a saving throw against an emotion effect, you get a critical success instead. If your heritage is gutsy halfling, when you roll a critical failure on a saving throw against an emotion effect, you get a failure instead.</p>",
       "name": "Irrepressible (Halfling)"
+    },
+    "Irresistible Bloom": {
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You bloom, sprouting flowers and releasing a pleasant smell, becoming irresistible. All creatures in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save with a DC equal to your Class DC or Spell DC, whichever is higher. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you, and must spend at least one of its actions on its next turn moving toward you. On a critical failure, you acting hostile to that creature allows them to attempt another save, rather than automatically ending the fascination.</p>\n<p>These effects last until the beginning of your next turn. You can spend one action at the beginning of your turn to Sustain the effects for an additional round. You can Sustain it in this way for a maximum of 1 minute.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "ardande trait, plant trait, or wood trait"
+      },
+      "name": "Irresistible Bloom"
     },
     "Irresistible Magic": {
       "description": "<p>You've studied ways of overcoming the innate defenses against magic that dragons, otherworldly beings, and certain other powerful creatures have. Any creature that has a status bonus to saving throws against magic reduces that bonus by 1 against your spells.</p>",
@@ -15015,6 +15052,13 @@
       },
       "name": "One with the Land"
     },
+    "One with the Wild": {
+      "description": "<p>You naturally blend in with the wilderness, becoming camouflaged. In natural terrain, you can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} even without cover or being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "Wilderness Born"
+      },
+      "name": "One with the Wild"
+    },
     "One-Inch Punch": {
       "description": "<p>You put all your force into a single mighty, carefully controlled blow. Make an unarmed Strike. If you spend two actions and this Strike hits, you deal an extra die of weapon damage. You can instead spend 3 actions to perform an even more powerful attack, dealing a second additional die of weapon damage on a hit.</p>\n<p>If you're at least 10th level, the number of additional dice you add from this feat doubles, for a total of 2 additional dice if you spend 2 actions or 4 additional dice if you spend 3 actions.</p>\n<p>If you're at least 18th level, the number of additional dice you add from this feat triples, for a total of 3 additional dice if you spend 2 actions or 6 additional dice if you spend 3 actions.</p>",
       "featPrerequisites": {
@@ -16066,6 +16110,13 @@
       },
       "name": "Polearm Tricks"
     },
+    "Pollinate": {
+      "description": "<p><strong>Trigger</strong> You take bludgeoning damage.</p>\n<hr />\n<p>As you're hit, you emit a dense cloud of pollen, obscuring you from sight. You become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} until the beginning of your next turn.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "ardande trait, plant trait, or wood trait"
+      },
+      "name": "Pollinate"
+    },
     "Portentous Spell": {
       "description": "<p>Your spellcasting is rife with strange lights, esoteric gestures, and other captivating effects that befuddle your foes.</p>\n<p>If the next action you use is to Cast a Spell, any creature that attempts to use a reaction triggered by your Cast a Spell activity takes a -2 circumstance penalty to attack rolls and skill checks rolled as part of the reaction.</p>\n<p>In addition, if the spell includes a spell attack roll or requires a saving throw, creatures you hit or that fail their saves are @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you until the start of your next turn.</p>",
       "name": "Portentous Spell"
@@ -16087,6 +16138,13 @@
         "0": "Bounty Hunter Dedication"
       },
       "name": "Posse"
+    },
+    "Potent Nectar": {
+      "description": "<p>Your nectar becomes particularly dangerous. Select one of the following benefits when you gain this feat. This choice is permanent and can't be changed.</p>\n<ul>\n<li>Your nectar is sticky, and clings to your target. Your nectar unarmed attack deals an additional 1d4 persistent acid damage to the target. This persistent damage isn't multiplied on a critical hit.</li>\n<li>Your nectar is shot at a high velocity, and splashes upon contact. Your nectar unarmed attack additionally deals 1d4 acid splash damage. This splash damage isn't multiplied on a critical hit.</li>\n</ul>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "Caustic Nectar"
+      },
+      "name": "Potent Nectar"
     },
     "Potent Poisoner": {
       "description": "<p>By concentrating your poisons' toxic components, you make them harder for victims to resist. When you craft an alchemical item with the poison trait by any means, the DC is increased by up to 4, to a maximum of your class DC.</p>",
@@ -16692,6 +16750,13 @@
     "Quick Reversal": {
       "description": "<p><strong>Requirements</strong> You are flanked by at least two enemies.</p>\n<hr />\n<p>You turn your foes' flanking against them with a quick reverse. Make a melee Strike against one of the flanking enemies and make a second Strike with the same weapon or unarmed attack against a different enemy that is flanking you. This second Strike has the same multiple attack penalty of the initial attack and doesn't count toward your multiple attack penalty.</p>",
       "name": "Quick Reversal"
+    },
+    "Quick Root": {
+      "description": "<p><strong>Trigger</strong> A creature successfully Shoves or Trips you, or you fail a saving throw against an effect that would move you or knock you @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p>You react instinctively, sprouting roots from your legs and plunging them deep into the ground to keep your footing. If a force would move you, you move half that distance, to a minimum of 5 feet. If you would be knocked prone, resolve the effect, then you Stand.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "ardande trait, plant trait, or wood trait"
+      },
+      "name": "Quick Root"
     },
     "Quick Setup": {
       "description": "<p>You have learned to setup simple crafting jobs with ease. Your setup time for consumables that are at least 6 levels lower than you is 1 day, and your setup time for permanent items 6 levels lower than you is 3 days.</p>\n<p>If you rush the setup and reduce the setup time for consumables at least 6 levels lower than you to less than 1 day, you can instead set them up in just 2 hours (allowing you to do so during an adventuring day if you have access to your tools and materials). If you rush the setup of a permanent item at least 6 levels lower than you and reduce the setup time to less than 1 day, you can perform the setup in 4 hours.</p>",
@@ -17472,6 +17537,10 @@
       "description": "<p>You tie yourself to the Material Plane by implanting a piece of your consciousness into a weapon, piece of armor, or other item that's precious to you. As long as this object is intact, even if your body is destroyed, you can be restored to the exact state you were in the last time you made daily preparations with this object in your possession. The soulbound object can be used as a special focus for @UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{Raise Dead}, @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}, or similar magic. This warps the spell to bring you back in your skeletal undead state rather than bringing you back to life. Pharasma can't prevent you from returning when the spell is modified in this way.</p>\n<p>When you return, you permanently lose a memory that was precious to you, in addition to any other side effects of the spell that brought you back. Your soulbound object becomes inert until you spend 1 week of downtime to anchor yourself to it again, further fragmenting your mind.</p>",
       "name": "Rejuvenation Token"
     },
+    "Release Spores": {
+      "description": "<p>You create a miasma of spores. These spores fill a @Template[type:burst|distance:20] within 100 feet and remain for 1 round per level you have. All creatures within the spores become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the spores become concealed to creatures within it. You can see through the spores without difficulty. You can Dismiss the spores.</p>\n<p><strong>Awakening</strong> The spores smell disgusting. Creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} for as long as they remain in the area, plus 2 rounds.</p>\n<p><strong>Awakening</strong> The spores are toxic. The miasma deals @Damage[(floor(@actor.level/2))[poison]] damage per 2 levels you have to creatures in the area when you Release Spores, to creatures who begin their turn in the area, and to creatures who enter the area.</p>",
+      "name": "Release Spores"
+    },
     "Release the Light": {
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You're below 20 Hit Points.</p>\n<hr />\n<p>Many people report seeing a bright light before their death. You're one of these people, and at rare intervals when hope seems dim, the light exudes outward from your soul. You shed bright light in a 30-foot radius (and dim light for another 30 feet beyond that) until the end of your next turn. Enemy creatures in the area who rely on sight must attempt a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save equal to your class DC or spell DC, whichever is higher.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 2 rounds and dazzled for 1 minute.</p>",
       "name": "Release the Light"
@@ -18076,6 +18145,10 @@
         "2": "Pirate Dedication"
       },
       "name": "Rope Runner"
+    },
+    "Rotten Slurry": {
+      "description": "<p>You expel a glob of rotten, foul-smelling slurry from your torso, hand, or mouth at a foe. Make a ranged @Check[type:deviant|defense:ac]{attack roll} against a creature within 30 feet. If you succeed, the slurry deals @Damage[(floor(@actor.level/2)d4)[bludgeoning]] damage to the target for every two levels you have, or double damage on a critical success. A creature that's damaged by the attack is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical success).</p>\n<p><strong>Awakening</strong> The slurry bursts, showering bystanders. The attack deals an additional @Damage[((floor(@actor.level/4)d4)[splash])[poison]]{1d4 poison splash} damage for every four levels you have.</p>\n<p><strong>Awakening</strong> The slurry is caustic, and bores into the flesh of those it touches. The attack deals an additional @Damage[1d4[persistent,acid]] damage.</p>",
+      "name": "Rotten Slurry"
     },
     "Rough Rider": {
       "description": "<p>You are especially good at riding traditional goblin mounts. You gain the @UUID[Compendium.pf2e.feats-srd.Item.Rq5wkA8DtsmbzoGV]{Ride} feat, even if you don't meet the prerequisites. You gain a +1 circumstance bonus to Nature checks to use @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal} on a goblin dog or wolf mount.</p>\n<p>If you gain a wolf as an animal companion, it gains the mount special ability (and if you gain an ability that grants you an animal companion with the mount special ability, you can choose a wolf).</p>",
@@ -20676,6 +20749,10 @@
       "description": "<p>You can fling a portion of your magic at foes. You gain a ranged unarmed attack in the sling weapon group with a maximum range of 20 feet that deals [[/r 1d4]] damage. (No ability modifier is added to the damage roll.) The damage type and name of the unarmed attack depends on your heritage, described below; most sprite heritages not presented in this book also use luminous spark. Like other unarmed attacks, you can improve this attack with @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]{Handwraps of Mighty Blows}.</p>\n<hr />\n<p><strong>Draxie</strong> euphoric spark (mental)</p>\n<p><strong>Firefly Sprite</strong> luminous spark (fire)</p>\n<p><strong>Grig</strong> dissonant note (sonic)</p>\n<p><strong>Melixie</strong> sting shot (poison)</p>\n<p><strong>Nyktera</strong> ultrasonic pulse (sonic)</p>\n<p><strong>Pixie</strong> pixie dust (mental)</p>",
       "name": "Sprite's Spark"
     },
+    "Sprout Fruit": {
+      "description": "<p>The plants covering your body sprout a single, ripe fruit. A creature other than you who eats this fruit as a three-action activity (1 Interact action to pluck the fruit and 2 Interact actions to eat it) is healed @Damage[(floor(@actor.level/2)d4)[healing]] Hit Points for every 2 levels you have.</p>\n<p><strong>Awakening</strong> The fruit is more potent. Increase the healing from d4s to d6s (@Damage[(floor(@actor.level/2)d6)[healing]]).</p>\n<p><strong>Awakening</strong> The fruit is plentiful. You sprout one additional fruit for every 5 levels you have beyond 2. Also, those who eat a fruit may reduce a condition affecting them by 1.</p>",
+      "name": "Sprout Fruit"
+    },
     "Spy's Countermeasures": {
       "description": "<p>You've learned how to analyze and fake your responses to the most common magic used against spies. Whenever you succeed at your save against a divination or mental effect, you can Identify Magic to identify the spell as a free action triggered when you succeed, even if you didn't notice the spell being cast. If you successfully identify a divination effect targeting you and the spell would normally fail or have no effect, you can create a substitute result, causing the spell's caster to think the spell succeeded, with a result of your choice. If you successfully identify a mental effect targeting you and the spell would normally fail or have no effect, you can make it appear as if you were affected and attempt to play along with the spell; if the spell normally establishes a mental link, it functions normally but you can disregard any commands you receive through the link.</p>",
       "featPrerequisites": {
@@ -22258,6 +22335,10 @@
       "description": "<p>A massive sphere of rock explodes, unleashing a cataclysm of falling debris and deadly shrapnel. Its destruction falls in a @Template[type:burst|distance:20] within 120 feet. Creatures in the area take @Damage[9d10[bludgeoning]|traits:area-damage] damage with a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|basic:true] save against your class DC. Those who fail are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. For the next minute, rocks continue to fall, making the area difficult terrain and dealing @Damage[3d10[bludgeoning]] damage to any creature that ends its turn in the area. If you use this impulse again, any previous one ends.</p>\n<hr />\n<p><strong>Level (20th)</strong> The initial damage is @Damage[10d10[bludgeoning]], and the area damage is @Damage[4d10[bludgeoning]].</p>",
       "name": "The Shattered Mountain Weeps"
     },
+    "The Thousand Lashes of the Weeping Willow": {
+      "description": "<p>You conjure a massive willow tree, which lashes your foes with a thousand branches. The trunk of the weeping willow tree is 10-feet in diameter and appears in an unoccupied space within 500 feet. The tree whips its branches at all your enemies within a @Template[type:emanation|distance:30]{30-foot-radius emanation } centered on the willow's trunk, dealing @Damage[(10 + floor(@actor.level/20)*4)d8[slashing]] damage with a @Check[type:reflex|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.dc)|basic:true] save against your class DC. A creature that fails its save is also overcome with sorrow, becoming @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as the willow remains, as it weeps uncontrollably. The willow doesn't target you or your allies.</p>\n<p>The willow tree remains until the end of your next turn, but you can Sustain it up to 1 minute. The first time you Sustain the impulse each round, the weeping willow attacks again, dealing @Damage[floor(@actor.level/4)d8[slashing]] damage to all enemies in the area with a basic reflex save. If you use this impulse again, the previous one ends.</p>\n<hr />\n<p><strong>Level (20th)</strong> The initial damage is 14d8, and the Sustained damage is 5d8.</p>",
+      "name": "The Thousand Lashes of the Weeping Willow"
+    },
     "The Tyrant Falls!": {
       "description": "<p>You've reached the apex of the Crimson Oath's power. The oath's power is overwhelming—too much for a mortal frame—but victory is worth any price. When you use this feat, you cry out the final line of the Crimson Oath, unleashing unbridled power for 1 minute. You can Dismiss this effect. While this effect is active, you gain the following effects:</p>\n<ul>\n<li>At the beginning of each of your turns, you become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} or increase the value of your drained condition by 1 if you are already drained. You can't reduce the value of your drained condition or remove it while The Tyrant Falls! is active. While The Tyrant Falls! is active, your drained condition does not penalize your Fortitude save.</li>\n<li>You can cast @UUID[Compendium.pf2e.spells-srd.Item.AsKLseOo8hwv5Jha]{Invoke the Crimson Oath} at will without expending Focus Points. When you do, increase the area to a @Template[type:cone|distance:40].</li>\n<li>You gain resistance to all damage equal to half your character level.</li>\n<li>Any melee weapon you wield gains the reach trait if it didn't already possess it, or increases its reach by 5 feet if it already has the reach trait. Your Strikes with that weapon deal an extra 2d6 vitality or void damage (whichever is more effective against the target).</li>\n</ul>",
       "featPrerequisites": {
@@ -23171,6 +23252,10 @@
       "description": "<p>Your future is no other person's to control, and the cycles of your fate sometimes step in to protect you when that control would be taken from you. Whenever you would gain the controlled condition, you can attempt a @Check[type:flat|dc:17]. On a success, you don't gain the condition.</p>",
       "name": "Unbound Freedom"
     },
+    "Unbowed, Unbroken": {
+      "description": "<p>Your connection to elemental wood manifests as resilience—towering trees, rough bark, deep roots, and patient determination. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.KofrLYBif2QKyiqe]{Unwavering Resilience} reaction.</p>",
+      "name": "Unbowed, Unbroken"
+    },
     "Unbreakable Bond": {
       "description": "<p>You and your megafauna companion are bound together; as long as you live, it's much harder for your companion to die. If your megafauna companion gains the dying condition, it automatically succeeds at the recovery check to stabilize at 0 Hit Points on its turn. Additionally, your megafauna companion only dies at dying 5 rather than dying 4. Finally, the first time each day your megafauna companion would reach dying 5 and die, as long as you're still alive, your companion's dying value decreases to 0 instead.</p>",
       "featPrerequisites": {
@@ -23363,6 +23448,13 @@
       "description": "<p>You can allow your eidolon to travel far from your side.</p>\n<p>You learn the <em>unfetter eidolon</em> link spell. Increase the number of Focus Points in your focus pool by 1.</p>",
       "name": "Unfetter Eidolon"
     },
+    "Unfettered Growth": {
+      "description": "<p>By tapping into the limitless power of the Plane of Wood, you can experience sudden, dramatic growth for a short time. Select one of the following benefits when you gain this feat. This choice is permanent and can't be changed.</p>\n<ul>\n<li>You gain 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge} as a primal innate spell. You can cast this spell twice per day and must target yourself. The spell's duration is 30 minutes.</li>\n<li>You gain 4th-rank <em>enlarge</em> as a primal innate spell. You can cast this spell once per day and must target yourself.</li>\n</ul>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "ardande trait, plant trait, or wood trait"
+      },
+      "name": "Unfettered Growth"
+    },
     "Unfettered Halfling": {
       "description": "<p>You were either pressed into indentured servitude or shackled in a prison, but you've since escaped and have trained to ensure you'll never be caught again. Whenever you roll a success on a check to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} or a saving throw against an effect that would impose the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} condition on you, you get a critical success instead. Whenever a creature rolls a failure on a check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} you, it gets a critical failure instead.</p>",
       "name": "Unfettered Halfling"
@@ -23406,6 +23498,10 @@
         "0": "Zombie Dedication"
       },
       "name": "Unkillable"
+    },
+    "Unleash the Blight": {
+      "description": "<p>You unleash the rot infecting you, spreading the blight to those nearby. All living creatures in a @Template[type:emanation|distance:60] take @Damage[(floor(@actor.level/2)d6)[void]]{1d6 void} damage for every 2 levels you have, with a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>\n<p><strong>Awakening</strong> The blight is infectious. Creatures damaged by your blight take an additional @Damage[1d6[persistent,void]] damage, as they begin to decompose.</p>\n<p><strong>Awakening</strong> The blight is debilitating. Creatures damaged become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} for one round on a success, drained 1 for 1 minute on a failure, and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} for 1 minute on a critical failure.</p>",
+      "name": "Unleash the Blight"
     },
     "Unlimited Demesne": {
       "description": "<p>You can move your demesne here and there, bringing it wherever your journey takes you. Your demesne expands to a maximum of 10,000 square feet. Once per day, you can call your demesne forth, which takes 1 minute. This has the effects of @UUID[Compendium.pf2e.spells-srd.Item.KPDHmmjJiw7PhTYF]{Resplendent Mansion}, except that it conjures your demesne from its previous location, with all the benefits of Thaumaturge's Demesne in addition to the those of the spell. You must be able to claim the new area, with the same restrictions as Thaumaturge's Demesne.</p>",
@@ -23973,6 +24069,10 @@
         "0": "Viking Weapon Familiarity"
       },
       "name": "Viking Weapon Specialist"
+    },
+    "Vine Lash": {
+      "description": "<p><strong>Requirements</strong> You have a free hand.</p>\n<hr />\n<p>A long vine sprouts from your arm, which you can temporarily wield like a whip. Make a melee @Check[type:deviant|defense:ac]{attack roll} against a creature within 30 feet. If you succeed, the vine deals @Damage[(floor(@actor.level/2)d6)[slashing]] damage for every 2 levels you have to the target, or double damage on a success.</p>\n<p><strong>Awakening</strong> The vine coils around your foes, squeezing them lifeless. On a successful hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the vine. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} the vine is equal to your Class DC or Spell DC, whichever is higher. Each round on your turn, if the target is still grabbed, the vine squeezes them, dealing @Damage[(floor(@actor.level/2)d6)[bludgeoning]] damage for every 2 levels you have.</p>\n<p><strong>Awakening</strong> Rather than lash at your foes with a single vine, dozens of writhing vines emerge from your hands, lashing all creatures in a large area. You can use Vine Lash as a 2-action activity to damage all creatures in a @Template[type:cone|distance:30], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>",
+      "name": "Vine Lash"
     },
     "Violent Unleash": {
       "description": "<p><strong>Trigger</strong> You Unleash your Psyche.</p>\n<hr />\n<p>The force of your mind unleashing itself wracks your enemies with a violent shockwave. You deal @Damage[ceil(@actor.level/2)d6[force]|options:area-damage] damage to all creatures in a @Template[type:emanation|distance:20], with a @Check[type:reflex|basic:true]{basic Reflex save}. This explosion is taxing, making you @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At 5th level and every 2 levels thereafter, the damage increases by 1d6.</p>",
@@ -24662,6 +24762,13 @@
     "Wildborn Magic": {
       "description": "<p><strong>Access</strong> Mualijae ethnicity</p>\n<hr />\n<p>You have learned to access the old magic of wild places. Choose one cantrip from the primal spell list. You can cast this cantrip as an innate primal spell at will. A cantrip is heightened to a spell rank equal to half your level rounded up.</p>",
       "name": "Wildborn Magic"
+    },
+    "Wilderness Born": {
+      "description": "<p>You're at home in the wilderness and easily disappear into it. You gain a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} in natural terrain, and a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.fJImDBQfqfjKJOhk]{Sense Direction} in natural terrain. While in natural terrain, you're always considered to be @UUID[Compendium.pf2e.actionspf2e.Item.SB7cMECVtE06kByk]{Covering Tracks}, even if you chose a different activity in exploration mode.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait for your ancestry.</p>",
+      "featPrerequisites": {
+        "0": "ardande trait, plant trait, or wood trait"
+      },
+      "name": "Wilderness Born"
     },
     "Wilderness Spotter": {
       "description": "<p>Select one type of terrain from the following list: aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground. You can use Survival in place of Perception to roll initiative when in the selected terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter. You can also use Survival instead of Perception to notice traps in natural locations in the chosen terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
