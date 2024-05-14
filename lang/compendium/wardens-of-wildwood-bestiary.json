@@ -304,7 +304,7 @@
       "description": "<p>Animated cabinet imprisons intruders. The cabinet has two compartments; each can hold a single Medium creature or two Small-sized creatures or smaller.</p>",
       "hazardDisable": "<p>@Check[type:thievery|dc:30] (expert) twice on cabinet; @Check[type:crafting|dc:28] or @Check[type:thievery|dc:28] (expert) to remove each or two doors</p>",
       "hazardReset": "<p>The trap resets after 1 hour.</p>",
-      "hazardRoutine": "<p>(3 actions) The trap uses its first action to move directly toward the nearest living creature, its second action to make a door Strike against each adjacent creature, and its third action to Batter. This trap doesn't take a multiple attack penalty.</p>",
+      "hazardRoutine": "<p>(3 actions) The trap uses its first action to move directly toward the nearest living creature, its second action to make a door Strike against each adjacent creature, and its third action to Batter. This trap doesn't take a multiple attack penalty.</p>\n<hr>\n<p><strong>Speed</strong> 15 feet</p>",
       "name": "Consuming Cabinet"
     },
     "Corazal Aflame": {
@@ -818,6 +818,9 @@
         "GDem49OZivpzv2tI": {
           "name": "Rotting Fist"
         },
+        "LijnVEuaVXClu0pp": {
+          "name": "Entangling Flora (At Will)"
+        },
         "URQGhL7p0CoFncgs": {
           "description": "<p>A putrifer is easily overwhelmed by confusing thoughts, complex emotions, and resurfacing memories. A putrifer takes a –2 circumstance penalty to saving throws against emotion effects and treats the result of its saves against emotion effects as one degree worse.</p>",
           "name": "Emotional Vulnerability"
@@ -825,13 +828,21 @@
         "YDFWtaTYA1M2h1p4": {
           "name": "Bursting Seedpod"
         },
+        "cRlufmhxQg1Xd9av": {
+          "name": "Speak with Plants (Constant)"
+        },
         "gFXVI8BEP1J9oHz1": {
           "description": "<p>The putrifer ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>",
           "name": "Woodland Stride"
+        },
+        "jGnIlYd0hlvOKHw6": {
+          "description": "<p><strong>Trigger</strong> An adjacent creature damages the putrifer</p>\n<hr />\n<p><strong>Effect</strong> The putrifer exhales, exposing the triggering creature to noxious putrescence</p>",
+          "name": "Vengeful Exhalation"
         }
       },
       "name": "Putrifer",
-      "npcHp": "void healing"
+      "npcHp": "void healing",
+      "npcSpeed": "Woodland Stride"
     },
     "Razor Snare": {
       "description": "<p>Slender razor wire snags a creature, yanking its feet to knock it down.</p>",
@@ -879,7 +890,7 @@
           "description": "<p>The pixie deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "giE56Vm25ZKR3ZJm": {
-          "description": "<p>The pixie sprinkles pixie dust onto one of their arrows. If the pixie hits a creature with that arrow before the pixie's next turn, the arrow inflicts one of the following special effects instead of dealing damage. Each effect depends on the target's DC 24 Will save. On a critical hit, the target gets a result one degree worse than it rolled.</p>\n<ul>\n<li><strong>Confusion</strong> (emotion, mental) (@Check[type:will|dc:24|traits:emotion,mental]) The target suffers the effects of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY]{Confusion} spell.</li>\n<li><strong>Shadow Shroud</strong> (darkness, incapacitation) (@Check[type:will|dc:24|traits:darkness,incapacitation]) On a failed Will save, the target is enveloped in shadows. It perceives its surroundings as though bright light conditions were only dim light and dim light as though it was darkness.</li>\n<li><strong>Supernatural Chill</strong> (cold, shadow) (@Check[type:fortitude|dc:24|basic:true|traits:cold,shadow]) The target takes @Damage[5d6[cold]] damage (basic Fortitude save).</li>\n</ul>",
+          "description": "<p>The pixie sprinkles pixie dust onto one of their arrows. If the pixie hits a creature with that arrow before the pixie's next turn, the arrow inflicts one of the following special effects instead of dealing damage. Each effect depends on the target's DC 24 Will save. On a critical hit, the target gets a result one degree worse than it rolled.</p>\n<ul>\n<li>Confusion (emotion, mental) (@Check[type:will|dc:24|traits:emotion,mental]) The target suffers the effects of a 4th-rank confusion spell.</li>\n<li>Shadow Shroud (darkness, incapacitation) (@Check[type:will|dc:24|traits:darkness,incapacitation]) On a failed Will save, the target is enveloped in shadows. It perceives its surroundings as though bright light conditions were only dim light and dim light as though it was darkness.</li>\n<li>Supernatural Chill (cold, shadow) (@Check[type:will|dc:24|basic:true|traits:cold,shadow]) The target takes @Damage[5d6[cold]] damage (basic Fortitude save).\n\n</li>\n</ul>",
           "name": "Sprinkle Pixie Dust"
         },
         "wWQh6Woll8mxFFlQ": {
