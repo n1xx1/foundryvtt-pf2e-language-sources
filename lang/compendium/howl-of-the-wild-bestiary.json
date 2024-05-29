@@ -473,7 +473,7 @@
       "description": "<p>Ghost apes are reclusive and territorial creatures that usually reveal themselves only when their homes are threatened. Most ghost apes will first attempt to use their imposing presence and natural teleportation to frighten and confuse their foes into fleeing. Ghost apes can speak but aren’t particularly talkative, though they will, on rare occasions,&amp;nbsp;treat with those who approach them with respect. Ghost apes can&amp;nbsp;be powerful allies when motivated by a common cause, although they tend to be suspicious of outsiders, and their trust isn’t easily earned.</p>",
       "items": {
         "Gw0KJig6ShsLpnlP": {
-          "description": "<p>The ghost ape beats their chest in a terrifying display. Creatures within 30 feet must succeed a @Check[type:will|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). While a creature is frightened by this ability, it's @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the ape. On a success, the creature is temporarily immune for 1 minute.</p>",
+          "description": "<p>The ghost ape beats their chest in a terrifying display. Creatures within @Template[type:emanation|distance:30]{30 feet} must succeed a @Check[type:will|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). While a creature is frightened by this ability, it's @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the ape. On a success, the creature is temporarily immune for 1 minute.</p>",
           "name": "Terrifying Display"
         },
         "L18NVH9z9Ly0dsnt": {
@@ -485,10 +485,10 @@
           "name": "Ghost Stance"
         },
         "msu3foywEs3F8x7G": {
-          "name": "jaws"
+          "name": "Jaws"
         },
         "wAIkNPz92VDaA6VH": {
-          "name": "fist"
+          "name": "Fist"
         }
       },
       "name": "Ghost Ape"
@@ -508,7 +508,7 @@
           "name": "Greater Electrolocation"
         },
         "j6Z028nwBjcO1Eb1": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25];</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] and @Damage[1d6[electricity]] (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] and @Damage[1d6[electricity]] electricity and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] and @Damage[2d6[electricity]] electricity and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison],1d6[electricity]]{1d6 poison and 1d6 electricity} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison],1d6[electricity]]{2d6 poison and 1d6 electricity} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison],2d6[electricity]]{2d6 poison and 2d6 electricity} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}</p>",
           "name": "Coppermouth Venom"
         },
         "lBqu6MnLr677oxyr": {
@@ -527,11 +527,15 @@
         "DIpqKd7UHJ1FKYIB": {
           "description": "<p>@Damage[(2d8)[piercing]], @Check[type:fortitude|dc:21|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
+        "cvbTdPKEcpuu4Kmf": {
+          "description": "<p>In an area of bright light, the giant fangtooth is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>",
+          "name": "Sunless Sight"
+        },
         "gjSOMa3GBfSiK4Zr": {
-          "name": "bite"
+          "name": "Bite"
         },
         "v7zAov3bUwcF8NFP": {
-          "description": "<p>Creatures critically hit by the fangtooth's bite take an additional @Damage[1d8[bleed]] damage.</p>",
+          "description": "<p>Creatures critically hit by the fangtooth's bite take an additional 1d8 persistent bleed damage.</p>",
           "name": "Deep Puncture"
         }
       },
@@ -571,7 +575,7 @@
           "name": "Electrolocation"
         },
         "fKDKMJtOFcpWNega": {
-          "name": "Bite"
+          "name": "Jaws"
         },
         "lGnm3CvnrbbSSSPA": {
           "description": "<p>The goblin shark dashes forward and extends its jaws bite a creature. It swims up to 10 feet in a straight line and makes a jaws Strike with a reach of 10 feet.</p>",
@@ -582,7 +586,7 @@
           "name": "Blood Scent"
         },
         "tCu2c5DeVynom0WZ": {
-          "description": "<p>The goblin shark's coloration blends in with the water. It doesn't need cover to attempt to Hide with a Stealth check while underwater</p>",
+          "description": "<p>The goblin shark's coloration blends in with the water. It doesn't need cover to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} with a Stealth check while underwater.</p>",
           "name": "Camouflage"
         }
       },
@@ -594,7 +598,7 @@
           "name": "Claw"
         },
         "4tYzMp9ipa1BDyJd": {
-          "description": "<p>Any ability that would sever a greater chimera's head (such as a critical hit with a vorpal weapon) severs one head at random. Losing a head doesn't kill a chimera (as long as it has at least one head left), but it does prevent it from making Strikes with the lost head or using any abilities granted by the head.</p>",
+          "description": "<p>Any ability that would sever a greater chimera's head (such as a critical hit with a @UUID[Compendium.pf2e.equipment-srd.Item.6xaxxKfvXED6LfIY]{Vorpal} weapon) severs one head at random. Losing a head doesn't kill a chimera (as long as it has at least one head left), but it does prevent it from making Strikes with the lost head or using any abilities granted by the head.</p>",
           "name": "Three-Headed"
         },
         "9NL3lOIW0zXEJDF8": {
@@ -621,7 +625,7 @@
           "name": "Deep Breath"
         },
         "nHssHIpUi4l0uxUW": {
-          "description": "<p>A harbor seal can use its whiskers to sense vibrations as a precise sense at the listed range, but only underwater</p>",
+          "description": "<p>A harbor seal can use its whiskers to sense vibrations as a precise sense at the listed range, but only underwater.</p>",
           "name": "Whisker Sense"
         },
         "u1aCRdTrObUDWI2g": {
@@ -645,7 +649,7 @@
           "name": "Shovel Earth"
         },
         "lwcZ0Yi0pF8c0wnM": {
-          "description": "<p>The hardhead mole Burrows up to 20 feet in a straight line, displacing the earth on the surface. Any creature it passes through takes @Damage[1d6[bludgeoning]] damage (@Check[type:reflex|dc:14|basic:true]). On a failed save, a creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. This creates a burrow hole at the beginning and end of the line.</p>",
+          "description": "<p>The hardhead mole Burrows up to 20 feet in a straight line, displacing the earth on the surface. Any creature it passes through takes @Damage[1d6[bludgeoning]] damage (@Check[type:reflex|dc:14|basic:true] save). On a failed save, a creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. This creates a burrow hole at the beginning and end of the line.</p>",
           "name": "Unbalancing Burrow"
         }
       },
@@ -657,14 +661,14 @@
           "name": "Jaws"
         },
         "gs4TQWASo5vkCAmm": {
-          "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} in the helicoprion's jaws;</p>\n<hr />\n<p><strong>Effect</strong> The shark rips into the creature dealing @Damage[3d10[slashing]] damage (@Check[type:reflex|dc:26|basic:true] save).</p>",
+          "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} in the helicoprion's jaws</p>\n<hr />\n<p><strong>Effect</strong> The shark rips into the creature dealing @Damage[3d10[slashing]] damage (@Check[type:reflex|dc:26|basic:true] save).</p>",
           "name": "Deshell"
         },
         "hA8CZfGS5qACaEHn": {
           "description": "<p>Huge, @Damage[(2d10+10)[bludgeoning]], Rupture 22</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "sfQRtdBAWJHTnJV2": {
-          "description": "<p>The Helicoprion can smell blood in the water from up to 1 mile away</p>",
+          "description": "<p>The helicoprion can smell blood in the water from up to 1 mile away.</p>",
           "name": "Blood Scent"
         }
       },
@@ -676,7 +680,7 @@
           "name": "Proboscis"
         },
         "TRsQQLZDoflPQM4T": {
-          "description": "<p>With a few fierce wingbeats, the hexmoth expels magical scale dust in a @Template[type:cone|distance:30]. This deals 10d6 damage of the type to which the hexmoth is immune (DC 23 basic Fortitude save). It can't use Hexdust Wind again for [[/br 1d4 #Recharge Hexdust Wind]]{1d4 rounds}.</p>",
+          "description": "<p>With a few fierce wingbeats, the hexmoth expels magical scale dust in a @Template[type:cone|distance:30]. This deals @Damage[10d6[untyped]] damage of the type to which the hexmoth is immune (@Check[type:fortitude|dc:23|basic:true] save). It can't use Hexdust Wind again for [[/br 1d4 #Recharge Hexdust Wind]]{1d4 rounds}.</p>",
           "name": "Hexdust Wind"
         },
         "Ua8oTkrC5K1ndhsu": {
@@ -729,14 +733,14 @@
     "Holdfast": {
       "items": {
         "0moQPQHdnH8BplCL": {
-          "description": "<p>A holdfast treats any tight space it can barely fit its head in or wider as difficult terrain and doesn't need to Squeeze to move through it.</p>",
+          "description": "<p>A holdfast treats any tight space it can barely fit its head in or wider as difficult terrain and doesn't need to @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze} to move through it.</p>",
           "name": "Lithe"
         },
         "1cGZ5GtFlGgysv38": {
           "name": "Jaws"
         },
         "BNANYNiAx6QMjezR": {
-          "description": "<p>@Damage[(2d6+2)[piercing]], @Check[type:fortitude|dc:21|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(2d6+2)[piercing]] plus crush throat, @Check[type:fortitude|dc:21|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "IigZieTHo8vIeSAM": {
           "description": "<p>When a creature fails a save against the holdfast's Constrict, the creature's throat is held tight, stopping them from speaking as long as they're @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. This prevents the creature from casting spells with vocal incantations, as well as from using many sonic or auditory abilities.</p>",
@@ -763,11 +767,11 @@
           "name": "Flexible Dodge"
         },
         "4ptp9pNHXJTjFHlT": {
-          "description": "<p><strong>Requirements</strong> The hooplamander is Unfurled</p>\n<hr />\n<p><strong>Effect</strong> The hooplamander Leaps and then rolls into its wheeled form. Any creature within 5 feet must succeed at a @Check[type:reflex|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for one round. While it's Wheels Up, the hooplamander can't make Strikes and its Speed increases to 40 feet.</p>",
+          "description": "<p><strong>Requirements</strong> The hooplamander is Unfurled</p>\n<hr />\n<p><strong>Effect</strong> The hooplamander @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leaps} and then rolls into its wheeled form. Any creature within 5 feet must succeed at a @Check[type:reflex|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for one round. While it's Wheels Up, the hooplamander can't make Strikes and its Speed increases to 40 feet.</p>",
           "name": "Wheels Up"
         },
         "CIeOlhvjmGLP4p9v": {
-          "description": "<p><strong>Requirements</strong> The hooplamander is Wheels Up</p>\n<hr />\n<p><strong>Effect</strong> The hooplamander releases its tail, Leaping up to 20 feet as it exists its wheeled shape and unfurls to land on its four legs.</p>",
+          "description": "<p><strong>Requirements</strong> The hooplamander is Wheels Up</p>\n<hr />\n<p><strong>Effect</strong> The hooplamander releases its tail, @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leaping} up to 20 feet as it exits its wheeled shape and unfurls to land on its four legs.</p>",
           "name": "Unfurl"
         },
         "PZoGKJqPZC4JT6Xk": {
@@ -777,7 +781,7 @@
           "name": "Hookclaw"
         },
         "cPjpKge1uZtIOSBa": {
-          "description": "<p><strong>Requirements</strong> The hooplamander is Wheels Up</p>\n<hr />\n<p><strong>Effect</strong> As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]{Trample} (Large or smaller, ridged tail, DC 22), except targets that critically fail their Reflex save are @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and the hooplamander Unfurls at the end of its movement.</p>",
+          "description": "<p><strong>Requirements</strong> The hooplamander is Wheels Up</p>\n<hr />\n<p><strong>Effect</strong> As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]{Trample} (Large or smaller, ridged tail, @Check[type:reflex|dc:22|basic:true]), except targets that critically fail their Reflex save are @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and the hooplamander Unfurls at the end of its movement.</p>",
           "name": "Rollout Trample"
         }
       },
@@ -794,10 +798,10 @@
           "name": "Ghost Touch"
         },
         "hURbkmFyDpndlfUW": {
-          "description": "<p>Medium or smaller, Hoof, @Check[type:reflex|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+          "description": "<p>Medium or smaller, hoof, @Check[type:reflex|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         },
         "kiI7wCXrpRbMuVx1": {
-          "description": "<p><strong>Trigger</strong> The karkadann becomes frightened</p>\n<hr />\n<p><strong>Effect</strong> The karkadann reduces their frightened value by 1 (to a minimum of 0). The karkadann then Strides toward an enemy.</p>",
+          "description": "<p><strong>Trigger</strong> The karkadann becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}</p>\n<hr />\n<p><strong>Effect</strong> The karkadann reduces their frightened value by 1 (to a minimum of 0). The karkadann then Strides toward an enemy.</p>",
           "name": "Fearless Rush"
         },
         "su52DM949WAEgleA": {
@@ -819,7 +823,7 @@
           "name": "Tail"
         },
         "MGMjpWoNmqWhhm8B": {
-          "description": "<p><strong>Requirements</strong> The leopard seal is in water</p>\n<hr />\n<p><strong>Effect</strong> The leopard seal travels up to 40 feet, ending its movement on land. Enemies adjacent to the leopard seal when it ends its movement take 2d10 bludgeoning damage (@Check[type:reflex|dc:21|basic:true] save) and are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a failure.</p>",
+          "description": "<p><strong>Requirements</strong> The leopard seal is in water</p>\n<hr />\n<p><strong>Effect</strong> The leopard seal travels up to 40 feet, ending its movement on land. Enemies adjacent to the leopard seal when it ends its movement take @Damage[2d10[bludgeoning]] damage (@Check[type:reflex|dc:21|basic:true] save) and are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a failure.</p>",
           "name": "Predatory Slam"
         },
         "fT5rpQPJhWcOTfol": {
@@ -831,7 +835,7 @@
           "name": "Protective Blubber"
         },
         "ufSDMesmDIjVUUrz": {
-          "description": "<p>A leopard seal can use its whiskers to sense vibrations as a precise sense at the listed range, but only underwater</p>",
+          "description": "<p>A leopard seal can use its whiskers to sense vibrations as a precise sense at the listed range, but only underwater.</p>",
           "name": "Whisker Sense"
         },
         "xPoexGjFq60iWbpM": {
@@ -851,7 +855,7 @@
           "name": "Deep Breath"
         },
         "auQMbsuySkuEV640": {
-          "description": "<p>The lightning turtle withdraws into its shell. This increases its AC to 36, but it can't act except to use Shell Shock or reemerge as a single action. While in its shell, the turtle's Shell Shock deals another @Damage[4d6[electricity]] damage and loses the nonlethal trait.</p>",
+          "description": "<p>The lightning turtle withdraws into its shell. This increases its AC to 36, but it can't act except to use Shell Shock or reemerge as a single action. While in its shell, the turtle's Shell Shock deals another 4d6 damage and loses the nonlethal trait.</p>",
           "name": "Sparking Shell"
         },
         "beRBWWg6xwZiT840": {
