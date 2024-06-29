@@ -124,6 +124,10 @@
       "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You bind yourself by formally speaking a binding vow. Supernatural power flows through and around you as you speak it, and all those present to hear it intrinsically know that it binds you. Breaking this vow is anathema to you, and if you break it willingly, you lose all pactbinder benefits until you fulfill your vow or, if that's impossible, participate in an atone ritual. The vow doesn't prevent unwilling violations and can't be used to try to circumvent mind-control magic, confusion, or similar situations where you perform an action not entirely of your own volition. A Binding Vow doesn't end until you've fulfilled it. Even if you die, the vow still binds you if you return to life. The vow doesn't force you to go to ridiculous extremes, such as dying, to fulfill your vow unless you specifically swear to go to such extremes. Trying to subvert your binding vow by making selfish promises (such as swearing to an ally that you'll kill someone you already wanted to kill) is in itself a violation of your vow, as is attempting to subvert other vows you've made (such as those from other pactbinder feats or a champion's code). When you make a Request or @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} directly in service of fulfilling your vow, you gain a +1 circumstance bonus to your check against any creatures aware of your vow.</p>",
       "name": "Binding Vow"
     },
+    "Bite and Sting": {
+      "description": "<p><strong>Requirements</strong> Your swarm is outside your body</p><hr /><p><strong>Effect</strong> Each creature in your swarm's space takes @Damage[(floor(@actor.level/2))d4[piercing]] damage with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save against your class DC or spell DC, whichever is higher. At 4th level and every 2 levels thereafter, the damage increases by 1d4.</p>",
+      "name": "Bite and Sting"
+    },
     "Blizzard Evasion": {
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You take 40 or more physical damage from a single attack</p>\n<hr />\n<p><strong>Effect</strong> You discorporate into a whirling blizzard for up to 3 rounds. During this time, you gain resistance 10 to physical damage and weakness 10 to force damage. You gain a fly speed of 40 feet, but the only action you can take is to @UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{Fly}. The first time each round you enter another creature's space while discorporated, or the first time a creature enters your space, that creature takes @Damage[4d8[cold]] damage and must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] saving throw against your class DC or spell DC, whichever is higher, or else be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At the start of your turn, you can end this effect as a free action.</p>",
       "name": "Blizzard Evasion"
@@ -137,7 +141,7 @@
       "name": "Board"
     },
     "Boarding Assault": {
-      "description": "<p>Either Stride twice or attempt an Acrobatics check (DC determined by the GM, but usually DC 20) to swing on a rope up to twice your Speed.</p>\n<p>If you boarded or disembarked from a boat or similar vehicle during this movement, you can make a melee Strike that deals one additional weapon damage die.</p>",
+      "description": "<p>Either Stride twice or attempt an @Check[type:acrobatics] check (DC determined by the GM, but usually DC 20) to swing on a rope up to twice your Speed.</p>\n<p>If you boarded or disembarked from a boat or similar vehicle during this movement, you can make a melee Strike that deals one additional weapon damage die.</p>",
       "name": "Boarding Assault"
     },
     "Borrow an Arcane Spell": {
@@ -395,6 +399,10 @@
     "De-Animating Gestures (True)": {
       "description": "<p>You designate a single construct within 30 feet that you can see or hear. The construct is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>",
       "name": "De-Animating Gestures (True)"
+    },
+    "Death Drone": {
+      "description": "<p>The cicadas in your swarm make a droning sound that stimulates a fear response. Each creature within your swarm's space takes @Damage[6d4[mental]] damage and must attempt a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creatures takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, and takes a –2 circumstance penalty to Perception checks that require hearing.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}, and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} until the start of your next turn.</p>",
+      "name": "Death Drone"
     },
     "Debilitating Strike": {
       "description": "<p><strong>Trigger</strong> Your Strike hits an off-guard creature and deals damage</p>\n<hr />\n<p>You apply one of the following debilitations, which lasts until the end of your next turn:</p>\n<ul>\n<li><strong>Debilitation</strong> The target takes a -10-foot status penalty to its Speeds.</li>\n<li><strong>Debilitation</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.yBTASi3FvnReAwHy]{Effect: Debilitating Strike}</p>",
@@ -1375,6 +1383,10 @@
     "Sustain an Effect": {
       "description": "<p>You Sustain one effect with a sustained duration while moving at half speed. Most such effects can be sustained for 10 minutes, though some specify they can be sustained for a different duration. Sustaining an effect that requires making complex decisions, such as <em>spectral weapon</em>, can make you @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, as determined by the GM.</p>",
       "name": "Sustain an Effect"
+    },
+    "Swarm Forth": {
+      "description": "<p><strong>Requirements</strong> Your swarm is within your body</p><hr /><p><strong>Effect</strong> Your swarm boils forth from your body into a space adjacent to yours. (Its space can overlap yours.) It remains separate from you until the end of your next turn, but you can Sustain the effect up to 1 minute. The effect also ends if you end your turn more than 60 feet away from the swarm. When you use Swarm Forth and each time you Sustain the effect, you can have the swarm Stride.</p>",
+      "name": "Swarm Forth"
     },
     "Swim": {
       "description": "<p>You attempt an <span data-pf2-action=\"swim\" data-pf2-glyph=\"A\">Athletics</span> check to move a maximum distance of 10 feet through water. The GM determines the DC based on the turbulence or danger of the water; in most instances of calm water, you get an automatic critical success. If your land Speed is 40 feet or higher, increase the maximum possible distance by 5 feet for every 20 feet of Speed above 20 feet.</p>\n<p>If you end your turn in water and haven't succeeded at a Swim action that turn, you sink 10 feet or get moved by the current, as determined by the GM. This doesn't apply if your last action on your turn was to enter the water.</p>\n<hr />\n<p><strong>Critical Success</strong> You move through the water, increasing the maximum distance by 5 feet.</p>\n<p><strong>Success</strong> You move through the water.</p>\n<p><strong>Critical Failure</strong> You make no progress. If you're holding your breath, you lose 1 round of air.</p>\n<h2>Sample Swim Tasks</h2>\n<p><strong>Untrained</strong> lake or other still water</p>\n<p><strong>Trained</strong> flowing water, like a river</p>\n<p><strong>Expert</strong> swiftly flowing river</p>\n<p><strong>Master</strong> stormy sea</p>\n<p><strong>Legendary</strong> maelstrom, waterfall</p>",
