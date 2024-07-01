@@ -6096,7 +6096,7 @@
       "name": "Distracting Bites"
     },
     "Distracting Explosion": {
-      "description": "<p><strong>Trigger</strong> A creature within your reach uses a concentrate action.</p>\n<hr />\n<p>Your enemies think they can concentrate on something else while you're nearby? Oh, you'll give them a distraction, all right! Make a melee Strike against the triggering creature with a weapon or unarmed attack that is benefiting from your offensive boost. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Unstable Function</strong> You pull out all the stops to create an explosive distraction. Add the unstable trait to Distracting Explosion. If the attack hits, you disrupt the triggering concentrate action.</p>\n<p>@Check[type:flat|dc:17|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]{PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label}</p>\n<p><strong>Special</strong> If your innovation is a minion, it can take this reaction instead of you, even though minions can't normally take reactions or act when it's not their turn. It uses your reaction for the turn to do so.</p>",
+      "description": "<p><strong>Trigger</strong> A creature within your reach uses a concentrate action.</p>\n<hr />\n<p>Your enemies think they can concentrate on something else while you're nearby? Oh, you'll give them a distraction, all right! Make a melee Strike against the triggering creature with a weapon or unarmed attack that is benefiting from your offensive boost. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Unstable Function</strong> You pull out all the stops to create an explosive distraction. Add the unstable trait to Distracting Explosion. If the attack hits, you disrupt the triggering concentrate action.</p>\n<p>@Check[type:flat|dc:15|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]{PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label}</p>\n<p><strong>Special</strong> If your innovation is a minion, it can take this reaction instead of you, even though minions can't normally take reactions or act when it's not their turn. It uses your reaction for the turn to do so.</p>",
       "featPrerequisites": {
         "0": "offensive boost"
       },
@@ -7162,7 +7162,7 @@
       "name": "Electric Counter"
     },
     "Electrify Armor": {
-      "description": "<p><strong>Requirements</strong> You are wearing your armor innovation.</p>\n<p>You electrify your armor to punish foes who dare to attack you. For 1 round, any creature that touches you, or that hits you with a melee unarmed attack or a non-reach melee weapon attack, takes @Damage[1d4[electricity]|overrideTraits] damage. The effect ends if you cease wearing your armor innovation.</p>\n<p>If you have the revolutionary innovation class feature, the damage increases to @Damage[2d4[electricity]|overrideTraits]{2d4}.</p>\n<p><strong>Unstable Function</strong> You create an unstable chain reaction, sending countless sparks dancing across your armor. Add the unstable trait to Electrify Armor. The effects last for 1 minute instead of 1 round, and the damage dice increase from d4s to d12s (@Damage[1d12[electricity]] / @Damage[2d12[electricity]]).</p>\n<hr />\n<p>@Check[flat|dc:17|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]{PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label}</p>",
+      "description": "<p><strong>Requirements</strong> You are wearing your armor innovation.</p>\n<p>You electrify your armor to punish foes who dare to attack you. For 1 round, any creature that touches you, or that hits you with a melee unarmed attack or a non-reach melee weapon attack, takes @Damage[1d4[electricity]|overrideTraits] damage. The effect ends if you cease wearing your armor innovation.</p>\n<p>If you have the revolutionary innovation class feature, the damage increases to @Damage[2d4[electricity]|overrideTraits]{2d4}.</p>\n<p><strong>Unstable Function</strong> You create an unstable chain reaction, sending countless sparks dancing across your armor. Add the unstable trait to Electrify Armor. The effects last for 1 minute instead of 1 round, and the damage dice increase from d4s to d12s (@Damage[1d12[electricity]] / @Damage[2d12[electricity]]).</p>\n<hr />\n<p>@Check[flat|dc:15|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]{PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label}</p>",
       "featPrerequisites": {
         "0": "armor innovation"
       },
@@ -8776,7 +8776,7 @@
       "name": "Feathered Cloak"
     },
     "Feathered Flechettes": {
-      "description": "<p>Unfurling your wings in a quick snap, you send feathers scattering in all directions. Creatures in a @Template[type:emanation|distance:15] take @Damage[6d6[slashing]] damage (basic Reflex save against your class DC). This increases to 10d6 if your unarmed attacks have a greater striking rune, such as by etching it onto handwraps of mighty blows, and 16d6 if they have a major striking rune.</p>",
+      "description": "<p>Unfurling your wings in a quick snap, you send feathers scattering in all directions. Creatures in a @Template[type:emanation|distance:15] take @Damage[6d6[slashing]] damage (basic Reflex save against your class DC). This increases to @Damage[10d6[slashing]] if your unarmed attacks have a greater striking rune, such as by etching it onto handwraps of mighty blows, and @Damage[16d6[slashing]] if they have a major striking rune.</p>",
       "featPrerequisites": {
         "0": "Winged Warrior Dedication"
       },
@@ -17133,7 +17133,7 @@
       "name": "Plot The Future"
     },
     "Pluck from the Sky": {
-      "description": "<p><strong>Access</strong> tengu, strix, or awakened animal (flying animal) ancestry</p>\n<hr />\n<p>The skies are your rightful place, and you will not suffer another to occupy them. Make a Strike against a flying creature. If the attack deals damage, the target must attempt a Reflex save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target falls 15 feet but doesn't take damage if it reaches the ground.</p>\n<p><strong>Failure</strong> The target falls 30 feet but doesn't take damage if it reaches the ground.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes falling damage.</p>",
+      "description": "<p><strong>Access</strong> tengu, strix, or awakened animal (flying animal) ancestry</p><hr /><p>The skies are your rightful place, and you will not suffer another to occupy them. Make a Strike against a flying creature. If the attack deals damage, the target must attempt a @Check[type:reflex|dc:resolve(@actor.system.attributes.classDC.value)] save against your class DC.</p><hr /><p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target falls 15 feet but doesn't take damage if it reaches the ground.</p>\n<p><strong>Failure</strong> The target falls 30 feet but doesn't take damage if it reaches the ground.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes falling damage.</p>",
       "featPrerequisites": {
         "0": "Winged Warrior Dedication"
       },
@@ -23092,7 +23092,7 @@
       "name": "Sun's Fury"
     },
     "Sunbird Glare": {
-      "description": "<p><strong>Requirements</strong> You're in bright light.</p>\n<hr />\n<p>By keeping your feathers clean and sleek, you can catch the light across your wings to create a startling glare in the eyes of a creature within 20 feet. The target must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)] save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (1 minute on a critical failure). Regardless of their result, the target is temporarily immune to Sunbird Glare for 10 minutes.</p>",
+      "description": "<p><strong>Requirements</strong> You're in bright light.</p><hr /><p>By keeping your feathers clean and sleek, you can catch the light across your wings to create a startling glare in the eyes of a creature within 20 feet. The target must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)] save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (1 minute on a critical failure). Regardless of their result, the target is temporarily immune to Sunbird Glare for 10 minutes.</p>",
       "featPrerequisites": {
         "0": "Winged Warrior Dedication"
       },
