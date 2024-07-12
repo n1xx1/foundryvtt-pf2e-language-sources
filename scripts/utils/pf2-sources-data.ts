@@ -9,7 +9,13 @@ export function getRealTag(source: string) {
 
 type SourceState = {
   name: string;
-  type: "core" | "lost-omens" | "adventure-path" | "adventure" | "other" | "core-remaster";
+  type:
+    | "core"
+    | "lost-omens"
+    | "adventure-path"
+    | "adventure"
+    | "other"
+    | "core-remaster";
   source: (string | RegExp)[];
   language: string[];
   compendiums?: string[];
@@ -89,7 +95,7 @@ export const sourceState: Record<string, SourceState> = {
     name: "Dark Archive",
     type: "core",
     source: ["Pathfinder Dark Archive", "Dark Archive", "Tomorrow's Feast"],
-    language: [],
+    language: ["it"],
   },
   "treasure-vault": {
     name: "Treasure Vault",
@@ -703,7 +709,7 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder Adventure: Crown of the Kobold King",
       "Crown of the Kobold King",
     ],
-    language: [],
+    language: ["it"],
   },
   "the-enmity-cycle": {
     name: "The Enmity Cycle",
@@ -810,7 +816,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "core-remaster",
     source: ["Pathfinder Monster Core"],
     language: [],
-  }
+  },
 };
 
 export const sourceStateMap = new Map(
