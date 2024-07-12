@@ -109,6 +109,12 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Rage of Elements"],
     language: [],
   },
+  "howl-of-the-wild": {
+    name: "Howl of the Wild",
+    type: "core",
+    source: ["Pathfinder Howl of the Wild"],
+    language: [],
+  },
   // Lost Omens
   "character-guide": {
     name: "Lost Omens: Character Guide",
@@ -213,6 +219,12 @@ export const sourceState: Record<string, SourceState> = {
     name: "Lost Omens: Highhelm",
     type: "lost-omens",
     source: ["Pathfinder Lost Omens: Highhelm"],
+    language: [],
+  },
+  "tian-xia-character-guide": {
+    name: "Lost Omens: Tian Xia Character Guide",
+    type: "lost-omens",
+    source: ["Pathfinder Lost Omens: Tian Xia Character Guide"],
     language: [],
   },
   // Adventure Paths
@@ -641,6 +653,48 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder #199: To Bloom Below the Web"],
     language: [],
   },
+  "seven-dooms-for-sandpoint": {
+    name: "Seven Dooms for Sandpoint",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "wardens-of-wildwood1": {
+    name: "Wardens of Wildwood",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "wardens-of-wildwood2": {
+    name: "Wardens of Wildwood",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "wardens-of-wildwood3": {
+    name: "Wardens of Wildwood",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "curtain-call1": {
+    name: "Curtain Call",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "curtain-call2": {
+    name: "Curtain Call",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
+  "curtain-call3": {
+    name: "Curtain Call",
+    type: "adventure-path",
+    source: [],
+    language: [],
+  },
   // Adventures
   "the-fall-of-plaguestone": {
     name: "The Fall of Plaguestone",
@@ -729,6 +783,12 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Adventure: A Few Flowers More"],
     language: [],
   },
+  "prey-for-death": {
+    name: "Prey for Death",
+    type: "adventure",
+    source: [],
+    language: [],
+  },
   // One-Shots
   "dinner-at-lionlodge": {
     name: "Dinner at Lionlodge",
@@ -815,6 +875,12 @@ export const sourceState: Record<string, SourceState> = {
     name: "Monster Core",
     type: "core-remaster",
     source: ["Pathfinder Monster Core"],
+    language: [],
+  },
+  "player-core-2": {
+    name: "Player Core 2",
+    type: "core-remaster",
+    source: ["Pathfinder Player Core 2"],
     language: [],
   },
 };
