@@ -1379,7 +1379,11 @@
                     "Damage": "Tipi di Danno",
                     "Campaign": "Campagna"
                 },
-                "ReservedTerm": "\"{term}\" è un termine riservato."
+                "ReservedTerm": "\"{term}\" è un termine riservato.",
+                "EnvironmentTypes": {
+                    "Name": "Tipi di Ambienti",
+                    "Hint": "Un qualsiasi tipo di ambiente personalizzato"
+                }
             },
             "Tokens": {
                 "Autoscale": {
@@ -1450,6 +1454,17 @@
                 "Default": "Predefinito del Mondo ({worldDefault})",
                 "Enabled": "Abilitato",
                 "Disabled": "Disabilitato"
+            },
+            "DragMeasurement": {
+                "Hint": "Misura la distanza percorsa quando viene trascinato un token senza necessità di tener premuto alcun altro tasto. I waypoint sono posizionati premento il tasto \"{key}\".",
+                "Name": "Misurazione Trascinamento"
+            },
+            "MinimumRulesUI": {
+                "Hint": "Il ruolo minimo necessario per vedere e utilizzare il pannello rule element nelle schede degli oggetti.",
+                "Name": "Ruolo Minimo Accesso Rule Element"
+            },
+            "Core": {
+                "ManagedBySystem": "Gestito e bloccato dal sistema PF2e"
             }
         },
         "WeaponPropertyRune": {
@@ -1477,7 +1492,7 @@
             },
             "vorpal": {
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> visualizzare (incapacitazione, morte))<br /><strong>Innesco</strong> Ottieni un 20 naturale Colpendo con l'arma, hai un successo critico e infliggi danni taglienti. Il bersaglio deve possedere una testa<br /><strong>Effetto</strong> II bersaglio deve superare un TS su @Check[type:fortitude|dc:37|traits:death,incapacitation|name:Runa Vorpal] o verrà decapitato. Questo uccide qualsiasi creatura eccetto quelle che non necessitano di una testa per vivere. Per le creature con più teste, questo di solito uccide la creatura solo se recidi la sua ultima testa."
+                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> visualizzare (incapacitazione, morte))<br /><strong>Innesco</strong> Ottieni un 20 naturale Colpendo con l'arma contro una creatura che ha una testa, hai un successo critico e infliggi danni taglienti.<br /><strong>Effetto</strong> II bersaglio deve superare un TS su @Check[type:fortitude|dc:37|traits:death,incapacitation|name:Runa Vorpal] o verrà decapitato. Questo uccide qualsiasi creatura eccetto quelle che non necessitano di una testa per vivere. Per le creature con più teste, questo di solito uccide la creatura solo se recidi la sua ultima testa."
                 },
                 "Name": "Vorpal"
             },
@@ -2137,16 +2152,16 @@
             },
             "GhostCharge": {
                 "Greater": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (3[splash])[vitality]]]{3 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino all'inizio del turno successivo."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (3[splash])[vitality]]]{3 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino all'inizio del tuo turno successivo."
                 },
                 "Lesser": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (1[splash])[vitality]]]{1 danno da spargimento positivo} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del turno successivo."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (1[splash])[vitality]]]{1 danno da spargimento positivo} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del tuo turno successivo."
                 },
                 "Major": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (4[splash])[vitality]]]{4 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino all'inizio del turno successivo."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (4[splash])[vitality]]]{4 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} fino all'inizio del tuo turno successivo."
                 },
                 "Moderate": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (2[splash])[vitality]]]{2 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del turno successivo."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r (2[splash])[vitality]]]{2 danni da spargimento positivi} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino all'inizio del tuo turno successivo."
                 }
             },
             "NecroticBomb": {
@@ -2236,8 +2251,8 @@
                     "success": "<strong>Effetto</strong> La bomba infligge anche [[/r 2d4[persistent,piercing]]]{2d4 danni perforanti persistenti} e [[/r (2[splash])[poison]]]{2 danni da veleno da spargimento}. L'intera area di spargimento dalla bomba viene coperta da vegetazione, e diventa terreno difficile per 1 round."
                 },
                 "Lesser": {
-                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r 1d4[persistent,piercing]]]{1d4 danni perforanti persistenti} e [[/r (1[splash])[poison]]]{1 danno da veleno da spargimento}. L'intera area di spargimento dalla bomba viene coperta da vegetazione, e diventa terreno difficile per 1 round.",
-                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge anche [[/r (2*1d4)[persistent,piercing]]]{2*1d4 danni perforanti persistenti} e [[/r (1[splash])[poison]]]{1 danno da veleno da spargimento}. L'intera area di spargimento dalla bomba viene coperta da vegetazione, e diventa terreno difficile per 1 round."
+                    "success": "<strong>Effetto</strong> La bomba infligge anche [[/r 1d4[persistent,piercing]]]{1d4 danni perforanti persistenti} e [[/r (1[splash])[poison]]]{1 danno da veleno da spargimento}. Un quadretto dello spazio della creatura bersagliata viene coperto da vegetazione, e diventa terreno difficile per 1 round.",
+                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge anche [[/r (2*1d4)[persistent,piercing]]]{2*1d4 danni perforanti persistenti} e [[/r (1[splash])[poison]]]{1 danno da veleno da spargimento}. Un quadretto dello spazio della creatura bersagliata viene coperto da vegetazione, e diventa terreno difficile per 1 round."
                 },
                 "Major": {
                     "success": "<strong>Effetto</strong> La bomba infligge anche [[/r 4d4[persistent,piercing]]]{4d4 danni perforanti persistenti} e [[/r (4[splash])[poison]]]{4 danni da veleno da spargimento}. L'intera area di spargimento dalla bomba viene coperta da vegetazione, e diventa terreno difficile per 1 round.",
@@ -2362,6 +2377,9 @@
                         "Major": "Poderosa Maggiore"
                     },
                     "Potency": "Potenziamento dell'Arma"
+                },
+                "Twin": {
+                    "SecondPlus": "Gemella 2°+ Attacco"
                 }
             },
             "CreationDialog": {
@@ -2815,7 +2833,8 @@
                     },
                     "NoEligibleItem": "Non è stato trovato alcun oggetto che può unirsi a {attachable}.",
                     "SidebarContextMenuOption": "Unisci all'Oggetto",
-                    "PromptTitle": "Unisci {item}"
+                    "PromptTitle": "Unisci {item}",
+                    "Label": "Applica"
                 },
                 "Attachments": "Oggetti Uniti",
                 "Base": "Base"
@@ -2832,7 +2851,8 @@
             },
             "ABC": {
                 "InvalidDrop": "{badType} non può essere trascinato qui (deve essere {goodType})",
-                "Features": "Privilegi"
+                "Features": "Privilegi",
+                "Add": "Aggiungi"
             },
             "Ancestry": {
                 "Vision": {
@@ -3019,13 +3039,15 @@
                 "Hint": {
                     "UUID": "Un identificativo universalmente univoco per quest'oggetto",
                     "Slug": "Un identificativo stabile e leggibile: se impostato, rimarrà a posto anche se l'oggetto è rinominato.",
-                    "SourceId": "Il UUID dell'oggetto nel compendio originale"
+                    "SourceId": "Il UUID dell'oggetto nel compendio originale",
+                    "RollOptions": "Una il prefisso di una roll option dipende dall'uso. <em>item:</em> viene usato la maggior parte delle volte, ma <em>parent:</em> è usato per gli oggetti che contengono il rule element."
                 },
                 "RegenerateSlug": "(Ri)genera Slug",
                 "New": "Nuovo Elemento Regola",
                 "Tab": "Regole",
                 "Remove": "Rimuovi Elemento delle Regole",
-                "Edit": "Modifica JSON"
+                "Edit": "Modifica JSON",
+                "ViewRollOptions": "Vedi le Roll Option"
             },
             "RemovalPrevented": "La rimozione di {item} è prevenuta da {preventer}.",
             "WorldItemWarning": "Questo è un oggetto del mondo e non funzionerà se salvato in un compendio.",
@@ -3314,7 +3336,8 @@
                     "Plural": "Lingue",
                     "CommonLanguage": "Comune ({language})",
                     "DetailsPlaceholder": "Avvertenze, altre specifiche insolite",
-                    "yithian": "Yithian"
+                    "yithian": "Yithian",
+                    "lashunta": "Lashunta"
                 },
                 "Shield": {
                     "ACBonus": "Bonus CA Scudo (Quando Alzato)",
@@ -3464,7 +3487,8 @@
                         "KnownSpells": "Incantesimi Conosciuti",
                         "Rituals": "Rituali"
                     }
-                }
+                },
+                "ShowStowed": "Mostra Riposti"
             },
             "Hazard": {
                 "TitleEdit": "{name} (Modifica)",
@@ -3512,8 +3536,16 @@
                 "SimpleSheet": "Scheda PNG Semplice",
                 "SkillsEditor": {
                     "LorePlaceholder": "Sapienza della Carpenteria",
-                    "Title": "Editor Abilità ({actor})"
-                }
+                    "Title": "Editor Abilità ({actor})",
+                    "AddSpecial": "Aggiungi Speciale",
+                    "Error": {
+                        "PredicateArray": "Il predicato deve essere un array"
+                    },
+                    "Note": "Nota",
+                    "Predicate": "Predicato",
+                    "Special": "Speciale"
+                },
+                "SpecialSkill": "+{mod} {label}"
             },
             "Plural": "Personaggi",
             "IWREditor": {
@@ -3595,7 +3627,9 @@
                     "Perception": "Percezione del Padrone",
                     "ArmorClass": "Classe Armatura Padrone"
                 },
-                "Blurb": "Famiglio di {master}"
+                "Blurb": "Famiglio di {master}",
+                "NoAttribute": "Nessuno (Animale Domestico)",
+                "MinimumAttributeModifier": "Modificatore di Caratteristica Minimo"
             },
             "Hardness": {
                 "ShortLabel": "DUR"
@@ -4350,7 +4384,8 @@
             "NoPCTokenSelected": "Seleziona almeno un token con un PG associato.",
             "RuleElementSyntax": "Errore di sintassi nella definizione di un elemento regola: {message}",
             "WeaponNoDamage": "Quest'arma non fa danni.",
-            "ItemNotFoundByUUID": "Oggetto con UUID \"{uuid}\" non trovato."
+            "ItemNotFoundByUUID": "Oggetto con UUID \"{uuid}\" non trovato.",
+            "MissingStatisticSelected": "Manca la statistica {statistic} negli attori selezionati."
         },
         "ItemLevel": "{type} {level}",
         "ItemMystified": "Mistificato",
@@ -4660,7 +4695,8 @@
                 "AddDialogText": "Aggiungere {count} risultato/i alla Tabella di Tiro?",
                 "CreateLabel": "Crea Tabella di Tiro",
                 "SelectTableTitle": "Seleziona Tabella di Tiro",
-                "WeightLabel": "Peso"
+                "WeightLabel": "Peso",
+                "TooManyResults": "La lista risultante di dimensione {size} è troppo grande. La massima grandezza è {maxSize}"
             },
             "TabCampaign": "Campagna"
         },
@@ -4787,7 +4823,8 @@
                     "resistance": "Resistente a {type}: {adjustment}",
                     "ignored": "Resistenza a {type} ignorata!",
                     "unaffected": "Non è influenzato da {type}: {adjustment}",
-                    "reduction": "Ridotto da {type}: {adjustment}"
+                    "reduction": "Ridotto da {type}: {adjustment}",
+                    "redirect": "Resistente a {type} (trattato come {redirect}): {adjustment}"
                 },
                 "CompositeLabel": {
                     "Exceptions0DoubleVs0": "{type} {value}",
@@ -4913,7 +4950,12 @@
                     "duskwood": "legnoscuro",
                     "detection": "rilevamento",
                     "siccatite": "siccatite",
-                    "alchemical": "alchemico"
+                    "alchemical": "alchemico",
+                    "axes": "ascie",
+                    "arcane": "arcano",
+                    "divine": "divino",
+                    "occult": "occulto",
+                    "primal": "primevo"
                 },
                 "ActorIsImmune": "{actor} è immune a {effect}.",
                 "ActorIsUnaffected": "{actor} non è influenzato da {effect}."
@@ -5091,6 +5133,14 @@
             "TogglePartySheet": {
                 "Label": "Apri/Chiudi Scheda del Gruppo",
                 "Hint": "Apri o chiudi la scheda del gruppo attivo o (se un giocatore) assegnato."
+            },
+            "CycleTokenStack": {
+                "Hint": "Alterna gli indici Z della pila di token sotto il cursore del mouse, portando in fondo il token in cima.",
+                "Label": "Alterna Pila di Token"
+            },
+            "PlaceWaypoint": {
+                "Hint": "Posiziona un waypoint mentre fai una misurazione con il trascinamento.",
+                "Label": "Posiziona un Waypoint (Misurazione di Trascinamento)"
             }
         },
         "KitItems": "Oggetti",
@@ -5364,7 +5414,8 @@
                     "None": "Nessuno",
                     "Override": "Sovrascritto {value}",
                     "Splash": "{damageType} Da Spargimento",
-                    "TitleCritical": "Tiro per i Danni Critici"
+                    "TitleCritical": "Tiro per i Danni Critici",
+                    "OverrideLabel": "Sovrascrivi"
                 },
                 "Check": {
                     "Substitution": "Sostituzione",
@@ -5565,7 +5616,8 @@
                 "Label": "Atteggiamento Segreto",
                 "Hint": "Attiva l'atteggiamento \"segreto\", che mostra un bordo viola per i possessori e nessun bordo o modifica al cursore per gli altri."
             },
-            "Flanking": "Fiancheggiare"
+            "Flanking": "Fiancheggiare",
+            "ActorLinkForced": "Gli attori {type} non possono essere scollegati."
         },
         "TotalTreasure": "Totale Tesoro",
         "TotalCoinage": "Totale Monete",
@@ -5672,20 +5724,20 @@
         "TraitDescriptionAdditive": "I talenti con questo tratto permettono di utilizzare azioni per aggiungere sostanze speciali a bombe o elisir. Puoi aggiungere un solo additivo a un singolo oggetto alchemico: provare ad aggiungerne un altro compromette l'oggetto. In genere, puoi effettuare azioni con il tratto additivo solo quando crei un oggetto alchemico infuso, e alcune possono essere utilizzate solo con l'azione Alchimia Rapida. Il tratto additivo è sempre seguito da un livello, per esempio additivo 2. Un additivo somma il suo livello a quello dell'oggetto alchemico che stai modificando; il totale rappresenta il nuovo livello di miscela. Il livello dell'oggetto di quest'ultima non può superare il tuo livello di alchimia avanzata",
         "TraitDescriptionAeon": "Questi osservatori sono i sedicenti difensori della realtà. Gli eoni tradizionali hanno forme e nature dualistiche e perseguono una dicotomia di interessi, a differenza degli assiomiti e degli inevitabili. Ad eccezione degli assiomiti e degli inevitabili, gli eoni comunicano attraverso uno strano miscuglio di telepatia e di percezioni sensoriali chiamato previsualizzazione.",
         "TraitDescriptionAgile": "La penalità per attacchi multipli che subisci al secondo attacco portato con quest'arma è -4 anzichè -5 e -8 anzichè -10 al terzo attacco e ai successivi.",
-        "TraitDescriptionAir": "Gli effetti con il tratto aria manipolano o evocano aria. Quelli che manipolano l'aria non hanno effetto nel vuoto o in un'area priva di aria. Le creature con questo tratto sono fatte principalmente di aria o hanno una connessione magica con quell'elemento.",
-        "TraitDescriptionAlchemical": "Gli oggetti alchemici sono alimentati da reazioni di reagenti alchemici. Gli oggetti alchemici non sono magici e non irradiano un'aura mgica.",
+        "TraitDescriptionAir": "Gli effetti con il tratto aria manipolano o evocano aria. Quelli che manipolano l'aria non hanno effetto nel vuoto o in un'area priva di aria. Le creature con questo tratto sono fatte principalmente di aria o hanno una connessione con l'aria magica.",
+        "TraitDescriptionAlchemical": "Gli oggetti alchemici sono alimentati da reazioni di reagenti alchemici. Gli oggetti alchemici non sono magici e non irradiano un'aura magica. Le creature alchemica sono parzialmente alimentate da reazioni alchemiche.",
         "TraitDescriptionAlchemist": "Questo indica le capacità legate alla classe dell'alchimista.",
-        "TraitDescriptionAmphibious": "Una creatura anfibia può respirare in acqua e nell'aria, anche al di fuori del suo elemento preferito, in genere a tempo indeterminato, o quanto meno per qualche ora. Queste creature spesso possiedono una Velocità di Nuotare. I loro Colpi senz'armi contundenti e taglienti non subiscono la consueta penalità -2 dovuta al fatto di essere sott'acqua.",
+        "TraitDescriptionAmphibious": "Una creatura anfibia può respirare in acqua e nell'aria, anche al di fuori del suo elemento preferito, in genere a tempo indeterminato, o quanto meno per qualche ora. Queste creature spesso possiedono una Velocità di Nuotare. I loro Colpi senz'armi contundenti e taglienti non subiscono la consueta penalità –2 dovuta al fatto di essere sott'acqua.",
         "TraitDescriptionAnadi": "Gli anadi sono Umanoidi pacifici e solitari che vivono nel cuore di boschi, giungle e altre aree naturali dove non sono giunte le razze civilizzate. La loro forma naturale ricorda dei ragni umanoidi coperti da delle striature colorate piuttosto belle e distintive.",
         "TraitDescriptionAphorite": "Un erede planare che discende da una creatura di Axis, il Piano della Legge.",
         "TraitDrow": "Drow",
-        "TraitDescriptionArcane": "Questa magia deriva dalla tradizione arcana, che si basa sulla logica e sulla tradizionalità. Qualsiasi cosa possieda questo tratto è magica.",
+        "TraitDescriptionArcane": "Questa magia deriva dalla tradizione arcana, che si basa sulla logica e sulla tradizionalità. Qualsiasi cosa possieda questo tratto è magica. Una creatura con questo tratto è principalmente costituita o ha un forte legame con la magia arcana.",
         "TraitDescriptionArchetype": "Questo talento appartiene ad un archetipo.",
         "TraitDescriptionAttached": "Un'arma unita deve essere combinata con un altro pezzo di equipaggiamento per essere usata. Il tratto specifica a che tipo di oggetto deve essere unita l'arma. Devi impugnare o indossare l'oggetto a cui l'arma è unita per poter attaccare con essa. Ad esempio, la chiodatura per scudo è unita a uno scudo, permettendoti di attaccare con gli spuntoni anziché con il colpo di scudo, ma solo se stai impugnando lo scudo stesso. Un'arma unita è, di solito, fissata o assemblata assieme all'oggetto a cui è unita e un oggetto può, generalmente, essere unito a una sola arma. Un'arma unita può essere applicata a un oggetto con 10 minuti di lavoro e un successo in una prova di @Check[type:crafting|dc:10]; questo include il tempo necessario a rimuovere l'arma da un oggetto precedente, se necessario. Se un oggetto viene distrutto, l'arma unita ad esso può di solito essere recuperata.",
         "TraitDescriptionAttack": "Una capacità con questo tratto comporta un attacco. Per ogni attacco effettuato oltre il primo del tuo turno, subisci una Penalità da Attacchi Multipli.",
         "TraitDescriptionAuditory": "Le azioni e gli effetti uditivi si basano sul suono. Un'azione con il tratto uditivo può essere eseguita con successo solo se la creatura che usa l'azione può parlare o produrre in altro modo i suoni richiesti. Un incantesimo, o un effetto con il tratto uditivo produce il suo effetto solo se il bersaglio può sentirlo. Questo vale solo per le parti dell'effetto basate sul suono, come stabilito dal GM. Questo è diverso da un effetto sonoro, che influenza comunque i bersagli che non riescono a sentirlo (per esempio i bersagli sordi) a patto che l'effetto stesso emetta un suono.",
         "TraitDescriptionAura": "Un'aura è un'emanazione che fluisce continuamente da te, influenzando le creature entro un certo raggio. L'aura può anche riferirsi alla firma magica di un oggetto o di una creatura con un forte allineamento.",
-        "TraitDescriptionAzarketi": "Umanoidi anfibi che vivono nel Mare Interno. Si dice che discendano dai popoli azlanti. Sono anche chiamati uomini pesce o Azlanti Inferiori.",
+        "TraitDescriptionAzarketi": "Umanoidi anfibi che vivono nei mari della regione del Mare Interno. Si dice che discendano dai popoli azlanti. Sono anche chiamati uomini pesce o Azlanti Inferiori. Gli azarketi sono un ramo umano adattatosi a vivere in comunità acquatiche. Hanno branchie, dita palmate e piccole pinne e possono sopravvivere sia dentro che fuori dall'acqua.",
         "TraitDescriptionBackstabber": "Quando colpisci una creatura impreparata, quest'arma infligge 1 danno di precisione oltre al suo normale danno. Il danno di precisione aumenta a 2 se l'arma è un'arma +3.",
         "TraitDescriptionBackswing": "Puoi usare lo slancio di un attacco mancato con quest'arma per lanciarti nel tuo prossimo attacco. Dopo aver mancato con quest'arma nel tuo turno ottieni bonus di circostanza + 1 al tuo prossimo attacco con quest'arma effettuato entro la fine del tuo turno.",
         "TraitDescriptionBarbarian": "Questo tratto indica le capacità legate alla classe del barbaro.",
@@ -5696,9 +5748,9 @@
         "TraitDescriptionBulwark": "L'armatura ti copre così completamente da fornire benefici contro alcuni effetti dannosi. Ai Tiri Salvezza sui Riflessi per evitare un effetto dannoso, come una palla di fuoco, aggiungi un modificatore +3 invece del tuo modificatore di Destrezza.",
         "TraitDescriptionBrutal": "Un attacco a distanza con questo tratto usa il suo modificatore di Forza invece del suo modificatore di Destrezza al tiro per colpire.",
         "TraitDescriptionCantrip": "Un incantesimo che puoi lanciare a volontà e che viene automaticamente intensificato a metà del tuo livello arrotondato per eccesso.",
-        "TraitDescriptionCatfolk": "Una creatura con questo tratto è un membro della razza Catfolk.",
+        "TraitDescriptionCatfolk": "Una creatura con questo tratto è un membro della razza felinide. I felinidi sono umanoidi dai tratti felini.",
         "TraitDescriptionChampion": "Questo tratto indica le capacità legate alla classe del campione.",
-        "TraitDescriptionChangeling": "Una creatura con questo tratto è un membro della razza Changeling.",
+        "TraitDescriptionChangeling": "Una creatura con questo tratto ha il lignaggio versatile changeling. I changeling sono figli delle megere e dei membri di altre stirpi umanoidi. Una abilità con questo tratto può essere usata o selezionata solo dai changeling.",
         "TraitDescriptionCleric": "Questo tratto indica le capacità legate alla classe del chierico.",
         "TraitDescriptionCold": "Gli effetti con questo tratto infliggono danni da freddo. Le creature con questo tratto hanno una connessione con il freddo magico.",
         "TraitDescriptionComfort": "L'Armatura è talmente comoda che puoi riposare normalmente mentre la stai indossando.",
@@ -5708,10 +5760,10 @@
         "TraitDescriptionComposition": "Per lanciare un trucchetto di composizione o un incantesimo focalizzato, utilizzi un tipo di Esibizione. Se l'incantesimo prevede un componente verbale, devi utilizzare un'esibizione con il tratto uditivo, mentre se prevede un componente somatico devi impiegarne una con il tratto visivo. L'incantesimo ottiene tutti i tratti dell'esibizione utilizzata. Puoi lanciare un solo incantesimo di composizione per turno, e puoi averne attivo solo uno alla volta. Se lanci un nuovo incantesimo di composizione, gli effetti in corso prodotti da precedenti incantesimi di composizione terminano all'istante.",
         "TraitDescriptionConcealable": "Quest'arma è concepita per non essere appariscente o per essere occultata con facilità. Ottieni bonus di circostanza +2 alle prove di Furtività e alle CD per nascondere un'arma con questo tratto.",
         "TraitDescriptionConcentrate": "Un'azione con questo tratto richiede un certo grado di concentrazione e disciplina mentale.",
-        "TraitDescriptionDhampir": "Una creatura con questo tratto è membro della stirpe dhampir. Questi umanoidi sono la progenie immortale dei vampiri e dei membri di altri retaggi.",
+        "TraitDescriptionDhampir": "Una creatura con questo tratto ha il lignaggio versatile dhampir. Questi umanoidi sono la progenie di vampiri e dei membri di altri retaggi.",
         "TraitDescriptionConsecration": "Un incantesimo di consacrazione migliora un'area per un lungo periodo di tempo. Una determinata area può avere un solo effetto di consacrazione alla volta. Il nuovo effetto tenta di contrastare qualsiasi esistente in aree di sovrapposizione.",
         "TraitDescriptionConsumable": "Un oggetto con questo tratto può essere usato una sola volta. Se non diversamente specificato, viene distrutto dopo l'attivazione. Gli oggetti monouso includono gli oggetti alchemici e quelli magici che si possono usare solo una volta, come pergamene e talismani. Quando un personaggio crea oggetti monouso, può crearli in partite da quattro.",
-        "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dalla necromanzia. I costrutti sono spesso privi di intelletto; sono immuni alle malattie, alla condizione paralizzato e al veleno; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
+        "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dall'energie positive o negative. I costrutti sono spesso privi di intelletto; sono immuni al sanguinamento, effetti di morte, malattie, guarigione, attacchi non letali, veleno, spirito, positivo, negativo e alle condizioni condannato, risucchiato, affaticato, paralizzato, nauseato e privo di sensi; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
         "TraitDescriptionContact": "Questo veleno viene rilasciato al contatto con la pelle.",
         "TraitDescriptionCurse": "Una maledizione è un effetto che provoca un'afflizione a lungo termine su una creatura. Le maledizioni sono sempre magiche e in genere sono il risultato di un incantesimo o una trappola. Gli effetti con questo tratto possono essere rimossi solo da effetti che prendono di mira specificamente le maledizioni.",
         "TraitDescriptionCursed": "Un oggetto con questo tratto è maledetto causando problemi al suo proprietario. Una maledizione non viene individuata quando l'oggetto è identificato, sebbene un successo critico riveli sia la presenza che l'esatta natura della maledizione. Gli oggetti maledetti non possono essere scartati una volta che sono stati innescati o investiti per la prima volta. L'oggetto può essere rimosso solo se viene rimossa anche la maledizione.",
@@ -5722,13 +5774,13 @@
         "TraitDescriptionDedication": "Devi selezionare un talento con questo tratto per applicare un Archetipo al tuo personaggio.",
         "TraitDescriptionDisarm": "Puoi usare quest'arma per Disarmare con l'abilità Atletica anche se non hai una mano libera. Questo effetto usa la portata dell'arma (se differente dalla tua) e aggiunge il bonus di oggetto dell'arma al Tiro per Colpire (se ne ha uno) come bonus di oggetto alla prova di Atletica. Se realizzi un fallimento critico alla prova per Disarmare usando l'arma, puoi lasciar andare l'arma per ottenere gli effetti di un fallimento anziché quelli di un fallimento critico. Con un successo critico hai comunque bisogno di una mano libera se desideri prendere l'oggetto.",
         "TraitDescriptionDisease": "Un effetto con questo tratto applica una o più malattie. Una malattia è in genere un'Afflizione.",
-        "TraitDescriptionDivine": "Questa magia proviene dalla tradizione divina e attinge potere da divinità o fonti simili. Qualsiasi cosa con questo tratto è magica.",
+        "TraitDescriptionDivine": "Questa magia proviene dalla tradizione divina e attinge potere da divinità o fonti simili. Qualsiasi cosa con questo tratto è magica. Una creatura con questo tratto è principalmente costituita da o ha una forte connessione con la magia divina.",
         "TraitDescriptionDowntime": "Un'attività con questo tratto richiede un giorno o più e può essere utilizzata solo durante i tempi di inattività.",
         "TraitDescriptionDrug": "Un oggetto con questa caratteristica è un farmaco, un veleno che trasmette benefici a breve termine oltre a effetti collaterali dannosi e conseguenze a lungo termine. Ogni volta che una creatura usa una data droga deve anche tentare un tiro salvezza contro la dipendenza da quella droga.",
         "TraitDescriptionDruid": "Questo tratto indica le capacità legate alla classe del druido.",
         "TraitDescriptionDuskwalker": "Una creatura con questo tratto ha il lignaggio versatile viandante crepuscolare. I viandanti crepuscolari sono eredi planari pregni dell'energia soprannaturale degli psicopompi. Una capacità con questo tratto può essere usata o selezionata solo dai viandanti crepuscolari.",
         "TraitDescriptionDwarf": "Una creatura con questo tratto è un membro della stirpe nanica. I nani sono un popolo robusto che spesso vive sottoterra e in genere ha Scurovisione. Una capacità con questo tratto può essere usata o selezionata solo dai nani. Un oggetto con questo tratto viene creato e utilizzato dai nani.",
-        "TraitDescriptionEarth": "Gli effetti con il tratto terra manipolano o evocano la terra. Quelli che manipolano la terra non hanno alcun effetto in un'area priva di terra. Le creature con questo tratto sono fatte principalmente di terra o hanno una connessione magica con quell'elemento..",
+        "TraitDescriptionEarth": "Gli effetti con il tratto terra manipolano o evocano la terra. Quelli che manipolano la terra non hanno alcun effetto in un'area priva di terra. Le creature con questo tratto sono fatte principalmente di terra o hanno una connessione con la terra magica.",
         "TraitDescriptionElectricity": "Gli effetti con questo tratto infiggono danni da elettricità. Una creatura con questo tratto ha una connessione magica con l'elettricità.",
         "TraitDescriptionElf": "Una creatura con questo tratto è un membro della stirpe elfica. Gli elfi sono un popolo misterioso con ricche tradizioni legate a magia ed erudizione in genere hanno Visione Crepuscolare. Una capacità con questo tratto può essere usata o selezionata solo dagli elfi. Un'arma con questo tratto viene creata e utilizzata dagli elfi.",
         "TraitDescriptionEmotion": "Questo effetto altera le emozioni di una creatura. Gli effetti con questo tratto hanno sempre anche il Tratto Mentale. Le creature con addestramento speciale o con intelligenza meccanica o artificiale sono immuni agli effetti di emozione.",
@@ -5742,7 +5794,7 @@
         "TraitDescriptionFighter": "Questo tratto indica le capacità legate alla classe del guerriero.",
         "TraitDescriptionFinesse": "Puoi usare il tuo modificatore di Destrezza al posto del tuo modificatore di Forza per i Tiri per Colpire quando attacchi con quest'arma. Usi ancora il modificatore di Forza quando calcoli il danno.",
         "TraitDescriptionFinisher": "Le mosse finali sono azioni spettacolari che utilizzano la tua spavalderia. Puoi usare una mossa finale solo se hai spavalderia, e perdi la spavalderia immediatamente dopo aver eseguito una mossa finale. Una volta che hai usato una mossa finale, non puoi usare azioni che hanno il tratto attacco per il resto del tuo turno. Alcune azioni con il tratto mossa finale concedono un effetto anche in caso di fallimento, ma tali effetti non si applicano in caso di fallimento critico. Se l'azione di mossa finale ha successo, puoi comunque scegliere di applicare al suo posto l'effetto di fallimento.",
-        "TraitDescriptionFire": "Gli effetti con il tratto fuoco infliggono danni da fuoco oppure evocano o manipolano il fuoco. Quelli che manipolano il fuoco non hanno effetto in un'area priva di fuoco. Le creature con questo tratto sono fatte principalmente di fuoco o hanno una connessione magica con quell'elemento.",
+        "TraitDescriptionFire": "Gli effetti con il tratto fuoco infliggono danni da fuoco oppure evocano o manipolano il fuoco. Quelli che manipolano il fuoco non hanno effetto in un'area priva di fuoco. Le creature con questo tratto sono fatte principalmente di fuoco o hanno una connessione con il fuoco magico.",
         "TraitDescriptionFleshwarp": "Un umanoide così completamente trasfigurato da forze esterne da essere ormai parte di una stirpa a sé stante.",
         "TraitDescriptionFlexible": "L'armatura è abbastanza flessibile da non ostacolare la maggior parte delle azioni. Non applichi la sua penalità alle prove per le prove di Acrobazia o Atletica.",
         "TraitDescriptionFlourish": "Le azioni di ostentazione sono azioni che richiedono uno sforzo eccessivo per eseguirne un numero elevato di seguito. Puoi usare solo 1 azione con il tratto ostentazione per turno.",
@@ -5753,13 +5805,13 @@
         "TraitDescriptionFortune": "Un effetto di fortuna altera in maniera benefica il modo in cui tiri i dadi. Non puoi mai avere più di un effetto di fortuna che altera un singolo tiro. Se si applicano più effetti di fortuna, devi scegliere quale usare. Se un effetto di fortuna e un effetto di sfortuna si applicano allo stesso tiro, i due si annullano a vicenda e si tira normalmente.",
         "TraitDescriptionFreeHand": "Quest'arma non occupa la tua mano, di solito perché è integrata nell'armatura. Un'arma con mano libera non può essere Disarmata. Puoi usare la mano coperta dalla tua arma con mano libera per impugnare altri oggetti, effettuare azioni di manipolazione e così via. Non puoi attaccare con un'arma con mano libera se stai impugnando in quella mano qualcos'altro o se stai usando in qualche altro modo quella mano. Quando non stai impugnando nulla e non stai usando la mano in qualche altro modo, puoi usare le capacità che ti richiedono di avere una mano libera così come quelle che ti richiedono di impugnare un'arma in quella mano. Ognuna delle tue mani può avere una sola arma con mano libera equipaggiata.",
         "TraitDescriptionGanzi": "Un erede planare che discende da una creatura caotica del Maelstrom, come un protean.",
-        "TraitDescriptionGenie": "Le varie famiglie di geni occupano posizioni di spicco sui Piani Elementali. Sono dotati di potenti capacità magiche.",
+        "TraitDescriptionGenie": "Le varie famiglie di geni occupano posizioni di spicco sui piani elementali. Sono dotati di potenti capacità magiche.",
         "TraitDescriptionGeniekin": "Termine generico per gli eredi planari che discendono dalle creature dei Piani Elementali.",
         "TraitDescriptionGeneral": "Un tipo di talento che ogni personaggio può selezionare, indipendentemente da Stirpe e Classe, purché soddisfi i prerequisiti. Puoi selezionare un talento con questo tratto quando la tua Classe ti concede un talento generico.",
         "TraitDescriptionGnoll": "Gli gnoll sono umanoidi simili alle iene.",
         "TraitDescriptionGnome": "Una creatura con questo tratto è un membro della stirpe gnomesca. Gli Gnomi sono un piccolo popolo esperto di magia, sempre in cerca di nuove esperienze, e di solito hanno Visione Crepuscolare. Una capacità con questo tratto può essere usata o selezionata solo dagli gnomi. Un'arma con questo tratto viene creata e utilizzata dagli gnomi.",
-        "TraitDescriptionGoblin": "Una creatura con questo tratto può provenire da varie specie di creature, tra cui goblin, hobgoblin e bugbear. I goblin tendono ad avere Scurovisione. Una capacità con questo tratto può essere usata o selezionata solo dai goblin. Un'arma con questo tratto viene creata e utilizzata dai goblin.",
-        "TraitDescriptionKobold": "Una creatura con questo tratto è un membro della stirpe Coboldo.",
+        "TraitDescriptionGoblin": "Una creatura con questo tratto è un goblinoide piccolo e frenetico. I goblin tendono ad avere scurovisione. Una capacità con questo tratto può essere usata o selezionata solo dai goblin. Un'arma con questo tratto viene creata e utilizzata dai goblin.",
+        "TraitDescriptionKobold": "Una creatura con questo tratto è un membro della stirpe coboldo. I coboldi sono rettili umanoidi di taglia insolitamente Piccola, solitamente dotati di scurovisione.",
         "TraitDuergar": "Duergar",
         "TraitDescriptionGrapple": "Puoi usare quest'arma per Lottare usando l'abilità Atletica anche se non hai una mano libera. Questo tratto usa la portata dell'arma (se diversa dalla tua) e aggiunge il bonus di oggetto dell'arma ai Tiri per Colpire come bonus di oggetto alle prove di Atletica. Se realizzi un fallimento critico ad una prova di Lottare usando l'arma, puoi lasciar andare l'arma per ottenere gli effetti di un fallimento anziché quelli di un fallimento critico.",
         "TraitDescriptionGrippli": "I grippli sono una famiglia di creature umanoidi simili a una rana",
@@ -5774,7 +5826,7 @@
         "TraitDescriptionKitsune": "Umanoidi mutaforma il cui aspetto originario ricorda le volpi.",
         "TraitDuskwalker": "Viandante Crepuscolare",
         "TraitDescriptionIncapacitation": "Una capacità con questo tratto. Può eliminare completamente un personaggio dal combattimento o addirittura ucciderlo: ed è più difficile da usare su un personaggio più potente. Se un incantesimo ha il tratto incapacitazione, qualsiasi creatura con più del doppio del grado dell'incantesimo tratta il risultato della sua prova per evitare di essere incapacitato dall'incantesimo come un grado di successo migliore. O il risultato di qualsiasi prova fatta dall'incantatore per renderlo incapacitato come un grado di successo peggiore. Se qualsiasi altro effetto ha il tratto incapacitazione, una creatura di livello superiore rispetto all'oggetto, alla creatura o al pericolo che genera l'effetto ottiene gli stessi benefici.",
-        "TraitDescriptionIncorporeal": "Una creatura o un oggetto incorporeo non possiede alcuna forma fisica. Può passare attraverso gli oggetti solidi, incluse le pareti. Quando si trova all'interno di un oggetto, una creatura incorporea non può percepire, attaccare o interagire con nulla che si trovi all’esterno dell'oggetto, e se inizia il suo turno in un oggetto è rallentata 1. Le creature corporee possono passare attraverso una creatura incorporea, ma non possono terminare il loro movimento nel suo spazio. Una creatura incorporea non può tentare prove basate sulla Forza contro le creature o gli oggetti fisici (può farlo solo contro quelli incorporei) a meno che tali oggetti non possiedano la runa di proprietà tocco fantasma. Analogamente, una creatura corporea non può tentare prove basate sulla Forza contro creature o oggetti incorporei. Le creature incorporee solitamente sono dotate di immunità agli effetti o alle condizioni che richiedono un corpo fisico, come le malattie, i veleni e i danni di precisione. Solitamente sono dotate di resistenza contro tutti i danni (tranne i danni da forza e i danni dei Colpi con la runa di proprietà tocco fantasma) e doppia resistenza contro i danni non magici.",
+        "TraitDescriptionIncorporeal": "Una creatura o un oggetto incorporeo non possiede alcuna forma fisica. Può passare attraverso gli oggetti solidi, incluse le pareti. Quando si trova all'interno di un oggetto, una creatura incorporea non può percepire, attaccare o interagire con nulla che si trovi all’esterno dell'oggetto, e se inizia il suo turno in un oggetto è rallentata 1 fino alla fine del suo turno. Le creature corporee e incorporee possono passarsi attraverso, ma non possono terminare il loro movimento nello spazio dell'altra. Una creatura incorporea non può tentare prove basate sulla Forza contro le creature o gli oggetti fisici (può farlo solo contro quelli incorporei) a meno che tali oggetti non possiedano la runa di proprietà tocco fantasma. Analogamente, una creatura corporea non può tentare prove basate sulla Forza contro creature o oggetti incorporei. Le creature incorporee solitamente sono dotate di immunità agli effetti o alle condizioni che richiedono un corpo fisico, come le malattie, i veleni e i danni di precisione. Solitamente sono dotate di resistenza contro tutti i danni (tranne i danni da forza, danni spirito e i danni dei Colpi con la runa di proprietà tocco fantasma) e doppia resistenza contro i danni non magici.",
         "TraitDescriptionInfused": "Utilizzando i reagenti infusi hai creato un oggetto alchemico con il tratto infuso, che diventa inerte una volta trascorso un tempo limitato. Gli effetti non permanenti prodotti dai tuoi oggetti alchemici infusi, a eccezione di afflizioni quali i veleni ad azione lenta, terminano quando effettui nuovamente i Preparativi Giornalieri.",
         "TraitDescriptionIngested": "Questo veleno viene somministrato quando viene bevuto o mangiato.",
         "TraitDescriptionInhaled": "Questo veleno viene somministrato quando viene inspirato.",
@@ -5782,16 +5834,16 @@
         "TraitDescriptionIntelligent": "Un oggetto con questo tratto è intelligente e possiede volontà e personalità proprie, come anche svariate statistiche che la maggio parte degli oggetti non possiede. Gli oggetti intelligenti non possono essere fabbricati con mezzi normali e sono sempre rari o unici.",
         "TraitDescriptionInvested": "Un personaggio può indossare solo 10 oggetti magici che hanno il tratto investito. Nessuno degli effetti magici dell'oggetto si applica se il personaggio non lo ha investito, né può essere attivato, anche se il personaggio ottiene comunque i normali benefici dall'indossare l'oggetto fisico (come un cappello che tiene lontana la pioggia dalla testa).",
         "TraitDescriptionInvestigator": "Questo tratto indica le capacità legate alla classe dell'investigatore.",
-        "TraitDescriptionLeshy": "Le creatura con questo tratto fanno parte della stirpe leshy.",
+        "TraitDescriptionLeshy": "Le creatura con questo tratto fanno parte della stirpe leshy. Queste piccole creature vegetali hanno una forma vagamente umanoide.",
         "TraitDescriptionLight": "Gli effetti di luce sopraffanno l'oscurità non magica nell'area e possono contrastare l'oscurità magica. Di solito devi prendere direttamente come bersaglio la magia di oscurità con la tua magia di luce per contrastare l'oscurità, ma alcuni incantesimi di luce tentano automaticamente di contrastare l'oscurità.",
         "TraitDescriptionLinguistic": "Un effetto con questo tratto dipende dalla comprensione della lingua. Un effetto linguistico che prende come bersaglio una creatura funziona solo se il bersaglio comprende la lingua che stai usando.",
         "TraitDescriptionLitany": "Le litanie sono speciali incantesimi di devozione, tipicamente usati dai Campioni e che richiedono una singola azione, che di solito danno un'immunità temporanea a ulteriori litanie.",
-        "TraitDescriptionLizardfolk": "I lucertoloidi sono una famiglia di rettili umanoidi.",
+        "TraitDescriptionLizardfolk": "I lucertoloidi sono una famiglia di rettili umanoidi. Questi umanoidi rettiliani, anche conosciuti come iruxi, sono estremamente adattabili e pazienti.",
         "TraitDescriptionMagical": "Qualcosa che abbia il tratto magico è intriso di energie magiche non legate a una specifica tradizione magica. Alcuni oggetti o effetti sono strettamente legati a una particolare tradizione magica. In questi casi l'oggetto ha il tratto arcano, divino, occulto o primevo invece del tratto magico. Ognuno di questi tratti indica che l'oggetto è magico.",
         "TraitDescriptionManipulate": "Per usare un'azione con questo tratto devi maneggiare fisicamente un oggetto o fare gesti. Le creature senza appendici adeguate non possono eseguire azioni con questo tratto. Le azioni di maneggiare spesso innescano Reazioni.",
         "TraitDescriptionMechanical": "Un pericolo con questo tratto è un oggetto fisico costruito.",
         "TraitDescriptionMental": "Un effetto mentale può alterare la mente del bersaglio, Non ha alcun effetto su un oggetto o una creatura con il tratto Privo di Intelletto.",
-        "TraitDescriptionMindless": "Una creatura con il tratto privo di intelletto ha attributi mentali che sono stati programmati o sono rudimentali. La maggior parte, se non tutti, dei modificatori delle loro capacità mentali è -5. Sono immuni a tutti gli effetti mentali.",
+        "TraitDescriptionMindless": "Una creatura con il tratto privo di intelletto ha attributi mentali che sono stati programmati o sono rudimentali. La maggior parte, se non tutti, dei modificatori delle loro capacità mentali è –5. Sono immuni a tutti gli effetti mentali.",
         "TraitDescriptionMisfortune": "Un effetto di sfortuna altera in maniera dannosa il modo in cui tiri i dadi. Non puoi mai avere più di un effetto sfortuna che altera un singolo tiro. Se si applicano più effetti di sfortuna, il GM decide qual è il peggiore e lo applica. Se un effetto di fortuna e sfortuna si applicano allo stesso tiro, i due si annullano a vicenda e si tira normalmente.",
         "TraitDescriptionModular": "L'arma ha diverse configurazioni che possono essere alternate usando un'azione Interagire. Solitamente, passare da una configurazione di un'arma modulare all'altra permette di infliggere un tipo di danno diverso (indicato nel tratto, come \"modulare C, P, o T\"), sebbene sia possibile che la descrizione di un'arma modulare elenchi configurazioni più complesse.",
         "TraitDwarf": "Nano",
@@ -5804,12 +5856,12 @@
         "TraitDescriptionNone": "Questo tratto non ha nessuna descrizione.",
         "TraitDescriptionNonlethal": "Gli attacchi di quest'arma sono Non Letali e sono usati per far cadere le vittime Prive di Sensi anziché ucciderle. Puoi usare un'arma non letale per effettuare un attacco letale con penalità di circostanza -2.",
         "TraitDescriptionOath": "I giuramenti aggiungono un ulteriore precetto al tuo codice. Solitamente puoi possedere un solo talento con questo tratto.",
-        "TraitDescriptionOccult": "Questa magia deriva dalla tradizione occulta e invoca misteri bizzarri ed effimeri. Qualsiasi cosa con questo tratto è magica.",
+        "TraitDescriptionOccult": "Questa magia deriva dalla tradizione occulta e invoca misteri bizzarri ed effimeri. Qualsiasi cosa con questo tratto è magica. Una creatura con questo tratto è principalmente costituita da o ha un forte legame con la magia occulta.",
         "TraitDescriptionOlfactory": "Un effetto olfattivo può influenzare solo le creature che possono annusarlo. Questo si applica solo alle parti olfattive dell'effetto, come determinato dal GM.",
         "TraitDescriptionOracle": "Questo tratto indica le capacità legate alla classe del oracolo.",
         "TraitDescriptionOread": "Gli oread sono eredi planari che discendono dagli shaitan.",
         "TraitDescriptionSprite": "Una famiglia di minuscoli fatati alati fortemente legati alla magia primeva.",
-        "TraitDescriptionOrc": "Una creatura con questo tratto è un membro della stirpe orchesca. Un'arma con questo tratto è un arma che gli Orchi fabbricano ed utilizzano.",
+        "TraitDescriptionOrc": "Una creatura con questo tratto è un membro della stirpe orchesca, questo popolo dalla pelle verde tende ad avere scurovisione. Un'arma con questo tratto è un arma che gli orchi fabbricano ed utilizzano.",
         "TraitDescriptionParry": "Quest'arma può essere usata in modo difensivo per bloccare gli attacchi. Quando impugni quest'arma, se la tua competenza con essa è Addestrato o migliore, puoi spendere una azione per assumere una postura difensiva con la tua arma ottenendo bonus di circostanza +1 alla CA fino all'inizio del tuo prossimo turno.",
         "TraitDescriptionPlant": "Le creature vegetali hanno il tratto vegetale e si distinguono dalle piante normali. Gli effetti magici con questo tratto manipolano o evocano in qualche modo piante o materia vegetale. Quelli che manipolano le piante non hanno alcun effetto in un'area priva di piante.",
         "TraitDescriptionPoison": "Un effetto con questo tratto trasmette veleno o infligge danni da veleno. Un oggetto con questo tratto è velenoso e potrebbe causare un'afflizione.",
@@ -5819,14 +5871,14 @@
         "TraitDescriptionPrediction": "Gli effetti con questo tratto determinano cosa è probabile che accada nel prossimo futuro. La maggior parte delle predizioni sono divinazioni.",
         "TraitDescriptionPress": "Le azioni con questo tratto ti permettono di proseguire gli attacchi precedenti. Un'azione con il tratto pressione può essere usata solo se ti trovi attualmente sotto gli effetti di una penalità da attacchi multipli. Alcune azioni con il tratto pressione concedono un effetto anche in caso di fallimento. Gli effetti aggiunti in caso di fallimento non si applicano in caso di fallimento critico. Se la tua azione di pressione ha successo, puoi scegliere di applicare al suo posto l'effetto di fallimento (per esempio, potresti voler fare questo quando un attacco non infligge danni a causa della resistenza). Poiché un'azione di pressione richiede una penalità da attacchi multipli, non puoi usarne una quando non è il tuo turno, anche se usi l'attività Preparare.",
         "TraitEarth": "Terra",
-        "TraitDescriptionPrimal": "Questa magia deriva dalla tradizione primeva e si connette al mondo e all'istinto naturale. Qualsiasi cosa con questo tratto è magica.",
+        "TraitDescriptionPrimal": "Questa magia deriva dalla tradizione primeva e si connette al mondo e all'istinto naturale. Qualsiasi cosa con questo tratto è magica. Una creatura con questo tratto è principalmente costituita da o ha un forte legame con la magia primeva.",
         "TraitDescriptionPropulsive": "Aggiungi metà del tuo modificatore di Forza (se positivo) ai tiri per i danni di un'arma a distanza con il tratto propulsivo. Se hai un modificatore di Forza negativo aggiungi invece il tuo intero modificatore di Forza.",
         "TraitDescriptionRage": "Per usare le capacità con questo tratto dei essere infuriato, ed esse terminano automaticamente quando smetti di esserlo.",
         "TraitDescriptionRange": "Questi attacchi elencheranno un intervallo finito o un incremento di gittata, che segue le normali regole per gli incrementi di gittata.",
         "TraitDescriptionRangedTrip": "This weapon can be used to Trip with the Athletics skill at a distance up to the weapon’s first range increment. The skill check takes a –2 circumstance penalty. You can add the weapon’s item bonus to attack rolls as a bonus to the check. As with using a melee weapon to trip, a ranged trip doesn’t deal any damage when used to Trip.",
         "TraitDescriptionRanger": "Questo tratto indica le capacità legate alla classe del ranger.",
         "TraitDescriptionRare": "Questa rarità indica che un elemento delle regole è molto difficile da trovare nel mondo di gioco. Un talento, un incantesimo, un oggetto o simile raro è disponibile per i giocatori solo se il GM decide di includerlo, in genere attraverso la scoperta durante il gioco. Le creature con questo tratto sono rare. Di solito non possono essere evocati. La CD del Ricordare Conoscenza relativa a queste creature è aumentata di 5.",
-        "TraitDescriptionRatfolk": "Una creature con questo tratto è un membro della stirpe Rattoide.",
+        "TraitDescriptionRatfolk": "Una creature con questo tratto è un membro della stirpe rattoide. I rattoidi sono umanoidi simili ai ratti.",
         "TraitDescriptionReach": "Quest'arma è lunga e può essere usata per attaccare creature fino a 3 metri di distanza anziché solo quelle adiacenti. Per le creature che hanno già una portata con 1 mano o gli arti che impugnano l'arma, l'arma incrementa la loro portata di 1,5 metri.",
         "TraitDescriptionReckless": "Le azioni con il tratto spericolato comportano il rischio che un pilota perda il controllo di un veicolo. Quando esegue un'azione spericolata, il pilota deve prima tentare una prova di pilotaggio adeguata a mantenere il controllo del veicolo.",
         "TraitDescriptionReload": "Sebbene tutte le armi abbiano bisogno di una certa quantità di tempo per essere preparate, molte armi a distanza hanno anche bisogno di essere caricate e ricaricate. Questo dato indica quante azioni Interazione sono necessarie per ricaricare tale arma. Il dato può essere 0 se estrarre la munizione e fare fuoco con l'arma fanno parte della stessa azione. Se un oggetto richiede 2 o più azioni per essere ricaricato, il GM determina se debbano essere effettuate insieme come un'attività o se puoi spendere alcune di quelle azioni durante un turno e il resto durante il tuo prossimo turno.",
@@ -5859,7 +5911,7 @@
         "TraitDescriptionTattoo": "Un tatuaggio è un tipo di oggetto che viene disegnato o tagliato nella pelle di una creatura e di solito assume la forma di immagini o simboli.",
         "TraitDescriptionTelepathy": "Un mostro dotato di telepatia può comunicare mentalmente con qualsiasi creatura entro il raggio indicato, fintanto che i due condividono una lingua. Questo non conferisce al mostro alcun accesso speciale ai pensieri della creatura e non comunica nessuna informazione aggiuntiva rispetto a quanto farebbe una normale lingua parlata.",
         "TraitDescriptionTeleportation": "Gli effetti di teletrasporto consentono di spostarsi istantaneamente da un punto nello spazio a un altro. Il teletrasporto di solito non innesca reazioni basate sul movimento.",
-        "TraitDescriptionTengu": "Una creatura con questo tratto è membro della sitrpe dei tengu. I tengu sono umanoidi simili a uccelli. Una capacità con questo tratto può essere usata o selezionata solo dai tengu. Un oggetto con questo tratto viene creato e utilizzato dai tengu.",
+        "TraitDescriptionTengu": "Una creatura con questo tratto è membro della sitrpe dei tengu. I tengu sono umanoidi simili a corvi. Una capacità con questo tratto può essere usata o selezionata solo dai tengu. Un oggetto con questo tratto viene creato e utilizzato dai tengu.",
         "TraitDinosaur": "Dinosauro",
         "TraitDisarm": "Disarmare",
         "TraitDisease": "Malattia",
@@ -5881,7 +5933,7 @@
         "TraitDescriptionVirulent": "Le afflizioni con il tratto virulento sono più difficili da rimuovere. Devi avere successo in due Tiri Salvezza consecutivi per ridurre la fase di un'afflizione virulenta di 1. Un successo critico riduce la fase di un'afflizione virulenta solo di 1 anziché di 2.",
         "TraitDescriptionVisual": "Un effetto visivo può influenzare solo le creature che possono vederlo. Questo vale solo per le parti visibili dell'effetto, come stabilito dal GM.",
         "TraitDescriptionVolley": "Quest'arma a distanza è meno efficace a distanze brevi. I tuoi attacchi contro bersagli che si trovano entro la distanza indicata subiscono penalità -2.",
-        "TraitDescriptionWater": "Gli effetti con il tratto acqua manipolano o evocano acqua. Quelli che manipolano l'acqua non hanno effetto in un'area priva di acqua. Le creature con questo tratto sono fatte principalmente di acqua o hanno una connessione magica con quell'elemento.",
+        "TraitDescriptionWater": "Gli effetti con il tratto acqua manipolano o evocano acqua. Quelli che manipolano l'acqua non hanno effetto in un'area priva di acqua. Le creature con questo tratto sono fatte principalmente di acqua o hanno una connessione con l'acqua magica.",
         "TraitDescriptionWitch": "Questo tratto indica le capacità legate alla classe del fattucchiere.",
         "TraitDescriptionWizard": "Questo tratto indica le capacità legate alla classe del mago.",
         "TraitDescriptionApex": "Quando Investi un Oggetto che ha il tratto apex, questo migliora uno dei tuoi punteggi di caratteristica, aumentandolo di 2 o fino a un totale di 18, a seconda di quale conceda il punteggio più alto. Questo ti dà tutti i benefici del nuovo punteggio di caratteristica fino alla fine dell'investitura. Un oggetto apex concede questo beneficio solo la prima volta che viene investito entro un periodo di 24 ore e puoi beneficare di un solo oggetto apex alla volta. Se provi a investire un oggetto apex quando ne hai già investito uno, non ottieni l'incremento del punteggio di caratteristica, pur ottenendo altri effetti dall'Investitura dell'Oggetto.",
@@ -6448,7 +6500,7 @@
                 "sword-cane": "Bastone Animato",
                 "tamchal-chakram": "Chakram Tamchal",
                 "taw-launcher": "Lanciabiglie",
-                "tekko-kagi": "Tekko-kagi",
+                "tekko-kagi": "Tekko-Kagi",
                 "temple-sword": "Spada del Tempio",
                 "tengu-gale-blade": "Lama Burrascosa Tengu",
                 "thunder-sling": "Fionda Tonante",
@@ -7049,7 +7101,7 @@
                 "Predicate": "Predicato",
                 "Brackets": "Intervalli",
                 "Range": "Intervallo",
-                "PriorityHint": "La priorità determina l'ordine in cui gli elementi regola sono eseguiti. Gli elementi regola con priorità inferiore sono eseguiti prima.",
+                "PriorityHint": "La priorità determina l'ordine in cui gli elementi regola sono eseguiti all'interno della medesima fase. Gli elementi regola con priorità inferiore sono eseguiti prima.",
                 "Add": "Aggiungi",
                 "Remove": "Rimuovi",
                 "Slug": "Slug",
@@ -7556,7 +7608,7 @@
                         "Aberrant": "Degli aberranti mormorii proteggono la tua mente o quella di un bersaglio, conferendo bonus di status +2 ai tiri salvezza su Volontà per 1 round.",
                         "Angelic": "Un'aura angelica protegge te o un bersaglio, conferendo bonus di status +1 ai tiri salvezza per 1 round.",
                         "Draconic": "Scaglie di drago spuntano su di te o su un bersaglio per un breve lasso di tempo, conferendo bonus di status +1 alla CA per 1 round.",
-                        "Hag": "Perfide maledizioni puniscono i tuoi nemici. La prima creatura a infliggerti danni prima della fine del tuo turno successivo subisce @Damage[@item.level[mental]]{2 danni con tratto mentale per livello dell'incantesimo} e deve effettuare un tiro salvezza @Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)].",
+                        "Hag": "Perfide maledizioni puniscono i tuoi nemici. La prima creatura a infliggerti danni prima della fine del tuo turno successivo subisce @Damage[@item.level[mental]]{$1 danni con tratto mentale} e deve effettuare un tiro salvezza @Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)].",
                         "Title": "Magia del Sangue",
                         "Undead": "L'energia necromantica fluisce in te o in un bersaglio. Ottieni Punti Ferita temporanei pari al livello dell'incantesimo per 1 round oppure un bersaglio subisce @Damage[@item.level[void]]{1 danno negativo per livello dell'incantesimo} (se l'incantesimo infligge già quel tipo di danni iniziali, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze).",
                         "Imperial": "Un'ondata di ricordi ancestrali conferisce a te o a un bersaglio bonus di status +1 alle prove di abilità per 1 round.",
@@ -8434,7 +8486,7 @@
                     "Prompt": "Scegli un potenziamento offensivo aggiuntivo"
                 },
                 "Unstable": {
-                    "Note": "Quando intraprendi un'azione instabile, tenta una @Check[flat|dc:17|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]{prova semplice} subito dopo averne applicato gli effetti.",
+                    "Note": "Quando intraprendi un'azione instabile, tenta una @Check[flat|dc:15|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]{prova semplice} subito dopo averne applicato gli effetti.",
                     "FlatCheck": {
                         "Failure": "L'innovazione non può più essere usata per altre azioni instabili.",
                         "Label": "Prova Instabile",
@@ -8453,7 +8505,7 @@
                 "Note": "Ignori l'occultamento del bersaglio."
             },
             "SnipingDuoDedication": {
-                "Label": "Partner Cecchino in Duo ha messo a segno un Colpo contro un bersaglio in questo round"
+                "Label": "Partner Cecchino in Duo ha messo a segno un Colpo contro un bersaglio dall'ultimo tuo turno"
             },
             "MechanicalTorch": {
                 "LitCone": "Cono",
@@ -8493,7 +8545,7 @@
             },
             "ExemplaryFinisher": {
                 "Braggart": "Se l'avversario era temporaneamente immune al tuo @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, la sua immunità temporanea termina.",
-                "Wit": "L'avversario subisce penalità di circostanza -2 ai tiri per colpire contro di te fino all'inizio del tuo turno successivo.",
+                "Wit": "L'avversario subisce penalità di circostanza -2 ai tiri per colpire contro di te fino all'inizio del tuo turno successivo. @UUID[Compendium.pf2e.feat-effects.Item.cu10OjQUdY0a9gpj]{Effetto: Mossa Finale Esemplare (Arguto)}",
                 "Name": "Mossa Finale Esemplare",
                 "Fencer": "L'avversario è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} fino al tuo turno successivo.",
                 "Battledancer": "Dopo la mossa finale, puoi fare immediatamente un Passo come azione gratuita."
@@ -8547,87 +8599,87 @@
             },
             "SpellTrickster": {
                 "BarrierShield": {
-                    "Description": "Quando lanci Scudo, puoi modificare l'Incantesimo per creare una barriera solida da usare come @UUID[Compendium.pf2e.other-effects.Item.I9lfZUiCwMiGogVi]{Copertura}, ma non per parare. Quando modifichi l'Incantesimo in questo modo non puoi usare la reazione @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Parare con lo Scudo}, ma tu (e solo tu) puoi spendere un’azione per @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Andare in Copertura} in modo da ottenere copertura standard da esso."
+                    "Description": "Quando lanci _scudo_, puoi modificare l'Incantesimo per creare una barriera solida da usare come @UUID[Compendium.pf2e.other-effects.Item.I9lfZUiCwMiGogVi]{Copertura}, ma non per parare. Quando modifichi l'Incantesimo in questo modo non puoi usare la reazione @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Parare con lo Scudo}, ma tu (e solo tu) puoi spendere un’azione per @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Andare in Copertura} in modo da ottenere copertura standard da esso."
                 },
                 "WildLights": {
-                    "Description": "Quando lanci luci danzanti, puoi modificarne la durata affinché sia 1 minuto e puoi modificarne gli effetti consueti per creare una singola luce fluttuante a forma di creatura Minuscola, anziché fino a quattro luci fluttuanti. La creatura si libra sopra la tua testa a meno che tu non spenda un'azione singola con il tratto concentrazione per muoverla fino a 9 metri, nel qual caso rimane lì finché non la muovi di nuovo. Se la riporti sopra la tua testa, fluttua lì e ti segue di nuovo finché non la dirigi altrove. La luce si estingue immediatamente se si allontana più di 36 metri da te."
+                    "Description": "Quando lanci _luci danzanti_, puoi modificarne la durata affinché sia 1 minuto e puoi modificarne gli effetti consueti per creare una singola luce fluttuante a forma di creatura Minuscola, anziché fino a quattro luci fluttuanti. La creatura si libra sopra la tua testa a meno che tu non spenda un'azione singola con il tratto concentrazione per muoverla fino a 9 metri, nel qual caso rimane lì finché non la muovi di nuovo. Se la riporti sopra la tua testa, fluttua lì e ti segue di nuovo finché non la dirigi altrove. La luce si estingue immediatamente se si allontana più di 36 metri da te."
                 },
                 "VolatileGrease": {
-                    "Description": "Quando lanci unto, puoi modificarne il bersaglio affinché sia 1 creatura. Se lo fai, sostituisci gli effetti consueti dell'incantesimo con il seguente: Cospargi di una poltiglia untuosa infiammabile il bersaglio, che deve tentare un TS su @Check[type:reflex].",
+                    "Description": "Quando lanci _unto_, puoi modificarne il bersaglio affinché sia 1 creatura. Se lo fai, sostituisci gli effetti consueti dell'incantesimo con il seguente: Cospargi di una poltiglia untuosa infiammabile il bersaglio, che deve tentare un TS su @Check[type:reflex].",
                     "DescriptionHeightened": "La debolezza aumenta di 1.",
                     "CriticalSuccess": "Il bersaglio non è influenzato.",
                     "Failure": "Come per successo, ma la debolezza al fuoco dura 1 minuto.",
                     "Success": "Il bersaglio è cosparso di una sostanza untuosa e ottiene debolezza 2 al fuoco fino alla fine del tuo turno successivo. Il bersaglio o una creatura adiacente può strofinare via la poltiglia infiammabile con un'azione Interagire, ponendo fine all'effetto."
                 },
                 "SurroundingFlames": {
-                    "Description": "Quando lanci muro di fuoco, puoi modificarne gli effetti consueti come segue: Anziché in un anello di fiamme spesso 1,5 metri e del raggio di 3 metri, puoi modellare il muro in un emisfero di fuoco del @Template[type:burst|distance:10]{raggio di 3 metri}."
+                    "Description": "Quando lanci _muro di fuoco_, puoi modificarne gli effetti consueti come segue: Anziché in un anello di fiamme spesso 1,5 metri e del raggio di 3 metri, puoi modellare il muro in un emisfero di fuoco del @Template[type:burst|distance:10]{raggio di 3 metri}."
                 },
                 "StealVitality": {
-                    "Description": "Quando lanci tocco del vampiro, puoi modificarne gli effetti consueti come segue: Se il tuo bersaglio ottiene un fallimento o un fallimento critico nel tiro salvezza, anziché ottenere Punti Ferita temporanei puoi tentare una prova di contrasto per rimuovere da te la condizione indebolito o maldestro, utilizzando la fonte di tale condizione per determinare il livello e la CD di contrasto. Se la condizione è stata causata da un effetto in corso e non rimuovi quell'effetto, la condizione si ripresenta alla fine del tuo turno successivo."
+                    "Description": "Quando lanci _tocco del vampiro_, puoi modificarne gli effetti consueti come segue: Se il tuo bersaglio ottiene un fallimento o un fallimento critico nel tiro salvezza, anziché ottenere Punti Ferita temporanei puoi tentare una prova di contrasto per rimuovere da te la condizione indebolito o maldestro, utilizzando la fonte di tale condizione per determinare il livello e la CD di contrasto. Se la condizione è stata causata da un effetto in corso e non rimuovi quell'effetto, la condizione si ripresenta alla fine del tuo turno successivo."
                 },
                 "AgileHand": {
                     "PenaltyLabel": "Furto con Mano Agile",
                     "CriticalFailureNote": "In caso di fallimento critico, l'Incantesimo termina e non puoi usare di nuovo questa modifica per 24 ore.",
-                    "Description": "Quando lanci mano magica, puoi modificarne il bersaglio affinché sia un set di strumenti da scasso. Quando Lanci l'Incantesimo in questo modo, gli strumenti si muovono di massimo 6 metri verso un congegno o una serratura. Dopo aver Mantenuto l'Incantesimo nei turni successivi, puoi usare gli strumenti per tentare prove di Furto per @UUID[Compendium.pf2e.actionspf2e.cYdz2grcOcRt4jk6]}Disattivare un Congegno} o @UUID[Compendium.pf2e.actionspf2e.2EE4aF4SZpYf0R6H]{Scassinare una Serratura} entro il raggio dell'incantesimo, ma subisci penalità -2 alla prova di Furto. In caso di fallimento critico, l'Incantesimo termina e non puoi usare di nuovo questa modifica per 24 ore."
+                    "Description": "Quando lanci _mano magica_, puoi modificarne il bersaglio affinché sia un set di strumenti da scasso. Quando Lanci l'Incantesimo in questo modo, gli strumenti si muovono di massimo 6 metri verso un congegno o una serratura. Dopo aver Mantenuto l'Incantesimo nei turni successivi, puoi usare gli strumenti per tentare prove di Furto per @UUID[Compendium.pf2e.actionspf2e.cYdz2grcOcRt4jk6]}Disattivare un Congegno} o @UUID[Compendium.pf2e.actionspf2e.2EE4aF4SZpYf0R6H]{Scassinare una Serratura} entro il raggio dell'incantesimo, ma subisci penalità -2 alla prova di Furto. In caso di fallimento critico, l'Incantesimo termina e non puoi usare di nuovo questa modifica per 24 ore."
                 },
                 "TopplingTentacles": {
-                    "Description": "Quando lanci tentacoli neri, sostituisci gli effetti consueti dell'Incantesimo con il seguente: I tentacoli strisciano sul terreno nell'area e tentano di intralciare chiunque vi si trovi all'interno. Viscidi tentacoli neri tentano di @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Sbilanciare} ogni creatura nell'area. Effettua tiri per colpire con incantesimo contro le CD di Riflessi di tutte le creature nell'area. Qualsiasi creatura contro cui ottieni un successo cade @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prona} e subisce @Damage[3d6[bludgeoning]]{3d6 danni contundenti}. Ogni volta che una creatura termina il proprio turno nell'area, i tentacoli tentano di Sbilanciarla se non è già prona, e infliggono @Damage[1d6[bludgeoning]]{1d6 danni contundenti} a qualsiasi creatura già prona. Le creature considerano l'area dell'incantesimo come terreno difficile."
+                    "Description": "Quando lanci _tentacoli neri_, sostituisci gli effetti consueti dell'Incantesimo con il seguente: I tentacoli strisciano sul terreno nell'area e tentano di intralciare chiunque vi si trovi all'interno. Viscidi tentacoli neri tentano di @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Sbilanciare} ogni creatura nell'area. Effettua tiri per colpire con incantesimo contro le CD di Riflessi di tutte le creature nell'area. Qualsiasi creatura contro cui ottieni un successo cade @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prona} e subisce @Damage[3d6[bludgeoning]]{3d6 danni contundenti}. Ogni volta che una creatura termina il proprio turno nell'area, i tentacoli tentano di Sbilanciarla se non è già prona, e infliggono @Damage[1d6[bludgeoning]]{1d6 danni contundenti} a qualsiasi creatura già prona. Le creature considerano l'area dell'incantesimo come terreno difficile."
                 },
                 "DiskRider": {
                     "DescriptionHeightened": "Il disco può portare fino a 10 Volumi. L'Incantesimo non termina più se sali sopra il disco (ma termina se vi sale qualsiasi altra creatura, anche se viene portata da te). Se sei salito sul disco, esso cambia la propria capacità per portare te e una quantità di Volume aggiuntivo pari al massimo che puoi trasportare senza essere ingombrato. Se ti trovi sopra il disco, ogni volta che Mantieni l'Incantesimo puoi muoverlo sopra il terreno di massimo 9 metri o della tua Velocità, quale che sia la più lenta. Finché rimani sul disco, esso può muoversi sopra superfici liquide, a patto che termini il movimento su un terreno solido. L'incantesimo termina se il disco termina il movimento su una superficie che non può sostenerlo.",
-                    "Description": "Quando lanci disco fluttuante, puoi modificarne la durata affinché sia mantenuto fino a 10 minuti. Se lo fai, aggiungi agli effetti dell'incantesimo la seguente voce intensificato."
+                    "Description": "Quando lanci _disco fluttuante_, puoi modificarne la durata affinché sia mantenuto fino a 10 minuti. Se lo fai, aggiungi agli effetti dell'incantesimo la seguente voce intensificato."
                 },
                 "BeaconMark": {
-                    "DescriptionHeightened": "Ti armonizzi al bersaglio marchiato. Finché dura l'incantesimo, puoi spendere un'azione singola, che ha i tratti concentrazione, divinazione e individuazione, per tentare di localizzare il bersaglio. Apprendi la direzione verso cui è il bersaglio a patto che ti trovi entro 1,8 chilometri da esso. Se il bersaglio è una creatura o una creatura è in possesso dell'oggetto bersaglio, la creatura può tentare un TS su @Check[type:will] contro la tua CD di Incantesimo. Se lo supera, il tuo tentativo di localizzare il bersaglio fallisce e non puoi ritentare per 1 giorno. Puoi marchiare un solo bersaglio con un sigillo modificato in questo modo. Se Lanci questo Incantesimo di nuovo su un secondo bersaglio, l'Incantesimo sgillo sul primo bersaglio termina e il marchio sbiadisce.",
-                    "Description": "Quando lanci sigillo, puoi modificare l'incantesimo per aggiungere la seguente voce intensificato."
+                    "DescriptionHeightened": "Ti armonizzi al bersaglio marchiato. Finché dura l'incantesimo, puoi spendere un'azione singola, che ha i tratti concentrazione, divinazione e individuazione, per tentare di localizzare il bersaglio. Apprendi la direzione verso cui è il bersaglio a patto che ti trovi entro 1,8 chilometri da esso. Se il bersaglio è una creatura o una creatura è in possesso dell'oggetto bersaglio, la creatura può tentare un TS su @Check[type:will] contro la tua CD di Incantesimo. Se lo supera, il tuo tentativo di localizzare il bersaglio fallisce e non puoi ritentare per 1 giorno. Puoi marchiare un solo bersaglio con un sigillo modificato in questo modo. Se Lanci questo Incantesimo di nuovo su un secondo bersaglio, l'Incantesimo _sgillo_ sul primo bersaglio termina e il marchio sbiadisce.",
+                    "Description": "Quando lanci _sigillo_, puoi modificare l'incantesimo per aggiungere la seguente voce intensificato."
                 },
                 "ConfoundingImage": {
-                    "Description": "Quando lanci immagine speculare, puoi modificare la sua durata affinché sia mantenuto fino a 1 minuto e puoi modificarne il raggio d’azione in 9 metri. Se lo fai, sostituisci gli effetti consueti dell'incantesimo con il seguente: Crei un duplicato illusorio di te stesso, che compare in un quadretto non occupato entro il raggio d'azione. L'immagine occupa lo spazio, ha una portata di 1,5 metri e gli alleati possono sfruttarla per attaccare ai fianchi, ma non ha altre caratteristiche che avrebbe normalmente una creatura eccetto una CA pari alla tua CD di Incantesimo e modificatori ai TS pari alla tua CD di incantesimo -10. Se l'immagine viene colpita da un attacco o fallisce un TS, o se ti allontani più di 9 metri da essa, l'Incantesimo termina. Le creature possono attraversare il suo spazio senza impedimento. Quando Mantieni l'Incantesimo puoi muovere l'immagine in un quadretto non occupato entro il raggio d'azione."
+                    "Description": "Quando lanci _immagine speculare_, puoi modificare la sua durata affinché sia mantenuto fino a 1 minuto e puoi modificarne il raggio d’azione in 9 metri. Se lo fai, sostituisci gli effetti consueti dell'incantesimo con il seguente: Crei un duplicato illusorio di te stesso, che compare in un quadretto non occupato entro il raggio d'azione. L'immagine occupa lo spazio, ha una portata di 1,5 metri e gli alleati possono sfruttarla per attaccare ai fianchi, ma non ha altre caratteristiche che avrebbe normalmente una creatura eccetto una CA pari alla tua CD di Incantesimo e modificatori ai TS pari alla tua CD di incantesimo -10. Se l'immagine viene colpita da un attacco o fallisce un TS, o se ti allontani più di 9 metri da essa, l'Incantesimo termina. Le creature possono attraversare il suo spazio senza impedimento. Quando Mantieni l'Incantesimo puoi muovere l'immagine in un quadretto non occupato entro il raggio d'azione."
                 },
                 "AnimateNet": {
-                    "Description": "Quando lanci animare corde, puoi modificarne il bersaglio affinché sia 1 @UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{rete}. Se lo fai, sostituisci gli effetti consueti dell'incantesimo con il seguente: Animi una rete che si scaglia contro una creatura Media o più piccola entro 6 metri dalla rete. Effettua un tiro per colpire con incantesimo contro la CD di Riflessi del bersaglio. In caso di successo, il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} e subisce penalità di circostanza -3 metri alle sue Velocità finché non Sfugge; in caso di successo critico è anche @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} finché non Sfugge. La CD di Sfuggire è pari alla tua CD di incantesimo fintanto che dura l’incantesimo. Una volta terminato l’incantesimo, la CD di Sfuggire torna la normale CD di una rete (in genere 16), e una creatura adiacente al bersaglio può Interagire per rimuovere la rete."
+                    "Description": "Quando lanci _animare corde_, puoi modificarne il bersaglio affinché sia 1 @UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{rete}. Se lo fai, sostituisci gli effetti consueti dell'incantesimo con il seguente: Animi una rete che si scaglia contro una creatura Media o più piccola entro 6 metri dalla rete. Effettua un tiro per colpire con incantesimo contro la CD di Riflessi del bersaglio. In caso di successo, il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} e subisce penalità di circostanza -3 metri alle sue Velocità finché non Sfugge; in caso di successo critico è anche @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} finché non Sfugge. La CD di Sfuggire è pari alla tua CD di incantesimo fintanto che dura l’incantesimo. Una volta terminato l’incantesimo, la CD di Sfuggire torna la normale CD di una rete (in genere 16), e una creatura adiacente al bersaglio può Interagire per rimuovere la rete."
                 },
                 "LarcenousHand": {
-                    "Description": "Quando lanci mano magica, puoi rimuoverne la durata, modificare il raggio d'azione a 6 metri e il bersaglio affinché sia un oggetto custodito che rientri nel limite di Volume dell'incantesimo e la cui rimozione richieda poco tempo. Aggiungi agli effetti consueti dell'incantesimo il seguente: Se la creatura che custodisce l'oggetto è disposta a lasciartelo prendere, mano magica ti porta l'oggetto. Se la creatura non è disposta a cederlo, devi tentare di @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Rubare} l'oggetto bersaglio con una prova di [[/act thievery]]{Furto}. Si applicano le consuete restrizioni ai tentativi di Rubare oggetti, come il fatto che non puoi rubare oggetti la cui rimozione risulterebbe particolarmente evidente o dispendiosa di tempo (come scarpe e armature indossate e oggetti attivamente impugnati) e che non puoi Rubare un oggetto a una creatura in guardia o che sta combattendo. In caso di successo nella prova di rubare la mano magica ti porta l'oggetto, mentre se ottieni un fallimento critico non puoi usare di nuovo questa modifica per 1 ora. Se sei maestro in Furto, puoi tentare di Rubare un oggetto a una creatura anche se sta combattendo o è in guardia, ma in tal caso il tempo di lancio dell'incantesimo aumenta di 1 azione."
+                    "Description": "Quando lanci _mano magica_, puoi rimuoverne la durata, modificare il raggio d'azione a 6 metri e il bersaglio affinché sia un oggetto custodito che rientri nel limite di Volume dell'incantesimo e la cui rimozione richieda poco tempo. Aggiungi agli effetti consueti dell'incantesimo il seguente: Se la creatura che custodisce l'oggetto è disposta a lasciartelo prendere, mano magica ti porta l'oggetto. Se la creatura non è disposta a cederlo, devi tentare di [[/act steal]]{Rubare} l'oggetto bersaglio con una prova di Furto. Si applicano le consuete restrizioni ai tentativi di Rubare oggetti, come il fatto che non puoi rubare oggetti la cui rimozione risulterebbe particolarmente evidente o dispendiosa di tempo (come scarpe e armature indossate e oggetti attivamente impugnati) e che non puoi Rubare un oggetto a una creatura in guardia o che sta combattendo. In caso di successo nella prova di rubare la mano magica ti porta l'oggetto, mentre se ottieni un fallimento critico non puoi usare di nuovo questa modifica per 1 ora. Se sei maestro in Furto, puoi tentare di Rubare un oggetto a una creatura anche se sta combattendo o è in guardia, ma in tal caso il tempo di lancio dell'incantesimo aumenta di 1 azione."
                 },
                 "ShiningArms": {
-                    "Description": "Quando lanci luce, puoi modificarne il bersaglio affinché sia 1 arma da mischia, sia incustodita che in tuo possesso, oppure un alleato consenziente, e modifichi la durata dell’Incantesimo in 1 minuto. Se lo fai, aggiungi i seguenti effetti a quelli dell'incantesimo: Quando una creatura che impugna l'arma mette a segno un colpo critico contro un nemico, come reazione puoi @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Interrompere} l'Incantesimo, rendendo il nemico @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round. Una volta usata questa reazione, non puoi utilizzare di nuovo questa modifica per 10 minuti."
+                    "Description": "Quando lanci _luce_, puoi modificarne il bersaglio affinché sia 1 arma da mischia, sia incustodita che in tuo possesso, oppure un alleato consenziente, e modifichi la durata dell’Incantesimo in 1 minuto. Se lo fai, aggiungi i seguenti effetti a quelli dell'incantesimo: Quando una creatura che impugna l'arma mette a segno un colpo critico contro un nemico, come reazione puoi Interrompere l'Incantesimo, rendendo il nemico @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round. Una volta usata questa reazione, non puoi utilizzare di nuovo questa modifica per 10 minuti."
                 },
                 "SummonEnsemble": {
-                    "Description": "Quando lanci evoca strumento, puoi modificarne la durata affinché sia mantenuto fino a 1 minuto. Quando lo fai, evochi un numero di strumenti pari al tuo modificatori di caratteristica dell'incantatore, che fluttuano intorno a te e suonano autonomamente. Una volta per turno quando Mantieni l'Incantesimo, scegli un avversario entro 9 metri che può udire la tua esibizione. Il bersaglio deve tentare un TS su @Check[type:will] contro la CD dell’incantesimo; in caso di fallimento viene distratto dalla tua esibizione e diventa @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} per 1 round. Poi il bersaglio è temporaneamente immune per 24 ore."
+                    "Description": "Quando lanci _evoca strumento_, puoi modificarne la durata affinché sia mantenuto fino a 1 minuto. Quando lo fai, evochi un numero di strumenti pari al tuo modificatori di caratteristica dell'incantatore, che fluttuano intorno a te e suonano autonomamente. Una volta per turno quando Mantieni l'Incantesimo, scegli un avversario entro 9 metri che può udire la tua esibizione. Il bersaglio deve tentare un TS su @Check[type:will] contro la CD dell’incantesimo; in caso di fallimento viene distratto dalla tua esibizione e diventa @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} per 1 round. Poi il bersaglio è temporaneamente immune per 24 ore."
                 },
                 "TracingSigil": {
-                    "Description": "Quando lanci sigillo, puoi modificare l'incantesimo per aggiungere il seguente effetto a quelli consueti: Il bersaglio lascia una pista magica che tu e altri potete tentare di seguire. Tu e altre creature potete tentare di @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Seguire Tracce} del bersaglio, sostituendo alla prova di Sopravvivenza una prova di Arcano, Natura, Occultismo o Religione (quella che meglio si adatta alla tradizione magica del tuo sigillo). Come quando Segui Tracce con Sopravvivenza, devi partire da un luogo in cui il bersaglio è stato e seguirne la pista; questo effetto non consente a nessuno di trovare il bersaglio da lontano. Puoi marchiare un solo bersaglio con un sigillo modificato in questo modo. Se usi di nuovo questa capacità su un secondo bersaglio, l'incantesimo sigillo sul primo bersaglio termina e il marchio sbiadisce."
+                    "Description": "Quando lanci _sigillo_, puoi modificare l'incantesimo per aggiungere il seguente effetto a quelli consueti: Il bersaglio lascia una pista magica che tu e altri potete tentare di seguire. Tu e altre creature potete tentare di @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Seguire Tracce} del bersaglio, sostituendo alla prova di Sopravvivenza una prova di Arcano, Natura, Occultismo o Religione (quella che meglio si adatta alla tradizione magica del tuo _sigillo_). Come quando Segui Tracce con Sopravvivenza, devi partire da un luogo in cui il bersaglio è stato e seguirne la pista; questo effetto non consente a nessuno di trovare il bersaglio da lontano. Puoi marchiare un solo bersaglio con un _sigillo_ modificato in questo modo. Se usi di nuovo questa capacità su un secondo bersaglio, l'incantesimo _sigillo_ sul primo bersaglio termina e il marchio sbiadisce."
                 },
                 "DirectedPoison": {
-                    "Description": "Quando lanci Nube Mortale, modifica la sua durata in mantenuto fino a 1 minuto, e modifica il suo effetto consueto affinché includa quanto segue: La nube non si allontana da te ogni round. Una volta per round, quando Mantieni l'Incantesimo, puoi muovere la nube di 3 metri in una direzione a tua scelta."
+                    "Description": "Quando lanci _nube mortale_, modifica la sua durata in mantenuto fino a 1 minuto, e modifica il suo effetto consueto affinché includa quanto segue: La nube non si allontana da te ogni round. Una volta per round, quando Mantieni l'Incantesimo, puoi muovere la nube di 3 metri in una direzione a tua scelta."
                 },
                 "Label": "Inventore Arcano",
                 "DrenchingMist": {
-                    "Description": "Quando lanci foschia occultante, puoi modificarlo per aggiungere ai suoi effetti la seguente voce intensificato.",
-                    "DescriptionHeightened": "La tua foschia è particolarmente intrisa di umidità. I fuochi non magici nell’area vengono estinti automaticamente. Scegli un fuoco magico o un incantesimo di fuoco nell’area e tenta di contrastarlo."
+                    "Description": "Quando lanci _foschia occultante_, puoi modificarlo per aggiungere ai suoi effetti la seguente voce intensificato.",
+                    "DescriptionHeightened": "La tua _foschia occultante_ è particolarmente intrisa di umidità. I fuochi non magici nell’area vengono estinti automaticamente. Scegli un fuoco magico o un incantesimo di fuoco nell’area e tenta di contrastarlo."
                 },
                 "ForcefulPush": {
-                    "Description": "Quando lanci mano magica, puoi modificarne il bersaglio affinché sia 1 creatura. Se lo fai, sostituisci con i seguenti effetti quelli consueti dell’Incantesimo: Spingi il nemico con la telecinesi. Effettua un tiro per colpire con incantesimo contro la CD di Tempra del bersaglio. In caso di successo, spingi il bersaglio di 1,5 metri lontano da te. In caso di successo critico, spingi il bersaglio di 3 metri lontano da te."
+                    "Description": "Quando lanci _mano magica_, puoi modificarne il bersaglio affinché sia 1 creatura. Se lo fai, sostituisci con i seguenti effetti quelli consueti dell’Incantesimo: Spingi il nemico con la telecinesi. Effettua un tiro per colpire con incantesimo contro la CD di Tempra del bersaglio. In caso di successo, spingi il bersaglio di 1,5 metri lontano da te. In caso di successo critico, spingi il bersaglio di 3 metri lontano da te."
                 },
                 "ObscuredTerrain": {
-                    "Description": "Quando lanci foschia occultante, puoi modificare l'incantesimo per sostituire i suoi effetti con il seguente: Evochi una nube di nebbia fitta che avvolge l'area al punto che vedere il terreno risulta difficile. L'area nella nebbia è terreno difficile per le creature che non sono in grado di vedere attraverso nebbia o foschia. Puoi @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Interrompere} la nube."
+                    "Description": "Quando lanci _foschia occultante_, puoi modificare l'incantesimo per sostituire i suoi effetti con il seguente: Evochi una nube di nebbia fitta che avvolge l'area al punto che vedere il terreno risulta difficile. L'area nella nebbia è terreno difficile per le creature che non sono in grado di vedere attraverso nebbia o foschia. Puoi Interrompere la nube."
                 },
                 "LingeringFlames": {
-                    "Description": "Quando lanci palla di fuoco, puoi modificarne gli effetti diminuendo il danno base a 5d6 e facendo sì che infligga 2 danni persistenti da fuoco alle creature che falliscono il TS, raddoppiati come di consueto in caso di fallimento critico. Se lo fai, sostituisci la voce intensificato dell'incantesimo con la seguente.",
+                    "Description": "Quando lanci _palla di fuoco_, puoi modificarne gli effetti diminuendo il danno base a 5d6 e facendo sì che infligga @Damage[(2*(@item.level - 2))[fire,persistent]]{$1 danni persistenti da fuoco} alle creature che falliscono il TS, raddoppiati come di consueto in caso di fallimento critico. Se lo fai, sostituisci la voce intensificato dell'incantesimo con la seguente.",
                     "DescriptionHeightened": "Il danno aumenta di 1d6 e il danno persistente da fuoco aumenta di 2."
                 },
                 "ScatteredFire": {
-                    "Description": "Quando lanci Palla di Fuoco, puoi modificarne l’area in due @Template[type:burst|distance:10]{esplosioni di 3 metri} non sovrapposte."
+                    "Description": "Quando lanci _palla di fuoco_, puoi modificarne l’area in due @Template[type:burst|distance:10]{esplosioni di 3 metri} non sovrapposte."
                 },
                 "ChokingSmoke": {
-                    "Description": "Quando lanci palla di fuoco Intensificato almeno al 6° livello, puoi modificarne gli effetti consueti come segue: Riduci i danni dell'Incantesimo di 6d6. La tua palla di fuoco lascia nell'area una nube persistente di fumo tossico. Benché si tratti di fumo anziché di foschia, tale nube ha gli effetti di @UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]{nube maleodorante}."
+                    "Description": "Quando lanci _palla di fuoco_ intensificato almeno al 6° grado, puoi modificarne gli effetti consueti come segue: Riduci i danni dell'Incantesimo di 6d6. La tua palla di fuoco lascia nell'area una nube persistente di fumo tossico. Benché si tratti di fumo anziché di foschia, tale nube ha gli effetti di @UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]{nube maleodorante}."
                 },
                 "SmolderingExplosion": {
-                    "Description": "Quando lanci palla di fuoco intensificato almeno al 4° grado, puoi modificare l'incantesimo per aggiungere il seguente effetto a quelli consueti: La tua palla di fuoco lascia nell'area una nube di fumo passeggera. Benché si tratti di fumo anziché di foschia, tale nube ha gli effetti di @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]{foschia occultante}, eccetto che dura solo 1 round."
+                    "Description": "Quando lanci _palla di fuoco_ intensificato almeno al 4° grado, puoi modificare l'incantesimo per aggiungere il seguente effetto a quelli consueti: La tua _palla di fuoco_ lascia nell'area una nube di fumo passeggera. Benché si tratti di fumo anziché di foschia, tale nube ha gli effetti di @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]{foschia occultante}, eccetto che dura solo 1 round."
                 },
                 "UneasyRest": {
-                    "Description": "Quando lanci sonno, puoi modificare l'incantesimo per aggiungere il seguente effetto a quelli consueti: Chi è soggetto al tuo incantesimo fa brutti sogni. Quando si sveglia, un bersaglio che ha ottenuto un fallimento o fallimento critico nel TS è @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 1}."
+                    "Description": "Quando lanci _sonno_, puoi modificare l'incantesimo per aggiungere il seguente effetto a quelli consueti: Chi è soggetto al tuo incantesimo fa brutti sogni. Quando si sveglia, un bersaglio che ha ottenuto un fallimento o fallimento critico nel TS è @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 1}."
                 }
             },
             "SpellHeightened": {
@@ -9093,9 +9145,9 @@
         "TraitDescriptionKickback": "Un'arma con rinculo è più potente, ma anche più difficile da usare. Un'arma con rinculo infligge 1 danno aggiuntivo a ogni attacco. Sparare con un'arma con rinculo infligge penalità di circostanza -2 al tiro per colpire, ma i personaggi con Forza pari o superiore a 14 ignorano questa penalità. Installare degli stabilizzatori su un'arma con rinculo può diminuire o negare questa penalità.",
         "TraitFatalAimD12": "Mira Fatale d12",
         "TraitScatter": "Dispersione",
-        "TraitDescriptionHampering": "Un'arma con il tratto intralciante comprende un'estremità o una flangia atta a disturbare il nemico. Puoi usare un'azione Interagire per sferzare l'arma in un quadretto entro la portata dell'arma. Quel quadretto diventa terreno difficile fino a quando non attacchi con l'arma, non ti muovi, non smetti intenzionalmente di sferzare l'arma o non inizia il tuo turno successivo.",
+        "TraitDescriptionHampering": "Dopo che colpisci con l'arma, puoi usare un'azione Interagire per dare al bersaglio una penalità di circostanza –3 metri a tutte le sue Velocità. La penalità termina dopo che il bersaglio effettua un'azione di movimento, all'inizio del tuo turno, se attacchi con l'arma o se ti muovi fuori dalla gittata del bersaglio, a seconda di quale evento si verifichi per primo.",
         "TraitModification": "Modifica",
-        "TraitDescriptionInjection": "Quest'arma può essere riempita con un veleno da ferimento. Subito dopo un attacco riuscito con l'arma, è possibile iniettare al bersaglio il veleno caricato con una singola azione Interagire. Riempire l'arma con una nuova sostanza richiede tre azioni Interagire e richiede entrambe le mani.",
+        "TraitDescriptionInjection": "Quest'arma può essere riempita con liquido, solitamente un veleno da ferimento. Subito dopo un attacco riuscito con l'arma, è possibile iniettare al bersaglio i contenuti caricato con una singola azione Interagire (se il bersaglio è consenziente, l'iniezione richiedere solo 1 azione Interagire in totale). Riempire l'arma con una nuova sostanza richiede 3 azioni Interagire e richiede due mani.",
         "TraitScatter20": "Dispersione 20",
         "TraitDescriptionUnstable": "Le azioni instabili utilizzano applicazioni sperimentali della tua innovazione che nemmeno tu puoi prevedere completamente. Dopo aver usato un'azione instabile su un'innovazione, è pericoloso usarne un'altra.",
         "TraitDescriptionFatalAim": "Il calcio di quest'arma può essere tenuto sotto un braccio in modo da poter sparare con una sola mano, fintanto che con l'altra mano non impugni un'arma, uno scudo o qualsiasi altra cosa che avresti bisogno di spostare e posizionare, per assicurarti che l'arma non ti scivoli da sotto il braccio. Tuttavia, se usi entrambe le mani, l'arma può sferrare attacchi fatali. Quando impugni l'arma in due mani, ottiene il tratto fatale con il dado di danno indicato. Tenere l'arma sottobraccio con stabilità sufficiente a sparare è molto più complesso che liberare una mano dall'arma, quindi per passare da una presa all'altra, devi spendere un'azione per Interagire invece che Lasciare o come parte della ricarica.",
@@ -9236,7 +9288,15 @@
         },
         "Foot": {
             "Label": "metro",
-            "Plural": "metri"
+            "Plural": "metri",
+            "Preformatted": {
+                "20": "6 metri",
+                "30": "9 metri",
+                "5": "1,5 metri",
+                "10": "3 metri",
+                "15": "4,5 metri",
+                "25": "7,5 metri"
+            }
         },
         "TraitVoid": "Negativo",
         "TraitVitality": "Positivo",
@@ -9248,7 +9308,130 @@
         "TraitAffixedToAShieldOrWeapon": "Applicato a un'Arma o uno Scudo",
         "TraitDescriptionVoid": "Gli effetti con questo tratto curano le creature non morte con energia negativa, infliggono danni negativi alle creature viventi o manipolano l'energia negativa.",
         "TraitSubjectiveGravity": "Gravità Soggettiva",
-        "TraitDescriptionVitality": "Gli effetti di questo tratto curano le creature viventi con energia dalla Forgia della Creazione, infliggono danni da energia positiva ai non morti o manipolano l'energia positiva."
+        "TraitDescriptionVitality": "Gli effetti di questo tratto curano le creature viventi con energia dalla Forgia della Creazione, infliggono danni da energia positiva ai non morti o manipolano l'energia positiva.",
+        "TraitDescriptionAngel": "Questa famiglia di celestiali sono messaggeri e guerrieri. La maggior parte degli angeli sono sacri, hanno scurovisione e debolezza al sacrilego.",
+        "Region": {
+            "EnvironmentFeature": {
+                "Label": "Caratteristica Ambiente",
+                "Terrain": {
+                    "Difficult": {
+                        "Difficult": "Difficile",
+                        "Greater": "Difficile Superiore",
+                        "Label": "Terreno Difficile",
+                        "None": "Nessuno"
+                    }
+                }
+            },
+            "Environment": {
+                "Mode": {
+                    "Add": {
+                        "Label": "Aggiungi"
+                    },
+                    "Label": "Modalità",
+                    "Override": {
+                        "Label": "Sovrascrivi"
+                    },
+                    "Hint": "Imposta la modalità per questo comportamento di terreno. Puoi Aggiungere i tipi selezionati ai tipi di ambiente esistenti, rimuovere i tipi selezionati dai tipi esistenti o sovrascrivere i tipi esistenti con quelli selezionati.",
+                    "Remove": {
+                        "Label": "Rimuovi"
+                    }
+                },
+                "RegionLegend": {
+                    "Header": "Predefiniti Scena",
+                    "SceneRegionsHeader": "Regioni Scena"
+                },
+                "Type": {
+                    "SceneHint": "Specifica uno o più tipi di ambiente per l'intera scena.",
+                    "Label": "Ambiente",
+                    "Hint": "Uno o più tipi di ambienti per questa regione di scena."
+                },
+                "Label": "Ambiente"
+            }
+        },
+        "Environment": {
+            "Type": {
+                "Underground": "Sottosuolo",
+                "Urban": "Urbano",
+                "Swamp": "Palude",
+                "Aquatic": "Aquatico",
+                "Arctic": "Artico",
+                "Forest": "Foresta",
+                "Mountain": "Montagna",
+                "Plains": "Pianura",
+                "Desert": "Deserto"
+            },
+            "Feature": {
+                "Lava": "Lava",
+                "Rubble": "Detriti",
+                "Sand": "Sabbia",
+                "Ice": "Ghiaccio",
+                "Crowd": "Folla",
+                "Sewer": "Fognature",
+                "Snow": "Neve"
+            }
+        },
+        "TraitDescriptionGhost": "Le anime perdute che infestano il mondo come non morti incorporei sono chiamati fantasmi.",
+        "TraitDescriptionGremlin": "I gremlin, fatati crudeli e burloni, si sono acclimatati alla vita nell'Universo.",
+        "TraitDescriptionBeast": "Una creatura simile a un animale ma con un modificatore di Intelligenza di –3 o superiore di solito è una bestia. A differenza di un animale, una bestia potrebbe essere in grado di parlare e ragionare.",
+        "TraitDescriptionGiant": "I giganti sono enormi creature umanoidi.",
+        "TraitDescriptionHryngar": "I duergar, parenti sotterranei dei nani, in genere hanno scurovisione e resistenza al veleno e rifuggono dalla luce forte",
+        "Skill": {
+            "Thievery": "Furto",
+            "Occultism": "Occultismo",
+            "Performance": "Esibizione",
+            "Religion": "Religione",
+            "Stealth": "Furtività",
+            "Survival": "Sopravvivenza",
+            "Intimidation": "Intimidazione",
+            "Medicine": "Medicina",
+            "Nature": "Natura",
+            "Society": "Società",
+            "Acrobatics": "Acrobazia",
+            "Deception": "Inganno",
+            "Diplomacy": "Diplomazia",
+            "Athletics": "Atletica",
+            "Crafting": "Artigianato",
+            "Arcana": "Arcano"
+        },
+        "TraitDescriptionFungus": "Le creature fungine hanno il tratto fungo. Sono diverse dai funghi normali.",
+        "TraitDescriptionHag": "Queste creature sono incantatrici malevoli che formano congreghe.",
+        "TraitBugbear": "Bugbear",
+        "TraitDescriptionAberration": "Le aberrazioni sono creature provenienti da oltre i piani o corruzioni dell'ordine naturale.",
+        "TraitDescriptionAquatic": "Le creature acquatiche sono a loro agio sott'acqua. I loro Colpi senz'armi contundenti e taglienti non subiscono la consueta penalità –2 dovuta al fatto di essere sott'acqua. Le creature acquatiche possono respirare in acqua, ma non nell'aria.",
+        "TraitDescriptionArchon": "I membri di questa famiglia di celestiali sono i protettori del Paradiso e sono tipicamente sacri. Hanno scurovisione e debolezza al sacrilego.",
+        "TraitDescriptionAstral": "Le creature astrali sono native del Piano Astrale. Possono sopravvivere agli effetti ambientali di base del Piano Astrale.",
+        "TraitDescriptionAzata": "Questa famiglia di celestiali è nativa dell'Elysium. Sono in genere sacri e hanno scurovisione e debolezza al ferro freddo e sacrilego.",
+        "TraitDescriptionBoggard": "I boggard sono umanoidi simili a rane. Solitamente sono dotati di scurovisione.",
+        "TraitDescriptionDaemon": "Quasi tutti i dàimon, una famiglia di nefandi generata dal piano desolato di Abaddon, sono irrimediabilmente sacrileghi. Solitamente sono dotati di scurovisione e debolezza al sacro.",
+        "TraitDescriptionDemon": "Una famiglia di nefandi proveniente dall'Abisso. La maggior parte dei demoni è irrimediabilmente sacrilega, dotata di scurovisione e debolezza al sacro.",
+        "TraitDescriptionDinosaur": "Questi rettili sono sopravvissuti all'epoca preistorica.",
+        "TraitDescriptionDevil": "Quasi tutti i diavoli, una famiglia di nefandi proveniente dall'Inferno, sono irrediabilmente sacrileghi. Solitamente sono dotati di scurovisione superiore, debolezza ai sacro, immunità al fuoco e telepatia.",
+        "TraitDescriptionFiend": "Le creature che provengono da o che hanno una forte connessione con i piani di allineamento malvagio sono chiamate nefandi. I nefandi possono sopravvivere agli effetti ambientali di base dei piani nella Sfera Esterna.",
+        "TraitDescriptionDragon": "I draghi sono creature rettili, spesso alate o capaci di volare. La maggior parte è in grado di usare un'arma a soffio ed è immune al sonno e alla paralisi.",
+        "TraitDescriptionElemental": "Gli elementali sono creature direttamente legate a un elemento e native dei Piani Elementali. Gli elementali non hanno bisogno di respirare.",
+        "TraitDescriptionGhoul": "I ghoul sono sordide creature non morte che si nutrono di carne.",
+        "TraitDescriptionKholo": "Gli gnoll sono umanoidi simili alle iene.",
+        "TraitDescriptionMerfolk": "Questi umanoidi acquatici possiedono una parte superiore del corpo simile a quella di un umano e quella inferiore simile a quella di un pesce.",
+        "TraitDescriptionMummy": "Una mummia è una creatura non morta creata da un cadavere preservato.",
+        "TraitDescriptionMutant": "Il mostro è mutato o si è evoluto, ottenendo benefici o svantaggi insoliti (o entrambe le cose).",
+        "TraitDescriptionNymph": "Questa famiglia di splendide creature fatate ha un forte legame con i luoghi naturali.",
+        "TraitDescriptionBugbear": "Una creatura con questo tratto è un goblinoide peloso e furtivo. I bugbear solitamente hanno scurovisione.",
+        "Level22": "Livello 22",
+        "Level21": "Livello 21",
+        "Level23": "Livello 23",
+        "Level24": "Livello 24",
+        "Level25": "Livello 25",
+        "TraitDescriptionCoatl": "Una famiglia di serpenti piumati soprannaturali che fungono da guardiani e messaggeri nell'Universo per varie divinità sacre.",
+        "TraitCentaur": "Centauro",
+        "TraitDescriptionCelestial": "Le creature che provengono da o che hanno una forte connessione con i piani sacri sono chiamate celestiali. I celestiali possono sopravvivere agli effetti ambientali di base dei piani nella Sfera Esterna.",
+        "TraitDescriptionDero": "Gli umanoidi di questa famiglia discendono dalle creature fatate che caddero preda dell'oscurità e della confusione dopo essere state abbandonate nelle Lande Tenebrose. Sono immuni alla confusione e vulnerabili alla luce del sole.",
+        "TraitDescriptionHobgoblin": "Una creatura con questo tratto è un goblinoide alto e militeraistico. Gli hobgoblin solitamente sono dotati di scurovisione.",
+        "TraitDescriptionMonitor": "Le creature che provengono da o hanno una forte connessione con l'Axis, il Maelstrom o l'Ossario sono chiamate osservatori. Gli osservatori possono sopravvivere agli effetti ambientali di base dei piani nella Sfera Esterna.",
+        "TraitDescriptionEthereal": "Le creature eteree sono native del Piano Etereo. Possono sopravvivere agli effetti ambientali di base del Piano Etereo.",
+        "TraitAffixedToAMetalWeapon": "Applicato a un'Arma in Metallo",
+        "TraitDescriptionAnimal": "Un animale è una creatura con un'intelligenza relativamente bassa. In genere non ha un modificatore di caratteristica di Intelligenza oltre –4, non può parlare lingue e non può essere addestrato nelle abilità basate sull'Intelligenza.",
+        "TraitDescriptionCentaur": "I centauri hanno una parte superiore del corpo di umanoide e quella inferiore di equino.",
+        "TraitDescriptionCaligni": "Queste creature sotterranee sono dotate di scurovisione; alcune di esse hanno anche il potere di generare oscurità."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
