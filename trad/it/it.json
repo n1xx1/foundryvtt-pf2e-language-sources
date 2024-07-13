@@ -1475,7 +1475,7 @@
                     "Bow": "La prova di Atletica per liberare il proiettile ha CD 20.",
                     "Brawling": "Il bersaglio subisce penalità di circostanza -4 ai suoi TS.",
                     "Club": "Puoi scagliare il bersaglio lontano fino a 4,5 metri.",
-                    "Dart": "Il danno base persistente da sanguinamento aumenta a [[/r 2d6[bleed]]].",
+                    "Dart": "Il danno base persistente da sanguinamento aumenta a @Damage[2d6[persistent,bleed]]{2d6}.",
                     "Flail": "Sposti il bersaglio dì 1,5 metri. Non puoi allontanarlo da te, ma puoi spostarlo in un'altra direzione a tua scelta.",
                     "Hammer": "Puoi scagliare il bersaglio lontano da te di 1,5 metri.",
                     "Pick": "Il danno extra dell'effetto di specializzazione del critico aumenta a 4 per dado di danno dell'arma.",
@@ -1504,7 +1504,7 @@
             },
             "flaming": {
                 "Note": {
-                    "criticalSuccess": "Quando ottieni un successo critico, infliggi [[/r 1d10[persistent,fire]]]{1d10 danni da fuoco persistenti} addizionali."
+                    "criticalSuccess": "Quando ottieni un successo critico, infliggi @Damage[1d10[persistent,fire]]{1d10 danni da fuoco persistenti} addizionali."
                 },
                 "Name": "Infuocata"
             },
@@ -1516,7 +1516,7 @@
             },
             "greaterFlaming": {
                 "Note": {
-                    "criticalSuccess": "Il danno da fuoco inflitto da questa arma (inclusi i danni persistenti da fuoco) ignora la resistenza al fuoco del bersaglio.",
+                    "criticalSuccess": "L'arma infligge @Damage[2d10[persistent,fire]]{2d10 danni da fuoco persistenti} con un colpo critico. Il danno da fuoco inflitto da questa arma (inclusi i danni persistenti da fuoco) ignora la resistenza al fuoco del bersaglio.",
                     "success": "Il danno da fuoco inflitto da questa arma ignora la resistenza al fuoco del bersaglio."
                 },
                 "Name": "Infuocata Superiore"
@@ -1540,7 +1540,7 @@
             "corrosive": {
                 "Name": "Corrosiva",
                 "Note": {
-                    "criticalSuccess": "In caso di colpo critico, l'armatura del bersaglio (se ne ha una) subisce [[/r 3d6[acid] # Runa Corrosiva]]{3d6 danni da acido} (prima di applicare la Durezza); se il bersaglio ha uno scudo alzato, invece è lo scudo che subisce questi danni."
+                    "criticalSuccess": "In caso di colpo critico, l'armatura del bersaglio (se ne ha una) subisce @Damage[3d6[acid]]{3d6 danni da acido} (prima di applicare la Durezza); se il bersaglio ha uno scudo alzato, invece è lo scudo che subisce questi danni."
                 }
             },
             "cunning": {
@@ -1562,7 +1562,7 @@
             "greaterCorrosive": {
                 "Name": "Corrosiva Superiore",
                 "Note": {
-                    "criticalSuccess": "In caso di colpo critico, l'armatura del bersaglio (se ne ha una) subisce [[/r 6d6[acid] # Runa Corrosiva]]{6d6 danni da acido} (prima di applicare la Durezza); se il bersaglio ha uno scudo alzato, invece è lo scudo che subisce questi danni.",
+                    "criticalSuccess": "In caso di colpo critico, l'armatura del bersaglio (se ne ha una) subisce @Damage[6d6[acid]]{6d6 danni da acido} (prima di applicare la Durezza); se il bersaglio ha uno scudo alzato, invece è lo scudo che subisce questi danni.",
                     "success": "Il danno da acido inflitto da questa arma ignora la resistenza all'acido del bersaglio."
                 }
             },
@@ -1650,8 +1650,8 @@
             "greaterBrilliant": {
                 "Name": "Fulgida Superiore",
                 "Note": {
-                    "criticalSuccess": "Danni inflitti dall’arma ignorano la resistenza al fuoco, al bene o al positivo del bersaglio. Con un colpo critico, il bersaglio deve superare un tiro salvezza su @Check[type:fortitude|dc:41|name:Greater Brilliant Rune] o essere @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecato} per 1 round.",
-                    "success": "I danni inflitti dall’arma ignorano la resistenza al fuoco, al bene o al positivo del bersaglio."
+                    "criticalSuccess": "Danni inflitti dall’arma ignorano la resistenza al fuoco, spirito o positivo del bersaglio. Con un colpo critico, il bersaglio deve superare un tiro salvezza su @Check[type:fortitude|dc:41|name:Greater Brilliant Rune] o essere @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecato} per 1 round.",
+                    "success": "I danni inflitti dall’arma ignorano la resistenza al fuoco, spirito o positivo del bersaglio."
                 }
             },
             "greaterExtending": {
