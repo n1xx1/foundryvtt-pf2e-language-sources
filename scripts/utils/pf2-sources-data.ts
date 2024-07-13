@@ -227,6 +227,12 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Lost Omens: Tian Xia Character Guide"],
     language: [],
   },
+  "tian-xia-world-guide": {
+    name: "Lost Omens: Tian Xia World Guide",
+    type: "lost-omens",
+    source: ["Pathfinder Lost Omens: Tian Xia World Guide"],
+    language: [],
+  },
   // Adventure Paths
   "age-of-ashes1": {
     name: "Age of Ashes",
@@ -656,31 +662,38 @@ export const sourceState: Record<string, SourceState> = {
   "seven-dooms-for-sandpoint": {
     name: "Seven Dooms for Sandpoint",
     type: "adventure-path",
-    source: [],
+    source: [
+      "Pathfinder #200: Seven Dooms for Sandpoint",
+      "Pathfinder: Seven Dooms for Sandpoint Player's Guide",
+      "Seven Dooms for Sandpoint Player's Guide",
+    ],
     language: [],
   },
   "wardens-of-wildwood1": {
     name: "Wardens of Wildwood",
     type: "adventure-path",
-    source: [],
+    source: [
+      "Pathfinder #201: Pactbreaker",
+      "Pathfinder: Wardens of Wildwood Player's Guide",
+    ],
     language: [],
   },
   "wardens-of-wildwood2": {
     name: "Wardens of Wildwood",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #202: Severed at the Root"],
     language: [],
   },
   "wardens-of-wildwood3": {
     name: "Wardens of Wildwood",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #203: Shepherd of Decay"],
     language: [],
   },
   "curtain-call1": {
     name: "Curtain Call",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder Curtain Call Player's Guide"],
     language: [],
   },
   "curtain-call2": {
@@ -836,9 +849,13 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder: Wake the Dead #1",
       "Pathfinder: Wake the Dead #2",
       "Pathfinder: Wake the Dead #3",
+      "Pathfinder: Wake the Dead #4",
+      "Pathfinder: Wake the Dead #5",
       "Pathfinder Dark Archive Web Supplement: In Darkness",
       "Pathfinder Blog: April Fool's Bestiary",
       "Pathfinder Critical Decks",
+      "Paizo Blog: It's Foolish To Go Alone",
+      "Pathfinder Hero Point Deck",
     ],
     language: [],
   },
@@ -877,7 +894,7 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Monster Core"],
     language: [],
   },
-  "player-core-2": {
+  "player-core2": {
     name: "Player Core 2",
     type: "core-remaster",
     source: ["Pathfinder Player Core 2"],

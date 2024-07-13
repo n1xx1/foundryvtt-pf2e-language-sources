@@ -44,7 +44,8 @@ export async function commandUpdateSource(
   systemDir: string,
   weblateToken: string,
   dry: boolean,
-  filter: string[]
+  filter: string[],
+  debugSkip?: string
 ) {
   const weblate = createWeblateApi(
     weblateToken,
@@ -52,7 +53,17 @@ export async function commandUpdateSource(
   );
 
   const manifest = await readManifest(join(systemDir, "static", "system.json"));
-  const [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
+  let [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
+
+  if (filter.length > 0) {
+    allPacks = allPacks.filter((p) => filter.includes(p.name));
+  }
+  if (debugSkip) {
+    const index = allPacks.findIndex((p) => p.name === debugSkip);
+    if (index >= 0) {
+      allPacks = allPacks.slice(index);
+    }
+  }
 
   const langData: LangFile = _.merge({}, ...allLangs);
 
@@ -90,12 +101,8 @@ export async function commandUpdateSource(
     const fileName = pack.path.replace("packs/", "");
     const compendiumName = weblateCompendiumMap[fileName];
 
-    await translateSource(
-      compendiumName,
-      fileName,
-      pack.entries as EntriesWithSource,
-      c
-    );
+    console.log(`Processing pack ${pack.name} (file: ${fileName})`);
+    await translateSource(compendiumName, pack.entries as EntriesWithSource, c);
   }
 
   console.log(`Processing Lang`);
@@ -153,11 +160,15 @@ async function translateLang(c: UpdateSourceContext) {
         });
       }
       console.log(
-        `Set explaination = "${explaination}", labels = "${tags.join(",")}" on ${unit.id} (${unit.context})`
+        `Set explaination = "${explaination}", labels = "${tags.join(
+          ","
+        )}" on ${unit.id} (${unit.context})`
       );
     } catch (e) {
       console.log(
-        `Failed to set explaination = "${explaination}", labels = "${tags.join(", ")}" on ${unit.id} (${unit.context})`
+        `Failed to set explaination = "${explaination}", labels = "${tags.join(
+          ", "
+        )}" on ${unit.id} (${unit.context})`
       );
     }
   }
@@ -165,12 +176,9 @@ async function translateLang(c: UpdateSourceContext) {
 
 async function translateSource(
   weblateName: string | undefined,
-  packName: string,
   data: EntriesWithSource,
   c: UpdateSourceContext
 ) {
-  console.log(`Processing pack ${packName}`);
-
   const dataMap = new Map(data.map((f) => [f.name, f]));
 
   for (const entry of data) {
@@ -213,12 +221,9 @@ async function translateSource(
 
   for (const unit of res) {
     let ctx = unit.context;
-    ctx = ctx.replace(/Vs\./g, "Vs_");
-    const match = ctx.match(/^entries\.([^\.]*)\.(.*)$/);
+    const match = ctx.match(/^entries\.(.*?)\.(?![ \.])(.*)$/);
     if (!match) continue;
     let [, name, part] = match;
-
-    name = name.replace(/Vs_/g, "Vs.");
 
     const origin: any = dataMap.get(name) ?? {};
 
@@ -248,15 +253,22 @@ async function translateSource(
     // console.log(name, origin);
 
     const source: string =
+      origin.system?.details?.publication?.title ??
       origin.system?.publication?.title ??
       origin.system?.source?.value ??
-      origin.system?.details?.source?.value ??
-      "";
+      origin.system?.details?.source?.value;
 
-    const isRemaster: boolean = origin.system?.publication?.remaster ?? false;
+    const isRemaster: boolean =
+      origin.system?.details?.publication?.remaster ??
+      origin.system?.publication?.remaster ??
+      false;
 
     if (source) {
       await applySourceTag(source, unit, name, c);
+    } else if (source === undefined) {
+      console.log(`missing source ${name} (${ctx})`);
+      console.log(origin);
+      throw "stop";
     }
   }
 }
@@ -276,7 +288,7 @@ async function applySourceTag(
 
   const tagId = c.labelsMap.get(tag);
   if (!tagId) {
-    console.log(`Label not found: ${source} (item: ${name})`);
+    console.log(`Label not found: ${tag} (item: ${name})`);
     throw "stop";
   }
 

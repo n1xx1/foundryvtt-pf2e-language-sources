@@ -54,6 +54,11 @@ yargs(hideBin(process.argv))
           alias: "f",
           type: "array",
         })
+        .option("debug-skip", {
+          description:
+            "skip all the packs before the specified one, used for debugging only",
+          type: "string",
+        })
         .option("dry", {
           description: "dry run",
           type: "boolean",
@@ -69,7 +74,8 @@ yargs(hideBin(process.argv))
         argv.directory,
         token,
         argv.dry ?? false,
-        argv.filter?.map((x) => x.toString()) ?? []
+        argv.filter?.map((x) => x.toString()) ?? [],
+        argv.debugSkip
       );
     }
   )
