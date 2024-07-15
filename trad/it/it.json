@@ -4312,9 +4312,38 @@
                         "Medium": "Elementale Medio",
                         "Small": "Elementale Poccolo",
                         "Air": {
-                            "Elemental": "Elementale d’Aria"
+                            "Elemental": "Elementale d’Aria",
+                            "Small": "Elementale d'Aria Piccolo",
+                            "Medium": "Elementale d'Aria Medio"
+                        },
+                        "Fire": {
+                            "Small": "Elementale di Fuoco Piccolo",
+                            "Medium": "Elementale di Fuoco Medio",
+                            "Elemental": "Elementale di Fuoco"
+                        },
+                        "Earth": {
+                            "Elemental": "Elementale di Terra",
+                            "Small": "Elementale di Terra Piccolo",
+                            "Medium": "Elementale di Terra Medio"
+                        },
+                        "Metal": {
+                            "Elemental": "Elementale di Metallo",
+                            "Small": "Elementale di Metallo Piccolo",
+                            "Medium": "Elementale di Metallo Medio"
+                        },
+                        "Water": {
+                            "Elemental": "Elementale d'Acqua",
+                            "Medium": "Elementale d'Acqua Medio",
+                            "Small": "Elementale d'Acqua Piccolo"
+                        },
+                        "Wood": {
+                            "Elemental": "Elementale di Legno",
+                            "Medium": "Elementale di Legno Medio",
+                            "Small": "Elementale di Legno Piccolo"
                         }
-                    }
+                    },
+                    "Nymph": "Ninfa",
+                    "AnimalAquatic": "Animale Acquatico"
                 },
                 "Label": "Forma Attuale"
             },
@@ -4323,6 +4352,51 @@
             },
             "BrainCollector": {
                 "BrainBlistersRemaining": "Bolle Cerebrali Rimanenti"
+            },
+            "Herexen": {
+                "HereticSmite": "Impugna l'arma preferita della sua vecchia divinità"
+            },
+            "Warsworn": {
+                "AnimatedWeapon": {
+                    "DamageType": "Arma Animata - Tipo di Danno",
+                    "DieSize": "Arma Animata - Dimensioni Dado"
+                }
+            },
+            "PlanarScion": {
+                "Duskwalker": {
+                    "HuntPrey": {
+                        "AC": "La Preda Designata attacca il Viandante Crepuscolare",
+                        "Checks": "La Viandante Crepuscolare effettua una prova contro la Preda Designata"
+                    },
+                    "Immunity": "effetti che trasformerebbero il suo corpo o la sua anima in non morto"
+                }
+            },
+            "GrimReaper": {
+                "InfuseWeapon": "Se il Tristo Mietitore Colpisce una creatura con una debolezza a un qualsiasi tipo specifico di danni, i danni della falce sono considerati di quel tipo, oltre che taglienti."
+            },
+            "ClayEffigy": {
+                "SacredArt": {
+                    "NoSanctification": "Non Santificata"
+                }
+            },
+            "Elemental": {
+                "Earth": {
+                    "SpikeStones": "Sopprimi Aura Spuntoni di Pietra"
+                }
+            },
+            "Chimera": {
+                "DivineHead": {
+                    "NoSanctification": "Non Santificata",
+                    "Label": "Santificazione della Testa del Drago"
+                },
+                "PrimalHead": "Tipo di Energia del Soffio del Drago",
+                "DragonHead": "Tradizione Magica della Testa del Drago"
+            },
+            "Vordine": {
+                "TridentOfDis": {
+                    "NoAlly": "Nessun Alleato",
+                    "UnholyAlly": "Alleato Sacrilego"
+                }
             }
         },
         "Encounter": {
@@ -7360,7 +7434,10 @@
             "TrackHalfHealth": "A Seguire Tracce di una Creatura Ridotta a Metà o Meno dei Suoi PF",
             "Moonlight": "Al Chiaro di Luna",
             "FullMoon": "Luna Piena",
-            "Lava": "In Lava"
+            "Lava": "In Lava",
+            "RockyOrBarren": "Su Terreno Roccioso o Arido",
+            "Fly": "A Volare",
+            "Balance": "A Bilanciarsi"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -7460,6 +7537,9 @@
                 },
                 "DragonsPresence": {
                     "Note": "Quando ottieni un successo in un tiro salvezza contro un effetto di paura, ottieni invece un successo critico. Quando ottieni un fallimento contro un effetto di paura, ottieni invece un fallimento critico."
+                },
+                "DragonsBreath": {
+                    "DescriptionAlteration": "Incanali il potere del tuo modello draconico in un coagulo di energia che si manifesta come una @Template[type:line|distance:60] o un @Template[type:cone|distance:30] e infligge @Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage]{$1 danni}. Ogni creatura nell'area deve tentare un tiro salvezza base contro la CD più alta tra quella di classe o quella di incantesimo. Non puoi usare di nuovo questa capacità per 1 ora."
                 }
             },
             "MartialProficiency": {
@@ -7530,7 +7610,8 @@
                 "MartialBombsFirearms": "Bombe e Armi da Fuoco Da Guerra",
                 "MartialFirearmsCrossbows": "Armi da Fuoco e Balestre Da Guerra",
                 "SimpleBombsFirearms": "Bombe e Armi da Fuoco Semplici",
-                "SimpleFirearmsCrossbows": "Armi da Fuoco e Balestre Semplici"
+                "SimpleFirearmsCrossbows": "Armi da Fuoco e Balestre Semplici",
+                "BayonetsAndReinforcedStocks": "Baionette e Calci Rinforzati"
             },
             "MountainStance": {
                 "BracersOfArmor": "Posizione della Montagna con Parabracci dell'Armatura",
@@ -7576,7 +7657,15 @@
                 "Tradition": "Seleziona una tradizione.",
                 "Form": "Seleziona una forma.",
                 "Sanctification": "Seleziona una santificazione.",
-                "LevelOneAncestryFeat": "Seleziona un talento di stirpe di 1° livello."
+                "LevelOneAncestryFeat": "Seleziona un talento di stirpe di 1° livello.",
+                "PsiCantrip": "Seleziona un trucchetto psi.",
+                "Trait": "Seleziona un tratto.",
+                "SecondImplement": "Seleziona un secondo strumento.",
+                "FirstImplement": "Seleziona un primo strumento.",
+                "Spell": "Seleziona un incantesimo.",
+                "ConsciousMind": "Seleziona una mente conscia.",
+                "SubconsciousMind": "Seleziona una mente subconscia.",
+                "ThirdImplement": "Seleziona un terzo strumento."
             },
             "SneakAttack": "Attacco Furtivo",
             "SpecialtyCrafting": {
@@ -7623,8 +7712,14 @@
                     "Amulet": "Amuleto",
                     "Mirror": "Specchio",
                     "Wand": "Bacchetta",
-                    "Weapon": "Arma"
-                }
+                    "Weapon": "Arma",
+                    "Regalia": "Amuleto",
+                    "Lantern": "Lanterna",
+                    "Bell": "Campana",
+                    "Chalice": "Calice",
+                    "Tome": "Tomo"
+                },
+                "TalismanEsoterica": "Talismani Esoterici"
             },
             "TwoHanded": {
                 "BastardSword": "Usa la Spada Bastarda a Due Mani",
@@ -7907,7 +8002,13 @@
                     "Scorpion": "Scorpione",
                     "Crocodile": "Coccodrillo",
                     "Bird": "Uccello",
-                    "Brontosaurus": "Brontosauro"
+                    "Brontosaurus": "Brontosauro",
+                    "Ankylosaurus": "Anchilosauro",
+                    "Ant": "Formica",
+                    "Seal": "Foca",
+                    "Wasp": "Vespa",
+                    "Orca": "Orca",
+                    "Crab": "Granchio"
                 },
                 "Dragon": {
                     "Prompt": "Seleziona un drago.",
@@ -8290,7 +8391,8 @@
                     "Stunning": "Stordente",
                     "Perfect": "Perfetta",
                     "Mobile": "Mobile",
-                    "ConfidentNote": "Infliggi al bersaglio la metà dei @Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{danni del tuo colpo preciso}. Questo tipo di danno è quello dell'arma o dell'attacco senz'armi che hai usato per il Colpo."
+                    "ConfidentNote": "Infliggi al bersaglio la metà dei @Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{danni del tuo colpo preciso}. Questo tipo di danno è quello dell'arma o dell'attacco senz'armi che hai usato per il Colpo.",
+                    "PreciseNote": "In caso di fallimento, applichi @Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{l'intero danno di colpo preciso} invece della metà."
                 }
             },
             "Suli": {
@@ -8310,7 +8412,8 @@
             },
             "ToggleProperty": {
                 "GourdHead": "Leshy Zucca: Aumenta CD di percezione",
-                "Triangulate": "L'avvistatore vede il bersaglio"
+                "Triangulate": "L'avvistatore vede il bersaglio",
+                "TagTeam": "Fiancheggiamento con un'altro membro della Società Segreta"
             },
             "TOTMToggle": {
                 "FirstRangeIncrement": "Abilita le abilità che richiedono un bersaglio entro il primo incremento di gittata.",
@@ -8424,6 +8527,9 @@
                 },
                 "HybridStudy": {
                     "Prompt": "Seleziona uno studio ibrido."
+                },
+                "Spellstrike": {
+                    "RechargeNote": "Ricarichi il Colpo Incantato quando lanci un incantesimo a conflusso il cui lancio richiede almeno 1 azione."
                 }
             },
             "BlessingOfDefiance": {
@@ -8549,7 +8655,12 @@
                     },
                     "InnovationCollapsed": "Innovazione Compressa",
                     "NonlethalPacificationTools": "Strumenti di Pacificazione Non Letale",
-                    "NonlethalModularHead": "Testata Modulare Non Letale"
+                    "NonlethalModularHead": "Testata Modulare Non Letale",
+                    "Revolutionary": {
+                        "AllowedDrops": "Privilegio di classe da inventore di 15° livello o inferiore",
+                        "EnhancedResistancePrompt": "Seleziona una modifica iniziale da potenziare.",
+                        "Prompt": "Seleziona una modifica rivoluzionaria."
+                    }
                 },
                 "LockOn": {
                     "TwoActionsLegendary": "Due Azioni (Leggendario)"
@@ -8613,7 +8724,11 @@
                 "Centipede": "Scolopendra",
                 "Wolf": "Lupo",
                 "Toad": "Rospo",
-                "Bat": "Pipistrello"
+                "Bat": "Pipistrello",
+                "Seal": "Foca",
+                "Orca": "Orca",
+                "Crab": "Granchio",
+                "Crocodile": "Coccodrillo"
             },
             "ExemplaryFinisher": {
                 "Braggart": "Se l'avversario era temporaneamente immune al tuo @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, la sua immunità temporanea termina.",
@@ -8721,7 +8836,9 @@
                     "Description": "Quando lanci _mano magica_, puoi rimuoverne la durata, modificare il raggio d'azione a 6 metri e il bersaglio affinché sia un oggetto custodito che rientri nel limite di Volume dell'incantesimo e la cui rimozione richieda poco tempo. Aggiungi agli effetti consueti dell'incantesimo il seguente: Se la creatura che custodisce l'oggetto è disposta a lasciartelo prendere, mano magica ti porta l'oggetto. Se la creatura non è disposta a cederlo, devi tentare di [[/act steal]]{Rubare} l'oggetto bersaglio con una prova di Furto. Si applicano le consuete restrizioni ai tentativi di Rubare oggetti, come il fatto che non puoi rubare oggetti la cui rimozione risulterebbe particolarmente evidente o dispendiosa di tempo (come scarpe e armature indossate e oggetti attivamente impugnati) e che non puoi Rubare un oggetto a una creatura in guardia o che sta combattendo. In caso di successo nella prova di rubare la mano magica ti porta l'oggetto, mentre se ottieni un fallimento critico non puoi usare di nuovo questa modifica per 1 ora. Se sei maestro in Furto, puoi tentare di Rubare un oggetto a una creatura anche se sta combattendo o è in guardia, ma in tal caso il tempo di lancio dell'incantesimo aumenta di 1 azione."
                 },
                 "ShiningArms": {
-                    "Description": "Quando lanci _luce_, puoi modificarne il bersaglio affinché sia 1 arma da mischia, sia incustodita che in tuo possesso, oppure un alleato consenziente, e modifichi la durata dell’Incantesimo in 1 minuto. Se lo fai, aggiungi i seguenti effetti a quelli dell'incantesimo: Quando una creatura che impugna l'arma mette a segno un colpo critico contro un nemico, come reazione puoi Interrompere l'Incantesimo, rendendo il nemico @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round. Una volta usata questa reazione, non puoi utilizzare di nuovo questa modifica per 10 minuti."
+                    "Description": "Quando lanci _luce_, puoi modificarne il bersaglio affinché sia 1 arma da mischia, sia incustodita che in tuo possesso, oppure un alleato consenziente, e modifichi la durata dell’Incantesimo in 1 minuto. Se lo fai, aggiungi i seguenti effetti a quelli dell'incantesimo: Quando una creatura che impugna l'arma mette a segno un colpo critico contro un nemico, come reazione puoi Interrompere l'Incantesimo, rendendo il nemico @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round. Una volta usata questa reazione, non puoi utilizzare di nuovo questa modifica per 10 minuti.",
+                    "Label": "Armi Splendenti",
+                    "Note": "Quando una creatura che impugna l’arma mette a segno un colpo critico contro un nemico, come reazione puoi Interrompere l’Incantesimo, rendendo il nemico @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round."
                 },
                 "SummonEnsemble": {
                     "Description": "Quando lanci _evoca strumento_, puoi modificarne la durata affinché sia mantenuto fino a 1 minuto. Quando lo fai, evochi un numero di strumenti pari al tuo modificatori di caratteristica dell'incantatore, che fluttuano intorno a te e suonano autonomamente. Una volta per turno quando Mantieni l'Incantesimo, scegli un avversario entro 9 metri che può udire la tua esibizione. Il bersaglio deve tentare un TS su @Check[type:will] contro la CD dell’incantesimo; in caso di fallimento viene distratto dalla tua esibizione e diventa @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} per 1 round. Poi il bersaglio è temporaneamente immune per 24 ore."
@@ -8758,6 +8875,9 @@
                 },
                 "UneasyRest": {
                     "Description": "Quando lanci _sonno_, puoi modificare l'incantesimo per aggiungere il seguente effetto a quelli consueti: Chi è soggetto al tuo incantesimo fa brutti sogni. Quando si sveglia, un bersaglio che ha ottenuto un fallimento o fallimento critico nel TS è @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 1}."
+                },
+                "SiphoningTouch": {
+                    "Description": "Quando lanci _tocco del vampiro_, puoi modificarne gli effetti consueti come segue: Anziché ottenere tu i Punti Ferita temporanei, puoi concederli a un alleato entro 9 metri. Quest'ultimo perde qualsiasi Punti Ferita temporaneo rimanente dopo 1 minuto."
                 }
             },
             "SpellHeightened": {
@@ -8908,7 +9028,19 @@
                 }
             },
             "Geomancer": {
-                "AttunementShift": "Cambio di Armonizzazione"
+                "AttunementShift": "Cambio di Armonizzazione",
+                "TerrainAttunement": {
+                    "Desert": "I tuoi nemici devono effettuare un tiro salvezza su @Check[type:fortitude]. Con un fallimento, sono @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{affaticati} finché non bevono acqua o un altro liquido potabile.",
+                    "Forest": "Rami e rampicanti si protendono verso i tuoi nemici, che devono effettuare un tiro salvezza su @Check[type:reflex]. Con un fallimento, diventano @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestri 1} per 1 round (@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{maldestri 2} con un fallimento critico).",
+                    "Aquatic": "Ottieni Velocità di nuotare pari alla tua Velocità sul terreno. Se ti trovi su una superficie, onde temporanee seguono i tuoi movimenti, consentendoti di usare la tua Velocità di nuotare (se ce l'hai) anziché la tua Velocità sul terreno.",
+                    "Arctic": "I tuoi nemici devono effettuare un tiro salvezza su @Check[type:fortitude] o subire penalità di status -1,5 metri alle loro Velocità per 2 round (-3 metri con un fallimento critico).",
+                    "Swamp": "I nemici influenzati subiscono @Damage[(max(1,floor(@item.level/2)))[persistent,poison]]{$1 danni da veleno persistenti} con un tiro salvezza @Check[type:fortitude|basic:true].",
+                    "Underground": "Per 1 round, ottieni scurovisione oltre a percezione tellurica imprecisa fino a 4,5 metri.",
+                    "Label": "Armonizzazione al Territorio",
+                    "Mountain": "Ottieni resistenza ai danni fisici (fatta eccezione per l'adamantio) pari al livello dell'incantesimo.",
+                    "Plains": "Ottieni punti ferita temporanei pari al livello dell'incantesimo per 1 round.",
+                    "Sky": "Puoi Volare fino a 3 metri. Se ti trovi in aria alla fine del tuo turno e non hai Velocità di volare, cadi."
+                }
             },
             "Chronoskimmer": {
                 "DestabilizeFailureLabel": "Destabilizzare il Flusso Temporale (Fallimento)",
@@ -8917,6 +9049,221 @@
             },
             "CrystalKeeper": {
                 "RollOptionLabel": "Danno derivante da pericoli associati ai cristalli"
+            },
+            "Psychic": {
+                "PsiCantripLabels": {
+                    "Guidance": "Guida",
+                    "TelekineticProjectile": "Proiettile Telecinetico",
+                    "TelekineticRend": "Squarcio Telecinetico",
+                    "WarpStep": "Passo Distorcente",
+                    "PhaseBolt": "Dardo Fase",
+                    "Daze": "Frastornare",
+                    "DetectMagic": "Individuazione del Magico",
+                    "DistortionLens": "Lente di Distorsione",
+                    "ForbiddenThought": "Pensiero Proibito",
+                    "Figment": "Suono Fantasma",
+                    "Frostbite": "Raggio di Gelo",
+                    "Ignition": "Produrre Fiamma",
+                    "Message": "Messaggio",
+                    "ImaginaryWeapon": "Arma Immaginaria",
+                    "GlimpseWeakness": "Intravedere Debolezza",
+                    "Shield": "Scudo",
+                    "TelekineticHand": "Mano Magica",
+                    "ThermalStasis": "Stasi Termica"
+                },
+                "Amp": {
+                    "DancingBlade": {
+                        "Push": {
+                            "Title": "Spingere",
+                            "Text": "(attacco) L'arma tenta di Spingere il suo bersaglio, utilizzando il tuo tiro per colpire con incantesimo invece di una prova di Atletica per determinare i risultati della Spinta."
+                        },
+                        "Guard": {
+                            "Title": "Proteggere",
+                            "Text": "Anziché attaccare, l'arma concede bonus di circostanza +2 alla CA contro gli attacchi in mischia alla creatura che sta seguendo. Il bonus dura fino all'inizio del turno successivo o fino a quando l'arma Cambia Partner, a seconda di quale situazione si verifichi per prima."
+                        },
+                        "Base": "Gli attacchi dell'arma aumentano di forza e il tuo controllo su di essi è sufficiente per una tecnica avanzata. I dadi di danno per il Colpo dell'arma passano da d6 a d10. Quando Lanci o Mantieni l'incantesimo, puoi scegliere tra le seguenti opzioni, oltre a quelle standard."
+                    },
+                    "ThermalStasis": "La durata dell'incantesimo diventa 1 minuto.",
+                    "AmpHeightenedLabel": {
+                        "AmpHeightenedEighth": "Intensificazione Amplificata (8°)",
+                        "AmpHeightenedSecond": "Intensificazione Amplificata (2°)",
+                        "AmpHeightenedPlusFour": "Intensificazione Amplificata (+4)",
+                        "AmpHeightenedFourth": "Intensificazione Amplificata (4°)",
+                        "AmpHeightenedFifth": "Intensificazione Amplificata (5°)",
+                        "AmpHeightenedNinth": "Intensificazione Amplificata (9°)",
+                        "AmpHeightenedPlusThree": "Intensificazione Amplificata (+3)",
+                        "AmpHeightenedTenth": "Intensificazione Amplificata (10°)",
+                        "AmpHeightenedSeventh": "Intensificazione Amplificata (7°)",
+                        "AmpHeightenedPlusOne": "Intensificazione Amplificata (+1)",
+                        "AmpHeightenedPlusTwo": "Intensificazione Amplificata (+2)",
+                        "AmpHeightenedSixth": "Intensificazione Amplificata (6°)",
+                        "AmpHeightenedThird": "Intensificazione Amplificata (3°)"
+                    },
+                    "ImaginaryWeapon": {
+                        "Heightened": "I danni aumentano di 2d8 invece che di 1d8.",
+                        "Base": "Formi più armi di forza per colpire diversi nemici. Effettua due Colpi di arma immaginaria, ognuno contro un bersaglio diverso. La tua penalità da attacchi multipli non aumenta finché non hai effettuato entrambi i Colpi."
+                    },
+                    "InertialBarrier": "Tu o un bersaglio dell'incantesimo ottenete resistenza ai danni fisici pari a 2 + il grado dell'incantesimo fino all'inizio del tuo prossimo turno.",
+                    "Message": {
+                        "Heightened": "Il bersaglio del messaggio può scegliere di Colpire, @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Sbilanciare} o @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Spingere} con la sua reazione.",
+                        "Base": "Il tuo messaggio telepatico ti permette di coordinare le tue azioni mentre trasmetti informazioni. Il bersaglio del messaggio può spendere immediatamente la sua reazione per fare un Passo o Avanzare."
+                    },
+                    "Shield": {
+                        "BaseTwo": "Quando Pari con lo Scudo usando questo incantesimo, uno dei tre strati si rompe e tu smetti di ottenere il bonus alla CA, ma l'incantesimo non termina. Puoi continuare a usare l'incantesimo finché l'ultimo strato non si rompe; una volta rotto, l'incantesimo termina e non puoi più lanciare Scudo o scudo amplificato per 10 minuti. Puoi scegliere di rompere più strati quando Pari con lo Scudo usando questo incantesimo per migliorare le tue difese. Se rompi due strati invece di uno, la Durezza aumenta di 1-1/2 rispetto al normale (7 al 1° livello, 15 al 3° livello, 22 al 5° livello, 30 al 7° livello e 37 al 9° livello). Se rompi tutti e tre gli strati, la Durezza aumenta al doppio del normale.",
+                        "Base": "Crei una barriera stratificata di tre scudi per migliorare le tue difese. La durata aumenta a sostenuto fino a 1 minuto. Lo scudo si abbassa comunque all'inizio di ogni turno, ma lo puoi rialzare quando Mantieni l'Incantesimo."
+                    },
+                    "WarpStep": {
+                        "Heightened": "Lo spazio si contrae così intensamente che non è necessario percorrere la distanza intermedia. Puoi scegliere di teletrasportarti in uno spazio all'interno della tua linea di visuale e della tua linea d'effetto con un raggio pari al doppio della tua Velocità (dopo aver applicato il bonus di status di passo distorcente). Questo conferisce all'incantesimo il tratto teletrasporto.",
+                        "Base": "Lo spazio si contrae a un tuo semplice pensiero, permettendoti di Lanciare l'Incantesimo come azione singola."
+                    },
+                    "ShatterSpace": "Tu o un bersaglio dell'incantesimo venite circondati da una spirale spaziale lacerata. Questa è un'aura e sei tu a scegliere il raggio dell'emanazione, fino a 6 metri. Una creatura che inizia il suo turno nell'aura o che entra nell'aura durante il suo turno subisce @Damage[(@item.level)d6[slashing]]{$1 danni taglienti}, con un TS base su Riflessi contro la tua CD di incantesimo. Se la creatura ottiene un fallimento critico, lo spazio lacerato la sbilancia ed essa cade @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prona}. L'aura dura fino all'inizio del tuo turno successivo. Puoi scegliere se l'aura ha effetto sulla creatura che la emette.",
+                    "GlimpseWeakness": {
+                        "Heightened": "Il danno di precisione aggiuntivo aumenta di 1d4+1.",
+                        "Base": "Il danno di precisione aggiuntivo è 1d4+1."
+                    },
+                    "HologramCage": "Delle mura di forza rendono la barriera della gabbia fisica oltre che visiva. Ogni sezione di 3 metri per 3 delle mura della gabbia ha CA 10, Durezza pari al doppio del grado dell'incantesimo e PF pari al quadruplo del grado dell'incantesimo. L'incantesimo viene interrotto se una delle sue mura attraversa una creatura quando lo lanci.",
+                    "TelekineticProjectile": {
+                        "Heightened": "I danni aumentano di 2d6 invece che di 1d6.",
+                        "Base": "Scagli oggetti con ancora più forza, spingendo i tuoi avversari all'indietro in una grandinata di oggetti. Con un successo, spingi il bersaglio a 1,5 metri di distanza da te; con un successo critico, lo spingi a 3 metri di distanza da te, oltre a infliggere danni raddoppiati."
+                    },
+                    "Daze": {
+                        "Base": "L'incantesimo incrina le difese mentali del bersaglio, rendendolo suscettibile a ulteriori attacchi psichici. I danni dell'incantesimo diventano 1d10. Se il bersaglio fallisce il suo TS su Volontà, fino alla fine del suo turno successivo ottiene debolezza 1 ai danni mentali e subisce penalità di status -1 ai tiri salvezza su Volontà. In caso di fallimento critico, la debolezza è 3 (oltre a rendere @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 1} il bersaglio). La debolezza si applica prima che frastornare infligga danni.",
+                        "Heightened": "I danni dell'incantesimo aumentano di 2d10, e la debolezza in caso di fallimento o di fallimento critico aumenta di 1."
+                    },
+                    "AstralRain": "L'area cambia in un'@Template[type:burst|distance:5] e puoi Mantenere L'Incantesimo per un massimo di 1 minuto. La prima volta per ogni round in cui si Mantieni L'Incantesimo, puoi spostare l'esplosione fino a 6 metri.",
+                    "ForbiddenThought": "La tua pressione telepatica è particolarmente devastante per coloro che vi resistono. Se il bersaglio fallisce il suo TS, è anche @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 1}.",
+                    "ShatterMind": "Aumenta l'area dell'incantesimo a scelta tra un @Template[type:cone|distance:30] o @Template[type:cone|distance:60] e i dadi di danno dell'incantesimo passano a d10. Le creature che falliscono sono @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottite 1} fino all'inizio del turno successivo (o @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottite 2} in caso di fallimento critico).",
+                    "TelekineticRend": {
+                        "Base": "I tuoi pensieri si espandono in portata e potenza. Le esplosioni infliggono 1d6 danni contundenti e 1d6 danni taglienti, invece dei danni normali. Una creatura che ottiene un fallimento critico nel TS è anche @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordita 1}.",
+                        "Heightened": "Entrambi i tipi di danno aumentano di 1d6 invece di uno solo. Aggiungi una terza @Template[type:burst|distance:5]{esplosione di 1,5 metri} non sovrapposta all'area."
+                    },
+                    "Toggle": "Amplifica Trucchetti Psi",
+                    "Frostbite": {
+                        "Base": "Dreni energia termica a distanza, usando ciò che raccogli per ricaricarti. Il raggio infligge 3d4 danni da freddo. Ottieni Punti Ferita temporanei pari alla metà dei danni subiti dal bersaglio (dopo aver applicato resistenze e simili). I Punti Ferita temporanei rimanenti vengono persi dopo 1 minuto.",
+                        "Heightened": "Il danno iniziale aumenta di 2d4 invece che di 1d4. La debolezza in caso di fallimento critico aumenta di 1."
+                    },
+                    "Guidance": {
+                        "Base": "Puoi proiettare un lampo di intuizione in un tuo alleato in men che non si dica per prevenire un suo fallimento. Guida amplificata non fa sì che una creatura diventi temporaneamente immune a guida e una creatura può essere bersagliata da guida amplificata anche se è temporaneamente immune a guida.",
+                        "BaseTwo": "Puoi Lanciare un Incantesimo guida amplificata come reazione che si innesca quando un tuo alleato ottiene un fallimento o un fallimento critico a un tiro per colpire, a una prova di Percezione, a un tiro salvezza o a una prova di abilità, e il bonus di guida può trasformare il fallimento in un successo o il fallimento critico in un fallimento normale. Il bonus di guida si applica retroattivamente alla prova.",
+                        "Heightened": "Il bonus dell'incantesimo aumenta a +2."
+                    },
+                    "TelekineticHand": {
+                        "Heightened": "Puoi tentare di @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarmare} la creatura invece di provare a @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Spingerla}. Se fai cadere un oggetto dalla presa della creatura in questo modo, la mano magica lo afferra immediatamente. Qualsiasi effetto della mano magica sulla creatura termina, e l'incantesimo ora trasporta l'oggetto, proprio come se lo si fosse preso con una mano magica non amplificata.",
+                        "Base": "Crei una moltitudine di mani telecinetiche che si aggrappano a una creatura e la muovono. Scegli come bersaglio una creatura di taglia Media o inferiore con l'incantesimo amplificato invece di un oggetto. Prova a @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Spingere} il bersaglio in una direzione a tua scelta, tirando un tiro per colpire con incantesimo contro la sua CD di Tempra invece di una prova di Atletica. La creatura subisce penalità di circostanza di –3 metri alla sua Velocità fino al termine dell'incantesimo. A partire dal round successivo al lancio dell'incantesimo, la prima volta per ogni round in cui Mantieni l'Incantesimo, puoi tentare di nuovo di Spingere la creatura."
+                    },
+                    "RemovePresence": "Scegli un bersaglio dell'incantesimo o una creatura nella sua area. Se il nemico fallisce il suo TS o l'incantesimo lo colpisce, diventi Invisibile per quella creatura, scomparendo ai suoi sensi per 1 minuto o finché non compi un'azione ostile. È simile a essere @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{invisibile}, ma effetti come vedere invisibilità non ti rivelano: stai influenzando la mente del bersaglio, non la sua vista. Visione del vero permette comunque di vedere attraverso questa illusione se la prova di contrasto ha successo.",
+                    "OmnidirectionalScan": {
+                        "BaseTwo": "Se usi la reazione Aiutare preparata e ottieni un successo nel tuo tiro, questi bonus aumentano a +2 per l'attacco con cui stai Aiutando. Con un successo critico aumentano a +3, o a +4 se hai competenza leggendaria nei tiri per colpire con incantesimi.",
+                        "Base": "Le tue scansioni sono così minuziose che puoi prevedere i potenziali punti di forza e di debolezza del tuo nemico. Apprendi quali sono i tiri salvezza più alti e quelli più bassi del nemico bersaglio e ottieni, insieme a tutti gli alleati entro 9 metri, bonus di circostanza +1 agli attacchi e ai danni contro la creatura."
+                    },
+                    "PhaseBolt": {
+                        "Heightened": "I danni del dardo aumentano di 2d4 invece che di 1d4.",
+                        "Base": "Il dardo fase esce completamente fuori fase, diventando invisibile e intangibile finché non è già conficcato nel bersaglio, dando l'impressione di essersi semplicemente teletrasportato sul posto. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} contro l'attacco. Inoltre, il dardo ignora una quantità di durezza o resistenza ai danni perforanti pari a metà del grado dell'incantesimo. Con un successo critico, il bersaglio non può essere colpito da effetti di teletrasporto fino all'inizio del tuo prossimo turno."
+                    },
+                    "GhostlyShift": {
+                        "Heightened": "Aumenta i danni inflitti dal tuo attraversare una creatura di 1d6.",
+                        "Base": "La tua inconsistenza è abbastanza completa da permetterti di passare attraverso altre creature, causando dolorosi effetti di interferenza quando lo fai. Una volta per round, quando Avanzi, Scavi, Nuoti o Voli, puoi attraversare lo spazio di una creatura durante quell'azione senza dover effettuare una prova di @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Destreggiarsi}, anche se non puoi terminare il tuo turno nel suo spazio. Quando attraversi lo spazio di una creatura in questo modo, le infliggi 2d6 danni da forza, con un TS base su Tempra."
+                    },
+                    "RedistributePotential": {
+                        "Heightened": "Aumenta i danni di 2d6 invece di 1d4.",
+                        "Base": "Puoi influenzare il flusso di energia su scala molto più grande. Invece di due quadretti di 1,5 metri, crei due @Template[type:burst|distance:10]{esplosioni di 3 metri}. Devono comunque essere adiacenti l'una all'altra e possono sovrapporsi. Una creatura che si trova in entrambe le aree può comunque essere colpita solo da una delle due a tua scelta. I danni dell'incantesimo aumentano a 6d6. Le condizioni durano 1 minuto."
+                    },
+                    "ForeseeThePath": "L'incantesimo ha lo stesso risultato sia in caso di fallimento che di successo (ma non ha effetto in caso di fallimento critico). Ogni volta che Mantieni l'Incantesimo, puoi scegliere un altro alleato da bersagliare, concedendogli gli stessi benefici dell'alleato bersaglio iniziale.",
+                    "Ignition": {
+                        "Heightened": "Invece di usare la normale voce intensificato di produrre fiamma, i danni iniziali aumentano di 1d10 (1d12 in mischia) e i danni da spargimento aumentano di 1. I danni da fuoco persistenti in caso di colpo critico aumentano di 1d4.",
+                        "Base": "Sprigioni calore puro che fa prendere fuoco a un bersaglio. Il danno iniziale passa a 1d10 danni da fuoco più 1 danno da fuoco da spargimento. Quando usi produrre fiamma amplificato come attacco in mischia, aumenti i dadi danno del danno iniziale da d10 a d12. Non vieni influenzato dai danni da spargimento di produrre fiamma amplificato."
+                    },
+                    "AlternateAmp": "Alterna Amplificazione",
+                    "DetectMagic": {
+                        "Heightened": "Il bonus di status ai TS contro la magia aumenta a +2.",
+                        "Base": "Il tuo impulso di magia individuatrice ti aiuta a percepire i punti di forza o di debolezza della magia nelle vicinanze. Quando rilevi la presenza di magia su un nemico o un pericolo, ottieni bonus di status +1 ai tiri salvezza contro la magia proveniente da quel nemico o pericolo per 3 round. Se trovi magia da più fonti con un singolo lancio di individuazione del magico, ottieni il bonus contro tutte le fonti."
+                    },
+                    "EntropicWheel": "Ottieni due frammenti invece di uno quando Lanci l'Incantesimo e ogni volta in cui la ruota guadagna un altro frammento.",
+                    "WhisperingSteps": "Scegli un nemico come bersaglio dell'incantesimo. Se il nemico fallisce il suo TS o l'incantesimo lo colpisce, sussurri nella mente della creatura, costringendola a fare un Passo in una direzione a tua scelta; trattandosi di un movimento forzato, non puoi costringere la creatura a fare un Passo in un terreno pericoloso, oltre una sporgenza o simili. Dopo aver fatto un Passo, la creatura diventa immune a quest'amplificazione per 24 ore.",
+                    "ContagiousIdea": "Puoi scegliere di diffondere il pensiero dal secondo bersaglio a un terzo bersaglio, nello stesso modo in cui lo diffondi dal primo bersaglio al secondo. Un pensiero piacevole concede il doppio dei Punti Ferita temporanei (10, più altri 2 per ogni grado intensificato).",
+                    "WarpSpace": "Scegli un quadretto entro 9 metri verso cui hai linea di effetto e linea visuale. Determina la linea di effetto e la linea visuale da quel punto, così come eventuale copertura delle creature contro l'incantesimo. L'incantesimo può eccedere il suo raggio normale misurato a partire da te, fintanto che rientra nel suo normale raggio a partire dal quadretto che hai scelto.",
+                    "DistortionLens": "La lente può interferire con le creature e con gli attacchi. Una volta durante un'azione di movimento di un alleato di taglia Media o inferiore, l'alleato può muoversi dentro e fuori dal quadretto della lente senza che quel quadretto venga conteggiato nella distanza totale percorsa. Al contrario, la lente è terreno difficile per i tuoi nemici.",
+                    "HomingBeacon": "Scegli una creatura colpita dall'incantesimo (se l'incantesimo ha un tiro per colpire con incantesimo) o che fallisce il TS contro l'incantesimo (se l'incantesimo richiede un TS). Dal luogo in cui si trova la creatura viene emesso un raggio psichico che rende più facile notarla, in quanto la mente e l'attenzione degli astanti vengono sottilmente attirate su di essa. Per 1 minuto, se il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{invisibile}, è invece soltanto @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato}, e se è occultato, non è più occultato.",
+                    "TargetOfPsychicIre": "Scegli un bersaglio dell'incantesimo. I fenomeni psichici si rivolgono contro il bersaglio: tipicamente, gli oggetti si scagliano contro la creatura. All'inizio di ogni turno del bersaglio, esso subisce @Damage[(@item.level)d4[bludgeoning]]{$1 danni contundenti}, con un TS base su Riflessi. Il bersaglio rimane segnato dall'ira psichica per 3 round. L'effetto persiste anche se cadi @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{privo di sensi} o lasci l'area.",
+                    "VectorScreen": "Il tuo schermo persiste più a lungo ed è possibile farlo esplodere in un contrattacco esplosivo. La durata dell'incantesimo aumenta a 1 minuto. Puoi Interrompere l'incantesimo. Se ci sono dei proiettili intrappolati nello schermo, puoi lanciare proiettile telecinetico per scagliarli contro una creatura come parte dell'Interruzione dell'incantesimo. Misura la gittata del proiettile telecinetico dal punto in cui si trovava lo schermo vettoriale, invece che da te.",
+                    "TesseractTunnel": "Il movimento fisico non è più necessario per collegare due punti nello spazio. Quando lanci tunnel ipercubico, crei solo un tunnel che termina in un quadretto entro un raggio pari alla tua Velocità; puoi scegliere di teletrasportarti immediatamente nello spazio all'estremità del tunnel. Inoltre, il tunnel può essere percorso in entrambe le direzioni, invece che solo dall'ingresso all'uscita. Infine, la durata dell'incantesimo passa a 1 minuto. Puoi Interrompere l'incantesimo.",
+                    "MentalBalm": "Tu o un alleato entro 9 metri ottiene bonus di status +2 ai TS su Volontà contro gli effetti di emozione per 1 minuto. Puoi anche fare in modo che il trucchetto psi amplificato contrasti un effetto che impone la condizione spaventato a te stesso o all'alleato scelto, o a un effetto che impone la condizione sbigottito con una durata di 1 ora o meno. Se riesci a contrastare l'effetto, rimuovi solo le condizioni spaventato e sbigottito, non qualsiasi altra parte dell'effetto."
+                },
+                "SpellModification": {
+                    "Daze": "Puoi frastornare da una distanza maggiore. Il raggio aumenta a 36 metri.",
+                    "Frostbite": "Puoi congelare persone da ancora più lontano. Il raggio del tuo raggio di gelo aumenta a 36 metri.",
+                    "Guidance": "Hai occhi dappertutto, ed essi ti permettono di guidare le persone a grande distanza. Il raggio di guida aumenta a 36 metri.",
+                    "Shield": "Il tuo Scudo può essere utilizzato per proteggere altri. Quando lanci scudo, puoi scegliere un alleato bersaglio entro 9 metri e fargli ottenere i benefici dell'incantesimo al posto tuo. L'opzione di Parare con lo Scudo dell'incantesimo dipende da te e utilizza la tua reazione, non quella del bersaglio.",
+                    "WarpStep": "Alteri lo spazio abbreviando le distanze, concedendo bonus di status +3 metri alla tua Velocità invece che bonus di status +1,5 metri quando usi passo distorcente.",
+                    "Message": "Il tuo Messaggio non è così facilmente limitato dagli ostacoli. L'incantesimo può viaggiare fino a 36 metri per raggiungere il bersaglio, aggirando muri e ostacoli; ciò significa che non è necessaria una linea d'effetto o una linea di vista diritta per lanciare il messaggio, a patto che si conosca lo spazio occupato dal bersaglio e che ci sia un percorso libero di almeno 36 metri che possa raggiungerlo.",
+                    "TelekineticProjectile": "I tuoi proiettili telecinetici possono volare molto più lontano. Aumenta la gittata del proiettile telecinetico a 18 metri.",
+                    "StrainMind": "Aggiungi all'incantesimo un'amplificazione che costa 1 Punto Focalizzazione. Invece di pagare il normale costo in Punti Focalizzazione, perdi Punti Ferita pari a quattro volte il grado dell'incantesimo del trucchetto psi amplificato, sanguinando dal naso o subendo un altro segno visibile del tuo sforzo.",
+                    "Ignition": "Puoi incrementare drasticamente il calore contro i bersagli lontani. Quando usi produrre fiamma come attacco a distanza, aumenta il raggio a 18 metri. Quando usi produrre fiamma come attacco in mischia, la tua portata aumenta di 1,5 metri.",
+                    "DetectMagic": "Hai una precisione di controllo che gli altri incantatori possono solo sognare. Quando lanci individuazione del magico, sei consapevole di qualsiasi creatura nell'emanazione influenzata da un incantesimo o che trasporta un oggetto magico, e determini la posizione della magia principale all'interno di qualsiasi pericolo magico nell'emanazione (con le normali restrizioni per l'individuazione delle illusioni). Ciò si manifesta tipicamente come un'alterazione della vista, ad esempio vedendo una tenue aura intorno alla creatura o al pericolo. Rilevare questi fenomeni non chiarisce quale incantesimo sia presente su una creatura, né quali oggetti siano magici.",
+                    "PhaseBolt": "Il tuo Dardo Fase manda temporaneamente fuori fase la copertura del bersaglio se lo colpisce. Se ha successo, riduce di 1 il bonus di circostanza alla CA del bersaglio (se presente) fino all'inizio del suo prossimo turno.",
+                    "DeepRoots": "Quando Lanci un Incantesimo che impone la condizione @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{controllato} o comunque costringe il bersaglio a compiere determinate azioni (come @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{comando}), puoi scegliere un bersaglio che ha ottenuto un fallimento critico al suo TS. Quando il bersaglio finisce di eseguire qualsiasi comando impartito dall'incantesimo, o quando l'incantesimo viene dissolto o contrastato, il bersaglio subisce @Damage[(@item.level)d6[mental]]{$1 danni mentali}.",
+                    "PsychicRapport": "Dopo che hai Lanciato un Incantesimo con il tratto mentale, fino all'inizio del tuo prossimo turno ottieni bonus di circostanza +1 alle prove di Diplomazia, Inganno e Intimidazione e alle prove di Percezione per @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Intuire}.",
+                    "TelekineticHand": "La tua mano magica può trasportare fino a 1 Volume invece di un Volume leggero. Se l'incantesimo è intensificato al 3° grado o superiore, il suo Volume massimo è 2. Se l'incantesimo è intensificato al 7° grado o superiore, il suo Volume massimo è 3.",
+                    "ThoughtformSummoning": "Ogni volta che evochi una creatura, puoi scegliere invece di creare un costrutto psichico di quella creatura. Ciò le conferisce resistenza ai danni fisici pari a metà del suo livello, debolezza 5 ai danni da forza e mentali e la capacità di passare attraverso gli spazi dei nemici senza bisogno di @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Destreggiarsi} (anche se non può terminare il suo turno in uno spazio occupato)."
+                },
+                "OscillatingWave": {
+                    "Mindshift": "Mentalizzato: Aggiungere/Sottrarre Energia",
+                    "AddEnergy": "Aggiungere Energia",
+                    "ConservationOfEnergyLabel": "Conservazione dell'Energia",
+                    "RemoveEnergy": "Sottrarre Energia"
+                },
+                "UnleashPsyche": {
+                    "DamageLabel": "Lancio un Incantesimo da Lanciare Incantesimi da Psicomante"
+                }
+            },
+            "Spellshape": {
+                "SowSpell": "Se la tua azione successiva è Lanciare un Incantesimo usando 1 o 2 azioni, l'incantesimo si impianta in un quadretto adiacente. Devi prendere tutte le decisioni riguardanti l'incantesimo nel momento in cui lo lanci. Entro i successivi 10 minuti, puoi far germogliare il tuo incantesimo seminato e produrre gli effetti dell'incantesimo come reazione, che si innesca quando una creatura entra nello spazio dell'incantesimo seminato o in un quadretto adiacente. Puoi avere un solo incantesimo seminato alla volta, e se non lo fai innescare entro 10 minuti l'incantesimo si dissolve e si perde. Una creatura può notare l'incantesimo seminato se supera una prova di Percezione contro la tua CD di incantesimo.",
+                "CastDown": "Se con la tua azione successiva lanci ferire o guarire per danneggiare una creatura, il bersaglio cade a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} se subisce danni di qualunque tipo dall'incantesimo. Se il bersaglio ottiene un fallimento critico nel tiro salvezza contro l'incantesimo, subisce inoltre penalità di status -3 metri alla sua Velocità per 1 minuto. @UUID[Compendium.pf2e.feat-effects.Item.Ve1CRFI8ikL6dqcL]{Effetto: Scagliare a Terra}",
+                "EbbAndFlow": "Scegli una creatura nel raggio d'azione che verrebbe ferita dall'incantesimo e un'altra creatura nel raggio d'azione che verrebbe guarita dall'incantesimo. Il tuo guarire o ferire bersaglia entrambe le creature.",
+                "SplitHex": "Se la prossima azione che usi è Lanciare un Incantesimo per lanciare una fattura dannosa con un bersaglio singolo, riduci il suo grado di 2 (rendendola 2 gradi più bassa del livello di incantesimo massimo che puoi lanciare). Cosi facendo, puoi selezionare un secondo bersaglio da colpire con quella fattura.",
+                "HeroicRecovery": "il bersaglio ottiene tre bonus fino alla fine del suo turno successivo: bonus di status +1,5 metri alla Velocità, bonus di status +1 ai tiri per colpire e bonus di status +1 ai tiri per i danni. Inoltre, se il bersaglio è prono, può immediatamente Alzarsi come un'azione gratuita che non innesca reazioni.",
+                "WidenSpell": "Se con la tua azione successiva Lanci un Incantesimo la cui area è un'esplosione, un cono o una linea e che non preveda una durata, aumenti l'area dell'incantesimo. Aggiungi 1,5 metri al raggio di un'esplosione che normalmente ha un raggio di almeno 3 metri (un'esplosione di raggio minore non viene influenzata). Aggiungi 1,5 metri alla lunghezza di un cono o di una linea che normalmente misura 4,5 metri o meno, e aggiungi 3 metri alla lunghezza di un cono o una linea maggiore.",
+                "CurrentSpell": "Fino all'inizio del tuo turno successivo ottieni bonus di circostanza +1 alla CA, o bonus di circostanza +2 contro gli attacchi a distanza. Questo effetto ha il tratto acqua o aria o entrambi, a seconda dei tratti dell'incantesimo che lanci. Ottieni inoltre bonus di circostanza +1 a tutti i tiri salvezza contro gli effetti con i tratti acqua, aria o entrambi fino all'inizio del tuo turno successivo, a seconda dei tratti dell'incantesimo. @UUID[Compendium.pf2e.feat-effects.Item.8HGz3rQCHNgdAqFC]{Effetto: Incantesimi Fluenti}",
+                "HealingTransformation": "Il tuo incantesimo di metamorfosi ripristina anche @Damage[(@item.rank)d6[healing]]{$1 Punti Ferita} alla creatura. Questo è un effetto di guarigione.",
+                "EchoingChannel": "Scegli una creatura aggiuntiva adiacente a te o al bersaglio. Su di essa lanci la versione da 1 azione dello stesso incantesimo, che ha lo stesso livello dell incantesimo ferire o guarire da 2 azioni che hai lanciato e non consuma un altro slot incantesimo",
+                "FormControl": "Il grado dell incantesimo è inferiore di 2 rispetto alla norma (minimo 1° grado), ma puoi restare trasformato fino a un massimo di 1 ora o per la durata indicata (quale dei due sia il maggiore). Puoi comunque Interrompere la trasformazione in ogni momento, come consentito dall'incantesimo.",
+                "Martyr": "Perdi @Damage[(@item.rank)d8]{$1 Punti Ferita}, che non puoi ridurre o mitigare in alcun modo, e il tuo alleato recupera un numero equivalente di Punti Ferita. @UUID[Compendium.pf2e.feat-effects.Item.7ogytOgDmh4h2g5d]{Effetto: Recupero Eroico}",
+                "Remediate": "Se la tua azione successiva è usare la tua sorgente divina per lanciare un incantesimo guarire o ferire da 3 azioni per danneggiare delle creature, puoi sfruttare l'energia residua per controbilanciare le forze opposte. In aggiunta ai suoi normali effetti, puoi usare il tuo incantesimo guarire o ferire per tentare di contrastare un effetto divino nell'area dell'incantesimo."
+            },
+            "CrystalLuminescence": {
+                "Normal": "Normale",
+                "Enhanced": "Migliorata"
+            },
+            "TempestForm": {
+                "Air": "Aria",
+                "Mist": "Nebbia",
+                "Water": "Acqua"
+            },
+            "Numbers": {
+                "Five": "Cinque",
+                "Nine": "Nove",
+                "One": "Uno",
+                "Seven": "Sette",
+                "Ten": "Dieci",
+                "Four": "Quattro",
+                "Three": "Tre",
+                "Two": "Due",
+                "Six": "Sei",
+                "Eight": "Otto"
+            },
+            "Notes": {
+                "RequirementsNotMet": "La creatura attualmente non soddisfa i requisiti per usare quest'abilità.",
+                "NoteLabel": "Nota"
+            },
+            "MechanicalSymbiosis": {
+                "CriticalFailureNote": "Diventi @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 2}",
+                "FailureNote": "Diventi @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordito 1}"
+            },
+            "PathfinderAgentDedication": {
+                "ThoroughReports": "Resoconti Accurati"
+            },
+            "Defending": {
+                "FireSpell": "Difensa contro un'incantesimo di fuoco"
             }
         },
         "LevelRange": "Livelli {minLevel} - {level}",
@@ -9620,7 +9967,11 @@
         "TraitDescriptionDeviant": "Questo tratto descrive strane capacità soprannaturali o paranormali.",
         "TraitDescriptionSerpentfolk": "Gli uomini serpente sono una famiglia di umanoidi serpentiformi.",
         "TraitDescriptionEsoterica": "Il tratto esoterico è presente in molti talenti e privilegi di classe dei taumaturghi che incorporano i vari talismani, gingilli soprannaturali e altri oggetti che essi portano con sé. Le capacità con il tratto esoterico richiedono di essere in possesso degli oggetti esoterici per essere utilizzate. Normalmente si presume che tu abbia sempre i tuoi oggetti esoterici, ma in alcune rare circostanze può capitarti di non averli a portata di mano o di essere privato del tuo equipaggiamento.",
-        "TraitDescriptionZombie": "Questi non morti sono cadaveri putrescenti privi di intelletto che bramano la carne dei viventi."
+        "TraitDescriptionZombie": "Questi non morti sono cadaveri putrescenti privi di intelletto che bramano la carne dei viventi.",
+        "TraitDescriptionSoulbound": "Questi costrutti sono potenziati mentalmente tramite un frammento dell’anima di una creatura un tempo vivente.",
+        "TraitDescriptionWerecreature": "Queste creature mutaforma sono capaci per natura di passare da una forma animale a una umanoide a una ibrida o sono afflitte da una maledizione che le obbliga a trasformarsi involontariamente.",
+        "TraitDescriptionTane": "I Tane sono potenti esseri creati eoni fa dagli Anziani del Primo Mondo. Tutti i Tane considerano il piano su cui si trovano come il loro piano d'origine.",
+        "TraitDescriptionQlippoth": "I qlippoth, una famiglia di nefandi proveniente dell'Abisso, sono per buona parte sacrileghi. Il loro aspetto influenza le menti dei non qlippoth che li vedono."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
