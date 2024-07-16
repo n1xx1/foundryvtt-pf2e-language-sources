@@ -4127,7 +4127,7 @@
             "PoltergeistTelekineticStorm": {
                 "MultiAttackLabel": "Tempesta Telecinetica - Bersagli Multipli",
                 "SingleAttackLabel": "Tempesta Telecinetica - Bersaglio Singolo",
-                "SingleAttackEffect": "L'attacco infligge [[/r {1d12}]]{1d12 danni} in caso di fallimento.",
+                "SingleAttackEffect": "L'attacco infligge @Damage[1d12[untyped]] in caso di fallimento.",
                 "MultipleTargets": "Bersagli Multipli",
                 "SingleTarget": "Bersaglio Singolo"
             },
@@ -6317,7 +6317,7 @@
         "TraitStrix": "Strix",
         "TraitStructure": "Struttura",
         "TraitSuli": "Suli",
-        "TraitSummon": "Evoca",
+        "TraitSummon": "Evocazione",
         "TraitSummoned": "Evocata",
         "TraitSwashbuckler": "Spadaccino",
         "TraitSwarm": "Sciame",
@@ -7215,7 +7215,7 @@
             },
             "Life": {
                 "ToggleLabel": "Tutti i bersagli di guarire sono creature viventi",
-                "DescriptionModerate": "Ogni volta che finisci di lanciare un incantesimo che non sia un trucchetto, ripristini [[/r @item.level[healing]]] Punti Ferita a un bersaglio dell'incantesimo o alla creatura più vicina a te, a tua scelta. Non puoi guarire te stesso in questo modo. Questa guarigione ha i tratti guarigione, necromanzia e positivo, oltre al tratto di tradizione dell'incantesimo.",
+                "DescriptionModerate": "Ogni volta che finisci di lanciare un incantesimo che non sia un trucchetto, ripristini @Damage[@item.level[healing]]{$1 Punti Ferita} a un bersaglio dell'incantesimo o alla creatura più vicina a te, a tua scelta. Non puoi guarire te stesso in questo modo. Questa guarigione ha i tratti guarigione, necromanzia e positivo, oltre al tratto di tradizione dell'incantesimo.",
                 "DescriptionMajor": "Ogni volta che usi uno slot incantesimo per lanciare un incantesimo di 5° grado o superiore che richiede 2 o più azioni per essere lanciato, disperdi energia positiva in un'@Template[type:burst|distance:30] con gli effetti di un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{guarire} da 3 azioni di un livello inferiore di 4 al grado dell'incantesimo che lanci. Questa guarigione avviene immediatamente dopo aver finito di @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare l'Incantesimo} e tu non ne benefici. Invece, al contrario, perdi il doppio dei Punti Ferita che hai tirato per l'incantesimo guarire."
             },
             "Time": {
@@ -7442,7 +7442,8 @@
             "Lava": "In Lava",
             "RockyOrBarren": "Su Terreno Roccioso o Arido",
             "Fly": "A Volare",
-            "Balance": "A Bilanciarsi"
+            "Balance": "A Bilanciarsi",
+            "TumbleThrough": "A Destreggiarsi"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -7670,7 +7671,9 @@
                 "Spell": "Seleziona un incantesimo.",
                 "ConsciousMind": "Seleziona una mente conscia.",
                 "SubconsciousMind": "Seleziona una mente subconscia.",
-                "ThirdImplement": "Seleziona un terzo strumento."
+                "ThirdImplement": "Seleziona un terzo strumento.",
+                "ShieldOrWeapon": "Seleziona uno scudo o un'arma.",
+                "Feature": "Seleziona una caratteristica."
             },
             "SneakAttack": "Attacco Furtivo",
             "SpecialtyCrafting": {
@@ -7761,6 +7764,67 @@
                 },
                 "DistractingFeint": {
                     "Text": "Mentre una creatura è impreparata per effetto di una tua Finta, subisce anche penalità di circostanza -2 alle prove di Percezione e ai tiri salvezza su Riflessi. @UUID[Compendium.pf2e.feat-effects.Item.7hRgBo0fRQBxMK7g]{Effetto: Finta Distraente}"
+                },
+                "Debilitation": {
+                    "Clumsy": {
+                        "Note": "Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1}.",
+                        "Label": "Maldestro"
+                    },
+                    "PrecisionDamage": {
+                        "Label": "Danni di Precisione",
+                        "Note": "Il bersaglio subisce 2d6 danni di precisione aggiuntivi dai tuoi attacchi. @UUID[Compendium.pf2e.feat-effects.Item.ZZXIUvZqqIxkMfYa]{Effetto: Debilitazioni Precise}"
+                    },
+                    "ReduceCover": {
+                        "Label": "Riduci Copertura",
+                        "Note": "Il bersaglio non ottiene bonus di circostanza alla CA se Alza lo Scudo o se ha copertura inferiore o standard; ottiene solo bonus di circostanza +2 alla CA se ha copertura superiore o se usa Andare in Copertura."
+                    },
+                    "PreventStep": {
+                        "Label": "Previeni Passi",
+                        "Note": "Il bersaglio non può fare Passi"
+                    },
+                    "Enfeebled": {
+                        "Note": "Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1}.",
+                        "Label": "Indebolito"
+                    },
+                    "Label": "Debilitazione",
+                    "Critical": {
+                        "Note": "Il bersaglio effettua un tiro salvezza su @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.rogue.dc)] contra la tua CD di classe con i seguenti effetti.<hr /><p><strong>Successo Critico</strong> Il bersaglio non viene influenzato.</p><p><strong>Successo</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato 1} fino alla fine del tuo turno successivo.</p><p><strong>Fallimento</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato 2} fino alla fine del tuo turno successivo.</p><p><strong>Fallimento Critico</strong> Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzato} fino alla fine del tuo turno successivo.</p>",
+                        "Label": "Critica"
+                    },
+                    "SpeedPenalty": {
+                        "Note": "Il bersaglio subisce penalità di status -3 metri alle sue Velocità. @UUID[Compendium.pf2e.feat-effects.Item.yBTASi3FvnReAwHy]{Effetto: Colpo Debilitante}",
+                        "Label": "Penalità alla Velocità"
+                    },
+                    "Stupefied": {
+                        "Note": "Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottito 1}",
+                        "Label": "Sbigottito"
+                    },
+                    "OffGuard": {
+                        "Label": "Impreparato",
+                        "Note": "Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato}."
+                    },
+                    "Title": "Debilitazione <span class=\"action-glyph\">f</span>",
+                    "Bloody": {
+                        "Label": "Sanguinaria",
+                        "Note": "Il bersaglio subisce @Damage[3d6[bleed]]{3d6 danni da sanguinamento persistenti}."
+                    },
+                    "SecondLabel": "Seconda Debilitazione",
+                    "PreventFlanking": {
+                        "Note": "Il bersaglio non può attaccare ai fianchi né contribuisce agli attacchi ai fianchi dei suoi alleati. @UUID[Compendium.pf2e.feat-effects.Item.JUgx48XHMz4QM4Ir]{Effetto: Debilitazione (Niente Fiancheggiamento)}",
+                        "Label": "Previeni Fiancheggiamento"
+                    },
+                    "PreventReactions": {
+                        "Label": "Previeni Reazioni",
+                        "Note": "Il bersaglio non può utilizzare reazioni."
+                    },
+                    "Trigger": "<strong>Innesco</strong> Il tuo Colpo va a segno contra una creatura Impreparata e infligge danni.",
+                    "Weakness": {
+                        "Note": "Il bersaglio ottiene debolezza 5 contro danni contundenti, perforanti o taglienti, a tua scelta. @UUID[Compendium.pf2e.feat-effects.Item.Rgt9hH3W1oh9dvku]{Effetto: Debilitazioni Severe}",
+                        "Label": "Debolezza"
+                    }
+                },
+                "OverextendingFeint": {
+                    "Note": "Se ottieni un successo in una Finta, puoi fare in modo che il bersaglio subisca una penalità di circostanza -2 a tutti i tiri per colpire contro di te al posto di qualsiasi altro effetto che si verificherebbe quando si Finta. @UUID[Compendium.pf2e.feat-effects.Item.x7CjbOQZUgZKW16M]{Effetto: Finta Sovraesposta}"
                 }
             },
             "SkillMastery": {
@@ -7799,7 +7863,7 @@
                     "SaveNote": "Quando ottieni un successo in un TS contro un effetto con il tratto emozione, lo consideri un successo critico."
                 },
                 "BloodlettingFangs": {
-                    "AttackNote": "I tuoi Colpi con le zanne infliggono [[/r 1d4[bleed]]]{1d4 danni persistenti da sanguinamento} aggiuntivi con un colpo critico."
+                    "AttackNote": "I tuoi Colpi con le zanne infliggono @Damage[1d4[bleed]]{1d4 danni persistenti da sanguinamento} aggiuntivi con un colpo critico."
                 }
             },
             "DragonDisciple": {
@@ -7840,7 +7904,7 @@
                     "Note": "Se ottieni un fallimento o un fallimento critico in un tiro salvezza contro un effetto dannoso, lo consideri un successo."
                 },
                 "TorchGoblin": {
-                    "Note": "Fintanto che subisci danno da fuoco persistente, tutti i tuoi attacchi in mischia contro creature adiacenti infliggono [[/r 1[fire]]]{1 danno da fuoco} aggiuntivo per dado di danno dell'arma."
+                    "Note": "Fintanto che subisci danno da fuoco persistente, tutti i tuoi attacchi in mischia contro creature adiacenti infliggono @Damage[1[fire]]{1 danno da fuoco} aggiuntivo per dado di danno dell'arma."
                 },
                 "ChosenOfLamashtu": {
                     "Prompt": "Seleziona un lignaggio goblin."
@@ -7866,7 +7930,45 @@
             },
             "Witch": {
                 "Patron": {
-                    "Prompt": "Seleziona un patrono."
+                    "Prompt": "Seleziona un patrono.",
+                    "FamiliarAbility": {
+                        "FreezingRime": {
+                            "Description": "Il tuo famiglio è freddo al tocco e il suo respiro è sempre visibile. Quando Lanci o Mantieni una fattura, puoi far formare del ghiaccio in un'@Template[type:burst|distance:5] centrata in un quadretto dello spazio del tuo famiglio. Questi quadretti sono terreno difficile fino all'inizio del tuo prossimo turno.",
+                            "Title": "Famiglio di Brina Congelante"
+                        },
+                        "OngoingMisery": {
+                            "Description": "Quando Lanci o Mantieni una fattura, il tuo famiglio può maledire una creature entro 4,5 metri da esso, allungando la durata di qualsiasi condizione negativa lo affligge di 1 round. Questo è un effetto di maledizione. Questo prolunga solo le condizioni con una durata temporizzata (come '1 round' o 'fino alla fine del tuo prossimo turno') e non previene la rimozione delle condizioni in altri modi.",
+                            "Title": "Famiglio della Miseria Continua"
+                        },
+                        "RestoredSpirit": {
+                            "Description": "Quando Lanci o Mantieni una fattura, una creatura consenziente entro 4,5 metri dal tuo famiglio ottiene Punti Ferita pari a 2 + metà del tuo livello, che durano fino all'inizio del tuo prossimo turno.",
+                            "Title": "Famiglio dello Spirito Rinsanato"
+                        },
+                        "FlowingScript": {
+                            "Description": "Quando Lanci o Mantieni una fattura, le lettere iniziano a mutare rapidamente, creando una distrazione. Fino all'inizio del tuo prossimo turno, il tuo famiglio può fornire fiancheggiamento a te o ai tuoi alleati come se fosse in gredo di attaccare e avesse una portata di 1,5 metri; questo è un effetto visivo.",
+                            "Title": "Famiglio di Scritture Fluenti"
+                        },
+                        "BalancedLuck": {
+                            "Title": "Famiglio di Fortuna Equilibrata",
+                            "Description": "Quando Lanci o Mantieni una fattura, uan creature entro 4,5 metri dal tuo famiglio ottiene, a tua scelta, un bonus di stato +1 alla sua CA o una penalità di -1 alla sua CA fino all'inzio del tuo prossimo turno."
+                        },
+                        "KeenSenses": {
+                            "Title": "Famiglio dai Sensi Acuti",
+                            "Description": "Quando Lanci o Mantieni una fattura, il tuo famiglio ottiene a tua scelta fiuto impreciso, percezione tellurica o percezione delle onde, con un raggio di 18 metri ifno all'inizio del tuo turno successivo, e può immediatamente @UUID[Compendium.pf2e.actionspf2e.Item.sn2hIy1iIJX9Vpgj]{Indicare} come un'azione gratuita."
+                        },
+                        "StalkingNight": {
+                            "Title": "Famiglio della Notte Perseguitatrice",
+                            "Description": "Quando Lanci o Mantieni una fattura e il tuo famiglio è adiacente a un nemico che è @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato}, @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosto} o non individuato, il nemico diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 1}."
+                        }
+                    }
+                },
+                "WitchsArmaments": {
+                    "EldritchNails": "Unghie Mistiche",
+                    "LivingHair": "Capigliatura Vivente",
+                    "IronTeeth": "Denti di Ferro"
+                },
+                "Cauldron": {
+                    "CraftingEntry": "Calderone"
                 }
             },
             "Wizard": {
@@ -7875,6 +7977,12 @@
                 },
                 "ArcaneThesis": {
                     "Prompt": "Seleziona una tesi arcana."
+                },
+                "UnifiedMagicalTheory": {
+                    "Prompt": "Seleziona un talento da mago di 1° livello."
+                },
+                "Spellshape1": {
+                    "Prompt": "Seleziona un talento da mago di 1° livello metamagico."
                 }
             },
             "Dwarf": {
@@ -7897,7 +8005,7 @@
                     "Note": "Quando colpisci in modo critico una creatura non morta, egli è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} per 1 round"
                 },
                 "SparkFist": {
-                    "Note": "Ogni volta che metti a segno un Colpo con il pugno, subisci [[/r (1+@weapon.system.runes.striking)[fire]]]{danni da fuoco}."
+                    "Note": "Ogni volta che metti a segno un Colpo con il pugno, subisci @Damage[(1+@weapon.system.runes.striking)[fire]]{$1 danni da fuoco}."
                 },
                 "ForgeBlessedShot": {
                     "Note": "Ignori la condizione @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato}, nonché la copertura minore, standard e superiore del tuo bersaglio."
@@ -7967,7 +8075,7 @@
                     "CoreAttunement": "Armonizzazione al Nucleo"
                 },
                 "CoreCannon": {
-                    "CriticalHit": "In caso di colpo critico con un'esplosione di energia, il bersaglio subisce [[/r 10[persistent,fire]]]{10 danni da fuoco persistenti}. L'esplosione di energia non aggiunge effetti di specializzazione del critico.",
+                    "CriticalHit": "In caso di colpo critico con un'esplosione di energia, il bersaglio subisce @Damage[10[persistent,fire]]{10 danni da fuoco persistenti}. L'esplosione di energia non aggiunge effetti di specializzazione del critico.",
                     "AttackNote": "Devi applicare manualmente la tua runa di Potenziamento più alta a questo tiro per colpire."
                 },
                 "Enhancement": {
@@ -8100,7 +8208,7 @@
                     "Note": "Ogni non morto che subisca danni da un tuo incantesimo <em>guarire</em> subisce anche @Damage[(@item.rank)[persistent,fire]]{danni da fuoco persistenti pari al livello dell'incantesimo}."
                 },
                 "SapLife": {
-                    "Note": "Quando lanci un incantesimo <em>ferire</em> e infliggi danni ad almeno una creatura vivente, recuperi [[/r (@item.rank)[healing]]] Punti Ferita."
+                    "Note": "Quando lanci un incantesimo <em>ferire</em> e infliggi danni ad almeno una creatura vivente, recuperi @Damage[(@item.rank)[healing]]{$1 Punti Ferita}."
                 },
                 "CastigatingWeapon": {
                     "Note": "Dopo aver inflitto danni spirituali con Castigo Sacro, la tua arma o i tuoi Colpi senz'armi ottengono il tratto sacro o sacrilego e infliggono danni spirituali aggiuntivi fino alla fine del tuo turno. @UUID[Compendium.pf2e.feat-effects.Item.BTI4obxa5UmNltyU]{Effetto: Arma del Castigo}"
@@ -8116,6 +8224,19 @@
                 },
                 "EmblazonEnergy": {
                     "MatchingDomainPrompt": "Dominio corrispondente?"
+                },
+                "SacredGround": {
+                    "Healing": "Una creatura che resta nell'area per gli interi 10 minuti riottiene @Damage[(@actor.level)[vitality,healing]]{$1 Punti Ferita}. Questa attività ha i tratti guarigione e positivo e guarisce le creature viventi.",
+                    "Harmful": "Una creatura che resta nell'area per gli interi 10 minuti riottiene @Damage[(@actor.level)[void,healing]]{$1 Punti Ferita}. Questa attività ha i tratti guarigione e negativo e guarisce le creature non morte (o altre creatura che guarigione negativa)."
+                },
+                "RestorativeStrike": {
+                    "Note": "Puoi bersagliare una seconda creatura consenziente per curarla della stessa quantità dall'incantesimo. Questa creatura può essere fuori dal raggio dell'incantesimo, a condizione che sia adiacente al nemico che colpisci."
+                },
+                "RaiseSymbol": {
+                    "RollOptionLabel": "Impugni lo scudo come un simbolo religioso"
+                },
+                "EmblazonAntimagic": {
+                    "WeaponNote": "Se colpisci criticamente con l'arma, puoi tentare di contrastare un incantesimo sul tuo bersaglio, usando metà del tuo livello, arrotondato per eccesso, come livello di contrasto. Se lo fai, il simbolo blasonato scompare immediatamente."
                 }
             },
             "Conrasu": {
@@ -8200,9 +8321,24 @@
                     "Note": "Quando effettui un'azione per Scalare o Nuotare e riesci nella relativa prova di Atletica, aggiungi bonus di oggetto +1,5 metri alla distanza che puoi percorrere."
                 },
                 "ChaplainsCudgel": {
-                    "CastTwoActionSpellLabel": "Lancia un incantesimo divino che richiede due o più azioni"
+                    "CastTwoActionSpellLabel": "Lancia un incantesimo divino che richiede due o più azioni",
+                    "BowToAHigherPowerLabel": "Clava del Cappellano — Inchinati al un Potere Superiore"
                 },
-                "ChannelProtectionAmuletLabel": "Incanala Protezione"
+                "ChannelProtectionAmuletLabel": "Incanala Protezione",
+                "CoyoteCloak": {
+                    "GreaterNote": "Se ottieni un successo critico nella tua prova di Sopravvivenza per Sopravvivere, puoi nutrire il quadruplo di creature aggiuntive.",
+                    "Note": "Se ottieni un successo critico nella tua prova di Sopravvivenza per Sopravvivere, puoi nutrire il doppio di creature aggiuntive."
+                },
+                "HumbugPocket": {
+                    "ConcealAnObjectLabel": "Tasca Umida (Nascondere un Oggetto nella Tasca)"
+                },
+                "LionsShield": {
+                    "LionsBiteLabel": "Fauci del Leone",
+                    "LionsHeadLabel": "Testa del Leone"
+                },
+                "SerpentDagger": {
+                    "Note": "Quando ottieni un successo critico con un tiro per colpire con il <em>pugnale avvelenato</em>, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 1} se non supera un TS su @Check[type:fortitude|dc:19]."
+                }
             },
             "Fetchling": {
                 "DeepFetchling": {
@@ -8211,7 +8347,7 @@
             },
             "Fleshwarp": {
                 "CoatingOfSlime": {
-                    "CriticalHit": "In caso di colpo critico, il bersaglio riceve [[/r 1d4[persistent,acid]]]{1d4 danni da acido persistenti}."
+                    "CriticalHit": "In caso di colpo critico, il bersaglio riceve @Damage[1d4[persistent,acid]]{1d4 danni da acido persistenti}."
                 },
                 "LivingWeapon": {
                     "Prompt": "Seleziona una parte della tua forma da usare come arma."
@@ -8268,7 +8404,7 @@
             },
             "Hobgoblin": {
                 "AgonizingRebuke": {
-                    "Note": "Quando Demoralizzi un nemico con successo, quel nemico subisce [[/r 1d4[mental]]]{1d4 danni mentali} all'inizio di ognuno dei suoi turni finché rimane spaventato e continua a combattere con te. Se possiedi la competenza maestro in Intimidazione il danno aumenta a [[/r 2d4[mental]]]{2d4}, e se possiedi la competenza Leggendario il danno aumenta a [[/r 3d4[mental]]]{3d4}."
+                    "Note": "Quando Demoralizzi un nemico con successo, quel nemico subisce @Damage[(ternary(gte(@actor.system.skills.intimidation.rank,4),3,ternary(gte(@actor.system.skills.intimidation.rank,3),2,1))d4)[mental]]{$1 danni mentali} all'inizio di ognuno dei suoi turni finché rimane spaventato e continua a combattere con te. Se possiedi la competenza maestro in Intimidazione il danno aumenta a 2d4, e se possiedi la competenza leggendario il danno aumenta a 3d4."
                 },
                 "CantorianReinforcement": {
                     "Note": "Quando hai successo in un tiro salvezza contro una malattia o un veleno, riduci la fase di 2 (o 1 per una malattia o un veleno virulento), e quando ottieni un successo critico riduci la fase di 3 (o 2 per una malattia o un veleno virulento)."
@@ -8319,7 +8455,7 @@
                     "Note": "Con un colpo critico, un baccello esplode, emanando in avanti un groviglio di vegetazione che impone penalità di circostanza -3 metri alla Velocità del bersaglio per 1 round. @UUID[Compendium.pf2e.feat-effects.Item.wQDHpOKY3GZqvS2v]{Effetto: Baccello}"
                 },
                 "ThornedSeedpod": {
-                    "Note": "Quando ottieni un successo critico con un Colpo di baccello, dei viticci si attorcigliano e infilzano il tuo nemico, infliggendo [[/r 1d4[persistent,piercing]]]{1d4 danni perforanti persistenti}"
+                    "Note": "Quando ottieni un successo critico con un Colpo di baccello, dei viticci si attorcigliano e infilzano il tuo nemico, infliggendo @Damage[1d4[persistent,piercing]]{1d4 danni perforanti persistenti}."
                 }
             },
             "LitTorch": "La torcia è accesa",
@@ -8578,7 +8714,7 @@
             },
             "Ifrit": {
                 "Lavasoul": {
-                    "MagmaSpikeCriticalSpecialization": "Invece del normale effetto di specializzazione del critico, il bersaglio subisce [[/r 1d6[persistent,fire]]]{1d6 danni da fuoco persistenti}; ottieni un bonus a questi danni persistenti pari al tuo bonus di oggetto ai tiri per colpire con gli attacchi senz'armi.",
+                    "MagmaSpikeCriticalSpecialization": "Invece del normale effetto di specializzazione del critico, il bersaglio subisce @Damage[1d6[persistent,fire]]{1d6 danni da fuoco persistenti}; ottieni un bonus a questi danni persistenti pari al tuo bonus di oggetto ai tiri per colpire con gli attacchi senz'armi.",
                     "MagmaSpike": "Spuntoni Magmatici"
                 }
             },
@@ -8750,7 +8886,16 @@
                 "Seal": "Foca",
                 "Orca": "Orca",
                 "Crab": "Granchio",
-                "Crocodile": "Coccodrillo"
+                "Crocodile": "Coccodrillo",
+                "Shark": "Squalo",
+                "Bull": "Toro",
+                "Bear": "Orso",
+                "Deer": "Cervo",
+                "Frog": "Rana",
+                "Canine": "Cane",
+                "Snake": "Serpente",
+                "Cat": "Gatto",
+                "Ape": "Scimmia"
             },
             "ExemplaryFinisher": {
                 "Braggart": "Se l'avversario era temporaneamente immune al tuo @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, la sua immunità temporanea termina.",
@@ -8787,6 +8932,12 @@
                 },
                 "Forager": {
                     "Note": "Quando utilizzi Sopravvivenza per Sopravvivere, se il risultato del tiro di dado non è tale da costituire un successo, ottieni comunque un successo. Riesci a provvedere al tuo sostentamento e a quello di altre quattro creature."
+                },
+                "FastRecovery": {
+                    "Note": "Se superi un tiro salvezza su Tempra contro un avvelenamento o una malattia in corso, riduci la fase di 2 o 1 se è virulento. Se ottieni un successo critico riduce la fase di 3 o 2 se è virulento."
+                },
+                "ExperiencedProfessional": {
+                    "Note": "Se sei esperto in Sapienza, guadagni il doppio dei soldi che avresti guadagnato fallendo la prova per Guadagnare, a meno che in origine tu non abbia subito un fallimento critico."
                 }
             },
             "RelicGift": {
@@ -8940,9 +9091,9 @@
                 },
                 "AccursedTouch": {
                     "Note": {
-                        "Base": "La creatura subisce [[/r 2d6[persistent,void]]]{2d6 danni negativi persistenti}. Inoltre, mentre la creatura ha questi danni persistenti è @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottita 1}.",
-                        "TwentiethLevel": "La creatura subisce [[/r 4d6[persistent,void]]]{4d6 danni negativi persistenti}. Inoltre, mentre la creatura ha questi danni persistenti è @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottita 1}.",
-                        "FourteenthLevel": "La creatura subisce [[/r 3d6[persistent,void]]]{3d6 danni negativi persistenti}. Inoltre, mentre la creatura ha questi danni persistenti è @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottita 1}."
+                        "Base": "La creatura subisce @Damage[2d6[persistent,void]]{2d6 danni negativi persistenti}. Inoltre, mentre la creatura ha questi danni persistenti è @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottita 1}.",
+                        "TwentiethLevel": "La creatura subisce @Damage[4d6[persistent,void]]{4d6 danni negativi persistenti}. Inoltre, mentre la creatura ha questi danni persistenti è @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottita 1}.",
+                        "FourteenthLevel": "La creatura subisce @Damage[3d6[persistent,void]]{3d6 danni negativi persistenti}. Inoltre, mentre la creatura ha questi danni persistenti è @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottita 1}."
                     }
                 }
             },
@@ -8957,9 +9108,9 @@
             "Vampire": {
                 "ViciousFangs": {
                     "Note": {
-                        "Base": "I tuoi Colpi con le fauci infliggono [[/r 1d6[bleed]]]{1d6 danni da sanguinamento persistenti}.",
-                        "FourteenthLevel": "I tuoi Colpi con le fauci infliggono [[/r 2d6[bleed]]]{2d6 danni da sanguinamento persistenti}.",
-                        "TwentiethLevel": "I tuoi Colpi con le fauci infliggono [[/r 3d6[bleed]]]{3d6 danni da sanguinamento persistenti}."
+                        "Base": "I tuoi Colpi con le fauci infliggono @Damage[1d6[bleed]]{1d6 danni da sanguinamento persistenti}.",
+                        "FourteenthLevel": "I tuoi Colpi con le fauci infliggono @Damage[2d6[bleed]]{2d6 danni da sanguinamento persistenti}.",
+                        "TwentiethLevel": "I tuoi Colpi con le fauci infliggono @Damage[3d6[bleed]]{3d6 danni da sanguinamento persistenti}."
                     }
                 }
             },
@@ -9243,14 +9394,37 @@
                 "CastDown": "Se con la tua azione successiva lanci ferire o guarire per danneggiare una creatura, il bersaglio cade a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} se subisce danni di qualunque tipo dall'incantesimo. Se il bersaglio ottiene un fallimento critico nel tiro salvezza contro l'incantesimo, subisce inoltre penalità di status -3 metri alla sua Velocità per 1 minuto. @UUID[Compendium.pf2e.feat-effects.Item.Ve1CRFI8ikL6dqcL]{Effetto: Scagliare a Terra}",
                 "EbbAndFlow": "Scegli una creatura nel raggio d'azione che verrebbe ferita dall'incantesimo e un'altra creatura nel raggio d'azione che verrebbe guarita dall'incantesimo. Il tuo guarire o ferire bersaglia entrambe le creature.",
                 "SplitHex": "Se la prossima azione che usi è Lanciare un Incantesimo per lanciare una fattura dannosa con un bersaglio singolo, riduci il suo grado di 2 (rendendola 2 gradi più bassa del livello di incantesimo massimo che puoi lanciare). Cosi facendo, puoi selezionare un secondo bersaglio da colpire con quella fattura.",
-                "HeroicRecovery": "il bersaglio ottiene tre bonus fino alla fine del suo turno successivo: bonus di status +1,5 metri alla Velocità, bonus di status +1 ai tiri per colpire e bonus di status +1 ai tiri per i danni. Inoltre, se il bersaglio è prono, può immediatamente Alzarsi come un'azione gratuita che non innesca reazioni.",
+                "HeroicRecovery": "Il bersaglio ottiene tre bonus fino alla fine del suo turno successivo: bonus di status +1,5 metri alla Velocità, bonus di status +1 ai tiri per colpire e bonus di status +1 ai tiri per i danni. Inoltre, se il bersaglio è prono, può immediatamente Alzarsi come un'azione gratuita che non innesca reazioni.",
                 "WidenSpell": "Se con la tua azione successiva Lanci un Incantesimo la cui area è un'esplosione, un cono o una linea e che non preveda una durata, aumenti l'area dell'incantesimo. Aggiungi 1,5 metri al raggio di un'esplosione che normalmente ha un raggio di almeno 3 metri (un'esplosione di raggio minore non viene influenzata). Aggiungi 1,5 metri alla lunghezza di un cono o di una linea che normalmente misura 4,5 metri o meno, e aggiungi 3 metri alla lunghezza di un cono o una linea maggiore.",
                 "CurrentSpell": "Fino all'inizio del tuo turno successivo ottieni bonus di circostanza +1 alla CA, o bonus di circostanza +2 contro gli attacchi a distanza. Questo effetto ha il tratto acqua o aria o entrambi, a seconda dei tratti dell'incantesimo che lanci. Ottieni inoltre bonus di circostanza +1 a tutti i tiri salvezza contro gli effetti con i tratti acqua, aria o entrambi fino all'inizio del tuo turno successivo, a seconda dei tratti dell'incantesimo. @UUID[Compendium.pf2e.feat-effects.Item.8HGz3rQCHNgdAqFC]{Effetto: Incantesimi Fluenti}",
                 "HealingTransformation": "Il tuo incantesimo di metamorfosi ripristina anche @Damage[(@item.rank)d6[healing]]{$1 Punti Ferita} alla creatura. Questo è un effetto di guarigione.",
                 "EchoingChannel": "Scegli una creatura aggiuntiva adiacente a te o al bersaglio. Su di essa lanci la versione da 1 azione dello stesso incantesimo, che ha lo stesso livello dell incantesimo ferire o guarire da 2 azioni che hai lanciato e non consuma un altro slot incantesimo",
                 "FormControl": "Il grado dell incantesimo è inferiore di 2 rispetto alla norma (minimo 1° grado), ma puoi restare trasformato fino a un massimo di 1 ora o per la durata indicata (quale dei due sia il maggiore). Puoi comunque Interrompere la trasformazione in ogni momento, come consentito dall'incantesimo.",
                 "Martyr": "Perdi @Damage[(@item.rank)d8]{$1 Punti Ferita}, che non puoi ridurre o mitigare in alcun modo, e il tuo alleato recupera un numero equivalente di Punti Ferita. @UUID[Compendium.pf2e.feat-effects.Item.7ogytOgDmh4h2g5d]{Effetto: Recupero Eroico}",
-                "Remediate": "Se la tua azione successiva è usare la tua sorgente divina per lanciare un incantesimo guarire o ferire da 3 azioni per danneggiare delle creature, puoi sfruttare l'energia residua per controbilanciare le forze opposte. In aggiunta ai suoi normali effetti, puoi usare il tuo incantesimo guarire o ferire per tentare di contrastare un effetto divino nell'area dell'incantesimo."
+                "Remediate": "Se la tua azione successiva è usare la tua sorgente divina per lanciare un incantesimo guarire o ferire da 3 azioni per danneggiare delle creature, puoi sfruttare l'energia residua per controbilanciare le forze opposte. In aggiunta ai suoi normali effetti, puoi usare il tuo incantesimo guarire o ferire per tentare di contrastare un effetto divino nell'area dell'incantesimo.",
+                "ScintillatingSpell": "Se la tua prossima azione è Lanciare un Incantesimo che non ha il tratto oscurità, non ha durata e richiede alle creature di tentare un tiro salvezza su Riflessi, l'incantesimo esplode in uno spruzzo di luci scintillanti, in aggiunta ai suoi altri effetti. Ogni creatura che ha fallito il tiro salvezza su Riflessi contro l'incantesimo è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliata} per 1 round, e quelle che hanno ottenuto un fallimento critico sono @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecate} per 1 round.",
+                "ExplosiveArrival": "Se la tua prossima azione è Lanciare un Incantesimo con il tratto evocazione, tutte le creature in un'@Template[type:emanation|distance:10] attorno alla creatura che hai evocato subiscono @Damage[(@item.level)d4[fire]]{$1 danni da fuoco}. Se la creatura evocata ha il tratto @Damage[(@item.level)d4[acid]]{acido}, @Damage[(@item.level)d4[electricity]]{elettricità}, @Damage[(@item.level)d4[cold]]{freddo}, @Damage[(@item.level)d4[sonic]]{sonoro} o @Damage[(@item.level)d4[spirit]]{spirito}, puoi invece infliggere danni di quel tipo.",
+                "DefensiveRecovery": "Se il bersaglio recupera Punti Ferita grazie all'incantesimo, ottiene anche bonus di status +2 a CA e Tiri Salvezza per 1 round. @UUID[Compendium.pf2e.feat-effects.Item.jwxurN6JPQm9wXug]{Effetto: Recupero Difensivo}",
+                "ReachSpell": "Se con la tua azione successiva Lanci un Incantesimo che ha un raggio, estendi quest'ultimo di 9 metri. Come di consueto in questi casi, se l'incantesimo ha di norma raggio contatto, estendi quest'ultimo a 9 metri.",
+                "CourageousAdvance": "Un singolo alleato che ottiene un bonus di status grazie all'incantesimo può usare immediatamente una reazione per Avanzare.",
+                "CourageousAssault": "Un singolo alleato che ottiene un bonus di status grazie all'incantesimo può immediatamente usare una reazione per effettuare un Colpo in mischia.",
+                "CourageousOnslaught": "Un singolo alleato che ottiene un bonus di status grazie all'incantesimo può immediatamente usare una reazione per Avanzare e poi effettuare un Colpo in mischia.",
+                "UnusualComposition": "Se con la tua azione successiva lanci un incantesimo di composizione che ha i tratti visivo o uditivo, puoi fare in modo che influenzi creature che possono assistervi con qualsiasi senso, non solo quelli che indicano i tratti, inclusi sensi speciali come percezione tellurica. Puoi scegliere di escludere i sensi che preferisci.",
+                "QuickenedCasting": "Se con la tua azione successiva lanci un trucchetto o un incantesimo inferiore di almeno 2 livelli rispetto all'incantesimo più alto che puoi lanciare, riduci di 1 il numero di azioni necessarie per lanciarlo (minimo 1).",
+                "CallAndResponse": "Mentre l'incantesimo è attivo, un alleato colpito dall'incantesimo può rispondere alla tua strofa con un'antistrofa, usando un'azione singola che ha i tratti concentrazione e uditivo per estendere la durata dell'incantesimo di 1 round. Solo un alleato può rispondere a una determinata strofa, e rispondere all'antistrofa dell'alleato non ha alcun effetto aggiuntivi.",
+                "DivineInfusion": "Il bersaglio infligge danni aggiuntivi con le sue armi da mischia e gli attacchi senz'armi fino alla fine del suo turno successivo. Il tipo di danni è negativo se hai lanciato <em>ferire</em> e positivo se hai lanciato <em>guarire</em>. @UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{Effetto: Infusione Divina}.",
+                "Harmonize": "Se con la tua azione successiva lanci una composizione, questa diventa armonizzata. A differenza delle composizioni normali, una armonizzata non termina se lanci un'altra composizione, e puoi lanciare un'altra composizione nello stesso turno come composizione armonizzata. Il lancio di un'altra composizione armonizzata fa terminare qualsiasi composizione armonizzata già attiva.",
+                "BondConservation": "Ottieni un utilizzo aggiuntivo di Scaricare Oggetto Legato che devi consumare prima della fine del tuo turno successivo, altrimenti lo perdi. Puoi sfruttare l'utilizzo aggiuntivo solo per lanciare un incantesimo inferiore di almeno 2 livelli rispetto al primo incantesimo lanciato tramite Scaricare Oggetto Legato.",
+                "NonLethal": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni e non ha il tratto morte o negativo, quell'incantesimo ottiene il tratto non letale.",
+                "OverwhelmingEnergy": "Se come azione successiva Lanci un Incantesimo, quest'ultimo ignora un ammontare di resistenza del bersaglio al danno da acido, elettricità, freddo, fuoco o sonoro pari al tuo livello. Questo effetto si applica a tutti i danni inferti dall'incantesimo, compresi quelli persistenti e quelli causati da effetti in corso, come nel caso del muro creato da muro di fuoco. Le immunità delle creature non vengono influenzate.",
+                "DefensiveCoordination": "Puoi Alzare uno Scudo e un singolo alleato che ottiene un bonus di status grazie all'incantesimo può usare immediatamente una reazione per Alzare uno Scudo.",
+                "EnergyAblation": "Se la tua prossima azione è Lanciare un Incantesimo che infligge almeno un tipo di danno da energia (acido, elettricità, forza, freddo, fuoco, sonoro, positivo o negativo), a prescindere dal fatto che infligga o meno danni, ottieni resistenza a un tipo di energia pari al grado dell'incantesimo fino alla fine del tuo turno successivo.",
+                "ConcealSpell": "Se con la tua azione successiva Lanci un Incantesimo, l'incantesimo ottiene il tratto discreto, nascondendo le rune brillanti, scintille di magia o altre manifestazioni che solitamente rivelano il tuo lancio di incantesimi. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti, perciò un osservatore potrebbe comunque notare un raggio balenare da te o vederti svanire.",
+                "VigorousAnthem": "Tu e tutti gli alleati influenzati ottenete Punti Ferita temporanei pari a 3 + il tuo modificatore di Carisma, per la durata di 1 minuto. @UUID[Compendium.pf2e.feat-effects.Item.7AzGhIOx4Df5Cicr]{Effetto: Inno Vigoroso}",
+                "ForcibleEnergy": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni da acido, da elettricità, da fuoco o sonori, puoi selezionare un bersaglio che è stato danneggiato e fargli ottenere debolezza 5 a quel tipo di danno fino alla fine del tuo turno successivo. Se un incantesimo infligge più tipi di danni da energia, scegli quello a cui il bersaglio ottiene debolezza. Questo non ha effetto sulle creature con resistenza o immunità al tipo di energia che scegli. @UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{Effetto: Energia Violenta}",
+                "InTune": "Se la tua prossima azione è lanciare un incantesimo di composizione con un'area di emanazione, la sua aura si espande da un alleato consenziente a tua scelta entro 18 metri invece che da te. Se hai Rivolgersi al Pubblico, puoi fare in modo che quel cono origini invece dal tuo alleato.",
+                "LeyLineConduit": "Se la tua azione successiva è Lancire un Incantesimo di 5° grado o inferiore che non ha durata, non consumi l'incantesimo preparato.",
+                "MelodiousSpell": "L'incantesimo ottiene il tratto discreto. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti. Con l'uso di Incatesimi Melodiosi puoi scegliere di @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Creare un Diversivo}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Esibirti} o Richiedere. Se lo fai, l'incanteismo che lanci daeve avere i tratti uditivo, emozione, sonico o visuale per ottenere il tratto discreto."
             },
             "CrystalLuminescence": {
                 "Normal": "Normale",
@@ -9291,6 +9465,70 @@
                 "Greater": "Amuleto di Resistenza a {damageType} Superiore",
                 "Major": "Amuleto di Resistenza a {damageType} Maggiore",
                 "Standard": "Amuleto di Resistenza a {damageType}"
+            },
+            "SpellEffectTemptFate": {
+                "Note": "Se il risultato del tiro salvezza è un successo, diventa un successo critico. Se è un fallimento, diventa un fallimento critico, e il fallimento critico non può essere ridotto da capacità che di solito lo riducono."
+            },
+            "SpellEffectPreciousMetals": {
+                "Copper": "Rame",
+                "Iron": "Ferro",
+                "Steel": "Acciaio",
+                "Gold": "Oro"
+            },
+            "SpellRank": {
+                "Prompt": "Seleziona un grado di incantesimo.",
+                "Tenth": "10° Grado",
+                "Eighth": "8° Grado",
+                "Third": "3° Grado",
+                "First": "1° Grado",
+                "Fifth": "5° Grado",
+                "Seventh": "7° Grado",
+                "Sixth": "6° Grado",
+                "Second": "2° Grado",
+                "Fourth": "4° Grado",
+                "Ninth": "9° Grado"
+            },
+            "UntamedShift": {
+                "LongVines": "Lunghi Rampicanti",
+                "UntamedClaws": "Artigli Feroci",
+                "Prompt": "Seleziona una morfosi.",
+                "PromptThree": "Seleziona una terza morfosi.",
+                "UntamedJaws": "Fauci Feroci",
+                "Wings": "Ali",
+                "ElementalMatter": "Materia Elementale",
+                "PromptTwo": "Seleziona una seconda morfosi."
+            },
+            "SpellEffectAnimalFeature": {
+                "OwlEyes": "Occhi di Gufo",
+                "CatEyes": "Occhi di Gatto",
+                "Wings": "Ali",
+                "FishTail": "Coda di Pesce"
+            },
+            "SpellEffectSweetDream": {
+                "Glamor": "Sogno di Fascino",
+                "Voyaging": "Sogno di Viaggio",
+                "Insight": "Sogno di Intuizione",
+                "Prompt": "Seleziona un sogno."
+            },
+            "Nephilim": {
+                "Pitborn": {
+                    "AllowedDrops": "Talento di abilità Atletica di 1° livello"
+                }
+            },
+            "ActivatedItem": "{item} attivato",
+            "ShadowSignet": {
+                "Note": "Se la tua prossima azione è Lanciare un Incantesimo che richiede un tiro per colpire con incantesimo contro Classe Armatura, scegli fra CD di Tempra e CD di Riflessi: il tuo tiro per colpire con incantesimo agisce contro la difesa scelta anziché la CA."
+            },
+            "WardMedic": {
+                "Note": "Quando utilizzi Curare Ferite o Curare Malattia, puoi curare fino a due pazienti. Se sei maestro in Medicina fino a quattro e se sei leggendario fino a otto."
+            },
+            "SaveCriticalFailureToFailure": {
+                "FailureHalfDamage": {
+                    "Will": "Quando ottieni un fallimento critico in un tiro salvezza su Volontà, lo consideri come un fallimento. Quando fallisci un tiro salvezza su Volontà contro un effetto che infligge danni, prendi metà danni."
+                }
+            },
+            "FireShield": {
+                "DefendingAgainstWaterLabel": "Difesa contro un effetto d'acqua"
             }
         },
         "LevelRange": "Livelli {minLevel} - {level}",
@@ -9740,7 +9978,7 @@
         "TraitSanctified": "Santificato",
         "TraitFocus": "Focalizzato",
         "TraitDescriptionUndead": "Queste creature, che una volta erano viventi, dopo la morte sono state infuse di energia negativa e magia sacrilega che corrompe l'anima. Quando viene ridotta a 0 Punti Ferita, una creatura non morta viene distrutta. Le creature non morte sono danneggiate dall'energia positiva, sono guarite dall'energia negativa e non beneficiano degli effetti di guarigione.",
-        "TraitDescriptionSummon": "Gli incantesimi con il tratto evocare possono evocare creature, tipicamente quelle con un tratto particolare. Queste creature possono essere trovate nel Bestiario o libri simili. A meno che non sia segnato altrimenti, la creatura deve essere comune, ottiene il tratto evocato e deve apparire in uno spazio non occupato abbastanza largo da contenerla. Il livello più alto di creatura che l'incantesimo può evocare dipende dal grado dell'incantesimo, come elencato qua sotto. L'incantesimo può comunque evocare una creatura di un livello inferiore se lo desideri. Queste regole si applicano soltanto a incantesimi che hanno il tratto evocare; altri incantesimi che chiamano o evocano oggetti o esseri che non hanno il tratto, come evoca strumento, funzionano come spiegato nell'incantesimo.",
+        "TraitDescriptionSummon": "Gli incantesimi con il tratto evocazione possono evocare creature, tipicamente quelle con un tratto particolare. Queste creature possono essere trovate nel Bestiario o libri simili. A meno che non sia segnato altrimenti, la creatura deve essere comune, ottiene il tratto evocato e deve apparire in uno spazio non occupato abbastanza largo da contenerla. Il livello più alto di creatura che l'incantesimo può evocare dipende dal grado dell'incantesimo, come elencato qua sotto. L'incantesimo può comunque evocare una creatura di un livello inferiore se lo desideri. Queste regole si applicano soltanto a incantesimi che hanno il tratto evocare; altri incantesimi che chiamano o evocano oggetti o esseri che non hanno il tratto, come evoca strumento, funzionano come spiegato nell'incantesimo.",
         "TraitVersatileVoid": "Versatile Negativo",
         "TraitVersatileX": "Versatile {x}",
         "TraitVersatileVitality": "Versatile Positivo",
@@ -9778,7 +10016,8 @@
                 "MagicalDuskwood": "legnoscuro magico",
                 "PhysicalRangedAttacks": "attacchi a distanza fisici",
                 "CrystalHazards": "pericoli associati ai cristalli",
-                "Spirits": "spiriti"
+                "Spirits": "spiriti",
+                "AcidAndSpellsThatCauseRust": "acido e incantesimi che causano ruggine"
             }
         },
         "Color": {
