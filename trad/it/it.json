@@ -2010,16 +2010,16 @@
             },
             "AcidFlask": {
                 "Greater": {
-                    "success": "<strong>Effetto</strong> La bomba infligge [[/r 3d6[persistent,acid]]]{3d6 danni da acido persistenti} e [[/r (3[splash])[acid]]]{3 danni da spargimento da acido}.",
-                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r (2*3d6)[persistent,acid]]]{2*3d6 danni da acido persistenti} e [[/r (3[splash])[acid]]]{3 danni da spargimento da acido}."
+                    "success": "<strong>Effetto</strong> La bomba infligge @Damage[3d6[persistent,acid]]{3d6 danni da acido persistenti} e @Damage[(3[splash])[acid]]{3 danni da spargimento da acido}.",
+                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge @Damage[(2*3d6)[persistent,acid]]{2*3d6 danni da acido persistenti} e @Damage[(3[splash])[acid]]{3 danni da spargimento da acido}."
                 },
                 "Lesser": {
-                    "success": "<strong>Effetto</strong> La bomba infligge [[/r 1d6[persistent,acid]]]{1d6 danni da acido persistenti} e [[/r (1[splash])[acid]]]{1 danno da spargimento da acido}.",
-                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r (2*1d6)[persistent,acid]]]{2*1d6 danni da acido persistenti} e [[/r (1[splash])[acid]]]{1 danno da spargimento da acido}."
+                    "success": "<strong>Effetto</strong> La bomba infligge @Damage[1d6[persistent,acid]]{1d6 danni da acido persistenti} e @Damage[(1[splash])[acid]]{1 danno da spargimento da acido}.",
+                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge @Damage[(2*1d6)[persistent,acid]]{2*1d6 danni da acido persistenti} e @Damage[(1[splash])[acid]]{1 danno da spargimento da acido}."
                 },
                 "Major": {
-                    "success": "<strong>Effetto</strong> La bomba infligge [[/r 4d6[persistent,acid]]]{4d6 danni da acido persistenti} e [[/r (4[splash])[acid]]]{4 danni da spargimento da acido}.",
-                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge [[/r (2*4d6)[persistent,acid]]]{4d6 danni da acido persistenti} e [[/r (4[splash])[acid]]]{4 danni da spargimento da acido}."
+                    "success": "<strong>Effetto</strong> La bomba infligge @Damage[4d6[persistent,acid]]{4d6 danni da acido persistenti} e @Damage[(4[splash])[acid]]{4 danni da spargimento da acido}.",
+                    "criticalSuccess": "<strong>Effetto</strong> La bomba infligge @Damage[(2*4d6)[persistent,acid]]{4d6 danni da acido persistenti} e @Damage[(4[splash])[acid]]{4 danni da spargimento da acido}."
                 },
                 "Moderate": {
                     "success": "<strong>Effetto</strong> La bomba infligge [[/r 2d6[persistent,acid]]]{2d6 danni da acido persistenti} e [[/r (2[splash])[acid]]]{2 danni da spargimento da acido}.",
@@ -7105,7 +7105,7 @@
                 "SunNote": "Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round."
             },
             "DaemonForm": {
-                "CeustodaemonDamageNote": "Qualsiasi Colpo riuscito con fauci o artiglio infligge [[/r {1d6}]]{1d6 danni} addizionali, e tu subisci lo stesso ammontare di danni"
+                "CeustodaemonDamageNote": "Qualsiasi Colpo riuscito con fauci o artiglio infligge @Damage[1d6[untyped]]{1d6 danni} addizionali, e tu subisci lo stesso ammontare di danni"
             },
             "ElementEmbodied": {
                 "WaterPushPullNote": "Più @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Spintonare} o Tirare 3 metri",
@@ -9478,12 +9478,12 @@
         "AmmunitionNotes": {
             "ExplosiveAmmunition": {
                 "Normal": {
-                    "Text": "Il proiettile scoppia in un'@Template[type:burst|distance:10]{esplosione di 3 metri}, infliggendo [[/r 6d6[fire]]]{6d6 danni da fuoco} a ogni creatura nell'area (compreso il bersaglio). Ogni creatura deve tentare un TS @Check[type:reflex|dc:25|basic:true|name:Munizione Esplosiva].",
+                    "Text": "Il proiettile scoppia in un'@Template[type:burst|distance:10]{esplosione di 3 metri}, infliggendo @Damage[6d6[fire]]{6d6 danni da fuoco} a ogni creatura nell'area (compreso il bersaglio). Ogni creatura deve tentare un TS @Check[type:reflex|dc:25|basic:true|name:Munizione Esplosiva].",
                     "Title": "Munizione Esplosiva"
                 },
                 "Greater": {
                     "Title": "Munizione Esplosiva Superiore",
-                    "Text": "Il proiettile scoppia in un'@Template[type:burst|distance:10]{esplosione di 3 metri}, infliggendo [[/r 10d6[fire]]]{10d6 danni da fuoco} a ogni creatura nell'area (compreso il bersaglio). Ogni creatura deve tentare un TS @Check[type:reflex|dc:30|basic:true|name:Munizione Esplosiva]."
+                    "Text": "Il proiettile scoppia in un'@Template[type:burst|distance:10]{esplosione di 3 metri}, infliggendo @Damage[10d6[fire]]{10d6 danni da fuoco} a ogni creatura nell'area (compreso il bersaglio). Ogni creatura deve tentare un TS @Check[type:reflex|dc:30|basic:true|name:Munizione Esplosiva]."
                 }
             },
             "AntlerArrow": {
@@ -9517,15 +9517,15 @@
                 "CriticalFailureText": "In caso di fallimento critico, l'arma si Inceppa.",
                 "Greater": {
                     "Title": "Colpo Meteoritico Superiore",
-                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge [[/r 6d6[fire]]]{6d6 danni da fuoco} in un'@Template[type:emanation|distance:10] attorno al bersaglio (TS @Check[type:reflex|dc:29|basic:true|name:Colpo Meteoritico])."
+                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge @Damage[6d6[fire]]{6d6 danni da fuoco} in un'@Template[type:emanation|distance:10] attorno al bersaglio (TS @Check[type:reflex|dc:29|basic:true|name:Colpo Meteoritico])."
                 },
                 "Major": {
-                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge [[/r 9d6[fire]]]{9d6 danni da fuoco} in un'@Template[type:emanation|distance:20] attorno al bersaglio (TS @Check[type:reflex|dc:37|basic:true|name:Colpo Meteoritico]).",
+                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge @Damage[9d6[fire]]{9d6 danni da fuoco} in un'@Template[type:emanation|distance:20] attorno al bersaglio (TS @Check[type:reflex|dc:37|basic:true|name:Colpo Meteoritico]).",
                     "Title": "Colpo Meteoritico Maggiore"
                 },
                 "Normal": {
                     "Title": "Colpo Meteoritico",
-                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge [[/r 3d6[fire]]]{3d6 danni da fuoco} in un'@Template[type:emanation|distance:5] attorno al bersaglio (TS @Check[type:reflex|dc:23|basic:true|name:Colpo Meteoritico])."
+                    "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge @Damage[3d6[fire]]{3d6 danni da fuoco} in un'@Template[type:emanation|distance:5] attorno al bersaglio (TS @Check[type:reflex|dc:23|basic:true|name:Colpo Meteoritico])."
                 }
             }
         },
