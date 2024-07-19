@@ -720,6 +720,11 @@
       "name": "Boil Blood",
       "spellTarget": "1 creature"
     },
+    "Bone Flense": {
+      "description": "<p>The target weapon becomes imbued with Achaekek's power and glows softly with crimson light akin to that shed by a candle. When a creature with a skeleton or exoskeleton takes damage from a Strike delivered by this weapon, the creature's bones nearest to the wound instantly sprout jagged, razor-sharp spurs that flense the muscle and flesh from inside out. The creature takes an additional 1d6 persistent bleed damage from the Strike. You can use the @UUID[Compendium.pf2e.actionspf2e.Item.wfUIsKBxCBfXi1TF]{Erupting Spurs} reaction.</p><hr /><p><strong>Heightened (+2)</strong> The persistent bleed damage increases by 1d6. The damage from Erupting Spurs increases by 4d6.</p>",
+      "name": "Bone Flense",
+      "spellTarget": "1 weapon that is either wielded by a member of the Red Mantis or is a praying mantis's leg Strike"
+    },
     "Bone Spray": {
       "description": "<p>You fire a torrent of jagged bone shards from your hands, dealing 2d10 piercing damage and 1 persistent bleed damage to all creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The piercing damage increases by 1d10 and the persistent bleed damage increases by 1.</p>",
       "name": "Bone Spray"
@@ -1414,6 +1419,11 @@
       "name": "Creative Splash",
       "spellDuration": "varies"
     },
+    "Crimson Breath": {
+      "description": "<p>You turn a creature toward you and exhale a blast of crimson mist from your mouth, exposing the target to a toxic miasma. The effects are determined by the creature's Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes 8d6 poison damage.</p>\n<p><strong>Failure</strong> The target is afflicted with breath of the mantis god poison at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with breath of the mantis god poison at stage 2.</p><h2>Breath of the Mantis God</h2><p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> 3d6 persistent bleed and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 minute)</p>\n<p><strong>Stage 2</strong> 3d8 persistent bleed and drained 1 (1 minute)</p>\n<p><strong>Stage 3</strong> 3d10 persistent bleed and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 minute)</p>",
+      "name": "Crimson Breath",
+      "spellTarget": "1 creature"
+    },
     "Crisis of Faith": {
       "description": "<p>You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save.</p>\n<p>To many deities, casting this spell on a follower of your own deity without significant cause is anathema.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage; if the target can cast divine spells, it's @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round, and can't cast divine spells for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).</p>",
       "name": "Crisis of Faith",
@@ -1594,6 +1604,12 @@
       "description": "<p>You reveal a glimpse of the impossible conflicts between the divine anathema behind your curse, forcing you to reckon with another's conflicts as well.</p>\n<p>You and the target each take 9d6 mental damage with a basic Will save, and the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} if it critically fails its save. You get a degree of success one better than you rolled for your saving throw.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 3d6.</p>",
       "name": "Debilitating Dichotomy",
       "spellTarget": "1 creature other than you"
+    },
+    "Debilitating Terror": {
+      "description": "<p>You fill the target's mind with terrifying images to disrupt their combat focus. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a –1 circumstance penalty to attack and damage rolls against you.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.sipLHLOyS7sQ0KQV]{Effect: Debilitating Terror}</p>\n<p><strong>Failure</strong> The target can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and can't use hostile actions against you.</p>",
+      "name": "Debilitating Terror",
+      "spellDuration": "until the start of your next turn",
+      "spellTarget": "1 creature"
     },
     "Deceiver's Cloak": {
       "description": "<p>Your patron drapes a cloak of illusion about you, making you appear as another creature of the same body shape with roughly similar height and weight as yourself. This has the effects of a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can appear as any creature of the same size, even with a completely different body shape.</p>",
@@ -4239,6 +4255,16 @@
       "description": "<p>You become a mantis. You gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.XI6Lzd2B5pernkPd]{Insect Form}, heightened to mantis form's level, and you can only transform into a mantis.</p>",
       "name": "Mantis Form"
     },
+    "Mantis's Grasp": {
+      "description": "<p>You cause red, ghostly mantis arms to sprout from a nearby surface and crush a creature, dealing 8d6 force damage and attempting to pin the target in place. The effects are determined by the creature's Reflex save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is immobilized for 1 minute. At the end of each of its turns, the target can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. The Escape DC is equal to your spell DC.</p><hr /><p><strong>Heightened (7th)</strong> You can target up to 5 creatures.</p>",
+      "name": "Mantis's Grasp",
+      "spellHeightening": {
+        "7": {
+          "spellTarget": "up to 5 creatures"
+        }
+      },
+      "spellTarget": "1 creature"
+    },
     "Mantle of Heaven's Slopes": {
       "description": "<p>You surround yourself in a mantle of heavenly power, invoking the power of the layers of the celestial mountain above. Your body warps and morphs into an angelic form, made of Heaven's light. Upon Casting this Spell, pick two different options below. As a single action, which has the concentrate trait, you can lose one of the options you chose and select a different one (you don't benefit from having the same option selected twice at the same time).</p>\n<ul>\n<li><strong>Threshold's Walls</strong> Glimmering barriers form around you. You gain cover from the barriers.</li>\n<li><strong>Proelera's Arsenal</strong> Shimmering silver pikes surround you, imposing your might on those who would oppose you. You gain an arsenal unarmed attack, which has the reach and shove traits, in the polearm group. Your arsenal attack deals 1d10 piercing damage as its base damage, plus an additional 1d8 spirit damage, and counts as silver.</li>\n<li><strong>Clarion's Sanctity</strong> Your eyes glow with golden light, seeing that which others prefer remain unseen. You gain a +2 status bonus on checks to Recall Knowledge and @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive}, and when you succeed at a check to Recall Knowledge about a creature you can see, you can attempt to Sense its Motive as a free action.</li>\n<li><strong>Requius's Rest</strong> Your hands glow with soft white energy that spreads to your wounds. You gain fast healing 2.</li>\n<li><strong>Illumis's Parlance</strong> Your voice echoes like a trumpet. You can be heard clearly up to 200 feet away when you speak, if you choose to project your voice.</li>\n<li><strong>Iuidica's Verdict</strong> Your body pulses with scarlet light, pushing away those judged to be against you. As a free action triggered by succeeding at a Strike, you can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} the creature you hit\n</li>\n</ul>",
       "name": "Mantle of Heaven's Slopes"
@@ -4263,6 +4289,11 @@
       "description": "<p>You afflict the target with the curse of the roiling, unforgiving sea. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. Reducing its sickened condition to 0 ends the curse.</p>\n<p><strong>Failure</strong> The target becomes sickened 1 and can't reduce its sickened condition below 1 while the curse remains. The curse can be lifted by 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or similar magic. Whenever the target is sickened and on the water at least a mile from shore, it is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p><strong>Critical Failure</strong> As failure, but the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>",
       "name": "Mariner's Curse",
       "spellTarget": "1 creature"
+    },
+    "Mark of Blood": {
+      "description": "<p>You place a drop of your blood on a weapon and charge it with magic so that you transfer a small amount of your life essence with your attack. The next creature you successfully Strike with the weapon during the spell's duration takes damage as normal from the attack and must then attempt a Will save; regardless of the outcome of this saving throw, the duration of mark of blood ends. You can have up to one creature cursed by mark of blood at any one time. If you use this spell to mark a different creature, the curse afflicting the previous creature ends.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature gains a softly glowing mark that resembles Achaekek's symbol somewhere on their body (such as the forehead or back of the hand). This mark can be @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} by clothing, but is otherwise permanent until the curse is removed.</p>\n<p><strong>Failure</strong> As success, but you can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} to attempt to know the direction and general distance (within a mile) to the marked creature if the creature is alive and both you and the creature are on the same plane of existence. When you Seek in this way, you attempt a Perception check against the marked creature's Will DC. On a success, you gain the information, which is accurate at the moment that you Seek. On a critical failure, the curse ends, and the creature's mark vanishes.</p>\n<p><strong>Critical Failure</strong> As failure, but your Perception checks to Seek the marked creature are automatically successful.</p>",
+      "name": "Mark of Blood",
+      "spellTarget": "1 piercing or slashing weapon you're wielding"
     },
     "Martyr's Intervention": {
       "description": "<p><strong>Trigger</strong> A creature within range would take damage that reduces it to 0 Hit Points</p>\n<p><strong>Requirements</strong> You don't have the wounded condition.</p>\n<hr />\n<p>You shield a creature in dire need with your own life force, taking the harm upon yourself to save their life. The target is reduced to 1 Hit Point instead of 0 Hit Points. All remaining damage that was prevented from harming the target creature is instead dealt to you. Both you and the target become @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded 1}; targets who are already wounded increased their wounded value by 1.</p>",
@@ -5806,6 +5837,10 @@
       "name": "Savor the Sting",
       "spellTarget": "1 creature"
     },
+    "Sawtooth Terrain": {
+      "description": "<p>You cause long, serrated mantis limbs to appear, swiping at and obstructing creatures in the area. The area is difficult terrain. Each creature in the area when the spell is cast and who end their turn within the area take 3d6 slashing damage and @Damage[(floor((@item.level -1)/2)d6)[bleed]] damage, as determined by its Reflex save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and a –10-foot circumstance penalty to their Speed until they receive magical healing or benefit from a successful Medicine check against your spell DC to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and a –15-foot circumstance penalty to their Speed until they receive magical healing or benefit from a successful Medicine check against your spell DC to administer First Aid.</p><hr /><p><strong>Heightened (+2)</strong> The damage increases by 3d6, and the persistent bleed damage increases by 1d6.</p>",
+      "name": "Sawtooth Terrain"
+    },
     "Scatter Scree": {
       "description": "<p>You evoke a jumble of rocks in the area. The scattering rocks deal 2d4 bludgeoning damage to creatures in the area, with a basic Reflex save. The ground in the area becomes difficult terrain for the duration. A creature can Interact to clear a square of this scree. If you cast this spell again, any previous scatter scree you have cast ends.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
       "name": "Scatter Scree"
@@ -6145,6 +6180,10 @@
       "description": "<p>Your patron blankets the target's eyes in darkness. If you cast this hex on a willing ally (for instance, one with light blindness), the ally can choose which result it gets without rolling.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is shrouded in murky darkness. It treats bright light as dim light, and unless it has greater darkvision, all creatures are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to it.</p>",
       "name": "Shroud of Night",
       "spellTarget": "1 creature"
+    },
+    "Shroud of the Mantis": {
+      "description": "<p>You wrap yourself in a crimson cloak that renders you @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, with the same restrictions as a 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} spell.</p><hr /><p><strong>Heightened (6th)</strong> The duration increases to 10 minutes.</p>\n<p><strong>Heightened (8th)</strong> The duration increases to 1 hour.</p>",
+      "name": "Shroud of the Mantis"
     },
     "Sigil": {
       "description": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened level.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>",
