@@ -845,6 +845,102 @@
         },
         "Intensify Vulnerability": {
             "name": "Intensificare Vulnerabilità"
+        },
+        "Life Block": {
+            "description": "<p><strong>Innesco</strong> Il bersaglio dell'incantesimo sta per subire danni</p>\n<hr />\n<p><strong>Effetto</strong> Riduci i danni innescanti di 10, ma perdi 5 Punti Ferita. Anche se ciò riduce i danni a 0, il bersaglio subisce comunque eventuali effetti correlati al danno, come il veleno per il Colpo di zanne di una vipera.</p>\n<hr />\n<p><strong>Intensificato (+2)</strong> La reazione riduce i danni di ulteriori 10, e tu perdi ulteriori 5 Punti Ferita. Se vuoi perdere meno Punti Ferita, puoi scegliere di abbassare la riduzione del danno e la perdita di PF a quelle di qualsiasi versione di livello inferiore dell'incantesimo senza abbassare realmente il livello dell'incantesimo.</p>",
+            "name": "Blocco Vitale"
+        },
+        "Tap Ley Line": {
+            "name": "Attingere a Linea Sincronica",
+            "description": "<p>Tenti di manipolare l'essenza magica di una linea sincronica di cui sei consapevole entro 9 metri. Il GM stabilisce la CD a seconda della CD difficile per il livello della linea sincronica.</p>\n<hr />\n<p><strong>Successo Critico</strong> Ottieni i benefici della linea sincronica fino alla fine del tuo prossimo turno.</p>\n<p><strong>Successo</strong> Ottieni i benefici della linea sincronica fino alla fine del tuo turno.</p>\n<p><strong>Fallimento</strong> Subisci danni mentali pari a 1d6 × livello della linea sincronica. Non puoi Attingere alla Linea Sincronica per 1 ora.</p>\n<p><strong>Fallimento Critico</strong> Come per il fallimento e sei soggetto all'effetto di contraccolpo della linea sincronica. Non puoi Attingere alla Linea Sincronica per 24 ore.</p>"
+        },
+        "Fight with Fear": {
+            "description": "<p><strong>Innesco</strong> Una creatura che puoi vedere usa un effetto mentale contro di te</p>\n<hr />\n<p><strong>Effetto</strong> La creatura innescante deve effettuare un tiro salvezza su Volontà con gli effetti seguenti.</p>\n<hr />\n<p><strong>Successo</strong> La creatura non è influenzata.</p>\n<p><strong>Fallimento</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 2}, e ottieni bonus di status +2 al tuo tiro salvezza o un'altra difesa contro l'effetto mentale innescante.</p>\n<p><strong>Fallimento Critico</strong> La creatura è spaventata 2, e non sei influenzato dall'effetto mentale.</p>",
+            "name": "Combattere con la Paura"
+        },
+        "Learn Name": {
+            "description": "<p>Trascorri una settimana cercando di scoprire il nome di una creatura. La forma esatta della ricerca varia a seconda delle abilità che usi, delle risorse disponibili e di altre circostanze. Decidi se cercare il nome di un individuo specifico o nomi in generale. Nel primo caso, devi essere in grado di identificare chiaramente quell'individuo; ad esempio, \"il generale a capo dell'invasione\" è sufficiente, mentre \"la persona che ha ucciso la duchessa\" no, se non sai chi ha ucciso la duchessa. Se stai cercando nomi più in generale, nomina un tipo di creatura.</p>\n<p>Il GM sceglie una CD, in genere a seconda del livello della creatura in questione. Se stai cercando nomi più in generale, la CD si basa di solito sul livello della creatura di cui il GM decide di fornire il nome, di solito una creatura del tipo scelto del tuo livello o inferiore. Il GM può modificare la CD del compito basandosi sulle risorse disponibili o sull'uso di un'abilità particolarmente appropriata o inappropriata o altre circostanze. Effettua una prova con un'abilità che può essere usata per Ricordare Conoscenze sul tipo di creatura. Dopo aver tentato di Imparare un Nome, in genere non puoi tentare di imparare il nome dello stesso individuo finché non ottieni accesso a una sostanziale nuova fonte di informazioni, come determinato dal GM.</p>\n<hr />\n<p><strong>Successo Critico</strong> Scopri uno o più nomi privati dell'individuo specifico scelto o il nome privato di una creatura del tipo scelto e di livello pari al livello del compito. Scopri anche frammenti nascosti del suo vero nome e, a discrezione del GM, un indizio che porta a un'avventura nella quale puoi apprendere il resto del vero nome.</p>\n<p><strong>Successo</strong> Come successo critico, con l'eccezione che scopri solo un nome privato e nessun frammento nascosto del vero nome.</p>\n<p><strong>Fallimento Critico</strong> Se stavi cercando il nome di un individuo specifico, non scopri nuove informazioni e quell'individuo diventa consapevole dei tuoi tentativi. Se stavi cercando un nome generale di un tipo specifico, scopri il nome o i nomi di una creatura che potrebbe causarti dei guai, o forse il nome di una creatura di un tipo completamente diverso.</p>",
+            "name": "Imparare Nome"
+        },
+        "Thundering Roar": {
+            "name": "Ruggito Tonante",
+            "description": "<p>Il bersaglio sprigiona una potente vocalizzazione. Ogni nemico in un'emanazione di 3 metri subisce 4d8 danni sonori con un tiro salvezza base su Volontà contro la tua CD di incantesimo. Una creatura che fallisce il tiro salvezza su Volontà è anche @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 1}.</p>\n<hr />\n<p><strong>Intensificato (+2)</strong> I danni del ruggito aumentano di 2d8.</p>"
+        },
+        "Energy Emanation": {
+            "name": "Emanazione di Energia",
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p>L'energia fuoriesce dal tuo corpo. Infliggi @Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.elementalHeartDwarf.damageType]|traits:area-damage]{$1 danni} del tipo scelto a tutte le creature adiacenti (TS @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] usando la tua CD di classe o CD di incantesimo, qualunque sia la più alta). Al 3° livello, e ogni due livelli successivi, questo danno aumenta di 1d6.</p>"
+        },
+        "Swirl Crimson Shroud": {
+            "name": "Ruota il Sudario Cremisi",
+            "description": "<p>Puoi Interagire con il tuo sudario, facendolo ruotare intorno a te, per ottenere bonus di circostanza +1 alla CA fino all'inizio del tuo prossimo turno.</p>"
+        },
+        "Breath Weapon (Void) (Cone)": {
+            "name": "Soffio (Negativo) (Cono)",
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo @Damage[1d6[void]]{1d6 danni negativi} a tutte le creature in un @Template[type:cone|distance:30]{cono di 9 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[void]]]{danno livellato}</p>"
+        },
+        "Breath Weapon (Void) (Line)": {
+            "name": "Soffio (Negativo) (Linea)",
+            "description": "<p>L'eidolon esala una vampata di energia distruttiva, infliggendo @Damage[1d6[void]]{1d6 danni negativi} a tutte le creature in un @Template[type:line|distance:60]{linea di 18 metri}, con un tiro salvezza base su Riflessi contro la tua CD di incantesimo.</p>\n<p>L'eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #rounds]]{1d4 round}.</p>\n<p>Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6. [[/r ((ceil(@actor.level/2))d6)[void]]]{danno livellato}</p>"
+        },
+        "Call Gun": {
+            "name": "Richiamare Arma da Tiro",
+            "description": "<p><strong>Effetto</strong> Tieni in alto una mano libera e richiami l'arma da fuoco o la balestra che hai scelto durante i tuoi preparativi giornalieri. Fintanto che l'arma da te scelta si trova sul tuo stesso piano, compare nella tua mano.</p>"
+        },
+        "Chassis Deflection": {
+            "description": "<p><strong>Innesco</strong> Un colpo critico ti infligge danni fisici.</p>\n<hr />\n<p>Effettua una @Check[type:flat|dc:17]. Se hai successo, l’attacco diventa un colpo normale.</p>",
+            "name": "Deviare col Telaio"
+        },
+        "Banshee Cry": {
+            "name": "Urlo della Banshee",
+            "description": "<p><strong>Innesco</strong> Una creatura entro 9 metri Lancia un Incantesimo con componente verbale o Attiva un Oggetto usando un'Attivazione a comando.</p>\n<hr />\n<p><strong>Effetto</strong> Fai partire un fuoco d'artificio che esplode con un roboante stridio vicino alla creatura. La creatura deve effettuare un TS su Volontà.</p>\n<hr />\n<p><strong>Successo</strong> La creatura non è influenzata.</p>\n<p><strong>Fallimento</strong> La creatura deve usare un'azione aggiuntiva per l'azione o l'attività innescante, oppure essa viene interrotta.</p>\n<p><strong>Fallimento Critico</strong> L'azione innescante viene interrotta.</p>"
+        },
+        "Manifest Soulforged Armament": {
+            "name": "Manifestare Armamenti di Forgia d'Anima",
+            "description": "<p><strong>Requisiti</strong> Se evochi un'arma o scudo, hai le mani libere per impugnarlo; se evochi un'armatura, non indossi armatura.</p>\n<hr />\n<p><strong>Effetto</strong> Impugni o indossi all'istante l'armamento di forgia d'anima vincolato a te. L'armamento di forgia d'anima rimane manifestato finché non Interrompi questo effetto.</p>\n<p>Una volta al giorno, quando usi questa capacità, puoi manifestare la forma d'essenza dell'armamento. Ottieni il potere d'essenza dell'armamento finché non viene Interrotto. Dopo 1 minuto, l'armamento in forma d'essenza è Interrotto automaticamente.</p>"
+        },
+        "Share Life": {
+            "name": "Condividere Vita",
+            "description": "<p><strong>Innesco</strong> L'alleato collegato subisce danni e si trova entro 18 metri</p>\n<hr />\n<p><strong>Effetto</strong> L'alleato subisce metà dei danni dell'effetto innescante (arrotondato per difetto) e tu perdi un numero di Punti Ferita pari al resto dei danni. Non puoi innescare questa reazione per condividere i danni causati dal tuo alleato usando questa reazione.</p>"
+        },
+        "Wish for Luck": {
+            "name": "Implorare la Fortuna",
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<p><strong>Innesco</strong> Stai per effettuare un tiro per colpire, tiro salvezza o prova di abilità</p>\n<hr />\n<p><strong>Effetto</strong> Invochi il successo ad alta voce. Tira due volte per la prova e scegli il risultato maggiore.</p>"
+        },
+        "Shadow Step": {
+            "name": "Passo d'Ombra",
+            "description": "<p><strong>Requisiti</strong> Il famiglio si trova in un'area di luce fioca o oscurità</p>\n<hr />\n<p><strong>Effetto</strong> Il famiglio si teletrasporta fino a 9 metri. La destinazione deve essere in un'area di luce fioca o oscurità ed entro linea di vista e di effetto del tuo famiglio.</p>\n<p>Quest'azione ha il tratto corrispondente alla tua tradizione magica o occulto se non sei un incantatore.</p>"
+        },
+        "Divert Lightning": {
+            "name": "Deviare Fulmini",
+            "description": "<p><strong>Requisiti</strong> Non sei immune all'elettricità</p>\n<p><strong>Innesco</strong> Una creature entro 9 metri da te è bersaglio di un effetto di elettricità o si trova nell'area di un effetto di elettricità</p>\n<hr />\n<p><strong>Effetto</strong> Attiri l'elettricità su di te come un parafulmine per schermare il bersaglio. Se l'effetto innescante aveva bersaglio, questo diventi tu anziché la creatura innescante; se era un effetto ad area, balza dallo spazio della creatura innescante al tuo. Ciò non devia i fulmini da qualsiasi altra creatura bersaglio o che si trova nell'area del fulmine. Sei automaticamente colpito, o fallisci criticamente il tiro salvezza contro l'effetto. In seguito, non puoi Deviare Fulmine per [[/r 1d4 #round]]{1d4 round}.</p>"
+        },
+        "Prophecy's Pawn": {
+            "name": "Pedina della Profezia",
+            "description": "<p><strong>Innesco</strong> Fallisci un tiro salvezza, tiro per colpire o prova di abilità</p>\n<hr />\n<p><strong>Effetto</strong> Torci la profezia in tuo favore, cosa che avrà conseguenze più avanti. Ripeti la prova fallita. Devi usare il risultato del secondo tiro.</p>\n<p>Per le 24 ore seguenti, il GM può costringerti a ripetere un tiro salvezza, tiro per colpire o prova di abilità riusciti, ricalibrando il fato. Questo è un effetto di sfortuna. Non puoi più usare pedina della profezia finché il GM non usa quest'opzione o non trascorrono 24 ore; l'eventualità che si verifica per prima.</p>"
+        },
+        "Settle Emotions": {
+            "name": "Ripristinare Emozioni",
+            "description": "<p>Trascorri 10 minuti usando tecniche che hai sviluppato per calmare le tue emozioni e riportarle sotto controllo. Ciò ti consente di accedere di nuovo alla @UUID[Compendium.pf2e.actionspf2e.Item.2424g94rpoiN1IPh]{Catarsi}.</p>"
+        },
+        "Accidental Shot": {
+            "name": "Tiro Accidentale",
+            "description": "<p><strong>Frequenza</strong> Una volta al giorno.</p>\n<hr />\n<p><strong>Effetto</strong> Effettui un Colpo con un'arma a distanza, tirando due volte per Colpire e per i danni e usando il risultato migliore in entrambi i casi. L'attacco ignora le penalità di circostanza al tiro per colpire e qualsiasi prova semplice richiesta perché il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosto}.</p>"
+        },
+        "Bullet Dancer Stance": {
+            "description": "<p><strong>Requisiti</strong> Sei senza armatura e stai impugnando un'arma da fuoco semplice, una baionetta o un calcio rinforzato.</p>\n<hr />\n<p><strong>Effetto</strong> Assumi la posizione specializzata di un'arte marziale unica incentrata sull'uso di armi da fuoco semplici. Mentre sei in questa posizione, puoi effettuare Colpi solo usando baionette, calci rinforzati e armi da fuoco semplici. Puoi usare Raffica di Colpi con queste armi. Puoi usare i tuoi altri talenti da monaco o capacità da monaco che normalmente richiederebbero attacchi senz'armi anche con baionette e calci rinforzati, ammesso che il talento o la capacità non richieda un Colpo specifico. Puoi anche usarli con le armi da fuoco semplici quando attacchi entro il primo incremento di gittata.</p>",
+            "name": "Posizione del Danzatore dei Proiettili"
+        },
+        "Clear a Path": {
+            "description": "<p><strong>Requisiti</strong> Stai impugnando un'arma da fuoco a due mani o una balestra a due mani.</p>\n<hr />\n<p>Spingi verso l'esterno con la tua arma per liberare dello spazio prima di ricaricare subito una nuova munizione. Effettua una prova di Atletica per @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Spingere} un avversario entro la tua portata usando la tua arma, poi Interagisci per ricaricare. Per questa Spinta non hai bisogno di una mano libera e aggiungi il bonus di oggetto dell'arma ai tiri per colpire (se presente) alla prova di Atletica. Se la tua ultima azione è stata un Colpo a distanza con l'arma, usa la stessa penalità da attacchi multipli di quel Colpo per il tuo Spingere; la Spinta conta comunque ai fini della tua penalità da attacchi multipli per gli attacchi successivi, come di norma.</p>",
+            "name": "Aprire un Varco"
+        },
+        "Armor Up!": {
+            "name": "Armatura, a Me!",
+            "description": "<p><strong>Effetto</strong> Schiocchi le dita. L'armatura ritorna sul tuo corpo.</p>"
+        },
+        "Automaton Aim": {
+            "name": "Mira da Automa",
+            "description": "<p>Tieni fermo il tuo corpo e osservi gli eventi del campo di battaglia per massimizzare la gittata del tuo prossimo colpo. Riduci la penalità per tirare nel secondo incremento di gittata della tua arma da -2 a 0 per il prossimo attacco a distanza che effettui in questo turno. Puoi usare questa azione una seconda volta nello stesso turno per ridurre la penalità per tirare nel terzo incremento di gittata della tua arma da -4 a 0 per il prossimo attacco a distanza che effettui in questo turno.</p>"
         }
     }
 }
