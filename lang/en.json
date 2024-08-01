@@ -9188,6 +9188,11 @@
       "ArtokussFire": {
         "Note": "Your Alchemist's Fire deals an additional 1d4 persistent fire damage, and creatures must make two succesful flat checks to end the condition (or one check, if they had assisted recovery that reduces the flat check to DC 10). Your enhanced fire burns underwater, and water does not help to end the persistent damage."
       },
+      "Assassin": {
+        "Assassinate": {
+          "Note": "If you hit, your mark takes an additional @Damage[(6d6[precision])[@item.system.damage.damageType]] damage with a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. If the mark critically fails, it dies unless its level is higher than yours."
+        }
+      },
       "Automaton": {
         "ArcaneLocomotion": {
           "Prompt": "Select a movement type."
@@ -9758,6 +9763,9 @@
         },
         "EnchantingArrow": {
           "Note": "On a critical hit, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}."
+        },
+        "IncorporealShot": {
+          "Label": "Incorporeal Shot - Target Wearing Armor"
         }
       },
       "Elf": {
@@ -9825,6 +9833,11 @@
           "Fire": "Green (Fire)",
           "Poison": "Orange (Poison)",
           "Cold": "Brown (Cold)"
+        },
+        "ChaliceOfJustice": {
+          "SipOfJustice": {
+            "Note": "Whenever you critically hit an unholy creature with the <em>chalice of justice</em>, the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round."
+          }
         },
         "ChannelProtectionAmuletLabel": "Channel Protection",
         "ChaplainsCudgel": {
@@ -11025,22 +11038,22 @@
           "WarpStep": "Warp Step"
         },
         "SpellModification": {
-          "Daze": "You can daze from a great distance. The range increases to 120 feet.",
+          "Daze": "You can _daze_ from a great distance. The range increases to 120 feet.",
           "DeepRoots": "When you Cast a Spell that imposes the @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} condition or otherwise forces the target to take certain actions (such as @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command}), you can choose one target that critically failed its save. When that target finishes fulfilling any commands issued by your spell, or when the spell is dispelled or counteracted, the target takes @Damage[(@item.level)d6[mental]] damage.",
-          "DetectMagic": "You have the kind of fine control that other spellcasters can only dream of. When you cast detect magic, you're aware of any creature in the emanation affected by a spell or carrying a magic item, and you determine the main location of magic within any magical hazard in the emanation (with the normal restrictions on detecting illusions). This typically manifests as an alteration to your vision, such as seeing a soft aura around the creature or hazard. Sensing these phenomena doesn't make it clear which spell is on a creature, nor which of its items are magical.",
-          "Figment": "Your minor illusions shift and dance. The range of figment increases to 60 feet. When you Sustain the spell, you can move the apparent sound or vision up to 15 feet. You can then attempt to @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion} as usual. Those creatures who disbelieved the illusion aren't affected by this diversion.",
-          "Frostbite": "You can freeze people from even farther away. The range of your frostbite increases to 120 feet.",
-          "Guidance": "You have eyes everywhere, allowing you to guide people from a great distance. The range of guidance increases to 120 feet.",
-          "Ignition": "You can drastically increase the heat against targets at a distance. When using ignition as a ranged attack, increase the range to 60 feet. When using ignition as a melee attack, your reach increases by 5 feet.",
-          "Message": "Your message is not so easily bound by obstacles. The spell can travel up to 120 feet to reach the target, bending around walls and obstacles; this means you don't need a straight line of effect or line of sight to cast message as long as you know the target's space and there is an unblocked path of 120 feet or less that can reach them.",
-          "PhaseBolt": "Your phase bolt temporarily sends the target's cover out of phase if it hits. On a success, reduce the target's circumstance bonus to AC (if any) by 1 until the beginning of your next turn.",
+          "DetectMagic": "You have the kind of fine control that other spellcasters can only dream of. When you cast _detect magic_, you're aware of any creature in the emanation affected by a spell or carrying a magic item, and you determine the main location of magic within any magical hazard in the emanation (with the normal restrictions on detecting illusions). This typically manifests as an alteration to your vision, such as seeing a soft aura around the creature or hazard. Sensing these phenomena doesn't make it clear which spell is on a creature, nor which of its items are magical.",
+          "Figment": "Your minor illusions shift and dance. The range of _figment_ increases to 60 feet. When you Sustain the spell, you can move the apparent sound or vision up to 15 feet. You can then attempt to @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion} as usual. Those creatures who disbelieved the illusion aren't affected by this diversion.",
+          "Frostbite": "You can freeze people from even farther away. The range of your _frostbite_ increases to 120 feet.",
+          "Guidance": "You have eyes everywhere, allowing you to guide people from a great distance. The range of _guidance_ increases to 120 feet.",
+          "Ignition": "You can drastically increase the heat against targets at a distance. When using _ignition_ as a ranged attack, increase the range to 60 feet. When using ignition as a melee attack, your reach increases by 5 feet.",
+          "Message": "Your _message_ is not so easily bound by obstacles. The spell can travel up to 120 feet to reach the target, bending around walls and obstacles; this means you don't need a straight line of effect or line of sight to cast message as long as you know the target's space and there is an unblocked path of 120 feet or less that can reach them.",
+          "PhaseBolt": "Your _phase bolt_ temporarily sends the target's cover out of phase if it hits. On a success, reduce the target's circumstance bonus to AC (if any) by 1 until the beginning of your next turn.",
           "PsychicRapport": "After you Cast a Spell with the mental trait, until the start of your next turn, you gain a +1 circumstance bonus to Deception, Diplomacy, and Intimidation checks, and to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive}.",
-          "Shield": "Your shield spell can be deployed on behalf of others. When you cast shield, you can choose a target ally within 30 feet to gain the benefits of the spell instead of you. The option to Shield Block with the spell is up to you and uses your reaction, not the target's.",
+          "Shield": "Your _shield_ spell can be deployed on behalf of others. When you cast shield, you can choose a target ally within 30 feet to gain the benefits of the spell instead of you. The option to Shield Block with the spell is up to you and uses your reaction, not the target's.",
           "StrainMind": "You add an amp that costs 1 Focus Point to the spell. Instead of paying the normal Focus Point cost, you lose Hit Points equal to four times the spell rank of the amped psi cantrip as you bleed from your nose or suffer some other visible sign of strain.",
-          "TelekineticHand": "Your telekinetic hand can carry up to 1 Bulk instead of only light Bulk. If the spell is heightened to 3rd rank or higher, its maximum Bulk is 2. If the spell is heightened to 7th rank or higher, its maximum Bulk is 3.",
-          "TelekineticProjectile": "Your telekinetic projectiles can fly much further away. Increase the range of telekinetic projectile to 60 feet.",
+          "TelekineticHand": "Your _telekinetic hand_ can carry up to 1 Bulk instead of only light Bulk. If the spell is heightened to 3rd rank or higher, its maximum Bulk is 2. If the spell is heightened to 7th rank or higher, its maximum Bulk is 3.",
+          "TelekineticProjectile": "Your _telekinetic projectiles_ can fly much further away. Increase the range of telekinetic projectile to 60 feet.",
           "ThoughtformSummoning": "Whenever you summon a creature, you can choose to instead create a psychic construct of that creature. This grants it resistance to physical damage equal to half its level, weakness 5 to force and mental damage, and the ability to pass through enemies' spaces without needing to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through} (though it can't end its turn in an occupied space).",
-          "WarpStep": "You warp space more compactly, granting you a +10-foot status to your Speed instead of a +5-foot status bonus when you warp step."
+          "WarpStep": "You _warp space_ more compactly, granting you a +10-foot status to your Speed instead of a +5-foot status bonus when you warp step."
         },
         "UnleashPsyche": {
           "DamageLabel": "Casting a spell from Psychic Spellcasting"
@@ -11256,7 +11269,7 @@
             "Elemental": "Either you gain a +2 status bonus to Intimidation checks for 1 round, or a target takes @Damage[@item.level[@actor.flags.pf2e.elementalBloodline.damageType]] damage. If the spell already deals that type of damage, combine it with the spell's initial damage before determining weaknesses and resistances.",
             "Fey": "Either you gain a +2 status bonus to Performance checks for 1 round, or you can become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} for 1 round. Such obvious concealment can't be used to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}",
             "Genie": "Your spellcasting warps reality and distracts your foes. Either you gain a +1 status bonus to Deception checks for 1 round, or a target takes a -1 status penalty to Perception for 1 round.",
-            "Hag": "You deal @Damage[(4*@item.level)[mental]] damage (@Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)] save) to the first creature that deals damage to you before the end of your next turn; if  no creature damages you in that time, you consume that spite to gain temporary Hit Points at the beginning of your next turn equal to the spell's rank. These temporary Hit Points last until the beginning of your following turn.",
+            "Hag": "You deal @Damage[(4*@item.level)[mental]] damage (@Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)] save) to the first creature that deals damage to you before the end of your next turn; if no creature damages you in that time, you consume that spite to gain temporary Hit Points at the beginning of your next turn equal to the spell's rank. These temporary Hit Points last until the beginning of your following turn.",
             "Harrow": "You become enveloped in possibility, represented as multiple versions of yourself from your possible futures overlaid on each other. You gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealement} for 1 round, but can't use the concealment to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}.",
             "Imperial": "Until the start of your next turn, you gain your choice of either a +1 status bonus to AC or to saving throws.",
             "Title": "Blood Magic",
