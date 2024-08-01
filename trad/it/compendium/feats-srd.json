@@ -3532,7 +3532,8 @@
             "name": "Aura di Coraggio",
             "description": "<p>Di fronte al pericolo non cedi di un millimetro, e spingi gli alleati a fare altrettanto. Ogni volta che diventi spaventato, riduci di 1 il valore della condizione (fino a un minimo di 0). Alla fine del tuo turno, quando diminuiresti di 1 il valore della condizione spaventato, lo riduci di 1 anche per tutti gli alleati entro 4,5 metri.</p>",
             "featPrerequisites": {
-                "0": "precetti del bene"
+                "0": "precetti del bene",
+                "1": "sacro"
             }
         },
         "Terrain Shield": {
@@ -5001,7 +5002,8 @@
         "Aura of Righteousness": {
             "name": "Aura di Rettitudine",
             "featPrerequisites": {
-                "0": "precetti del bene"
+                "0": "precetti del bene",
+                "1": "sacro"
             },
             "description": "<p>La tua aura virtuosa affievolisce la potenza del male. Tu e tutti gli alleati entro 4,5 metri acquisite resistenza 5 al sacrilego.</p>"
         },
@@ -9624,7 +9626,8 @@
         },
         "High-quality Scrounger": {
             "featPrerequisites": {
-                "0": "Dedizione dell'Aggiustatutto"
+                "0": "Dedizione dell'Aggiustatutto",
+                "1": "Fabbricare Oggetti Magici"
             },
             "name": "Aggiustatutto di Qualità",
             "description": "<p>Quando @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Fabbrichi} un oggetto temporaneo usando la Dedizione dell'Aggiustatutto, questo può essere un oggetto al massimo di 3° livello (anche se l'oggetto deve comunque essere un'arma, un'armatura o un pezzo di equipaggiamento da avventura non monouso).</p>\n<p>Puoi anche Fabbricare l'oggetto affinché lo usi qualcun altro, permettendogli di evitare di subire la penalità per l'uso di un oggetto scadente, ma in tal caso subisci tu la penalità se lo usi.</p>"
@@ -10137,7 +10140,10 @@
         },
         "Inner Strength": {
             "description": "<p>La tua furia ti dà forza, per cui fintantoché sei Infuriato puoi sfruttare la tua furia per superare qualsiasi tipo di indebolimento.</p>\n<p>Riduci il valore della tua condizione @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito} di 1.</p>",
-            "name": "Forza Interiore"
+            "name": "Forza Interiore",
+            "featPrerequisites": {
+                "0": "istinto spirituale"
+            }
         },
         "Blessed One Dedication": {
             "description": "<p>Sei stato toccato da una divinità e dotato della capacità di alleviare la sofferenza altrui.</p>\n<p>Ottieni l'incantesimo di devozione <em>@UUID[Compendium.pf2e.spells-srd.Item.zNN9212H2FGfM7VS]{imposizione delle mani}</em>. Lanciare un incantesimo focalizzato costa 1 Punto Focalizzazione. Questo talento garantisce una riserva di 1 Punto Focalizzazione che puoi recuperare utilizzando l'attività @UUID[Compendium.pf2e.actionspf2e.Item.OSefkMgojBLqmRDh]{Rifocalizzare}.</p>\n<p>Puoi Rifocalizzarti meditando, che tu rifletta o meno sulla divinità che ti concede la benedizione, permettendole cosi di riempire la tua riserva.</p>\n<p>I tuoi incantesimi di devozione dell'archetipo beato sono incantesimi divini.</p>\n<p><strong>Speciale</strong> Non puoi selezionare un altro talento di dedizione fino a quando non hai ottenuto altri due talenti di archetipo del @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.SUDV5hFZ9WocxWqv]{beato}.</p>",
@@ -12395,6 +12401,332 @@
         },
         "Call Gun": {
             "name": "Richiamare Arma da Tiro"
+        },
+        "Advanced Alchemy": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Alchimista"
+            },
+            "name": "Alchimia Avanzata"
+        },
+        "Advanced Herbalism": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Erborista",
+                "1": "esperto in Natura"
+            }
+        },
+        "Alchemical Assessment": {
+            "featPrerequisites": {
+                "0": "addestrato in Artigianato"
+            }
+        },
+        "Alchemical Power": {
+            "featPrerequisites": {
+                "1": "maestro in Artigianato"
+            }
+        },
+        "Angel of Death": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Assassino"
+            }
+        },
+        "Animalistic Brutality": {
+            "featPrerequisites": {
+                "0": "Istinto Animale"
+            }
+        },
+        "Aura of Despair": {
+            "featPrerequisites": {
+                "1": "sacrilego"
+            }
+        },
+        "Breath Of The Dragon (Dragon Disciple)": {
+            "featPrerequisites": {
+                "0": "Dedizione del Discepolo dei Draghi"
+            }
+        },
+        "Call the Swarm": {
+            "featPrerequisites": {
+                "0": "Parlare con i Roditori"
+            }
+        },
+        "Clear the Way": {
+            "featPrerequisites": {
+                "0": "Dedizione del Massacratore"
+            }
+        },
+        "Devout Blessing": {
+            "featPrerequisites": {
+                "0": "Dedizione del Campione"
+            }
+        },
+        "Devout Magic": {
+            "featPrerequisites": {
+                "0": "Dedizione del Campione"
+            }
+        },
+        "Dirty Trick": {
+            "featPrerequisites": {
+                "0": "addestrato in Furto"
+            },
+            "name": "Sporco Trucco"
+        },
+        "Dragon Lore": {
+            "name": "Sapienza sui Draghi"
+        },
+        "Dueling Parry": {
+            "name": "Parata del Duellante"
+        },
+        "Eldritch Reload": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Arciere Mistico"
+            }
+        },
+        "Enchanting Shot": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Arciere Mistico"
+            }
+        },
+        "Enterprising Ritualist": {
+            "featPrerequisites": {
+                "0": "Dedizione del Ritualista"
+            }
+        },
+        "Environmental Guide": {
+            "featPrerequisites": {
+                "0": "maestro in Sopravvivenza"
+            }
+        },
+        "Exhort the Faithful": {
+            "featPrerequisites": {
+                "0": "esperto in Religione"
+            }
+        },
+        "Expert Disassembly": {
+            "featPrerequisites": {
+                "0": "maestro in Artigianato",
+                "1": "Dedizione dell'Aggiustatutto"
+            }
+        },
+        "Eyes of Night": {
+            "featPrerequisites": {
+                "0": "visione crepuscolare"
+            }
+        },
+        "Fatal Shot": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Arciere Mistico"
+            }
+        },
+        "Follow-Up Strike": {
+            "featPrerequisites": {
+                "0": "Dedizione del Maestro delle Arti Marziali"
+            }
+        },
+        "Get Used to Disappointment": {
+            "featPrerequisites": {
+                "0": "esperto in Intimidazione"
+            }
+        },
+        "Godbreaker": {
+            "featPrerequisites": {
+                "0": "Presa Stritolante",
+                "1": "Lancio Turbinante"
+            }
+        },
+        "Homing Shot": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Arciere Mistico"
+            }
+        },
+        "Immortal Techniques": {
+            "featPrerequisites": {
+                "0": "Maestro dei Molti Stili"
+            }
+        },
+        "Incorporeal Shot": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Arciere Mistico"
+            }
+        },
+        "Into the Fray": {
+            "featPrerequisites": {
+                "0": "Dedizione del Vichingo"
+            }
+        },
+        "Just the Facts": {
+            "featPrerequisites": {
+                "0": "Ricerca Accurata"
+            }
+        },
+        "Laughing Kholo": {
+            "featPrerequisites": {
+                "0": "maestro in Intimidazione"
+            }
+        },
+        "Lead the Pack": {
+            "featPrerequisites": {
+                "0": "Compagno Adulto del Signore delle Bestie"
+            }
+        },
+        "Leverage Connections": {
+            "featPrerequisites": {
+                "0": "esperto in Società"
+            }
+        },
+        "Litany of Depravity": {
+            "featPrerequisites": {
+                "0": "precetti del male"
+            }
+        },
+        "Luck of the Clowder": {
+            "featPrerequisites": {
+                "0": "Fortuna Felina"
+            }
+        },
+        "Magic Ammunition": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Arciere Mistico"
+            }
+        },
+        "Parry and Riposte": {
+            "featPrerequisites": {
+                "0": "Risposta di Opportunità"
+            }
+        },
+        "Path of Iron": {
+            "featPrerequisites": {
+                "0": "Dedizione del Maestro delle Arti Marziali"
+            }
+        },
+        "Perfection's Path": {
+            "featPrerequisites": {
+                "0": "Dedizione del Monaco"
+            }
+        },
+        "Pirate Combat Training": {
+            "featPrerequisites": {
+                "0": "Dedizione del Pirata"
+            }
+        },
+        "Plummeting Roll": {
+            "featPrerequisites": {
+                "0": "addestrato in Acrobazia"
+            }
+        },
+        "Precious Ammunition": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Arciere Mistico"
+            }
+        },
+        "Qi Center": {
+            "featPrerequisites": {
+                "0": "Maestro dei Molti Stili"
+            }
+        },
+        "Reactive Strike": {
+            "name": "Attacco di Opportunità"
+        },
+        "Scars of Steel": {
+            "featPrerequisites": {
+                "0": "Istinto dell'Ira"
+            }
+        },
+        "Share Tincture": {
+            "featPrerequisites": {
+                "0": "metodologia scienze alchemiche"
+            }
+        },
+        "Shield Warden": {
+            "featPrerequisites": {
+                "0": "parare con lo scudo"
+            },
+            "name": "Scudo del Guardiano"
+        },
+        "Shrink the Span": {
+            "featPrerequisites": {
+                "0": "Movimento Incredibile",
+                "1": "Incantesimi Ki"
+            }
+        },
+        "Signature Crafting": {
+            "featPrerequisites": {
+                "0": "maestro in Artigianato",
+                "1": "Fabbricare Oggetti Magici"
+            }
+        },
+        "Snap Out of It! (Marshal)": {
+            "featPrerequisites": {
+                "0": "Dedizione del Maresciallo"
+            }
+        },
+        "Student of the Dueling Arts": {
+            "featPrerequisites": {
+                "0": "Dedizione del Duellante"
+            }
+        },
+        "Stunning Blows": {
+            "featPrerequisites": {
+                "0": "Raffica di Colpi"
+            }
+        },
+        "Surgical Shock": {
+            "featPrerequisites": {
+                "0": "metodologia medicina legale"
+            }
+        },
+        "Swift Guardian": {
+            "featPrerequisites": {
+                "0": "Dedizione del Signore delle Bestie",
+                "1": "Richiamo del Compagno"
+            }
+        },
+        "Target of Opportunity": {
+            "featPrerequisites": {
+                "0": "Dedizione del Maresciallo"
+            }
+        },
+        "Terrifying Croak": {
+            "featPrerequisites": {
+                "0": "addestrato in Intimidazione"
+            },
+            "name": "Gracidio Terrificante"
+        },
+        "Tools of the Trade": {
+            "featPrerequisites": {
+                "0": "Dedizione del Cacciatore di Taglie"
+            }
+        },
+        "Tumbling Teamwork": {
+            "featPrerequisites": {
+                "0": "esperto in Acrobazia"
+            }
+        },
+        "Twirling Throw": {
+            "featPrerequisites": {
+                "0": "Lama Volante"
+            }
+        },
+        "Unobstructed Shot": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Arciere",
+                "1": "esperto in Atletica"
+            }
+        },
+        "Voluminous Vials": {
+            "featPrerequisites": {
+                "0": "Dedizione dell'Alchimista",
+                "1": "esperto in Artigianato"
+            }
+        },
+        "Walk the Plank": {
+            "featPrerequisites": {
+                "0": "Dedizione del Pirata"
+            }
+        },
+        "Wing Buffet": {
+            "featPrerequisites": {
+                "0": "esperto in Atletica"
+            }
         }
     }
 }
