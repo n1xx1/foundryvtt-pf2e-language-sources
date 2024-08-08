@@ -10,7 +10,7 @@
           "name": "Undetectable Alignment"
         },
         "8s6y6eF6aIz8kL9y": {
-          "description": "<p><strong>Trigger</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r (3d6+7)[healing]]]{3d6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional @Damage[1d6[fire]] damage with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each round). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
+          "description": "<p><strong>Trigger</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r (3d6+7)[healing]]]{3d6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional @Damage[1d6[fire]] damage with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each round). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
           "name": "Invoke Alocer"
         },
         "HISjG6rAbyiDviDC": {
@@ -52,13 +52,13 @@
     },
     "Bad Vibrations": {
       "description": "<p>The three larger crystals on the table begin to vibrate and emit a swiftly growing peal of sound.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:17] (trained) or @Check[type:occultism|dc:17] (trained) to disrupt the magic enchanting one of the crystals, or @Check[type:performance|dc:20] (trained) by a character who can cast @UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]{Counter Performance} to use sound to redirect the noise back into the crystal, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level, DC 18) to counteract a crystal.</span></p>",
-      "hazardRoutine": "<p>(3 actions) The hazard loses 1 action for each crystal that's disabled or destroyed. On each of the trap's actions, one of the crystals fires a blast of sound at a single Small or larger creature in the room. The target is randomly determined and takes @Damage[1d8[sonic]] damage (@Check[type:fortitude|dc:20|basic:true]); a target who critically fails this save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. At the end of the hazard's routine, attempt a @Check[type:flat|dc:10|name:Destroy a Crystal]. On a success, one of the crystals shatters and is destroyed.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:17] (trained) or @Check[occultism|dc:17] (trained) to disrupt the magic enchanting one of the crystals, or @Check[performance|dc:20] (trained) by a character who can cast @UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]{Counter Performance} to use sound to redirect the noise back into the crystal, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level, DC 18) to counteract a crystal.</span></p>",
+      "hazardRoutine": "<p>(3 actions) The hazard loses 1 action for each crystal that's disabled or destroyed. On each of the trap's actions, one of the crystals fires a blast of sound at a single Small or larger creature in the room. The target is randomly determined and takes @Damage[1d8[sonic]] damage (@Check[fortitude|dc:20|basic]); a target who critically fails this save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. At the end of the hazard's routine, attempt a @Check[flat|dc:10|name:Destroy a Crystal]. On a success, one of the crystals shatters and is destroyed.</p>",
       "name": "Bad Vibrations"
     },
     "Boreal Rage Trap": {
       "description": "<p>A stuffed owlbear twists toward intruders and breathes a gust of frigid air.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:22|traits:cold,evocation,magical,trap,hazard]{Thievery (expert)} on the owlbear's base</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:22|traits:cold,evocation,magical,trap,hazard]{Thievery (expert)} on the owlbear's base</p>",
       "hazardReset": "<p>10 minutes</p>",
       "name": "Boreal Rage Trap"
     },
@@ -70,7 +70,7 @@
           "name": "Red Cap"
         },
         "7XdX39vruCh59MIe": {
-          "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[type:will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The redcap is unaffected</p>\n<p><strong>Success</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Failure</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}</p>",
+          "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The redcap is unaffected</p>\n<p><strong>Success</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Failure</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}</p>",
           "name": "Divine Revulsion"
         },
         "9K08qcNrvT5fefj0": {
@@ -127,7 +127,7 @@
           "name": "Crystaline Mutation"
         },
         "2KlbsyUe3x0xTxPs": {
-          "description": "<p>Darius sprays hot wax from his improvised wax sprayer in a @Template[type:cone|distance:15]. All creatures in the area must attempt a @Check[type:reflex|dc:20] save. Scented candle homonoculi in the area take no damage, instead healing [[/r 2d6[healing]]] damage. After using the hot wax cannon, Darius can't use it again until he takes two Interact actions while adjacent to the cauldron of bubbling wax to reload the sprayer.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[3d6[fire],1d6[persistent,fire]]{3d6 fire damage plus 1d6 persistent fire damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[5d6[fire],2d6[persistent,fire]]{5d6 fire damage plus 2d6 persistent fire damage}.</p>",
+          "description": "<p>Darius sprays hot wax from his improvised wax sprayer in a @Template[cone|distance:15]. All creatures in the area must attempt a @Check[reflex|dc:20] save. Scented candle homonoculi in the area take no damage, instead healing [[/r 2d6[healing]]] damage. After using the hot wax cannon, Darius can't use it again until he takes two Interact actions while adjacent to the cauldron of bubbling wax to reload the sprayer.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[3d6[fire],1d6[persistent,fire]]{3d6 fire damage plus 1d6 persistent fire damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[5d6[fire],2d6[persistent,fire]]{5d6 fire damage plus 2d6 persistent fire damage}.</p>",
           "name": "Spray Hot Wax"
         },
         "I7afvPVzvaAFDvYl": {
@@ -159,7 +159,7 @@
     "Doatara the Poisoner": {
       "items": {
         "2LTRUowPoip0YGtc": {
-          "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
+          "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
         },
         "2WeSNefSX1K6rZFj": {
           "description": "<p>Doatara Interacts to draw a bomb, then Strikes with it.</p>",
@@ -196,7 +196,7 @@
           "name": "Toxic Flourish"
         },
         "uUzFr83377kpE3O6": {
-          "description": "<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
+          "description": "<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
         },
         "wq1w6V7b3rHNYeJ0": {
           "name": "Assassin Lore"
@@ -210,7 +210,7 @@
     "Doatara the Priest": {
       "items": {
         "2LTRUowPoip0YGtc": {
-          "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
+          "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
         },
         "37wj2GgNpJwVoI6t": {
           "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Effect: Elixir of Life (Moderate)}</p>"
@@ -232,7 +232,7 @@
           "name": "Restore Senses"
         },
         "uUzFr83377kpE3O6": {
-          "description": "<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
+          "description": "<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
         },
         "wq1w6V7b3rHNYeJ0": {
           "name": "Assassin Lore"
@@ -270,18 +270,18 @@
     },
     "Grazing Deer": {
       "description": "<p>A herd of deer exits the woods to investigate the delicious-looking leshys.</p>",
-      "hazardDisable": "<p>@Check[type:diplomacy|dc:17|name:Befriend the Deer]{Diplomacy (with Wild Empathy)} to befriend the deer and convince them that leshys aren't for nibbling, or @Check[type:intimidation|dc:20|name:Scare the Deer Away]{Intimidation} to scare away the deer.</p>",
-      "hazardRoutine": "<p>(2 actions) The grazing deer takes one action to move about, and then one action to eagerly nibble at a randomly chosen PC. A character who spends three actions on their turn to Stride can avoid being nibbled by the grazing deer during the hazard's next turn. If all of the PCs do so, attempt a @Check[type:flat|dc:5|name:Escape the Deer]-on a success, the party escapes the deer and can proceed onward to Petalbrook, but they become delayed as a result of having to flee the pack of ravenous deer.</p>",
+      "hazardDisable": "<p>@Check[diplomacy|dc:17|name:Befriend the Deer]{Diplomacy (with Wild Empathy)} to befriend the deer and convince them that leshys aren't for nibbling, or @Check[intimidation|dc:20|name:Scare the Deer Away]{Intimidation} to scare away the deer.</p>",
+      "hazardRoutine": "<p>(2 actions) The grazing deer takes one action to move about, and then one action to eagerly nibble at a randomly chosen PC. A character who spends three actions on their turn to Stride can avoid being nibbled by the grazing deer during the hazard's next turn. If all of the PCs do so, attempt a @Check[flat|dc:5|name:Escape the Deer]-on a success, the party escapes the deer and can proceed onward to Petalbrook, but they become delayed as a result of having to flee the pack of ravenous deer.</p>",
       "name": "Grazing Deer"
     },
     "Hail of Darts": {
       "description": "<p>An array of spring-loaded, ceiling-mounted darts are primed to fire down into the hallway when triggered by a pressure plate.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:25|traits:hazard,trap,mechanical]{Thievery (expert)} on the floor tile or wall socket</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:25|traits:hazard,trap,mechanical]{Thievery (expert)} on the floor tile or wall socket</p>",
       "name": "Hail of Darts"
     },
     "Hidden Spiked Pit": {
       "description": "<p>A wooden trapdoor covers a pit that's 10 feet square and 20 feet deep. Knives are arrayed at the bottom of the trap, impaling anyone who falls on them.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:18] (trained) to remove the trapdoor</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:18] (trained) to remove the trapdoor</p>",
       "hazardReset": "<p>Creatures can still fall into the trap, but the trapdoor must be reset manually for the trap to become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} again.</p>",
       "name": "Hidden Spiked Pit"
     },
@@ -304,7 +304,7 @@
           "name": "Fist"
         },
         "sdTQ4UDze0yoQiqJ": {
-          "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[type:flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>",
+          "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>",
           "name": "Tinker"
         }
       },
@@ -337,14 +337,14 @@
           "name": "Death Frenzy"
         },
         "We6LladGR4C687q0": {
-          "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round).</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round).</p>",
           "name": "Crawfish Venom"
         },
         "oGR3hLNhUlAR66Kw": {
           "name": "Claw"
         },
         "wXMKFkzyO8JcxivY": {
-          "description": "<p>@Damage[1d6[bludgeoning]], @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[1d6[bludgeoning]], @Check[fortitude|dc:17|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "xSrJboXYh6Bug0IV": {
           "description": "<p><strong>Requirements</strong> The monster's last action was a success with a Strike that lists Grab in its damage entry, or it has a creature grabbed using this action.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically Grabs the target until the end of the monster's next turn. The creature is grabbed by whichever body part the monster attacked with, and that body part can't be used to Strike creatures until the grab is ended. Using Grab extends the duration of the monster's Grab until the end of its next turn for all creatures grabbed by it. A grabbed creature can use the Escape action to get out of the grab, and the Grab ends for a grabbed creatures if the monster moves away from it.</p>",
@@ -356,7 +356,7 @@
     "Meliosa's Leshy": {
       "items": {
         "GHQR2PY6wyAAu2sb": {
-          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
+          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
           "name": "Verdant Burst"
         },
         "gKzbyEE7g3Lf5TPT": {
@@ -376,7 +376,7 @@
           "name": "Bend Back"
         },
         "GHQR2PY6wyAAu2sb": {
-          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
+          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
           "name": "Verdant Burst"
         },
         "XXOfhS9UxaUnXBkL": {
@@ -396,7 +396,7 @@
     "Meliosa's Leshy (Minkaian Honeysuckle Leshy)": {
       "items": {
         "GHQR2PY6wyAAu2sb": {
-          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
+          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
           "name": "Verdant Burst"
         },
         "KWfzW6wQi6tK0Btv": {
@@ -416,11 +416,11 @@
     "Meliosa's Leshy (Mint Leshy)": {
       "items": {
         "GHQR2PY6wyAAu2sb": {
-          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
+          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
           "name": "Verdant Burst"
         },
         "Nnqm6DzwVVzOVEOF": {
-          "description": "<p>@Check[type:reflex|dc:18], @Damage[1d6[bludgeoning],1d6[poison]]{1d6 bludgeoning plus 1d6 poison damage}, Escape DC 18, Rupture 6</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:18], @Damage[1d6[bludgeoning],1d6[poison]]{1d6 bludgeoning plus 1d6 poison damage}, Escape DC 18, Rupture 6</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "gKzbyEE7g3Lf5TPT": {
           "description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p>",
@@ -435,7 +435,7 @@
     "Meliosa's Leshy (Wisteria Leshy)": {
       "items": {
         "GHQR2PY6wyAAu2sb": {
-          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
+          "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
           "name": "Verdant Burst"
         },
         "gKzbyEE7g3Lf5TPT": {
@@ -443,7 +443,7 @@
           "name": "Change Shape"
         },
         "gUrcTxH9bZhgba6f": {
-          "description": "<p>@Damage[(1d6+4)[bludgeoning]], @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+          "description": "<p>@Damage[(1d6+4)[bludgeoning]], @Check[fortitude|dc:18|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "pMSeU5bKC5Lsck6O": {
           "name": "Fist"
@@ -474,7 +474,7 @@
           "name": "Charm (At Will)"
         },
         "OnmLcXNYU1Jxp5ji": {
-          "description": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3}, fatigued, and take @Damage[1d6[bleed]] every [[/br 1d20 #Minutes]]{1d20 minutes} (1 day)</p>",
+          "description": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:23]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3}, fatigued, and take @Damage[1d6[bleed]] every [[/br 1d20 #Minutes]]{1d20 minutes} (1 day)</p>",
           "name": "Bubonic Plague"
         },
         "Tb67hH4CruPE5kk8": {
@@ -485,7 +485,7 @@
           "name": "Misdirection (At Will, Self Only)"
         },
         "VZlTraWqYIrTlPGW": {
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The pairaka torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[type:will|dc:25] save, with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell.</p>",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The pairaka torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[will|dc:25] save, with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell.</p>",
           "name": "Tormenting Dreams"
         },
         "YpsnJaxTr4v9kv5p": {
@@ -506,12 +506,12 @@
     },
     "Poisoned Lock (Lionlodge)": {
       "description": "<p>A spring-loaded, poisoned needle is hidden near the drawer's keyhole. Disabling or breaking the trap does not disable or break the lock.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:23|name:Disable Thievery] (expert) on the spring mechanism.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:23|name:Disable Thievery] (expert) on the spring mechanism.</p>",
       "name": "Poisoned Lock (Lionlodge)"
     },
     "Precarious Pile": {
       "description": "<p>This dangerously unsteady pile of miscellaneous goods stands 7 feet high and 10 feet wide</span></p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:15|name:Excavate Safe Path|traits:action:disable-a-device] to carefully excavate a path through the wall without upsetting its balance</p>\n<p>@Check[type:athletics|dc:17|name:Hold Up Unstable Portions] to hold up any unstable portions</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:15|name:Excavate Safe Path|traits:action:disable-a-device] to carefully excavate a path through the wall without upsetting its balance</p>\n<p>@Check[athletics|dc:17|name:Hold Up Unstable Portions] to hold up any unstable portions</p>",
       "name": "Precarious Pile"
     },
     "Princess Sunset": {
@@ -524,7 +524,7 @@
           "name": "Headbutt"
         },
         "r6NeyXy7urudFlGz": {
-          "description": "<p>Princess Sunset Strides up to double its Speed and can move through the spaces of creatures of size Small or smaller, Trampling each creature whose space it enters. Princess Sunset can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the headbutt Strike, but trampled creatures can attempt a basic Reflex save at @Check[type:reflex|dc:14|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+          "description": "<p>Princess Sunset Strides up to double its Speed and can move through the spaces of creatures of size Small or smaller, Trampling each creature whose space it enters. Princess Sunset can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the headbutt Strike, but trampled creatures can attempt a basic Reflex save at @Check[reflex|dc:14|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
         }
       },
       "name": "Princess Sunset",
@@ -533,7 +533,7 @@
     "Scented Candle Homunculus": {
       "items": {
         "3lJBv7HwAjkSPmgN": {
-          "description": "<p>5 feet. The scented candle homunculus's fragrance of lavender is overwhelmingly intense. Any creature other than the homunculus's master who enters the aura must attempt a @Check[type:fortitude|dc:15] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to the homunculus's aura for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round and sickened 1.</p>",
+          "description": "<p>5 feet. The scented candle homunculus's fragrance of lavender is overwhelmingly intense. Any creature other than the homunculus's master who enters the aura must attempt a @Check[fortitude|dc:15] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to the homunculus's aura for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round and sickened 1.</p>",
           "name": "Perfume Aura"
         },
         "WrgYaUmRHEPgpUAn": {
@@ -621,7 +621,7 @@
           "name": "Fist"
         },
         "sdTQ4UDze0yoQiqJ": {
-          "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[type:flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>",
+          "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>",
           "name": "Tinker"
         }
       },

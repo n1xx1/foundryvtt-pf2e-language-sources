@@ -29,7 +29,7 @@
     },
     "Collapsing Porch": {
       "description": "<p>A section of splintery and rotten floorboards drop a creature 6 feet onto uneven rocks and piercing shards of wood.</p>",
-      "hazardDisable": "<p>@Check[type:crafting|dc:15] (trained) to replace or cover the weak sections of flooring, or @Check[type:survival|dc:15] (trained) to crumble the rotten floorboards from a safe distance</p>",
+      "hazardDisable": "<p>@Check[crafting|dc:15] (trained) to replace or cover the weak sections of flooring, or @Check[survival|dc:15] (trained) to crumble the rotten floorboards from a safe distance</p>",
       "hazardReset": "<p>Once this section of the porch has collapsed, creatures can still fall through the hole until the porch is Repaired.</p>",
       "name": "Collapsing Porch"
     },
@@ -81,11 +81,11 @@
           "name": "Quick Trap"
         },
         "ccosYJxMalM6rfN8": {
-          "description": "<p>Once this trap is deployed, anyone who steps on the square it's in takes @Damage[2d8[piercing]] damage and must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>",
+          "description": "<p>Once this trap is deployed, anyone who steps on the square it's in takes @Damage[2d8[piercing]] damage and must attempt a @Check[reflex|dc:17|basic] saving throw.</p>",
           "name": "Spike Trap"
         },
         "nDnP6GpXjTbXqbXB": {
-          "description": "<p>This basic snare consists of hidden spikes that rely on a creature's momentum to lacerate or potentially impale it as it enters the snare's square, dealing 2d8 piercing damage. The creature must attempt a @Check[type:reflex|dc:17|basic:true] saving throw.</p>",
+          "description": "<p>This basic snare consists of hidden spikes that rely on a creature's momentum to lacerate or potentially impale it as it enters the snare's square, dealing 2d8 piercing damage. The creature must attempt a @Check[reflex|dc:17|basic] saving throw.</p>",
           "name": "Spike Trap"
         }
       },
@@ -119,7 +119,7 @@
           "name": "Hypnotic Stare"
         },
         "Nc23oEL8srJURx0P": {
-          "description": "<p>The Kurnugian ends their Hypnotic Stare ability early, and just before this happens, the target must succeed at a @Check[type:will|dc:24] saving throw or forget any hostile activities the Kurnugian jackal performed against it.</p>",
+          "description": "<p>The Kurnugian ends their Hypnotic Stare ability early, and just before this happens, the target must succeed at a @Check[will|dc:24] saving throw or forget any hostile activities the Kurnugian jackal performed against it.</p>",
           "name": "Remove Memory"
         },
         "Pp6TdDyWY8mxGAY8": {
@@ -140,7 +140,7 @@
     },
     "Magic Starknives Trap": {
       "description": "<p>Starknife symbols on the six pillars glow and shoot across the room.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:21|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} on any four of the six pillars disables the entire trap (the trap is a 2nd-rank spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:21|traits:action:disable-a-device] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} on any four of the six pillars disables the entire trap (the trap is a 2nd-rank spell and the DC to dispel it is 21). Destroying any four of the six pillars also disables the trap.</p>",
       "hazardReset": "<p>The trap deactivates 1 round after it has no target creatures and resets each day at sundown.</p>",
       "hazardRoutine": "<p>(3 actions) For each of its actions on its turn, a carving on a different pillar glows and makes a magical starknife Ranged Strike against a random creature within range. Creatures might have cover from this Strike, such as from one of the pillars in the room.</p>",
       "name": "Magic Starknives Trap"
@@ -187,9 +187,9 @@
     },
     "Nightmare Terrain": {
       "description": "<p>What seems like an innocent stretch of land assaults trespassers with terrible illusions.</p>",
-      "hazardDisable": "<p>@Check[type:arcana|dc:22], @Check[type:nature|dc:22], @Check[type:occultism|dc:22], or @Check[type:religion|dc:22] (by a hero with expert proficiency in that skill) three times to temporarily disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd-level spell, DC 25)</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:22], @Check[nature|dc:22], @Check[occultism|dc:22], or @Check[religion|dc:22] (by a hero with expert proficiency in that skill) three times to temporarily disrupt the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd-level spell, DC 25)</p>",
       "hazardReset": "<p>The terrible visions cease after all creatures have left the affected area, but the hazard is immediately ready to inflict its visions on the next creature to enter.</p>",
-      "hazardRoutine": "<p>(1 action) Terrible visions assail the minds of all creatures who can see within the affected area. Each creature must attempt a @Check[type:will|dc:24] saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d8+9)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(4d8+18)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>",
+      "hazardRoutine": "<p>(1 action) Terrible visions assail the minds of all creatures who can see within the affected area. Each creature must attempt a @Check[will|dc:24] saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d8+9)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(4d8+18)[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>",
       "name": "Nightmare Terrain"
     },
     "Omblin Leadbuster": {
@@ -214,7 +214,7 @@
           "name": "Fist"
         },
         "d5T3nJCRgqqqQvzD": {
-          "description": "<p>Bellowing mightily, the commander gives themself and all orc allies within @Template[type:emanation|distance:60]{60 feet} who can hear them a +1 status bonus to attack and damage rolls until the start of the orc commander's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yqq4AkZ9lrm4CcID]{Effect: Battle Cry}</p>",
+          "description": "<p>Bellowing mightily, the commander gives themself and all orc allies within @Template[emanation|distance:60]{60 feet} who can hear them a +1 status bonus to attack and damage rolls until the start of the orc commander's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yqq4AkZ9lrm4CcID]{Effect: Battle Cry}</p>",
           "name": "Battle Cry"
         }
       },
@@ -241,7 +241,7 @@
           "name": "Mage Hand"
         },
         "qunm5Cfit6Q1T4dI": {
-          "description": "<p>The scalliwing spreads their iridescent wings and flutters them in a hypnotizing pattern. Each creature within 30 feet that can see the scalliwing must attempt a @Check[type:will|dc:20] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature is off-guard until the start of its next turn, and it must spend its first action on its next turn admiring the scalliwing.</p>\n<p><strong>Critical Failure</strong> The creature is off-guard until the start of its next turn. For 1 minute, the creature must spend its first action each turn admiring the scalliwing. This effect ends if the scalliwing attacks or uses another hostile action against the affected creature.</p>",
+          "description": "<p>The scalliwing spreads their iridescent wings and flutters them in a hypnotizing pattern. Each creature within 30 feet that can see the scalliwing must attempt a @Check[will|dc:20] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature is off-guard until the start of its next turn, and it must spend its first action on its next turn admiring the scalliwing.</p>\n<p><strong>Critical Failure</strong> The creature is off-guard until the start of its next turn. For 1 minute, the creature must spend its first action each turn admiring the scalliwing. This effect ends if the scalliwing attacks or uses another hostile action against the affected creature.</p>",
           "name": "Wing Flash"
         },
         "wlSTHbfmM751AGNy": {
@@ -254,7 +254,7 @@
       "description": "<p>Stinkweed shamblers are animate masses of foul vegetation that grow from necrotic soil where ghasts, disease-ridden zombies, or other putrid undead creatures have fallen. At a site where numerous undead creatures have been destroyed, an infestation of up to a dozen stinkweed shamblers might arise. Such \"rot-mates\" work well together, sharing a preternatural coordination. Stinkweed shamblers grow quickly, initially appearing as fast-growing green shoots with light-green leaves but soon growing into a humanoid form that can pull itself free from the ground and slowly move about on its own. Stinkweed shamblers' leaves are the source of their unpleasant smell, which is most pungent when the leaves are crushed or squeezed. Stinkweed shamblers are covered with several small, white flowers, each of which grows into the shape of a tiny skull.</p>\n<p>Stinkweed shamblers are nasty creatures, but their methods are uncomplicated. They like to capture and torment larger creatures such as livestock and humanoids. Aware that they aren't particularly strong and that their smell can give them away, stinkweed shamblers like to set simple traps such as deadfalls or pits. Their perverse fun ceases only when their prey has died from numerous injuries. Stinkweed shamblers don't consume their victims and in fact lack mouths; they gain all the sustenance they need from sunlight but also seem to derive some nutritional satisfaction from the pain that their torments engender.</p>\n<p>Most stinkweed shamblers grow to be about 3 feet tall and weigh only 30 pounds.</p>",
       "items": {
         "0gQuuCA2OyaQRNwR": {
-          "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round (and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>",
+          "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round (and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>",
           "name": "Stench"
         },
         "56wLde8SVEfys89N": {
@@ -280,19 +280,19 @@
     },
     "Tongues of Flame": {
       "description": "<p>Nozzles hidden in the ceiling of the four corridors leading to the intersection spray jets of flame along their lengths when the trap is triggered.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:22|traits:action:disable-a-device] to disable a single nozzle, @Check[type:thievery|dc:21|traits:action:pick-a-lock] twice to unlock a door, or @Check[type:thievery|dc:25|traits:action:disable-a-device] to deactivate the trap from the control panel. A hero who isn't trained in Thievery automatically fails these checks.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:22|traits:action:disable-a-device] to disable a single nozzle, @Check[thievery|dc:21|traits:action:pick-a-lock] twice to unlock a door, or @Check[thievery|dc:25|traits:action:disable-a-device] to deactivate the trap from the control panel. A hero who isn't trained in Thievery automatically fails these checks.</p>",
       "hazardReset": "<p>The trap deactivates and resets after 10 minutes. After the trap is activated for the fourth time, it runs out of fuel and must be reset manually.</p>",
-      "hazardRoutine": "<p>(4 actions) The trap loses 1 action each turn for each disabled nozzle. On each action, a different nozzle fires a jet of flame down a different corridor, dealing @Damage[3d6[fire]] damage to each creature in the first 10 feet of the corridor past the intersection (@Check[type:reflex|dc:22|basic:true]).</p>\n<p>A creature standing in the corridor intersection can be hit by only one flame jet per round even if they're in the area of multiple flame jets. The creature attempts only one saving throw per round, but it takes a -2 circumstance penalty to its saving throw.</p>",
+      "hazardRoutine": "<p>(4 actions) The trap loses 1 action each turn for each disabled nozzle. On each action, a different nozzle fires a jet of flame down a different corridor, dealing @Damage[3d6[fire]] damage to each creature in the first 10 feet of the corridor past the intersection (@Check[reflex|dc:22|basic]).</p>\n<p>A creature standing in the corridor intersection can be hit by only one flame jet per round even if they're in the area of multiple flame jets. The creature attempts only one saving throw per round, but it takes a -2 circumstance penalty to its saving throw.</p>",
       "name": "Tongues of Flame"
     },
     "Viper Urn": {
       "description": "<p>A ceramic urn containing a coiled viper tips and shatters when a tripwire is pulled.</p>",
-      "hazardDisable": "<p>@Check[type:thievery|dc:15|traits:action:disable-a-device] (trained) to stabilize the urn, or @Check[type:athletics|dc:15] to carefully lower the heavy urn</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:15|traits:action:disable-a-device] (trained) to stabilize the urn, or @Check[athletics|dc:15] to carefully lower the heavy urn</p>",
       "name": "Viper Urn"
     },
     "Web Lurker Noose": {
       "description": "<p>Discreet webbing at throat level snags a creature that walks into it.</p>",
-      "hazardDisable": "<p>@Check[type:survival|dc:18] (trained) or @Check[type:thievery|dc:18|traits:action:disable-a-device] (expert) to rearrange the webbing</p>",
+      "hazardDisable": "<p>@Check[survival|dc:18] (trained) or @Check[thievery|dc:18|traits:action:disable-a-device] (expert) to rearrange the webbing</p>",
       "name": "Web Lurker Noose"
     }
   },
