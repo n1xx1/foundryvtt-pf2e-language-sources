@@ -2956,7 +2956,7 @@
       "name": "Bone Magic"
     },
     "Bone Missile": {
-      "description": "<p>You can remove your ribs to use them as arrows or bolts. When you draw a rib, you lose [[/r 2]]{2 HP}, and the projectile deals 2 extra void damage if you Strike with it before the end of your next turn. The HP loss and extra damage both increase to [[/r 3]]{3} at 12th level and [[/r 4]]{4} at 19th level. Your rib cage magically replenishes, and any rib you draw crumbles to dust after being used for a Strike or at the end of your next turn, whichever comes first.</p>",
+      "description": "<p>You can remove your ribs to use them as arrows or bolts. When you draw a rib, you lose @Damage[(ternary(gte(@actor.level,19),4,ternary(gte(@actor.level,12),3,2)))[untyped]] HP, and the projectile deals 2 extra void damage if you Strike with it before the end of your next turn. The HP loss and extra damage both increase to 3 at 12th level and 4 at 19th level. Your rib cage magically replenishes, and any rib you draw crumbles to dust after being used for a Strike or at the end of your next turn, whichever comes first.</p>",
       "name": "Bone Missile"
     },
     "Bone Spikes": {
@@ -5107,7 +5107,7 @@
       "name": "Crunch"
     },
     "Crushing Grab": {
-      "description": "<p>Like a powerful constrictor, you crush targets in your unyielding grasp. When you successfully @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature, you can deal [[/r @actor.abilities.str.mod[bludgeoning]]]{bludgeoning damage} to that creature equal to your Strength modifier. You can make this attack nonlethal with no penalty.</p>",
+      "description": "<p>Like a powerful constrictor, you crush targets in your unyielding grasp. When you successfully @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a creature, you can deal @Damage[@actor.abilities.str.mod[bludgeoning]]{bludgeoning damage} to that creature equal to your Strength modifier. You can make this attack nonlethal with no penalty.</p>",
       "name": "Crushing Grab"
     },
     "Crushing Step": {
@@ -5329,7 +5329,7 @@
       "name": "Darting Monkey"
     },
     "Dash of Herbs": {
-      "description": "<p>A small cloud of medicinal herbs heal a creature. The type of herbs depends on which malady you decide to treat: @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, disease, poison, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened}, or injuries. Target one living creature within 30 feet, who regains 2d8+4 HP and can attempt a new save against one malady of the chosen kind. If you chose injuries, instead increase the healing dice to d10s. The creature becomes temporarily immune to Dash of Herbs for 10 minutes.</p>\n<p>Alternatively, you can add the herbs to a dish of food being prepared for up to six people. Creatures who partake in the meal gain the benefits. The herbs' healing effects wear off if not eaten within an hour, though their flavor remains.</p>\n<hr />\n<p><strong>Level (+2)</strong> The healing increases by 1d8.</p>\n<p>[[/r ((floor((max(6,@actor.level)-6)/2)+2)d8+4)[healing]]]{Leveled HP}</p>",
+      "description": "<p>A small cloud of medicinal herbs heal a creature. The type of herbs depends on which malady you decide to treat: @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, disease, poison, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened}, or injuries. Target one living creature within 30 feet, who regains @Damage[((floor((max(6,@actor.level)-6)/2)+2)d8+4)[healing]] HP and can attempt a new save against one malady of the chosen kind. If you chose injuries, instead increase the healing dice to d10s. The creature becomes temporarily immune to Dash of Herbs for 10 minutes.</p>\n<p>Alternatively, you can add the herbs to a dish of food being prepared for up to six people. Creatures who partake in the meal gain the benefits. The herbs' healing effects wear off if not eaten within an hour, though their flavor remains.</p><hr /><p><strong>Level (+2)</strong> The healing increases by 1d8.</p>",
       "name": "Dash of Herbs"
     },
     "Dashing Pounce": {
@@ -11416,7 +11416,7 @@
       "name": "Heal Mount"
     },
     "Healer's Halo": {
-      "description": "<p><strong>Trigger</strong> You or allies within 30 feet recover Hit Points while your @UUID[Compendium.pf2e.feats-srd.Item.PGVXjbAi1Fa4uTmD]{Halo} is active.</p>\n<hr />\n<p>Your halo can enhance positive energy. Creatures who have recovered Hit Points from a positive healing effect recover an additional [[/r 1d6[healing]]]{1d6 Hit Points}. Creatures who benefit from this power become temporarily immune to its effect for the next 10 minutes.</p>",
+      "description": "<p><strong>Trigger</strong> You or allies within 30 feet recover Hit Points while your @UUID[Compendium.pf2e.feats-srd.Item.PGVXjbAi1Fa4uTmD]{Halo} is active.</p><hr /><p>Your halo can enhance positive energy. Creatures who have recovered Hit Points from a positive healing effect recover an additional @Damage[1d6[healing]] Hit Points. Creatures who benefit from this power become temporarily immune to its effect for the next 10 minutes.</p>",
       "featPrerequisites": {
         "0": "Halo"
       },
@@ -14608,7 +14608,7 @@
       "name": "Mask Of Fear"
     },
     "Mask Of Pain": {
-      "description": "<p><strong>Trigger</strong> You succeed at a Demoralize check.</p>\n<hr />\n<p><strong>Requirements</strong> You're wearing your <em>warmask</em>.</p>\n<hr />\n<p>Your mask has grown into a manifestation of your pain, which you can release. The creature you successfully Demoralized takes [[/r 2d6[mental] #Mask of Pain]]{2d6 mental damage}, or [[/r 4d6[mental] #Mask of Pain]]{4d6 mental damage} if you're legendary in Intimidation. The target is then temporarily immune to additional damage from Mask of Pain for 24 hours.</p>",
+      "description": "<p><strong>Trigger</strong> You succeed at a Demoralize check.</p><hr /><p><strong>Requirements</strong> You're wearing your <em>warmask</em>.</p><hr /><p>Your mask has grown into a manifestation of your pain, which you can release. The creature you successfully Demoralized takes @Damage[2d6[mental]] damage, or @Damage[4d6[mental]] damage if you're legendary in Intimidation. The target is then temporarily immune to additional damage from Mask of Pain for 24 hours.</p>",
       "featPrerequisites": {
         "0": "expert in Intimidation",
         "1": "Orc Warmask"
@@ -15152,7 +15152,7 @@
       "name": "Mind Projectiles"
     },
     "Mind Shards": {
-      "description": "<p>With a swing and a thought, you detonate your mind weapon into a burst of psychic shards that shred the mind. You concentrate and unleash a @Template[cone|distance:15] that deals @Damage[3d6[mental]] damage to all creatures in the area, with a @Check[will|against:class-spell|basic] save against the higher of your class DC or spell DC. After the attack, your mind weapon automatically re-forms, and you can't use this ability again for 1 minute. Mind Shards' damage increases by 1d6 at level 7 and every two levels thereafter.</p>\n<p>[[/r (ceil(@actor.level/2)d6)[mental]]]{Leveled Mental Damage}</p>",
+      "description": "<p>With a swing and a thought, you detonate your mind weapon into a burst of psychic shards that shred the mind. You concentrate and unleash a @Template[cone|distance:15] that deals @Damage[(ceil(@actor.level/2)d6)[mental]] damage to all creatures in the area, with a @Check[will|against:class-spell|basic] save against the higher of your class DC or spell DC. After the attack, your mind weapon automatically re-forms, and you can't use this ability again for 1 minute. Mind Shards' damage increases by 1d6 at level 7 and every two levels thereafter.</p>",
       "featPrerequisites": {
         "0": "Mind Smith Dedication"
       },
@@ -16147,7 +16147,7 @@
       "name": "Ocean Wariness"
     },
     "Ocean's Balm": {
-      "description": "<p>A blessing of the living sea salves wounds and douses flames. Touch a willing living creature. It regains 1d8 HP and gains resistance 2 to fire for 1 minute. If it has persistent fire damage, it can attempt a flat check to remove it with especially appropriate help. The target is temporarily immune to healing from Ocean's Balm for 10 minutes.</p>\n<hr />\n<p><strong>Level (+2)</strong> The healing increases by 1d8, and the resistance increases by 1.</p>\n<p>[[/r (floor((max(1,@actor.level)-1)/2)+1)d8[healing]]]{Leveled HP}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.uG1EljvrnC9HGwUh]{Effect: Ocean's Balm}</p>",
+      "description": "<p>A blessing of the living sea salves wounds and douses flames. Touch a willing living creature. It regains @Damage[(floor((max(1,@actor.level)-1)/2)+1)d8[healing]] HP and gains resistance 2 to fire for 1 minute. If it has persistent fire damage, it can attempt a flat check to remove it with especially appropriate help. The target is temporarily immune to healing from Ocean's Balm for 10 minutes.</p><hr /><p><strong>Level (+2)</strong> The healing increases by 1d8, and the resistance increases by 1.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.uG1EljvrnC9HGwUh]{Effect: Ocean's Balm}</p>",
       "name": "Ocean's Balm"
     },
     "Ocean's Bite": {
@@ -20327,7 +20327,7 @@
       "name": "Selective Energy"
     },
     "Self Destruct": {
-      "description": "<p><strong>Trigger</strong> Your reanimated clockwork companion is reduced to 0 Hit Points.</p>\n<p><strong>Requirements</strong> You're within 60 feet of your reanimated clockwork companion.</p>\n<hr />\n<p>You've installed a self-destruct device within your construct companion, which you can trigger with a special device from up to 60 feet away. When you activate the device, your reanimated construct companion explodes, dealing @Damage[2d6[fire]] damage per level to all creatures in a @Template[emanation|distance:30]{30-foot radius}. Creatures caught in the blast can attempt a @Check[reflex|against:class-spell] save, with a DC equal to the higher of your class DC or spell DC.</p>\n<p>[[/r ((2*@actor.level)d6)[fire]]]{Leveled Fire Damage}</p>",
+      "description": "<p><strong>Trigger</strong> Your reanimated clockwork companion is reduced to 0 Hit Points.</p>\n<p><strong>Requirements</strong> You're within 60 feet of your reanimated clockwork companion.</p><hr /><p>You've installed a self-destruct device within your construct companion, which you can trigger with a special device from up to 60 feet away. When you activate the device, your reanimated construct companion explodes, dealing @Damage[((2*@actor.level)d6)[fire]] damage per level to all creatures in a @Template[emanation|distance:30]{30-foot radius}. Creatures caught in the blast can attempt a @Check[reflex|against:class-spell] save, with a DC equal to the higher of your class DC or spell DC.</p>",
       "featPrerequisites": {
         "0": "Clockwork Reanimator Dedication"
       },
@@ -20511,7 +20511,7 @@
       "name": "Shadow Master"
     },
     "Shadow Pact": {
-      "description": "<p>Thousands of years ago, your ancestors made a pact with @UUID[Compendium.pf2e.deities.Item.ZfN7jkK6boU1FuiS]{Zon-Kuthon}. He has not forgotten, even if you might wish he had. You can take [[/r 1]]{1 damage} to mix blood and shadows to cast 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.TUj8eugNqAvB1vVR]{Creation} as an innate divine spell. You can use this ability as often as you wish, but you can have only one such object in existence at a time. If the object encounters bright light, the spell ends and the object dissolves into shadows.</p>",
+      "description": "<p>Thousands of years ago, your ancestors made a pact with @UUID[Compendium.pf2e.deities.Item.ZfN7jkK6boU1FuiS]{Zon-Kuthon}. He has not forgotten, even if you might wish he had. You can take @Damage[1]{1 damage} to mix blood and shadows to cast 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.TUj8eugNqAvB1vVR]{Creation} as an innate divine spell. You can use this ability as often as you wish, but you can have only one such object in existence at a time. If the object encounters bright light, the spell ends and the object dissolves into shadows.</p>",
       "featPrerequisites": {
         "0": "Nidalese ethnicity"
       },
@@ -23907,7 +23907,7 @@
       "name": "Tangled Forest Stance"
     },
     "Tap Vitality": {
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You tap into the entity's life force to heal your wounds, though at the cost of the entity's personality bleeding into your own. You recover a number of [[/r (4*@actor.level)[healing]]]{Hit Points equal to four times your level}. Each time you use Tap Vitality, you begin to bleed more and more of the entity's personality and instincts into your own until the next time you spend an hour or more assuaging the entity, bringing your mind back under your own control.</p>\n<hr />\n<p><strong>Special</strong> This action has the tradition trait appropriate to your entity, typically divine for a demon, occult for an aberration or outer entity, or primal for a fey.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>You tap into the entity's life force to heal your wounds, though at the cost of the entity's personality bleeding into your own. You recover a number of @Damage[(4*@actor.level)[healing]]{Hit Points equal to four times your level}. Each time you use Tap Vitality, you begin to bleed more and more of the entity's personality and instincts into your own until the next time you spend an hour or more assuaging the entity, bringing your mind back under your own control.</p><hr /><p><strong>Special</strong> This action has the tradition trait appropriate to your entity, typically divine for a demon, occult for an aberration or outer entity, or primal for a fey.</p>",
       "featPrerequisites": {
         "0": "Living Vessel Dedication"
       },
