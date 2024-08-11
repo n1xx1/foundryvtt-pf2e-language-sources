@@ -2312,7 +2312,7 @@
       "name": "Battle Planner"
     },
     "Battle Prayer": {
-      "description": "<p>Calling out to your deity, you recite scripture to harm a foe. When you select this feat, choose chaos, evil, good, or law. Your choice must match one of your deity's alignment components. This action has the trait corresponding to the chosen alignment.</p>\n<p>Attempt a @Check[religion|defense:will] check against the Will DC of a foe within 30 feet. The foe is then temporarily immune to Battle Prayers from your deity for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal [[/r 2d6]] damage of the chosen alignment type, or [[/r 6d6]] damage if you have legendary proficiency in Religion.</p>\n<p><strong>Success</strong> You deal [[/r 1d6]] damage of the chosen alignment type, or [[/r 3d6]] damage if you have legendary proficiency in Religion.</p>\n<p><strong>Failure</strong> There is no effect.</p>\n<p><strong>Critical Failure</strong> The backlash of your foe's will against your prayer prevents you from using Battle Prayer again for 10 minutes.</p>",
+      "description": "<p>Calling out to your deity, you recite scripture to harm a foe. When you select this feat, choose chaos, evil, good, or law. Your choice must match one of your deity's alignment components. This action has the trait corresponding to the chosen alignment.</p>\n<p>Attempt a @Check[religion|defense:will] check against the Will DC of a foe within 30 feet. The foe is then temporarily immune to Battle Prayers from your deity for 1 day.</p><hr /><p><strong>Critical Success</strong> You deal @Damage[2d6] damage of the chosen alignment type, or @Damage[6d6] damage if you have legendary proficiency in Religion.</p>\n<p><strong>Success</strong> You deal @Damage[1d6] damage of the chosen alignment type, or @Damage[3d6] damage if you have legendary proficiency in Religion.</p>\n<p><strong>Failure</strong> There is no effect.</p>\n<p><strong>Critical Failure</strong> The backlash of your foe's will against your prayer prevents you from using Battle Prayer again for 10 minutes.</p>",
       "featPrerequisites": {
         "0": "master in Religion",
         "1": "you follow a deity"
@@ -9871,7 +9871,7 @@
       "name": "Fresh Ingredients"
     },
     "Fresh Produce": {
-      "description": "<p>You grow a nourishing nut, vegetable, seed, or fruit. Choose a creature in your kinetic aura. The produce grows in their open hand, or at their feet if they have no open hands. The produce has light Bulk. A creature can eat it with an Interact action to regain 1d4+1 HP; this is a healing vitality effect. The creature feels full for 10 minutes, during which it has resistance 2 to void damage and can't eat another piece of produce. Produce not consumed by the start of your next turn withers away.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.2GWZgsvMJF9DN0DO]{Effect: Fresh Produce}</p>\n<hr />\n<p><strong>Level (+2)</strong> The healing increases by 1d4+5, and the resistance increases by 2.</p>\n<p>[[/r ((floor((max(1,@actor.level)-1)/2)+1)d4+(floor((max(1,@actor.level)-1)/2)*5+1))[vitality,healing]]]{Leveled HP}</p>",
+      "description": "<p>You grow a nourishing nut, vegetable, seed, or fruit. Choose a creature in your kinetic aura. The produce grows in their open hand, or at their feet if they have no open hands. The produce has light Bulk. A creature can eat it with an Interact action to regain @Damage[((floor((max(1,@actor.level)-1)/2)+1)d4+(floor((max(1,@actor.level)-1)/2)*5+1))[vitality,healing]] HP; this is a healing vitality effect. The creature feels full for 10 minutes, during which it has resistance 2 to void damage and can't eat another piece of produce. Produce not consumed by the start of your next turn withers away.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.2GWZgsvMJF9DN0DO]{Effect: Fresh Produce}</p><hr /><p><strong>Level (+2)</strong> The healing increases by 1d4+5, and the resistance increases by 2.</p>",
       "name": "Fresh Produce"
     },
     "Friendform": {
@@ -12543,7 +12543,7 @@
       "name": "Inner Breath"
     },
     "Inner Fire (Monk)": {
-      "description": "<p>While you're in Stoked Flame Stance, you have cold and fire resistance equal to half your level, and any creature that hits you with an unarmed attack, tries to Grab or Grapple you, or otherwise touches you takes [[/r @actor.abilities.wis.mod[fire]]]{fire damage} equal to your Wisdom modifier (minimum 1). A creature can take this damage no more than once per turn.</p>",
+      "description": "<p>While you're in Stoked Flame Stance, you have cold and fire resistance equal to half your level, and any creature that hits you with an unarmed attack, tries to Grab or Grapple you, or otherwise touches you takes @Damage[@actor.abilities.wis.mod[fire]]{fire damage} equal to your Wisdom modifier (minimum 1). A creature can take this damage no more than once per turn.</p>",
       "featPrerequisites": {
         "0": "Stoked Flame Stance"
       },
@@ -15229,7 +15229,7 @@
       "name": "Miresoul"
     },
     "Mirror Refuge": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You're within 5 feet of a mirrored surface.</p>\n<hr />\n<p>Your origin in the space behind mirrors enables you to use a mirror as a hideaway, like the spell @UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]{One with Stone}. You meld into an adjacent mirror. You can hear but not see outside this space, and creatures outside can't see or hear you. You can cast spells while within the mirror, but no effects can cross the mirror. Your Mirror Refuge lasts for 10 minutes unless the mirror is broken, which expels you and deals [[/r 10d6]]{10d6} damage to you. You can Dismiss the effect. You appear in a space adjacent to the mirror when the effect ends.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You're within 5 feet of a mirrored surface.</p><hr /><p>Your origin in the space behind mirrors enables you to use a mirror as a hideaway, like the spell @UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]{One with Stone}. You meld into an adjacent mirror. You can hear but not see outside this space, and creatures outside can't see or hear you. You can cast spells while within the mirror, but no effects can cross the mirror. Your Mirror Refuge lasts for 10 minutes unless the mirror is broken, which expels you and deals @Damage[10d6] damage to you. You can Dismiss the effect. You appear in a space adjacent to the mirror when the effect ends.</p>",
       "featPrerequisites": {
         "0": "Mirror-Risen"
       },
@@ -15945,7 +15945,7 @@
       "name": "Nimble Shield Hand"
     },
     "Nimble Strike": {
-      "description": "<p>You're cunning enough to find an opening in an opponent's attack. When you use your @UUID[Compendium.pf2e.feats-srd.Item.dNH8OHEvx3vI9NBQ]{Flashy Dodge} reaction, you can make a melee Strike against the triggering creature. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike. If you use the @UUID[Compendium.pf2e.feats-srd.Item.F6ZAceuDpiM9bUiF]{Flashy Roll} feat, you can make this Strike at any point during your roll.</p>",
+      "description": "<p>You're cunning enough to find an opening in an opponent's attack. When you use your @UUID[Compendium.pf2e.feats-srd.Item.dNH8OHEvx3vI9NBQ]{Nimble Dodge} reaction, you can make a melee Strike against the triggering creature. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike. If you use the @UUID[Compendium.pf2e.feats-srd.Item.F6ZAceuDpiM9bUiF]{Nimble Roll} feat, you can make this Strike at any point during your roll.</p>",
       "name": "Nimble Strike"
     },
     "No Cause For Alarm": {
@@ -22310,7 +22310,7 @@
       "name": "Spirit's Anguish"
     },
     "Spirit's Wrath": {
-      "description": "<p>You call forth an ephemeral spirit, typically the apparition of an ancestor or a nature spirit, which takes the form of a wisp. The wisp makes a melee wisp rush unarmed attack against an enemy within 120 feet of you. The wisp's attack modifier is equal to your proficiency bonus for martial weapons plus your Strength modifier plus a +2 item bonus, and it applies the same circumstance and status bonuses and penalties that you have. On a hit, the wisp deals [[/r (4d8 + @actor.abilities.con.mod)[spirit]]]{spirit damage} equal to 4d8 plus your Constitution modifier. Don't apply your Rage damage or your weapon specialization damage, but circumstance and status bonuses and penalties that would also affect the wisp's damage apply. On a critical hit, the wisp deals double damage and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. This attack uses and counts toward your multiple attack penalty as if you were the one attacking.</p>",
+      "description": "<p>You call forth an ephemeral spirit, typically the apparition of an ancestor or a nature spirit, which takes the form of a wisp. The wisp makes a melee wisp rush unarmed attack against an enemy within 120 feet of you. The wisp's attack modifier is equal to your proficiency bonus for martial weapons plus your Strength modifier plus a +2 item bonus, and it applies the same circumstance and status bonuses and penalties that you have. On a hit, the wisp deals @Damage[(4d8 + @actor.abilities.con.mod)[spirit]]{spirit damage} equal to 4d8 plus your Constitution modifier. Don't apply your Rage damage or your weapon specialization damage, but circumstance and status bonuses and penalties that would also affect the wisp's damage apply. On a critical hit, the wisp deals double damage and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. This attack uses and counts toward your multiple attack penalty as if you were the one attacking.</p>",
       "featPrerequisites": {
         "0": "spirit instinct"
       },
@@ -23080,7 +23080,7 @@
       "name": "Strix Lore"
     },
     "Strix Vengeance": {
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> You, or a strix ally you can see, are damaged by an enemy's critical hit.</p>\n<hr />\n<p>You dedicate yourself to destroying those who harm your kin. Until the end of your next turn, you deal an additional [[/r 1d6]]{+1d6 damage} on Strikes against the triggering enemy. The bonus increases to [[/r 2d6]]{+2d6 damage} if you use a Striking weapon or unarmed attack and [[/r 3d6]]{+3d6 damage} if you use a Striking (Major) weapon or unarmed attack.</p>",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> You, or a strix ally you can see, are damaged by an enemy's critical hit.</p><hr /><p>You dedicate yourself to destroying those who harm your kin. Until the end of your next turn, you deal an additional +1d6 damage on Strikes against the triggering enemy. The bonus increases to +2d6 damage if you use a Striking weapon or unarmed attack and +3d6 damage if you use a Striking (Major) weapon or unarmed attack.</p>",
       "name": "Strix Vengeance"
     },
     "Strong Arm": {
