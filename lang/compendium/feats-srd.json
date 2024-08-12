@@ -1391,7 +1391,7 @@
       "name": "Archer's Aim"
     },
     "Architect of Flame": {
-      "description": "<p>Flames rise and shape to your will, forming a wall or dome of your design. You create a @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} within 120 feet. In addition to the normal choices, you can make the wall up to 10 feet long and 60 feet high. The wall lasts until the end of your next turn, but you can Sustain it up to 1 minute.</p>\n<hr />\n<p><strong>Level (+3)</strong> The damage increases by [[/r 1d6]].</p>",
+      "description": "<p>Flames rise and shape to your will, forming a wall or dome of your design. You create a @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} within 120 feet. In addition to the normal choices, you can make the wall up to 10 feet long and 60 feet high. The wall lasts until the end of your next turn, but you can Sustain it up to 1 minute.</p><hr /><p><strong>Level (+3)</strong> The damage increases by 1d6.</p>",
       "name": "Architect of Flame"
     },
     "Archwizard's Might": {
@@ -4551,7 +4551,7 @@
       "name": "Constant Levitation"
     },
     "Constricting Hold": {
-      "description": "<p><strong>Requirements</strong> Your eidolon has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<p>Your eidolon constricts the creature, dealing [[/r (@actor.level+@actor.abilities.str.mod)[bludgeoning]]]{bludgeoning damage} equal to your eidolon's level plus its Strength modifier, with a basic Fortitude save against your spell DC.</p>",
+      "description": "<p><strong>Requirements</strong> Your eidolon has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<p>Your eidolon constricts the creature, dealing @Damage[(@actor.level+@actor.abilities.str.mod)[bludgeoning]]{bludgeoning damage} equal to your eidolon's level plus its Strength modifier, with a basic Fortitude save against your spell DC.</p>",
       "name": "Constricting Hold"
     },
     "Construct Shell": {
@@ -5600,7 +5600,7 @@
       "name": "Defensive Instincts"
     },
     "Defensive Needles": {
-      "description": "<p>Your body is covered in sharp needles or spines which you can use to defend yourself. Each time you become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by a creature or an adjacent creature hits you with an unarmed attack, you twist and thrash your body around, dealing 2 piercing damage to that creature. This damage increases to 3 at 9th level, 4 at 13th level, and 5 at 17th level.</p>\n<p>[[/r (ceil(@actor.level/4))[piercing]]]{Leveled damage}</p>",
+      "description": "<p>Your body is covered in sharp needles or spines which you can use to defend yourself. Each time you become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by a creature or an adjacent creature hits you with an unarmed attack, you twist and thrash your body around, dealing 2 piercing damage to that creature. This damage increases to 3 at 9th level, 4 at 13th level, and 5 at 17th level.</p>\n<p>@Damage[(ceil(@actor.level/4))[piercing]]{Leveled damage}</p>",
       "featPrerequisites": {
         "0": "Cactus Leshy or Pine Leshy heritage"
       },
@@ -9478,7 +9478,7 @@
       "name": "Flinging Updraft"
     },
     "Floral Restoration": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You request that nearby plants share their vitality with you to replenish your body and magic. You regain 1 Focus Point and [[/r 4d8[healing]]] Hit Points.</p>\n<p>You must be in a location of at least 15 square feet with healthy plant life, though this can be grass, lichen, seaweed, or any other form of naturally occurring flora. Using Floral Restoration on a given section of nature does not harm it, but it prevents that section of nature from giving its vitality to another use of Floral Restoration for 24 hours.</p>\n<p>At 9th level, and every 2 levels thereafter, increase the healing by 1d8.</p>\n<p>@Damage[ceil(@item.level/2)d8]{Leveled Healing}</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You request that nearby plants share their vitality with you to replenish your body and magic. You regain 1 Focus Point and @Damage[ceil(@item.level/2)d8[healing]] Hit Points.</p>\n<p>You must be in a location of at least 15 square feet with healthy plant life, though this can be grass, lichen, seaweed, or any other form of naturally occurring flora. Using Floral Restoration on a given section of nature does not harm it, but it prevents that section of nature from giving its vitality to another use of Floral Restoration for 24 hours.</p>\n<p>At 9th level, and every 2 levels thereafter, increase the healing by 1d8.</p>",
       "featPrerequisites": {
         "0": "leaf order"
       },
@@ -12886,39 +12886,11 @@
       "name": "Invoke Disaster"
     },
     "Invoke The Elements": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You summon an aura of shimmering heat, flurrying snow, crashing waves, or swirling wind and lightning.</p>\n<p>For 1 minute, you gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} against creatures more than 5 feet away, and any creature that ends its turn within 5 feet of you suffers [[/r 1d12]] damage (basic Reflex save using your class DC or spell DC, whichever is higher). At 13th and 17th level, this damage increases by 1d12.</p>\n<p>A veil may changeling deals fire damage, a snow may changeling deals cold damage, a brine may changeling deals bludgeoning damage and the effect gains the water trait, and a virga may changeling deals electricity damage.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You summon an aura of shimmering heat, flurrying snow, crashing waves, or swirling wind and lightning.</p>\n<p>For 1 minute, you gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} against creatures more than 5 feet away, and any creature that ends its turn within 5 feet of you suffers @Damage[(ternary(gte(@actor.level,17),3,ternary(gte(@actor.level,13,2,1)))d12[@item.flags.pf2e.rulesSelections.changelingType]] damage (@Check[reflex|against:class-spell|basic] save using your class DC or spell DC, whichever is higher).</p>\n<p>At 13th and 17th level, this damage increases by 1d12.</p>\n<p>A veil may changeling deals fire damage, a snow may changeling deals cold damage, a brine may changeling deals bludgeoning damage and the effect gains the water trait, and a virga may changeling deals electricity damage.</p>",
       "featPrerequisites": {
         "0": "Brine May, Snow May, Veil May, or Virga May"
       },
       "name": "Invoke The Elements"
-    },
-    "Invoke The Elements (Brine May)": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You summon an aura of crashing waves.</p>\n<p>For 1 minute, you gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} against creatures more than 5 feet away, and any creature that ends its turn within 5 feet of you suffers @Damage[1d12[bludgeoning]] damage (@Check[reflex|against:class-spell|basic] save using your class DC or spell DC, whichever is higher).</p>\n<p>At @Damage[2d12[bludgeoning]]{13th} and @Damage[3d12[bludgeoning]]{17th} level, this damage increases by 1d12.</p>",
-      "featPrerequisites": {
-        "0": "Brine May"
-      },
-      "name": "Invoke The Elements (Brine May)"
-    },
-    "Invoke The Elements (Snow May)": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You summon an aura of flurrying snow.</p>\n<p>For 1 minute, you gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} against creatures more than 5 feet away, and any creature that ends its turn within 5 feet of you suffers @Damage[1d12[cold]] damage (@Check[reflex|against:class-spell|basic] save using your class DC or spell DC, whichever is higher).</p>\n<p>At @Damage[2d12[cold]]{13th} and @Damage[3d12[cold]]{17th} level, this damage increases by 1d12.</p>",
-      "featPrerequisites": {
-        "0": "Snow May"
-      },
-      "name": "Invoke The Elements (Snow May)"
-    },
-    "Invoke The Elements (Veil May)": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You summon an aura of shimmering heat.</p>\n<p>For 1 minute, you gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} against creatures more than 5 feet away, and any creature that ends its turn within 5 feet of you suffers @Damage[1d12[fire]] damage (@Check[reflex|against:class-spell|basic] save using your class DC or spell DC, whichever is higher).</p>\n<p>At @Damage[2d12[fire]]{13th} and @Damage[3d12[fire]]{17th} level, this damage increases by 1d12.</p>",
-      "featPrerequisites": {
-        "0": "Veil May"
-      },
-      "name": "Invoke The Elements (Veil May)"
-    },
-    "Invoke The Elements (Virga May)": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You summon an aura of swirling wind and lightning.</p>\n<p>For 1 minute, you gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} against creatures more than 5 feet away, and any creature that ends its turn within 5 feet of you suffers @Damage[1d12[electricity]] damage (@Check[reflex|against:class-spell|basic] save using your class DC or spell DC, whichever is higher).</p>\n<p>At @Damage[2d12[electricity]]{13th} and @Damage[3d12[electricity]]{17th} level, this damage increases by 1d12.</p>",
-      "featPrerequisites": {
-        "0": "Virga May"
-      },
-      "name": "Invoke The Elements (Virga May)"
     },
     "Invoke the Crimson Oath": {
       "description": "<p>You can invoke the Crimson Oath to unleash blasts of ruby energy from your weapon. You gain the @UUID[Compendium.pf2e.spells-srd.Item.AsKLseOo8hwv5Jha]{Invoke the Crimson Oath} focus spell. If you don't already have one, you gain a focus pool of 1 Focus Point, which you can regain using the Refocus activity to recite the Crimson Oath and meditate on its teachings; if you already have a focus pool, increase the number of Focus Points in your focus pool by 1. Your knight reclaimant focus spells are divine spells; when you gain this feat, you become trained in divine spell attacks and spell DCs. Your key spellcasting ability for these spells is Charisma.</p>",
@@ -21821,12 +21793,8 @@
       "name": "Solar Detonation"
     },
     "Solar Rejuvenation": {
-      "description": "<p>If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your [[/r (@actor.abilities.con.mod * floor(@actor.level/2))[healing]]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. Leshies whose plant nourishment does not rely on photosynthesis require a similarly suitable environment. For example, fungus leshies need dark, damp environments and a pile of decaying plant matter.</p>",
+      "description": "<p><strong>Ghoran</strong> - The warmth and light of the sun gives you life. If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your@Damage[(floor(@actor.level/2)*@actor.con.mod)[healing]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p>\n\n<p><strong>Leshy</strong> - If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your @Damage[(floor(@actor.level/2)*@actor.con.mod)[healing]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. Leshies whose plant nourishment does not rely on photosynthesis require a similarly suitable environment. For example, fungus leshies need dark, damp environments and a pile of decaying plant matter.</p>",
       "name": "Solar Rejuvenation"
-    },
-    "Solar Rejuvenation (Ghoran)": {
-      "description": "<p>The warmth and light of the sun gives you life. If you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your [[/r (floor(@actor.level/2)*@actor.con.mod)[healing]]]{Constitution modifier × half your level}. You gain this benefit in addition to any healing from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p>",
-      "name": "Solar Rejuvenation (Ghoran)"
     },
     "Solid Lead": {
       "description": "<p>Sometimes your case splinters into smaller mysteries, but you never lose sight of the big picture. Once per day when you give up on the subject of a lead due to using Pursue a Lead again, you can designate the lead you stopped pursuing as your solid lead for the day. Even though you stopped following the solid lead, you can change back to your solid lead any number of times by using a single action, which has the concentrate trait. Doing so ends one of your current leads as normal.</p>\n<p>During your next daily preparations, you can maintain your solid lead or you can remove it; removing it allows you to designate a new solid lead later that day.</p>",
@@ -26256,7 +26224,7 @@
       "name": "Vivacious Bravado"
     },
     "Vivacious Conduit": {
-      "description": "<p>Your connection to the First World has grown, and its vital energy flows into you rapidly. If you rest for 10 minutes, you regain Hit Points equal to your [[/r (@actor.abilities.con.mod*(floor(@actor.level/2)))[vitality,healing] #Vivacious Conduit]]{Constitution modifier × half your level}. This is a healing vitality effect and is cumulative with any healing you receive from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p>",
+      "description": "<p>Your connection to the First World has grown, and its vital energy flows into you rapidly. If you rest for 10 minutes, you regain Hit Points equal to your @Damage[(@actor.abilities.con.mod*(floor(@actor.level/2)))[vitality,healing]]{Constitution modifier × half your level}. This is a healing vitality effect and is cumulative with any healing you receive from @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}.</p>",
       "name": "Vivacious Conduit"
     },
     "Voice Cold as Death": {
