@@ -6159,7 +6159,7 @@
       "spellTarget": "1 living creature or 1 corpse that died within the last round"
     },
     "Shocking Grasp": {
-      "description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes [[/r (1d4+((@item.level)-1))[persistent,electricity]]] damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>",
+      "description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes @Damage[(1d4+((@item.level)-1))[persistent,electricity]] damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>",
       "name": "Shocking Grasp",
       "spellTarget": "1 creature"
     },
@@ -6404,7 +6404,7 @@
       "name": "Spell Turning"
     },
     "Spellmaster's Ward": {
-      "description": "<p>You create one or more glowing protective runes that revolve around you. For each additional action you use when Casting the Spell, increase the number of runes you create by one, to a maximum of three runes for 3 actions.</p>\n<p>When you next take damage from a spell, a rune is expended to prevent [[/r 2d6 + (@item.rank - 5)]] of that spell's damage. If damage from the triggering spell remains, additional runes are expended until the damage is completely negated, or until all runes have been spent, whichever comes first.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Each rune prevents an additional 1 damage.</p>",
+      "description": "<p>You create one or more glowing protective runes that revolve around you. For each additional action you use when Casting the Spell, increase the number of runes you create by one, to a maximum of three runes for 3 actions.</p>\n<p>When you next take damage from a spell, a rune is expended to prevent @Damage[2d6 + (@item.rank - 5)[untyped]] of that spell's damage. If damage from the triggering spell remains, additional runes are expended until the damage is completely negated, or until all runes have been spent, whichever comes first.</p><hr /><p><strong>Heightened (+1)</strong> Each rune prevents an additional 1 damage.</p>",
       "name": "Spellmaster's Ward",
       "spellTime": "1 to 3"
     },
