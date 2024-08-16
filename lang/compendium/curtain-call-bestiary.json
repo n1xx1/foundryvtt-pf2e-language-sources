@@ -1,5 +1,41 @@
 {
   "entries": {
+    "Agadaz": {
+      "description": "<p>Gambling devils, known also as agadazes, resemble horned humans crafted out of living gold in their natural forms, though their shapeshifting abilities let them move among mortals undetected. They're most commonly encountered in Erebus, the third layer of Hell, where many serve Mammon as accountants. They're unusually impulsive and distractible for their kind. Other devils often view their Risk Aura as a hindrance, so they usually receive less important missions. They don't mind, for it gives them more time to meddle with mortals.</p><h2>Heavy Footsteps</h2><p>Even when appearing in a humanoid guise, a gambling devil's body remains extremely dense and heavy, often weighing more than 500 pounds. Old gamblers' yarns warn to watch the footsteps of fellow gamblers and be wary of those whose tread seems disproportionate to their size, though in truth, all but the most careless gambling devils know how to step lightly in their humanoid forms.</p>",
+      "items": {
+        "1whEZNFCQZ4CKiT6": {
+          "name": "Games Lore"
+        },
+        "F8RTmdRmsiB3StH3": {
+          "name": "Thrown Coin"
+        },
+        "N4bcFmSjbrHFnCL8": {
+          "name": "Ill Omen (At Will)"
+        },
+        "OCPbnGGxOZI4GKPC": {
+          "name": "Fist"
+        },
+        "PP1a73w4zq2ppeeT": {
+          "description": "<p><strong>Trigger</strong> The agadaz attempts a Strike, saving throw, or skill check</p><hr /><p><strong>Effect</strong> The agadaz takes a –2 status penalty to the roll, then gains a +2 status bonus to the next Strike, saving throw, or skill check they attempt before the end of their turn, or before the end of their next turn if they used Double Down during another creature's turn.</p>",
+          "name": "Double Down"
+        },
+        "ULXJv8rgzPh8vlRK": {
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The agadaz has a free hand</p><hr /><p><strong>Effect</strong> The agadaz creates up to 5 gp in their hand. At any one time, an agadaz can possess no more than 20 gp created in this way; coins created in excess of this value vanish. A coin created in this way vanishes automatically 1 hour after leaving the devil's possession.</p>",
+          "name": "Produce Gold Coins"
+        },
+        "iULBe8CiHhYQFUum": {
+          "description": "<p>The agadaz adopts the appearance of any Small or Medium humanoid. This doesn't change their Speed or their attack and damage bonuses with their Strikes, but it might change the type of damage their Strikes deal.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "w8wKeoNsytzmig44": {
+          "name": "Accounting Lore"
+        },
+        "xZCulUxb6sXLOAkA": {
+          "description": "<p>30 feet. A feeling of recklessness surrounds a gambling devil. When a non-fiend creature enters the aura or begins its turn in the aura, it must attempt a @Check[will|dc:21] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Risk Aura for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The next time the creature rolls a d20, it must roll twice. If either roll is a natural 20, the creature uses that result; otherwise, it must take the lower of the two results.</p>\n<p><strong>Critical Failure</strong> As failure, but applies to all of the creature's d20 rolls as long as it remains in the aura.</p>",
+          "name": "Risk Aura"
+        }
+      },
+      "name": "Agadaz"
+    },
     "Anguish Siktempora": {
       "items": {
         "0sXFDVGfdCAv8LVk": {
@@ -49,6 +85,60 @@
       },
       "name": "Anguish Siktempora",
       "npcHp": "regeneration 40 (deactivated by mental, orichalcum, or spirit)"
+    },
+    "Animated Boiler": {
+      "description": "<p>This huge forge or oven is animated to protect a workspace or kitchen, travel alongside its owner, or both.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
+      "items": {
+        "0BvqGo4aw3xH9SrP": {
+          "description": "<p>The animated furnace opens its door and fans its flames in a @Template[type:cone|distance:30] that deals @Damage[9d6[fire]] damage (@Check[reflex|dc:40|basic] save).</p>",
+          "name": "Fan the Flames"
+        },
+        "4PoeVDwJBmmamd77": {
+          "description": "<p>The animated boiler attempts to Grab all adjacent creatures.</p>",
+          "name": "Hungry Gears"
+        },
+        "bJUdfd279JTmWONI": {
+          "name": "Door"
+        },
+        "iuA961D6giH9Ci1G": {
+          "description": "<p>Like normal objects, an animated furnace has Hardness. This Hardness reduces any damage the furnace takes by an amount equal to the Hardness. Once an animated furnace is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 40.</p>",
+          "name": "Construct Armor (Hardness 15)"
+        },
+        "veXylj85GdkPPrim": {
+          "description": "<p>Large, @Damage[(3d8+17)[fire]], Rupture 25</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+        }
+      },
+      "name": "Animated Boiler",
+      "npcAc": "(40 when broken); construct armor"
+    },
+    "Archway Barrier": {
+      "description": "<p>A shimmering field of force fills the carved wooden archway, beyond which a flight of stairs leads upward.</p>",
+      "hazardDisable": "<p>@Check[performance|dc:30] (expert) to perform the four aria lines (requires four successes), @Check[thievery|dc:41] (master) to deface one of the four carved images (requires four successes), disintegrate of any rank, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank, counteract DC 31) to counteract the barrier</p>",
+      "hazardReset": "<p>The harmonic barrier resets the instant after it is triggered.</p>",
+      "name": "Archway Barrier"
+    },
+    "Arshean Warden": {
+      "description": "<p>This divine warden serves Nethys, the neutral god of magic. It uses its divine gift to defend temples or shrines of @UUID[Compendium.pf2e.deities.Item.9EKyWmjLUu42evxC]{Nethys}.</p>\n<hr />\n<p>Created through complex rituals performed by a faith's adherents, divine wardens have been imbued with a fraction of the power that courses through a champion or cleric of a particular deity. This divine spark allows the divine warden to serve as the protector for a temple, shrine, or other holy site. Such guardians aren't intrinsically bound to a fixed location, but they rarely leave the temple or site over which they watch.</p>\n<p>Most divine wardens have been crafted from clay, stone, wood, or similar materials and typically have features that resemble a deity or a deity's herald. Divine wardens often have other abilities typically exhibited by constructs, such as armor plating, the ability to disguise themselves as statues, or other similar benefits.</p>\n<p>The faithful worshippers who craft divine wardens typically animate the constructs using a special ritual in which the followers beseech their deity to empower the guardian. The divine mandate that imbues a divine warden with power also allows the sentinel to recognize enemies of its deity and prevents the construct from attacking other members of the faith, unless these patrons choose to attack it first.</p>\n<p>In rare cases or particularly dire times, a deity might create a divine warden by directly animating an existing statue or idol to aid faithful followers. These divine guardians are most likely to be found outside of their original locations, assisting displaced congregations or pursuing those who might harm the faithful.</p>",
+      "items": {
+        "7NvFdNeBt7AssuX2": {
+          "description": "<p>@UUID[Compendium.pf2e.equipment-srd.Item.t5FbyZtRL4qV0V7k]{Flail}, <em>greater striking</em> rune</p><hr /><p>A divine warden always wields its patron deity's favored weapon. If the weapon is a ranged weapon, the divine warden automatically generates new ammunition with each attack. For a divine warden of 4th level or higher, the deity's favored weapon gains the effects of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.DxCuJKynlnMQZHgp]{Striking}</em> rune while the divine warden wields it; at 12th level, these effects are of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.KCQRFvUgbyclvOGi]{Greater Striking}</em> rune, and at 19th level, they're instead of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.woxl2FrrgAcJDu0t]{Major Striking}</em> rune.</p>",
+          "name": "Faithful Weapon"
+        },
+        "J3Ldbu2TKyrPVZBY": {
+          "name": "Instrument of Faith"
+        },
+        "MKArQIqeRcZmRwMf": {
+          "name": "Faith Bound"
+        },
+        "Px9k1rac0p4O9b4J": {
+          "name": "Fist"
+        },
+        "qppBAh5FNr8f4f2X": {
+          "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[12d6[vitality]] damage. Each creature in the area must attempt a @Check[will|dc:32|traits:damaging-effect] save with the following outcomes.</p><hr /><p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
+          "name": "Divine Destruction"
+        }
+      },
+      "name": "Arshean Warden"
     },
     "Augusta Wormwood": {
       "items": {
@@ -108,12 +198,31 @@
       },
       "name": "Azarpal"
     },
+    "Clockwork Looms": {
+      "description": "<p>The looms spring to life, sending skeins of spidersilk yarn between them that attempt to ensnare nearby creatures and pull them into the machinery.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:46] (master) to shut down all eight looms at once by activating either of the bypass locks once either lock is located (this check is automatically successful if Fenton's keys are used), @Check[thievery|dc:37] (master) twice to shut down a single loom by deftly removing critical components, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank, counteract DC 33) to counteract a single loom</p>",
+      "hazardReset": "<p>A loom deactivates if no Small or larger creatures are in area <strong>C6</strong>, resetting in 1 minute unless disabled or all looms are broken.</p>",
+      "hazardRoutine": "<p>(1 action) Each loom takes one of two possible actions on its turn, depending on if it's currently restraining a creature or not.</p><p><strong>Not Restraining a Creature:</strong> If a loom isn't restraining a creature, it launches a tangle of yarn at a random creature in the room that isn't currently @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. That creature must attempt a @Check[reflex|dc:37] save. If there are no non-restrained targets for the loom to attempt to grapple, it takes no actions this round.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature is entangled, and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of the looms' next turn.</p><p><strong>Failure</strong> The creature is tangled in the yarn and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} until the end of the loom's next turn—or if it already has the clumsy condition, it becomes restrained (see critical failure).</p><p><strong>Critical Failure</strong> The creature becomes restrained. A restrained creature can @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} the tangle of yarn or @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} with a DC 37 check.</p><p><strong>Restraining a Creature:</strong> If a loom has restrained a creature, it instead fires more lines of yarn at the restrained creature and then drags that creature (if the creature is Medium or smaller) 20 feet toward itself. (If it's restraining a Large or larger creature, it can only drag the creature 5 feet toward itself). If this dragging causes a creature to become adjacent to the loom, the loom pulls the creature into its grinding gears and inflicts @Damage[5d12[bludgeoning],5d12[slashing]] damage to the creature (@Check[reflex|dc:37|basic] save). The creature is then placed in an adjacent square and is still restrained by that loom.</p>",
+      "name": "Clockwork Looms"
+    },
     "Cruel Welcome": {
       "description": "<p>A loved one, tied to a post with thick ropes, suddenly lurches to life and begins to shriek in anguish as soon as one of the PCs comes within 20 feet.</p>",
       "hazardDisable": "<p>@Check[thievery|dc:31] (expert) to remove the small runes carved on the pole that focus the magic, or @Check[occultism|dc:28] (trained) to recognize the occult illusions woven into the trap and disable the underlying magic</p>",
       "hazardReset": "<p>A cruel welcome trap resets at midnight.</p>",
       "hazardRoutine": "<p>(1 action; illusion, mental, occult, visual) The cruel welcome's head lifts, and it gazes at the closest PC within 20 feet; if there are no PCs in range, the trap does nothing, its turn ends, and it deactivates until midnight. The target must attempt a @Check[will|dc:26|traits:illusion,mental,occult,visual] save.</p><hr><p><strong>Critical Success</strong> The PC is unaffected. For the next 24 hours, the PC gains a +4 circumstance bonus to all saving throws against cruel welcome traps.</p><p><strong>Success</strong> The PC recognizes the face of the tormented figure on the pole as that of a loved one, and the anguish of the sight results in @Damage[4d10[mental]] damage. For the next 24 hours, the PC gains a +4 circumstance bonus to all saving throws against cruel welcome traps.</p><p><strong>Failure</strong> As success, but @Damage[(4d10+22)[mental]] damage.</p><p><strong>Critical Failure</strong> As failure, but @Damage[(8d10+44)[mental]] damage, and the PC becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours.</p>",
       "name": "Cruel Welcome"
+    },
+    "Distortion Circle": {
+      "description": "<p>A softly flickering circle of runes pulses and periodically distorts the air above it before a raw red wound in reality splits open to disgorge demons and lash out with tendrils of acidic blood.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:47] to erase key runes from the circle, defeat all four summoned demons in combat, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank, counteract DC 36)</p>",
+      "hazardReset": "<p>The distortion circle deactivates (and any summoned demons vanish) at the end of any round in which no viable targets for the tongue to attack are in area <strong>C10</strong>. The trap then immediately resets (and is ready to summon a new batch of four demons).</p>",
+      "hazardRoutine": "<p>(1 action) On its initiative, the trap extends a tongue-like appendage covered with sharp teeth. The tongue snaps like a whip, firing a volley of sharp teeth at a non-demon target in the room. The trap can precisely sense the location of all viable targets in the room, and teeth fired from the tongue penetrate the many wooden shelves (although a character with at least one shelf between it and the trap gains greater cover).</p>",
+      "name": "Distortion Circle"
+    },
+    "Diva's Door": {
+      "description": "<p>A loud aria in a soaring tenor issues from the door, sending soundwaves outward.</p>",
+      "hazardDisable": "<p>@Check[performance|dc:38] (legendary) to cancel out the aria's soundwaves with another, @Check[thievery|dc:43] (master) to pick apart the arcane energies, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank, counteract DC 36) to counteract the trap</p>",
+      "name": "Diva's Door"
     },
     "Emriss": {
       "description": "<p>The highest position of authority in a girtablilu community is the group's religious leader. This sacred duty requires years of study, meditation, and dedication to awaken a mystical font of divine magic within the girtablilu. These seers ensure that every action taken by the community falls in line with even the most obscure dogma of their tradition, and they don't hesitate to turn their fury on members of their own community who violate their mandates.</p>\n<hr />\n<p>Girtablilus are desert-dwelling guardians with the upper bodies of muscular humanoids and the lower bodies of massive scorpions. They are most often found defending ancient temples and religious artifacts with zealous fervor. Some believe they were created by a long-dead god millennia ago to act as guardians, but girtablilus consider the subject of their origin taboo and refuse to address the theory.</p>\n<p>Because girtablilus accept a wide range of religions and belief systems, some outsiders believe they also worship their own ancient pantheon. Instead, girtablilus exclusively revere and protect sites dedicated to deities considered lost to civilization. In this way, they act as preservers of holy practices that have otherwise been forgotten beneath the desert's shifting sands.</p>\n<p>Though girtablilus are used to explorers seeking entrance to the sites they defend, they might welcome those who earnestly wish to learn or offer reverence. A few even proudly share their beliefs with others, eager for the opportunity to preach to someone new. But girtablilus show no mercy to those who attempt to desecrate the sites and objects of their worship, or to those who would violate the tenets of their faith.</p>\n<p>Girtablilus are skilled fighters who keep trained giant scorpions as pets, and they remain unmatched when it comes to fighting in the desert. They require relatively little food or water, and they rely on their stamina to outlast their enemies. When necessary, they can stalk their quarry for days or even weeks, coordinating with their pets to drive their prey in circles. Once exhausted, few foes can stand up to a girtablilu's physical prowess-or their deadly venom.</p>",
@@ -144,6 +253,37 @@
         }
       },
       "name": "Emriss"
+    },
+    "Facade": {
+      "items": {
+        "0A0XYTjUwDusiFri": {
+          "description": "<p><strong>Requirements</strong> Facade's previous action was to Constrict a creature</p><hr /><p><strong>Effect</strong> Facade encases the creature they just Constricted with wax. That creature becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until it takes a 3-action activity to Interact with the wax and peel it off.</p>",
+          "name": "Encase in Wax"
+        },
+        "6otPsWbNgibD0j6d": {
+          "description": "<p>Facade removes persistent bleed damage on a DC 10 flat check (DC 5 with aid).</p>",
+          "name": "Construct Heart"
+        },
+        "hq2Jqy3XLICXZ2Oa": {
+          "name": "Fist"
+        },
+        "oTlxzIW9kTpN46ES": {
+          "description": "<p>@Damage[(2d10+14)[bludgeoning]], @Check[fortitude|dc:38|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "pb4NzDOTZs4wAjGz": {
+          "description": "<p><strong>Trigger</strong> Facade Strikes a creature they've assumed the basic appearance of</p><hr /><p><strong>Effect</strong> s The damaged creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit).</p>",
+          "name": "Unsettle"
+        },
+        "utRJPEiSkvQcksN8": {
+          "description": "<p>Facade changes their appearance to be similar to any Medium humanoid creature they've seen, though they're still obviously a wax statue and can't use this ability to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} that creature.</p>",
+          "name": "Remake Self"
+        },
+        "z5hfa69xyAwfiKtw": {
+          "name": "+2 Vs. Death Effects, Disease, Poison, and Effects Causing the Fatigued or Sickened Conditions"
+        }
+      },
+      "name": "Facade",
+      "npcAllSaves": "+2 vs. death effects, disease, poison, and effects causing the fatigued or sickened conditions"
     },
     "Fallenta": {
       "items": {
@@ -179,6 +319,81 @@
         }
       },
       "name": "Fallenta"
+    },
+    "Fenton Vilorgo": {
+      "items": {
+        "3J4xqxmUmLDNnRxM": {
+          "_source": "pf2e.equipment-srd.Item.nYrOmi22AN0XDtCO"
+        },
+        "59ihxEI5Kyyrd4yP": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Wand of Translocate (Rank 5)"
+        },
+        "7WzHh9VI2KBgw9Wk": {
+          "description": "<p>Fenton causes Facade to appear in an open adjacent space. Facade can then take a single action. If Facade is already manifested, they're instead unmanifested. Facade must remain within 100 feet of Fenton at all times; if forced beyond this distance (or if Fenton is reduced to 0 Hit Points), Facade unmanifests.</p>",
+          "name": "Manifest Facade"
+        },
+        "AsNtzCb78e1aJIr8": {
+          "description": "<p>Fenton is one of Norgorber's favored murderers, and as such, he's been granted a major boon. He's immune to divination effects and attempts to magically alter his memory, unless he chooses to be affected or those effects come from a deity or similarly powerful source. He can never be tricked or forced by mundane means into uttering a secret he wishes to keep.</p>",
+          "name": "Living Secret"
+        },
+        "DYkd4tRutFVMd6Ee": {
+          "name": "Theater Lore"
+        },
+        "KZVZCbWiW6cdjapM": {
+          "name": "Ring of Keys"
+        },
+        "N0DumoKrTlz3dMGP": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.XZE4BawIlTf88Yl9]{Planar Seal}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Wand of Planar Seal (Rank 7)"
+        },
+        "RfgyBEzWrfvsSL2b": {
+          "description": "<p>Fenton projects his senses into Facade, allowing him to perceive through his eidolon. When he does, he loses all sensory information from his own body but can sense through Facade's body for up to 1 minute. Fenton can Dismiss this effect.</p>",
+          "name": "Share Senses"
+        },
+        "d62fMcmxkCmKMNAh": {
+          "description": "<p>Fenton deals 3d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        }
+      },
+      "name": "Fenton Vilorgo"
+    },
+    "Fenton's Faithful": {
+      "description": "<p>Teleportation magic can prove a difficult undertaking, even for experienced spellcasters. It requires precise calculation and timing, knowledge of the intended destination, and meticulous control over surging conjuration magics. A mistake in even the most minute element of such a spell can lead to disastrous results for those involved. When a particularly powerful spellcaster makes an error of this kind, either through arrogance or simple misjudgment, they might transform into an amalgamite.</p>\n<p>A mass of flesh and misaligned limbs, an amalgamite is the warped body of a former spellcaster, sometimes joined with another version of itself to incorporate additional limbs or other irregularities. They're still alive, but they have become aberrants mentally and physically, with only the vaguest memories of their previous existence, which makes them a dangerous and bewildering foe. Their weird, warped anatomy constantly shifts and regrows, allowing the creatures to shrug off physical blows save those that pierce through its flesh and into its core being.</p>\n<p>The magical residue of an amalgamite's creation radiates from it, seeping into and destabilizing any living beings that get too close. Infected creatures then further spread the amalgamite's aura among larger groups of allies and foes alike. The amalgamite uses this power to manipulate and confuse their enemies, whom they can teleport into traps, force into confrontations with other enemies, or draw close into striking range with their own odd appendages.</p>",
+      "items": {
+        "6Jhrih75LDb7Tovl": {
+          "name": "Warping Ray"
+        },
+        "REbcJzGp6sT7jOuZ": {
+          "name": "Limb"
+        },
+        "XBz2toYQ5LlpBAkp": {
+          "description": "<p>The amalgamite chooses up to two destabilized creatures they can see within 50 feet and swaps their positions, or moves a single such creature to an unoccupied space they can see within range. If the amalgamite chooses two creatures, they can choose their self as one of these creatures, but both targets must be the same size.</p>\n<p>An unwilling creature can attempt a @Check[will|dc:33] save. If either target succeeds at this saving throw, both are unaffected.</p>",
+          "name": "Transpose"
+        },
+        "bpvnWZi8sukcfy9H": {
+          "description": "<p><strong>Trigger</strong> The amalgamite is hit by a Strike.</p>\n<hr />\n<p><strong>Effect</strong> The amalgamite Repositions itself or Transposes itself with another creature. If the amalgamite successfully changes its location, it and any Transposed creature take half damage from the triggering Strike.</p>",
+          "name": "Displace"
+        },
+        "dwH6nJY0Yb3I4jsA": {
+          "description": "<p>The amalgamite teleports into an unoccupied space it can see within 50 feet.</p>",
+          "name": "Reposition"
+        },
+        "l3jfx3kqLx8tFPRr": {
+          "name": "Vision of Death (Causes Those Who are Affected to Believe They're Being Turned Inside Out)"
+        },
+        "rGx3BT8mbRKRUpA2": {
+          "description": "<p>40 feet. A creature that begins its turn within the area feels its body begin to stretch and must succeed at a @Check[fortitude|dc:33] save or become destabilized.</p>\n<p>A destabilized creature emits a 10-foot destabilizing field aura and becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. The destabilization ends when the creature is no longer sickened.</p>\n<p>A creature that succeeds at its saving throw against the aura is temporarily immune to all destabilizing fields for 1 minute.</p>",
+          "name": "Destabilizing Field"
+        },
+        "rU17t3NM7TJ3u03o": {
+          "name": "Regeneration 10 (Deactivated by Piercing)"
+        },
+        "xFzHJGL72aPpRLgB": {
+          "name": "Lore (Any One Subcategory)"
+        }
+      },
+      "name": "Fenton's Faithful",
+      "npcHp": "Regeneration 10 (deactivated by piercing)"
     },
     "Furnerico": {
       "description": "<p>A mass of undulating tendrils and nerves, furnericos stalk sewer systems below large cities, reveling in the filth and rotting detritus created by those who dwell above the middens and sumps they call home. Fortunately for sanitation workers and other civil servants who ply their trade in sewer tunnels, furnericos are exceedingly rare and solitary. Their power is such that once one moves into a sewer system, it's often easier for urban planners to simply abandon that section to the monster and rebuild around it. A furnerico left to its domain like this is generally content to remain—as long as the filth keeps flowing.</p>\n<p>Furnericos are asexual, spawning a single offspring as they expire from natural causes. One that dies by violence does not perpetuate its kind, presenting a vexing question to sages: where do these creatures come from, and why haven't they gone extinct over the ages?</p><h2>Cultist Creations</h2><p>The answer to \"where are furnericos from?\" is known by only a few, for it lies with the faithful of the parasite god Ghlaunder. These cultists use obscure rites to create furnericos from the very filth the monsters wallow in. Ghlaunder worshippers often do so to create powerful guardians for their hidden temples; furnericos created in this manner instinctively treat worshippers of Ghlaunder as allies... a trait not shared by those born from a prior furnerico, and a lesson many Ghlaunder cultists only learn moments before their death after assuming otherwise from a furnerico found in the wild.</p>",
@@ -264,6 +479,66 @@
       },
       "name": "Girtablilu Sentry"
     },
+    "Grandmama": {
+      "description": "<p>The loquacious proteans known as imenteshes serve as missionaries, spies, and heralds of chaos to further the protean goal of reality's dissolution. Imenteshes are cunning, curiously diplomatic, and profoundly whimsical. They travel beyond the Maelstrom for their work, frequently adopting extravagant personal attire and decorations that often border upon the garish, all to curry favor with less chaotic beings.</p>",
+      "items": {
+        "4fUKQrOX75rYdFV8": {
+          "description": "<p>An imentesh can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the imentesh the ability to sense creatures within the listed range. A creature under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that is otherwise shielded from divination and prediction cannot be noticed via entropy sense.</p>",
+          "name": "Entropy Sense"
+        },
+        "8qYHl9oKTV79IZ6r": {
+          "description": "<p>@Damage[(1d10+11)[bludgeoning]] damage, @Check[fortitude|dc:29|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "9FcMZnkENPj4z3q0": {
+          "description": "<p>Any creature struck and damaged by an imentesh's jaws Strike must succeed at a @Check[fortitude|dc:29] save or be subject to a warpwave.</p>",
+          "name": "Warpwave Strike"
+        },
+        "ERoYflv6bErPQNP2": {
+          "name": "Tail"
+        },
+        "HAxp8tP3tYXocejD": {
+          "name": "Claw"
+        },
+        "IukwgU6DfXFrQy49": {
+          "description": "<p>An imentesh inflicts a warpwave on a creature within 100 feet (@Check[fortitude|dc:29] save to resist).</p>",
+          "name": "Inflict Warpwave"
+        },
+        "KTc5frqwQnvcjRY9": {
+          "_source": "pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
+        },
+        "UVvsMOpzGvjOBeG1": {
+          "description": "<p>An imentesh's vital organs shift and change shape and position constantly. Immediately after the imentesh takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first.</p>\n<p>The imentesh is immune to polymorph effects unless it is a willing target. If @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, the imentesh automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>",
+          "name": "Protean Anatomy 15"
+        },
+        "Wpkj3AhKzhyOjozJ": {
+          "name": "Truespeech (Constant)"
+        },
+        "XaAIKVkn76K7fFFS": {
+          "description": "<p>The imentesh takes the appearance of any Large or smaller creature. This doesn't change its Speed or its attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "dEiJsJoECS4hvDnB": {
+          "description": "<p>An imentesh's Strikes deal an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets.</p>"
+        },
+        "ed300vUjktB7yhD7": {
+          "name": "Fast Healing 5"
+        },
+        "oX2eoPg4p3UoxhiP": {
+          "name": "Translocate (At Will)"
+        },
+        "uDrkrfwjoPByW5Zs": {
+          "description": "<p>Many proteans can subject their foes to disorienting alterations perceived in time and space by creating ripples of unstable reality in the environment called warpwaves.</p>\n<p>When a creature fails its saving throw and is affected by a warpwave, roll [[/r 1d8]] and consult the table below for the specific effect on that creature.</p>\n<p>Unless indicated otherwise, a warpwave effect lasts for [[/br 1d4 #rounds]]{1d4 rounds}, and a new warpwave effect negates any previous warpwave effect already affecting a creature.</p>\n<hr />\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>d8</th>\n<th>Warpwave Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} on a critical failure)</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and gains [[/r 4d6 #Temporary Hit Points]]{4d6 temporary Hit Points}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (permanent on a critical failure)</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} on a critical failure)</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by filaments of energy</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} (Stride, Strike, or Step only)</td>\n</tr>\n<tr>\n<td>7</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</td>\n</tr>\n<tr>\n<td>8</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure)</td>\n</tr>\n</tbody>\n</table>",
+          "name": "Warpwaves"
+        },
+        "vjlVktJZOqbt2cHt": {
+          "name": "Unfettered Movement (Constant)"
+        },
+        "wWilHEuB4DGYHQdO": {
+          "name": "Jaws"
+        }
+      },
+      "name": "Grandmama",
+      "npcAllSaves": "+1 status to all saves vs. magic"
+    },
     "Graverobber": {
       "items": {
         "NdlQ8TUjFDixDeoP": {
@@ -282,6 +557,12 @@
         }
       },
       "name": "Graverobber"
+    },
+    "Harmonic Barrier": {
+      "description": "<p>Every potential point of entry to the house, whether window or door, is covered with a barrier of sonic energy that prevents passage, visible as a faintly shimmering energy field.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:38] (expert) to remove the barrier from a single window or exterior door, @Check[occultism|dc:38] (master) to manipulate the harmonics in a way that disrupts the entire barrier (four successes are required to disable it), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank, counteract DC 31) to counteract the barrier from a single window or exterior door</p>",
+      "hazardReset": "<p>The harmonic barrier resets the instant after it's triggered.</p>",
+      "name": "Harmonic Barrier"
     },
     "Hellshadow": {
       "description": "<p>When a group of diabolists or worshippers of an archdevil come to an ignominious end, their souls can sometimes be caught between life and death, unable or unwilling to pass on to the afterlife due to the humiliation of their untimely deaths. When enough closely-associated worshippers whose souls aren't already claimed in existing contracts meet such a fate, the spiritual \"weight\" of this shame can cause them to merge into a conglomeration of infernally-infused spirits—a hellshadow.</p>\n<p>Hellshadows look like a bank of fire and smoke, yet the flames themselves are made of distorted bodies and faces. Although made of multiple souls, a hellshadow is a singular creature with one mind and typically one goal: to defeat as many enemies of their faith as they can in order to repay the shame of their humiliating deaths.</p><h2>Why Only Hell?</h2><p>The nature of diabolic worship and the strict rules involved are a big part of the psychology of humiliation that causes devil worshippers to become hellshadows. This same mix of conditions is rarer among other fiendish cults, who are more likely to become more common undead after such a death. Non-diabolic– themed hellshadows are all but unknown as a result.</p>",
@@ -325,6 +606,208 @@
       },
       "name": "Honor Guard"
     },
+    "Izhkarial": {
+      "description": "<p>Brine dragons are usually blue-green in color, with shiny scales, crests that help them glide through the water, and sweeping neck frills. They care little for either good or evil. As they are both opinionated and willing to impose their sense of order on others, many brine dragons eventually seek to rule over a meticulously crafted community. These communities are orderly and well-planned, with rigid standards of courtesy and unchanging laws set down by the dragon themself. A settlement seeded by a brine dragon can be made of members of almost any ancestry, but the most common inhabitants are humans, merfolk, tengus, or sahuagin.</p>\n<p>Depending on the dragon's personality, their community members might view their brine dragon ruler as anything from a benevolent force of order to a fearful tyrant. Regardless, the typical brine dragon has little patience for kindness or philanthropy, and the strength and health of their settlement as a whole are of greater concern than individuals' well-being. A notable exception to this dispassion rises when an outside force encroaches on their lands. In these cases, the brine dragon is quick to step in and aid in the defense of their community.</p>\n<p>Although brine dragons enjoy cultivating settlements, they rarely make their lairs within the city limits, instead preferring to dwell in sea caves or cliffside grottoes overlooking the coastline. Here they can retreat for privacy as needed, or can accumulate and display their gathered wealth in a place where they feel safe spreading out their treasures. Brine dragon hoards often consist of a mix of offerings and taxes paid by those they rule over and strange discoveries salvaged from sunken ships.</p>",
+      "items": {
+        "2IZWaM2O4amLWbye": {
+          "description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>",
+          "name": "Draconic Frenzy"
+        },
+        "8BGsf6kEIrCtKGgo": {
+          "_source": "pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
+        },
+        "8sphOZAnVIS4eVZ6": {
+          "name": "Wing"
+        },
+        "CSHQvYrfiR0GmczO": {
+          "description": "<p><strong>Trigger</strong> A creature the brine dragon observes within 30 feet uses a concentrate action</p><hr /><p><strong>Effect</strong> The dragon spits a glob of caustic salt water at the creature. The creature takes @Damage[6d6[acid]] damage (@Check[reflex|dc:34|basic] save). On a failure, the concentrate action is disrupted.</p>",
+          "name": "Brine Spit"
+        },
+        "GWbkONUjqsTF8hP7": {
+          "name": "Claw"
+        },
+        "KtjrcbTPGagKVhSc": {
+          "description": "<p>The dragon makes a jaws Strike. On a hit, the target takes @Damage[5d6[persistent,acid]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} from the pain of salt and brine in its wounds.</p>",
+          "name": "Desiccating Bite"
+        },
+        "Pxxr235CKBdgLZ6y": {
+          "name": "Jaws"
+        },
+        "UhvFPC9vfo5Yz68q": {
+          "name": "Mist (At Will)"
+        },
+        "c19tAQpDeptWNyHM": {
+          "name": "Hydraulic Push (At Will)"
+        },
+        "gPCpNSHZ6SvXUhij": {
+          "description": "<p>The brine dragon's body is encrusted with salty, acidic crystals. When a target takes damage from one of the dragon's melee Strikes, it must succeed at a @Check[fortitude|dc:38] Save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). The target then becomes temporarily immune for 1 minute.</p>",
+          "name": "Painful Strikes"
+        },
+        "gozNFecLMRX00Wzz": {
+          "description": "<p>90 feet. @Check[will|dc:34]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+        },
+        "nceXlZk44iBehzvl": {
+          "name": "Tail"
+        },
+        "oMj0SiABPgORm6t3": {
+          "description": "<p>Izhkarial breathes a spray of acidic salt water that deals @Damage[17d6[acid]] damage in a @Template[type:line|distance:120] (@Check[reflex|dc:37|basic] save). She can't use Brine Breath again for [[/gmr 1d4 #Recharge Brine Breath]]{1d4 rounds}.</p>",
+          "name": "Brine Breath"
+        },
+        "qV74gNViCaiEVUy2": {
+          "description": "<p>The dragon tries to capsize an adjacent aquatic vessel of their size or smaller. They must succeed at an Athletics check with a DC of 35 (reduced by 5 for each size smaller the vessel is than the dragon) or the pilot's Sailing Lore DC, whichever is higher.</p>",
+          "name": "Capsize"
+        },
+        "xJOBW00PxizZ4M8X": {
+          "description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>",
+          "name": "Draconic Momentum"
+        }
+      },
+      "name": "Izhkarial",
+      "npcAllSaves": "+1 status to all saves vs. magic"
+    },
+    "Jorogumo Disciple": {
+      "description": "<p>Appearing as beautiful, well-dressed humans, jorogumo lurk in the high mountains and prey on travelers. These evil creatures can fully change into a giant spider or sprout spider legs from their backs, and they often keep giant spiders as pets. Jorogumo usually eat their prey, but some humanoids meet an even more gruesome fate as living incubators for jorogumo eggs. Though most jorogumos are solitary creatures, some have taken up worship of Norgorber and serve as valuable allies to thieves' guilds following that god's guise as the Gray Master.</p>",
+      "items": {
+        "0I6v0cnEMPvM6kMJ": {
+          "description": "<p>The jorogumo's Strikes deal an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "1oaW8giaBWtlqk7S": {
+          "name": "Truespeech (Constant)"
+        },
+        "34yAb411T3yPWYAp": {
+          "description": "<p><strong>Requirements</strong> The jorogumo has their spider legs extended or has Changed Shape</p>\n<p><strong>Trigger</strong> The jorogumo is targeted with an attack</p>\n<hr />\n<p><strong>Effect</strong> The jorogumo raises a leg, gaining a +2 circumstance bonus to AC against the triggering attack.</p>",
+          "name": "Darting Legs"
+        },
+        "FLY1h37SM1s6HQ3K": {
+          "description": "<p>A creature hit by the jorogumo's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface, preventing the creature from moving.</p>\n<p>The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} or @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} the web trap is 37.</p>",
+          "name": "Web Trap"
+        },
+        "OgCJWnkW9sXyySH8": {
+          "name": "Mind Reading (At Will)"
+        },
+        "ZdU50M1GyvoXelBw": {
+          "name": "Summon Animal (Spiders Only)"
+        },
+        "eumeADruqpAodJIw": {
+          "name": "Speak with Animals  (Spiders Only, Constant)"
+        },
+        "h8UYIVYJvZxviPCt": {
+          "name": "Web"
+        },
+        "jd3HtosBbbWGDYMZ": {
+          "description": "<p><strong>Requirements</strong> The jorogumo is in humanoid form</p>\n<hr />\n<p><strong>Effect</strong> Eight large spider legs sprout from the jorogumo's back, granting them a 40-foot climb Speed and allowing them to use the Darting Legs reaction.</p>",
+          "name": "Spider Legs"
+        },
+        "jnPwDZEoWvaBHihS": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p><hr /><p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for [[/br 1d4 #Duration Paralyzed]]{1d4 hours}</p>",
+          "name": "Jorogumo Venom"
+        },
+        "l5yBcIQg99JYg1Xx": {
+          "name": "Charm (At Will)"
+        },
+        "lj6vRNNZwXQmeqG7": {
+          "name": "Claw"
+        },
+        "pIoRWbV6ahXe5lvR": {
+          "description": "<p>The jorogumo takes on the appearance of any Small or Medium spider. This doesn't change their Speed or Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "rXKR8tn1tmh9DdJ3": {
+          "name": "Jaws"
+        },
+        "tcqmprclkPCjJjdm": {
+          "description": "<p>When the jorogumo disciple successfully Strikes an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creature with their jaws, that creature takes a –2 circumstance penalty to its initial save against the poison.</p>",
+          "name": "Skilled Poisoner"
+        }
+      },
+      "name": "Jorogumo Disciple"
+    },
+    "Karumzek Priest (Dispel Magic)": {
+      "items": {
+        "CZj3dIQRdRN7FYzo": {
+          "name": "Planar Keys"
+        },
+        "ObeK7F3l0mdLmKCr": {
+          "name": "Invisibility (At Will, Self Only)"
+        },
+        "TRW2LxEVsWKp9diY": {
+          "description": "<p>A karumzek can take the shape of a Tiny spider. This doesn't change its Speed or Strikes.</p>"
+        },
+        "UmtbGWVFwlH3YJfo": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Wand of Dispel Magic (Rank 7)"
+        },
+        "eezf25m1slduyc4d": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison],1d6[spirit]], and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison],2d6[spirit]], @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and enfeebled 1 (1 round)</p>",
+          "name": "Karumzek Venom"
+        },
+        "nhtizhzj0fgf8qpu": {
+          "name": "Bite"
+        },
+        "tew93zc38tdbtkse": {
+          "description": "<p>A karumzek senses any poisoned creature. It can spend an action with the concentrate trait to determine the poison's type and current stage.</p>",
+          "name": "Poison Sense (Precise) 30 feet"
+        }
+      },
+      "name": "Karumzek Priest (Dispel Magic)"
+    },
+    "Karumzek Priest (Divine Immolation)": {
+      "items": {
+        "CZj3dIQRdRN7FYzo": {
+          "name": "Planar Keys"
+        },
+        "ObeK7F3l0mdLmKCr": {
+          "name": "Invisibility (At Will, Self Only)"
+        },
+        "TRW2LxEVsWKp9diY": {
+          "description": "<p>A karumzek can take the shape of a Tiny spider. This doesn't change its Speed or Strikes.</p>"
+        },
+        "eezf25m1slduyc4d": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison],1d6[spirit]], and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison],2d6[spirit]], @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and enfeebled 1 (1 round)</p>",
+          "name": "Karumzek Venom"
+        },
+        "nhtizhzj0fgf8qpu": {
+          "name": "Bite"
+        },
+        "pPMRdgxbwy7qDfqX": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.A16eFTRh82xIjMu8]{Divine Immolation}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Wand of Divine Immolation (Rank 7)"
+        },
+        "tew93zc38tdbtkse": {
+          "description": "<p>A karumzek senses any poisoned creature. It can spend an action with the concentrate trait to determine the poison's type and current stage.</p>",
+          "name": "Poison Sense (Precise) 30 feet"
+        }
+      },
+      "name": "Karumzek Priest (Divine Immolation)"
+    },
+    "Karumzek Priest (Eclipse Burst)": {
+      "items": {
+        "CZj3dIQRdRN7FYzo": {
+          "name": "Planar Keys"
+        },
+        "ObeK7F3l0mdLmKCr": {
+          "name": "Invisibility (At Will, Self Only)"
+        },
+        "TRW2LxEVsWKp9diY": {
+          "description": "<p>A karumzek can take the shape of a Tiny spider. This doesn't change its Speed or Strikes.</p>"
+        },
+        "eezf25m1slduyc4d": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison],1d6[spirit]], and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison],2d6[spirit]], @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and enfeebled 1 (1 round)</p>",
+          "name": "Karumzek Venom"
+        },
+        "nhtizhzj0fgf8qpu": {
+          "name": "Bite"
+        },
+        "tew93zc38tdbtkse": {
+          "description": "<p>A karumzek senses any poisoned creature. It can spend an action with the concentrate trait to determine the poison's type and current stage.</p>",
+          "name": "Poison Sense (Precise) 30 feet"
+        },
+        "xGQb6LrZYt9mBHyG": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.0jadeyQIItIuRgeH]{Eclipse Burst}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Wand of Eclipse Burst (Rank 7)"
+        }
+      },
+      "name": "Karumzek Priest (Eclipse Burst)"
+    },
     "Living Nightmare": {
       "description": "<p>An animate dream coalesces from centuries of stray fragments of reverie and dream left behind as slumbering minds drift through the Dimension of Dreams. In most cases, these fragments simply disperse on their own, but when dreamers flee from nightmares back to the waking world, these fragments can take on a supernatural life of their own. They have little reasoning and intent except to seek similar fragments, absorb them, and grow. When enough of them gather together, they merge into a horrific form as an animate dream.</p>\n<p>Individually, animate dreams can hold a wide range of appearances, but most take on rudimentary shapes akin to the living forms of the minds that spawned them. Animate dreams that rise from slumbering humanoids, the most commonly encountered, thus appear humanoid, but with distorted, nightmarish shapes that incorporate additional twisted limbs and frightening features. In these forms, animate dreams find their way out of the Dreamlands and into the waking world, only to discover they have no way of returning and suffer a relentless hunger that only new nightmares can sate.</p>\n<p>An animate dream thrives on the terror fueled by nightmares and fear and uses its supernatural abilities to invoke such feelings in the minds of its victims, cursing its prey by creating a permanent link to that individual's dreams. Thereafter, the victim is subjected to all manner of reoccurring nightmares. As the nightmares continue, the victim finds it more and more difficult to remain awake. In the end, the victim plunges into an accursed slumber from which it cannot return. These victims provide the animate dream with the purest form of fear and are its preferred sustenance.</p>\n<p>An animate dream can subsist on the ambient fear generated by regular nightmares, but these lesser fears aren't as satisfying, often driving the animate dream to seek out new victims. Left without a source of fear, an animate dream won't starve to death, but it will grow increasingly violent and desperate. Famished animate dreams are the ones most often encountered, as they have been forced to abandon subtlety to pursue more blatant methods of harvesting fear. Yet such animate dreams also tend to be the least powerful of their kind. Those who have grown metaphysically fat on fear have generally done so by adopting a specific nightmare theme, such as being buried alive, being swept away by ocean waves, or being consumed by wild beasts. Such animate dreams often have similarly themed innate spells to augment their powers.</p>",
       "items": {
@@ -351,6 +834,64 @@
       },
       "name": "Living Nightmare",
       "npcAllSaves": "+1 status to all saves vs. magic"
+    },
+    "Masque Mannequin": {
+      "description": "<p>Masque mannequins are a type of soulbound construct animated by a fragment of a once-living soul infused into an eerie, nearly featureless mask that's then affixed to a mannequin or dressmaker's dummy. Though similar in process to the creation of a soulbound doll or mannequin, creating a masque mannequin requires conducting ritualistic murder and extracting a soul shard during an unwilling victim's death, and only the vilest of crafters would consider attempting such a deed. Masque mannequins are popular among Norgorberites, especially devotees of Father Skinsaw, as well as Kuthites who take pride in drawing out the ritual to gain the largest possible fragment of the soul.</p><h2>Malevolent Mindsets</h2><p>Masque mannequins, even those crafted from virtuous individuals, tend to have a sadistic sense of malice. If left to their own devices, a masque mannequin enjoys playing cat and mouse games with their chosen victims by freezing and unfreezing in areas with mundane mannequins, slowly driving their unfortunate playthings to paranoia before going for the kill.</p>",
+      "items": {
+        "K4u0qDTbD079yPmV": {
+          "description": "<p><strong>Requirements</strong> The masque mannequin is grappling a living creature</p><hr /><p><strong>Effect</strong> The @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature must attempt a @Check[fortitude|dc:36] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as its body grows more wooden.</p>\n<p><strong>Failure</strong> The creature is petrified for the next 24 hours, but instead of turning to stone, it turns into a wooden mannequin. It can attempt a new save at the end of each of its turns.</p>\n<p><strong>Critical Failure</strong> The creature turns into a wooden mannequin permanently.</p>",
+          "name": "Refashion"
+        },
+        "TUDfIysbIBr3ZaOo": {
+          "description": "<p><strong>Requirements</strong> The masque mannequin is in Pose</p>\n<p><strong>Trigger</strong> A creature unaware of the mannequin's true nature approaches within reach</p><hr /><p><strong>Effect</strong> The mannequin makes a Strike against the triggering creature.</p>",
+          "name": "Awaken"
+        },
+        "YFWMYW7vn6obJixi": {
+          "description": "<p>The spark of the soul used to create a masque mannequin is infused into its mask. A creature can break a masque mannequin's soul mask with a @Check[athletics|dc:40] check or steal it with a @Check[thievery|dc:40] check. If its mask is broken or removed, a masque mannequin must attempt a @Check[fortitude|dc:40] save.</p><hr /><p><strong>Critical Success</strong> The masque mannequin's animating spark shifts to infuse its body; it is unaffected and no longer has a soul mask.</p>\n<p><strong>Success</strong> The masque mannequin takes @Damage[2d6[persistent,mental]] damage. If it regains its mask, it can place it back on its face as an Interact action to automatically stop this persistent mental damage.</p>\n<p><strong>Failure</strong> As success, but @Damage[4d6[persistent,mental]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[8d6[persistent,mental]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
+          "name": "Soul Mask"
+        },
+        "ZFPSCYbJ4iLu1tak": {
+          "description": "<p>Until the next time the masque mannequin acts, it appears to be an inanimate mannequin. It has an automatic result of 45 on Deception checks and DCs to appear as an ordinary mannequin.</p>",
+          "name": "Pose"
+        },
+        "xCENDdDQkvyA0PIY": {
+          "name": "Fist"
+        }
+      },
+      "name": "Masque Mannequin"
+    },
+    "Miavri": {
+      "description": "<p>Kishis are duplicitous and murderous fey who dwell on the edges of Golarion's densest jungles. At first glance, kishis appear to be attractive humans, usually of a local ethnicity, but their full heads of thick hair conceal a second face: that of a snarling hyena. When a kishi lures their prey into a vulnerable situation, their head swivels around, revealing this fearsome visage. In this form, a kishi's powerful jaws are almost impossible to pry loose and can crush a victim's bones in a matter of moments.</p>\n<p>Kishi range widely in their physical features, and their height and weight vary as much as the people whose communities they infiltrate. They dress in fine clothing aligned with the latest fashion trends, and they wear flashy jewelry with the intention of drawing onlookers' eyes.</p>\n<p>Like most fey, a kishi has inscrutable motives, though to their victims, the kishi's goal seems simple-to revel in the expression of shock, betrayal, and terror on a victim's face. Although kishis can cast charm to make unwitting companions complacent, most of these sinister creatures prefer to trick their prey using guile, gifts, and their dashing good looks. These ultimate sadists derive pleasure from the thrill of the hunt as well as the delicious reward at the end. The more uptight, prudish, or haughty a target, the better-for nothing satisfies kishis as much as earning (and destroying) the trust of someone who rarely grants it.</p>\n<p>When kishis get their new friends or lovers alone, they choose the most dramatic moments to reveal their true monstrous forms and clamp their jaws down on their victim. Kishis have no desire to share their true nature with the entire community, so they typically aim for the throats of their victims, who can no longer cry out for help after being cut off from air. Kishis consume every part of their victims' bodies, leaving no trace of the crime-even lapping up any spilled blood, claiming the victim's treasures as their own, and cleaning the murder scene as much as possible.</p>\n<p>Few things can bind a community together as swiftly as uncovering a kishi. Once found out, a kishi flees, hoping to find a new community to prey upon.</p>",
+      "items": {
+        "3vdP680iRFJVfvwV": {
+          "description": "<p>The kishi Strides twice. If they end their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>",
+          "name": "Sudden Charge"
+        },
+        "EWX813DLZAePlSAY": {
+          "name": "Jaws"
+        },
+        "MYOFzFbpGCWFCD85": {
+          "description": "<p>@Damage[(2d10+13)[piercing]], @Check[fortitude|dc:33|basic] (@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by jaws only)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "igxHjmUJWlr6ULG7": {
+          "description": "<p>The kishi switches between showing their attractive human face and their snarling hyena face. A kishi can use their innate spell and their Deception and Diplomacy skills only when their human face is showing, and they can use their jaws Strike only when their hyena face is showing.</p>",
+          "name": "Head Spin"
+        },
+        "it8V6trXRaEs8bg1": {
+          "name": "Charm (At Will)"
+        },
+        "otdx4PGiqqZBWZZy": {
+          "name": "Charm of Acid Resistance (Major)"
+        },
+        "rUKEfvwyoUMhaFzX": {
+          "description": "<p>A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in the kishi's jaws can barely speak; a creature must succeed at a @Check[flat|dc:8] check to provide verbal components for spells, doing so in a choked whisper.</p>",
+          "name": "Vicelike Jaws"
+        },
+        "vlGXeDzuvihHbasj": {
+          "name": "Claw"
+        }
+      },
+      "name": "Miavri"
     },
     "Mocking Puppets": {
       "description": "<p>The puppets and marionettes in this room suddenly turn to face intruders and come to clattering, unsettling life as the echoing sound of mocking laughter fills the air.</p>",
@@ -393,6 +934,39 @@
       },
       "name": "Nemesis"
     },
+    "Niallana": {
+      "description": "<p>When a person is betrayed and killed in a way that their voice was silenced (such as through strangulation by a lover or close confidante), they might come back as a silent stalker. A silent stalker is a horrifying, twisted likeness of the person they were in life, with one obvious difference: the silent stalker has no mouth, simply a smooth patch of flesh where a mouth should be. Sound is suppressed in an area around a silent stalker, but once someone notices the quiet, it's often too late.</p>\n<hr />\n<p>A revenant is a vengeful undead who stalks the one who killed them in life. They're relentless in the pursuit of their murderer, seeking a final justice.</p>",
+      "items": {
+        "2axamykyrsqyw3y1": {
+          "description": "<p>If the silent stalker's murderer dies, the pale stranger is immediately destroyed. A pale stranger that can't sense their murderer must attempt a @Check[flat|dc:11] once every 24 hours to avoid becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}; they immediately rise again once they can sense their murderer. A murderer who becomes undead does not trigger the silent stalker's destruction until the murderer is finally destroyed. The silent stalker gains a +2 status bonus to checks and DCs against their murderer.</p>",
+          "name": "Undying Vendetta"
+        },
+        "GdByrDIFQsIb65c6": {
+          "description": "<p>Niallana attempts to steal the voice of a living creature within 30 feet. The target must attempt a @Check[fortitude|dc:36] save. As long as a creature is voiceless due to this effect, Niallana's silent aura is suppressed, and she can speak in the voice of the affected creature.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target becomes voiceless until the end of Niallana's next turn. A voiceless creature can't speak, create vocal sounds, or take auditory actions (including supplying verbal or command components).</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As success, but the curse duration is permanent.</p>",
+          "name": "Siphon Voice"
+        },
+        "HgX8EdBcuekHoaYB": {
+          "description": "<p>@Damage[(3d8+8)[bludgeoning]], @Check[fortitude|dc:36|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "df79dbzoljgbj0mq": {
+          "description": "<p>If a silent stalker sees their own reflection or any object important to them in life, they must attempt a @Check[will|dc:40] save.</p><hr /><p><strong>Critical Success</strong> The pale stranger is unaffected and can no longer be affected by that reflection or object in this way.</p>\n<p><strong>Success</strong> The silent stalker is distracted by self-loathing and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The silent stalker becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the source of their self-loathing and does everything they can to destroy it until the end of their next turn.</p>\n<p><strong>Critical Failure</strong> The silent stalker becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} as long as the source of their self-loathing is apparent, until they're attacked, or until they see their murderer.</p>",
+          "name": "Self-Loathing"
+        },
+        "eyfrpq3bvxnh075k": {
+          "description": "<p>10 feet. A silent stalker makes no sound, preventing creatures from noticing them using hearing or a similar sense alone. This silence stops all sound within it or passing through. The silent stalker and all creatures in the aura can't use sonic attacks or actions that have the auditory trait; this prevents creatures from casting spells with verbal components or activating items with command components.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.YKCsmlMgI0aS7joO]{Effect: Silent Aura}</p>",
+          "name": "Silent Aura"
+        },
+        "n5oh9urk0vokvmfv": {
+          "name": "Claw"
+        },
+        "pvl5y6qz89i11vc5": {
+          "description": "<p>A silent stalker knows the direction of their murderer (as long as both are on the same plane), but not the distance.</p>",
+          "name": "Sense Murderer"
+        }
+      },
+      "name": "Niallana",
+      "npcHp": "void healing"
+    },
     "Ockomlire": {
       "description": "<p>With its mottled green-and-tan rubbery flesh, six short legs ending in two-clawed feet, and three circular mouths arrayed equidistantly around a disk-shaped head crowned by multiple bulbous eyes, the bizarre Darklands-dwelling ockomlire's strange appearance blurs the line between aberration and fungus.</p>\n<p>Ockomlires eat magic, and their specialized organs process and release that magic in the form of a mist that saps the willpower of those it touches. Originally created by sekmin occultists as a potent weapon against Azlanti wizards, since the serpentfolk empire's collapse thousands of years ago, ockomlires have spread upward through the Darklands. They often lair in sewers or abandoned basements in urban areas, drawn to society's use (and waste) of magical energy.</p>\n<p>Ockomlires are quite intelligent but tend to have bland personalities. They're fond of verbalizing their observations and experiences, speaking in unsettling piping voices through three mouths; they have a curious penchant for referring to themselves in the third person. They've little interest in having personal names and tend to refer to those they encounter by ancestry instead of name as well.</p><h2>Ockomlire Apathy</h2><p>Because they exude feelings of hopelessness and despair as \"waste\" from their magical feeding, the ockomlire has become a creature of apathetic detachment. While this affords the ockomlire protection from emotion-based effects, those that do affect them tend to hit hard and actually cause mental anguish. There are thrilling legends of ockomlires laid low by a single bard whose gripping performance simply stirred up enough emotions within the normally distant creatures to cause them rip themselves apart from the inside.</p>",
       "items": {
@@ -423,6 +997,93 @@
       },
       "name": "Ockomlire",
       "npcAllSaves": "+1 status to all saves vs emotion effects"
+    },
+    "Operatic Stone Bulwark": {
+      "description": "<p>Stone bulwarks are slow and steady constructs typically carved from marble or granite. They're often made to serve as works of art when at rest, so some magical crafters employ master sculptors to ensure their constructs make beautiful statues. Older stone bulwarks might be weathered, with scuffed or cracked surfaces or missing noses and digits, but this weathering is largely cosmetic and doesn't adversely impact the bulwark's functionality.</p>",
+      "items": {
+        "AQkAJLS7IVqr7GLQ": {
+          "description": "<p>Any creature hit by the stone bulwark's fist or rock Strike is affected by a @Check[fortitude|dc:30] @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind} spell.</p>",
+          "name": "Binding Stone"
+        },
+        "B9YtjVsCCmeVw39y": {
+          "name": "Fist"
+        },
+        "bKmTRJI4PjS70sWZ": {
+          "description": "<p>The stone bulwark Strides up to its Speed, pushing back each creature whose space it moves into and damaging them if they try to stop its movement. A creature can attempt to bar the way by succeeding at a @Check[fortitude|dc:34] save. On a critical success, the resisting creature takes no damage; otherwise it is damaged as if hit by the construct's fist.</p>",
+          "name": "Inexorable March"
+        },
+        "bhmnG9zTS4ncYGoL": {
+          "description": "<p>20 feet.</p>\n<p>Rocks of marble magically arise from the ground in the aura. They protect the bulwark's allies, giving each of them standard @UUID[Compendium.pf2e.other-effects.Item.I9lfZUiCwMiGogVi]{Cover}. These stones can be used for Throw Rock.</p>\n<p>This aura automatically activates at the start of the stone bulwark's first turn in combat and deactivates at the end of combat.</p>",
+          "name": "Statuary Aura"
+        }
+      },
+      "name": "Operatic Stone Bulwark"
+    },
+    "Oriole": {
+      "items": {
+        "0F9NKlRQMiOk4zdC": {
+          "description": "<p>Despite covering the entire face, this alabaster mask does not hinder vision or other senses. Wearing the mask grants a +2 item bonus to Performance checks while acting, orating, performing comedy, or singing.</p>\n<hr />\n<p><strong>Activate—Assume Role</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<p>Effect You change the mask's appearance into an artistic rendition of a dramatic character of your choice.</p>\n<hr />\n<p><strong>Activate—Sacrifice Role</strong> <span class=\"action-glyph\">R</span> (concentrate, fortune)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail a Performance check that benefits from the mask's bonus</p>\n<hr />\n<p><strong>Effect</strong> You change the mask's character and reroll the Performance check, using the second result.</p>"
+        },
+        "4YR2XgkJSFKSMLmU": {
+          "description": "<p>While Oriole's sorcerous bloodline comes from a mysterious connection to nymphs in their ancestry, their equally mysterious ancestral connection to proteans influences their spell repertoire such that they can cast @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} as well. They can heighten <em>illusory disguise</em> freely.</p>",
+          "name": "Crossblooded Evolution"
+        },
+        "4lkrVmDvASejwGaq": {
+          "name": "Planar Keys"
+        },
+        "aGDXwJRsClJt2nTB": {
+          "description": "<p>Oriole can freely heighten any spell with the polymorph trait.</p>",
+          "name": "Many Forms"
+        },
+        "dmv6XTL1pEbEeJga": {
+          "name": "Theater Lore"
+        },
+        "hENsLu2nYRzSV7YI": {
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Oriole succeeds at a Performance check to act, dance, or sing</p><hr /><p><strong>Effect</strong> Oriole critically succeeds at the check instead.</p>",
+          "name": "Legendary Diva"
+        },
+        "jr214caXbMfpchek": {
+          "description": "<p>When Oriole casts @UUID[Compendium.pf2e.spells-srd.Item.1HfusQ8NDWutGvMx]{Animal Vision}, @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm}, @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}, @UUID[Compendium.pf2e.spells-srd.Item.yrZA4k2VAqEP8xx7]{Repulsion}, @UUID[Compendium.pf2e.spells-srd.Item.bVtkBJvGLP69qVGI]{Unfettered Pack}, @UUID[Compendium.pf2e.spells-srd.Item.ikSb3LRGnrwXJBVX]{Vital Beacon}, @UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair}, or any of their bloodline spells, their movements are so graceful that they distract foes. This either grants Oriole a +1 status bonus to Diplomacy checks for 1 round or imposes a –1 status penalty on one target's Will saves for 1 round.</p>",
+          "name": "Blood Magic"
+        },
+        "lTUfdSgw2DUmdCIM": {
+          "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> Oriole takes acid, electricity, or sonic damage</p><hr /><p><strong>Effect</strong> Oriole's energy resistance changes to match the triggering damage and immediately applies to the damage.</p>",
+          "name": "Alter Resistance"
+        },
+        "nwkVnPHrORWsH3lG": {
+          "description": "<p>At the beginning of each day, the element Oriole resists is randomly determined by rolling 1d6 (1–2 acid, 3–4 electricity, and 5–6 sonic), but this resistance can change during the day as they Alter Resistance.</p>",
+          "name": "Ganzi Resistance"
+        },
+        "p3CD1VJVSMCMyPWf": {
+          "name": "+1 Vs. Effects Granting the Controlled Condition"
+        }
+      },
+      "name": "Oriole",
+      "npcAllSaves": "+1 vs. effects granting the controlled condition"
+    },
+    "Princess Sweetie": {
+      "description": "<p>Skull peelers, despite their ferocious and well-deserved moniker, are considered by many to be downright adorable, especially when viewed from a safe distance. Their soft, dappled brown fur helps them hide in forest canopies, and they have shimmering insectile wings and big eyes that draw in the faintest beams of light. At first glance, a skull peeler looks like a cuddly pet or a wizard's familiar. Any illusions of domesticating such a beast are quickly dismissed upon seeing how a skull peeler eats, however.</p>\n<p>Skull peelers have evolved to hang motionlessly in treetop canopies as they wait until appropriate prey appears, usually long-necked dinosaurs but also brachiating primates and large birds. The skull peeler then lashes out with its long tongue, severing the creature's head from its body and pulling the detached cranium back into its hungry paws. It then uses its claws to crack open the cranial cavity-hence its name-before lapping up the tasty insides.</p>\n<p>Despite skull peelers' gruesome eating habits, some enterprises and individuals can't resist the urge to add these beasts to their menageries. Fey and other creatures with ties to the First World, such as gnomes, can occasionally coax a skull peeler into a form of domestication. While the adorable beasts can never be fully tamed due to their hyper-evolved hunting instincts, they can be bribed with food and, if kept satiated, displayed on a perch or indoor terrarium as an example of their master's cunning and deadliness. As often as not, these pseudo-domesticated skull peelers end up devouring a guest, pet, or their would-be owner, but this possibility doesn't stop up-and-coming crime lords from attempting to domesticate the little predators. Skull peelers kept in well-managed zoos fare somewhat better, but these clever creatures don't always stay in their cages, which has led to wild skull peelers in places travelers might not expect.</p>",
+      "items": {
+        "1iD6khc2Ev2LOLO7": {
+          "description": "<p><strong>Requirements</strong> The skull peeler is in a treetop or standing on a tree limb</p>\n<hr />\n<p><strong>Effect</strong> Until the next time it acts, the skull peeler hangs perfectly still, blending into the treetop surroundings. It has an automatic result of 36 on Stealth checks and DCs to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} from any creature more than 10 feet away from it.</p>",
+          "name": "Perfect Camouflage"
+        },
+        "DzdpbPovIBcXuiRi": {
+          "name": "Claw"
+        },
+        "nVF38zJQgYheOlaQ": {
+          "description": "<p><strong>Trigger</strong> The skull peeler is using Perfect Camouflage and a creature moves into a space within 15 feet of it</p>\n<hr />\n<p><strong>Effect</strong> The skull peeler Leaps toward the triggering creature and Strikes with its tongue. If this Strike is successful, the skull peeler automatically @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} the target with its tongue.</p>",
+          "name": "Snatch Skull"
+        },
+        "ti9wuWwyYalyQsgW": {
+          "name": "Tongue"
+        },
+        "zBdDYujCaw7HK02d": {
+          "description": "<p>The skull peeler's razor-sharp tongue is coated in an anticoagulant substance that makes wounds it inflicts particularly hard to close.</p>\n<p>The DC of the flat check to end the persistent bleed damage from a skull peeler's tongue is @Check[flat|dc:16], or @Check[flat|dc:11] with appropriate assistance.</p>",
+          "name": "Anticoagulant"
+        }
+      },
+      "name": "Princess Sweetie"
     },
     "Rezzelki": {
       "description": "<p>Rezzelkis are curious-looking beasts native to the deserts of Osirion. Three feet tall at the shoulder and five feet long, rezzelkis are squat, mammalian quadrupeds with tawny red fur, with crystal-studded flat tails, and prehensile anteater-like snouts. Their long, pink tongues are covered with hundreds of tiny, razor-sharp bristles that allow them to rasp through flesh with unnerving ease, even before accounting for the effect of their acidic saliva.</p>\n<p>Rezzelkis are ferociously territorial and quick to attack anyone or anything they regard as intruding upon their territory. Yet they're also prone to strange gastronomic obsessions, and if someone can deduce a particular rezzelki's favorite food, it's possible to become the creature's ally by simply providing it regular access to its preferred meals. A specific rezzelki's favorite food is always a specific type of creature—some even prefer to dine exclusively on the dry bodies of undead like mummies—but most have a taste for a singular humanoid ancestry. Presented with a potential meal, the rezzelki moves quickly to smash its feast with its wide tail. Then it feeds upon the pulverized remains of the destroyed creature, slurping up battered flesh and powdered bones with a noisy gusto that has earned them a strange nickname in certain circles: \"deathlicker.\"</p><h2>Rezzelki Hunger</h2><p>While a rezzelki can subsist on any sort of pulverized creature's remains, they vastly prefer a specific type of creature and can sniff these potential meals out with alarming accuracy. If an encounter doesn't specify what a rezzelki's favorite foodstuff is, roll 1d6: 1—human, 2—dwarf, 3—elf, 4—kholo, 5—desert giant, 6—mummy. Rezzelkis found in regions other than Osirion certainly develop appetites for other types of creatures, of course!</p>",
@@ -455,6 +1116,180 @@
       },
       "name": "Rezzelki"
     },
+    "Rooftop Guardian": {
+      "description": "<p>The monstrous, bloated spiders from the windswept realm of Leng build eerie, dangerous lairs with the aid of magically compelled slaves. Leng spiders have anywhere from five to 13 legs, but never an even number.</p>",
+      "items": {
+        "0hkOF2WHkLhHAEjQ": {
+          "description": "<p>The Leng spider moves straight down up to 120 feet, suspended by a web line. It can hang from the web or drop off. The distance it Descends on a Web doesn't count when calculating falling damage.</p>\n<p>The web can be severed by a Strike that deals slashing damage (AC 30, Hardness 15, 25 HP), causing the Leng spider to fall.</p>",
+          "name": "Descend on a Web"
+        },
+        "347afDqyIPjdMfcG": {
+          "name": "Truespeech (Constant)"
+        },
+        "4sHfRhs9EUIsY2na": {
+          "name": "Fly (Constant)"
+        },
+        "6U0xCdudnhZPawQv": {
+          "name": "Web War Flail"
+        },
+        "JRMNxdBvQcOcEYbr": {
+          "name": "Invisibility (At Will)"
+        },
+        "KJKzoE0ci2sMwyFX": {
+          "_source": "pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
+        },
+        "Wvss2Toe2q47z9GS": {
+          "name": "Leg"
+        },
+        "fcCuiTHr7ed8LhqK": {
+          "name": "Fangs"
+        },
+        "iINgbpwr9zD0DJ0d": {
+          "name": "Fast Healing 10"
+        },
+        "iZxDrmolCkhIxWO6": {
+          "description": "<p>A Leng spider can use a web bola to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a target with the Athletics skill. The skill check takes a -2 circumstance penalty. A web bola deals no damage when used to Trip.</p>",
+          "name": "Ranged Trip"
+        },
+        "iw7xcu7OkpYHYyQ2": {
+          "description": "<p>While touching its webs, the Leng spider has precise @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense} to detect the vibrations of creatures touching its web.</p>",
+          "name": "Greater Web Sense"
+        },
+        "k4tbzCH8jMb0d1Qk": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:33]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 round); the confused effect has the emotion and mental traits.</p>",
+          "name": "Leng Spider Venom"
+        },
+        "mpJRBywFbHjIPygl": {
+          "name": "Interplanar Teleport (To Leng or the Universe only)"
+        },
+        "sR5alX5hZopxwTLw": {
+          "name": "Web Bola"
+        },
+        "sWbaqjXgO4EigI5j": {
+          "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The Leng spider spins a web within 20 feet of itself to create a @UUID[Compendium.pf2e.equipment-srd.Item.TFnr9Gq7VXPJu0GQ]{Grasping Snare}, @UUID[Compendium.pf2e.equipment-srd.Item.a2XaerM1KkPyLIPM]{Stunning Snare}, or @UUID[Compendium.pf2e.equipment-srd.Item.XU8u9F3uoesGDjgM]{Warning Snare}. The Leng spider's web provides all the raw materials it needs. All save and @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DCs associated with web traps use the Leng spider's Crafting DC for traps (DC 36). A web trap decays after 24 hours.</p>",
+          "name": "Lay Web Trap"
+        },
+        "snsO2nPGYHe6pZx0": {
+          "description": "<p>The Leng spider creates a weapon by applying a cord of webbing to heavy objects, such as rocks or chunks of metal, either attaching two heavy objects together to create a web bola or fastening one to its leg to create a web war flail.</p>",
+          "name": "Create Web Weaponry"
+        }
+      },
+      "name": "Rooftop Guardian",
+      "npcAllSaves": "+1 status to all saves vs. magic",
+      "npcHp": "(fast healing 10)"
+    },
+    "Rusalka": {
+      "description": "<p>These androgynous, river-dwelling fey delight in manipulating the emotions of those unfortunate enough to fall into their grasp, using humiliation to break their victims' wills. Rusalkas enjoy keeping their broken toys nearby, both for continuing entertainment and to aid in the rusalkas' defense, as the shame their captives feel often drives them to become obsessively loyal to these fey.</p>",
+      "items": {
+        "7jmpJLlfX85YloH6": {
+          "name": "Mist (At Will)"
+        },
+        "FVDPg3HIsGffnOjd": {
+          "description": "<p>The rusalka touches a creature within 5 feet using their hand, stirring up memories of regret and shame. The target must attempt a @Check[will|dc:35] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and it must use its first action on its next turn to Strike itself, automatically hitting.</p>",
+          "name": "Shameful Touch"
+        },
+        "GYQMiGEbQopeX3bK": {
+          "description": "<p>The rusalka attempts an @Check[athletics] check against each @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature's Fortitude DC. The rusalka moves each creature they succeed against up to 10 feet and each creature they critically succeed against up to 20 feet. This movement must all be within reach of its tresses.</p>",
+          "name": "Flowing Hair"
+        },
+        "PLo6RE4lIKmw9DQL": {
+          "description": "<p>A rusalka is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} while underwater.</p>",
+          "name": "Blurred Form"
+        },
+        "VMTWkKGfU7oTfhH2": {
+          "name": "Control Water (At Will)"
+        },
+        "VQIsoxIjJIeRJACx": {
+          "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (7d6+18)[healing]]]{7d6+18 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Z9oPh462q82IYIZ6]{Effect: Elixir of Life (Greater)}</p>"
+        },
+        "WjdPeEIa3jf7j8U2": {
+          "description": "<p>@Damage[(2d8+10)[bludgeoning]], @Check[fortitude|dc:32|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "XmApAHg0OJr2pJ31": {
+          "name": "Water Walk (Constant)"
+        },
+        "XqbsPpZkRYLwrQDg": {
+          "name": "Tresses"
+        },
+        "ZvUTgfQlDSMlOtEP": {
+          "description": "<p>A rusalka can have up to eight creatures grabbed within their tresses at a time.</p>",
+          "name": "Entangling Tresses"
+        },
+        "aJhxWGibV6WOF98e": {
+          "description": "<p>The rusalka cries out a compelling invitation. Each non-fey creature within a @Template[emanation|distance:300] must attempt a @Check[will|dc:27] save. The effect lasts for 1 round, but if the rusalka uses Beckoning Call again on subsequent rounds, the duration extends by 1 round for all affected creatures. Once a creature succeeds at any save against Beckoning Call, that creature is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} and must spend each of its actions to move closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the creature is freed from captivation at the end of the rusalka's turn.</p>\n<p><strong>Critical Failure</strong> As failure, but if attacked by the rusalka, the creature can attempt a new save only at the start of its next turn, rather than being freed at the end of the rusalka's turn.</p>",
+          "name": "Beckoning Call"
+        },
+        "pUaJ8jT9PU4nC3tw": {
+          "name": "Invisibility (At Will)"
+        }
+      },
+      "name": "Rusalka"
+    },
+    "Shanty Chanter": {
+      "description": "<p>Shanty chanters are known to dwell along the coasts of Garund or the eastern isles of the Shackles, living on small islands or cliffsides but rarely venturing too far inland. These capricious fey have humanoid torsos and seagull heads, wings, and feet, and they stand about 5 feet tall. Consummate performers, shanty chanters adore music, especially the sea shanties sung by ships' crews. The songs from these fey's aeries can be heard from miles away over the open sea. While some sailors claim these songs intentionally lure mortals to drown, most shanty chanters aren't outright malevolent and would be more inclined to investigate a foundering ship than to slaughter those aboard, even if they do relieve such a vessel of its valuables.</p>\n<p>Shanty chanters have a particular affinity for pirate ships, and a captain who wins an alliance with an aerie of shanty chanters is considered blessed with good luck. Of course, this attention can be a double-edged sword. If a captain fails to appease the ship's allied shanty chanters (generally by giving them a fair share of the plunder gained while they're on board), the affronted fey afflicts the captain with a @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse} before departing for more prosperous shores.</p><h2>Chanter Vanity</h2><p>Shanty chanters are quite vain, adorning themselves in jewelry obtained in the raids of their allied ships or taken in raids of their own. They appreciate flattery toward both their physical appearances and musical talents, and they view this type of bribe to be as valuable as material goods. Conversely, the surest way to gain a shanty chanter's enmity is to insult their singing, and only the deeply unwise would dare such a thing.</p>",
+      "items": {
+        "C72GUlWahAnz39cI": {
+          "name": "Talon"
+        },
+        "aJjNEtzw1hYSv0kd": {
+          "description": "<p>A shanty chanter aboard a vessel that uses wind propulsion can use this exploration activity to call up lightly buffeting winds. The chanter can Sustain this effect for up to 8 hours, during which the vessel they're on benefits from the propulsion in the desired direction. Seasong is overwhelmed and negated by powerful storms.</p>",
+          "name": "Seasong"
+        },
+        "g89mzELeTUirD735": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The shanty chanter begins to sing a catchy sea shanty and selects up to 10 allies within 60 feet who can hear the shanty chanter to potentially join in. Selected allies feel an urge to join but aren't required to—a targeted ally can join as a Reaction. A shanty chanter can Sustain Shanty Call as a Reaction at the start of their turn for up to 1 minute. While sustained, the shanty chanter and all allies who joined the shanty when they began to sing become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action to Climb, @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open}, @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, Strike, or Swim. When the shanty chanter ceases to Sustain Shanty Call, they and all allies who were affected become @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for 1 minute.</p>",
+          "name": "Shanty Call"
+        },
+        "kpr9gQ9I6qTJt64Y": {
+          "name": "Beak"
+        },
+        "mL4f0XXoqT0n1ZFJ": {
+          "name": "Sailing Lore"
+        }
+      },
+      "name": "Shanty Chanter"
+    },
+    "Silverhand Salvo": {
+      "description": "<p>Gambling devils, known also as agadazes, resemble horned humans crafted out of living gold in their natural forms, though their shapeshifting abilities let them move among mortals undetected. They're most commonly encountered in Erebus, the third layer of Hell, where many serve Mammon as accountants. They're unusually impulsive and distractible for their kind. Other devils often view their Risk Aura as a hindrance, so they usually receive less important missions. They don't mind, for it gives them more time to meddle with mortals.</p><h2>Heavy Footsteps</h2><p>Even when appearing in a humanoid guise, a gambling devil's body remains extremely dense and heavy, often weighing more than 500 pounds. Old gamblers' yarns warn to watch the footsteps of fellow gamblers and be wary of those whose tread seems disproportionate to their size, though in truth, all but the most careless gambling devils know how to step lightly in their humanoid forms.</p>",
+      "items": {
+        "1whEZNFCQZ4CKiT6": {
+          "name": "Games Lore"
+        },
+        "F8RTmdRmsiB3StH3": {
+          "name": "Thrown Coin"
+        },
+        "I4UiXow9ZXalGaAm": {
+          "name": "Jewelry"
+        },
+        "J4j7PUmfzKzKj9qQ": {
+          "name": "Translocate (At Will)"
+        },
+        "OCPbnGGxOZI4GKPC": {
+          "name": "Fist"
+        },
+        "PP1a73w4zq2ppeeT": {
+          "description": "<p><strong>Trigger</strong> The agadaz attempts a Strike, saving throw, or skill check</p><hr /><p><strong>Effect</strong> The agadaz takes a –2 status penalty to the roll, then gains a +2 status bonus to the next Strike, saving throw, or skill check they attempt before the end of their turn, or before the end of their next turn if they used Double Down during another creature's turn.</p>",
+          "name": "Double Down"
+        },
+        "ULXJv8rgzPh8vlRK": {
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The agadaz has a free hand</p><hr /><p><strong>Effect</strong> The agadaz creates up to 5 gp in their hand. At any one time, an agadaz can possess no more than 20 gp created in this way; coins created in excess of this value vanish. A coin created in this way vanishes automatically 1 hour after leaving the devil's possession.</p>",
+          "name": "Produce Gold Coins"
+        },
+        "iULBe8CiHhYQFUum": {
+          "description": "<p>The agadaz adopts the appearance of any Small or Medium humanoid. This doesn't change their Speed or their attack and damage bonuses with their Strikes, but it might change the type of damage their Strikes deal.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "w8wKeoNsytzmig44": {
+          "name": "Accounting Lore"
+        },
+        "xZCulUxb6sXLOAkA": {
+          "description": "<p>30 feet. A feeling of recklessness surrounds a gambling devil. When a non-fiend creature enters the aura or begins its turn in the aura, it must attempt a @Check[will|dc:31] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Risk Aura for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The next time the creature rolls a d20, it must roll twice. If either roll is a natural 20, the creature uses that result; otherwise, it must take the lower of the two results.</p>\n<p><strong>Critical Failure</strong> As failure, but applies to all of the creature's d20 rolls as long as it remains in the aura.</p>",
+          "name": "Risk Aura"
+        },
+        "yfdtQ8XszGYWplAq": {
+          "name": "Ill Omen (At Will)"
+        }
+      },
+      "name": "Silverhand Salvo"
+    },
     "Skurg": {
       "items": {
         "N8nfY9c1kebV8oH6": {
@@ -471,6 +1306,11 @@
         }
       },
       "name": "Skurg"
+    },
+    "Spectral Opera": {
+      "description": "<p>A spectral cast of singers in opera costumes emerges from the walls, keening a mournful and terrifying chorus.</p>",
+      "hazardDisable": "<p>@Check[performance|dc:46] (master) to disrupt the song with another tune, or @Check[religion|dc:43] (expert) to calm the spirits</p>",
+      "name": "Spectral Opera"
     },
     "The Final Herald": {
       "items": {
@@ -508,6 +1348,51 @@
       "description": "<p>An @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} rune imprinted on the door latch releases a powerful sonic discharge that automatically alerts the guards in area <strong>D6</strong> that intruders are nearby.</p>",
       "hazardDisable": "<p>@Check[thievery|dc:38] (master) to scratch out the rune without allowing it to activate, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank; counteract DC 31) to counteract the rune</p>",
       "name": "Thunderclap Rune"
+    },
+    "Vorens": {
+      "items": {
+        "LNzvRHSX7HlXA2ZC": {
+          "description": "<p>Vorens is adept at exploiting an opponent's weaknesses in a duel. If he wins initiative in a duel round, he deals an extra 2d6 precision damage with Strikes made before the beginning of his next turn.</p>",
+          "name": "Adroit Duelist"
+        },
+        "UU6qI4GCsFm43RGI": {
+          "name": "+2 Circumstance Bonus to Initiative Checks"
+        },
+        "ZqeQGPmWGp44TEZg": {
+          "description": "<p><strong>Trigger</strong> A creature critically fails a Strike against Vorens</p><hr /><p><strong>Effect</strong> Vorens makes a melee Strike against or attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the triggering creature.</p>",
+          "name": "Dueling Riposte"
+        },
+        "jNsIS3QER0JDIqyC": {
+          "description": "<p><strong>Requirements</strong> Vorens wields a one-handed melee weapon and his other hand is free</p><hr /><p><strong>Effect</strong> Vorens gains a +2 circumstance bonus to his AC until the start of his next turn.</p>",
+          "name": "Dueling Dance"
+        }
+      },
+      "name": "Vorens"
+    },
+    "Waxen Effigy": {
+      "description": "<p>The undead ooze known as a waxen effigy forms under a specific set of circumstances, making such creatures quite rare. Most waxen effigies arise from botched rituals intended to migrate a powerful sapient creature's soul into a body made of wax, whether in a bid for immortality or a method of imprisonment or sacrifice. The death—especially a traumatic death—of a sapient creature in close proximity to a wax figure or while attempting to craft a construct out of wax might also result in a waxen effigy.</p>\n<p>A waxen effigy looks like a partially melted wax version of who it appeared as in life. They retain little of their former personality but recall a jumble of memories from their mortal existence that serves only to anger them. They often cling to objects that were important to them in life, such as a spouse's wedding band or a tool from a favorite hobby. Displaying such an object to a waxen effigy transfixes their attention, though they often lash out if the object is taken away before they can be laid to rest.</p><h2>Cruel Creations</h2><p>Few set out to create a waxen effigy on purpose, as their fragmented memories cause them to behave rather erratically, and as such, they make poor guardians or assassins. Any intentional creation of a waxen effigy is solely an act of spite since it condemns the soul to an undeath steeped in bewilderment and fear.</p>",
+      "items": {
+        "84X3HOVhFMrS5sZh": {
+          "name": "Wax Spray"
+        },
+        "G5YOcLKScsYLnEaf": {
+          "name": "Fist"
+        },
+        "JPYI39lr7wIqvXAH": {
+          "description": "<p>The waxen effigy emits a gurgling howl, sapping the life energy from all living creatures within 30 feet. Affected creatures must attempt a @Check[fortitude|dc:40] save. The waxen effigy can't use Enervating Howl again for [[/gmr 1d4 #Recharge Enervating Howl]]{1d4 rounds}</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[6d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[12d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[24d6[void]] damage, is drained 2, and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} for as long as they have the drained condition.</p>",
+          "name": "Enervating Howl"
+        },
+        "L2pCfHojoprTwGzm": {
+          "description": "<p>Waxen effigies retain an attachment to objects they had a strong tie to in life. A character who holds such a memento in a hand can use it to alter the effects of @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}. Doing so adds the manipulate trait to Demoralize. If the attempt to Demoralize the waxen effigy is successful, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical success) for 1 round rather than becoming frightened. On a critical failure, the waxen effigy loses Memento Vulnerability for 24 hours.</p>",
+          "name": "Memento Vulnerability"
+        },
+        "xiQJaER2qPsJFGBA": {
+          "description": "<p>A waxen effigy leaves behind a trail of molten wax when it Strides, making any spaces it moves through difficult hazardous terrain until the beginning of its next turn, whereupon the molten wax trail vanishes. Creatures moving through the wax trail take @Damage[4d6[fire]] damage each time they do so (@Check[reflex|dc:40|basic] save).</p>",
+          "name": "Wax Trail"
+        }
+      },
+      "name": "Waxen Effigy",
+      "npcHp": "void healing"
     }
   },
   "label": "Curtain Call"
