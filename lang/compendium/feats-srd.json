@@ -3800,7 +3800,7 @@
       "name": "Ceremony of Strengthened Hand"
     },
     "Ceremony of Sun's Gift": {
-      "description": "<p>Your connection to the sun has become an unbreakable bond. You don't become temporarily immune to the effects of your @UUID[Compendium.pf2e.ancestryfeatures.Item.BgHrucbZ9TH92RDv]{Sunlight Healing}, and instead of rolling to recover Hit Points, you gain the maximum number of HP possible (for example, 64 HP instead of 8d8).</p>\n<p>[[/r (ceil(@actor.level/2))*8]]{Sunlight Healing}</p>\n<p>[[/r (@actor.level)*8]]{Ceremony of Sunlight Healing}</p>",
+      "description": "<p>Your connection to the sun has become an unbreakable bond. You don't become temporarily immune to the effects of your @UUID[Compendium.pf2e.ancestryfeatures.Item.BgHrucbZ9TH92RDv]{Sunlight Healing}, and instead of rolling to recover Hit Points, you gain the maximum number of HP possible (for example, 64 HP instead of 8d8).</p>",
       "name": "Ceremony of Sun's Gift"
     },
     "Ceremony of Sunlight": {
@@ -5774,7 +5774,7 @@
       "name": "Desert Wind"
     },
     "Desiccating Inhalation": {
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You draw in the moisture from nearby creatures, draining them dry to heal your wounds. Creatures in a @Template[cone|distance:30] take @Damage[floor(@actor.level/2)d8[void]] damage, with a @Check[reflex|against:class|basic] save against your class DC. A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. As long as at least one creature was damaged by your Desiccating Inhalation, you regain [[/r @actor.level[healing]]]{HP equal to your level}.</p>\n<p>At 14th level and every 2 levels thereafter, the damage increases by 1d8.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>You draw in the moisture from nearby creatures, draining them dry to heal your wounds. Creatures in a @Template[cone|distance:30] take @Damage[floor(@actor.level/2)d8[void]] damage, with a @Check[reflex|against:class|basic] save against your class DC. A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. As long as at least one creature was damaged by your Desiccating Inhalation, you regain @Damage[@actor.level[healing]]{HP equal to your level}.</p>\n<p>At 14th level and every 2 levels thereafter, the damage increases by 1d8.</p>",
       "featPrerequisites": {
         "0": "Mummy Dedication"
       },
@@ -19047,7 +19047,7 @@
       "name": "Replenishing Consumption"
     },
     "Replenishing Hydration": {
-      "description": "<p>You draw life from the water around you. If you submerge in water and rest for 10 minutes, you regain Hit Points equal to your [[/r ((floor(@actor.level/2))*(@actor.abilities.con.mod))[healing]]]{Constitution modifier × half your level}.</p>",
+      "description": "<p>You draw life from the water around you. If you submerge in water and rest for 10 minutes, you regain Hit Points equal to your @Damage[((floor(@actor.level/2))*(@actor.abilities.con.mod))[healing]]{Constitution modifier × half your level}.</p>",
       "name": "Replenishing Hydration"
     },
     "Replenishment of War": {
@@ -20168,7 +20168,7 @@
       "name": "Scuttle Up"
     },
     "Sea Glass Guardians": {
-      "description": "<p>Eerily beautiful elemental water beings race around you, eager to protect and heal you and your allies. Their forms vary and might include eels formed of undulating water or ice crystals whirling in the shape of a jellyfish. The guardians flow around combatants and don't occupy a space. They attempt to intercept all dangers, granting you and your allies within your kinetic aura a +1 status bonus to AC and saving throws.</p>\n<p>If any creature affected is critically hit or critically fails at a saving throw against an attack, effect from an enemy, or hazard and remains above 0 HP, the guardians reach out to heal that creature. The creature regains 4d8+8 HP, and the impulse ends. If the creature is in water, the healing dice are d10s instead of d8s.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.buCKRBDZi27shB3X]{Stance: Sea Glass Guardians}</p>\n<hr />\n<p><strong>Level (+3)</strong> The healing increases by 1d8+4.</p>\n<p>[[/r ((floor((max(12,@actor.level)-12)/3)+4)d8+(floor((max(12,@actor.level)-12)/3)*4+8))[healing]]]{Leveled HP}</p>",
+      "description": "<p>Eerily beautiful elemental water beings race around you, eager to protect and heal you and your allies. Their forms vary and might include eels formed of undulating water or ice crystals whirling in the shape of a jellyfish. The guardians flow around combatants and don't occupy a space. They attempt to intercept all dangers, granting you and your allies within your kinetic aura a +1 status bonus to AC and saving throws.</p>\n<p>If any creature affected is critically hit or critically fails at a saving throw against an attack, effect from an enemy, or hazard and remains above 0 HP, the guardians reach out to heal that creature. The creature regains @Damage[((floor((max(12,@actor.level)-12)/3)+4)d8+(floor((max(12,@actor.level)-12)/3)*4+8))[healing]] HP, and the impulse ends. If the creature is in water, the healing dice are d10s instead of d8s.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.buCKRBDZi27shB3X]{Stance: Sea Glass Guardians}</p><hr /><p><strong>Level (+3)</strong> The healing increases by 1d8+4.</p>",
       "name": "Sea Glass Guardians"
     },
     "Sea Legs": {
@@ -24128,7 +24128,7 @@
       "name": "Terrifying Transformation"
     },
     "Tetraelemental Assault": {
-      "description": "<p>Your Elemental Assault cycles through all four elements. When you use Elemental Assault, instead of choosing a single element, you can choose an element from the list when using the action, and then choose a different element at the beginning of each of your next 3 turns without spending an action; once you have chosen an element, you can't choose it again during this Elemental Assault, meaning you must select all four elements over the course of 4 turns. Each time you choose an element, until the beginning of your next turn, your Strikes deal an additional [[/r 1d6]] damage of the indicated type and have the trait corresponding to that element.</p>",
+      "description": "<p>Your Elemental Assault cycles through all four elements. When you use Elemental Assault, instead of choosing a single element, you can choose an element from the list when using the action, and then choose a different element at the beginning of each of your next 3 turns without spending an action; once you have chosen an element, you can't choose it again during this Elemental Assault, meaning you must select all four elements over the course of 4 turns. Each time you choose an element, until the beginning of your next turn, your Strikes deal an additional @Damage[1d6[untyped]] damage of the indicated type and have the trait corresponding to that element.</p>",
       "featPrerequisites": {
         "0": "Elemental Assault"
       },

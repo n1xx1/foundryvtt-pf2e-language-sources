@@ -621,7 +621,7 @@
       "name": "Fade Into Daydreams"
     },
     "Fated Not to Die": {
-      "description": "<p><strong>Trigger</strong> You are dying</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Draw a harrow card, and you automatically lose the dying condition, though you remain @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} at 0 Hit Points. If the card you drew was from the suit of Shields, you awaken and have an amount of Hit Points restored to you equal to [[/r (1d6+@actor.level)[healing]]]{1d6 + your level}.</p>",
+      "description": "<p><strong>Trigger</strong> You are dying</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Draw a harrow card, and you automatically lose the dying condition, though you remain @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} at 0 Hit Points. If the card you drew was from the suit of Shields, you awaken and have an amount of Hit Points restored to you equal to @Damage[(1d6+@actor.level)[healing]]{1d6 + your level}.</p>",
       "name": "Fated Not to Die"
     },
     "Feint": {
@@ -1205,7 +1205,7 @@
       "name": "Resist Magic"
     },
     "Restore the Mind": {
-      "description": "<p>Your unleashed psyche gives you closer connections to the emotions of your allies, letting you project reassurance and strength that replenishes their mind and body. Choose one of the two benefits to grant one ally within 30 feet that you can see. That ally is then temporarily immune for 10 minutes.</p>\n<ul>\n<li>The ally gains a +1 status bonus to saving throws against mental effects until your psyche ends.</li>\n<li>The ally regains Hit Points equal to [[/r (2+2*@actor.level)[healing]]]{2 + double your level}.</li>\n</ul>",
+      "description": "<p>Your unleashed psyche gives you closer connections to the emotions of your allies, letting you project reassurance and strength that replenishes their mind and body. Choose one of the two benefits to grant one ally within 30 feet that you can see. That ally is then temporarily immune for 10 minutes.</p><ul><li>The ally gains a +1 status bonus to saving throws against mental effects until your psyche ends.</li><li>The ally regains Hit Points equal to @Damage[(2+2*@actor.level)[healing]]{2 + double your level}.</li></ul>",
       "name": "Restore the Mind"
     },
     "Retraining": {
