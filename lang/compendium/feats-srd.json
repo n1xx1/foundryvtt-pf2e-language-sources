@@ -817,7 +817,7 @@
       "name": "Alghollthu Bound"
     },
     "Align Qi": {
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You Cast a Spell that has the monk trait.</p><hr /><p>he power of your qi soothes your wounds and energizes you for battle. You @Damage[(@actor.abilities.wis.mod + @actor.level)[healing]]{regain Hit Points} equal to your level plus your Wisdom modifier.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You Cast a Spell that has the monk trait.</p><hr /><p>The power of your qi soothes your wounds and energizes you for battle. You @Damage[(@actor.abilities.wis.mod + @actor.level)[healing]]{regain Hit Points} equal to your level plus your Wisdom modifier.</p>",
       "featPrerequisites": {
         "0": "Qi Spells"
       },
@@ -5569,7 +5569,7 @@
       "name": "Darting Monkey"
     },
     "Dash of Herbs": {
-      "description": "<p>A small cloud of medicinal herbs heal a creature. The type of herbs depends on which malady you decide to treat: @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, disease, poison, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened}, or injuries. Target one living creature within 30 feet, who regains @Damage[((floor((max(6,@actor.level)-6)/2)+2)d8+4)[healing]] HP and can attempt a new save against one malady of the chosen kind. If you chose injuries, instead increase the healing dice to d10s. The creature becomes temporarily immune to Dash of Herbs for 10 minutes.</p>\n<p>Alternatively, you can add the herbs to a dish of food being prepared for up to six people. Creatures who partake in the meal gain the benefits. The herbs' healing effects wear off if not eaten within an hour, though their flavor remains.</p><hr /><p><strong>Level (+2)</strong> The healing increases by 1d8.</p>",
+      "description": "<p>A small cloud of medicinal herbs heal a creature. The type of herbs depends on which malady you decide to treat: @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, disease, poison, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened}, or injuries. Target one living creature within 30 feet, who regains @Damage[((floor((max(6,@actor.level)-6)/2)+2)d8+4)[healing]] HP and can attempt a new save against one malady of the chosen kind. If you chose injuries, instead increase the healing dice to @Damage[((floor((max(6,@actor.level)-6)/2)+2)d10+4)[healing]]{d10s}. The creature becomes temporarily immune to Dash of Herbs for 10 minutes.</p>\n<p>Alternatively, you can add the herbs to a dish of food being prepared for up to six people. Creatures who partake in the meal gain the benefits. The herbs' healing effects wear off if not eaten within an hour, though their flavor remains.</p><hr /><p><strong>Level (+2)</strong> The healing increases by 1d8.</p>",
       "name": "Dash of Herbs"
     },
     "Dashing Pounce": {
@@ -28660,7 +28660,7 @@
       "name": "Winter Cat Senses"
     },
     "Winter Sleet": {
-      "description": "<p>Bone-chilling, swirling sleet surrounds you, cruel as deepest winter. Surfaces in your kinetic aura are coated in slippery ice. A creature that moves on the ice immediately falls unless it succeeds at an @Check[acrobatics|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.value -2)] check or @Check[reflex|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.value -2)] save against your impulse DC – 2. A creature that Steps or Crawls doesn't have to attempt a check or save. You're immune to this effect.</p>\n<p>If a creature on the ice is critically hit by one of your water impulses or critically fails at a save against one, that creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>",
+      "description": "<p>Bone-chilling, swirling sleet surrounds you, cruel as deepest winter. Surfaces in your kinetic aura are coated in slippery ice. A creature that moves on the ice immediately falls unless it succeeds at an @Check[acrobatics|against:kineticist|adjustment:-2|rollerRole:target] check or @Check[reflex|against:kineticist|adjustment:-2] save against your impulse DC – 2. A creature that Steps or Crawls doesn't have to attempt a check or save. You're immune to this effect.</p>\n<p>If a creature on the ice is critically hit by one of your water impulses or critically fails at a save against one, that creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>",
       "name": "Winter Sleet"
     },
     "Winter's Clutch": {
