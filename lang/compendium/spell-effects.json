@@ -20,14 +20,6 @@
       "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.KPGGkyBFbKse7KpK]{Spiral of Horrors}</p>\n<p>You emit an aura of terror. Foes in the area are frightened 1 and unable to reduce the condition.</p>",
       "name": "Aura: Spiral of Horrors"
     },
-    "Effect: Albatross Curse": {
-      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.93SjFTGJUTTmAt6j]{Albatross Curse}.</p>\n<p>You and allies within 30 feet of the target gain a +1 circumstance bonus to attacks against the target.</p>",
-      "name": "Effect: Albatross Curse"
-    },
-    "Effect: Albatross Curse Circumstance Bonus": {
-      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.93SjFTGJUTTmAt6j]{Albatross Curse}</p>\n<p>You gain a +1 circumstance bonus to attacks against the target of the Albatross Curse.</p>",
-      "name": "Effect: Albatross Curse Circumstance Bonus"
-    },
     "Effect: Cinder Gaze": {
       "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.mOUwbIN1SUp8FyPR]{Cinder Gaze}.</p>\n<ol>\n<li><strong>Terrible Danger</strong> You gain a +2 status bonus to your next initiative roll.</li>\n<li><strong>New Life</strong> The next time you take damage, just before taking the damage, you gain temporary Hit Points equal to 1 plus your spellcasting ability modifier.</li>\n<li><strong>Vivid Insight</strong> (fortune) The next time you attempt a check to Recall Knowledge, roll twice and take the higher result.</li>\n<li><strong>Good Fortune</strong> (fortune) The next time you attempt a saving throw, roll twice and take the better result.</li>\n</ol>",
       "name": "Effect: Cinder Gaze"
@@ -107,6 +99,14 @@
     "Spell Effect: Agile Feet": {
       "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.cOjlzWerBwbPWVkX]{Agile Feet}.</p>\n<p>You gain a +5-foot status bonus to your Speed.</p>",
       "name": "Spell Effect: Agile Feet"
+    },
+    "Spell Effect: Albatross Curse": {
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.93SjFTGJUTTmAt6j]{Albatross Curse}.</p>\n<p>You and allies within 30 feet of the target gain a +1 circumstance bonus to attacks against the target.</p>",
+      "name": "Spell Effect: Albatross Curse"
+    },
+    "Spell Effect: Albatross Curse (Circumstance Bonus)": {
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.93SjFTGJUTTmAt6j]{Albatross Curse}</p>\n<p>You gain a +1 circumstance bonus to attacks against the target of the Albatross Curse.</p>",
+      "name": "Spell Effect: Albatross Curse (Circumstance Bonus)"
     },
     "Spell Effect: Amplifying Touch": {
       "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.zNN9212H2FGfM7VS]{Lay on Hands} if you have @UUID[Compendium.pf2e.feats-srd.Item.Cy5W8U4yN9P1EvBy]{Amplifying Touch}.</p>\n<p>If the target is one of your allies, they also gain a +2 status bonus to AC, a +1 status bonus to their attack rolls and deals 1 additional spirit damage on all their strikes until the end of their next turn. In addition, all their Strikes are holy until the end of their next turn.</p>",
@@ -1461,7 +1461,7 @@
       "name": "Spell Effect: Runic Weapon"
     },
     "Spell Effect: Sacred Form": {
-      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.MMCQsh12TPaDdPbV]{Sacred Form}</p>\n<p>While in this form, you gain the statistics and abilities listed below. You have hands in this battle form and can use manipulate actions. You can Dismiss the spell. You gain the following statistics and abilities.</p><ul><li>AC = 20 + your level. Ignore your armor's check penalty and Speed reduction.</li><li>10 temporary Hit Points.</li><li>Speed 40 feet.</li><li>Resistance 3 against physical damage.</li><li>Darkvision.</li><li>A special attack with a sacred armament, which is the only attack you can use. Your attack modifier with the sacred armament is +21, and your damage bonus is +8 (or +6 for a ranged attack). The damage dice for Strikes with the weapon are @Damage[3d6[bludgeoning]] damage plus @Damage[1d6[spirit]] damage. If you have a deity, you can have the weapon take the form of your deity's favored weapon and use its damage die size, damage type, and traits. If the favored weapon is a simple weapon with 1d4 or @Damage[1d6[untyped]] damage die, the weapon damage dice are one size larger than normal, though the spirit damage is unchanged. You can also use your attack modifier with this favored weapon if it's higher than that given by the spell.</li><li>Athletics modifier of +23, unless your own is higher.</li>\n</ul>\n<hr /><p><strong>Heightened (8th)</strong> You instead gain AC = 21 + your level, 15 temporary Hit Points, resistance 4 against physical damage, attack modifier +28, damage bonus +15 (+12 for a ranged attack), and Athletics +29. If you're Medium or smaller, your battle form is Large, and your attacks also have 10-foot reach, or 15-foot reach if you're using a favored weapon with reach.</p>\n<hr />\n<p><em>Note: The special attack is not added at this time due to the large amount of player choice and missing deity automation. Additionally, the resistance and removal of armor penalties cannot be automated at present. Please apply these manually for the time being.</em></p>",
+      "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.MMCQsh12TPaDdPbV]{Sacred Form}</p>\n<p>You gain the following statistics and abilities.</p><ul><li><p>AC = 20 + your level. Ignore your armor's check penalty and Speed reduction.</p></li><li><p>10 temporary Hit Points.</p></li><li><p>Speed 40 feet.</p></li><li><p>Resistance 3 against physical damage.</p></li><li><p>Darkvision.</p></li><li><p>A special attack with a sacred armament, which is the only attack you can use. Your attack modifier with the sacred armament is +21, and your damage bonus is +8. The damage dice for Strikes with the weapon are 3d6 bludgeoning damage plus 1d6 spirit damage.</p></li><li><p>Athletics modifier of +23, unless your own is higher.</p></li></ul><hr /><p><strong>Heightened (8th)</strong> You instead gain AC = 21 + your level, 15 temporary Hit Points, resistance 4 against physical damage, attack modifier +28, damage bonus +15, and Athletics +29. If you're Medium or smaller, your battle form is Large, and your attacks also have 10-foot reach.</p>",
       "name": "Spell Effect: Sacred Form"
     },
     "Spell Effect: Safeguard Secret": {
