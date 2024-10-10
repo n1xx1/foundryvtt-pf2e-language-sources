@@ -47,6 +47,9 @@ export interface BaseEntry {
   _id: string;
   name: string;
   flags?: Record<string, unknown>;
+  _stats?: {
+    compendiumSource?: string;
+  };
 }
 
 export interface EntryHazard extends BaseEntry {

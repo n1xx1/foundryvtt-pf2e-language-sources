@@ -1,24 +1,23 @@
 name: Main
 
-on:
-  workflow_dispatch:
-    branches: [main]
+on: workflow_dispatch
 
 jobs:
   main:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         with:
           version: latest
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
+          run_install: false
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: main
 
@@ -28,7 +27,7 @@ jobs:
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
       - name: Cache pnpm Deps
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
           key: pnpm-store-${{ hashFiles('main/pnpm-lock.yaml') }}
@@ -40,7 +39,7 @@ jobs:
         run: pnpm install
 
       - name: FVTTPF2E - Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: foundryvtt/pf2e
           ref: master
@@ -48,7 +47,7 @@ jobs:
 
       - name: FVTTPF2E - Cache NPM Deps
         id: cache-npm
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: system/node_modules/
           key: npm-${{ hashFiles('system/package-lock.json') }}
@@ -60,7 +59,7 @@ jobs:
 
       - name: FVTTPF2E - Cache Packs
         id: cache-packs
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: system/static/packs/
           key: pf-packs-${{ hashFiles('system/packs/**/*') }}

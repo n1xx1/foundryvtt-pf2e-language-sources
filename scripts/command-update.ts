@@ -24,7 +24,7 @@ const timeRegex = /^(?:1|2|3|reaction|free|[\d.,]+ (?:minutes?|days?|hours?))$/;
 async function setupOut() {
   await mkdir("tmp", { recursive: true }).catch(() => Promise.resolve());
   await mkdir("lang/compendium", { recursive: true }).catch(() =>
-    Promise.resolve()
+    Promise.resolve(),
   );
 }
 
@@ -36,7 +36,7 @@ const foundCompendiumAssociations = new Set<string>();
 
 function resolveDescription(
   description: string,
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ) {
   description = description.replace(/\u001e/g, " ");
   description = description.replace(
@@ -46,7 +46,7 @@ function resolveDescription(
       compendium: string,
       kind: string,
       id: string,
-      display: string
+      display: string,
     ) => {
       foundCompendiumAssociations.add(`${compendium}:${kind}`);
 
@@ -61,7 +61,7 @@ function resolveDescription(
         return `@UUID[Compendium.pf2e.${compendium}.${kind}${id}]${display}`;
       }
       return original;
-    }
+    },
   );
   return description;
 }
@@ -70,7 +70,7 @@ async function handleItem(
   id: string,
   label: string,
   entries: EntryItem[],
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ) {
   const out: Compendium = {
     label,
@@ -84,7 +84,7 @@ async function handleItem(
     if (entry.system.description.value) {
       el.description = resolveDescription(
         entry.system.description.value,
-        allPacksMap
+        allPacksMap,
       );
     }
 
@@ -93,7 +93,7 @@ async function handleItem(
 
       if (entry.system.heightening?.type === "fixed") {
         for (const [level, overrides] of Object.entries(
-          entry.system.heightening.levels
+          entry.system.heightening.levels,
         )) {
           const el1 = mapSpellData(overrides);
           if (el1) {
@@ -106,7 +106,7 @@ async function handleItem(
       const prerequisites = entry.system.prerequisites?.value ?? [];
       if (prerequisites.length > 0) {
         el.featPrerequisites = Object.fromEntries(
-          entry.system.prerequisites.value.map((v, i) => [i, v.value])
+          entry.system.prerequisites.value.map((v, i) => [i, v.value]),
         );
       }
     }
@@ -155,7 +155,7 @@ async function handleRollTable(
   id: string,
   name: string,
   entries: EntryRollTable[],
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ) {
   const out: Compendium = {
     label: name,
@@ -180,7 +180,7 @@ async function handleMacro(
   id: string,
   name: string,
   entries: EntryMacro[],
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ) {
   const out: Compendium = {
     label: name,
@@ -201,7 +201,7 @@ async function handleJournalEntry(
   id: string,
   name: string,
   entries: EntryJournalEntry[],
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ) {
   const out: Compendium = {
     label: name,
@@ -226,7 +226,7 @@ async function handleJournalEntry(
               name: p.name,
               text: resolveDescription(p.text.content, allPacksMap),
             },
-          ])
+          ]),
       );
     }
   }
@@ -300,7 +300,7 @@ async function handleActor(
   id: string,
   label: string,
   entries: EntryActor[],
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ) {
   const out: Compendium = {
     label,
@@ -316,25 +316,25 @@ async function handleActor(
         if (entry.system.details.description) {
           el.description = resolveDescription(
             entry.system.details.description,
-            allPacksMap
+            allPacksMap,
           );
         }
         if (entry.system.details.disable) {
           el.hazardDisable = resolveDescription(
             entry.system.details.disable,
-            allPacksMap
+            allPacksMap,
           );
         }
         if (entry.system.details.reset) {
           el.hazardReset = resolveDescription(
             entry.system.details.reset,
-            allPacksMap
+            allPacksMap,
           );
         }
         if (entry.system.details.routine) {
           el.hazardRoutine = resolveDescription(
             entry.system.details.routine,
-            allPacksMap
+            allPacksMap,
           );
         }
         continue;
@@ -346,7 +346,7 @@ async function handleActor(
       if (entry.system.details.publicNotes) {
         el.description = resolveDescription(
           entry.system.details.publicNotes,
-          allPacksMap
+          allPacksMap,
         );
       }
 
@@ -389,7 +389,7 @@ async function handleActor(
 
           const [compendiumItem, compendiumId, origin] = findItemInCompendium(
             item,
-            allPacksMap
+            allPacksMap,
           );
 
           if (!compendiumItem) {
@@ -400,7 +400,7 @@ async function handleActor(
             if (item.system.description.value) {
               itemEl.description = resolveDescription(
                 item.system.description.value,
-                allPacksMap
+                allPacksMap,
               );
             }
             continue;
@@ -411,7 +411,7 @@ async function handleActor(
             !item.system.description.value ||
             compareStrings(
               compendiumItem.system.description.value,
-              item.system.description.value
+              item.system.description.value,
             ) ||
             ignoredDescriptionItemTypes.includes(item.type);
 
@@ -426,7 +426,7 @@ async function handleActor(
           if (!sameDesc && item.system.description.value) {
             itemEl.description = resolveDescription(
               item.system.description.value,
-              allPacksMap
+              allPacksMap,
             );
           }
           if (origin === "matching") {
@@ -463,11 +463,11 @@ function isIgnoredItem(item: EntryItem) {
 
 export function findItemInCompendium(
   item: EntryItem,
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ): [EntryItem | null, string, string] {
-  const sourceId: string | undefined = (item.flags?.core as any)?.sourceId;
-
+  const sourceId: string | undefined = item._stats?.compendiumSource;
   const [matchingItem, pack, only] = findByMatchingItem(item, allPacksMap);
+
   if (sourceId) {
     const [sourceItem, compendiumId] = findBySourceId(sourceId, allPacksMap);
     // if the real source is correct then just respect the source
@@ -489,10 +489,10 @@ export function findItemInCompendium(
 
 function findBySourceId(
   sourceId: string,
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ): [item: EntryItem | null, compendiumId: string] {
   const match = sourceId.match(
-    /^Compendium\.pf2e\.([^\.]+).([^\.]+).([^\.]+)(?:\.Item\.([^\.]+))?$/
+    /^Compendium\.pf2e\.([^\.]+).([^\.]+).([^\.]+)(?:\.Item\.([^\.]+))?$/,
   );
   if (!match) {
     return [null, ""];
@@ -511,7 +511,7 @@ function findBySourceId(
 
   return [
     ((sourceItem.system as any).items as EntryItem[])?.find(
-      (x) => x._id === itemId
+      (x) => x._id === itemId,
     ) ?? null,
     origin,
   ];
@@ -519,7 +519,7 @@ function findBySourceId(
 
 function findByMatchingItem(
   item: EntryItem,
-  allPacksMap: Map<string, PackData>
+  allPacksMap: Map<string, PackData>,
 ): [item: EntryItem | null, pack: string, only: boolean] {
   const founds: (EntryItem & { _pack: string })[] = [];
   for (const p of allPacksMap.values()) {
@@ -529,7 +529,7 @@ function findByMatchingItem(
     founds.push(
       ...(p.entries as EntryItem[])
         .filter((entry) => entry.name === item.name)
-        .map((entry) => ({ ...entry, _pack: p.name }))
+        .map((entry) => ({ ...entry, _pack: p.name })),
     );
   }
   if (
@@ -543,7 +543,7 @@ function findByMatchingItem(
   const found = founds.find(
     (entry) =>
       entry.type === item.type &&
-      entry.system.description.value === item.system.description.value
+      entry.system.description.value === item.system.description.value,
   );
   if (found) {
     return [found, `pf2e.${found._pack}.Item.${found._id}`, false];
@@ -553,7 +553,7 @@ function findByMatchingItem(
 
 function findByName(
   name: string,
-  allPacksMap: Map<string, PackData> | PackData
+  allPacksMap: Map<string, PackData> | PackData,
 ) {
   const iterator =
     allPacksMap instanceof Map ? allPacksMap.values() : [allPacksMap];
@@ -562,7 +562,7 @@ function findByName(
       continue;
     }
     const found = (p.entries as EntryItem[]).find(
-      (entry) => entry.name === name
+      (entry) => entry.name === name,
     );
     if (found) {
       return found;
@@ -578,7 +578,7 @@ interface LangFile {
 export async function commandUpdate(systemDir = "../system") {
   await setupOut();
   const manifest = await readManifest(
-    path.join(systemDir, "static", "system.json")
+    path.join(systemDir, "static", "system.json"),
   );
   const [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
 
@@ -592,7 +592,7 @@ export async function commandUpdate(systemDir = "../system") {
   await writeFile("lang/en.json", JSON.stringify(langData, null, 2));
 
   const allPacksMap = new Map<string, PackData>(
-    allPacks.map((p) => [p.name, p])
+    allPacks.map((p) => [p.name, p]),
   );
 
   for (const pack of allPacks) {
@@ -602,35 +602,35 @@ export async function commandUpdate(systemDir = "../system") {
           pack.name,
           pack.label,
           pack.entries as EntryActor[],
-          allPacksMap
+          allPacksMap,
         );
       } else if (pack.type === "Item") {
         await handleItem(
           pack.name,
           pack.label,
           pack.entries as EntryItem[],
-          allPacksMap
+          allPacksMap,
         );
       } else if (pack.type === "JournalEntry") {
         await handleJournalEntry(
           pack.name,
           pack.label,
           pack.entries as EntryJournalEntry[],
-          allPacksMap
+          allPacksMap,
         );
       } else if (pack.type === "RollTable") {
         await handleRollTable(
           pack.name,
           pack.label,
           pack.entries as EntryRollTable[],
-          allPacksMap
+          allPacksMap,
         );
       } else if (pack.type === "Macro") {
         await handleMacro(
           pack.name,
           pack.label,
           pack.entries as EntryMacro[],
-          allPacksMap
+          allPacksMap,
         );
       } else {
         throw new Error(`not implemented: ${pack.type}`);
