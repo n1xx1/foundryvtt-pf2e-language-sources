@@ -240,6 +240,7 @@ export const sourceState: Record<string, SourceState> = {
     source: [
       "Pathfinder: Age of Ashes Player's Guide",
       "Age of Ashes Player's Guide",
+      "Pathfinder Age of Ashes Player's Guide",
       "Pathfinder #145",
       "Pathfinder #145: Hellknight Hill",
     ],
@@ -280,6 +281,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Extinction Curse Player's Guide",
+      "Pathfinder Extinction Curse Player's Guide",
       "Pathfinder #151",
       "Pathfinder #151: The Show Must Go On",
     ],
@@ -325,6 +327,7 @@ export const sourceState: Record<string, SourceState> = {
     source: [
       "Pathfinder: Agents of Edgewatch Player's Guide",
       "Agents of Edgewatch Player's Guide",
+      "Pathfinder Agents of Edgewatch Player's Guide",
       "Pathfinder #157",
       "Pathfinder #157: Devil at the Dreaming Palace",
     ],
@@ -369,6 +372,7 @@ export const sourceState: Record<string, SourceState> = {
     source: [
       "Abomination Vaults Player's Guide",
       "Pathfinder: Abomination Vaults Player's Guide",
+      "Pathfinder Abomination Vaults Player's Guide",
       "Pathfinder #163",
       "Pathfinder #163: Ruins of Gauntlight",
       "Pathfinder Abomination Vaults Hardcover Compilation",
@@ -402,6 +406,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Fists of the Ruby Phoenix Player's Guide",
+      "Pathfinder Fists of the Ruby Phoenix Player's Guide",
       "Pathfinder #166",
       "Pathfinder #166: Despair on Danger Island",
     ],
@@ -434,6 +439,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Strength of Thousands Player's Guide",
+      "Pathfinder Strength of Thousands Player's Guide",
       "Strength of Thousands Player's Guide",
       "Pathfinder #169",
       "Pathfinder #169: Kindled Magic",
@@ -479,6 +485,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Quest for the Frozen Flame Player's Guide",
+      "Pathfinder Quest for the Frozen Flame Player's Guide",
       "Pathfinder #175: Broken Tusk Moon",
     ],
     language: ["it"],
@@ -500,6 +507,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Outlaws of Alkenstar Player's Guide",
+      "Pathfinder Outlaws of Alkenstar Player's Guide",
       "Pathfinder #178: Punks in a Powder Keg",
     ],
     language: [],
@@ -521,6 +529,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Blood Lords Player's Guide",
+      "Pathfinder Blood Lords Player's Guide",
       "Pathfinder #181: Zombie Feast",
     ],
     language: ["it"],
@@ -594,6 +603,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Stolen Fate Player's Guide",
+      "Pathfinder Stolen Fate Player's Guide",
       "Pathfinder #190: The Choosing",
     ],
     language: [],
@@ -615,6 +625,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Sky King's Tomb Player's Guide",
+      "Pathfinder Sky King's Tomb Player's Guide",
       "Pathfinder #193: Mantle of Gold",
     ],
     language: [],
@@ -636,6 +647,7 @@ export const sourceState: Record<string, SourceState> = {
     type: "adventure-path",
     source: [
       "Pathfinder: Season of Ghosts Player's Guide",
+      "Pathfinder Season of Ghosts Player's Guide",
       "Season of Ghosts Player's Guide",
       "Pathfinder #196: The Summer That Never Was",
     ],
@@ -665,6 +677,7 @@ export const sourceState: Record<string, SourceState> = {
     source: [
       "Pathfinder #200: Seven Dooms for Sandpoint",
       "Pathfinder: Seven Dooms for Sandpoint Player's Guide",
+      "Pathfinder Seven Dooms for Sandpoint Player's Guide",
       "Seven Dooms for Sandpoint Player's Guide",
     ],
     language: [],
@@ -675,6 +688,7 @@ export const sourceState: Record<string, SourceState> = {
     source: [
       "Pathfinder #201: Pactbreaker",
       "Pathfinder: Wardens of Wildwood Player's Guide",
+      "Pathfinder Wardens of Wildwood Player's Guide",
     ],
     language: [],
   },
@@ -693,19 +707,28 @@ export const sourceState: Record<string, SourceState> = {
   "curtain-call1": {
     name: "Curtain Call",
     type: "adventure-path",
-    source: ["Pathfinder Curtain Call Player's Guide"],
+    source: [
+      "Pathfinder Curtain Call Player's Guide",
+      "Pathfinder #204: Stage Fright",
+    ],
     language: [],
   },
   "curtain-call2": {
     name: "Curtain Call",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #205: Singer, Stalker, Skinsaw Man"],
     language: [],
   },
   "curtain-call3": {
     name: "Curtain Call",
     type: "adventure-path",
-    source: [],
+    source: ["Pathfinder #206: Bring the House Down"],
+    language: [],
+  },
+  "triumph-of-the-tusk1": {
+    name: "Triumph of The Tusk",
+    type: "adventure-path",
+    source: ["Pathfinder Triumph of The Tusk Player's Guide"],
     language: [],
   },
   // Adventures
@@ -796,10 +819,16 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Adventure: A Few Flowers More"],
     language: [],
   },
+  "the-great-toy-heist": {
+    name: "A Few Flowers More",
+    type: "adventure",
+    source: ["Pathfinder Free RPG Day Adventure: The Great Toy Heist"],
+    language: [],
+  },
   "prey-for-death": {
     name: "Prey for Death",
     type: "adventure",
-    source: [],
+    source: ["Pathfinder Adventure: Prey for Death"],
     language: [],
   },
   // One-Shots
@@ -847,10 +876,15 @@ export const sourceState: Record<string, SourceState> = {
       "Paizo Blog: Kineticist Playtest Analysis",
       "Azarketi Ancestry Web Supplement",
       "Pathfinder: Wake the Dead #1",
+      "Pathfinder Wake the Dead #1",
       "Pathfinder: Wake the Dead #2",
+      "Pathfinder Wake the Dead #2",
       "Pathfinder: Wake the Dead #3",
+      "Pathfinder Wake the Dead #3",
       "Pathfinder: Wake the Dead #4",
+      "Pathfinder Wake the Dead #4",
       "Pathfinder: Wake the Dead #5",
+      "Pathfinder Wake the Dead #5",
       "Pathfinder Dark Archive Web Supplement: In Darkness",
       "Pathfinder Blog: April Fool's Bestiary",
       "Pathfinder Critical Decks",
@@ -903,7 +937,7 @@ export const sourceState: Record<string, SourceState> = {
 };
 
 export const sourceStateMap = new Map(
-  Object.entries(sourceState).flatMap(([k, v]) => v.source.map((h) => [h, k]))
+  Object.entries(sourceState).flatMap(([k, v]) => v.source.map((h) => [h, k])),
 );
 
 function escapeRegExp(s: string) {
