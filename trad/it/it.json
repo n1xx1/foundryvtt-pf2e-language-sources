@@ -1737,6 +1737,12 @@
             },
             "decaying": {
                 "Name": "Decadente"
+            },
+            "disrupting": {
+                "Name": "Distruttiva",
+                "Note": {
+                    "criticalSuccess": "In caso di colpo critico, il non morto è anche @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino alla fine del tuo prossimo turno."
+                }
             }
         },
         "Action": {
@@ -3366,7 +3372,9 @@
                     "CommonLanguage": "Comune ({language})",
                     "DetailsPlaceholder": "Avvertenze, altre specifiche insolite",
                     "yithian": "Yithian",
-                    "lashunta": "Lashunta"
+                    "lashunta": "Lashunta",
+                    "wayang": "Wayang",
+                    "tang": "Tang"
                 },
                 "Shield": {
                     "ACBonus": "Bonus CA Scudo (Quando Alzato)",
@@ -4326,7 +4334,9 @@
                     },
                     "Nymph": "Ninfa",
                     "AnimalAquatic": "Animale Acquatico",
-                    "AnimalAerial": "Animale Volante"
+                    "AnimalAerial": "Animale Volante",
+                    "Tailless": "Senza Coda",
+                    "Fox": "Volpe"
                 },
                 "Label": "Forma Attuale"
             },
@@ -7155,6 +7165,9 @@
         "Mutagens": {
             "BestialMutagen": {
                 "FeralPrompt": "Incrementare la penalità alla CA per aumentare la categoria del dado di danno?"
+            },
+            "SereneMutagen": {
+                "PenaltyLabel": "Mutageno della Serenità — Lancio di incantesimo offensivo."
             }
         },
         "OracleCurses": {
@@ -7647,7 +7660,11 @@
                 "ShieldOrWeapon": "Seleziona uno scudo o un'arma.",
                 "Feature": "Seleziona una caratteristica.",
                 "Immunity": "Seleziona un'immunità.",
-                "SavingThrow": "Seleziona un tiro salvezza."
+                "SavingThrow": "Seleziona un tiro salvezza.",
+                "EquipmentVariety": "Seleziona una varietà dell'oggetto.",
+                "DieSize": "Seleziona la dimensione del dado.",
+                "SkillTrained": "Seleziona una abilità addestrata.",
+                "SkillUntrained": "Seleziona un'abilità senza addestramento."
             },
             "SneakAttack": "Attacco Furtivo",
             "SpecialtyCrafting": {
@@ -7814,7 +7831,7 @@
                         "Aberrant": "Un bersaglio subisce penalità di status –1 alla tiri salvezza su Volontà per 1 round, o tu ottieni un bonus di status +2 ai tiri salvezza su Volontà per 1 round.",
                         "Angelic": "Te stesso o un bersaglio ottiene un bonus di status +1 ai tiri salvezza per 1 round.",
                         "Draconic": "Te stesso o un bersaglio ottiene un bonus di status +1 alla CA per 1 round.",
-                        "Hag": "Perfide maledizioni puniscono i tuoi nemici. La prima creatura a infliggerti danni prima della fine del tuo turno successivo subisce @Damage[@item.level[mental]]{$1 danni con tratto mentale} e deve effettuare un tiro salvezza @Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)].",
+                        "Hag": "La prima creatura a infliggerti danni prima della fine del tuo turno successivo subisce @Damage[@item.level[mental]]{$1 danni con tratto mentale} (TS @Check[will|basic|against:spell]); se nessuna creatura ti ha inflitto danni in quell'arco di tempo, consumi quel rancore per ottenere Punti Ferita temporanei all'inizio del tuo turno successivo uguali al grado dell'incantesimo. Questi Punti Ferita temporanei durano fino all'inizio del tuo prossimo turno.",
                         "Title": "Magia del Sangue",
                         "Undead": "Ottieni Punti Ferita temporanei pari al grado dell'incantesimo fino all'inizio del tuo prossimo turno, oppure un bersaglio subisce @Damage[@item.level[void]]{$1 danni negativi} (se l'incantesimo infligge già quel tipo di danni iniziali, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze).",
                         "Imperial": "Fino all'inizio del tuo prossimo turno ottieni un bonus di status +1 alla CA o ai tuoi tiri salvezza, a tua scelta.",
@@ -8019,7 +8036,31 @@
                     "Prompt": "Scegli una bomba da aggiungere alla balestra."
                 },
                 "ResearchField": {
-                    "Prompt": "Seleziona un campo di ricerca."
+                    "Prompt": "Seleziona un campo di ricerca.",
+                    "Bomber": {
+                        "GreaterFieldDiscovery": "Incrementi l'area di spargimento delle tue bombe fino a danneggiare le creature entro 3 metri, o entro 4,5 metri se possiedi Spargimento Ampliato.",
+                        "FieldBenefit": "Quando lanci una bomba alchemica con il tratto spargimento, puoi scegliere di infliggere i danni da spargimento soltanto al tuo bersaglio principale invece che nell'aria di spargimento."
+                    }
+                },
+                "ImprovedInvigoratingElixir": {
+                    "Mental": {
+                        "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{confuso}, controllato, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{in fuga}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzato}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato}."
+                    },
+                    "Physical": {
+                        "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Accecato}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{assordato}, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{risucchiato}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzato}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato}"
+                    }
+                },
+                "UncannyBombs": {
+                    "Note": "Superi automaticamente la prova semplice quando prendi a bersaglio una creatura @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultata}."
+                },
+                "ExpandedSplash": {
+                    "Note": "I danni da spargimento influenzano ogni creatura entro 3 metri dal bersaglio invece che 1,5 metri."
+                },
+                "Alchemy": {
+                    "IdentifyAlchemy": "Identifichi automaticamente gli oggetti alchemici dei quali hai la formula."
+                },
+                "AlchemicalAssessment": {
+                    "Note": "Se hai la formula dell'oggetto che tenti di identificare, e tiri un fallimento critico, lo consideri come un fallimento."
                 }
             },
             "AnimalSkin": {
@@ -8122,7 +8163,27 @@
                     "PositiveDamage": "Danni Positivi"
                 },
                 "Superstition": {
-                    "TargetingCaster": "Assistito al lancio di un incantesimo del bersaglio"
+                    "TargetingCaster": "Assistito al lancio di un incantesimo del bersaglio",
+                    "RagingResistance": {
+                        "Prompt": "Seleziona una tradizione magica associata.",
+                        "ResistanceLabels": {
+                            "ArcaneAndOccult": "Incantesimi arcani e occulti",
+                            "ArcaneAndPrimal": "Incantesimi primevi e arcani",
+                            "DivineAndOccult": "Incantesimi divini e occulti",
+                            "DivineAndPrimal": "Incantesimi divini e primevi"
+                        },
+                        "Traditions": {
+                            "DivineAndPrimal": "Divina e Primeva",
+                            "DivineAndOccult": "Divina e Occulta",
+                            "ArcaneAndPrimal": "Arcana e Primeva",
+                            "ArcaneAndOccult": "Arcana e Occulta"
+                        }
+                    }
+                },
+                "ComeAndGetMe": {
+                    "TemporaryHitPoints": "Se colpisci una creatura che ti ha colpino prima della fine del tuo prossimo turno, acquisisci Punti Ferita temporanei pari al tuo modificatore di Costituzione, che raddoppiano se infliggi un colpo critico. I Punti Ferita temporanei durano fino al termine della Furia. @UUID[Compendium.pf2e.feat-effects.Item.CYmipBeliNuymENB]{Effetto: Vieni a Prendermi (Punti Ferita Temporanei)}",
+                    "IncomingDamage": "Se una creatura ti colpisce, diventa @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparata} nei tuoi confronti fino alla fine del tuo turno successivo.",
+                    "Name": "Vieni a Prendermi"
                 }
             },
             "Bard": {
@@ -8319,6 +8380,14 @@
                 },
                 "SerpentDagger": {
                     "Note": "Quando ottieni un successo critico con un tiro per colpire con il <em>pugnale avvelenato</em>, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 1} se non supera un TS su @Check[fortitude|dc:19]."
+                },
+                "HealersGel": {
+                    "Greater": "Pomata del Guaritore Superiore",
+                    "Lesser": "Pomata del Guaritore Inferiore",
+                    "Moderate": "Pomata del Guaritore Moderata"
+                },
+                "DazzlingRosary": {
+                    "Note": "Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} fino all'inizio del tuo prossimo turno."
                 }
             },
             "Fetchling": {
@@ -8349,7 +8418,8 @@
             "Ganzi": {
                 "Irrepressible": {
                     "SaveNote": "Quando ottieni un successo in un tiro salvezza contro un effetto di emozione o paura, lo consideri un successo critico."
-                }
+                },
+                "Resistance": "Resistenza Ganzi"
             },
             "Gnome": {
                 "GrimInsight": {
@@ -8532,7 +8602,8 @@
                     "Mobile": "Mobile",
                     "ConfidentNote": "Infliggi al bersaglio la metà dei @Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{danni del tuo colpo preciso}. Questo tipo di danno è quello dell'arma o dell'attacco senz'armi che hai usato per il Colpo.",
                     "PreciseNote": "In caso di fallimento, applichi @Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{l'intero danno di colpo preciso} invece della metà."
-                }
+                },
+                "PanacheFailure": "Ottieni spavalderia fino alla fine del tuo prossimo turno @UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]{Effetto: Spavalderia}"
             },
             "Suli": {
                 "Dualborn": {
@@ -8679,6 +8750,15 @@
                 },
                 "Hatred": {
                     "Label": "Odio"
+                },
+                "Misery": {
+                    "Label": "Sofferenza"
+                },
+                "Pride": {
+                    "Label": "Orgoglio"
+                },
+                "Remorse": {
+                    "Label": "Rimorso"
                 }
             },
             "Magus": {
@@ -8838,13 +8918,20 @@
                         "Label": "Prova Instabile",
                         "CriticalFailure": "L'innovazione non può più essere usata per altre azioni instabili, inoltre subisci anche @Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]{$1 danni da fuoco}. @UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]{Effetto: Fallimento Prova Instabile}"
                     },
-                    "Stable": "Stabile"
+                    "Stable": "Stabile",
+                    "FailureNote": "Non puoi usare altre azioni instabili. In qualità di creatore dell'innovazione, puoi spendere 10 minuti per rimettere a punto l'innovazione e fare le modifiche necessarie per ripristinarne la funzionalità; a quel punto puoi usare di nuovo le azioni instabili con quell'innovazione.",
+                    "UnstableFunction": {
+                        "Label": "Abilita Azioni Instabili"
+                    }
                 },
                 "Overdrive": {
                     "CriticalFailure": "Ops! Qualcosa esplode. Subisci @Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]{danni da fuoco pari al tuo livello} e non puoi usare di nuovo Sovraccarico per 1 minuto, mentre gli aggeggi si raffreddano e si resettano.",
                     "FireDamage": "Sovraccarico: Danni da Fuoco",
                     "CriticalSuccess": "I tuoi congegni entrano in uno stato di incredibile efficienza chiamato @UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{sovraccarico} critico, aggiungendo grande potenza ai tuoi attacchi.",
                     "Success": "I tuoi congegni entrano in @UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{sovraccarico}, aggiungendo potenza ai tuoi attacchi."
+                },
+                "PersistentBoost": {
+                    "Label": "Potenziamento Persistente"
                 }
             },
             "SnipersAim": {
@@ -8943,6 +9030,9 @@
                 },
                 "ExperiencedProfessional": {
                     "Note": "Se sei esperto in Sapienza, guadagni il doppio dei soldi che avresti guadagnato fallendo la prova per Guadagnare, a meno che in origine tu non abbia subito un fallimento critico."
+                },
+                "DuosAim": {
+                    "Note": "Ignori l'occultamento del bersaglio."
                 }
             },
             "RelicGift": {
@@ -9429,7 +9519,10 @@
                 "ForcibleEnergy": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni da acido, da elettricità, da fuoco o sonori, puoi selezionare un bersaglio che è stato danneggiato e fargli ottenere debolezza 5 a quel tipo di danno fino alla fine del tuo turno successivo. Se un incantesimo infligge più tipi di danni da energia, scegli quello a cui il bersaglio ottiene debolezza. Questo non ha effetto sulle creature con resistenza o immunità al tipo di energia che scegli. @UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{Effetto: Energia Violenta}",
                 "InTune": "Se la tua prossima azione è lanciare un incantesimo di composizione con un'area di emanazione, la sua aura si espande da un alleato consenziente a tua scelta entro 18 metri invece che da te. Se hai Rivolgersi al Pubblico, puoi fare in modo che quel cono origini invece dal tuo alleato.",
                 "LeyLineConduit": "Se la tua azione successiva è Lancire un Incantesimo di 5° grado o inferiore che non ha durata, non consumi l'incantesimo preparato.",
-                "MelodiousSpell": "L'incantesimo ottiene il tratto discreto. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti. Con l'uso di Incatesimi Melodiosi puoi scegliere di @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Creare un Diversivo}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Esibirti} o Richiedere. Se lo fai, l'incanteismo che lanci daeve avere i tratti uditivo, emozione, sonico o visuale per ottenere il tratto discreto."
+                "MelodiousSpell": "L'incantesimo ottiene il tratto discreto. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti. Con l'uso di Incatesimi Melodiosi puoi scegliere di @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Creare un Diversivo}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Esibirti} o Richiedere. Se lo fai, l'incanteismo che lanci daeve avere i tratti uditivo, emozione, sonico o visuale per ottenere il tratto discreto.",
+                "PurifyingSpell": "Se la tua prossima azione è lanciare _guarire_ su una singola creatura vivente, puoi tentare di contrastare una malattia o un veleno che influenza il bersaglio, oltre agli effetti benefici di _guarire_. Se lo fai, _guarire_ ottiene il tratto acqua.",
+                "OstentatiousArrivalSummonSpell": "Tutte le creature in un'@Template[type:emanation|distance:10]{emanazione di 3 metri} attorno alla creatura convocata o manifestata subiscono @Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]]{$1 danni da fuoco} per livello dell'incantesimo per un incantesimo di convocazione. Se la creatura convocata o manifestata ha il tratto acido, acqua, elettricità, freddo, fuoco o sonoro, il danno è invece di quel tipo (o danni da freddo per il tratto acqua). Se la creatura ha più di uno di tali tratti, scegli che tipo di danni infligge.",
+                "OstentatiousArrivalManifestEidolon": "Tutte le creature in un'@Template[type:emanation|distance:10]{emanazione di 3 metri} attorno alla creatura convocata o manifestata subiscono @Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrayDamage]]{$1 danni da fuoco} per livello dell'incantesimo per un incantesimo di convocazione. Se la creatura convocata o manifestata ha il tratto acido, acqua, elettricità, freddo, fuoco o sonoro, il danno è invece di quel tipo (o danni da freddo per il tratto acqua). Se la creatura ha più di uno di tali tratti, scegli che tipo di danni infligge."
             },
             "CrystalLuminescence": {
                 "Normal": "Normale",
@@ -9535,7 +9628,45 @@
             "FireShield": {
                 "DefendingAgainstWaterLabel": "Difesa contro un effetto d'acqua"
             },
-            "PlayingItem": "Suona {item}"
+            "PlayingItem": "Suona {item}",
+            "DivineIntercessions": {
+                "HeiFeng": {
+                    "MinorCurse": {
+                        "ConsumedAlcohol": "Consumato Alcol"
+                    }
+                },
+                "Lamashtu": {
+                    "MinorBoon": {
+                        "LamashtusMutation": "Mutazione di Lamashtu",
+                        "DFourLabel": "1d4 (accurata, agile)",
+                        "DSixLabel": "1d6"
+                    }
+                }
+            },
+            "FrenziedRevelry": {
+                "Note": "Ogni volta che qualcuno che beneficia di questo bonus ottiene un successo critico in un tiro salvezza contro un effetto mentale di un nemico, la sua baldoria aumenta, concedendogli bonus di status +1 ai tiri per colpire e ai tiri per i danni per 1 round.@UUID[Compendium.pf2e.spell-effects.Item.ldl1aU5ovTQMUHJ2]{Effetto Incantesimo: Baldoria Sfrenata (Critico)}"
+            },
+            "ChangeShape": {
+                "Beastkin": "Assumi la tua forma umanoide o ibrida. Ogni forma ha un aspetto specifico e persistente, e la maggior parte dei teriomorfi rimane di default nella sua forma ibrida. In forma ibrida, appari come un misto della tua stirpe e del tuo animale intrinseco. Mentre sei in forma ibrida, ottieni un Colpo senz'armi con le fauci che ricorda le caratteristiche del tuo animale intrinseco (becchi per le aquile, zanne per i pipistrelli, mandibole per le vespe e cosi via). Le tue fauci infliggono 1d4 danni perforanti, hanno i tratti accurata, agile e disarmato e sono nel gruppo delle armi rissa. Nella tua forma umanoide, mantieni l'aspetto della tua stirpe originale."
+            },
+            "Assassin": {
+                "Assassinate": {
+                    "Note": "Se vai a segno, la preda subisce @Damage[(6d6[precision])[@item.system.damage.damageType]]{6d6 danni di precisione} extra con un tiro salvezza @Check[fortitude|against:class-spell|basic]. Se ottiene un fallimento critico, la preda muore a meno che non sia di un livello più alto del tuo."
+                }
+            },
+            "Organsight": {
+                "Organs": "Vedere Organi (Organi)",
+                "Skin": "Vedere Organi (Pelle)",
+                "Success": "Vedere Organi — Successo a Prova di Medicina"
+            },
+            "RapidAdaptation": {
+                "Prompt": "Questo personaggio ha già una velocità di nuotare?"
+            },
+            "Summoner": {
+                "OstentatiousArrival": {
+                    "Label": "Entrata Ostentata: Tratto Creatura."
+                }
+            }
         },
         "LevelRange": "Livelli {minLevel} - {level}",
         "BrowserWarnPackNotLoaded": "Non è stato possibile caricare il compendio \"{pack}\".",
@@ -10024,7 +10155,12 @@
                 "CrystalHazards": "pericoli associati ai cristalli",
                 "Spirits": "spiriti",
                 "AcidAndSpellsThatCauseRust": "acido e incantesimi che causano ruggine",
-                "AttacksDemons": "attacchi da demoni"
+                "AttacksDemons": "attacchi da demoni",
+                "EnemyStrikes": "Colpi nemici",
+                "BludgeoningPiercingSlashing": "danni contundenti, perforanti e taglienti",
+                "HolyBludgeoningPiercingSlashing": "danni sacri contundenti, perforanti e taglienti",
+                "UnholyBludgeoningPiercingSlashing": "danni sacrileghi contundenti, perforanti e taglienti",
+                "DraconicBreathWeapons": "soffi draconici"
             }
         },
         "Color": {
@@ -10248,7 +10384,45 @@
         "TraitAffixedToCrossbowOrFirearm": "Applicato a una Balestra o un'Arma da Fuoco",
         "TraitAffixedToFirearm": "Applicato a un'Arma da Fuoco",
         "TraitDescriptionSedacthy": "Umanoidi vvche infestano gli oceani, solitamente sono dotati di scurovisione e percezione delle onde.",
-        "TraitSedacthy": "Sedacthy"
+        "TraitSedacthy": "Sedacthy",
+        "Dragon": {
+            "Arcane": "Drago Arcano",
+            "Copper": "Drago di Rame",
+            "Divine": "Drago Divino",
+            "Black": "Drago Nero",
+            "Gold": "Drago d'Oro",
+            "Green": "Drago Verde",
+            "Occult": "Drago Occulto",
+            "Blue": "Drago Blu",
+            "Brass": "Drago di Ottone",
+            "Bronze": "Drago di Bronzo",
+            "Primal": "Drago Primevo",
+            "Red": "Drago Rosso",
+            "Silver": "Drago d'Argento",
+            "White": "Drago Bianco",
+            "Brine": "Drago della Salsedine",
+            "Cloud": "Drago delle Nuvole",
+            "Crystal": "Drago di Cristallo",
+            "Forest": "Drago delle Foreste",
+            "Magma": "Drago del Magma",
+            "Sea": "Drago Marino",
+            "Sky": "Drago Celeste",
+            "Sovereign": "Drago Sovrano",
+            "Umbral": "Drago delle Ombre",
+            "Underworld": "Drago Sotterraneo",
+            "Adamantine": "Drago d'Adamantio"
+        },
+        "FeatDescription": {
+            "Trigger": {
+                "Label": "Innesco"
+            },
+            "Frequency": {
+                "OncePerTurn": "una volta per turno"
+            },
+            "Requirements": {
+                "Label": "Prerequisiti"
+            }
+        }
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
