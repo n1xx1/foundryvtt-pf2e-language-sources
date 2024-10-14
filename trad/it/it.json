@@ -1341,7 +1341,8 @@
                             "Label": "Lingue Non Disponibili"
                         },
                         "Uncommon": "Lingue <rarity>Non Comuni</rarity>"
-                    }
+                    },
+                    "Name": "Lingue"
                 },
                 "SpellTraits": {
                     "Name": "Tratti Incantesimi",
@@ -1377,9 +1378,22 @@
                 "Tabs": {
                     "Traits": "Tratti",
                     "Damage": "Tipi di Danno",
-                    "Campaign": "Campagna"
+                    "Campaign": "Campagna",
+                    "Taxonomies": "Tassonomie Equipaggiamento"
                 },
-                "ReservedTerm": "\"{term}\" è un termine riservato."
+                "ReservedTerm": "\"{term}\" è un termine riservato.",
+                "ShieldTraits": {
+                    "Hint": "I tratti che possono essere applicati agli scudi",
+                    "Name": "Tratti Scudi"
+                },
+                "ArmorGroups": {
+                    "Hint": "La categoria intermedio della tassonomia delle armature di Pathfinder 2e (ad esempio Piastre o Maglia)",
+                    "Name": "Gruppi Armature"
+                },
+                "BaseArmors": {
+                    "Hint": "La categoria inferiore della tassonomia delle armature di Pathfinder 2e (ad esempio Armatura Completa o Cotta di Maglia)",
+                    "Name": "Tipi Base Armature"
+                }
             },
             "Tokens": {
                 "Autoscale": {
@@ -3128,7 +3142,8 @@
                 "Add": "Aggiungi Note del GM"
             },
             "CampaignFeature": {
-                "CampaignLabel": "Campagna"
+                "CampaignLabel": "Campagna",
+                "Plural": "Caratteristiche di Campagna"
             },
             "Consumable": {
                 "Category": {
@@ -3210,6 +3225,41 @@
                 "Specific": {
                     "Label": "Scudo Magico Specifico",
                     "Hint": "Impostare questo scudo come uno <i>scudo magico specifico</i> indica che fa più di quello che il suo materiale e le rune permettono. Il nome, il livello, la rarità e il prezzo non verranno più sovrascritti da un materiale prezioso o runa una volta impostato. Questi materiali però serviranno come punto di partenza per gli aggiustamenti al livello, alla rarità e al prezzo delle migliorie successive."
+                }
+            },
+            "Ability": {
+                "Category": {
+                    "None": "Nessuno",
+                    "Defensive": "Difensiva",
+                    "Interaction": "Interazione",
+                    "Offensive": "Offensiva",
+                    "Familiar": "Abilità Famiglio"
+                },
+                "FIELDS": {
+                    "deathNote": {
+                        "label": "Nota Morte"
+                    },
+                    "selfEffect": {
+                        "hint": "Un singolo oggetto effetto che deve essere applicato all'attore che usa questa azione",
+                        "label": "Effetto Applicato a Se Stesso"
+                    }
+                },
+                "Plural": "Abilità",
+                "SelfAppliedEffect": {
+                    "Applied": "{effetto} è stato applicato.",
+                    "Delete": "Elimina Riferimento",
+                    "Drop": "Trascina Effetto"
+                },
+                "Type": {
+                    "Activity": "Attività",
+                    "Free": "Azione Gratuita",
+                    "Single": "Azione Singola",
+                    "Reaction": "Reazione"
+                }
+            },
+            "FIELDS": {
+                "category": {
+                    "label": "Categoria"
                 }
             }
         },
@@ -4336,7 +4386,9 @@
                     "AnimalAquatic": "Animale Acquatico",
                     "AnimalAerial": "Animale Volante",
                     "Tailless": "Senza Coda",
-                    "Fox": "Volpe"
+                    "Fox": "Volpe",
+                    "Spider": "Ragno",
+                    "Human": "Umano"
                 },
                 "Label": "Forma Attuale"
             },
@@ -5083,7 +5135,8 @@
                     "arcane": "arcano",
                     "divine": "divino",
                     "occult": "occulto",
-                    "primal": "primevo"
+                    "primal": "primevo",
+                    "fortune-effects": "effetti di fortuna"
                 },
                 "ActorIsImmune": "{actor} è immune a {effect}.",
                 "ActorIsUnaffected": "{actor} non è influenzato da {effect}."
@@ -5232,7 +5285,8 @@
                 "NonIntegerAdjustment": "i parametri di adjustments devono essere interi",
                 "InvalidDomains": "I domini di {type} devono essere resi slug e devono terminare in -damage"
             },
-            "Invalid": "Espressione @Check non valida: {message}"
+            "Invalid": "Espressione @Check non valida: {message}",
+            "DCAdjustment": "Aggiustamento CD"
         },
         "InlineTemplateErrors": {
             "TypeMissing": "Errore in @Template: il parametro type è obbligatorio",
@@ -6963,7 +7017,8 @@
             "Give": "Dare",
             "Purchase": "Acquista",
             "PurchaseLootPrompt": "{buyer} vuole comprare questo oggetto?",
-            "PurchasePrice": "Costo d’Acquisto"
+            "PurchasePrice": "Costo d’Acquisto",
+            "SendToPartyStash": "Manda alla Scorta del Party"
         },
         "vehicle": {
             "VehicleString": "Veicolo",
@@ -7159,7 +7214,8 @@
             "DamageAlteration": "Alterazione Danni",
             "SpecialStatistic": "Statistiche Speciali",
             "TokenMark": "Marchia Token",
-            "EffectSpinoff": "Effetto Spinoff"
+            "EffectSpinoff": "Effetto Spinoff",
+            "CraftingAbility": "Abilità Fabbricazione"
         },
         "Mutagens": {
             "BestialMutagen": {
@@ -7246,7 +7302,8 @@
                 "Add": "Aggiungi",
                 "Remove": "Rimuovi",
                 "Slug": "Slug",
-                "Opacity": "Opacità"
+                "Opacity": "Opacità",
+                "Basics": "Basilari"
             },
             "GrantItem": {
                 "ReplaceSelf": "Sostituisce Se Stesso",
@@ -7299,6 +7356,23 @@
                         "Hint": "Se il File è un video, se ripeterlo o meno"
                     },
                     "Highlight": "Evidenziazione"
+                },
+                "Basics": {
+                    "Level": {
+                        "Hint": "Un livello opzionale per l'aura, da usare per impostare il livello dell'effetto che trasmette",
+                        "Label": "Livello"
+                    },
+                    "MergeExisting": {
+                        "Hint": "Se un'altra area con lo stesso slug sta venendo emessa, unisci i dati di quest'aura con l'altra, combinando i tratti e gli effetti insieme a unire i dati <em>colori</em>.",
+                        "Label": "Unisci a Esistente"
+                    },
+                    "Radius": "Raggio"
+                }
+            },
+            "TokenImage": {
+                "Ring": {
+                    "Label": "Anello Dinamico",
+                    "ScaleCorrection": "Correzione Scala"
                 }
             }
         },
@@ -9665,6 +9739,13 @@
                 "OstentatiousArrival": {
                     "Label": "Entrata Ostentata: Tratto Creatura."
                 }
+            },
+            "BreathWeapon": {
+                "Shape": {
+                    "Cone": {
+                        "Label": "Cono"
+                    }
+                }
             }
         },
         "LevelRange": "Livelli {minLevel} - {level}",
@@ -10421,7 +10502,10 @@
             "Requirements": {
                 "Label": "Prerequisiti"
             }
-        }
+        },
+        "TraitAdditive": "Additivo",
+        "TraitAttachedToMeleeWeapon": "Unito a un'Arma da Mischia",
+        "TraitVolley60": "Parabola 18m"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
