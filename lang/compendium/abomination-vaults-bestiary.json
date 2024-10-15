@@ -330,7 +330,7 @@
     "Bloodsiphon": {
       "items": {
         "P1ggE8aYgCQOaac1": {
-          "description": "<p>20 feet. When the bloodsiphon dies, its body explodes in a cloudy red burst of necrotic dried blood in a 20-foot area.</p>\n<p>Creatures in range must attempt a @Check[reflex|dc:21|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[void]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d6[void]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour.</p>",
+          "description": "<p>When the bloodsiphon dies, its body explodes in a cloudy red burst of necrotic dried blood in a @Template[emanation|distance:20]{20-foot area}.</p>\n<p>Creatures in range must attempt a @Check[reflex|dc:21|options:area-effect,damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[void]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d6[void]|options:area-damage] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d6[void]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour.</p>",
           "name": "Death Burst"
         },
         "eGvWOYTY1N6i6QpT": {
@@ -542,7 +542,7 @@
           "name": "Swift Leap"
         },
         "qtILk42sO65XzDmW": {
-          "description": "<p><strong>Requirements</strong> The Canker cultist is adjacent to the corpse of a creature that died within the last hour, or is carrying a specially prepared lump of decaying flesh.</p>\n<hr />\n<p><strong>Effect</strong> The Canker cultist devours a chunk of the corpse or the lump of decaying flesh and regains Hit Points. They regain [[/r 1d6[healing]]] Hit Points from consuming the flesh of a creature that died within the last hour, and @Damage[2d6[healing]] Hit Points from the lump.</p>\n<p>The cultist can regain Hit Points from any given corpse only once.</p>",
+          "description": "<p><strong>Requirements</strong> The Canker cultist is adjacent to the corpse of a creature that died within the last hour, or is carrying a specially prepared lump of decaying flesh.</p>\n<hr />\n<p><strong>Effect</strong> The Canker cultist devours a chunk of the corpse or the lump of decaying flesh and regains Hit Points. They regain @Damage[1d6[healing]] Hit Points from consuming the flesh of a creature that died within the last hour, and @Damage[2d6[healing]] Hit Points from the lump.</p>\n<p>The cultist can regain Hit Points from any given corpse only once.</p>",
           "name": "Consume Flesh"
         },
         "xiPg19A6nSvNNq01": {
@@ -694,7 +694,7 @@
           "name": "Wisp Form"
         },
         "Y0gOm1Uz3dMu6Q4W": {
-          "description": "<p><strong>Prerequisites</strong> The corpselight is in wisp form and is adjacent to a Medium or Small corpse that hasn't been claimed by a corpselight in the past 24 hours</p>\n<hr />\n<p><strong>Effect</strong> The corpselight merges with the corpse, causes the corpse to Stand, and regains [[/r 3d6[healing]]] Hit Points.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.auJ02rr1Jr88oD3Z]{Effect: Claim Corpse - Fleshy}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3np7EyJ8pyrVlpie]{Effect: Claim Corpse - Skeletal}</p>",
+          "description": "<p><strong>Prerequisites</strong> The corpselight is in wisp form and is adjacent to a Medium or Small corpse that hasn't been claimed by a corpselight in the past 24 hours</p>\n<hr />\n<p><strong>Effect</strong> The corpselight merges with the corpse, causes the corpse to Stand, and regains @Damage[3d6[healing]] Hit Points.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.auJ02rr1Jr88oD3Z]{Effect: Claim Corpse - Fleshy}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3np7EyJ8pyrVlpie]{Effect: Claim Corpse - Skeletal}</p>",
           "name": "Claim Corpse"
         },
         "i68AZkuUsYHLKLWd": {
@@ -2115,7 +2115,7 @@
           "name": "Swift Leap"
         },
         "SiVeimRpwflBeUiq": {
-          "description": "<p><strong>Requirements</strong> Nhakazarin is adjacent to the rotting statue of Belcorra in area <strong>C34</strong></p>\n<hr />\n<p><strong>Effect</strong> Nhakazarin devours a chunk of flesh from the statue and regains [[/r 3d6[healing]]] Hit Points and is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} for 1 round. She can use this extra action only to make a jaws Strike or Cast a Spell.</p>\n<p>She can feed from the statue only once each day.</p>",
+          "description": "<p><strong>Requirements</strong> Nhakazarin is adjacent to the rotting statue of Belcorra in area <strong>C34</strong></p>\n<hr />\n<p><strong>Effect</strong> Nhakazarin devours a chunk of flesh from the statue and regains @Damage[3d6[healing]] Hit Points and is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} for 1 round. She can use this extra action only to make a jaws Strike or Cast a Spell.</p>\n<p>She can feed from the statue only once each day.</p>",
           "name": "Consume Masterpiece"
         },
         "aaRQigHJlP9Kvx4N": {
@@ -2131,7 +2131,7 @@
           "name": "Chill Touch"
         },
         "oLOpCzPI98yXuw1u": {
-          "description": "<p><strong>Requirements</strong> Nhakazarin is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Nhakazarin devours a chunk of the corpse and regains [[/r 3d6[healing]]] Hit Points.</p>\n<p>Nhakazarin can regain Hit Points from any given corpse only once.</p>",
+          "description": "<p><strong>Requirements</strong> Nhakazarin is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Nhakazarin devours a chunk of the corpse and regains @Damage[3d6[healing]] Hit Points.</p>\n<p>Nhakazarin can regain Hit Points from any given corpse only once.</p>",
           "name": "Consume Flesh"
         },
         "yD0yYDGEVE1rfNJJ": {
