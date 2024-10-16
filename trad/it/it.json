@@ -5903,7 +5903,7 @@
         "TraitDemon": "Demone",
         "TraitDero": "dero",
         "TraitDescriptionAcid": "Gli effetti con questo tratto infliggono danni da acido. Le creature con questo tratto hanno una connessione magica con l'acido.",
-        "TraitDescriptionAdditive": "I talenti con questo tratto permettono di utilizzare azioni per aggiungere sostanze speciali a bombe o elisir. Puoi aggiungere un solo additivo a un singolo oggetto alchemico: provare ad aggiungerne un altro compromette l'oggetto. In genere, puoi effettuare azioni con il tratto additivo solo quando crei un oggetto alchemico infuso, e alcune possono essere utilizzate solo con l'azione Alchimia Rapida. Il tratto additivo è sempre seguito da un livello, per esempio additivo 2. Un additivo somma il suo livello a quello dell'oggetto alchemico che stai modificando; il totale rappresenta il nuovo livello di miscela. Il livello dell'oggetto di quest'ultima non può superare il tuo livello di alchimia avanzata",
+        "TraitDescriptionAdditive": "I talenti con il tratto additivo ti permettono di aggiungere sostanze speciali agli oggetti monouso alchemici che crei quando usi Alchimia Rapida per creare un oggetto monouso (non puoi usare gli additivi con le fiale rapide). Puoi aggiungere solo un additivo a un singolo oggetto alchemico, puoi aggiungere un additivo solo una volta per round e la maggior parte delle abilità additive specificano un sotto insieme di oggetti monouso alchemici ai quali li puoi aggiungere.",
         "TraitDescriptionAeon": "Questi osservatori sono i sedicenti difensori della realtà. Gli eoni tradizionali hanno forme e nature dualistiche e perseguono una dicotomia di interessi, a differenza degli assiomiti e degli inevitabili. Ad eccezione degli assiomiti e degli inevitabili, gli eoni comunicano attraverso uno strano miscuglio di telepatia e di percezioni sensoriali chiamato previsualizzazione.",
         "TraitDescriptionAgile": "La penalità per attacchi multipli che subisci al secondo attacco portato con quest'arma è -4 anzichè -5 e -8 anzichè -10 al terzo attacco e ai successivi.",
         "TraitDescriptionAir": "Gli effetti con il tratto aria manipolano o evocano aria. Quelli che manipolano l'aria non hanno effetto nel vuoto o in un'area priva di aria. Le creature con questo tratto sono fatte principalmente di aria o hanno una connessione con l'aria magica.",
@@ -8754,7 +8754,7 @@
                 },
                 "RetributiveStrike": "Colpo Punitivo",
                 "RangedReprisal": {
-                    "Description": "Puoi utilizzare Colpo Punitivo con un'arma a distanza. Inoltre, se il nemico che ha innescato la tua reazione si trova fuori dalla tua portata di un massimo di 1,5 metri, puoi fare un Passo come parte della reazione per avere il nemico a portata prima di effettuare un Colpo Punitivo in mischia."
+                    "Description": "Puoi utilizzare un'arma a distanza per effettuare un Colpo a distanza invece di un Colpo in mischia per Colpo Punitivo. Il nemico deve essere in gittata, e non in portata, e deve ancora essere nella tua aura del campione. Puoi anche effettuare Colpi in mischia contro nemici leggermente più distanti. Se il nemico che ha innescato la tua reazione è fuori dalla tua portata ma entro 1,5 metri da essa, puoi fare un Passo come parte della reazione per avere il nemico a portata prima di effettuare un Colpo Punitivo in mischia."
                 },
                 "NegativeDamage": "Danni Negativi",
                 "TargetReaction": "Il bersaglio ha innescato la tua reazione del campione",
@@ -8807,16 +8807,40 @@
                     "Label": "Amore"
                 },
                 "Dedication": {
-                    "Label": "Dedizione"
+                    "Label": "Dedizione",
+                    "Description": "La tua dedizione può proteggere le persone a cui sei devoto, ma può portare alla dipendenza. Il tuo focus emotivo è una singola creatura a cui sei vincolato.",
+                    "Fallout": "Finché non Ripristini le tue Emozioni, non puoi Lanciare Incantesimi a meno che tu non sia adiacente al tuo focus emotivo.",
+                    "Activation": "Il tuo focus emotivo ottiene un numero di Punti Ferita temporanei pari a metà del tuo livello arrotondando per eccesso. Questi PF temporanei durano 1 minuto.",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.rQYob0QMJ0I1U2sU]{sacrificio del protettore}",
+                    "Trigger": "Il tuo focus emotivo subisce danni da un nemico mentre si trova entro 9 metri da te.",
+                    "Fervor": "I tuoi incantesimi che hanno come bersaglio il tuo focus emotivo ottengono i benefici di Incantesimi con Portata. Quando lanci un incantesimo di guarigione che influenza il tuo focus emotivo, questi ottiene anche PF temporanei pari al livello dell’incantesimo oltre agli effetti dell’incantesimo. Questi PF temporanei durano 1 minuto. Incantesimo: @UUID[Compendium.pf2e.spells-srd.Item.yHujiDQPdtXW797e]{legame con lo spirito}"
                 },
                 "Anger": {
-                    "Label": "Rabbia"
+                    "Label": "Rabbia",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.UGJzJRJDoonfWqqI]{scatto atletico}",
+                    "Activation": "Se sei @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto}, puoi tentare di @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfuggire}. Se ci riesci, la creatura o pericolo che ti impone la condizione subisce danni da forza pari al tuo livello (se possibile).",
+                    "Description": "La tua furia distruttiva ti consente di danneggiare i nemici ma ti infligge dolore.",
+                    "Trigger": "Un nemico ti infligge danni. Non puoi usare questa reazione se sei @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{affaticato}.",
+                    "Fervor": "Lanci un Incantesimo da uno Slot Incantesimo, se questo infligge danni e non ha una durata, ottieni bonus di status ai danni di quell’incantesimo pari al livello dell’incantesimo. Incantesimo: @UUID[Compendium.pf2e.spells-srd.Item.jsWthW1Qy6tg3SwD]{attirare ira}",
+                    "Fallout": "Diventi @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{affaticato} finché non Ripristini le tue Emozioni."
                 },
                 "Fear": {
-                    "Label": "Paura"
+                    "Label": "Paura",
+                    "Trigger": "Lasci che la paura ti attivi anziché consumarti, a scapito però della tua resistenza.",
+                    "Activation": "Aumenta di 1 il tuo valore di spaventato, fino a un massimo di @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 4}.",
+                    "Description": "Lasci che la paura ti attivi anziché consumarti, a scapito però della tua resistenza.",
+                    "Fallout": "Sei @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{in fuga} per 2 round, allontanandoti dalla fonte della condizione spaventato che ha innescato la Catarsi. Se la fonte non è più presente, fuggi invece dalla posizione dove ti trovavi all'inizio della ricaduta emotiva.",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.DU5daB09xwfE1y38]{incubo del risveglio}",
+                    "Fervor": "Non subisci la penalità di status dalla condizione spaventato alle tue CD di incantesimo o bonus di attacco con incantesimo. Ottieni invece bonus di status ai tiri per colpire con incantesimo pari alla penalità che avresti subito e i nemici subiscono la stessa penalità di status ai tiri salvezza contro i tuoi incantesimi. Qualsiasi altra statistica subisce la penalità di status come di consueto. Incantesimo: @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{paura}"
                 },
                 "Awe": {
-                    "Label": "Stupore"
+                    "Label": "Stupore",
+                    "Description": "Il tuo forte senso di meraviglia può essere contagioso e fonte di distrazione.",
+                    "Activation": "Se sei @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{affascinato} o @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottito}, puoi effettuare un tiro salvezza addizionale per terminare l’effetto, se consente un tiro salvezza.",
+                    "Fallout": "Diventi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} finché non Ripristini le tue Emozioni.",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.zul5cBTfr7NXHBZf]{bagliore accecante} (non richiede un simbolo religioso)",
+                    "Fervor": "Quando lanci un incantesimo, scegli una creatura colpita dal tuo tiro per colpire con incantesimo o che ha fallito l’eventuale tiro salvezza. Quella creatura diventa Affascinato da te fino alla fine del suo prossimo turno. È poi temporaneamente immune a questo effetto di fervore per 1 ora. Incantesimo: @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{polvere luccicante}",
+                    "Trigger": "Tu o un alleato entro 9 metri ottiene un successo critico a un tiro per colpire contro la CA di un nemico o a una prova di abilità contro una delle CD di un nemico."
                 },
                 "Joy": {
                     "Label": "Gioia"
@@ -9743,9 +9767,16 @@
             "BreathWeapon": {
                 "Shape": {
                     "Cone": {
-                        "Label": "Cono"
+                        "Label": "Cono",
+                        "Description": "L'eidolon esala una vampata di energia distruttiva, infliggendo @Damage[((ceil(@actor.level/2))d6)[@actor.flags.pf2e.breathweapon.breathDamage]|options:area-damage]{#} a tutte le creature in un @Template[cone|distance:30], con un tiro salvezza base su Riflessi contro la tua CD di incantesimo."
+                    },
+                    "Line": {
+                        "Label": "Linea",
+                        "Description": "L'eidolon esala una vampata di energia distruttiva, infliggendo @Damage[((ceil(@actor.level/2))d6)[@actor.flags.pf2e.breathweapon.breathDamage]|options:area-damage]{#} a tutte le creature in una @Template[line|distance:60], con un tiro salvezza base su Riflessi contro la tua CD di incantesimo."
                     }
-                }
+                },
+                "Cooldown": "Il tuo eidolon non può più usare il suo Soffio per i prossimi [[/r 1d4 #round]]{1d4 round}.",
+                "Scaling": "Al 3° livello e ogni 2 livelli successivi i danni aumentano di 1d6."
             }
         },
         "LevelRange": "Livelli {minLevel} - {level}",
