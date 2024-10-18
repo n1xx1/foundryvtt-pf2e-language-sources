@@ -1774,7 +1774,8 @@
                     "StaminaPoints": "Punti tenacia ripristinati.",
                     "TemporaryItems": "Oggetti temporanei rimossi.",
                     "WandsCharges": "Bacchette ripristinate.",
-                    "HitPointsSingle": "{hitPoints} punto ferita ripristinato."
+                    "HitPointsSingle": "{hitPoints} punto ferita ripristinato.",
+                    "Resource": "{name} ripristinato."
                 },
                 "Label": "Riposa per la Notte",
                 "Prompt": "Riposa per la Notte?"
@@ -2829,7 +2830,8 @@
                 "OtherTag": {
                     "Herbal": "A Base di Erbe",
                     "Improvised": "Improvvisato",
-                    "Shoddy": "Scadente"
+                    "Shoddy": "Scadente",
+                    "HandwrapsOfMightyBlows": "Fasciature dei Colpi Possenti"
                 },
                 "FromSpell": {
                     "Scroll": "Pergamena di {name} ({level}°)",
@@ -4388,9 +4390,14 @@
                     "Tailless": "Senza Coda",
                     "Fox": "Volpe",
                     "Spider": "Ragno",
-                    "Human": "Umano"
+                    "Human": "Umano",
+                    "Orc": "Orco",
+                    "Tiger": "Tigre"
                 },
-                "Label": "Forma Attuale"
+                "Label": "Forma Attuale",
+                "AlterationNotes": {
+                    "Unusable": "Questa abilità non può essere usata nella tua forma attuale."
+                }
             },
             "Necrohulk": {
                 "AlchemicalCartridgeRuptured": "Cartuccia Alchemica Distrutta"
@@ -7126,7 +7133,9 @@
                 "Quill": "Calamo",
                 "Boulder": "Macigno",
                 "StoneBall": "Palla di Pietra",
-                "Seed": "Seme"
+                "Seed": "Seme",
+                "SacredArmament": "Armamento Sacro",
+                "LittleClaw": "Piccolo Artiglio"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -7215,7 +7224,8 @@
             "SpecialStatistic": "Statistiche Speciali",
             "TokenMark": "Marchia Token",
             "EffectSpinoff": "Effetto Spinoff",
-            "CraftingAbility": "Abilità Fabbricazione"
+            "CraftingAbility": "Abilità Fabbricazione",
+            "SpecialResource": "Risorsa Speciale"
         },
         "Mutagens": {
             "BestialMutagen": {
@@ -8050,6 +8060,11 @@
                 },
                 "Cauldron": {
                     "CraftingEntry": "Calderone"
+                },
+                "WildWitchsArmaments": {
+                    "EldritchNails": {
+                        "RollOptionLabel": "Colpisci lo stesso nemico con due Colpi di unghie consecutivi"
+                    }
                 }
             },
             "Wizard": {
@@ -9688,7 +9703,11 @@
                 "UnlimitedPotential": "Se la tua prossima azione è Lanciare un Incantesimo di 5° grado o inferiore che non ha durata, non spendi l'incantesimo preparato mentre lo lanci.",
                 "CrypticSpell": "Se la prossima azione che compi è Lanciare un Incantesimo, effettua una prova di Natura contro le CD di Percezione di tutti gli osservatori. Se superi la prova contro la CD di Percezione di un osservatore, quest'ultimo non si accorge che stai lanciando un incantesimo, anche se le componenti verbali, somatiche e materiali sono solitamente evidenti e gli incantesimi hanno normalmente manifestazioni sensoriali che renderebbero evidente l'incantesimo a chi si trova nelle vicinanze. Tutte queste componenti sono invece nascoste nei panorami e nei suoni naturali dell'ambiente. Questa capacità nasconde solo le azioni e le manifestazioni per Lanciare l'Incantesimo, non i suoi effetti, quindi un osservatore potrebbe comunque vederti trasformare in un orso gigante.",
                 "WhatCouldHaveBeen": "Se la tua prossima azione è Lanciare un Incantesimo che evoca una creatura, quella creatura è un'altra versione di te. Questa creatura rimane del tipo di creatura che hai evocato e ha in gran parte le stesse capacità (più i modificatori indicati di seguito), ma ha una chiara somiglianza con te, e probabilmente condivide alcune tue caratteristiche distintive, come i modi di fare, il tuo modo di parlare, i tatuaggi o l'abbigliamento. La creatura evocata ottiene bonus di status +1 a qualsiasi prova di abilità in cui tu sei addestrato, bonus di status +2 se sei un esperto, bonus di status +3 se sei un maestro o bonus di status +4 se sei leggendario. La creatura subisce anche penalità -2 a tutte le prove di abilità in cui tu non sei addestrato.",
-                "BizzareTransformation": "Se la tua prossima azione è lanciare @UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]{forma selvatica}, puoi cambiare il tipo di danno di un singolo attacco senz'armi concesso dalla <em>forma selvatica</em> in uno dei seguenti: da acido, contundenti, da freddo, da elettricità, da fuoco, da veleno, perforanti o taglienti. L'attacco scelto ottiene il tratto appropriato."
+                "BizzareTransformation": "Se la tua prossima azione è lanciare @UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]{forma selvatica}, puoi cambiare il tipo di danno di un singolo attacco senz'armi concesso dalla <em>forma selvatica</em> in uno dei seguenti: da acido, contundenti, da freddo, da elettricità, da fuoco, da veleno, perforanti o taglienti. L'attacco scelto ottiene il tratto appropriato.",
+                "SnowdriftSpell": "Seleziona una creatura influenzata dall'incantesimo sul terreno. Ogni quadretto sul terreno sotto o adiacente alla creatura si riempie con neve ad altezza delle caviglie. Questi quadretti sono terreno difficile fino all'inizio del tuo prossimo turno. Una creatura può Interagire per liberare un quadretto di neve, e la neve in un quadretto si scioglie se quel quadretto è esposto a un effetto di fuoco.",
+                "ThunderclapSpell": "Se la tua azione successiva è Lanciare un Incantesimo che ha il tratto elettricità o che infligge danni di elettricità, non ha durata e richiede alle creature di tentare un tiro salvezza, la forza del fulmine dell'incantesimo crea un rombo di tuono, in aggiunta ai suoi altri effetti. Ogni creatura che ha fallito il suo tiro salvezza su Riflessi contro l'incantesimo è @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{assordata} per 1 round, e quelli che hanno fallito criticamente sono anche scagliati a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{proni}.",
+                "GarlandSpell": "Cresce una ghirlanda di piante in un'@Template[burst|distance:10] entro il raggio dell'incantesimo. Le piante sono terreno difficile e terreno pericoloso, coperto di spine o rampicanti velenosi a tua scelta. Qualsiasi creatura che si muove dentro uno di questi quadretti o che termina il suo turno in esso subisce @Damage[2d6[piercing]]{2d6 danni perforanti} per le spine o @Damage[2d6[poison]]{2d6 danni da veleno} per i rampicanti. Una creatura può subire questi danni solo una volta per turno. Tu e il tuo famiglio sono immuni a questi danni. Le piante durano 1 minuto o finché non lanci un'altro Incantesimo con Ghirlanda, a seconda di quale evento si verifichi per primo. Il danno aumenta a 3d6 al 16° livello e 4d6 al 20° livello.",
+                "SecondaryDetonationArray": "Se la tua azione successiva è Lanciare un Incantesimo che infligge danni, non ha durata e influenza un'area, un cerchio magico luminoso appare in un'@Template[burst|distance:5] all'interno di quell'area. All'inizio del tuo prossimo turno, il cerchio esplode, infliggendo @Damage[(@item.level)d6[force]]{$ danni di forza} a tutte le creature nel cerchio, con un TS su @Check[reflex|against:spell]. Se l'incantesimo ha inflitto un tipo di danno diverso, il cerchio infligge invece @Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]]{quel tipo di danno} (o uno a tua scelta se l'incantesimo può infliggere più di un tipo di danno)"
             },
             "CrystalLuminescence": {
                 "Normal": "Normale",
@@ -10688,7 +10707,12 @@
         },
         "TraitAdditive": "Additivo",
         "TraitAttachedToMeleeWeapon": "Unito a un'Arma da Mischia",
-        "TraitVolley60": "Parabola 18m"
+        "TraitVolley60": "Parabola 18m",
+        "GenericLabel": {
+            "ItemVs": {
+                "Fear": "{item} contro paura"
+            }
+        }
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
