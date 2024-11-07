@@ -115,6 +115,12 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Howl of the Wild"],
     language: [],
   },
+  "war-of-immortals": {
+    name: "War of Immortals",
+    type: "core",
+    source: ["Pathfinder War of Immortals"],
+    language: [],
+  },
   // Lost Omens
   "character-guide": {
     name: "Lost Omens: Character Guide",
