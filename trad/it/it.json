@@ -2419,7 +2419,7 @@
                 "Category": {
                     "Pantheon": "Pantheon",
                     "Philosophy": "Filosofia",
-                    "Hint": "Pantheon di divinitàe filosofie non associate a nessuna divinità posso essere seguite invece di una divinità in particolare. I chierici e i campioni devono seguire una divinità o un pantheon."
+                    "Hint": "Pantheon, alleanze e filosofie non associate a nessuna divinità posso essere seguite invece di una divinità in particolare."
                 },
                 "DivineFont": {
                     "Harm": "Ferire",
@@ -2444,7 +2444,7 @@
                         "Description": "Vegli su coloro che sono deceduti da tempo e ne custodisci i segreti."
                     },
                     "Delirium": {
-                        "Label": "Delirio",
+                        "Label": "Disorientamento",
                         "Description": "Sei in grado di creare allucinazioni e inquietudine."
                     },
                     "Ambition": {
@@ -2636,7 +2636,7 @@
                         "Description": "La tua magia ha forti legami con i non morti."
                     },
                     "Void": {
-                        "Label": "Vuoto",
+                        "Label": "Nulla",
                         "Description": "Trai potere dal vuoto."
                     },
                     "Water": {
@@ -2648,7 +2648,7 @@
                         "Description": "Possiedi il potere sulle ricchezze, sui commerci e sui tesori."
                     },
                     "Wyrmkin": {
-                        "Label": "Dragoni",
+                        "Label": "Draghi",
                         "Description": "Attingi al potere di draghi, linnorm ed altre potenti creature rettili."
                     },
                     "Zeal": {
@@ -3554,8 +3554,12 @@
                 "Crafting": {
                     "Cost": "Costo",
                     "Daily": {
-                        "Perform": "Esegui Fabbricazione Giornaliera"
-                    }
+                        "Perform": "Esegui Fabbricazione Giornaliera",
+                        "Complete": "Fabbricazione giornaliera completa."
+                    },
+                    "BatchQuantity": "x{quantity}",
+                    "MissingResource": "Risorse insufficienti per completare la fabbricazione.",
+                    "RemainingSlots": "Slot Vuoto ({remaining} rimanenti)"
                 },
                 "HandsOccupied": "Mani Occupate",
                 "Attribute": {
@@ -3824,7 +3828,15 @@
             },
             "AttackEffects": {
                 "PlusList": "(più {list})"
-            }
+            },
+            "Resource": {
+                "Focus": "Punti Focalizzazione",
+                "HeroPoints": "Punti Eroe",
+                "Investiture": "Investitura",
+                "Resolve": "Risolutezza"
+            },
+            "Resources": "Risorse",
+            "ResourceRatio": "{value}/{max} {resource}"
         },
         "BrowseLabel": "Cerca",
         "AttackEffects": {
@@ -6790,7 +6802,8 @@
                 "wheel-blades": "Ruote Taglienti",
                 "dueling-spear": "Lancia da Duello",
                 "tonfa": "Tonfa",
-                "flying-talon": "Artiglio Volante"
+                "flying-talon": "Artiglio Volante",
+                "fangs": "Zanne"
             }
         },
         "WeaponAbilityLabel": "Abilità Arma",
@@ -8881,7 +8894,7 @@
                 },
                 "Fear": {
                     "Label": "Paura",
-                    "Trigger": "Lasci che la paura ti attivi anziché consumarti, a scapito però della tua resistenza.",
+                    "Trigger": "Un nemico ti rende @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato}.",
                     "Activation": "Aumenta di 1 il tuo valore di spaventato, fino a un massimo di @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 4}.",
                     "Description": "Lasci che la paura ti attivi anziché consumarti, a scapito però della tua resistenza.",
                     "Fallout": "Sei @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{in fuga} per 2 round, allontanandoti dalla fonte della condizione spaventato che ha innescato la Catarsi. Se la fonte non è più presente, fuggi invece dalla posizione dove ti trovavi all'inizio della ricaduta emotiva.",
@@ -8893,7 +8906,7 @@
                     "Description": "Il tuo forte senso di meraviglia può essere contagioso e fonte di distrazione.",
                     "Activation": "Se sei @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{affascinato} o @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottito}, puoi effettuare un tiro salvezza addizionale per terminare l’effetto, se consente un tiro salvezza.",
                     "Fallout": "Diventi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} finché non Ripristini le tue Emozioni.",
-                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.zul5cBTfr7NXHBZf]{bagliore accecante} (non richiede un simbolo religioso)",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.zul5cBTfr7NXHBZf]{Bagliore accecante} (non richiede un simbolo religioso)",
                     "Fervor": "Quando lanci un incantesimo, scegli una creatura colpita dal tuo tiro per colpire con incantesimo o che ha fallito l’eventuale tiro salvezza. Quella creatura diventa Affascinato da te fino alla fine del suo prossimo turno. È poi temporaneamente immune a questo effetto di fervore per 1 ora. Incantesimo: @UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{polvere luccicante}",
                     "Trigger": "Tu o un alleato entro 9 metri ottiene un successo critico a un tiro per colpire contro la CA di un nemico o a una prova di abilità contro una delle CD di un nemico."
                 },
@@ -10767,7 +10780,8 @@
             }
         },
         "ItemBonus4": "+4 Potenziamento dell'Arma",
-        "TraitDescriptionLineage": "Un talento con questo tratto indica la discendenza di un personaggio da un particolare tipo di creatura. Puoi avere un solo talento di retaggio; puoi selezionare un talento del genere solo al 1° livello e non puoi riaddestrarti per prendere o togliere questo talento."
+        "TraitDescriptionLineage": "Un talento con questo tratto indica la discendenza di un personaggio da un particolare tipo di creatura. Puoi avere un solo talento di retaggio; puoi selezionare un talento del genere solo al 1° livello e non puoi riaddestrarti per prendere o togliere questo talento.",
+        "ConditionTypeCursebound": "Infausto"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
