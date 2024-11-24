@@ -239,6 +239,15 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Lost Omens: Tian Xia World Guide"],
     language: [],
   },
+  "divine-mysteries": {
+    name: "Lost Omens: Divine Mysteries",
+    type: "lost-omens",
+    source: [
+      "Pathfinder Lost Omens: Divine Mysteries",
+      "Lost Omens - Divine Mysteries",
+    ],
+    language: [],
+  },
   // Adventure Paths
   "age-of-ashes1": {
     name: "Age of Ashes",
@@ -734,7 +743,16 @@ export const sourceState: Record<string, SourceState> = {
   "triumph-of-the-tusk1": {
     name: "Triumph of The Tusk",
     type: "adventure-path",
-    source: ["Pathfinder Triumph of The Tusk Player's Guide"],
+    source: [
+      "Pathfinder Triumph of The Tusk Player's Guide",
+      "Pathfinder #207: The Resurrection Flood",
+    ],
+    language: [],
+  },
+  "triumph-of-the-tusk2": {
+    name: "Triumph of The Tusk",
+    type: "adventure-path",
+    source: ["Pathfinder #208: Hoof, Cinder, and Storm"],
     language: [],
   },
   // Adventures
