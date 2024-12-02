@@ -517,7 +517,7 @@
       "name": "Drain Life"
     },
     "Drain Realm": {
-      "description": "<p><strong>Trigger</strong> Your previous action was to Sustain your manifested realm</p>\n<p><strong>Requirements</strong> Your manifested realm has a radius of at least 10 feet</p><hr /><p><strong>Effect</strong> You siphon power from your manifested realm to bolster your physical form. Decrease your manifested realm's radius by 10 feet. You regain a number of Hit Points equal to your level and each of your Strikes made before the end of your turn deal an additional @Damage[1d8[untyped]] damage of your realm's damage type.</p>",
+      "description": "<p><strong>Trigger</strong> Your previous action was to Sustain your manifested realm</p>\n<p><strong>Requirements</strong> Your manifested realm has a radius of at least 10 feet</p><hr /><p><strong>Effect</strong> You siphon power from your manifested realm to bolster your physical form. Decrease your manifested realm's radius by 10 feet. You regain a number of @Damage[(@actor.level)[healing]]{Hit Points equal to your level} and each of your Strikes made before the end of your turn deal an additional 1d8 damage of your realm's damage type.</p>",
       "name": "Drain Realm"
     },
     "Drape Ambient Magic": {
@@ -1005,7 +1005,7 @@
       "name": "Manifest Eidolon"
     },
     "Manifest Realm": {
-      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You corrupt the surrounding area into a manifestation of your realm in a 20-foot-radius burst centered on you. Your manifested realm counts as difficult terrain for your enemies, and your enemies take a –1 penalty to Fortitude saving throws while in your manifested realm. You can Sustain your manifested realm once per round on subsequent rounds, and if you do not, the radius of your manifested realm is reduced by 5 feet. Your realm remains manifested for a maximum of 1 minute, and you can Dismiss your manifested realm. If your manifested realm's radius is ever reduced to 0 feet or if you move beyond 100 feet from the borders of your manifested realm, your manifested realm is automatically Dismissed.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You corrupt the surrounding area into a manifestation of your realm in a @Template[type:burst|distance:20] burst centered on you. Your manifested realm counts as difficult terrain for your enemies, and your enemies take a –1 penalty to Fortitude saving throws while in your manifested realm.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.VrTaP6BcXo6sizn6]{Effect: Manifest Realm}</p>\n<p>You can Sustain your manifested realm once per round on subsequent rounds, and if you do not, the radius of your manifested realm is reduced by 5 feet.</p>\n<p>Your realm remains manifested for a maximum of 1 minute, and you can Dismiss your manifested realm. If your manifested realm's radius is ever reduced to 0 feet or if you move beyond 100 feet from the borders of your manifested realm, your manifested realm is automatically Dismissed.</p>",
       "name": "Manifest Realm"
     },
     "Manifest Soulforged Armament": {
@@ -1777,7 +1777,7 @@
       "name": "Unleash Psyche"
     },
     "Unleash Realm": {
-      "description": "<p><strong>Trigger</strong> Your previous action was to Sustain your manifested realm</p><hr /><p><strong>Effect</strong> You punish those who transgress upon your realm. An enemy within your realm takes @Damage[4d8[untyped]] damage of your realm's damage type with a @Check[fortitude|against:class-spell|basic] save against your class DC or spell DC, whichever is higher.</p>",
+      "description": "<p><strong>Trigger</strong> Your previous action was to Sustain your manifested realm</p><hr /><p><strong>Effect</strong> You punish those who transgress upon your realm. An enemy within your realm takes @Damage[4d8[@actor.flags.pf2e.realmDamage]|shortLabel|options:area-damage] damage of your realm's damage type with a @Check[fortitude|against:class-spell|basic|options:area-effect] save against your class DC or spell DC, whichever is higher.</p>",
       "name": "Unleash Realm"
     },
     "Unwavering Resilience": {
