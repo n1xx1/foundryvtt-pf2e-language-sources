@@ -832,6 +832,10 @@
       "description": "<p>You designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration.</p>\n<p>You gain a +2 circumstance bonus to Perception checks when you @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} your prey and a +2 circumstance bonus to Survival checks when you @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} your prey. You also ignore the penalty for making ranged attacks within your second range increment against the prey you're hunting.</p>\n<p>You can have only one creature designated as your prey at a time. If you use Hunt Prey against a creature when you already have a creature designated, the prior creature loses the designation and the new prey gains the designation. Your designation lasts until your next daily preparations.</p>",
       "name": "Hunt Prey"
     },
+    "Hunt the Razer's Pawn": {
+      "description": "<p>Designate a single creature that you can see or hear, or whom you've spent a significant amount of time studying and reading about from afar (subject to the GM's approval), and who you know to be an agent of Treerazer. You gain a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} or @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense the Motive} of this creature. This creature takes a –1 circumstance penalty to saving throws against spells or effects you create; this penalty increases to –2 against effects that have the holy trait.</p>\n<p>You can have only one creature designated by Hunt the Razer's Pawn at a time. If you use this ability against a creature when you already have one designated, the prior creature loses the designation and the new creature gains the designation. This lasts until your next daily preparations.</p>",
+      "name": "Hunt the Razer's Pawn"
+    },
     "Hustle": {
       "description": "<p>You strain yourself to move at double your travel speed. You can Hustle only for a number of minutes equal to your Constitution modifier × 10 (minimum 10 minutes). If you are in a group that is Hustling, use the lowest Constitution modifier among everyone to determine how fast the group can Hustle together.</p>",
       "name": "Hustle"
@@ -1096,6 +1100,10 @@
       "description": "<p><strong>Trigger</strong> A foe within your reach critically fails a Strike against you</p>\n<hr />\n<p>You take advantage of an opening from your enemy's fumbled attack. You either make a melee Strike against the triggering foe or attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} it of the weapon it used for the Strike.</p>",
       "name": "Opportune Riposte"
     },
+    "Opportunistic Accusation": {
+      "description": "<p><strong>Trigger</strong> A demon you're aware of within 30 feet of you suffers from its sin vulnerability or critical fails at a saving throw against a mental effect</p><hr /><p>You make a quick cutting remark against the demon that takes advantage of the fiend's momentary disadvantage. The demon must attempt a @Check[will|against:class] save against your class DC.</p><hr /><p><strong>Critical Success</strong> The demon is unaffected and likely to focus its attention on you in combat from this point forward.</p>\n<p><strong>Success</strong> The demon takes @Damage[2d6[mental]] damage.</p>\n<p><strong>Failure</strong> The demon takes @Damage[4d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but the off-guard condition lasts until the end of the next round. The demon also takes @Damage[2d6[persistent,mental]] damage.</p>",
+      "name": "Opportunistic Accusation"
+    },
     "Overawe Crowd": {
       "description": "<p><strong>Requirements</strong> You are sharing the same space as a swarm or are adjacent to a troop</p><hr /><p><strong>Effect</strong> Spend 1 Mythic Point and attempt an Intimidation check at mythic proficiency against the Will DC of the required swarm or troop. On a failure, the target Strides in a direction of your choosing and you move along with it. On a success, the target Strides twice in a direction of your choosing and you can decide whether or not to move along with it. No matter the result, the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and temporarily immune to your Overawe Crowd for 24 hours.</p>",
       "name": "Overawe Crowd"
@@ -1335,6 +1343,10 @@
     "Resist Magic": {
       "description": "<p><strong>Trigger</strong> You attempt a saving throw against a harmful magical effect but haven't rolled yet.</p>\n<hr />\n<p>Your innate magic protects you. You gain a +1 circumstance bonus to the triggering saving throw. Additionally, if the triggering effect is arcane, if you roll a success, you get a critical success instead.</p>",
       "name": "Resist Magic"
+    },
+    "Restorative Teleportation": {
+      "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You arrive at a location via a teleportation effect</p><hr /><p><strong>Effect</strong> When you reappear after the teleportation, your body takes advantage of the teleportation to put itself back together in a healthier state, and you restore a number of Hit Points equal to 1d6 plus your level plus your Intelligence modifier (@Damage[(1d6 + @actor.level + @actor.system.abilities.int.mod)[healing]]).</p>",
+      "name": "Restorative Teleportation"
     },
     "Restore the Mind": {
       "description": "<p>Your unleashed psyche gives you closer connections to the emotions of your allies, letting you project reassurance and strength that replenishes their mind and body. Choose one of the two benefits to grant one ally within 30 feet that you can see. That ally is then temporarily immune for 10 minutes.</p><ul><li>The ally gains a +1 status bonus to saving throws against mental effects until your psyche ends.</li><li>The ally regains Hit Points equal to @Damage[(2+2*@actor.level)[healing]]{2 + double your level}.</li></ul>",
