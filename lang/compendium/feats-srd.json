@@ -21843,7 +21843,7 @@
       "name": "Regrowth"
     },
     "Regurgitate Mutagen": {
-      "description": "<p><strong>Requirements</strong> You are under the effects of a mutagen.</p><hr /><p>You redirect a mutagen within your body to spit a stream of stomach acid at a foe. A creature within 30 feet takes @Damage[(floor(@actor.level/2))d6[acid]], with a @Check[reflex|against:alchemist|basic] save against your class DC. On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). The mutagen's duration immediately ends.</p>",
+      "description": "<p><strong>Requirements</strong> You are under the effects of a mutagen.</p><hr /><p>You redirect a mutagen within your body to spit a stream of stomach acid at a foe. A creature within 30 feet takes 1d6 acid damage for every 2 levels you have (@Damage[(floor(@actor.level/2))d6[acid]]), with a @Check[reflex|against:alchemist|basic] save against your class DC. On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). The mutagen's duration immediately ends.</p>",
       "name": "Regurgitate Mutagen"
     },
     "Rehydration": {
@@ -23890,7 +23890,7 @@
       "name": "Shamble"
     },
     "Shame the Sin": {
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You critically hit a demon with a Strike.</p><hr /><p>Your conviction against the sins that all demons grow from is so strong that you can force a demon to suffer from its sins when you strike a sound blow against them. In addition to doing the normal damage for your critical hit, the demon also suffers the effects of its special vulnerability. If the demon has no special vulnerability, it instead takes an additional @Damage[1d6[mental]] damage. This increases to @Damage[2d6[mental]] damage at 13th level and to @Damage[3d6[mental]] damage at 17th level.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You critically hit a demon with a Strike.</p><hr /><p>Your conviction against the sins that all demons grow from is so strong that you can force a demon to suffer from its sins when you strike a sound blow against them. In addition to doing the normal damage for your critical hit, the demon also suffers the effects of its special vulnerability. If the demon has no special vulnerability, it instead takes an additional @Damage[(ternary(gte(@actor.level,17),3,ternary(gte(@actor.level,13),2,1)))d6[mental]] damage. This increases to 2d6 mental damage at 13th level and to 3d6 mental damage at 17th level.</p>",
       "name": "Shame the Sin"
     },
     "Shameless Request": {
@@ -28629,7 +28629,7 @@
       "name": "Tree's Ward"
     },
     "Treehealer": {
-      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You can undo the effect of demonic corruption in plants. By spending 10 minutes in contact with a tree that's been corrupted by demonic presence, you can restore the tree to its original health. This does not prevent that tree from becoming corrupted again in the future. Alternatively, you can spend 10 minutes in contact with a creature with the plant trait. At the end of this time, you restore @Damage[7d8+56[healing]] Hit Points to that creature and heal half that amount of your own Hit Points. Additionally, you can attempt to counteract any one curse or disease afflicting that plant creature as if you had cast @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} heightened to 7th rank. Your counteract rank for this is 7, and your counteract check is equal to your Will save or your spell attack modifier, whichever is higher.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You can undo the effect of demonic corruption in plants. By spending 10 minutes in contact with a tree that's been corrupted by demonic presence, you can restore the tree to its original health. This does not prevent that tree from becoming corrupted again in the future. Alternatively, you can spend 10 minutes in contact with a creature with the plant trait. At the end of this time, you restore @Damage[(7d8+56)[healing]] Hit Points to that creature and heal half that amount of your own Hit Points. Additionally, you can attempt to counteract any one curse or disease afflicting that plant creature as if you had cast @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} heightened to 7th rank. Your counteract rank for this is 7, and your counteract check is equal to your Will save or your spell attack modifier, whichever is higher.</p>",
       "name": "Treehealer"
     },
     "Treespeech": {
