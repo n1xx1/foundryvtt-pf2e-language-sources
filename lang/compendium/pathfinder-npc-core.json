@@ -608,7 +608,7 @@
           "name": "Not Me!"
         },
         "UXTu6H3vuKZK9TRt": {
-          "description": "<p>The big boss goblin picks a target they can see within 30 feet and orders any allied goblins to attack. A single goblin with a lower level than the big boss goblin that is adjacent to the target can immediately use their reaction to Strike the target. In addition, until the start of the big boss goblin's next turn, their attacks against that target deal 1 additional damage dice as the big boss goblin leads them.</p>",
+          "description": "<p>The big boss goblin picks a target they can see within 30 feet and orders any allied goblins to attack. A single goblin with a lower level than the big boss goblin that is adjacent to the target can immediately use their reaction to Strike the target. In addition, until the start of the big boss goblin's next turn, their attacks against that target deal 1 additional damage dice as the big boss goblin leads them.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Sv99eNoXedd9Zw26]{Effect: Stab it! Stab it! Stab it!}</p>",
           "name": "Stab it! Stab it! Stab it!"
         }
       },
@@ -3039,8 +3039,14 @@
           "description": "<p>Gnome philomaths can quickly find almost any document in their vast collection. They gain a +8 circumstance bonus to skill checks involving local records and histories.</p>",
           "name": "Helpful Hoard"
         },
+        "kQHdLkx7FpzG63r9": {
+          "name": "History Lore"
+        },
+        "ps0fIJSZROlwxAx9": {
+          "name": "One Additional Lore"
+        },
         "vUmKN1vl61ZzzSJC": {
-          "description": "<p>The gnome philomath designates a single item within their sight as an item of interest to their studies. They then gain a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} or @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} that item. They can only designate one item at a time in this way. If they use Mind if I Borrow That? to designate a new item of interest, they lose the bonus with the previous item.</p>",
+          "description": "<p>The gnome philomath designates a single item within their sight as an item of interest to their studies. They then gain a +2 circumstance bonus to [[/act disarm options=mind-if-i-borrow-that]] or [[/act steal options=mind-if-i-borrow-that]] that item. They can only designate one item at a time in this way. If they use Mind if I Borrow That? to designate a new item of interest, they lose the bonus with the previous item.</p>",
           "name": "Mind if I Borrow That?"
         },
         "zyUKrdkPZXmYYPFt": {
@@ -3056,6 +3062,9 @@
         "24nv7Mz0lel6HY8t": {
           "name": "Leather Apron (functions as leather armor)"
         },
+        "GKPB4Zh8uOFac3Cs": {
+          "name": "Jaws"
+        },
         "MpIWXRlUQHZ59nBG": {
           "name": "Cooking Lore"
         },
@@ -3064,7 +3073,7 @@
           "name": "Eat a Pickle"
         },
         "X6QRqKiWVmhCE1Tt": {
-          "description": "<p>The goblin chef can turn otherwise inedible items into meals for others. They can provide food for any number of creatures without using the Subsist downtime activity as long as garbage is readily available. A non-goblin who eats the goblin chef's food must attempt a @Check[fortitude|dc:14] save. On a failure, they suffer an upset stomach for 1 day; if they attempt to willingly ingest anything else during that period, they must first succeed at a @Check[flat|dc:4] or the action is disrupted.</p>",
+          "description": "<p>The goblin chef can turn otherwise inedible items into meals for others. They can provide food for any number of creatures without using the @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist} downtime activity as long as garbage is readily available. A non-goblin who eats the goblin chef's food must attempt a @Check[fortitude|dc:14] save. On a failure, they suffer an upset stomach for 1 day; if they attempt to willingly ingest anything else during that period, they must first succeed at a @Check[flat|dc:4] or the action is disrupted.</p>",
           "name": "Good Enough to Eat"
         },
         "bKTuFuL2mc8vM1qy": {
@@ -3091,7 +3100,7 @@
       "description": "<p>There is little more terrifying than a goblin raiding party out to take from its neighbors. A swarming mix of commandos, pyros, and war chanters armed with dogslicers, horsechoppers, burning torches, and sharp teeth, this troop enjoys pillaging unprepared communities. Their song is an unsettling counterpart to the screams of their victims.</p><hr /><p>Goblins can be found across Golarion, sometimes threatening taller humanoids (whom they refer to as \"longshanks\") and sometimes redeeming harmful history by working alongside others.</p>",
       "items": {
         "9PPJKcSTyWJ1Csi6": {
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The goblin get gang uses dogslicers, horsechoppers, and burning torches to attack each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:20|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing], 1d6[fire]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d6+6)[slashing], 1d6[fire]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(1d6+9)[slashing], 1d6[fire]] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The goblin get gang uses dogslicers, horsechoppers, and burning torches to attack each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:20|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d6[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d6+6)[slashing],1d6[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(1d6+9)[slashing],1d6[fire]|options:area-damage] damage</p>",
           "name": "Goblins Slash and Goblins Scar!"
         },
         "KMva0mLBOKeLl8un": {
@@ -3105,7 +3114,7 @@
           "name": "Goblins Bound and Goblins Swing!"
         },
         "nydeMYmeBrzWte4x": {
-          "description": "<p>The troop's members throw a barrage of burning torches. Each creature in a @Template[type:burst|distance:10] within 30 feet of the troop takes @Damage[2d8[fire]] damage with a @Check[reflex|dc:20|basic] save. When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "description": "<p>The troop's members throw a barrage of burning torches. Each creature in a @Template[type:burst|distance:10] within 30 feet of the troop takes @Damage[2d8[fire]|options:area-damage] damage with a @Check[reflex|dc:20|basic|options:area-effect] save. When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>",
           "name": "Goblins Burn and Goblins Char!"
         },
         "ygsZ7JFmN3IdnDZI": {
@@ -3128,7 +3137,7 @@
           "name": "Rounds (Big Boom Gun)"
         },
         "GQG8SpRzw32r0PWq": {
-          "description": "<p><strong>Requirements</strong> The goblin scavenger has a free hand</p><hr /><p><strong>Effect</strong> The goblin scavenger draws a bundle of fireworks and launches them toward a point within 60 feet, where they explode, dealing @Damage[1d10[fire], 1d10[sonic]] damage in a @Template[type:burst|distance:10]. Every creature in the area must attempt a @Check[reflex|dc:21] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected. The goblin scavenger realizes that's because a firework fell at their feet and takes @Damage[2[fire]] damage when it explodes in their face.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>",
+          "description": "<p><strong>Requirements</strong> The goblin scavenger has a free hand</p><hr /><p><strong>Effect</strong> The goblin scavenger draws a bundle of fireworks and launches them toward a point within 60 feet, where they explode, dealing @Damage[1d10[fire],1d10[sonic]|options:area-damage] damage in a @Template[type:burst|distance:10]. Every creature in the area must attempt a @Check[reflex|dc:21|options:area-effect,damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected. The goblin scavenger realizes that's because a firework fell at their feet and takes @Damage[2[fire]] damage when it explodes in their face.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>",
           "name": "Fireworks Barrage"
         },
         "NJHAJ8Yf86EITbyd": {
@@ -3257,7 +3266,7 @@
           "name": "Flurry of Blows"
         },
         "UpywR6mdWHYmYNSa": {
-          "description": "<p>The grandmaster makes a single, carefully controlled unarmed Strike that deals 2 additional dice of damage, or 4 additional dice if the grandmaster spent 3 actions. If this damages the target, the grandmaster can choose to make the target attempt a @Check[fortitude|dc:38] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The target is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The target is pushed back 10 feet for each action the grandmaster spent on One-Millimeter Punch.</p>",
+          "description": "<p><span class=\"action-glyph\">2</span> or <span class=\"action-glyph\">3</span></p>\n<p>The grandmaster makes a single, carefully controlled unarmed Strike that deals 2 additional dice of damage, or 4 additional dice if the grandmaster spent 3 actions. If this damages the target, the grandmaster can choose to make the target attempt a @Check[fortitude|dc:38] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The target is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The target is pushed back 10 feet for each action the grandmaster spent on One-Millimeter Punch.</p>",
           "name": "One-Millimeter Punch"
         },
         "V4vCBm7Vs6OANCRu": {
@@ -5139,7 +5148,7 @@
           "name": "Fist"
         },
         "HLSb3Hxa9yNvAbbN": {
-          "description": "<p>The mountain guardian stomps on natural earth or stone, causing a localized tremor. All creatures in a @Template[type:burst|distance:10] within 30 feet take @Damage[3d10[bludgeoning]] damage with a @Check[fortitude|dc:24|basic] save. A creature that critically fails is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Earth and stone in the area is difficult terrain until the start of the mountain guardian's next turn.</p>",
+          "description": "<p>The mountain guardian stomps on natural earth or stone, causing a localized tremor. All creatures in a @Template[type:burst|distance:10] within 30 feet take @Damage[3d10[bludgeoning]|options:area-damage] damage with a @Check[fortitude|dc:24|basic|options:area-effect] save. A creature that critically fails is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Earth and stone in the area is difficult terrain until the start of the mountain guardian's next turn.</p>",
           "name": "Tremor"
         },
         "ZgtpOsBQwSbByvBX": {
