@@ -618,22 +618,25 @@
       "description": "<p>Boisterous collectives of thrill-seeking halflings join in bill-bands to engage in spirited competitions and lively sports. They foster a sense of camaraderie among their members while leaving a trail of chaos in their wake.</p><hr /><p>Halflings thrive on simple pleasures—having a pint at the pub or warming their feet by the hearth.</p>",
       "items": {
         "2WU0nTlGKvhnVyEl": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bill-band deliberately gets under the feet of their opponents, proving they are greater than the sum of their parts. The bill-band attempts to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} all creatures in or adjacent to their space. They roll one Athletics check and compare the result to the Reflex DC of each target.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bill-band deliberately gets under the feet of their opponents, proving they are greater than the sum of their parts. The bill-band attempts to [[/act trip]] all creatures in or adjacent to their space. They roll one Athletics check and compare the result to the Reflex DC of each target.</p>",
           "name": "Down to Our Level"
+        },
+        "45HKjGK2whPR2ein": {
+          "name": "Sports Lore"
         },
         "LzpGUvNElpSBZsqU": {
           "description": "<p>The bill-band swarms in and around other creatures. They can move into other creatures' spaces, and other creatures can move into their spaces. The bill-band's spaces are difficult terrain to other creatures.</p>",
           "name": "Overwhelming Scrum"
         },
         "fUkzezYofKOCiL3t": {
-          "name": "+3 status vs. Intimidation checks"
+          "name": "+3 Status vs. Intimidation Checks"
         },
         "mZkWPJLkxc4o0vyq": {
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bill-band swings barely coordinated fists and feet at each enemy in their space and in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:19|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+6)[bludgeoning]] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bill-band swings barely coordinated fists and feet at each enemy in their space and in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:19|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+6)[bludgeoning]|options:area-damage] damage</p>",
           "name": "Stick It to 'Em!"
         },
         "qZl8La3mvQLwoQR3": {
-          "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>",
+          "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to @Check[flat|dc:3] for a concealed target or @Check[flat|dc:9] for a hidden one.</p>",
           "name": "Keen Eyes"
         },
         "tfbLqiaPEJea0IhK": {
@@ -643,7 +646,7 @@
           "description": "<p><strong>Thresholds</strong> 60 (3 segments), 30 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "zCAnyZMXYvnXxyYI": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bill-band launches a barrage of lit firecrackers that, upon impact, burst into light and sound. Each creature in a @Template[type:burst|distance:10] within 60 feet takes @Damage[1d12[sonic]] damage with a @Check[reflex|dc:19|basic] save. A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. When the bill-band is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bill-band launches a barrage of lit firecrackers that, upon impact, burst into light and sound. Each creature in a @Template[type:burst|distance:10] within 60 feet takes @Damage[1d12[sonic]|options:area-damage] damage with a @Check[reflex|dc:19|basic|options:area-effect] save. A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. When the bill-band is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>",
           "name": "Firecracker Salvo"
         }
       },
@@ -760,8 +763,12 @@
     "Bone Scavenger": {
       "description": "<p>Kholos have a strong connection to their ancestors, often using their bones as art and weapons to further honor them. Bone scavengers are sent to the fields after a battle to collect the bones of their fellow allies. They often eschew the pack hunting techniques of other kholos, spreading out among their foes when encountered in groups.</p><hr /><p>These pragmatic hunters have earned a very poor reputation for their brutality in battle and worship of demons. While many kholos live up to the terrible stories of their ferocity and cannibalism, others are scavengers and trappers just trying to get by. Many of their cultural traditions are misunderstood by other ancestries, and some kholos play into the fear provoked in those who believe the twisted tales about their people. Kholos are often criticized for their lack of honor in battle, but a kholo understands honor doesn't bring you back home alive, nor does honor put food on the table. Ambushes, feints, and deceptions that lead to fewer kholo deaths and a quicker victory are simply the logical thing to do.</p>",
       "items": {
+        "OtnUBBBUXOYTXoxi": {
+          "description": "<p>A kholo ignores the first square of difficult terrain they move into each time they Step or Stride.</p>",
+          "name": "Rugged Travel"
+        },
         "PXsNHwsu7FSaoXTp": {
-          "description": "<p><strong>Trigger</strong> The bone scavenger takes bludgeoning damage</p><hr /><p><strong>Effect</strong> The bone scavenger angles their makeshift armor to absorb some of the blow, causing shards of bone to splinter outward. All adjacent creatures take @Damage[2d4[piercing]] damage (@Check[reflex|dc:16|basic] save).</p>",
+          "description": "<p><strong>Trigger</strong> The bone scavenger takes bludgeoning damage</p><hr /><p><strong>Effect</strong> The bone scavenger angles their makeshift armor to absorb some of the blow, causing shards of bone to splinter outward. All adjacent creatures take @Damage[2d4[piercing]|options:area-damage] damage (@Check[reflex|dc:16|basic|options:area-effect] save).</p>",
           "name": "Bone Armor"
         },
         "UDW8CxEDEzWD8flw": {
@@ -1237,7 +1244,7 @@
       "description": "<p>A thick forest or flourishing farm sometimes sees an explosion of primal magic leading to the creation of a multitude of leshies. When still young, these spirits might band together with their crop-mates for protection or to achieve a mutual goal. Used to growing in rows, many corn leshies can form a sizable legion.</p><hr /><p>Nature spirits inhabit bodies made of plants or fungi, blooming from primal magic to become the small people called leshies. They come in a truly immense number of diverse shapes and sizes, more so than most peoples of Golarion. This variety of forms means a leshy could have a place in nearly any type of setting for any type of story.</p>",
       "items": {
         "56TBiiZbleUC5RaS": {
-          "description": "<p>The throng's members fling a bombardment of corn kernels. Each creature in a @Template[type:cone|distance:30] takes @Damage[2d6[bludgeoning]] damage with a @Check[reflex|dc:18|basic] save. When the throng is reduced to 2 or fewer segments, this area decreases to a @Template[type:cone|distance:15].</p>",
+          "description": "<p>The throng's members fling a bombardment of corn kernels. Each creature in a @Template[type:cone|distance:30] takes @Damage[2d6[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:18|basic|options:area-effect] save. When the throng is reduced to 2 or fewer segments, this area decreases to a @Template[type:cone|distance:15].</p>",
           "name": "Kernel Barrage"
         },
         "7642MJdP6gXjL3QY": {
@@ -1255,7 +1262,7 @@
           "description": "<p><strong>Thresholds</strong> 36 (3 segments), 18 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "hPm8yFM9mgIGHYL6": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The corn leshy throng lashes out with hardened ears of corn to attack each enemy in its space and in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:18|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+8)[bludgeoning]] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The corn leshy throng lashes out with hardened ears of corn to attack each enemy in its space and in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:18|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+8)[bludgeoning]|options:area-damage] damage</p>",
           "name": "Boxing Ears"
         }
       },
@@ -3186,8 +3193,11 @@
     "Gourd Leshy Witch": {
       "description": "<p>Some spooky leshies learn the ways of occult spellcasting from strange spirits of nature that lurk just out of sight or under cover of darkness. These witches treat their brooms as their familiars, imbuing the wood and straw with a sliver of sentience.</p><hr /><p>Nature spirits inhabit bodies made of plants or fungi, blooming from primal magic to become the small people called leshies. They come in a truly immense number of diverse shapes and sizes, more so than most peoples of Golarion. This variety of forms means a leshy could have a place in nearly any type of setting for any type of story.</p>",
       "items": {
+        "0KZhsY19lNCOaapo": {
+          "name": "Fist"
+        },
         "27M12c0Sfw4uzScs": {
-          "description": "<p>The gourd leshy witch transforms into a Small gourd. This ability otherwise uses the effects of one with plants.</p>"
+          "description": "<p>The gourd leshy witch transforms into a Small gourd. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "HnUH2oxiJLoIgEyf": {
           "description": "<p>When the gourd leshy witch dies, a burst of primal energy explodes from their body, restoring @Damage[4d8[healing,vitality]|shortLabel] Hit Points to each plant creature in a @Template[type:emanation|distance:30]. This area immediately fills with gourds, becoming difficult terrain. If the terrain is not a viable environment for these plants, they wither after 24 hours.</p>",
@@ -3197,11 +3207,11 @@
           "name": "Speak with Plants (Gourds Only) (Constant)"
         },
         "gph5kKQ1rfac9Ri3": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The gourd leshy witch is wielding a broom</p><hr /><p><strong>Effect</strong> The gourd leshy hops on their broom, which briefly takes flight. The witch Flies 20 feet (or 40 feet if they spend 2 actions), though they must end this movement on solid ground or fall at the end of their turn.</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The gourd leshy witch is wielding a broom</p><hr /><p><strong>Effect</strong> The gourd leshy hops on their broom, which briefly takes flight. The witch Flies 20 feet (or 40 feet if they spend 2 actions), though they must end this movement on solid ground or fall at the end of their turn.</p>",
           "name": "Short Flight"
         },
         "hnPlrEW9Gnqz7HoI": {
-          "name": "+1 Broom (functions as a staf)"
+          "name": "+1 Broom (functions as a staff)"
         },
         "nCrQi4oAWuu6VrCB": {
           "name": "Broom"
@@ -3523,7 +3533,7 @@
           "name": "Herbs and Spices"
         },
         "sXFGN98pGRn0UcNY": {
-          "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>",
+          "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to @Check[flat|dc:3] for a concealed target or @Check[flat|dc:9] for a hidden one.</p>",
           "name": "Keen Eyes"
         },
         "ubyBGQ2AFIsVx5WS": {
@@ -3539,7 +3549,7 @@
           "name": "Fist"
         },
         "B3ax6hAslzRNcDvK": {
-          "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>",
+          "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to @Check[flat|dc:3] for a concealed target or @Check[flat|dc:9] for a hidden one.</p>",
           "name": "Keen Eyes"
         },
         "HFXdCrPdWwvZMbuQ": {
@@ -3554,7 +3564,7 @@
           "name": "Distracting Escape"
         },
         "RxJnF7MlKwqVD1zj": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The smuggler Interacts to draw an item of light Bulk @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} in one of their @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} pockets. The pockets can store up to four objects of light Bulk. For most smugglers, these items are arsenic, a lesser elixir of life, a lesser smoke ball, and a thieves' toolkit. The smuggler can refill the pockets over the course of 1 minute.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The smuggler Interacts to draw an item of light Bulk concealed in one of their hidden pockets. The pockets can store up to four objects of light Bulk. For most smugglers, these items are @UUID[Compendium.pf2e.equipment-srd.Item.OIirLySQDLZgT15S]{Arsenic}, an @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{Elixir of Life (Lesser)}, a @UUID[Compendium.pf2e.equipment-srd.Item.MoBlVd36uD9xVvZC]{Smoke Ball (Lesser)}, and a @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]{Thieves' Toolkit}. The smuggler can refill the pockets over the course of 1 minute.</p>",
           "name": "Hidden Pockets"
         },
         "WvEDneUNZbnLdVLj": {
@@ -3568,11 +3578,11 @@
       "description": "<p>Yarnspinners weave captivating tales that entertain, educate, and preserve the rich heritage of the halfling people across generations.</p><hr /><p>Halflings thrive on simple pleasures—having a pint at the pub or warming their feet by the hearth.</p>",
       "items": {
         "1lH0btC4rnVMf7RA": {
-          "description": "<p>The yarnspinner weaves a long-winded but captivating narrative that enchants those nearby. Any creature that's in a @Template[type:emanation|distance:20] or starts its turn in the aura must attempt a @Check[will|dc:24] save. The Mesmerizing Tale lasts until the end of the yarnspinner's next turn, but can be Sustained. The first time the yarnspinner Sustains the aura on subsequent rounds, the aura expands by 10 feet, to a maximum of 60 feet.</p>",
+          "description": "<p>The yarnspinner weaves a long-winded but captivating narrative that enchants those nearby. Any creature that's in a @Template[type:emanation|distance:20] or starts its turn in the aura must attempt a @Check[will|dc:24] save. The Mesmerizing Tale lasts until the end of the yarnspinner's next turn, but can be Sustained. The first time the yarnspinner Sustains the aura on subsequent rounds, the aura expands by 10 feet, to a maximum of 60 feet.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected, and is temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the yarnspinner until the start of its next turn, and must spend all its actions to move closer to the yarnspinner and listen to the tale.</p>",
           "name": "Mesmerizing Tale"
         },
         "1ybGVGiiZvKRpwj6": {
-          "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>",
+          "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to @Check[flat|dc:3] for a concealed target or @Check[flat|dc:9] for a hidden one.</p>",
           "name": "Keen Eyes"
         },
         "7r5gV2gIAB62lc4v": {
@@ -3593,7 +3603,7 @@
           "name": "Fist"
         },
         "uZGRPTmda1grN4Gf": {
-          "description": "<p>If the yarnspinner's Mesmerizing Tale aura is active or they have cast a spell within the last round, their Strikes with magic weapons deal an additional @Damage[2d10[sonic]] damage.</p>",
+          "description": "<p>If the yarnspinner's Mesmerizing Tale aura is active or they have cast a spell within the last round, their Strikes with magic weapons deal an additional 2d10 sonic damage.</p>",
           "name": "Resonant Weapons"
         }
       },
@@ -3831,7 +3841,7 @@
           "description": "<p><strong>Thresholds</strong> 60 (3 segments), 30 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "A3iRCw1rjvafnZxN": {
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The battalion thrusts their spears at each enemy in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:21|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+5)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+7)[slashing]] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The battalion thrusts their spears at each enemy in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+5)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+7)[slashing]|options:area-damage] damage</p>",
           "name": "Coordinated Strikes"
         },
         "BncLkDKVuf43oiXu": {
@@ -3845,7 +3855,7 @@
           "description": "<p>Whenever a troop moves, you move one of its segments and the other segments follow behind it. At the end of the movement, you can group the other segments adjacent to the one you moved as you see fit, provided none of them moves farther than the moving segment. If you choose not to move the troop any distance, you can instead reshape the position of all the segments as long as one stays in place.</p>"
         },
         "cEC3FjTPb84L7Any": {
-          "description": "<p>The hobgoblin battalion's archers draw or reload their crossbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 120 feet that deals @Damage[2d8[piercing]] damage with a @Check[reflex|dc:21|basic] save. When the hobgoblin battalion is reduced to 2 or fewer segments, this area is reduced to a @Template[type:burst|distance:5].</p>",
+          "description": "<p>The hobgoblin battalion's archers draw or reload their crossbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 120 feet that deals @Damage[2d8[piercing]|options:area-damage] damage with a @Check[reflex|dc:21|basic|options:area-effect] save. When the hobgoblin battalion is reduced to 2 or fewer segments, this area is reduced to a @Template[type:burst|distance:5].</p>",
           "name": "Focused Volley"
         }
       },
@@ -3856,6 +3866,10 @@
     "Hobgoblin Spellbreaker": {
       "description": "<p>Largely due to an ancestral grudge against all things elven, many hobgoblins have an inherent distrust for magic, particularly the \"elf magic\" of the arcane tradition. Most hobgoblin armies maintain a contingent of special \"spellbreaker\" forces trained to assassinate high-value spellcasting targets prior to military engagement or quickly identify and terminate enemy battle mages.</p><hr /><p>Hobgoblins are respected across Golarion for their unmatched expertise in the art of war. The recent foundation of the hobgoblin nation of Oprak and its unprecedented acts of diplomacy, including non-aggression pacts with the neighboring nations of Nidal and Nirmathas, has given some hope that a lasting peace might finally be established; however, there remains no shortage of unaffiliated hobgoblin raiders and pillagers.</p>",
       "items": {
+        "loLdDazPRkauXpk3": {
+          "description": "<p>The hobgoblin spellbreaker can detect the source of any arcane magic within range as an imprecise sense.</p>",
+          "name": "Arcane Magic Sense"
+        },
         "nmK3sZLA9bMcPUVo": {
           "name": "Fist"
         },
@@ -4104,6 +4118,7 @@
       "description": "<p>Iruxi masked mummers bring lizardfolk myths to life, donning elaborate costumes and bone masks to enact stories featuring their ancestors, the gods, legendary dragons and dinosaurs, and nature spirits of all kinds.</p>\n<p>The most talented mummers claim their ritual dances invite these spirits inside them, suffusing their bodies with starlight and lending them primal power uniquely tied to the luminaries their masks represent. This magic can be seen even by those without magical ability, as they can see glowing motes shaped like distant stars seeming to float under the skin of the mummer.</p><hr /><p>Lizardfolk culture has flowered in recent years. With that revival has come a new generation of iruxis (as they call themselves) more willing to engage with the wider world, bringing with them their society's reverence for the past, facility with nature, and willingness to defend itself.</p>",
       "items": {
         "2hmdZNVQ5AHU6tqm": {
+          "description": "<p><span class=\"action-glyph\">2</span></p>",
           "name": "Spectral Roar"
         },
         "4f6L7Yc8P7tEzOOx": {
@@ -4123,14 +4138,14 @@
           "name": "Iruxi Lore"
         },
         "oIXWkbczFkJ8KZlj": {
-          "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> The mummer dons a ceremonial skull mask, calling an ancestral spirit to come to their aid. The spirit answers with a spell the mummer can cast as a primal innate spell (5th rank, DC 27) as part of the Don Mask activity. The mummer also gains a primal boon that lasts for 1 minute. After the minute is over or the mask is removed, the spell and boon end if either is still active, and the mummer is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}. The most common legendary spirits the masks can invoke are:</p><ul><li><strong>Fiery Akkarok</strong> (tyrannosaurus mask); <strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt} (3-action version); <strong>Boon</strong> The mummer's melee Strikes deal an additional @Damage[2d6[fire]] damage.</li><li><strong>Hazi Zephyr-Borne</strong> (griffon or iruxi mask); <strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind}; <strong>Boon</strong> The mummer gains a fly Speed of 20 feet.</li><li><strong>King of Storms</strong> (roc or horned dragon mask); <strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.xxWhyl81w3ckslAU]{Howling Blizzard}; <strong>Boon</strong> The mummer gains the Reactive Strike reaction that can be used only with their tail.</li><li><strong>Nessek, the Wave Dancer</strong> (mosasaur mask); <strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.xFp4EwVcYwSG336t]{Slither}; <strong>Boon</strong> The mummer's claw Strikes deal an additional @Damage[2d4[persistent,bleed]] damage.</li><li><p><strong>Zalok, Who was Called to Black Harbor</strong> (naga or spinosaurus mask); <strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.Y3G6Y6EDgCY0s3fq]{Hydraulic Torrent}; Boon The mummer gains a +10-foot status bonus to their land Speed and swim Speed.</p>\n</li></ul>",
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> The mummer dons a ceremonial skull mask, calling an ancestral spirit to come to their aid. The spirit answers with a spell the mummer can cast as a primal innate spell (5th rank, DC 27) as part of the Don Mask activity. The mummer also gains a primal boon that lasts for 1 minute. After the minute is over or the mask is removed, the spell and boon end if either is still active, and the mummer is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}. The most common legendary spirits the masks can invoke are:</p><ul><li><p><strong>Fiery Akkarok</strong> (tyrannosaurus mask)</p><ul><li><strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt} (3-action version)</li><li><strong>Boon</strong> The mummer's melee Strikes deal an additional 2d6 fire damage.</li></ul></li><li><p><strong>Hazi Zephyr-Borne</strong> (griffon or iruxi mask)</p><ul><li><strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind}</li><li><strong>Boon</strong> The mummer gains a fly Speed of 20 feet.</li></ul></li><li><p><strong>King of Storms</strong> (roc or horned dragon mask)</p><ul><li><strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.xxWhyl81w3ckslAU]{Howling Blizzard}</li><li><strong>Boon</strong> The mummer gains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc]{Reactive Strike} reaction that can be used only with their tail.</li></ul></li><li><p><strong>Nessek, the Wave Dancer</strong> (mosasaur mask)</p><ul><li><strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.xFp4EwVcYwSG336t]{Slither}</li><li><strong>Boon</strong> The mummer's claw Strikes deal an additional 2d4 persistent bleed damage.</li></ul></li><li><p><strong>Zalok, Who was Called to Black Harbor</strong> (naga or spinosaurus mask)</p><ul><li><strong>Spell</strong> @UUID[Compendium.pf2e.spells-srd.Item.Y3G6Y6EDgCY0s3fq]{Hydraulic Torrent}</li><li><strong>Boon</strong> The mummer gains a +10-foot status bonus to their land Speed and swim Speed.</li></ul></li></ul>",
           "name": "Don Mask"
         },
         "qXO6fsPdVPjv6blu": {
           "name": "Maestro's Instrument (Lesser) (Hand Drum)"
         },
         "sD8nNesP62YzR687": {
-          "name": "Claws"
+          "name": "Claw"
         },
         "wYRYSIgMLOyaKFdd": {
           "name": "Ceremonial Skull Mask"
@@ -4413,7 +4428,7 @@
           "name": "Geology Lore"
         },
         "yuynsVSsUSCdk5SC": {
-          "description": "<p>The kobold earth diver smashes their pick into the ground, sending debris exploding in a @Template[type:emanation|distance:5]. All creatures and unattended objects in range take @Damage[3d6[bludgeoning]] damage with a @Check[reflex|dc:20|basic] save. A creature that is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by an earth diver's Sinkhole takes an additional @Damage[1d6[bludgeoning]] damage.</p>",
+          "description": "<p>The kobold earth diver smashes their pick into the ground, sending debris exploding in a @Template[type:emanation|distance:5]. All creatures and unattended objects in range take @Damage[3d6[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:20|basic|options:area-effect] save. A creature that is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by an earth diver's Sinkhole takes an additional @Damage[1d6[bludgeoning]] damage.</p>",
           "name": "Pick Smash"
         }
       },
@@ -4443,14 +4458,14 @@
           "name": "Claw"
         },
         "8WG4O0u4doC3cN4f": {
-          "description": "<p>A kobold trapper protects items in their backpack with a booby trap. This booby trap requires a successful @Check[perception|dc:18] check to notice, and two successful @Check[thievery|dc:15] checks to disable.</p>\n<p>Accessing the backpack without disabling the trap destroys its contents, and splinters explode in a @Template[type:burst|distance:10] centered on the backpack, dealing @Damage[3d6[piercing]] damage (@Check[reflex|dc:15|basic] save).</p>",
+          "description": "<p>A kobold trapper protects items in their backpack with a booby trap. This booby trap requires a successful @Check[perception|dc:18] check to notice, and two successful @Check[thievery|dc:15] checks to disable.</p>\n<p>Accessing the backpack without disabling the trap destroys its contents, and splinters explode in a @Template[type:burst|distance:10] centered on the backpack, dealing @Damage[3d6[piercing]|options:area-damage] damage (@Check[reflex|dc:15|basic|options:area-effect] save).</p>",
           "name": "Booby-Trapped"
         },
         "Y9FN1CneGrmbNatQ": {
           "name": "+1 Circumstance to All Defenses vs. Traps"
         },
         "eJpLRA3j8QNnWM3M": {
-          "description": "<p>The kobold trapper creates a rudimentary trap on a surface in an adjacent square. The trap activates the next time a creature moves adjacent to it. The creature takes 2d6 bludgeoning, piercing, or slashing damage (determined by the trapper when the trap is constructed) with a @Check[reflex|dc:18|basic] save. On a failure, the creature also takes a –5 status penalty to all Speeds for 1 minute. The trap is destroyed when activated or after 8 hours, whichever comes first. A trapper typically carries enough raw materials to make six traps each day.</p>",
+          "description": "<p>The kobold trapper creates a rudimentary trap on a surface in an adjacent square. The trap activates the next time a creature moves adjacent to it. The creature takes 2d6 @Damage[2d6[bludgeoning]]{bludgeoning}, @Damage[2d6[piercing]]{piercing}, or @Damage[2d6[slashing]]{slashing} damage (determined by the trapper when the trap is constructed) with a @Check[reflex|dc:18|basic] save. On a failure, the creature also takes a –5 status penalty to all Speeds for 1 minute. The trap is destroyed when activated or after 8 hours, whichever comes first. A trapper typically carries enough raw materials to make six traps each day.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lhgGLGL8phfu0bOL]{Effect: Construct Trap}</p>",
           "name": "Construct Trap"
         },
         "tsWnpzSaabbX77Q0": {
@@ -6157,7 +6172,7 @@
           "name": "Speak with Plants (root vegetables only)"
         },
         "CB6rpe5geo854f0K": {
-          "description": "<p>The root leshy groundskeeper transforms into a Small root vegetable. This ability otherwise uses the effects of one with plants.</p>"
+          "description": "<p>The root leshy groundskeeper transforms into a Small root vegetable. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         },
         "MFYqsM31qdaZOvht": {
           "name": "Fist"
@@ -7213,18 +7228,21 @@
           "name": "Speak with Plants ((tumbleweeds and scrubland brush only)"
         },
         "9aZvZxrMkCqJ9NM7": {
-          "name": "First"
+          "name": "Fist"
+        },
+        "Bcv0cDl1eItdbixX": {
+          "description": "<p><strong>Trigger</strong> The tumbleweed leshy courier is targeted with an attack by an attacker they can see</p><hr /><p><strong>Effect</strong> The leshy gains a +2 circumstance bonus to AC against the triggering attack.</p>"
         },
         "nB76Ig6XS6Wv86JA": {
           "description": "<p>The tumbleweed leshy courier gains a +10-foot circumstance bonus to Speed while traveling during exploration mode.</p>",
           "name": "Tumbling Traveler"
         },
         "xTcDZSkp3WAdhSKI": {
-          "description": "<p>TWhen the tumbleweed leshy courier dies, a burst of primal energy explodes from their body, restoring @Damage[2d8[healing,vitality]|shortLabel] Hit Points to each plant creature in a @Template[type:emanation|distance:30]. This area immediately fills with brambles and thistles, becoming difficult terrain. Any creature that moves through the area takes @Damage[1[piercing]] damage per square traversed. If the terrain is not a viable environment for these plants, they wither after 24 hours.</p>",
+          "description": "<p>When the tumbleweed leshy courier dies, a burst of primal energy explodes from their body, restoring @Damage[2d8[healing,vitality]|shortLabel] Hit Points to each plant creature in a @Template[type:emanation|distance:30]. This area immediately fills with brambles and thistles, becoming difficult terrain. Any creature that moves through the area takes @Damage[1[piercing]] damage per square traversed. If the terrain is not a viable environment for these plants, they wither after 24 hours.</p>",
           "name": "Spiny Burst"
         },
         "yB7IqUJb0VoQlhoB": {
-          "description": "<p>The tumbleweed leshy courier transforms into a Small tumbleweed. This ability otherwise uses the effects of one with plants. Additionally, when the leshy uses their Change Shape ability, they still have a Speed of 10 feet for the purpose of travel during exploration mode.</p>"
+          "description": "<p>The tumbleweed leshy courier transforms into a Small tumbleweed. This ability otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}. Additionally, when the leshy uses their Change Shape ability, they still have a Speed of 10 feet for the purpose of travel during exploration mode.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
         }
       },
       "name": "Tumbleweed Leshy Courier"
