@@ -462,11 +462,11 @@
           "name": "Lie in Wait"
         },
         "DfON8v909jMLsLaL": {
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bandits make a coordinated attack with their axes against each enemy in a 5-foot emanation with a @Check[reflex|dc:22|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+9)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+9)[slashing]] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bandits make a coordinated attack with their axes against each enemy in a @Template[emanation|distance:5] with a @Check[reflex|dc:22|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+9)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+9)[slashing]|options:area-damage] damage</p>",
           "name": "Chop 'em Down!"
         },
         "GaNuN6hXeQKNOEPh": {
-          "description": "<p>The bandits draw or reload their slings, then launch a volley of sling bullets. This is a 10-foot burst within 50 feet that deals @Damage[(2d6+4)[bludgeoning]] damage with a @Check[reflex|dc:22|basic] save. When the troop is reduced to 2 or fewer segments, this area decreases to a 5-foot burst.</p>",
+          "description": "<p>The bandits draw or reload their slings, then launch a volley of sling bullets. This is a @Template[burst|distance:10] within 50 feet that deals @Damage[(2d6+4)[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:22|basic|options:area-effect] save. When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5].</p>",
           "name": "Launch Slings!"
         },
         "L9qydPbyPjP1eC2j": {
@@ -858,8 +858,11 @@
           "name": "+1 Bonus on Perception to Find Traps"
         },
         "sDwLsrlMceRxlzIo": {
-          "description": "<p>The burglar isn't off-guard to creatures of 4th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using @UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>",
+          "description": "<p>The burglar isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures of 4th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using @UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>",
           "name": "Deny Advantage"
+        },
+        "vD0S2rfhIBKjlOjn": {
+          "name": "+1 AC vs. Traps"
         },
         "zS04tb23VRw9X9kX": {
           "description": "<p><strong>Trigger</strong> The burglar is targeted with a melee or ranged attack by an attacker it can see.</p>\n<hr />\n<p><strong>Effect</strong> The burglar gains a +2 circumstance bonus to AC against the triggering attack.</p>",
@@ -1410,7 +1413,7 @@
           "name": "Kingpin's Command"
         },
         "IhLf7F9sRTvihN0g": {
-          "description": "<p>The crime kingpin isn't off-guard to creatures of 12th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using @UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>",
+          "description": "<p>The crime kingpin isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures of 12th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using @UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>",
           "name": "Deny Advantage"
         },
         "K3VO3ewirpN4AXzB": {
@@ -2578,7 +2581,7 @@
       "description": "<p>Fences make themselves indispensable to the underworld by paying for stolen goods only to resell them later, whether through a seemingly legitimate business or to a closed group of elite buyers.</p><hr /><p>In the underbelly of society, the lawless reign supreme.</p>",
       "items": {
         "0WoLHxcEDfHig6LB": {
-          "description": "<p>The fence @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints}, then can Step. If the feint succeeds, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the fence's melee attacks until the end of the fence's next turn (or to all melee attacks on a critical success).</p>",
+          "description": "<p>The fence [[/act feint]]{Feints}, then can Step. If the feint succeeds, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the fence's melee attacks until the end of the fence's next turn (or to all melee attacks on a critical success).</p>",
           "name": "Fence's Feint"
         },
         "EN5G8FNoxJ13WPTb": {
@@ -3316,7 +3319,7 @@
           "name": "Fist"
         },
         "sYkKuB3z4lzIeR9O": {
-          "description": "<p>The grave robber carries alchemical vials of specially prepared embalming fluid meant to hinder pursuit by anyone who interrupts their grave-robbing. A creature hit by a grave robber's embalming flask takes a –10-foot penalty to all its Speeds for 1 round. On a critical hit from an embalming flask, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute.</p><hr /><p>@UUID[Compendium.pf2e.bestiary-effects.Item.HVGl2hSrfqHE4OZ2]{Effect: Alchemical Embalming}</p>",
+          "description": "<p>The grave robber carries alchemical vials of specially prepared embalming fluid meant to hinder pursuit by anyone who interrupts their grave-robbing. A creature hit by a grave robber's embalming flask takes a –10-foot penalty to all its Speeds for 1 round. On a critical hit from an embalming flask, the target is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HVGl2hSrfqHE4OZ2]{Effect: Alchemical Embalming}</p>",
           "name": "Alchemical Embalming"
         },
         "vYfmeRDM7Kx3xG0n": {
@@ -4516,11 +4519,11 @@
       "description": "<p>Criminal organizations are always happy to loan out money at exorbitant rates, and their legbreakers are always happy to collect.</p><hr /><p>In the underbelly of society, the lawless reign supreme.</p>",
       "items": {
         "0gE6l2oSZZRPjEyT": {
-          "description": "<p>The legbreaker Shoves a creature, gaining a +2 circumstance bonus to their Athletics check if the target is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} succeeds, the target takes @Damage[2d10[bludgeoning]] damage (double damage on a critical success).</p>",
+          "description": "<p>The legbreaker [[/act shove options=stampeding-shove]]{Shoves} a creature, gaining a +2 circumstance bonus to their Athletics check if the target is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the Shove succeeds, the target takes @Damage[2d10[bludgeoning]] damage (double damage on a critical success).</p>",
           "name": "Stampeding Shove"
         },
         "TAqfKW4mSmkiBuzO": {
-          "description": "<p>The legbreaker makes a maul Strike against an adjacent creature. If it hits, the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute. As long as this clumsy condition lasts, the creature also takes a –5-foot penalty to its Speeds and has weakness 5 to the legbreaker's Strikes.</p>",
+          "description": "<p>The legbreaker makes a maul Strike against an adjacent creature. If it hits, the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute. As long as this clumsy condition lasts, the creature also takes a –5-foot penalty to its Speeds and has weakness 5 to the legbreaker's Strikes.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.zOaP4yGwbFOszxeJ]{Effect: Break Legs!}</p>",
           "name": "Break Legs!"
         },
         "WMD2iZZH3jNfGTgC": {
@@ -4604,7 +4607,7 @@
           "name": "Loan Specialist"
         },
         "Bxt5euIfciVt0Bnw": {
-          "name": "Dragon-Headed Cane"
+          "name": "Dragon-Headed Cane (functions as a staff)"
         },
         "DD83LMY5UCjUnyWb": {
           "name": "Fist"
@@ -4617,14 +4620,14 @@
           "name": "Business Savvy"
         },
         "qfr40H0AoV22bvUd": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The loan shark commands an ally within 30 feet to attack a creature who owes the loan shark money. The ally can use a reaction to Strike the debtor, dealing an additional @Damage[1d6[mental]] damage.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The loan shark commands an ally within 30 feet to attack a creature who owes the loan shark money. The ally can use a reaction to Strike the debtor, dealing an additional 1d6 mental damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.T13bc44lsaOUjJa9]{Effect: Interest is Due!}</p>",
           "name": "Interest is Due!"
         },
         "rgKyJyeyXfPEYM5M": {
           "name": "Accounting Lore"
         },
         "tfK72gDLl1pjUfru": {
-          "description": "<p>60 feet.</p>\n<p>Creatures in the aura who owe the loan shark money take a –3 circumstance penalty to their Will DC against the loan shark's attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} or @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} them and can't reduce their @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} value below 1 while in the aura.</p>",
+          "description": "<p>60 feet.</p>\n<p>Creatures in the aura who owe the loan shark money take a –3 circumstance penalty to their Will DC against the loan shark's attempts to [[/act demoralize]] or [[/act coerce]] them and can't reduce their @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} value below 1 while in the aura.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.pZ0Vr0Pe3LHe4ptx]{Effect: Owe Money}</p>",
           "name": "Never off the Hook"
         }
       },
@@ -4832,7 +4835,7 @@
           "name": "+4 Bonus on Perception to Sense Motive"
         },
         "442ka05ivDCRYfaP": {
-          "description": "<p>The master of disguise creates a disguise and Impersonates. They gain a +5 status bonus to Deception checks to Impersonate or to tell a Lie that helps them maintain their disguise. When a spell or magical effect tries to read their mind, detect whether they're lying, or reveal their identity, they can attempt a Deception check against the spell or effect's DC. If they succeed, the effect reveals information appropriate to their cover identity or nothing (the GM determines which).</p>",
+          "description": "<p>The master of disguise creates a disguise and Impersonates. They gain a +5 status bonus to Deception checks to [[/act impersonate]] or to tell a [[/act lie]] that helps them maintain their disguise. When a spell or magical effect tries to read their mind, detect whether they're lying, or reveal their identity, they can attempt a @Check[deception] check against the spell or effect's DC. If they succeed, the effect reveals information appropriate to their cover identity or nothing (the GM determines which).</p>",
           "name": "Impeccable Disguise"
         },
         "58TSLLvaZvy32x0g": {
@@ -4854,7 +4857,7 @@
           "description": "<p>The master of disguise deals an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "WPPeDB4GRopbnpzu": {
-          "description": "<p>If the master of disguise and the creature they're Impersonating are in each others' presence, the genuine creature must Lie if they're vouching for their own identity, and are treated as though they were Impersonating themself if someone Seeks in an attempt to pierce their disguise. The genuine creature can use their Deception modifier, Diplomacy modifier, or a +15 modifier, whichever is highest.</p>",
+          "description": "<p>If the master of disguise and the creature they're @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonating} are in each others' presence, the genuine creature must @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} if they're vouching for their own identity, and are treated as though they were Impersonating themself if someone @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seeks} in an attempt to pierce their disguise. The genuine creature can use their Deception modifier, Diplomacy modifier, or a +15 modifier, whichever is highest.</p>",
           "name": "Double Take"
         },
         "lBdMHw8S6kK4VEQ0": {
@@ -6225,7 +6228,7 @@
           "description": "<p>The ruffian deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "qy60SQR1jiyW4CXc": {
-          "description": "<p><strong>Trigger</strong> The ruffian has one hand free</p><hr /><p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the ruffian Grabs the target using their free hand. The creature remains @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of the ruffian's next turn or until it Escapes, whichever comes first.</p>",
+          "description": "<p><strong>Trigger</strong> The ruffian has one hand free</p><hr /><p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the ruffian Grabs the target using their free hand. The creature remains @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of the ruffian's next turn or until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}, whichever comes first.</p>",
           "name": "Combat Grab"
         },
         "sCsRpD25k35SJXKJ": {
