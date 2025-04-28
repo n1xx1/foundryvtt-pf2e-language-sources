@@ -12,7 +12,7 @@
           "name": "Religious Specialist"
         },
         "i8T4igNA9npQP3pv": {
-          "name": "Griffon Cane (functions as a staff)"
+          "name": "Griffon Cane (Functions as a Staff)"
         },
         "iNbmGDctA5YSsh5W": {
           "name": "Religious Symbol of Abadar"
@@ -148,7 +148,7 @@
       "description": "<p>Many societies recognize aiuvarins' skills as adept translators.</p><hr /><p>Elves' long lives give them centuries to delve into studies, artistry, or exploration.</p>",
       "items": {
         "1QKex9sfMkClZm7g": {
-          "name": "Quill Pen (functions as a dart)"
+          "name": "Quill Pen (Functions as a Dart)"
         },
         "DM5H1C1R3wMXTfwf": {
           "name": "Quill Pen"
@@ -313,6 +313,10 @@
         "3qXRqtGN9GQB9uVH": {
           "description": "<p>The artillerist is permanently quickened. They can use this extra action only to Aim, Load, or Launch a siege weapon.</p>",
           "name": "Siege Acumen"
+        },
+        "BKAZUyxs7ojI3Lc0": {
+          "description": "<p>The artillerist gains a +2 bonus to @Check[perception|options:siege-weapon] if the artillerist is crewing a siege weapon. Additionally, they gain a +2 bonus to @Check[engineering-lore|options:siege-weapon] and @Check[explosive-lore|options:siege-weapon] for siege weapons.</p>",
+          "name": "Siege Weapons Expert"
         },
         "NgI500OpopDEPzxl": {
           "name": "Explosive Lore"
@@ -1688,7 +1692,7 @@
           "name": "Dynamite"
         },
         "L3ZG758QkjjpEMSL": {
-          "description": "<p>The demolitionist plants a powerful wall charge on a flat surface such as a door or wall. Once the charge is planted, it explodes after 1 minute, dealing @Damage[60[fire]] damage to the surface and ignoring up to 15 of the surface's Hardness. The explosive also deals @Damage[5d6[fire]|options:area-damage] damage to creatures within 30 feet of the explosive with a @Check[reflex|dc:25|basic|options:area-effect] save.</p>",
+          "description": "<p>The demolitionist plants a powerful wall charge on a flat surface such as a door or wall. Once the charge is planted, it explodes after 1 minute, dealing @Damage[60[fire]] damage to the surface and ignoring up to 15 of the surface's Hardness. The explosive also deals @Damage[5d6[fire]|options:area-damage] damage to creatures within @Template[burst|distance:30]{30 feet} of the explosive with a @Check[reflex|dc:25|basic|options:area-effect] save.</p>",
           "name": "Wall Charge"
         },
         "M4tUVZ57LnlsVriD": {
@@ -1696,7 +1700,7 @@
           "name": "Explosive Demise"
         },
         "NRLOvrZlfeWlBrqH": {
-          "name": "Bag of explosives"
+          "name": "Bag of Explosives"
         },
         "QZfMMVT165WeDb9O": {
           "name": "Wall Charge"
@@ -1951,7 +1955,7 @@
           "name": "Driving Lore"
         },
         "XEKSlbtSWvjRWvzi": {
-          "description": "<p>A driver can attempt a Driving Lore check to increase a vehicle's travel Speed when calculating the value for a day. The DC is determined by the GM but is typically based on the vehicle's piloting DC or the difficulty of traversing the environment, whichever is harder. On a success, increase the vehicle's travel Speed by half.</p>",
+          "description": "<p>A driver can attempt a @Check[driving-lore] check to increase a vehicle's travel Speed when calculating the value for a day. The DC is determined by the GM but is typically based on the vehicle's piloting DC or the difficulty of traversing the environment, whichever is harder. On a success, increase the vehicle's travel Speed by half.</p>",
           "name": "Express Driver"
         },
         "YhR8IO57dhN08R3V": {
@@ -1960,9 +1964,14 @@
         "dJlALdFes4OIpoMj": {
           "description": "<p><strong>Requirements</strong> The driver is taking a Drive action with a vehicle and moves the vehicle adjacent to a creature</p><hr /><p><strong>Effect</strong> All creatures adjacent to the vehicle take the vehicle's collision damage with a @Check[reflex|basic] save against the vehicle's collision DC. The vehicle continues to move normally after the Sideswipe.</p>",
           "name": "Sideswipe"
+        },
+        "iGEnHhvX5zg1Tocx": {
+          "name": "+6 Status to All Defenses While Driving"
         }
       },
-      "name": "Driver"
+      "name": "Driver",
+      "npcAc": "+6 status to all defenses while driving",
+      "npcAllSaves": "+6 status to all defenses while driving"
     },
     "Dromaar Lorekeeper": {
       "description": "<p>Lorekeepers are meticulous keepers of the colorful and often misunderstood history of orcs and dromaar. They're jovial wanderers, telling their stories to anyone who will listen.</p><hr /><p>Orcs have a strict moral code encompassing valor and accomplishment, and they cast out those unwilling to follow it. For the last few generations, orcs have been trying to erase the narratives around their culture as being solely focused on war and violence. They invite other races and adventuring parties inside their holds so they may experience the truth of who the orcs are.</p>",
@@ -2041,7 +2050,7 @@
           "name": "Pewter Mug"
         },
         "RKa2PsbkATet8Zb9": {
-          "name": "Drunkard's Outfit (functions as padded armor)"
+          "name": "Drunkard's Outfit (Functions as Padded Armor)"
         },
         "UzdMoqfj4XsqRriz": {
           "description": "<p><strong>Requirements</strong> The drunkard is raging</p><hr /><p><strong>Effect</strong> The drunkard attempts two fist Strikes, each against a different creature.</p>",
@@ -2151,7 +2160,7 @@
           "name": "Temper Armament"
         },
         "kqxtA9799qydsJaQ": {
-          "name": "Leather Apron (functions as padded armor)"
+          "name": "Leather Apron (Functions as Padded Armor)"
         },
         "syv1edVQgcArdgPf": {
           "name": "Fist"
@@ -2181,8 +2190,7 @@
           "name": "Artisan's Toolkit (Blacksmithing)"
         },
         "u3OcRM1LBeFNSLO7": {
-          "description": "<p>Functions as @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate}.</p>",
-          "name": "Steel Plating"
+          "name": "Steel Plating (Functions as Half Plate)"
         },
         "wovFCCDRVmqjVIbB": {
           "name": "Modular Prosthesis"
@@ -3016,7 +3024,7 @@
           "name": "Trowel"
         },
         "WU8XgvpWKbeKwRXd": {
-          "name": "Trowel (functions as a sickle)"
+          "name": "Trowel (Functions as a Sickle)"
         },
         "iUmgDIi5w2pa9pQA": {
           "name": "Fist"
@@ -3026,7 +3034,7 @@
           "name": "Animal Elocutionist"
         },
         "upqRfSHP59QoKxK7": {
-          "name": "Seeds (functions as sling bullets)"
+          "name": "Seeds (Functions as Sling Bullets)"
         },
         "wVyWfOGdi8lS6LEn": {
           "description": "<p>With a primal incantation, the gnome conservationist inspires a willing animal. The animal becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 round. It can use this additional action only to Climb, Burrow, Fly, Stride, or Strike.</p>",
@@ -3079,7 +3087,7 @@
       "description": "<p>Goblins eat almost anything. Though they'll survive on raw or little-cooked meat, some prefer searing or frying their food first—or better yet, pickling it! A goblin chef can make anything edible (at least to a goblin).</p><hr /><p>Goblins can be found across Golarion, sometimes threatening taller humanoids (whom they refer to as \"longshanks\") and sometimes redeeming harmful history by working alongside others.</p>",
       "items": {
         "24nv7Mz0lel6HY8t": {
-          "name": "Leather Apron (functions as leather armor)"
+          "name": "Leather Apron (Functions as Leather Armor)"
         },
         "GKPB4Zh8uOFac3Cs": {
           "name": "Jaws"
@@ -3102,7 +3110,7 @@
           "name": "Pickles"
         },
         "ji8X7Iz4cPvUmEx6": {
-          "name": "Cleaver (functions as dogslicer)"
+          "name": "Cleaver (Functions as Dogslicer)"
         },
         "uqBO9mtcMMM4g3xJ": {
           "name": "Cleaver"
@@ -3223,7 +3231,7 @@
           "name": "Short Flight"
         },
         "hnPlrEW9Gnqz7HoI": {
-          "name": "+1 Broom (functions as a staff)"
+          "name": "+1 Broom (Functions as a Staff)"
         },
         "nCrQi4oAWuu6VrCB": {
           "name": "Broom"
@@ -4285,7 +4293,7 @@
           "name": "Power Source"
         },
         "8vRQFNB6ZuJQuPsr": {
-          "description": "<p>A juggernaut carries a powerful cannon-like projectile weapon that requires two hands to wield and deals @Damage[14d6[@actor.flags.pf2e.powerSource]|options:area-damage] damage to all creatures in its area with a DC 31 basic save; the damage type, area, and save are based on the armor's power source, as listed below. Once activated, Energy Projector can't be used again for [[/gmr 1d4 #Recharge be used]]{1d4 rounds}.</p><ul><li><strong>Cold</strong> @Template[type:cone|distance:30] of cold (@Check[reflex|basic|dc:31|options:area-effect|traits:cold])</li><li><strong>Electricity</strong> @Template[type:line|distance:60] of electricity (@Check[reflex|basic|dc:31|options:area-effect|traits:electricity])</li><li><strong>Fire</strong> @Template[type:cone|distance:30] of fire (@Check[reflex|basic|dc:31|options:area-effect|traits:fire])</li><li><strong>Poison</strong> @Template[type:cone|distance:30] of poison gas (@Check[fortitude|basic|dc:31|options:area-effect|traits:poison])</li></ul>",
+          "description": "<p>A juggernaut carries a powerful cannon-like projectile weapon that requires two hands to wield and deals @Damage[14d6[@actor.flags.pf2e.powerSource]|options:area-damage] damage to all creatures in its area with a DC 31 basic save; the damage type, area, and save are based on the armor's power source, as listed below. Once activated, Energy Projector can't be used again for [[/gmr 1d4 #Recharge Energy Projector]]{1d4 rounds}.</p><ul><li><strong>Cold</strong> @Template[type:cone|distance:30] of cold (@Check[reflex|basic|dc:31|options:area-effect|traits:cold])</li><li><strong>Electricity</strong> @Template[type:line|distance:60] of electricity (@Check[reflex|basic|dc:31|options:area-effect|traits:electricity])</li><li><strong>Fire</strong> @Template[type:cone|distance:30] of fire (@Check[reflex|basic|dc:31|options:area-effect|traits:fire])</li><li><strong>Poison</strong> @Template[type:cone|distance:30] of poison gas (@Check[fortitude|basic|dc:31|options:area-effect|traits:poison])</li></ul>",
           "name": "Energy Projector"
         },
         "UZiC0hbYaPytP9Ds": {
@@ -4610,7 +4618,7 @@
           "name": "Loan Specialist"
         },
         "Bxt5euIfciVt0Bnw": {
-          "name": "Dragon-Headed Cane (functions as a staff)"
+          "name": "Dragon-Headed Cane (Functions as a Staff)"
         },
         "DD83LMY5UCjUnyWb": {
           "name": "Fist"
@@ -4928,15 +4936,14 @@
           "name": "Engineering Lore"
         },
         "EHiqnDjQXWBrf1mO": {
-          "description": "<p>Functions as a mace.</p>",
-          "name": "Heavy Wrench"
+          "name": "Heavy Wrench (Functions as a Mace)"
         },
         "Us26kvXKvDuvM3gQ": {
           "description": "<p>The mechanic is trained in Crafting, but a master in Crafting for mechanical devices, siege weapons, and vehicles. They can Repair in 1 minute instead of 10 minutes, or in 3 actions for a mechanical device, siege weapon, or vehicle.</p>",
           "name": "Mechanical Repair"
         },
         "VUavvarLcywk8Q3w": {
-          "description": "<p>The mechanic pushes a mechanical device, siege weapon, or vehicle pasts its regular limits with a temporary upgrade chosen from the list below. An item can have only one risky upgrade at a time. If an item has an upgrade at the start of the mechanic's turn, the mechanic must attempt a @Check[flat|dc:5]. (These flat checks continue even if the mechanic is dead or otherwise can't take turns.) On a failure, the item explodes, dealing damage equal to the item's level to all adjacent creatures and ending the upgrade.</p><ul><li><strong>Overheat Weapons</strong> If the item would deal damage, it deals an additional 1d6 fire damage. This increases to 2d6 if the item is 8th level or higher.</li><li><strong>Pressured Plating</strong> The item gains a +3 status bonus to its Hardness and gains temporary Hit Points equal to double its level that last for 10 minutes.</li><li><p><strong>Propelled Boost</strong> If the item has a Speed, the item gains a +15-foot status bonus to Speed.</p>\n</li></ul>",
+          "description": "<p>The mechanic pushes a mechanical device, siege weapon, or vehicle pasts its regular limits with a temporary upgrade chosen from the list below. An item can have only one risky upgrade at a time. If an item has an upgrade at the start of the mechanic's turn, the mechanic must attempt a @Check[flat|dc:5]. (These flat checks continue even if the mechanic is dead or otherwise can't take turns.) On a failure, the item explodes, dealing damage equal to the item's level to all adjacent creatures and ending the upgrade.</p><ul><li><strong>Overheat Weapons</strong> If the item would deal damage, it deals an additional 1d6 fire damage. This increases to 2d6 if the item is 8th level or higher.</li><li><strong>Pressured Plating</strong> The item gains a +3 status bonus to its Hardness and gains temporary Hit Points equal to double its level that last for 10 minutes.</li><li><strong>Propelled Boost</strong> If the item has a Speed, the item gains a +15-foot status bonus to Speed.</li></ul>",
           "name": "Risky Upgrade"
         },
         "hFCLeErWBZW9j1Ox": {
@@ -5764,7 +5771,7 @@
           "name": "Irori Lore"
         },
         "QCBZKzLaKkHVJpqc": {
-          "name": "Walking Stick (functions as a staff)"
+          "name": "Walking Stick (Functions as a Staff)"
         },
         "WEzTT885iSc7xGiI": {
           "name": "Fist"
@@ -6005,7 +6012,7 @@
           "name": "Robes"
         },
         "nwfcLkf39CUdTMCe": {
-          "name": "Manifesto (functions as a religious text)"
+          "name": "Manifesto (Functions as a Religious Text)"
         },
         "y5n9AfgPzGvGtS69": {
           "name": "Rock"
@@ -6147,15 +6154,14 @@
       "description": "<p>It takes a very specific personality to strap on a tank filled with a highly flammable alchemical substance and set it afire to launch oneself into the sky, so it is perhaps unsurprising that most rocketeers are reckless and bombastic individuals who delight in the theatrics inherent in their craft. While the unpredictability of rocketeering devices and the high casualty rate among those who use them make such devices generally unsuitable for military applications, a few courageous souls have used them to become dashing folk heroes or performing daredevils, many of whose most memorable performances culminate in their own dramatic demises.</p><hr /><p>Although relatively uncommon across much of Golarion, the frequently eccentric but undeniably brilliant minds who create elaborate devices of clockwork, gunpowder, and steam often loom much larger in the public eye than their numbers would suggest.</p>",
       "items": {
         "IAb9MKH3eOSfwzhu": {
-          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> The rocketeer is standing on a horizontal surface</p><hr /><p><strong>Effect</strong> The rocketeer unleashes the full strength of their jets to launch themself into the air, dealing @Damage[7d6[fire]] and bludgeoning damage to all creatures in a @Template[type:emanation|distance:15] with a @Check[reflex|dc:24|basic|options:area-effect] save. The rocketeer Flies twice, straight up into the air.</p>",
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> The rocketeer is standing on a horizontal surface</p><hr /><p><strong>Effect</strong> The rocketeer unleashes the full strength of their jets to launch themself into the air, dealing @Damage[7d6[fire],7d6[bludgeoning]|options:area-damage] damage to all creatures in a @Template[type:emanation|distance:15] with a @Check[reflex|dc:24|basic|options:area-effect] save. The rocketeer Flies twice, straight up into the air.</p>",
           "name": "Explosive Liftoff"
         },
         "LQbj4uc9my6VXYyp": {
           "name": "Fist"
         },
         "UoxwnN4Q1zsvyOGb": {
-          "description": "<p>Functions as a mace.</p>",
-          "name": "Heavy Wrench"
+          "name": "Heavy Wrench (Functions as a Mace)"
         },
         "clI0YsKYwQwcxITc": {
           "name": "Engineering Lore"
@@ -6165,8 +6171,7 @@
           "name": "Rocketing Strafe"
         },
         "k7DcmQKiSRE4Nd9p": {
-          "description": "<p>Functions as leather armor.</p>",
-          "name": "Flight Suit"
+          "name": "Flight Suit (Functions as Leather Armor)"
         },
         "lnYX8kYZIlB2k6SV": {
           "name": "Heavy Wrench"
@@ -6198,7 +6203,7 @@
           "name": "Fist"
         },
         "Mah1F6zcgOO7R7VI": {
-          "name": "Shovel (functions as pick)"
+          "name": "Shovel (Functions as Pick)"
         },
         "SvRzg0tGLBfvJyPC": {
           "description": "<p>The root leshy groundskeeper roots themself into the ground, reducing their Speed to 0 and granting them a +1 circumstance bonus to AC and 2 temporary Hit Points until the start of their next turn.</p>",
@@ -6634,7 +6639,7 @@
           "name": "Ocean Lore"
         },
         "wzyk07QDhjFFZulZ": {
-          "name": "Diving Suit (functions as half plate)"
+          "name": "Diving Suit (Functions as Half Plate)"
         },
         "x2XuUiCRgLDUA2L5": {
           "description": "<p>The marauder's diving suit is a technological marvel. When sealed, it provides 1 hour of fresh air and protects the wearer from exposure to inhaled threats. Personalized modifications and a need for constant tinkering mean that other creatures are unable to take advantage of the special abilities of the diving suit and treat it as an ordinary suit of half plate.</p>",
