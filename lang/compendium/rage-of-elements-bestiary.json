@@ -228,7 +228,7 @@
           "name": "Troop Movement"
         },
         "2yFauo5guCRGqBMo": {
-          "description": "<p>The avalanche legion spins in place, kicking up a barrage of stones. Each creature in a @Template[burst|distance:10] within 30 feet of the troop takes @Damage[(2d12+10)[bludgeoning]] damage (@Check[reflex|dc:28|basic] save). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>",
+          "description": "<p>The avalanche legion spins in place, kicking up a barrage of stones. Each creature in a @Template[burst|distance:10] within 30 feet of the troop takes @Damage[(1d12+8)[bludgeoning]] damage (@Check[reflex|dc:28|basic] save). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5].</p>",
           "name": "Spinning Stones"
         },
         "9wdDct96jeZUdbcl": {
@@ -246,7 +246,7 @@
           "name": "Earthbound"
         },
         "kRzkn90J5Ky2v7Io": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The avalanche legion unleashes an onslaught of blows against each enemy within 5 feet (@Check[reflex|dc:28|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+8)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+11)[bludgeoning]] damage</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The avalanche legion unleashes an onslaught of blows against each enemy in a @Template[emanation|distance:5] (@Check[reflex|dc:28|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+8)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+11)[bludgeoning]] damage</p>",
           "name": "Pummeling Boulders"
         },
         "umlBJNRh2jqhdPoK": {
@@ -255,7 +255,7 @@
         }
       },
       "name": "Avalanche Legion",
-      "npcHp": "16 squares Thresholds 160 (12 squares), 80 (8 squares)",
+      "npcHp": "16 squares Thresholds 160 (3 segments), 80 (2 segments)",
       "npcSpeed": "earth glide, troop movement"
     },
     "Blustering Gale": {
@@ -266,7 +266,7 @@
           "name": "Bullying Bluster"
         },
         "GXEYb7C00ZXmEiOV": {
-          "description": "<p>The blustering gale exhales as a unit, creating a powerful windstorm. This windstorm is a @Template[burst|distance:10] within 100 feet that deals @Damage[(3d8+10)[bludgeoning]] damage (@Check[reflex|dc:30|basic] save). Creatures that fail their saving throw are pushed 10 feet in any direction (plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5] and the distance pushed decreases to 5 feet.</p>",
+          "description": "<p>The blustering gale exhales as a unit, creating a powerful windstorm. This windstorm is a @Template[burst|distance:10] within 100 feet that deals @Damage[(3d8+10)[bludgeoning]] damage (@Check[reflex|dc:30|basic] save). Creatures that fail their saving throw are pushed 10 feet in any direction (plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5] and the distance pushed decreases to 5 feet.</p>",
           "name": "Windstorm"
         },
         "PWxA5OSMAbdsHWFY": {
@@ -282,7 +282,7 @@
         }
       },
       "name": "Blustering Gale",
-      "npcHp": "(16 squares); Thresholds 100 (12 squares), 50 (8 squares)",
+      "npcHp": "(16 squares); Thresholds 100 (3 segments), 50 (2 segments)",
       "npcSpeed": "troop movement"
     },
     "Boiling Spring": {
@@ -946,7 +946,7 @@
       "description": "<p>Great fruiting trees grow in massive orderly rows in a region of the Plane of Wood called Armory Grove. Over the course of decades, a regiment tree's branches grow heavy, laden with fruits uncannily shaped like people. They're cultivated by retired warriors whose tireless work ensures that these fruits grow into a form suitable for battle. Their efforts instill tactical knowledge in these fruit warriors so they're prepared to fight as soon as they fall from the tree—which they do simultaneously, forming one battle-ready unit. Each soldier is equal in skill and similar in form, with a wooden outer shell that splits into portions as the flesh of the fruit inside ripens. A slain warrior contains seeds within its body that can slowly germinate in rich soil with enough water—or blood. Every battlefield can become a new garden.</p>",
       "items": {
         "0uikf7fcqBI6U5xr": {
-          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round;</p>\n<hr />\n<p><strong>Effect</strong> The harvest regiment engages in a coordinated melee attack against each enemy within 5 feet, with a @Check[reflex|dc:23|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+12)[bludgeoning]] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round;</p><hr /><p><strong>Effect</strong> The harvest regiment engages in a coordinated melee attack against each enemy in a @Template[emanation|distance:5], with a @Check[reflex|dc:23|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+12)[bludgeoning]] damage</p>",
           "name": "Shell Smash"
         },
         "68wyGQfShfRqT1Ya": {
@@ -961,7 +961,7 @@
           "name": "Juice Shower"
         },
         "jOt2g9OMVZme0Mqs": {
-          "description": "<p>The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a @Template[burst|distance:10] within 120 feet that deals @Damage[3d10[bludgeoning]] damage (@Check[reflex|dc:23|basic] save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>",
+          "description": "<p>The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a @Template[burst|distance:10] within 120 feet that deals @Damage[2d10[bludgeoning]] damage (@Check[reflex|dc:23|basic] save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>",
           "name": "Seed Volley"
         },
         "ltiErOyUItklz21B": {
@@ -1877,7 +1877,7 @@
           "name": "Troop Movement"
         },
         "rBBPu3L2sSvSJOCv": {
-          "description": "<p>The pelegox cube magnetizes fragments of metal at range. This is a @Template[burst|distance:10] within 30 feet that deals @Damage[(2d6+10)[piercing]] damage (@Check[reflex|dc:27|basic] save). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>",
+          "description": "<p>The pelegox cube magnetizes fragments of metal at range. This is a @Template[burst|distance:10] within 30 feet that deals @Damage[(2d6+10)[piercing]] damage (@Check[reflex|dc:27|basic] save). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5].</p>",
           "name": "Shard Volley"
         },
         "tMWSXjabckPBavn9": {
@@ -1890,7 +1890,7 @@
         }
       },
       "name": "Pelegox Cube",
-      "npcHp": "140 (12 squares), 70 (8 squares)",
+      "npcHp": "140 (3 segments), 70 (2 segments)",
       "npcSpeed": "troop movement"
     },
     "Picture-in-Clouds": {
@@ -2055,7 +2055,7 @@
           "name": "Troop Movement"
         },
         "LTyMIKbmbMSig1yY": {
-          "description": "<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>",
+          "description": "<p><strong>Thresholds</strong> 160 (3 segments), 80 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>",
           "name": "Troop Defenses"
         },
         "S1UQUTLfKE7DTijr": {
@@ -2215,7 +2215,7 @@
         }
       },
       "name": "Sootsoldiers",
-      "npcHp": "(16 squares); Thresholds 110 (12 squares), 55 (8 squares);",
+      "npcHp": "(16 squares); Thresholds 110 (3 segments), 55 (2 segments);",
       "npcSpeed": "troop movement"
     },
     "Sootsoldiers (The Radiant Host)": {
@@ -2252,7 +2252,7 @@
         }
       },
       "name": "Sootsoldiers (The Radiant Host)",
-      "npcHp": "(16 squares); Thresholds 110 (12 squares), 55 (8 squares);",
+      "npcHp": "(16 squares); Thresholds 110 (3 segments), 55 (2 segments);",
       "npcSpeed": "troop movement"
     },
     "Talos Gadgeteer": {
