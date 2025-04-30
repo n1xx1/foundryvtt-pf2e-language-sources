@@ -178,7 +178,7 @@
       "description": "<p>The apothecary skillfully combines materials into unguents and medicines using crushed herbs, curative minerals, and potent extracts.</p><hr /><p>The world is a dangerous place. Thankfully, there are those who devote their lives to easing the pain and suffering of others.</p>",
       "items": {
         "2B42tVGi3YO1t4rU": {
-          "name": "Leather Apron"
+          "name": "Leather Apron (Functions as Padded Armor)"
         },
         "D91SDgzufetsXtHT": {
           "name": "Acid Flask"
@@ -3931,11 +3931,14 @@
           "description": "<p>If a reaction would disrupt the humanitarian hermit's spellcasting action, the hermit attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>",
           "name": "Steady Spellcasting"
         },
+        "GkeYJpgH76CYwwdd": {
+          "name": "+1 Striking Staff of Healing"
+        },
         "RKv0y5IR7ZFsCvBH": {
           "name": "Fist"
         },
         "XApTdhFCYSr7LDCY": {
-          "description": "<p>A staff wielded by the humanitarian hermit gains the parry, reach, and trip traits, and Strikes with it deal an additional @Damage[2d8[vitality]] damage.</p>",
+          "description": "<p>A staff wielded by the humanitarian hermit gains the parry, reach, and trip traits, and Strikes with it deal an additional 2d8 vitality damage.</p>",
           "name": "Primal Staff"
         },
         "gYuKjrBO6DA0OJiW": {
@@ -3943,7 +3946,7 @@
           "name": "Plant Empathy"
         },
         "r8lrGkBUsGoxK92U": {
-          "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The humanitarian blesses the land and their allies. In a @Template[type:emanation|distance:30], plants grow and become difficult terrain. Additionally, all allies in the emanation gain 20 temporary Hit Points and can ignore the difficult terrain. These effects last for 1 minute.</p>",
+          "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The humanitarian blesses the land and their allies. In a @Template[type:emanation|distance:30], plants grow and become difficult terrain. Additionally, all allies in the emanation gain 20 temporary Hit Points and can ignore the difficult terrain. These effects last for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wLQEa9xChzWEc7Mn]{Effect: Cleansing Earth}</p>",
           "name": "Cleansing Earth"
         }
       },
@@ -4655,11 +4658,11 @@
           "name": "Prompt Poultice"
         },
         "LRgxvPy1oxQ9T5tz": {
-          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> An ally close enough for the herbalist to reach with a Stride is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The herbalist Strides until adjacent to the ally and Administers First Aid to that ally.</p>",
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> An ally close enough for the herbalist to reach with a Stride is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The herbalist Strides until adjacent to the ally and @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administers First Aid} to that ally.</p>",
           "name": "Saving Touch"
         },
         "Om2pp8mnsEHdwCUT": {
-          "name": "Medicine Bag"
+          "name": "Medicine Bag (Functions as a Healer's Toolkit)"
         },
         "Qm4xkx5fQOkUH1XS": {
           "name": "Fungal Spores"
@@ -4668,7 +4671,7 @@
           "name": "Fist"
         },
         "izSaCIw4v1IAkBWC": {
-          "description": "<p>The herbalist can use Nature instead of Medicine to @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} or Administer First Aid, and gains a +3 circumstance bonus to the check if they're in the wilderness with access to fresh herbal ingredients.</p>",
+          "description": "<p>The herbalist can use Nature instead of Medicine to @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} or @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}, and gains a +3 circumstance bonus to the check if they're in the wilderness with access to fresh herbal ingredients.</p>",
           "name": "Natural Medicine"
         },
         "qsM56DgJzGj32GeV": {
@@ -5662,6 +5665,9 @@
           "description": "<p>The peerless healer is a 17th-level challenge for contests of medicine.</p>",
           "name": "Medical Specialist"
         },
+        "jNJweBqA0kn7XVbl": {
+          "name": "+1 Striking Staff of Healing (Greater)"
+        },
         "lkrvzd7ky4JVJPRQ": {
           "description": "<p>When the peerless healer rolls a critical failure on a check to @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, or @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, they get a failure instead.</p>",
           "name": "Doctor's Hand"
@@ -5671,11 +5677,12 @@
           "name": "Community Healer"
         },
         "pPd7Ra9KB28EqOPx": {
-          "description": "<p><strong>Trigger</strong> The peerless healer restores Hit Points to an ally using heal</p><hr /><p><strong>Effect</strong> One willing creature within 30 feet who didn't benefit from the triggering spell regains Hit Points equal to half the healing granted. The peerless healer can't use Healing Echo again for [[/gmr 1d4 #Recharge Healing Echo]]{1d4 rounds}.</p>",
+          "description": "<p><strong>Trigger</strong> The peerless healer restores Hit Points to an ally using @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p><strong>Effect</strong> One willing creature within 30 feet who didn't benefit from the triggering spell regains Hit Points equal to half the healing granted. The peerless healer can't use Healing Echo again for [[/gmr 1d4 #Recharge Healing Echo]]{1d4 rounds}.</p>",
           "name": "Healing Echo"
         }
       },
-      "name": "Peerless Healer"
+      "name": "Peerless Healer",
+      "npcAllSaves": "+2 status vs. poison and disease"
     },
     "Penitent of Calistria": {
       "description": "<p>Atonement is seen as an ultimate act of supplication for those who have wronged their faith. Repentance takes several forms—acts of service, a pilgrimage, flagellation, or divine quests.</p><hr /><p>Religions inspire devout individuals to uphold their tenets.</p>",
@@ -5751,7 +5758,7 @@
           "name": "Medical Textbook"
         },
         "qOhRxpDdOg4c6aNs": {
-          "description": "<p>A physician has a +4 circumstance bonus to Diplomacy checks to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on or make a Request of a diseased, poisoned, or wounded creature.</p>",
+          "description": "<p>A physician has a +4 circumstance bonus to Diplomacy checks to [[/act make-an-impression options=bedside-manner]] on or make a [[/act request options=bedside-manner]] of a diseased, poisoned, or wounded creature.</p>",
           "name": "Bedside Manner"
         }
       },
@@ -5833,7 +5840,8 @@
           "name": "+2 Circumstance Bonus on Saves vs. Disease"
         }
       },
-      "name": "Plague Doctor"
+      "name": "Plague Doctor",
+      "npcAllSaves": "+2 circumstance to all saves vs. disease"
     },
     "Poacher": {
       "description": "<p>Rules against hunting may insulate the private reserves of nobles or guard the viability of animal populations in shared forests during specific seasons. Poachers violate those laws—sometimes out of greed, sometimes out of desperation, and sometimes for sport.</p><hr /><p>Explorers are often well-equipped and well-trained for any type of hazard and are eager to lead others into the wild.</p>",
@@ -6656,7 +6664,7 @@
           "name": "Medical Specialist"
         },
         "CjYVPKaqWE3kLeLO": {
-          "name": "Bonesaw"
+          "name": "Bonesaw (Functions as a Temple Sword)"
         },
         "F7IHKiavOdLoatuo": {
           "description": "<p>When the surgeon rolls a critical failure on a check to @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, or @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, they get a failure instead.</p>",
@@ -6846,11 +6854,11 @@
       },
       "name": "Tengu Bladesmith"
     },
-    "Theraputic Healer": {
+    "Therapeutic Healer": {
       "description": "<p>Some healers feel great empathy for their charges and take great pains to help shoulder their allies' burdens both in and out of combat.</p><hr /><p>The world is a dangerous place. Thankfully, there are those who devote their lives to easing the pain and suffering of others.</p>",
       "items": {
         "CKsVO2AgeMszAsso": {
-          "description": "<p>When Treating Wounds, the therapeutic healer can treat up to four targets. If they succeed at a DC 20 check to @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, they can also reduce the value of one @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition affecting a single patient by 1. They can reduce a @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} or @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} condition instead if they succeed at a DC 30 check. This can't reduce permanent doomed conditions.</p>",
+          "description": "<p>When @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treating Wounds}, the therapeutic healer can treat up to four targets. If they succeed at a DC 20 check to Treat Wounds, they can also reduce the value of one @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition affecting a single patient by 1. They can reduce a @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} or @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} condition instead if they succeed at a DC 30 check. This can't reduce permanent doomed conditions.</p>",
           "name": "Therapeutic Care"
         },
         "FN0WDvN7P8ExnzoG": {
@@ -6868,7 +6876,7 @@
           "name": "+2 to Sense Motive"
         }
       },
-      "name": "Theraputic Healer"
+      "name": "Therapeutic Healer"
     },
     "Tidewater Guard": {
       "description": "<p>Iruxi tidewater guards are capable fighters skilled at amphibious attacks and overpowering vessels along any shore. Because lizardfolk settlements are typically constructed partially underwater and partially above, they have need of defenders who can guard from attacks in both environments.</p>\n<p>The special spaulders tidewater guards wear set them apart from other lizardfolk warriors. These protect their shoulders from cutlass and axe strikes, and might be constructed of dragon scales, turtle or giant chiton shells, lacquered wood, or even sea urchin tests. The recipe for the special resin iruxi armorers apply to harden these spaulders is a closely guarded secret, and each iruxi community's supply of the resin is small, precious, and closely guarded.</p><hr /><p>Lizardfolk culture has flowered in recent years. With that revival has come a new generation of iruxis (as they call themselves) more willing to engage with the wider world, bringing with them their society's reverence for the past, facility with nature, and willingness to defend itself.</p>",
