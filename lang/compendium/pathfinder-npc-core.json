@@ -666,8 +666,11 @@
       "description": "<p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
       "items": {
         "Cgi6w2XRHGi6dEsV": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The black belt makes two fist Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>\n<p>The black belt can substitute any number of the attacks with bo staff Strikes or attempts to Grapple, Reposition, Shove, or Trip.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The black belt makes two fist Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>\n<p>The black belt can substitute any number of the attacks with bo staff Strikes or attempts to [[/act grapple]], [[/act reposition]], [[/act shove]], or [[/act trip]].</p>",
           "name": "Flurry of Blows"
+        },
+        "EORvZyi7YbTwvJ9J": {
+          "name": "+1 Striking Handwraps of Mighty Blows"
         },
         "JdNDpyPZkZaFedEK": {
           "description": "<p><strong>Trigger</strong> A creature within the black belt's reach targets them with a melee attack</p><hr /><p><strong>Effect</strong> The black belt blocks, gaining a +2 circumstance bonus to their AC against the triggering attack. If the attack misses, the black belt retaliates with a Strike. This Strike doesn't count toward the black belt's multiple attack penalty, and the multiple attack penalty doesn't apply to this Strike.</p>",
@@ -1148,7 +1151,7 @@
           "name": "Rock"
         },
         "T3ZpHsIT64RGyhT0": {
-          "description": "<p>When three or more commoners are adjacent to each other each commoner gets a +1 circumstance bonus to Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, attack rolls, and damage rolls.</p>",
+          "description": "<p>When three or more commoners are adjacent to each other, each commoner gets a +1 circumstance bonus to Athletics checks to [[/act shove]], attack rolls, and damage rolls.</p>",
           "name": "Power of the Mob"
         },
         "lqVfEZu6MeCHDuky": {
@@ -1229,16 +1232,13 @@
           "name": "Fist"
         },
         "OBJ6XxnlP1EEDxPW": {
-          "name": "Sledgehammer"
+          "name": "Sledgehammer (Functions as a Maul)"
         },
         "SoP41Bu81IyTzp4I": {
           "name": "Brick"
         },
-        "jYqIt5dTAFJNuc2S": {
-          "name": "Sledgehammer"
-        },
         "reAZmKLVrNRsUQQ8": {
-          "name": "Safety Gear"
+          "name": "Safety Gear (Functions as Leather Armor)"
         },
         "wV2jcRCLav8ziEGN": {
           "name": "Bricks"
@@ -1887,13 +1887,13 @@
           "name": "Bottle"
         },
         "WFP4NLE0aiemGMh3": {
-          "name": "Work Clothes"
+          "name": "Work Clothes (Functions as Leather Armor)"
         },
         "lh7skf3SdSowZIzD": {
           "name": "Empty Bottle"
         },
         "ma0kNlN1eN2YPKXO": {
-          "description": "<p><strong>Requirements</strong> The dockhand is adjacent to a crate</p><hr /><p><strong>Effect</strong> The dockhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[type:burst|distance:5]. Each creature in the area takes @Damage[2d6[bludgeoning]] damage with a @Check[reflex|dc:13|basic] save, and the area is difficult terrain until cleared.</p>",
+          "description": "<p><strong>Requirements</strong> The dockhand is adjacent to a crate</p><hr /><p><strong>Effect</strong> The dockhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[type:burst|distance:5]. Each creature in the area takes @Damage[2d6[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:13|basic|options:area-effect] save, and the area is difficult terrain until cleared.</p>",
           "name": "Heft Crate"
         },
         "z1TGYF24OzHmgdjp": {
@@ -2001,24 +2001,24 @@
       "description": "<p>Drovers specialize in moving herds of livestock over large distances.</p><hr /><p>Society is built upon the backs of laborers.</p>",
       "items": {
         "2FjBvet1L9Pyfj3X": {
-          "name": "Overalls"
+          "name": "Overalls (Function as Leather Armor)"
         },
         "7115INKXfkMiwFuA": {
           "name": "Livestock Lore"
         },
         "KZA9FGpOR8xg53mX": {
-          "description": "<p>The drover uses their lasso to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a Large or smaller creature up to 20 feet away. They can continue to Grapple to keep their hold on the target so long as the target remains within 20 feet and they continue to hold the end of the lasso. In addition to the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature being able to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, a successful @Check[athletics|dc:16] check to @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} can remove the lasso entirely.</p>",
+          "description": "<p>The drover uses their lasso to [[/act grapple]] a Large or smaller creature up to 20 feet away. They can continue to Grapple to keep their hold on the target so long as the target remains within 20 feet and they continue to hold the end of the lasso. In addition to the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature being able to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, a successful DC 16 Athletics check to [[/act force-open dc=16]] can remove the lasso entirely.</p>",
           "name": "Lasso"
         },
         "W5p3D9avs5zdebWx": {
           "name": "Lasso"
         },
         "X7MiwGQZ8H6HZrvQ": {
-          "description": "<p><strong>Requirements</strong> A creature is grappled or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the drover's lasso</p><hr /><p><strong>Effect</strong> The drover can pull the grappled creature up to 20 feet. Then, if the creature is within reach, the drover hogties it, attempting to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} it again. On a success, the creature is restrained with the lasso, and the drover doesn't need to maintain the grapple. The hogtie lasts until the creature Escapes or the lasso is Forced Open. The drover can Interact to free a hogtied creature within reach.</p>",
+          "description": "<p><strong>Requirements</strong> A creature is grappled or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the drover's lasso</p><hr /><p><strong>Effect</strong> The drover can pull the grappled creature up to 20 feet. Then, if the creature is within reach, the drover hogties it, attempting to [[/act grapple]] it again. On a success, the creature is restrained with the lasso, and the drover doesn't need to maintain the grapple. The hogtie lasts until the creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} or the lasso is @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Forced Open}. The drover can Interact to free a hogtied creature within reach.</p>",
           "name": "Hogtie"
         },
         "laHxBLb0WL18Aryb": {
-          "description": "<p>Drovers can whistle instead of speaking when communicating simple messages (such as \"go left,\" \"split the herd,\" and \"danger ahead\") to other drovers or when using the Command an Animal action on their herding dogs.</p>",
+          "description": "<p>Drovers can whistle instead of speaking when communicating simple messages (such as \"go left,\" \"split the herd,\" and \"danger ahead\") to other drovers or when using the [[/act command-an-animal]] action on their herding dogs.</p>",
           "name": "Whistling"
         },
         "ltxJ0DU6gpfUejzD": {
@@ -2580,7 +2580,7 @@
           "name": "Pitch Bale"
         },
         "ne1Z6ZLtivnoyMKG": {
-          "name": "Work Clothes"
+          "name": "Work Clothes (Functions as Leather Armor)"
         },
         "weCX0QLmEtlkJj6e": {
           "name": "Pitchfork"
@@ -2662,6 +2662,9 @@
         "1XmYQ3VFWPVdhgLd": {
           "description": "<p>While it has persistent bleed damage from the fisher's fishing line Strike, a creature has a fishhook embedded in it. The creature can't move farther away from the fisher (though it can move laterally). The fisher can reel the creature in as a single action with the attack and manipulate trait, attempting an @Check[athletics|against:fortitude] check against the creature's Fortitude DC. On a success, the creature takes @Damage[2d4[slashing]] damage and is pulled 10 feet closer to the fisher (double the damage and distance on a critical success).</p>",
           "name": "Fishhooked"
+        },
+        "C4oejzlwD5v6aRbi": {
+          "name": "+2 Bonus on Perception to Spot Fish"
         },
         "JotoXMGz6vlJbw8z": {
           "name": "Sailing Lore"
@@ -3292,8 +3295,11 @@
           "name": "Martial Arts Lore"
         },
         "DJFmV5evM4JqcBe8": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The grandmaster makes two fist Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>\n<p>The grandmaster can substitute any number of the attacks with temple sword Strikes or attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip}.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The grandmaster makes two fist Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>\n<p>The grandmaster can substitute any number of the attacks with temple sword Strikes or attempts to [[/act grapple]], [[/act reposition]], [[/act shove]], or [[/act trip]].</p>",
           "name": "Flurry of Blows"
+        },
+        "DRqMAkeXU8VvNOyJ": {
+          "name": "+2 Greater Striking Handwraps of Mighty Blows"
         },
         "UpywR6mdWHYmYNSa": {
           "description": "<p><span class=\"action-glyph\">2</span> or <span class=\"action-glyph\">3</span></p>\n<p>The grandmaster makes a single, carefully controlled unarmed Strike that deals 2 additional dice of damage, or 4 additional dice if the grandmaster spent 3 actions. If this damages the target, the grandmaster can choose to make the target attempt a @Check[fortitude|dc:38] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The target is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The target is pushed back 10 feet for each action the grandmaster spent on One-Millimeter Punch.</p>",
@@ -3302,6 +3308,10 @@
         "V4vCBm7Vs6OANCRu": {
           "description": "<p>The grandmaster's fist Strikes don't take penalties when making lethal attacks, and fist Strikes are treated as adamantine, cold iron and silver.</p>",
           "name": "Powerful Fists"
+        },
+        "qOYHhLTMridyJoy3": {
+          "description": "<p>The grandmaster attempts an unarmed Strike against a living creature. On a hit, the creature takes 3d6 persistent void damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the persistent damage ends.</p>",
+          "name": "Disrupt Qi"
         },
         "qkT4nVoSdcKb838L": {
           "description": "<p><strong>Requirements</strong> The grandmaster has at least 1 Focus Point</p><hr /><p><strong>Effect</strong> The grandmaster casts @UUID[Compendium.pf2e.spells-srd.Item.Ovvflf5aFbmBxqq8]{Touch of Death} (spending 1 Focus Point as normal). Any time the target attempts a Fortitude save against this <em>touch of death</em>, the grandmaster takes @Damage[40] damage and is permanently @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}. If the target gets a critical success, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}; if it gets a success or failure the stunned condition it gains is increased by 1, and any damage it takes is increased by 40.</p>",
@@ -3359,7 +3369,7 @@
           "name": "Fist"
         },
         "ammC8wH7C165yxrp": {
-          "description": "<p><strong>Requirements</strong> The gravedigger is holding a @UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{bull's-eye lantern} in one hand and their religious symbol in the other, and the lantern contains @UUID[Compendium.pf2e.equipment-srd.Item.Du05UxCyCM0ZWH8z]{oil}</p><hr /><p><strong>Effect</strong> The gravedigger recites a brief chant to ignite their lantern with vital energy. Each undead creature in a @Template[type:line|distance:15] takes @Damage[3d6[vitality]] damage with a @Check[fortitude|dc:14|basic] save. This action uses all remaining oil in the bull's-eye lantern.</p>",
+          "description": "<p><strong>Requirements</strong> The gravedigger is holding a @UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{bull's-eye lantern} in one hand and their religious symbol in the other, and the lantern contains @UUID[Compendium.pf2e.equipment-srd.Item.Du05UxCyCM0ZWH8z]{oil}</p><hr /><p><strong>Effect</strong> The gravedigger recites a brief chant to ignite their lantern with vital energy. Each undead creature in a @Template[type:line|distance:15] takes @Damage[3d6[vitality]|options:area-damage] damage with a @Check[fortitude|dc:14|basic|options:area-effect] save. This action uses all remaining oil in the bull's-eye lantern.</p>",
           "name": "Light in the Dark"
         },
         "iCIavuhoO4Uam2Vj": {
@@ -3367,7 +3377,7 @@
           "name": "Shovel"
         },
         "vDou2pKWxCBzmvqr": {
-          "name": "Gravedigger's Garb"
+          "name": "Gravedigger's Garb (Functions as Leather Armor)"
         }
       },
       "name": "Gravedigger"
@@ -3495,11 +3505,11 @@
           "name": "Patron Lore"
         },
         "U3D8UB50MVdn9owB": {
-          "description": "<p><strong>Requirements</strong> The gunwitch is wielding their firearm familiar and has a hex bullet loaded into it (see Hex Bullet)</p><hr /><p><strong>Effect</strong> The gunwitch unleashes a flurry of projectiles. Each creature in a @Template[type:emanation|distance:60] takes @Damage[8d6[piercing]] damage with a @Check[reflex|dc:25|basic] save.</p>",
+          "description": "<p><strong>Requirements</strong> The gunwitch is wielding their firearm familiar and has a hex bullet loaded into it (see Hex Bullet)</p><hr /><p><strong>Effect</strong> The gunwitch unleashes a flurry of projectiles. Each creature in a @Template[type:emanation|distance:60] takes @Damage[8d6[piercing]|options:area-damage] damage with a @Check[reflex|dc:25|basic|options:area-effect] save.</p>",
           "name": "Bullet Storm"
         },
         "ZU5kwu08GSIgB4Q1": {
-          "description": "<p><strong>Trigger</strong> An attacker the gunwitch can observe targets them with an attack</p><hr /><p><strong>Effect</strong> The gunwitch gains a +2 circumstance bonus to AC against the triggering attack, and after the attack the gunwitch Leaps.</p>",
+          "description": "<p><strong>Trigger</strong> An attacker the gunwitch can observe targets them with an attack</p><hr /><p><strong>Effect</strong> The gunwitch gains a +2 circumstance bonus to AC against the triggering attack, and after the attack the gunwitch @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leaps}.</p>",
           "name": "Acrobatic Dodge"
         },
         "bmk4lwn3XpOj4PeB": {
@@ -3828,7 +3838,7 @@
           "name": "+4 to Sense Motive"
         },
         "5mZHOHvumjTVWjwh": {
-          "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> The high roller has at least 16 cards in one hand</p><hr /><p><strong>Effect</strong> The high roller unleashes the cards in a @Template[type:cone|distance:30], dealing @Damage[16d4[slashing]] damage to all creatures in the area with a @Check[reflex|dc:30|basic] save. This ability expends the full deck of cards held.</p>",
+          "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> The high roller has at least 16 cards in one hand</p><hr /><p><strong>Effect</strong> The high roller unleashes the cards in a @Template[type:cone|distance:30], dealing @Damage[16d4[slashing]|options:area-damage] damage to all creatures in the area with a @Check[reflex|dc:30|basic|options:area-effect] save. This ability expends the full deck of cards held.</p>",
           "name": "Royal Flush Flurry"
         },
         "SAz8XoRWN6zhhhhs": {
@@ -3837,6 +3847,9 @@
         "SSpv0YzxRDFGa7q5": {
           "description": "<p>The high roller treats all game tools—such as cards (used in the stat block's Strike entries), dice, coins, and gambling tokens—as melee weapons with a d4 damage die and the agile, finesse and thrown 20 feet traits. The high roller gets a +1 item bonus to attack rolls with them and deals two damage dice. The damage type depends on the item and is determined by the GM.</p>",
           "name": "Gaming Arsenal"
+        },
+        "SswEEohBA63CQBAD": {
+          "name": "Playing Cards (54-Card Deck)"
         },
         "WREJuCmtfdVK2Ol4": {
           "name": "Card"
@@ -4045,14 +4058,14 @@
       "description": "<p>The sight of an inn is a welcome one to any weary traveler. Innkeepers can often be found cleaning the common room, overseeing the evening meal, or settling in new lodgers. Innkeepers keep an eye on their neighbors' doings and are often excellent sources of information.</p><hr /><p>Society is built upon the backs of laborers.</p>",
       "items": {
         "2uSSFi0lqFoWgzYI": {
-          "description": "<p>The innkeeper knows how to settle fights that break out. When the innkeeper is fighting in their establishment, their Strikes gain a +1 circumstance bonus to the attack roll, deal an additional @Damage[1d4[untyped]] damage, and gain the nonlethal trait if they don't already have it. The innkeeper can choose not to gain this benefit.</p>",
+          "description": "<p>The innkeeper knows how to settle fights that break out. When the innkeeper is fighting in their establishment, their Strikes gain a +1 circumstance bonus to the attack roll, deal an additional 1d4 damage, and gain the nonlethal trait if they don't already have it. The innkeeper can choose not to gain this benefit.</p>",
           "name": "Home Base Brawler"
         },
         "4ZhqOWIQR5Wgw6p2": {
           "name": "Alcohol Lore"
         },
         "9bruXwALVDFhxs9a": {
-          "name": "Broom"
+          "name": "Broom (Functions as a Staff)"
         },
         "FMXvHmfCarIbLAk5": {
           "name": "Broom"
@@ -4074,7 +4087,7 @@
           "name": "Ledger"
         },
         "pV1Zg9nyy2H7ISQ6": {
-          "name": "Innkeeper's Apron"
+          "name": "Innkeeper's Apron (Functions as Leather Armor)"
         },
         "rnYYlP0qRPcQx4vh": {
           "name": "Pewter Mug"
@@ -4824,6 +4837,9 @@
     "Martial Student": {
       "description": "<p>Every warrior must begin somewhere.</p><hr /><p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
       "items": {
+        "3UhjDHthScjceBxN": {
+          "name": "Handwraps"
+        },
         "JHCTJekhRGBdqeOj": {
           "name": "Fist"
         },
@@ -5017,14 +5033,14 @@
           "name": "Satchel of Mail"
         },
         "No7D9FTwDJVHqhho": {
-          "description": "<p>Messengers can use Society in place of Survival to Sense Direction when they're on a road.</p>",
+          "description": "<p>Messengers can use Society in place of Survival to [[/act sense-direction skill=society]] when they're on a road.</p>",
           "name": "Road Runner"
         },
         "QkIdiYmsAPL4jFWO": {
           "name": "Fist"
         },
         "WtsSGtnPgnNQ9zPz": {
-          "description": "<p>Messengers get a +2 circumstance bonus to Diplomacy checks to convince another creature not to blame them for any news they deliver.</p>",
+          "description": "<p>Messengers get a +2 circumstance bonus to @Check[diplomacy|options:dont-shoot-the-messenger] checks to convince another creature not to blame them for any news they deliver.</p>",
           "name": "Don't Shoot the Messenger"
         },
         "axUYB41Gy8pqpyOC": {
@@ -5077,7 +5093,7 @@
           "name": "Piton Pin"
         },
         "ilIEY861r4bkrSfL": {
-          "name": "Miner's Harness"
+          "name": "Miner's Harness (Functions as Leather Armor)"
         }
       },
       "name": "Miner"
@@ -5120,17 +5136,8 @@
     "Mixed Martial Artist": {
       "description": "<p>These fighters combine the takedowns of a wrestler with aggressive stances and unorthodox blows, ensuring that contenders won't know what hit them.</p><hr /><p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
       "items": {
-        "1pJz2uu9zRVND9yt": {
-          "name": "Grappling Limb"
-        },
-        "9xDkqd7dABujib6j": {
-          "name": "Cross Elbow"
-        },
         "D7smmciyWo1lXrqP": {
           "name": "Fist"
-        },
-        "Uxa8LlnYNqpPkY71": {
-          "name": "Thrashing Fist"
         },
         "kANvoQt5YyS0b5z3": {
           "description": "<p>The mixed martial artist's fist Strikes don't take penalties when making lethal attacks.</p>",
@@ -5144,7 +5151,7 @@
           "name": "Martial Arts Lore"
         },
         "wOQjx80hxdIebHPz": {
-          "description": "<p>The mixed martial artist enters a stance of their choice, gaining the listed circumstance bonus and Strike but losing the ability to make other Strikes.</p><ul><li><strong>Elbow Knockout Stance</strong> +2 to Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip}; Melee <span class=\"action-glyph\">1</span> cross elbow +16 (nonlethal, trip, unarmed) Damage 2d6+8 bludgeoning</li><li><strong>Secure Grapple Stance</strong> +2 to Athletics checks to Grapple; Melee <span class=\"action-glyph\">1</span> grappling limb + 16 (grapple, nonlethal, unarmed) Damage 2d4+8 bludgeoning</li><li><p><strong>Thrashing Barrage Stance</strong> +2 to damage against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} opponents; Melee <span class=\"action-glyph\">1</span> thrashing fist + 16 (forceful, nonlethal, unarmed) Damage 2d8+8 bludgeoning</p>\n</li></ul>",
+          "description": "<p>The mixed martial artist enters a stance of their choice, gaining the listed circumstance bonus and Strike but losing the ability to make other Strikes.</p><ul><li><strong>Elbow Knockout Stance</strong> +2 to Athletics checks to [[/act shove]] or [[/act trip]]; <strong>Melee</strong> <span class=\"action-glyph\">1</span> cross elbow +16 (nonlethal, trip, unarmed) <strong>Damage</strong> 2d6+8 bludgeoning</li><li><strong>Secure Grapple Stance</strong> +2 to Athletics checks to [[/act grapple]]; <strong>Melee</strong> <span class=\"action-glyph\">1</span> grappling limb +16 (grapple, nonlethal, unarmed) <strong>Damage</strong> 2d4+8 bludgeoning</li><li><strong>Thrashing Barrage Stance</strong> +2 to damage against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} opponents; <strong>Melee</strong> <span class=\"action-glyph\">1</span> thrashing fist +16 (forceful, nonlethal, unarmed) <strong>Damage</strong> 2d8+8 bludgeoning</li></ul>",
           "name": "Stance Shift"
         }
       },
@@ -5274,7 +5281,7 @@
           "name": "Musketeer's Advance"
         },
         "lK3tALhh4hYqK6ZF": {
-          "description": "<p><strong>Requirements</strong> The musketeer is wielding a single one-handed weapon in one hand and has their other hand free</p><hr /><p><strong>Effect</strong> The musketeer grants a +1 circumstance bonus to AC to themself until the start of their next turn. Allies also gain this bonus while adjacent to the musketeer. If a creature would benefit from more than one creature's One for All ability, the bonus is +2 instead of +1.</p>",
+          "description": "<p><strong>Requirements</strong> The musketeer is wielding a single one-handed weapon in one hand and has their other hand free</p><hr /><p><strong>Effect</strong> The musketeer grants a +1 circumstance bonus to AC to themself until the start of their next turn. Allies also gain this bonus while adjacent to the musketeer. If a creature would benefit from more than one creature's One for All ability, the bonus is +2 instead of +1.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.CR2D12ZAhwmnbz15]{Effect: One for All}</p>",
           "name": "One for All"
         }
       },
@@ -5620,7 +5627,7 @@
           "name": "Double Reload"
         },
         "CRVCGzpdOmyM2hzt": {
-          "description": "<p>The peerless duelist deals an extra die of damage on any firearm Strike they attempt. This extra damage is already included in their dueling pistol Strike.</p>",
+          "description": "<p>The peerless duelist deals an extra die of damage on any firearm Strike they attempt. This extra damage is already included in their <em>dueling pistol</em> Strike.</p>",
           "name": "Ace Shooter"
         },
         "Rl8v4NwJmlJ0iUvx": {
@@ -5892,7 +5899,7 @@
           "name": "Rhetoric Specialist"
         },
         "kOlJQR3DDX9saWFv": {
-          "name": "Long Coat"
+          "name": "Long Coat (Functions as Leather Armor)"
         },
         "m4RVLYNjrEFe5txe": {
           "name": "+3 to Sense Motive"
@@ -6257,14 +6264,14 @@
           "name": "Genealogy Lore"
         },
         "64nZaFNkx6WnlUjR": {
-          "description": "<p>The runaway blueblood deals an extra @Damage[1d6[untyped]] damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+          "description": "<p>The runaway blueblood deals an extra 1d6 damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "EOa0PFyYsqPDRIXf": {
           "name": "Fist"
         },
         "FISSmeW1YwcQNDSc": {
           "description": "<p><strong>Requirements</strong> The runaway blueblood is adjacent to at least one enemy</p><hr /><p><strong>Effect</strong> The runaway blueblood gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, gains a +5-foot status bonus to their Speed, and gains a +2 circumstance bonus to their AC against reactions triggered by their movement. The blueblood Strides. The effects last until the end of the blueblood's current turn.</p>",
-          "name": "“Courageous” Retreat"
+          "name": "\"Courageous\" Retreat"
         },
         "sLsrzutnaikqWzQU": {
           "name": "Signet Ring"
@@ -6339,7 +6346,7 @@
           "name": "Servant's Uniform"
         },
         "twFQitk8O2yJII8R": {
-          "name": "Household Lore (or other subcategory related to their job)"
+          "name": "Lore (any one subcategory related to their job, such as Alcohol Lore, Baking Lore, or Household Lore)"
         },
         "wxpvY7YmCPTSk3p9": {
           "description": "<p>The servant can raise their serving platter using the Raise a Shield action. The platter has the same statistics as a @UUID[Compendium.pf2e.equipment-srd.Item.1k3AsSW7lpU0kEpY]{Buckler} but requires a hand to hold.</p><hr /><p>@UUID[Compendium.pf2e.action-macros.Macro.4hfQEMiEOBbqelAh]{Raise a Shield}</p>",
@@ -7010,7 +7017,7 @@
           "name": "Work the Crowd"
         },
         "tifNPh4tDPBkO9za": {
-          "description": "<p>The tournament combatant attempts to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through} a target's space. If they succeed on their Acrobatics check, the tournament combatant can make a fist or nunchaku Strike against that target while moving through its space.</p>",
+          "description": "<p>The tournament combatant attempts to [[/act tumble-through]] a target's space. If they succeed on their Acrobatics check, the tournament combatant can make a fist or nunchaku Strike against that target while moving through its space.</p>",
           "name": "Somersault Attack"
         },
         "xG2XdPLKaNlhnpCD": {
@@ -7324,7 +7331,7 @@
           "name": "Lay Down the Law"
         },
         "iJl4Jkphlc9wVqln": {
-          "description": "<p>Money talks, and no one knows that better than the unsanctioned sheriff. A creature that pays the sheriff at least 5 gp gains a +2 status bonus to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information} in the sheriff's settlement for the next 24 hours.</p>",
+          "description": "<p>Money talks, and no one knows that better than the unsanctioned sheriff. A creature that pays the sheriff at least 5 gp gains a +2 status bonus to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information} in the sheriff's settlement for the next 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.XwFoyhCUU5TCtG50]{Effect: Greased Palms}</p>",
           "name": "Greased Palms"
         },
         "tsxETjrcWSPwPbej": {
@@ -7372,7 +7379,7 @@
           "name": "Fist"
         },
         "V2mzk8mw3ErUIJoO": {
-          "description": "<p>The vermin catcher places a rat trap in an adjacent space. Any Small or Medium creature that moves into the space with the trap triggers it and must attempt a @Check[reflex|dc:18|basic] save. On a failure, the creature takes @Damage[1d4[persistent,bleed]] damage (2d4 on a critical failure) and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>",
+          "description": "<p>The vermin catcher places a rat trap in an adjacent space. Any Small or Medium creature that moves into the space with the trap triggers it and must attempt a @Check[reflex|dc:18|basic] save. On a failure, the creature takes @Damage[1d4[bleed]] damage (@Damage[2d4[bleed]] on a critical failure) and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>",
           "name": "Giant Rat Trap"
         },
         "cIynTRqixi46TP4I": {
