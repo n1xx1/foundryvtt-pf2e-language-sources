@@ -1,5 +1,37 @@
 {
   "entries": {
+    "Acid Mist": {
+      "description": "<p>A golden guardrail sprays magical, flesh-eating acid throughout the stairwell.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:26] (expert) to deactivate the trap's sensors, or @Check[arcana|dc:24] (expert) to disrupt the guardrail's magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 24) to counteract the guardrail</p>",
+      "hazardReset": "<p>The trap automatically deactivates after 1 minute. It resets in 1 hour.</p>",
+      "hazardRoutine": "<p>(1 action) On its initiative, the trap continues to spray acid, dealing @Damage[(2d8+9)[acid]] damage to all living creatures on the stairs (@Check[reflex|dc:25|basic] save).</p>",
+      "name": "Acid Mist"
+    },
+    "Aeon Stone Swarm": {
+      "description": "<p>Aeon stone swarms are constructs composed of hundreds of magical gems called <em>aeon stones</em> that orbit around a central point in a tumultuous, ever-shifting mass. Each swarm is imbued with intelligence and composed of a collection of <em>aeon stones</em>, which can arrange themselves in a variety of configurations to activate unique resonant powers. While most aeon stone swarms adopt similar configurations, it's possible to create swarms with experimental structures, resulting in different or additional resonant powers.</p>\n<p>Many aeon stone swarms are created to protect a particular location clandestinely, with the swarm using its subterfuge resonance to disguise itself as a mosaic of precious stones or a pile of gemstones lying in an open chest. Unfortunately for would-be thieves, nearly all the <em>aeon stones</em> composing an aeon stone swarm shatter when the swarm is destroyed.</p><h2>Aeon Stones</h2><p>When an aeon stone swarm is destroyed, most of the <em>aeon stones</em> composing its body shatter and explode, but a few remain whole. Adventurers willing to sift through mounds of sharp aeon stone shards are usually rewarded with a <em>consumed aeon stone</em>, a <em>preserving aeon stone</em>, or a <em>sprouting aeon stone</em>—perhaps even a <em>nourishing aeon stone</em> or <em>smoothing aeon stone</em> for the particularly lucky!</p>",
+      "items": {
+        "4klVZEPGOpyq64yK": {
+          "description": "<p>20 feet. An aeon stone swarm is surrounded by a pall of magical interference, which hampers spellcasting in the area. Whenever a creature in the aura attempts to Cast a Spell, they must succeed at a @Check[flat|dc:5] or the spell is disrupted.</p>",
+          "name": "Aeon Interference"
+        },
+        "5KEdsifOqGt5ZNM5": {
+          "name": "Launched Aeon Stone"
+        },
+        "6uBXZivfLfrbRtn8": {
+          "description": "<p>Each enemy in the aeon stone swarm's space takes @Damage[5d6[bludgeoning]] damage (@Check[reflex|dc:28|basic] save).</p>",
+          "name": "Battering Orbit"
+        },
+        "bgeOk7SZMzUFZgek": {
+          "description": "<p>When an aeon stone swarm is reduced to 0 Hit Points, it explodes in a burst of gem shards, dealing @Damage[3d12[piercing]] damage (@Check[reflex|dc:28|basic] save) in a @Template[type:emanation|distance:30].</p>",
+          "name": "Stone Shatter"
+        },
+        "wdbPnj7gszmEqYsS": {
+          "description": "<p>The aeon stone swarm reconfigures the aeon stones in its body, gaining a unique resonant power. This resonant power remains active until the aeon stone swarm activates a different resonant power. The aeon stone swarm can select from the following resonant powers.</p><ul><li><strong>Defensive Resonance</strong> The aeon stone swarm gains resistance 10 to one of the following damage types of its choice: acid, cold, electricity, fire, sonic.</li><li><strong>Illumination Resonance</strong> The aeon stone swarm glows, shedding bright light in a 20-foot radius (and dim light for the next 20 feet) in a color of its choice.</li><li><strong>Sensory Resonance</strong> The aeon stone swarm gains the benefits of @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}.</li><li><strong>Subterfuge Resonance</strong> The aeon stone swarm gains a +2 item bonus to Perception checks, and to Stealth checks to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}.</li></ul>",
+          "name": "Aeon Resonance"
+        }
+      },
+      "name": "Aeon Stone Swarm"
+    },
     "Alzira Mustanir": {
       "items": {
         "K90rxKZFzCbDcPQa": {
@@ -48,6 +80,99 @@
       "hazardReset": "<p>The trapdoors automatically reset to their closed position once a creature falls in, allowing for more creatures to fall in, though any camouflage on the trap door falls in as well, making it easier for creatures to notice the trap door.</p>",
       "name": "Animal Pit"
     },
+    "Animated Treasure Swarm": {
+      "items": {
+        "GCHfq5Zo2uJQtANU": {
+          "description": "<p><strong>Requirements</strong> The animated treasure swarm is adjacent to Viseldron's hoard</p><hr /><p><strong>Effect</strong> The animated treasure swarm enters Viseldron's hoard, then emerges from the hoard at any other point in, or adjacent to, the hoard's area.</p>",
+          "name": "One with the Hoard"
+        },
+        "bU4iO3oL4EOAnlGK": {
+          "description": "<p>Like normal objects, an animated treasure swarm has Hardness. This Hardness reduces any damage the swarm takes by an amount equal to its Hardness. Once an animated treasure swarm is reduced to fewer than half its Hit Points, or immediately upon becoming damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its AC to 21.</p>",
+          "name": "Construct Armor"
+        },
+        "diWSfLrndFVECtUR": {
+          "description": "<p>The animated treasure swarm hurls its most fragile components in a destructive barrage, dealing @Damage[4d6[bludgeoning]|options:area-damage] damage to all creatures in a @Template[type:burst|distance:20] within 100 feet (@Check[reflex|dc:25|basic] save).</p>",
+          "name": "Trash the Place"
+        },
+        "tKPpeVBhsBp0UgUD": {
+          "description": "<p>Each enemy in the animated treasure swarm's space takes @Damage[6d6[piercing]|options:area-damage] or @Damage[6d6[slashing]|options:area-damage] damage (@Check[reflex|dc:25|basic] save).</p>",
+          "name": "Blade Storm"
+        }
+      },
+      "name": "Animated Treasure Swarm",
+      "npcAc": "(21 when broken), construct armor"
+    },
+    "Anoreth Zorillen": {
+      "items": {
+        "EhpRVDpHbe8lUZAg": {
+          "name": "Handkerchief (Impeccably Embroidered with Orange, Red, and Yellow Tulips)"
+        },
+        "GRT9iHRrS0OylGJ1": {
+          "description": "<p><strong>Trigger</strong> A construct within 60 feet of Anoreth is damaged</p><hr /><p><strong>Effect</strong> Anoreth clenches their fist, magically seizing the raw materials damaged by the triggering Strike and drawing it toward themself. These materials orbit Anoreth in a defensive ward, granting them 10 Temporary Hit points until the end of their next turn.</p>",
+          "name": "Scrap Ward"
+        },
+        "M8XokjQGVqSmlp4g": {
+          "description": "<p>If a reaction would disrupt Anoreth's spellcasting action, they attempt a @Check[flat|dc:15]; if they succeed, their action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        },
+        "S8DH7nw6QeVv9zQL": {
+          "description": "<p>Anoreth calls out Kiriki's name and snaps their fingers, causing their pipefox familiar (and up to 1 Bulk of objects carried by Kiriki) to instantly transport to an adjacent square of Anoreth's choice, provided Kiriki is within 1 mile.</p>",
+          "name": "Recall Kiriki"
+        },
+        "YxkN8HXn3pRGGYO7": {
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Anoreth's bonded item is on their person</p><hr /><p><strong>Effect</strong> Anoreth expends magical energy stored in their bonded item. During the current turn, they can cast one spell they prepared today and already cast, without spending a spell slot. They must still Cast the Spell and meet the spell's other requirements.</p>",
+          "name": "Drain Bonded Item"
+        },
+        "oJ1wqwvdnoVowbAJ": {
+          "description": "<p>Anoreth's familiar is a pipefox named Kiriki, who is usually in area <strong>D5</strong>. Kiriki has a Speed of 25 feet, climb Speed of 20 feet, darkvision, and the independent familiar ability. She otherwise functions as a pipefox.</p>",
+          "name": "Familiar"
+        },
+        "pnmbV9cYCeeGkUY7": {
+          "description": "<p>Anoreth extends their spells' range. If the next action they use is to Cast a Spell that has a range, increase the spell's range by 30 feet.</p>",
+          "name": "Reach Spell"
+        },
+        "qKwvFSkcIlYeed2H": {
+          "description": "<p><strong>Cantrips</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.vJZ83ehQiM906lea]{Detect Metal}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf]{Electric Arc}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.iYRDFxeVpJ5KIjmr]{Needle Darts}</li></ul><p><strong>1st rank</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.fkUCvynklBGb4LaI]{Conductive Weapon}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</li></ul><p><strong>2nd rank</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.3JG1t3T4mWn6vTke]{Blur}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.pZTqGY1MLRjgKasV]{Darkvision}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{Revealing Light}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{Translate}</li></ul><p><strong>3rd rank</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.3A3ueS9Q0s3U8KXE]{Noxious Metals}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3]{Slow}</li></ul><p><strong>4th rank</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.WqPhJNzLa8vSjrH6]{Animated Assault}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.TUj8eugNqAvB1vVR]{Creation}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}</li></ul>",
+          "name": "Spellbook (Grand Schematica)"
+        },
+        "xpYy8fX5Gp6PVcjg": {
+          "name": "Clockwork Lore"
+        },
+        "yR7jfKlCKS6p8rCe": {
+          "name": "Pocket Watch Containing a Lock of Black Hair Tied in a Pink Ribbon"
+        }
+      },
+      "name": "Anoreth Zorillen"
+    },
+    "Anvaca": {
+      "items": {
+        "0TIzm0SotUXlV0VG": {
+          "description": "<p>Anvaca Raises their Shield, then either Strides or Steps.</p>",
+          "name": "Shielded Approach"
+        },
+        "i0uvaVyEMVmJJZ4f": {
+          "description": "<p>See below.</p>",
+          "name": "Bolt Emitter"
+        },
+        "o9hIFf9LPgENxdRP": {
+          "description": "<p>The countless ghostly echoes that compose Anvaca's spirit surround the poppet's body, then surge out in either a @Template[type:emanation|distance:15] or a @Template[type:line|distance:60], dealing @Damage[6d10[spirit]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:28|basic] save). Anvaca can't use Dead, But Not Forgotten again for [[/gmr 1d4 #Recharge Dead, But Not Forgotten]]{1d4 rounds}.</p>",
+          "name": "Dead, But Not Forgotten"
+        },
+        "sFvIrdCN0KlmAXIN": {
+          "description": "<p>Anvaca can wield a longspear in one hand if they're holding a shield in their other hand. Spear weapons Anvaca wields temporarily become <em>+2 greater striking</em> and deal an additional 1d8 spirit damage on a hit.</p>",
+          "name": "Moon-Blessed Hoplite"
+        },
+        "zStVPp0gYqesILe2": {
+          "description": "<p>Anvaca gains a +1 circumstance bonus to saving throws against death effects, disease, and poison, as well as to saving throws against effects that would give them the @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} conditions. They count as a living creature (and can therefore be healed by vitality and harmed by void damage).</p>",
+          "name": "Constructed"
+        },
+        "zo7h1UF1S3XiJyQd": {
+          "description": "<p><strong>Price</strong> 900 gp; <strong>Ammunition</strong> magical energy (unlimited; no reload)</p><hr /><p><strong>Usage</strong> mounted on tracks</p>\n<p><strong>Space</strong> 7 feet long, 5 feet wide, 5 feet high</p><hr /><p><strong>Crew</strong> 1–3; <strong>Proficiency</strong> martial</p><hr /><p><strong>AC</strong> 22; <strong>Fort</strong> [[/r 1d20+17 #Fortitude]]{+17}; <strong>Ref</strong> [[/r 1d20+13 #Reflex]]{+13}</p>\n<p><strong>Hardness</strong> 15; <strong>HP</strong> 80 (BT 40); <strong>Immunities</strong> object immunities</p><hr /><p><strong>Speed</strong> 15 feet (pushed or pulled along tracks; can't be removed from tracks)</p>\n<p><strong>Aim</strong> <span class=\"action-glyph\">1</span> 60 feet, minimum distance 10 feet</p>\n<p><strong>Fire</strong> <span class=\"action-glyph\">1</span> (attack, flourish, manipulate, range 200 feet) @Damage[6d10[electricity]], single target, @Check[reflex|dc:23]. On a failed save, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} from electric shock.</p>",
+          "name": "Bolt Emitter"
+        }
+      },
+      "name": "Anvaca"
+    },
     "Auzmere": {
       "description": "<p>Dero stranglers specialize in capturing living victims, and they are often called upon to aid in abductions.</p>\n<hr />\n<p>Deros are short, wiry humanoids with milky white eyes, gray-blue skin, and wild shocks of off-white or gray hair. The descendants of a mysterious type of fey abandoned in the deepest, darkest caverns of Golarion, deros are the subject of fearful legends and folk tales to most of the world's surface races. They skulk beneath major metropolitan areas, performing cruel and twisted experiments on unwilling subjects.</p>\n<p>Deros, particularly the leading magisters, are fixated with curing their allergy to sunlight. To understand how the surface dwellers can withstand the light of the sun, deros conduct late-night raids on surface cities, abducting victims and performing terrible experiments on them. Those who survive are often returned with much of their memory erased and their bodies bearing mysterious scars.</p>\n<p>The largest dero settlements are built around esoteric machines of floating crystals. As these crystals grind against each other and hum with sickening blue energy, crystal flakes and powdery residue collect beneath the machinery. Dero magisters gather these products, creating tools and repurposing the crystals to power magical items.</p>",
       "items": {
@@ -90,10 +215,46 @@
       },
       "name": "Batkin Guard"
     },
+    "Blood Drain": {
+      "description": "<p>A tiny spark of Nin's will drains the blood from living intruders.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:26] (expert) to vandalize the space, or @Check[religion|dc:24] (expert) to pray to a god for passage, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 25) to counteract the magical energy</p>",
+      "hazardReset": "<p>The trap automatically deactivates after 1 minute. It resets in 1 hour.</p>",
+      "hazardRoutine": "<p>(1 action) On its initiative, the trap continues to drain blood, dealing @Damage[(2d6+8)[void]] damage to all living creatures in the room (@Check[fortitude|dc:26|basic] save). On a failure, a creature increases the value of their drained condition by 1.</p>",
+      "name": "Blood Drain"
+    },
+    "Blood-Draining Lock": {
+      "description": "<p>A spring-loaded blade hidden in the door's handle stabs anyone attempting to turn it, dealing unholy wounds that bleed profusely. Disabling or breaking the trap does not disable or break the lock.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:31] (expert) on the spring mechanism</p>",
+      "name": "Blood-Draining Lock"
+    },
     "Breakaway Ladder": {
       "description": "<p>The rope ladder rips free from its anchors and drops into the pit.</p>",
       "hazardDisable": "<p>@Check[thievery|dc:25] (trained) or @Check[crafting|dc:22] (trained) to secure the ladder's anchors so they won't break</p>",
       "name": "Breakaway Ladder"
+    },
+    "Bulbous Blood Ooze": {
+      "items": {
+        "1qp7p32356qJbIke": {
+          "description": "<p>Whenever a creature adjacent to a blood ooze takes bleed damage, the blood ooze regains an amount of Hit Points equal to the damage dealt.</p>",
+          "name": "Blood Pool"
+        },
+        "Np9uxSRVKkEuw7Fr": {
+          "description": "<p>A blood ooze can seep into a corpse's wounds, displacing its natural blood. It can burst out of the corpse as a free action.</p>",
+          "name": "Infuse Corpse"
+        },
+        "RxSHwBD7VkaOp8pQ": {
+          "description": "<p><strong>Trigger</strong> The blood ooze is damaged by a piercing or slashing attack</p><hr /><p><strong>Effect</strong> The blood ooze forms a clot around the wound, reducing the damage taken by 5 (to a minimum of 0).</p>",
+          "name": "Clot"
+        },
+        "ecbHUglZYGK8wtpe": {
+          "name": "Pseudopod"
+        },
+        "p9glL4qO0pjsLrc7": {
+          "description": "<p>The blood ooze draws forth blood from nearby creatures, causing their flesh to break open and blood to spill out, which replenishes the blood ooze. Each living creature within @Template[emanation|distance:15]{15 feet} takes @Damage[4d6[slashing]|options:area-damage] damage (@Check[fortitude|dc:24|basic] save). The blood ooze regains an amount of Hit Points equal to half the damage Siphon Vitality dealt to the single creature that took the most damage.</p>",
+          "name": "Siphon Vitality"
+        }
+      },
+      "name": "Bulbous Blood Ooze"
     },
     "Camazotz Cultist": {
       "items": {
@@ -117,10 +278,125 @@
       "hazardRoutine": "<p>(2 actions) The swarm uses its first action to move up to 30 feet to envelop as many enemies as possible within its @Template[type:burst|distance:30] space. All enemies in the swarm's space become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} while within the swarm. It then uses its second action to bite all enemies, dealing @Damage[(1d6+3)[piercing]|options:area-damage] damage (@Check[reflex|dc:17|basic] save) to all enemies in the space.</p>",
       "name": "Camazotz's Swarm"
     },
+    "Clockwork Corpse": {
+      "items": {
+        "IX3E27MBpEJDiOqF": {
+          "name": "Festering Fluid"
+        },
+        "WsuLgze9sNEo5W1Z": {
+          "name": "Fist"
+        },
+        "Xbx1RfZHyEhJaHxs": {
+          "description": "<p>With a whir of clockwork mechanisms, spinning gears, and grinding bones, the clockwork corpse opens its torso and disgorges a pressurized spray of festering internal fluids and caustic oil in a @Template[type:line|distance:30]. Creatures in the area are dealt @Damage[3d6[bludgeoning]] damage and @Damage[3d6[poison]] damage (@Check[reflex|dc:22|basic] save). On a critical failure, a creature is additionally knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force. The clockwork corpse can't use Pressurized Blast again for [[/gmr 1d4 #Recharge Pressurized Blast]]{1d4 rounds}.</p>",
+          "name": "Pressurized Blast"
+        },
+        "rnV6Qs2Mr2zgpqG9": {
+          "description": "<p>24 hours, [[/act disable-device dc=20]], standy</p>\n<p>Unlike most clockworks, when a clockwork corpse has 0 operational time remaining, rather than shut down, it instead becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions. These conditions are removed when its wound.</p><hr /><p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>",
+          "name": "Wind-Up"
+        },
+        "svLywz3dBSFQ1FFj": {
+          "name": "Arm Blade"
+        }
+      },
+      "name": "Clockwork Corpse"
+    },
+    "Clockwork Sentry": {
+      "description": "<p>Clockworks are intricate, complex machines built by talented engineers and infused with magical energy. At the height of the Azlanti Empire, magitech clockworks were commonplace, from music boxes, toys, and vehicles, to bodyguards, soldiers, spies, and even nannies.</p>\n<p>Clockwork sentries are four-armed constructs created to serve as guardians, programmed either to prevent access to a specific location or to keep targets from escaping a secured site. This makes them the perfect clockwork for serving in prisons, dungeons, vaults, and similar locations.</p><h2>Winding Clockworks</h2><p>A clockwork must be wound to remain operational. Each clockwork has the wind-up ability, with the specifics listed in its stat block. There are winding station locations in the adventure where a clockwork can return to be wound rather than having to rely upon another creature. The full rules for winding clockworks can be found in Pathfinder Bestiary 3 on page 48.</p><h2>Clockwork Hot Spots</h2><p>Today, the nations of Alkenstar and New Thassilon, the church of Brigh, and the famed Clockwork Cathedral of Absalom are the primary sources for clockwork creation. Haunted clockworks from the Clicking Caverns often invade the nations of Nagajor and Xa Hoi.</p>",
+      "items": {
+        "3KQXtztNsvac8Df8": {
+          "name": "See the Unseen (Constant)"
+        },
+        "5jZ51Mi9DF8hkNPp": {
+          "name": "Pneumatic Swing"
+        },
+        "6LX36TtfGbMBHzLU": {
+          "name": "Fist"
+        },
+        "G3nY6dCiRW6dBlIV": {
+          "name": "Pulse Blast"
+        },
+        "ZJSNIDtARJ0gkmb5": {
+          "description": "<p>The clockwork sentry Strides up to twice its Speed in a straight line. If it ends this movement in reach of a creature, it makes a fist Strike against that creature. On a hit or critical hit, the target takes an additional @Damage[1d6[bludgeoning]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+          "name": "Tackle"
+        },
+        "dpcNHZpwqIaZFwso": {
+          "description": "<p><strong>Trigger</strong> The clockwork sentry has a creature @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>Effect</strong> The clockwork sentry Interacts to place manacles on the restrained creature.</p>",
+          "name": "Arrest"
+        },
+        "ilzjWvtxb4FdnYG8": {
+          "description": "<p><strong>Trigger</strong> A creature within a clockwork sentry's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a space during a move action it's using</p><hr /><p><strong>Effect</strong> The clockwork sentry makes an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} the triggering creature.</p>",
+          "name": "Sudden Seize"
+        },
+        "xKg1vUWcsBrm485E": {
+          "description": "<p>24 hours, [[/act disable-device dc=26]], standy</p><hr /><p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>",
+          "name": "Wind-Up"
+        }
+      },
+      "name": "Clockwork Sentry"
+    },
     "Collapsing Cell": {
       "description": "<p>A section of ceiling and iron cell bars collapse inward.</p>",
       "hazardDisable": "<p>@Check[thievery|dc:22] (trained) or @Check[crafting|dc:25] (trained) to use a loose iron bar to shore up the ceiling.</p>",
       "name": "Collapsing Cell"
+    },
+    "Conductor": {
+      "description": "<p>Velstracs arise from the souls of the most extreme masochistic or sadistic mortals who are judged by Pharasma and then sent on to the Netherworld. The fiends come in many horrific forms, which usually manifest in twisted display of their vile predilections in life, ranging from the low-ranking augurs to the maestros of suffering and mutilation called eremites. The process of transformation warps the velstrac's soul step by step, with other velstracs conveying their new members through untold chambers of pain among the dark reaches of the Netherworld. The velstracs are led by the pinnacles of their kind, a group of nine powerful fiends known as velstrac demagogues.</p>\n<p>Once their transformation is complete, velstracs emerge as twisted artists who wield pain and despair like an instrument. They crave sensation, the more vile and horrifying, the better. They claim that this outlook is the one true path to perfection of the mind, body, and spirit, but in truth their administrations only deal out suffering and mutilation. Their corrupt attempts at perfection aren't limited to their victims, who they torture for as long as they possibly can until their bodies or minds fail, but also applied to themselves, testing their own resolve in a crucible of pain.</p>\n<p>Velstracs feature in this adventure in a couple of ways. When Nizca and Deg failed to veil the sun in shadows using the shadow beacon, portions of the Netherworld overlaid En-Gokal. The velstracs, led by the velstrac conductor Jubilant, passed traveled from their shadowy realm into the mortal world of the Universe. When they arrived, they were amused by the predations of the vampires and their tenacity to hold the ruined prison, but they were especially delighted by Nizca, with whom they felt a kinship in shadow due to Nizca being an ancient strigoi—a perfect blend of shadow and vampire. Jubilant and their fellow velstracs obviously favored the plan to bring eternal darkness to Golarion, and thus they support Nizca in completing their horrifying mission, but who can say how long that support will last once the plan is complete?</p>\n<p>In addition to the most prevalent influence of velstracs in the Ebon Tower, they also play another role for the primary antagonist, Nizca. As mentioned in the campaign, one of Nizca's motivations for escaping En-Gokal is to reunite with their lover from the time before Earthfall. A cruel yet handsome man, Lograsi was a worshipper of Aroggus, a powerful velstrac demagogue with the portfolios of possibility, revenge, and sanctuary. This connection was part of Nizca's reason to trust in Jubilant and their group of velstracs, knowing that her distant lover was of the faith.</p><h2>Velstrac Conductor</h2><p>Conductors are velstracs who believe screams of anguish to be the ultimate form of musical expression. These sadistic musicians compose \"joyous symphonies\" from the agonized howling of their tortured, captive choirs.</p><h2>Instruments</h2><p>Conductors go to great lengths to acquire the finest instruments for their choirs, judging an individual singer's worth by their tone, emotion, endurance, and responsiveness. Vocalists who don't measure up to a conductor's standards are either played to death or passed on to other \"less discerning\" velstracs. Cherished instruments can expect to live a long, tortuous existence in a conductor's choir, receiving the best medical attention after each performance—at least until their voice gives out.</p><h2>Tortured Friendships</h2><p>Velstrac conductors are fairly amiable among their kind and often work with other velstracs. They particularly get along well with ostiarius velstracs and velstrac evangelists, who they tend to boss around. Though they find sacristans piteous, they're intrigued by their Shadow Scream ability.</p>",
+      "items": {
+        "3zUiUJfYeXIPZBU6": {
+          "description": "<p>A velstrac automatically knows whether a creature it sees has any of the @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed}, @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying}, and @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} conditions, as well as the value of those conditions.</p>",
+          "name": "Painsight"
+        },
+        "5aHnOxuuv74kblGh": {
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it hears every scream the velstrac conductor's victims have ever uttered. The creature must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure).</p>",
+          "name": "Horrifying Accompaniment"
+        },
+        "OPWiHtXAg9BWIktp": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> With a horrifying flourish and hungry smile, the velstrac conductor points their baton at a creature within 100 feet, compelling them to scream. The creature must attempt a @Check[will|dc:28] save. On a failure, they scream, taking @Damage[4d6[mental]] damage (@Damage[8d6[mental]] on a critical failure) and dealing @Damage[2d6[sonic]] damage to all creatures in a @Template[type:emanation|distance:20] (@Check[fortitude|dc:28|basic] save).</p>\n<p>Instead of targeting one creature, the conductor can choose to target all creatures in range that were compelled to scream by this ability last round.</p>",
+          "name": "Scream for Me"
+        },
+        "VxY2MB8tInlVu8Qz": {
+          "name": "Pinpoint Shriek"
+        },
+        "Xcl8Md9G3qK6KdEP": {
+          "name": "Conductor's Baton"
+        },
+        "cm4QiNEJgATueajx": {
+          "name": "Conductor's Baton"
+        },
+        "g8Fn8rgfUYoJlwgY": {
+          "description": "<p>The conductor lets out a terrible scream of joy, dealing @Damage[10d6[sonic]] damage to all creatures in either a @Template[type:cone|distance:30] or a @Template[type:line|distance:90] (@Check[will|dc:28|basic] save). Holy creatures that fail this save are also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. The conductor can't use Unholy Exaltation again for [[/gmr 1d4 #Recharge Unholy Exaltation]]{1d4 rounds}.</p>",
+          "name": "Unholy Exaltation"
+        },
+        "hwIQPwhl4ZPBpOCt": {
+          "description": "<p>The velstrac conductor stares at a creature they can see within 30 feet. The creature must immediately attempt a Will save against the velstrac conductor's horrifying accompaniment aura. In addition, if the creature was already frightened, on a failed save the creature takes @Damage[1d6[persistent,mental]] damage. After attempting this save, the creature is then temporarily immune for 1 hour.</p>",
+          "name": "Focus Gaze"
+        },
+        "jWi52nabMjsgxHax": {
+          "name": "Regeneration 10 (Deactivated by Holy or Silver"
+        },
+        "ouRdXacD2CSHXiPA": {
+          "description": "<p><strong>Trigger</strong> A creature targets the velstrac conductor with an auditory or sonic effect or includes the conductor in the area of an auditory or sonic effect</p><hr /><p><strong>Effect</strong> The conductor sings a note that resonates with the triggering effect, redirecting it to the triggering creature. The triggering creature becomes the target of the triggering effect, instead of the conductor.</p>",
+          "name": "Sonic Redirection"
+        },
+        "rwSFHVcngEK7T6Md": {
+          "name": "Claw"
+        },
+        "tqXrf9dVeQNU4n0h": {
+          "name": "Fly (Constant)"
+        },
+        "um2PxwFSEzBMcQc9": {
+          "name": "Torture Lore"
+        }
+      },
+      "name": "Conductor",
+      "npcAllSaves": "+1 status to all saves vs. magic",
+      "npcHp": "regeneration 10 (deactivated by holy or silver"
+    },
+    "Conundrum Ward": {
+      "description": "<p>A complex geometrical ward with mathematical equations woven into its lines magically seals the door, harming anyone who touches it.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:30] (master) to sabotage the ward, Geometry or @Check[25-lore|dc:Mathematics]{Mathematics Lore} (trained) to calculate the solution to the complex equations, @Check[crafting|dc:28] (expert) to manipulate the ward's precise underlying schematics, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 26) to counteract the magical ward</p>",
+      "hazardReset": "<p>The trap automatically resets after being triggered. If disabled, the ward does not reset.</p>",
+      "name": "Conundrum Ward"
     },
     "Creeping Clot": {
       "description": "<p>The unsettling creeping clot appears like a disgusting mound of half- coagulated blood that seeps a constant red effluvium, which in turn is slurped up by the clot's slithering feelers before the stain can spread more than a few inches from its central mass. When it senses danger, a creeping clot can form a protective shell of hardened ooze that makes it look like an enormous scab.</p>\n<p>It's a common misconception that a creeping clot feeds on blood. In fact, this crusty ooze absorbs minerals from flesh and blood alike by burrowing its tendrils into a creature, a process that creates painful—and sometimes fatal—blood clotting within the victim's body.</p><h2>Farming Clots</h2><p>A creeping clot's toxin can be harvested as a useful (if risky) medicinal. A successful @Check[medicine|dc:22] or @Check[survival|dc:22] check and 10 minutes of work on a creeping clot that's been dead for no more than 1 hour produces 1 dose of creeping clot serum (2 doses on a critical success). A critical failure exposes the harvesting creature to the clot's jelly blood. A dose of creeping slot serum spoils after 24 hours. If a dose of creeping clot serum is used while @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administering First Aid} to stop bleeding, the Medicine check gains a +3 item bonus, but on a critical failure, the victim is exposed to jelly blood.</p>",
@@ -198,6 +474,54 @@
       "name": "Danva",
       "npcAllSaves": "+2 status to all saves vs. auditory and visual"
     },
+    "Deg": {
+      "items": {
+        "8Re5rejpriBxGMh4": {
+          "description": "<p><strong>Requirements</strong> Deg is wearing a cytillesh toolkit and has a hand free</p><hr /><p><strong>Effect</strong> Deg excises damaged flesh and crudely stitches wounds shut, healing himself or an ally in reach for @Damage[(3d8+18)[healing]] Hit Points. For 1 hour, the target has slashing weakness 5 and is immune to Dero Medicine.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.tVw3srxbsQ8PjBfy]{Effect: Dero Medicine (Deg)}</p>",
+          "name": "Dero Medicine"
+        },
+        "T6GfIyvyA3GG0CcV": {
+          "description": "<p><strong>Cost</strong> 1 dose of concentrated cytillesh gas</p>\n<p><strong>Trigger</strong> A creature ends their movement adjacent to Deg</p><hr /><p><strong>Effect</strong> With a flick of their wrist and a sadistic cackle, Deg triggers an aerosol canister at his hip, spraying the triggering creature with concentrated cytillesh gas.</p>",
+          "name": "Gas 'Em!"
+        },
+        "TNb6L6tYAgULYg8S": {
+          "name": "Engineer's Toolkit"
+        },
+        "a1fgv1PLJF7WVHDh": {
+          "description": "<p>Deg fights using a complex device he crafted from scavenged clockwork parts and ancient Azlanti magitech. This device, called an <em>energy expulsor innovation</em>, is a clockwork gun bulging with multiple glass canisters, each filled with a different, roiling magical energy. The device allows Deg to use his Concentrated Fire and Overclocked Blast abilities. It otherwise functions as a magical inventor weapon innovation with no modifications.</p>",
+          "name": "Energy Expulsor Innovation"
+        },
+        "b1AAHF5ly9F80Bs6": {
+          "description": "<p>Deg takes @Damage[18[untyped]] damage for every hour he's exposed to sunlight.</p>",
+          "name": "Vulnerable to Sunlight"
+        },
+        "hnkd4sYOE7gPGokA": {
+          "name": "Azlanti Lore"
+        },
+        "kGlxynzzqkeFrULd": {
+          "name": "Energy Expulsor Innovation"
+        },
+        "lvzmvdNjUGDfm7mD": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[4d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 4</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} and lose all memories made in the previous 10 minutes (1 round)</p>",
+          "name": "Concentrated Cytillesh Gas"
+        },
+        "naKTQ9IRMAt5JNvw": {
+          "description": "<p>Deg makes two ranged Strikes with his energy expulsor innovation at a single target. Both attacks count toward his multiple attack penalty, but the penalty doesn't increase until after he's made both attacks.</p>",
+          "name": "Concentrated Fire"
+        },
+        "quWhYDqfgfi2NjJT": {
+          "description": "<p>Deg Interacts to set his energy expulsor innovation to the desired modular damage configuration, then overclocks his energy expulsor innovation and fires a massive blast of energy in a @Template[type:line|distance:100]. This blast deals @Damage[8d8[untyped]] damage (@Check[reflex|dc:28|basic] save) of the type determined by the energy expulsor innovation's current configuration. Deg can't use Overclocked Blast again for [[/gmr 1d4 #Recharge Overclocked Blast]]{1d4 rounds}.</p>",
+          "name": "Overclocked Blast"
+        },
+        "s3l7jYIDO6QEh3pX": {
+          "name": "Magitech Lore"
+        },
+        "yqyGmSFJxXlCehjD": {
+          "name": "Aerosol Canister (Three Doses of Concentrated Cytillesh Gas)"
+        }
+      },
+      "name": "Deg"
+    },
     "Dero Punk": {
       "description": "<p>Dero stalkers explore the surface world by night, seeking out victims to abduct. While hiding from the burning light of day, stalkers often assist with magisters' experiments.</p>\n<hr />\n<p>Deros are short, wiry humanoids with milky white eyes, gray-blue skin, and wild shocks of off-white or gray hair. The descendants of a mysterious type of fey abandoned in the deepest, darkest caverns of Golarion, deros are the subject of fearful legends and folk tales to most of the world's surface races. They skulk beneath major metropolitan areas, performing cruel and twisted experiments on unwilling subjects.</p>\n<p>Deros, particularly the leading magisters, are fixated with curing their allergy to sunlight. To understand how the surface dwellers can withstand the light of the sun, deros conduct late-night raids on surface cities, abducting victims and performing terrible experiments on them. Those who survive are often returned with much of their memory erased and their bodies bearing mysterious scars.</p>\n<p>The largest dero settlements are built around esoteric machines of floating crystals. As these crystals grind against each other and hum with sickening blue energy, crystal flakes and powdery residue collect beneath the machinery. Dero magisters gather these products, creating tools and repurposing the crystals to power magical items.</p>",
       "items": {
@@ -215,6 +539,23 @@
         }
       },
       "name": "Dero Punk"
+    },
+    "Dero Strangler": {
+      "items": {
+        "UDbuH3ideIzovA2c": {
+          "description": "<p>The dero sentry winds up, readying themselves to take a massive swing with their weapon. If the next action the dero sentry takes is a melee Strike, they deal an additional 1d8 damage with that Strike.</p>",
+          "name": "Focused Blow"
+        },
+        "qwNhCiHQVyMkQrfX": {
+          "description": "<p><strong>Requirements</strong> The dero is wearing a cytillesh toolkit and has a hand free</p><hr /><p><strong>Effect</strong> The dero excises damaged flesh and crudely stitches wounds shut, healing themself or an ally in reach for @Damage[(2d8+10)[healing]] Hit Points. For 1 hour, the target has slashing weakness 2 and is immune to Dero Medicine.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vqKBIflXiAmCx5QQ]{Effect: Dero Medicine}</p>",
+          "name": "Dero Medicine"
+        },
+        "uldVZLVdwiLD1q6v": {
+          "description": "<p>A dero sentry takes @Damage[10[untyped]] damage for every hour they're exposed to sunlight.</p>",
+          "name": "Vulnerable to Sunlight"
+        }
+      },
+      "name": "Dero Strangler"
     },
     "Desmohund": {
       "description": "<p>In folklore, bats and wolves are common elements of vampire stories—sometimes even the focus of such tales. The veil of night, however, conceals a wide array of vampiric creatures. Neither wholly wolf nor bat, desmohunds, also called vampire hounds, use their limited flight to swiftly close the gap between themselves and fleeing prey. This rapid movement, along with a penchant for hunting in perfect darkness, is often the cause of a survivor's confusion when asked to describe just what it was that attacked them.</p>\n<p>As their common name suggests, vampire hounds share a strong affinity with vampires. While the hounds can subsist entirely on flesh, they have a particular taste for blood. A desmohund attack is brutal and violent. The creature tears their victim apart, allowing the blood to generously pool on the ground before lapping it up. Only after the blood is consumed do the beasts begin devouring flesh.</p>\n<p>Desmohunds are surprisingly loyal and often defend their masters to the death. Though they generally serve vampires, it isn't unheard of for the living to keep such creatures as pets, especially in areas like Ustalav, Nidal, and the Darklands, where they can sometimes be found prowling the grounds of foreboding estates.</p>\n<p>Vampire hunters carry a variety of tools to stalk and destroy their favored prey, but clever ones also carry items that can work against a vampire's allies too. Therefore, some carry bags of cinnamon or vials of eucalyptus oil to confuse and irritate desmohunds' keen sense of smell.</p><h2>Divine Origins</h2><p>Sources differ on the origin of desmohunds. Some legends state that Urgathoa created the first vampire hounds as pets to keep her company in undeath. Others claim that Nin distilled the best parts of vampires and wolves to create a nigh-unstoppable hunter. One story posits that Lamashtu created the first desmohunds, but Zura the Vampire Queen stole them from Lamashtu's realm of Kurnugia, claiming the creatures as her own. The only common thread among these tales is each god's insistence that they were the true creators of desmohunds, suggesting that there's an unknown reason the gods would vie for such a title.</p>",
@@ -256,6 +597,12 @@
       "hazardRoutine": "<p>(1 action; illusion, mental) A thunderous explosion rocks the room as the ceiling appears to split open and collapse. This cave-in is an illusion formed from the memories of the dead, but it can inflict real damage. All creatures in the room must attempt a @Check[will|dc:22|traits:illusion,mental] save.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes @Damage[1d10[mental]] damage.</p><p><strong>Failure</strong> The creature takes @Damage[(1d10+6)[mental]] damage and believes the room is filling with rubble—they're @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the start of their next turn as they spend their energy navigating the illusory rockfall.</p><p><strong>Critical Failure</strong> The creature takes @Damage[(2d10+12)[mental]] damage and believes they're pinned by rubble—they're @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until the start of their next turn.</p>",
       "name": "Echoes of Earthfall"
     },
+    "Electric Fence": {
+      "description": "<p>A locked, wrought iron fence with bars spaced inches apart is magically electrified.</p>",
+      "hazardDisable": "<p>Crafting or @Check[thievery|dc:28] (expert) to disconnect the fence from its magitech power source</p>",
+      "hazardReset": "<p>The trap automatically resets. If deactivated or disabled, the trap doesn't reset.</p>",
+      "name": "Electric Fence"
+    },
     "Erissa": {
       "description": "<p>When a creature dies, and for whatever reason its spirit is unable or unwilling to leave the site of its death, that spirit may manifest as a poltergeist: a restless, invisible spirit that is still able to manipulate physical objects. Many poltergeists perished in a way that resulted from or led to extreme emotional trauma.</p>",
       "items": {
@@ -294,6 +641,62 @@
       "name": "Erissa",
       "npcHp": "void healing, rejuvenation"
     },
+    "Favored Thrall": {
+      "items": {
+        "ChkQq5EcLQtdKctA": {
+          "description": "<p>The favored thrall Strides up to their speed, ending their move adjacent to Ilnaphrae or Xarbaene. Until the beginning of their next turn, they grant any adjacent vampires a +1 circumstance bonus to AC, as they use their body as a shield. This bonus is in addition to any bonuses granted by cover they would provide.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.YH57XXyIQCRe6pcR]{Effect: Body Shield}</p>",
+          "name": "Body Shield"
+        },
+        "WX7tIItRTSxlIoI5": {
+          "description": "<p><strong>Requirements</strong> The favored thrall is within 15 feet of Ilnaphrae or Xarbaene</p>\n<p><strong>Trigger</strong> Ilnaphrae or Xarbaene (whichever meets the requirements) would be damaged</p><hr /><p><strong>Effect</strong> The favored thrall launches themselves in the way to shield their master from harm. They immediately Stride into a space adjacent to the vampire who would be damaged, moving as close to the incoming attack as possible. The favored thrall is dealt the triggering damage, rather than the vampire.</p>",
+          "name": "Protect the Lord"
+        },
+        "ww8e4xKD27p4JVKq": {
+          "description": "<p>If a favored thrall is within 25 feet of Ilnaphrae or Xarbaene, they're bolstered by the proximity of their lord; the favored thrall gains a +2 circumstance bonus to attack rolls and deals an additional 1d6 damage with Strikes.</p>",
+          "name": "Lord's Blessing"
+        }
+      },
+      "name": "Favored Thrall"
+    },
+    "Firitula": {
+      "description": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that—if lingered upon—can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divining magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek—for a price. Of course, if wit and deception prove insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare. Many medusas build elaborate lairs to call home, often decorated with the statues of their foes turned into macabre trophies on prominent display.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict, even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing their lives.</p>",
+      "items": {
+        "2lGYb3ZO8pwxgMhD": {
+          "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a @Check[fortitude|dc:25] save against the medusa's petrifying gaze.</p>\n<p>If the creature was already slowed by petrifying gaze before attempting its save, a failed save causes it to be petrified permanently. After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>",
+          "name": "Focus Gaze"
+        },
+        "6wBmJCVEsFr23huy": {
+          "name": "Sighting Shot Arrow"
+        },
+        "8fhzTxTKuYLqTv2G": {
+          "name": "Explosive Arrow"
+        },
+        "FuDdgAP7wwq6LCFO": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>",
+          "name": "Serpent Venom"
+        },
+        "hSGaU1UT8mzmPFWl": {
+          "description": "<p>30 feet.</p>\n<p>When a creature ends its turn in the aura, it must attempt a @Check[fortitude|dc:25] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p>The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
+          "name": "Petrifying Gaze"
+        },
+        "ltvMN7K0itu2l3WZ": {
+          "name": "Snake Fangs"
+        },
+        "zGXZKhk95VPsSdKN": {
+          "description": "<p><strong>Trigger</strong> A creature ends its turn adjacent to the medusa.</p>\n<hr />\n<p><strong>Effect</strong> The medusa makes a snake fangs Strike against the creature.</p>",
+          "name": "Biting Snakes"
+        }
+      },
+      "name": "Firitula",
+      "npcAc": "all-around vision"
+    },
+    "Flensing Bone Pillars": {
+      "description": "<p>Eight pillars composed of jagged bones spin, damaging anyone adjacent who doesn't worship Zon-Kuthon.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:22] to disassemble one pillar, @Check[religion|dc:22] to ritually purify one pillar, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 26) once to counteract the magic binding all the bone pillars together, deactivating the whole trap</p>",
+      "hazardReset": "<p>The trap deactivates and resets after 1 minute. The trap is automatically destroyed if all the velstracs on this floor are killed.</p>",
+      "hazardRoutine": "<p>(8 actions) Each of the functioning bone pillars makes a bone spur Strike against an adjacent creature. This trap doesn't take a multiple attack penalty. This trap loses one action for each disabled or destroyed pillar.</p>",
+      "name": "Flensing Bone Pillars"
+    },
     "Fogfisher": {
       "description": "<p>Fogfishers are rarely encountered less than a mile above the ground, preferring instead to drift high in the atmosphere in clusters that look like drifting fog banks. Only when their favored foods—birds, bats, and other tiny flying creatures—grow scarce do fogfishers descend to feed. Fogfishers trapped in enclosed areas, such as subterranean caverns, might be forced into such tactics.</p>\n<p>A fogfisher appears as an ovoid mass of pulsing, translucent flesh from which dangle dozens of spike-tipped tendrils. When it attacks, the fogfisher launches a harpoon-like hook. By injecting victims with its buoyant drifting toxin, a fogfisher can reel in creatures much larger than its typical vermin prey.</p><h2>Fishers Above</h2><p>The fogfisher occupies a similar ecological niche as another deadly predator of the world above—the @UUID[Compendium.pf2e.howl-of-the-wild-bestiary.Actor.DiU1sOTZHKbSQoKD]{Sky Fisher}. Scholars have noted the similarities between these creatures, although enough differences remain to suggest the two are unrelated. It makes one wonder, though, what other predators might lurk in the cloud-jungles high above the ground.</p>",
       "items": {
@@ -330,6 +733,76 @@
       },
       "name": "Fogfisher"
     },
+    "Freileth": {
+      "description": "<p>Vampire masterminds are evil wizards who control entire cabals of the undead and instill fear in the hearts of mortals far and wide.</p>\n<hr />\n<p>Vampires are undead creatures that feed on the blood of the living.</p>",
+      "items": {
+        "2wdfh7JIT7SjhXIz": {
+          "name": "Claw"
+        },
+        "3ZSVEZBMKleuEd84": {
+          "description": "<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait (@Check[will|dc:26]). A creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>",
+          "name": "Dominate"
+        },
+        "8u1Hcx3t6JzOkXtF": {
+          "name": "Fast Healing 10"
+        },
+        "9ewh7tMyC0NRIpZx": {
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The vampire mastermind hasn't acted yet on this turn</p>\n<hr />\n<p><strong>Effect</strong> The vampire expends the power stored in their signet ring. This gives the vampire the ability to cast one prepared spell they had already previously cast today without spending a spell slot. The vampire must still Cast the Spell and meet the spell's other requirements.</p>",
+          "name": "Drain Bonded Item"
+        },
+        "9iYmbVoVyCe6SNu9": {
+          "name": "Coffin Restoration"
+        },
+        "DD9mP7VmHRk4Lm97": {
+          "description": "<p>If another creature's reaction would disrupt the vampire mastermind's spellcasting action, the vampire attempts a @Check[flat|dc:15]. If the vampire succeeds, their action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        },
+        "GXr4u9s0uuvI5J6d": {
+          "name": "Vampire Vulnerabilities"
+        },
+        "HhkalK1aMfqDSiWQ": {
+          "description": "<p><strong>Requirement</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Effect</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the vampire regains @Damage[10[healing]]{10 HP}, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>",
+          "name": "Drink Blood"
+        },
+        "I0GaQls3ghJMJ5Ib": {
+          "name": "Children of the Night"
+        },
+        "J1upVrIH0MqLkiNC": {
+          "description": "<p>A two-pronged metal rod, this wand has a handle coated in thick rubber. Each prong ends in a copper coil. When Activated, the wand produces a loud zapping sound.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p><hr /><p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze}, electrocuting the target into immobility. Each target takes @Damage[1d12[electricity]] damage at the start of its turns while it remains stunned or @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} due to the spell.</p><hr /><p><strong>Craft Requirements</strong> Supply a casting of @UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze}of the appropriate rank.</p>",
+          "name": "Wand of Paralytic Shock (Rank 3)"
+        },
+        "PWhvxNestqK3Z33S": {
+          "description": "<p>This wand features a carved dragon's head at its top and a polished metal sphere set in its midsection.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p><hr /><p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage} at 3rd rank.</p>\n<p>After you cast the spell, an additional shard or shards are released from the wand at the start of each of your turns, as though you cast the 1-action version of <em>force barrage</em>. Choose targets each time. This lasts for 1 minute, until you're no longer wielding the wand, or until you try to activate the wand again.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of <em>force barrage</em> of the appropriate rank.</p>",
+          "name": "Wand of Shardstorm (Rank 3)"
+        },
+        "S7Khn0wjpXjjyPAp": {
+          "name": "Mist Escape"
+        },
+        "Zo0FP9W2ApyQ1WcK": {
+          "name": "Signet Ring"
+        },
+        "czqtIybNHs8mmEeg": {
+          "description": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire servitor by donating some of their own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>A vampiric servitor is compelled to obey its creator, but if a vampire controls too many vampiric servitors at once (as determined by the GM), or if the servitor is a higher level than the vampire that created it, strongwilled servitors can free themselves by succeeding at a @Check[will|defense:will] saving throw against the vampire's Will DC.</p>",
+          "name": "Create Servitor"
+        },
+        "rjvFPfDJN8mX263J": {
+          "name": "Dominate (At Will) (See Dominate)"
+        },
+        "uZwPh8ugvTCupkAe": {
+          "description": "<p><strong>Cantrips</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.IxhGEKl63R4QBvkj]{Frostbite}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ]{Message}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.AUctDF2fqPZN2w4W]{Sigil}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]{Telekinetic Hand}</li></ul><p><strong>1st Rank</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl]{Dizzying Colors}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.aEM2cttJ2eYcLssW]{Fleet Step}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</li></ul><p><strong>2nd Rank</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.3JG1t3T4mWn6vTke]{Blur}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]{Stupefy}</li></ul><p><strong>3rd Rank</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}</li></ul><p><strong>4th Rank</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.McnPlLFvKtQVXNcG]{Shape Stone}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.Jmxru8zMdYMRuO5n]{Vision of Death}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li></ul>",
+          "name": "Spellbook (Blood and Brilliance)"
+        },
+        "zEz9gGlpNBUnyF2Y": {
+          "description": "<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<ul>\n<li><strong>Giant Bat</strong>\n<ul>\n<li><strong>Senses</strong> echolocation 40 feet,</li>\n<li><strong>Speed</strong> 20 feet, fly 30 feet,</li>\n<li><strong>Melee</strong> fangs +19 <strong>Damage</strong> 2d8+9 piercing</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+          "name": "Change Shape"
+        },
+        "zl24K9E3qEAfVXrR": {
+          "name": "Turn to Mist"
+        }
+      },
+      "name": "Freileth",
+      "npcHp": "coffin restoration, fast healing 10, void healing"
+    },
     "Fulthrethu": {
       "description": "<p>The sinister fulthrethu often appears as nothing more than a tangle of flotsam and kelp drifting on the currents or washed onto shore. At least, until the fulthrethu attacks, at which point its true appearance—that of a manta-ray-like creature with a suckered tail, toothy maw, and a dozen orange eyes—becomes clear.</p>\n<p>Alghollthus created the first fulthrethus eons ago to serve a unique role—to beguile unsuspecting creatures via frighteningly realistic illusions. Typically, a fulthrethu infiltrates a community by securing a safe hiding place, such as a garbage dump or cistern, from which it sends forth an illusory member of that community to spy on and interact with the locals.</p>\n<p>Today, fulthrethus who escape their alghollthu creators often gather in small enclaves, but they're no less malevolent. Instead, the fulthrethus' goal of manipulating nearby communities simply becomes more self- serving. Members of a fulthrethu enclave often share the responsibility of maintaining the appearance of an illusory god, through which they reduce nearby villages into unsuspecting cults that supply the fulthrethus with all the food and treasure they desire.</p><h2>Fulthrethu Trickery</h2><p>Although a fulthrethu is skilled at deceiving others through its illusory proxies, it has no magical sensory link to its illusions. To maintain believable control over an illusion or to observe how others react to it, the fulthrethu must remain within range of its illusion (typically 500 feet). Concentrating on a lasting illusion and its flotsam disguise at the same time leaves the fulthrethu limited in the other actions it can take in a round.</p>",
       "items": {
@@ -359,6 +832,48 @@
         }
       },
       "name": "Fulthrethu"
+    },
+    "Furious Flame": {
+      "description": "<p>Religious sigils of Scal carefully carved into the doorframe capture Tokainen's suppressed anger and frustration, unleashing it in a destructive explosion when a creature attempts to open the door.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:26] (expert) to scratch out the religious iconography, @Check[religion|dc:24] (trained) to pray for safe passage, @Check[diplomacy|dc:28] (expert) to soothe the emotions powering the magical ward, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 24) to counteract the magical energy</p>",
+      "hazardReset": "<p>The trap resets after 1 minute.</p>",
+      "name": "Furious Flame"
+    },
+    "Geff": {
+      "items": {
+        "6DYg64kfFrNXxSb1": {
+          "name": "Scalpel"
+        },
+        "8L4jR6UhYluiVKMU": {
+          "name": "Scalpel"
+        },
+        "8WddrqqxdaHyJCt9": {
+          "name": "Scalpel"
+        },
+        "XZLcpgdeSPx6cZ7n": {
+          "description": "<p><strong>Requirements</strong> Geff's last action was a successful melee Strike</p><hr /><p><strong>Effect</strong> Geff drives his tool deeper, using his knowledge of anatomy to carve a bloody wound. Geff deals @Damage[2d6[slashing],1d6[persistent,bleed]] damage to the target of the required Strike.</p>",
+          "name": "Deep Cut"
+        },
+        "ZEYOS29EIWw5RH1k": {
+          "name": "Bonesaw"
+        },
+        "cWTVjVFqRfuRqPrq": {
+          "description": "<p>Geff takes @Damage[10[untyped]] damage for every hour he's exposed to sunlight.</p>",
+          "name": "Vulnerable to Sunlight"
+        },
+        "gS36JU8yoV5O0fta": {
+          "description": "<p><strong>Requirements</strong> Geff is within melee reach of a target</p><hr /><p><strong>Effect</strong> Geff [[/act feint statistic=medicine]]{Feints} a target within melee reach, using Medicine instead of Deception, to graphically describe the wounds Geff longs to inflict.</p>",
+          "name": "Medical Assessment"
+        },
+        "mftkcpQHZLfogRVO": {
+          "name": "Bonesaw"
+        },
+        "tDkEtgiJTI6bg7EQ": {
+          "description": "<p>Geff hurls a barrage of scalpels, knives, and other nearby surgical instruments at his enemies, dealing @Damage[4d6[piercing]|options:area-damage] damage to all creatures in a @Template[type:cone|distance:15] (@Check[reflex|dc:24|basic] save).</p>",
+          "name": "1,000 Cuts"
+        }
+      },
+      "name": "Geff"
     },
     "Glormungost": {
       "description": "<p>Among the subtler of the alghollthu creations were the ugothols—also known as faceless stalkers. These twisted beings used shapeshifting to infiltrate settlements and assassinate key targets. They sowed discord and replaced leaders, causing unwanted organizations to implode and bothersome people to lose face and eventually disappear.</p>\n<hr />\n<p>In bygone millennia, aquatic monsters known as alghollthus used their occult powers to conquer and rule vast swaths of the world. Alghollthus shaped their servitors and other creatures using mental manipulation and physically transformative magic. The rulers of the alghollthus, the so-called \"veiled masters,\" further shaped entire societies by assuming the forms of those they controlled.</p>\n<p>In time, the alghollthus grew frustrated with upstart surface societies and meddling gods. They used incredible magical power to call forth a cataclysm, hoping to destroy the rebellious societies they'd manipulated. Yet they miscalculated the will to survive of those they treated as their pawns, and in time the world recovered, this time free of alghollthu influence.</p>\n<p>Today, the alghollthus have mostly remained within the deep aquatic realms where they still rule without question. Yet they have not abandoned their plots entirely, and the reemergence of servitors like faceless stalkers suggests that the alghollthus have turned their hateful eyes to the surface once again.</p>",
@@ -462,6 +977,34 @@
       },
       "name": "Hiss Beetle"
     },
+    "Hurkum": {
+      "description": "<p>In ogre society, might makes more than right—it makes the rules. The strongest or most violent ogre in a family (in most cases, this is the same ogre) is invariably that family's boss. Quick to hook fallen foes on their weapons, even other ogres fear the repercussions of displeasing an ogre boss. When an ogre boss barks out commands, the other members of the family move quickly to obey.</p>\n<hr />\n<p>For many societies, ogres embody brutish, amoral violence and greedy cruelty. Standing 10 feet tall and densely muscled, ogres are usually as strong as they are vicious. The worst ogres are sadists, enjoying remorseless murder, torture, and violence in all of its forms. Although they prefer to vent their violent urges on other humanoids—the smaller the better—ogre captivity can end in a horrifying fate for anyone unlucky enough to fall within their meaty grasp: becoming dinner. But for all their creativity in inflicting pain, ogres often forget that their playthings lack their own robust fortitude and high pain tolerance, and many of their captives die sooner than the ogres might prefer. Meanwhile, those who manage to survive captivity in an ogre's larder often emerge with lasting mental scars. A captive able to keep their wits about them, however, can sometimes trick the brutes by promising treasure, more plentiful food sources, or other crude amusements, taking advantage of an ogre's often-limited intellect to engineer opportunities to escape or gain revenge.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. The most powerful ogre in any family is the \"boss\"—usually the family's patriarch or matriarch—whom the other ogres in the family learn to quickly obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. Their lairs are filthy and frequently contain all-too-recognizable evidence of their depravity, along with assorted treasures stolen from past captives.</p>",
+      "items": {
+        "84jLWHxjKOaPmfbR": {
+          "description": "<p><strong>Requirements</strong> A creature in reach of the ogre's foot is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p><hr /><p><strong>Effect</strong> The ogre winds up and makes a powerful foot Strike against the prone creature. On a hit, the creature is additionally pushed 10 feet in a direction of the ogre's choice (20 feet on a critical hit).</p>",
+          "name": "Punting Kick"
+        },
+        "KxNiF9bYl6kA6FRd": {
+          "description": "<p>The ogre boss issues a command to hasten their fellows. Each ogre ally who hears and understands this command becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} until the end of that ally's next turn but can use the extra action only to Step or Stride.</p>",
+          "name": "Bellowing Command"
+        },
+        "cg8c4dIdBFiff9le": {
+          "description": "<p><strong>Trigger</strong> The ogre boss successfully @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trips} a creature using an ogre hook</p>\n<hr />\n<p><strong>Effect</strong> The ogre boss makes an ogre hook Strike against the creature they tripped.</p>",
+          "name": "Sweeping Hook"
+        },
+        "hKv1AwnnUkKPmYHN": {
+          "name": "Foot"
+        }
+      },
+      "name": "Hurkum"
+    },
+    "Ice Prison Trap": {
+      "description": "<p>Magical sensors trigger clockwork cryomisters to expel frigid air, freezing intruders and potentially encasing them in a block of ice.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:22] (expert) to disable the cryomisters, or @Check[arcana|dc:24] (expert) to trick the magical sensors, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 24) to counteract the sensors</p>",
+      "hazardReset": "<p>The trap resets after 10 minutes.</p>",
+      "hazardRoutine": "<p>(1 action) On its turn, the trap fills the area with frigid air, which deals @Damage[(2d8+7)[cold]] damage to creatures in the area. Creatures damaged must attempt a @Check[fortitude|dc:22] save. Clockwork soldiers and any creatures wearing a security badge are immune to this damage. The accumulating ice causes the floor in the area to become difficult terrain that lasts for 1 minute after the trap's routine ends.</p><hr><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target takes half damage and increases its @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} condition by 1.</p><p><strong>Failure</strong> The target takes full damage and increases its slowed condition by 1.</p><p><strong>Critical Failure</strong> The target takes double damage and increases its slowed condition by 2.</p><hr><p>Once a creature's actions are reduced to 0 by this slowed condition, the creature is completely encased in ice. The ice has Hardness 5 and 20 Hit Points, and its DC to @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open} is DC 22. Breaking the ice frees the creature and reduces their slowed condition by 1. Each round a creature is encased in ice, they take @Damage[(1d8+7)[cold]] damage (@Check[fortitude|dc:22|basic] save).</p>",
+      "name": "Ice Prison Trap"
+    },
     "Idebilor": {
       "description": "<p>Vrykolakas unleash their spawn upon the world to spread terror, plague, and suffering and to draw attention away from their masters.</p>",
       "items": {
@@ -512,6 +1055,53 @@
       "name": "Idebilor",
       "npcHp": "(void healing)"
     },
+    "Ilnaphrae": {
+      "description": "<p>Vampire counts rule their demesnes and subjects through a mix of fear and cruelty.</p>\n<hr />\n<p>Vampires are undead creatures that feed on the blood of the living.</p>",
+      "items": {
+        "AVpXnwBBGoOo68pw": {
+          "name": "Turn to Mist"
+        },
+        "AWS8p85NHI3IGL2n": {
+          "description": "<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait (@Check[will|dc:22]). The save DC uses the high spell DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>",
+          "name": "Dominate"
+        },
+        "KESgZ7EFPclSlLY8": {
+          "description": "<p><strong>Requirement</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Effect</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the vampire regains @Damage[10[healing]]{10 HP}, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>",
+          "name": "Drink Blood"
+        },
+        "KeTrwbKWih6HyuoM": {
+          "name": "Fast Healing 7"
+        },
+        "OgOkCo3ZpgcUbZr1": {
+          "name": "Vampire Vulnerabilities"
+        },
+        "QpzMidSalFaHGivw": {
+          "description": "<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<ul>\n<li><strong>Giant Bat</strong>\n<ul>\n<li><strong>Senses</strong> echolocation 40 feet,</li>\n<li><strong>Speed</strong> 20 feet, fly 30 feet,</li>\n<li><strong>Melee</strong> fangs +15 <strong>Damage</strong> 1d8+9 piercing</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+          "name": "Change Shape"
+        },
+        "TjOmyfilNvHKI58M": {
+          "name": "Children of the Night"
+        },
+        "YI0ylNDmvxevAqnt": {
+          "name": "Dominate (At Will) (See Dominate)"
+        },
+        "gRQ32Y4BWrQbWOlS": {
+          "name": "Coffin Restoration"
+        },
+        "iuyYNQtDMprDDoZH": {
+          "name": "Mist Escape"
+        },
+        "jnZDE6piOq3rzmdg": {
+          "description": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire servitor by donating some of their own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>A vampiric servitor is compelled to obey its creator, but if a vampire controls too many vampiric servitors at once (as determined by the GM), or if the servitor is a higher level than the vampire that created it, strongwilled servitors can free themselves by succeeding at a @Check[will|defense:will] saving throw against the vampire's Will DC.</p>",
+          "name": "Create Servitor"
+        },
+        "ziSz2omKZDCD4A0e": {
+          "name": "Claw"
+        }
+      },
+      "name": "Ilnaphrae",
+      "npcHp": "coffin restoration, fast healing 7, void healing"
+    },
     "Inizkar": {
       "items": {
         "04PnE46yDrZqUAAZ": {
@@ -548,6 +1138,56 @@
       },
       "name": "Inizkar",
       "npcAllSaves": "+1 circumstance to all saves vs. inhaled threats"
+    },
+    "Kaba": {
+      "description": "<p>Vampire counts rule their demesnes and subjects through a mix of fear and cruelty.</p>\n<hr />\n<p>Vampires are undead creatures that feed on the blood of the living.</p>",
+      "items": {
+        "5rkEaiJtmNiZ3g8v": {
+          "name": "Silver Arrows"
+        },
+        "AVpXnwBBGoOo68pw": {
+          "name": "Turn to Mist"
+        },
+        "AWS8p85NHI3IGL2n": {
+          "description": "<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait (@Check[will|dc:22]). The save DC uses the high spell DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>",
+          "name": "Dominate"
+        },
+        "KESgZ7EFPclSlLY8": {
+          "description": "<p><strong>Requirement</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Effect</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the vampire regains @Damage[10[healing]]{10 HP}, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>",
+          "name": "Drink Blood"
+        },
+        "KeTrwbKWih6HyuoM": {
+          "name": "Fast Healing 7"
+        },
+        "OgOkCo3ZpgcUbZr1": {
+          "name": "Vampire Vulnerabilities"
+        },
+        "QpzMidSalFaHGivw": {
+          "description": "<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<ul>\n<li><strong>Giant Bat</strong>\n<ul>\n<li><strong>Senses</strong> echolocation 40 feet,</li>\n<li><strong>Speed</strong> 20 feet, fly 30 feet,</li>\n<li><strong>Melee</strong> fangs +15 <strong>Damage</strong> 1d8+9 piercing</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+          "name": "Change Shape"
+        },
+        "TjOmyfilNvHKI58M": {
+          "name": "Children of the Night"
+        },
+        "YI0ylNDmvxevAqnt": {
+          "name": "Dominate (At Will) (See Dominate)"
+        },
+        "gRQ32Y4BWrQbWOlS": {
+          "name": "Coffin Restoration"
+        },
+        "iuyYNQtDMprDDoZH": {
+          "name": "Mist Escape"
+        },
+        "jnZDE6piOq3rzmdg": {
+          "description": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire servitor by donating some of their own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>A vampiric servitor is compelled to obey its creator, but if a vampire controls too many vampiric servitors at once (as determined by the GM), or if the servitor is a higher level than the vampire that created it, strongwilled servitors can free themselves by succeeding at a @Check[will|defense:will] saving throw against the vampire's Will DC.</p>",
+          "name": "Create Servitor"
+        },
+        "ziSz2omKZDCD4A0e": {
+          "name": "Claw"
+        }
+      },
+      "name": "Kaba",
+      "npcHp": "coffin restoration, fast healing 7, void healing"
     },
     "Kalakaigh": {
       "description": "<p>A kalakaigh is above all else a killer—a fiendish incarnation of the sin of murder. They typically form from the souls of mortals who, in life, pursued murder as an obsession, killing simply for the thrill of killing.</p><h2>Servants of Slaughter</h2><p>Kalakaighs often serve the demon lords Shax and Zura, but some remain stubbornly devoted to Nocticula, a legacy from her time spent as a patron of assassins. These demons cling to the hope that Nocticula will return as their queen, if only they can murder enough innocents in her name.</p>",
@@ -621,6 +1261,12 @@
       },
       "name": "Keeper of Ancorato"
     },
+    "Last Prayers of the Doomed": {
+      "description": "<p>Influenced by the last prayers of the dead, creatures experience extreme claustrophobia and batter at the walls and floor, desperate to escape, see the sun, and breathe fresh air—but their prayers go unanswered.</p>",
+      "hazardDisable": "<p>@Check[religion|dc:26] (expert) to disrupt the haunt through prayer, or @Check[deception|dc:26] or @Check[diplomacy|dc:26] DC 27 (expert) to convince the spirits you'll free them from this place</p>",
+      "hazardReset": "<p>The haunt reforms after 1 day.</p>",
+      "name": "Last Prayers of the Doomed"
+    },
     "Lesser Shadow Scamp": {
       "description": "<p>A pale blue head and paper-thin wings peek out from the cloud that clings to the air scamp. Air scamps are short-sighted and flighty, even relative to their kin; they are as likely to fly recklessly into battle as they are to whine in terror at a loud noise.</p>\n<hr />\n<p>Elemental scamps are bat-like critters marked by elemental powers. Scamps are dispatched from the Elemental Planes by more powerful residents or called to the Universe by neophyte summoners. All scamps have a hint of magical power due to a lingering connection to their home plane, which they largely use to pull simple pranks.</p>\n<p>Scamps rapidly form a pecking order of cleverness. Humanoids often confuse scamps when meeting such creatures for the first time. These confused scamps usually resort to an escalating series of pranks and mischief, seeing what they can get away with to establish their place in the hierarchy.</p>",
       "items": {
@@ -641,6 +1287,29 @@
       },
       "name": "Lesser Shadow Scamp",
       "npcHp": "fast healing 2 (in shadow)"
+    },
+    "Living Guard": {
+      "description": "<p>Often the younger offspring of minor nobility or those from long lines of trusted staff, palace guards are in charge of defending the royal family and their inner stronghold. Their days consist of guarding doorways, escorting nobles, and keeping those in their charge as safe as possible.</p><hr /><p>The denizens of a noble court are the most powerful people in a civilization, primed with wealth, station, and authority above the common people.</p>",
+      "items": {
+        "JVQnk3tWMv7fuQax": {
+          "name": "Fist"
+        },
+        "OfWomwkyJsv0dnzp": {
+          "name": "+2 to Perception to Initiative"
+        },
+        "OkhA2ahcwNqlYweN": {
+          "description": "<p><strong>Requirements</strong> The palace guard's last action was a successful halberd Strike</p><hr /><p><strong>Effect</strong> The palace guard attempts to @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition} the creature they hit using their halberd's reach. This attempt neither applies nor counts toward the guard's multiple attack penalty.</p>",
+          "name": "Crowd Control"
+        },
+        "hXy0j4ACQoHCnM0b": {
+          "description": "<p><strong>Trigger</strong> A creature attacks the palace guard's liege, and the liege is within the guard's melee reach</p><hr /><p><strong>Effect</strong> The liege gains a +2 circumstance bonus to AC against the triggering attack, and the palace guard gains a +2 circumstance bonus to attack and damage rolls until the end of their next turn.</p><hr /><p>@UUID[Compendium.pf2e.bestiary-effects.Item.vGW3GPd2HO2ecgJX]{Effect: Guard's Parry (Guard)}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.57gVKu4lxbGhBpQf]{Effect: Guard's Parry (Liege)}</p>",
+          "name": "Guard's Parry"
+        },
+        "t6XJOXNfa5XsgeQT": {
+          "name": "Chain Mail with Nin's Sigil"
+        }
+      },
+      "name": "Living Guard"
     },
     "Losko": {
       "description": "<p>These skeletons retain the cunning they possessed in life.</p>\n<hr />\n<p>Animated skeletons are among the most common types of undead.</p>",
@@ -669,6 +1338,12 @@
       "name": "Losko",
       "npcAc": "(21 with shield raised)",
       "npcHp": "void healing"
+    },
+    "Meddler's Muddle": {
+      "description": "<p>A rune hidden in the door's decorative carvings delivers a telepathic jolt, draining will and muddling the mind.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:26] (expert) to scratch out the rune without triggering a mental assault, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 24) to counteract the rune</p>",
+      "hazardReset": "<p>The trap resets after 1 minute.</p>",
+      "name": "Meddler's Muddle"
     },
     "Miranette": {
       "description": "<p>Succubi are manifestations of the sin of destructive lust, and they are the most attractive of all demons—as befits their role in seducing mortals to fall to sin. The concept of gender is fluid to a succubus, as they can adopt countless humanoid forms of any gender to aid in their goals. Most succubi have a feminine true form (incubi, which usually have a masculine true form, are a different kind of demon), but regardless of gender, a lust demon is supernaturally beautiful or handsome, but with curving horns, bat wings, sharp claws, and a sinuous tail.</p>\n<p>When disguised as a mortal humanoid in the Universe, a succubus whispers into the ears of mortals, urging them to pursue their darkest and most destructive desires and pushing them into depravity, using magic only if persuasion fails. While mortals often fixate on succubi's application of sexual lust, these demons are can easily exploit lust for power, knowledge, fame, or any other desire as easily as more carnal appetites. Their ability to infiltrate societies makes them excellent spies, assassins, and political saboteurs as well. Ultimately, the succubus enjoys all means of upending mortal culture.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Outer Rifts, it can become a deadly fiend—a demon. Demons are living incarnations of sin—be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold—the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Outer Rifts.</p>\n<p>Demons are selfish and self-absorbed creatures, and most firmly believe that mortals only play at being more virtuous than fiends. They enjoy tempting mortals into damnation to both indulge their egos and swell their armies. Like many other fiends, one of the great rewards of this manipulation is fulfilling their hunger for souls. In their eyes, the primary use for these souls is to spawn new demons, who can serve as soldiers, slaves, pawns, or even currency for their more powerful masters.</p>",
@@ -771,6 +1446,13 @@
       "npcAllSaves": "+2 status to all saves vs. disease and poison",
       "npcHp": "fast healing 5"
     },
+    "Mournful Petals Haunt": {
+      "description": "<p>A flurry of scattered flower petals flies through the area, as psychic impressions of pain, sorrow, and being trapped assail the living—Mirida's scattered memories.</p>",
+      "hazardDisable": "<p>@Check[occultism|dc:31] or @Check[religion|dc:31] (expert) to weaken the haunt, @Check[deception|dc:29] or @Check[diplomacy|dc:29] (expert) to soothe the haunt's sorrow; three total successes in any combination are required to disable the haunt.</p>",
+      "hazardReset": "<p>The petals disperse after 1 minute and reset after 1 day.</p>",
+      "hazardRoutine": "<p>(1 action) The flower petals surge through the room, dealing @Damage[(2d10+13)[slashing]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:32|basic] save). A creature that fails is additionally @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure).</p>",
+      "name": "Mournful Petals Haunt"
+    },
     "Nalushae Meronis": {
       "items": {
         "8mDYuwfz5YSsp75a": {
@@ -847,6 +1529,175 @@
       },
       "name": "Netherworld Vampire Bat Swarm"
     },
+    "Nizca Iricol": {
+      "items": {
+        "8NfvLUkSUAaBGrJm": {
+          "name": "Nin Lore"
+        },
+        "9FhTozc0emmgtRl8": {
+          "name": "Fast Healing 10"
+        },
+        "AaEl1e2KQhllzhbM": {
+          "description": "<p>If the next action Nizca uses is to Cast a Spell that has a range, increase that spell's range by 30 feet.</p>",
+          "name": "Reach Spell"
+        },
+        "DiVqq1FBROhFlPE1": {
+          "name": "Coffin Restoration"
+        },
+        "G4FCB6DURFJyJ3bB": {
+          "description": "<p>Nizca siphons death through a melee attack and into their foe. Nizca expends a harm spell and makes a melee Strike. On a hit, they cast the 1-action version of the expended spell to damage the target, in addition to the normal damage from the Strike. The target automatically gets a failure on its save (or a critical failure if Nizca's Strike was a critical hit). The spell doesn't have the manipulate trait when cast this way.</p>",
+          "name": "Channel Smite"
+        },
+        "ReiIl1G2FuRQbkK4": {
+          "name": "Claw"
+        },
+        "TasWo0cIxCFzu6Lb": {
+          "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the strigoi's reach</p><hr /><p><strong>Effect</strong> The strigoi sinks their fangs into the targeted creature to drink its blood and draw out its vital essence. This requires an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC if the creature is grabbed and is automatic for any of the other conditions. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, and the strigoi regains @Damage[15[healing]] HP, gaining any excess HP as temporary Hit Points. Drinking Essence from a creature that's already drained or stupefied doesn't restore any HP, but increases either the creature's drained condition value or its stupefied condition value by 1 (whichever value is lesser is increased; if both values are equal, then the strigoi chooses which condition to increase the value of).</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful @Check[medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>\n<p>A victim's stupefied condition decreases by 1 per day after performing daily preparations. If the daily preparations are done in full sunlight, the stupefied condition is removed entirely.</p>",
+          "name": "Drink Essence"
+        },
+        "YN75ueLVWtEFaCcE": {
+          "description": "<p>20 feet. The shadows around Nizca constantly shift and roil, battering their foes. Enemies treat the area within the aura as difficult terrain.</p>",
+          "name": "Roiling Shades"
+        },
+        "dWWIvPy0xCFHcicj": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.sRfSBHWHdbIa0aGc]{Chilling Darkness}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Scroll of Chilling Darkness (Rank 5)"
+        },
+        "kJpUxQRqbuTKIF3P": {
+          "description": "<p><strong>Trigger</strong> Nizca is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> Nizca uses Shadow Form, then flies into the shadow beacon even though they're at 0 Hit Points. While at 0 Hit Points in this form, Nizca is unaffected by further damage. Once they reach the shadow beacon, their spirit becomes permanently fused with it and is destroyed only when the shadow beacon is destroyed.</p>",
+          "name": "Spiteful Escape"
+        },
+        "kOjSBIe1H1ZlQbqx": {
+          "description": "<p><strong>Trigger</strong> Nizca is the target of a Strike or would attempt a Reflex save against a harmful effect</p><hr /><p><strong>Effect</strong> In a flash of sudden insight, Nizca calculates the trajectory of the attack, slips into shadows, and reemerges just out of the way. Nizca gains a +2 circumstance bonus to AC against the triggering Strike or to Reflex saves against the triggering effect. After the attack or effect is resolved, Nizca teleports to an occupied space within 20 feet.</p>\n<p><strong>Special</strong> If the triggering Strike was a hit or a critical hit, or Nizca failed or critically failed the saving throw against the triggering effect, this use of Calculated @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} retroactively counts as a free action, rather than a reaction.</p>",
+          "name": "Calculated Escape"
+        },
+        "nFoYaUlzD7DCYYKk": {
+          "name": "Azlanti Lore"
+        },
+        "o1CF1KO4mU01pNHM": {
+          "name": "Magitech Lore"
+        },
+        "vNVcAPMquAwezLhc": {
+          "name": "Strigoi Weaknesses"
+        }
+      },
+      "name": "Nizca Iricol",
+      "npcHp": "coffin restoration, fast healing 10, void healing",
+      "npcSpeed": "fly on manifested batlike wings of shadow"
+    },
+    "Ogenni": {
+      "description": "<p>In ogre society, might makes more than right—it makes the rules. The strongest or most violent ogre in a family (in most cases, this is the same ogre) is invariably that family's boss. Quick to hook fallen foes on their weapons, even other ogres fear the repercussions of displeasing an ogre boss. When an ogre boss barks out commands, the other members of the family move quickly to obey.</p>\n<hr />\n<p>For many societies, ogres embody brutish, amoral violence and greedy cruelty. Standing 10 feet tall and densely muscled, ogres are usually as strong as they are vicious. The worst ogres are sadists, enjoying remorseless murder, torture, and violence in all of its forms. Although they prefer to vent their violent urges on other humanoids—the smaller the better—ogre captivity can end in a horrifying fate for anyone unlucky enough to fall within their meaty grasp: becoming dinner. But for all their creativity in inflicting pain, ogres often forget that their playthings lack their own robust fortitude and high pain tolerance, and many of their captives die sooner than the ogres might prefer. Meanwhile, those who manage to survive captivity in an ogre's larder often emerge with lasting mental scars. A captive able to keep their wits about them, however, can sometimes trick the brutes by promising treasure, more plentiful food sources, or other crude amusements, taking advantage of an ogre's often-limited intellect to engineer opportunities to escape or gain revenge.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. The most powerful ogre in any family is the \"boss\"—usually the family's patriarch or matriarch—whom the other ogres in the family learn to quickly obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. Their lairs are filthy and frequently contain all-too-recognizable evidence of their depravity, along with assorted treasures stolen from past captives.</p>",
+      "items": {
+        "84jLWHxjKOaPmfbR": {
+          "description": "<p><strong>Requirements</strong> A creature in reach of the ogre's foot is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p><hr /><p><strong>Effect</strong> The ogre winds up and makes a powerful foot Strike against the prone creature. On a hit, the creature is additionally pushed 10 feet in a direction of the ogre's choice (20 feet on a critical hit).</p>",
+          "name": "Punting Kick"
+        },
+        "KxNiF9bYl6kA6FRd": {
+          "description": "<p>The ogre boss issues a command to hasten their fellows. Each ogre ally who hears and understands this command becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} until the end of that ally's next turn but can use the extra action only to Step or Stride.</p>",
+          "name": "Bellowing Command"
+        },
+        "cg8c4dIdBFiff9le": {
+          "description": "<p><strong>Trigger</strong> The ogre boss successfully @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trips} a creature using an ogre hook</p>\n<hr />\n<p><strong>Effect</strong> The ogre boss makes an ogre hook Strike against the creature they tripped.</p>",
+          "name": "Sweeping Hook"
+        },
+        "hKv1AwnnUkKPmYHN": {
+          "name": "Foot"
+        }
+      },
+      "name": "Ogenni"
+    },
+    "Okoa": {
+      "items": {
+        "1nTecCfw8mCHs7pF": {
+          "name": "Coffin Restoration"
+        },
+        "7Tl6fw29y8oM1OEu": {
+          "name": "Claw"
+        },
+        "9hemE5bYIpubSQrc": {
+          "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the strigoi's reach</p><hr /><p><strong>Effect</strong> The strigoi sinks their fangs into the targeted creature to drink its blood and draw out its vital essence. This requires an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC if the creature is grabbed and is automatic for any of the other conditions. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, and Okoa regains @Damage[13[healing]] HP, gaining any excess HP as temporary Hit Points. Drinking Essence from a creature that's already drained or stupefied doesn't restore any HP, but increases either the creature's drained condition value or its stupefied condition value by 1 (whichever value is lesser is increased; if both values are equal, then the strigoi chooses which condition to increase the value of).</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful @Check[medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>\n<p>A victim's stupefied condition decreases by 1 per day after performing daily preparations. If the daily preparations are done in full sunlight, the stupefied condition is removed entirely.</p>",
+          "name": "Drink Essence"
+        },
+        "AkXS62YTAYOPqg6G": {
+          "name": "Fast Healing 10"
+        },
+        "KK3OJR7cHs7JClcB": {
+          "description": "<p>Okoa reverts to pure shadow and absorbs her body and her gear into the darkness, or it shifts back to her physical form. In shadow form, Okoa gains a climb Speed equal to her land Speed and can more through any gap that isn't airtight. However, she can only move along solid surfaces that aren't highly reflective, not liquid or mirrored surfaces. If the surface she's on is destroyed, Okoa returns to physical form and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. She loses fast healing while in shadow form but can remain in shadow form indefinitely.</p>\n<p>If Okoa is exposed to sunlight while in shadow form, she becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and must attempt a @Check[flat|dc:16] at the end of each of her turns. If she fails, she is destroyed, the shadow vanishing with a blood-curdling wail.</p>",
+          "name": "Shadow Form"
+        },
+        "Qi4aJhbQtGeaKymb": {
+          "name": "Levitate (At Will)"
+        },
+        "clcBXuY5I7HmG2D6": {
+          "name": "Beaded Earrings"
+        },
+        "hNYanj2AZ3B8MkLd": {
+          "description": "<p>Okoa makes two claw Strikes at the same target, each using her current multiple attack penalty. If both attacks hit, the target is also dealt @Damage[1d8[persistent,bleed]] damage.</p>",
+          "name": "Vicious Flurry"
+        },
+        "jvDJ9LAWgptMy3ZR": {
+          "name": "Nin Lore"
+        },
+        "qAmIcePvvY6ixAmy": {
+          "name": "Strigoi Weaknesses"
+        },
+        "rDrZT4IDo1LIXt22": {
+          "description": "<p>Okoa becomes a semi-incorporeal shade, then Strides or Flies up to twice her Speed in a straight line, dealing @Damage[8d8[slashing]|options:area-damage] damage to all creatures in that line or adjacent to that line (@Check[reflex|dc:28|basic] save). She can move through enemies and solid objects during this movement. At the end of this movement, she returns to her fully corporeal form. She can't use Strafing Strike again for [[/gmr 1d4 #Recharge Strafing Strike]]{1d4 rounds}.</p>",
+          "name": "Strafing Strike"
+        },
+        "vbeiMvrJRvbxVuY2": {
+          "name": "Netherworld Lore"
+        }
+      },
+      "name": "Okoa",
+      "npcHp": "coffin restoration, fast healing 10, void healing"
+    },
+    "Onak": {
+      "description": "<p>Dero stranglers specialize in capturing living victims, and they are often called upon to aid in abductions.</p>\n<hr />\n<p>Deros are short, wiry humanoids with milky white eyes, gray-blue skin, and wild shocks of off-white or gray hair. The descendants of a mysterious type of fey abandoned in the deepest, darkest caverns of Golarion, deros are the subject of fearful legends and folk tales to most of the world's surface races. They skulk beneath major metropolitan areas, performing cruel and twisted experiments on unwilling subjects.</p>\n<p>Deros, particularly the leading magisters, are fixated with curing their allergy to sunlight. To understand how the surface dwellers can withstand the light of the sun, deros conduct late-night raids on surface cities, abducting victims and performing terrible experiments on them. Those who survive are often returned with much of their memory erased and their bodies bearing mysterious scars.</p>\n<p>The largest dero settlements are built around esoteric machines of floating crystals. As these crystals grind against each other and hum with sickening blue energy, crystal flakes and powdery residue collect beneath the machinery. Dero magisters gather these products, creating tools and repurposing the crystals to power magical items.</p>",
+      "items": {
+        "6EHsEm9VBUy6EEGh": {
+          "description": "<p>These healer's toolkits are collections of crystalline scalpels and gritty salves made of cytillesh. They all glow the same sickly blue. While the toolkit is outside its opaque container, it sheds dim light in a 5-foot radius. Any non-dero using or wearing the toolkit is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until 1 hour after they've stopped, which cannot be reduced during that time.</p>\n<hr />\n<p>This kit of bandages, herbs, and suturing tools is necessary for Medicine checks to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}, @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, or @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. If you wear your healer's toolkit, you can draw and replace it as part of the action that uses it.</p>",
+          "name": "Cytillesh Toolkit"
+        },
+        "HCUXasleODboE32A": {
+          "description": "<p>A non-dero living creature that starts its turn @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the strangler is exposed to the sickly blue light from the strangler's cytillesh toolkit. It must succeed at a @Check[fortitude|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. This has no effect if the strangler isn't wearing the toolkit.</p>",
+          "name": "Ill Glow"
+        },
+        "ZDJkjnIor7qxsiSU": {
+          "description": "<p><strong>Requirements</strong> The dero must have two free hands or be wielding a spiked chain</p>\n<hr />\n<p><strong>Effect</strong> The dero attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} with a +2 circumstance bonus. On a success, the target also takes @Damage[(1d6+6)[bludgeoning]] damage and can't speak (including to Cast a Spell) as long as they're @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>",
+          "name": "Strangle"
+        },
+        "qwNhCiHQVyMkQrfX": {
+          "description": "<p><strong>Requirements</strong> The dero is wearing a cytillesh toolkit and has a hand free</p>\n<hr />\n<p><strong>Effect</strong> The dero excises damaged flesh and crudely stitches wounds shut, healing themself or an ally in reach for @Damage[2d8[healing]]{2d8 Hit Points}. For 1 hour, the target has slashing weakness 2 and is immune to Dero Medicine.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vqKBIflXiAmCx5QQ]{Effect: Dero Medicine}</p>",
+          "name": "Dero Medicine"
+        },
+        "uldVZLVdwiLD1q6v": {
+          "description": "<p>A dero strangler takes @Damage[8[untyped]] damage for every hour they're exposed to sunlight.</p>",
+          "name": "Vulnerable to Sunlight"
+        }
+      },
+      "name": "Onak"
+    },
+    "Paralysis Trap": {
+      "description": "<p>Magical symbols carved in the doorframe magically ward this door; anyone attempting to pick the lock is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} and wracked with pain. Disabling or breaking the trap does not disable or break the lock.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:28] (expert) to scratch out the magical symbols, @Check[arcana|dc:28] (expert) to safely siphon the magical energy, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 26)</p><p><strong>Bypass</strong> Anyone other than Mirida turns the door handle three times to the right and once to the left in quick succession.</p>",
+      "hazardReset": "<p>The trap automatically resets. It doesn't reset if the trap is disabled.</p>",
+      "name": "Paralysis Trap"
+    },
+    "Prism Ray Trap": {
+      "description": "<p>Four magical prisms integrated into an aeon stone matrix fire energy beams at intruders. The trap doesn't target creatures wearing <em>security badges</em>, or in the custody of a creature wearing a <em>security badge</em>.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:23] (expert) to disconnect one prism from the aeon stone matrix, or @Check[arcana|dc:21] (trained) to disrupt one prism's magical energy, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 23) to counteract one prism; four total successes are required to disable the trap.</p>",
+      "hazardReset": "<p>The trap deactivates and resets when there are no viable targets in area <strong>A1</strong>. Damaged prisms are fully repaired after 24 hours.</p>",
+      "hazardRoutine": "<p>(4 actions) Each prism uses 1 action to make an energy ray Strike against the nearest creature who is not wearing a <em>security badge</em> or in the custody of a creature wearing a <em>security badge</em>. This trap doesn't take a multiple attack penalty. This trap loses 1 action for each prism disabled or destroyed.</p>",
+      "name": "Prism Ray Trap"
+    },
+    "Punish Defiance": {
+      "description": "<p>A magical mural threatens uncooperative inmates, causing mental trauma.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:26] (expert) to deactivate the mural, or @Check[arcana|dc:26] (trained) to disrupt the mural's magic, or @Check[deception|dc:24] (trained) to pose as a superior and order the mural to deactivate, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 24) to counteract the mural</p>",
+      "hazardReset": "<p>1 hour.</p>",
+      "hazardRoutine": "<p>(1 action) On its turn, the trap threatens all living creatures in the room, dealing @Damage[(3d6+5)[mental]] damage (@Check[will|dc:22|basic] save).</p>",
+      "name": "Punish Defiance"
+    },
     "Romi Bracken": {
       "items": {
         "786s9qAvCQ6v1Ifu": {
@@ -899,6 +1750,87 @@
       },
       "name": "Romi Bracken"
     },
+    "Rukh": {
+      "items": {
+        "1nTecCfw8mCHs7pF": {
+          "name": "Coffin Restoration"
+        },
+        "7Tl6fw29y8oM1OEu": {
+          "name": "Claw"
+        },
+        "8aX9xWVc94FRZnbO": {
+          "description": "<p><strong>Requirements</strong> Rukh's last action was to cast a non-cantrip spell that granted him a blood magic effect</p><hr /><p><strong>Effect</strong> Rukh makes a ranged spell attack roll against the AC of a target within 60 feet. This attack deals persistent bleed damage equal to the rank of the spell he just cast.</p>",
+          "name": "Bleed Out"
+        },
+        "9hemE5bYIpubSQrc": {
+          "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the strigoi's reach</p><hr /><p><strong>Effect</strong> The strigoi sinks their fangs into the targeted creature to drink its blood and draw out its vital essence. This requires an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC if the creature is grabbed and is automatic for any of the other conditions. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, and Rukh regains @Damage[13[healing]] HP, gaining any excess HP as temporary Hit Points. Drinking Essence from a creature that's already drained or stupefied doesn't restore any HP, but increases either the creature's drained condition value or its stupefied condition value by 1 (whichever value is lesser is increased; if both values are equal, then the strigoi chooses which condition to increase the value of).</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful @Check[medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>\n<p>A victim's stupefied condition decreases by 1 per day after performing daily preparations. If the daily preparations are done in full sunlight, the stupefied condition is removed entirely.</p>",
+          "name": "Drink Essence"
+        },
+        "AkXS62YTAYOPqg6G": {
+          "name": "Fast Healing 10"
+        },
+        "KK3OJR7cHs7JClcB": {
+          "description": "<p>Rukh reverts to pure shadow and absorbs her body and her gear into the darkness, or it shifts back to her physical form. In shadow form, Rukh gains a climb Speed equal to her land Speed and can more through any gap that isn't airtight. However, she can only move along solid surfaces that aren't highly reflective, not liquid or mirrored surfaces. If the surface she's on is destroyed, Rukh returns to physical form and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. She loses fast healing while in shadow form but can remain in shadow form indefinitely.</p>\n<p>If Rukh is exposed to sunlight while in shadow form, she becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and must attempt a @Check[flat|dc:16] at the end of each of her turns. If she fails, she is destroyed, the shadow vanishing with a blood-curdling wail.</p>",
+          "name": "Shadow Form"
+        },
+        "Qi4aJhbQtGeaKymb": {
+          "name": "Levitate (At Will)"
+        },
+        "VQ0wqA7unG7pdHbb": {
+          "name": "Nin Lore"
+        },
+        "ZxSAP8Gbs9ALeYbf": {
+          "description": "<p>When Rukh casts a bloodline spell using a Focus Point or a sorcerous gift spell using a spell slot, either one target takes a –1 status penalty to Will saving throws for 1 round, or Rukh gains a +2 status bonus to Will saving throws for 1 round.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.UQ7vZgmfK0VSFS8A]{Effect: Aberrant Blood Magic}</p>\n<p><strong>Sorcerous gift spells</strong></p><ul><li>@UUID[Compendium.pf2e.spells-srd.Item.xFp4EwVcYwSG336t]{Slither}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY]{Confusion}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Feast}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]{Stupefy}</li><li>@UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]{Phantom Pain}</li></ul>",
+          "name": "Blood Magic—Eerie Veil"
+        },
+        "clcBXuY5I7HmG2D6": {
+          "name": "Beaded Amulet"
+        },
+        "gwtoZrdJkLeTK5Yi": {
+          "description": "<p>If the next action Rukh takes is to Cast a Spell that has a range, increase that spell's range by 30 feet.</p>",
+          "name": "Reach Spell"
+        },
+        "nMLkSeE8xR0z3SLZ": {
+          "name": "Netherworld Lore"
+        },
+        "pKLLWTF3KXiHssKB": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Scroll of Grim Tendrils (Scroll Robe, Rank 4)"
+        },
+        "qAmIcePvvY6ixAmy": {
+          "name": "Strigoi Weaknesses"
+        }
+      },
+      "name": "Rukh",
+      "npcHp": "coffin restoration, fast healing 10, void healing"
+    },
+    "Shadow Discharge": {
+      "description": "<p>The <em>shadow beacon's</em> operation causes harmful energy to blast out of the base of the device.</p>",
+      "hazardDisable": "<p>@Check[crafting|dc:27] or @Check[thievery|dc:27] (master) to rig a dispersal system, or @Check[arcana|dc:27], @Check[nature|dc:27], @Check[occultism|dc:27], or @Check[religion|dc:27] (master) to safely vent the magical energy; four total successes in any combination to disable</p><hr><p><strong>Special</strong> Disabling the shadow discharge does not disable the shadow beacon.</p>",
+      "hazardRoutine": "<p>(1 action) The shadow beacon fires shadows into the sky, discharging excess energy out of the device's lower half. The trap deals @Damage[4d6[cold],4d6[void]|options:area-damage] damage to all non-shadow creatures in a @Template[type:emanation|distance:60] from the base of the device (@Check[fortitude|dc:26|basic] save). For each successful check to disable the trap, the cold and void damage dealt by the trap on subsequent rounds are both reduced by 1d6 damage (see below). A creature that fails their save is pushed back 10 feet (15 feet on a critical failure).</p><p>@Damage[3d6[cold],3d6[void]|options:area-damage]</p><p>@Damage[2d6[cold],2d6[void]|options:area-damage]</p><p>@Damage[1d6[cold],1d6[void]|options:area-damage]</p>",
+      "name": "Shadow Discharge"
+    },
+    "Shadow-Tainted Pachycephalosaurus": {
+      "description": "<p>Pachycephalosauruses are normally peaceful, herbivorous dinosaurs, but they grow much more violent during mating season, when they fight one another to win over mates and warn away interlopers. They also defend themselves vehemently if potential predators stray too close to their herd. The pachycephalosaurus's skull has a distinctive dome-shaped crown surrounded by numerous blunt, bony horns. This feature, combined with the dinosaur's powerful, compact neck, allows it to make battering-ramlike charges capable of inflicting great damage.</p>\n<p>Some humanoid groups have successfully trained pachycephalosauruses as mounts, but the creatures aren't particularly well suited to the task.</p>\n<p>Pachycephalosauruses grow to a length of 15 feet and weigh 1,400 pounds.</p>\n<hr />\n<p>Remnants from the world's primeval era, these enormous reptilian animals still exist in large numbers in remote wildernesses or underground in magical Darklands caverns. Lizardfolk, orcs, giants, and other humanoids who live near dinosaurs use the animals as mounts, guards, or hunting beasts. Occasionally, rich nobles will collect dinosaurs to display them in menageries, which almost inevitably leads to cast-offs being nursed back to health by druids and other champions of nature. When dinosaurs establish themselves in regions outside their normal habitats, it's often the result of a large collection being released.</p>",
+      "items": {
+        "LdOnPETCnA6osTi8": {
+          "description": "<p>The pachycephalosaurus has a coughing fit, expelling a @Template[type:cone|distance:30] of sludge-like shadows from its mouth. This deals @Damage[(4d8-2)[void]] damage with a @Check[reflex|dc:18|basic] save. A creature that critically fails their save is additionally @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/gmr 1d4 #rounds]]{1d4 rounds}. The pachycephalosaurus can't use Shadow Expulsion again for [[/gmr 1d4 #Recharge Shadow Expulsion]]{1d4 rounds}.</p>",
+          "name": "Shadow Expulsion"
+        },
+        "WpPQsA9BHFxmr54k": {
+          "name": "Skull"
+        },
+        "aFiPts0pbbuzRaLf": {
+          "description": "<p><strong>Trigger</strong> The pachycephalosaurus damages a Medium or smaller foe with its skull Strike</p>\n<hr />\n<p><strong>Effect</strong> The pachycephalosaurus digs in and flings its head up, shoving its foe away. It attempts an @Check[athletics|defense:fortitude] check against the target's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The pachycephalosaurus pushes the opponent up to 10 feet away from itself and knocks the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Success</strong> The pachycephalosaurus pushes the opponent back 5 feet.</p>\n<p><strong>Failure</strong> The pachycephalosaurus fails to push the opponent.</p>\n<p><strong>Critical Failure</strong> As failure, but the failed attempt leaves the pachycephalosaurus @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>",
+          "name": "Sudden Shove"
+        },
+        "uAKDE9WbARcraQJx": {
+          "description": "<p>The pachycephalosaurus Strides up to its Speed. If it ends its movement within melee reach of a target, it can make a skull Strike against that target. If the pachycephalosaurus critically hits with this Strike, the creature hit is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>",
+          "name": "Clobbering Charge"
+        }
+      },
+      "name": "Shadow-Tainted Pachycephalosaurus"
+    },
     "Shankfingers": {
       "description": "<p>Redcaps are sadistic and capricious fey who thrill in bloodletting and murder. While they are most famous for appearing as wizened, bearded men, redcaps of other genders are no less fearsome or cruel. However, redcaps are ultimately craven bullies, cowed by anything more powerful than themselves, a trait that leads them to fear and despise the symbols of deities.</p>\n<p>Many fairy tales explain how the redcaps draw power from dipping the hats for which they are named in fresh blood. Just as iconic to these cruel little fey are their iron-clad boots, and the clanging sound of their metal soles clanking on stone floors is both discordant and disconcerting—especially to those who recognize the sound for what it is. Redcaps typically stand only 3 feet tall, with hunched frames, pointed ears, crooked teeth, and long, white, tangled hair.</p>\n<p>Though unlikely to share true affection, redcaps find camaraderie in murder. Small troupes of redcaps travel together, sharing bloody kills and reminiscing on their brutal exploits. They loathe the company of most other creatures, with the notable exception of the feline fey called elananxes.</p>",
       "items": {
@@ -940,6 +1872,75 @@
       },
       "name": "Shankfingers",
       "npcHp": "fast healing 10"
+    },
+    "Shocking Malfunction": {
+      "description": "<p>The <em>shadow beacon</em> malfunctions, firing bolts of electricity across the battlefield.</p>",
+      "hazardDisable": "<p>@Check[crafting|dc:25] or @Check[thievery|dc:25] (master) to ground the device, or @Check[arcana|dc:25], @Check[nature|dc:25], @Check[occultism|dc:25], or @Check[religion|dc:25] (master) to safely vent the magical energy; three total successes in any combination to disable</p><p><strong>Special</strong> Disabling the shocking malfunction does not disable the shadow beacon.</p>",
+      "hazardRoutine": "<p>(3 actions) The shadow beacon makes three electric bolt Strikes at random creatures within 100 feet. One of these Strikes targets either Deg or Nizca, and the other two target PCs. The trap loses 1 action for each successful disable.</p>",
+      "name": "Shocking Malfunction"
+    },
+    "Silvered Retribution": {
+      "description": "<p>Pressure plates in the floor, wall, and ceiling of this hall trigger silver blades to protrude from the ceiling, slashing anything passing through the hall.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:28] (master) to disable the pressure plates; two successes are required to disable the trap</p>",
+      "hazardReset": "<p>The trap deactivates after 1 minute and can be manually reset.</p>",
+      "hazardRoutine": "<p>(2 actions) The maze of blades continues to spin, jab, and slash, dealing @Damage[(2d10+13)[slashing]|traits:magical|options:damage:material:silver,area-damage] damage (magic, silver) to all creatures in the area (@Check[reflex|dc:28|basic] save).</p>",
+      "name": "Silvered Retribution"
+    },
+    "Stinkface Surprise": {
+      "description": "<p>A pile of excrement and rotten food is launched at whoever opens the trunk without first depressing a hidden button on the side of the trunk.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:26] (expert) to unhook the launch spring</p>",
+      "name": "Stinkface Surprise"
+    },
+    "Tokainen": {
+      "items": {
+        "3AYukGreHed2sC83": {
+          "name": "Religious Symbol (Nin)"
+        },
+        "CSZRuQT3XbqK8fmW": {
+          "name": "Fist"
+        },
+        "LZn2iQ0qoNvdoEAa": {
+          "name": "+2 Circumstance to All Saves Vs. Disease"
+        },
+        "Ns0UejYzkMJbPnx2": {
+          "description": "<p>Tokainen screams in rage, channeling the cataclysmic fury of Scal into her own body as she Interacts to draw a weapon. While she is in this stance, Tokainen gains fast healing 5, immunity to fire, her melee Strikes deal an additional 2d8 fire damage, and she gains access to her Spiral Swing ability. While Tokainen is in this stance, she can't cast spells.</p>",
+          "name": "Channel Cataclysm"
+        },
+        "Xd9KhQKXQuIVz96m": {
+          "description": "<p><strong>Trigger</strong> Tokainen would be damage by an adjacent creature</p><hr /><p><strong>Effect</strong> Tokainen's flesh flares with scouring flames, dealing @Damage[1d4[fire]] damage to all adjacent enemies (@Check[reflex|dc:28|basic] save; increased to @Damage[2d8[fire]] damage if Tokainen is using Channel the Cataclysm stance).</p>",
+          "name": "Retaliatory Flare"
+        },
+        "YtkmxIDb60rfTrqx": {
+          "description": "<p><strong>Requirements</strong> Tokainen is wielding her meteor hammer and is in Channel Cataclysm stance</p><hr /><p><strong>Effect</strong> Tokainen swings her meteor hammer in a wide circle, dealing @Damage[4d8[bluedgeoning],4d8[fire]] damage to each enemy in a @Template[emanation|distance:10]. Tokainen can't use Spiral Swing again for [[/gmr 1d4 #Recharge Spiral Swing]]{1d4 rounds}.</p>",
+          "name": "Spiral Swing"
+        },
+        "d3LyPtIJs0BSUXuL": {
+          "description": "<p>If your next action is to cast @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}, any living creature that fails its save against that spell is dealt @Damage[1d6[persistent,bleed]] damage. In addition, if that version of <em>harm</em> has an area, you can designate up to 5 living creatures in the area; they're not affected by that casting of <em>harm</em>.</p>",
+          "name": "Calculated Bloodletting"
+        },
+        "nNE4x5TnCowevTDP": {
+          "name": "Religious Symbol (Scal)"
+        }
+      },
+      "name": "Tokainen",
+      "npcAllSaves": "+2 circumstance to all saves vs. disease",
+      "npcHp": "void healing"
+    },
+    "Tokainen's Chosen": {
+      "items": {
+        "5BaiTlvDW0CjvVmk": {
+          "name": "Fist"
+        },
+        "K22OPj81OCWubhRJ": {
+          "description": "<p>Using their guisarme, Tokainen's chosen makes a @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} and a Strike against a target in reach. They can make these attacks in any order, but both attacks must have the same target. Their multiple attack penalty doesn't increase until after both attacks are completed.</p>",
+          "name": "Take 'Em Down"
+        },
+        "xHHXSFTV9hLWYTCS": {
+          "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Tokainen's chosen activates the latent magic in their brand, then launches a ball of flames with a range of 60 feet that explodes in a @Template[type:burst|distance:10]. Creatures in the area take @Damage[6d6[fire]] damage (@Check[reflex|dc:22|basic] save). A creature that fails their save is additionally dealt @Damage[1d4[persistent,fire]] damage.</p>\n<p>For 1 minute, the brand's excess magic suffuses their hands, causing their fists and any weapons they wield to radiate a nimbus of fire, dealing an additional 1d10 fire damage on a Strike. While their hands radiate fire in this way, their fists lose the nonlethal trait.</p>",
+          "name": "Cataclysm Brand"
+        }
+      },
+      "name": "Tokainen's Chosen"
     },
     "Tormonshild": {
       "description": "<p>A tormonshild begins life as a tadpole-like creature hardly largely than a human finger. In this state, the tormonshild is virtually defenseless, but the magic that flows through its body allows it to grow quickly. After a few days, it swells into its more familiar adolescent form. A fully grown tormonshild resembles a two-foot-long frog with six legs, a mouth too large for its body, and flesh the color of a storm cloud. Once grown, the tormonshild decimates the local wildlife, sometimes attacking creatures up to twice its size. Being true omnivores, tormonshilds also feed on plants, preferring juicier crops like tomatoes and fruit. Many a villager has known the anguish of losing their livestock, gardens, and even a beloved pet to a tormonshild infestation.</p><hr /><p>Concentrations of intense magical energy often result in unusual weather phenomena, typically violent storms or other natural disasters, but sometimes they also create new entirely life-forms. Tormonshilds are born during artificially created storms, when magical energy combines with rainfall to transform the droplets themselves into living creatures. Tormonshilds rarely survive long after their creation; most meet grisly ends at the hands of local predators or dissolve as the magic that fuels their physical bodies fades. A tormonshild that survives its initial weeks of life eventually grows into a pest that menaces the local environment.</p><h2>Magical Rainstorms</h2><p>The rainstorms that produce tormonshilds occur more regularly than most people realize. However, as the majority of tormonshild tadpoles fail to reach maturity, the existence of tormonshilds remains virtually unknown outside of specific areas. While the Mana Wastes regularly experiences magical storms, the region is particularly inhospitable for these creatures. Such storms frequently happen throughout the islands of Azlant, however, and the magical energies that seep from the ancient ruins create conditions ideal for young tormonshilds.</p>",
@@ -1065,6 +2066,33 @@
         }
       },
       "name": "Vampire Servant",
+      "npcHp": "coffin restoration, fast healing 5, void healing"
+    },
+    "Vampire Servitor": {
+      "description": "<p>Vampires use their servitor pawns for infiltration and reconnaissance.</p>\n<hr />\n<p>Vampires are undead creatures that feed on the blood of the living.</p>",
+      "items": {
+        "1jREnmv7xdTiRRHp": {
+          "description": "<p>The servitor deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>",
+          "name": "Sneak Attack"
+        },
+        "RaYfxxlT031lUgCP": {
+          "name": "Coffin Restoration"
+        },
+        "fG5TPYbHYwwOdPbD": {
+          "name": "Claw"
+        },
+        "gxj7cGSco9mq9DF4": {
+          "name": "Fast Healing 5"
+        },
+        "hn5GBufYeA5C1oOg": {
+          "description": "<p><strong>Requirement</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Effect</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the vampire regains @Damage[5[healing]]{5 HP}, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>",
+          "name": "Drink Blood"
+        },
+        "mK3REH0Jcz0NP7Bh": {
+          "name": "Vampire Vulnerabilities"
+        }
+      },
+      "name": "Vampire Servitor",
       "npcHp": "coffin restoration, fast healing 5, void healing"
     },
     "Vikandian": {
@@ -1239,6 +2267,54 @@
       "name": "Vool",
       "npcAllSaves": "+2 status to all saves vs. disease and poison"
     },
+    "Vye": {
+      "description": "<p>Defiling the natural order and spitting in the face of convention, the necromancer remains dutifully committed to understanding what forces await beyond the mortal boundaries of life and death.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+      "items": {
+        "97BKY16vMkTbaNcV": {
+          "description": "<p><strong>Requirements</strong> The necromancer has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer commands all their undead entities to attack. Each entity can Stride up to 20 feet into an empty square and make a Strike. The Strike has a +15 attack modifier and deals @Damage[2d12[bludgeoning]|traits:magical] damage (or @Damage[2d12[spirit]|traits:magical]{spirit} damage if the entity is a spirit). The Strike has the magical trait, and no multiple attack penalty applies to it.</p>",
+          "name": "Undead, Attack!"
+        },
+        "H46hxAw250tadz3G": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]{False Vitality}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Scroll of False Vitality (Rank 3)"
+        },
+        "KNkiw6mO2XciMS75": {
+          "name": "Spellbook (Rites Of Rot)"
+        },
+        "QQXMLJd5WLldP21P": {
+          "description": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>",
+          "name": "Hooded Robe"
+        },
+        "XCtQzAvxzCKT6NIl": {
+          "description": "<p>The necromancer emits a scent of putrid rot in a @Template[type:emanation|distance:5]. A living creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>",
+          "name": "Stench of Decay"
+        },
+        "cQNgpbGJ2HqT0Q44": {
+          "name": "Fist"
+        },
+        "dlmisBHW3yYx7G8Q": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.0JWyMwVnLxX9CDYQ]{Rouse Skeletons}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Wand of Rouse Skeletons (Rank 3)"
+        },
+        "fTVTb9OtQsYeLjQr": {
+          "description": "<p>Vye takes @Damage[8[untyped]] damage for every hour she's exposed to sunlight.</p>",
+          "name": "Vulnerable to Sunlight"
+        },
+        "rVFoJRcx6HO33Y7g": {
+          "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.9s5tqqXNzcoKamWx]{Web}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
+          "name": "Scroll of Web (Rank 2)"
+        },
+        "tMnnKkqtdsnxMe99": {
+          "description": "<p>The necromancer summons two Medium undead entities in different empty squares up to 30 feet away. These undead entities can take the form of zombies, skeletons, or ghosts, chosen by the necromancer. The entities block movement as though they were creatures and can be attacked. Each entity has 1 Hit Point and the same AC and saves as the necromancer. They can't take actions of their own and deteriorate if the necromancer is reduced to 0 Hit Points. The necromancer can have up to four undead entities at any given time. If they call another, the oldest undead entity deteriorates.</p>",
+          "name": "Undead, Arise!"
+        },
+        "vUdceUlCZdmoJ5ZC": {
+          "description": "<p><strong>Requirements</strong> The necromancer isn't drained and has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer overloads their undead entities with void energy, causing all of them to explode. Each entity is destroyed, dealing @Damage[4d12[void]|options:area-damage] damage to each creature in a @Template[type:emanation|distance:10] with a @Check[fortitude|dc:23|basic|options:area-effect] save. A creature in more than one explosion is damaged only once. The necromancer becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>",
+          "name": "Wave of Death"
+        }
+      },
+      "name": "Vye"
+    },
     "Web Grub": {
       "description": "<p>Giant flies lay their eggs on the bodies of larger monsters or livestock. When they hatch, these eggs release squirming maggots the size of human children, ravenous young who voraciously consume any flesh in the immediate vicinity-typically starting with the body upon which they were born.</p>\n<hr />\n<p>Giant flies are pony-sized insects that have massive compound eyes and bodies bristling with short, stiff hairs. Their lairs are notorious for the rotting meat they stockpile to lay their eggs into. Their maggot-dens are also prime breeding grounds for virulent diseases.</p>",
       "items": {
@@ -1295,6 +2371,53 @@
       },
       "name": "Werebat Warrior"
     },
+    "Xarbaene": {
+      "description": "<p>Vampire counts rule their demesnes and subjects through a mix of fear and cruelty.</p>\n<hr />\n<p>Vampires are undead creatures that feed on the blood of the living.</p>",
+      "items": {
+        "AVpXnwBBGoOo68pw": {
+          "name": "Turn to Mist"
+        },
+        "AWS8p85NHI3IGL2n": {
+          "description": "<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait (@Check[will|dc:22]). The save DC uses the high spell DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>",
+          "name": "Dominate"
+        },
+        "KESgZ7EFPclSlLY8": {
+          "description": "<p><strong>Requirement</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Effect</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the vampire regains @Damage[10[healing]]{10 HP}, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>",
+          "name": "Drink Blood"
+        },
+        "KeTrwbKWih6HyuoM": {
+          "name": "Fast Healing 7"
+        },
+        "OgOkCo3ZpgcUbZr1": {
+          "name": "Vampire Vulnerabilities"
+        },
+        "QpzMidSalFaHGivw": {
+          "description": "<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<ul>\n<li><strong>Giant Bat</strong>\n<ul>\n<li><strong>Senses</strong> echolocation 40 feet,</li>\n<li><strong>Speed</strong> 20 feet, fly 30 feet,</li>\n<li><strong>Melee</strong> fangs +15 <strong>Damage</strong> 1d8+9 piercing</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+          "name": "Change Shape"
+        },
+        "TjOmyfilNvHKI58M": {
+          "name": "Children of the Night"
+        },
+        "YI0ylNDmvxevAqnt": {
+          "name": "Dominate (At Will) (See Dominate)"
+        },
+        "gRQ32Y4BWrQbWOlS": {
+          "name": "Coffin Restoration"
+        },
+        "iuyYNQtDMprDDoZH": {
+          "name": "Mist Escape"
+        },
+        "jnZDE6piOq3rzmdg": {
+          "description": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire servitor by donating some of their own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>A vampiric servitor is compelled to obey its creator, but if a vampire controls too many vampiric servitors at once (as determined by the GM), or if the servitor is a higher level than the vampire that created it, strongwilled servitors can free themselves by succeeding at a @Check[will|defense:will] saving throw against the vampire's Will DC.</p>",
+          "name": "Create Servitor"
+        },
+        "ziSz2omKZDCD4A0e": {
+          "name": "Claw"
+        }
+      },
+      "name": "Xarbaene",
+      "npcHp": "coffin restoration, fast healing 7, void healing"
+    },
     "Yobnobby": {
       "description": "<p>Jinkins are sadistic tinkers who steal and sabotage items and take great pride in their power to curse precious objects. They hold grudges and create convoluted plans for revenge when they feel slighted, such as when a creature dares to remove one of their curses. Rarely content to wreak simple mayhem, jinkins also take immense pleasure in torture and murder, though they prefer to lead victims into traps designed to capture or incapacitate rather than just kill them outright. Deep pits are a preferred method, since victims who survive their fall face a slow death from starvation and thirst while jinkins gather at the edge of pits to tease and torment them.</p>\n<hr />\n<p>Gremlins are cruel fey tricksters and saboteurs who have fully acclimated to life in the Universe, finding distinct niches for their inventive destructiveness. Nearly all gremlins delight in ruining or breaking things, whether it's something physical like a device or vehicle or something intangible such as an alliance or relationship. A gremlin's greatest joy is watching the collapse of complex creations, preferably after the slightest, carefully targeted nudge from the gremlin. Gremlins tend to denigrate, bully, or even slaughter their lesser kin, particularly mitflits, whom stronger gremlins derisively call \"baggies.\"</p>",
       "items": {
@@ -1327,6 +2450,79 @@
         }
       },
       "name": "Yobnobby"
+    },
+    "Zer": {
+      "description": "<p>It's the reckless scientist's job to break the rules of reality, no matter the cost.</p><hr /><p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
+      "items": {
+        "9vmB4BnE4F94fvr0": {
+          "name": "Alchemical Grenade"
+        },
+        "E00krW5owLvGqBHn": {
+          "description": "<p>A reckless scientist carries a collection of poorly stowed alchemical items: 3 elixirs of life and 6 alchemical grenades. The scientist replenishes these items each day using scavenged materials. The alchemical grenades deal either acid, cold, or fire damage plus 2 persistent damage and 2 splash damage of the same type (typically the collection contains two of each grenade).</p>",
+          "name": "Unstable Collection"
+        },
+        "FVyAEWKE2TXSuiE5": {
+          "description": "<p>Zer takes @Damage[10[untyped]] damage for every hour he's exposed to sunlight.</p>",
+          "name": "Vulnerable to Sunlight"
+        },
+        "LHKrI2drE35rhFEs": {
+          "name": "Fist"
+        },
+        "LMckIZmrAQt7HWW3": {
+          "description": "<p>When an attacker scores a critical hit against the reckless scientist, one of the scientist's alchemical items bursts. The GM determines the item randomly. If it was a bomb, the alchemist takes damage from the bomb, and any creature adjacent to the alchemist takes the splash damage. Any other item is wasted.</p>",
+          "name": "Unstable Explosion"
+        },
+        "YZqHMPt8ZBbo3FbI": {
+          "name": "Underworld Lore"
+        },
+        "d9TOZvyquMo6o18K": {
+          "description": "<p>The reckless scientist Interacts to draw an alchemical grenade with an Interact action and throws it as a ranged Strike.</p>",
+          "name": "Quick Grenadier"
+        },
+        "oe1JxJaahxy5yjHI": {
+          "description": "<p>Functions as leather armor.</p>",
+          "name": "Work Coat"
+        },
+        "x8s1JWo1Jcm4elFK": {
+          "name": "+1 Status to All Saves vs. Poison"
+        },
+        "zewypHqdhJynMyRj": {
+          "name": "Engineering Lore"
+        },
+        "ziPz3z2a6Db63N9r": {
+          "description": "<p>The reckless scientist attempts to combine two alchemical grenades or two elixirs of life into one item. They can Interact to draw the items if necessary. They attempt a @Check[crafting|dc:22] check, destroying both component items to create one new item.</p><hr /><p><strong>Success</strong> The new item has the full effect of both component items, and the reckless scientist can Activate it. If they don't Activate it before the end of their turn, the item explodes (as critical failure).</p>\n<p><strong>Failure</strong> The new item is inert.</p>\n<p><strong>Critical Failure</strong> The unstable item explodes, dealing @Damage[3d6[piercing]] damage to the reckless scientist.</p>",
+          "name": "Reckless Alchemy"
+        }
+      },
+      "name": "Zer",
+      "npcAllSaves": "+1 status to all saves vs. poison"
+    },
+    "Zovi": {
+      "items": {
+        "9wU2PBZ7mXqnwKBl": {
+          "name": "Battle-Grapple Innovation"
+        },
+        "MwwsRM2Vb4ZqDcFF": {
+          "description": "<p><strong>Requirements</strong> The dero is wearing a cytillesh toolkit and has a hand free</p><hr /><p><strong>Effect</strong> The dero excises damaged flesh and crudely stitches wounds shut, healing themself or an ally in reach for @Damage[(2d8+14)[healing]] Hit Points. For 1 hour, the target has slashing weakness 2 and is immune to Dero Medicine.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vqKBIflXiAmCx5QQ]{Effect: Dero Medicine}</p>",
+          "name": "Dero Medicine"
+        },
+        "a4RuZGPEPdmhudOd": {
+          "description": "<p>With a high-pitched cackle of glee, Zovi makes a battle-grapple Strike against up to three enemy creatures within 20 feet. Zovi attempts a check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} each target she hits with this Shrieking Flurry.</p>",
+          "name": "Shrieking Flurry"
+        },
+        "ajbus4Pn2enZ3Nx2": {
+          "name": "Battle-Grapple Innovation"
+        },
+        "ewO3TvexCntPBKvI": {
+          "description": "<p>Zovi fights using a complex device she crafted from scavenged clockwork parts and ancient Azlanti magitech. Similar in appearance to a grappling hook attached to an auto-retracting cable, this device is called a battle-grapple innovation. It allows Zovi to use her Magitech Propulsion and Whirling Flurry abilities. Unlike other tethered weapons, each time Zovi uses her battle-grapple innovation, she automatically retrieves it as a free action, allowing her to make multiple attacks in a row. It otherwise functions as an inventor weapon innovation with no modifications.</p>",
+          "name": "Battle-Grapple Innovation"
+        },
+        "zv1sExJogwxWb2P6": {
+          "description": "<p>With a flourish, Zovi activates the ancient magitech kitbashed onto her battle-grapple innovation. For [[/gmr 1d4 #rounds]]{1d4 rounds}, Zovi deals an additional 2d6 fire damage with her battle-grapple innovation. At the end of this time, the magitech backfires in a burst of fire and smoke, dealing @Damage[2d6[fire]] damage to Zovi and making her @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>",
+          "name": "Magitech Propulsion"
+        }
+      },
+      "name": "Zovi"
     }
   },
   "label": "Shades of Blood"
