@@ -2716,6 +2716,14 @@
                     "FateApocryphal": {
                         "Label": "Fato (apocrifo)",
                         "Description": "Vedi e comprendi l'ineluttabilità celata del fato. Non tutte le tradizioni clericali rientrano nell’ortodossia. Alcune vengono sussurrate in segreto, tramandate da un sacerdote ad accoliti fidati o trascritte in tomi dimenticati da fazioni scissioniste."
+                    },
+                    "Metal": {
+                        "Description": "Manipoli il metallo nella sua forma più flessibile e mutevole.",
+                        "Label": "Metallo"
+                    },
+                    "Wood": {
+                        "Description": "Comandate l’indomabile potere del legno.",
+                        "Label": "Legno"
                     }
                 },
                 "Alignment": "Allineamento",
@@ -3469,7 +3477,10 @@
                     "yithian": "Yithian",
                     "lashunta": "Lashunta",
                     "wayang": "Wayang",
-                    "tang": "Tang"
+                    "tang": "Tang",
+                    "muan": "Muan",
+                    "orvian": "Orviano",
+                    "talican": "Talicano"
                 },
                 "Shield": {
                     "ACBonus": "Bonus CA Scudo (Quando Alzato)",
@@ -3573,9 +3584,16 @@
                     "MissingResource": "Non hai abbastanza risorse per completare la fabbricazione.",
                     "RemainingSlots": "Slot Vuoto ({remaining} rimanenti)",
                     "Action": {
-                        "Hint": "Seleziona un oggetto da fabbricare usando {resource} ({value}/{max})"
+                        "Hint": "Seleziona un oggetto da fabbricare usando {resource} ({value}/{max})",
+                        "HintResourceless": "Seleziona un oggetto da fabbricare"
                     },
-                    "Search": "Cerca Formule"
+                    "Search": "Cerca Formule",
+                    "Create": "Crea",
+                    "FreeCrafting": "Fabbricazione Gratuita",
+                    "FreeCraftingTooltip": "Se abilitato, crea gli oggetti immediatamente senza spendere oro",
+                    "PrepareHint": "Seleziona gli oggetti che vuoi preparare ({remaining} restanti)",
+                    "DecreaseQuantity": "Diminuisci Quantità",
+                    "IncreaseQuantity": "Aumenta Quantità"
                 },
                 "HandsOccupied": "Mani Occupate",
                 "Attribute": {
@@ -9202,9 +9220,9 @@
                     "Leshy": "Se riposi all'aperto per 10 minuti durante il giorno, recuperi Punti Ferita pari al tuo @Damage[(floor(@actor.level/2)*@actor.abilities.con.mod)[healing]]{modificatore di Costituzione x metà del tuo livello}. Ottieni questo beneficio in aggiunta a qualsiasi guarigione derivante da @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Curare Ferite}. I leshy il cui nutrimento vegetale non conta sulla fotosintesi, richiedono un ambiente altrettanto idoneo. Per esempio, i leshy fungo hanno bisogno di un ambiente scuro e umido e un cumulo di materiale vegetale in decomposizione."
                 },
                 "YoureNext": {
-                    "Swashbuckler": "Dopo aver abbattuto un nemico, ti rivolgi minacciosamente verso un altro avversario e gli ricordi che dopo toccherà a lui. Effettui una prova di Intimidazione con bonus di circostanza +2 per @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare} una singola creatura che riesci a vedere e da cui puoi essere visto. Se hai il grado leggendario in Intimidazione, puoi utilizzare questo talento come azione gratuita con lo stesso innesco.",
+                    "Swashbuckler": "Dopa aver abbattuto un nemico, ti rivolgi minacciosamente verso un altro avversario e gli ricordi che dopa toccherà a lui. Effettui una prova con bonus di circostanza +2 per [[/act demoralize options=youre-next]] una creatura entro 18 metri. Se hai il grado leggendario in Intimidazione, puoi utilizzare questo talento come azione gratuita con lo stesso innesco.",
                     "Trigger": "Riduci un nemico a 0 Punti Ferita.",
-                    "Rogue": "Dopa aver abbattuto un nemico, ti rivolgi minacciosamente verso un altro avversario e gli ricordi che dopa toccherà a lui. Effettui una prova di Intimidazione con bonus di circostanza +2 per @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare} una creatura entro 18 metri. Se hai il grado leggendario in Intimidazione, puoi utilizzare questo talento come azione gratuita con lo stesso innesco."
+                    "Rogue": "Dopa aver abbattuto un nemico, ti rivolgi minacciosamente verso un altro avversario e gli ricordi che dopa toccherà a lui. Effettui una prova con bonus di circostanza +2 per [[/act demoralize options=youre-next]] una creatura entro 18 metri. Se hai il grado leggendario in Intimidazione, puoi utilizzare questo talento come azione gratuita con lo stesso innesco."
                 },
                 "BespellStrikes": {
                     "Requirements": "Con la tua azione più recente hai lanciato un incantesimo diverso da un trucchetto",
@@ -9680,7 +9698,7 @@
             },
             "Spellshape": {
                 "SowSpell": "Se la tua azione successiva è Lanciare un Incantesimo usando 1 o 2 azioni, l'incantesimo si impianta in un quadretto adiacente. Devi prendere tutte le decisioni riguardanti l'incantesimo nel momento in cui lo lanci. Entro i successivi 10 minuti, puoi far germogliare il tuo incantesimo seminato e produrre gli effetti dell'incantesimo come reazione, che si innesca quando una creatura entra nello spazio dell'incantesimo seminato o in un quadretto adiacente. Puoi avere un solo incantesimo seminato alla volta, e se non lo fai innescare entro 10 minuti l'incantesimo si dissolve e si perde. Una creatura può notare l'incantesimo seminato se supera una prova di Percezione contro la tua CD di incantesimo.",
-                "CastDown": "Se con la tua azione successiva lanci ferire o guarire per danneggiare una creatura, il bersaglio cade a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} se subisce danni di qualunque tipo dall'incantesimo. Se il bersaglio ottiene un fallimento critico nel tiro salvezza contro l'incantesimo, subisce inoltre penalità di status -3 metri alla sua Velocità per 1 minuto. @UUID[Compendium.pf2e.feat-effects.Item.Ve1CRFI8ikL6dqcL]{Effetto: Scagliare a Terra}",
+                "CastDown": "Il bersaglio cade a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono} se subisce danni di qualunque tipo dall'incantesimo. Se il bersaglio ottiene un fallimento critico nel tiro salvezza contro l'incantesimo, subisce inoltre penalità di status -3 metri alla sua Velocità per 1 minuto. @UUID[Compendium.pf2e.feat-effects.Item.Ve1CRFI8ikL6dqcL]{Effetto: Scagliare a Terra}",
                 "EbbAndFlow": "Scegli una creatura nel raggio d'azione che verrebbe ferita dall'incantesimo e un'altra creatura nel raggio d'azione che verrebbe guarita dall'incantesimo. Il tuo guarire o ferire bersaglia entrambe le creature.",
                 "SplitHex": "Se la prossima azione che usi è Lanciare un Incantesimo per lanciare una fattura dannosa con un bersaglio singolo, riduci il suo grado di 2 (rendendola 2 gradi più bassa del livello di incantesimo massimo che puoi lanciare). Cosi facendo, puoi selezionare un secondo bersaglio da colpire con quella fattura.",
                 "HeroicRecovery": "Il bersaglio ottiene tre bonus fino alla fine del suo turno successivo: bonus di status +1,5 metri alla Velocità, bonus di status +1 ai tiri per colpire e bonus di status +1 ai tiri per i danni. Inoltre, se il bersaglio è prono, può immediatamente Alzarsi come un'azione gratuita che non innesca reazioni.",
@@ -9708,11 +9726,11 @@
                 "OverwhelmingEnergy": "Se come azione successiva Lanci un Incantesimo, quest'ultimo ignora un ammontare di resistenza del bersaglio al danno da acido, elettricità, freddo, fuoco o sonoro pari al tuo livello. Questo effetto si applica a tutti i danni inferti dall'incantesimo, compresi quelli persistenti e quelli causati da effetti in corso, come nel caso del muro creato da muro di fuoco. Le immunità delle creature non vengono influenzate.",
                 "DefensiveCoordination": "Puoi Alzare uno Scudo e un singolo alleato che ottiene un bonus di status grazie all'incantesimo può usare immediatamente una reazione per Alzare uno Scudo.",
                 "EnergyAblation": "Se la tua prossima azione è Lanciare un Incantesimo che infligge almeno un tipo di danno da energia (acido, elettricità, forza, freddo, fuoco, sonoro, positivo o negativo), a prescindere dal fatto che infligga o meno danni, ottieni resistenza a un tipo di energia pari al grado dell'incantesimo fino alla fine del tuo turno successivo.",
-                "ConcealSpell": "Se con la tua azione successiva Lanci un Incantesimo, l'incantesimo ottiene il tratto discreto, nascondendo le rune brillanti, scintille di magia o altre manifestazioni che solitamente rivelano il tuo lancio di incantesimi. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti, perciò un osservatore potrebbe comunque notare un raggio balenare da te o vederti svanire.",
+                "ConcealSpell": "L'incantesimo ottiene il tratto discreto, nascondendo le rune brillanti, scintille di magia o altre manifestazioni che solitamente rivelano il tuo lancio di incantesimi. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti, perciò un osservatore potrebbe comunque notare un raggio balenare da te o vederti svanire.",
                 "VigorousAnthem": "Tu e tutti gli alleati influenzati ottenete Punti Ferita temporanei pari a 3 + il tuo modificatore di Carisma, per la durata di 1 minuto. @UUID[Compendium.pf2e.feat-effects.Item.7AzGhIOx4Df5Cicr]{Effetto: Inno Vigoroso}",
                 "ForcibleEnergy": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni da acido, da elettricità, da fuoco o sonori, puoi selezionare un bersaglio che è stato danneggiato e fargli ottenere debolezza 5 a quel tipo di danno fino alla fine del tuo turno successivo. Se un incantesimo infligge più tipi di danni da energia, scegli quello a cui il bersaglio ottiene debolezza. Questo non ha effetto sulle creature con resistenza o immunità al tipo di energia che scegli. @UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{Effetto: Energia Violenta}",
                 "InTune": "Se la tua prossima azione è lanciare un incantesimo di composizione con un'area di emanazione, la sua aura si espande da un alleato consenziente a tua scelta entro 18 metri invece che da te. Se hai Rivolgersi al Pubblico, puoi fare in modo che quel cono origini invece dal tuo alleato.",
-                "LeyLineConduit": "Se la tua azione successiva è Lancire un Incantesimo di 5° grado o inferiore che non ha durata, non consumi l'incantesimo preparato.",
+                "LeyLineConduit": "Non consumi l'incantesimo preparato.",
                 "MelodiousSpell": "L'incantesimo ottiene il tratto discreto. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti. Con l'uso di Incatesimi Melodiosi puoi scegliere di @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Creare un Diversivo}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Esibirti} o Richiedere. Se lo fai, l'incanteismo che lanci daeve avere i tratti uditivo, emozione, sonico o visuale per ottenere il tratto discreto.",
                 "PurifyingSpell": "Se la tua prossima azione è lanciare _guarire_ su una singola creatura vivente, puoi tentare di contrastare una malattia o un veleno che influenza il bersaglio, oltre agli effetti benefici di _guarire_. Se lo fai, _guarire_ ottiene il tratto acqua.",
                 "OstentatiousArrivalSummonSpell": "Tutte le creature in un'@Template[type:emanation|distance:10]{emanazione di 3 metri} attorno alla creatura convocata o manifestata subiscono @Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]]{$1 danni da fuoco} per livello dell'incantesimo per un incantesimo di convocazione. Se la creatura convocata o manifestata ha il tratto acido, acqua, elettricità, freddo, fuoco o sonoro, il danno è invece di quel tipo (o danni da freddo per il tratto acqua). Se la creatura ha più di uno di tali tratti, scegli che tipo di danni infligge.",
@@ -9726,7 +9744,7 @@
                 "SnowdriftSpell": "Seleziona una creatura influenzata dall'incantesimo sul terreno. Ogni quadretto sul terreno sotto o adiacente alla creatura si riempie con neve ad altezza delle caviglie. Questi quadretti sono terreno difficile fino all'inizio del tuo prossimo turno. Una creatura può Interagire per liberare un quadretto di neve, e la neve in un quadretto si scioglie se quel quadretto è esposto a un effetto di fuoco.",
                 "ThunderclapSpell": "Se la tua azione successiva è Lanciare un Incantesimo che ha il tratto elettricità o che infligge danni di elettricità, non ha durata e richiede alle creature di tentare un tiro salvezza, la forza del fulmine dell'incantesimo crea un rombo di tuono, in aggiunta ai suoi altri effetti. Ogni creatura che ha fallito il suo tiro salvezza su Riflessi contro l'incantesimo è @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{assordata} per 1 round, e quelli che hanno fallito criticamente sono anche scagliati a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{proni}.",
                 "GarlandSpell": "Cresce una ghirlanda di piante in un'@Template[burst|distance:10] entro il raggio dell'incantesimo. Le piante sono terreno difficile e terreno pericoloso, coperto di spine o rampicanti velenosi a tua scelta. Qualsiasi creatura che si muove dentro uno di questi quadretti o che termina il suo turno in esso subisce @Damage[2d6[piercing]]{2d6 danni perforanti} per le spine o @Damage[2d6[poison]]{2d6 danni da veleno} per i rampicanti. Una creatura può subire questi danni solo una volta per turno. Tu e il tuo famiglio sono immuni a questi danni. Le piante durano 1 minuto o finché non lanci un'altro Incantesimo con Ghirlanda, a seconda di quale evento si verifichi per primo. Il danno aumenta a 3d6 al 16° livello e 4d6 al 20° livello.",
-                "SecondaryDetonationArray": "Se la tua azione successiva è Lanciare un Incantesimo che infligge danni, non ha durata e influenza un'area, un cerchio magico luminoso appare in un'@Template[burst|distance:5] all'interno di quell'area. All'inizio del tuo prossimo turno, il cerchio esplode, infliggendo @Damage[(@item.level)d6[force]]{$ danni di forza} a tutte le creature nel cerchio, con un TS su @Check[reflex|against:spell]. Se l'incantesimo ha inflitto un tipo di danno diverso, il cerchio infligge invece @Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]]{quel tipo di danno} (o uno a tua scelta se l'incantesimo può infliggere più di un tipo di danno)",
+                "SecondaryDetonationArray": "Se la tua azione successiva è Lanciare un Incantesimo che infligge danni, non ha durata e influenza un'area, un cerchio magico luminoso appare in un'@Template[burst|distance:5] all'interno di quell'area. All'inizio del tuo prossimo turno, il cerchio esplode, infliggendo @Damage[(@item.level)d6[force]|options:area-damage]{$ danni di forza} a tutte le creature nel cerchio, con un TS su @Check[reflex|against:spell|options:area-effect,damaging-effect]. Se l'incantesimo ha inflitto un tipo di danno diverso, il cerchio infligge invece @Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]|options:area-damage]{quel tipo di danno} (o uno a tua scelta se l'incantesimo può infliggere più di un tipo di danno)",
                 "KaleidoscopicEntreaty": {
                     "Failure": "La creatura è abbagliata per 1 minuto.",
                     "Success": "La creatura è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliata} per 1 minuto."
@@ -9830,7 +9848,7 @@
             },
             "SaveCriticalFailureToFailure": {
                 "FailureHalfDamage": {
-                    "Will": "Quando ottieni un fallimento critico in un tiro salvezza su Volontà, lo consideri come un fallimento. Quando fallisci un tiro salvezza su Volontà contro un effetto che infligge danni, prendi metà danni."
+                    "Will": "Quando fallisci un tiro salvezza su Volontà contro un effetto che infligge danni, prendi metà danni."
                 }
             },
             "FireShield": {
@@ -10762,7 +10780,17 @@
         "ArmorPropertyRuneGliding": "Planante",
         "TraitWornEyeglasses": "Occhiali Indossati",
         "ArmorPropertyRuneMisleading": "Fuorviante",
-        "ArmorPropertyRunePortable": "Portatile"
+        "ArmorPropertyRunePortable": "Portatile",
+        "TraitDescriptionBottledBreath": "Le bottiglie di soffio sono bottiglie incantate di nube e nebbia, sviluppate originariamente dagli abitanti del Piano dell’Aria. Puoi Attivare un oggetto con il tratto soffio imbottigliato mentre lo aspiri o fai in modo che un’altra creatura lo aspiri.",
+        "TraitDescriptionComposite": "Un impulso composito combina più elementi. Puoi ottenere un impulso con il tratto composito solo se i tuoi elementi cinetici includono tutti gli elementi indicati nei tratti dell’impulso.",
+        "ArmorPropertyRuneMalleable": "Malleabile",
+        "TraitDescriptionArdande": "Gli ardande sono eredi planari che discendono dai kizidhar e da altri esseri del legno elementale.",
+        "TraitArdande": "Ardande",
+        "TraitAttachedToShipsBow": "Unita alla Prua di una Nave",
+        "TraitComposite": "Composito",
+        "TraitBottledBreath": "Soffio Imbottigliato",
+        "TraitDescriptionCenser": "Gli incensieri sono contenitori decorativi, spesso in metallo o ceramica, in cui viene bruciato l’incenso. Un oggetto con il tratto incensiere deve essere riempito di incenso per Attivarlo, il che accende l’incenso e fa sì che l’incensiere emetta una nube di fumo.",
+        "TraitCenser": "Incensiere"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
