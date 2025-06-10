@@ -68,7 +68,7 @@
           "name": "Tumbling Attack"
         },
         "LDICCpy7gURprIf5": {
-          "description": "<p>The agile warrior deals 2d6 precision damage to a creature on a successful Disarm attempt.</p>",
+          "description": "<p>The agile warrior deals @Damage[(2d6[precision])[untyped]] precision damage to a creature on a successful [[/act disarm]] attempt.</p>",
           "name": "Deadly Disarm"
         },
         "LfYdKJKFMistfUrI": {
@@ -95,7 +95,7 @@
           "name": "Nimble Dodge"
         },
         "fEBhUYwVm6dLWCsO": {
-          "description": "<p>The agile warrior deals 2d6 precision damage to a creature on a successful Disarm attempt.</p>",
+          "description": "<p>The agile warrior deals @Damage[(2d6[precision])[untyped]] precision damage to a creature on a successful [[/act disarm]] attempt.</p>",
           "name": "Deadly Disarm"
         },
         "r5Y0nMpV00mjkW0Q": {
@@ -340,7 +340,7 @@
           "name": "Fist"
         },
         "WhjU9VyNWAsGZORc": {
-          "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/gmr 1d4 #Recharge Breath of the Glacier]]{1d4 rounds}.</p>\n<p>Pravan blows icy winds in a @Template[cone|distance:30], dealing @Damage[10d6[cold]] damage. Creatures in the area must attempt a @Check[reflex|dc:33|traits:damaging-effect] save as ice forms around them. The Speed penalty or immobilized condition caused by this ability persist until a creature either Breaks Open the ice or Escapes (DC 37 in either case), or if the creature takes at least 30 fire damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and takes a -5- foot status penalty to its Speeds.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a -15-foot status penalty to its Speeds.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>",
+          "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/gmr 1d4 #Recharge Breath of the Glacier]]{1d4 rounds}.</p>\n<p>Pravan blows icy winds in a @Template[cone|distance:30], dealing @Damage[10d6[cold]|options:area-damage] damage. Creatures in the area must attempt a @Check[reflex|dc:33|options:area-effect,damaging-effect] save as ice forms around them. The Speed penalty or immobilized condition caused by this ability persist until a creature either Breaks Open the ice or Escapes (DC 37 in either case), or if the creature takes at least 30 fire damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and takes a -5- foot status penalty to its Speeds.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a -15-foot status penalty to its Speeds.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>",
           "name": "Breath of the Glacier"
         },
         "X5uAgkp3zxAGNKah": {
@@ -403,7 +403,7 @@
           "name": "Tornado Lunge"
         },
         "pvqmeCjX7qvH9wJF": {
-          "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/gmr 1d4 #Recharge Breath of the Volcano]]{1d4 rounds}.</p>\n<p>Usvani exhales a miasma of acidic fumes in a @Template[emanation|distance:15]. A creature that starts its turn in the area takes @Damage[12d6[acid]] damage- and must attempt a @Check[fortitude|dc:33|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>",
+          "description": "<p>The monk lets loose a powerful breath of air, whose effect depends on the type of energy to which the monk is attuned. The monk can't use this ability again for [[/gmr 1d4 #Recharge Breath of the Volcano]]{1d4 rounds}.</p>\n<p>Usvani exhales a miasma of acidic fumes in a @Template[emanation|distance:15]. A creature that starts its turn in the area takes @Damage[12d6[acid]|options:area-damage] damage- and must attempt a @Check[fortitude|dc:33|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>",
           "name": "Breath of the Volcano"
         },
         "sDZ4Ni8K7NK1hq7V": {
@@ -792,6 +792,9 @@
         "dEMUM22Ke1Ah5KZD": {
           "name": "Goka Lore"
         },
+        "jCmLHcpebaggKboj": {
+          "description": "<p>This short, single-edged sword typically features a cross guard that helps catch oncoming attacks. It is the preferred weapon of Butterfly Blades-highly skilled Gokan assassins.</p>"
+        },
         "nbaWVxcqV74vIiGN": {
           "description": "<p>The warrior makes a telegraphed attack to learn about their foe. They make a melee Strike. On a hit, they can immediately attempt a check to Recall Knowledge about the target. On a critical hit, they gain a +2 circumstance bonus to the check to Recall Knowledge. The target is then temporarily immune to Studied Strike for 1 day.</p>",
           "name": "Studied Strike"
@@ -903,7 +906,7 @@
           "name": "Phantom Horn"
         },
         "bhAx6MavTdZqYdPK": {
-          "description": "<p>Cloudsplitter breathes fire in a @Template[cone|distance:30], dealing @Damage[18d6[fire]] damage (@Check[reflex|dc:40|basic] save). Cloudsplitter can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
+          "description": "<p>Cloudsplitter breathes fire in a @Template[cone|distance:30], dealing @Damage[18d6[fire]|options:area-damage] damage (@Check[reflex|dc:40|basic|options:area-effect] save). Cloudsplitter can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
           "name": "Breath Weapon"
         },
         "dzSE6CYv5BywrIRP": {
@@ -1922,6 +1925,7 @@
       "name": "Hummingbird"
     },
     "Inmyeonjo": {
+      "description": "<p>Mountain guides whisper stories of giant white birds that stretch towards the sky, singing with human voices. While these stories are often dismissed as tall tales, the truth is much stranger, for the bird they've encountered not only has a human voice, but one a human face as well. Inmyeonjos are enormous white birds with flowing tails, abnormally long necks, and mask-like human faces. They wear an elongated black headpiece that serves as a vessel for their life energy, enabling their reincarnation through any living creature.</p>\n<p>Inmyeonjos often serve as gatekeepers or guardians of the tombs of great sages and leaders who brought peace to their lands and people. They can also be found atop on high mountains where the border between earth and sky is thinnest. Ultimately, inmyeonjos strive for balance and peace among all mortals. A person who has encountered an inmyeonjo often has trouble remembering if the strange creature was beautiful or terrifying.</p>",
       "items": {
         "2TXo6LWvWnCiFZrE": {
           "name": "Talon"
@@ -2102,6 +2106,9 @@
         },
         "HmDiAydG0MgtIyWv": {
           "name": "-1 status penalty to all saves vs. death effects"
+        },
+        "NtJHFwQeHn8lF6Z2": {
+          "description": "<p>This long sword has a hook near the tip which makes it easy to snag an opponent or their weapons.</p>"
         },
         "Q3bc2SmSgtyMmrvw": {
           "description": "<p><strong>Requirements</strong> Jin-Hae is wielding her feng huo lun</p>\n<hr />\n<p><strong>Effect</strong> Jin-Hae blasts off on her feng huo lun, leaving an elemental trail in her wake. She Strides up to twice her Speed and makes a feng huo lun Strike at any point during her movement. The path left by her movement is filled with her choice of an 8th-rank @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind} or @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} spell. Jin-Hae is unaffected by any walls she creates with this ability. She cannot use Wind-Fire Charge again for [[/gmr 1d4 #rounds]]{1d4 rounds}. If she uses Wind-Fire Charge again, the wall created by her previous Wind-Fire Charge disappears as soon as her action is completed.</p>",
@@ -2866,6 +2873,9 @@
         },
         "VqlmcA8mbwRPwWPj": {
           "name": "Goka Lore"
+        },
+        "q9bEw6MxLjdqb8RQ": {
+          "description": "<p>This short, single-edged sword typically features a cross guard that helps catch oncoming attacks. It is the preferred weapon of Butterfly Blades-highly skilled Gokan assassins.</p>"
         },
         "wohEWLl2eVsMhxnM": {
           "name": "Legal Lore"
@@ -3887,6 +3897,9 @@
         "Ps8Cme5VgpZmRxZP": {
           "description": "<p><strong>Trigger</strong> Surjit fails a Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}</p>\n<hr />\n<p><strong>Effect</strong> Surjit automatically senses any @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures in the area where he was Seeking, making them merely @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to him.</p>",
           "name": "Sense the Unseen"
+        },
+        "QNrS8LaZujg7xNpW": {
+          "description": "<p>This long sword has a hook near the tip which makes it easy to snag an opponent or their weapons.</p>"
         },
         "SkfTUNlafcn5QAxv": {
           "description": "<p>Surjit Strides twice. Difficult terrain doesn't slow his movement. Any space Surjit enters becomes normal terrain rather than difficult terrain (or difficult terrain rather than greater difficult terrain) until the start of his next turn.</p>",

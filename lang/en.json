@@ -614,6 +614,7 @@
             "Tooltip": "\"Using the applicable Lore usually has an easy or very easy DC (before adjusting for rarity).\" – Pathfinder GM Core pg. 54"
           }
         },
+        "LevelN": "Creature {level}",
         "SimpleSheet": "Simple NPC Sheet",
         "SpecialSkill": "+{mod} {label}",
         "SkillsEditor": {
@@ -665,6 +666,7 @@
         },
         "Languages": "Party Languages",
         "MembersLabel": "Members: ",
+        "NewName": "New Party",
         "NoMembers": "No Members",
         "NoSpecialSenses": "No Special Senses",
         "RemoveMember": {
@@ -1536,7 +1538,7 @@
       "InitiativeSet": "Initiative of {actor} was set to {initiative}.",
       "Metrics": {
         "Award": {
-          "Label": "Award: {xp} XP",
+          "Label": "Award: <award>{xp} XP</award>",
           "Tooltip": {
             "Four": "4 Party Members",
             "Plural": "{xpPerFour} × 4 / {recipients} Party Members",
@@ -1777,6 +1779,7 @@
         },
         "OnsetLabel": "Onset",
         "OnsetActive": "Onset Active",
+        "Plural": "Afflictions",
         "SaveLabel": "Save DC",
         "Stage": "Stage {stage}",
         "StageLabel": "Stage"
@@ -1854,6 +1857,61 @@
       },
       "CannotAddType": "{type} items cannot be added to this actor.",
       "Class": {
+        "FIELDS": {
+          "hp": {
+            "label": "Hit Points"
+          },
+          "perception": {
+            "label": "Perception"
+          },
+          "savingThrows": {
+            "fortitude": {
+              "label": "Fortitude"
+            },
+            "reflex": {
+              "label": "Reflex"
+            },
+            "will": {
+              "label": "Will"
+            }
+          },
+          "attacks": {
+            "simple": {
+              "label": "Simple Weapons"
+            },
+            "martial": {
+              "label": "Martial Weapons"
+            },
+            "advanced": {
+              "label": "Advanced Weapons"
+            },
+            "unarmed": {
+              "label": "Unarmed Attacks"
+            }
+          },
+          "defenses": {
+            "light": {
+              "label": "Light Armor"
+            },
+            "medium": {
+              "label": "Medium Armor"
+            },
+            "heavy": {
+              "label": "Heavy Armor"
+            },
+            "unarmored": {
+              "label": "Unarmored Defense"
+            }
+          },
+          "spellcasting": {
+            "label": "Spell Attack Modifiers & DCs"
+          },
+          "trainedSkills": {
+            "additional": {
+              "label": "Additional Skills"
+            }
+          }
+        },
         "Plural": "Classes"
       },
       "Condition": {
@@ -1864,11 +1922,15 @@
         "PersistentDamage": {
           "AssistedRecovery": "Roll Assisted Recovery",
           "Chat": {
-            "Recover": "Roll Recovery Check",
+            "Recover": "Make Recovery Check",
             "RecoverLabel": "Recovery: {name}"
           },
           "Dialog": {
             "Add": "Add Persistent Damage",
+            "DamageType": "Damage Type",
+            "DC": "DC",
+            "Edit": "Edit Persistent Damage",
+            "Formula": "Formula",
             "Invalid": "Formula is invalid.",
             "Remove": "Remove Persistent Damage",
             "Title": "Persistent Damage ({actor})"
@@ -2658,6 +2720,12 @@
         }
       },
       "Weapon": {
+        "FIELDS": {
+          "expend": {
+            "hint": "This indicates how much ammunition is consumed with each ranged Strike you make with the weapon. Other abilities might cite the use of Expend as the amount of ammo required to complete the action.",
+            "label": "Expend"
+          }
+        },
         "CanBeAmmo": {
           "Label": "Usable as Ammo",
           "Hint": "Indicate that this weapon can be loaded into another weapon as ammunition."
@@ -3327,10 +3395,6 @@
           "Hint": "Automatically apply the Encumbered condition to creatures carrying more than their respective limits.",
           "Name": "Encumbrance"
         },
-        "EffectExpiration": {
-          "Hint": "Effects automatically disable attached rule elements when the duration expires.",
-          "Name": "Effects Auto-Expire"
-        },
         "FlankingDetection": {
           "Hint": "Flanking arrangements and abilities that predicate on it are managed by the system.",
           "Name": "Flanking Detection"
@@ -3352,7 +3416,7 @@
         },
         "RulesBasedVision": {
           "Hint": "Apply vision mechanics that are a best-effort attempt to capture Pathfinder Second Edition rules. Enabling this setting will remove the ability to configure Unrestricted Global Vision as well as Token Sight radii.",
-          "ManagedBy": "Managed by <rbv>rules-based vision</rbv>.",
+          "ManagedBy": "Managed by rules-based vision.",
           "Name": "Rules-Based Vision",
           "ViewWorldSetting": "View World Setting"
         }
@@ -3627,49 +3691,49 @@
         "Title": "Variant Rules"
       },
       "WorldClock": {
-        "DateTheme": {
+        "DateThemes": {
           "AD": "Earth (Gregorian Calendar)",
           "AR": "Golarion (Absalom Reckoning)",
           "CE": "Unthemed (Gregorian Calendar)",
-          "Hint": "Set the theme of the World Clock application.",
-          "IC": "Golarion (Imperial Calendar)",
-          "Name": "Date Theme"
+          "IC": "Golarion (Imperial Calendar)"
         },
         "Hint": "Configure the appearance of the World Clock application.",
         "Label": "Configure World Clock",
-        "Name": "World Clock",
-        "PlayersCanView": {
-          "Hint": "Set whether players can view the World Clock.",
-          "Name": "Player Access"
-        },
+        "Name": "World Clock Configuration",
         "ResetWorldTime": {
-          "Button": "Reset",
           "Confirm": {
             "Question": "Are you sure you want to reset this world's elapsed time?",
             "Warning1": "Time-dependent game effects may be impacted.",
             "Warning2": "This action cannot be undone."
           },
           "Hint": "Reset this world's time elapsed time to zero.",
-          "Name": "Reset World Date/Time"
+          "Label": "Reset World Date/Time"
         },
-        "ShowClockButton": {
-          "Hint": "Set whether to show the clock button at all (requires refresh).",
-          "Name": "Show Clock Button"
+        "TimeConventions": {
+          "12": "12-Hour",
+          "24": "24-Hour"
         },
-        "SyncDarkness": {
-          "Hint": "Set whether any scene's Darkness Level will reflect the time of day.",
-          "Name": "Synchronize Darkness (World Default)"
-        },
-        "SyncDarknessScene": {
-          "Hint": "Set whether this scene's Darkness Level will reflect the time of day.",
-          "ManagedBy": "Synchronized with <wt>world time</wt>.",
-          "Name": "Synchronize Darkness (Current Scene)"
-        },
-        "TimeConvention": {
-          "Hint": "Display either a 24-hour or 12-hour clock.",
-          "Name": "Time Convention",
-          "Twelve": "12-Hour",
-          "TwentyFour": "24-Hour"
+        "FIELDS": {
+          "dateTheme": {
+            "hint": "Set the theme of the World Clock application.",
+            "label": "Date Theme"
+          },
+          "playersCanView": {
+            "hint": "Set whether players can view the World Clock.",
+            "label": "Player Access"
+          },
+          "showClockButton": {
+            "hint": "Set whether to show the clock button at all (requires refresh).",
+            "label": "Show Clock Button"
+          },
+          "syncDarkness": {
+            "hint": "Set whether any scene's Darkness Level will reflect the time of day.",
+            "label": "Synchronize Darkness"
+          },
+          "timeConvention": {
+            "hint": "Display either a 24-hour or 12-hour clock.",
+            "label": "Time Convention"
+          }
         }
       },
       "WorldSchemaVersion": {
@@ -3711,8 +3775,12 @@
       "HearingRange": {
         "Caveat": "*For performance reasons, the radius is a real measurement rather than a grid-based one.",
         "Hint": "Limit the range* creatures can hear in this scene as a representation of \"an environment that distorts the sense, such as a noisy room\" (Pathfinder Player Core pg. 432). Requires rules-based vision to be enabled.",
-        "Name": "Hearing Range (ft.)",
+        "Label": "Hearing Range (ft.)",
         "Unlimited": "Unlimited"
+      },
+      "SyncDarkness": {
+        "Label": "Synchronize Darkness to Time",
+        "Hint": "When the time of day changes in this scene, automatically adjust the darkness level to match (darker toward evening hours, lighter toward daytime)."
       }
     },
     "ScoreTitle": "Score",
@@ -3883,7 +3951,7 @@
       "Flanking": "Flanking",
       "SecretDisposition": {
         "Label": "Secret Disposition",
-        "Hint": "Activate the \"secret\" disposition, which displays a purple border for owners and no border or cursor change for all others."
+        "Hint": "Activate the \"secret\" disposition, which displays a purple border for owners and no border or cursor change for all others. A token with this disposition also cannot be targeted by non-owners."
       },
       "Size": {
         "Dimensions": "Dimensions",
@@ -5534,9 +5602,6 @@
     "WeaponBaseDamageTitle": "This section configures the base damage for the weapon. Additional die from Striking runes should not be added here and instead configured in the Weapon Runes section above.",
     "WeaponBaseLabel": "Base",
     "WeaponBonusAttackLabel": "Bonus Attack",
-    "WeaponBonusDamageLabel": "Bonus Damage",
-    "WeaponCustomDamageLabel": "Additional Custom Damage",
-    "WeaponCustomDamageTitle": "This section adds any custom damage that is not covered by the Rune system. The Strike Effect and Critical Effect attributes are not currently used in the system and are informational only.",
     "WeaponDamageLabel": "Base Damage",
     "WeaponGroupAxe": "Axe",
     "WeaponGroupBomb": "Bomb",
@@ -5560,14 +5625,10 @@
     "WeaponHands1": "One",
     "WeaponHands1Plus": "One Plus",
     "WeaponHands2": "Two",
-    "WeaponMAPDefaultOption": "Default (uses Agile trait if present)",
-    "WeaponMAPLabel": "Multiple Attack Penalty",
     "WeaponPotencyRune1": "Weapon Potency (+1)",
     "WeaponPotencyRune2": "Weapon Potency (+2)",
     "WeaponPotencyRune3": "Weapon Potency (+3)",
     "WeaponPotencyRune4": "Weapon Potency (+4)",
-    "WeaponPropertyCriticalDamageLabel": "Critical Damage",
-    "WeaponPropertyCriticalEffectLabel": "Critical Effect",
     "WeaponPropertyRune": {
       "ancestralEchoing": {
         "Name": "Ancestral Echoing"
@@ -5605,6 +5666,9 @@
         "Note": {
           "criticalSuccess": "When you critically hit a target that's taking @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage}, your target becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}."
         }
+      },
+      "bolkasBlessing": {
+        "Name": "Bolka's Blessing"
       },
       "brilliant": {
         "Name": "Brilliant",
@@ -5720,6 +5784,9 @@
       "greaterBloodbane": {
         "Name": "Greater Bloodbane"
       },
+      "greaterBolkasBlessing": {
+        "Name": "Greater Bolka's Blessing"
+      },
       "greaterBrilliant": {
         "Name": "Greater Brilliant",
         "Note": {
@@ -5791,6 +5858,9 @@
           "criticalSuccess": "On a critical hit, you can choose to force the target to succeed at a @Check[fortitude|dc:37|name:Greater Impactful Rune] save or be pushed 10 feet away from you."
         }
       },
+      "greaterKolssOath": {
+        "Name": "Greater Kols's Oath"
+      },
       "greaterRooting": {
         "Name": "Greater Rooting",
         "Note": {
@@ -5810,6 +5880,9 @@
           "criticalSuccess": "Sonic damage dealt by this weapon ignores the target's sonic resistance. On a critical hit, the target has to succeed at a @Check[fortitude|dc:34|name:Greater Thundering Rune] save or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} permanently.",
           "success": "Sonic damage dealt by this weapon ignores the target's sonic resistance."
         }
+      },
+      "greaterTruddsStrength": {
+        "Name": "Greater Trudd's Strength"
       },
       "grievous": {
         "Name": "Grievous",
@@ -5867,6 +5940,9 @@
       },
       "kinWarding": {
         "Name": "Kin-Warding"
+      },
+      "kolssOath": {
+        "Name": "Kols's Oath"
       },
       "majorRooting": {
         "Name": "Major Rooting",
@@ -5931,6 +6007,9 @@
           "criticalSuccess": "On a critical hit, the target has to succeed at a @Check[fortitude|dc:24|name:Thundering Rune] save or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (or 1 hour on a critical failure)."
         }
       },
+      "truddsStrength": {
+        "Name": "Trudd's Strength"
+      },
       "trueRooting": {
         "Name": "True Rooting",
         "Note": {
@@ -5962,8 +6041,6 @@
         "Name": "Wounding"
       }
     },
-    "WeaponPropertyStrikeDamageLabel": "Strike Damage",
-    "WeaponPropertyStrikeEffectLabel": "Strike Effect",
     "WeaponRange10": "10 ft.",
     "WeaponRange100": "100 ft.",
     "WeaponRange120": "120 ft.",
@@ -6346,6 +6423,7 @@
       "LootDescription": "Allows for distribution of coins across players",
       "LootLabel": "Loot",
       "LootMessage": "{looter} loots {quantity} × {item} off {corpse}.",
+      "LootUnknownNPCMessage": "an unidentified creature",
       "LootNPCsLabel": "Loot Selected Tokens",
       "LootNPCsPopupHeader": "Choose tokens to loot from",
       "LootNamePlaceholder": "Loot",
@@ -7397,9 +7475,9 @@
       "WhirlingThrow": {
         "Notes": {
           "criticalFailure": "<strong>Critical Failure</strong> You don't throw the creature, and it's no longer @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by you.",
-          "criticalSuccess": "<strong>Critical Success</strong> You throw the creature the desired distance and it lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
+          "criticalSuccess": "<strong>Critical Success</strong> You throw the creature [[/r 10+(5*@actor.abilities.str.mod)]] feet, dealing @Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]] damage, and it lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.",
           "failure": "<strong>Failure</strong> You don't throw the creature.",
-          "success": "<strong>Success</strong> You throw the creature the desired distance."
+          "success": "<strong>Success</strong> You throw the creature [[/r 10+(5*@actor.abilities.str.mod)]] feet and deal @Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]] damage."
         },
         "Title": "Whirling Throw"
       }
@@ -9695,6 +9773,9 @@
           "Note": "If you hit, your mark takes an additional @Damage[(6d6[precision])[@item.system.damage.damageType]] damage with a @Check[fortitude|against:class-spell|basic] save. If the mark critically fails, it dies unless its level is higher than yours."
         }
       },
+      "AssuredIdentification": {
+        "CursedItem": "If you would misidentify a cursed item because you roll a success, you simply can't identify it."
+      },
       "Automaton": {
         "ArcaneLocomotion": {
           "Prompt": "Select a movement type."
@@ -9913,6 +9994,11 @@
         },
         "WeAreOne": {
           "OffGuardToggle": "We Are One — Make target Off-Guard against your Strike"
+        }
+      },
+      "Blackjacket": {
+        "NothingPersonal": {
+          "ToggleLabel": "Nothing Personal - First weapon Strike against impediment"
         }
       },
       "BlessingOfDefiance": {
@@ -10854,6 +10940,10 @@
             "Moderate": "Moderate"
           }
         },
+        "BracersOfDevotion": {
+          "BlessedArmamentToggle": "Bracers of Devotion — Bonus against Disarm",
+          "BlessedShieldToggle": "Bracers of Devotion — Blessed shield raised"
+        },
         "BravosBrew": {
           "Greater": {
             "FearLabel": "Greater Bravo's Brew (Vs. Fear)"
@@ -11040,11 +11130,18 @@
           "CriticalImmunityLabel": "Activate Scapular of Shields to gain critical immunity.",
           "ResistAllLabel": "Activate Scapular of Shields to gain resistance to all damage."
         },
+        "ScreamingPinion": {
+          "TranscendentShot": "Screaming Pinion — Transcendent Shot"
+        },
         "SerpentDagger": {
           "Note": "When you critically succeed at an attack roll with the <em>serpent dagger</em>, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless it succeeds at a @Check[fortitude|dc:19] save."
         },
         "ShardOfSelfDestruction": {
           "Note": "You also take @Damage[1d6[bleed]] damage."
+        },
+        "ShawlOfSeasons": {
+          "BenefitToggleLabel": "Shawl of Seasons — Change of Seasons",
+          "CurrentSeasonToggleLabel": "Shawl of Seasons — Benefit matches season"
         },
         "SoothingToddy": {
           "AmarettoLabel": "Amaretto",
@@ -12968,6 +13065,15 @@
         "Weaving": "Weaving",
         "Woodworking": "Woodworking"
       },
+      "SpectralDagger": {
+        "InstrumentOfDeath": {
+          "SuppressBonuses": "Suppress bonuses",
+          "Weakness": "Weakness to spirit damage"
+        },
+        "SoulBleed": {
+          "Note": "You gain temporary Hit Points equal to the spirit damage dealt by the attack that last until the beginning of your next turn."
+        }
+      },
       "SpellEffectAnimalFeature": {
         "CatEyes": "Cat Eyes",
         "FishTail": "Fish Tail",
@@ -13318,6 +13424,11 @@
           "Note": "If an enemy fails a saving throw against a spell you cast that has the curse trait, you gain temporary Hit Points equal to double that spell's rank. These temporary Hit Points last 10 minutes. The enemy must be a significant threat and can't have been a willing subject of the curse."
         }
       },
+      "StalwartDefender": {
+        "StalwartChant": {
+          "ToggleLabel": "Stalwart Chant — Resistance to mental damage"
+        }
+      },
       "Stance": {
         "Attack": {
           "CobraFang": "Cobra Fang",
@@ -13619,6 +13730,11 @@
         "Staff": "Use Staff Two-Handed",
         "Tuskblade": "Use Tuskblade Two-Handed"
       },
+      "UlfenGuard": {
+        "GuardsFury": {
+          "ToggleLabel": "Guard's Fury — Adjacent to designated ally"
+        }
+      },
       "UndeadSlayer": {
         "SlayersPresence": {
           "Note": "The target is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round."
@@ -13633,6 +13749,14 @@
         "UntamedClaws": "Untamed Claws",
         "UntamedJaws": "Untamed Jaws",
         "Wings": "Wings"
+      },
+      "UrsineAvenger": {
+        "GreatBear": {
+          "Description": "When you transform, you can take on a bear's bulk and size. You can spend an additional action when using Ursine Avenger Form to gain the effects of a 1st-rank *enlarge* spell, which lasts for the spell's normal duration or until you leave your Ursine Avenger Form, whichever comes first.",
+          "Frequency": "**Frequency** once per hour",
+          "Effect": "@UUID[Compendium.pf2e.feat-effects.Item.PZuICqcgpErGQcqG]{Effect: Great Bear}",
+          "MightyBear": "The power of the bear within you can expand your physical presence even further. The *enlarge* spell you cast with your Great Bear feat is heightened to 4th rank."
+        }
       },
       "Vampire": {
         "ViciousFangs": {
@@ -13910,7 +14034,7 @@
           "BornOfAnimal": "**Animal** Your hide thickens, granting a +1 circumstance bonus to AC.",
           "BornOfCelestial": "**Celestial** You recover some of your celestial perfection, granting you and all allies within 15 feet a +1 status bonus to attack rolls.",
           "BornOfElements": "**Elements** You're surrounded in wind and dust, granting concealment each round that you spend at least 1 action that has the move trait. You can't use this concealment to Hide or Sneak, as normal for sources of obvious concealment.",
-          "BornOfItem": "**Object ** Your skin transmutes partially into an inorganic substance, granting resistance 5 to your choice of bludgeoning, piercing, or slashing.",
+          "BornOfItem": "**Object** Your skin transmutes partially into an inorganic substance, granting resistance 5 to your choice of bludgeoning, piercing, or slashing.",
           "BornOfVegetation": "**Vegetation** You trigger an accelerated growth, gaining fast healing 5.",
           "Description": "As you enter your yaoguai form, you draw upon your internal magic to assume an even greater form. When you Change Shape to enter your yaoguai form, you can spend an additional action to gain the effects of Enlarge and an additional effect based on your heritage. This effect persists for 1 minute or until you Change Shape again.",
           "Effect": "@UUID[Compendium.pf2e.feat-effects.Item.OBsItGQScxHyUcmR]{Effect: Unleash Yaoguai Might}",
@@ -14132,7 +14256,7 @@
         "Government": "Government",
         "AbilityScores": "Ability Scores"
       },
-      "Title": "Build your Kingdom"
+      "Title": "Start Building Kingdom"
     },
     "Kingdom": {
       "Activities": "Kingdom Activities",
