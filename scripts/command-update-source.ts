@@ -45,11 +45,11 @@ export async function commandUpdateSource(
   weblateToken: string,
   dry: boolean,
   filter: string[],
-  debugSkip?: string
+  debugSkip?: string,
 ) {
   const weblate = createWeblateApi(
     weblateToken,
-    "https://weblate.n1xx1.me/api"
+    "https://weblate.n1xx1.me/api",
   );
 
   const manifest = await readManifest(join(systemDir, "static", "system.json"));
@@ -69,7 +69,7 @@ export async function commandUpdateSource(
 
   const labels = await weblate.getAll<WeblateLabel>(
     `/projects/foundryvtt-pathfinder-2e/labels/`,
-    { page_size: 500 }
+    { page_size: 500 },
   );
 
   const labelsMap = new Map(labels.map((l) => [l.name, l.id]));
@@ -79,13 +79,13 @@ export async function commandUpdateSource(
     "(" +
       langKeys.map((k) => k.replace(".", "\\.")).join("|") +
       ")([^a-zA-Z0-9\\.]|$)",
-    "g"
+    "g",
   );
   const langKeysMap = new Map(
     langKeys.map((k) => [
       k,
       { used: [] as string[], sources: new Set<string>() },
-    ])
+    ]),
   );
 
   const c: UpdateSourceContext = {
@@ -126,7 +126,7 @@ type UpdateSourceContext = {
 async function translateLang(c: UpdateSourceContext) {
   const res = await c.weblate.getAll<WeblateUnit>(
     `/translations/foundryvtt-pathfinder-2e/lang/en/units/`,
-    { page_size: 500 }
+    { page_size: 500 },
   );
 
   for (const unit of res) {
@@ -161,14 +161,14 @@ async function translateLang(c: UpdateSourceContext) {
       }
       console.log(
         `Set explaination = "${explaination}", labels = "${tags.join(
-          ","
-        )}" on ${unit.id} (${unit.context})`
+          ",",
+        )}" on ${unit.id} (${unit.context})`,
       );
     } catch (e) {
       console.log(
         `Failed to set explaination = "${explaination}", labels = "${tags.join(
-          ", "
-        )}" on ${unit.id} (${unit.context})`
+          ", ",
+        )}" on ${unit.id} (${unit.context})`,
       );
     }
   }
@@ -177,7 +177,7 @@ async function translateLang(c: UpdateSourceContext) {
 async function translateSource(
   weblateName: string | undefined,
   data: EntriesWithSource,
-  c: UpdateSourceContext
+  c: UpdateSourceContext,
 ) {
   const dataMap = new Map(data.map((f) => [f.name, f]));
 
@@ -193,7 +193,7 @@ async function translateSource(
     const tag = getRealTag(source);
 
     if (!tag && source) {
-      console.log(`Unknown source: ${source} (item: ${entry.name})`);
+      console.log(`Unknown source: "${source}" (item: ${entry.name})`);
       throw "stop";
     }
     if (!tag) {
@@ -216,7 +216,7 @@ async function translateSource(
 
   const res = await c.weblate.getAll<WeblateUnit>(
     `/translations/foundryvtt-pathfinder-2e/${weblateName}/en/units/`,
-    { q: "NOT has:label", page_size: 500 }
+    { q: "NOT has:label", page_size: 500 },
   );
 
   for (const unit of res) {
@@ -277,12 +277,12 @@ async function applySourceTag(
   source: string,
   unit: WeblateUnit,
   name: string,
-  c: UpdateSourceContext
+  c: UpdateSourceContext,
 ) {
   const tag = getRealTag(source);
 
   if (!tag) {
-    console.log(`Unknown source: ${source} (item: ${name})`);
+    console.log(`Unknown source: "${source}" (item: ${name})`);
     throw "stop";
   }
 
@@ -319,7 +319,7 @@ function getObjectKeys(lang: LangFile, path?: string): string[] {
 function walkObjectLeaves(
   o: any,
   fn: (k: string | number | undefined, v: any) => void,
-  k?: string | number
+  k?: string | number,
 ) {
   if (Array.isArray(o)) {
     for (const [k, v] of o.entries()) {
