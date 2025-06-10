@@ -2387,6 +2387,12 @@
                 },
                 "Twin": {
                     "SecondPlus": "Gemella 2°+ Attacco"
+                },
+                "FIELDS": {
+                    "expend": {
+                        "label": "Spesa",
+                        "hint": "Questo indica quante munizioni sono consumate con ogni Colpo a distanza che effettui con l'arma. Altre abilità potrebbero citare Spesa come numero di munizioni richieste per completare l'azione."
+                    }
                 }
             },
             "CreationDialog": {
@@ -2768,7 +2774,20 @@
                     "coral-armor": "Armatura di Corallo",
                     "lamellar-breastplate": "Corsaletto Lamellare",
                     "hellknight-breastplate": "Corsaletto dei Cavalieri Infernali",
-                    "mantis-shell": "Guscio di Mantide"
+                    "mantis-shell": "Guscio di Mantide",
+                    "scroll-robes": "Vesti di Pergamena",
+                    "sankeit": "Sankeit",
+                    "fortress-plate": "Armatura Fortezza",
+                    "niyahaat": "Niyaháat",
+                    "o-yoroi": "O-Yoroi",
+                    "leather-lamellar": "Lamellare di Cuoio",
+                    "gi": "Gi",
+                    "bastion-plate": "Armatura Bastione",
+                    "quilted-armor": "Farsetto d'Arme",
+                    "ceramic-plate": "Armatura di Ceramica",
+                    "buckle-armor": "Armatura con Fibbie",
+                    "wooden-breastplate": "Corsaletto di Legno",
+                    "leaf-weave": "Tessuto di Foglie"
                 },
                 "Category": {
                     "light-barding": "Bardatura Leggera",
@@ -2952,13 +2971,17 @@
                         "Title": "Danno Persistente ({actor})",
                         "Add": "Aggiungi Danno Persistente",
                         "Remove": "Rimuovi Danno Persistente",
-                        "Invalid": "La formula non è valida."
+                        "Invalid": "La formula non è valida.",
+                        "DamageType": "Tipo di Danno",
+                        "DC": "CD",
+                        "Edit": "Modifica Danni Persistenti",
+                        "Formula": "Formula"
                     },
                     "Error": {
                         "DoesNotExist": "Non esiste alcun danno {damageType} persistente in questo personaggio"
                     },
                     "Chat": {
-                        "Recover": "Tira Prova per il Recupero",
+                        "Recover": "Effettua Prova per il Recupero",
                         "RecoverLabel": "Recupero: {name}"
                     },
                     "RollDamage": "Tira Danno",
@@ -3163,7 +3186,8 @@
                 "Linked": {
                     "Title": "Se impostato, impedisce alla condizione di essere rimosse finché dura"
                 },
-                "OnsetActive": "Latenza Attiva"
+                "OnsetActive": "Latenza Attiva",
+                "Plural": "Afflizioni"
             },
             "GMNotes": {
                 "Title": "Note del GM",
@@ -3241,7 +3265,15 @@
                     "gauntlet-buckler": "Guanto con Brocchiere",
                     "harnessed-shield": "Scudo con Bardatura",
                     "fortress-shield": "Scudo Fortezza",
-                    "dart-shield": "Scudo con Dardi"
+                    "dart-shield": "Scudo con Dardi",
+                    "salvo-shield": "Scudo a Salve",
+                    "heavy-rondache": "Rondaccia Pesante",
+                    "casters-targe": "Targa dell'Incantatore",
+                    "hide-shield": "Scudo di Pelle",
+                    "klar": "Klar",
+                    "razor-disc": "Disco a Rasoio",
+                    "swordstealer-shield": "Scudo Rubaspade",
+                    "meteor-shield": "Scudo Meteora"
                 },
                 "Rune": {
                     "Reinforcing": {
@@ -3302,7 +3334,62 @@
                 "Plural": "Background"
             },
             "Class": {
-                "Plural": "Classi"
+                "Plural": "Classi",
+                "FIELDS": {
+                    "hp": {
+                        "label": "Punti Ferita"
+                    },
+                    "perception": {
+                        "label": "Percezione"
+                    },
+                    "savingThrows": {
+                        "fortitude": {
+                            "label": "Tempra"
+                        },
+                        "reflex": {
+                            "label": "Riflessi"
+                        },
+                        "will": {
+                            "label": "Volontà"
+                        }
+                    },
+                    "attacks": {
+                        "advanced": {
+                            "label": "Armi Avanzate"
+                        },
+                        "simple": {
+                            "label": "Armi Semplici"
+                        },
+                        "martial": {
+                            "label": "Armi da Guerra"
+                        },
+                        "unarmed": {
+                            "label": "Attacchi Senz'Armi"
+                        }
+                    },
+                    "defenses": {
+                        "light": {
+                            "label": "Armatura Leggera"
+                        },
+                        "medium": {
+                            "label": "Armatura Media"
+                        },
+                        "heavy": {
+                            "label": "Armature Pesanti"
+                        },
+                        "unarmored": {
+                            "label": "Difesa Senz'Armatura"
+                        }
+                    },
+                    "spellcasting": {
+                        "label": "Modificatori Attacco & CD Incantesimi"
+                    },
+                    "trainedSkills": {
+                        "additional": {
+                            "label": "Abilità Aggiunte"
+                        }
+                    }
+                }
             }
         },
         "Actor": {
@@ -4605,7 +4692,7 @@
                         "Plural": "{xpPerFour} × 4 / {recipients} Membri del Gruppo",
                         "Singular": "1 Membro del Gruppo"
                     },
-                    "Label": "Ricompensa: {xp} PE"
+                    "Label": "Ricompensa: <award>{xp} PE</award>"
                 },
                 "Budget": "Budget: {spent}/{max} PE (Livello del Gruppo {partyLevel})",
                 "Threat": "Pericolosità: <threat>{threat}</threat>"
