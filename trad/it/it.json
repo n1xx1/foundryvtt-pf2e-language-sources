@@ -19,8 +19,8 @@
                     "FastHealing": "<p>Un mostro dotato di questa capacità recupera il numero indicato di Punti Ferita ogni round all'inizio del suo turno.</p>",
                     "GreaterConstrict": "<p>Il mostro infligge l'ammontare di danni indicato a un qualsiasi numero di creature da lui @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrate} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenute}. Ognuna di quelle creature può tentare un TS base su Tempra con la CD indicata. Una creatura che fallisce questo TS cade @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{priva di sensi}, mentre una creatura che lo supera è temporaneamente immune alla condizione Privo di Sensi inflitta da Stritolare Superiore per 1 minuto.</p>",
                     "GreaterDarkvision": "<p>Un mostro dotato di scurovisione può vedere alla perfezione nelle aree di oscurità e di luce fioca, anche se vede le cose solo in bianco e nero. Un mostro dotato di scurovisione superiore può vedere anche attraverso forme di oscurità magica.</p>",
-                    "ImprovedGrab": "<p>Il mostro può usare @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Afferrare} come azione gratuita innescata da un suo attacco iniziale andato a segno. Un mostro con Afferrare Migliorato deve comunque spendere un'azione per estendere la durata per le creature che ha già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrato}.</p>",
-                    "ImprovedKnockdown": "<p>Il mostro può usare @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Gettare a Terra} come azione gratuita innescata da un suo attacco iniziale andato a segno.</p>",
+                    "ImprovedGrab": "<p><strong>Requisiti</strong> L'ultima azione del mostro è stata un Colpo andato a segno con la capacità Afferrare Migliorato nella sua voce di danno, oppure il mostro ha una creatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuta}</p><hr /><p><strong>Effetto</strong> Se usata dopo un Colpo, il mostro tenta di [[/act grapple]] con la creatura usado la parte del corpo con la quale ha attaccato come azione gratuita. Questa prova non applica e non conta ai fini della penalità da attacchi multipli.</p><p>Il mostro può invece spendere un'azione per usare Afferrare e scegliere una creatura che sta afferrando o trattenendo con un'appendice con la capacità Afferrare per estendere automaticamete la condizione fino alla fine del turno successivo del mostro.</p>",
+                    "ImprovedKnockdown": "<p><strong>Requisiti</strong> L'ultima azione del mostro è stata un successo con un Colpo che contiene la capacità Gettare a Terra Migliorato alla sua voce dei danni</p><hr /><p><strong>Effetto</strong> Il mostro tenta di [[/act trip]]{Sbilanciare} la creatura come azione gratuita. Questa prova non applica e non conta ai fini della penalità da attacchi multipli del mostro.</p>",
                     "ImprovedPush": "<p>Il mostro può usare @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Spintonare} come azione gratuita innescata da un suo attacco iniziale andato a segno.</p>",
                     "Lifesense": "<p>Percepire Vita consente a un mostro di percepire l'essenza vitale delle creature viventi e non morte entro la gittata indicata. La percezione è in grado di distinguere tra l'energia positiva che anima le creature viventi e l'energia negativa che anima le creature non morte, allo stesso modo in cui la vista distingue i colori.</p>",
                     "NegativeHealing": "<p>Una creatura con guarigione negativa trae salute dall'energia negativa piuttosto che dall'energia positiva. È danneggiata da un danno positivo e non viene curata da effetti curativi positivi. Non subisce danni negativi ed è curato da effetti negativi che curano i non morti.</p>",
@@ -1121,7 +1121,7 @@
         "SETTINGS": {
             "Automation": {
                 "RulesBasedVision": {
-                    "ManagedBy": "Gestito da <rbv>visione basata sulle regole</rbv>.",
+                    "ManagedBy": "Gestito da visione basata sulle regole.",
                     "Name": "Visione Basata sulle Regole",
                     "Hint": "Applica le meccaniche di visione che fanno il possibile per replicare le regole di Pathfinder Seconda Edizione. Abilitare questa impostazione rimuove la possibilità di configurare sia la Visione Globale Senza Restrizioni sia il raggio di vista dei Token.",
                     "ViewWorldSetting": "Mostra Impostazioni Mondo"
@@ -1270,7 +1270,7 @@
             },
             "ResetChanges": "Reimposta Modifiche",
             "WorldClock": {
-                "Name": "Orario Mondo",
+                "Name": "Configurazione Orario Mondo",
                 "Label": "Configura Orario Mondo",
                 "Hint": "Configura l'aspetto dell'applicazione Orario Mondo.",
                 "ResetWorldTime": {
@@ -1279,6 +1279,39 @@
                         "Question": "Sei sicuro di voler reimpostare il tempo trascorso in questo mondo?",
                         "Warning1": "Gli effetti di gioco dipendenti dal tempo potrebbero essere compromessi.",
                         "Warning2": "Questa scelta non può essere cambiata."
+                    },
+                    "Label": "Reimposta Data/Ora del Mondo"
+                },
+                "DateThemes": {
+                    "AR": "Golarion (Calendario di Absalom)",
+                    "AD": "Terra (Calendario Gregoriano)",
+                    "CE": "Senza Tema (Calendario Gregoriano)",
+                    "IC": "Golarion (Calendario Imperiale)"
+                },
+                "TimeConventions": {
+                    "12": "12 Ore",
+                    "24": "24 Ore"
+                },
+                "FIELDS": {
+                    "dateTheme": {
+                        "hint": "Configura il tema per l'applicazione Ora Mondo.",
+                        "label": "Tema Data"
+                    },
+                    "playersCanView": {
+                        "hint": "Configura se i giocatori possono o meno vedere l'Orologio del Mondo.",
+                        "label": "Accesso Giocatori"
+                    },
+                    "showClockButton": {
+                        "hint": "Configura se mostrare o meno il tasto orologio (richiede aggiornamento).",
+                        "label": "Mostra Tasto Orologio"
+                    },
+                    "syncDarkness": {
+                        "hint": "Configura se il Livello di Oscurità della scena deve riflettere l'ora del giorno.",
+                        "label": "Sincronizza Oscurità"
+                    },
+                    "timeConvention": {
+                        "hint": "Mostra un orologio a 24 o 12 ore.",
+                        "label": "Convenzione Ora"
                     }
                 }
             },
@@ -1408,7 +1441,7 @@
                 "Title": "Regole Alternative",
                 "GradualBoosts": {
                     "Name": "Aumenti Graduali delle Caratteristiche",
-                    "Hint": "Distribuisci gli aumenti di caratteristica su più livelli. I giocatori ottengono gli aumenti a ogni livello accetto 6, 11 e 16."
+                    "Hint": "Distribuisci gli aumenti di attributo su più livelli. I giocatori ottengono gli aumenti a ogni livello eccetto 6, 11 e 16."
                 },
                 "Mythic": {
                     "Choices": {
@@ -2742,8 +2775,8 @@
                     "None": "nessuna"
                 },
                 "DivineAttribute": {
-                    "Label": "Caratteristica Divina",
-                    "Hint": "Se stai scegliendo il background Cresciuto nella Fede, le opzioni degli aumenti di caratteristica derivano da una divinità."
+                    "Label": "Attributo Divino",
+                    "Hint": "Se stai scegliendo il background Cresciuto nella Fede, le opzioni degli aumenti di attributo derivano da una divinità."
                 },
                 "DivineSkill": {
                     "Label": "Abilità Divina",
@@ -3060,8 +3093,8 @@
                         "Label": "Competenze"
                     },
                     "KeyAbilityOptions": {
-                        "Label": "Opzioni Caratteristica Chiave",
-                        "Hint": "Opzioni di caratteristica chiave in aggiunta a questa fornita dalla classe"
+                        "Label": "Opzioni Attributo Chiave",
+                        "Hint": "Opzioni di attributo chiave in aggiunta a quello fornito dalla classe"
                     },
                     "Senses": {
                         "Darkvision": {
@@ -3420,7 +3453,8 @@
                         "InfraredVision": "Vista a Infrarossi",
                         "MotionSense": "Percezione del Movimento",
                         "Truesight": "Visione del Vero",
-                        "Vision": "Visione"
+                        "Vision": "Visione",
+                        "Bloodsense": "Percezione del Sangue"
                     },
                     "WithAcuity": "{sense} ({acuity})",
                     "WithAcuityAndRange": "{sense} ({acuity}) {range} metri",
@@ -3461,7 +3495,7 @@
                     "HintFlexible": "Per preparare un incantesimo, abilitalo qua. Per preparare un trucchetto, trascinane uno da questa lista in uno slot della scheda del personaggio.",
                     "Search": "Cerca Incantesimi"
                 },
-                "AttributeModifiers": "Modificatori di Caratteristica",
+                "AttributeModifiers": "Modificatori di Attributo",
                 "Language": {
                     "amurrun": "Amurrun",
                     "ysoki": "Ysoki",
@@ -3615,7 +3649,7 @@
                     "InputMethod": {
                         "Manual": "Inserimento Manuale",
                         "Title": "Metodo di Input",
-                        "Description": "Cambiare metodo reimposta la tua distribuzione dei punteggi di caratteristica."
+                        "Description": "Cambiare metodo reimposta la tua distribuzione dei modificatori di attributo."
                     },
                     "VoluntaryFlaw": {
                         "Title": "Difetti Volontari",
@@ -3628,10 +3662,10 @@
                     "Boosts": "Aumenti",
                     "Boost": "Aumento",
                     "BackgroundMissingHelp": "Seleziona un background per selezionare gli aumenti.",
-                    "BackgroundBoostDescription": "Due amenti di caratteristica, uno deve essere a {a} o {b}.",
+                    "BackgroundBoostDescription": "Due amenti: uno deve essere a {a} o {b}.",
                     "AlternateBoostsLabel": "Aumenti Alternativi",
                     "AncestryMissingHelp": "Seleziona una stirpe per selezionare gli aumenti.",
-                    "Title": "Assegna i tuoi aumenti di caratteristica",
+                    "Title": "Assegna i tuoi aumenti",
                     "NotSelected": "Non Selezionato",
                     "Partial": "Parziale",
                     "LegacyFlaws": "Difetti Legacy",
@@ -3673,9 +3707,9 @@
                 },
                 "HandsOccupied": "Mani Occupate",
                 "Attribute": {
-                    "Key": "Caratteristica Chiave",
+                    "Key": "Attributo Chiave",
                     "Apex": "Attributo Apex",
-                    "Boosts": "Incrementi di Caratteristica"
+                    "Boosts": "Incrementi di Attributo"
                 },
                 "Proficiency": {
                     "SavingThrow": {
@@ -3879,7 +3913,7 @@
                 },
                 "Blurb": "Famiglio di {master}",
                 "NoAttribute": "Nessuno (Animale Domestico)",
-                "MinimumAttributeModifier": "Modificatore di Caratteristica Minimo"
+                "MinimumAttributeModifier": "Modificatore di Attributo Minimo"
             },
             "Hardness": {
                 "ShortLabel": "DUR"
@@ -4768,14 +4802,14 @@
         "HitPointsHeader": "Punti Ferita",
         "HitPointsShortLabel": "PF",
         "HitPointsDetailsLabel": "Dettagli PF",
-        "AbilityBoost": "Incremento di Caratteristica",
-        "AbilityBoostLevels": "Livelli di Incremento di Caratteristica",
+        "AbilityBoost": "Incremento di Attributo",
+        "AbilityBoostLevels": "Livelli di Incremento di Attributo",
         "AbilityCha": "Carisma",
         "AbilityCon": "Costituzione",
         "AbilityDex": "Destrezza",
         "AbilityFlaw": "Difetto",
         "AbilityInt": "Intelligenza",
-        "AbilityModifierLabel": "Modificatore di Caratteristica",
+        "AbilityModifierLabel": "Modificatore di Attributo",
         "AbilityFree": "Gratuito",
         "AbilityId": {
             "cha": "Car",
@@ -4794,7 +4828,7 @@
             "wis": "Prova di Saggezza",
             "cha": "Prova di Carisma"
         },
-        "AbilityTitle": "Caratteristica",
+        "AbilityTitle": "Attributo",
         "AbilityWis": "Saggezza",
         "ActionActionsLabel": "Azioni",
         "ActionNumber1": "Uno",
@@ -4965,7 +4999,7 @@
         "BiographyOrganizations": "Organizzazioni",
         "BiographyPersonalityHeader": "Personalità",
         "BonusLabel": {
-            "ability": "Bonus di caratteristica",
+            "ability": "Bonus di Attributo",
             "proficiency": "Bonus di competenza",
             "circumstance": "Bonus di circostanza",
             "item": "Bonus dell'oggetto",
@@ -5620,7 +5654,7 @@
         "OrphanedSpellsHeader": "Incantesimi Orfani (muovi nelle voci lancio incantesimi superiori)",
         "OverridesTitle": "Sostituzioni",
         "PenaltyLabel": {
-            "ability": "Penalità di Caratteristica",
+            "ability": "Penalità di Attributo",
             "proficiency": "Penalità di Competenza",
             "circumstance": "Penalità di Circostanza",
             "item": "Penalità dell'Oggetto",
@@ -5935,7 +5969,7 @@
             },
             "SecretDisposition": {
                 "Label": "Atteggiamento Segreto",
-                "Hint": "Attiva l'atteggiamento \"segreto\", che mostra un bordo viola per i possessori e nessun bordo o modifica al cursore per gli altri."
+                "Hint": "Attiva l'atteggiamento \"segreto\", che mostra un bordo viola per i possessori e nessun bordo o modifica al cursore per gli altri. Un token con questo atteggiamento non può essere bersagliato dai non proprietari."
             },
             "Flanking": "Fiancheggiare",
             "ActorLinkForced": "Gli attori {type} non possono essere scollegati."
@@ -5950,7 +5984,7 @@
         "TraitAdditive1": "Additivo 1",
         "TraitAdditive2": "Additivo 2",
         "TraitAdditive3": "Additivo 3",
-        "TraitAeon": "aeon",
+        "TraitAeon": "Aeon",
         "TraitAffixedToArmor": "Applicato a un'Armatura",
         "TraitAffixedToArmorOrAWeapon": "Applicato a un'Armatura o a un'Arma",
         "TraitAffixedToWeapon": "Applicato a un'Arma",
@@ -6085,7 +6119,7 @@
         "TraitDescriptionConsecration": "Un incantesimo di consacrazione migliora un'area per un lungo periodo di tempo. Una determinata area può avere un solo effetto di consacrazione alla volta. Il nuovo effetto tenta di contrastare qualsiasi esistente in aree di sovrapposizione.",
         "TraitDescriptionConsumable": "Un oggetto con questo tratto può essere usato una sola volta. Se non diversamente specificato, viene distrutto dopo l'attivazione. Gli oggetti monouso includono gli oggetti alchemici e quelli magici che si possono usare solo una volta, come pergamene e talismani. Quando un personaggio crea oggetti monouso, può crearli in partite da quattro.",
         "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dall'energie positive o negative. I costrutti sono spesso privi di intelletto; sono immuni al sanguinamento, effetti di morte, malattie, guarigione, attacchi non letali, veleno, spirito, positivo, negativo e alle condizioni condannato, risucchiato, affaticato, paralizzato, nauseato e privo di sensi; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
-        "TraitDescriptionContact": "Questo veleno viene rilasciato al contatto con la pelle.",
+        "TraitDescriptionContact": "Un veleno a contatto viene attivato spargendolo su un oggetto o direttamente sulla pelle di una creatura vivente. La prima creatura che tocca l’oggetto avvelenato deve tentare un tiro salvezza contro il veleno; se il veleno viene applicato direttamente, la creatura deve tentare immediatamente un tiro salvezza appena il veleno tocca la sua pelle. I veleni a contatto sono impossibili da applicare a una creatura tramite un attacco con un’arma, a causa delle loro modalità di somministrazione, senza avvelenarsi da soli. Tipicamente il tempo di latenza di un veleno a contatto è di 1 minuto.",
         "TraitDescriptionCurse": "Una maledizione è un effetto che provoca un'afflizione a lungo termine su una creatura. Le maledizioni sono sempre magiche e in genere sono il risultato di un incantesimo o una trappola. Gli effetti con questo tratto possono essere rimossi solo da effetti che prendono di mira specificamente le maledizioni.",
         "TraitDescriptionCursed": "Un oggetto con questo tratto è maledetto causando problemi al suo proprietario. Una maledizione non viene individuata quando l'oggetto è identificato, sebbene un successo critico riveli sia la presenza che l'esatta natura della maledizione. Gli oggetti maledetti non possono essere scartati una volta che sono stati innescati o investiti per la prima volta. L'oggetto può essere rimosso solo se viene rimossa anche la maledizione.",
         "TraitDescriptionCursebound": "Gli incantesimi con questo tratto aumentano la gravità della tua maledizione oracolare quando vengono lanciati. Di solito solo gli incantesimi di rivelazione hanno questo tratto. Non puoi lanciare un incantesimo infausto se non hai una maledizione oracolare.",
@@ -6224,7 +6258,7 @@
         "TraitDescriptionStance": "Una posizione è una strategia di combattimento generica che adotti usando un'azione con il tratto posizione, e in cui rimani per un po' di tempo. Una posizione dura fino a quando non sei fuori combattimento, fino a quando i suoi requisiti (se esistono) non vengono violati, fino alla fine dell'incontro o fino a quando non adotti una nuova posizione, a seconda di quale evento si verifichi per primo. Dopo aver usato un'azione con il tratto posizione, non puoi usarne un'altra per 1 round. Puoi adottare o essere in una posizione solo in modalità incontro.",
         "TraitDescriptionStaff": "Questo oggetto magico contiene incantesimi con un tema particolare e consente a un incantatore di lanciare incantesimi aggiuntivi preparando il bastone.",
         "TraitDescriptionStrix": "Umanoidi alati, che per lo più vivono in Cheliax e nei suoi paraggi.",
-        "TraitDescriptionStructure": "Quando un oggetto con il tratto struttura viene attivato prende la forma di un edificio o di un'altra struttura magica. L'oggetto deve essere attivato su un lotto di terra libero da altre strutture. La struttura si adatta al terreno naturale, adottando i requisiti strutturali necessari per essere costruito in quella zona. La struttura si sistema attorno a piccoli elementi del paesaggio, come stagni o guglie di pietra, però non può essere creata sull'acqua o altre superfici non solide. Se l'oggetto è attivato sulla neve, dune di sabbia o altre superfici molli con uno strato sottostante solido, le fondamenta (se presenti) della struttura raggiungeranno il terreno solido. Se un oggetto con questo tratto è attivato su una superficie solida ma instabile, come per esempio una palude o un'area tormentata da scosse, ogni giorno effettua una @Check[flat|dc:3]: in caso di fallimento la struttura inizia a sprofondare o crollare. Quando appare, la struttura non danneggia le creature all'interno dell'area inoltre non può essere creata all'interno di una folla o in un'area densamente popolata. Qualsiasi creatura che venga involontariamente catturata dentro la struttura, quando l'oggetto è attivato, si ritrova illesa all'interno della struttura completa e ha sempre un percorso libero per fuggire. Una creatura all'interno della struttura, quando termina l'attivazione, non viene ferita e atterra illesa sul terreno se si trovava a un piano più alto della struttura.",
+        "TraitDescriptionStructure": "Un incantesimo, attivazione di un oggetto o abilità con il tratto struttura forma un edificio o un'altra struttura magica. La struttura deve essere creata su un lotto di terra libero da altre strutture. La struttura si adatta al terreno naturale, adottando i requisiti strutturali necessari per essere costruito in quella zona. La struttura si sistema attorno a piccoli elementi del paesaggio, come stagni o guglie di pietra, però non può essere creata sull'acqua o altre superfici non solide. Se è creata sulla neve, dune di sabbia o altre superfici molli con uno strato sottostante solido, le fondamenta (se presenti) della struttura raggiungeranno il terreno solido. Se la struttura è su una superficie solida ma instabile, come per esempio una palude o un'area tormentata da scosse, ogni giorno effettua una @Check[flat|dc:3]: in caso di fallimento la struttura inizia a sprofondare o crollare.</p><p>Quando appare, la struttura non danneggia le creature all'interno dell'area inoltre non può essere creata all'interno di una folla o in un'area densamente popolata. Qualsiasi creatura che venga involontariamente catturata dentro la struttura, quando è creata, si ritrova illesa all'interno della struttura completa e ha sempre un percorso libero per fuggire. Una creatura all'interno della struttura, quando termina l'effetto, non viene ferita e atterra illesa sul terreno se si trovava a un piano più alto della struttura",
         "TraitDescriptionSuli": "I suli sono eredi planari discendenti dai jann.",
         "TraitDescriptionSwashbuckler": "Questo tratto indica le capacità legate alla classe dello spadaccino.",
         "TraitDescriptionSweep": "Quest'arma effettua ampie spazzate o attacchi rotanti, rendendo più semplice attaccare nemici multipli. Quando attacchi con quest'arma ottieni bonus di circostanza +1 al tuo Tiro per Colpire se hai già tentato di attaccare un bersaglio differente in questo turno usando quest'arma.",
@@ -6257,7 +6291,7 @@
         "TraitDescriptionWater": "Gli effetti con il tratto acqua manipolano o evocano acqua. Quelli che manipolano l'acqua non hanno effetto in un'area priva di acqua. Le creature con questo tratto sono fatte principalmente di acqua o hanno una connessione con l'acqua magica.",
         "TraitDescriptionWitch": "Questo tratto indica le capacità legate alla classe del fattucchiere.",
         "TraitDescriptionWizard": "Questo tratto indica le capacità legate alla classe del mago.",
-        "TraitDescriptionApex": "Quando Investi un Oggetto che ha il tratto apex, questo migliora uno dei tuoi punteggi di caratteristica, aumentandolo di 2 o fino a un totale di 18, a seconda di quale conceda il punteggio più alto. Questo ti dà tutti i benefici del nuovo punteggio di caratteristica fino alla fine dell'investitura. Un oggetto apex concede questo beneficio solo la prima volta che viene investito entro un periodo di 24 ore e puoi beneficare di un solo oggetto apex alla volta. Se provi a investire un oggetto apex quando ne hai già investito uno, non ottieni l'incremento del punteggio di caratteristica, pur ottenendo altri effetti dall'Investitura dell'Oggetto.",
+        "TraitDescriptionApex": "<p>Quando Investi un Oggetto che ha il tratto apex, questo migliora uno dei tuoi attributi, aumentandolo il modificatore di attributo di 1 o fino a un totale di +4, a seconda di quale conceda il punteggio più alto. Questo ti dà tutti i benefici del nuovo punteggio di caratteristica fino alla fine dell'investitura. Per esempio, in aggiunta a aumentare i tiri che esegui usando l'attributo, aumentare la tua Intelligenza ti permette di diventare addestrato in un'abilità aggiuntiva e imparare una nuova lingua e aumentare la tua Costituzione ti da più Punti Ferita.</p><p>Un oggetto apex concede questo beneficio solo la prima volta che viene investito entro un periodo di 24 ore e puoi beneficiare di un solo oggetto apex alla volta. Se provi a investire un oggetto apex quando ne hai già investito uno, non ottieni l'incremento del modificatore di attributo, pur ottenendo altri effetti dall'Investitura dell'Oggetto.</p>",
         "TraitDescriptionElixir": "Gli elisir sono liquidi alchemici che vengono usati bevendoli.",
         "TraitDescriptionFey": "Le creature del Primo Mondo sono chiamate fatate.",
         "TraitDescriptionMutagen": "Un elisir con il tratto mutageno trasforma temporaneamente il corpo del soggetto e ne altera la mente. Un mutageno fornisce sempre uno o più effetti benefici insieme a uno o più effetti dannosi. I mutageni sono effetti di metamorfosi, il che significa che puoi beneficiare solo di uno alla volta.",
@@ -7085,7 +7119,7 @@
             "MasterActor": "Personaggio Padrone",
             "MasterLevel": "Livello Padrone",
             "SelectMaster": "Seleziona un padrone...",
-            "MasterSpellcastingAbility": "Caratteristica Maestro",
+            "MasterSpellcastingAbility": "Attributo del Maestro",
             "TotalNumberFamiliarAbilities": "# totale di Abilità del Famiglio",
             "Familiar": "Famiglio",
             "Creature": "Creatura",
@@ -9100,7 +9134,7 @@
                 "Prompt": "Tratta le Carte come pugnali o dardi?"
             },
             "AquaticCombat": {
-                "RangedNote": "Gli attacchi a distanza che infliggono danni contundenti o taglienti mancano automaticamente se l'attaccante o il bersaglio è sott'acqua, e gli attacchi a distanza perforanti sferrati da una creatura sott'acqua o contro un bersaglio sott'acqua vedono i propri incrementi di gittata dimezzati.",
+                "RangedNote": "Gli attacchi a distanza sferrati da una creatura sott'acqua o contro un bersaglio sott'acqua hanno i propri incrementi di gittata dimezzati.",
                 "FireNote": "Non puoi lanciare incantesimi di fuoco o usare azioni con il tratto fuoco sott'acqua."
             },
             "SpellEffectEvolutionSurge": {
@@ -9825,7 +9859,7 @@
                 "Martyr": "Perdi @Damage[(@item.rank)d8]{$1 Punti Ferita}, che non puoi ridurre o mitigare in alcun modo, e il tuo alleato recupera un numero equivalente di Punti Ferita. @UUID[Compendium.pf2e.feat-effects.Item.7ogytOgDmh4h2g5d]{Effetto: Recupero Eroico}",
                 "Remediate": "Se la tua azione successiva è usare la tua sorgente divina per lanciare un incantesimo guarire o ferire da 3 azioni per danneggiare delle creature, puoi sfruttare l'energia residua per controbilanciare le forze opposte. In aggiunta ai suoi normali effetti, puoi usare il tuo incantesimo guarire o ferire per tentare di contrastare un effetto divino nell'area dell'incantesimo.",
                 "ScintillatingSpell": "Se la tua prossima azione è Lanciare un Incantesimo che non ha il tratto oscurità, non ha durata e richiede alle creature di tentare un tiro salvezza su Riflessi, l'incantesimo esplode in uno spruzzo di luci scintillanti, in aggiunta ai suoi altri effetti. Ogni creatura che ha fallito il tiro salvezza su Riflessi contro l'incantesimo è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliata} per 1 round, e quelle che hanno ottenuto un fallimento critico sono @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecate} per 1 round.",
-                "ExplosiveArrival": "Se la tua prossima azione è Lanciare un Incantesimo con il tratto evocazione, tutte le creature in un'@Template[emanation|distance:10] attorno alla creatura che hai evocato subiscono @Damage[(@item.level)d4[fire]|traits:area-damage]{$1 danni da fuoco}. Se la creatura evocata ha il tratto @Damage[(@item.level)d4[acid]|traits:area-damage]{acido}, @Damage[(@item.level)d4[electricity]|traits:area-damage]{elettricità}, @Damage[(@item.level)d4[cold]|traits:area-damage]{freddo}, @Damage[(@item.level)d4[sonic]|traits:area-damage]{sonoro} o @Damage[(@item.level)d4[spirit]|traits:area-damage]{spirito}, puoi invece infliggere danni di quel tipo.",
+                "ExplosiveArrival": "Tutte le creature in un'@Template[emanation|distance:10] attorno alla creatura che hai evocato subiscono @Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.explosiveArrivalDamage]|options:area-damage]{$1 danni}. Se la creatura evocata ha il tratto acido, elettricità, freddo, sonoro o spirito, puoi invece infliggere danni di quel tipo.",
                 "DefensiveRecovery": "Se il bersaglio recupera Punti Ferita grazie all'incantesimo, ottiene anche bonus di status +2 a CA e Tiri Salvezza per 1 round. @UUID[Compendium.pf2e.feat-effects.Item.jwxurN6JPQm9wXug]{Effetto: Recupero Difensivo}",
                 "ReachSpell": "Se con la tua azione successiva Lanci un Incantesimo che ha un raggio, estendi quest'ultimo di 9 metri. Come di consueto in questi casi, se l'incantesimo ha di norma raggio contatto, estendi quest'ultimo a 9 metri.",
                 "CourageousAdvance": "Un singolo alleato che ottiene un bonus di status grazie all'incantesimo può usare immediatamente una reazione per Avanzare.",
@@ -10157,7 +10191,7 @@
         "TraitAttachedToAThrownWeapon": "Unito a un'Arma da Lancio",
         "TraitDescriptionConrasu": "Un popolo fatto di forza cosmica cosciente ospitato all'interno di esoscheletri unici. I conrasu forgiano e usano queste armi.",
         "TraitDiv": "Div",
-        "TraitDescriptionMinion": "I servitori sono creature che servono direttamente un'altra creatura. Una creatura con questo tratto può usare solo 2 azioni per turno, non ha reazioni e non può agire quando non è il tuo turno. Il tuo servitore agisce nel tuo turno in combattimento, una volta per turno, quando spendi un'azione per impartirgli dei comandi. Per un compagno animale usi Comandare un Animale; per un servitore che è effetto di un incantesimo o di un oggetto magico, come per esempio un servitore evocato, Mantieni un Incantesimo o Mantieni un'Attivazione; se non diversamente specificato, emetti un comando verbale come una singola azione con i tratti Uditivi e di Concentrazione. Se non viene dato alcun comando, i servitori non usano azioni se non per difendersi o per sfuggire a danni evidenti. Se lasciati incustoditi abbastanza a lungo, in genere 1 minuto, i servitori con il tratto Privo di Intelletto di solito non agiscono, gli Animali seguono il loro istinto e i servitori intelligenti agiscono come vogliono. Un servitore non può controllare altre creature.",
+        "TraitDescriptionMinion": "<p>I servitori sono creature che servono direttamente un'altra creatura. Il tuo servitore agisce nel tuo turno in combattimento, una volta per turno, quando spendi un'azione per impartirgli dei comandi. Per un compagno animale usi Comandare un Animale; per un servitore che è effetto di un incantesimo o di un oggetto magico, come per esempio un servitore evocato, Mantieni l'effetto; se non diversamente specificato, emetti un comando verbale come una singola azione con i tratti uditivi e di concentrazione. Se non viene dato alcun comando, i servitori non usano azioni se non per difendersi o per sfuggire a danni evidenti. Se lasciati incustoditi abbastanza a lungo, in genere 1 minuto, i servitori con il tratto privo di intelletto di solito non agiscono, gli animali seguono il loro istinto e i servitori intelligenti agiscono come vogliono. Puoi avere al massimo quattro servitori sotto il tuo controllo.</p><p>Un servitore ha soltanto 2 azioni e 0 reazioni per turno, sebbene certe condizioni (come rallentato o accelerato) o abilità possano dargli una reazione che possono usare. Le alterazioni alle azioni di un servitore avvengono quando ottengono le azioni per il round. Un servitore non può controllare altre creature.</p>",
         "MagicTraditionUseSpellLabel": "Usa Tradizione Incantesimo",
         "PreparationTypeItems": "Solo Oggetti",
         "TraitDescriptionVishkanya": "Questi umanoidi vagamente serpentiformi hanno sangue e saliva velenosi.",
@@ -10262,7 +10296,7 @@
         "TraitDescriptionArtifact": "Gli oggetti con questo tratto sono artefatti. Questi oggetti magici non possono essere fabbricati con mezzi normali e non possono essere danneggiati da mezzi normali. Gli artefatti sono sempre rari o unici.",
         "SellItemConfirmHeader": "Conferma di Vendita",
         "SellItemQuestion": "Sei sicuro di voler vendere {item}?",
-        "TraitAffixedToGroundIn10FtRadius": "applicato al suolo in quattro spazi lungo un cerchio dal raggio di 3 metri",
+        "TraitAffixedToGroundIn10FtRadius": "Applicato al Suolo in Quattro Spazi Lungo un Cerchio dal Raggio di 3 metri",
         "TraitFulu": "Fulu",
         "TraitEvolution": "Evoluzione",
         "TraitDescriptionTrueName": "Alcuni incantesimi, talenti e oggetti hanno il tratto vero nome, il quale implica che il loro utilizzo richiede la conoscenza del vero nome di una creatura.",
@@ -10532,7 +10566,12 @@
             "HearingRange": {
                 "Caveat": "*Per motivi di prestazioni, il raggio è un vero misuramento piuttosto che uno basato su griglia.",
                 "Unlimited": "Illimitato",
-                "Hint": "Limita il raggio* con cui le creature possono sentire in questa scena come una rappresentazione di \"un ambiente che distorce i sensi, come una stanza rumorosa\" (Manuale del Giocatore p. 464). Richiede che la visione basata sulle regole sia abilitata."
+                "Hint": "Limita il raggio* con cui le creature possono sentire in questa scena come una rappresentazione di \"un ambiente che distorce i sensi, come una stanza rumorosa\" (Manuale del Giocatore p. 464). Richiede che la visione basata sulle regole sia abilitata.",
+                "Label": "Raggio Uditivo (metri)"
+            },
+            "SyncDarkness": {
+                "Label": "Sincronizza l'Oscurità all'Ora",
+                "Hint": "Quando l'ora del giorno cambia nella scena, aggiusta automaticamente il livello di oscurità (più scuro verso le ore della sera, più chiaro durante mezzogiorno)."
             }
         },
         "TraitDescriptionSanctified": "Se sei sacro o sacrilego, le tue azioni e incantesimi santificate ottengono lo stesso tratto.",
@@ -10787,7 +10826,7 @@
         "TraitDescriptionMonitor": "Le creature che provengono da o hanno una forte connessione con l'Axis, il Maelstrom o l'Ossario sono chiamate osservatori. Gli osservatori possono sopravvivere agli effetti ambientali di base dei piani nella Sfera Esterna.",
         "TraitDescriptionEthereal": "Le creature eteree sono native del Piano Etereo. Possono sopravvivere agli effetti ambientali di base del Piano Etereo.",
         "TraitAffixedToAMetalWeapon": "Applicato a un'Arma in Metallo",
-        "TraitDescriptionAnimal": "Un animale è una creatura con un'intelligenza relativamente bassa. In genere non ha un modificatore di caratteristica di Intelligenza oltre –4, non può parlare lingue e non può essere addestrato nelle abilità basate sull'Intelligenza.",
+        "TraitDescriptionAnimal": "Un animale è una creatura con un'intelligenza relativamente bassa. In genere non ha un modificatore di attributo di Intelligenza oltre –4, non può parlare lingue e non può essere addestrato nelle abilità basate sull'Intelligenza.",
         "TraitDescriptionCentaur": "I centauri hanno una parte superiore del corpo di umanoide e quella inferiore di equino.",
         "TraitDescriptionCaligni": "Queste creature sotterranee sono dotate di scurovisione; alcune di esse hanno anche il potere di generare oscurità.",
         "TraitGraveknight": "Cavaliere Tombale",
@@ -10944,7 +10983,48 @@
         "ArmorPropertyRuneMajorQuenching": "Estinguente Maggiore",
         "ArmorPropertyRuneSwallowSpike": "Mangiaspine",
         "ArmorPropertyRuneTrueQuenching": "Estinguente Pura",
-        "ArmorPropertyRuneGreaterSwallowSpike": "Mangiaspine Superiore"
+        "ArmorPropertyRuneGreaterSwallowSpike": "Mangiaspine Superiore",
+        "TraitAppliedToArmor": "Da applicare all'armatura",
+        "TraitAffixedToStructureObjectOrCreature": "Applicato a una Struttura, un Oggetto o una Creatura",
+        "TraitAdjusted": "Modifica",
+        "TraitAppliedToFootwear": "Applicata alle calzature",
+        "TraitAffixedToFirearmWithTheKickbackTrait": "Applicato a un'Arma da Fuoco Con il Tratto Rinculo",
+        "TraitDescriptionDeflecting": "Questo scudo è progettato per bloccare o deflettere determinati tipi di attacchi o armi. Aumenta di 2 la Durezza dello scudo contro il tipo di attacco indicato.",
+        "TraitAffixedToGroundIn20FtRadius": "Applicato al Suolo in Quattro Spazi Lungo un Cerchio dal Raggio di 6 metri",
+        "TraitAffixedToHarness": "Legato alle Redini",
+        "TraitExpandable": "Espandibile",
+        "TraitDescriptionAquadynamic": "Quest'armatura è progettata per l'uso subacqueo grazie al suo aspetto sinuoso e a materiali galleggianti collocati in punti strategici. Non applichi la penalità di armatura alle prove di Acrobazia o Atletica quando sei immerso nell'acqua o in liquidi analoghi.",
+        "TraitDescriptionFigurehead": "Sebbene molte navi siano adornate con sculture decorative, a volte gli equipaggi più audaci si procurano polene magiche per le loro navi.",
+        "TraitAffixedToObjectOrStructure": "Applicato a un Oggetto o a una Struttura",
+        "TraitAffixedToUnarmoredItem": "Applicato a un Oggetto di Difesa Senz'Armatura",
+        "TraitAffixedToLoadBearingWallOrPillar": "Applicato a un Muro o Pilastro Portante",
+        "TraitDescriptionAdjusted": "L'equipaggiamento include una modifica, specificata nella sua descrizione. Questa modifica è permanentemente integrata nell'equipaggiamento. Ciò significa che non può essere scambiata con un'altra, né si possono aggiungere ulteriori modifiche. Se la modifica altera le caratteristiche di base dell'oggetto, per esempio aggiungendo il tratto rumorosa, ciò viene indicato nella riga della tabella dell'equipaggiamento relativa all'oggetto.",
+        "TraitDeflectingSlashing": "Deflettente Tagliente",
+        "TraitDescriptionBrace": "Un'arma preparata è efficace per danneggiare gli avversari che si avvicinano. Quando ti Prepari per Colpire un avversario che si muove entro la tua portata, infliggi 2 danni di precisione aggiuntivi per ogni dado di danno dell'arma preparata.",
+        "StackGroupSprayPellets": "Palline a Getto",
+        "TraitAquadynamic": "Idrodinamica",
+        "TraitBrace": "Preparata",
+        "TraitAffixedToFirearmWithAReloadOf1": "Applicato a un'Arma da Fuoco Con una Ricarica di 1",
+        "TraitAppliedToArmorOrUnarmored": "Da applicare all'armatura o a un indumento per la difesa senz'armatura",
+        "TraitAffixedToGround": "Applicato al Suolo",
+        "TraitEntrenchRanged": "Trincerarsi a Distanza",
+        "TraitAffixedToATwoHandedFirearmOrCrossbow": "Applicato a un'Arma da Fuoco a Due Mani o a una Balestra",
+        "TraitAffixedToCreature": "Applicato a una Creatura",
+        "TraitAffixedToInnovation": "Applicato a un'Innovazione",
+        "TraitDeflectingPiercing": "Deflettente Perforante",
+        "TraitEntrenchMelee": "Trincerarsi in Mischia",
+        "TraitBarding": "Bardatura",
+        "TraitCoda": "Coda",
+        "TraitDeflectingBludgeoning": "Deflettente Contundente",
+        "TraitDeflectingPhysicalRanged": "Deflettente Fisico a Distanza",
+        "TraitFigurehead": "Polena",
+        "TraitAffixedToInstrument": "Attaccato a uno Strumento",
+        "TraitAppliedToANoninjectionMeleePiercingWeapon": "Applicato a un'arma da mischia non da iniezione che infligge danni perforanti",
+        "TraitAppliedToBasketBagOrContainer": "Applicata a un cesto, una borsa o un altro contenitore",
+        "TraitDescriptionEntrench": "Puoi entrare nell'armatura o riposizionare i suoi componenti articolati per proteggerti meglio da alcuni attacchi. Se sei addestrato in quest'armatura, mentre la indossi puoi spendere un’azione singola per guadagnare bonus di circostanza +1 alla CA contro un certo tipo di attacchi fino all'inizio del tuo turno successivo. Il tratto trincerarsi elenca il tipo di attacchi contro i quali si applica questo bonus, solitamente trincerarsi in mischia o trincerarsi a distanza.",
+        "TraitDescriptionBarding": "Puoi acquistare armature speciali per gli animali, chiamate bardature. Tutti gli animali possiedono il grado di competenza addestrato in bardature leggere, e gli animali addestrati al combattimento sono addestrati in bardature pesanti. La bardatura segue le stesse regole dell'armatura ad eccezione di quanto segue. Il Prezzo e il Volume di una bardatura dipendono dalla taglia dell'animale. A differenza di un'armatura, la voce Forza di una bardatura è indicata come modificatore, non come punteggio. La bardatura non può essere incisa con rune magiche, anche se potrebbero essere disponibili delle bardature magiche speciali.",
+        "TraitDescriptionCoda": "<p>Gli strumenti con il tratto coda funzionano perlopiù come bastoni, e hanno il tratto bastone. Ci sono due differenze: gli strumenti da coda sono strumenti musicali e possono essere preparati solo dai bardi. Non essendo fisicamente un bastone, non puoi usare uno strumento da coda per attaccare, né puoi inciderlo con rune d'arma.</p><p>Il processo di preparazione di uno strumento da coda prevede di suonare parti molto grandi di canzoni (tradizionali o di tua creazione) correlate agli incantesimi dentro lo strumento. Ciò lascia nello strumento dei riverberi magici che ti permettono di completare la canzone suonandone la coda in seguito durante la giornata.</p>",
+        "TraitDescriptionExpandable": "Quando viene attivato, un oggetto con il tratto espandibile cresce a una dimensione specificata. Se non è diversamente specificato, questo spazio deve essere adiacente a te e sul suolo, e l'oggetto deve avere abbastanza spazio libero per espandersi, altrimenti l'Attivazione non ha effetto. Quando l'effetto termina, l'oggetto espanso si disintegra (se è Monouso) o si restringe alle sue dimensioni normali (se non è monouso)."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
