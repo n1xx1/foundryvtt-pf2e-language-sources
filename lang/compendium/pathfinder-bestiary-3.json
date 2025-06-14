@@ -974,7 +974,7 @@
           "name": "Full Plate (see Death Blaze)"
         },
         "sRU8pYLkFEMCRECp": {
-          "description": "<p>When the vanguard dies, their body combusts in a blaze of fire and armor shrapnel.</p>\n<p>All creatures within a @Template[emanation|distance:10] take @Damage[3d6[fire],3d6[piercing]]{3d6 fire damage and 3d6 piercing damage} (@Check[reflex|dc:19|basic] save).</p>\n<p>The vanguard's armor is destroyed in the blaze, but their other gear is unaffected and left in a pile where they died.</p>",
+          "description": "<p>When the vanguard dies, their body combusts in a blaze of fire and armor shrapnel.</p>\n<p>All creatures within a @Template[emanation|distance:10] take @Damage[3d6[fire],3d6[piercing]|options:area-damage]{3d6 fire damage and 3d6 piercing damage} (@Check[reflex|dc:19|basic|options:area-effect] save).</p>\n<p>The vanguard's armor is destroyed in the blaze, but their other gear is unaffected and left in a pile where they died.</p>",
           "name": "Death Blaze"
         }
       },
@@ -11613,15 +11613,9 @@
     "Werebat": {
       "description": "<p>Werebats form organized colonies of opportunistic hunters. They aren't shy about transforming creatures to add to their colony, whom they initiate with elaborate social ceremonies and bloody hazing. The curse of the werebat gives them a strong urge to prey upon on weaker, lonely creatures. True werebats are often unusually tall and thin, with angular features. In combat, werebats favor their unarmed attacks because they can't fly while wielding weapons in their wings.</p>\n<hr />\n<p>Werecreatures are humanoids who transform into animals and animal-humanoid hybrids under the light of the full moon. The fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>",
       "items": {
-        "6jmiViG6aADCKgpM": {
-          "name": "Wing"
-        },
         "6kZm8XnYELAQFppU": {
           "description": "<p>A werebat can communicate with bats.</p>",
           "name": "Bat Empathy"
-        },
-        "EaFbQFfNsYFJLrSK": {
-          "name": "Fangs"
         },
         "N6z6E7Ly3t7eFBoU": {
           "description": "<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws Strike (or a similar Strike) by 2.</p>\n<p>When the moon sets or the sun rises, the werecreature returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for [[/br 2d4 #Fatigued duration]]{2d4 hours}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.dRe8n1nBWMIXd8jh]{Effect: Moon Frenzy}</p>",
@@ -11631,13 +11625,13 @@
           "description": "<p>A werebat can use their hearing as a precise sense at the listed range.</p>",
           "name": "Echolocation (Precise) 40 feet"
         },
-        "iUcqbwAXsz9BBt5U": {
-          "description": "<ul>\n<li><strong>Human</strong>\n<ul>\n<li><strong>Melee</strong> fist [[/r 1d20+10 #Fist]]{+10}/[[/r 1d20+6 #Fist]]{+6}/[[/r 1d20+2 #Fist]]{+2} (agile, nonlethal), <strong>Damage</strong> @Damage[(1d4+2)[bludgeoning]] damage</li>\n<li><strong>Speed</strong> 25 feet</li>\n</ul>\n</li>\n<li><strong>Giant Bat</strong>\n<ul>\n<li><strong>Speed</strong> 15 feet, fly 30 feet</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
-          "name": "Change Shape"
-        },
         "lnftcCa5nWLimB4r": {
           "description": "<p><strong>Trigger</strong> An adjacent enemy damages the werebat</p>\n<hr />\n<p><strong>Effect</strong> The werebat makes one or two wing Strikes, each against a different adjacent creature.</p>",
           "name": "Wing Thrash"
+        },
+        "q8GJKymzsP7IkEHn": {
+          "description": "<ul><li><p><strong>Human</strong></p><ul><li><strong>Melee</strong> fist +10 <strong>Damage</strong> 1d4+2 </li><li>no fly Speed</li></ul></li><li><p><strong>Giant Bat</strong></p><ul><li><strong>Speed</strong> 15 feet, fly 30 feet</li></ul></li></ul><hr /><p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+          "name": "Change Shape"
         },
         "v88O0NAy45VWmtTO": {
           "description": "<p>This curse affects only humanoids.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a werecreature until dawn. The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>",
