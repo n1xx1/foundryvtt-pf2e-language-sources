@@ -334,7 +334,7 @@
             },
             "WhirlingThrow": {
                 "Notes": {
-                    "criticalSuccess": "<strong>Successo Critico</strong> Lanci la creatura alla distanza desiderata; la creatura atterra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prona}.",
+                    "criticalSuccess": "<strong>Successo Critico</strong> Lanci la creatura a [[/r 3+(1.5*@actor.abilities.str.mod)]] metri, infliggendo @Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]]{$1 danni contundenti}; la creatura atterra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prona}.",
                     "criticalFailure": "<strong>Fallimento Critico</strong> Non riesci a lanciare la creatura, che non è più @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuta} da te.",
                     "success": "<strong>Successo</strong> Lanci la creatura alla distanza desiderata.",
                     "failure": "<strong>Fallimento</strong> Non riesci a lanciare la creatura."
@@ -509,7 +509,7 @@
             "Disarm": {
                 "Notes": {
                     "criticalSuccess": "<strong>Successo Critico</strong> Il bersaglio perde la presa sull'oggetto, che cade a terra nello spazio del bersaglio.",
-                    "success": "<strong>Successo</strong> Indebolisci la presa del bersaglio sull'oggetto. I successivi tentativi di Disarmare il bersaglio di quell'oggetto ottengono bonus di circostanza +2, e il bersaglio subisce penalità di circostanza -2 agli attacchi con l'oggetto e ad altre prove che richiedono una salda presa su di esso. La creatura può interrompere l'effetto Interagendo per cambiare la sua presa sull'oggetto; altrimenti dura finché la creatura tiene l'oggetto.<br />@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{Effetto: Disarmare (Successo)}",
+                    "success": "<strong>Successo</strong> Indebolisci la presa del bersaglio sull'oggetto. I successivi tentativi di Disarmare il bersaglio di quell'oggetto ottengono bonus di circostanza +2, e il bersaglio subisce penalità di circostanza -2 agli attacchi con l'oggetto e ad altre prove che richiedono una salda presa su di esso. La creatura può interrompere l'effetto Interagendo per cambiare la sua presa sull'oggetto; altrimenti dura finché la creatura tiene l'oggetto.<br />@UUID[Compendium.pf2e.other-effects.Item.PuDS0DEq0CnaSIFV]{Effetto: Disarmare (Successo)}",
                     "criticalFailure": "<strong>Fallimento Critico</strong> Perdi l'equilibrio e diventi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} fino all'inizio del tuo prossimo turno."
                 },
                 "Title": "Disarmare",
@@ -1697,7 +1697,7 @@
             "astral": {
                 "Note": {
                     "Note": "Questa runa ha gli stessi effetti di una runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{tocco fantasma}, inoltre infligge @Damage[1d6[spirit]]{1d6 danni spirituali} aggiuntivi. Se viene usata per attaccare una creatura che sta possedendo un’altra creatura, quest’arma non infligge danni alla creatura posseduta.",
-                    "criticalSuccess": "In caso di colpo critico contro una creatura che sta possedendo un'altra creatura, la creatura che sta possedendo deve ottenere un successo a un TS su @Check[will|dc:26] o essere espulsa e resa incapace di possedere una creatura per [[/br 1d4 #rounds]]{1d5 round}."
+                    "criticalSuccess": "In caso di colpo critico contro una creatura che sta possedendo un'altra creatura, la creatura che sta possedendo deve ottenere un successo a un TS su @Check[will|dc:26] o essere espulsa e resa incapace di possedere una creatura per [[/gmr 1d4 #round]]{1d5 round}."
                 },
                 "Name": "Astrale"
             },
@@ -1716,13 +1716,13 @@
             "greaterAnchoring": {
                 "Name": "Ancorante Superiore",
                 "Note": {
-                    "success": "Quando metti a segno un colpo con l'arma contro un bersaglio ma non ottieni un colpo critico, il bersaglio è influenzato da un'<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale}</em> di 4° grado per 1 round senza tiro salvezza (modificatore di contrasto di [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}).",
-                    "criticalSuccess": "Quando metti a segno un colpo critico con un'arma ancorante contro un bersaglio, l'arma lancia su di esso <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale}</em> di 8° grado (@Check[will|dc:38|name:Greater Anchoring Rune], modificatore di contrasto [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}), ma se il bersaglio ottiene un successo critico nel TS su Volontà, l'<em>ancora dimensionale</em> dura 1 round anziché non avere effetto."
+                    "success": "Quando metti a segno un colpo con l'arma contro un bersaglio ma non ottieni un colpo critico, il bersaglio è influenzato da un'@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale} di 4° grado per 1 round senza tiro salvezza (modificatore di contrasto di [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}).",
+                    "criticalSuccess": "Quando metti a segno un colpo critico con un'arma ancorante contro un bersaglio, l'arma lancia su di esso @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale} di 8° grado (@Check[will|dc:38|name:Greater Anchoring Rune], modificatore di contrasto [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}), ma se il bersaglio ottiene un successo critico nel TS su Volontà, l'<em>ancora dimensionale</em> dura 1 round anziché non avere effetto."
                 }
             },
             "anchoring": {
                 "Note": {
-                    "criticalSuccess": "Se metti a segno un colpo critico contro un bersaglio con un'arma ancorante, quest’ultima lancia <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale}</em> sul bersaglio (@Check[will|dc:27|name:Runa Ancorante], modificatore di contrasto [[/r 1d20+17 # Prova di Contrasto Runa Ancorante]])."
+                    "criticalSuccess": "Se metti a segno un colpo critico contro un bersaglio con un'arma ancorante, quest’ultima lancia @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{ancora dimensionale} sul bersaglio (@Check[will|dc:27|name:Runa Ancorante], modificatore di contrasto [[/r 1d20+17 # Prova di Contrasto Runa Ancorante]])."
                 },
                 "Name": "Ancorante"
             },
@@ -10163,7 +10163,7 @@
             "AutoHeightenDefault": "Predefinito (Usa il Livello del Personaggio)"
         },
         "TraitAsura": "Asura",
-        "TraitDescriptionRepeating": "Un'arma a ripetizione è solitamente un tipo di balestra con un tempo di ricarica più breve. Queste armi non possono essere caricate con quadrelli singoli come le altre balestre; richiedono invece un caricatore di munizioni specializzate da caricare in un alloggiamento speciale. Una volta che il caricatore è in posizione, la munizione viene caricata automaticamente ogni volta che l'arma viene usata per sparare, riducendo il suo valore di ricarica a quello nella sua voce ricarica (solitamente 0). Quando le munizioni si esauriscono bisogna caricare un nuovo caricatore, il che richiede una mano libera e tre azioni Interagire (per rimuovere il vecchio caricatore, recuperare quello nuovo e alloggiarlo in posizione). Queste azioni non devono necessariamente essere consecutive.",
+        "TraitDescriptionRepeating": "Queste armi non possono essere caricate con quadrelli o proiettili singoli come le altre balestre o armi da fuoco; richiedono invece un caricatore di munizioni specializzate da caricare in un alloggiamento speciale. Una volta che il caricatore è in posizione, la munizione viene caricata automaticamente ogni volta che l'arma viene usata per sparare, riducendo il suo valore di ricarica a quello nella sua voce ricarica (solitamente 0). Quando le munizioni si esauriscono bisogna caricare un nuovo caricatore, il che richiede una mano libera e tre azioni Interagire (per rimuovere il vecchio caricatore, recuperare quello nuovo e alloggiarlo in posizione). Queste azioni non devono necessariamente essere consecutive.",
         "TraitAttached": "Unito",
         "TraitClockwork": "Meccano",
         "TraitDeadly": "Micidiale",
