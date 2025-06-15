@@ -1770,6 +1770,33 @@
                 "Note": {
                     "criticalSuccess": "In caso di colpo critico, il non morto è anche @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1} fino alla fine del tuo prossimo turno."
                 }
+            },
+            "rooting": {
+                "Note": {
+                    "criticalSuccess": "Quado colpisci criticamente un bersaglio con quest'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"23\">Sfuggire CD 23</span>) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} finché dura l’immobilizzazione."
+                },
+                "Name": "Radicante"
+            },
+            "trueRooting": {
+                "Note": {
+                    "criticalSuccess": "Quado colpisci criticamente un bersaglio con quest'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"41\">Sfuggire CD 41</span>) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} finché dura l’immobilizzazione."
+                },
+                "Name": "Radicante Pura"
+            },
+            "majorRooting": {
+                "Name": "Radicante Maggiore",
+                "Note": {
+                    "criticalSuccess": "Quado colpisci criticamente un bersaglio con quest'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"34\">Sfuggire CD 34</span>) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} finché dura l’immobilizzazione."
+                }
+            },
+            "underwater": {
+                "Name": "Subaquea"
+            },
+            "greaterRooting": {
+                "Name": "Radicante Superiore",
+                "Note": {
+                    "criticalSuccess": "Quado colpisci criticamente un bersaglio con quest'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Sfuggire CD 28</span>) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} finché dura l’immobilizzazione."
+                }
             }
         },
         "Action": {
@@ -4659,6 +4686,17 @@
             },
             "Hryngar": {
                 "AlchemicalGrenade": "Tipo di Danno della Granata Alchemica"
+            },
+            "Capritellix": {
+                "ShiftMood": {
+                    "Gregarious": "Socievole",
+                    "Angry": "Arrabbiato",
+                    "Sly": "Astuto",
+                    "Serene": "Sereno"
+                }
+            },
+            "CrumblingCarapace": {
+                "CriticalHit": "Carapace Rotto da un Colpo Critico"
             }
         },
         "Encounter": {
@@ -7665,7 +7703,9 @@
             "RockyOrBarren": "Su Terreno Roccioso o Arido",
             "Fly": "A Volare",
             "Balance": "A Bilanciarsi",
-            "TumbleThrough": "A Destreggiarsi"
+            "TumbleThrough": "A Destreggiarsi",
+            "ImpersonateStumpOrLog": "Per impersonare un ceppo o un tronco",
+            "ForestsOrGrasslands": "In foreste o praterie"
         },
         "SpecificRule": {
             "AdvancedGeneralTraining": {
@@ -8227,7 +8267,7 @@
                     "Prompt": "Seleziona un talento da mago di 1° livello."
                 },
                 "Spellshape1": {
-                    "Prompt": "Seleziona un talento da mago di 1° livello metamagico."
+                    "Prompt": "Seleziona un talento da mago di 1° livello magimorfico."
                 }
             },
             "Dwarf": {
@@ -8432,6 +8472,9 @@
                     "TemporaryHitPoints": "Se colpisci una creatura che ti ha colpino prima della fine del tuo prossimo turno, acquisisci Punti Ferita temporanei pari al tuo modificatore di Costituzione, che raddoppiano se infliggi un colpo critico. I Punti Ferita temporanei durano fino al termine della Furia. @UUID[Compendium.pf2e.feat-effects.Item.CYmipBeliNuymENB]{Effetto: Vieni a Prendermi (Punti Ferita Temporanei)}",
                     "IncomingDamage": "Se una creatura ti colpisce, diventa @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparata} nei tuoi confronti fino alla fine del tuo turno successivo.",
                     "Name": "Vieni a Prendermi"
+                },
+                "Elemental": {
+                    "ElementalEvolutionLabel": "Danno Furia Elementale"
                 }
             },
             "Bard": {
@@ -8644,6 +8687,15 @@
                 },
                 "ShardOfSelfDestruction": {
                     "Note": "Subisci anche @Damage[1d6[bleed]]{1d6 danni da sanguinamento}."
+                },
+                "BroadleafShield": {
+                    "Void": "Rosa (Vuoto)",
+                    "Fire": "Verde (Fuoco)",
+                    "Poison": "Arancione (Veleno)",
+                    "Cold": "Marrone (Freddo)"
+                },
+                "ZuhrasGloves": {
+                    "WallOfMetalLabel": "Muro di metallo attivo"
                 }
             },
             "Fetchling": {
@@ -8874,7 +8926,8 @@
                 "AgainstDevils": "Contro i Diavoli",
                 "AgainstDemons": "Contro i Demoni",
                 "AgainstHumanoids": "Contro gli Umanoidi",
-                "Necromancer": "Il bersaglio è un negromante"
+                "Necromancer": "Il bersaglio è un negromante",
+                "Metal": "Il bersaglio è di metallo o indossa un’armatura di metallo"
             },
             "ToggleProperty": {
                 "GourdHead": "Leshy Zucca: Aumenta CD di percezione",
@@ -9882,8 +9935,8 @@
                 "LeyLineConduit": "Non consumi l'incantesimo preparato.",
                 "MelodiousSpell": "L'incantesimo ottiene il tratto discreto. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti. Con l'uso di Incatesimi Melodiosi puoi scegliere di @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Creare un Diversivo}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizzare}, @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Esibirti} o Richiedere. Se lo fai, l'incanteismo che lanci daeve avere i tratti uditivo, emozione, sonico o visuale per ottenere il tratto discreto.",
                 "PurifyingSpell": "Se la tua prossima azione è lanciare _guarire_ su una singola creatura vivente, puoi tentare di contrastare una malattia o un veleno che influenza il bersaglio, oltre agli effetti benefici di _guarire_. Se lo fai, _guarire_ ottiene il tratto acqua.",
-                "OstentatiousArrivalSummonSpell": "Tutte le creature in un'@Template[type:emanation|distance:10]{emanazione di 3 metri} attorno alla creatura convocata o manifestata subiscono @Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]]{$1 danni da fuoco} per livello dell'incantesimo per un incantesimo di convocazione. Se la creatura convocata o manifestata ha il tratto acido, acqua, elettricità, freddo, fuoco o sonoro, il danno è invece di quel tipo (o danni da freddo per il tratto acqua). Se la creatura ha più di uno di tali tratti, scegli che tipo di danni infligge.",
-                "OstentatiousArrivalManifestEidolon": "Tutte le creature in un'@Template[type:emanation|distance:10]{emanazione di 3 metri} attorno alla creatura convocata o manifestata subiscono @Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrayDamage]]{$1 danni da fuoco} per livello dell'incantesimo per un incantesimo di convocazione. Se la creatura convocata o manifestata ha il tratto acido, acqua, elettricità, freddo, fuoco o sonoro, il danno è invece di quel tipo (o danni da freddo per il tratto acqua). Se la creatura ha più di uno di tali tratti, scegli che tipo di danni infligge.",
+                "OstentatiousArrivalSummonSpell": "Tutte le creature in un'@Template[type:emanation|distance:10]{emanazione di 3 metri} attorno alla creatura convocata o manifestata subiscono @Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]|options:area-damage]{$1 danni da fuoco} per livello dell'incantesimo per un incantesimo di convocazione. Se la creatura convocata o manifestata ha il tratto acido, acqua, elettricità, freddo, fuoco o sonoro, il danno è invece di quel tipo (o danni da freddo per il tratto acqua). Se la creatura ha più di uno di tali tratti, scegli che tipo di danni infligge.",
+                "OstentatiousArrivalManifestEidolon": "Tutte le creature in un'@Template[type:emanation|distance:10]{emanazione di 3 metri} attorno alla creatura convocata o manifestata subiscono @Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]|options:area-damage]{$1 danni da fuoco} per livello dell'incantesimo per un incantesimo di convocazione. Se la creatura convocata o manifestata ha il tratto acido, acqua, elettricità, freddo, fuoco o sonoro, il danno è invece di quel tipo (o danni da freddo per il tratto acqua). Se la creatura ha più di uno di tali tratti, scegli che tipo di danni infligge.",
                 "IntoTheFuture": "Se la tua prossima azione è Lanciare un Incantesimo che richiede 1 o 2 azioni per essere lanciato, gli effetti dell'incantesimo si verificano un round dopo, all'inizio del tuo prossimo turno, anziché immediatamente. I bersagli e le scelte relative all'incantesimo devono essere determinati quando l'incantesimo viene lanciato, e i requisiti, come la linea di vista e la linea d'effetto, devono essere validi sia quando l'incantesimo viene lanciato che quando si verificano i suoi effetti. Le conseguenze dell'azione di Lanciare l'Incantesimo, come una reazione di Attacco di Opportunità o la cessazione della condizione @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{affascinato} di un nemico per aver compiuto un'azione ostile, non sono ritardate.",
                 "TimelineSplittingSpell": "Lanci due Incantesimi che richiedono 1 o 2 azioni ciascuno per essere lanciati. Non può trattarsi dello stesso incantesimo intensificato a due livelli diversi. Spendi le risorse per entrambi gli incantesimi, come slot incantesimo, Punti Focalizzazione e componenti materiali. Determina i risultati immediati di entrambi gli incantesimi, compresi i tiri per colpire con incantesimo, i tiri salvezza, i danni e qualsiasi altro tiro di dado. Poi, scegli quale dei due incantesimi avrà effetto, usando i tiri effettuati in precedenza. Le risorse dell'altro incantesimo vengono comunque spese, ma esso non ha effetto perché la magia scompare nella linea del tempo alternativa.",
                 "UnlimitedPotential": "Se la tua prossima azione è Lanciare un Incantesimo di 5° grado o inferiore che non ha durata, non spendi l'incantesimo preparato mentre lo lanci.",
@@ -9897,7 +9950,13 @@
                 "KaleidoscopicEntreaty": {
                     "Failure": "La creatura è abbagliata per 1 minuto.",
                     "Success": "La creatura è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliata} per 1 minuto."
-                }
+                },
+                "GrowthSpell": "Espandi l’area dell’incantesimo. Per le esplosioni, espandi il raggio di 1,5 metri; per i coni, espande il cono di 3 metri; per le linee, aumenta la lunghezza di 4,5 metri. L’incantesimo ottiene il tratto legno.",
+                "ReverberatingSpell": "L’incantesimo infligge @Damage[1d8[sonic]]{1d8 danni sonori} aggiuntivi e tutte le creature che falliscono il loro tiro salvezza contro l’incantesimo sono @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{assordate} per 1 round. I bersagli che ottengono un fallimento critico nel loro tiro salvezza contro questo incantesimo sono invece assordati per 1 minuto. L’incantesimo ottiene il tratto sonoro.",
+                "DousingSpell": "Inzuppi d’acqua il bersaglio dell’incantesimo. Se il bersaglio ha danni persistenti da acido o da fuoco, la CD per porre fine a queste condizioni si riduce a 10 e la creatura può effettuare una prova semplice per porre fine immediatamente a questi tipi di danni persistenti. L’incantesimo ottiene il tratto acqua (che gli fa infliggere danni aggiuntivi alle creature con debolezza all’acqua).",
+                "WindTossedSpell": "Ignori la condizione @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato} del bersaglio e l’eventuale copertura che ha nei tuoi confronti. L’incantesimo ottiene il tratto aria.",
+                "RockslideSpell": "Un numero di quadretti di 1,5 metri nell’area pari al grado dell’incantesimo diventa terreno difficile per 1 round. Questi quadretti devono essere sul terreno e l’intera area di terreno difficile deve essere contigua. L’incantesimo ottiene il tratto terra.",
+                "BurningSpell": "L’incantesimo infligge @Damage[(@item.rank)[persistent,fire]]{$1 danni da fuoco persistenti} aggiuntivi, oltre ai suoi altri effetti. Questo non ha effetto se l’incantesimo infligge già danni da fuoco persistenti. L’incantesimo ottiene il tratto fuoco"
             },
             "CrystalLuminescence": {
                 "Normal": "Normale",
@@ -10131,9 +10190,44 @@
                 "Impulse": {
                     "ElementalBlast": {
                         "OneAction": "Una Azione",
-                        "TwoActions": "Due Azioni"
-                    }
-                }
+                        "TwoActions": "Due Azioni",
+                        "Label": {
+                            "Earth": "Esplosione Elementale (Terra)",
+                            "Air": "Esplosione Elementale (Aria)",
+                            "Water": "Esplosione Elementale (Acqua)",
+                            "Metal": "Esplosione Elementale (Metallo)",
+                            "Wood": "Esplosione Elementale (Legno)"
+                        },
+                        "ShortLabel": "Esplosione"
+                    },
+                    "CriticalBlast": {
+                        "Metal": "Il bersaglio subisce 1d6 danni persistenti da sanguinamento; se la creatura ha il tratto metallo o è fatta di metallo, subisce invece @Damage[1d6[persistent,untyped]]{1d6 danni persistenti senza tipo} dalla ruggine. Ottieni un bonus ai danni persistenti pari al tuo bonus ai tiri per gli attacchi d’impulso, come nel caso di un attenuatore di cancelli.",
+                        "Earth": "Se il bersaglio si trova a terra, cade @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prono}; se non si trova a terra, scende fino a 6 metri (scegli tu la distanza).",
+                        "Water": "L’esplosione infligge 2 danni da spargimento per ogni dado di danno dell’esplosione, con lo stesso tipo di danno.",
+                        "Air": "Spingi il bersaglio fino a 3 metri.",
+                        "Fire": "Il bersaglio subisce 1d6 danni da fuoco persistenti. Ottieni un bonus ai danni persistenti pari al tuo bonus ai tiri per gli attacchi d’impulso, come nel caso di un attenuatore di cancelli.",
+                        "Wood": "Se il bersaglio del colpo critico è adiacente a una superficie, le radici lo imprigionano. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} e deve spendere un’azione Interagire per effettuare una prova di @Check[athletics|dc:10] per liberarsi. Il bersaglio non rimane bloccato se è incorporeo, se è liquido o se potrebbe fuggire senza sforzo in altro modo."
+                    },
+                    "ImpulseJunction": {
+                        "Title": "Giunzione d'Impulso",
+                        "Water": "Dopo gli altri effetti dell’impulso, puoi spostare una creatura bersagliata dall’impulso o nella sua area di 1,5 metri in qualsiasi direzione, o di 3 metri se si trova in uno specchio d’acqua. Non puoi spostare la creatura in aria. Puoi scegliere solo una creatura che sia consenziente allo spostamento, che abbia fallito un tiro salvezza contro l’impulso o contro la quale hai superato un tiro per colpire d’Impulso.",
+                        "Metal": "Scegli acido, elettricità o perforanti. Fino all’inizio del tuo prossimo turno, ogni volta che una creatura ti tocca o ti danneggia con un attacco senz’armi in mischia o con un’arma da mischia non a portata, subisce danni del tipo scelto pari a metà del tuo livello (minimo 1 danno).",
+                        "Wood": "Ottieni Punti Ferita temporanei pari al tuo livello che durano fino all’inizio del tuo prossimo turno. @UUID[Compendium.pf2e.feat-effects.Item.rCsmv66TzQhte4Gp]{Effetto: Giunzione d'Impulso (Legno)}",
+                        "Earth": "Frammenti di pietra fluttuano intorno a te e ti concedono bonus di circostanza +1 alla CA fino all’inizio del tuo prossimo turno. @UUID[Compendium.pf2e.feat-effects.Item.09oP0FBBAhXOS4JW]{Effetto: Giunzione d'Impulso (Terra)}",
+                        "Air": "Prima o dopo gli altri effetti dell’impulso, puoi Avanzare fino a metà della tua Velocità o Fare un Passo. Se hai una Velocità di volo, puoi invece volare fino a metà della tua Velocità di volo."
+                    },
+                    "Prompt": "Seleziona un Impulso."
+                },
+                "KineticGate": {
+                    "Prompt": {
+                        "AuraSize": "Seleziona un raggio per la tua aura cinetica."
+                    },
+                    "DualGate": {
+                        "Rename": "Cancello Cinetico ({elementOne}, {elementTwo})"
+                    },
+                    "AllowedDropsLabel": "Talento di classe del cineta"
+                },
+                "GateAttenuator": "Attenuatore di Cancelli"
             },
             "Modifier": {
                 "Penalty": "Penalità",
@@ -10149,6 +10243,27 @@
                     "Ten": "Almeno 10 creature",
                     "Hundred": "Almeno 100 creature"
                 }
+            },
+            "Weapon": {
+                "Metal": "Con un'arma di metallo"
+            },
+            "SpellEffectThermalRemedy": {
+                "Prompt": "Seleziona un beneficio.",
+                "TempHP": "Punti Ferita temporanei",
+                "FireResistance": "Resistenza al fuoco",
+                "BonusVsDisease": "Bonus contro malattia",
+                "PromptTwo": "Seleziona un secondo beneficio."
+            },
+            "MantleOfTheUnwaveringHeart": {
+                "UnyieldingWill": "Volontà Incrollabile",
+                "EvergreenVitality": "Vitalità Sempreverde",
+                "OverwhelmingPerfume": "Profumo Soverchiante",
+                "GraspingBranch": "Ramo Afferrante",
+                "ToweringTrunk": "Tronco Torreggiante"
+            },
+            "WeaponInfusion": {
+                "Melee": "Infusione in Mischia",
+                "Ranged": "Infusione a Distanza"
             }
         },
         "LevelRange": "Livelli {minLevel} - {level}",
@@ -10579,7 +10694,7 @@
         "TraitAiuvarin": "Aiuvarin",
         "PreciousMaterialSisterstone": "Pietra Gemella",
         "TraitDescriptionFocus": "Gli incantesimi focalizzati sono un tipo speciale di incantesimi ottenuti direttamente da un ramo di studi, da una Divinità o da un'altra fonte specifica. Puoi apprendere gli incantesimi focalizzati soltanto attraverso privilegi di classe o talenti speciali invece di sceglierli da una lista di incantesimi. Inoltre, puoi lanciare incantesimi focalizzati usando una speciale riserva di Punti Focalizzazione: non puoi preparare un incantesimo focalizzato in uno slot incantesimo o usare il tuo slot incantesimo per lanciare incantesimi focalizzati; allo stesso modo, non puoi spendere i Punti Focalizzazione per lanciare incantesimi che non sono incantesimi focalizzati.",
-        "TraitDescriptionSpellshape": "Le azioni con il tratto metamagico, che di solito provengono da talenti metamagici, modificano le proprietà degli incantesimi. Devi usare un'azione metamagica direttamente prima di Lanciare l'Incantesimo che vuoi modificare. Se immediatamente dopo usi qualsiasi azione (incluse le azioni e le reazioni gratuite) a parte lanciare un incantesimo, perdi i benefici dell'azione metamagica. Qualsiasi effetto aggiuntivo dovuto a un'azione matemagica fa parte dell'effetto dell'incantesimo, non dell'azione metamagica stessa.",
+        "TraitDescriptionSpellshape": "Le azioni con il tratto magimorfico modificano le proprietà degli incantesimi. Devi eseguire un’azione magimorfica direttamente prima di lanciare l’incantesimo che vuoi modificare. Se esegui un’azione (comprese le azioni gratuite e le reazioni) diversa da lanciare un incantesimo subito dopo, perdi i benefici dell’azione magimorfica. Qualsiasi effetto aggiuntivo di un’azione magimorfica fa parte dell’effetto dell’incantesimo, non dell’azione magimorfica stessa.",
         "TraitVersatileMental": "Versatile Mentale",
         "TraitSewnIntoClothing": "Cucito su un Indumento",
         "TraitDescriptionSubtle": "Un incantesimo con il tratto discreto può essere lanciato senza incantazioni e non ha manifestazioni evidenti.",
@@ -10604,7 +10719,7 @@
         "TraitDescriptionUnholy": "Effetti con il tratto sacrilego sono legati alle potenti forze magiche della crudeltà e del peccato. Spesso hanno effetti più forti su creature sacre. Creature con questo tratto sono fortamente devote alle cause sacrileghe e spesso hanno debolezze al sacro. Se una creatura con una debolezza al sacrilego usa un oggetto o effetto sacrilego, subisce danni dalla sua debolezza.",
         "TraitNaari": "Naari",
         "TraitPoppet": "Bambolina",
-        "TraitSpellshape": "Metamagico",
+        "TraitSpellshape": "Magimorfico",
         "TraitUnholy": "Sacrilego",
         "TraitSubtle": "Discreto",
         "TraitDescriptionSpirit": "Gli effetti con questo tratto possono influenzare creatura con un'essenza spirituale e potrebbero infliggere danni spirituali. Una creatura con questo tratto è definita dalla sua essenza spirituale. Le creature spirituali spesso non hanno una forma materiale.",
@@ -10646,7 +10761,8 @@
                 "NonMagicalAttacks": "attacchi non magici",
                 "IncorporealCreatures": "creature incorporee",
                 "MagicalWood": "legno magico",
-                "PhysicalWeaponsOnly": "fisico (solo armi)"
+                "PhysicalWeaponsOnly": "fisico (solo armi)",
+                "ImpulseFireFrom": "impulso di fuoco da {origin}"
             }
         },
         "Color": {
@@ -11024,7 +11140,20 @@
         "TraitDescriptionEntrench": "Puoi entrare nell'armatura o riposizionare i suoi componenti articolati per proteggerti meglio da alcuni attacchi. Se sei addestrato in quest'armatura, mentre la indossi puoi spendere un’azione singola per guadagnare bonus di circostanza +1 alla CA contro un certo tipo di attacchi fino all'inizio del tuo turno successivo. Il tratto trincerarsi elenca il tipo di attacchi contro i quali si applica questo bonus, solitamente trincerarsi in mischia o trincerarsi a distanza.",
         "TraitDescriptionBarding": "Puoi acquistare armature speciali per gli animali, chiamate bardature. Tutti gli animali possiedono il grado di competenza addestrato in bardature leggere, e gli animali addestrati al combattimento sono addestrati in bardature pesanti. La bardatura segue le stesse regole dell'armatura ad eccezione di quanto segue. Il Prezzo e il Volume di una bardatura dipendono dalla taglia dell'animale. A differenza di un'armatura, la voce Forza di una bardatura è indicata come modificatore, non come punteggio. La bardatura non può essere incisa con rune magiche, anche se potrebbero essere disponibili delle bardature magiche speciali.",
         "TraitDescriptionCoda": "<p>Gli strumenti con il tratto coda funzionano perlopiù come bastoni, e hanno il tratto bastone. Ci sono due differenze: gli strumenti da coda sono strumenti musicali e possono essere preparati solo dai bardi. Non essendo fisicamente un bastone, non puoi usare uno strumento da coda per attaccare, né puoi inciderlo con rune d'arma.</p><p>Il processo di preparazione di uno strumento da coda prevede di suonare parti molto grandi di canzoni (tradizionali o di tua creazione) correlate agli incantesimi dentro lo strumento. Ciò lascia nello strumento dei riverberi magici che ti permettono di completare la canzone suonandone la coda in seguito durante la giornata.</p>",
-        "TraitDescriptionExpandable": "Quando viene attivato, un oggetto con il tratto espandibile cresce a una dimensione specificata. Se non è diversamente specificato, questo spazio deve essere adiacente a te e sul suolo, e l'oggetto deve avere abbastanza spazio libero per espandersi, altrimenti l'Attivazione non ha effetto. Quando l'effetto termina, l'oggetto espanso si disintegra (se è Monouso) o si restringe alle sue dimensioni normali (se non è monouso)."
+        "TraitDescriptionExpandable": "Quando viene attivato, un oggetto con il tratto espandibile cresce a una dimensione specificata. Se non è diversamente specificato, questo spazio deve essere adiacente a te e sul suolo, e l'oggetto deve avere abbastanza spazio libero per espandersi, altrimenti l'Attivazione non ha effetto. Quando l'effetto termina, l'oggetto espanso si disintegra (se è Monouso) o si restringe alle sue dimensioni normali (se non è monouso).",
+        "TraitDescriptionWood": "Gli effetti con il tratto legno evocano o manipolano il legno. Quelli che manipolano il legno non hanno effetto in un’area priva di legno. Le creature con questo tratto sono costituite principalmente di legno o hanno una connessione magica con il legno.",
+        "TraitKineticist": "Cineta",
+        "TraitDescriptionKineticist": "Questo indica capacità della classe del cineta.",
+        "TraitInfusion": "Infusione",
+        "TraitTalos": "Talos",
+        "TraitDescriptionMetal": "Gli effetti col tratto metallo evocano o manipolano il metallo. Quelli che manipolano il metallo non hanno effetto in un’area senza metallo. Le creature con questo tratto sono fatte principalmente di metallo o hanno una connessione magica al metallo.",
+        "TraitOverflow": "Esubero",
+        "TraitHeldOneTwoHands": "Tenuto in 1 o 2 mani",
+        "TraitDescriptionImpulse": "Le principali azioni magiche usate dai cineti sono chiamate impulsi. Puoi usare un impulso solo se la tua aura cinetica è attiva e sta incanalando quell’elemento, e solo se hai una mano libera per modellare il flusso elementale. Il tratto impulso significa che l’azione ha il tratto concentrazione, a meno che un’altra capacità non lo modifichi. Se un impulso ti permette di scegliere un elemento, puoi scegliere qualsiasi elemento che stai incanalando e l’impulso ottiene il tratto di quell’elemento.",
+        "TraitDescriptionRadiation": "Una emissione pericolosa e solitamente velenosa, solitamente origina da minerali radioattivi.",
+        "TraitDescriptionOverflow": "Gli impulsi più potenti assorbono troppa energia dal tuo cancello cinetico in poco tempo. Quando usi un impulso con il tratto esubero, la tua aura cinetica si disattiva fino a quando non la rivitalizzi (di solito con Incanalare Elementi). Estinguere l’elemento in questo modo è molto faticoso e, di conseguenza, puoi usare solo un impulso di esubero per round, anche se riattivi il tuo cancello cinetico.",
+        "TraitDescriptionTalos": "I talos sono eredi planari che discendono dagli zuhra.",
+        "TraitDescriptionInfusion": "Le azioni con il tratto infusione modificano gli impulsi cinetici. Devi usare un’azione di infusione subito prima dell’azione d’impulso che vuoi modificare. Se usi un’azione (comprese le azioni gratuite e le reazioni) diversa da un’azione d’impulso immediatamente dopo, i benefici dell’azione di infusione vengono sprecati. Eventuali effetti aggiuntivi apportati da un’azione di infusione fanno parte dell’effetto dell’impulso, non dell’azione di infusione stessa."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
