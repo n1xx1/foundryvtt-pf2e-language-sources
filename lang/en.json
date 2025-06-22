@@ -10037,8 +10037,8 @@
       },
       "BlinkCharge": {
         "Note": {
-          "CriticalFailure": "On a critical failure, the Strike deals no damage and you take @Damage[(ceil((@actor.flags.pf2e.blinkCharge — 4)/2))d8[force]] damage.",
-          "Failure": "On a failure, the Strike deals no damage, but the target takes @Damage[(ceil((@actor.flags.pf2e.blinkCharge — 4)/2))d8[force]] damage."
+          "CriticalFailure": "On a critical failure, the Strike deals no damage and you take @Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]] damage.",
+          "Failure": "On a failure, the Strike deals no damage, but the target takes @Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]] damage."
         }
       },
       "BloodlettingKukri": {
@@ -12078,7 +12078,7 @@
       },
       "LepidstadtSurgeon": {
         "Dedication": {
-          "StabilizeNote": "When you successfully Administer First Aid to stabilize a dying creature that doesn't yet have the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} condition, it regains @Damage[(2d8 + 10*max(0,(@actor.system.skills.medicine.rank — 2)))[healing]] Hit Points.",
+          "StabilizeNote": "When you successfully Administer First Aid to stabilize a dying creature that doesn't yet have the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} condition, it regains @Damage[(2d8 + 10*max(0,(@actor.system.skills.medicine.rank - 2)))[healing]] Hit Points.",
           "StopBleedingNote": "When you successfully Administer First Aid to stop bleeding, the target rolls the flat check (with lowered DC for an assisted recovery) twice and takes the better result; this is a fortune effect. @UUID[Compendium.pf2e.feat-effects.Item.45nzYsMBTP6PIxDN]{Effect: Lepidstadt Surgeon Dedication (Stop Bleeding)}"
         }
       },
@@ -13260,7 +13260,7 @@
           "Description": "When you cast _fireball_ heightened to at least 6th rank, you can modify the spell's standard effects as follows: Reduce the spell's damage by 6d6. Your _fireball_ leaves behind a lingering cloud of toxic smoke in its area. While it's smoke instead of mist, this cloud otherwise has the effects of @UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]{Stinking Cloud}."
         },
         "ConfoundingImage": {
-          "Description": "When you cast _mirror image_, you can modify its duration to be sustained up to 1 minute and modify its range to 30 feet. If you do, replace the spell's standard effects with the following: You create an illusory duplicate of yourself that appears in an unoccupied square within range. The image takes up space and has a reach of 5 feet, and your allies can flank with the image. It doesn't have any other attributes a creature would normally have other than an AC equal to your spell DC and saving throw modifiers equal to your spell DC — 10. If the image is hit by an attack or fails a save, or if you ever move more than 30 feet from it, the spell ends. Creatures can move through its space without hindrance. When you Sustain the Spell, you can move the image to an unoccupied square within range."
+          "Description": "When you cast _mirror image_, you can modify its duration to be sustained up to 1 minute and modify its range to 30 feet. If you do, replace the spell's standard effects with the following: You create an illusory duplicate of yourself that appears in an unoccupied square within range. The image takes up space and has a reach of 5 feet, and your allies can flank with the image. It doesn't have any other attributes a creature would normally have other than an AC equal to your spell DC and saving throw modifiers equal to your spell DC – 10. If the image is hit by an attack or fails a save, or if you ever move more than 30 feet from it, the spell ends. Creatures can move through its space without hindrance. When you Sustain the Spell, you can move the image to an unoccupied square within range."
         },
         "DirectedPoison": {
           "Description": "When you cast _toxic cloud_, modify its duration to be sustained up to 1 minute, and modify its standard effect to include the following: The cloud doesn't move away from you each round. Once per round when you Sustain the Spell, you can move the cloud 10 feet in the direction of your choice."
@@ -13281,7 +13281,7 @@
           "Description": "When you cast _telekinetic hand_, you can remove its duration, modify its range to 20 feet, and modify its target to be an attended object within the spell's Bulk limit that wouldn't be time-consuming to remove. Add the following to the spell's standard effects: If the creature attending the object is willing to have you take the item, Telekinetic Hand carries the item to you. If the creature is unwilling, you must attempt to [[/act steal]] the target object with a Thievery check. The usual restrictions on attempts to Steal an object apply, including the restrictions that you can't steal objects that would be extremely noticeable or time-consuming to remove (like worn shoes or armor or actively wielded objects) and you can't Steal from a creature in combat or otherwise on guard. On a successful Steal check, the Telekinetic Hand carries the item to you, and on a critical failure, you can't use this modification again for 1 hour. If you're a master in Thievery, you can attempt to Steal from a creature in combat or otherwise on guard, though if you do so, the spell's casting time increases by 1 action."
         },
         "LingeringFlames": {
-          "Description": "When you cast _fireball_, you can modify its effects, decreasing the base damage to 5d6 and causing it to deal @Damage[(2*(@item.level — 2))[fire,persistent]] damage to creatures that fail their save, doubled as normal on a critical failure. If you do, replace its heightened entry with the following.",
+          "Description": "When you cast _fireball_, you can modify its effects, decreasing the base damage to 5d6 and causing it to deal @Damage[(2*(@item.level - 2))[fire,persistent]] damage to creatures that fail their save, doubled as normal on a critical failure. If you do, replace its heightened entry with the following.",
           "DescriptionHeightened": "The damage is increased by 1d6 and the persistent fire damage is increased by 2."
         },
         "ObscuredTerrain": {
