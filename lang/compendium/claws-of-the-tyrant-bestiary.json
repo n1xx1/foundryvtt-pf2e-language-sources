@@ -682,10 +682,11 @@
       "npcHp": "void healing"
     },
     "Raised Cavalry": {
+      "description": "<p>Undead are plentiful throughout the Gravelands, but even so, necromancers must sometimes get creative to organize the varied undead they have on hand into a cohesive military unit. While the typical raised cavalry is a mix of skeletons, zombies, and ghouls, many units also incorporate mummies, ghosts, and more powerful undead.</p>\n<p>The Knights of Lastwall have reported battalions of undead rising from the fields where they were buried, presumably in preparation for a future assault. One of the most infamous of these staging grounds was Fallowdeep, the network of subterranean tunnels beneath the former dwarven fortress of Hammer Rock. When the Whispering Tyrant attacked the nations of the Inner Sea, Fallowdeep's supply of undead was vastly depleted, but caches of corpses no doubt remain there for a resourceful necromancer to exploit.</p>",
       "items": {
         "CW2A6gvQDkEQk2gM": {
-          "description": "<p>The raised cavalry Strides twice with a +10-foot circumstance bonus to its Speed. During this movement, the cavalry can move through the spaces of Medium or smaller creatures. It deals [[/r 3d12+14[bludgeoning]]] damage to each creature whose space it moves through (@Check[type:reflex|dc:41|traits:damaging-effect|basic:true] save). A creature that fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The cavalry can affect the same creature only once in a single use of Trampling Charge.</p>",
-          "name": "Action"
+          "description": "<p>The raised cavalry Strides twice with a +10-foot circumstance bonus to its Speed. During this movement, the cavalry can move through the spaces of Medium or smaller creatures. It deals @Damage[(3d12+14)[bludgeoning]] damage to each creature whose space it moves through (@Check[reflex|dc:41|basic|options:inflicts:prone] save). A creature that fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The cavalry can affect the same creature only once in a single use of Trampling Charge.</p>",
+          "name": "Trampling Charge"
         },
         "VNXVs0sFkhOFCvk5": {
           "description": "<p>When not mounted, the raised cavalry is slowed 1.</p>",
@@ -695,7 +696,7 @@
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
         },
         "gU3zgGJUG2tBxi7r": {
-          "description": "<p><strong>Frequency</strong> once per round;</p>\n<p><strong>Effect</strong> Members of the cavalry leap from their mounts and attack each enemy within 10 feet (@Check[type:reflex|dc:41|traits:damaging-effect|basic:true] save).</p>\n<p>The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> [[/r 2d12+14[piercing and slashing]]] plus [[/r 1d12[void]]]</p>\n<p><span class=\"action-glyph\">2</span> [[/r 3d12+14[piercing and slashing]]] plus [[/r 1d12[void]]]</p>\n<p><span class=\"action-glyph\">3</span> [[/r 4d12+14[piercing and slashing]]] plus [[/r 1d12[void]]]</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Members of the cavalry leap from their mounts and attack each enemy within 10 feet (@Check[reflex|dc:41|basic] save).</p>\n<p>The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d12+14)[piercing], (2d12+14)[slashing],1d12[void]]{2d12+14 piercing and slashing plus 1d12 void}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+14)[piercing], (3d12+14)[slashing],1d12[void]]{3d12+14 piercing and slashing plus 1d12 void}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+14)[piercing], (4d12+14)[slashing],1d12[void]]{4d12+14 piercing and slashing plus 1d12 void}</p>",
           "name": "Claws and Jaws"
         },
         "ibVS9VnTf7FEenJI": {
@@ -713,12 +714,12 @@
           "name": "Shuffle Forces"
         },
         "ww1W9rSOdSFUuQ5r": {
-          "description": "<p>Members of the raised cavalry draw or reload their shortbows, then launch a ranged attack in the form of a volley. This volley is a 10-foot burst within 60 feet that deals [[/r 7d8[piercing]]] damage (@Check[type:reflex|dc:41|traits:damaging-effect|basic:true] save). When the cavalry is reduced to 2 segments, this area decreases to a 5-foot burst.</p>",
+          "description": "<p>Members of the raised cavalry draw or reload their shortbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[7d8[piercing]|options:area-damage] damage (@Check[reflex|dc:41|basic|options:area-effect] save). When the cavalry is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
           "name": "Hail of Arrows"
         }
       },
       "name": "Raised Cavalry",
-      "npcHp": "troop defenses",
+      "npcHp": "Thresholds 360 (4 segments), 240 (3 segments), 140 (2 segments)",
       "npcSpeed": "troop movement"
     },
     "Seldeg Bhedlis": {
