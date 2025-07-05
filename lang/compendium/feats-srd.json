@@ -3580,6 +3580,10 @@
       },
       "name": "Borrow Time"
     },
+    "Borrowed Ability": {
+      "description": "<p>Your touch opens a conduit into the mind of your target, the emptiness within you pulling skills and memories through. You touch an adjacent creature and choose any skill you believe they are trained or better in. If you choose a skill that they are trained or better in, you borrow their proficiency in that skill, becoming trained in that skill for 1 minute. If they are not trained in the skill you choose, the GM chooses the next most applicable skill (for instance, choosing Acrobatics instead of Athletics). At 12th level, you can become an expert in the skill if the target is as well.</p>\n<p>If the target of Borrowed Ability is unwilling, the effects depend on the target's Will save.</p><hr /><p><strong>Critical Success</strong> The target resists your touch completely.</p>\n<p><strong>Success</strong> Your borrowing is unstable. At the beginning of each of your turns, you must either relinquish your hold on the borrowed skill (as a free action), or attempt another backlash check for your deviation; the ability ends if you fail.</p>\n<p><strong>Failure</strong> Borrowed Ability lasts for its full duration.</p><hr /><p><strong>Awakening</strong> You gain some of the target's defensive abilities. When you use Borrowed Ability, you also gain a +1 circumstance bonus to one of your saving throws for the duration, matching the target's highest saving throw. You can choose to apply a –1 circumstance penalty to the target's saving throw when you do so.</p>\n<p><strong>Awakening</strong> Your touch establishes a lingering link through which you can sense what your target does. When you use Borrowed Ability, you gain any special senses—such as darkvision, scent, or tremorsense—that the target possesses. If the target does not have a sense that you normally have (for instance, an ooze that has no vision), you lose those senses as well. Your senses remain altered for the duration of Borrowed Ability.</p>",
+      "name": "Borrowed Ability"
+    },
     "Boulder Roll": {
       "description": "<p>Your dwarven build allows you to push foes around, just like a mighty boulder tumbles through a subterranean cavern. Take a Step into the square of a foe that is your size or smaller, and the foe must move into the empty space directly behind it. The foe must move even if doing so places it in harm's way. The foe can attempt a @Check[fortitude|against:athletics] saving throw against your Athletics DC to block your Step. If the foe attempts this saving throw, it takes @Damage[(@actor.level + @actor.abilities.str.mod)[bludgeoning]]{bludgeoning damage} equal to your level plus your Strength modifier unless it critically succeeds.</p>\n<p>If the foe can't move into an empty space (if it is surrounded by solid objects or other creatures, for example), your Boulder Roll has no effect.</p>",
       "featPrerequisites": {
@@ -7929,6 +7933,10 @@
       },
       "name": "Drain Vitality"
     },
+    "Draining Touch": {
+      "description": "<p>You reach out your arm, grasping hungrily for a source of energy. Attempt a melee Strike. If you succeed, you deal 1d8 cold damage for every 2 levels you have to the target (@Damage[(floor(@actor.level/2))d8[cold]]), or double damage on a critical success.</p>\n<p><strong>Awakening</strong> You drain enough energy from a creature to leave it with lingering aftereffects. Your Draining Touch also leaves a creature @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, or @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} if your attack was a critical success.</p>\n<p><strong>Awakening</strong> You can pull away not just physical energy, but a creature's spirit as well. Your Draining Touch can deal your choice of cold, spirit, or void damage, changing the cold trait to spirit or void as appropriate.</p>",
+      "name": "Draining Touch"
+    },
     "Draw From the Land": {
       "description": "<p><strong>Requirements</strong> You gained a terrain attunement benefit this turn, and it matched the terrain you're in.</p>\n<hr />\n<p>You pull strength from the surrounding terrain. You gain temporary Hit Points equal to your level. They last for 1 round. If you previously gained the plains terrain attunement effect this turn, combine the temporary Hit Points together.</p>",
       "featPrerequisites": {
@@ -10502,6 +10510,10 @@
         "0": "Adhyabhau"
       },
       "name": "Feed on Pain"
+    },
+    "Feed the Void": {
+      "description": "<p>The void within you manages to manifest itself temporarily, a black hole opening over your heart and threatening to draw everything in. A @Template[type:cone|distance:60] becomes filled with screaming winds that rush in toward you. All creatures in the cone must attempt a Fortitude saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pulled 10 feet toward you.</p>\n<p><strong>Failure</strong> The creature is pulled 20 feet toward you.</p>\n<p><strong>Critical Failure</strong> The creature is pulled 30 feet toward you.</p>\n<p>Creatures that would be pulled into your square contact the void, which deals @Damage[5d6[spirit]|options:area-damage] damage with no saving throw, and are then spat back out in a square adjacent to you of your choice. At 12th level, and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p><strong>Awakening</strong> The void feeds upon the creature's spirit, transferring you some of their vitality. If one or more creatures are pulled into the void, you gain temporary Hit Points equal to the level of the highest-level creature pulled in. These temporary Hit Points last for 10 minutes.</p>\n<p><strong>Awakening</strong> The void's suction draws in heat and light as well. The first 30 feet of the cone becomes covered in ice as temperatures drop, making the area difficult terrain, and is also plunged into darkness, with the effects of darkness heightened to half your level. Both effects last until the beginning of your next turn.</p>",
+      "name": "Feed the Void"
     },
     "Feeding Frenzy": {
       "description": "<p>Your serrated teeth rip and tear at your prey. When you critically hit with your jaws Strike from Werecreature Dedication, your target takes 1d4 persistent bleed damage and you gain a +1 circumstance bonus to jaws Strikes against the target until the end of your turn. If you have scent as a special sense, it's a precise sense with double its normal range when locating creatures taking persistent bleed damage.</p>",
@@ -15712,6 +15724,10 @@
       "description": "<p>Rather than incantations and gestures, you can use your kinetic gate to directly unlock the potential of elementally empowered magic items. You can Activate magic items that require you to be able to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell}, provided you activate them to Cast a Spell with the same trait as one of your kinetic elements; for example, if you can channel fire, you could Activate a <em>scroll of</em> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}. For any effects of these items that use a spell attack roll or spell DC, you can substitute your impulse attack roll or class DC.</p>\n<p>You can also prepare a staff that has at least one spell with an appropriate trait, using half your level rounded up to determine the number of charges you add. This doesn't allow you to cast spells without the trait of one of your kinetic elements, and you don't get the extra benefits prepared and spontaneous spellcasters do.</p>",
       "name": "Kinetic Activation"
     },
+    "Kinetic Dampening": {
+      "description": "<p>You feed off energy in your immediate surroundings, allowing you to dampen the force imparted by incoming blows. Until the beginning of your next turn, you gain resistance 5 to physical damage. At 10th level, and every 4 levels thereafter, the resistance increases by 5. Any blows that strike you during this time make no sound as their energy is drained.</p>\n<p><strong>Awakening</strong> You can extend your dampening field around you to create a safe haven for your allies. If you spend an additional action when using Kinetic Dampening, your field extends in a @Template[type:emanation|distance:15] around you. You can choose which creatures within the emanation are affected.</p>\n<p><strong>Awakening</strong> You dampen a greater variety of wavelengths. When you use this feat, you also gain resistance to your choice of fire, electricity, or sonic damage.</p>",
+      "name": "Kinetic Dampening"
+    },
     "Kinetic Pinnacle": {
       "description": "<p>No one can match the pace at which elements flow from you. You're permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}. You can use your extra action only to @UUID[Compendium.pf2e.actionspf2e.Item.g8QrV39TmZfkbXgE]{Channel Elements}, use a 1-action @UUID[Compendium.pf2e.actionspf2e.Item.6lbr0Jnv0zMB5uGb]{Elemental Blast}, or use a 1-action stance impulse.</p>",
       "name": "Kinetic Pinnacle"
@@ -16535,6 +16551,10 @@
     "Lightning Tongue": {
       "description": "<p>Your tongue darts out faster than the eye can see to retrieve loose objects. You Interact to pick up a single unattended object of light Bulk or less within 10 feet of you. If you don't have enough hands free to hold the object, it falls to the ground in your space.</p>",
       "name": "Lightning Tongue"
+    },
+    "Lightspeed Assault": {
+      "description": "<p>You zoom from enemy to enemy, striking each in an instant. Stride to an enemy and attempt a Strike against it. If successful, you can add another action to Lightspeed Assault. Stride again and attempt another Strike; if this second Strike is successful, you can spend another action to Stride again and attempt a third Strike. You can use Lightspeed Assault while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type. You attempt a backlash check for your deviation only once, regardless of how many actions you end up spending on your Lightspeed Assault.</p>\n<p><strong>Awakening</strong> Your speed allows you to slip the bonds of space. Instead of Striding, you simply teleport to your desired destination. Lightspeed Assault gains the teleportation trait.</p>\n<p><strong>Awakening</strong> You move so quickly that you might as well be in multiple places at once. When you use Lightspeed Assault, you can decide to spend one, two, or three actions up front, selecting your targets ahead of time. You can flank with yourself for any of these Strikes, and if you deal damage to a target more than once, you can add all the damage together for the purpose of overcoming resistances, if it would be more beneficial to you.</p>",
+      "name": "Lightspeed Assault"
     },
     "Like a Roach": {
       "description": "<p>Living with the bare necessities isn't terribly hard for someone who has defied death, and like a cockroach, you always know how to survive. When you @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist} during downtime, the DC for your skill check is reduced by 2. You don't need a minimum proficiency rank to Subsist in unusual environments, nor do you take a –5 penalty if you Subsist after 8 hours or less of exploration.</p>",
@@ -19657,6 +19677,10 @@
         "0": "Zombie Dedication"
       },
       "name": "Out of Hand"
+    },
+    "Overclock Senses": {
+      "description": "<p>Your senses speed up to the point that time seems to stand still, allowing you to catch details and incoming attacks. You @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}. After you Seek, you gain a +2 circumstance bonus to your AC against ranged attacks and to Reflex saving throws until the beginning of your next turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.feQwOL1QfZDfVrt8]{Effect: Overclock Senses}</p>\n<p><strong>Awakening</strong> When you use Overclock Senses, you can focus even more on the present moment, allowing you more apparent time to observe and plot at the expense of defense. When you use Overclock Senses, you do so with the benefits of darkvision, or if you are at least 14th level, with the benefits of truesight. You can attempt a @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge} check as a free action after Seeking. Your senses spent, you then do not gain the normal bonuses to AC and Reflex saving throws.</p>\n<p><strong>Awakening</strong> You hone your senses even further, letting you react to attacks almost before they happen. While you have the bonuses from Overclock Senses, if you would be hit by a ranged attack, you can spend a reaction to have the attacker roll the attack again (this is a misfortune effect), and if you would fail a Reflex save, you can spend a reaction to roll the save again (this is a fortune effect). You must take the second result, even if it is worse.</p>",
+      "name": "Overclock Senses"
     },
     "Overcrowd": {
       "description": "<p>As long as you are Small, you can end your movement in the same square as a Small ally. Only two creatures total can share the same space when using this ability or a similar one.</p>",
@@ -26014,6 +26038,10 @@
       },
       "name": "Songbird's Call"
     },
+    "Sonic Dash": {
+      "description": "<p>You bounce up and down once, then sprint forward. You Stride twice in a straight line. You can use Sonic Dash while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type.</p>\n<p><strong>Awakening</strong> Your Sonic Dash generates a sonic boom, dealing 1d4 sonic damage for every two levels you have (@Damage[floor(@actor.level/2)d4[sonic]|options:area-damage]) to all creatures other than you in a @Template[type:emanation|distance:5] at the point you end your Sonic Dash, with a @Check[fortitude|against:deviant|basic]save. Creatures that fail are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round, or 1 minute on a critical failure.</p>\n<p><strong>Awakening</strong> Your speed generates a slipstream that allows you to reposition your allies. You can dash through a willing ally's space during your Sonic Dash, causing them to be drawn by winds alongside you. You deposit them in any unoccupied space adjacent to you at the end of your Sonic Dash.</p>",
+      "name": "Sonic Dash"
+    },
     "Sonic Strafe": {
       "description": "<p><strong>Requirements</strong> You currently have a fly Speed.</p>\n<hr />\n<p>You can now achieve such flight speeds that your passage splits the very air. Fly twice. Any creature that is adjacent to you at any point during your movement takes @Damage[10d6[sonic]] damage (@Check[fortitude|against:class|basic] save against your class DC). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 hour.</p>",
       "featPrerequisites": {
@@ -27432,7 +27460,7 @@
       "name": "Storm's Lash"
     },
     "Storming Breath": {
-      "description": "<p>You spit out a freezing breath or sonic scream. You deal @Damage[(-2+@actor.level)d6[untyped]|options:area-damage]{4d6 damage, plus 1d6 damage for every level} you have beyond 6th, to all creatures in a @Template[cone|distance:30], with a @Check[reflex|against:class-spell|basic|options:area-effect,damaging-effect] save.</p><hr /><p><strong>Awakening</strong> Your blast powerfully batters your foes. A creature that critically fails its save is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p><hr /><p><strong>Awakening</strong> The kickback of your blast helps you make a speedy escape. When you use this ability, you Fly backward 15 feet in a straight line directly opposite your blast. This movement doesn't trigger reactions based on movement.</p>",
+      "description": "<p>You spit out a freezing breath or sonic scream. You deal 4d6 damage, plus 1d6 damage for every level you have beyond 6th (@Damage[(-2+@actor.level)d6[untyped]|options:area-damage]), to all creatures in a @Template[cone|distance:30], with a @Check[reflex|against:class-spell|basic|options:area-effect,damaging-effect] save.</p><hr /><p><strong>Awakening</strong> Your blast powerfully batters your foes. A creature that critically fails its save is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p><hr /><p><strong>Awakening</strong> The kickback of your blast helps you make a speedy escape. When you use this ability, you Fly backward 15 feet in a straight line directly opposite your blast. This movement doesn't trigger reactions based on movement.</p>",
       "name": "Storming Breath"
     },
     "Storming Gaze": {
@@ -30626,6 +30654,10 @@
     "Unstable Concoction": {
       "description": "<p>You can mix a wondrous yet volatile liquid into an alchemical consumable if it has an initial effect that uses dice. You increase the size of any dice for the item's initial effect by one step. For instance, you could increase damage from a @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]{Moderate Alchemist Fire} to 2d10 or healing from a @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]{Moderate Elixir of Life} to 5d8+12. Because this affects only initial dice, it wouldn't increase unarmed attack damage from a bestial mutagen, persistent damage from an acid flask, and the like. When this item is activated, the creature activating it must succeed at a @Check[flat|dc:10] or take acid damage equal to the item's level.</p>",
       "name": "Unstable Concoction"
+    },
+    "Unstable Gearshift": {
+      "description": "<p>You shift your body into a higher gear, your speed compounding further and further. You gain a +10-foot status bonus to all your Speeds, which lasts until the end of your next turn. At any time during your next turn, you can use Unstable Gearshift again, increasing the status bonus by another 5 feet and prolonging the effect for another round. You can keep using Unstable Gearshift in this way until you can no longer use your deviant abilities.</p>\n<p><strong>Awakening</strong> When moving at high speed, your form blurs. You have concealment for the duration of any move action you take while you are affected by Unstable Gearshift.</p>\n<p><strong>Awakening</strong> Your high-speed form has become partially out of phase with reality. While you are affected by Unstable Gearshift, you are not affected by physical difficult terrain (such as rubble), you do not trigger traps that use weight or pressure plates as a trigger, and you can move through enemy spaces without making checks to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through}, as you simply phase through them.</p>",
+      "name": "Unstable Gearshift"
     },
     "Unstable Patronage": {
       "description": "<p>You can act as a magical patron for your charges. When you finish your daily preparations, choose a spell your familiar knows and one of your charges. Once before your next daily preparations, that creature can Cast the Spell as an innate spell; this spell can be of no higher a rank than the highest rank of spells you can cast –2.</p>",
