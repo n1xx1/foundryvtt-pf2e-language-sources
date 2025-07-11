@@ -452,7 +452,7 @@
           "description": "<p>@Damage[(2d12+12)[bludgeoning]] damage, @Check[fortitude|dc:33|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "ai1WRF74rRc8qQq4": {
-          "description": "<p><strong>Requirements</strong> The berberoka is waterlogged.</p>\n<hr />\n<p><strong>Effect</strong> The berberoka sprays a blast of water in a @Template[line|distance:60]. All creatures in the line take @Damage[6d8[bludgeoning]] damage (@Check[reflex|dc:35|basic] save). On a failed save, a creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and pushed back 5 feet (10 feet on a critically failed save).</p>",
+          "description": "<p><strong>Requirements</strong> The berberoka is waterlogged.</p>\n<hr />\n<p><strong>Effect</strong> The berberoka sprays a blast of water in a @Template[line|distance:60]. All creatures in the line take @Damage[6d8[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:35|basic|options:area-effect,inflicts:prone,inflicts:forced-movement] save). On a failed save, a creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and pushed back 5 feet (10 feet on a critically failed save).</p>",
           "name": "Spray Water"
         }
       },
@@ -1703,7 +1703,7 @@
           "description": "<p>Medium,@Damage[(3d12+12)[bludgeoning]] damage, Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
         },
         "t0On0v7gyVoScNyY": {
-          "description": "<p><strong>Requirements</strong> The grave spinosaurus is swimming on the surface of water</p>\n<hr />\n<p><strong>Effect</strong> With a powerful lunge to the side, the grave spinosaurus uses its sail to slap the surface of the water, creating a crushing wave of water that deals @Damage[8d6[bludgeoning]] damage in a @Template[cone|distance:30]. Each creature in the water in the area must attempt a @Check[reflex|dc:36|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
+          "description": "<p><strong>Requirements</strong> The grave spinosaurus is swimming on the surface of water</p>\n<hr />\n<p><strong>Effect</strong> With a powerful lunge to the side, the grave spinosaurus uses its sail to slap the surface of the water, creating a crushing wave of water that deals @Damage[8d6[bludgeoning]|options:area-damage] damage in a @Template[cone|distance:30]. Each creature in the water in the area must attempt a @Check[reflex|dc:36|options:area-effect,damaging-effect,inflicts:slowed,inflicts:stunned] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
           "name": "Staggering Sail"
         }
       },
