@@ -648,7 +648,7 @@
                     "Title": "Cambia Impugnatura (1M)",
                     "Description": "{actor} lascia una mano da {weapon}."
                 },
-                "Description": "<p>Lasci qualcosa che stavi tenendo in una o entrambe le mani. Ciò può voler dire che lasci cadere un oggetto, togli una mano dall'arma mentre continui a tenerla con l'altra, lasci andare una corda che sostiene un lampadario o compi un'azione simile. A differenza di gran parte delle azioni maneggiare, lasciare non innesca reazioni che possono essere innescate da azioni con il tratto maneggiare, come gli Attacchi di Opportunità.</p><p>Se vuoi prepararti a lasciare qualcosa al di fuori del tuo turno, usa l'attività Preparare.</p>"
+                "Description": "<p>Lasci qualcosa che stavi tenendo in una o entrambe le mani. Ciò può voler dire che lasci cadere un oggetto, togli una mano dall'arma mentre continui a tenerla con l'altra, lasci andare una corda che sostiene un lampadario o compi un'azione simile. A differenza di gran parte delle azioni maneggiare, lasciare non innesca reazioni che possono essere innescate da azioni con il tratto maneggiare, come i Colpi Reattivi.</p><p>Se vuoi prepararti a lasciare qualcosa al di fuori del tuo turno, usa l'attività Preparare.</p>"
             },
             "Squeeze": {
                 "Notes": {
@@ -916,7 +916,7 @@
             },
             "Step": {
                 "Title": "Passo",
-                "Description": "<p>Ti muovi attentamente di 1,5 metri. A differenza di gran parte dei tipi di movimento, il Passo non innesca reazioni, come Attacchi di Opportunità, basate su azioni di movimento o su entrata e uscita da un quadretto.</p><p>Non puoi fare un Passo su un terreno difficile, e non puoi fare un Passo usando una Velocità diversa dalla tua Velocità sul terreno.</p>"
+                "Description": "<p>Ti muovi attentamente di 1,5 metri. A differenza di gran parte dei tipi di movimento, il Passo non innesca reazioni, i Colpi Reattivi, basate su azioni di movimento o su entrata e uscita da un quadretto.</p><p>Non puoi fare un Passo su un terreno difficile, e non puoi fare un Passo usando una Velocità diversa dalla tua Velocità sul terreno.</p>"
             },
             "TakeCover": {
                 "Title": "Andare in Copertura",
@@ -2236,8 +2236,8 @@
                     "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(3[splash])[void]]{3 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 3}."
                 },
                 "Lesser": {
-                    "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(1[splash])[void]]{1 danno negativo da spargimento}.",
-                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(1[splash])[void]]{1 danno negativo da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 1}."
+                    "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(1[splash])[void]]{1 danno da vuoto da spargimento}.",
+                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(1[splash])[void]]{1 danno da vuoto da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 1}."
                 },
                 "Major": {
                     "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(4[splash])[void]]{4 danni negativi da spargimento}.",
@@ -3179,10 +3179,10 @@
                 "Counteract": {
                     "Hint": "Se stai contrastando un'afflizione, la CD è indicata nel suo blocco statistiche. Se è un incantesimo, usa la CD dell'incantatore. Il GM può inoltre calcolare una CD a seconda del livello dell'effetto del bersaglio.",
                     "Label": "Contrasto",
-                    "failure": "Contrasta il bersaglio se il suo livello di contrasto è inferiore a {rank}.",
-                    "success": "Contrasta il bersaglio se il suo livello di contrasto è {rank} o inferiore.",
+                    "failure": "Contrasta il bersaglio se il suo grado di contrasto è inferiore a {rank}.",
+                    "success": "Contrasta il bersaglio se il suo grado di contrasto è {rank} o inferiore.",
                     "criticalFailure": "Non riesci a contrastare il bersaglio.",
-                    "criticalSuccess": "Contrasta il bersaglio se il suo livello di contrasto è {rank} o inferiore."
+                    "criticalSuccess": "Contrasta il bersaglio se il suo grado di contrasto è {rank} o inferiore."
                 },
                 "MeasuredTemplate": {
                     "Place": "Posiziona {area}",
@@ -3564,7 +3564,7 @@
                     "migo": "Mi-Go",
                     "orcish": "Orchesco",
                     "protean": "Protean",
-                    "pyric": "Ignan",
+                    "pyric": "Pirico",
                     "shae": "Shae",
                     "shobhad": "Shobhad",
                     "mahwek": "Mahwek",
@@ -3584,10 +3584,10 @@
                     "sphinx": "Sfinge",
                     "tekritanin": "Tekritaniano",
                     "strix": "Strix",
-                    "sussuran": "Auran",
+                    "sussuran": "Susurran",
                     "taldane": "Taldano",
                     "tengu": "Tengu",
-                    "thalassic": "Aquan",
+                    "thalassic": "Talassico",
                     "varki": "Varki",
                     "vishkanyan": "Vishkanyano",
                     "vudrani": "Vudrano",
@@ -5246,7 +5246,7 @@
                 "splash": "spargimento",
                 "untyped": "senza tipo",
                 "vitality": "vitalità",
-                "void": "negativo",
+                "void": "vuoto",
                 "spirit": "spirituali"
             },
             "IWR": {
@@ -5356,7 +5356,7 @@
                     "holy": "sacro",
                     "persistent-damage": "danno persistente",
                     "dawnsilver": "albargento",
-                    "duskwood": "legnoscuro",
+                    "duskwood": "legno crepuscolare",
                     "detection": "rilevamento",
                     "siccatite": "siccatite",
                     "alchemical": "alchemico",
@@ -6156,7 +6156,7 @@
         "TraitDescriptionDhampir": "Una creatura con questo tratto ha il lignaggio versatile dhampir. Questi umanoidi sono la progenie di vampiri e dei membri di altri retaggi.",
         "TraitDescriptionConsecration": "Un incantesimo di consacrazione migliora un'area per un lungo periodo di tempo. Una determinata area può avere un solo effetto di consacrazione alla volta. Il nuovo effetto tenta di contrastare qualsiasi esistente in aree di sovrapposizione.",
         "TraitDescriptionConsumable": "Un oggetto con questo tratto può essere usato una sola volta. Se non diversamente specificato, viene distrutto dopo l'attivazione. Gli oggetti monouso includono gli oggetti alchemici e quelli magici che si possono usare solo una volta, come pergamene e talismani. Quando un personaggio crea oggetti monouso, può crearli in partite da quattro.",
-        "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dall'energie positive o negative. I costrutti sono spesso privi di intelletto; sono immuni al sanguinamento, effetti di morte, malattie, guarigione, attacchi non letali, veleno, spirito, positivo, negativo e alle condizioni condannato, risucchiato, affaticato, paralizzato, nauseato e privo di sensi; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
+        "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dall'energie vitalità o vuote. I costrutti sono spesso privi di intelletto; sono immuni al sanguinamento, effetti di morte, malattie, guarigione, attacchi non letali, veleno, spirito, vitalità, vuoto e alle condizioni condannato, risucchiato, affaticato, paralizzato, nauseato e privo di sensi; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
         "TraitDescriptionContact": "Un veleno a contatto viene attivato spargendolo su un oggetto o direttamente sulla pelle di una creatura vivente. La prima creatura che tocca l’oggetto avvelenato deve tentare un tiro salvezza contro il veleno; se il veleno viene applicato direttamente, la creatura deve tentare immediatamente un tiro salvezza appena il veleno tocca la sua pelle. I veleni a contatto sono impossibili da applicare a una creatura tramite un attacco con un’arma, a causa delle loro modalità di somministrazione, senza avvelenarsi da soli. Tipicamente il tempo di latenza di un veleno a contatto è di 1 minuto.",
         "TraitDescriptionCurse": "Una maledizione è un effetto che provoca un'afflizione a lungo termine su una creatura. Le maledizioni sono sempre magiche e in genere sono il risultato di un incantesimo o una trappola. Gli effetti con questo tratto possono essere rimossi solo da effetti che prendono di mira specificamente le maledizioni.",
         "TraitDescriptionCursed": "Un oggetto con questo tratto è maledetto causando problemi al suo proprietario. Una maledizione non viene individuata quando l'oggetto è identificato, sebbene un successo critico riveli sia la presenza che l'esatta natura della maledizione. Gli oggetti maledetti non possono essere scartati una volta che sono stati innescati o investiti per la prima volta. L'oggetto può essere rimosso solo se viene rimossa anche la maledizione.",
@@ -7915,7 +7915,7 @@
                 "Feat": "Seleziona un talento.",
                 "Material": "Seleziona un materiale.",
                 "Shillelagh": "Seleziona un randello o bastone ferrato.",
-                "ClassDCAbilityScore": "Seleziona il punteggio di caratteristica della CD di classe.",
+                "ClassDCAbilityScore": "Seleziona l'attributo chiave della CD di classe.",
                 "DragonBreathWeapon": "Seleziona un soffio di un drago.",
                 "WeaponOrUnarmed": "Seleziona un'arma o un colpo senz'armi.",
                 "VersatileTrait": "Seleziona un tipo di danno versatile.",
@@ -8111,7 +8111,7 @@
                         "Fey": "Ottieni un bonus di status +2 alle prove di Esibizione per un round, o puoi diventare @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato} per 1 round. Un occultamento così evidente non può essere usato per @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{nascondersi}",
                         "Elemental": "Tu ottieni bonus di status +2 alle prove di Intimidazione per 1 round oppure un bersaglio subisce @Damage[@item.level[@actor.flags.pf2e.elementalBloodline.damageType]]{$1 danni}. Se l'incantesimo infligge già quel tipo di danni, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze.",
                         "Nymph": "La grazia della ninfa accentua i tuoi movimenti e distrae i tuoi nemici, concedendoti bonus di status +1 alle prove di Diplomazia per 1 round o imponendo penalità di status -1 ai tiri salvezza su Volontà di un bersaglio per 1 round.",
-                        "Psychopomp": "Ottieni bonus di status +2 ai tiri salvezza su Tempra per 1 round, oppure un bersaglio subisce @Damage[@item.level[void]]{1 danno negativo per livello dell'incantesimo} se il bersaglio è vivente o @Damage[@item.level[vitality]]{1 danno positivo per livello dell'incantesimo}. Se l'incantesimo infligge già quel tipo di danno, combinalo con il danno iniziale dell'incantesimo prima di determinare debolezze e resistenze.",
+                        "Psychopomp": "Ottieni bonus di status +2 ai tiri salvezza su Tempra per 1 round, oppure un bersaglio subisce @Damage[@item.level[void]]{1 danno vuoto per livello dell'incantesimo} se il bersaglio è vivente o @Damage[@item.level[vitality]]{1 danno positivo per livello dell'incantesimo}. Se l'incantesimo infligge già quel tipo di danno, combinalo con il danno iniziale dell'incantesimo prima di determinare debolezze e resistenze.",
                         "Shadow": {
                             "Text": "Le ombre diventano più profonde intorno a te o a un bersaglio, concedendoti bonus di status +1 a Furtività o imponendo penalità di status -1 a Percezione per 1 round.",
                             "PerceptionPenalty": "penalità di -1 a Percezione",
@@ -8274,7 +8274,7 @@
                     "Prompt": "Scegli un nemico ancestrale."
                 },
                 "DeathWardenDwarf": {
-                    "Note": "Se ottieni un successo in un tiro salvezza contro un effetto che ha il tratto negativo o è stato creato da una creatura non morta, al suo posto ottieni un successo critico."
+                    "Note": "Se ottieni un successo in un tiro salvezza contro un effetto che ha il tratto vuoto o è stato creato da una creatura non morta, al suo posto ottieni un successo critico."
                 },
                 "ElementalHeart": {
                     "Prompt": "Seleziona il tipo del tuo Cuore Elementale"
@@ -8570,7 +8570,7 @@
                     "RollOptionLabel": "Impugni lo scudo come un simbolo religioso"
                 },
                 "EmblazonAntimagic": {
-                    "WeaponNote": "Se colpisci criticamente con l'arma, puoi tentare di contrastare un incantesimo sul tuo bersaglio, usando metà del tuo livello, arrotondato per eccesso, come livello di contrasto. Se lo fai, il simbolo blasonato scompare immediatamente."
+                    "WeaponNote": "Se colpisci criticamente con l'arma, puoi tentare di contrastare un incantesimo sul tuo bersaglio, usando metà del tuo livello, arrotondato per eccesso, come grado di contrasto. Se lo fai, il simbolo blasonato scompare immediatamente."
                 }
             },
             "Conrasu": {
@@ -9486,7 +9486,7 @@
                     "Description": "Quando lanci _muro di fuoco_, puoi modificarne gli effetti consueti come segue: Anziché in un anello di fiamme spesso 1,5 metri e del raggio di 3 metri, puoi modellare il muro in un emisfero di fuoco del @Template[burst|distance:10]{raggio di 3 metri}."
                 },
                 "StealVitality": {
-                    "Description": "Quando lanci _tocco del vampiro_, puoi modificarne gli effetti consueti come segue: Se il tuo bersaglio ottiene un fallimento o un fallimento critico nel tiro salvezza, anziché ottenere Punti Ferita temporanei puoi tentare una prova di contrasto per rimuovere da te la condizione indebolito o maldestro, utilizzando la fonte di tale condizione per determinare il livello e la CD di contrasto. Se la condizione è stata causata da un effetto in corso e non rimuovi quell'effetto, la condizione si ripresenta alla fine del tuo turno successivo."
+                    "Description": "Quando lanci _tocco del vampiro_, puoi modificarne gli effetti consueti come segue: Se il tuo bersaglio ottiene un fallimento o un fallimento critico nel tiro salvezza, anziché ottenere Punti Ferita temporanei puoi tentare una prova di contrasto per rimuovere da te la condizione indebolito o maldestro, utilizzando la fonte di tale condizione per determinare il grado e la CD di contrasto. Se la condizione è stata causata da un effetto in corso e non rimuovi quell'effetto, la condizione si ripresenta alla fine del tuo turno successivo."
                 },
                 "AgileHand": {
                     "PenaltyLabel": "Furto con Mano Agile",
@@ -9920,13 +9920,13 @@
                 "UnusualComposition": "Se con la tua azione successiva lanci un incantesimo di composizione che ha i tratti visivo o uditivo, puoi fare in modo che influenzi creature che possono assistervi con qualsiasi senso, non solo quelli che indicano i tratti, inclusi sensi speciali come percezione tellurica. Puoi scegliere di escludere i sensi che preferisci.",
                 "QuickenedCasting": "Se con la tua azione successiva lanci un trucchetto o un incantesimo inferiore di almeno 2 livelli rispetto all'incantesimo più alto che puoi lanciare, riduci di 1 il numero di azioni necessarie per lanciarlo (minimo 1).",
                 "CallAndResponse": "Mentre l'incantesimo è attivo, un alleato colpito dall'incantesimo può rispondere alla tua strofa con un'antistrofa, usando un'azione singola che ha i tratti concentrazione e uditivo per estendere la durata dell'incantesimo di 1 round. Solo un alleato può rispondere a una determinata strofa, e rispondere all'antistrofa dell'alleato non ha alcun effetto aggiuntivi.",
-                "DivineInfusion": "Il bersaglio infligge danni aggiuntivi con le sue armi da mischia e gli attacchi senz'armi fino alla fine del suo turno successivo. Il tipo di danni è negativo se hai lanciato <em>ferire</em> e positivo se hai lanciato <em>guarire</em>. @UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{Effetto: Infusione Divina}.",
+                "DivineInfusion": "Il bersaglio infligge danni aggiuntivi con le sue armi da mischia e gli attacchi senz'armi fino alla fine del suo turno successivo. Il tipo di danni è vuoto se hai lanciato <em>ferire</em> e positivo se hai lanciato <em>guarire</em>. @UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{Effetto: Infusione Divina}.",
                 "Harmonize": "Se con la tua azione successiva lanci una composizione, questa diventa armonizzata. A differenza delle composizioni normali, una armonizzata non termina se lanci un'altra composizione, e puoi lanciare un'altra composizione nello stesso turno come composizione armonizzata. Il lancio di un'altra composizione armonizzata fa terminare qualsiasi composizione armonizzata già attiva.",
                 "BondConservation": "Ottieni un utilizzo aggiuntivo di Scaricare Oggetto Legato che devi consumare prima della fine del tuo turno successivo, altrimenti lo perdi. Puoi sfruttare l'utilizzo aggiuntivo solo per lanciare un incantesimo inferiore di almeno 2 livelli rispetto al primo incantesimo lanciato tramite Scaricare Oggetto Legato.",
-                "NonLethal": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni e non ha il tratto morte o negativo, quell'incantesimo ottiene il tratto non letale.",
+                "NonLethal": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni e non ha il tratto morte o vuoto, quell'incantesimo ottiene il tratto non letale.",
                 "OverwhelmingEnergy": "Se come azione successiva Lanci un Incantesimo, quest'ultimo ignora un ammontare di resistenza del bersaglio al danno da acido, elettricità, freddo, fuoco o sonoro pari al tuo livello. Questo effetto si applica a tutti i danni inferti dall'incantesimo, compresi quelli persistenti e quelli causati da effetti in corso, come nel caso del muro creato da muro di fuoco. Le immunità delle creature non vengono influenzate.",
                 "DefensiveCoordination": "Puoi Alzare uno Scudo e un singolo alleato che ottiene un bonus di status grazie all'incantesimo può usare immediatamente una reazione per Alzare uno Scudo.",
-                "EnergyAblation": "Se la tua prossima azione è Lanciare un Incantesimo che infligge almeno un tipo di danno da energia (acido, elettricità, forza, freddo, fuoco, sonoro, positivo o negativo), a prescindere dal fatto che infligga o meno danni, ottieni resistenza a un tipo di energia pari al grado dell'incantesimo fino alla fine del tuo turno successivo.",
+                "EnergyAblation": "Se la tua prossima azione è Lanciare un Incantesimo che infligge almeno un tipo di danno da energia (acido, elettricità, forza, freddo, fuoco, sonoro, positivo o vuoto), a prescindere dal fatto che infligga o meno danni, ottieni resistenza a un tipo di energia pari al grado dell'incantesimo fino alla fine del tuo turno successivo.",
                 "ConcealSpell": "L'incantesimo ottiene il tratto discreto, nascondendo le rune brillanti, scintille di magia o altre manifestazioni che solitamente rivelano il tuo lancio di incantesimi. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti, perciò un osservatore potrebbe comunque notare un raggio balenare da te o vederti svanire.",
                 "VigorousAnthem": "Tu e tutti gli alleati influenzati ottenete Punti Ferita temporanei pari a 3 + il tuo modificatore di Carisma, per la durata di 1 minuto. @UUID[Compendium.pf2e.feat-effects.Item.7AzGhIOx4Df5Cicr]{Effetto: Inno Vigoroso}",
                 "ForcibleEnergy": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni da acido, da elettricità, da fuoco o sonori, puoi selezionare un bersaglio che è stato danneggiato e fargli ottenere debolezza 5 a quel tipo di danno fino alla fine del tuo turno successivo. Se un incantesimo infligge più tipi di danni da energia, scegli quello a cui il bersaglio ottiene debolezza. Questo non ha effetto sulle creature con resistenza o immunità al tipo di energia che scegli. @UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{Effetto: Energia Violenta}",
@@ -10605,7 +10605,7 @@
         "TraitDarvakka": "Darvakka",
         "PreciousMaterialPeachwood": "Pesco",
         "TraitDescriptionCobbled": "Quest'arma da fuoco è raffazzonata e il suo inceppamento è più probabile. Non importa quanto bene tu effettui la manutenzione, con un tiro per colpire fallito l'attacco manca e devi effettuare una @Check[flat|dc:5]. Se fallisci tale prova, l'arma si inceppa.",
-        "PreciousMaterialPeachwoodDescription": "Le armi di pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legnoscuro ai fini di qualsiasi resistenza o debolezza correlata al legnoscuro delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta.",
+        "PreciousMaterialPeachwoodDescription": "Le armi di pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legno crepuscolare ai fini di qualsiasi resistenza o debolezza correlata al legno crepuscolare delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta.",
         "TraitDescriptionCriticalFusion": "Fusione del Critico è un nuovo tratto per le armi combinate che ti fornisce due opzioni aggiuntive per l'effetto di specializzazione del critico quando usi la versione da mischia dell'arma combinata per effettuare un attacco in mischia mentre l'arma è carica. Se scegli di usare una di queste opzioni, esse sostituiscono il normale effetto di specializzazione del critico dell'uso in mischia. Come prima opzione, puoi scaricare l'arma da fuoco per creare un forte botto e una concussione, utilizzando l'effetto di specializzazione del critico delle armi da fuoco invece dell'effetto di specializzazione del critico del gruppo delle armi da mischia. Come seconda opzione, puoi scegliere di scaricare l'arma da fuoco per aumentare lo slancio del colpo critico o sparare al nemico mentre lo attacchi in mischia, infliggendo 2 danni aggiuntivi per ogni dado di danno dell'arma. Entrambe le opzioni scaricano l'arma, il che di solito significa che è necessario ricaricarla prima di sparare di nuovo.",
         "TraitDescriptionCombination": "Questo è un tratto per le armi che combinano la funzionalità di armi da mischia e armi da fuoco in modi unici o inusuali. Un'arma combinata ha una forma o uso da arma da fuoco e una forma o un uso da arma da mischia.",
         "TraitDescriptionDarvakka": "Creature non morte entropiche, corrotte dal Piano delle Ombre e dal Piano dell'Energia Negativa.",
@@ -10658,10 +10658,10 @@
             "Remaster": "Remaster?"
         },
         "PreciousMaterialDawnsilverDescription": "L'albargento è rinomato per la sua leggerezza, durevolezza ed efficacia contro una varietà di creature, inclusi diavoli e licantropi. Ha la stessa lucentezza dell'argento ma una sfumatura leggermente più chiara. Le armi e le armature di albargento vengono considerate come se fossero d'argento al fine di danneggiare le creature con debolezza verso l'argento. Un oggetto di metallo fatto di albargento è più leggero di uno uguale fatto d'acciaio o ferro: il Volume dell'oggetto è ridotto di 1 (oppure a Volume Leggero se il suo Volume normale è 1, se l'oggetto ha già Volume Leggero non si applica questo effetto). Il Prezzo di un oggetto fatto di albargento è calcolato sul normale Volume dell'oggetto, non sul Volume ridotto per essere fatto di albargento, ma applica la riduzione di Volume prima di effettuare qualsiasi altro aggiustamento del Volume dell'oggetto in base alle sue dimensioni.",
-        "PreciousMaterialDuskwoodDescription": "Il legnoscuro è un legno molto leggero che si trova principalmente in antiche foreste nell'area centro-sud dell'Avistan; è scuro come l'ebano ma con una leggera sfumatura viola. Il Volume di un oggetto di legnoscuro è ridotto di 1 (oppure a Volume Leggero se il suo Volume normale è 1, se l'oggetto ha già Volume Leggero non si applica questo effetto). Il Prezzo di un oggetto fatto di legnoscuro è calcolato sul normale Volume dell'oggetto, non sul Volume ridotto per essere fatto di legnoscuro, ma applica la riduzione di Volume prima di effettuare qualsiasi altro aggiustamento del Volume dell'oggetto in base alle sue dimensioni.",
+        "PreciousMaterialDuskwoodDescription": "Il legno crepuscolare è un legno molto leggero che si trova principalmente in antiche foreste nell'area centro-sud dell'Avistan; è scuro come l'ebano ma con una leggera sfumatura viola. Il Volume di un oggetto di legno crepuscolare è ridotto di 1 (oppure a Volume leggero se il suo Volume normale è 1, se l'oggetto ha già Volume leggero non si applica questo effetto). Il Prezzo di un oggetto fatto di legno crepuscolare è calcolato sul normale Volume dell'oggetto, non sul Volume ridotto per essere fatto di legno crepuscolare, ma applica la riduzione di Volume prima di effettuare qualsiasi altro aggiustamento del Volume dell'oggetto in base alle sue dimensioni.",
         "PreciousMaterialDawnsilver": "Albargento",
-        "PreciousMaterialDuskwood": "Legnoscuro",
-        "TraitDescriptionPeachwood": "Le armi di pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legnoscuro ai fini di qualsiasi resistenza o debolezza correlata al legnoscuro delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta.",
+        "PreciousMaterialDuskwood": "Legno Crepuscolare",
+        "TraitDescriptionPeachwood": "Le armi di pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legno crepuscolare ai fini di qualsiasi resistenza o debolezza correlata al legno crepuscolare delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta.",
         "TraitDescriptionDromaar": "Una creatura con questo tratto ha il lignaggio versatile mezzorco. I mezzorchi sono di stirpe mista, includono orchi o altri mezzorchi. Una abilità con questo tratto può essere usata o selezionata solo da mezzorchi.",
         "TraitDescriptionPoppet": "Una creatura con questo tratto è un membro della stirpe bambolina.",
         "SettingsQuickChecksLabel": "Anteprima Tiri D20",
@@ -10710,7 +10710,7 @@
         "TraitFocus": "Focalizzato",
         "TraitDescriptionUndead": "Queste creature, che una volta erano viventi, dopo la morte sono state infuse di energia negativa e magia sacrilega che corrompe l'anima. Quando viene ridotta a 0 Punti Ferita, una creatura non morta viene distrutta. Le creature non morte sono danneggiate dall'energia positiva, sono guarite dall'energia negativa e non beneficiano degli effetti di guarigione.",
         "TraitDescriptionSummon": "Gli incantesimi con il tratto evocazione possono evocare creature, tipicamente quelle con un tratto particolare. Queste creature possono essere trovate nel Bestiario o libri simili. A meno che non sia segnato altrimenti, la creatura deve essere comune, ottiene il tratto evocato e deve apparire in uno spazio non occupato abbastanza largo da contenerla. Il livello più alto di creatura che l'incantesimo può evocare dipende dal grado dell'incantesimo, come elencato qua sotto. L'incantesimo può comunque evocare una creatura di un livello inferiore se lo desideri. Queste regole si applicano soltanto a incantesimi che hanno il tratto evocare; altri incantesimi che chiamano o evocano oggetti o esseri che non hanno il tratto, come evoca strumento, funzionano come spiegato nell'incantesimo.",
-        "TraitVersatileVoid": "Versatile Negativo",
+        "TraitVersatileVoid": "Versatile Vuoto",
         "TraitVersatileX": "Versatile {x}",
         "TraitVersatileVitality": "Versatile Positivo",
         "TraitVersatileSpirit": "Versatile Spirituale",
@@ -10743,8 +10743,8 @@
                 "MagicalBludgeoning": "contundente magico",
                 "AllDamageFromUndead": "tutti i danni da non morti",
                 "AllDamageFromArcaneSpells": "tutti i danni da incantesimi arcani",
-                "VoidZonKuthonFollowers": "negativo dalle adoratrici di Zon-Kuthon",
-                "MagicalDuskwood": "legnoscuro magico",
+                "VoidZonKuthonFollowers": "vuoto dalle adoratrici di Zon-Kuthon",
+                "MagicalDuskwood": "legno crepuscolare magico",
                 "PhysicalRangedAttacks": "attacchi a distanza fisici",
                 "CrystalHazards": "pericoli associati ai cristalli",
                 "Spirits": "spiriti",
@@ -10810,7 +10810,7 @@
                 "60": "18 metri"
             }
         },
-        "TraitVoid": "Negativo",
+        "TraitVoid": "Vuoto",
         "TraitVitality": "Positivo",
         "TraitMetal": "Metallo",
         "ArmorPropertyRuneSizeChanging": "Cambia Taglia",
