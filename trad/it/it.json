@@ -1797,6 +1797,18 @@
                 "Note": {
                     "criticalSuccess": "Quado colpisci criticamente un bersaglio con quest'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round (<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">Sfuggire CD 28</span>) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{maldestro 1} finché dura l’immobilizzazione."
                 }
+            },
+            "flurrying": {
+                "Name": "Turbinante"
+            },
+            "coating": {
+                "Name": "Ricoprente"
+            },
+            "authorized": {
+                "Name": "Autorizzata"
+            },
+            "earthbinding": {
+                "Name": "Legante a Terra"
             }
         },
         "Action": {
@@ -3186,7 +3198,8 @@
                 },
                 "MeasuredTemplate": {
                     "Place": "Posiziona {area}",
-                    "Clear": "Elimina Template Posizionati"
+                    "Clear": "Elimina Template Posizionati",
+                    "PlacementTooltip": "<strong>Click sinistro</strong> per bloccare la posizione nel canvas e abilitare la rotazione. Premi ancora per posizionare.<br /><strong>Click destro</strong> per sbloccare o annullare.<br />Tieni premuto <strong>Shift</strong> per posizionare direttamente senza rotazione.<br />Tieni premuto <strong>Ctrl</strong> per disabilitare l'allineamento ala griglia quando ruoti."
                 },
                 "Area": "{shape} di {size} {unit}",
                 "Plural": "Incantesimi",
@@ -6129,7 +6142,7 @@
         "TraitDescriptionAttached": "Un'arma unita deve essere combinata con un altro pezzo di equipaggiamento per essere usata. Il tratto specifica a che tipo di oggetto deve essere unita l'arma. Devi impugnare o indossare l'oggetto a cui l'arma è unita per poter attaccare con essa. Ad esempio, la chiodatura per scudo è unita a uno scudo, permettendoti di attaccare con gli spuntoni anziché con il colpo di scudo, ma solo se stai impugnando lo scudo stesso. Un'arma unita è, di solito, fissata o assemblata assieme all'oggetto a cui è unita e un oggetto può, generalmente, essere unito a una sola arma. Un'arma unita può essere applicata a un oggetto con 10 minuti di lavoro e un successo in una prova di @Check[crafting|dc:10]; questo include il tempo necessario a rimuovere l'arma da un oggetto precedente, se necessario. Se un oggetto viene distrutto, l'arma unita ad esso può di solito essere recuperata.",
         "TraitDescriptionAttack": "Una capacità con questo tratto comporta un attacco. Per ogni attacco effettuato oltre il primo del tuo turno, subisci una Penalità da Attacchi Multipli.",
         "TraitDescriptionAuditory": "Le azioni e gli effetti uditivi si basano sul suono. Un'azione con il tratto uditivo può essere eseguita con successo solo se la creatura che usa l'azione può parlare o produrre in altro modo i suoni richiesti. Un incantesimo, o un effetto con il tratto uditivo produce il suo effetto solo se il bersaglio può sentirlo. Questo vale solo per le parti dell'effetto basate sul suono, come stabilito dal GM. Questo è diverso da un effetto sonoro, che influenza comunque i bersagli che non riescono a sentirlo (per esempio i bersagli sordi) a patto che l'effetto stesso emetta un suono.",
-        "TraitDescriptionAura": "Un'aura è un'emanazione che fluisce continuamente da te, influenzando le creature entro un certo raggio. L'aura può anche riferirsi alla firma magica di un oggetto o di una creatura con un forte allineamento.",
+        "TraitDescriptionAura": "Un'aura è un'emanazione che fluisce continuamente da te, influenzando le creature entro un certo raggio. L'aura può anche riferirsi alla firma magica di un oggetto.",
         "TraitDescriptionAzarketi": "Umanoidi anfibi che vivono nei mari della regione del Mare Interno. Si dice che discendano dai popoli azlanti. Sono anche chiamati uomini pesce o Azlanti Inferiori. Gli azarketi sono un ramo umano adattatosi a vivere in comunità acquatiche. Hanno branchie, dita palmate e piccole pinne e possono sopravvivere sia dentro che fuori dall'acqua.",
         "TraitDescriptionBackstabber": "Quando colpisci una creatura impreparata, quest'arma infligge 1 danno di precisione oltre al suo normale danno. Il danno di precisione aumenta a 2 se l'arma è un'arma +3.",
         "TraitDescriptionBackswing": "Puoi usare lo slancio di un attacco mancato con quest'arma per lanciarti nel tuo prossimo attacco. Dopo aver mancato con quest'arma nel tuo turno ottieni bonus di circostanza + 1 al tuo prossimo attacco con quest'arma effettuato entro la fine del tuo turno.",
@@ -6976,7 +6989,54 @@
                 "tonfa": "Tonfa",
                 "flying-talon": "Artiglio Volante",
                 "fangs": "Zanne",
-                "nails": "Unghie"
+                "nails": "Unghie",
+                "lancer": "Lanciere",
+                "gauntlet-bow": "Guanto con Balestra",
+                "flyssa": "Flyssa",
+                "bec-de-corbin": "Bec de Corbin",
+                "earthbreaker": "Spezzaterra",
+                "gill-hook": "Uncino Branchiale",
+                "karambit": "Karambit",
+                "sun-sling": "Fionda del Sole",
+                "chakri": "Chakri",
+                "chain-sword": "Spada di Maglia",
+                "kusarigama": "Kusarigama",
+                "crescent-cross": "Mezzaluna a Croce",
+                "frying-pan": "Padella",
+                "gakgung": "Gakgung",
+                "macuahuitl": "Macuahuitl",
+                "spraysling": "Fionda a Getto",
+                "wrecker": "Distruttore",
+                "boarding-axe": "Ascia da Arrembaggio",
+                "three-section-naginata": "Naginata a Tre Sezioni",
+                "jiu-huan-dao": "Jiu Huan Dao",
+                "phalanx-piercer": "Perforatore di Falange",
+                "scizore": "Falcato",
+                "battle-saddle": "Sella da Battaglia",
+                "rope-dart": "Corda con Dardo",
+                "boomerang": "Boomerang",
+                "falcata": "Falcata",
+                "shield-bow": "Arco con Scudo",
+                "corset-knife": "Coltello da Corsetto",
+                "lion-scythe": "Falce del Leone",
+                "long-hammer": "Martello a Due Mani",
+                "panabas": "Panabas",
+                "sukgung": "Sukgung",
+                "combat-lure": "Esca da Combattimento",
+                "rotary-bow": "Balestra a Rotazione",
+                "sansetsukon": "Sansetsukon",
+                "barricade-buster": "Spezzabarricate",
+                "bow-staff": "Bastone con Arco",
+                "breaching-pike": "Picca Apripista",
+                "mikazuki": "Mikazuki",
+                "feng-huo-lun": "Feng Huo Lun",
+                "dancers-spear": "Lancia del Danzatore",
+                "dwarven-dorn-dergar": "Dorn-Dergar Nanico",
+                "nodachi": "Nodachi",
+                "hook-sword": "Lama Uncinata",
+                "atlatl": "Atlatl",
+                "harpoon": "Arpione",
+                "leiomano": "Leiomano"
             }
         },
         "WeaponAbilityLabel": "Abilità Arma",
@@ -7173,7 +7233,7 @@
         },
         "UnitedPaizoWorkers": {
             "Title": "Annuncio: United Paizo Workers",
-            "ReleaseIntro": "Redmond, WA (14 Ottobre 2021) — Oggi, i lavoratori a Paizo, Inc - il publisher dei giochi di ruolo Pathfinder e Starfinder - annunciano la formazionne della loro unione United Paizo Workers (UPW), con il progetto CODE-CWA della Communication Workers of America's. Quest'unione è la prima del suo tipo nell'industria dei giochi di ruolo da tavolo.",
+            "ReleaseIntro": "Redmond, WA (14 Ottobre 2021) — Oggi, i lavoratori a Paizo, Inc — il publisher dei giochi di ruolo Pathfinder e Starfinder - annunciano la formazionne della loro unione United Paizo Workers (UPW), con il progetto CODE-CWA della Communication Workers of America's. Quest'unione è la prima del suo tipo nell'industria dei giochi di ruolo da tavolo.",
             "PFSNote": "Nota per i giocatori della Pathfinder Society: A supporto della UPW, qualsiasi prodotto acquistato dal negozio dell'unione sarà valido al fine del dono <span class=\"hover\" title=\"Quando usi un Punto Eroe per ritirare una prova, aggiungi un bonus di circostanza +1 al ritiro\">Paramenti Promozionali</a> nella regione di PFS Online."
         },
         "loot": {
@@ -10265,7 +10325,7 @@
                 "Ranged": "Infusione a Distanza"
             }
         },
-        "LevelRange": "Livelli {minLevel} - {level}",
+        "LevelRange": "Livelli {minLevel} — {level}",
         "DeleteSpellcastEntryTitle": "Elimina Voce Lancio Incantesimi",
         "TraitJousting": "Giostra",
         "TraitDescriptionFinite": "I piani con questo tratto consistono in un ammontare limitato di spazio.",
@@ -10537,7 +10597,7 @@
             "Document": "Documento",
             "Foundry": "Foundry",
             "FoundryOld": "0.7 o più vecchia",
-            "LockedTooltip": "Impossibile migrare - il compendio è bloccato",
+            "LockedTooltip": "Impossibile migrare — il compendio è bloccato",
             "Invalid": "Non valida",
             "MigrateCompendium": "Migrazione Compendio",
             "Schema": "Schema",
@@ -10685,7 +10745,8 @@
             },
             "SyncDarkness": {
                 "Label": "Sincronizza l'Oscurità all'Ora",
-                "Hint": "Quando l'ora del giorno cambia nella scena, aggiusta automaticamente il livello di oscurità (più scuro verso le ore della sera, più chiaro durante mezzogiorno)."
+                "Hint": "Quando l'ora del giorno cambia nella scena, aggiusta automaticamente il livello di oscurità (più scuro verso le ore della sera, più chiaro durante mezzogiorno).",
+                "ManagedBy": "Sincronizzato con <wt>tempo del mondo</wt>."
             }
         },
         "TraitDescriptionSanctified": "Se sei sacro o sacrilego, le tue azioni e incantesimi santificate ottengono lo stesso tratto.",
