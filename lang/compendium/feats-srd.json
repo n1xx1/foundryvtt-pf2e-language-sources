@@ -1755,6 +1755,13 @@
       "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.feats-srd.Item.NlEZ0piDxg9buXCL]{Advanced Alchemy} to craft an @UUID[Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT]{Alchemist's Fire}, and that bomb's level is at least 2 levels lower than your @UUID[Compendium.pf2e.classfeatures.Item.Pe0zmIqyTBc2Td0I]{Advanced Alchemy} level.</p>\n<hr />\n<p>Artokus developed a mixture of volatile materials that burns hotter and longer than typical alchemist's fire. You include this additive mixture when crafting your alchemist's fire.</p>\n<p>The alchemist's fire deals @Damage[1d4[persistent,fire]] damage in addition to what the alchemist fire would normally cause (for instance, a moderate alchemist's fire deals 1d4+2 persistent fire damage).</p>\n<p>A creature taking persistent fire damage from the alchemist's fire requires two successful flat checks to end the persistent damage, or one check if the creature had an assisted recovery that reduces the flat check to DC 10.</p>\n<p>The enhanced alchemist's fire burns even underwater, and any attempts to end the persistent damage by using water have no effect.</p>",
       "name": "Artokus's Fire"
     },
+    "As a Thousand Soldiers": {
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>Though you may have stolen from the hive, you've nothing but respect for the armies guarding it, and you borrow their strength to overwhelm your foes. Your body transforms into a swarm of bees. You Fly up to twice your Speed; during this movement you can pass through any space that would be small enough for a single insect, and your movement does not trigger reactions. If you pass through an enemy's space, you can inflict a storm of stings that deals @Damage[(floor((@actor.level - 2)/ 2)d4)[piercing],(floor((@actor.level - 2)/ 2)d4)[poison]] damage, with a @Check[reflex|against:exemplar|basic] save against your class DC. At the end of your movement, you return to your original form. At 10th level and every two levels thereafter, the damage increases by 1d4 piercing damage and 1d4 poison damage.</p>",
+      "featPrerequisites": {
+        "0": "plunderer of the hive's riches"
+      },
+      "name": "As a Thousand Soldiers"
+    },
     "As in Life, So in Death": {
       "description": "<p>Specific memories of your old life are hard to hold onto, but you know things without remembering why. You gain the @UUID[Compendium.pf2e.feats-srd.Item.ihN8gkHSdPG9Trte]{Adopted Ancestry} feat. You can choose any ancestry, but it is likely to be one that matches both your skeleton heritage and who you were in life. As long as your body is completely covered by armor or clothing, you do not have to attempt Deception checks against a creature's Perception DC to successfully Impersonate yourself as a member of that ancestry. This is a non-magical disguise that doesn't protect against divination. This disguise doesn't provide any benefit against a creature actively attempting a Perception check against you.</p>",
       "name": "As in Life, So in Death"
@@ -9045,7 +9052,7 @@
       "name": "Enduring Alchemy"
     },
     "Enduring Debilitation": {
-      "description": "<p><strong>Trigger</strong> You apply a debilitation to a creature.</p>\n<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p>You can make your debilitation last an exceptionally long time. The triggering debilitation lasts for 1 minute instead of until the end of your next turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.PX6WdrpzEdUzKRHx]{Effect: Enduring Debilitating Strike}</p>",
+      "description": "<p><strong>Trigger</strong> You apply a debilitation to a creature.</p>\n<p><strong>Frequency</strong> once per minute</p><hr /><p>You can make your debilitation last an exceptionally long time. The triggering debilitation lasts for 1 minute instead of until the end of your next turn.</p>",
       "featPrerequisites": {
         "0": "Debilitating Strike"
       },
@@ -11378,6 +11385,10 @@
       },
       "name": "Folktales Lore"
     },
+    "Follow the Threads of Fate": {
+      "description": "<p><strong>Usage</strong> imbued into a worn ikon made of cloth or a weapon ikon with a tassel, wrapping, or similar feature.</p><hr /><p>A norn's thread—spun from fate itself—runs through or wraps around your ikon.</p>\n<p><strong>Transcendence—@UUID[Compendium.pf2e.actionspf2e.Item.TIIM35m8aDUEU4gF]{Unravel the Future}</strong> <span class=\"action-glyph\">1</span> (fortune, transcendence) You pluck a single thread from your ikon, which ties itself in three loops about your wrist, where it remains for the next minute. If you fail an attack roll or skill check, and a +1 status bonus would change your failure into a success or your success into a critical success, you gain a +1 status bonus to this check retroactively, changing the outcome appropriately as the thread pulls you to the future you desire. The thread then falls from your wrist. You can have only one thread in existence at a time.</p>",
+      "name": "Follow the Threads of Fate"
+    },
     "Follow-Up Assault": {
       "description": "<p><strong>Requirements</strong> You used your previous action to make a melee Strike that missed.</p><hr /><p>Even in the face of failure you press the attack, determined to succeed. Make a Strike with the same weapon, adding the backswing and forceful weapon traits to that Strike.</p>",
       "name": "Follow-Up Assault"
@@ -11658,6 +11669,13 @@
         "0": "Prophet of Kalistrade Dedication"
       },
       "name": "Fortune's Favor"
+    },
+    "Forward Gaze Into Life": {
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>Despite the constant cold of death at your back, you keep your gaze forward into the realm of life. You release two @Template[type:cone|distance:15]{15-foot cones}, aimed exactly opposite each other, one ahead of you that deals @Damage[5d10[vitality]|options:area-damage] damage and one behind you that deals @Damage[5d10[void]|options:area-damage] damage, each with a @Check[reflex|against:exemplar|basic|options:area-effect] save against your class DC. Creatures that critically fail also take 5 persistent damage, of the same damage type dealt (@Damage[5[persistent,vitality]] or @Damage[5[persistent,void]]).</p>",
+      "featPrerequisites": {
+        "0": "trespasser in death's realm"
+      },
+      "name": "Forward Gaze Into Life"
     },
     "Fossil Rider": {
       "description": "<p>Using your ancestors' bones, you manifest their spirits around you in a fossilized form. You can cast @UUID[Compendium.pf2e.spells-srd.Item.O6VQC1Bs4aSYDa6R]{Mask of Terror} on yourself as an innate spell once per day. When you do, you appear as a skeletal lizardfolk ancestor, twisted in a way that inspires the deepest fears of those who observe you.</p>",
@@ -23174,6 +23192,10 @@
       },
       "name": "Ricocheting Leap"
     },
+    "Riddle The Sphinx": {
+      "description": "<p><strong>Usage</strong> imbued into a body ikon</p><hr /><p>You've learned the secrets of the sphinx's riddles and empowered your ikon with them. You can voice these mysteries, forcing others to overcome them as you did.</p>\n<p><strong>Transcendence—@UUID[Compendium.pf2e.actionspf2e.Item.cGCQkCz14sF238gE]{Tangle in Riddle}</strong> <span class=\"action-glyph\">1</span> (auditory, mental, transcendence) You speak a bizarre koan that transcends language and is understood by only one creature within 30 feet. The target must attempt a @Check[will|against:exemplar] save against your class DC. It's then immune to this ability for 1 hour.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is stupefied 1 for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The target is stupefied 1 and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>",
+      "name": "Riddle The Sphinx"
+    },
     "Ride": {
       "description": "<p>When you @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal} you're mounted on to take a move action (such as Stride), you automatically succeed instead of needing to attempt a check. Any animal you're mounted on acts on your turn, like a minion. If you @UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{Mount} an animal in the middle of an encounter, it skips its next turn and then acts on your next turn.</p>",
       "name": "Ride"
@@ -24981,6 +25003,10 @@
         "2": "Shield Warden"
       },
       "name": "Shield of Reckoning"
+    },
+    "Shield of Stone": {
+      "description": "<p><strong>Usage</strong> imbued into the mirror aegis</p><hr /><p>You stole a gorgon's gaze and trapped it in your ikon. You've learned how to brandish it for your advantage, subduing the rage of the trapped gaze by turning it on your enemies.</p>\n<p><strong>Transcendence—@UUID[Compendium.pf2e.actionspf2e.Item.5VbPhxZYfagIqE1z]{Brandish the Gorgon's Gaze}</strong> <span class=\"action-glyph\">1</span> (earth, transcendence, visual)</p>\n<p><strong>Effect</strong> You Raise your mirrored aegis, though it seems to lose some of its usual luster in favor of the dull sheen of stone. If you Shield Block a melee attack with the mirrored aegis before the beginning of your next turn, the gorgon's eyes upon it flash at the triggering creature, who must attempt a @Check[fortitude|against:exemplar|traits:earth,transcendence,visual] save against your class DC. On a failure, they are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their body partially petrifies. Regardless of the outcome, that creature is temporarily immune to this effect for 24 hours.</p>",
+      "name": "Shield of Stone"
     },
     "Shield the Faithful": {
       "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>You and those closest to you are protected by your deity's power. For 1 minute, you and all allies within 10 feet of you gain a +1 item bonus to AC and resistance 10 to spirit damage. In addition, when a creature adjacent to you hits you with a melee attack, or when a creature touches you or hits you with an unarmed attack, that creature takes @Damage[(ternary(gte(@actor.level,20),10,5))[spirit]] damage.</p>\n<p>At 20th level, the spirit resistance increases to 15 and the spirit damage increases to 10.</p>",
@@ -29366,6 +29392,10 @@
         "0": "Overwatch Dedication"
       },
       "name": "Topple Giants"
+    },
+    "Topple The Titans": {
+      "description": "<p><strong>Frequency</strong> Once per minute</p>\n<p><strong>Requirements</strong> Your previous action was a successful or critically successful @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} against a creature at least one size larger than you, and the enemy became @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p><hr /><p>Even the greatest titans of the world are easier to kill when they're lying on the ground. You've made it your mission to topple such giants and can make others fall with a force that shakes the very earth. The triggering creature's toppling body shakes the ground, emitting a quake in a @Template[type:emanation|distance:10] from their space. Apply the result of your triggering Athletics check against the Reflex DC of each creature in the emanation to Trip them as well. You do not need to have a hand free, and you do not lose your balance if any of your attempts to Trip are a critical failure.</p>",
+      "name": "Topple The Titans"
     },
     "Toppling Dance": {
       "description": "<p>While sharing a creature's space using Dance Underfoot, your melee weapons and unarmed attacks gain the trip trait, but only against the creature whose space you share. You can be in the same space as a Large or larger @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} creature, even if it's not your ally.</p>",
