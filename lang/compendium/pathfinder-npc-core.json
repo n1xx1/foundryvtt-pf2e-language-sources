@@ -109,8 +109,11 @@
         "AuocSDVewXxiFzuz": {
           "name": "Fist"
         },
+        "RlbEDdwzjyv0Yt68": {
+          "name": "Scroll Case"
+        },
         "TztjddoEZphVsSDa": {
-          "description": "<p>The adept concentrates to muster knowledge and wisdom. While focusing, they gain a +2 status bonus to checks to Recall Knowledge, but take a –2 penalty to Perception. They can Dismiss this focused state.</p>",
+          "description": "<p>The adept concentrates to muster knowledge and wisdom. While focusing, they gain a +2 status bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}, but take a –2 penalty to Perception. They can Dismiss this focused state.</p>",
           "name": "Focused Thinker"
         },
         "iQWAwtvFxRVGqW0G": {
@@ -794,7 +797,7 @@
       "description": "<p>A ship's boatswain, or bosun, leads the deckhands who maintain the ship.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
       "items": {
         "0Z0tfKCoRaKagvVT": {
-          "description": "<p>The bosun Strikes with their naval pike.</p>\n<p>If this Strike hits, the bosun can either move the target 5 feet within the pike's reach or make a fist Strike against the target without increasing their multiple attack penalty until after the fist Strike.</p>",
+          "description": "<p>The bosun makes a melee Strike with their naval pike.</p>\n<p>If this Strike hits, the bosun can either move the target 5 feet within the pike's reach or make a fist Strike against the target without increasing their multiple attack penalty until after the fist Strike.</p>",
           "name": "Pike and Strike"
         },
         "4ZB9khLqIwNxe4j2": {
@@ -810,7 +813,7 @@
           "name": "Naval Pike"
         },
         "ioBhBqoLt4XX6CZA": {
-          "name": "Naval Pike"
+          "name": "Naval Pike (Functions as a Spear)"
         },
         "u6QEft9DxfittKI2": {
           "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The bosun orders an ally to attack or to get in position. Until the end of the ally's next turn, they gain the bosun's choice of a +2 status bonus to attack rolls or a +10-foot status bonus to their Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.WfiaKdXNSxC3POcs]{Effect: Bosun's Command}</p>",
@@ -918,12 +921,16 @@
     "Castaway": {
       "description": "<p>Be it the result of shipwreck, forcible marooning, or personal choice, surviving alone on an island long enough tends to weed out the weak of body and mind. Lack of social interaction tends to breed belligerence towards outsiders, but hostilities are not a certainty.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
       "items": {
+        "09j7nyB7xIsDzUjQ": {
+          "description": "<p><strong>Trigger</strong> The castaway takes damage from a Strike</p><hr /><p><strong>Effect</strong> The castaway Steps away from the source of the Strike.</p>",
+          "name": "Skittish"
+        },
         "SY7NSR2TRJp2YPXQ": {
           "description": "<p><strong>Frequency</strong> five times per day</p><hr /><p><strong>Effect</strong> By scrounging local materials, the castaway constructs a simple but effective deadfall without expending resources. Treat this as a snare with a @Check[perception|dc:19] check to spot, and a @Check[thievery|dc:23] check to disable. It occupies a single 5-foot square and lasts 24 hours before falling apart. The first creature that enters the space takes @Damage[6d6[bludgeoning]] damage (@Check[reflex|dc:22|basic] save).</p>",
           "name": "Snare Master"
         },
         "Uw90ORYkncHQoIko": {
-          "description": "<p>The castaway launches into a nonsensical verbal stream of consciousness. Creatures in a @Template[type:emanation|distance:30] must succeed at a @Check[will|dc:19] save or be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. Once a creature has succeeded at a save against the castaway's Cockamamie Rant, they are immune to its effects for 24 hours.</p>",
+          "description": "<p>The castaway launches into a nonsensical verbal stream of consciousness. Creatures in a @Template[type:emanation|distance:30] must succeed at a @Check[will|dc:19|options:inflicts:confused] save or be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. Once a creature has succeeded at a save against the castaway's Cockamamie Rant, they are immune to its effects for 24 hours.</p>",
           "name": "Cockamamie Rant"
         },
         "iHLxm1peDk99GVaW": {
@@ -1392,7 +1399,7 @@
       "description": "<p>Only the foolish would bring themselves to the attention of hags, but some aspirants strive to join a hag coven out of a desire for power or companionship.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
         "CUd7yJTScP3CfZ6K": {
-          "description": "<p>When a coven aspirant is within 30 feet of at least two allies, they and their allies gain a +1 status bonus to Will saves.</p>",
+          "description": "<p>When a coven aspirant is within @Template[emanation|distance:30]{30 feet} of at least two allies, they and their allies gain a +1 status bonus to Will saves.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uKJRRrlReO0CceVc]{Effect: Shared Confidence}</p>",
           "name": "Shared Confidence"
         },
         "MMCYKd69dsTEEPkN": {
@@ -1482,8 +1489,7 @@
           "name": "Cult Lore (for the cultist's own cult)"
         },
         "ImjzyAwR4eEDXf0q": {
-          "description": "<p>Functions as leather armor.</p>",
-          "name": "Cultist Garb"
+          "name": "Cultist Garb (Functions as Leather Armor)"
         },
         "cHWzyBoiaRRRBq99": {
           "name": "Will +2 vs. Higher Ranking Members of the Cult"
@@ -1499,7 +1505,8 @@
           "name": "Fanatical Frenzy"
         }
       },
-      "name": "Cultist"
+      "name": "Cultist",
+      "npcAllSaves": "(Will +2 vs. higher-ranking members of the cult)"
     },
     "Curse Monger": {
       "description": "<p>Oracles who have been consumed by their visions and the divine gifts bestowed upon them turn to more sinister paths, becoming curse mongers. Seeking to rid themselves of the shadows that haunt them, curse mongers lash out and attempt to bind others to their fate.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
@@ -1513,7 +1520,7 @@
           "name": "Incurable Curse"
         },
         "4u8iXfXC13rONcRj": {
-          "description": "<p>30 feet. The very earth and air around the curse monger are poisoned by the curses that burden their soul. Any creature who enters or starts their turn in the aura must succeed at a @Check[will|dc:31] save or be @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure). Regardless of the result of its save, the creature is then temporarily immune for 1 hour.</p>",
+          "description": "<p>30 feet. The very earth and air around the curse monger are poisoned by the curses that burden their soul. Any creature who enters or starts their turn in the aura must succeed at a @Check[will|dc:31|options:inflicts:doomed] save or be @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure). Regardless of the result of its save, the creature is then temporarily immune for 1 hour.</p>",
           "name": "Cursed Aura"
         },
         "6nLttawf3pT9Fftg": {
@@ -1522,9 +1529,13 @@
         "TxfvDT9dqOAuWcTv": {
           "description": "<p>The curse monger shares their awful burden with one creature they can see within 120 feet. The target must succeed at a @Check[will|dc:37] save or be afflicted with the same condition as the curse monger's incurable curse for 24 hours. On a critical failure, the curse's value is 2. The curse lasts for 24 hours but can be removed (unlike the incurable curse), and ends if the curse monger dies. This action has the same tradition trait as incurable curse.</p>",
           "name": "Share Burden"
+        },
+        "htR4le3t4fiRyPEw": {
+          "name": "–2 To All Saves vs. Curses"
         }
       },
-      "name": "Curse Monger"
+      "name": "Curse Monger",
+      "npcAllSaves": "–2 to all saves vs. curses"
     },
     "Dancer": {
       "description": "<p>Dance can be used to tell stories, share emotions, provide entertainment, and display a performer's athletic ability.</p><hr /><p>Performances come in a wide variety of forms, from musical methods like singing and instruments to physical dancing and juggling to simple orating and conversing.</p>",
@@ -1763,6 +1774,9 @@
     "Demonologist": {
       "description": "<p>Demonologists can pull a creature from the Outer Rifts and bend it to their will... for a time.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
+        "8Xoqtmerpdbx1Rgu": {
+          "name": "Fist"
+        },
         "Cu79oDJClJ9C9Reu": {
           "name": "Demon Lore"
         },
@@ -1774,7 +1788,7 @@
           "name": "Fiendish Hypotheses and Protections from Same (Spellbook)"
         },
         "naPxWIBQxbkOgD8M": {
-          "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p><hr /><p><strong>Effect</strong> The demonologist siphons energy drawn from the Outer Rifts into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage. Roll 1d20 to determine the type: 1–7 acid, 8–9 cold, 10–11 electricity, 12–18 fire, 19–20 void.</p>",
+          "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p><hr /><p><strong>Effect</strong> The demonologist siphons energy drawn from the Outer Rifts into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p><ul><li>1–7 acid</li><li>8–9 cold</li><li>10–11 electricity</li><li>12–18 fire</li><li>19–20 void.</li></ul>",
           "name": "Breach the Outer Rifts"
         },
         "rskoGYiEEGDi0ngN": {
@@ -1841,6 +1855,10 @@
     "Diver": {
       "description": "<p>Divers can often make large amounts of money by diving for treasures and selling them at a markup to tourists and antiquities dealers.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
       "items": {
+        "66uRUxIPoc3zmnwR": {
+          "description": "<p>The diver can hold their breath for up to 5 minutes (50 rounds).</p>",
+          "name": "Strong Lungs"
+        },
         "6wHu4CCSDnbcEopw": {
           "description": "<p>The diver isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} underwater and doesn't take penalties for using a bludgeoning or slashing melee weapon in water.</p>",
           "name": "Underwater Fighter"
@@ -1865,7 +1883,7 @@
           "name": "Dive"
         },
         "xncFsSepCPewZuyQ": {
-          "description": "<p>The diver gains a +12 circumstance bonus to any skill check involved in underwater exploration activities and is considered a master in the skill for such checks. This bonus also applies to any initiative roll while the driver is underwater. Strong Lungs The diver can hold their breath for up to 5 minutes (50 rounds).</p>",
+          "description": "<p>The diver gains a +12 circumstance bonus to any skill check involved in underwater exploration activities and is considered a master in the skill for such checks. This bonus also applies to any initiative roll while the driver is underwater.</p>",
           "name": "Skilled Diver"
         },
         "zeppbfAE2LZB0zl5": {
@@ -2280,7 +2298,7 @@
         }
       },
       "name": "Elven Court Guard",
-      "npcAllSaves": "1 status vs. mental effects"
+      "npcAllSaves": "+1 status vs. mental effects"
     },
     "Enchanting Ritualist": {
       "description": "<p>Possessing great stores of knowledge on mental magic and rituals, enchanting ritualists can also be solitary and capricious, tricking and transforming their visitors. The GM can change the selection of rituals this NPC knows freely, choosing any rituals of 9th rank or lower.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
@@ -2312,7 +2330,7 @@
       "description": "<p>Powerful organizations work out of public view, shaping lives while facing few consequences. Searching for these secret societies, whether to join them or destroy them, has given the enigmatic conspiracist uncanny insight.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
         "DejDtFjggAqLgKhW": {
-          "description": "<p>The enigmatic conspiracist recites a convoluted conspiracy theory about a creature within 30 feet, then attempts an @Check[occultism|against:will] check against the Will DC of that creature. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the conspiracist's attacks until no longer stupefied.</p>",
+          "description": "<p>The enigmatic conspiracist recites a convoluted conspiracy theory about a creature within 30 feet, then attempts an @Check[occultism|against:will|options:inflicts:stupefied] check against the Will DC of that creature. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the conspiracist's attacks until no longer stupefied.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Q4LJQDtEYEYw5Sjo]{Effect: Unbelievable Connection}</p>",
           "name": "Unbelievable Connection"
         },
         "WPNNvuLGdG7QT9gZ": {
@@ -2541,8 +2559,11 @@
           "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>",
           "name": "Alchemist's Tools (Used as \"Blessed Items\" to Fool Marks)"
         },
+        "7yaoCck7JC3aLreY": {
+          "name": "Fist"
+        },
         "9UbRDyf3EovxiABp": {
-          "description": "<p>The false priest convinces someone of their omnipotence by attempting a Deception check compared to the creature's Will DC.</p>\n<p>If successful, the target gains [[/r 1d8+4 #Temporary Hit Points]]{1d8+4 temporary Hit Points} that last for 1 hour or until the false priest removes them by rebuking the target, whichever occurs first.</p>",
+          "description": "<p>The false priest convinces someone of their omnipotence by attempting a @Check[deception|against:will] check compared to the creature's Will DC.</p>\n<p>If successful, the target gains 1d8+4 temporary Hit Points that last for 1 hour or until the false priest removes them by rebuking the target, whichever occurs first.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.GXQg0rAJGgk7Kfx9]{Effect: Fickle Prophecy}</p>",
           "name": "Fickle Prophecy"
         },
         "K5ctIW4y45e7yzcF": {
@@ -5127,14 +5148,14 @@
           "name": "Fist"
         },
         "32USGBWaWVkYmnb4": {
-          "description": "<p>The mirror seer accesses power from their wicked benefactor through two mirrors: one full-sized @UUID[Compendium.pf2e.equipment-srd.Item.5oXpYSNiqxVWSafq]{Malefic Mirror} in their sanctum and an enchanted hand mirror they can carry on their person.</p><ul><li><strong>Malefic Mirror</strong> The mirror seer must visit the malefic mirror once per day to retain their spellcasting abilities, and they can activate the mirror for special scrying and illusory disguise spells as noted in the mirror's stat block.</li><li><p><strong>Enchanted Hand Mirror</strong> Without their enchanted hand mirror on their person, the mirror seer takes a –2 circumstance penalty to spell attack rolls and DCs and can't cast their 7th-rank spells. If it's not attended by the mirror seer, the hand mirror has AC 10, Hardness 0, and 1 HP.</p></li></ul>",
+          "description": "<p>The mirror seer accesses power from their wicked benefactor through two mirrors: one full-sized @UUID[Compendium.pf2e.equipment-srd.Item.5oXpYSNiqxVWSafq]{Malefic Mirror} in their sanctum and an <em>enchanted hand mirror</em> they can carry on their person.</p><ul><li><strong>Malefic Mirror</strong> The mirror seer must visit the <em>malefic mirror</em> once per day to retain their spellcasting abilities, and they can activate the mirror for special @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying} and @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} spells as noted in the mirror's stat block.</li><li><p><strong>Enchanted Hand Mirror</strong> Without their <em>enchanted hand mirror</em> on their person, the mirror seer takes a –2 circumstance penalty to spell attack rolls and DCs and can't cast their 7th-rank spells. If it's not attended by the mirror seer, the hand mirror has AC 10, Hardness 0, and 1 HP.</p></li></ul>",
           "name": "Looking Glass Magic"
         },
         "ABsI2IlgKEMU9kob": {
           "name": "Illusory Disguise (Self Only)"
         },
         "CPAf0t8RHrhhckSd": {
-          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The mirror seer causes all surfaces in a @Template[type:burst|distance:30] within 100 feet to become reflective for 1 minute. Every creature in the area or that later enters the area must succeed at a @Check[will|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} by the reflections and refractions. The confusion ends if the creature leaves the area, and the creature can attempt a new save to end the effect at the end of each of its turns. When the effect ends for a creature, that creature becomes temporarily immune for 10 minutes.</p>",
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The mirror seer causes all surfaces in a @Template[type:burst|distance:30] within 100 feet to become reflective for 1 minute. Every creature in the area or that later enters the area must succeed at a @Check[will|dc:27|options:area-effect,inflicts:confused] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} by the reflections and refractions. The confusion ends if the creature leaves the area, and the creature can attempt a new save to end the effect at the end of each of its turns. When the effect ends for a creature, that creature becomes temporarily immune for 10 minutes.</p>",
           "name": "Hall of Mirrors"
         },
         "G65jkbyOHX7rPlOx": {
@@ -5149,7 +5170,7 @@
           "name": "Rightfully Mine"
         },
         "hkMVYwUs86ro24qA": {
-          "description": "<p>The mirror seer chooses a creature within 100 feet that can see its own reflection in a mirror. The creature must succeed at a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by their reflection for 1 minute. The creature can attempt a new save to end the effect at the end of each of its turns.</p>",
+          "description": "<p>The mirror seer chooses a creature within 100 feet that can see its own reflection in a mirror. The creature must succeed at a @Check[will|dc:29|options:inflicts:fascinated] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by their reflection for 1 minute. The creature can attempt a new save to end the effect at the end of each of its turns.</p>",
           "name": "A Fairer Face"
         }
       },
@@ -5339,8 +5360,12 @@
           "name": "Sailing Lore"
         },
         "Hw1KYT6hIaAHcXkI": {
-          "description": "<p>The navigator deals an additional 1d6 weapon damage when on a ship.</p>",
+          "description": "<p>The navigator's Strikes deal an additional 1d6 damage when on a ship.</p>",
           "name": "Navigator's Edge"
+        },
+        "Wo4zHTWVY48Iqrg0": {
+          "description": "<p>For encounters involving navigation or sailing, the navigator is a 4th-level challenge.</p>",
+          "name": "Sailing Specialist"
         },
         "qIRZdfRLhqBnYMWt": {
           "description": "<p>By spending 10 minutes of work and succeeding at a @Check[sailing-lore|dc:22]{Sailing Lore} check, the navigator plots an optimal course.</p>\n<p>The severity of environmental conditions other than temperature are reduced by one step for 24 hours (two steps on a critical success). This changes moderate damage to minor damage, winds that create greater difficult terrain cause only difficult terrain, and so on.</p>",
@@ -5348,6 +5373,9 @@
         },
         "ukfbB1s02nAdmdwQ": {
           "name": "Scroll Case with Ship's Charts"
+        },
+        "zRWCfQrFMwaTk5cr": {
+          "name": "Fist"
         }
       },
       "name": "Navigator"
@@ -5356,7 +5384,7 @@
       "description": "<p>Defiling the natural order and spitting in the face of convention, the necromancer remains dutifully committed to understanding what forces await beyond the mortal boundaries of life and death.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
         "97BKY16vMkTbaNcV": {
-          "description": "<p><strong>Requirements</strong> The necromancer has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer commands all their undead entities to attack. Each entity can Stride up to 20 feet into an empty square and make a Strike. The Strike has a +15 attack modifier and deals @Damage[2d12[bludgeoning]|traits:magical] damage (or @Damage[2d12[spirit]|traits:magical]{spirit} damage if the entity is a spirit). The Strike has the magical trait, and no multiple attack penalty applies to it.</p>",
+          "description": "<p><strong>Requirements</strong> The necromancer has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer commands all their undead entities to attack. Each entity can Stride up to 20 feet into an empty square and make a Strike. The Strike has a [[/r 1d20+15 #Attack]]{+15} attack modifier and deals @Damage[2d12[bludgeoning]|traits:magical] damage (or @Damage[2d12[spirit]|traits:magical]{spirit} damage if the entity is a spirit). The Strike has the magical trait, and no multiple attack penalty applies to it.</p>",
           "name": "Undead, Attack!"
         },
         "QQXMLJd5WLldP21P": {
@@ -5364,7 +5392,7 @@
           "name": "Hooded Robe"
         },
         "XCtQzAvxzCKT6NIl": {
-          "description": "<p>The necromancer emits a scent of putrid rot in a @Template[type:emanation|distance:5]. A living creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>",
+          "description": "<p>The necromancer emits a scent of putrid rot in a 5-foot emanation. A living creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>",
           "name": "Stench of Decay"
         },
         "cQNgpbGJ2HqT0Q44": {
@@ -5462,7 +5490,7 @@
           "name": "Master Sailor"
         },
         "Epuaahg9qkvoUAXW": {
-          "description": "<p><strong>Requirements</strong> The ocean nomad's last action was a successful melee trident Strike</p><hr /><p><strong>Effect</strong> The ocean nomad wrenches out the barbed tines of their trident, inflicting 1d6 persistent bleed to the target.</p>",
+          "description": "<p><strong>Requirements</strong> The ocean nomad's last action was a successful melee trident Strike</p><hr /><p><strong>Effect</strong> The ocean nomad wrenches out the barbed tines of their trident, inflicting @Damage[1d6[bleed]] to the target.</p>",
           "name": "Stab and Twist"
         },
         "QU8XsNUOH7wFKXJq": {
@@ -5473,7 +5501,7 @@
           "name": "Strong Lungs"
         },
         "fRHQeFHktoqB5nDG": {
-          "description": "<p>When the ocean nomad rolls a success on an Athletics check to Swim, they get a critical success instead.</p>",
+          "description": "<p>When the ocean nomad rolls a success on an Athletics check to [[/act swim]], they get a critical success instead.</p>",
           "name": "Practiced Swimmer"
         },
         "fqJ1prMOusZdiKlm": {
@@ -5829,9 +5857,6 @@
     "Pirate": {
       "description": "<p>These scourges are a threat to anyone who spends time away from land.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
       "items": {
-        "7wm1t4vqw5gNlkfm": {
-          "description": "<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
-        },
         "86ELyZJGF5f8M7ew": {
           "description": "<p>When the pirate rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>",
           "name": "Bravery"
@@ -5843,11 +5868,14 @@
           "name": "Cutlass"
         },
         "MW2HziWk52XbjMte": {
-          "name": "Cutlass"
+          "name": "Cutlass (Functions as a Scimitar)"
         },
         "WrTvPVOo3UOYpMWC": {
           "description": "<p>The pirate swings on a rope or Strides, moving up to double their Speed. If the pirate boarded or disembarked a boat during this movement, they can make a melee Strike at the end of their movement that deals one extra damage die on a hit.</p>",
           "name": "Boarding Action"
+        },
+        "sqhOZyxg3OPiv7f9": {
+          "name": "Fist"
         }
       },
       "name": "Pirate"
@@ -6168,7 +6196,7 @@
       "npcAllSaves": "+1 status to all saves vs. poison"
     },
     "Rigger": {
-      "description": "<p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
+      "description": "<p>A knack for knots and no fear of heights are the prime qualifications of these high-flying rope wranglers and lookouts.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
       "items": {
         "6eWqIosvt938zvuQ": {
           "name": "Fist"
@@ -6389,8 +6417,11 @@
       "description": "<p>The captain is the ultimate authority on a vessel, responsible for the livelihood and well-being of everyone on the ship.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
       "items": {
         "5iTqDt4fDSnYuJIg": {
-          "description": "<p>The captain makes two Strikes, one with their rapier and one with their main-gauche (in either order). If both Strikes hit, the ship captain can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the target.</p>\n<p>Their multiple attack penalty increases only after all the attacks are made.</p>",
+          "description": "<p>The captain makes two Strikes, one with their rapier and one with their main-gauche (in either order). If both Strikes hit, the ship captain can attempt to [[/act disarm]] the target.</p>\n<p>Their multiple attack penalty increases only after all the attacks are made.</p>",
           "name": "Dual Disarm"
+        },
+        "D26IrbWdbEUTaMxm": {
+          "name": "Fist"
         },
         "FMRFRcuXn2QHFX2v": {
           "description": "<p>When the Ship Captain rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>",
@@ -6545,6 +6576,7 @@
       "description": "<p>Ghosts and other spirits swirl around the spirit binder, creating a constant aura of flickering faces and forms.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
         "0RQOtU3OwzXUaTDI": {
+          "description": "<p><span class=\"action-glyph\">2</span></p>",
           "name": "Spirit Pitch"
         },
         "4QUMxCm1MjvwLnDc": {
@@ -6569,7 +6601,7 @@
           "name": "Spirits Lore"
         },
         "z5olN7HRzmJ4jkkq": {
-          "description": "<p>30 feet. The spirits bound by a spirit binder swirl around, lashing out at their foes. An enemy that enters or starts its turn in the aura must succeed at a @Check[will|dc:27|options:area-effect,damaging-effect] save or take @Damage[3d6[spirit]|options:area-damage] damage and be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (double damage and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>",
+          "description": "<p>30 feet. The spirits bound by a spirit binder swirl around, lashing out at their foes. An enemy that enters or starts its turn in the aura must succeed at a @Check[will|dc:27|options:area-effect,damaging-effect,inflicts:frightened] save or take @Damage[3d6[spirit]|options:area-damage] damage and be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (double damage and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>",
           "name": "Haunting Spirits"
         }
       },
