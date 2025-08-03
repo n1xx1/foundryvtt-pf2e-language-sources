@@ -79,6 +79,10 @@
           "description": "<p><strong>Trigger</strong> The acrobat is targeted with a melee or ranged attack by an attacker they can see</p><hr /><p><strong>Effect</strong> The acrobat gains a +2 circumstance bonus to AC against the triggering attack.</p>",
           "name": "Nimble Dodge"
         },
+        "BMOGfqX1pJGdQtc4": {
+          "description": "<p>For encounters involving contests of acrobatics and similar activities, the acrobat is a 5th-level challenge.</p>",
+          "name": "Acrobatic Specialist"
+        },
         "F0Yrpyr0NczIzhGY": {
           "description": "<p>When the acrobat rolls a success on an Acrobatics check, they get a critical success instead.</p>\n<p>They aren't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} when attempting to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} and can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>",
           "name": "Steady Balance"
@@ -565,7 +569,7 @@
       "description": "<p>Beast tamers bring the wild to civilization, rearing and training creatures to follow their commands and perform flashy tricks that entertain audiences. The beast tamer typically fights alongside a trained animal ally of its level or lower, most likely a tiger (Monster Core 51).</p><hr /><p>Performances come in a wide variety of forms, from musical methods like singing and instruments to physical dancing and juggling to simple orating and conversing.</p>",
       "items": {
         "4baqnRP77X4lxpxU": {
-          "description": "<p>The beast tamer can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on animals and to make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of them.</p>",
+          "description": "<p>The beast tamer can use Diplomacy to [[/act make-an-impression]] on animals and to make very simple [[/act request]]{Requests} of them.</p>",
           "name": "Wild Empathy"
         },
         "oxibysS7Ru54MLC4": {
@@ -1337,7 +1341,7 @@
       "description": "<p>Though court jesters are often put-upon as the targets of easy mockery and idle amusements, do not mistake their self-deprecation for weakness. Beneath, the jester hides malice, a sharp tongue, and even sharper knives. They can often be found entertaining the nobles of court or preparing their next japes. During the indiscreet hours of the night, they may be found in the company of servants and spymasters.</p><hr /><p>Performances come in a wide variety of forms, from musical methods like singing and instruments to physical dancing and juggling to simple orating and conversing.</p>",
       "items": {
         "2EbagWaQehCMBKx5": {
-          "description": "<p>The jester blows chalk or face powder in an adjacent enemy's face. The target must make a @Check[fortitude|dc:29] saving throw.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> target is dazzled and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
+          "description": "<p>The jester blows chalk or face powder in an adjacent enemy's face. The target must make a @Check[fortitude|dc:29|options:inflicts:blinded,inflicts:dazzled,inflicts:off-guard] saving throw.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> target is dazzled and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
           "name": "No Peeking!"
         },
         "CGBQVNxptG5LnjTe": {
@@ -1351,7 +1355,7 @@
           "name": "Fist"
         },
         "rUD7kZKPtLrnivTt": {
-          "description": "<p>The jester coats their dagger in poison. These daggers inflict an additional @Damage[4d4[persistent,poison]] damage. The poison expires 1 hour after leaving the jester's possession.</p>",
+          "description": "<p>The jester coats their dagger in poison. These daggers inflict an additional 4d4 persistent poison damage. The poison expires 1 hour after leaving the jester's possession.</p>",
           "name": "Poisoned Blade"
         }
       },
@@ -1543,11 +1547,15 @@
         "G7t10rKHu8TabnQz": {
           "name": "Theatre Lore"
         },
+        "HaP1YXjzOuFTaEQy": {
+          "description": "<p>For encounters involving contests of dancing, the dancer is a 5th-level challenge.</p>",
+          "name": "Dance Specialist"
+        },
         "aAgpROGXTToyiZfx": {
           "name": "Foot"
         },
         "kotwyraYf9vVKqEY": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The dancer Strides up to their Speed. Once during this movement, when the dancer is adjacent to a creature, the dancer can attempt to mesmerize that creature, who attempts a @Check[will|dc:17] save. On a failure, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the dancer until the end of its next turn.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The dancer Strides up to their Speed. Once during this movement, when the dancer is adjacent to a creature, the dancer can attempt to mesmerize that creature, who attempts a @Check[will|dc:17|options:inflicts:fascinated] save. On a failure, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the dancer until the end of its next turn.</p>",
           "name": "Fascinating Dance"
         },
         "uBrl3zYakAsOXqbM": {
@@ -1571,7 +1579,7 @@
           "name": "Fist"
         },
         "pHYcg0F8wUYXzyME": {
-          "description": "<p><strong>Requirements</strong> The dedicated druid is in a natural environment</p><hr /><p><strong>Effect</strong> The dedicated druid camouflages themself to blend in with the surrounding area, sprouting leaves or covering themself with scree. They gain concealment until the end of their next turn, they can [[/act hide options=natures-patient-healing]] with a +4 circumstance bonus, and they recover @Damage[4d8[untyped]] Hit Points. If the druid moves or otherwise leaves their space, these benefits end.</p>",
+          "description": "<p><strong>Requirements</strong> The dedicated druid is in a natural environment</p><hr /><p><strong>Effect</strong> The dedicated druid camouflages themself to blend in with the surrounding area, sprouting leaves or covering themself with scree. They gain @UUID[Compendium.pf2e.kingmaker-features.Item.tWS8aMCyeGKcnFh1]{Concealment} until the end of their next turn, they can [[/act hide options=natures-patient-healing]] with a +4 circumstance bonus, and they recover @Damage[4d8[healing]] Hit Points. If the druid moves or otherwise leaves their space, these benefits end.</p>",
           "name": "Nature's Patient Healing"
         }
       },
@@ -2556,7 +2564,6 @@
       "description": "<p>Belief is perhaps the strongest force in the universe. Instilling belief only to use it against someone in deceit, however, is the purview of a false priest.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
         "64r9RgELkr6OXrX7": {
-          "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>",
           "name": "Alchemist's Tools (Used as \"Blessed Items\" to Fool Marks)"
         },
         "7yaoCck7JC3aLreY": {
@@ -2565,9 +2572,6 @@
         "9UbRDyf3EovxiABp": {
           "description": "<p>The false priest convinces someone of their omnipotence by attempting a @Check[deception|against:will] check compared to the creature's Will DC.</p>\n<p>If successful, the target gains 1d8+4 temporary Hit Points that last for 1 hour or until the false priest removes them by rebuking the target, whichever occurs first.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.GXQg0rAJGgk7Kfx9]{Effect: Fickle Prophecy}</p>",
           "name": "Fickle Prophecy"
-        },
-        "K5ctIW4y45e7yzcF": {
-          "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
         },
         "Oq7EJED40zeLYJUJ": {
           "description": "<p>On the first round of combat, if the false priest rolls Deception or Performance for initiative, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the false priest.</p>",
@@ -3315,7 +3319,7 @@
         }
       },
       "name": "Grand Inquisitor",
-      "npcAllSaves": "+23 reflex vs damaging effects"
+      "npcAllSaves": "+23 Reflex vs damaging effects"
     },
     "Grandmaster": {
       "description": "<p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
@@ -4398,9 +4402,6 @@
           "description": "<p>The juggler begins juggling up to three items of light or negligible Bulk. They can choose items in their hands or Interact to draw items on their person or pick up unattended items in reach. While juggling, they can Interact to add up to two items to their juggle, though they must drop an item for each one they add. The juggler is wielding all items they juggle, but the only actions they can take that require their hands are Return Throw, Juggling Bounce, Strike using a juggled weapon, Interact to add items to their juggle, or Dismiss to stop juggling.</p>\n<p>When the juggler Dismisses Juggle, they can choose to continue to wield, drop, or stow each juggled item, though they can't wield more items than they have hands. If at any point the juggler isn't wielding any items or becomes @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, the juggle ends and the juggler drops all the items.</p>",
           "name": "Juggle"
         },
-        "O4JzzPk2cgfYgK1A": {
-          "name": "Juggling Club"
-        },
         "a6NYStpQRrBO2h1H": {
           "description": "<p>The juggler Strikes with a thrown weapon they're juggling. If the Strike hits, the weapon bounces to a different creature in the weapon's first range increment. The juggler repeats the Strike, which uses the same multiple attack penalty and doesn't increase their multiple attack penalty.</p>",
           "name": "Juggling Bounce"
@@ -4412,6 +4413,9 @@
         "f4Y8iYvF0bqwVdWN": {
           "description": "<p>For encounters involving juggling and other circus acts, the juggler is a 5th-level challenge.</p>",
           "name": "Juggling Specialist"
+        },
+        "gSellUVmDLShUpsS": {
+          "name": "Juggling Club (Functions as a Light Hammer)"
         },
         "jNI7CIgS6mQAUEli": {
           "name": "Fist"
@@ -4802,6 +4806,9 @@
           "description": "<p>The maestro can @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} on any subject with a +19 modifier.</p>",
           "name": "Bardic Lore"
         },
+        "Xhz4kMj9ugcGH9Qw": {
+          "name": "Bardic Lore"
+        },
         "dyVUwI2QJ2pk6f6b": {
           "name": "Lyre (Moderate Maestro's Instrument)"
         },
@@ -4810,7 +4817,7 @@
           "name": "Resolve"
         },
         "rM22PCRrjGIy1eru": {
-          "description": "<p>The maestro funnels musical energy from their compositions into attacks, dealing additional @Damage[1d6[sonic]] damage with their weapon Strikes on any turn they cast a composition spell.</p>",
+          "description": "<p>The maestro funnels musical energy from their compositions into attacks, dealing additional 1d6 sonic damage with their weapon Strikes on any turn they cast a composition spell.</p>",
           "name": "Resonating Weaponry"
         }
       },
@@ -5111,11 +5118,11 @@
       "description": "<p>Mimes are performers who use movement, gestures, and expressions without any speech to act out a scene or situation for onlookers.</p><hr /><p>Performances come in a wide variety of forms, from musical methods like singing and instruments to physical dancing and juggling to simple orating and conversing.</p>",
       "items": {
         "3KRBTeawv2IY2roA": {
-          "description": "<p>The mime uses exaggerated movements to emulate one of the following effects, which lasts until the end of their next turn. Any creature who sees this ability can attempt to disbelieve this ability as it is used with a @Check[will|dc:14] save. Creatures that disbelieve are temporarily immune to pantomime for 1 minute.</p>\n<p><em>Barrier</em>: The mime creates an @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} 10-foot-by-10-foot stretch of wall adjacent to them and within their reach. The wall has AC 10, 5 hardness, and 10 HP. If the mime Sustains this effect, they can add an additional wall in the same manner.</p>\n<p><em>Rope</em>: The mime tugs an invisible rope, trying to knock over or pull at a creature within 15 feet. If the creature fails to disbelieve the pantomime, the mime can choose to either knock the creature @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} or to move it 5 feet towards them.</p>\n<p><em>Wind</em>: The mime creates a @Template[type:line|distance:30] of imaginary wind. Creatures who don't disbelieve the pantomime treat this area as difficult terrain, and if they enter or begin their turn in the area, they fall prone.</p>",
+          "description": "<p>The mime uses exaggerated movements to emulate one of the following effects, which lasts until the end of their next turn. Any creature who sees this ability can attempt to disbelieve this ability as it is used with a @Check[will|dc:14] save. Creatures that disbelieve are temporarily immune to pantomime for 1 minute.</p>\n<p><em>Barrier</em>: The mime creates an invisible @Template[square|distance:10]{10-foot-by-10-foot} stretch of wall adjacent to them and within their reach. The wall has AC 10, 5 hardness, and 10 HP. If the mime Sustains this effect, they can add an additional wall in the same manner.</p>\n<p><em>Rope</em>: The mime tugs an invisible rope, trying to knock over or pull at a creature within 15 feet. If the creature fails to disbelieve the pantomime, the mime can choose to either knock the creature @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} or to move it 5 feet towards them.</p>\n<p><em>Wind</em>: The mime creates a @Template[type:line|distance:30] of imaginary wind. Creatures who don't disbelieve the pantomime treat this area as difficult terrain, and if they enter or begin their turn in the area, they fall prone.</p>",
           "name": "Pantomime"
         },
         "I6oggW1yXL9bI8Iz": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> A creature damaged the mime with a weapon Strike since their previous turn</p><hr /><p><strong>Effect</strong> The mime makes a Performance check against the Perception DC of the creature who damaged them, gesturing as if making an attack with the same weapon. On a success, the mime deals two dice of damage to the creature, using the same type and die size as the required weapon Strike.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> A creature damaged the mime with a weapon Strike since their previous turn</p><hr /><p><strong>Effect</strong> The mime makes a @Check[performance|against:perception] check against the Perception DC of the creature who damaged them, gesturing as if making an attack with the same weapon. On a success, the mime deals two dice of damage to the creature, using the same type and die size as the required weapon Strike.</p>",
           "name": "Mimic Assault"
         },
         "LonbjPHiKpQ0rZpu": {
@@ -5243,7 +5250,7 @@
       "description": "<p>Those who have unlocked the secrets of opening a kinetic gate to an elemental plane within themselves wield immense power over that element. Practitioners who specialize in elemental earth are hardy and defense-minded. The mountain guardian is surrounded by heavy armor made of stone held together with elemental magic.</p><hr /><p>A primalist is a wielder of primal energies and magic, sometimes taught by forces of primal power, including powerful elementals or fey of the First World. Primalists protect the natural world, offering strong medicine to those in need while facing suspicion from those who don't understand their ways.</p>\n<p>A great many primalists belong to druidic circles, and even those who aren't members tend to be familiar with the most prominent ones in their homeland.</p>",
       "items": {
         "8vsZl6kXGembKqhs": {
-          "description": "<p>The mountain guardian calls down boulders in a cylinder 20 feet in diameter and 80 feet high within 120 feet. Each creature in the area takes @Damage[4d8[bludgeoning]] damage with a @Check[reflex|dc:24|basic] save. A creature that fails is also pushed downward 40 feet (80 feet on a critical failure) without taking falling damage and can't leave the ground for 1 round.</p>",
+          "description": "<p>The mountain guardian calls down boulders in a cylinder @Template[cylinder|distance:10]{20 feet in diameter} and 80 feet high within 120 feet. Each creature in the area takes @Damage[4d8[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:24|basic|options:area-effect,inflicts:forced-movement] save. A creature that fails is also pushed downward 40 feet (80 feet on a critical failure) without taking falling damage and can't leave the ground for 1 round.</p>",
           "name": "Weight of Stone"
         },
         "BMYTcScxLcZJg6vb": {
@@ -5253,8 +5260,11 @@
           "name": "Fist"
         },
         "HLSb3Hxa9yNvAbbN": {
-          "description": "<p>The mountain guardian stomps on natural earth or stone, causing a localized tremor. All creatures in a @Template[type:burst|distance:10] within 30 feet take @Damage[3d10[bludgeoning]|options:area-damage] damage with a @Check[fortitude|dc:24|basic|options:area-effect] save. A creature that critically fails is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Earth and stone in the area is difficult terrain until the start of the mountain guardian's next turn.</p>",
+          "description": "<p>The mountain guardian stomps on natural earth or stone, causing a localized tremor. All creatures in a @Template[type:burst|distance:10] within 30 feet take @Damage[3d10[bludgeoning]|options:area-damage] damage with a @Check[fortitude|dc:24|basic|options:area-effect,inflicts:prone] save. A creature that critically fails is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Earth and stone in the area is difficult terrain until the start of the mountain guardian's next turn.</p>",
           "name": "Tremor"
+        },
+        "HZEpXjD71c5PniJl": {
+          "name": "+2 to Reflex vs. Damaging Effects"
         },
         "ZgtpOsBQwSbByvBX": {
           "name": "Elemental Blast"
@@ -5277,7 +5287,7 @@
         }
       },
       "name": "Mountain Guardian",
-      "npcAllSaves": "+13 vs. damaging effects"
+      "npcAllSaves": "+13 Reflex vs. damaging effects"
     },
     "Mountaineer": {
       "description": "<p>Mountaineers usually travel solo, but some guide expeditions into dangerous terrain.</p><hr /><p>Explorers are often well-equipped and well-trained for any type of hazard and are eager to lead others into the wild.</p>",
@@ -6106,18 +6116,28 @@
       },
       "name": "Prophet"
     },
+    "Puppet": {
+      "description": "<p>On the surface, puppeteers are simply providers of entertainment to the masses. With their little puppets and simple stories, their pantomimes are fun for the whole family. However, some puppeteers have a secret. They can animate their puppets with magic, sending them out to cause all manner of mischief in the dead of night. Puppeteers of this ilk tend to travel by themselves, though they might be found as part of a traveling group if they become lonely. They may serve as an innocent front for more illicit dealings or as lackeys to a larger group of thieves and ne'er do wells.</p><hr /><p>Performances come in a wide variety of forms, from musical methods like singing and instruments to physical dancing and juggling to simple orating and conversing.</p>",
+      "items": {
+        "h3QkxJga72xuJhl7": {
+          "description": "<ul><li><strong>Smart Puppet</strong> The smart puppet is covered in runes that give it occult power. It makes a ranged Strike against a creature within 30 feet at a +15 attack modifier. A successful Strike deals 2d6 mental damage.</li><li><strong>Strong Puppet</strong> The strong puppet wields a tiny sword and shield. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d8 slashing damage. In addition, the strong puppet gains a +1 circumstance bonus to AC for 1 round.</li><li><strong>Swift Puppet</strong> The swift puppet wields two tiny daggers. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d4 piercing damage. If the swift puppet hits a creature that was hit by another puppet this round, its Strike deals an additional 1d4 precision damage.</li></ul><hr /><ul><li><strong>Fiend Puppet</strong> The puppet makes a ranged Strike against a creature within 30 feet for 1d10 spirit damage, plus 1d4 spirit damage if the target is holy.</li><li><strong>Poisoner Puppet</strong> The puppet makes a melee Strike with a tiny syringe of poison against a creature whose space it shares, dealing 1d4 piercing damage plus 1d6 persistent poison damage.</li><li><strong>Undead Puppet</strong> The puppet makes a melee Strike against a creature whose space it shares, dealing 2d8 void damage and making the target @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit).</li></ul>",
+          "name": "Puppet Type"
+        }
+      },
+      "name": "Puppet"
+    },
     "Puppeteer": {
       "description": "<p>On the surface, puppeteers are simply providers of entertainment to the masses. With their little puppets and simple stories, their pantomimes are fun for the whole family. However, some puppeteers have a secret. They can animate their puppets with magic, sending them out to cause all manner of mischief in the dead of night. Puppeteers of this ilk tend to travel by themselves, though they might be found as part of a traveling group if they become lonely. They may serve as an innocent front for more illicit dealings or as lackeys to a larger group of thieves and ne'er do wells.</p><hr /><p>Performances come in a wide variety of forms, from musical methods like singing and instruments to physical dancing and juggling to simple orating and conversing.</p>",
       "items": {
         "SoFniGftxKGmhTco": {
-          "description": "<p>The puppeteer pulls at invisible strings to control their puppets. Each puppet Strides up to 30 feet. Each puppet can then make a Strike as described below. Each attack counts towards the puppeteer's multiple attack penalty, but their penalty does not increase until all attacks have been made.</p><ul><li>Smart Puppet The smart puppet is covered in runes that give it occult power. It makes a ranged Strike against a creature within 30 feet at a +15 attack modifier. A successful Strike deals @Damage[2d6[mental]] damage.</li><li>Strong Puppet The strong puppet wields a tiny sword and shield. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals @Damage[2d8[slashing]] damage. In addition, the strong puppet gains a +1 circumstance bonus to AC for 1 round.</li><li><p>Swift Puppet The swift puppet wields two tiny daggers. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals @Damage[2d4[piercing]] damage. If the swift puppet hits a creature that was hit by another puppet this round, its Strike deals an additional 1d4 precision damage.</p></li></ul><p><strong>Alternative Puppets</strong></p>\n<p>This alternate set of villainous puppets Strikes with a +15 attack modifier.</p><ul><li><p>Fiend Puppet The puppet makes a ranged Strike against a creature within 30 feet for @Damage[1d10[spirit]] damage, plus @Damage[1d4[spirit]] damage if the target is holy.</p></li><li><p>Poisoner Puppet The puppet makes a melee Strike with a tiny syringe of poison against a creature whose space it shares, dealing @Damage[1d4[piercing]] damage plus @Damage[1d6[persistent,poison]] damage.</p></li><li><p>Undead Puppet The puppet makes a melee Strike against a creature whose space it shares, dealing @Damage[2d8[void]] damage and making the target @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit).</p></li></ul>",
+          "description": "<p>The puppeteer pulls at invisible strings to control their puppets. Each puppet Strides up to 30 feet. Each puppet can then make a Strike as described below. Each attack counts towards the puppeteer's multiple attack penalty, but their penalty does not increase until all attacks have been made.</p><ul><li><strong>Smart Puppet</strong> The smart puppet is covered in runes that give it occult power. It makes a ranged Strike against a creature within 30 feet at a +15 attack modifier. A successful Strike deals 2d6 mental damage.</li><li><strong>Strong Puppet</strong> The strong puppet wields a tiny sword and shield. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d8 slashing damage. In addition, the strong puppet gains a +1 circumstance bonus to AC for 1 round.</li><li><strong>Swift Puppet</strong> The swift puppet wields two tiny daggers. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d4 piercing damage. If the swift puppet hits a creature that was hit by another puppet this round, its Strike deals an additional 1d4 precision damage.</li></ul><p><strong>Alternative Puppets</strong></p>\n<p>This alternate set of villainous puppets Strikes with a +15 attack modifier.</p><ul><li><strong>Fiend Puppet</strong> The puppet makes a ranged Strike against a creature within 30 feet for 1d10 spirit damage, plus 1d4 spirit damage if the target is holy.</li><li><strong>Poisoner Puppet</strong> The puppet makes a melee Strike with a tiny syringe of poison against a creature whose space it shares, dealing 1d4 piercing damage plus 1d6 persistent poison damage.</li><li><strong>Undead Puppet</strong> The puppet makes a melee Strike against a creature whose space it shares, dealing 2d8 void damage and making the target @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit).</li></ul>",
           "name": "Manipulate Puppets"
         },
         "bRJXkp5ICinsIca0": {
           "name": "Puppet"
         },
         "ysKGhrqsWxcWnC4V": {
-          "description": "<p>The puppeteer has three animate puppets under their control—a smart puppet, a strong puppet, and a swift puppet. A puppet is a Tiny object that can be share a space with another creature. The usually begin combat in the puppeteer's space. A puppet has AC 23, Hardness 5, 20 Hit Points, and object immunities. If a puppet is destroyed, the puppeteer takes 15 nonlethal mental damage. A puppeteer can rebuild a puppet with 7 days of work. If the puppeteer dies while any of their puppets are still active, the active puppets become independent, but lose the will to fight in their grief.</p>",
+          "description": "<p>The puppeteer has three animate @UUID[Compendium.pf2e.pathfinder-npc-core.Actor.r75kLP8MgLx46ZTO]{puppets} under their control—a smart puppet, a strong puppet, and a swift puppet. A puppet is a Tiny object that can be share a space with another creature. The usually begin combat in the puppeteer's space. A puppet has AC 23, Hardness 5, 20 Hit Points, and object immunities. If a puppet is destroyed, the puppeteer takes @Damage[15[nonlethal,mental]]{15 nonlethal mental} damage. A puppeteer can rebuild a puppet with 7 days of work. If the puppeteer dies while any of their puppets are still active, the active puppets become independent, but lose the will to fight in their grief.</p>",
           "name": "Puppets"
         },
         "zwm1Ac2p3NM22lFI": {
@@ -6526,7 +6546,7 @@
       "description": "<p>Skin shifters are defenders of nature, blessed by the spirits of the wild with the ability to shape shift into powerful animal forms. Prowling as beasts or charging across the field, they protect the balance of nature and punish those who would upset it.</p><hr /><p>A primalist is a wielder of primal energies and magic, sometimes taught by forces of primal power, including powerful elementals or fey of the First World. Primalists protect the natural world, offering strong medicine to those in need while facing suspicion from those who don't understand their ways.</p>\n<p>A great many primalists belong to druidic circles, and even those who aren't members tend to be familiar with the most prominent ones in their homeland.</p>",
       "items": {
         "3Hm6leMnzYN43EE9": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The skin shifter casts their choice of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form}, @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}, @UUID[Compendium.pf2e.spells-srd.Item.KhM8MhoUgoUjBMIz]{Dinosaur Form}, or @UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]{Pest Form} spell. They must transform into an animal of a kind they've seen within the last 24 hours. They can't gain temporary HP again from a spell cast with Gift of the Wild Spirits for 10 minutes. Their Strikes for forms other than pest form have reach 10 feet, a +20 attack modifier, and a +13 damage bonus (or a +9 damage bonus for aerial form). Most other changes to their statistics are listed above.</p>\n<p>While polymorphed, the skin shifter can still use Gift of the Wild Spirits, though they're still prevented from casting other spells as normal.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The skin shifter casts their choice of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form}, @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}, @UUID[Compendium.pf2e.spells-srd.Item.KhM8MhoUgoUjBMIz]{Dinosaur Form}, or @UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]{Pest Form} spell. They must transform into an animal of a kind they've seen within the last 24 hours. They can't gain temporary HP again from a spell cast with Gift of the Wild Spirits for 10 minutes. Their Strikes for forms other than <em>pest form</em> have reach 10 feet, a +20 attack modifier, and a +13 damage bonus (or a +9 damage bonus for <em>aerial form</em>). Most other changes to their statistics are listed above.</p>\n<p>While polymorphed, the skin shifter can still use Gift of the Wild Spirits, though they're still prevented from casting other spells as normal.</p>",
           "name": "Gift of the Wild Spirits"
         },
         "TdUNc8KZZyIhdF7G": {
@@ -6698,10 +6718,10 @@
       "description": "<p>Many musicians make their living off stage by playing at markets, fairs, or crossroads. While their fame may not be as widespread as theatrical performers, they are nonetheless staples of many communities.</p><hr /><p>Performances come in a wide variety of forms, from musical methods like singing and instruments to physical dancing and juggling to simple orating and conversing.</p>",
       "items": {
         "OcLH5ZzoXOVbRkZq": {
-          "description": "<p>The street musician deals an additional 1d4 precision damage to offguard creatures. This increases to 1d6 against creatures @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} due to the street musician's @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} or distracting drone.</p>"
+          "description": "<p>The street musician deals an additional 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures. This increases to 1d6 against creatures off-guard due to the street musician's @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} or distracting drone.</p>"
         },
         "VMKC1y1oeUVsuSsU": {
-          "description": "<p><strong>Requirements</strong> The street musician is playing their instrument</p><hr /><p><strong>Effect</strong> The street musician attempts a @Check[type:performance|against:will] check compared to the Will DC of an observer within 30 feet. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the street musician and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>",
+          "description": "<p><strong>Requirements</strong> The street musician is playing their instrument</p><hr /><p><strong>Effect</strong> The street musician attempts a @Check[type:performance|against:will|options:inflicts:fascinated,inflicts:off-guard] check compared to the Will DC of an observer within 30 feet. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the street musician and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>",
           "name": "Distracting Drone"
         },
         "lmoWwE8kKafo5PXF": {
@@ -6885,7 +6905,7 @@
       "description": "<p>When a sorcerer's blood calls to storm and sky, they can become a frightening force to behold. When that power matures, they become living conduits of the tempest.</p><hr /><p>A primalist is a wielder of primal energies and magic, sometimes taught by forces of primal power, including powerful elementals or fey of the First World. Primalists protect the natural world, offering strong medicine to those in need while facing suspicion from those who don't understand their ways.</p>\n<p>A great many primalists belong to druidic circles, and even those who aren't members tend to be familiar with the most prominent ones in their homeland.</p>",
       "items": {
         "0lg7kGLlTsVwWOmm": {
-          "description": "<p>A tempest incarnate who is hit by or fails a saving throw against an effect that prevents them from flying (such as earthbind or Felling Strike) takes @Damage[20[mental]] damage in addition to the usual effects.</p>",
+          "description": "<p>A tempest incarnate who is hit by or fails a saving throw against an effect that prevents them from flying (such as @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind} or Felling Strike) takes @Damage[20[mental]] damage in addition to the usual effects.</p>",
           "name": "Earthbound Vulnerability"
         },
         "4JRDvfNjP0gOVJf5": {
@@ -6896,18 +6916,21 @@
           "description": "<p>A tempest incarnate ignores penalties and difficult terrain from strong winds. When flying, they don't need to @UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{Fly} each round to avoid falling.</p>",
           "name": "Wind Rider"
         },
+        "CQzqPLpfOOTs3TdQ": {
+          "name": "+2 Greater Striking Handwraps of Mighty Blows"
+        },
         "FQgyTPeSS1DpQsYQ": {
-          "description": "<p>10 feet. A creature that enters the area must succeed at a @Check[athletics|dc:38] check (if on the ground) or Acrobatics check to Maneuver in Flight (if flying) or end its movement. A creature that critically fails is also knocked back 5 feet and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Creatures making ranged projectile and thrown attacks that pass through the area must succeed on a @Check[flat|dc:5] or the attack fails. Massive projectiles, such as thrown boulders, are not affected. A tempest incarnate can activate or deactivate this ability with a single action that has the concentrate trait.</p>",
+          "description": "<p>10 feet. A creature that enters the area must succeed at a @Check[athletics|dc:38] check (if on the ground) or Acrobatics check to [[/act maneuver-in-flight dc=38]] (if flying) or end its movement. A creature that critically fails is also knocked back 5 feet and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Creatures making ranged projectile and thrown attacks that pass through the area must succeed on a @Check[flat|dc:5] or the attack fails. Massive projectiles, such as thrown boulders, are not affected. A tempest incarnate can activate or deactivate this ability with a single action that has the concentrate trait.</p>",
           "name": "Hurricane Cloak"
         },
         "NaPWqteJBUrbv73Q": {
-          "name": "Detonate Magic (items that grant flight only)"
+          "name": "Detonate Magic (Items That Grant Flight Only)"
         },
         "UV0ws0vPFW9jMQ3e": {
           "name": "Push 10 Feet"
         },
         "atpJ2mtaJeJ9UzZC": {
-          "description": "<p>A creature that fails a saving throw against a cataclysm or wrathful storm spell cast by the tempest incarnate becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). A creature can only be frightened once by each casting of wrathful storm.</p>",
+          "description": "<p>A creature that fails a saving throw against a @UUID[Compendium.pf2e.spells-srd.Item.wLIvH0AT1u7oa64N]{Cataclysm} or @UUID[Compendium.pf2e.spells-srd.Item.yLJROsQtyrPIKcDx]{Wrathful Storm} spell cast by the tempest incarnate becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). A creature can only be frightened once by each casting of <em>wrathful storm</em>.</p>",
           "name": "Intimidating Storm"
         },
         "hwUNWppXP3Fi3VvH": {
@@ -7183,7 +7206,7 @@
       "description": "<p>The life of a traveling actor is, contrary to belief, not one of glamor but effort. To be on the road going from town to town wearing a thousand faces invites little reward, save the adoration of the crowd. Even so, this is where they thrive. Actors typically travel in troupes, composed not only of other actors but also of stagehands, drivers, and assorted hangers-on. All of them fall under the thumb of a singular director, acting as both parent and manager to all within the troupe.</p><hr /><p>Performances come in a wide variety of forms, from musical methods like singing and instruments to physical dancing and juggling to simple orating and conversing.</p>",
       "items": {
         "GVqy4k0d3E89Jaok": {
-          "description": "<p><strong>Trigger</strong> The traveling actor takes any damage</p><hr /><p><strong>Effect</strong> The traveling actor falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and dramatically announces their death. They appear to have died. Anyone who is suspicious of this \"death\" can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} to attempt a secret Perception check against the traveling actor's Performance DC. On a success, they see through the ruse.</p>",
+          "description": "<p><strong>Trigger</strong> The traveling actor takes any damage</p><hr /><p><strong>Effect</strong> The traveling actor falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and dramatically announces their death. They appear to have died. Anyone who is suspicious of this \"death\" can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} to attempt a secret @Check[perception|against:performance|rollerRole:target|traits:secret] check against the traveling actor's Performance DC. On a success, they see through the ruse.</p>",
           "name": "Dramatic Death"
         },
         "O0QloD5rVQ3q3Ij3": {
@@ -7191,7 +7214,7 @@
           "name": "Versatile Performance"
         },
         "V6aErisOZPa0i947": {
-          "name": "Wooden Sword"
+          "name": "Wooden Sword (Functions as a Light Mace)"
         },
         "ZPHJ8WL6kepBQ40K": {
           "name": "Wooden Sword"
@@ -7249,12 +7272,15 @@
           "name": "Fist"
         },
         "D2VEUOoAS813GyWr": {
-          "description": "<p>The tree singer raises their voice in a haunting melody, creating an aura in a @Template[type:emanation|distance:30]. Plants in the aura seem to come to life, swaying and rustling in response to the music. The tree singer's allies in the aura gain a +2 status bonus to AC and saving throws as the foliage around them shields and defends them from harm.</p>\n<p>The aura lasts until the end of the tree singer's next turn but can be Sustained. It can be Sustained even if the tree singer is polymorphed. The effect ends early if the tree singer stops singing.</p>",
+          "description": "<p>The tree singer raises their voice in a haunting melody, creating an aura in a 30-foot emanation. Plants in the aura seem to come to life, swaying and rustling in response to the music. The tree singer's allies in the aura gain a +2 status bonus to AC and saving throws as the foliage around them shields and defends them from harm.</p>\n<p>The aura lasts until the end of the tree singer's next turn but can be Sustained. It can be Sustained even if the tree singer is polymorphed. The effect ends early if the tree singer stops singing.</p>",
           "name": "Verdant Aria"
         },
         "lhrQmHXGnYHvX41r": {
           "description": "<p>The tree singer can ask questions of, receive answers from, and use the Diplomacy skill with plants and fungus.</p>",
           "name": "Plant Empathy"
+        },
+        "mr9D2KFSXOYqBT6B": {
+          "name": "Elemental Form (Wood Only)"
         }
       },
       "name": "Tree Singer"
@@ -7337,12 +7363,15 @@
         "DJcssfmvEXxJU37q": {
           "name": "Poetry Book"
         },
+        "XKQUgMLEHGnRF5s3": {
+          "name": "Bardic Lore"
+        },
         "p0JGAWaRJxrH24fB": {
           "description": "<p>The troubadour can @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} on any subject with a +7 modifier.</p>",
           "name": "Bardic Lore"
         },
         "wJwF7vhkxxkiLdKt": {
-          "name": "Lute"
+          "name": "Lute (Handheld Musical Instrument)"
         }
       },
       "name": "Troubadour"
