@@ -395,7 +395,7 @@
           "name": "Troop Defenses"
         },
         "na8p3W8S14jn8Qiz": {
-          "description": "<p><strong>Trigger</strong> An enemy within a @Template[type:emanation|distance:10] uses a manipulate action or a move action, makes a ranged attack, or leaves a square in the area during a move action it's using</p><hr /><p><strong>Effect</strong> The clockwork infantry lashes out with their halberds. The triggering enemy takes @Damage[(2d10+10)[untyped]] damage (@Check[reflex|dc:27|basic] save). If the enemy critically fails this saving throw and the trigger was a manipulate action, the damage disrupts that action.</p>",
+          "description": "<p><strong>Trigger</strong> An enemy within a @Template[type:emanation|distance:10] uses a manipulate action or a move action, makes a ranged attack, or leaves a square in the area during a move action it's using</p><hr /><p><strong>Effect</strong> The clockwork infantry lashes out with their halberds. The triggering enemy takes @Damage[(2d10+10)[untyped]|options:area-damage] damage (@Check[reflex|dc:27|basic|options:area-effect] save). If the enemy critically fails this saving throw and the trigger was a manipulate action, the damage disrupts that action.</p>",
           "name": "Reactive Sweep"
         }
       },
@@ -595,7 +595,7 @@
           "_source": "pf2e.spells-srd.Item.xxWhyl81w3ckslAU"
         },
         "ahqeqWaBaTmYKLAQ": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The druids strike out in a coordinated melee attack against all enemies in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:29|basic] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+9)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+13)[untyped]|options:area-damage] damage</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The druids strike out in a coordinated melee attack against all enemies in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:29|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+9)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+13)[untyped]|options:area-damage] damage</p>",
           "name": "Sickle and Staff"
         },
         "eVKtrWe3AVnZoOrz": {
@@ -967,7 +967,7 @@
           "name": "Troop Defenses"
         },
         "unbuSuEJCHdIxDeZ": {
-          "description": "<p>The hobgoblins draw their shortbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[4d6[piercing]|options:area-damage] damage with a @Check[reflex|dc:25|basic] save. When the regiment is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "description": "<p>The hobgoblins draw their shortbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[4d6[piercing]|options:area-damage] damage with a @Check[reflex|dc:25|basic|options:area-effect] save. When the regiment is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
           "name": "Shortbow Volley"
         }
       },
@@ -1034,7 +1034,7 @@
           "name": "Quicken Pestilence"
         },
         "ZsLTGrtulHpBQjCi": {
-          "description": "<p>The leukodaemons exhale a @Template[type:cone|distance:30] of disease-ridden black flies that deal @Damage[5d8[piercing]|options:area-damage] damage (@Check[reflex|dc:31|basic] save). A creature that fails the save also becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). When the leukodaemon plague is reduced to 2 segments, this area decreases to a @Template[type:cone|distance:20].</p>",
+          "description": "<p>The leukodaemons exhale a @Template[type:cone|distance:30] of disease-ridden black flies that deal @Damage[5d8[piercing]|options:area-damage] damage (@Check[reflex|dc:31|basic|options:area-effect,inflicts:sickened] save). A creature that fails the save also becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). When the leukodaemon plague is reduced to 2 segments, this area decreases to a @Template[type:cone|distance:20].</p>",
           "name": "Pestilent Wheeze"
         },
         "i5jWmQ8e6h6E4QoP": {
@@ -1236,7 +1236,7 @@
       "description": "<p>Many martial artists train to defend themselves and their allies against unwanted aggression, but sometimes the circumstances dictate that even the most peaceful monks must go to war. A cadre of studied monks is capable of dishing out great damage with punches and kicks, as well as focusing their qi into ranged blasts.</p>",
       "items": {
         "2KuVzTYLKCWJAiw3": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The monks perform well-timed coordinated melee attacks against all enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:31|basic|options:area-damage] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+16)[bludgeoning]|options:area-damage] damage</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The monks perform well-timed coordinated melee attacks against all enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:31|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+16)[bludgeoning]|options:area-damage] damage</p>",
           "name": "Pummeling Punches"
         },
         "Kne0fCu271kBT4tl": {
@@ -1267,7 +1267,7 @@
           "name": "Offal Rain"
         },
         "2Fba598q7sUIgo12": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The ofalths pummel all enemies in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:33|basic] save. The damage depends on the number of actions. Creatures that fail the saving throw are exposed to wretched weeps.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+3)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+7)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+10)[bludgeoning]|options:area-damage] damage</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The ofalths pummel all enemies in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:33|basic|options:area-effect] save. The damage depends on the number of actions. Creatures that fail the saving throw are exposed to wretched weeps.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+3)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+7)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+10)[bludgeoning]|options:area-damage] damage</p>",
           "name": "Putrid Pummeling"
         },
         "73muWjjVsYKWfZTx": {
@@ -1491,7 +1491,7 @@
           "name": "Poisoned Bolts"
         },
         "XmcGqmrImLqgyZm4": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The shank squad makes a coordinated attack with shivs and daggers against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:22|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[precision]|options:area-damage]{1d6 slashing damage and 1d4 precision damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+3)[slashing],2d4[precision]|options:area-damage]{2d6+3 slashing damage and 2d4 precision damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+6)[slashing],3d4[precision]|options:area-damage]{2d6+6 slashing damage and 3d4 precision damage}</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The shank squad makes a coordinated attack with shivs and daggers against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:22|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[precision]|options:area-damage]{1d6 slashing damage and 1d4 precision damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+3)[slashing],2d4[precision]|options:area-damage]{2d6+3 slashing damage and 2d4 precision damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+6)[slashing],3d4[precision]|options:area-damage]{2d6+6 slashing damage and 3d4 precision damage}</p>",
           "name": "Shank 'Em"
         },
         "i5jWmQ8e6h6E4QoP": {
@@ -1803,7 +1803,7 @@
           "name": "Troop Defenses"
         },
         "lNAVyJ6NEXycS9N0": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The skeletons engage using their claws and broken bones to attack each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d4+1)[piercing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing]] damage</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The skeletons engage using their claws and broken bones to attack each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d4+1)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing]|options:area-damage] damage</p>",
           "name": "Rattling Bones"
         }
       },
