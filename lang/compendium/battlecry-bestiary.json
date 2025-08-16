@@ -1387,10 +1387,6 @@
     "Protean Tumult": {
       "description": "<p>Due to the inherently chaotic nature of proteans, many would assume they are incapable of cooperation. However, they are cunning enough to be able to unite in the face of danger or at the behest of more powerful beings, sometimes acting as a group called a protean tumult. Such an association is comprising of dozens of proteans of different shapes and sizes, many of whom continually alter their forms from moment to moment.</p>",
       "items": {
-        "9izQUlyhIAzmZz6c": {
-          "description": "<p>The creature's melee strikes count either as adamantine, cold iron or silver.</p>",
-          "name": "Effect: Adaptive Strike (Adamantine)"
-        },
         "HtObAvlkwMg0OWFb": {
           "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} an effect that has them @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, they automatically succeed unless the effect is magical and of a higher rank than the <em>unfettered movement</em> spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.CdAyAiMGESvgNQtz]{Spell Effect: Unfettered Movement}</p>",
           "name": "Unfettered Movement (Constant)"
@@ -1400,14 +1396,15 @@
           "name": "Chaos Strike"
         },
         "JegdZ0GZYtjq4SH8": {
-          "description": "<p>The protean tumult makes their way across the battlefield. It Strides. At the end of this movement, they lash out at the enemy with tentacles and other blunt body parts, dealing @Damage[(2d12+10)[bludgeoning]|options:area-damage] damage in a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). A creature who fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 2 rounds (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure).</p>",
+          "description": "<p>The protean tumult makes their way across the battlefield. It Strides. At the end of this movement, they lash out at the enemy with tentacles and other blunt body parts, dealing @Damage[(2d12+10)[bludgeoning]|options:area-damage] damage in a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect,inflicts:stupefied] save). A creature who fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 2 rounds (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure).</p>",
           "name": "Stupefying Swipe"
         },
         "NsbD0XXJd9rWTG6K": {
-          "_source": "pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ"
+          "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>",
+          "name": "Fast Healing 8"
         },
         "R96622IFQ9P9kEle": {
-          "description": "<p>A protean tumult can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. Veil of privacy prevents a creature from being detected via entropy sense automatically (without a counteract check).</p>",
+          "description": "<p>A protean tumult can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} prevents a creature from being detected via entropy sense automatically (without a counteract check).</p>",
           "name": "Entropy Sense"
         },
         "SaPQIiTXBIDTJjbY": {
@@ -1416,7 +1413,7 @@
         },
         "e8XD5kcvG2Bx7SOy": {
           "description": "<p>A protean's vital organs shift and change shape and position constantly. Immediately after the protean takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. The protean is immune to polymorph effects unless it is a willing target. If @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, the protean automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.c6SiBB3mzV8lZUQr]{Effect: Protean Anatomy}</p>",
-          "name": "Protean Anatomy"
+          "name": "Protean Anatomy 12"
         },
         "i5jWmQ8e6h6E4QoP": {
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.MXI6zwrvbQNIv7ji"
@@ -1426,18 +1423,19 @@
           "name": "Troop Defenses"
         },
         "sCHb6Krue4UHWMqU": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The tumult viciously attacks each enemy within a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+1)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+10)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+11)[bludgeoning]] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The tumult viciously attacks each enemy within a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+1)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+11)[untyped]|options:area-damage] damage</p>",
           "name": "Claws, Jaws, and Tails"
         },
         "scu5Bs8DD8FihPK7": {
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
         },
         "xySnVB7sWVdq7l75": {
-          "description": "<p>A protean tumult is less organized and more vicious than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to non-protean creatures. A creature that willingly moves into a protean tumult's space takes @Damage[(1d12+1)[bludgeoning]] damage (@Check[reflex|dc:29|basic|options:area-effect] save); a creature takes this damage only once per round.</p>",
+          "description": "<p>A protean tumult is less organized and more vicious than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to non-protean creatures. A creature that willingly moves into a protean tumult's space takes @Damage[(1d12+1)[untyped]] damage (@Check[reflex|dc:29|basic|options:area-effect] save); a creature takes this damage only once per round.</p>",
           "name": "Chaos Flux"
         }
       },
       "name": "Protean Tumult",
+      "npcAllSaves": "+1 status to all saves vs. magic",
       "npcHp": "(4 segments); Thresholds 140 (3 segments), 70 (2 segments)",
       "npcSpeed": "troop movement, unfettered movement"
     },
