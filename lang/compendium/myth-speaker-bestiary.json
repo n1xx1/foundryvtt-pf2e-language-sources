@@ -2,23 +2,33 @@
   "entries": {
     "Akki": {
       "items": {
-        "HPJLJsFvM917PjRG": {
-          "name": "Sailing Lore"
+        "CpVVgJ3QETitSctE": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The creature attempts its next skill check with a +4 bonus and is considered to have mythic proficiency for that check.</p>",
+          "name": "Mythic Skill (Athletics)"
         },
-        "N3XjbWcHqlxcmOrX": {
-          "description": "<p><strong>Trigger</strong> Akki fails but does not critically fail a Strike against a target within 15 feet</p>\n<p><strong>Requirements</strong> Akki is affected by Tempest Rage</p><hr /><p><strong>Effect</strong> Even though her attack missed, a thunderclap follows an instant later in the weapon's wake. The Strike's target takes @Damage[1d4[sonic]] damage (@Check[fortitude|dc:16|basic] save). The target is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for [[/gmr 1d4 #rounds]]{1d4 rounds} if they critically fail the saving throw.</p>",
-          "name": "Thunderous Echo"
+        "NJb2MlPkzxTNgstJ": {
+          "description": "<p>A creature critically hit by Akki's lightning cry Strike is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>",
+          "name": "Shock and Awe"
         },
-        "XfbiN9Gzc5KvtnKA": {
-          "description": "<p>Akki channels the ferocity of a raging storm, causing her feathers and weapons to crackle with electricity. She gains 5 temporary Hit Points, deals an additional 1d4 electricity damage with her weapon Strikes, and cannot use actions (except @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}) with the concentrate trait unless they also have the rage trait. These effects last for 1 minute, until she falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or until the encounter ends, whichever comes first. After Akki uses this ability, she cannot do so again for [[/gmr 1d10 #Recharge Tempest Rage]] minutes.</p>",
-          "name": "Tempest Rage"
+        "fkdts7vVif2yXy9N": {
+          "description": "<p><strong>Requirements</strong> Akki isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p><hr /><p><strong>Effect</strong> Akki taps into her inner fury and begins raging. She gains 12 temporary Hit Points. The rage lasts for 1 minute or until Akki falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first. While raging, her melee Strikes deal an additional 6 electricity damage, and she can't use actions that have the concentrate trait, except for @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}. When Akki stops raging, she loses any remaining temporary Hit Points from Rage, and she can't gain temporary Hit Points from using the Rage action again for 1 minute.</p>",
+          "name": "Rage"
         },
-        "aZAIe1ugKBy5n0fa": {
-          "name": "Tournament Greatclub"
+        "l0iI6yeorgd16wdV": {
+          "name": "Lightning Cry"
         },
-        "zCXLpa0OAauYb3gZ": {
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Akki takes piercing or slashing damage</p><hr /><p><strong>Effect</strong> Akki's blood sprays from the wound, forming a crimson cloud laced with tiny lightning bolts. Adjacent creatures take @Damage[(1[splash])[electricity]]{1 electricity splash} damage, and Akki is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} until the end of her next turn.</p>",
-          "name": "Blood Storm"
+        "nyafKXUpFSJy8oG2": {
+          "name": "Mythic Power"
+        },
+        "pXyWoomXQLcCzV77": {
+          "name": "Beak"
+        },
+        "s7HfI5MVhtpPpTqb": {
+          "description": "<p>When Akki rolls for initiative, provided she can perceive at least one foe, she can Rage as a free action.</p>",
+          "name": "Quick Rage"
+        },
+        "vbpNu3SUXPLs13RL": {
+          "name": "Mythic Resilience (Fortitude)"
         }
       },
       "name": "Akki"
@@ -161,6 +171,13 @@
       "npcHp": "(4 segments); Thresholds 30 (3 segments), 15 (2 segments)",
       "npcSpeed": "troop movement"
     },
+    "By the Horns": {
+      "description": "<p>The head of the Granite Ox tosses back and forth as the creature charges toward Dhuraxilis.</p>",
+      "hazardDisable": "<p>@Check[athletics|dc:27] (master) to tug one of the ox's ears, @Check[arcana|dc:32], @Check[nature|dc:32], @Check[occultism|dc:32], or @Check[religion|dc:32] (expert) to distract the Ox with a display of magic, or @Check[acrobatics|dc:35] (expert) to dangle in front of the Ox's eyes and obscure its vision; three successes are required to disable the hazard</p>",
+      "hazardReset": "<p>The hazard ends automatically after 5 rounds or once all PCs are thrown from the Ox's back, whichever comes first.</p>",
+      "hazardRoutine": "<p>(1 action) The Granite Ox bucks. Each creature on the Ox's head must attempt a @Check[reflex|dc:33] save. Prone creatures gain a +2 circumstance bonus to the save. On a failure, the creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. On a critical failure, the creature flies from the Ox's back, falling 120 feet to the ground or into Kardaji Bay.</p>",
+      "name": "By the Horns"
+    },
     "Coralclaw": {
       "items": {
         "1ZEaYkyhEfe9ncp6": {
@@ -195,6 +212,79 @@
       },
       "name": "Coralclaw"
     },
+    "Cyclops Seeker": {
+      "description": "<p>Some cyclopes pursue knowledge, power, and artifacts from a bygone era—particularly those recovered from regions where ancient cyclops nations once stood. These cyclops seekers hone their brief insights into epiphanic bursts of inspiration to better uncover forgotten truths. A rare few become philosophers and sages, whether as secluded hermits or as gregarious guides eager to share the wonders they've discovered. These talents are more common among the introspective cyclopes of Iblydos.</p>\n<p>Cyclops seekers are particularly fond of collecting scrolls, grimoires, and other objects of magical lore—even accidentally foregoing rest and meals when devouring esoteric textbooks, historical documents, and fiction. Those with a good sense of humor realize the irony of trading their physical hunger for their eternal thirst for knowledge, though failure to achieve a breakthrough can lead a cyclops to ruminate, becoming sullen and withdrawn. When they're too large to safely study an interesting set of more compact ruins, a cyclops seeker might hire on smaller adventurers as reconnaissance teams or research assistants, but woe to those who double-cross their scholarly employers, for while the cyclops seeker is a studious creature, they're also deadly in battle.</p><h2>Cyclopean Researchers</h2><p>It's not often a cyclops makes their way into Avistan, but those interested in learning for its own sake might seek out places of higher education to conduct obscure avenues of research for their own edification. The presence of an enormous, one-eyed giant can be quite alarming, and others' panic is not conducive toward quiet study or long-term research. Accordingly, these cyclops seekers often develop methods of changing their shape to fit in more easily among the societies they wish to learn from.</p>",
+      "items": {
+        "4ZdDnVBxl3fDnjzX": {
+          "name": "Library Lore"
+        },
+        "OBQ7ss6z2RG1GHzN": {
+          "name": "Academia Lore"
+        },
+        "RdpVwGlGERpimxE7": {
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> The cyclops seeker begins their turn</p><hr /><p><strong>Effect</strong> Until the beginning of their next turn, the next skill check or Will saving throw the cyclops seeker succeeds at (but not critically succeeds at) becomes a critical success instead.</p>",
+          "name": "Flash of Discovery"
+        },
+        "TXkF0Uf5Fj5J3U5i": {
+          "name": "Cyclopean Lore"
+        },
+        "kUUFonkpOQOEE6MU": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The cyclops seeker looks for the perfect moment to attack a creature they can see, then attempts an @Check[occultism|against:will] check against that creature's Will DC.</p><hr /><p><strong>Critical Success</strong> Until the end of their next turn, all Strikes the cyclops seeker attempts against the creature gain a +1 status bonus to the attack roll and inflict an additional 2d6 precision damage.</p>\n<p><strong>Success</strong> As critical success, but only for the next Strike they attempt against that creature in the current round.</p>\n<p><strong>Failure</strong> The cyclops seeker does not learn anything useful.</p>\n<p><strong>Critical Failure</strong> The cyclops seeker determines a suboptimal moment for their attack; they learn nothing useful and become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of their next turn.</p>",
+          "name": "Moment of Truth"
+        }
+      },
+      "name": "Cyclops Seeker"
+    },
+    "Deathless Pirate": {
+      "items": {
+        "L9lh6xGhu5TKrE1x": {
+          "name": "Sailing Lore"
+        },
+        "UFFfRVW2z17Y6tdD": {
+          "name": "Claw"
+        },
+        "nfzyPGInn8rjNPfg": {
+          "description": "<p><strong>Trigger</strong> The deathless pirate is critically hit</p><hr /><p><strong>Effect</strong> The pirate collapses into a pile of bones and the attack deals only normal damage. The pirate can re-form in a standing position as an action, but until it does, it is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>",
+          "name": "Collapse"
+        }
+      },
+      "name": "Deathless Pirate",
+      "npcHp": "void healing"
+    },
+    "Deck Crew": {
+      "items": {
+        "HGS3cKNcitz7FVyH": {
+          "name": "Sailing Lore"
+        }
+      },
+      "name": "Deck Crew"
+    },
+    "Deianire": {
+      "items": {
+        "1lAKybVH2VlPilSW": {
+          "description": "<p>Deianire lets loose an awful screech, forcing each living creature within 30 feet to attempt a @Check[fortitude|dc:25] save. On a failure, a creature is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round. On a critical failure, a creature is deafened for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>",
+          "name": "Deafening Shriek"
+        },
+        "3gqWVaUKWabhnc1Q": {
+          "name": "Mercantile Lore"
+        },
+        "4MK6OOGRrigHJBeb": {
+          "description": "<p>Deianire fixes her disapproval on a creature she can see within 30 feet. The target takes @Damage[4d6[void]] damage (@Check[will|dc:25|basic] save). On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>",
+          "name": "Judgmental Gaze"
+        },
+        "KhGjI7nwm8OHmmVx": {
+          "name": "Ghostly Hand"
+        },
+        "aREIVGwM1Ed5sHup": {
+          "name": "Rejuvenation"
+        },
+        "juZ8gxYsOkUa6yPV": {
+          "name": "Site Bound"
+        }
+      },
+      "name": "Deianire",
+      "npcHp": "rejuvenation, void healing"
+    },
     "Ekleios": {
       "description": "<p>When a cleric rebels against their deity and dies in the grip of blasphemous rage, the heresies they committed in life may fuel their transformation into an undead herexen. Herexens seek vengeance against the deity they once worshipped, defiling temples, slaying the faithful, and rallying lesser undead and death cultists to aid them in their unholy quests. Though a herexen's divine gifts have mostly been corrupted into the vileness of undeath, they stubbornly cling to remnants of their former power, still wielding magic and armaments favored by the deity they so greatly despise.</p>\n<p>Groups of herexens that blasphemed against the same deity sometimes combine to form a mockery of a congregation, conducting blasphemous rites with something approaching euphoria. These congregations are often formed from a blasphemous cult whose members practiced their heresy together in life and died together, though some gather independent herexens of the same former faith.</p>",
       "items": {
@@ -212,6 +302,51 @@
       },
       "name": "Ekleios",
       "npcHp": "void healing"
+    },
+    "Ekriathe's Rage": {
+      "description": "<p>Ekriathe's talon releases a pulse of psychic rage throughout the area, transforming the lighthouse's lantern room into a pitched battlefield.</p>",
+      "hazardDisable": "<p>@Check[religion|dc:27] (expert) twice to disrupt the divine mythic energies, or @Check[thievery|dc:32] (expert) twice to cut down the talon and remove it from the room without triggering the haunt</p>",
+      "hazardReset": "<p>The haunt deactivates once no creatures remain in the lantern room, but it resets immediately.</p>",
+      "hazardRoutine": "<p>(3 actions) The haunt attacks creatures in the area, making spear and talon Strikes against targets determined at random. The haunt takes the multiple attack penalty only if it targets the same creature more than once on a turn. The haunt loses one action if its Hit Points are reduced below its Break Threshold.</p>",
+      "name": "Ekriathe's Rage"
+    },
+    "Encymion": {
+      "description": "<p>The chimera is the archetypal example of an unnatural monster made up of a monstrous mix of wildly different component creatures: in this case, a lion, a dragon, and a goat. Wild, hateful, and hungry, it tries to eat any creature it sees, but sometimes a strong-willed master is able to compel a chimera to serve as a guardian or even a mount. If such an individual ever loses their control over the chimera, they are often the first to be devoured.</p>",
+      "items": {
+        "7CQGpLGBAg2Jbtjv": {
+          "description": "<p>Any ability that would sever a chimera's head (such as a critical hit with a <em>@UUID[Compendium.pf2e.equipment-srd.Item.6xaxxKfvXED6LfIY]{Vorpal Weapon}</em>) severs one head at random. Losing a head doesn't kill a chimera (as long as it has one head left), but it does prevent it from making Strikes with the lost head or using the head's Dragon Breath.</p>",
+          "name": "Three Headed"
+        },
+        "8PkUYYXKF3YdJiBM": {
+          "description": "<p>A chimera's dragon head deals an extra @Damage[2d6[untyped]] damage of a type matching the damage dealt by its Dragon Breath.</p>",
+          "name": "Draconic Bite"
+        },
+        "9RDkmFyfywWSOj2V": {
+          "description": "<p>The chimera breathes a cone or line that deals 9d6 damage to all creatures in the area (DC 26 basic save of a type indicated below). The chimera's dragon head is linked to one of the traditions of magic, which determines the area of its Dragon Breath, the type of damage it deals, and the type of save to avoid it. This ability gains the related traits.</p>\n<p>The chimera can't use Dragon Breath again for [[/gmr 1d4 #Recharge Dragon Breath]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Arcane</strong> @Template[line|distance:60] of @Damage[9d6[force]]{force} (@Check[reflex|dc:26|basic])</li>\n<li><strong>Divine</strong> @Template[line|distance:60] of @Damage[9d6[spirit]]{spirit} (@Check[reflex|dc:26|basic]); this ability can also have the holy or unholy trait</li>\n<li><strong>Occult</strong> @Template[cone|distance:30] of @Damage[9d6[mental]]{mental} (@Check[will|dc:26|basic])</li>\n<li><strong>Primal</strong> @Template[cone|distance:30] of @Damage[9d6[acid]]{acid}, @Damage[9d6[cold]]{cold}, @Damage[9d6[electricity]]{electricity}, @Damage[9d6[fire]]{fire}, or @Damage[9d6[sonic]]{sonic} (@Check[reflex|dc:26|basic]); or @Damage[9d6[poison]]{poison} (@Check[fortitude|dc:26|basic])\n</li>\n</ul>",
+          "name": "Dragon Breath"
+        },
+        "PQMwXaG8Zqcd02Oe": {
+          "description": "<p>A chimera gains 2 extra reactions each round that it can use only to make Reactive Strikes. It must use a different head for each reaction, and it can't use more than one on the same triggering action. If it loses one of its heads, it also loses one of these extra reactions.</p>",
+          "name": "Multiple Reactions"
+        },
+        "XfQQjjOdt5sRiSb6": {
+          "name": "Goat Horns of the Schemer"
+        },
+        "p4gHmixTKN3Gb87J": {
+          "name": "Dragon Jaws of the Pious"
+        },
+        "pEpgPRttHusG3elF": {
+          "description": "<p>The chimera makes a Strike with its dragon jaws, lion jaws, and goat horns, each at a -2 penalty and targeting a different creature. These Strikes count as only one attack for the chimera's multiple attack penalty, and the penalty doesn't increase until after it has made all three attacks.</p>",
+          "name": "Three-Headed Strike"
+        },
+        "rog22HpLDkUnfolA": {
+          "name": "Lion Jaws of the Brave"
+        },
+        "sT4lUsg0seVtpUKQ": {
+          "name": "Claw"
+        }
+      },
+      "name": "Encymion"
     },
     "Enraged Spirit": {
       "description": "<p>More than just hobbyists, fishers catch fish and other seafood with the intention of selling most of or all of their catch.</p><hr /><p>Society is built upon the backs of laborers.</p>",
@@ -260,6 +395,131 @@
       },
       "name": "Eumenid"
     },
+    "Exthenios": {
+      "items": {
+        "1CVdikUDSev15oP0": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Exthenios automatically ends one effect that would give him a circumstance penalty to Speed. When he attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} an effect that has him @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, he automatically succeeds.</p>",
+          "name": "Unimpeded"
+        },
+        "2ec36G479GsUf4l2": {
+          "name": "Mythic Skill (Acrobatics)"
+        },
+        "CH354SEdyWMNzjYV": {
+          "description": "<p>Exthenios deals an extra 1d6 precision damage to the target of his Engaging Duel.</p>",
+          "name": "Precise Duelist"
+        },
+        "HG8sgpW3qftzdcr1": {
+          "description": "<p>Exthenios clutches Aerekostes with a literal death grip. Attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} him of the weapon are treated as one degree of success lower.</p>",
+          "name": "Death Grip"
+        },
+        "KJity64dGyIxkE8a": {
+          "name": "Mythic Resilience (Reflex and Will)"
+        },
+        "Qs4Q0nGGcMWWXZ3z": {
+          "name": "Mythic Power"
+        },
+        "RNzehh4q07CgiTml": {
+          "description": "<p>Exthenios singles out a creature he can see, calling them to face him directly. Exthenios gains a +1 circumstance bonus to Strikes and DCs against the targeted creature. If the creature takes an action that affects anyone other than themselves or Exthenios, this bonus increases to +2 until the end of Exthenios's next turn. Exthenios takes a –1 circumstance penalty to all checks and DCs against any creature other than the target of the Engaging Duel. These effects last until Exthenios uses Engaging Duel again.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lgXXJFF0JstWTwom]{Effect: Engaging Duel (Unengaged Target)}</p>",
+          "name": "Engaging Duel"
+        },
+        "YASqnKLFS4Nre3CF": {
+          "name": "Sailing Lore"
+        },
+        "gKLtHSSH96hv27AR": {
+          "description": "<p><strong>Trigger</strong> A creature other than the target of Engaging Duel takes a hostile action against Exthenios or uses a spell or ability that affects the target of Engaging Duel</p>\n<p><strong>Requirements</strong> Exthenios has a creature under the effects of Engaging Duel</p><hr /><p><strong>Effect</strong> Exthenios makes a melee Strike against the triggering creature, or a void bolt Strike if the creature isn't within his reach. If the Strike is a success, the creature must attempt a @Check[flat|dc:7] (or a @Check[flat|dc:12] if Exthenios's Strike was a critical success). On a failure, the triggering action is disrupted.</p>",
+          "name": "My Fight!"
+        },
+        "lE4jDUdrkLBGiTGL": {
+          "name": "Void Bolt"
+        }
+      },
+      "name": "Exthenios",
+      "npcHp": "void healing"
+    },
+    "Eylthia": {
+      "description": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that—if lingered upon—can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divining magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek—for a price. Of course, if wit and deception prove insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare. Many medusas build elaborate lairs to call home, often decorated with the statues of their foes turned into macabre trophies on prominent display.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict, even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing their lives.</p>",
+      "items": {
+        "2lGYb3ZO8pwxgMhD": {
+          "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a @Check[fortitude|dc:29] save against the medusa's petrifying gaze.</p>\n<p>If the creature was already slowed by petrifying gaze before attempting its save, a failed save causes it to be petrified permanently. After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>",
+          "name": "Focus Gaze"
+        },
+        "EfL7TP1l4LKZwO7P": {
+          "description": "<p>The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the incapacitation trait (except for rolling a natural 1 or 20).</p>",
+          "name": "Mythic Resilience (Reflex and Will)"
+        },
+        "FuDdgAP7wwq6LCFO": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>",
+          "name": "Serpent Venom"
+        },
+        "GWf8bOiwuYiiri7w": {
+          "name": "Mythic Power"
+        },
+        "apTdrypLmjVyMLpi": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Eylthia automatically ends one effect that would give her a circumstance penalty to Speed. When she attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} an effect that has her @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, she automatically succeeds.</p>",
+          "name": "Unimpeded"
+        },
+        "gQoNZ4QbMF9DzCqT": {
+          "description": "<p>Eylthia deals an additional 1d6 precision damage on her next Strike whenever she uses an action to Stride 10 feet or more.</p>",
+          "name": "Deadly Striker"
+        },
+        "gVhGxeTSrSlQGFkk": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The creature attempts its next skill check with a +4 bonus and is considered to have mythic proficiency for that check.</p>",
+          "name": "Mythic Skill (Acrobatics)"
+        },
+        "hSGaU1UT8mzmPFWl": {
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[fortitude|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p>The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
+          "name": "Petrifying Gaze"
+        },
+        "ltvMN7K0itu2l3WZ": {
+          "name": "Snake Fangs"
+        },
+        "rGP6XQmOiaehc8Oj": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Eylthia renews the vulnerability to her gaze on one target within 30 feet that is temporarily immune to Focus Gaze. The creature loses that temporary immunity.</p>",
+          "name": "Vulnerability"
+        },
+        "zGXZKhk95VPsSdKN": {
+          "description": "<p><strong>Trigger</strong> A creature ends its turn adjacent to the medusa.</p>\n<hr />\n<p><strong>Effect</strong> The medusa makes a snake fangs Strike against the creature.</p>",
+          "name": "Biting Snakes"
+        },
+        "zQXuIZDjjW1O7mB6": {
+          "description": "<p>Eylthia can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on animals and to make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of them.</p>",
+          "name": "Animal Empathy"
+        }
+      },
+      "name": "Eylthia",
+      "npcAc": "all-around vision"
+    },
+    "Eylthia's Basilisk": {
+      "description": "<p>The basilisk is a reptile with a nasty disposition and the ability to turn creatures to stone with its gaze. Folklore holds that, much like the cockatrice, the first basilisks hatched from leathery eggs laid by snakes and incubated by roosters, but little in the basilisk's physiology lends any credence to this claim.</p>\n<p>A basilisk prefers to eat petrified flesh. Once a victim has been turned to stone, the basilisk crunches the fossilized corpse with its powerful jaws and lets its potent stomach acids do the rest. This digestive process is extremely slow and inefficient, causing the basilisk to move so lethargically that it appears as if in mid-petrification itself. This has even led to the saying \"as slow as a well-fed basilisk.\" Certainly, basilisks are well-known for their slow gait and slothful nature, but a predator that can turn its prey to stone with a glance hardly has much need for speed.</p>\n<p>An adult basilisk is 13 feet long from head to tail and weighs roughly 300 pounds. These reptiles make hissing sounds when moving about that turn to a guttural gurgle when they're agitated.</p>\n<p>Though they are normally solitary creatures that come together only to mate and lay eggs, there are periodic reports of regions being infested with unusual numbers of basilisks. What causes these unusual congregations of basilisk activity is a mystery.</p>\n<p>For unknown reasons, weasels and ferrets are immune to the basilisk's stare, and they sometimes sneak into basilisk lairs while a parent is hunting in order to consume eggs or freshly hatched young. Some legends suggest that a basilisk's blood can transmute common stones into other materials, but this is likely a case of witnesses misinterpreting the magical restoration of previously petrified creatures or body parts.</p>",
+      "items": {
+        "2BTsVPh2uj9W7ztQ": {
+          "name": "Tail"
+        },
+        "H9b7NoUFDazu7evt": {
+          "name": "Stone Spittle"
+        },
+        "L4dKqPtdmyspmZtd": {
+          "name": "Jaws"
+        },
+        "Nl15bkRTLq869IPi": {
+          "description": "<p><strong>Trigger</strong> A creature within 30 feet that the basilisk can see starts its turn</p><hr /><p><strong>Effect</strong> The target must attempt a @Check[fortitude|dc:23] save. If it fails, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as its body slowly stiffens.</p>",
+          "name": "Petrifying Glance"
+        },
+        "brYqJOOdyzhgkF9K": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 2d6 poison and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> 2d6 poison and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 3</strong> 4d6 poison and clumsy 2 (1 round)</p>",
+          "name": "Calcifying Venom"
+        },
+        "ppXm4ejfp4XoedI2": {
+          "description": "<p>This basilisk's saliva reacts to its Petrifying Gaze, allowing the basilisk to spit toward foes and transform the fluid into a rocky missile mid-flight. If the attack is a critical hit, the target must succeed at a @Check[fortitude|dc:25] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+          "name": "Stone Spittle"
+        },
+        "tOCS9mkYR5K1LuOZ": {
+          "description": "<p>The basilisk stares at a creature it can see within 30 feet. That creature must attempt a @Check[fortitude|dc:25] save. If it fails and has not already been slowed by Petrifying Glance or this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. If the creature was already slowed by this ability or Petrifying Glance, a failed save causes the creature to be petrified permanently.</p>\n<p>A creature petrified in this manner that is coated (not just splashed) with fresh basilisk blood no more than 1 hour old is instantly restored to flesh. A single basilisk contains enough blood to coat 1d4 Medium creatures in this manner.</p>",
+          "name": "Petrifying Gaze"
+        }
+      },
+      "name": "Eylthia's Basilisk"
+    },
     "Firehoof Minotaur": {
       "description": "<p>As the birthplace of the legendary first minotaur Tavdrinos, Iblydos is still home to many varieties of minotaurs not found elsewhere in the world. Among these are firehoof minotaurs, large creatures who are fused with elemental, sometimes even infernal fire. Firehoof minotaurs are known for their fierce tempers and skill at combat. Instead of mazes, they prefer to fill an area with smoke and stalk their prey while they're hazily visible.</p><h2>Mazes And Labyrinths</h2><p>Although they're often used interchangeably, the terms maze and labyrinth have slightly different meanings. While a labyrinth has a single path to the center, a maze has multiple ones. Minotaurs see this distinction as vital and symbolic of free will versus fixed fate. Some traditionalist minotaurs see life as having one path: to follow in the footsteps of Tavdrinos. They believe there's no escape from this. But most minotaurs prefer to see life as a maze where one must choose the best way forward.</p>",
       "items": {
@@ -305,6 +565,32 @@
         }
       },
       "name": "Forgotten Dead"
+    },
+    "Gale Frenzy": {
+      "description": "<p>A flock of harpies sometimes forms a tight-knit bond that transcends family ties, personal goals, and individual morals. Like a murmuration of starlings, these so-called gale frenzies begin operating like a superorganism whose movements and thoughts align with uncanny coordination.</p><h2>Harpies at War</h2><p>On the battlefield, harpies traditionally prefer roles more akin to skirmishers or assassins, deadly killers who take advantage of trickery and stealth to accomplish goals of weakening an enemy force. Gale frenzies are a notable exception to this, and a harpy community that includes a gale frenzy is never hesitant to send such a troop into battle instead.</p>",
+      "items": {
+        "Jdnja3SpDeQqa8Zq": {
+          "description": "<p>30 feet @Check[fortitude|dc:25]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+        },
+        "PHJY6fpXJwMmdm5F": {
+          "description": "<p>The @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from putrid plague can't end or be reduced until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d4 hours)</p>\n<p><strong>Stage 2</strong> sickened (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day)</p>\n<p><strong>Stage 4</strong> unconscious (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>",
+          "name": "Putrid Plague"
+        },
+        "SrPmoklSHSyDRXzL": {
+          "description": "<p>The gale frenzy combines its powers over the wind to draw prey closer. Each segment of the troop selects a different target within 20 feet; a targeted creature must succeed at a @Check[fortitude|dc:28] save or be pulled adjacent to that segment of the troop. If a target was pulled off the ground and cannot fly, it then falls as normal.</p>",
+          "name": "Ravenous Winds"
+        },
+        "oDlnUYRNJcOhEpyW": {
+          "description": "<p>A gale frenzy can focus all of their whispered words in a cacophony of unsettling and distracting threats, lies, and taunts, assaulting the minds of those they target with the plethora of distinct sounds. The gale frenzy selects one creature within 90 feet and fills its mind with these wind-borne distractions. The targeted creature must attempt a @Check[will|dc:28|options:damaging-effect] save with the following results. The gale frenzy can't use Distracting Whispers again for [[/gmr 1d4 #Recharge Distracting Whispers]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[10d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute.</p>",
+          "name": "Distracting Whispers"
+        },
+        "yj84Ox27CjZ9oHrC": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gale frenzy swoops through an area with their talons arrayed in a harrowing wall of slashing peril as they rip at each enemy in a @Template[type:emanation|distance:5]. Targets must attempt a @Check[reflex|dc:25|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[slashing]|options:area-damage] damage (plus putrid plague on a failure)</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+4)[slashing]|options:area-damage] damage (plus putrid plague on a failure)</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d8+6)[slashing]|options:area-damage] damage (plus putrid plague on a failure)</p>",
+          "name": "Talonstorm"
+        }
+      },
+      "name": "Gale Frenzy",
+      "npcHp": "Thresholds 100 (3 segments), 50 (2 segments)"
     },
     "Gigantic Bee Drone": {
       "description": "<p>Honeybee drones have a single role in most hives: to mate with a queen. Gigantic bee drones, however, also work as defenders of the nest. Although they lack stingers, their mythic mandibles can do remarkable damage.</p><hr /><p>The honeybee is industrious and generally quite gentle. Following an upwelling of mythic power, however, a number of bee colonies found themselves transformed into gigantic specimens, along with the fields where they harvest nectar. These bees act mostly as they did prior to the infusion of mythic power, except they're far better able to defend themselves and their hives.</p><h2>Honey and Medicine</h2><p>The honey produced by bees possesses several properties that make it useful for the treatment of wounds. It helps prevent infection and inflammation, and many folk remedies make use of it. The honey of gigantic bees, being infused with mythic power, is an even more potent healing aid. A character who manages to get their hands on such a substance heals 1 extra point of damage when using it as part of a successful @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} skill check.</p><h2>Other Giant Parasites</h2><p>With the sudden infusion of mythic energy in Iblydos, the danger of giant versions of parasitic creatures is a very real threat. Increased size usually means increased appetite, and such creatures pose a danger not just to adventurers but livestock as well. Giant ticks, for instance, have long been a danger in the deepest wilderness, and now there are reports of housecat-sized fleas and lice.</p>",
@@ -376,6 +662,37 @@
       "hazardRoutine": "<p>(1 action) Sophreista lashes out at the nearest living creature, dealing @Damage[(1d10+6)[bludgeoning]] damage (@Check[reflex|dc:20|basic] save) and binding their fate to hers; a creature that critically fails their save is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (maximum @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 3}).</p>",
       "name": "Hero-God's Rage"
     },
+    "Iapholi": {
+      "items": {
+        "3fI7GxKdHB32keFA": {
+          "name": "Tail"
+        },
+        "9NOIQPjxWvOj99lS": {
+          "name": "Mythic Power"
+        },
+        "QNsg4AuFULfWbLy4": {
+          "description": "<p>30 feet. Iapholi exudes a comforting sense of peace, even when chaos abounds. Allies within the aura gain a +1 circumstance bonus on saves against effects with the emotion trait.</p>",
+          "name": "Wild Calm"
+        },
+        "Y4l6MD7kTNKvvEzb": {
+          "description": "<p>Iapholi can understand and be understood by all creatures that have the aberration, beast, dragon, or giant trait, as if they shared a language.</p>",
+          "name": "Beastspeech"
+        },
+        "Z6T4JuHzWUzVwzn0": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Iapholi attempts her next Diplomacy check with a +4 bonus and is considered to have mythic proficiency for that check.</p>",
+          "name": "Mythic Skill"
+        },
+        "bmbNMQR0ZDIcm99E": {
+          "description": "<p>Iapholi breathes a gout of energy powered by one of her past lives. She chooses whether this affects a @Template[type:line|distance:60] or a @Template[type:cone|distance:30]. She also chooses one of the following damage types that the breath deals, which also affects the type of DC 25 basic saving throw affected creatures attempt to reduce the damage:</p>\n<p>@Damage[8d6[bludgeoning]|options:area-damage] (@Check[fortitude|dc:25|basic])</p>\n<p>@Damage[8d6[electricity]|options:area-damage] (@Check[reflex|dc:25|basic|traits:electricity])</p>\n<p>@Damage[8d6[fire]|options:area-damage] (@Check[reflex|dc:25|basic|traits:fire])</p>\n<p>@Damage[8d6[poison]|options:area-damage] (@Check[fortitude|dc:25|basic|traits:poison])</p>\n<p>@Damage[8d6[sonic]|options:area-damage] (@Check[fortitude|dc:25|basic|traits:sonic])</p>\n<p>@Damage[8d6[spirit]|options:area-damage] (@Check[will|dc:25|basic|traits:spirit])</p>\n<p>The breath deals 8d6 damage. Ekriathe's Breath gains the trait associated with the chosen damage type. Iapholi can't use Ekriathe's Breath again for [[/gmr 1d4 #Recharge Ekriathe's Breath]]{1d4 rounds}.</p>",
+          "name": "Ekriathe's Breath"
+        },
+        "e5EAEdCQMF0ce3cq": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Iapholi regains one spell.</p>",
+          "name": "Recharge Spell"
+        }
+      },
+      "name": "Iapholi"
+    },
     "Iblydan Hind": {
       "description": "<p>An unusual breed of cervid, Iblydan hinds are closer to the size of a bull or a moose than the average deer, often ten feet or more in height. They have smooth, pale coats, hooves formed of bronze, and both the males and the females of the species bear antlers of pure gold. Iblydan hinds are known for their exceptional speed and agility as well as their intelligence, making them extraordinarily elusive in the wild.</p>\n<p>There's some debate as to the origins of the Iblydan hind. Some scholars believe the species came to the Universe from the First World through a long-ago planar breach, noting how the hinds' unusual characteristics are similar to the unpredictable evolutions of creatures from that plane. Others point to historical records that indicate the hind was purposefully bred by ancient druidic circles, though the purpose of their creation has been lost to time.</p>\n<p>Regardless of their pedigree, Iblydan hinds are a key symbol of Iblydan culture, often depicted in art and heraldry, with various superstitions surrounding them. A recurring element in hero-god stories is for an Iblydan hind to lead a hero-god to the correct path when they become lost, and it's said that a hunter who glimpses a hind in the forest is assured of a long life and good fortune. Due to the hinds' near-sacred status throughout Iblydos, slaying one is banned by all the city-states and punishable by exile, even death. In tribute to the hinds' fire breath, a common punishment for poachers is a trial by fire; if they survive the flames, they're allowed to live in exile.</p><h2>Chasing the Hind</h2><p>Chasing down and catching an Iblydan hind is a well-known rite of passage for Iblydan heroes and hero-gods, who often use this as a test of their speed and stamina. \"Hind catching\" is also a common game at festivals, with a dog or deer standing in for the hind, and golden antlers are a popular hair accessory at these events. Heroes aim to catch and release the hind without harming it; however, some who pursue Iblydan hinds do so with darker motivations, as the creatures' golden antlers fetch a high price on the black market.</p>",
       "items": {
@@ -431,6 +748,41 @@
       },
       "name": "Keribos"
     },
+    "Kerinelopas": {
+      "description": "<p>Simultaneously enamored with the natural world yet too alien to survive in it, blood painters are eight-limbed artists who stalk, kill, and dismember in search of pigment and sustenance alike. Blood painter physiology can't digest typical food, so the creatures feed by harvesting blood and using it to paint and animate something edible.</p>\n<p>When not on the hunt, blood painters seek out beautiful vistas, which they placidly admire via the eyes in the hands of their uppermost limbs and then reproduce on canvas. Exceptional art endlessly fascinates these creatures, and skilled dancers and painters alike occasionally escape the aberrations by creating a new work to trade for their lives. Blood painters jealously guard these works, and much of their treasure consists of art. Blood painters tend to mastermind the periodic theft of masterpieces.</p>",
+      "items": {
+        "49TebdoZrVR7bJei": {
+          "name": "Art Lore"
+        },
+        "KbRk42Ska9TyPynC": {
+          "description": "<p><strong>Requirements</strong> Kerinelopas is within reach of an enemy taking persistent bleed damage</p><hr /><p><strong>Effect</strong> Kerinelopas touches the creature and applies blood to one of his four claws; the blood remains fresh for 1 minute. The target must succeed at a @Check[will|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with Kerinelopas.</p>",
+          "name": "Dab"
+        },
+        "QeGks9jOjqzdzWci": {
+          "description": "<p>Kerinelopas can detect exposed blood as an imprecise sense at the listed range, including from creatures taking persistent bleed damage.</p>",
+          "name": "Bloodsense (Imprecise) 60 feet"
+        },
+        "RcHSgAM2xaq0Lve5": {
+          "description": "<p>When subject to a visual illusion with the incapacitation trait, Kerinelopas doesn't adjust his degree of success due to the incapacitation trait.</p>",
+          "name": "Easily Fascinated"
+        },
+        "SIsSoieJyT6NvTOu": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Kerinelopas ends one condition affecting him.</p>",
+          "name": "Remove a Condition"
+        },
+        "Vsv36iP3BjY1rHBr": {
+          "name": "Claw"
+        },
+        "YHGB15Pv0RjYpZWg": {
+          "name": "Mythic Power"
+        },
+        "oX5mS0nonoT9j23k": {
+          "description": "<p><strong>Requirements</strong> Kerinelopas has fresh blood applied to a claw using Dab</p><hr /><p><strong>Effect</strong> Kerinelopas expends the blood on one claw to paint an illusion with the effects of one of the following spells: @UUID[Compendium.pf2e.spells-srd.Item.3JG1t3T4mWn6vTke]{Blur}, @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature}, @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}, or @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]{Illusory Object}. The Paint action gains the traits of the spell it's reproducing, and Kerinelopas can Sustain a Spell on these effects. He uses a spell attack modifier of +20 and DC 28 for these effects, which are heightened to 5th rank.</p>\n<p>If he has fresh blood applied to two or more claws, Kerinelopas can expend the blood on all of them to instead produce the effects of @UUID[Compendium.pf2e.spells-srd.Item.TCk2MDwf5L5OYjFC]{Cloak of Colors} or @UUID[Compendium.pf2e.spells-srd.Item.RQjSQVZRG497cJhX]{Vibrant Pattern}.</p>\n<p>Any effects produced by this ability have a +2 status bonus to attack rolls, damage rolls, saving throws, skill checks, and AC against the creature whose blood was used to Paint, and that creature takes a –2 status penalty to Perception checks and saves against it.</p>",
+          "name": "Paint"
+        }
+      },
+      "name": "Kerinelopas"
+    },
     "Lava Spitter": {
       "description": "<p>The archipelago of Iblydos is quite geologically active, with sinkholes, volcanoes, and lava fissures pockmarking many of the islands. The island's more industrious inhabitants have created methods to tap into this power to heat their cities and water supply. Unfortunately, these public works require a level of maintenance not every city-state can afford or has the engineering acumen to perform successfully. In addition, several ancient city-state governments that employed such technology failed long ago, leaving behind sprawling networks of pipes and tunnels that either no longer function or are on the precipice of failure. When these systems fail, the result is often catastrophic to any living creatures in the area, not to mention to the overall infrastructure and civic property.</p>\n<p>To combat this, a group of engineer-minded hero-gods tried to develop mechanical creatures that could not only survive the tremendous heat in these networks but feed on it. They imagined deploying these constructs into damaged geothermal systems where they could repair the structures and be used again. They designed the constructs with serpentine bodies to easily move about the narrow pipes and tunnels. That the constructs could consume and be fueled by the dangerous debris they cleared was a bonus intended to maintain the network of tunnels so they didn't fall into disrepair.</p>\n<p>A few of these constructs operate as intended, but many rebelled against their creators, causing massive damage to any place where they were deployed. Dubbed lava spitters, these constructs now roam the pipes and tunnels beneath cities, their red-hot bellies scorching the ground wherever they crawl.</p><h2>Fire Giant Friends</h2><p>With their ability to crawl through small areas and an understanding of how to clean out blockages and slag, lava spitters have developed a symbiotic relationship with fire giants in their settlements. The giants appreciate the work the creatures do and have little fear of being harmed by them, while the lava spitters are happy to frolic in the giants' forges. Some fire giants even keep the little creatures as pets. It has become the height of fashion among fire giant royalty to have lava spitters curl around their fingers like rings.</p>",
       "items": {
@@ -459,6 +811,97 @@
       },
       "name": "Lava Spitter",
       "npcHp": "fiery healing"
+    },
+    "Leviathan Louse": {
+      "description": "<p>Particularly enormous and ancient creatures from the Plane of Earth often find difficulty keeping their bodies mobile; over time, slow-growing crystals glue limbs together, gravel clogs the joints, and countless other maladies gradually inhibit their already limited flexibility. While good hygiene can help, these routines can be unfeasible for particularly massive entities who spend much of their lives inert, in hibernation, or far from an ideal mountain to itch against. Enter the strange and unsettling leviathan louse. These stone-hungry creatures resemble their smaller, more mundane cousins with bumpy, iridescent exoskeletons, but they're individually the size of a horse. Colonies of leviathan lice form symbiotic relationships with massive, rocky earth elementals, feeding on their rocky barnacles and (often literal) veins of minerals, in exchange for keeping their host clean.</p>\n<p>While they have little interest in feeding upon creatures closer to their own size, leviathan lice are quick to defend their territory, biting enemy combatants with massive mandibles or swiping with spiny forelegs. Rarely does a louse stray far from its host or find its way to planets like Golarion, but left to its own devices, it can reduce a rich mine to a crumbling, empty cavern in a matter of weeks.</p>\n<p>An adult leviathan louse is about 9 feet long and weighs between 1,500 and 2,100 pounds, though larger specimens raised on a plentiful, supernatural diet of strange ores or stone do exist. An adult lays eggs in crevices in the host's exterior. The larvae grow slowly, molting at least six times before reaching adulthood after several decades. These cast-off molts occasionally contain trace amounts of valuable metal that an industrious prospector might recover.</p><h2>Exterminating Lice</h2><p>As part of their invasion of the Plane of Metal, denizens of the Plane of Earth attempted to weaponize leviathan lice to simply eat the enemy's fortifications. This didn't endear them to the inhabitants of the Plane of Metal. Removed from their normal environments and deliberately starved, the leviathan lice devastated both architecture and local populations with their insatiable appetite for iron. Farmers, miners, and jewelers see little practical distinction between leviathan lice and their water-walking ore lice cousins, moving to eradicate any they see on sight.</p>",
+      "items": {
+        "Kz60bBUkEFdBzBTP": {
+          "description": "<p><strong>Requirements</strong> The leviathan louse is touching unworked stone or is on its host body</p><hr /><p><strong>Effect</strong> The leviathan louse anchors itself in place, granting itself a +2 circumstance bonus against effects to move or trip it. It cannot take move actions. This effect lasts until the start of the leviathan louse's next turn.</p>",
+          "name": "Cling"
+        },
+        "TH63GFXTWbtna7ai": {
+          "name": "Mandibles"
+        },
+        "defD1CqaJEA75PaH": {
+          "description": "<p><strong>Trigger</strong> A creature the leviathan louse had @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} successfully Escapes</p><hr /><p><strong>Effect</strong> The leviathan louse makes a foreleg Strike against the triggering creature.</p>",
+          "name": "Snagging Spines"
+        },
+        "kN1siWCIgnUWQDT3": {
+          "name": "Foreleg"
+        },
+        "p4wyps4FhtV4i44z": {
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The leviathan louse is using Cling to adhere to unworked stone</p><hr /><p><strong>Effect</strong> The leviathan louse selects one square it occupies to drain of stony sustenance. It regains @Damage[15[healing]] Hit Points, gaining any excess HP as temporary Hit Points that last for 1 hour. The resulting rubble becomes difficult terrain.</p>",
+          "name": "Consume Stone"
+        }
+      },
+      "name": "Leviathan Louse"
+    },
+    "Living Statue": {
+      "description": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Many less scrupulous adventurers, fueled by paranoia that statues will animate and attack, smash any statues they encounter, ruining harmless, ancient relics.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+      "items": {
+        "VYK3ix2hBaIvUNXp": {
+          "name": "Fist"
+        },
+        "dkfqFFDoPeLbQKNp": {
+          "description": "<p>Like normal objects, an animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once an animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 19.</p>",
+          "name": "Construct Armor (Hardness 8)"
+        }
+      },
+      "name": "Living Statue",
+      "npcAc": "(19 when broken); construct armor"
+    },
+    "Mammoth Squid": {
+      "description": "<p>Not all stories of tentacled horrors the size of ships trace their origins to krakens. Many are linked instead to mammoth squid. While they rival krakens in size, mammoth squids have animal intellect and motivation, operating off of instinct and hunger rather than a willful urge to dominate lesser creatures. Thus, victims can't beg for their lives or bargain for peace, though a vast quantity of food might distract a mammoth squid.</p>\n<p>Mammoth squids tend to live as solitary creatures in the deepest reaches of the ocean, and when they move against ships on the surface above, it is often the result of being pushed out of their territories by even more dangerous dwellers below, supernatural manipulation, or a compulsion to seek new domains when their deep hunting grounds are scarce of prey.</p><h2>Other Squids</h2><p>Squids are a well-known oceanic predator, but most are much smaller than the mammoth squid. Even the notorious giant squid is only a fraction of the mammoth squid's size. At the other end of the scale, beyond mere animalistic dangers of the depths, krakens often regard mammoth squids as pawns to train and manipulate as guardians or pets—or merely as yet another thing to feast upon.</p>",
+      "items": {
+        "1fHUwSjOQmMI9RNv": {
+          "description": "<p>@Damage[(2d12+14)[bludgeoning]], @Check[fortitude|dc:34|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "2l94DFb0q9pCWiM2": {
+          "description": "<p><strong>Requirements</strong> The mammoth squid is within 20 feet of a capsized vessel</p><hr /><p><strong>Effect</strong> The mammoth squid wraps its arms around the capsized vessel, then squeezes, causing the vessel's hull to splinter and crack. It inflicts @Damage[10d10[bludgeoning]] damage to the vessel (@Check[fortitude|dc:34|basic] save). This damage treats the vessel's Hardness as if it had half as much as usual, unless the vessel's Hardness is greater than the mammoth squid's level. If the vessel takes damage, all creatures on board the vessel take @Damage[5d10[piercing]] damage from splintering fragments (@Check[reflex|dc:31|basic] save).</p>",
+          "name": "Crack Hull"
+        },
+        "86ERf6iVfU784sYz": {
+          "description": "<p>The mammoth squid tries to capsize an adjacent aquatic vessel of its size or smaller. It must succeed at a @Check[athletics|dc:40] check (reduce the DC by 10 for each size smaller the vessel is than the mammoth squid) or the pilot's Sailing Lore DC, whichever is higher.</p>",
+          "name": "Capsize"
+        },
+        "DX9V3HrbJB3n1EFc": {
+          "name": "Tentacle"
+        },
+        "GNkLyCaVuJImqSfF": {
+          "description": "<p>The mammoth squid makes up to four Strikes, each with a different arm and against a different target. Each arm Strike counts separately for the squid's multiple attack penalty, but the penalty doesn't increase until the squid has made all of its arm strikes. If the squid attempts to Grab a creature it hits with one of these arm Strikes (after all Strikes are resolved), the squid gains a +4 circumstance bonus to its Athletics check.</p>",
+          "name": "Thrashing Tentacles"
+        },
+        "KHgyk45h3LM9eHgi": {
+          "name": "Arm"
+        },
+        "X8IEe3EWuejqYWp1": {
+          "description": "<p>The mammoth squid moves up to 300 feet in a straight line through the water without triggering any reactions.</p>",
+          "name": "Jet"
+        },
+        "dlCAGJqkYDe77K5v": {
+          "name": "Beak"
+        }
+      },
+      "name": "Mammoth Squid"
+    },
+    "Merfolk Wavecaller": {
+      "items": {
+        "CDbIIBvK8gqyuK7r": {
+          "description": "<p><strong>Trigger</strong> The merfolk or a creature under the effect of their Storm Song within 60 feet is targeted by a spell or auditory effect</p><hr /><p><strong>Effect</strong> The merfolk sings a warbling tune reminiscent of a drowning creature. They attempt a @Check[performance] check to counteract the triggering spell or effect. The merfolk can't use this ability again for [[/gmr 1d4 #Recharge this ability]]{1d4 rounds}.</p>",
+          "name": "Drowning Melody"
+        },
+        "bMO9D5neYQp65YQX": {
+          "description": "<p>The merfolk sings a discordant tune that buffets the senses like a raging thunderstorm. Non-merfolk creatures in a @Template[type:emanation|distance:120] must attempt a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. The creature can't target merfolk while confused in this way. If the merfolk uses this ability again on subsequent rounds, they extend the duration by 1 round for all affected creatures. Once a creature succeeds at any save against Storm Song, that creature is temporarily immune to Storm Song for 24 hours.</p>",
+          "name": "Storm Song"
+        },
+        "h8MrLyMY4AnHeQsT": {
+          "name": "Truespeech (Constant)"
+        },
+        "pJ298TIVGNhJmcOn": {
+          "name": "Claw"
+        }
+      },
+      "name": "Merfolk Wavecaller"
     },
     "Metal Scamp": {
       "description": "<p>The capricious and destructive metal scamps are self-appointed forces of entropy, taking great pleasure in indiscriminately wrecking everything around them, sometimes even to their own detriment. Metal scamps have a severe appearance, with pointed facial features and angular limbs, and their skin can be the color of any metal, often heavily oxidized as if by years of exposure to the elements.</p>",
@@ -504,6 +947,28 @@
         }
       },
       "name": "Molted Reefclaw"
+    },
+    "Mutated Centaur": {
+      "description": "<p>Centaurs are legendary hunters and trackers who resemble heavily muscled humans with the bodies of powerful horses from the waist down. They are typically nomadic and consider themselves the stewards of the surrounding landscapes. While stories of bloody clashes between centaurs and humanoid travelers are well known, centaurs are neither intrinsically bloodthirsty nor recklessly aggressive. Rather, they are proud and stubborn and do not take kindly to outsiders who seeks to plunder the natural resources of the areas in which their communities have lived, some of which have been home to centaurs for thousands of years. Against despoilers of nature who fail to heed their warnings, centaurs do not hesitate to use their finely honed hunting skills to inflict deadly wounds.</p>\n<p>Centaurs train with weapons as well as their heavy hooves, and the thunder of centaurs charging across the plains is often mistaken for a stampede or even an earthquake. Despite the tight bonds they form with their kin, some centaurs establish close alliances with elves, fey, gnomes, and isolated human communities. Such allies often benefit by learning from the centaurs' extensive knowledge of herbalism and wilderness survival. While centaurs enjoying traveling, most find it difficult to cut ties with their families and leave their bands to seek adventure in the wider world.</p>\n<p>Centaurs have incredible variation in their individual size and coloration. Their upper torsos share the same variation in skin tone as other humanoids of their region, but their lower bodies—like those of horses—can vary widely from parent to child. Most centaurs are at least 7 feet tall and weigh more than 2,000 pounds.</p>\n<p>Centaurs live in groups of dozens of members, usually led by an individual who has carried out many noble deeds and earned a lifetime of respect from their comrades. The revered leader guides the habits of their entire group; a wise seer might encourage the clan to roam far from civilization to preserve some unspoiled terrain, while an aggressive warrior might foster skirmishes with nearby humanoid settlements and rival centaur groups.</p>",
+      "items": {
+        "2ldY6wOHH2oha7r4": {
+          "name": "Mythic Power"
+        },
+        "3imNg7xVuj0PzZwp": {
+          "description": "<p>The centaur unleashes a series of swift, savage kicks. They make two hoof Strikes against the same target. The centaur's multiple attack penalty doesn't increase until after it makes both attacks. If both attacks hit, the target is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+          "name": "Hoof Avalanche"
+        },
+        "c55JBBjveX6wkHBT": {
+          "name": "Mythic Skill (Athletics)"
+        },
+        "h8HPqnXI3dI7KFxV": {
+          "name": "Hoof"
+        },
+        "ihI9TF3YdNJFYytf": {
+          "description": "<p>Medium or smaller, hoof, @Check[reflex|dc:24|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+        }
+      },
+      "name": "Mutated Centaur"
     },
     "Mythic Hippogriff": {
       "description": "<p>With the proud bearing of a great raptor and the magnificence of a powerful horse, hippogriffs are thought to be an accidental fusion of creatures or perhaps the creation of a flesh-warping wizard with a keen aesthetic sense. Regardless of their original source, these animals are now a common sight in the skies above their favored plains or hill country.</p>\n<p>Hippogriffs bear the wings, forelegs, and head of a bird of prey, with feather coloration similar to that of a hawk or eagle, though some breeders have managed to produce specimens with stark white or coal-black feathers. Their torso, hindquarters, and tail resemble those of a horse and usually are colored bay, chestnut, or gray, with some coats bearing black, pinto, or even palomino coloration.</p>\n<p>Hippogriffs are similar in size to large horses. Much like their equine cousins, hippogriffs often have to keep wary eyes on the skies above them, as both are preferred meals for hungry griffons and wyverns. Only hippogriffs' superior speed helps protect them from these predators.</p>\n<p>Hippogriffs are exceptionally territorial and fiercely protect the lands under their domain. They typically favor sweeping grasslands, rolling hills, and prairies. Exceptionally hardy hippogriffs make their homes nestled into niches on canyon walls, from which they comb the rocky deserts for coyotes, deer, and the occasional humanoid. Hippogriffs prefer mammalian prey, but they graze after every meal to aid in digestion.</p>\n<p>Since hippogriff hunting habits can be dangerous to both ranchers and their livestock, such communities often set bounties on hippogriffs. As a result, preserved hippogriffs frequently decorate frontier taverns and remote outposts alongside the taxidermied remains of deer, elk, and bears.</p>\n<p>However, other communities train hippogriffs from hatching to be ridden by elite soldiers in combat—the most notable among these groups in the Inner Sea region is the Sable Company Mercenaries in the city-state of Korvosa. Attempts are sometimes made to train adult hippogriffs in the same manner, but this often proves far more difficult. Hippogriff riders must use special saddles and combat techniques that allow them to act in concert with their mount, fighting effectively while avoiding interfering with the movement of their companion's wings.</p>",
@@ -642,6 +1107,186 @@
       },
       "name": "Omorphos"
     },
+    "Painted Griffon": {
+      "description": "<p>This mindless construct takes the form of a two-dimensional portrait given life or an illustration painted in three dimensions with magical pigments.</p><h2>Painted Treasure</h2><p>A painted creature's gear is part of the creature and is also made of magical paint. Such gear can't be disarmed. If the painted creature drops any gear, the item melts into a glob of paint a moment later—after dealing damage, for thrown and projectile weapons. Painted gear (including ammunition) is restored to a painted creature automatically 24 hours after it's lost. At the GM's discretion, a talented PC artist might rescue a painted item by immediately and successfully Repairing it, using a hard DC of the painted creature's level. This might allow PCs to recover a unique (even magical) item that existed only in the original artist's imagination.</p><h2>Painted Behavior</h2><p>Painted creatures typically adopt the behaviors of whatever they resemble. This results in creatures like a painted sheep bleating worriedly and grazing, even though any grasses consumed sit inertly inside its improvised belly before eventually seeping though its body and plopping on the ground.</p>\n<p>Intelligent creatures animated in this way sometimes develop a limited vocabulary. However, the construct remains mindless, their utterances follow only the most simplistic logic, and their words fall short of anything that could be considered conversation. With careful instruction, such constructs can perform mundane chores.</p>",
+      "items": {
+        "08GRcTwLxIFwhZk8": {
+          "description": "<p>Like normal objects, a painted griffon has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a painted griffon is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 19.</p>",
+          "name": "Construct Armor (Hardness 4)"
+        },
+        "SI5jarWfWhH837Gm": {
+          "description": "<p>The painted griffon Strides and makes a talon Strike at the end of that movement. If the griffon began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after the attack.</p>",
+          "name": "Pounce"
+        },
+        "YnG338k1iHzQ3qKg": {
+          "description": "<p>The painted griffon Flies up to its fly Speed and makes two talon Strikes at any point during that movement. Each Strike must target a different creature. The attacks take the normal multiple attack penalty.</p>",
+          "name": "Flying Strafe"
+        },
+        "cVINxDWgdX2jqTkF": {
+          "name": "Wing"
+        },
+        "l3xFMkR7otRpabdl": {
+          "name": "Beak"
+        },
+        "tco6Eq87tIBrRvHY": {
+          "name": "Talon"
+        }
+      },
+      "name": "Painted Griffon"
+    },
+    "Painted Landscape": {
+      "description": "<p>Resembling a large mural, a painted landscape attacks by animating the very landscape it depicts: trees, castles, or even snow-capped mountains.</p><hr /><p>This mindless construct takes the form of a two-dimensional portrait given life or an illustration painted in three dimensions with magical pigments.</p><h2>Painted Treasure</h2><p>A painted creature's gear is part of the creature and is also made of magical paint. Such gear can't be disarmed. If the painted creature drops any gear, the item melts into a glob of paint a moment later—after dealing damage, for thrown and projectile weapons. Painted gear (including ammunition) is restored to a painted creature automatically 24 hours after it's lost. At the GM's discretion, a talented PC artist might rescue a painted item by immediately and successfully Repairing it, using a hard DC of the painted creature's level. This might allow PCs to recover a unique (even magical) item that existed only in the original artist's imagination.</p><h2>Painted Behavior</h2><p>Painted creatures typically adopt the behaviors of whatever they resemble. This results in creatures like a painted sheep bleating worriedly and grazing, even though any grasses consumed sit inertly inside its improvised belly before eventually seeping though its body and plopping on the ground.</p>\n<p>Intelligent creatures animated in this way sometimes develop a limited vocabulary. However, the construct remains mindless, their utterances follow only the most simplistic logic, and their words fall short of anything that could be considered conversation. With careful instruction, such constructs can perform mundane chores.</p>",
+      "items": {
+        "FvELwwfYjjf4fTJw": {
+          "description": "<p>Like normal objects, a painted landscape has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a painted landscape is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 26.</p>",
+          "name": "Construct Armor (Hardness 15)"
+        },
+        "JwhR4MmH4oJvZE2c": {
+          "name": "Branch"
+        },
+        "ULEPdCzpusplO8WZ": {
+          "description": "<p>A painted landscape's Strikes splatter paint on the target. On a critical hit, this paint swiftly dries, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 10 minutes. As an Interact action, the target or an adjacent creature can remove enough paint to end the condition.</p>",
+          "name": "Sticky Paint"
+        },
+        "UsLramUVwpvnF31u": {
+          "description": "<p><strong>Requirements</strong> A creature died while engulfed by the painted landscape</p><hr /><p><strong>Effect</strong> The painted landscape absorbs the creature, causing the creature's likeness to appear in the mural. Any gear carried by the dead creature remains left behind (but still appears as part of the painting). The painted landscape regains @Damage[(2d6+20)[healing]] HP when it absorbs a creature.</p>",
+          "name": "Painted Replica"
+        },
+        "dAS4t2JVwVAvBfxE": {
+          "description": "<p>Until the next time it acts, the animated landscape appears to be a mural on a flat surface that's at least 10 by 20 feet in area. It has an automatic result of 42 on Deception checks and DCs to pass as a mural.</p>",
+          "name": "Mural"
+        },
+        "oVaQS0qsziV00K2C": {
+          "description": "<p>@Check[reflex|dc:29], @Damage[(6d6)[bludgeoning]] damage, Escape DC 29, Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+        }
+      },
+      "name": "Painted Landscape"
+    },
+    "Painted Pontifex": {
+      "description": "<p>This portrait of a priest parrots mindless devotions, attacking anything that interrupts its worship.</p><hr /><p>This mindless construct takes the form of a two-dimensional portrait given life or an illustration painted in three dimensions with magical pigments.</p><h2>Painted Treasure</h2><p>A painted creature's gear is part of the creature and is also made of magical paint. Such gear can't be disarmed. If the painted creature drops any gear, the item melts into a glob of paint a moment later—after dealing damage, for thrown and projectile weapons. Painted gear (including ammunition) is restored to a painted creature automatically 24 hours after it's lost. At the GM's discretion, a talented PC artist might rescue a painted item by immediately and successfully Repairing it, using a hard DC of the painted creature's level. This might allow PCs to recover a unique (even magical) item that existed only in the original artist's imagination.</p><h2>Painted Behavior</h2><p>Painted creatures typically adopt the behaviors of whatever they resemble. This results in creatures like a painted sheep bleating worriedly and grazing, even though any grasses consumed sit inertly inside its improvised belly before eventually seeping though its body and plopping on the ground.</p>\n<p>Intelligent creatures animated in this way sometimes develop a limited vocabulary. However, the construct remains mindless, their utterances follow only the most simplistic logic, and their words fall short of anything that could be considered conversation. With careful instruction, such constructs can perform mundane chores.</p>",
+      "items": {
+        "0g1hG8L5fozhdprn": {
+          "description": "<p>Like normal objects, a painted pontifex has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a painted pontifex is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 24.</p>",
+          "name": "Construct Armor (Hardness 13)"
+        },
+        "E9OvM8NFoC9TarsJ": {
+          "description": "<p>The painted pontifex Reloads and Strikes with its sling. The Strike deals 4d6 bludgeoning splash damage.</p>",
+          "name": "Paint Bomb"
+        },
+        "Gx4UM92EC7VaNbag": {
+          "description": "<p>A painted pontifex's Strikes splatter paint on the target. On a critical hit, this paint swiftly dries, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 10 minutes. As an Interact action, the target or an adjacent creature can remove enough paint to end the condition.</p>",
+          "name": "Sticky Paint"
+        }
+      },
+      "name": "Painted Pontifex"
+    },
+    "Painted Ram": {
+      "description": "<p>This mindless construct takes the form of a two-dimensional portrait given life or an illustration painted in three dimensions with magical pigments.</p><h2>Painted Treasure</h2><p>A painted creature's gear is part of the creature and is also made of magical paint. Such gear can't be disarmed. If the painted creature drops any gear, the item melts into a glob of paint a moment later—after dealing damage, for thrown and projectile weapons. Painted gear (including ammunition) is restored to a painted creature automatically 24 hours after it's lost. At the GM's discretion, a talented PC artist might rescue a painted item by immediately and successfully Repairing it, using a hard DC of the painted creature's level. This might allow PCs to recover a unique (even magical) item that existed only in the original artist's imagination.</p><h2>Painted Behavior</h2><p>Painted creatures typically adopt the behaviors of whatever they resemble. This results in creatures like a painted sheep bleating worriedly and grazing, even though any grasses consumed sit inertly inside its improvised belly before eventually seeping though its body and plopping on the ground.</p>\n<p>Intelligent creatures animated in this way sometimes develop a limited vocabulary. However, the construct remains mindless, their utterances follow only the most simplistic logic, and their words fall short of anything that could be considered conversation. With careful instruction, such constructs can perform mundane chores.</p>",
+      "items": {
+        "08GRcTwLxIFwhZk8": {
+          "description": "<p>Like normal objects, a painted ram has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a painted ram is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 23.</p>",
+          "name": "Construct Armor (Hardness 11)"
+        },
+        "G5T9A3xEE0HSO0br": {
+          "description": "<p>A painted ram's Strikes splatter paint on the target. On a critical hit, this paint swiftly dries, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 10 minutes. As an Interact action, the target or an adjacent creature can remove enough paint to end the condition.</p>",
+          "name": "Sticky Paint"
+        },
+        "JrO0iowuWROhyTaO": {
+          "description": "<p>The painted ram Strides up to two times, then makes a horn Strike with Improved Knockdown.</p>",
+          "name": "Ramming Charge"
+        },
+        "PbDorUwx7i4iTSeR": {
+          "name": "Hoof"
+        },
+        "azx5z62BgYQvtCIR": {
+          "name": "Horn"
+        }
+      },
+      "name": "Painted Ram"
+    },
+    "Painted Soldier": {
+      "description": "<p>A painted soldier is clad in colorful armor and bristles with weapons.</p><hr /><p>This mindless construct takes the form of a two-dimensional portrait given life or an illustration painted in three dimensions with magical pigments.</p><h2>Painted Treasure</h2><p>A painted creature's gear is part of the creature and is also made of magical paint. Such gear can't be disarmed. If the painted creature drops any gear, the item melts into a glob of paint a moment later—after dealing damage, for thrown and projectile weapons. Painted gear (including ammunition) is restored to a painted creature automatically 24 hours after it's lost. At the GM's discretion, a talented PC artist might rescue a painted item by immediately and successfully Repairing it, using a hard DC of the painted creature's level. This might allow PCs to recover a unique (even magical) item that existed only in the original artist's imagination.</p><h2>Painted Behavior</h2><p>Painted creatures typically adopt the behaviors of whatever they resemble. This results in creatures like a painted sheep bleating worriedly and grazing, even though any grasses consumed sit inertly inside its improvised belly before eventually seeping though its body and plopping on the ground.</p>\n<p>Intelligent creatures animated in this way sometimes develop a limited vocabulary. However, the construct remains mindless, their utterances follow only the most simplistic logic, and their words fall short of anything that could be considered conversation. With careful instruction, such constructs can perform mundane chores.</p>",
+      "items": {
+        "JTFBKdFKUI9DPiuj": {
+          "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p><table class=\"pf2e remaster\"><thead><tr><th>Hardness</th><th>HP</th><th>BT</th></tr></thead><tbody><tr><td>5</td><td>25</td><td>13</td></tr></tbody></table>",
+          "name": "Shield"
+        },
+        "NjYJPnSmE9jk7qKq": {
+          "_source": "pf2e.equipment-srd.Item.JNt7GmLCCVz5BiEI"
+        },
+        "OnmRWR30x5qiFyct": {
+          "_source": "pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS"
+        },
+        "nUIYm3XJ06070srm": {
+          "_source": "pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY"
+        },
+        "wipnx33XLuF2ghVc": {
+          "description": "<p>A painted soldier's Strikes splatter paint on the target. On a critical hit, this paint swiftly dries, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 10 minutes. As an Interact action, the target or an adjacent creature can remove enough paint to end the condition.</p>",
+          "name": "Sticky Paint"
+        },
+        "zM82p4yz1lSKUxsE": {
+          "description": "<p>Like normal objects, a painted soldier has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a painted soldier is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 21.</p>",
+          "name": "Construct Armor (Hardness 9)"
+        }
+      },
+      "name": "Painted Soldier",
+      "npcAc": "(21 when broken)"
+    },
+    "Painted Soldier (Ominous Graffiti)": {
+      "description": "<p>A painted soldier is clad in colorful armor and bristles with weapons.</p><hr /><p>This mindless construct takes the form of a two-dimensional portrait given life or an illustration painted in three dimensions with magical pigments.</p><h2>Painted Treasure</h2><p>A painted creature's gear is part of the creature and is also made of magical paint. Such gear can't be disarmed. If the painted creature drops any gear, the item melts into a glob of paint a moment later—after dealing damage, for thrown and projectile weapons. Painted gear (including ammunition) is restored to a painted creature automatically 24 hours after it's lost. At the GM's discretion, a talented PC artist might rescue a painted item by immediately and successfully Repairing it, using a hard DC of the painted creature's level. This might allow PCs to recover a unique (even magical) item that existed only in the original artist's imagination.</p><h2>Painted Behavior</h2><p>Painted creatures typically adopt the behaviors of whatever they resemble. This results in creatures like a painted sheep bleating worriedly and grazing, even though any grasses consumed sit inertly inside its improvised belly before eventually seeping though its body and plopping on the ground.</p>\n<p>Intelligent creatures animated in this way sometimes develop a limited vocabulary. However, the construct remains mindless, their utterances follow only the most simplistic logic, and their words fall short of anything that could be considered conversation. With careful instruction, such constructs can perform mundane chores.</p>",
+      "items": {
+        "JTFBKdFKUI9DPiuj": {
+          "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p><table class=\"pf2e remaster\"><thead><tr><th>Hardness</th><th>HP</th><th>BT</th></tr></thead><tbody><tr><td>5</td><td>25</td><td>13</td></tr></tbody></table>",
+          "name": "Shield"
+        },
+        "v5U91sDK7GgJV3JB": {
+          "description": "<p>When a painted soldier uses a ranged Strike, the ammunition or weapon (if thrown) becomes a smear of paint. It deals damage normally, and a creature struck by it becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a –5-foot circumstance penalty to their Speed for 10 minutes. The paint can be removed with a total of 3 Interact actions by the creature or an adjacent ally.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.qrsvaUIMdC0Uq9fQ]{Effect: Matting Paint}</p>",
+          "name": "Matting Paint"
+        },
+        "zM82p4yz1lSKUxsE": {
+          "description": "<p>Like normal objects, a painted soldier has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a painted soldier is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 21.</p>",
+          "name": "Construct Armor (Hardness 8)"
+        }
+      },
+      "name": "Painted Soldier (Ominous Graffiti)"
+    },
+    "Pendidia": {
+      "description": "<p>Naiads protect streams, ponds, springs, and other natural bodies of fresh water. While most naiads lead solitary lives close to their chosen home, sometimes they congregate in coven-like groups where river tributaries meet, performing great magic and blessing the waters of the land. Because naiads' bonds to their bodies of water permit more flexibility, they are the nymphs most likely to interact with humanoids—and even visit their settlements on occasion. Unlike other nymphs, naiads occasionally become adventurers, especially when dark forces seek to despoil nature or otherwise threaten the land, joining forces with others to prevent the corruption of the natural world.</p>\n<hr />\n<p>Nymphs are a family of fey that take the form of beautiful humanoids with elven features and have a deep association with the natural world. The most common of their kind are the dryads, which are spirits that embody great trees, but many other kinds of nymphs exist, including naiads, who watch over bodies of water. All nymphs are guardians of some element of nature, typically a specific tree or pond, or even-in the case of nymph queens-whole forests or massive bodies of water</p>",
+      "items": {
+        "6n2RKV83nSvYEFMa": {
+          "name": "Tidal Surge (At Will)"
+        },
+        "D5NqTybJ0zOMd6MK": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Pendidia regains one spell.</p>",
+          "name": "Recharge Spell"
+        },
+        "PqCwujHs9ZmleeZW": {
+          "name": "Mythic Power"
+        },
+        "WIHK77N13bnY09Iq": {
+          "name": "Aqueous Fist"
+        },
+        "XQKbqAKqILs3dbvQ": {
+          "description": "<p>A naiad is bonded to a spring, pond, or similar-sized water feature. If she is more than 300 feet away from it for 24 hours or more, she gains the weak adjustments until she returns. She can perform a 24-hour ritual to bond herself to a new body of water.</p>",
+          "name": "Water Dependent"
+        },
+        "mwp4IZXtO7uw523C": {
+          "name": "Water Orb"
+        },
+        "pierbtX4A7T0eEEN": {
+          "name": "Mythic Resilience (Reflex and Will)"
+        },
+        "qd9QFtwsgr9c7yLU": {
+          "description": "<p>For every 10 minutes a naiad spends soaking in her bonded body of water, she regains @Damage[45[healing]] Hit Points.</p>",
+          "name": "Water Healing"
+        },
+        "rL7A4RH2uX8GGbWM": {
+          "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals.</p>",
+          "name": "Animal Empathy"
+        }
+      },
+      "name": "Pendidia"
+    },
     "Phermeina": {
       "description": "<p>With living snakes for hair, sthenos, who are descended from medusas, are a curious and independent ancestry. A newly emergent people, sthenos have existed for just barely over a century. Only a few generations have passed since their genesis, and some adult sthenos remember members of the original generation. Indeed, since sthenos can live about as long as humans, a few of the original sthenos might yet live somewhere. As a people without a traditional homeland, sthenos seek to find societies that welcome them, which can be a challenging endeavor. With more than</p>\n<p>a passing resemblance to medusas, given their ophidian hair and striking features, they find most places are wary if not outright hostile to their presence.</p>\n<p>All sthenos descend from a single woman of the same name. Stheno rebelled against the poisoned gift of nightmares that the goddess Lamashtu granted her sisters, the powerful medusa matriarchs known as euryales. Stheno prayed to Shelyn, goddess of art and love, for help in overcoming her twisted birthright. Eventually, Lamashtu's power struck Stheno down, but Stheno's remaining faith and will imbued each of the hundred snakes from her hair with a mind and will of its own. Each snake grew into an individual stheno, and a new ancestry was born that day.</p>\n<p>Sthenos have been slowly spreading across the land, their numbers growing as they can have children with humans. In these families, children of all genders are born either fully human or fully stheno, seemingly at random. Sthenos with a welcoming community to call home tend toward large families with many children, perhaps from some survival instinct as early members of a new ancestry.</p>\n<p>Sthenos, unsurprisingly, have a great love for snakes, and they tend to keep other snakes as pets and companions to their hair. Stheno hair snakes are non-venomous and love to eat insects within their reach. They are semi-autonomous, though their behaviors are colored by the stheno's emotions. An angry stheno might find their snakes lashing out at the subject of their wrath, while an amorous stheno's snakes might just want to snuggle instead.</p>",
       "items": {
@@ -677,6 +1322,55 @@
       "description": "<p>The ground around the lava pit is crumbling and unstable.</p>",
       "hazardDisable": "<p>@Check[survival|dc:18] (trained) to weather the collapse safely; @Check[crafting|dc:20] (trained) to stabilize the ground</p>",
       "name": "Precarious Footing"
+    },
+    "Pteios": {
+      "items": {
+        "2FCbynVB6uX01quK": {
+          "name": "Mythic Power"
+        },
+        "2Zs5LuGiwaYokwV4": {
+          "name": "+1 Vs. Auditory, Divine, Earth, or Visual Effects"
+        },
+        "AH7nsKNO7IFQlC2f": {
+          "name": "Warshard Spear"
+        },
+        "ENGf8Bz9tJGjmzVk": {
+          "name": "Warshard Spear"
+        },
+        "EvAygtv7GPGl1YKd": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Pteios regains one spell.</p>",
+          "name": "Recharge Spell"
+        },
+        "JmLxJpfvQhVHEcc3": {
+          "name": "Chisel"
+        },
+        "OqevC4mumqQIczrP": {
+          "description": "<p>Pteios revels in attacking those whose fates are sealed. If his next action is to Cast a Spell that affects or targets a creature with the slowed condition, it takes a –2 status penalty to its AC or saving throw against that spell. This does not affect other targets of the spell unless they also have the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} condition.</p>",
+          "name": "Encroaching Doom"
+        },
+        "ShbXN8P3h78xNvNk": {
+          "name": "Chisel"
+        },
+        "SnngKLvPrWQr3914": {
+          "name": "Choker of Elocution (Greater; Cyclops, Draconic, Thalassic)"
+        },
+        "SqG4HY11MPD4wsuU": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Pteios channels his medusa parentage, attempting to turn a target to stone. Pteios casts @UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]{Petrify} as an occult spell.</p>",
+          "name": "Petrifying Glare"
+        },
+        "h945s05MGpw55ZmV": {
+          "name": "Warshard Spear"
+        },
+        "kw1D2GBIOSv6DjYh": {
+          "name": "Mythic Resilience (Reflex and Will)"
+        },
+        "uTogeclSBRluyF9F": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Pteios removes any one condition currently affecting him.</p>",
+          "name": "Remove a Condition"
+        }
+      },
+      "name": "Pteios",
+      "npcAllSaves": "+1 vs. auditory, divine, earth, or visual effects; mythic resilience (Ref and Will)"
     },
     "Pyrefowl": {
       "description": "<p>Though sometimes dubbed \"lesser phoenixes,\" the pyrefowl resembles the legendary firebirds in appearance and abilities, yet any direct connection between the two species is entirely anecdotal. A typical specimen resembles a bustard or peafowl with brown, red, and orange feathers. When it's excited, the feathers flicker with incandescence, and an irate pyrefowl can create sparks with a click of its beak or blow burning embers down at a foe with a wingbeat.</p>\n<p>Pyrefowl travel in small flocks for protection, and some hunt collectively by fanning out in a crescent and beating their wings. The resulting heat wave scatters insects and small mammals into the waiting beaks of other fowl. When threatened, a flock might turn this tactic against aggressors, even starting a brush fire to chase off intruders.</p>\n<p>Though they often roost in high places like rooftops in cities or on rocky bluffs and are certainly capable of flight, pyrefowl spend much of their time on the ground standing on their sturdy legs. Though these creatures are protected in some places, in others they're seen as a dangerous nuisance for their tendency to start or spread fires. In these locales, pyrefowl nests are hunted down, and the birds are either scattered or slain. Their beautiful feathers are sometimes harvested for artistic purposes, often decorating fancy clothing and adornments. Pyrefowl lay few eggs, far less than a typical chicken or duck, and in a few regions their eggs are seen as a delicacy and prized by elite cooks who feature them in baked egg dishes or incorporate them into baked goods. Most note the warm and smoky taste, with a slight hint of almond.</p><h2>Fortune and Fireproofing</h2><p>Thanks to their association with its patron phoenix, the city-state of Pol-Bailax extends legal protections to its resident pyrefowl. Harassing or killing the birds is prohibited, though licensed wardens are allowed to harvest naturally shed feathers. Pyrefowl roosting atop one's roof is said to bring good luck to a household, so the Bailaxians build roofs out of clay tiles, slate, or other fire-resistant materials to protect themselves while hoping to lure luck to their homes with small, built-in troughs of grains.</p>",
@@ -732,6 +1426,13 @@
         }
       },
       "name": "Pyrkaion"
+    },
+    "Rage of the Sky Father": {
+      "description": "<p>Ominous storm clouds gather overhead, pulsating with flashes of blue-white lightning.</p>",
+      "hazardDisable": "<p>@Check[religion|dc:23] (trained) to petition Gozreh for safe passage or @Check[arcana|dc:28], @Check[nature|dc:28], or @Check[occultism|dc:28] (expert) to disperse the storm's magical energies. A PC whose voice is exceptionally loud (such as using the @UUID[Compendium.pf2e.spells-srd.Item.W02bHXylIpoXbO4e]{Bullhorn} cantrip) can also attempt to Disable this hazard with a @Check[diplomacy|dc:25] check to convince the Gozren priests that they mean no harm; the priests make a second prayer to dissipate the hazard on the following round, though they're unable to stop the sargassum heaps.</p>",
+      "hazardReset": "<p>The storm clouds disperse once no creature other than those designated by Katlanthe are atop the plateau.</p>",
+      "hazardRoutine": "<p>(1 action) (divine, electricity) A bolt of lightning strikes a @Template[type:burst|distance:10] atop the plateau of the GM's choosing. Creatures in the area take @Damage[(2d10+9)[electricity]|traits:divine|options:area-damage] damage (@Check[reflex|dc:28|traits:divine,electricity] save). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. Creatures designated by Katlanthe within the area are infused with divine energy for 1 round. They gain the electricity trait and immunity to electricity damage, and all their attacks deal an additional 1d6 electricity damage.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.drh6p7VWdByUvRlf]{Effect: Rage of the Sky Father}</p>",
+      "name": "Rage of the Sky Father"
     },
     "Riptide Octopus Swarm": {
       "description": "<p>Riptide octopuses have adapted to these isolated hunting grounds with their strength, pulling themselves hundreds of feet across dry land to check their territory's pools for prey. Under most circumstances, such mollusks are solitary. However, massive scavenging opportunities like a beached whale or a wounded mammal can draw hundreds of these creatures to one place.</p><h2>Eater of Toes</h2><p>The riptide octopus didn't get its name from living in tidal zones but from being more stubborn than a riptide pulling someone out to sea. Beachcombers know not to dip their toes into tidal pools lest a riptide octopus mistake them for prey, and many bear scars that remind them of the dangers of ignoring such advice. Dislodging a hungry riptide octopus sometimes takes extreme measures in the form of a crowbar; fortunately, the octopus's skin is sensitive to fermented fluids like vinegar and wine, and dousing the creature with such concoctions usually encourages it to detach and flee.</p>",
@@ -814,6 +1515,10 @@
       },
       "name": "Sedacthy Scout"
     },
+    "Shaken Loose": {
+      "description": "<p>The Granite Ox shakes off centuries of accumulated earth, flinging the PCs toward its hindquarters.</p>",
+      "name": "Shaken Loose"
+    },
     "Shard's Fury": {
       "description": "<p>Wisps of red energy and violent urges emanate from the crater.</p>",
       "hazardDisable": "<p>@Check[intimidation|dc:18] to overpower the warshard's will, @Check[religion|dc:18] to calm the belligerent miasma</p>",
@@ -870,6 +1575,48 @@
       "npcHp": "Thresholds 34 (3 segments), 17 (2 segments)",
       "npcSpeed": "troop movement"
     },
+    "Sudden Geysers": {
+      "description": "<p>The pooling seawater burbles and hisses.</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:32] or @Check[nature|dc:32] (master) to dissipate the fire-aligned energies in the water, or @Check[diplomacy|dc:28] or @Check[religion|dc:28] to beseech Sangeh and convince her to momentarily tamp down her mythic power; two successes are required to disable the hazard</p>",
+      "hazardRoutine": "<p>(2 actions) The hazard uses each of its actions to create a Blistering Plume centered on a space chosen by the GM. Each successful check to disable the hazard removes one action from this routine.</p>",
+      "name": "Sudden Geysers"
+    },
+    "Swatted Like Flies": {
+      "description": "<p>Feeling the presence of creatures on its backside, the Granite Ox swishes its stone tail to swat them away.</p><p><strong>Escaping</strong> The PCs overcome this hazard by moving out of the area that the Ox's tail can reach. A PC escapes (and is not subject to tail Strikes) by ascending the Ox's sloped back, traveling a distance based on the result of the PC's Reflex save from the Shaken Loose hazard. PCs can Climb up the Ox's back with a successful @Check[athletics|dc:24] check or—by finding and scrambling up improvised paths—a @Check[acrobatics|dc:26], @Check[perception|dc:26], or @Check[survival|dc:26] check. With a successful @Check[acrobatics|dc:20] check, a flying PC can ascend half their fly Speed (or their full Speed on a critical success). PCs can attempt to Disable the hazard whether or not they're in range of the tail.</p>",
+      "hazardDisable": "<p>@Check[acrobatics|dc:26] to scramble out of the way, @Check[deception|dc:24] or @Check[intimidation|dc:24] (trained) to draw the Ox's attention. The DC of the flat check for this round (see Routine) is increased by 4 on a success, or by 8 on a critical success. Increasing the flat check DC to 21 or higher buys the party enough time to move up the Ox's back, disabling the hazard.</p>",
+      "hazardReset": "<p>Once all of the PCs moved outside the tail's striking range, the hazard is effectively disabled. The hazard reactivates if any PC returns to that area.</p>",
+      "hazardRoutine": "<p>(1 action) The Granite Ox makes a tail Strike against one creature in the area. If the attack succeeds, the GM rolls a @Check[flat|dc:9]. On a success, the hazard makes another Strike. The hazard continues making Strikes until the GM fails the flat check.</p>",
+      "name": "Swatted Like Flies"
+    },
+    "Sylirican Phalanx": {
+      "description": "<p>A proper phalanx formation requires the simultaneous use of spear and shield in order to attack enemies near and far while defending each other. Impressive amounts of teamwork are not only beneficial but essential to the survival of the troop</p><hr /><p>A military serves to defend and fight on behalf of nations and can be trained and deployed in various ways.</p>",
+      "items": {
+        "8hhbtRmUrKfrln1a": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The Sylirican phalanx lower their pikes and stab forward. Each enemy in a @Template[type:emanation|distance:10] must attempt a @Check[reflex|dc:30|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+12)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+14)[piercing]|options:area-damage] damage</p>",
+          "name": "Lower Pikes"
+        },
+        "UNnqnvEmXMkv76Mc": {
+          "description": "<p><strong>Trigger</strong> The Sylirican phalanx is targeted by a ranged attack that is affected by their resistance or included in an area of effect</p><hr /><p><strong>Effect</strong> The members of the phalanx interlock their shields in a practiced motion. Their resistance to the triggering attack is doubled (or tripled if a non-magical attack) or their weakness to area damage does not apply to the triggering effect.</p>",
+          "name": "In the Shade"
+        },
+        "barT5ac2DCNl3Kra": {
+          "description": "<p>While well defended from the front, the Sylirican phalanx does not adapt well to being surrounded. Their penalty to AC from being @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} is increased to –3.</p>",
+          "name": "Slow to Turn"
+        },
+        "qoiaUhxU4SjQ6PfN": {
+          "description": "<p>Whenever a troop moves, you move one of its segments and the other segments follow behind it. At the end of the movement, you can group the other segments adjacent to the one you moved as you see fit, provided none of them moves farther than the moving segment. If you choose not to move the troop any distance, you can instead reshape the position of all the segments as long as one stays in place.</p>"
+        },
+        "tf04q2rITbWNg2g9": {
+          "name": "Warfare Lore"
+        },
+        "zFF0o2Atwb8aKra7": {
+          "description": "<p><strong>Thresholds</strong> 110 (3 segments); 55 (2 segments)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+        }
+      },
+      "name": "Sylirican Phalanx",
+      "npcHp": "Thresholds 110 (3 segments); 55 (2 segments)",
+      "npcSpeed": "troop movement"
+    },
     "Temptation of Glory": {
       "description": "<p>Ghostly images of your heart's desire appear and beckon you toward them.</p>",
       "hazardDisable": "<p>@Check[arcana|dc:25] or @Check[religion|dc:25] (expert) to disrupt the images; @Check[occultism|dc:26] (expert) to shout a countering chant; @Check[intimidation|dc:27] (expert) to scare the images away; @Check[will|dc:28] save (expert) to refuse to listen</p>",
@@ -892,6 +1639,13 @@
         }
       },
       "name": "Tern Flock"
+    },
+    "The Ketos": {
+      "description": "<p>A shadow the size of an island appears in the water beneath the ship.</p>",
+      "hazardDisable": "<p>@Check[acrobatics|dc:27], @Check[athletics|dc:27], or @Check[diplomacy|dc:27] or @Check[Sailing Lore|dc:23] to help the crew of the <em>Tide Hunter</em> escape the Ketos; three total successes are required to disable the hazard</p>",
+      "hazardReset": "<p>If three or more of its tentacles are destroyed, the Ketos releases the <em>Tide Hunter</em> and disappears into the ocean's depths to nurse its wounds. The monster does not return to this area for 24 hours.</p>",
+      "hazardRoutine": "<p>(3 actions) The Ketos uses its actions to make tentacle Strikes against creatures aboard the <em>Tide Hunter</em> or within 30 feet of the ship.</p>",
+      "name": "The Ketos"
     },
     "Tide Hunter": {
       "items": {
@@ -934,6 +1688,142 @@
       },
       "name": "Torcheater",
       "npcSpeed": " shadow stairs"
+    },
+    "Tsemone": {
+      "items": {
+        "0N9c3jYsfxqVWjs8": {
+          "description": "<p>Tsemone Interacts to draw a grenade, then Strikes with it.</p>",
+          "name": "Quick Grenadier"
+        },
+        "4bts7N67MnKltXXF": {
+          "name": "Alchemical Grenade (Cold)"
+        },
+        "ApCXooviM0qKEoam": {
+          "name": "Alchemical Grenade (Fire)"
+        },
+        "DdY4SH8fFsRMfi5b": {
+          "name": "Mythic Power"
+        },
+        "HUKhTqLJKbfEeLB6": {
+          "description": "<p><strong>Trigger</strong> An adjacent creature deals Tsemone piercing or slashing damage with a melee Strike</p><hr /><p><strong>Effect</strong> Tsemone has ingested low quantities of acid over time, making her immune to acid damage and transforming her body into a trap for those that harm her. Tsemone's acidic blood sprays from the wound. The triggering creature takes @Damage[2d12[acid]] damage with a @Check[reflex|dc:26|basic] save.</p>",
+          "name": "Caustic Rebuttal"
+        },
+        "NOLobPW3VRQ4d8sL": {
+          "name": "Alchemical Grenade (Acid)"
+        },
+        "OnpRgaPmXW9bYGQr": {
+          "description": "<p>Tsemone carries 9 alchemical grenades that deal either acid, cold, or fire damage plus 2 persistent damage and 2 splash damage of the same type (three of each). She replenishes these grenades each day.</p>",
+          "name": "Alchemical Grenades"
+        },
+        "PoTKkiOEF8wVcfEZ": {
+          "name": "Warfare Lore"
+        },
+        "Yipc1EEYHLKGXIl1": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Tsemone ends one condition affecting her.</p>",
+          "name": "Remove a Condition"
+        },
+        "k7pECk02sckmCo0u": {
+          "name": "Alchemical Grenade (Cold)"
+        },
+        "o4HvP76AB7OmYkBL": {
+          "name": "Curare (Applied to a Dart)"
+        },
+        "rUPLzOLVtKde3Gq3": {
+          "name": "Formula Book"
+        },
+        "sVXafc7JiN6Ny0gL": {
+          "name": "Alchemical Grenade (Acid)"
+        },
+        "vAg3gs7KQbxTo5XO": {
+          "name": "Alchemical Grenade (Fire)"
+        },
+        "zbs85RreivxWB1qE": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds (but see stage 3)</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage, clumsy 2, enfeebled 2, and slowed 1 (1 round). If the victim fails the saving throw while at</p>\n<p><strong>Stage 3</strong>, the poison ends and the victim is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for [[/gmr 2d6 #minutes]]{2d6 minutes}.</p>",
+          "name": "Curare"
+        }
+      },
+      "name": "Tsemone"
+    },
+    "Ulshuk": {
+      "items": {
+        "AoXTAjtUQqyGEHSH": {
+          "description": "<p>10 feet. Ulshuk and his allies within the aura gain a +1 status bonus to saving throws against spells.</p>",
+          "name": "Aura of the All-Seeing Eye"
+        },
+        "kYblowzZilXtTGb3": {
+          "name": "Mythic Power"
+        },
+        "rovu9fUdbcISKxF1": {
+          "description": "<p>Ulshuk can hold his breath for 15 minutes.</p>",
+          "name": "Deep Breath"
+        },
+        "tjuhwCEBf2CpN5ZF": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Ulshuk ends one condition affecting him.</p>",
+          "name": "Remove a Condition"
+        },
+        "vJYFaPCj3ly5DJS2": {
+          "name": "Claw"
+        }
+      },
+      "name": "Ulshuk",
+      "npcAllSaves": "Aura of the All-Seeing Eye"
+    },
+    "Ungkore Bounty Hunter": {
+      "description": "<p>To a satyr, life is a party and everyone is invited. Notorious for their hedonism, these fey believe there's no greater beauty than can be found in song, drink, indulgent meals, and carnal pleasures. Satyrs use their enchanting songs and natural charm to encourage all manner of people to follow their true desires and free themselves from society's rules. This usually involves enticing mortals to join raucous parties or engage in trysts in moonlit glades. If a potential companion rejects a satyr's advances, however, the satyr has little interest in continuing a conversation and goes off to find more amenable revelers.</p>\n<p>The lifestyle of a satyr leaves no room for ongoing affairs or long-term friends. Once his party is over or his lust is satiated, the satyr disappears back into the forest. The offspring satyrs leave behind are satyrs themselves, and they usually end up being taken from their cradles by other fey rather than left in mortals' care. Satyrs are always male.</p>\n<p>The untouched beauty of the forest is sacred and precious to a satyr. Brutish intruders who clear-cut trees or massacre animals without eating them risk drawing a satyr's ire. A satyr so provoked uses his spells to undermine foes and attempts to dispatch them either with brutal ambushes or by leading a rush of forest animals to attack.</p>\n<p>Other fey, particularly more benevolent fey, look upon satyrs as loutish, embarrassing cousins. They're rarely hostile toward satyrs, but most find them insufferable and advise any mortals they like to steer clear of satyrs' glades.</p>",
+      "items": {
+        "8weNajcO3qZhlgx1": {
+          "description": "<p><strong>Requirements</strong> The bounty hunter is wielding a rope dart</p>\n<p><strong>Trigger</strong> A creature within 20 feet of the bounty hunter Stands or Interacts to draw or pick up a weapon.</p><hr /><p><strong>Effect</strong> The bounty hunter makes a rope dart Strike against the triggering creature. If the attack is a critical success, the triggering action is disrupted, and the bounty hunter Interacts to retrieve the rope dart.</p>",
+          "name": "No You Don't!"
+        },
+        "uh8n5Em5GNcWEzfu": {
+          "description": "<p>The bounty hunter draws a snare from their bag and tosses it at a creature within 20 feet. The target takes @Damage[(4d8+18)[piercing]] damage (@Check[reflex|dc:26|basic] save) and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of the bounty hunter's next turn. The bounty hunter can't use this ability again for 1 minute.</p>",
+          "name": "Quick-Release Snare"
+        },
+        "wKZXBO2Idu2Ixkir": {
+          "description": "<p><strong>Requirements</strong> The bounty hunter's last action was a successful Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a creature using a rope dart</p><hr /><p><strong>Effect</strong> The bounty hunter makes a rope dart Strike against the tripped creature, using the same multiple attack penalty as the triggering Disarm or Trip attempt. The bounty hunter then Interacts to retrieve the rope dart.</p>",
+          "name": "Downward Flick"
+        }
+      },
+      "name": "Ungkore Bounty Hunter"
+    },
+    "Vault-Drowned Souls": {
+      "description": "<p>The spirits of the island's citizens manifest and panic as the vault fills with seawater.</p>",
+      "hazardDisable": "<p>DC 33 Athletics (trained) twice to [[/act force-open dc=33]] the vault's door or @Check[religion|dc:30] (trained) three times to exorcise the spirits</p>",
+      "hazardReset": "<p>The waters recede and the spirits disappear once no living creatures remain inside the vault, but the haunt resets immediately, triggering again if a living creature steps inside.</p>",
+      "hazardRoutine": "<p>(1 action) Water begins to fill the vault from a crack in the floor hidden beneath the bones. The spirits of the citizens panic and grasp at the living, begging them to act. Each creature in the vault takes @Damage[(2d10+13)[void]|options:area-damage] damage with a @Check[fortitude|dc:28|basic] saving throw. On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} on a critical failure).</p><p>The first time the hazard takes this action, water fills the vault to knee-height, making the area difficult terrain. The second time the hazard takes this action, the vault fills halfway with water, and creatures inside must succeed at a @Check[athletics|dc:15] check each round to Swim. The third time the hazard takes this action, the vault fills entirely with water, and creatures inside must hold their breath.</p>",
+      "name": "Vault-Drowned Souls"
+    },
+    "Vengeful Shade": {
+      "items": {
+        "3ynR8TWL4DmhRxwR": {
+          "name": "Dhuraxilis Lore"
+        },
+        "9KhhnUiM69Qo3QLK": {
+          "description": "<p>With every triumph, a chorus of hate-filled shouts erupts from the vengeful shade. Whenever the shade critically succeeds on a Strike, and whenever a creature critically fails a saving throw against the shade's Frightful Moan or Miserable Remorse, the shade gains a Disruption Point. The shade loses a Disruption Point whenever a creature critically succeeds at an attack roll against the shade and whenever the shade critically fails a saving throw.</p>",
+          "name": "Cries of Vengeance"
+        },
+        "Dl3EgHZl0OjTLmkV": {
+          "description": "<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:29] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>",
+          "name": "Frightful Moan"
+        },
+        "KCyG7x207HQexGDS": {
+          "description": "<p>The vengeful shade can't pass beyond the city limits of Pol-Dhuraxilis.</p>",
+          "name": "Site Bound"
+        },
+        "hEGFjiKQoHpnKvte": {
+          "description": "<p>A creature damaged by the shade's claw Strike is overcome with feelings of remorse and must attempt a @Check[will|dc:29] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is stupefied 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} for 1 round.</p>",
+          "name": "Miserable Remorse"
+        },
+        "koK3NaY3Zlcjem3P": {
+          "description": "<p>The vengeful shade can't move on to the afterlife until Ekriathe's current incarnation, Iapholi, either dies or makes amends to the shade.</p>",
+          "name": "Rejuvenation"
+        },
+        "oQ1BO14YxCZojh7Z": {
+          "name": "Claw"
+        }
+      },
+      "name": "Vengeful Shade",
+      "npcHp": "rejuvenation, void healing"
     },
     "Vornen": {
       "items": {
