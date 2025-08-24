@@ -881,7 +881,7 @@
       "description": "<p>Hands of the buried dead rise from the ground, grabbing and tearing at creatures in the area to drag them underground.</p>",
       "hazardDisable": "<p>@Check[religion|dc:22] (trained) to ritually pray for the dead or @Check[occultism|dc:24] (trained) to exorcise the spirits' anger; two total successes are required to disable the haunt</p>",
       "hazardReset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
-      "hazardRoutine": "<p>(1 action) The grasping hands batter all creatures in the area, dealing @Damage[(2d6+7)[bludgeoning]] damage (@Check[reflex|dc:26|basic] save). On a critical failure, a creature is dragged partially into the earth, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 26). If already immobilized, it's fully submerged and must hold its breath to avoid suffocation.</p>",
+      "hazardRoutine": "<p>(1 action) The grasping hands batter all creatures in the area, dealing @Damage[(2d6+7)[bludgeoning]] damage (@Check[reflex|dc:26|basic] save). On a critical failure, a creature is dragged partially into the earth, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it [[/act escape dc=26]]{Escapes}. If already immobilized, it's fully submerged and must hold its breath to avoid suffocation.</p>",
       "name": "Grasping Dead"
     },
     "Graveknight Warmaster": {
@@ -1629,7 +1629,7 @@
           "name": "Sunlight Powerlessness"
         },
         "tvvsxwr3fxjxf5ho": {
-          "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} in the nasurgeth's jaws</p>\n<hr />\n<p><strong>Effect</strong> The nasurgeth breaks a tooth off in the target, who takes @Damage[3d10[bleed]] and is no longer grabbed or restrained. If the target is adjacent to a surface, the tooth also pins it in place, making it @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 45).</p>",
+          "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} in the nasurgeth's jaws</p>\n<hr />\n<p><strong>Effect</strong> The nasurgeth breaks a tooth off in the target, who takes @Damage[3d10[bleed]] and is no longer grabbed or restrained. If the target is adjacent to a surface, the tooth also pins it in place, making it @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} ([[/act escape dc=45]]).</p>",
           "name": "Broken Barb"
         }
       },
@@ -2476,7 +2476,7 @@
       "description": "<p>A cyclone of angry spirits surges around the area.</p>",
       "hazardDisable": "<p>@Check[occultism|dc:30] (trained) or @Check[religion|dc:30] (trained) to weaken the haunt; three total successes in any combination are required to disable the haunt</p>",
       "hazardReset": "<p>The spirit cyclone disperses after 1 minute and resets after 1 day.</p>",
-      "hazardRoutine": "<p>(3 actions) The spirit cyclone uses 3 actions to move, traveling up to 30 feet with each action and dealing @Damage[(2d10+13)[void]] damage to each creature in its path (@Check[reflex|dc:32|basic] save). A creature needs to attempt only one save during the cyclone's movement, even if the cyclone moves over its space more than once. On a critical failure, a creature is swept up into the cyclone, becoming @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32). A creature grabbed by the cyclone moves along with the cyclone and takes @Damage[(1d10+6)[void]] damage at their beginning of its turn, and it must attempt a Reflex save against the cyclone on the cyclone's turn, no matter where the cyclone moves. A creature that successfully Escapes from the cyclone falls from a height of [[/r {1d12*5} #Falling Distance]]{1d12 x 5 feet}.</p>",
+      "hazardRoutine": "<p>(3 actions) The spirit cyclone uses 3 actions to move, traveling up to 30 feet with each action and dealing @Damage[(2d10+13)[void]] damage to each creature in its path (@Check[reflex|dc:32|basic] save). A creature needs to attempt only one save during the cyclone's movement, even if the cyclone moves over its space more than once. On a critical failure, a creature is swept up into the cyclone, becoming @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} ([[/act escape dc=32]]). A creature grabbed by the cyclone moves along with the cyclone and takes @Damage[(1d10+6)[void]] damage at their beginning of its turn, and it must attempt a Reflex save against the cyclone on the cyclone's turn, no matter where the cyclone moves. A creature that successfully Escapes from the cyclone falls from a height of [[/r {1d12*5} #Falling Distance]]{1d12 x 5 feet}.</p>",
       "name": "Spirit Cyclone"
     },
     "Sykever": {
