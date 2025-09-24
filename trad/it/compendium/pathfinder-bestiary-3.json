@@ -462,9 +462,31 @@
                     "name": "Artiglio"
                 },
                 "cp5UE666Pg5Pz1gR": {
-                    "name": "Passo d'Ombra"
+                    "name": "Passo d'Ombra",
+                    "description": "<p><strong>Innesco</strong> Una fonte di luce intensa rivela il betobeto-san.</p>\n<p><strong>Requisiti</strong> Il betobeto-san non si trova già all’interno di un’area di luce intensa.</p>\n<hr />\n<p><strong>Effetto</strong> Il betobeto-san fa un breve Passo nel Piano delle Ombre e poi torna indietro, apparendo fino a 9 metri di distanza dal punto in cui si trovava.</p>"
+                },
+                "lxK1cONnIVJsnFVA": {
+                    "name": "sandali"
+                },
+                "8FgEIFUzEgLTHjHc": {
+                    "name": "percepire paura (preciso) 18 metri,",
+                    "description": "<p>Il betobeto-san è consapevole di tutte le creature @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventate} che si trovano entro il raggio indicato.</p>"
+                },
+                "iPdoOjHPIU1Zhkvd": {
+                    "name": "Passi Esca",
+                    "description": "<p>Il betobeto-san fa un Passo, quindi crea due esche sonore illusorie entro @Template[emanation|distance:15]{4,5 metri} da lui che imitano il suono dei suoi passi sinistri.</p>\n<p>Queste esche agiscono indipendentemente dall’iniziativa del betobeto-san con 2 azioni ciascuna. Possono solo Muoversi Furtivamente o Avanzare e hanno una Velocità di 10,5 metri. Usa la CD di Furtività del betobeto-san (solitamente 37) contro i tentativi di @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Individuare} o di dubitare di un diversivo.</p>\n<p>Ogni esca dura 1 minuto. Ogni esca esistente svanisce se il betobeto-san usa nuovamente questa capacità.</p>"
+                },
+                "uDYAOTcNICSCyK3S": {
+                    "description": "<p>Il betobeto-san è @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{invisibile} a meno che non si trovi in un’area di luce intensa.</p>",
+                    "name": "Invisibilità nelle Ombre"
+                },
+                "jEfZwLub2SXZ9ApN": {
+                    "description": "<p>18 metri. I passi del betobeto-san sembrano avvicinarsi sempre di più, ma la loro origine è difficile da stabilire. Ogni creatura che inizia il suo turno entro 18 metri dal betobeto-san deve tentare un TS su @Check[will|dc:29].</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata ed è temporaneamente immune per 1 minuto.</p>\n<p><strong>Successo</strong> La creatura diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 1}.</p>\n<p><strong>Fallimento</strong> La creatura diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 2}.</p>\n<p><strong>Fallimento Critico</strong> La creatura diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 4}.</p>",
+                    "name": "Passi Sinistri"
                 }
-            }
+            },
+            "name": "Betobeto-San",
+            "description": "<p>Un betobeto-san vaga per le vie principali e quelle secondarie del Piano Materiale, alla ricerca di riluttanti compagni di viaggio che sostengano l’appetito di paura dello spirito. Anche se questo spirito ombra è invisibile al buio o nell’ombra, alla luce appare come una massa oscura e informe dotata di due piedi che calzano sandali. Questi sono fatti di legno o osso, cosa che provoca il distinto suono “beto beto” a ogni passo della creatura, da cui il suo nome. La sua massa priva di dettagli si spalanca in un’ampia bocca sorridente piena di denti, mentre le sue lunghe braccia terminano con artigli.</p>\n<p>Il betobeto-san segue i viaggiatori notturni, costretto a stargli alle calcagna fino a quando le creature si offrono verbalmente di farlo passare. Questa ossessione solitamente non è malevola di natura, ed è dovuta piuttosto al desiderio sviato di compagnia e di cortesia del betobeto-san: sfortunatamente non comprende quanto questo comportamento possa spaventare gli altri. Il betobeto-san non attacca coloro che segue, ma spesso è costretto a combattere perché il suo comportamento inopportuno fa sì che gli inseguiti lo attacchino per primi.</p>"
         },
         "Nucol": {
             "items": {
@@ -3095,9 +3117,20 @@
                     "name": "Corno"
                 },
                 "0eEbWDjEXskh1gvK": {
-                    "name": "Adattamento al Freddo"
+                    "name": "Adattamento al Freddo",
+                    "description": "<p>Il bisonte riduce di un grado gli effetti che subisce dagli ambienti freddi.</p>"
+                },
+                "LaB8UoWpNQqZKM30": {
+                    "name": "Carica Roboante",
+                    "description": "<p>Il bisonte, mentre carica, solleva polvere e scuote il terreno.</p>\n<p>Il bisonte in corsa Avanza fino al doppio della sua Velocità in linea retta, infliggendo @Damage[(4d6+6)[bludgeoning]]{4d6+6 danni contundenti} (TS @Check[reflex|dc:21|basic]) a ogni creatura Media o inferiore che si trova lungo il suo percorso.</p>\n<p>Più bisonti possono prendere parte alla Carica Roboante spendendo le azioni di questa capacità e aspettando che la mandria sia pronta prima di caricare. Prima dell’inizio del loro prossimo turno possono quindi caricare come reazione innescata da un bisonte adiacente che inizia la sua Carica Roboante. Tutti i bisonti presenti nella carica devono caricare in linee parallele in modo che le aree non si sovrappongano. La carica di gruppo infligge @Damage[3d6[bludgeoning]]{3d6 danni contundenti} aggiuntivi alle creature nell’area e una creatura che fallisce il tiro salvezza su Riflessi è anche gettata a terra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{prona}.</p>"
+                },
+                "zDFtneAmSUjx6qnK": {
+                    "name": "Carica con Incornata",
+                    "description": "<p>Il bisonte balza in avanti contro il suo avversario, le corna abbassate. Avanza due volte. Se il bisonte termina il suo movimento entro il raggio di un Colpo in mischia contro un nemico, Colpisce con il corno tale nemico. Questo Colpo ottiene il tratto fatale d12.</p>"
                 }
-            }
+            },
+            "name": "Bisonte",
+            "description": "<p>I bisonti sono grossi bovini dal muso corto e dotati di un paio di corna. Pesano oltre 1000 kg e sono alti 1,8 metri al garrese. Le mandrie di bisonti si aggirano per le pianure erbose di Golarion facendo tremare il terreno. Si possono avvistare facilmente nelle Pianure Fischianti a est del Taldor e nelle ampie praterie della nazione del Karazh nel Casmaron; sono anche frequenti nelle fredde lande del nord-est dell’Avistan, nei Regni Fluviali della Numeria, nel Regno dei Signori dei Mammut e nel Sarkoris occidentale.</p>\n<p>Gregari di natura, i bisonti si raccolgono in gruppi numerosi durante la stagione estiva dell’accoppiamento, prima che i tori si separino per vagare nei pascoli erbosi. Il bisonte si è adattato molto bene ai rigidi inverni delle pianure grazie all’isolamento termico fornito dalla sua ispida pelliccia che, nella stagione fredda, si fa più spessa. Per sopravvivere alle tempeste, fronteggia saldamente i venti ululanti accovacciandosi a terra per ridurre la sua esposizione alle intemperie.</p>\n<p>Il modo in cui i bisonti si crogiolano nella polvere o si strofinano contro grossi massi potrebbe indurre a scambiare la loro natura docile per passività. Tale convinzione si è tuttavia rivelata la rovina di molte battute di caccia. La carne abbondante di un bisonte e la sua spessa pelliccia ne fanno una preda ambita, ma i bisonti possono travolgere rapidamente con una carica frastornante i cacciatori inesperti e impreparati a una mandria in corsa. Questi gruppi di cacciatori talvolta ingaggiano avventurieri particolarmente coraggiosi che li aiutino con incantesimi, acciaio e competenza ad assicurare il successo di una battuta.</p>\n<p>Nonostante i bisonti delle pianure siano i più noti e i più numerosi, hanno dei cugini che vivono sia nelle intricate foreste boreali che lungo le ampie e sgombre steppe. Tali varietà di bisonti, sebbene più alte, non raggiungono la velocità e l’aggressività dei loro più piccoli parenti di pianura.</p>"
         },
         "Sorcerous Skull Swarm": {
             "items": {
@@ -3154,7 +3187,8 @@
                     "name": "bile"
                 }
             },
-            "description": "<p>Le solitarie e ingannevoli creature note come bestie ciondolo realizzano gioielli falsi come sottoprodotto del loro stranissimo sistema digerente magico. Due patologie naturali della pelle forniscono loro le materie prime per tale processo: chiazze squamose costituite da sottili strati di metallo e verruche che sembrano pietre preziose. Staccando a morsi queste chiazze e ingoiandole, la bestia ciondolo realizza magicamente i gioielli nelle sue viscere. Dopo aver espulso questi grezzi pseudo-monili, li lucida e li rimodella per renderli più convincenti. La bestia si intrufola quindi in un insediamento e colloca i gioielli dove possono essere facilmente trovati. Una creatura che indossa questi falsi gioielli è magicamente costretta a radunare i suoi veri oggetti di valore e a consegnarli alla bestia, felice di collezionarli. Qualche bestia ciondolo libera quindi la vittima confusa, mentre altre più malvagie la uccidono per evitare di essere scoperte.</p>\n<p>Questi gioielli di imitazione ingannano i profani, ma sono ben noti presso i mercanti. La loro formazione spesso include un breve corso per riconoscere il lieve ma distintivo dolce odore emanato dai gioielli di una bestia ciondolo.</p>\n<p>Anche se sono perlopiù solitarie, le bestie ciondolo occasionalmente socializzano con individui che condividono i loro pochi interessi, tra cui mercanti, gioiellieri, elementali della terra e altre bestie ciondolo. Gli xorn nutrono un interesse particolare per le bestie ciondolo, o almeno per le loro gemme. Anche se queste non sono altrettanto nutrienti come le vere pietre preziose, gli xorn trovano che il loro sapore sia decadente e le mangiano come una sorta di snack.</p>"
+            "description": "<p>Le solitarie e ingannevoli creature note come bestie ciondolo realizzano gioielli falsi come sottoprodotto del loro stranissimo sistema digerente magico. Due patologie naturali della pelle forniscono loro le materie prime per tale processo: chiazze squamose costituite da sottili strati di metallo e verruche che sembrano pietre preziose. Staccando a morsi queste chiazze e ingoiandole, la bestia ciondolo realizza magicamente i gioielli nelle sue viscere. Dopo aver espulso questi grezzi pseudo-monili, li lucida e li rimodella per renderli più convincenti. La bestia si intrufola quindi in un insediamento e colloca i gioielli dove possono essere facilmente trovati. Una creatura che indossa questi falsi gioielli è magicamente costretta a radunare i suoi veri oggetti di valore e a consegnarli alla bestia, felice di collezionarli. Qualche bestia ciondolo libera quindi la vittima confusa, mentre altre più malvagie la uccidono per evitare di essere scoperte.</p>\n<p>Questi gioielli di imitazione ingannano i profani, ma sono ben noti presso i mercanti. La loro formazione spesso include un breve corso per riconoscere il lieve ma distintivo dolce odore emanato dai gioielli di una bestia ciondolo.</p>\n<p>Anche se sono perlopiù solitarie, le bestie ciondolo occasionalmente socializzano con individui che condividono i loro pochi interessi, tra cui mercanti, gioiellieri, elementali della terra e altre bestie ciondolo. Gli xorn nutrono un interesse particolare per le bestie ciondolo, o almeno per le loro gemme. Anche se queste non sono altrettanto nutrienti come le vere pietre preziose, gli xorn trovano che il loro sapore sia decadente e le mangiano come una sorta di snack.</p>",
+            "name": "Bestia Ciondolo"
         },
         "Camel": {
             "items": {
@@ -3559,8 +3593,33 @@
                 },
                 "OsTMxKDPkvHBsVZL": {
                     "name": "Metamorfosi Funesta"
+                },
+                "HPHMTMivSSxm6A9g": {
+                    "name": "Dardo di Fuoco",
+                    "description": "<p><em>Nota: il Bestiario 3 non specifica una gittata per questo attacco. È stata scelta una gittata di 9 metri, in linea con la esplosione di vento della Megera della Tempesta.</em></p>"
+                },
+                "zmZ1L8pspuQQGh1m": {
+                    "description": "<p><strong>Requisiti</strong> Una creatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzata}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuta}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{priva di sensi} o consenziente è entro la portata della megera del sangue</p>\n<hr />\n<p><strong>Effetto</strong> La megera affonda le sue zanne nella creatura per berne il sangue. Ciò richiede di superare una prova di @Check[athletics|defense:fortitude] contro la CD di Tempra della vittima se la vittima è afferrata ed è invece automatico per tutte le altre condizioni.</p>\n<p>La vittima diventa @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{risucchiata 1}. La megera recupera @Damage[15[healing]]{15 Punti Ferita}, ricevendo ogni PF in più come Punto Ferita temporaneo della durata di 1 ora. Bere il sangue di una creatura che è già risucchiata non permette di recuperare nessun Punto Ferita, ma il valore risucchiato della vittima aumenta di 1, e la vittima viene uccisa quando raggiunge risucchiato 5.</p>\n<p>La condizione risucchiato della vittima diminuisce di 1 grado alla settimana. Una trasfusione di sangue, che richiede il superamento di una prova di @Check[medicine|dc:20] e la quantità necessaria di sangue o un donatore di sangue, riduce di 1 la condizione risucchiato dopo 10 minuti.</p>",
+                    "name": "Risucchiare Sangue"
+                },
+                "lp9zpRImtn8gAWuk": {
+                    "description": "<p>Una megera del sangue può percepire la presenza di sangue e di creature dotate di sangue. Può anche distinguere tra il sangue versato e il sangue all’interno di una creatura vivente.</p>",
+                    "name": "percezione del sangue (imprecisa) 27 metri"
+                },
+                "fLCQ4ieE5VzQA9NP": {
+                    "name": "Pelle in Prestito",
+                    "description": "<p>Una megera del sangue indossa un manto di pelle rubata da una creatura umanoide che ha ucciso, nascondendo il suo vero aspetto e ottenendo gli effetti di un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.PRrZ7anETWPm90YY]{disguise magic} di 4° grado, con lei stessa come bersaglio primario e la creatura di cui sta indossando la pelle come bersaglio secondario.</p>\n<p>Se si cosparge di sale grezzo l’interno della pelle, la megera non può più indossarla e deve mantenere la sua forma ardente fino a quando riesce a uccidere un altro umanoide e a spendere 1 ora a trasformarlo in un nuovo travestimento.</p>"
+                },
+                "s6UD93sTVBhNgF8P": {
+                    "description": "<p>La megera del sangue si toglie la sua pelle in prestito e si trasforma in una brillante palla di fuoco.</p>\n<p>Diventa amorfa, ottiene il tratto fuoco e la Velocità di volare di 18 metri, è immune al fuoco ed emette luce come una torcia. Perde i suoi Colpi in mischia e non può Risucchiare Sangue, ma infligge @Damage[3d10[fire]]{3d10 danni da fuoco} (TS @Check[reflex|dc:26|basic]) a ogni creatura che la tocca o che mette a segno un Colpo in mischia contro di lei con un attacco senz’armi o da uno spazio adiacente.</p>\n<p>Se la sua pelle è integra, può tornare nella sua forma normale spendendo un’azione singola con il tratto maneggiare mentre è adiacente alla pelle.</p>\n<p>La megera può invece Assumere Forma Ardente con un’azione singola, distruggendo la sua pelle in un’esplosione di fiamme. In questo modo distrugge la sua pelle in prestito e infligge @Damage[9d6[fire]|options:area-damage]{9d6 danni da fuoco} (TS @Check[reflex|dc:26|basic|options:area-effect]) in un’@Template[emanation|distance:20]{emanazione di 6 metri}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.H99PJXU5cvJ4Oycm]{Effetto: Forma Ardente}</p>",
+                    "name": "Assumere Forma Ardente"
+                },
+                "gbGFrdjx00klWwUk": {
+                    "description": "<p>Una megera del sangue aggiunge @UUID[Compendium.pf2e.spells-srd.Item.XS7Wyh5YC0NWeWyB]{corpo infuocato}, @UUID[Compendium.pf2e.spells-srd.Item.YvXKGlHOt7mdW2jZ]{interdizione alla morte} e @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{incubo} agli incantesimi della sua congrega.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
                 }
-            }
+            },
+            "description": "<p>Le megere del sangue, anche note come soucouyant, si infiltrano nelle comunità sotto forma di giovani umanoidi innocenti. Questo travestimento è più di una illusione, in quanto una megera del sangue indossa la pelle di una vittima precedente per nascondere il suo vero aspetto. Durante il giorno, il suo travestimento è praticamente perfetto, soprattutto se la comunità non conosce la persona che la megera finge di essere. Ma, dopo il tramonto, la creatura si toglie la pelle, la nasconde in un luogo sicuro e trascorre la notte a procurarsi il sangue da bere per sostentarsi.</p>\n<p>In grado di spostarsi velocemente sotto forma di una palla di fuoco e di infilarsi nei buchi delle serrature o nelle fessure più strette delle porte e delle finestre, le megere del sangue si nutrono di vittime dormienti per poi tornare a casa prima del mattino e indossare la loro pelle rubata.</p>\n<hr />\n<p>Creature malvagie che appaiono come vecchie donne decrepite, le megere hanno poco in comune con gli umanoidi che terrorizzano. Sono entità odiose la cui gioia maggiore è la corruzione e la definitiva distruzione di qualsiasi cosa sia buona e virtuosa. Il potere che ha creato le prime megere è perduto da tempo, ma numerose varietà di megere sono sorte nel corso dei secoli, ognuna dotata di poteri e capacità diverse per portare dolore e sofferenza.</p>",
+            "name": "Megera del Sangue"
         },
         "Triumph Siktempora": {
             "items": {
@@ -3721,8 +3780,48 @@
                 },
                 "8Ukd831yvoAA6YEz": {
                     "name": "Scafo"
+                },
+                "qen9rYoBFDQD84n7": {
+                    "name": "Cannoneggiamento",
+                    "description": "<p>La nave scheletro Colpisce quattro volte con il cannone d’osso, ogni volta prendendo una creatura diversa come bersaglio.</p>"
+                },
+                "VHBHFrYc6mpE6sPl": {
+                    "name": "Dragare Ossa",
+                    "description": "<p>La nave scheletro spende 1 giorno raccogliendo ossa dal mare e ripristina interamente i suoi Punti Ferita.</p>"
+                },
+                "7xqB2gVMxUHI1QMC": {
+                    "description": "<p>La nave scheletro non è dominata da un’unica mente, ma dalla coscienza collettiva delle anime dei marinai morti.</p>\n<p>La nave è immune agli effetti mentali che hanno come bersaglio solo un numero preciso di creature. È comunque ancora soggetta agli effetti mentali che influenzano tutte le creature in un’area.</p>\n<p>Una creatura che tenta di comunicare con la nave tramite la telepatia o che legge i suoi pensieri, sente le grida morenti e i rantoli dell’equipaggio ed è bersaglio di un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs]{distorcere mente} di 9° grado (@Check[will|dc:41|traits:magical,enchantment,emotion,incapacitation,mental|overrideTraits:true]).</p>\n<p>La nave anima scheletri come membri dell’equipaggio dalle sue stesse ossa, armandoli con vecchie sciabole arrugginite o con altre armi così che possano attaccare chiunque si avvicini all’imbarcazione. Queste entità hanno lo stesso aspetto delle anime vincolate quand’erano in vita, ma non sono dei veri individui: qualsiasi cosa le prenda come bersaglio, in realtà prende come bersaglio la nave scheletro di cui fanno parte.</p>\n<p>L’esterno della nave è decorato da centinaia di gemme dell’anima nere, ognuna delle quali contiene uno spirito di un defunto. Queste gemme possono contenere le anime delle creature di 16° livello o inferiore e non hanno alcun valore. Se la nave è distrutta, queste gemme si frantumano liberando le anime al loro interno.</p>",
+                    "name": "Equipaggio Scheletrico"
+                },
+                "4QS3vuiF6NBVHzYN": {
+                    "name": "Scia di Sangue",
+                    "description": "<p>9 metri. Le acque vorticose intorno alla nave scheletro si tingono di sangue rosso. Una creatura vivente che entra in acqua nell’aura vede visioni di se stessa che affoga nel sangue e deve tentare un TS su @Check[will|dc:37]. Dopo aver tentato questo tiro salvezza, la creatura è temporaneamente immune per 1 ora.</p>\n<p>In caso di fallimento, la creatura diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 4} in caso di fallimento critico) e @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordita 1}, e subisce penalità di status -4 alle prove di Atletica per Nuotare.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.oORIapm28xioxPDp]{Effetto: Scia di Sangue}</p>"
+                },
+                "9DknzWoTx4dGllLO": {
+                    "description": "<p>La nave scheletro lancia @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{legare anima}. Il bersaglio deve essere morto a causa dell’assalto della nave scheletro o per annegamento. L’anima della creatura diventa parte dell’equipaggio fantasma.</p>\n<p>Sulla nave spunta una nuova gemma dell’anima e la nave scheletro è @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{accelerata} per 1 minuto. Può usare l’azione extra solo per Colpire o Nuotare.</p>",
+                    "name": "Anima Arruolatrice"
+                },
+                "Xn5fxlgPbRTrvMi3": {
+                    "description": "<p>L’equipaggio emette all’unisono un urlo angosciato. Si tratta di un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.FEsuyf203wTNE2et]{wails of the damned} con @Template[emanation|distance:100]{emanazione di 30 metri} (@Check[fortitude|dc:39|traits:magical,necromancy,auditory,death,void]). Inoltre, ogni creatura entro 1,5 metri dalla nave è @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} dall’equipaggio.</p>\n<p>La nave non può usare nuovamente Richiamo dell’Equipaggio per [[/gmr 1d4+1 #Ricarica Richiamo dell’Equipaggio]]{1d4+1 round}.</p>",
+                    "name": "Richiamo dell'Equipaggio"
+                },
+                "lsECqEvllEKtOv5g": {
+                    "description": "<p>La nave scheletro effettua un Colpo speciale con il cannone d’osso, sparando una catena fatta d’ossa. Una creatura colpita da questo Colpo è @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} dalla catena ([[/act escape dc=41]]).</p>\n<p>La nave scheletro può usare azioni Interagire per recuperare una creatura afferrata di 15 metri per ogni azione spesa e, quando la nave si muove, si trascina con sé la creatura afferrata.</p>",
+                    "name": "Colpo a Catena"
+                },
+                "XFheFXfH7AWzxt0S": {
+                    "name": "cannone d'osso"
+                },
+                "XGpAwWvwSpDI36HG": {
+                    "name": "equipaggio scheletrico"
+                },
+                "KDhzo4KVYsJvSpXo": {
+                    "description": "<p>Come Travolgere (Enorme o inferiore, scafo, TS @Check[reflex|dc:43|basic]), ma la nave scheletro Nuota fino al doppio della sua Velocità di nuotare invece che Avanzare, e ogni creatura che fallisce il suo TS è anche trascinata al di sotto della nave.</p>\n<p>Il GM colloca ciascuna creatura trascinata in uno spazio sott’acqua adiacente alla nave scheletro al termine del movimento della nave.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>",
+                    "name": "Giro di Chiglia"
                 }
-            }
+            },
+            "description": "<p>Dopo il passaggio di una nave scheletro, è raro che qualcosa sopravviva: rimangono solo morte, distruzione e onde rosse come il sangue che si scontrano schiumanti nella sua scia. Quando si forma una nave scheletro, la magia necromantica draga dai fondali del mare delle grandi ossa modellandole lentamente in una nuova forma per questo progetto malvagio. Di solito lo scafo è costituito dalle costole delle balene, mentre le loro grandi colonne vertebrali si contorcono in alberi torreggianti. Tendini e muscoli tengono insieme l’imbarcazione, stringendosi e allentandosi per far virare con precisione la nave durante la navigazione.</p>\n<p>Quando una nave scheletro incontra un’altra imbarcazione o coglie qualche altra opportunità per seminare morte, dei cadaveri si animano su tutta la nave per formare un equipaggio e una squadra d’abbordaggio. Ogni membro dell’equipaggio assomiglia a uno scheletro umanoide, ma potrebbe essere costituito da ossa di creature diverse. Per combattere, la nave dà vita anche a dei cannoni ossei che sparano resti di corpi e rottami tramite esplosioni magiche. Le piccole pietre preziose nere che punteggiano la struttura dell’imbarcazione trattengono le anime di un equipaggio affogato, in quanto una nave scheletro è il lascito maledetto di marinai morti tra le onde.</p>\n<p>Quando si verifica una disgrazia di vaste proporzioni, come l’affondamento di un intero veliero in alto mare, l’angoscia dei naufraghi morenti può dare origine a una nave scheletro. Tale evento potrebbe scaturire da una supplica in punto di morte di un marinaio verso un’oscura divinità, oppure quando un dio tenebroso ha l’opportunità di legare assieme numerose anime di marinai morti come dimostrazione distruttiva del suo potere. Quando non nasce da un intervento divino, una nave scheletro può originare lentamente e organicamente da una delle navi condotte dai marinai non morti noti come @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.48agy7vl9fQW1LLA]{draugr}. Dato che le navi dei draugr infestano i mari e affondano altre imbarcazioni, possono raccogliere altre anime e altre ossa, diventando col tempo una nave scheletro. Queste ultime, dall’aspetto asimmetrico e caotico, sono molto differenti dalle altre navi scheletro.</p>\n<p>Una nave scheletro è praticamente insaziabile e ha una incrollabile brama di morte, distruzione e nuove anime da aggiungere a quelle che possiede. Queste necessità derivano da uno scopo principale posto sulla nave dal suo creatore o dall’aggregarsi degli ultimi desideri della sua componente di anime morte. Ad esempio, una divinità potrebbe incaricare una nave scheletro di una missione speciale, come trasportare un messaggio o eliminare un avversario o un impedimento particolarmente ostico. Anche se le navi scheletro navigano normalmente sul mare, non hanno bisogno di respirare e possono condurre missioni subacquee su richiesta del loro creatore.</p>\n<p>Le navi scheletro hanno una reputazione leggendaria presso i marinai. Questi non morti possono comparire dal nulla per portare distruzione e se un relitto fosse privo dei cadaveri del suo equipaggio, tale sparizione potrebbe essere imputato a una nave scheletro. Il mare può causare una morte improvvisa in vari modi, ma l’eterna schiavitù dell’anima è un destino addirittura più terrificante che la semplice morte.</p>",
+            "name": "Nave Scheletro"
         },
         "Android Infiltrator": {
             "items": {
@@ -3835,8 +3934,29 @@
             "items": {
                 "Vsv36iP3BjY1rHBr": {
                     "name": "Artiglio"
+                },
+                "KbRk42Ska9TyPynC": {
+                    "name": "Attingere",
+                    "description": "<p><strong>Requisiti</strong> Il pittore sanguinario è entro portata di un nemico che subisce @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti}.</p>\n<hr />\n<p><strong>Effetto</strong> Il pittore sanguinario tocca la creatura e attinge sangue con uno dei suoi quattro artigli; il sangue rimane fresco per 1 minuto. Il bersaglio deve superare un TS su @Check[will|dc:28] o resta @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{affascinato} dal pittore sanguinario.</p>"
+                },
+                "oX5mS0nonoT9j23k": {
+                    "name": "Dipingere",
+                    "description": "<p><strong>Requisiti</strong> Il pittore sanguinario ha attinto sangue fresco con un artiglio usando Attingere.</p>\n<hr />\n<p><strong>Effetto</strong> Il pittore sanguinario spende il sangue su un artiglio per dipingere una illusione con gli effetti di uno dei seguenti incantesimi: @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{creatura illusoria}, @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{camuffamento illusorio}, @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]{oggetto illusorio} o @UUID[Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI]{immagine speculare}.</p>\n<p>L’azione Dipingere ottiene i tratti dell’incantesimo che sta riproducendo e il pittore sanguinario può Mantenere un Incantesimo su questi effetti. Usa un modificatore per colpire con incantesimo di [[/r 1d20+20 #attacco con incantesimi]]{+20} e CD 28 per questi effetti, i quali sono potenziati al 5° grado.</p>\n<p>Se ha attinto sangue fresco con due o più artigli, il pittore sanguinario può spendere invece il sangue su ognuno di essi per produrre gli effetti di @UUID[Compendium.pf2e.spells-srd.Item.TCk2MDwf5L5OYjFC]{manto di colori} o @UUID[Compendium.pf2e.spells-srd.Item.RQjSQVZRG497cJhX]{trama vibrante}.</p>\n<p>Ogni effetto prodotto da questa capacità ha bonus di status +2 ai tiri per colpire, ai tiri per i danni, ai tiri salvezza, alle prove di abilità e alla CA contro la creatura il cui sangue è stato utilizzato per Dipingere e tale creatura subisce penalità di status -2 alle prove di Percezione e ai TS contro di lui.</p>"
+                },
+                "QeGks9jOjqzdzWci": {
+                    "description": "<p>Un pittore sanguinario può percepire sangue fuoriuscito come senso impreciso nel raggio indicato, anche di creature che stanno subendo @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{danni da sanguinamento persistenti}.</p>",
+                    "name": "percezione del sangue (imprecisa) 18 metri"
+                },
+                "RcHSgAM2xaq0Lve5": {
+                    "name": "Facile da Affascinare",
+                    "description": "<p>Quando è soggetto a una illusione visiva con il tratto incapacità, il pittore sanguinario non modifica il suo grado di successo dovuto al tratto incapacitazione.</p>"
+                },
+                "49TebdoZrVR7bJei": {
+                    "name": "Sapienza Artistica"
                 }
-            }
+            },
+            "name": "Pittore Sanguinario",
+            "description": "<p>Innamorato del mondo naturale ma troppo alieno per potervi sopravvivere, il pittore sanguinario è un artista a otto zampe che bracca, uccide e smembra alla ricerca sia di colori che di nutrimento. Tale creatura non riesce a digerire il cibo comune, dunque si nutre procurandosi sangue e utilizzandolo per dipingere e creare qualcosa di commestibile.</p>\n<p>Quando non è preso dalla caccia, il pittore sanguinario cerca dei magnifici panorami da ammirare placidamente, attraverso gli occhi di cui sono dotate le mani dei suoi arti superiori, e da replicare su tela. Queste creature sono enormemente affascinate dalle grandi opere d’arte e, talvolta, danzatori e pittori di talento sfuggono a tali aberrazioni realizzando opere in cambio della loro vita. I pittori sanguinari custodiscono gelosamente tali capolavori: gran parte del loro tesoro è costituito da opere d’arte e, periodicamente, architettano il furto di altri capolavori.</p>"
         },
         "Tolokand": {
             "items": {
@@ -4059,7 +4179,30 @@
             }
         },
         "Baykok": {
-            "npcHp": "guarigione negativa"
+            "npcHp": "guarigione negativa",
+            "name": "Baykok",
+            "items": {
+                "iLC1r5LnzDRvTshg": {
+                    "description": "<p>Un baykok non può toccare di sua volontà superfici di terra o roccia. Se costretto a fare contatto con una simile superficie, diventa @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 2} per tutto il tempo in cui mantiene il contatto.</p>",
+                    "name": "Esiliato da Terra"
+                },
+                "C8pZwyrtELK6lVYw": {
+                    "description": "<p>Un baykok, nel tendere il suo arco, crea una freccia invisibile d’osso. Una creatura @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata} colpita dalla freccia è sconvolta dalla solitudine e dalla disperazione e deve tentare un TS su @Check[will|dc:26]; se il Colpo è critico, il bersaglio usa il risultato di un grado di successo peggiore del risultato del suo tiro salvezza.</p>\n<hr />\n<p><strong>Successo Critico</strong> La creatura non è influenzata.</p>\n<p><strong>Successo</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentata 1} per 1 round.</p>\n<p><strong>Fallimento</strong> Il valore di spavento della creatura aumenta di 1 (fino a un massimo di 4) e questa è rallentata 1 fino al termine della sua condizione spaventato.</p>\n<p><strong>Fallimento Critico</strong> Come per il fallimento, ma la creatura è @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzata} fino al termine della sua condizione spaventato. All’inizio di ciascuno dei suoi turni, può terminare in anticipo la condizione paralizzato superando un TS su @Check[will|dc:26].</p>",
+                    "name": "Freccia della Disperazione"
+                },
+                "uS98HfKqTgAefSsN": {
+                    "description": "<p><strong>Requisiti</strong> Il baykok è adiacente a un umanoide vivente @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzato}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuto}, o @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{privo di sensi} .</p>\n<hr />\n<p><strong>Effetto</strong> Il baykok tocca il bersaglio e divora parte della sua forza vitale. Il bersaglio deve superare un TS su @Check[fortitude|dc:26] o essere afflitto dalla maledizione debilitante del baykok. Se il bersaglio fallisce e non era già afflitto dalla maledizione debilitante, il baykok ottiene [[/r 20 #Punti Ferita Temporanei]]{20 Punti Ferita temporanei} che durano 1 ora.</p>",
+                    "name": "Divorare Vita"
+                },
+                "tR481pq7xrt35Xrw": {
+                    "description": "<p>36 metri. @Check[will|dc:25]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "CVVLZgcOZxdjSrnH": {
+                    "name": "Maledizione Debilitante",
+                    "description": "<p>Il baykok sottrae vita dalla sua vittima lasciando al suo posto una paura apatica.</p>\n<p>Se il bersaglio fallisce il suo tiro salvezza contro Divorare Vita, diventa @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{risucchiato 1}.</p>\n<p>Ogni volta che il bersaglio riposa per una notte intera, deve superare un TS su @Check[fortitude|dc:26] o il suo valore risucchiato aumenta piuttosto che diminuire. La maledizione termina se la creatura recupera dalla condizione risucchiato, ma se la creatura raggiunge risucchiato 5 per via di questo effetto, muore.</p>"
+                }
+            },
+            "description": "<p>Un baykok è il residuo irrequieto di un guerriero o di un cacciatore, cacciato per le sue azioni malvagie e condannato a librarsi per sempre nel cielo lontano da casa, incapace di poggiare di nuovo piede sul terreno. Nelle zone selvagge infestate dalla creatura, le sue urla disperate e solitarie sono udibili, di notte, per chilometri. Una rabbia invidiosa la spinge a dare la caccia agli umanoidi isolati, soprattutto guerrieri e cacciatori, che le riportano alla mente la vita passata e come l’abbia sciupata. Le frecce invisibili del baykok trasportano con loro la sua gelida solitudine e il suo tocco invidioso è in grado di sottrarre la vitalità di una vittima indifesa.</p>"
         },
         "Esipil": {
             "items": {
@@ -5788,6 +5931,13 @@
             },
             "description": "<p>Questi eleganti azarketi esplorano i relitti e le rovine delle coste del Mare Interno. Di casa sia sulla terraferma che sott’acqua, combattono per proteggere le loro scoperte, la loro vita e la loro reputazione.</p>\n<hr />\n<p>Nel corso degli eventi del Cataclisma, una frazione della popolazione azlanti è stata mutata dagli odiati nemici alghollthu per sopravvivere nelle profondità oceaniche. Noti comunemente come “uomini pesce” o, talvolta, come “azlanti inferiori”, gli azarketi vivono soprattutto nell’Oceano Arcadiano, nel Mare Interno e nelle rovine dell’Azlant. Mantengono l’atteggiamento arrogante e gli occhi viola dei loro antenati, ma hanno corpi privi di peli, branchie prominenti e piedi e mani palmati. Molti di loro hanno poteri idrocinetici innati che usano per produrre piccole correnti, attutire i loro tuffi e prevedere il tempo. Non si sa se questo potere origini dalla magia latente del loro retaggio azlanti o dall’ingerenza alghollthu.</p>\n<p>Gli azarketi sono sopravvissuti a secoli di schiavitù ed esperimenti alghollthu prima di essere abbandonati dai loro padroni. Da allora, gli azarketi hanno costruito i loro insediamenti e formato le loro società, viaggiato in lungo e in largo per le vie d’acqua di Golarion ed esplorato sia le rovine del loro impero distrutto che le miriadi di culture che punteggiano le coste del mondo.</p>\n<p>Orgogliosi del loro retaggio, gli azarketi sono schivi, territoriali e per nulla ospitali nei confronti degli estranei che si recano nei loro insediamenti sommersi o degli esploratori che cercano di saccheggiare le rovine dell’Azlant. Sono pochi quelli che instaurano delle relazioni con gli insediamenti costieri o insulari difendendoli dai pericoli acquatici o favorendo il commercio marittimo.</p>",
             "name": "Azarketi Esploratore"
+        },
+        "Buso Farmer": {
+            "items": {
+                "JK8lH0FZWQnphVLZ": {
+                    "name": "\n"
+                }
+            }
         }
     },
     "label": "Bestiario 3"
