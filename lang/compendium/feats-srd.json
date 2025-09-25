@@ -6108,7 +6108,7 @@
       "name": "Crane Stance"
     },
     "Cranial Detonation": {
-      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You successfully reduce one or more non-mindless enemies to 0 Hit Points with a spell.</p>\n<hr />\n<p>As your overwhelming psyche fells a creature, you use its flickering consciousness to detonate psychic energy from the creature's head. Each enemy you reduced to 0 Hit Points dies and its head explodes. Each exploding head generates a shockwave in a @Template[emanation|distance:15] around that enemy. Each creature in any of the emanations takes @Damage[10d6[bludgeoning]|options:area-damage] damage with a @Check[reflex|against:spell|basic|options:area-effect]. If this damage reduces an enemy to 0 Hit Points, its head also explodes, potentially damaging more creatures and potentially causing more detonations. A given creature can take damage only once from a single use of Cranial Detonation.</p>",
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You successfully reduce one or more non-mindless enemies to 0 Hit Points with a spell.</p><hr /><p>As your overwhelming psyche fells a creature, you use its flickering consciousness to detonate psychic energy from the creature's head. Each enemy you reduced to 0 Hit Points dies and its head explodes. Each exploding head generates a shockwave in a @Template[emanation|distance:15] around that enemy. Each creature in any of the emanations takes @Damage[10d6[bludgeoning]|options:area-damage] damage with a @Check[reflex|against:occult|basic|options:area-effect]. If this damage reduces an enemy to 0 Hit Points, its head also explodes, potentially damaging more creatures and potentially causing more detonations. A given creature can take damage only once from a single use of Cranial Detonation.</p>",
       "name": "Cranial Detonation"
     },
     "Crashing Slam": {
@@ -6616,7 +6616,7 @@
       "name": "Daring Flourish"
     },
     "Dark Persona's Presence": {
-      "description": "<p><strong>Trigger</strong> You @UUID[Compendium.pf2e.actionspf2e.Item.7GeguyqyD1TjoC4r]{Unleash your Psyche}.</p><hr /><p>When you Unleash your Psyche, all your rage and pain-the portion of your psyche dedicated to cruel retribution-come along with it.</p>\n<p>The force of your dark persona's negativity batters constantly against all creatures in a @Template[emanation|distance:30] when you Unleash your Psyche and for as long as your Psyche is Unleashed. A creature must attempt a @Check[will|options:inflicts:frightened] save against your spell DC the first time it enters the emanation, or if it's in the emanation when you take this action; it doesn't need to attempt a save again, even if it leaves the emanation and returns. A creature frightened by your Dark Persona's Presence can't decrease its frightened value below 1 while within the emanation.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<p>While your Psyche is Unleashed, your dark persona cares only for destruction. You can Cast a Spell only if it can directly damage an enemy or object or can impose a detrimental condition or penalty on one.</p>",
+      "description": "<p><strong>Trigger</strong> You @UUID[Compendium.pf2e.actionspf2e.Item.7GeguyqyD1TjoC4r]{Unleash your Psyche}.</p><hr /><p>When you Unleash your Psyche, all your rage and pain-the portion of your psyche dedicated to cruel retribution-come along with it.</p>\n<p>The force of your dark persona's negativity batters constantly against all creatures in a @Template[emanation|distance:30] when you Unleash your Psyche and for as long as your Psyche is Unleashed. A creature must attempt a @Check[will|against:occult|options:area-effect,inflicts:frightened] save against your spell DC the first time it enters the emanation, or if it's in the emanation when you take this action; it doesn't need to attempt a save again, even if it leaves the emanation and returns. A creature frightened by your Dark Persona's Presence can't decrease its frightened value below 1 while within the emanation.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<p>While your Psyche is Unleashed, your dark persona cares only for destruction. You can Cast a Spell only if it can directly damage an enemy or object or can impose a detrimental condition or penalty on one.</p>",
       "name": "Dark Persona's Presence"
     },
     "Darkseer": {
@@ -19546,7 +19546,7 @@
       "name": "Mythic Allies"
     },
     "Mythic Casting": {
-      "description": "<p>You can infuse mythic power directly into your spells to make them exceptionally potent. Spend a Mythic Point; if the next action you use is to Cast a Spell, use mythic proficiency to determine your spell attack rolls and save DC for that spell.</p>",
+      "description": "<p>You can infuse mythic power directly into your spells to make them exceptionally potent. Spend a Mythic Point; if the next action you use is to Cast a Spell, use mythic proficiency to determine your spell attack rolls and save DC for that spell.</p><hr /><p><em>Note:</em> PFS 6-09 allows for the action you use next to be a kineticist impulse, using your mythic proficiency instead of impulse attack rolls and save DC.</p>",
       "name": "Mythic Casting"
     },
     "Mythic Containment": {
@@ -22476,11 +22476,11 @@
       "name": "Proximity Alert"
     },
     "Psi Burst": {
-      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>With a passing thought, you direct violent psychic energies at a nearby creature. Target one creature within 30 feet. It takes @Damage[(ceil(@actor.level/2)d4)[bludgeoning]] damage with a @Check[reflex|basic] save. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>",
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>With a passing thought, you direct violent psychic energies at a nearby creature. Target one creature within 30 feet. It takes @Damage[(ceil(@actor.level/2)d4)[bludgeoning]] damage with a @Check[reflex|against:occult|basic] save. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>",
       "name": "Psi Burst"
     },
     "Psi Catastrophe": {
-      "description": "<p>You stop holding your power back, unleashing it all in a catastrophic blast. All creatures in a @Template[emanation|distance:20] take @Damage[(@actor.level)d6[bludgeoning]|options:area-damage]{1d6 bludgeoning damage per level} with a @Check[reflex|against:spell|basic|options:area-effect]. Your psyche subsides as your power is expended.</p>",
+      "description": "<p>You stop holding your power back, unleashing it all in a catastrophic blast. All creatures in a @Template[emanation|distance:20] take @Damage[(@actor.level)d6[bludgeoning]|options:area-damage]{1d6 bludgeoning damage per level} with a @Check[reflex|against:occult|basic|options:area-effect]. Your psyche subsides as your power is expended.</p>",
       "name": "Psi Catastrophe"
     },
     "Psi Development": {
@@ -25419,7 +25419,7 @@
       "name": "See You in Hell"
     },
     "See the Unseen": {
-      "description": "<p>You notice things that others can't see at all. While you're adjacent to an @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creature of your level or lower, it is instead only @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from you. You only need a successful @Check[flat|dc:5] to target a hidden creature.</p>",
+      "description": "<p>You notice things that others can't see at all. While you're adjacent to an @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creature of your level or lower, it is instead only @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from you. You only need a successful @Check[flat|dc:5|showDC:all] to target a hidden creature.</p>",
       "name": "See the Unseen"
     },
     "Seedpod": {
@@ -31175,7 +31175,7 @@
       "name": "True Dragon's Flight"
     },
     "True Gaze": {
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>When you focus your eyes carefully, your gaze can pierce through all obfuscations, even magical ones. When you use True Gaze, you gain the effects of a 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight} spell, using your Perception modifier for the counteract check.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>When you focus your eyes carefully, your gaze can pierce through all obfuscations, even magical ones. When you use True Gaze, you gain the effects of a 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight} spell, using your @Check[perception] modifier for the counteract check.</p>",
       "name": "True Gaze"
     },
     "True Hypercognition": {
@@ -32678,7 +32678,7 @@
       "name": "Vine Lash"
     },
     "Violent Unleash": {
-      "description": "<p><strong>Trigger</strong> You @UUID[Compendium.pf2e.actionspf2e.Item.7GeguyqyD1TjoC4r]{Unleash your Psyche}.</p><hr /><p>The force of your mind unleashing itself wracks your enemies with a violent shockwave. You deal @Damage[ceil(@actor.level/2)d6[force]|options:area-damage] damage to all creatures in a @Template[emanation|distance:20], with a @Check[reflex|basic|options:area-effect] save. This explosion is taxing, making you @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At 5th level and every 2 levels thereafter, the damage increases by 1d6.</p>",
+      "description": "<p><strong>Trigger</strong> You @UUID[Compendium.pf2e.actionspf2e.Item.7GeguyqyD1TjoC4r]{Unleash your Psyche}.</p><hr /><p>The force of your mind unleashing itself wracks your enemies with a violent shockwave. You deal @Damage[ceil(@actor.level/2)d6[force]|options:area-damage] damage to all creatures in a @Template[emanation|distance:20], with a @Check[reflex|against:occult|basic|options:area-effect] save. This explosion is taxing, making you @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At 5th level and every 2 levels thereafter, the damage increases by 1d6.</p>",
       "name": "Violent Unleash"
     },
     "Violent Vines": {
