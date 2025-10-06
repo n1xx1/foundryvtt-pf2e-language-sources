@@ -7,13 +7,23 @@
           "description": "<p>The angelic choir raises their voices in song, singing a note that vibrates the very fabric of being. This takes the form of a @Template[type:burst|distance:15] within 90 feet that deals @Damage[6d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:29|basic|options:area-effect,inflicts:deafened] save). A creature who critically fails the save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. When the angelic chorus is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:10].</p>",
           "name": "Admonishing Hymn"
         },
+        "8IfYx77BNUsXURJH": {
+          "description": "<p>20 feet.</p>\n<p>Allies in the aura gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against effects with the auditory or sonic trait. Enemies in the aura take a –2 status penalty to sonic damage rolls and a –1 status penalty to AC and all saves against auditory and sonic effects.</p>",
+          "name": "Harmonizing Aura"
+        },
         "ARm9JqD3DFsJH9sb": {
           "description": "<p>When the angelic chorus Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone. When Casting a Spell that deals sonic damage, that spell gains a status bonus to damage equal to its rank.</p>",
           "name": "Harmonized Spellcasting"
         },
         "IGvKRatzTPUtOGBv": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> With sonorous shouts, the angelic chorus lashes out with their fists in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[bludgeoning],1d6[sonic]|options:area-damage]{1d8 bludgeoning damage plus 1d6 sonic damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+7)[bludgeoning],2d6[sonic]|options:area-damage]{2d8+7 bludgeoning damage plus 2d6 sonic damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+10)[bludgeoning],2d6[sonic]|options:area-damage]{3d8+10 bludgeoning damage plus 2d6 sonic damage}</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> With sonorous shouts, the angelic chorus lashes out with their fists in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[bludgeoning],1d6[sonic]|options:area-damage]{1d8 bludgeoning damage plus 1d6 sonic damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+7)[bludgeoning],2d6[sonic]|options:area-damage]{2d8+7 bludgeoning damage plus 2d6 sonic damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+10)[bludgeoning],2d6[sonic]|options:area-damage]{3d8+10 bludgeoning damage plus 2d6 sonic damage}</p>",
           "name": "Righteous Clamor"
+        },
+        "QHJ2juirPx0zC8gZ": {
+          "name": "Noise Blast (At Will)"
+        },
+        "VcDH5zYjToPwZXjy": {
+          "name": "Cleanse Affliction (At Will)"
         },
         "XsVIz4B9oOr6LR1y": {
           "name": "Truespeech (Constant)"
@@ -22,14 +32,21 @@
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.MXI6zwrvbQNIv7ji"
         },
         "icFtpyk3vKrnSxKV": {
-          "description": "<p><strong>HP</strong> 210 (4 segments); <strong>Thresholds</strong> 210 (4 segments); Thresholds 140 (3 segments), 70 (2 segments)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>",
+          "description": "<p><strong>HP</strong> 210 (4 segments); <strong>Thresholds</strong> 140 (3 segments), 70 (2 segments)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>",
           "name": "Troop Defenses"
+        },
+        "jrz2AkVEYb2ACdZq": {
+          "name": "Clear Mind (At Will)"
+        },
+        "wlV1HBrhcnLbwGcZ": {
+          "name": "Counter Performance (At Will)"
         },
         "y5xhdwCG5XD2cmSs": {
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
         }
       },
       "name": "Angelic Chorus",
+      "npcAllSaves": "+1 status to all saves vs. magic",
       "npcHp": "(4 segments); Thresholds 210 (4 segments); Thresholds 140 (3 segments), 70 (2 segments)",
       "npcSpeed": "troop movement"
     },
@@ -118,7 +135,7 @@
       "description": "<p>Archer regiments are capable of filling the sky with arrows at great distances, making them vital to any war leader who wishes to weaken the enemy before they get close to allied units or encampments.</p>",
       "items": {
         "8AcivAl6LMDAhval": {
-          "description": "<p>The archer regiment draws daggers to attack close-range enemies. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:29|basic|options:area-effect] save. The damage depends on the number of actions. The archer regiment gains a +1 circumstance bonus to AC until the beginning of their next turn.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d4+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d4+12)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d4+15)[piercing]|options:area-damage] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The archer regiment draws daggers to attack close-range enemies. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:29|basic|options:area-effect] save. The damage depends on the number of actions. The archer regiment gains a +1 circumstance bonus to AC until the beginning of their next turn.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d4+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d4+12)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d4+15)[piercing]|options:area-damage] damage</p>",
           "name": "Dagger Defense"
         },
         "R51FceAqG8YYfUtl": {
@@ -145,7 +162,7 @@
       "description": "<p>Rekheps, also known as shield archons, stand against any fiendish onslaughts on Heaven, but occasionally travel to the mortal Universe to protect the weak. Large formations of rekheps are a sight to behold as they lock their shield forms in place to face the wicked.</p>",
       "items": {
         "544dEwQrlWt2mwzj": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The archon bastion engages in a uniform melee attack against each enemy in @Template[type:emanation|distance:10] (@Check[reflex|dc:34|basic|options:area-effect] save). The damage depends on the number of actions. An unholy creature that fails its save against this effect takes an additional @Damage[2d6[spirit]|options:area-damage] damage (or @Damage[1d6[spirit]|options:area-damage] damage for the one-action version).</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+14)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+19)[piercing]|options:area-damage] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The archon bastion engages in a uniform melee attack against each enemy in @Template[type:emanation|distance:10] (@Check[reflex|dc:34|basic|options:area-effect] save). The damage depends on the number of actions. An unholy creature that fails its save against this effect takes an additional @Damage[2d6[spirit]|options:area-damage] damage (or @Damage[1d6[spirit]|options:area-damage] damage for the one-action version).</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+14)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+19)[piercing]|options:area-damage] damage</p>",
           "name": "Smiting Lances"
         },
         "AurAKcqtjnEcr4Yi": {
@@ -688,7 +705,7 @@
           "name": "Arcane Explosion"
         },
         "PVMF2htb8MLPe6yb": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gnome engineers vent the cannons' energy in a blast that hits all creatures in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+8)[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+10)[fire]|options:area-damage] damage</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gnome engineers vent the cannons' energy in a blast that hits all creatures in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+8)[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+10)[fire]|options:area-damage] damage</p>",
           "name": "Cannon Vent"
         },
         "i5jWmQ8e6h6E4QoP": {
@@ -1269,7 +1286,7 @@
           "name": "Fast Healing (while underground)"
         },
         "DTzsPQI9SG94AmvU": {
-          "description": "<p>The scamp avalanche attacks with a flurry of tiny slams. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning],1d4[poison]|options:area-damage]{1d6 bludgeoning damage and 1d4 poison damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[bludgeoning],2d4[poison]|options:area-damage]{2d6+2 bludgeoning damage and 2d4 poison damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[bludgeoning],3d4[poison]|options:area-damage]{2d6+4 bludgeoning damage and 3d4 poison damage}</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp avalanche attacks with a flurry of tiny slams. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning],1d4[poison]|options:area-damage]{1d6 bludgeoning damage and 1d4 poison damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[bludgeoning],2d4[poison]|options:area-damage]{2d6+2 bludgeoning damage and 2d4 poison damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[bludgeoning],3d4[poison]|options:area-damage]{2d6+4 bludgeoning damage and 3d4 poison damage}</p>",
           "name": "Stone Slams"
         },
         "f2MKhz42yWBSTE9X": {
@@ -1296,7 +1313,7 @@
           "name": "Fast Healing (while underwater)"
         },
         "DTzsPQI9SG94AmvU": {
-          "description": "<p>The scamp flood attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[acid]|options:area-damage]{1d6 slashing damage and 1d4 acid damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[slashing],2d4[acid]|options:area-damage]{2d6+2 slashing damage and 2d4 acid damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[slashing],3d4[acid]|options:area-damage]{2d6+4 slashing damage and 3d4 acid damage}</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp flood attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[acid]|options:area-damage]{1d6 slashing damage and 1d4 acid damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[slashing],2d4[acid]|options:area-damage]{2d6+2 slashing damage and 2d4 acid damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[slashing],3d4[acid]|options:area-damage]{2d6+4 slashing damage and 3d4 acid damage}</p>",
           "name": "Drenching Claws"
         },
         "f2MKhz42yWBSTE9X": {
@@ -1327,7 +1344,7 @@
           "name": "Fast Healing (while touching fire)"
         },
         "DTzsPQI9SG94AmvU": {
-          "description": "<p>The scamp inferno attacks with a flurry of tiny teeth and flickering flames. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[fire]|options:area-damage]{1d6 piercing damage and 1d4 fire damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[piercing],2d4[fire]|options:area-damage]{2d6+2 piercing damage and 2d4 fire damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[piercing],3d4[fire]|options:area-damage]{2d6+4 piercing damage and 3d4 fire damage}</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp inferno attacks with a flurry of tiny teeth and flickering flames. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[fire]|options:area-damage]{1d6 piercing damage and 1d4 fire damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[piercing],2d4[fire]|options:area-damage]{2d6+2 piercing damage and 2d4 fire damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[piercing],3d4[fire]|options:area-damage]{2d6+4 piercing damage and 3d4 fire damage}</p>",
           "name": "Burning Bites"
         },
         "f2MKhz42yWBSTE9X": {
@@ -1354,7 +1371,7 @@
           "name": "Fast Healing (while touching metal)"
         },
         "DTzsPQI9SG94AmvU": {
-          "description": "<p>The scamp shrapnel attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[bleed]|options:area-damage]{1d6 slashing damage and 1d4 bleed damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[slashing],2d4[bleed]|options:area-damage]{2d6+2 slashing damage and 2d4 bleed damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[slashing],3d4[bleed]|options:area-damage]{2d6+4 slashing damage and 3d4 bleed damage}</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp shrapnel attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[bleed]|options:area-damage]{1d6 slashing damage and 1d4 bleed damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[slashing],2d4[bleed]|options:area-damage]{2d6+2 slashing damage and 2d4 bleed damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[slashing],3d4[bleed]|options:area-damage]{2d6+4 slashing damage and 3d4 bleed damage}</p>",
           "name": "Metallic Claws"
         },
         "f2MKhz42yWBSTE9X": {
@@ -1381,7 +1398,7 @@
           "name": "Fast Healing (while touching plants or trees)"
         },
         "DTzsPQI9SG94AmvU": {
-          "description": "<p>The scamp tangle attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[bleed]|options:area-damage]{1d6 piercing damage and 1d4 persistent bleed damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[piercing],2d4[bleed]|options:area-damage]{2d6+2 piercing damage and 2d4 persistent bleed damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[piercing],3d4[bleed]|options:area-damage]{2d6+4 piercing damage and 3d4 persistent bleed damage}</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp tangle attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[bleed]|options:area-damage]{1d6 piercing damage and 1d4 persistent bleed damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[piercing],2d4[bleed]|options:area-damage]{2d6+2 piercing damage and 2d4 persistent bleed damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[piercing],3d4[bleed]|options:area-damage]{2d6+4 piercing damage and 3d4 persistent bleed damage}</p>",
           "name": "Thorny Claws"
         },
         "HywkANqW7LZMN3L3": {
@@ -1411,7 +1428,7 @@
           "name": "Fast Healing (while in open air)"
         },
         "DTzsPQI9SG94AmvU": {
-          "description": "<p>The scamp whirlwind attacks with a flurry of tiny slams. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning],1d4[sonic]|options:area-damage]{1d6 bludgeoning damage and 1d4 sonic damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[bludgeoning],2d4[sonic]|options:area-damage]{2d6+2 bludgeoning damage and 2d4 sonic damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[bludgeoning],3d4[sonic]|options:area-damage]{2d6+4 bludgeoning damage and 3d4 sonic damage}</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp whirlwind attacks with a flurry of tiny slams. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning],1d4[sonic]|options:area-damage]{1d6 bludgeoning damage and 1d4 sonic damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[bludgeoning],2d4[sonic]|options:area-damage]{2d6+2 bludgeoning damage and 2d4 sonic damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[bludgeoning],3d4[sonic]|options:area-damage]{2d6+4 bludgeoning damage and 3d4 sonic damage}</p>",
           "name": "Sonic Slams"
         },
         "a1S8MIzlSbM14TJF": {
@@ -1499,7 +1516,7 @@
           "name": "Shepherd’s Touch"
         },
         "Czd11iaEfPW4tn8T": {
-          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The vanths swing their scythes in a coordinated melee attack. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:30|basic|options:area-effect] save. The damage depends on the number of actions. The slashing damage is treated as adamantine, cold iron, and silver.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+1)[slashing],1d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{1d10+1 slashing damage plus 1d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+3)[slashing],3d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+3 slashing damage plus 3d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+7)[slashing],4d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+7 slashing damage plus 4d6 shepherd's touch}</p>",
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The vanths swing their scythes in a coordinated melee attack. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:30|basic|options:area-effect] save. The damage depends on the number of actions. The slashing damage is treated as adamantine, cold iron, and silver.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+1)[slashing],1d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{1d10+1 slashing damage plus 1d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+3)[slashing],3d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+3 slashing damage plus 3d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+7)[slashing],4d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+7 slashing damage plus 4d6 shepherd's touch}</p>",
           "name": "Harvest the Wicked"
         },
         "Gf3nHtV2wp2S1WHg": {
