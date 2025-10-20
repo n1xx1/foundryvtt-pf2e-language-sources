@@ -1400,6 +1400,10 @@
                 "BaseArmors": {
                     "Hint": "La categoria inferiore della tassonomia delle armature di Pathfinder 2e (ad esempio Armatura Completa o Cotta di Maglia)",
                     "Name": "Tipi Base Armature"
+                },
+                "ClassTraits": {
+                    "Name": "Tratti di Classe",
+                    "Hint": "Tratti che fanno riferimento a singole classi"
                 }
             },
             "Tokens": {
@@ -1428,15 +1432,23 @@
                     "Name": "Progressione Automatica dei Bonus",
                     "Hint": "Abilita il supporto per la regola alternativa Progressione Automatica dei Bonus. Il potenziamento delle abilità deve essere gestito manualmente, al momento.",
                     "Choices": {
-                        "noABP": "Non usare PAB",
+                        "noABP": "Disabilitato",
                         "ABPFundamentalPotency": "PAB: Permetti le Rune di Proprietà",
                         "ABPRulesAsWritten": "PAB: Non permettere le Rune di Proprietà"
                     }
                 },
                 "Proficiency": {
-                    "Name": "Competenza senza Livello",
-                    "Hint": "Gioca con la regola alternativa competenza senza livello dal manuale Guida del Game Master pag. 194.",
-                    "ModifiersHint": "Imposta il valore del modificatore per ogni grado di competenza (solo competenza senza livello)."
+                    "Name": "Abilitata",
+                    "Hint": "Gioca con la regola alternativa Competenza Senza Livello dal manuale Manuale del GM. Se abilitato, i bonus di competenza alternativi possono essere impostati (di default sono quelli suggeriti dal Manuale del GM).",
+                    "ModifiersHint": "Imposta il valore del modificatore per ogni grado di competenza (solo competenza senza livello).",
+                    "Rank": {
+                        "Trained": "A",
+                        "Untrained": "S",
+                        "Legendary": "L",
+                        "Master": "M",
+                        "Expert": "E"
+                    },
+                    "Legend": "Competenza Senza Livello"
                 },
                 "Title": "Regole Alternative",
                 "GradualBoosts": {
@@ -1484,6 +1496,13 @@
             },
             "Core": {
                 "ManagedBySystem": "Gestito e bloccato dal sistema PF2e"
+            },
+            "DistanceDisplay": {
+                "Hint": "Mostra la distanza tra i token controllati e sotto il mouse nel canvas.",
+                "Name": "Mostra Distanza Token",
+                "always": "Sempre",
+                "encounters": "Durante gli Incontri",
+                "never": "Mai"
             }
         },
         "WeaponPropertyRune": {
@@ -3741,7 +3760,7 @@
                 "Attribute": {
                     "Key": "Attributo Chiave",
                     "Apex": "Attributo Apex",
-                    "Boosts": "Incrementi di Attributo"
+                    "Boosts": "Aumenti di Attributo"
                 },
                 "Proficiency": {
                     "SavingThrow": {
@@ -3860,7 +3879,11 @@
                     "Special": "Speciale"
                 },
                 "SpecialSkill": "+{mod} {label}",
-                "LevelN": "Creatura {level}"
+                "LevelN": "Creatura {level}",
+                "BonusLabel": {
+                    "modifier": "Modificatore di Attacco",
+                    "save": "CD Tiro Salvezza"
+                }
             },
             "Plural": "Personaggi",
             "IWREditor": {
@@ -3983,7 +4006,7 @@
             },
             "Attacks": "Attacchi",
             "Speed": {
-                "BaseLabel": "Velocità di {type} Base",
+                "BaseLabel": "Velocità {type} {value} metri",
                 "Plural": "Velocità",
                 "Label": "Velocità",
                 "LabelFeet": "Velocità (Metri)",
@@ -3994,7 +4017,8 @@
                     "Label": "Velocità di {type}",
                     "Land": "Sul Terreno",
                     "Swim": "Nuotare"
-                }
+                },
+                "BaseWithSource": "Velocità {type} {value} metri ({source})"
             },
             "Vehicle": {
                 "EmitsSound": {
@@ -4845,8 +4869,8 @@
         "HitPointsHeader": "Punti Ferita",
         "HitPointsShortLabel": "PF",
         "HitPointsDetailsLabel": "Dettagli PF",
-        "AbilityBoost": "Incremento di Attributo",
-        "AbilityBoostLevels": "Livelli di Incremento di Attributo",
+        "AbilityBoost": "Aumento di Attributo",
+        "AbilityBoostLevels": "Livelli di Aumenti di Attributo",
         "AbilityCha": "Carisma",
         "AbilityCon": "Costituzione",
         "AbilityDex": "Destrezza",
@@ -5135,7 +5159,8 @@
                 "Sizes": "Taglie",
                 "WeaponFilters": "Filtri Armi",
                 "OrderByLabel": "Ordina per"
-            }
+            },
+            "TabAbilities": "Abilità"
         },
         "Condition": {
             "ActiveLabel": "Attivo",
@@ -5540,6 +5565,10 @@
             "PlaceWaypoint": {
                 "Hint": "Posiziona un waypoint mentre fai una misurazione con il trascinamento.",
                 "Label": "Posiziona un Waypoint (Misurazione di Trascinamento)"
+            },
+            "OpenCompendiumBrowser": {
+                "Hint": "Apri o chiudi il browser del compendio.",
+                "Label": "Apri/Chiudi Browser del Compendio"
             }
         },
         "KitItems": "Oggetti",
@@ -5844,7 +5873,9 @@
                 "higher": "Rilanciato e mantenuto il risultato più alto"
             },
             "KeepHigher": "Tira nuovamente e mantieni il risultato più alto",
-            "KeepLower": "Tira nuovamente e mantieni il risultato più basso"
+            "KeepLower": "Tira nuovamente e mantieni il risultato più basso",
+            "MessageHeroPoints": "Rilanciato utilizzando un Punto Eroe",
+            "WarnNoResource": "{name} non ha {resource}"
         },
         "ResistancesLabel": "Resistenze",
         "RestoreSpellTitle": "Ripristina Incantesimo",
@@ -5999,7 +6030,13 @@
                 "Hint": "Attiva l'atteggiamento \"segreto\", che mostra un bordo viola per i possessori e nessun bordo o modifica al cursore per gli altri. Un token con questo atteggiamento non può essere bersagliato dai non proprietari."
             },
             "Flanking": "Fiancheggiare",
-            "ActorLinkForced": "Gli attori {type} non possono essere scollegati."
+            "ActorLinkForced": "Gli attori {type} non possono essere scollegati.",
+            "Distance": "Distanza: {distance} {unit}",
+            "Mystified": {
+                "TheCreature": "La creatura",
+                "TheObject": "L'oggetto"
+            },
+            "OutOfReach": "{token} è fuori portata."
         },
         "TotalTreasure": "Totale Tesoro",
         "TotalCoinage": "Totale Monete",
@@ -8215,7 +8252,7 @@
                     "BoilingSpit": "Sputo Bollente"
                 },
                 "CityScavenger": {
-                    "EarnIncome": "Rovistatore Urbano - Guadagnare"
+                    "EarnIncome": "Rovistatore Urbano — Guadagnare"
                 },
                 "Twitchy": {
                     "InitiativeToggle": "Nervosetto — Avversario usa Inganno o Diplomazia per l'iniziativa",
@@ -9470,6 +9507,9 @@
                         "Special": "Aggiungi a questo numero le capacità del famiglio bonus che ottieni per il fatto di essere un fattucchiere."
                     },
                     "Thaumaturge": "Prendendo le parti migliori di ogni tradizione magica, hai trovato un modo per garantire al tuo famiglio ancora più capacità degli altri. Ogni giorno puoi selezionare una base di sei capacità del famiglio o del padrone, invece di quattro."
+                },
+                "LightningSwap": {
+                    "Fighter": "Ti sei allenato a passare rapidamente da uno stile di combattimento all’altro, cambiando equipaggiamento nel processo. Interagisci per riporre qualsiasi numero di oggetti dalle tue mani, poi estrai fino a due armi o un’arma e uno scudo."
                 }
             },
             "RelicGift": {
@@ -10875,6 +10915,10 @@
                     "Hint": "Uno o più tipi di ambienti per questa regione di scena."
                 },
                 "Label": "Ambiente"
+            },
+            "DifficultTerrain": {
+                "DifficultTerrain": "Terreno Difficile",
+                "GreaterDifficultTerrain": "Terreno Difficile Superiore"
             }
         },
         "Environment": {
@@ -11168,7 +11212,46 @@
         "TraitDescriptionRadiation": "Una emissione pericolosa e solitamente velenosa, solitamente origina da minerali radioattivi.",
         "TraitDescriptionOverflow": "Gli impulsi più potenti assorbono troppa energia dal tuo cancello cinetico in poco tempo. Quando usi un impulso con il tratto esubero, la tua aura cinetica si disattiva fino a quando non la rivitalizzi (di solito con Incanalare Elementi). Estinguere l’elemento in questo modo è molto faticoso e, di conseguenza, puoi usare solo un impulso di esubero per round, anche se riattivi il tuo cancello cinetico.",
         "TraitDescriptionTalos": "I talos sono eredi planari che discendono dagli zuhra.",
-        "TraitDescriptionInfusion": "Le azioni con il tratto infusione modificano gli impulsi cinetici. Devi usare un’azione di infusione subito prima dell’azione d’impulso che vuoi modificare. Se usi un’azione (comprese le azioni gratuite e le reazioni) diversa da un’azione d’impulso immediatamente dopo, i benefici dell’azione di infusione vengono sprecati. Eventuali effetti aggiuntivi apportati da un’azione di infusione fanno parte dell’effetto dell’impulso, non dell’azione di infusione stessa."
+        "TraitDescriptionInfusion": "Le azioni con il tratto infusione modificano gli impulsi cinetici. Devi usare un’azione di infusione subito prima dell’azione d’impulso che vuoi modificare. Se usi un’azione (comprese le azioni gratuite e le reazioni) diversa da un’azione d’impulso immediatamente dopo, i benefici dell’azione di infusione vengono sprecati. Eventuali effetti aggiuntivi apportati da un’azione di infusione fanno parte dell’effetto dell’impulso, non dell’azione di infusione stessa.",
+        "ItemTransferDialog": {
+            "Button": {
+                "purchase": "Acquista",
+                "move": "Trasferisci",
+                "gift": "Dai"
+            },
+            "Prompt": {
+                "gift": "Vuoi dare quest'oggetto a {actor}?",
+                "move": "Vuoi trasferire quest'oggetto a {actor}?",
+                "purchase": "{actor} vuole acquistare quest'oggetto?"
+            },
+            "Title": {
+                "move": "Trasferisci {item}",
+                "purchase": "Acquista {item}",
+                "gift": "Dai {item}"
+            }
+        },
+        "StackGroupBlowgunDarts": "Dardi per Cerbottana",
+        "StackGroupBolts": "Quadrelli per Balestra",
+        "StackGroupRounds10": "Round (10)",
+        "StackGroupRounds5": "Round (5)",
+        "StackGroupSlingBullets": "Proiettili per Fionda",
+        "StackGroupSprayPellets": "Palline a Getto",
+        "StackGroupWoodenTaws": "Biglie di Legno",
+        "LegalNotice": {
+            "Title": "Nota Legale"
+        },
+        "ActionWithDC": "{label} (CD {dc})",
+        "SpellcastingItemCreator": {
+            "Title": "Creazione Oggetto Lancio di Incantesimi",
+            "ViewItem": "Visualizza Oggetto",
+            "CantripDeck5": "Mazzo dei Trucchetti (pacchetto da 5)",
+            "ItemType": "Tipo oggetto",
+            "Label": "Crea un oggetto da {name}",
+            "NoValidRanks": "Nessun Grado Valido"
+        },
+        "PreparationTypeFocus": "Focalizzato",
+        "PreparationTypeRitual": "Rituale",
+        "StackGroupArrows": "Frecce"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
