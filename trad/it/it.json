@@ -59,7 +59,7 @@
             "AddTreasure": "Tesoro",
             "AddWeapon": "Arma",
             "Adjustment": {
-                "EliteLabel": "Elite",
+                "EliteLabel": "D'Élite",
                 "EliteNameFormat": "{name} Elite",
                 "NormalLabel": "Normale",
                 "WeakLabel": "Debole",
@@ -618,6 +618,15 @@
                 },
                 "Draw": {
                     "Title": "Estrarre"
+                },
+                "GiveItem": {
+                    "AnItem": "un oggetto",
+                    "Description": "{actor} ha dato {item} a {other}.",
+                    "Title": "Dai Oggetto"
+                },
+                "ExchangeItems": {
+                    "Title": "Scambia Oggetti",
+                    "Description": "{actor} e {other} hanno scambiato oggetti."
                 }
             },
             "MakeAnImpression": {
@@ -632,11 +641,11 @@
             "PickALock": {
                 "Notes": {
                     "criticalSuccess": "<strong>Successo Critico</strong> Scassini la serratura, oppure totalizzi due successi ai fini di scassinare una serratura complessa. Non lasci tracce dei tuoi armeggiamenti.",
-                    "success": "<strong>Successo</strong> Scassini la serratura, oppure totalizzi un successo ai fini di scassinare una serratura complessa.",
-                    "criticalFailure": "<strong>Fallimento Critico</strong> I tuoi strumenti si rompono. Devi usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararli}, oppure devi sostituirli con dei @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{grimaldelli di ricambio}."
+                    "success": "<strong>Successo</strong> Scassini la serratura, oppure totalizzi un successo ai fini di scassinare una serratura complessa che richiede più di un successo. Lasci dei danni che indicano che la serratura è stata scassinata se esaminata attentamente.",
+                    "criticalFailure": "<strong>Fallimento Critico</strong> I tuoi strumenti si rompono e lasci danni evidenti. Devi usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararli}, oppure devi sostituirli con dei @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{grimaldelli di ricambio}."
                 },
                 "Title": "Scassinare una Serratura",
-                "Description": "<p>Aprire una serratura o un lucchetto senza averne la chiave è simile a Disattivare un Congegno, ma la CD della prova di Furto dipende da com'è costruita e da quant'è complesso il lucchetto (i lucchetti e le loro CD sono indicati nelle loro descrizioni). Le serrature (o lucchetti) di qualità superiore potrebbero richiedere più di un successo per essere scassinate, poiché altrimenti persino un topo d'appartamento senza esperienza potrebbe aprirle continuando a effettuare prove fino a ottenere un 20 naturale col dado. Se non hai gli strumenti adatti, il GM potrebbe permetterti di usare dei grimaldelli improvvisati, che sono considerati come strumenti scadenti.</p><p><strong>Successo Critico</strong> Scassini la serratura, oppure totalizzi due successi ai fini di scassinare una serratura complessa. Non lasci tracce dei tuoi armeggiamenti.</p><p><strong>Successo</strong> Scassini la serratura, oppure totalizzi un successo ai fini di scassinare una serratura complessa.</p><p><strong>Fallimento Critico</strong> I tuoi strumenti si rompono. Devi usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararli}, oppure devi sostituirli con dei @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{grimaldelli di ricambio}.</p>"
+                "Description": "<p>Aprire una serratura o un lucchetto senza averne la chiave è simile a Disattivare un Congegno, ma la CD della prova dipende da com’è costruito e da quant’è complesso il lucchetto. Le serrature (o lucchetti) di qualità superiore potrebbero richiedere più di un successo per essere scassinate. Se non hai gli strumenti adatti, il GM potrebbe permetterti di usare dei grimaldelli improvvisati, che sono considerati come strumenti scadenti.</p><p><strong>Successo Critico</strong> Scassini la serratura, oppure totalizzi due successi ai fini di scassinare una serratura complessa. Non lasci tracce dei tuoi armeggiamenti.</p><p><strong>Successo</strong> Scassini la serratura, oppure totalizzi un successo ai fini di scassinare una serratura complessa che richiede più di un successo. Lasci dei danni che indicano che la serratura è stata scassinata se esaminata attentamente.</p><p><strong>Fallimento Critico</strong> I tuoi strumenti si rompono e lasci danni evidenti. Devi usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararli}, oppure devi sostituirli con dei @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{grimaldelli di ricambio}.</p>"
             },
             "Release": {
                 "Title": "Lasciare",
@@ -1115,7 +1124,8 @@
             },
             "Parry": {
                 "Content": "{actor} inizia a parare.",
-                "Title": "Parata"
+                "Title": "Parata",
+                "ShortTitle": "Parata"
             }
         },
         "SETTINGS": {
@@ -1155,6 +1165,10 @@
                 "Encumbrance": {
                     "Name": "Ingombro",
                     "Hint": "Applica automaticamente la condizione ingombrato alle creature che portano più dei loro rispettivi limiti."
+                },
+                "ReachEnforcement": {
+                    "Hint": "Fai rispettare la portata quando i giocatori provano a interagire con determinati oggetti nel canvas.",
+                    "loot": ""
                 }
             },
             "Metagame": {
@@ -1867,7 +1881,7 @@
                 "rules": "<p>Non ti rendi conto appieno di ciò che accade e attacchi alla cieca. Sei impreparato, non consideri nessuno come tuo alleato (anche se gli altri possono considerarti alleato) e non puoi Ritardare, Preparare o usare reazioni.<p></p>Usi tutte le tue azioni per Colpire o lanciare trucchetti offensivi, ma il GM può farti usare altre azioni per facilitare gli attacchi, come sguainare un'arma, muoverti in modo da avere il bersaglio in gittata e così via. I tuoi bersagli sono determinati casualmente dal GM. Se non hai altri bersagli disponibili, bersagli te stesso, colpendoti automaticamente ma senza ottenere un colpo critico. Se ti è impossibile attaccare o lanciare incantesimi, farfugli parole incoerenti, sprecando le tue azioni.</p>\n<p>Ogni volta che subisci danni da un attacco o incantesimo, puoi tentare una @Check[flat|dc:11] per riprenderti dalla confusione e porre fine alla condizione.</p>",
                 "name": "Confuso",
                 "summary": "Attacchi indiscriminatamente.",
-                "note": "Ogni volta che subisci danni da un attacco o incantesimo, puoi tentare una @Check[flat|showDC:all|dc:11] per riprenderti dalla confusione e porre fine alla condizione."
+                "note": "Ogni volta che subisci danni da un attacco o incantesimo, puoi tentare una @Check[flat|dc:11|name:Confuso|showDC:all] per riprenderti dalla confusione e porre fine alla condizione."
             },
             "unconscious": {
                 "rules": "<p>Stai dormendo o sei stato messo fuori combattimento. Non puoi agire. Subisci penalità di status -4 a CA, Percezione e TS su Riflessi, e hai le condizioni accecato e impreparato. Quando ottieni questa condizione, cadi prono e lasci cadere gli oggetti che impugni o tieni a meno che l'effetto non specifichi altrimenti o il GM determini che sei in una posizione per cui ciò non accade.</p>\n<p>Se sei privo di sensi perché sei morente, non puoi svegliarti fintanto che hai 0 Punti Ferita. Se vieni riportato a 1 Punto Ferita o più tramite la guarigione, perdi le condizioni morente e privo di sensi e puoi agire normalmente nel tuo prossimo turno.</p>\n<p>Se sei privo di sensi e a 0 Punti Ferita, ma non morente, torni naturalmente a 1 Punto Ferita e ti svegli una volta trascorso tempo a sufficienza. Il GM determina quanto tempo resti privo di sensi, da un minimo di 10 minuti a diverse ore. Se vieni guarito durante questo periodo, perdi la condizione privo di sensi e puoi agire normalmente nel tuo prossimo turno.</p>\n<p>Se sei privo di sensi e hai più di 1 Punto Ferita (in genere perché sei addormentato o privo di sensi a causa di un effetto), ti svegli per una delle cause seguenti. Ognuna di queste cose ti fa perdere la condizione privo di sensi.</p><ul><li>Subisci danni, ammesso che questi non ti riducano a 0 Punti Ferita (in tal caso, rimani privo di sensi e ottieni la condizione morente come di consueto).</li><li>Vieni guarito in un modo che non sia la guarigione naturale data dal sonno.</li><li>Qualcuno ti scuote usando un'azione Interagire.</li><li>Attorno a te si verificano forti rumori; ciò però non è automatico. All'inizio del tuo turno, tenti automaticamente una prova di Percezione contro la CD del rumore (o la CD più bassa se c'e più di un rumore), e se la superi ti svegli. Se le creature cercano di restare in silenzio, questa prova di Percezione usa la loro CD di Furtività. Alcuni effetti magici ti fanno dormire cosi profondamente che non ti consentono di tentare questa prova di Percezione.</li><li>Se sei soltanto addormentato, il GM decide che ti svegli perché hai riposato abbastanza o perché qualcosa ti ha disturbato.</ul>",
@@ -1897,7 +1911,7 @@
             },
             "concealed": {
                 "name": "Occultato",
-                "rules": "<p>Fintanto che sei occultato nei confronti di una creatura, per esempio se sei avvolto da una nebbia fitta, quella creatura ha difficoltà a vederti. Puoi ancora essere Osservato, ma è arduo prenderti di mira. Se sei occultato nei confronti di una creatura, questa deve superare una @Check[flat|dc:5] quando ti bersaglia con un attacco, incantesimo o altro effetto.</p>\n<p>Gli effetti ad area non sono soggetti a questa prova semplice. Se la prova fallisce, l'attacco, incantesimo o effetto non ti influenza.</p>",
+                "rules": "<p>Fintanto che sei occultato nei confronti di una creatura, per esempio se sei avvolto da una nebbia fitta, quella creatura ha difficoltà a vederti. Puoi ancora essere Osservato, ma è arduo prenderti di mira. Se sei occultato nei confronti di una creatura, questa deve superare una @Check[flat|dc:5|name:Occultato|showDC:all] quando ti bersaglia con un attacco, incantesimo o altro effetto.</p>\n<p>Gli effetti ad area non sono soggetti a questa prova semplice. Se la prova fallisce, l'attacco, incantesimo o effetto non ti influenza.</p>",
                 "summary": "La nebbia o l'oscuramento simile ti rendono difficile vedere e mirare."
             },
             "controlled": {
@@ -1978,9 +1992,9 @@
             },
             "grabbed": {
                 "name": "Afferrato",
-                "rules": "<p>Sei tenuto fermo da un'altra creatura, cosa che ti da le condizioni immobilizzato e impreparato. Se tenti un'azione maneggiare mentre sei afferrato, devi superare una @Check[flat|dc:5] o perderla; tenta la prova prima di usare l'azione ma prima di applicare qualsiasi effetto.</p>",
+                "rules": "<p>Sei tenuto fermo da un'altra creatura, cosa che ti da le condizioni immobilizzato e impreparato. Se tenti un'azione maneggiare mentre sei afferrato, devi superare una @Check[flat|dc:5|name:Afferrato|showDC:all] o perderla; tenta la prova prima di usare l'azione ma prima di applicare qualsiasi effetto.</p>",
                 "summary": "Una creatura, un oggetto o una magia ti tengono fermo.",
-                "note": "Se tenti un'azione maneggiare mentre sei afferrato, devi superare una @Check[flat|dc:5|showDC:all] o perderla."
+                "note": "Se tenti un'azione maneggiare mentre sei afferrato, devi superare una @Check[flat|dc:5|name:Afferrato|showDC:all] o perderla."
             },
             "helpful": {
                 "name": "Collaborativo",
@@ -1989,7 +2003,7 @@
             },
             "hidden": {
                 "name": "Nascosto",
-                "rules": "<p>Fintanto che sei nascosto a una creatura, questa sa in quale zona ti trovi ma non sa dire dove con precisione. In genere, diventi nascosto usando Furtività per Nasconderti. Quando Individui una creatura usando solo sensi imprecisi, essa rimane nascosta anziché diventare osservata. Una creatura per cui sei nascosto è impreparata nei tuoi confronti, e deve superare una @Check[flat|dc:11] quando ti bersaglia con un attacco, un incantesimo o un altro effetto, altrimenti non riesce a influenzarti. Gli effetti ad area non sono soggetti a tale prova semplice.</p>\n<p>Una creatura può essere in grado di usare l'azione Individuare per cercare di osservarti.</p>",
+                "rules": "<p>Fintanto che sei nascosto a una creatura, questa sa in quale zona ti trovi ma non sa dire dove con precisione. In genere, diventi nascosto usando Furtività per Nasconderti. Quando Individui una creatura usando solo sensi imprecisi, essa rimane nascosta anziché diventare osservata. Una creatura per cui sei nascosto è impreparata nei tuoi confronti, e deve superare una @Check[flat|dc:11|name:Nascosto|showDC:all] quando ti bersaglia con un attacco, un incantesimo o un altro effetto, altrimenti non riesce a influenzarti. Gli effetti ad area non sono soggetti a tale prova semplice.</p>\n<p>Una creatura può essere in grado di usare l'azione Individuare per cercare di osservarti.</p>",
                 "summary": "Una creatura da cui sei nascosto conosce la tua posizione ma non può vederti."
             },
             "hostile": {
@@ -2073,17 +2087,20 @@
                 "name": "Sbigottito",
                 "rules": "<p>I tuoi pensieri e istinti sono annebbiati. Sbigottito include sempre un valore. Subisci penalità di status pari a tale valore nelle prove e CD basate su Intelligenza, Saggezza e Carisma, inclusi tiri salvezza su Volontà, tiri per colpire con incantesimo, CD di incantesimo e prove di abilità che utilizzano queste caratteristiche. Ogni volta che tenti di Lanciare un Incantesimo da sbigottito, l'incantesimo è interrotto a meno che non superi una prova semplice con CD pari a 5 + il tuo valore di sbigottito.</p>",
                 "summary": "Non puoi accedere a tutte le tue facoltà mentali e hai problemi a lanciare incantesimi.",
-                "note": "Ogni volta che tenti di @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} da sbigottito, l'incantesimo è interrotto a meno che non superi una @Check[flat|showDC:all|dc:resolve(5+@actor.conditions.stupefied.value)]."
+                "note": "Ogni volta che tenti di @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Lanciare un Incantesimo} da sbigottito, l'incantesimo è interrotto a meno che non superi una @Check[flat|dc:resolve(5+@actor.conditions.stupefied.value)|name:Sbigottito|showDC:all]."
             },
             "undetected": {
                 "name": "Non Individuato",
-                "rules": "<p>Quando sei non individuato da una creatura, essa non può vederti, non ha idea di quale quadretto occupi e non può bersagliarti, ma puoi comunque essere influenzato da capacita con effetti ad area. Fintanto che sei non individuato da una creatura, essa e impreparata nei tuoi confronti.</p>\n<p>Una creatura da cui sei non individuato può cercare di bersagliarti indovinando in quale quadretto ti trovi. Deve scegliere un quadretto e tentare un attacco; ciò funziona come quando si prende di mira una creatura nascosta (cosa che richiede una @Check[flat|dc:11]), ma la prova semplice e il tiro per colpire vengono effettuati in segreto dal GM, che non rivela se l'attacco ha mancato a causa della scelta del quadretto errato o di un fallimento nella prova o nel tiro per colpire.</p>\n<p>Una creatura può usare l'azione Individuare per cercare di trovarti</p>",
+                "rules": "<p>Quando sei non individuato da una creatura, essa non può vederti, non ha idea di quale quadretto occupi e non può bersagliarti, ma puoi comunque essere influenzato da capacita con effetti ad area. Fintanto che sei non individuato da una creatura, essa e impreparata nei tuoi confronti.</p>\n<p>Una creatura da cui sei non individuato può cercare di bersagliarti indovinando in quale quadretto ti trovi. Deve scegliere un quadretto e tentare un attacco; ciò funziona come quando si prende di mira una creatura nascosta (cosa che richiede una @Check[flat|dc:11|name:Non Individuato|traits:secret|showDC:all]), ma la prova semplice e il tiro per colpire vengono effettuati in segreto dal GM, che non rivela se l'attacco ha mancato a causa della scelta del quadretto errato o di un fallimento nella prova o nel tiro per colpire.</p>\n<p>Una creatura può usare l'azione Individuare per cercare di trovarti</p>",
                 "summary": "Una creatura da cui non sei individuato non sa dove ti trovi."
             },
             "off-guard": {
                 "name": "Impreparato",
                 "summary": "Non sei in grado di difenderti al meglio delle tue possibilità.",
                 "rules": "<p>Sei distratto o comunque incapace di dedicare tutta la tua attenzione alla difesa. Subisci penalità di circostanza -2 alla CA. Alcuni effetti ti danno la condizione impreparato solo nei confronti di alcune creature o attacchi; altri, specialmente le condizioni, ti possono rendere impreparato in generale nei confronti di qualsiasi cosa o persona. Se una regola non specifica che la condizione si applica solo a certe circostanze, si applica a tutte; per esempio, molti effetti dicono semplicemente \"Il bersaglio è impreparato\".</p>"
+            },
+            "cursebound": {
+                "name": "Infausto"
             }
         },
         "BombNotes": {
@@ -2477,7 +2494,9 @@
                         "label": "Spesa",
                         "hint": "Questo indica quante munizioni sono consumate con ogni Colpo a distanza che effettui con l'arma. Altre abilità potrebbero citare Spesa come numero di munizioni richieste per completare l'azione."
                     }
-                }
+                },
+                "Tracking": "Tracciante",
+                "GradeOption": "{grade} (+{tracking}; {dice} dadi di danno)"
             },
             "CreationDialog": {
                 "Categories": {
@@ -2886,7 +2905,8 @@
                     "Resilient": {
                         "Label": "Runa Resiliente"
                     }
-                }
+                },
+                "GradeOption": "{grade} (+{bonus}; resiliente +{resilient})"
             },
             "Physical": {
                 "Usage": {
@@ -2993,7 +3013,9 @@
                     "PotencyTwoPropertiesMaterial": "{base} di {material} {property1} {property2} +{potency}",
                     "ThreeProperties": "{base} {property1} {property2} {property3}",
                     "ThreePropertiesMaterial": "{base} di {material} {property1} {property2} {property3}",
-                    "TwoPropertiesMaterial": "{base} di {material} {property1} {property2}"
+                    "TwoPropertiesMaterial": "{base} di {material} {property1} {property2}",
+                    "Grade": "{base} {grade}",
+                    "GradeMaterial": "{base} {grade} di {material}"
                 },
                 "BrokenThreshold": {
                     "ShortLabel": "SR",
@@ -3018,7 +3040,26 @@
                     "Label": "Applica"
                 },
                 "Attachments": "Oggetti Uniti",
-                "Base": "Base"
+                "Base": "Base",
+                "ChangeEquipmentSystem": {
+                    "Title": "Cambia Sistema",
+                    "ToStarfinder": "Aggiungere il tratto {newTrait} cambia questo {type} da Pathfinder a Starfinder. Tutte le rune verranno perse. Sei sicuro?",
+                    "ToPathfinder": "Rimuovere il tratto {removedTrait} cambia questo {type} da Starfinder a Pathfinder. La qualità verrà persa. Sei sicuro? Altrimenti, potresti scambiarlo con {otherTrait}."
+                },
+                "Grade": {
+                    "superior": "Superiore",
+                    "elite": "D'Élite",
+                    "ultimate": "Definitiva",
+                    "commercial": "Commerciale",
+                    "advanced": "Avanzata",
+                    "paragon": "Ineguagliabile",
+                    "tactical": "Tattica"
+                },
+                "FIELDS": {
+                    "grade": {
+                        "label": "Qualità"
+                    }
+                }
             },
             "Activation": {
                 "Label": "Attivazione",
@@ -3030,7 +3071,10 @@
                 "Interact": "Interagire",
                 "Cast": "Lanciare un Incantesimo",
                 "Activate": "Attiva",
-                "Effect": "Effetto"
+                "Effect": "Effetto",
+                "Warning": {
+                    "ItemDoesNotExist": "L'oggetto che vuoi attivare non esiste"
+                }
             },
             "ABC": {
                 "InvalidDrop": "{badType} non può essere trascinato qui (deve essere {goodType})",
@@ -3043,7 +3087,18 @@
                     "Normal": "Visione Normale"
                 },
                 "DropFeatures": "Rilascia i privilegi di stirpe qua.",
-                "Plural": "Stirpi"
+                "Plural": "Stirpi",
+                "FIELDS": {
+                    "hands": {
+                        "label": "Mani"
+                    },
+                    "speed": {
+                        "label": "Velocità"
+                    },
+                    "reach": {
+                        "label": "Portata"
+                    }
+                }
             },
             "CannotAddType": "Gli oggetti {type} non possono essere aggiunti a questo personaggio.",
             "Condition": {
@@ -3238,7 +3293,11 @@
                 "Cost": "Costo",
                 "LineSplit": ";",
                 "BaseValue": "Base: {value}",
-                "Heightening": "Intensificazione"
+                "Heightening": "Intensificazione",
+                "Cast": {
+                    "Verb": "Lancia",
+                    "Noun": "Lancio"
+                }
             },
             "Rules": {
                 "Apply": "Applica",
@@ -3254,7 +3313,8 @@
                 "Tab": "Regole",
                 "Remove": "Rimuovi Elemento delle Regole",
                 "Edit": "Modifica JSON",
-                "ViewRollOptions": "Vedi le Roll Option"
+                "ViewRollOptions": "Vedi le Roll Option",
+                "CopyToClipboard": "Copia negli Appunti"
             },
             "RemovalPrevented": "La rimozione di {item} è prevenuta da {preventer}.",
             "WorldItemWarning": "Questo è un oggetto del mondo e non funzionerà se salvato in un compendio.",
@@ -3311,7 +3371,11 @@
                     "AutoDestroy": "Distruggi Dopo l'Utilizzo",
                     "Label": "Utilizzi"
                 },
-                "Plural": "Monouso"
+                "Plural": "Monouso",
+                "Spell": {
+                    "Empty": "Vuoto",
+                    "Label": "Incantesimo Incorporato"
+                }
             },
             "Container": {
                 "Bulk": {
@@ -3473,6 +3537,11 @@
                             "label": "Abilità Aggiunte"
                         }
                     }
+                }
+            },
+            "Equipment": {
+                "Category": {
+                    "upgrade": "Miglioramento"
                 }
             }
         },
@@ -3641,7 +3710,8 @@
                     "tang": "Tang",
                     "muan": "Muan",
                     "orvian": "Orviano",
-                    "talican": "Talicano"
+                    "talican": "Talicano",
+                    "aishmayar": "Aishmayar"
                 },
                 "Shield": {
                     "ACBonus": "Bonus CA Scudo (Quando Alzato)",
@@ -4726,6 +4796,9 @@
             },
             "CrumblingCarapace": {
                 "CriticalHit": "Carapace Rotto da un Colpo Critico"
+            },
+            "SkinShifter": {
+                "AnimalForm": "Forma di Animale"
             }
         },
         "Encounter": {
@@ -5160,7 +5233,10 @@
                 "WeaponFilters": "Filtri Armi",
                 "OrderByLabel": "Ordina per"
             },
-            "TabAbilities": "Abilità"
+            "TabAbilities": "Abilità",
+            "TabEquipment": "Equipaggiamento",
+            "TabHazard": "Pericoli",
+            "TabSpell": "Incantesimi"
         },
         "Condition": {
             "ActiveLabel": "Attivo",
@@ -5243,7 +5319,8 @@
             "cp": "mr",
             "gp": "mo",
             "pp": "mp",
-            "sp": "ma"
+            "sp": "ma",
+            "credits": "crediti"
         },
         "CurrencyCP": "Rame",
         "CurrencyGP": "Oro",
@@ -5395,7 +5472,8 @@
                     "occult": "occulto",
                     "primal": "primevo",
                     "fortune-effects": "effetti di fortuna",
-                    "arrow-vulnerability": "vulnerabilità alle frecce"
+                    "arrow-vulnerability": "vulnerabilità alle frecce",
+                    "time": "tempo"
                 },
                 "ActorIsImmune": "{actor} è immune a {effect}.",
                 "ActorIsUnaffected": "{actor} non è influenzato da {effect}.",
@@ -6152,7 +6230,7 @@
         "TraitDrow": "Drow",
         "TraitDescriptionArcane": "Questa magia deriva dalla tradizione arcana, che si basa sulla logica e sulla tradizionalità. Qualsiasi cosa possieda questo tratto è magica. Una creatura con questo tratto è principalmente costituita o ha un forte legame con la magia arcana.",
         "TraitDescriptionArchetype": "Questo talento appartiene ad un archetipo.",
-        "TraitDescriptionAttached": "Un'arma unita deve essere combinata con un altro pezzo di equipaggiamento per essere usata. Il tratto specifica a che tipo di oggetto deve essere unita l'arma. Devi impugnare o indossare l'oggetto a cui l'arma è unita per poter attaccare con essa. Ad esempio, la chiodatura per scudo è unita a uno scudo, permettendoti di attaccare con gli spuntoni anziché con il colpo di scudo, ma solo se stai impugnando lo scudo stesso. Un'arma unita è, di solito, fissata o assemblata assieme all'oggetto a cui è unita e un oggetto può, generalmente, essere unito a una sola arma. Un'arma unita può essere applicata a un oggetto con 10 minuti di lavoro e un successo in una prova di @Check[crafting|dc:10]; questo include il tempo necessario a rimuovere l'arma da un oggetto precedente, se necessario. Se un oggetto viene distrutto, l'arma unita ad esso può di solito essere recuperata.",
+        "TraitDescriptionAttached": "Un'arma unita deve essere combinata con un altro pezzo di equipaggiamento per essere usata. Il tratto specifica a che tipo di oggetto deve essere unita l'arma. Devi impugnare o indossare l'oggetto a cui l'arma è unita per poter attaccare con essa. Ad esempio, la chiodatura per scudo è unita a uno scudo, permettendoti di attaccare con gli spuntoni anziché con il colpo di scudo. Un'arma unita è, di solito, fissata o assemblata assieme all'oggetto a cui è unita e un oggetto può, generalmente, essere unito a una sola arma. Un'arma unita può essere applicata a un oggetto con 10 minuti di lavoro e un successo in una prova di Artigianato con CD 10; questo include il tempo necessario a rimuovere l'arma da un oggetto precedente, se necessario. Se un oggetto viene distrutto, l'arma unita ad esso può di solito essere recuperata.",
         "TraitDescriptionAttack": "Una capacità con questo tratto comporta un attacco. Per ogni attacco effettuato oltre il primo del tuo turno, subisci una Penalità da Attacchi Multipli.",
         "TraitDescriptionAuditory": "Le azioni e gli effetti uditivi si basano sul suono. Un'azione con il tratto uditivo può essere eseguita con successo solo se la creatura che usa l'azione può parlare o produrre in altro modo i suoni richiesti. Un incantesimo, o un effetto con il tratto uditivo produce il suo effetto solo se il bersaglio può sentirlo. Questo vale solo per le parti dell'effetto basate sul suono, come stabilito dal GM. Questo è diverso da un effetto sonoro, che influenza comunque i bersagli che non riescono a sentirlo (per esempio i bersagli sordi) a patto che l'effetto stesso emetta un suono.",
         "TraitDescriptionAura": "Un'aura è un'emanazione che fluisce continuamente da te, influenzando le creature entro un certo raggio. L'aura può anche riferirsi alla firma magica di un oggetto.",
@@ -7289,7 +7367,8 @@
             "Stack": "Crea una nuova pila?",
             "PartyStash": "la riserva del gruppo",
             "PurchasePrice": "Costo d’Acquisto",
-            "SendToPartyStash": "Manda alla Scorta del Party"
+            "SendToPartyStash": "Manda alla Scorta del Party",
+            "LootUnknownNPCMessage": "una creatura non identificata"
         },
         "vehicle": {
             "VehicleString": "Veicolo",
@@ -7416,7 +7495,12 @@
                 "GelatinousCubeNote": "Una creatura colpita da un Colpo della tua faccia del cubo deve superare un tiro salvezza su @Check[fortitude|against:spell|traits:incapacitation] contro la tua CD di incantesimo o essere @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordita 1} (o @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzata} per 1 round con un fallimento critico); questo tiro salvezza ha il tratto incapacitazione."
             },
             "AberrantForm": {
-                "GugSqueezeNote": "Le tue articolazioni multiple ti consentono di insinuarti negli spazi stretti come se fossi una creatura Media."
+                "GugSqueezeNote": "Le tue articolazioni multiple ti consentono di insinuarti negli spazi stretti come se fossi una creatura Media.",
+                "ChoiceSet": {
+                    "Chuul": "Chuul",
+                    "Gogiteth": "Gogiteth",
+                    "Gug": "Gug"
+                }
             },
             "AngelForm": {
                 "DeafenedNote": "@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Assordato} per 1 round con un colpo critico"
@@ -10865,7 +10949,8 @@
                 "40": "12 metri",
                 "50": "15 metri",
                 "60": "18 metri"
-            }
+            },
+            "Abbreviation": "m"
         },
         "TraitVoid": "Vuoto",
         "TraitVitality": "Positivo",
@@ -11251,7 +11336,39 @@
         },
         "PreparationTypeFocus": "Focalizzato",
         "PreparationTypeRitual": "Rituale",
-        "StackGroupArrows": "Frecce"
+        "StackGroupArrows": "Frecce",
+        "TraitResilient3": "Resiliente +3",
+        "TradeDialog": {
+            "Acceptance": {
+                "NotAccepted": "{user} non ha accettato la tua offerta.",
+                "Accept": "Accetta Offerta",
+                "Accepted": "{user} ha accettato la tua offerta."
+            },
+            "Aborted": "{user} ha terminato lo scambio: nessun oggetto è stato scambiato."
+        },
+        "TraitResilient2": "Resiliente +2",
+        "TraitArea": "Area",
+        "Wall": {
+            "Door": {
+                "OutOfReach": "Questa porta è fuori portata."
+            }
+        },
+        "TraitDescriptionTime": "Le creature del tempo sono originarie della Dimensione del Tempo. Non invecchiano, e sebbene alcune possano essere spinte da una fame soprannaturale, non hanno bisogno di mangiare o bere per sopravvivere. Possono sopravvivere agli effetti ambientali base dalla Dimensione del Tempo.",
+        "TraitDescriptionEnvironmental": "Un pericolo con questo tratto è qualcosa di pericoloso che fa parte del mondo naturale, come sabbie mobili o muffe dannose.",
+        "TraitDescriptionSahkil": "I sahkil sono nefandi che si divertono a diffondere paura e disagio tra le creature mortali. In genere hanno scurovisione, immunità alla paura e debolezza al bene.",
+        "TraitDescriptionTanggal": "Questa famiglia di aberrazioni cannibali consiste di diverse creature di forma umanoide in grado di separare il proprio corpo in due parti per cacciare.",
+        "TraitDescriptionUrdefhan": "Gli urdefhan sono umanoidi che hanno stipulato un patto coi dàimon, hanno la pelle trasparente e bevono sangue.",
+        "TraitDescriptionVelstrac": "Una famiglia di nefandi del Piano delle Ombre associati al dolore e all'agonia. Tutti i velstrac possiedono una qualche forma di sguardo inquietante.",
+        "TraitAnalog": "Analogico",
+        "TraitDescriptionDiv": "I div sono una famiglia di nefandi discendenti dagli spiriti di geni malvagi nella desolazione dell'Abaddon. La maggior parte dei div è neutrale malvagia. Solitamente sono dotati di scurovisione superiore e di una debolezza al ferro freddo e ai danni da bene.",
+        "TraitDescriptionSeaDevil": "I diavoli marini, umanoidi malvagi che infestano gli oceani, solitamente sono dotati di scurovisione e percezione delle onde.",
+        "TraitDescriptionStheno": "Gli stheno sono umanoidi imparentati con le meduse e dotati di serpenti al posto dei capelli.",
+        "TraitDescriptionSkelm": "Queste creature sono misantropi mostruosi e irosi che cercano di controllare gli altri tramite la rabbia e la perfidia.",
+        "TraitDescriptionShabti": "Un ushabti è un umanoide costruito inteso originariamente per subire il giudizio per i peccati di una creatura vivente dopo la sua morte.",
+        "TraitResilient1": "Resiliente +1",
+        "TraitDescriptionSkulk": "Gli skulk sono una famiglia di umanoidi la cui pelle può cambiare colore per mimetizzarsi meglio.",
+        "TraitDescriptionSpriggan": "Gli spriggan, simili agli gnomi, tendono a essere malvagi e possono crescere di taglia fino a sembrare dei giganti.",
+        "TraitDescriptionTitan": "I titani sono creature primordiali enormi dal potere quasi divino che hanno preceduto le razze mortali."
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
