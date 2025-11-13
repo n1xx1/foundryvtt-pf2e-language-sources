@@ -7,6 +7,65 @@
       "hazardRoutine": "<p><strong>A Voyage Through the Infinite</strong> (1 action) Every round on its turn, the trap inflicts all creatures in the shaft with the perception that they have been hurtling at an unimaginable speed through the vastness of space. The stars are so distant that no indication of movement can be observed or felt beyond that overwhelming mental conviction. At the same time, the creatures feel as if something unimaginably powerful and hungry is chasing them... and gaining on them. Any PC who looks over their shoulder sees that the stars are indeed winking out behind them, as if an immense black object were growing closer or as if the stars themselves were vanishing. While the PC's body is somehow protected by the vastness of space, their minds are not—each PC must attempt a @Check[will|dc:40] save.</p><hr><p><strong>Critical Success</strong> As success below, but the creature also realizes they're reliving the memories of Runelord Xanderghul—like him, they're escaping some sort of horrific fate and are hurtling toward Golarion. The next time this creature achieves a critical success against this trap, they suddenly see Golarion loom large, and as they witness their \"crash\" into the Throne of the Troll King, they suddenly wake, @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, in area <strong>C1</strong> at the heart Xin-Cyrusian. If any other PCs are still trapped in the Falling Star's Memories, a PC in Xin-Cyrusian knows instinctively that they can call out to those trapped PCs—each PC in Xin-Cyrusian who does so reduces the save DC against A Voyage Through the Infinite for those still trapped by 5.</p><p><strong>Success</strong> The creature realizes they're experiencing the path the Trinity Star took through the cosmos and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p><p><strong>Failure</strong> The creature's grip on reality fades as they experience what seems like years or even decades of hurtling adrift through a vast expanse. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours or increases the value of their stupefied condition by 1 if they're already stupefied.</p><p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (or increase the stupefied condition by 2).</p><hr><p><strong>Special</strong> If this trap would cause a creature's stupefied condition to exceed @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 5}, the creature instead \"crashes\" to the ground on the hilltop outside, about ten feet from the Throne of the Troll King. The creature takes @Damage[10d6[bludgeoning]] damage (@Check[reflex|dc:40|basic] save), and their stupefied condition now has an unlimited duration.</p>",
       "name": "A Falling Star's Memories"
     },
+    "Aethusa": {
+      "items": {
+        "91O5NIAKldRwIV2M": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> If Aethusa's next action is to cast a cantrip or a spell that is 6th rank or lower, reduce the number of actions to cast it by 1 (minimum 1 action).</p>",
+          "name": "Quickened Casting"
+        },
+        "LicbinzIkNMOJYUi": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Aethusa accesses what she believes to be the memories of two previous runelords. For the next 1 minute, whenever Aethusa makes a skill check to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}, she rolls three times and uses the highest result.</p>",
+          "name": "Past Lives"
+        },
+        "hjrL2H6KtUKNlnTJ": {
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> Aethusa Casts a Spell of 6th rank or higher</p><hr /><p><strong>Effect</strong> Aethusa momentarily infuses her preferred form of sin magic (sloth) with the power of either gluttony or greed magic. The triggering spell slot is expended, but instead of the spell's normal effects, Aethusa casts either @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis} or @UUID[Compendium.pf2e.spells-srd.Item.fd31tAHSSGXyOxW6]{Vampiric Exsanguination} at 6th rank.</p>",
+          "name": "Adaptive Rune Magic"
+        },
+        "jifO2Dode8GJDyzH": {
+          "description": "<p>If a reaction would disrupt Aethusa's spellcasting action, she attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        }
+      },
+      "name": "Aethusa"
+    },
+    "Aethusa's Prison": {
+      "description": "<p>A roiling sphere of chromatic energy floats above a pedestal marked with arcane symbols.</p>",
+      "hazardDisable": "<p>@Check[nature|dc:42] (legendary) or @Check[crafting|dc:45] (master) to remove an immunity the prison currently has to one of the following damage types: acid, cold, electricity, or fire (this effect lasts until the prison uses its Energy Immunity reaction to regain that immunity); @Check[arcana|dc:42] (master) to fortify the pedestal's containment runes, preventing the prison from using its Chromatic Eruption action for 1 round and causing it to suffer feedback that inflicts @Damage[20[untyped]] damage (this damage bypasses the prison's hardness and immunities); @Check[thievery|dc:42] (master) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th rank; counteract DC 34) to suppress the pedestal's containment runes for 1 round, preventing the prison from using its Self-Repair action and causing it to suffer feedback that inflicts @Damage[20[untyped]] damage (this damage bypasses the prison's hardness and immunities). Unlike most hazards, Aethusa's prison can't be disabled, but it can be destroyed by reducing it to 0 Hit Points.</p>",
+      "hazardReset": "<p>The trap deactivates and then resets automatically when it repairs to its maximum Hit Points.</p>",
+      "hazardRoutine": "<p>(2 actions) The prison uses its first action to Self-Repair. If the hazard has less than its maximum Hit Points, it then uses its Chromatic Eruption action.</p>",
+      "name": "Aethusa's Prison"
+    },
+    "Animate Nightmare": {
+      "description": "<p>Whereas animate dreams form from the fears of specific individuals, animate nightmares are spawned by the terrors that beset civilizations. An animate nightmare's appearance depends on the type of fear that created it, but, like fears, result in similar forms.</p><h2>Emigrants From Dreams</h2><p>Animate nightmares often haunt the ruins of the civilization that birthed them. Others are drawn to Jandelay, the enigmatic demiplane where the fragments of dead worlds are preserved for all eternity, or to Abaddon, where apocalyptic nihilism is the rule. These latter nightmares might stay close to their \"parent\" civilizations, while others wander the broken avenues of multiple worlds, feeding off the traces of fear that linger in those places.</p>",
+      "items": {
+        "5LCoZdHExWKhGMfl": {
+          "description": "<p>An animate nightmare embodies one societal fear, chosen from the following options. Depending on the choice, the animate nightmare gains one additional 8th-rank occult innate spell, as listed below.</p>\n<p><strong>Disaster</strong> The animate nightmare appears as a person or creature who's suffered devastating wounds from a calamity—horrific burns, crushed and broken limbs, impalements from wind-tossed debris, and the like. It gains @UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{Phantasmal Calamity} at 8th rank.</p>\n<p><strong>Disorder</strong> The animate nightmare looks like a distorted parody of a commonplace person with unnaturally long limbs, a twisted visage, and a scratching shrill voice. It gains @UUID[Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY]{Confusion} at 8th rank.</p>\n<p><strong>Famine</strong> The animate nightmare appears as a humanoid carrion bird or other bestial scavenger (such as a jackal or a fly) on the brink of death from starvation. It gains @UUID[Compendium.pf2e.spells-srd.Item.fd31tAHSSGXyOxW6]{Vampiric Exsanguination} at 8th rank.</p>\n<p><strong>Plague</strong> The animate nightmare is shaped like a tangle of diseased bodies animated into hideous life that might have just crawled out of a mass grave. It gains @UUID[Compendium.pf2e.spells-srd.Item.MS60WhVifb45qORJ]{Spiritual Epidemic} at 8th rank.</p>",
+          "name": "Apocalyptic Embodiment"
+        },
+        "9g0ozIReEGhutb10": {
+          "description": "<p><strong>Requirements</strong> The animate nightmare's previous action was a nightmare tendril Strike against a creature</p><hr /><p><strong>Effect</strong> The animate nightmare's touch lingers and infuses the mind of the creature it just attempted to Strike. The creature takes @Damage[8d6[persistent,mental]] damage (@Check[will|dc:38|basic] save). If the creature is already taking persistent mental damage from Panicking Touch, it must instead succeed at a @Check[will|dc:38] save or endure a different effect based on the animate nightmare's apocalyptic embodiment; this additional effect lasts as long as the persistent mental damage lasts.</p>\n<p><strong>Disaster</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and can't reduce its frightened condition.</p>\n<p><strong>Disorder</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}.</p>\n<p><strong>Famine</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>\n<p><strong>Plague</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>",
+          "name": "Panicking Touch"
+        },
+        "GyXToPwfl0Mquhpd": {
+          "name": "Translocate (At Will)"
+        },
+        "s0qOcgd4awzOYlrx": {
+          "name": "Nightmare Tendril"
+        },
+        "sFZkVGaWI6I0OrgA": {
+          "name": "Fear (At Will)"
+        }
+      },
+      "name": "Animate Nightmare",
+      "npcAllSaves": "+1 status to all saves vs. magic"
+    },
+    "Apocalypse Stormfront": {
+      "description": "<p>An endless void stretches in all directions. Visions of Golarion's destruction roll like storm clouds across the space.</p>",
+      "hazardDisable": "<p>@Check[acrobatics|dc:47] to Fly through the space without becoming stuck in the webs, @Check[athletics|dc:50] to Climb the webs and make progress forward through the infinite, @Check[nature|dc:47] or @Check[occultism|dc:47] or @Check[arcana|dc:50] or @Check[religion|dc:50] (legendary) to collapse the extradimensional space, or @Check[perception|dc:52] to peer through the visions of Golarion to notice discrepancies that help keep the overwhelming despair from setting in; six successes disables the hazard, causing it to vanish forever and shunting all creatures to Liralarue's Prison.</p>",
+      "hazardReset": "<p>The hazard resets automatically once no creatures are in the area.</p>",
+      "hazardRoutine": "<p>(1 action) (arcane, emotion, illusion, mental) A stormfront filled with illusory scenes of Golarion's destruction rolls through the extradimensional space. Each creature in the hazard's area takes @Damage[6d12[mental]] damage (@Check[will|dc:42|basic|traits:arcane,emotion,illusion,mental] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure). A PC reduced to 0 Hit Points by this damage is shunted back into area <strong>C7</strong>.</p><p>A creature that takes damage while Climbing the webs must succeed at a @Check[fortitude|dc:40] save or fall. A creature can try to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} (@Check[reflex|dc:40]). On a success, they lose one success they've earned to escape the hazard but otherwise arrest their fall. On a failure, they plummet into the void, losing all Athletics successes they've earned to escape the hazard. Each round on their turn, the character can try to Grab an Edge again, but each time they fail to do so, the party must earn an additional success to escape the hazard. Characters who fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or repeatedly fail to Grab an Edge might effectively become lost in the void, though once the nightmare hazard is disabled, they appear along with the rest of the PCs in Liralarue's Prison.</p>",
+      "name": "Apocalypse Stormfront"
+    },
     "Ayavah": {
       "items": {
         "2FCqsVtRwzBf8XGC": {
@@ -37,6 +96,298 @@
       },
       "name": "Ayavah",
       "npcAllSaves": "+1 status to saves against spells and magic effects"
+    },
+    "Baolen": {
+      "description": "<p>A kraken is an enormous, squid-like leviathan with a cruel intelligence. It hunts ships, whales, and heroes alike. The hatred and envy krakens hold for alghollthus, their rivals, has led many krakens to make their lairs in sunken cities, where they can sift through ancient lore and uncover long-lost arcane secrets.</p>",
+      "items": {
+        "00HuCJEgA6cYLFaF": {
+          "description": "<p>The kraken moves through the water up to 280 feet in a straight line without triggering reactions.</p>",
+          "name": "Jet"
+        },
+        "95k2q11INtOhFqCd": {
+          "description": "<p>The kraken makes two Strikes with two different arms or tentacles, each limb targeting a different creature. Double Attack counts as two attacks toward the kraken's multiple attack penalty, but the penalty doesn't increase until after both attacks are made.</p>\n<p>If the kraken subsequently uses the Grab action, it Grabs any number of creatures it hit with Double Attack.</p>",
+          "name": "Double Attack"
+        },
+        "D0Bef8hMS0mQSDNY": {
+          "name": "Tentacle"
+        },
+        "DtiXNG3ROuAaBhN3": {
+          "description": "<p>@Damage[(2d10+17)[bludgeoning]], @Check[fortitude|dc:40|basic]. On a failed save, a creature that is holding its breath loses [[/gmr 1d4 #Lost rounds of air from Constrict]]{1d4 rounds} worth of air.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "EkSi5KM6hOWO5WxD": {
+          "description": "<p>Baolen is immune to this poison</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:40]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> @Damage[4d6[mental]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[5d6[mental]] damage, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}, and the target is exposed to the curse of flawed history (1 round)</p>",
+          "name": "Retrocognitive Ink"
+        },
+        "FX1GZJoTSgtAlICB": {
+          "name": "Arm"
+        },
+        "QDGHfSYTFUEtVnOd": {
+          "description": "<p><strong>Cost</strong> all of Baolen's Mythic Points</p>\n<p><strong>Trigger</strong> Baolen would die and has at least 1 Mythic Point</p><hr /><p><strong>Effect</strong> Baolen remains standing and conscious, and recovers 50% of his maximum Hit Points.</p>",
+          "name": "Undying Myth"
+        },
+        "QVWyf8FH4ZFhAb85": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Baolen regains an expended spell.</p>",
+          "name": "Recharge"
+        },
+        "XLiAwm5JWDoSNIPF": {
+          "name": "Beak"
+        },
+        "ZwQWwlXmAIj7uSL9": {
+          "name": "Remove a Condition"
+        },
+        "bTOywO9RTYBgmCfo": {
+          "name": "Dominate (Animals Only)"
+        },
+        "h0WHBV57PWi9FCKG": {
+          "description": "<p><strong>Saving Throw</strong> @Check[will|dc:37]</p><hr /><p><strong>Effect</strong> The target struggles to differentiate between alternate histories and how the past truly occurred. The creature takes a –2 status penalty to checks made to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} (or a –4 penalty on a critical failure). This curse has an unlimited duration.</p>",
+          "name": "Curse of Flawed History"
+        },
+        "heW1rCJfQ2KMmuqd": {
+          "description": "<p>The kraken releases a cloud of black, venomous ink in an @Template[emanation|distance:80]. This cloud has no effect outside water.</p>\n<p>Creatures inside the ink cloud are exposed to retrocognitive ink poison and are @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} while inside the cloud.</p>\n<p>The kraken can't use Ink Cloud again for [[/br 2d6 #Recharge Ink Cloud]]{2d6 rounds}, and the cloud dissipates after 1 minute.</p>",
+          "name": "Ink Cloud"
+        },
+        "j6pwhNQbaw8hQZCd": {
+          "name": "Mythic Power"
+        },
+        "on5KfUlSOl4j5TOa": {
+          "description": "<p>Baolen's mythic resilience doesn't apply to Will saving throws he makes against the @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} condition. If Baolen starts his turn confused, he takes @Damage[6d10[mental]] damage.</p>",
+          "name": "Susceptible to Confusion"
+        },
+        "ri68Bk0TcV1k9lqS": {
+          "description": "<p>A kraken reshapes the weather within 2 miles of it, with the effect of the @UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]{Control Weather} ritual centered on the kraken and based on its emotional state, at the GM's discretion. If the kraken dies, the weather returns to normal immediately.</p>\n<p>Baolen is currently content in his place as an object of worship, though, so the surrounding weather remains calm.</p>",
+          "name": "Altered Weather"
+        }
+      },
+      "name": "Baolen"
+    },
+    "Bittersweet Mask": {
+      "description": "<p>The many iron bars of this iron mask fits tightly around Javownir's head and snout, looking almost as if it was built in place to conform specifically to the shape of his skull with no apparent latch or hinge for it to be removed.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:45] (expert) twice to find the @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} latches, @Check[athletics|dc:48] (master) to wrench the mask open quickly enough to prevent it from triggering before it's destroyed, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th-rank; counteract DC 35), or automatic with Spleen's key</p>",
+      "hazardReset": "<p>The mask resets automatically at the start of the round after it is triggered.</p>",
+      "name": "Bittersweet Mask"
+    },
+    "Bittersweet Sister": {
+      "items": {
+        "AtSxBEaHS4ljnAyv": {
+          "description": "<p>A Bittersweet Sister adds @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport}, @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying}, and @UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{Spirit Blast} to her coven's spells.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
+        },
+        "H3pa17KySBkdeqib": {
+          "description": "<p>A moon hag in an area illuminated by moonlight gains a +2 status bonus to AC and initiative rolls. In the light of a full moon, they're @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}, and can use the extra action only to Stride or Strike. If the moon hag has a fly Speed, they can use the extra action to Fly as well.</p>\n<p>Any time they're outside of the oubliette or in area <strong>C7</strong> they are in moonlight.</p>",
+          "name": "Moonlight's Kiss"
+        },
+        "HHf3xli4cWMiMJui": {
+          "description": "<p>The moon hag can take on the appearance of any Medium humanoid woman. This doesn't change their Speed or their attack and damage bonuses with their Strikes, but it might change the damage type their Strikes deal (typically to bludgeoning).</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "N0n5SsuqfJHWLi1E": {
+          "name": "Claw"
+        },
+        "YKkmQnZZiXcOOYb8": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The moon hag teleports themself and any items they're wearing and holding to another space within 30 feet, or 60 feet if they're in moonlight. They then gain a 25-foot fly Speed until the end of their next turn. If the moon hag is in the air when the effect ends, they float to the ground, taking no falling damage.</p>\n<p>Any time they're outside of the oubliette or in area <strong>C7</strong> they are in moonlight.</p>",
+          "name": "Ride the Moonbeams"
+        },
+        "iVuxv6GFqvanqgOO": {
+          "description": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+        },
+        "j4d2EsjsPlHY057e": {
+          "name": "Fear (At Will)"
+        },
+        "nr2NfbV8qGCWY7Bz": {
+          "name": "Truespeech (Constant)"
+        },
+        "yBpXyahw41IRnTwr": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The moon hag howls a series of dreadful, apocalyptic predictions at a single creature within 30 feet, shattering its perceptions of reality. The target must attempt a @Check[will|dc:38] save and takes a –2 circumstance penalty to the save if it can see the moon. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure) until the curse is removed. Regardless of the outcome, the creature is then temporarily immune for 24 hours.</p>",
+          "name": "Dreadful Prediction"
+        }
+      },
+      "name": "Bittersweet Sister"
+    },
+    "Clockwork Whale": {
+      "description": "<p>Out of all ancient Azlant's clockwork creations, clockwork whales are perhaps the most impressive—or at least the among the largest. Shaped like a bizarre fusion of a shark and an enormous toothed whale, clockwork whales patrolled the shipping lanes around Azlant for centuries before Earthfall shattered the continent, sinking it beneath the waves. Outfitted with complex programming and sensory arrays that allowed for near-perfect navigation, clockwork whales are thought to have been used primarily for securing new and safe nautical routes, although some served as naval transports during Azlant's cold war with the empire's ancient enemy, the alghollthus.</p>\n<p>With jaws nearly a third of its entire length, a clockwork whale's bite can slice neatly through smaller seafaring vessels and inflict devastating damage to the hulls of larger ones. These gears swiftly cut those swallowed whole into fragments that are then slowly washed away by the flow of water through tiny gaps in the creature's body.</p><h2>Winding Up</h2><p>Most clockworks must be wound with a unique key by another creature. This takes 1 minute, after which the clockwork remains operational for the listed amount of time. As long as a clockwork whale spends at least a minute every day swimming, its self-winding ability allows it to continue operating without needing this step. A clockwork whale that can't swim (as might be the case after a clockwork whale becomes beached) usually remains operational for approximately 8 hours before it completely winds down.</p>",
+      "items": {
+        "0XltiTmzeUDUL1dQ": {
+          "name": "Jaws"
+        },
+        "Gt2FhL34NkJiFyoF": {
+          "description": "<p>While in a large body of water, the clockwork whale treats a failure at Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.fJImDBQfqfjKJOhk]{Sense Direction} or @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} as a success.</p>",
+          "name": "Astounding Orienteering"
+        },
+        "Tk9Sz3VTu0JXJPV8": {
+          "description": "<p>A clockwork whale winds itself through the act of swimming, and as long as it spends at least a minute a day swimming, it gains 24 hours of operational time. A creature can still attempt a @Check[thievery|dc:36] check to Disable a Device to cause the clockwork whale to lose 1 hour of operational time (or 2 hours on a critical success).</p>",
+          "name": "Self-Winding"
+        },
+        "U90Zt8x3skhxELuL": {
+          "description": "<p>The whale creates a vocalization that can be heard up to 1 mile away, or 10 miles away underwater. Creatures in a @Template[type:emanation|distance:20] (or a @Template[type:emanation|distance:60] underwater) take @Damage[15d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:38|basic] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). The whale can't use Gearsong again for [[/gmr 1d4 #Recharge Gearsong]]{1d4 rounds}.</p>",
+          "name": "Gearsong"
+        },
+        "bHWVeyStAjklkU1T": {
+          "name": "Push 15 feet"
+        },
+        "hXhPTMLLQK79yFj0": {
+          "description": "<p>The clockwork whale can use its hearing as a precise sense at the listed range, but only underwater.</p>",
+          "name": "Aquatic Echolocation"
+        },
+        "kH9BXVcdMyTAuzA0": {
+          "description": "<p>Huge, @Damage[(3d10+8)[slashing]], Rupture 35</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+        },
+        "lYDQRnJT541uj1Ps": {
+          "name": "Tail"
+        }
+      },
+      "name": "Clockwork Whale"
+    },
+    "Covetous Corridor": {
+      "description": "<p>Statues depicting the runelords of envy steal magic from intruders.</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:45] (master) to unweave the magic surrounding a statue, @Check[athletics|dc:48] (expert) to wrest a statue's implement from its hands, @Check[thievery|dc:48] (expert) to slip an implement free, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank; counteract DC 36) to counteract the magic that empowers the statue. Increase the DCs to disable the Belimarius statue by 2. Each statue must be disabled or counteracted separately, and disabling the Belimarius statue or all nine other statues permanently disables the hazard.</p>",
+      "hazardReset": "<p>The hazard resets automatically if not disabled.</p>",
+      "hazardRoutine": "<p>(4 actions) The hazard uses @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} Magic twice. Once the implements of at least three runelord statues are charged, the hazard uses its next available action to Transfer Magic. If the hazard starts its turn with the Belimarius statue charged, the hazard uses its reaction to Empower Barrier. A disabled runelord statue can't use Steal Magic. If the Belimarius statue is disabled, the hazard can't use Transfer Magic or Empower Barrier.</p>",
+      "name": "Covetous Corridor"
+    },
+    "Czaresia": {
+      "description": "<p>Rune giants are tyrants among their own kind, given power to command and magically control other giants. They once served even more powerful masters—potent wizards known as runelords—and in so doing, commanded entire armies of giants in service to the runelords' empires.</p>\n<p>In the eons since these empires collapsed, rune giants have persisted, though to the outside world they're little more than fabled horrors. Rune giants usually dwell in the most remote and rugged of towering mountain ranges, but they can also be found in immense ruins atop lost islands, glacial valleys, or even more remote or magical regions.</p>\n<p>Dozens of runes decorate rune giants' striking charcoal flesh. They are towering creatures, averaging at 40 feet in height and weighing 25,000 pounds.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
+      "items": {
+        "7CjSawx6weIPrIFL": {
+          "description": "<p><strong>Trigger</strong> The rune giant uses an arcane ability or casts an arcane spell</p><hr /><p><strong>Effect</strong> The runes on the giant's body flash with magical energy. Each creature within a @Template[emanation|distance:10] must attempt a @Check[fortitude|dc:40] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
+          "name": "Flashing Runes"
+        },
+        "Cu6pedSvnaK0fqOF": {
+          "description": "<p>When a rune giant casts their innate @UUID[Compendium.pf2e.spells-srd.Item.R9xqCBblkS5KE4y7]{Sending} spell, they can also cast @UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]{Suggestion} on the target.</p>",
+          "name": "Demand"
+        },
+        "GL9yPOZHTcwW41gZ": {
+          "description": "<p>The rune giant gains an additional reaction at the beginning of each of their turns that they can use only for a Reactive Strike.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>",
+          "name": "Reactive Strike (Special)"
+        },
+        "JBksJycZVWAJ0ESS": {
+          "description": "<p>The rune giant invokes one of the runes on their body, causing the rune to spray forth a @Template[cone|distance:30] of sparks that deals @Damage[6d12[electricity]|options:area-damage] damage to all creatures in the cone (@Check[reflex|dc:40|basic|options:area-effect] save).</p>\n<p>The giant can't use Invoke Rune again for [[/gmr 1d4 #Recharge Invoke Rune]]{1d4 rounds}.</p>\n<p>A glowing copy of the invoked rune appears on a single weapon the giant holds, granting the weapon one effect listed below of the giant's choice. The effect on the weapon lasts for 1 minute. If the giant places a new rune on a weapon, any previously placed rune immediately vanishes, ending its effect.</p>\n<p><strong>Rune of Pride</strong> (emotion, fear, mental) A creature struck by the weapon becomes convinced they fight an unconquerable foe. The creature must succeed at a @Check[fortitude|dc:40] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and can't take hostile actions against Czaresia for as long as they remain frightened.</p>",
+          "name": "Invoke Rune"
+        },
+        "QEtmxa7gWeEQIrTf": {
+          "name": "Fly (Constant)"
+        },
+        "h2IphaAIOQxjJB7Y": {
+          "name": "Fist"
+        },
+        "h5JHBi9nGWnsaR3C": {
+          "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</p>\n<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>"
+        },
+        "jTCynZS3NcEx1n1y": {
+          "name": "Suggestion (At Will)"
+        },
+        "uwBAscSuJG489hpI": {
+          "description": "<p>When Czaresia casts a mental spell against another giant, the DC is 41, rather than 37.</p>",
+          "name": "Command Giants"
+        },
+        "xeRH37MTBNYg5VvM": {
+          "name": "Charm (At Will)"
+        },
+        "yUMh1Oa8g3zZ6utm": {
+          "description": "<p>Czaresia makes a single mace Strike and compares the attack roll result to the ACs of up to two foes within her reach. This counts as two attacks for Czaresia's multiple attack penalty.</p>",
+          "name": "Wide Swing"
+        }
+      },
+      "name": "Czaresia"
+    },
+    "Dream Aethusa": {
+      "items": {
+        "41QWXBqTUwErFnvv": {
+          "_source": "pf2e.equipment-srd.Item.VBCZuJMisbu0OXJK"
+        },
+        "4hVO68e0Vy6xGqJM": {
+          "description": "<p>If a reaction would disrupt Dream Aethusa's spellcasting action, she attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        },
+        "8uuwa5H41ca2F3QI": {
+          "name": "Mythic Power"
+        },
+        "CIu9iou28H8oUpPy": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Dream Aethusa ends one condition affecting her.</p>",
+          "name": "Remove a Condition"
+        },
+        "DQGxAOkzjQ2fcEQR": {
+          "description": "<p>When Dream Aethusa dies, a field of iridescent energy envelops her lifeless body (and her gear) for 10 minutes. During this time, any creature that touches Dream Aethusa's body takes @Damage[9d6[force]] damage (@Check[reflex|dc:37|basic] save). After 10 minutes have passed, Aethusa's body rises into the air and is consumed by mythic energy, transforming into the Trinity Star hazard.</p>",
+          "name": "Trinity Star"
+        },
+        "GMCJIrSuM7XPgJvL": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> Dream Aethusa regains an expended spell.</p>",
+          "name": "Recharge"
+        },
+        "HBBwxIuq91dizrfd": {
+          "name": "Elder Sign Amulet"
+        },
+        "dNSNxCRxIBlLxlvD": {
+          "name": "Mythic Resilience (Will)"
+        },
+        "fsOaFQW3AJuD8Sug": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> If Dream Aethusa's next action is to cast a cantrip or a spell that is 6th-rank or lower, reduce the number of actions to cast it by 1 (minimum 1 action).</p>",
+          "name": "Quickened Casting"
+        }
+      },
+      "name": "Dream Aethusa"
+    },
+    "Elder Shantak": {
+      "description": "<p>The imposing shantaks are far more intelligent than their bestial appearance would suggest. They can speak, though their voices sound like glass grinding on stone, and they can't converse in any language besides Aklo.</p>\n<p>Shantaks' ability to travel through the gulfs of outer space at supernatural speed allows them to nest on numerous worlds, yet despite this mobility, most shantaks are reluctant to seek out new homes unless faced with no other option. Instead, they roost in discarded ruins or asteroids adrift in space, only emerging and landing upon planets in their chosen stellar system when the urge to feed compels them.</p>\n<p>Despite not being native to the Dimension of Dreams, they're commonly found in that realm. Their ability to fly through space affords them swift travel between Leng and more hospitable reaches of the Dreamlands, making them particularly sought after as mounts for those who have business in the far reaches of the dreaming plane.</p>\n<p>Convincing a shantak to become a mount is notoriously difficult. They refuse any sort of training, and even if one is convinced to ferry a humanoid on their back, they can be obstinate and fickle. Anyone relying on a shantak mount should have a backup plan ready in case the shantak strands their passenger on an asteroid or strange planet after some disagreement.</p>\n<p>Although a shantak is nearly the size of an elephant, many possess irrational fears of certain creatures. In particular, nightgaunts terrify them, but other shantaks have been observed fleeing from harpies and gargoyles. Though these ancestries all share the same trait, shantaks don't fear every type of winged humanoid, which makes the origin of their phobia all the more mysterious. Shantaks on Golarion typically hide themselves away in remote places since several of the creatures they fear appear on the planet in abundance.</p>",
+      "items": {
+        "6qxKmQ1NJ2m3caTx": {
+          "description": "<p>The elder shantak doesn't breathe and is immune to effects that require breathing (such as inhaled poison).</p>",
+          "name": "No Breath"
+        },
+        "HJdHvuhqBc9SkrvJ": {
+          "description": "<p>The shantak's screech deals @Damage[15d6[sonic]|options:area-damage] damage in a @Template[type:cone|distance:50] (@Check[fortitude|dc:33|basic] save). A creature that fails the save is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). The shantak can't use Screech again for [[/gmr 1d4 #Recharge Screech]]{1d4 rounds}.</p>",
+          "name": "Screech"
+        },
+        "OEzKykNunY5znzf7": {
+          "name": "Claw"
+        },
+        "iJaSMrCi07AzcK4L": {
+          "description": "<p><strong>Trigger</strong> A creature is riding the shantak</p><hr /><p><strong>Effect</strong> The shantak extends their no breath ability and cold resistance to a single creature riding them. They can withdraw this protection as a free action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.zqgntQXIEbulBgZX]{Effect: Share Defenses}</p>",
+          "name": "Share Defenses"
+        },
+        "tX7g78Vle2NcjulW": {
+          "description": "<p>The elder shantak Flies up to their fly speed and makes two claw Strikes at any point during it's movement. Each Strike must target a different creature. The attacks take the normal multiple attack penalty.</p>",
+          "name": "Flying Strafe"
+        },
+        "y9v6b1HnMTeyR6Aa": {
+          "name": "Jaws"
+        },
+        "zHIoJ0oELrIHabJu": {
+          "description": "<p>he elder shantak's scales are slimy, granting it a +3 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. A creature mounted on a shantak takes double the normal circumstance penalty to its Reflex saves (–4 instead of –2 in most cases) while mounted.</p>",
+          "name": "Slippery"
+        }
+      },
+      "name": "Elder Shantak"
+    },
+    "Elemental Tsunami": {
+      "description": "<p>Elemental tsunamis are huge and destructive, having none of the caring or nurturing aspects of water.</p>\n<hr />\n<p>Water elementals can be very destructive, but often not intentionally so; just as water can bring life to mortals in need, its waves can pound shores and rains can flood cities. Water elementals are similarly difficult to predict.</p>",
+      "items": {
+        "2nd3Ete1Wir3K3bj": {
+          "name": "Wave"
+        },
+        "AiKIcXFJx9lEEfnt": {
+          "description": "<p>The elemental tsunami momentarily expands to fill the area of its vortex. Creatures within the aura take @Damage[(5d12+6)[bludgeoning]] damage with a @Check[fortitude|dc:31|basic] save. A creature that fails this save is pushed 20 feet.</p>\n<p>The elemental tsunami then shrinks to its normal space and can't Surge again for [[/gmr 1d4 #Recharge Surge]]{1d4 rounds}.</p>",
+          "name": "Surge"
+        },
+        "FTMgXssm5HK4Io0O": {
+          "description": "<p>50 feet.</p>\n<p>Water in the area that is in the same body of water as the elemental tsunami is difficult terrain for Swimming creatures that don't have the water trait.</p>",
+          "name": "Vortex"
+        },
+        "MGX1U8Kv59BVYAOI": {
+          "description": "<p>The elemental tsunami can choose whether to push or pull the creature on a succesful hit.</p>\n<hr />\n<p><strong>Push</strong> <span class=\"action-glyph\">1</span></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Push]</p>\n<hr />\n<p><strong>Pull</strong> <span class=\"action-glyph\">1</span></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Pull]</p>",
+          "name": "Push or Pull 10 feet"
+        },
+        "PmcZB53eH1gUzaBq": {
+          "description": "<p>When not touching water, the elemental tsunami is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>",
+          "name": "Waterbound"
+        },
+        "cp85Svj1s1u3XzHH": {
+          "description": "<p>A creature damaged by an elemental tsunami in area <strong>A6</strong> must attempt a @Check[will|dc:31] save to resist being @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure).</p>",
+          "name": "Mindwarp Ink"
+        },
+        "tEPc3Xc3Pufff6D5": {
+          "description": "<p>The elemental puts out all fires in a @Template[emanation|distance:20].</p>\n<p>It extinguishes all non-magical fires automatically and attempts to counteract magical fires ([[/r 1d20+20 #Drench]]{+20} counteract modifier).</p>",
+          "name": "Drench"
+        }
+      },
+      "name": "Elemental Tsunami"
     },
     "Endless Realities": {
       "description": "<p>A mass of illusions floods the senses of creatures, plunging them into an ever-shifting maze of fluid realties.</p>",
@@ -101,6 +452,13 @@
       "name": "Eron of Jandelay",
       "npcHp": "fast healing 20",
       "npcSpeed": "unfettered movement"
+    },
+    "Flawed Memories": {
+      "description": "<p>The murky waters that fill the chamber grant false visions of the past.</p>",
+      "hazardDisable": "<p>@Check[crafting|dc:45] (master) to release alchemical reagents to neutralize the ink in the water, @Check[nature|dc:42] (legendary) to manipulate the primal magic in the region and negate the ink's effects, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th rank; counteract DC 34) to counteract the magical ink in the water; four success are required to disable it (spells that purify or manipulate water, such as @UUID[Compendium.pf2e.spells-srd.Item.qXTB7Ec9yYh5JPPV]{Cleanse Cuisine} or @UUID[Compendium.pf2e.spells-srd.Item.zfn5RqAdF63neqpP]{Control Water}, can affect this hazard as if the caster were using an equal rank <em>dispel magic</em>)</p>",
+      "hazardReset": "<p>The hazard remains disabled until Baolen refills the area with ink (typically once every 4 hours).</p>",
+      "hazardRoutine": "<p>(2 actions) On the trap's first action, it attempts a water jet ranged Strike on all creatures outside of the water in this room or on the stairs leading up to area <strong>A5</strong>. On its second action, the primal magic infusing the waters attempts to seep into the minds of those within it, forcing each creature in the water to attempt a @Check[will|dc:39] save against the following effects.</p><hr><p><strong>Critical Success</strong> The creature is unaffected</p><p><strong>Success</strong> The creature takes @Damage[4d6[mental]] damage.</p><p><strong>Failure</strong> The creature takes @Damage[8d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 24 hours. While the creature is stupefied, it takes an additional –2 status penalty to checks made to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}.</p><p><strong>Critical Failure</strong> As failure, but @Damage[16d6[mental]] damage, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3}, and the stupefied condition has an unlimited duration.</p>",
+      "name": "Flawed Memories"
     },
     "Gavergash": {
       "description": "<p>Long-lived trolls sometimes force their way through the twin distractions of hunger and pain to learn more about the world around them. To manage their regeneration, they learn to cover themselves in crude armor that slowly becomes integrated with the top layer of their flesh. Marked by this armor and aided by their superior wits, these warleaders gather a variety of trolls to serve them in raiding parties.</p>\n<p>The warleader presented here is a forest troll, but warleaders can be other types of trolls as well. Many of them are adapted to battle tactics that are best suited to their home environments.</p>\n<hr />\n<p>Slavering, cruel, invincible brutes: this is the villager's stock description for the dread monsters known as trolls. The roots of these stories are undoubtedly true. Trolls' flesh endlessly regrows, going so far as to sprout aberrant limbs or additional heads if not pruned, and a bottomless hunger is required to feed such unfettered growth. Even in the process of glutting themselves, however, trolls find opportunities to taunt their prey and inflict petty cruelties.</p>\n<p>A troll's ability to survive is so strong that they believe even the smallest scrap of flesh will slowly regenerate into a new form, suffering as all the powers of the land are gathered to revive them. Despite the pain, trolls speak of this unassailable vitality as a blessing from their creator. Few trolls have heard the laughter of demons who claim that creator cursed the trolls and cast them down from lofty heights, binding them so they could never rise again.</p>\n<p>Trolls prefer to remain solitary, keeping every scrap of food for themselves. In rare instances, an old and powerful troll comes to lead groups of trolls. Such warleaders possess enough cunning to lead their hordes in devastating raids and massacres, and their presence permanently alters the surrounding ecosystem. This link to their environment is an often misunderstood aspect of trollkind, and grows more acute with a troll's age and power. That's not to say trolls are valorous protectors of nature. They're vicious and territorial, and will blight their own territory forever if it means more to eat for a day.</p>",
@@ -187,6 +545,121 @@
       "hazardRoutine": "<p>(4 actions) The burning spirits shriek and howl, swooping in and out of the forges to the south, which roar into scorching life. The spirits scoop up gobs of phantasmal molten dawnsilver and hurl them at different targets in the room. Up to four randomly determined creatures are targeted in this way with molten dawnsilver Strikes (the spirits can target any creature in area <strong>B5</strong>). A single creature may be targeted only once per round, so if there are fewer than four different targets, the haunt's extra actions are lost. The haunt also loses two actions from its routine if one of the two forges are destroyed.</p><p>On a critical hit from a molten dawnsilver Strike, the target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as the molten dawnsilver swiftly cools and encases the target. Molten dawnsilver produced by the haunt vanishes entirely 1 round after it's been thrown.</p>",
       "name": "Haunted Forge"
     },
+    "Insatiable Bore Worm Swarm": {
+      "description": "<p>A single finger-length bore worm is unpleasant but mostly innocuous. Ten thousand bore worms, on the other hand, pose a formidable threat to even seasoned adventurers. The countless worms form a roiling, rancid mass of acid and pain, capable of delivering a hideous death to any person or beast unable to escape them. Unfortunately for any creature other than a bore worm, most encounters involve swarms.</p>\n<hr />\n<p>These Darklands vermin produce corrosive, noxious slime and deliver agonizing bites, whether as a revolting, wriggling swarm of finger-length worms or a single massive, lurching beast. Among Darklands communities, most inhabitants regard bore worms much in the same way surface cultures speak of maggots or cockroaches-with general disdain and revulsion. Children consider catching a single bore worm and using it to torment others a rite of passage, albeit a dangerous one.</p>\n<p>The humble bore worm is a small and simple creature, both biologically and magically. These qualities allow it to adapt rapidly to different environments, some of them quite extreme, and also makes it susceptible to magical radiation and experimentation. Many a Darklands apprentice takes their first steps in the school of transmutation by practicing on these worms, while variations-both natural and cultivated-are scattered about beneath Golarion's surface.</p>",
+      "items": {
+        "5OmSIpE30Qir6OKb": {
+          "name": "Tremorsense (Imprecise) 60 feet"
+        },
+        "OLXpGW8u6XmpJXAp": {
+          "description": "<p>Each enemy in the swarm's space takes @Damage[8d6[acid]] damage (@Check[reflex|dc:38|basic] save). Creatures that fail this save become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} from the swarm's painful bites. On a critical failure, the painful bites cause the creature to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}. In either case, the slowed condition persists for 1 round.</p>",
+          "name": "Painful Devouring"
+        }
+      },
+      "name": "Insatiable Bore Worm Swarm"
+    },
+    "Jandelay Tolokand": {
+      "description": "<p>Streams run dry. The earth cracks. Green leaves brown and shatter. And the creature walks on.</p>\n<p>The faceless, unknowable tolokands wander the land, bringing desolation with every footfall-belching poisonous smoke, blighting plant life, cracking the earth asunder, and even staining the ground with their foul blood. They turn habitable places into wastelands, which has earned tolokands the name \"waste walkers.\"</p>\n<p>These walking forces of destruction don't make their motives known. They remain unmoved by any pleas or threats levied at them, and they fight off attacks only so that they can return to their grim business. However, they have one consistent tendency: they travel to environments on the brink. A tolokand appears in a land wracked by famine or a natural disaster to give it the last push into oblivion.</p>\n<p>Tolokands are mercifully few in number. Since they appear so rarely, it's unclear whether there are just a few individuals or several dozen. Clearly, more than one exists, though, because their patterned soles are as distinctive as fingerprints. Often, these smoking footprints are all that remain in a blighted land.</p>",
+      "items": {
+        "0zERNjo4DBFADEYE": {
+          "name": "Earthbind (At Will)"
+        },
+        "1A5Isu93U5yFwZPV": {
+          "name": "Truespeech (Constant)"
+        },
+        "3ltFeU7t0v6ZbQqL": {
+          "description": "<p><strong>Requirements</strong> The tolokand hasn't cast any of its spontaneous spells this turn</p>\n<hr />\n<p><strong>Effect</strong> The tolokand casts one of its spontaneous spells, using up the spell slot normally. The tolokand can't cast any further spontaneous spells this turn and can't use this ability again for [[/gmr 1d4 #Recharge Sudden Destruction]]{1d4 rounds}.</p>",
+          "name": "Sudden Destruction"
+        },
+        "5bBSfCsuH8lL1hvf": {
+          "name": "Fly (Constant)"
+        },
+        "8kfZsUgnK9lGVqND": {
+          "name": "Haste (At Will, Self Only)"
+        },
+        "FQ4QWZ3U0T1vmHFB": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Jandelay tolokand ends one condition affecting themself.</p>",
+          "name": "Remove a Condition"
+        },
+        "HvbA2JrPJX04mXf4": {
+          "description": "<p>Smoke doesn't impair a tolokand's vision; it ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>",
+          "name": "Smoke Vision"
+        },
+        "I7lMAhjCqMyxPu6y": {
+          "description": "<p>The tolokand recovers from the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of its turn. It's also immune to penalties to its Speeds and ignores difficult terrain and greater difficult terrain.</p>",
+          "name": "Inexorable"
+        },
+        "Na4ZinpZPOodP1WY": {
+          "description": "<p>Whenever the tolokand ends a move action during which it moved 30 feet or farther, it automatically casts one of its innate spells as a free action.</p>",
+          "name": "Blighted Footfalls"
+        },
+        "fJlI13pn1Y8ntWFP": {
+          "description": "<p>50 feet. @Damage[2d6[poison]] damage (@Check[fortitude|dc:37|basic] save).</p>\n<p>The poisonous smoke that bellows from a tolokand makes all creatures inside it @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke are concealed to creatures within it.</p>",
+          "name": "Heartless Furnace"
+        },
+        "gXMyE6CCrhGi4nmM": {
+          "name": "Mythic Power"
+        },
+        "gxBpGZrMdteLCa6c": {
+          "name": "Hand"
+        },
+        "mpDohzU1L0FfV4Tr": {
+          "description": "<p>When a creature scores a critical hit against the tolokand with a piercing or slashing Strike, the tolokand's poisonous, oily blood sprays forth. Any creature within @Template[emanation|distance:5]{5 feet} of the tolokand takes @Damage[3d6[poison]|options:area-damage] damage (@Check[reflex|dc:38|basic|options:area-effect] save). Any non-creature plants the blood spills on die.</p>",
+          "name": "Toxic Blood"
+        },
+        "ncOxYtnERIR6rN5s": {
+          "name": "Environmental Endurance (Constant)"
+        },
+        "pqOZvzHEE3BHvIBd": {
+          "name": "Acid Grip (At Will)"
+        },
+        "szNUIcIcOToW3b6C": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Jandelay tolokand regains an expended spell.</p>",
+          "name": "Recharge"
+        },
+        "zg034Oefe1w3sHwh": {
+          "name": "+2 Status to All Saves vs. Primal Magic"
+        }
+      },
+      "name": "Jandelay Tolokand",
+      "npcAllSaves": "+2 status to all saves vs. primal magic"
+    },
+    "Javownir": {
+      "description": "<p>Beings of inscrutable intent and incredible power, dramofirs hail from the Dreamlands and shamble across the multiverse in search of dreams to incorporate into their voluminous robes. Few people on the Material Plane dare trifle with dramofirs and instead treat them with respect, hoping that they'll simply take their chosen victims' dreams and then go away. Often, this is exactly what happens. Every now and then, however, in the process of siphoning an individual's dreams, the dramofir slays their victim without warning or apparent cause.</p>",
+      "items": {
+        "8ZmjmY8SXUuq9HVi": {
+          "name": "Dreamlands Lore"
+        },
+        "BskkanKxSINfDBr9": {
+          "description": "<p>The dramofir swishes their robes in a mesmerizing display that brings the dreams in the robes to life before the viewer's very eyes. Each creature within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:34] save or be filled with ennui.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> For 1 round, the creature takes a -1 status penalty to attack rolls, saving throws, and skill checks, and all other emotion effects on it are suppressed.</p>\n<p><strong>Failure</strong> As success, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and the duration is [[/gmr 1d4 #Duration Bittersweet Dreams]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> As success, but the creature is also slowed 1, the status penalty is -2, and the duration is 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.4FginnDcOt4wfedf]{Effect: Bittersweet Dreams}</p>",
+          "name": "Bittersweet Dreams"
+        },
+        "ENpP2o2H3ia9c6NJ": {
+          "description": "<p>A dramofir has resistance 10 to precision damage and the extra damage from critical hits. If the resistance is greater than the extra damage, it reduces the extra damage to 0 but doesn't reduce the attack's normal damage.</p>",
+          "name": "Surreal Anatomy"
+        },
+        "LtMnRFGdEZ9u0QFh": {
+          "description": "<p><strong>Requirements</strong> The dramofir is adjacent to an @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or sleeping creature</p><hr /><p><strong>Effect</strong> The dramofir licks the creature's forehead, places their hand in the same spot, and siphons the creature's dreams to incorporate into their robes.</p>\n<p>If the target is affected by any mental effect altering their dreams, such as an @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.Y9SDbANT1DWI1DKU]{Animate Dream's} curse of endless nightmares or a @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell, the dramofir attempts to counteract that effect (counteract modifier [[/r 1d20+26 #Counteract]]{+26}). Otherwise, the dramofir plucks a benign dream from the creature, and the target must attempt a @Check[will|dc:36] save.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the next time it gets a full night's rest.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}, and Javownir casts a 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.GP3wewkQXEPrLxYj]{Subconscious Suggestion} on the target (typically suggesting the target seeks out frightening situations so that their dreams become more nightmarish over time).</p>",
+          "name": "Replace Dream"
+        },
+        "PB6GFQeZfrHdNRmj": {
+          "name": "Telepathy 100 feet"
+        },
+        "bqDyC6IKtXktariv": {
+          "name": "Needle"
+        },
+        "dFcFoT73rj9ezZZz": {
+          "name": "Translocate (At Will)"
+        },
+        "wL091doG4pRSPJrX": {
+          "name": "Truespeech (Constant)"
+        },
+        "zFOxLexJnjqhpWy0": {
+          "name": "Needle"
+        }
+      },
+      "name": "Javownir"
+    },
     "Kandirvek": {
       "description": "<p>Fate is a fickle matter on Golarion. Even with prophecy broken on the world, there are ways to look to the immediate future or acquire a vague sense of long-term events. Omen dragons are bound to see the future—nebulous though it might be—at all times. Visions of the future hound them like a quiet song that never stops playing in their minds. While an omen dragon can focus on or ignore the music of fate at any time, the song plays all the same. At a glance, omen dragons resemble other occult dragons in appearance, save for the mirror-like interior membrane of their wings. An omen dragon's wings offer glimpses into the future. These glimpses are cloudy and vague, but generally correct, if only technically. Omen dragons have a natural compulsion to share the futures they see. These dragons have no compunctions about what the visions show and share their knowledge equally with innocent villagers as they do with wicked tyrants.</p>\n<hr />\n<p>Dragons come in myriad forms, with many having magical abilities or connections to magic. Some dragons draw greater power from magic than others, allowing them to manifest abilities or alter their physiques with prolonged exposure to magic. These dragons become more powerful as they age and strengthen their connections with their magical origins. Scholars debate the classification of these dragons, with some preferring the name magical dragons and others using traditional dragons due to their connection to specific magical traditions. Regardless of their names, these dragons share a number of characteristics: their ability to tap into magical energies, intensified might and cunning as they grow older, and an inclination to hoard vast amounts of treasure and wealth.</p>",
       "items": {
@@ -245,6 +718,116 @@
       },
       "name": "Kandirvek",
       "npcAllSaves": "+2 status to all saves vs. occult"
+    },
+    "Killing Fugue": {
+      "description": "<p>A vision of a terrifying presence (the King in Yellow, the Crawling Chaos, or some other horror beyond imagining) overwhelms an unfortunate explorer, putting them into waking stupor that quickly turns into a homicidal fugue.</p>",
+      "hazardDisable": "<p>@Check[diplomacy|dc:48] (master) to talk the affected individual out of the killing fugue, @Check[occultism|dc:45] (legendary) to recognize the spiritual attack taking place and help the victim to resist its effects; four successes are required to disable the nightmare</p>",
+      "hazardReset": "<p>As long as a creature remains under the effects of the nightmare, it cannot reset. Once a creature has either recovered from the effects or died, the nightmare resets in [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>",
+      "hazardRoutine": "<p>(3 actions; curse) The killing fugue attempts to force a creature under the stupefying effects of deathly vision into taking violent actions against their allies. The affected creature can still take its normal turn of actions on its own turn, but on the killing fugue's turn they perform actions as decided upon by the GM. The killing fugue then spends the appropriate amount of actions to perform those actions and activities. The affected creature can attempt a @Check[will|dc:40|traits:curse] save each time the killing fugue attempts to force them to take actions in this way with the following results.</p><hr><p><strong>Critical Success</strong> The character throws off the killing fugue's influence, ending the nightmare.</p><p><strong>Success</strong> The character prevents the killing fugue from taking the attempted action or activity.</p><p><strong>Failure</strong> The character is forced to take the action or activity chosen by the killing fugue.</p><p><strong>Critical Failure</strong> As failure, but the character can no longer attempt Will saves to resist the killing fugue.</p>",
+      "name": "Killing Fugue"
+    },
+    "Kraken Caller": {
+      "description": "<p>Scouts, usually young sedacthies, ply the ocean in search of animal servants or tread ashore to hunt. Scouts hunting on the surface press crocodiles and snakes into service, while those underwater prefer electric eels and hippocampi.</p>\n<hr />\n<p>Sedacthies are amphibious, fish-like humanoids who lurk in Golarion's oceans and are known for leading their animal servants ashore to devour air breathers. When an entire fishing village disappears overnight, sedacthies are the first suspects. Sedacthies pride themselves as natural leaders, with ambition limited only by their strict adherence to hierarchy. A sedacthy's station is determined by the strength of the animal servants they press into service, and the mettle they prove during hunts and in battles against outsiders.</p>",
+      "items": {
+        "7MQABqBBrZmdmtix": {
+          "name": "Jaws"
+        },
+        "B0SPjSFAOw4yPnrw": {
+          "description": "<p>A sedacthy speaking Thalassic can be understood by any animal that has a swim Speed or the amphibious or aquatic trait. By spending a week regularly interacting with such an animal, the sedacthy can make it permanently helpful.</p>",
+          "name": "Sea Speech"
+        },
+        "kEC0xBIk7QKOmXsZ": {
+          "name": "Wavesense (Imprecise) 30 feet"
+        },
+        "uoEKO9y00bjIH6m4": {
+          "name": "Claw"
+        },
+        "xkke602pekBofSGw": {
+          "description": "<p>The sedacthy makes a jaws Strike. If it hits, an ally of their choice can spend a reaction to make a jaws Strike against the same target. Allies with beaks or similar attacks can use those instead of jaws.</p>",
+          "name": "Shared Feast"
+        }
+      },
+      "name": "Kraken Caller"
+    },
+    "Maddenmist": {
+      "description": "<p>High-ranking sedacthies are expected to both plan campaigns and wade into battle. These speakers achieve their rank by accumulating several large servants or a single massive creature like a megalodon.</p>\n<hr />\n<p>Sedacthies are amphibious, fish-like humanoids who lurk in Golarion's oceans and are known for leading their animal servants ashore to devour air breathers. When an entire fishing village disappears overnight, sedacthies are the first suspects. Sedacthies pride themselves as natural leaders, with ambition limited only by their strict adherence to hierarchy. A sedacthy's station is determined by the strength of the animal servants they press into service, and the mettle they prove during hunts and in battles against outsiders.</p>",
+      "items": {
+        "Fdy6HLhgD096Hzgr": {
+          "name": "Wavesense (Imprecise) 30 feet"
+        },
+        "HkR8xZZIpeW3b4vm": {
+          "name": "Jaws"
+        },
+        "PFfgCTnWRutUzMOD": {
+          "description": "<p>A sedacthy speaking Thalassic can be understood by any animal that has a swim Speed or the amphibious or aquatic trait. By spending a week regularly interacting with such an animal, the sedacthy can make it permanently helpful.</p>",
+          "name": "Sea Speech"
+        },
+        "XHfvFP7lVEq3yg4v": {
+          "name": "Claw"
+        },
+        "nJmJQJMSxWIToPze": {
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Maddenmist is carrying his staff</p><hr /><p><strong>Effect</strong> Maddenmist expends the magical power stored in his greater staff of arcane might. During the current turn, Maddenmist can cast one spell he prepared today and already cast without spending a spell slot. He must still Cast the Spell and meet the spell's other requirements.</p>",
+          "name": "Drain Bonded Item"
+        }
+      },
+      "name": "Maddenmist"
+    },
+    "Maze-Weaver": {
+      "description": "<p>The monstrous, bloated spiders from the windswept realm of Leng build eerie, dangerous lairs with the aid of magically compelled slaves. Leng spiders have anywhere from five to 13 legs, but never an even number.</p>",
+      "items": {
+        "0hkOF2WHkLhHAEjQ": {
+          "description": "<p>The Leng spider moves straight down up to 120 feet, suspended by a web line. It can hang from the web or drop off. The distance it Descends on a Web doesn't count when calculating falling damage.</p>\n<p>The web can be severed by a Strike that deals slashing damage (AC 30, Hardness 15, 25 HP), causing the Leng spider to fall.</p>",
+          "name": "Descend on a Web"
+        },
+        "6U0xCdudnhZPawQv": {
+          "name": "Web War Flail"
+        },
+        "CQ8xnWJoYWGxpNQ5": {
+          "name": "Interplanar Teleport (Self Only)"
+        },
+        "Wvss2Toe2q47z9GS": {
+          "name": "Leg"
+        },
+        "fcCuiTHr7ed8LhqK": {
+          "name": "Fangs"
+        },
+        "iINgbpwr9zD0DJ0d": {
+          "name": "Fast Healing 10"
+        },
+        "iZxDrmolCkhIxWO6": {
+          "description": "<p>A Leng spider can use a web bola to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a target with the Athletics skill. The skill check takes a -2 circumstance penalty. A web bola deals no damage when used to Trip.</p>",
+          "name": "Ranged Trip"
+        },
+        "iw7xcu7OkpYHYyQ2": {
+          "description": "<p>The maze-weaver senses when a creature touches its webs, even if it is on another plane of existence. While touching its webs, the maze-weaver has precise tremorsense to detect the vibrations of creatures touching its webs.</p>",
+          "name": "Interdimensional Web Sense"
+        },
+        "k4tbzCH8jMb0d1Qk": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:33]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 round); the confused effect has the emotion and mental traits.</p>",
+          "name": "Leng Spider Venom"
+        },
+        "maXNMpIYMXY3ycx4": {
+          "name": "Truespeech (Constant)"
+        },
+        "ndqNuLy3iEegO8zG": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The maze-weaver teleports to a space containing its webs, even if it is on another plane of existence.</p>",
+          "name": "Web Step"
+        },
+        "sR5alX5hZopxwTLw": {
+          "name": "Web Bola"
+        },
+        "sWbaqjXgO4EigI5j": {
+          "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The Leng spider spins a web within 20 feet of itself to create a @UUID[Compendium.pf2e.equipment-srd.Item.TFnr9Gq7VXPJu0GQ]{Grasping Snare}, @UUID[Compendium.pf2e.equipment-srd.Item.a2XaerM1KkPyLIPM]{Stunning Snare}, or @UUID[Compendium.pf2e.equipment-srd.Item.XU8u9F3uoesGDjgM]{Warning Snare}. The Leng spider's web provides all the raw materials it needs. All save and @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DCs associated with web traps use the Leng spider's Crafting DC for traps (DC 36). A web trap decays after 24 hours.</p>",
+          "name": "Lay Web Trap"
+        },
+        "snsO2nPGYHe6pZx0": {
+          "description": "<p>The Leng spider creates a weapon by applying a cord of webbing to heavy objects, such as rocks or chunks of metal, either attaching two heavy objects together to create a web bola or fastening one to its leg to create a web war flail.</p>",
+          "name": "Create Web Weaponry"
+        }
+      },
+      "name": "Maze-Weaver",
+      "npcAllSaves": "+1 status to all saves vs. magic",
+      "npcHp": "(fast healing 10)"
     },
     "Mirror of Glory": {
       "description": "<p>A reflective field of energy fills a large archway in a gatehouse, in which viewers regard themselves dressed in fine clothes, bowing down before Runelord Xanderghul.</p>",
@@ -336,6 +919,50 @@
         }
       },
       "name": "Natbakh"
+    },
+    "Nightmare Feast": {
+      "description": "<p>The consumption of sentient, and even sapient creatures is widespread in Leng. Those who suffer such fates are as much the genesis of this nightmare as those who partake, and as such, this nightmare tends to manifest in places where meals were taken, from banquet halls to campsites.</p>",
+      "hazardDisable": "<p>@Check[society|dc:43] (master) to fight these destructive urges by focusing your thoughts on traditions not so steeped in cruelty, or @Check[intimidation|dc:40] (legendary) to overwhelm the nightmare's influence with the strength of your own personality; three successes are required to disable the nightmare</p>",
+      "hazardReset": "<p>The nightmare deactivates as soon as a round begins with no creatures in its area, and resets in [[/gmr 1d6 #rounds]]{1d6 rounds}.</p>",
+      "hazardRoutine": "<p>(1 action) The nightmare transitions from directly chewing on the creatures in the area to compelling them to feed for themselves. Each round on the nightmare's turn, all creatures within 30 feet of the nightmare's epicenter must attempt a @Check[will|dc:36] save with the following results.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The nightmare causes a momentary change to the creature's appearance, causing its jaws to take on a frightening, fanged appearance and filling the creature's mind with distracting, unsettling hunger that cause them to become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the nightmare feast's next turn.</p><p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} until the start of the nightmare feast's next turn and gains a +30 bite (magical) that deals @Damage[(3d12+10)[slashing]] damage plus @Damage[2d6[persistent,bleed]] damage on a hit. The creature favors this bite Strike when the confusion drives them to attack.</p><p><strong>Critical Failure</strong> As failure, but the creature also becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action to make bite Strikes.</p>",
+      "name": "Nightmare Feast"
+    },
+    "Peacock Phoenix": {
+      "description": "<p>Unlike its namesake, the peacock phoenix is a being of pure magic, a unique manifestation of Xanderghul's alter ego as the Peacock Spirit.</p><h2>Other Mythic Phoenixes</h2><p>Because it's tied so intrinsically to Runelord Xanderghul and his alter ego, the Peacock Spirit, once the peacock phoenix is destroyed, it's doubtful Golarion will ever see its like again. Whether different kinds of mythic phoenixes, born from similar confluences of magical and psychic energy, could ever exist remains uncertain.</p>",
+      "items": {
+        "CoP3MumER4voGSy2": {
+          "name": "See the Unseen (Constant)"
+        },
+        "DP4eJ5JKl0dr226b": {
+          "description": "<p>20 feet. The peacock phoenix is surrounded by an aura of iridescence. An adjacent creature that starts its turn in the aura must attempt a @Check[will|dc:35] save. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of its next turn.</p>",
+          "name": "Radiant Panoply"
+        },
+        "DPc1hO3s2cePHsWP": {
+          "name": "Mythic Skill"
+        },
+        "L7qGkMc05Ur80wRe": {
+          "name": "Mythic Resilience"
+        },
+        "hUP3HcbkRAojoOR8": {
+          "name": "Detect Magic (Constant)"
+        },
+        "i5UzlQWjR31WWy7g": {
+          "description": "<p>The phoenix emits a @Template[type:line|distance:100] of radiance from their eyes. Creatures in the area take @Damage[10d12[force]|options:area-damage] damage (@Check[reflex|dc:38|basic] save). The phoenix peacock can't use Radiant Beam again for [[/gmr 1d4 #Recharge Radiant Beam]]{1d4 rounds}.</p>",
+          "name": "Radiant Beam"
+        },
+        "oK7XTNom981cXJRd": {
+          "description": "<p>When the peacock phoenix dies while incorporeal, they return to life at the start of their next turn with full Hit Points. They are no longer incorporeal, lose the spirit trait, gain the beast trait, and lose their immunities and resistances (except for mythic resistance) and radiant panoply. Their Strength modifier becomes +7. They lose their radiant wing Strike and gain a beak and talon Strike.</p>",
+          "name": "Rebirth"
+        },
+        "rQq1KF2jHH2SemOe": {
+          "name": "Mythic Power"
+        },
+        "v1sEU3UP9hpaNXdS": {
+          "name": "Remove a Condition"
+        }
+      },
+      "name": "Peacock Phoenix",
+      "npcAllSaves": "+1 status to all saves vs. magic"
     },
     "Pridespawn Sentinel": {
       "description": "<p>Sinspawn were created by one of seven ancient wizards known collectively as runelords—each of whom embraced and embodied one of seven sins. The first sinspawn was created by the Runelord of Wrath, utilizing techniques that have since gone on to influence fleshwarping practices. It wasn't long before the technique used to create sinspawn fell into the hands of the other runelords, and while each tried their own hand at crafting variants of their own design, today, sinspawn of wrath remain the most numerous and notorious of their kind.</p>\n<p>Bearing only a vague resemblance to the humanoids from whose flesh they were formed, sinspawn generally appear horrifically emaciated and have unnaturally long arms and digitigrade legs, each with a trio of stubby, taloned digits. Veins bulge across sinspawn's bodies in sanguine patterns that suspiciously resemble twisted runes, and their flesh is pale and hairless. Their heads are elongated, with slits for a nose, red eyes, and disturbing lower jaws that split in half at the chin, revealing pedipalps that end in tiny, three-fingered hands and framing a long, lolling tongue.</p>\n<p>Sinspawn stand 6-1/2 feet tall and typically weigh as much as an emaciated human of their size. They behave in a manner consistent with their associated sin and have physical characteristics that hint at these qualities. For example, greedspawn's veins appear to run with gold, while envyspawn appear even more gaunt than the rest of their kin.</p>",
@@ -430,6 +1057,66 @@
       },
       "name": "Pyroclastic Mukradi",
       "npcAc": "all-around vision"
+    },
+    "Quoroc": {
+      "description": "<p>Giant octopuses are found in the heart of deep, dark oceans. Clever and adaptable, they hunt and devour all manner of animals. Despite growing up to 16 feet long, a giant octopus can compress its body to squeeze through small gaps as long as there's room for its beak.</p>\n<p>Giant octopuses favor shipwrecks, coral reefs, or underwater caverns as lairs, where they can take advantage of narrow confines for protection. Like their smaller kin, they're fond of adorning and decorating their lairs with found objects—many of which, in the giant octopus's case, are also magical weapons, shields, or works of art salvaged from sunken ships or fallen adventurers.</p>",
+      "items": {
+        "4fZp6kK5h1WOCAAq": {
+          "description": "<p>A giant octopus can move through a gap at least 2 feet wide without Squeezing, and can @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze} through a gap at least 1 foot wide.</p>",
+          "name": "Compression"
+        },
+        "IXWkQwpWIcMopGvV": {
+          "name": "Arm"
+        },
+        "PgvThxPk7tH5CoXV": {
+          "description": "<p>@Damage[(2d10+14)[bludgeoning]], @Check[fortitude|dc:36|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "Se0RGAQyLYAwETrV": {
+          "name": "Beak"
+        },
+        "XK9Va6QKy2g8z1dZ": {
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} 1 (1 round)</p>",
+          "name": "Quoroc Toxin"
+        }
+      },
+      "name": "Quoroc",
+      "npcSpeed": "compression"
+    },
+    "Ravenous Crypt": {
+      "description": "<p>When tomb robbers loot the dead, sometimes the resting places of those victims animate to avenge them. This happens most frequently when the entombed person was a particularly greedy, gluttonous, or vindictive individual in life. Other ravenous crypts arise spontaneously in places where energy from the Void flows freely into other planes.</p><h2>Boneyard Guardians</h2><p>Ravenous crypts are occasionally encountered in the Boneyard, roaming that vast necropolis like packs of hungry dogs, although they quickly come to heel while in Pharasma's presence. This behavior has led some scholars to posit that the constructs are created at the behest—or at least with the blessing—of the Lady of Graves. Magrim, the demigod of the dwarven afterlife, is also believed to have some connection to ravenous crypts, as suggested by the fact the pediments of many crypts are carved with the scowling visages of dwarven elders.</p>",
+      "items": {
+        "3WL0iDNoX7Tz0yA6": {
+          "description": "<p>Large, @Damage[5d8[void]] plus sap strength, Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+        },
+        "AjcJz6lBMWISkNUz": {
+          "description": "<p>The ravenous crypt reduces any damage it takes by an amount equal to its Hardness. Once it's reduced to less than 100 Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing its Hardness and reducing the crypt's Armor Class to 32.</p>",
+          "name": "Construct Armor (Hardness 15)"
+        },
+        "JPNQjI1PLpAupWcw": {
+          "description": "<p>A ravenous crypt has a 10-foot-space inside of it. A creature swallowed by the ravenous crypt isn't @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or slowed, and the creature doesn't need to hold its breath. It can attack the ravenous crypt normally. Because it isn't grabbed, it can't @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} the crypt, but it can break free by dealing bludgeoning damage to the crypt equal to the crypt's Rupture value or by Forcing Open the crypt's doors with a successful @Check[athletics|dc:34] check.</p>",
+          "name": "Spacious Stomach"
+        },
+        "JkyI0j9W2FsYQ3Ts": {
+          "name": "Doors"
+        },
+        "LLpPxa8bNyiici69": {
+          "description": "<p>Each adjacent creature and each creature swallowed by the ravenous crypt takes @Damage[5d10[bludgeoning]] damage (@Check[reflex|dc:34|basic] save). Swallowed creatures take a –2 circumstance penalty to this save. On a critical failure, a creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+          "name": "Thrash"
+        },
+        "MEHClUrYL0jafNcg": {
+          "name": "Leg"
+        },
+        "QRDylv56QRS1LahL": {
+          "description": "<p>When the ravenous crypt is reduced to 0 Hit Points, its space becomes an area of difficult terrain, and any creatures swallowed by the crypt fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in a space of their choice within the area.</p>",
+          "name": "Reduced to Rubble"
+        },
+        "aV5XZtombWr0wsW7": {
+          "description": "<p>A creature that takes void damage from the ravenous crypt's Swallow Whole ability must attempt a @Check[fortitude|dc:34] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} for 1 minute.</p>",
+          "name": "Sap Strength"
+        }
+      },
+      "name": "Ravenous Crypt",
+      "npcAc": "(32 when broken); construct armor"
     },
     "Risen Runelord (Envy)": {
       "description": "<p>Risen runelords are created by a powerful ritual invented by Runelord Xanderghul—a ritual called raise runelord. All risen runelords are at least level 11 creatures. Once created, a risen runelord has no capacity to become more powerful, as they are manifestations of their legacy at a specific point in time (although given enough time and resources, a risen runelord could potentially find a way to overcome this limitation on self-improvement).</p>\n<p>A risen runelord has a modicum of free will, but as long as the one who created them via raise runelord lives, they're bound to their creator's desires. A risen runelord ordered to undertake obviously self-destructive actions might, at the GM's discretion, resist the command and could potentially even break free of their creator's control.</p>\n<p>Since raise runelord draws upon a runelord's legacy as it exists within the Dreamlands, no risen runelord can ever sleep or dream. Xanderghul can use a risen runelord in a special way: he can use any risen runelord (including ones he didn't create) as a spare body. If he's slain, his soul can instantly jump to the closest risen runelord to replace them and continue the fight, unless the PCs can disable this defense during the second adventure in Revenge of the Runelords. Regardless of level, all risen runelords are mythic creatures and are immune to sleep effects.</p><h2>Lust and Pride</h2><p>Of the seven sins, lust and pride are unique among the runelords for these sins were only ever represented by a single runelord—and both still live during the events of this Adventure Path. This may change once the events of Revenge of the Runelords come to a conclusion, in which case the sinful foci for lust and pride become potential options for risen runelords of Sorshen or Xanderghul, but during Revenge of the Runelords, no risen runelords of lust or pride can exist.</p><h2>Risen Runelord Gear</h2><p>A risen runelord's polearm is an extension of their being and cannot exist without them, vanishing upon their death. This doesn't prevent a risen runelord from claiming, carrying, or using other items, and most higher-level risen runelords keep real magic items that remain behind after their death.</p>",
@@ -732,11 +1419,267 @@
       },
       "name": "Risen Runelord (Wrath)"
     },
+    "Risen Runelord Haphrama": {
+      "description": "<p>Risen runelords are created by a powerful ritual invented by Runelord Xanderghul—a ritual called raise runelord. All risen runelords are at least level 11 creatures. Once created, a risen runelord has no capacity to become more powerful, as they are manifestations of their legacy at a specific point in time (although given enough time and resources, a risen runelord could potentially find a way to overcome this limitation on self-improvement).</p>\n<p>A risen runelord has a modicum of free will, but as long as the one who created them via raise runelord lives, they're bound to their creator's desires. A risen runelord ordered to undertake obviously self-destructive actions might, at the GM's discretion, resist the command and could potentially even break free of their creator's control.</p>\n<p>Since raise runelord draws upon a runelord's legacy as it exists within the Dreamlands, no risen runelord can ever sleep or dream. Xanderghul can use a risen runelord in a special way: he can use any risen runelord (including ones he didn't create) as a spare body. If he's slain, his soul can instantly jump to the closest risen runelord to replace them and continue the fight, unless the PCs can disable this defense during the second adventure in Revenge of the Runelords. Regardless of level, all risen runelords are mythic creatures and are immune to sleep effects.</p><h2>Lust and Pride</h2><p>Of the seven sins, lust and pride are unique among the runelords for these sins were only ever represented by a single runelord—and both still live during the events of this Adventure Path. This may change once the events of Revenge of the Runelords come to a conclusion, in which case the sinful foci for lust and pride become potential options for risen runelords of Sorshen or Xanderghul, but during Revenge of the Runelords, no risen runelords of lust or pride can exist.</p><h2>Risen Runelord Gear</h2><p>A risen runelord's polearm is an extension of their being and cannot exist without them, vanishing upon their death. This doesn't prevent a risen runelord from claiming, carrying, or using other items, and most higher-level risen runelords keep real magic items that remain behind after their death.</p>",
+      "items": {
+        "0gGpGNd5NNIl0TXk": {
+          "description": "<p><strong>Requirements</strong> The risen runelord isn't holding a runelord's polearm</p><hr /><p><strong>Effect</strong> The risen runelord causes their runelord's polearm to appear in one of their hands. The exact appearance of the polearm depends on the type wielded by the runelord in life, but these weapons are purely spiritual constructs that inflict mental damage on a Strike and vanish as soon as the risen runelord releases the weapon or dies.</p>",
+          "name": "Manifest Runelord's Polearm"
+        },
+        "Arxws8TsMP4QUFJc": {
+          "description": "<p>If a reaction would disrupt the risen runelord's spellcasting action, the risen runelord attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        },
+        "FPr7PTLJpqmzY994": {
+          "description": "<p>A risen runelord may drink or eat for pleasure or entertainment, but they need not do so for nourishment and never suffer the effects of thirst or starvation.</p>",
+          "name": "Beyond Life"
+        },
+        "URcGZAgwgFGiU9cQ": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> If the risen runelord's next action is to cast a cantrip or spell that's 4th-rank or lower, reduce the number of actions to cast it by 1 (minimum 1 action).</p>",
+          "name": "Quickened Casting"
+        },
+        "YjoYhiwg06abANW1": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord ends one condition affecting them.</p>",
+          "name": "Remove a Condition"
+        },
+        "eAdcVAxJsvRlI3y2": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord regains an expended spell slot or can use Quickened Casting again.</p>",
+          "name": "Recharge"
+        },
+        "kuBU5UfKp0xpH0IN": {
+          "name": "Runelord's Polearm"
+        },
+        "sai4dpNdeprcYqyQ": {
+          "name": "Mythic Power"
+        },
+        "y7cynF6yL9QBQG85": {
+          "description": "<p>When a risen runelord is slain, their body and (if manifested) polearm vanishes as the trapped legacy that was drawn upon to create them is set free, exploding outward in a riot of swirling color. This release of arcane energy blasts at the minds of nearby creatures. All creatures adjacent to a risen runelord during a Vanishing Death must succeed at a @Check[will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) as fragments of their own memories are temporarily scrambled or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}. Other objects carried by the risen runelord fall to the ground.</p>",
+          "name": "Vanishing Death"
+        }
+      },
+      "name": "Risen Runelord Haphrama"
+    },
+    "Risen Runelord Kaliphesta": {
+      "description": "<p>Risen runelords are created by a powerful ritual invented by Runelord Xanderghul—a ritual called raise runelord. All risen runelords are at least level 11 creatures. Once created, a risen runelord has no capacity to become more powerful, as they are manifestations of their legacy at a specific point in time (although given enough time and resources, a risen runelord could potentially find a way to overcome this limitation on self-improvement).</p>\n<p>A risen runelord has a modicum of free will, but as long as the one who created them via raise runelord lives, they're bound to their creator's desires. A risen runelord ordered to undertake obviously self-destructive actions might, at the GM's discretion, resist the command and could potentially even break free of their creator's control.</p>\n<p>Since raise runelord draws upon a runelord's legacy as it exists within the Dreamlands, no risen runelord can ever sleep or dream. Xanderghul can use a risen runelord in a special way: he can use any risen runelord (including ones he didn't create) as a spare body. If he's slain, his soul can instantly jump to the closest risen runelord to replace them and continue the fight, unless the PCs can disable this defense during the second adventure in Revenge of the Runelords. Regardless of level, all risen runelords are mythic creatures and are immune to sleep effects.</p><h2>Lust and Pride</h2><p>Of the seven sins, lust and pride are unique among the runelords for these sins were only ever represented by a single runelord—and both still live during the events of this Adventure Path. This may change once the events of Revenge of the Runelords come to a conclusion, in which case the sinful foci for lust and pride become potential options for risen runelords of Sorshen or Xanderghul, but during Revenge of the Runelords, no risen runelords of lust or pride can exist.</p><h2>Risen Runelord Gear</h2><p>A risen runelord's polearm is an extension of their being and cannot exist without them, vanishing upon their death. This doesn't prevent a risen runelord from claiming, carrying, or using other items, and most higher-level risen runelords keep real magic items that remain behind after their death.</p>",
+      "items": {
+        "0gGpGNd5NNIl0TXk": {
+          "description": "<p><strong>Requirements</strong> The risen runelord isn't holding a runelord's polearm</p><hr /><p><strong>Effect</strong> The risen runelord causes their runelord's polearm to appear in one of their hands. The exact appearance of the polearm depends on the type wielded by the runelord in life, but these weapons are purely spiritual constructs that inflict mental damage on a Strike and vanish as soon as the risen runelord releases the weapon or dies.</p>",
+          "name": "Manifest Runelord's Polearm"
+        },
+        "Arxws8TsMP4QUFJc": {
+          "description": "<p>If a reaction would disrupt the risen runelord's spellcasting action, the risen runelord attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        },
+        "FPr7PTLJpqmzY994": {
+          "description": "<p>A risen runelord may drink or eat for pleasure or entertainment, but they need not do so for nourishment and never suffer the effects of thirst or starvation.</p>",
+          "name": "Beyond Life"
+        },
+        "URcGZAgwgFGiU9cQ": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> If the risen runelord's next action is to cast a cantrip or spell that's 4th-rank or lower, reduce the number of actions to cast it by 1 (minimum 1 action).</p>",
+          "name": "Quickened Casting"
+        },
+        "YjoYhiwg06abANW1": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord ends one condition affecting them.</p>",
+          "name": "Remove a Condition"
+        },
+        "eAdcVAxJsvRlI3y2": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord regains an expended spell slot or can use Quickened Casting again.</p>",
+          "name": "Recharge"
+        },
+        "kuBU5UfKp0xpH0IN": {
+          "name": "Runelord's Polearm"
+        },
+        "sai4dpNdeprcYqyQ": {
+          "name": "Mythic Power"
+        },
+        "y7cynF6yL9QBQG85": {
+          "description": "<p>When a risen runelord is slain, their body and (if manifested) polearm vanishes as the trapped legacy that was drawn upon to create them is set free, exploding outward in a riot of swirling color. This release of arcane energy blasts at the minds of nearby creatures. All creatures adjacent to a risen runelord during a Vanishing Death must succeed at a @Check[will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) as fragments of their own memories are temporarily scrambled or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}. Other objects carried by the risen runelord fall to the ground.</p>",
+          "name": "Vanishing Death"
+        }
+      },
+      "name": "Risen Runelord Kaliphesta"
+    },
+    "Risen Runelord Karzoug": {
+      "description": "<p>Risen runelords are created by a powerful ritual invented by Runelord Xanderghul—a ritual called raise runelord. All risen runelords are at least level 11 creatures. Once created, a risen runelord has no capacity to become more powerful, as they are manifestations of their legacy at a specific point in time (although given enough time and resources, a risen runelord could potentially find a way to overcome this limitation on self-improvement).</p>\n<p>A risen runelord has a modicum of free will, but as long as the one who created them via raise runelord lives, they're bound to their creator's desires. A risen runelord ordered to undertake obviously self-destructive actions might, at the GM's discretion, resist the command and could potentially even break free of their creator's control.</p>\n<p>Since raise runelord draws upon a runelord's legacy as it exists within the Dreamlands, no risen runelord can ever sleep or dream. Xanderghul can use a risen runelord in a special way: he can use any risen runelord (including ones he didn't create) as a spare body. If he's slain, his soul can instantly jump to the closest risen runelord to replace them and continue the fight, unless the PCs can disable this defense during the second adventure in Revenge of the Runelords. Regardless of level, all risen runelords are mythic creatures and are immune to sleep effects.</p><h2>Lust and Pride</h2><p>Of the seven sins, lust and pride are unique among the runelords for these sins were only ever represented by a single runelord—and both still live during the events of this Adventure Path. This may change once the events of Revenge of the Runelords come to a conclusion, in which case the sinful foci for lust and pride become potential options for risen runelords of Sorshen or Xanderghul, but during Revenge of the Runelords, no risen runelords of lust or pride can exist.</p><h2>Risen Runelord Gear</h2><p>A risen runelord's polearm is an extension of their being and cannot exist without them, vanishing upon their death. This doesn't prevent a risen runelord from claiming, carrying, or using other items, and most higher-level risen runelords keep real magic items that remain behind after their death.</p>",
+      "items": {
+        "0gGpGNd5NNIl0TXk": {
+          "description": "<p><strong>Requirements</strong> The risen runelord isn't holding a runelord's polearm</p><hr /><p><strong>Effect</strong> The risen runelord causes their runelord's polearm to appear in one of their hands. The exact appearance of the polearm depends on the type wielded by the runelord in life, but these weapons are purely spiritual constructs that inflict mental damage on a Strike and vanish as soon as the risen runelord releases the weapon or dies.</p>",
+          "name": "Manifest Runelord's Polearm"
+        },
+        "Arxws8TsMP4QUFJc": {
+          "description": "<p>If a reaction would disrupt the risen runelord's spellcasting action, the risen runelord attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        },
+        "Aw02rdDE6EkB7hEn": {
+          "description": "<p><strong>Cost</strong> all of Karzoug's Mythic Points</p>\n<p><strong>Requirements</strong> Aethusa's Prison hazard hasn't been destroyed</p>\n<p><strong>Trigger</strong> Karzoug would die and has at least 1 Mythic Point</p><hr /><p><strong>Effect</strong> Karzoug uses his dying breath to destroy Aethusa's prison and wrap himself in the remnants of its magical energy. Karzoug remains standing and conscious, and he recovers @Damage[166[healing]] Hit Points. He becomes immune to the type of elemental damage the prison was focused on when Karzoug used this ability. At the end of Risen Runelord Karzoug's next turn, he vanishes entirely, reappearing somewhere distant in the Universe. His gear (his chromatic robe and the slate of distant letters) remains behind. While the risen runelord no longer takes part in this Adventure Path, he might, at your discretion, rise again in a future campaign of your design. This ability replaces the Undying Myth ability most mythic creatures of this level have.</p>",
+          "name": "Chromatic Aegis"
+        },
+        "FPr7PTLJpqmzY994": {
+          "description": "<p>A risen runelord may drink or eat for pleasure or entertainment, but they need not do so for nourishment and never suffer the effects of thirst or starvation.</p>",
+          "name": "Beyond Life"
+        },
+        "URcGZAgwgFGiU9cQ": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> If the risen runelord's next action is to cast a cantrip or spell that's 4th-rank or lower, reduce the number of actions to cast it by 1 (minimum 1 action).</p>",
+          "name": "Quickened Casting"
+        },
+        "YjoYhiwg06abANW1": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord ends one condition affecting them.</p>",
+          "name": "Remove a Condition"
+        },
+        "eAdcVAxJsvRlI3y2": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord regains an expended spell slot or can use Quickened Casting again.</p>",
+          "name": "Recharge"
+        },
+        "kuBU5UfKp0xpH0IN": {
+          "name": "Runelord's Polearm"
+        },
+        "sai4dpNdeprcYqyQ": {
+          "name": "Mythic Power"
+        },
+        "y7cynF6yL9QBQG85": {
+          "description": "<p>When a risen runelord is slain, their body and (if manifested) polearm vanishes as the trapped legacy that was drawn upon to create them is set free, exploding outward in a riot of swirling color. This release of arcane energy hammers the minds of nearby creatures. All creatures adjacent to a risen runelord during their vanishing death must succeed at a @Check[will|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) as fragments of their own memories are temporarily scrambled or hidden. Other objects carried by the risen runelord fall to the ground.</p>\n<p>This ability only occurs if Chromatic Aegis does not.</p>",
+          "name": "Vanishing Death"
+        }
+      },
+      "name": "Risen Runelord Karzoug"
+    },
+    "Risen Runelord Xirie": {
+      "description": "<p>Risen runelords are created by a powerful ritual invented by Runelord Xanderghul—a ritual called raise runelord. All risen runelords are at least level 11 creatures. Once created, a risen runelord has no capacity to become more powerful, as they are manifestations of their legacy at a specific point in time (although given enough time and resources, a risen runelord could potentially find a way to overcome this limitation on self-improvement).</p>\n<p>A risen runelord has a modicum of free will, but as long as the one who created them via raise runelord lives, they're bound to their creator's desires. A risen runelord ordered to undertake obviously self-destructive actions might, at the GM's discretion, resist the command and could potentially even break free of their creator's control.</p>\n<p>Since raise runelord draws upon a runelord's legacy as it exists within the Dreamlands, no risen runelord can ever sleep or dream. Xanderghul can use a risen runelord in a special way: he can use any risen runelord (including ones he didn't create) as a spare body. If he's slain, his soul can instantly jump to the closest risen runelord to replace them and continue the fight, unless the PCs can disable this defense during the second adventure in Revenge of the Runelords. Regardless of level, all risen runelords are mythic creatures and are immune to sleep effects.</p><h2>Lust and Pride</h2><p>Of the seven sins, lust and pride are unique among the runelords for these sins were only ever represented by a single runelord—and both still live during the events of this Adventure Path. This may change once the events of Revenge of the Runelords come to a conclusion, in which case the sinful foci for lust and pride become potential options for risen runelords of Sorshen or Xanderghul, but during Revenge of the Runelords, no risen runelords of lust or pride can exist.</p><h2>Risen Runelord Gear</h2><p>A risen runelord's polearm is an extension of their being and cannot exist without them, vanishing upon their death. This doesn't prevent a risen runelord from claiming, carrying, or using other items, and most higher-level risen runelords keep real magic items that remain behind after their death.</p>",
+      "items": {
+        "0gGpGNd5NNIl0TXk": {
+          "description": "<p><strong>Requirements</strong> The risen runelord isn't holding a runelord's polearm</p><hr /><p><strong>Effect</strong> The risen runelord causes their runelord's polearm to appear in one of their hands. The exact appearance of the polearm depends on the type wielded by the runelord in life, but these weapons are purely spiritual constructs that inflict mental damage on a Strike and vanish as soon as the risen runelord releases the weapon or dies.</p>",
+          "name": "Manifest Runelord's Polearm"
+        },
+        "Arxws8TsMP4QUFJc": {
+          "description": "<p>If a reaction would disrupt the risen runelord's spellcasting action, the risen runelord attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        },
+        "FPr7PTLJpqmzY994": {
+          "description": "<p>A risen runelord may drink or eat for pleasure or entertainment, but they need not do so for nourishment and never suffer the effects of thirst or starvation.</p>",
+          "name": "Beyond Life"
+        },
+        "URcGZAgwgFGiU9cQ": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> If the risen runelord's next action is to cast a cantrip or spell that's 4th-rank or lower, reduce the number of actions to cast it by 1 (minimum 1 action).</p>",
+          "name": "Quickened Casting"
+        },
+        "YjoYhiwg06abANW1": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord ends one condition affecting them.</p>",
+          "name": "Remove a Condition"
+        },
+        "eAdcVAxJsvRlI3y2": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord regains an expended spell slot or can use Quickened Casting again.</p>",
+          "name": "Recharge"
+        },
+        "kuBU5UfKp0xpH0IN": {
+          "name": "Runelord's Polearm"
+        },
+        "sai4dpNdeprcYqyQ": {
+          "name": "Mythic Power"
+        },
+        "y7cynF6yL9QBQG85": {
+          "description": "<p>When a risen runelord is slain, their body and (if manifested) polearm vanishes as the trapped legacy that was drawn upon to create them is set free, exploding outward in a riot of swirling color. This release of arcane energy blasts at the minds of nearby creatures. All creatures adjacent to a risen runelord during a Vanishing Death must succeed at a @Check[will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) as fragments of their own memories are temporarily scrambled or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}. Other objects carried by the risen runelord fall to the ground.</p>",
+          "name": "Vanishing Death"
+        }
+      },
+      "name": "Risen Runelord Xirie"
+    },
+    "Risen Runelord of Envy (Prison)": {
+      "description": "<p>Risen runelords are created by a powerful ritual invented by Runelord Xanderghul—a ritual called raise runelord. All risen runelords are at least level 11 creatures. Once created, a risen runelord has no capacity to become more powerful, as they are manifestations of their legacy at a specific point in time (although given enough time and resources, a risen runelord could potentially find a way to overcome this limitation on self-improvement).</p>\n<p>A risen runelord has a modicum of free will, but as long as the one who created them via raise runelord lives, they're bound to their creator's desires. A risen runelord ordered to undertake obviously self-destructive actions might, at the GM's discretion, resist the command and could potentially even break free of their creator's control.</p>\n<p>Since raise runelord draws upon a runelord's legacy as it exists within the Dreamlands, no risen runelord can ever sleep or dream. Xanderghul can use a risen runelord in a special way: he can use any risen runelord (including ones he didn't create) as a spare body. If he's slain, his soul can instantly jump to the closest risen runelord to replace them and continue the fight, unless the PCs can disable this defense during the second adventure in Revenge of the Runelords. Regardless of level, all risen runelords are mythic creatures and are immune to sleep effects.</p><h2>Lust and Pride</h2><p>Of the seven sins, lust and pride are unique among the runelords for these sins were only ever represented by a single runelord—and both still live during the events of this Adventure Path. This may change once the events of Revenge of the Runelords come to a conclusion, in which case the sinful foci for lust and pride become potential options for risen runelords of Sorshen or Xanderghul, but during Revenge of the Runelords, no risen runelords of lust or pride can exist.</p><h2>Risen Runelord Gear</h2><p>A risen runelord's polearm is an extension of their being and cannot exist without them, vanishing upon their death. This doesn't prevent a risen runelord from claiming, carrying, or using other items, and most higher-level risen runelords keep real magic items that remain behind after their death.</p>",
+      "items": {
+        "0gGpGNd5NNIl0TXk": {
+          "description": "<p><strong>Requirements</strong> The risen runelord isn't holding a runelord's polearm</p><hr /><p><strong>Effect</strong> The risen runelord causes their runelord's polearm to appear in one of their hands. The exact appearance of the polearm depends on the type wielded by the runelord in life, but these weapons are purely spiritual constructs that inflict mental damage on a Strike and vanish as soon as the risen runelord releases the weapon or dies.</p>",
+          "name": "Manifest Runelord's Polearm"
+        },
+        "Arxws8TsMP4QUFJc": {
+          "description": "<p>If a reaction would disrupt the risen runelord's spellcasting action, the risen runelord attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>",
+          "name": "Steady Spellcasting"
+        },
+        "FPr7PTLJpqmzY994": {
+          "description": "<p>A risen runelord may drink or eat for pleasure or entertainment, but they need not do so for nourishment and never suffer the effects of thirst or starvation.</p>",
+          "name": "Beyond Life"
+        },
+        "URcGZAgwgFGiU9cQ": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> If the risen runelord's next action is to cast a cantrip or spell that's 4th-rank or lower, reduce the number of actions to cast it by 1 (minimum 1 action).</p>",
+          "name": "Quickened Casting"
+        },
+        "YjoYhiwg06abANW1": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord ends one condition affecting them.</p>",
+          "name": "Remove a Condition"
+        },
+        "eAdcVAxJsvRlI3y2": {
+          "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The risen runelord regains an expended spell slot or can use Quickened Casting again.</p>",
+          "name": "Recharge"
+        },
+        "kuBU5UfKp0xpH0IN": {
+          "name": "Runelord's Polearm"
+        },
+        "sai4dpNdeprcYqyQ": {
+          "name": "Mythic Power"
+        },
+        "y7cynF6yL9QBQG85": {
+          "description": "<p>When a risen runelord is slain, their body and (if manifested) polearm vanishes as the trapped legacy that was drawn upon to create them is set free, exploding outward in a riot of swirling color. This release of arcane energy blasts at the minds of nearby creatures. All creatures adjacent to a risen runelord during a Vanishing Death must succeed at a @Check[will|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) as fragments of their own memories are temporarily scrambled or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}. Other objects carried by the risen runelord fall to the ground.</p>",
+          "name": "Vanishing Death"
+        }
+      },
+      "name": "Risen Runelord of Envy (Prison)"
+    },
+    "Rune Sentries": {
+      "description": "<p>Arcs of lightning arc flash from the eyes of the floating sentries.</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:45] (legendary) to turn the lightning back against the sentry, causing the head to plummet, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank; counteract DC 36) to counteract the magic that empowers the sentry, causing it to plummet. Each sentry must be counteracted or destroyed separately.</p>",
+      "hazardRoutine": "<p>(6 actions) Each Rune Sentry grants the hazard 1 action; a Rune Sentry that's plummeted or been disabled or destroyed reduces the hazard's available actions by 1. On the hazard's turn, all active Rune Sentries spend their action to use Lightning Arc.</p>",
+      "name": "Rune Sentries"
+    },
     "Shattered Runewell of Pride": {
       "description": "<p>Plumes of magenta and violet light and vapor shift and writhe out of a hole in reality surrounded by the fragments of a <em>runewell</em> suspended mid-explosion.</p>",
       "hazardDisable": "<p>@Check[arcana|dc:37] (master) or @Check[occultism|dc:40] (master) to redirect the magic back in on itself and cancel out the danger, or @Check[crafting|dc:40] (legendary) to reposition <em>runewell</em> fragments so they're not dangerous; three total successes are required to disable the shattered <em>runewell</em></p>",
       "hazardRoutine": "<p>(3 actions) When the shattered runewell takes its first action, a towering, 30-foot-tall image of Runelord Xanderghul formed from scintillating magenta and violet light and fire looms up from the runewell. On each of the hazard's three actions, this manifestation of Runelord Xanderghul scowls down at the PCs, and tendrils of strangely colored fire lash out of the runewell, each targeting a different PC in the area. The effects of these tendrils vary according to their color; these ranged Strikes can target anyone in the Eye of Arrogance and accrue multiple attack penalties normally.</p>",
       "name": "Shattered Runewell of Pride"
+    },
+    "Silent Devotee": {
+      "description": "<p>When the runelords first created the Emerald Chambers, an order of martial spellcasters was established to protect Xin's tomb. Known as the Silent Devotees, members of this order cut out their own eyes and tongues in a gesture intended both to prove their devotion and to ensure that knowledge of the Emerald Chambers would never spread beyond the order. After an initial surge of volunteers, interest in the order waned once the duplicitous nature of the runelords (and rumors of their involvement in Xin's assassination) came to light. Today, only a few dozen silent devotees remain.</p>\n<p>The devotees expanded the scope of their mission after the runelords claimed portions of the Emerald Chambers for their personal use. These devotees fitted their empty eye sockets with emeralds magically imbued with the site plans for the Chambers, allowing them to patrol the extradimensional space in its entirety. Combined with the raw magic flowing through the Chambers, the emeralds turned the skin of the devotees a pallid green but also gifted them with a sort of immortality, such that the remaining devotees seem immune to the ravages of time. Today, the Silent Devotees are something more than the humans they once were.</p><h2>Xin-Hndoros</h2><p>The most devoted member of the Silent Devotees was surely Xin-Undoros, a loyal champion of Xin and one of the order's first volunteers. Though he predicted Earthfall, Xin-Undoros failed to warn the runelords of the catastrophe, blaming them for the death of his beloved emperor. As punishment for this treachery, Xin-Undoros became a graveknight shortly after the end came. While this transformation returned Xin-Undoros's ability to speak, he still refuses to do so, regarding such an act as a violation of his eternal oath.</p>",
+      "items": {
+        "6kRr0pEi6UAfzFib": {
+          "description": "<p>10 feet. The silent devotee is surrounded by an aura that suppresses sound, granting the silent devotee resistance to sonic energy and a bonus to all saves against auditory effects. Creatures within the aura can't use sonic attacks, use auditory actions, or Cast a Spell without the subtle trait.</p>",
+          "name": "Pall of Silence"
+        },
+        "CVquoqIULWmrpVk2": {
+          "description": "<p>The silent devotee teleports to an unoccupied space within 30 feet.</p>",
+          "name": "Transdimensional Step"
+        },
+        "Js1BeQMpKG6UgMXr": {
+          "description": "<p>Though not undead, silent devotees don't age as most mortal creatures do. They don't eat, drink, sleep, or breathe.</p>",
+          "name": "Untouched by Time"
+        },
+        "NmC1d1S0qoFtPnKW": {
+          "name": "Truesight (Constant)"
+        },
+        "U6detunFxsigyWVV": {
+          "description": "<p>The silent devotee marks a creature within 60 feet they can see with a rune of magical silence. The creature must succeed at a @Check[will|dc:34] saving throw or be affected as if by a 7th-rank silence spell. The rune lasts for 1 minute or until the devotee dies. A creature can be marked with only one Quieting Rune at a time. If the devotee uses this ability again, any previous Quieting Rune they've created ends.</p>",
+          "name": "Quieting Rune"
+        },
+        "blCjYjNC45V8vqAJ": {
+          "name": "+2 Status to All Saves Vs. Auditory"
+        },
+        "x3FAkTAzjZHm1lqX": {
+          "description": "<p>A silent devotee's Strikes deal and additional 2d6 precision damage to creatures that are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} or are taking persistent bleed damage.</p>",
+          "name": "Cruel Sneak Attack"
+        }
+      },
+      "name": "Silent Devotee",
+      "npcAllSaves": "+2 status to all saves vs. auditory"
+    },
+    "Slothful Stairs": {
+      "description": "<p>A supernatural exhaustion fills creatures who climb the stairs.</p>",
+      "hazardDisable": "<p>@Check[athletics|dc:45] (legendary) to wedge crumbling stones into cracks to jam the collapsing stairs, @Check[thievery|dc:48] (master) to deface the hidden magical runes that power the trap; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank, counteract DC 36) to counteract a rune; three total successes are required to disable the trap</p>",
+      "hazardReset": "<p>The trap continues taking Leaden Limbs actions (and the void at the bottom of the stairwell remains open) for as long as creatures remain in the area. Once no creatures remain, the stairwell rebuilds itself, the void closes, and the trap resets.</p>",
+      "hazardRoutine": "<p>(2 actions) The haunt uses Leaden Limbs once, then Crumbling Stairs once.</p>",
+      "name": "Slothful Stairs"
+    },
+    "The Gullet": {
+      "description": "<p>Images of excessive feasts decorate the walls of the hallway.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:43] (expert) to jam the hallway so it can't tilt; a character who succeeds at a @Check[acrobatics|dc:46] or @Check[athletics|dc:46] check can balance or sprint the length of the hallway before it has a chance to tilt. Flying creatures and Tiny creatures don't trigger the trap. Creative solutions (such as loading the hallway's western half with an appropriate counterweight) might also disable the trap.</p>",
+      "hazardReset": "<p>Once the weight in the eastern end of the hallway is removed, the ramp rises back to its original position and the trap immediately resets.</p>",
+      "name": "The Gullet"
     },
     "Trinity Initiate": {
       "items": {
@@ -750,6 +1693,18 @@
         }
       },
       "name": "Trinity Initiate"
+    },
+    "Trinity Star": {
+      "description": "<p>A blazing comet with three tails—one red, one black, and one with rainbow hues—careens throughout the area.</p>",
+      "hazardDisable": "<p>@Check[athletics|dc:48] (legendary) to grab one of the comet's tails and rip it free; @Check[occultism|dc:45] or @Check[religion|dc:45] (master) to exorcise the divine energy of the red tail (which is infused with Gorum's legacy) or the black tail (infused with the nihilism of Abaddon's Eclipse); @Check[arcana|dc:45] (master) to unweave the magic of the rainbow tail (Xanderghul's mythic power); or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th rank; counteract DC 36) to counteract one of the tails. Each tail must be disabled separately to disable the hazard.</p>",
+      "hazardReset": "<p>(1 action) The Trinity Star flies at a speed of 60 feet, moving through the spaces of as many creatures as possible. Each creature the Trinity Star moves through must make a @Check[reflex|dc:42] save with the following results.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes @Damage[6d6[force]] damage.</p><p><strong>Failure</strong> The creature takes @Damage[11d6[force]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p><p><strong>Critical Failure</strong> The creature takes @Damage[22d6[force]] damage, is knocked prone, and if the creature is mythic, they lose 1 Mythic Point. If the Trinity Star has lost any of its tails, it regrows one of them (chosen at random if it's lost two tails).</p>",
+      "name": "Trinity Star"
+    },
+    "Unspeakable Impressions": {
+      "description": "<p>A trail of over-sized footprints crosses the path, markings of the apparently recent passage of a dangerous and mind-shattering entity whose stride is enough to be mistaken for depressions in the natural terrain, and promising destruction to those compelled to follow the tracks.</p>",
+      "hazardDisable": "<p>@Check[deception|dc:46] (master) to distract those (including yourself) compelled to follow footprints, or @Check[survival|dc:43] (legendary) to quickly obscure the trail</p>",
+      "hazardReset": "<p>The unspeakable impressions fade once they are triggered, but reform somewhere else in the vicinity 24 hours later unless they are successfully disabled.</p>",
+      "name": "Unspeakable Impressions"
     },
     "Vesinra": {
       "description": "<p>The brilliant and powerful lamia matriarchs possess boundless ambition, always seeking to bring more people and territory into the clutches of their kind. Consequently, they become rulers of other lamia. For all their cruelty toward other creatures, they're fierce protectors of other lamia, and consequently, they quickly come to rule cults or warbands. Regardless of the lamia's gender, these ascended lamias are always known as matriarchs. A lamia matriarch is set apart from their kindred by the occult power they pursue, and some have even had grand designs to break the animalistic curse that transformed them. However, every attempt so far has led to the matriarch's fall.</p>\n<hr />\n<p>Lamias are bloodthirsty victims of an ancient curse for which they blame the gods. Most lamias are humanoid from the waist up but have the lower bodies of serpents. Sinister magic comes naturally to a lamia, and they prefer the use of illusions to deceive prey for later consumption, or simply to torture.</p>",
@@ -777,6 +1732,56 @@
       },
       "name": "Vesinra",
       "npcAllSaves": "+1 status to all saves vs. magic"
+    },
+    "Vogorond": {
+      "description": "<p>Vogoronds are the remains of destroyed worlds imbued with the beliefs, hopes, and memories of that world's people. Their physical bodies often take the shape of monuments held dear by their worlds' former inhabitants, such as a statue of a beloved monarch. Vogoronds are intelligent and often seek to see their destroyed worlds reborn. Because their consciousnesses are formed from millions or even billions of individuals, however, they rarely possess the reasoning needed to pursue their desires to an end.</p><h2>Reasoning With the Ruined Past</h2><p>While a vogorond's memories aren't flawless, it knows more about its former world than any scholar could ever hope to learn. Often, a vogorond is the only remaining source of knowledge about the land it once inhabited. Theoretically, heroes from a world on the brink of destruction could travel forward in time to speak with a vogorond and learn what must be done to avert the apocalypse—an act which, paradoxically, would prevent the vogorond from being created in the first place.</p>",
+      "items": {
+        "ER3tku6eQlkKjldp": {
+          "name": "Vogorond Lore"
+        },
+        "PEkeJpnRu4YZJkkf": {
+          "description": "<p>Each enemy in the vogorond's ruinous aura takes @Damage[8d6[bludgeoning]] damage (@Check[reflex|dc:40|basic] save).</p>",
+          "name": "Debris Storm"
+        },
+        "UmjP1aHWQqM8kwpY": {
+          "description": "<p>The vogorond's ruinous aura activates, extending to a range of 10 feet, and the vogorond can Fly once. The vogorond can Activate Aura as a free action when they roll initiative.</p>",
+          "name": "Activate Aura"
+        },
+        "VyqAzMM90q3IIJwB": {
+          "description": "<p>The vogorond deactivates their ruinous aura. Until the next time they act, the vogorond appears to be an inanimate statue, altar, or fragment of architecture. They have an automatic result of 45 on Deception checks and DCs to pass as such an object.</p>",
+          "name": "Monument"
+        },
+        "cwFzqYPKJx7z6LDG": {
+          "description": "<p>A vogorond serves as a repository of the memories of the inhabitants of their home world. This gives them the Vogorond Lore skill, which they use when casting @UUID[Compendium.pf2e.spells-srd.Item.ZYoC630tNGutgbE0]{Hypercognition} and sifting through the combined memories of their countless shattered minds.</p>",
+          "name": "Vogorond Lore"
+        },
+        "rl5JXpQOBFUkKsN4": {
+          "description": "<p><strong>Requirements</strong> The vogorond's ruinous aura is active</p><hr /><p><strong>Effect</strong> The vogorond launches a piece of rubble up to 100 feet. Upon impact, the rubble explodes in a @Template[type:burst|distance:20]. Any creatures in the area take @Damage[15d8[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:40|basic] save). The radius of the vogorond's aura then decreases by 10 feet. The vogorond can't Launch Rubble again for [[/gmr 1d4 #Recharge Launch Rubble]]{1d4 rounds}.</p>",
+          "name": "Launch Rubble"
+        },
+        "uEHfJMSgbSJeUUuq": {
+          "description": "<p>When a sleeping or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature wakes up within 20 feet of a vogorond, its memories are overwritten by those of an inhabitant of the vogorond's home world. The target is affected by a 9th-rank @UUID[Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD]{Never Mind} spell (@Check[will|dc:40] save).</p>",
+          "name": "Dreams of the Past"
+        },
+        "xa1FtADL2YrI1QhO": {
+          "description": "<p>10 feet. The air surrounding the vogorond is filled with floating rubble and debris. This area is difficult terrain for creatures other than the vogorond. Each time the vogorond is subjected to a critical hit while their aura is active, the aura's radius increases by 10 feet. If the vogorond's ruinous aura would ever extend to more than 30 feet, the vogorond crumbles apart and is destroyed.</p>",
+          "name": "Ruinous Aura"
+        }
+      },
+      "name": "Vogorond"
+    },
+    "Watcher in the Wastes": {
+      "description": "<p>A massive sculpture of a wolflike form as tall as a mountain guards passage to the Cold Wastes at the northern end of Leng and seems almost ready to come to life at the approach of any creatures.</p>",
+      "hazardDisable": "<p>@Check[stealth|dc:51] (master) to avoid the initial notice of the gigantic form, or @Check[occultism|dc:48] (legendary) to know the proper posture and hand sign to make to turn away the watcher's attention</p>",
+      "hazardReset": "<p>The nightmare resets immediately.</p>",
+      "name": "Watcher in the Wastes"
+    },
+    "Zutha's Legacy": {
+      "description": "<p>The scowling visage of Runelord Zutha appears above the altar. Meanwhile, mask-like versions of Zutha's face manifest on nearby rubble and vomit swarms of maggots. Once the masks are destroyed, the air fills with spectral duplicates of Zutha's life-draining bone scythe.</p>",
+      "hazardDisable": "<p>@Check[occultism|dc:45] (legendary) or Religion (legendary) to exorcise Zutha's spirit, or @Check[intimidation|dc:48] (master) or @Check[performance|dc:48] (master) to recite the details of Zutha's defeat; six total successes are required to disable the haunt.</p>",
+      "hazardReset": "<p>The haunt deactivates once no living creatures remain nearby. The haunt resets 1 hour later.</p>",
+      "hazardRoutine": "<p>(4 actions) The haunt uses Vomit Maggot three times, then Poisonous Belch once. For each success at Disabling the haunt, the haunt loses one Vomit Maggot action. Destroying a mask also removes one of the haunt's Vomit Maggot actions. Once the haunt can no longer use Vomit Maggot, it immediately regains three actions and replaces Vomit Maggot with Spectral Scythe. Destroying a scythe also removes one of the haunt's Spectral Scythe actions. Once the haunt loses all three of its Spectral Scythe actions, the haunt is destroyed.</p>",
+      "name": "Zutha's Legacy"
     }
   },
   "label": "Revenge of the Runelords"

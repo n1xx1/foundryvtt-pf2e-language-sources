@@ -238,6 +238,8 @@
           "Search": "Search Formulas"
         },
         "CreateFeat": "Create Feat",
+        "EmptyLabel": "Empty",
+        "EmptyMultipleLabel": "{value} Empty",
         "FeatSlot": {
           "AncestryHeader": "Ancestry Feats",
           "AncestryFeaturesHeader": "Ancestry Features",
@@ -1301,6 +1303,7 @@
           "olfactory": "olfactory",
           "orichalcum": "orichalcum",
           "paralyzed": "paralyzed",
+          "peachwood": "peachwood",
           "persistent-damage": "persistent damage",
           "petrified": "petrified",
           "physical": "physical",
@@ -1808,21 +1811,22 @@
           }
         },
         "Base": {
-          "8-round-magazine": "Magazine (Barricade Buster)",
+          "8-round-magazine": "8-Round Magazine",
           "arrows": "Arrows",
-          "backpack-catapult-stone": "Stone (Backpack Catapult)",
+          "backpack-ballista-bolts": "Backpack Ballista Bolts",
+          "backpack-catapult-stones": "Backpack Catapult Stones",
           "battery": "Battery",
           "blowgun-darts": "Blowgun Darts",
           "bolts": "Bolts",
           "chem-tank": "Chem Tank",
           "cutlery": "Cutlery",
-          "magazine-with-5-bolts": "Magazine (Repeating Hand Crossbow)",
-          "magazine-with-6-pellets": "Magazine (Air Repeater)",
-          "magazine-with-8-pellets": "Magazine (Long Air Repeater)",
           "magazine": "Magazine",
+          "magazine-with-6-pellets": "Magazine with 6 Pellets",
+          "magazine-with-8-pellets": "Magazine with 8 Pellets",
           "projectile-ammo": "Projectile Ammo",
-          "repeating-crossbow-magazine": "Magazine (Repeating Crossbow)",
-          "repeating-heavy-crossbow-magazine": "Magazine (Repeating Heavy Crossbow)",
+          "repeating-crossbow-magazine": "Repeating Crossbow Magazine",
+          "repeating-hand-crossbow-magazine": "Repeating Hand Crossbow Magazine",
+          "repeating-heavy-crossbow-magazine": "Repeating Heavy Crossbow Magazine",
           "rounds-alicorn-trigger": "Rounds (Alicorn Trigger)",
           "rounds-arquebus": "Rounds (Arquebus)",
           "rounds-axe-musket": "Rounds (Axe Musket)",
@@ -2886,6 +2890,19 @@
           "WrongSpellType": "Cannot add {type} spell to this casting entry."
         }
       },
+      "Treasure": {
+        "FIELDS": {
+          "category": {
+            "label": "Category",
+            "choices": {
+              "art-object": "Art Object",
+              "coin": "Coin",
+              "gem": "Gem",
+              "material": "Material"
+            }
+          }
+        }
+      },
       "Weapon": {
         "FIELDS": {
           "expend": {
@@ -3195,7 +3212,7 @@
           "Poison": "<p>When a creature is exposed to a monster's poison, it attempts a Fortitude save to avoid becoming poisoned. The level of a poison is the level of the monster inflicting the poison. The poison follows the rules for afflictions.</p>",
           "PowerAttack": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The monster makes a melee Strike. This counts as two attacks when calculating the monster's multiple attack penalty. If this Strike hits, the monster deals an extra die of weapon damage.</p>",
           "Pull": "<p><strong>Requirements</strong> The monster's last action was a success with a Strike that lists Pull in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to @UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{Reposition} the creature, moving it closer to the monster. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Pull lists a distance, change the distance the creature is pulled on a success to that distance.</p>",
-          "Push": "<p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p>",
+          "Push": "<p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act shove]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p>",
           "ReactiveStrike": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>",
           "Regeneration": "<p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p>",
           "Rend": "<p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p>",
@@ -4652,6 +4669,7 @@
     "TraitDescriptionGhoul": "Ghouls are vile undead creatures that feast on flesh.",
     "TraitDescriptionGhul": "Greedy and gluttonous undead originally formed from genie.",
     "TraitDescriptionGiant": "Giants are massive humanoid creatures.",
+    "TraitDescriptionGirtablilu": "Girtablilus have humanoid upper bodies and the lower bodies of massive scorpions.",
     "TraitDescriptionGnoll": "Kholos are humanoids that resemble hyenas.",
     "TraitDescriptionGnome": "A creature with this trait is a member of the gnome ancestry. Gnomes are small people skilled at magic who seek out new experiences and usually have low-light vision. An ability with this trait can be used or selected only by gnomes. A weapon with this trait is created and used by gnomes.",
     "TraitDescriptionGoblin": "A creature with this trait is a small, frantic goblinoid. Goblins tend to have darkvision. An ability with this trait can be used or chosen only by goblins. A weapon with this trait is created and used by goblins.",
@@ -4716,6 +4734,7 @@
     "TraitDescriptionLitany": "Litanies are special devotion spells, typically used by champions and requiring a single action, that usually give temporary immunity to further litanies.",
     "TraitDescriptionLizardfolk": "Lizardfolk are a family of reptilian humanoids. These reptilian humanoids, also known as iruxi, are extremely adaptable and patient.",
     "TraitDescriptionLozenge": "You Activate an alchemical lozenge by putting it in your mouth. It stays there, slowly dissolving and releasing its ingredients over time. You can bite a lozenge for a secondary effect. The action this takes is noted in the item. As soon as this secondary effect is over, the lozenge is used up and its benefits for you end. You can drink elixirs, potions, and beverages with a lozenge in your mouth, but you can't benefit from more than one lozenge at a time. If you have two lozenges in your mouth at the same time, both become inert. You can also spit out a lozenge as a single action to end its effect and make it inert. A lozenge dissolves due to its alchemical ingredients, so it typically still works even if you don't have saliva.",
+    "TraitDescriptionMaftet": "Maftets have humanoid upper bodies, leonine lower bodies, and hawk-like wings.",
     "TraitDescriptionMagical": "Something with the magical trait is imbued with magical energies not tied to a specific tradition of magic. Some items or effects are closely tied to a particular tradition of magic. In these cases, the item has the arcane, divine, occult, or primal trait instead of the magical trait. Any of these traits indicate that the item is magical.",
     "TraitDescriptionMagus": "This indicates abilities from the magus class.",
     "TraitDescriptionManipulate": "You must physically manipulate an item or make gestures to use an action with this trait. Creatures without a suitable appendage can't perform actions with this trait. Manipulate actions often trigger reactions.",
@@ -4747,6 +4766,7 @@
     "TraitDescriptionMythic": "Options with this trait grant or utilize mythic power. Feats with the mythic trait can only be taken by mythic characters, who are typically characters with a mythic Calling.</p><p>Monsters with the mythic trait have access to a pool of Mythic Points and are particularly strong for creatures of their level. Many mythic monsters are either resistant or entirely immune to attacks from non-mythic creatures and weapons.</p><p>Spells with the mythic trait require the expenditure of a Mythic Point in order to be cast, and items with the mythic trait require the expenditure of a Mythic Point in order to use their activated abilities.</p><p>Weapons with the mythic trait overcome the resistances and immunities of mythic monsters.",
     "TraitDescriptionNagaji": "A traditionalist ancestry with reptilian features and serpentine heads.",
     "TraitDescriptionNephilim": "A creature with this trait has the nephilim versatile heritage. Nephilim are planar scions descended from immortal beings from other planes. An ability with this trait can be used or selected only by nephilim.",
+    "TraitDescriptionNightmare": "Nightmare hazards are unique to Leng. In many ways, nightmare hazards resemble a haunt, and the dire truth might not reveal itself to potential victims until they discover that attempts to disable it through exorcism are ineffective.",
     "TraitDescriptionNindoru": "Nindorus are chaotic evil fiends that rise from corruptions to the cycle of reincarnating souls and live on the Universe. Although they often have elements in their appearance that make them seem undead, they're actually living beings. Most nindorus have darkvision, are immune to death effects, have weakness to silver, and possess the power to manifest objects or creatures from their thoughts.",
     "TraitDescriptionNoisy": "This armor is loud and likely to alert others to your presence when you're using the Avoid Notice exploration activity. The armor's check penalty applies to Stealth checks even if you meet the required Strength score.",
     "TraitDescriptionNone": "This trait has no description.",
@@ -4943,6 +4963,7 @@
     "TraitDowntime": "Downtime",
     "TraitDragon": "Dragon",
     "TraitDragonblood": "Dragonblood",
+    "TraitDragonet": "Dragonet",
     "TraitDream": "Dream",
     "TraitDromaar": "Dromaar",
     "TraitDrow": "Drow",
@@ -5033,6 +5054,7 @@
     "TraitGhul": "Ghul",
     "TraitGiant": "Giant",
     "TraitGigas": "Gigas",
+    "TraitGirtablilu": "Girtablilu",
     "TraitGnoll": "Kholo",
     "TraitGnome": "Gnome",
     "TraitGoblin": "Goblin",
@@ -5135,6 +5157,7 @@
     "TraitLizardfolk": "Lizardfolk",
     "TraitLocathah": "Athamaru",
     "TraitLozenge": "Lozenge",
+    "TraitMaftet": "Maftet",
     "TraitMagic": "Magic",
     "TraitMagical": "Magical",
     "TraitMagus": "Magus",
@@ -5169,6 +5192,7 @@
     "TraitNaari": "Naari",
     "TraitNagaji": "Nagaji",
     "TraitNephilim": "Nephilim",
+    "TraitNightmare": "Nightmare",
     "TraitNindoru": "Nindoru",
     "TraitNoisy": "Noisy",
     "TraitNonlethal": "Nonlethal",
@@ -5299,6 +5323,7 @@
     "TraitSonic": "Sonic",
     "TraitSorcerer": "Sorcerer",
     "TraitSoulbound": "Soulbound",
+    "TraitSoulrider": "Soulrider",
     "TraitSpellDeflection": "Spell Deflection",
     "TraitSpellgun": "Spellgun",
     "TraitSpellheart": "Spellheart",
@@ -5611,6 +5636,7 @@
         "asp-coil": "Asp Coil",
         "atlatl": "Atlatl",
         "axe-musket": "Axe Musket",
+        "backpack-ballista": "Backpack Ballista",
         "backpack-catapult": "Backpack Catapult",
         "barricade-buster": "Barricade Buster",
         "bastard-sword": "Bastard Sword",
@@ -7286,6 +7312,10 @@
           "Description": "{actor} picks up {weapon} from the ground.",
           "Title": "Pick Up (2H)"
         },
+        "Reload": {
+          "Description": "{actor} loads {weapon} with {ammo}.",
+          "Title": "Reload"
+        },
         "Retrieve1H": {
           "Description": "{actor} retrieves their {weapon}.",
           "Title": "Retrieve (1H)"
@@ -7487,9 +7517,6 @@
           "Title": "Change Grip (1H)"
         },
         "Title": "Release"
-      },
-      "Reload": {
-        "ShortTitle": "Reload"
       },
       "Repair": {
         "Chat": {
@@ -8617,6 +8644,7 @@
         "ImpulseFireFrom": "impulse fire from {origin}",
         "IncorporealCreatures": "incorporeal creatures",
         "IngestedPoisons": "ingested poisons",
+        "InhaledPoisons": "inhaled poisons",
         "MagicalBludgeoning": "magical bludgeoning",
         "MagicalColdIron": "magical cold iron",
         "MagicalDuskwood": "magical duskwood",
@@ -8666,11 +8694,22 @@
           "Subterfuge": "Subterfuge"
         }
       },
+      "AethusasPrison": {
+        "EnergyImmunity": {
+          "Acid": "Immune to acid",
+          "Cold": "Immune to cold",
+          "Electricity": "Immune to electricity",
+          "Fire": "Immune to fire"
+        }
+      },
       "AlchemicalGolem": {
         "Sickness": "Sickness"
       },
       "AlchemicalGrenades": {
         "Label": "Alchemical Grenade"
+      },
+      "AmbushCopse": {
+        "RollOptionLabel": "Ambush Copse is hiding in Forests"
       },
       "AncientWisp": {
         "PinpointLight": "Pinpoint Light"
@@ -9118,6 +9157,9 @@
         "TargetMurderedPaleStranger": "Target Murdered Pale Stranger",
         "TargetNeverKilled": "Target has Never Killed"
       },
+      "PeacockPhoenix": {
+        "RadiantWing": "Radiant Wing"
+      },
       "PhantasmalProtagonist": {
         "AbilityLabel": "Phantasmal Protagonist"
       },
@@ -9237,6 +9279,11 @@
       "SkyDragon": {
         "DivineLightningGood": "Divine Lightning — Good Damage",
         "DivineLightningPositive": "Divine Lightning — Vitality Damage"
+      },
+      "Sykever": {
+        "ArmSpike": "Arm Spike",
+        "Bipedal": "Bipedal",
+        "Quadrupedal": "Quadrupedal"
       },
       "SoulfiredPot": {
         "CriticalHit": "Soulfired Pot Broken by a Critical Hit"
@@ -10964,6 +11011,9 @@
           "bard": {
             "Description": "You've developed keen awareness and attention to detail. Your proficiency rank for Perception increases to master."
           },
+          "commander": {
+            "Description": "You've developed the ability to see a scenario from every side. Your proficiency rank for Perception increases to master."
+          },
           "exemplar": {
             "Description": "Through your adventures, you've developed keen awareness and attention to detail, the better to watch over your wards and keep an eye out for monsters and other threats. Your proficiency rank for Perception increases to master."
           },
@@ -10980,6 +11030,9 @@
             "Description": "You've developed keen awareness and attention to detail. Your proficiency rank for Perception increases to master."
           },
           "swashbuckler": {
+            "Description": "Through your adventures, you've developed keen awareness and attention to detail. Your proficiency rank for Perception increases to master."
+          },
+          "thaumaturge": {
             "Description": "Through your adventures, you've developed keen awareness and attention to detail. Your proficiency rank for Perception increases to master."
           }
         },
@@ -11188,6 +11241,9 @@
         },
         "GloriousBanner": {
           "ToggleLabel": "Glorious Banner — Commander's banner in sight"
+        },
+        "ObservationalAnalysis": {
+          "RollOptionLabel": "Observational Analysis — Increase Combat Assessment bonus"
         },
         "Tactics": {
           "CryHavoc": {
@@ -11498,6 +11554,9 @@
         },
         "KneelForNoGod": {
           "Note": "When you roll a success against a divine effect, you get a critical success instead."
+        },
+        "MountainStrategy": {
+          "Note": "If any creature critically succeeds at an attack against you and deals damage to you, you gain your bonus to damage against that creature for 1 minute regardless of whether it has one of the listed traits. @UUID[Compendium.pf2e.feat-effects.Item.O7OO1kWFEFv6vl3E]{Effect: Mountain Strategy (Critically Hit)}"
         },
         "RockRunner": {
           "Note": "When you use the Acrobatics skill to Balance on narrow surfaces or uneven ground made of stone or earth, you aren't off-guard, and when you roll a success at one of these Acrobatics checks, you get a critical success instead."
@@ -14243,7 +14302,7 @@
         },
         "KnowledgeOfShapes": "You use @UUID[Compendium.pf2e.feats-srd.Item.BWomK7EVY0WXxWgh]{Reach Spell} or @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} as a free action.",
         "LeyLineConduit": "You don't expend the prepared spell as you cast it.",
-        "Martyr": "You lose @Damage[(@item.rank)d8] Hit Points, which can't be reduced or mitigated in any way, and your ally regains an equal number of Hit Points. @UUID[Compendium.pf2e.feat-effects.Item.7ogytOgDmh4h2g5d]{Effect: Heroic Recovery}",
+        "Martyr": "You lose @Damage[(@item.rank)d8] Hit Points, which can't be reduced or mitigated in any way, and your ally regains an equal number of Hit Points.",
         "MelodiousSpell": "The spell gains the Subtle trait. The trait hides only the spell's spellcasting actions and manifestations, not its effects. As part of using Melodious Spell, you can choose to @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion}, @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform}, or Request. If you do so, the spell you cast must have the auditory, emotion, sonic, or visual trait to gain the subtle trait.",
         "NonLethal": "If your next action is to Cast a Spell that deals damage and doesn't have the death or void trait, that spell gains the nonlethal trait.",
         "OstentatiousArrivalManifestEidolon": "All creatures except you in a @Template[type:emanation|distance:10] around the creature you summoned or manifested take @Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]|options:area-damage]. If the creature you summoned or manifested has the acid, cold, electricity, fire, sonic, or water trait, the damage is that type instead (or cold damage for the water trait). If the creature has more than one of these traits, you choose which damage type to deal.",
@@ -14625,6 +14684,11 @@
       "TrapFinder": {
         "DefendingLabel": "Trap Finder (defending against traps)",
         "SearchLabel": "Trap Finder (searching for traps)"
+      },
+      "TriangularTeeth": {
+        "Survival": {
+          "Label": "Triangular Teeth — Navigate Waters"
+        }
       },
       "TrinityGeodeLabel": "Trinity Geode",
       "TwinnedDefense": {
@@ -15070,7 +15134,7 @@
     "Item": {
       "action": "Ability",
       "affliction": "Affliction",
-      "ammo": "Ammo",
+      "ammo": "Ammunition",
       "ancestry": "Ancestry",
       "armor": "Armor",
       "background": "Background",
