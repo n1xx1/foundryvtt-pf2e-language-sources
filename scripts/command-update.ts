@@ -237,6 +237,7 @@ async function handleJournalEntry(
 
 const itemTypes = [
   "action",
+  "ammo",
   "ancestry",
   "armor",
   "attack",
