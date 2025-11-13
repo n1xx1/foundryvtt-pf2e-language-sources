@@ -10,7 +10,7 @@
     "A Little Bird Told Me...": {
       "description": "<p>You transform into a small bird, such as a finch or a sparrow, allowing you to eavesdrop on others and gain information you wouldn't otherwise be able to acquire. You become Tiny, gain the animal trait, and you can't make Strikes. You can Dismiss the effect to return to your normal shape, and you resume your normal shape automatically if you're reduced to 0 Hit Points.</p>\n<p>You gain the following statistics and abilities:</p>\n<p>AC = 20 + your level. Ignore your armor's check penalty and Speed reduction.</p>\n<p>Fly speed 25 feet.</p>\n<p>Weakness 5 to physical damage.</p>\n<p>Low-light vision and imprecise scent 30 feet.</p>\n<p>Acrobatics and Stealth modifiers of +10, unless your own is higher; Athletics modifier –4.</p>",
       "featPrerequisites": {
-        "0": "Venture-Gossip Archetype"
+        "0": "Venture-Gossip Dedication"
       },
       "name": "A Little Bird Told Me..."
     },
@@ -179,7 +179,8 @@
     "Acknowledge Fan": {
       "description": "<p>Your reputation as a Firebrand precedes you, and you need only make a simple gesture or give a look of recognition to amaze those around you. You're so famous and beloved that even your enemies are fans, and they're shocked to see you here. Choose one target creature who can see you to acknowledge. The target must attempt a @Check[will|against:class-spell] save against your class DC or spell DC, whichever is higher. Regardless of the result, the target becomes temporarily immune to Acknowledge Fan for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and becomes temporarily immune to Acknowledge Fan for 1 day.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and becomes temporarily immune to Acknowledge Fan for 1 day.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} until the end of your next turn.</p>\n<hr />\n<p><strong>Special</strong> This feat has either the arcane or occult trait, matching the choice you made when you took @UUID[Compendium.pf2e.feats-srd.Item.gOHBzx5Rqa6TZcrm]{Mesmerizing Gaze}.</p>",
       "featPrerequisites": {
-        "0": "Celebrity Dedication, Mesmerizing Gaze"
+        "0": "Celebrity Dedication",
+        "1": "Mesmerizing Gaze"
       },
       "name": "Acknowledge Fan"
     },
@@ -587,6 +588,9 @@
     },
     "Advanced Poisoncraft": {
       "description": "<p>You can create up to 6 poisons per day with advanced alchemy.</p><hr /><p><strong>Special</strong> At 10th level or higher, you can select this feat a second time to increase the number to 8.</p>",
+      "featPrerequisites": {
+        "0": "Poisoner Dedication"
+      },
       "name": "Advanced Poisoncraft"
     },
     "Advanced Qi Spells": {
@@ -4562,7 +4566,7 @@
     "Catch and Kill": {
       "description": "<p><strong>Trigger</strong> A creature within your reach uses a move action, or leaves a square during a move action it's using.</p><hr /><p>When you've decided to quash a story, no one can escape from you with any incriminating information. Make a melee Strike against the triggering creature. On a hit, the triggering creature is Grabbed, and on a critical hit, they're @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>",
       "featPrerequisites": {
-        "0": "Venture-Gossip Archetype"
+        "0": "Venture-Gossip Dedication"
       },
       "name": "Catch and Kill"
     },
@@ -7127,7 +7131,7 @@
     "Define “Report”": {
       "description": "<p>Look, getting caught in a lie is a normal part of venture-gossip life. Sometimes you have to give a sheepish smile and apologize for what you've done. When you fail a Deception check, reroll with your Diplomacy modifier. On a success, there are no hard feelings and the other person's attitude condition doesn't worsen. On a critical success, you can attempt the Deception again with no consequences.</p>",
       "featPrerequisites": {
-        "0": "Venture-Gossip Archetype",
+        "0": "Venture-Gossip Dedication",
         "1": "master in Diplomacy"
       },
       "name": "Define “Report”"
@@ -8118,6 +8122,9 @@
     },
     "Domain Embodiment": {
       "description": "<p>Your deity contains multitudes, and you can express any aspect of them you desire. During your daily preparations, you can gain two initial or advanced domain spells from any of your deity's domains or alternate domains. You can cast these as innate spells until your next daily preparations.</p>\n<p>Domain spells are a type of focus spell. Casting any of your focus spells costs you 1 Focus Point. The maximum number of Focus Points in your pool is equal to the number of focus spells you know or 3, whichever is lower. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to pray to your deity or do service toward their causes. Your domain spells are divine spells. If you were not already, you become trained in spell attacks and spell DCs. Your spellcasting attribute for domain spells is Wisdom.</p>",
+      "featPrerequisites": {
+        "0": "Mortal Herald Dedication"
+      },
       "name": "Domain Embodiment"
     },
     "Domain Fluency": {
@@ -9994,9 +10001,6 @@
     },
     "Everstand Stance": {
       "description": "<p><strong>Requirements</strong> You are wielding a shield.</p>\n<hr />\n<p>You brace your shield with both hands, enhancing its potential for both offense and defense. When in this stance, you wield the shield with both hands. When wielding a shield this way, increase the weapon damage die of the shield's boss or spikes by one step, and increase the shield's Hardness by 2 when using the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} reaction.</p>",
-      "featPrerequisites": {
-        "0": "You are wielding a shield"
-      },
       "name": "Everstand Stance"
     },
     "Everstand Strike": {
@@ -10351,7 +10355,7 @@
     "Expert Prophet Spellcasting": {
       "description": "<p>You gain the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.DOc3Pf8wmVxanTIv#expert-spellcasting-feat]{Expert Spellcasting Benefits}.</p>",
       "featPrerequisites": {
-        "0": "Prophet of Kalistrade Dedication",
+        "0": "Basic Prophet Spellcasting",
         "1": "master in Society"
       },
       "name": "Expert Prophet Spellcasting"
@@ -14502,7 +14506,7 @@
     "Hey! Over Here!": {
       "description": "<p><strong>Trigger</strong> An ally within 30 feet rolls a saving throw against an auditory effect.</p><hr /><p>Hey! Don't listen to that! That's bad sounds! Listen to me! Would you like to hear about how the high priest of the Abadaran church in Absalom's Petals District is having an affair with an Urgathoan cleric? Yeah, I'm thinking about calling the article \"Boney Money!\"</p>\n<p>Your targeted ally treats the result of their saving throw as one degree of success better. Once an ally has been targeted by this effect, they're immune for 24 hours.</p>",
       "featPrerequisites": {
-        "0": "Venture-Gossip Archetype"
+        "0": "Venture-Gossip Dedication"
       },
       "name": "Hey! Over Here!"
     },
@@ -17070,6 +17074,9 @@
     },
     "Legendary Laugh": {
       "description": "<p>Your laugher echoes in the minds of your enemies. You can @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} creatures up to 60 feet away. Additionally, whenever you successfully Demoralize a creature, it takes @Damage[3d8[mental]] damage (or @Damage[6d8[mental]] damage on a critical success).</p>",
+      "featPrerequisites": {
+        "0": "Laughing Kholo"
+      },
       "name": "Legendary Laugh"
     },
     "Legendary Leader": {
@@ -19521,7 +19528,7 @@
     "Muckraking": {
       "description": "<p>It seems like your knowledge has come in handy after all and you have your enemy at your feet. Pulling out your fan mail, you read your fans' scathing remarks about your enemy to their face, letting them feel just how much everyone hates them and everything that they've done. They hate the way that they walk, they hate the way that they talk.</p>\n<p>Your enemy takes @Damage[10d10[mental]] damage, with a @Check[will|against:class-spell|basic] save. On a critical failure, they're @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of your next turn and lose all reactions, except to cry, loudly.</p>",
       "featPrerequisites": {
-        "0": "Venture-Gossip Archetype"
+        "0": "Venture-Gossip Dedication"
       },
       "name": "Muckraking"
     },
@@ -22256,6 +22263,9 @@
     },
     "Prayer Attack": {
       "description": "<p><strong>Requirements</strong> You are wielding a sawtooth saber in each hand.</p><hr /><p>You've mastered the signature assassination style of the Red Mantis. Attempt to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} an enemy within 30 feet. If your Feint is successful, when you use Prayer Attack on subsequent turns you automatically make the target @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against your melee attacks for that turn without rolling a check to Feint, so long as you remain visible to the target and the target remains within 30 feet of you. If you use your Prayer Attack against a different target, you must attempt to Feint the target normally.</p>\n<p>When you use Prayer Attack, your next successful Strike with a sawtooth saber that turn deals 2d6 persistent bleed damage to the target.</p>",
+      "featPrerequisites": {
+        "0": "Red Mantis Assassin Dedication"
+      },
       "name": "Prayer Attack"
     },
     "Prayer-Touched Weapon": {
@@ -26894,7 +26904,10 @@
       "name": "Siphoning Touch"
     },
     "Siren Song": {
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Prerequisites</strong> expert in Performance</p>\n<hr />\n<p>You can beguile and bewitch with your song. All creatures in a @Template[emanation|distance:60] must attempt a @Check[will|against:performance] save against your Performance DC. On subsequent rounds, you can Sustain the song, causing each creature in the area currently affected by your song to attempt another Will save. Typically, creatures that have traveled with you for a significant time, such as your fellow party members, are immune to your Siren Song.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and becomes immune to your Siren Song for 24 hours.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you until the end of your next turn.</p>\n<p><strong>Failure</strong> As success, and the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as it's fascinated.</p>\n<p><strong>Critical Failure</strong> As success, and the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for as long as it's fascinated.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can beguile and bewitch with your song. All creatures in a @Template[emanation|distance:60] must attempt a @Check[will|against:performance] save against your Performance DC. On subsequent rounds, you can Sustain the song, causing each creature in the area currently affected by your song to attempt another Will save. Typically, creatures that have traveled with you for a significant time, such as your fellow party members, are immune to your Siren Song.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and becomes immune to your Siren Song for 24 hours.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you until the end of your next turn.</p>\n<p><strong>Failure</strong> As success, and the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as it's fascinated.</p>\n<p><strong>Critical Failure</strong> As success, and the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for as long as it's fascinated.</p>",
+      "featPrerequisites": {
+        "0": "expert in Performance"
+      },
       "name": "Siren Song"
     },
     "Six Pillars Stance": {
@@ -32700,7 +32713,7 @@
     "Verbose Distraction": {
       "description": "<p><strong>Trigger</strong> You are the target of a physical melee attack.</p><hr /><p>You talk so much it can be distracting to your enemies and you're often quick to remind your enemies that you're just a little guy! You don't need to be targeted! You don't need to be the focus of their frustrations! Have they tried writing to their mom or talking to a local priest of Desna? Ow!</p>\n<p>You gain a +2 circumstance bonus to your AC against the triggering attack.</p>",
       "featPrerequisites": {
-        "0": "Venture-Gossip Archetype"
+        "0": "Venture-Gossip Dedication"
       },
       "name": "Verbose Distraction"
     },
