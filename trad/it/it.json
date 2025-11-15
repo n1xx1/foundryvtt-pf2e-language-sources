@@ -22,8 +22,8 @@
                     "ImprovedGrab": "<p><strong>Requisiti</strong> L'ultima azione del mostro è stata un Colpo andato a segno con la capacità Afferrare Migliorato nella sua voce di danno, oppure il mostro ha una creatura @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{afferrata} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{trattenuta}</p><hr /><p><strong>Effetto</strong> Se usata dopo un Colpo, il mostro tenta di [[/act grapple]] con la creatura usado la parte del corpo con la quale ha attaccato come azione gratuita. Questa prova non applica e non conta ai fini della penalità da attacchi multipli.</p><p>Il mostro può invece spendere un'azione per usare Afferrare e scegliere una creatura che sta afferrando o trattenendo con un'appendice con la capacità Afferrare per estendere automaticamete la condizione fino alla fine del turno successivo del mostro.</p>",
                     "ImprovedKnockdown": "<p><strong>Requisiti</strong> L'ultima azione del mostro è stata un successo con un Colpo che contiene la capacità Gettare a Terra Migliorato alla sua voce dei danni</p><hr /><p><strong>Effetto</strong> Il mostro tenta di [[/act trip]]{Sbilanciare} la creatura come azione gratuita. Questa prova non applica e non conta ai fini della penalità da attacchi multipli del mostro.</p>",
                     "ImprovedPush": "<p>Il mostro può usare @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Spintonare} come azione gratuita innescata da un suo attacco iniziale andato a segno.</p>",
-                    "Lifesense": "<p>Percepire Vita consente a un mostro di percepire l'essenza vitale delle creature viventi e non morte entro la gittata indicata. La percezione è in grado di distinguere tra l'energia positiva che anima le creature viventi e l'energia negativa che anima le creature non morte, allo stesso modo in cui la vista distingue i colori.</p>",
-                    "NegativeHealing": "<p>Una creatura con guarigione negativa trae salute dall'energia negativa piuttosto che dall'energia positiva. È danneggiata da un danno positivo e non viene curata da effetti curativi positivi. Non subisce danni negativi ed è curato da effetti negativi che curano i non morti.</p>",
+                    "Lifesense": "<p>Percepire Vita consente a un mostro di percepire l'essenza vitale delle creature viventi e non morte entro la gittata indicata. La percezione è in grado di distinguere tra l'energia di vitalità che anima le creature viventi e l'energia del vuoto che anima le creature non morte, allo stesso modo in cui la vista distingue i colori.</p>",
+                    "NegativeHealing": "<p>Una creatura con guarigione del vuoto trae salute dall'energia del vuoto piuttosto che dall'energia di vitalità. È danneggiata da un danno da vitalità e non viene curata da effetti curativi da vitalità. Non subisce danni da vuoto ed è curato da effetti del vuoto che curano i non morti.</p>",
                     "Poison": "<p>Quando una creatura è esposta al veleno di un mostro, tenta un TS su Tempra per evitare di essere avvelenata. Il livello di un veleno è pari al livello del mostro che lo infligge.</p>",
                     "Scent": "<p>Il fiuto consente al mostro di percepire le creature o gli oggetti tramite l'olfatto e solitamente è un senso vago. La gittata è indicata nella capacità e funziona solo se la creatura o l'oggetto da individuare emana un aroma (per esempio, le creature incorporee solitamente non emanano un aroma).</p>\n<p>Se una creatura emana un aroma intenso o è controvento, il GM può raddoppiare o perfino triplicare la gittata della capacità di fiuto usata per individuare quella creatura, oppure ridurla se la creatura è sottovento.</p>",
                     "LowLightVision": "<p>Il mostro può vedere nella luce fioca come se fosse luce intensa, quindi ignora la condizione @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato} dovuta alla luce fioca.</p>",
@@ -1642,7 +1642,7 @@
             "holy": {
                 "Name": "Sacra",
                 "Note": {
-                    "criticalSuccess": "Guarigione Sacra <span class=\"pf2-icon\">R</span> (concentrazione, guarigione, positivo)</p><p><strong>Frequenza</strong> una volta al giorno</p><p><strong>Innesco</strong> Ottieni un successo critico a un tiro per colpire con l'arma contro una creatura sacrilega</p><hr /><strong>Effetto</strong> Recuperi PF pari al doppio del livello della creatura sacrilega."
+                    "criticalSuccess": "Guarigione Sacra <span class=\"pf2-icon\">R</span> (concentrazione, guarigione, vitalità)</p><p><strong>Frequenza</strong> una volta al giorno</p><p><strong>Innesco</strong> Ottieni un successo critico a un tiro per colpire con l'arma contro una creatura sacrilega</p><hr /><strong>Effetto</strong> Recuperi PF pari al doppio del livello della creatura sacrilega."
                 }
             },
             "keen": {
@@ -1703,8 +1703,8 @@
             "greaterBrilliant": {
                 "Name": "Fulgida Superiore",
                 "Note": {
-                    "criticalSuccess": "Danni inflitti dall’arma ignorano la resistenza al fuoco, spirito o positivo del bersaglio. Con un colpo critico, il bersaglio deve superare un tiro salvezza su @Check[fortitude|dc:41|name:Greater Brilliant Rune] o essere @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecato} per 1 round.",
-                    "success": "I danni inflitti dall’arma ignorano la resistenza al fuoco, spirito o positivo del bersaglio."
+                    "criticalSuccess": "Danni inflitti dall’arma ignorano la resistenza al fuoco, spirito o vitalità del bersaglio. Con un colpo critico, il bersaglio deve superare un tiro salvezza su @Check[fortitude|dc:41|name:Greater Brilliant Rune] o essere @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecato} per 1 round.",
+                    "success": "I danni inflitti dall’arma ignorano la resistenza al fuoco, spirito o vitalità del bersaglio."
                 }
             },
             "greaterExtending": {
@@ -2272,20 +2272,20 @@
             },
             "NecroticBomb": {
                 "Greater": {
-                    "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(3[splash])[void]]{3 danni negativi da spargimento}.",
-                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(3[splash])[void]]{3 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 3}."
+                    "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(3[splash])[void]]{3 danni da vuoto da spargimento}.",
+                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(3[splash])[void]]{3 danni da vuoto da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 3}."
                 },
                 "Lesser": {
                     "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(1[splash])[void]]{1 danno da vuoto da spargimento}.",
                     "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(1[splash])[void]]{1 danno da vuoto da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 1}."
                 },
                 "Major": {
-                    "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(4[splash])[void]]{4 danni negativi da spargimento}.",
-                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(4[splash])[void]]{4 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 4}."
+                    "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(4[splash])[void]]{4 danni da vuoto da spargimento}.",
+                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(4[splash])[void]]{4 danni da vuoto da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 4}."
                 },
                 "Moderate": {
-                    "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(2[splash])[void]]{2 danni negativi da spargimento}.",
-                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(2[splash])[void]]{2 danni negativi da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 2}."
+                    "success": "<strong>Effect</strong> La bomba infligge anche @Damage[(2[splash])[void]]{2 danni da vuoto da spargimento}.",
+                    "criticalSuccess": "<strong>Effect</strong> La bomba infligge anche @Damage[(2[splash])[void]]{2 danni da vuoto da spargimento} e il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{nauseato 2}."
                 }
             },
             "GooGrenade": {
@@ -4352,20 +4352,20 @@
                 "criticalSuccess": "@Damage[(2*1d8)[persistent,mental]]{1d8 danni mentali persistenti}"
             },
             "Negative1d6": {
-                "criticalSuccess": "@Damage[(2*1d6)[persistent,void]]{1d6 danni negativi persistenti}",
-                "success": "@Damage[1d6[persistent,void]]{1d6 danni negativi persistenti}"
+                "criticalSuccess": "@Damage[(2*1d6)[persistent,void]]{1d6 danni da vuoto persistenti}",
+                "success": "@Damage[1d6[persistent,void]]{1d6 danni da vuoto persistenti}"
             },
             "Negative1d8": {
-                "success": "@Damage[1d8[persistent,void]]{1d8 danni negativi persistenti}",
-                "criticalSuccess": "@Damage[(2*1d8)[persistent,void]]{1d8 danni negativi persistenti}"
+                "success": "@Damage[1d8[persistent,void]]{1d8 danni da vuoto persistenti}",
+                "criticalSuccess": "@Damage[(2*1d8)[persistent,void]]{1d8 danni da vuoto persistenti}"
             },
             "Negative1d10": {
-                "success": "@Damage[1d10[persistent,void]]{1d10 danni negativi persistenti}",
-                "criticalSuccess": "@Damage[(2*1d10)[persistent,void]]{1d10 danni negativi persistenti}"
+                "success": "@Damage[1d10[persistent,void]]{1d10 danni da vuoto persistenti}",
+                "criticalSuccess": "@Damage[(2*1d10)[persistent,void]]{1d10 danni da vuoto persistenti}"
             },
             "Negative2d10": {
-                "criticalSuccess": "@Damage[(2*2d10)[persistent,void]]{danni negativi persistenti}",
-                "success": "@Damage[2d10[persistent,void]]{2d10 danni negativi persistenti}"
+                "criticalSuccess": "@Damage[(2*2d10)[persistent,void]]{danni da vuoto persistenti}",
+                "success": "@Damage[2d10[persistent,void]]{2d10 danni da vuoto persistenti}"
             },
             "Piercing2d8+8": {
                 "criticalSuccess": "@Damage[(2*2d8+16)[persistent,piercing]]{2d8+8 danni perforanti persistenti}",
@@ -4536,7 +4536,7 @@
             },
             "SkyDragon": {
                 "DivineLightningGood": "Fulmine Divino - Danni da Bene",
-                "DivineLightningPositive": "Fulimine Divino - Danni Positivi"
+                "DivineLightningPositive": "Fulimine Divino — Danni da Vitalità"
             },
             "Zetogeki": {
                 "TiltScalesTilted": "Scaglie Inclinate",
@@ -6259,7 +6259,7 @@
         "TraitDescriptionDhampir": "Una creatura con questo tratto ha il lignaggio versatile dhampir. Questi umanoidi sono la progenie di vampiri e dei membri di altri retaggi.",
         "TraitDescriptionConsecration": "Un incantesimo di consacrazione migliora un'area per un lungo periodo di tempo. Una determinata area può avere un solo effetto di consacrazione alla volta. Il nuovo effetto tenta di contrastare qualsiasi esistente in aree di sovrapposizione.",
         "TraitDescriptionConsumable": "Un oggetto con questo tratto può essere usato una sola volta. Se non diversamente specificato, viene distrutto dopo l'attivazione. Gli oggetti monouso includono gli oggetti alchemici e quelli magici che si possono usare solo una volta, come pergamene e talismani. Quando un personaggio crea oggetti monouso, può crearli in partite da quattro.",
-        "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dall'energie vitalità o vuote. I costrutti sono spesso privi di intelletto; sono immuni al sanguinamento, effetti di morte, malattie, guarigione, attacchi non letali, veleno, spirito, vitalità, vuoto e alle condizioni condannato, risucchiato, affaticato, paralizzato, nauseato e privo di sensi; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
+        "TraitDescriptionConstruct": "Un costrutto è una creatura artificiale potenziata da una forza diversa dall'energie vitalità o vuoto. I costrutti sono spesso privi di intelletto; sono immuni al sanguinamento, effetti di morte, malattie, guarigione, attacchi non letali, veleno, spirito, vitalità, vuoto e alle condizioni condannato, risucchiato, affaticato, paralizzato, nauseato e privo di sensi; e possono avere Durezza basata sui materiali utilizzati per costruire i loro corpi. I costrutti non sono creature viventi, né non morti. Quando viene ridotta a 0 Punti Ferita, una creatura costrutto viene distrutta.",
         "TraitDescriptionContact": "Un veleno a contatto viene attivato spargendolo su un oggetto o direttamente sulla pelle di una creatura vivente. La prima creatura che tocca l’oggetto avvelenato deve tentare un tiro salvezza contro il veleno; se il veleno viene applicato direttamente, la creatura deve tentare immediatamente un tiro salvezza appena il veleno tocca la sua pelle. I veleni a contatto sono impossibili da applicare a una creatura tramite un attacco con un’arma, a causa delle loro modalità di somministrazione, senza avvelenarsi da soli. Tipicamente il tempo di latenza di un veleno a contatto è di 1 minuto.",
         "TraitDescriptionCurse": "Una maledizione è un effetto che provoca un'afflizione a lungo termine su una creatura. Le maledizioni sono sempre magiche e in genere sono il risultato di un incantesimo o una trappola. Gli effetti con questo tratto possono essere rimossi solo da effetti che prendono di mira specificamente le maledizioni.",
         "TraitDescriptionCursed": "Un oggetto con questo tratto è maledetto causando problemi al suo proprietario. Una maledizione non viene individuata quando l'oggetto è identificato, sebbene un successo critico riveli sia la presenza che l'esatta natura della maledizione. Gli oggetti maledetti non possono essere scartati una volta che sono stati innescati o investiti per la prima volta. L'oggetto può essere rimosso solo se viene rimossa anche la maledizione.",
@@ -7562,8 +7562,8 @@
             },
             "Life": {
                 "ToggleLabel": "Tutti i bersagli di guarire sono creature viventi",
-                "DescriptionModerate": "Ogni volta che finisci di lanciare un incantesimo che non sia un trucchetto, ripristini @Damage[@item.level[healing]]{$1 Punti Ferita} a un bersaglio dell'incantesimo o alla creatura più vicina a te, a tua scelta. Non puoi guarire te stesso in questo modo. Questa guarigione ha i tratti guarigione, necromanzia e positivo, oltre al tratto di tradizione dell'incantesimo.",
-                "DescriptionMajor": "Ogni volta che usi uno slot incantesimo per lanciare un incantesimo di 5° grado o superiore che richiede 2 o più azioni per essere lanciato, disperdi energia positiva in un'@Template[burst|distance:30] con gli effetti di un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{guarire} da 3 azioni di un livello inferiore di 4 al grado dell'incantesimo che lanci. Questa guarigione avviene immediatamente dopo aver finito di @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare l'Incantesimo} e tu non ne benefici. Invece, al contrario, perdi il doppio dei Punti Ferita che hai tirato per l'incantesimo guarire."
+                "DescriptionModerate": "Ogni volta che finisci di lanciare un incantesimo che non sia un trucchetto, ripristini @Damage[@item.level[healing]]{$1 Punti Ferita} a un bersaglio dell'incantesimo o alla creatura più vicina a te, a tua scelta. Non puoi guarire te stesso in questo modo. Questa guarigione ha i tratti guarigione, necromanzia e vitalità, oltre al tratto di tradizione dell'incantesimo.",
+                "DescriptionMajor": "Ogni volta che usi uno slot incantesimo per lanciare un incantesimo di 5° grado o superiore che richiede 2 o più azioni per essere lanciato, disperdi energia di vitalità in un'@Template[burst|distance:30] con gli effetti di un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{guarire} da 3 azioni di un livello inferiore di 4 al grado dell'incantesimo che lanci. Questa guarigione avviene immediatamente dopo aver finito di @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Lanciare l'Incantesimo} e tu non ne benefici. Invece, al contrario, perdi il doppio dei Punti Ferita che hai tirato per l'incantesimo guarire."
             },
             "Time": {
                 "ACLabel": "Difesa contro reazioni o azioni gratuite mentre sei in movimento"
@@ -8198,12 +8198,12 @@
                         "Draconic": "Te stesso o un bersaglio ottiene un bonus di status +1 alla CA per 1 round.",
                         "Hag": "La prima creatura a infliggerti danni prima della fine del tuo turno successivo subisce @Damage[(4*@item.level)[mental]]{#} (TS @Check[will|basic|against:spell]); se nessuna creatura ti ha inflitto danni in quell'arco di tempo, consumi quel rancore per ottenere Punti Ferita temporanei all'inizio del tuo turno successivo uguali al grado dell'incantesimo. Questi Punti Ferita temporanei durano fino all'inizio del tuo prossimo turno.",
                         "Title": "Magia del Sangue",
-                        "Undead": "Ottieni Punti Ferita temporanei pari al grado dell'incantesimo fino all'inizio del tuo prossimo turno, oppure un bersaglio subisce @Damage[@item.level[void]]{$1 danni negativi} (se l'incantesimo infligge già quel tipo di danni iniziali, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze).",
+                        "Undead": "Ottieni Punti Ferita temporanei pari al grado dell'incantesimo fino all'inizio del tuo prossimo turno, oppure un bersaglio subisce @Damage[@item.level[void]]{$1 danni da vuoto} (se l'incantesimo infligge già quel tipo di danni iniziali, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze).",
                         "Imperial": "Fino all'inizio del tuo prossimo turno ottieni un bonus di status +1 alla CA o ai tuoi tiri salvezza, a tua scelta.",
                         "Fey": "Ottieni un bonus di status +2 alle prove di Esibizione per un round, o puoi diventare @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato} per 1 round. Un occultamento così evidente non può essere usato per @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{nascondersi}",
                         "Elemental": "Tu ottieni bonus di status +2 alle prove di Intimidazione per 1 round oppure un bersaglio subisce @Damage[@item.level[@actor.flags.pf2e.elementalBloodline.damageType]]{$1 danni}. Se l'incantesimo infligge già quel tipo di danni, combinali con i danni iniziali dell'incantesimo prima di applicare debolezze o resistenze.",
                         "Nymph": "La grazia della ninfa accentua i tuoi movimenti e distrae i tuoi nemici, concedendoti bonus di status +1 alle prove di Diplomazia per 1 round o imponendo penalità di status -1 ai tiri salvezza su Volontà di un bersaglio per 1 round.",
-                        "Psychopomp": "Ottieni bonus di status +2 ai tiri salvezza su Tempra per 1 round, oppure un bersaglio subisce @Damage[@item.level[void]]{1 danno vuoto per livello dell'incantesimo} se il bersaglio è vivente o @Damage[@item.level[vitality]]{1 danno positivo per livello dell'incantesimo}. Se l'incantesimo infligge già quel tipo di danno, combinalo con il danno iniziale dell'incantesimo prima di determinare debolezze e resistenze.",
+                        "Psychopomp": "Ottieni bonus di status +2 ai tiri salvezza su Tempra per 1 round, oppure un bersaglio subisce @Damage[@item.level[void]]{1 danno da vuoto per livello dell'incantesimo} se il bersaglio è vivente o @Damage[@item.level[vitality]]{1 danno da vitalità per livello dell'incantesimo}. Se l'incantesimo infligge già quel tipo di danno, combinalo con il danno iniziale dell'incantesimo prima di determinare debolezze e resistenze.",
                         "Shadow": {
                             "Text": "Le ombre diventano più profonde intorno a te o a un bersaglio, concedendoti bonus di status +1 a Furtività o imponendo penalità di status -1 a Percezione per 1 round.",
                             "PerceptionPenalty": "penalità di -1 a Percezione",
@@ -8537,9 +8537,9 @@
                     "Prompt": "Seleziona un tipo di energia per Resistenza Furiosa."
                 },
                 "Spirit": {
-                    "NegativeDamage": "Danni Negativi",
+                    "NegativeDamage": "Danni da Vuoto",
                     "ToggleLabel": "Furia Spirituale",
-                    "PositiveDamage": "Danni Positivi"
+                    "PositiveDamage": "Danni da Vitalità"
                 },
                 "Superstition": {
                     "TargetingCaster": "Assistito al lancio di un incantesimo del bersaglio",
@@ -8652,8 +8652,8 @@
                     "MatchingDomainPrompt": "Dominio corrispondente?"
                 },
                 "SacredGround": {
-                    "Healing": "Una creatura che resta nell'area per gli interi 10 minuti riottiene @Damage[(@actor.level)[vitality,healing]]{$1 Punti Ferita}. Questa attività ha i tratti guarigione e positivo e guarisce le creature viventi.",
-                    "Harmful": "Una creatura che resta nell'area per gli interi 10 minuti riottiene @Damage[(@actor.level)[void,healing]]{$1 Punti Ferita}. Questa attività ha i tratti guarigione e negativo e guarisce le creature non morte (o altre creatura che guarigione negativa)."
+                    "Healing": "Una creatura che resta nell'area per gli interi 10 minuti riottiene @Damage[(@actor.level)[vitality,healing]]{$1 Punti Ferita}. Questa attività ha i tratti guarigione e vitalità e guarisce le creature viventi.",
+                    "Harmful": "Una creatura che resta nell'area per gli interi 10 minuti riottiene @Damage[(@actor.level)[void,healing]]{$1 Punti Ferita}. Questa attività ha i tratti guarigione e vuoto e guarisce le creature non morte (o altre creatura con guarigione del vuoto)."
                 },
                 "RestorativeStrike": {
                     "Note": "Puoi bersagliare una seconda creatura consenziente per curarla della stessa quantità dall'incantesimo. Questa creatura può essere fuori dal raggio dell'incantesimo, a condizione che sia adiacente al nemico che colpisci."
@@ -9083,7 +9083,7 @@
                 "RangedReprisal": {
                     "Description": "Puoi utilizzare un'arma a distanza per effettuare un Colpo a distanza invece di un Colpo in mischia per Colpo Punitivo. Il nemico deve essere in gittata, e non in portata, e deve ancora essere nella tua aura del campione. Puoi anche effettuare Colpi in mischia contro nemici leggermente più distanti. Se il nemico che ha innescato la tua reazione è fuori dalla tua portata ma entro 1,5 metri da essa, puoi fare un Passo come parte della reazione per avere il nemico a portata prima di effettuare un Colpo Punitivo in mischia."
                 },
-                "NegativeDamage": "Danni Negativi",
+                "NegativeDamage": "Danni da Vuoto",
                 "TargetReaction": "Il bersaglio ha innescato la tua reazione del campione",
                 "OngoingSelfishness": {
                     "Description": "Dopo aver usato Scudo Egoista ottieni Resistenza a tutti gli ulteriori danni del nemico innescante fino alla fine del turno in cui hai usato la reazione. Questa resistenza è pari alla metà della tua resistenza di Scudo Egoista. @UUID[Compendium.pf2e.feat-effects.Item.seOQfjfjrDyK6rCo]{Effetto: Egoismo Persistente}"
@@ -10015,13 +10015,13 @@
                 "UnusualComposition": "Se con la tua azione successiva lanci un incantesimo di composizione che ha i tratti visivo o uditivo, puoi fare in modo che influenzi creature che possono assistervi con qualsiasi senso, non solo quelli che indicano i tratti, inclusi sensi speciali come percezione tellurica. Puoi scegliere di escludere i sensi che preferisci.",
                 "QuickenedCasting": "Se con la tua azione successiva lanci un trucchetto o un incantesimo inferiore di almeno 2 livelli rispetto all'incantesimo più alto che puoi lanciare, riduci di 1 il numero di azioni necessarie per lanciarlo (minimo 1).",
                 "CallAndResponse": "Mentre l'incantesimo è attivo, un alleato colpito dall'incantesimo può rispondere alla tua strofa con un'antistrofa, usando un'azione singola che ha i tratti concentrazione e uditivo per estendere la durata dell'incantesimo di 1 round. Solo un alleato può rispondere a una determinata strofa, e rispondere all'antistrofa dell'alleato non ha alcun effetto aggiuntivi.",
-                "DivineInfusion": "Il bersaglio infligge danni aggiuntivi con le sue armi da mischia e gli attacchi senz'armi fino alla fine del suo turno successivo. Il tipo di danni è vuoto se hai lanciato <em>ferire</em> e positivo se hai lanciato <em>guarire</em>. @UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{Effetto: Infusione Divina}.",
+                "DivineInfusion": "Il bersaglio infligge danni aggiuntivi con le sue armi da mischia e gli attacchi senz'armi fino alla fine del suo turno successivo. Il tipo di danni è vuoto se hai lanciato <em>ferire</em> e di vitalità se hai lanciato <em>guarire</em>. @UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{Effetto: Infusione Divina}.",
                 "Harmonize": "Se con la tua azione successiva lanci una composizione, questa diventa armonizzata. A differenza delle composizioni normali, una armonizzata non termina se lanci un'altra composizione, e puoi lanciare un'altra composizione nello stesso turno come composizione armonizzata. Il lancio di un'altra composizione armonizzata fa terminare qualsiasi composizione armonizzata già attiva.",
                 "BondConservation": "Ottieni un utilizzo aggiuntivo di Scaricare Oggetto Legato che devi consumare prima della fine del tuo turno successivo, altrimenti lo perdi. Puoi sfruttare l'utilizzo aggiuntivo solo per lanciare un incantesimo inferiore di almeno 2 livelli rispetto al primo incantesimo lanciato tramite Scaricare Oggetto Legato.",
                 "NonLethal": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni e non ha il tratto morte o vuoto, quell'incantesimo ottiene il tratto non letale.",
                 "OverwhelmingEnergy": "Se come azione successiva Lanci un Incantesimo, quest'ultimo ignora un ammontare di resistenza del bersaglio al danno da acido, elettricità, freddo, fuoco o sonoro pari al tuo livello. Questo effetto si applica a tutti i danni inferti dall'incantesimo, compresi quelli persistenti e quelli causati da effetti in corso, come nel caso del muro creato da muro di fuoco. Le immunità delle creature non vengono influenzate.",
                 "DefensiveCoordination": "Puoi Alzare uno Scudo e un singolo alleato che ottiene un bonus di status grazie all'incantesimo può usare immediatamente una reazione per Alzare uno Scudo.",
-                "EnergyAblation": "Se la tua prossima azione è Lanciare un Incantesimo che infligge almeno un tipo di danno da energia (acido, elettricità, forza, freddo, fuoco, sonoro, positivo o vuoto), a prescindere dal fatto che infligga o meno danni, ottieni resistenza a un tipo di energia pari al grado dell'incantesimo fino alla fine del tuo turno successivo.",
+                "EnergyAblation": "Se la tua prossima azione è Lanciare un Incantesimo che infligge almeno un tipo di danno da energia (acido, elettricità, forza, freddo, fuoco, sonoro, vitalità o vuoto), a prescindere dal fatto che infligga o meno danni, ottieni resistenza a un tipo di energia pari al grado dell'incantesimo fino alla fine del tuo turno successivo.",
                 "ConcealSpell": "L'incantesimo ottiene il tratto discreto, nascondendo le rune brillanti, scintille di magia o altre manifestazioni che solitamente rivelano il tuo lancio di incantesimi. Il tratto nasconde solo le azioni di lancio e le manifestazioni dell'incantesimo, non i suoi effetti, perciò un osservatore potrebbe comunque notare un raggio balenare da te o vederti svanire.",
                 "VigorousAnthem": "Tu e tutti gli alleati influenzati ottenete Punti Ferita temporanei pari a 3 + il tuo modificatore di Carisma, per la durata di 1 minuto. @UUID[Compendium.pf2e.feat-effects.Item.7AzGhIOx4Df5Cicr]{Effetto: Inno Vigoroso}",
                 "ForcibleEnergy": "Se la tua prossima azione è Lanciare un Incantesimo che infligge danni da acido, da elettricità, da fuoco o sonori, puoi selezionare un bersaglio che è stato danneggiato e fargli ottenere debolezza 5 a quel tipo di danno fino alla fine del tuo turno successivo. Se un incantesimo infligge più tipi di danni da energia, scegli quello a cui il bersaglio ottiene debolezza. Questo non ha effetto sulle creature con resistenza o immunità al tipo di energia che scegli. @UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{Effetto: Energia Violenta}",
@@ -10381,7 +10381,7 @@
         "TraitDescriptionAesir": "Gli aesir sono osservatori spesso bellicosi dei piani caotici che affinano le loro abilità in battaglia preparandosi per lo scontro finale alla fine del multiverso.",
         "TraitDescriptionAgathion": "Questa famiglia di celestiali dalle caratteristiche animali è nativa del piano del Nirvana. La maggior parte degli agathion è neutrale buona, è dotata di scurovisione e ha una debolezza nei confronti dei danni da male.",
         "TraitDescriptionAndroid": "Una stirpe umanoide sintetica creata con mezzi artificiali. Molto diffusa in Numeria.",
-        "TraitDescriptionSkeleton": "Questo non morto viene creato animando lo scheletro di una creatura morta tramite l'energia negativa. Una abilità con questo tratto può essere usata o selezionata solo dagli scheletri.",
+        "TraitDescriptionSkeleton": "Questo non morto viene creato animando lo scheletro di una creatura morta tramite l'energia del vuoto. Una abilità con questo tratto può essere usata o selezionata solo dagli scheletri.",
         "TraitDescriptionSocial": "Le azioni e capacità con il tratto sociale possono essere usate solo quando un vigilante usa la sua identità sociale.",
         "TraitDescriptionSummoned": "Una creatura richiamata da un incantesimo o un effetto ottiene il tratto evocato. Una creatura evocata non può evocare altre creature, creare oggetti di valore o lanciare incantesimi che richiedono un costo. Ha il tratto servitore. Se tenta di Lanciare un Incantesimo di grado uguale o superiore all'incantesimo che lo ha evocato, prevale sulla magia di evocazione, facendo fallire il proprio incantesimo e facendo terminare l'incantesimo di evocazione. Per il resto, la creatura evocata usa le capacità standard di una creatura del suo genere. In genere attacca i tuoi nemici al meglio delle sue capacita. Se riesci a comunicare con lei puoi provare a comandarla, ma il GM determina fino a che punto essa esegue i tuoi comandi. Non appena finisci di Lanciare l'Incantesimo, la creatura evocata usa le sue 2 azioni per quel turno. Uno progenie o un'altra creatura generata da una creatura evocata ritorna al suo stato inalterato (di solito un cadavere in caso di progenie) una volta che la creatura evocata se ne è andata. Se non è chiaro quale sarebbe questo stato, decide il GM. Le creature evocate possono essere esiliate da vari incantesimi ed effetti. Vengono automaticamente esiliate se ridotte a 0 Punti Ferita o se termina l'incantesimo che le ha evocate.",
         "TraitDescriptionVanara": "I vanara sono Umanoidi simili a scimmie con una comune predisposizione all'addestramento da monaco.",
@@ -10675,7 +10675,7 @@
         "PreciousMaterialPeachwoodDescription": "Le armi di pesco hanno una particolare tinta ramata quando sono esposte alla luce del sole diretta. Il pesco è considerato come legno crepuscolare ai fini di qualsiasi resistenza o debolezza correlata al legno crepuscolare delle creature non morte (il che permette, per esempio, a un'arma di pesco di superare la resistenza di uno jiang-shi). Inoltre, le armi di pesco superano una parte delle resistenze di qualsiasi creatura non morta. I Colpi con un'arma di pesco considerano le resistenze ai danni fisici di un non morto come inferiori di 2 per il pesco di qualità standard e inferiori di 4 per il pesco di qualità alta.",
         "TraitDescriptionCriticalFusion": "Fusione del Critico è un nuovo tratto per le armi combinate che ti fornisce due opzioni aggiuntive per l'effetto di specializzazione del critico quando usi la versione da mischia dell'arma combinata per effettuare un attacco in mischia mentre l'arma è carica. Se scegli di usare una di queste opzioni, esse sostituiscono il normale effetto di specializzazione del critico dell'uso in mischia. Come prima opzione, puoi scaricare l'arma da fuoco per creare un forte botto e una concussione, utilizzando l'effetto di specializzazione del critico delle armi da fuoco invece dell'effetto di specializzazione del critico del gruppo delle armi da mischia. Come seconda opzione, puoi scegliere di scaricare l'arma da fuoco per aumentare lo slancio del colpo critico o sparare al nemico mentre lo attacchi in mischia, infliggendo 2 danni aggiuntivi per ogni dado di danno dell'arma. Entrambe le opzioni scaricano l'arma, il che di solito significa che è necessario ricaricarla prima di sparare di nuovo.",
         "TraitDescriptionCombination": "Questo è un tratto per le armi che combinano la funzionalità di armi da mischia e armi da fuoco in modi unici o inusuali. Un'arma combinata ha una forma o uso da arma da fuoco e una forma o un uso da arma da mischia.",
-        "TraitDescriptionDarvakka": "Creature non morte entropiche, corrotte dal Piano delle Ombre e dal Piano dell'Energia Negativa.",
+        "TraitDescriptionDarvakka": "Creature non morte entropiche, corrotte dal Piano delle Ombre e dal Piano dell'Energia del Vuoto.",
         "TraitDescriptionConcussive": "Queste armi spaccano oltre a perforare. Quando determini la resistenza o l'Immunità di una creatura ai danni di quest'arma, usa la resistenza o l'immunità più debole della creatura tra danni perforanti e danni contundenti. Per esempio, se la creatura è immune ai danni perforanti e non ha alcuna resistenza o l'immunità ai danni contundenti, subisce danni pieni da un'arma concussiva. La resistenza o l'immunità a tutti i danni fisici, o a tutti i danni, si applica normalmente.",
         "TraitKickback": "Rinculo",
         "TraitMounted": "Montata",
@@ -10776,11 +10776,11 @@
         "TraitEachRuneAppliedToASeparateItemThatHasPockets": "Ciascuna runa applicata su un oggetto diverso munito di tasche",
         "TraitSanctified": "Santificato",
         "TraitFocus": "Focalizzato",
-        "TraitDescriptionUndead": "Queste creature, che una volta erano viventi, dopo la morte sono state infuse di energia negativa e magia sacrilega che corrompe l'anima. Quando viene ridotta a 0 Punti Ferita, una creatura non morta viene distrutta. Le creature non morte sono danneggiate dall'energia positiva, sono guarite dall'energia negativa e non beneficiano degli effetti di guarigione.",
+        "TraitDescriptionUndead": "Queste creature, che una volta erano viventi, dopo la morte sono state infuse di energia del vuoto e magia sacrilega che corrompe l'anima. Quando viene ridotta a 0 Punti Ferita, una creatura non morta viene distrutta. Le creature non morte sono danneggiate dall'energia di vitalità, sono guarite dall'energia del vuoto e non beneficiano degli effetti di guarigione.",
         "TraitDescriptionSummon": "Gli incantesimi con il tratto evocazione possono evocare creature, tipicamente quelle con un tratto particolare. Queste creature possono essere trovate nel Bestiario o libri simili. A meno che non sia segnato altrimenti, la creatura deve essere comune, ottiene il tratto evocato e deve apparire in uno spazio non occupato abbastanza largo da contenerla. Il livello più alto di creatura che l'incantesimo può evocare dipende dal grado dell'incantesimo, come elencato qua sotto. L'incantesimo può comunque evocare una creatura di un livello inferiore se lo desideri. Queste regole si applicano soltanto a incantesimi che hanno il tratto evocare; altri incantesimi che chiamano o evocano oggetti o esseri che non hanno il tratto, come evoca strumento, funzionano come spiegato nell'incantesimo.",
         "TraitVersatileVoid": "Versatile Vuoto",
         "TraitVersatileX": "Versatile {x}",
-        "TraitVersatileVitality": "Versatile Positivo",
+        "TraitVersatileVitality": "Versatile di VItalità",
         "TraitVersatileSpirit": "Versatile Spirituale",
         "TraitGhul": "Ghul",
         "TraitDescriptionUnholy": "Effetti con il tratto sacrilego sono legati alle potenti forze magiche della crudeltà e del peccato. Spesso hanno effetti più forti su creature sacre. Creature con questo tratto sono fortamente devote alle cause sacrileghe e spesso hanno debolezze al sacro. Se una creatura con una debolezza al sacrilego usa un oggetto o effetto sacrilego, subisce danni dalla sua debolezza.",
@@ -10880,16 +10880,16 @@
             "Abbreviation": "m"
         },
         "TraitVoid": "Vuoto",
-        "TraitVitality": "Positivo",
+        "TraitVitality": "Vitalità",
         "TraitMetal": "Metallo",
         "ArmorPropertyRuneSizeChanging": "Cambia Taglia",
         "ArmorPropertyRuneRaiment": "Mascheramento",
         "TraitDescriptionClimbing": "La mano che sta impugnando l'arma è disponibile per Scalare.",
         "TraitAffixedToMetalWeapon": "Applicato a un'Arma in Metallo",
         "TraitAffixedToAShieldOrWeapon": "Applicato a un'Arma o uno Scudo",
-        "TraitDescriptionVoid": "Gli effetti con questo tratto curano le creature non morte con energia negativa, infliggono danni negativi alle creature viventi o manipolano l'energia negativa.",
+        "TraitDescriptionVoid": "Gli effetti con questo tratto curano le creature non morte con energia del vuoto, infliggono danni da vuoto alle creature viventi o manipolano l'energia del vuoto.",
         "TraitSubjectiveGravity": "Gravità Soggettiva",
-        "TraitDescriptionVitality": "Gli effetti di questo tratto curano le creature viventi con energia dalla Forgia della Creazione, infliggono danni da energia positiva ai non morti o manipolano l'energia positiva.",
+        "TraitDescriptionVitality": "Gli effetti di questo tratto curano le creature viventi con energia dalla Forgia della Creazione, infliggono danni da energia di vitalità ai non morti o manipolano l'energia di vitalità.",
         "TraitDescriptionAngel": "Questa famiglia di celestiali sono messaggeri e guerrieri. La maggior parte degli angeli sono sacri, hanno scurovisione e debolezza al sacrilego.",
         "Region": {
             "EnvironmentFeature": {
@@ -11021,7 +11021,7 @@
         "TraitAftermath": "Postumo",
         "TraitDescriptionPsychic": "Indica le capacità della classe dello psicomante.",
         "TraitDescriptionAmp": "Un’amplificazione è una speciale forma noetica che modifica le proprietà dei tuoi trucchetti psi. Ogni trucchetto psi ha la propria amplificazione e i talenti con il tratto amplificazione forniscono amplificazioni che puoi applicare a trucchetti psi al posto delle loro normali amplificazioni.",
-        "TraitDescriptionWraith": "Un wraith è un non morto incorporeo infuso di energia negativa e guidato da un odio per tutta la vita.",
+        "TraitDescriptionWraith": "Un wraith è un non morto incorporeo infuso di energia del vuoto e guidato da un odio per tutta la vita.",
         "TraitDescriptionWight": "I wight sono umanoidi non morti che risucchiano la vita e sorvegliano la propria tomba.",
         "TraitDescriptionTroll": "I troll sono creature gigantesche e brutali, ben note per trasformarsi in oggetti inanimati.",
         "TraitDescriptionThaumaturge": "Indica le capacità della classe del taumaturgo.",
