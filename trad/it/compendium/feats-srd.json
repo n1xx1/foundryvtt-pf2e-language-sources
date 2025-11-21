@@ -3389,7 +3389,10 @@
         },
         "Echoing Channel": {
             "name": "Incanalare Echeggiante",
-            "description": "<p>Quando liberi energia positiva o negativa, crei anche una sacca più piccola della stessa energia.</p>\n<p>Se con la tua azione successiva lanci un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{ferire}</em> o <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{guarire}</em> da 2 azioni per curare o danneggiare una singola creatura, scegli una creatura aggiuntiva adiacente a te o al bersaglio. Su di essa lanci la versione da 1 azione dello stesso incantesimo, che ha lo stesso livello dell'incantesimo <em>ferire</em> o <em>guarire</em> da 2 azioni che hai lanciato e non consuma un altro slot incantesimo.</p>"
+            "description": "<p>Quando liberi energia positiva o negativa, crei anche una sacca più piccola della stessa energia.</p>\n<p>Se con la tua azione successiva lanci un incantesimo <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{ferire}</em> o <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{guarire}</em> da 2 azioni per curare o danneggiare una singola creatura, scegli una creatura aggiuntiva adiacente a te o al bersaglio. Su di essa lanci la versione da 1 azione dello stesso incantesimo, che ha lo stesso livello dell'incantesimo <em>ferire</em> o <em>guarire</em> da 2 azioni che hai lanciato e non consuma un altro slot incantesimo.</p>",
+            "featPrerequisites": {
+                "0": "embodiment of balance o chierico"
+            }
         },
         "Positioning Assault": {
             "name": "Assalto Riposizionante",
@@ -11547,7 +11550,8 @@
         "Uplifting Overture": {
             "featPrerequisites": {
                 "0": "musa del virtuosismo"
-            }
+            },
+            "name": "Apertura Esaltante"
         },
         "Uplifting Winds": {
             "featPrerequisites": {
@@ -12028,7 +12032,8 @@
             "name": "Sapienza sui Draghi"
         },
         "Dueling Parry": {
-            "name": "Parata del Duellante"
+            "name": "Parata del Duellante",
+            "description": "<p><strong>Requisiti</strong> Impugni una singola arma da mischia a una mano e non impugni nient'altro.</p>\n<hr /><p>Puoi parare gli attacchi con la tua arma a una mano. Ottieni bonus di circostanza +2 alla CA fino all'inizio del tuo turno successivo, a condizione che continui a soddisfare i requisiti.</p>"
         },
         "Eldritch Reload": {
             "featPrerequisites": {
@@ -12429,7 +12434,9 @@
         "Incredible Familiar": {
             "featPrerequisites": {
                 "0": "Famiglio Potenziato"
-            }
+            },
+            "description": "<p><strong>Thaumaturge</strong> By taking the best parts of each magical tradition, you've found a way to grant your familiar even more abilities than other familiars.</p>\n<p><strong>Fattucchiere</strong> Il tuo famiglio è ancor più impregnato di magia rispetto ad altri.</p><hr /><p>Puoi selezionare una base di sei capacità del famiglio o del padrone ogni giorno, anziché quattro.</p>\n<p><strong>Speciale</strong> Aggiungi le capacità del famiglio bonus che ottieni per il fatto di essere un fattucchiere.</p>",
+            "name": "Famiglio Incredibile"
         },
         "Incredible Familiar (Animist)": {
             "featPrerequisites": {
@@ -12463,7 +12470,8 @@
             }
         },
         "Cut From the Air": {
-            "name": "Deviazione in Volo"
+            "name": "Deviazione in Volo",
+            "description": "<p><strong>Innesco</strong> Sei il bersaglio di un Colpo a distanza fisico.</p>\n<p><strong>Requisiti</strong> Sei consapevole dell'attacco, non sei @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} contro di esso e hai una mano libera oppure impugni un'arma da mischia.</p>\n<hr />\n<p>Puoi respingere gli attacchi a distanza. Ottieni bonus di circostanza +4 alla CA contro l'attacco innescante. Se l'attacco va a vuoto, lo abbatti o devii in volo.</p>"
         },
         "Back to Back": {
             "featPrerequisites": {
@@ -12473,7 +12481,9 @@
         "Ebb and Flow": {
             "featPrerequisites": {
                 "0": "Sorgente Versatile"
-            }
+            },
+            "description": "<p>Puoi attingere al tempo stesso a vitalità e vuoto per ferire i tuoi nemici e guarire i tuoi alleati. Se la tua azione successiva è lanciare un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{guarire} o @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{ferire} da 1 o 2 azioni, scegli una creatura entro la gittata che verrebbe ferita dall'incantesimo e un'altra creatura entro gittata che verrebbe guarita dall'incantesimo. Il tuo <em>guarire</em> o <em>ferire</em> bersaglia entrambe le creature.</p>",
+            "name": "Flusso e Riflusso"
         },
         "Mask of Pain": {
             "featPrerequisites": {
@@ -12483,7 +12493,9 @@
         "No Cause for Alarm": {
             "featPrerequisites": {
                 "0": "addestrato in Diplomazia"
-            }
+            },
+            "description": "<p>Provi a sedare il panico. Effettua una prova di @Check[diplomacy] , confrontandola con la CD di Volontà delle creature che sono @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventate} in un'@Template[emanation|distance:10]{emanazione di 3 metri} intorno a te. Ognuna di esse diventa poi temporaneamente immune per 1 ora.</p>\n<hr />\n<p><strong>Successo Critico</strong> Riduci il valore spaventato della creatura di 2.</p>\n<p><strong>Successo</strong> Riduci il valore spaventato della creatura di 1.</p>",
+            "name": "Non c'è Motivo di Allarmarsi"
         },
         "Scales of the Dragon": {
             "featPrerequisites": {
@@ -13502,6 +13514,53 @@
         },
         "Untamed Form": {
             "name": "Forma Selvaggia"
+        },
+        "All in My Head": {
+            "description": "<p><strong>Innesco</strong> Subiresti danni da un Colpo o da un incantesimo che non ha il tratto morte o che comunque non causa morte improvvisa (come @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{disintegrazione}).</p>\n<hr />\n<p>Usando le tue connessioni occulte e i tuoi incredibili poteri persuasivi, ti convinci che i danni innescanti sono frutto della tua immaginazione. I danni cambiano dal loro solito tipo di danno a danno mentale, e l'effetto dannoso ottiene il tratto non letale. Non puoi usare questa reazione se sei immune agli effetti mentali o ai danni mentali.</p>",
+            "name": "Tutto nella Mia Testa"
+        },
+        "Call and Response": {
+            "description": "<p>La tua composizione prende la forma di un canto a strofe e antistrofe, che permette ai tuoi alleati di continuare l'effetto senza di te. Se la tua prossima azione è lanciare un trucchetto di composizione con una durata di 1 round, questo diventa una strofa. Mentre l'incantesimo è attivo, un alleato colpito dall'incantesimo può rispondere alla tua strofa con un'antistrofa, usando un'azione singola che ha i tratti concentrazione e uditivo per estendere la durata dell'incantesimo di 1 round. Solo un alleato può rispondere a una determinata strofa, e rispondere all'antistrofa dell'alleato non ha alcun effetto aggiuntivo.</p>",
+            "name": "Strofe e Antistrofe"
+        },
+        "Call of the Green Man": {
+            "description": "<p>Puoi richiamare gli spiriti della natura vicini per potenziare il tuo corpo. Una volta al giorno, puoi lanciare @UUID[Compendium.pf2e.spells-srd.Item.zCcfPS4y5SrZzU2x]{forma vegetale} come incantesimo di 5° grado innato primevo. Quando raggiungi il 17° livello, questo incantesimo può essere intensificato al 6° grado.</p>",
+            "name": "Richiamo dell'Uomo Verde"
+        },
+        "Cloak of Poison": {
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p>Secerni un manto di veleno concentrato che nuoce a chiunque osi attaccarti. Per 1 minuto, qualsiasi creatura che ti tocchi o ti danneggi con un attacco senz'armi o con un'arma da mischia senza il tratto portata subisce @Damage[3d6[poison]]{3d6 danni da veleno}.</p>",
+            "name": "Manto di Veleno"
+        },
+        "Defy the Darkness": {
+            "description": "<p>Usando gli antichi metodi dei nani, sviluppati per combattere i nemici che usano l'oscurità magica, hai affinato la tua scurovisione e giurato di non usare mai tali magie. Ottieni scurovisione superiore, che ti consente di vedere attraverso l'oscurità magica anche se normalmente questa ostacola la scurovisione (come l'oscurità creata da un incantesimo @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{oscurità} di 4° grado). Non puoi lanciare incantesimi con il tratto oscurità, utilizzare le attivazioni di oggetti con il tratto oscurità o utilizzare qualsiasi altra capacità con il tratto oscurità.</p>",
+            "featPrerequisites": {
+                "0": "scurovisione"
+            },
+            "name": "Sfidare l'Oscurità"
+        },
+        "Flourish and Ruin": {
+            "description": "<p>Puoi invocare l'essenza vitale del tuo spirito per ridare vita ai tuoi alleati e richiamare viticci che intrappolino e colpiscano i tuoi nemici. Puoi lanciare @UUID[Compendium.pf2e.spells-srd.Item.x5rGOmhDRDVQPrnW]{campo di vita} e @UUID[Compendium.pf2e.spells-srd.Item.JbAcSLu62TU1OgNF]{groviglio di rampicanti} come incantesimi innati primevi di 6° grado, una volta al giorno ciascuno.</p>",
+            "name": "Prospera e Rovina"
+        },
+        "Ode to Ouroboros": {
+            "description": "<p>Impari l’incantesimo di composizione @UUID[Compendium.pf2e.spells-srd.Item.DgCS456mXKw97vNy]{ode a uroboro}, che ti consente di proteggere temporaneamente i tuoi alleati dalla morte.</p>",
+            "name": "Ode a Uroboro"
+        },
+        "Reckless Abandon": {
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p>Nonostante una vita piena di decisioni discutibili, sei riuscito a sopravvivere, come se una fortuna sfacciata ti consentisse di evitare le conseguenze delle tue stesse azioni. Per il resto del tuo turno, se ottieni un fallimento o un fallimento critico in un tiro salvezza contro un effetto dannoso, lo consideri un successo. Inoltre, Se dovessi subire danni da un nemico o da un pericolo in questo turno, subirai il minimo danno possibile.</p>\n<p>Questi benefici si applicano solo agli effetti dannosi sostenuti interamente durante il turno in cui attivi Sfrenato Abbandono, come correre attraverso un @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{muro di fuoco}. I danni persistenti e le condizioni applicate prima del tuo turno procedono normalmente, e non appena finisce il tuo turno sei soggetto a tutte le conseguenze dei pericoli che ti minacciano ancora.</p>",
+            "name": "Sfrenato Abbandono"
+        },
+        "Reconstruct the Scene": {
+            "description": "<p>Passi 1 minuto a sorvegliare un luogo ristretto (come una singola stanza) per avere un’impressione degli eventi che vi sono accaduti nell’ultimo giorno. Questo implica muoversi nell’area e studiare le impronte, la disposizione degli oggetti, le bevande o il sangue versato e così via. Ottieni un’impressione mentale indistinta di eventi significativi che sono accaduti lì. Questo ti fornisce indizi e dettagli sul passato, inclusi gli eventi complessivi e la loro collocazione temporale, ma non si tratta di una ricostruzione perfetta. Inoltre, non è sufficiente per identificare chi è stato coinvolto in questi eventi se non eri già al corrente del fatto che la persona era lì. A discrezione del GM, raccogli anche vari dettagli apparentemente di poco conto ma che potrebbero rivelarsi indizi importanti, come un’arma notevole che qualcuno ha usato per un omicidio o il tipo di mantello che qualcuno indossava quando passava di lì.</p>",
+            "name": "Ricostruire la Scena"
+        },
+        "Rites of Convocation": {
+            "description": "<p>Il tuo patrono ti fa evocare altre creature per aiutarti. Scegli un incantesimo evoca (come @UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]{evoca animale}, @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{evoca costrutto} e così via) che appare nella lista degli incantesimi della tua tradizione da incantatore. Puoi spendere 10 minuti in comunione con il tuo famiglio per sostituire un incantesimo che hai preparato in uno dei tuoi slot incantesimo da fattucchiere con l’incantesimo che hai scelto, intensificato allo stesso grado. L’incantesimo che sostituisci deve essere almeno del grado minimo dell’incantesimo evoca.</p>",
+            "name": "Riti di Convocazione"
+        },
+        "Rites of Transfiguration": {
+            "description": "<p>Puoi utilizzare il potere del tuo patrono per trasformare altre creature in forme più consone al loro comportamento o ai tuoi capricci. Il tuo famiglio impara @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{metamorfosi maledetta}, anche se <em>metamorfosi maledetta</em> non è nella lista degli incantesimi della tua tradizione. Trascorrendo 10 minuti in comunione con il famiglio, puoi sostituire un incantesimo di 6° grado o superiore che hai preparato in uno dei tuoi slot incantesimo da fattucchiere con un incantesimo <em>metamorfosi maledetta</em> dello stesso grado.</p>",
+            "name": "Riti di Trasfigurazione"
         }
     }
 }
