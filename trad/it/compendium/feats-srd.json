@@ -5432,7 +5432,7 @@
         },
         "Ageless Patience": {
             "name": "Pazienza Sempiterna",
-            "description": "<p>Agisci a un ritmo derivante dalla tua longevità, che amplifica tuo perfezionismo. Puoi decidere di impiegare volontariamente il doppio del tempo normale in una prova di Percezione o in una prova di abilità per ottenere bonus di circostanza +2 per quella prova. Inoltre, per queste prove non consideri un 1 naturale come un risultato peggiore del solito; ottieni un fallimento critico solo se il tuo risultato è inferiore alla CD di 10. Per esempio, potresti ottenere questi benefici se impieghi 2 azioni per @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Individuare}, che normalmente richiede 1 azione, Puoi ottenere questi benefici durante l'esplorazione impiegando il doppio del tempo normale a esplorare, oppure nelle pause impiegando il doppio del tempo in pausa.</p>\n<p>Il GM potrebbe stabilire che una situazione non ti fornisce un bonus se un ritardo può essere controproducente per il tuo successo. per esempio in un negoziato teso con una creatura impaziente.</p>"
+            "description": "<p>Agisci a un ritmo derivante dalla tua longevità, che amplifica il tuo perfezionismo. Puoi decidere di impiegare volontariamente il doppio del tempo normale in una prova di Percezione che richieda 1 azione o più. Se lo fai, ottieni bonus di circostanza +2 alla prova e non riduci automaticamente il tuo grado di successo quando ottieni un 1 naturale come risultato (ottieni un fallimento critico solo se il tuo risultato è inferiore alla CD di 10). Per esempio, potresti ottenere questi benefici se impieghi 2 azioni per @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Individuare}, che normalmente richiede 1 azione. Puoi ottenere questi benefici durante l'esplorazione impiegando il doppio del tempo normale a esplorare, oppure nelle pause impiegando il doppio del tempo in pausa.</p>\n<p>Il GM potrebbe stabilire che una situazione non ti fornisce un bonus se un ritardo può essere controproducente per il tuo successo, per esempio in un negoziato teso con una creatura impaziente.</p>"
         },
         "Nimble Elf": {
             "name": "Elfo Agile",
@@ -11389,8 +11389,10 @@
         },
         "Advanced Warden": {
             "featPrerequisites": {
-                "0": "incantesimi del guardiano"
-            }
+                "0": "Guardiano Iniziato"
+            },
+            "description": "<p>Sblocchi incantesimi primevi più potenti. Ottieni un incantesimo da guardiano a tua scelta tra gli incantesimi da guardiano avanzati.</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.vGEgI8e7AW6FQ3tP]{aspetto animalesco}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.8rj45fKzCFcB0fxs]{ingrandire compagno}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.GfrKNJ9pNeATiKCc]{fortuna del cacciatore}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.RGBZrVRIEDb2G48h]{nebbia lenitiva}</p>\n<hr />\n<p><strong>Speciale</strong> Puoi selezionare questo talento più volte, scegliendo ogni volta un diverso incantesimo da guardiano avanzato.</p>",
+            "name": "Guardiano Avanzato"
         },
         "Anthemic Performance": {
             "featPrerequisites": {
@@ -12194,7 +12196,8 @@
             "featPrerequisites": {
                 "0": "parare con lo scudo"
             },
-            "name": "Scudo del Guardiano"
+            "name": "Scudo del Guardiano",
+            "description": "<p>Quando hai lo scudo alzato, puoi utilizzare la reazione @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Parare con lo Scudo} quando viene effettuato un attacco diretto a un alleato adiacente a te. Così facendo, lo scudo impedisce che l'alleato subisca danni anziché impedire che li riceva tu, seguendo le normali regole di Parare con lo Scudo.</p>"
         },
         "Signature Crafting": {
             "featPrerequisites": {
@@ -12505,7 +12508,9 @@
         "Song of Strength": {
             "featPrerequisites": {
                 "0": "musa del combattente"
-            }
+            },
+            "description": "<p>Le tue esibizioni ispirano forza nei tuoi alleati. Impari il trucchetto di composizione @UUID[Compendium.pf2e.spells-srd.Item.Xxdwkt0EEDgP1LGc]{canto di forza}.</p>",
+            "name": "Canto di Forza"
         },
         "Wings of the Dragon": {
             "featPrerequisites": {
@@ -12533,7 +12538,9 @@
         "Schooled in Secrets": {
             "featPrerequisites": {
                 "0": "addestrato in Occultismo"
-            }
+            },
+            "description": "<p>Noti i segni e i simboli che i membri dei culti misterici e di altre società segrete usano per dimostrare agli altri membri la loro affiliazione. Puoi usare Occultismo al posto di Diplomazia per [[/act gather-information skill=occultism]]{Raccogliere Informazioni} su tali gruppi e al posto di Inganno per [[/act impersonate skill=occultism]]{Impersonare} un membro di questi gruppi.</p>\n<p>Se appartieni a un culto segreto, una loggia, una setta o un'organizzazione simile, riconosci automaticamente i membri del tuo gruppo, a meno che non cerchino specificamente di nasconderti la loro presenza. Anche loro riconoscono il tuo rango all'interno dell'organizzazione, a meno che tu non stia cercando deliberatamente di celarlo.</p>",
+            "name": "Iniziato ai Segreti"
         },
         "Sense for Trouble": {
             "featPrerequisites": {
@@ -13561,6 +13568,35 @@
         "Rites of Transfiguration": {
             "description": "<p>Puoi utilizzare il potere del tuo patrono per trasformare altre creature in forme più consone al loro comportamento o ai tuoi capricci. Il tuo famiglio impara @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{metamorfosi maledetta}, anche se <em>metamorfosi maledetta</em> non è nella lista degli incantesimi della tua tradizione. Trascorrendo 10 minuti in comunione con il famiglio, puoi sostituire un incantesimo di 6° grado o superiore che hai preparato in uno dei tuoi slot incantesimo da fattucchiere con un incantesimo <em>metamorfosi maledetta</em> dello stesso grado.</p>",
             "name": "Riti di Trasfigurazione"
+        },
+        "Sense the Unseen": {
+            "description": "<p><strong>Innesco</strong> Fallisci una prova per @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Individuare}.</p><hr /><p>Quando cerchi dei nemici, cogli anche gli indizi più insignificanti. Anche se hai fallito la prova che ha provocato l'innesco, percepisci automaticamente eventuali creature @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{non individuate} nell'area in cui utilizzi Individuare, rendendole semplicemente @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascoste} per te.</p>",
+            "name": "Percepire l'Inosservato"
+        },
+        "Smash from the Air": {
+            "description": "<p>La tua esperienza ti permette di respingere gli incantesimi. Puoi usare @UUID[Compendium.pf2e.feats-srd.Item.6xBu4BewIkOIt9M0]{Deviazione in Volo} contro i tiri per colpire con incantesimo a distanza.</p>",
+            "featPrerequisites": {
+                "0": "Deviazione in Volo"
+            },
+            "name": "Annientamento in Volo"
+        },
+        "Song of Marching": {
+            "description": "<p>Impari il trucchetto di composizione @UUID[Compendium.pf2e.spells-srd.Item.LTUaK3smfm5eDiFK]{canto di marcia}, che consente a te e ai tuoi alleati di attraversare grandi distanze senza sforzo.</p>",
+            "name": "Canto di Marcia"
+        },
+        "Spirit Familiar (Witch)": {
+            "description": "<p>Il tuo famiglio può sussumere il suo corpo per diventare puro spirito. Il tuo famiglio ottiene l'attività @UUID[Compendium.pf2e.actionspf2e.Item.uruoG0PuuA0CqEG7]{Liberare Spirito}.</p>",
+            "featPrerequisites": {
+                "0": "patrono divino o occulto"
+            },
+            "name": "Famiglio Spirituale (Fattucchiere)"
+        },
+        "Symphony of the Unfettered Heart": {
+            "description": "<p>Impari l'incantesimo di composizione @UUID[Compendium.pf2e.spells-srd.Item.ZAX0OOcKtYMQlquR]{sinfonia del cuor saldo}, che ti consente di proteggere un alleato da condizioni incapacitanti.</p>",
+            "name": "Sinfonia del Cuor Saldo"
+        },
+        "Hymn of Healing": {
+            "name": "Inno di Guarigione"
         }
     }
 }
