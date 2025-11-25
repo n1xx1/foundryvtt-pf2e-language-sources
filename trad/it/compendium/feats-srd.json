@@ -11435,21 +11435,27 @@
         "Double, Double": {
             "featPrerequisites": {
                 "0": "Calderone"
-            }
+            },
+            "description": "<p>Per ogni olio o pozione temporanea da te creata durante i tuoi preparativi giornalieri, ne realizzi due copie. Questo ti permette di creare due oli o pozioni temporanee ogni giorno, quattro se hai competenza da maestro nelle CD di incantesimo o se hai competenza leggendaria.</p>",
+            "name": "Al Raddoppio"
         },
         "Favored Prey": {
-            "name": "Preda Prescelta"
+            "name": "Preda Prescelta",
+            "description": "<p>Hai studiato un tipo specifico di creatura selvatica e puoi cacciarla più facilmente. Quando ottieni questo talento, selezioni il tuo nemico prescelto tra animali, bestie, draghi o funghi e vegetali. Quando tiri l'iniziativa e riesci a vedere un nemico che appartiene alla categoria selezionata, puoi Cacciare la Preda come azione gratuita, designando quel nemico.</p>\n<p>Puoi utilizzare questa azione gratuita anche se non hai ancora identificato la creatura con Ricordare Conoscenze. Questo beneficio non si applica contro nemici prescelti camuffati da altre creature, e sta al GM stabilire se si applichi contro creature camuffate per sembrare un nemico del tipo prescelto.</p>"
         },
         "Floral Restoration": {
             "featPrerequisites": {
                 "0": "ordine della foglia"
-            }
+            },
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p><hr /><p>Chiedi ai vegetali vicini di condividere la loro vitalità con te per rifornirti di energia e magia. Recuperi 1 Punto Focalizzazione e @Damage[ceil(@item.level/2)d8[healing]].</p>\n<p>Devi trovarti in un luogo di almeno 4,5 metri per 4,5 metri con una vegetazione sana, che può essere costituita da erba, licheni, alghe o qualsiasi altra forma di flora naturale. L'uso di Reviviscenza Floreale su una data sezione di vegetali non li danneggia, ma impedisce a quella sezione di natura di dare la sua vitalità a un altro uso di Reviviscenza Floreale per 24 ore.</p>\n<p>Al 9° livello, e successivamente ogni 2 livelli, la guarigione aumenta di 1d8.</p>",
+            "name": "Reviviscenza Floreale"
         },
         "Fortissimo Composition": {
             "featPrerequisites": {
                 "0": "musa del virtuosismo"
             },
-            "name": "Composizione in Fortissimo"
+            "name": "Composizione Fortissima",
+            "description": "<p>Le tue esibizioni spingono gli alleati a compiere imprese sempre più grandi. Impari l'incantesimo focalizzato magimorfico @UUID[Compendium.pf2e.spells-srd.Item.kF0rs9mCPvJGfAZE]{composizione in fortissimo}.</p>"
         },
         "Go with the Flow": {
             "featPrerequisites": {
@@ -11459,12 +11465,16 @@
         "Grown of Oak": {
             "featPrerequisites": {
                 "0": "ordine della foglia"
-            }
+            },
+            "description": "<p>Puoi far assumere alla tua pelle la robustezza lignea di un albero antico e far sì che il tuo famiglio segua il tuo esempio. Puoi lanciare @UUID[Compendium.pf2e.spells-srd.Item.YWrfKetOqDwVFut7]{resilienza della quercia} a volontà come incantesimo innato primevo con un grado di incantesimo inferiore al grado di incantesimo più alto che puoi lanciare. Questo incantesimo ha come bersaglio te e il tuo famiglio leshy se si trova entro 9 metri da te.</p>",
+            "name": "Robustezza della Quercia"
         },
         "In Tune": {
             "featPrerequisites": {
                 "0": "musa del virtuosismo"
-            }
+            },
+            "description": "<p>Sintonizzi la tua grande abilità nell'esibizione con un'altra persona, concedendole una piccola parte della tua abilità come se chiunque potesse farlo. Se la tua prossima azione consiste nel lanciare un incantesimo di composizione con un'area di emanazione, la sua area si espande da un alleato consenziente a tua scelta entro 18 metri invece che da te.</p>\n<p>Se hai @UUID[Compendium.pf2e.feats-srd.Item.ot0uyFtnC1Whz5bp]{Rivolgersi al Pubblico}, puoi far sì che il cono abbia origine dall'alleato.</p>",
+            "name": "In Sintonia"
         },
         "Instinctive Support": {
             "featPrerequisites": {
@@ -11571,12 +11581,16 @@
         "Forest Passage": {
             "featPrerequisites": {
                 "0": "ordine della foglia"
-            }
+            },
+            "description": "<p>Riesci sempre a trovare un sentiero, come se il fogliame si aprisse al tuo passaggio. Ignori qualsiasi terreno difficile causato da vegetali e funghi, come cespugli, liane e sottobosco.</p>",
+            "name": "Passaggio nella Foresta"
         },
         "Garland Spell": {
             "featPrerequisites": {
                 "0": "ordine della foglia"
-            }
+            },
+            "description": "<p>Se la tua prossima azione è Lanciare un Incantesimo con il tratto fungo o vegetale, una ghirlanda di piante cresce in un'@Template[burst|distance:10]{esplosione di 3 metri} nella gittata dell'incantesimo. Le piante sono terreno difficile e terreno pericoloso, ricoperte da spine o rampicanti velenosi (a scelta). Qualsiasi creatura che si muova in uno di questi quadretti o termini il suo turno in uno di essi subisce @Damage[(ternary(gte(@actor.level,20),4,ternary(gte(@actor.level,16),3,2)))d6[piercing]|options:area-damage] danni per le spine o @Damage[(ternary(gte(@actor.level,20),4,ternary(gte(@actor.level,16),3,2)))d6[poison]|options:area-damage]danni per le liane). Una creatura può subire questi danni una sola volta per turno. Tu e il tuo famiglio siete immuni a questi danni.</p>\n<p>Le piante durano per 1 minuto o finché non Lanci un altro Incantesimo Vegetale, a seconda di quale delle due condizioni si verifichi per prima.</p>\n<p>I danni aumentano a 3d6 al 16° livello e a 4d6 al 20° livello.</p>",
+            "name": "Incantesimo Vegetale"
         },
         "Reinforced Chassis": {
             "name": "Telaio Rinforzato"
@@ -13604,7 +13618,8 @@
             "name": "Sinfonia del Cuor Saldo"
         },
         "Hymn of Healing": {
-            "name": "Inno di Guarigione"
+            "name": "Inno di Guarigione",
+            "description": "<p>Impari l'incantesimo di composizione @UUID[Compendium.pf2e.spells-srd.Item.gSUQlTDYoLDGAsCP]{inno di guarigione}, che impregna la tua musica di ricche melodie in grado di aiutare i tuoi alleati a riprendersi dalle ferite.</p>"
         },
         "Anthropomorphic Shape": {
             "featPrerequisites": {
@@ -13614,7 +13629,8 @@
             "description": "<p>Pensare che gli umanoidi siano qualcosa di distinto dagli animali è una sciocchezza: assumere la loro forma richiede solo un po' di pratica in più. Aggiungi le forme elencate sotto @UUID[Compendium.pf2e.spells-srd.Item.2qGqa33E4GPUCbMV]{forma umanoide} alla tua lista di @UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]{forma selvaggia}.</p>"
         },
         "Initiate Warden": {
-            "name": "Guardiano Iniziato"
+            "name": "Guardiano Iniziato",
+            "description": "<p>Ti sei addestrato in una delle sette di ranger guardiani, che praticano un tipo specializzato di magia primeva. Ottiene un incantesimo da guardiano a tua scelta tra gli incantesimi da guardiano iniziali (o tra altri a cui hai accesso).</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.IWUe32Y5k2QFd7YQ]{arma gravitazionale}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.KIV2LqzS5KtqOItV]{guarire compagno}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.u2uSeH6YSbK1ajTy]{pelle magica}</p>\n<hr />\n<p><strong>Speciale</strong> Puoi selezionare questo talento più volte. Devi scegliere un incantesimo da guardiano iniziale diverso ogni volta.</p>"
         },
         "Masterful Warden": {
             "featPrerequisites": {
@@ -13721,6 +13737,48 @@
         "Divine Rebuttal": {
             "description": "<p><strong>Innesco</strong> Un tuo alleato sta per tirare un TS contro una capacità magica di una creatura a cui sei adiacente.</p>\n<p><strong>Requisiti</strong> Stai impugnando l'arma preferita della tua divinità.</p>\n<hr />\n<p>Resisti alle minacce magiche con la forza del corpo e la fermezza dello spirito. Puoi Colpire la creatura adiacente con l'arma preferita della tua divinità. Se sei sacro o sacrilego, il Colpo ottiene questo tratto. Se il Colpo va a segno, tutti gli alleati ottengono bonus di circostanza +2 al tiro salvezza innescante (o bonus di circostanza +3 in caso di colpo critico).</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{Effetto: Obiezione Divina}</p>",
             "name": "Obiezione Divina"
+        },
+        "Divine Wings": {
+            "description": "<p><strong>Frequenza</strong> una volta al giorno</p>\n<hr />\n<p>Con uno sforzo puoi evocare delle ali magiche sulla tua schiena, simili nell'aspetto a quelle dei tuoi progenitori extraplanari, che siano ali da angelo dalle piume eleganti o minacciose ali da pipistrello. Queste ali durano 10 minuti. Ottieni una Velocità di volare pari alla tua Velocità sul terreno quando manifesti le tue ali.</p>",
+            "name": "Ali Divine"
+        },
+        "Echoes in Stone": {
+            "description": "<p><strong>Requisiti</strong> Sei in piedi su una pietra o una superficie terrosa.</p>\n<hr />\n<p>Ti fermi un momento per sintonizzarti con la pietra intorno a te. Fino all'inizio del tuo turno successivo, ottieni un nuovo senso: percezione tellurica imprecisa, con una gittata di 6 metri.</p>",
+            "name": "Echi della Pietra"
+        },
+        "Emotional Push": {
+            "description": "<p><strong>Innesco</strong> Un nemico di cui sei consapevole fallisce il suo TS contro un incantesimo di emozione.</p>\n<hr />\n<p>Ti prepari a sfruttare l'improvviso cambiamento emotivo del tuo nemico: il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} contro il tuo prossimo attacco prima della fine del tuo turno successivo.</p>",
+            "name": "Spinta Emotiva"
+        },
+        "Eternal Wings (Nephilim)": {
+            "description": "<p>Le tue ali ora fanno parte permanente del tuo corpo. Ottieni gli effetti di @UUID[Compendium.pf2e.feats-srd.Item.vtCrMziYxNyj8kP7]{Ali Divine} in ogni momento, anziché solo una volta al giorno per 10 minuti.</p>",
+            "featPrerequisites": {
+                "0": "Ali Divine"
+            },
+            "name": "Ali Eterne (Nephilim)"
+        },
+        "Explosive Arrival": {
+            "description": "<p>La tua creatura evocata appare in una detonazione di rune arcane. Se la tua prossima azione è Lanciare un Incantesimo con il tratto evocazione, tutte le creature in un'@Template[emanation|distance:10]{emanazione di 3 metri} intorno alla creatura evocata subiscono 1d4 danni da fuoco per grado dell'incantesimo. Se la creatura evocata ha il tratto acido, elettricità, freddo, sonoro o spirito, puoi infliggere danni di quel tipo.</p>",
+            "name": "Arrivo Esplosivo"
+        },
+        "Fiendish Magic": {
+            "description": "<p>Possiedi la magia dei nefandi. Scegli due degli incantesimi seguenti: @UUID[Compendium.pf2e.spells-srd.Item.PRrZ7anETWPm90YY]{mascherare magia}, @UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]{vitalità falsa}, @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{invisibilità}, @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{vedere il non visto}, @UUID[Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9]{frantumare}, o @UUID[Compendium.pf2e.spells-srd.Item.Mkbq9xlAUxHUHyR2]{paranoia}. Puoi usare ognuno degli incantesimi scelti una volta al giorno come incantesimo innato divino di 2° grado.</p>\n<p>I figli della fossa di solito scelgono frantumare e paranoia, la progenie infernale invisibilità e mascherare magia, la progenie tetra vedere il non visto e vitalità falsa.</p>",
+            "featPrerequisites": {
+                "0": "Figlio dalla Fossa, Progenie Infernale, Progenie Tetra o un altro talento di lignaggio associato ai nefandi"
+            },
+            "name": "Magia Nefanda"
+        },
+        "Flinging Charge": {
+            "description": "<p>Lanci un'arma per distrarre l'avversario mentre accorci le distanze per iniziare all'assalto. Avanzi due volte; in qualsiasi momento durante questo movimento, puoi effettuare un Colpo a distanza con un'arma da lancio. Se il colpo va a segno, il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{impreparato} contro il prossimo attacco in mischia che sferri contro di lui prima della fine del turno in corso.</p>",
+            "name": "Lancio in Carica"
+        },
+        "Fortunate Relief": {
+            "description": "<p>Il tuo dio favorisce i tuoi tentativi di rimuovere afflizioni e condizioni. Quando lanci un incantesimo di guarigione che prova a contrastare un effetto, puoi tirare due volte la prova di contrasto e prendere il valore più alto.</p>",
+            "name": "Sollievo Fortunato"
+        },
+        "Impossible Volley": {
+            "description": "<p><strong>Requisiti</strong> Impugni un'arma a distanza con il tratto parabola e ricarica 0.</p><hr /><p>Scarichi una parabola contro tutti i nemici in un'area. Colpisci con penalità -2 ogni nemico entro un'@Template[burst|distance:10]{esplosione di raggio 3 metri} centrata in corrispondenza del limite di gittata di parabola della tua arma od oltre di esso. Tiri i danni una volta per tutti i bersagli.</p>\n<p>Ciascun attacco conta ai fini della penalità da attacchi multipli che, tuttavia, non aumenta finché non hai effettuato tutti gli attacchi.</p>",
+            "name": "Parabola Impossibile"
         }
     }
 }
