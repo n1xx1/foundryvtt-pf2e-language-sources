@@ -311,7 +311,7 @@
         },
         "Debilitating Strike": {
             "name": "Colpo Debilitante",
-            "description": "<p><strong>Innesco</strong> Il tuo Colpo va a segno contra una creatura impreparata e infligge danni.</p>\n<hr />\n<p>Applichi una delle seguenti debilitazioni, che dura fino alla fine del tuo turno successivo.</p>\n<ul>\n<li><strong>Debilitazione</strong> Il bersaglio subisce penalità di status -3 metri alle sue Velocità.</li>\n<li><strong>Debilitazione</strong> Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.yBTASi3FvnReAwHy]{Effetto: Colpo Debilitante}</p>"
+            "description": "<p><strong>Innesco</strong> Il tuo Colpo va a segno contro una creatura impreparata e infligge danni.</p><hr /><p>Applichi una delle seguenti debilitazioni, che dura fino alla fine del tuo turno successivo:</p><ul><li><strong>Debilitazione</strong> Il bersaglio subisce penalità di status -3 metri alle sue Velocità.</li><li><strong>Debilitazione</strong> Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{indebolito 1}.</li></ul>"
         },
         "Swim": {
             "name": "Nuotare",
@@ -929,6 +929,10 @@
         "Stitching Strike": {
             "description": "<p><strong>Frequenza</strong> una volta ogni 10 minuti</p>\n<hr />\n<p><strong>Effetto</strong> Il tuo famiglio si disfa in fibre magiche che avvolgono un nemico entro 9 metri e infliggono @Damage[(6+max(0,(ceil((@actor.level -8)/2)*2)))d6[slashing]] danni, con un TS @Check[reflex|basic] contro la tua CD di incantesimo. In caso di fallimento, il bersaglio viene @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round o finché non riesce a @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfuggire} contro la tua CD di incantesimo. Il famiglio si riformerà nel suo quadretto originale. Al 9° livello, e successivamente ogni 2 livelli, l'attacco infligge 2d6 danni aggiuntivi.</p>",
             "name": "Colpo di Sutura"
+        },
+        "Disable a Device": {
+            "description": "<p>Questa azione ti permette di disarmare una trappola o un altro congegno complesso. Spesso per disattivare un congegno occorrono più successi, a seconda di com'è costruito e quant'è complesso. Gli @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]{strumenti da scasso} sono utili, e a volte persino necessari, per Disattivare un Congegno, secondo quanto stabilito dal GM. Per disattivare alcuni congegni serve un grado di competenza in Furto superiore.</p>\n<p>Il risultato della tua prova di [[/act disable-device]]{Furto} determina i progressi da te compiuti.</p><hr /><p><strong>Successo Critico</strong> Disattivi il congegno, oppure totalizzi due successi ai fini di disattivare un congegno complesso. Non lasci tracce dei tuoi armeggiamenti, e in seguito puoi riattivare il congegno (se si tratta di un tipo di congegno che può essere riattivato).</p>\n<p><strong>Successo</strong> Disattivi il congegno, oppure totalizzi un successo ai fini di disattivare un congegno complesso.</p>\n<p><strong>Fallimento Critico</strong> Inneschi il congegno.</p>",
+            "name": "Disattivare un Congegno"
         }
     }
 }
