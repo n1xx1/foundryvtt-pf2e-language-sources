@@ -7867,11 +7867,11 @@
       },
       "ExplosiveAmmunition": {
         "Greater": {
-          "Text": "The missile explodes in a @Template[burst|distance:10], dealing @Damage[10d6[fire]] damage to each creature in the area (including the target). Each creature must attempt a @Check[reflex|dc:30|basic|name:Explosive Ammunition] save.",
+          "Text": "The missile explodes in a @Template[burst|distance:10], dealing @Damage[10d6[fire]|options:area-damage] damage to each creature in the area (including the target). Each creature must attempt a @Check[reflex|dc:30|basic|name:Explosive Ammunition|options:area-effect] save.",
           "Title": "Explosive Ammunition (Greater)"
         },
         "Normal": {
-          "Text": "The missile explodes in a @Template[burst|distance:10], dealing @Damage[6d6[fire]] damage to each creature in the area (including the target). Each creature must attempt a @Check[reflex|dc:25|basic|name:Explosive Ammunition] save.",
+          "Text": "The missile explodes in a @Template[burst|distance:10], dealing @Damage[6d6[fire]|options:area-damage] damage to each creature in the area (including the target). Each creature must attempt a @Check[reflex|dc:25|basic|name:Explosive Ammunition|options:area-effect] save.",
           "Title": "Explosive Ammunition"
         }
       },
@@ -12515,6 +12515,11 @@
           "Note": "Regardless of your roll, after the attack you're @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.",
           "NoteFailure": "The weapon misfires."
         },
+        "SwordAndPistol": {
+          "MeleeNote": "When you make a successful melee Strike against an enemy with your one-handed melee weapon, the next ranged Strike you make against that enemy with a one-handed firearm or one-handed crossbow doesn't trigger reactions that would trigger on a ranged attack but not a melee attack, such as Reactive Strike. This benefit is lost if not used by the end of your next turn.",
+          "RangedNote": "When you make a successful ranged Strike against an enemy within your reach with your one-handed firearm or one-handed crossbow, that enemy is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against your next melee attack with a one-handed melee weapon. This benefit is lost if not used by the end of your next turn.",
+          "RollOptionLabel": "Sword and Pistol — Enemy is within reach"
+        },
         "Way": {
           "Prompt": "Select a way.",
           "Spellshot": "Way of the Spellshot (Archetype)"
@@ -12772,6 +12777,9 @@
         "Trigger": "Your prey is within reach and attempts to move away from you."
       },
       "Kineticist": {
+        "ConsumePower": {
+          "ResistanceToggle": "Consume Power — Resistance"
+        },
         "DesertWind": {
           "DamageToggle": "Desert Wind — Extra damage"
         },
@@ -14522,6 +14530,12 @@
         "RuptureDamage": "If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free."
       },
       "Swashbuckler": {
+        "ElegantBuckler": {
+          "RollOptionLabel": "Elegant Buckler — Using a buckler"
+        },
+        "ExtravagantParry": {
+          "Prompt": "Do you have a free hand or wield a parry weapon?"
+        },
         "Finisher": {
           "Basic": "Basic",
           "Bleeding": "Bleeding",
@@ -14548,7 +14562,7 @@
           "Note": "On a successful Feint, the target take a -2 circumstance penalty to attack rolls against you instead of any other effects that you would gain when you Feint. @UUID[Compendium.pf2e.feat-effects.Item.rflbFzV44Fd6aBLE]{Effect: Goading Feint}"
         },
         "Panache": "You gain @UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]{Panache}.",
-        "PanacheFailure": "You gain panache until the end of your next turn @UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]{Effect: Panache}",
+        "PanacheFailure": "You gain panache until the end of your next turn @UUID[Compendium.pf2e.feat-effects.Item.paKKHPds77fq5VTH]{Effect: Panache (Temporary)}",
         "Style": {
           "Prompt": "Select a style."
         },
