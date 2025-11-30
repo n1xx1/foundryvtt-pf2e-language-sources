@@ -146,6 +146,10 @@ export interface EntryItemSpell extends BaseEntry {
     cost: { value: string };
     area: { details: string };
     heightening?: SpellHeighteningFixed | SpellHeighteningInterval;
+    ritual: {
+      primary: { check: string };
+      secondary: { checks: string };
+    } | null;
   };
 }
 

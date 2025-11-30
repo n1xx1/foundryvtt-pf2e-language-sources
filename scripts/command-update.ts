@@ -102,6 +102,13 @@ async function handleItem(
           }
         }
       }
+
+      if (entry.system.ritual?.primary.check) {
+        el.spellRitualPrimaryCheck = entry.system.ritual.primary.check;
+      }
+      if (entry.system.ritual?.secondary.checks) {
+        el.spellRitualSecondaryChecks = entry.system.ritual.secondary.checks;
+      }
     }
     if (entry.type === "feat") {
       const prerequisites = entry.system.prerequisites?.value ?? [];
