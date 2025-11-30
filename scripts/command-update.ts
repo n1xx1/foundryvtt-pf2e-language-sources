@@ -19,7 +19,8 @@ interface Compendium {
 }
 
 const rangeRegex = /^(?:touch|planetary|[\d.,]+ (?:feet|miles?))$/;
-const timeRegex = /^(?:1|2|3|reaction|free|[\d.,]+ (?:minutes?|days?|hours?))$/;
+const timeRegex =
+  /^(?:0|1|2|3|1 or 2|1 to 3|2 or 3|2 rounds|reaction|free|[\d.,]+ (?:minutes?|days?|hours?))$/;
 
 async function setupOut() {
   await mkdir("tmp", { recursive: true }).catch(() => Promise.resolve());
