@@ -911,7 +911,7 @@
             "name": "Riposizionare"
         },
         "Shed Spirit": {
-            "description": "<p><strong>Frequenza</strong> una volta ogni 10 minuti</p>\n<hr />\n<p><strong>Effetto</strong> Lo spirito del tuo famiglio esce dal suo corpo, lasciandosi dietro un guscio vuoto, prima di volare verso un nemico entro 6 metri e infliggere @Damage[(6+max(0,(ceil((@actor.level -8)/2)*2)))d6[spirit]] danni, con un TS @Check[will|basic] contro la tua CD di incantesimo. Se il famiglio ha inflitto danni, vola verso un alleato entro 9 metri dal nemico, ripristinandogli Punti Ferita pari alla metà dei danni inflitti. Il famiglio si riformerà poi nel suo quadretto originale. Al 9° livello, e successivamente ogni 2 livelli, l'attacco infligge 2d6 danni aggiuntivi.</p>",
+            "description": "<p><strong>Frequenza</strong> una volta ogni 10 minuti</p>\n<hr />\n<p><strong>Effetto</strong> Lo spirito del tuo famiglio esce dal suo corpo, lasciandosi dietro un guscio vuoto, prima di volare verso un nemico entro 6 metri e infliggere @Damage[(6+max(0,(ceil((@actor.level -8)/2)*2)))d6[spirit]] danni, con un TS @Check[will|dc:@actor.system.attributes.classOrSpellDC.value|basic] contro la tua CD di incantesimo. Se il famiglio ha inflitto danni, vola verso un alleato entro 9 metri dal nemico, ripristinandogli Punti Ferita pari alla metà dei danni inflitti. Il famiglio si riformerà poi nel suo quadretto originale. Al 9° livello, e successivamente ogni 2 livelli, l'attacco infligge 2d6 danni aggiuntivi.</p>",
             "name": "Liberare Spirito"
         },
         "Patron's Claim": {
