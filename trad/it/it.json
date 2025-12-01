@@ -627,6 +627,9 @@
                 "ExchangeItems": {
                     "Title": "Scambia Oggetti",
                     "Description": "{actor} e {other} hanno scambiato oggetti."
+                },
+                "Reload": {
+                    "Title": "Ricarica"
                 }
             },
             "MakeAnImpression": {
@@ -1167,7 +1170,8 @@
                     "Hint": "Applica automaticamente la condizione ingombrato alle creature che portano più dei loro rispettivi limiti."
                 },
                 "ReachEnforcement": {
-                    "Hint": "Fai rispettare la portata quando i giocatori provano a interagire con determinati oggetti nel canvas."
+                    "Hint": "Fai rispettare la portata quando i giocatori provano a interagire con determinati oggetti nel canvas.",
+                    "loot": "Bottino"
                 }
             },
             "Metagame": {
@@ -1834,6 +1838,21 @@
             },
             "earthbinding": {
                 "Name": "Legante a Terra"
+            },
+            "nightmare": {
+                "Name": "Incubo"
+            },
+            "called": {
+                "Name": "Richiamato"
+            },
+            "swarming": {
+                "Name": "Sciamante"
+            },
+            "merciful": {
+                "Name": "Pietosa"
+            },
+            "shockwave": {
+                "Name": "Onda d'Urto"
             }
         },
         "Action": {
@@ -2419,6 +2438,20 @@
                     "criticalSuccess": "<strong>Effetto</strong> La bomba infligge anche @Damage[(1[splash])[mental]]{1 danno da spargimento mentale} e il bersaglio deve superare una @Check[flat|dc:5] prima di effettuare azioni con il tratto concentrazione. Questo dura 1 minuto.",
                     "success": "<strong>Effetto</strong> La bomba infligge anche @Damage[(1[splash])[mental]]{1 danno da spargimento mentale} e il bersaglio deve superare una @Check[flat|dc:5] prima di effettuare azioni con il tratto concentrazione. Questo dura fino alla fine del suo turno successivo."
                 }
+            },
+            "RedpitchBomb": {
+                "Greater": {
+                    "success": "<strong>Effetto</strong> La bomba infligge anche @Damage[3d4[persistent,fire]]{3d4 danni da fuoco persistente} e @Damage[(3[splash])[fire]]{3 danni da fuoco da spargimento}."
+                },
+                "Moderate": {
+                    "success": "<strong>Effetto</strong> La bomba infligge anche @Damage[2d4[persistent,fire]]{2d4 danni da fuoco persistente} e @Damage[(2[splash])[fire]]{2 danni da fuoco da spargimento}."
+                },
+                "Lesser": {
+                    "success": "<strong>Effetto</strong> La bomba infligge anche @Damage[1d4[persistent,fire]]{1d4 danni da fuoco persistente} e @Damage[(1[splash])[fire]]{1 danno da fuoco da spargimento}."
+                },
+                "Major": {
+                    "success": "<strong>Effetto</strong> La bomba infligge anche @Damage[4d4[persistent,fire]]{4d4 danni da fuoco persistente} e @Damage[(4[splash])[fire]]{4 danni da fuoco da spargimento}."
+                }
             }
         },
         "Item": {
@@ -2492,10 +2525,18 @@
                     "expend": {
                         "label": "Spesa",
                         "hint": "Questo indica quante munizioni sono consumate con ogni Colpo a distanza che effettui con l'arma. Altre abilità potrebbero citare Spesa come numero di munizioni richieste per completare l'azione."
+                    },
+                    "ammo": {
+                        "capacity": {
+                            "label": "Capienza"
+                        }
                     }
                 },
                 "Tracking": "Tracciante",
-                "GradeOption": "{grade} (+{tracking}; {dice} dadi di danno)"
+                "GradeOption": "{grade} (+{tracking}; {dice} dadi di danno)",
+                "Reloader": {
+                    "Reload1": "Ricarica"
+                }
             },
             "CreationDialog": {
                 "Categories": {
@@ -3542,6 +3583,32 @@
                 "Category": {
                     "upgrade": "Miglioramento"
                 }
+            },
+            "Ammo": {
+                "Base": {
+                    "blowgun-darts": "Dardi per Cerbottana",
+                    "bolts": "Quadrelli per Balestra",
+                    "rounds": "Round",
+                    "sling-bullets": "Proiettili per Fionda",
+                    "spray-pellets": "Palline a Getto",
+                    "wooden-taws": "Biglie di Legno",
+                    "8-round-magazine": "Caricatore da 8 Pallini",
+                    "arrows": "Frecce"
+                },
+                "Groups": {
+                    "Weapons": "Armi",
+                    "General": "Generico"
+                }
+            },
+            "Treasure": {
+                "FIELDS": {
+                    "category": {
+                        "label": "Categoria",
+                        "choices": {
+                            "coin": "Moneta"
+                        }
+                    }
+                }
             }
         },
         "Actor": {
@@ -3681,7 +3748,7 @@
                     "tengu": "Tengu",
                     "thalassic": "Talassico",
                     "varki": "Varki",
-                    "vishkanyan": "Vishkanyano",
+                    "vishkanyan": "Vishkanya",
                     "vudrani": "Vudrano",
                     "wildsong": "Druidico",
                     "wyrwood": "Wyrwood",
@@ -3710,7 +3777,8 @@
                     "muan": "Muan",
                     "orvian": "Orviano",
                     "talican": "Talicano",
-                    "aishmayar": "Aishmayar"
+                    "aishmayar": "Aishmayar",
+                    "kholo": "Gnoll"
                 },
                 "Shield": {
                     "ACBonus": "Bonus CA Scudo (Quando Alzato)",
@@ -3890,7 +3958,8 @@
                     "DivineIntercessions": "Intercessioni Divine",
                     "GeneralHeader": "Talenti Generali",
                     "SkillHeader": "Talenti di Abilità"
-                }
+                },
+                "EmptyLabel": "Vuoto"
             },
             "Hazard": {
                 "TitleEdit": "{name} (Modifica)",
@@ -4723,7 +4792,17 @@
                     "Spider": "Ragno",
                     "Human": "Umano",
                     "Orc": "Orco",
-                    "Tiger": "Tigre"
+                    "Tiger": "Tigre",
+                    "Shark": "Squalo",
+                    "Owlbear": "Orsogufo",
+                    "Unicorn": "Unicorno",
+                    "Ghost": "Fantasma",
+                    "Plant": "Vegetale",
+                    "Ape": "Scimmia",
+                    "Fungus": "Fungo",
+                    "Wasp": "Vespa",
+                    "Skeleton": "Scheletro",
+                    "Zombie": "Zombie"
                 },
                 "Label": "Forma Attuale",
                 "AlterationNotes": {
@@ -4798,6 +4877,55 @@
             },
             "SkinShifter": {
                 "AnimalForm": "Forma di Animale"
+            },
+            "AsoBerang": {
+                "PhantomFlames": {
+                    "Fire": "Fuoco",
+                    "Spirit": "Spirito",
+                    "None": "Nessuno"
+                }
+            },
+            "GauChoRong": {
+                "SubsumedTrait": {
+                    "Amphibious": "anfibio",
+                    "Animal": "animale",
+                    "Aquatic": "Acquatico",
+                    "Humanoid": "Umanoide"
+                }
+            },
+            "Puppet": {
+                "Fiend": {
+                    "Label": "Nefando"
+                },
+                "Undead": {
+                    "Label": "Non-Morto (Comune)"
+                },
+                "Poisoner": {
+                    "Label": "Avvelenatore"
+                }
+            },
+            "QuantiumGolem": {
+                "Type": {
+                    "Emerald": "Smeraldo"
+                }
+            },
+            "AeonStoneSwarm": {
+                "AeonResonance": {
+                    "Defensive": "Difensiva"
+                }
+            },
+            "NopperaBo": {
+                "Impersonator": {
+                    "AttackOfOpportunity": "Attacco di Opportunità",
+                    "SneakAttack": "Attacco Furtivo"
+                }
+            },
+            "Nindoru": {
+                "Meokdan": {
+                    "BoneClub": {
+                        "New": "Nuovo"
+                    }
+                }
             }
         },
         "Encounter": {
@@ -7417,7 +7545,13 @@
                 "StoneBall": "Palla di Pietra",
                 "Seed": "Seme",
                 "SacredArmament": "Armamento Sacro",
-                "LittleClaw": "Piccolo Artiglio"
+                "LittleClaw": "Piccolo Artiglio",
+                "Horns": "Corna",
+                "Root": "Radice",
+                "BigClaw": "grossa chela",
+                "Fist": "Pugno",
+                "HurledDebris": "Detriti Lanciati",
+                "SpiritTouch": "Tocco Spirituale"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -7431,14 +7565,21 @@
                 "SpiderWebNote": "Un successo di un attacco di Ragnatela intralcia il bersaglio per 1 round, ma non infligge danni"
             },
             "OozeForm": {
-                "GelatinousCubeNote": "Una creatura colpita da un Colpo della tua faccia del cubo deve superare un tiro salvezza su @Check[fortitude|against:spell|traits:incapacitation] contro la tua CD di incantesimo o essere @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordita 1} (o @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzata} per 1 round con un fallimento critico); questo tiro salvezza ha il tratto incapacitazione."
+                "GelatinousCubeNote": "Una creatura colpita da un Colpo della tua faccia del cubo deve superare un tiro salvezza su @Check[fortitude|against:spell|traits:incapacitation] contro la tua CD di incantesimo o essere @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{stordita 1} (o @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{paralizzata} per 1 round con un fallimento critico); questo tiro salvezza ha il tratto incapacitazione.",
+                "ChoiceSet": {
+                    "BlackPudding": "Protoplasma Nero",
+                    "GrayOoze": "Melma Vischiosa",
+                    "GelatinousCube": "Cubo Gelatinoso",
+                    "OchreJelly": "Gelatina Ocra"
+                }
             },
             "AberrantForm": {
                 "GugSqueezeNote": "Le tue articolazioni multiple ti consentono di insinuarti negli spazi stretti come se fossi una creatura Media.",
                 "ChoiceSet": {
                     "Chuul": "Chuul",
                     "Gogiteth": "Gogiteth",
-                    "Gug": "Gug"
+                    "Gug": "Gug",
+                    "Otyugh": "Otyugh"
                 }
             },
             "AngelForm": {
@@ -7446,7 +7587,9 @@
             },
             "CosmicForm": {
                 "MoonNote": "Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{sbigottito 2} per 1 round.",
-                "SunNote": "Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round."
+                "SunNote": "Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliato} per 1 round.",
+                "Moon": "Luna",
+                "Sun": "Sole"
             },
             "ElementEmbodied": {
                 "WaterPushPullNote": "Più @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Spintonare} o Tirare 3 metri",
@@ -7456,11 +7599,28 @@
                 "ShroudOfFlame": "Strato di Fiamme"
             },
             "WormForm": {
-                "PurpleWorm": "Verme Purpureo"
+                "PurpleWorm": "Verme Purpureo",
+                "Hybrid": "Ibrido"
             },
             "NatureIncarnate": {
                 "GreenMan": "Uomo Verde",
                 "Kaiju": "Kajiu"
+            },
+            "DevilForm": {
+                "ChoiceSet": {
+                    "Levaloch": "Levaloch Diavolo Guerrafondaio"
+                }
+            },
+            "FeyForm": {
+                "ChoiceSet": {
+                    "Dryad": "Driade",
+                    "Unicorn": "Unicorno"
+                }
+            },
+            "DemonForm": {
+                "ChoiceSet": {
+                    "Abrikandilu": "Abrikandilu"
+                }
             }
         },
         "RuleElement": {
@@ -8035,7 +8195,10 @@
                 "DieSize": "Seleziona la dimensione del dado.",
                 "SkillTrained": "Seleziona una abilità addestrata.",
                 "SkillUntrained": "Seleziona un'abilità senza addestramento.",
-                "Penalty": "Seleziona una penalità."
+                "Penalty": "Seleziona una penalità.",
+                "MovementType": "Seleziona un tipo di movimento.",
+                "Benefit": "Seleziona un beneficio.",
+                "Bonus": "Seleziona un bonus."
             },
             "SneakAttack": "Attacco Furtivo",
             "SpecialtyCrafting": {
@@ -8078,7 +8241,45 @@
                 "EffectType": "{type} ({substitution})"
             },
             "Thaumaturge": {
-                "TalismanEsoterica": "Talismani Esoterici"
+                "TalismanEsoterica": "Talismani Esoterici",
+                "Implement": {
+                    "Weapon": {
+                        "Label": "Arma"
+                    },
+                    "Shield": {
+                        "Label": "Scudo"
+                    },
+                    "Lantern": {
+                        "Label": "Lanterna"
+                    },
+                    "Adept": {
+                        "Label": "Esperto di Strumenti"
+                    },
+                    "Tome": {
+                        "Label": "Tomo"
+                    },
+                    "Wand": {
+                        "Label": "Bacchetta"
+                    },
+                    "Paragon": {
+                        "Label": "Paradigma degli Strumenti"
+                    },
+                    "Amulet": {
+                        "Label": "Amuleto"
+                    },
+                    "Bell": {
+                        "Label": "Campana"
+                    },
+                    "Chalice": {
+                        "Label": "Calice"
+                    },
+                    "Mirror": {
+                        "Label": "Specchio"
+                    },
+                    "Regalia": {
+                        "Label": "Insegne"
+                    }
+                }
             },
             "TwoHanded": {
                 "BastardSword": "Usa la Spada Bastarda a Due Mani",
@@ -8092,7 +8293,19 @@
             "Ranger": {
                 "HuntersEdge": {
                     "Prompt": "Seleziona un vantaggio del cacciatore.",
-                    "FirstAttack": "Primo attacco sulla preda designata del round"
+                    "FirstAttack": "Primo attacco sulla preda designata del round",
+                    "Flurry": {
+                        "Label": "Raffica"
+                    },
+                    "Outwit": {
+                        "Label": "Astuzia Superiore"
+                    },
+                    "Precision": {
+                        "Label": "Precisione"
+                    }
+                },
+                "MasterfulHunter": {
+                    "Label": "Cacciatore Superbo"
                 }
             },
             "Ratfolk": {
@@ -8211,7 +8424,9 @@
                         "Genie": "Linea di Sangue Genio",
                         "Shadow": "Linea di Sangue Ombra",
                         "Nymph": "Linea di Sangue Ninfa",
-                        "Psychopomp": "Linea di Sangue Psicopompo"
+                        "Psychopomp": "Linea di Sangue Psicopompo",
+                        "Draconic": "Pelle di Scaglie",
+                        "Angelic": "Aura Divina"
                     }
                 },
                 "SecondBloodMagic": "Seconda Magia del Sangue",
@@ -8326,6 +8541,15 @@
                             "Title": "Famiglio della Notte Perseguitatrice",
                             "Description": "Quando Lanci o Mantieni una fattura e il tuo famiglio è adiacente a un nemico che è @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato}, @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{nascosto} o non individuato, il nemico diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 1}."
                         }
+                    },
+                    "Theme": {
+                        "SpinnerOfThreads": "La Filatrice",
+                        "FaithsFlamekeeper": "Custode della Fiamma della Fede",
+                        "SilenceInSnow": "Silenzio nella Neve",
+                        "StarlessShadow": "Notte senza Stelle",
+                        "TheInscribedOne": "L'Inscritto",
+                        "TheResentment": "Il Risentimento",
+                        "WildingSteward": "Attendente Selvatico"
                     }
                 },
                 "WitchsArmaments": {
@@ -8339,6 +8563,9 @@
                 "WildWitchsArmaments": {
                     "EldritchNails": {
                         "RollOptionLabel": "Colpisci lo stesso nemico con due Colpi di unghie consecutivi"
+                    },
+                    "LivingHair": {
+                        "StrikeLabel": "Calamo"
                     }
                 }
             },
@@ -8399,6 +8626,10 @@
                     "MinorToModerate": "Se lanci un incantesimo di rivelazione mentre la tua maledizione minore è in atto, passi all'effetto della maledizione modera subito dopo aver finito di Lanciare l'Incantesimo.",
                     "Overwhelmed": "Subito dopo aver lanciato un incantesimo di rivelazione vieni sopraffatto. Mentre sei sopraffatto non puoi Lanciare o Mantenere incantesimi di rivelazione",
                     "MajorToExtreme": "Quando lanci un incantesimo di rivelazione mentre sei affetto dalla tua maledizione maggiore, questa si intensifica fino a raggiungere un effetto estremo invece di sopraffarti. Tutti i misteri condividono gli stessi effetti per la loro maledizione estrema. Quando sei affetto dalla tua maledizione estrema, diventi @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{condannato 2} (o aumenti la tua condizione di condannato di 2, se eri già condannato). Una volta ogni 10 minuti, quando fallisci un tiro per colpire, una prova di abilità o di Percezione o un tiro salvezza, puoi ripetere il tiro e usare il secondo risultato. Ripetere il tiro ha il tratto fortuna e non richiede di spendere un'azione, il che significa che puoi ritirare anche se non puoi agire."
+                },
+                "NudgeTheScales": {
+                    "Life": "Vita",
+                    "Death": "Morte"
                 }
             },
             "Aid": {
@@ -8561,6 +8792,9 @@
                 },
                 "Elemental": {
                     "ElementalEvolutionLabel": "Danno Furia Elementale"
+                },
+                "OversizedThrow": {
+                    "Label": "Proiettile Gigantesco"
                 }
             },
             "Bard": {
@@ -8782,6 +9016,23 @@
                 },
                 "ZuhrasGloves": {
                     "WallOfMetalLabel": "Muro di metallo attivo"
+                },
+                "DruidsCrown": {
+                    "LeavesLabel": "Foglie"
+                },
+                "FuryCocktail": {
+                    "DoubleLabel": "Doppio"
+                },
+                "Sparkler": {
+                    "StrikeLabel": "Scintillatore"
+                },
+                "Bomb": {
+                    "Type": {
+                        "Lesser": "Inferiore",
+                        "Major": "Maggiore",
+                        "Moderate": "Moderata",
+                        "Greater": "Superiore"
+                    }
                 }
             },
             "Fetchling": {
@@ -9533,6 +9784,14 @@
                 },
                 "LightningSwap": {
                     "Fighter": "Ti sei allenato a passare rapidamente da uno stile di combattimento all’altro, cambiando equipaggiamento nel processo. Interagisci per riporre qualsiasi numero di oggetti dalle tue mani, poi estrai fino a due armi o un’arma e uno scudo."
+                },
+                "FeyInfluence": {
+                    "Gremlin": "Gremlin",
+                    "Unicorn": "Unicorno",
+                    "Dryad": "Driade"
+                },
+                "BurnIt": {
+                    "Label": "Brucialo!"
                 }
             },
             "RelicGift": {
@@ -9808,6 +10067,9 @@
                     "Mountain": "Ottieni resistenza ai danni fisici (fatta eccezione per l'adamantio) pari al livello dell'incantesimo.",
                     "Plains": "Ottieni punti ferita temporanei pari al livello dell'incantesimo per 1 round.",
                     "Sky": "Puoi Volare fino a 3 metri. Se ti trovi in aria alla fine del tuo turno e non hai Velocità di volare, cadi."
+                },
+                "Dedication": {
+                    "Label": "Dedizione del Geomante"
                 }
             },
             "Chronoskimmer": {
@@ -10045,7 +10307,13 @@
                 "DousingSpell": "Inzuppi d’acqua il bersaglio dell’incantesimo. Se il bersaglio ha danni persistenti da acido o da fuoco, la CD per porre fine a queste condizioni si riduce a 10 e la creatura può effettuare una prova semplice per porre fine immediatamente a questi tipi di danni persistenti. L’incantesimo ottiene il tratto acqua (che gli fa infliggere danni aggiuntivi alle creature con debolezza all’acqua).",
                 "WindTossedSpell": "Ignori la condizione @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{occultato} del bersaglio e l’eventuale copertura che ha nei tuoi confronti. L’incantesimo ottiene il tratto aria.",
                 "RockslideSpell": "Un numero di quadretti di 1,5 metri nell’area pari al grado dell’incantesimo diventa terreno difficile per 1 round. Questi quadretti devono essere sul terreno e l’intera area di terreno difficile deve essere contigua. L’incantesimo ottiene il tratto terra.",
-                "BurningSpell": "L’incantesimo infligge @Damage[(@item.rank)[persistent,fire]]{$1 danni da fuoco persistenti} aggiuntivi, oltre ai suoi altri effetti. Questo non ha effetto se l’incantesimo infligge già danni da fuoco persistenti. L’incantesimo ottiene il tratto fuoco"
+                "BurningSpell": "L’incantesimo infligge @Damage[(@item.rank)[persistent,fire]]{$1 danni da fuoco persistenti} aggiuntivi, oltre ai suoi altri effetti. Questo non ha effetto se l’incantesimo infligge già danni da fuoco persistenti. L’incantesimo ottiene il tratto fuoco",
+                "CodexofDestructionAndRenewal": {
+                    "RollOptionLabel": {
+                        "Healing": "Guarigione",
+                        "Damage": "Danno"
+                    }
+                }
             },
             "CrystalLuminescence": {
                 "Normal": "Normale",
@@ -10309,14 +10577,24 @@
                 },
                 "KineticGate": {
                     "Prompt": {
-                        "AuraSize": "Seleziona un raggio per la tua aura cinetica."
+                        "AuraSize": "Seleziona un raggio per la tua aura cinetica.",
+                        "Element": "Seleziona un elemento."
                     },
                     "DualGate": {
                         "Rename": "Cancello Cinetico ({elementOne}, {elementTwo})"
                     },
-                    "AllowedDropsLabel": "Talento di classe del cineta"
+                    "AllowedDropsLabel": "Talento di classe del cineta",
+                    "Junction": {
+                        "Skill": "Abilità",
+                        "Impulse": "Impulso",
+                        "Aura": "Aura",
+                        "ImpulseJunction": "Giunzione d'Impulso"
+                    }
                 },
-                "GateAttenuator": "Attenuatore di Cancelli"
+                "GateAttenuator": "Attenuatore di Cancelli",
+                "Overflow": {
+                    "Title": "Esubero"
+                }
             },
             "Modifier": {
                 "Penalty": "Penalità",
@@ -10353,6 +10631,72 @@
             "WeaponInfusion": {
                 "Melee": "Infusione in Mischia",
                 "Ranged": "Infusione a Distanza"
+            },
+            "ObjectMemory": "Ricordi dell'Oggetto",
+            "SeasonOfGhosts": {
+                "Background": {
+                    "Bitter": "Fiele",
+                    "Family": "Famiglia"
+                }
+            },
+            "ConcertFrog": {
+                "Conduct": {
+                    "Red": "Rosso",
+                    "Blue": "Blu",
+                    "Yellow": "Giallo"
+                }
+            },
+            "BeastLord": {
+                "CreatureOfMyth": {
+                    "EnergyAegis": {
+                        "Label": "Egidia di Energia"
+                    }
+                }
+            },
+            "Surki": {
+                "LanternSurki": {
+                    "ToggleLabel": "Emana Luce"
+                }
+            },
+            "Yaoguai": {
+                "LegendaryMonster": {
+                    "Options": {
+                        "Fly": "Velocità di Volare"
+                    }
+                }
+            },
+            "StarlitSentinel": {
+                "Constellation": {
+                    "Ogre": "Orco"
+                }
+            },
+            "BodyParts": {
+                "Legs": "Zampe"
+            },
+            "Seasons": {
+                "Fall": "Caduta"
+            },
+            "MusicalShift": {
+                "Double": {
+                    "Label": "Doppio"
+                },
+                "Triple": {
+                    "Label": "Triplo"
+                },
+                "Natural": {
+                    "Label": "Naturale"
+                }
+            },
+            "RevealingLight": {
+                "Label": "Luce Rivelatrice"
+            },
+            "Shisk": {
+                "Quills": "aculei"
+            },
+            "Runelord": {
+                "School": {
+                    "Pride": "Orgoglio"
+                }
             }
         },
         "LevelRange": "Livelli {minLevel} — {level}",
@@ -10554,6 +10898,20 @@
                 "Normal": {
                     "Title": "Colpo Meteoritico",
                     "Text": "Oltre ai normali danni dell'arma, il colpo meteoritico infligge danni da fuoco e il suolo nell'area diventa terreno difficile. La munizione infligge @Damage[3d6[fire]]{3d6 danni da fuoco} in un'@Template[emanation|distance:5] attorno al bersaglio (TS @Check[reflex|dc:23|basic|name:Colpo Meteoritico])."
+                }
+            },
+            "OozeAmmunition": {
+                "Greater": {
+                    "Title": "Munizione Melmosa Superiore"
+                },
+                "Moderate": {
+                    "Title": "Munizione Melmosa Moderata"
+                },
+                "Lesser": {
+                    "Title": "Munizione Melmosa Inferiore"
+                },
+                "Major": {
+                    "Title": "Munizione Melmosa Maggiore"
                 }
             }
         },
@@ -10824,7 +11182,8 @@
                 "IncorporealCreatures": "creature incorporee",
                 "MagicalWood": "legno magico",
                 "PhysicalWeaponsOnly": "fisico (solo armi)",
-                "ImpulseFireFrom": "impulso di fuoco da {origin}"
+                "ImpulseFireFrom": "impulso di fuoco da {origin}",
+                "Treerazer": "Fitànatos"
             }
         },
         "Color": {
@@ -11223,7 +11582,8 @@
             "Button": {
                 "purchase": "Acquista",
                 "move": "Trasferisci",
-                "gift": "Dai"
+                "gift": "Dai",
+                "credits": "Trasferisci"
             },
             "Prompt": {
                 "gift": "Vuoi dare quest'oggetto a {actor}?",
@@ -11281,7 +11641,86 @@
         "TraitResilient1": "Resiliente +1",
         "TraitDescriptionSkulk": "Gli skulk sono una famiglia di umanoidi la cui pelle può cambiare colore per mimetizzarsi meglio.",
         "TraitDescriptionSpriggan": "Gli spriggan, simili agli gnomi, tendono a essere malvagi e possono crescere di taglia fino a sembrare dei giganti.",
-        "TraitDescriptionTitan": "I titani sono creature primordiali enormi dal potere quasi divino che hanno preceduto le razze mortali."
+        "TraitDescriptionTitan": "I titani sono creature primordiali enormi dal potere quasi divino che hanno preceduto le razze mortali.",
+        "RULES": {
+            "Note": {
+                "FIELDS": {
+                    "outcome": {
+                        "choices": {
+                            "success": "Successo",
+                            "failure": "Fallimento",
+                            "criticalFailure": "Fallimento Critico",
+                            "criticalSuccess": "Successo Critico"
+                        }
+                    },
+                    "title": {
+                        "label": "Titolo"
+                    }
+                }
+            },
+            "Common": {
+                "FIELDS": {
+                    "mode": {
+                        "label": "Modalità",
+                        "choices": {
+                            "override": "Sovrascrivi",
+                            "remove": "Rimuovi",
+                            "upgrade": "Miglioramento",
+                            "add": "Aggiungi"
+                        }
+                    },
+                    "predicate": {
+                        "label": "Predicato"
+                    },
+                    "slug": {
+                        "label": "Slug"
+                    },
+                    "value": {
+                        "label": "Valore"
+                    },
+                    "key": {
+                        "label": "Chiave"
+                    },
+                    "label": {
+                        "label": "Etichetta"
+                    },
+                    "selector": {
+                        "label": "Selettore"
+                    }
+                }
+            },
+            "DamageAlteration": {
+                "FIELDS": {
+                    "property": {
+                        "choices": {
+                            "damage-type": "Tipo di Danno",
+                            "dice-number": "Numero Dadi"
+                        }
+                    }
+                }
+            }
+        },
+        "TraitKaiju": "Kajiu",
+        "TraitAthamaru": "Locathah",
+        "TraitGuardian": "Guardiano",
+        "ArmorPropertyRuneSpellwatch": "Spezzaincantesimo",
+        "TraitShobhad": "Shobhad",
+        "TraitShoony": "Shoony",
+        "SpecificLore": {
+            "Warfare": "Sapienza Bellica"
+        },
+        "TraitTraining": "Addestramento",
+        "TraitBlight": "Inardire",
+        "TraitSpellDeflection": "Deviare gli Incantesimi",
+        "CurrencyLabel": "Monete",
+        "Currency": {
+            "cp": "Rame",
+            "gp": "Oro",
+            "sp": "Argento"
+        },
+        "TraitOther": "Altro",
+        "TraitGirtablilu": "Girtablilu",
+        "TraitNightmare": "Incubo"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
@@ -11341,7 +11780,8 @@
             "spellcastingEntry": "Voce Lancio Incantesimi",
             "armor": "Armatura",
             "melee": "Attacco PNG",
-            "shield": "Scudo"
+            "shield": "Scudo",
+            "ammo": "Proiettili"
         },
         "Actor": {
             "character": "Personaggio Giocante",
@@ -11353,14 +11793,130 @@
             "eidolon": "Eidolon",
             "hazard": "Pericolo",
             "loot": "Bottino"
+        },
+        "RegionBehavior": {
+            "modifyMovementCost": "Terreno Difficile"
         }
     },
     "PF2E.Kingmaker": {
         "Kingdom": {
-            "InvestedBonus": "Bonus di Status a {ability}"
+            "InvestedBonus": "Bonus di Status a {ability}",
+            "LeadershipRole": {
+                "general": "Generico",
+                "emissary": "Emissario"
+            },
+            "Tabs": {
+                "Main": "Principale",
+                "Features": "Privilegi"
+            },
+            "Invested": "Investito",
+            "FeatSlot": {
+                "Bonus": "Talenti Bonus"
+            },
+            "Commodity": {
+                "stone": "Pietrifica"
+            },
+            "Ruin": {
+                "decay": "Decomposizione"
+            },
+            "Size": "Taglia"
+        },
+        "Army": {
+            "Strikes": {
+                "Label": "Colpo",
+                "proficiency": "Competenza",
+                "melee": "Mischia",
+                "ranged": "A Distanza"
+            },
+            "Save": {
+                "morale": "Morale"
+            },
+            "SendToChat": "Invia sulla Chat",
+            "Gear": {
+                "Armor": {
+                    "rank1": {
+                        "Name": "Armatura Magica"
+                    }
+                },
+                "LevelLabel": "Livello {level}",
+                "Label": "Equipaggiamento",
+                "ItemLevel": "Oggetto {livello}"
+            },
+            "Label": "Esercito",
+            "Potions": {
+                "Label": "Pozioni"
+            },
+            "Armor": "Armatura",
+            "Alliance": {
+                "Kingdom": "Regno"
+            },
+            "Condition": {
+                "concealed": {
+                    "name": "Occultato"
+                }
+            },
+            "Ammunition": "Proiettili",
+            "Description": "Descrizione",
+            "Potency": "Potenziamento"
+        },
+        "KingdomBuilder": {
+            "BoostsLabel": "Aumenti di Caratteristica",
+            "AssignBoostsHeader": "Assegna i tuoi aumenti",
+            "Complete": "Completo",
+            "Flaw": "Difetto",
+            "Free": "Libero/a",
+            "Boost": "Aumento",
+            "None": "Nessuno",
+            "NotSelected": "Non Selezionato"
+        },
+        "Skills": {
+            "engineering": "Ingegneria",
+            "defense": "Difesa",
+            "magic": "Magica",
+            "exploration": "Esplorazione"
+        },
+        "Penalty": "Penalità",
+        "Trait": {
+            "kingdom": "Regno",
+            "leadership": "Leadership",
+            "army": "Esercito",
+            "morale": "Morale"
+        },
+        "Settlement": {
+            "TypeLabel": "Tipo",
+            "Blocks": "Mattoncini"
+        },
+        "Consumption": {
+            "Base": "Normale"
+        },
+        "Charter": {
+            "exploration": {
+                "Name": "Esplorazione"
+            }
         }
     },
     "COMPENDIUM": {
         "MigrationStatus": "Stato Migrazione"
+    },
+    "TOKEN": {
+        "MOVEMENT": {
+            "ACTIONS": {
+                "drive": {
+                    "label": "Guidare"
+                },
+                "jump": {
+                    "label": "Saltare"
+                },
+                "blink": {
+                    "label": "Teletrasporto"
+                },
+                "travel": {
+                    "label": "Viaggiare"
+                },
+                "walk": {
+                    "label": "Avanzare"
+                }
+            }
+        }
     }
 }
