@@ -785,15 +785,15 @@
       "name": "(Mana Wastes Mutant) Vengeful Bite"
     },
     "(Martial Artist) Blazing Gate": {
-      "description": "<p><strong>Requirements</strong> The grandmaster has a target grappled or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>Effect</strong> The grandmaster tosses their target upwards and electrocutes them with a qi-infused double palm strike as they land. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, loses the grappled or restrained condition, and takes @Damage[(5d6)[bludgeoning],(2d8)[persistent,electricity]]{5d6 bludgeoning and 2d8 persistent electricity damage} (@Check[fortitude|dc:38|basic] save).</p>",
+      "description": "<p><strong>Requirements</strong> The grandmaster has a target grappled or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>Effect</strong> The grandmaster tosses their target upwards and electrocutes them with a qi-infused double palm strike as they land. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, loses the grappled or restrained condition, and takes @Damage[5d6[bludgeoning],2d8[persistent,electricity]]{5d6 bludgeoning damage and 2d8 persistent electricity damage} (@Check[fortitude|dc:38|basic] save).</p>",
       "name": "(Martial Artist) Blazing Gate"
     },
     "(Martial Artist) Competitive Taunt": {
-      "description": "<p>The tournament combatant attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a target. On a success, the demoralized creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of their next turn. The tournament combatant gets a +2 circumstance bonus to their damage against a creature made off-guard in this way.</p>",
+      "description": "<p>The tournament combatant attempts to [[/act demoralize]] a target. On a success, the demoralized creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of their next turn. The tournament combatant gets a +2 circumstance bonus to their damage against a creature made off-guard in this way.</p>",
       "name": "(Martial Artist) Competitive Taunt"
     },
     "(Martial Artist) Constant Feint Stance": {
-      "description": "<p>This stance option replaces a different Stance Shift option (usually Secure Grapple Stance). +2 to attempts to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint}. If the mixed martial artist rolls a critical failure to Feint, they get a failure instead. If they successfully Feint, they can use Stance Shift as a free action. Unlike other stances, in this stance the mixed martial artist can't make Strikes.</p>",
+      "description": "<p>This stance option replaces a different Stance Shift option (usually Secure Grapple Stance). +2 to attempts to [[/act feint]]. If the mixed martial artist rolls a critical failure to Feint, they get a failure instead. If they successfully Feint, they can use Stance Shift as a free action. Unlike other stances, in this stance the mixed martial artist can't make Strikes.</p>",
       "name": "(Martial Artist) Constant Feint Stance"
     },
     "(Martial Artist) Defensive Side Kick": {
@@ -809,11 +809,11 @@
       "name": "(Martial Artist, Dirty Fighting) Concealed Spikes"
     },
     "(Martial Artist, Dirty Fighting) Contraband Substance": {
-      "description": "<p>The martial artist pulls out a @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} alchemical vial of mutagen and drinks it to improve their combat prowess. The item is usually a @UUID[Compendium.pf2e.equipment-srd.Item.xE0EdDrf734l2fQH]{Juggernaut Mutagen (Lesser)}, or @UUID[Compendium.pf2e.equipment-srd.Item.5MKBwpE401uz4kNN]{Quicksilver Mutagen (Lesser)}. This ability can't be used again until the martial artist has time to acquire and hide a new mutagen. Some martial artists use concealed small vials, but others hide a syringe or soak the alchemical liquid into a garment they can put in their mouth.</p>",
+      "description": "<p>The martial artist pulls out a concealed alchemical vial of mutagen and drinks it to improve their combat prowess. The item is usually a @UUID[Compendium.pf2e.equipment-srd.Item.xE0EdDrf734l2fQH]{Juggernaut Mutagen (Lesser)}, or @UUID[Compendium.pf2e.equipment-srd.Item.5MKBwpE401uz4kNN]{Quicksilver Mutagen (Lesser)}. This ability can't be used again until the martial artist has time to acquire and hide a new mutagen. Some martial artists use concealed small vials, but others hide a syringe or soak the alchemical liquid into a garment they can put in their mouth.</p>",
       "name": "(Martial Artist, Dirty Fighting) Contraband Substance"
     },
     "(Martial Artist, Dirty Fighting) Illegal Bite": {
-      "description": "<p>The martial artist makes an @Check[athletics|defense:fortitude] check against a target's Fortitude DC to bite them in a vulnerable area. On a success, the martial artist deals @Damage[2d6[piercing]] damage (or double on a critical success).</p>",
+      "description": "<p>The martial artist makes an @Check[athletics|against:fortitude] check against a target's Fortitude DC to bite them in a vulnerable area. On a success, the martial artist deals @Damage[2d6[piercing]] damage (or double on a critical success).</p>",
       "name": "(Martial Artist, Dirty Fighting) Illegal Bite"
     },
     "(Martial Artist, Dirty Fighting) Sand in Your Eye": {
@@ -821,15 +821,15 @@
       "name": "(Martial Artist, Dirty Fighting) Sand in Your Eye"
     },
     "(Martial Artist, Grandmaster) Life Burn Aura": {
-      "description": "<p>The grandmaster transmutes their lifespan into an expulsion of qi. For the next minute, the grandmaster is surrounded by a @Template[type:emanation|distance:30] that deals @Damage[3d6[force]|options:area-damage] damage to all creatures who start their turn within the emanation, including the grandmaster themself. While Life Burn Aura is active, the grandmaster's fist Strikes deal 2 additional die of weapon damage. When the aura disappears, the grandmaster is permanently @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. This condition is cumulative.</p>",
+      "description": "<p>The grandmaster transmutes their lifespan into an expulsion of qi. For the next minute, the grandmaster is surrounded by a 30-foot emanation that deals @Damage[3d6[force]|options:area-damage] damage to all creatures who start their turn within the emanation, including the grandmaster themself. While Life Burn Aura is active, the grandmaster's fist Strikes deal 2 additional die of weapon damage. When the aura disappears, the grandmaster is permanently @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. This condition is cumulative.</p>",
       "name": "(Martial Artist, Grandmaster) Life Burn Aura"
     },
     "(Martial Artist, Grandmaster) Solar Surge": {
-      "description": "<p>The grandmaster unleashes a qi wave as bright as the sun. All creatures within a 50-foot radius of the grandmaster who can see must attempt a @Check[reflex|dc:38] save, including the grandmaster themself.</p><hr /><p><strong>Critical Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Failure</strong> The creature is blinded for 1 day.</p>\n<p><strong>Critical Failure</strong> The creature is permanently blinded.</p>",
+      "description": "<p>The grandmaster unleashes a qi wave as bright as the sun. All creatures within a @Template[emanation|distance:50]{50-foot radius} of the grandmaster who can see must attempt a @Check[reflex|dc:38|options:area-effect,inflicts:dazzled,inflicts:blinded] save, including the grandmaster themself.</p><hr /><p><strong>Critical Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Failure</strong> The creature is blinded for 1 day.</p>\n<p><strong>Critical Failure</strong> The creature is permanently blinded.</p>",
       "name": "(Martial Artist, Grandmaster) Solar Surge"
     },
     "(Martial Artist, Grandmaster) Super Qi Blast": {
-      "description": "<p>The grandmaster's body expands as it prepares to exude an unfathomable amount of qi. If the grandmaster's next action is to cast the two-action version of qi blast, the size of the cone increases to 120 feet and the damage increases to 16d6. The grandmaster also becomes one size category larger for the next minute, dealing an additional +9 damage with their melee Strikes. Additionally, the grandmaster is permanently @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. This drained condition is cumulative.</p><hr /><p>@UUID[Compendium.pf2e.bestiary-effects.Item.f1w5p5AVfAajZi9t]{Effect: Super Qi Blast}</p>",
+      "description": "<p>The grandmaster's body expands as it prepares to exude an unfathomable amount of qi. If the grandmaster's next action is to cast the two-action version of @UUID[Compendium.pf2e.spells-srd.Item.oo7YcRC2gcez81PV]{Qi Blast}, the size of the cone increases to 120 feet and the damage increases to 16d6. The grandmaster also becomes one size category larger for the next minute, dealing an additional +9 damage with their melee Strikes. Additionally, the grandmaster is permanently @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. This drained condition is cumulative.</p>",
       "name": "(Martial Artist, Grandmaster) Super Qi Blast"
     },
     "(Melfesh Monster) Burrowing Grasp": {
