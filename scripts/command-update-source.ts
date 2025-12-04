@@ -55,16 +55,6 @@ export async function commandUpdateSource(
   const manifest = await readManifest(join(systemDir, "static", "system.json"));
   let [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
 
-  if (filter.length > 0) {
-    allPacks = allPacks.filter((p) => filter.includes(p.name));
-  }
-  if (debugSkip) {
-    const index = allPacks.findIndex((p) => p.name === debugSkip);
-    if (index >= 0) {
-      allPacks = allPacks.slice(index);
-    }
-  }
-
   const langData: LangFile = _.merge({}, ...allLangs);
 
   const labels = await weblate.getAll<WeblateLabel>(
@@ -81,6 +71,8 @@ export async function commandUpdateSource(
       ")([^a-zA-Z0-9\\.]|$)",
     "g",
   );
+  const langKeysSet = new Set(langKeys);
+
   const langKeysMap = new Map(
     langKeys.map((k) => [
       k,
@@ -89,24 +81,42 @@ export async function commandUpdateSource(
   );
 
   const c: UpdateSourceContext = {
-    weblate: weblate,
+    weblate,
     dry,
     labelsMap,
     langKeysMap,
     langKeysRegex,
+    langKeysSet,
   };
 
+  const debugSkipIndex = debugSkip
+    ? allPacks.findIndex((p) => p.name === debugSkip)
+    : -1;
+
   console.log(`Processing packs`);
-  for (const pack of allPacks) {
+  for (const [index, pack] of allPacks.entries()) {
     const fileName = pack.path.replace("packs/", "");
-    const compendiumName = weblateCompendiumMap[fileName];
+    let compendiumName = weblateCompendiumMap[fileName];
+
+    if (filter.length > 0 && !filter.includes(pack.name)) {
+      if (filter.includes("lang")) {
+        compendiumName = undefined;
+      } else {
+        continue;
+      }
+    }
+    if (debugSkipIndex >= 0 && index < debugSkipIndex) {
+      continue;
+    }
 
     console.log(`Processing pack ${pack.name} (file: ${fileName})`);
     await translateSource(compendiumName, pack.entries as EntriesWithSource, c);
   }
 
-  console.log(`Processing Lang`);
-  await translateLang(c);
+  if (filter.length === 0 || filter.includes("lang")) {
+    console.log(`Processing Lang`);
+    await translateLang(c);
+  }
 }
 
 type UpdateSourceContext = {
@@ -114,6 +124,7 @@ type UpdateSourceContext = {
   dry: boolean;
   labelsMap: Map<string, number>;
   langKeysRegex: RegExp;
+  langKeysSet: Set<string>;
   langKeysMap: Map<
     string,
     {
@@ -201,9 +212,24 @@ async function translateSource(
     }
 
     for (const match of JSON.stringify(entry).matchAll(c.langKeysRegex)) {
-      c.langKeysMap.get(match[1])!.used.push(entry.name);
+      const key = match[1];
+      const langKey = c.langKeysMap.get(key)!;
+      langKey.used.push(entry.name);
       if (tag) {
-        c.langKeysMap.get(match[1])!.sources.add(tag);
+        langKey.sources.add(tag);
+      }
+    }
+
+    if (origin.system?.details?.languages?.value?.length) {
+      for (const language of origin.system.details.languages.value) {
+        const key = `PF2E.Actor.Creature.Language.${language}`;
+        if (c.langKeysSet.has(key)) {
+          const langKey = c.langKeysMap.get(key)!;
+          langKey.used.push(entry.name);
+          if (tag) {
+            langKey.sources.add(tag);
+          }
+        }
       }
     }
   }

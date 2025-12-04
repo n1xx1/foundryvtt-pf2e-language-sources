@@ -313,6 +313,15 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Lost Omens Shining Kingdoms"],
     language: [],
   },
+  "draconic-codex": {
+    name: "Lost Omens Draconic Codex",
+    type: "lost-omens",
+    source: [
+      "Pathfinder Lost Omens Draconic Codex",
+      "Pathfinder Draconic Codex",
+    ],
+    language: [],
+  },
   // Adventure Paths
   "age-of-ashes1": {
     name: "Age of Ashes",
@@ -644,7 +653,7 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder #186: Ghost King's Rage"],
     language: ["it"],
   },
-  gatewalkers1: {
+  gatewalkers: {
     name: "Gatewalkers",
     type: "adventure-path",
     source: [
@@ -652,19 +661,11 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder Gatewalkers Player's Guide",
       "Pathfinder: Gatewalkers Player's Guide",
       "Pathfinder #187: The Seventh Arch",
+      "Pathfinder #188: They Watched the Stars",
+      "Pathfinder #189: Dreamers of the Nameless Spires",
+      "Pathfinder Adventure Path: Gatewalkers",
+      "Gatewalkers Player's Guide (Remastered)",
     ],
-    language: [],
-  },
-  gatewalkers2: {
-    name: "Gatewalkers",
-    type: "adventure-path",
-    source: ["Pathfinder #188: They Watched the Stars"],
-    language: [],
-  },
-  gatewalkers3: {
-    name: "Gatewalkers",
-    type: "adventure-path",
-    source: ["Pathfinder #189: Dreamers of the Nameless Spires"],
     language: [],
   },
   kingmaker: {
@@ -686,19 +687,19 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder Stolen Fate Player's Guide",
       "Pathfinder #190: The Choosing",
     ],
-    language: [],
+    language: ["it"],
   },
   "stolen-fate2": {
     name: "Stolen Fate",
     type: "adventure-path",
     source: ["Pathfinder #191: The Destiny War"],
-    language: [],
+    language: ["it"],
   },
   "stolen-fate3": {
     name: "Stolen Fate",
     type: "adventure-path",
     source: ["Pathfinder #192: Worst of All Possible Worlds"],
-    language: [],
+    language: ["it"],
   },
   "sky-kings-tomb1": {
     name: "Sky King's Tomb",
@@ -868,6 +869,29 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder #215: To Blot Out the Sun"],
     language: [],
   },
+  "myth-speaker": {
+    name: "Revenge of the Runelords",
+    type: "adventure-path",
+    source: [
+      "Pathfinder Myth-Speaker Player's Guide",
+      "Pathfinder #216: The Acropolis Pyre",
+      "Pathfinder #217: Death Sails a Wine-Dark Sea",
+      "Pathfinder #218: Titanbane",
+    ],
+    language: [],
+  },
+  "revenge-of-the-runelords": {
+    name: "Revenge of the Runelords",
+    type: "adventure-path",
+    source: [
+      "Pathfinder Revenge of the Runelords Player's Guide",
+      "Pathfinder #219: Lord of the Trinity Star",
+      "Pathfinder #220: Crypt of Runes",
+      "Pathfinder #221: Into the Apocalypse Archive",
+      "Pathfinder Adventure Path #221: Into the Apocalypse Archive",
+    ],
+    language: [],
+  },
   // Adventures
   "the-fall-of-plaguestone": {
     name: "The Fall of Plaguestone",
@@ -1005,6 +1029,12 @@ export const sourceState: Record<string, SourceState> = {
     source: ["Pathfinder Claws of the Tyrant"],
     language: [],
   },
+  "the-scourge-of-sheerleaf": {
+    name: "The Scourge of Sheerleaf",
+    type: "adventure",
+    source: ["Pathfinder Adventure: The Scourge of Sheerleaf"],
+    language: [],
+  },
   // Other Random Stuff
   "random-sources": {
     name: "Random Sources",
@@ -1033,6 +1063,7 @@ export const sourceState: Record<string, SourceState> = {
       "Pathfinder Hero Point Deck",
       /Paizo Blog: .+/,
       "Pathfinder Lost Omens Divine Mysteries Web Supplement",
+      "Pathfinder Game Night: Dawn of the Frogs",
     ],
     language: [],
   },
@@ -1054,11 +1085,12 @@ export const sourceState: Record<string, SourceState> = {
     ],
     language: [],
   },
+  // Remaster
   "player-core": {
     name: "Player Core",
     type: "core-remaster",
     source: ["Pathfinder Player Core"],
-    language: [],
+    language: ["it"],
   },
   "gm-core": {
     name: "GM Core",
@@ -1070,7 +1102,7 @@ export const sourceState: Record<string, SourceState> = {
     name: "Monster Core",
     type: "core-remaster",
     source: ["Pathfinder Monster Core"],
-    language: [],
+    language: ["it"],
   },
   "player-core2": {
     name: "Player Core 2",
@@ -1082,6 +1114,18 @@ export const sourceState: Record<string, SourceState> = {
     name: "NPC Core",
     type: "core-remaster",
     source: ["Pathfinder NPC Core"],
+    language: [],
+  },
+  battlecry: {
+    name: "Battlecry!",
+    type: "core-remaster",
+    source: ["Pathfinder Battlecry!"],
+    language: [],
+  },
+  "monster-core2": {
+    name: "Monster Core 2",
+    type: "core-remaster",
+    source: ["Pathfinder Monster Core 2"],
     language: [],
   },
 };

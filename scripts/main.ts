@@ -27,7 +27,7 @@ yargs(hideBin(process.argv))
       const dir = resolve(argv.directory);
       console.log(`updating sources using system at ${dir}`);
       await commandUpdate(dir);
-    }
+    },
   )
   .command(
     "fix-build-packs",
@@ -37,7 +37,7 @@ yargs(hideBin(process.argv))
       const dir = resolve(argv.directory);
       console.log(`fixing build:packs for system at ${dir}`);
       await commandFixBuildPacks(dir);
-    }
+    },
   )
   .command(
     "update-source",
@@ -67,7 +67,7 @@ yargs(hideBin(process.argv))
       const token = argv.token ?? process.env.WEBLATE_TOKEN ?? "";
       if (!token) {
         throw new Error(
-          "missing weblate token! either provided it in the WEBLATE_TOKEN enviroment variable or pass it with the --token flag"
+          "missing weblate token! either provided it in the WEBLATE_TOKEN enviroment variable or pass it with the --token flag",
         );
       }
       await commandUpdateSource(
@@ -75,9 +75,9 @@ yargs(hideBin(process.argv))
         token,
         argv.dry ?? false,
         argv.filter?.map((x) => x.toString()) ?? [],
-        argv.debugSkip
+        argv.debugSkip,
       );
-    }
+    },
   )
   .command(
     "weblate-query <lang>",
@@ -85,7 +85,7 @@ yargs(hideBin(process.argv))
     (yargs) => yargs.positional("lang", { type: "string", demandOption: true }),
     async (argv) => {
       await commandWeblateQuery([], argv.lang);
-    }
+    },
   )
   .command(
     "find-most-common <lang> [compendium]",
@@ -96,7 +96,7 @@ yargs(hideBin(process.argv))
         .positional("compendium", { type: "string", demandOption: true }),
     async (argv) => {
       await commandFindMostCommon(argv.lang, argv.compendium);
-    }
+    },
   )
   .command(
     "fix-item-ids <lang>",
@@ -104,7 +104,7 @@ yargs(hideBin(process.argv))
     (yargs) => yargs.positional("lang", { type: "string", demandOption: true }),
     async (argv) => {
       await commandFixItemIds(argv.lang, argv.directory);
-    }
+    },
   )
   .command(
     "remove-same-translation <lang> [compendium]",
@@ -117,9 +117,9 @@ yargs(hideBin(process.argv))
       await commandRemoveSameTranslation(
         argv.lang,
         argv.compendium,
-        argv.directory
+        argv.directory,
       );
-    }
+    },
   )
   .command(
     "fix-template <lang> [compendium]",
@@ -130,7 +130,7 @@ yargs(hideBin(process.argv))
         .positional("compendium", { type: "string", demandOption: true }),
     async (argv) => {
       await commandFixTemplate(argv.lang, argv.compendium, argv.directory);
-    }
+    },
   )
   .strictCommands()
   .demandCommand(1)
