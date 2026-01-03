@@ -8578,7 +8578,7 @@
                     "Prompt": "Seleziona un patrono.",
                     "FamiliarAbility": {
                         "FreezingRime": {
-                            "Description": "Il tuo famiglio è freddo al tocco e il suo respiro è sempre visibile. Quando Lanci o Mantieni una fattura, puoi far formare del ghiaccio in un'@Template[burst|distance:5] centrata in un quadretto dello spazio del tuo famiglio. Questi quadretti sono terreno difficile fino all'inizio del tuo prossimo turno.",
+                            "Description": "Il tuo famiglio è freddo al tocco e il suo respiro è sempre visibile. Quando Lanci o Mantieni una fattura, puoi far formare del ghiaccio in un'@Template[burst|distance:5]{esplosione di 1,5 metri} centrata in un quadretto dello spazio del tuo famiglio. Questi quadretti sono terreno difficile fino all'inizio del tuo prossimo turno.",
                             "Title": "Famiglio di Brina Congelante"
                         },
                         "OngoingMisery": {
@@ -8633,7 +8633,7 @@
                     }
                 },
                 "SympatheticStrike": {
-                    "Note": "Fino all’inizio del tuo prossimo turno, l bersaglio subisce penalità di circostanza -1 ai TS contro le tue fatture, o penalità -2 se il Colpo innescante era un colpo critico. @UUID[Compendium.pf2e.feat-effects.Item.qBTJYpopY3AwFFUJ]{Effetto: Copo Simpatetico}"
+                    "Note": "Fino all’inizio del tuo prossimo turno, l bersaglio subisce penalità di circostanza -1 ai TS contro le tue fatture, o penalità -2 se il Colpo innescante era un colpo critico. @UUID[Compendium.pf2e.feat-effects.Item.qBTJYpopY3AwFFUJ]{Effetto: Colpo Simpatetico}"
                 }
             },
             "Wizard": {
@@ -8933,7 +8933,7 @@
                     "Note": "Quando lanci l'incantesimo <em>guarire</em> per curare una singola creatura, scegli un'altra creatura vivente consenziente nel raggio di <em>guarire</em> per farle recuperare @Damage[@item.rank[vitality,healing]|shortLabel] Punti Ferita."
                 },
                 "CremateUndead": {
-                    "Note": "Ogni non morto che subisca danni da un tuo incantesimo <em>guarire</em> subisce anche @Damage[(@item.rank)[persistent,fire]]{danni da fuoco persistenti pari al livello dell'incantesimo}."
+                    "Note": "Ogni non morto che subisca danni da un tuo incantesimo <em>guarire</em> subisce anche @Damage[(@item.rank)[persistent,fire]]{$1 danni da fuoco persistenti pari al livello dell'incantesimo}."
                 },
                 "SapLife": {
                     "Note": "Quando lanci un incantesimo <em>ferire</em> e infliggi danni ad almeno una creatura vivente, recuperi @Damage[(@item.rank)[healing]]{$1 Punti Ferita}."
@@ -8948,7 +8948,7 @@
                     "Description": "Infondi la tua energia divina in una parata disperata. Quando Pari con lo Scudo, puoi consumare un incantesimo guarire o ferire. Tira 1d8 per ogni grado dell'incantesimo e aumenta la Durezza dello scudo per il totale per questa parata."
                 },
                 "DivineRebuttal": {
-                    "Note": "Se il tuo Colpo va a segno, tutti i tuoi alleati ottengono un bonus di circostanza +2 al tiro salvezza innescante (o un bonus di circostanza +3 in caso di colpo critico). @UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{Effetto: Confutazione Divina}"
+                    "Note": "Se il tuo Colpo va a segno, tutti i tuoi alleati ottengono un bonus di circostanza +2 al tiro salvezza innescante (o un bonus di circostanza +3 in caso di colpo critico). @UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{Effetto: Obiezione Divina}"
                 },
                 "EmblazonEnergy": {
                     "MatchingDomainPrompt": "Dominio corrispondente?"
@@ -10639,6 +10639,9 @@
                 "FortitudeExpertise": {
                     "bard": {
                         "Description": "Il tuo fisico si è irrobustito nelle tue avventure. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
+                    },
+                    "druid": {
+                        "Description": "Le avventure hanno reso il tuo fisico più robusto. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
                     }
                 },
                 "PerceptionMastery": {
@@ -10647,6 +10650,9 @@
                     },
                     "rogue": {
                         "Description": "Hai affinato un’acuta consapevolezza e grande attenzione ai dettagli. Il tuo grado di competenza in Percezione aumenta a maestro."
+                    },
+                    "ranger": {
+                        "Description": "Hai affinato la tua consapevolezza e attenzione ai dettagli. Il tuo grado di competenza in Percezione aumenta a maestro."
                     }
                 },
                 "Spellcaster": {
@@ -10654,6 +10660,29 @@
                         "Expert": "Ottieni un controllo superiore sulle tue tecniche magiche. Il tuo grado di competenza in tiri per colpire con incantesimi e CD di incantesimi aumenta a esperto.",
                         "Legendary": "La tua padronanza della magia occulta è materia di leggende. Il tuo grado di competenza in tiri per colpire con incantesimi e CD di incantesimi sale a leggendario.",
                         "Master": "Maneggi i fili della magia con la grazia di chi suona un’arpa. Il tuo grado di competenza in tiri per colpire con incantesimi e CD di incantesimi aumenta a maestro."
+                    },
+                    "druid": {
+                        "Expert": "Il tuo controllo sulle forze primeve è aumentato, potenziando i tuoi incantesimi. Il tuo grado di competenza nei tiri per colpire con incantesimi e nella CD degli incantesimi aumenta a esperto.",
+                        "Legendary": "L’armonia fra te e la magia naturale è senza pari. Il tuo grado di competenza nei tiri per colpire con incantesimi e nella CD degli incantesimi aumenta a leggendario.",
+                        "Master": "La magia primeva risponde ai tuoi comandi. Il tuo grado di competenza nei tiri per colpire con incantesimi e nella CD degli incantesimi aumenta a maestro."
+                    },
+                    "witch": {
+                        "Expert": "Hai imparato a controllare meglio il potere che il tuo patrono ti ha concesso. Il tuo grado di competenza nei tiri per colpire con incantesimo e nella CD di incantesimo aumenta a esperto.",
+                        "Legendary": "Hai perfezionato la padronanza della magia che ti fornisce il tuo patrono. Il tuo grado di competenza nei tiri per colpire con incantesimo e nella CD di incantesimo aumenta a leggendario.",
+                        "Master": "Padroneggi perfettamente la magia del tuo patrono. Il tuo grado di competenza nei tiri per colpire con incantesimo e nella CD di incantesimo aumenta a maestro."
+                    },
+                    "wizard": {
+                        "Expert": "Una lunga pratica delle arti arcane ha affinato le tue capacità. Il tuo grado di competenza nei tiri per colpire con incantesimi e nella CD degli incantesimi aumenta a esperto.",
+                        "Legendary": "Sei un incantatore provetto che domina la teoria e la pratica della magia arcana. Il tuo grado di competenza nei tiri per colpire con incantesimi e nella CD degli incantesimi aumenta a leggendario.",
+                        "Master": "Sei un incantatore superlativo. Il tuo grado di competenza nei tiri per colpire con incantesimi e nella CD degli incantesimi aumenta a maestro."
+                    }
+                },
+                "MagicalFortitude": {
+                    "witch": {
+                        "Description": "Il potere della magia ha reso il tuo corpo più resiliente. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
+                    },
+                    "wizard": {
+                        "Description": "Il potere della magia ha reso il tuo corpo più resiliente. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
                     }
                 }
             },
