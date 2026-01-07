@@ -1561,7 +1561,7 @@
             },
             "flaming": {
                 "Note": {
-                    "criticalSuccess": "Quando ottieni un successo critico, infliggi @Damage[1d10[persistent,fire]]{1d10 danni da fuoco persistenti} addizionali."
+                    "criticalSuccess": "Quando ottieni un successo critico, infliggi 1d10 danni da fuoco persistenti addizionali."
                 },
                 "Name": "Infuocata"
             },
@@ -1761,7 +1761,7 @@
             "greaterAstral": {
                 "Name": "Astrale Superiore",
                 "Note": {
-                    "Note": "Questa runa ha gli stessi effetti di una runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{tocco fantasma}, inoltre infligge @Damage[1d6[spirit]]{1d6 danni spirituali} aggiuntivi. Se viene usata per attaccare una creatura che sta possedendo un’altra creatura, quest’arma non infligge danni alla creatura posseduta."
+                    "Note": "Questa runa ha gli stessi effetti di una runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{tocco fantasma}, più i Colpi con essa infliggono 1d6 danni spirituali extra. Se usata per attaccare una creatura che sta possedendo un’altra creatura, quest’arma non infligge danni alla creatura posseduta."
                 }
             },
             "greaterCrushing": {
@@ -1944,7 +1944,7 @@
             },
             "deafened": {
                 "name": "Assordato",
-                "rules": "<p>Non sei in grado di udire nulla. Ottieni un fallimento critico automatico nelle prove di Percezione che richiedono l'uso dell'udito. Subisci penalità di status -2 alle prove di Percezione per l'Iniziativa e alle prove che coinvolgono il suono ma fanno affidamento anche sugli altri sensi. Se compi un'azione con il tratto uditivo, devi superare una @Check[flat|dc:5] o l'azione è perduta; tenta la prova dopo aver speso l'azione, ma prima di applicarne gli effetti. Sei immune agli effetti uditivi.</p>",
+                "rules": "<p>Non sei in grado di udire nulla. Ottieni un fallimento critico automatico nelle prove di Percezione che richiedono l'uso dell'udito. Subisci penalità di status -2 alle prove di Percezione per l'Iniziativa e alle prove che coinvolgono il suono ma fanno affidamento anche sugli altri sensi. Se compi un'azione con il tratto uditivo, devi superare una @Check[flat|dc:5|name:Deafened|showDC:all] o l'azione è perduta; tenta la prova dopo aver speso l'azione, ma prima di applicarne gli effetti. Sei immune agli effetti uditivi.</p>",
                 "summary": "Non riesci a sentire.",
                 "note": "Se compi un'azione con il tratto uditivo, devi superare una @Check[flat|dc:5|name:Deafened|showDC:all] o l'azione è perduta."
             },
@@ -3778,7 +3778,7 @@
                     "orvian": "Orviano",
                     "talican": "Talicano",
                     "aishmayar": "Aishmayar",
-                    "kholo": "Gnoll"
+                    "kholo": "Kholo"
                 },
                 "Shield": {
                     "ACBonus": "Bonus CA Scudo (Quando Alzato)",
@@ -3997,10 +3997,10 @@
                 "Identification": {
                     "Skills": {
                         "Label": "{skills}: CD {dc} ({adjustment})",
-                        "Tooltip": "\"L'abilità utilizzata per identificare una creatura dipende dai suoi tratti, come illustrato nella tabella Abilità per Identificare Creature, ma tale scelta è sottoposta alla tua discrezionalità.\" – MdG p. 506"
+                        "Tooltip": "\"L’abilità usata per identificare una creatura dipende solitamente dal tratto di quella creatura, come mostrato nella tabella Abilità di Identificazione delle Creature, ma hai libertà su quali abilità si applicare.\" — Manuale del GM pg. 54-55"
                     },
                     "Lore": {
-                        "Tooltip": "\"Quando effettui una prova con una Sapienza appropriata, la CD è facile o molto facile (prima di applicare gli aggiustamenti per la rarità).\" - Manuale del Giocatore p. 506",
+                        "Tooltip": "\"Usare la Sapienza applicabile di solito ha una CD facile o molto facile (prima di modifiche per rarità).\" — Manuale del GM pg. 54",
                         "Label": "Sapienza Appropriata: DC {dc1} ({adjustment1}) o DC {dc2} ({adjustment2})"
                     }
                 },
@@ -6440,7 +6440,7 @@
         "TraitDescriptionGenie": "Le varie famiglie di geni occupano posizioni di spicco sui piani elementali. Sono dotati di potenti capacità magiche.",
         "TraitDescriptionGeniekin": "Termine generico per gli eredi planari che discendono dalle creature dei Piani Elementali.",
         "TraitDescriptionGeneral": "Un tipo di talento che ogni personaggio può selezionare, indipendentemente da Stirpe e Classe, purché soddisfi i prerequisiti. Puoi selezionare un talento con questo tratto quando la tua Classe ti concede un talento generico.",
-        "TraitDescriptionGnoll": "Gli gnoll sono umanoidi simili alle iene.",
+        "TraitDescriptionGnoll": "I Kholo sono umanoidi simili alle iene.",
         "TraitDescriptionGnome": "Una creatura con questo tratto è un membro della stirpe gnomesca. Gli Gnomi sono un piccolo popolo esperto di magia, sempre in cerca di nuove esperienze, e di solito hanno Visione Crepuscolare. Una capacità con questo tratto può essere usata o selezionata solo dagli gnomi. Un'arma con questo tratto viene creata e utilizzata dagli gnomi.",
         "TraitDescriptionGoblin": "Una creatura con questo tratto è un goblinoide piccolo e frenetico. I goblin tendono ad avere scurovisione. Una capacità con questo tratto può essere usata o selezionata solo dai goblin. Un'arma con questo tratto viene creata e utilizzata dai goblin.",
         "TraitDescriptionKobold": "Una creatura con questo tratto è un membro della stirpe coboldo. I coboldi sono rettili umanoidi di taglia insolitamente Piccola, solitamente dotati di scurovisione.",
@@ -6461,8 +6461,8 @@
         "TraitDescriptionIncorporeal": "Una creatura o un oggetto incorporeo non possiede alcuna forma fisica. Può passare attraverso gli oggetti solidi, incluse le pareti. Quando si trova all'interno di un oggetto, una creatura incorporea non può percepire, attaccare o interagire con nulla che si trovi all’esterno dell'oggetto, e se inizia il suo turno in un oggetto è rallentata 1 fino alla fine del suo turno. Le creature corporee e incorporee possono passarsi attraverso, ma non possono terminare il loro movimento nello spazio dell'altra. Una creatura incorporea non può tentare prove basate sulla Forza contro le creature o gli oggetti fisici (può farlo solo contro quelli incorporei) a meno che tali oggetti non possiedano la runa di proprietà tocco fantasma. Analogamente, una creatura corporea non può tentare prove basate sulla Forza contro creature o oggetti incorporei. Le creature incorporee solitamente sono dotate di immunità agli effetti o alle condizioni che richiedono un corpo fisico, come le malattie, i veleni e i danni di precisione. Solitamente sono dotate di resistenza contro tutti i danni (tranne i danni da forza, danni spirito e i danni dei Colpi con la runa di proprietà tocco fantasma) e doppia resistenza contro i danni non magici.",
         "TraitDescriptionInfused": "Un oggetto alchemico con il tratto infuso diventa inerte una volta trascorso un tempo limitato. Gli effetti non permanenti prodotti dai tuoi oggetti alchemici infusi, a eccezione di afflizioni quali i veleni ad azione lenta, terminano quando effettui nuovamente i preparativi giornalieri.",
         "TraitDescriptionIngested": "Un veleno ingerito viene attivato applicandolo a cibo o bevande che saranno consumate da una creatura vivente, oppure versandolo direttamente nella sua bocca. Una creatura tenta un tiro salvezza contro quel veleno quando consuma il veleno o il cibo oppure le bevande avvelenate. Il tempo di latenza dei veleni da ingestione di solito spazia da 1 minuto a 1 giorno.",
-        "TraitDescriptionInhaled": "Questo veleno viene somministrato quando viene inspirato.",
-        "TraitDescriptionInjury": "Questo veleno viene somministrato quando si ferisce il destinatario.",
+        "TraitDescriptionInhaled": "Un veleno inalato si attiva liberandolo dal suo contenitore. Una volta liberato, il veleno crea una nube che riempie un cubo di 3 metri per 1 minuto o finché un forte vento non dissipa la nube. Ogni creatura che entra in questa nube è esposta al veleno e deve tentare un tiro salvezza contro di esso; una creatura consapevole del veleno prima di entrare nella nube può usare una singola azione per trattenere il respiro e ottenere un bonus di circostanza +2 al tiro salvezza per 1 round.",
+        "TraitDescriptionInjury": "Un veleno a ferimento si attiva applicandolo a un’arma o a una munizione e colpisce il bersaglio del primo Colpo effettuato con l’oggetto avvelenato. Se quel Colpo è un successo e infligge danni perforanti o taglienti, il bersaglio deve tentare un tiro salvezza contro il veleno. In caso di Colpo fallito, il bersaglio non è influenzato, ma il veleno rimane sull’arma e si può riprovare. In caso di fallimento critico, o se il Colpo non riesce a infliggere danni taglienti o perforanti per qualche altro motivo, il veleno viene consumato ma il bersaglio non è influenzato.",
         "TraitDescriptionIntelligent": "Un oggetto con questo tratto è intelligente e possiede volontà e personalità proprie, come anche svariate statistiche che la maggio parte degli oggetti non possiede. Gli oggetti intelligenti non possono essere fabbricati con mezzi normali e sono sempre rari o unici.",
         "TraitDescriptionInvested": "Un personaggio può investire solo 10 oggetti magici che hanno il tratto investito. Nessuno degli effetti magici dell'oggetto si applica se il personaggio non lo ha investito, né può essere attivato, anche se il personaggio ottiene comunque i normali benefici dall'indossare l'oggetto fisico (come un cappello che tiene lontana la pioggia dalla testa).",
         "TraitDescriptionInvestigator": "Questo tratto indica le capacità legate alla classe dell'investigatore.",
@@ -11026,12 +11026,12 @@
         "AmmunitionNotes": {
             "ExplosiveAmmunition": {
                 "Normal": {
-                    "Text": "Il proiettile scoppia in un'@Template[burst|distance:10]{esplosione di 3 metri}, infliggendo @Damage[6d6[fire]]{6d6 danni da fuoco} a ogni creatura nell'area (compreso il bersaglio). Ogni creatura deve tentare un TS @Check[reflex|dc:25|basic|name:Munizione Esplosiva].",
+                    "Text": "Il proiettile scoppia in un'@Template[burst|distance:10]{esplosione di 3 metri}, infliggendo @Damage[6d6[fire]|options:area-damage]{6d6 danni da fuoco} a ogni creatura nell'area (compreso il bersaglio). Ogni creatura deve tentare un TS@Check[reflex|dc:25|basic|name:Munizione Esplosiva|options:area-effect].",
                     "Title": "Munizione Esplosiva"
                 },
                 "Greater": {
                     "Title": "Munizione Esplosiva Superiore",
-                    "Text": "Il proiettile scoppia in un'@Template[burst|distance:10]{esplosione di 3 metri}, infliggendo @Damage[10d6[fire]]{10d6 danni da fuoco} a ogni creatura nell'area (compreso il bersaglio). Ogni creatura deve tentare un TS @Check[reflex|dc:30|basic|name:Munizione Esplosiva]."
+                    "Text": "Il proiettile scoppia in un'@Template[burst|distance:10]{esplosione di 3 metri}, infliggendo @Damage[10d6[fire]|options:area-damage]{10d6 danni da fuoco} a ogni creatura nell'area (compreso il bersaglio). Ogni creatura deve tentare un TS @Check[reflex|dc:30|basic|name:Munizione Esplosiva|options:area-effect]."
                 }
             },
             "AntlerArrow": {
