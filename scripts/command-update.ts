@@ -586,9 +586,7 @@ interface LangFile {
 
 export async function commandUpdate(systemDir = "../system") {
   await setupOut();
-  const manifest = await readManifest(
-    path.join(systemDir, "static", "system.pf2e.json"),
-  );
+  const manifest = await readManifest(path.join(systemDir, "system.pf2e.json"));
   const [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
 
   let langData: LangFile = _.merge({}, ...allLangs);
