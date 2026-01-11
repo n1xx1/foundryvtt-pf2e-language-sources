@@ -52,7 +52,9 @@ export async function commandUpdateSource(
     "https://weblate.n1xx1.me/api",
   );
 
-  const manifest = await readManifest(join(systemDir, "static", "system.json"));
+  const manifest = await readManifest(
+    join(systemDir, "static", "system.pf2e.json"),
+  );
   let [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
 
   const langData: LangFile = _.merge({}, ...allLangs);

@@ -23,10 +23,10 @@ type TranslationSource = {
 export async function commandRemoveSameTranslation(
   lang: string,
   compendium: string | undefined | null,
-  systemDir: string
+  systemDir: string,
 ) {
   const manifest = await readManifest(
-    path.join(systemDir, "static", "system.json")
+    path.join(systemDir, "static", "system.pf2e.json"),
   );
   const [allPacks] = await readSystemFiles(systemDir, manifest);
 
@@ -41,7 +41,7 @@ export async function commandRemoveSameTranslation(
 
     const originalPath = path.join("lang", "compendium", `${pack.name}.json`);
     const original = await readFileJson<TranslationSource>(originalPath).catch(
-      () => Promise.resolve(null)
+      () => Promise.resolve(null),
     );
 
     if (!original) {
@@ -52,10 +52,10 @@ export async function commandRemoveSameTranslation(
       "trad",
       lang,
       "compendium",
-      `${pack.name}.json`
+      `${pack.name}.json`,
     );
     const translated = await readFileJson<TranslationSource>(
-      translatedPath
+      translatedPath,
     ).catch(() => Promise.resolve(null));
 
     if (!translated) {

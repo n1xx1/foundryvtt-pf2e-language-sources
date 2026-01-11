@@ -5,7 +5,7 @@ import { readManifest, readSystemFiles } from "./utils/foundry-system";
 
 export async function commandFixItemIds(lang: string, systemDir: string) {
   const manifest = await readManifest(
-    path.join(systemDir, "static", "system.json")
+    path.join(systemDir, "static", "system.pf2e.json"),
   );
   const [allPacks] = await readSystemFiles(systemDir, manifest);
 
@@ -18,10 +18,10 @@ export async function commandFixItemIds(lang: string, systemDir: string) {
       "trad",
       lang,
       "compendium",
-      `${pack.name}.json`
+      `${pack.name}.json`,
     );
     const translated = await readFileJson<Record<string, unknown>>(
-      translatedPath
+      translatedPath,
     ).catch(() => Promise.resolve(null));
     if (!translated) {
       continue;
@@ -30,7 +30,7 @@ export async function commandFixItemIds(lang: string, systemDir: string) {
     console.log("");
     console.log(`FIXING ${pack.name}`);
     for (const [key, data] of Object.entries(
-      translated.entries as Record<string, Record<string, unknown>>
+      translated.entries as Record<string, Record<string, unknown>>,
     )) {
       const entry = pack.entries.find((e) => e.name === key);
       if (!entry) {
@@ -58,17 +58,17 @@ export async function commandFixItemIds(lang: string, systemDir: string) {
         const entryItems = entry.items.filter((i) => i.name === itemName);
         if (entryItems.length > 1) {
           const descriptions = entryItems.map(
-            (e) => e.system.description.value
+            (e) => e.system.description.value,
           );
           const descriptionsAllSame =
             descriptions.reduce(
               (p: string | null, c) => (p === c ? p : null),
-              descriptions[0]
+              descriptions[0],
             ) !== null;
 
           if (!descriptionsAllSame) {
             console.log(
-              `multiple items for "${itemName}" in "${key}", description ignored`
+              `multiple items for "${itemName}" in "${key}", description ignored`,
             );
             applyOnlyName = true;
           }
