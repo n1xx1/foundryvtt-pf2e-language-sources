@@ -1056,7 +1056,13 @@
                     "failure": "<strong>Fallimento</strong> Fai un lavoro scadente e vieni pagato il minimo. Ottieni l'ammontare di monete indicato per il livello del compito nella colonna Fallimento. Probabilmente il GM ridurrà il tempo in cui puoi lavorare in quel ruolo.",
                     "success": "<strong>Successo</strong> Fai bene il tuo lavoro. Ottieni l'ammontare di monete indicato per il livello del compito e il tuo grado di competenza."
                 },
-                "Description": "<p>Usi una delle tue abilità per fare soldi durante un periodo di pausa. Il GM stabilisce un livello del compito per rappresentare I lavori più remunerativi disponibili. Puoi andare in cerca di incarichi di basso livello, ma è il GM a determinare se ne trovi. A volte, però, puoi cercare di trovare un lavoro migliore di quello che ti era stato inizialmente offerto, ma la cosa richiede tempo e l'uso dell'abilità Diplomazia per Raccogliere Informazioni, fare ricerche o socializzare.</p><p>Quando accetti un impiego, il GM stabilisce in segreto la CD della tua prova di abilità. Dopo il tuo primo giorno di lavoro tiri per determinare i tuoi introiti. Il guadagno dipende dal risultato della prova, dal livello del compito e dal tuo grado di competenza come indicato dalla Tabella Guadagni).</p><p>Nei giorni successivi puoi continuare con il tuo impiego senza bisogno di ripetere la prova. Continui a guadagnare lo stesso ammontare in tutti i giorni dopo il primo finché non porti a termine il compito (il GM decide per quanto tempo puoi lavorare in quel ruolo). La maggior parte dei compiti durano una o due settimane, ma alcuni possono richiedere mesi o addirittura, anni.</p><p><strong>Successo Critico</strong> Fai un lavoro eccezionale. Ottieni l'ammontare di monete indicato per il livello del compito + 1 e il tuo grado di competenza.</p><p><strong>Successo</strong> Fai bene il tuo lavoro. Ottieni l'ammontare di monete indicato per il livello del compito e il tuo grado di competenza.</p><p><strong>Fallimento</strong> Fai un lavoro scadente e vieni pagato il minimo. Ottieni l'ammontare di monete indicato per il livello del compito nella colonna Fallimento. Probabilmente il GM ridurrà il tempo in cui puoi lavorare in quel ruolo.</p><p><strong>Fallimento Critico</strong> Non guadagni nulla per il tuo lavoro e vieni immediatamente licenziato. Non puoi continuare il compito. La tua reputazione ne risente, e in futuro potrebbe esserti difficile trovare impieghi ben pagati in quella comunità.</p>"
+                "Description": "<p>Usi una delle tue abilità per fare soldi durante un periodo di pausa. Il GM stabilisce un livello del compito per rappresentare I lavori più remunerativi disponibili. Puoi andare in cerca di incarichi di basso livello, ma è il GM a determinare se ne trovi. A volte, però, puoi cercare di trovare un lavoro migliore di quello che ti era stato inizialmente offerto, ma la cosa richiede tempo e l'uso dell'abilità Diplomazia per Raccogliere Informazioni, fare ricerche o socializzare.</p><p>Quando accetti un impiego, il GM stabilisce in segreto la CD della tua prova di abilità. Dopo il tuo primo giorno di lavoro tiri per determinare i tuoi introiti. Il guadagno dipende dal risultato della prova, dal livello del compito e dal tuo grado di competenza come indicato dalla Tabella Guadagni).</p><p>Nei giorni successivi puoi continuare con il tuo impiego senza bisogno di ripetere la prova. Continui a guadagnare lo stesso ammontare in tutti i giorni dopo il primo finché non porti a termine il compito (il GM decide per quanto tempo puoi lavorare in quel ruolo). La maggior parte dei compiti durano una o due settimane, ma alcuni possono richiedere mesi o addirittura, anni.</p><p><strong>Successo Critico</strong> Fai un lavoro eccezionale. Ottieni l'ammontare di monete indicato per il livello del compito + 1 e il tuo grado di competenza.</p><p><strong>Successo</strong> Fai bene il tuo lavoro. Ottieni l'ammontare di monete indicato per il livello del compito e il tuo grado di competenza.</p><p><strong>Fallimento</strong> Fai un lavoro scadente e vieni pagato il minimo. Ottieni l'ammontare di monete indicato per il livello del compito nella colonna Fallimento. Probabilmente il GM ridurrà il tempo in cui puoi lavorare in quel ruolo.</p><p><strong>Fallimento Critico</strong> Non guadagni nulla per il tuo lavoro e vieni immediatamente licenziato. Non puoi continuare il compito. La tua reputazione ne risente, e in futuro potrebbe esserti difficile trovare impieghi ben pagati in quella comunità.</p>",
+                "Result": {
+                    "DaysSpent": {
+                        "one": "1 Giorno"
+                    }
+                },
+                "Submit": "Tiro"
             },
             "PointOut": {
                 "Title": "Indicare",
@@ -1129,6 +1135,24 @@
                 "Content": "{actor} inizia a parare.",
                 "Title": "Parata",
                 "ShortTitle": "Parata"
+            },
+            "TakeControl": {
+                "Title": "Prendere il Controllo"
+            },
+            "Drive": {
+                "Title": "Guidare"
+            },
+            "Navigate": {
+                "Notes": {
+                    "criticalSuccess": "<strong>Successo Critico</strong> Hai un'ottima idea di dove ti trovi. Se sei in un ambiente con direzioni cardinali, sai esattamente dove sono.",
+                    "success": "<strong>Successo</strong> Ti orienti quanto basta per evitare di perderti completamente. Se sei in un ambiente con direzioni cardinali, sai bene o male dove sono."
+                }
+            },
+            "RunOver": {
+                "Title": "Investire"
+            },
+            "Stop": {
+                "Title": "Fermarsi"
             }
         },
         "SETTINGS": {
@@ -2930,7 +2954,8 @@
                     "ceramic-plate": "Armatura di Ceramica",
                     "buckle-armor": "Armatura con Fibbie",
                     "wooden-breastplate": "Corsaletto di Legno",
-                    "leaf-weave": "Tessuto di Foglie"
+                    "leaf-weave": "Tessuto di Foglie",
+                    "second-skin": "Seconda Pelle"
                 },
                 "Category": {
                     "light-barding": "Bardatura Leggera",
@@ -5145,7 +5170,8 @@
             "x-attack-roll": "Tiro per Colpire di {type}",
             "fortitude": "Tiro Salvezza su Tempra",
             "reflex": "Tiro Salvezza su Riflessi",
-            "will": "Tiro Salvezza su Volontà"
+            "will": "Tiro Salvezza su Volontà",
+            "piloting": "Prove di Pilotaggio"
         },
         "ActionsWarning": {
             "NoActor": "Seleziona almeno un token prima di tirare, o assegna un personaggio predefinito.",
@@ -7207,7 +7233,10 @@
                 "hook-sword": "Lama Uncinata",
                 "atlatl": "Atlatl",
                 "harpoon": "Arpione",
-                "leiomano": "Leiomano"
+                "leiomano": "Leiomano",
+                "hammer": "Martello",
+                "knife": "Coltello",
+                "talon": "Grinfie"
             }
         },
         "WeaponAbilityLabel": "Abilità Arma",
@@ -10641,6 +10670,12 @@
                     },
                     "druid": {
                         "Description": "Le avventure hanno reso il tuo fisico più robusto. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
+                    },
+                    "swashbuckler": {
+                        "Description": "Il tuo fisico si è irrobustito nelle tue avventure. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
+                    },
+                    "investigator": {
+                        "Description": "Il tuo fisico si è irrobustito nelle tue avventure. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
                     }
                 },
                 "PerceptionMastery": {
@@ -10652,6 +10687,9 @@
                     },
                     "ranger": {
                         "Description": "Hai affinato la tua consapevolezza e attenzione ai dettagli. Il tuo grado di competenza in Percezione aumenta a maestro."
+                    },
+                    "gunslinger": {
+                        "Description": "Hai affinato un’acuta consapevolezza e grande attenzione ai dettagli. Il tuo grado di competenza in Percezione aumenta a maestro."
                     }
                 },
                 "Spellcaster": {
@@ -10681,6 +10719,12 @@
                         "Description": "Il potere della magia ha reso il tuo corpo più resiliente. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
                     },
                     "wizard": {
+                        "Description": "Il potere della magia ha reso il tuo corpo più resiliente. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
+                    },
+                    "sorcerer": {
+                        "Description": "Il potere della magia ha reso il tuo corpo più resiliente. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
+                    },
+                    "oracle": {
                         "Description": "Il potere della magia ha reso il tuo corpo più resiliente. Il tuo grado di competenza nei tiri salvezza su Tempra aumenta a esperto."
                     }
                 }
@@ -11358,7 +11402,8 @@
                 "MagicalWood": "legno magico",
                 "PhysicalWeaponsOnly": "fisico (solo armi)",
                 "ImpulseFireFrom": "impulso di fuoco da {origin}",
-                "Treerazer": "Fitànatos"
+                "Treerazer": "Fitànatos",
+                "Radiation": "radiazione"
             }
         },
         "Color": {
@@ -11906,7 +11951,22 @@
         "TraitOther": "Altro",
         "TraitGirtablilu": "Girtablilu",
         "TraitNightmare": "Incubo",
-        "TraitDescriptionSubjectiveGravity": "Tutti i corpi di massa possono essere centri di gravità con la stessa forza, ma solo se una creatura non priva di intelletto lo vuole. Gli oggetti incustoditi, gli oggetti e le creature prive di intelletto trattano il piano come se avesse la microgravità. Le creature sul piano con gravità soggettiva possono muoversi normalmente lungo una superficie solida immaginando “giù” vicino ai loro piedi. Designare questa direzione verso il basso è un’azione gratuita che ha il tratto concentrazione. Se sospesa a mezz’aria, una creatura può replicare il volo scegliendo una direzione “giù” e cadendo in quella direzione, muovendosi fino alla sua Velocità o Velocità di volare. Questo pseudo volo usa l’azione Volare."
+        "TraitDescriptionSubjectiveGravity": "Tutti i corpi di massa possono essere centri di gravità con la stessa forza, ma solo se una creatura non priva di intelletto lo vuole. Gli oggetti incustoditi, gli oggetti e le creature prive di intelletto trattano il piano come se avesse la microgravità. Le creature sul piano con gravità soggettiva possono muoversi normalmente lungo una superficie solida immaginando “giù” vicino ai loro piedi. Designare questa direzione verso il basso è un’azione gratuita che ha il tratto concentrazione. Se sospesa a mezz’aria, una creatura può replicare il volo scegliendo una direzione “giù” e cadendo in quella direzione, muovendosi fino alla sua Velocità o Velocità di volare. Questo pseudo volo usa l’azione Volare.",
+        "SystemNameShort": "Pathfinder",
+        "TraitAnchoring": "Ancorante",
+        "TraitCharm": "Charme",
+        "TraitLashunta": "Lashunta",
+        "TraitManifestation": "Manifestazione",
+        "TraitMystic": "Mistico",
+        "TraitTracking": "Seguire Tracce",
+        "TraitTransfer": "Trasferisci",
+        "TraitUpgrade": "Miglioramento",
+        "WeaponGroupCorrosive": "Corrosiva",
+        "WeaponGroupFlame": "Fiamma",
+        "WeaponGroupMental": "Mentale",
+        "WeaponGroupPoison": "Veleno",
+        "WeaponGroupShock": "Folgorante",
+        "WeaponGroupSonic": "Sonoro"
     },
     "COMBAT": {
         "SidebarTitle": "Tracciatore Incontro",
@@ -12101,6 +12161,54 @@
                 },
                 "walk": {
                     "label": "Avanzare"
+                }
+            }
+        }
+    },
+    "SF2E": {
+        "NPCAbility": {
+            "Atlapak": {
+                "AerialBuoyancy": {
+                    "None": "Nessuno",
+                    "Normal": "Normale"
+                }
+            },
+            "WaywardWarp": {
+                "WarpField": {
+                    "Earth": "Terra",
+                    "Water": "Acqua"
+                }
+            }
+        },
+        "SpecificRule": {
+            "Equipment": {
+                "SolarianCrystals": {
+                    "WeaponPotency": {
+                        "Label": "Potenziamento dell'Arma"
+                    }
+                },
+                "Upgrades": {
+                    "Weapon": {
+                        "FearProjector": {
+                            "CriticalNoteCommercial": "<strong>Runa Spaventosa</strong> Quando ottieni un colpo critico con quest'arma, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 1}.",
+                            "CriticalNoteTactical": "<strong>Runa Spaventosa Superiore</strong> Quando ottieni un colpo critico con quest'arma, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventato 2}."
+                        },
+                        "ShockModule": {
+                            "CriticalNote": "In caso di colpo critico, gli archi elettrici fuoriescono per infliggere una quantità uguale di danno da elettricità fino a due ulteriori creature, a tua scelta, che si trovano entro 3 metri dal bersaglio."
+                        }
+                    }
+                }
+            },
+            "Hellknight": {
+                "Order": {
+                    "Chain": "Catena"
+                }
+            },
+            "Mystic": {
+                "XenodruidBond": {
+                    "Order": {
+                        "Animal": "Ordine dell'Animale"
+                    }
                 }
             }
         }
