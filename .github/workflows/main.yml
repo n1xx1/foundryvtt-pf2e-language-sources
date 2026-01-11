@@ -75,9 +75,9 @@ jobs:
       - name: FVTTPF2E - Get System Version
         working-directory: ./system
         run: |
-          SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' static/system.pf2e.json | tr -d '\n')
+          SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' system.pf2e.json | tr -d '\n')
           echo "systemVersion=$SYSTEM_VERSION" >> $GITHUB_ENV
-          SYSTEM_VERSION_SF=$(grep -oP '(?<="version": ")[^"]+' static/system.sf2e.json | tr -d '\n')
+          SYSTEM_VERSION_SF=$(grep -oP '(?<="version": ")[^"]+' system.sf2e.json | tr -d '\n')
           echo "systemVersionSf=$SYSTEM_VERSION_SF" >> $GITHUB_ENV
 
       - name: Build
