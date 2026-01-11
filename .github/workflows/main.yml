@@ -68,9 +68,9 @@ jobs:
         if: ${{ steps.cache-packs.outputs.cache-hit != 'true' }}
         working-directory: ./system
         run: |
-          npm run build:packs:json --system=sf2e
+          npm run build:packs:json sf2e
           mv json-assets/packs json-assets/packs-sf
-          npm run build:packs:json --system=pf2e
+          npm run build:packs:json pf2e
 
       - name: FVTTPF2E - Get System Version
         working-directory: ./system
