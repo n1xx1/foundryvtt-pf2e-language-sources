@@ -451,7 +451,7 @@
                     "name": "Mandibole"
                 },
                 "vEMwAfv76TagQTy9": {
-                    "name": "Lanciare Rete"
+                    "name": "Scagliare Rete"
                 }
             }
         },
@@ -529,7 +529,7 @@
                     "name": "Percezione del Movimento"
                 }
             },
-            "name": "Melma Vischiosa"
+            "name": "Melma Grigia"
         },
         "Devourer": {
             "items": {
@@ -542,7 +542,7 @@
                 },
                 "2a2eONlkTBanM6W0": {
                     "name": "Risucchiare Vita",
-                    "description": "<p>Quando il divoratore danneggia una creatura vivente con il suo Colpo con l'artiglio, il divoratore ottiene 10 Punti Ferita Temporanei e la creatura deve superare un TS su @Check[fortitude|dc:24], altrimenti diventa @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{risucchiata 1}. Gli ulteriori danni inflitti dal divoratore aumentano il valore di condizione di 1 in caso di tiro salvezza fallito, fino a un massimo di Risucchiato 4.</p>"
+                    "description": "<p>Quando il divoratore danneggia una creatura vivente con il suo Colpo con l'artiglio, il divoratore ottiene 10 Punti Ferita Temporanei e la creatura deve superare un TS su @Check[fortitude|dc:24|options:inflicts:drained], altrimenti diventa @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{risucchiata 1}. Gli ulteriori danni inflitti dal divoratore aumentano il valore di condizione di 1 in caso di tiro salvezza fallito, fino a un massimo di Risucchiato 4.</p>"
                 },
                 "N9qNd1NMgEeyNwcF": {
                     "description": "<p>Un incantatore che bersaglia un divoratore con un incantesimo mentale, @UUID[Compendium.pf2e.spells-srd.Item.Ht35SDf9PDStJfoC]{canto dello spirito}, @UUID[Compendium.pf2e.spells-srd.Item.hVU9msO9yGkxKZ3J]{collera divina}, @UUID[Compendium.pf2e.spells-srd.Item.bay4AfSu2iIozNNW]{esilio}, @UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{esplosione dello spirito}, @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{legare anima}, @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{possessione} o @UUID[Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C]{sentenza divina} può tentare una prova di contrastare per liberare un'anima che il divoratore ha intrappolato con Divorare Anima. Se questo tentativo di contrastare ha successo, l'anima intrappolata viene liberata (anche se la creatura rimane morta) e il divoratore non può usare nessuna carica dell'anima di quella creatura.</p>\n<p>Sotto ogni altro aspetto, i divoratori sono immuni a questi incantesimi.</p>",
@@ -556,12 +556,12 @@
                     "name": "Visione del Vero"
                 },
                 "zreCqcITRrrLbItP": {
-                    "name": "Demenza Precoce"
+                    "name": "Regressione Mentale"
                 }
             },
             "npcAllSaves": "status +1 a tutti i TS contro la magia",
             "description": "<p>Quando i nefandi e gli incantatori malvagi più potenti si smarriscono nelle profondità più remote del multiverso, a volte fanno ritorno come orrendi Non Morti chiamati divoratori, che assimilano la anime dei viventi per alimentare le loro macchinazioni arcane. I loro corpi vengono devastati e ricostruiti, svuotati e deformati, mentre le loro menti sono sottoposte a una trasformazione spirituale. Ottengono le capacità di vincolare le altre anime alla propria e di risucchiare le loro essenze per trarne potere magico, anche se quello che assorbono non li sazia mai. All'interno delle loro casse toraciche si agita un ammasso di figure spettrali deformi, le manifestazioni delle anime assorbite più recentemente dai divoratori.</p>",
-            "npcHp": "(guarigione negativa)"
+            "npcHp": "(guarigione del vuoto)"
         },
         "Shadow Drake": {
             "items": {
@@ -630,7 +630,7 @@
                     "name": "Porta Dimensionale"
                 }
             },
-            "name": "Molosso Instabile"
+            "name": "Cane Intermittente"
         },
         "Solar": {
             "items": {
@@ -806,7 +806,7 @@
                     "name": "Tocco del Vampiro"
                 }
             },
-            "npcHp": "(guarigione negativa)"
+            "npcHp": "(guarigione del vuoto)"
         },
         "Bodak": {
             "items": {
@@ -986,7 +986,7 @@
                     "name": "Porta Dimensionale"
                 },
                 "641IAvHIWYmCo22k": {
-                    "name": "Demenza Precoce"
+                    "name": "Regressione Mentale"
                 },
                 "lzbAKcAmDlWaRGOF": {
                     "name": "Telepatia 30 metri"
@@ -1342,7 +1342,7 @@
                     "description": "<p>Artiglio</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 }
             },
-            "npcHp": "(guarigione negativa)"
+            "npcHp": "(guarigione del vuoto)"
         },
         "Vexgit": {
             "items": {
@@ -1604,7 +1604,7 @@
                     "name": "Rubare Respiro"
                 }
             },
-            "npcHp": "(guarigione negativa)"
+            "npcHp": "(guarigione del vuoto)"
         },
         "Cave Scorpion": {
             "items": {
@@ -1807,18 +1807,18 @@
             "items": {
                 "kcRvfKLlgq9sdmsj": {
                     "name": "Anti-Magia dei Golem",
-                    "description": "<p>Ferito dai danni sonori ([[/r 6d6]], [[/r 2d6]] dai danni ad area o persistenti); guarito dal fuoco (area [[/r 2d6]] PF); Rallentato dal freddo.</p>\n<hr />\n<p>I golem sono immuni a tutti gli incantesimi e le capacità magiche tranne che alle proprie, ma ogni tipo di golem reagisce in modi speciali ad alcuni tipi di magia. Queste eccezioni sono riassunte nel blocco statistiche di ogni golem, mentre le regole complete sono spiegate qui. Se una voce riporta più di un termine (come per esempio \"acqua e freddo\"), allora il golem può essere influenzato da entrambi i tipi di magia.</p>\n<p><strong>Curato da</strong> Tutte le magie di questo tipo che abbiano il golem come bersaglio gli fanno perdere la condizione rallentato e gli forniscono un ammontare di PF pari alla metà dei danni normalmente inflitti dall'incantesimo. Se all'inizio del suo turno il golem si trova in un'area in cui è presente una magia di questo tipo, viene curato dell'ammontare di PF riportato tra parentesi.</p>\n<p><strong>Ferito da</strong> Tutte le magie di questo tipo che abbiano il golem come bersaglio, anziché provocare il consueto effetto, gli infliggono la quantità di danni indicata. Questi danni non appartengono ad alcun tipo. Se all'inizio del suo turno il golem si trova in un'area in cui è presente una magia di questo tipo o è sottoposto a un effetto magico persistente del tipo in questione, il golem subisce i danni tra parentesi.</p>\n<p><strong>Rallentato da</strong> Tutte le magie di questo tipo che abbiano il golem come bersaglio, anziché di provocare il consueto effetto, gli infliggono la condizione @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{rallentato 1} per [[/r 2d6]] round. Se all'inizio del suo turno il golem si trova in un'area in cui è presente una magia di questo tipo, è rallentato 1 per quel round.</p>\n<p><strong>Vulnerabile a</strong> Ogni golem è vulnerabile a uno o più incantesimi specifici, che provocano gli effetti descritti nei rispettivi blocchi statistiche.</p>"
+                    "description": "<p>Ferito dai danni sonori ([[/r 6d6]], [[/r 2d6]] dai danni ad area o persistenti); guarito dal fuoco (area [[/r 2d6]] PF); Rallentato dal freddo.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.GolemAntimagic]</p>"
                 },
                 "4cuSJxJLUg7icXmj": {
                     "name": "Vulnerabile a Frantumare",
                     "description": "<p>Un golem di vetro è influenzato dall'incantesimo @UUID[Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9]{frantumare} come se fosse un oggetto incustodito.</p>"
                 },
                 "LwBTFYgYLRf8gXzt": {
-                    "description": "<p><strong>Innesco</strong> Il golem di vetro è bersagliato da un incantesimo.</p>\n<hr />\n<p><strong>Effetto</strong> Il golem di vetro orienta le sue superfici magiche riflettenti per ritorcere l'incantesimo contro l'incantatore. Se contrasta l'incantesimo con successo, l'effetto viene rivolto contro l'incantatore.</p>",
+                    "description": "<p><strong>Innesco</strong> Il golem di vetro è bersagliato da un incantesimo.</p>\n<hr />\n<p><strong>Effetto</strong> Il golem di vetro orienta le sue superfici magiche riflettenti per ritorcere l'incantesimo contro l'incantatore. Prova a contrastare l'incantesimo tentando una prova di @Check[acrobatics] come sua prova di contrasto. Se contrasta l'incantesimo con successo, l'effetto viene rivolto contro l'incantatore.</p>",
                     "name": "Incantesimo Riflesso"
                 },
                 "lQZGx8hWnzcG2R6l": {
-                    "description": "<p>Il golem di vetro crea ondate di luminosità scintillanti che proiettano Luce Intensa in un'@Template[emanation|distance:60]{emanazione di 18 metri} (e luce fioca per altri 18 metri). La luce dura fino all'inizio del turno successivo del golem di vetro, dopodiché il golem di vetro non può usare Fulgore Abbagliante per [[/br 1d4 #Ricarica Fulgore Abbagliante]]{1d4 round}. Una creatura entro la luce intensa o che entri nella luce intensa deve tentare un TS su @Check[will|dc:23].</p>\n<hr />\n<p><strong>Successo</strong> La creatura non viene influenzata.</p>\n<p><strong>Fallimento</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliata} per 1 round.</p>\n<p><strong>Fallimento Crítico</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecata} per 1 round e poi abbagliata 4 round aggiuntivi.</p>",
+                    "description": "<p>Il golem di vetro crea ondate di luminosità scintillanti che proiettano Luce Intensa in un'@Template[emanation|distance:60]{emanazione di 18 metri} (e luce fioca per altri 18 metri). La luce dura fino all'inizio del turno successivo del golem di vetro, dopodiché il golem di vetro non può usare Fulgore Abbagliante per [[/gmr 1d4 #Ricarica Fulgore Abbagliante]]{1d4 round}. Una creatura entro la luce intensa o che entri nella luce intensa deve tentare un TS su @Check[will|dc:23].</p>\n<hr />\n<p><strong>Successo</strong> La creatura non viene influenzata.</p>\n<p><strong>Fallimento</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{abbagliata} per 1 round.</p>\n<p><strong>Fallimento Crítico</strong> La creatura è @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{accecata} per 1 round e poi abbagliata 4 round aggiuntivi.</p>",
                     "name": "Fulgore Abbagliante"
                 },
                 "0QCPtkVtKzuuVVaK": {
@@ -1838,7 +1838,7 @@
             }
         },
         "Void Zombie": {
-            "npcHp": "(guarigione negativa)",
+            "npcHp": "(guarigione del vuoto)",
             "items": {
                 "4eJg9N0UmfD2Yt6C": {
                     "name": "Pugno"
@@ -1953,7 +1953,7 @@
                     "name": "Parlare con gli Animali (Costante)"
                 },
                 "yqMvEricfnvNAmRG": {
-                    "name": "Incantare corde"
+                    "name": "Intralciare"
                 },
                 "gYzif4wQAb0GX6SV": {
                     "name": "Forma Arborea"
@@ -1995,7 +1995,7 @@
                     "name": "Andatura nel Bosco"
                 },
                 "6zHk4Qr5S1DoGDO9": {
-                    "name": "Incantare corde"
+                    "name": "Intralciare"
                 },
                 "L1omvPzWD2RwttPp": {
                     "name": "Impedimento"
@@ -2066,7 +2066,7 @@
                     "name": "Telepatia 30 metri"
                 },
                 "d5mwrX7WIXXz8R97": {
-                    "name": "spostamento planare (solo se stesso)"
+                    "name": "Spostamento Planare (Solo Se Stesso)"
                 }
             }
         },
@@ -2658,7 +2658,7 @@
                     "name": "Privo di Udito"
                 },
                 "sYzEwjtXD4GsP03b": {
-                    "description": "<p>Dopo 3 o più giorni senza mangiare, un akata può secernere una resina che lo avviluppa in un bozzolo di noqual. Il bozzolo possiede Durezza 9, 40 PF e una Soglia di Rottura pari a 18. Possiede resistenza 5 ai danni dalle fonti magiche. Fintanto che il bozzolo rimane intatto, l'akata non può essere danneggiato e non ha bisogno di mangiare o di bere.</p>\n<p>Mentre si trova all'interno del bozzolo, l'akata acquisisce @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]{percepire vita} 9 metri</p>\n<p> L'akata rimane in uno stato di ibernazione finché non viene esposto a un calore estremo o non percepisce una creatura vivente, nel qual caso può fare irruzione fuori dal bozzolo entro [[/br 1d4 #minuti]]{1d4 minuti}.</p>",
+                    "description": "<p>Dopo 3 o più giorni senza mangiare, un akata può secernere una resina che lo avviluppa in un bozzolo di noqual. Il bozzolo possiede Durezza 9, 40 PF e una Soglia di Rottura pari a 18. Possiede resistenza 5 ai danni dalle fonti magiche. Fintanto che il bozzolo rimane intatto, l'akata non può essere danneggiato e non ha bisogno di mangiare o di bere.</p>\n<p>Mentre si trova all'interno del bozzolo, l'akata acquisisce @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.sebk9XseMCRkDqRg]{percepire vita} 9 metri</p>\n<p> L'akata rimane in uno stato di ibernazione finché non viene esposto a un calore estremo o non percepisce una creatura vivente, nel qual caso può fare irruzione fuori dal bozzolo entro [[/gmr 1d4 #minuti]]{1d4 minuti}.</p>",
                     "name": "Ibernazione"
                 }
             },
