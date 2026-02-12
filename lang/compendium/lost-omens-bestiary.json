@@ -14286,7 +14286,7 @@
       "description": "<p>Stories across Golarion warn children about the monsters that dwell in the shadows, but no story captures the reality of the umbral dragon. Natives of the Netherworld, these occult dragons are at home in the darkness, using it to their advantage both in and out of battle. Umbral dragons rarely worry about fighting fairly, emerging from hiding to strike unwary foes and using their magical breath without compunction. Similarly, in social situations, they often remain in the shadows, operating through other creatures. Even in direct conversation, they frequently obscure their true intent, preferring to avoid ever being pinned down with a solid answer.</p>\n<p>While umbral dragons are rarely altruistic, their preferred diet creates a strange dichotomy that attracts other creatures to them as a potential source of safety, especially in the Netherworld. While much of the multiverse sees undead as a dire threat, for umbral dragons, undead are a tasty snack. Umbral dragons find the flavor of necrotic flesh irresistible and the void energy of incorporeal undead a potent spice, making them one of the few creatures in existence known to hunt the unliving as a source of food.</p>",
       "items": {
         "1drI3xMICR2V66Kl": {
-          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[24d6[void]|options:area-damage] damage in a @Template[type:cone|distance:60] (@Check[reflex|dc:46|basic|traits:occult,void] save). Undead creatures take @Damage[24d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:60]. Each creature within the cone must attempt a @Check[fortitude|dc:46|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 4 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
+          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[24d6[void]|options:area-damage] damage in a @Template[type:cone|distance:60] (@Check[reflex|dc:46|basic|traits:occult,void] save). Undead creatures take @Damage[24d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:60]. Each creature within the cone must attempt a @Check[fortitude|dc:46|options:inflicts:enfeebled,inflicts:blinded|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 4 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is enfeebled 4 for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
           "name": "Tenebrous Breath"
         },
         "3SD3mqoQaMLgqid1": {
@@ -14297,7 +14297,7 @@
           "name": "Claw"
         },
         "CFRwSrKlYZnL62KX": {
-          "description": "<p>The dragon can Hide in dim light even if they don't have cover.</p>",
+          "description": "<p>The dragon can [[/act hide]] in dim light even if they don't have cover.</p>",
           "name": "Hide in Shadows"
         },
         "CteZyO678VjPR5zo": {
@@ -14308,15 +14308,15 @@
           "name": "Netherworld Lore"
         },
         "N3UVaMl8kh5T8Pcu": {
-          "description": "<p>When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a @Check[fortitude|dc:44] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wBFtXxByOza6N9hs]{Effect: Drain Vigor}</p>",
+          "description": "<p>When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a @Check[fortitude|dc:44|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wBFtXxByOza6N9hs]{Effect: Drain Vigor}</p>",
           "name": "Drain Vigor"
         },
         "Pglflm8OdRd3KSSB": {
-          "description": "<p>The dragon's jaws Strikes have the benefit of a ghost touch property rune and deal an additional 8d6 force damage to undead.</p>",
+          "description": "<p>The dragon's jaws Strikes have the benefit of a @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal an additional 8d6 force damage to undead.</p>",
           "name": "Devour Undead"
         },
         "RLrrIwEOLeFfp7SD": {
-          "name": "+2 to all saves vs. shadow"
+          "name": "+2 to All Saves vs. Shadow"
         },
         "VOcg98K0SBZduYe8": {
           "description": "<p>The dragon recharges its Tenebrous Breath whenever it scores a critical hit with a Strike.</p>",
@@ -14337,23 +14337,24 @@
           "name": "Jaws"
         },
         "lkSlQrC9V1FP2hmF": {
-          "name": "Create Undead (shadows and greater shadows only)"
+          "name": "Create Undead (Shadows and Greater Shadows Only)"
         },
         "njewWoMHilbewOwH": {
-          "name": "Darkness (at will)"
+          "name": "Darkness (At Will)"
         },
         "q9AuQoYYKBOBXKhJ": {
           "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Requirements</strong> The triggering creature is in bright light or dim light and has a shadow</p><hr /><p><strong>Effect</strong> The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.</p>",
           "name": "Pin Shadow"
         }
       },
-      "name": "Umbral Archdragon"
+      "name": "Umbral Archdragon",
+      "npcAllSaves": "+2 to all saves vs. shadow"
     },
     "Umbral Archdragon (Spellcaster)": {
       "description": "<p>Stories across Golarion warn children about the monsters that dwell in the shadows, but no story captures the reality of the umbral dragon. Natives of the Netherworld, these occult dragons are at home in the darkness, using it to their advantage both in and out of battle. Umbral dragons rarely worry about fighting fairly, emerging from hiding to strike unwary foes and using their magical breath without compunction. Similarly, in social situations, they often remain in the shadows, operating through other creatures. Even in direct conversation, they frequently obscure their true intent, preferring to avoid ever being pinned down with a solid answer.</p>\n<p>While umbral dragons are rarely altruistic, their preferred diet creates a strange dichotomy that attracts other creatures to them as a potential source of safety, especially in the Netherworld. While much of the multiverse sees undead as a dire threat, for umbral dragons, undead are a tasty snack. Umbral dragons find the flavor of necrotic flesh irresistible and the void energy of incorporeal undead a potent spice, making them one of the few creatures in existence known to hunt the unliving as a source of food.</p>",
       "items": {
         "1drI3xMICR2V66Kl": {
-          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[24d6[void]|options:area-damage] damage in a @Template[type:cone|distance:60] (@Check[reflex|dc:46|basic|traits:occult,void] save). Undead creatures take @Damage[24d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:60]. Each creature within the cone must attempt a @Check[fortitude|dc:46|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 4 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
+          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[24d6[void]|options:area-damage] damage in a @Template[type:cone|distance:60] (@Check[reflex|dc:46|basic|traits:occult,void] save). Undead creatures take @Damage[24d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:60]. Each creature within the cone must attempt a @Check[fortitude|dc:46|options:inflicts:enfeebled,inflicts:blinded|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 4 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is enfeebled 4 for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
           "name": "Tenebrous Breath"
         },
         "3SD3mqoQaMLgqid1": {
@@ -14364,7 +14365,7 @@
           "name": "Claw"
         },
         "CFRwSrKlYZnL62KX": {
-          "description": "<p>The dragon can Hide in dim light even if they don't have cover.</p>",
+          "description": "<p>The dragon can [[/act hide]] in dim light even if they don't have cover.</p>",
           "name": "Hide in Shadows"
         },
         "CteZyO678VjPR5zo": {
@@ -14375,15 +14376,15 @@
           "name": "Netherworld Lore"
         },
         "N3UVaMl8kh5T8Pcu": {
-          "description": "<p>When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a @Check[fortitude|dc:44] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wBFtXxByOza6N9hs]{Effect: Drain Vigor}</p>",
+          "description": "<p>When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a @Check[fortitude|dc:44|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wBFtXxByOza6N9hs]{Effect: Drain Vigor}</p>",
           "name": "Drain Vigor"
         },
         "Pglflm8OdRd3KSSB": {
-          "description": "<p>The dragon's jaws Strikes have the benefit of a ghost touch property rune and deal an additional 8d6 force damage to undead.</p>",
+          "description": "<p>The dragon's jaws Strikes have the benefit of a @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal an additional 8d6 force damage to undead.</p>",
           "name": "Devour Undead"
         },
         "RLrrIwEOLeFfp7SD": {
-          "name": "+2 to all saves vs. shadow"
+          "name": "+2 to All Saves vs. Shadow"
         },
         "XwPyosp1nU1KwGmP": {
           "description": "<p>Shadows fill attacker's eyes. Any creature that must attempt a flat check to target the dragon because of dim light must roll twice and use the worse result.</p>",
@@ -14396,23 +14397,24 @@
           "name": "Jaws"
         },
         "lkSlQrC9V1FP2hmF": {
-          "name": "Create Undead (shadows and greater shadows only)"
+          "name": "Create Undead (Shadows and Greater Shadows Only)"
         },
         "njewWoMHilbewOwH": {
-          "name": "Darkness (at will)"
+          "name": "Darkness (At Will)"
         },
         "q9AuQoYYKBOBXKhJ": {
           "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Requirements</strong> The triggering creature is in bright light or dim light and has a shadow</p><hr /><p><strong>Effect</strong> The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.</p>",
           "name": "Pin Shadow"
         }
       },
-      "name": "Umbral Archdragon (Spellcaster)"
+      "name": "Umbral Archdragon (Spellcaster)",
+      "npcAllSaves": "+2 to all saves vs. shadow"
     },
     "Umbral Dragon (Adult)": {
       "description": "<p>Stories across Golarion warn children about the monsters that dwell in the shadows, but no story captures the reality of the umbral dragon. Natives of the Netherworld, these occult dragons are at home in the darkness, using it to their advantage both in and out of battle. Umbral dragons rarely worry about fighting fairly, emerging from hiding to strike unwary foes and using their magical breath without compunction. Similarly, in social situations, they often remain in the shadows, operating through other creatures. Even in direct conversation, they frequently obscure their true intent, preferring to avoid ever being pinned down with a solid answer.</p>\n<p>While umbral dragons are rarely altruistic, their preferred diet creates a strange dichotomy that attracts other creatures to them as a potential source of safety, especially in the Netherworld. While much of the multiverse sees undead as a dire threat, for umbral dragons, undead are a tasty snack. Umbral dragons find the flavor of necrotic flesh irresistible and the void energy of incorporeal undead a potent spice, making them one of the few creatures in existence known to hunt the unliving as a source of food.</p>",
       "items": {
         "1drI3xMICR2V66Kl": {
-          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[16d6[void]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[reflex|dc:36|basic|traits:occult,void] save). Undead creatures take @Damage[16d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:40]. Each creature within the cone must attempt a @Check[fortitude|dc:36|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
+          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[16d6[void]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[reflex|dc:36|basic|traits:occult,void] save). Undead creatures take @Damage[16d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:40]. Each creature within the cone must attempt a @Check[fortitude|dc:36|options:inflicts:enfeebled,inflicts:blinded|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is enfeebled 2 for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
           "name": "Tenebrous Breath"
         },
         "3SD3mqoQaMLgqid1": {
@@ -14423,7 +14425,7 @@
           "name": "Claw"
         },
         "CFRwSrKlYZnL62KX": {
-          "description": "<p>The dragon can Hide in dim light even if they don't have cover.</p>",
+          "description": "<p>The dragon can [[/act hide]] in dim light even if they don't have cover.</p>",
           "name": "Hide in Shadows"
         },
         "CteZyO678VjPR5zo": {
@@ -14434,11 +14436,11 @@
           "name": "Netherworld Lore"
         },
         "Pglflm8OdRd3KSSB": {
-          "description": "<p>The dragon's jaws Strikes have the benefit of a ghost touch property rune and deal an additional 5d6 force damage to undead.</p>",
+          "description": "<p>The dragon's jaws Strikes have the benefit of a @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal an additional 5d6 force damage to undead.</p>",
           "name": "Devour Undead"
         },
         "RLrrIwEOLeFfp7SD": {
-          "name": "+2 to all saves vs. shadow"
+          "name": "+2 to All Saves vs. Shadow"
         },
         "VOcg98K0SBZduYe8": {
           "description": "<p>The dragon recharges its Tenebrous Breath whenever it scores a critical hit with a Strike.</p>",
@@ -14455,20 +14457,21 @@
           "name": "Jaws"
         },
         "njewWoMHilbewOwH": {
-          "name": "Darkness (at will)"
+          "name": "Darkness (At Will)"
         },
         "q9AuQoYYKBOBXKhJ": {
           "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Requirements</strong> The triggering creature is in bright light or dim light and has a shadow</p><hr /><p><strong>Effect</strong> The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.</p>",
           "name": "Pin Shadow"
         }
       },
-      "name": "Umbral Dragon (Adult)"
+      "name": "Umbral Dragon (Adult)",
+      "npcAllSaves": "+2 to all saves vs. shadow"
     },
     "Umbral Dragon (Adult, Spellcaster)": {
       "description": "<p>Stories across Golarion warn children about the monsters that dwell in the shadows, but no story captures the reality of the umbral dragon. Natives of the Netherworld, these occult dragons are at home in the darkness, using it to their advantage both in and out of battle. Umbral dragons rarely worry about fighting fairly, emerging from hiding to strike unwary foes and using their magical breath without compunction. Similarly, in social situations, they often remain in the shadows, operating through other creatures. Even in direct conversation, they frequently obscure their true intent, preferring to avoid ever being pinned down with a solid answer.</p>\n<p>While umbral dragons are rarely altruistic, their preferred diet creates a strange dichotomy that attracts other creatures to them as a potential source of safety, especially in the Netherworld. While much of the multiverse sees undead as a dire threat, for umbral dragons, undead are a tasty snack. Umbral dragons find the flavor of necrotic flesh irresistible and the void energy of incorporeal undead a potent spice, making them one of the few creatures in existence known to hunt the unliving as a source of food.</p>",
       "items": {
         "1drI3xMICR2V66Kl": {
-          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[16d6[void]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[reflex|dc:36|basic|traits:occult,void] save). Undead creatures take @Damage[16d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:40]. Each creature within the cone must attempt a @Check[fortitude|dc:36|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
+          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[16d6[void]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[reflex|dc:36|basic|traits:occult,void] save). Undead creatures take @Damage[16d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:40]. Each creature within the cone must attempt a @Check[fortitude|dc:36|options:inflicts:enfeebled,inflicts:blinded|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is enfeebled 2 for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
           "name": "Tenebrous Breath"
         },
         "3SD3mqoQaMLgqid1": {
@@ -14479,7 +14482,7 @@
           "name": "Claw"
         },
         "CFRwSrKlYZnL62KX": {
-          "description": "<p>The dragon can Hide in dim light even if they don't have cover.</p>",
+          "description": "<p>The dragon can [[/act hide]] in dim light even if they don't have cover.</p>",
           "name": "Hide in Shadows"
         },
         "CteZyO678VjPR5zo": {
@@ -14490,11 +14493,11 @@
           "name": "Netherworld Lore"
         },
         "Pglflm8OdRd3KSSB": {
-          "description": "<p>The dragon's jaws Strikes have the benefit of a ghost touch property rune and deal an additional 5d6 force damage to undead.</p>",
+          "description": "<p>The dragon's jaws Strikes have the benefit of a @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal an additional 5d6 force damage to undead.</p>",
           "name": "Devour Undead"
         },
         "RLrrIwEOLeFfp7SD": {
-          "name": "+2 to all saves vs. shadow"
+          "name": "+2 to All Saves vs. Shadow"
         },
         "YUmrnz5GJd18QRrM": {
           "name": "Tail"
@@ -14503,20 +14506,21 @@
           "name": "Jaws"
         },
         "njewWoMHilbewOwH": {
-          "name": "Darkness (at will)"
+          "name": "Darkness (At Will)"
         },
         "q9AuQoYYKBOBXKhJ": {
           "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Requirements</strong> The triggering creature is in bright light or dim light and has a shadow</p><hr /><p><strong>Effect</strong> The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.</p>",
           "name": "Pin Shadow"
         }
       },
-      "name": "Umbral Dragon (Adult, Spellcaster)"
+      "name": "Umbral Dragon (Adult, Spellcaster)",
+      "npcAllSaves": "+2 to all saves vs. shadow"
     },
     "Umbral Dragon (Ancient)": {
       "description": "<p>Stories across Golarion warn children about the monsters that dwell in the shadows, but no story captures the reality of the umbral dragon. Natives of the Netherworld, these occult dragons are at home in the darkness, using it to their advantage both in and out of battle. Umbral dragons rarely worry about fighting fairly, emerging from hiding to strike unwary foes and using their magical breath without compunction. Similarly, in social situations, they often remain in the shadows, operating through other creatures. Even in direct conversation, they frequently obscure their true intent, preferring to avoid ever being pinned down with a solid answer.</p>\n<p>While umbral dragons are rarely altruistic, their preferred diet creates a strange dichotomy that attracts other creatures to them as a potential source of safety, especially in the Netherworld. While much of the multiverse sees undead as a dire threat, for umbral dragons, undead are a tasty snack. Umbral dragons find the flavor of necrotic flesh irresistible and the void energy of incorporeal undead a potent spice, making them one of the few creatures in existence known to hunt the unliving as a source of food.</p>",
       "items": {
         "1drI3xMICR2V66Kl": {
-          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[16d6[void]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[reflex|dc:36|basic|traits:occult,void] save). Undead creatures take @Damage[16d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:40]. Each creature within the cone must attempt a @Check[fortitude|dc:36|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
+          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[21d6[void]|options:area-damage] damage in a @Template[type:cone|distance:50] (@Check[reflex|dc:42|basic|traits:occult,void] save). Undead creatures take @Damage[21d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:50]. Each creature within the cone must attempt a @Check[fortitude|dc:42|options:inflicts:enfeebled,inflicts:blinded|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 3 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is enfeebled 3 for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
           "name": "Tenebrous Breath"
         },
         "3SD3mqoQaMLgqid1": {
@@ -14527,7 +14531,7 @@
           "name": "Claw"
         },
         "CFRwSrKlYZnL62KX": {
-          "description": "<p>The dragon can Hide in dim light even if they don't have cover.</p>",
+          "description": "<p>The dragon can [[/act hide]] in dim light even if they don't have cover.</p>",
           "name": "Hide in Shadows"
         },
         "CteZyO678VjPR5zo": {
@@ -14538,15 +14542,15 @@
           "name": "Netherworld Lore"
         },
         "N3UVaMl8kh5T8Pcu": {
-          "description": "<p>When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a @Check[fortitude|dc:40] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wBFtXxByOza6N9hs]{Effect: Drain Vigor}</p>",
+          "description": "<p>When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a @Check[fortitude|dc:40|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wBFtXxByOza6N9hs]{Effect: Drain Vigor}</p>",
           "name": "Drain Vigor"
         },
         "Pglflm8OdRd3KSSB": {
-          "description": "<p>The dragon's jaws Strikes have the benefit of a ghost touch property rune and deal an additional 7d6 force damage to undead.</p>",
+          "description": "<p>The dragon's jaws Strikes have the benefit of a @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal an additional 7d6 force damage to undead.</p>",
           "name": "Devour Undead"
         },
         "RLrrIwEOLeFfp7SD": {
-          "name": "+2 to all saves vs. shadow"
+          "name": "+2 to All Saves vs. Shadow"
         },
         "VOcg98K0SBZduYe8": {
           "description": "<p>The dragon recharges its Tenebrous Breath whenever it scores a critical hit with a Strike.</p>",
@@ -14563,23 +14567,24 @@
           "name": "Jaws"
         },
         "lkSlQrC9V1FP2hmF": {
-          "name": "Create Undead (shadows only)"
+          "name": "Create Undead (Shadows Only)"
         },
         "njewWoMHilbewOwH": {
-          "name": "Darkness (at will)"
+          "name": "Darkness (At Will)"
         },
         "q9AuQoYYKBOBXKhJ": {
           "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Requirements</strong> The triggering creature is in bright light or dim light and has a shadow</p><hr /><p><strong>Effect</strong> The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.</p>",
           "name": "Pin Shadow"
         }
       },
-      "name": "Umbral Dragon (Ancient)"
+      "name": "Umbral Dragon (Ancient)",
+      "npcAllSaves": "+2 to all saves vs. shadow"
     },
     "Umbral Dragon (Ancient, Spellcaster)": {
       "description": "<p>Stories across Golarion warn children about the monsters that dwell in the shadows, but no story captures the reality of the umbral dragon. Natives of the Netherworld, these occult dragons are at home in the darkness, using it to their advantage both in and out of battle. Umbral dragons rarely worry about fighting fairly, emerging from hiding to strike unwary foes and using their magical breath without compunction. Similarly, in social situations, they often remain in the shadows, operating through other creatures. Even in direct conversation, they frequently obscure their true intent, preferring to avoid ever being pinned down with a solid answer.</p>\n<p>While umbral dragons are rarely altruistic, their preferred diet creates a strange dichotomy that attracts other creatures to them as a potential source of safety, especially in the Netherworld. While much of the multiverse sees undead as a dire threat, for umbral dragons, undead are a tasty snack. Umbral dragons find the flavor of necrotic flesh irresistible and the void energy of incorporeal undead a potent spice, making them one of the few creatures in existence known to hunt the unliving as a source of food.</p>",
       "items": {
         "1drI3xMICR2V66Kl": {
-          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[21d6[void]|options:area-damage] damage in a @Template[type:cone|distance:50] (@Check[reflex|dc:42|basic|traits:occult,void] save). Undead creatures take @Damage[16d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:50]. Each creature within the cone must attempt a @Check[fortitude|dc:42|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 3 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
+          "description": "<p>The umbral dragon exhales in one of two ways. They can't use Tenebrous Breath again for [[/gmr 1d4 #Recharge Tenebrous Breath]]{1d4 rounds}.</p><ul><li><strong>Darkness</strong> (occult, void) The dragon breathes a blast of darkness that deals @Damage[21d6[void]|options:area-damage] damage in a @Template[type:cone|distance:50] (@Check[reflex|dc:42|basic|traits:occult,void] save). Undead creatures take @Damage[21d6[force]|options:area-damage]{force} damage instead of void damage.</li><li><p><strong>Shadows</strong> (occult, shadow) The dragon breathes a blast of shadows in a @Template[type:cone|distance:50]. Each creature within the cone must attempt a @Check[fortitude|dc:42|options:inflicts:enfeebled,inflicts:blinded|traits:occult,shadow] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} for 1 round.</p>\n<p><strong>Failure</strong> The creature is enfeebled 3 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is enfeebled 3 for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>",
           "name": "Tenebrous Breath"
         },
         "3SD3mqoQaMLgqid1": {
@@ -14590,7 +14595,7 @@
           "name": "Claw"
         },
         "CFRwSrKlYZnL62KX": {
-          "description": "<p>The dragon can Hide in dim light even if they don't have cover.</p>",
+          "description": "<p>The dragon can [[/act hide]] in dim light even if they don't have cover.</p>",
           "name": "Hide in Shadows"
         },
         "CteZyO678VjPR5zo": {
@@ -14601,15 +14606,15 @@
           "name": "Netherworld Lore"
         },
         "N3UVaMl8kh5T8Pcu": {
-          "description": "<p>When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a @Check[fortitude|dc:40] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wBFtXxByOza6N9hs]{Effect: Drain Vigor}</p>",
+          "description": "<p>When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a @Check[fortitude|dc:40|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wBFtXxByOza6N9hs]{Effect: Drain Vigor}</p>",
           "name": "Drain Vigor"
         },
         "Pglflm8OdRd3KSSB": {
-          "description": "<p>The dragon's jaws Strikes have the benefit of a ghost touch property rune and deal an additional 7d6 force damage to undead.</p>",
+          "description": "<p>The dragon's jaws Strikes have the benefit of a @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal an additional 7d6 force damage to undead.</p>",
           "name": "Devour Undead"
         },
         "RLrrIwEOLeFfp7SD": {
-          "name": "+2 to all saves vs. shadow"
+          "name": "+2 to All Saves vs. Shadow"
         },
         "YUmrnz5GJd18QRrM": {
           "name": "Tail"
@@ -14618,17 +14623,18 @@
           "name": "Jaws"
         },
         "lkSlQrC9V1FP2hmF": {
-          "name": "Create Undead (shadows only)"
+          "name": "Create Undead (Shadows Only)"
         },
         "njewWoMHilbewOwH": {
-          "name": "Darkness (at will)"
+          "name": "Darkness (At Will)"
         },
         "q9AuQoYYKBOBXKhJ": {
           "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Requirements</strong> The triggering creature is in bright light or dim light and has a shadow</p><hr /><p><strong>Effect</strong> The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.</p>",
           "name": "Pin Shadow"
         }
       },
-      "name": "Umbral Dragon (Ancient, Spellcaster)"
+      "name": "Umbral Dragon (Ancient, Spellcaster)",
+      "npcAllSaves": "+2 to all saves vs. shadow"
     },
     "Umbral Dragon (Young)": {
       "description": "<p>Stories across Golarion warn children about the monsters that dwell in the shadows, but no story captures the reality of the umbral dragon. Natives of the Netherworld, these occult dragons are at home in the darkness, using it to their advantage both in and out of battle. Umbral dragons rarely worry about fighting fairly, emerging from hiding to strike unwary foes and using their magical breath without compunction. Similarly, in social situations, they often remain in the shadows, operating through other creatures. Even in direct conversation, they frequently obscure their true intent, preferring to avoid ever being pinned down with a solid answer.</p>\n<p>While umbral dragons are rarely altruistic, their preferred diet creates a strange dichotomy that attracts other creatures to them as a potential source of safety, especially in the Netherworld. While much of the multiverse sees undead as a dire threat, for umbral dragons, undead are a tasty snack. Umbral dragons find the flavor of necrotic flesh irresistible and the void energy of incorporeal undead a potent spice, making them one of the few creatures in existence known to hunt the unliving as a source of food.</p>",
@@ -14652,11 +14658,11 @@
           "name": "Netherworld Lore"
         },
         "Pglflm8OdRd3KSSB": {
-          "description": "<p>The dragon's jaws Strikes have the benefit of a ghost touch property rune and deal an additional 3d6 force damage to undead.</p>",
+          "description": "<p>The dragon's jaws Strikes have the benefit of a @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal an additional 3d6 force damage to undead.</p>",
           "name": "Devour Undead"
         },
         "RLrrIwEOLeFfp7SD": {
-          "name": "+2 to all saves vs. shadow"
+          "name": "+2 to All Saves vs. Shadow"
         },
         "VOcg98K0SBZduYe8": {
           "description": "<p>The dragon recharges its Tenebrous Breath whenever it scores a critical hit with a Strike.</p>",
@@ -14677,7 +14683,8 @@
           "name": "Pin Shadow"
         }
       },
-      "name": "Umbral Dragon (Young)"
+      "name": "Umbral Dragon (Young)",
+      "npcAllSaves": "+2 to all saves vs. shadow"
     },
     "Umbral Dragon (Young, Spellcaster)": {
       "description": "<p>Stories across Golarion warn children about the monsters that dwell in the shadows, but no story captures the reality of the umbral dragon. Natives of the Netherworld, these occult dragons are at home in the darkness, using it to their advantage both in and out of battle. Umbral dragons rarely worry about fighting fairly, emerging from hiding to strike unwary foes and using their magical breath without compunction. Similarly, in social situations, they often remain in the shadows, operating through other creatures. Even in direct conversation, they frequently obscure their true intent, preferring to avoid ever being pinned down with a solid answer.</p>\n<p>While umbral dragons are rarely altruistic, their preferred diet creates a strange dichotomy that attracts other creatures to them as a potential source of safety, especially in the Netherworld. While much of the multiverse sees undead as a dire threat, for umbral dragons, undead are a tasty snack. Umbral dragons find the flavor of necrotic flesh irresistible and the void energy of incorporeal undead a potent spice, making them one of the few creatures in existence known to hunt the unliving as a source of food.</p>",
@@ -14701,11 +14708,11 @@
           "name": "Netherworld Lore"
         },
         "Pglflm8OdRd3KSSB": {
-          "description": "<p>The dragon's jaws Strikes have the benefit of a ghost touch property rune and deal an additional 3d6 force damage to undead.</p>",
+          "description": "<p>The dragon's jaws Strikes have the benefit of a @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune and deal an additional 3d6 force damage to undead.</p>",
           "name": "Devour Undead"
         },
         "RLrrIwEOLeFfp7SD": {
-          "name": "+2 to all saves vs. shadow"
+          "name": "+2 to All Saves vs. Shadow"
         },
         "YUmrnz5GJd18QRrM": {
           "name": "Tail"
@@ -14718,7 +14725,8 @@
           "name": "Pin Shadow"
         }
       },
-      "name": "Umbral Dragon (Young, Spellcaster)"
+      "name": "Umbral Dragon (Young, Spellcaster)",
+      "npcAllSaves": "+2 to all saves vs. shadow"
     },
     "Underworld Archdragon": {
       "description": "<p>If there are any imperial dragons who benefited from moving out of their native elemental plane, it's underworld dragons. Once related solely to the element of fire, early underworld dragons harnessed elemental forces through arcane means for reasons no longer remembered. With each subsequent generation, both their arcane power and mastery over the elements grew. Their efforts were later bolstered by their studies in alchemy, which allowed dragons to cultivate themselves even further with various mutagens and elixirs.</p>\n<p>Today, though their nature is primarily still connected with the element of fire, an underworld dragon can consume wood with ease, threaten entire regions with quakes, lay claim to the minerals and gems in the rocks and stone, and die to form volcanoes that create more land masses. Some even flippantly snort at the lapping waves of the sea, not fearing any retaliation from the sea dragon nations nor their kings. Though their powers might be relatively weaker than another imperial dragon of the same age, their mastery of many elements and the arcane arts makes underworld dragons formidable opponents.</p>",
