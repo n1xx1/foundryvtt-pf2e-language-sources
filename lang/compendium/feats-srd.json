@@ -3391,7 +3391,7 @@
       "name": "Blast Tackle"
     },
     "Blasting Beams": {
-      "description": "<p><strong>Requirements</strong> You have a free hand.</p><hr /><p>A directed beam of heat or an arc of lightning is one of the simplest ways to project energy. You fire a blast or beam from one hand. Make an @Check[deviant|defense:ac]{attack roll} against a creature within 30 feet. If you succeed, the beam deals @Damage[(floor(@actor.level/2)d6)[@actor.flags.pf2e.deviantAbilities.dragon.damageType]]{1d6 damage for every 2 levels} you have to the target, or double damage on a critical success.</p><hr /><p><strong>Awakening</strong> Your beams blast through targets. Instead of making an attack roll to damage a single creature within 30 feet, you can use Blasting Beams as a 2-action activity to damage all creatures in a @Template[line|distance:60], with a @Check[reflex|against:class-spell|basic|options:area-effect] save.</p><hr /><p><strong>Awakening</strong> You can choose to launch smaller, quicker beams from your eyes instead. These deal @Damage[(floor(@actor.level/2)d4)[@actor.flags.pf2e.deviantAbilities.dragon.damageType]]{d4s} instead of d6s, but the attack has the agile trait, and you don't need a hand free to make it, though your eyes must be uncovered.</p>",
+      "description": "<p><strong>Requirements</strong> You have a free hand.</p><hr /><p>A directed beam of heat or an arc of lightning is one of the simplest ways to project energy. You fire a blast or beam from one hand. Make an @Check[deviant|defense:ac]{attack roll} against a creature within 30 feet. If you succeed, the beam deals @Damage[(floor(@actor.level/2)d6)[@actor.flags.system.deviantAbilities.dragon.damageType]]{1d6 damage for every 2 levels} you have to the target, or double damage on a critical success.</p><hr /><p><strong>Awakening</strong> Your beams blast through targets. Instead of making an attack roll to damage a single creature within 30 feet, you can use Blasting Beams as a 2-action activity to damage all creatures in a @Template[line|distance:60], with a @Check[reflex|against:class-spell|basic|options:area-effect] save.</p><hr /><p><strong>Awakening</strong> You can choose to launch smaller, quicker beams from your eyes instead. These deal @Damage[(floor(@actor.level/2)d4)[@actor.flags.system.deviantAbilities.dragon.damageType]]{d4s} instead of d6s, but the attack has the agile trait, and you don't need a hand free to make it, though your eyes must be uncovered.</p>",
       "name": "Blasting Beams"
     },
     "Blaze of Revelation": {
@@ -7761,7 +7761,7 @@
       "name": "Disciple of Shade"
     },
     "Disciple's Breath": {
-      "description": "<p>You unleash your breath weapon without spending focus. This has the effects of your Dragon Breath sorcerer bloodline spell, though it deals @Damage[9d6[@actor.flags.pf2e.dragonDisciple.energyType]] damage instead of its usual damage, and you don't have to cast it or spend a Focus Point. You can't use Disciple's Breath again for [[/r 1d4 #rounds]]{1d4 rounds}.</p>",
+      "description": "<p>You unleash your breath weapon without spending focus. This has the effects of your Dragon Breath sorcerer bloodline spell, though it deals @Damage[9d6[@actor.flags.system.dragonDisciple.energyType]] damage instead of its usual damage, and you don't have to cast it or spend a Focus Point. You can't use Disciple's Breath again for [[/r 1d4 #rounds]]{1d4 rounds}.</p>",
       "featPrerequisites": {
         "0": "Dragon Disciple Dedication",
         "1": "dragon breath sorcerer bloodline spell"
@@ -8484,7 +8484,7 @@
       "name": "Dragon's Presence"
     },
     "Dragon's Rage Breath": {
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You breathe deeply and exhale powerful energy in a @Template[cone|distance:30], dealing @Damage[(@actor.level)d6[@actor.flags.pf2e.barbarian.instinct.dragon.damageType]|options:area-damage] damage to each creature in the area with a @Check[reflex|against:barbarian|basic|options:area-effect] save against your class DC. The damage type matches your instinct's dragon breath, and this action gains the trait of your dragon instinct's tradition.</p>",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You breathe deeply and exhale powerful energy in a @Template[cone|distance:30], dealing @Damage[(@actor.level)d6[@actor.flags.system.barbarian.instinct.dragon.damageType]|options:area-damage] damage to each creature in the area with a @Check[reflex|against:barbarian|basic|options:area-effect] save against your class DC. The damage type matches your instinct's dragon breath, and this action gains the trait of your dragon instinct's tradition.</p>",
       "featPrerequisites": {
         "0": "dragon instinct"
       },
@@ -9278,7 +9278,7 @@
       "name": "Elemental Existence"
     },
     "Elemental Explosion": {
-      "description": "<p><strong>Requirements</strong> You're raging, and you haven't used this ability since you last Raged.</p><hr /><p>You unleash the energy roiling within you, exploding elemental matter in a @Template[emanation|distance:15]. Each creature in the area takes @Damage[(@actor.level)d8[@actor.flags.pf2e.elementalInstinctDamage]|options:area-damage]{1d8 damage per level you possess}, with the same type you chose for elemental rage. Each creature in the area must attempt a @Check[reflex|against:barbarian|basic|options:area-effect]. Elemental Explosion gains the trait of your element.</p>",
+      "description": "<p><strong>Requirements</strong> You're raging, and you haven't used this ability since you last Raged.</p><hr /><p>You unleash the energy roiling within you, exploding elemental matter in a @Template[emanation|distance:15]. Each creature in the area takes @Damage[(@actor.level)d8[@actor.flags.system.elementalInstinctDamage]|options:area-damage]{1d8 damage per level you possess}, with the same type you chose for elemental rage. Each creature in the area must attempt a @Check[reflex|against:barbarian|basic|options:area-effect]. Elemental Explosion gains the trait of your element.</p>",
       "featPrerequisites": {
         "0": "elemental instinct"
       },
@@ -14460,7 +14460,7 @@
       "name": "Heart of Earth"
     },
     "Heart of the Kaiju": {
-      "description": "<p>Witnessing the might of the kaiju King Mogaru, Alru, and Toraloa up close awoke a new ferocity within you. When you transform using @UUID[Compendium.pf2e.feats-srd.Item.54JzsYCx3uoj7Wlz]{Monstrosity Shape}, you can take on a kaiju form. When you take this feat, choose acid, cold, electricity, fire, or sonic damage; this is the damage your breath weapon deals. You can't change this later. The battle form is Gargantuan size with the following specific abilities; the damage values already include the extra die from being a 9th-rank spell.</p>\n<p><strong>Kaiju</strong> Speed 40 feet; physical resistance 5;</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (reach 20 feet), <strong>Damage</strong> 3d12+20 piercing;</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claws (agile, reach 20 feet), <strong>Damage</strong> 3d8+20 slashing;</p>\n<p><strong>Breath Weapon</strong> <span class=\"action-glyph\">2</span> (evocation, primal) Each creature in a @Template[cone|distance:60] takes @Damage[15d6[@item.flags.pf2e.rulesSelections.damageType]|options:area-damage] damage (of your chosen damage type), with a @Check[reflex|against:spell|basic|options:area-effect] save against your spell DC. Once activated, your breath weapon can't be used again for [[/r 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
+      "description": "<p>Witnessing the might of the kaiju King Mogaru, Alru, and Toraloa up close awoke a new ferocity within you. When you transform using @UUID[Compendium.pf2e.feats-srd.Item.54JzsYCx3uoj7Wlz]{Monstrosity Shape}, you can take on a kaiju form. When you take this feat, choose acid, cold, electricity, fire, or sonic damage; this is the damage your breath weapon deals. You can't change this later. The battle form is Gargantuan size with the following specific abilities; the damage values already include the extra die from being a 9th-rank spell.</p>\n<p><strong>Kaiju</strong> Speed 40 feet; physical resistance 5;</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (reach 20 feet), <strong>Damage</strong> 3d12+20 piercing;</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claws (agile, reach 20 feet), <strong>Damage</strong> 3d8+20 slashing;</p>\n<p><strong>Breath Weapon</strong> <span class=\"action-glyph\">2</span> (evocation, primal) Each creature in a @Template[cone|distance:60] takes @Damage[15d6[@item.flags.system.rulesSelections.damageType]|options:area-damage] damage (of your chosen damage type), with a @Check[reflex|against:spell|basic|options:area-effect] save against your spell DC. Once activated, your breath weapon can't be used again for [[/r 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
       "featPrerequisites": {
         "0": "Monstrosity Shape"
       },
@@ -14599,7 +14599,7 @@
       "name": "Helpful Poppet"
     },
     "Helpful Tinkering": {
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You don't just tinker with your own innovation, you fiddle with your allies' weapons as well (for their benefit, of course). Choose an ally in your reach and one of their weapons. Attempt a @Check[crafting|dc:@self.level|adjustment:2] check against a high DC for your level.</p><hr /><p><strong>Success</strong> For 1 minute, the chosen ally's Strikes with the chosen weapon gain the same offensive boost your innovation has.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.MbtWd4PvUHmwPtFO]{Effect: Helpful Tinkering}</p>\n<p><strong>Critical Failure</strong> Your ally takes @Damage[1d6[@actor.flags.pf2e.inventor.offensiveBoost]]{damage} of the type and amount that your offensive boost normally deals on a successful Strike.</p>",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You don't just tinker with your own innovation, you fiddle with your allies' weapons as well (for their benefit, of course). Choose an ally in your reach and one of their weapons. Attempt a @Check[crafting|dc:@self.level|adjustment:2] check against a high DC for your level.</p><hr /><p><strong>Success</strong> For 1 minute, the chosen ally's Strikes with the chosen weapon gain the same offensive boost your innovation has.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.MbtWd4PvUHmwPtFO]{Effect: Helpful Tinkering}</p>\n<p><strong>Critical Failure</strong> Your ally takes @Damage[1d6[@actor.flags.system.inventor.offensiveBoost]]{damage} of the type and amount that your offensive boost normally deals on a successful Strike.</p>",
       "featPrerequisites": {
         "0": "offensive boost"
       },
@@ -16407,7 +16407,7 @@
       "name": "Invoke the Crimson Oath"
     },
     "Invoke the Elements": {
-      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You summon an aura of shimmering heat, flurrying snow, crashing waves, or swirling wind and lightning.</p>\n<p>For 1 minute, you gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} against creatures more than 5 feet away, and any creature that ends its turn within 5 feet of you suffers @Damage[(ternary(gte(@actor.level,17),3,ternary(gte(@actor.level,13),2,1)))d12[@item.flags.pf2e.rulesSelections.changelingType]] damage (@Check[reflex|against:class-spell|basic] save using your class DC or spell DC, whichever is higher).</p>\n<p>At 13th and 17th level, this damage increases by 1d12.</p>\n<p>A veil may changeling deals fire damage, a snow may changeling deals cold damage, a brine may changeling deals bludgeoning damage and the effect gains the water trait, and a virga may changeling deals electricity damage.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You summon an aura of shimmering heat, flurrying snow, crashing waves, or swirling wind and lightning.</p>\n<p>For 1 minute, you gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} against creatures more than 5 feet away, and any creature that ends its turn within 5 feet of you suffers @Damage[(ternary(gte(@actor.level,17),3,ternary(gte(@actor.level,13),2,1)))d12[@item.flags.system.rulesSelections.changelingType]] damage (@Check[reflex|against:class-spell|basic] save using your class DC or spell DC, whichever is higher).</p>\n<p>At 13th and 17th level, this damage increases by 1d12.</p>\n<p>A veil may changeling deals fire damage, a snow may changeling deals cold damage, a brine may changeling deals bludgeoning damage and the effect gains the water trait, and a virga may changeling deals electricity damage.</p>",
       "featPrerequisites": {
         "0": "Brine May, Snow May, Veil May, or Virga May"
       },
@@ -23946,7 +23946,7 @@
       "name": "Reading the Signs"
     },
     "Realm Strider": {
-      "description": "<p>You can teleport across the battlefield, disappearing and appearing in a burst of hellfire and brimstone, a flash of lightning, a cloud of caustic gas, or other environmental hazard common within your planned realm. You can cast @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} as a 4th-rank divine innate spell at will. When you do, spaces adjacent to the one you leave from and the one you appear in are momentarily filled with a damaging energy common to your realm, dealing @Damage[4d6[@actor.flags.pf2e.realmDamage]|options:area-damage|shortLabel] damage of your realm's damage type to creatures in the affected spaces (@Check[reflex|against:class-spell|basic|options:area-effect] save against your class DC or spell DC, whichever is higher).</p>",
+      "description": "<p>You can teleport across the battlefield, disappearing and appearing in a burst of hellfire and brimstone, a flash of lightning, a cloud of caustic gas, or other environmental hazard common within your planned realm. You can cast @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} as a 4th-rank divine innate spell at will. When you do, spaces adjacent to the one you leave from and the one you appear in are momentarily filled with a damaging energy common to your realm, dealing @Damage[4d6[@actor.flags.system.realmDamage]|options:area-damage|shortLabel] damage of your realm's damage type to creatures in the affected spaces (@Check[reflex|against:class-spell|basic|options:area-effect] save against your class DC or spell DC, whichever is higher).</p>",
       "featPrerequisites": {
         "0": "Archfiend Dedication"
       },
@@ -29367,7 +29367,7 @@
       "name": "Storming Breath"
     },
     "Storming Gaze": {
-      "description": "<p>You can open or energize a notable third eye on your forehead to strike with storming power. You deal @Damage[(ceil(@actor.level/2))d4[@item.flags.pf2e.rulesSelections.stormingGaze]|options:area-damage]{3d4 electricity or 3d4 sonic damage} in a @Template[type:cone|distance:15]; Storming Gaze gains this trait. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic] saving throw against the higher of your class DC or spell DC. You can't use this ability again for [[/r 1d4 #Recharge Storming Gaze]]{1d4 rounds}.</p>\n<p>At 7th level and every 2 levels thereafter, the damage increases by 1d4.</p>",
+      "description": "<p>You can open or energize a notable third eye on your forehead to strike with storming power. You deal @Damage[(ceil(@actor.level/2))d4[@item.flags.system.rulesSelections.stormingGaze]|options:area-damage]{3d4 electricity or 3d4 sonic damage} in a @Template[type:cone|distance:15]; Storming Gaze gains this trait. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic] saving throw against the higher of your class DC or spell DC. You can't use this ability again for [[/r 1d4 #Recharge Storming Gaze]]{1d4 rounds}.</p>\n<p>At 7th level and every 2 levels thereafter, the damage increases by 1d4.</p>",
       "name": "Storming Gaze"
     },
     "Stormsoul": {
@@ -31021,7 +31021,7 @@
       "name": "Theoretical Acumen"
     },
     "Thermal Nimbus": {
-      "description": "<p>You direct waves of warmth into or out of your kinetic gate to drastically shift the temperature around you. Choose cold or fire. You and allies in your kinetic aura gain resistance equal to your level to damage of that type. Any creature that starts its turn in your kinetic aura or moves into your aura during its turn takes @Damage[(floor(@actor.level/2))[@actor.flags.pf2e.kineticist.thermalNimbus]] damage. Elemental resistance from a gate junction is cumulative with resistance from Thermal Nimbus.</p>",
+      "description": "<p>You direct waves of warmth into or out of your kinetic gate to drastically shift the temperature around you. Choose cold or fire. You and allies in your kinetic aura gain resistance equal to your level to damage of that type. Any creature that starts its turn in your kinetic aura or moves into your aura during its turn takes @Damage[(floor(@actor.level/2))[@actor.flags.system.kineticist.thermalNimbus]] damage. Elemental resistance from a gate junction is cumulative with resistance from Thermal Nimbus.</p>",
       "name": "Thermal Nimbus"
     },
     "Thick Hide Mask": {
@@ -32155,7 +32155,7 @@
       "name": "Twist Healing"
     },
     "Twist the Knife": {
-      "description": "<p><strong>Requirements</strong> Your last action was a melee Strike that dealt sneak attack damage to an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} target.</p>\n<hr />\n<p>After stabbing your opponent in a weak spot, you tear the wound open. You deal @Damage[(@actor.flags.pf2e.sneakAttackDamage.number)[bleed]]{persistent bleed} damage to the target equal to your number of sneak attack damage dice.</p>",
+      "description": "<p><strong>Requirements</strong> Your last action was a melee Strike that dealt sneak attack damage to an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} target.</p>\n<hr />\n<p>After stabbing your opponent in a weak spot, you tear the wound open. You deal @Damage[(@actor.flags.system.sneakAttackDamage.number)[bleed]]{persistent bleed} damage to the target equal to your number of sneak attack damage dice.</p>",
       "name": "Twist the Knife"
     },
     "Twisting Petal Stance": {
