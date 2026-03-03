@@ -669,7 +669,7 @@
           "name": "Belch Smoke"
         },
         "kJlV6Vzu6KZumb6u": {
-          "description": "<p>10 feet. @Damage[3d6[fire]] damage (@Check[reflex|dc:29|basic] save).</p>",
+          "description": "<p>10 feet. @Damage[3d6[fire]|options:area-damage] damage (@Check[reflex|dc:29|basic|options:area-effect] save).</p>",
           "name": "Volcanic Heat"
         }
       },
@@ -1059,7 +1059,7 @@
           "name": "Paralysis"
         },
         "bnOBGha4PmmSNkZJ": {
-          "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>",
+          "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:34|options:area-effect,inflicts:sickened,inflicts:slowed] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>",
           "name": "Stench"
         },
         "cpgcQN4JOvn67e7q": {
@@ -1178,7 +1178,7 @@
     "Ghastly Bear": {
       "items": {
         "Am5pbCNVDkDBNz5Y": {
-          "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>",
+          "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:26|options:area-effect,inflicts:sickened,inflicts:slowed] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>",
           "name": "Stench"
         },
         "DEoIu6kGyGbwbSn3": {
@@ -2080,13 +2080,13 @@
     "Lesser Dragonstorm": {
       "description": "<p>A small-scale version of a dragonstorm-a churning vortex of wind infused with fire, acid, lightning, poison, and ice-fills Alseta's Ring.</p>",
       "hazardDisable": "<p>@Check[religion|dc:40|name:Call for Divine Intervention] (legendary) to call out to a non-evil deity for direct intervention to disperse the lesser dragonstorm (prayers to Apsu allow characters who are masters in Religion to attempt the check as if they were legendary instead), @Check[thievery|dc:42|name:Deactivate Vengegate|traits:action:disable-a-device] (legendary) to deactivate Vengegate while the manifestation is forcing it open, or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th rank; DC 40) to counteract the lesser dragonstorm.</p>",
-      "hazardRoutine": "<p>(1 action) On its initiative, the lesser dragonstorm reaches out and blasts all creatures within Alseta's Ring. Affected creatures take @Damage[2d8[acid],2d8[cold],2d8[electricity],2d8[fire],2d8[poison]]{10d8 damage} (@Check[reflex|dc:46|basic]), evenly split between acid, cold, fire, electricity, and poison. Creatures that fail their save are pulled 20 feet toward the center of Alseta's Ring (or are knocked prone and pulled 30 feet on a critical failure). After 10 rounds, the lesser dragonstorm is destroyed, but a much greater dragonstorm manifests in the surrounding region-see The Dragonstorm.</p>",
+      "hazardRoutine": "<p>(1 action) On its initiative, the lesser dragonstorm reaches out and blasts all creatures within Alseta's Ring. Affected creatures take @Damage[2d8[acid],2d8[cold],2d8[electricity],2d8[fire],2d8[poison]|options:area-damage]{10d8 damage} (@Check[reflex|dc:46|basic|options:area-effect,forced-movement,inflicts:prone]), evenly split between acid, cold, fire, electricity, and poison. Creatures that fail their save are pulled 20 feet toward the center of Alseta's Ring (or are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and pulled 30 feet on a critical failure). After 10 rounds, the lesser dragonstorm is destroyed, but a much greater dragonstorm manifests in the surrounding region-see The Dragonstorm.</p>",
       "name": "Lesser Dragonstorm"
     },
     "Lesser Manifestation Of Dahak": {
       "items": {
         "3Tll1xyzUd3udZZZ": {
-          "description": "<p>10 feet. @Damage[6d6[fire]] damage (@Check[reflex|dc:42|basic] save)</p>",
+          "description": "<p>10 feet. @Damage[6d6[fire]|options:area-damage] damage (@Check[reflex|dc:42|basic|options:area-effect] save)</p>",
           "name": "Dragon Heat"
         },
         "6m1q9eJjaPr21j44": {
@@ -2583,7 +2583,7 @@
       "description": "<p>Velstracs are horrific, shadow-dwelling fiends who seek ultimate sensation through self-mutilation. They transcend their stoic detachment only when inflicting pain and terror upon their victims, practicing new forms of debasement and torture before then turning their knives on themselves. Although velstracs consider themselves beyond such limitations as morality or mortal taboos, their victims know them as emotionless tormentors who inflict debased, sadistic suffering. They claim to seek perfection in thought, form, and action, although they don't recognize any refinement that doesn't require the painful excision of the flesh or spirit.</p>\n<p>Velstracs manifest from the souls of masochistic or sadistic mortals that are diverted into the Shadow Plane and then forged into forms that suit their vile predilections, ranging from the low-ranking augurs to the aesthetics-obsessed interlocutors.</p>\n<p>Some mortals refer to velstracs as \"kytons,\" a misattribution that the velstracs tolerate with cold amusement. The term \"kyton\" denotes a master or virtuoso among their kind, and these fiends enjoy being labeled masters of their horrid paths to perfection through agony.</p>\n<p>Velstrac storytellers and historians are known as precentors. Trailed by horrific choirs, precentors perform in the courts of the velstrac demagogues.</p>",
       "items": {
         "70hKpMI6lW9A6okT": {
-          "description": "<p>30 feet. When a creature ends its turn in the aura, it must succeed at a @Check[will|dc:38] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>",
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it must succeed at a @Check[will|dc:38|options:area-effect,inflicts:doomed] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>",
           "name": "Unnerving Gaze"
         },
         "8vIB5BOiDuY5uD2a": {
@@ -2594,7 +2594,7 @@
           "name": "Tormenting Touch"
         },
         "DPwtg3OqirDYbsrI": {
-          "description": "<p>The precentor stares at a creature it can see within 30 feet. The target must immediately attempt a @Check[will|dc:38|name:Unnerving Gaze|traits:aura] save against the precentor's unnerving gaze.</p>\n<p>In addition, if the creature was already @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed}, on a failed save, it sees the skin of its own body peel back, making it @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for as long as it remains @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed}. After attempting this save, the creature is then temporarily immune until the start of the precentor's next turn.</p>",
+          "description": "<p>The precentor stares at a creature it can see within 30 feet. The target must immediately attempt a @Check[will|dc:38|options:inflicts:doomed,inflicts:confused] save against the precentor's unnerving gaze.</p>\n<p>In addition, if the creature was already @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed}, on a failed save, it sees the skin of its own body peel back, making it @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for as long as it remains @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed}. After attempting this save, the creature is then temporarily immune until the start of the precentor's next turn.</p>",
           "name": "Focus Gaze"
         },
         "HDdDDHhvuKuOWIXX": {

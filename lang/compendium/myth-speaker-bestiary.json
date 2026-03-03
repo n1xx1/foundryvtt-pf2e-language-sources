@@ -463,7 +463,7 @@
       "description": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that—if lingered upon—can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divining magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek—for a price. Of course, if wit and deception prove insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare. Many medusas build elaborate lairs to call home, often decorated with the statues of their foes turned into macabre trophies on prominent display.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict, even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing their lives.</p>",
       "items": {
         "2lGYb3ZO8pwxgMhD": {
-          "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a @Check[fortitude|dc:29] save against the medusa's petrifying gaze.</p>\n<p>If the creature was already slowed by petrifying gaze before attempting its save, a failed save causes it to be petrified permanently. After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>",
+          "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a @Check[fortitude|dc:29|options:inflicts:slowed,inflicts:petrified] save against the medusa's petrifying gaze.</p>\n<p>If the creature was already @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} by petrifying gaze before attempting its save, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently. After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>",
           "name": "Focus Gaze"
         },
         "EfL7TP1l4LKZwO7P": {
@@ -490,7 +490,7 @@
           "name": "Mythic Skill (Acrobatics)"
         },
         "hSGaU1UT8mzmPFWl": {
-          "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[fortitude|dc:29] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p>The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[fortitude|dc:29|options:area-effect,inflicts:slowed] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p>The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
           "name": "Petrifying Gaze"
         },
         "ltvMN7K0itu2l3WZ": {
@@ -533,11 +533,11 @@
           "name": "Calcifying Venom"
         },
         "ppXm4ejfp4XoedI2": {
-          "description": "<p>This basilisk's saliva reacts to its Petrifying Gaze, allowing the basilisk to spit toward foes and transform the fluid into a rocky missile mid-flight. If the attack is a critical hit, the target must succeed at a @Check[fortitude|dc:25] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+          "description": "<p>This basilisk's saliva reacts to its Petrifying Gaze, allowing the basilisk to spit toward foes and transform the fluid into a rocky missile mid-flight. If the attack is a critical hit, the target must succeed at a @Check[fortitude|dc:25|options:inflicts:prone] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
           "name": "Stone Spittle"
         },
         "tOCS9mkYR5K1LuOZ": {
-          "description": "<p>The basilisk stares at a creature it can see within 30 feet. That creature must attempt a @Check[fortitude|dc:25] save. If it fails and has not already been slowed by Petrifying Glance or this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. If the creature was already slowed by this ability or Petrifying Glance, a failed save causes the creature to be petrified permanently.</p>\n<p>A creature petrified in this manner that is coated (not just splashed) with fresh basilisk blood no more than 1 hour old is instantly restored to flesh. A single basilisk contains enough blood to coat 1d4 Medium creatures in this manner.</p>",
+          "description": "<p>The basilisk stares at a creature it can see within 30 feet. That creature must attempt a @Check[fortitude|dc:25|options:inflicts:slowed,inflicts:petrified] save. If it fails and has not already been slowed by Petrifying Glance or this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. If the creature was already slowed by this ability or Petrifying Glance, a failed save causes the creature to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>\n<p>A creature petrified in this manner that is coated (not just splashed) with fresh basilisk blood no more than 1 hour old is instantly restored to flesh. A single basilisk contains enough blood to coat [[/gmr 1d4 #Medium Creatures]] Medium creatures in this manner.</p>",
           "name": "Petrifying Gaze"
         }
       },
@@ -593,7 +593,7 @@
       "description": "<p>A flock of harpies sometimes forms a tight-knit bond that transcends family ties, personal goals, and individual morals. Like a murmuration of starlings, these so-called gale frenzies begin operating like a superorganism whose movements and thoughts align with uncanny coordination.</p><h2>Harpies at War</h2><p>On the battlefield, harpies traditionally prefer roles more akin to skirmishers or assassins, deadly killers who take advantage of trickery and stealth to accomplish goals of weakening an enemy force. Gale frenzies are a notable exception to this, and a harpy community that includes a gale frenzy is never hesitant to send such a troop into battle instead.</p>",
       "items": {
         "Jdnja3SpDeQqa8Zq": {
-          "description": "<p>30 feet @Check[fortitude|dc:25]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+          "description": "<p>30 feet. @Check[fortitude|dc:25|options:area-effect,inflicts:sickened,inflicts:slowed]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
         },
         "PHJY6fpXJwMmdm5F": {
           "description": "<p>The @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from putrid plague can't end or be reduced until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d4 hours)</p>\n<p><strong>Stage 2</strong> sickened (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day)</p>\n<p><strong>Stage 4</strong> unconscious (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>",
@@ -1049,7 +1049,7 @@
           "name": "Smoke Vision"
         },
         "gMe2u7iR0dJ1TtYi": {
-          "description": "<p>10 feet. @Damage[1d6[fire]], @Check[reflex|dc:18|basic] save. A creature that critically fails its save takes @Damage[1d4[persistent,fire]] damage.</p>",
+          "description": "<p>10 feet. @Damage[1d6[fire]|options:area-damage], @Check[reflex|dc:18|basic|options:area-effect] save. A creature that critically fails its save takes @Damage[1d4[persistent,fire]] damage.</p>",
           "name": "Flame Cloak"
         },
         "oA2zzZSZlRoMyJXy": {
