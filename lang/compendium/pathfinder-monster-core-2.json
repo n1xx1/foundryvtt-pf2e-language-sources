@@ -5025,7 +5025,7 @@
           "name": "Fangs"
         },
         "RObOURRF9qeY15jG": {
-          "description": "<p>The goblin snake belches a cloud of nauseating vapor in a @Template[type:cone|distance:15]. Non-goblin creatures within the cloud must succeed at a @Check[fortitude|dc:16] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. On a critical failure, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it is sickened. Creatures that successfully save are immune for 24 hours. The goblin snake can't use Goblin Breath again for [[/gmr 1d4 #Recharge Goblin Breath]]{1d4 rounds}.</p>",
+          "description": "<p>The goblin snake belches a cloud of nauseating vapor in a @Template[type:cone|distance:15]. Non-goblin creatures within the cloud must succeed at a @Check[fortitude|dc:16|options:area-effect,inflicts:sickened,inflicts:slowed] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. On a critical failure, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it is sickened. Creatures that successfully save are immune for 24 hours. The goblin snake can't use Goblin Breath again for [[/gmr 1d4 #Recharge Goblin Breath]]{1d4 rounds}.</p>",
           "name": "Goblin Breath"
         },
         "cdhP5ZRhi1rmB6Ve": {
@@ -5046,11 +5046,11 @@
           "name": "Snake Empathy"
         },
         "ZtiaPGYU12BviKY1": {
-          "description": "<p>The gobmob snake belches a cloud of nauseating vapor in a @Template[type:cone|distance:15]. Non-goblin creatures within the cloud must succeed at a @Check[fortitude|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. On a critical failure, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it is sickened. Creatures that successfully save are immune for 24 hours. The gobmob snake can't use Goblin Breath again for [[/gmr 1d4 #Recharge Goblin Breath]]{1d4 rounds}.</p>",
+          "description": "<p>The gobmob snake belches a cloud of nauseating vapor in a @Template[type:cone|distance:15]. Non-goblin creatures within the cloud must succeed at a @Check[fortitude|dc:20|options:area-effect,inflicts:sickened,inflicts:slowed] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. On a critical failure, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it is sickened. Creatures that successfully save are immune for 24 hours. The gobmob snake can't use Goblin Breath again for [[/gmr 1d4 #Recharge Goblin Breath]]{1d4 rounds}.</p>",
           "name": "Goblin Breath"
         },
         "faPphSAlwe9IY2Il": {
-          "description": "<p>Whenever a gobmob snake critically fails at an attack roll or skill check, it must succeed at a @Check[flat|dc:5] or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as its heads argue over which of them is to blame. An enemy can provoke an argument by attempting a @Check[deception|dc:20] check as a single action with the auditory, concentrate, linguistic, and mental traits.</p>",
+          "description": "<p>Whenever a gobmob snake critically fails at an attack roll or skill check, it must succeed at a @Check[flat|dc:5] or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as its heads argue over which of them is to blame. An enemy can provoke an argument by attempting a @Check[deception|dc:20|traits:auditory,concentrate,linguistic,mental] check as a single action with the auditory, concentrate, linguistic, and mental traits.</p>",
           "name": "Infighting"
         },
         "p9XiybGymA4tg01N": {
@@ -5062,7 +5062,7 @@
           "name": "Coil"
         },
         "zKqGThMJiWNzcGL4": {
-          "description": "<p>15 feet.</p>\n<p>A gobmob snake's heads constantly bicker and snipe at one another, annoying and distracting anyone nearby. Each non-goblin creature that begins its turn in the aura must attempt a @Check[will|dc:21|options:area-effect] save. On a failure, it takes a –1 status penalty to Perception checks and Will saves for 1 round. On a success, it is temporarily immune for 1 minute.</p>",
+          "description": "<p>15 feet.</p>\n<p>A gobmob snake's heads constantly bicker and snipe at one another, annoying and distracting anyone nearby. Each non-goblin creature that begins its turn in the aura must attempt a @Check[will|dc:21|options:area-effect] save. On a failure, it takes a –1 status penalty to Perception checks and Will saves for 1 round. On a success, it is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.abxVJdBjmotub57z]{Effect: Incessant Yammering}</p>",
           "name": "Incessant Yammering"
         }
       },
@@ -8681,9 +8681,15 @@
         "Zta2Kf1JwyI8OprE": {
           "name": "Burning Cold"
         },
+        "cXZI7H8WQBc8ZimM": {
+          "name": "Mind Reading (At Will)"
+        },
         "lciayGn2ma9dSbcM": {
           "description": "<p>The owb inflicts a curse on one creature taking persistent cold damage from their burning cold Strike, stealing the victim's vibrancy. The creature must attempt a @Check[fortitude|dc:23] save.</p>\n<p>On a failure, the creature gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW]{Light Blindness} and its coloration turns to washed out shades of gray, along with all equipment it carries, wields, or wears. These effects have an unlimited duration. Regardless of the result of its save, the creature is temporarily immune for 1 minute.</p>\n<p>If the owb uses this ability on a caligni, the curse can't be removed short of a @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} ritual or similar powerful magic.</p>",
           "name": "Curse of Darkness"
+        },
+        "otbLE3mOqwIpp84m": {
+          "name": "Darkness (At Will)"
         },
         "uEckCwzDaV3V8orK": {
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW"
@@ -8692,7 +8698,7 @@
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
         },
         "wU509o6LFyjw3Ryz": {
-          "name": "Interplanar Teleport (self only, to or from the Netherworld only)"
+          "name": "Interplanar Teleport (Self Only, To or From the Netherworld Only)"
         }
       },
       "name": "Owb"
@@ -8720,7 +8726,7 @@
           "name": "Shadow's Swiftness"
         },
         "KMq72khzfvaSVvWF": {
-          "name": "Interplanar Teleport (to or from the Netherworld only)"
+          "name": "Interplanar Teleport (To or From the Netherworld Only)"
         },
         "LhA2xtluaWsZrc1T": {
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr"
@@ -8736,7 +8742,7 @@
           "name": "Burning Cold"
         },
         "mJpqT8aBxvEYyKUZ": {
-          "name": "Umbral Journey (see shadow's swiftness)"
+          "name": "Umbral Journey (See Shadow's Swiftness)"
         },
         "qEjTHqZLDRx2o0dJ": {
           "name": "Claw"
