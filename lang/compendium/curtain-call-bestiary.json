@@ -210,7 +210,7 @@
           "name": "Truespeech (Constant)"
         },
         "8uXcG38xduAQgILr": {
-          "description": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Duration</strong> 1 minute</p>\n<p><strong>Trigger</strong> Blackfingers damages a creature</p><hr /><p><strong>Effect</strong> Murderous instinct consumes Blackfingers' mind. He gains a +2 status bonus to attacks and damage with his dagger, but is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and cannot use concentrate abilities. If he brings a creature to 0 Hit Points while consumed by bloodlust, he gains 20 temporary Hit Points, and this effect ends.</p>",
+          "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Duration</strong> 1 minute</p>\n<p><strong>Trigger</strong> Blackfingers damages a creature</p><hr /><p><strong>Effect</strong> Murderous instinct consumes Blackfingers' mind. He gains a +2 status bonus to attacks and damage with his dagger, but is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and cannot use concentrate abilities. If he brings a creature to 0 Hit Points while consumed by bloodlust, he gains 20 temporary Hit Points, and this effect ends.</p>",
           "name": "Consumed by Bloodlust"
         },
         "H54aMO2iGUyWXfld": {
@@ -221,7 +221,7 @@
           "name": "Change Shape"
         },
         "QS6FQBAIc1CiIeve": {
-          "description": "<p>60 feet. Each creature that enters or starts its turn within the area must succeed at a @Check[fortitude|dc:39] saving throw or gain weakness 10 to poison (weakness 15 on a critical failure). Worshippers of Norgorber are immune, as are those who drank any poison in area <strong>C3</strong>.</p>",
+          "description": "<p>60 feet. Each creature that enters or starts its turn within the area must succeed at a @Check[fortitude|dc:39|options:area-effect] saving throw or gain weakness 10 to poison (weakness 15 on a critical failure). Worshippers of Norgorber are immune, as are those who drank any poison in area <strong>C3</strong>.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.6fPk2jOEp7LOsV7J]{Effect: Venomous Aura}</p>",
           "name": "Venomous Aura"
         },
         "SxeGEPkZvIxq1iVc": {
@@ -250,7 +250,7 @@
         },
         "tew93zc38tdbtkse": {
           "description": "<p>Blackfingers senses any poisoned creature. He can spend an action with the concentrate trait to determine the poison's type and current stage.</p>",
-          "name": "Poison Sense (Precise) 30 feet"
+          "name": "Poison Sense (Precise) 60 feet"
         },
         "z4ms8jYrhlVDW4dl": {
           "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Blackfingers causes the save DC of a dose of poison he holds in a hand (or that coats a weapon he holds) to increase to DC 42 until the start of his next turn.</p>",
@@ -1864,7 +1864,7 @@
           "name": "Mist (At Will)"
         },
         "FVDPg3HIsGffnOjd": {
-          "description": "<p>The rusalka touches a creature within 5 feet using their hand, stirring up memories of regret and shame. The target must attempt a @Check[will|dc:35] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and it must use its first action on its next turn to Strike itself, automatically hitting.</p>",
+          "description": "<p>The rusalka touches a creature within 5 feet using their hand, stirring up memories of regret and shame. The target must attempt a @Check[will|dc:35|options:inflicts:sickened,inflicts:stunned] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 1 and stunned 1, and it must use its first action on its next turn to Strike itself, automatically hitting.</p>",
           "name": "Shameful Touch"
         },
         "GYQMiGEbQopeX3bK": {
@@ -1895,7 +1895,7 @@
           "name": "Entangling Tresses"
         },
         "aJhxWGibV6WOF98e": {
-          "description": "<p>The rusalka cries out a compelling invitation. Each non-fey creature within a @Template[emanation|distance:300] must attempt a @Check[will|dc:27] save. The effect lasts for 1 round, but if the rusalka uses Beckoning Call again on subsequent rounds, the duration extends by 1 round for all affected creatures. Once a creature succeeds at any save against Beckoning Call, that creature is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} and must spend each of its actions to move closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the creature is freed from captivation at the end of the rusalka's turn.</p>\n<p><strong>Critical Failure</strong> As failure, but if attacked by the rusalka, the creature can attempt a new save only at the start of its next turn, rather than being freed at the end of the rusalka's turn.</p>",
+          "description": "<p>The rusalka cries out a compelling invitation. Each non-fey creature within a @Template[emanation|distance:300] must attempt a @Check[will|dc:27|options:area-effect,inflicts:fascinated] save. The effect lasts for 1 round, but if the rusalka uses Beckoning Call again on subsequent rounds, the duration extends by 1 round for all affected creatures. Once a creature succeeds at any save against Beckoning Call, that creature is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} and must spend each of its actions to move closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the creature is freed from captivation at the end of the rusalka's turn.</p>\n<p><strong>Critical Failure</strong> As failure, but if attacked by the rusalka, the creature can attempt a new save only at the start of its next turn, rather than being freed at the end of the rusalka's turn.</p>",
           "name": "Beckoning Call"
         },
         "pUaJ8jT9PU4nC3tw": {
