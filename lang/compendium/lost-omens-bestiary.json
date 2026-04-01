@@ -1434,6 +1434,33 @@
       "npcAllSaves": "+2 status to all saves vs. primal",
       "npcSpeed": "swamp passage"
     },
+    "Brastlewark Sapper Squad": {
+      "description": "<p>Discoveries made in Brastlewark played as substantial a role in the construction of the Aspodean Wall as in the battles now raging in its shadow, as teams of gnomish sappers trained in the creation and deployment of powerful explosives developed by alchemists seize the opportunity to put their studies to practical use.</p>",
+      "items": {
+        "7Uu1UPy04Ij0AJ7D": {
+          "description": "<p>A sapper squad's offensive abilities ignore the first 5 points of Hardness when deployed against inanimate objects or structures.</p>",
+          "name": "Demolition Expertise"
+        },
+        "AUYVUTXuucgUAcS6": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The sapper squad strikes with their picks against enemies in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:18|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+7)[piercing]|options:area-damage] damage</p>",
+          "name": "Pick Assault"
+        },
+        "KRryVKL4DBlEy93Y": {
+          "description": "<p>While Burrowing, the sapper squad can position its segments into a 20-foot-wide straight line and move at half Speed to leave a 20-foot-wide tunnel behind them that can be safely traversed by other creatures. Unless shored up by a crew of skilled laborers, the tunnel collapses after 10 minutes.</p>",
+          "name": "Excavation"
+        },
+        "g1Lig3i0zGnVzWLk": {
+          "description": "<p><strong>Requirements</strong> The sapper squad is underground</p><hr /><p><strong>Effect</strong> The sappers deploy explosive charges to displace the earth above them. The surface area within 15 feet directly above the sappers' spaces becomes difficult terrain until the start of their next turn. Any creature already in the area takes @Damage[1d6[bludgeoning]] damage (@Check[reflex|dc:18|basic] save). On a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+          "name": "Undermine"
+        },
+        "ggUv7iFTd2uOCz2q": {
+          "description": "<p>The squad bombards a @Template[type:burst|distance:10] within 30 feet with satchel charges, dealing @Damage[2d6[fire],1d6[bludgeoning]|options:area-damage]{2d6 fire damage and 1d6 bludgeoning damage} to all creatures in the area (@Check[reflex|dc:18|basic] save). On a critical failure, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round. When the squad is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "name": "Fire in the Hole!"
+        }
+      },
+      "name": "Brastlewark Sapper Squad",
+      "npcSpeed": "excavation, troop movement"
+    },
     "Brine Archdragon": {
       "items": {
         "2Xn956ojmWrfSKlv": {
@@ -4145,6 +4172,39 @@
       },
       "name": "Despair Archdragon (Spellcaster)"
     },
+    "Devastation Cavalry Brigade": {
+      "description": "<p>Among the troops sent by Oprak's Ironfang Legion to aid Nirmathas against the Molthuni invasion are its dreaded firestorm battalions, units with special training in the tactical use of bombs and explosives. Each of these battalions carries enough alchemical ordnance to bathe an entire battlefield in flame several times over.</p>",
+      "items": {
+        "BOYNnBSRj4WilY7G": {
+          "description": "<p>10 feet, @Check[will|dc:24]. Enemy creatures that enter or begin their turn in the area must attempt a Will save. Regardless of the result of the saving throw, the creature is then temporarily immune to the aura for 1 minute.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is frightened 1 and can't use reactions for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as it sobs uncontrollably.</p>",
+          "name": "Crushing Despair"
+        },
+        "KedsaMxzQxJwSUJg": {
+          "description": "<p>Medium or smaller, @Damage[4d8[bludgeoning]] damage, @Check[reflex|dc:21|basic]; a creature that critically fails the save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+        },
+        "bPMkooUrF8gRnnGv": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The brigade slashes mercilessly at enemies in a @Template[type:emanation|distance:10] (@Check[reflex|dc:21|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[piercing],1d4[spirit]|options:area-damage]{1d8 piercing damage plus 1d4 spirit}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[2d8[piercing],2d4[spirit]|options:area-damage]{2d8 piercing damage plus 2d4 spirit}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+4)[piercing],2d4[spirit]|options:area-damage]{2d8+4 piercing damage plus 2d4 spirit}</p>",
+          "name": "Swords of Szuriel"
+        },
+        "doLgYsksluW8RrFA": {
+          "description": "<p>Effects that target only animals, humans, or humanoids may not work on the brigade, subject to the GM's discretion.</p>",
+          "name": "Mounted Troop"
+        },
+        "fSOF9mb9UO3tEhbk": {
+          "description": "<p>While moving on land, a devastation cavalry brigade ignores all difficult terrain.</p>",
+          "name": "Astride a Red Horse"
+        },
+        "gobqWy3RO4NAcpfZ": {
+          "name": "Abaddon Lore"
+        },
+        "pnSwPIQ2ghGc0vZv": {
+          "description": "<p>The brigade draws or reloads their crossbows, then launches a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 120 feet that deals @Damage[3d8[piercing]|options:area-damage] damage (@Check[reflex|dc:21|basic] save). When the troop is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "name": "Rain of Ruin"
+        }
+      },
+      "name": "Devastation Cavalry Brigade",
+      "npcSpeed": "troop movement"
+    },
     "Diabolic Archdragon": {
       "description": "<p>Hell, according to some theologians, is a living entity in and of itself. Diabolic dragons, these scholars argue, are just extensions of the plane, living creatures that break off from Hell to enact its will. Whether this is true or whether diabolical dragons are simply the reborn souls of dragons sent to Hell, the fact remains that these dragons are powerful, cunning, and tyrannical. Every diabolic dragon's goal is to further Hell's will, though how this happens can vary. Regardless of their goals, these dragons always approach newcomers with an unsettling calmness.</p>\n<hr />\n<p>Dragons come in myriad forms, with many having magical abilities or connections to magic. Some dragons draw greater power from magic than others, allowing them to manifest abilities or alter their physiques with prolonged exposure to magic. These dragons become more powerful as they age and strengthen their connections with their magical origins. Scholars debate the classification of these dragons, with some preferring the name magical dragons and others using traditional dragons due to their connection to specific magical traditions. Regardless of their names, these dragons share a number of characteristics: their ability to tap into magical energies, intensified might and cunning as they grow older, and an inclination to hoard vast amounts of treasure and wealth.</p>",
       "items": {
@@ -5017,6 +5077,25 @@
       },
       "name": "Failed Prophet"
     },
+    "Fangwood Sentinel Corps": {
+      "description": "<p>These disparate groups of insurgents seek to defend Nirmathas from conquest by launching a guerrilla offensive from the depths of the Fangwood against the armies marching across their border.</p>",
+      "items": {
+        "HG95W6TzsEjfVCX4": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The sentinels draw or reload their longbows, then let fly an arcing volley of arrows as a @Template[type:burst|distance:10] within 100 feet that deals @Damage[4d4[piercing]|options:area-damage] damage (@Check[reflex|dc:18|basic] save). When the troop is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "name": "Hail of Thorns"
+        },
+        "X39HpZtC2vbaNAIn": {
+          "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> The sentinels reduce an enemy with a level equal to or greater than their own to 0 Hit Points</p><hr /><p><strong>Effect</strong> The sentinels' victory inspires allies and demoralizes enemies. Each ally in a @Template[type:emanation|distance:15] gains a +1 status bonus to attack rolls for 1 round. Each enemy in the same area must succeed at a @Check[will|dc:18] save or take a –1 penalty to attack rolls for 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.MMTeeCVAr6rDgYtI]{Effect: Thus Always to Tyrants}</p>",
+          "name": "Thus Always to Tyrants"
+        },
+        "jpyWt7rXpyBQhooA": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The sentinels bring their morningstars to bear against enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:18|basic] save). Damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+4)[bludgeoning]|options:area-damage] damage</p>",
+          "name": "Strike from the Heart"
+        }
+      },
+      "name": "Fangwood Sentinel Corps",
+      "npcSpeed": "troop movement"
+    },
     "Five-Color Orchid Mantis": {
       "description": "<p>Few creatures appear as beautiful as the orchid mantises. Their elegant form and coloration resemble flowers, and many people adopt the delicate creatures as short-lived pets. While these mundane insects aren't dangerous to humanoids, they can still bring down prey several times their own size. Unfolding from their flowery pose, orchid mantises lash out with blinding speed, even chasing foraging butterflies with their sharp-toothed arms and powerful bite.</p>\n<hr />\n<p>Orchid mantises naturally live short lives that don't offer a great deal of time to gather spiritual energy. However, a mantis in a rich enough environment can extend their life span and grow to understand the elements. These creatures become five-color orchid mantises and, despite their violent attitudes, are thought to be especially sacred to Qi Zhong. As such, these dangerous mantises are often avoided or placated while gathering herbs rather than driven off.</p>",
       "items": {
@@ -5795,6 +5874,33 @@
       },
       "name": "Giant Orchid Mantis"
     },
+    "Golden Erinys Novitiate Circle": {
+      "description": "<p>The convents of the Sisterhood of the Golden Erinys train female monks who study a form of martial arts based on the devils of Hell.</p>",
+      "items": {
+        "AqFrAJGLevyO739Q": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The novitiates are taught how best to cause pain with their strikes. The novitiates use a 1-action Flurry of Vengeance. Each creature that fails its Reflex save is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round as its body is wracked with excruciating agony.</p>",
+          "name": "Pain Points"
+        },
+        "f41UP17HGartnVYx": {
+          "description": "<p>The novitiates unleash a hail of thrown blades, dealing @Damage[3d8[slashing]|options:area-damage] damage in a @Template[type:burst|distance:10] within 20 feet (@Check[reflex|dc:19|basic] save). When the novitiates are reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "name": "Storm of Blades"
+        },
+        "gtrxKSHe25UEfxM8": {
+          "description": "<p><strong>Trigger</strong> A creature within 5 feet uses a move action or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> The novitiates strike at the triggering creature, dealing @Damage[(2d8+3)[bludgeoning]] damage (@Check[reflex|dc:19|basic] save). If the save is a critical failure and the trigger was a move action, that action is disrupted.</p>",
+          "name": "Opportunistic Halt"
+        },
+        "tE9jSrGI6UX2oEpw": {
+          "description": "<p>Sisters of the Golden Erinys are renowned for their uncanny reflexes, which grant them a +2 circumstance bonus to AC against ranged attacks.</p>",
+          "name": "Unholy Quickness"
+        },
+        "uSZNrlhE5HULrwyU": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The novitiates unleash a barrage of painful unarmed blows against enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:19|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+3)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[piercing]|options:area-damage] damage</p>",
+          "name": "Flurry of Vengeance"
+        }
+      },
+      "name": "Golden Erinys Novitiate Circle",
+      "npcSpeed": "troop movement"
+    },
     "Goldpebble": {
       "description": "<p>Goldpebbles are large water snakes with bodies that, to the unassuming eye, appear to be nothing more than river rocks, some glinting with traces of gold. These terrifying creatures mimic their natural surroundings to ambush greedy adventurers.</p>\n<p>A Taldan alchemist created the goldpebble with the ultimate goal of breeding a creature capable of reproducing at a high rate while possessing a body that would turn to gold upon death, effectively ensuring an endless supply of wealth. Initially, the experiments were successful, with each shed of the snake's skin producing trace amounts of gold. As the snakes grew, however, the amount of gold didn't, and the snakes themselves soon proved unwieldy and difficult to contain. Unhindered, the alchemist redoubled her efforts, adding alchemical reagents to her experiments and leaning more heavily into inhumane tactics to produce her desired results. These tactics failed to lead to an increase in the amount of gold produced but instead mutated the creatures' venom, giving them the ability to slowly turn a victim's blood to frozen water. Empowered with this new ability, the goldpebbles felled their own creator and escaped to spread across the Inner Sea region.</p>\n<p>Goldpebbles are generally solitary creatures except for their biannual mating season. During this time, they're even more dangerous than usual, becoming territorial and protective of their young while attacking in groups. Once the eggs hatch, the breeding grounds are filled with hundreds of tiny snakes slithering in all directions in search of new territory. These young goldpebbles are less in control of their alchemical powers than their adult counterparts and have the potential to freeze the water around them at a moment's notice.</p>\n<p>Goldpebbles rely heavily on ambush tactics. Often found hiding in shallow pools, rivers, and lakes, goldpebbles will lure unsuspecting adventurers to their lairs using their gold-flecked scales. Once within reach, goldpebbles attack with a gruesome bite that can poison an unlucky victim, slowly turning their prey's blood into freezing water. Goldpebbles can also chill the waters around them, making it incredibly difficult for prey to survive.</p>",
       "items": {
@@ -5997,6 +6103,35 @@
       },
       "name": "Gunpowder Ooze"
     },
+    "Hellbound Honor Guard": {
+      "description": "<p>Chelaxian nobles, military officers, and other dignitaries deemed deserving by House Thrune are sometimes granted the protection of a detail of these elite soldiers: unwavering champions of the Chelaxian military machine who have sworn themselves to Asmodeus in exchange for unmatched strength and resilience.</p>",
+      "items": {
+        "0MO1YMibHVCUMWtr": {
+          "description": "<p>When the hellbound honor guard is reduced to 0 Hit Points, a fiery fissure forms beneath their feet and a host of screeching devils pours forth to drag their souls to Hell. All creatures within a @Template[type:emanation|distance:5] take 3d8 fire and @Damage[3d8[spirit]|options:area-damage] damage (@Check[reflex|dc:29|basic] save), and all creatures within a @Template[type:emanation|distance:10] must attempt a @Check[will|dc:29] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). The rift then immediately closes.</p>",
+          "name": "Final Reward"
+        },
+        "CXC69qqjZtTFM5Ny": {
+          "name": "Hell Lore"
+        },
+        "dcmMLT9ESA8SuZIt": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The honor guard strikes with their maces against enemies in a @Template[type:emanation|distance:5], battering souls as well as bodies (@Check[reflex|dc:29|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[bludgeoning],1d6[spirit]|options:area-damage]{1d6+1 bludgeoning damage plus 1d6 spirit damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+9)[bludgeoning],2d6[spirit]|options:area-damage]{2d6+9 bludgeoning damage plus 2d6 spirit damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+12)[bludgeoning],2d6[spirit]|options:area-damage]{3d6+12 bludgeoning damage plus 2d6 spirit damage}</p>",
+          "name": "Crush the Spirit"
+        },
+        "mGT3eoxUm6F7xtpb": {
+          "description": "<p><strong>Trigger</strong> A creature within 5 feet uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> The honor guard mobs the triggering creature, inflicting @Damage[(2d6+9)[bludgeoning],2d6[spirit]]{2d6+9 bludgeoning plus 2d6 spirit} damage (@Check[reflex|dc:29|basic] save).</p>",
+          "name": "Opportunistic Strikes"
+        },
+        "qKIoLPo7nvyIgASI": {
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The hellbound honor guard has only 2 segments</p><hr /><p><strong>Effect</strong> On the edge of defeat, the honor guard calls a paean to Asmodeus for aid. The honor guard regains @Damage[3d8[healing]] Hit Points. As standard for troops reduced to 2 segments, they can't regain Hit Points above the lowest listed threshold.</p>",
+          "name": "Vigor of the Damned"
+        },
+        "y2dp8VTDedY5mLyN": {
+          "description": "<p>30 feet. @Check[will|dc:29|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+        }
+      },
+      "name": "Hellbound Honor Guard",
+      "npcSpeed": "troop movement"
+    },
     "Hellknight Armiger": {
       "description": "<p><em>This menacing dwarf wears a suit of armor emblazoned with the symbol of her Hellknight order, and she wields a mighty flail.</em></p>\n<p>Armigers are the foot soldiers of the Hellknights and form the largest group of members for most orders. Whatever their specific reasons for joining the organization, armigers share the Hellknights' dedication to spreading the rule of law across Golarion. This commitment sees them serving in a variety of missions, whether it be rooting out bandits and crooks, imprisoning smugglers and black marketeers, or investigating rumors of sedition. While frontier villagers sometimes welcome the assurance of safety that the Hellknights bring, free thinkers and historians chafe at the restrictions on movement and expression that armigers enforce.</p>\n<p>Although armigers are not yet full knights, those who underestimate them have made a grievous error. Once ordered to take a position or eliminate a foe, an armiger is unerring in fulfilling their order. During battle, they wade eagerly into the fray, targeting servants of chaotic gods and those they observe using underhanded tactics.</p>\n<hr />\n<p>Firm believers in enforcing the law at any cost, Hellknights are often based in Cheliax, but they travel to all across Golarion to enforce their ideals of order. This rigid viewpoint and intolerance for dissent means that PCs can just as easily find villains in these Hellknights as they can allies; an agent of the Hellknight Order of the Chain might aid the PCs in subduing a vile and violent criminal, or might hunt down the PCs due to mild infractions of unjust laws. The Hellknight armiger presented here might be an unrepentant enforcer seeking to quell rebellion among the oppressed, a dedicated monster hunter, a censor of artistic innovation, a savior to victims of kidnapping, a spy and torturer, or a lawful crusader against demonic incursions. Hellknight paravicars, meanwhile, are absolute exemplars of their orders, and PCs who encounter them will likely find themselves in the midst of momentous events.</p>",
       "items": {
@@ -6056,6 +6191,40 @@
         }
       },
       "name": "Hellknight Paravicar"
+    },
+    "Hellknight Retrieval Unit": {
+      "description": "<p>These bands of Hellknight armigers sworn to the Order of the Chain are tasked with tracking down and apprehending those deemed criminals by House Thrune. They are trained to take their targets alive whenever possible but will employ lethal tactics when necessary.</p>",
+      "items": {
+        "0KnE1teDSlBSRA8Y": {
+          "description": "<p>The unit draws bolas and hurls them in a @Template[type:cone|distance:15], inflicting @Damage[3d6[bludgeoning]|traits:nonlethal]{3d6 nonlethal bludgeoning} to creatures in the area (@Check[reflex|dc:21|basic] save). Any creature who critically fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes an additional @Damage[1d4[bludgeoning]|traits:nonlethal]{1d4 nonlethal bludgeoning} damage.</p>",
+          "name": "Bola Barrage"
+        },
+        "NKC9osJJNZsHIY7Q": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The unit brutally pummels all enemies in a @Template[type:emanation|distance:5] with their flails (@Check[reflex|dc:21|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+5)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+10)[bludgeoning]|options:area-damage] damage</p>",
+          "name": "Whirling Onslaught"
+        },
+        "WC37SixZJDG2nrJC": {
+          "description": "<p>The unit Seeks in a @Template[type:burst|distance:30] within line of sight and [[/act point-out]]{Points Out} up to three creatures in that area.</p>",
+          "name": "Identify Targets"
+        },
+        "XUnUiVbgStOiWsis": {
+          "description": "<p><strong>Requirements</strong> The retrieval unit's last action was a Whirling Onslaught that dealt damage to at least one creature of Medium size or smaller</p><hr /><p><strong>Effect</strong> The unit attempts a single Athletics check to [[/act grapple]], comparing the result to the Fortitude DC of each creature that they currently have @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} or was damaged by the required Whirling Onslaught. It can target up to a maximum number of creatures equal to double the troop's current number of segments.</p>",
+          "name": "Coordinated Subdual"
+        },
+        "chFelUsikN9c3LAd": {
+          "description": "<p><strong>Trigger</strong> The unit Strides</p>\n<p><strong>Requirements</strong> The unit has one or more creatures @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>Effect</strong> Before moving any of its segments, the unit attempts a single @Check[athletics|against:fortitude] check against the Fortitude DC of all creatures it has grabbed or restrained. On a success, the creature is moved alongside the unit, moving the same distance and direction until the end of the unit's current turn. The unit can't move a total number of creatures greater than double its current number of segments.</p>",
+          "name": "You're Coming with Us"
+        },
+        "i7VV1SOcmxfrq2I0": {
+          "description": "<p>The unit's Whirling Onslaught gains the nonlethal trait until the end of their next turn.</p>",
+          "name": "Pacify"
+        },
+        "opM1pjIcd3QZs5SW": {
+          "name": "Hell Lore"
+        }
+      },
+      "name": "Hellknight Retrieval Unit",
+      "npcSpeed": "troop movement"
     },
     "Hopping Head": {
       "description": "<p>A hopping head is shaped like a humanoid head, sometimes with elaborate facial features, other times with a crude toylike visage. Below the head is a spring-loaded column that allows the hopping head to move itself around.</p>",
@@ -6389,6 +6558,41 @@
         }
       },
       "name": "Inkdrop"
+    },
+    "Iriatykian Outrider Band": {
+      "description": "<p>Named for Horselord Iriatykis, forger of the mythic spear <em>Shadowpiercer</em> and instigator of the most successful rebellion against Nidal's shadowy overlords in living memory, these grimly determined riders seek to resist the brutal authority of the Umbral Court over the lands and peoples they call their own. While their efforts have mostly been focused on liberating rural communities on the nation's outskirts thus far, they have also begun targeted strikes against mercenary bands and supply caravans traveling through Nidal on their way to aid the Chelaxian war effort.</p>",
+      "items": {
+        "0DqJnTG0QE7xDUqg": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The outriders plunge their longspears at enemies in a @Template[type:emanation|distance:10] (@Check[reflex|dc:22|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+6)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+11)[piercing]|options:area-damage] damage</p>",
+          "name": "Skewering Strikes"
+        },
+        "K5E3yWaTQ0oP1wLg": {
+          "description": "<p>The outriders Stride twice with a +10-foot circumstance bonus to their Speed. If they move at least 10 feet, they deal @Damage[(2d8+6)[piercing]|options:area-damage] damage (@Check[reflex|dc:22|basic] save) to enemies in a @Template[type:emanation|distance:10] at the end of their movement. If at least one enemy damaged by the charge is the source of a magical darkness effect, the outriders can immediately use their Shatter Shadows ability as a free action, gaining a +1 circumstance bonus to the counteract check.</p>",
+          "name": "Mounted Charge"
+        },
+        "SjeYNul8p6CUxKEl": {
+          "name": "+2 Status Bonus to all saves vs. darkness and shadow"
+        },
+        "TLxd78CZCKcGSGlc": {
+          "description": "<p>The Iriatykian outriders gain a +1 circumstance bonus to AC and a +1 circumstance bonus to Reflex saving throws against attacks and effects from unmounted enemies.</p>",
+          "name": "Elusive Target"
+        },
+        "auVLK7MxrfP8W4Xl": {
+          "description": "<p>The outriders draw or reload their longbows, then launch a volley of arrows at creatures in a @Template[type:burst|distance:10] within 100 feet, dealing @Damage[3d8[piercing]|options:area-damage] damage (@Check[reflex|dc:22|basic] save). When the squadron is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "name": "Mounted Volley"
+        },
+        "sALnPt2WV8XV6F8v": {
+          "description": "<p><strong>Requirements</strong> The outriders are within an area of magical darkness</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The outriders call on the power wielded by Iriatykis, attempting to dispel any darkness effects in a @Template[type:emanation|distance:20] with a [[/r 1d20+14 #Counteract]]{+14} counteract modifier and a counteract rank of 4th. Each successfully counteracted effect explodes in a storm of tenebrous fragments, inflicting @Damage[2d6[spirit]|options:area-damage] damage to enemies in a @Template[type:burst|distance:20] centered on the effect (@Check[reflex|dc:22] save). Velstracs and worshippers of Zon-Kuthon get an outcome one degree worse than the result of their rolls on this saving throw.</p>",
+          "name": "Shatter Shadows"
+        },
+        "utwjJcUzlnGMO338": {
+          "description": "<p>Effects that target only animals, humans, or humanoids might not work on the outriders, subject to the GM's discretion.</p>",
+          "name": "Mounted Troop"
+        }
+      },
+      "name": "Iriatykian Outrider Band",
+      "npcAllSaves": "+2 status bonus to all saves vs. darkness and shadow",
+      "npcSpeed": "troop movement"
     },
     "Irriseni Owlbear": {
       "description": "<p>A cultural symbol for Irrisen, the Irriseni owlbear is particularly well adapted to frosty conditions. These owlbears are larger than their temperate zone counterparts.</p>\n<hr />\n<p>With the body of a powerful brown bear and the keen senses of an owl, the owlbear is a dangerous territorial predator, fearlessly attacking any creature that strays into its domain. Those who run afoul of an owlbear hear its terrifying screech only seconds before the massive creature is upon them, ripping them apart with deadly talons and a powerful beak.</p>\n<p>Although their origin is lost to time, owlbears are assumed to be the result of a magical experiment to make a more cunning predator. According to the legend, the wizard was too successful and ended up being the flrst victim of the beast. Today, owlbears can be found around the world, with a variety of features. While the most common subspecies looks like a brown bear with the features of a great horned owl, owlbears from the frozen north might resemble polar bears mixed with snowy owls, and in temperate rain forests they might resemble black bears with the heads of barn owls.</p>\n<p>Most owlbears live solitary lives, gathering only to mate and raise cubs, which are hatched from eggs. An owlbear's territory usually extends to around 5 miles from its lair, with clear signs of its habitat appearing with 1 mile (clawed up trees, gigantic feathers, and shredded carcasses). The lair of an owlbear rarely holds anything of value, but some adventurers have found trinkets, coins, and even jewelry in the massive pellets of undigested bones these monsters leave behind.</p>",
@@ -8962,6 +9166,29 @@
       "name": "Omen Archdragon (Spellcaster)",
       "npcAllSaves": "+2 status to all saves vs. occult"
     },
+    "Oprak Firestorm Battalion": {
+      "description": "<p>Among the troops sent by Oprak's Ironfang Legion to aid Nirmathas against the Molthuni invasion are its dreaded firestorm battalions, units with special training in the tactical use of bombs and explosives. Each of these battalions carries enough alchemical ordnance to bathe an entire battlefield in flame several times over.</p>",
+      "items": {
+        "Beo0Gop7zDVrbafm": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The battalion stabs with their pikes at enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+8)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+10)[piercing]|options:area-damage] damage</p>",
+          "name": "Surgical Strikes"
+        },
+        "DOOLFVkezRZggKqY": {
+          "description": "<p><strong>Requirements</strong> The firestorm battalion has been reduced to 2 segments</p><hr /><p><strong>Effect</strong> In the face of imminent defeat, the battalion detonates its remaining explosives to take its enemies with it. All creatures within a @Template[type:emanation|distance:10], including the battalion itself, takes @Damage[5d8[fire]|options:area-damage] damage with a @Check[reflex|dc:22|basic] save; a creature that fails the save also takes @Damage[1d8[persistent,fire]|options:area-damage] damage. The battalion automatically critically fails this save and, should any members survive, can't use its Rain of Fire ability until it spend 8 hours crafting a new batch of incendiary devices.</p>",
+          "name": "Blaze of Glory"
+        },
+        "LDEp8cGB4mwXk7BR": {
+          "description": "<p>The battalion raises a perfect guard against explosions and enemy attacks. It gains a +2 circumstance bonus to AC and Reflex saves until the start of its next turn.</p>",
+          "name": "Close Ranks"
+        },
+        "qVz6OVUg1O9o7fRb": {
+          "description": "<p>he battalion draws and hurls alchemical bombs with practiced precision. The bombs rain down in a @Template[type:burst|distance:10] within 30 feet that deals @Damage[3d8[fire],1d4[persistent,fire]|options:area-damage]{3d8 fire damage and 1d4 persistent fire damage} damage (@Check[reflex|dc:22|basic] save). When the troop is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5]. Creatures adjacent to the burst take 1d4 splash fire damage.</p>",
+          "name": "Rain of Fire"
+        }
+      },
+      "name": "Oprak Firestorm Battalion",
+      "npcSpeed": "troop movement"
+    },
     "Orchid Mantis Swarm": {
       "description": "<p>Few creatures appear as beautiful as the orchid mantises. Their elegant form and coloration resemble flowers, and many people adopt the delicate creatures as short-lived pets. While these mundane insects aren't dangerous to humanoids, they can still bring down prey several times their own size. Unfolding from their flowery pose, orchid mantises lash out with blinding speed, even chasing foraging butterflies with their sharp-toothed arms and powerful bite.</p>\n<hr />\n<p>Some mantises have unusually strong connections to elemental power. Though they lack the training to cultivate this energy, when orchid mantises gather at a place of abundant food or overflowing natural energy, they can bring trees to bloom in the depths of winter or turn any stretch of ground into a garden. Despite their beauty, gathering in large groups only seems to exacerbate the mantises' tempers. Although the mantises are individually harmless, anyone disturbing the countless false blossoms is likely to be recognized as food, no matter their size.</p>",
       "items": {
@@ -8979,6 +9206,25 @@
         }
       },
       "name": "Orchid Mantis Swarm"
+    },
+    "Ort Mob": {
+      "description": "<p>Pathetic masses of quivering flesh crafted from the souls of the damned, orts are the least of devilkind, making them the perfect cannon fodder for more powerful devils and mortal diabolists alike.</p>",
+      "items": {
+        "FaJuUECPv7datjup": {
+          "description": "<p>An ort mob is less organized than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to other creatures.</p>",
+          "name": "Faceless Horde"
+        },
+        "VNNHkGST6IK9M7XJ": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The ort mob claws at all enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:19|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+5)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+6)[slashing]|options:area-damage] damage</p>",
+          "name": "Grasping Claws"
+        },
+        "hM8XFbIlczpcPjaS": {
+          "description": "<p>An ort mob can be commandeered by any non-ort devil within 60 feet of it with a single action, which has the auditory and concentrate traits. The devil picks one of the following commands, and the ort mob follows it to the best of their ability. The command and its effects end once the commander is out of the mob's sight or when a new command is issued by the same or another devil.</p><ul><li><strong>Hustle</strong> The mob gains a +10-foot circumstance bonus to its Speed until the command ends.</li><li><strong>Kill</strong> The mob moves adjacent to one target singled out by its commander and spends all its available actions to use Grasping Claws until the target is dead or the command ends. The targeted creature takes a –1 circumstance penalty to its Reflex save against Grasping Claws and it takes an additional @Damage[1d6[slashing]] damage from the attack.</li><li><strong>Rally</strong> The mob moves so that it shares a space with its commander. The commander doesn't treat the mob's spaces as difficult terrain and gains lesser cover while it's in the mob's spaces until the command ends.</li><li><p><strong>Work</strong> The mob performs drudge work dictated by its commander.</p>\n</li></ul>",
+          "name": "Subservience"
+        }
+      },
+      "name": "Ort Mob",
+      "npcSpeed": "troop movement"
     },
     "Pagulin": {
       "description": "<p>Pagulins are massive, multi-legged lizards that stalk the mountain passes of the Five Kings Mountains. These reptiles hunt elk and augdunars by lying in wait behind rock formations or within the openings of caves. Pagulins produce a mildly acidic saliva that they spit at prey to temporarily blind them before moving in for the kill. A pagulin's tail features a deadly thagomizer, four large spikes that it uses to impale prey to prevent their escape. Five Kings citizens know that pagulins are much smarter than they look, with many reports of pagulins intentionally allowing prey to escape, only to follow a creature to its den and feast on its entire family.</p>\n<p>Though pagulins are deadly, most in the Five Kings Mountains are indifferent to them. Pagulins tend to rest for days at a time after a hunt, spending time to digest their massive kills. They're particularly territorial, however, and will gladly rouse from a post-meal stupor to defend their lairs. The lizards are also known to attack anything that interrupts a hunt or scares off prey. Many merchant caravans have dealt with an unexpected pagulin attack after riding past a herd of startled deer.</p>",
@@ -9374,6 +9620,35 @@
         }
       },
       "name": "Privateer Captain"
+    },
+    "Pure Legion Regiment": {
+      "description": "<p>The Pure Legion is the national law enforcement agency responsible for imposing Rahadoum's Laws of Mortality by ensuring that the nation is kept free from religion in any form. This includes worship of or proselytizing for deities, as well as possession of written scripture or religious paraphernalia.</p>",
+      "items": {
+        "0mjLKtIayImq4ivk": {
+          "name": "Detect Magic (Divine Magic only)"
+        },
+        "Fw4SxrRCKj0rBsju": {
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> With one voice, the Pure Legion regiment decries the authority of a single deity of their choice, forcing all worshippers of that deity within a @Template[type:emanation|distance:30] to attempt a @Check[will|dc:28] save. Regardless of the result of the saving throw, a creature is temporarily immune to Denounce Divinity for 24 hours.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 hour, with the flat check from stupefied for Casting a Spell applying exclusively to spells from the divine tradition.</p>\n<p><strong>Failure</strong> As success, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>\n<p><strong>Critical Failure</strong> As success, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} as their faith is shaken to its core.</p>",
+          "name": "Denounce Divinity"
+        },
+        "VGdgBeLb1wuko26Y": {
+          "description": "<p>When attempting a saving throw against a spell or effect with the divine trait, a Pure Legion regiment gets an outcome one degree better than the result of their roll. However, the regiment can't ever be a willing target for helpful divine spells.</p>",
+          "name": "Nonbelievers"
+        },
+        "YbcSmV0rEIx6OIMA": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The regiment strikes with their longswords against enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:26|basic] save). Damage dealt depends on the number of actions. If a creature critically fails the Reflex save while affected by the regiment's Denounce Divinity, it is unable to reduce its stupefied or frightened condition by any means for 1 round.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+13)[slashing]|options:area-damage] damage</p>",
+          "name": "Rebuking Strike"
+        },
+        "g0ZkjICoW8HgQuyu": {
+          "description": "<p>The regiment draws or reloads their crossbows and concentrates fire on creatures in a @Template[type:burst|distance:10] within 60 feet that deals @Damage[4d8[piercing]|options:area-damage] damage (@Check[reflex|dc:26|basic] save). When the regiment is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "name": "Crossbow Volley"
+        },
+        "xvTZPDiQxBx9LaQj": {
+          "name": "Ring of Truth (At Will)"
+        }
+      },
+      "name": "Pure Legion Regiment",
+      "npcSpeed": "troop movement"
     },
     "Pygmy Kaava": {
       "description": "<p>An unusually large number of kaava living in the Kaava Lands are relatively small, standing about 3 feet tall and weighing about 30 pounds. Pygmy kaava openly show their disdain for larger kaava, and the two groups rarely get along. Pygmy kaava often hunt alongside trained bush vipers or black mamba snakes.</p>\n<hr />\n<p>Kaava are stealthy, jungle-dwelling humanoids with short down feathers that can easily be mistaken for fur from a distance. Kaava have tough scales beneath these feathers. Both the scales and feathers have mutable pigmentation that allows a kaava to blend into surrounding foliage like a chameleon.</p>",
@@ -10298,6 +10573,39 @@
       },
       "name": "Rune Archdragon (Spellcaster)",
       "npcAllSaves": "+2 status to all saves vs. arcane"
+    },
+    "Sacristan Scourge": {
+      "description": "<p>Pressed into servitude by the shadowcasters of the Umbral Court, these shambling assemblies of scarred flesh, jagged metal, and darkness incarnate would be pitiable if they did not pose such a deadly threat to those who meet them on the battlefield. Each of these companies is made up of dozens of velstracs whose bodies and spirits have been utterly broken by the agonies of the Netherworld. The horror of their brutal combat tactics is exceeded only by the chilling howls that herald their arrival, shattering the minds of even the most disciplined soldiers. Once a battle has concluded, many members of a sacristan scourge search for those who were wounded but are not yet dead to taste their exquisite suffering in their final moments.</p>",
+      "items": {
+        "PrX599wjM2dd3n6F": {
+          "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The sacristans open their mouths in unison to unleash a chorus of ghastly wailing infused with the mind-shattering darkness of the Netherworld. This creates a @Template[type:emanation|distance:30] of darkness and pandemonium around it that's impenetrable even to creatures with darkvision (but not greater darkvision). They can Sustain Shadow Scream for up to 1 minute. Non-velstrac creatures in the area when the ability is used, as well as those that enter or start their turn in the area, must attempt a @Check[will|dc:33] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[60[mental]|options:area-damage] damage and is confused and deafened for 1 round.</p>",
+          "name": "Shadow Scream"
+        },
+        "QYRf4d8Onol7Mls2": {
+          "name": "Regeneration 10 (Deactivated by Holy or Silver)"
+        },
+        "U4ffjFjl3D62kYxO": {
+          "description": "<p>30 feet. When a creature ends its turn in the sacristan scourge's aura, it is subjected to an overwhelming vision of the entire scourge groveling piteously before it. The creature must succeed at a @Check[will|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>",
+          "name": "Staggering Servitude"
+        },
+        "eaJY2gchUqw2zjUE": {
+          "description": "<p>Each member of a sacristan scourge automatically knows whether a creature they can see has any of the doomed, dying, and wounded conditions, as well as the value of those conditions.</p>",
+          "name": "Painsight"
+        },
+        "hsbjeoxynGVGHTFo": {
+          "description": "<p>The sacristans stare at a creature they can see within 30 feet. The creature must immediately attempt a @Check[will|dc:33] save against staggering servitude. In addition, if the creature was already stunned, on a failed save its revulsion toward the sacristans' presence causes it to be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute. After attempting this save, the creature is then temporarily immune to staggering servitude until the start of the scourge's next turn.</p>",
+          "name": "Focus Gaze"
+        },
+        "mL99J6hvboiTMryU": {
+          "name": "Torture Lore"
+        },
+        "pdDtKjv7WsgqXG3Y": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The scourge lashes with barbed chains against enemies in a @Template[type:emanation|distance:10] (@Check[reflex|dc:33|basic] save). The damage depends on the number of actions. A creature that critically fails is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[piercing],1d6[spirit],1d4[bleed]]{1d8 piercing plus 1d6 spirit and 1d4 persistent bleed}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+6)[piercing],1d6[spirit],1d6[bleed]]{3d8+6 piercing plus 1d6 spirit and 1d6 persistent bleed}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+9)[piercing],1d6[spirit],1d8[bleed]]{4d8+9 piercing plus 1d6 spirit and 1d8 persistent bleed}</p>",
+          "name": "Storm of Agony"
+        }
+      },
+      "name": "Sacristan Scourge",
+      "npcSpeed": "troop movement"
     },
     "Sage Archdragon": {
       "description": "<p>A shining, rune-inscribed scale is all that most people, even adventurers, see of a sage dragon during their lifetimes. Even then, only those familiar with dragon lore will likely recognize the scale as anything other than an elaborate spell scroll. Collectors and scholars of esoteric lore, sage dragons become increasingly reclusive as they age, and, even in their youths, they're prone to work through trusted intermediaries. For those able to locate and gain the trust of such a creature, even the youngest sage dragons are fonts of difficult-to-find knowledge and rare magical techniques. The oldest sage dragons are living combinations of gargantuan libraries and endless grimoires, accumulating the secrets of the Universe, and beyond, in their isolated lairs.</p>\n<p>Organized and methodical, with an insatiable curiosity and eidetic memory, sage dragons are the devout researchers of the dragon world. The intellectual pursuits of sage dragons demand extended periods of quiet study, one of the reasons that such dragons live in isolated, hidden locations. Young dragons tend to specialize in a particular area of research. As they age, these research interests also broaden, with an expert in a particular river expanding into topics such as the water cycle, ecology, or the Plane of Water. Sage dragons interested in religious topics often worship Nethys or a god dedicated to knowledge, such as Gruhastha, Qi Zhong, or Ydajisk. Dragons who seek grim rituals or cryptic knowledge might join the church of Abraxas or worship Norgorber in his aspect of the Reaper of Reputation.</p>",
@@ -11305,6 +11613,21 @@
       "name": "Sea Dragon (Young, Spellcaster)",
       "npcAc": "fed by metal",
       "npcSpeed": "water walk"
+    },
+    "Shackles Pirate Crew": {
+      "description": "<p>The fleets of ships sent by the Free Captains of the Shackles have proven invaluable to Andoran's efforts to break the Hespereth blockade, all while acting as a consistent thorn in the side of Cheliax by conducting regular raids to plunder its settlements along the southern coast. Pirate crews will sometimes get rowdy when their ship docks and start drunken bar brawls.</p>",
+      "items": {
+        "ezuashxTJXtojxe5": {
+          "description": "<p><strong>Requirements</strong> The crew's previous action was a Scurvy Strike that dealt damage to at least one enemy</p><hr /><p><strong>Effect</strong> The crew uses their weapons to knock the weapons out of their enemies' hands. The crew attempts a single Athletics check to [[/act disarm]], comparing the result to the Reflex DC of each creature that was damaged by the required Scurvy Strike. If the result is a critical failure, the crew gets a failure instead.</p>",
+          "name": "Disarming Twist"
+        },
+        "wGVkpcBhXQgv8cPU": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The crew strikes with belaying pins, hooks, and cutlasses at enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:19|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning]]{1d6 bludgeoning, piercing, or slashing damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[bludgeoning]]{2d6+4 bludgeoning, piercing, or slashing damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+6)[bludgeoning]]{3d6+6 bludgeoning, piercing, or slashing damage}</p>",
+          "name": "Scurvy Strike"
+        }
+      },
+      "name": "Shackles Pirate Crew",
+      "npcSpeed": "troop movement"
     },
     "Shroudwing": {
       "description": "<p>These unsettling birds are thick-bodied, long-legged creatures standing 4 to 5 feet tall with an 8-foot wingspan. They possess black feathers, clouded white eyes, and a menacing obsidian bill hooked at the tip like a curled claw. Sometimes called soul-eater crows, shroudwings are carrion feeders known to roam graveyards and sites of collective death, absorbing lingering spirits and consuming the decaying corpses. They can be found digging up grave sites, shoveling the earth and breaking into caskets or tombs with their massive, hooked beaks, as well as lurking at execution sites, burial mounds, or feeding on travelers' corpses left behind on roadsides.</p>\n<p>Due to their size, shape, and propensity for burial grounds, it isn't uncommon for a shroudwing to be mistaken for a grieving widow when seen at a distance—only when an unfortunate creature gets close enough does it discover the danger it's in. Though not predatory or outright aggressive, shroudwings are exceptionally territorial; they'll protect and defend both their feeding site as well as their nesting area from anyone who might trespass upon it.</p>\n<p>While many might know these unusual birds by name and sight, even more know the shroudwing by sound. When threatened, the shroudwing emits a haunting, fear-inducing death rattle that can be heard for miles. They prefer nesting in covered brush, and their mating season occurs in the winter months. Shroudwings have a particular fondness for the collection of skulls and have been known to decorate nests with them as well as to use them in mating rituals, with the male presenting the female with the freshest and cleanest skull it can find.</p>",
@@ -13696,6 +14019,26 @@
       },
       "name": "The Great Flood"
     },
+    "Thrune Champion Army": {
+      "items": {
+        "1yIddIOka4hRMstc": {
+          "name": "Hell Lore"
+        },
+        "eUX222ypAkvcEXVx": {
+          "description": "<p>The champions channel the infernal power of Hell itself into their strikes. If their next action is a Massacre that deals damage to at least one creature, all creatures that take damage from Massacre must also attempt a @Check[will|dc:27] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is frightened 2, becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round, and takes @Damage[1d6[persistent,fire]] damage.</p>",
+          "name": "Wrath of Asmodeus"
+        },
+        "kbG9Fa6ZVowLwyWQ": {
+          "description": "<p>The champions draw or reload their longbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 100 feet that deals @Damage[5d8[piercing]|options:area-damage] damage (@Check[reflex|dc:27|basic] save). When the troop is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "name": "Unleash Hell"
+        },
+        "yGt3DCCx3RRiX2BQ": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The champions slash mercilessly with their broadswords against enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:27|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+14)[slashing]|options:area-damage] damage</p>",
+          "name": "Massacre"
+        }
+      },
+      "name": "Thrune Champion Army"
+    },
     "Tidepool Dragonet": {
       "description": "<p>Tidepool dragonets are lithe, eel-like sovereigns of their miniature tidal territories. Found in the marine environments that their name suggests, tidepool dragonets have strong jaws adapted to cracking open shells. While shellfish are their main food source, they are adaptive foragers. They'll happily catch and eat octopuses, tidal fish, starfish, sea anemones, and seabirds if the opportunity arises. Their long, webbed claws make them nimble hunters and allow them to reach into rocky recesses. They have muscular wings that work well both above and below water.</p>\n<p>Tidepool dragonets are proud bullies who habitually harass wildlife and fishers. They frequently steal brightly painted floats, flags, and shiny hooks to decorate their tidal caves. Prized pieces are reserved for ornamenting themselves, and they cover their scales with shards of glass, necklaces of coral, or crowns of silverware retrieved from wrecks.</p><hr /><p>Though dragonets are smaller and lacking the raw power of great dragons, they are every bit as varied and fascinating as their larger relatives. Like dragons, dragonets have strong ties to magic. These ties influence the contrasting natures exhibited by different dragonet types. For example, @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.QIXc18xHrEWDmtKW]{Fey Dragonets} and @UUID[Compendium.pf2e.pathfinder-monster-core-2.Actor.Zh8awPHA7DZxTboc]{House Drakes} make fascinating pets and companions, and thus are a popular familiar for spellcasters. Tidepool dragonets, on the other hand, are arrogant and untamable.</p>\n<p>Assuming dragonets are harmless due to their size, or the fact that they often live near people, is dangerous. Pest drakes, for instance, are weak and shy individually but are inclined to form dangerous swarms when unsettled. By contrast, pearl dragonets are gentle oddities that seem naturally friendly.</p>\n<p>Dragonets range in size from little bigger than songbirds to no larger than house cats. Unlike most great dragons, they stop growing after reaching maturity. They vary greatly in intelligence; fey dragonets are known for their tricks and wit, while feral racing drakes have the average problem solving capacity of a pigeon. Each type of dragonet has its own lairing and hoarding habits, and they have unique abilities that reveal their magical nature.</p>",
       "items": {
@@ -14170,6 +14513,33 @@
       },
       "name": "Torn Quartet",
       "npcHp": "void healing"
+    },
+    "Twilight Talon Infiltrator Team": {
+      "description": "<p>These teams of elite Andoren field agents possess specialized training in executing covert operations. Many have recently been dispatched to Isger to assist the insurgents of the Hellbreakers League in throwing off the yoke of Chelaxian oppression.</p>",
+      "items": {
+        "3aieAwMZYHygv9wU": {
+          "description": "<p>By spending 2 hours preparing disguises, performing reconnaissance, and the like, the infiltrators can convincingly impersonate any troop unit of their level or lower that has the humanoid trait. Alternatively, they can disguise themselves as a mixed assortment of humanoid noncombatants who don't obviously form a cohesive unit. This functions as the Impersonate action with the infiltrators gaining a +2 circumstance bonus to their Deception DC. Infiltrators can't use Undercover to appear as specific individuals, nor can they impersonate groups that require resources unavailable to them, at the GM's discretion (impersonating a cavalry unit without access to mounts, for example).</p>",
+          "name": "Undercover"
+        },
+        "4DrkpwGYKG819FgV": {
+          "description": "<p><strong>Trigger</strong> A creature moves adjacent to the infiltrators or takes a hostile action against them</p>\n<p><strong>Requirements</strong> The infiltrators are disguised</p><hr /><p><strong>Effect</strong> The infiltrators cast aside their disguises and unleash a 2-action Blindside against all enemies in a @Template[type:emanation|distance:5]. A creature that critically fails the save takes an additional 1d6 precision damage.</p>",
+          "name": "Now!!"
+        },
+        "OLEJJ0mQLPObNyBr": {
+          "description": "<p>Twilight Talon infiltrators are masters of blending into and dispersing seamlessly among large groups. While disguised as noncombatants, they can move into other creatures' spaces, and other creatures can move into the team's spaces.</p>",
+          "name": "Faces in the Crowd"
+        },
+        "qUp0ao0Z9dPIcpJR": {
+          "description": "<p>The infiltrators draw or reload concealed hand crossbows and launch a hail of bolts in a @Template[type:burst|distance:10] within 60 feet that deals @Damage[5d6[piercing]|options:area-damage] damage (@Check[reflex|dc:23|basic] save). When the unit is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "name": "Snap Shot"
+        },
+        "rxoWm9immyT5ileK": {
+          "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The infiltrators strike against enemies in a @Template[type:emanation|distance:5], dealing damage of a type appropriate to any weapons or implements incorporated into their disguise, with a @Check[reflex|dc:23|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+1)[bludgeoning]]{1d8+1 bludgeoning, piercing, or slashing damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+8)[bludgeoning]]{2d8+8 bludgeoning, piercing, or slashing damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+9)[bludgeoning]]{3d8+9 bludgeoning, piercing, or slashing damage}</p>",
+          "name": "Blindside"
+        }
+      },
+      "name": "Twilight Talon Infiltrator Team",
+      "npcSpeed": "troop movement"
     },
     "Ugvashi": {
       "description": "<p>These razor-plated pangolins—about the size of small ponies—are the traditional pack animals of halflings from Casmaron, though the ugvashi's serrated plates and tendency to curl up make them ill-suited as mounts. Ugvashi first arrived in the Impossible Lands onboard the Thousand and One ships of Maharajah Khiben-Sald, alongside peafowl, giant squirrels, and other fauna from Vudra. In the modern day, ugvashi are such a recognized sight that many people forget they aren't a native species. Though some feral populations exist, mainly on the island of Jalmeray, the hostile environs of Nex and the Mana Wastes mean ugvashi mainly appear in domestic settings, usually as working beasts among the Nearic halflings of western Nex.</p>\n<p>Though ugvashi are mostly harmless, they're somewhat more dangerous than their smaller cousins, causing a stir when reckless citizens attempt to pet the creatures. Ugvashi scales are razor sharp, and their large and blunted digging claws can be deadly due to their size. People who attempt to steal the animals or ride them without training often receive moderate cuts for their trouble. However, ugvashi are generally curious and very friendly, and more than one visitor or wilderness explorer has found a baby ugvashi toddling after them and pawing at their boots.</p>\n<p>Nearic halflings also paint their ugvashi with distinctive warding patterns and sigils, some of which are actually effective and provide a surprise for opportunistic thieves or predators. Though due consideration is spent on protecting an ugvashi's cargo, the animals themselves have proven to be tempting targets as well, especially for their meat. With blighted landscapes making animal husbandry impractical and magical pollution leaving local seafood with a distinct aftertaste, a number of Nexian and Mana Wastes peoples have developed a taste for ugvashi. Since the animals lack an aggressive temperament, it often falls to their caretakers to discourage such predations through whatever means necessary.</p>\n<p>Ugvashi shed their scales each winter, allowing for the plates to be collected safely and turned into quality armor and other pieces of craftwork. Nearic halflings rarely trade or sell these items, however, out of fear that they might lead to more people trying to steal their ugvashi.</p>",
