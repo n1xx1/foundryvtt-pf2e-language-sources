@@ -3,8 +3,19 @@
         "Actions": {
             "SenseDirection": {
                 "SampleTasks": {
-                    "Trained": "trovare un sentiero coperto dalla vegetazione in una foresta"
+                    "Trained": "trovare un sentiero coperto dalla vegetazione in una foresta",
+                    "Untrained": "localizzare un punto cardinale",
+                    "Expert": "orientarsi in un semplice labirinto",
+                    "Master": "orientarsi su una luna priva di tratti distintivi",
+                    "Legendary": "orientarsi in un reame occulto in costante mutamento"
+                },
+                "Description": "<p>Usando la posizione degli oggetti astronomici nel cielo, elementi geografici o della flora, oppure il comportamento della fauna, puoi orientarti nelle terre selvagge. Solitamente effettui una prova di [[/act sense-direction]]{Sopravvivenza} solo una volta al giorno, ma alcuni ambienti o cambiamenti potrebbero aumentarne la frequenza. Il GM determina la CD e il tempo impiegato da quest’attività (solitamente circa un minuto). Luoghi molto inusuali o con i quali non sei familiare potrebbero richiedere un grado di competenza minimo per Trovare la Direzione. Senza un’@UUID[Compendium.sf2e.equipment.Item.fClhrG92Zi4k14Hq]{unità di comunicazione}, subisci penalità di oggetto -2 alle prove per Trovare la Direzione.</p><hr /><p><strong>Successo Critico</strong> Hai un’ottima percezione della tua posizione. Se ti trovi in un ambiente con direzioni cardinali, sai esattamente dove sono.</p>\n<p><strong>Successo</strong> Ti orienti abbastanza da evitare di perderti irrimediabilmente. Se ti trovi in un ambiente con direzioni cardinali, hai un’idea di dove sono.</p>",
+                "Modifier": {
+                    "NoCompass": "Senza un’unità di comunicazione"
                 }
+            },
+            "TakeControl": {
+                "Description": "<p><strong>Requisiti</strong> Sei a bordo di un veicolo e adiacente ai suoi comandi.</p>\n<p>Prendi il controllo di un veicolo. Effettua una prova di Pilotare; con un successo diventi il pilota del veicolo o riprendi il controllo del veicolo se era fuori controllo. Alcuni veicoli hanno controlli complicati e rendono quest’azione un’attività multi-azione.</p>"
             }
         },
         "Item": {
@@ -14,6 +25,21 @@
                 }
             }
         },
-        "TraitRatfolk": "Ysoki"
+        "TraitRatfolk": "Ysoki",
+        "condition": {
+            "sickened": {
+                "note": "Mentre sei nauseato non puoi ingerire nulla volontariamente (pozioni ed elisir compresi).",
+                "rules": "<p>Ti senti male. Nauseato include sempre un valore. Subisci penalità di status pari a questo valore a tutte le tue prove e CD. Mentre sei nauseato non puoi ingerire nulla volontariamente (pozioni ed elisir compresi).</p>\n<p>Puoi spendere un’azione singola per vomitare nel tentativo di riprenderti, cosa che ti consente di effettuare subito un TS su @Check[fortitude] contro la CD dell’effetto che ti ha reso nauseato. Se hai successo, riduci il tuo valore di nauseato di 1 (o di 2 con un successo critico).</p>"
+            }
+        },
+        "Actor": {
+            "NPC": {
+                "Identification": {
+                    "Skills": {
+                        "Tooltip": "\"L’abilità usata per identificare una creatura dipende solitamente dal tratto di quella creatura, come mostrato nella tabella Abilità di Identificazione delle Creature, ma hai libertà su quali abilità si applicare.\" — Starfinder GM Core pg. 54-55"
+                    }
+                }
+            }
+        }
     }
 }
