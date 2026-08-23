@@ -1178,7 +1178,12 @@
         "Mask of Terror": {
             "name": "Maschera di Terrore",
             "description": "<p>Il bersaglio appare come una creatura orribile e spaventosa. L’effetto è unico per ciascun osservatore, perciò un umano che osserva il bersaglio potrebbe vedere un demone con le zanne insanguinate, mentre un demone che lo osserva potrebbe vedere un viso angelico splendente.</p>\n<p>Quando una qualsiasi creatura effettua un’azione ostile contro il bersaglio, la creatura deve effettuare un TS su Volontà. Dopodiché è temporaneamente immune fino alla fine del suo turno successivo.</p>\n<p><strong>Successo</strong> La creatura non è influenzata.</p>\n<p><strong>Fallimento</strong> La creatura diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 2} prima di aver effettuato la sua azione.</p>\n<p><strong>Fallimento Critico</strong> La creatura diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{spaventata 2} e la sua azione fallisce ed è sprecata.</p>\n<hr />\n<p><strong>Intensificato (8°)</strong> Puoi bersagliare fino a 5 creature. Se una creatura effettua un’azione (o una reazione) ostile che ha effetto su più bersagli simultaneamente, necessita di un solo TS contro <em>maschera di terrore</em>.</p>",
-            "spellTarget": "1 creatura"
+            "spellTarget": "1 creatura",
+            "spellHeightening": {
+                "8": {
+                    "spellTarget": "fino a 5 creature"
+                }
+            }
         },
         "Volcanic Eruption": {
             "name": "Eruzione Vulcanica",
@@ -1190,7 +1195,7 @@
             "spellTarget": "1 creatura",
             "spellHeightening": {
                 "9": {
-                    "spellTarget": "5 creature"
+                    "spellTarget": "fino a 5 creature"
                 }
             },
             "spellDuration": "varia"
@@ -3391,7 +3396,8 @@
             "spellTarget": "1 creatura vivente"
         },
         "Necrotize": {
-            "spellTarget": "1 creatura vivente"
+            "spellTarget": "1 creatura vivente",
+            "spellDuration": "varia"
         },
         "Incarnate Ancestry": {
             "spellTarget": "1 creatura consenziente",
@@ -5395,7 +5401,8 @@
             "name": "Sun's Fury"
         },
         "Blessing of Vigor": {
-            "spellTarget": "tu o un alleato"
+            "spellTarget": "tu o un alleato",
+            "spellDuration": "3 round"
         },
         "Connective Current": {
             "spellTarget": "1 nemico"
@@ -5420,7 +5427,278 @@
             "spellTarget": "il tuo famiglio"
         },
         "Uncouple Memory": {
-            "spellRitualPrimaryCheck": "Arcano (meastro), Natura (maestro), Occultismo (maestro) o Religione (maestro)"
+            "spellRitualPrimaryCheck": "Arcano (meastro), Natura (maestro), Occultismo (maestro) o Religione (maestro)",
+            "spellDuration": "illimitato"
+        },
+        "Amalgamizing Leap": {
+            "spellDuration": "fino alla fine del tuo turno successivo",
+            "spellTarget": "1 creatura"
+        },
+        "Appeal to Authority": {
+            "spellHeightening": {
+                "5": {
+                    "spellTarget": "fino a 4 creature"
+                }
+            },
+            "spellTarget": "1 creatura"
+        },
+        "Begone": {
+            "spellTarget": "1 creatura"
+        },
+        "Blood Chestnuts": {
+            "spellTarget": "1 creatura vivente"
+        },
+        "Blood Runs Cold": {
+            "spellDuration": "varia",
+            "spellTarget": "1 creatura"
+        },
+        "Bone Shield": {
+            "spellDuration": "mantenuto fino a 1 minuto"
+        },
+        "Borrow Time": {
+            "name": "Guadagnare Tempo",
+            "spellDuration": "varia"
+        },
+        "Calcification": {
+            "name": "Calcificazione",
+            "spellDuration": "varia"
+        },
+        "Chosen Gravity": {
+            "spellTarget": "1 creatura"
+        },
+        "Cloudborne Haven": {
+            "spellDuration": "varia",
+            "spellTime": "1 settimana"
+        },
+        "Comet Charge": {
+            "spellTarget": "1 creatura"
+        },
+        "Companion's Shadow": {
+            "spellTarget": "il tuo Compagno"
+        },
+        "Conjurer's Countermeasure": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Crucible of Iron": {
+            "spellTarget": "1 creatura"
+        },
+        "Cryostasis": {
+            "spellTarget": "1 creatura morente"
+        },
+        "Dead Weight": {
+            "spellDuration": "1 round"
+        },
+        "Defensive Prescience": {
+            "spellTarget": "la creatura innescante"
+        },
+        "Defy the Gods": {
+            "spellTarget": "1 creatura"
+        },
+        "Disintegrating Puddle": {
+            "spellTarget": "1 creatura"
+        },
+        "Draw Blood": {
+            "spellTarget": "1 creatura vivente"
+        },
+        "Expunge Blood": {
+            "spellDuration": "varia",
+            "spellTarget": "1 creatura"
+        },
+        "Fetch": {
+            "name": "Riportare",
+            "spellTarget": "il tuo Compagno"
+        },
+        "Fractious Echo": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Freezing Touch": {
+            "spellTarget": "1 creatura"
+        },
+        "Friends to Foes": {
+            "spellHeightening": {
+                "7": {
+                    "spellTarget": "5 creature"
+                }
+            },
+            "spellTarget": "1 creatura"
+        },
+        "Frozen Lungs": {
+            "spellTarget": "1 creatura vivente"
+        },
+        "Glacial Skewer": {
+            "spellTarget": "1 creatura"
+        },
+        "Glance of the Divine": {
+            "spellDuration": "varia"
+        },
+        "Glossolalia": {
+            "spellDuration": "varia",
+            "spellTarget": "1 creatura"
+        },
+        "Haunting Spirit": {
+            "spellTarget": "1 creatura vivente"
+        },
+        "Haven in the Ether": {
+            "spellDuration": "varia",
+            "spellTime": "1 settimana"
+        },
+        "Heartbolt": {
+            "spellTarget": "1 creatura vivente consenziente o 1 creatura non morta"
+        },
+        "Hop, Skip, Jump": {
+            "spellDuration": "3 round"
+        },
+        "Hot Air": {
+            "spellTarget": "1 creatura"
+        },
+        "Imprinting Hand": {
+            "spellTarget": "1 creatura vivente o non morta"
+        },
+        "Incarnate Ancient Specter": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Archmage": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Deific Herald": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Draconic Legion": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Faerie Revelers": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Kaiju": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Shadow Minuet": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Skeletal Giant": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Tempest of Shades": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Incarnate Wild Rose": {
+            "spellDuration": "fino alla fine del tuo turno successivo"
+        },
+        "Lightning Lasso": {
+            "spellTarget": "1 creatura"
+        },
+        "Lively Flight": {
+            "spellTarget": "1 creatura vivente consenziente"
+        },
+        "Loyalty's Ward": {
+            "spellDuration": "1 settimana"
+        },
+        "Magnetize": {
+            "spellTarget": "1 creatura consenziente"
+        },
+        "Metallic Meteorite Glyph": {
+            "spellTarget": "1 creatura"
+        },
+        "Mist Sight": {
+            "spellTarget": "1 creatura consenziente"
+        },
+        "Murder of Crows": {
+            "spellTarget": "1 creatura"
+        },
+        "Necrotic Bomb": {
+            "name": "Bomba Necrotica Moderata"
+        },
+        "Peer Into the Past": {
+            "spellDuration": "varia"
+        },
+        "Propelling Air Stream": {
+            "spellDuration": "fino alla fine del tuo turno successivo",
+            "spellTarget": "1 creatura"
+        },
+        "Puppet Strings": {
+            "spellTarget": "1 creatura"
+        },
+        "Reblooded": {
+            "spellTarget": "1 creatura non morta"
+        },
+        "Remake Physiology": {
+            "spellDuration": "varia",
+            "spellTarget": "1 creatura vivente"
+        },
+        "Rend Magic": {
+            "spellDuration": "fino a 1 minuto",
+            "spellTarget": "1 creatura"
+        },
+        "Sculpt Appearance": {
+            "spellDuration": "illimitato",
+            "spellTarget": "1 creatura consenziente",
+            "spellTime": "1 settimana"
+        },
+        "Separation": {
+            "spellDuration": "varia",
+            "spellRitualSecondaryChecks": "Società",
+            "spellTime": "1 settimana"
+        },
+        "Shadow Strike": {
+            "spellTarget": "1 creatura"
+        },
+        "Shroud of the Provinces": {
+            "spellDuration": "1 settimana"
+        },
+        "Skyglass Prison": {
+            "spellTarget": "1 creatura"
+        },
+        "Soul Cutter": {
+            "spellRange": "varia",
+            "spellTarget": "1 creatura"
+        },
+        "Spiked Carapace": {
+            "spellDuration": "1 round",
+            "spellTarget": "1 creatura"
+        },
+        "Stick On": {
+            "spellTarget": "1 creatura od oggetto"
+        },
+        "Still Life Storage": {
+            "spellDuration": "illimitato"
+        },
+        "Stop Heart": {
+            "spellTarget": "1 creatura vivente"
+        },
+        "Timely Reminder": {
+            "spellDuration": "1 anno"
+        },
+        "Unrelenting Gravity": {
+            "spellDuration": "1 round",
+            "spellTarget": "1 creatura"
+        },
+        "Unsettling Perspective": {
+            "spellTarget": "1 creatura"
+        },
+        "Vanish Weapon": {
+            "spellDuration": "fino alla fine del tuo turno successivo",
+            "spellTarget": "la creatura innescante"
+        },
+        "Vital Seed": {
+            "spellTarget": "1 creatura"
+        },
+        "Warshard Shot": {
+            "spellTarget": "1 creatura"
+        },
+        "Watchdog": {
+            "spellTarget": "il tuo Compagno"
+        },
+        "Weight of the World": {
+            "spellTarget": "1 creatura"
+        },
+        "Whispers of a Dead Goddess": {
+            "spellDuration": "mantenuto fino a 1 minuto"
+        },
+        "Widow’s Bite": {
+            "spellTarget": "1 creatura"
+        },
+        "With Friends like These": {
+            "spellTarget": "2 creature"
         }
     }
 }
