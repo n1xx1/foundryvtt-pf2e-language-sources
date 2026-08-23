@@ -70,9 +70,9 @@ jobs:
         run: |
           rm -rf json-assets/packs
           npm run build:packs:json sf2e
-          mv json-assets/packs json-assets/packs-sf
+          mv json-assets/packs json-assets/sf-packs
           npm run build:packs:json pf2e
-          mv json-assets/packs json-assets/packs-pf
+          mv json-assets/packs json-assets/pf-packs
 
       - name: FVTTPF2E - Get System Version
         working-directory: ./system
