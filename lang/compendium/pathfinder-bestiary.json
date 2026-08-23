@@ -1733,6 +1733,7 @@
           "name": "See Invisibility (Constant)"
         },
         "EnBhUXkHOrsrB0rH": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (At Will) (Good Only)"
         },
         "O7YsO4EwyIY6RIDs": {
@@ -1827,7 +1828,7 @@
           "name": "Shadow Shift"
         },
         "P0Q4Hgs9e8hwRX5G": {
-          "description": "<p>The cloaker makes an attack roll with a [[/r 1d20+14 #Envelop Attack]]{+14 bonus} against an adjacent creature's Reflex DC. If it succeeds, it envelops the target, who is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. Attacks that hit an enveloping cloaker deal half their damage to the cloaker and half to the trapped victim. The cloaker can't Fly, and when it moves using its land Speed it moves the enveloped creature with it. The cloaker can make only jaws Strikes against the restrained creature but can make tail Strikes against other creatures.</p>\n<p>A creature that voluntarily puts on the cloaker becomes engulfed automatically. A cloaker can engulf only Large or smaller creatures, and no more than one creature at a time.</p>",
+          "description": "<p>The cloaker makes an attack roll with a @Check[envelop|against:reflex]{+14} bonus against an adjacent creature's Reflex DC. If it succeeds, it envelops the target, who is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. Attacks that hit an enveloping cloaker deal half their damage to the cloaker and half to the trapped victim. The cloaker can't Fly, and when it moves using its land Speed it moves the enveloped creature with it. The cloaker can make only jaws Strikes against the restrained creature but can make tail Strikes against other creatures.</p>\n<p>A creature that voluntarily puts on the cloaker becomes engulfed automatically. A cloaker can engulf only Large or smaller creatures, and no more than one creature at a time.</p>",
           "name": "Envelop"
         },
         "Vpr4X9t4ia5n8MLO": {
@@ -2714,11 +2715,11 @@
           "name": "Weak Acid"
         },
         "OUrfzECO9Dy3ncIO": {
-          "description": "<p>A creature Engulfed by the cube or hit by its attack is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} unless it succeeds at a @Check[fortitude|dc:20] save. A victim can attempt a new save to recover at the end of each of its turn.</p>",
+          "description": "<p>A creature Engulfed by the cube or hit by its attack is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} unless it succeeds at a @Check[fortitude|dc:20|options:inflicts:paralyzed] save. A victim can attempt a new save to recover at the end of each of its turn.</p>",
           "name": "Paralysis"
         },
         "PHrmAQv1FUnGiNrw": {
-          "description": "<p>@Check[reflex|dc:19|traits:damaging-effect], @Damage[2d6[acid]], [[/act escape dc=19]], Rupture 7</p>\n<p>A creature Engulfed by the gelatinous cube must also attempt a saving throw against paralysis.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:19|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[2d6[acid]] damage, [[/act escape dc=19]], Rupture 7</p>\n<p>A creature Engulfed by the gelatinous cube must also attempt a saving throw against paralysis.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "mNomS6NBwvlheidl": {
           "name": "Cube Face"
@@ -2815,6 +2816,7 @@
           "name": "Light Ray"
         },
         "iMgpmBiunrNQEx9Y": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (At Will) (Evil Only)"
         },
         "jJ8SC2rd2xXCFTiy": {
@@ -2840,7 +2842,7 @@
       "description": "<p>Ghasts-feral, foul-smelling, and constantly hungry-are the more powerful kin of ghouls. They are relentless in the pursuit of their prey.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
       "items": {
         "GBiarRqqq8qwyZtJ": {
-          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:16] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:16|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "IdfK6A7UpGkscuOG": {
@@ -2877,7 +2879,7 @@
           "name": "Consume Flesh"
         },
         "9TCF9GcaMoTKkPSj": {
-          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "A97t9GcQF8k7V7By": {
@@ -2932,7 +2934,7 @@
           "name": "Reactive Gnaw"
         },
         "N5NccQ5JtdXMWjA9": {
-          "description": "<p>@Check[reflex|dc:22|traits:damaging-effect], @Damage[3d8[piercing]], [[/act escape dc=22]], Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:22|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[3d8[piercing]] damage, [[/act escape dc=22]], Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "OLoz41FJFungrpr5": {
           "description": "<p>60 feet. Each creature that begins its turn within 60 feet of a gibbering mouther must attempt a @Check[will|dc:19] save. On a failure, they are @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. On a success, they are temporarily immune for 1 minute.</p>",
@@ -2943,7 +2945,7 @@
           "name": "Ground Manipulation"
         },
         "XZcafYrLS6wcyUVG": {
-          "description": "<p>A creature that takes damage from a gibbering mouther's spittle must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>",
+          "description": "<p>A creature that takes damage from a gibbering mouther's spittle must succeed at a @Check[fortitude|dc:22|options:inflicts:dazzled,inflicts:blinded] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>",
           "name": "Burn Eyes"
         },
         "hJ2RMo3aTyVEm4yz": {
@@ -3051,6 +3053,7 @@
           "name": "Breath Weapon"
         },
         "ZGnffTgetHNUHYLI": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "fQ0vMmyTwWHXQy7V": {
@@ -3097,6 +3100,7 @@
           "name": "Breath Weapon"
         },
         "ZGnffTgetHNUHYLI": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "fQ0vMmyTwWHXQy7V": {
@@ -3121,6 +3125,7 @@
       "description": "<p>Gold dragons are the epitome of metallic dragonkind, unrivaled in their strength as well as their wisdom. They command the unwavering reverence of all other metallic dragons, who view gold dragons as their leaders and counselors. Golds rival the raw power of even red dragons, much to the chagrin of their chromatic cousins, and the two races are often regarded as bitter rivals. But despite their incredible power, gold dragons are fond of discourse and prefer to talk through solutions to problems rather than rely upon brute strength. Long-lived as they are, they necessarily take a wide view of all situations and never act without considering all possible options and outcomes. Because of this, gold dragons willingly converse with any creature that seeks them out, even evil chromatic dragons. Mortals might find this behavior strange, considering the long-standing war between chromatic and metallic dragons, but dragons know all too well that desperate situations sometimes call for drastic alliances. And although gold dragons might consider brief truces with their chromatic brethren in the case of world-ending threats, they also know when such alliances have run their course.</p>\n<p>When another metallic dragon faces a quandary or a foe beyond its own ability to overcome, its best option is often to seek the counsel of the eternally wise and gloriously righteous gold dragons. Locating these legendary beings is no easy task, however, for gold dragons are notoriously reclusive. Their intellect and wisdom is such that they prefer to ponder the great questions of life in seclusion, where they strive to formulate solutions to the world's most pressing problems. As a result, gold dragons are sometimes absent when metallic dragons gather together, or are missing from tribunals where their counsel would be beneficial. Impatient dragons sometimes begrudge gold dragons for this apparent unreliability, but such aspersions are usually a result of jealousy rather than any true criticism; in their hearts, other dragons know that few gold dragons purposefully exclude themselves from truly important matters.</p>\n<p>A gold dragon's incredible foresight and unparalleled enlightenment means they are unlikely to interfere in the business of individual mortals, though the rare person who captures the attention of a gold dragon is fortunate indeed, for there are few beings in the cosmos who can offer such prudent and considerate advice. Rulers and individuals in stations of high power have an easier time of garnering the aid of a gold dragon; entire wars have been avoided thanks to a gold dragon's last-minute intermediation.</p>\n<p>Gold dragons are often found in warm grasslands and savannas, lands where they can enjoy long, meditative flights without attracting the attention of potential enemies. They tend to sleep either out in the open in a barren, remote place, or within a heavily secreted or fortified lair, such as a forgotten sink hole or in the labyrinthine caverns of a terrestrial chasm. Gold dragons may enlist trusted servants and allies to guard their lairs, though many live truly solitary lives, preferring to protect their hoards with nonlethal traps and magical wards.</p>\n<hr />\n<p>Paragons of virtue, nobility, and grace, metallic dragons are benevolent entities revered as mythic beings akin to gods in both their power and majesty. Few have ever seen a metallic dragon firsthand, but tales of their intervention in mortals' lives-and of their passing-always spread far and wide. Named for the way their scales resemble the shining metals humanoids use in commerce, warfare, and industry, these immense beings are diverse in their interests and abilities, and they don't seem to mind being associated with such mundane materials. After all, to compare a gold dragon to a gold coin is like comparing an ocean to a glass of water-though they may seem similar at first glance, the raw power, breadth, and grandeur of one simply overwhelms the other. In addition to metallic dragons and their chromatic counterparts, other types of dragons roam the world and the rest of the multiverse. In the legendary lands of Tian Xia on the other side of the globe are the imperial dragons, serpentine beings who protect the cosmic balance and defend their ancient homeland. Outside the Material Plane, primal dragons such as the domineering brine dragon and reclusive cloud dragon shape the nature and goings-on of the Elemental Planes. Countless other types of dragons are sure to exist, including dragons on far-flung planes of existence and, it is rumored, primeval dragons who soar between the stars.</p>",
       "items": {
         "184dbY1EHWDY9oeu": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "55EdzLqRdJ3A5Win": {
@@ -3173,6 +3178,7 @@
       "description": "<p>Gold dragons are the epitome of metallic dragonkind, unrivaled in their strength as well as their wisdom. They command the unwavering reverence of all other metallic dragons, who view gold dragons as their leaders and counselors. Golds rival the raw power of even red dragons, much to the chagrin of their chromatic cousins, and the two races are often regarded as bitter rivals. But despite their incredible power, gold dragons are fond of discourse and prefer to talk through solutions to problems rather than rely upon brute strength. Long-lived as they are, they necessarily take a wide view of all situations and never act without considering all possible options and outcomes. Because of this, gold dragons willingly converse with any creature that seeks them out, even evil chromatic dragons. Mortals might find this behavior strange, considering the long-standing war between chromatic and metallic dragons, but dragons know all too well that desperate situations sometimes call for drastic alliances. And although gold dragons might consider brief truces with their chromatic brethren in the case of world-ending threats, they also know when such alliances have run their course.</p>\n<p>When another metallic dragon faces a quandary or a foe beyond its own ability to overcome, its best option is often to seek the counsel of the eternally wise and gloriously righteous gold dragons. Locating these legendary beings is no easy task, however, for gold dragons are notoriously reclusive. Their intellect and wisdom is such that they prefer to ponder the great questions of life in seclusion, where they strive to formulate solutions to the world's most pressing problems. As a result, gold dragons are sometimes absent when metallic dragons gather together, or are missing from tribunals where their counsel would be beneficial. Impatient dragons sometimes begrudge gold dragons for this apparent unreliability, but such aspersions are usually a result of jealousy rather than any true criticism; in their hearts, other dragons know that few gold dragons purposefully exclude themselves from truly important matters.</p>\n<p>A gold dragon's incredible foresight and unparalleled enlightenment means they are unlikely to interfere in the business of individual mortals, though the rare person who captures the attention of a gold dragon is fortunate indeed, for there are few beings in the cosmos who can offer such prudent and considerate advice. Rulers and individuals in stations of high power have an easier time of garnering the aid of a gold dragon; entire wars have been avoided thanks to a gold dragon's last-minute intermediation.</p>\n<p>Gold dragons are often found in warm grasslands and savannas, lands where they can enjoy long, meditative flights without attracting the attention of potential enemies. They tend to sleep either out in the open in a barren, remote place, or within a heavily secreted or fortified lair, such as a forgotten sink hole or in the labyrinthine caverns of a terrestrial chasm. Gold dragons may enlist trusted servants and allies to guard their lairs, though many live truly solitary lives, preferring to protect their hoards with nonlethal traps and magical wards.</p>\n<hr />\n<p>Paragons of virtue, nobility, and grace, metallic dragons are benevolent entities revered as mythic beings akin to gods in both their power and majesty. Few have ever seen a metallic dragon firsthand, but tales of their intervention in mortals' lives-and of their passing-always spread far and wide. Named for the way their scales resemble the shining metals humanoids use in commerce, warfare, and industry, these immense beings are diverse in their interests and abilities, and they don't seem to mind being associated with such mundane materials. After all, to compare a gold dragon to a gold coin is like comparing an ocean to a glass of water-though they may seem similar at first glance, the raw power, breadth, and grandeur of one simply overwhelms the other. In addition to metallic dragons and their chromatic counterparts, other types of dragons roam the world and the rest of the multiverse. In the legendary lands of Tian Xia on the other side of the globe are the imperial dragons, serpentine beings who protect the cosmic balance and defend their ancient homeland. Outside the Material Plane, primal dragons such as the domineering brine dragon and reclusive cloud dragon shape the nature and goings-on of the Elemental Planes. Countless other types of dragons are sure to exist, including dragons on far-flung planes of existence and, it is rumored, primeval dragons who soar between the stars.</p>",
       "items": {
         "184dbY1EHWDY9oeu": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "4RmQuIc8xqXHF2pR": {
@@ -3248,6 +3254,7 @@
           "name": "Locate (Gems Only)"
         },
         "RMvjozPBvuaFNpnM": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "c3JTz3NjO3wCrokf": {
@@ -3292,6 +3299,7 @@
           "name": "Locate (Gems Only)"
         },
         "RMvjozPBvuaFNpnM": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "dgIhMYBYbAPLBD4N": {
@@ -3470,7 +3478,7 @@
           "name": "Claw"
         },
         "6yZ26OupmzzPO1vZ": {
-          "description": "<p>20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lJGAJF9QiXCOPd2I]{Effect: Draconic Breath Weapon Aura}</p>",
+          "description": "<p>20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.sHAbHKFNIDSSQDCg]{Effect: Miasma}</p>",
           "name": "Miasma"
         },
         "MUQwZ93FSpa5PAib": {
@@ -3490,7 +3498,7 @@
           "name": "Horn"
         },
         "m6WhfbsOdnetGUAE": {
-          "description": "<p>The dragon can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} in natural environments even if it doesn't have cover.</p>",
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if it doesn't have cover.</p>",
           "name": "Camouflage"
         },
         "rJiIUBXia2sB40kR": {
@@ -3531,7 +3539,7 @@
           "name": "Claw"
         },
         "6yZ26OupmzzPO1vZ": {
-          "description": "<p>20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lJGAJF9QiXCOPd2I]{Effect: Draconic Breath Weapon Aura}</p>",
+          "description": "<p>20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes @Damage[4d6[poison]|options:area-damage] damage (@Check[fortitude|dc:37|basic|options:area-effect] save).</p>\n<p>Any creature in the miasma is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. The dragon can see through this concealment.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.sHAbHKFNIDSSQDCg]{Effect: Miasma}</p>",
           "name": "Miasma"
         },
         "IjiABcB6yiomsTSr": {
@@ -3575,7 +3583,7 @@
           "name": "Horn"
         },
         "m6WhfbsOdnetGUAE": {
-          "description": "<p>The dragon can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} in natural environments even if it doesn't have cover.</p>",
+          "description": "<p>The dragon can [[/act hide]] in natural environments even if it doesn't have cover.</p>",
           "name": "Camouflage"
         },
         "rJiIUBXia2sB40kR": {
@@ -3847,33 +3855,6 @@
         }
       },
       "name": "Hill Giant"
-    },
-    "Hive Mother": {
-      "description": "<p>Ankhrav hive mothers are fearsome predators that one can easily distinguish from the typical ankhrav not only by their greater size, but the presence of a large pair of razor-sharp, mantis-like arms.</p>\n<hr />\n<p>Ankhravs are immense, burrowing, and insectile predators, considered by inhabitants of the rural areas of the world to be an all-too-common plague.</p>",
-      "items": {
-        "2QnPX6haUy6RjKvT": {
-          "description": "<p>The hive mother unleashes a pheromone that causes all other ankhravs within a @Template[emanation|distance:100] to become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} until the start of the hive mother's next turn, and they can use the extra action only for Burrow, Stride, or Strike actions.</p>\n<p>The hive mother can't unleash the pheromone again for [[/gmr 1d4 #Recharge Frenzy Pheromone]]{1d4 rounds}.</p>",
-          "name": "Frenzy Pheromone"
-        },
-        "BeuWnsp3t3NisaY3": {
-          "name": "Mandibles"
-        },
-        "PIKiUX4h9vUWIM3Y": {
-          "description": "<p>The hive mother makes a mandibles Strike; if the Strike hits, the target's armor takes the damage and the acid damage bypasses the armor's Hardness.</p>",
-          "name": "Armor-Rending Bite"
-        },
-        "lszUCBGYOxZzhPEU": {
-          "name": "Tremorsense (Imprecise) 90 feet"
-        },
-        "vt7bc5rxJY8WxTy0": {
-          "name": "Acid Spit"
-        },
-        "waCZVvDN6vAn7yCi": {
-          "description": "<p>The hive mother spews acid in a @Template[cone|distance:60], dealing @Damage[8d6[acid],1d6[persistent,acid]|options:area-damage]{8d6 acid damage and 1d6 persistent acid damage} (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>It can't spew acid again for [[/gmr 1d4 #Recharge Spray Acid]]{1d4 rounds}.</p>",
-          "name": "Spray Acid"
-        }
-      },
-      "name": "Hive Mother"
     },
     "Horned Archon": {
       "description": "<p>Horned archons are secretive and tireless sentinels and scouts, patrolling the Outer Sphere's untamed wilds for evil to eliminate and keeping small communities safe from demons, devils, and worse. They resemble muscular humans with the head, horns, and legs of a stag. When requested to do so by their patrons, especially Erastil, they journey to the Material Plane and patrol dangerous frontier areas, secretly performing acts of kindness such as leading hunters to food, helping lost children, and driving off evil creatures. Because they roam the wilds of Nirvana and Elysium, horned archons are among the best at understanding the perspectives of other celestials.</p>\n<hr />\n<p>Archons are guardians of Heaven and enemies of chaos and evil. They openly fight back the spread of fiends but also quietly nurture the seeds of virtue within mortals, teaching the denizens of the Material Plane how to act with honor and integrity, enact just laws, and cast off sin and temptation.</p>\n<p>Archons live in the immense seven-tiered mountain of Heaven. They manifest in the Garden at the mountain's peak from mortal souls who answer a mysterious voice. There they swear to forever serve the cause of justice and transform into their new archon forms. Intensely orderly in their metamorphosis, new archons begin as lantern archons or other lesser forms, transforming into ever-greater archons as their virtue and achievements grow. Each archon represents a particular virtue, such as hope, charity, justice, or courage, and they gain strength in the presence of mortals who exemplify this virtue. Due to their extremely lawful nature, archons sometimes find themselves at odds with azatas.</p>",
@@ -4208,6 +4189,7 @@
           "name": "Lantern of Hope"
         },
         "t66rwfJhvjrEDP2J": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (At Will) (Evil Only)"
         },
         "uK5eIAdOWiayEgWr": {
@@ -4238,6 +4220,7 @@
           "name": "Flame of Justice"
         },
         "t66rwfJhvjrEDP2J": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (At Will) (Evil Only)"
         },
         "uK5eIAdOWiayEgWr": {
@@ -4312,6 +4295,7 @@
           "name": "Plane Shift (At Will) (to Astral Plane, Elemental Planes, or Material Plane Only)"
         },
         "V6bHuF179ATM9acB": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Constant) (Good or Evil Only)"
         },
         "XmAV6KPQZt4Hvuzj": {
@@ -4343,7 +4327,7 @@
           "name": "True Seeing (Constant)"
         },
         "1xcDVCY3sx0uDDys": {
-          "description": "<p>@Damage[(2d12+13)[bludgeoning]] damage, @Check[fortitude|dc:39|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<p>@Damage[(2d12+13)[bludgeoning]], @Check[fortitude|dc:39|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "53xmmigXl7qYER3Y": {
           "description": "<p>Any weapon becomes a <em>+2 @UUID[Compendium.pf2e.equipment-srd.Item.KCQRFvUgbyclvOGi]{Greater Striking} weapon</em> made of cold iron and silver while a marilith wields it.</p>",
@@ -4440,7 +4424,7 @@
           "name": "Fast Swallow"
         },
         "fSUvadSPPhS9kOAB": {
-          "description": "<p>@Damage[15[bludgeoning]] damage, @Check[fortitude|dc:45|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<p>@Damage[15[bludgeoning]], @Check[fortitude|dc:45|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "lYUnEWGhnlYFvH6B": {
           "description": "<p>Gargantuan, @Damage[(20d6+9)[acid]] damage, Rupture 37.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -4460,7 +4444,7 @@
       "npcHp": "regeneration 50 (deactivated by sonic)"
     },
     "Night Hag": {
-      "description": "<p>Night hags are thieves and merchants of mortal souls. These foul creatures collect souls in dark gems or crystalline jars to sell in fiendish markets, and are themselves empowered by potent magic jewels known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.yhw1mr4oDhzMQc3D]{Heartstones}</em>. They haunt the Ethereal Plane, where they prey upon mortals in their dreams, debilitating them with horrific nightmares as they rest. A night hag may find a particular target and haunt them continuously over the course of weeks, slowly and cruelly breaking down the victim's will and ability to resist, until their soul is forfeit.</p>\n<p>A night hag is a canny mastermind and soul broker, willing to consider any deal as long as she is convinced she has the upper hand. Although a night hag finds it easy to travel the Ethereal Plane and prey upon helpless souls that can't fight back, these souls are also the least desirable to the evil outsiders the night hag bargains with, and so a night hag gathers allies and minions that allow her to prey on more potent souls without personally risking herself. Their favored minions are @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.qRUqoezeEnQ2KdyT]{Nightmares}, with whom they share a special bond.</p>\n<p>Above all, night hags avoid fighting foes that can harry them on the Ethereal Plane, picking fights only when they are certain they can escape.</p><hr /><p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are@UUID[Compendium.pf2e.pathfinder-monster-core.Actor.RqX0vfUjlycKjGyp]{Changelings} who have the potential to become hags themselves.</p>",
+      "description": "<p>Night hags are thieves and merchants of mortal souls. These foul creatures collect souls in dark gems or crystalline jars to sell in fiendish markets, and are themselves empowered by potent magic jewels known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.yhw1mr4oDhzMQc3D]{Heartstones}</em>. They haunt the Ethereal Plane, where they prey upon mortals in their dreams, debilitating them with horrific nightmares as they rest. A night hag may find a particular target and haunt them continuously over the course of weeks, slowly and cruelly breaking down the victim's will and ability to resist, until their soul is forfeit.</p>\n<p>A night hag is a canny mastermind and soul broker, willing to consider any deal as long as she is convinced she has the upper hand. Although a night hag finds it easy to travel the Ethereal Plane and prey upon helpless souls that can't fight back, these souls are also the least desirable to the evil outsiders the night hag bargains with, and so a night hag gathers allies and minions that allow her to prey on more potent souls without personally risking herself. Their favored minions are @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.qRUqoezeEnQ2KdyT]{Nightmares}, with whom they share a special bond.</p>\n<p>Above all, night hags avoid fighting foes that can harry them on the Ethereal Plane, picking fights only when they are certain they can escape.</p><hr /><p>Malevolent crones who lurk at the edges of civilization, hags use their deceptive, magical abilities to prey upon humanoids, manipulating and corrupting them. Some say hags arose from fey that became twisted by their inner selfishness. Hags gather together in covens for greater power, craft unique magical items known as <em>@UUID[Compendium.pf2e.equipment-srd.Item.ACa9QlFqdmW4s2Th]{Hag Eyes}</em>, and are known to replace infant humanoids with their own offspring-these children are @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.RqX0vfUjlycKjGyp]{Changelings} who have the potential to become hags themselves.</p>",
       "items": {
         "3cGYB1usBk6SXYto": {
           "name": "Jaws"
@@ -4508,6 +4492,7 @@
           "name": "Nightmare Rider"
         },
         "iO5Xw9g7tRODM1vg": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Constant) (All Alignments)"
         },
         "m0zG0H17EryWyKWQ": {
@@ -4644,6 +4629,7 @@
           "name": "Virtue Aversion"
         },
         "JcNx2oSCr0ITXfqs": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (At Will) (Good Only)"
         },
         "PJbq8TKDuFGf9n7l": {
@@ -5505,6 +5491,7 @@
           "name": "Claw"
         },
         "tYN9Wb2fCavnKdOo": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "tzGgSX4dpcTwYYag": {
@@ -5560,6 +5547,7 @@
           "name": "Claw"
         },
         "tYN9Wb2fCavnKdOo": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "v8yr3bjEd1JafWFX": {
@@ -5581,6 +5569,7 @@
           "name": "Claw"
         },
         "8WQwygzmnLFUnRlx": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "977xdYIDaM8Nrj7X": {
@@ -5645,6 +5634,7 @@
           "name": "Calm Emotions"
         },
         "8WQwygzmnLFUnRlx": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "977xdYIDaM8Nrj7X": {
@@ -5730,6 +5720,7 @@
           "name": "Cloud Walk"
         },
         "s1EiBDZD5WaFxheZ": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "vbhEyAI6chCq7BJL": {
@@ -5781,6 +5772,7 @@
           "name": "Calm Emotions"
         },
         "s1EiBDZD5WaFxheZ": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Evil Only)"
         },
         "sAPPwhCJzhRl0mrz": {
@@ -5804,6 +5796,7 @@
           "name": "Banishing Swipe"
         },
         "K6Ty6fjWIqDqupgg": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (At Will) (Evil Only)"
         },
         "QqqqheeizksJ9NkJ": {
@@ -6782,7 +6775,7 @@
           "name": "Planar Ally"
         },
         "4NNU4WrjaWJrngyL": {
-          "description": "<p>@Check[reflex|dc:35|traits:damaging-effect], @Damage[4d12[bludgeoning]] damage and @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Planar Tether}, [[/act escape dc=32]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:35|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[4d12[bludgeoning]] damage and @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Planar Tether}, [[/act escape dc=32]], Rupture 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "K2x7jUEcU74IIJ3D": {
           "name": "Tremorsense (Imprecise) 60 feet"

@@ -6,7 +6,7 @@
           "name": "Fist"
         },
         "IiFWeofaMoWPJb8k": {
-          "description": "<p><strong>Requirements</strong> The ruffian hasn't acted yet on their turn</p>\n<hr />\n<p><strong>Effect</strong> The ruffian uses an Interact action to draw their dagger, then uses @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}</p>",
+          "description": "<p><strong>Requirements</strong> The ruffian hasn't acted yet on their turn</p><hr /><p><strong>Effect</strong> The ruffian uses an Interact action to draw their dagger, then uses [[/act demoralize]].</p>",
           "name": "Opening Threat"
         },
         "dSGJjwStpSRNtqOu": {
@@ -24,7 +24,7 @@
     "Adrivallo": {
       "items": {
         "AJPHV58xJ71hC3xz": {
-          "name": "Keys to All the Cages in the Glen of Uncommon Wonders"
+          "name": "Keys"
         },
         "GLik0HVHl2CYY5bV": {
           "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>",
@@ -100,10 +100,11 @@
           "name": "Telepathy 100 feet"
         },
         "AYvQsWHdPY8qJXTz": {
-          "description": "<p>A creature dealt damage by an ammut's claw Strike must succeed at a @Check[will|dc:37] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failed save). The conditions cannot be mitigated until the curse is removed, and the curse cannot be removed until all damage dealt by the claw Strike is healed. Each day, a creature afflicted with wasting wound must attempt another saving throw; on a failed save, the values of its enfeebled and drained conditions each increase by 1. If the victim dies while cursed, its soul is destroyed, as per the ammut's devour soul ability.</p>",
+          "description": "<p>A creature dealt damage by an ammut's claw Strike must succeed at a @Check[will|dc:37|options:inflicts:enfeebled,inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failed save). The conditions cannot be mitigated until the curse is removed, and the curse cannot be removed until all damage dealt by the claw Strike is healed. Each day, a creature afflicted with wasting wound must attempt another saving throw; on a failed save, the values of its enfeebled and drained conditions each increase by 1. If the victim dies while cursed, its soul is destroyed, as per the ammut's devour soul ability.</p>",
           "name": "Wasting Wound"
         },
         "BoGD0m0tUXjkgQax": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Constant)(Evil Only)"
         },
         "SX1FS88WJhELdBeJ": {
@@ -166,7 +167,7 @@
       "description": "<p>Five large flowers in the weed-choked field unfurl, each dusting pollen onto vines that animate into @UUID[Compendium.pf2e.pathfinder-monster-core-2.Actor.jW55DX3sJU2uTNrM]{Wemmuths}.</p>",
       "hazardDisable": "<p>@Check[nature|dc:48|name:Calm a Flower|traits:environmental] (master) or @Check[performance|dc:48|name:Calm a Flower|traits:environmental] (legendary) to calm a flower, closing it</p>",
       "hazardReset": "<p>Wemmuths collapse into ordinary vines and the trap resets if the area is left alone for 1 minute.</p>",
-      "hazardRoutine": "<p><span class=\"action-glyph\">2</span> If there are fewer wemmuths than open flowers, the flowers create more wemmuths (so there as many wemmuths as open flowers) as their first action.</p>\n<p>For their second action, the flowers produce a mind-addling pollen. Each non-plant creature within 30 feet of a flower must succeed at a @Check[fortitude|dc:41|name:Mindaddling Pollen|traits:emotion,mental,olfactory] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round, on a critical failure). The pollen is an emotion, mental, and olfactory effect.</p>",
+      "hazardRoutine": "<p><span class=\"action-glyph\">2</span> If there are fewer wemmuths than open flowers, the flowers create more wemmuths (so there as many wemmuths as open flowers) as their first action.</p><p>For their second action, the flowers produce a mind-addling pollen. Each non-plant creature within @Template[emanation|distance:30]{30 feet} of a flower must succeed at a @Check[fortitude|dc:41|name:Mindaddling Pollen|traits:emotion,mental,olfactory|options:inflicts:slowed,inflicts:confused] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round, on a critical failure). The pollen is an emotion, mental, and olfactory effect.</p>",
       "name": "Angry Vegetation"
     },
     "Ararda": {
@@ -309,7 +310,7 @@
           "name": "Mobility"
         },
         "a4SSMVjAQgcwes1C": {
-          "description": "<p>A target damaged by the bandit's shortbow Strike must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of the bandit's next turn.</p>",
+          "description": "<p>A target damaged by the bandit's shortbow Strike must succeed at a @Check[fortitude|dc:22|options:inflicts:slowed] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of the bandit's next turn.</p>",
           "name": "Muscle Striker"
         }
       },
@@ -323,7 +324,7 @@
           "name": "Pack Attack"
         },
         "AbffdpOVV9q9QwtQ": {
-          "description": "<p>The blood wolf moves up to half its Speed. This movement doesn't trigger reactions. At the end of the movement, it attempts an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a target within 5 feet of it. This Intimidation check doesn't take the -4 circumstance penalty for the wolf not speaking a language.</p>",
+          "description": "<p>The blood wolf moves up to half its Speed. This movement doesn't trigger reactions. At the end of the movement, it attempts an Intimidation check to [[/act demoralize]] a target within 5 feet of it. This Intimidation check doesn't take the -4 circumstance penalty for the wolf not speaking a language.</p>",
           "name": "Aggressive Rush"
         },
         "kGDDuORhStpjLtdf": {
@@ -360,7 +361,7 @@
           "name": "Tongues (Constant)"
         },
         "8z8uIcobom68tmyS": {
-          "description": "<p>60 feet. A bogeyman's aura of terror manifests as a shifting haze of images that reflect the viewers' deepest fears. Whenever a creature ends its turn within the aura, it must succeed at a @Check[will|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. A creature's frightened condition (including from striking fear) does not reduce as long as the creature remains in the aura. If the creature succeeds at its saving throw, it becomes temporarily immune to the aura for 24 hours.</p>",
+          "description": "<p>60 feet. A bogeyman's aura of terror manifests as a shifting haze of images that reflect the viewers' deepest fears. Whenever a creature ends its turn within the aura, it must succeed at a @Check[will|dc:28|options:area-effect,inflicts:frightened] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. A creature's frightened condition (including from striking fear) does not reduce as long as the creature remains in the aura. If the creature succeeds at its saving throw, it becomes temporarily immune to the aura for 24 hours.</p>",
           "name": "Deepest Fear"
         },
         "CNoZswC3ObHsm2Jd": {
@@ -371,7 +372,7 @@
           "name": "Devour Soul"
         },
         "H3lSdbz8S3BWprZ6": {
-          "description": "<p>If a bogeyman scores a critical hit with a claw Strike, the target must attempt a @Check[will|dc:29] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>",
+          "description": "<p>If a bogeyman scores a critical hit with a claw Strike, the target must attempt a @Check[will|dc:29|options:inflicts:frightened,inflicts:fleeing] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>",
           "name": "Striking Fear"
         },
         "PmoZHqEM39IJVPZt": {
@@ -467,7 +468,7 @@
           "name": "Claw"
         },
         "nKJryW0RpvxmB4hH": {
-          "description": "<p>If a bugaboo scores a critical hit with a claw Strike, the target must attempt a @Check[will|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>",
+          "description": "<p>If a bugaboo scores a critical hit with a claw Strike, the target must attempt a @Check[will|dc:24|options:inflicts:frightened,inflicts:fleeing] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>",
           "name": "Striking Fear"
         },
         "o1Dwspcc5Yryf7By": {
@@ -510,7 +511,7 @@
           "name": "Dancing Lights"
         },
         "Y8Ki9xMtjEbm4nIF": {
-          "description": "<p>Creatures that see the bugul noz must succeed at a @Check[fortitude|dc:31] saving throw. On a failure, creatures are @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure).</p>",
+          "description": "<p>Creatures that see the bugul noz must succeed at a @Check[fortitude|dc:31|options:inflicts:doomed] saving throw. On a failure, creatures are @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure).</p>",
           "name": "Horrid Visage"
         },
         "iyWevLBiGLmYMOP5": {
@@ -611,11 +612,11 @@
           "name": "Face Mask"
         },
         "3IYBBjbLG10Rsmme": {
-          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> The bruiser must target a creature they @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shoved} since the end of the bruiser's last turn</p>\n<hr />\n<p><strong>Effect</strong> The bruiser attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the target. If the bruiser rolls a success, they get a critical success instead.</p>",
+          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> The bruiser must target a creature they @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shoved} since the end of the bruiser's last turn</p><hr /><p><strong>Effect</strong> The bruiser attempts to [[/act demoralize options=terrifying-sneer]] the target. If the bruiser rolls a success, they get a critical success instead.</p>",
           "name": "Terrifying Sneer"
         },
         "GiqRd4nRXj6C8YKM": {
-          "description": "<p><strong>Trigger</strong> A creature hits the bruiser with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The bruiser attempts to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} the creature. On a success or a critical success, the target is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The bruiser can't Stride after a target it successfully Shoves in this way.</p>",
+          "description": "<p><strong>Trigger</strong> A creature hits the bruiser with a melee Strike</p><hr /><p><strong>Effect</strong> The bruiser attempts to [[/act shove]] the creature. On a success or a critical success, the target is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The bruiser can't Stride after a target it successfully Shoves in this way.</p>",
           "name": "Opportunistic Brawler"
         },
         "LNeYb85MlYdrF1QD": {
@@ -761,7 +762,7 @@
           "name": "Convergent Link"
         },
         "rjSNiLNccg17t8pc": {
-          "name": "Key to Strongbox in A10"
+          "name": "Key"
         },
         "xVc28OEoqZGKHa2g": {
           "description": "<p>Kendley's attacks (including @UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]{Telekinetic Projectile}) deal an extra 4d8 damage to creatures within reach of one of her allies who has convergent tactics.</p>",
@@ -787,7 +788,7 @@
           "description": "<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra piercing or slashing power.</p>"
         },
         "etXQCdL5Q2AdyjxP": {
-          "description": "<p>Utopian runes burst from the convergent soldier.</p>\n<p>Any creature @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} by the @UUID[Compendium.pf2e.extinction-curse-bestiary.Actor.25BUnECSaTWkHqZQ]{Convergence Lattice} who is within @Template[emanation|distance:100]{100 feet} of the convergent soldier and can see the runes must attempt a @Check[will|dc:34] save.</p>\n<hr />\n<p><strong>Failure</strong> For 1 round, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures with the convergent link ability and counts as an ally with convergent tactics for the purposes of activating the convergent tactics ability.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round due to the information overload.</p>",
+          "description": "<p>Utopian runes burst from the convergent soldier.</p>\n<p>Any creature @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} by the @UUID[Compendium.pf2e.extinction-curse-bestiary.Actor.25BUnECSaTWkHqZQ]{Convergence Lattice} who is within @Template[emanation|distance:100]{100 feet} of the convergent soldier and can see the runes must attempt a @Check[will|dc:34|options:area-effect,inflicts:slowed,inflicts:off-guard] save.</p><hr /><p><strong>Failure</strong> For 1 round, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures with the convergent link ability and counts as an ally with convergent tactics for the purposes of activating the convergent tactics ability.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round due to the information overload.</p>",
           "name": "Force Communication"
         },
         "k9lNa3pfAPN99oJd": {
@@ -926,7 +927,7 @@
           "name": "Worry Prey"
         },
         "DtEZmNobgsVWzikz": {
-          "description": "<p>Any creature within 200 feet of the cu sith that hears its Dooming Bark must attempt a @Check[will|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and immune to Dooming Bark for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}.</p>\n<p>If a creature is already frightened when it fails a save against Dooming Bark, its frightened value increases by 1 and it becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p>A creature in an area that the cu sith can't easily reach-such as a hidden burrow or enclosed building-increases the degree of success of its saving throw against Dooming Bark by one step.</p>",
+          "description": "<p>Any creature within 200 feet of the cu sith that hears its Dooming Bark must attempt a @Check[will|dc:24|options:inflicts:doomed,inflicts:fleeing,inflicts:frightened] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and immune to Dooming Bark for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}.</p>\n<p>If a creature is already frightened when it fails a save against Dooming Bark, its frightened value increases by 1 and it becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p>A creature in an area that the cu sith can't easily reach-such as a hidden burrow or enclosed building-increases the degree of success of its saving throw against Dooming Bark by one step.</p>",
           "name": "Dooming Bark"
         },
         "TFv6rcyouMcUWGYM": {
@@ -1063,11 +1064,11 @@
           "name": "Tentacle"
         },
         "415YyiRgxhBj4QVH": {
-          "description": "<p>The deghuun vents caustic smog for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Any creature that ends its turn within 30 feet of the deghuun during this time takes @Damage[6d6[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@Check[fortitude|dc:38]; the creature avoids the sickened condition on a critical success, or is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>While sickened in this way, a creature takes a -2 status penalty to its saving throw against the deghuun's @UUID[Compendium.pf2e.spells-srd.Item.U58aQWJ47VrI36yP]{Hallucination}.</p>\n<p>Any creature that's in the smog is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. Strong winds dissipate the smog.</p>",
+          "description": "<p>The deghuun vents caustic smog for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Any creature that ends its turn within 30 feet of the deghuun during this time takes @Damage[6d6[fire]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@Check[fortitude|dc:38|options:area-effect,damaging-effect,inflicts:sickened]; the creature avoids the sickened condition on a critical success, or is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>While sickened in this way, a creature takes a -2 status penalty to its saving throw against the deghuun's @UUID[Compendium.pf2e.spells-srd.Item.U58aQWJ47VrI36yP]{Hallucination}.</p>\n<p>Any creature that's in the smog is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and treats other creatures as concealed. Strong winds dissipate the smog.</p>",
           "name": "Sulfurous Plume"
         },
         "7YxHt2qByZ37NDj5": {
-          "description": "<p>Anytime a deghuun attempts a Will save against an enchantment spell, the spell's caster must attempt a @Check[will|dc:38] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for up to the spell's duration.</p>",
+          "description": "<p>Anytime a deghuun attempts a Will save against an enchantment spell, the spell's caster must attempt a @Check[will|dc:38|options:inflicts:confused] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for up to the spell's duration.</p>",
           "name": "Unfathomable Aspect"
         },
         "U8nRgKXL8LdnfuMo": {
@@ -1238,7 +1239,7 @@
           "name": "Faerie Fire (At Will)"
         },
         "39iXJ3VDAsZ4Ij0P": {
-          "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} while in Dyzallin's utter despair aura. They can't naturally recover from this fear while in the area but lose the frightened condition immediately upon leaving the area.</p>\n<p>When a creature first enters the aura, it must succeed at a @Check[will|dc:39|traits:incapacitation] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>The creature is then temporarily immune to the paralysis caused by the utter despair aura for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.ob00D61F0c4PIvj1]{Effect: Utter Despair}</p>",
+          "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} while in Dyzallin's utter despair aura. They can't naturally recover from this fear while in the area but lose the frightened condition immediately upon leaving the area.</p>\n<p>When a creature first enters the aura, it must succeed at a @Check[will|dc:39|traits:incapacitation|options:inflicts:paralyzed] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>The creature is then temporarily immune to the paralysis caused by the utter despair aura for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.ob00D61F0c4PIvj1]{Effect: Utter Despair}</p>",
           "name": "Utter Despair"
         },
         "4WG9EtIFVOUHS6pz": {
@@ -1460,7 +1461,7 @@
           "name": "Cleaver"
         },
         "hrq73xXhTyT182d2": {
-          "description": "<p>When using their Change Shape ability, the faceless butcher loses their alignment aura and thus cannot be detected by spells such as @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]{Detect Alignment}.</p>",
+          "description": "<p>When using their Change Shape ability, the faceless butcher loses their alignment aura and thus cannot be detected by spells such as <em>detect alignment</em>.</p>",
           "name": "Suppressed Alignment"
         },
         "k1jWhjh5eXKkavLa": {
@@ -1724,7 +1725,7 @@
           "name": "Harrow Card"
         },
         "WqZw6sQ6UuR8XHlz": {
-          "name": "Lore"
+          "name": "Fortune-Telling Lore"
         },
         "iKTJM59aw3XI1kNW": {
           "name": "Fist"
@@ -1749,7 +1750,7 @@
           "name": "Claw"
         },
         "IeoEKCfC28dShDCr": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The headless xulgath has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The headless xulgath slams the creature against a nearby surface. The creature takes @Damage[(6d6+6)[bludgeoning]] damage and must attempt a @Check[fortitude|dc:30|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is no longer grabbed.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The headless xulgath has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The headless xulgath slams the creature against a nearby surface. The creature takes @Damage[(6d6+6)[bludgeoning]] damage and must attempt a @Check[fortitude|dc:30|options:inflicts:slowed,inflicts:stunned] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is no longer grabbed.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>",
           "name": "Choke Slam"
         },
         "Us6h9h1kYfyx8LCO": {
@@ -1787,7 +1788,7 @@
           "name": "Glyph of Warding"
         },
         "MSrCpe3iS4MlI9Or": {
-          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> Helg's most recent action was to cast a non-cantrip necromancy spell</p>\n<hr />\n<p><strong>Effect</strong> Helg drains away the life force from a creature targeted by the spell, with a result depending on its Fortitude save (@Check[fortitude|dc:36]). This effect is magical and can be counteracted with @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (Level 15, DC 36). This ability cannot affect a creature that critically succeeded at the spell's saving throw, if any.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 round.</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p><strong>Critical Failure</strong> Fatigued, and rest does not remove the creature's fatigued condition for 1 week.</p>",
+          "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> Helg's most recent action was to cast a non-cantrip necromancy spell</p><hr /><p><strong>Effect</strong> Helg drains away the life force from a creature targeted by the spell, with a result depending on its Fortitude save (@Check[fortitude|dc:36|options:inflicts:enfeebled,inflicts:fatigued]). This effect is magical and can be counteracted with @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (Level 15, DC 36). This ability cannot affect a creature that critically succeeded at the spell's saving throw, if any.</p><hr /><p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 round.</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p><strong>Critical Failure</strong> Fatigued, and rest does not remove the creature's fatigued condition for 1 week.</p>",
           "name": "Enervating Tug"
         },
         "N3lBfsSsPZ0v5uED": {
@@ -1839,6 +1840,7 @@
       "description": "<p>Secreted away in the dark corners of unnamed libraries, necromancer's dens, and heretical scriptoriums, obscure texts describe a horrifying ritual that combines sacrifice and suffering to create a powerful undead being known as a herecite. These monsters, stripped of personal will or desire, are born into the service of an evil god whom they worship unerringly and untiringly, often in spite of any opposing religious leanings they may have had in life. Every herecite harbors an unquenchable self-hatred because it was defiled by such a foul resurrection-a rage it turns outward in an attempt to rob others of their faith and lives.</p>\n<p>Herecites often outlast the cults that create them. Stranded herecites are drawn to others of their kind, even if they are dedicated to different evil deities, and when brought together they perform rites to magically bind themselves in a group known as a cabal. While cabal members share enhanced magic and defenses, induction into a cabal appears to hold even deeper significance for herecites. The presence of others of their kind with whom they can pray-in verses warped to venerate wicked gods-seems the only solace these tormented beings can find in undeath. Such a fellowship of sorrow is nigh unbreakable, as many an overzealous crusader has discovered far too late.</p>\n<p>Customarily found within heavily modified temples to the pantheon of gods they collectively worship, herecites act in service to their creators or as protectors of unholy ground. High priests of different evil gods may even trade herecites among themselves, allowing their minions to form cabals strengthened by their varied faiths. A lone herecite cut off from its creators-often because it is the sole remnant of a destroyed temple or its master has perished-may wander far and wide in search of a cabal to join. Other times, the herecite seeks out a place sacred to the deity it worshipped in life. Whether motivated by a desire for contrition or vengeance, the end result of this baleful pilgrimage is always the desecration of the holy site and the slaughter of its congregants, who may in turn rise as lesser forms of undead.</p>",
       "items": {
         "0uWgmxpffv5a1h3J": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Constant) (Good Only)"
         },
         "4v1QwNqequfwzIu9": {
@@ -1938,7 +1940,7 @@
           "name": "Delusional Pride (At Will) (Emotional Focus)"
         },
         "yhUioD8pgXFVQiro": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Hollow Hush feeds on the emotional unrest of a single creature within 30 feet that's currently affected by an emotion effect. The target must succeed at a @Check[will|dc:41|traits:damaging-effect] save or take @Damage[5d10[mental]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round. If the target fails its saving throw, Hollow Hush regains the same number of Hit Points and Feed on Emotion does not cost Hollow Hush an action, allowing it to use another action this turn.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Hollow Hush feeds on the emotional unrest of a single creature within 30 feet that's currently affected by an emotion effect. The target must succeed at a @Check[will|dc:41|traits:damaging-effect|options:inflicts:stunned] save or take @Damage[5d10[mental]] damage and be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round. If the target fails its saving throw, Hollow Hush regains the same number of Hit Points and Feed on Emotion does not cost Hollow Hush an action, allowing it to use another action this turn.</p>",
           "name": "Feed on Emotion"
         }
       },
@@ -2016,7 +2018,7 @@
           "description": "<p>@Damage[(3d10+17)[piercing]], @Check[fortitude|dc:41|basic]</p>\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "BEMhZJteQTj5sUGM": {
-          "description": "<p>@Check[reflex|dc:43], @Damage[10d6[void]], [[/act escape dc=43]], Rupture 45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:43|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[10d6[void]] damage, [[/act escape dc=43]], Rupture 45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "GBZBg2dACMgs5Uz2": {
           "name": "Disappearance (At Will) (Self Only)"
@@ -2069,11 +2071,11 @@
       "description": "<p>An iridescent animal is a wild or domesticated animal that has undergone a magical transformation to become a luminescent beast that can glow in the dark and use dazzling light-based powers. Although the effect is glamorous, the life of an iridescent animal is a sad one. The change drastically weakens the animal, diminishing both its strength and its vitality. This effect is desirable for some-particularly the circuses, menageries, and royal courts that typically purchase these glowing beasts-but never for the animal itself. Because the effects of the transformation are so deleterious, the act of creating an iridescent animal is strongly frowned upon by druids and other naturalists, some of whom dedicate their lives to rescuing and fostering these maltreated creatures. The procedure cannot be reversed, and few iridescent animals are fit to live in the wild after the transformation, cementing their lot in life to serve as showy beasts of burden or objects of entertainment and ridicule.</p>",
       "items": {
         "An5Bh0snG4EiSy6u": {
-          "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The iridescent elephant blasts a beam of light from its trunk in a @Template[line|distance:30]. Each creature in the area must attempt a @Check[fortitude|dc:22|options:area-effect] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded permanently.</p>",
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The iridescent elephant blasts a beam of light from its trunk in a @Template[line|distance:30]. Each creature in the area must attempt a @Check[fortitude|dc:22|options:area-effect,inflicts:dazzled,inflicts:blinded] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded permanently.</p>",
           "name": "Trunk Beam"
         },
         "Gg4EGIEKIMWM6Lln": {
-          "description": "<p>When the iridescent elephant stomps its foot, a bright, disorienting burst of light pulses through its leg. Each creatures adjacent to the iridescent elephant when it makes a foot Strike (regardless of whether or not it hit) must succeed at a @Check[will|dc:24] save or be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of the elephant's next turn.</p>",
+          "description": "<p>When the iridescent elephant stomps its foot, a bright, disorienting burst of light pulses through its leg. Each creatures adjacent to the iridescent elephant when it makes a foot Strike (regardless of whether or not it hit) must succeed at a @Check[will|dc:24|options:area-effect,inflicts:off-guard] save or be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of the elephant's next turn.</p>",
           "name": "Color Splash"
         },
         "KdGsDBgPGKlQjwFc": {
@@ -2328,7 +2330,7 @@
           "name": "Claw"
         },
         "SHp8QZBD4sEwfuHc": {
-          "description": "<p>30 feet. A creature that enters the emanation must attempt a @Check[will|dc:42] save.</p>\n<p>On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round on a critical failure).</p>\n<p>A creature that succeeds at its save is temporarily immune to psychogenic secretions for 1 minute.</p>",
+          "description": "<p>30 feet. A creature that enters the emanation must attempt a @Check[will|dc:42|options:inflicts:paralyzed,inflicts:stupefied] save.</p>\n<p>On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round on a critical failure).</p>\n<p>A creature that succeeds at its save is temporarily immune to psychogenic secretions for 1 minute.</p>",
           "name": "Psychogenic Secretions"
         },
         "TqypIhZnwhIuh2eR": {
@@ -2354,7 +2356,7 @@
           "name": "Jaws"
         },
         "yTuD5OYd94nyf8YO": {
-          "description": "<p>Kirosthrek invades the mind of a creature within 100 feet and attempts to swallow its capacity for higher thought. The creature must attempt a @Check[will|dc:42] save.</p>\n<p>Using Consume Knowledge immediately ends any of the ability's previous effects on a different creature.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is slowed 1 and can take no actions other than basic actions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and Kirosthrek is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} for 1 minute. She can use this extra action to Stride, Strike, or Cast a Spell if the target had prepared spells or a spell repertoire.</p>",
+          "description": "<p>Kirosthrek invades the mind of a creature within 100 feet and attempts to swallow its capacity for higher thought. The creature must attempt a @Check[will|dc:42|options:inflicts:slowed] save.</p>\n<p>Using Consume Knowledge immediately ends any of the ability's previous effects on a different creature.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is slowed 1 and can take no actions other than basic actions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and Kirosthrek is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. She can use this extra action to Stride, Strike, or Cast a Spell if the target had prepared spells or a spell repertoire.</p>",
           "name": "Consume Knowledge"
         }
       },
@@ -2371,7 +2373,7 @@
       "description": "<p>Xulgath leaders are usually the strongest, most violent members of a community-although in some cases, particularly in larger groups, xulgath tribes are led by powerful demon cultists or other monsters who seek to use the xulgaths as servants or slaves.</p>\n<hr />\n<p>Reptilian humanoids who live in the uppermost reaches of the Darklands, xulgaths (known as troglodytes to many surface-dwelling folk) often attack intruders in their territory on sight. They live in simple familial communities, battling rival groups and other aggressive Darklands inhabitants in order to survive. They occasionally raid surface settlements, usually at the behest of cruel, bloodthirsty leaders who are often themselves in the thrall of more powerful creatures like nagas or demons. A typical xulgath has dull gray, dark gray, or ashen scales, with a long tail and bony protrusions that run the length of its spine. A typical xulgath is 5 feet tall and weighs 150 pounds.</p>\n<p>Although today the xulgaths are brutal and scattered, they were one of the first intelligent humanoids to rise in the primeval world, once ruling over a mighty empire that stretched throughout the Darklands. Today, all that remains of this era are ruins of massive stone ziggurats and crumbling cities found within some of the larger caverns. Some groups of xulgaths continue to live among these ruins, venerating their ancestors' accomplishments, while others consider these areas taboo and leave them to become infested with Darklands vermin. Sages don't agree on why the ancient xulgath civilization fell. Some suspect it was the result of a loss of several wars waged against serpentfolk, while others suggest that the corruptive influence of demon worship rotted their culture from within.</p>\n<p>Certainly, many xulgath settlements continue to worship demons to this day, paying homage and offering live sacrifices to terrible creatures from the Abyss. Occasionally, a xulgath shaman can call forth and bind a lesser demon to help serve the group, but a shaman who delves too deep into occultism might summon a more powerful fiend that either tears the xulgaths to pieces or enslaves them.</p>",
       "items": {
         "1BwIo7mgXKcuS2Vg": {
-          "description": "<p>The target must succeed at a @Check[fortitude|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} on a critical hit) for 1 round.</p>",
+          "description": "<p>The target must succeed at a @Check[fortitude|dc:20|options:inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} on a critical hit) for 1 round.</p>",
           "name": "Weakening Strike"
         },
         "5nT84dxYsEWqc0sS": {
@@ -2549,7 +2551,7 @@
           "description": "<p>The visitant deals an extra 1d8 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "oZzczpHFxrH5IUJq": {
-          "description": "<p>The visitant lets out a loud and horrifying roar. Each creature within @Template[emanation|distance:100]{100 feet} must attempt at a @Check[will|dc:19] save.</p>\n<p>No matter the result, affected creatures are then temporarily immune to the effect for 1 minute.</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
+          "description": "<p>The visitant lets out a loud and horrifying roar. Each creature within @Template[emanation|distance:100]{100 feet} must attempt at a @Check[will|dc:19|options:area-effect,inflicts:frightened] save.</p>\n<p>No matter the result, affected creatures are then temporarily immune to the effect for 1 minute.</p><hr /><p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
           "name": "Roar"
         },
         "x8zvyv0LEKpl4zb1": {
@@ -2567,11 +2569,11 @@
           "name": "Pseudopod"
         },
         "hKCyP0kuF8Zoh3ey": {
-          "description": "<p>5 feet. A luminous ooze constantly sheds distracting multicolored light. A creature that ends its turn within the aura must attempt a @Check[fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn. On a critical failure, it instead becomes @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn.</p>",
+          "description": "<p>5 feet. A luminous ooze constantly sheds distracting multicolored light. A creature that ends its turn within the aura must attempt a @Check[fortitude|dc:21|options:area-effect,inflicts:dazzled,inflicts:blinded] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn. On a critical failure, it instead becomes @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn.</p>",
           "name": "Bedazzling"
         },
         "tZyhBnoDUGVEDL7x": {
-          "description": "<p>Whenever the luminous ooze's electricity immunity prevents it from taking damage, it gains 8 temporary HP. Until the end of its next turn, the luminous ooze's pseudopod Strike deals an additional @Damage[1d6[electricity]] damage.</p>",
+          "description": "<p>Whenever the luminous ooze's electricity immunity prevents it from taking damage, it gains 8 temporary HP. Until the end of its next turn, the luminous ooze's pseudopod Strike deals an additional 1d6 points of electricity damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.pD4DPyxbNtpeXxr6]{Effect: Lightning Catcher}</p>",
           "name": "Lightning Catcher"
         },
         "vYd3rbKnbc32kox2": {
@@ -2579,7 +2581,7 @@
           "name": "Motion Sense 60 feet"
         },
         "xX5Ycq93HKRAsmvI": {
-          "description": "<p>The ooze glows with blinding brightness. All creatures within a @Template[emanation|distance:30] must attempt a @Check[fortitude|dc:21] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn.</p>",
+          "description": "<p>The ooze glows with blinding brightness. All creatures within a @Template[emanation|distance:30] must attempt a @Check[fortitude|dc:21|options:area-effect,inflicts:dazzled,inflicts:blinded] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn.</p>",
           "name": "Light Up"
         }
       },
@@ -2628,7 +2630,7 @@
       "description": "<p>Invisible runes in the maze disorient those within it and cause its mirrored walls to shift about.</p>",
       "hazardDisable": "<p>@Check[thievery|dc:26|name:Stop the mirrors|traits:hazard,complex,magical,mechanical,trap] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank; counteract DC 28) to stop the mirrors' shuffling; @Check[occultism|dc:28|name:Dispel the minotaur|traits:hazard,complex,magical,mechanical,trap] or @Check[religion|dc:28|name:Dispel the minotaur|traits:hazard,complex,magical,mechanical,trap] (expert) to dispel the minotaur</p>",
       "hazardReset": "<p>The trap deactivates and resets if 1 minute passes without any creature in the maze.</p>",
-      "hazardRoutine": "<p>(3 actions) The trap uses its first action to magically shuffle the mirrors, rendering markings or maps of the maze ineffective. Creatures in the maze that fail a @Check[will|dc:26|traits:hazard,complex,magical,mechanical,trap] save are @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until they leave the maze. If the target fails additional saves against this ability, the condition value increases by 1 (to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}).</p>\n<p>For its second action, the trap's ghostly minotaur attacks a random creature in the maze with its spectral gore.</p>\n<p>For its third action, the trap makes another spectral gore attack against a random creature.</p>",
+      "hazardRoutine": "<p>(3 actions) The trap uses its first action to magically shuffle the mirrors, rendering markings or maps of the maze ineffective. Creatures in the maze that fail a @Check[will|dc:26|traits:hazard,complex,magical,mechanical,trap|options:area-effect,inflicts:stupefied] save are @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until they leave the maze. If the target fails additional saves against this ability, the condition value increases by 1 (to a maximum of stupefied 4).</p><p>For its second action, the trap's ghostly minotaur attacks a random creature in the maze with its spectral gore.</p><p>For its third action, the trap makes another spectral gore attack against a random creature.</p>",
       "name": "Maze of Mirrors"
     },
     "Mechanical Carny": {
@@ -2744,7 +2746,7 @@
           "name": "Muse Possession"
         },
         "LxPQprD4lkZ2Wjc9": {
-          "description": "<p><strong>Requirements</strong> The muse phantom's thespian aura is active</p>\n<hr />\n<p><strong>Effect</strong> The muse ceases its thespian aura and deals @Damage[4d8[mental]|options:area-damage] damage to creatures in a @Template[burst|distance:30], including the creature it is possessing, if any (@Check[will|dc:22|basic|options:area-effect] save). Creatures that fail their Will saves are @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the muse phantom for 1 minute.</p>\n<p data-pf2-show-dc=\"gm\">The muse phantom can't use Grand Finale again for [[/gmr 1d4 #Recharge Grand Finale]]{1d4 rounds}.</p>",
+          "description": "<p><strong>Requirements</strong> The muse phantom's thespian aura is active</p><hr /><p><strong>Effect</strong> The muse ceases its thespian aura and deals @Damage[4d8[mental]|options:area-damage] damage to creatures in a @Template[burst|distance:30], including the creature it is possessing, if any (@Check[will|dc:22|basic|options:area-effect,inflicts:fascinated] save). Creatures that fail their Will saves are @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the muse phantom for 1 minute.</p><p data-pf2-show-dc=\"gm\">The muse phantom can't use Grand Finale again for [[/gmr 1d4 #Recharge Grand Finale]]{1d4 rounds}.</p>",
           "name": "Grand Finale"
         },
         "RMwLgobPTr1kBImK": {
@@ -2760,7 +2762,7 @@
           "name": "Phantom Hand"
         },
         "yihwJb9tcVGBGiIv": {
-          "description": "<p>30 feet. The muse phantom inspires a supernatural emotional response-either comedy or drama. Each creature that begins its turn in the aura must attempt a @Check[will|dc:20] save; on a failure, the creature is affected as long as it remains within the aura. If the muse phantom is emitting a comedic aura, affected creatures become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}; if it is emitting a dramatic aura, affected creatures instead become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p>The muse phantom can change its aura from comedic to dramatic or vice-versa, or cease or activate this aura, by spending a single action, which has the concentrate trait. A creature possessed by a muse phantom is immune to this aura.</p>",
+          "description": "<p>30 feet. The muse phantom inspires a supernatural emotional response-either comedy or drama. Each creature that begins its turn in the aura must attempt a @Check[will|dc:20|options:area-effect,inflicts:clumsy,inflicts:stupefied] save; on a failure, the creature is affected as long as it remains within the aura. If the muse phantom is emitting a comedic aura, affected creatures become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}; if it is emitting a dramatic aura, affected creatures instead become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p>The muse phantom can change its aura from comedic to dramatic or vice-versa, or cease or activate this aura, by spending a single action, which has the concentrate trait. A creature possessed by a muse phantom is immune to this aura.</p>",
           "name": "Thespian Aura"
         }
       },
@@ -2777,7 +2779,7 @@
           "name": "Gaseous Form"
         },
         "PO0gF2xQ8vL9kRKY": {
-          "description": "<p>30 feet. @Check[fortitude|dc:33|options:area-effect,inflicts:sickened,inflicts:fatigued].</p>\n<p>Swirling winds of noxious, flammable gas surround a muurfeli. An open flame, spark, or similar fire effect in the area causes an explosion that deals @Damage[20d6[fire]|options:area-damage] damage to all creatures in the aura (including the muurfeli) and temporarily disables the aura for 1 minute.</p>\n<p>When the muurfeli takes damage from an ability with the water trait or fails a saving throw against a water effect, their firedamp winds aura is disabled for 1 minute.</p>\n<p>A creature that enters or begins its turn in the aura must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
+          "description": "<p>30 feet. @Check[fortitude|dc:33|options:area-effect,inflicts:sickened,inflicts:fatigued].</p>\n<p>Swirling winds of noxious, flammable gas surround a muurfeli. An open flame, spark, or similar fire effect in the area causes an explosion that deals @Damage[20d6[fire]|options:area-damage] damage to all creatures in the aura (including the muurfeli) and temporarily disables the aura for 1 minute.</p>\n<p>When the muurfeli takes damage from an ability with the water trait or fails a saving throw against a water effect, their firedamp winds aura is disabled for 1 minute.</p>\n<p>A creature that enters or begins its turn in the aura must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
           "name": "Firedamp Winds"
         },
         "QT8BrycRuuUhs2V7": {
@@ -2813,7 +2815,7 @@
           "name": "Charm (Animals Only)"
         },
         "MBzAQ6mXHGE5nAla": {
-          "name": "Key to the Ringmaster's Wagon"
+          "name": "Key"
         },
         "MdI8mi4g063OS9Gp": {
           "name": "Entangle"
@@ -2956,7 +2958,7 @@
           "name": "Tail"
         },
         "odG6wvcX6jYyHa7t": {
-          "description": "<p>A creature hit by the pinacosaurus's tail must attempt a @Check[fortitude|dc:21] save. On a failure, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} until the end of its next turn.</p>",
+          "description": "<p>A creature hit by the pinacosaurus's tail must attempt a @Check[fortitude|dc:21|options:inflicts:slowed,inflicts:stunned] save. On a failure, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} until the end of its next turn.</p>",
           "name": "Punishing Tail"
         },
         "zwkgV9sWG9MJ5GIJ": {
@@ -2983,7 +2985,7 @@
           "name": "+2 Circumstance to Fortitude and Reflex vs. Shove or Trip"
         },
         "q4Nwd5vpZrD2cK4B": {
-          "description": "<p>Pruana makes a fist Strike against a target she has previously attacked this turn. If she hits, she gains a +3 circumstance bonus to the damage, and the creature must attempt a @Check[fortitude|dc:20] save to resist the staggering force of the blow.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>\n<p><strong>Critical Failure</strong> The target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 5}.</p>",
+          "description": "<p>Pruana makes a fist Strike against a target she has previously attacked this turn. If she hits, she gains a +3 circumstance bonus to the damage, and the creature must attempt a @Check[fortitude|dc:20|options:inflicts:prone,inflicts:stunned] save to resist the staggering force of the blow.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>\n<p><strong>Critical Failure</strong> The target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 5}.</p>",
           "name": "Haymaker"
         }
       },
@@ -3091,7 +3093,7 @@
           "description": "<p><strong>Strike</strong>: Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
         },
         "FS7b7xFxtknejiPh": {
-          "description": "<p>The qurashith unleashes a debilitating psionic scream. Creatures in a @Template[cone|distance:60] must succeed at a @Check[will|dc:35] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} on a critical failure) for 1 minute. A creature that critically succeeds at its Will save is immune to the qurashith's Psychic Howl for 24 hours. The qurashith can't use Psychic Howl again for [[/gmr 1d4 #Recharge Psychic Howl]]{1d4 rounds}.</p>",
+          "description": "<p>The qurashith unleashes a debilitating psionic scream. Creatures in a @Template[cone|distance:60] must succeed at a @Check[will|dc:35|options:inflicts:stupefied] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} on a critical failure) for 1 minute. A creature that critically succeeds at its Will save is immune to the qurashith's Psychic Howl for 24 hours. The qurashith can't use Psychic Howl again for [[/gmr 1d4 #Recharge Psychic Howl]]{1d4 rounds}.</p>",
           "name": "Psychic Howl"
         },
         "FaPP84ihUiXrLLm8": {
@@ -3119,7 +3121,7 @@
     "Raptor Guard Wight": {
       "items": {
         "92xnULMmOwNxGCpN": {
-          "description": "<p>30 feet. A creature that enters the area must attempt a @Check[fortitude|dc:32] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} for as long as it is sickened; on a critical failure, the creature is instead @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} for as long as it is sickened. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to any creature's death stench for 1 minute.</p>",
+          "description": "<p>30 feet. A creature that enters the area must attempt a @Check[fortitude|dc:32|options:area-effect,inflicts:doomed,inflicts:sickened] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} for as long as it is sickened; on a critical failure, the creature is instead @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} for as long as it is sickened. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to any creature's death stench for 1 minute.</p>",
           "name": "Death Stench"
         },
         "RaAxUg8NsJWovO3S": {
@@ -3175,7 +3177,7 @@
           "name": "Claw"
         },
         "vd0T6m7E9RIQTVJH": {
-          "description": "<p>A creature damaged by a resin-seep xulgath's jaws or claw Strike must succeed at a @Check[reflex|dc:28|traits:damaging-effect] save or be covered with clumps of noxious resin, taking @Damage[2d8[poison]] damage and a –15-foot penalty to its Speeds for 1 minute (on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute). The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} for as long it has a Speed penalty. A creature can spend an @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} action to scrape the resin off, decreasing the Speed penalty by 5 with each such action.</p>",
+          "description": "<p>A creature damaged by a resin-seep xulgath's jaws or claw Strike must succeed at a @Check[reflex|dc:28|options:damaging-effect,inflicts:clumsy,inflicts:sickened] save or be covered with clumps of noxious resin, taking @Damage[2d8[poison]] damage and a –15-foot penalty to its Speeds for 1 minute (on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute). The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} for as long it has a Speed penalty. A creature can spend an @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} action to scrape the resin off, decreasing the Speed penalty by 5 with each such action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.CZVQ5dYjzR7b9Ygn]{Effect: Resin Crust}</p>",
           "name": "Resin Crust"
         }
       },
@@ -3184,7 +3186,7 @@
     "Ruanna Nyamma": {
       "items": {
         "2oftzl4JLLJIvRRz": {
-          "description": "<p>Ruanna attempts to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} using Performance rather than Deception. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to any melee attack, not just Ruanna's.</p>\n<p>Ruanna then Strides.</p>",
+          "description": "<p>Ruanna attempts to [[/act feint skill=performance]] using Performance rather than Deception. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to any melee attack, not just Ruanna's.</p>\n<p>Ruanna then Strides.</p>",
           "name": "Elaborate Feint"
         },
         "4J6Chq247pOMSb8d": {
@@ -3258,7 +3260,7 @@
           "name": "Finger of Death"
         },
         "KczcQ2zt8BqH8GXB": {
-          "description": "<p>30 feet. A creature that enters or begins their turn in the emanation must attempt a @Check[fortitude|dc:45] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a critical failure, it can't target Sarvel with any Strikes or other effects from its confused condition.</p>\n<p>While within the emanation, the creature takes a -2 penalty to saves to recover from the sickened condition.</p>\n<p>A creature that succeeds at its save is temporarily immune to all xulgaths' stenches for 1 minute. Sarvel can suppress or resume this aura as a free action.</p>",
+          "description": "<p>30 feet. A creature that enters or begins their turn in the emanation must attempt a @Check[fortitude|dc:45|options:area-effect,inflicts:sickened,inflicts:confused] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a critical failure, it can't target Sarvel with any Strikes or other effects from its confused condition.</p>\n<p>While within the emanation, the creature takes a -2 penalty to saves to recover from the sickened condition.</p>\n<p>A creature that succeeds at its save is temporarily immune to all xulgaths' stenches for 1 minute. Sarvel can suppress or resume this aura as a free action.</p>",
           "name": "Enraging Stench"
         },
         "S5SFA8UXZbtiBf3u": {
@@ -3337,7 +3339,7 @@
           "name": "Three-Limbed Lunge"
         },
         "bNJHQZLJcksGVWsc": {
-          "description": "<p>The saurian warmonger bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:34|basic|options:area-effect] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>",
+          "description": "<p>The saurian warmonger bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:34|basic|options:area-effect,inflicts:slowed,inflicts:stunned] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>",
           "name": "Boneshaking Roar"
         },
         "jsL5jhGaz2pctkeU": {
@@ -3354,7 +3356,7 @@
           "name": "Summon Animal (Dinosaurs Only)"
         },
         "5utWutqAL3Pfpee3": {
-          "description": "<p>Whenever the worldwatcher hits a creature with their fist or naginata Strike, that creature must succeed at a @Check[fortitude|dc:39] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical hit).</p>",
+          "description": "<p>Whenever the worldwatcher hits a creature with their fist or naginata Strike, that creature must succeed at a @Check[fortitude|dc:39|options:inflicts:stunned] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical hit).</p>",
           "name": "Stunning Blow"
         },
         "7e908l7OkfXJHtHN": {
@@ -3377,7 +3379,7 @@
           "name": "Speak with Animals (Constant)"
         },
         "pPAfuiRx3hQmyGuJ": {
-          "description": "<p>The saurian worldwatcher bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:38|basic|options:area-effect] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} [[/r 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>",
+          "description": "<p>The saurian worldwatcher bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within @Template[emanation|distance:30]{30 feet} take @Damage[10d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:38|basic|options:area-effect,inflicts:slowed,inflicts:stunned] save). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} [[/gmr 1d4 #Stunned Value]]{1d4} on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for [[/gmr 1d4 #Recharge Boneshaking Roar]]{1d4 rounds}.</p>",
           "name": "Boneshaking Roar"
         }
       },
@@ -3387,7 +3389,7 @@
       "description": "<p>Xulgath thoughtmaws are inheritors of the xulgaths' ancient psychic legacy. They eagerly and liberally use their ability to extract knowledge from their foes to quicken their own prodigious intellects.</p>",
       "items": {
         "1329nZKSKvV6X654": {
-          "description": "<p>The thoughtmaw invades the mind of a creature within 100 feet and attempts to swallow its capacity for higher thought. The creature must attempt a @Check[will|dc:36] save.</p>\n<p>Using Consume Knowledge immediately ends any of the ability's previous effects on a different creature.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is slowed 1 and can take no actions other than basic actions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the thoughtmaw is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} for 1 minute. It can use this extra action to Stride, Strike, or Cast a Spell if the target had prepared spells or a spell repertoire.</p>",
+          "description": "<p>The thoughtmaw invades the mind of a creature within 100 feet and attempts to swallow its capacity for higher thought. The creature must attempt a @Check[will|dc:36] save.</p>\n<p>Using Consume Knowledge immediately ends any of the ability's previous effects on a different creature.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is slowed 1 and can take no actions other than basic actions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the thoughtmaw is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. It can use this extra action to Stride, Strike, or Cast a Spell if the target had prepared spells or a spell repertoire.</p>",
           "name": "Consume Knowledge"
         },
         "30u18PLPEhoWfUTp": {
@@ -3586,6 +3588,7 @@
           "name": "Dream Message (At Will)"
         },
         "UBibmfZaH20tWub7": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Constant) (All Alignments Simultaneously)"
         },
         "UOVIQWXoyaOc2IBj": {
@@ -3607,7 +3610,7 @@
           "name": "Spell Ambush"
         },
         "YRWhIzukE4zO9fUH": {
-          "name": "-2 to All Saves (If Hearstone is Lost)"
+          "name": "-2 to All Saves (If Heartstone is Lost)"
         },
         "aBlnDa69uYoI9jdA": {
           "name": "Sleep (At Will)"
@@ -3653,7 +3656,7 @@
           "name": "Claw"
         },
         "ce0ME84C2cbPH0JA": {
-          "description": "<p>Any living creature hit by Smiler's attack must succeed at a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by Smiler's attack must succeed at a @Check[fortitude|dc:18|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "k1Ehx0dobB1JSYjA": {
@@ -3743,7 +3746,7 @@
           "name": "Claw"
         },
         "rNe7hr19TVEKyp1e": {
-          "description": "<p>60 feet. Any creature that ends its turn in the aura feels the intense pain of starvation and must attempt a @Check[fortitude|dc:32] save. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} and takes @Damage[7d6[untyped]] damage. Damage and fatigue a creature takes from this aura can't be healed until the affected creature has eaten a full meal.</p>",
+          "description": "<p>60 feet. Any creature that ends its turn in the aura feels the intense pain of starvation and must attempt a @Check[fortitude|dc:32|options:area-effect,damaging-effect,inflicts:fatigued] save. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} and takes @Damage[7d6[untyped]] damage. Damage and fatigue a creature takes from this aura can't be healed until the affected creature has eaten a full meal.</p>",
           "name": "Starvation Aura"
         },
         "tBRAlDxZSt1mK0F8": {
@@ -3876,7 +3879,7 @@
           "name": "Residual Grease"
         },
         "MCrT1usrhDxwMWCc": {
-          "description": "<p>@Check[reflex|dc:30], @Damage[4d10[bludgeoning]], [[/act escape dc=26]], Rupture 25</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:30|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[4d10[bludgeoning]] damage, [[/act escape dc=26]], Rupture 25</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "dCh3xhDcX6ef0gtU": {
           "description": "<p>10 feet. Any creature that starts its turn in or enters a square in the area must attempt a @Check[acrobatics|dc:30|traits:aura,action:balance] check to Balance. A creature that takes a Step doesn't need to roll this check.</p>",
@@ -3963,7 +3966,7 @@
     "The Vanish Man": {
       "items": {
         "2GPHZdvZjNrQX4S7": {
-          "description": "<p>The Vanish Man doesn't have an alignment aura and cannot be detected by spells such as @UUID[Compendium.pf2e.spells-srd.Item.QnTtGCAvdWRU4spv]{Detect Alignment}.</p>",
+          "description": "<p>The Vanish Man doesn't have an alignment aura and cannot be detected by spells such as <em>detect alignment</em>.</p>",
           "name": "Vanished Alignment"
         },
         "4cj7pDegwTLGP1gx": {
@@ -4092,7 +4095,7 @@
           "name": "Expanded Splash"
         },
         "qsR9Zyfw0HbieQM9": {
-          "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> Thessekka is standing on or next to at least 10 cubic feet of dirt, stone, or other earthen material</p>\n<hr />\n<p><strong>Effect</strong> Thessekka creates a violent wave of roiling earth. Creatures in a @Template[cone|distance:15] take @Damage[10d10[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:34|basic|options:area-effect] save; on a critical failure, creatures are also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>",
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> Thessekka is standing on or next to at least 10 cubic feet of dirt, stone, or other earthen material</p><hr /><p><strong>Effect</strong> Thessekka creates a violent wave of roiling earth. Creatures in a @Template[cone|distance:15] take @Damage[10d10[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:34|basic|options:area-effect,inflicts:prone] save; on a critical failure, creatures are also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>",
           "name": "Earthen Torrent"
         },
         "wv4csg9YxPFOP1Pm": {
@@ -4133,7 +4136,7 @@
           "name": "Rejuvenation"
         },
         "erJjvQ0PRlmb1VLz": {
-          "description": "<p>30 feet. Creatures entering the aura or starting their turn in the aura must succeed at a @Check[will|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute. On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}. As a reflection of Ulthadar's emotional state, this aura is active when Ulthadar is agitated or angry and is suppressed when he is calm.</p>",
+          "description": "<p>30 feet. Creatures entering the aura or starting their turn in the aura must succeed at a @Check[will|dc:26|options:area-effect,inflicts:stupefied,inflicts:stunned] save or be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute. On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}. As a reflection of Ulthadar's emotional state, this aura is active when Ulthadar is agitated or angry and is suppressed when he is calm.</p>",
           "name": "Existential Agony"
         },
         "wKH8WPFicTjEMDpB": {
@@ -4253,7 +4256,7 @@
           "name": "Feather Fall (At Will) (Self Only)"
         },
         "gnbyS4J4UvV5J0pq": {
-          "description": "<p>The urdefhan hunter makes a ranged Strike at a -2 penalty. The urdefhan deals [[/r 4]] additional damage with this Strike.</p>",
+          "description": "<p>The urdefhan hunter makes a ranged Strike at a –2 penalty. The urdefhan deals 4 additional damage with this Strike.</p>",
           "name": "Deadly Aim"
         }
       },
@@ -4264,7 +4267,7 @@
       "description": "<p>Mariliths are the generals of the Abyss, formed from the souls of proud evil mortals, often warlords and despots. They appear as tall and powerfully built humans from the waist up with snake tails and six arms. Because of Lamashtu's prominence over other demonic deities, most pride demons encountered by mortals take female form, but they can be of any gender.</p>\n<p>Mariliths are among the greatest tacticians in the Abyss, and they have an almost supernatural knack for understanding the ripples of chaos and the unpredictable nature of demonic life. Their ability to command armies rises as much from their commanding presence as it does their ability to read into the potential results of any possible act and a sufficient understanding of the flow of entropy to allow them to predict likely outcomes.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Abyss, it can become a deadly fiend-a demon. Demons are living incarnations of sin-be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold-the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Abyss.</p>",
       "items": {
         "1xcDVCY3sx0uDDys": {
-          "description": "<p>@Damage[(2d12+13)[bludgeoning]] damage, @Check[fortitude|dc:41|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<p>@Damage[(2d12+13)[bludgeoning]], @Check[fortitude|dc:41|basic|options:inflicts:unconscious]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "2CJo5tauCDhGyp1O": {
           "name": "Telepathy 100 feet"
@@ -4383,7 +4386,7 @@
           "name": "Smoking Wound"
         },
         "t3bOnN3uPrJ4Ornk": {
-          "description": "<p>If the vavakia critically hits with its tail Strike, the target must succeed at a @Check[fortitude|dc:40] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round ([[/gmr 1d4 #rounds]]{1d4 rounds} on a critical failure).</p>",
+          "description": "<p>If the vavakia critically hits with its tail Strike, the target must succeed at a @Check[fortitude|dc:40|options:inflicts:stunned] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round ([[/gmr 1d4 #rounds]]{1d4 rounds} on a critical failure).</p>",
           "name": "Stunning Tail"
         },
         "tX1EDPaUSBzOxSTd": {
@@ -4513,7 +4516,7 @@
           "name": "Vein"
         },
         "w285iz3GQ53ORMER": {
-          "description": "<p><strong>Trigger</strong> A creature lands a critical hit with a melee Strike against the vitalia</p>\n<hr />\n<p><strong>Effect</strong> The vitalia sprays blood at the triggering creature. The creature must succeed at a @Check[reflex|dc:39] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>",
+          "description": "<p><strong>Trigger</strong> A creature lands a critical hit with a melee Strike against the vitalia</p><hr /><p><strong>Effect</strong> The vitalia sprays blood at the triggering creature. The creature must succeed at a @Check[reflex|dc:39|options:inflicts:dazzled,inflicts:blinded] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>",
           "name": "Blood Eruption"
         },
         "xcCjk9YBXJF1CPRT": {
@@ -4529,7 +4532,7 @@
           "description": "<p>@Check[reflex|dc:32]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
         },
         "Ulxj8gjRkhtCZWc1": {
-          "description": "<p>A creature struck by the war sauropelta's tail must attempt a @Check[fortitude|dc:32] save. On a failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
+          "description": "<p>A creature struck by the war sauropelta's tail must attempt a @Check[fortitude|dc:32|options:inflicts:stunned] save. On a failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}; on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>",
           "name": "Punishing Tail"
         },
         "VCPQniFfaKaaW5dO": {
@@ -4598,7 +4601,7 @@
           "name": "Dimension Door (At Will)"
         },
         "R8Kt7N2ubdHBIdow": {
-          "description": "<p>The xilvirek retches a small pool of debilitating, acrid bile onto itself. All creatures within 30 feet take @Damage[4d6[acid]] damage as they inhale the bile's noxious fumes (@Check[fortitude|dc:32|basic] save; on a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). The xilvirek can't Disgorge Bile again for [[/gmr 1d4 #Recharge Disgorge Bile]]{1d4 rounds}.</p>",
+          "description": "<p>The xilvirek retches a small pool of debilitating, acrid bile onto itself. All creatures within @Template[emanation|distance:30]{30 feet} take @Damage[4d6[acid]|options:area-damage] damage as they inhale the bile's noxious fumes (@Check[fortitude|dc:32|basic|options:area-effect,inflicts:sickened] save; on a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). The xilvirek can't Disgorge Bile again for [[/gmr 1d4 #Recharge Disgorge Bile]]{1d4 rounds}.</p>",
           "name": "Disgorge Bile"
         },
         "dcsCqElp022elQ9N": {
@@ -4611,7 +4614,7 @@
           "name": "Teleport (Self Only)"
         },
         "o7xu8uge6T0IT23h": {
-          "description": "<p>30 feet. A creature that begins its turn in the area must succeed at a @Check[will|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the xilvirek. If the creature is already fascinated by the xilvirek and fails its save, the creature is compelled to approach the xilvirek and allow itself to be @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, which ends the fascination.</p>",
+          "description": "<p>30 feet. A creature that begins its turn in the area must succeed at a @Check[will|dc:32|options:area-effect,inflicts:fascinated] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the xilvirek. If the creature is already fascinated by the xilvirek and fails its save, the creature is compelled to approach the xilvirek and allow itself to be @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, which ends the fascination.</p>",
           "name": "Hypnotic Stench"
         },
         "u6AGWAaIUZZF6DmM": {
@@ -4748,7 +4751,7 @@
     "Xulgath Demon-Caller": {
       "items": {
         "1cplu9lvCddcGPOx": {
-          "description": "<p>The target must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure). The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for as long as it is frightened.</p>",
+          "description": "<p>The target must succeed at a @Check[fortitude|dc:22|options:inflicts:frightened,inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4} on a critical failure). The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for as long as it is frightened.</p>",
           "name": "Demonic Condemnation"
         },
         "B6q9My95Lf8cp76T": {
@@ -4781,14 +4784,14 @@
           "name": "Jaws"
         },
         "PVSV062yywdBQCMh": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The gutrager propels its esophagus out of its body to deliver an acidic blow. It makes an unarmed Strike against a creature or unattended object within 30 feet with a [[/r 1d20+23 #Attack Roll]]{+23} attack bonus.</p>\n<p>On a hit, the target takes @Damage[(2d6+8)[bludgeoning]] damage plus @Damage[4d6[acid]] damage.</p>\n<p>On a critical hit, the target also takes @Damage[2d6[persistent,acid]] damage.</p>\n<p>The gutrager is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round as it re-coils its esophagus.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gutrager propels its esophagus out of its body to deliver an acidic blow. It makes an unarmed Strike against a creature or unattended object within 30 feet with a +23 attack bonus.</p>\n<p>On a hit, the target takes 2d6+8 bludgeoning plus 4d6 acid damage.</p>\n<p>On a critical hit, the target also takes 2d6 persistent acid damage.</p>\n<p>The gutrager is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round as it re-coils its esophagus.</p>",
           "name": "Corrosive Kiss"
         },
         "VTpDnvKqgWyKG8Ow": {
           "name": "Claw"
         },
         "vCZP7eeVSKKUB4y7": {
-          "description": "<p>10 feet. Whenever a gutrager is within another xulgath's stench aura, a fog appears around the gutrager; creatures in the fog (including the gutrager) can see as normal, but they are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from creatures outside the fog. Non-xulgaths that begin their turn in the fog take @Damage[2d6[acid]] damage. Strong winds suppress this ability.</p>",
+          "description": "<p>10 feet. Whenever a gutrager is within another xulgath's stench aura, a fog appears around the gutrager; creatures in the fog (including the gutrager) can see as normal, but they are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from creatures outside the fog. Non-xulgaths that begin their turn in the fog take @Damage[2d6[acid]|options:area-damage] damage. Strong winds suppress this ability.</p>",
           "name": "Caustic Fog"
         },
         "ves4VuZndUbyx170": {
@@ -4838,7 +4841,7 @@
           "name": "Shield Warden"
         },
         "m1KBPeMqrNwEMxby": {
-          "description": "<p><strong>Trigger</strong> The hardscale uses the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]{Shield Block} reaction, and the opponent that triggered Shield Block is adjacent to the hardscale and is not more than one size larger than it</p>\n<hr />\n<p><strong>Effect</strong> The hardscale makes an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} the opponent. This shove doesn't increase the hardscale's multiple attack penalty. If they roll a critical failure, they get a failure instead. If they roll a success, they get a critical success instead.</p>",
+          "description": "<p><strong>Trigger</strong> The hardscale uses the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]{Shield Block} reaction, and the opponent that triggered Shield Block is adjacent to the hardscale and is not more than one size larger than it</p>\n<hr />\n<p><strong>Effect</strong> The hardscale makes an Athletics check to [[/act shove options=aggressive-block]] the opponent. This shove doesn't increase the hardscale's multiple attack penalty. If they roll a critical failure, they get a failure instead. If they roll a success, they get a critical success instead.</p>",
           "name": "Aggressive Block"
         }
       },
@@ -4992,11 +4995,11 @@
           "name": "Jaws"
         },
         "hcpegSxpNx41ckc9": {
-          "description": "<p>The spinesnapper makes a claw or weapon Strike. If it hits, in addition to dealing damage, the creature must attempt a @Check[fortitude|dc:22] saving throw, with the following effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and the spinesnapper is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet.</p>\n<p><strong>Critical Failure</strong> The target is pushed 10 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+          "description": "<p>The spinesnapper makes a claw or weapon Strike. If it hits, in addition to dealing damage, the creature must attempt a @Check[fortitude|dc:22|options:forced-movement,inflicts:prone] saving throw, with the following effects.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and the spinesnapper is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet.</p>\n<p><strong>Critical Failure</strong> The target is pushed 10 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
           "name": "Brutal Blow"
         },
         "wnbjJLnvmvIEGia9": {
-          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The spinesnapper has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The spinesnapper slams the creature against a nearby surface. The target and the surface struck each take @Damage[4d6[bludgeoning]] damage, and the target must succeed at a @Check[fortitude|dc:22|traits:damaging-effect] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round on a critical failure.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The spinesnapper has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>Effect</strong> The spinesnapper slams the creature against a nearby surface. The target and the surface struck each take @Damage[4d6[bludgeoning]] damage, and the target must succeed at a @Check[fortitude|dc:22|options:inflicts:slowed,inflicts:stunned] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round on a critical failure.</p>",
           "name": "Choke Slam"
         }
       },
@@ -5009,7 +5012,7 @@
           "name": "Tremorsense (imprecise) 30 feet"
         },
         "8kQ7IgMQlvRAyicP": {
-          "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> The stoneliege is standing on or next to at least 10 cubic feet of dirt, stone, or other earthen material</p>\n<hr />\n<p><strong>Effect</strong> The stoneliege creates a violent wave of roiling earth. Creatures in a @Template[cone|distance:15] take @Damage[7d8[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect] save; on a critical failure, creatures are also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>",
+          "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> The stoneliege is standing on or next to at least 10 cubic feet of dirt, stone, or other earthen material</p><hr /><p><strong>Effect</strong> The stoneliege creates a violent wave of roiling earth. Creatures in a @Template[cone|distance:15] take @Damage[7d8[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect,inflicts:prone] save; on a critical failure, creatures are also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>",
           "name": "Earthen Torrent"
         },
         "938PC6CKpMMlv4b7": {
@@ -5046,7 +5049,7 @@
       "description": "<p>Xulgath thoughtmaws are inheritors of the xulgaths' ancient psychic legacy. They eagerly and liberally use their ability to extract knowledge from their foes to quicken their own prodigious intellects.</p>",
       "items": {
         "1329nZKSKvV6X654": {
-          "description": "<p>The thoughtmaw invades the mind of a creature within 100 feet and attempts to swallow its capacity for higher thought. The creature must attempt a @Check[will|dc:36] save.</p>\n<p>Using Consume Knowledge immediately ends any of the ability's previous effects on a different creature.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is slowed 1 and can take no actions other than basic actions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the thoughtmaw is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} for 1 minute. It can use this extra action to Stride, Strike, or Cast a Spell if the target had prepared spells or a spell repertoire.</p>",
+          "description": "<p>The thoughtmaw invades the mind of a creature within 100 feet and attempts to swallow its capacity for higher thought. The creature must attempt a @Check[will|dc:36|options:inflicts:slowed] save.</p>\n<p>Using Consume Knowledge immediately ends any of the ability's previous effects on a different creature.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is slowed 1 and can take no actions other than basic actions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the thoughtmaw is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. It can use this extra action to Stride, Strike, or Cast a Spell if the target had prepared spells or a spell repertoire.</p>",
           "name": "Consume Knowledge"
         },
         "30u18PLPEhoWfUTp": {
@@ -5075,7 +5078,7 @@
           "name": "Xulgath Lore"
         },
         "uaFGybzZAhGxxd3L": {
-          "description": "<p>30 feet. A creature that enters the emanation must attempt a @Check[will|dc:36] save.</p>\n<p>On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round on a critical failure).</p>\n<p>A creature that succeeds at its save is temporarily immune to psychogenic secretions for 1 minute.</p>",
+          "description": "<p>30 feet. A creature that enters the emanation must attempt a @Check[will|dc:36|options:area-effect,inflicts:paralyzed,inflicts:stupefied] save.</p>\n<p>On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round on a critical failure).</p>\n<p>A creature that succeeds at its save is temporarily immune to psychogenic secretions for 1 minute.</p>",
           "name": "Psychogenic Secretions"
         },
         "vbtSXntRG1Pu1oO6": {
@@ -5091,15 +5094,15 @@
           "name": "Candle Fingers"
         },
         "AnbtNKsICChPCBHe": {
-          "description": "<p>The yaganty whips a stream of scalding wax in a @Template[line|distance:30]. Each glob deals @Damage[1d6[persistent,fire]] damage. An affected creature or adjacent ally can remove one glob of wax by spending an Interact action to scrape it off. The yaganty can't use Fling Wax again for [[/gmr 1d4 #Recharge Fling Wax]]{1d4 rounds}. Creatures in the area must attempt a @Check[reflex|dc:27|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is splattered with [[/r 1d2+1]]{1d2+1 globs of wax}.</p>\n<p><strong>Failure</strong> The creature is splattered with [[/r 1d4+2]]{1d4+2 globs of wax}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until it removes the globs of wax.</p>",
+          "description": "<p>The yaganty whips a stream of scalding wax in a @Template[line|distance:30]. Each glob deals @Damage[1d6[persistent,fire]] damage. An affected creature or adjacent ally can remove one glob of wax by spending an Interact action to scrape it off. The yaganty can't use Fling Wax again for [[/gmr 1d4 #Recharge Fling Wax]]{1d4 rounds}. Creatures in the area must attempt a @Check[reflex|dc:27|options:area-effect,damaging-effect,inflicts:blinded] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is splattered with [[/r 1d2+1]]{1d2+1 globs of wax}.</p>\n<p><strong>Failure</strong> The creature is splattered with [[/r 1d4+2]]{1d4+2 globs of wax}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until it removes the globs of wax.</p>",
           "name": "Fling Wax"
         },
         "C4dcn6EdPVp0Ec5y": {
-          "description": "<p>A yaganty who is doused with water or otherwise has their candle fingers extinguished takes @Damage[3d6[persistent,mental]], becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1}, and screams in agony until they reignite their candles (typically by casting @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition} and lighting their fingers with an Interact action).</p>",
+          "description": "<p>A yaganty who is doused with water or otherwise has their candle fingers extinguished takes @Damage[3d6[persistent,mental]], becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}, and screams in agony until they reignite their candles (typically by casting @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition} and lighting their fingers with an Interact action).</p>",
           "name": "Vulnerability to Extinguishing"
         },
         "EVi2gsT6wLToy6mR": {
-          "description": "<p>60 feet. The flames from a yaganty's fingers shed bright light in a 10-foot radius and are visible even in areas affected by magical darkness, but they do not shed dim light beyond that radius. Any creature within 60 feet in an area of darkness or dim light that sees the yaganty's candle fingers must succeed at a @Check[will|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the yaganty for 1 minute or until the yaganty uses a hostile action against the creature, whichever comes first.</p>",
+          "description": "<p>60 feet. The flames from a yaganty's fingers shed bright light in a 10-foot radius and are visible even in areas affected by magical darkness, but they do not shed dim light beyond that radius. Any creature within 60 feet in an area of darkness or dim light that sees the yaganty's candle fingers must succeed at a @Check[will|dc:27|options:area-effect,inflicts:fascinated] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the yaganty for 1 minute or until the yaganty uses a hostile action against the creature, whichever comes first.</p>",
           "name": "Light in the Darkness"
         },
         "FuI6URovialGRq8P": {
@@ -5155,7 +5158,7 @@
           "name": "Fanatical Juggernaut"
         },
         "sdS6ZYyIEWr1joRs": {
-          "description": "<p><strong>Trigger</strong> Zashathal hits a creature with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> Zashathal makes an Intimidate check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the target creature. If the target creature was reduced to 0 Hit Points by the triggering Strike, Zashathal can instead Demoralize all opponents within 30 feet by comparing the result of his Intimidation check to each creature's Will DC. Zashathal doesn't take a penalty to these Intimidation checks for not speaking a target's language.</p>",
+          "description": "<p><strong>Trigger</strong> Zashathal hits a creature with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> Zashathal makes an Intimidate check to [[/act demoralize]] the target creature. If the target creature was reduced to 0 Hit Points by the triggering Strike, Zashathal can instead Demoralize all opponents within 30 feet by comparing the result of his Intimidation check to each creature's Will DC. Zashathal doesn't take a penalty to these Intimidation checks for not speaking a target's language.</p>",
           "name": "Intimidating Strike"
         },
         "yfi5yLVQJBHQQfgr": {
@@ -5264,11 +5267,11 @@
       "description": "<p>This spectacularly odd creature appears every now and again in various traveling circuses around the Inner Sea. Although carnival barkers make any number of claims about this strange being's origins, the so-called \"moon mole\" is in fact an alien creature called a zuipnyrn, hailing from a distant planet beyond Golarion's star system.</p>\n<p>In their infancy, zuipnyrns are spherical and furry, with few features other than a single eye stalk and a round, toothless feeding hole. A zuipnyrn's body is particularly soft and malleable, allowing it to withstand falls and other hazards. Its eye stalk has the ability to produce a blinding burst of light as a defensive measure, which allows a zuipnyrn just enough time to escape in times of danger. Even more incredibly, a zuipnyrn can emit a hypnotic aura from its eye to entrance those around it-an ability it uses to avoid conflict and to persuade bystanders into helping it escape perilous situations. As they age and grow, zuipnyrns adapt to their environment by growing additional limbs, sprouting additional sensory organs, developing gills, or otherwise altering their anatomy to suit the area.</p>",
       "items": {
         "AYL0s7HCCgpgbmtO": {
-          "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[will|dc:22] save. On a failure, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the zuipnyrn for 1 minute. Once the fascination ends, the creature is temporarily immune to this ability for 1 hour.</p>\n<p>The zuipnyrn can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
+          "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[will|dc:22|options:area-effect,inflicts:fascinated] save. On a failure, it becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with the zuipnyrn for 1 minute. Once the fascination ends, the creature is temporarily immune to this ability for 1 hour.</p>\n<p>The zuipnyrn can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
           "name": "Alluring Aspect"
         },
         "TXT2Ytirxdb5hIhI": {
-          "description": "<p>The zuipnyrn's eye produces a bright flash of light. Each creature in a @Template[cone|distance:30] must attempt a @Check[fortitude|dc:22] save. The zuipnyrn can't use Blinding Flare again for 1 minute.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 minute.</p>",
+          "description": "<p>The zuipnyrn's eye produces a bright flash of light. Each creature in a @Template[cone|distance:30] must attempt a @Check[fortitude|dc:22|options:area-effect,inflicts:dazzled,inflicts:blinded] save. The zuipnyrn can't use Blinding Flare again for 1 minute.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 minute.</p>",
           "name": "Blinding Flare"
         },
         "cSvshId5YCLIYZCG": {

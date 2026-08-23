@@ -414,7 +414,7 @@
           "name": "Death Strike"
         },
         "W3a4Bkc73B2bUZDE": {
-          "description": "<p>When the Aspect of Immortality hits and deals damage with its scythe, it regains @Damage[20[healing]] Hit Points, and the target must succeed at a @Check[fortitude|dc:43] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. If the target is already doomed, the doomed value increases by 1 (to a maximum of doomed 3).</p>",
+          "description": "<p>When the Aspect of Immortality hits and deals damage with its scythe, it regains @Damage[20[healing]] Hit Points, and the target must succeed at a @Check[fortitude|dc:43|options:inflicts:doomed] save or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. If the target is already doomed, the doomed value increases by 1 (to a maximum of doomed 3).</p>",
           "name": "Energy Drain"
         },
         "YMwe0HIrPrtpRdsx": {
@@ -823,7 +823,7 @@
           "name": "Pseudopod Eruption"
         },
         "QrAKWrgiAEe28zhU": {
-          "description": "<p>@Damage[(3d10+13)[bludgeoning]] damage, @Check[fortitude|dc:40|basic]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+          "description": "<p>@Damage[(3d10+13)[bludgeoning]], @Check[fortitude|dc:40|basic|options:inflicts:unconscious]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
         },
         "gnshnz0bk049fhry": {
           "description": "<p>A chromatic ooze can sense nearby motion through vibration and air movement.</p>",
@@ -1041,7 +1041,7 @@
           "description": "<p>@Damage[(2d10+3)[bludgeoning],2d8[acid]]{2d10+3 bludgeoning damage plus 2d8 acid}, @Check[fortitude|dc:37|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "Hnu8sQjkICIDsSGc": {
-          "description": "<p>@Check[reflex|dc:37] save, @Damage[5d10[acid]] damage, [[/act escape dc=37]], Rupture 20. A crawling slurry regains @Damage[30[healing]] Hit Points if a living creature it is engulfing dies.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:37|options:damaging-effect,inflicts:grabbed,inflicts:slowed] save, @Damage[5d10[acid]] damage, [[/act escape dc=37]], Rupture 20. A crawling slurry regains @Damage[30[healing]] Hit Points if a living creature it is engulfing dies.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "b3qyz6sezwbmg0li": {
           "description": "<p><strong>Trigger</strong> The crawling slurry takes bludgeoning damage from a creature it can sense within 10 feet</p>\n<hr />\n<p><strong>Effect</strong> The crawling slurry ejects a splash of acid onto the creature, dealing acid damage equal to the bludgeoning damage dealt to the crawling slurry (@Check[reflex|dc:37|basic]).</p>",
@@ -2549,7 +2549,7 @@
           "description": "<p>Kiru deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "ef4e0z2ye2fe1mqw": {
-          "description": "<p>Creatures hit by Kiru's dagger Strike must succeed at a @Check[fortitude|dc:20|traits:agile,versatile-s,damaging-effect]{Fortitude (Strike was a Success)}@Check[fortitude|dc:25|traits:agile,versatile-s,damaging-effect]{Fortitude (Strike was a Critical Success)} save or become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round (1 minute on a critical failure).</p>",
+          "description": "<p>Creatures hit by Kiru's dagger Strike must succeed at a @Check[fortitude|dc:20|options:inflicts:clumsy] save or become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round (1 minute on a critical failure). If Kiru's Strike is a critical hit, the DC increases to @Check[fortitude|dc:25|options:inflicts:clumsy].</p>",
           "name": "Knife Jab"
         },
         "vx2ggsl2qvg5mnkd": {
@@ -3610,7 +3610,7 @@
           "name": "Produce Flame"
         },
         "y9l0m6fta3rgdp17": {
-          "description": "<p><strong>Requirements</strong> Shianshi has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with her shadow whip</p>\n<hr />\n<p><strong>Effect</strong> The grabbed creature must succeed at a @Check[fortitude|dc:41] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} on a critical failure). If the creature is already drained, this increases its drained value instead, to a maximum of drained 4.</p>",
+          "description": "<p><strong>Requirements</strong> Shianshi has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with her shadow whip</p>\n<hr />\n<p><strong>Effect</strong> The grabbed creature must succeed at a @Check[fortitude|dc:41|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} on a critical failure). If the creature is already drained, this increases its drained value instead, to a maximum of drained 4.</p>",
           "name": "Whip Drain"
         }
       },
@@ -3866,7 +3866,7 @@
           "name": "Claw"
         },
         "zJ48k7LkzzGzYZXF": {
-          "description": "<p>A living creature hit by a mohrg's tongue Strike must succeed at a @Check[fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
+          "description": "<p>A living creature hit by a mohrg's tongue Strike must succeed at a @Check[fortitude|dc:30|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
           "name": "Paralysis"
         }
       },
@@ -4241,7 +4241,7 @@
           "name": "Cruel Reactions"
         },
         "zJ48k7LkzzGzYZXF": {
-          "description": "<p>A living creature hit by a mohrg's tongue Strike must succeed at a @Check[fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
+          "description": "<p>A living creature hit by a mohrg's tongue Strike must succeed at a @Check[fortitude|dc:30|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
           "name": "Paralysis"
         }
       },

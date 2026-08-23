@@ -134,7 +134,7 @@
           "name": "Fist"
         },
         "qppBAh5FNr8f4f2X": {
-          "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[12d6[vitality]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:32|options:area-effect,damaging-effect] save with the following outcomes.</p><hr /><p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
+          "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[12d6[vitality]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:32|options:area-effect,damaging-effect,inflicts:enfeebled,inflicts:stupefied] save with the following outcomes.</p><hr /><p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
           "name": "Divine Destruction"
         }
       },
@@ -698,7 +698,7 @@
       "name": "Girtablilu Sentry"
     },
     "Gorum's Epitaph": {
-      "description": "<p>A section of ground thrusts up to form what looks like a mountain in which a sword has been impaled, and then the sword lashes out to stab at someone nearby. A successful @Check[religion|dc:15] check to Recall Knowledge is enough to note that the hazard looks very similar to Gorum's religious symbol; any character who is at least expert in Religion notes this automatically.</p>",
+      "description": "<p>A section of ground thrusts up to form what looks like a mountain in which a sword has been impaled, and then the sword lashes out to stab at someone nearby. A successful DC 15 Religion check to [[/act recall-knowledge skill=religion dc=15]] is enough to note that the hazard looks very similar to Gorum's religious symbol; any character who is at least expert in Religion notes this automatically.</p>",
       "hazardDisable": "<p>@Check[thievery|dc:40] (master) to wipe away the faint runes scratched on the floor without activating a blade, or @Check[religion|dc:43] (master) to utter memorial prayers to Gorum to rob from the trap its violent energy</p>",
       "hazardRoutine": "<p>(3 actions) If the Gorum's epitaph is adjacent to a creature, it uses its three actions to make greatsword Strikes on that creature (determining targets randomly if more than one creature is adjacent). Otherwise, it uses actions to Stride toward the closest visible target, then uses any remaining actions to Strike that target. Gray Master can flank with a Gorum's epitaph.</p>",
       "name": "Gorum's Epitaph"
@@ -890,6 +890,9 @@
         },
         "8sphOZAnVIS4eVZ6": {
           "name": "Wing"
+        },
+        "C9s6tFMjsiRSVCJ0": {
+          "description": "<p>Decorated with clear gemstones, these thick metal bands spread an inflexible layer of force over your body. The force grants you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5 as armor. You can affix talismans to the bands as though they were light armor.</p>\n<p><strong>Activate—Return Force</strong> <span class=\"action-glyph\">R</span> (force, manipulate)</p>\n<p><strong>Trigger</strong> A creature critically misses you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You Shove the creature using the bands' Athletics modifier of [[/r d20+21]]{+21}.</p>"
         },
         "CSHQvYrfiR0GmczO": {
           "description": "<p><strong>Trigger</strong> A creature the brine dragon observes within 30 feet uses a concentrate action</p><hr /><p><strong>Effect</strong> The dragon spits a glob of caustic salt water at the creature. The creature takes @Damage[6d6[acid]] damage (@Check[reflex|dc:34|basic] save). On a failure, the concentrate action is disrupted.</p>",
@@ -1379,7 +1382,7 @@
       "description": "<p>The puppets and marionettes in this room suddenly turn to face intruders and come to clattering, unsettling life as the echoing sound of mocking laughter fills the air.</p>",
       "hazardDisable": "<p>@Check[performance|dc:32] (master) to distract and entertain the haunted puppets and make them forget their anguish and despair, or @Check[religion|dc:35] (expert) to exorcise the haunt; four successes are required to disable it</p>",
       "hazardReset": "<p>The haunt deactivates if no living creatures are in area <strong>C2</strong>, then resets 1 minute later.</p>",
-      "hazardRoutine": "<p>(1 action) The room's puppets and marionettes clatter to life and begin to swarm about the room, throwing rubble at living intruders, stabbing them in the ankles with sharp bits of broken metal, and slashing at them with lashes from long, thin marionette cords. At the same time, other puppets cackle, mock, and pantomime a chosen foe. The haunt uses its action to target one living creature in area <strong>C2</strong>; that creature must attempt a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round by the mockery (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure); this effect has the emotion and mental traits. At the same time, because the puppets constantly swarm about, they can use the Puppet Attack free action (see below) to attack targets during their turns.</p>",
+      "hazardRoutine": "<p>(1 action) The room's puppets and marionettes clatter to life and begin to swarm about the room, throwing rubble at living intruders, stabbing them in the ankles with sharp bits of broken metal, and slashing at them with lashes from long, thin marionette cords. At the same time, other puppets cackle, mock, and pantomime a chosen foe. The haunt uses its action to target one living creature in area <strong>C2</strong>; that creature must attempt a @Check[will|dc:29|options:inflicts:slowed|traits:emotion,mental] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round by the mockery (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure); this effect has the emotion and mental traits. At the same time, because the puppets constantly swarm about, they can use the Puppet Attack free action (see below) to attack targets during their turns.</p>",
       "name": "Mocking Puppets"
     },
     "Nemesis": {
@@ -1653,15 +1656,14 @@
           "_source": "pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
         },
         "7GZSmH33lacIjGRG": {
-          "description": "<p><strong>Requirements</strong> The razorbones has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} a foe</p><hr /><p><strong>Effect</strong> The razorbones gnaws and chews on the grabbed target with its many skulls, dealing @Damage[(4d6+18)[piercing]] damage (@Check[fortitude|dc:42|basic] save). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or increases an existing drained condition by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}) from the grievous gnawing.</p>",
+          "description": "<p><strong>Requirements</strong> The razorbones has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} a foe</p><hr /><p><strong>Effect</strong> The razorbones gnaws and chews on the grabbed target with its many skulls, dealing @Damage[(4d6+18)[piercing]] damage (@Check[fortitude|dc:42|basic|options:inflicts:drained] save). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or increases an existing drained condition by 1, to a maximum of drained 4) from the grievous gnawing.</p>",
           "name": "Gnaw"
         },
         "WarDVWwMegYTdbUM": {
-          "description": "<p>A razorbones can shift and adjust its mass to fit into smaller areas, allowing it to fit through tight spaces as if it were a Medium creature. While Squeezing, it can move at its full speed.</p>",
+          "description": "<p>A razorbones can shift and adjust its mass to fit into smaller areas, allowing it to fit through tight spaces as if it were a Medium creature. While @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeezing}, it can move at its full speed.</p>",
           "name": "Eerie Flexibility"
         },
         "WwHuWnYG7Z1eRfCv": {
-          "description": "<p>Range 30 feet</p>",
           "name": "Hurled Bone"
         },
         "dvswlRsKg8EGBzsU": {
@@ -1672,7 +1674,7 @@
           "name": "Claw"
         },
         "qBfZKEJPVngf5Zs4": {
-          "description": "<p><strong>Trigger</strong> A creature within the razorbones' reach uses a manipulate action or a move action or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> A filament of black, oily ectoplasm lashes out at the triggering creature, dealing @Damage[(4d8+18)[slashing]] damage (@Check[reflex|dc:42|basic] save). If the filament deals damage, the razorbones gains 8d8 temporary Hit Points as blood flows back along its bones to sheathe them in glisten red fluid.</p>",
+          "description": "<p><strong>Trigger</strong> A creature within the razorbones' reach uses a manipulate action or a move action or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> A filament of black, oily ectoplasm lashes out at the triggering creature, dealing @Damage[(4d8+18)[slashing]] damage (@Check[reflex|dc:42|basic] save). If the filament deals damage, the razorbones gains [[/gmr 8d8 #Temporary Hit Points]]{8d8 temporary Hit Points} as blood flows back along its bones to sheathe them in glisten red fluid.</p>",
           "name": "Ectoplasmic Filaments"
         },
         "uWMjBNMf2i8vkJza": {

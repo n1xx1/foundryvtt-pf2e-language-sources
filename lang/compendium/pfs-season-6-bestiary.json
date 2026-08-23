@@ -1860,7 +1860,7 @@
           "name": "Armored Apotheosis"
         },
         "NFiC1mOQkGXNZK6F": {
-          "description": "<p>@Check[reflex|dc:25], @Damage[3d8[acid]] damage, [[/act escape dc=25]], Rupture 22</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>",
+          "description": "<p>@Check[reflex|dc:25|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[3d8[acid]] damage, [[/act escape dc=25]], Rupture 22</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>",
           "name": "Engulf (Ooze Form Only)"
         },
         "QEOgW56JFwhtqtP4": {
@@ -2317,7 +2317,7 @@
           "name": "Profane Gift"
         },
         "vkMvsL1nrlHkiJQQ": {
-          "description": "<p>The succubus attempts to [[/act grapple skill=diplomacy]]{Grapple} a creature using their Diplomacy bonus instead of Athletics. If the creature is willing, the succubus automatically succeeds.</p>",
+          "description": "<p>The succubus attempts to [[/act grapple skill=diplomacy]] a creature using their Diplomacy bonus instead of Athletics. If the creature is willing, the succubus automatically succeeds.</p>",
           "name": "Embrace"
         },
         "w1NzMkjL2WpASvwU": {
@@ -2868,7 +2868,7 @@
           "name": "Animal Kindness Vulnerability"
         },
         "CoQTAk22h5lnU6tR": {
-          "description": "<p><strong>Frequency</strong> once per round;</p>\n<p><strong>Requirements</strong> The kithangian has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in one or both pincers</p><hr /><p><strong>Effect</strong> Barbed tongues slither out of the faces in the kithangian's pincers. The tongues burrow into grabbed creatures and inject their minds with haunting psychic screams. Each grabbed creature takes @Damage[2d8[piercing]] damage and @Damage[2d8[mental]] damage. A creature can try to resist the mental damage by attempting a @Check[will|dc:27|basic] save.</p>",
+          "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The kithangian has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in one or both pincers</p><hr /><p><strong>Effect</strong> Barbed tongues slither out of the faces in the kithangian's pincers. The tongues burrow into grabbed creatures and inject their minds with haunting psychic screams. Each grabbed creature takes @Damage[2d8[piercing],2d8[mental]] damage. A creature can try to resist the mental damage by attempting a @Check[will|dc:27|basic] save.</p>",
           "name": "Rasping Tongues"
         },
         "Ebek2HJ6He3ynxyq": {
@@ -4195,7 +4195,7 @@
           "name": "Armored Apotheosis"
         },
         "NFiC1mOQkGXNZK6F": {
-          "description": "<p>@Check[reflex|dc:23], @Damage[2d8[acid]] damage, [[/act escape dc=23]], Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>",
+          "description": "<p>@Check[reflex|dc:23|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[2d8[acid]] damage, [[/act escape dc=23]], Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>",
           "name": "Engulf (Ooze Form Only)"
         },
         "QEOgW56JFwhtqtP4": {
@@ -5116,11 +5116,11 @@
           "name": "Darkness (At Will)"
         },
         "sslSR9PEr8cWdVop": {
-          "description": "<p><strong>Requirements</strong> The shadow hit a living creature with a shadow hand Strike on its previous action</p>\n<hr />\n<p><strong>Effect</strong> The shadow pulls at the target's shadow, making the creature @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} on a critical hit). This is cumulative with other enfeebled conditions from shadows, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}. If this increases a creature's enfeebled value to 3 or more, the target's shadow is separated from its body (see shadow spawn). The enfeebled value from @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} Shadow decreases by 1 every hour.</p>",
+          "description": "<p><strong>Requirements</strong> The shadow hit a living creature with a shadow hand Strike on its previous action</p>\n<hr />\n<p><strong>Effect</strong> The shadow pulls at the target's shadow, making the creature @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} on a critical hit). This is cumulative with other enfeebled conditions from shadows, to a maximum of enfeebled 4. If this increases a creature's enfeebled value to 3 or more, the target's shadow is separated from its body (see shadow spawn). The enfeebled value from Steal Shadow decreases by 1 every hour.</p>",
           "name": "Steal Shadow"
         },
         "zadQdUq4eeiDSHSq": {
-          "description": "<p>When a creature's shadow is pulled free by @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} Shadow, it becomes a greater shadow spawn under the command of the shadow that created it, using these statistics without Deadly Striker, Steal Shadow, or Unimpeded. This shadow spawn is incurably @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous greater shadow, gaining Steal Shadow and losing the clumsy condition. If the creature recovers from its enfeeblement, its shadow returns to it and the shadow spawn is extinguished.</p>",
+          "description": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a greater shadow spawn under the command of the shadow that created it, using these statistics without Deadly Striker, Steal Shadow, or Unimpeded. This shadow spawn is incurably @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous greater shadow, gaining Steal Shadow and losing the clumsy condition. If the creature recovers from its enfeeblement, its shadow returns to it and the shadow spawn is extinguished.</p>",
           "name": "Greater Shadow Spawn"
         }
       },
@@ -6448,7 +6448,7 @@
           "name": "Jaws"
         },
         "sIfVG6GaZyAaZ3xW": {
-          "description": "<p><strong>Requirements</strong> The giant moray eel has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p><hr /><p><strong>Effect</strong> The giant moray eel uses its second set of jaws to pull the prey into its gullet. The eel deals @Damage[(1d6+2)[piercing]] damage to the grabbed creature and gains a +2 circumstance bonus to its Swallow Whole attempts and to the DC for the creature to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. This effect ends if the target Escapes or the giant moray eel Swallows it Whole.</p>",
+          "description": "<p><strong>Requirements</strong> The giant moray eel has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p><hr /><p><strong>Effect</strong> The giant moray eel uses its second set of jaws to pull the prey into its gullet. The eel deals @Damage[(1d6+2)[piercing]] damage to the grabbed creature and gains a +2 circumstance bonus to its Swallow Whole attempts and to the DC for the creature to [[/act escape]]. This effect ends if the target Escapes or the giant moray eel Swallows it Whole.</p>",
           "name": "Pharyngeal Jaws"
         }
       },

@@ -355,6 +355,12 @@
           "description": "<p>The assassin can move their full speed when @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneaking}.</p>",
           "name": "Swift Sneak"
         },
+        "DEGpzY7do2NsH0Lc": {
+          "description": "<p>Giant centipede venom causes severe muscle stiffness.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 round)</p>"
+        },
+        "KmYRlqY0ZkXQfDQi": {
+          "description": "<p>Lethargy poison is commonly used in hit-and-run tactics by attackers who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up ([[/gmr 1d4 #hours]]{1d4 hours}).</p>"
+        },
         "M74b4dJuPBfmmGbp": {
           "name": "Fist"
         },
@@ -673,7 +679,7 @@
       "npcSpeed": "overwhelming scrum, troop movement"
     },
     "Black Belt": {
-      "description": "<p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
+      "description": "<p>Many martial arts schools use colored belts to differentiate skill levels. Above all is the black belt, an advanced practitioner who can counter any attack.</p><hr /><p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
       "items": {
         "Cgi6w2XRHGi6dEsV": {
           "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The black belt makes two fist Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses.</p>\n<p>The black belt can substitute any number of the attacks with bo staff Strikes or attempts to [[/act grapple]], [[/act reposition]], [[/act shove]], or [[/act trip]].</p>",
@@ -696,6 +702,9 @@
         "oWhjvWrXmDrkBEbU": {
           "description": "<p>The black belt's fist Strikes don't take penalties when making lethal attacks, and fist Strikes are treated as cold iron and silver.</p>",
           "name": "Powerful Fists"
+        },
+        "ot4lWRHvlWeB3Q2C": {
+          "description": "<p>Decorated with clear gemstones, these thick metal bands spread an inflexible layer of force over your body. The force grants you a +1 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5 as armor. You can affix talismans to the bands as though they were light armor.</p>\n<p><strong>Activate—Return Force</strong> <span class=\"action-glyph\">R</span> (force, manipulate)</p>\n<p><strong>Trigger</strong> A creature critically misses you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You Shove the creature using the bands' Athletics modifier of [[/r d20+14]]{+14}.</p>"
         },
         "v2SPwV17jWgfcN8M": {
           "name": "Fist"
@@ -1493,7 +1502,7 @@
       "name": "Cult Leader"
     },
     "Cultist": {
-      "description": "<p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+      "description": "<p>Cultists have passed an initiation ritual to a secret sect or organization; now, they devote themselves to achieving their most perfect spiritual form.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
         "4NNvg2SM3AoqAWLt": {
           "name": "Cult Lore (for the cultist's own cult)"
@@ -2118,7 +2127,7 @@
           "description": "<p><strong>Thresholds</strong> 70 (3 segments), 35 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
         },
         "HK3El8JaNgkSuAIQ": {
-          "description": "<p>he dwarf battalion draws alchemical bombs, then hurls them at distant foes. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[3d6[@item.flags.system.rulesSelections.bombingBarrage]|options:area-damage] damage with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage is either acid, fire, or electricity damage, depending on which type of bombs the battalion used. When the dwarf battalion is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>",
+          "description": "<p>The dwarf battalion draws alchemical bombs, then hurls them at distant foes. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[3d6[@item.flags.system.rulesSelections.bombingBarrage]|options:area-damage] damage with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage is either acid, fire, or electricity damage, depending on which type of bombs the battalion used. When the dwarf battalion is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>",
           "name": "Bombing Barrage"
         },
         "T6b3Bxelknz5jLLD": {
@@ -2338,6 +2347,9 @@
         },
         "Wppw8k8RCqzIQbCA": {
           "name": "+2 Circumstance to Skill Checks for Rituals"
+        },
+        "iy1PAGblDTi2TkIV": {
+          "description": "<p>Decorated with clear gemstones, these thick metal bands spread an inflexible layer of force over your body. The force grants you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5 as armor. You can affix talismans to the bands as though they were light armor.</p>\n<p><strong>Activate—Return Force</strong> <span class=\"action-glyph\">R</span> (force, manipulate)</p>\n<p><strong>Trigger</strong> A creature critically misses you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You Shove the creature using the bands' Athletics modifier of [[/r d20+21]]{+21}.</p>"
         }
       },
       "name": "Enchanting Ritualist"
@@ -2472,6 +2484,9 @@
         "baE5TfLTN71MdB62": {
           "name": "+3 to Sense Motive"
         },
+        "eUDYpGTJmNQH22s4": {
+          "description": "<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d10[poison]] damage (1 round)</p>"
+        },
         "kqQObZvSxSKFHBF3": {
           "name": "Signet Ring"
         },
@@ -2495,7 +2510,7 @@
           "name": "Fist"
         },
         "PzJckzc3QtZrS8wv": {
-          "description": "<p><strong>Requirements</strong> The expedition leader has a hand free</p><hr /><p><strong>Effect</strong> The expedition leader scoops up a handful of rubble and throws it. Each creature in a @Template[type:cone|distance:15] must succeed at a @Check[reflex|dc:27] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the expedition leader's next turn.</p>",
+          "description": "<p><strong>Requirements</strong> The expedition leader has a hand free</p><hr /><p><strong>Effect</strong> The expedition leader scoops up a handful of rubble and throws it. Each creature in a @Template[type:cone|distance:15] must succeed at a @Check[reflex|dc:27|options:area-effect,inflicts:dazzled,inflicts:off-guard] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the expedition leader's next turn.</p>",
           "name": "Think Fast!"
         },
         "RKeppFGFV4nIkszn": {
@@ -2663,7 +2678,7 @@
       "name": "Fence"
     },
     "Fiend Caller": {
-      "description": "<p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
+      "description": "<p>Fiend callers act as intermediaries to help mortals sell their souls or make other deals with fiends. You can adjust a fiend caller to be accompanied by a bound fiend. The fiend gains the minion trait, and you can replace the fiend caller's @UUID[Compendium.pf2e.spells-srd.Item.WPu3UE3kTXSLqO40]{Spiritual Armament} spell with @UUID[Compendium.pf2e.spells-srd.Item.x0rWq0wS06dns4G2]{Final Sacrifice}.</p><hr /><p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
       "items": {
         "1YjiklqJDvWKIRxe": {
           "name": "Legal Lore"
@@ -2927,9 +2942,6 @@
         "V0PBTcwoJcgrbpP2": {
           "description": "<p>When the gambling companion successfully Aids a skill check related to games or gambling, the ally rolls twice and takes the higher result instead of gaining the usual bonus.</p>",
           "name": "Gamer's Guidance"
-        },
-        "du8Xcuh7ebfiL5Vk": {
-          "name": "Set of six ivory dice"
         },
         "g827tssEKjaW3MWi": {
           "description": "<p>For social encounters involving gaming or gambling, the gambling companion is a 5th-level challenge</p>",
@@ -3329,7 +3341,7 @@
       "npcAllSaves": "+23 Reflex vs. damaging effects"
     },
     "Grandmaster": {
-      "description": "<p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
+      "description": "<p>Beyond the black belt, there is the grandmaster. If a battle breaks out, this incredible warrior possesses unparalleled qi adeptness and punches that can kill.</p><hr /><p>Martial artists strive to master the art of hand-to-hand fighting.</p>",
       "items": {
         "0Fd5PXefTlI9tTR7": {
           "name": "Fist"
@@ -3343,6 +3355,9 @@
         },
         "DRqMAkeXU8VvNOyJ": {
           "name": "+2 Greater Striking Handwraps of Mighty Blows"
+        },
+        "Rc52ahXG5FtbitmC": {
+          "description": "<p>Decorated with clear gemstones, these thick metal bands spread an inflexible layer of force over your body. The force grants you a +1 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5 as armor. You can affix talismans to the bands as though they were light armor.</p>\n<p><strong>Activate—Return Force</strong> <span class=\"action-glyph\">R</span> (force, manipulate)</p>\n<p><strong>Trigger</strong> A creature critically misses you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You Shove the creature using the bands' Athletics modifier of [[/r d20+14]]{+14}.</p>"
         },
         "UpywR6mdWHYmYNSa": {
           "description": "<p><span class=\"action-glyph\">2</span> or <span class=\"action-glyph\">3</span></p><hr /><p>The grandmaster makes a single, carefully controlled unarmed Strike that deals 2 additional dice of damage, or 4 additional dice if the grandmaster spent 3 actions. If this damages the target, the grandmaster can choose to make the target attempt a @Check[fortitude|dc:38] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The target is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The target is pushed back 10 feet for each action the grandmaster spent on One-Millimeter Punch.</p>",
@@ -3628,6 +3643,9 @@
         "B3ax6hAslzRNcDvK": {
           "description": "<p>The halfling gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of them. Whenever the halfling targets a creature that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden from them, reduce the DC of the flat check to @Check[flat|dc:3] for a concealed target or @Check[flat|dc:9] for a hidden one.</p>",
           "name": "Keen Eyes"
+        },
+        "FAR0JJfuDO6PuqxB": {
+          "description": "<p>This toxin is a compound of arsenic and other substances. You can't reduce your sickened condition while affected.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 5 minutes</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 minute)</p>"
         },
         "HFXdCrPdWwvZMbuQ": {
           "description": "<p>The smuggler deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>",
@@ -4244,7 +4262,7 @@
           "name": "Ceremonial Skull Mask"
         },
         "yejcLHz02aGTNOKx": {
-          "description": "<p>30 feet. With a quick dance, the iruxi masked mummer surrounds themself with a starlight image resembling a figure from legend. The image lasts until the start of the mummer's next turn. An enemy that enters or starts its turn in the aura must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of its next turn.</p>",
+          "description": "<p>30 feet. With a quick dance, the iruxi masked mummer surrounds themself with a starlight image resembling a figure from legend. The image lasts until the start of the mummer's next turn. An enemy that enters or starts its turn in the aura must succeed at a @Check[will|dc:25|options:area-effect,inflicts:dazzled] save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of its next turn.</p>",
           "name": "Starry Presence"
         }
       },
@@ -4254,7 +4272,7 @@
       "description": "<p>A jailer's primary responsibility is to keep prisoners from escaping. Jailers must often use force, or the threat of force, to keep their charges in line, as even the most carefully crafted cells, manacles, or chains can fail with time and persistence when the prisoners have the will to attempt an escape.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
       "items": {
         "CKzyNTs3y8kKsSFY": {
-          "description": "<p><strong>Requirements</strong> The jailer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The jailer attempts to bind the creature's wrists or ankles with the manacles. If the jailer succeeds at an attack roll with a [[/r 1d20+9 #Manacles]]{+9 modifier} against the target's AC, they apply the manacles.</p>",
+          "description": "<p><strong>Requirements</strong> The jailer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The jailer attempts to bind the creature's wrists or ankles with the manacles. If the jailer succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+9} modifier against the target's AC, they apply the manacles.</p>",
           "name": "Efficient Capture"
         },
         "Gf4bCH3UInm7pjOu": {
@@ -5169,7 +5187,7 @@
       "name": "Miner"
     },
     "Mirror Seer": {
-      "description": "<p>Seeking to be the most powerful and perfect creature in their domain, a mirror seer forges a deal with a nefarious entity for more power. Through a magic mirror called a malefic mirror, they communicate with this entity and spy on the events that unfold in their realm.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+      "description": "<p>Seeking to be the most powerful and perfect creature in their domain, a mirror seer forges a deal with a nefarious entity for more power. Through a magic mirror called a <em>malefic mirror</em>, they communicate with this entity and spy on the events that unfold in their realm.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
       "items": {
         "0jyNp7aMHOgmHm17": {
           "name": "Fist"
@@ -6344,7 +6362,7 @@
           "description": "<p>The ruffian deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
         },
         "qy60SQR1jiyW4CXc": {
-          "description": "<p><strong>Trigger</strong> The ruffian has one hand free</p><hr /><p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the ruffian Grabs the target using their free hand. The creature remains @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of the ruffian's next turn or until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}, whichever comes first.</p>",
+          "description": "<p><strong>Requirements</strong> The ruffian has one hand free</p><hr /><p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the ruffian Grabs the target using their free hand. The creature remains @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until the end of the ruffian's next turn or until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes}, whichever comes first.</p>",
           "name": "Combat Grab"
         },
         "sCsRpD25k35SJXKJ": {
@@ -7345,7 +7363,7 @@
           "name": "Fist"
         },
         "ZrAQkE7N4BH2nY8v": {
-          "description": "<p><strong>Requirements</strong> The scout is wielding a net in two hands</p><hr /><p><strong>Effect</strong> The scout makes a ranged Strike (with a [[/r 1d20+9 #Hurl Net]]{+9} modifier) against a Medium or smaller creature within 20 feet. On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} instead. The DC to [[/act escape dc=16]]{Escape} the net is 16. A creature adjacent to the target can Interact with the net to remove it.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.q2D1QBalqBQfKzTc]{Effect: Hurl Net}</p>",
+          "description": "<p><strong>Requirements</strong> The scout is wielding a net in two hands</p><hr /><p><strong>Effect</strong> The scout makes a ranged Strike (with a @Check[hurl-net|against:ac]{+9} modifier) against a Medium or smaller creature within 20 feet. On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} instead. The DC to [[/act escape dc=16]] the net is 16. A creature adjacent to the target can Interact with the net to remove it.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.q2D1QBalqBQfKzTc]{Effect: Hurl Net}</p>",
           "name": "Hurl Net"
         },
         "olV47KDLib3JNLTG": {
@@ -7385,7 +7403,7 @@
       "description": "<p>A tumbleweed leshy's ability to move quickly across long distances with ease allows them to act as messengers and go-betweens. Druids often entrust these couriers with delivering important messages to their home druid circles or other druids they're acquainted with. Some even induct the couriers into the circle to teach them Wildsong for secure communication and basic magic for self-defense.</p><hr /><p>Nature spirits inhabit bodies made of plants or fungi, blooming from primal magic to become the small people called leshies. They come in a truly immense number of diverse shapes and sizes, more so than most peoples of Golarion. This variety of forms means a leshy could have a place in nearly any type of setting for any type of story.</p>",
       "items": {
         "2HHg2g4OoPZJPAb0": {
-          "name": "Speak with Plants ((tumbleweeds and scrubland brush only)"
+          "name": "Speak with Plants (tumbleweeds and scrubland brush only)"
         },
         "9aZvZxrMkCqJ9NM7": {
           "name": "Fist"
@@ -7500,6 +7518,9 @@
         },
         "wVJbl1Y9BFwnkO8l": {
           "name": "Rat Trap"
+        },
+        "zX042VJM6KLP9b1m": {
+          "description": "<p>This toxin is a compound of arsenic and other substances. You can't reduce your sickened condition while affected.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 5 minutes</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 minute)</p>"
         }
       },
       "name": "Vermin Catcher"

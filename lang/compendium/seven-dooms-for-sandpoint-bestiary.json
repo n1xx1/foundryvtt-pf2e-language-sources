@@ -293,7 +293,7 @@
       "description": "<p>Although the coloxus has the hideous head of a monstrous fly, these demons are fastidious and clean, always dressing in stylish clothing without a blemish on them. Coloxuses are manipulators and schemers born from destructively vain souls. Evil mortals are fond of conjuring them to serve as emissaries or spies, but they also make excellent assassins. Even in the role of murderer, the demon remains cloyingly polite and formal, reveling in the irony of perpetuating such a horrible crime under the guise of good etiquette, as if it were a delicate bit of diplomacy.</p>\n<h2>Enemies Of Filth</h2>\n<p>Filth is often inescapable in the Abyss, and as a result, coloxus demons are particularly eager to be conjured away from that plane to work their evils in cleaner realities. When one uses <em>planar ally</em> or <em>planar binding</em> to conjure a coloxus, summoning it into a clean environment and promising you won't compel it to serve under filthy conditions may make the demon easier to bargain with. At the GM's discretion, the demon may agree to serve you for longer or at a lower cost than normal.</p>",
       "items": {
         "5VeD2S9TsGfOspa9": {
-          "description": "<p>When a coloxus damages a creature with its jaws Strike, it siphons away the target's physical vitality and drinks from their sense of self-worth and confidence. The coloxus gains 10 temporary Hit Points, and the creature must succeed at a @Check[will|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. Further damage dealt by the coloxus increases the stupefied condition by 1 on a failed save to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}.</p>",
+          "description": "<p>When a coloxus damages a creature with its jaws Strike, it siphons away the target's physical vitality and drinks from their sense of self-worth and confidence. The coloxus gains 10 temporary Hit Points, and the creature must succeed at a @Check[will|dc:32|options:inflicts:stupefied] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. Further damage dealt by the coloxus increases the stupefied condition by 1 on a failed save to a maximum of stupefied 4.</p>",
           "name": "Siphon"
         },
         "9KHwXUjSzKnP6AIN": {
@@ -402,7 +402,7 @@
           "name": "Horns"
         },
         "qppBAh5FNr8f4f2X": {
-          "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[4d6[void]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:17|options:area-effect,damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
+          "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[4d6[void]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:17|options:area-effect,damaging-effect,inflicts:enfeebled,inflicts:stupefied] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
           "name": "Divine Destruction"
         }
       },
@@ -541,7 +541,7 @@
           "name": "Religious Symbol of Kabriri"
         },
         "GBiarRqqq8qwyZtJ": {
-          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:25|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "IdfK6A7UpGkscuOG": {
@@ -599,7 +599,7 @@
           "name": "Consume Flesh"
         },
         "9TCF9GcaMoTKkPSj": {
-          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:21|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "A97t9GcQF8k7V7By": {
@@ -634,7 +634,7 @@
           "name": "Consume Flesh"
         },
         "9TCF9GcaMoTKkPSj": {
-          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "A97t9GcQF8k7V7By": {
@@ -918,7 +918,7 @@
           "name": "Pouch of Black Onyx"
         },
         "gcFxm6W1omvdDARf": {
-          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:32|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "keCftqO4kZ2XTnEi": {
@@ -997,7 +997,7 @@
           "name": "Seugathi Venom"
         },
         "7tCu8SPq0TpF1lJX": {
-          "description": "<p>20 feet. A creature that starts its turn in the aura must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a success, that creature is temporarily immune for 1 minute. Mnoghoth can suppress or activate this aura as a single action with the concentrate trait.</p>",
+          "description": "<p>20 feet. A creature that starts its turn in the aura must succeed at a @Check[will|dc:25|options:area-effect,inflicts:confused] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a success, that creature is temporarily immune for 1 minute. Mnoghoth can suppress or activate this aura as a single action with the concentrate trait.</p>",
           "name": "Mindfog Aura"
         },
         "MnAW3prtfTZxnv7T": {
@@ -1147,7 +1147,7 @@
           "name": "Command the Hateful Skies"
         },
         "iommO8SU4yNamwC1": {
-          "description": "<p>The mothman fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a Will save against the mothman's portentous gaze.</p>\n<p>If the creature is already frightened when it attempts this save, on a failure it becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours in addition to the frightened effect.</p>\n<p>After attempting its save, the creature is then temporarily immune for 1 minute.</p>",
+          "description": "<p>The mothman fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a Will save against the mothman's portentous gaze.</p>\n<p>If the creature is already @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} when it attempts this save, on a failure it becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours in addition to the frightened effect.</p>\n<p>After attempting its save, the creature is then temporarily immune for 1 minute.</p>",
           "name": "Focus Gaze"
         },
         "sCv6nwuflODCdMaO": {
@@ -1524,7 +1524,7 @@
       "description": "<p>Ghasts-feral, foul-smelling, and constantly hungry-are the more powerful kin of ghouls. They are relentless in the pursuit of their prey.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
       "items": {
         "GBiarRqqq8qwyZtJ": {
-          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:22|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "IdfK6A7UpGkscuOG": {

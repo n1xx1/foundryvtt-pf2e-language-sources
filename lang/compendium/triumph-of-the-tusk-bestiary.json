@@ -28,7 +28,7 @@
       "description": "<p>Ankhrav hive mothers are fearsome predators that one can easily distinguish from the typical ankhrav not only by their greater size, but the presence of a large pair of razor-sharp, mantis-like arms.</p>\n<hr />\n<p>Ankhravs are immense, burrowing, and insectile predators, considered by inhabitants of the rural areas of the world to be an all-too-common plague.</p>",
       "items": {
         "2QnPX6haUy6RjKvT": {
-          "description": "<p>The hive mother unleashes a pheromone that causes all other ankhravs within a @Template[emanation|distance:100] to become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} until the start of the hive mother's next turn, and they can use the extra action only for Burrow, Stride, or Strike actions.</p>\n<p>The hive mother can't unleash the pheromone again for [[/gmr 1d4 #Recharge Frenzy Pheromone]]{1d4 rounds}.</p>",
+          "description": "<p>The hive mother unleashes a pheromone that causes all other ankhravs within a @Template[emanation|distance:100] to become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} until the start of the hive mother's next turn, and they can use the extra action only for Burrow, Stride, or Strike actions.</p>\n<p>The hive mother can't unleash the pheromone again for [[/gmr 1d4 #Recharge Frenzy Pheromone]]{1d4 rounds}.</p>",
           "name": "Frenzy Pheromone"
         },
         "BeuWnsp3t3NisaY3": {
@@ -809,7 +809,7 @@
       "description": "<p>A magical orb drives intruders to commit acts of mindless destruction.</p>",
       "hazardDisable": "<p>@Check[crafting|dc:27] (master) to reconfigure the locus, @Check[occultism|dc:30] or @Check[religion|dc:30] (expert) to counteract the locus's energies, @Check[thievery|dc:35] (master) to extricate the orb from the altar</p>",
       "hazardReset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
-      "hazardRoutine": "<p>(1 action; mental) The destructive impulses grow stronger. Affected creatures must attempt a @Check[will|dc:32|traits:mental] save; creatures who fail or critically fail can't attempt to disable the haunt that turn.</p><hr><p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Success</strong> The creature is unaffected this round.</p><p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round, targeting both creatures and objects.</p><p><strong>Critical Failure</strong> As failure but the confusion lasts for 1 minute.</p>",
+      "hazardRoutine": "<p>(1 action; mental) The destructive impulses grow stronger. Affected creatures must attempt a @Check[will|dc:32|options:inflicts:confused|traits:mental] save; creatures who fail or critically fail can't attempt to disable the haunt that turn.</p><hr><p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Success</strong> The creature is unaffected this round.</p><p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round, targeting both creatures and objects.</p><p><strong>Critical Failure</strong> As failure but the confusion lasts for 1 minute.</p>",
       "name": "Locus of Destruction"
     },
     "Locus of Pain": {
@@ -1303,6 +1303,9 @@
     },
     "Paskis Nine-Knives": {
       "items": {
+        "7OmQgt8jiR4rXMg4": {
+          "description": "<p>A paste made by mashing the fine, threadlike roots of a certain creeper vine, spider root renders a victim clumsy and maladroit.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 minute)</p>\n<p><strong>Stage 3</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} (1 minute)</p>"
+        },
         "GgGCbgvdM6GVVh9n": {
           "description": "<p>Paskis treats all weapons in the knife group as finesse weapons.</p>",
           "name": "Knife Training"
@@ -1321,6 +1324,9 @@
         },
         "VuWi6ubE1WA1ENMR": {
           "description": "<p>Paskis deals an extra 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+        },
+        "YmnpRzV349SEoeJI": {
+          "description": "<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d10[poison]] damage (1 round)</p>"
         },
         "cZFvICqHxszg3rBe": {
           "description": "<p><strong>Trigger</strong> Paskis's Strike hits an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creature and deals damage</p><hr /><p><strong>Effect</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of Paskis's next turn.</p>",
@@ -1853,7 +1859,7 @@
           "name": "Jaws"
         },
         "6hhlLT5ZiaBLiNHf": {
-          "description": "<p><strong>Requirements</strong> The warcat has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Effect</strong> The warcat clamps on to the creature's neck. The creature takes @Damage[(3d12+10)[piercing]] damage plus @Damage[1d4[bleed]] damage (@Check[fortitude|dc:33|basic] save).</p>",
+          "description": "<p><strong>Requirements</strong> The warcat has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Effect</strong> The warcat clamps on to the creature's neck. The creature takes @Damage[(3d12+10)[piercing],1d4[bleed]] damage (@Check[fortitude|dc:33|basic] save).</p>",
           "name": "Piercing Fangs"
         },
         "EvUjIOo8OxmNgJ4l": {

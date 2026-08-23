@@ -143,7 +143,7 @@
     "Barushak Il-Varashma": {
       "items": {
         "0z7Fxpm5UuCECxe5": {
-          "description": "<p><strong>Requirements</strong> Barushak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Barushak attempts to bind the creature's wrists or ankles with the manacles. He must succeed at an attack roll with a [[/r 1d20+21 #Manacles]]{+21} modifier against the target's AC.</p>",
+          "description": "<p><strong>Requirements</strong> Barushak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Barushak attempts to bind the creature's wrists or ankles with the manacles. He must succeed at an attack roll with a @Check[efficient-capture|against:ac]{+21} modifier against the target's AC.</p>",
           "name": "Efficient Capture"
         },
         "2JA2yAWovcCXvKpN": {
@@ -175,7 +175,7 @@
           "name": "Manacles (Good) (Marked with the Symbol of the Scarlet Triad)"
         },
         "omPyHCBiVsSmjHtN": {
-          "name": "Keys to Each Dormitory Door and Slave Manacles"
+          "name": "Keys"
         },
         "pIKbKs8nTXF2nUAm": {
           "description": "<p>Barushak can cast @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend} spells as arcane spells. Each time he does so, sinister energies flow through his body, causing his eyes to glow red and making him @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 3 rounds. He can use the extra action only to Sustain the Spell.</p>",
@@ -478,7 +478,7 @@
           "name": "Motion Sense"
         },
         "Y1AIIIjE3wSGI9AA": {
-          "description": "<p>@Check[reflex|dc:28|traits:damaging-effect], @Damage[2d6[slashing]] damage, [[/act escape dc=28]], Rupture 25 (bludgeoning only).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:28|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[2d6[slashing]] damage, [[/act escape dc=28]], Rupture 25 (bludgeoning only).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "ZXkVB1alDTTOm35s": {
           "description": "<p>Until the next time it acts, the carnivorous crystal appears to be a mundane crystal formation. It has an automatic result of 40 on Deception and Stealth checks and DCs to pass as a crystal formation.</p>",
@@ -580,7 +580,7 @@
           "name": "Improved Knockdown"
         },
         "PPVreyhaPRMpOiLh": {
-          "name": "Key to Chiselrock's Prison"
+          "name": "Key"
         }
       },
       "name": "Corrupt Guard"
@@ -610,6 +610,7 @@
           "name": "Manifest Dagger"
         },
         "kSkZEEGE3SBLK5M1": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Constant) (Good Only)"
         },
         "m8WR1jKIWEJbbaKO": {
@@ -736,7 +737,7 @@
           "name": "Twin Parry"
         },
         "sek6swVu6eFYssLv": {
-          "name": "Key to Chest"
+          "name": "Key"
         }
       },
       "name": "Dmiri Yoltosha"
@@ -789,14 +790,14 @@
           "name": "Regeneration 20 (Deactivated by Cold)"
         },
         "4K4yW5oQfO6cRjez": {
-          "description": "<p>The dragonscarred dead's weapon is magically scorched by a dragon's breath. When wielded by the dragonscarred dead who carried it in life, the sword deals an extra @Damage[2d6[void]] damage and @Damage[3d6[fire]] damage. In the hands of any other creature, it is merely a broken greatsword.</p>",
+          "description": "<p>The dragonscarred dead's weapon is magically scorched by a dragon's breath. When wielded by the dragonscarred dead who carried it in life, the sword deals an extra 2d6 void damage and 3d6 fire damage. In the hands of any other creature, it is merely a broken greatsword.</p>",
           "name": "Breath-Seared Sword"
         },
         "7nMzSCqgZtUZbgud": {
           "description": "<p>60 feet. @Check[will|dc:29|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
         },
         "KOEGii7EkPZsq9Iz": {
-          "description": "<p>The dragonscarred dead focuses its boundless frustration in a gaze targeting one creature it can see within 30 feet. That creature must attempt a @Check[will|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for [[/gmr 1d4 #rounds]]{1d4 rounds} and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
+          "description": "<p>The dragonscarred dead focuses its boundless frustration in a gaze targeting one creature it can see within 30 feet. That creature must attempt a @Check[will|dc:30|options:inflicts:stunned,inflicts:fatigued] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for [[/gmr 1d4 #rounds]]{1d4 rounds} and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
           "name": "Glare of Rage"
         },
         "YlxLNSbifo76lEgK": {
@@ -871,6 +872,9 @@
     },
     "Duergar Slave Lord": {
       "items": {
+        "3Px1gkPg0rUxmmXE": {
+          "name": "+2 Status to All Saves vs. Magic"
+        },
         "OHsCxCSp0K0AQCsz": {
           "name": "Enlarge (Self Only)"
         },
@@ -890,7 +894,7 @@
           "name": "Hunter's Flurry"
         },
         "zkT4pDnggpJK1FkR": {
-          "name": "Key to the Temple of All Gods"
+          "name": "Key"
         }
       },
       "name": "Duergar Slave Lord",
@@ -1055,7 +1059,7 @@
           "name": "Opportune Backstab"
         },
         "6hxF1odU5xuRbrDX": {
-          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:34|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "bnOBGha4PmmSNkZJ": {
@@ -1189,7 +1193,7 @@
           "name": "Jaws"
         },
         "eCRAMtpF3k73LRFd": {
-          "description": "<p>Any living creature hit by a ghastly bear's attack must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by a ghastly bear's attack must succeed at a @Check[fortitude|dc:26|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "gncjMzeBqmNqD4vz": {
@@ -1513,7 +1517,7 @@
           "name": "Hammer the Chained"
         },
         "tCcBQS2TNgo7EIvB": {
-          "description": "<p><strong>Requirements</strong> Ilssrah has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Ilssrah attempts to bind the creature's wrists or ankles with the manacles. If she succeeds at an attack roll with a [[/r 1d20+30 #attack]]{+30} modifier against the target's AC, she applies the manacles.</p>",
+          "description": "<p><strong>Requirements</strong> Ilssrah has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Ilssrah attempts to bind the creature's wrists or ankles with the manacles. If she succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+30} modifier against the target's AC, she applies the manacles.</p>",
           "name": "Efficient Capture"
         }
       },
@@ -2010,7 +2014,7 @@
           "name": "Archery Experience"
         },
         "Ps0fTafFUadvtLAi": {
-          "description": "<p><strong>Requirements</strong> Laslunn has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Laslunn attempts to bind the creature's wrists or ankles with the manacles. If she succeeds at an attack roll with a [[/r 1d20+28 #Manacles]]{+28} modifier against the target's AC, she applies the manacles to the creature's wrists or legs.</p>",
+          "description": "<p><strong>Requirements</strong> Laslunn has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> Laslunn attempts to bind the creature's wrists or ankles with the manacles. If she succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+28} modifier against the target's AC, she applies the manacles to the creature's wrists or legs.</p>",
           "name": "Efficient Capture"
         },
         "UQaty56jSFbPq0pG": {
@@ -2021,7 +2025,7 @@
           "name": "Ring of Fire Resistance"
         },
         "hhRccIBA0AFYl4Su": {
-          "name": "Key Ring (Opens Locks in Summershade Quarry)"
+          "name": "Key Ring"
         },
         "j95Y0cxi70Mb6UMQ": {
           "description": "<p>Laslunn ignores the first square of difficult terrain she moves into each time she Steps or Strides.</p>",
@@ -2156,7 +2160,7 @@
           "name": "Adhesive Body"
         },
         "gEAiXMZU4XPY9yTM": {
-          "description": "<p>@Check[reflex|dc:22|traits:damaging-effect] save, @Damage[2d6[acid]], [[/act escape dc=24]], Rupture 10</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:22|options:damaging-effect,inflicts:grabbed,inflicts:slowed] save, @Damage[2d6[acid]] damage, [[/act escape dc=24]], Rupture 10</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "gOhhyt5jY5m4BCII": {
           "description": "<p>Living sap can sense nearby motion through vibration and air movement.</p>",
@@ -2909,7 +2913,7 @@
           "name": "Hideous Laughter"
         },
         "9dzKJk6ywUvYJxGr": {
-          "description": "<p><strong>Requirements</strong> The Scarlet Triad agent has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent attempts to bind the creature's wrists or ankles with the manacles. If they succeed at an attack roll with a [[/r 1d20+24]]{+24 modifier} against the target's AC, they apply the manacles.</p>",
+          "description": "<p><strong>Requirements</strong> The Scarlet Triad agent has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent attempts to bind the creature's wrists or ankles with the manacles. If they succeed at an attack roll with a @Check[efficient-capture|against:ac]{+24} modifier against the target's AC, they apply the manacles.</p>",
           "name": "Efficient Capture"
         },
         "SJvjp5tv9lMwcTyw": {
@@ -2963,7 +2967,7 @@
           "name": "Sailing Lore"
         },
         "TF94bqW7ak7QdxKX": {
-          "description": "<p><strong>Requirements</strong> The bruiser has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The bruiser attempts to bind the creature's wrists or ankles with the manacles. They must succeed at an attack roll with a [[/r 1d20+23 #Manacles]]{+23} modifier against the target's AC.</p>",
+          "description": "<p><strong>Requirements</strong> The bruiser has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The bruiser attempts to bind the creature's wrists or ankles with the manacles. They must succeed at an attack roll with a @Check[efficient-capture|against:ac]{+23} modifier against the target's AC.</p>",
           "name": "Efficient Capture"
         },
         "d8AM5zYWUUZUAdDc": {
@@ -3004,7 +3008,7 @@
           "name": "Underworld Lore"
         },
         "cBPi7wQqwCZJ4GR7": {
-          "description": "<p><strong>Requirements</strong> The enforcer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The enforcer attempts to bind the creature's wrists or ankles with the manacles. If the enforcer succeeds at an attack roll with a [[/r 1d20+30 #Manacles]]{+30 modifier} against the target's AC, they apply the manacles.</p>",
+          "description": "<p><strong>Requirements</strong> The enforcer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The enforcer attempts to bind the creature's wrists or ankles with the manacles. If the enforcer succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+30} modifier against the target's AC, they apply the manacles.</p>",
           "name": "Efficient Capture"
         }
       },
@@ -3097,7 +3101,7 @@
           "name": "Surprise Attack"
         },
         "sKH86qpUBKLIW8ls": {
-          "description": "<p><strong>Requirements</strong> The sneak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The sneak attempts to bind the creature's wrists or ankles with the manacles. If the sneak succeeds at an attack roll with a [[/r 1d20+16 #Manacles]]{+16} modifier against the target's AC, they apply the manacles.</p>",
+          "description": "<p><strong>Requirements</strong> The sneak has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The sneak attempts to bind the creature's wrists or ankles with the manacles. If the sneak succeeds at an attack roll with a @Check[efficient-capture|against:ac]{+16} modifier against the target's AC, they apply the manacles.</p>",
           "name": "Efficient Capture"
         },
         "uBfa75DofLNXMiso": {
@@ -3140,7 +3144,7 @@
           "name": "Pack Attack"
         },
         "KqV4dBWVzfi3DXyl": {
-          "description": "<p><strong>Requirements</strong> The thug has manacles in hand and is next to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The thug attempts to bind the creature's wrists or ankles with the manacles. The thug must succeed at an attack roll with a [[/r 1d20+18 #Manacles]]{+18} modifier against the target's AC.</p>",
+          "description": "<p><strong>Requirements</strong> The thug has manacles in hand and is next to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The thug attempts to bind the creature's wrists or ankles with the manacles. The thug must succeed at an attack roll with a @Check[efficient-capture|against:ac]{+18} modifier against the target's AC.</p>",
           "name": "Efficient Capture"
         },
         "S16umnQkXhv237qK": {
@@ -3513,7 +3517,7 @@
     "Uri Zandivar": {
       "items": {
         "1QF8m8mUgLiyrAeW": {
-          "description": "<p><strong>Requirements</strong> Uri has @UUID[Compendium.pf2e.equipment-srd.Item.5zkoqnp6X5yPCXVy]{Manacles} in his possession and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> Uri sheathes a weapon he's carrying, then attempts to bind the creature's wrists or ankles with the @UUID[Compendium.pf2e.equipment-srd.Item.5zkoqnp6X5yPCXVy]{Manacles}. If Uri succeeds at an attack roll with a [[/r 1d20+36 #Manacles]]{+36 modifier} against the target's AC, he applies the @UUID[Compendium.pf2e.equipment-srd.Item.5zkoqnp6X5yPCXVy]{Manacles}.</p>",
+          "description": "<p><strong>Requirements</strong> Uri has manacles in his possession and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> Uri sheathes a weapon he's carrying, then attempts to bind the creature's wrists or ankles with the manacles. If Uri succeeds at an attack roll with a @Check[swift-capture|against:ac]{+36} modifier against the target's AC, he applies the manacles.</p>",
           "name": "Swift Capture"
         },
         "4aPH8d3UvOV2vvwk": {
@@ -3532,7 +3536,7 @@
           "name": "Swift Slash"
         },
         "ct0XvSPn4vZOIhf3": {
-          "description": "<p><strong>Trigger</strong> A creature within Uri's reach fails an attack roll, saving throw, or skill check</p>\n<hr />\n<p><strong>Effect</strong> Uri makes an unarmed Strike against the triggering creature. If the attack hits, the target must succeed at a @Check[fortitude|dc:41] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} until the end of its next turn (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} on a critical failure).</p>",
+          "description": "<p><strong>Trigger</strong> A creature within Uri's reach fails an attack roll, saving throw, or skill check</p>\n<hr />\n<p><strong>Effect</strong> Uri makes an unarmed Strike against the triggering creature. If the attack hits, the target must succeed at a @Check[fortitude|dc:41|options:inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} until the end of its next turn (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} on a critical failure).</p>",
           "name": "Punish Imperfection"
         },
         "k7a5PsosLu8FXsTk": {
@@ -3888,7 +3892,7 @@
           "name": "Claw"
         },
         "TJWwRY8dDZB5iZvQ": {
-          "description": "<p>Despite his size, Xevalorg's multiple joints allow him to fit through tight spaces as if he were a Medium creature. While Squeezing, he can move at his full Speed.</p>",
+          "description": "<p>Despite his size, Xevalorg's multiple joints allow him to fit through tight spaces as if he were a Medium creature. While @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeezing}, he can move at his full Speed.</p>",
           "name": "Eerie Flexibility"
         },
         "Y2zsNHA4yCb5oLRU": {
@@ -3959,16 +3963,17 @@
       "npcHp": "regeneration 25"
     },
     "Xotanispawn": {
+      "description": "<p>Xotanispawn are monstrous versions of scavenging beetle larvae that have been corrupted and mutated by feeding on the remains of Xotani the Firebleeder, a slain Spawn of Rovagug buried beneath Pale Mountain in Katapesh. These creatures look vaguely like the minute insects they once were, with a sclerotized head and chitinous body plates, six legs, and numerous dorsal spines lining the joints and edges of each segment. However, by feeding on the unholy remains of Xotani, the spawn have manifested many of the traits of the infamous Firebleeder, most notably a blisteringly hot internal temperature and powerful fire attacks—to say nothing of their monstrous size.</p>\n<p>Internal heat radiates from every surface of a Xotanispawn, even from its mouth. Any contact with a Xotanispawn results in burns and the risk of catching on fire. Thankfully, Xotanispawn have also inherited Xotani's weaknesses to cold and sunlight. They are rarely encountered on the surface during the day, opting to emerge from their subterranean lairs only at night.</p>",
       "items": {
         "3h72FdcRfSluIGqq": {
           "name": "Jaws"
         },
         "5MhFpMwgTDRkEcvj": {
-          "description": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to @Damage[10d8[persistent,fire]] damage until the start of its next turn.</p>",
+          "description": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to 10d8 until the start of its next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.eRxSdMi6Y2XTQWql]{Effect: Heat Surge}</p>",
           "name": "Heat Surge"
         },
         "D1apG8hCM6fFYauw": {
-          "description": "<p>The Xotanispawn sprays a @Template[cone|distance:60] of magma that deals @Damage[10d10[fire],2d6[persistent,fire]|options:area-damage]{10d10 fire damage and 2d6 persistent fire damage} to all creatures in the area (@Check[reflex|dc:39|basic|options:area-effect] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
+          "description": "<p>The Xotanispawn sprays a @Template[cone|distance:60] of magma that deals @Damage[10d10[fire],2d6[persistent,fire]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:39|basic|options:area-effect] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>",
           "name": "Breath Weapon"
         },
         "XqfuKJG5gZuzeCDr": {

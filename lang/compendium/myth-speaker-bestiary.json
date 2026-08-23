@@ -168,6 +168,10 @@
           "description": "<p><strong>Trigger</strong> The bristled reef shark becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or otherwise @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} in a creature's grasp</p><hr /><p><strong>Effect</strong> The shark flares its bristles, dealing @Damage[1d6[piercing]] damage to the triggering creature (@Check[reflex|dc:17|basic]). If the creature critically fails, the shark can also try to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} as part of this reaction.</p>",
           "name": "Bristle"
         },
+        "P5wCCIimJAhU5s68": {
+          "description": "<p>The shark can smell blood in the water from up to 1 mile away.</p>",
+          "name": "Blood Scent"
+        },
         "eaOzB2ZpMqmJxXYx": {
           "description": "<p>When a bristled reef shark successfully Squeezes, it moves though the tight space at half speed (or full speed on a critical success).</p>",
           "name": "Compression"
@@ -1180,7 +1184,7 @@
           "name": "Mural"
         },
         "oVaQS0qsziV00K2C": {
-          "description": "<p>@Check[reflex|dc:29], @Damage[(6d6)[bludgeoning]] damage, Escape DC 29, Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:29|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[(6d6)[bludgeoning]] damage, [[/act escape dc=29]], Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         }
       },
       "name": "Painted Landscape"
@@ -1459,7 +1463,7 @@
           "name": "Swarming Bites"
         },
         "pV5jZwvRYcpE7toP": {
-          "description": "<p>In wet environments like open water, tide pools, and even wet ship decks, a riptide octopus swarm can @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} without cover or being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>",
+          "description": "<p>In wet environments like open water, tide pools, and even wet ship decks, a riptide octopus swarm can [[/act hide]] and [[/act sneak]] without cover or being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>",
           "name": "Camouflage"
         },
         "qkrFgGUiwzSNSuha": {
@@ -1801,7 +1805,7 @@
       "description": "<p>The spirits of the island's citizens manifest and panic as the vault fills with seawater.</p>",
       "hazardDisable": "<p>DC 33 Athletics (trained) twice to [[/act force-open dc=33]] the vault's door or @Check[religion|dc:30] (trained) three times to exorcise the spirits</p>",
       "hazardReset": "<p>The waters recede and the spirits disappear once no living creatures remain inside the vault, but the haunt resets immediately, triggering again if a living creature steps inside.</p>",
-      "hazardRoutine": "<p>(1 action) Water begins to fill the vault from a crack in the floor hidden beneath the bones. The spirits of the citizens panic and grasp at the living, begging them to act. Each creature in the vault takes @Damage[(2d10+13)[void]|options:area-damage] damage with a @Check[fortitude|dc:28|basic] saving throw. On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} on a critical failure).</p><p>The first time the hazard takes this action, water fills the vault to knee-height, making the area difficult terrain. The second time the hazard takes this action, the vault fills halfway with water, and creatures inside must succeed at a @Check[athletics|dc:15] check each round to Swim. The third time the hazard takes this action, the vault fills entirely with water, and creatures inside must hold their breath.</p>",
+      "hazardRoutine": "<p>(1 action) Water begins to fill the vault from a crack in the floor hidden beneath the bones. The spirits of the citizens panic and grasp at the living, begging them to act. Each creature in the vault takes @Damage[(2d10+13)[void]|options:area-damage] damage with a @Check[fortitude|dc:28|basic|options:area-effect,inflicts:enfeebled] saving throw. On a failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} on a critical failure).</p><p>The first time the hazard takes this action, water fills the vault to knee-height, making the area difficult terrain. The second time the hazard takes this action, the vault fills halfway with water, and creatures inside must succeed at a DC 15 Athletics check each round to [[/act swim dc=15]]. The third time the hazard takes this action, the vault fills entirely with water, and creatures inside must hold their breath.</p>",
       "name": "Vault-Drowned Souls"
     },
     "Vengeful Shade": {

@@ -58,7 +58,7 @@
           "name": "Fangs"
         },
         "pyyhZ6BfNL9ATh0U": {
-          "description": "<p>A creature damaged by the afziaka's fangs must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute. The creature can remove this condition earlier by consuming at least a handful of raw meat.</p>",
+          "description": "<p>A creature damaged by the afziaka's fangs must succeed at a @Check[fortitude|dc:22|options:inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute. The creature can remove this condition earlier by consuming at least a handful of raw meat.</p>",
           "name": "Hunger Pangs"
         }
       },
@@ -81,7 +81,7 @@
           "name": "Fangs"
         },
         "pyyhZ6BfNL9ATh0U": {
-          "description": "<p>A creature damaged by the afziaka's fangs must succeed at a @Check[fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour. The creature can remove this condition earlier by consuming at least a handful of raw meat.</p>",
+          "description": "<p>A creature damaged by the afziaka's fangs must succeed at a @Check[fortitude|dc:30|options:inflicts:enfeebled] save or become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour. The creature can remove this condition earlier by consuming at least a handful of raw meat.</p>",
           "name": "Hunger Pangs"
         },
         "qtO1WSrVjmSwb8Mb": {
@@ -126,7 +126,7 @@
       "description": "<p>Hideous necromantic rituals give rise to skavelings, or ghoul bats, monstrosities that are not true ghouls but instead are specifically crafted undead creatures. Their creators are the bloodsucking urdefhans of the Darklands, who create skavelings from giant bats specially raised on diets of toxic fungus and the flesh of ghouls-especially brains harvested from these undead. Upon reaching maturity, these giant bats are ritually slain via the use of cytillesh oil. While this poison simply rots away the flesh of most creatures, one of these specially prepared bats will immediately rise from death as a skaveling after succumbing to its effects.</p>\n<p>Despite its tattered wings and sagging skin, a skaveling is more than capable of flight, even when carrying a creature mounted on its back-urdefhans often use skavelings as mounts in this way. Their intelligence is more advanced than that of the typical giant bat, and in combat they function more as allies than as mere mounts, capable of making their own tactical decisions. Yet even though they can reason and think, skavelings remain loyal to the urdefhans who created them, and they never take actions in a fight that would knowingly put their masters in harm's way.</p>",
       "items": {
         "2doPyPIBLoDzjzk9": {
-          "description": "<p>Any creature hit by the skaveling's Strikes must attempt a @Check[fortitude|dc:36] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each save.</p>",
+          "description": "<p>Any creature hit by the skaveling's Strikes must attempt a @Check[fortitude|dc:36|options:inflicts:slowed,inflicts:paralyzed] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each save.</p>",
           "name": "Paralysis"
         },
         "ChobeFNcesw2DX01": {
@@ -215,7 +215,7 @@
           "description": "<p>@Damage[1d6[bludgeoning],1d6[acid]]{1d6 bludgeoning plus 1d6 acid}, @Check[fortitude|dc:21|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
         },
         "B4dvyMiNXi1vMXzz": {
-          "description": "<p>A creature hit by the ooze's pseudopod is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} unless it succeeds at a @Check[fortitude|dc:19] save. A victim can attempt a new save to recover at the end of each of its turns.</p>",
+          "description": "<p>A creature hit by the ooze's pseudopod is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} unless it succeeds at a @Check[fortitude|dc:19|options:inflicts:paralyzed] save. A victim can attempt a new save to recover at the end of each of its turns.</p>",
           "name": "Paralysis"
         },
         "TnT0MH1u6Ixly1UZ": {
@@ -688,6 +688,10 @@
           "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>",
           "name": "Dancing Lights"
         },
+        "Ef7zNViKYoKSZlat": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
+          "name": "Detect Alignment"
+        },
         "IsGLZSTgHv6OcM8A": {
           "description": "<p>If a creeping crone is deprived of her walking stick, her Speed is reduced to 5 feet (though she can use some other Speed she gains, such as from her @UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly} spell) until she recovers her walking stick or fashions another.</p>",
           "name": "Stick Support"
@@ -1129,7 +1133,7 @@
           "name": "Jaws"
         },
         "fvNa9q4DAn2iRbMf": {
-          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:26|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "jNt2HTtqeqE136kQ": {
@@ -1333,7 +1337,7 @@
           "name": "Ghoul Fever"
         },
         "qxLcM4LwcXIOI4JT": {
-          "description": "<p>Any living, non-elf creature hit by a ghoul antipaladin's attack must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by a ghoul antipaladin's attack must succeed at a @Check[fortitude|dc:25|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "s4vwHWyfpShRh138": {
@@ -1360,7 +1364,7 @@
           "name": "Death Roll"
         },
         "JgSmuAF0Y7WGZqxZ": {
-          "description": "<p>Any living non-elf creature hit by a ghoul crocodile's tail must succeed at a @Check[fortitude|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living non-elf creature hit by a ghoul crocodile's tail must succeed at a @Check[fortitude|dc:20|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "Qs8jgNRG7timjSVE": {
@@ -1419,7 +1423,7 @@
           "name": "Staff of Necromancy"
         },
         "xKNmdlpRseAGp91L": {
-          "description": "<p>Any living, non-elf creature hit by a ghoul gnawer's attack must succeed at a @Check[fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by a ghoul gnawer's attack must succeed at a @Check[fortitude|dc:27|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "xNjTIq85rIoWNhud": {
@@ -1437,7 +1441,7 @@
           "name": "Consume Flesh"
         },
         "FD08rlVq7IYngy5F": {
-          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:31|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "HytM2L3Eblb1yHgg": {
@@ -1957,7 +1961,7 @@
           "name": "Coven"
         },
         "E6CK2SNJqqGlCXkQ": {
-          "description": "<p>When the characters meet Iron Taviah, the Graveclaw is at the height of its power. As a scattered coven, the Graveclaw grants Taviah the ability to cast the following spells as 3rd-rank occult spells, once per day each, without requiring help from her fellow coven members:@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}, @UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse of Lost Time}, @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}, @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}, @UUID[Compendium.pf2e.spells-srd.Item.xlRv8vCTHh1NeMpw]{Mimic Undead}, @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, and @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk}.</p>",
+          "description": "<p>When the characters meet Iron Taviah, the Graveclaw is at the height of its power. As a scattered coven, the Graveclaw grants Taviah the ability to cast the following spells as 3rd-rank occult spells, once per day each, without requiring help from her fellow coven members: @UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}, @UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse of Lost Time}, @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}, @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}, @UUID[Compendium.pf2e.spells-srd.Item.xlRv8vCTHh1NeMpw]{Mimic Undead}, @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, and @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk}.</p>",
           "name": "Scattered Coven"
         },
         "ETaugj7PvAqfMfFY": {
@@ -2393,6 +2397,7 @@
           "name": "See Invisibility"
         },
         "5Xu7iZKSWyZYRQpl": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (Constant)"
         },
         "5vZMiheHhPFYtpdN": {
@@ -2498,7 +2503,7 @@
           "name": "Instrument of Faith"
         },
         "zvdJqSyO972cDcqm": {
-          "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[5d6[void]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:20|options:area-effect,damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
+          "description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[emanation|distance:30], dealing @Damage[5d6[void]|options:area-damage] damage. Each creature in the area must attempt a @Check[will|dc:20|options:area-effect,damaging-effect,inflicts:enfeebled,inflicts:stupefied] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
           "name": "Divine Destruction"
         }
       },
@@ -2890,7 +2895,7 @@
           "name": "Poison Lore"
         },
         "OlYMKu8U3252vjmq": {
-          "description": "<p>Any living, non-elf creature hit by Pesgahi's attack must succeed at a @Check[fortitude|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by Pesgahi's attack must succeed at a @Check[fortitude|dc:19|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "RRPzRLRS7BdAYtvS": {
@@ -3819,7 +3824,7 @@
           "name": "Jaws"
         },
         "rBFcY5MpSMdtvE5Y": {
-          "description": "<p>The shimmernewt chews on a creature that it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. The target creature must attempt a @Check[fortitude|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d10[piercing]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d10[piercing]] damage and @Damage[1d6[bleed]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d10[piercing]] damage, @Damage[1d6[bleed]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} by the pain of the chomp.</p>",
+          "description": "<p>The shimmernewt chews on a creature that it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. The target creature must attempt a @Check[fortitude|dc:24|options:damaging-effect,inflicts:sickened] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d10[piercing]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d10[piercing],1d6[bleed]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d10[piercing],1d6[bleed]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} by the pain of the chomp.</p>",
           "name": "Gaping Chomp"
         }
       },
@@ -4049,7 +4054,7 @@
       "description": "<p>Soul slimes are swirling, blue-gray masses of protoplasm that feed on the quintessence contained within souls. Typically, soul slimes acquire this quintessence by consuming the living, the undead, or souls imprisoned in other objects, although soul slimes can also feed on the quintessence of the Outer Planes and their occupants. Soul slimes digest these siphoned souls over decades. As long as a portion of a soul remains undigested, a soul slime can adopt the shape and use the vocalizations of that soul—a tactic soul slimes routinely adopt to get close to their prey while hunting. As soul slimes lack the intelligence to truly impersonate or mimic the souls they digest, they are obvious facsimiles and are entirely incapable of speech.</p>",
       "items": {
         "5XkUdy0enHjVg7ZI": {
-          "description": "<p>@Check[reflex|dc:40], @Damage[5d10[bludgeoning]] damage, [[/act escape dc=40]], Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:40|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[5d10[bludgeoning]] damage, [[/act escape dc=40]], Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "72Wd4SQEtNwJIeQT": {
           "description": "<p>The soul slime assumes the shape and features of any Large, Medium, or Small creature whose soul the soul slime has siphoned for up to 1 minute. This doesn't change the soul slime's statistics, only its outward appearance. While transformed in this way, the soul slime can revert to its natural shape as a single action, and the soul slime automatically reverts to its natural shape when it takes physical damage.</p>",
@@ -4121,7 +4126,7 @@
           "name": "Beak"
         },
         "Oi10YnqeymdtqRHt": {
-          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:26|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "Rtm8o7JzZF50M8BC": {
@@ -4150,7 +4155,7 @@
           "name": "Mohrg Spawn"
         },
         "stXfg5Sba6tjjP5Z": {
-          "description": "<p>A living creature hit by Sulvik's tongue Strike must succeed at a @Check[fortitude|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
+          "description": "<p>A living creature hit by Sulvik's tongue Strike must succeed at a @Check[fortitude|dc:28|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
           "name": "Paralysis"
         },
         "zGPZCB9sz4MqsHYZ": {
@@ -5042,7 +5047,7 @@
           "name": "Magic Missile"
         },
         "ZLcO9eT7RdF6M8kF": {
-          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:28|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "nuaJqoEdrGVZx4wU": {
@@ -5106,7 +5111,7 @@
           "name": "Consume Flesh"
         },
         "wWlq8cB7VIQ0GuXZ": {
-          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:32|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "wnPfCkyXGwO4MGVc": {

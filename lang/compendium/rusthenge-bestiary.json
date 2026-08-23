@@ -217,7 +217,7 @@
       "description": "<p>The primordial envy is most often found in underground ruins within Edasseril. It hungers for magic, leaching it from any source it can come into contact with. This hunger can be exploited by clever adventurers who bait it with powerful destructive magics. A primordial envy is one of the most defensive sin oozes, and it tends to layer abjuration spells over itself to both increase its resilience and empower its attacks.</p>\n<hr />\n<p>Thassilon's ruins contain numerous sources of raw magical power that have been lost or forgotten. As many of these sources are steeped in sinful soul energy used by the runelords to enhance their power, some of these sources go \"sour,\" forming into a sinsludge—a mucky effluvium that develops into a barely rudimentary consciousness based on the emotion behind the sin.</p>\n<h2>Other Sinsludges</h2>\n<p>The primordial envy is the least dangerous sinsludge. The glistening pride's shimmering visage lures victims, then curses them with an inflated and competitive ego that tends to get them killed. The crusted sloth leaves victims wallowing in lethargy until they starve, while the shimmering greed imprisons would-be treasure seekers within shells of precious metal. The slithering lust's sweet scents enthrall victims with their deepest desires, distracting them as it feeds. But the most terrible of the sinsludges are the ravenous wrath, which uses blasts of devastating energy to feed, and the rancid gluttony, which consumes souls and leaves bodies behind as lethal undead.</p>",
       "items": {
         "FDCXS4bVC2F1PdGz": {
-          "description": "<p>The primordial envy attempts to drain magic from a spellcasting creature that it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. The spellcasting creature must attempt a @Check[will|dc:20] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Spell Drain for 24 hours.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[mental]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[mental]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but one of the creature's uncast spells or unused spell slots is lost, as if they had cast it. The spell or slot lost is one of the highest-rank spells the creature can cast, determined randomly if multiple prepared spells are available. If a cantrip is drained, the spellcaster loses access to that cantrip for 10 minutes. The primordial envy becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} 1 for 1 round, and can use the extra action to Stride or Strike.</p>",
+          "description": "<p>The primordial envy attempts to drain magic from a spellcasting creature that it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. The spellcasting creature must attempt a @Check[will|dc:20|options:damaging-effect,inflicts:stupefied] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Spell Drain for 24 hours.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[mental]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[mental]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but one of the creature's uncast spells or unused spell slots is lost, as if they had cast it. The spell or slot lost is one of the highest-rank spells the creature can cast, determined randomly if multiple prepared spells are available. If a cantrip is drained, the spellcaster loses access to that cantrip for 10 minutes. The primordial envy becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} 1 for 1 round, and can use the extra action to Stride or Strike.</p>",
           "name": "Spell Drain"
         },
         "HhUe0MpfzNrigkps": {
@@ -240,7 +240,7 @@
     },
     "Rushing Waters": {
       "description": "<p>Rivulets of water begin to run from the circle of stones to gather in a growing puddle at the center.</p>",
-      "hazardDisable": "<p>@Check[thievery|dc:20] (expert) to rub out the @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} runes on the ceiling, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank, counteract DC 18) to counteract the trap</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:20] (expert) to rub out the hidden runes on the ceiling, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank, counteract DC 18) to counteract the trap</p>",
       "hazardReset": "<p>The magic rejuvenates over 10 minutes, after which it is recharged and ready to activate again.</p>",
       "name": "Rushing Waters"
     },
@@ -319,8 +319,8 @@
     },
     "Spiky Pit Trap": {
       "description": "<p>A piece of hide covered with a layer of dirt and gravel is suspended over a 20-foot pit filled with spikes.</p>",
-      "hazardDisable": "<p>@Check[thievery|dc:18] (trained) to manually trigger the trap without falling in, or @Check[thievery|dc:25] (trained) to secure the hide so the trap doesn't activate</p>",
-      "hazardReset": "<p>Creatures can still fall into the trap, but the hide that covers it must be reset manually (a 10-minute activity) for the trap to become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} again.</p>",
+      "hazardDisable": "<p>@Check[thievery|dc:18] (trained) to manually trigger the trap without falling in, or @Check[thievery|dc:25] (trained) to secure the hide so the trap doesn't activate.</p>",
+      "hazardReset": "<p>Creatures can still fall into the trap, but the hide that covers it must be reset manually (a 10-minute activity) for the trap to become hidden again.</p>",
       "name": "Spiky Pit Trap"
     },
     "Starving Werebat": {
@@ -403,6 +403,7 @@
           "name": "Telepathy (Touch only)"
         },
         "Cvcdr8l0DxG0Fszv": {
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
           "name": "Detect Alignment (At will, Lawful only)"
         },
         "Kv1pkf5Ma30A8n58": {

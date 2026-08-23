@@ -443,9 +443,6 @@
           "description": "<p>Calcifda holds aloft a gem and gazes into the mind of a creature within 30 feet, infusing the creature's thoughts with visions of their body slowly turning to coal. The creature must succeed at a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (frightened 2 on a critical failure).</p>",
           "name": "Gem Gaze"
         },
-        "tSnuNpmimE561PtR": {
-          "_source": "pf2e.equipment-srd.Item.ilnc82SKDYHcoEMH"
-        },
         "tl6zm507u2n5d9xj": {
           "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Calcifda makes a claw Strike that originates from any stony or tarry surface within 60 feet. A creature that fails its Fortitude save against coal curse from this Strike increases its slowed value by 1 (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a failed save, slowed 3 on a critical failure).</p>",
           "name": "Lashing Stone"
@@ -603,7 +600,7 @@
           "name": "Jaws"
         },
         "c7bq7zx9e9v0gymy": {
-          "description": "<p>Any nonliving creature hit by the everburning mammoth's jaws Strike must succeed at a @Check[fortitude|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+          "description": "<p>Any nonliving creature hit by the everburning mammoth's jaws Strike must succeed at a @Check[fortitude|dc:23|options:inflicts:paralyzed] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
           "name": "Paralysis"
         },
         "gmnknp9pqreqzel3": {
@@ -905,7 +902,7 @@
     },
     "Hall Of Fiery Doom": {
       "description": "While the roof is on fire and collapsing timbers crush those within the hall, demons fly down from the sky to pluck victims from the flames.",
-      "hazardDisable": "<p>Two @Check[athletics|dc:32] or @Check[diplomacy|dc:32] checks to douse the flames; Athletics to do the work yourself or Diplomacy to muster the ghostly soldiers. This reduces the hazard's actions by 1 and prevents it from using Burning Timbers. Banish the demons with up to two @Check[arcana|dc:35], @Check[occultism|dc:35], or @Check[religion|dc:35]checks; each success reduces the hazard's actions by 1, and two successes prevent it from using Demonic Abduction. When the hazard loses all 3 actions, Burning Timbers, and Demonic Abduction, it's disabled.</p>",
+      "hazardDisable": "<p>Two @Check[athletics|dc:32] or @Check[diplomacy|dc:32] checks to douse the flames; Athletics to do the work yourself or Diplomacy to muster the ghostly soldiers. This reduces the hazard's actions by 1 and prevents it from using Burning Timbers. Banish the demons with up to two @Check[arcana|dc:35], @Check[occultism|dc:35], or @Check[religion|dc:35] checks; each success reduces the hazard's actions by 1, and two successes prevent it from using Demonic Abduction. When the hazard loses all 3 actions, Burning Timbers, and Demonic Abduction, it's disabled.</p>",
       "hazardReset": "The hall falls quiet for 24 hours, after which it can trigger again.",
       "hazardRoutine": "<p>(3 actions) The haunt spends 1 action to fill the hall with burning timbers falling from above, and 2 actions to pluck up random victims and drop them to their deaths.</p>",
       "name": "Hall Of Fiery Doom"
@@ -1176,7 +1173,7 @@
           "name": "Prestidigitation (Only to Move, Clean, or Soil Small Amounts of Water)"
         },
         "ZDzz6wFZnGMBzxMF": {
-          "description": "<p>The loblobi tidies its feathered crest to look supernaturally regal. Each non-fey creature within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:17] save, then is temporarily immune to Arrogant Preen for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is distracted by the preening and can't take reactions until the start of its next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the loblobi and can't take reactions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure. Additionally, while the creature is fascinated, any hostile actions from the loblobi don't break the fascination, but instead allow the target to attempt a new Will save to end the effect at the start of its next turn.</p>",
+          "description": "<p>The loblobi tidies its feathered crest to look supernaturally regal. Each non-fey creature within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:17|options:area-effect,inflicts:fascinated] save, then is temporarily immune to Arrogant Preen for 1 hour.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is distracted by the preening and can't take reactions until the start of its next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the loblobi and can't take reactions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure. Additionally, while the creature is fascinated, any hostile actions from the loblobi don't break the fascination, but instead allow the target to attempt a new Will save to end the effect at the start of its next turn.</p>",
           "name": "Arrogant Preen"
         },
         "dUFz3O3QbeSn86y9": {
@@ -1184,7 +1181,7 @@
           "name": "Dancing Lights"
         },
         "eCySTKuCMmk9D179": {
-          "description": "<p>When a loblobi rolls a success on a Will save against an emotion effect or an effect that would make it controlled, it gets a critical success instead. When it rolls a critical failure against such an effect, it gets a failure instead.</p>\n<p>However, a loblobi is vulnerable to flattery. It takes a -4 circumstance penalty to its Will and Perception DCs against any fulsome Deception and Diplomacy checks to Lie, @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, or Request.</p>",
+          "description": "<p>When a loblobi rolls a success on a Will save against an emotion effect or an effect that would make it controlled, it gets a critical success instead. When it rolls a critical failure against such an effect, it gets a failure instead.</p>\n<p>However, a loblobi is vulnerable to flattery. It takes a -4 circumstance penalty to its Will and Perception DCs against any fulsome Deception and Diplomacy checks to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie}, @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, or @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}.</p>",
           "name": "Unflappable Self-Importance"
         }
       },
@@ -1305,8 +1302,11 @@
           "name": "Claw"
         },
         "8pnzjy6kvncbd15u": {
-          "description": "<p>A demon named Xeleria is bound to Metuak's soul. Though the two entities share one body and are a single creature for the purpose of both targeted and area effects, Metuak and Xeleria each have 120 Hit Points. Damage to each is tracked separately. Xeleria's HP is reduced by force, good, and vitality damage, and any damage from a cold iron weapon, a weapon with a <em>ghost touch</em> rune, and any damage originating from the <em>Primordial Flame</em>. All other damage reduces Metuak's HP.Metuak and Xeleria must both be reduced to 0 HP for Metuak to die and Xeleria to be destroyed. If, at the beginning of Metuak's turn, either Metuak or Xeleria has been reduced to 0 HP but the other hasn't, Metuak and Xeleria each regain 15 HP.</p>",
+          "description": "<p>A demon named Xeleria is bound to Metuak's soul. Though the two entities share one body and are a single creature for the purpose of both targeted and area effects, Metuak and Xeleria each have 120 Hit Points. Damage to each is tracked separately. Xeleria's HP is reduced by force, good, and vitality damage, and any damage from a cold iron weapon, a weapon with a <em>ghost touch</em> rune, and any damage originating from the <em>Primordial Flame</em>. All other damage reduces Metuak's HP.</p>\n<p>Metuak and Xeleria must both be reduced to 0 HP for Metuak to die and Xeleria to be destroyed. If, at the beginning of Metuak's turn, either Metuak or Xeleria has been reduced to 0 HP but the other hasn't, Metuak and Xeleria each regain @Damage[15[healing]] HP.</p>",
           "name": "Dual Soul"
+        },
+        "IJvDQ4eDErLOjR7C": {
+          "name": "+1 to All Saves vs. Magic"
         },
         "fao0gebzp7f3sf01": {
           "description": "<p>Metuak has access to the critical specialization effect of axe weapons. Due to his hatchet's <em>grievous</em> rune, he can damage a third creature with the same restrictions.</p>",
@@ -1325,11 +1325,13 @@
           "name": "Dual Deny Advantage"
         },
         "uw378c511blkggfl": {
-          "description": "<p>Metuak unleashes a terrifying howl, attempting to Demoralize each creature within 30 feet. These creatures are then immune to Terrifying Howl for 1 minute.</p>",
+          "description": "<p>Metuak unleashes a terrifying howl, attempting to [[/act demoralize options=area-effect]] each creature within @Template[emanation|distance:30]{30 feet}. These creatures are then immune to Terrifying Howl for 1 minute.</p>",
           "name": "Terrifying Howl"
         }
       },
-      "name": "Metuak"
+      "name": "Metuak",
+      "npcAllSaves": "+1 to all saves vs. magic",
+      "npcHp": "(dual soul; 120 each for Metuak and Xeleria)"
     },
     "Necrohusk": {
       "description": "<p>Necrohusks are skittering, undead monstrosities, created when a humanoid is purposefully twisted into a new creature through necromantic experimentation. Unlike fleshwarps and recipients of successful necrografts, prospective necrohusks never survive the procedure. After reanimation, they're cunning, animalistic creatures that follow their creator's orders without question.</p>\n<p>Creating a necrohusk is an incredibly difficult endeavor, fraught with error. Most attempts result in lumps of useless, rotten slurry or malformed undead no more cunning or dangerous than a mundane zombie. The costs in time, experimental subjects, and expensive spell components lead some would-be necromancers to conclude that the results aren't worth the risk. Occasionally, spellcasters can harness the power of the Void during the process, which lessens the monetary cost but vastly increases the danger, often producing a deadly backlash resulting in the creator's death and a masterless necrohusk.</p>\n<p>Among the Sutaki, only Ashen Swale and his lieutenants, Turkek and Azi, have the skill and knowledge to create necrohusks with any regularity, although Turkek's interests often lead him away from such gruesome endeavors. Necrohusks are created from volunteers in Ashen Swale's cult or from traitorous Sutaki whom Ashen Swale wants to punish with a ghastly fate.</p>",
@@ -1731,7 +1733,7 @@
           "name": "Pseudopod"
         },
         "alLH7SnUCBbBi9pA": {
-          "description": "<p>@Check[reflex|dc:29|traits:damaging-effect], @Damage[6d6[bludgeoning]], [[/act escape dc=29]], Rupture 17</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+          "description": "<p>@Check[reflex|dc:29|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[6d6[bludgeoning]] damage, [[/act escape dc=29]], Rupture 17</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
         },
         "cbX4rv6aWiZhGH5R": {
           "description": "<p>A creature slain while engulfed by a tar ooze undergoes a horrifying transformation and crawls from the ooze a week later as a tar zombie.</p>",
