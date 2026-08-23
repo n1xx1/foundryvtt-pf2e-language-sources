@@ -27,6 +27,9 @@ async function setupOut() {
   await mkdir("lang/compendium", { recursive: true }).catch(() =>
     Promise.resolve(),
   );
+  await mkdir("lang/compendium-sf", { recursive: true }).catch(() =>
+    Promise.resolve(),
+  );
 }
 
 // @UUID[Compendium.pf2e.spells-srd.4GE2ZdODgIQtg51c]{Darkness}
@@ -72,6 +75,7 @@ async function handleItem(
   label: string,
   entries: EntryItem[],
   allPacksMap: Map<string, PackData>,
+  compendiumSuffix: string,
 ) {
   const out: Compendium = {
     label,
@@ -121,7 +125,10 @@ async function handleItem(
   }
 
   const outData = JSON.stringify(out, orderKeysReplacer, 2);
-  await writeFile(join("lang/compendium", id + ".json"), outData);
+  await writeFile(
+    join("lang/compendium" + compendiumSuffix, id + ".json"),
+    outData,
+  );
 }
 
 function mapSpellData(system: Partial<EntryItemSpell["system"]>) {
@@ -164,6 +171,7 @@ async function handleRollTable(
   name: string,
   entries: EntryRollTable[],
   allPacksMap: Map<string, PackData>,
+  compendiumSuffix: string,
 ) {
   const out: Compendium = {
     label: name,
@@ -181,7 +189,10 @@ async function handleRollTable(
   }
 
   const outData = JSON.stringify(out, orderKeysReplacer, 2);
-  await writeFile(join("lang/compendium", id + ".json"), outData);
+  await writeFile(
+    join("lang/compendium" + compendiumSuffix, id + ".json"),
+    outData,
+  );
 }
 
 async function handleMacro(
@@ -189,6 +200,7 @@ async function handleMacro(
   name: string,
   entries: EntryMacro[],
   allPacksMap: Map<string, PackData>,
+  compendiumSuffix: string,
 ) {
   const out: Compendium = {
     label: name,
@@ -202,7 +214,10 @@ async function handleMacro(
   }
 
   const outData = JSON.stringify(out, orderKeysReplacer, 2);
-  await writeFile(join("lang/compendium", id + ".json"), outData);
+  await writeFile(
+    join("lang/compendium" + compendiumSuffix, id + ".json"),
+    outData,
+  );
 }
 
 async function handleJournalEntry(
@@ -210,37 +225,46 @@ async function handleJournalEntry(
   name: string,
   entries: EntryJournalEntry[],
   allPacksMap: Map<string, PackData>,
+  compendiumSuffix: string,
 ) {
   const out: Compendium = {
     label: name,
     entries: {},
   };
 
-  for (const { name, content, pages } of entries) {
-    const el: any = (out.entries[name] = {
-      name: name,
-    });
+  for (const { name, content, pages, _id } of entries) {
+    try {
+      const el: any = (out.entries[name] = {
+        name: name,
+      });
 
-    if (content) {
-      el.description = resolveDescription(content, allPacksMap);
-    }
-    if (pages) {
-      el.pages = Object.fromEntries(
-        pages
-          .filter((p) => p.type === "text")
-          .map((p) => [
-            p.name,
-            {
-              name: p.name,
-              text: resolveDescription(p.text.content, allPacksMap),
-            },
-          ]),
-      );
+      if (content) {
+        el.description = resolveDescription(content, allPacksMap);
+      }
+      if (pages) {
+        el.pages = Object.fromEntries(
+          pages
+            .filter((p) => p.type === "text" && p.text?.content)
+            .map((p) => [
+              p.name,
+              {
+                name: p.name,
+                text: resolveDescription(p.text.content, allPacksMap),
+              },
+            ]),
+        );
+      }
+    } catch (e) {
+      console.warn(`while parsing ${_id}`);
+      throw e;
     }
   }
 
   const outData = JSON.stringify(out, orderKeysReplacer, 2);
-  await writeFile(join("lang/compendium", id + ".json"), outData);
+  await writeFile(
+    join("lang/compendium" + compendiumSuffix, id + ".json"),
+    outData,
+  );
 }
 
 const itemTypes = [
@@ -310,6 +334,7 @@ async function handleActor(
   label: string,
   entries: EntryActor[],
   allPacksMap: Map<string, PackData>,
+  compendiumSuffix: string,
 ) {
   const out: Compendium = {
     label,
@@ -453,7 +478,10 @@ async function handleActor(
   }
 
   const outData = JSON.stringify(out, orderKeysReplacer, 2);
-  await writeFile(join("lang/compendium", id + ".json"), outData);
+  await writeFile(
+    join("lang/compendium" + compendiumSuffix, id + ".json"),
+    outData,
+  );
 }
 
 type PackData = Awaited<ReturnType<typeof readSystemFiles>>[0][number];
@@ -488,7 +516,12 @@ export function findItemInCompendium(
     return [matchingItem, pack, "matching"];
   }
   if (attackType.includes(item.type)) {
-    const equipItem = findByName(item.name, allPacksMap.get("equipment-srd")!);
+    const equipItem = findByName(
+      item.name,
+      allPacksMap.get("equipment-srd") ??
+        allPacksMap.get("equipment") ??
+        new Map(),
+    );
     if (equipItem) {
       return [equipItem, `pf2e.equipment-srd.Item.${equipItem._id}`, "equip"];
     }
@@ -584,19 +617,36 @@ interface LangFile {
   [id: string]: string | LangFile;
 }
 
-export async function commandUpdate(systemDir = "../system") {
-  await setupOut();
-  const manifest = await readManifest(path.join(systemDir, "system.pf2e.json"));
-  const [allPacks, allLangs] = await readSystemFiles(systemDir, manifest);
+async function updateSystem(
+  systemDir: string,
+  manifestFileName: string,
+  assetsPrefix: string,
+  compendiumSuffix: string,
+) {
+  const manifest = await readManifest(path.join(systemDir, manifestFileName));
 
-  let langData: LangFile = _.merge({}, ...allLangs);
-  langData = _.cloneDeepWith(langData, (v: string | LangFile) => {
-    if (typeof v === "string") {
-      return v.replace(/<(br|hr)>/g, "<$1 />");
-    }
-  });
+  let [allPacks, allLangs] = await readSystemFiles(
+    systemDir,
+    manifest.packs,
+    manifest.languages,
+    assetsPrefix,
+  );
 
-  await writeFile("lang/en.json", JSON.stringify(langData, null, 2));
+  if (manifestFileName.includes(".sf2e.")) {
+    await writeLangFile(
+      "en-sf2e-overrides.json",
+      allLangs
+        .filter(([path]) => path.includes("sf2e"))
+        .map(([_, data]) => data),
+    );
+  } else {
+    await writeLangFile(
+      "en.json",
+      allLangs
+        .filter(([path]) => !path.includes("sf2e"))
+        .map(([_, data]) => data),
+    );
+  }
 
   const allPacksMap = new Map<string, PackData>(
     allPacks.map((p) => [p.name, p]),
@@ -610,6 +660,7 @@ export async function commandUpdate(systemDir = "../system") {
           pack.label,
           pack.entries as EntryActor[],
           allPacksMap,
+          compendiumSuffix,
         );
       } else if (pack.type === "Item") {
         await handleItem(
@@ -617,6 +668,7 @@ export async function commandUpdate(systemDir = "../system") {
           pack.label,
           pack.entries as EntryItem[],
           allPacksMap,
+          compendiumSuffix,
         );
       } else if (pack.type === "JournalEntry") {
         await handleJournalEntry(
@@ -624,6 +676,7 @@ export async function commandUpdate(systemDir = "../system") {
           pack.label,
           pack.entries as EntryJournalEntry[],
           allPacksMap,
+          compendiumSuffix,
         );
       } else if (pack.type === "RollTable") {
         await handleRollTable(
@@ -631,6 +684,7 @@ export async function commandUpdate(systemDir = "../system") {
           pack.label,
           pack.entries as EntryRollTable[],
           allPacksMap,
+          compendiumSuffix,
         );
       } else if (pack.type === "Macro") {
         await handleMacro(
@@ -638,6 +692,7 @@ export async function commandUpdate(systemDir = "../system") {
           pack.label,
           pack.entries as EntryMacro[],
           allPacksMap,
+          compendiumSuffix,
         );
       } else {
         throw new Error(`not implemented: ${pack.type}`);
@@ -647,7 +702,24 @@ export async function commandUpdate(systemDir = "../system") {
       throw e;
     }
   }
-  // console.log([...foundCompendiumAssociations.values()].sort().join("\n"));
+}
+
+export async function commandUpdate(systemDir = "../system") {
+  await setupOut();
+
+  await updateSystem(systemDir, "system.pf2e.json", "pf-", "");
+  await updateSystem(systemDir, "system.sf2e.json", "sf-", "-sf");
+}
+
+async function writeLangFile(name: string, langs: any[]) {
+  let langData: LangFile = _.merge({}, ...langs);
+  langData = _.cloneDeepWith(langData, (v: string | LangFile) => {
+    if (typeof v === "string") {
+      return v.replace(/<(br|hr)>/g, "<$1 />");
+    }
+  });
+
+  await writeFile(join("lang", name), JSON.stringify(langData, null, 2));
 }
 
 function orderKeysReplacer(key: string, value: any) {

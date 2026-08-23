@@ -5,7 +5,7 @@ import { join } from "path/posix";
 import { Entry, FoundrySystemManifest } from "./foundry-types";
 
 export async function readManifest(
-  path: string
+  path: string,
 ): Promise<FoundrySystemManifest> {
   const data = await readFile(path, "utf-8");
   return JSON.parse(data);
@@ -30,26 +30,32 @@ export async function readJsonStreamFile<T>(path: string) {
 
 export async function readSystemFiles(
   basePath: string,
-  manifest: FoundrySystemManifest
+  packs: FoundrySystemManifest["packs"],
+  languages: FoundrySystemManifest["languages"],
+  assetsPrefix = "",
 ) {
   return [
     await Promise.all(
-      manifest.packs.map(async (pack) => {
-        const path = join(basePath, "json-assets", pack.path + ".json");
+      packs.map(async (pack) => {
+        const path = join(
+          basePath,
+          "json-assets",
+          `${assetsPrefix}${pack.path}.json`,
+        );
         const entries = JSON.parse(await readFile(path, "utf-8")) as Entry[];
         return { ...pack, entries } as const;
-      })
+      }),
     ),
     (
       await Promise.all(
-        manifest.languages.map(async (lang) => {
+        languages.map(async (lang) => {
           if (lang.lang !== "en") {
             return null;
           }
           const path = join(basePath, "static", lang.path);
           const file = await readFile(path, "utf-8");
-          return JSON.parse(file);
-        })
+          return [lang.path, JSON.parse(file)] as const;
+        }),
       )
     ).filter((x): x is Exclude<typeof x, null> => !!x),
   ] as const;
