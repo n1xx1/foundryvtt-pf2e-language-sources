@@ -64,14 +64,14 @@
       "npcAc": "19 when broken"
     },
     "Animated Cookware Swarm": {
-      "description": "<p>Nobles are known to pay great amounts to animate their silverware, both for ease in cleaning and to serve as novelties during dinner parties.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
+      "description": "<p>Nobles are known to pay great amounts to animate their silverware, both for ease in cleaning and to serve as novelties during dinner parties.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangerous when left uncontrolled.</p>",
       "items": {
         "3BpK7a2mX5UCDLmB": {
-          "description": "<p>The animated cookware swarm attempts to pin a single creature.</p>\n<p>The target must attempt a @Check[reflex|dc:17] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Cookware pins portions of the target's clothing and gear. The target takes a –10-foot circumstance penalty to its Speeds as long as it remains in the swarm's space.</p>\n<p><strong>Failure</strong> As success, and the target also can't Step until it leaves the swarm's space.</p>\n<p><strong>Critical Failure</strong> The target is thoroughly pinned by the Cookware, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it [[/act escape dc=17]]{Escapes} or uses 2 Interact actions to remove all of the cookware pinning them down.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.K3r1lfbtCTf3dFhV]{Effect: Stick a Fork in It}</p>",
+          "description": "<p>The animated cookware swarm attempts to pin a single creature.</p>\n<p>The target must attempt a @Check[reflex|dc:17|options:inflicts:immobilized] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Cookware pins portions of the target's clothing and gear. The target takes a –10-foot circumstance penalty to its Speeds as long as it remains in the swarm's space.</p>\n<p><strong>Failure</strong> As success, and the target also can't Step until it leaves the swarm's space.</p>\n<p><strong>Critical Failure</strong> The target is thoroughly pinned by the cookware, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it [[/act escape dc=17]]{Escapes} or uses 2 Interact actions to remove all of the cookware pinning them down.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.K3r1lfbtCTf3dFhV]{Effect: Stick a Fork in It}</p>",
           "name": "Stick a Fork in It"
         },
         "GpYSF4Qy9tOtd9Z4": {
-          "description": "<p>Each enemy in the animated cookware swarm's space takes 1d6 points of @Damage[1d6[bludgeoning]]{bludgeoning} or @Damage[1d6[slashing]]{slashing} damage (@Check[reflex|dc:17|basic] save).</p>",
+          "description": "<p>Each enemy in the animated cookware swarm's space takes @Damage[1d6[untyped]|shortLabel|options:area-damage] bludgeoning or slashing damage (@Check[reflex|dc:17|basic|options:area-effect] save).</p>",
           "name": "Slice and Pound"
         },
         "VB7Ak1txQ1RPwHwJ": {
@@ -493,7 +493,7 @@
           "name": "Talon"
         },
         "mx7M2JUGpqZUL4LJ": {
-          "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The heart-eating vulture vomits up its last meal on a creature within 10 feet. The creature takes @Damage[3d6[acid]] damage (@Check[fortitude|dc:20|basic]). On a failed save, the target is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}</p>",
+          "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The heart-eating vulture vomits up its last meal on a creature within 10 feet. The creature takes @Damage[3d6[acid]] damage (@Check[fortitude|dc:20|basic|options:inflicts:sickened]). On a failed save, the target is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}</p>",
           "name": "Projectile Vomit"
         },
         "ohHcoAMXMCHN6Scv": {
@@ -715,7 +715,7 @@
       "description": "<p>An imprecasia, commonly known as a curse eater, is a solitary fey drawn to the energy emanating from curses. They appear as emaciated humanoid creatures with shadowy wings, long thin hands with sharp claws, and insectile heads with feathery antenna.</p>\n<p>An imprecasia's appearance in a region signifies the land is troubled, but they're not unpopular creatures. On the contrary, an imprecasia's whereabouts are coveted information, as they have the ability to fully consume curses on objects and creatures. Many carrying the weight of a curse seek out curse eaters, most of whom will gladly accept doomed objects or charitably destroy an individual's curse.</p>\n<p>An imprecasia will never accept the idea of healing a cursed land or blighted region. One might even seek to strengthen the afflictions on a region simply to ensure a regular supply of food. A bolder imprecasia tracks cursed families over generations, feeding off their misfortune until the curse ends or the bloodline dies off. Any who attempt to destroy such curses may find themselves the enemy of an imprecasia defending their source of sustenance.</p>",
       "items": {
         "DR7UE14ebq0R637D": {
-          "description": "<p><strong>Trigger</strong> A creature within 30 feet of the imprecasia is dying</p><hr /><p><strong>Effect</strong> The imprecasia inhales, drawing a thin blue streak of vapor out of the dying creature's body into their mouth. The dying creature's dying condition is reduced by 1, and the imprecasia regains 2d10+9 Hit Points.</p>",
+          "description": "<p><strong>Trigger</strong> A creature within 30 feet of the imprecasia is dying</p><hr /><p><strong>Effect</strong> The imprecasia inhales, drawing a thin blue streak of vapor out of the dying creature's body into their mouth. The dying creature's dying condition is reduced by 1, and the imprecasia regains @Damage[(2d10+9)[healing]] Hit Points.</p>",
           "name": "Drink Death"
         },
         "JeS0BofS5NJHyzk8": {
@@ -2129,11 +2129,11 @@
       "description": "<p>Most giant toads live in dry environments, particularly deserts, and eagerly eat almost any creature smaller than themselves. They're known to eat giant rats, then take over the rats' burrows as homes. Giant toads have large poison glands behind their eyes that enable them to coat their skin with poison. This leads to them having very few natural predators, and populations can quickly explode if left unchecked. While most consider giant toads dangerous pests, some groups of ogres and hill giants cultivate them to collect their poison for recreational use.</p>",
       "items": {
         "AhfsEZ9fBUS6e02P": {
-          "description": "<p>Any creature that hits the Warty with an unarmed Strike or otherwise touches the toad is exposed to giant toad poison.</p>",
+          "description": "<p>Any creature that hits Warty with an unarmed Strike or otherwise touches the toad is exposed to giant toad poison.</p>",
           "name": "Poisonous Warts"
         },
         "KQBI90QlI48BEPP3": {
-          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>",
+          "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:19|options:inflicts:stupefied,inflicts:confused]</p><hr /><p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> stupefied 1 and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>",
           "name": "Giant Toad Poison"
         },
         "Nz9xljPpg09kcxBl": {
@@ -2171,7 +2171,7 @@
           "name": "Papery Lignification"
         },
         "0UpmQH355AyNK2m4": {
-          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The Willowshore waldgeist causes thousands of sheets of paper to fly out of the ruins of Cloud Paper House to slice and cut flesh. All creatures in a @Template[type:burst|distance:20] within 90 feet of the Willowshore waldgeist take @Damage[8d6[slashing]] damage (@Check[reflex|dc:24|basic] save). A creature that critically fails this save becomes partially buried in mounds of paper sheets and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>",
+          "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The Willowshore waldgeist causes thousands of sheets of paper to fly out of the ruins of Cloud Paper House to slice and cut flesh. All creatures in a @Template[type:burst|distance:20] within 90 feet of the Willowshore waldgeist take @Damage[8d6[slashing]|options:area-damage] damage (@Check[reflex|dc:24|basic|options:area-effect,inflicts:slowed] save). A creature that critically fails this save becomes partially buried in mounds of paper sheets and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>",
           "name": "Storm of Paper"
         },
         "8xcNy9boSTsGGIIr": {
