@@ -166,9 +166,9 @@
             "name": "Foraggiere"
         },
         "Automatic Knowledge": {
-            "description": "<p>Ricordi fatti basilari senza neanche pensarci. Scegli un’abilità in cui sei esperto, che abbia l’azione Ricordare Conoscenze e per la quale possiedi il talento Garanzia. Una volta per round puoi utilizzare Ricordare Conoscenze come azione gratuita con quella determinata abilità; se lo fai, devi usare Garanzia sulla prova di abilità.</p>\n<hr />\n<p><strong>Speciale</strong> Puoi selezionare questo talento più volte. Ogni volta scegli una diversa abilità. Puoi utilizzare Conoscenza Spontanea con tutte le abilità designate, ma solo una volta per round.</p>>",
+            "description": "<p>Ricordi fatti basilari senza neanche pensarci. Scegli un’abilità in cui sei esperto, che abbia l’azione Ricordare Conoscenze e per la quale possiedi il talento Garanzia. Una volta per round, puoi usare Ricordare Conoscenze con quell’abilità come azione gratuita; se lo fai, devi usare Garanzia sulla prova di abilità.</p>\n<hr />\n<p><strong>Speciale</strong> Puoi selezionare questo talento più volte. Ogni volta scegli una diversa abilità. Puoi usare Conoscenza Spontanea con tutte le abilità che hai scelto, ma solo una volta per round.</p>>",
             "featPrerequisites": {
-                "0": "esperto in un'abilità con l'azione Ricordare Conoscenze",
+                "0": "esperto in un’abilità con l’azione Ricordare Conoscenze",
                 "1": "Garanzia in quella abilità"
             },
             "name": "Conoscenza Spontanea"
@@ -325,7 +325,8 @@
             "featPrerequisites": {
                 "0": "addestrato in Diplomazia"
             },
-            "name": "Cacciatore di Affari"
+            "name": "Cacciatore di Affari",
+            "description": "<p>Puoi @UUID[Compendium.sf2e.actions.Item.QyzlsLrqM0EEwd7j]{Guadagnare} usando Diplomazia, trascorrendo le tue giornate in cerca di occasioni da rivendere con profitto. Puoi anche spendere tempo a cercare un grande affare su un oggetto specifico; funziona come se stessi usando Guadagnare con Diplomazia, ma invece di ottenere denaro acquisti l’oggetto con uno sconto pari al denaro che avresti guadagnato, ottenendolo gratuitamente se il tuo guadagno è pari o superiore al suo costo. Infine, se selezioni Cacciatore di Affari durante la creazione del personaggio al 1 livello, inizi il gioco con 20 crediti aggiuntivi.</p>"
         },
         "Untrained Improvisation": {
             "description": "<p>Sai come gestire una situazione che non ti è familiare. Il tuo bonus di competenza nelle prove di abilità in cui sei senza addestramento è pari al tuo livello -2. Il bonus diventa il tuo livello -1 quando arrivi al 5° livello e al tuo livello quando arrivi al 7° livello. Questo non ti permette di svolgere le azioni con addestramento di quell’abilità.</p>",
@@ -689,7 +690,8 @@
             "featPrerequisites": {
                 "0": "addestrato in Medicina"
             },
-            "name": "Medicina di Combattimento"
+            "name": "Medicina di Combattimento",
+            "description": "<p><strong>Requisiti</strong> Stai tenendo o indossando un kit medico.</p><hr /><p>Grido di BattagliaPuoi medicare ferite anche sei nel bel mezzo di un combattimento. Effettui una prova di Medicina con la stessa CD di @UUID[Compendium.sf2e.actions.Item.1kGNdIIhuglAjIp9]{Curare Ferite} e curi lo stesso numero di Punti Ferita; ciò non rimuove la condizione ferito. Come per Curare Ferite, puoi effettuare una prova contro una CD più alta se hai il grado di competenza minimo. Il bersaglio diviene @UUID[Compendium.sf2e.feat-effects.Item.2XEYQNZTCGpdkyR6]{immune} tal tuo uso di Medicina di Combattimento per 1 giorno. Ciò non lo rende immune a Curare Ferite, né conta come Curare Ferite per qualsiasi altro fine.</p>"
         },
         "Practical Theologian": {
             "featPrerequisites": {
@@ -857,7 +859,8 @@
             "featPrerequisites": {
                 "0": "maestro in Intimidazione"
             },
-            "name": "Grido di Battaglia"
+            "name": "Grido di Battaglia",
+            "description": "<p>Quando tiri per l’iniziativa, puoi emettere un potente grido di battaglia e [[/act demoralize]] un nemico osservato come azione gratuita. Se sei leggendario in Intimidazione, puoi usare una reazione per @UUID[Compendium.sf2e.actions.Item.2u915NdUyQan6uKF]{Demoralizzare} il tuo avversario quando ottieni un successo critico in un tiro per colpire.</p>"
         },
         "Knowledge Bomb": {
             "featPrerequisites": {
@@ -1681,6 +1684,114 @@
         "Augmented Body": {
             "description": "<p>Installi un impianto con livello dell’oggetto pari o inferiore al tuo livello del personaggio. Questo impianto non conta ai fini del tuo limite totale di impianti. La prima volta che ottieni questo talento, l’impianto che ricevi è gratuito se il suo livello dell’oggetto è pari o inferiore a 1. Puoi migliorare questo impianto sostituendolo con un altro impianto quando sali di livello, oppure spendendo tempo in pausa per sostituirlo come se stessi cambiando un talento. Quando sostituisci l’impianto, devi pagare la differenza tra l’impianto originale e quello nuovo ogni volta che lo migliori.</p><hr /><p><strong>Speciale</strong> Puoi selezionare questo talento più volte, scegliendo ogni volta un impianto diverso. Riaddestrare questo talento richiede il pagamento del costo dell’impianto originale.</p>",
             "name": "Corpo Aumentato"
+        },
+        "Baleful Gaze": {
+            "description": "<p><strong>Frequenza</strong> una volta al minuto</p><hr /><p>Hai un’aura minacciosa che mette a disagio i vivi, e hai imparato a sfruttarla per spaventare i tuoi nemici con uno sguardo intenso. Concentri le tue intenzioni malvagie su una creatura vivente entro 9 metri. Il bersaglio deve superare un tiro salvezza su @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] contro la tua CD di classe o CD di incantesimo, a seconda di quale sia la più alta, o diventa @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Spaventato 1} (@UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Spaventato 2} in caso di fallimento critico) e @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Sbigottito 1} finché è spaventato. Dopo che hai usato Sguardo Funesto contro una creatura, questa è temporaneamente immune per 24 ore.</p>",
+            "name": "Sguardo Funesto"
+        },
+        "Baleful Presence": {
+            "description": "<p>Hai imparato a scatenare la rabbia e la malvagità che hai accumulato nel corso della tua vita e della tua inquieta non morte contro più nemici contemporaneamente, creando un potente effetto intorno a te. Puoi scegliere di usare Sguardo Funesto come attività da 2 azioni, anziché da 1. Quando lo fai, Sguardo Funesto ottiene il tratto divino, perde il tratto visivo e influenza ogni creatura vivente, anziché una sola, in @Template[type:emanation|distance:30].</p>",
+            "featPrerequisites": {
+                "0": "Sguardo Funesto"
+            },
+            "name": "Presenza Funesta"
+        },
+        "Barathu Lore": {
+            "description": "<p>Fin dai tuoi primi anni di vita hai imparato i costumi dei tuoi simili, cercando al contempo di ampliare la tua mente nel campo della creazione. Ottieni il grado di competenza addestrato in Artigianato e Medicina. Se diventi automaticamente addestrato in una di queste abilità (per esempio grazie al tuo background o alla tua classe), diventi invece addestrato in un’abilità a tua scelta.</p>\n<p>Ottieni anche il talento generico @UUID[Compendium.sf2e.feats.Item.BocFD2KV0qgUC76x]{Sapienza Aggiuntiva} sui Barathu.</p>",
+            "name": "Sapienza Barathu"
+        },
+        "Barricade": {
+            "description": "<p>Crei in fretta una barricata usando oggetti a portata di mano, rottami o detriti. La barricata fornisce copertura inferiore a te e a un altro alleato, ma puoi @UUID[Compendium.sf2e.actions.Item.ust1jJSCZQUhBZIz]{Andare in Copertura} per aumentare questo beneficio a copertura standard. La barricata è fragile e crolla alla fine del tuo prossimo turno.</p>",
+            "name": "Barricata"
+        },
+        "Basic Distortion": {
+            "description": "<p>tuoi poteri distorsivi crescono. Ottieni un talento da stregone del velo di 1° o 2° livello.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione dello Stregone del Velo"
+            },
+            "name": "Distorsione Base"
+        },
+        "Basic Epiphany": {
+            "description": "<p>Apprendi l’incantesimo dell’epifania iniziale della tua connessione. Se non la hai già, ottieni una riserva di focalizzazione con 1 Punto Focalizzazione; puoi Rifocalizzarti riflettendo sulla natura della tua connessione.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione del Mistico"
+            },
+            "name": "Epifania Base"
+        },
+        "Basic Gunner": {
+            "description": "<p>Ottieni un talento da operativo di 1° o 2° livello.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione dell’Operativo"
+            },
+            "name": "Artigliere Base"
+        },
+        "Basic Insectile Flight": {
+            "description": "</p><p>Alcuni shirren nascono con le ali, mentre altri le sviluppano in seguito. Sviluppi un paio di ali da insetto che ti concedono Velocità di volare 6 metri. Inoltre, quando cadi, non subisci danni da caduta.</p><hr /><p><strong>Speciale</strong> Se sei uno shirren alato, ti cresce un secondo paio di ali oppure quelle che hai già diventano più forti, aumentando la tua Velocità di volare a 7,5 metri.</p>",
+            "name": "Volo Insettoide Base"
+        },
+        "Basic Leadership": {
+            "description": "<p>Ottieni un talento da emissario di 1° o 2° livello a tua scelta.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione dell’Emissario"
+            },
+            "name": "Comando Base"
+        },
+        "Basic Mystic Spellcasting": {
+            "description": "<p>Ottieni i benefici da @UUID[Compendium.sf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.DOc3Pf8wmVxanTIv#basic-spellcasting-feat]{Incantatore Novizio} Ogni volta che ottieni uno slot incantesimo di un nuovo grado dall’archetipo del mistico, aggiungi un incantesimo di grado appropriato al tuo repertorio degli incantesimi: un incantesimo comune della tradizione associata alla tua connessione, oppure un incantesimo concesso dalla tua connessione.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione del Mistico"
+            },
+            "name": "Novizio di Incantesimi da Mistico"
+        },
+        "Basic Mysticism": {
+            "description": "<p>Ottieni un talento da mistico di 1° o 2° livello.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione del Mistico"
+            },
+            "name": "Misticismo Base"
+        },
+        "Basic Quantum Field": {
+            "description": "<p>Il tuo campo quantico ottiene l’effetto del paradosso che hai scelto.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione dello Stregone del Velo"
+            },
+            "name": "Campo Quantico Base"
+        },
+        "Basic Soldier Training": {
+            "description": "<p>Ottieni un talento da soldato di 1° o 2° livello.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione del Soldato"
+            },
+            "name": "Addestramento del Soldato Base"
+        },
+        "Basic Stellar Attunement": {
+            "description": "<p>Ottieni un talento da solarian di 1° o 2° livello.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione del Solarian"
+            },
+            "name": "Armonizzazione Stellare Base"
+        },
+        "Basic Warp Spell": {
+            "description": "<p>Apprendi l’incantesimo del velo iniziale concesso dal tuo paradosso. Se non la hai già, ottieni una riserva di focalizzazione con 1 Punto Focalizzazione; puoi Rifocalizzarti contemplando infiniti mondi (per saperne di più sugli incantesimi del velo, vedi pag. 165).</p>",
+            "featPrerequisites": {
+                "0": "Dedizione dello Stregone del Velo"
+            },
+            "name": "Incantesimo del Velo Base"
+        },
+        "Basic Witchwarper Spellcasting": {
+            "description": "<p>Ottieni i benefici da @UUID[Compendium.sf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.DOc3Pf8wmVxanTIv#basic-spellcasting-feat]{Incantatore Novizio}. Ogni volta che ottieni uno slot incantesimo di un nuovo grado dall’archetipo dello stregone del velo, aggiungi un incantesimo di grado appropriato al tuo repertorio degli incantesimi: un incantesimo comune della tradizione associata al tuo paradosso, oppure un incantesimo concesso dal tuo paradosso.</p>",
+            "featPrerequisites": {
+                "0": "Dedizione dello Stregone del Velo"
+            },
+            "name": "Novizio di Incantesimi da Stregone del Velo"
+        },
+        "Battle Saint": {
+            "description": "<p>Sei asceso al rango di santo delle battaglie vivente e sei sulla strada per diventare un vero servitore divino di Damoritosh, quando lo incontrerai nell’aldilà. Puoi lanciare @UUID[Compendium.sf2e.spells.Item.BHWG0rQPTgBF5Ye1]{Partenza a Razzo} e @UUID[Compendium.sf2e.spells.Item.o6YCGx4lycsYpww4]{Velocità} come incantesimi innati divini di 7° grado, una volta al giorno ciascuno.</p>",
+            "name": "Santo delle Battaglie"
+        },
+        "Battleblessed": {
+            "description": "<p>Sei un abile guerriero e danzatore da combattimento, benedetto dai veggenti, temprato dalle tradizioni ancestrali e capace di imprese che vanno oltre le capacità naturali dei tuoi simili. Ottieni @UUID[Compendium.sf2e.spells.Item.KcLVELhCUcKXxiKE]{Vento in Poppa} come incantesimo innato primevo di 1° grado che puoi lanciare una volta al giorno.</p>",
+            "name": "Benedetto dalla Battaglia"
         }
     },
     "label": "Talenti"
