@@ -815,8 +815,9 @@
         "Big Mouth": {
             "name": "Bocca Larga",
             "featPrerequisites": {
-                "0": "Guancegonfie"
-            }
+                "0": "Tasche Guanciali"
+            },
+            "description": "<p>Le tue tasche guanciali sono particolarmente grandi ed elastiche: anziché un massimo di quattro oggetti di Volume leggero, puoi riporvi oggetti fino a un massimo di 1 Volume. La dimensione massima di un determinato oggetto rimane invariata.</p>"
         },
         "Weapon Proficiency": {
             "description": "<p>Divieni addestrato in tutte le armi da guerra. Se sei già addestrato in tutte le armi da guerra, divieni addestrato in un’arma avanzata a tua scelta. Se sei di almeno 11° livello, diventi anche esperto in queste armi.</p>\n<hr />\n<p><strong>Speciale</strong> Puoi selezionare questo talento più volte. Ogni volta diventi addestrato in un’arma avanzata.</p>",
@@ -831,7 +832,7 @@
             }
         },
         "Bizarre Magic": {
-            "description": "<p>Puoi introdurre bizzarre variazioni nei tuoi incantesimi, anche se non lanci incantesimi occulti. La CD per Riconoscere i tuoi Incantesimi e Identificare la tua Magia aumenta di 5.</p>",
+            "description": "<p>Puoi introdurre bizzarre variazioni nei tuoi incantesimi, che siano o meno occulti. La CD per Riconoscere gli Incantesimi che lanci e Identificare la tua Magia aumenta di 5.</p>",
             "featPrerequisites": {
                 "0": "maestro in Occultismo"
             },
@@ -1184,7 +1185,9 @@
         "Blend In": {
             "featPrerequisites": {
                 "0": "addestrato in Società"
-            }
+            },
+            "description": "<p>Sai mimetizzarti e diventare un volto dimenticabile nella folla. Quando ti trovi in una folla di almeno 10 altre creature, puoi effettuare una prova di Società anziché una di Furtività quando usi l’attività di esplorazione @UUID[Compendium.sf2e.actions.Item.IE2nThCmoyhQA0Jn]{Evitare l’Individuazione} per determinare se i nemici ti notano. Quando ti trovi in un insediamento, puoi usare [[/act impersonate skill=society]]{Società} al posto di Inganno per Impersonare un individuo non specifico.</p>",
+            "name": "Confondersi tra la Folla"
         },
         "From Hope": {
             "featPrerequisites": {
@@ -1792,6 +1795,42 @@
         "Battleblessed": {
             "description": "<p>Sei un abile guerriero e danzatore da combattimento, benedetto dai veggenti, temprato dalle tradizioni ancestrali e capace di imprese che vanno oltre le capacità naturali dei tuoi simili. Ottieni @UUID[Compendium.sf2e.spells.Item.KcLVELhCUcKXxiKE]{Vento in Poppa} come incantesimo innato primevo di 1° grado che puoi lanciare una volta al giorno.</p>",
             "name": "Benedetto dalla Battaglia"
+        },
+        "Big Bang": {
+            "description": "<p><strong>Frequenza</strong> una volta all’ora</p>\n<p><strong>Requisiti</strong> Sei armonizzato con i fotoni.</p><hr /><p>Manifesti un frammento delle forze cosmiche dei primi istanti dell’Universo, scatenando un’esplosione di fuoco cosmico purificatore che riduce ogni cosa ai suoi componenti fondamentali, oltrepassando persino le difese magiche. Infligge @Damage[(max((@actor.level - 4),10))d6[fire]|options:area-damage] a tutte le creature in un’@Template[type:emanation|distance:30]. Tu e un numero qualsiasi di alleati adiacenti non siete influenzati da questo Big Bang. Le creature influenzate possono tentare un tiro salvezza @Check[reflex|against:solarian|options:area-effect] contro la tua CD di classe.</p><hr /><p><strong>Successo Critico</strong> La creatura non è influenzata.</p>\n<p><strong>Successo</strong> La creatura subisce la metà dei danni.</p>\n<p><strong>Fallimento</strong> La creatura subisce i danni per intero @Damage[2d6[persistent,fire]|options:photon-attuned] danni.</p>\n<p><strong>Fallimento Critico</strong> La creatura subisce il doppio dei danni e @Damage[4d6[persistent,fire]|options:photon-attuned] danni. Puoi inoltre tentare di contrastare un incantesimo che la influenza, usando metà del tuo livello (arrotondata per eccesso) come grado di contrasto.</p><hr /><p><strong>Livello (+1)</strong> Aumenta i danni di 1d6.</p>",
+            "name": "Big Bang"
+        },
+        "Binaric Assault": {
+            "description": "<p>Coordini i tuoi attacchi con il brillamento solare e l’arma solare. Sferri due Colpi contro lo stesso bersaglio, uno con l’arma solare e l’altro con il brillamento solare; entrambi usano la tua attuale penalità da attacchi multipli. Puoi sferrare questi Colpi nell’ordine che preferisci. Dopo aver risolto danni ed effetti del primo Colpo che è andato a segno tra questi, cambia la tua armonizzazione attuale. Se entrambi gli attacchi mancano il bersaglio, diventi non armonizzato. L’Assalto Binario conta come due attacchi al fine di calcolare la tua penalità da attacchi multipli.</p>",
+            "name": "Assalto Binario"
+        },
+        "Black Hole": {
+            "description": "<p><strong>Frequenza</strong> una volta ogni 10 minuti</p>\n<p><strong>Requisiti</strong> Sei armonizzato con i gravitoni.</p><hr /><p>Ti concentri sulle forze gravitazionali che ti circondano, attirando la materia verso di te come un buco nero. Scegli un numero qualsiasi di creature entro 9 metri. Ogni creatura influenzata subisce @Damage[(floor(@actor.level / 2)d8)[bludgeoning]|options:area-damage,forced-movement] danni contundenti e deve effettuare un tiro salvezza su @Check[fortitude|against:solarian] contro la tua CD di classe.</p><hr /><p><strong>Successo Critico</strong> La creatura non è influenzata.</p>\n<p><strong>Successo</strong> La creatura subisce la metà dei danni e viene trascinata di 1,5 metri verso di te.</p>\n<p><strong>Fallimento</strong> La creatura subisce i danni per intero, viene trascinata di 4,5 metri verso di te ed è @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Impreparata} contro il prossimo attacco in mischia che sferri contro di lei prima della fine del tuo turno corrente.</p>\n<p><strong>Fallimento Critico</strong> La creatura subisce il doppio dei danni, viene trascinata di 9 metri verso di te e cade @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prona}.</p><hr /><p><strong>Levello (+2)</strong> Aumenta i danni di 1d8.</p>",
+            "name": "Buco Nero"
+        },
+        "Blood Sense": {
+            "description": "<p>Hai un olfatto sviluppato e riesci a individuare ferite sanguinanti anche da lontano. Ottieni percezione del sangue come senso impreciso con gittata 9 metri. Ciò significa che puoi usare il tuo senso dell’olfatto per stabilire l’esatta posizione di una creatura vivente che non sia al massimo dei suoi Punti Ferita. Le creature prive di sangue, come le melme e la maggior parte dei costrutti, non possono essere individuate con la tua percezione del sangue.</p>",
+            "name": "Percezione del Sangue"
+        },
+        "Bloody Wounds": {
+            "description": "<p>Sai come colpire i punti vitali della tua preda per lasciare ferite sanguinanti. Quando metti a segno un colpo critico contro la tua preda, le infliggi danni da sanguinamento persistenti pari al numero di dadi di danno di @UUID[Compendium.sf2e.actions.Item.sLikawnrJJzHMYeC]{Prendere la Mira}.</p>",
+            "name": "Ferite Sanguinanti"
+        },
+        "Bolstered By Battle": {
+            "description": "<p><strong>Frequenza</strong> una volta all’ora</p>\n<p><strong>Innesco</strong> Infliggi il colpo di grazia a un nemico.</p><hr /><p>Non combatti perché sei costretto a farlo, ma perché i pericoli della battaglia e l’ebbrezza della vittoria ti danno nuova energia. Ottieni un numero di Punti Ferita temporanei pari al tuo livello. Tali Punti Ferita temporanei durano per 1 minuto o fino alla fine dell’incontro, a seconda di quale delle due cose avvenga prima.</p>",
+            "name": "Rafforzato dalla Battaglia"
+        },
+        "Bond Boost": {
+            "description": "<p><strong>Innesco</strong> Un alleato entro 6 metri nel tuo legame sta per effettuare un tiro salvezza.</p><hr /><p>Richiamando il potere del tuo legame, fai fluire un’ondata di energia che protegge il corpo e la mente del tuo alleato. Il tuo alleato ottiene bonus di status +1 al tiro salvezza innescante. Se ottiene un successo in un tiro salvezza contro un effetto di vitalità o di vuoto, lo considera un successo critico.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.9Sq4P1Pxr1owEv6R]{Effetto: Potenziare Legame}</p>",
+            "name": "Potenziare Legame"
+        },
+        "Bond Spell": {
+            "description": "<p><strong>Innesco</strong> Un alleato entro 9 metri Lancia un Incantesimo.</p><hr /><p>Fai confluire energia nel tuo legame mentre un alleato lancia un incantesimo, potenziandolo in uno dei modi seguenti.p><ul><li><p>Se l’incantesimo infligge danni o ripristina Punti Ferita e non ha una durata, gli conferisci bonus di status ai danni o alla guarigione pari al suo grado.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.WNCJ8ZgkqU7LhJNk]{Effetto: Incantesimo del Legame}</p></li><li><p>Se l’incantesimo non ha già un effetto magimorfico applicato, puoi concedergli gli effetti di uno dei tuoi talenti magimorfici, purché sia applicabile all’incantesimo innescante e tu sia in grado di utilizzarlo (per esempio, se è soggetto a un numero limitato di utilizzi giornalieri).</p></li></ul>",
+            "name": "Incantesimo del Legame"
+        },
+        "Borai Lore": {
+            "description": "<p>Dopo la tua resurrezione hai imparato molto su te stesso, sul tuo ruolo nel ciclo delle anime e sugli altri non morti. Ottieni il grado di competenza addestrato in Intimidazione e Religione. Se diventi automaticamente addestrato in una di queste abilità (per esempio grazie al tuo background o alla tua classe), diventi invece addestrato in un’abilità a tua scelta.</p>\n<p>Ottieni anche il talento generico @UUID[Compendium.sf2e.feats.Item.BocFD2KV0qgUC76x]{Sapienza Aggiuntiva} per Sapienza sui Borai.</p>",
+            "name": "Sapienza Borai"
         }
     },
     "label": "Talenti"
