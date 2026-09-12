@@ -318,7 +318,7 @@
       "description": "<p>Hundreds of panicked whippoorwills swarm through the area.</p>",
       "hazardDisable": "<p>@Check[nature|dc:43] (master) to calm the birds, @Check[occultism|dc:45] (master) to alter your aura, or @Check[performance|dc:45] (master) to imitate the living</p>",
       "hazardReset": "<p>The trap deactivates and resets if 1 minute passes without any undead or creatures with void healing in the garden.</p>",
-      "hazardRoutine": "<p>(1 action) The birds swarm wildly through the garden, pecking and slashing at all undead creatures and creatures with void healing in the garden, dealing @Damage[(3d10+20)[slashing]] damage and @Damage[1d10[bleed]] damage (@Check[reflex|dc:44|basic]).</p>",
+      "hazardRoutine": "<p>(1 action) The birds swarm wildly through the garden, pecking and slashing at all undead creatures and creatures with void healing in the garden, dealing @Damage[(3d10+20)[slashing],1d10[bleed]|options:area-damage] damage (@Check[reflex|dc:44|basic|options:area-effect]).</p>",
       "name": "Avian Rage"
     },
     "Azmakian Effigy": {
@@ -3764,11 +3764,11 @@
           "name": "Construct Armor (Hardness 10)"
         },
         "MrDa1bcvphzw2x9Z": {
-          "description": "<p>Shifting shadows cover the statue. If the statue is dealt at least @Damage[15[vitality]] damage or brought within an area of magical light, the shadows recede, and the statue can't make darkness mote attacks or use Clinging Gloom.</p>",
+          "description": "<p>Shifting shadows cover the statue. If the statue is dealt at least 15 vitality damage or brought within an area of magical light, the shadows recede, and the statue can't make darkness mote attacks or use Clinging Gloom.</p>",
           "name": "Cowl of Shadow"
         },
         "YoC3A5KlKj0hBnrB": {
-          "description": "<p>The statue pulls a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} into its grasping shadows. The target takes @Damage[3d8[void]] damage and @Damage[1d8[persistent,void]] damage.</p>",
+          "description": "<p>The statue pulls a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} into its grasping shadows. The target takes @Damage[(3d8-2)[void],1d8[persistent,void]] damage.</p>",
           "name": "Clinging Gloom"
         },
         "ZtVK4wU2SnZ0H3zl": {
