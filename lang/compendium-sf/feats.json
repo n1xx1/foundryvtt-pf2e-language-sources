@@ -374,7 +374,7 @@
       "name": "Akashic Transcendence"
     },
     "Alarming Scream": {
-      "description": "<p>You release a loud shriek meant to draw attention or raise alarm. All enemies within 60 feet must attempt a @Check[will|against:class-spell] save against the higher of your class DC or spell DC. The targets are then temporarily immune to your Alarming Scream for 24 hours.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target becomes deafened for 1 minute and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>",
+      "description": "<p>You release a loud shriek meant to draw attention or raise alarm. All enemies within @Template[emanation|distance:60]{60 feet} must attempt a @Check[will|against:class-spell|options:area-effect,inflicts:deafened,inflicts:frightened] save against the higher of your class DC or spell DC. The targets are then temporarily immune to your Alarming Scream for 24 hours.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target becomes deafened for 1 minute and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>",
       "name": "Alarming Scream"
     },
     "All Hands on Deck": {
@@ -5669,7 +5669,7 @@
       "name": "Mediator"
     },
     "Medicinal Trinket": {
-      "description": "<p>Some trinkets are useful for medicinal purposes. You have found another trinket of light Bulk that can serve as a tool for certain traditional medicinal uses and can @UUID[Compendium.sf2e.actions.Item.qVNVSmsgpKFGk9hV]{Conceal an Object} of negligible Bulk inside of it. You can use your Medicinal Trinket as a medkit when you @UUID[Compendium.sf2e.actions.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. The first time each day you use the Medicinal Trinket to use @UUID[Compendium.sf2e.feats.Item.wYerMk6F1RZb0Fwt]{Battle Medicine} or Treat Wounds on yourself, you gain additional temporary Hit Points equal to your level that last for 1 hour, regardless of the result of the attempt.</p>",
+      "description": "<p>Some trinkets are useful for medicinal purposes. You have found another trinket of light Bulk that can serve as a tool for certain traditional medicinal uses and can @UUID[Compendium.sf2e.actions.Item.qVNVSmsgpKFGk9hV]{Conceal an Object} of negligible Bulk inside of it. You can use your Medicinal Trinket as a @UUID[Compendium.sf2e.equipment.Item.s1vB3HdXjMigYAnY]{medkit} when you @UUID[Compendium.sf2e.actions.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. The first time each day you use the Medicinal Trinket to use @UUID[Compendium.sf2e.feats.Item.wYerMk6F1RZb0Fwt]{Battle Medicine} or Treat Wounds on yourself, you gain additional temporary Hit Points equal to your level that last for 1 hour, regardless of the result of the attempt.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.xtEwtA0CRNU6O17Y]{Effect: Medicinal Trinket}</p>",
       "featPrerequisites": {
         "0": "Personal Trinket"
       },
@@ -6137,7 +6137,7 @@
       "name": "Newborn Incarnate"
     },
     "Nictitating Membrane": {
-      "description": "<p><strong>Requirements</strong> You are @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} with a duration of 1 minute or less.</p><hr /><p>You have a well-developed nictitating membrane, which you use to see underwater and clear out obstructions. If you are dazzled due to an effect other than Nictitating Membrane, reduce the flat check DC to target a creature with concealment caused by your dazzled condition from 5 to 3 until the end of your next turn. If you are blinded, attempt a @Check[flat|dc:10]. On a success, you remove the blinded condition and gain the dazzled condition instead for the same duration as the blinded condition. You cannot use this to remove a permanent blinded condition.</p>",
+      "description": "<p><strong>Requirements</strong> You are @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} with a duration of 1 minute or less.</p><hr /><p>You have a well-developed nictitating membrane, which you use to see underwater and clear out obstructions. If you are dazzled due to an effect other than Nictitating Membrane, reduce the flat check DC to target a creature with @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealment} caused by your dazzled condition from 5 to 3 until the end of your next turn. If you are blinded, attempt a @Check[flat|dc:10|showDC:all]. On a success, you remove the blinded condition and gain the dazzled condition instead for the same duration as the blinded condition. You cannot use this to remove a permanent blinded condition.</p>",
       "name": "Nictitating Membrane"
     },
     "Night Eyes": {
@@ -8850,7 +8850,7 @@
       "name": "Steady Descent"
     },
     "Steady Trinket": {
-      "description": "<p>One of your personal trinkets has seen you through a long illness, recovery from an injury, or days aboard a ship dealing with motion sickness. Holding on to the object fills you with memories of being treated with tender care. You suppress the sickened condition for 10 minutes.</p>",
+      "description": "<p>One of your personal trinkets has seen you through a long illness, recovery from an injury, or days aboard a ship dealing with motion sickness. Holding on to the object fills you with memories of being treated with tender care. You suppress the @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened} condition for 10 minutes.</p>",
       "featPrerequisites": {
         "0": "Personal Trinket"
       },
@@ -9269,7 +9269,7 @@
       "name": "Syncretic Epiphany"
     },
     "Synergistic Assistance": {
-      "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p>Brenneris often live and work in pairs to take advantage of different areas of expertise, inspired by the old adage that says two heads are always better than one. You stick close to your companions so you can help one another in a jam. You gain an extra reaction at the start of each of your turns that can only be used to Aid.</p>",
+      "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p>Brenneris often live and work in pairs to take advantage of different areas of expertise, inspired by the old adage that says two heads are always better than one. You stick close to your companions so you can help one another in a jam. You gain an extra reaction at the start of each of your turns that can only be used to @UUID[Compendium.sf2e.actions.Item.HCl3pzVefiv9ZKQW]{Aid}.</p>",
       "name": "Synergistic Assistance"
     },
     "Synthesize Vapor": {
@@ -9344,7 +9344,7 @@
       "name": "Take 'Em Alive!"
     },
     "Take Me Seriously": {
-      "description": "<p><strong>Trigger</strong> You fail at an attempt to [[/act demoralize]] a creature. You bare your teeth in aggression at your target.</p><hr /><p>It loses temporary immunity to your attempts to Demoralize it until the end of your next turn, and its attitude toward you decreases by one step. The creature then becomes immune to Take Me Seriously for 24 hours.</p>",
+      "description": "<p><strong>Trigger</strong> You fail at an attempt to [[/act demoralize]] a creature.</p><hr /><p>You bare your teeth in aggression at your target. It loses temporary immunity to your attempts to Demoralize it until the end of your next turn, and its attitude toward you decreases by one step. The creature then becomes immune to Take Me Seriously for 24 hours.</p>",
       "name": "Take Me Seriously"
     },
     "Take the Wheel": {
