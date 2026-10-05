@@ -68,7 +68,7 @@
       "name": "Above and Below"
     },
     "Absolute Empathy": {
-      "description": "<p>You find the feelings of your foe to better understand them. You attempt to [[/act feint skill=diplomacy]] against a creature. Unlike a normal Feint, use Diplomacy instead of Deception. You attempt your check against the creature's Will DC instead of its Perception DC.</p>",
+      "description": "<p>You find the feelings of your foe to better understand them. You attempt to @UUID[Compendium.sf2e.actions.Item.QNAVeNKtHA0EUw4X]{Feint} against a creature. Unlike a normal Feint, use Diplomacy ([[/act feint skill=diplomacy dc=will]]) instead of Deception. You attempt your check against the creature's Will DC instead of its Perception DC.</p>",
       "featPrerequisites": {
         "0": "trained in Diplomacy"
       },
@@ -2910,7 +2910,7 @@
       "name": "Empathetic Twitch"
     },
     "Empathic Conduit": {
-      "description": "<p>You sense others' baseline emotional states from afar. When you feint using Absolute Empathy, you can do so at a range of up to 60 feet, instead of just melee reach. If you succeed, the opponent is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against your melee and ranged attacks.</p>",
+      "description": "<p>You sense others' baseline emotional states from afar. When you @UUID[Compendium.sf2e.actions.Item.QNAVeNKtHA0EUw4X]{Feint} using @UUID[Compendium.sf2e.feats.Item.LyIiPEmiTCejLvQa]{Absolute Empathy}, you can do so at a range of up to 60 feet, instead of just melee reach. If you succeed, the opponent is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against your melee and ranged attacks.</p>",
       "featPrerequisites": {
         "0": "Absolute Empathy"
       },
@@ -3968,7 +3968,7 @@
       "name": "Grace of the Ages"
     },
     "Grand Soul!": {
-      "description": "<p>You've attuned your senses beyond their natural limits. Your emotionsense becomes a precise sense, and its range increases by 10 feet (this is cumulative with the @UUID[Compendium.sf2e.feats.Item.IjyfyYMloBQHEsjm]{Enhanced Senses} standardized ancestry feat). The range of your limited telepathy increases to the range of your emotionsense.</p>",
+      "description": "<p>You've attuned your senses beyond their natural limits. Your @UUID[Compendium.sf2e.ancestry-features.Item.TqFZu441oj9dqTuv]{Emotionsense} becomes a precise sense, and its range increases by 10 feet (this is cumulative with the @UUID[Compendium.sf2e.feats.Item.IjyfyYMloBQHEsjm]{Enhanced Senses} standardized ancestry feat). The range of your @UUID[Compendium.sf2e.ancestry-features.Item.N9EDgQPjWcSS6rSb]{Limited Telepathy} increases to the range of your emotionsense.</p>",
       "featPrerequisites": {
         "0": "Super Soul!"
       },
@@ -8563,7 +8563,7 @@
       "name": "Song of My People"
     },
     "Song of Whimsy": {
-      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>Your performances, vocal or otherwise, can tap into the same riotous primal energy as that of the First World, warping reality to the whimsy of your soul's emotional spectrum. Roll [[/r 1d20 #Song of Whimsy]] and consult the table below for your result. If the result's emotion doesn't match your current soulfeel, attune your soulfeel to that emotion. If the effect requires a saving throw, use the higher of your class DC or spell DC.</p><table border=\"1\" class=\"pf2e lost-omens\"><thead><tr style=\"text-align:center\"><th>d20</th><th>Emotion</th><th>Effect</th></tr></thead><tbody><tr><td>1–3</td><td>Fury</td><td>All enemies within 30 feet must attempt a Will save. If they fail, they become @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} for 3 rounds (or 1 minute on a critical failure), and their latent anger causes them to deal an additional @Damage[3d4[persistent,bleed]] damage with all Strikes against allies.</td></tr><tr><td>4–6</td><td>Joy</td><td>You and all allies within 30 feet reduce your frightened conditions by 1, end any persistent mental damage, and gain 25 temporary Hit Points that last until the end of your next turn.</td></tr><tr><td>7–9</td><td>Sorrow</td><td>All enemies within 30 feet become @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of your next turn and must attempt a Will save. If they fail, they become @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 3 rounds (or 1 minute on a critical failure).</td></tr><tr><td>10–12</td><td>Wonder</td><td>All enemies within 30 feet become @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of your next turn and must attempt a Will save. On a failure, they become @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 3 rounds (or 1 minute on a critical failure).</td></tr><tr><td>13+</td><td>Current soulfeel</td><td>Select the effect that corresponds to your current soulfeel attunement.</td></tr></tbody></table>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>Your performances, vocal or otherwise, can tap into the same riotous primal energy as that of the First World, warping reality to the whimsy of your soul's emotional spectrum. Roll [[/r 1d20 #Song of Whimsy]] and consult the table below for your result. If the result's emotion doesn't match your current soulfeel, attune your soulfeel to that emotion. If the effect requires a saving throw, use the higher of your class DC or spell DC.</p><table border=\"1\" class=\"pf2e lost-omens\"><thead><tr style=\"text-align:center\"><th>d20</th><th>Emotion</th><th>Effect</th></tr></thead><tbody><tr><td>1–3</td><td>Fury</td><td>All enemies within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|against:class-spell|options:area-effect,inflicts:confused] save. If they fail, they become @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} for 3 rounds (or 1 minute on a critical failure), and their latent anger causes them to deal an additional 3d4 persistent bleed damage with all Strikes against allies.</td></tr><tr><td>4–6</td><td>Joy</td><td>You and all allies within @Template[emanation|distance:30]{30 feet} reduce your @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened} conditions by 1, end any persistent mental damage, and gain 25 temporary Hit Points that last until the end of your next turn.</td></tr><tr><td>7–9</td><td>Sorrow</td><td>All enemies within @Template[emanation|distance:30]{30 feet} become @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of your next turn and must attempt a @Check[will|against:class-spell|options:area-effect,inflicts:slowed] save. If they fail, they become @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 3 rounds (or 1 minute on a critical failure).</td></tr><tr><td>10–12</td><td>Wonder</td><td>All enemies within @Template[emanation|distance:30]{30 feet} become @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of your next turn and must attempt a @Check[will|against:class-spell|options:area-effect,inflicts:stupefied] save. On a failure, they become @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 3 rounds (or 1 minute on a critical failure).</td></tr><tr><td>13+</td><td>Current soulfeel</td><td>Select the effect that corresponds to your current soulfeel attunement.</td></tr></tbody></table>",
       "name": "Song of Whimsy"
     },
     "Sonic Sync": {
@@ -9084,7 +9084,7 @@
       "name": "Super Sensilla"
     },
     "Super Soul!": {
-      "description": "<p>You've learned to open your mind to the wavelengths of those around you, beyond merely sensing their emotions. You gain limited telepathy. You can communicate mentally with creatures within 30 feet that share a language with you, and they can mentally respond. This doesn't give you any access to their thoughts and communicates no more information than normal speech would.</p>",
+      "description": "<p>You've learned to open your mind to the wavelengths of those around you, beyond merely sensing their emotions. You gain @UUID[Compendium.sf2e.ancestry-features.Item.N9EDgQPjWcSS6rSb]{Limited Telepathy}. You can communicate mentally with creatures within 30 feet that share a language with you, and they can mentally respond. This doesn't give you any access to their thoughts and communicates no more information than normal speech would.</p>",
       "name": "Super Soul!"
     },
     "Super Sticky": {
@@ -10033,7 +10033,7 @@
       "name": "Unquenchable Breath"
     },
     "Unrelenting Joy": {
-      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> You're @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened} or taking persistent mental damage.</p><hr /><p>Your outlook on life is full of boundless hope. Reduce your frightened condition by 1. If you're taking persistent mental damage, roll a @Check[flat|dc:15] to see if you recover from that persistent mental damage.</p><hr /><p><strong>Special</strong> The frequency of Unrelenting Joy is once per minute as long as your soulfeel is attuned to joy.</p>",
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> You're @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened} or taking persistent mental damage.</p><hr /><p>Your outlook on life is full of boundless hope. Reduce your frightened condition by 1. If you're taking persistent mental damage, roll a @Check[flat|dc:15|showDC:all] to see if you recover from that persistent mental damage.</p><hr /><p><strong>Special</strong> The frequency of Unrelenting Joy is once per minute as long as your soulfeel is attuned to joy.</p>",
       "name": "Unrelenting Joy"
     },
     "Unseen Tides": {
@@ -10481,7 +10481,7 @@
       "name": "Wild Bond"
     },
     "Wild Soulfeel": {
-      "description": "<p>You're as fickle as the inhabitants of the First World. When you use an action with both the emotion and moyishuu traits, you must immediately attune your soulfeel to a different emotion. If the action had a duration, it becomes until the end of your turn. You can attempt to keep the same emotional attunement by succeeding at a @Check[flat|dc:15], but if you fail, the frequency of the action becomes once per hour.</p>",
+      "description": "<p>You're as fickle as the inhabitants of the First World. When you use an action with both the emotion and moyishuu traits, you must immediately attune your soulfeel to a different emotion. If the action had a duration, it becomes until the end of your turn. You can attempt to keep the same emotional attunement by succeeding at a @Check[flat|dc:15|showDC:all], but if you fail, the frequency of the action becomes once per hour.</p>",
       "name": "Wild Soulfeel"
     },
     "Willful Defiance": {
