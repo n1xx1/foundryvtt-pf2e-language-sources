@@ -1006,7 +1006,7 @@
       "name": "Blend In"
     },
     "Blinding Awe": {
-      "description": "<p><strong>Trigger</strong> You're about to @UUID[Compendium.sf2e.actions.Item.2u915NdUyQan6uKF]{Demoralize} with the visual trait while you're in an area of bright light.</p><hr /><p>You focus your mantle's reflective properties to overwhelm not just your target's will but also its senses. Attempt your @Check[intimidation|against:reflex|options:action:demoralize,inflicts:dazzled|traits:visual] check against the target's Reflex DC instead of its Will DC. If you critically succeed, the target is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until it's no longer @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened}.</p>",
+      "description": "<p><strong>Trigger</strong> You're about to @UUID[Compendium.sf2e.actions.Item.2u915NdUyQan6uKF]{Demoralize} with the visual trait while you're in an area of bright light.</p><hr /><p>You focus your mantle's reflective properties to overwhelm not just your target's will but also its senses. Attempt your [[/act demoralize dc=reflex traits=visual]]{IntimidationЪ check against the target's Reflex DC instead of its Will DC. If you critically succeed, the target is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until it's no longer @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened}.</p>",
       "featPrerequisites": {
         "0": "expert in Intimidation",
         "1": "Brilliant Mien Ijtikri heritage"
@@ -1285,7 +1285,7 @@
       "name": "Buoy"
     },
     "Burn Up": {
-      "description": "<p>You vent copious amounts of thermal energy as you fly, burning anyone in your path. Whenever you use Shooting Star, you can choose to vent thermal energy. If you do, you deal @Damage[(ceil(@actor.level/2)-4)d6[fire]] damage to all creatures in the spaces you move through, with a @Check[reflex|against:class-spell|basic] save against the higher of your class DC or spell DC. On a critical failure, a creature additionally catches fire, taking @Damage[ternary(gte(@actor.level,17),2,1)d4[persistent,fire]] damage.</p>\n<p>At 15th level and every 2 levels thereafter, the fire damage increases by 1d6, and at 17th level, the persistent fire damage increases by 1d4.</p>",
+      "description": "<p>You vent copious amounts of thermal energy as you fly, burning anyone in your path. Whenever you use @UUID[Compendium.sf2e.feats.Item.OUyI2Z5wwLoqf9YA]{Shooting Star}, you can choose to vent thermal energy. If you do, you deal @Damage[(ceil(@actor.level/2)-4)d6[fire]|options:area-damage] damage to all creatures in the spaces you move through, with a @Check[reflex|against:class-spell|basic|options:area-effect] save against the higher of your class DC or spell DC. On a critical failure, a creature additionally catches fire, taking @Damage[ternary(gte(@actor.level,17),2,1)d4[persistent,fire]] damage.</p>\n<p>At 15th level and every 2 levels thereafter, the fire damage increases by 1d6, and at 17th level, the persistent fire damage increases by 1d4.</p>",
       "featPrerequisites": {
         "0": "Shooting Star"
       },
@@ -4124,7 +4124,7 @@
       "name": "Graviton Flight"
     },
     "Gravity Grasp": {
-      "description": "<p>You can seize and move objects from afar using your gravitational field, although your control is clumsy, and you can't perform actions with these objects. You grasp one unattended object of light Bulk or less within 30 feet and move it slowly 15 feet in any direction, up to a maximum distance of 30 feet away from you. You can Sustain Gravity Grasp for up to 1 minute, moving the object an additional 15 feet each time. If the object is in the air when this effect ends, it falls.</p><hr /><p><strong>Special</strong> If you're a black hole novian, dense novian, or massive novian, you can grasp one unattended object of 1 Bulk or less, rather than light Bulk or less.</p>",
+      "description": "<p>You can seize and move objects from afar using your gravitational field, although your control is clumsy, and you can't perform actions with these objects. You grasp one unattended object of light Bulk or less within 30 feet and move it slowly 15 feet in any direction, up to a maximum distance of 30 feet away from you. You can Sustain Gravity Grasp for up to 1 minute, moving the object an additional 15 feet each time. If the object is in the air when this effect ends, it falls.</p><hr /><p><strong>Special</strong> If you're a @UUID[Compendium.sf2e.heritages.Item.B6Of6VTr8l5oZS6U]{Black Hole Novian}, @UUID[Compendium.sf2e.heritages.Item.Lf0jLZUteBraHsFE]{Dense Novian}, or @UUID[Compendium.sf2e.heritages.Item.nvo8D4JLaIoE1ti7]{Massive Novian}, you can grasp one unattended object of 1 Bulk or less, rather than light Bulk or less.</p>",
       "name": "Gravity Grasp"
     },
     "Gravity Slam": {
@@ -4830,7 +4830,7 @@
       "name": "Infused Spell"
     },
     "Inheritor of Star's Glory": {
-      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You are the prime inheritor of your progenitor star's power and can don this star's lost legacy as a crown, growing in size and power, resplendent in glory. You become Small (or Medium, if you're a massive novian). Your equipment grows with you but returns to normal size if removed. You gain a +2 status bonus to melee damage and Intimidation checks, and the area of your solar luminance (and @UUID[Compendium.sf2e.actions.Item.JdLNIaTM4eyI9Luo]{Absorb Light}, if you're a black hole novian) is doubled. This transformation lasts for 1 minute. You can end this glorious transformation early as a single action, which has the concentrate trait.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You are the prime inheritor of your progenitor star's power and can don this star's lost legacy as a crown, growing in size and power, resplendent in glory. You become Small (or Medium, if you're a @UUID[Compendium.sf2e.heritages.Item.nvo8D4JLaIoE1ti7]{Massive Novian}). Your equipment grows with you but returns to normal size if removed. You gain a +2 status bonus to melee damage and Intimidation checks, and the area of your @UUID[Compendium.sf2e.ancestry-features.Solar Luminance] (and @UUID[Compendium.sf2e.actions.Item.JdLNIaTM4eyI9Luo]{Absorb Light}, if you're a @UUID[Compendium.sf2e.heritages.Item.B6Of6VTr8l5oZS6U]{Black Hole Novian}) is doubled. This transformation lasts for 1 minute. You can end this glorious transformation early as a single action, which has the concentrate trait.</p>",
       "name": "Inheritor of Star's Glory"
     },
     "Inject Serum": {
@@ -5244,7 +5244,7 @@
       "name": "Latch On"
     },
     "Launch Plasma": {
-      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You can launch a ball of plasma and stellar ejecta across the battlefield that explodes on impact, raining plasma and flame in a small area. Launch Plasma deals @Damage[ceil(@actor.level/2)d6[fire]] damage in a @Template[burst|distance:5] within 60 feet. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic] save against the higher of your class DC or spell DC. On a critical failure, a creature also takes @Damage[(ceil(@actor.level/2))[persistent,electricity]] damage.</p>\n<p>At 7th level and every 2 levels thereafter, the fire damage increases by 1d6, and the persistent electricity damage increases by 1. At 17th level, the area increases to a @Template[burst|distance:10].</p><hr /><p><strong>Special</strong> If you're a @UUID[Compendium.sf2e.heritages.Item.RkL11sNqvXcpa6UL]{Volatile Novian}, Launch Plasma and @UUID[Compendium.sf2e.actions.Item.KhX0FDMxGVgHjXdU]{Mini-Nova's} damage dice are both increased to d8s.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You can launch a ball of plasma and stellar ejecta across the battlefield that explodes on impact, raining plasma and flame in a small area. Launch Plasma deals @Damage[ceil(@actor.level/2)d6[fire]|options:area-damage] damage in a @Template[burst|distance:5] within 60 feet. Each creature in the area must attempt a @Check[reflex|against:class-spell|basic|options:area-effect] save against the higher of your class DC or spell DC. On a critical failure, a creature also takes @Damage[(ceil(@actor.level/2))[persistent,electricity]] damage.</p>\n<p>At 7th level and every 2 levels thereafter, the fire damage increases by 1d6, and the persistent electricity damage increases by 1. At 17th level, the area increases to a @Template[burst|distance:10].</p><hr /><p><strong>Special</strong> If you're a @UUID[Compendium.sf2e.heritages.Item.RkL11sNqvXcpa6UL]{Volatile Novian}, Launch Plasma and @UUID[Compendium.sf2e.actions.Item.KhX0FDMxGVgHjXdU]{Mini-Nova's} damage dice are both increased to d8s.</p>",
       "name": "Launch Plasma"
     },
     "Launching Jump": {
@@ -5426,7 +5426,7 @@
       "name": "Life Preserver"
     },
     "Life-Giving Light": {
-      "description": "<p><strong>Frequency</strong> twice per day</p><hr /><p>You suffuse your natural glow with healing light. You regain Hit Points equal to your level (@Damage[@actor.level[healing]]). All allies within the light of your solar luminance gain temporary Hit Points equal to half your level for 1 minute.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.w9PcqHsnbIm11p8M]{Effect: Life-Giving Light}</p>",
+      "description": "<p><strong>Frequency</strong> twice per day</p><hr /><p>You suffuse your natural glow with healing light. You regain Hit Points equal to your level (@Damage[@actor.level[healing]]). All allies within the light of your @UUID[Compendium.sf2e.ancestry-features.Solar Luminance] gain temporary Hit Points equal to half your level for 1 minute.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.w9PcqHsnbIm11p8M]{Effect: Life-Giving Light}</p>",
       "featPrerequisites": {
         "0": "Vital Spark Novian heritage"
       },
@@ -6568,7 +6568,7 @@
     "Orbital Defense": {
       "description": "<p><strong>Trigger</strong> You take damage from an enemy or hazard.</p>\n<p><strong>Requirements</strong> Satellites are currently orbiting you due to @UUID[Compendium.sf2e.feats.Item.3MFMVtHgpTvX3dlu]{Pull Into Orbit}.</p><hr /><p>You exert precise control over the debris that's orbiting you, purposefully placing it between you and harm to shield your body. You gain resistance equal to half your level against the triggering damage. Pull into Orbit immediately ends.</p>",
       "featPrerequisites": {
-        "0": "Pull into Orbit"
+        "0": "Pull Into Orbit"
       },
       "name": "Orbital Defense"
     },
@@ -7776,7 +7776,7 @@
       "name": "Regional Manager"
     },
     "Release Radiation": {
-      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>Like the star or supernova you wish to emulate, you've learned to focus and release bursts of radiation. All non-novian creatures in a @Template[type:emanation|distance:10] must attempt a @Check[fortitude|against:class-spell] save against the higher of your class DC or spell DC.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2} for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 2 for 1 minute.</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>Like the star or supernova you wish to emulate, you've learned to focus and release bursts of radiation. All non-novian creatures in a @Template[type:emanation|distance:10] must attempt a @Check[fortitude|against:class-spell|options:area-effect,inflicts:sickened] save against the higher of your class DC or spell DC.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2} for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 2 for 1 minute.</p>",
       "name": "Release Radiation"
     },
     "Relentless Aim": {
@@ -8918,7 +8918,7 @@
       "name": "Spot Healing"
     },
     "Spotlight": {
-      "description": "<p>You can focus your light, shining it onto a specific location or target like a mobile spotlight to ensure no detail passes unseen. You shine a focused, bright light in a 5-foot radius burst within 40 feet (within 120 feet if you're a bright novian). You [[/act point-out]] one creature in your spotlight. Creatures gain a +1 circumstance bonus on Perception checks to [[/act seek]] within the area of this focused light.</p>\n<p>Spotlight lasts a number of rounds equal to half your level (minimum 1 round). While Spotlight is active, and for an hour after Spotlight ends, the area of your solar luminance is halved.</p>",
+      "description": "<p>You can focus your light, shining it onto a specific location or target like a mobile spotlight to ensure no detail passes unseen. You shine a focused, bright light in a @Template[burst|distance:5] within 40 feet (within 120 feet if you're a @UUID[Compendium.sf2e.heritages.Item.K6QG1CdMXa4Pn2QF]{Bright Novian}). You [[/act point-out]] one creature in your spotlight. Creatures gain a +1 circumstance bonus on Perception checks to [[/act seek]] within the area of this focused light.</p>\n<p>Spotlight lasts a number of rounds equal to half your level (minimum 1 round). While Spotlight is active, and for an hour after Spotlight ends, the area of your @UUID[Compendium.sf2e.ancestry-features.Solar Luminance] is halved.</p>",
       "name": "Spotlight"
     },
     "Spray Ink": {
@@ -9159,7 +9159,7 @@
       "name": "Strobe Light"
     },
     "Strobe Master": {
-      "description": "<p>You have excellent light control and can strobe so fast that it makes would-be attackers sick. If a creature fails its flat check to hit you due to concealment caused by Strobe Light, it becomes @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>",
+      "description": "<p>You have excellent light control and can strobe so fast that it makes would-be attackers sick. If a creature fails its flat check to hit you due to @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealment} caused by @UUID[Compendium.sf2e.feats.Item.GgOtKobXSkAnnWQJ]{Strobe Light}, it becomes @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>",
       "featPrerequisites": {
         "0": "Strobe Light"
       },
