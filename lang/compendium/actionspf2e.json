@@ -564,10 +564,6 @@
       "description": "<p>You watch or study an NPC to learn more about that NPC's preferences. Attempt a Perception check or an appropriate skill check determined by the GM. The DC is found in the NPC's influence stat block.</p>\n<hr />\n<p><strong>Critical Success</strong> Choose two of the options detailed in Success below; you can choose the same option twice to learn two pieces of information from the same category.</p>\n<p><strong>Success</strong> Choose one of the following: You learn which skill that can Influence the NPC has the lowest DC (skipping any skills that you already know), one of the NPC's personal biases, one of the NPC's resistances, or one of the NPC's weaknesses.</p>\n<p><strong>Failure</strong> You learn no information.</p>\n<p><strong>Critical Failure</strong> Choose a piece of information to learn about, as success, but the information is incorrect.</p>",
       "name": "Discover"
     },
-    "Disengage": {
-      "description": "<p><strong>Requirements</strong> You are piloting a sea vehicle during boarding combat.</p><hr /><p>You attempt to break your ship free and escape the battle. Attempt a check to pilot against a very hard DC. This is typically a Sailing Lore check against the standard DC of the vessel's level + 5 (for the very hard adjustment).</p>\n<p><strong>Success</strong> The vehicle pulls free and moves up to its Speed. It can turn normally provided it moves away from the ship it disengaged from.</p>\n<p><strong>Failure</strong> The boarding combat continues.</p>",
-      "name": "Disengage"
-    },
     "Dismiss": {
       "description": "<p>You end an effect that states you can Dismiss it. Dismissing ends the entire effect unless noted otherwise.</p>",
       "name": "Dismiss"
@@ -896,6 +892,10 @@
       "description": "<p>You prepare forgeries that might serve as convincing props. Attempt a hard or very hard Society check.</p>\n<hr />\n<p><strong>Success</strong> You create convincing forgeries and gain 1 EP you can use only when presenting some form of paperwork.</p>\n<p><strong>Failure</strong> You create unconvincing documents. You gain 1 EP that (unknown to you) grants no benefit when used.</p>\n<p><strong>Critical Failure</strong> As a failure, but a PC who tries to use the Edge Point gets a critical failure, even if they use the Edge Point after rolling a failure.</p>",
       "name": "Forge Documents"
     },
+    "Forged in Fire": {
+      "description": "<p><strong>Trigger</strong> You take fire damage</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You gain fire resistance equal to half your level (minimum 1) against the triggering damage.</p>",
+      "name": "Forged in Fire"
+    },
     "Fortify Camp": {
       "description": "<p>You can spend time fortifying your camp for defense with a successful Crafting check (typically at a trained or expert DC). Anyone keeping watch or defending the camp gains a +2 circumstance bonus to initiative rolls and Perception checks to Seek creatures attempting to sneak up on the camp.</p>",
       "name": "Fortify Camp"
@@ -1004,6 +1004,10 @@
       "description": "<p>Make a weapon or unarmed Strike. This counts as two attacks when determining your multiple attack penalty. If your Strike hits, you deal an additional 2d8 spirit damage. At 18th level, this increases to 3d8 spirit damage.</p>",
       "name": "Hellbreaker Strike"
     },
+    "Hellish Impression": {
+      "description": "<p><strong>Trigger</strong> You fail a Diplomacy check to [[/act make-an-impression]]</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You cast 1st-rank @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} as a divine innate spell on the target of the triggering action.</p>",
+      "name": "Hellish Impression"
+    },
     "Hide": {
       "description": "<p>You huddle behind cover or greater cover or deeper into concealment to become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, rather than @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed}. The GM rolls your [[/act hide]]{Stealth} check in secret and compares the result to the Perception DC of each creature you're observed by but that you have cover or greater cover against or are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from. You get a +2 circumstance bonus to your check if you have standard cover (or +4 from greater cover).</p><hr /><p><strong>Success</strong> If the creature could see you, you're now @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from it instead of observed. If you were hidden from or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} by the creature, you retain that condition.</p>\n<p>If you successfully become hidden to a creature but then cease to have cover or greater cover against it or be concealed from it, you become observed again. You cease being hidden if you do anything except Hide, @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}, or @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Step}. If you attempt to Strike a creature, the creature remains off-guard against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise. The GM might allow you to perform a particularly unobtrusive action without being noticed, possibly requiring another Stealth check.</p>\n<p>If a creature uses @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} to make you observed by it, you must successfully Hide to become hidden from it again.</p>",
       "name": "Hide"
@@ -1072,6 +1076,10 @@
       "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> You Interact to draw a gauntlet bow, hand crossbow, or repeating hand crossbow, then Strike with it. Alternatively, you can Strike with a loaded hand crossbow or repeating hand crossbow you're already holding and then Interact to stow it.</p>",
       "name": "Infiltrator's Draw"
     },
+    "Inflict Punishment": {
+      "description": "<p><strong>Trigger</strong> You are hit with an unarmed Strike or a Strike with a non-reach melee weapon</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You twist your body so that the attacker hits a hard edge of bone or armor, injuring themselves. You deal @Damage[(floor(@actor.level/2))d8[piercing]] damage to the triggering creature (basic Reflex save using your class DC or spell DC, whichever is higher). At 3rd level, and every 2 levels thereafter, this damage increases by 1d8.</p>",
+      "name": "Inflict Punishment"
+    },
     "Influence": {
       "description": "<p>You attempt to make a favorable impression on an NPC to convince the NPC to support your cause. Attempt a skill check to impress that NPC. The DC and skills which can apply can be found in the NPC's stat block.</p>\n<hr />\n<p><strong>Critical Success</strong> You gain 2 Influence Points with the chosen NPC.</p>\n<p><strong>Success</strong> You gain 1 Influence Point with the chosen NPC.</p>\n<p><strong>Failure</strong> You gain no Influence Points with the chosen NPC.</p>\n<p><strong>Critical Failure</strong> You lose 1 Influence Point with the chosen NPC.</p>",
       "name": "Influence"
@@ -1135,6 +1143,22 @@
     "Invoke Celestial Privilege": {
       "description": "<p><strong>Trigger</strong> You attempt a saving throw against a divine effect, but you haven't rolled yet.</p>\n<hr />\n<p>You rise above the triggering effect, refusing to be harmed by it. You gain a +1 circumstance bonus to the triggering saving throw and to any other saving throws you attempt against divine effects until the start of your next turn.</p>",
       "name": "Invoke Celestial Privilege"
+    },
+    "Invoke Infernal Bargain": {
+      "description": "<p><strong>Requirements</strong> You are not doomed</p><hr /><p><strong>Effect</strong> You call upon your infernal pact to surge with devilish power. You gain a +2 status bonus to the next attack roll, skill check, or saving throw you attempt before the end of your next turn. You then become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>",
+      "name": "Invoke Infernal Bargain"
+    },
+    "Invoke Infernal Flames": {
+      "description": "<p><strong>Trigger</strong> You critically hit a creature with an unarmed attack granted by this feat</p>\n<p><strong>Requirements</strong> You are doomed</p><hr /><p><strong>Effect</strong> You deal an additional die of weapon damage and @Damage[1d4[persistent,fire]] damage. Then, increase the value of your doomed condition by 1.</p>",
+      "name": "Invoke Infernal Flames"
+    },
+    "Invoke Infernal Focus": {
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You are doomed</p><hr /><p><strong>Effect</strong> You regain 1 Focus Point and then increase the value of your doomed condition by 1.</p>",
+      "name": "Invoke Infernal Focus"
+    },
+    "Invoke Infernal Potency": {
+      "description": "<p><strong>Requirements</strong> You are doomed</p><hr /><p><strong>Effect</strong> If your next action is to cast either fear or spiritual armament as an innate spell, you can heighten the spell to a rank 1 lower than half your level rounded up. You then increase the value of your doomed condition by 1.</p>",
+      "name": "Invoke Infernal Potency"
     },
     "Invoke Rune": {
       "description": "<p>You utter the names of up to two of your runes within 30 feet, and each of which blazes with power, applying the effect in its Invocation entry. An invoked rune then fades away, its task completed. Though you can invoke up to two runes with a single Invoke Rune action, creatures that would be affected by multiple copies of the same rune are affected only once, as normal for duplicate effects.</p>",
@@ -2047,6 +2071,10 @@
     "Swim": {
       "description": "<p>You attempt an [[/act swim]]{Athletics} check to move a maximum distance of 10 feet through water. The GM determines the DC based on the turbulence or danger of the water; in most instances of calm water, you get an automatic critical success. If your land Speed is 40 feet or higher, increase the maximum possible distance by 5 feet for every 20 feet of Speed above 20 feet.</p>\n<p>If you end your turn in water and haven't succeeded at a Swim action that turn, you sink 10 feet or get moved by the current, as determined by the GM. This doesn't apply if your last action on your turn was to enter the water.</p><hr /><p><strong>Critical Success</strong> You move through the water, increasing the maximum distance by 5 feet.</p>\n<p><strong>Success</strong> You move through the water.</p>\n<p><strong>Critical Failure</strong> You make no progress. If you're holding your breath, you lose 1 round of air.</p><h2>Sample Swim Tasks</h2><p><strong>Untrained</strong> lake or other still water</p>\n<p><strong>Trained</strong> flowing water, like a river</p>\n<p><strong>Expert</strong> swiftly flowing river</p>\n<p><strong>Master</strong> stormy sea</p>\n<p><strong>Legendary</strong> maelstrom, waterfall</p>",
       "name": "Swim"
+    },
+    "Swing the Censer": {
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> You are holding your censer implement.</p><hr /><p>You swing your censer in a wide arc, causing the smoke it issues to thicken. Until the start of your next turn, creatures within the smoke are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke are concealed to those within it.</p>",
+      "name": "Swing the Censer"
     },
     "Swirl Crimson Shroud": {
       "description": "<p>You can Interact with your shroud, swirling it around you, to gain a +1 circumstance bonus to AC until the beginning of your next turn.</p>",

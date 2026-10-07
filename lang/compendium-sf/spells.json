@@ -1,5 +1,11 @@
 {
   "entries": {
+    "A-Stellar Targetfinder Algorithm": {
+      "description": "<p>Magitech runes etch onto the weapon's muzzle, guiding the trajectory of your shots unerringly to your target. For the duration, you can make ranged Strikes against creatures that have total cover from you using the target weapon, as long as the creature is within your weapon's first range increment, you're aware of the creature, and you can draw an unbroken path between yourself and the creature. This path doesn't need to be a straight line, and the creature has greater cover against such Strikes. The distance between yourself and the creature you attack is calculated based on the length of the drawn path.</p><hr /><p><strong>Heightened (+2)</strong> Increase the maximum distance from which you can target a creature by one range increment.</p>",
+      "name": "A-Stellar Targetfinder Algorithm",
+      "spellDuration": "sustained up to 1 minute",
+      "spellTarget": "1 ranged tech weapon you’re wielding"
+    },
     "Absolute Zero": {
       "description": "<p>A swirling vortex flash freezes the air, dealing 10d8 cold damage. Each creature in the area must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} by a layer of ice, and is slowed 1 as long as it's immobilized. The ice is an object with 50 Hit Points, Hardness 5, immunity to cold damage, and vulnerability 10 to fire. It has object immunities and is destroyed if the target Escapes.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8 and the ice's Hit Points increase by 5.</p>",
       "name": "Absolute Zero"
@@ -54,11 +60,20 @@
       "description": "<p>You ward an area to alert you when creatures enter without your permission. When you cast alarm, select a password. Whenever a Small or larger corporeal creature enters the spell's area without speaking the password, alarm sends your choice of a mental alert (in which case the spell gains the mental trait) or an audible alarm with the sound and volume of a hand bell (in which case the spell gains the auditory trait). Either option automatically awakens you, and the bell allows each creature in the area to attempt a @Check[perception|dc:15] check to wake up. A creature aware of the alarm must succeed at a Stealth check against the spell's DC or trigger the spell when moving into the area.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can specify a trigger for which types of creatures sound the alarm spell.</p>",
       "name": "Alarm"
     },
+    "Alchemical Shot": {
+      "description": "<p>You transmute scrap metal into a shotgun blast of high-purity precious metals. Creatures in the area take 1d8 piercing damage with a basic Reflex save. The damage counts as cold iron or silver (chosen when you Cast the Spell). The spell gains no benefits from the chosen material except for determining immunities, resistances, and weaknesses.</p><hr /><p><strong>Heightened (3rd)</strong> The damage increases to 3d8.</p>\n<p><strong>Heightened (5th)</strong> The damage increases to 6d8, and you can also choose to have the damage count as adamantine, cold iron, or silver.</p>\n<p><strong>Heightened (7th)</strong> As 5th-rank, and increase the damage to 9d8.</p>\n<p><strong>Heightened (9th)</strong> The damage increases to 12d8, and you can choose to have the damage count as any precious metal.</p>",
+      "name": "Alchemical Shot"
+    },
     "Alternate Outcome": {
       "description": "<p><strong>Trigger</strong> A creature in your quantum field would succeed (but not critically succeed) a saving throw.</p><hr /><p>You reject the outcome for a being in your current existence and replace it with that of a different reality. The target must reroll the triggering saving throw and use the worse result.</p>",
       "name": "Alternate Outcome",
       "spellRange": "within your quantum field",
       "spellTarget": "the triggering creature"
+    },
+    "Amplify Vulnerability": {
+      "description": "<p>You hack into the fundamental rules of magic that govern your target's surroundings and find a small vulnerability to exploit. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected</p>\n<p><strong>Success</strong> The creature gains weakness 3 to spell damage, and the spell ends the first time the creature takes spell damage.</p>\n<p><strong>Failure</strong> As success, but the spell doesn't end the first time the creature takes spell damage.</p>\n<p><strong>Critical Failure</strong> The creature gains weakness 6 to spell damage.</p><hr /><p><strong>Heightened (+1)</strong> The weakness increases by 1 (by 2 on a critical failure).</p>",
+      "name": "Amplify Vulnerability",
+      "spellTarget": "1 creature"
     },
     "Analyze Target": {
       "description": "<p>You focus on the target, gathering data as magical holograms display information. When the casting is complete, you learn biometric information about the target, including its fingerprints, medical conditions, and other basic physiological information. You or anyone you advise about the analysis gains a +1 status bonus to checks to @UUID[Compendium.sf2e.actions.Item.AJstokjdG6iDjVjE]{Impersonate} the creature, to @UUID[Compendium.sf2e.actions.Item.1kGNdIIhuglAjIp9]{Treat Wounds} on the creature, and to @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} about it. If the target is illusory or under the effects of illusion magic, you detect this only if the effect's rank is lower than the rank of your analyze target spell.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.7r6mw8H87SUaj9Tq]{Spell Effect: Analyze Target}</p><hr /><p><strong>Heightened (3rd)</strong> The status bonus increases to +2, and you can target up to 10 creatures.</p>\n<p><strong>Heightened (6th)</strong> The status bonus increases to +3, and you can target any number of creatures.</p>",
@@ -70,9 +85,18 @@
       "name": "Angelic Messenger",
       "spellRitualPrimaryCheck": "Religion (expert; you must be an angel)"
     },
+    "Angelic Signal": {
+      "description": "<p><strong>Trigger</strong> An ally is targeted by an attack from a tech creature or a creature wielding a weapon with the tech trait.</p><hr /><p>An angelic messenger swarms the attacking creature with nonsensical data derived from prayers emanating from their tech devices. The target must attempt a Will saving throw. Regardless of the result, the target becomes immune to angelic signal for 10 minutes.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a –1 status penalty to all attack and damage rolls with tech weapons until the end of the turn.</p>\n<p><strong>Failure</strong> The target takes a –2 status penalty to all attack and damage rolls with tech weapons until the end of the turn.</p>\n<p><strong>Critical Failure</strong> The target takes a –3 status penalty to all attack and damage rolls with tech weapons until the end of the turn.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.SarrQCwkkLjA2ehZ]{Spell Effect: Angelic Signal}</p>",
+      "name": "Angelic Signal",
+      "spellTarget": "the triggering creature"
+    },
     "Animal Form": {
       "description": "<p>You call upon primal energy to transform yourself into a Medium animal battle form. When you Cast this Spell, choose a listed battle form. You can decide the specific type of animal (such as lion or snow leopard for cat), but this has no effect on the form's Size or statistics. While in this form, you gain the animal trait. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which animal you choose:</p><ul><li>AC = 16 + your level. Ignore your armor's check penalty and Speed reduction.</li><li>5 temporary Hit Points.</li><li>Low-light vision and imprecise scent 30 feet.</li><li>One or more unarmed melee attacks specific to your battle form, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +9, and your damage bonus is +1. These attacks are Strength based (for the purpose of the @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled} condition, for example). If your unarmed attack bonus is higher, you can use it instead.</li><li>Athletics modifier of +9, unless your own modifier is higher.</li></ul><hr /><p>You also gain specific abilities based on the type of animal you choose:</p><ul><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.tk3go5Cl6Qt130Dk]{Ape}</strong></p><ul><li>Speed 25 feet, climb Speed 20 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> fist, <strong>Damage</strong> 2d6 bludgeoning.</li></ul></li><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.gQnDKDeBTtjwOWAk]{Bear}</strong></p><ul><li>Speed 30 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> jaws, <strong>Damage</strong> 2d8 piercing;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> claw (agile), <strong>Damage</strong> 1d8 slashing.</li></ul></li><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.BT1ofB6RvRocQOWO]{Bull}</strong></p><ul><li>Speed 30 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> horn, <strong>Damage</strong> 2d8 piercing.</li></ul></li><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.sN3mQ7YrPBogEJRn]{Canine}</strong></p><ul><li>Speed 40 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> jaws, <strong>Damage</strong> 2d8 piercing.</li></ul></li><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.ptOqsN5FS0nQh7RW]{Cat}</strong></p><ul><li>Speed 40 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> jaws, <strong>Damage</strong> 2d6 piercing;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> claw (agile), <strong>Damage</strong> 1d10 slashing.</li></ul></li><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.F4DTpDXNu5IliyhJ]{Deer}</strong></p><ul><li>Speed 50 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> antler, <strong>Damage</strong> 2d6 piercing.</li></ul></li><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.j2LhQ7kEQhq3J3zZ]{Frog}</strong></p><ul><li>Speed 25 feet, swim Speed 25 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> jaws, <strong>Damage</strong> 2d6 bludgeoning;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> tongue (reach 15 feet), <strong>Damage</strong> 2d4 bludgeoning.</li></ul></li><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.qPaEEhczUWCQo6ux]{Shark}</strong></p><ul><li>swim Speed 35 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> jaws, <strong>Damage</strong> 2d8 piercing;</li><li>breathe underwater but not in air.</li></ul></li><li><p><strong>@UUID[Compendium.sf2e.spell-effects.Item.kz3mlFwb9tV9bFwu]{Snake}</strong></p><ul><li>Speed 20 feet, climb Speed 20 feet, swim Speed 20 feet;</li><li><strong>Melee</strong> <span class=\"action-glyph\">a</span> fangs, <strong>Damage</strong> 2d4 piercing plus 1d6 poison.</li></ul></li></ul><hr /><p><strong>Heightened (3rd)</strong> You instead gain 10 temporary HP, AC = 17 + your level, attack modifier +14, damage bonus +5, and Athletics +14.</p>\n<p><strong>Heightened (4th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have enough space to expand into or the spell is lost. You instead gain 15 temporary HP, AC = 18 + your level, attack modifier +16, damage bonus +9, and Athletics +16.</p>\n<p><strong>Heightened (5th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have enough space to expand into or the spell is lost. You instead gain 20 temporary HP, AC = 18 + your level, attack modifier +18, damage bonus +7 and double the number of damage dice, and Athletics +20.</p>",
       "name": "Animal Form"
+    },
+    "Animate Armor": {
+      "description": "<p>You imbue your armor with a fragment of your own will, causing the outer plating to fly off you and assist in the fight of its own accord. You summon an @UUID[Compendium.sf2e.alien-core-bestiary.Actor.2oGp04TzbcaiLlOa]{Animated Tech Armor} to fight for you. The animated tech armor can use any abilities of the armor as if it were Activated and worn by it.</p><hr /><p><strong>Heightened (5th)</strong> The summoned armor has the aerial and elite adjustments.</p>",
+      "name": "Animate Armor"
     },
     "Animate Object": {
       "description": "<p>You transform the target into an animated object with a level up to that allowed by the Creature Creation Rituals table and of a type corresponding to the object (so a broom would become an animated broom).</p><hr /><p><strong>Critical Success</strong> The target becomes an animated object of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the minion trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and concentrate traits. You can have a maximum of four minions under your control. If it doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.</p>\n<p><strong>Success</strong> As critical success, except an animated object that doesn't become your minion stays in place and attacks anyone that attacks it or tries to steal or move it, rather than following your command.</p>\n<p><strong>Failure</strong> You fail to create the animated object.</p>\n<p><strong>Critical Failure</strong> You create the animated object, but it goes berserk and attempts to destroy you.</p><h2>Creatures Creation Rituals</h2><table class=\"table-striped\"><thead><tr><th>Creature Level</th><th>Ritual Rank Required</th><th>Cost</th></tr></thead><tbody><tr><td>–1 or 0</td><td>2</td><td>150 credits</td></tr><tr><td>1</td><td>2</td><td>600 credits</td></tr><tr><td>2</td><td>3</td><td>1,050 credits</td></tr><tr><td>3</td><td>3</td><td>1,800 credits</td></tr><tr><td>4</td><td>4</td><td>3,000 credits</td></tr><tr><td>5</td><td>4</td><td>4,800 credits</td></tr><tr><td>6</td><td>5</td><td>7,500 credits</td></tr><tr><td>7</td><td>5</td><td>10,800 credits</td></tr><tr><td>8</td><td>6</td><td>15,000 credits</td></tr><tr><td>9</td><td>6</td><td>21,000 credits</td></tr><tr><td>10</td><td>7</td><td>30,000 credits</td></tr><tr><td>11</td><td>7</td><td>42,000 credits</td></tr><tr><td>12</td><td>8</td><td>60,000 credits</td></tr><tr><td>13</td><td>8</td><td>90,000 credits</td></tr><tr><td>14</td><td>9</td><td>135,000 credits</td></tr><tr><td>15</td><td>9</td><td>195,000 credits</td></tr><tr><td>16</td><td>10</td><td>300,000 credits</td></tr><tr><td>17</td><td>10</td><td>450,000 credits</td></tr></tbody></table>",
@@ -165,6 +189,17 @@
       "spellRitualSecondaryChecks": "Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)",
       "spellTarget": "1 extraplanar creature"
     },
+    "Biomechanical Symbiosis": {
+      "description": "<p>You redirect magical power through your target's circuitry, stimulating hybrid magical and technological healing. The target regains 2 Hit Points immediately and the first time each round for the duration of the spell. Whenever the target takes electricity damage or rolls a flat check due to the glitching condition, it also regains 2 Hit Points.</p><hr /><p><strong>Heightened (+1)</strong> The Hit Points regained increase by 2.</p>",
+      "name": "Biomechanical Symbiosis",
+      "spellTarget": "1 creature with the tech trait or with a tech augmentation"
+    },
+    "Black Hat Trick": {
+      "description": "<p>You exploit a vulnerability placed into a tech system, then command the creature to do one of following of your choice: Stride in a direction of your choice, attempt a Strike against a creature of your choice with a –4 status penalty, or drop a weapon it's wielding. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't Delay or take any reactions for the duration of the spell. Reduce the target's glitching value by 1.</p>\n<p><strong>Failure</strong> As success, but the target must spend the first action on its turn to obey your command.</p>\n<p><strong>Critical Failure</strong> As failure, but the value of the target's glitching value isn't reduced.</p><hr /><p><strong>Heightened (+2)</strong> You can target one additional creature.</p>",
+      "name": "Black Hat Trick",
+      "spellDuration": "until the end of the target’s next turn",
+      "spellTarget": "1 glitching creature"
+    },
     "Blazing Bolt": {
       "description": "<p>You fire a ray of heat and flame. Make a spell attack roll against a single creature. On a hit, the target takes 2d6 fire damage, and on a critical hit, the target takes double damage.</p>\n<p>For each additional action you use when Casting the Spell, you can fire an additional ray at a different target, to a maximum of three rays targeting three different targets for 3 actions. These attacks each increase your multiple attack penalty, but you don't increase your multiple attack penalty until after you make all the spell attack rolls for <em>blazing bolt</em>. If you spend 2 or more actions Casting the Spell, the damage increases to 4d6 fire damage on a hit, and it still deals double damage on a critical hit.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage to each target increases by 1d6 for the 1-action version, or by 2d6 for the 2-action and 3-action versions.</p>",
       "name": "Blazing Bolt",
@@ -186,6 +221,10 @@
       "spellRitualPrimaryCheck": "Nature (expert)",
       "spellRitualSecondaryChecks": "Survival"
     },
+    "Blinding Emoji": {
+      "description": "<p>You create an emoji so bright that it wears sunshades to protect itself from its own light. Creatures in the area when you cast the spell or that start their turn in the area must attempt a Fortitude saving throw. When you Sustain the spell, you can move the area up to 30 feet.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and temporarily immune to blinding emoji for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 minute.</p>",
+      "name": "Blinding Emoji"
+    },
     "Blindness": {
       "description": "<p>You blind the target. The effect is determined by the target's Fortitude save. The target then becomes temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} until its next turn begins.</p>\n<p><strong>Failure</strong> The target is Blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Blinded permanently.</p>",
       "name": "Blindness",
@@ -196,6 +235,23 @@
       "name": "Blur",
       "spellTarget": "1 creature"
     },
+    "Bolster Weapon": {
+      "description": "<p>You use some of your magic to empower a weapon, creating an idealized version of the armament. When you cast this spell, choose one of the following traits: agile, backswing, forceful, reach, or sweep. The target weapon gains the chosen trait.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.5AQHXEzKuy4MmcXi]{Spell Effect: Bolster Weapon}</p><hr /><p><strong>Heightened (5th)</strong> You can target up to five weapons, choosing a trait for each weapon.</p>",
+      "name": "Bolster Weapon",
+      "spellTarget": "1 powered melee weapon"
+    },
+    "Bombarding Emojis": {
+      "description": "<p>You conjure a barrage of emojis that rain from the sky. Creatures in the area take 6d8 force damage (basic Reflex save). When you Cast the Spell and the first time you Sustain it each subsequent round, each creature in the area takes 6d8 force damage (basic Reflex save).</p>",
+      "name": "Bombarding Emojis"
+    },
+    "Bonding Charge": {
+      "description": "<p><strong>Area</strong> variable line</p>\n<p>You supercharge the bond between yourself and your tech minion, adjusting the signal until it physically carries both your magic and the minion's electricity in a shocking display. You Stride, then discharge a line of electricity in a straight line between yourself and your minion. If you don't have line of effect to your tech minion or end your movement further than 120 feet from your minion, this spell fails. Each other creature in the line takes 3d12 electricity damage (basic Reflex save).</p><hr /><p><strong>Heightened (+2)</strong> Increase the damage by 1d12.</p>",
+      "name": "Bonding Charge"
+    },
+    "Boot Loop": {
+      "description": "<p>You deliver a perfectly crafted command with the power of your voice, triggering mass reboots and shaking bodies apart. You deal 10d8 sonic damage to all creatures in the area. Each creature must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage. Creatures with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}, and creatures without the tech trait are @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage. Creatures with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2}, and creatures without the tech trait are deafened for 1 minute.</p>",
+      "name": "Boot Loop"
+    },
     "Breath of Life": {
       "description": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from dying and restore 5d8 Hit Points to the target. You can't use breath of life if the triggering effect was a death effect or an effect that leaves no remains, such as @UUID[Compendium.sf2e.spells.Item.r7ihOgKv19eJQnik]{Disintegrate}</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The healing increases by 1d8.</p>",
       "name": "Breath of Life",
@@ -204,6 +260,39 @@
     "Breathe Fire": {
       "description": "<p>A gout of flame sprays from your mouth. You deal 2d6 fire damage to creatures in the area with a basic Reflex save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
       "name": "Breathe Fire"
+    },
+    "Bugfix": {
+      "description": "<p>You release a magically self-editing line of code into the target, tackling the root cause of any technical failings afflicting it. You attempt to counteract the glitching condition affecting the target. Regardless of the result, the target becomes immune to <em>bugfix</em> for 1 minute.</p>",
+      "name": "Bugfix"
+    },
+    "Build Booster Ring": {
+      "description": "<p>You use magical tech to create a ring that's 1 inch thick, 10 feet wide, and 10 feet high. You must create the ring in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. The ring contains a ripple in space-time that amplifies those that pass through it. Creatures or vehicles that move through the ring gain a +30-foot status bonus to their Speeds until the end of the turn.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.VVGU0hHVetx0WNci]{Spell Effect: Build Booster Ring}</p>",
+      "name": "Build Booster Ring",
+      "spellDuration": "1 round"
+    },
+    "Build Bulkhead Stronghold": {
+      "description": "<p>You rapidly conjure a small technological stronghold that surrounds you, and all enemies are pushed to the nearest safe empty space outside of the area. The stronghold has AC 10, Hardness 10, and 150 healing Hit Points, and it's immune to critical hits and precision damage. It has the tech trait. Several large robotic legs sprout from the stronghold, allowing it to move with you, constantly keeping you at its center. The stronghold automatically opens to allow allies to enter while enemies are kept out. When you move in such a way that enemies would enter the area, they're instead pushed to the nearest safe empty space. Enemies can't enter the stronghold. Allies within the stronghold gain the benefits of standard cover, and all allies who start their turn within the stronghold gain 10 temporary Hit Points that last for the spell's duration.</p>",
+      "name": "Build Bulkhead Stronghold"
+    },
+    "Build Healing Station": {
+      "description": "<p>You deploy a station in an adjacent empty space that floats in the air, fueling combatants and keeping them ready to fight on. The station is Small, visibly the source of the healing, has AC 10 and 30 Hit Points, and is immune to critical hits and precision damage. The station also has the tech trait. Anytime you or an ally ends a turn adjacent to the healing station, the adjacent character heals for 5 Hit Points and gains a +1 status bonus to saving throws for 1 round.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.5ozraYweDASGAZct]{Spell Effect: Build Healing Station}</p><hr /><p><strong>Heightened (+3)</strong> The station's Hit Points increase by 30, and the healing increases by 5.</p>",
+      "name": "Build Healing Station"
+    },
+    "Build Sentries": {
+      "description": "<p>You deploy sentry turrets to attack intruders. For each action you spend Casting the Spell, you deploy a sentry turret into an empty space within range, attaching itself to any solid surface. These sentry turrets are Small and visibly dangerous. They have AC 10, Hardness 3, and 15 Hit Points and are immune to critical hits and precision damage. The sentries also have the tech trait. Whenever a visible creature that isn't Avoiding Notice, Hiding, or Sneaking comes within 15 feet of a sentry turret, you receive a ping and a small video feed of the creature on your comm unit. Once per round on subsequent turns, you can Interact with your comm unit to Command any number of sentry turrets to each fire a beam of energy at a creature within 30 feet of the sentry turret, dealing 2d6 fire damage (basic Reflex save). A creature can only be targeted by a single sentry turret each turn, even if it's within range of multiple sentries.</p><hr /><p><strong>Heightened (+2)</strong> The Hit Points of each sentry turret increase by 10, and the damage increases by 1d6.</p>",
+      "name": "Build Sentries"
+    },
+    "Build Shield Generator": {
+      "description": "<p>You bind together magic and science to create a shield generator in an empty adjacent space. The generator is Small, visibly the source of the shields, has AC 10 and 40 Hit Points, and is immune to critical hits and precision damage. The generator also has the tech trait. This generator provides a small, shimmering light that covers you and all allies within 60 feet, granting a +1 status bonus to AC, as well as resistance 4 to acid, cold, electricity, fire, force, and sonic damage. If the generator is destroyed, the spell ends.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.n5h45KB6hL3oVyQc]{Spell Effect: Build Shield Generator}</p><hr /><p><strong>Heightened (+1)</strong> The generator's Hit Points increase by 10, and the resistance granted by the generator increases by 1.</p>",
+      "name": "Build Shield Generator"
+    },
+    "Burstmoji": {
+      "description": "<p>You create an emoji of an explosion that erupts into a mass of flames. Creatures in the area take 6d6 fire damage (basic Reflex save), and the area becomes difficult and hazardous terrain for the duration. Creatures that start their turn in the area or move through a square in the area take @Damage[(@item.rank + (@item.rank - 3))[fire]] damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial fire damage increases by 2d6, and the hazardous terrain fire damage increases by 2.</p>",
+      "name": "Burstmoji"
+    },
+    "Cable Management": {
+      "description": "<p>A massive tangle of interconnected computer cables springs forth from every direction at once. Spaces in the area become difficult terrain for the duration. Each time a creature begins a move action inside the tangle or enters the tangle during a move action, it must succeed at a Reflex save or take a –10-foot status penalty to its Speeds until it leaves the area. On a critical failure, the creature is also @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. In addition, the cables are so thickly tangled that they provide standard cover to creatures in the area.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.6qaemGGjypQIuKAW]{Spell Effect: Cable Management}</p>",
+      "name": "Cable Management"
     },
     "Cairn Form": {
       "description": "<p>Your target's skin becomes a thick carapace of solid stone, granting resistance 5 to physical damage, except adamantine. The target gains a fist unarmed attack that deals 2d6 bludgeoning damage. The target uses their highest weapon or unarmed attack proficiency with these attacks, and if they have weapon specialization or greater weapon specialization, they add this damage as well. On a critical hit with one of these unarmed attacks, the creature struck must succeed at a Fortitude save against the target's class DC or become @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} for 1 round.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.v724q5Xi7KPPnLQ3]{Spell Effect: Cairn Form}</p><hr /><p><strong>Heightened (6th)</strong> The resistance increases to 10, and the damage dealt by the attacks increases to 3d6.</p>\n<p><strong>Heightened (10th)</strong> The resistance increases to 20, and the damage dealt by the attacks increases to 4d6.</p>",
@@ -255,6 +344,11 @@
       },
       "spellTarget": "1 willing living creature that isn't fatigued or quickened"
     },
+    "Censormoji": {
+      "description": "<p><strong>Trigger</strong> A creature within range Casts a Spell or performs an action with the auditory trait. You interrupt a creature's speech with a censoring emoji resembling a speaker with a line through it or a giant red X around its mouth or speakers. The triggering creature must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your next turn.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} and off-guard for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} and off-guard for 1 minute.</p>",
+      "name": "Censormoji",
+      "spellTarget": "the triggering creature"
+    },
     "Chain Lightning": {
       "description": "<p>You discharge a powerful bolt of lightning at the target, dealing 8d12 electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
       "name": "Chain Lightning",
@@ -293,6 +387,10 @@
       "name": "Chrono Push",
       "spellTarget": "1 creature"
     },
+    "Circuit Trace": {
+      "description": "<p>A tangle of golden and copper threads fills the space around you and trails behind you, making it difficult for others to pass. When you Cast the Spell and the first time you Sustain it on each subsequent round, you Stride up to your Speed or 25 feet (whichever is lower), trailing wires behind you as the square you left becomes difficult terrain for the duration. You ignore difficult terrain created by circuit trace.</p><hr /><p><strong>Heightened (5th)</strong> The spell creates greater difficult terrain.</p>",
+      "name": "Circuit Trace"
+    },
     "Clairaudience": {
       "description": "<p>You create an @UUID[Compendium.sf2e.conditions.Item.zJxUflt9np0q4yML]{Invisible} floating ear at a location within range (even if it's outside your line of sight or line of effect). It can't move, but you can hear through the ear as if using your normal auditory senses.</p>",
       "name": "Clairaudience"
@@ -326,6 +424,11 @@
       "spellCost": "rare incense worth a total value of 3,000 credits",
       "spellRitualPrimaryCheck": "Occultism (master)",
       "spellRitualSecondaryChecks": "Performance, Society"
+    },
+    "Comfortmoji": {
+      "description": "<p>An emoji of a bandage covers the target, granting it fast healing 2 for the duration or until it removes the bandage, whichever comes first. The target or an ally (if the target is willing) can Interact to remove the bandage and apply it to another adjacent creature, transferring the spell's benefits to the new creature. This does not reset the spell's duration.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.qDgekQoABV0vskX8]{Spell Effect: Comfortmoji}</p><hr /><p><strong>Heightened (+1)</strong> The fast healing increases by 2.</p>",
+      "name": "Comfortmoji",
+      "spellTarget": "1 creature"
     },
     "Command": {
       "description": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the @UUID[Compendium.sf2e.conditions.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition), release what it's holding, drop @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}, or stand in place. It can't @UUID[Compendium.sf2e.actions.Item.A72nHGUtNXgY5Ey9]{Delay} or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>",
@@ -361,6 +464,10 @@
       },
       "spellTarget": "1 creature"
     },
+    "Conjure Junkrod": {
+      "description": "<p>You configure a heap of scrap within range into a fully functioning vehicle. The junk becomes a level 0 land vehicle, such as a hoverboard, in an unoccupied adjacent space. The vehicle is clearly temporary, can't be sold or traded, and falls apart into worthless junk when the spell ends. The spell ends early if the vehicle becomes broken.</p><hr /><p><strong>Heightened (3rd)</strong> You create a 1st-level or lower land or water vehicle, such as a boatercycle or forklift.</p>\n<p><strong>Heightened (4th)</strong> You create a 4th-level or lower land or water vehicle, such as an urban cruiser or torpedo minisub.</p>\n<p><strong>Heightened (5th)</strong> You create a 5th-level or lower air, land, or water vehicle, such as a skyboat or turboglider.</p>\n<p><strong>Heightened (6th)</strong> You create a 7th-level or lower vehicle of any kind, such as a drop pod.</p>\n<p><strong>Heightened (7th)</strong> You create a 9th-level or lower vehicle.</p>\n<p><strong>Heightened (8th)</strong> You create an 11th-level or lower vehicle.</p>\n<p><strong>Heightened (9th)</strong> You create a 13th-level or lower vehicle.</p>\n<p><strong>Heightened (10th)</strong> You create a 15th-level or lower vehicle.</p>",
+      "name": "Conjure Junkrod"
+    },
     "Consecrate": {
       "description": "<p><strong>Area</strong> 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity</p>\n<p><strong>Secondary Casters</strong> 2, must be worshippers of your religion</p><hr /><p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification <em>must</em> be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.</p><hr /><p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p><hr /><p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the <em>planar seal</em> spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 2,000 credits × the spell rank.</p>",
       "name": "Consecrate",
@@ -391,6 +498,19 @@
       "description": "<p>You unleash a cloud of corrosive nanites. Creatures that start their turn in the area take 6d8 acid damage and 1d6 persistent acid damage with a basic Fortitude save. The nanites also corrode any unattended objects in the area, dealing 3d8 acid damage. Each round you Sustain the spell, you can move the cloud up to 10 feet in any direction. You can Dismiss the spell.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d8, and the persistent acid damage increases by 1d6.</p>",
       "name": "Corrosive Haze"
     },
+    "Corrupt Machine": {
+      "description": "<p>You fuse an unholy spirit into the target, causing it to morph into a visibly horrifying version. The weapon gains the unholy trait and deals an additional 1d4 fire damage on hit. Creatures critically hit by this weapon also become @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p><hr /><p><strong>Heightened (4th)</strong> The damage increases to 2d4.</p>\n<p><strong>Heightened (6th)</strong> The damage increases to 3d4.</p>\n<p><strong>Heightened (8th)</strong> The damage increases to 4d4.</p>",
+      "name": "Corrupt Machine",
+      "spellTarget": "1 tech weapon that’s unattended or wielded by a willing creature"
+    },
+    "Cosmic Eddy": {
+      "description": "<p>You conjure a swirling eddy of magical force, battering your targets and hindering their movement. Creatures in the area when you Cast the Spell or that start their turn there take 6d6 force damage with a basic Reflex save; on a failure, a creature also falls @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. The area is difficult terrain, and creatures attempting to Fly in the area must attempt an Acrobatics check against your spell DC; on a failure, the movement is disrupted, and any remaining movement from the action is wasted. In addition, unattended items of light Bulk or less are thrown around within the eddy and land in a random space in the area when the spell ends.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+      "name": "Cosmic Eddy"
+    },
+    "Cosmic Radiation Rods": {
+      "description": "<p>You summon forth an intangible field of thousands of tiny control rods to absorb ambient radiation. These rods hover in the air all around you but are too small to affect sight lines or otherwise interfere with targeting. All allies within the area gain resistance 5 to damage from radiation effects and a +1 status bonus to Fortitude saves against poison and radiation effects.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.zYQ0A3cET9h0iMW3]{Spell Effect: Cosmic Radiation Rods}</p><hr /><p><strong>Heightened (+3)</strong> The status bonus increases by 1, and the resistance increases by 5.</p>",
+      "name": "Cosmic Radiation Rods"
+    },
     "Cozy Crashpad": {
       "description": "<p>You shape a shack 20 feet on each side and 10 feet high. This shack has the structure trait and the same restrictions as magic items that create structures. The walls of the cottage are simple and metal, with small, metal shuttered windows, and it has one metal door. It doesn't include its own lock, but it has a fastener to which a lock can be applied.</p>\n<p>The interior contains three cots, one toilet, and a small stove powered by magic. The interior is lit with a small magical light that you can light or extinguish at will using a Sustain action. The climate inside the shack is comfortable and allows creatures inside it to withstand most hostile weather conditions, but incredible heat or cold, powerful storms, and winds of hurricane force or greater destroy the cottage. Other creatures can freely enter and exit the shack without damaging it, but if you exit the shack, the spell ends. You can Dismiss the spell.</p>",
       "name": "Cozy Crashpad"
@@ -420,11 +540,19 @@
       "name": "Crisis of Faith",
       "spellTarget": "1 creature"
     },
+    "Crymoji": {
+      "description": "<p>You create an emoji that's crying so hard that it spreads water around itself, whether from laughter or sadness. When a creature starts to Stride in the area the first time each turn, it must succeed at a Reflex saving throw or fall @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone} and take 1d6 bludgeoning damage, disrupting the movement. Each time you Sustain the spell, the area increases by 5 feet.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+      "name": "Crymoji"
+    },
     "Cursed Metamorphosis": {
       "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}. When it recovers from the sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a @Check[will] save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
       "name": "Cursed Metamorphosis",
       "spellDuration": "varies",
       "spellTarget": "1 creature"
+    },
+    "Dancemoji": {
+      "description": "<p>You create a dancer emoji that inspires all that follow in its footsteps. When you Cast the Spell and the first time you Sustain it on each subsequent turn, the dancer emoji Flies or Strides up to 20 feet, leaving a trail of glowing dance floor in each space it travels through that lingers for the duration. Allies who enter the trail or start their turn there gain a +5-foot status bonus to their Speeds until the end of the turn. An ally who starts to Fly or Stride on the trail and doesn't leave it for the entire movement also gains a +1 circumstance bonus to their AC until the start of their next turn, mimicking the dancer's graceful movements.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.x1spmy09vSuw6aQ2]{Spell Effect: Dancemoji (Speed Bonus)}</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.P8ZUzFQZ43qsUxdA]{Spell Effect: Dancemoji (AC Bonus)}</p>",
+      "name": "Dancemoji"
     },
     "Darkness": {
       "description": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>",
@@ -492,6 +620,10 @@
       "description": "<p>By reading trace auras, you detect the presence of scrying effects in the area. If detect scrying is higher rank than a scrying effect, you gain a glimpse of the scrying creature and learn its approximate distance and direction.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The duration is until the next time you make your daily preparations.</p>",
       "name": "Detect Scrying"
     },
+    "Detect Technology": {
+      "description": "<p>You send out a pulse of magic that detects the presence of technology, including creatures, hazards, and objects with the tech trait. You receive no information beyond the presence or absence of technology. You can choose to ignore technology you're fully aware of, such as the technology of you and your allies and the ship you're traveling in.</p><hr /><p><strong>Heightened (3rd)</strong> You learn the level or rank of the most powerful technology, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-level or highest-ranked technology. Like for an imprecise sense, you don't learn the exact location but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+      "name": "Detect Technology"
+    },
     "Detect Thoughts": {
       "description": "<p>You sense the presence of thinking creatures around you. You detect the presence or absence of thoughts from conscious creatures that have Intelligence modifiers of –3 or higher. You can choose to ignore the thoughts of creatures you're familiar with so they don't interfere with your detection of other thoughts. The spell can penetrate some barriers, but 3 feet of dirt or wood, 1 foot of stone, 1 inch of metal, a thin sheet of lead, or any force barrier blocks it. Creatures who are immune to mental effects are immune to detection by this spell.</p><hr /><p><strong>Heightened (4th)</strong> You detect the number of thinking minds and whether or not the creatures are telepathic. Creatures with telepathy have louder thoughts than creatures who don't have telepathy and might be able to sense your intrusion, at the GM's discretion.</p>",
       "name": "Detect Thoughts"
@@ -536,6 +668,10 @@
       "name": "Divine Decree",
       "spellDuration": "varies"
     },
+    "Divine Firewall": {
+      "description": "<p>You fill the space around you with divine flames that protect allies within it and burn away those who mean you harm, especially from unholy and technological threats. You and allies in the area are @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}. As the nature of this effect still leaves the target's location obvious, the target can't use this concealment to [[/act hide]] or [[/act sneak]].</p>\n<p>Enemies beginning their turn in the area take 10 fire damage, become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} if they have the tech trait, and become @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round if they have the unholy trait.</p>",
+      "name": "Divine Firewall"
+    },
     "Divine Immolation": {
       "description": "<p>Divine flames scour creatures within the area. Creatures take 6d6 fire damage and @Damage[(@item.level -3)d6[persistent,fire]] damage. The divine power within the flames scorches the spirit as well; a creature takes spirit damage instead of fire damage from divine immolation if that would be more detrimental to the creature (as determined by the GM).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and double persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and persistent damage increases by 1d6.</p>",
       "name": "Divine Immolation"
@@ -549,6 +685,11 @@
       "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
       "name": "Divine Lance",
       "spellTarget": "1 creature"
+    },
+    "Divine Machine": {
+      "description": "<p>You surround your target with shimmering divine magic that coalesces into technological armor, building them a large, resilient shell. For the duration of the spell, the target stands taller, functions more reliably, and gains supernatural protection from harm. The target grows to Large size unless it's already Large or larger. Its equipment grows with it but returns to its usual size if removed. Its reach increases by 5 feet (or by 10 feet if it started out Tiny). The target also gains a +2 status bonus to AC and saving throws and 20 temporary Hit Points for the duration. The spell ends immediately when the target has no temporary Hit Points.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.csZ7ugCP4zSqCUYu]{Spell Effect: Divine Machine}</p><hr /><p><strong>Heightened (+1)</strong> The temporary Hit Points granted by this spell increase by 5.</p>",
+      "name": "Divine Machine",
+      "spellTarget": "1 ally with the tech trait"
     },
     "Divine Wrath": {
       "description": "<p>You channel the fury of divinity against your foes. You deal 4d10 spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2}; while it's sickened, it's also @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
@@ -655,6 +796,34 @@
       "spellDuration": "unlimited",
       "spellTarget": "1 object or willing creature"
     },
+    "Emoji Armament": {
+      "description": "<p>You conjure an emoji of a weapon. Attempt a spell attack roll against a target's AC within 60 feet of the emoji (or adjacent if the emoji is a melee weapon), dealing 4d6 force damage on a hit (double damage on a critical hit). You can repeat the attack as a reaction when a creature in range uses a manipulate action (or move action, if the emoji is a melee weapon), but the spell ends at the start of your turn if you haven't used this reaction since the end of your previous turn. You can move the emoji each time you Sustain the Spell.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+      "name": "Emoji Armament",
+      "spellTarget": "1 creature"
+    },
+    "Emoji Shield": {
+      "description": "<p>You create a shield emoji that protects you from harm and explodes in a burst of blinding light when it's broken into magical code. You gain a +1 status bonus to AC and the @UUID[Compendium.sf2e.actions.Item.v6ITmtsDt1ZvGmK6]{Emoji Burst} reaction.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.L69VsN5o0r2HoBx0]{Spell Effect: Emoji Shield}</p>",
+      "name": "Emoji Shield",
+      "spellDuration": "1 minute or until dismissed"
+    },
+    "Emoji Spam": {
+      "description": "<p>You overwhelm a creature's senses with a barrage of different emojis, each eliciting a different sensation, memory, or otherwise deeply rooted connection that causes their brain to overload with information. The creature takes 6d6 mental damage and must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your next turn.</p>\n<p><strong>Failure</strong> The creature takes full damage plus an additional @Damage[(@item.level - 3)d6[persistent,mental]] damage. While taking this persistent damage, the creature is dazzled and can only speak in emojis. While speaking in only emojis, the creature can't cast spells or use auditory and sonic effects, except those that have \"emoji\" or \"moji\" in their name or the subtle trait. The creature can still communicate by speaking, but doing so loses the auditory trait and gains the visual trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage, and the creature is @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} while taking the persistent damage. When it loses the persistent damage, it becomes dazzled until the end of its next turn.</p><hr /><p><strong>Heightened (+1)</strong> The mental damage increases by 2d6, and the persistent mental damage increases by 1d6.</p>",
+      "name": "Emoji Spam",
+      "spellTarget": "1 creature"
+    },
+    "Emoji Spray": {
+      "description": "<p>You unleash a cone of thematic emojis. Choose a type of emoji you spray, which determines the effects of the spell. Each creature in the area experiences the chosen effect.</p><ul><li><p><strong>Eye Emojis</strong> Bright eyes cling to the creature, which must attempt a Fortitude save. Emoji spray gains the light and visual traits.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is distracted by the light, becoming @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn.</p>\n<p><strong>Failure</strong> As success, but the creature can't benefit from the @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} condition and takes a –2 circumstance penalty to Stealth checks to [[/act hide]] for as long as it's off-guard.</p></li><li><p><strong>Food Emojis</strong> Food gets into the creature's circuits. The creature must succeed at a Reflex save or the creature and one tech item of your choice that it's holding becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} (@UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2} on a critical failure).</p></li><li><p><strong>Grawlix Emojis</strong> Symbols representing profanity barrage the creature, dealing 2d4 mental damage (basic Will save); on a failure, it also becomes @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure). Emoji spray gains the mental trait.</p></li><li><p><strong>Weapon Emojis</strong> Swords and daggers pierce the creature, dealing 1d6 persistent bleed damage (basic Reflex save) as the weapons tear into it.</p></li></ul><hr /><p><strong>Heightened (+1)</strong> The mental damage increases by 2d4, and the persistent bleed damage increases by 1d6.</p>",
+      "name": "Emoji Spray"
+    },
+    "Emoji Tsunami": {
+      "description": "<p>You unleash a wave of emojis. Creatures in the area take 13d6 bludgeoning damage and must attempt a Reflex saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is pushed 10 feet away from you. This is forced movement.</p>\n<p><strong>Failure</strong> As success, but the creature takes full damage and is also knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage and is also @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute by lingering water droplet emojis.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+      "name": "Emoji Tsunami"
+    },
+    "Emoticon": {
+      "description": "<p>You unleash a string of emoticons that bash against a creature. Make a spell attack roll against the target's AC, dealing 2d4 bludgeoning or force damage (chosen when you Cast the Spell).</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+      "name": "Emoticon",
+      "spellTarget": "1 creature"
+    },
     "Energy Aegis": {
       "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, sonic, vitality, and void damage.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.4Lo2qb5PmavSsLNk]{Spell Effect: Energy Aegis}</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>",
       "name": "Energy Aegis",
@@ -723,9 +892,17 @@
       "name": "Execute",
       "spellTarget": "1 creature"
     },
+    "Exhale Toxins": {
+      "description": "<p>You release all the built-up toxins in the locus at once, exhaling a poisonous mist. Creatures in the area take 2d4 poison damage and must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4.</p>",
+      "name": "Exhale Toxins"
+    },
     "Explosion of Rot": {
       "description": "<p>A giant pustule swells and explodes, coating everything around it in life-draining rot. Creatures and plants in the area take 6d6 poison damage and must attempt a Reflex save. Foliage and plant matter in the area damaged by the spell no longer provide cover.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, @Damage[(floor((@item.rank - 2)/2))d6[persistent,poison]] damage, and is @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d6, and the persistent damage on a critical failure increases by 1d6.</p>",
       "name": "Explosion of Rot"
+    },
+    "Explosive Recall": {
+      "description": "<p>You capture and repeat the memory of a grenade's explosion within its shell. If you Area-Fire with the locus during the duration of the spell, the grenade's effect is repeated in the same area 1 round after the initial activation.</p>",
+      "name": "Explosive Recall"
     },
     "Fabricated Truth": {
       "description": "<p>Choose a single statement you want the targets to believe. The fact could be narrow, such as \"a dragon is circling overhead and wants to kill me\"; wide-reaching, such as \"all humanoids are disguised abominations\"; or conceptual, such as \"if I don't live a kinder life, I'll be punished in the afterlife.\" The targets' experiences color how they react to this \"truth\" and how their behavior changes. If the statement changes what they perceive, they treat the change as a sudden revelation. The effect of the spell depends on the targets' Will saves. If a target is already affected by fabricated truth, your spell tries to counteract it. If the counteract check fails, the outcome of the target's saving throw can't be worse than a success.</p>\n<hr />\n<p><strong>Critical Success</strong> The target doesn't believe the statement, and it knows you tried to trick it.</p>\n<p><strong>Success</strong> The target doesn't believe the statement or realize you tried to trick it.</p>\n<p><strong>Failure</strong> The target believes the statement for 1 week.</p>\n<p><strong>Critical Failure</strong> The target believes the statement with unlimited duration.</p>",
@@ -785,6 +962,10 @@
       "description": "<p>You flicker quickly between your current plane and another. You gain resistance 5 to all damage, except force. At the end of each of your turns, you automatically teleport 10 feet in a random direction, as determined by the GM. You can Sustain the spell to teleport in this way.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.ZlsuhS9J0S3PuvCO]{Spell Effect: Flicker}</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistance increases by 3.</p>",
       "name": "Flicker"
     },
+    "Flight of the Lightning Bees": {
+      "description": "<p><strong>Area</strong> up to 4 non-overlapping 20-foot bursts</p>\n<p>Beelike elementals made of pure electricity swarm out of countless portals. When you Cast the Spell and the first time you Sustain the spell each subsequent round, creatures in the area take 6d12 piercing damage and @Damage[3d6[persistent,electricity]] damage and must attempt a Fortitude save. The first time you Sustain the spell each subsequent round, you can also move one of the bursts 15 feet in any direction, though you can't move bursts so they overlap.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is suppressed for as long as it takes the persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is suppressed and @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it takes the persistent damage.</p><hr /><p><strong>Heightened (+1)</strong> The piercing damage increases by 1d12.</p>",
+      "name": "Flight of the Lightning Bees"
+    },
     "Floating Flame": {
       "description": "<p>You create a fire that burns without fuel and moves to your commands. The flame deals 3d6 fire damage to each creature in the square in which it appears, with a basic Reflex save. When you Sustain this spell, you can levitate the flame up to 10 feet. It then deals damage to each creature whose space it shared at any point during its flight. This uses the same damage and save, and you roll the damage once each time you Sustain. A given creature can take damage from floating flame only once per round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
       "name": "Floating Flame"
@@ -803,6 +984,10 @@
       "description": "<p>You fire a shard of solidified magic toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of shards you shoot by one, to a maximum of three shards for 3 actions. You choose the target for each shard individually. If you shoot more than one shard at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You fire one additional shard with each action you spend.</p>",
       "name": "Force Barrage",
       "spellTarget": "1 creature"
+    },
+    "Force-Fieldpga": {
+      "description": "<p>You gain resistance 2 against one type of damage you took in the last minute. As a single action during the duration, you can change the resistance type to another type of damage you took in the last minute.</p><hr /><p><strong>Heightened (+1)</strong> The resistance increases by 2.</p>",
+      "name": "Force-Fieldpga"
     },
     "Foresight": {
       "description": "<p>You gain a sixth sense that warns you of danger that might befall the target of the spell. If you choose a creature other than yourself as the target, you create a psychic link through which you can inform the target of danger. This link is a mental effect. Due to the amount of information this spell requires you to process, you can't have more than one <em>foresight</em> spell in effect at a time. Casting <em>foresight</em> again ends the previous <em>foresight</em>. While <em>foresight</em> is in effect, the target gains a +2 status bonus to initiative rolls and isn't @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against @UUID[Compendium.sf2e.conditions.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures or when flanked. In addition, you gain the following reaction: @UUID[Compendium.sf2e.actions.Item.VOEWhPQfN3lvHivK]{Foresight}</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.X9Na6IK8FSPcTuoc]{Spell Effect: Foresight}</p>",
@@ -861,6 +1046,11 @@
     "Ghostly Carrier": {
       "description": "<p>You create a Tiny, semi-corporeal figure with a form you choose. It hovers near you for the duration. When you Cast a Spell that has a range of touch, you can have the carrier move within range, deliver the spell to a creature there, and return to you. If the carrier must attempt a spell attack roll, it uses your normal bonuses. The carrier has your AC and saves, but it is destroyed by any damage.</p>",
       "name": "Ghostly Carrier"
+    },
+    "Ghostmoji": {
+      "description": "<p>You create a terrifying ghost emoji that only the target can see. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.sf2e.conditions.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, and it's @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for as long as it remains frightened.</p>",
+      "name": "Ghostmoji",
+      "spellTarget": "1 creature"
     },
     "Glow Up": {
       "description": "<p>You create an illusion that causes the target to appear more charming and genteel to observers. The spell accentuates the target's appearance, clothing, voice, and mannerisms according to what an observer finds appealing. Held items are unaffected, and any worn item removed from the creature returns to its true appearance.</p>\n<p>The target gains a +1 status bonus to Diplomacy checks to @UUID[Compendium.sf2e.actions.Item.OX4fy22hQgUHDr0q]{Make an Impression} and lets the target add its level to Diplomacy checks if untrained. In addition, the target can attempt a Diplomacy check to Gather Information in only 10 minutes. You can Dismiss this spell.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.hOp5ybOzyJlECU6B]{Spell Effect: Glow Up}</p><hr /><p><strong>Heightened (+2)</strong> The bonus increases by 1, to a maximum of +4 at 7th rank.</p>",
@@ -946,6 +1136,10 @@
       "name": "Holographic Memory",
       "spellTarget": "1 creature or corpse"
     },
+    "Holographic Stand-In": {
+      "description": "<p>You create a convincing holographic copy of yourself. This hologram looks exactly like you, but it's incorporeal and mimics your movements. When you Sustain the spell, you can Command the hologram to act differently. Characters can discern the nature of the hologram with a Perception check, or by interacting with it in any way, such as attempting to Strike it. You can look through the hologram's eyes by closing your own as part of a [[/act seek]] action. The spell immediately ends if you lose line of effect to your hologram.</p><hr /><p><strong>Heightened (9th)</strong> The maximum duration you can Sustain the spell increases to 10 minutes.</p>",
+      "name": "Holographic Stand-In"
+    },
     "Holy Light": {
       "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target has the unholy trait, you deal an extra 5d6 spirit damage.</p><hr /><p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>holy light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p><hr /><p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against unholy creatures increases by 2d6.</p>",
       "name": "Holy Light",
@@ -954,6 +1148,11 @@
     "Honeyed Words": {
       "description": "<p>Falsehoods pass your lips as smoothly as silk. You gain a +4 status bonus to Deception checks to @UUID[Compendium.sf2e.actions.Item.ewwCglB7XOPLUz72]{Lie} and against Perception checks to discern if you are telling the truth, and you add your level even if untrained. If the implausibility of your lies prompts a circumstance penalty or a DC increase, reduce that penalty by half or increase it by half.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.6vodhSeI3ClMfOGd]{Spell Effect: Honeyed Words}</p>",
       "name": "Honeyed Words"
+    },
+    "Hot Swap": {
+      "description": "<p>You create a mystical bond between the targets, allowing them to switch positions. For the duration, creatures wielding either weapon gain the Swap action.</p>",
+      "name": "Hot Swap",
+      "spellTarget": "2 unattended weapons"
     },
     "Howl": {
       "description": "<p>You let out a powerful ululation full of psychic resonance that compels others who hear it to join in. You deal 7d12 sonic damage and 1d8 persistent mental damage to other creatures who can hear within the area. Targets must attempt a Will save. The persistent mental damage a creature takes from this spell increases by 1d8 if at least one other creature is howling. A howling creature can't use auditory actions or cast spells except for those with the subtle trait for 1 round. Calculate the persistent damage after all creatures attempt their saves.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and no persistent mental damage.</p>\n<p><strong>Failure</strong> The target takes full damage, persistent mental damage, and is compelled to howl as long as it takes persistent mental damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the initial and persistent damage.</p>",
@@ -1028,6 +1227,14 @@
       "name": "Indestructibility",
       "spellDuration": "until the start of your next turn"
     },
+    "Infectious Virus": {
+      "description": "<p>You craft a dangerous computer virus. All creatures with the tech trait in the area take 10 persistent electricity damage and must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2}.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 4}.</p><hr /><p><strong>Heightened (+2)</strong> The persistent damage increases by 5.</p>",
+      "name": "Infectious Virus"
+    },
+    "Infuse Ammo": {
+      "description": "<p>You enhance your next round of ammunition with the might of the elements, empowering the next round in the chamber. When you cast this spell, choose an elemental trait and corresponding type of damage: electricity or sonic for air, bludgeoning or piercing for earth, acid or slashing for metal, fire for fire, bludgeoning or cold for water, or piercing or poison for wood. The next Strike you make with the wielded weapon before the end of your next turn gains the chosen elemental trait, damage trait, and deals an additional 1d6 damage of the chosen type of damage.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.orZd4ZvgTHXM49IF]{Spell Effect: Infuse Ammo}</p><hr /><p><strong>Heightened (6th)</strong> The additional damage increases to 2d6.</p>",
+      "name": "Infuse Ammo"
+    },
     "Infuse Vitality": {
       "description": "<p>You empower attacks with vital energy. The number of targets is equal to the number of actions you spent casting this spell. Each target's unarmed and weapon Strikes deal an extra 1d4 vitality damage. (This damage typically damages only undead). If you have the holy trait, you can add that trait to this spell and to the Strikes affected by the spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The damage increases to 2d4 damage.</p>\n<p><strong>Heightened (5th)</strong> The damage increases to 3d4 damage.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.X7RD0JRxhJV9u2LC]{Spell Effect: Infuse Vitality}</p>",
       "name": "Infuse Vitality",
@@ -1053,6 +1260,10 @@
       "description": "<p>You envision a simple bug and transform into a Medium animal battle form. When you Cast this Spell, choose a listed battle form. You can decide the specific type of animal (such as a ladybug or scarab for beetle), but this has no effect on the form's Size or statistics. While in this form, you gain the animal trait. You can Dismiss this spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p><ul><li><p>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</p></li><li><p>10 temporary Hit Points.</p></li><li><p>Low-light vision.</p></li><li><p>One or more attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +13, and your damage bonus is +2. These attacks are Strength based (for the purpose of the @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled} condition). If your unarmed attack modifier is higher, you can use it instead.</p></li><li><p>Athletics modifier of +13, unless your own is higher.</p></li></ul><p>You also gain specific abilities based on the form you choose:</p><ul><li><p><strong>Ant</strong></p><ul><li><p>Speed 30 feet, climb Speed 30 feet;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> mandibles, <strong>Damage</strong> 2d6 bludgeoning.</p></li></ul></li><li><p><strong>Beetle</strong></p><ul><li><p>Speed 25 feet;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> mandibles, <strong>Damage</strong> 2d10 bludgeoning.</p></li></ul></li><li><p><strong>Centipede</strong></p><ul><li><p>Speed 25 feet, climb Speed 25 feet; darkvision;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> mandibles, <strong>Damage</strong> 1d8 piercing plus 1d4 persistent poison.</p></li></ul></li><li><p><strong>Mantis</strong></p><ul><li><p>Speed 40 feet; imprecise scent 30 feet;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> foreleg, <strong>Damage</strong> 2d8 piercing.</p></li></ul></li><li><p><strong>Scorpion</strong></p><ul><li><p>Speed 40 feet; darkvision, imprecise tremorsense 60 feet;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> stinger, <strong>Damage</strong> 1d8 piercing plus 1d4 persistent poison;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> pincer (agile), <strong>Damage</strong> 1d6 bludgeoning.</p></li></ul></li><li><p><strong>Spider</strong></p><ul><li><p>Speed 25 feet, climb Speed 25 feet; darkvision;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> fangs, <strong>Damage</strong> 1d6 piercing plus 1d4 persistent poison;</p></li><li><p><strong>Ranged</strong> <span class=\"action-glyph\">1</span> web (range increment 20 feet), <strong>Damage</strong> @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilizes} the target for 1 round or until it [[/act escape]]{Escapes}.</p></li></ul></li></ul><p>@UUID[Compendium.sf2e.spell-effects.Item.dQeERSuUeHv9Rib5]{Spell Effect: Insect Form}</p><hr /><p><strong>Heightened (4th)</strong> Your battle form is Large, and your attacks have 10-foot reach. You instead gain 15 temporary HP, attack modifier +16, damage bonus +6, and Athletics +16.</p>\n<p><strong>Heightened (5th)</strong> Your battle form is Huge, and your attacks have 15-foot reach. You instead gain 20 temporary HP, attack modifier +18, damage bonus +2 and double damage dice (including persistent damage), and Athletics +20.</p>",
       "name": "Insect Form"
     },
+    "Instant Messaging": {
+      "description": "<p>You use your comm unit as a focus for communication, projecting messages to those nearby. You can communicate telepathically with creatures within 30 feet by using a free hand to type a message into your comm unit or whispering into the mic. This communication is one-way, and you can only communicate with creatures that share a language with you. You can choose which creatures receive your communications, and those creatures know you were the one who transmitted the message.</p><hr /><p><strong>Heightened (5th)</strong> You can communicate with images rather than words. <em>Instant messaging</em> loses the linguistic trait.</p>",
+      "name": "Instant Messaging"
+    },
     "Instant Virus": {
       "description": "<p>Your touch installs a dangerous self-replicating virus that disrupts a technological creature's programming. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}.</p>\n<p><strong>Failure</strong> The target is glitching 1 and @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2} and @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>",
       "name": "Instant Virus",
@@ -1072,6 +1283,10 @@
       "description": "<p>You rapidly destabilize and decay the atoms around you to create a burst of magically enhanced mild radiation. Creatures in the area must attempt a Fortitude save against mild radiation sickness. This magical radiation uses your spell DC in place of the radiation's normal Fortitude DC, has an immediate onset, and the interval between each stage is 1 round. Technology doesn't gain the glitching condition from the radiation created by this spell.</p><hr /><p><strong>Heightened (5th)</strong> The radiation increases to severe.</p>\n<p><strong>Heightened (7th)</strong> The radiation increases to extreme.</p>\n<p><strong>Heightened (9th)</strong> The radiation increases to incredible.</p>",
       "name": "Irradiate"
     },
+    "Judgment Cannon": {
+      "description": "<p>You create a ghostly, semi-corporeal turret made of divine force in an unoccupied space in range. The turret is Medium; creatures can move through the turret's space but can't end their movement in it. When you Cast the Spell and the first time you Sustain it each turn on subsequent rounds, the turret fires, dealing 8d8 spirit damage to all creatures in a 60- foot line originating from the turret (basic Reflex save).</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+      "name": "Judgment Cannon"
+    },
     "Jump": {
       "description": "<p>Your legs surge with strength, ready to leap high and far. You jump 30 feet in any direction without touching the ground. You must land on a space of solid ground within 30 feet of you, or else you fall after using your next action.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range becomes touch, the target changes to one touched creature, and the duration becomes 1 minute, allowing the target to jump as described whenever it takes the @UUID[Compendium.sf2e.actions.Item.d5I6018Mci2SWokk]{Leap} action.</p>",
       "name": "Jump",
@@ -1080,6 +1295,40 @@
           "spellTarget": "1 creature"
         }
       }
+    },
+    "Junk Armor": {
+      "description": "<p>You create light, medium, or heavy armor out of junk that you immediately don. You lose the benefits of any armor you were already wearing when you cast this spell, including any upgrades in that armor. You can create any common commercial grade armor, and it gains the noisy and tech traits if it doesn't have them already. It can't be made of any special materials.</p>\n<p>The armor has one fewer upgrade slot than usual. When you Cast this Spell, you can automatically Install any upgrades you're holding in your hands as a locus into any upgrade slots the armor has.</p><hr /><p><strong>Heightened (2nd)</strong> You can create tactical armor.</p>\n<p><strong>Heightened (5th)</strong> You can create advanced armor.</p>\n<p><strong>Heightened (6th)</strong> You can create superior armor.</p>\n<p><strong>Heightened (8th)</strong> You can create elite armor.</p>\n<p><strong>Heightened (9th)</strong> You can create ultimate armor.</p>\n<p><strong>Heightened (10th)</strong> You can create paragon armor.</p>",
+      "name": "Junk Armor"
+    },
+    "Junk Restraints": {
+      "description": "<p>Pieces of junk clamp around the target's limbs, locking them in place like a series of makeshift manacles. The target must attempt a Reflex saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and suppressed for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained} and drops all items it's holding in its space. The restraints' [[/act force-open]] and [[/act escape]] DCs are equal to your spell DC. A creature can attack the restraints in an attempt to break its grip. The restraints have AC equal to your spell DC, Hardness 5, and 20 Hit Points. Destroying, Forcing Open, or Escaping from the restraints ends the spell.</p><hr /><p><strong>Heightened (3rd)</strong> The junk has Hardness 8 and 66 Hit Points.</p>\n<p><strong>Heightened (5th)</strong> The junk has Hardness 8 and 88 Hit Points.</p>\n<p><strong>Heightened (8th)</strong> The junk has Hardness 10 and 100 Hit Points.</p>",
+      "name": "Junk Restraints",
+      "spellTarget": "1 creature"
+    },
+    "Junk Weapon": {
+      "description": "<p>Junk comes flying together to form a temporary weapon. You create a common advanced, martial, or simple weapon in your hands, the hands of an adjacent ally, or on the ground in an adjacent square. The weapon is commercial grade and comes fully charged with a default battery and loaded with basic ammunition or chem. It can't be made of any special materials.</p>\n<p>The weapon has one fewer upgrade slot than usual. When you Cast this Spell, you can automatically Install any upgrades you are holding in your hands as a locus into any upgrade slots the weapon has. When you Interact to stow the <em>junk weapon</em>, you can collapse it into an unassuming accessory on one of your limbs, such as a bracelet or glove made out of junk.</p><hr /><p><strong>Heightened (2nd)</strong> You can create a tactical weapon.</p>\n<p><strong>Heightened (4th)</strong> You can create an advanced.</p>\n<p><strong>Heightened (5th)</strong> You can create a superior weapon.</p>\n<p><strong>Heightened (6th)</strong> You can create an elite weapon.</p>\n<p><strong>Heightened (8th)</strong> You can create an ultimate weapon.</p>\n<p><strong>Heightened (9th)</strong> You can create a paragon weapon.</p>",
+      "name": "Junk Weapon",
+      "spellTarget": "1 creature"
+    },
+    "Junkbot": {
+      "description": "<p>You shape nearby junk into a minibot of 1st level or lower whose formula you used as this spell's locus. Activate the Minibot. If the locus is a handheld tech item, such as a comm unit, you can use it to install any electronic storage necessary for the minibot to function, such as songs in a beatbot or storage for a camerabot. When the spell ends, the minibot turns into a pile of junk</p><hr /><p><strong>Heightened (3rd)</strong> You create a minibot up to 2nd level.</p>\n<p><strong>Heightened (4th)</strong> You create a minibot up to 4th level.</p>\n<p><strong>Heightened (5th)</strong> You create a minibot up to 8th level.</p>\n<p><strong>Heightened (6th)</strong> You create a minibot up to 12th level.</p>\n<p><strong>Heightened (7th)</strong> You create a minibot up to 14th level.</p>",
+      "name": "Junkbot"
+    },
+    "Junkify": {
+      "description": "<p>You corrode a useful piece of tech into obsolete junk. The target takes 1d8 acid damage, with a basic Reflex save if the target is a creature or by a creature holding or wielding the target. The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2} on a failure (or if unattended). If this damage reduces the target to 0 Hit Points, it becomes junk, and as long as it's unattended, any space it occupies becomes difficult terrain.</p><hr /><p><strong>Heightened (+2)</strong> Increase the damage by 1d8 and the glitching condition by 1.</p>",
+      "name": "Junkify",
+      "spellTarget": "1 construct, item, or object that's made of metal or that has the tech trait"
+    },
+    "Jury-Rigged Turbocharge": {
+      "description": "<p>You accelerate and parallelize your thought processes using magic to hack and enhance the inner workings of your allies' tech systems. When you Cast this Spell and the first time you Sustain it on subsequent rounds, the target gains one of the following benefits of their choice (or your choice, if the target is mindless or a minion) for 1 round.</p><ul><li><p>The target gains a +10-foot status bonus to its Speeds.</p></li><li><p>The target gains a +1 status bonus to attack rolls.</p></li><li><p>The target gains a +1 status bonus to skill checks.</p></li><li><p>The target gains a +1 status bonus to AC and saving throws.</p></li></ul><hr /><p><strong>Heightened (+2)</strong> You can target one additional creature.</p>",
+      "name": "Jury-Rigged Turbocharge",
+      "spellDuration": "sustained up to 1 minute",
+      "spellTarget": "1 tech minion, 1 willing tech creature, or 1 willing creature wearing or wielding a tech item"
+    },
+    "Kill Dash Nine": {
+      "description": "<p>You send a brutal signal interruption straight into the central processor of a technological being. This signal wreaks havoc on the system and leaves behind lasting corruption. The target takes 15d8 mental damage, or electricity damage, if the target is immune to mental damage. Beings that are biomechanical (such as androids) or only partially mechanical (such as cyborgs) uses the outcome for one degree of success better than the result of their saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2} and @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 3} and @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2}, and must succeed at a Fortitude save or suffer catastrophic systems failure. This kills any creature reliant on technology to live. This Fortitude save has the death and incapacitation traits.</p>",
+      "name": "Kill Dash Nine",
+      "spellTarget": "1 creature with the tech trait"
     },
     "Knock": {
       "description": "<p>You make the target easier to open. Knock grants a +4 status bonus to any creature that tries to open the target door, lock, or container with an Athletics or a Thievery check. You can attempt a Thievery check to open the target as part of casting knock, and you add your level even if you're untrained.</p>\n<p><em>Knock</em> counteracts @UUID[Compendium.sf2e.spells.Item.Azoh0BSoCASrA1lr]{Lock}.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.OSapCU8heNHst21y]{Spell Effect: Knock}</p>",
@@ -1106,9 +1355,22 @@
       "name": "Light",
       "spellDuration": "until your next daily preparations"
     },
+    "Light Shift": {
+      "description": "<p>You fire the locus and instantly transfer yourself along the beam, transforming you and your equipment into photons for a fraction of a second. You teleport to an occupied space within the first range increment of the locus, and you shed bright light in a radius equal to the distance you teleported that lasts until the end of your turn.</p>",
+      "name": "Light Shift"
+    },
     "Lightning Bolt": {
       "description": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
       "name": "Lightning Bolt"
+    },
+    "Liminal Hyperlink": {
+      "description": "<p>You reprogram reality to link together two spaces. Create two hyperlinks in unoccupied squares in line of effect that are at least 15 feet apart. When a creature enters a hyperlink's space, they emerge in an unoccupied space of their choice adjacent to the other hyperlink. A creature that isn't flying treats all spaces lacking solid ground as occupied. If there's no valid space for the creature to enter, then both hyperlinks collapse, and the creature remains in the space where it entered the first hyperlink.</p>",
+      "name": "Liminal Hyperlink",
+      "spellDuration": "sustained up to 1 minute"
+    },
+    "Linked Sight": {
+      "description": "<p>You toss the required locus to a point in range, imbuing the optic tool with a connection to your own vision. For the duration, the locus can see in all directions with your normal visual senses, though it treats sight as an imprecise sense past 15 feet. You can Sustain the spell to switch between seeing through the locus or through your standard vision.</p><hr /><p><strong>Heightened (+1)</strong> The duration of the spell is increased by 5 minutes, and the range past which the locus's sight becomes imprecise is increased by 5 feet.</p>",
+      "name": "Linked Sight"
     },
     "Liquid Siphon": {
       "description": "<p>You drain the moisture out of your target, crumpling them up like an empty beverage can and potentially leaving them a desiccated husk of what they once were. A nonliving target with liquid in its body (such as a vampire, water elemental, or keg of alcohol) can be affected by this spell, but a living creature with no vital liquids is immune. The target creature takes 4d6 bludgeoning damage, depending on the results of its saving throw.</p>\n<p>A target that fails its saving throw creates water that flows into your hands or a held container (1 gallon for Tiny, 2 gallons for Small, 4 for Medium, 6 for Large, 8 for Huge). If the target critically fails its saving throw, double this amount.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p><strong>Critical Failure</strong> As failure, but double damage and the target is @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p><hr /><p><strong>Heightened (+1)</strong> Increase the damage by 2d6.</p>",
@@ -1140,6 +1402,11 @@
     "Magic Passage": {
       "description": "<p>You create a visible tunnel through the wall in the chosen area, replacing the area with empty space. If the wall is thicker than 10 feet, the tunnel ends 10 feet in. Even a small layer of metal in the wall prevents this spell from functioning. This spell doesn't reduce the integrity of the structure. When the spell ends, anyone inside the tunnel is shunted to the nearest exit.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The tunnel can be up to 20 feet deep. The areas of the wall that contain your tunnel's entrance appear completely normal (unless viewed with truesight or a similar effect), despite the tunnel's existence. The tunnel's entrance functions as a solid wall, but you can specify a password or a trigger, allowing creatures to enter freely.</p>",
       "name": "Magic Passage"
+    },
+    "Magnetic Tuning": {
+      "description": "<p>You amplify the magnetic field generated by your armor's mechanisms, making it challenging for enemies to approach you. You emit a @Template[type:emanation|distance:15] of difficult terrain. You and your allies are unaffected by this aura.</p>\n<p>When you Cast the Spell and the first time you Sustain it on subsequent rounds, you can make a spell attack roll against a creature in the area of this emanation, dealing 3d8 bludgeoning damage on a hit.</p><hr /><p><strong>Heightened (+2)</strong> The area increases by 5 feet, and the bludgeoning damage increases by 1d8.</p>",
+      "name": "Magnetic Tuning",
+      "spellDuration": "sustained up 1 minute"
     },
     "Manifestation": {
       "description": "<p>You spin secrets from the fundaments of magic, shaping them into a power with nearly unlimited potential. You duplicate a spell of 9th rank or lower of the tradition from which you cast <em>manifestation</em>, or a spell of 7th rank or lower from any tradition. Though you can normally choose only spells that are common or to which you have access, the GM might allow broader options.</p>",
@@ -1234,10 +1501,22 @@
       "name": "Mountain Resilience",
       "spellTarget": "1 creature"
     },
+    "Mycorrhizal Supremacy": {
+      "description": "<p>You create a network of mind-controlling mycotoxins directly in targets' brains, attempting to seize command and force them to obey you. The first target must attempt a Will save. If it doesn't critically succeed, another target within 30 feet of the first attempts a Will save; if that target doesn't critically succeed, another target within 30 feet of it attempts a Will save, and so on. You can choose to end the spread at any point, and you can't target the same creature more than once. Once the spell has taken effect, you can only focus on one member of the network to control at a time. You can change the target of your focus by Sustaining the spell.</p><hr /><p><strong>Critical Success</strong> The target is unaffected, and your network can spread no farther.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} as it fights off your spores.</p>\n<p><strong>Failure</strong> The target joins your mycorrhizal network. It gains the @UUID[Compendium.sf2e.conditions.Item.9qGBRpbX9NEwtAAr]{Controlled} condition but can act normally unless it's the focus of your control. If it's the focus, it can attempt a Will save at the end of each of its turns. On a success, the target drops out of the network, and your focus automatically shifts to the closest remaining member of the network.</p>\n<p><strong>Critical Failure</strong> As a failure, but the target receives a new save only if you give it a new order that's against its nature, such as killing its allies.</p>",
+      "name": "Mycorrhizal Supremacy",
+      "spellDuration": "until your next daily preparations",
+      "spellTarget": "1 living creature (see text below)"
+    },
     "Mystic Armor": {
       "description": "<p>You ward yourself with shimmering magical energy, gaining a +1 item bonus to AC and a maximum Dexterity modifier of +5. While wearing <em>mystic armor</em>, you use your unarmored proficiency to calculate your AC.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.qkwb5DD3zmKwvbk0]{Spell Effect: Mystic Armor}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You gain a +1 item bonus to saving throws.</p>\n<p><strong>Heightened (6th)</strong> The item bonus to AC increases to +2, and you gain a +1 item bonus to saving throws.</p>\n<p><strong>Heightened (8th)</strong> The item bonus to AC increases to +2, and you gain a +2 item bonus to saving throws.</p>\n<p><strong>Heightened (10th)</strong> The item bonus to AC increases to +3, and you gain a +3 item bonus to saving throws.</p>",
       "name": "Mystic Armor",
       "spellDuration": "until your next daily preparations"
+    },
+    "Nanite Snipe": {
+      "description": "<p>Make a spell attack roll against the target's AC, dealing 1d12 piercing damage on a hit with a tech target becomes glitching 2. On a critical hit, the target takes double damage, and a tech target becomes glitching 4.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
+      "name": "Nanite Snipe",
+      "spellRange": "30 to 120 feet",
+      "spellTarget": "1 creature"
     },
     "Nature Incarnate": {
       "description": "<p>The primal power of the world flows through you. You transform into an incarnation of nature, either a green man or a kaiju. Your battle form is Medium for a green man or Gargantuan (30-foot-by-30-foot space) for a kaiju. While in this form, you gain the plant trait (for a green man) or the beast trait (for a kaiju). You can Dismiss the spell. You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 25 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>30 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +34, and you use the listed damage. These attacks are Strength based (for the purpose of the @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled} condition, for example). If your unarmed attack modifier is higher, you can use it instead.</li>\n<li>Athletics modifier of +36, unless your own is higher.</li>\n</ul>\n<p>You gain specific abilities based on the incarnation you choose:</p>\n<ul>\n<li><strong>Green Man</strong>\n<ul>\n<li>Speed 40 feet, climb 40 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> vines (reach 30 feet, versatile P), <strong>Damage</strong> 6d8+12 bludgeoning;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">1</span> thorns (range 100 feet), <strong>Damage</strong> 6d6+6 piercing;</li>\n<li><strong>Green Caress</strong> (aura, primal) 60 feet. Enemies other than plants must succeed at a @Check[fortitude|against:spell] against your spell DC or become @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round (@UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical failure).</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Kaiju</strong>\n<ul>\n<li>Speed 50 feet; resistance 5 to physical damage;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws (reach 30 feet), <strong>Damage</strong> 6d10+10 piercing;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> claws (agile, reach 30 feet), <strong>Damage</strong> 6d8+8 slashing;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> foot (agile, reach 15 feet), <strong>Damage</strong> 6d6+10 bludgeoning;</li>\n<li><strong>Unstoppable</strong> You are immune to being @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} and ignore difficult terrain and greater difficult terrain;</li>\n<li><strong>Trample</strong> <span class=\"action-glyph\">3</span> You move up to double your Speed and move through the spaces of Huge or smaller creatures, trampling each creature whose space you enter. A trampled creature takes foot damage with a @Check[reflex|against:spell|basic] save against your spell DC.</li>\n</ul>\n</li>\n</ul>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.hfcFc8cV5wF2evWP]{Spell Effect: Nature Incarnate}</p>",
@@ -1268,6 +1547,11 @@
       "name": "Oaken Resilience",
       "spellTarget": "1 willing creature"
     },
+    "One with Junk": {
+      "description": "<p>You can either transform into junk or merge with it. This spell has the same effects as @UUID[Compendium.sf2e.spells.Item.dileJ0Yxqg76LMvu]{One with Plants} but lets you merge with or turn into a pile of junk or a larger piece of junk, such as trash bags, a heap of scrap metal, or a broken construct. Junk you turn into has AC 23. You can Dismiss this spell.</p>",
+      "name": "One with Junk",
+      "spellDuration": "10 minutes or 8 hours"
+    },
     "One with Plants": {
       "description": "<p>You can either transform into a plant or merge with plant matter. While transformed, you can't move or affect anything outside the plant, but you can cast spells as long as they don't require line of effect beyond the plant. You can Dismiss this spell.</p>\n<ul>\n<li><strong>Merge with Plants</strong> The spell's duration is 10 minutes. While casting the spell, you must touch a plant with enough volume to fit you and your possessions or the spell is disrupted. While merged, you can hear, but not see, what's going on outside the plant. If the plant takes damage while you're inside it, you're expelled from the plant and take 10d6 damage. <em>Magic passage</em> expels you without dealing damage. The spell ends if you're ever outside the plant.</li>\n<li><strong>Turn into a Plant</strong> The spell's duration is 8 hours. You become a Large plant—typically a tree. Perception checks don't reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that you appear to be a plant that is strangely new to the area. While in this form, you can observe everything around you, using your normal senses. As a plant, your AC is 20, and only status bonuses, status penalties, circumstance bonuses, and circumstance penalties affect you. Any successes and critical successes you roll on Reflex saves are failures\n</li>\n</ul>",
       "name": "One with Plants",
@@ -1277,6 +1561,14 @@
       "description": "<p>You can either transform into a stone or merge with stone. While transformed, you can't move or affect anything outside the stone, but you can cast spells as long as they don't require line of effect beyond the stone. You can Dismiss this spell.</p>\n<ul>\n<li><strong>Merge with Stone</strong> The spell's duration is 10 minutes. While casting the spell, you must touch a stone with enough volume to fit you and your possessions or the spell is disrupted. While merged, you can hear, but not see, what's going on outside the stone. If the stone takes damage while you're inside it, you're expelled from the stone and take 10d6 damage. <em>Magic passage</em> expels you without dealing damage. The spell ends if you're ever outside the stone.</li>\n<li><strong>Turn into a Stone</strong> The spell's duration is 8 hours. You become a Large stone. Perception checks don't reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that you appear to be a stone that is strangely new to the area. While in this form, you can observe everything around you, using your normal senses. As a stone, your AC is 23, and only status bonuses, status penalties, circumstance bonuses, and circumstance penalties affect you. Any successes and critical successes you roll on Reflex saves are failures\n</li>\n</ul>",
       "name": "One with Stone",
       "spellDuration": "10 minutes or 8 hours"
+    },
+    "Optic Blast": {
+      "description": "<p>Your eyes boil with magical energy, building up pressure behind the locus until it bursts forth. Creatures in the area take 3d6 force damage with a basic Reflex save. Creatures that fail their save are also knocked back 5 feet.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+      "name": "Optic Blast"
+    },
+    "Optics Feed": {
+      "description": "<p>You tap into the optical scanners of a machine and turn it into a live camera feed. For the spell's duration, you can stream what the target sees via any screen you touch.</p><hr /><p><strong>Heightened (3rd)</strong> The spell's duration is 1 hour.</p>\n<p><strong>Heightened (6th)</strong> The spell's duration is 1 day.</p>",
+      "name": "Optics Feed"
     },
     "Overheat": {
       "description": "<p>You vent heat toward a nearby target. You deal 2d6 fire damage to the target. On a failed save, the target's held equipment becomes hot to the touch for the next round. Unless the target drops its currently held equipment at the start of its turn, it takes @Damage[(3*@item.rank)[fire]] damage.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6. Increase the damage of touching affected objects by 3.</p>",
@@ -1311,6 +1603,10 @@
         }
       },
       "spellTarget": "1 creature"
+    },
+    "Paywall": {
+      "description": "<p>You form a transparent wall of hardlight featuring payment terms in many languages. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 18, and 60 Hit Points, and its immune to critical hits and precision damage. The wall can be passed through by paying 10 credits and verifying the transaction as an single action with the auditory trait. Creatures that carry a credstick can pass, even if its empty, though in this case they pass through by taking on 10 credits of debt.</p><hr /><p><strong>Heightened (+1)</strong> The Hit Points of each section of the wall increase by 15.</p>",
+      "name": "Paywall"
     },
     "Peaceful Bubble": {
       "description": "<p>An opaque shell of drifting, iridescent runes covers the area, creating a bubble. You can choose to make the burst smaller, in 10-foot increments. The runes don't block travel, but those inside the bubble can't perceive those outside it and vice versa. Detection and scrying effects are likewise blocked.</p>\n<p>Creatures sleeping within the bubble are immune to dreams sent by spells. Those sleeping 8 hours reduce their @UUID[Compendium.sf2e.conditions.Item.3uh1r86TzbQvosxv]{Doomed} condition by 2 instead of 1.</p>",
@@ -1410,10 +1706,18 @@
       "description": "<p>You create a sudden vacuum, forcing creatures in the area to hold their breath or fall @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious} and start suffocating. The explosive decompression deals 5d12 bludgeoning damage to each creature in the area when the spell is cast or that enters the area during the duration (unless they were already in a vacuum), with a basic Fortitude save. Creatures who critically fail the save are also knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
       "name": "Pocket Vacuum"
     },
+    "Positronic Helmet": {
+      "description": "<p>A magical robotic headpiece builds out from you, transforming your brain into a central processing unit and bolstering your mind. You gain the tech trait for the duration of the spell. You gain a +1 status bonus to Perception checks and Will saves. You can Sustain this spell once per turn to fire a mental beam from the helmet that deals 2d10 mental damage to creatures in a @Template[type:line|distance:30] with a basic Will save.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.JBVWu61tmge51qK5]{Spell Effect: Positronic Helmet}</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+      "name": "Positronic Helmet"
+    },
     "Possession": {
       "description": "<p>You send your mind and soul into the target's body, attempting to take control. The target must attempt a Will save. If you want to exert less control over the target, you can choose to use the effects of any degree of success more favorable to the target.</p>\n<p>While you're possessing a target, your own body is @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious} and can't wake up normally. You can sense everything the possessed target does. You can Dismiss this spell. If the possessed body dies, the spell ends and you must succeed at a Fortitude save against your spell DC or be @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 hour, or 24 hours on a critical failure. If the spell ends during an encounter, you act just before the possessed creature's initiative.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> You possess the target but can't control it. You ride along in the body while the spell lasts.</p>\n<p><strong>Failure</strong> You possess the target and take partial control of it. You no longer have a separate turn; instead, you might control the target. At the start of each of the target's turns, it attempts another Will save. If it fails, it's @UUID[Compendium.sf2e.conditions.Item.9qGBRpbX9NEwtAAr]{Controlled} by you on that turn; if it succeeds, it chooses its own actions; and if it critically succeeds, it forces you out and the spell ends.</p>\n<p><strong>Critical Failure</strong> You possess the target fully, and it can only watch as you manipulate it like a puppet. The target is controlled by you.</p><hr /><p><strong>Heightened (9th)</strong> The duration is 10 minutes, and you can physically enter the creature's body, protecting your physical body while the spell lasts.</p>",
       "name": "Possession",
       "spellTarget": "1 living creature"
+    },
+    "Prayermoji": {
+      "description": "<p>You project an emoji of your deity's religious symbol around yourself. When you Cast the Spell and the first time you Sustain it on each subsequent turn, choose one of the following benefits depending on the emoji used.</p><ul><li><p><strong>Prayer of Grace</strong> You gain a +20-foot status bonus to your Speeds until the start of your next turn.</p></li><li><p><strong>Prayer of Healing</strong> You regain 4 Hit Points at the start of your next turn.</p></li><li><p><strong>Prayer of Protection</strong> You gain a +1 status bonus to AC and saving throws until the start of your next turn.</p></li><li><p><strong>Prayer of Retribution</strong> Until the start of your next turn, creatures that hit you with melee Strikes take 4 spirit damage.</p></li></ul><p>@UUID[Compendium.sf2e.spell-effects.Item.vRAHOPMR2JqsLzbt]{Spell Effect: Prayermoji}</p><hr /><p><strong>Heightened (+1)</strong> The Hit Points regained increase by 1, and the spirit damage increases by 1.</p>",
+      "name": "Prayermoji"
     },
     "Prestidigitation": {
       "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the spell. Each time you Sustain the spell, you can choose one of four options.</p><ul><li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li><li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li><li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or locus or cost for a spell.</li><li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object at 1 minute per Bulk.</li></ul><p><em>Prestidigitation</em> can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell.</p>",
@@ -1480,6 +1784,11 @@
       },
       "spellTarget": "1 object"
     },
+    "Read Memory": {
+      "description": "<p>You touch a computer screen, learning what it has recently displayed, even if it's been rebooted or used for something else since then. You choose one of the following pieces of information, and the computer truthfully displays or plays it.</p><ul><li><p>The last command entered into the target.</p></li><li><p>The name of the last file accessed on the target.</p></li><li><p>The name of the last file downloaded to or uploaded from the target.</p></li><li><p>The last 1 minute of audio played from the target.</p></li></ul><hr /><p><strong>Heightened (3rd)</strong> Choose two of the options.</p>\n<p><strong>Heightened (5th)</strong> Choose all of the options.</p>",
+      "name": "Read Memory",
+      "spellTarget": "1 functional comm unit or computer you can access"
+    },
     "Read Omens": {
       "description": "<p>You peek into the future. Choose a particular goal or activity you plan to engage in within 1 week, or an event you expect might happen within 1 week. You learn a cryptic clue or piece of advice that could help with the chosen event, often in the form of a rhyme or omen.</p>",
       "name": "Read Omens"
@@ -1492,6 +1801,10 @@
       "description": "<p>You touch a weapon with no remaining ammunition and recharge it with magical energy. The target gains ammunition or charges equal to its expend until the end of your next turn, allowing anyone holding the target to make one Strike with the weapon. This spell only recharges weapons that use ammunition with a cost of 10 credits or less.</p><hr /><p><strong>Heightened (3rd)</strong> The target gains ammunition or charges equal to double its expend.</p>\n<p><strong>Heightened (6th)</strong> The target gains ammunition or charges equal to triple its expend.</p>\n<p><strong>Heightened (9th)</strong> The target gains ammunition or charges equal to quadruple its expend.</p>",
       "name": "Recharge Weapon",
       "spellTarget": "1 weapon with capacity"
+    },
+    "Reflective Paneling": {
+      "description": "<p>The plates of your armor harden and become more reflective, enhanced with defensive magic. When you Cast this Spell, choose electricity, fire, piercing, or slashing damage. For the duration, you gain resistance 10 to that damage type and gain the @UUID[Compendium.sf2e.actions.Item.mlWK8VSSJm3iumy6]{Reflect Damage} reaction.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.JBadWKFEv0Zvic9g]{Spell Effect: Reflective Paneling}</p><hr /><p><strong>Heightened (8th)</strong> You can choose two damage types, and the resistance increases to 15. You can only Reflect Damage of one type at a time.</p>\n<p><strong>Heightened (10th)</strong> As 8th, except the spell protects you against all four damage types, and the resistance increases to 20.</p>",
+      "name": "Reflective Paneling"
     },
     "Regenerate": {
       "description": "<p>An infusion of vital energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from taking Hit Point damage and its @UUID[Compendium.sf2e.conditions.Item.yZRUzMqrMmfLu0V1]{Dying} condition can't increase to a value that would kill it (this stops most creatures' dying condition at dying 3), though if its @UUID[Compendium.sf2e.conditions.Item.Yl48xTdMh3aeQYL2]{Wounded} value becomes 4 or higher, it stays @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious} until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn.</p>\n<p>Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.dXq7z633ve4E0nlX]{Spell Effect: Regenerate}</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
@@ -1515,6 +1828,17 @@
     "Reorient": {
       "description": "<p>Applying a combination of vital energy and acupressure, you help the target regain its footing. The target loses the @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} condition if it has it. The target becomes immune to the off-guard condition until the start of your next turn, even if the condition would be circumstantially applied, such as by being flanked or @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. The target is then immune to reorient for 10 minutes.</p>",
       "name": "Reorient",
+      "spellTarget": "1 creature"
+    },
+    "Repair Protocols": {
+      "description": "<p>You use magic energy to quickly run a number of scripts in parallel that instruct a construct's inner mechanisms to repair themselves with the excess magic power. When you Cast this Spell and the first time you Sustain it on subsequent rounds, either one construct of your choice in range regains 1d8 Hit Points or two constructs of your choice in range each regain 1d4 Hit Points.</p><hr /><p><strong>Heightened (+1)</strong> The number of Hit Points regained increases by 1d8 if you target one construct or by 1d4 if you target two constructs.</p>",
+      "name": "Repair Protocols",
+      "spellDuration": "sustained up to 1 minute",
+      "spellTarget": "up to two constructs"
+    },
+    "Reparative Nanites": {
+      "description": "<p>You conjure a cloud of nanites that repair the target on a molecular level. The target gains fast healing 1.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.2rO9T7KQ3Hqz32OH]{Spell Effect: Reparative Nanites}</p><hr /><p><strong>Heightened (+1)</strong> The fast healing increases by 1.</p>",
+      "name": "Reparative Nanites",
       "spellTarget": "1 creature"
     },
     "Repulsion": {
@@ -1557,6 +1881,11 @@
       "name": "Revival",
       "spellTarget": "dead creatures and living creatures of your choice within range"
     },
+    "Rewire Flesh": {
+      "description": "<p>You rewrite the target's DNA as if it was code, painfully warping its biological functions to mimic the processes of a robot: its body becomes visibly robotic as its blood vessels form circuit-like patterns, its bones twist into straight lines, its movements become jerky, and its voice grows halting. The target takes 3d6 slashing damage and 3d6 persistent bleed damage and must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>\n<p><strong>Failure</strong> The target takes full damage, is @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 1 minute, and takes a –10-foot penalty to its Speeds for as long as it's clumsy.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double damage and is also @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as it's clumsy.</p><hr /><p><strong>Heightened (+1)</strong> The slashing damage and persistent bleed damage each increase by 1d6.</p>",
+      "name": "Rewire Flesh",
+      "spellTarget": "1 living creature"
+    },
     "Rewrite Memory": {
       "description": "<p>You alter the target's memories by erasing a memory, enhancing a memory's clarity, altering a memory, or adding a false memory. The target can attempt a Will save to resist the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and realizes you tried to alter its memory.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of <em>rewrite memory</em>, unless it identifies the spell.</p>\n<p><strong>Failure</strong> During the first 5 minutes of the spell's duration, you can Sustain the spell to modify a memory once each round. When you do, you imagine up to 6 seconds of memory to modify, to a maximum of 5 continuous minutes of memory.</p>\n<p>Any memories you've altered remain changed as long as the spell is active. If the target moves out of range before the 5 minutes is up, you can't alter any further memories.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can Cast the Spell on a willing target to suppress all memory of a particular topic, detailed in 50 words or fewer. The effect is permanent, and it patches these omissions with an indistinct haze.</p>",
       "name": "Rewrite Memory",
@@ -1567,6 +1896,10 @@
       "description": "<p>A spinning disk or smooth orb of shimmering steel leaps from one target to another. You deal 2d4 bludgeoning or slashing damage (with a basic Reflex save).</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
       "name": "Ricochet",
       "spellTarget": "1 or 2 creatures"
+    },
+    "Robo-Fist": {
+      "description": "<p>With a flash of magic, two of your limbs grow wires and plating before snapping together into a robotic structure, ending in an oversized and empowered robot fist. While you maintain these robot fists, the damage die for your fist increases to 1d6 instead of 1d4. You don't take the normal –2 circumstance penalty when making a lethal attack with your fist or any other unarmed attacks</p>\n<p>Up to twice when you Sustain this spell, you can launch one of your robot fists as a rocket, dealing 2d6 fire damage to all creatures in a 10-foot burst up to 60 feet away (basic Reflex save). Once you've launched both your robot fists, the spell ends.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.CVsq9wKZ6bFBeuGT]{Spell Effect: Robo-Fist}</p><hr /><p><strong>Heightened (+1)</strong> The fire damage increases by 1d6.</p>",
+      "name": "Robo-Fist"
     },
     "Rocket Dash": {
       "description": "<p>You emit a rocket of flame from behind you and blast forward. You move in a straight line up to twice your Speed; you can move through spaces occupied by creatures, and the movement doesn't trigger reactions. Creatures in the area take 6d12 fire damage with a basic Reflex save. On a critical failure, a creature also takes 2d6 persistent fire damage and is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. You reappear at the end of the line.</p><hr /><p><strong>Heightened (+2)</strong> The fire damage increases by 2d12, and the persistent fire damage on a critical failure increases by 1d6.</p>",
@@ -1589,6 +1922,14 @@
       "description": "<p>You create an @UUID[Compendium.sf2e.conditions.Item.zJxUflt9np0q4yML]{Invisible}, floating eye, 1 inch in diameter, at a location you can see within 500 feet. It sees in all directions with your normal visual senses and continuously transmits what it sees to you.</p>\n<p>The first time you Sustain the spell each round, you can either move the eye up to 30 feet, seeing only things in front of the eye, or move it up to 10 feet, seeing everything in all directions around it. There is no limit to how far from you the eye can move, but the spell ends immediately if you and the eye ever cease to be on the same plane of existence. You can attempt Seek actions through the eye if you want to attempt Perception checks with it. Any damage dealt to the eye destroys it and ends the spell.</p>",
       "name": "Scouting Eye",
       "spellRange": "see text"
+    },
+    "Scrap Shell": {
+      "description": "<p><strong>Trigger</strong> You're critically hit by a damage-dealing effect or Strike.</p><hr /><p>You snap a layer of brittle scrap into place between you and the triggering blow, the scrap shatters and absorbs some of the force of the impact. The scrap has Hardness 5 and @Damage[10[healing]] Hit Points. If the scrap is destroyed, you take any excess damage that the scrap didn't absorb. After taking the blow, the scrap collapses into a pile of junk.</p><hr /><p><strong>Heightened (+1)</strong> The scrap's Hit Points increase by 10.</p>",
+      "name": "Scrap Shell"
+    },
+    "Scrap Spray": {
+      "description": "<p>You spray a blast of jagged scrap in an area in front of you. The scrap spray deals 1d6 bludgeoning, slashing, or piercing damage to each creature in the area. Each creature must attempt a Reflex save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the beginning of your next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is suppressed until the beginning of your next turn.</p><hr /><p><strong>Heightened (+2)</strong> Increase the damage by 3d6.</p>",
+      "name": "Scrap Spray"
     },
     "Scrying": {
       "description": "<p>You magically spy on a creature of your choice. <em>Scrying</em> works like @UUID[Compendium.sf2e.spells.Item.zvKWclOZ7A53DObE]{Clairvoyance}, except that the image you receive is less precise, insufficient for <em>teleport</em> and similar spells. Instead of creating an eye in a set location within 500 feet, you instead create an eye that manifests just above the target. You can choose a target either by name or by touching one of its possessions or a piece of its body. If you haven't met the target in person, <em>scrying</em>'s DC is 2 lower, and if you are unaware of the target's identity (perhaps because you found an unknown creature's fang at a crime scene), the DC is instead 10 lower.</p>\n<p>The effect of <em>scrying</em> depends on the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The spell fails and the target is temporarily immune for 1 week. The target also gains a glimpse of you and learns its rough distance and direction from you.</p>\n<p><strong>Success</strong> The spell fails and the target is temporarily immune for 1 day.</p>\n<p><strong>Failure</strong> The spell succeeds.</p>\n<p><strong>Critical Failure</strong> The spell succeeds, and the eye follows the target if it moves, traveling up to 60 feet per round.</p>",
@@ -1663,11 +2004,19 @@
       "name": "Shield",
       "spellDuration": "until the start of your next turn"
     },
+    "Shield Wall": {
+      "description": "<p>You magnify the protective power of your shield, slamming it into the ground and causing it to grow into a wall up to 60 feet long, 30 feet high, and 1/4 inch thick. The wall is made of the same material as the locus and doesn't need to stand vertically, forming a straight line parallel to the shield's surface. If the wall would pass through a creature or object, the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, is immune to critical hits and precision damage, and has the same Hardness, HP, and BT as the locus. Creatures can move through a section of the wall that's broken.</p>",
+      "name": "Shield Wall"
+    },
     "Shifting Surge": {
       "description": "<p>You release a surge of magical energy that temporarily changes the type of damage dealt by a weapon. The next Strike the weapon makes deals your choice of acid, cold, electricity, fire, or sonic damage and deals an additional 1d6 extra damage of the same type as the weapon's normal damage.</p><hr /><p><strong>Heightened (+2)</strong> The extra damage increases by 1d6.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.pWm0NCsxjxTUCJ7y]{Spell Effect: Shifting Surge}</p>",
       "name": "Shifting Surge",
       "spellDuration": "1 minute or until discharged",
       "spellTarget": "one weapon held by you or a willing ally that deals acid, cold, electricity, fire, or sonic damage"
+    },
+    "Short-Circuit Reality": {
+      "description": "<p>You create a pathway through reality, launching yourself across space to get the jump on a foe. You teleport to an unoccupied space you can see within 30 feet. Then, attempt a Strike against a creature; you can use your spell attack roll for this Strike. The target is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against this Strike.</p><hr /><p><strong>Heightened (+1)</strong> Increase distance you can teleport by 20 feet.</p>",
+      "name": "Short-Circuit Reality"
     },
     "Shrink": {
       "description": "<p>You warp space to make a creature smaller. The target shrinks to become Tiny in size. Its equipment shrinks with it but returns to its original size if removed. The creature's reach changes to 0 feet. This spell has no effect on a Tiny creature.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.LXf1Cqi1zyo4DaLv]{Spell Effect: Shrink}</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The spell can target up to 10 creatures.</p>",
@@ -1758,6 +2107,10 @@
       "name": "Sound Body",
       "spellTarget": "1 willing creature"
     },
+    "Spark of the Spirit": {
+      "description": "<p>You create a sphere of spiritual electricity. Each ally that begins their turn in the area is @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use this additional action only to Interact or Step. Allies quickened in this way immediately regain all charges on batteries in their possession and deal an additional 3d4 electricity damage when they Strike with a tech weapon.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.uFR5PlthyVRRVmKr]{Spell Effect: Spark of the Spirit}</p>",
+      "name": "Spark of the Spirit"
+    },
     "Speak with Animals": {
       "description": "<p>You can ask questions of, receive answers from, and use the Diplomacy skill with animals. The spell doesn't make them more friendly than normal. Cunning animals are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
       "name": "Speak with Animals"
@@ -1773,6 +2126,11 @@
     "Speak with Stones": {
       "description": "<p>You can ask questions of and receive answers from natural or worked stone. While stone is not intelligent, you speak with the natural spirits of the stone, which have a personality colored by the type of stone, as well as by the type of structure the stone is part of, for worked stone. A stone's perspective, perception, and knowledge give it a worldview different enough from a human's that it doesn't consider the same details important. Stones can mostly answer questions about creatures that touched them in the past and what is concealed beneath or behind them.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The duration is 8 hours.</p>",
       "name": "Speak with Stones"
+    },
+    "Speedrun": {
+      "description": "<p>You become a flickering echo clipping through the normal parameters of reality. You gain resistance 10 to all damage (except force damage). You gain the cosmic and incorporeal traits, allowing you to phase through walls and move through the air as easily as you would normally walk. You can move through enemy squares (unless they're incorporeal), though your movement still triggers reactions. If your gear is overclocked, you can extend Speedrun's duration by 1 round by making your gear no longer overclocked as you Cast the Spell.</p>",
+      "name": "Speedrun",
+      "spellDuration": "1 round"
     },
     "Spirit Blast": {
       "description": "<p>You concentrate ethereal energy and attack a creature's spirit, dealing 16d6 spirit damage with a basic Fortitude save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
@@ -1859,6 +2217,12 @@
       "description": "<p>You summon a creature that has the dragon trait and whose level is 5 or lower to fight for you. If the dragon has a magical tradition trait (arcane, divine, occult, or primal), you can summon it only if you're using that tradition to cast summon dragon.</p>\n<hr />\n<p><strong>Heightened</strong> As listed in the @UUID[Compendium.sf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.8gcp880pEWZ9VPnF]{summon} trait.</p>",
       "name": "Summon Dragon"
     },
+    "Summon Drift Prophet": {
+      "description": "<p>You call forth a spectra tasked with monitoring the Drift and presenting its gift to technologically advanced civilizations. The spectra occupies the space of a Large creature, and has a Speed of 40 feet and a fly Speed of 60 feet with the cosmic trait.</p>\n<p><strong>Arrive</strong> <em>Establish Universal Network</em> With a burst of divine energy from the Drift, the spectra restores @Damage[(5*(@item.level - 1))[healing]|options:area-damage] Hit Points to all creatures or objects with the tech trait within a @Template[type:emanation|distance:30] and reduces their glitching condition by 5.</p>\n<p><strong>Depart</strong> <em>Terminate Connection</em> Each creature or attended object with the tech trait within a @Template[type:emanation|distance:30] must attempt a Fortitude save. On a failed save, the creature or object becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 5}, and creatures are @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} while they're glitching.</p><hr /><p><strong>Heightened (+1)</strong> Increase the Hit Points restored by 5.</p>",
+      "name": "Summon Drift Prophet",
+      "spellTarget": "until the end of your next turn",
+      "spellTime": "5"
+    },
     "Summon Elemental": {
       "description": "<p>You summon a creature that has the elemental trait and whose level is 1 or lower to fight for you.</p>\n<hr />\n<p><strong>Heightened</strong> As listed in the @UUID[Compendium.sf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.8gcp880pEWZ9VPnF]{summon} trait.</p>",
       "name": "Summon Elemental"
@@ -1878,6 +2242,11 @@
     "Summon Giant": {
       "description": "<p>You summon a creature that has the giant trait and whose level is 5 or lower to fight for you.</p>\n<hr />\n<p><strong>Heightened</strong> As listed in the @UUID[Compendium.sf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.8gcp880pEWZ9VPnF]{summon} trait.</p>",
       "name": "Summon Giant"
+    },
+    "Summon Giant Robot": {
+      "description": "<p>You call forth a titanic robot. The robot occupies the space of a Huge creature, and has a Speed of 80 feet and a fly Speed of 100 feet with the cosmic trait.</p>\n<p><strong>Arrive</strong> <em>Ultra Cannon Onslaught</em> (traversal) The robot Strides once in a straight line, trampling enemies underfoot to deal @Damage[10d8[bludgeoning]|options:area-damage] damage (basic Reflex save). It then unleashes a volley of lasers from its chest in a @Template[type:cone|distance:60] or @Template[type:line|distance:120], which can't overlap with the area of the its Stride, dealing @Damage[10d8[force]|options:area-damage] damage (basic Reflex save).</p>\n<p><strong>Depart</strong> <em>Missile Silo</em> Unleashed The robot fires rockets at up to 8 different creatures up to 120 feet away, dealing @Damage[9d8[fire]|options:area-damage] damage (basic Reflex save).</p>",
+      "name": "Summon Giant Robot",
+      "spellDuration": "until the end of your next turn"
     },
     "Summon Instrument": {
       "description": "<p>You materialize a handheld @UUID[Compendium.sf2e.equipment.Item.oRuWi8EhgBiS3cbh]{Musical Instrument (Handheld, Commercial)} in your grasp. The instrument is typical for its type, but it plays for only you. It vanishes when the spell ends. If you cast summon instrument again, any instrument you previously summoned disappears.</p><hr /><p><strong>Heightened (5th)</strong> The instrument is instead a @UUID[Compendium.sf2e.equipment.Item.TwnyjvE7ZX35lCrj]{Musical Instrument (Handheld, Tactical)}.</p>",
@@ -1903,6 +2272,23 @@
       "description": "<p>A powerful globe of searing sunlight explodes in the area, dealing 8d10 fire damage to all creatures in the area, plus an additional @Damage[(@item.level+1)d10[vitality]] damage to undead creatures. Each creature in the area must attempt a Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and becomes @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} permanently.</p>\n<p>If the globe overlaps with an area of magical darkness, <em>sunburst</em> attempts to counteract the darkness effect.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 1d10, and the vitality damage against undead increases by 1d10.</p>",
       "name": "Sunburst"
     },
+    "Supercharge Armor": {
+      "description": "<p>You infuse your armor with magical energy to bolster your defenses. You materialize a layer of energy encasing your armor that functions as a superior force field. You then become immune to supercharge armor for 10 minutes.</p><hr /><p><strong>Heightened (7th)</strong> The energy functions as an elite force field.</p>\n<p><strong>Heightened (9th)</strong> The energy functions as an ultimate force field.</p>",
+      "name": "Supercharge Armor"
+    },
+    "Supercharge Prism": {
+      "description": "<p>You toss a handful of fragments from used spell gems forward through a tech rune you've drawn in the air, turning them into raw magical energy and shooting that energy forward in a beam. Allies in the area gain 6d6 temporary Hit Points for 1 minute. Enemies in the area take 6d6 force damage and must attempt a Reflex save. If a creature is moved as a result of their saving throw, you determine if they're pushed directly away from you or pulled directly toward you by this forced movement.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is moved 5 feet.</p>\n<p><strong>Failure</strong> The creature takes full damage and is moved 10 feet.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is moved 15 feet.</p><hr /><p><strong>Heightened (+1)</strong> The temporary Hit Points and the force damage both increase by 1d6.</p>",
+      "name": "Supercharge Prism"
+    },
+    "Supercharge Satellite": {
+      "description": "<p>You infuse the target with magical energy to increase its processing power. The target gains the @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} condition and can use the extra action each round only to Stride or Strike.</p>",
+      "name": "Supercharge Satellite",
+      "spellTarget": "One tech minion you control"
+    },
+    "Supercharge Synapses": {
+      "description": "<p>You infuse yourself with magical energy to speed up your attacks. You gain the @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} condition and can use the extra action each round only to Overclock Pulse or Strike.</p>",
+      "name": "Supercharge Synapses"
+    },
     "Supercharge Weapon": {
       "description": "<p>You draw in and condense ambient magical energy from around you to power up a weapon. The next Strike made using that weapon is supercharged. That Strike deals an additional 1d6 damage of the same type as the weapon's normal damage.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.zzOekbiIKePQDQKy]{Spell Effect: Supercharge Weapon}</p><hr /><p><strong>Heightened (+2)</strong> The extra damage increases by 1d6.</p>",
       "name": "Supercharge Weapon",
@@ -1918,6 +2304,16 @@
       "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} or @UUID[Compendium.sf2e.conditions.Item.iU0fEDdBp3rXpTMC]{Hidden}. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.fpGDAz2v5PG0zUSl]{Spell Effect: Sure Strike}</p>",
       "name": "Sure Strike",
       "spellDuration": "until the end of your turn"
+    },
+    "Sure Tracking": {
+      "description": "<p>You upgrade a weapon to fire ammunition that can make precise adjustments to its position in space to better track targets. A creature using the weapon reduces the penalty for firing into the weapon's second range increment from –2 to 0. Additionally, whenever a creature makes a ranged Strike with the weapon that targets a single creature, the attack ignores the target's circumstance bonus to AC from cover.</p><hr /><p><strong>Heightened (5th)</strong> You can target up to 10 weapons.</p>",
+      "name": "Sure Tracking",
+      "spellTarget": "1 ranged weapon with the tech trait"
+    },
+    "Surveillance Vision": {
+      "description": "<p>You create an invisible security camera with 1 HP and AC 10 anywhere within 10 feet on a solid surface. It sees in all directions with your normal visual senses. You can constantly perceive through your own senses and the vision of the camera as long as you're on the same plane. Only one camera can be active at a time; if you make a second camera, the first is destroyed. You can Dismiss this spell.</p><hr /><p><strong>Heightened (7th)</strong> The duration becomes unlimited.</p>",
+      "name": "Surveillance Vision",
+      "spellTarget": "1 solid surface"
     },
     "Synaptic Pulse": {
       "description": "<p>You emit a pulsating mental blast that penetrates the minds of all enemies in the area. Each enemy in the area must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The creature is Stunned for 1 round.</p>",
@@ -1945,6 +2341,16 @@
     "Tech Intuition": {
       "description": "<p><strong>Trigger</strong> You attempt a skill check to @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} about a piece of technology or to use a technological device, or you roll a saving throw against an effect with the technology trait.</p><hr /><p>Focusing on a piece of technology, you get a brief glimpse of its nature and function. You roll the triggering check twice (or the GM rolls in the case of checks to Recall Knowledge) and use the better result.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.NcPiz5TOhnel5ZoX]{Spell Effect: Tech Intuition}</p>",
       "name": "Tech Intuition"
+    },
+    "Technological Combustion": {
+      "description": "<p>You rapidly overheat the systems of a technological weapon, causing it to expel a devastating wave of heat. If the target is held or worn, the creature holding or wielding it attempts a Reflex save. On a failure, or if the target is unattended, the target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2}, and all creatures within 20 feet of the target take @Damage[5d10[fire]] damage with a basic Reflex save.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+      "name": "Technological Combustion",
+      "spellTarget": "1 object or weapon with the tech trait"
+    },
+    "Technophobia": {
+      "description": "<p>You gather the message threads of thousands of angry technology users from the infosphere, making their pain a reality for your target whenever they use technology. The target must attempt a Will saving throw.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The first time each round the target uses a tech item, it takes @Damage[2d10[mental]] damage.</p>\n<p><strong>Failure</strong> As success, but the target becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1} and takes @Damage[4d10[mental]] damage.</p>\n<p><strong>Critical Failure</strong> As success, but the target becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes @Damage[8d10[mental]] damage.</p>",
+      "name": "Technophobia",
+      "spellTarget": "1 creature"
     },
     "Telekinetic Hand": {
       "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
@@ -2011,9 +2417,20 @@
       "description": "<p>You refract latent energy from the Dimension of Time into your current plane in the form of a massive blade. The blade deals 5d6 slashing damage to all creatures in the area as it causes time to pass rapidly in a thin slice of their bodies. Creatures in the area must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
       "name": "Time's Edge"
     },
+    "Torrent Spell": {
+      "description": "<p><strong>Trigger</strong> A creature Casts a Spell</p>\n<p><strong>Requirements</strong> You have a spell gem with a spell stored that's of a rank equal to or higher than the triggering spell.</p><hr /><p>You quickly hack into the tapestry of magic another creature is casting. Replace the spell in the required spell gem with the spell that was cast, at the rank and tradition at which it was cast. The spell gem is destroyed during your next daily preparations.</p>",
+      "name": "Torrent Spell",
+      "spellTarget": "1 creature"
+    },
     "Toxic Cloud": {
       "description": "<p>You conjure a poisonous fog. This functions as @UUID[Compendium.sf2e.spells.Item.9XHmC2JgTUIQ1CCm]{Mist}, except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
       "name": "Toxic Cloud"
+    },
+    "Transfer Consciousness": {
+      "description": "<p>You project your mind into an advanced piece of technology, allowing you to interact with its systems as if they were your own body. The target's level must be equal to or lower than your own. Your own body is helpless and falls @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone} as if you were @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious}. At the end of the spell, your mind returns to your body instantly as long as your body and the target are on the same plane. Otherwise, the spell becomes permanent, and your real body enters a coma.</p>\n<p>While your mind is in a computer, for 1 hour, you can roll your spell attack modifier instead of Computers for Computers skill actions related to that system, and you can attempt trained Computers skill actions even if you're untrained.</p>\n<p>While your mind is in a construct, you have access to its physical functions, allowing you to control it as if it was your own body for 1 minute. You can use any special actions the construct has access to, though you can't cast its spells, if any. You can cast your own spells using the construct's body.</p>",
+      "name": "Transfer Consciousness",
+      "spellDuration": "varies",
+      "spellTarget": "1 willing computer or tech construct"
     },
     "Translate": {
       "description": "<p>The target can understand the meaning of a single language it is hearing or reading when you cast the spell. This doesn't let it understand codes, language couched in metaphor, and the like (subject to GM discretion). If the target can hear multiple languages and knows that, it can choose which language to understand; otherwise, choose one of the languages randomly.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target can also speak the language.</p>\n<p><strong>Heightened (4th)</strong> You can target up to 10 creatures, and targets can also speak the language.</p>",
@@ -2044,6 +2461,10 @@
       "name": "Truespeech",
       "spellTarget": "1 creature"
     },
+    "Turbulent Toys": {
+      "description": "<p>Magical battery-powered children's toys fill the area and begin rolling, bumping, and flipping over one another. The toys are semi-corporeal constructs that can't be moved or damaged. When you Cast the Spell and the first time you Sustain it each subsequent round, you choose the turbulence the toys create, then move the area up to 5 feet.</p><ul><li><p><strong>Ankle Bumpers</strong> The toys jostle against the feet of creatures in the area, and each creature must succeed at a Reflex save or fall @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p></li><li><p><strong>Battery Hogs</strong> The toys steal energy to power themselves. All battery-operated devices in the area lose 2 charges.</p></li><li><p><strong>Strobe Rave</strong> The toys unleash a dizzying array of flashing lights and puffs of colored smoke. Each creature in the area must succeed at a Will save or be @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your next turn. This effect has the visual trait.</p>\n</li></ul>",
+      "name": "Turbulent Toys"
+    },
     "Twisted Vision": {
       "description": "<p>You blur a creature's senses, preventing them from recognizing their own allies in the heat of battle. This spell was developed by the Corpse Fleet to target living mystics and envoys who might heal or coordinate the actions of living enemies standing against their dread fleets. How badly this debilitates the target depends on the result of its saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn, but only for purposes of targeting their allies with beneficial effects or abilities.</p>\n<p><strong>Failure</strong> The creature treats all of its allies as though they were undetected for purposes of targeting their allies with beneficial effects, abilities, or tactical movement. If the creature succeeds at the @UUID[Compendium.sf2e.actions.Item.BlAOM2X92SI6HMtJ]{Seek} action against this spell's save DC, they can treat their allies as hidden for the duration of the spell.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature cannot attempt to use the Seek action to find their allies while this spell is sustained.</p>",
       "name": "Twisted Vision",
@@ -2069,6 +2490,11 @@
       "description": "<p>You free those who travel alongside you from environmental hindrances. Targets don't take circumstance penalties to Speed from vegetation, rubble, winds, or other properties of the environment, and they ignore difficult terrain from such environmental properties.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The targets also ignore greater difficult terrain from environmental properties.</p>",
       "name": "Unfettered Pack",
       "spellTarget": "up to 10 creatures"
+    },
+    "Upgrade Construct": {
+      "description": "<p>You upgrade the weapons and armor of the target. The target gains a +1 status bonus to AC, and the target's Strikes deal an additional 2d4 damage of the same type as the base weapon.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.2scpka5RpCsYxXsx]{Spell Effect: Upgrade Construct}</p><hr /><p><strong>Heightened (+3)</strong> The status bonus to AC increases by 1, and the additional damage increases by 1d4.</p>",
+      "name": "Upgrade Construct",
+      "spellTarget": "1 creature with the tech trait"
     },
     "Vague Idea": {
       "description": "<p>You jog your own memory, or that of a nearby creature, helping them remember a bit of information at the cost of some of their visual acuity. A willing target may intentionally choose to take the effects of a failed saving throw.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn, but receives a +1 circumstance bonus on all checks to @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} until the end of its next turn.</p><hr /><p><strong>Heightened (4th)</strong> The circumstance bonus increases to +2.</p>\n<p><strong>Heightened (7th)</strong> The circumstance bonus increases to +3.</p>\n<p><strong>Heightened (10th)</strong> The circumstance bonus increases to +4.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.NP75qOKsF43zLaiZ]{Spell Effect: Vague Idea}</p>",
@@ -2176,6 +2602,10 @@
       "description": "<p>You howl a lament of damned souls. Each living enemy in the area takes 8d10 void damage and must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained} [[/r 1d4]].</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>",
       "name": "Wails of the Damned"
     },
+    "Wall of Coiling Lightning": {
+      "description": "<p>You create 20-foot-tall metal coils that harness the power of electricity, arcing current between two unoccupied spaces up to 30 feet apart. These coils each have AC 10, 60 Hit Points, and are immune to critical hits and precision damage. The spell ends if either coil is destroyed. A constant stream of electricity flows between these coils in a visible, straight line. Creatures can see and move through the coils; however, if a creature enters or starts its turn in the stream of electricity or within 5 feet of a coil, it takes 4d12 electricity damage with a basic Reflex save. On a failed save, the target is also @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p><hr /><p><strong>Heightened (+2)</strong> The damage increases by 1d12.</p>",
+      "name": "Wall of Coiling Lightning"
+    },
     "Wall of Fire": {
       "description": "<p>You raise a blazing wall that burns creatures passing through it. You create either a 5-foot-thick wall of flame in a straight line up to 60 feet long and 10 feet high, or a 5-foot-thick, 10-foot-radius ring of flame with the same height. The wall stands vertically in either form; if you wish, the wall can be of a shorter length or height. Everything on each side of the wall is @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} from creatures on the opposite side. Any creature that crosses the wall or is occupying the wall's area at the start of its turn takes 4d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 1d6.</p>",
       "name": "Wall of Fire"
@@ -2187,6 +2617,10 @@
     "Wall of Ice": {
       "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness 15 to fire; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p><hr /><p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>",
       "name": "Wall of Ice"
+    },
+    "Wall of Junk": {
+      "description": "<p>You sculpt a barrier of trash that blocks sight and once broken, impedes foes. You create a 1-foot-thick wall of junk in either a hemisphere with a radius of 10 feet or a straight line up to 60 feet long and 10 feet high. The wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface and can't pass through any creatures or objects, or the spell is lost.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 5, 20 Hit Points, and is immune to critical hits and precision damage. A destroyed section leaves behind a heap of jagged scrap that's difficult and hazardous terrain, dealing 2d6 slashing damage to a creature that enters the terrain for the first time on its turn.</p><hr /><p><strong>Heightened (+2)</strong> The slashing damage increases by 1d6.</p>",
+      "name": "Wall of Junk"
     },
     "Wall of Plasma": {
       "description": "<p>You shape a wall of crackling plasma that burns creatures passing through it. You create either a 5-foot-thick wall of plasma in a straight line up to 60 feet long and 10 feet high, or a 5-foot-thick, 10-foot-radius ring of plasma with the same height. The wall stands vertically in either form; if you wish, the wall can be of a shorter length or height. Everything on each side of the wall is @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} from creatures on the opposite side. Any creature that crosses the wall or is occupying the wall's area at the start of its turn takes 4d6 fire damage and 2d6 persistent electricity damage.</p><hr /><p><strong>Heightened (+1)</strong> The persistent electricity damage increases by 1d6.</p>",
@@ -2278,6 +2712,10 @@
       "spellRitualPrimaryCheck": "Arcana (legendary), Nature (legendary), Occultism (legendary), or Religion (legendary)",
       "spellRitualSecondaryChecks": "Crafting, Diplomacy",
       "spellTarget": "1 creature"
+    },
+    "Wishborne Shot": {
+      "description": "<p>You wish for your next shot to go where you desire. The next time you make a Strike with the locus before the end of your turn, you ignore your target's cover and any flat check required due to the target being @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} or hidden.</p>",
+      "name": "Wishborne Shot"
     },
     "Wisp Ally": {
       "description": "<p>You summon a Tiny bouncing wisp of light that easily distracts even the most determined of combatants. The wisp floats near your target. A wisp doesn't take up space, grant flanking, or have any other attributes a creature would. The wisp generates bright light in a 10-foot radius. When you Cast the Spell and each time you Sustain the spell, your wisp attempts to distract your target, which must succeed at a Will save or become @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn. A creature who critically succeeds becomes immune to wisp ally for 1 hour.</p><hr /><p><strong>Heightened (+1)</strong> You create one additional wisp, allowing you to choose a different target. Each wisp you create must have a different target, and all of them attempt to distract their targets at the same time when you cast or Sustain this spell.</p>",

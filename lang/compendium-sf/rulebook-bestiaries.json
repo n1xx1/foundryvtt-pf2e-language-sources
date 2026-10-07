@@ -1,10 +1,132 @@
 {
   "entries": {
+    "Acid Skiff": {
+      "items": {
+        "gYh3IQkdZZvH16n2": {
+          "description": "<p>An acid skiff's hull is fully enclosed and enchanted with magical radiation wards. Its crew and passengers aren't exposed to radiation sickness when the vessel travels through areas where they normally would be. Alternatively, the passenger compartment can be converted to store radioactive materials securely, and the pilot and anyone outside the vehicle aren't exposed to radiation sickness from items stored within.</p>",
+          "name": "Containment Hull"
+        },
+        "x0vdjo018mcRyoPt": {
+          "description": "<p>An acid skiff maintains an altitude of 6 inches above other surfaces, such as the ground or water. If driven off a high surface, the acid skiff loses 20 feet of altitude per round, landing without harm to the skiff or its passengers.</p>",
+          "name": "Hover"
+        }
+      },
+      "name": "Acid Skiff"
+    },
+    "Aerobike": {
+      "items": {
+        "ZBAGCDWsmHzHHJNU": {
+          "description": "<p>The pilot of an aerobike can add the reckless trait to a Drive action, or attempt the Piloting check with a –1 circumstance penalty if it was already reckless, to shift the vehicle 5 feet to either side at any point during the movement without changing its heading.</p>",
+          "name": "Bank"
+        }
+      },
+      "name": "Aerobike"
+    },
+    "All-Terrain Hauler": {
+      "items": {
+        "7tRBaxTFWuIEWwLo": {
+          "description": "<p>An all-terrain hauler's cargo compartment can securely hold up to 200 Bulk of cargo, which takes no damage unless the hauler is fully destroyed. This compartment can be reconfigured to carry six additional passengers.</p>",
+          "name": "Secured Storage"
+        },
+        "Q8RAVpicQjqOHLHp": {
+          "description": "<p>An all-terrain hauler ignores non-magical difficult terrain and greater difficult terrain.</p>",
+          "name": "All-Terrain Treads"
+        }
+      },
+      "name": "All-Terrain Hauler"
+    },
+    "Ancient Bombardment": {
+      "description": "<p>Stray munitions from an ancient battle hurtle across space and time, seeking targets they were never intended for.</p>",
+      "hazardReset": "<p>The hazard resets after 1 day.</p>",
+      "hazardRoutine": "<p>(1 action) Each missile moves 2 zones toward the triggering starship. When a missile reaches the starship's zone, it explodes, dealing @Damage[3d10[fire],3d10[piercing]] damage to the starship (@Check[reflex|dc:38|basic] save). Each missile pursues the triggering starship until it explodes or is disabled or destroyed.</p>",
+      "name": "Ancient Bombardment"
+    },
     "Anti-Gravity Pulse": {
       "description": "<p>A harmful pulse of anti-gravity is activated by a sensor that detects motion within 30 feet.</p>",
       "hazardDisable": "<p>@Check[computers|dc:18] (trained) to jam the motion detector's signal or @Check[thievery|dc:16] (trained) to deactivate the motion detector</p>",
       "hazardReset": "<p>The trap resets after 15 minutes.</p>",
       "name": "Anti-Gravity Pulse"
+    },
+    "Apex Battleship": {
+      "items": {
+        "56QyNixIWiCV4swN": {
+          "description": "<p><strong>Frequency</strong> four times per day</p><hr /><p><strong>Effect</strong> The battleship unleashes a barrage from its artillery batteries, targeting a @Template[type:burst|distance:20] within 200 feet. Creatures and objects in the area take @Damage[4d8[fire]|options:area-damage] damage and @Damage[4d8[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:32|basic] save). This ability can be used by crew or passengers, in addition to the pilot.</p>",
+          "name": "Artillery Battery"
+        },
+        "YOBXvsNcirCPPgyC": {
+          "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> The battleship unleashes an electromagnetic pulse, disabling enemy ships. Creatures and objects in a @Template[type:emanation|distance:50] must attempt a @Check[fortitude|dc:32] saving throw.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} for 1 round.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 4} for 1 minute.</p>",
+          "name": "EMP"
+        },
+        "ZscmaRm6vYkDjO7i": {
+          "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The battleship sweeps its massive laser across the battlefield, dealing @Damage[8d6[fire]|options:area-damage] damage to creatures and objects in a @Template[type:cone|distance:60] (@Check[reflex|dc:32|basic] save). This ability can be used by crew or passengers, in addition to the pilot.</p>",
+          "name": "Laser Sweep"
+        }
+      },
+      "name": "Apex Battleship"
+    },
+    "Armored Personnel Carrier": {
+      "items": {
+        "ZSGQnxgnxfCyExyQ": {
+          "description": "<p>An armored personnel carrier has two weapon mounts, one on each side, which can each have any ranged weapon installed or removed with two Interact actions. Any of the carrier's passengers can make Strikes with weapons installed this way. Weapons installed this way that require batteries don't consume any charges when fired, as they can draw power directly from the carrier's engine.</p>",
+          "name": "Dual Weapon Mounts"
+        }
+      },
+      "name": "Armored Personnel Carrier"
+    },
+    "Asteroid Field": {
+      "description": "<p>A sprawling field of floating rocks litters this part of space. The hazard is a Large starship object.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:21] (trained; scanners) to calculate a safe route, or @Check[piloting|dc:23] (trained; pilot's console) to navigate around the hazard (these checks don't disable the hazard)</p>",
+      "hazardReset": "<p>The asteroid field resets automatically until at least 10 asteroids have been destroyed, eliminating the hazard.</p>",
+      "name": "Asteroid Field"
+    },
+    "Astral Barnacles": {
+      "description": "<p>Floating barnacles cling to the starship passing by.</p>",
+      "hazardDisable": "<p>@Check[nature|dc:13] (trained; magic conduit) to repel, or @Check[piloting|dc:16] (trained; pilot's console) to shake off the barnacles</p>",
+      "name": "Astral Barnacles"
+    },
+    "Biosub": {
+      "items": {
+        "4OGw8UGC1X5xLEbp": {
+          "description": "<p>Though a biosub is partially alive, its technological components make it more resistant to effects most vehicles are immune to (and vice versa). Any effect that applies to creatures or objects affects a biosub, though it gets a +2 circumstance bonus to saves against effects that would normally only affect one or the other.</p>",
+          "name": "Semi-Living"
+        },
+        "8CG4srpHCBbaTVe7": {
+          "description": "<p>A biosub can travel beneath the surface of the water, built to withstand water pressure at any depth.</p>",
+          "name": "Submersible"
+        },
+        "FcB6W0IWdoqHK8D6": {
+          "description": "<p>A biosub's gills and internal gut biome can produce air, food, and water for its crew indefinitely, though the ship must be fed a Medium creature (usually a fish) every day to maintain these systems.</p>",
+          "name": "Organic Life Support"
+        }
+      },
+      "name": "Biosub"
+    },
+    "Black Hole": {
+      "description": "<p>A dark orb of super-compressed matter pulls everything toward it.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:35] (expert; scanners), Nature (expert; scanners), or Physical Science Lore (trained; scanners) to calculate a safe path around the hazard, or @Check[piloting|dc:40] (expert; pilot's console) to avoid the event horizon; a success doesn't disable the hazard (see below)</p>",
+      "hazardReset": "<p>This hazard can't be permanently disabled, only escaped, and resets immediately.</p>",
+      "hazardRoutine": "<p>(1 action) The hazard pulls the starship 1 zone toward it and continues to trap the starship. The starship experiences additional effects depending on how close it is to the hazard. A starship's speed cannot be reduced below 1 from this hazard.</p><p><strong>Within 10 zones:</strong> The starship's Speed is reduced by 1 zone.</p><p><strong>Within 6 zones:</strong> The starship's Speed is reduced by 2 zones.</p><p><strong>Within 4 zones:</strong> The starship's Speed is reduced by 4 zones, and two randomly determined battle stations are malfunctioning.</p><p><strong>Within 2 zones:</strong> The starship's Speed is reduced to 1 zone, and all battle stations are malfunctioning.</p><p><strong>Event Horizon (hazard's zone):</strong> The starship's battle stations are malfunctioning. The starship takes @Damage[(3d12+17)[bludgeoning]] damage each round from crushing gravity with a @Check[fortitude|dc:40|basic] save. If the starship is destroyed, all creatures and objects inside take damage instead.</p>",
+      "name": "Black Hole"
+    },
+    "Boarding Pod": {
+      "description": "<p>A boarding pod containing a hostile boarding party launches through space.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:17] (trained; scanners) to hack and disable the boarding pod before it collides (two successes are required to disable it in this way); @Check[piloting|dc:17] (trained; pilot's console) to shake off a boarding pod that has collided with the starship</p>",
+      "hazardReset": "<p>Manually salvage the boarding pod and repair it.</p>",
+      "hazardRoutine": "<p>(2 actions) The hazard Jet Propels, then Collides against a starship in its zone. If the hazard has successfully Collided against a starship, it instead Deploys Boarder.</p>",
+      "name": "Boarding Pod"
+    },
+    "Boatercycle": {
+      "items": {
+        "9gE8WPLgi6P9xDOL": {
+          "description": "<p>As an emergency measure if its battery runs dry, a boatercycle can be configured to use pedal power as a 1-minute activity. This functions as a pulled vehicle.</p>",
+          "name": "Pedal Power"
+        },
+        "vl8dsa9RfjMaIMCF": {
+          "description": "<p>The boatercycle rotates its wheels. It gains a Speed of 40 feet but loses its swim Speed, or vice versa.</p>",
+          "name": "Reconfigure"
+        }
+      },
+      "name": "Boatercycle"
     },
     "Bounty Hunter": {
       "description": "<p>Whether in pursuit of escaped prisoners, runaway debtors, or prodigal heirs, bounty hunters ruthlessly chase their prey for as long as the money's good. While many targets are wanted \"dead or alive,\" or plain and simply \"dead,\" the hunter below specializes in bringing targets back alive using their magbolas and shock weapons.</p><h2>Mercenaries</h2><p>So long as the almighty credit can buy power, safety, and comfort, it can also be used to buy violence from the desperate, irrational, and unsentimental. Absalom Station is home to countless mercenary companies and freelance soldiers-for-hire, all eagerly offering their services to the highest bidder.</p>\n<p>Some mercs have a moral code or sense of honor that limits what contracts they accept, and Absalom law strictly limits what jobs a paramilitary company can hand out to its members. Of course, this doesn't stop a festering underbelly of wetwork and worse from blooming in the darker reaches of the station, if one knows where to look.</p>\n<p>Mercenaries aren't always operatives or soldiers. Sometimes they're cunning spellcasters, powerful solarians, or treacherous envoys. Bounty hunters are one of the most common class of merc hanging around the station. The bounty hunter below is an example of an elite foe tracking down dangerous outlaws, but the statistics for gangsters can stand in for lower-level mercenaries.</p>",
@@ -59,11 +181,38 @@
       },
       "name": "Bounty Hunter"
     },
+    "Brethedan Ray": {
+      "items": {
+        "c62UVYDAs2etqVix": {
+          "description": "<p>A Brethedan ray has a weapon mount in the nose, which can have any ranged weapon installed or removed with two Interact actions. The ray's crew can make Strikes with weapons installed this way. Weapons installed this way that require batteries don't consume any charges when fired, as they can draw power directly from the ray's engine.</p>",
+          "name": "Weapon Mount"
+        }
+      },
+      "name": "Brethedan Ray"
+    },
     "Caustic Nectar Spray": {
       "description": "<p>An alien flower sprays a stream of caustic nectar.</p>",
       "hazardDisable": "<p>@Check[nature|dc:13] (trained) to lull the flower into a passive state, or @Check[survival|dc:13] (trained) to mislead the flower's senses; @Check[acrobatics|dc:16] to move by the flower without triggering it (this doesn't disable the trap)</p>",
       "hazardReset": "<p>The flower's nectar reserve is refilled after 1 hour.</p>",
       "name": "Caustic Nectar Spray"
+    },
+    "Clifftreader": {
+      "items": {
+        "JEk1zj3Ec8cnEL1T": {
+          "description": "<p>The clifftreader fires its dual grappling hooks at a vertical surface within 100 feet and pulls itself to that surface, clinging onto it with its deployable spikes.</p>",
+          "name": "Grapple Launch"
+        }
+      },
+      "name": "Clifftreader"
+    },
+    "Cloudskipper": {
+      "items": {
+        "3sfh8vv6s74Rk0Rf": {
+          "description": "<p>The cloudskipper adjusts its thrusters. It gains a swim Speed of 35 feet but loses its fly Speed, or vice versa.</p>",
+          "name": "Reconfigure"
+        }
+      },
+      "name": "Cloudskipper"
     },
     "Collapsing Building": {
       "description": "<p>A building collapses, harming everyone inside.</p>",
@@ -118,12 +267,38 @@
       "hazardReset": "<p>The trap resets after 1 minute.</p>",
       "name": "Cryo Mist"
     },
+    "Cursed Relay": {
+      "description": "<p>Drifting through space, a garbled and eerie audio or holovid recording repeats the painful final moments of a cursed crew's lives on tech devices.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:16] (trained) to hack the relay, @Check[occultism|dc:14] (trained) to soothe the spirits, or @Check[religion|dc:14] (trained) to release the spirits</p>",
+      "hazardReset": "<p>The haunt resets in 24 hours unless the spirits are released.</p>",
+      "name": "Cursed Relay"
+    },
+    "Daytripper Person Carrier": {
+      "items": {
+        "Jv9aWG47lJCfBatE": {
+          "description": "<p>Daytrippers are built with nanite technology, allowing them to shrink into a small cube as a single Interact action. While collapsed this way, the daytripper can be carried as an item with 1 Bulk. The daytripper must be reassembled as another Interact action before it can be used as a vehicle.</p>",
+          "name": "Portable"
+        },
+        "kXEXCe9i7gvaGJ9c": {
+          "description": "<p>A daytripper's internal commercial battery charges automatically from solar power and background radiation, fully recharging over the course of 24 hours as long as it isn't in use. If the battery is fully charged, another battery-powered device can be connected to its charging port, depleting all the daytripper battery's charges and transferring them to the other device's battery.</p>",
+          "name": "Eco Charger"
+        }
+      },
+      "name": "Daytripper Person Carrier"
+    },
     "Deadly Vidgame": {
       "description": "<p>A hyperrealistic vidgame pulls players into a virtual world, transforming them into pixelated avatars and pitting them against deadly challenges.</p>",
       "hazardDisable": "<p>@Check[computers|dc:22] (trained) to reprogram the game, or @Check[thievery|dc:22] (trained) to exploit a glitch, or @Check[vidgame-lore|dc:17] (trained) to beat the game; four total successes are required to disable the trap</p>",
       "hazardReset": "<p>The trap resets after 1 hour.</p>",
       "hazardRoutine": "<p>(1 action) The trap presents the game's players with deadly challenges as 1 action. Each creature inside the game takes @Damage[(2d8+5)[slashing]] damage (@Check[reflex|dc:21|basic] save). A creature can attempt a Vidgame Lore check in place of their saving throw, if desired.</p>",
       "name": "Deadly Vidgame"
+    },
+    "Deific Star": {
+      "description": "<p>A sacred or profane entity with tremendous godlike power manifests as a living star.</p>",
+      "hazardDisable": "<p>@Check[deception|dc:48] (legendary; any battle station) or Diplomacy (legendary; any battle station) to earn the entity's favor, @Check[performance|dc:48] (legendary; any battle station) to challenge it to a contest and win, or @Check[religion|dc:48] (legendary; any battle station) to worship it or overwhelm it with another deity's power; four successes are required to disable the hazard</p>",
+      "hazardReset": "<p>This hazard can't be destroyed except by a god or godlike entity and can reform at any time.</p>",
+      "hazardRoutine": "<p>(3 actions) If the hazard is hostile to any starships within 10 zones, it Directs Herald and orders it to attack all targets the hazard has judged unworthy. Then, it uses Stellar Smite to punish targets and Stellar Blessing to reward others, depending on how the deific star's edicts and anathemas align with present targets. The hazard's edicts and anathemas should be determined when the hazard is created.</p>",
+      "name": "Deific Star"
     },
     "Devastating Collision": {
       "description": "<p>A phantom hover truck collides with creatures, replaying an accident from the past in gory detail.</p>",
@@ -145,6 +320,30 @@
       "hazardRoutine": "<p>(1 action) The hazard plays a new ad each round, forcing all creatures that can sense it to attempt a new save.</p>",
       "name": "Distracting Holo Ad"
     },
+    "Dragon of Damoritosh": {
+      "items": {
+        "I3afglo5lm08iv58": {
+          "description": "<p>The massive flame cannon built into the dragon of Damoritosh's mouth ignites, dealing @Damage[12d6[fire]|options:area-damage] damage to creatures and objects in a @Template[type:cone|distance:40] or an @Template[type:line|distance:80] (@Check[reflex|dc:33|basic] save). This ability can be used by crew or passengers, in addition to the pilot. Fire Breath requires [[/gmr 1d4 #rounds]]{1d4 rounds} to cool down before it can be used again.</p>",
+          "name": "Fire Breath"
+        },
+        "Upb8gpYzwArDJ13U": {
+          "description": "<p>The dragon of Damoritosh's intimidating design is magically enhanced to simulate the terrifying presence of an actual dragon. Creatures within a @Template[type:emanation|distance:60], except the crew and passengers, must attempt a @Check[will|dc:32] save. This ability can be used by crew or passengers, in addition to the pilot.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>",
+          "name": "Frightful Appearance"
+        },
+        "tojIKM4fbH9IF5b9": {
+          "description": "<p>A <em>dragon of Damoritosh</em> has two weapon mounts, one in each of the dragon's hands, which can each have any ranged weapon installed or removed with two Interact actions. Any of the dragon's crew or passengers can make Strikes with weapons installed this way. Weapons installed this way that require batteries don't consume any charges when fired, as they can draw power directly from the ship's engine.</p>",
+          "name": "Dual Weapon Mounts"
+        }
+      },
+      "name": "Dragon of Damoritosh"
+    },
+    "Drift Beacon Malfunction": {
+      "description": "<p>The Drift inexplicably teleports a starship to the wrong destination.</p>",
+      "hazardDisable": "<p>@Check[drift-lore|dc:32] (expert; pilot's console, scanners) or Piloting (master; pilot's console) to navigate the Drift without triggering a malfunction, or @Check[religion|dc:34] (master; any battle station) to call on Triune for guidance</p>",
+      "hazardReset": "<p>The hazard resets immediately.</p>",
+      "hazardRoutine": "<p>@Check[drift-lore|dc:32] (expert; pilot's console, scanners) or @Check[piloting|dc:32] (master; pilot's console) to navigate the Drift without triggering a malfunction, or @Check[religion|dc:34] (master; any battle station) to call on Triune for guidance</p>",
+      "name": "Drift Beacon Malfunction"
+    },
     "Drop Pod": {
       "items": {
         "ICJNXNcPqawzZ5Di": {
@@ -161,6 +360,15 @@
         }
       },
       "name": "Drop Pod"
+    },
+    "Electric Chariot": {
+      "items": {
+        "kgqPiYJB2CVwytwo": {
+          "description": "<p>An electric chariot features several hidden compartments and can store a total of 2 Bulk worth of weapons. The pilot can Conceal weapons of greater than light Bulk in these compartments and can Interact to draw any weapon stored in these compartments as if they were being carried.</p>",
+          "name": "Weapon Compartment"
+        }
+      },
+      "name": "Electric Chariot"
     },
     "Electric Fence": {
       "description": "<p>A 15-foot-tall electrified fence electrocutes anyone who touches it.</p>",
@@ -271,6 +479,12 @@
       "hazardDisable": "<p>@Check[crafting|dc:19] (trained) to safely shut down the device, or @Check[thievery|dc:21] (trained) to quickly vent the device</p>",
       "name": "Explosive Overload"
     },
+    "Extinct Astral Behemoth": {
+      "description": "<p>The hulking carcass of a primal beast floats in frozen chunks suspended in a spray of its brightly pigmented blood. The hazard is a Large starship object.</p>",
+      "hazardDisable": "<p>@Check[nature|dc:28] (expert; gunnery) to release death gases and blood safely, or @Check[piloting|dc:26] (trained; pilot's console) to evade the hazard's secretions</p>",
+      "hazardReset": "<p>The hazard resets over the course of the round and is ready to trigger again 1 round later.</p>",
+      "name": "Extinct Astral Behemoth"
+    },
     "Forklift": {
       "items": {
         "mU6j58QOkilzDY2R": {
@@ -334,6 +548,19 @@
       },
       "name": "Ganglord"
     },
+    "Glidecycle": {
+      "items": {
+        "Jf0AwBS2QpAm967R": {
+          "description": "<p><strong>Requirements</strong> The glidecycle is in the air</p><hr /><p><strong>Effect</strong> The glidecycle's wings pop open, allowing it to use its fly Speed until it next touches the ground. A glidecycle can't use its fly Speed without first activating it with Ride the Current.</p>",
+          "name": "Ride The Current"
+        },
+        "NpOfdNZtkGNWXfKW": {
+          "description": "<p>You use the 1-action version of Drive, then the glidecycle's engine propels it upward, launching it 20 feet into the air.</p>",
+          "name": "Jump Start"
+        }
+      },
+      "name": "Glidecycle"
+    },
     "Graviton Assassin": {
       "description": "<p>Some say that when you gaze into the void it gazes back. But what of those who channel it?</p>\n<p>Assassins for hire tend to be cold pragmatists who might do anything for the right price, but many have their own strange philosophies or belong to obscure cults and religious sects. Deities popular with professional killers include the nihilistic Devourer and cunning Lao Shu Po. Some solarians, like the one below, justify their assassinations as a part of the Cycle necessary to balance the Universe.</p><h2>Mercenaries</h2><p>So long as the almighty credit can buy power, safety, and comfort, it can also be used to buy violence from the desperate, irrational, and unsentimental. Absalom Station is home to countless mercenary companies and freelance soldiers-for-hire, all eagerly offering their services to the highest bidder.</p>\n<p>Some mercs have a moral code or sense of honor that limits what contracts they accept, and Absalom law strictly limits what jobs a paramilitary company can hand out to its members. Of course, this doesn't stop a festering underbelly of wetwork and worse from blooming in the darker reaches of the station, if one knows where to look.</p>\n<p>Mercenaries aren't always operatives or soldiers. Sometimes they're cunning spellcasters, powerful solarians, or treacherous envoys. Bounty hunters are one of the most common class of merc hanging around the station. The bounty hunter below is an example of an elite foe tracking down dangerous outlaws, but the statistics for gangsters can stand in for lower-level mercenaries.</p>",
       "items": {
@@ -379,12 +606,32 @@
       },
       "name": "Graviton Assassin"
     },
+    "Hacked Drift Beacon": {
+      "description": "<p>A hijacked Drift beacon broadcasts obnoxious ads or some other repetitive message.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:20] (trained) to repair the Drift beacon's code, @Check[crafting|dc:22] (trained) to disassemble the trap, or @Check[religion|dc:23] (trained) to consecrate it for Triune</p>",
+      "hazardReset": "<p>The trap deactivates and resets after 1 minute.</p>",
+      "hazardRoutine": "<p>(1 action) The hazard plays a new ad, forcing all creatures that can sense it to attempt a new save against Spam Storm.</p>",
+      "name": "Hacked Drift Beacon"
+    },
     "Hacker's Folly": {
       "description": "<p>A ghostly hacker haunts their computer and attempts to drain the spirit of anyone who accessed the computer.</p>",
       "hazardDisable": "<p>@Check[computers|dc:16] (trained) to partition the haunted code, or @Check[religion|dc:18] (trained) or Occultism (trained) to exorcise the spirit</p>",
       "hazardReset": "<p>The trap resets after 1 hour.</p>",
       "hazardRoutine": "<p>(1 action) The haunt absorbs the spirits of the living, dealing @Damage[(1d10+4)[spirit]] damage to all living creatures within 10 feet of the computer (@Check[will|dc:18|basic] save). On a critical failure, a creature is additionally @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 1}. This routine doesn't count as a hostile action for the purposes of ending the @UUID[Compendium.sf2e.conditions.Item.AdPVz7rbaVSRxHFg]{Fascinated} condition.</p>",
       "name": "Hacker's Folly"
+    },
+    "Hardlight Ultralight": {
+      "items": {
+        "are0FAmfgK3a9Gdb": {
+          "description": "<p>When not in use, an operator can deactivate or reactivate the projector as a 1-minute activity. While deactivated, the hardlight wings collapse entirely, and the ultralight can be carried as an item with 2 Bulk.</p>",
+          "name": "Hardlight Storage"
+        },
+        "bGDsXECa9jVZ2ns9": {
+          "description": "<p>The pilot of a hardlight ultralight can add the reckless trait to a Drive action or attempt the Piloting check with a –1 circumstance penalty if it was already reckless, to shift the vehicle 5 feet to either side at any point during the movement without changing its heading.</p>",
+          "name": "Bank"
+        }
+      },
+      "name": "Hardlight Ultralight"
     },
     "Haywire Autopilot": {
       "description": "<p>A hovercar's autopilot goes haywire, causing it to run over nearby creatures.</p>",
@@ -396,6 +643,19 @@
       "description": "<p>A robotic manufacturing arm malfunctions, attacking nearby creatures.</p>",
       "hazardDisable": "<p>@Check[computers|dc:20] (trained) to debug the malfunctioning arm, or @Check[crafting|dc:25] (trained) to cause the arm's joints to seize, or @Check[thievery|dc:23] (trained) to disable the arm</p>",
       "name": "Haywire Robotic Arm"
+    },
+    "Hoverbike": {
+      "items": {
+        "qYQW73Zohx2n4QwZ": {
+          "description": "<p>A hoverbike maintains an altitude of 6 inches above other surfaces, such as the ground or water. If driven off a high surface, the hoverbike loses 20 feet of altitude per round, landing without harm to the hoverbike or its pilot.</p>",
+          "name": "Hover"
+        },
+        "yXM0NAQBTLpCOjxW": {
+          "description": "<p>A hoverbike comes with a sleek sidecar that can be attached or detached as a 10-minute activity while the vehicle isn't in use. While attached, the hoverbike can carry one passenger in addition to its pilot but takes a –5-foot status penalty to its Speed.</p>",
+          "name": "Sidecar"
+        }
+      },
+      "name": "Hoverbike"
     },
     "Hoverboard": {
       "items": {
@@ -410,10 +670,68 @@
       },
       "name": "Hoverboard"
     },
+    "Hull Breach": {
+      "description": "<p>A 5-foot breach in the airlock or hull sucks everything inside a starship into space.</p>",
+      "hazardDisable": "<p>@Check[crafting|dc:19] (trained) to patch up the hull, or restore 10 or more Hull Points to the starship; restoring 5 or more Shield Points to the starship suppresses the trap until the starship loses all its Shield Points but doesn't disable the trap; @Check[acrobatics|dc:19] to Maneuver in Flight or Athletics to Grab a Ledge avoids or stops the effects of Pull Into Space (this doesn't disable the trap)</p>",
+      "hazardRoutine": "<p>(1 action) The trap Pulls Into Space.</p>",
+      "name": "Hull Breach"
+    },
+    "Hydrofoil": {
+      "items": {
+        "rFcPSQBeD9p0ulOc": {
+          "description": "<p>A hydrofoil's speed comes at the cost of maneuverability. It must move its full speed to turn up to 90 degrees, instead of the normal vehicle length. In addition, its pilot takes a –2 status penalty to Piloting checks for vehicle actions with the reckless trait.</p>",
+          "name": "Too Fast"
+        }
+      },
+      "name": "Hydrofoil"
+    },
+    "Infernal Vice": {
+      "description": "<p>Massive starmetal jaws blaze with diabolical runes that reek of sulfur and brimstone.</p>",
+      "hazardDisable": "<p>@Check[Legal Lore|dc:25] (expert; scanners) or Religion (expert; magic conduit) to rewrite the trap's diabolical bindings, or Counter Magic (magic conduit; 3rd rank; counteract DC 20) to counteract the trap</p>",
+      "hazardRoutine": "<p>(3 actions) The trap moves up to 4 zones, then makes an infernal chain Strike against a starship in range. If it's attached to a starship, it spends its final action to Heat Up. Otherwise, it spends its final action to block a target's comms with Hell's Hush to block the target's comms.</p>",
+      "name": "Infernal Vice"
+    },
+    "Ionized Gas Cloud": {
+      "description": "<p>A cloud of superheated gas crackles with electricity.</p>",
+      "hazardDisable": "<p>@Check[nature|dc:18] (trained; any battle station) to find a safe route through it, or @Check[piloting|dc:17] (trained; pilot's console) to ride the turbulence safely</p>",
+      "hazardReset": "<p>The gas particles ionize again in 1 hour.</p>",
+      "name": "Ionized Gas Cloud"
+    },
     "Jolting Console": {
       "description": "<p>A shock grid built into a computer console or door panel releases a powerful electric charge.</p>",
       "hazardDisable": "<p>@Check[computers|dc:16] (trained) to disable the console's programming, or @Check[crafting|dc:17] (trained) to rewire the shock grid, or @Check[thievery|dc:18] (trained) to deactivate the shock grid</p>",
       "name": "Jolting Console"
+    },
+    "Jotuncraft": {
+      "items": {
+        "cYAbLwK9F723lrr8": {
+          "description": "<p>A jotuncraft has a weapon mount emplacement, which can have any ranged weapon installed or removed with two Interact actions. The craft's crew can make Strikes with weapons installed this way. Weapons installed this way that require batteries don't consume any charges when fired, as they can draw power directly from the ray's engine.</p>",
+          "name": "Weapon Mount"
+        },
+        "czSoTliDXcpBzGlp": {
+          "description": "<p>A jotuncraft can carry up to 500 Bulk of cargo.</p>",
+          "name": "Giant Cargo"
+        }
+      },
+      "name": "Jotuncraft"
+    },
+    "Junker's Snare": {
+      "description": "<p>Space junk hides a jury-rigged yet ingenious snare.</p>",
+      "hazardDisable": "<p>@Check[crafting|dc:17] (trained; drone console, pilot's console) or Thievery (trained; drone console) to disable the mechanism</p>",
+      "name": "Junker's Snare"
+    },
+    "Landcutter Canoe": {
+      "items": {
+        "VWYNUYAJ5Jstimac": {
+          "description": "<p>The landcutter switches between travel modes, rising onto its paddles to walk on land or sinking into the water to be rowed across the waves.</p>",
+          "name": "Portage"
+        },
+        "w9eean7DdFjAnbzU": {
+          "description": "<p>With a full complement of skilled rowers, a rowed landcutter canoe can turn swiftly, turn in place, and row backward. Each 90-degree turn made in less than a vehicle length costs 5 extra feet of movement. It can row backward no faster than half its swim Speed, and it can't turn while rowing backward.</p>",
+          "name": "Maneuverable"
+        }
+      },
+      "name": "Landcutter Canoe"
     },
     "Laser Turret": {
       "description": "<p>A concealed turret pops up and fires a laser when intruders enter a secure area.</p>",
@@ -428,11 +746,37 @@
       "hazardReset": "<p>The trap resets after 15 minutes.</p>",
       "name": "Laser Web"
     },
+    "Logic Crucible": {
+      "description": "<p>A mysterious probe appears with a simple but deadly task: solve its equation or be destroyed.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:35], Crafting, or Thievery (expert) to disarm the probe, or @Check[arcana|dc:37] or any Science Lore (expert) to solve the equation</p>",
+      "name": "Logic Crucible"
+    },
+    "Magma Cruiser": {
+      "items": {
+        "HX5xhvB4dzVRflzA": {
+          "description": "<p>A magma cruiser's fire shielding protects its crew as well. Creatures on board a magma cruiser are immune to the effects of severe environmental heat or less. In addition, they reduce the effects of incredible environmental heat to those of extreme heat.</p>",
+          "name": "Thermal Shielding"
+        }
+      },
+      "name": "Magma Cruiser"
+    },
     "Memory Crystals": {
       "description": "<p>Glowing yellow crystals refract the blurred imprints of stolen memories within their facets.</p>",
       "hazardDisable": "<p>@Check[arcana|dc:48] (legendary) to erect mental wards, or @Check[occultism|dc:48] (legendary) to harmlessly feed surface thoughts to the crystals, or @Check[religion|dc:51] (legendary) to pray for protection from the crystals</p>",
       "hazardReset": "<p>After expanding, the memory crystals can't grow again for 1 day.</p>",
       "name": "Memory Crystals"
+    },
+    "Meteor Shower": {
+      "description": "<p>Superheated chunks of debris move at high velocity through the area. Starships in the hazard's zone are concealed from all starships outside the hazard's zone.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:20] (trained) to calculate meteor trajectories, @Check[nature|dc:20] (trained) to anticipate meteor patterns, or @Check[piloting|dc:18] (trained) to evade the meteors</p>",
+      "hazardReset": "<p>The hazard resets immediately.</p>",
+      "name": "Meteor Shower"
+    },
+    "Micro Black Hole": {
+      "description": "<p>A mote of super-compressed matter pulls everything toward it.</p>",
+      "hazardDisable": "<p>@Check[piloting|dc:28] (expert; pilot's console) to avoid the event horizon, @Check[crafting|dc:28] (expert; generator) to divert enough power to the engines to avoid being pulled in, @Check[computers|dc:26] (expert; scanners), Nature (expert; magic conduit), or Physical Science Lore (trained; scanners) to calculate a safe path around the hazard</p>",
+      "hazardRoutine": "<p>(1 action) Each starship within 0 zones of the hazard and each creature on board those starships takes @Damage[(2d10+11)[bludgeoning]] damage with a @Check[fortitude|dc:26|basic] save.</p><hr><p><strong>Special</strong> This hazard draws in any starship within 3 zones every round. It can't be permanently disabled, only escaped, and resets immediately. Effects that would disable it instead make the disabling starship and creatures on board immune to the hazard for 1 round.</p>",
+      "name": "Micro Black Hole"
     },
     "Monument to the Devourer": {
       "description": "<p>This shrine has long served as an altar for sacrificial rites and foul magic. When non-believers approach the monument, the souls of all those killed here surge out to reap their lives.</p>",
@@ -447,6 +791,22 @@
       "description": "<p>A fog of transmutative fumes fills a 30-foot radius area, painfully mutating creatures who enter.</p>",
       "hazardDisable": "<p>@Check[nature|dc:35] (master) to neutralize the fog, or @Check[survival|dc:35] (master) to disperse the fog</p>",
       "name": "Mutation Fog"
+    },
+    "Ominous Planetoid": {
+      "description": "<p>This planet looks like a wriggling mass of tentacles.</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:36] (master; magic conduit), @Check[nature|dc:36] (master; magic conduit), @Check[occultism|dc:36] (master; magic conduit), or @Check[religion|dc:36] (master; magic conduit) to ward against the hazard</p>",
+      "hazardReset": "<p>The hazard resets immediately, but it can't affect the same starship again for the next 24 hours. Disabling the hazard protects the starship that disabled it from being affected by it again, but doing so doesn't permanently destroy the planetoid.</p>",
+      "name": "Ominous Planetoid"
+    },
+    "Orbital Mine": {
+      "description": "<p>A mine packed with powerful explosives is concealed in plain sight.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:15] (trained; generator, scanners) to hack the mine, or @Check[crafting|dc:16] (trained; drone console) to rewire it</p>",
+      "name": "Orbital Mine"
+    },
+    "Orbital Mine Field": {
+      "description": "<p>Mines packed with powerful explosives float in a concealed location.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:19] (trained; scanners) or Perception (expert; any battle station) to locate the mines, or @Check[crafting|dc:25] (trained; generator) or Thievery (expert; drone console) to rewire the mines</p>",
+      "name": "Orbital Mine Field"
     },
     "Patrol Dirigible": {
       "items": {
@@ -467,6 +827,26 @@
       "hazardReset": "<p>1 hour</p>",
       "name": "Phantom Communication"
     },
+    "Pipe Breakage": {
+      "description": "<p>A pipe ruptures in the starship, creating a 5-foot space of scorching hot air on the ground within 10 feet of a battle station.</p>",
+      "hazardDisable": "<p>@Check[crafting|dc:16] (trained) to repair the pipe, or @Check[thievery|dc:18] (expert) to patch up the rupture</p>",
+      "hazardRoutine": "<p>(1 action) The trap Scorches its surroundings.</p>",
+      "name": "Pipe Breakage"
+    },
+    "Planar Breach": {
+      "description": "<p>A planar breach oozes energy and spawns monsters.</p>",
+      "hazardDisable": "<p>@Check[crafting|dc:24] (expert; generator) to disrupt the rift with an electromagnetic pulse, or @Check[nature|dc:22] (expert; magic conduit) or Occultism (expert; magic conduit) to seal the breach, or Counter Magic (magic conduit; 3rd rank; counteract DC 24) to counteract the breach</p>",
+      "hazardReset": "<p>The hazard resets in 10 minutes unless the planar breach is sealed permanently by counteracting it.</p>",
+      "hazardRoutine": "<p>(1 action) Energy flows through the planar breach to fuel the elemental. The elemental immediately takes its turn, using 3 actions, and can use reactions unlike most summoned creatures.</p>",
+      "name": "Planar Breach"
+    },
+    "Possessed Battle Stations": {
+      "description": "<p>The tormented spirits of dead crewmates infest the starship's battle stations and try to force the crew to reenact their catastrophic deaths.</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:28] (expert; magic conduit), Nature (expert; magic conduit), Occultism (expert; magic conduit), or Religion (expert; magic conduit) to magically purify the station, or @Check[athletics|dc:28] (expert; gunnery) or Intimidation (expert; gunnery) to overpower the spirit, or @Check[computers|dc:28] (expert; scanners) to ban the spirit from the data matrix, or @Check[computers|dc:28] (expert; drone console) or Crafting (expert; drone console) to force reset the possessed drones, or @Check[computers|dc:34] (expert; magic conduit, scanners) to delete a spirit's soul code, or @Check[crafting|dc:28] (expert; generator) to execute emergency countermeasures, or @Check[piloting|dc:28] (expert; pilot's console) to disorient the spirit with ace maneuvers, or @Check[religion|dc:31] (expert; magic conduit) to exorcise a battle station; a success purges one battle station, and a number of successes equal to the number of battle stations on board the starship are required to disable the haunt</p>",
+      "hazardReset": "<p>Unless exorcised or purged (see above), the spirits return to their battle stations over the course of 24 hours, after which the haunt can trigger again.</p>",
+      "hazardRoutine": "<p>(6 actions) The haunt uses its actions to helm any battle stations it controls, prioritizing piloting console station actions to move the starship closer to danger. The haunt always takes harmful or useless actions, such as leaving cover or changing the starship's heading in battle, putting the starship on a collision course, firing on allies, or neglecting the shields.</p><p>After 6 rounds, if the haunt hasn't been disabled, all creatures on board the starship experience a reenactment of the spirit crew's annihilation and take @Damage[(2d12+15)[spirit]] damage (@Check[will|dc:30|basic] save). On a critical failure, a creature is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}. The haunt ends once the reenactment occurs.</p>",
+      "name": "Possessed Battle Stations"
+    },
     "Psychotropic Spores": {
       "description": "<p>A colorful fungus releases psychotropic spores when a creature comes near.</p>",
       "hazardDisable": "<p>@Check[nature|dc:20] (trained) to force the fungus into a dormant state, or @Check[survival|dc:22] (trained) to safely remove the fungus</p>",
@@ -478,6 +858,12 @@
       "hazardDisable": "<p>@Check[intimidation|dc:42] (master) to frighten the clone away, or @Check[diplomacy|dc:42] (master) to reach an accord with the clone, or @Check[arcana|dc:45] (master) or Nature (master) to disperse the quantum particles; three total successes are required to disable the trap</p>",
       "hazardRoutine": "<p>(3 actions) The quantum clone observes the triggering creature and mimics the creature's behavior, taking hostile actions as soon as it takes damage. For the first 2 rounds, the quantum clone takes actions in the exact order the triggering creature did, but in the following rounds, it acts tactically, using actions and reactions it observed the creature using in any order.</p>",
       "name": "Quantum Clone"
+    },
+    "Quantum Crossover": {
+      "description": "<p>Another timeline collides with the present.</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:28] (expert; magic conduit) or Occultism (expert; magic conduit) to realign reality, or Counter Magic (magic conduit; 4th rank; counteract DC 24) to counteract the trap</p>",
+      "hazardReset": "<p>The trap resets automatically after 1 minute.</p>",
+      "name": "Quantum Crossover"
     },
     "Reactor Meltdown": {
       "description": "<p>A nuclear reactor overloads, then explodes.</p>",
@@ -496,6 +882,13 @@
       "hazardDisable": "<p>@Check[thievery|dc:33] (expert) to disable the force field, or @UUID[Compendium.sf2e.spells.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 29) to counteract the force field</p>",
       "hazardReset": "<p>The force field deactivates and the trap resets after 1 minute.</p>",
       "name": "Repulsing Force Field"
+    },
+    "Rip in Reality": {
+      "description": "<p>Gnashing, toothy mouths and spiny tentacles grope and writhe inside a pit that just appeared out of nowhere.</p>",
+      "hazardDisable": "<p>@Check[occultism|dc:38] (master) or @Check[religion|dc:38] (master) to seal the pit (two successes are required to disable the trap), or @UUID[Compendium.sf2e.spells.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank; counteract DC 37) or planar seal or planar tether (7th rank; counteract DC 33) to counteract the trap</p>",
+      "hazardReset": "<p>The trap resets after 1 hour.</p>",
+      "hazardRoutine": "<p>(1 action) As an action, the trap manifests mind-rending visions of eldritch creatures from another reality. Each creature inside the reality breach takes @Damage[(3d10+16)[mental]] damage (@Check[will|dc:35|basic] save). A creature can attempt an Arcana or Occultism check in place of their saving throw, if desired.</p>",
+      "name": "Rip in Reality"
     },
     "Security Arcanotech Agent": {
       "description": "<p>The rarest and most versatile class of private security guards are arcanotech agents.</p><h2>Security Guards</h2><p>Every corporation, church, and upscale neighborhood on the station has its own security.</p>",
@@ -667,6 +1060,26 @@
       },
       "name": "Skyboat"
     },
+    "Slime Infestation": {
+      "description": "<p>An unwelcome infestation pollutes the decks with sticky slime that proliferates throughout a starship.</p>",
+      "hazardDisable": "<p>@Check[nature|dc:18] (trained) or Survival (trained) to denature the hazard with chemicals (destroys a @Template[type:cone|distance:5] of slime on a success, or @Template[type:cone|distance:10] on a critical success), or @Check[religion|dc:25] (expert; magic conduit) to purify the starship; two successes are required to disable the hazard, or destroy every infested square</p>",
+      "hazardReset": "<p>The slime returns and begins proliferating again in 24 hours unless the entire starship is completely cleansed, or the starship is restored to full Hull Points.</p>",
+      "hazardRoutine": "<p>(2 actions) The hazard uses Proliferate Slime each round, spreading to as many rooms as possible until the starship interior is covered or the hazard is destroyed. The hazard then uses Spew Corrosive Vapor.</p>",
+      "name": "Slime Infestation"
+    },
+    "Somnambupod": {
+      "items": {
+        "3Z8f7qlodlgQIwpC": {
+          "description": "<p>In addition to being driven normally, the pilot can enter their destination into a somnambupod's onboard AI by attempting a @Check[computers|dc:12] check.</p><hr /><p><strong>Critical Success</strong> The somnambupod arrives at its destination faster than expected. It gains a +15-foot status bonus to its Speed until it arrives.</p>\n<p><strong>Success</strong> The somnambupod arrives at its destination.</p>\n<p><strong>Failure</strong> The somnambupod doesn't move an inch.</p>\n<p><strong>Critical Failure</strong> The somnambupod moves toward a point 10 kilometers in the opposite direction from its destination.</p>",
+          "name": "AI Navigation"
+        },
+        "t8tp8VPSNFHYIx8K": {
+          "description": "<p>While riding in a somnambupod, the pilot can choose to initiate complete luxury relaxation mode. The pod's enclosure becomes opaque, obscuring the outside world, and it plays calming music to allow for easy sleep. The pilot can take no actions while riding this way, including vehicle actions, but if the journey is at least 6 hours long, they gain the benefits of 8 hours of rest.</p>",
+          "name": "Complete Luxury Relaxation"
+        }
+      },
+      "name": "Somnambupod"
+    },
     "Soul Upload": {
       "description": "<p>A computer is protected by a hybrid trap, which uploads the soul of all unauthorized users to an inert data module on the computer.</p>",
       "hazardDisable": "<p>@Check[arcana|dc:36] (expert) to drain the computer's magical energy, or @Check[computers|dc:36] (expert) to falsify authorized credentials, or @Check[thievery|dc:40] (expert) to disable the trap, or @UUID[Compendium.sf2e.spells.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank; counteract DC 34) to counteract the trap</p>",
@@ -827,6 +1240,48 @@
         }
       },
       "name": "Space Goblin Miscreant"
+    },
+    "Spectral Sortie": {
+      "description": "<p>Ghostly starships battle ceaselessly in this sector.</p>",
+      "hazardDisable": "<p>@Check[deception|dc:36] (master; scanners) to trick a spectral starship into believing its battle is won; @Check[religion|dc:34] (master; magic conduit) to exorcise one spectral starship; one success disables a spectral starship, and four successes are required to disable the haunt</p>",
+      "hazardReset": "<p>The spectral starships can't be permanently destroyed unless they're exorcised. They reform over the course of 24 hours, after which the haunt can trigger again.</p>",
+      "hazardRoutine": "<p>(1 action per spectral starship) The spectral starships operate in pairs and maneuver to surround their targets whenever possible. On a typical round, one pair performs Flyby Formation, while the other pair opens fire, each of them firing one spectral laser Strikes. The haunt fights until all spectral starships are exorcised or temporarily destroyed.</p>",
+      "name": "Spectral Sortie"
+    },
+    "Spheridyne": {
+      "items": {
+        "mlvSFKzwuVC2uFXv": {
+          "description": "<p>A spheridyne doesn't fall if it's airborne at the end of the pilot's turn and didn't use a Fly action this round, hovering in place instead.</p>",
+          "name": "Hover Thrusters"
+        },
+        "ngYUjjh5xda8Fn4m": {
+          "description": "<p>A spheridyne can turn swiftly, turn in place, and even fly backward. Each 90-degree turn made in less than a vehicle length costs 5 extra feet of movement, and it can Fly backward at its full speed.</p>",
+          "name": "Gyroscopic Maneuverability"
+        }
+      },
+      "name": "Spheridyne"
+    },
+    "Spider-Crawler": {
+      "items": {
+        "Eum1xBJChqbfICLR": {
+          "description": "<p><strong>Requirements</strong> The spider-crawler is attached to a stable surface</p><hr /><p><strong>Effect</strong> The spider-crawler unfolds into a 20-foot by 10-foot flat platform, which its crew and passengers are standing on. The pilot can end the effect with a single Interact action, returning its crew and passengers to their seats and dropping any other creatures off the platform.</p>",
+          "name": "Platform Mode"
+        }
+      },
+      "name": "Spider-Crawler"
+    },
+    "Spiralrunner": {
+      "items": {
+        "Ix8tPaZQarxhoQ4q": {
+          "description": "<p>Collision damage from a spiralrunner ignores the first 5 points of an object's Hardness. If an object or section of an object large enough for the spiralrunner to drive through is reduced to 0 Hit Points by a spiralrunner's collision damage, the spiralrunner and its pilot and passengers take no damage.</p>",
+          "name": "Boring Drills"
+        },
+        "PCxB67edf1Bd0PNo": {
+          "description": "<p>When a spiralrunner uses its burrow Speed, it leaves a tunnel 10 feet wide and 5 feet high in its path.</p>",
+          "name": "Tunneler"
+        }
+      },
+      "name": "Spiralrunner"
     },
     "Starstone Guardian": {
       "description": "<p>The magicircuitry patterns etched on the surface of each Starstone guardian's body are unique. They tell the story of each guardian's creation ritual. Though incredibly ancient, the magic that sustains the Starstone guardians refreshes and restores them over time, making Starstone guardians effectively immortal. These constructs often become uncomfortable if addressed as if they're distinct individuals. If asked for a designation, each insists they are to be referred to simply as \"Guardian.\"</p>\n<p>More powerful iterations of the guardians were created to protect the reactor's network of facilities, called the prime virtues by the engineers and historians who study them. With few exceptions, the prime virtues are rarely encountered by ordinary people. All have unique features and personalities that make such experiences unforgettable, and sometimes dangerous. The characteristics and capabilities of the prime virtues aren't well understood for this reason.</p>\n<p>Starstone guardians are peaceful when they aren't deployed to protect the reactor network keeping the entire space station spinning, but their defenses aren't infallible. Corrupted or controlled Starstone guardians are more likely to attack.</p><h2>STARSTONE CONSTRUCTS</h2><p>Starstone constructs are ancient magitech constructs that serve to protect and maintain the Starstone reactor, the station's power source fueled by the legendary Starstone. They are reticent and standoffish creatures whose sole area of concern is the reactor and its continued functionality. Starstone constructs are vigilant and pious, performing their duties with unmistakable reverence. They are almost never seen outside of the Spike, and only rarely outside the chambers around the Starstone reactor. They attempt to complete whatever tasks take them away from their primary focus quickly and efficiently.</p>\n<p>Starstone constructs are tall, broad-shouldered robotic humanoids of gleaming platinum with slender limbs made of a translucent blue crystal. Their faces are mask-like and nearly featureless but for three circular eye holes containing luminous spheres that blink, widen, narrow, and otherwise move like a biological creature's eyes. Each Starstone construct has a pattern of intricate magicircuitry etched into their crystalline limbs and down the sides of their metallic torso.</p>\n<p>Starstone constructs have humanlike forms but don't follow most humanoid customs and habits, except for a custom of adorning themselves with cloth drapery, similar to how a humanoid would wear clothing. Starstone stoles are embroidered with spelled thread and are believed to contain immense magical energy.</p>",
@@ -1105,6 +1560,36 @@
       },
       "name": "Surveillance Mage"
     },
+    "Tachyon Burst": {
+      "description": "<p>Unstable faster-than-light particles released by a powerful energy emission penetrate the starship's shields.</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:25] (expert; magic conduit) or Nature (master; magic conduit) to repel particles, or @Check[computers|dc:27] (expert; scanners) or Physical Science Lore (expert; scanners) to calculate evasion protocol</p>",
+      "name": "Tachyon Burst"
+    },
+    "Talon Strike Craft": {
+      "items": {
+        "NC6vsDolhBJ3nAtF": {
+          "description": "<p>The talon strike craft reconfigures its wings, switching between its aerial form and land-based form.</p>",
+          "name": "Reconfigure"
+        },
+        "RC8MAMIQon57i1WW": {
+          "description": "<p>The talon strike craft fires its mounted laser cannon, dealing @Damage[5d8[fire]|options:area-damage] damage to creatures and objects in a @Template[type:line|distance:30] (@Check[reflex|dc:25|basic] save). This ability can be used by the crew in addition to the pilot.</p>",
+          "name": "Laser Cannon"
+        },
+        "ZZ4MymRhuKQXFj3x": {
+          "description": "<p>In its aerial form, the pilot of a talon strike craft can add the reckless trait to a Drive action, or attempt the Piloting check with a –1 circumstance penalty if it was already reckless, to shift the vehicle 5 feet to either side at any point during the movement without changing its heading.</p>",
+          "name": "Bank"
+        },
+        "erCOhUtckYctCU05": {
+          "description": "<p>A talon strike craft in its land-based form maintains an altitude of 6 inches above other surfaces, such as the ground or water. If driven off a high surface, the strike craft loses 20 feet of altitude per round unless it Reconfigures, landing without harm to the skiff or its passengers.</p>",
+          "name": "Hover"
+        },
+        "pR9aDGjZBLWDv2Vc": {
+          "description": "<p>The talon strike craft fires homing missiles at a creature or object within 60 feet, dealing @Damage[3d8[bludgeoning],(3[splash])[fire]]{3d8 bludgeoning damage and 3 fire splash damage } (@Check[reflex|dc:25|basic] save).</p>",
+          "name": "Homing Shot"
+        }
+      },
+      "name": "Talon Strike Craft"
+    },
     "Temporal Rift": {
       "description": "<p>A rift in time rapidly ages and slows anyone who draws near.</p>",
       "hazardDisable": "<p>@Check[arcana|dc:36] (master) or Occultism (master) to magically mend time, @Check[thievery|dc:40] (master) to repair the time rift, or @UUID[Compendium.sf2e.spells.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th rank; counteract DC 31) to counteract the rift</p>",
@@ -1216,6 +1701,23 @@
       },
       "name": "Terminite Worker"
     },
+    "Terminus Monster Truck": {
+      "items": {
+        "CKRj9Yq7uvABREmM": {
+          "description": "<p>A terminus monster truck can move up and over obstacles up to 5 feet in height, though it treats such spaces as difficult terrain that mega suspension wheels doesn't ignore.</p>",
+          "name": "Huge Wheels"
+        },
+        "LHiIcpsUGy8pFk5q": {
+          "description": "<p>When a terminus monster truck Runs Over and rams a target, if the target is reduced to 0 Hit Points by the collision damage, the monster truck and its pilots and passengers take no damage.</p>",
+          "name": "Crusher"
+        },
+        "a54azmq4TW5K2qaY": {
+          "description": "<p>A terminus monster truck ignores non-magical difficult terrain and greater difficult terrain. In addition, it treats falls as 15 feet shorter as the truck's suspension absorbs some of the impact.</p>",
+          "name": "Mega Suspension Wheels"
+        }
+      },
+      "name": "Terminus Monster Truck"
+    },
     "Thaumacyte": {
       "description": "<p>In the gas-rich atmosphere of Liavara, magically enlarged aeroplankton make up the bottom of the planet's food chain. Beginning as simple filter feeders, many species of plankton were transformed by vibrations from the Dreamers' wordless songs. The thaumacyte is one such organism, having evolved in areas rich with thaumogen gas and growing much larger than typical microorganisms due to occult interference.</p>\n<p>Thaumacytes look like shifting sacs containing iridescent fluid and colorful organelles. A magically reinforced spell membrane allows these floating amoeboids to survive in a variety of environments. After stowing away on unregulated thaumogen mining vessels, some of these unicellular oddities have spread throughout the Pact Worlds. As they feel a particular pull toward powerful magic like the Starstone, many thaumacytes lurk in Absalom Station.</p>\n<p>Most thaumacytes grow to be about 3 feet wide and are usually translucent with a hint of warmer hues, a coloration useful for hiding in Liavara's atmosphere but making them strange and obvious in most of Absalom Station.</p>",
       "items": {
@@ -1246,6 +1748,12 @@
         }
       },
       "name": "Thaumacyte"
+    },
+    "Time Loop": {
+      "description": "<p>Stuck in an endless time loop, the same scene plays out over and over again in redundant detail.</p>",
+      "hazardDisable": "<p>@Check[occultism|dc:38] (expert; magic conduit, scanners) or Religion (expert; magic conduit, scanners) to find the right timeline, @Check[arcana|dc:40] (expert; any battle station) or Society (expert; any battle station) to introduce enough paradoxes to shut down the loop; four successes are required to disable the hazard</p>",
+      "hazardRoutine": "<p>(1 action) The hazard uses Distort Reality on its turn every round until someone disables it.</p>",
+      "name": "Time Loop"
     },
     "Torpedo Minisub": {
       "items": {
@@ -1314,6 +1822,43 @@
       },
       "name": "Turboglider"
     },
+    "Ultra-Luxe Yacht": {
+      "name": "Ultra-Luxe Yacht"
+    },
+    "Underwater Skimmer": {
+      "items": {
+        "4ybLpq8UYCSKtJXZ": {
+          "description": "<p>The skimmer switches between surface mode and stealth mode.</p>",
+          "name": "Reconfigure"
+        },
+        "pVkpAARwc6Yzm9LL": {
+          "description": "<p>While in stealth mode, an underwater skimmer can travel beneath the surface of the water, to a depth of up to 1,000 feet. Its air reservoir can sustain 1 Medium creature for up to 4 hours, after which they must hold their breath or begin to suffocate until the skimmer surfaces again.</p>",
+          "name": "Submersible"
+        },
+        "rrI9yFldy718fm3y": {
+          "description": "<p>While in surface mode, an underwater skimmer can turn up to 180 degrees for every vehicle length it moves forward, instead of the normal 90 degrees.</p>",
+          "name": "Improved Cornering"
+        },
+        "wIxesVtKwTvpkewL": {
+          "description": "<p>While an underwater skimmer is in stealth mode and submerged, the pilot can [[/act hide]] as a vehicle action, conferring the benefits to the skimmer. They can roll Piloting instead of Stealth to do so.</p>",
+          "name": "Underwater Infiltration"
+        }
+      },
+      "name": "Underwater Skimmer"
+    },
+    "Unholy Vortex": {
+      "description": "<p>A supernatural black hole sucks all heat and light into its maw.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:47] (expert; scanners), Nature (expert; magic conduit), or Physical Science Lore (trained; generator or scanners) to take protective measures, or @Check[piloting|dc:50] (expert; pilot's console) to avoid the gravitational pull; one success is required per round for the triggering starship to act normally.</p>",
+      "hazardReset": "<p>This hazard can't be permanently disabled, only escaped, and resets immediately.</p>",
+      "hazardRoutine": "<p>(2 action actions) The hazard Spawns Undead, then pulls the starship 1 zone toward it and continues to trap the starship. The starship experiences additional effects depending on how close it is to the hazard. A starship's speed cannot be reduced below 1 from this hazard.</p><p><strong>Within 10 zones:</strong> The starship's Speed is reduced by 1 zone.</p><p><strong>Within 6 zones:</strong> The starship's Speed is reduced by 2 zones.</p><p><strong>Within 4 zones:</strong> The starship's Speed is reduced by 4 zones, and two random battle stations are malfunctioning.</p><p><strong>Within 2 zones:</strong> The starship's Speed is reduced to 1 zone, and all battle stations are malfunctioning.</p><p><strong>Event Horizon (Hazard's Zone)</strong> A starship in the hazard's zone is @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} and can't take any actions to move any number of zones or Change Heading. Battle stations are malfunctioning. The starship takes @Damage[(4d10+20)[force]] damage each round (@Check[fortitude|dc:46|basic] save). If the starship is destroyed, all creatures and objects inside take damage instead.</p>",
+      "name": "Unholy Vortex"
+    },
+    "Unstable Munition": {
+      "description": "<p>A stray munition packed with powerful explosives is primed to detonate.</p>",
+      "hazardDisable": "<p>@Check[computers|dc:38] (expert) to reprogram the explosive, or @Check[crafting|dc:34] (expert) to disarm the explosive, or @Check[religion|dc:43] (master) to pray for a miracle; three successes required to disable the trap</p>",
+      "hazardRoutine": "<p>(1 action) The trap's detonation value goes up by 1. When the detonation value reaches 5, the trap emits a red light before it Detonates.</p>",
+      "name": "Unstable Munition"
+    },
     "Urban Cruiser": {
       "items": {
         "LL2koc1PlBoKSCLu": {
@@ -1334,6 +1879,12 @@
       "hazardReset": "<p>1 day</p>",
       "name": "Vision of Manifold Realities"
     },
+    "Wailing Rings": {
+      "description": "<p>Glimmering rings of compressed ice and dust encircling a nearby planet emit a dreadful sound.</p>",
+      "hazardDisable": "<p>@Check[arcana|dc:30] (expert; magic conduit), Nature (expert; magic conduit) or Occultism (expert; magic conduit) to magically silence the wailing, @Check[Music Lore|dc:26] (expert; generator, scanners) or Performance (expert; generator, scanners) to harmonize with the wailing; one success negates the hazard's effects for that round (see Routine below)</p><p><strong>Special</strong> The hazard can be temporarily disabled but not permanently disabled.</p>",
+      "hazardRoutine": "<p>(1 action) The hazard wails as one action, dealing @Damage[(2d10+9)[mental]] damage to all creatures in its zone (@Check[will|dc:23|basic] save).</p>",
+      "name": "Wailing Rings"
+    },
     "Wakeskimmer": {
       "items": {
         "YMbnPyBEm04xPPrn": {
@@ -1346,6 +1897,19 @@
         }
       },
       "name": "Wakeskimmer"
+    },
+    "Wealcol": {
+      "items": {
+        "7h6Mx5HzO3EQ05aZ": {
+          "description": "<p>The tiny components that make up a wealcol automatically reposition to move the pilot out of danger and shield them from impact. When the pilot Runs Over and rams a target, the wealcol can make a basic Reflex save against its own collision DC to protect the pilot from the collision damage.</p>",
+          "name": "Magnetic Protection"
+        },
+        "yxUgYkdBGYnxO7VG": {
+          "description": "<p>A wealcol's fluid nature allows it to squeeze through spaces that would otherwise be too small for it. A wealcol can attempt to Drive through an opening that's smaller than one of its dimensions, giving the action the reckless trait. If the pilot maintains control of the vehicle, the wealcol changes its shape on the fly and can fit through any opening the pilot could.</p>",
+          "name": "Swarm Form"
+        }
+      },
+      "name": "Wealcol"
     }
   },
   "label": "Rulebooks"

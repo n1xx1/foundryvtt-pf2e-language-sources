@@ -346,6 +346,13 @@
       "description": "<p>Your ability to fly through the skies under your own power is unparalleled. Your fly Speed increases by 10 feet.</p>",
       "name": "Aerial Master"
     },
+    "Aerobatics Mastery": {
+      "description": "<p>You can gracefully perform aerial stunts as if flying were second nature. You gain a +2 circumstance bonus to Acrobatics checks to @UUID[Compendium.sf2e.actions.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight} and can combine two maneuvers into a single action, such as reversing direction while making a steep descent or hovering in gale force winds. The DC of the Acrobatics check is equal to the DC of the most difficult maneuver + 5.</p>\n<p>If you're legendary in Acrobatics, you can combine three such maneuvers into a single action; the DC of the Acrobatics check is equal to the DC of the most difficult maneuver + 10. Regardless of the combination, these maneuvers rarely allow you to move further than your fly Speed.</p>",
+      "featPrerequisites": {
+        "0": "master in Acrobatics"
+      },
+      "name": "Aerobatics Mastery"
+    },
     "Agglomerate Leshy": {
       "description": "<p>You gather organic plant or fungal matter to your body, permanently increasing your size. You become Large.</p>\n<p>Once per day as a two-action activity with the concentrate trait, you can grow a burst of foliage that further reinforces your body, increasing your reach by 5 feet, granting you a +2 status bonus to melee damage rolls, and making you @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.rmKcSjjP9gdzirRt]{Effect: Agglomerate Leshy}</p>",
       "name": "Agglomerate Leshy"
@@ -372,6 +379,14 @@
         "1": "Akashic Sync"
       },
       "name": "Akashic Transcendence"
+    },
+    "Akiton Battery Hack": {
+      "description": "<p><strong>Requirements</strong> You have a free hand and are holding a battery with at least 10 charges.</p><hr /><p>With a couple quick adjustments, you Craft an electromag grenade using the held battery. The grenade is @UUID[Compendium.sf2e.equipment.Item.zZfvCl6hcRMAiJQB]{Commercial} grade if the battery has at least 10 charges, @UUID[Compendium.sf2e.equipment.Item.PQU82RsdMS1g7YTV]{Tactical} if the battery has at least 40 charges, or @UUID[Compendium.sf2e.equipment.Item.nW1ZJKG81d9I3mAA]{Advanced} if the battery has at least 60 charges. If you're legendary in Crafting, you can Craft a @UUID[Compendium.sf2e.equipment.Item.oBIUI95iuUisM7fZ]{Superior} grenade using a battery with at least 100 charges. Grenades crafted using Akiton Battery Hack last until the end of your next turn, after which they're harmlessly discharged and no longer function as a battery or grenade.</p>",
+      "featPrerequisites": {
+        "0": "trained in Crafting",
+        "1": "Electrical Engineer"
+      },
+      "name": "Akiton Battery Hack"
     },
     "Alarming Scream": {
       "description": "<p>You release a loud shriek meant to draw attention or raise alarm. All enemies within @Template[emanation|distance:60]{60 feet} must attempt a @Check[will|against:class-spell|options:area-effect,inflicts:deafened,inflicts:frightened] save against the higher of your class DC or spell DC. The targets are then temporarily immune to your Alarming Scream for 24 hours.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target becomes deafened for 1 minute and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>",
@@ -439,6 +454,13 @@
     "Ammo Hoarder": {
       "description": "<p><strong>Requirements</strong> You're wielding an automatic weapon.</p><hr /><p>By using direct and methodical burst fire, you conserve your ammunition without compromising your destructive potential. Your @UUID[Compendium.sf2e.actions.Item.6ctkxUnVwqooSvgg]{Auto-Fire} has an expend equal to the number of targets in the area, rather than the number of targets in the area × 2.</p>",
       "name": "Ammo Hoarder"
+    },
+    "Amplify Glitch": {
+      "description": "<p>Your body builds primal energy that you can unleash to disable technology. Attempt a @Check[nature|against:fortitude] check against all glitching creatures, hazards, and items with the tech trait within 20 feet. The DC is equal to the creature or hazard's Fortitude DC or the Fortitude DC of the creature attending the object, or is based on the item's level if it's unattended. Regardless of the results, each target is then temporarily immune to Amplify Glitch for 1 day.</p><hr /><p><strong>Critical Success</strong> Increase target's glitching condition value by 4.</p>\n<p><strong>Success</strong> Increase target's glitching condition value by 2.</p>",
+      "featPrerequisites": {
+        "0": "legendary in Nature"
+      },
+      "name": "Amplify Glitch"
     },
     "Amplify Radiance": {
       "description": "<p>You're an abundant source of electromagnetic radiation, which naturally amplifies the radiance of lights around you. Light sources in your possession (including those carried, cast on you, worn, or otherwise a part of you) are more luminous—double the area illuminated by these light sources. If a light source you possess would deal damage or cause a harmful effect based on its area, the area of those additional effects are not increased by Amplify Radiance. Additionally, you gain a +2 circumstance bonus to counteract checks made to counteract darkness.</p>",
@@ -1079,6 +1101,13 @@
       "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You break off a piece of your anatomy and fling sharp bone shards at your enemies. You gain a bone shards unarmed attack that deals 1d8 piercing damage. Your bone shards are in the projectile group and have the area (cone) trait with a range of 15 feet. This effect lasts 1 minute.</p>",
       "name": "Bone Shards"
     },
+    "Booster Rip": {
+      "description": "<p><strong>Trigger</strong> You successfully Strike and deal damage with a boost melee weapon charged to deal additional damage.</p><hr /><p>You launch yourself across the battlefield using your boosted weapon. This energy pushes you 20 feet directly back from your target. This movement doesn't trigger reactions.</p>",
+      "featPrerequisites": {
+        "0": "master in Acrobatics"
+      },
+      "name": "Booster Rip"
+    },
     "Borai Lore": {
       "description": "<p>Since your resurrection, you've learned a lot about yourself, your place in the cycle of souls, and other undead. You gain the trained proficiency rank in Intimidation and Religion. If you would automatically become trained in one of those skills (from your background or class, for example), you instead become trained in a skill of your choice.</p>\n<p>You also gain the @UUID[Compendium.sf2e.feats.Item.BocFD2KV0qgUC76x]{Additional Lore} general feat for Borai Lore.</p>",
       "name": "Borai Lore"
@@ -1500,6 +1529,13 @@
       },
       "name": "Charming Liar"
     },
+    "Chat, Help!": {
+      "description": "<p>When you roll initiative, if you're Livestreaming, you can ask chat for some help. You @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} about a creature you and your livestream audience can see, using a Performance check in place of the usual skill. For this action, you can't use any special abilities, reactions, or free actions that trigger when you Recall Knowledge.</p>",
+      "featPrerequisites": {
+        "0": "master in Performance"
+      },
+      "name": "Chat, Help!"
+    },
     "Chattermander": {
       "description": "<p>You never let the inability to communicate stop you from chatting with nufriends! You gain @UUID[Compendium.sf2e.spells.Item.BBvV7qoXGdw09q1C]{Speak with Animals} as a 2nd-rank primal innate spell, and @UUID[Compendium.sf2e.spells.Item.qvwIwJ9QBihy8R0t]{Speak with Plants} and @UUID[Compendium.sf2e.spells.Item.vTQvfYu2llKQedmY]{Translate} as 3rd-rank primal innate spells. You can cast each of these primal innate spells once per day.</p>",
       "name": "Chattermander"
@@ -1763,6 +1799,14 @@
     "Confident Actualization": {
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You're about to attempt a saving throw or skill check.</p><hr /><p>Your utter confidence in your own abilities helps you push yourself to reach your desired goals. Roll the triggering check or save twice and use the better result.</p>",
       "name": "Confident Actualization"
+    },
+    "Confounding Aerobatics": {
+      "description": "<p>When you successfully @UUID[Compendium.sf2e.actions.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight}, compare the results of your Acrobatics check against the Reflex DC of one creature you were adjacent to at any point during your movement. On a success, the creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} to the next Strike you make before the end of your turn.</p>",
+      "featPrerequisites": {
+        "0": "legendary in Acrobatics",
+        "1": "Aerobatics Mastery"
+      },
+      "name": "Confounding Aerobatics"
     },
     "Confounding Disquisition": {
       "description": "<p>You attempt to enthrall a foe with a convoluted and utterly pointless monologue that leaves your audience dumbfounded. Attempt a @Check[deception|against:will|options:inflicts:stupefied,inflicts:stunned] or @Check[diplomacy|against:will|options:inflicts:stupefied,inflicts:stunned] check against the Will DC of a single creature within 30 feet. The target is then temporarily immune to your Confounding Disquisition for 1 day.</p><hr /><p><strong>Critical Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} and is @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Success</strong> The target is stupefied 1 for 1 round.</p>\n<p><strong>Failure</strong> The target takes a –1 status penalty to Perception checks and Will saves for 1 round.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.YI60jVAgutn1YrI7]{Effect: Confounding Disquisition (Failure)}</p>\n<p><strong>Critical Failure</strong> The target is unaffected.</p>",
@@ -2028,6 +2072,13 @@
       "description": "<p><strong>Trigger</strong> An ally within 30 feet attempts to Aid and rolls a failure.</p><hr /><p>You're always able to help in a pinch. Attempt a skill check or attack roll of the same type attempted by your ally and replace the result of the failed Aid with your result, even if you didn't prepare to help.</p>",
       "name": "Crew Member"
     },
+    "Critical Care": {
+      "description": "<p>When you administer a consumable that restores Hit Points to a creature, you can apply it to maximum effect, pinpointing vital parts of your patient's anatomy. When you do, instead of rolling dice, the consumable heals the maximum possible amount. The target is then temporarily immune to your Critical Care for 1 day.</p>",
+      "featPrerequisites": {
+        "0": "master in Medicine"
+      },
+      "name": "Critical Care"
+    },
     "Cross Research": {
       "description": "<p>A basic understanding of related topics has made you a better practitioner of your craft. You become trained in two Intelligence- or Wisdom-based skills of your choice.</p>",
       "name": "Cross Research"
@@ -2095,6 +2146,13 @@
         "0": "Ha Quoia Maraquoi heritage"
       },
       "name": "Cyber Storage"
+    },
+    "Cyberbully": {
+      "description": "<p>Whether you are a hacktivist or reformed troll, you know to irritate people anonymously in digital spaces, pushing their buttons even when it means resorting to cruel personal attacks. You can use Intimidation to [[/act coerce]] without the usual penalty from being anonymous on the infosphere.</p>",
+      "featPrerequisites": {
+        "0": "trained in Intimidation"
+      },
+      "name": "Cyberbully"
     },
     "Cyclone": {
       "description": "<p><strong>Requirements</strong> You aren't in a vacuum.</p><hr /><p>You take inspiration from schools of hunting manta rays, creating a vortex to draw in your foe before striking. You spin in place and can attempt an @Check[athletics|against:fortitude] check against the Fortitude DC of all creatures within 20 feet of you (or 40 feet if you and the target are in water). On a success, that creature is moved adjacent to you. On a critical success, it's also knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. If a creature is within melee reach of you after this check is resolved, you can Strike that creature.</p>",
@@ -2312,6 +2370,13 @@
       },
       "name": "Deific Obedience"
     },
+    "Delayed Disable": {
+      "description": "<p>Your sabotage takes effect when the time is right. When you @UUID[Compendium.sf2e.actions.Item.cYdz2grcOcRt4jk6]{Disable a Device}, you can delay the device from becoming disabled for up to 24 hours or until someone attempts to use the device. In most cases, creatures have a chance to detect that the device is disabled only if they use the [[/act seek]] action to attempt Perception checks against your Thievery DC. If you rolled a critical success on your Thievery check to Disable a Device, other creatures can't figure out the device will become disabled, and you can safely activate the device without triggering or ending the effect of Delayed Disable.</p>",
+      "featPrerequisites": {
+        "0": "expert in Thievery"
+      },
+      "name": "Delayed Disable"
+    },
     "Delegate": {
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You know that teamwork makes the dream work, so you delegate your task to a teammate. Choose an ally within 30 feet who can perceive you and direct them to complete a simple task, such as attacking a target, moving to a location, or using an item. The creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute and can only use this extra action to Stride, Strike, or Activate an Item. If the target of Delegate completes your direction before the beginning of your next turn, you replenish your use of this feat.</p>",
       "featPrerequisites": {
@@ -2400,6 +2465,13 @@
       },
       "name": "Digital Ambassador"
     },
+    "Digital Branding": {
+      "description": "<p>You use acting, video editing, and propaganda to convince people of your lies online, even if they don't know who you are in the real world or think you are someone else. You can use Deception to @UUID[Compendium.sf2e.actions.Item.ewwCglB7XOPLUz72]{Lie} without the usual penalty for being anonymous on the infosphere.</p>",
+      "featPrerequisites": {
+        "0": "trained in Deception"
+      },
+      "name": "Digital Branding"
+    },
     "Digital Diversion": {
       "description": "<p><strong>Requirements</strong> You are holding or wearing a hacking toolkit and have a free hand.</p><hr /><p>Whether it's a sudden comm unit ping or a warning alarm on an equipment display, you can @UUID[Compendium.sf2e.actions.Item.GkmbTGfg8KcgynOA]{Create a Diversion} by using Computers instead of Deception on an adjacent target carrying, wearing, or wielding a tech item.</p>\n<p>[[/act create-a-diversion variant=distracting-words skill=computers]]</p>\n<p>[[/act create-a-diversion variant=gesture skill=computers]]</p>\n<p>[[/act create-a-diversion variant=trick skill=computers]]</p>",
       "featPrerequisites": {
@@ -2429,6 +2501,13 @@
       "description": "<p><strong>Trigger</strong> A creature misses you with a melee Strike.</p><hr /><p>You turn the tables on your attacker, using underhanded tactics to temporarily hinder it, such as throwing dirt in its eyes, shining a light in its face, pulling its coat over its head, or otherwise being a meddlesome nuisance. The triggering creature becomes your choice of @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} or @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of its next turn.</p>",
       "name": "Dirty Retort"
     },
+    "Dirty Trick": {
+      "description": "<p><strong>Requirements</strong> You have a hand free and are within melee reach of an opponent.</p><hr /><p>You hook a foe's boot clasps together, pull their visor from their eyes, loosen their mag-belt, or otherwise confound their mobility through an underhanded tactic. Attempt a Thievery check against the target's Reflex DC.</p><hr /><p><strong>Critical Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until they use an Interact action to end the impediment</p>\n<p><strong>Success</strong> As critical success, but the condition ends automatically after 1 round.</p>\n<p><strong>Critical Failure</strong> You fall @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone} as your attempt backfires.</p>",
+      "featPrerequisites": {
+        "0": "trained in Thievery"
+      },
+      "name": "Dirty Trick"
+    },
     "Disarming Shot": {
       "description": "<p><strong>Requirements</strong> You're wielding a gun.</p><hr /><p>You attempt to disarm your foe with a well-aimed shot. You @UUID[Compendium.sf2e.actions.Item.sLikawnrJJzHMYeC]{Aim} and then make a ranged Strike against your mark. If the Strike hits, attempt to @UUID[Compendium.sf2e.actions.Item.Dt6B1slsBy8ipJu9]{Disarm} the target using the same ranged attack roll against the target's Reflex DC, instead of attempting an Athletics check. A Disarming Shot counts as two attacks for your multiple attack penalty, but the penalty doesn't increase until after you've used Disarming Shot.</p>",
       "name": "Disarming Shot"
@@ -2444,6 +2523,13 @@
     "Dishonored Contrarian": {
       "description": "<p>When the going gets tough, the tough fight tooth and nail to build a better life—literally. Your fellow vlakas might carry hope, dreams, and unending optimism in their hearts, but you've always found it harder to look on the bright side, and you've done some dubious things to get by. Whether you've lied, cheated, stolen, or taken some lives, you know that you did what it took to survive and thrive in a cold and callous galaxy. You become trained in one of the following skills of your choice: Deception, Intimidation, or Thievery. If you select Deception, you gain the @UUID[Compendium.sf2e.feats.Item.HEBXaS656MZTiWFu]{Lengthy Diversion} skill feat. If you select Intimidation, you gain the @UUID[Compendium.sf2e.feats.Item.gUqvezs2zzoTXFAI]{Group Coercion} skill feat. If you select Thievery, you gain the @UUID[Compendium.sf2e.feats.Item.hVZbnsDuXihggylt]{Subtle Theft} skill feat.</p>",
       "name": "Dishonored Contrarian"
+    },
+    "Disinformation Dealer": {
+      "description": "<p>You convince others to do their own research using specifically curated data and misinformation you casually guide them into finding on the infosphere. The first time you fail to Lie to the target (but not critically fail), you convince them that you were given faulty information, the data isn't all in yet, or you were both mislead, and the target doesn't gain a circumstance bonus against your further attempts to Lie to them. If you're a master in Deception, you can fail to Lie twice in the same conversation before they begin to suspect you, or four times if you're legendary in Deception.</p>",
+      "featPrerequisites": {
+        "0": "expert in Deception"
+      },
+      "name": "Disinformation Dealer"
     },
     "Disperse!": {
       "description": "<p>When you're fully decked out in your Hellknight regalia, just the presence of your fearsome visage drives enemies back. Attempt an @Check[intimidation] check against an enemy within 30 feet who can perceive you.</p><hr /><p><strong>Critical Success</strong> You push your target up to 10 feet away from you. You can Stride after it, but you must move the same distance and in the same direction.</p>\n<p><strong>Success</strong> You push your target back 5 feet. You can Stride after it, but you must move the same distance and in the same direction.</p>",
@@ -2655,6 +2741,13 @@
     "Drift Hop": {
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You travel across the battlefield via the Drift. You teleport up to a distance equal to your Speed within your line of sight. If you're in the Drift, the distance you can teleport is doubled.</p>",
       "name": "Drift Hop"
+    },
+    "Drift Racer": {
+      "description": "<p>You're well-versed in the street racing technique known as drifting, or sliding your vehicle through the entirety of a curve while maintaining speed and showcasing your driving skills. While piloting a land vehicle, when you perform Piloting actions with the reckless trait, your vehicle only becomes uncontrolled on a critical failure. On a failure, the vehicle moves as described under reckless piloting, except that you, not the GM, control where the vehicle drifts. You can choose to fail (but not critically fail) a reckless Piloting action. The GM, however, has discretion as to when a vehicle you're piloting is too large or unwieldy for this technique to be viable—it's a move that works with sports hovercars and not long-hauler transports (generally).</p>",
+      "featPrerequisites": {
+        "0": "expert in Piloting"
+      },
+      "name": "Drift Racer"
     },
     "Drift Strike": {
       "description": "<p><strong>Frequency</strong> once every 10 minutes</p>\n<p><strong>Requirements</strong> Your last action was a melee Strike that critically hit a creature.</p><hr /><p>You launch the creature you hit with the required Strike into the Drift to reposition it across the battlefield. The creature is teleported to a location of your choice up to a distance of 20 feet from its starting location and within your line of sight. If you're in the Drift, the distance you can teleport the creature is doubled. The creature must be able to fit in its new location, and its new location must be unoccupied. The creature can attempt a @Check[will|against:class-spell] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The distance you can teleport the creature is halved, and it can't be moved to a location that is hazardous or would result in a fall.</p>\n<p><strong>Failure</strong> You teleport the creature up to the noted distance.</p>\n<p><strong>Critical Failure</strong> As failure, but the distance you can teleport the creature is doubled.</p>",
@@ -3345,6 +3438,13 @@
       },
       "name": "Eyeswide Detective Dedication"
     },
+    "Fabricator": {
+      "description": "<p>You know how to configure and print tech items out of UPBs in creator capsules. You must have the formula to create the item in a creator capsule and pay an amount of UPBs equal to the material price of the item, reducing the materials used based on the result of your Crafting check. Unlike normal Crafting, this process takes minutes instead of days (depending on the grade of creator capsule used), but you can't spend additional time working on the item. A creator capsule is consumed when you successfully Craft an item but not when you roll a failure or critical failure. You don't need the @UUID[Compendium.sf2e.feats.Item.mX0Xl6wY1WmhyuVO]{Tech Crafting} skill feat to craft tech items using Fabricator, but you can't use Fabricator to create magical equipment unless you have @UUID[Compendium.sf2e.feats.Item.xWY5omyIcILNR7y1]{Magical Crafting}.</p>",
+      "featPrerequisites": {
+        "0": "trained in Crafting"
+      },
+      "name": "Fabricator"
+    },
     "Face in the Crowd": {
       "description": "<p>You know how to get lost in a crowd. You can use cover from crowds to Hide and @UUID[Compendium.sf2e.actions.Item.VMozDqMMuK5kpoX4]{Sneak}, gaining a +2 circumstance bonus to your Stealth checks when in a crowd of at least 10 creatures and a +4 circumstance bonus to your Stealth checks when in a crowd of at least 100 creatures. Hidden creatures don't count as members of a crowd. If you're a master in Deception you only need 5 creatures to get these bonuses.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.IaICLG7zwOV4OKgM]{Effect: Face in the Crowd}</p>",
       "featPrerequisites": {
@@ -3830,6 +3930,14 @@
         "0": "trained in Occultism"
       },
       "name": "Ghost Courier Dedication"
+    },
+    "Gift Grenade": {
+      "description": "<p><strong>Requirements</strong> You're holding a grenade.</p><hr /><p>You attempt to slip a grenade onto a foe, then slip away before it blows. Attempt a @Check[thievery|against:perception] check against an adjacent creature's Perception DC, then you Stride.</p><hr /><p><strong>Critical Success</strong> The grenade explodes after you Stride. The target treats the result of its saving throw as one degree of success worse.</p>\n<p><strong>Success</strong> The grenade explodes after you Stride.</p>\n<p><strong>Failure</strong> The grenade explodes after you Stride, but the target notices your actions. The target treats the result of its saving throw as one degree of success better.</p>\n<p><strong>Critical Failure</strong> The grenade explodes before you Stride, catching you in the blast.</p>",
+      "featPrerequisites": {
+        "0": "legendary in Thievery",
+        "1": "Dirty Trick"
+      },
+      "name": "Gift Grenade"
     },
     "Gift of Gadrathar": {
       "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p>You can manipulate the effects of gravity on your own body enough to allow you to fly. You gain a fly Speed equal to your land Speed for 10 minutes.</p>",
@@ -4318,6 +4426,13 @@
       },
       "name": "History Buff"
     },
+    "Hit Record": {
+      "description": "<p>You're constantly recording, aiming for that perfect camera angle or sound bite. You can perform the Livestream exploration activity at the same time as other exploration activities. In addition, you gain a +1 circumstance bonus to checks to @UUID[Compendium.sf2e.actions.Item.QyzlsLrqM0EEwd7j]{Earn Income} that use your footage, such as Performance or Infosphere Lore, as long as you have at least 8 hours of footage recorded since the last time you attempted to Earn Income. If you're a master in Performance, this bonus increases to +2; if you're legendary in Performance, this bonus increases to +3.</p>",
+      "featPrerequisites": {
+        "0": "trained in Performance"
+      },
+      "name": "Hit Record"
+    },
     "Hobnobber": {
       "description": "<p>You are skilled at learning information through conversation. The @UUID[Compendium.sf2e.actions.Item.plBGdZhqq5JBl1D8]{Gather Information} exploration activity takes you half as long as normal (typically reducing the time to 1 hour). If you're a master in Diplomacy and roll a critical failure to Gather Information, you get a failure instead. There is still no guarantee that a rumor you learn with Gather Information is accurate.</p>",
       "featPrerequisites": {
@@ -4718,6 +4833,13 @@
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You are the prime inheritor of your progenitor star's power and can don this star's lost legacy as a crown, growing in size and power, resplendent in glory. You become Small (or Medium, if you're a massive novian). Your equipment grows with you but returns to normal size if removed. You gain a +2 status bonus to melee damage and Intimidation checks, and the area of your solar luminance (and @UUID[Compendium.sf2e.actions.Item.JdLNIaTM4eyI9Luo]{Absorb Light}, if you're a black hole novian) is doubled. This transformation lasts for 1 minute. You can end this glorious transformation early as a single action, which has the concentrate trait.</p>",
       "name": "Inheritor of Star's Glory"
     },
+    "Inject Serum": {
+      "description": "<p>You can administer medicine using injection weapons. You can load an injection weapon with a hypopen, poison, or serum as an Interact action. When you successfully Strike with an injection weapon loaded in this way, you deal no damage. Instead, you administer the loaded substance to the target of the Strike.</p>",
+      "featPrerequisites": {
+        "0": "trained in Medicine"
+      },
+      "name": "Inject Serum"
+    },
     "Inner Ear Temblor": {
       "description": "<p>Nothing escapes your ears so long as they move even an inch. You gain tremorsense as a vague sense with a range of 30 feet. This means you can use your ears to determine if a creature is present, but you can't pinpoint their location. Creatures that haven't moved or don't make sounds (such as those under the effects of a silence spell) remain undetected to you.</p>",
       "name": "Inner Ear Temblor"
@@ -4942,6 +5064,13 @@
     "Jungle Adaptation": {
       "description": "<p>You're part of a colony that builds inside massive trees rather than below the ground. You become trained in Nature and Survival. If you would automatically become trained in Nature or Survival (such as from your background or class, for example), you instead become trained in another skill of your choice. You gain a climb Speed of 5 feet.</p><hr /><p><strong>Special</strong> If you take the @UUID[Compendium.sf2e.feats.Item.vwX3DQxsk04bTCBq]{Climbing Specialist} ancestry feat, you gain a climb Speed of 30 feet instead of 20 feet.</p>",
       "name": "Jungle Adaptation"
+    },
+    "Junk Cobbler": {
+      "description": "<p>When in a junk-rich environment, you can spend 4 hours to attempt a Crafting check to scavenge the materials you need to Craft a non-consumable item of 2nd level or lower. The GM determines the DC based on the level of the item you're attempting to Craft. During your daily preparations, you must perform some maintenance on this junk item or it falls apart and gains the broken condition. You can only have one junk item at a time. If you're an expert in Crafting, you can have two junk items at a time. If you're a master in Crafting, you can have four junk items at a time. If you're legendary in Crafting, you can have eight junk items at a time and can Craft junk items of an item level up to half your level.</p><hr /><p><strong>Critical Success</strong> You locate suitable raw materials worth half the Price of the item you intend to Craft.</p>\n<p><strong>Success</strong> You locate raw materials worth one-quarter the Price of the item you intend to Craft.</p>\n<p><strong>Failure</strong> You fail to locate any raw materials.</p>\n<p><strong>Critical Failure</strong> Poor materials ruins 10 percent of the raw materials you use to Craft your item.</p>",
+      "featPrerequisites": {
+        "0": "trained in Crafting"
+      },
+      "name": "Junk Cobbler"
     },
     "Junkyard Resistance": {
       "description": "<p>You resist the most common hazards of your unsavory habitat. Choose one damage type: acid, piercing, or poison. You gain resistance equal to half your level to that damage type.</p><hr /><p><strong>Special</strong> You can take this feat multiple times. Each time you do, select a different damage type.</p>",
@@ -5345,6 +5474,13 @@
       "description": "<p>Forged in a sun's flames, your body is a living furnace that releases an abundance of thermal energy. You become inured to high temperatures, and your body sheds a pleasant heat that can stave off the cold. You gain resistance 4 to fire. You and creatures within 20 feet of you treat environmental cold effects as if they were one step less extreme (incredible cold becomes extreme, extreme cold becomes severe, and so on).</p>",
       "name": "Living Furnace"
     },
+    "Living Missile": {
+      "description": "<p><strong>Trigger</strong> You end your movement adjacent to an enemy.</p>\n<p><strong>Requirements</strong> You're Flying using a tech item, such as a jetpack or jump jets.</p><hr /><p>Soaring head-first into your foe, you [[/act shove skill=acrobatics]] them, rolling an Acrobatics check in place of the usual Athletics check. On a success or critical success, you can Fly after your target rather than Stride, even if you don't have a fly Speed.</p>",
+      "featPrerequisites": {
+        "0": "trained in Acrobatics"
+      },
+      "name": "Living Missile"
+    },
     "Living Submersible Mount": {
       "description": "<p>You can reshape your body to provide a safe means of undersea travel for trusted allies. When another PC rides you as a mount while you're using the @UUID[Compendium.sf2e.actions.Item.XYLK5aZ2WAMJGRAc]{Living Submersible} ability, your expert coordination allows them to take three actions at the start of their turn rather than the two they normally could take while riding another PC. You still gain only two actions at the start of your turn, instead of three, as you spend one action keeping your rider safely contained within a protective foam layer on your back.</p>",
       "featPrerequisites": {
@@ -5564,6 +5700,13 @@
     "Maratan Athlete": {
       "description": "<p>To navigate the wilds of Marata, you ask more of your body than most. You become trained in Athletics. If you would automatically become trained in Athletics (from your background or class, for example), you instead become trained in another skill of your choice. When you fall, you can @UUID[Compendium.sf2e.actions.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} using your tail with an Athletics ([[/act grab-an-edge skill=athletics]]) check instead of Acrobatics.</p>",
       "name": "Maratan Athlete"
+    },
+    "Marathon Streamer": {
+      "description": "<p>Whether you're frequently plugging sponsors, talking to chat, or showing off merch, you're always performing for the cameras. You can @UUID[Compendium.sf2e.actions.Item.QyzlsLrqM0EEwd7j]{Earn Income} after Livestreaming for 24 hours in exploration mode. These hours don't need to be consecutive, but each show must be at least 1 hour long to count toward the total number of hours required to roll to determine your earnings. If you're an expert in Performance, you only need 12 hours to receive earnings. If you're a master in Performance, you only need 8 hours. If you're legendary in Performance, you only need 1 hour. You can receive earnings only once per day.</p>",
+      "featPrerequisites": {
+        "0": "trained in Performance"
+      },
+      "name": "Marathon Streamer"
     },
     "March!": {
       "description": "<p>You form up with allies and move in unison. Stride once. You can choose up to two willing allies adjacent to you at the start of your movement to move with you as a reaction. All allies end their movement adjacent to you, but not adjacent to one another, forming a line or triangle. Creatures moving with March! can't move further than the lowest Speed used by any other creature in that march.</p>",
@@ -6047,6 +6190,13 @@
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You can use your nanites to create the perfect tool for a job. Outside of combat, you can have your nanites form a toolkit of a level no higher than half your level (minimum 0). The item lasts for 1 minute. Because your nanites must be actively working to provide the tool, you can't use other feats that require the use of your nanites while you're using them as a tool.</p>",
       "name": "Nanite Tool"
     },
+    "Nanomedical Safeguards": {
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You've integrated medical nanites into your body. You activate these nanites to gain the benefits of one hypopen with a level equal to half your level or lower (minimum 1).</p>",
+      "featPrerequisites": {
+        "0": "trained in Medicine"
+      },
+      "name": "Nanomedical Safeguards"
+    },
     "Natural Ambition": {
       "description": "<p>You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.</p>",
       "name": "Natural Ambition"
@@ -6358,6 +6508,13 @@
     "Oozy Brains": {
       "description": "<p>Your brains are just as oozy as the rest of your \"body.\" You can move through a gap at least 2 inches wide without Squeezing and can [[/act squeeze]] through a gap at least 1 inch wide. When you're struck by a critical hit that deals physical damage, roll a @Check[flat|dc:20|showDC:all]. On a success, the hit becomes a normal hit.</p>",
       "name": "Oozy Brains"
+    },
+    "Open-Source Research": {
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> You have a comm unit and infosphere access.</p><hr /><p>Infosphere archivists have lived by the credo that information wants to be free, and you know where to find it. You @UUID[Compendium.sf2e.actions.Item.Yn4jLPVWVE1vtAaF]{Access Infosphere}. On a critical failure, in addition to the usual effects, your comm unit becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 5}.</p>",
+      "featPrerequisites": {
+        "0": "trained in Computers"
+      },
+      "name": "Open-Source Research"
     },
     "Opening Roar": {
       "description": "<p>At the start of a combat encounter, if you are aware of your foes and aren't attempting to @UUID[Compendium.sf2e.actions.Item.VMozDqMMuK5kpoX4]{Sneak} or Hide, you can roll an Intimidation check for your initiative and can use the result to @UUID[Compendium.sf2e.actions.Item.2u915NdUyQan6uKF]{Demoralize} one observed foe.</p>",
@@ -6726,6 +6883,13 @@
       },
       "name": "Pirate's Parry"
     },
+    "Pit Stop": {
+      "description": "<p>You've learned that in the heat of a race or the frenzy of a chase there's no time to slow down for repairs. You know how to maintain a vehicle without having to slow down. You can perform the Repair activity on a moving vehicle, without the need for a stable surface.</p>",
+      "featPrerequisites": {
+        "0": "trained in Crafting"
+      },
+      "name": "Pit Stop"
+    },
     "Planar Survival": {
       "description": "<p>You can Subsist using Survival on different planes, even those without resources or natural phenomena you normally need. For instance, you can forage for food without penalty even if the plane lacks food that could normally sustain you. A success on your check to Subsist also prevents damage done by the plane to you and anyone else you support with Subsist. This applies only to damage dealt by the general conditions of the plane, not smaller hazards.</p>",
       "featPrerequisites": {
@@ -6943,6 +7107,13 @@
       "description": "<p>You've reconnected with some of the primal cosmic power of Tabrid Minor's copi, and it infuses the polyps of your body with energy. You can cast @UUID[Compendium.sf2e.spells.Item.Et8RSCLx8w7uOLvo]{Sound Body} and @UUID[Compendium.sf2e.spells.Item.aqRYNoSvxsVfqglH]{Unfettered Movement} as 7th-rank primal innate spells. You can cast each of these primal innate spells once per day.</p>",
       "name": "Primal Polyps"
     },
+    "Primal Sabotage": {
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You can combat technology with the bounty of the natural world. Attempt a @Check[nature|against:fortitude] check and smear blood, mud, or another natural substance on an adjacent creature, hazard, or item with the tech trait to disrupt it with primal energy. The DC is equal to the creature's, item's, or hazard's Fortitude DC, or the Fortitude DC of the creature attending the object. If the target is an unattended object, the GM sets the DC for the check based on the item's level. The target is then temporarily immune to your attempts to Primal Sabotage it for 1 hour.</p><hr /><p><strong>Critical Success</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2}.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}.</p>\n<p><strong>Critical Failure</strong> The nature spirits rebuke you, causing a random piece of tech gear you own to become glitching 1.</p>",
+      "featPrerequisites": {
+        "0": "expert in Nature"
+      },
+      "name": "Primal Sabotage"
+    },
     "Primal Vitality": {
       "description": "<p>As far removed as you might be from your First World ancestry, some spark of it still beats within you, giving you a supernaturally powerful connection to life. You Stride twice and can pass through other creatures' spaces without needing to [[/act tumble-through]]. Creatures of your choice whose space you pass through recover @Damage[@actor.level[healing]] Hit Points equal to your level. A creature with void healing treats this as a void effect. You gain temporary Hit Points equal to your level at the end of your movement. These last for 1 minute.</p>",
       "name": "Primal Vitality"
@@ -6958,6 +7129,13 @@
       "description": "<p>You're the inheritor of your progenitor star's stellar glory. Your mere presence terrifies your enemies and emboldens your allies. You gain a +1 status bonus to Diplomacy and Intimidation checks. This bonus increases to +4 against novians. In addition, you gain the @UUID[Compendium.sf2e.actions.Item.lTxbKyZoxEJWqHjX]{Unleash Majesty} action.</p>",
       "name": "Prime Inheritor"
     },
+    "Principled Packer": {
+      "description": "<p>You have a reliable system for loading gear. You can open and close a backpack as part of the same Interact action as retrieving a stowed item from it. When using a container, increase the amount of Bulk of items that container can hold that doesn't count against your Bulk limits by 1. If you're an expert in Survival, increase the amount by 2. If you're a master in Survival, increase the amount by 3. If you're legendary in Survival, increase the amount by 4.</p>",
+      "featPrerequisites": {
+        "0": "trained in Survival"
+      },
+      "name": "Principled Packer"
+    },
     "Prismatic Display": {
       "description": "<p>You rapidly shift the colors of your skin to throw off the senses of those around you. Attempt a @Check[deception|against:perception] check against the Perception DCs of all creatures within melee reach. On a success, the creature becomes @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of your turn (@UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 2} on a critical success). Regardless of the result of your check, each creature is then temporarily immune to Prismatic Display for 10 minutes.</p>",
       "name": "Prismatic Display"
@@ -6965,6 +7143,13 @@
     "Prismeni Lore": {
       "description": "<p>You've learned to leverage your intrinsic link to the Drift, making you an excellent pilot. You gain the trained proficiency rank in Piloting and Stealth. If you would automatically become trained in one of those skills (from your background or class, for example), you instead become trained in a skill of your choice.</p>\n<p>You also gain the @UUID[Compendium.sf2e.feats.Item.BocFD2KV0qgUC76x]{Additional Lore} general feat for Prismeni Lore.</p>",
       "name": "Prismeni Lore"
+    },
+    "Programmer": {
+      "description": "<p>You can write computer programs. You can @UUID[Compendium.sf2e.actions.Item.QyzlsLrqM0EEwd7j]{Earn Income} using Computers, spending your time programming apps for clients. You can also Craft items with the virtual trait. You can use Programmer to Craft tech items that don't have the virtual trait, but you can only cover up to a quarter of the item's cost in raw materials; the remaining Crafting has to be completed by someone using the Crafting skill.</p>",
+      "featPrerequisites": {
+        "0": "trained in Computers"
+      },
+      "name": "Programmer"
     },
     "Proleptic Parry": {
       "description": "<p><strong>Trigger</strong> A Telepredicted creature targets you with a mental effect.</p>\n<p><strong>Requirements</strong> You have a bonus against the target using Telepredict.</p><hr /><p>You gain a +1 circumstance bonus to Will saving throws against the triggering effect. Increase this bonus to +2 if you've dealt mental damage to the target since the last time you used Telepredict. If you roll a critical success on the saving throw, the target takes @Damage[5d4[mental]] damage and becomes @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of your next turn.</p>",
@@ -7330,6 +7515,13 @@
       },
       "name": "Quick Squeeze"
     },
+    "Quick Starter": {
+      "description": "<p>You fly vehicles like you're trying to steal them. Reduce the number of actions to Take Control of an uncontrolled vehicle by one. If this would reduce the number of actions to zero, you can Take Control as a free action. Additionally, you gain the @UUID[Compendium.sf2e.actions.Item.5q9ueI3PtkhSJBRz]{Punch It!} action.</p>",
+      "featPrerequisites": {
+        "0": "trained in Piloting"
+      },
+      "name": "Quick Starter"
+    },
     "Quick Stow": {
       "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>You're trained in the trick of quickly moving items into your cheek pouches. You Interact to store one held item in your cheek pouches (provided it fits).</p>",
       "featPrerequisites": {
@@ -7639,6 +7831,13 @@
     "Remote Access": {
       "description": "<p>You know how to probe computer systems with your mind as easily as others might handle a hacking toolkit. You can communicate wirelessly with technological devices within 10 feet, allowing you to attempt Computers checks on these devices without a user interface or hacking toolkit. If you can already attempt Computers checks at range, you increase the distance that you can do so by an additional 10 feet.</p>",
       "name": "Remote Access"
+    },
+    "Repair Expert": {
+      "description": "<p>You restore items to pristine condition. When you succeed at a Crafting check to Repair an item, you restore additional Hit Points to that item equal to your Intelligence modifier. Additionally, you can use Crafting to @UUID[Compendium.sf2e.actions.Item.1kGNdIIhuglAjIp9]{Treat Wounds} on constructs, substituting a repair toolkit for a medkit. You can use Battle Medicine and Continual Recovery with Crafting instead of Medicine while treating constructs, but you must still meet the feats' prerequisites to qualify for these feats.</p>",
+      "featPrerequisites": {
+        "0": "trained in Crafting"
+      },
+      "name": "Repair Expert"
     },
     "Repair Module": {
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p>You trigger your body's self-repair programming, stimulating your body's nanites to heal your wounds. You gain fast healing equal to half your level for 1 minute. While Repair Module is active, if you use @UUID[Compendium.sf2e.feats.Item.JS24EjgLYcHB9E3T]{Nanite Surge} or @UUID[Compendium.sf2e.feats.Item.OlSfsaJSE4Lk7wkt]{Nanite Form}, this fast healing ends.</p>",
@@ -9524,6 +9723,13 @@
       },
       "name": "That'll Show 'Em"
     },
+    "That's Not What I Heard": {
+      "description": "<p>You attempt to convince someone that you've seen nasty rumors about them on the infosphere. Choose a target within 30 feet, and attempt a @Check[society|against:will] check against its Will DC.</p><hr /><p><strong>Critical Success</strong> The distracted target takes a –3 status penalty to Will saves and Diplomacy checks for 1 minute. The target can end this effect early by checking a comm unit or other computer as a single action that has the manipulate trait or with the assistance of another creature checking a device.</p>\n<p><strong>Success</strong> As critical success, but the penalty is –2.</p>\n<p><strong>Critical Failure</strong> The target doesn't care about your accusation or knows it's a lie, ruining your reputation and giving you a –2 circumstance penalty to your Deception, Diplomacy, and Society checks for 1 minute.</p>",
+      "featPrerequisites": {
+        "0": "master in Society"
+      },
+      "name": "That's Not What I Heard"
+    },
     "The Ancestral Wellspring Overflows": {
       "description": "<p>Through study and meditation, you've found a powerful link to the great gifts your ancestors have prepared for you. Through your connection with the ancestral wellspring, you have access to the combined wisdom of thousands of generations. From their place between the stars, they can guide your actions and tell you things about the world around you that you'd never learn on your own. You are permanently @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use that extra action only to @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge}.</p>",
       "featPrerequisites": {
@@ -10118,6 +10324,13 @@
     "Vector Reflector": {
       "description": "<p><strong>Trigger</strong> A @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} creature damages you with a Strike.</p><hr /><p>Your armor absorbs some of the kinetic energy of your opponent's attack. You gain resistance equal to half your level against the triggering damage (or equal to your level if you have the @UUID[Compendium.sf2e.class-features.Item.T78VQC8oaD1Odz1k]{Armor Storm} fighting style). If the triggering creature is within reach, attempt an Athletics check to @UUID[Compendium.sf2e.actions.Item.7blmbDrQFNfdT731]{Shove} it.</p>",
       "name": "Vector Reflector"
+    },
+    "Vehicular Menace": {
+      "description": "<p>You're a menace behind the wheel! When you attempt to @UUID[Compendium.sf2e.actions.Item.lID4rJHAVZB6tavf]{Run Over} creatures with a vehicle you're Piloting, you can attempt to [[/act demoralize]] one creature in your path. If you're a master in Piloting, you can Demoralize up to two creatures in your path, or up to three creatures if you're legendary in Piloting.</p>",
+      "featPrerequisites": {
+        "0": "expert in Piloting"
+      },
+      "name": "Vehicular Menace"
     },
     "Veil of Ink": {
       "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You vent most of your ink all at once, filling a small area with obscuring droplets. You create a stationary cloud of ink in a @Template[emanation|distance:10] centered on your current location. Creatures are @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} while inside the cloud, and creatures outside the area are concealed to creatures inside the cloud. The ink dissipates at the start of your next turn. This ability functions equally effectively above or below water.</p>",

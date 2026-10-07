@@ -8,6 +8,10 @@
       "description": "<p><strong>Requirements</strong> You are using a device with infosphere access.</p><hr /><p>You attempt to access a local network, known as an infosphere, to come up with information on a topic. This typically takes 10 minutes of research to find information, with results like Recalling Knowledge on a topic. Larger investigations or topics could require several hours, while single-word answers of information common to that settlement's infosphere may only take a minute, based on the GM's discretion. Significant and longer investigations should use the research subsystem (GM Core). The GM determines the DC based on the topic you're researching. This can be further influenced by the quality of the local infosphere and what information it might possess on the topic, and how well organized it is.</p><hr /><p><strong>Critical Success</strong> You find the information you were searching for. If this was used on a topic you could have used @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} on, you instead find this information in 1 minute.</p>\n<p><strong>Success</strong> You find the information you were looking for.</p>\n<p><strong>Critical Failure</strong> You find misleading information thanks to incorrect data or online pranksters. The GM provides you false information on your topic of investigation (or decides to give you no information, as on a failure).</p>",
       "name": "Access Infosphere"
     },
+    "Activate Thrusters": {
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> Your drone Strides twice, moving through the spaces of any creatures in the way but not triggering reactions, and deals @Damage[5d6[bludgeoning]] damage to them with a @Check[reflex|against:class|basic] save against your class DC. A creature that critically fails its saving throw is additionally knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. At 12th level and every 2 levels thereafter, the bludgeoning damage increases by 1d6.</p>",
+      "name": "Activate Thrusters"
+    },
     "Adaptive Locomotion": {
       "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You transform your limbs into either flippers or hooked pseudopods, to better traverse the surrounding environment. If you select flippers, you gain a swim Speed of 20 feet. If you select hooked pseudopods, you gain a climb Speed of 20 feet. This transformation lasts for 10 minutes.</p>",
       "name": "Adaptive Locomotion"
@@ -95,6 +99,10 @@
     "Burrowing Charge": {
       "description": "<p>You Burrow up to twice your burrow Speed, then @UUID[Compendium.sf2e.actions.Item.d5I6018Mci2SWokk]{Leap} vertically up to 25 feet high, making a stinger Strike against a creature at any point during the jump. After the Leap, you fall to the ground, but take no damage from the fall if you land on dirt or sand.</p>",
       "name": "Burrowing Charge"
+    },
+    "Cartoonish Stretch": {
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> You reach out with your arms, stretching them like elastic. Your reach increases by 5 feet until the end of your turn.</p>",
+      "name": "Cartoonish Stretch"
     },
     "Cast a Spell": {
       "description": "<p>Spells can vary in how many actions they take, as shown in the spell's stat block. You cast cantrips, spells from spell slots, and focus spells using the same process, but must expend the spell when casting a spell from a spell slot and must spend 1 Focus Point to cast a focus spell. Some rules will refer to the Cast a Spell activity, such as \"if the next action you use is to Cast a Spell.\" Any spell qualifies as a Cast a Spell activity, and any characteristics of the spell use those of the specific spell you're casting.</p>\n<p><strong>Costs and Loci</strong> Some spells require you to pay a cost or provide a locus. If the spell lists a cost, you must have the listed money, valuable materials, or other resources to cast the spell (such as gems or magical reagents), and they're expended during the casting.</p>\n<p>A <strong>locus</strong> is an object that funnels or directs the magical energy of the spell but is not consumed in its casting. As part of Casting the Spell, you retrieve the locus (if necessary, and if you have a free hand), and you can put it away again if you so choose. Loci tend to be expensive, and you need to acquire them in advance to cast the spell, but they aren't expended like costs are. Unless noted otherwise, a locus has negligible Bulk.</p>\n<p><strong>Long Casting</strong> <strong>Times</strong> Some spells take minutes or hours to cast. You can't use other actions or reactions while casting such a spell, though at the GM's discretion, you might be able to speak a few sentences. As with other activities that take a long time, these spells have the exploration trait, and you can't cast them in an encounter. If combat breaks out while you're casting one, your spell is disrupted.</p>\n<p><strong>Disrupted and Lost Spells</strong> Some abilities and spells can disrupt a spell, causing it to have no effect and be lost. When you lose a spell, you've already expended the spell slot and spent the spell's costs and actions. If a spell is disrupted during a @UUID[Compendium.sf2e.actions.Item.3f5DMFu8fPiqHpRg]{Sustain} action, the spell immediately ends.</p>",
@@ -196,13 +204,29 @@
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail or critically fail a saving throw</p><hr /><p><strong>Effect</strong> You refuse to accept your failure! Reroll the triggering saving throw. If your result is a critical failure, this use of Deny Failure doesn't count toward its frequency.</p>",
       "name": "Deny Failure"
     },
+    "Deploy Mine": {
+      "description": "<p>You deploy a mine that flies to an unoccupied square of your choice within 60 feet and hovers in place.</p>",
+      "name": "Deploy Mine"
+    },
+    "Deploy Turret": {
+      "description": "<p>You deploy your turret into an unoccupied square within 30 feet and prime it to fire, or you recall your turret from its current location, even if it's broken, returning it to your custom rig for storage.</p>",
+      "name": "Deploy Turret"
+    },
     "Detect Magic": {
       "description": "<p>You cast @UUID[Compendium.sf2e.spells.Item.gpzpAAAJ1Lza2JVl]{Detect Magic} at regular intervals. You move at half your travel speed or slower. You have no chance of accidentally overlooking a magic aura at a travel speed up to 300 feet per minute, but must be traveling no more than 150 feet per minute to detect magic auras before the party moves into them.</p>",
       "name": "Detect Magic"
     },
+    "Detonate Mine": {
+      "description": "<p><span class=\"action-glyph\">1</span> or <span class=\"action-glyph\">r</span></p><hr /><p>With a moment's thought, you trigger the detonation of a mine you deployed within 150 feet, causing it to explode in a @Template[type:burst|distance:10]. A mine deals your choice of either @Damage[2d6[fire]|options:area-damage] damage or @Damage[2d6[piercing]|options:area-damage] damage. Creatures in the area must attempt a @Check[reflex|against:class|basic] save against your class DC.</p>\n<p>You can Detonate Mine as a reaction, with the following trigger: <strong>Trigger</strong> A creature enters or leaves a square within 10 feet of a mine you've deployed. If your mine has a larger radius, increase this distance to that amount.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. At 10th level, the burst radius increases to 15 feet, and at 15th level, the burst radius increases to 20 feet.</p>",
+      "name": "Detonate Mine"
+    },
     "Digital Assessment!": {
       "description": "<p>A quick check of your records and local infospheres lets you quickly disseminate information to your allies. Choose a creature within 100 feet and @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} about the target. When you succeed at identifying your target with Recall Knowledge, you note a resistance or immunity in the creature's defenses in addition to any other benefits.</p>\n<p><strong>Lead by Example</strong> If you used two actions, you Strike the target. You and your allies gain a +1 circumstance bonus to AC against attacks made by the target until the start of your next turn. If the target has the tech trait, it must attempt a @Check[fortitude|against:envoy|options:inflicts:glitching] save against your class DC. On a failure, the target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}. The target is then immune to Digital Assessment for 1 hour.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.2Iuhg4udP9eQF3oM]{Effect: Digital Assessment!}</p>",
       "name": "Digital Assessment!"
+    },
+    "Disable Hardlight Projector": {
+      "description": "<p><strong>Requirements</strong> Your core is projecting your hardlight body</p><hr /><p><strong>Effect</strong> Your hardlight body disappears, and your core falls harmlessly to the ground. You can select any number of items you were carrying or wearing to store in your core's virtual storage, up to its maximum capacity, with the remaining items landing harmlessly in your space. Your size becomes Tiny, you weigh 1 Bulk, and you can't act except to @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge}, Project Hardlight Body, and use actions that require only your mind (as determined by the GM). Your senses still function when your body isn't projected.</p>",
+      "name": "Disable Hardlight Projector"
     },
     "Disable a Device": {
       "description": "<p>This action allows you to disarm a trap or another complex device. Often, a device requires numerous successes before becoming disabled, depending on its construction and complexity. An @UUID[Compendium.sf2e.equipment.Item.coJUVZGcuVg3FoYh]{infiltrator's toolkit} is helpful and sometimes even required to Disable a Device, as determined by the GM, and sometimes a device requires a higher proficiency rank in Thievery to disable it.</p>\n<p>Your [[/act disable-device]]{Thievery} check result determines your progress.</p><hr /><p><strong>Critical Success</strong> You disable the device, or you achieve two successes toward disabling a device requiring more than one success. You leave no trace of your tampering, and you can rearm the device later, if that type of device can be rearmed.</p>\n<p><strong>Success</strong> You disable the device, or you achieve one success toward disabling a device that requires more than one success.</p>\n<p><strong>Critical Failure</strong> You trigger the device.</p>",
@@ -223,6 +247,10 @@
     "Doomsayer's Litany": {
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> An ally within 30 feet attempts a recovery check</p><hr /><p><strong>Effect</strong> You share an ancient prayer with your ailing ally. Your ally gains a +2 status bonus to the triggering recovery check.</p>",
       "name": "Doomsayer's Litany"
+    },
+    "Download Spell": {
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>You overwrite one of your prepared spells with one of the spells in your spell cache of the same rank or lower. Select one of your prepared spell slots that hasn't been expended. This spell slot is emptied, and one spell from your spell cache is instantly prepared in its place, heightened to the slot it fills.</p>",
+      "name": "Download Spell"
     },
     "Dragon Breath (Dragon Form)": {
       "description": "<p>You exhale deadly magical energy in an area, dealing @Damage[10d6[untyped]|options:area-damage] damage to each creature in the area with a basic save against your spell DC. The shape, damage type, and save type match that of your chosen dragon's breath. If the chosen dragon's breath can deal more than one type of damage, choose one when you cast <em>dragon form</em>. The shape is a @Template[type:cone|distance:30] or a @Template[type:line|distance:100]. Once activated, Dragon Breath can't be used again for [[/r 1d4 #Recharge Dragon Breath]]{1d4 rounds}. Dragon Breath has the tradition trait matching the type of dragon and the damage trait matching the type of damage it deals, if applicable.</p>",
@@ -248,6 +276,14 @@
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Your telekinetic hands swiftly maneuver, allowing you either to Switch Hands or to increase the reach of your telekinetic hands by 5 feet until the beginning of your next turn.</p>",
       "name": "Eccentric Orbit"
     },
+    "Electrical Discharge": {
+      "description": "<p>Your drone discharges electricity, dealing @Damage[(ceil(@actor.level/2))d6[electricity]|options:area-damage] damage in your choice of a @Template[type:cone|distance:15], @Template[type:emanation|distance:10], or @Template[type:line|distance:30]. Creatures in the area must attempt a @Check[reflex|against:class|basic] save against your class DC. Your drone can't use this ability again for [[/gmr 1d4 #Recharge this ability]]{1d4 rounds}. At 3rd level and every 2 levels thereafter, this damage increases by 1d6.</p>",
+      "name": "Electrical Discharge"
+    },
+    "Emoji Burst": {
+      "description": "<p><strong>Trigger</strong> A creature hits you with a Strike</p><hr /><p><strong>Effect</strong> You pop the emoji, creating a bright light in a @Template[type:emanation|distance:5]. Creatures in the area must succeed at a Fortitude save or become @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of your next turn (@UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} on a critical failure).</p>",
+      "name": "Emoji Burst"
+    },
     "Empathic Assistance": {
       "description": "<p><strong>Requirements</strong> You are adjacent to a willing member of your pod who is currently frightened or affected by a harmful effect with the emotion or mental trait</p><hr /><p><strong>Effect</strong> You hold your affected pod member's hand to comfort them. If they are frightened, reduce their frightened condition by 1. If they are under the effect of an ongoing emotion or mental effect, attempt a counteract check against the triggering effect, using half your level rounded up as your counteract rank and your Perception modifier as the counteract modifier. On a success, you gain the effect for its remaining duration, and that pod member becomes immune to Empathetic Assistance for 1 hour.</p>",
       "name": "Empathic Assistance"
@@ -255,6 +291,10 @@
     "Escape": {
       "description": "<p>You attempt to escape from being @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}. Choose one creature, object, spell effect, hazard, or other impediment imposing any of those conditions on you. Attempt a check using your [[/act escape statistic=unarmed]]{unarmed attack modifier} against the DC of the effect. This is typically the Athletics DC of a creature grabbing you, the Thievery DC of a creature who tied you up, the spell DC for a spell effect, or the listed Escape DC of an object, hazard, or other impediment. You can attempt an [[/act escape statistic=acrobatics]]{Acrobatics} or [[/act escape statistic=athletics]]{Athletics} check instead of using your attack modifier if you choose (but this action still has the attack trait).</p><hr /><p><strong>Critical Success</strong> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target. You can then Stride up to 5 feet.</p>\n<p><strong>Success</strong> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target.</p>\n<p><strong>Critical Failure</strong> You don't get free, and you can't attempt to Escape again until your next turn.</p>",
       "name": "Escape"
+    },
+    "Eureka!": {
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Attempt a Life Science Lore or Physical Science Lore check to @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge}. Roll twice and take the better of the two results.</p>",
+      "name": "Eureka!"
     },
     "Feign Prone": {
       "description": "<p><strong>Trigger</strong> A foe fails or critically fails to [[/act trip]] you, or you fail, but not critically fail, to Trip a foe</p><hr /><p><strong>Effect</strong> You pretend to be tripped. Drop @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone} and [[/act feint]] the triggering creature. You can Stand as a free action during your next turn without triggering reactions.</p>",
@@ -307,6 +347,10 @@
     "Gather Information": {
       "description": "<p>You canvass local markets, taverns, and gathering places in an attempt to learn about a specific individual or topic. The GM determines the DC of the [[/act gather-information]]{Diplomacy} check and the amount of time it takes (typically 2 hours, but sometimes more), along with any benefit you might be able to gain by spending coin on bribes, drinks, or gifts.</p>\n<p><strong>Success</strong> You collect information about the individual or topic. The GM determines the specifics.</p>\n<p><strong>Critical Failure</strong> You collect incorrect information about the individual or topic.</p><h2 class=\"title\">Sample Gather Information Tasks</h2><ul><li><strong>Untrained</strong> talk of the town</li><li><strong>Trained</strong> common rumor</li><li><strong>Expert</strong> obscure rumor, poorly guarded secret</li><li><strong>Master</strong> well-guarded or esoteric information</li><li><strong>Legendary</strong> information known only to an incredibly select few, or only to extraordinary beings</li></ul>",
       "name": "Gather Information"
+    },
+    "Gear Array": {
+      "description": "<p><strong>Effect</strong> You can don or remove any one suit of armor registered as your nanocyte gear, then you can Interact to stow or draw any one weapon or shield registered as your nanocyte gear.</p>",
+      "name": "Gear Array"
     },
     "Get 'Em!": {
       "description": "<p>You single out an enemy for you and your allies to focus your attacks on. Select an enemy within 60 feet that you can see. You and your allies gain a +1 status bonus to attacks against that target until the beginning of your next turn.</p>\n<p><strong>Lead by Example</strong> If you used two actions, Strike the target. You gain a status bonus to the damage roll equal to your Charisma modifier. Regardless of whether the Strike hits, you and your allies gain a +1 status bonus to damage on subsequent Strikes made against the enemy until the start of your next turn. Increase the damage by 1 at 5th, 10th, 15th, and 20th levels.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.ey2zSEnprAGgvrij]{Effect: Get 'Em!}</p>",
@@ -384,6 +428,10 @@
       "description": "<p>You attempt to make a favorable impression on an NPC to convince the NPC to support your cause. Attempt a skill check to impress that NPC. The DC and skills which can apply can be found in the NPC's stat block.</p>\n<hr />\n<p><strong>Critical Success</strong> You gain 2 Influence Points with the chosen NPC.</p>\n<p><strong>Success</strong> You gain 1 Influence Point with the chosen NPC.</p>\n<p><strong>Failure</strong> You gain no Influence Points with the chosen NPC.</p>\n<p><strong>Critical Failure</strong> You lose 1 Influence Point with the chosen NPC.</p>",
       "name": "Influence"
     },
+    "Inject Nanites": {
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You inject yourself or a creature in your reach with medical nanites, which have the effects of both a commercial hypopen and a commercial medpatch. The grade of these items increases to tactical at level 9, advanced at level 13, and superior at level 18.</p><hr /><p><strong>Special</strong> If you have the medic SRO heritage, you can Inject Nanites once per 10 minutes.</p>",
+      "name": "Inject Nanites"
+    },
     "Install Upgrade": {
       "description": "<p><strong>Requirements</strong> You must use a @UUID[Compendium.sf2e.equipment.Item.vLGDUFrg4yGzpTQX]{repair toolkit}.</p><hr /><p>You spend 10 minutes installing an upgrade into a suit of armor or weapon, placing it into an empty upgrade slot. You can also use this activity to uninstall an upgrade. You can't install more upgrades than there are upgrade slots. Installing or uninstalling an upgrade requires using a repair toolkit with two hands.</p>",
       "name": "Install Upgrade"
@@ -408,6 +456,10 @@
       "description": "<p>If the next action you use is to Cast a Spell that has a range, increase the spell's range to 100 feet. That spell only affects targets inside your quantum field, and the area of the spell doesn't extend beyond your quantum field.</p>",
       "name": "Isolated Spell Matrix"
     },
+    "Jailbreak Spell": {
+      "description": "<p><strong>Requirements</strong> Your gear is overclocked.</p><hr /><p>You draw the magic out of your overclocked gear to power a spellshape. If your next action is to Cast a Spell, apply a single-action technomancer spellshape you know to that spell. The spell must meet any normal requirements of the spellshape. After this spell resolves, your gear is no longer overclocked, and your gear can't be overclocked again until your next turn.</p><hr /><p><strong>Special</strong> If the spellshape you apply is the spellshape associated with your programming language, you can also apply one of your programming language's jailbreak effects to the spell.</p>",
+      "name": "Jailbreak Spell"
+    },
     "Keep on Keeping On!": {
       "description": "<p>You push your allies to continue fighting despite their injuries. Select an ally within 30 feet. Until the start of your next turn, that ally increases the next healing they receive by an amount equal to your Charisma modifier plus half your level.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.piyxWlJUtjJIKdW4]{Effect: Keep on Keeping On!}</p>\n<p><strong>Lead by Example</strong> If you used two actions, you @UUID[Compendium.sf2e.feats.Item.wYerMk6F1RZb0Fwt]{Battle Medicine} the target, and the target only becomes immune to Battle Medicine for the next 10 minutes instead of 1 day.</p>",
       "name": "Keep on Keeping On!"
@@ -419,6 +471,10 @@
     "Learn a Spell": {
       "description": "<h2>Magical Traditions and Skills</h2><p>Each magical tradition has a corresponding skill, as shown on the table below. You must have the trained proficiency rank in a skill to use it to Identify Magic or Learn a Spell. Something without a specific tradition, such as an item with the magical trait, can be identified using any of these skills.</p><table class=\"pf2e remaster\"><thead><tr><th>Magical Tradition</th><th>Corresponding Skill</th></tr></thead><tbody><tr><td>Arcane</td><td>Arcana</td></tr><tr><td>Divine</td><td>Religion</td></tr><tr><td>Occult</td><td>Occultism</td></tr><tr><td>Primal</td><td>Nature</td></tr></tbody></table><hr /><p><strong>Requirements</strong> You have a spellcasting class feature, and the spell you want to learn is on your magical tradition's spell list.</p><hr /><p>You can gain access to a new spell of your tradition from someone who knows that spell or from magical writing like a spellbook or scroll. If you can cast spells of multiple traditions, you can Learn a Spell of any of those traditions, but you must use the corresponding skill to do so. For example, if you were an elemental mystic with the witchwarper multiclass archetype, you couldn't use Nature to add an arcane or occult spell to your witchwarper spell repertoire.</p>\n<p>To learn the spell, you must do the following:</p><ul><li>Spend 1 hour per spell rank, during which you must remain in conversation with a person who knows the spell or have the magical writing in your possession.</li><li>Have materials with the Price indicated in the Learning a Spell table.</li><li>Attempt a skill check for the skill corresponding to your tradition (DC determined by the GM, often close to the DC on the Learning a Spell Table). Uncommon or rare spells have higher DCs; full guidelines for the GM appear on page 52 of Starfinder GM Core.</li></ul><h3>Learning a Spell</h3><table class=\"pf2e remaster\"><thead><tr><th>Spell Rank</th><th>Price</th><th>Typical DC</th></tr></thead><tbody><tr><td>1st or cantrip</td><td>20 credits</td><td>15</td></tr><tr><td>2nd</td><td>60 credits</td><td>18</td></tr><tr><td>3rd</td><td>160 credits</td><td>20</td></tr><tr><td>4th</td><td>360 credits</td><td>23</td></tr><tr><td>5th</td><td>700 credits</td><td>26</td></tr><tr><td>6th</td><td>1,400 credits</td><td>28</td></tr><tr><td>7th</td><td>3,000 credits</td><td>31</td></tr><tr><td>8th</td><td>6,500 credits</td><td>34</td></tr><tr><td>9th</td><td>15,000 credits</td><td>36</td></tr><tr><td>10th</td><td>70,000 credits</td><td>41</td></tr></tbody></table><hr /><p><strong>Critical Success</strong> You expend half the materials and learn the spell.</p>\n<p><strong>Success</strong> You expend the materials and learn the spell.</p>\n<p><strong>Failure</strong> You fail to learn the spell but can try again after you gain a level. The materials aren't expended.</p>\n<p><strong>Critical Failure</strong> As failure, except you expend half the materials.</p>",
       "name": "Learn a Spell"
+    },
+    "Let Me Hear You Cheer": {
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You hype yourself up and attempt to convince your audience to give you a round of applause, using over exaggerated gestures and excessive enthusiasm. You gain 1d4 temporary Hit points that last for 1 minute. Each of your allies within 60 feet can choose to applaud for you as a reaction. For each ally who applauds, increase the number of temporary Hit Points you gain by 1. At 9th level and every 5 levels thereafter, the initial temporary Hit Points increase by 1d4, and the applause temporary Hit Points per ally increase by 1.</p>",
+      "name": "Let Me Hear You Cheer"
     },
     "Lie": {
       "description": "<p>You try to fool someone with an untruth. Doing so takes at least 1 round, or longer if the lie is elaborate. You roll a single [[/act lie]]{Deception} check and compare it against the Perception DC of every creature you are trying to fool. The GM might give them a circumstance bonus based on the situation and the nature of the lie you are trying to tell. Elaborate or highly unbelievable lies are much harder to get a creature to believe than simpler and more believable lies, and some lies are so big that it's impossible to get anyone to believe them.</p>\n<p>At the GM's discretion, if a creature initially believes your lie, it might attempt a Perception check later to @UUID[Compendium.sf2e.actions.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} against your Deception DC to realize it's a lie. This usually happens if the creature discovers enough evidence to counter your statements.</p><hr /><p><strong>Success</strong> The target believes your lie.</p>\n<p><strong>Failure</strong> The target doesn't believe your lie and gains a +4 circumstance bonus against your attempts to Lie for the duration of your conversation. The target is also more likely to be suspicious of you in the future.</p>",
@@ -480,6 +536,18 @@
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You're reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> You release a burst of stellar energy, incinerating your surroundings as you fall @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious}. You deal 1d6 fire damage plus your level (@Damage[(ceil(@actor.level/2)d6+@actor.level)[fire]|options:area-damage]) to all other creatures in a @Template[type:emanation|distance:10] (@Check[reflex|against:class-spell|basic] save against the higher of your class DC or spell DC). At 3rd level, and every 2 levels thereafter, this damage increases by 1d6.</p>",
       "name": "Mini-Nova"
     },
+    "Miraculous Activation": {
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> For 3 rounds, you can Activate augmentations even if you've already reached their activation frequency limit. In addition, augmentations you Activate during this time don't count toward their activation frequency limit.</p>",
+      "name": "Miraculous Activation"
+    },
+    "Mobile Reconfiguration": {
+      "description": "<p>Your drone switches to one of its other chassis. It remains in this configuration until you next Command it to perform Mobile Reconfiguration.</p>",
+      "name": "Mobile Reconfiguration"
+    },
+    "Modify": {
+      "description": "<p><strong>Requirements</strong> You're holding or wearing your custom rig.</p><hr /><p>Using your trusty custom rig, you quickly customize a piece of gear. Select one item in your possession or in the possession of a willing creature within your unarmed reach. If you select an item in your possession, you can Interact to draw or retrieve this item. Then, apply one of the mods you know to the item. The item remains modded until the end of your next turn.</p>\n<p>When you Modify an item, you can apply one of the following effects of your choice, called a mod, or any other mod you know. Some mods can only be applied to items of specific types or items with certain traits; these requirements are listed in parentheses.</p><ul><li><p><strong>Big Boom (grenade or area weapon):</strong> You cram a big payload of explosives into a small package. Increase the item's radius by 5 feet (if it's a burst), its area by 5 feet (if it's a cone), or its area by 10 feet (if it's a line).</p></li><li><p><strong>Bunker Buster (grenade or weapon):</strong> You amplify the destructive capabilities of an item. Whenever the item deals damage to an object, structure, vehicle, or creature with Hardness, the target takes 5 additional damage. If the modded item has the razing trait, apply the additional damage from both this mod and the razing trait.</p></li><li><p><strong>Incapacitant (grenade or weapon):</strong> You use dummy rounds. The item gains the nonlethal trait.</p></li><li><p><strong>Long-range Propulsors (grenade or ranged weapon):</strong> You increase the distance you can shoot or throw the item. Increase the item's range or range increment by 30 feet.</p></li><li><p><strong>Magnetic Levitators (armor):</strong> You activate powerful magnets in the armor that propel the wearer off the ground. The wearer's land Speed gains hover, and the wearer gains a fly Speed of 10 feet.</p></li><li><p><strong>Troubleshoot (item):</strong> You recalibrate a malfunctioning item. Reduce the item's glitching value by 1.</p></li></ul>",
+      "name": "Modify"
+    },
     "Mount": {
       "description": "<p><strong>Requirements</strong> You are adjacent to a creature that is at least one size larger than you and is willing to be your mount.</p>\n<hr />\n<p>You move onto the creature and ride it. If you're already mounted, you can instead use this action to dismount, moving off the mount into a space adjacent to it.</p>",
       "name": "Mount"
@@ -532,6 +600,14 @@
       "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>You unnerve foes with a look, or similarly unsettle them with subtle mannerisms or veiled threats. One enemy creature of your choice within 60 feet becomes @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the start of your next turn. If the creature targets you with a Strike or other offensive action, it loses the suppressed condition from this effect.</p>",
       "name": "Oppressive Presence"
     },
+    "Overclock Gear": {
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You Cast a Spell from your spell slots.</p><hr /><p>You siphon residual magic to unlock your gear's full potential. One tech item you hold, wield, wear, or one tech minion you're commanding (as determined by your programming language) becomes overclocked for 1 minute. You can have only one overclocked gear at a time; if you overclock a different target, your current overclocked gear stops being overclocked. As long as your gear is overclocked, you gain the benefits of your programming language's overclock boost and can use its unique Overclock Pulse action.</p>",
+      "name": "Overclock Gear"
+    },
+    "Overload Thrusters": {
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You can overload your thrusters, sending you rocketing through the air before your thrusters deactivate to cool down. You gain a fly Speed equal to your Speed for 2 rounds. At the end of this duration, your thrusters deactivate entirely—your land Speed loses the hover trait for 1 hour.</p>",
+      "name": "Overload Thrusters"
+    },
     "Overwhelming Strike": {
       "description": "<p><strong>Trigger</strong> Your Strike hits a creature you've designated as your mark and deals damage.</p><hr /><p>The target becomes your choice of @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}, @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard}, or @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of your next turn. That creature becomes immune to Overwhelming Strike until the end of your next turn.</p>",
       "name": "Overwhelming Strike"
@@ -545,7 +621,7 @@
       "name": "Pardon Me"
     },
     "Perform": {
-      "description": "<p>When making a brief performance-one song, a quick dance, or a few jokes-you use the Perform action. This action is most useful when you want to prove your capability or impress someone quickly. Performing rarely has an impact on its own, but it might influence the DCs of subsequent Diplomacy checks against the observers, or even change their attitudes if the GM sees fit.</p><table class=\"pf2e remaster\"><tbody><tr><th><p>Performance</p></th><th><p>Additional Traits</p></th></tr><tr><td><p>[[/act perform variant=acting]]{Act or perform comedy}</p></td><td><p>Auditory, linguistic, and visual</p></td></tr><tr><td><p>[[/act perform variant=dance]]{Dance}</p></td><td><p>Move and visual</p></td></tr><tr><td><p>[[/act perform variant=keyboards]]{Play an instrument}</p></td><td><p>Auditory and manipulate</p></td></tr><tr><td><p>[[/act perform variant=oratory]]{Orate or sing}</p></td><td><p>Auditory and linguistic</p></td></tr></tbody></table><hr /><p><strong>Critical Success</strong> Your performance impresses the observers, and they're likely to share stories of your ability.</p>\n<p><strong>Success</strong> You prove yourself, and observers appreciate the quality of your performance.</p>\n<p><strong>Failure</strong> Your performance falls flat.</p>\n<p><strong>Critical Failure</strong> You demonstrate only incompetence.</p><h2 class=\"title\">Sample Perform Tasks</h2><ul><li><strong>Untrained</strong> casual audience</li><li><strong>Trained</strong> audience of corporate professionals</li><li><strong>Expert</strong> audience of wealthy influencers</li><li><strong>Master</strong> audience of discerning industry pros</li><li><strong>Legendary</strong> audience of planetary leaders</li></ul>",
+      "description": "<p>When making a brief performance-one song, a quick dance, or a few jokes-you use the Perform action. This action is most useful when you want to prove your capability or impress someone quickly. Performing rarely has an impact on its own, but it might influence the DCs of subsequent Diplomacy checks against the observers, or even change their attitudes if the GM sees fit.</p><table class=\"pf2e remaster\"><tbody><tr><th><p>Performance</p></th><th><p>Additional Traits</p></th></tr><tr><td><p>[[/act perform variant=acting]]{Act or perform comedy}</p></td><td><p>Auditory, linguistic, and visual</p></td></tr><tr><td><p>[[/act perform variant=dance]]{Dance}</p></td><td><p>Move and visual</p></td></tr><tr><td><p>[[/act perform variant=keyboards]]{Play an instrument}</p></td><td><p>Auditory and manipulate</p></td></tr><tr><td><p>[[/act perform variant=oratory]]{Orate or sing}</p></td><td><p>Auditory and linguistic</p></td></tr></tbody></table><hr /><p><strong>Critical Success</strong> Your performance impresses the observers, and they're likely to share stories of your ability.</p>\n<p><strong>Success</strong> You prove yourself, and observers appreciate the quality of your performance.</p>\n<p><strong>Failure</strong> Your performance falls flat.</p>\n<p><strong>Critical Failure</strong> You demonstrate only incompetence.</p><h2 class=\"title\">Sample Perform Tasks</h2><ul><li><p><strong>Untrained</strong> casual audience</p></li><li><p><strong>Trained</strong> audience of corporate professionals</p></li><li><p><strong>Expert</strong> audience of wealthy influencers</p></li><li><p><strong>Master</strong> audience of discerning industry pros</p></li><li><p><strong>Legendary</strong> audience of planetary leaders</p></li></ul>",
       "name": "Perform"
     },
     "Phasic Flurry": {
@@ -584,9 +660,17 @@
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You have a @UUID[Compendium.sf2e.spells.Item.pwzdSlJgYqN7bs2w]{Telekinetic Hand} active</p><hr /><p><strong>Effect</strong> Your polyps bubble and grow, turning into a duplicate of your main body as your main body withers away and is revealed to have been a decoy. You appear in the space of your <em>telekinetic hand</em> and end the <em>telekinetic hand</em>'s effect.</p>",
       "name": "Polyp Print"
     },
+    "Project Hardlight Body": {
+      "description": "<p><strong>Requirements</strong> Your core is in a space that can fit a creature of your hardlight body's size, and your core isn't projecting your hardlight body</p><hr /><p><strong>Effect</strong> Your core projects your hardlight body into its space in a standing position, with your core nestled safely inside. As part of this action, you can don armor and any number of worn items that are in your space or stored in your core's virtual storage, and you can draw items that are in your space or stored in your core's virtual storage.</p>",
+      "name": "Project Hardlight Body"
+    },
     "Puff Up": {
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature @UUID[Compendium.sf2e.actions.Item.PMbdMWc2QroouFGD]{Grapples} you, hits you with an unarmed Strike, or hits you with a non-reach melee weapon</p><hr /><p><strong>Effect</strong> You take a deep breath and rapidly puff up your body, jabbing your spurred scales and ridges into your attacker. You deal @Damage[(ceil(@actor.level/2))d6[piercing]] damage to the triggering creature (@Check[reflex|basic|against:class-spell]). On a critical failure, the creature is additionally thrown off by your sudden transformation, becoming @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your next turn. At 3rd level and every 2 levels thereafter, this damage increases by 1d6.</p>",
       "name": "Puff Up"
+    },
+    "Punch It!": {
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> You're piloting a vehicle</p><hr /><p><strong>Effect</strong> Increase your vehicle's Speed by 10 feet. Until the beginning of your next turn, the DC of all Piloting checks to operate or otherwise interact with this vehicle increases by 1.</p>",
+      "name": "Punch It!"
     },
     "Push Off": {
       "description": "<p><strong>Requirements</strong> You have at least one hand or leg (or suitable appendage) free, and you're untethered.</p><hr /><p>You use as leverage an object or creature of the same size as you or larger to change the direction you're floating in. Float up to half your Speed in your chosen direction. The distance you move at the end of your turn while untethered changes to the amount you moved during this action.</p>\n<p>You can Push Off as a free action immediately after you make a successful melee Strike or successfully @UUID[Compendium.sf2e.actions.Item.7blmbDrQFNfdT731]{Shove}.</p>",
@@ -595,6 +679,10 @@
     "Quantum Pulse": {
       "description": "<p><strong>Trigger</strong> You roll initiative.</p><hr /><p>You're always ready to let loose with your paradoxical abilities, and when imperiled, you instinctively release a pulse of quantum energy. As combat begins, you @UUID[Compendium.sf2e.actions.Item.ZoMpqQgDdlT13Jp0]{Warp Reality}.</p>",
       "name": "Quantum Pulse"
+    },
+    "Quick Toss": {
+      "description": "<p>You Interact to draw a grenade, then Area Fire with that grenade. At 5th level, your proficiency rank with grenades increases to expert, and you gain access to the critical specialization effects of all grenades.</p>",
+      "name": "Quick Toss"
     },
     "Raise a Shield": {
       "description": "<p><strong>Requirements</strong> You are wielding a shield.</p>\n<hr />\n<p>You position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.</p>",
@@ -624,6 +712,10 @@
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You decry one foe within 100 feet that you can see as a tyrant or villain and prepare yourself to defy them, even until death. You gain a +1 circumstance bonus on your attack rolls against this foe, and you gain a +1 circumstance bonus to saving throws against the attacks, spells, and effects of this foe. These benefits last for 1 minute.</p>",
       "name": "Rebellious Defiance"
     },
+    "Rebound Kinetic Energy": {
+      "description": "<p><strong>Trigger</strong> You take physical damage</p><hr /><p><strong>Effect</strong> You release the collected kinetic energy around you in a @Template[type:emanation|distance:10], dealing @Damage[1d4[force]|options:area-damage] damage for every 10 damage you took (minimum 1d4) to all creatures in the area. Affected creatures must attempt a @Check[fortitude|against:class|basic] save against your class DC. On a critical failure, they're additionally knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+      "name": "Rebound Kinetic Energy"
+    },
     "Recall Knowledge": {
       "description": "<p>You attempt a skill check to try to remember a bit of knowledge regarding a topic related to that skill. Suggest which skill you'd like to use and ask the GM one question. The GM determines the DC. You might need to collaborate with the GM to narrow down the question or skills, and you can decide not to Recall Knowledge before committing to the action if you don't like your options.</p>\n<p><strong>Critical Success</strong> You recall the knowledge accurately. The GM answers your question truthfully and either tells you additional information or context, or answers one follow-up question.</p>\n<p><strong>Success</strong> You recall the knowledge accurately. The GM answers your question truthfully.</p>\n<p><strong>Critical Failure</strong> You recall incorrect information. The GM answers your question falsely (or decides to give you no information, as on a failure).</p>",
       "name": "Recall Knowledge"
@@ -639,6 +731,10 @@
     "Redirect Energy": {
       "description": "<p><strong>Trigger</strong> You take cold damage or fire damage and are holding a melee weapon</p><hr /><p><strong>Effect</strong> You tap into the harmful energy directed at you and redirect its essence into a melee weapon you're holding. Until the end of your next turn, the selected weapon deals an additional 1d4 damage of the triggering damage type. During this time, you lose any resistance to the triggering damage type granted to you by Perfectly Balanced.</p>",
       "name": "Redirect Energy"
+    },
+    "Reflect Damage": {
+      "description": "<p><strong>Trigger</strong> You take damage of the chosen type</p><hr /><p><strong>Effect</strong> Your armor's plates harden further, reflecting the damage. Make a spell attack roll against the creature that dealt the triggering damage.</p><hr /><p><strong>Critical Success</strong> The creature takes double the triggering damage or double your resistant to the triggering damage, which ever is lower.</p>\n<p><strong>Success</strong> As critical success, but the damage is not doubled.</p>\n<p><strong>Failure</strong> The spell ends.</p>",
+      "name": "Reflect Damage"
     },
     "Refocus": {
       "description": "<p><strong>Requirements</strong> You have a focus pool.</p>\n<hr />\n<p>You spend 10 minutes performing deeds to restore your magical connection. This restores 1 Focus Point to your focus pool. The deeds you need to perform are specified in the class or ability that gives you your focus spells. These deeds can usually overlap with other tasks that relate to the source of your focus spells. For instance, a cleric with focus spells from a holy deity can usually Refocus while tending the wounds of their allies.</p>",
@@ -659,6 +755,10 @@
     "Reposition": {
       "description": "<p><strong>Requirements</strong> You either have at least one hand free, or you're grabbing or restraining the target. The target can't be more than one size larger than you.</p><hr /><p>You muscle a creature or object around. Attempt an [[/act reposition]]{Athletics} check against the target's Fortitude DC.</p><hr /><p><strong>Critical Success</strong> You move the creature up to 10 feet. It must remain within your reach during this movement, and you can't move it into or through obstacles.</p>\n<p><strong>Success</strong> You move the target up to 5 feet. It must remain within your reach during this movement, and you can't move it into or through obstacles.</p>\n<p><strong>Critical Failure</strong> The target can move you up to 5 feet as though it successfully Repositioned you.</p>",
       "name": "Reposition"
+    },
+    "Reposition Exocortex": {
+      "description": "<p><strong>Requirements</strong> Your mine or turret is within 150 feet.</p><hr /><p>You move your exocortex to a more tactically sound location. One of your deployed mines or turrets teleports to an unoccupied space you can see within 30 feet of its current location, remaining deployed in its new location. At 10th level and every 5 levels thereafter, the distance it can teleport increases by 10 feet.</p>",
+      "name": "Reposition Exocortex"
     },
     "Request": {
       "description": "<p>You can make a request of a creature that's friendly or helpful to you. You must couch the request in terms that the target would accept given their current attitude toward you. The GM sets the DC of the [[/act request]]{Diplomacy} check based on the difficulty of the request. Some requests are unsavory or impossible, and even a helpful NPC would never agree to them.</p><hr /><p><strong>Critical Success</strong> The target agrees to your request without qualifications.</p>\n<p><strong>Success</strong> The target agrees to your request, but they might demand added provisions or alterations to the request.</p>\n<p><strong>Failure</strong> The target refuses the request, though they might propose an alternative that is less extreme.</p>\n<p><strong>Critical Failure</strong> Not only does the target refuse the request, but their attitude toward you decreases by one step due to the temerity of the request.</p>",
@@ -724,6 +824,10 @@
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature other than you within range of your thoughtsense becomes @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused}, @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened}, or @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied}, or takes @UUID[Compendium.sf2e.conditions.Item.lDVqvLKA6eF3Df60]{persistent mental damage}</p><hr /><p><strong>Effect</strong> You can attempt an extra flat check immediately to end any persistent mental damage effect you have, and you reduce the flat check DC to 10. You then gain temporary Hit Points equal to your level. These temporary Hit Points last 1 minute.</p>",
       "name": "Shielding Arrogance"
     },
+    "Shift Skin": {
+      "description": "<p>You change the color, pattern, and designs on your skin, or part of your skin. Whenever the color of your skin generally matches the color of your surroundings, you gain a +1 circumstance bonus to Stealth checks to [[/act hide]] and [[/act sneak]].</p>",
+      "name": "Shift Skin"
+    },
     "Shifthide Camouflage": {
       "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> You're in the terrain you selected during your daily preparations</p><hr /><p><strong>Effect</strong> You focus on your immediate surroundings, causing your skin's patterns and color to shift to match. You gain a +2 circumstance bonus on Stealth checks to [[/act hide]] and [[/act sneak]] in the required terrain. This bonus lasts 10 minutes.</p>",
       "name": "Shifthide Camouflage"
@@ -763,6 +867,10 @@
     "Soul Shield": {
       "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You would take void damage</p><hr /><p><strong>Effect</strong> You push your soul out of your body and use it as a shield to protect your living form from the ravages of the void. You gain void healing until the beginning of your next turn, meaning you're damaged by vitality damage and healed by void effects that heal undead.</p>",
       "name": "Soul Shield"
+    },
+    "Spin to Win": {
+      "description": "<p>Your drone reconfigures itself into a gyroscope and spins around, colliding with anything in range. Your drone makes a melee Strike against each enemy within a @Template[type:emanation|distance:15]. Each attack counts toward your multiple attack penalty, but you don't increase your penalty until the drone has made all its attacks.</p>",
+      "name": "Spin to Win"
     },
     "Squeeze": {
       "description": "<p>You contort yourself to [[/act squeeze]]{squeeze} through a space so small you can barely fit through. This action is for exceptionally small spaces; many tight spaces are difficult terrain that you can move through more quickly and without a check.</p><hr /><p><strong>Critical Success</strong> You squeeze through the tight space in 1 minute per 10 feet of squeezing.</p>\n<p><strong>Success</strong> You squeeze through in 1 minute per 5 feet.</p>\n<p><strong>Critical Failure</strong> You become stuck in the tight space. While you're stuck, you can spend 1 minute attempting another Acrobatics check at the same DC. Any result on that check other than a critical failure causes you to become unstuck.</p><h2 class=\"title\">Sample Squeeze Tasks</h2><ul><li><strong>Trained</strong> space barely fitting your shoulders</li><li><strong>Master</strong> space barely fitting your head</li></ul>",
@@ -812,6 +920,10 @@
       "description": "<p>Choose one of your effects that has a sustained duration or lists a special benefit when you Sustain it. Most such effects come from spells or magic item activations. If the effect has a sustained duration, its duration extends until the end of your next turn. (Sustaining more than once in the same turn doesn't extend the duration to subsequent turns.) If an ability can be sustained but doesn't list how long, it can be sustained up to 10 minutes.</p>\n<p>An effect might list an additional benefit that occurs if you Sustain it, and this can even appear on effects that don't have a sustained duration. If the effect has both a special benefit and a sustained duration, your Sustain action extends the duration as well as having the special benefit.</p>\n<p>If your Sustain action is disrupted, the ability ends.</p>",
       "name": "Sustain"
     },
+    "Swap": {
+      "description": "<p><strong>Requirements</strong> A creature is wielding the other weapon and is within 100 feet of you</p><hr /><p><strong>Effect</strong> You instantly swap the location of the targeted weapons. If the remaining duration of hot swap is more than 10 minutes, reduce its remaining duration to 10 minutes.</p>",
+      "name": "Swap"
+    },
     "Swim": {
       "description": "<p>You attempt an [[/act swim]]{Athletics} check to move a maximum distance of 10 feet through water. The GM determines the DC based on the turbulence or danger of the water; in most instances of calm water, you get an automatic critical success. If your land Speed is 40 feet or higher, increase the maximum possible distance by 5 feet for every 20 feet of Speed above 20 feet.</p>\n<p>If you end your turn in water and haven't succeeded at a Swim action that turn, you sink 10 feet or get moved by the current, as determined by the GM. This doesn't apply if your last action on your turn was to enter the water.</p><hr /><p><strong>Critical Success</strong> You move through the water, increasing the maximum distance by 5 feet.</p>\n<p><strong>Success</strong> You move through the water.</p>\n<p><strong>Critical Failure</strong> You make no progress. If you're holding your breath, you lose 1 round of air.</p><h2>Sample Swim Tasks</h2><p><strong>Untrained</strong> lake or other still water</p>\n<p><strong>Trained</strong> flowing water, like a river</p>\n<p><strong>Expert</strong> swiftly flowing river</p>\n<p><strong>Master</strong> stormy sea</p>\n<p><strong>Legendary</strong> maelstrom, waterfall</p>",
       "name": "Swim"
@@ -819,6 +931,10 @@
     "Switch Hands": {
       "description": "<p>You designate a pair of limbs as your active hands. You can only have one pair of hands designated as your active hands at a time.</p>",
       "name": "Switch Hands"
+    },
+    "Synchronized Step": {
+      "description": "<p>You move in tandem with your drone, efficiently synchronizing your movements. You and your drone each Stride once.</p>",
+      "name": "Synchronized Step"
     },
     "Tactical Symbiosis": {
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You temporarily merge yourself with an adjacent willing creature you can speak to with your limited telepathy, overlaying yourself atop them for 10 minutes. You can Dismiss this effect. When you do, you emerge in a space adjacent to the target you merged with. While combined, you and your target each take your own turns as normal and must be targeted separately for the purposes of abilities and other effects.</p>\n<p>You occupy the target's space and can't take actions with the move trait. If the target moves, you move with them. For each Speed you possess, compare it to that of your target. If your Speed is faster, or they lack that Speed, they gain your Speed. The target gains any entu ancestry feats you have while you're merged, except those that require being a hostless entu.</p>",
@@ -847,6 +963,10 @@
     "Telekinetic Sprint": {
       "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> You gain a +5-foot status bonus to your Speeds until the end of your turn. You then Stride or Fly up to your Speed.</p>",
       "name": "Telekinetic Sprint"
+    },
+    "Temperature Acclimation": {
+      "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You take cold or fire damage</p><hr /><p><strong>Effect</strong> Your flesh instantly acclimates, and you gain resistance to the triggering damage type equal to half your level. This resistance lasts until you next use Temperature Acclimation.</p>",
+      "name": "Temperature Acclimation"
     },
     "Thoughts of a Lost Home": {
       "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You think of your lost home's landscapes to soothe your mind—shifting puss-filled flesh mounds, lakes of toxic runoff, and skies clouded by noxious green gas. If your next action is to attempt a skill check that takes 2 actions or less to use, you roll the skill check twice and use the better result.</p>",
